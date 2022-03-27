@@ -285,6 +285,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) AddWorkingStorageWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkingStorageWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddWorkingStorageWithContext), varargs...)
 }
 
+// AttachVolume mocks base method
+func (m *MockStorageGatewayAPI) AttachVolume(arg0 *storagegateway.AttachVolumeInput) (*storagegateway.AttachVolumeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AttachVolume", arg0)
+	ret0, _ := ret[0].(*storagegateway.AttachVolumeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AttachVolume indicates an expected call of AttachVolume
+func (mr *MockStorageGatewayAPIMockRecorder) AttachVolume(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AttachVolume), arg0)
+}
+
+// AttachVolumeRequest mocks base method
+func (m *MockStorageGatewayAPI) AttachVolumeRequest(arg0 *storagegateway.AttachVolumeInput) (*request.Request, *storagegateway.AttachVolumeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AttachVolumeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.AttachVolumeOutput)
+	return ret0, ret1
+}
+
+// AttachVolumeRequest indicates an expected call of AttachVolumeRequest
+func (mr *MockStorageGatewayAPIMockRecorder) AttachVolumeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AttachVolumeRequest), arg0)
+}
+
+// AttachVolumeWithContext mocks base method
+func (m *MockStorageGatewayAPI) AttachVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.AttachVolumeInput, arg2 ...request.Option) (*storagegateway.AttachVolumeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AttachVolumeWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.AttachVolumeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AttachVolumeWithContext indicates an expected call of AttachVolumeWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) AttachVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AttachVolumeWithContext), varargs...)
+}
+
 // CancelArchival mocks base method
 func (m *MockStorageGatewayAPI) CancelArchival(arg0 *storagegateway.CancelArchivalInput) (*storagegateway.CancelArchivalOutput, error) {
 	m.ctrl.T.Helper()
@@ -2165,6 +2215,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeWorkingStorageWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkingStorageWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeWorkingStorageWithContext), varargs...)
+}
+
+// DetachVolume mocks base method
+func (m *MockStorageGatewayAPI) DetachVolume(arg0 *storagegateway.DetachVolumeInput) (*storagegateway.DetachVolumeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetachVolume", arg0)
+	ret0, _ := ret[0].(*storagegateway.DetachVolumeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetachVolume indicates an expected call of DetachVolume
+func (mr *MockStorageGatewayAPIMockRecorder) DetachVolume(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DetachVolume), arg0)
+}
+
+// DetachVolumeRequest mocks base method
+func (m *MockStorageGatewayAPI) DetachVolumeRequest(arg0 *storagegateway.DetachVolumeInput) (*request.Request, *storagegateway.DetachVolumeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetachVolumeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DetachVolumeOutput)
+	return ret0, ret1
+}
+
+// DetachVolumeRequest indicates an expected call of DetachVolumeRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DetachVolumeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DetachVolumeRequest), arg0)
+}
+
+// DetachVolumeWithContext mocks base method
+func (m *MockStorageGatewayAPI) DetachVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.DetachVolumeInput, arg2 ...request.Option) (*storagegateway.DetachVolumeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetachVolumeWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DetachVolumeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetachVolumeWithContext indicates an expected call of DetachVolumeWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DetachVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DetachVolumeWithContext), varargs...)
 }
 
 // DisableGateway mocks base method
