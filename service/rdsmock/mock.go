@@ -3846,6 +3846,56 @@ func (mr *MockRDSAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ModifyCurrentDBClusterCapacity mocks base method
+func (m *MockRDSAPI) ModifyCurrentDBClusterCapacity(arg0 *rds.ModifyCurrentDBClusterCapacityInput) (*rds.ModifyCurrentDBClusterCapacityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCurrentDBClusterCapacity", arg0)
+	ret0, _ := ret[0].(*rds.ModifyCurrentDBClusterCapacityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCurrentDBClusterCapacity indicates an expected call of ModifyCurrentDBClusterCapacity
+func (mr *MockRDSAPIMockRecorder) ModifyCurrentDBClusterCapacity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCurrentDBClusterCapacity", reflect.TypeOf((*MockRDSAPI)(nil).ModifyCurrentDBClusterCapacity), arg0)
+}
+
+// ModifyCurrentDBClusterCapacityRequest mocks base method
+func (m *MockRDSAPI) ModifyCurrentDBClusterCapacityRequest(arg0 *rds.ModifyCurrentDBClusterCapacityInput) (*request.Request, *rds.ModifyCurrentDBClusterCapacityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCurrentDBClusterCapacityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.ModifyCurrentDBClusterCapacityOutput)
+	return ret0, ret1
+}
+
+// ModifyCurrentDBClusterCapacityRequest indicates an expected call of ModifyCurrentDBClusterCapacityRequest
+func (mr *MockRDSAPIMockRecorder) ModifyCurrentDBClusterCapacityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCurrentDBClusterCapacityRequest", reflect.TypeOf((*MockRDSAPI)(nil).ModifyCurrentDBClusterCapacityRequest), arg0)
+}
+
+// ModifyCurrentDBClusterCapacityWithContext mocks base method
+func (m *MockRDSAPI) ModifyCurrentDBClusterCapacityWithContext(arg0 aws.Context, arg1 *rds.ModifyCurrentDBClusterCapacityInput, arg2 ...request.Option) (*rds.ModifyCurrentDBClusterCapacityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyCurrentDBClusterCapacityWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.ModifyCurrentDBClusterCapacityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCurrentDBClusterCapacityWithContext indicates an expected call of ModifyCurrentDBClusterCapacityWithContext
+func (mr *MockRDSAPIMockRecorder) ModifyCurrentDBClusterCapacityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCurrentDBClusterCapacityWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ModifyCurrentDBClusterCapacityWithContext), varargs...)
+}
+
 // ModifyDBCluster mocks base method
 func (m *MockRDSAPI) ModifyDBCluster(arg0 *rds.ModifyDBClusterInput) (*rds.ModifyDBClusterOutput, error) {
 	m.ctrl.T.Helper()
