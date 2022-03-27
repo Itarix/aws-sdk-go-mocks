@@ -2468,6 +2468,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateRadiusWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRadiusWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateRadiusWithContext), varargs...)
 }
 
+// UpdateTrust mocks base method
+func (m *MockDirectoryServiceAPI) UpdateTrust(arg0 *directoryservice.UpdateTrustInput) (*directoryservice.UpdateTrustOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTrust", arg0)
+	ret0, _ := ret[0].(*directoryservice.UpdateTrustOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTrust indicates an expected call of UpdateTrust
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateTrust(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTrust", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateTrust), arg0)
+}
+
+// UpdateTrustRequest mocks base method
+func (m *MockDirectoryServiceAPI) UpdateTrustRequest(arg0 *directoryservice.UpdateTrustInput) (*request.Request, *directoryservice.UpdateTrustOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTrustRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.UpdateTrustOutput)
+	return ret0, ret1
+}
+
+// UpdateTrustRequest indicates an expected call of UpdateTrustRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateTrustRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTrustRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateTrustRequest), arg0)
+}
+
+// UpdateTrustWithContext mocks base method
+func (m *MockDirectoryServiceAPI) UpdateTrustWithContext(arg0 aws.Context, arg1 *directoryservice.UpdateTrustInput, arg2 ...request.Option) (*directoryservice.UpdateTrustOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTrustWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.UpdateTrustOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTrustWithContext indicates an expected call of UpdateTrustWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateTrustWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTrustWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateTrustWithContext), varargs...)
+}
+
 // VerifyTrust mocks base method
 func (m *MockDirectoryServiceAPI) VerifyTrust(arg0 *directoryservice.VerifyTrustInput) (*directoryservice.VerifyTrustOutput, error) {
 	m.ctrl.T.Helper()
