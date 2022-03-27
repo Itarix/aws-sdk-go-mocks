@@ -568,6 +568,56 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeContinuousBackupsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousBackupsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeContinuousBackupsWithContext), varargs...)
 }
 
+// DescribeEndpoints mocks base method
+func (m *MockDynamoDBAPI) DescribeEndpoints(arg0 *dynamodb.DescribeEndpointsInput) (*dynamodb.DescribeEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpoints", arg0)
+	ret0, _ := ret[0].(*dynamodb.DescribeEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEndpoints indicates an expected call of DescribeEndpoints
+func (mr *MockDynamoDBAPIMockRecorder) DescribeEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpoints", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeEndpoints), arg0)
+}
+
+// DescribeEndpointsRequest mocks base method
+func (m *MockDynamoDBAPI) DescribeEndpointsRequest(arg0 *dynamodb.DescribeEndpointsInput) (*request.Request, *dynamodb.DescribeEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.DescribeEndpointsOutput)
+	return ret0, ret1
+}
+
+// DescribeEndpointsRequest indicates an expected call of DescribeEndpointsRequest
+func (mr *MockDynamoDBAPIMockRecorder) DescribeEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeEndpointsRequest), arg0)
+}
+
+// DescribeEndpointsWithContext mocks base method
+func (m *MockDynamoDBAPI) DescribeEndpointsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeEndpointsInput, arg2 ...request.Option) (*dynamodb.DescribeEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.DescribeEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEndpointsWithContext indicates an expected call of DescribeEndpointsWithContext
+func (mr *MockDynamoDBAPIMockRecorder) DescribeEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeEndpointsWithContext), varargs...)
+}
+
 // DescribeGlobalTable mocks base method
 func (m *MockDynamoDBAPI) DescribeGlobalTable(arg0 *dynamodb.DescribeGlobalTableInput) (*dynamodb.DescribeGlobalTableOutput, error) {
 	m.ctrl.T.Helper()
