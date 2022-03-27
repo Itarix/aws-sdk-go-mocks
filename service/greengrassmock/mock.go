@@ -135,6 +135,106 @@ func (mr *MockGreengrassAPIMockRecorder) AssociateServiceRoleToAccountWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceRoleToAccountWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).AssociateServiceRoleToAccountWithContext), varargs...)
 }
 
+// CreateConnectorDefinition mocks base method
+func (m *MockGreengrassAPI) CreateConnectorDefinition(arg0 *greengrass.CreateConnectorDefinitionInput) (*greengrass.CreateConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectorDefinition", arg0)
+	ret0, _ := ret[0].(*greengrass.CreateConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectorDefinition indicates an expected call of CreateConnectorDefinition
+func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorDefinition", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateConnectorDefinition), arg0)
+}
+
+// CreateConnectorDefinitionRequest mocks base method
+func (m *MockGreengrassAPI) CreateConnectorDefinitionRequest(arg0 *greengrass.CreateConnectorDefinitionInput) (*request.Request, *greengrass.CreateConnectorDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectorDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.CreateConnectorDefinitionOutput)
+	return ret0, ret1
+}
+
+// CreateConnectorDefinitionRequest indicates an expected call of CreateConnectorDefinitionRequest
+func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorDefinitionRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateConnectorDefinitionRequest), arg0)
+}
+
+// CreateConnectorDefinitionVersion mocks base method
+func (m *MockGreengrassAPI) CreateConnectorDefinitionVersion(arg0 *greengrass.CreateConnectorDefinitionVersionInput) (*greengrass.CreateConnectorDefinitionVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectorDefinitionVersion", arg0)
+	ret0, _ := ret[0].(*greengrass.CreateConnectorDefinitionVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectorDefinitionVersion indicates an expected call of CreateConnectorDefinitionVersion
+func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorDefinitionVersion", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateConnectorDefinitionVersion), arg0)
+}
+
+// CreateConnectorDefinitionVersionRequest mocks base method
+func (m *MockGreengrassAPI) CreateConnectorDefinitionVersionRequest(arg0 *greengrass.CreateConnectorDefinitionVersionInput) (*request.Request, *greengrass.CreateConnectorDefinitionVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectorDefinitionVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.CreateConnectorDefinitionVersionOutput)
+	return ret0, ret1
+}
+
+// CreateConnectorDefinitionVersionRequest indicates an expected call of CreateConnectorDefinitionVersionRequest
+func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorDefinitionVersionRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateConnectorDefinitionVersionRequest), arg0)
+}
+
+// CreateConnectorDefinitionVersionWithContext mocks base method
+func (m *MockGreengrassAPI) CreateConnectorDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateConnectorDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateConnectorDefinitionVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectorDefinitionVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.CreateConnectorDefinitionVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectorDefinitionVersionWithContext indicates an expected call of CreateConnectorDefinitionVersionWithContext
+func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorDefinitionVersionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateConnectorDefinitionVersionWithContext), varargs...)
+}
+
+// CreateConnectorDefinitionWithContext mocks base method
+func (m *MockGreengrassAPI) CreateConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.CreateConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectorDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.CreateConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectorDefinitionWithContext indicates an expected call of CreateConnectorDefinitionWithContext
+func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateConnectorDefinitionWithContext), varargs...)
+}
+
 // CreateCoreDefinition mocks base method
 func (m *MockGreengrassAPI) CreateCoreDefinition(arg0 *greengrass.CreateCoreDefinitionInput) (*greengrass.CreateCoreDefinitionOutput, error) {
 	m.ctrl.T.Helper()
@@ -985,6 +1085,56 @@ func (mr *MockGreengrassAPIMockRecorder) CreateSubscriptionDefinitionWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriptionDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).CreateSubscriptionDefinitionWithContext), varargs...)
 }
 
+// DeleteConnectorDefinition mocks base method
+func (m *MockGreengrassAPI) DeleteConnectorDefinition(arg0 *greengrass.DeleteConnectorDefinitionInput) (*greengrass.DeleteConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectorDefinition", arg0)
+	ret0, _ := ret[0].(*greengrass.DeleteConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectorDefinition indicates an expected call of DeleteConnectorDefinition
+func (mr *MockGreengrassAPIMockRecorder) DeleteConnectorDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorDefinition", reflect.TypeOf((*MockGreengrassAPI)(nil).DeleteConnectorDefinition), arg0)
+}
+
+// DeleteConnectorDefinitionRequest mocks base method
+func (m *MockGreengrassAPI) DeleteConnectorDefinitionRequest(arg0 *greengrass.DeleteConnectorDefinitionInput) (*request.Request, *greengrass.DeleteConnectorDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectorDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.DeleteConnectorDefinitionOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectorDefinitionRequest indicates an expected call of DeleteConnectorDefinitionRequest
+func (mr *MockGreengrassAPIMockRecorder) DeleteConnectorDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorDefinitionRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).DeleteConnectorDefinitionRequest), arg0)
+}
+
+// DeleteConnectorDefinitionWithContext mocks base method
+func (m *MockGreengrassAPI) DeleteConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectorDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.DeleteConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectorDefinitionWithContext indicates an expected call of DeleteConnectorDefinitionWithContext
+func (mr *MockGreengrassAPIMockRecorder) DeleteConnectorDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).DeleteConnectorDefinitionWithContext), varargs...)
+}
+
 // DeleteCoreDefinition mocks base method
 func (m *MockGreengrassAPI) DeleteCoreDefinition(arg0 *greengrass.DeleteCoreDefinitionInput) (*greengrass.DeleteCoreDefinitionOutput, error) {
 	m.ctrl.T.Helper()
@@ -1583,6 +1733,106 @@ func (mr *MockGreengrassAPIMockRecorder) GetConnectivityInfoWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectivityInfoWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectivityInfoWithContext), varargs...)
+}
+
+// GetConnectorDefinition mocks base method
+func (m *MockGreengrassAPI) GetConnectorDefinition(arg0 *greengrass.GetConnectorDefinitionInput) (*greengrass.GetConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectorDefinition", arg0)
+	ret0, _ := ret[0].(*greengrass.GetConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectorDefinition indicates an expected call of GetConnectorDefinition
+func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectorDefinition", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectorDefinition), arg0)
+}
+
+// GetConnectorDefinitionRequest mocks base method
+func (m *MockGreengrassAPI) GetConnectorDefinitionRequest(arg0 *greengrass.GetConnectorDefinitionInput) (*request.Request, *greengrass.GetConnectorDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectorDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.GetConnectorDefinitionOutput)
+	return ret0, ret1
+}
+
+// GetConnectorDefinitionRequest indicates an expected call of GetConnectorDefinitionRequest
+func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectorDefinitionRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectorDefinitionRequest), arg0)
+}
+
+// GetConnectorDefinitionVersion mocks base method
+func (m *MockGreengrassAPI) GetConnectorDefinitionVersion(arg0 *greengrass.GetConnectorDefinitionVersionInput) (*greengrass.GetConnectorDefinitionVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectorDefinitionVersion", arg0)
+	ret0, _ := ret[0].(*greengrass.GetConnectorDefinitionVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectorDefinitionVersion indicates an expected call of GetConnectorDefinitionVersion
+func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectorDefinitionVersion", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectorDefinitionVersion), arg0)
+}
+
+// GetConnectorDefinitionVersionRequest mocks base method
+func (m *MockGreengrassAPI) GetConnectorDefinitionVersionRequest(arg0 *greengrass.GetConnectorDefinitionVersionInput) (*request.Request, *greengrass.GetConnectorDefinitionVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectorDefinitionVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.GetConnectorDefinitionVersionOutput)
+	return ret0, ret1
+}
+
+// GetConnectorDefinitionVersionRequest indicates an expected call of GetConnectorDefinitionVersionRequest
+func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectorDefinitionVersionRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectorDefinitionVersionRequest), arg0)
+}
+
+// GetConnectorDefinitionVersionWithContext mocks base method
+func (m *MockGreengrassAPI) GetConnectorDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetConnectorDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetConnectorDefinitionVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectorDefinitionVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.GetConnectorDefinitionVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectorDefinitionVersionWithContext indicates an expected call of GetConnectorDefinitionVersionWithContext
+func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectorDefinitionVersionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectorDefinitionVersionWithContext), varargs...)
+}
+
+// GetConnectorDefinitionWithContext mocks base method
+func (m *MockGreengrassAPI) GetConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.GetConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectorDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.GetConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectorDefinitionWithContext indicates an expected call of GetConnectorDefinitionWithContext
+func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectorDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetConnectorDefinitionWithContext), varargs...)
 }
 
 // GetCoreDefinition mocks base method
@@ -2585,6 +2835,106 @@ func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeploymentsWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeploymentsWithContext), varargs...)
 }
 
+// ListConnectorDefinitionVersions mocks base method
+func (m *MockGreengrassAPI) ListConnectorDefinitionVersions(arg0 *greengrass.ListConnectorDefinitionVersionsInput) (*greengrass.ListConnectorDefinitionVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorDefinitionVersions", arg0)
+	ret0, _ := ret[0].(*greengrass.ListConnectorDefinitionVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectorDefinitionVersions indicates an expected call of ListConnectorDefinitionVersions
+func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorDefinitionVersions", reflect.TypeOf((*MockGreengrassAPI)(nil).ListConnectorDefinitionVersions), arg0)
+}
+
+// ListConnectorDefinitionVersionsRequest mocks base method
+func (m *MockGreengrassAPI) ListConnectorDefinitionVersionsRequest(arg0 *greengrass.ListConnectorDefinitionVersionsInput) (*request.Request, *greengrass.ListConnectorDefinitionVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorDefinitionVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.ListConnectorDefinitionVersionsOutput)
+	return ret0, ret1
+}
+
+// ListConnectorDefinitionVersionsRequest indicates an expected call of ListConnectorDefinitionVersionsRequest
+func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorDefinitionVersionsRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).ListConnectorDefinitionVersionsRequest), arg0)
+}
+
+// ListConnectorDefinitionVersionsWithContext mocks base method
+func (m *MockGreengrassAPI) ListConnectorDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListConnectorDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListConnectorDefinitionVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectorDefinitionVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.ListConnectorDefinitionVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectorDefinitionVersionsWithContext indicates an expected call of ListConnectorDefinitionVersionsWithContext
+func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorDefinitionVersionsWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).ListConnectorDefinitionVersionsWithContext), varargs...)
+}
+
+// ListConnectorDefinitions mocks base method
+func (m *MockGreengrassAPI) ListConnectorDefinitions(arg0 *greengrass.ListConnectorDefinitionsInput) (*greengrass.ListConnectorDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorDefinitions", arg0)
+	ret0, _ := ret[0].(*greengrass.ListConnectorDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectorDefinitions indicates an expected call of ListConnectorDefinitions
+func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorDefinitions", reflect.TypeOf((*MockGreengrassAPI)(nil).ListConnectorDefinitions), arg0)
+}
+
+// ListConnectorDefinitionsRequest mocks base method
+func (m *MockGreengrassAPI) ListConnectorDefinitionsRequest(arg0 *greengrass.ListConnectorDefinitionsInput) (*request.Request, *greengrass.ListConnectorDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.ListConnectorDefinitionsOutput)
+	return ret0, ret1
+}
+
+// ListConnectorDefinitionsRequest indicates an expected call of ListConnectorDefinitionsRequest
+func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorDefinitionsRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).ListConnectorDefinitionsRequest), arg0)
+}
+
+// ListConnectorDefinitionsWithContext mocks base method
+func (m *MockGreengrassAPI) ListConnectorDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListConnectorDefinitionsInput, arg2 ...request.Option) (*greengrass.ListConnectorDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectorDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.ListConnectorDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectorDefinitionsWithContext indicates an expected call of ListConnectorDefinitionsWithContext
+func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorDefinitionsWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).ListConnectorDefinitionsWithContext), varargs...)
+}
+
 // ListCoreDefinitionVersions mocks base method
 func (m *MockGreengrassAPI) ListCoreDefinitionVersions(arg0 *greengrass.ListCoreDefinitionVersionsInput) (*greengrass.ListCoreDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3583,6 +3933,56 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateConnectivityInfoWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivityInfoWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateConnectivityInfoWithContext), varargs...)
+}
+
+// UpdateConnectorDefinition mocks base method
+func (m *MockGreengrassAPI) UpdateConnectorDefinition(arg0 *greengrass.UpdateConnectorDefinitionInput) (*greengrass.UpdateConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectorDefinition", arg0)
+	ret0, _ := ret[0].(*greengrass.UpdateConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectorDefinition indicates an expected call of UpdateConnectorDefinition
+func (mr *MockGreengrassAPIMockRecorder) UpdateConnectorDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorDefinition", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateConnectorDefinition), arg0)
+}
+
+// UpdateConnectorDefinitionRequest mocks base method
+func (m *MockGreengrassAPI) UpdateConnectorDefinitionRequest(arg0 *greengrass.UpdateConnectorDefinitionInput) (*request.Request, *greengrass.UpdateConnectorDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectorDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.UpdateConnectorDefinitionOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectorDefinitionRequest indicates an expected call of UpdateConnectorDefinitionRequest
+func (mr *MockGreengrassAPIMockRecorder) UpdateConnectorDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorDefinitionRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateConnectorDefinitionRequest), arg0)
+}
+
+// UpdateConnectorDefinitionWithContext mocks base method
+func (m *MockGreengrassAPI) UpdateConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateConnectorDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectorDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.UpdateConnectorDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectorDefinitionWithContext indicates an expected call of UpdateConnectorDefinitionWithContext
+func (mr *MockGreengrassAPIMockRecorder) UpdateConnectorDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateConnectorDefinitionWithContext), varargs...)
 }
 
 // UpdateCoreDefinition mocks base method

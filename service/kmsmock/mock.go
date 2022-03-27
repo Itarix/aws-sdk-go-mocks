@@ -85,6 +85,56 @@ func (mr *MockKMSAPIMockRecorder) CancelKeyDeletionWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelKeyDeletionWithContext", reflect.TypeOf((*MockKMSAPI)(nil).CancelKeyDeletionWithContext), varargs...)
 }
 
+// ConnectCustomKeyStore mocks base method
+func (m *MockKMSAPI) ConnectCustomKeyStore(arg0 *kms.ConnectCustomKeyStoreInput) (*kms.ConnectCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConnectCustomKeyStore", arg0)
+	ret0, _ := ret[0].(*kms.ConnectCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConnectCustomKeyStore indicates an expected call of ConnectCustomKeyStore
+func (mr *MockKMSAPIMockRecorder) ConnectCustomKeyStore(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConnectCustomKeyStore", reflect.TypeOf((*MockKMSAPI)(nil).ConnectCustomKeyStore), arg0)
+}
+
+// ConnectCustomKeyStoreRequest mocks base method
+func (m *MockKMSAPI) ConnectCustomKeyStoreRequest(arg0 *kms.ConnectCustomKeyStoreInput) (*request.Request, *kms.ConnectCustomKeyStoreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConnectCustomKeyStoreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kms.ConnectCustomKeyStoreOutput)
+	return ret0, ret1
+}
+
+// ConnectCustomKeyStoreRequest indicates an expected call of ConnectCustomKeyStoreRequest
+func (mr *MockKMSAPIMockRecorder) ConnectCustomKeyStoreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConnectCustomKeyStoreRequest", reflect.TypeOf((*MockKMSAPI)(nil).ConnectCustomKeyStoreRequest), arg0)
+}
+
+// ConnectCustomKeyStoreWithContext mocks base method
+func (m *MockKMSAPI) ConnectCustomKeyStoreWithContext(arg0 aws.Context, arg1 *kms.ConnectCustomKeyStoreInput, arg2 ...request.Option) (*kms.ConnectCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ConnectCustomKeyStoreWithContext", varargs...)
+	ret0, _ := ret[0].(*kms.ConnectCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConnectCustomKeyStoreWithContext indicates an expected call of ConnectCustomKeyStoreWithContext
+func (mr *MockKMSAPIMockRecorder) ConnectCustomKeyStoreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConnectCustomKeyStoreWithContext", reflect.TypeOf((*MockKMSAPI)(nil).ConnectCustomKeyStoreWithContext), varargs...)
+}
+
 // CreateAlias mocks base method
 func (m *MockKMSAPI) CreateAlias(arg0 *kms.CreateAliasInput) (*kms.CreateAliasOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +183,56 @@ func (mr *MockKMSAPIMockRecorder) CreateAliasWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAliasWithContext", reflect.TypeOf((*MockKMSAPI)(nil).CreateAliasWithContext), varargs...)
+}
+
+// CreateCustomKeyStore mocks base method
+func (m *MockKMSAPI) CreateCustomKeyStore(arg0 *kms.CreateCustomKeyStoreInput) (*kms.CreateCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomKeyStore", arg0)
+	ret0, _ := ret[0].(*kms.CreateCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomKeyStore indicates an expected call of CreateCustomKeyStore
+func (mr *MockKMSAPIMockRecorder) CreateCustomKeyStore(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomKeyStore", reflect.TypeOf((*MockKMSAPI)(nil).CreateCustomKeyStore), arg0)
+}
+
+// CreateCustomKeyStoreRequest mocks base method
+func (m *MockKMSAPI) CreateCustomKeyStoreRequest(arg0 *kms.CreateCustomKeyStoreInput) (*request.Request, *kms.CreateCustomKeyStoreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomKeyStoreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kms.CreateCustomKeyStoreOutput)
+	return ret0, ret1
+}
+
+// CreateCustomKeyStoreRequest indicates an expected call of CreateCustomKeyStoreRequest
+func (mr *MockKMSAPIMockRecorder) CreateCustomKeyStoreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomKeyStoreRequest", reflect.TypeOf((*MockKMSAPI)(nil).CreateCustomKeyStoreRequest), arg0)
+}
+
+// CreateCustomKeyStoreWithContext mocks base method
+func (m *MockKMSAPI) CreateCustomKeyStoreWithContext(arg0 aws.Context, arg1 *kms.CreateCustomKeyStoreInput, arg2 ...request.Option) (*kms.CreateCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCustomKeyStoreWithContext", varargs...)
+	ret0, _ := ret[0].(*kms.CreateCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomKeyStoreWithContext indicates an expected call of CreateCustomKeyStoreWithContext
+func (mr *MockKMSAPIMockRecorder) CreateCustomKeyStoreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomKeyStoreWithContext", reflect.TypeOf((*MockKMSAPI)(nil).CreateCustomKeyStoreWithContext), varargs...)
 }
 
 // CreateGrant mocks base method
@@ -335,6 +435,56 @@ func (mr *MockKMSAPIMockRecorder) DeleteAliasWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAliasWithContext", reflect.TypeOf((*MockKMSAPI)(nil).DeleteAliasWithContext), varargs...)
 }
 
+// DeleteCustomKeyStore mocks base method
+func (m *MockKMSAPI) DeleteCustomKeyStore(arg0 *kms.DeleteCustomKeyStoreInput) (*kms.DeleteCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomKeyStore", arg0)
+	ret0, _ := ret[0].(*kms.DeleteCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomKeyStore indicates an expected call of DeleteCustomKeyStore
+func (mr *MockKMSAPIMockRecorder) DeleteCustomKeyStore(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomKeyStore", reflect.TypeOf((*MockKMSAPI)(nil).DeleteCustomKeyStore), arg0)
+}
+
+// DeleteCustomKeyStoreRequest mocks base method
+func (m *MockKMSAPI) DeleteCustomKeyStoreRequest(arg0 *kms.DeleteCustomKeyStoreInput) (*request.Request, *kms.DeleteCustomKeyStoreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomKeyStoreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kms.DeleteCustomKeyStoreOutput)
+	return ret0, ret1
+}
+
+// DeleteCustomKeyStoreRequest indicates an expected call of DeleteCustomKeyStoreRequest
+func (mr *MockKMSAPIMockRecorder) DeleteCustomKeyStoreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomKeyStoreRequest", reflect.TypeOf((*MockKMSAPI)(nil).DeleteCustomKeyStoreRequest), arg0)
+}
+
+// DeleteCustomKeyStoreWithContext mocks base method
+func (m *MockKMSAPI) DeleteCustomKeyStoreWithContext(arg0 aws.Context, arg1 *kms.DeleteCustomKeyStoreInput, arg2 ...request.Option) (*kms.DeleteCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCustomKeyStoreWithContext", varargs...)
+	ret0, _ := ret[0].(*kms.DeleteCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomKeyStoreWithContext indicates an expected call of DeleteCustomKeyStoreWithContext
+func (mr *MockKMSAPIMockRecorder) DeleteCustomKeyStoreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomKeyStoreWithContext", reflect.TypeOf((*MockKMSAPI)(nil).DeleteCustomKeyStoreWithContext), varargs...)
+}
+
 // DeleteImportedKeyMaterial mocks base method
 func (m *MockKMSAPI) DeleteImportedKeyMaterial(arg0 *kms.DeleteImportedKeyMaterialInput) (*kms.DeleteImportedKeyMaterialOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +533,56 @@ func (mr *MockKMSAPIMockRecorder) DeleteImportedKeyMaterialWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteImportedKeyMaterialWithContext", reflect.TypeOf((*MockKMSAPI)(nil).DeleteImportedKeyMaterialWithContext), varargs...)
+}
+
+// DescribeCustomKeyStores mocks base method
+func (m *MockKMSAPI) DescribeCustomKeyStores(arg0 *kms.DescribeCustomKeyStoresInput) (*kms.DescribeCustomKeyStoresOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomKeyStores", arg0)
+	ret0, _ := ret[0].(*kms.DescribeCustomKeyStoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomKeyStores indicates an expected call of DescribeCustomKeyStores
+func (mr *MockKMSAPIMockRecorder) DescribeCustomKeyStores(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomKeyStores", reflect.TypeOf((*MockKMSAPI)(nil).DescribeCustomKeyStores), arg0)
+}
+
+// DescribeCustomKeyStoresRequest mocks base method
+func (m *MockKMSAPI) DescribeCustomKeyStoresRequest(arg0 *kms.DescribeCustomKeyStoresInput) (*request.Request, *kms.DescribeCustomKeyStoresOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomKeyStoresRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kms.DescribeCustomKeyStoresOutput)
+	return ret0, ret1
+}
+
+// DescribeCustomKeyStoresRequest indicates an expected call of DescribeCustomKeyStoresRequest
+func (mr *MockKMSAPIMockRecorder) DescribeCustomKeyStoresRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomKeyStoresRequest", reflect.TypeOf((*MockKMSAPI)(nil).DescribeCustomKeyStoresRequest), arg0)
+}
+
+// DescribeCustomKeyStoresWithContext mocks base method
+func (m *MockKMSAPI) DescribeCustomKeyStoresWithContext(arg0 aws.Context, arg1 *kms.DescribeCustomKeyStoresInput, arg2 ...request.Option) (*kms.DescribeCustomKeyStoresOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCustomKeyStoresWithContext", varargs...)
+	ret0, _ := ret[0].(*kms.DescribeCustomKeyStoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomKeyStoresWithContext indicates an expected call of DescribeCustomKeyStoresWithContext
+func (mr *MockKMSAPIMockRecorder) DescribeCustomKeyStoresWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomKeyStoresWithContext", reflect.TypeOf((*MockKMSAPI)(nil).DescribeCustomKeyStoresWithContext), varargs...)
 }
 
 // DescribeKey mocks base method
@@ -533,6 +733,56 @@ func (mr *MockKMSAPIMockRecorder) DisableKeyWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableKeyWithContext", reflect.TypeOf((*MockKMSAPI)(nil).DisableKeyWithContext), varargs...)
+}
+
+// DisconnectCustomKeyStore mocks base method
+func (m *MockKMSAPI) DisconnectCustomKeyStore(arg0 *kms.DisconnectCustomKeyStoreInput) (*kms.DisconnectCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisconnectCustomKeyStore", arg0)
+	ret0, _ := ret[0].(*kms.DisconnectCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisconnectCustomKeyStore indicates an expected call of DisconnectCustomKeyStore
+func (mr *MockKMSAPIMockRecorder) DisconnectCustomKeyStore(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectCustomKeyStore", reflect.TypeOf((*MockKMSAPI)(nil).DisconnectCustomKeyStore), arg0)
+}
+
+// DisconnectCustomKeyStoreRequest mocks base method
+func (m *MockKMSAPI) DisconnectCustomKeyStoreRequest(arg0 *kms.DisconnectCustomKeyStoreInput) (*request.Request, *kms.DisconnectCustomKeyStoreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisconnectCustomKeyStoreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kms.DisconnectCustomKeyStoreOutput)
+	return ret0, ret1
+}
+
+// DisconnectCustomKeyStoreRequest indicates an expected call of DisconnectCustomKeyStoreRequest
+func (mr *MockKMSAPIMockRecorder) DisconnectCustomKeyStoreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectCustomKeyStoreRequest", reflect.TypeOf((*MockKMSAPI)(nil).DisconnectCustomKeyStoreRequest), arg0)
+}
+
+// DisconnectCustomKeyStoreWithContext mocks base method
+func (m *MockKMSAPI) DisconnectCustomKeyStoreWithContext(arg0 aws.Context, arg1 *kms.DisconnectCustomKeyStoreInput, arg2 ...request.Option) (*kms.DisconnectCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisconnectCustomKeyStoreWithContext", varargs...)
+	ret0, _ := ret[0].(*kms.DisconnectCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisconnectCustomKeyStoreWithContext indicates an expected call of DisconnectCustomKeyStoreWithContext
+func (mr *MockKMSAPIMockRecorder) DisconnectCustomKeyStoreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectCustomKeyStoreWithContext", reflect.TypeOf((*MockKMSAPI)(nil).DisconnectCustomKeyStoreWithContext), varargs...)
 }
 
 // EnableKey mocks base method
@@ -1865,6 +2115,56 @@ func (mr *MockKMSAPIMockRecorder) UpdateAliasWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAliasWithContext", reflect.TypeOf((*MockKMSAPI)(nil).UpdateAliasWithContext), varargs...)
+}
+
+// UpdateCustomKeyStore mocks base method
+func (m *MockKMSAPI) UpdateCustomKeyStore(arg0 *kms.UpdateCustomKeyStoreInput) (*kms.UpdateCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCustomKeyStore", arg0)
+	ret0, _ := ret[0].(*kms.UpdateCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCustomKeyStore indicates an expected call of UpdateCustomKeyStore
+func (mr *MockKMSAPIMockRecorder) UpdateCustomKeyStore(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCustomKeyStore", reflect.TypeOf((*MockKMSAPI)(nil).UpdateCustomKeyStore), arg0)
+}
+
+// UpdateCustomKeyStoreRequest mocks base method
+func (m *MockKMSAPI) UpdateCustomKeyStoreRequest(arg0 *kms.UpdateCustomKeyStoreInput) (*request.Request, *kms.UpdateCustomKeyStoreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCustomKeyStoreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kms.UpdateCustomKeyStoreOutput)
+	return ret0, ret1
+}
+
+// UpdateCustomKeyStoreRequest indicates an expected call of UpdateCustomKeyStoreRequest
+func (mr *MockKMSAPIMockRecorder) UpdateCustomKeyStoreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCustomKeyStoreRequest", reflect.TypeOf((*MockKMSAPI)(nil).UpdateCustomKeyStoreRequest), arg0)
+}
+
+// UpdateCustomKeyStoreWithContext mocks base method
+func (m *MockKMSAPI) UpdateCustomKeyStoreWithContext(arg0 aws.Context, arg1 *kms.UpdateCustomKeyStoreInput, arg2 ...request.Option) (*kms.UpdateCustomKeyStoreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCustomKeyStoreWithContext", varargs...)
+	ret0, _ := ret[0].(*kms.UpdateCustomKeyStoreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCustomKeyStoreWithContext indicates an expected call of UpdateCustomKeyStoreWithContext
+func (mr *MockKMSAPIMockRecorder) UpdateCustomKeyStoreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCustomKeyStoreWithContext", reflect.TypeOf((*MockKMSAPI)(nil).UpdateCustomKeyStoreWithContext), varargs...)
 }
 
 // UpdateKeyDescription mocks base method

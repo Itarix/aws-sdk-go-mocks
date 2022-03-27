@@ -35,6 +35,56 @@ func (m *MockSMSAPI) EXPECT() *MockSMSAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateApp mocks base method
+func (m *MockSMSAPI) CreateApp(arg0 *sms.CreateAppInput) (*sms.CreateAppOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApp", arg0)
+	ret0, _ := ret[0].(*sms.CreateAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApp indicates an expected call of CreateApp
+func (mr *MockSMSAPIMockRecorder) CreateApp(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApp", reflect.TypeOf((*MockSMSAPI)(nil).CreateApp), arg0)
+}
+
+// CreateAppRequest mocks base method
+func (m *MockSMSAPI) CreateAppRequest(arg0 *sms.CreateAppInput) (*request.Request, *sms.CreateAppOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.CreateAppOutput)
+	return ret0, ret1
+}
+
+// CreateAppRequest indicates an expected call of CreateAppRequest
+func (mr *MockSMSAPIMockRecorder) CreateAppRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppRequest", reflect.TypeOf((*MockSMSAPI)(nil).CreateAppRequest), arg0)
+}
+
+// CreateAppWithContext mocks base method
+func (m *MockSMSAPI) CreateAppWithContext(arg0 aws.Context, arg1 *sms.CreateAppInput, arg2 ...request.Option) (*sms.CreateAppOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.CreateAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppWithContext indicates an expected call of CreateAppWithContext
+func (mr *MockSMSAPIMockRecorder) CreateAppWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppWithContext", reflect.TypeOf((*MockSMSAPI)(nil).CreateAppWithContext), varargs...)
+}
+
 // CreateReplicationJob mocks base method
 func (m *MockSMSAPI) CreateReplicationJob(arg0 *sms.CreateReplicationJobInput) (*sms.CreateReplicationJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,156 @@ func (mr *MockSMSAPIMockRecorder) CreateReplicationJobWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationJobWithContext", reflect.TypeOf((*MockSMSAPI)(nil).CreateReplicationJobWithContext), varargs...)
+}
+
+// DeleteApp mocks base method
+func (m *MockSMSAPI) DeleteApp(arg0 *sms.DeleteAppInput) (*sms.DeleteAppOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApp", arg0)
+	ret0, _ := ret[0].(*sms.DeleteAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApp indicates an expected call of DeleteApp
+func (mr *MockSMSAPIMockRecorder) DeleteApp(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApp", reflect.TypeOf((*MockSMSAPI)(nil).DeleteApp), arg0)
+}
+
+// DeleteAppLaunchConfiguration mocks base method
+func (m *MockSMSAPI) DeleteAppLaunchConfiguration(arg0 *sms.DeleteAppLaunchConfigurationInput) (*sms.DeleteAppLaunchConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppLaunchConfiguration", arg0)
+	ret0, _ := ret[0].(*sms.DeleteAppLaunchConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppLaunchConfiguration indicates an expected call of DeleteAppLaunchConfiguration
+func (mr *MockSMSAPIMockRecorder) DeleteAppLaunchConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppLaunchConfiguration", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppLaunchConfiguration), arg0)
+}
+
+// DeleteAppLaunchConfigurationRequest mocks base method
+func (m *MockSMSAPI) DeleteAppLaunchConfigurationRequest(arg0 *sms.DeleteAppLaunchConfigurationInput) (*request.Request, *sms.DeleteAppLaunchConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppLaunchConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.DeleteAppLaunchConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteAppLaunchConfigurationRequest indicates an expected call of DeleteAppLaunchConfigurationRequest
+func (mr *MockSMSAPIMockRecorder) DeleteAppLaunchConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppLaunchConfigurationRequest", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppLaunchConfigurationRequest), arg0)
+}
+
+// DeleteAppLaunchConfigurationWithContext mocks base method
+func (m *MockSMSAPI) DeleteAppLaunchConfigurationWithContext(arg0 aws.Context, arg1 *sms.DeleteAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.DeleteAppLaunchConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppLaunchConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.DeleteAppLaunchConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppLaunchConfigurationWithContext indicates an expected call of DeleteAppLaunchConfigurationWithContext
+func (mr *MockSMSAPIMockRecorder) DeleteAppLaunchConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppLaunchConfigurationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppLaunchConfigurationWithContext), varargs...)
+}
+
+// DeleteAppReplicationConfiguration mocks base method
+func (m *MockSMSAPI) DeleteAppReplicationConfiguration(arg0 *sms.DeleteAppReplicationConfigurationInput) (*sms.DeleteAppReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppReplicationConfiguration", arg0)
+	ret0, _ := ret[0].(*sms.DeleteAppReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppReplicationConfiguration indicates an expected call of DeleteAppReplicationConfiguration
+func (mr *MockSMSAPIMockRecorder) DeleteAppReplicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppReplicationConfiguration", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppReplicationConfiguration), arg0)
+}
+
+// DeleteAppReplicationConfigurationRequest mocks base method
+func (m *MockSMSAPI) DeleteAppReplicationConfigurationRequest(arg0 *sms.DeleteAppReplicationConfigurationInput) (*request.Request, *sms.DeleteAppReplicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppReplicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.DeleteAppReplicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteAppReplicationConfigurationRequest indicates an expected call of DeleteAppReplicationConfigurationRequest
+func (mr *MockSMSAPIMockRecorder) DeleteAppReplicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppReplicationConfigurationRequest", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppReplicationConfigurationRequest), arg0)
+}
+
+// DeleteAppReplicationConfigurationWithContext mocks base method
+func (m *MockSMSAPI) DeleteAppReplicationConfigurationWithContext(arg0 aws.Context, arg1 *sms.DeleteAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.DeleteAppReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppReplicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.DeleteAppReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppReplicationConfigurationWithContext indicates an expected call of DeleteAppReplicationConfigurationWithContext
+func (mr *MockSMSAPIMockRecorder) DeleteAppReplicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppReplicationConfigurationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppReplicationConfigurationWithContext), varargs...)
+}
+
+// DeleteAppRequest mocks base method
+func (m *MockSMSAPI) DeleteAppRequest(arg0 *sms.DeleteAppInput) (*request.Request, *sms.DeleteAppOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.DeleteAppOutput)
+	return ret0, ret1
+}
+
+// DeleteAppRequest indicates an expected call of DeleteAppRequest
+func (mr *MockSMSAPIMockRecorder) DeleteAppRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppRequest", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppRequest), arg0)
+}
+
+// DeleteAppWithContext mocks base method
+func (m *MockSMSAPI) DeleteAppWithContext(arg0 aws.Context, arg1 *sms.DeleteAppInput, arg2 ...request.Option) (*sms.DeleteAppOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.DeleteAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppWithContext indicates an expected call of DeleteAppWithContext
+func (mr *MockSMSAPIMockRecorder) DeleteAppWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppWithContext", reflect.TypeOf((*MockSMSAPI)(nil).DeleteAppWithContext), varargs...)
 }
 
 // DeleteReplicationJob mocks base method
@@ -233,6 +433,256 @@ func (mr *MockSMSAPIMockRecorder) DisassociateConnectorWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectorWithContext", reflect.TypeOf((*MockSMSAPI)(nil).DisassociateConnectorWithContext), varargs...)
+}
+
+// GenerateChangeSet mocks base method
+func (m *MockSMSAPI) GenerateChangeSet(arg0 *sms.GenerateChangeSetInput) (*sms.GenerateChangeSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateChangeSet", arg0)
+	ret0, _ := ret[0].(*sms.GenerateChangeSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateChangeSet indicates an expected call of GenerateChangeSet
+func (mr *MockSMSAPIMockRecorder) GenerateChangeSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateChangeSet", reflect.TypeOf((*MockSMSAPI)(nil).GenerateChangeSet), arg0)
+}
+
+// GenerateChangeSetRequest mocks base method
+func (m *MockSMSAPI) GenerateChangeSetRequest(arg0 *sms.GenerateChangeSetInput) (*request.Request, *sms.GenerateChangeSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateChangeSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.GenerateChangeSetOutput)
+	return ret0, ret1
+}
+
+// GenerateChangeSetRequest indicates an expected call of GenerateChangeSetRequest
+func (mr *MockSMSAPIMockRecorder) GenerateChangeSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateChangeSetRequest", reflect.TypeOf((*MockSMSAPI)(nil).GenerateChangeSetRequest), arg0)
+}
+
+// GenerateChangeSetWithContext mocks base method
+func (m *MockSMSAPI) GenerateChangeSetWithContext(arg0 aws.Context, arg1 *sms.GenerateChangeSetInput, arg2 ...request.Option) (*sms.GenerateChangeSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GenerateChangeSetWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.GenerateChangeSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateChangeSetWithContext indicates an expected call of GenerateChangeSetWithContext
+func (mr *MockSMSAPIMockRecorder) GenerateChangeSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateChangeSetWithContext", reflect.TypeOf((*MockSMSAPI)(nil).GenerateChangeSetWithContext), varargs...)
+}
+
+// GenerateTemplate mocks base method
+func (m *MockSMSAPI) GenerateTemplate(arg0 *sms.GenerateTemplateInput) (*sms.GenerateTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateTemplate", arg0)
+	ret0, _ := ret[0].(*sms.GenerateTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateTemplate indicates an expected call of GenerateTemplate
+func (mr *MockSMSAPIMockRecorder) GenerateTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateTemplate", reflect.TypeOf((*MockSMSAPI)(nil).GenerateTemplate), arg0)
+}
+
+// GenerateTemplateRequest mocks base method
+func (m *MockSMSAPI) GenerateTemplateRequest(arg0 *sms.GenerateTemplateInput) (*request.Request, *sms.GenerateTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.GenerateTemplateOutput)
+	return ret0, ret1
+}
+
+// GenerateTemplateRequest indicates an expected call of GenerateTemplateRequest
+func (mr *MockSMSAPIMockRecorder) GenerateTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateTemplateRequest", reflect.TypeOf((*MockSMSAPI)(nil).GenerateTemplateRequest), arg0)
+}
+
+// GenerateTemplateWithContext mocks base method
+func (m *MockSMSAPI) GenerateTemplateWithContext(arg0 aws.Context, arg1 *sms.GenerateTemplateInput, arg2 ...request.Option) (*sms.GenerateTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GenerateTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.GenerateTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateTemplateWithContext indicates an expected call of GenerateTemplateWithContext
+func (mr *MockSMSAPIMockRecorder) GenerateTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateTemplateWithContext", reflect.TypeOf((*MockSMSAPI)(nil).GenerateTemplateWithContext), varargs...)
+}
+
+// GetApp mocks base method
+func (m *MockSMSAPI) GetApp(arg0 *sms.GetAppInput) (*sms.GetAppOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApp", arg0)
+	ret0, _ := ret[0].(*sms.GetAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApp indicates an expected call of GetApp
+func (mr *MockSMSAPIMockRecorder) GetApp(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApp", reflect.TypeOf((*MockSMSAPI)(nil).GetApp), arg0)
+}
+
+// GetAppLaunchConfiguration mocks base method
+func (m *MockSMSAPI) GetAppLaunchConfiguration(arg0 *sms.GetAppLaunchConfigurationInput) (*sms.GetAppLaunchConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppLaunchConfiguration", arg0)
+	ret0, _ := ret[0].(*sms.GetAppLaunchConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppLaunchConfiguration indicates an expected call of GetAppLaunchConfiguration
+func (mr *MockSMSAPIMockRecorder) GetAppLaunchConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppLaunchConfiguration", reflect.TypeOf((*MockSMSAPI)(nil).GetAppLaunchConfiguration), arg0)
+}
+
+// GetAppLaunchConfigurationRequest mocks base method
+func (m *MockSMSAPI) GetAppLaunchConfigurationRequest(arg0 *sms.GetAppLaunchConfigurationInput) (*request.Request, *sms.GetAppLaunchConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppLaunchConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.GetAppLaunchConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetAppLaunchConfigurationRequest indicates an expected call of GetAppLaunchConfigurationRequest
+func (mr *MockSMSAPIMockRecorder) GetAppLaunchConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppLaunchConfigurationRequest", reflect.TypeOf((*MockSMSAPI)(nil).GetAppLaunchConfigurationRequest), arg0)
+}
+
+// GetAppLaunchConfigurationWithContext mocks base method
+func (m *MockSMSAPI) GetAppLaunchConfigurationWithContext(arg0 aws.Context, arg1 *sms.GetAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.GetAppLaunchConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAppLaunchConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.GetAppLaunchConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppLaunchConfigurationWithContext indicates an expected call of GetAppLaunchConfigurationWithContext
+func (mr *MockSMSAPIMockRecorder) GetAppLaunchConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppLaunchConfigurationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).GetAppLaunchConfigurationWithContext), varargs...)
+}
+
+// GetAppReplicationConfiguration mocks base method
+func (m *MockSMSAPI) GetAppReplicationConfiguration(arg0 *sms.GetAppReplicationConfigurationInput) (*sms.GetAppReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppReplicationConfiguration", arg0)
+	ret0, _ := ret[0].(*sms.GetAppReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppReplicationConfiguration indicates an expected call of GetAppReplicationConfiguration
+func (mr *MockSMSAPIMockRecorder) GetAppReplicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppReplicationConfiguration", reflect.TypeOf((*MockSMSAPI)(nil).GetAppReplicationConfiguration), arg0)
+}
+
+// GetAppReplicationConfigurationRequest mocks base method
+func (m *MockSMSAPI) GetAppReplicationConfigurationRequest(arg0 *sms.GetAppReplicationConfigurationInput) (*request.Request, *sms.GetAppReplicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppReplicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.GetAppReplicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetAppReplicationConfigurationRequest indicates an expected call of GetAppReplicationConfigurationRequest
+func (mr *MockSMSAPIMockRecorder) GetAppReplicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppReplicationConfigurationRequest", reflect.TypeOf((*MockSMSAPI)(nil).GetAppReplicationConfigurationRequest), arg0)
+}
+
+// GetAppReplicationConfigurationWithContext mocks base method
+func (m *MockSMSAPI) GetAppReplicationConfigurationWithContext(arg0 aws.Context, arg1 *sms.GetAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.GetAppReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAppReplicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.GetAppReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppReplicationConfigurationWithContext indicates an expected call of GetAppReplicationConfigurationWithContext
+func (mr *MockSMSAPIMockRecorder) GetAppReplicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppReplicationConfigurationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).GetAppReplicationConfigurationWithContext), varargs...)
+}
+
+// GetAppRequest mocks base method
+func (m *MockSMSAPI) GetAppRequest(arg0 *sms.GetAppInput) (*request.Request, *sms.GetAppOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.GetAppOutput)
+	return ret0, ret1
+}
+
+// GetAppRequest indicates an expected call of GetAppRequest
+func (mr *MockSMSAPIMockRecorder) GetAppRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppRequest", reflect.TypeOf((*MockSMSAPI)(nil).GetAppRequest), arg0)
+}
+
+// GetAppWithContext mocks base method
+func (m *MockSMSAPI) GetAppWithContext(arg0 aws.Context, arg1 *sms.GetAppInput, arg2 ...request.Option) (*sms.GetAppOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAppWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.GetAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppWithContext indicates an expected call of GetAppWithContext
+func (mr *MockSMSAPIMockRecorder) GetAppWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppWithContext", reflect.TypeOf((*MockSMSAPI)(nil).GetAppWithContext), varargs...)
 }
 
 // GetConnectors mocks base method
@@ -617,6 +1067,256 @@ func (mr *MockSMSAPIMockRecorder) ImportServerCatalogWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportServerCatalogWithContext", reflect.TypeOf((*MockSMSAPI)(nil).ImportServerCatalogWithContext), varargs...)
 }
 
+// LaunchApp mocks base method
+func (m *MockSMSAPI) LaunchApp(arg0 *sms.LaunchAppInput) (*sms.LaunchAppOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "LaunchApp", arg0)
+	ret0, _ := ret[0].(*sms.LaunchAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// LaunchApp indicates an expected call of LaunchApp
+func (mr *MockSMSAPIMockRecorder) LaunchApp(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LaunchApp", reflect.TypeOf((*MockSMSAPI)(nil).LaunchApp), arg0)
+}
+
+// LaunchAppRequest mocks base method
+func (m *MockSMSAPI) LaunchAppRequest(arg0 *sms.LaunchAppInput) (*request.Request, *sms.LaunchAppOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "LaunchAppRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.LaunchAppOutput)
+	return ret0, ret1
+}
+
+// LaunchAppRequest indicates an expected call of LaunchAppRequest
+func (mr *MockSMSAPIMockRecorder) LaunchAppRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LaunchAppRequest", reflect.TypeOf((*MockSMSAPI)(nil).LaunchAppRequest), arg0)
+}
+
+// LaunchAppWithContext mocks base method
+func (m *MockSMSAPI) LaunchAppWithContext(arg0 aws.Context, arg1 *sms.LaunchAppInput, arg2 ...request.Option) (*sms.LaunchAppOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "LaunchAppWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.LaunchAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// LaunchAppWithContext indicates an expected call of LaunchAppWithContext
+func (mr *MockSMSAPIMockRecorder) LaunchAppWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LaunchAppWithContext", reflect.TypeOf((*MockSMSAPI)(nil).LaunchAppWithContext), varargs...)
+}
+
+// ListApps mocks base method
+func (m *MockSMSAPI) ListApps(arg0 *sms.ListAppsInput) (*sms.ListAppsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApps", arg0)
+	ret0, _ := ret[0].(*sms.ListAppsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApps indicates an expected call of ListApps
+func (mr *MockSMSAPIMockRecorder) ListApps(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApps", reflect.TypeOf((*MockSMSAPI)(nil).ListApps), arg0)
+}
+
+// ListAppsRequest mocks base method
+func (m *MockSMSAPI) ListAppsRequest(arg0 *sms.ListAppsInput) (*request.Request, *sms.ListAppsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.ListAppsOutput)
+	return ret0, ret1
+}
+
+// ListAppsRequest indicates an expected call of ListAppsRequest
+func (mr *MockSMSAPIMockRecorder) ListAppsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppsRequest", reflect.TypeOf((*MockSMSAPI)(nil).ListAppsRequest), arg0)
+}
+
+// ListAppsWithContext mocks base method
+func (m *MockSMSAPI) ListAppsWithContext(arg0 aws.Context, arg1 *sms.ListAppsInput, arg2 ...request.Option) (*sms.ListAppsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppsWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.ListAppsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppsWithContext indicates an expected call of ListAppsWithContext
+func (mr *MockSMSAPIMockRecorder) ListAppsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppsWithContext", reflect.TypeOf((*MockSMSAPI)(nil).ListAppsWithContext), varargs...)
+}
+
+// PutAppLaunchConfiguration mocks base method
+func (m *MockSMSAPI) PutAppLaunchConfiguration(arg0 *sms.PutAppLaunchConfigurationInput) (*sms.PutAppLaunchConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppLaunchConfiguration", arg0)
+	ret0, _ := ret[0].(*sms.PutAppLaunchConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppLaunchConfiguration indicates an expected call of PutAppLaunchConfiguration
+func (mr *MockSMSAPIMockRecorder) PutAppLaunchConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppLaunchConfiguration", reflect.TypeOf((*MockSMSAPI)(nil).PutAppLaunchConfiguration), arg0)
+}
+
+// PutAppLaunchConfigurationRequest mocks base method
+func (m *MockSMSAPI) PutAppLaunchConfigurationRequest(arg0 *sms.PutAppLaunchConfigurationInput) (*request.Request, *sms.PutAppLaunchConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppLaunchConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.PutAppLaunchConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutAppLaunchConfigurationRequest indicates an expected call of PutAppLaunchConfigurationRequest
+func (mr *MockSMSAPIMockRecorder) PutAppLaunchConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppLaunchConfigurationRequest", reflect.TypeOf((*MockSMSAPI)(nil).PutAppLaunchConfigurationRequest), arg0)
+}
+
+// PutAppLaunchConfigurationWithContext mocks base method
+func (m *MockSMSAPI) PutAppLaunchConfigurationWithContext(arg0 aws.Context, arg1 *sms.PutAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.PutAppLaunchConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAppLaunchConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.PutAppLaunchConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppLaunchConfigurationWithContext indicates an expected call of PutAppLaunchConfigurationWithContext
+func (mr *MockSMSAPIMockRecorder) PutAppLaunchConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppLaunchConfigurationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).PutAppLaunchConfigurationWithContext), varargs...)
+}
+
+// PutAppReplicationConfiguration mocks base method
+func (m *MockSMSAPI) PutAppReplicationConfiguration(arg0 *sms.PutAppReplicationConfigurationInput) (*sms.PutAppReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppReplicationConfiguration", arg0)
+	ret0, _ := ret[0].(*sms.PutAppReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppReplicationConfiguration indicates an expected call of PutAppReplicationConfiguration
+func (mr *MockSMSAPIMockRecorder) PutAppReplicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppReplicationConfiguration", reflect.TypeOf((*MockSMSAPI)(nil).PutAppReplicationConfiguration), arg0)
+}
+
+// PutAppReplicationConfigurationRequest mocks base method
+func (m *MockSMSAPI) PutAppReplicationConfigurationRequest(arg0 *sms.PutAppReplicationConfigurationInput) (*request.Request, *sms.PutAppReplicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppReplicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.PutAppReplicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutAppReplicationConfigurationRequest indicates an expected call of PutAppReplicationConfigurationRequest
+func (mr *MockSMSAPIMockRecorder) PutAppReplicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppReplicationConfigurationRequest", reflect.TypeOf((*MockSMSAPI)(nil).PutAppReplicationConfigurationRequest), arg0)
+}
+
+// PutAppReplicationConfigurationWithContext mocks base method
+func (m *MockSMSAPI) PutAppReplicationConfigurationWithContext(arg0 aws.Context, arg1 *sms.PutAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.PutAppReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAppReplicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.PutAppReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppReplicationConfigurationWithContext indicates an expected call of PutAppReplicationConfigurationWithContext
+func (mr *MockSMSAPIMockRecorder) PutAppReplicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppReplicationConfigurationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).PutAppReplicationConfigurationWithContext), varargs...)
+}
+
+// StartAppReplication mocks base method
+func (m *MockSMSAPI) StartAppReplication(arg0 *sms.StartAppReplicationInput) (*sms.StartAppReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAppReplication", arg0)
+	ret0, _ := ret[0].(*sms.StartAppReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAppReplication indicates an expected call of StartAppReplication
+func (mr *MockSMSAPIMockRecorder) StartAppReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAppReplication", reflect.TypeOf((*MockSMSAPI)(nil).StartAppReplication), arg0)
+}
+
+// StartAppReplicationRequest mocks base method
+func (m *MockSMSAPI) StartAppReplicationRequest(arg0 *sms.StartAppReplicationInput) (*request.Request, *sms.StartAppReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAppReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.StartAppReplicationOutput)
+	return ret0, ret1
+}
+
+// StartAppReplicationRequest indicates an expected call of StartAppReplicationRequest
+func (mr *MockSMSAPIMockRecorder) StartAppReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAppReplicationRequest", reflect.TypeOf((*MockSMSAPI)(nil).StartAppReplicationRequest), arg0)
+}
+
+// StartAppReplicationWithContext mocks base method
+func (m *MockSMSAPI) StartAppReplicationWithContext(arg0 aws.Context, arg1 *sms.StartAppReplicationInput, arg2 ...request.Option) (*sms.StartAppReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartAppReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.StartAppReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAppReplicationWithContext indicates an expected call of StartAppReplicationWithContext
+func (mr *MockSMSAPIMockRecorder) StartAppReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAppReplicationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).StartAppReplicationWithContext), varargs...)
+}
+
 // StartOnDemandReplicationRun mocks base method
 func (m *MockSMSAPI) StartOnDemandReplicationRun(arg0 *sms.StartOnDemandReplicationRunInput) (*sms.StartOnDemandReplicationRunOutput, error) {
 	m.ctrl.T.Helper()
@@ -665,6 +1365,156 @@ func (mr *MockSMSAPIMockRecorder) StartOnDemandReplicationRunWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOnDemandReplicationRunWithContext", reflect.TypeOf((*MockSMSAPI)(nil).StartOnDemandReplicationRunWithContext), varargs...)
+}
+
+// StopAppReplication mocks base method
+func (m *MockSMSAPI) StopAppReplication(arg0 *sms.StopAppReplicationInput) (*sms.StopAppReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopAppReplication", arg0)
+	ret0, _ := ret[0].(*sms.StopAppReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopAppReplication indicates an expected call of StopAppReplication
+func (mr *MockSMSAPIMockRecorder) StopAppReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopAppReplication", reflect.TypeOf((*MockSMSAPI)(nil).StopAppReplication), arg0)
+}
+
+// StopAppReplicationRequest mocks base method
+func (m *MockSMSAPI) StopAppReplicationRequest(arg0 *sms.StopAppReplicationInput) (*request.Request, *sms.StopAppReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopAppReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.StopAppReplicationOutput)
+	return ret0, ret1
+}
+
+// StopAppReplicationRequest indicates an expected call of StopAppReplicationRequest
+func (mr *MockSMSAPIMockRecorder) StopAppReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopAppReplicationRequest", reflect.TypeOf((*MockSMSAPI)(nil).StopAppReplicationRequest), arg0)
+}
+
+// StopAppReplicationWithContext mocks base method
+func (m *MockSMSAPI) StopAppReplicationWithContext(arg0 aws.Context, arg1 *sms.StopAppReplicationInput, arg2 ...request.Option) (*sms.StopAppReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopAppReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.StopAppReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopAppReplicationWithContext indicates an expected call of StopAppReplicationWithContext
+func (mr *MockSMSAPIMockRecorder) StopAppReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopAppReplicationWithContext", reflect.TypeOf((*MockSMSAPI)(nil).StopAppReplicationWithContext), varargs...)
+}
+
+// TerminateApp mocks base method
+func (m *MockSMSAPI) TerminateApp(arg0 *sms.TerminateAppInput) (*sms.TerminateAppOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateApp", arg0)
+	ret0, _ := ret[0].(*sms.TerminateAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateApp indicates an expected call of TerminateApp
+func (mr *MockSMSAPIMockRecorder) TerminateApp(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateApp", reflect.TypeOf((*MockSMSAPI)(nil).TerminateApp), arg0)
+}
+
+// TerminateAppRequest mocks base method
+func (m *MockSMSAPI) TerminateAppRequest(arg0 *sms.TerminateAppInput) (*request.Request, *sms.TerminateAppOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateAppRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.TerminateAppOutput)
+	return ret0, ret1
+}
+
+// TerminateAppRequest indicates an expected call of TerminateAppRequest
+func (mr *MockSMSAPIMockRecorder) TerminateAppRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateAppRequest", reflect.TypeOf((*MockSMSAPI)(nil).TerminateAppRequest), arg0)
+}
+
+// TerminateAppWithContext mocks base method
+func (m *MockSMSAPI) TerminateAppWithContext(arg0 aws.Context, arg1 *sms.TerminateAppInput, arg2 ...request.Option) (*sms.TerminateAppOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TerminateAppWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.TerminateAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateAppWithContext indicates an expected call of TerminateAppWithContext
+func (mr *MockSMSAPIMockRecorder) TerminateAppWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateAppWithContext", reflect.TypeOf((*MockSMSAPI)(nil).TerminateAppWithContext), varargs...)
+}
+
+// UpdateApp mocks base method
+func (m *MockSMSAPI) UpdateApp(arg0 *sms.UpdateAppInput) (*sms.UpdateAppOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApp", arg0)
+	ret0, _ := ret[0].(*sms.UpdateAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApp indicates an expected call of UpdateApp
+func (mr *MockSMSAPIMockRecorder) UpdateApp(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApp", reflect.TypeOf((*MockSMSAPI)(nil).UpdateApp), arg0)
+}
+
+// UpdateAppRequest mocks base method
+func (m *MockSMSAPI) UpdateAppRequest(arg0 *sms.UpdateAppInput) (*request.Request, *sms.UpdateAppOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sms.UpdateAppOutput)
+	return ret0, ret1
+}
+
+// UpdateAppRequest indicates an expected call of UpdateAppRequest
+func (mr *MockSMSAPIMockRecorder) UpdateAppRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppRequest", reflect.TypeOf((*MockSMSAPI)(nil).UpdateAppRequest), arg0)
+}
+
+// UpdateAppWithContext mocks base method
+func (m *MockSMSAPI) UpdateAppWithContext(arg0 aws.Context, arg1 *sms.UpdateAppInput, arg2 ...request.Option) (*sms.UpdateAppOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppWithContext", varargs...)
+	ret0, _ := ret[0].(*sms.UpdateAppOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppWithContext indicates an expected call of UpdateAppWithContext
+func (mr *MockSMSAPIMockRecorder) UpdateAppWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppWithContext", reflect.TypeOf((*MockSMSAPI)(nil).UpdateAppWithContext), varargs...)
 }
 
 // UpdateReplicationJob mocks base method
