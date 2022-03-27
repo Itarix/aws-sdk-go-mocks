@@ -35,6 +35,206 @@ func (m *MockTranslateAPI) EXPECT() *MockTranslateAPIMockRecorder {
 	return m.recorder
 }
 
+// DeleteTerminology mocks base method
+func (m *MockTranslateAPI) DeleteTerminology(arg0 *translate.DeleteTerminologyInput) (*translate.DeleteTerminologyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTerminology", arg0)
+	ret0, _ := ret[0].(*translate.DeleteTerminologyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTerminology indicates an expected call of DeleteTerminology
+func (mr *MockTranslateAPIMockRecorder) DeleteTerminology(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTerminology", reflect.TypeOf((*MockTranslateAPI)(nil).DeleteTerminology), arg0)
+}
+
+// DeleteTerminologyRequest mocks base method
+func (m *MockTranslateAPI) DeleteTerminologyRequest(arg0 *translate.DeleteTerminologyInput) (*request.Request, *translate.DeleteTerminologyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTerminologyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.DeleteTerminologyOutput)
+	return ret0, ret1
+}
+
+// DeleteTerminologyRequest indicates an expected call of DeleteTerminologyRequest
+func (mr *MockTranslateAPIMockRecorder) DeleteTerminologyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTerminologyRequest", reflect.TypeOf((*MockTranslateAPI)(nil).DeleteTerminologyRequest), arg0)
+}
+
+// DeleteTerminologyWithContext mocks base method
+func (m *MockTranslateAPI) DeleteTerminologyWithContext(arg0 aws.Context, arg1 *translate.DeleteTerminologyInput, arg2 ...request.Option) (*translate.DeleteTerminologyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTerminologyWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.DeleteTerminologyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTerminologyWithContext indicates an expected call of DeleteTerminologyWithContext
+func (mr *MockTranslateAPIMockRecorder) DeleteTerminologyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTerminologyWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).DeleteTerminologyWithContext), varargs...)
+}
+
+// GetTerminology mocks base method
+func (m *MockTranslateAPI) GetTerminology(arg0 *translate.GetTerminologyInput) (*translate.GetTerminologyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTerminology", arg0)
+	ret0, _ := ret[0].(*translate.GetTerminologyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTerminology indicates an expected call of GetTerminology
+func (mr *MockTranslateAPIMockRecorder) GetTerminology(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTerminology", reflect.TypeOf((*MockTranslateAPI)(nil).GetTerminology), arg0)
+}
+
+// GetTerminologyRequest mocks base method
+func (m *MockTranslateAPI) GetTerminologyRequest(arg0 *translate.GetTerminologyInput) (*request.Request, *translate.GetTerminologyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTerminologyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.GetTerminologyOutput)
+	return ret0, ret1
+}
+
+// GetTerminologyRequest indicates an expected call of GetTerminologyRequest
+func (mr *MockTranslateAPIMockRecorder) GetTerminologyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTerminologyRequest", reflect.TypeOf((*MockTranslateAPI)(nil).GetTerminologyRequest), arg0)
+}
+
+// GetTerminologyWithContext mocks base method
+func (m *MockTranslateAPI) GetTerminologyWithContext(arg0 aws.Context, arg1 *translate.GetTerminologyInput, arg2 ...request.Option) (*translate.GetTerminologyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTerminologyWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.GetTerminologyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTerminologyWithContext indicates an expected call of GetTerminologyWithContext
+func (mr *MockTranslateAPIMockRecorder) GetTerminologyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTerminologyWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).GetTerminologyWithContext), varargs...)
+}
+
+// ImportTerminology mocks base method
+func (m *MockTranslateAPI) ImportTerminology(arg0 *translate.ImportTerminologyInput) (*translate.ImportTerminologyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportTerminology", arg0)
+	ret0, _ := ret[0].(*translate.ImportTerminologyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportTerminology indicates an expected call of ImportTerminology
+func (mr *MockTranslateAPIMockRecorder) ImportTerminology(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportTerminology", reflect.TypeOf((*MockTranslateAPI)(nil).ImportTerminology), arg0)
+}
+
+// ImportTerminologyRequest mocks base method
+func (m *MockTranslateAPI) ImportTerminologyRequest(arg0 *translate.ImportTerminologyInput) (*request.Request, *translate.ImportTerminologyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportTerminologyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.ImportTerminologyOutput)
+	return ret0, ret1
+}
+
+// ImportTerminologyRequest indicates an expected call of ImportTerminologyRequest
+func (mr *MockTranslateAPIMockRecorder) ImportTerminologyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportTerminologyRequest", reflect.TypeOf((*MockTranslateAPI)(nil).ImportTerminologyRequest), arg0)
+}
+
+// ImportTerminologyWithContext mocks base method
+func (m *MockTranslateAPI) ImportTerminologyWithContext(arg0 aws.Context, arg1 *translate.ImportTerminologyInput, arg2 ...request.Option) (*translate.ImportTerminologyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportTerminologyWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.ImportTerminologyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportTerminologyWithContext indicates an expected call of ImportTerminologyWithContext
+func (mr *MockTranslateAPIMockRecorder) ImportTerminologyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportTerminologyWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ImportTerminologyWithContext), varargs...)
+}
+
+// ListTerminologies mocks base method
+func (m *MockTranslateAPI) ListTerminologies(arg0 *translate.ListTerminologiesInput) (*translate.ListTerminologiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTerminologies", arg0)
+	ret0, _ := ret[0].(*translate.ListTerminologiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTerminologies indicates an expected call of ListTerminologies
+func (mr *MockTranslateAPIMockRecorder) ListTerminologies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologies", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologies), arg0)
+}
+
+// ListTerminologiesRequest mocks base method
+func (m *MockTranslateAPI) ListTerminologiesRequest(arg0 *translate.ListTerminologiesInput) (*request.Request, *translate.ListTerminologiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTerminologiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.ListTerminologiesOutput)
+	return ret0, ret1
+}
+
+// ListTerminologiesRequest indicates an expected call of ListTerminologiesRequest
+func (mr *MockTranslateAPIMockRecorder) ListTerminologiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologiesRequest", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologiesRequest), arg0)
+}
+
+// ListTerminologiesWithContext mocks base method
+func (m *MockTranslateAPI) ListTerminologiesWithContext(arg0 aws.Context, arg1 *translate.ListTerminologiesInput, arg2 ...request.Option) (*translate.ListTerminologiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTerminologiesWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.ListTerminologiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTerminologiesWithContext indicates an expected call of ListTerminologiesWithContext
+func (mr *MockTranslateAPIMockRecorder) ListTerminologiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologiesWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologiesWithContext), varargs...)
+}
+
 // Text mocks base method
 func (m *MockTranslateAPI) Text(arg0 *translate.TextInput) (*translate.TextOutput, error) {
 	m.ctrl.T.Helper()

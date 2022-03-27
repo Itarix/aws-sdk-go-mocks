@@ -135,6 +135,56 @@ func (mr *MockMarketplaceMeteringAPIMockRecorder) MeterUsageWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MeterUsageWithContext", reflect.TypeOf((*MockMarketplaceMeteringAPI)(nil).MeterUsageWithContext), varargs...)
 }
 
+// RegisterUsage mocks base method
+func (m *MockMarketplaceMeteringAPI) RegisterUsage(arg0 *marketplacemetering.RegisterUsageInput) (*marketplacemetering.RegisterUsageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterUsage", arg0)
+	ret0, _ := ret[0].(*marketplacemetering.RegisterUsageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterUsage indicates an expected call of RegisterUsage
+func (mr *MockMarketplaceMeteringAPIMockRecorder) RegisterUsage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterUsage", reflect.TypeOf((*MockMarketplaceMeteringAPI)(nil).RegisterUsage), arg0)
+}
+
+// RegisterUsageRequest mocks base method
+func (m *MockMarketplaceMeteringAPI) RegisterUsageRequest(arg0 *marketplacemetering.RegisterUsageInput) (*request.Request, *marketplacemetering.RegisterUsageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterUsageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*marketplacemetering.RegisterUsageOutput)
+	return ret0, ret1
+}
+
+// RegisterUsageRequest indicates an expected call of RegisterUsageRequest
+func (mr *MockMarketplaceMeteringAPIMockRecorder) RegisterUsageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterUsageRequest", reflect.TypeOf((*MockMarketplaceMeteringAPI)(nil).RegisterUsageRequest), arg0)
+}
+
+// RegisterUsageWithContext mocks base method
+func (m *MockMarketplaceMeteringAPI) RegisterUsageWithContext(arg0 aws.Context, arg1 *marketplacemetering.RegisterUsageInput, arg2 ...request.Option) (*marketplacemetering.RegisterUsageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterUsageWithContext", varargs...)
+	ret0, _ := ret[0].(*marketplacemetering.RegisterUsageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterUsageWithContext indicates an expected call of RegisterUsageWithContext
+func (mr *MockMarketplaceMeteringAPIMockRecorder) RegisterUsageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterUsageWithContext", reflect.TypeOf((*MockMarketplaceMeteringAPI)(nil).RegisterUsageWithContext), varargs...)
+}
+
 // ResolveCustomer mocks base method
 func (m *MockMarketplaceMeteringAPI) ResolveCustomer(arg0 *marketplacemetering.ResolveCustomerInput) (*marketplacemetering.ResolveCustomerOutput, error) {
 	m.ctrl.T.Helper()

@@ -285,6 +285,56 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentInstancesWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDeploymentInstancesWithContext", reflect.TypeOf((*MockCodeDeployAPI)(nil).BatchGetDeploymentInstancesWithContext), varargs...)
 }
 
+// BatchGetDeploymentTargets mocks base method
+func (m *MockCodeDeployAPI) BatchGetDeploymentTargets(arg0 *codedeploy.BatchGetDeploymentTargetsInput) (*codedeploy.BatchGetDeploymentTargetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetDeploymentTargets", arg0)
+	ret0, _ := ret[0].(*codedeploy.BatchGetDeploymentTargetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetDeploymentTargets indicates an expected call of BatchGetDeploymentTargets
+func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentTargets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDeploymentTargets", reflect.TypeOf((*MockCodeDeployAPI)(nil).BatchGetDeploymentTargets), arg0)
+}
+
+// BatchGetDeploymentTargetsRequest mocks base method
+func (m *MockCodeDeployAPI) BatchGetDeploymentTargetsRequest(arg0 *codedeploy.BatchGetDeploymentTargetsInput) (*request.Request, *codedeploy.BatchGetDeploymentTargetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetDeploymentTargetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codedeploy.BatchGetDeploymentTargetsOutput)
+	return ret0, ret1
+}
+
+// BatchGetDeploymentTargetsRequest indicates an expected call of BatchGetDeploymentTargetsRequest
+func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentTargetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDeploymentTargetsRequest", reflect.TypeOf((*MockCodeDeployAPI)(nil).BatchGetDeploymentTargetsRequest), arg0)
+}
+
+// BatchGetDeploymentTargetsWithContext mocks base method
+func (m *MockCodeDeployAPI) BatchGetDeploymentTargetsWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetDeploymentTargetsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentTargetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetDeploymentTargetsWithContext", varargs...)
+	ret0, _ := ret[0].(*codedeploy.BatchGetDeploymentTargetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetDeploymentTargetsWithContext indicates an expected call of BatchGetDeploymentTargetsWithContext
+func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentTargetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDeploymentTargetsWithContext", reflect.TypeOf((*MockCodeDeployAPI)(nil).BatchGetDeploymentTargetsWithContext), varargs...)
+}
+
 // BatchGetDeployments mocks base method
 func (m *MockCodeDeployAPI) BatchGetDeployments(arg0 *codedeploy.BatchGetDeploymentsInput) (*codedeploy.BatchGetDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1165,6 +1215,56 @@ func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentRequest(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentRequest", reflect.TypeOf((*MockCodeDeployAPI)(nil).GetDeploymentRequest), arg0)
 }
 
+// GetDeploymentTarget mocks base method
+func (m *MockCodeDeployAPI) GetDeploymentTarget(arg0 *codedeploy.GetDeploymentTargetInput) (*codedeploy.GetDeploymentTargetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeploymentTarget", arg0)
+	ret0, _ := ret[0].(*codedeploy.GetDeploymentTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeploymentTarget indicates an expected call of GetDeploymentTarget
+func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentTarget(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentTarget", reflect.TypeOf((*MockCodeDeployAPI)(nil).GetDeploymentTarget), arg0)
+}
+
+// GetDeploymentTargetRequest mocks base method
+func (m *MockCodeDeployAPI) GetDeploymentTargetRequest(arg0 *codedeploy.GetDeploymentTargetInput) (*request.Request, *codedeploy.GetDeploymentTargetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeploymentTargetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codedeploy.GetDeploymentTargetOutput)
+	return ret0, ret1
+}
+
+// GetDeploymentTargetRequest indicates an expected call of GetDeploymentTargetRequest
+func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentTargetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentTargetRequest", reflect.TypeOf((*MockCodeDeployAPI)(nil).GetDeploymentTargetRequest), arg0)
+}
+
+// GetDeploymentTargetWithContext mocks base method
+func (m *MockCodeDeployAPI) GetDeploymentTargetWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentTargetInput, arg2 ...request.Option) (*codedeploy.GetDeploymentTargetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDeploymentTargetWithContext", varargs...)
+	ret0, _ := ret[0].(*codedeploy.GetDeploymentTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeploymentTargetWithContext indicates an expected call of GetDeploymentTargetWithContext
+func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentTargetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentTargetWithContext", reflect.TypeOf((*MockCodeDeployAPI)(nil).GetDeploymentTargetWithContext), varargs...)
+}
+
 // GetDeploymentWithContext mocks base method
 func (m *MockCodeDeployAPI) GetDeploymentWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentInput, arg2 ...request.Option) (*codedeploy.GetDeploymentOutput, error) {
 	m.ctrl.T.Helper()
@@ -1648,6 +1748,56 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentInstancesWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeploymentInstancesWithContext", reflect.TypeOf((*MockCodeDeployAPI)(nil).ListDeploymentInstancesWithContext), varargs...)
+}
+
+// ListDeploymentTargets mocks base method
+func (m *MockCodeDeployAPI) ListDeploymentTargets(arg0 *codedeploy.ListDeploymentTargetsInput) (*codedeploy.ListDeploymentTargetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDeploymentTargets", arg0)
+	ret0, _ := ret[0].(*codedeploy.ListDeploymentTargetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDeploymentTargets indicates an expected call of ListDeploymentTargets
+func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentTargets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeploymentTargets", reflect.TypeOf((*MockCodeDeployAPI)(nil).ListDeploymentTargets), arg0)
+}
+
+// ListDeploymentTargetsRequest mocks base method
+func (m *MockCodeDeployAPI) ListDeploymentTargetsRequest(arg0 *codedeploy.ListDeploymentTargetsInput) (*request.Request, *codedeploy.ListDeploymentTargetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDeploymentTargetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codedeploy.ListDeploymentTargetsOutput)
+	return ret0, ret1
+}
+
+// ListDeploymentTargetsRequest indicates an expected call of ListDeploymentTargetsRequest
+func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentTargetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeploymentTargetsRequest", reflect.TypeOf((*MockCodeDeployAPI)(nil).ListDeploymentTargetsRequest), arg0)
+}
+
+// ListDeploymentTargetsWithContext mocks base method
+func (m *MockCodeDeployAPI) ListDeploymentTargetsWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentTargetsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentTargetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDeploymentTargetsWithContext", varargs...)
+	ret0, _ := ret[0].(*codedeploy.ListDeploymentTargetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDeploymentTargetsWithContext indicates an expected call of ListDeploymentTargetsWithContext
+func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentTargetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeploymentTargetsWithContext", reflect.TypeOf((*MockCodeDeployAPI)(nil).ListDeploymentTargetsWithContext), varargs...)
 }
 
 // ListDeployments mocks base method
