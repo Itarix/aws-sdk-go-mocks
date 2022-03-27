@@ -1365,6 +1365,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioRequest(arg0 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioRequest), arg0)
 }
 
+// DescribePortfolioShareStatus mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioShareStatus(arg0 *servicecatalog.DescribePortfolioShareStatusInput) (*servicecatalog.DescribePortfolioShareStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePortfolioShareStatus", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DescribePortfolioShareStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePortfolioShareStatus indicates an expected call of DescribePortfolioShareStatus
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShareStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioShareStatus", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioShareStatus), arg0)
+}
+
+// DescribePortfolioShareStatusRequest mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioShareStatusRequest(arg0 *servicecatalog.DescribePortfolioShareStatusInput) (*request.Request, *servicecatalog.DescribePortfolioShareStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePortfolioShareStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DescribePortfolioShareStatusOutput)
+	return ret0, ret1
+}
+
+// DescribePortfolioShareStatusRequest indicates an expected call of DescribePortfolioShareStatusRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShareStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioShareStatusRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioShareStatusRequest), arg0)
+}
+
+// DescribePortfolioShareStatusWithContext mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioShareStatusWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribePortfolioShareStatusInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioShareStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePortfolioShareStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DescribePortfolioShareStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePortfolioShareStatusWithContext indicates an expected call of DescribePortfolioShareStatusWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShareStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioShareStatusWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioShareStatusWithContext), varargs...)
+}
+
 // DescribePortfolioWithContext mocks base method
 func (m *MockServiceCatalogAPI) DescribePortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribePortfolioInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioOutput, error) {
 	m.ctrl.T.Helper()
@@ -1885,6 +1935,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeTagOptionWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagOptionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeTagOptionWithContext), varargs...)
 }
 
+// DisableAWSOrganizationsAccess mocks base method
+func (m *MockServiceCatalogAPI) DisableAWSOrganizationsAccess(arg0 *servicecatalog.DisableAWSOrganizationsAccessInput) (*servicecatalog.DisableAWSOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableAWSOrganizationsAccess", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DisableAWSOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableAWSOrganizationsAccess indicates an expected call of DisableAWSOrganizationsAccess
+func (mr *MockServiceCatalogAPIMockRecorder) DisableAWSOrganizationsAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableAWSOrganizationsAccess", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisableAWSOrganizationsAccess), arg0)
+}
+
+// DisableAWSOrganizationsAccessRequest mocks base method
+func (m *MockServiceCatalogAPI) DisableAWSOrganizationsAccessRequest(arg0 *servicecatalog.DisableAWSOrganizationsAccessInput) (*request.Request, *servicecatalog.DisableAWSOrganizationsAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableAWSOrganizationsAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DisableAWSOrganizationsAccessOutput)
+	return ret0, ret1
+}
+
+// DisableAWSOrganizationsAccessRequest indicates an expected call of DisableAWSOrganizationsAccessRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DisableAWSOrganizationsAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableAWSOrganizationsAccessRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisableAWSOrganizationsAccessRequest), arg0)
+}
+
+// DisableAWSOrganizationsAccessWithContext mocks base method
+func (m *MockServiceCatalogAPI) DisableAWSOrganizationsAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.DisableAWSOrganizationsAccessInput, arg2 ...request.Option) (*servicecatalog.DisableAWSOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableAWSOrganizationsAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DisableAWSOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableAWSOrganizationsAccessWithContext indicates an expected call of DisableAWSOrganizationsAccessWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DisableAWSOrganizationsAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableAWSOrganizationsAccessWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisableAWSOrganizationsAccessWithContext), varargs...)
+}
+
 // DisassociatePrincipalFromPortfolio mocks base method
 func (m *MockServiceCatalogAPI) DisassociatePrincipalFromPortfolio(arg0 *servicecatalog.DisassociatePrincipalFromPortfolioInput) (*servicecatalog.DisassociatePrincipalFromPortfolioOutput, error) {
 	m.ctrl.T.Helper()
@@ -2085,6 +2185,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisassociateTagOptionFromResourceWi
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTagOptionFromResourceWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisassociateTagOptionFromResourceWithContext), varargs...)
 }
 
+// EnableAWSOrganizationsAccess mocks base method
+func (m *MockServiceCatalogAPI) EnableAWSOrganizationsAccess(arg0 *servicecatalog.EnableAWSOrganizationsAccessInput) (*servicecatalog.EnableAWSOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableAWSOrganizationsAccess", arg0)
+	ret0, _ := ret[0].(*servicecatalog.EnableAWSOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableAWSOrganizationsAccess indicates an expected call of EnableAWSOrganizationsAccess
+func (mr *MockServiceCatalogAPIMockRecorder) EnableAWSOrganizationsAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableAWSOrganizationsAccess", reflect.TypeOf((*MockServiceCatalogAPI)(nil).EnableAWSOrganizationsAccess), arg0)
+}
+
+// EnableAWSOrganizationsAccessRequest mocks base method
+func (m *MockServiceCatalogAPI) EnableAWSOrganizationsAccessRequest(arg0 *servicecatalog.EnableAWSOrganizationsAccessInput) (*request.Request, *servicecatalog.EnableAWSOrganizationsAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableAWSOrganizationsAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.EnableAWSOrganizationsAccessOutput)
+	return ret0, ret1
+}
+
+// EnableAWSOrganizationsAccessRequest indicates an expected call of EnableAWSOrganizationsAccessRequest
+func (mr *MockServiceCatalogAPIMockRecorder) EnableAWSOrganizationsAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableAWSOrganizationsAccessRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).EnableAWSOrganizationsAccessRequest), arg0)
+}
+
+// EnableAWSOrganizationsAccessWithContext mocks base method
+func (m *MockServiceCatalogAPI) EnableAWSOrganizationsAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.EnableAWSOrganizationsAccessInput, arg2 ...request.Option) (*servicecatalog.EnableAWSOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableAWSOrganizationsAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.EnableAWSOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableAWSOrganizationsAccessWithContext indicates an expected call of EnableAWSOrganizationsAccessWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) EnableAWSOrganizationsAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableAWSOrganizationsAccessWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).EnableAWSOrganizationsAccessWithContext), varargs...)
+}
+
 // ExecuteProvisionedProductPlan mocks base method
 func (m *MockServiceCatalogAPI) ExecuteProvisionedProductPlan(arg0 *servicecatalog.ExecuteProvisionedProductPlanInput) (*servicecatalog.ExecuteProvisionedProductPlanOutput, error) {
 	m.ctrl.T.Helper()
@@ -2183,6 +2333,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductServiceAct
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteProvisionedProductServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ExecuteProvisionedProductServiceActionWithContext), varargs...)
+}
+
+// GetAWSOrganizationsAccessStatus mocks base method
+func (m *MockServiceCatalogAPI) GetAWSOrganizationsAccessStatus(arg0 *servicecatalog.GetAWSOrganizationsAccessStatusInput) (*servicecatalog.GetAWSOrganizationsAccessStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAWSOrganizationsAccessStatus", arg0)
+	ret0, _ := ret[0].(*servicecatalog.GetAWSOrganizationsAccessStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAWSOrganizationsAccessStatus indicates an expected call of GetAWSOrganizationsAccessStatus
+func (mr *MockServiceCatalogAPIMockRecorder) GetAWSOrganizationsAccessStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAWSOrganizationsAccessStatus", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetAWSOrganizationsAccessStatus), arg0)
+}
+
+// GetAWSOrganizationsAccessStatusRequest mocks base method
+func (m *MockServiceCatalogAPI) GetAWSOrganizationsAccessStatusRequest(arg0 *servicecatalog.GetAWSOrganizationsAccessStatusInput) (*request.Request, *servicecatalog.GetAWSOrganizationsAccessStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAWSOrganizationsAccessStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.GetAWSOrganizationsAccessStatusOutput)
+	return ret0, ret1
+}
+
+// GetAWSOrganizationsAccessStatusRequest indicates an expected call of GetAWSOrganizationsAccessStatusRequest
+func (mr *MockServiceCatalogAPIMockRecorder) GetAWSOrganizationsAccessStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAWSOrganizationsAccessStatusRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetAWSOrganizationsAccessStatusRequest), arg0)
+}
+
+// GetAWSOrganizationsAccessStatusWithContext mocks base method
+func (m *MockServiceCatalogAPI) GetAWSOrganizationsAccessStatusWithContext(arg0 aws.Context, arg1 *servicecatalog.GetAWSOrganizationsAccessStatusInput, arg2 ...request.Option) (*servicecatalog.GetAWSOrganizationsAccessStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAWSOrganizationsAccessStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.GetAWSOrganizationsAccessStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAWSOrganizationsAccessStatusWithContext indicates an expected call of GetAWSOrganizationsAccessStatusWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) GetAWSOrganizationsAccessStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAWSOrganizationsAccessStatusWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetAWSOrganizationsAccessStatusWithContext), varargs...)
 }
 
 // ListAcceptedPortfolioShares mocks base method
@@ -2432,6 +2632,89 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListLaunchPathsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLaunchPathsWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListLaunchPathsWithContext), varargs...)
+}
+
+// ListOrganizationPortfolioAccess mocks base method
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccess(arg0 *servicecatalog.ListOrganizationPortfolioAccessInput) (*servicecatalog.ListOrganizationPortfolioAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationPortfolioAccess", arg0)
+	ret0, _ := ret[0].(*servicecatalog.ListOrganizationPortfolioAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationPortfolioAccess indicates an expected call of ListOrganizationPortfolioAccess
+func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationPortfolioAccess", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListOrganizationPortfolioAccess), arg0)
+}
+
+// ListOrganizationPortfolioAccessPages mocks base method
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessPages(arg0 *servicecatalog.ListOrganizationPortfolioAccessInput, arg1 func(*servicecatalog.ListOrganizationPortfolioAccessOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationPortfolioAccessPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationPortfolioAccessPages indicates an expected call of ListOrganizationPortfolioAccessPages
+func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccessPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationPortfolioAccessPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListOrganizationPortfolioAccessPages), arg0, arg1)
+}
+
+// ListOrganizationPortfolioAccessPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListOrganizationPortfolioAccessInput, arg2 func(*servicecatalog.ListOrganizationPortfolioAccessOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationPortfolioAccessPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationPortfolioAccessPagesWithContext indicates an expected call of ListOrganizationPortfolioAccessPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccessPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationPortfolioAccessPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListOrganizationPortfolioAccessPagesWithContext), varargs...)
+}
+
+// ListOrganizationPortfolioAccessRequest mocks base method
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessRequest(arg0 *servicecatalog.ListOrganizationPortfolioAccessInput) (*request.Request, *servicecatalog.ListOrganizationPortfolioAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationPortfolioAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.ListOrganizationPortfolioAccessOutput)
+	return ret0, ret1
+}
+
+// ListOrganizationPortfolioAccessRequest indicates an expected call of ListOrganizationPortfolioAccessRequest
+func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationPortfolioAccessRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListOrganizationPortfolioAccessRequest), arg0)
+}
+
+// ListOrganizationPortfolioAccessWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.ListOrganizationPortfolioAccessInput, arg2 ...request.Option) (*servicecatalog.ListOrganizationPortfolioAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationPortfolioAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.ListOrganizationPortfolioAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationPortfolioAccessWithContext indicates an expected call of ListOrganizationPortfolioAccessWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationPortfolioAccessWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListOrganizationPortfolioAccessWithContext), varargs...)
 }
 
 // ListPortfolioAccess mocks base method
