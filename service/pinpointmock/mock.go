@@ -2685,6 +2685,56 @@ func (mr *MockPinpointAPIMockRecorder) PutEventStreamWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEventStreamWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).PutEventStreamWithContext), varargs...)
 }
 
+// PutEvents mocks base method
+func (m *MockPinpointAPI) PutEvents(arg0 *pinpoint.PutEventsInput) (*pinpoint.PutEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEvents", arg0)
+	ret0, _ := ret[0].(*pinpoint.PutEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEvents indicates an expected call of PutEvents
+func (mr *MockPinpointAPIMockRecorder) PutEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEvents", reflect.TypeOf((*MockPinpointAPI)(nil).PutEvents), arg0)
+}
+
+// PutEventsRequest mocks base method
+func (m *MockPinpointAPI) PutEventsRequest(arg0 *pinpoint.PutEventsInput) (*request.Request, *pinpoint.PutEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.PutEventsOutput)
+	return ret0, ret1
+}
+
+// PutEventsRequest indicates an expected call of PutEventsRequest
+func (mr *MockPinpointAPIMockRecorder) PutEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEventsRequest", reflect.TypeOf((*MockPinpointAPI)(nil).PutEventsRequest), arg0)
+}
+
+// PutEventsWithContext mocks base method
+func (m *MockPinpointAPI) PutEventsWithContext(arg0 aws.Context, arg1 *pinpoint.PutEventsInput, arg2 ...request.Option) (*pinpoint.PutEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.PutEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEventsWithContext indicates an expected call of PutEventsWithContext
+func (mr *MockPinpointAPIMockRecorder) PutEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEventsWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).PutEventsWithContext), varargs...)
+}
+
 // RemoveAttributes mocks base method
 func (m *MockPinpointAPI) RemoveAttributes(arg0 *pinpoint.RemoveAttributesInput) (*pinpoint.RemoveAttributesOutput, error) {
 	m.ctrl.T.Helper()
