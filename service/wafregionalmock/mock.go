@@ -836,6 +836,56 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteIPSetWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSetWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).DeleteIPSetWithContext), varargs...)
 }
 
+// DeleteLoggingConfiguration mocks base method
+func (m *MockWAFRegionalAPI) DeleteLoggingConfiguration(arg0 *waf.DeleteLoggingConfigurationInput) (*waf.DeleteLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*waf.DeleteLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfiguration indicates an expected call of DeleteLoggingConfiguration
+func (mr *MockWAFRegionalAPIMockRecorder) DeleteLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfiguration", reflect.TypeOf((*MockWAFRegionalAPI)(nil).DeleteLoggingConfiguration), arg0)
+}
+
+// DeleteLoggingConfigurationRequest mocks base method
+func (m *MockWAFRegionalAPI) DeleteLoggingConfigurationRequest(arg0 *waf.DeleteLoggingConfigurationInput) (*request.Request, *waf.DeleteLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*waf.DeleteLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfigurationRequest indicates an expected call of DeleteLoggingConfigurationRequest
+func (mr *MockWAFRegionalAPIMockRecorder) DeleteLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationRequest", reflect.TypeOf((*MockWAFRegionalAPI)(nil).DeleteLoggingConfigurationRequest), arg0)
+}
+
+// DeleteLoggingConfigurationWithContext mocks base method
+func (m *MockWAFRegionalAPI) DeleteLoggingConfigurationWithContext(arg0 aws.Context, arg1 *waf.DeleteLoggingConfigurationInput, arg2 ...request.Option) (*waf.DeleteLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*waf.DeleteLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfigurationWithContext indicates an expected call of DeleteLoggingConfigurationWithContext
+func (mr *MockWAFRegionalAPIMockRecorder) DeleteLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).DeleteLoggingConfigurationWithContext), varargs...)
+}
+
 // DeletePermissionPolicy mocks base method
 func (m *MockWAFRegionalAPI) DeletePermissionPolicy(arg0 *waf.DeletePermissionPolicyInput) (*waf.DeletePermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1634,6 +1684,56 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetIPSetWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSetWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).GetIPSetWithContext), varargs...)
+}
+
+// GetLoggingConfiguration mocks base method
+func (m *MockWAFRegionalAPI) GetLoggingConfiguration(arg0 *waf.GetLoggingConfigurationInput) (*waf.GetLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*waf.GetLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLoggingConfiguration indicates an expected call of GetLoggingConfiguration
+func (mr *MockWAFRegionalAPIMockRecorder) GetLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfiguration", reflect.TypeOf((*MockWAFRegionalAPI)(nil).GetLoggingConfiguration), arg0)
+}
+
+// GetLoggingConfigurationRequest mocks base method
+func (m *MockWAFRegionalAPI) GetLoggingConfigurationRequest(arg0 *waf.GetLoggingConfigurationInput) (*request.Request, *waf.GetLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*waf.GetLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetLoggingConfigurationRequest indicates an expected call of GetLoggingConfigurationRequest
+func (mr *MockWAFRegionalAPIMockRecorder) GetLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationRequest", reflect.TypeOf((*MockWAFRegionalAPI)(nil).GetLoggingConfigurationRequest), arg0)
+}
+
+// GetLoggingConfigurationWithContext mocks base method
+func (m *MockWAFRegionalAPI) GetLoggingConfigurationWithContext(arg0 aws.Context, arg1 *waf.GetLoggingConfigurationInput, arg2 ...request.Option) (*waf.GetLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*waf.GetLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLoggingConfigurationWithContext indicates an expected call of GetLoggingConfigurationWithContext
+func (mr *MockWAFRegionalAPIMockRecorder) GetLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).GetLoggingConfigurationWithContext), varargs...)
 }
 
 // GetPermissionPolicy mocks base method
@@ -2486,6 +2586,56 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListIPSetsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).ListIPSetsWithContext), varargs...)
 }
 
+// ListLoggingConfigurations mocks base method
+func (m *MockWAFRegionalAPI) ListLoggingConfigurations(arg0 *waf.ListLoggingConfigurationsInput) (*waf.ListLoggingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLoggingConfigurations", arg0)
+	ret0, _ := ret[0].(*waf.ListLoggingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLoggingConfigurations indicates an expected call of ListLoggingConfigurations
+func (mr *MockWAFRegionalAPIMockRecorder) ListLoggingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurations", reflect.TypeOf((*MockWAFRegionalAPI)(nil).ListLoggingConfigurations), arg0)
+}
+
+// ListLoggingConfigurationsRequest mocks base method
+func (m *MockWAFRegionalAPI) ListLoggingConfigurationsRequest(arg0 *waf.ListLoggingConfigurationsInput) (*request.Request, *waf.ListLoggingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLoggingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*waf.ListLoggingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListLoggingConfigurationsRequest indicates an expected call of ListLoggingConfigurationsRequest
+func (mr *MockWAFRegionalAPIMockRecorder) ListLoggingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsRequest", reflect.TypeOf((*MockWAFRegionalAPI)(nil).ListLoggingConfigurationsRequest), arg0)
+}
+
+// ListLoggingConfigurationsWithContext mocks base method
+func (m *MockWAFRegionalAPI) ListLoggingConfigurationsWithContext(arg0 aws.Context, arg1 *waf.ListLoggingConfigurationsInput, arg2 ...request.Option) (*waf.ListLoggingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLoggingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*waf.ListLoggingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLoggingConfigurationsWithContext indicates an expected call of ListLoggingConfigurationsWithContext
+func (mr *MockWAFRegionalAPIMockRecorder) ListLoggingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).ListLoggingConfigurationsWithContext), varargs...)
+}
+
 // ListRateBasedRules mocks base method
 func (m *MockWAFRegionalAPI) ListRateBasedRules(arg0 *waf.ListRateBasedRulesInput) (*waf.ListRateBasedRulesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3034,6 +3184,56 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListXssMatchSetsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListXssMatchSetsWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).ListXssMatchSetsWithContext), varargs...)
+}
+
+// PutLoggingConfiguration mocks base method
+func (m *MockWAFRegionalAPI) PutLoggingConfiguration(arg0 *waf.PutLoggingConfigurationInput) (*waf.PutLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*waf.PutLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLoggingConfiguration indicates an expected call of PutLoggingConfiguration
+func (mr *MockWAFRegionalAPIMockRecorder) PutLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfiguration", reflect.TypeOf((*MockWAFRegionalAPI)(nil).PutLoggingConfiguration), arg0)
+}
+
+// PutLoggingConfigurationRequest mocks base method
+func (m *MockWAFRegionalAPI) PutLoggingConfigurationRequest(arg0 *waf.PutLoggingConfigurationInput) (*request.Request, *waf.PutLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*waf.PutLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutLoggingConfigurationRequest indicates an expected call of PutLoggingConfigurationRequest
+func (mr *MockWAFRegionalAPIMockRecorder) PutLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfigurationRequest", reflect.TypeOf((*MockWAFRegionalAPI)(nil).PutLoggingConfigurationRequest), arg0)
+}
+
+// PutLoggingConfigurationWithContext mocks base method
+func (m *MockWAFRegionalAPI) PutLoggingConfigurationWithContext(arg0 aws.Context, arg1 *waf.PutLoggingConfigurationInput, arg2 ...request.Option) (*waf.PutLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*waf.PutLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLoggingConfigurationWithContext indicates an expected call of PutLoggingConfigurationWithContext
+func (mr *MockWAFRegionalAPIMockRecorder) PutLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFRegionalAPI)(nil).PutLoggingConfigurationWithContext), varargs...)
 }
 
 // PutPermissionPolicy mocks base method
