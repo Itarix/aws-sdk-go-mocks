@@ -1018,6 +1018,89 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListChannelsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockIoTAnalyticsAPI)(nil).ListChannelsWithContext), varargs...)
 }
 
+// ListDatasetContents mocks base method
+func (m *MockIoTAnalyticsAPI) ListDatasetContents(arg0 *iotanalytics.ListDatasetContentsInput) (*iotanalytics.ListDatasetContentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetContents", arg0)
+	ret0, _ := ret[0].(*iotanalytics.ListDatasetContentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetContents indicates an expected call of ListDatasetContents
+func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetContents", reflect.TypeOf((*MockIoTAnalyticsAPI)(nil).ListDatasetContents), arg0)
+}
+
+// ListDatasetContentsPages mocks base method
+func (m *MockIoTAnalyticsAPI) ListDatasetContentsPages(arg0 *iotanalytics.ListDatasetContentsInput, arg1 func(*iotanalytics.ListDatasetContentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetContentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetContentsPages indicates an expected call of ListDatasetContentsPages
+func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetContentsPages", reflect.TypeOf((*MockIoTAnalyticsAPI)(nil).ListDatasetContentsPages), arg0, arg1)
+}
+
+// ListDatasetContentsPagesWithContext mocks base method
+func (m *MockIoTAnalyticsAPI) ListDatasetContentsPagesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatasetContentsInput, arg2 func(*iotanalytics.ListDatasetContentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetContentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetContentsPagesWithContext indicates an expected call of ListDatasetContentsPagesWithContext
+func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetContentsPagesWithContext", reflect.TypeOf((*MockIoTAnalyticsAPI)(nil).ListDatasetContentsPagesWithContext), varargs...)
+}
+
+// ListDatasetContentsRequest mocks base method
+func (m *MockIoTAnalyticsAPI) ListDatasetContentsRequest(arg0 *iotanalytics.ListDatasetContentsInput) (*request.Request, *iotanalytics.ListDatasetContentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetContentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotanalytics.ListDatasetContentsOutput)
+	return ret0, ret1
+}
+
+// ListDatasetContentsRequest indicates an expected call of ListDatasetContentsRequest
+func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetContentsRequest", reflect.TypeOf((*MockIoTAnalyticsAPI)(nil).ListDatasetContentsRequest), arg0)
+}
+
+// ListDatasetContentsWithContext mocks base method
+func (m *MockIoTAnalyticsAPI) ListDatasetContentsWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatasetContentsInput, arg2 ...request.Option) (*iotanalytics.ListDatasetContentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetContentsWithContext", varargs...)
+	ret0, _ := ret[0].(*iotanalytics.ListDatasetContentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetContentsWithContext indicates an expected call of ListDatasetContentsWithContext
+func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetContentsWithContext", reflect.TypeOf((*MockIoTAnalyticsAPI)(nil).ListDatasetContentsWithContext), varargs...)
+}
+
 // ListDatasets mocks base method
 func (m *MockIoTAnalyticsAPI) ListDatasets(arg0 *iotanalytics.ListDatasetsInput) (*iotanalytics.ListDatasetsOutput, error) {
 	m.ctrl.T.Helper()
