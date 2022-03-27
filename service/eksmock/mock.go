@@ -185,6 +185,56 @@ func (mr *MockEKSAPIMockRecorder) DescribeClusterWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DescribeClusterWithContext), varargs...)
 }
 
+// DescribeUpdate mocks base method
+func (m *MockEKSAPI) DescribeUpdate(arg0 *eks.DescribeUpdateInput) (*eks.DescribeUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUpdate", arg0)
+	ret0, _ := ret[0].(*eks.DescribeUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUpdate indicates an expected call of DescribeUpdate
+func (mr *MockEKSAPIMockRecorder) DescribeUpdate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdate", reflect.TypeOf((*MockEKSAPI)(nil).DescribeUpdate), arg0)
+}
+
+// DescribeUpdateRequest mocks base method
+func (m *MockEKSAPI) DescribeUpdateRequest(arg0 *eks.DescribeUpdateInput) (*request.Request, *eks.DescribeUpdateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUpdateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.DescribeUpdateOutput)
+	return ret0, ret1
+}
+
+// DescribeUpdateRequest indicates an expected call of DescribeUpdateRequest
+func (mr *MockEKSAPIMockRecorder) DescribeUpdateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateRequest", reflect.TypeOf((*MockEKSAPI)(nil).DescribeUpdateRequest), arg0)
+}
+
+// DescribeUpdateWithContext mocks base method
+func (m *MockEKSAPI) DescribeUpdateWithContext(arg0 aws.Context, arg1 *eks.DescribeUpdateInput, arg2 ...request.Option) (*eks.DescribeUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUpdateWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.DescribeUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUpdateWithContext indicates an expected call of DescribeUpdateWithContext
+func (mr *MockEKSAPIMockRecorder) DescribeUpdateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DescribeUpdateWithContext), varargs...)
+}
+
 // ListClusters mocks base method
 func (m *MockEKSAPI) ListClusters(arg0 *eks.ListClustersInput) (*eks.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,106 @@ func (mr *MockEKSAPIMockRecorder) ListClustersWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListClustersWithContext), varargs...)
+}
+
+// ListUpdates mocks base method
+func (m *MockEKSAPI) ListUpdates(arg0 *eks.ListUpdatesInput) (*eks.ListUpdatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUpdates", arg0)
+	ret0, _ := ret[0].(*eks.ListUpdatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUpdates indicates an expected call of ListUpdates
+func (mr *MockEKSAPIMockRecorder) ListUpdates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUpdates", reflect.TypeOf((*MockEKSAPI)(nil).ListUpdates), arg0)
+}
+
+// ListUpdatesRequest mocks base method
+func (m *MockEKSAPI) ListUpdatesRequest(arg0 *eks.ListUpdatesInput) (*request.Request, *eks.ListUpdatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUpdatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.ListUpdatesOutput)
+	return ret0, ret1
+}
+
+// ListUpdatesRequest indicates an expected call of ListUpdatesRequest
+func (mr *MockEKSAPIMockRecorder) ListUpdatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUpdatesRequest", reflect.TypeOf((*MockEKSAPI)(nil).ListUpdatesRequest), arg0)
+}
+
+// ListUpdatesWithContext mocks base method
+func (m *MockEKSAPI) ListUpdatesWithContext(arg0 aws.Context, arg1 *eks.ListUpdatesInput, arg2 ...request.Option) (*eks.ListUpdatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUpdatesWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.ListUpdatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUpdatesWithContext indicates an expected call of ListUpdatesWithContext
+func (mr *MockEKSAPIMockRecorder) ListUpdatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUpdatesWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListUpdatesWithContext), varargs...)
+}
+
+// UpdateClusterVersion mocks base method
+func (m *MockEKSAPI) UpdateClusterVersion(arg0 *eks.UpdateClusterVersionInput) (*eks.UpdateClusterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateClusterVersion", arg0)
+	ret0, _ := ret[0].(*eks.UpdateClusterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateClusterVersion indicates an expected call of UpdateClusterVersion
+func (mr *MockEKSAPIMockRecorder) UpdateClusterVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterVersion", reflect.TypeOf((*MockEKSAPI)(nil).UpdateClusterVersion), arg0)
+}
+
+// UpdateClusterVersionRequest mocks base method
+func (m *MockEKSAPI) UpdateClusterVersionRequest(arg0 *eks.UpdateClusterVersionInput) (*request.Request, *eks.UpdateClusterVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateClusterVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.UpdateClusterVersionOutput)
+	return ret0, ret1
+}
+
+// UpdateClusterVersionRequest indicates an expected call of UpdateClusterVersionRequest
+func (mr *MockEKSAPIMockRecorder) UpdateClusterVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterVersionRequest", reflect.TypeOf((*MockEKSAPI)(nil).UpdateClusterVersionRequest), arg0)
+}
+
+// UpdateClusterVersionWithContext mocks base method
+func (m *MockEKSAPI) UpdateClusterVersionWithContext(arg0 aws.Context, arg1 *eks.UpdateClusterVersionInput, arg2 ...request.Option) (*eks.UpdateClusterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateClusterVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.UpdateClusterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateClusterVersionWithContext indicates an expected call of UpdateClusterVersionWithContext
+func (mr *MockEKSAPIMockRecorder) UpdateClusterVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterVersionWithContext", reflect.TypeOf((*MockEKSAPI)(nil).UpdateClusterVersionWithContext), varargs...)
 }
 
 // WaitUntilClusterActive mocks base method
