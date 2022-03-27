@@ -85,6 +85,56 @@ func (mr *MockCostExplorerAPIMockRecorder) GetCostAndUsageWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostAndUsageWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostAndUsageWithContext), varargs...)
 }
 
+// GetCostForecast mocks base method
+func (m *MockCostExplorerAPI) GetCostForecast(arg0 *costexplorer.GetCostForecastInput) (*costexplorer.GetCostForecastOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostForecast", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetCostForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostForecast indicates an expected call of GetCostForecast
+func (mr *MockCostExplorerAPIMockRecorder) GetCostForecast(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostForecast", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostForecast), arg0)
+}
+
+// GetCostForecastRequest mocks base method
+func (m *MockCostExplorerAPI) GetCostForecastRequest(arg0 *costexplorer.GetCostForecastInput) (*request.Request, *costexplorer.GetCostForecastOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostForecastRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetCostForecastOutput)
+	return ret0, ret1
+}
+
+// GetCostForecastRequest indicates an expected call of GetCostForecastRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetCostForecastRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostForecastRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostForecastRequest), arg0)
+}
+
+// GetCostForecastWithContext mocks base method
+func (m *MockCostExplorerAPI) GetCostForecastWithContext(arg0 aws.Context, arg1 *costexplorer.GetCostForecastInput, arg2 ...request.Option) (*costexplorer.GetCostForecastOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCostForecastWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetCostForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostForecastWithContext indicates an expected call of GetCostForecastWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetCostForecastWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostForecastWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostForecastWithContext), varargs...)
+}
+
 // GetDimensionValues mocks base method
 func (m *MockCostExplorerAPI) GetDimensionValues(arg0 *costexplorer.GetDimensionValuesInput) (*costexplorer.GetDimensionValuesOutput, error) {
 	m.ctrl.T.Helper()

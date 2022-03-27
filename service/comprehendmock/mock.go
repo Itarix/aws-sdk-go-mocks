@@ -335,6 +335,56 @@ func (mr *MockComprehendAPIMockRecorder) CreateDocumentClassifierWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDocumentClassifierWithContext), varargs...)
 }
 
+// CreateEntityRecognizer mocks base method
+func (m *MockComprehendAPI) CreateEntityRecognizer(arg0 *comprehend.CreateEntityRecognizerInput) (*comprehend.CreateEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEntityRecognizer", arg0)
+	ret0, _ := ret[0].(*comprehend.CreateEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEntityRecognizer indicates an expected call of CreateEntityRecognizer
+func (mr *MockComprehendAPIMockRecorder) CreateEntityRecognizer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntityRecognizer", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEntityRecognizer), arg0)
+}
+
+// CreateEntityRecognizerRequest mocks base method
+func (m *MockComprehendAPI) CreateEntityRecognizerRequest(arg0 *comprehend.CreateEntityRecognizerInput) (*request.Request, *comprehend.CreateEntityRecognizerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEntityRecognizerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.CreateEntityRecognizerOutput)
+	return ret0, ret1
+}
+
+// CreateEntityRecognizerRequest indicates an expected call of CreateEntityRecognizerRequest
+func (mr *MockComprehendAPIMockRecorder) CreateEntityRecognizerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntityRecognizerRequest", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEntityRecognizerRequest), arg0)
+}
+
+// CreateEntityRecognizerWithContext mocks base method
+func (m *MockComprehendAPI) CreateEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.CreateEntityRecognizerInput, arg2 ...request.Option) (*comprehend.CreateEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEntityRecognizerWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.CreateEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEntityRecognizerWithContext indicates an expected call of CreateEntityRecognizerWithContext
+func (mr *MockComprehendAPIMockRecorder) CreateEntityRecognizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntityRecognizerWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEntityRecognizerWithContext), varargs...)
+}
+
 // DeleteDocumentClassifier mocks base method
 func (m *MockComprehendAPI) DeleteDocumentClassifier(arg0 *comprehend.DeleteDocumentClassifierInput) (*comprehend.DeleteDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockComprehendAPIMockRecorder) DeleteDocumentClassifierWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteDocumentClassifierWithContext), varargs...)
+}
+
+// DeleteEntityRecognizer mocks base method
+func (m *MockComprehendAPI) DeleteEntityRecognizer(arg0 *comprehend.DeleteEntityRecognizerInput) (*comprehend.DeleteEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEntityRecognizer", arg0)
+	ret0, _ := ret[0].(*comprehend.DeleteEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEntityRecognizer indicates an expected call of DeleteEntityRecognizer
+func (mr *MockComprehendAPIMockRecorder) DeleteEntityRecognizer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityRecognizer", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEntityRecognizer), arg0)
+}
+
+// DeleteEntityRecognizerRequest mocks base method
+func (m *MockComprehendAPI) DeleteEntityRecognizerRequest(arg0 *comprehend.DeleteEntityRecognizerInput) (*request.Request, *comprehend.DeleteEntityRecognizerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEntityRecognizerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DeleteEntityRecognizerOutput)
+	return ret0, ret1
+}
+
+// DeleteEntityRecognizerRequest indicates an expected call of DeleteEntityRecognizerRequest
+func (mr *MockComprehendAPIMockRecorder) DeleteEntityRecognizerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityRecognizerRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEntityRecognizerRequest), arg0)
+}
+
+// DeleteEntityRecognizerWithContext mocks base method
+func (m *MockComprehendAPI) DeleteEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.DeleteEntityRecognizerInput, arg2 ...request.Option) (*comprehend.DeleteEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEntityRecognizerWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DeleteEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEntityRecognizerWithContext indicates an expected call of DeleteEntityRecognizerWithContext
+func (mr *MockComprehendAPIMockRecorder) DeleteEntityRecognizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityRecognizerWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEntityRecognizerWithContext), varargs...)
 }
 
 // DescribeDocumentClassificationJob mocks base method
@@ -583,6 +683,56 @@ func (mr *MockComprehendAPIMockRecorder) DescribeEntitiesDetectionJobWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntitiesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEntitiesDetectionJobWithContext), varargs...)
+}
+
+// DescribeEntityRecognizer mocks base method
+func (m *MockComprehendAPI) DescribeEntityRecognizer(arg0 *comprehend.DescribeEntityRecognizerInput) (*comprehend.DescribeEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntityRecognizer", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntityRecognizer indicates an expected call of DescribeEntityRecognizer
+func (mr *MockComprehendAPIMockRecorder) DescribeEntityRecognizer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityRecognizer", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEntityRecognizer), arg0)
+}
+
+// DescribeEntityRecognizerRequest mocks base method
+func (m *MockComprehendAPI) DescribeEntityRecognizerRequest(arg0 *comprehend.DescribeEntityRecognizerInput) (*request.Request, *comprehend.DescribeEntityRecognizerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntityRecognizerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeEntityRecognizerOutput)
+	return ret0, ret1
+}
+
+// DescribeEntityRecognizerRequest indicates an expected call of DescribeEntityRecognizerRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeEntityRecognizerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityRecognizerRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEntityRecognizerRequest), arg0)
+}
+
+// DescribeEntityRecognizerWithContext mocks base method
+func (m *MockComprehendAPI) DescribeEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.DescribeEntityRecognizerInput, arg2 ...request.Option) (*comprehend.DescribeEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEntityRecognizerWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntityRecognizerWithContext indicates an expected call of DescribeEntityRecognizerWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeEntityRecognizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityRecognizerWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEntityRecognizerWithContext), varargs...)
 }
 
 // DescribeKeyPhrasesDetectionJob mocks base method
@@ -1249,6 +1399,56 @@ func (mr *MockComprehendAPIMockRecorder) ListEntitiesDetectionJobsWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntitiesDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntitiesDetectionJobsWithContext), varargs...)
+}
+
+// ListEntityRecognizers mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizers(arg0 *comprehend.ListEntityRecognizersInput) (*comprehend.ListEntityRecognizersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntityRecognizers", arg0)
+	ret0, _ := ret[0].(*comprehend.ListEntityRecognizersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEntityRecognizers indicates an expected call of ListEntityRecognizers
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizers", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizers), arg0)
+}
+
+// ListEntityRecognizersRequest mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizersRequest(arg0 *comprehend.ListEntityRecognizersInput) (*request.Request, *comprehend.ListEntityRecognizersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntityRecognizersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListEntityRecognizersOutput)
+	return ret0, ret1
+}
+
+// ListEntityRecognizersRequest indicates an expected call of ListEntityRecognizersRequest
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizersRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizersRequest), arg0)
+}
+
+// ListEntityRecognizersWithContext mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizersWithContext(arg0 aws.Context, arg1 *comprehend.ListEntityRecognizersInput, arg2 ...request.Option) (*comprehend.ListEntityRecognizersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEntityRecognizersWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListEntityRecognizersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEntityRecognizersWithContext indicates an expected call of ListEntityRecognizersWithContext
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizersWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizersWithContext), varargs...)
 }
 
 // ListKeyPhrasesDetectionJobs mocks base method

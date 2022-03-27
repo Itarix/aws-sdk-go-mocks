@@ -385,6 +385,156 @@ func (mr *MockWorkSpacesAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
+// DeleteWorkspaceImage mocks base method
+func (m *MockWorkSpacesAPI) DeleteWorkspaceImage(arg0 *workspaces.DeleteWorkspaceImageInput) (*workspaces.DeleteWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkspaceImage", arg0)
+	ret0, _ := ret[0].(*workspaces.DeleteWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceImage indicates an expected call of DeleteWorkspaceImage
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceImage", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceImage), arg0)
+}
+
+// DeleteWorkspaceImageRequest mocks base method
+func (m *MockWorkSpacesAPI) DeleteWorkspaceImageRequest(arg0 *workspaces.DeleteWorkspaceImageInput) (*request.Request, *workspaces.DeleteWorkspaceImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkspaceImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DeleteWorkspaceImageOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceImageRequest indicates an expected call of DeleteWorkspaceImageRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceImageRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceImageRequest), arg0)
+}
+
+// DeleteWorkspaceImageWithContext mocks base method
+func (m *MockWorkSpacesAPI) DeleteWorkspaceImageWithContext(arg0 aws.Context, arg1 *workspaces.DeleteWorkspaceImageInput, arg2 ...request.Option) (*workspaces.DeleteWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkspaceImageWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DeleteWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceImageWithContext indicates an expected call of DeleteWorkspaceImageWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceImageWithContext), varargs...)
+}
+
+// DescribeAccount mocks base method
+func (m *MockWorkSpacesAPI) DescribeAccount(arg0 *workspaces.DescribeAccountInput) (*workspaces.DescribeAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccount", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccount indicates an expected call of DescribeAccount
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccount", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccount), arg0)
+}
+
+// DescribeAccountModifications mocks base method
+func (m *MockWorkSpacesAPI) DescribeAccountModifications(arg0 *workspaces.DescribeAccountModificationsInput) (*workspaces.DescribeAccountModificationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountModifications", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeAccountModificationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountModifications indicates an expected call of DescribeAccountModifications
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountModifications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountModifications", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountModifications), arg0)
+}
+
+// DescribeAccountModificationsRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeAccountModificationsRequest(arg0 *workspaces.DescribeAccountModificationsInput) (*request.Request, *workspaces.DescribeAccountModificationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountModificationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeAccountModificationsOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountModificationsRequest indicates an expected call of DescribeAccountModificationsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountModificationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountModificationsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountModificationsRequest), arg0)
+}
+
+// DescribeAccountModificationsWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeAccountModificationsWithContext(arg0 aws.Context, arg1 *workspaces.DescribeAccountModificationsInput, arg2 ...request.Option) (*workspaces.DescribeAccountModificationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountModificationsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeAccountModificationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountModificationsWithContext indicates an expected call of DescribeAccountModificationsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountModificationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountModificationsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountModificationsWithContext), varargs...)
+}
+
+// DescribeAccountRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeAccountRequest(arg0 *workspaces.DescribeAccountInput) (*request.Request, *workspaces.DescribeAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeAccountOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountRequest indicates an expected call of DescribeAccountRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountRequest), arg0)
+}
+
+// DescribeAccountWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeAccountWithContext(arg0 aws.Context, arg1 *workspaces.DescribeAccountInput, arg2 ...request.Option) (*workspaces.DescribeAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountWithContext indicates an expected call of DescribeAccountWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountWithContext), varargs...)
+}
+
 // DescribeIpGroups mocks base method
 func (m *MockWorkSpacesAPI) DescribeIpGroups(arg0 *workspaces.DescribeIpGroupsInput) (*workspaces.DescribeIpGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -651,6 +801,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceDirectoriesWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceDirectoriesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceDirectoriesWithContext), varargs...)
 }
 
+// DescribeWorkspaceImages mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspaceImages(arg0 *workspaces.DescribeWorkspaceImagesInput) (*workspaces.DescribeWorkspaceImagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspaceImages", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspaceImagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceImages indicates an expected call of DescribeWorkspaceImages
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceImages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceImages", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceImages), arg0)
+}
+
+// DescribeWorkspaceImagesRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspaceImagesRequest(arg0 *workspaces.DescribeWorkspaceImagesInput) (*request.Request, *workspaces.DescribeWorkspaceImagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspaceImagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeWorkspaceImagesOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceImagesRequest indicates an expected call of DescribeWorkspaceImagesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceImagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceImagesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceImagesRequest), arg0)
+}
+
+// DescribeWorkspaceImagesWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspaceImagesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspaceImagesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceImagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkspaceImagesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspaceImagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceImagesWithContext indicates an expected call of DescribeWorkspaceImagesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceImagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceImagesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceImagesWithContext), varargs...)
+}
+
 // DescribeWorkspaces mocks base method
 func (m *MockWorkSpacesAPI) DescribeWorkspaces(arg0 *workspaces.DescribeWorkspacesInput) (*workspaces.DescribeWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
@@ -832,6 +1032,156 @@ func (mr *MockWorkSpacesAPIMockRecorder) DisassociateIpGroupsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateIpGroupsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DisassociateIpGroupsWithContext), varargs...)
+}
+
+// ImportWorkspaceImage mocks base method
+func (m *MockWorkSpacesAPI) ImportWorkspaceImage(arg0 *workspaces.ImportWorkspaceImageInput) (*workspaces.ImportWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportWorkspaceImage", arg0)
+	ret0, _ := ret[0].(*workspaces.ImportWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportWorkspaceImage indicates an expected call of ImportWorkspaceImage
+func (mr *MockWorkSpacesAPIMockRecorder) ImportWorkspaceImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportWorkspaceImage", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ImportWorkspaceImage), arg0)
+}
+
+// ImportWorkspaceImageRequest mocks base method
+func (m *MockWorkSpacesAPI) ImportWorkspaceImageRequest(arg0 *workspaces.ImportWorkspaceImageInput) (*request.Request, *workspaces.ImportWorkspaceImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportWorkspaceImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ImportWorkspaceImageOutput)
+	return ret0, ret1
+}
+
+// ImportWorkspaceImageRequest indicates an expected call of ImportWorkspaceImageRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ImportWorkspaceImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportWorkspaceImageRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ImportWorkspaceImageRequest), arg0)
+}
+
+// ImportWorkspaceImageWithContext mocks base method
+func (m *MockWorkSpacesAPI) ImportWorkspaceImageWithContext(arg0 aws.Context, arg1 *workspaces.ImportWorkspaceImageInput, arg2 ...request.Option) (*workspaces.ImportWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportWorkspaceImageWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ImportWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportWorkspaceImageWithContext indicates an expected call of ImportWorkspaceImageWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ImportWorkspaceImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ImportWorkspaceImageWithContext), varargs...)
+}
+
+// ListAvailableManagementCidrRanges mocks base method
+func (m *MockWorkSpacesAPI) ListAvailableManagementCidrRanges(arg0 *workspaces.ListAvailableManagementCidrRangesInput) (*workspaces.ListAvailableManagementCidrRangesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailableManagementCidrRanges", arg0)
+	ret0, _ := ret[0].(*workspaces.ListAvailableManagementCidrRangesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAvailableManagementCidrRanges indicates an expected call of ListAvailableManagementCidrRanges
+func (mr *MockWorkSpacesAPIMockRecorder) ListAvailableManagementCidrRanges(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagementCidrRanges", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ListAvailableManagementCidrRanges), arg0)
+}
+
+// ListAvailableManagementCidrRangesRequest mocks base method
+func (m *MockWorkSpacesAPI) ListAvailableManagementCidrRangesRequest(arg0 *workspaces.ListAvailableManagementCidrRangesInput) (*request.Request, *workspaces.ListAvailableManagementCidrRangesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailableManagementCidrRangesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ListAvailableManagementCidrRangesOutput)
+	return ret0, ret1
+}
+
+// ListAvailableManagementCidrRangesRequest indicates an expected call of ListAvailableManagementCidrRangesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ListAvailableManagementCidrRangesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagementCidrRangesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ListAvailableManagementCidrRangesRequest), arg0)
+}
+
+// ListAvailableManagementCidrRangesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ListAvailableManagementCidrRangesWithContext(arg0 aws.Context, arg1 *workspaces.ListAvailableManagementCidrRangesInput, arg2 ...request.Option) (*workspaces.ListAvailableManagementCidrRangesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAvailableManagementCidrRangesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ListAvailableManagementCidrRangesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAvailableManagementCidrRangesWithContext indicates an expected call of ListAvailableManagementCidrRangesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ListAvailableManagementCidrRangesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagementCidrRangesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ListAvailableManagementCidrRangesWithContext), varargs...)
+}
+
+// ModifyAccount mocks base method
+func (m *MockWorkSpacesAPI) ModifyAccount(arg0 *workspaces.ModifyAccountInput) (*workspaces.ModifyAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyAccount", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifyAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyAccount indicates an expected call of ModifyAccount
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAccount", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyAccount), arg0)
+}
+
+// ModifyAccountRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifyAccountRequest(arg0 *workspaces.ModifyAccountInput) (*request.Request, *workspaces.ModifyAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifyAccountOutput)
+	return ret0, ret1
+}
+
+// ModifyAccountRequest indicates an expected call of ModifyAccountRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAccountRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyAccountRequest), arg0)
+}
+
+// ModifyAccountWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifyAccountWithContext(arg0 aws.Context, arg1 *workspaces.ModifyAccountInput, arg2 ...request.Option) (*workspaces.ModifyAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifyAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyAccountWithContext indicates an expected call of ModifyAccountWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAccountWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyAccountWithContext), varargs...)
 }
 
 // ModifyWorkspaceProperties mocks base method
