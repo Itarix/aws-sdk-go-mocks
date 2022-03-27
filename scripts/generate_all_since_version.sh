@@ -110,7 +110,6 @@ do
     git push --tags
 
     echo "new version generated for ${sdk_version}"
-    break
   else
     change_minor=true
   fi
