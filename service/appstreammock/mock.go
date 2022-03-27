@@ -85,6 +85,106 @@ func (mr *MockAppStreamAPIMockRecorder) AssociateFleetWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFleetWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateFleetWithContext), varargs...)
 }
 
+// BatchAssociateUserStack mocks base method
+func (m *MockAppStreamAPI) BatchAssociateUserStack(arg0 *appstream.BatchAssociateUserStackInput) (*appstream.BatchAssociateUserStackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateUserStack", arg0)
+	ret0, _ := ret[0].(*appstream.BatchAssociateUserStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateUserStack indicates an expected call of BatchAssociateUserStack
+func (mr *MockAppStreamAPIMockRecorder) BatchAssociateUserStack(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateUserStack", reflect.TypeOf((*MockAppStreamAPI)(nil).BatchAssociateUserStack), arg0)
+}
+
+// BatchAssociateUserStackRequest mocks base method
+func (m *MockAppStreamAPI) BatchAssociateUserStackRequest(arg0 *appstream.BatchAssociateUserStackInput) (*request.Request, *appstream.BatchAssociateUserStackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateUserStackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.BatchAssociateUserStackOutput)
+	return ret0, ret1
+}
+
+// BatchAssociateUserStackRequest indicates an expected call of BatchAssociateUserStackRequest
+func (mr *MockAppStreamAPIMockRecorder) BatchAssociateUserStackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateUserStackRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).BatchAssociateUserStackRequest), arg0)
+}
+
+// BatchAssociateUserStackWithContext mocks base method
+func (m *MockAppStreamAPI) BatchAssociateUserStackWithContext(arg0 aws.Context, arg1 *appstream.BatchAssociateUserStackInput, arg2 ...request.Option) (*appstream.BatchAssociateUserStackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchAssociateUserStackWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.BatchAssociateUserStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateUserStackWithContext indicates an expected call of BatchAssociateUserStackWithContext
+func (mr *MockAppStreamAPIMockRecorder) BatchAssociateUserStackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateUserStackWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).BatchAssociateUserStackWithContext), varargs...)
+}
+
+// BatchDisassociateUserStack mocks base method
+func (m *MockAppStreamAPI) BatchDisassociateUserStack(arg0 *appstream.BatchDisassociateUserStackInput) (*appstream.BatchDisassociateUserStackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateUserStack", arg0)
+	ret0, _ := ret[0].(*appstream.BatchDisassociateUserStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateUserStack indicates an expected call of BatchDisassociateUserStack
+func (mr *MockAppStreamAPIMockRecorder) BatchDisassociateUserStack(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateUserStack", reflect.TypeOf((*MockAppStreamAPI)(nil).BatchDisassociateUserStack), arg0)
+}
+
+// BatchDisassociateUserStackRequest mocks base method
+func (m *MockAppStreamAPI) BatchDisassociateUserStackRequest(arg0 *appstream.BatchDisassociateUserStackInput) (*request.Request, *appstream.BatchDisassociateUserStackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateUserStackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.BatchDisassociateUserStackOutput)
+	return ret0, ret1
+}
+
+// BatchDisassociateUserStackRequest indicates an expected call of BatchDisassociateUserStackRequest
+func (mr *MockAppStreamAPIMockRecorder) BatchDisassociateUserStackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateUserStackRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).BatchDisassociateUserStackRequest), arg0)
+}
+
+// BatchDisassociateUserStackWithContext mocks base method
+func (m *MockAppStreamAPI) BatchDisassociateUserStackWithContext(arg0 aws.Context, arg1 *appstream.BatchDisassociateUserStackInput, arg2 ...request.Option) (*appstream.BatchDisassociateUserStackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDisassociateUserStackWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.BatchDisassociateUserStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateUserStackWithContext indicates an expected call of BatchDisassociateUserStackWithContext
+func (mr *MockAppStreamAPIMockRecorder) BatchDisassociateUserStackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateUserStackWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).BatchDisassociateUserStackWithContext), varargs...)
+}
+
 // CopyImage mocks base method
 func (m *MockAppStreamAPI) CopyImage(arg0 *appstream.CopyImageInput) (*appstream.CopyImageOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +535,56 @@ func (mr *MockAppStreamAPIMockRecorder) CreateStreamingURLWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStreamingURLWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateStreamingURLWithContext), varargs...)
 }
 
+// CreateUser mocks base method
+func (m *MockAppStreamAPI) CreateUser(arg0 *appstream.CreateUserInput) (*appstream.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUser", arg0)
+	ret0, _ := ret[0].(*appstream.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUser indicates an expected call of CreateUser
+func (mr *MockAppStreamAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUser), arg0)
+}
+
+// CreateUserRequest mocks base method
+func (m *MockAppStreamAPI) CreateUserRequest(arg0 *appstream.CreateUserInput) (*request.Request, *appstream.CreateUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.CreateUserOutput)
+	return ret0, ret1
+}
+
+// CreateUserRequest indicates an expected call of CreateUserRequest
+func (mr *MockAppStreamAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUserRequest), arg0)
+}
+
+// CreateUserWithContext mocks base method
+func (m *MockAppStreamAPI) CreateUserWithContext(arg0 aws.Context, arg1 *appstream.CreateUserInput, arg2 ...request.Option) (*appstream.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUserWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
+func (mr *MockAppStreamAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUserWithContext), varargs...)
+}
+
 // DeleteDirectoryConfig mocks base method
 func (m *MockAppStreamAPI) DeleteDirectoryConfig(arg0 *appstream.DeleteDirectoryConfigInput) (*appstream.DeleteDirectoryConfigOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +883,56 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteStackWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStackWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteStackWithContext), varargs...)
+}
+
+// DeleteUser mocks base method
+func (m *MockAppStreamAPI) DeleteUser(arg0 *appstream.DeleteUserInput) (*appstream.DeleteUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUser", arg0)
+	ret0, _ := ret[0].(*appstream.DeleteUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUser indicates an expected call of DeleteUser
+func (mr *MockAppStreamAPIMockRecorder) DeleteUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUser", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteUser), arg0)
+}
+
+// DeleteUserRequest mocks base method
+func (m *MockAppStreamAPI) DeleteUserRequest(arg0 *appstream.DeleteUserInput) (*request.Request, *appstream.DeleteUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DeleteUserOutput)
+	return ret0, ret1
+}
+
+// DeleteUserRequest indicates an expected call of DeleteUserRequest
+func (mr *MockAppStreamAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteUserRequest), arg0)
+}
+
+// DeleteUserWithContext mocks base method
+func (m *MockAppStreamAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *appstream.DeleteUserInput, arg2 ...request.Option) (*appstream.DeleteUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteUserWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DeleteUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUserWithContext indicates an expected call of DeleteUserWithContext
+func (mr *MockAppStreamAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteUserWithContext), varargs...)
 }
 
 // DescribeDirectoryConfigs mocks base method
@@ -1151,6 +1351,156 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeStacksWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStacksWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeStacksWithContext), varargs...)
 }
 
+// DescribeUserStackAssociations mocks base method
+func (m *MockAppStreamAPI) DescribeUserStackAssociations(arg0 *appstream.DescribeUserStackAssociationsInput) (*appstream.DescribeUserStackAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUserStackAssociations", arg0)
+	ret0, _ := ret[0].(*appstream.DescribeUserStackAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUserStackAssociations indicates an expected call of DescribeUserStackAssociations
+func (mr *MockAppStreamAPIMockRecorder) DescribeUserStackAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserStackAssociations", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeUserStackAssociations), arg0)
+}
+
+// DescribeUserStackAssociationsRequest mocks base method
+func (m *MockAppStreamAPI) DescribeUserStackAssociationsRequest(arg0 *appstream.DescribeUserStackAssociationsInput) (*request.Request, *appstream.DescribeUserStackAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUserStackAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DescribeUserStackAssociationsOutput)
+	return ret0, ret1
+}
+
+// DescribeUserStackAssociationsRequest indicates an expected call of DescribeUserStackAssociationsRequest
+func (mr *MockAppStreamAPIMockRecorder) DescribeUserStackAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserStackAssociationsRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeUserStackAssociationsRequest), arg0)
+}
+
+// DescribeUserStackAssociationsWithContext mocks base method
+func (m *MockAppStreamAPI) DescribeUserStackAssociationsWithContext(arg0 aws.Context, arg1 *appstream.DescribeUserStackAssociationsInput, arg2 ...request.Option) (*appstream.DescribeUserStackAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUserStackAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DescribeUserStackAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUserStackAssociationsWithContext indicates an expected call of DescribeUserStackAssociationsWithContext
+func (mr *MockAppStreamAPIMockRecorder) DescribeUserStackAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserStackAssociationsWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeUserStackAssociationsWithContext), varargs...)
+}
+
+// DescribeUsers mocks base method
+func (m *MockAppStreamAPI) DescribeUsers(arg0 *appstream.DescribeUsersInput) (*appstream.DescribeUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUsers", arg0)
+	ret0, _ := ret[0].(*appstream.DescribeUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUsers indicates an expected call of DescribeUsers
+func (mr *MockAppStreamAPIMockRecorder) DescribeUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsers", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeUsers), arg0)
+}
+
+// DescribeUsersRequest mocks base method
+func (m *MockAppStreamAPI) DescribeUsersRequest(arg0 *appstream.DescribeUsersInput) (*request.Request, *appstream.DescribeUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DescribeUsersOutput)
+	return ret0, ret1
+}
+
+// DescribeUsersRequest indicates an expected call of DescribeUsersRequest
+func (mr *MockAppStreamAPIMockRecorder) DescribeUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeUsersRequest), arg0)
+}
+
+// DescribeUsersWithContext mocks base method
+func (m *MockAppStreamAPI) DescribeUsersWithContext(arg0 aws.Context, arg1 *appstream.DescribeUsersInput, arg2 ...request.Option) (*appstream.DescribeUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DescribeUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUsersWithContext indicates an expected call of DescribeUsersWithContext
+func (mr *MockAppStreamAPIMockRecorder) DescribeUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeUsersWithContext), varargs...)
+}
+
+// DisableUser mocks base method
+func (m *MockAppStreamAPI) DisableUser(arg0 *appstream.DisableUserInput) (*appstream.DisableUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableUser", arg0)
+	ret0, _ := ret[0].(*appstream.DisableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableUser indicates an expected call of DisableUser
+func (mr *MockAppStreamAPIMockRecorder) DisableUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUser", reflect.TypeOf((*MockAppStreamAPI)(nil).DisableUser), arg0)
+}
+
+// DisableUserRequest mocks base method
+func (m *MockAppStreamAPI) DisableUserRequest(arg0 *appstream.DisableUserInput) (*request.Request, *appstream.DisableUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DisableUserOutput)
+	return ret0, ret1
+}
+
+// DisableUserRequest indicates an expected call of DisableUserRequest
+func (mr *MockAppStreamAPIMockRecorder) DisableUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUserRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DisableUserRequest), arg0)
+}
+
+// DisableUserWithContext mocks base method
+func (m *MockAppStreamAPI) DisableUserWithContext(arg0 aws.Context, arg1 *appstream.DisableUserInput, arg2 ...request.Option) (*appstream.DisableUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableUserWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DisableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableUserWithContext indicates an expected call of DisableUserWithContext
+func (mr *MockAppStreamAPIMockRecorder) DisableUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DisableUserWithContext), varargs...)
+}
+
 // DisassociateFleet mocks base method
 func (m *MockAppStreamAPI) DisassociateFleet(arg0 *appstream.DisassociateFleetInput) (*appstream.DisassociateFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -1199,6 +1549,56 @@ func (mr *MockAppStreamAPIMockRecorder) DisassociateFleetWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFleetWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateFleetWithContext), varargs...)
+}
+
+// EnableUser mocks base method
+func (m *MockAppStreamAPI) EnableUser(arg0 *appstream.EnableUserInput) (*appstream.EnableUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableUser", arg0)
+	ret0, _ := ret[0].(*appstream.EnableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableUser indicates an expected call of EnableUser
+func (mr *MockAppStreamAPIMockRecorder) EnableUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableUser", reflect.TypeOf((*MockAppStreamAPI)(nil).EnableUser), arg0)
+}
+
+// EnableUserRequest mocks base method
+func (m *MockAppStreamAPI) EnableUserRequest(arg0 *appstream.EnableUserInput) (*request.Request, *appstream.EnableUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.EnableUserOutput)
+	return ret0, ret1
+}
+
+// EnableUserRequest indicates an expected call of EnableUserRequest
+func (mr *MockAppStreamAPIMockRecorder) EnableUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableUserRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).EnableUserRequest), arg0)
+}
+
+// EnableUserWithContext mocks base method
+func (m *MockAppStreamAPI) EnableUserWithContext(arg0 aws.Context, arg1 *appstream.EnableUserInput, arg2 ...request.Option) (*appstream.EnableUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableUserWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.EnableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableUserWithContext indicates an expected call of EnableUserWithContext
+func (mr *MockAppStreamAPIMockRecorder) EnableUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).EnableUserWithContext), varargs...)
 }
 
 // ExpireSession mocks base method
