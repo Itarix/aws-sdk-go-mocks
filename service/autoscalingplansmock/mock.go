@@ -235,6 +235,56 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) DescribeScalingPlansWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingPlansWithContext", reflect.TypeOf((*MockAutoScalingPlansAPI)(nil).DescribeScalingPlansWithContext), varargs...)
 }
 
+// GetScalingPlanResourceForecastData mocks base method
+func (m *MockAutoScalingPlansAPI) GetScalingPlanResourceForecastData(arg0 *autoscalingplans.GetScalingPlanResourceForecastDataInput) (*autoscalingplans.GetScalingPlanResourceForecastDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetScalingPlanResourceForecastData", arg0)
+	ret0, _ := ret[0].(*autoscalingplans.GetScalingPlanResourceForecastDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetScalingPlanResourceForecastData indicates an expected call of GetScalingPlanResourceForecastData
+func (mr *MockAutoScalingPlansAPIMockRecorder) GetScalingPlanResourceForecastData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetScalingPlanResourceForecastData", reflect.TypeOf((*MockAutoScalingPlansAPI)(nil).GetScalingPlanResourceForecastData), arg0)
+}
+
+// GetScalingPlanResourceForecastDataRequest mocks base method
+func (m *MockAutoScalingPlansAPI) GetScalingPlanResourceForecastDataRequest(arg0 *autoscalingplans.GetScalingPlanResourceForecastDataInput) (*request.Request, *autoscalingplans.GetScalingPlanResourceForecastDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetScalingPlanResourceForecastDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*autoscalingplans.GetScalingPlanResourceForecastDataOutput)
+	return ret0, ret1
+}
+
+// GetScalingPlanResourceForecastDataRequest indicates an expected call of GetScalingPlanResourceForecastDataRequest
+func (mr *MockAutoScalingPlansAPIMockRecorder) GetScalingPlanResourceForecastDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetScalingPlanResourceForecastDataRequest", reflect.TypeOf((*MockAutoScalingPlansAPI)(nil).GetScalingPlanResourceForecastDataRequest), arg0)
+}
+
+// GetScalingPlanResourceForecastDataWithContext mocks base method
+func (m *MockAutoScalingPlansAPI) GetScalingPlanResourceForecastDataWithContext(arg0 aws.Context, arg1 *autoscalingplans.GetScalingPlanResourceForecastDataInput, arg2 ...request.Option) (*autoscalingplans.GetScalingPlanResourceForecastDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetScalingPlanResourceForecastDataWithContext", varargs...)
+	ret0, _ := ret[0].(*autoscalingplans.GetScalingPlanResourceForecastDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetScalingPlanResourceForecastDataWithContext indicates an expected call of GetScalingPlanResourceForecastDataWithContext
+func (mr *MockAutoScalingPlansAPIMockRecorder) GetScalingPlanResourceForecastDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetScalingPlanResourceForecastDataWithContext", reflect.TypeOf((*MockAutoScalingPlansAPI)(nil).GetScalingPlanResourceForecastDataWithContext), varargs...)
+}
+
 // UpdateScalingPlan mocks base method
 func (m *MockAutoScalingPlansAPI) UpdateScalingPlan(arg0 *autoscalingplans.UpdateScalingPlanInput) (*autoscalingplans.UpdateScalingPlanOutput, error) {
 	m.ctrl.T.Helper()

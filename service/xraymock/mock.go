@@ -118,6 +118,56 @@ func (mr *MockXRayAPIMockRecorder) BatchGetTracesWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetTracesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).BatchGetTracesWithContext), varargs...)
 }
 
+// CreateGroup mocks base method
+func (m *MockXRayAPI) CreateGroup(arg0 *xray.CreateGroupInput) (*xray.CreateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGroup", arg0)
+	ret0, _ := ret[0].(*xray.CreateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGroup indicates an expected call of CreateGroup
+func (mr *MockXRayAPIMockRecorder) CreateGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroup", reflect.TypeOf((*MockXRayAPI)(nil).CreateGroup), arg0)
+}
+
+// CreateGroupRequest mocks base method
+func (m *MockXRayAPI) CreateGroupRequest(arg0 *xray.CreateGroupInput) (*request.Request, *xray.CreateGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.CreateGroupOutput)
+	return ret0, ret1
+}
+
+// CreateGroupRequest indicates an expected call of CreateGroupRequest
+func (mr *MockXRayAPIMockRecorder) CreateGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroupRequest", reflect.TypeOf((*MockXRayAPI)(nil).CreateGroupRequest), arg0)
+}
+
+// CreateGroupWithContext mocks base method
+func (m *MockXRayAPI) CreateGroupWithContext(arg0 aws.Context, arg1 *xray.CreateGroupInput, arg2 ...request.Option) (*xray.CreateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.CreateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGroupWithContext indicates an expected call of CreateGroupWithContext
+func (mr *MockXRayAPIMockRecorder) CreateGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroupWithContext", reflect.TypeOf((*MockXRayAPI)(nil).CreateGroupWithContext), varargs...)
+}
+
 // CreateSamplingRule mocks base method
 func (m *MockXRayAPI) CreateSamplingRule(arg0 *xray.CreateSamplingRuleInput) (*xray.CreateSamplingRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -166,6 +216,56 @@ func (mr *MockXRayAPIMockRecorder) CreateSamplingRuleWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSamplingRuleWithContext", reflect.TypeOf((*MockXRayAPI)(nil).CreateSamplingRuleWithContext), varargs...)
+}
+
+// DeleteGroup mocks base method
+func (m *MockXRayAPI) DeleteGroup(arg0 *xray.DeleteGroupInput) (*xray.DeleteGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGroup", arg0)
+	ret0, _ := ret[0].(*xray.DeleteGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGroup indicates an expected call of DeleteGroup
+func (mr *MockXRayAPIMockRecorder) DeleteGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroup", reflect.TypeOf((*MockXRayAPI)(nil).DeleteGroup), arg0)
+}
+
+// DeleteGroupRequest mocks base method
+func (m *MockXRayAPI) DeleteGroupRequest(arg0 *xray.DeleteGroupInput) (*request.Request, *xray.DeleteGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.DeleteGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteGroupRequest indicates an expected call of DeleteGroupRequest
+func (mr *MockXRayAPIMockRecorder) DeleteGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupRequest", reflect.TypeOf((*MockXRayAPI)(nil).DeleteGroupRequest), arg0)
+}
+
+// DeleteGroupWithContext mocks base method
+func (m *MockXRayAPI) DeleteGroupWithContext(arg0 aws.Context, arg1 *xray.DeleteGroupInput, arg2 ...request.Option) (*xray.DeleteGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.DeleteGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGroupWithContext indicates an expected call of DeleteGroupWithContext
+func (mr *MockXRayAPIMockRecorder) DeleteGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupWithContext", reflect.TypeOf((*MockXRayAPI)(nil).DeleteGroupWithContext), varargs...)
 }
 
 // DeleteSamplingRule mocks base method
@@ -266,6 +366,106 @@ func (mr *MockXRayAPIMockRecorder) GetEncryptionConfigWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionConfigWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetEncryptionConfigWithContext), varargs...)
+}
+
+// GetGroup mocks base method
+func (m *MockXRayAPI) GetGroup(arg0 *xray.GetGroupInput) (*xray.GetGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGroup", arg0)
+	ret0, _ := ret[0].(*xray.GetGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGroup indicates an expected call of GetGroup
+func (mr *MockXRayAPIMockRecorder) GetGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroup", reflect.TypeOf((*MockXRayAPI)(nil).GetGroup), arg0)
+}
+
+// GetGroupRequest mocks base method
+func (m *MockXRayAPI) GetGroupRequest(arg0 *xray.GetGroupInput) (*request.Request, *xray.GetGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.GetGroupOutput)
+	return ret0, ret1
+}
+
+// GetGroupRequest indicates an expected call of GetGroupRequest
+func (mr *MockXRayAPIMockRecorder) GetGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupRequest", reflect.TypeOf((*MockXRayAPI)(nil).GetGroupRequest), arg0)
+}
+
+// GetGroupWithContext mocks base method
+func (m *MockXRayAPI) GetGroupWithContext(arg0 aws.Context, arg1 *xray.GetGroupInput, arg2 ...request.Option) (*xray.GetGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.GetGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGroupWithContext indicates an expected call of GetGroupWithContext
+func (mr *MockXRayAPIMockRecorder) GetGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetGroupWithContext), varargs...)
+}
+
+// GetGroups mocks base method
+func (m *MockXRayAPI) GetGroups(arg0 *xray.GetGroupsInput) (*xray.GetGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGroups", arg0)
+	ret0, _ := ret[0].(*xray.GetGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGroups indicates an expected call of GetGroups
+func (mr *MockXRayAPIMockRecorder) GetGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroups", reflect.TypeOf((*MockXRayAPI)(nil).GetGroups), arg0)
+}
+
+// GetGroupsRequest mocks base method
+func (m *MockXRayAPI) GetGroupsRequest(arg0 *xray.GetGroupsInput) (*request.Request, *xray.GetGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.GetGroupsOutput)
+	return ret0, ret1
+}
+
+// GetGroupsRequest indicates an expected call of GetGroupsRequest
+func (mr *MockXRayAPIMockRecorder) GetGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupsRequest", reflect.TypeOf((*MockXRayAPI)(nil).GetGroupsRequest), arg0)
+}
+
+// GetGroupsWithContext mocks base method
+func (m *MockXRayAPI) GetGroupsWithContext(arg0 aws.Context, arg1 *xray.GetGroupsInput, arg2 ...request.Option) (*xray.GetGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.GetGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGroupsWithContext indicates an expected call of GetGroupsWithContext
+func (mr *MockXRayAPIMockRecorder) GetGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupsWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetGroupsWithContext), varargs...)
 }
 
 // GetSamplingRules mocks base method
@@ -815,6 +1015,56 @@ func (mr *MockXRayAPIMockRecorder) PutTraceSegmentsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutTraceSegmentsWithContext", reflect.TypeOf((*MockXRayAPI)(nil).PutTraceSegmentsWithContext), varargs...)
+}
+
+// UpdateGroup mocks base method
+func (m *MockXRayAPI) UpdateGroup(arg0 *xray.UpdateGroupInput) (*xray.UpdateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGroup", arg0)
+	ret0, _ := ret[0].(*xray.UpdateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGroup indicates an expected call of UpdateGroup
+func (mr *MockXRayAPIMockRecorder) UpdateGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGroup", reflect.TypeOf((*MockXRayAPI)(nil).UpdateGroup), arg0)
+}
+
+// UpdateGroupRequest mocks base method
+func (m *MockXRayAPI) UpdateGroupRequest(arg0 *xray.UpdateGroupInput) (*request.Request, *xray.UpdateGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.UpdateGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateGroupRequest indicates an expected call of UpdateGroupRequest
+func (mr *MockXRayAPIMockRecorder) UpdateGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGroupRequest", reflect.TypeOf((*MockXRayAPI)(nil).UpdateGroupRequest), arg0)
+}
+
+// UpdateGroupWithContext mocks base method
+func (m *MockXRayAPI) UpdateGroupWithContext(arg0 aws.Context, arg1 *xray.UpdateGroupInput, arg2 ...request.Option) (*xray.UpdateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.UpdateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGroupWithContext indicates an expected call of UpdateGroupWithContext
+func (mr *MockXRayAPIMockRecorder) UpdateGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGroupWithContext", reflect.TypeOf((*MockXRayAPI)(nil).UpdateGroupWithContext), varargs...)
 }
 
 // UpdateSamplingRule mocks base method
