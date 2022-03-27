@@ -85,6 +85,56 @@ func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabularyWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabularyWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateVocabularyWithContext), varargs...)
 }
 
+// DeleteTranscriptionJob mocks base method
+func (m *MockTranscribeServiceAPI) DeleteTranscriptionJob(arg0 *transcribeservice.DeleteTranscriptionJobInput) (*transcribeservice.DeleteTranscriptionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTranscriptionJob", arg0)
+	ret0, _ := ret[0].(*transcribeservice.DeleteTranscriptionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTranscriptionJob indicates an expected call of DeleteTranscriptionJob
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteTranscriptionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTranscriptionJob", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteTranscriptionJob), arg0)
+}
+
+// DeleteTranscriptionJobRequest mocks base method
+func (m *MockTranscribeServiceAPI) DeleteTranscriptionJobRequest(arg0 *transcribeservice.DeleteTranscriptionJobInput) (*request.Request, *transcribeservice.DeleteTranscriptionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTranscriptionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.DeleteTranscriptionJobOutput)
+	return ret0, ret1
+}
+
+// DeleteTranscriptionJobRequest indicates an expected call of DeleteTranscriptionJobRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteTranscriptionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTranscriptionJobRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteTranscriptionJobRequest), arg0)
+}
+
+// DeleteTranscriptionJobWithContext mocks base method
+func (m *MockTranscribeServiceAPI) DeleteTranscriptionJobWithContext(arg0 aws.Context, arg1 *transcribeservice.DeleteTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.DeleteTranscriptionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTranscriptionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.DeleteTranscriptionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTranscriptionJobWithContext indicates an expected call of DeleteTranscriptionJobWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteTranscriptionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTranscriptionJobWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteTranscriptionJobWithContext), varargs...)
+}
+
 // DeleteVocabulary mocks base method
 func (m *MockTranscribeServiceAPI) DeleteVocabulary(arg0 *transcribeservice.DeleteVocabularyInput) (*transcribeservice.DeleteVocabularyOutput, error) {
 	m.ctrl.T.Helper()

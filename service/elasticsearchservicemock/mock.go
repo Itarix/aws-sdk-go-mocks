@@ -85,6 +85,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) AddTagsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).AddTagsWithContext), varargs...)
 }
 
+// CancelElasticsearchServiceSoftwareUpdate mocks base method
+func (m *MockElasticsearchServiceAPI) CancelElasticsearchServiceSoftwareUpdate(arg0 *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateInput) (*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelElasticsearchServiceSoftwareUpdate", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelElasticsearchServiceSoftwareUpdate indicates an expected call of CancelElasticsearchServiceSoftwareUpdate
+func (mr *MockElasticsearchServiceAPIMockRecorder) CancelElasticsearchServiceSoftwareUpdate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelElasticsearchServiceSoftwareUpdate", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CancelElasticsearchServiceSoftwareUpdate), arg0)
+}
+
+// CancelElasticsearchServiceSoftwareUpdateRequest mocks base method
+func (m *MockElasticsearchServiceAPI) CancelElasticsearchServiceSoftwareUpdateRequest(arg0 *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateInput) (*request.Request, *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelElasticsearchServiceSoftwareUpdateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput)
+	return ret0, ret1
+}
+
+// CancelElasticsearchServiceSoftwareUpdateRequest indicates an expected call of CancelElasticsearchServiceSoftwareUpdateRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) CancelElasticsearchServiceSoftwareUpdateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelElasticsearchServiceSoftwareUpdateRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CancelElasticsearchServiceSoftwareUpdateRequest), arg0)
+}
+
+// CancelElasticsearchServiceSoftwareUpdateWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) CancelElasticsearchServiceSoftwareUpdateWithContext(arg0 aws.Context, arg1 *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateInput, arg2 ...request.Option) (*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelElasticsearchServiceSoftwareUpdateWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelElasticsearchServiceSoftwareUpdateWithContext indicates an expected call of CancelElasticsearchServiceSoftwareUpdateWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) CancelElasticsearchServiceSoftwareUpdateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelElasticsearchServiceSoftwareUpdateWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CancelElasticsearchServiceSoftwareUpdateWithContext), varargs...)
+}
+
 // CreateElasticsearchDomain mocks base method
 func (m *MockElasticsearchServiceAPI) CreateElasticsearchDomain(arg0 *elasticsearchservice.CreateElasticsearchDomainInput) (*elasticsearchservice.CreateElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -1148,6 +1198,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) RemoveTagsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).RemoveTagsWithContext), varargs...)
+}
+
+// StartElasticsearchServiceSoftwareUpdate mocks base method
+func (m *MockElasticsearchServiceAPI) StartElasticsearchServiceSoftwareUpdate(arg0 *elasticsearchservice.StartElasticsearchServiceSoftwareUpdateInput) (*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartElasticsearchServiceSoftwareUpdate", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartElasticsearchServiceSoftwareUpdate indicates an expected call of StartElasticsearchServiceSoftwareUpdate
+func (mr *MockElasticsearchServiceAPIMockRecorder) StartElasticsearchServiceSoftwareUpdate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartElasticsearchServiceSoftwareUpdate", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).StartElasticsearchServiceSoftwareUpdate), arg0)
+}
+
+// StartElasticsearchServiceSoftwareUpdateRequest mocks base method
+func (m *MockElasticsearchServiceAPI) StartElasticsearchServiceSoftwareUpdateRequest(arg0 *elasticsearchservice.StartElasticsearchServiceSoftwareUpdateInput) (*request.Request, *elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartElasticsearchServiceSoftwareUpdateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput)
+	return ret0, ret1
+}
+
+// StartElasticsearchServiceSoftwareUpdateRequest indicates an expected call of StartElasticsearchServiceSoftwareUpdateRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) StartElasticsearchServiceSoftwareUpdateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartElasticsearchServiceSoftwareUpdateRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).StartElasticsearchServiceSoftwareUpdateRequest), arg0)
+}
+
+// StartElasticsearchServiceSoftwareUpdateWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) StartElasticsearchServiceSoftwareUpdateWithContext(arg0 aws.Context, arg1 *elasticsearchservice.StartElasticsearchServiceSoftwareUpdateInput, arg2 ...request.Option) (*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartElasticsearchServiceSoftwareUpdateWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartElasticsearchServiceSoftwareUpdateWithContext indicates an expected call of StartElasticsearchServiceSoftwareUpdateWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) StartElasticsearchServiceSoftwareUpdateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartElasticsearchServiceSoftwareUpdateWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).StartElasticsearchServiceSoftwareUpdateWithContext), varargs...)
 }
 
 // UpdateElasticsearchDomainConfig mocks base method
