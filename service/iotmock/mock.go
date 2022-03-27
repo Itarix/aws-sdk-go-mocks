@@ -285,6 +285,56 @@ func (mr *MockIoTAPIMockRecorder) AttachPrincipalPolicyWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachPrincipalPolicyWithContext", reflect.TypeOf((*MockIoTAPI)(nil).AttachPrincipalPolicyWithContext), varargs...)
 }
 
+// AttachSecurityProfile mocks base method
+func (m *MockIoTAPI) AttachSecurityProfile(arg0 *iot.AttachSecurityProfileInput) (*iot.AttachSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AttachSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.AttachSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AttachSecurityProfile indicates an expected call of AttachSecurityProfile
+func (mr *MockIoTAPIMockRecorder) AttachSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).AttachSecurityProfile), arg0)
+}
+
+// AttachSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) AttachSecurityProfileRequest(arg0 *iot.AttachSecurityProfileInput) (*request.Request, *iot.AttachSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AttachSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.AttachSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// AttachSecurityProfileRequest indicates an expected call of AttachSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) AttachSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).AttachSecurityProfileRequest), arg0)
+}
+
+// AttachSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) AttachSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.AttachSecurityProfileInput, arg2 ...request.Option) (*iot.AttachSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AttachSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.AttachSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AttachSecurityProfileWithContext indicates an expected call of AttachSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) AttachSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).AttachSecurityProfileWithContext), varargs...)
+}
+
 // AttachThingPrincipal mocks base method
 func (m *MockIoTAPI) AttachThingPrincipal(arg0 *iot.AttachThingPrincipalInput) (*iot.AttachThingPrincipalOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockIoTAPIMockRecorder) AttachThingPrincipalWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachThingPrincipalWithContext", reflect.TypeOf((*MockIoTAPI)(nil).AttachThingPrincipalWithContext), varargs...)
+}
+
+// CancelAuditTask mocks base method
+func (m *MockIoTAPI) CancelAuditTask(arg0 *iot.CancelAuditTaskInput) (*iot.CancelAuditTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelAuditTask", arg0)
+	ret0, _ := ret[0].(*iot.CancelAuditTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelAuditTask indicates an expected call of CancelAuditTask
+func (mr *MockIoTAPIMockRecorder) CancelAuditTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelAuditTask", reflect.TypeOf((*MockIoTAPI)(nil).CancelAuditTask), arg0)
+}
+
+// CancelAuditTaskRequest mocks base method
+func (m *MockIoTAPI) CancelAuditTaskRequest(arg0 *iot.CancelAuditTaskInput) (*request.Request, *iot.CancelAuditTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelAuditTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CancelAuditTaskOutput)
+	return ret0, ret1
+}
+
+// CancelAuditTaskRequest indicates an expected call of CancelAuditTaskRequest
+func (mr *MockIoTAPIMockRecorder) CancelAuditTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelAuditTaskRequest", reflect.TypeOf((*MockIoTAPI)(nil).CancelAuditTaskRequest), arg0)
+}
+
+// CancelAuditTaskWithContext mocks base method
+func (m *MockIoTAPI) CancelAuditTaskWithContext(arg0 aws.Context, arg1 *iot.CancelAuditTaskInput, arg2 ...request.Option) (*iot.CancelAuditTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelAuditTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CancelAuditTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelAuditTaskWithContext indicates an expected call of CancelAuditTaskWithContext
+func (mr *MockIoTAPIMockRecorder) CancelAuditTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelAuditTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CancelAuditTaskWithContext), varargs...)
 }
 
 // CancelCertificateTransfer mocks base method
@@ -935,6 +1035,106 @@ func (mr *MockIoTAPIMockRecorder) CreateRoleAliasWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoleAliasWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateRoleAliasWithContext), varargs...)
 }
 
+// CreateScheduledAudit mocks base method
+func (m *MockIoTAPI) CreateScheduledAudit(arg0 *iot.CreateScheduledAuditInput) (*iot.CreateScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateScheduledAudit", arg0)
+	ret0, _ := ret[0].(*iot.CreateScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateScheduledAudit indicates an expected call of CreateScheduledAudit
+func (mr *MockIoTAPIMockRecorder) CreateScheduledAudit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledAudit", reflect.TypeOf((*MockIoTAPI)(nil).CreateScheduledAudit), arg0)
+}
+
+// CreateScheduledAuditRequest mocks base method
+func (m *MockIoTAPI) CreateScheduledAuditRequest(arg0 *iot.CreateScheduledAuditInput) (*request.Request, *iot.CreateScheduledAuditOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateScheduledAuditRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateScheduledAuditOutput)
+	return ret0, ret1
+}
+
+// CreateScheduledAuditRequest indicates an expected call of CreateScheduledAuditRequest
+func (mr *MockIoTAPIMockRecorder) CreateScheduledAuditRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledAuditRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateScheduledAuditRequest), arg0)
+}
+
+// CreateScheduledAuditWithContext mocks base method
+func (m *MockIoTAPI) CreateScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.CreateScheduledAuditInput, arg2 ...request.Option) (*iot.CreateScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateScheduledAuditWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateScheduledAuditWithContext indicates an expected call of CreateScheduledAuditWithContext
+func (mr *MockIoTAPIMockRecorder) CreateScheduledAuditWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledAuditWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateScheduledAuditWithContext), varargs...)
+}
+
+// CreateSecurityProfile mocks base method
+func (m *MockIoTAPI) CreateSecurityProfile(arg0 *iot.CreateSecurityProfileInput) (*iot.CreateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.CreateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSecurityProfile indicates an expected call of CreateSecurityProfile
+func (mr *MockIoTAPIMockRecorder) CreateSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).CreateSecurityProfile), arg0)
+}
+
+// CreateSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) CreateSecurityProfileRequest(arg0 *iot.CreateSecurityProfileInput) (*request.Request, *iot.CreateSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// CreateSecurityProfileRequest indicates an expected call of CreateSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) CreateSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateSecurityProfileRequest), arg0)
+}
+
+// CreateSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) CreateSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.CreateSecurityProfileInput, arg2 ...request.Option) (*iot.CreateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSecurityProfileWithContext indicates an expected call of CreateSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) CreateSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateSecurityProfileWithContext), varargs...)
+}
+
 // CreateStream mocks base method
 func (m *MockIoTAPI) CreateStream(arg0 *iot.CreateStreamInput) (*iot.CreateStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1383,56 @@ func (mr *MockIoTAPIMockRecorder) CreateTopicRuleWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTopicRuleWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateTopicRuleWithContext), varargs...)
+}
+
+// DeleteAccountAuditConfiguration mocks base method
+func (m *MockIoTAPI) DeleteAccountAuditConfiguration(arg0 *iot.DeleteAccountAuditConfigurationInput) (*iot.DeleteAccountAuditConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccountAuditConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.DeleteAccountAuditConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccountAuditConfiguration indicates an expected call of DeleteAccountAuditConfiguration
+func (mr *MockIoTAPIMockRecorder) DeleteAccountAuditConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountAuditConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).DeleteAccountAuditConfiguration), arg0)
+}
+
+// DeleteAccountAuditConfigurationRequest mocks base method
+func (m *MockIoTAPI) DeleteAccountAuditConfigurationRequest(arg0 *iot.DeleteAccountAuditConfigurationInput) (*request.Request, *iot.DeleteAccountAuditConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccountAuditConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteAccountAuditConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteAccountAuditConfigurationRequest indicates an expected call of DeleteAccountAuditConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) DeleteAccountAuditConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountAuditConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteAccountAuditConfigurationRequest), arg0)
+}
+
+// DeleteAccountAuditConfigurationWithContext mocks base method
+func (m *MockIoTAPI) DeleteAccountAuditConfigurationWithContext(arg0 aws.Context, arg1 *iot.DeleteAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.DeleteAccountAuditConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccountAuditConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteAccountAuditConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccountAuditConfigurationWithContext indicates an expected call of DeleteAccountAuditConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteAccountAuditConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountAuditConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteAccountAuditConfigurationWithContext), varargs...)
 }
 
 // DeleteAuthorizer mocks base method
@@ -1685,6 +1935,106 @@ func (mr *MockIoTAPIMockRecorder) DeleteRoleAliasWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoleAliasWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteRoleAliasWithContext), varargs...)
 }
 
+// DeleteScheduledAudit mocks base method
+func (m *MockIoTAPI) DeleteScheduledAudit(arg0 *iot.DeleteScheduledAuditInput) (*iot.DeleteScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteScheduledAudit", arg0)
+	ret0, _ := ret[0].(*iot.DeleteScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteScheduledAudit indicates an expected call of DeleteScheduledAudit
+func (mr *MockIoTAPIMockRecorder) DeleteScheduledAudit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledAudit", reflect.TypeOf((*MockIoTAPI)(nil).DeleteScheduledAudit), arg0)
+}
+
+// DeleteScheduledAuditRequest mocks base method
+func (m *MockIoTAPI) DeleteScheduledAuditRequest(arg0 *iot.DeleteScheduledAuditInput) (*request.Request, *iot.DeleteScheduledAuditOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteScheduledAuditRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteScheduledAuditOutput)
+	return ret0, ret1
+}
+
+// DeleteScheduledAuditRequest indicates an expected call of DeleteScheduledAuditRequest
+func (mr *MockIoTAPIMockRecorder) DeleteScheduledAuditRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledAuditRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteScheduledAuditRequest), arg0)
+}
+
+// DeleteScheduledAuditWithContext mocks base method
+func (m *MockIoTAPI) DeleteScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.DeleteScheduledAuditInput, arg2 ...request.Option) (*iot.DeleteScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteScheduledAuditWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteScheduledAuditWithContext indicates an expected call of DeleteScheduledAuditWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteScheduledAuditWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledAuditWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteScheduledAuditWithContext), varargs...)
+}
+
+// DeleteSecurityProfile mocks base method
+func (m *MockIoTAPI) DeleteSecurityProfile(arg0 *iot.DeleteSecurityProfileInput) (*iot.DeleteSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.DeleteSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSecurityProfile indicates an expected call of DeleteSecurityProfile
+func (mr *MockIoTAPIMockRecorder) DeleteSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).DeleteSecurityProfile), arg0)
+}
+
+// DeleteSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) DeleteSecurityProfileRequest(arg0 *iot.DeleteSecurityProfileInput) (*request.Request, *iot.DeleteSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteSecurityProfileRequest indicates an expected call of DeleteSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) DeleteSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteSecurityProfileRequest), arg0)
+}
+
+// DeleteSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) DeleteSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.DeleteSecurityProfileInput, arg2 ...request.Option) (*iot.DeleteSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSecurityProfileWithContext indicates an expected call of DeleteSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteSecurityProfileWithContext), varargs...)
+}
+
 // DeleteStream mocks base method
 func (m *MockIoTAPI) DeleteStream(arg0 *iot.DeleteStreamInput) (*iot.DeleteStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -2033,6 +2383,106 @@ func (mr *MockIoTAPIMockRecorder) DeprecateThingTypeWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateThingTypeWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeprecateThingTypeWithContext), varargs...)
+}
+
+// DescribeAccountAuditConfiguration mocks base method
+func (m *MockIoTAPI) DescribeAccountAuditConfiguration(arg0 *iot.DescribeAccountAuditConfigurationInput) (*iot.DescribeAccountAuditConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountAuditConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.DescribeAccountAuditConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountAuditConfiguration indicates an expected call of DescribeAccountAuditConfiguration
+func (mr *MockIoTAPIMockRecorder) DescribeAccountAuditConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAuditConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAccountAuditConfiguration), arg0)
+}
+
+// DescribeAccountAuditConfigurationRequest mocks base method
+func (m *MockIoTAPI) DescribeAccountAuditConfigurationRequest(arg0 *iot.DescribeAccountAuditConfigurationInput) (*request.Request, *iot.DescribeAccountAuditConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountAuditConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeAccountAuditConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountAuditConfigurationRequest indicates an expected call of DescribeAccountAuditConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) DescribeAccountAuditConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAuditConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAccountAuditConfigurationRequest), arg0)
+}
+
+// DescribeAccountAuditConfigurationWithContext mocks base method
+func (m *MockIoTAPI) DescribeAccountAuditConfigurationWithContext(arg0 aws.Context, arg1 *iot.DescribeAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.DescribeAccountAuditConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountAuditConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeAccountAuditConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountAuditConfigurationWithContext indicates an expected call of DescribeAccountAuditConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeAccountAuditConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAuditConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAccountAuditConfigurationWithContext), varargs...)
+}
+
+// DescribeAuditTask mocks base method
+func (m *MockIoTAPI) DescribeAuditTask(arg0 *iot.DescribeAuditTaskInput) (*iot.DescribeAuditTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAuditTask", arg0)
+	ret0, _ := ret[0].(*iot.DescribeAuditTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAuditTask indicates an expected call of DescribeAuditTask
+func (mr *MockIoTAPIMockRecorder) DescribeAuditTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuditTask", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAuditTask), arg0)
+}
+
+// DescribeAuditTaskRequest mocks base method
+func (m *MockIoTAPI) DescribeAuditTaskRequest(arg0 *iot.DescribeAuditTaskInput) (*request.Request, *iot.DescribeAuditTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAuditTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeAuditTaskOutput)
+	return ret0, ret1
+}
+
+// DescribeAuditTaskRequest indicates an expected call of DescribeAuditTaskRequest
+func (mr *MockIoTAPIMockRecorder) DescribeAuditTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuditTaskRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAuditTaskRequest), arg0)
+}
+
+// DescribeAuditTaskWithContext mocks base method
+func (m *MockIoTAPI) DescribeAuditTaskWithContext(arg0 aws.Context, arg1 *iot.DescribeAuditTaskInput, arg2 ...request.Option) (*iot.DescribeAuditTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAuditTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeAuditTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAuditTaskWithContext indicates an expected call of DescribeAuditTaskWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeAuditTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuditTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAuditTaskWithContext), varargs...)
 }
 
 // DescribeAuthorizer mocks base method
@@ -2535,6 +2985,106 @@ func (mr *MockIoTAPIMockRecorder) DescribeRoleAliasWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRoleAliasWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeRoleAliasWithContext), varargs...)
 }
 
+// DescribeScheduledAudit mocks base method
+func (m *MockIoTAPI) DescribeScheduledAudit(arg0 *iot.DescribeScheduledAuditInput) (*iot.DescribeScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledAudit", arg0)
+	ret0, _ := ret[0].(*iot.DescribeScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduledAudit indicates an expected call of DescribeScheduledAudit
+func (mr *MockIoTAPIMockRecorder) DescribeScheduledAudit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledAudit", reflect.TypeOf((*MockIoTAPI)(nil).DescribeScheduledAudit), arg0)
+}
+
+// DescribeScheduledAuditRequest mocks base method
+func (m *MockIoTAPI) DescribeScheduledAuditRequest(arg0 *iot.DescribeScheduledAuditInput) (*request.Request, *iot.DescribeScheduledAuditOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledAuditRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeScheduledAuditOutput)
+	return ret0, ret1
+}
+
+// DescribeScheduledAuditRequest indicates an expected call of DescribeScheduledAuditRequest
+func (mr *MockIoTAPIMockRecorder) DescribeScheduledAuditRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledAuditRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeScheduledAuditRequest), arg0)
+}
+
+// DescribeScheduledAuditWithContext mocks base method
+func (m *MockIoTAPI) DescribeScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.DescribeScheduledAuditInput, arg2 ...request.Option) (*iot.DescribeScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScheduledAuditWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduledAuditWithContext indicates an expected call of DescribeScheduledAuditWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeScheduledAuditWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledAuditWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeScheduledAuditWithContext), varargs...)
+}
+
+// DescribeSecurityProfile mocks base method
+func (m *MockIoTAPI) DescribeSecurityProfile(arg0 *iot.DescribeSecurityProfileInput) (*iot.DescribeSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.DescribeSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSecurityProfile indicates an expected call of DescribeSecurityProfile
+func (mr *MockIoTAPIMockRecorder) DescribeSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).DescribeSecurityProfile), arg0)
+}
+
+// DescribeSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) DescribeSecurityProfileRequest(arg0 *iot.DescribeSecurityProfileInput) (*request.Request, *iot.DescribeSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// DescribeSecurityProfileRequest indicates an expected call of DescribeSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) DescribeSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeSecurityProfileRequest), arg0)
+}
+
+// DescribeSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) DescribeSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.DescribeSecurityProfileInput, arg2 ...request.Option) (*iot.DescribeSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSecurityProfileWithContext indicates an expected call of DescribeSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeSecurityProfileWithContext), varargs...)
+}
+
 // DescribeStream mocks base method
 func (m *MockIoTAPI) DescribeStream(arg0 *iot.DescribeStreamInput) (*iot.DescribeStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -2883,6 +3433,56 @@ func (mr *MockIoTAPIMockRecorder) DetachPrincipalPolicyWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachPrincipalPolicyWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DetachPrincipalPolicyWithContext), varargs...)
+}
+
+// DetachSecurityProfile mocks base method
+func (m *MockIoTAPI) DetachSecurityProfile(arg0 *iot.DetachSecurityProfileInput) (*iot.DetachSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetachSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.DetachSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetachSecurityProfile indicates an expected call of DetachSecurityProfile
+func (mr *MockIoTAPIMockRecorder) DetachSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).DetachSecurityProfile), arg0)
+}
+
+// DetachSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) DetachSecurityProfileRequest(arg0 *iot.DetachSecurityProfileInput) (*request.Request, *iot.DetachSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetachSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DetachSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// DetachSecurityProfileRequest indicates an expected call of DetachSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) DetachSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).DetachSecurityProfileRequest), arg0)
+}
+
+// DetachSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) DetachSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.DetachSecurityProfileInput, arg2 ...request.Option) (*iot.DetachSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetachSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DetachSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetachSecurityProfileWithContext indicates an expected call of DetachSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) DetachSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DetachSecurityProfileWithContext), varargs...)
 }
 
 // DetachThingPrincipal mocks base method
@@ -3535,6 +4135,56 @@ func (mr *MockIoTAPIMockRecorder) GetV2LoggingOptionsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetV2LoggingOptionsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetV2LoggingOptionsWithContext), varargs...)
 }
 
+// ListActiveViolations mocks base method
+func (m *MockIoTAPI) ListActiveViolations(arg0 *iot.ListActiveViolationsInput) (*iot.ListActiveViolationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListActiveViolations", arg0)
+	ret0, _ := ret[0].(*iot.ListActiveViolationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListActiveViolations indicates an expected call of ListActiveViolations
+func (mr *MockIoTAPIMockRecorder) ListActiveViolations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActiveViolations", reflect.TypeOf((*MockIoTAPI)(nil).ListActiveViolations), arg0)
+}
+
+// ListActiveViolationsRequest mocks base method
+func (m *MockIoTAPI) ListActiveViolationsRequest(arg0 *iot.ListActiveViolationsInput) (*request.Request, *iot.ListActiveViolationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListActiveViolationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListActiveViolationsOutput)
+	return ret0, ret1
+}
+
+// ListActiveViolationsRequest indicates an expected call of ListActiveViolationsRequest
+func (mr *MockIoTAPIMockRecorder) ListActiveViolationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActiveViolationsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListActiveViolationsRequest), arg0)
+}
+
+// ListActiveViolationsWithContext mocks base method
+func (m *MockIoTAPI) ListActiveViolationsWithContext(arg0 aws.Context, arg1 *iot.ListActiveViolationsInput, arg2 ...request.Option) (*iot.ListActiveViolationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListActiveViolationsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListActiveViolationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListActiveViolationsWithContext indicates an expected call of ListActiveViolationsWithContext
+func (mr *MockIoTAPIMockRecorder) ListActiveViolationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActiveViolationsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListActiveViolationsWithContext), varargs...)
+}
+
 // ListAttachedPolicies mocks base method
 func (m *MockIoTAPI) ListAttachedPolicies(arg0 *iot.ListAttachedPoliciesInput) (*iot.ListAttachedPoliciesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3583,6 +4233,106 @@ func (mr *MockIoTAPIMockRecorder) ListAttachedPoliciesWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttachedPoliciesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListAttachedPoliciesWithContext), varargs...)
+}
+
+// ListAuditFindings mocks base method
+func (m *MockIoTAPI) ListAuditFindings(arg0 *iot.ListAuditFindingsInput) (*iot.ListAuditFindingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuditFindings", arg0)
+	ret0, _ := ret[0].(*iot.ListAuditFindingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAuditFindings indicates an expected call of ListAuditFindings
+func (mr *MockIoTAPIMockRecorder) ListAuditFindings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuditFindings", reflect.TypeOf((*MockIoTAPI)(nil).ListAuditFindings), arg0)
+}
+
+// ListAuditFindingsRequest mocks base method
+func (m *MockIoTAPI) ListAuditFindingsRequest(arg0 *iot.ListAuditFindingsInput) (*request.Request, *iot.ListAuditFindingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuditFindingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListAuditFindingsOutput)
+	return ret0, ret1
+}
+
+// ListAuditFindingsRequest indicates an expected call of ListAuditFindingsRequest
+func (mr *MockIoTAPIMockRecorder) ListAuditFindingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuditFindingsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListAuditFindingsRequest), arg0)
+}
+
+// ListAuditFindingsWithContext mocks base method
+func (m *MockIoTAPI) ListAuditFindingsWithContext(arg0 aws.Context, arg1 *iot.ListAuditFindingsInput, arg2 ...request.Option) (*iot.ListAuditFindingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAuditFindingsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListAuditFindingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAuditFindingsWithContext indicates an expected call of ListAuditFindingsWithContext
+func (mr *MockIoTAPIMockRecorder) ListAuditFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuditFindingsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListAuditFindingsWithContext), varargs...)
+}
+
+// ListAuditTasks mocks base method
+func (m *MockIoTAPI) ListAuditTasks(arg0 *iot.ListAuditTasksInput) (*iot.ListAuditTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuditTasks", arg0)
+	ret0, _ := ret[0].(*iot.ListAuditTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAuditTasks indicates an expected call of ListAuditTasks
+func (mr *MockIoTAPIMockRecorder) ListAuditTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuditTasks", reflect.TypeOf((*MockIoTAPI)(nil).ListAuditTasks), arg0)
+}
+
+// ListAuditTasksRequest mocks base method
+func (m *MockIoTAPI) ListAuditTasksRequest(arg0 *iot.ListAuditTasksInput) (*request.Request, *iot.ListAuditTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuditTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListAuditTasksOutput)
+	return ret0, ret1
+}
+
+// ListAuditTasksRequest indicates an expected call of ListAuditTasksRequest
+func (mr *MockIoTAPIMockRecorder) ListAuditTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuditTasksRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListAuditTasksRequest), arg0)
+}
+
+// ListAuditTasksWithContext mocks base method
+func (m *MockIoTAPI) ListAuditTasksWithContext(arg0 aws.Context, arg1 *iot.ListAuditTasksInput, arg2 ...request.Option) (*iot.ListAuditTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAuditTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListAuditTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAuditTasksWithContext indicates an expected call of ListAuditTasksWithContext
+func (mr *MockIoTAPIMockRecorder) ListAuditTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuditTasksWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListAuditTasksWithContext), varargs...)
 }
 
 // ListAuthorizers mocks base method
@@ -4385,6 +5135,156 @@ func (mr *MockIoTAPIMockRecorder) ListRoleAliasesWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoleAliasesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListRoleAliasesWithContext), varargs...)
 }
 
+// ListScheduledAudits mocks base method
+func (m *MockIoTAPI) ListScheduledAudits(arg0 *iot.ListScheduledAuditsInput) (*iot.ListScheduledAuditsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledAudits", arg0)
+	ret0, _ := ret[0].(*iot.ListScheduledAuditsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScheduledAudits indicates an expected call of ListScheduledAudits
+func (mr *MockIoTAPIMockRecorder) ListScheduledAudits(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledAudits", reflect.TypeOf((*MockIoTAPI)(nil).ListScheduledAudits), arg0)
+}
+
+// ListScheduledAuditsRequest mocks base method
+func (m *MockIoTAPI) ListScheduledAuditsRequest(arg0 *iot.ListScheduledAuditsInput) (*request.Request, *iot.ListScheduledAuditsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledAuditsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListScheduledAuditsOutput)
+	return ret0, ret1
+}
+
+// ListScheduledAuditsRequest indicates an expected call of ListScheduledAuditsRequest
+func (mr *MockIoTAPIMockRecorder) ListScheduledAuditsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledAuditsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListScheduledAuditsRequest), arg0)
+}
+
+// ListScheduledAuditsWithContext mocks base method
+func (m *MockIoTAPI) ListScheduledAuditsWithContext(arg0 aws.Context, arg1 *iot.ListScheduledAuditsInput, arg2 ...request.Option) (*iot.ListScheduledAuditsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScheduledAuditsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListScheduledAuditsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScheduledAuditsWithContext indicates an expected call of ListScheduledAuditsWithContext
+func (mr *MockIoTAPIMockRecorder) ListScheduledAuditsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledAuditsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListScheduledAuditsWithContext), varargs...)
+}
+
+// ListSecurityProfiles mocks base method
+func (m *MockIoTAPI) ListSecurityProfiles(arg0 *iot.ListSecurityProfilesInput) (*iot.ListSecurityProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfiles", arg0)
+	ret0, _ := ret[0].(*iot.ListSecurityProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfiles indicates an expected call of ListSecurityProfiles
+func (mr *MockIoTAPIMockRecorder) ListSecurityProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfiles", reflect.TypeOf((*MockIoTAPI)(nil).ListSecurityProfiles), arg0)
+}
+
+// ListSecurityProfilesForTarget mocks base method
+func (m *MockIoTAPI) ListSecurityProfilesForTarget(arg0 *iot.ListSecurityProfilesForTargetInput) (*iot.ListSecurityProfilesForTargetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfilesForTarget", arg0)
+	ret0, _ := ret[0].(*iot.ListSecurityProfilesForTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfilesForTarget indicates an expected call of ListSecurityProfilesForTarget
+func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesForTarget(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilesForTarget", reflect.TypeOf((*MockIoTAPI)(nil).ListSecurityProfilesForTarget), arg0)
+}
+
+// ListSecurityProfilesForTargetRequest mocks base method
+func (m *MockIoTAPI) ListSecurityProfilesForTargetRequest(arg0 *iot.ListSecurityProfilesForTargetInput) (*request.Request, *iot.ListSecurityProfilesForTargetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfilesForTargetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListSecurityProfilesForTargetOutput)
+	return ret0, ret1
+}
+
+// ListSecurityProfilesForTargetRequest indicates an expected call of ListSecurityProfilesForTargetRequest
+func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesForTargetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilesForTargetRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListSecurityProfilesForTargetRequest), arg0)
+}
+
+// ListSecurityProfilesForTargetWithContext mocks base method
+func (m *MockIoTAPI) ListSecurityProfilesForTargetWithContext(arg0 aws.Context, arg1 *iot.ListSecurityProfilesForTargetInput, arg2 ...request.Option) (*iot.ListSecurityProfilesForTargetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityProfilesForTargetWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListSecurityProfilesForTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfilesForTargetWithContext indicates an expected call of ListSecurityProfilesForTargetWithContext
+func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesForTargetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilesForTargetWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListSecurityProfilesForTargetWithContext), varargs...)
+}
+
+// ListSecurityProfilesRequest mocks base method
+func (m *MockIoTAPI) ListSecurityProfilesRequest(arg0 *iot.ListSecurityProfilesInput) (*request.Request, *iot.ListSecurityProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListSecurityProfilesOutput)
+	return ret0, ret1
+}
+
+// ListSecurityProfilesRequest indicates an expected call of ListSecurityProfilesRequest
+func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilesRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListSecurityProfilesRequest), arg0)
+}
+
+// ListSecurityProfilesWithContext mocks base method
+func (m *MockIoTAPI) ListSecurityProfilesWithContext(arg0 aws.Context, arg1 *iot.ListSecurityProfilesInput, arg2 ...request.Option) (*iot.ListSecurityProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListSecurityProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfilesWithContext indicates an expected call of ListSecurityProfilesWithContext
+func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListSecurityProfilesWithContext), varargs...)
+}
+
 // ListStreams mocks base method
 func (m *MockIoTAPI) ListStreams(arg0 *iot.ListStreamsInput) (*iot.ListStreamsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4483,6 +5383,56 @@ func (mr *MockIoTAPIMockRecorder) ListTargetsForPolicyWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetsForPolicyWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListTargetsForPolicyWithContext), varargs...)
+}
+
+// ListTargetsForSecurityProfile mocks base method
+func (m *MockIoTAPI) ListTargetsForSecurityProfile(arg0 *iot.ListTargetsForSecurityProfileInput) (*iot.ListTargetsForSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTargetsForSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.ListTargetsForSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTargetsForSecurityProfile indicates an expected call of ListTargetsForSecurityProfile
+func (mr *MockIoTAPIMockRecorder) ListTargetsForSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetsForSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).ListTargetsForSecurityProfile), arg0)
+}
+
+// ListTargetsForSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) ListTargetsForSecurityProfileRequest(arg0 *iot.ListTargetsForSecurityProfileInput) (*request.Request, *iot.ListTargetsForSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTargetsForSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListTargetsForSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// ListTargetsForSecurityProfileRequest indicates an expected call of ListTargetsForSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) ListTargetsForSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetsForSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListTargetsForSecurityProfileRequest), arg0)
+}
+
+// ListTargetsForSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) ListTargetsForSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.ListTargetsForSecurityProfileInput, arg2 ...request.Option) (*iot.ListTargetsForSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTargetsForSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListTargetsForSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTargetsForSecurityProfileWithContext indicates an expected call of ListTargetsForSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) ListTargetsForSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetsForSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListTargetsForSecurityProfileWithContext), varargs...)
 }
 
 // ListThingGroups mocks base method
@@ -4983,6 +5933,56 @@ func (mr *MockIoTAPIMockRecorder) ListV2LoggingLevelsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListV2LoggingLevelsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListV2LoggingLevelsWithContext), varargs...)
+}
+
+// ListViolationEvents mocks base method
+func (m *MockIoTAPI) ListViolationEvents(arg0 *iot.ListViolationEventsInput) (*iot.ListViolationEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViolationEvents", arg0)
+	ret0, _ := ret[0].(*iot.ListViolationEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListViolationEvents indicates an expected call of ListViolationEvents
+func (mr *MockIoTAPIMockRecorder) ListViolationEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViolationEvents", reflect.TypeOf((*MockIoTAPI)(nil).ListViolationEvents), arg0)
+}
+
+// ListViolationEventsRequest mocks base method
+func (m *MockIoTAPI) ListViolationEventsRequest(arg0 *iot.ListViolationEventsInput) (*request.Request, *iot.ListViolationEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViolationEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListViolationEventsOutput)
+	return ret0, ret1
+}
+
+// ListViolationEventsRequest indicates an expected call of ListViolationEventsRequest
+func (mr *MockIoTAPIMockRecorder) ListViolationEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViolationEventsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListViolationEventsRequest), arg0)
+}
+
+// ListViolationEventsWithContext mocks base method
+func (m *MockIoTAPI) ListViolationEventsWithContext(arg0 aws.Context, arg1 *iot.ListViolationEventsInput, arg2 ...request.Option) (*iot.ListViolationEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListViolationEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListViolationEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListViolationEventsWithContext indicates an expected call of ListViolationEventsWithContext
+func (mr *MockIoTAPIMockRecorder) ListViolationEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViolationEventsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListViolationEventsWithContext), varargs...)
 }
 
 // RegisterCACertificate mocks base method
@@ -5585,6 +6585,56 @@ func (mr *MockIoTAPIMockRecorder) SetV2LoggingOptionsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetV2LoggingOptionsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).SetV2LoggingOptionsWithContext), varargs...)
 }
 
+// StartOnDemandAuditTask mocks base method
+func (m *MockIoTAPI) StartOnDemandAuditTask(arg0 *iot.StartOnDemandAuditTaskInput) (*iot.StartOnDemandAuditTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartOnDemandAuditTask", arg0)
+	ret0, _ := ret[0].(*iot.StartOnDemandAuditTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartOnDemandAuditTask indicates an expected call of StartOnDemandAuditTask
+func (mr *MockIoTAPIMockRecorder) StartOnDemandAuditTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOnDemandAuditTask", reflect.TypeOf((*MockIoTAPI)(nil).StartOnDemandAuditTask), arg0)
+}
+
+// StartOnDemandAuditTaskRequest mocks base method
+func (m *MockIoTAPI) StartOnDemandAuditTaskRequest(arg0 *iot.StartOnDemandAuditTaskInput) (*request.Request, *iot.StartOnDemandAuditTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartOnDemandAuditTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.StartOnDemandAuditTaskOutput)
+	return ret0, ret1
+}
+
+// StartOnDemandAuditTaskRequest indicates an expected call of StartOnDemandAuditTaskRequest
+func (mr *MockIoTAPIMockRecorder) StartOnDemandAuditTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOnDemandAuditTaskRequest", reflect.TypeOf((*MockIoTAPI)(nil).StartOnDemandAuditTaskRequest), arg0)
+}
+
+// StartOnDemandAuditTaskWithContext mocks base method
+func (m *MockIoTAPI) StartOnDemandAuditTaskWithContext(arg0 aws.Context, arg1 *iot.StartOnDemandAuditTaskInput, arg2 ...request.Option) (*iot.StartOnDemandAuditTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartOnDemandAuditTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.StartOnDemandAuditTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartOnDemandAuditTaskWithContext indicates an expected call of StartOnDemandAuditTaskWithContext
+func (mr *MockIoTAPIMockRecorder) StartOnDemandAuditTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOnDemandAuditTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).StartOnDemandAuditTaskWithContext), varargs...)
+}
+
 // StartThingRegistrationTask mocks base method
 func (m *MockIoTAPI) StartThingRegistrationTask(arg0 *iot.StartThingRegistrationTaskInput) (*iot.StartThingRegistrationTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -5833,6 +6883,56 @@ func (mr *MockIoTAPIMockRecorder) TransferCertificateWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).TransferCertificateWithContext), varargs...)
+}
+
+// UpdateAccountAuditConfiguration mocks base method
+func (m *MockIoTAPI) UpdateAccountAuditConfiguration(arg0 *iot.UpdateAccountAuditConfigurationInput) (*iot.UpdateAccountAuditConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccountAuditConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.UpdateAccountAuditConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccountAuditConfiguration indicates an expected call of UpdateAccountAuditConfiguration
+func (mr *MockIoTAPIMockRecorder) UpdateAccountAuditConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountAuditConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).UpdateAccountAuditConfiguration), arg0)
+}
+
+// UpdateAccountAuditConfigurationRequest mocks base method
+func (m *MockIoTAPI) UpdateAccountAuditConfigurationRequest(arg0 *iot.UpdateAccountAuditConfigurationInput) (*request.Request, *iot.UpdateAccountAuditConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccountAuditConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateAccountAuditConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateAccountAuditConfigurationRequest indicates an expected call of UpdateAccountAuditConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) UpdateAccountAuditConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountAuditConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateAccountAuditConfigurationRequest), arg0)
+}
+
+// UpdateAccountAuditConfigurationWithContext mocks base method
+func (m *MockIoTAPI) UpdateAccountAuditConfigurationWithContext(arg0 aws.Context, arg1 *iot.UpdateAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.UpdateAccountAuditConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAccountAuditConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateAccountAuditConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccountAuditConfigurationWithContext indicates an expected call of UpdateAccountAuditConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateAccountAuditConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountAuditConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateAccountAuditConfigurationWithContext), varargs...)
 }
 
 // UpdateAuthorizer mocks base method
@@ -6135,6 +7235,106 @@ func (mr *MockIoTAPIMockRecorder) UpdateRoleAliasWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoleAliasWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateRoleAliasWithContext), varargs...)
 }
 
+// UpdateScheduledAudit mocks base method
+func (m *MockIoTAPI) UpdateScheduledAudit(arg0 *iot.UpdateScheduledAuditInput) (*iot.UpdateScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateScheduledAudit", arg0)
+	ret0, _ := ret[0].(*iot.UpdateScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateScheduledAudit indicates an expected call of UpdateScheduledAudit
+func (mr *MockIoTAPIMockRecorder) UpdateScheduledAudit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledAudit", reflect.TypeOf((*MockIoTAPI)(nil).UpdateScheduledAudit), arg0)
+}
+
+// UpdateScheduledAuditRequest mocks base method
+func (m *MockIoTAPI) UpdateScheduledAuditRequest(arg0 *iot.UpdateScheduledAuditInput) (*request.Request, *iot.UpdateScheduledAuditOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateScheduledAuditRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateScheduledAuditOutput)
+	return ret0, ret1
+}
+
+// UpdateScheduledAuditRequest indicates an expected call of UpdateScheduledAuditRequest
+func (mr *MockIoTAPIMockRecorder) UpdateScheduledAuditRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledAuditRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateScheduledAuditRequest), arg0)
+}
+
+// UpdateScheduledAuditWithContext mocks base method
+func (m *MockIoTAPI) UpdateScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.UpdateScheduledAuditInput, arg2 ...request.Option) (*iot.UpdateScheduledAuditOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateScheduledAuditWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateScheduledAuditOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateScheduledAuditWithContext indicates an expected call of UpdateScheduledAuditWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateScheduledAuditWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledAuditWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateScheduledAuditWithContext), varargs...)
+}
+
+// UpdateSecurityProfile mocks base method
+func (m *MockIoTAPI) UpdateSecurityProfile(arg0 *iot.UpdateSecurityProfileInput) (*iot.UpdateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSecurityProfile", arg0)
+	ret0, _ := ret[0].(*iot.UpdateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSecurityProfile indicates an expected call of UpdateSecurityProfile
+func (mr *MockIoTAPIMockRecorder) UpdateSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfile", reflect.TypeOf((*MockIoTAPI)(nil).UpdateSecurityProfile), arg0)
+}
+
+// UpdateSecurityProfileRequest mocks base method
+func (m *MockIoTAPI) UpdateSecurityProfileRequest(arg0 *iot.UpdateSecurityProfileInput) (*request.Request, *iot.UpdateSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// UpdateSecurityProfileRequest indicates an expected call of UpdateSecurityProfileRequest
+func (mr *MockIoTAPIMockRecorder) UpdateSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfileRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateSecurityProfileRequest), arg0)
+}
+
+// UpdateSecurityProfileWithContext mocks base method
+func (m *MockIoTAPI) UpdateSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.UpdateSecurityProfileInput, arg2 ...request.Option) (*iot.UpdateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSecurityProfileWithContext indicates an expected call of UpdateSecurityProfileWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfileWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateSecurityProfileWithContext), varargs...)
+}
+
 // UpdateStream mocks base method
 func (m *MockIoTAPI) UpdateStream(arg0 *iot.UpdateStreamInput) (*iot.UpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -6333,4 +7533,54 @@ func (mr *MockIoTAPIMockRecorder) UpdateThingWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThingWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateThingWithContext), varargs...)
+}
+
+// ValidateSecurityProfileBehaviors mocks base method
+func (m *MockIoTAPI) ValidateSecurityProfileBehaviors(arg0 *iot.ValidateSecurityProfileBehaviorsInput) (*iot.ValidateSecurityProfileBehaviorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidateSecurityProfileBehaviors", arg0)
+	ret0, _ := ret[0].(*iot.ValidateSecurityProfileBehaviorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ValidateSecurityProfileBehaviors indicates an expected call of ValidateSecurityProfileBehaviors
+func (mr *MockIoTAPIMockRecorder) ValidateSecurityProfileBehaviors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateSecurityProfileBehaviors", reflect.TypeOf((*MockIoTAPI)(nil).ValidateSecurityProfileBehaviors), arg0)
+}
+
+// ValidateSecurityProfileBehaviorsRequest mocks base method
+func (m *MockIoTAPI) ValidateSecurityProfileBehaviorsRequest(arg0 *iot.ValidateSecurityProfileBehaviorsInput) (*request.Request, *iot.ValidateSecurityProfileBehaviorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidateSecurityProfileBehaviorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ValidateSecurityProfileBehaviorsOutput)
+	return ret0, ret1
+}
+
+// ValidateSecurityProfileBehaviorsRequest indicates an expected call of ValidateSecurityProfileBehaviorsRequest
+func (mr *MockIoTAPIMockRecorder) ValidateSecurityProfileBehaviorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateSecurityProfileBehaviorsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ValidateSecurityProfileBehaviorsRequest), arg0)
+}
+
+// ValidateSecurityProfileBehaviorsWithContext mocks base method
+func (m *MockIoTAPI) ValidateSecurityProfileBehaviorsWithContext(arg0 aws.Context, arg1 *iot.ValidateSecurityProfileBehaviorsInput, arg2 ...request.Option) (*iot.ValidateSecurityProfileBehaviorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ValidateSecurityProfileBehaviorsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ValidateSecurityProfileBehaviorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ValidateSecurityProfileBehaviorsWithContext indicates an expected call of ValidateSecurityProfileBehaviorsWithContext
+func (mr *MockIoTAPIMockRecorder) ValidateSecurityProfileBehaviorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateSecurityProfileBehaviorsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ValidateSecurityProfileBehaviorsWithContext), varargs...)
 }
