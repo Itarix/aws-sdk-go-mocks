@@ -435,6 +435,89 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetCloudFormationT
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationTemplateWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).GetCloudFormationTemplateWithContext), varargs...)
 }
 
+// ListApplicationDependencies mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependencies(arg0 *serverlessapplicationrepository.ListApplicationDependenciesInput) (*serverlessapplicationrepository.ListApplicationDependenciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationDependencies", arg0)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.ListApplicationDependenciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationDependencies indicates an expected call of ListApplicationDependencies
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDependencies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDependencies", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).ListApplicationDependencies), arg0)
+}
+
+// ListApplicationDependenciesPages mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesPages(arg0 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg1 func(*serverlessapplicationrepository.ListApplicationDependenciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationDependenciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationDependenciesPages indicates an expected call of ListApplicationDependenciesPages
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDependenciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDependenciesPages", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).ListApplicationDependenciesPages), arg0, arg1)
+}
+
+// ListApplicationDependenciesPagesWithContext mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesPagesWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg2 func(*serverlessapplicationrepository.ListApplicationDependenciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationDependenciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationDependenciesPagesWithContext indicates an expected call of ListApplicationDependenciesPagesWithContext
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDependenciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDependenciesPagesWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).ListApplicationDependenciesPagesWithContext), varargs...)
+}
+
+// ListApplicationDependenciesRequest mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesRequest(arg0 *serverlessapplicationrepository.ListApplicationDependenciesInput) (*request.Request, *serverlessapplicationrepository.ListApplicationDependenciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationDependenciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*serverlessapplicationrepository.ListApplicationDependenciesOutput)
+	return ret0, ret1
+}
+
+// ListApplicationDependenciesRequest indicates an expected call of ListApplicationDependenciesRequest
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDependenciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDependenciesRequest", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).ListApplicationDependenciesRequest), arg0)
+}
+
+// ListApplicationDependenciesWithContext mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationDependenciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationDependenciesWithContext", varargs...)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.ListApplicationDependenciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationDependenciesWithContext indicates an expected call of ListApplicationDependenciesWithContext
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDependenciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDependenciesWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).ListApplicationDependenciesWithContext), varargs...)
+}
+
 // ListApplicationVersions mocks base method
 func (m *MockServerlessApplicationRepositoryAPI) ListApplicationVersions(arg0 *serverlessapplicationrepository.ListApplicationVersionsInput) (*serverlessapplicationrepository.ListApplicationVersionsOutput, error) {
 	m.ctrl.T.Helper()

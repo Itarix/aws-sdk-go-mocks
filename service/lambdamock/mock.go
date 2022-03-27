@@ -35,6 +35,56 @@ func (m *MockLambdaAPI) EXPECT() *MockLambdaAPIMockRecorder {
 	return m.recorder
 }
 
+// AddLayerVersionPermission mocks base method
+func (m *MockLambdaAPI) AddLayerVersionPermission(arg0 *lambda.AddLayerVersionPermissionInput) (*lambda.AddLayerVersionPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddLayerVersionPermission", arg0)
+	ret0, _ := ret[0].(*lambda.AddLayerVersionPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddLayerVersionPermission indicates an expected call of AddLayerVersionPermission
+func (mr *MockLambdaAPIMockRecorder) AddLayerVersionPermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddLayerVersionPermission", reflect.TypeOf((*MockLambdaAPI)(nil).AddLayerVersionPermission), arg0)
+}
+
+// AddLayerVersionPermissionRequest mocks base method
+func (m *MockLambdaAPI) AddLayerVersionPermissionRequest(arg0 *lambda.AddLayerVersionPermissionInput) (*request.Request, *lambda.AddLayerVersionPermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddLayerVersionPermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.AddLayerVersionPermissionOutput)
+	return ret0, ret1
+}
+
+// AddLayerVersionPermissionRequest indicates an expected call of AddLayerVersionPermissionRequest
+func (mr *MockLambdaAPIMockRecorder) AddLayerVersionPermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddLayerVersionPermissionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).AddLayerVersionPermissionRequest), arg0)
+}
+
+// AddLayerVersionPermissionWithContext mocks base method
+func (m *MockLambdaAPI) AddLayerVersionPermissionWithContext(arg0 aws.Context, arg1 *lambda.AddLayerVersionPermissionInput, arg2 ...request.Option) (*lambda.AddLayerVersionPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddLayerVersionPermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.AddLayerVersionPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddLayerVersionPermissionWithContext indicates an expected call of AddLayerVersionPermissionWithContext
+func (mr *MockLambdaAPIMockRecorder) AddLayerVersionPermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddLayerVersionPermissionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).AddLayerVersionPermissionWithContext), varargs...)
+}
+
 // AddPermission mocks base method
 func (m *MockLambdaAPI) AddPermission(arg0 *lambda.AddPermissionInput) (*lambda.AddPermissionOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +485,56 @@ func (mr *MockLambdaAPIMockRecorder) DeleteFunctionWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionWithContext), varargs...)
 }
 
+// DeleteLayerVersion mocks base method
+func (m *MockLambdaAPI) DeleteLayerVersion(arg0 *lambda.DeleteLayerVersionInput) (*lambda.DeleteLayerVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLayerVersion", arg0)
+	ret0, _ := ret[0].(*lambda.DeleteLayerVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLayerVersion indicates an expected call of DeleteLayerVersion
+func (mr *MockLambdaAPIMockRecorder) DeleteLayerVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLayerVersion", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteLayerVersion), arg0)
+}
+
+// DeleteLayerVersionRequest mocks base method
+func (m *MockLambdaAPI) DeleteLayerVersionRequest(arg0 *lambda.DeleteLayerVersionInput) (*request.Request, *lambda.DeleteLayerVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLayerVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.DeleteLayerVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteLayerVersionRequest indicates an expected call of DeleteLayerVersionRequest
+func (mr *MockLambdaAPIMockRecorder) DeleteLayerVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLayerVersionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteLayerVersionRequest), arg0)
+}
+
+// DeleteLayerVersionWithContext mocks base method
+func (m *MockLambdaAPI) DeleteLayerVersionWithContext(arg0 aws.Context, arg1 *lambda.DeleteLayerVersionInput, arg2 ...request.Option) (*lambda.DeleteLayerVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLayerVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.DeleteLayerVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLayerVersionWithContext indicates an expected call of DeleteLayerVersionWithContext
+func (mr *MockLambdaAPIMockRecorder) DeleteLayerVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLayerVersionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteLayerVersionWithContext), varargs...)
+}
+
 // GetAccountSettings mocks base method
 func (m *MockLambdaAPI) GetAccountSettings(arg0 *lambda.GetAccountSettingsInput) (*lambda.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +783,106 @@ func (mr *MockLambdaAPIMockRecorder) GetFunctionWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionWithContext), varargs...)
+}
+
+// GetLayerVersion mocks base method
+func (m *MockLambdaAPI) GetLayerVersion(arg0 *lambda.GetLayerVersionInput) (*lambda.GetLayerVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLayerVersion", arg0)
+	ret0, _ := ret[0].(*lambda.GetLayerVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLayerVersion indicates an expected call of GetLayerVersion
+func (mr *MockLambdaAPIMockRecorder) GetLayerVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLayerVersion", reflect.TypeOf((*MockLambdaAPI)(nil).GetLayerVersion), arg0)
+}
+
+// GetLayerVersionPolicy mocks base method
+func (m *MockLambdaAPI) GetLayerVersionPolicy(arg0 *lambda.GetLayerVersionPolicyInput) (*lambda.GetLayerVersionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLayerVersionPolicy", arg0)
+	ret0, _ := ret[0].(*lambda.GetLayerVersionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLayerVersionPolicy indicates an expected call of GetLayerVersionPolicy
+func (mr *MockLambdaAPIMockRecorder) GetLayerVersionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLayerVersionPolicy", reflect.TypeOf((*MockLambdaAPI)(nil).GetLayerVersionPolicy), arg0)
+}
+
+// GetLayerVersionPolicyRequest mocks base method
+func (m *MockLambdaAPI) GetLayerVersionPolicyRequest(arg0 *lambda.GetLayerVersionPolicyInput) (*request.Request, *lambda.GetLayerVersionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLayerVersionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetLayerVersionPolicyOutput)
+	return ret0, ret1
+}
+
+// GetLayerVersionPolicyRequest indicates an expected call of GetLayerVersionPolicyRequest
+func (mr *MockLambdaAPIMockRecorder) GetLayerVersionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLayerVersionPolicyRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetLayerVersionPolicyRequest), arg0)
+}
+
+// GetLayerVersionPolicyWithContext mocks base method
+func (m *MockLambdaAPI) GetLayerVersionPolicyWithContext(arg0 aws.Context, arg1 *lambda.GetLayerVersionPolicyInput, arg2 ...request.Option) (*lambda.GetLayerVersionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLayerVersionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetLayerVersionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLayerVersionPolicyWithContext indicates an expected call of GetLayerVersionPolicyWithContext
+func (mr *MockLambdaAPIMockRecorder) GetLayerVersionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLayerVersionPolicyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetLayerVersionPolicyWithContext), varargs...)
+}
+
+// GetLayerVersionRequest mocks base method
+func (m *MockLambdaAPI) GetLayerVersionRequest(arg0 *lambda.GetLayerVersionInput) (*request.Request, *lambda.GetLayerVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLayerVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetLayerVersionOutput)
+	return ret0, ret1
+}
+
+// GetLayerVersionRequest indicates an expected call of GetLayerVersionRequest
+func (mr *MockLambdaAPIMockRecorder) GetLayerVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLayerVersionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetLayerVersionRequest), arg0)
+}
+
+// GetLayerVersionWithContext mocks base method
+func (m *MockLambdaAPI) GetLayerVersionWithContext(arg0 aws.Context, arg1 *lambda.GetLayerVersionInput, arg2 ...request.Option) (*lambda.GetLayerVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLayerVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetLayerVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLayerVersionWithContext indicates an expected call of GetLayerVersionWithContext
+func (mr *MockLambdaAPIMockRecorder) GetLayerVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLayerVersionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetLayerVersionWithContext), varargs...)
 }
 
 // GetPolicy mocks base method
@@ -1051,6 +1251,106 @@ func (mr *MockLambdaAPIMockRecorder) ListFunctionsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsWithContext), varargs...)
 }
 
+// ListLayerVersions mocks base method
+func (m *MockLambdaAPI) ListLayerVersions(arg0 *lambda.ListLayerVersionsInput) (*lambda.ListLayerVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLayerVersions", arg0)
+	ret0, _ := ret[0].(*lambda.ListLayerVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLayerVersions indicates an expected call of ListLayerVersions
+func (mr *MockLambdaAPIMockRecorder) ListLayerVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayerVersions", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayerVersions), arg0)
+}
+
+// ListLayerVersionsRequest mocks base method
+func (m *MockLambdaAPI) ListLayerVersionsRequest(arg0 *lambda.ListLayerVersionsInput) (*request.Request, *lambda.ListLayerVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLayerVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.ListLayerVersionsOutput)
+	return ret0, ret1
+}
+
+// ListLayerVersionsRequest indicates an expected call of ListLayerVersionsRequest
+func (mr *MockLambdaAPIMockRecorder) ListLayerVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayerVersionsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayerVersionsRequest), arg0)
+}
+
+// ListLayerVersionsWithContext mocks base method
+func (m *MockLambdaAPI) ListLayerVersionsWithContext(arg0 aws.Context, arg1 *lambda.ListLayerVersionsInput, arg2 ...request.Option) (*lambda.ListLayerVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLayerVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.ListLayerVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLayerVersionsWithContext indicates an expected call of ListLayerVersionsWithContext
+func (mr *MockLambdaAPIMockRecorder) ListLayerVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayerVersionsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayerVersionsWithContext), varargs...)
+}
+
+// ListLayers mocks base method
+func (m *MockLambdaAPI) ListLayers(arg0 *lambda.ListLayersInput) (*lambda.ListLayersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLayers", arg0)
+	ret0, _ := ret[0].(*lambda.ListLayersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLayers indicates an expected call of ListLayers
+func (mr *MockLambdaAPIMockRecorder) ListLayers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayers", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayers), arg0)
+}
+
+// ListLayersRequest mocks base method
+func (m *MockLambdaAPI) ListLayersRequest(arg0 *lambda.ListLayersInput) (*request.Request, *lambda.ListLayersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLayersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.ListLayersOutput)
+	return ret0, ret1
+}
+
+// ListLayersRequest indicates an expected call of ListLayersRequest
+func (mr *MockLambdaAPIMockRecorder) ListLayersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayersRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayersRequest), arg0)
+}
+
+// ListLayersWithContext mocks base method
+func (m *MockLambdaAPI) ListLayersWithContext(arg0 aws.Context, arg1 *lambda.ListLayersInput, arg2 ...request.Option) (*lambda.ListLayersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLayersWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.ListLayersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLayersWithContext indicates an expected call of ListLayersWithContext
+func (mr *MockLambdaAPIMockRecorder) ListLayersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayersWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayersWithContext), varargs...)
+}
+
 // ListTags mocks base method
 func (m *MockLambdaAPI) ListTags(arg0 *lambda.ListTagsInput) (*lambda.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1151,6 +1451,56 @@ func (mr *MockLambdaAPIMockRecorder) ListVersionsByFunctionWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsByFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListVersionsByFunctionWithContext), varargs...)
 }
 
+// PublishLayerVersion mocks base method
+func (m *MockLambdaAPI) PublishLayerVersion(arg0 *lambda.PublishLayerVersionInput) (*lambda.PublishLayerVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishLayerVersion", arg0)
+	ret0, _ := ret[0].(*lambda.PublishLayerVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishLayerVersion indicates an expected call of PublishLayerVersion
+func (mr *MockLambdaAPIMockRecorder) PublishLayerVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishLayerVersion", reflect.TypeOf((*MockLambdaAPI)(nil).PublishLayerVersion), arg0)
+}
+
+// PublishLayerVersionRequest mocks base method
+func (m *MockLambdaAPI) PublishLayerVersionRequest(arg0 *lambda.PublishLayerVersionInput) (*request.Request, *lambda.PublishLayerVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishLayerVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.PublishLayerVersionOutput)
+	return ret0, ret1
+}
+
+// PublishLayerVersionRequest indicates an expected call of PublishLayerVersionRequest
+func (mr *MockLambdaAPIMockRecorder) PublishLayerVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishLayerVersionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).PublishLayerVersionRequest), arg0)
+}
+
+// PublishLayerVersionWithContext mocks base method
+func (m *MockLambdaAPI) PublishLayerVersionWithContext(arg0 aws.Context, arg1 *lambda.PublishLayerVersionInput, arg2 ...request.Option) (*lambda.PublishLayerVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PublishLayerVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.PublishLayerVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishLayerVersionWithContext indicates an expected call of PublishLayerVersionWithContext
+func (mr *MockLambdaAPIMockRecorder) PublishLayerVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishLayerVersionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PublishLayerVersionWithContext), varargs...)
+}
+
 // PublishVersion mocks base method
 func (m *MockLambdaAPI) PublishVersion(arg0 *lambda.PublishVersionInput) (*lambda.FunctionConfiguration, error) {
 	m.ctrl.T.Helper()
@@ -1249,6 +1599,56 @@ func (mr *MockLambdaAPIMockRecorder) PutFunctionConcurrencyWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionConcurrencyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionConcurrencyWithContext), varargs...)
+}
+
+// RemoveLayerVersionPermission mocks base method
+func (m *MockLambdaAPI) RemoveLayerVersionPermission(arg0 *lambda.RemoveLayerVersionPermissionInput) (*lambda.RemoveLayerVersionPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveLayerVersionPermission", arg0)
+	ret0, _ := ret[0].(*lambda.RemoveLayerVersionPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveLayerVersionPermission indicates an expected call of RemoveLayerVersionPermission
+func (mr *MockLambdaAPIMockRecorder) RemoveLayerVersionPermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveLayerVersionPermission", reflect.TypeOf((*MockLambdaAPI)(nil).RemoveLayerVersionPermission), arg0)
+}
+
+// RemoveLayerVersionPermissionRequest mocks base method
+func (m *MockLambdaAPI) RemoveLayerVersionPermissionRequest(arg0 *lambda.RemoveLayerVersionPermissionInput) (*request.Request, *lambda.RemoveLayerVersionPermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveLayerVersionPermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.RemoveLayerVersionPermissionOutput)
+	return ret0, ret1
+}
+
+// RemoveLayerVersionPermissionRequest indicates an expected call of RemoveLayerVersionPermissionRequest
+func (mr *MockLambdaAPIMockRecorder) RemoveLayerVersionPermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveLayerVersionPermissionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).RemoveLayerVersionPermissionRequest), arg0)
+}
+
+// RemoveLayerVersionPermissionWithContext mocks base method
+func (m *MockLambdaAPI) RemoveLayerVersionPermissionWithContext(arg0 aws.Context, arg1 *lambda.RemoveLayerVersionPermissionInput, arg2 ...request.Option) (*lambda.RemoveLayerVersionPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveLayerVersionPermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.RemoveLayerVersionPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveLayerVersionPermissionWithContext indicates an expected call of RemoveLayerVersionPermissionWithContext
+func (mr *MockLambdaAPIMockRecorder) RemoveLayerVersionPermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveLayerVersionPermissionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).RemoveLayerVersionPermissionWithContext), varargs...)
 }
 
 // RemovePermission mocks base method
