@@ -185,6 +185,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) AssociateProductWithPortfolioWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProductWithPortfolioWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).AssociateProductWithPortfolioWithContext), varargs...)
 }
 
+// AssociateServiceActionWithProvisioningArtifact mocks base method
+func (m *MockServiceCatalogAPI) AssociateServiceActionWithProvisioningArtifact(arg0 *servicecatalog.AssociateServiceActionWithProvisioningArtifactInput) (*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateServiceActionWithProvisioningArtifact", arg0)
+	ret0, _ := ret[0].(*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateServiceActionWithProvisioningArtifact indicates an expected call of AssociateServiceActionWithProvisioningArtifact
+func (mr *MockServiceCatalogAPIMockRecorder) AssociateServiceActionWithProvisioningArtifact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceActionWithProvisioningArtifact", reflect.TypeOf((*MockServiceCatalogAPI)(nil).AssociateServiceActionWithProvisioningArtifact), arg0)
+}
+
+// AssociateServiceActionWithProvisioningArtifactRequest mocks base method
+func (m *MockServiceCatalogAPI) AssociateServiceActionWithProvisioningArtifactRequest(arg0 *servicecatalog.AssociateServiceActionWithProvisioningArtifactInput) (*request.Request, *servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateServiceActionWithProvisioningArtifactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput)
+	return ret0, ret1
+}
+
+// AssociateServiceActionWithProvisioningArtifactRequest indicates an expected call of AssociateServiceActionWithProvisioningArtifactRequest
+func (mr *MockServiceCatalogAPIMockRecorder) AssociateServiceActionWithProvisioningArtifactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceActionWithProvisioningArtifactRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).AssociateServiceActionWithProvisioningArtifactRequest), arg0)
+}
+
+// AssociateServiceActionWithProvisioningArtifactWithContext mocks base method
+func (m *MockServiceCatalogAPI) AssociateServiceActionWithProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.AssociateServiceActionWithProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateServiceActionWithProvisioningArtifactWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateServiceActionWithProvisioningArtifactWithContext indicates an expected call of AssociateServiceActionWithProvisioningArtifactWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) AssociateServiceActionWithProvisioningArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceActionWithProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).AssociateServiceActionWithProvisioningArtifactWithContext), varargs...)
+}
+
 // AssociateTagOptionWithResource mocks base method
 func (m *MockServiceCatalogAPI) AssociateTagOptionWithResource(arg0 *servicecatalog.AssociateTagOptionWithResourceInput) (*servicecatalog.AssociateTagOptionWithResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,106 @@ func (mr *MockServiceCatalogAPIMockRecorder) AssociateTagOptionWithResourceWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTagOptionWithResourceWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).AssociateTagOptionWithResourceWithContext), varargs...)
+}
+
+// BatchAssociateServiceActionWithProvisioningArtifact mocks base method
+func (m *MockServiceCatalogAPI) BatchAssociateServiceActionWithProvisioningArtifact(arg0 *servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactInput) (*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateServiceActionWithProvisioningArtifact", arg0)
+	ret0, _ := ret[0].(*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateServiceActionWithProvisioningArtifact indicates an expected call of BatchAssociateServiceActionWithProvisioningArtifact
+func (mr *MockServiceCatalogAPIMockRecorder) BatchAssociateServiceActionWithProvisioningArtifact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateServiceActionWithProvisioningArtifact", reflect.TypeOf((*MockServiceCatalogAPI)(nil).BatchAssociateServiceActionWithProvisioningArtifact), arg0)
+}
+
+// BatchAssociateServiceActionWithProvisioningArtifactRequest mocks base method
+func (m *MockServiceCatalogAPI) BatchAssociateServiceActionWithProvisioningArtifactRequest(arg0 *servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactInput) (*request.Request, *servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateServiceActionWithProvisioningArtifactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput)
+	return ret0, ret1
+}
+
+// BatchAssociateServiceActionWithProvisioningArtifactRequest indicates an expected call of BatchAssociateServiceActionWithProvisioningArtifactRequest
+func (mr *MockServiceCatalogAPIMockRecorder) BatchAssociateServiceActionWithProvisioningArtifactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateServiceActionWithProvisioningArtifactRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).BatchAssociateServiceActionWithProvisioningArtifactRequest), arg0)
+}
+
+// BatchAssociateServiceActionWithProvisioningArtifactWithContext mocks base method
+func (m *MockServiceCatalogAPI) BatchAssociateServiceActionWithProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchAssociateServiceActionWithProvisioningArtifactWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateServiceActionWithProvisioningArtifactWithContext indicates an expected call of BatchAssociateServiceActionWithProvisioningArtifactWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) BatchAssociateServiceActionWithProvisioningArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateServiceActionWithProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).BatchAssociateServiceActionWithProvisioningArtifactWithContext), varargs...)
+}
+
+// BatchDisassociateServiceActionFromProvisioningArtifact mocks base method
+func (m *MockServiceCatalogAPI) BatchDisassociateServiceActionFromProvisioningArtifact(arg0 *servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactInput) (*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateServiceActionFromProvisioningArtifact", arg0)
+	ret0, _ := ret[0].(*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateServiceActionFromProvisioningArtifact indicates an expected call of BatchDisassociateServiceActionFromProvisioningArtifact
+func (mr *MockServiceCatalogAPIMockRecorder) BatchDisassociateServiceActionFromProvisioningArtifact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateServiceActionFromProvisioningArtifact", reflect.TypeOf((*MockServiceCatalogAPI)(nil).BatchDisassociateServiceActionFromProvisioningArtifact), arg0)
+}
+
+// BatchDisassociateServiceActionFromProvisioningArtifactRequest mocks base method
+func (m *MockServiceCatalogAPI) BatchDisassociateServiceActionFromProvisioningArtifactRequest(arg0 *servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactInput) (*request.Request, *servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateServiceActionFromProvisioningArtifactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput)
+	return ret0, ret1
+}
+
+// BatchDisassociateServiceActionFromProvisioningArtifactRequest indicates an expected call of BatchDisassociateServiceActionFromProvisioningArtifactRequest
+func (mr *MockServiceCatalogAPIMockRecorder) BatchDisassociateServiceActionFromProvisioningArtifactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateServiceActionFromProvisioningArtifactRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).BatchDisassociateServiceActionFromProvisioningArtifactRequest), arg0)
+}
+
+// BatchDisassociateServiceActionFromProvisioningArtifactWithContext mocks base method
+func (m *MockServiceCatalogAPI) BatchDisassociateServiceActionFromProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDisassociateServiceActionFromProvisioningArtifactWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateServiceActionFromProvisioningArtifactWithContext indicates an expected call of BatchDisassociateServiceActionFromProvisioningArtifactWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) BatchDisassociateServiceActionFromProvisioningArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateServiceActionFromProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).BatchDisassociateServiceActionFromProvisioningArtifactWithContext), varargs...)
 }
 
 // CopyProduct mocks base method
@@ -585,6 +735,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateProvisioningArtifactWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).CreateProvisioningArtifactWithContext), varargs...)
 }
 
+// CreateServiceAction mocks base method
+func (m *MockServiceCatalogAPI) CreateServiceAction(arg0 *servicecatalog.CreateServiceActionInput) (*servicecatalog.CreateServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateServiceAction", arg0)
+	ret0, _ := ret[0].(*servicecatalog.CreateServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateServiceAction indicates an expected call of CreateServiceAction
+func (mr *MockServiceCatalogAPIMockRecorder) CreateServiceAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).CreateServiceAction), arg0)
+}
+
+// CreateServiceActionRequest mocks base method
+func (m *MockServiceCatalogAPI) CreateServiceActionRequest(arg0 *servicecatalog.CreateServiceActionInput) (*request.Request, *servicecatalog.CreateServiceActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateServiceActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.CreateServiceActionOutput)
+	return ret0, ret1
+}
+
+// CreateServiceActionRequest indicates an expected call of CreateServiceActionRequest
+func (mr *MockServiceCatalogAPIMockRecorder) CreateServiceActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateServiceActionRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).CreateServiceActionRequest), arg0)
+}
+
+// CreateServiceActionWithContext mocks base method
+func (m *MockServiceCatalogAPI) CreateServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateServiceActionInput, arg2 ...request.Option) (*servicecatalog.CreateServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateServiceActionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.CreateServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateServiceActionWithContext indicates an expected call of CreateServiceActionWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) CreateServiceActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).CreateServiceActionWithContext), varargs...)
+}
+
 // CreateTagOption mocks base method
 func (m *MockServiceCatalogAPI) CreateTagOption(arg0 *servicecatalog.CreateTagOptionInput) (*servicecatalog.CreateTagOptionOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +1133,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteProvisioningArtifactWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DeleteProvisioningArtifactWithContext), varargs...)
+}
+
+// DeleteServiceAction mocks base method
+func (m *MockServiceCatalogAPI) DeleteServiceAction(arg0 *servicecatalog.DeleteServiceActionInput) (*servicecatalog.DeleteServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteServiceAction", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DeleteServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteServiceAction indicates an expected call of DeleteServiceAction
+func (mr *MockServiceCatalogAPIMockRecorder) DeleteServiceAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DeleteServiceAction), arg0)
+}
+
+// DeleteServiceActionRequest mocks base method
+func (m *MockServiceCatalogAPI) DeleteServiceActionRequest(arg0 *servicecatalog.DeleteServiceActionInput) (*request.Request, *servicecatalog.DeleteServiceActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteServiceActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DeleteServiceActionOutput)
+	return ret0, ret1
+}
+
+// DeleteServiceActionRequest indicates an expected call of DeleteServiceActionRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DeleteServiceActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteServiceActionRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DeleteServiceActionRequest), arg0)
+}
+
+// DeleteServiceActionWithContext mocks base method
+func (m *MockServiceCatalogAPI) DeleteServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteServiceActionInput, arg2 ...request.Option) (*servicecatalog.DeleteServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteServiceActionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DeleteServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteServiceActionWithContext indicates an expected call of DeleteServiceActionWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DeleteServiceActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DeleteServiceActionWithContext), varargs...)
 }
 
 // DeleteTagOption mocks base method
@@ -1535,6 +1785,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeRecordWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRecordWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeRecordWithContext), varargs...)
 }
 
+// DescribeServiceAction mocks base method
+func (m *MockServiceCatalogAPI) DescribeServiceAction(arg0 *servicecatalog.DescribeServiceActionInput) (*servicecatalog.DescribeServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeServiceAction", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DescribeServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeServiceAction indicates an expected call of DescribeServiceAction
+func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceAction), arg0)
+}
+
+// DescribeServiceActionRequest mocks base method
+func (m *MockServiceCatalogAPI) DescribeServiceActionRequest(arg0 *servicecatalog.DescribeServiceActionInput) (*request.Request, *servicecatalog.DescribeServiceActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeServiceActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DescribeServiceActionOutput)
+	return ret0, ret1
+}
+
+// DescribeServiceActionRequest indicates an expected call of DescribeServiceActionRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceActionRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceActionRequest), arg0)
+}
+
+// DescribeServiceActionWithContext mocks base method
+func (m *MockServiceCatalogAPI) DescribeServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeServiceActionInput, arg2 ...request.Option) (*servicecatalog.DescribeServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeServiceActionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DescribeServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeServiceActionWithContext indicates an expected call of DescribeServiceActionWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceActionWithContext), varargs...)
+}
+
 // DescribeTagOption mocks base method
 func (m *MockServiceCatalogAPI) DescribeTagOption(arg0 *servicecatalog.DescribeTagOptionInput) (*servicecatalog.DescribeTagOptionOutput, error) {
 	m.ctrl.T.Helper()
@@ -1685,6 +1985,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisassociateProductFromPortfolioWit
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateProductFromPortfolioWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisassociateProductFromPortfolioWithContext), varargs...)
 }
 
+// DisassociateServiceActionFromProvisioningArtifact mocks base method
+func (m *MockServiceCatalogAPI) DisassociateServiceActionFromProvisioningArtifact(arg0 *servicecatalog.DisassociateServiceActionFromProvisioningArtifactInput) (*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateServiceActionFromProvisioningArtifact", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateServiceActionFromProvisioningArtifact indicates an expected call of DisassociateServiceActionFromProvisioningArtifact
+func (mr *MockServiceCatalogAPIMockRecorder) DisassociateServiceActionFromProvisioningArtifact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateServiceActionFromProvisioningArtifact", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisassociateServiceActionFromProvisioningArtifact), arg0)
+}
+
+// DisassociateServiceActionFromProvisioningArtifactRequest mocks base method
+func (m *MockServiceCatalogAPI) DisassociateServiceActionFromProvisioningArtifactRequest(arg0 *servicecatalog.DisassociateServiceActionFromProvisioningArtifactInput) (*request.Request, *servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateServiceActionFromProvisioningArtifactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput)
+	return ret0, ret1
+}
+
+// DisassociateServiceActionFromProvisioningArtifactRequest indicates an expected call of DisassociateServiceActionFromProvisioningArtifactRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DisassociateServiceActionFromProvisioningArtifactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateServiceActionFromProvisioningArtifactRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisassociateServiceActionFromProvisioningArtifactRequest), arg0)
+}
+
+// DisassociateServiceActionFromProvisioningArtifactWithContext mocks base method
+func (m *MockServiceCatalogAPI) DisassociateServiceActionFromProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.DisassociateServiceActionFromProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateServiceActionFromProvisioningArtifactWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateServiceActionFromProvisioningArtifactWithContext indicates an expected call of DisassociateServiceActionFromProvisioningArtifactWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DisassociateServiceActionFromProvisioningArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateServiceActionFromProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DisassociateServiceActionFromProvisioningArtifactWithContext), varargs...)
+}
+
 // DisassociateTagOptionFromResource mocks base method
 func (m *MockServiceCatalogAPI) DisassociateTagOptionFromResource(arg0 *servicecatalog.DisassociateTagOptionFromResourceInput) (*servicecatalog.DisassociateTagOptionFromResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1783,6 +2133,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductPlanWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteProvisionedProductPlanWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ExecuteProvisionedProductPlanWithContext), varargs...)
+}
+
+// ExecuteProvisionedProductServiceAction mocks base method
+func (m *MockServiceCatalogAPI) ExecuteProvisionedProductServiceAction(arg0 *servicecatalog.ExecuteProvisionedProductServiceActionInput) (*servicecatalog.ExecuteProvisionedProductServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteProvisionedProductServiceAction", arg0)
+	ret0, _ := ret[0].(*servicecatalog.ExecuteProvisionedProductServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteProvisionedProductServiceAction indicates an expected call of ExecuteProvisionedProductServiceAction
+func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductServiceAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteProvisionedProductServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ExecuteProvisionedProductServiceAction), arg0)
+}
+
+// ExecuteProvisionedProductServiceActionRequest mocks base method
+func (m *MockServiceCatalogAPI) ExecuteProvisionedProductServiceActionRequest(arg0 *servicecatalog.ExecuteProvisionedProductServiceActionInput) (*request.Request, *servicecatalog.ExecuteProvisionedProductServiceActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteProvisionedProductServiceActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.ExecuteProvisionedProductServiceActionOutput)
+	return ret0, ret1
+}
+
+// ExecuteProvisionedProductServiceActionRequest indicates an expected call of ExecuteProvisionedProductServiceActionRequest
+func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductServiceActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteProvisionedProductServiceActionRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ExecuteProvisionedProductServiceActionRequest), arg0)
+}
+
+// ExecuteProvisionedProductServiceActionWithContext mocks base method
+func (m *MockServiceCatalogAPI) ExecuteProvisionedProductServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.ExecuteProvisionedProductServiceActionInput, arg2 ...request.Option) (*servicecatalog.ExecuteProvisionedProductServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExecuteProvisionedProductServiceActionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.ExecuteProvisionedProductServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteProvisionedProductServiceActionWithContext indicates an expected call of ExecuteProvisionedProductServiceActionWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductServiceActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteProvisionedProductServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ExecuteProvisionedProductServiceActionWithContext), varargs...)
 }
 
 // ListAcceptedPortfolioShares mocks base method
@@ -2398,6 +2798,89 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifacts(arg0 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningArtifacts", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListProvisioningArtifacts), arg0)
 }
 
+// ListProvisioningArtifactsForServiceAction mocks base method
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceAction(arg0 *servicecatalog.ListProvisioningArtifactsForServiceActionInput) (*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningArtifactsForServiceAction", arg0)
+	ret0, _ := ret[0].(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisioningArtifactsForServiceAction indicates an expected call of ListProvisioningArtifactsForServiceAction
+func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForServiceAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningArtifactsForServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListProvisioningArtifactsForServiceAction), arg0)
+}
+
+// ListProvisioningArtifactsForServiceActionPages mocks base method
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionPages(arg0 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg1 func(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningArtifactsForServiceActionPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProvisioningArtifactsForServiceActionPages indicates an expected call of ListProvisioningArtifactsForServiceActionPages
+func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForServiceActionPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningArtifactsForServiceActionPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListProvisioningArtifactsForServiceActionPages), arg0, arg1)
+}
+
+// ListProvisioningArtifactsForServiceActionPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg2 func(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisioningArtifactsForServiceActionPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProvisioningArtifactsForServiceActionPagesWithContext indicates an expected call of ListProvisioningArtifactsForServiceActionPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForServiceActionPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningArtifactsForServiceActionPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListProvisioningArtifactsForServiceActionPagesWithContext), varargs...)
+}
+
+// ListProvisioningArtifactsForServiceActionRequest mocks base method
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionRequest(arg0 *servicecatalog.ListProvisioningArtifactsForServiceActionInput) (*request.Request, *servicecatalog.ListProvisioningArtifactsForServiceActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningArtifactsForServiceActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput)
+	return ret0, ret1
+}
+
+// ListProvisioningArtifactsForServiceActionRequest indicates an expected call of ListProvisioningArtifactsForServiceActionRequest
+func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForServiceActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningArtifactsForServiceActionRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListProvisioningArtifactsForServiceActionRequest), arg0)
+}
+
+// ListProvisioningArtifactsForServiceActionWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg2 ...request.Option) (*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisioningArtifactsForServiceActionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisioningArtifactsForServiceActionWithContext indicates an expected call of ListProvisioningArtifactsForServiceActionWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForServiceActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningArtifactsForServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListProvisioningArtifactsForServiceActionWithContext), varargs...)
+}
+
 // ListProvisioningArtifactsRequest mocks base method
 func (m *MockServiceCatalogAPI) ListProvisioningArtifactsRequest(arg0 *servicecatalog.ListProvisioningArtifactsInput) (*request.Request, *servicecatalog.ListProvisioningArtifactsOutput) {
 	m.ctrl.T.Helper()
@@ -2564,6 +3047,172 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListResourcesForTagOptionWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesForTagOptionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListResourcesForTagOptionWithContext), varargs...)
+}
+
+// ListServiceActions mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActions(arg0 *servicecatalog.ListServiceActionsInput) (*servicecatalog.ListServiceActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceActions", arg0)
+	ret0, _ := ret[0].(*servicecatalog.ListServiceActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceActions indicates an expected call of ListServiceActions
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActions", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActions), arg0)
+}
+
+// ListServiceActionsForProvisioningArtifact mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifact(arg0 *servicecatalog.ListServiceActionsForProvisioningArtifactInput) (*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceActionsForProvisioningArtifact", arg0)
+	ret0, _ := ret[0].(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceActionsForProvisioningArtifact indicates an expected call of ListServiceActionsForProvisioningArtifact
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningArtifact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsForProvisioningArtifact", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsForProvisioningArtifact), arg0)
+}
+
+// ListServiceActionsForProvisioningArtifactPages mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactPages(arg0 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg1 func(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceActionsForProvisioningArtifactPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceActionsForProvisioningArtifactPages indicates an expected call of ListServiceActionsForProvisioningArtifactPages
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningArtifactPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsForProvisioningArtifactPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsForProvisioningArtifactPages), arg0, arg1)
+}
+
+// ListServiceActionsForProvisioningArtifactPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg2 func(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceActionsForProvisioningArtifactPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceActionsForProvisioningArtifactPagesWithContext indicates an expected call of ListServiceActionsForProvisioningArtifactPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningArtifactPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsForProvisioningArtifactPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsForProvisioningArtifactPagesWithContext), varargs...)
+}
+
+// ListServiceActionsForProvisioningArtifactRequest mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactRequest(arg0 *servicecatalog.ListServiceActionsForProvisioningArtifactInput) (*request.Request, *servicecatalog.ListServiceActionsForProvisioningArtifactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceActionsForProvisioningArtifactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput)
+	return ret0, ret1
+}
+
+// ListServiceActionsForProvisioningArtifactRequest indicates an expected call of ListServiceActionsForProvisioningArtifactRequest
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningArtifactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsForProvisioningArtifactRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsForProvisioningArtifactRequest), arg0)
+}
+
+// ListServiceActionsForProvisioningArtifactWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceActionsForProvisioningArtifactWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceActionsForProvisioningArtifactWithContext indicates an expected call of ListServiceActionsForProvisioningArtifactWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsForProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsForProvisioningArtifactWithContext), varargs...)
+}
+
+// ListServiceActionsPages mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsPages(arg0 *servicecatalog.ListServiceActionsInput, arg1 func(*servicecatalog.ListServiceActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceActionsPages indicates an expected call of ListServiceActionsPages
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsPages), arg0, arg1)
+}
+
+// ListServiceActionsPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsInput, arg2 func(*servicecatalog.ListServiceActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceActionsPagesWithContext indicates an expected call of ListServiceActionsPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsPagesWithContext), varargs...)
+}
+
+// ListServiceActionsRequest mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsRequest(arg0 *servicecatalog.ListServiceActionsInput) (*request.Request, *servicecatalog.ListServiceActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.ListServiceActionsOutput)
+	return ret0, ret1
+}
+
+// ListServiceActionsRequest indicates an expected call of ListServiceActionsRequest
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsRequest), arg0)
+}
+
+// ListServiceActionsWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListServiceActionsWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsInput, arg2 ...request.Option) (*servicecatalog.ListServiceActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.ListServiceActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceActionsWithContext indicates an expected call of ListServiceActionsWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceActionsWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListServiceActionsWithContext), varargs...)
 }
 
 // ListTagOptions mocks base method
@@ -3346,6 +3995,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateProvisioningArtifactWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisioningArtifactWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdateProvisioningArtifactWithContext), varargs...)
+}
+
+// UpdateServiceAction mocks base method
+func (m *MockServiceCatalogAPI) UpdateServiceAction(arg0 *servicecatalog.UpdateServiceActionInput) (*servicecatalog.UpdateServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateServiceAction", arg0)
+	ret0, _ := ret[0].(*servicecatalog.UpdateServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateServiceAction indicates an expected call of UpdateServiceAction
+func (mr *MockServiceCatalogAPIMockRecorder) UpdateServiceAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdateServiceAction), arg0)
+}
+
+// UpdateServiceActionRequest mocks base method
+func (m *MockServiceCatalogAPI) UpdateServiceActionRequest(arg0 *servicecatalog.UpdateServiceActionInput) (*request.Request, *servicecatalog.UpdateServiceActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateServiceActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.UpdateServiceActionOutput)
+	return ret0, ret1
+}
+
+// UpdateServiceActionRequest indicates an expected call of UpdateServiceActionRequest
+func (mr *MockServiceCatalogAPIMockRecorder) UpdateServiceActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceActionRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdateServiceActionRequest), arg0)
+}
+
+// UpdateServiceActionWithContext mocks base method
+func (m *MockServiceCatalogAPI) UpdateServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateServiceActionInput, arg2 ...request.Option) (*servicecatalog.UpdateServiceActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateServiceActionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.UpdateServiceActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateServiceActionWithContext indicates an expected call of UpdateServiceActionWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) UpdateServiceActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceActionWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdateServiceActionWithContext), varargs...)
 }
 
 // UpdateTagOption mocks base method
