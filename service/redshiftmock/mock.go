@@ -3680,6 +3680,56 @@ func (mr *MockRedshiftAPIMockRecorder) ResetClusterParameterGroupWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetClusterParameterGroupWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ResetClusterParameterGroupWithContext), varargs...)
 }
 
+// ResizeCluster mocks base method
+func (m *MockRedshiftAPI) ResizeCluster(arg0 *redshift.ResizeClusterInput) (*redshift.ResizeClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResizeCluster", arg0)
+	ret0, _ := ret[0].(*redshift.ResizeClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResizeCluster indicates an expected call of ResizeCluster
+func (mr *MockRedshiftAPIMockRecorder) ResizeCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResizeCluster", reflect.TypeOf((*MockRedshiftAPI)(nil).ResizeCluster), arg0)
+}
+
+// ResizeClusterRequest mocks base method
+func (m *MockRedshiftAPI) ResizeClusterRequest(arg0 *redshift.ResizeClusterInput) (*request.Request, *redshift.ResizeClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResizeClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ResizeClusterOutput)
+	return ret0, ret1
+}
+
+// ResizeClusterRequest indicates an expected call of ResizeClusterRequest
+func (mr *MockRedshiftAPIMockRecorder) ResizeClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResizeClusterRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ResizeClusterRequest), arg0)
+}
+
+// ResizeClusterWithContext mocks base method
+func (m *MockRedshiftAPI) ResizeClusterWithContext(arg0 aws.Context, arg1 *redshift.ResizeClusterInput, arg2 ...request.Option) (*redshift.ResizeClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResizeClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ResizeClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResizeClusterWithContext indicates an expected call of ResizeClusterWithContext
+func (mr *MockRedshiftAPIMockRecorder) ResizeClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResizeClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ResizeClusterWithContext), varargs...)
+}
+
 // RestoreFromClusterSnapshot mocks base method
 func (m *MockRedshiftAPI) RestoreFromClusterSnapshot(arg0 *redshift.RestoreFromClusterSnapshotInput) (*redshift.RestoreFromClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()

@@ -385,6 +385,89 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeConfigurations
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationsWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeConfigurationsWithContext), varargs...)
 }
 
+// DescribeContinuousExports mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExports(arg0 *applicationdiscoveryservice.DescribeContinuousExportsInput) (*applicationdiscoveryservice.DescribeContinuousExportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContinuousExports", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.DescribeContinuousExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContinuousExports indicates an expected call of DescribeContinuousExports
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousExports", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeContinuousExports), arg0)
+}
+
+// DescribeContinuousExportsPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsPages(arg0 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg1 func(*applicationdiscoveryservice.DescribeContinuousExportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContinuousExportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeContinuousExportsPages indicates an expected call of DescribeContinuousExportsPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousExportsPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeContinuousExportsPages), arg0, arg1)
+}
+
+// DescribeContinuousExportsPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsPagesWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg2 func(*applicationdiscoveryservice.DescribeContinuousExportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeContinuousExportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeContinuousExportsPagesWithContext indicates an expected call of DescribeContinuousExportsPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousExportsPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeContinuousExportsPagesWithContext), varargs...)
+}
+
+// DescribeContinuousExportsRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsRequest(arg0 *applicationdiscoveryservice.DescribeContinuousExportsInput) (*request.Request, *applicationdiscoveryservice.DescribeContinuousExportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContinuousExportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.DescribeContinuousExportsOutput)
+	return ret0, ret1
+}
+
+// DescribeContinuousExportsRequest indicates an expected call of DescribeContinuousExportsRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousExportsRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeContinuousExportsRequest), arg0)
+}
+
+// DescribeContinuousExportsWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeContinuousExportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeContinuousExportsWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.DescribeContinuousExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContinuousExportsWithContext indicates an expected call of DescribeContinuousExportsWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousExportsWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeContinuousExportsWithContext), varargs...)
+}
+
 // DescribeExportConfigurations mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) DescribeExportConfigurations(arg0 *applicationdiscoveryservice.DescribeExportConfigurationsInput) (*applicationdiscoveryservice.DescribeExportConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -785,6 +868,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListServerNeighborsWit
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServerNeighborsWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).ListServerNeighborsWithContext), varargs...)
 }
 
+// StartContinuousExport mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartContinuousExport(arg0 *applicationdiscoveryservice.StartContinuousExportInput) (*applicationdiscoveryservice.StartContinuousExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartContinuousExport", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StartContinuousExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartContinuousExport indicates an expected call of StartContinuousExport
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartContinuousExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContinuousExport", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartContinuousExport), arg0)
+}
+
+// StartContinuousExportRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartContinuousExportRequest(arg0 *applicationdiscoveryservice.StartContinuousExportInput) (*request.Request, *applicationdiscoveryservice.StartContinuousExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartContinuousExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.StartContinuousExportOutput)
+	return ret0, ret1
+}
+
+// StartContinuousExportRequest indicates an expected call of StartContinuousExportRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartContinuousExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContinuousExportRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartContinuousExportRequest), arg0)
+}
+
+// StartContinuousExportWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartContinuousExportWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StartContinuousExportInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartContinuousExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartContinuousExportWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StartContinuousExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartContinuousExportWithContext indicates an expected call of StartContinuousExportWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartContinuousExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContinuousExportWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartContinuousExportWithContext), varargs...)
+}
+
 // StartDataCollectionByAgentIds mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) StartDataCollectionByAgentIds(arg0 *applicationdiscoveryservice.StartDataCollectionByAgentIdsInput) (*applicationdiscoveryservice.StartDataCollectionByAgentIdsOutput, error) {
 	m.ctrl.T.Helper()
@@ -883,6 +1016,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartExportTaskWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportTaskWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartExportTaskWithContext), varargs...)
+}
+
+// StopContinuousExport mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StopContinuousExport(arg0 *applicationdiscoveryservice.StopContinuousExportInput) (*applicationdiscoveryservice.StopContinuousExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopContinuousExport", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StopContinuousExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopContinuousExport indicates an expected call of StopContinuousExport
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StopContinuousExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContinuousExport", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StopContinuousExport), arg0)
+}
+
+// StopContinuousExportRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StopContinuousExportRequest(arg0 *applicationdiscoveryservice.StopContinuousExportInput) (*request.Request, *applicationdiscoveryservice.StopContinuousExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopContinuousExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.StopContinuousExportOutput)
+	return ret0, ret1
+}
+
+// StopContinuousExportRequest indicates an expected call of StopContinuousExportRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StopContinuousExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContinuousExportRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StopContinuousExportRequest), arg0)
+}
+
+// StopContinuousExportWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StopContinuousExportWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StopContinuousExportInput, arg2 ...request.Option) (*applicationdiscoveryservice.StopContinuousExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopContinuousExportWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StopContinuousExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopContinuousExportWithContext indicates an expected call of StopContinuousExportWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StopContinuousExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContinuousExportWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StopContinuousExportWithContext), varargs...)
 }
 
 // StopDataCollectionByAgentIds mocks base method
