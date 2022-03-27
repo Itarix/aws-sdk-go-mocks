@@ -8198,6 +8198,39 @@ func (mr *MockEC2APIMockRecorder) DescribeRouteTables(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRouteTables", reflect.TypeOf((*MockEC2API)(nil).DescribeRouteTables), arg0)
 }
 
+// DescribeRouteTablesPages mocks base method
+func (m *MockEC2API) DescribeRouteTablesPages(arg0 *ec2.DescribeRouteTablesInput, arg1 func(*ec2.DescribeRouteTablesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRouteTablesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRouteTablesPages indicates an expected call of DescribeRouteTablesPages
+func (mr *MockEC2APIMockRecorder) DescribeRouteTablesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRouteTablesPages", reflect.TypeOf((*MockEC2API)(nil).DescribeRouteTablesPages), arg0, arg1)
+}
+
+// DescribeRouteTablesPagesWithContext mocks base method
+func (m *MockEC2API) DescribeRouteTablesPagesWithContext(arg0 aws.Context, arg1 *ec2.DescribeRouteTablesInput, arg2 func(*ec2.DescribeRouteTablesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRouteTablesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRouteTablesPagesWithContext indicates an expected call of DescribeRouteTablesPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeRouteTablesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRouteTablesPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeRouteTablesPagesWithContext), varargs...)
+}
+
 // DescribeRouteTablesRequest mocks base method
 func (m *MockEC2API) DescribeRouteTablesRequest(arg0 *ec2.DescribeRouteTablesInput) (*request.Request, *ec2.DescribeRouteTablesOutput) {
 	m.ctrl.T.Helper()
@@ -8396,6 +8429,39 @@ func (m *MockEC2API) DescribeSecurityGroups(arg0 *ec2.DescribeSecurityGroupsInpu
 func (mr *MockEC2APIMockRecorder) DescribeSecurityGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityGroups", reflect.TypeOf((*MockEC2API)(nil).DescribeSecurityGroups), arg0)
+}
+
+// DescribeSecurityGroupsPages mocks base method
+func (m *MockEC2API) DescribeSecurityGroupsPages(arg0 *ec2.DescribeSecurityGroupsInput, arg1 func(*ec2.DescribeSecurityGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSecurityGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSecurityGroupsPages indicates an expected call of DescribeSecurityGroupsPages
+func (mr *MockEC2APIMockRecorder) DescribeSecurityGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityGroupsPages", reflect.TypeOf((*MockEC2API)(nil).DescribeSecurityGroupsPages), arg0, arg1)
+}
+
+// DescribeSecurityGroupsPagesWithContext mocks base method
+func (m *MockEC2API) DescribeSecurityGroupsPagesWithContext(arg0 aws.Context, arg1 *ec2.DescribeSecurityGroupsInput, arg2 func(*ec2.DescribeSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSecurityGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSecurityGroupsPagesWithContext indicates an expected call of DescribeSecurityGroupsPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeSecurityGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityGroupsPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeSecurityGroupsPagesWithContext), varargs...)
 }
 
 // DescribeSecurityGroupsRequest mocks base method
