@@ -185,6 +185,56 @@ func (mr *MockPinpointEmailAPIMockRecorder) CreateDedicatedIpPoolWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDedicatedIpPoolWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).CreateDedicatedIpPoolWithContext), varargs...)
 }
 
+// CreateDeliverabilityTestReport mocks base method
+func (m *MockPinpointEmailAPI) CreateDeliverabilityTestReport(arg0 *pinpointemail.CreateDeliverabilityTestReportInput) (*pinpointemail.CreateDeliverabilityTestReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDeliverabilityTestReport", arg0)
+	ret0, _ := ret[0].(*pinpointemail.CreateDeliverabilityTestReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDeliverabilityTestReport indicates an expected call of CreateDeliverabilityTestReport
+func (mr *MockPinpointEmailAPIMockRecorder) CreateDeliverabilityTestReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeliverabilityTestReport", reflect.TypeOf((*MockPinpointEmailAPI)(nil).CreateDeliverabilityTestReport), arg0)
+}
+
+// CreateDeliverabilityTestReportRequest mocks base method
+func (m *MockPinpointEmailAPI) CreateDeliverabilityTestReportRequest(arg0 *pinpointemail.CreateDeliverabilityTestReportInput) (*request.Request, *pinpointemail.CreateDeliverabilityTestReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDeliverabilityTestReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.CreateDeliverabilityTestReportOutput)
+	return ret0, ret1
+}
+
+// CreateDeliverabilityTestReportRequest indicates an expected call of CreateDeliverabilityTestReportRequest
+func (mr *MockPinpointEmailAPIMockRecorder) CreateDeliverabilityTestReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeliverabilityTestReportRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).CreateDeliverabilityTestReportRequest), arg0)
+}
+
+// CreateDeliverabilityTestReportWithContext mocks base method
+func (m *MockPinpointEmailAPI) CreateDeliverabilityTestReportWithContext(arg0 aws.Context, arg1 *pinpointemail.CreateDeliverabilityTestReportInput, arg2 ...request.Option) (*pinpointemail.CreateDeliverabilityTestReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDeliverabilityTestReportWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.CreateDeliverabilityTestReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDeliverabilityTestReportWithContext indicates an expected call of CreateDeliverabilityTestReportWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) CreateDeliverabilityTestReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeliverabilityTestReportWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).CreateDeliverabilityTestReportWithContext), varargs...)
+}
+
 // CreateEmailIdentity mocks base method
 func (m *MockPinpointEmailAPI) CreateEmailIdentity(arg0 *pinpointemail.CreateEmailIdentityInput) (*pinpointemail.CreateEmailIdentityOutput, error) {
 	m.ctrl.T.Helper()
@@ -485,6 +535,56 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetAccountWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetAccountWithContext), varargs...)
 }
 
+// GetBlacklistReports mocks base method
+func (m *MockPinpointEmailAPI) GetBlacklistReports(arg0 *pinpointemail.GetBlacklistReportsInput) (*pinpointemail.GetBlacklistReportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBlacklistReports", arg0)
+	ret0, _ := ret[0].(*pinpointemail.GetBlacklistReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBlacklistReports indicates an expected call of GetBlacklistReports
+func (mr *MockPinpointEmailAPIMockRecorder) GetBlacklistReports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlacklistReports", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetBlacklistReports), arg0)
+}
+
+// GetBlacklistReportsRequest mocks base method
+func (m *MockPinpointEmailAPI) GetBlacklistReportsRequest(arg0 *pinpointemail.GetBlacklistReportsInput) (*request.Request, *pinpointemail.GetBlacklistReportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBlacklistReportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.GetBlacklistReportsOutput)
+	return ret0, ret1
+}
+
+// GetBlacklistReportsRequest indicates an expected call of GetBlacklistReportsRequest
+func (mr *MockPinpointEmailAPIMockRecorder) GetBlacklistReportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlacklistReportsRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetBlacklistReportsRequest), arg0)
+}
+
+// GetBlacklistReportsWithContext mocks base method
+func (m *MockPinpointEmailAPI) GetBlacklistReportsWithContext(arg0 aws.Context, arg1 *pinpointemail.GetBlacklistReportsInput, arg2 ...request.Option) (*pinpointemail.GetBlacklistReportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBlacklistReportsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.GetBlacklistReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBlacklistReportsWithContext indicates an expected call of GetBlacklistReportsWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) GetBlacklistReportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlacklistReportsWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetBlacklistReportsWithContext), varargs...)
+}
+
 // GetConfigurationSet mocks base method
 func (m *MockPinpointEmailAPI) GetConfigurationSet(arg0 *pinpointemail.GetConfigurationSetInput) (*pinpointemail.GetConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -718,6 +818,156 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDedicatedIpsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDedicatedIpsWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDedicatedIpsWithContext), varargs...)
 }
 
+// GetDeliverabilityDashboardOptions mocks base method
+func (m *MockPinpointEmailAPI) GetDeliverabilityDashboardOptions(arg0 *pinpointemail.GetDeliverabilityDashboardOptionsInput) (*pinpointemail.GetDeliverabilityDashboardOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeliverabilityDashboardOptions", arg0)
+	ret0, _ := ret[0].(*pinpointemail.GetDeliverabilityDashboardOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeliverabilityDashboardOptions indicates an expected call of GetDeliverabilityDashboardOptions
+func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityDashboardOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeliverabilityDashboardOptions", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDeliverabilityDashboardOptions), arg0)
+}
+
+// GetDeliverabilityDashboardOptionsRequest mocks base method
+func (m *MockPinpointEmailAPI) GetDeliverabilityDashboardOptionsRequest(arg0 *pinpointemail.GetDeliverabilityDashboardOptionsInput) (*request.Request, *pinpointemail.GetDeliverabilityDashboardOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeliverabilityDashboardOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.GetDeliverabilityDashboardOptionsOutput)
+	return ret0, ret1
+}
+
+// GetDeliverabilityDashboardOptionsRequest indicates an expected call of GetDeliverabilityDashboardOptionsRequest
+func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityDashboardOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeliverabilityDashboardOptionsRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDeliverabilityDashboardOptionsRequest), arg0)
+}
+
+// GetDeliverabilityDashboardOptionsWithContext mocks base method
+func (m *MockPinpointEmailAPI) GetDeliverabilityDashboardOptionsWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDeliverabilityDashboardOptionsInput, arg2 ...request.Option) (*pinpointemail.GetDeliverabilityDashboardOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDeliverabilityDashboardOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.GetDeliverabilityDashboardOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeliverabilityDashboardOptionsWithContext indicates an expected call of GetDeliverabilityDashboardOptionsWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityDashboardOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeliverabilityDashboardOptionsWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDeliverabilityDashboardOptionsWithContext), varargs...)
+}
+
+// GetDeliverabilityTestReport mocks base method
+func (m *MockPinpointEmailAPI) GetDeliverabilityTestReport(arg0 *pinpointemail.GetDeliverabilityTestReportInput) (*pinpointemail.GetDeliverabilityTestReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeliverabilityTestReport", arg0)
+	ret0, _ := ret[0].(*pinpointemail.GetDeliverabilityTestReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeliverabilityTestReport indicates an expected call of GetDeliverabilityTestReport
+func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityTestReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeliverabilityTestReport", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDeliverabilityTestReport), arg0)
+}
+
+// GetDeliverabilityTestReportRequest mocks base method
+func (m *MockPinpointEmailAPI) GetDeliverabilityTestReportRequest(arg0 *pinpointemail.GetDeliverabilityTestReportInput) (*request.Request, *pinpointemail.GetDeliverabilityTestReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeliverabilityTestReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.GetDeliverabilityTestReportOutput)
+	return ret0, ret1
+}
+
+// GetDeliverabilityTestReportRequest indicates an expected call of GetDeliverabilityTestReportRequest
+func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityTestReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeliverabilityTestReportRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDeliverabilityTestReportRequest), arg0)
+}
+
+// GetDeliverabilityTestReportWithContext mocks base method
+func (m *MockPinpointEmailAPI) GetDeliverabilityTestReportWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDeliverabilityTestReportInput, arg2 ...request.Option) (*pinpointemail.GetDeliverabilityTestReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDeliverabilityTestReportWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.GetDeliverabilityTestReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeliverabilityTestReportWithContext indicates an expected call of GetDeliverabilityTestReportWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityTestReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeliverabilityTestReportWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDeliverabilityTestReportWithContext), varargs...)
+}
+
+// GetDomainStatisticsReport mocks base method
+func (m *MockPinpointEmailAPI) GetDomainStatisticsReport(arg0 *pinpointemail.GetDomainStatisticsReportInput) (*pinpointemail.GetDomainStatisticsReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDomainStatisticsReport", arg0)
+	ret0, _ := ret[0].(*pinpointemail.GetDomainStatisticsReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDomainStatisticsReport indicates an expected call of GetDomainStatisticsReport
+func (mr *MockPinpointEmailAPIMockRecorder) GetDomainStatisticsReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainStatisticsReport", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDomainStatisticsReport), arg0)
+}
+
+// GetDomainStatisticsReportRequest mocks base method
+func (m *MockPinpointEmailAPI) GetDomainStatisticsReportRequest(arg0 *pinpointemail.GetDomainStatisticsReportInput) (*request.Request, *pinpointemail.GetDomainStatisticsReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDomainStatisticsReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.GetDomainStatisticsReportOutput)
+	return ret0, ret1
+}
+
+// GetDomainStatisticsReportRequest indicates an expected call of GetDomainStatisticsReportRequest
+func (mr *MockPinpointEmailAPIMockRecorder) GetDomainStatisticsReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainStatisticsReportRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDomainStatisticsReportRequest), arg0)
+}
+
+// GetDomainStatisticsReportWithContext mocks base method
+func (m *MockPinpointEmailAPI) GetDomainStatisticsReportWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDomainStatisticsReportInput, arg2 ...request.Option) (*pinpointemail.GetDomainStatisticsReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDomainStatisticsReportWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.GetDomainStatisticsReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDomainStatisticsReportWithContext indicates an expected call of GetDomainStatisticsReportWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) GetDomainStatisticsReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainStatisticsReportWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).GetDomainStatisticsReportWithContext), varargs...)
+}
+
 // GetEmailIdentity mocks base method
 func (m *MockPinpointEmailAPI) GetEmailIdentity(arg0 *pinpointemail.GetEmailIdentityInput) (*pinpointemail.GetEmailIdentityOutput, error) {
 	m.ctrl.T.Helper()
@@ -932,6 +1182,89 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListDedicatedIpPoolsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDedicatedIpPoolsWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).ListDedicatedIpPoolsWithContext), varargs...)
+}
+
+// ListDeliverabilityTestReports mocks base method
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReports(arg0 *pinpointemail.ListDeliverabilityTestReportsInput) (*pinpointemail.ListDeliverabilityTestReportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDeliverabilityTestReports", arg0)
+	ret0, _ := ret[0].(*pinpointemail.ListDeliverabilityTestReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDeliverabilityTestReports indicates an expected call of ListDeliverabilityTestReports
+func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeliverabilityTestReports", reflect.TypeOf((*MockPinpointEmailAPI)(nil).ListDeliverabilityTestReports), arg0)
+}
+
+// ListDeliverabilityTestReportsPages mocks base method
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsPages(arg0 *pinpointemail.ListDeliverabilityTestReportsInput, arg1 func(*pinpointemail.ListDeliverabilityTestReportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDeliverabilityTestReportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDeliverabilityTestReportsPages indicates an expected call of ListDeliverabilityTestReportsPages
+func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeliverabilityTestReportsPages", reflect.TypeOf((*MockPinpointEmailAPI)(nil).ListDeliverabilityTestReportsPages), arg0, arg1)
+}
+
+// ListDeliverabilityTestReportsPagesWithContext mocks base method
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsPagesWithContext(arg0 aws.Context, arg1 *pinpointemail.ListDeliverabilityTestReportsInput, arg2 func(*pinpointemail.ListDeliverabilityTestReportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDeliverabilityTestReportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDeliverabilityTestReportsPagesWithContext indicates an expected call of ListDeliverabilityTestReportsPagesWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeliverabilityTestReportsPagesWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).ListDeliverabilityTestReportsPagesWithContext), varargs...)
+}
+
+// ListDeliverabilityTestReportsRequest mocks base method
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsRequest(arg0 *pinpointemail.ListDeliverabilityTestReportsInput) (*request.Request, *pinpointemail.ListDeliverabilityTestReportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDeliverabilityTestReportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.ListDeliverabilityTestReportsOutput)
+	return ret0, ret1
+}
+
+// ListDeliverabilityTestReportsRequest indicates an expected call of ListDeliverabilityTestReportsRequest
+func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeliverabilityTestReportsRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).ListDeliverabilityTestReportsRequest), arg0)
+}
+
+// ListDeliverabilityTestReportsWithContext mocks base method
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsWithContext(arg0 aws.Context, arg1 *pinpointemail.ListDeliverabilityTestReportsInput, arg2 ...request.Option) (*pinpointemail.ListDeliverabilityTestReportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDeliverabilityTestReportsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.ListDeliverabilityTestReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDeliverabilityTestReportsWithContext indicates an expected call of ListDeliverabilityTestReportsWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeliverabilityTestReportsWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).ListDeliverabilityTestReportsWithContext), varargs...)
 }
 
 // ListEmailIdentities mocks base method
@@ -1415,6 +1748,56 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutDedicatedIpWarmupAttributesWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDedicatedIpWarmupAttributesWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).PutDedicatedIpWarmupAttributesWithContext), varargs...)
+}
+
+// PutDeliverabilityDashboardOption mocks base method
+func (m *MockPinpointEmailAPI) PutDeliverabilityDashboardOption(arg0 *pinpointemail.PutDeliverabilityDashboardOptionInput) (*pinpointemail.PutDeliverabilityDashboardOptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDeliverabilityDashboardOption", arg0)
+	ret0, _ := ret[0].(*pinpointemail.PutDeliverabilityDashboardOptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDeliverabilityDashboardOption indicates an expected call of PutDeliverabilityDashboardOption
+func (mr *MockPinpointEmailAPIMockRecorder) PutDeliverabilityDashboardOption(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDeliverabilityDashboardOption", reflect.TypeOf((*MockPinpointEmailAPI)(nil).PutDeliverabilityDashboardOption), arg0)
+}
+
+// PutDeliverabilityDashboardOptionRequest mocks base method
+func (m *MockPinpointEmailAPI) PutDeliverabilityDashboardOptionRequest(arg0 *pinpointemail.PutDeliverabilityDashboardOptionInput) (*request.Request, *pinpointemail.PutDeliverabilityDashboardOptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDeliverabilityDashboardOptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointemail.PutDeliverabilityDashboardOptionOutput)
+	return ret0, ret1
+}
+
+// PutDeliverabilityDashboardOptionRequest indicates an expected call of PutDeliverabilityDashboardOptionRequest
+func (mr *MockPinpointEmailAPIMockRecorder) PutDeliverabilityDashboardOptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDeliverabilityDashboardOptionRequest", reflect.TypeOf((*MockPinpointEmailAPI)(nil).PutDeliverabilityDashboardOptionRequest), arg0)
+}
+
+// PutDeliverabilityDashboardOptionWithContext mocks base method
+func (m *MockPinpointEmailAPI) PutDeliverabilityDashboardOptionWithContext(arg0 aws.Context, arg1 *pinpointemail.PutDeliverabilityDashboardOptionInput, arg2 ...request.Option) (*pinpointemail.PutDeliverabilityDashboardOptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutDeliverabilityDashboardOptionWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointemail.PutDeliverabilityDashboardOptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDeliverabilityDashboardOptionWithContext indicates an expected call of PutDeliverabilityDashboardOptionWithContext
+func (mr *MockPinpointEmailAPIMockRecorder) PutDeliverabilityDashboardOptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDeliverabilityDashboardOptionWithContext", reflect.TypeOf((*MockPinpointEmailAPI)(nil).PutDeliverabilityDashboardOptionWithContext), varargs...)
 }
 
 // PutEmailIdentityDkimAttributes mocks base method
