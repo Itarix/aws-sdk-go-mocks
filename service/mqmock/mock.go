@@ -135,6 +135,56 @@ func (mr *MockMQAPIMockRecorder) CreateConfigurationWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationWithContext", reflect.TypeOf((*MockMQAPI)(nil).CreateConfigurationWithContext), varargs...)
 }
 
+// CreateTags mocks base method
+func (m *MockMQAPI) CreateTags(arg0 *mq.CreateTagsInput) (*mq.CreateTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTags", arg0)
+	ret0, _ := ret[0].(*mq.CreateTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTags indicates an expected call of CreateTags
+func (mr *MockMQAPIMockRecorder) CreateTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTags", reflect.TypeOf((*MockMQAPI)(nil).CreateTags), arg0)
+}
+
+// CreateTagsRequest mocks base method
+func (m *MockMQAPI) CreateTagsRequest(arg0 *mq.CreateTagsInput) (*request.Request, *mq.CreateTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mq.CreateTagsOutput)
+	return ret0, ret1
+}
+
+// CreateTagsRequest indicates an expected call of CreateTagsRequest
+func (mr *MockMQAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsRequest", reflect.TypeOf((*MockMQAPI)(nil).CreateTagsRequest), arg0)
+}
+
+// CreateTagsWithContext mocks base method
+func (m *MockMQAPI) CreateTagsWithContext(arg0 aws.Context, arg1 *mq.CreateTagsInput, arg2 ...request.Option) (*mq.CreateTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*mq.CreateTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTagsWithContext indicates an expected call of CreateTagsWithContext
+func (mr *MockMQAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockMQAPI)(nil).CreateTagsWithContext), varargs...)
+}
+
 // CreateUser mocks base method
 func (m *MockMQAPI) CreateUser(arg0 *mq.CreateUserRequest) (*mq.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockMQAPIMockRecorder) DeleteBrokerWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBrokerWithContext", reflect.TypeOf((*MockMQAPI)(nil).DeleteBrokerWithContext), varargs...)
+}
+
+// DeleteTags mocks base method
+func (m *MockMQAPI) DeleteTags(arg0 *mq.DeleteTagsInput) (*mq.DeleteTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTags", arg0)
+	ret0, _ := ret[0].(*mq.DeleteTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTags indicates an expected call of DeleteTags
+func (mr *MockMQAPIMockRecorder) DeleteTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTags", reflect.TypeOf((*MockMQAPI)(nil).DeleteTags), arg0)
+}
+
+// DeleteTagsRequest mocks base method
+func (m *MockMQAPI) DeleteTagsRequest(arg0 *mq.DeleteTagsInput) (*request.Request, *mq.DeleteTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mq.DeleteTagsOutput)
+	return ret0, ret1
+}
+
+// DeleteTagsRequest indicates an expected call of DeleteTagsRequest
+func (mr *MockMQAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsRequest", reflect.TypeOf((*MockMQAPI)(nil).DeleteTagsRequest), arg0)
+}
+
+// DeleteTagsWithContext mocks base method
+func (m *MockMQAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *mq.DeleteTagsInput, arg2 ...request.Option) (*mq.DeleteTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*mq.DeleteTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTagsWithContext indicates an expected call of DeleteTagsWithContext
+func (mr *MockMQAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockMQAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
 // DeleteUser mocks base method
@@ -633,6 +733,56 @@ func (mr *MockMQAPIMockRecorder) ListConfigurationsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationsWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurationsWithContext), varargs...)
+}
+
+// ListTags mocks base method
+func (m *MockMQAPI) ListTags(arg0 *mq.ListTagsInput) (*mq.ListTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTags", arg0)
+	ret0, _ := ret[0].(*mq.ListTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTags indicates an expected call of ListTags
+func (mr *MockMQAPIMockRecorder) ListTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTags", reflect.TypeOf((*MockMQAPI)(nil).ListTags), arg0)
+}
+
+// ListTagsRequest mocks base method
+func (m *MockMQAPI) ListTagsRequest(arg0 *mq.ListTagsInput) (*request.Request, *mq.ListTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mq.ListTagsOutput)
+	return ret0, ret1
+}
+
+// ListTagsRequest indicates an expected call of ListTagsRequest
+func (mr *MockMQAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsRequest", reflect.TypeOf((*MockMQAPI)(nil).ListTagsRequest), arg0)
+}
+
+// ListTagsWithContext mocks base method
+func (m *MockMQAPI) ListTagsWithContext(arg0 aws.Context, arg1 *mq.ListTagsInput, arg2 ...request.Option) (*mq.ListTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*mq.ListTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsWithContext indicates an expected call of ListTagsWithContext
+func (mr *MockMQAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListTagsWithContext), varargs...)
 }
 
 // ListUsers mocks base method
