@@ -185,6 +185,56 @@ func (mr *MockCloudHSMV2APIMockRecorder) CreateHsmWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHsmWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).CreateHsmWithContext), varargs...)
 }
 
+// DeleteBackup mocks base method
+func (m *MockCloudHSMV2API) DeleteBackup(arg0 *cloudhsmv2.DeleteBackupInput) (*cloudhsmv2.DeleteBackupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackup", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.DeleteBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackup indicates an expected call of DeleteBackup
+func (mr *MockCloudHSMV2APIMockRecorder) DeleteBackup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackup", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteBackup), arg0)
+}
+
+// DeleteBackupRequest mocks base method
+func (m *MockCloudHSMV2API) DeleteBackupRequest(arg0 *cloudhsmv2.DeleteBackupInput) (*request.Request, *cloudhsmv2.DeleteBackupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.DeleteBackupOutput)
+	return ret0, ret1
+}
+
+// DeleteBackupRequest indicates an expected call of DeleteBackupRequest
+func (mr *MockCloudHSMV2APIMockRecorder) DeleteBackupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteBackupRequest), arg0)
+}
+
+// DeleteBackupWithContext mocks base method
+func (m *MockCloudHSMV2API) DeleteBackupWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DeleteBackupInput, arg2 ...request.Option) (*cloudhsmv2.DeleteBackupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBackupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.DeleteBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackupWithContext indicates an expected call of DeleteBackupWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) DeleteBackupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteBackupWithContext), varargs...)
+}
+
 // DeleteCluster mocks base method
 func (m *MockCloudHSMV2API) DeleteCluster(arg0 *cloudhsmv2.DeleteClusterInput) (*cloudhsmv2.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -582,6 +632,56 @@ func (mr *MockCloudHSMV2APIMockRecorder) ListTagsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).ListTagsWithContext), varargs...)
+}
+
+// RestoreBackup mocks base method
+func (m *MockCloudHSMV2API) RestoreBackup(arg0 *cloudhsmv2.RestoreBackupInput) (*cloudhsmv2.RestoreBackupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreBackup", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.RestoreBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreBackup indicates an expected call of RestoreBackup
+func (mr *MockCloudHSMV2APIMockRecorder) RestoreBackup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreBackup", reflect.TypeOf((*MockCloudHSMV2API)(nil).RestoreBackup), arg0)
+}
+
+// RestoreBackupRequest mocks base method
+func (m *MockCloudHSMV2API) RestoreBackupRequest(arg0 *cloudhsmv2.RestoreBackupInput) (*request.Request, *cloudhsmv2.RestoreBackupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreBackupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.RestoreBackupOutput)
+	return ret0, ret1
+}
+
+// RestoreBackupRequest indicates an expected call of RestoreBackupRequest
+func (mr *MockCloudHSMV2APIMockRecorder) RestoreBackupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreBackupRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).RestoreBackupRequest), arg0)
+}
+
+// RestoreBackupWithContext mocks base method
+func (m *MockCloudHSMV2API) RestoreBackupWithContext(arg0 aws.Context, arg1 *cloudhsmv2.RestoreBackupInput, arg2 ...request.Option) (*cloudhsmv2.RestoreBackupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreBackupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.RestoreBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreBackupWithContext indicates an expected call of RestoreBackupWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) RestoreBackupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreBackupWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).RestoreBackupWithContext), varargs...)
 }
 
 // TagResource mocks base method
