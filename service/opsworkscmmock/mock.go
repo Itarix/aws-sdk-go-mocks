@@ -585,6 +585,56 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DisassociateNodeWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateNodeWithContext", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DisassociateNodeWithContext), varargs...)
 }
 
+// ExportServerEngineAttribute mocks base method
+func (m *MockOpsWorksCMAPI) ExportServerEngineAttribute(arg0 *opsworkscm.ExportServerEngineAttributeInput) (*opsworkscm.ExportServerEngineAttributeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportServerEngineAttribute", arg0)
+	ret0, _ := ret[0].(*opsworkscm.ExportServerEngineAttributeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportServerEngineAttribute indicates an expected call of ExportServerEngineAttribute
+func (mr *MockOpsWorksCMAPIMockRecorder) ExportServerEngineAttribute(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportServerEngineAttribute", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).ExportServerEngineAttribute), arg0)
+}
+
+// ExportServerEngineAttributeRequest mocks base method
+func (m *MockOpsWorksCMAPI) ExportServerEngineAttributeRequest(arg0 *opsworkscm.ExportServerEngineAttributeInput) (*request.Request, *opsworkscm.ExportServerEngineAttributeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportServerEngineAttributeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opsworkscm.ExportServerEngineAttributeOutput)
+	return ret0, ret1
+}
+
+// ExportServerEngineAttributeRequest indicates an expected call of ExportServerEngineAttributeRequest
+func (mr *MockOpsWorksCMAPIMockRecorder) ExportServerEngineAttributeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportServerEngineAttributeRequest", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).ExportServerEngineAttributeRequest), arg0)
+}
+
+// ExportServerEngineAttributeWithContext mocks base method
+func (m *MockOpsWorksCMAPI) ExportServerEngineAttributeWithContext(arg0 aws.Context, arg1 *opsworkscm.ExportServerEngineAttributeInput, arg2 ...request.Option) (*opsworkscm.ExportServerEngineAttributeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportServerEngineAttributeWithContext", varargs...)
+	ret0, _ := ret[0].(*opsworkscm.ExportServerEngineAttributeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportServerEngineAttributeWithContext indicates an expected call of ExportServerEngineAttributeWithContext
+func (mr *MockOpsWorksCMAPIMockRecorder) ExportServerEngineAttributeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportServerEngineAttributeWithContext", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).ExportServerEngineAttributeWithContext), varargs...)
+}
+
 // RestoreServer mocks base method
 func (m *MockOpsWorksCMAPI) RestoreServer(arg0 *opsworkscm.RestoreServerInput) (*opsworkscm.RestoreServerOutput, error) {
 	m.ctrl.T.Helper()

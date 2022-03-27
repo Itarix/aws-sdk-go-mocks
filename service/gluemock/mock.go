@@ -2117,6 +2117,56 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlersWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCrawlersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetCrawlersWithContext), varargs...)
 }
 
+// GetDataCatalogEncryptionSettings mocks base method
+func (m *MockGlueAPI) GetDataCatalogEncryptionSettings(arg0 *glue.GetDataCatalogEncryptionSettingsInput) (*glue.GetDataCatalogEncryptionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataCatalogEncryptionSettings", arg0)
+	ret0, _ := ret[0].(*glue.GetDataCatalogEncryptionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataCatalogEncryptionSettings indicates an expected call of GetDataCatalogEncryptionSettings
+func (mr *MockGlueAPIMockRecorder) GetDataCatalogEncryptionSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCatalogEncryptionSettings", reflect.TypeOf((*MockGlueAPI)(nil).GetDataCatalogEncryptionSettings), arg0)
+}
+
+// GetDataCatalogEncryptionSettingsRequest mocks base method
+func (m *MockGlueAPI) GetDataCatalogEncryptionSettingsRequest(arg0 *glue.GetDataCatalogEncryptionSettingsInput) (*request.Request, *glue.GetDataCatalogEncryptionSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataCatalogEncryptionSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetDataCatalogEncryptionSettingsOutput)
+	return ret0, ret1
+}
+
+// GetDataCatalogEncryptionSettingsRequest indicates an expected call of GetDataCatalogEncryptionSettingsRequest
+func (mr *MockGlueAPIMockRecorder) GetDataCatalogEncryptionSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCatalogEncryptionSettingsRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetDataCatalogEncryptionSettingsRequest), arg0)
+}
+
+// GetDataCatalogEncryptionSettingsWithContext mocks base method
+func (m *MockGlueAPI) GetDataCatalogEncryptionSettingsWithContext(arg0 aws.Context, arg1 *glue.GetDataCatalogEncryptionSettingsInput, arg2 ...request.Option) (*glue.GetDataCatalogEncryptionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataCatalogEncryptionSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetDataCatalogEncryptionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataCatalogEncryptionSettingsWithContext indicates an expected call of GetDataCatalogEncryptionSettingsWithContext
+func (mr *MockGlueAPIMockRecorder) GetDataCatalogEncryptionSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCatalogEncryptionSettingsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetDataCatalogEncryptionSettingsWithContext), varargs...)
+}
+
 // GetDatabase mocks base method
 func (m *MockGlueAPI) GetDatabase(arg0 *glue.GetDatabaseInput) (*glue.GetDatabaseOutput, error) {
 	m.ctrl.T.Helper()
