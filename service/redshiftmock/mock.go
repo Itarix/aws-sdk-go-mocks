@@ -185,6 +185,56 @@ func (mr *MockRedshiftAPIMockRecorder) AuthorizeSnapshotAccessWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeSnapshotAccessWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).AuthorizeSnapshotAccessWithContext), varargs...)
 }
 
+// CancelResize mocks base method
+func (m *MockRedshiftAPI) CancelResize(arg0 *redshift.CancelResizeInput) (*redshift.CancelResizeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelResize", arg0)
+	ret0, _ := ret[0].(*redshift.CancelResizeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelResize indicates an expected call of CancelResize
+func (mr *MockRedshiftAPIMockRecorder) CancelResize(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelResize", reflect.TypeOf((*MockRedshiftAPI)(nil).CancelResize), arg0)
+}
+
+// CancelResizeRequest mocks base method
+func (m *MockRedshiftAPI) CancelResizeRequest(arg0 *redshift.CancelResizeInput) (*request.Request, *redshift.CancelResizeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelResizeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.CancelResizeOutput)
+	return ret0, ret1
+}
+
+// CancelResizeRequest indicates an expected call of CancelResizeRequest
+func (mr *MockRedshiftAPIMockRecorder) CancelResizeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelResizeRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).CancelResizeRequest), arg0)
+}
+
+// CancelResizeWithContext mocks base method
+func (m *MockRedshiftAPI) CancelResizeWithContext(arg0 aws.Context, arg1 *redshift.CancelResizeInput, arg2 ...request.Option) (*redshift.CancelResizeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelResizeWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.CancelResizeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelResizeWithContext indicates an expected call of CancelResizeWithContext
+func (mr *MockRedshiftAPIMockRecorder) CancelResizeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelResizeWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CancelResizeWithContext), varargs...)
+}
+
 // CopyClusterSnapshot mocks base method
 func (m *MockRedshiftAPI) CopyClusterSnapshot(arg0 *redshift.CopyClusterSnapshotInput) (*redshift.CopyClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +1283,56 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteTagsWithContext), varargs...)
+}
+
+// DescribeAccountAttributes mocks base method
+func (m *MockRedshiftAPI) DescribeAccountAttributes(arg0 *redshift.DescribeAccountAttributesInput) (*redshift.DescribeAccountAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountAttributes", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeAccountAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountAttributes indicates an expected call of DescribeAccountAttributes
+func (mr *MockRedshiftAPIMockRecorder) DescribeAccountAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAttributes", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeAccountAttributes), arg0)
+}
+
+// DescribeAccountAttributesRequest mocks base method
+func (m *MockRedshiftAPI) DescribeAccountAttributesRequest(arg0 *redshift.DescribeAccountAttributesInput) (*request.Request, *redshift.DescribeAccountAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeAccountAttributesOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountAttributesRequest indicates an expected call of DescribeAccountAttributesRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeAccountAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAttributesRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeAccountAttributesRequest), arg0)
+}
+
+// DescribeAccountAttributesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *redshift.DescribeAccountAttributesInput, arg2 ...request.Option) (*redshift.DescribeAccountAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeAccountAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountAttributesWithContext indicates an expected call of DescribeAccountAttributesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeAccountAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAttributesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeAccountAttributesWithContext), varargs...)
 }
 
 // DescribeClusterDbRevisions mocks base method
@@ -3293,6 +3393,56 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterIamRolesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterIamRolesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterIamRolesWithContext), varargs...)
+}
+
+// ModifyClusterMaintenance mocks base method
+func (m *MockRedshiftAPI) ModifyClusterMaintenance(arg0 *redshift.ModifyClusterMaintenanceInput) (*redshift.ModifyClusterMaintenanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterMaintenance", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyClusterMaintenanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterMaintenance indicates an expected call of ModifyClusterMaintenance
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterMaintenance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterMaintenance", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterMaintenance), arg0)
+}
+
+// ModifyClusterMaintenanceRequest mocks base method
+func (m *MockRedshiftAPI) ModifyClusterMaintenanceRequest(arg0 *redshift.ModifyClusterMaintenanceInput) (*request.Request, *redshift.ModifyClusterMaintenanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterMaintenanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyClusterMaintenanceOutput)
+	return ret0, ret1
+}
+
+// ModifyClusterMaintenanceRequest indicates an expected call of ModifyClusterMaintenanceRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterMaintenanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterMaintenanceRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterMaintenanceRequest), arg0)
+}
+
+// ModifyClusterMaintenanceWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyClusterMaintenanceWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterMaintenanceInput, arg2 ...request.Option) (*redshift.ModifyClusterMaintenanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyClusterMaintenanceWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyClusterMaintenanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterMaintenanceWithContext indicates an expected call of ModifyClusterMaintenanceWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterMaintenanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterMaintenanceWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterMaintenanceWithContext), varargs...)
 }
 
 // ModifyClusterParameterGroup mocks base method
