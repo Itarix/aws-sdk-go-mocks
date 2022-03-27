@@ -485,6 +485,56 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateSnapshotWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotWithContext", reflect.TypeOf((*MockElastiCacheAPI)(nil).CreateSnapshotWithContext), varargs...)
 }
 
+// DecreaseReplicaCount mocks base method
+func (m *MockElastiCacheAPI) DecreaseReplicaCount(arg0 *elasticache.DecreaseReplicaCountInput) (*elasticache.DecreaseReplicaCountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DecreaseReplicaCount", arg0)
+	ret0, _ := ret[0].(*elasticache.DecreaseReplicaCountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DecreaseReplicaCount indicates an expected call of DecreaseReplicaCount
+func (mr *MockElastiCacheAPIMockRecorder) DecreaseReplicaCount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecreaseReplicaCount", reflect.TypeOf((*MockElastiCacheAPI)(nil).DecreaseReplicaCount), arg0)
+}
+
+// DecreaseReplicaCountRequest mocks base method
+func (m *MockElastiCacheAPI) DecreaseReplicaCountRequest(arg0 *elasticache.DecreaseReplicaCountInput) (*request.Request, *elasticache.DecreaseReplicaCountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DecreaseReplicaCountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticache.DecreaseReplicaCountOutput)
+	return ret0, ret1
+}
+
+// DecreaseReplicaCountRequest indicates an expected call of DecreaseReplicaCountRequest
+func (mr *MockElastiCacheAPIMockRecorder) DecreaseReplicaCountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecreaseReplicaCountRequest", reflect.TypeOf((*MockElastiCacheAPI)(nil).DecreaseReplicaCountRequest), arg0)
+}
+
+// DecreaseReplicaCountWithContext mocks base method
+func (m *MockElastiCacheAPI) DecreaseReplicaCountWithContext(arg0 aws.Context, arg1 *elasticache.DecreaseReplicaCountInput, arg2 ...request.Option) (*elasticache.DecreaseReplicaCountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DecreaseReplicaCountWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticache.DecreaseReplicaCountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DecreaseReplicaCountWithContext indicates an expected call of DecreaseReplicaCountWithContext
+func (mr *MockElastiCacheAPIMockRecorder) DecreaseReplicaCountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecreaseReplicaCountWithContext", reflect.TypeOf((*MockElastiCacheAPI)(nil).DecreaseReplicaCountWithContext), varargs...)
+}
+
 // DeleteCacheCluster mocks base method
 func (m *MockElastiCacheAPI) DeleteCacheCluster(arg0 *elasticache.DeleteCacheClusterInput) (*elasticache.DeleteCacheClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1779,6 +1829,56 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeSnapshotsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsWithContext", reflect.TypeOf((*MockElastiCacheAPI)(nil).DescribeSnapshotsWithContext), varargs...)
+}
+
+// IncreaseReplicaCount mocks base method
+func (m *MockElastiCacheAPI) IncreaseReplicaCount(arg0 *elasticache.IncreaseReplicaCountInput) (*elasticache.IncreaseReplicaCountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "IncreaseReplicaCount", arg0)
+	ret0, _ := ret[0].(*elasticache.IncreaseReplicaCountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// IncreaseReplicaCount indicates an expected call of IncreaseReplicaCount
+func (mr *MockElastiCacheAPIMockRecorder) IncreaseReplicaCount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IncreaseReplicaCount", reflect.TypeOf((*MockElastiCacheAPI)(nil).IncreaseReplicaCount), arg0)
+}
+
+// IncreaseReplicaCountRequest mocks base method
+func (m *MockElastiCacheAPI) IncreaseReplicaCountRequest(arg0 *elasticache.IncreaseReplicaCountInput) (*request.Request, *elasticache.IncreaseReplicaCountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "IncreaseReplicaCountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticache.IncreaseReplicaCountOutput)
+	return ret0, ret1
+}
+
+// IncreaseReplicaCountRequest indicates an expected call of IncreaseReplicaCountRequest
+func (mr *MockElastiCacheAPIMockRecorder) IncreaseReplicaCountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IncreaseReplicaCountRequest", reflect.TypeOf((*MockElastiCacheAPI)(nil).IncreaseReplicaCountRequest), arg0)
+}
+
+// IncreaseReplicaCountWithContext mocks base method
+func (m *MockElastiCacheAPI) IncreaseReplicaCountWithContext(arg0 aws.Context, arg1 *elasticache.IncreaseReplicaCountInput, arg2 ...request.Option) (*elasticache.IncreaseReplicaCountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "IncreaseReplicaCountWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticache.IncreaseReplicaCountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// IncreaseReplicaCountWithContext indicates an expected call of IncreaseReplicaCountWithContext
+func (mr *MockElastiCacheAPIMockRecorder) IncreaseReplicaCountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IncreaseReplicaCountWithContext", reflect.TypeOf((*MockElastiCacheAPI)(nil).IncreaseReplicaCountWithContext), varargs...)
 }
 
 // ListAllowedNodeTypeModifications mocks base method
