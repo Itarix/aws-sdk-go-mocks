@@ -2000,6 +2000,39 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusters(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusters", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClusters), arg0)
 }
 
+// DescribeDBClustersPages mocks base method
+func (m *MockRDSAPI) DescribeDBClustersPages(arg0 *rds.DescribeDBClustersInput, arg1 func(*rds.DescribeDBClustersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClustersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClustersPages indicates an expected call of DescribeDBClustersPages
+func (mr *MockRDSAPIMockRecorder) DescribeDBClustersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClustersPages", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClustersPages), arg0, arg1)
+}
+
+// DescribeDBClustersPagesWithContext mocks base method
+func (m *MockRDSAPI) DescribeDBClustersPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClustersInput, arg2 func(*rds.DescribeDBClustersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClustersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClustersPagesWithContext indicates an expected call of DescribeDBClustersPagesWithContext
+func (mr *MockRDSAPIMockRecorder) DescribeDBClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClustersPagesWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClustersPagesWithContext), varargs...)
+}
+
 // DescribeDBClustersRequest mocks base method
 func (m *MockRDSAPI) DescribeDBClustersRequest(arg0 *rds.DescribeDBClustersInput) (*request.Request, *rds.DescribeDBClustersOutput) {
 	m.ctrl.T.Helper()
