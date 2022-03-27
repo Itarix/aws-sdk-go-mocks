@@ -335,6 +335,56 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteStreamProcessorWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteStreamProcessorWithContext), varargs...)
 }
 
+// DescribeCollection mocks base method
+func (m *MockRekognitionAPI) DescribeCollection(arg0 *rekognition.DescribeCollectionInput) (*rekognition.DescribeCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCollection", arg0)
+	ret0, _ := ret[0].(*rekognition.DescribeCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCollection indicates an expected call of DescribeCollection
+func (mr *MockRekognitionAPIMockRecorder) DescribeCollection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCollection", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeCollection), arg0)
+}
+
+// DescribeCollectionRequest mocks base method
+func (m *MockRekognitionAPI) DescribeCollectionRequest(arg0 *rekognition.DescribeCollectionInput) (*request.Request, *rekognition.DescribeCollectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCollectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DescribeCollectionOutput)
+	return ret0, ret1
+}
+
+// DescribeCollectionRequest indicates an expected call of DescribeCollectionRequest
+func (mr *MockRekognitionAPIMockRecorder) DescribeCollectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCollectionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeCollectionRequest), arg0)
+}
+
+// DescribeCollectionWithContext mocks base method
+func (m *MockRekognitionAPI) DescribeCollectionWithContext(arg0 aws.Context, arg1 *rekognition.DescribeCollectionInput, arg2 ...request.Option) (*rekognition.DescribeCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCollectionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DescribeCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCollectionWithContext indicates an expected call of DescribeCollectionWithContext
+func (mr *MockRekognitionAPIMockRecorder) DescribeCollectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCollectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeCollectionWithContext), varargs...)
+}
+
 // DescribeStreamProcessor mocks base method
 func (m *MockRekognitionAPI) DescribeStreamProcessor(arg0 *rekognition.DescribeStreamProcessorInput) (*rekognition.DescribeStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()

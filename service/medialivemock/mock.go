@@ -35,6 +35,56 @@ func (m *MockMediaLiveAPI) EXPECT() *MockMediaLiveAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchUpdateSchedule mocks base method
+func (m *MockMediaLiveAPI) BatchUpdateSchedule(arg0 *medialive.BatchUpdateScheduleInput) (*medialive.BatchUpdateScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateSchedule", arg0)
+	ret0, _ := ret[0].(*medialive.BatchUpdateScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateSchedule indicates an expected call of BatchUpdateSchedule
+func (mr *MockMediaLiveAPIMockRecorder) BatchUpdateSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateSchedule", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchUpdateSchedule), arg0)
+}
+
+// BatchUpdateScheduleRequest mocks base method
+func (m *MockMediaLiveAPI) BatchUpdateScheduleRequest(arg0 *medialive.BatchUpdateScheduleInput) (*request.Request, *medialive.BatchUpdateScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.BatchUpdateScheduleOutput)
+	return ret0, ret1
+}
+
+// BatchUpdateScheduleRequest indicates an expected call of BatchUpdateScheduleRequest
+func (mr *MockMediaLiveAPIMockRecorder) BatchUpdateScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateScheduleRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchUpdateScheduleRequest), arg0)
+}
+
+// BatchUpdateScheduleWithContext mocks base method
+func (m *MockMediaLiveAPI) BatchUpdateScheduleWithContext(arg0 aws.Context, arg1 *medialive.BatchUpdateScheduleInput, arg2 ...request.Option) (*medialive.BatchUpdateScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdateScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.BatchUpdateScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateScheduleWithContext indicates an expected call of BatchUpdateScheduleWithContext
+func (mr *MockMediaLiveAPIMockRecorder) BatchUpdateScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateScheduleWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchUpdateScheduleWithContext), varargs...)
+}
+
 // CreateChannel mocks base method
 func (m *MockMediaLiveAPI) CreateChannel(arg0 *medialive.CreateChannelInput) (*medialive.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +683,89 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeReservationWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservationWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeReservationWithContext), varargs...)
+}
+
+// DescribeSchedule mocks base method
+func (m *MockMediaLiveAPI) DescribeSchedule(arg0 *medialive.DescribeScheduleInput) (*medialive.DescribeScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSchedule", arg0)
+	ret0, _ := ret[0].(*medialive.DescribeScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSchedule indicates an expected call of DescribeSchedule
+func (mr *MockMediaLiveAPIMockRecorder) DescribeSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchedule", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeSchedule), arg0)
+}
+
+// DescribeSchedulePages mocks base method
+func (m *MockMediaLiveAPI) DescribeSchedulePages(arg0 *medialive.DescribeScheduleInput, arg1 func(*medialive.DescribeScheduleOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSchedulePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSchedulePages indicates an expected call of DescribeSchedulePages
+func (mr *MockMediaLiveAPIMockRecorder) DescribeSchedulePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchedulePages", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeSchedulePages), arg0, arg1)
+}
+
+// DescribeSchedulePagesWithContext mocks base method
+func (m *MockMediaLiveAPI) DescribeSchedulePagesWithContext(arg0 aws.Context, arg1 *medialive.DescribeScheduleInput, arg2 func(*medialive.DescribeScheduleOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSchedulePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSchedulePagesWithContext indicates an expected call of DescribeSchedulePagesWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DescribeSchedulePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchedulePagesWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeSchedulePagesWithContext), varargs...)
+}
+
+// DescribeScheduleRequest mocks base method
+func (m *MockMediaLiveAPI) DescribeScheduleRequest(arg0 *medialive.DescribeScheduleInput) (*request.Request, *medialive.DescribeScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DescribeScheduleOutput)
+	return ret0, ret1
+}
+
+// DescribeScheduleRequest indicates an expected call of DescribeScheduleRequest
+func (mr *MockMediaLiveAPIMockRecorder) DescribeScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduleRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeScheduleRequest), arg0)
+}
+
+// DescribeScheduleWithContext mocks base method
+func (m *MockMediaLiveAPI) DescribeScheduleWithContext(arg0 aws.Context, arg1 *medialive.DescribeScheduleInput, arg2 ...request.Option) (*medialive.DescribeScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DescribeScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduleWithContext indicates an expected call of DescribeScheduleWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DescribeScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduleWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeScheduleWithContext), varargs...)
 }
 
 // ListChannels mocks base method
