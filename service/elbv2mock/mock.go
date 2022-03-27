@@ -901,56 +901,6 @@ func (mr *MockELBV2APIMockRecorder) DescribeLoadBalancersWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLoadBalancersWithContext", reflect.TypeOf((*MockELBV2API)(nil).DescribeLoadBalancersWithContext), varargs...)
 }
 
-// DescribeProvisionedCapacity mocks base method
-func (m *MockELBV2API) DescribeProvisionedCapacity(arg0 *elbv2.DescribeProvisionedCapacityInput) (*elbv2.DescribeProvisionedCapacityOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeProvisionedCapacity", arg0)
-	ret0, _ := ret[0].(*elbv2.DescribeProvisionedCapacityOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeProvisionedCapacity indicates an expected call of DescribeProvisionedCapacity
-func (mr *MockELBV2APIMockRecorder) DescribeProvisionedCapacity(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisionedCapacity", reflect.TypeOf((*MockELBV2API)(nil).DescribeProvisionedCapacity), arg0)
-}
-
-// DescribeProvisionedCapacityRequest mocks base method
-func (m *MockELBV2API) DescribeProvisionedCapacityRequest(arg0 *elbv2.DescribeProvisionedCapacityInput) (*request.Request, *elbv2.DescribeProvisionedCapacityOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeProvisionedCapacityRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*elbv2.DescribeProvisionedCapacityOutput)
-	return ret0, ret1
-}
-
-// DescribeProvisionedCapacityRequest indicates an expected call of DescribeProvisionedCapacityRequest
-func (mr *MockELBV2APIMockRecorder) DescribeProvisionedCapacityRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisionedCapacityRequest", reflect.TypeOf((*MockELBV2API)(nil).DescribeProvisionedCapacityRequest), arg0)
-}
-
-// DescribeProvisionedCapacityWithContext mocks base method
-func (m *MockELBV2API) DescribeProvisionedCapacityWithContext(arg0 aws.Context, arg1 *elbv2.DescribeProvisionedCapacityInput, arg2 ...request.Option) (*elbv2.DescribeProvisionedCapacityOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeProvisionedCapacityWithContext", varargs...)
-	ret0, _ := ret[0].(*elbv2.DescribeProvisionedCapacityOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeProvisionedCapacityWithContext indicates an expected call of DescribeProvisionedCapacityWithContext
-func (mr *MockELBV2APIMockRecorder) DescribeProvisionedCapacityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisionedCapacityWithContext", reflect.TypeOf((*MockELBV2API)(nil).DescribeProvisionedCapacityWithContext), varargs...)
-}
-
 // DescribeRules mocks base method
 func (m *MockELBV2API) DescribeRules(arg0 *elbv2.DescribeRulesInput) (*elbv2.DescribeRulesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1382,56 +1332,6 @@ func (mr *MockELBV2APIMockRecorder) ModifyLoadBalancerAttributesWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyLoadBalancerAttributesWithContext", reflect.TypeOf((*MockELBV2API)(nil).ModifyLoadBalancerAttributesWithContext), varargs...)
-}
-
-// ModifyProvisionedCapacity mocks base method
-func (m *MockELBV2API) ModifyProvisionedCapacity(arg0 *elbv2.ModifyProvisionedCapacityInput) (*elbv2.ModifyProvisionedCapacityOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ModifyProvisionedCapacity", arg0)
-	ret0, _ := ret[0].(*elbv2.ModifyProvisionedCapacityOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ModifyProvisionedCapacity indicates an expected call of ModifyProvisionedCapacity
-func (mr *MockELBV2APIMockRecorder) ModifyProvisionedCapacity(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyProvisionedCapacity", reflect.TypeOf((*MockELBV2API)(nil).ModifyProvisionedCapacity), arg0)
-}
-
-// ModifyProvisionedCapacityRequest mocks base method
-func (m *MockELBV2API) ModifyProvisionedCapacityRequest(arg0 *elbv2.ModifyProvisionedCapacityInput) (*request.Request, *elbv2.ModifyProvisionedCapacityOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ModifyProvisionedCapacityRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*elbv2.ModifyProvisionedCapacityOutput)
-	return ret0, ret1
-}
-
-// ModifyProvisionedCapacityRequest indicates an expected call of ModifyProvisionedCapacityRequest
-func (mr *MockELBV2APIMockRecorder) ModifyProvisionedCapacityRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyProvisionedCapacityRequest", reflect.TypeOf((*MockELBV2API)(nil).ModifyProvisionedCapacityRequest), arg0)
-}
-
-// ModifyProvisionedCapacityWithContext mocks base method
-func (m *MockELBV2API) ModifyProvisionedCapacityWithContext(arg0 aws.Context, arg1 *elbv2.ModifyProvisionedCapacityInput, arg2 ...request.Option) (*elbv2.ModifyProvisionedCapacityOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ModifyProvisionedCapacityWithContext", varargs...)
-	ret0, _ := ret[0].(*elbv2.ModifyProvisionedCapacityOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ModifyProvisionedCapacityWithContext indicates an expected call of ModifyProvisionedCapacityWithContext
-func (mr *MockELBV2APIMockRecorder) ModifyProvisionedCapacityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyProvisionedCapacityWithContext", reflect.TypeOf((*MockELBV2API)(nil).ModifyProvisionedCapacityWithContext), varargs...)
 }
 
 // ModifyRule mocks base method

@@ -335,6 +335,56 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteProjectWithContext), varargs...)
 }
 
+// DeleteSourceCredentials mocks base method
+func (m *MockCodeBuildAPI) DeleteSourceCredentials(arg0 *codebuild.DeleteSourceCredentialsInput) (*codebuild.DeleteSourceCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSourceCredentials", arg0)
+	ret0, _ := ret[0].(*codebuild.DeleteSourceCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSourceCredentials indicates an expected call of DeleteSourceCredentials
+func (mr *MockCodeBuildAPIMockRecorder) DeleteSourceCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceCredentials", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteSourceCredentials), arg0)
+}
+
+// DeleteSourceCredentialsRequest mocks base method
+func (m *MockCodeBuildAPI) DeleteSourceCredentialsRequest(arg0 *codebuild.DeleteSourceCredentialsInput) (*request.Request, *codebuild.DeleteSourceCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSourceCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.DeleteSourceCredentialsOutput)
+	return ret0, ret1
+}
+
+// DeleteSourceCredentialsRequest indicates an expected call of DeleteSourceCredentialsRequest
+func (mr *MockCodeBuildAPIMockRecorder) DeleteSourceCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceCredentialsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteSourceCredentialsRequest), arg0)
+}
+
+// DeleteSourceCredentialsWithContext mocks base method
+func (m *MockCodeBuildAPI) DeleteSourceCredentialsWithContext(arg0 aws.Context, arg1 *codebuild.DeleteSourceCredentialsInput, arg2 ...request.Option) (*codebuild.DeleteSourceCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSourceCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.DeleteSourceCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSourceCredentialsWithContext indicates an expected call of DeleteSourceCredentialsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) DeleteSourceCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceCredentialsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteSourceCredentialsWithContext), varargs...)
+}
+
 // DeleteWebhook mocks base method
 func (m *MockCodeBuildAPI) DeleteWebhook(arg0 *codebuild.DeleteWebhookInput) (*codebuild.DeleteWebhookOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteWebhookWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebhookWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteWebhookWithContext), varargs...)
+}
+
+// ImportSourceCredentials mocks base method
+func (m *MockCodeBuildAPI) ImportSourceCredentials(arg0 *codebuild.ImportSourceCredentialsInput) (*codebuild.ImportSourceCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportSourceCredentials", arg0)
+	ret0, _ := ret[0].(*codebuild.ImportSourceCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportSourceCredentials indicates an expected call of ImportSourceCredentials
+func (mr *MockCodeBuildAPIMockRecorder) ImportSourceCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportSourceCredentials", reflect.TypeOf((*MockCodeBuildAPI)(nil).ImportSourceCredentials), arg0)
+}
+
+// ImportSourceCredentialsRequest mocks base method
+func (m *MockCodeBuildAPI) ImportSourceCredentialsRequest(arg0 *codebuild.ImportSourceCredentialsInput) (*request.Request, *codebuild.ImportSourceCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportSourceCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ImportSourceCredentialsOutput)
+	return ret0, ret1
+}
+
+// ImportSourceCredentialsRequest indicates an expected call of ImportSourceCredentialsRequest
+func (mr *MockCodeBuildAPIMockRecorder) ImportSourceCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportSourceCredentialsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ImportSourceCredentialsRequest), arg0)
+}
+
+// ImportSourceCredentialsWithContext mocks base method
+func (m *MockCodeBuildAPI) ImportSourceCredentialsWithContext(arg0 aws.Context, arg1 *codebuild.ImportSourceCredentialsInput, arg2 ...request.Option) (*codebuild.ImportSourceCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportSourceCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ImportSourceCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportSourceCredentialsWithContext indicates an expected call of ImportSourceCredentialsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ImportSourceCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportSourceCredentialsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ImportSourceCredentialsWithContext), varargs...)
 }
 
 // InvalidateProjectCache mocks base method
@@ -633,6 +733,56 @@ func (mr *MockCodeBuildAPIMockRecorder) ListProjectsWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListProjectsWithContext), varargs...)
+}
+
+// ListSourceCredentials mocks base method
+func (m *MockCodeBuildAPI) ListSourceCredentials(arg0 *codebuild.ListSourceCredentialsInput) (*codebuild.ListSourceCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceCredentials", arg0)
+	ret0, _ := ret[0].(*codebuild.ListSourceCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceCredentials indicates an expected call of ListSourceCredentials
+func (mr *MockCodeBuildAPIMockRecorder) ListSourceCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceCredentials", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSourceCredentials), arg0)
+}
+
+// ListSourceCredentialsRequest mocks base method
+func (m *MockCodeBuildAPI) ListSourceCredentialsRequest(arg0 *codebuild.ListSourceCredentialsInput) (*request.Request, *codebuild.ListSourceCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ListSourceCredentialsOutput)
+	return ret0, ret1
+}
+
+// ListSourceCredentialsRequest indicates an expected call of ListSourceCredentialsRequest
+func (mr *MockCodeBuildAPIMockRecorder) ListSourceCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceCredentialsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSourceCredentialsRequest), arg0)
+}
+
+// ListSourceCredentialsWithContext mocks base method
+func (m *MockCodeBuildAPI) ListSourceCredentialsWithContext(arg0 aws.Context, arg1 *codebuild.ListSourceCredentialsInput, arg2 ...request.Option) (*codebuild.ListSourceCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ListSourceCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceCredentialsWithContext indicates an expected call of ListSourceCredentialsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ListSourceCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceCredentialsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSourceCredentialsWithContext), varargs...)
 }
 
 // StartBuild mocks base method
