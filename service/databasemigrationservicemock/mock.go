@@ -2929,7 +2929,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskS
 }
 
 // WaitUntilTestConnectionSucceeds mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceeds(arg0 *databasemigrationservice.TestConnectionInput) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceeds(arg0 *databasemigrationservice.DescribeConnectionsInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilTestConnectionSucceeds", arg0)
 	ret0, _ := ret[0].(error)
@@ -2943,7 +2943,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilTestConnectionSu
 }
 
 // WaitUntilTestConnectionSucceedsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceedsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.TestConnectionInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceedsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
