@@ -600,6 +600,56 @@ func (mr *MockRDSAPIMockRecorder) CreateDBCluster(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBCluster", reflect.TypeOf((*MockRDSAPI)(nil).CreateDBCluster), arg0)
 }
 
+// CreateDBClusterEndpoint mocks base method
+func (m *MockRDSAPI) CreateDBClusterEndpoint(arg0 *rds.CreateDBClusterEndpointInput) (*rds.CreateDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDBClusterEndpoint", arg0)
+	ret0, _ := ret[0].(*rds.CreateDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDBClusterEndpoint indicates an expected call of CreateDBClusterEndpoint
+func (mr *MockRDSAPIMockRecorder) CreateDBClusterEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBClusterEndpoint", reflect.TypeOf((*MockRDSAPI)(nil).CreateDBClusterEndpoint), arg0)
+}
+
+// CreateDBClusterEndpointRequest mocks base method
+func (m *MockRDSAPI) CreateDBClusterEndpointRequest(arg0 *rds.CreateDBClusterEndpointInput) (*request.Request, *rds.CreateDBClusterEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDBClusterEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.CreateDBClusterEndpointOutput)
+	return ret0, ret1
+}
+
+// CreateDBClusterEndpointRequest indicates an expected call of CreateDBClusterEndpointRequest
+func (mr *MockRDSAPIMockRecorder) CreateDBClusterEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBClusterEndpointRequest", reflect.TypeOf((*MockRDSAPI)(nil).CreateDBClusterEndpointRequest), arg0)
+}
+
+// CreateDBClusterEndpointWithContext mocks base method
+func (m *MockRDSAPI) CreateDBClusterEndpointWithContext(arg0 aws.Context, arg1 *rds.CreateDBClusterEndpointInput, arg2 ...request.Option) (*rds.CreateDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDBClusterEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.CreateDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDBClusterEndpointWithContext indicates an expected call of CreateDBClusterEndpointWithContext
+func (mr *MockRDSAPIMockRecorder) CreateDBClusterEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBClusterEndpointWithContext", reflect.TypeOf((*MockRDSAPI)(nil).CreateDBClusterEndpointWithContext), varargs...)
+}
+
 // CreateDBClusterParameterGroup mocks base method
 func (m *MockRDSAPI) CreateDBClusterParameterGroup(arg0 *rds.CreateDBClusterParameterGroupInput) (*rds.CreateDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1148,6 +1198,56 @@ func (m *MockRDSAPI) DeleteDBCluster(arg0 *rds.DeleteDBClusterInput) (*rds.Delet
 func (mr *MockRDSAPIMockRecorder) DeleteDBCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBCluster", reflect.TypeOf((*MockRDSAPI)(nil).DeleteDBCluster), arg0)
+}
+
+// DeleteDBClusterEndpoint mocks base method
+func (m *MockRDSAPI) DeleteDBClusterEndpoint(arg0 *rds.DeleteDBClusterEndpointInput) (*rds.DeleteDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDBClusterEndpoint", arg0)
+	ret0, _ := ret[0].(*rds.DeleteDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDBClusterEndpoint indicates an expected call of DeleteDBClusterEndpoint
+func (mr *MockRDSAPIMockRecorder) DeleteDBClusterEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBClusterEndpoint", reflect.TypeOf((*MockRDSAPI)(nil).DeleteDBClusterEndpoint), arg0)
+}
+
+// DeleteDBClusterEndpointRequest mocks base method
+func (m *MockRDSAPI) DeleteDBClusterEndpointRequest(arg0 *rds.DeleteDBClusterEndpointInput) (*request.Request, *rds.DeleteDBClusterEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDBClusterEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.DeleteDBClusterEndpointOutput)
+	return ret0, ret1
+}
+
+// DeleteDBClusterEndpointRequest indicates an expected call of DeleteDBClusterEndpointRequest
+func (mr *MockRDSAPIMockRecorder) DeleteDBClusterEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBClusterEndpointRequest", reflect.TypeOf((*MockRDSAPI)(nil).DeleteDBClusterEndpointRequest), arg0)
+}
+
+// DeleteDBClusterEndpointWithContext mocks base method
+func (m *MockRDSAPI) DeleteDBClusterEndpointWithContext(arg0 aws.Context, arg1 *rds.DeleteDBClusterEndpointInput, arg2 ...request.Option) (*rds.DeleteDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDBClusterEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.DeleteDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDBClusterEndpointWithContext indicates an expected call of DeleteDBClusterEndpointWithContext
+func (mr *MockRDSAPIMockRecorder) DeleteDBClusterEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBClusterEndpointWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DeleteDBClusterEndpointWithContext), varargs...)
 }
 
 // DeleteDBClusterParameterGroup mocks base method
@@ -1783,6 +1883,56 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterBacktracksWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterBacktracksWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClusterBacktracksWithContext), varargs...)
+}
+
+// DescribeDBClusterEndpoints mocks base method
+func (m *MockRDSAPI) DescribeDBClusterEndpoints(arg0 *rds.DescribeDBClusterEndpointsInput) (*rds.DescribeDBClusterEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpoints", arg0)
+	ret0, _ := ret[0].(*rds.DescribeDBClusterEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDBClusterEndpoints indicates an expected call of DescribeDBClusterEndpoints
+func (mr *MockRDSAPIMockRecorder) DescribeDBClusterEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpoints", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClusterEndpoints), arg0)
+}
+
+// DescribeDBClusterEndpointsRequest mocks base method
+func (m *MockRDSAPI) DescribeDBClusterEndpointsRequest(arg0 *rds.DescribeDBClusterEndpointsInput) (*request.Request, *rds.DescribeDBClusterEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.DescribeDBClusterEndpointsOutput)
+	return ret0, ret1
+}
+
+// DescribeDBClusterEndpointsRequest indicates an expected call of DescribeDBClusterEndpointsRequest
+func (mr *MockRDSAPIMockRecorder) DescribeDBClusterEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpointsRequest", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClusterEndpointsRequest), arg0)
+}
+
+// DescribeDBClusterEndpointsWithContext mocks base method
+func (m *MockRDSAPI) DescribeDBClusterEndpointsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterEndpointsInput, arg2 ...request.Option) (*rds.DescribeDBClusterEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.DescribeDBClusterEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDBClusterEndpointsWithContext indicates an expected call of DescribeDBClusterEndpointsWithContext
+func (mr *MockRDSAPIMockRecorder) DescribeDBClusterEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpointsWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DescribeDBClusterEndpointsWithContext), varargs...)
 }
 
 // DescribeDBClusterParameterGroups mocks base method
@@ -3942,6 +4092,56 @@ func (m *MockRDSAPI) ModifyDBCluster(arg0 *rds.ModifyDBClusterInput) (*rds.Modif
 func (mr *MockRDSAPIMockRecorder) ModifyDBCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBCluster", reflect.TypeOf((*MockRDSAPI)(nil).ModifyDBCluster), arg0)
+}
+
+// ModifyDBClusterEndpoint mocks base method
+func (m *MockRDSAPI) ModifyDBClusterEndpoint(arg0 *rds.ModifyDBClusterEndpointInput) (*rds.ModifyDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyDBClusterEndpoint", arg0)
+	ret0, _ := ret[0].(*rds.ModifyDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyDBClusterEndpoint indicates an expected call of ModifyDBClusterEndpoint
+func (mr *MockRDSAPIMockRecorder) ModifyDBClusterEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBClusterEndpoint", reflect.TypeOf((*MockRDSAPI)(nil).ModifyDBClusterEndpoint), arg0)
+}
+
+// ModifyDBClusterEndpointRequest mocks base method
+func (m *MockRDSAPI) ModifyDBClusterEndpointRequest(arg0 *rds.ModifyDBClusterEndpointInput) (*request.Request, *rds.ModifyDBClusterEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyDBClusterEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.ModifyDBClusterEndpointOutput)
+	return ret0, ret1
+}
+
+// ModifyDBClusterEndpointRequest indicates an expected call of ModifyDBClusterEndpointRequest
+func (mr *MockRDSAPIMockRecorder) ModifyDBClusterEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBClusterEndpointRequest", reflect.TypeOf((*MockRDSAPI)(nil).ModifyDBClusterEndpointRequest), arg0)
+}
+
+// ModifyDBClusterEndpointWithContext mocks base method
+func (m *MockRDSAPI) ModifyDBClusterEndpointWithContext(arg0 aws.Context, arg1 *rds.ModifyDBClusterEndpointInput, arg2 ...request.Option) (*rds.ModifyDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyDBClusterEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.ModifyDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyDBClusterEndpointWithContext indicates an expected call of ModifyDBClusterEndpointWithContext
+func (mr *MockRDSAPIMockRecorder) ModifyDBClusterEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBClusterEndpointWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ModifyDBClusterEndpointWithContext), varargs...)
 }
 
 // ModifyDBClusterParameterGroup mocks base method

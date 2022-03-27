@@ -385,6 +385,106 @@ func (mr *MockFirehoseAPIMockRecorder) PutRecordWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRecordWithContext", reflect.TypeOf((*MockFirehoseAPI)(nil).PutRecordWithContext), varargs...)
 }
 
+// StartDeliveryStreamEncryption mocks base method
+func (m *MockFirehoseAPI) StartDeliveryStreamEncryption(arg0 *firehose.StartDeliveryStreamEncryptionInput) (*firehose.StartDeliveryStreamEncryptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDeliveryStreamEncryption", arg0)
+	ret0, _ := ret[0].(*firehose.StartDeliveryStreamEncryptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDeliveryStreamEncryption indicates an expected call of StartDeliveryStreamEncryption
+func (mr *MockFirehoseAPIMockRecorder) StartDeliveryStreamEncryption(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDeliveryStreamEncryption", reflect.TypeOf((*MockFirehoseAPI)(nil).StartDeliveryStreamEncryption), arg0)
+}
+
+// StartDeliveryStreamEncryptionRequest mocks base method
+func (m *MockFirehoseAPI) StartDeliveryStreamEncryptionRequest(arg0 *firehose.StartDeliveryStreamEncryptionInput) (*request.Request, *firehose.StartDeliveryStreamEncryptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDeliveryStreamEncryptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*firehose.StartDeliveryStreamEncryptionOutput)
+	return ret0, ret1
+}
+
+// StartDeliveryStreamEncryptionRequest indicates an expected call of StartDeliveryStreamEncryptionRequest
+func (mr *MockFirehoseAPIMockRecorder) StartDeliveryStreamEncryptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDeliveryStreamEncryptionRequest", reflect.TypeOf((*MockFirehoseAPI)(nil).StartDeliveryStreamEncryptionRequest), arg0)
+}
+
+// StartDeliveryStreamEncryptionWithContext mocks base method
+func (m *MockFirehoseAPI) StartDeliveryStreamEncryptionWithContext(arg0 aws.Context, arg1 *firehose.StartDeliveryStreamEncryptionInput, arg2 ...request.Option) (*firehose.StartDeliveryStreamEncryptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDeliveryStreamEncryptionWithContext", varargs...)
+	ret0, _ := ret[0].(*firehose.StartDeliveryStreamEncryptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDeliveryStreamEncryptionWithContext indicates an expected call of StartDeliveryStreamEncryptionWithContext
+func (mr *MockFirehoseAPIMockRecorder) StartDeliveryStreamEncryptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDeliveryStreamEncryptionWithContext", reflect.TypeOf((*MockFirehoseAPI)(nil).StartDeliveryStreamEncryptionWithContext), varargs...)
+}
+
+// StopDeliveryStreamEncryption mocks base method
+func (m *MockFirehoseAPI) StopDeliveryStreamEncryption(arg0 *firehose.StopDeliveryStreamEncryptionInput) (*firehose.StopDeliveryStreamEncryptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDeliveryStreamEncryption", arg0)
+	ret0, _ := ret[0].(*firehose.StopDeliveryStreamEncryptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDeliveryStreamEncryption indicates an expected call of StopDeliveryStreamEncryption
+func (mr *MockFirehoseAPIMockRecorder) StopDeliveryStreamEncryption(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDeliveryStreamEncryption", reflect.TypeOf((*MockFirehoseAPI)(nil).StopDeliveryStreamEncryption), arg0)
+}
+
+// StopDeliveryStreamEncryptionRequest mocks base method
+func (m *MockFirehoseAPI) StopDeliveryStreamEncryptionRequest(arg0 *firehose.StopDeliveryStreamEncryptionInput) (*request.Request, *firehose.StopDeliveryStreamEncryptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDeliveryStreamEncryptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*firehose.StopDeliveryStreamEncryptionOutput)
+	return ret0, ret1
+}
+
+// StopDeliveryStreamEncryptionRequest indicates an expected call of StopDeliveryStreamEncryptionRequest
+func (mr *MockFirehoseAPIMockRecorder) StopDeliveryStreamEncryptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDeliveryStreamEncryptionRequest", reflect.TypeOf((*MockFirehoseAPI)(nil).StopDeliveryStreamEncryptionRequest), arg0)
+}
+
+// StopDeliveryStreamEncryptionWithContext mocks base method
+func (m *MockFirehoseAPI) StopDeliveryStreamEncryptionWithContext(arg0 aws.Context, arg1 *firehose.StopDeliveryStreamEncryptionInput, arg2 ...request.Option) (*firehose.StopDeliveryStreamEncryptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopDeliveryStreamEncryptionWithContext", varargs...)
+	ret0, _ := ret[0].(*firehose.StopDeliveryStreamEncryptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDeliveryStreamEncryptionWithContext indicates an expected call of StopDeliveryStreamEncryptionWithContext
+func (mr *MockFirehoseAPIMockRecorder) StopDeliveryStreamEncryptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDeliveryStreamEncryptionWithContext", reflect.TypeOf((*MockFirehoseAPI)(nil).StopDeliveryStreamEncryptionWithContext), varargs...)
+}
+
 // TagDeliveryStream mocks base method
 func (m *MockFirehoseAPI) TagDeliveryStream(arg0 *firehose.TagDeliveryStreamInput) (*firehose.TagDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()

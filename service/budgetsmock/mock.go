@@ -350,6 +350,56 @@ func (mr *MockBudgetsAPIMockRecorder) DescribeBudget(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBudget", reflect.TypeOf((*MockBudgetsAPI)(nil).DescribeBudget), arg0)
 }
 
+// DescribeBudgetPerformanceHistory mocks base method
+func (m *MockBudgetsAPI) DescribeBudgetPerformanceHistory(arg0 *budgets.DescribeBudgetPerformanceHistoryInput) (*budgets.DescribeBudgetPerformanceHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBudgetPerformanceHistory", arg0)
+	ret0, _ := ret[0].(*budgets.DescribeBudgetPerformanceHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBudgetPerformanceHistory indicates an expected call of DescribeBudgetPerformanceHistory
+func (mr *MockBudgetsAPIMockRecorder) DescribeBudgetPerformanceHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBudgetPerformanceHistory", reflect.TypeOf((*MockBudgetsAPI)(nil).DescribeBudgetPerformanceHistory), arg0)
+}
+
+// DescribeBudgetPerformanceHistoryRequest mocks base method
+func (m *MockBudgetsAPI) DescribeBudgetPerformanceHistoryRequest(arg0 *budgets.DescribeBudgetPerformanceHistoryInput) (*request.Request, *budgets.DescribeBudgetPerformanceHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBudgetPerformanceHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*budgets.DescribeBudgetPerformanceHistoryOutput)
+	return ret0, ret1
+}
+
+// DescribeBudgetPerformanceHistoryRequest indicates an expected call of DescribeBudgetPerformanceHistoryRequest
+func (mr *MockBudgetsAPIMockRecorder) DescribeBudgetPerformanceHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBudgetPerformanceHistoryRequest", reflect.TypeOf((*MockBudgetsAPI)(nil).DescribeBudgetPerformanceHistoryRequest), arg0)
+}
+
+// DescribeBudgetPerformanceHistoryWithContext mocks base method
+func (m *MockBudgetsAPI) DescribeBudgetPerformanceHistoryWithContext(arg0 aws.Context, arg1 *budgets.DescribeBudgetPerformanceHistoryInput, arg2 ...request.Option) (*budgets.DescribeBudgetPerformanceHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBudgetPerformanceHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*budgets.DescribeBudgetPerformanceHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBudgetPerformanceHistoryWithContext indicates an expected call of DescribeBudgetPerformanceHistoryWithContext
+func (mr *MockBudgetsAPIMockRecorder) DescribeBudgetPerformanceHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBudgetPerformanceHistoryWithContext", reflect.TypeOf((*MockBudgetsAPI)(nil).DescribeBudgetPerformanceHistoryWithContext), varargs...)
+}
+
 // DescribeBudgetRequest mocks base method
 func (m *MockBudgetsAPI) DescribeBudgetRequest(arg0 *budgets.DescribeBudgetInput) (*request.Request, *budgets.DescribeBudgetOutput) {
 	m.ctrl.T.Helper()
