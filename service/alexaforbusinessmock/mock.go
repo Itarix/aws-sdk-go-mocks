@@ -285,6 +285,56 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithSkillGroupWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithSkillGroupWithContext), varargs...)
 }
 
+// AssociateSkillWithUsers mocks base method
+func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsers(arg0 *alexaforbusiness.AssociateSkillWithUsersInput) (*alexaforbusiness.AssociateSkillWithUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSkillWithUsers", arg0)
+	ret0, _ := ret[0].(*alexaforbusiness.AssociateSkillWithUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSkillWithUsers indicates an expected call of AssociateSkillWithUsers
+func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithUsers", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithUsers), arg0)
+}
+
+// AssociateSkillWithUsersRequest mocks base method
+func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsersRequest(arg0 *alexaforbusiness.AssociateSkillWithUsersInput) (*request.Request, *alexaforbusiness.AssociateSkillWithUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSkillWithUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*alexaforbusiness.AssociateSkillWithUsersOutput)
+	return ret0, ret1
+}
+
+// AssociateSkillWithUsersRequest indicates an expected call of AssociateSkillWithUsersRequest
+func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithUsersRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithUsersRequest), arg0)
+}
+
+// AssociateSkillWithUsersWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateSkillWithUsersInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateSkillWithUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*alexaforbusiness.AssociateSkillWithUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSkillWithUsersWithContext indicates an expected call of AssociateSkillWithUsersWithContext
+func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithUsersWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithUsersWithContext), varargs...)
+}
+
 // CreateAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) CreateAddressBook(arg0 *alexaforbusiness.CreateAddressBookInput) (*alexaforbusiness.CreateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
@@ -1383,6 +1433,56 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromSkillGroupWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromSkillGroupWithContext), varargs...)
+}
+
+// DisassociateSkillFromUsers mocks base method
+func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsers(arg0 *alexaforbusiness.DisassociateSkillFromUsersInput) (*alexaforbusiness.DisassociateSkillFromUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSkillFromUsers", arg0)
+	ret0, _ := ret[0].(*alexaforbusiness.DisassociateSkillFromUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSkillFromUsers indicates an expected call of DisassociateSkillFromUsers
+func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromUsers", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromUsers), arg0)
+}
+
+// DisassociateSkillFromUsersRequest mocks base method
+func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsersRequest(arg0 *alexaforbusiness.DisassociateSkillFromUsersInput) (*request.Request, *alexaforbusiness.DisassociateSkillFromUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSkillFromUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*alexaforbusiness.DisassociateSkillFromUsersOutput)
+	return ret0, ret1
+}
+
+// DisassociateSkillFromUsersRequest indicates an expected call of DisassociateSkillFromUsersRequest
+func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromUsersRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromUsersRequest), arg0)
+}
+
+// DisassociateSkillFromUsersWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateSkillFromUsersInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateSkillFromUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*alexaforbusiness.DisassociateSkillFromUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSkillFromUsersWithContext indicates an expected call of DisassociateSkillFromUsersWithContext
+func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromUsersWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromUsersWithContext), varargs...)
 }
 
 // DisassociateSkillGroupFromRoom mocks base method
