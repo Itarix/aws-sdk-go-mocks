@@ -635,6 +635,56 @@ func (mr *MockConnectAPIMockRecorder) StopContactWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StopContactWithContext), varargs...)
 }
 
+// UpdateContactAttributes mocks base method
+func (m *MockConnectAPI) UpdateContactAttributes(arg0 *connect.UpdateContactAttributesInput) (*connect.UpdateContactAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactAttributes", arg0)
+	ret0, _ := ret[0].(*connect.UpdateContactAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactAttributes indicates an expected call of UpdateContactAttributes
+func (mr *MockConnectAPIMockRecorder) UpdateContactAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactAttributes", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactAttributes), arg0)
+}
+
+// UpdateContactAttributesRequest mocks base method
+func (m *MockConnectAPI) UpdateContactAttributesRequest(arg0 *connect.UpdateContactAttributesInput) (*request.Request, *connect.UpdateContactAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateContactAttributesOutput)
+	return ret0, ret1
+}
+
+// UpdateContactAttributesRequest indicates an expected call of UpdateContactAttributesRequest
+func (mr *MockConnectAPIMockRecorder) UpdateContactAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactAttributesRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactAttributesRequest), arg0)
+}
+
+// UpdateContactAttributesWithContext mocks base method
+func (m *MockConnectAPI) UpdateContactAttributesWithContext(arg0 aws.Context, arg1 *connect.UpdateContactAttributesInput, arg2 ...request.Option) (*connect.UpdateContactAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContactAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateContactAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactAttributesWithContext indicates an expected call of UpdateContactAttributesWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateContactAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactAttributesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactAttributesWithContext), varargs...)
+}
+
 // UpdateUserHierarchy mocks base method
 func (m *MockConnectAPI) UpdateUserHierarchy(arg0 *connect.UpdateUserHierarchyInput) (*connect.UpdateUserHierarchyOutput, error) {
 	m.ctrl.T.Helper()

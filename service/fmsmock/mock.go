@@ -485,6 +485,56 @@ func (mr *MockFMSAPIMockRecorder) ListComplianceStatusWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListComplianceStatusWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListComplianceStatusWithContext), varargs...)
 }
 
+// ListMemberAccounts mocks base method
+func (m *MockFMSAPI) ListMemberAccounts(arg0 *fms.ListMemberAccountsInput) (*fms.ListMemberAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMemberAccounts", arg0)
+	ret0, _ := ret[0].(*fms.ListMemberAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMemberAccounts indicates an expected call of ListMemberAccounts
+func (mr *MockFMSAPIMockRecorder) ListMemberAccounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccounts", reflect.TypeOf((*MockFMSAPI)(nil).ListMemberAccounts), arg0)
+}
+
+// ListMemberAccountsRequest mocks base method
+func (m *MockFMSAPI) ListMemberAccountsRequest(arg0 *fms.ListMemberAccountsInput) (*request.Request, *fms.ListMemberAccountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMemberAccountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListMemberAccountsOutput)
+	return ret0, ret1
+}
+
+// ListMemberAccountsRequest indicates an expected call of ListMemberAccountsRequest
+func (mr *MockFMSAPIMockRecorder) ListMemberAccountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccountsRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListMemberAccountsRequest), arg0)
+}
+
+// ListMemberAccountsWithContext mocks base method
+func (m *MockFMSAPI) ListMemberAccountsWithContext(arg0 aws.Context, arg1 *fms.ListMemberAccountsInput, arg2 ...request.Option) (*fms.ListMemberAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMemberAccountsWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListMemberAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMemberAccountsWithContext indicates an expected call of ListMemberAccountsWithContext
+func (mr *MockFMSAPIMockRecorder) ListMemberAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccountsWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListMemberAccountsWithContext), varargs...)
+}
+
 // ListPolicies mocks base method
 func (m *MockFMSAPI) ListPolicies(arg0 *fms.ListPoliciesInput) (*fms.ListPoliciesOutput, error) {
 	m.ctrl.T.Helper()

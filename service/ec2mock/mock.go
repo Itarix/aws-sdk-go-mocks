@@ -7299,6 +7299,39 @@ func (mr *MockEC2APIMockRecorder) DescribeNetworkInterfaces(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNetworkInterfaces", reflect.TypeOf((*MockEC2API)(nil).DescribeNetworkInterfaces), arg0)
 }
 
+// DescribeNetworkInterfacesPages mocks base method
+func (m *MockEC2API) DescribeNetworkInterfacesPages(arg0 *ec2.DescribeNetworkInterfacesInput, arg1 func(*ec2.DescribeNetworkInterfacesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNetworkInterfacesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeNetworkInterfacesPages indicates an expected call of DescribeNetworkInterfacesPages
+func (mr *MockEC2APIMockRecorder) DescribeNetworkInterfacesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNetworkInterfacesPages", reflect.TypeOf((*MockEC2API)(nil).DescribeNetworkInterfacesPages), arg0, arg1)
+}
+
+// DescribeNetworkInterfacesPagesWithContext mocks base method
+func (m *MockEC2API) DescribeNetworkInterfacesPagesWithContext(arg0 aws.Context, arg1 *ec2.DescribeNetworkInterfacesInput, arg2 func(*ec2.DescribeNetworkInterfacesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeNetworkInterfacesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeNetworkInterfacesPagesWithContext indicates an expected call of DescribeNetworkInterfacesPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeNetworkInterfacesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNetworkInterfacesPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeNetworkInterfacesPagesWithContext), varargs...)
+}
+
 // DescribeNetworkInterfacesRequest mocks base method
 func (m *MockEC2API) DescribeNetworkInterfacesRequest(arg0 *ec2.DescribeNetworkInterfacesInput) (*request.Request, *ec2.DescribeNetworkInterfacesOutput) {
 	m.ctrl.T.Helper()
