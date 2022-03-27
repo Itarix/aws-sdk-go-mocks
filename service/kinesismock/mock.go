@@ -235,6 +235,56 @@ func (mr *MockKinesisAPIMockRecorder) DeleteStreamWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStreamWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).DeleteStreamWithContext), varargs...)
 }
 
+// DeregisterStreamConsumer mocks base method
+func (m *MockKinesisAPI) DeregisterStreamConsumer(arg0 *kinesis.DeregisterStreamConsumerInput) (*kinesis.DeregisterStreamConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterStreamConsumer", arg0)
+	ret0, _ := ret[0].(*kinesis.DeregisterStreamConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterStreamConsumer indicates an expected call of DeregisterStreamConsumer
+func (mr *MockKinesisAPIMockRecorder) DeregisterStreamConsumer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterStreamConsumer", reflect.TypeOf((*MockKinesisAPI)(nil).DeregisterStreamConsumer), arg0)
+}
+
+// DeregisterStreamConsumerRequest mocks base method
+func (m *MockKinesisAPI) DeregisterStreamConsumerRequest(arg0 *kinesis.DeregisterStreamConsumerInput) (*request.Request, *kinesis.DeregisterStreamConsumerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterStreamConsumerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesis.DeregisterStreamConsumerOutput)
+	return ret0, ret1
+}
+
+// DeregisterStreamConsumerRequest indicates an expected call of DeregisterStreamConsumerRequest
+func (mr *MockKinesisAPIMockRecorder) DeregisterStreamConsumerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterStreamConsumerRequest", reflect.TypeOf((*MockKinesisAPI)(nil).DeregisterStreamConsumerRequest), arg0)
+}
+
+// DeregisterStreamConsumerWithContext mocks base method
+func (m *MockKinesisAPI) DeregisterStreamConsumerWithContext(arg0 aws.Context, arg1 *kinesis.DeregisterStreamConsumerInput, arg2 ...request.Option) (*kinesis.DeregisterStreamConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterStreamConsumerWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesis.DeregisterStreamConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterStreamConsumerWithContext indicates an expected call of DeregisterStreamConsumerWithContext
+func (mr *MockKinesisAPIMockRecorder) DeregisterStreamConsumerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterStreamConsumerWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).DeregisterStreamConsumerWithContext), varargs...)
+}
+
 // DescribeLimits mocks base method
 func (m *MockKinesisAPI) DescribeLimits(arg0 *kinesis.DescribeLimitsInput) (*kinesis.DescribeLimitsOutput, error) {
 	m.ctrl.T.Helper()
@@ -298,6 +348,56 @@ func (m *MockKinesisAPI) DescribeStream(arg0 *kinesis.DescribeStreamInput) (*kin
 func (mr *MockKinesisAPIMockRecorder) DescribeStream(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStream", reflect.TypeOf((*MockKinesisAPI)(nil).DescribeStream), arg0)
+}
+
+// DescribeStreamConsumer mocks base method
+func (m *MockKinesisAPI) DescribeStreamConsumer(arg0 *kinesis.DescribeStreamConsumerInput) (*kinesis.DescribeStreamConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStreamConsumer", arg0)
+	ret0, _ := ret[0].(*kinesis.DescribeStreamConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStreamConsumer indicates an expected call of DescribeStreamConsumer
+func (mr *MockKinesisAPIMockRecorder) DescribeStreamConsumer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStreamConsumer", reflect.TypeOf((*MockKinesisAPI)(nil).DescribeStreamConsumer), arg0)
+}
+
+// DescribeStreamConsumerRequest mocks base method
+func (m *MockKinesisAPI) DescribeStreamConsumerRequest(arg0 *kinesis.DescribeStreamConsumerInput) (*request.Request, *kinesis.DescribeStreamConsumerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStreamConsumerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesis.DescribeStreamConsumerOutput)
+	return ret0, ret1
+}
+
+// DescribeStreamConsumerRequest indicates an expected call of DescribeStreamConsumerRequest
+func (mr *MockKinesisAPIMockRecorder) DescribeStreamConsumerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStreamConsumerRequest", reflect.TypeOf((*MockKinesisAPI)(nil).DescribeStreamConsumerRequest), arg0)
+}
+
+// DescribeStreamConsumerWithContext mocks base method
+func (m *MockKinesisAPI) DescribeStreamConsumerWithContext(arg0 aws.Context, arg1 *kinesis.DescribeStreamConsumerInput, arg2 ...request.Option) (*kinesis.DescribeStreamConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStreamConsumerWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesis.DescribeStreamConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStreamConsumerWithContext indicates an expected call of DescribeStreamConsumerWithContext
+func (mr *MockKinesisAPIMockRecorder) DescribeStreamConsumerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStreamConsumerWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).DescribeStreamConsumerWithContext), varargs...)
 }
 
 // DescribeStreamPages mocks base method
@@ -718,6 +818,89 @@ func (mr *MockKinesisAPIMockRecorder) ListShardsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListShardsWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).ListShardsWithContext), varargs...)
 }
 
+// ListStreamConsumers mocks base method
+func (m *MockKinesisAPI) ListStreamConsumers(arg0 *kinesis.ListStreamConsumersInput) (*kinesis.ListStreamConsumersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamConsumers", arg0)
+	ret0, _ := ret[0].(*kinesis.ListStreamConsumersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStreamConsumers indicates an expected call of ListStreamConsumers
+func (mr *MockKinesisAPIMockRecorder) ListStreamConsumers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamConsumers", reflect.TypeOf((*MockKinesisAPI)(nil).ListStreamConsumers), arg0)
+}
+
+// ListStreamConsumersPages mocks base method
+func (m *MockKinesisAPI) ListStreamConsumersPages(arg0 *kinesis.ListStreamConsumersInput, arg1 func(*kinesis.ListStreamConsumersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamConsumersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamConsumersPages indicates an expected call of ListStreamConsumersPages
+func (mr *MockKinesisAPIMockRecorder) ListStreamConsumersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamConsumersPages", reflect.TypeOf((*MockKinesisAPI)(nil).ListStreamConsumersPages), arg0, arg1)
+}
+
+// ListStreamConsumersPagesWithContext mocks base method
+func (m *MockKinesisAPI) ListStreamConsumersPagesWithContext(arg0 aws.Context, arg1 *kinesis.ListStreamConsumersInput, arg2 func(*kinesis.ListStreamConsumersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamConsumersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamConsumersPagesWithContext indicates an expected call of ListStreamConsumersPagesWithContext
+func (mr *MockKinesisAPIMockRecorder) ListStreamConsumersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamConsumersPagesWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).ListStreamConsumersPagesWithContext), varargs...)
+}
+
+// ListStreamConsumersRequest mocks base method
+func (m *MockKinesisAPI) ListStreamConsumersRequest(arg0 *kinesis.ListStreamConsumersInput) (*request.Request, *kinesis.ListStreamConsumersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamConsumersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesis.ListStreamConsumersOutput)
+	return ret0, ret1
+}
+
+// ListStreamConsumersRequest indicates an expected call of ListStreamConsumersRequest
+func (mr *MockKinesisAPIMockRecorder) ListStreamConsumersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamConsumersRequest", reflect.TypeOf((*MockKinesisAPI)(nil).ListStreamConsumersRequest), arg0)
+}
+
+// ListStreamConsumersWithContext mocks base method
+func (m *MockKinesisAPI) ListStreamConsumersWithContext(arg0 aws.Context, arg1 *kinesis.ListStreamConsumersInput, arg2 ...request.Option) (*kinesis.ListStreamConsumersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamConsumersWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesis.ListStreamConsumersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStreamConsumersWithContext indicates an expected call of ListStreamConsumersWithContext
+func (mr *MockKinesisAPIMockRecorder) ListStreamConsumersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamConsumersWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).ListStreamConsumersWithContext), varargs...)
+}
+
 // ListStreams mocks base method
 func (m *MockKinesisAPI) ListStreams(arg0 *kinesis.ListStreamsInput) (*kinesis.ListStreamsOutput, error) {
 	m.ctrl.T.Helper()
@@ -999,6 +1182,56 @@ func (mr *MockKinesisAPIMockRecorder) PutRecordsWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRecordsWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).PutRecordsWithContext), varargs...)
+}
+
+// RegisterStreamConsumer mocks base method
+func (m *MockKinesisAPI) RegisterStreamConsumer(arg0 *kinesis.RegisterStreamConsumerInput) (*kinesis.RegisterStreamConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterStreamConsumer", arg0)
+	ret0, _ := ret[0].(*kinesis.RegisterStreamConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterStreamConsumer indicates an expected call of RegisterStreamConsumer
+func (mr *MockKinesisAPIMockRecorder) RegisterStreamConsumer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterStreamConsumer", reflect.TypeOf((*MockKinesisAPI)(nil).RegisterStreamConsumer), arg0)
+}
+
+// RegisterStreamConsumerRequest mocks base method
+func (m *MockKinesisAPI) RegisterStreamConsumerRequest(arg0 *kinesis.RegisterStreamConsumerInput) (*request.Request, *kinesis.RegisterStreamConsumerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterStreamConsumerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesis.RegisterStreamConsumerOutput)
+	return ret0, ret1
+}
+
+// RegisterStreamConsumerRequest indicates an expected call of RegisterStreamConsumerRequest
+func (mr *MockKinesisAPIMockRecorder) RegisterStreamConsumerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterStreamConsumerRequest", reflect.TypeOf((*MockKinesisAPI)(nil).RegisterStreamConsumerRequest), arg0)
+}
+
+// RegisterStreamConsumerWithContext mocks base method
+func (m *MockKinesisAPI) RegisterStreamConsumerWithContext(arg0 aws.Context, arg1 *kinesis.RegisterStreamConsumerInput, arg2 ...request.Option) (*kinesis.RegisterStreamConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterStreamConsumerWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesis.RegisterStreamConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterStreamConsumerWithContext indicates an expected call of RegisterStreamConsumerWithContext
+func (mr *MockKinesisAPIMockRecorder) RegisterStreamConsumerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterStreamConsumerWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).RegisterStreamConsumerWithContext), varargs...)
 }
 
 // RemoveTagsFromStream mocks base method
