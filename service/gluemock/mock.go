@@ -785,6 +785,56 @@ func (mr *MockGlueAPIMockRecorder) CreateScriptWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScriptWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateScriptWithContext), varargs...)
 }
 
+// CreateSecurityConfiguration mocks base method
+func (m *MockGlueAPI) CreateSecurityConfiguration(arg0 *glue.CreateSecurityConfigurationInput) (*glue.CreateSecurityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSecurityConfiguration", arg0)
+	ret0, _ := ret[0].(*glue.CreateSecurityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSecurityConfiguration indicates an expected call of CreateSecurityConfiguration
+func (mr *MockGlueAPIMockRecorder) CreateSecurityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfiguration", reflect.TypeOf((*MockGlueAPI)(nil).CreateSecurityConfiguration), arg0)
+}
+
+// CreateSecurityConfigurationRequest mocks base method
+func (m *MockGlueAPI) CreateSecurityConfigurationRequest(arg0 *glue.CreateSecurityConfigurationInput) (*request.Request, *glue.CreateSecurityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSecurityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateSecurityConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateSecurityConfigurationRequest indicates an expected call of CreateSecurityConfigurationRequest
+func (mr *MockGlueAPIMockRecorder) CreateSecurityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfigurationRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateSecurityConfigurationRequest), arg0)
+}
+
+// CreateSecurityConfigurationWithContext mocks base method
+func (m *MockGlueAPI) CreateSecurityConfigurationWithContext(arg0 aws.Context, arg1 *glue.CreateSecurityConfigurationInput, arg2 ...request.Option) (*glue.CreateSecurityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSecurityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateSecurityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSecurityConfigurationWithContext indicates an expected call of CreateSecurityConfigurationWithContext
+func (mr *MockGlueAPIMockRecorder) CreateSecurityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfigurationWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateSecurityConfigurationWithContext), varargs...)
+}
+
 // CreateTable mocks base method
 func (m *MockGlueAPI) CreateTable(arg0 *glue.CreateTableInput) (*glue.CreateTableOutput, error) {
 	m.ctrl.T.Helper()
@@ -1283,6 +1333,56 @@ func (mr *MockGlueAPIMockRecorder) DeletePartitionWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeletePartitionWithContext), varargs...)
+}
+
+// DeleteSecurityConfiguration mocks base method
+func (m *MockGlueAPI) DeleteSecurityConfiguration(arg0 *glue.DeleteSecurityConfigurationInput) (*glue.DeleteSecurityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSecurityConfiguration", arg0)
+	ret0, _ := ret[0].(*glue.DeleteSecurityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSecurityConfiguration indicates an expected call of DeleteSecurityConfiguration
+func (mr *MockGlueAPIMockRecorder) DeleteSecurityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfiguration", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSecurityConfiguration), arg0)
+}
+
+// DeleteSecurityConfigurationRequest mocks base method
+func (m *MockGlueAPI) DeleteSecurityConfigurationRequest(arg0 *glue.DeleteSecurityConfigurationInput) (*request.Request, *glue.DeleteSecurityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSecurityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteSecurityConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteSecurityConfigurationRequest indicates an expected call of DeleteSecurityConfigurationRequest
+func (mr *MockGlueAPIMockRecorder) DeleteSecurityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfigurationRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSecurityConfigurationRequest), arg0)
+}
+
+// DeleteSecurityConfigurationWithContext mocks base method
+func (m *MockGlueAPI) DeleteSecurityConfigurationWithContext(arg0 aws.Context, arg1 *glue.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*glue.DeleteSecurityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSecurityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteSecurityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSecurityConfigurationWithContext indicates an expected call of DeleteSecurityConfigurationWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteSecurityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfigurationWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSecurityConfigurationWithContext), varargs...)
 }
 
 // DeleteTable mocks base method
@@ -2832,6 +2932,106 @@ func (mr *MockGlueAPIMockRecorder) GetPlanWithContext(arg0, arg1 interface{}, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlanWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetPlanWithContext), varargs...)
 }
 
+// GetSecurityConfiguration mocks base method
+func (m *MockGlueAPI) GetSecurityConfiguration(arg0 *glue.GetSecurityConfigurationInput) (*glue.GetSecurityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSecurityConfiguration", arg0)
+	ret0, _ := ret[0].(*glue.GetSecurityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSecurityConfiguration indicates an expected call of GetSecurityConfiguration
+func (mr *MockGlueAPIMockRecorder) GetSecurityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfiguration", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfiguration), arg0)
+}
+
+// GetSecurityConfigurationRequest mocks base method
+func (m *MockGlueAPI) GetSecurityConfigurationRequest(arg0 *glue.GetSecurityConfigurationInput) (*request.Request, *glue.GetSecurityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSecurityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSecurityConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetSecurityConfigurationRequest indicates an expected call of GetSecurityConfigurationRequest
+func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfigurationRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfigurationRequest), arg0)
+}
+
+// GetSecurityConfigurationWithContext mocks base method
+func (m *MockGlueAPI) GetSecurityConfigurationWithContext(arg0 aws.Context, arg1 *glue.GetSecurityConfigurationInput, arg2 ...request.Option) (*glue.GetSecurityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSecurityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSecurityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSecurityConfigurationWithContext indicates an expected call of GetSecurityConfigurationWithContext
+func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfigurationWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfigurationWithContext), varargs...)
+}
+
+// GetSecurityConfigurations mocks base method
+func (m *MockGlueAPI) GetSecurityConfigurations(arg0 *glue.GetSecurityConfigurationsInput) (*glue.GetSecurityConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSecurityConfigurations", arg0)
+	ret0, _ := ret[0].(*glue.GetSecurityConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSecurityConfigurations indicates an expected call of GetSecurityConfigurations
+func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfigurations", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfigurations), arg0)
+}
+
+// GetSecurityConfigurationsRequest mocks base method
+func (m *MockGlueAPI) GetSecurityConfigurationsRequest(arg0 *glue.GetSecurityConfigurationsInput) (*request.Request, *glue.GetSecurityConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSecurityConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSecurityConfigurationsOutput)
+	return ret0, ret1
+}
+
+// GetSecurityConfigurationsRequest indicates an expected call of GetSecurityConfigurationsRequest
+func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfigurationsRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfigurationsRequest), arg0)
+}
+
+// GetSecurityConfigurationsWithContext mocks base method
+func (m *MockGlueAPI) GetSecurityConfigurationsWithContext(arg0 aws.Context, arg1 *glue.GetSecurityConfigurationsInput, arg2 ...request.Option) (*glue.GetSecurityConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSecurityConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSecurityConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSecurityConfigurationsWithContext indicates an expected call of GetSecurityConfigurationsWithContext
+func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfigurationsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfigurationsWithContext), varargs...)
+}
+
 // GetTable mocks base method
 func (m *MockGlueAPI) GetTable(arg0 *glue.GetTableInput) (*glue.GetTableOutput, error) {
 	m.ctrl.T.Helper()
@@ -3412,6 +3612,56 @@ func (mr *MockGlueAPIMockRecorder) ImportCatalogToGlueWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportCatalogToGlueWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ImportCatalogToGlueWithContext), varargs...)
+}
+
+// PutDataCatalogEncryptionSettings mocks base method
+func (m *MockGlueAPI) PutDataCatalogEncryptionSettings(arg0 *glue.PutDataCatalogEncryptionSettingsInput) (*glue.PutDataCatalogEncryptionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDataCatalogEncryptionSettings", arg0)
+	ret0, _ := ret[0].(*glue.PutDataCatalogEncryptionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDataCatalogEncryptionSettings indicates an expected call of PutDataCatalogEncryptionSettings
+func (mr *MockGlueAPIMockRecorder) PutDataCatalogEncryptionSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataCatalogEncryptionSettings", reflect.TypeOf((*MockGlueAPI)(nil).PutDataCatalogEncryptionSettings), arg0)
+}
+
+// PutDataCatalogEncryptionSettingsRequest mocks base method
+func (m *MockGlueAPI) PutDataCatalogEncryptionSettingsRequest(arg0 *glue.PutDataCatalogEncryptionSettingsInput) (*request.Request, *glue.PutDataCatalogEncryptionSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDataCatalogEncryptionSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.PutDataCatalogEncryptionSettingsOutput)
+	return ret0, ret1
+}
+
+// PutDataCatalogEncryptionSettingsRequest indicates an expected call of PutDataCatalogEncryptionSettingsRequest
+func (mr *MockGlueAPIMockRecorder) PutDataCatalogEncryptionSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataCatalogEncryptionSettingsRequest", reflect.TypeOf((*MockGlueAPI)(nil).PutDataCatalogEncryptionSettingsRequest), arg0)
+}
+
+// PutDataCatalogEncryptionSettingsWithContext mocks base method
+func (m *MockGlueAPI) PutDataCatalogEncryptionSettingsWithContext(arg0 aws.Context, arg1 *glue.PutDataCatalogEncryptionSettingsInput, arg2 ...request.Option) (*glue.PutDataCatalogEncryptionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutDataCatalogEncryptionSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.PutDataCatalogEncryptionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDataCatalogEncryptionSettingsWithContext indicates an expected call of PutDataCatalogEncryptionSettingsWithContext
+func (mr *MockGlueAPIMockRecorder) PutDataCatalogEncryptionSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataCatalogEncryptionSettingsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).PutDataCatalogEncryptionSettingsWithContext), varargs...)
 }
 
 // ResetJobBookmark mocks base method
