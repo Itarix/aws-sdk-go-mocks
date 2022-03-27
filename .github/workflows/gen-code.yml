@@ -1,0 +1,27 @@
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  push:
+    branches:
+      - '*'
+
+jobs:
+  generation:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: '1.15.1' # The Go version to download (if necessary) and use.
+      - name: test
+        env:
+          REPO_GITHUB_AWS: aws/aws-sdk-go
+        run: |
+          SDK_ACTUAL_VERSION=$(cat aws-sdk.version)
+          LAST_VERSION=$(./scripts/git-utils/get_last_version.sh $REPO_GITHUB_AWS)
+          if [ "$SDK_KNOWN_VERSION" = "$LAST_VERSION" ]; then
+            echo "no new version"
+          else
+           ./scripts/generate_all_since_version.sh $SDK_ACTUAL_VERSION $LAST_VERSION $REPO_GITHUB_AWS
+          fi
