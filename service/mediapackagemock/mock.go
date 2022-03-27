@@ -551,6 +551,56 @@ func (mr *MockMediaPackageAPIMockRecorder) RotateChannelCredentialsWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateChannelCredentialsWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).RotateChannelCredentialsWithContext), varargs...)
 }
 
+// RotateIngestEndpointCredentials mocks base method
+func (m *MockMediaPackageAPI) RotateIngestEndpointCredentials(arg0 *mediapackage.RotateIngestEndpointCredentialsInput) (*mediapackage.RotateIngestEndpointCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RotateIngestEndpointCredentials", arg0)
+	ret0, _ := ret[0].(*mediapackage.RotateIngestEndpointCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RotateIngestEndpointCredentials indicates an expected call of RotateIngestEndpointCredentials
+func (mr *MockMediaPackageAPIMockRecorder) RotateIngestEndpointCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateIngestEndpointCredentials", reflect.TypeOf((*MockMediaPackageAPI)(nil).RotateIngestEndpointCredentials), arg0)
+}
+
+// RotateIngestEndpointCredentialsRequest mocks base method
+func (m *MockMediaPackageAPI) RotateIngestEndpointCredentialsRequest(arg0 *mediapackage.RotateIngestEndpointCredentialsInput) (*request.Request, *mediapackage.RotateIngestEndpointCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RotateIngestEndpointCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediapackage.RotateIngestEndpointCredentialsOutput)
+	return ret0, ret1
+}
+
+// RotateIngestEndpointCredentialsRequest indicates an expected call of RotateIngestEndpointCredentialsRequest
+func (mr *MockMediaPackageAPIMockRecorder) RotateIngestEndpointCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateIngestEndpointCredentialsRequest", reflect.TypeOf((*MockMediaPackageAPI)(nil).RotateIngestEndpointCredentialsRequest), arg0)
+}
+
+// RotateIngestEndpointCredentialsWithContext mocks base method
+func (m *MockMediaPackageAPI) RotateIngestEndpointCredentialsWithContext(arg0 aws.Context, arg1 *mediapackage.RotateIngestEndpointCredentialsInput, arg2 ...request.Option) (*mediapackage.RotateIngestEndpointCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RotateIngestEndpointCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediapackage.RotateIngestEndpointCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RotateIngestEndpointCredentialsWithContext indicates an expected call of RotateIngestEndpointCredentialsWithContext
+func (mr *MockMediaPackageAPIMockRecorder) RotateIngestEndpointCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateIngestEndpointCredentialsWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).RotateIngestEndpointCredentialsWithContext), varargs...)
+}
+
 // UpdateChannel mocks base method
 func (m *MockMediaPackageAPI) UpdateChannel(arg0 *mediapackage.UpdateChannelInput) (*mediapackage.UpdateChannelOutput, error) {
 	m.ctrl.T.Helper()
