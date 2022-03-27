@@ -601,6 +601,189 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeReservedElasticsearch
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedElasticsearchInstancesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeReservedElasticsearchInstancesWithContext), varargs...)
 }
 
+// GetCompatibleElasticsearchVersions mocks base method
+func (m *MockElasticsearchServiceAPI) GetCompatibleElasticsearchVersions(arg0 *elasticsearchservice.GetCompatibleElasticsearchVersionsInput) (*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCompatibleElasticsearchVersions", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCompatibleElasticsearchVersions indicates an expected call of GetCompatibleElasticsearchVersions
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetCompatibleElasticsearchVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCompatibleElasticsearchVersions", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetCompatibleElasticsearchVersions), arg0)
+}
+
+// GetCompatibleElasticsearchVersionsRequest mocks base method
+func (m *MockElasticsearchServiceAPI) GetCompatibleElasticsearchVersionsRequest(arg0 *elasticsearchservice.GetCompatibleElasticsearchVersionsInput) (*request.Request, *elasticsearchservice.GetCompatibleElasticsearchVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCompatibleElasticsearchVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput)
+	return ret0, ret1
+}
+
+// GetCompatibleElasticsearchVersionsRequest indicates an expected call of GetCompatibleElasticsearchVersionsRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetCompatibleElasticsearchVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCompatibleElasticsearchVersionsRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetCompatibleElasticsearchVersionsRequest), arg0)
+}
+
+// GetCompatibleElasticsearchVersionsWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) GetCompatibleElasticsearchVersionsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetCompatibleElasticsearchVersionsInput, arg2 ...request.Option) (*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCompatibleElasticsearchVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCompatibleElasticsearchVersionsWithContext indicates an expected call of GetCompatibleElasticsearchVersionsWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetCompatibleElasticsearchVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCompatibleElasticsearchVersionsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetCompatibleElasticsearchVersionsWithContext), varargs...)
+}
+
+// GetUpgradeHistory mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistory(arg0 *elasticsearchservice.GetUpgradeHistoryInput) (*elasticsearchservice.GetUpgradeHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUpgradeHistory", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.GetUpgradeHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUpgradeHistory indicates an expected call of GetUpgradeHistory
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeHistory", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeHistory), arg0)
+}
+
+// GetUpgradeHistoryPages mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryPages(arg0 *elasticsearchservice.GetUpgradeHistoryInput, arg1 func(*elasticsearchservice.GetUpgradeHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUpgradeHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetUpgradeHistoryPages indicates an expected call of GetUpgradeHistoryPages
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeHistoryPages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeHistoryPages), arg0, arg1)
+}
+
+// GetUpgradeHistoryPagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryPagesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetUpgradeHistoryInput, arg2 func(*elasticsearchservice.GetUpgradeHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUpgradeHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetUpgradeHistoryPagesWithContext indicates an expected call of GetUpgradeHistoryPagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeHistoryPagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeHistoryPagesWithContext), varargs...)
+}
+
+// GetUpgradeHistoryRequest mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryRequest(arg0 *elasticsearchservice.GetUpgradeHistoryInput) (*request.Request, *elasticsearchservice.GetUpgradeHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUpgradeHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.GetUpgradeHistoryOutput)
+	return ret0, ret1
+}
+
+// GetUpgradeHistoryRequest indicates an expected call of GetUpgradeHistoryRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeHistoryRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeHistoryRequest), arg0)
+}
+
+// GetUpgradeHistoryWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetUpgradeHistoryInput, arg2 ...request.Option) (*elasticsearchservice.GetUpgradeHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUpgradeHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.GetUpgradeHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUpgradeHistoryWithContext indicates an expected call of GetUpgradeHistoryWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeHistoryWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeHistoryWithContext), varargs...)
+}
+
+// GetUpgradeStatus mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeStatus(arg0 *elasticsearchservice.GetUpgradeStatusInput) (*elasticsearchservice.GetUpgradeStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUpgradeStatus", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.GetUpgradeStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUpgradeStatus indicates an expected call of GetUpgradeStatus
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeStatus", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeStatus), arg0)
+}
+
+// GetUpgradeStatusRequest mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeStatusRequest(arg0 *elasticsearchservice.GetUpgradeStatusInput) (*request.Request, *elasticsearchservice.GetUpgradeStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUpgradeStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.GetUpgradeStatusOutput)
+	return ret0, ret1
+}
+
+// GetUpgradeStatusRequest indicates an expected call of GetUpgradeStatusRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeStatusRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeStatusRequest), arg0)
+}
+
+// GetUpgradeStatusWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) GetUpgradeStatusWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetUpgradeStatusInput, arg2 ...request.Option) (*elasticsearchservice.GetUpgradeStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUpgradeStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.GetUpgradeStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUpgradeStatusWithContext indicates an expected call of GetUpgradeStatusWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeStatusWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetUpgradeStatusWithContext), varargs...)
+}
+
 // ListDomainNames mocks base method
 func (m *MockElasticsearchServiceAPI) ListDomainNames(arg0 *elasticsearchservice.ListDomainNamesInput) (*elasticsearchservice.ListDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1015,4 +1198,54 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) UpdateElasticsearchDomainConf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateElasticsearchDomainConfigWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpdateElasticsearchDomainConfigWithContext), varargs...)
+}
+
+// UpgradeElasticsearchDomain mocks base method
+func (m *MockElasticsearchServiceAPI) UpgradeElasticsearchDomain(arg0 *elasticsearchservice.UpgradeElasticsearchDomainInput) (*elasticsearchservice.UpgradeElasticsearchDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpgradeElasticsearchDomain", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.UpgradeElasticsearchDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpgradeElasticsearchDomain indicates an expected call of UpgradeElasticsearchDomain
+func (mr *MockElasticsearchServiceAPIMockRecorder) UpgradeElasticsearchDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeElasticsearchDomain", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpgradeElasticsearchDomain), arg0)
+}
+
+// UpgradeElasticsearchDomainRequest mocks base method
+func (m *MockElasticsearchServiceAPI) UpgradeElasticsearchDomainRequest(arg0 *elasticsearchservice.UpgradeElasticsearchDomainInput) (*request.Request, *elasticsearchservice.UpgradeElasticsearchDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpgradeElasticsearchDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.UpgradeElasticsearchDomainOutput)
+	return ret0, ret1
+}
+
+// UpgradeElasticsearchDomainRequest indicates an expected call of UpgradeElasticsearchDomainRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) UpgradeElasticsearchDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeElasticsearchDomainRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpgradeElasticsearchDomainRequest), arg0)
+}
+
+// UpgradeElasticsearchDomainWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) UpgradeElasticsearchDomainWithContext(arg0 aws.Context, arg1 *elasticsearchservice.UpgradeElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.UpgradeElasticsearchDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpgradeElasticsearchDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.UpgradeElasticsearchDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpgradeElasticsearchDomainWithContext indicates an expected call of UpgradeElasticsearchDomainWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) UpgradeElasticsearchDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeElasticsearchDomainWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpgradeElasticsearchDomainWithContext), varargs...)
 }

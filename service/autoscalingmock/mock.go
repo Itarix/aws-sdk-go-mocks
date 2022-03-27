@@ -185,6 +185,106 @@ func (mr *MockAutoScalingAPIMockRecorder) AttachLoadBalancersWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachLoadBalancersWithContext", reflect.TypeOf((*MockAutoScalingAPI)(nil).AttachLoadBalancersWithContext), varargs...)
 }
 
+// BatchDeleteScheduledAction mocks base method
+func (m *MockAutoScalingAPI) BatchDeleteScheduledAction(arg0 *autoscaling.BatchDeleteScheduledActionInput) (*autoscaling.BatchDeleteScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteScheduledAction", arg0)
+	ret0, _ := ret[0].(*autoscaling.BatchDeleteScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteScheduledAction indicates an expected call of BatchDeleteScheduledAction
+func (mr *MockAutoScalingAPIMockRecorder) BatchDeleteScheduledAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteScheduledAction", reflect.TypeOf((*MockAutoScalingAPI)(nil).BatchDeleteScheduledAction), arg0)
+}
+
+// BatchDeleteScheduledActionRequest mocks base method
+func (m *MockAutoScalingAPI) BatchDeleteScheduledActionRequest(arg0 *autoscaling.BatchDeleteScheduledActionInput) (*request.Request, *autoscaling.BatchDeleteScheduledActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteScheduledActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*autoscaling.BatchDeleteScheduledActionOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteScheduledActionRequest indicates an expected call of BatchDeleteScheduledActionRequest
+func (mr *MockAutoScalingAPIMockRecorder) BatchDeleteScheduledActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteScheduledActionRequest", reflect.TypeOf((*MockAutoScalingAPI)(nil).BatchDeleteScheduledActionRequest), arg0)
+}
+
+// BatchDeleteScheduledActionWithContext mocks base method
+func (m *MockAutoScalingAPI) BatchDeleteScheduledActionWithContext(arg0 aws.Context, arg1 *autoscaling.BatchDeleteScheduledActionInput, arg2 ...request.Option) (*autoscaling.BatchDeleteScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteScheduledActionWithContext", varargs...)
+	ret0, _ := ret[0].(*autoscaling.BatchDeleteScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteScheduledActionWithContext indicates an expected call of BatchDeleteScheduledActionWithContext
+func (mr *MockAutoScalingAPIMockRecorder) BatchDeleteScheduledActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteScheduledActionWithContext", reflect.TypeOf((*MockAutoScalingAPI)(nil).BatchDeleteScheduledActionWithContext), varargs...)
+}
+
+// BatchPutScheduledUpdateGroupAction mocks base method
+func (m *MockAutoScalingAPI) BatchPutScheduledUpdateGroupAction(arg0 *autoscaling.BatchPutScheduledUpdateGroupActionInput) (*autoscaling.BatchPutScheduledUpdateGroupActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchPutScheduledUpdateGroupAction", arg0)
+	ret0, _ := ret[0].(*autoscaling.BatchPutScheduledUpdateGroupActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchPutScheduledUpdateGroupAction indicates an expected call of BatchPutScheduledUpdateGroupAction
+func (mr *MockAutoScalingAPIMockRecorder) BatchPutScheduledUpdateGroupAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchPutScheduledUpdateGroupAction", reflect.TypeOf((*MockAutoScalingAPI)(nil).BatchPutScheduledUpdateGroupAction), arg0)
+}
+
+// BatchPutScheduledUpdateGroupActionRequest mocks base method
+func (m *MockAutoScalingAPI) BatchPutScheduledUpdateGroupActionRequest(arg0 *autoscaling.BatchPutScheduledUpdateGroupActionInput) (*request.Request, *autoscaling.BatchPutScheduledUpdateGroupActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchPutScheduledUpdateGroupActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*autoscaling.BatchPutScheduledUpdateGroupActionOutput)
+	return ret0, ret1
+}
+
+// BatchPutScheduledUpdateGroupActionRequest indicates an expected call of BatchPutScheduledUpdateGroupActionRequest
+func (mr *MockAutoScalingAPIMockRecorder) BatchPutScheduledUpdateGroupActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchPutScheduledUpdateGroupActionRequest", reflect.TypeOf((*MockAutoScalingAPI)(nil).BatchPutScheduledUpdateGroupActionRequest), arg0)
+}
+
+// BatchPutScheduledUpdateGroupActionWithContext mocks base method
+func (m *MockAutoScalingAPI) BatchPutScheduledUpdateGroupActionWithContext(arg0 aws.Context, arg1 *autoscaling.BatchPutScheduledUpdateGroupActionInput, arg2 ...request.Option) (*autoscaling.BatchPutScheduledUpdateGroupActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchPutScheduledUpdateGroupActionWithContext", varargs...)
+	ret0, _ := ret[0].(*autoscaling.BatchPutScheduledUpdateGroupActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchPutScheduledUpdateGroupActionWithContext indicates an expected call of BatchPutScheduledUpdateGroupActionWithContext
+func (mr *MockAutoScalingAPIMockRecorder) BatchPutScheduledUpdateGroupActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchPutScheduledUpdateGroupActionWithContext", reflect.TypeOf((*MockAutoScalingAPI)(nil).BatchPutScheduledUpdateGroupActionWithContext), varargs...)
+}
+
 // CompleteLifecycleAction mocks base method
 func (m *MockAutoScalingAPI) CompleteLifecycleAction(arg0 *autoscaling.CompleteLifecycleActionInput) (*autoscaling.CompleteLifecycleActionOutput, error) {
 	m.ctrl.T.Helper()
