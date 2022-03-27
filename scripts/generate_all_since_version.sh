@@ -70,7 +70,7 @@ do
   then
     minor_after=$((minor+1))
     sdk_version="$major.$minor_after.0"
-    change_minor= false
+    change_minor=false
   else
     bugfix_after=$((bugfix+1))
     sdk_version="$major.$minor.$bugfix_after"
