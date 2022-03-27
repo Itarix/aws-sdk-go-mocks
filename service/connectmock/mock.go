@@ -285,6 +285,89 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeUserWithContext), varargs...)
 }
 
+// GetCurrentMetricData mocks base method
+func (m *MockConnectAPI) GetCurrentMetricData(arg0 *connect.GetCurrentMetricDataInput) (*connect.GetCurrentMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCurrentMetricData", arg0)
+	ret0, _ := ret[0].(*connect.GetCurrentMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCurrentMetricData indicates an expected call of GetCurrentMetricData
+func (mr *MockConnectAPIMockRecorder) GetCurrentMetricData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentMetricData", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentMetricData), arg0)
+}
+
+// GetCurrentMetricDataPages mocks base method
+func (m *MockConnectAPI) GetCurrentMetricDataPages(arg0 *connect.GetCurrentMetricDataInput, arg1 func(*connect.GetCurrentMetricDataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCurrentMetricDataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCurrentMetricDataPages indicates an expected call of GetCurrentMetricDataPages
+func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentMetricDataPages", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentMetricDataPages), arg0, arg1)
+}
+
+// GetCurrentMetricDataPagesWithContext mocks base method
+func (m *MockConnectAPI) GetCurrentMetricDataPagesWithContext(arg0 aws.Context, arg1 *connect.GetCurrentMetricDataInput, arg2 func(*connect.GetCurrentMetricDataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCurrentMetricDataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCurrentMetricDataPagesWithContext indicates an expected call of GetCurrentMetricDataPagesWithContext
+func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentMetricDataPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentMetricDataPagesWithContext), varargs...)
+}
+
+// GetCurrentMetricDataRequest mocks base method
+func (m *MockConnectAPI) GetCurrentMetricDataRequest(arg0 *connect.GetCurrentMetricDataInput) (*request.Request, *connect.GetCurrentMetricDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCurrentMetricDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.GetCurrentMetricDataOutput)
+	return ret0, ret1
+}
+
+// GetCurrentMetricDataRequest indicates an expected call of GetCurrentMetricDataRequest
+func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentMetricDataRequest", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentMetricDataRequest), arg0)
+}
+
+// GetCurrentMetricDataWithContext mocks base method
+func (m *MockConnectAPI) GetCurrentMetricDataWithContext(arg0 aws.Context, arg1 *connect.GetCurrentMetricDataInput, arg2 ...request.Option) (*connect.GetCurrentMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCurrentMetricDataWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.GetCurrentMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCurrentMetricDataWithContext indicates an expected call of GetCurrentMetricDataWithContext
+func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentMetricDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentMetricDataWithContext), varargs...)
+}
+
 // GetFederationToken mocks base method
 func (m *MockConnectAPI) GetFederationToken(arg0 *connect.GetFederationTokenInput) (*connect.GetFederationTokenOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +416,89 @@ func (mr *MockConnectAPIMockRecorder) GetFederationTokenWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFederationTokenWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetFederationTokenWithContext), varargs...)
+}
+
+// GetMetricData mocks base method
+func (m *MockConnectAPI) GetMetricData(arg0 *connect.GetMetricDataInput) (*connect.GetMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricData", arg0)
+	ret0, _ := ret[0].(*connect.GetMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetricData indicates an expected call of GetMetricData
+func (mr *MockConnectAPIMockRecorder) GetMetricData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricData", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricData), arg0)
+}
+
+// GetMetricDataPages mocks base method
+func (m *MockConnectAPI) GetMetricDataPages(arg0 *connect.GetMetricDataInput, arg1 func(*connect.GetMetricDataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricDataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMetricDataPages indicates an expected call of GetMetricDataPages
+func (mr *MockConnectAPIMockRecorder) GetMetricDataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataPages", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataPages), arg0, arg1)
+}
+
+// GetMetricDataPagesWithContext mocks base method
+func (m *MockConnectAPI) GetMetricDataPagesWithContext(arg0 aws.Context, arg1 *connect.GetMetricDataInput, arg2 func(*connect.GetMetricDataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMetricDataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMetricDataPagesWithContext indicates an expected call of GetMetricDataPagesWithContext
+func (mr *MockConnectAPIMockRecorder) GetMetricDataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataPagesWithContext), varargs...)
+}
+
+// GetMetricDataRequest mocks base method
+func (m *MockConnectAPI) GetMetricDataRequest(arg0 *connect.GetMetricDataInput) (*request.Request, *connect.GetMetricDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.GetMetricDataOutput)
+	return ret0, ret1
+}
+
+// GetMetricDataRequest indicates an expected call of GetMetricDataRequest
+func (mr *MockConnectAPIMockRecorder) GetMetricDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataRequest", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataRequest), arg0)
+}
+
+// GetMetricDataWithContext mocks base method
+func (m *MockConnectAPI) GetMetricDataWithContext(arg0 aws.Context, arg1 *connect.GetMetricDataInput, arg2 ...request.Option) (*connect.GetMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMetricDataWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.GetMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetricDataWithContext indicates an expected call of GetMetricDataWithContext
+func (mr *MockConnectAPIMockRecorder) GetMetricDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataWithContext), varargs...)
 }
 
 // ListRoutingProfiles mocks base method
