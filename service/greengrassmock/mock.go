@@ -1485,6 +1485,56 @@ func (mr *MockGreengrassAPIMockRecorder) GetAssociatedRoleWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedRoleWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetAssociatedRoleWithContext), varargs...)
 }
 
+// GetBulkDeploymentStatus mocks base method
+func (m *MockGreengrassAPI) GetBulkDeploymentStatus(arg0 *greengrass.GetBulkDeploymentStatusInput) (*greengrass.GetBulkDeploymentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBulkDeploymentStatus", arg0)
+	ret0, _ := ret[0].(*greengrass.GetBulkDeploymentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBulkDeploymentStatus indicates an expected call of GetBulkDeploymentStatus
+func (mr *MockGreengrassAPIMockRecorder) GetBulkDeploymentStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBulkDeploymentStatus", reflect.TypeOf((*MockGreengrassAPI)(nil).GetBulkDeploymentStatus), arg0)
+}
+
+// GetBulkDeploymentStatusRequest mocks base method
+func (m *MockGreengrassAPI) GetBulkDeploymentStatusRequest(arg0 *greengrass.GetBulkDeploymentStatusInput) (*request.Request, *greengrass.GetBulkDeploymentStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBulkDeploymentStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.GetBulkDeploymentStatusOutput)
+	return ret0, ret1
+}
+
+// GetBulkDeploymentStatusRequest indicates an expected call of GetBulkDeploymentStatusRequest
+func (mr *MockGreengrassAPIMockRecorder) GetBulkDeploymentStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBulkDeploymentStatusRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).GetBulkDeploymentStatusRequest), arg0)
+}
+
+// GetBulkDeploymentStatusWithContext mocks base method
+func (m *MockGreengrassAPI) GetBulkDeploymentStatusWithContext(arg0 aws.Context, arg1 *greengrass.GetBulkDeploymentStatusInput, arg2 ...request.Option) (*greengrass.GetBulkDeploymentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBulkDeploymentStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.GetBulkDeploymentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBulkDeploymentStatusWithContext indicates an expected call of GetBulkDeploymentStatusWithContext
+func (mr *MockGreengrassAPIMockRecorder) GetBulkDeploymentStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBulkDeploymentStatusWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetBulkDeploymentStatusWithContext), varargs...)
+}
+
 // GetConnectivityInfo mocks base method
 func (m *MockGreengrassAPI) GetConnectivityInfo(arg0 *greengrass.GetConnectivityInfoInput) (*greengrass.GetConnectivityInfoOutput, error) {
 	m.ctrl.T.Helper()
@@ -2435,6 +2485,106 @@ func (mr *MockGreengrassAPIMockRecorder) GetSubscriptionDefinitionWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSubscriptionDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetSubscriptionDefinitionWithContext), varargs...)
 }
 
+// ListBulkDeploymentDetailedReports mocks base method
+func (m *MockGreengrassAPI) ListBulkDeploymentDetailedReports(arg0 *greengrass.ListBulkDeploymentDetailedReportsInput) (*greengrass.ListBulkDeploymentDetailedReportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkDeploymentDetailedReports", arg0)
+	ret0, _ := ret[0].(*greengrass.ListBulkDeploymentDetailedReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBulkDeploymentDetailedReports indicates an expected call of ListBulkDeploymentDetailedReports
+func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentDetailedReports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeploymentDetailedReports", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeploymentDetailedReports), arg0)
+}
+
+// ListBulkDeploymentDetailedReportsRequest mocks base method
+func (m *MockGreengrassAPI) ListBulkDeploymentDetailedReportsRequest(arg0 *greengrass.ListBulkDeploymentDetailedReportsInput) (*request.Request, *greengrass.ListBulkDeploymentDetailedReportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkDeploymentDetailedReportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.ListBulkDeploymentDetailedReportsOutput)
+	return ret0, ret1
+}
+
+// ListBulkDeploymentDetailedReportsRequest indicates an expected call of ListBulkDeploymentDetailedReportsRequest
+func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentDetailedReportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeploymentDetailedReportsRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeploymentDetailedReportsRequest), arg0)
+}
+
+// ListBulkDeploymentDetailedReportsWithContext mocks base method
+func (m *MockGreengrassAPI) ListBulkDeploymentDetailedReportsWithContext(arg0 aws.Context, arg1 *greengrass.ListBulkDeploymentDetailedReportsInput, arg2 ...request.Option) (*greengrass.ListBulkDeploymentDetailedReportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBulkDeploymentDetailedReportsWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.ListBulkDeploymentDetailedReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBulkDeploymentDetailedReportsWithContext indicates an expected call of ListBulkDeploymentDetailedReportsWithContext
+func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentDetailedReportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeploymentDetailedReportsWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeploymentDetailedReportsWithContext), varargs...)
+}
+
+// ListBulkDeployments mocks base method
+func (m *MockGreengrassAPI) ListBulkDeployments(arg0 *greengrass.ListBulkDeploymentsInput) (*greengrass.ListBulkDeploymentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkDeployments", arg0)
+	ret0, _ := ret[0].(*greengrass.ListBulkDeploymentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBulkDeployments indicates an expected call of ListBulkDeployments
+func (mr *MockGreengrassAPIMockRecorder) ListBulkDeployments(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeployments", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeployments), arg0)
+}
+
+// ListBulkDeploymentsRequest mocks base method
+func (m *MockGreengrassAPI) ListBulkDeploymentsRequest(arg0 *greengrass.ListBulkDeploymentsInput) (*request.Request, *greengrass.ListBulkDeploymentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkDeploymentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.ListBulkDeploymentsOutput)
+	return ret0, ret1
+}
+
+// ListBulkDeploymentsRequest indicates an expected call of ListBulkDeploymentsRequest
+func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeploymentsRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeploymentsRequest), arg0)
+}
+
+// ListBulkDeploymentsWithContext mocks base method
+func (m *MockGreengrassAPI) ListBulkDeploymentsWithContext(arg0 aws.Context, arg1 *greengrass.ListBulkDeploymentsInput, arg2 ...request.Option) (*greengrass.ListBulkDeploymentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBulkDeploymentsWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.ListBulkDeploymentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBulkDeploymentsWithContext indicates an expected call of ListBulkDeploymentsWithContext
+func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkDeploymentsWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).ListBulkDeploymentsWithContext), varargs...)
+}
+
 // ListCoreDefinitionVersions mocks base method
 func (m *MockGreengrassAPI) ListCoreDefinitionVersions(arg0 *greengrass.ListCoreDefinitionVersionsInput) (*greengrass.ListCoreDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3283,6 +3433,106 @@ func (mr *MockGreengrassAPIMockRecorder) ResetDeploymentsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetDeploymentsWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).ResetDeploymentsWithContext), varargs...)
+}
+
+// StartBulkDeployment mocks base method
+func (m *MockGreengrassAPI) StartBulkDeployment(arg0 *greengrass.StartBulkDeploymentInput) (*greengrass.StartBulkDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBulkDeployment", arg0)
+	ret0, _ := ret[0].(*greengrass.StartBulkDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBulkDeployment indicates an expected call of StartBulkDeployment
+func (mr *MockGreengrassAPIMockRecorder) StartBulkDeployment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkDeployment", reflect.TypeOf((*MockGreengrassAPI)(nil).StartBulkDeployment), arg0)
+}
+
+// StartBulkDeploymentRequest mocks base method
+func (m *MockGreengrassAPI) StartBulkDeploymentRequest(arg0 *greengrass.StartBulkDeploymentInput) (*request.Request, *greengrass.StartBulkDeploymentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBulkDeploymentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.StartBulkDeploymentOutput)
+	return ret0, ret1
+}
+
+// StartBulkDeploymentRequest indicates an expected call of StartBulkDeploymentRequest
+func (mr *MockGreengrassAPIMockRecorder) StartBulkDeploymentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkDeploymentRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).StartBulkDeploymentRequest), arg0)
+}
+
+// StartBulkDeploymentWithContext mocks base method
+func (m *MockGreengrassAPI) StartBulkDeploymentWithContext(arg0 aws.Context, arg1 *greengrass.StartBulkDeploymentInput, arg2 ...request.Option) (*greengrass.StartBulkDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartBulkDeploymentWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.StartBulkDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBulkDeploymentWithContext indicates an expected call of StartBulkDeploymentWithContext
+func (mr *MockGreengrassAPIMockRecorder) StartBulkDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkDeploymentWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).StartBulkDeploymentWithContext), varargs...)
+}
+
+// StopBulkDeployment mocks base method
+func (m *MockGreengrassAPI) StopBulkDeployment(arg0 *greengrass.StopBulkDeploymentInput) (*greengrass.StopBulkDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopBulkDeployment", arg0)
+	ret0, _ := ret[0].(*greengrass.StopBulkDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopBulkDeployment indicates an expected call of StopBulkDeployment
+func (mr *MockGreengrassAPIMockRecorder) StopBulkDeployment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopBulkDeployment", reflect.TypeOf((*MockGreengrassAPI)(nil).StopBulkDeployment), arg0)
+}
+
+// StopBulkDeploymentRequest mocks base method
+func (m *MockGreengrassAPI) StopBulkDeploymentRequest(arg0 *greengrass.StopBulkDeploymentInput) (*request.Request, *greengrass.StopBulkDeploymentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopBulkDeploymentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.StopBulkDeploymentOutput)
+	return ret0, ret1
+}
+
+// StopBulkDeploymentRequest indicates an expected call of StopBulkDeploymentRequest
+func (mr *MockGreengrassAPIMockRecorder) StopBulkDeploymentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopBulkDeploymentRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).StopBulkDeploymentRequest), arg0)
+}
+
+// StopBulkDeploymentWithContext mocks base method
+func (m *MockGreengrassAPI) StopBulkDeploymentWithContext(arg0 aws.Context, arg1 *greengrass.StopBulkDeploymentInput, arg2 ...request.Option) (*greengrass.StopBulkDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopBulkDeploymentWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.StopBulkDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopBulkDeploymentWithContext indicates an expected call of StopBulkDeploymentWithContext
+func (mr *MockGreengrassAPIMockRecorder) StopBulkDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopBulkDeploymentWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).StopBulkDeploymentWithContext), varargs...)
 }
 
 // UpdateConnectivityInfo mocks base method
