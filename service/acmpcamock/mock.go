@@ -550,6 +550,39 @@ func (mr *MockACMPCAAPIMockRecorder) ListCertificateAuthorities(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificateAuthorities", reflect.TypeOf((*MockACMPCAAPI)(nil).ListCertificateAuthorities), arg0)
 }
 
+// ListCertificateAuthoritiesPages mocks base method
+func (m *MockACMPCAAPI) ListCertificateAuthoritiesPages(arg0 *acmpca.ListCertificateAuthoritiesInput, arg1 func(*acmpca.ListCertificateAuthoritiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificateAuthoritiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCertificateAuthoritiesPages indicates an expected call of ListCertificateAuthoritiesPages
+func (mr *MockACMPCAAPIMockRecorder) ListCertificateAuthoritiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificateAuthoritiesPages", reflect.TypeOf((*MockACMPCAAPI)(nil).ListCertificateAuthoritiesPages), arg0, arg1)
+}
+
+// ListCertificateAuthoritiesPagesWithContext mocks base method
+func (m *MockACMPCAAPI) ListCertificateAuthoritiesPagesWithContext(arg0 aws.Context, arg1 *acmpca.ListCertificateAuthoritiesInput, arg2 func(*acmpca.ListCertificateAuthoritiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCertificateAuthoritiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCertificateAuthoritiesPagesWithContext indicates an expected call of ListCertificateAuthoritiesPagesWithContext
+func (mr *MockACMPCAAPIMockRecorder) ListCertificateAuthoritiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificateAuthoritiesPagesWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).ListCertificateAuthoritiesPagesWithContext), varargs...)
+}
+
 // ListCertificateAuthoritiesRequest mocks base method
 func (m *MockACMPCAAPI) ListCertificateAuthoritiesRequest(arg0 *acmpca.ListCertificateAuthoritiesInput) (*request.Request, *acmpca.ListCertificateAuthoritiesOutput) {
 	m.ctrl.T.Helper()
@@ -883,4 +916,103 @@ func (mr *MockACMPCAAPIMockRecorder) UpdateCertificateAuthorityWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateAuthorityWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).UpdateCertificateAuthorityWithContext), varargs...)
+}
+
+// WaitUntilAuditReportCreated mocks base method
+func (m *MockACMPCAAPI) WaitUntilAuditReportCreated(arg0 *acmpca.DescribeCertificateAuthorityAuditReportInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilAuditReportCreated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilAuditReportCreated indicates an expected call of WaitUntilAuditReportCreated
+func (mr *MockACMPCAAPIMockRecorder) WaitUntilAuditReportCreated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAuditReportCreated", reflect.TypeOf((*MockACMPCAAPI)(nil).WaitUntilAuditReportCreated), arg0)
+}
+
+// WaitUntilAuditReportCreatedWithContext mocks base method
+func (m *MockACMPCAAPI) WaitUntilAuditReportCreatedWithContext(arg0 aws.Context, arg1 *acmpca.DescribeCertificateAuthorityAuditReportInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilAuditReportCreatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilAuditReportCreatedWithContext indicates an expected call of WaitUntilAuditReportCreatedWithContext
+func (mr *MockACMPCAAPIMockRecorder) WaitUntilAuditReportCreatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAuditReportCreatedWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).WaitUntilAuditReportCreatedWithContext), varargs...)
+}
+
+// WaitUntilCertificateAuthorityCSRCreated mocks base method
+func (m *MockACMPCAAPI) WaitUntilCertificateAuthorityCSRCreated(arg0 *acmpca.GetCertificateAuthorityCsrInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilCertificateAuthorityCSRCreated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilCertificateAuthorityCSRCreated indicates an expected call of WaitUntilCertificateAuthorityCSRCreated
+func (mr *MockACMPCAAPIMockRecorder) WaitUntilCertificateAuthorityCSRCreated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilCertificateAuthorityCSRCreated", reflect.TypeOf((*MockACMPCAAPI)(nil).WaitUntilCertificateAuthorityCSRCreated), arg0)
+}
+
+// WaitUntilCertificateAuthorityCSRCreatedWithContext mocks base method
+func (m *MockACMPCAAPI) WaitUntilCertificateAuthorityCSRCreatedWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateAuthorityCsrInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilCertificateAuthorityCSRCreatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilCertificateAuthorityCSRCreatedWithContext indicates an expected call of WaitUntilCertificateAuthorityCSRCreatedWithContext
+func (mr *MockACMPCAAPIMockRecorder) WaitUntilCertificateAuthorityCSRCreatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilCertificateAuthorityCSRCreatedWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).WaitUntilCertificateAuthorityCSRCreatedWithContext), varargs...)
+}
+
+// WaitUntilCertificateIssued mocks base method
+func (m *MockACMPCAAPI) WaitUntilCertificateIssued(arg0 *acmpca.GetCertificateInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilCertificateIssued", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilCertificateIssued indicates an expected call of WaitUntilCertificateIssued
+func (mr *MockACMPCAAPIMockRecorder) WaitUntilCertificateIssued(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilCertificateIssued", reflect.TypeOf((*MockACMPCAAPI)(nil).WaitUntilCertificateIssued), arg0)
+}
+
+// WaitUntilCertificateIssuedWithContext mocks base method
+func (m *MockACMPCAAPI) WaitUntilCertificateIssuedWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilCertificateIssuedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilCertificateIssuedWithContext indicates an expected call of WaitUntilCertificateIssuedWithContext
+func (mr *MockACMPCAAPIMockRecorder) WaitUntilCertificateIssuedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilCertificateIssuedWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).WaitUntilCertificateIssuedWithContext), varargs...)
 }
