@@ -234,3 +234,69 @@ func (mr *MockEKSAPIMockRecorder) ListClustersWithContext(arg0, arg1 interface{}
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListClustersWithContext), varargs...)
 }
+
+// WaitUntilClusterActive mocks base method
+func (m *MockEKSAPI) WaitUntilClusterActive(arg0 *eks.DescribeClusterInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilClusterActive", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilClusterActive indicates an expected call of WaitUntilClusterActive
+func (mr *MockEKSAPIMockRecorder) WaitUntilClusterActive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterActive", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilClusterActive), arg0)
+}
+
+// WaitUntilClusterActiveWithContext mocks base method
+func (m *MockEKSAPI) WaitUntilClusterActiveWithContext(arg0 aws.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilClusterActiveWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilClusterActiveWithContext indicates an expected call of WaitUntilClusterActiveWithContext
+func (mr *MockEKSAPIMockRecorder) WaitUntilClusterActiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterActiveWithContext", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilClusterActiveWithContext), varargs...)
+}
+
+// WaitUntilClusterDeleted mocks base method
+func (m *MockEKSAPI) WaitUntilClusterDeleted(arg0 *eks.DescribeClusterInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilClusterDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilClusterDeleted indicates an expected call of WaitUntilClusterDeleted
+func (mr *MockEKSAPIMockRecorder) WaitUntilClusterDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterDeleted", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilClusterDeleted), arg0)
+}
+
+// WaitUntilClusterDeletedWithContext mocks base method
+func (m *MockEKSAPI) WaitUntilClusterDeletedWithContext(arg0 aws.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilClusterDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilClusterDeletedWithContext indicates an expected call of WaitUntilClusterDeletedWithContext
+func (mr *MockEKSAPIMockRecorder) WaitUntilClusterDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterDeletedWithContext", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilClusterDeletedWithContext), varargs...)
+}

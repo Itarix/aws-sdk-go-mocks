@@ -185,6 +185,56 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateCloudFormati
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationChangeSetWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).CreateCloudFormationChangeSetWithContext), varargs...)
 }
 
+// CreateCloudFormationTemplate mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationTemplate(arg0 *serverlessapplicationrepository.CreateCloudFormationTemplateInput) (*serverlessapplicationrepository.CreateCloudFormationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCloudFormationTemplate", arg0)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.CreateCloudFormationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCloudFormationTemplate indicates an expected call of CreateCloudFormationTemplate
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateCloudFormationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationTemplate", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).CreateCloudFormationTemplate), arg0)
+}
+
+// CreateCloudFormationTemplateRequest mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationTemplateRequest(arg0 *serverlessapplicationrepository.CreateCloudFormationTemplateInput) (*request.Request, *serverlessapplicationrepository.CreateCloudFormationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCloudFormationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*serverlessapplicationrepository.CreateCloudFormationTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateCloudFormationTemplateRequest indicates an expected call of CreateCloudFormationTemplateRequest
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateCloudFormationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationTemplateRequest", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).CreateCloudFormationTemplateRequest), arg0)
+}
+
+// CreateCloudFormationTemplateWithContext mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationTemplateWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.CreateCloudFormationTemplateInput, arg2 ...request.Option) (*serverlessapplicationrepository.CreateCloudFormationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCloudFormationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.CreateCloudFormationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCloudFormationTemplateWithContext indicates an expected call of CreateCloudFormationTemplateWithContext
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateCloudFormationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationTemplateWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).CreateCloudFormationTemplateWithContext), varargs...)
+}
+
 // DeleteApplication mocks base method
 func (m *MockServerlessApplicationRepositoryAPI) DeleteApplication(arg0 *serverlessapplicationrepository.DeleteApplicationInput) (*serverlessapplicationrepository.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetApplicationWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApplicationWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).GetApplicationWithContext), varargs...)
+}
+
+// GetCloudFormationTemplate mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) GetCloudFormationTemplate(arg0 *serverlessapplicationrepository.GetCloudFormationTemplateInput) (*serverlessapplicationrepository.GetCloudFormationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCloudFormationTemplate", arg0)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.GetCloudFormationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCloudFormationTemplate indicates an expected call of GetCloudFormationTemplate
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetCloudFormationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationTemplate", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).GetCloudFormationTemplate), arg0)
+}
+
+// GetCloudFormationTemplateRequest mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) GetCloudFormationTemplateRequest(arg0 *serverlessapplicationrepository.GetCloudFormationTemplateInput) (*request.Request, *serverlessapplicationrepository.GetCloudFormationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCloudFormationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*serverlessapplicationrepository.GetCloudFormationTemplateOutput)
+	return ret0, ret1
+}
+
+// GetCloudFormationTemplateRequest indicates an expected call of GetCloudFormationTemplateRequest
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetCloudFormationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationTemplateRequest", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).GetCloudFormationTemplateRequest), arg0)
+}
+
+// GetCloudFormationTemplateWithContext mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) GetCloudFormationTemplateWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.GetCloudFormationTemplateInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetCloudFormationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCloudFormationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.GetCloudFormationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCloudFormationTemplateWithContext indicates an expected call of GetCloudFormationTemplateWithContext
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetCloudFormationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationTemplateWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).GetCloudFormationTemplateWithContext), varargs...)
 }
 
 // ListApplicationVersions mocks base method
