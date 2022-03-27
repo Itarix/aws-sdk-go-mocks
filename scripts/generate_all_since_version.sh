@@ -92,6 +92,8 @@ do
     git config user.name "Repository CI"
     git push --set-upstream origin $name_branch
 
+    rm -rf service/*
+
     ./scripts/update_go_mod.sh $sdk_version
     ./scripts/gen/mock.sh $sdk_version
     echo $sdk_version > ./aws-sdk.version

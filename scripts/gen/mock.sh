@@ -9,8 +9,6 @@ fi
 
 sdk_version=$1
 
-rm service/*
-
 IFS=$'
 '
 
