@@ -5,138 +5,37 @@
 package lexruntimeservicemock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	lexruntimeservice "github.com/aws/aws-sdk-go/service/lexruntimeservice"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockLexRuntimeServiceAPI is a mock of LexRuntimeServiceAPI interface.
+// MockLexRuntimeServiceAPI is a mock of LexRuntimeServiceAPI interface
 type MockLexRuntimeServiceAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockLexRuntimeServiceAPIMockRecorder
 }
 
-// MockLexRuntimeServiceAPIMockRecorder is the mock recorder for MockLexRuntimeServiceAPI.
+// MockLexRuntimeServiceAPIMockRecorder is the mock recorder for MockLexRuntimeServiceAPI
 type MockLexRuntimeServiceAPIMockRecorder struct {
 	mock *MockLexRuntimeServiceAPI
 }
 
-// NewMockLexRuntimeServiceAPI creates a new mock instance.
+// NewMockLexRuntimeServiceAPI creates a new mock instance
 func NewMockLexRuntimeServiceAPI(ctrl *gomock.Controller) *MockLexRuntimeServiceAPI {
 	mock := &MockLexRuntimeServiceAPI{ctrl: ctrl}
 	mock.recorder = &MockLexRuntimeServiceAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockLexRuntimeServiceAPI) EXPECT() *MockLexRuntimeServiceAPIMockRecorder {
 	return m.recorder
 }
 
-// DeleteSession mocks base method.
-func (m *MockLexRuntimeServiceAPI) DeleteSession(arg0 *lexruntimeservice.DeleteSessionInput) (*lexruntimeservice.DeleteSessionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteSession", arg0)
-	ret0, _ := ret[0].(*lexruntimeservice.DeleteSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteSession indicates an expected call of DeleteSession.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) DeleteSession(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSession", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).DeleteSession), arg0)
-}
-
-// DeleteSessionRequest mocks base method.
-func (m *MockLexRuntimeServiceAPI) DeleteSessionRequest(arg0 *lexruntimeservice.DeleteSessionInput) (*request.Request, *lexruntimeservice.DeleteSessionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteSessionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*lexruntimeservice.DeleteSessionOutput)
-	return ret0, ret1
-}
-
-// DeleteSessionRequest indicates an expected call of DeleteSessionRequest.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) DeleteSessionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSessionRequest", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).DeleteSessionRequest), arg0)
-}
-
-// DeleteSessionWithContext mocks base method.
-func (m *MockLexRuntimeServiceAPI) DeleteSessionWithContext(arg0 context.Context, arg1 *lexruntimeservice.DeleteSessionInput, arg2 ...request.Option) (*lexruntimeservice.DeleteSessionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteSessionWithContext", varargs...)
-	ret0, _ := ret[0].(*lexruntimeservice.DeleteSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteSessionWithContext indicates an expected call of DeleteSessionWithContext.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) DeleteSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSessionWithContext", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).DeleteSessionWithContext), varargs...)
-}
-
-// GetSession mocks base method.
-func (m *MockLexRuntimeServiceAPI) GetSession(arg0 *lexruntimeservice.GetSessionInput) (*lexruntimeservice.GetSessionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetSession", arg0)
-	ret0, _ := ret[0].(*lexruntimeservice.GetSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetSession indicates an expected call of GetSession.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) GetSession(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSession", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).GetSession), arg0)
-}
-
-// GetSessionRequest mocks base method.
-func (m *MockLexRuntimeServiceAPI) GetSessionRequest(arg0 *lexruntimeservice.GetSessionInput) (*request.Request, *lexruntimeservice.GetSessionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetSessionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*lexruntimeservice.GetSessionOutput)
-	return ret0, ret1
-}
-
-// GetSessionRequest indicates an expected call of GetSessionRequest.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) GetSessionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionRequest", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).GetSessionRequest), arg0)
-}
-
-// GetSessionWithContext mocks base method.
-func (m *MockLexRuntimeServiceAPI) GetSessionWithContext(arg0 context.Context, arg1 *lexruntimeservice.GetSessionInput, arg2 ...request.Option) (*lexruntimeservice.GetSessionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetSessionWithContext", varargs...)
-	ret0, _ := ret[0].(*lexruntimeservice.GetSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetSessionWithContext indicates an expected call of GetSessionWithContext.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) GetSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionWithContext", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).GetSessionWithContext), varargs...)
-}
-
-// PostContent mocks base method.
+// PostContent mocks base method
 func (m *MockLexRuntimeServiceAPI) PostContent(arg0 *lexruntimeservice.PostContentInput) (*lexruntimeservice.PostContentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PostContent", arg0)
@@ -145,13 +44,13 @@ func (m *MockLexRuntimeServiceAPI) PostContent(arg0 *lexruntimeservice.PostConte
 	return ret0, ret1
 }
 
-// PostContent indicates an expected call of PostContent.
+// PostContent indicates an expected call of PostContent
 func (mr *MockLexRuntimeServiceAPIMockRecorder) PostContent(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostContent", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PostContent), arg0)
 }
 
-// PostContentRequest mocks base method.
+// PostContentRequest mocks base method
 func (m *MockLexRuntimeServiceAPI) PostContentRequest(arg0 *lexruntimeservice.PostContentInput) (*request.Request, *lexruntimeservice.PostContentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PostContentRequest", arg0)
@@ -160,14 +59,14 @@ func (m *MockLexRuntimeServiceAPI) PostContentRequest(arg0 *lexruntimeservice.Po
 	return ret0, ret1
 }
 
-// PostContentRequest indicates an expected call of PostContentRequest.
+// PostContentRequest indicates an expected call of PostContentRequest
 func (mr *MockLexRuntimeServiceAPIMockRecorder) PostContentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostContentRequest", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PostContentRequest), arg0)
 }
 
-// PostContentWithContext mocks base method.
-func (m *MockLexRuntimeServiceAPI) PostContentWithContext(arg0 context.Context, arg1 *lexruntimeservice.PostContentInput, arg2 ...request.Option) (*lexruntimeservice.PostContentOutput, error) {
+// PostContentWithContext mocks base method
+func (m *MockLexRuntimeServiceAPI) PostContentWithContext(arg0 aws.Context, arg1 *lexruntimeservice.PostContentInput, arg2 ...request.Option) (*lexruntimeservice.PostContentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +78,14 @@ func (m *MockLexRuntimeServiceAPI) PostContentWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// PostContentWithContext indicates an expected call of PostContentWithContext.
+// PostContentWithContext indicates an expected call of PostContentWithContext
 func (mr *MockLexRuntimeServiceAPIMockRecorder) PostContentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostContentWithContext", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PostContentWithContext), varargs...)
 }
 
-// PostText mocks base method.
+// PostText mocks base method
 func (m *MockLexRuntimeServiceAPI) PostText(arg0 *lexruntimeservice.PostTextInput) (*lexruntimeservice.PostTextOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PostText", arg0)
@@ -195,13 +94,13 @@ func (m *MockLexRuntimeServiceAPI) PostText(arg0 *lexruntimeservice.PostTextInpu
 	return ret0, ret1
 }
 
-// PostText indicates an expected call of PostText.
+// PostText indicates an expected call of PostText
 func (mr *MockLexRuntimeServiceAPIMockRecorder) PostText(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostText", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PostText), arg0)
 }
 
-// PostTextRequest mocks base method.
+// PostTextRequest mocks base method
 func (m *MockLexRuntimeServiceAPI) PostTextRequest(arg0 *lexruntimeservice.PostTextInput) (*request.Request, *lexruntimeservice.PostTextOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PostTextRequest", arg0)
@@ -210,14 +109,14 @@ func (m *MockLexRuntimeServiceAPI) PostTextRequest(arg0 *lexruntimeservice.PostT
 	return ret0, ret1
 }
 
-// PostTextRequest indicates an expected call of PostTextRequest.
+// PostTextRequest indicates an expected call of PostTextRequest
 func (mr *MockLexRuntimeServiceAPIMockRecorder) PostTextRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostTextRequest", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PostTextRequest), arg0)
 }
 
-// PostTextWithContext mocks base method.
-func (m *MockLexRuntimeServiceAPI) PostTextWithContext(arg0 context.Context, arg1 *lexruntimeservice.PostTextInput, arg2 ...request.Option) (*lexruntimeservice.PostTextOutput, error) {
+// PostTextWithContext mocks base method
+func (m *MockLexRuntimeServiceAPI) PostTextWithContext(arg0 aws.Context, arg1 *lexruntimeservice.PostTextInput, arg2 ...request.Option) (*lexruntimeservice.PostTextOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,59 +128,9 @@ func (m *MockLexRuntimeServiceAPI) PostTextWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// PostTextWithContext indicates an expected call of PostTextWithContext.
+// PostTextWithContext indicates an expected call of PostTextWithContext
 func (mr *MockLexRuntimeServiceAPIMockRecorder) PostTextWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostTextWithContext", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PostTextWithContext), varargs...)
-}
-
-// PutSession mocks base method.
-func (m *MockLexRuntimeServiceAPI) PutSession(arg0 *lexruntimeservice.PutSessionInput) (*lexruntimeservice.PutSessionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutSession", arg0)
-	ret0, _ := ret[0].(*lexruntimeservice.PutSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutSession indicates an expected call of PutSession.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) PutSession(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSession", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PutSession), arg0)
-}
-
-// PutSessionRequest mocks base method.
-func (m *MockLexRuntimeServiceAPI) PutSessionRequest(arg0 *lexruntimeservice.PutSessionInput) (*request.Request, *lexruntimeservice.PutSessionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutSessionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*lexruntimeservice.PutSessionOutput)
-	return ret0, ret1
-}
-
-// PutSessionRequest indicates an expected call of PutSessionRequest.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) PutSessionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSessionRequest", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PutSessionRequest), arg0)
-}
-
-// PutSessionWithContext mocks base method.
-func (m *MockLexRuntimeServiceAPI) PutSessionWithContext(arg0 context.Context, arg1 *lexruntimeservice.PutSessionInput, arg2 ...request.Option) (*lexruntimeservice.PutSessionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutSessionWithContext", varargs...)
-	ret0, _ := ret[0].(*lexruntimeservice.PutSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutSessionWithContext indicates an expected call of PutSessionWithContext.
-func (mr *MockLexRuntimeServiceAPIMockRecorder) PutSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSessionWithContext", reflect.TypeOf((*MockLexRuntimeServiceAPI)(nil).PutSessionWithContext), varargs...)
 }

@@ -5,38 +5,37 @@
 package machinelearningmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	machinelearning "github.com/aws/aws-sdk-go/service/machinelearning"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMachineLearningAPI is a mock of MachineLearningAPI interface.
+// MockMachineLearningAPI is a mock of MachineLearningAPI interface
 type MockMachineLearningAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMachineLearningAPIMockRecorder
 }
 
-// MockMachineLearningAPIMockRecorder is the mock recorder for MockMachineLearningAPI.
+// MockMachineLearningAPIMockRecorder is the mock recorder for MockMachineLearningAPI
 type MockMachineLearningAPIMockRecorder struct {
 	mock *MockMachineLearningAPI
 }
 
-// NewMockMachineLearningAPI creates a new mock instance.
+// NewMockMachineLearningAPI creates a new mock instance
 func NewMockMachineLearningAPI(ctrl *gomock.Controller) *MockMachineLearningAPI {
 	mock := &MockMachineLearningAPI{ctrl: ctrl}
 	mock.recorder = &MockMachineLearningAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMachineLearningAPI) EXPECT() *MockMachineLearningAPIMockRecorder {
 	return m.recorder
 }
 
-// AddTags mocks base method.
+// AddTags mocks base method
 func (m *MockMachineLearningAPI) AddTags(arg0 *machinelearning.AddTagsInput) (*machinelearning.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTags", arg0)
@@ -45,13 +44,13 @@ func (m *MockMachineLearningAPI) AddTags(arg0 *machinelearning.AddTagsInput) (*m
 	return ret0, ret1
 }
 
-// AddTags indicates an expected call of AddTags.
+// AddTags indicates an expected call of AddTags
 func (mr *MockMachineLearningAPIMockRecorder) AddTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTags", reflect.TypeOf((*MockMachineLearningAPI)(nil).AddTags), arg0)
 }
 
-// AddTagsRequest mocks base method.
+// AddTagsRequest mocks base method
 func (m *MockMachineLearningAPI) AddTagsRequest(arg0 *machinelearning.AddTagsInput) (*request.Request, *machinelearning.AddTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMachineLearningAPI) AddTagsRequest(arg0 *machinelearning.AddTagsInp
 	return ret0, ret1
 }
 
-// AddTagsRequest indicates an expected call of AddTagsRequest.
+// AddTagsRequest indicates an expected call of AddTagsRequest
 func (mr *MockMachineLearningAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).AddTagsRequest), arg0)
 }
 
-// AddTagsWithContext mocks base method.
-func (m *MockMachineLearningAPI) AddTagsWithContext(arg0 context.Context, arg1 *machinelearning.AddTagsInput, arg2 ...request.Option) (*machinelearning.AddTagsOutput, error) {
+// AddTagsWithContext mocks base method
+func (m *MockMachineLearningAPI) AddTagsWithContext(arg0 aws.Context, arg1 *machinelearning.AddTagsInput, arg2 ...request.Option) (*machinelearning.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockMachineLearningAPI) AddTagsWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// AddTagsWithContext indicates an expected call of AddTagsWithContext.
+// AddTagsWithContext indicates an expected call of AddTagsWithContext
 func (mr *MockMachineLearningAPIMockRecorder) AddTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).AddTagsWithContext), varargs...)
 }
 
-// CreateBatchPrediction mocks base method.
+// CreateBatchPrediction mocks base method
 func (m *MockMachineLearningAPI) CreateBatchPrediction(arg0 *machinelearning.CreateBatchPredictionInput) (*machinelearning.CreateBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateBatchPrediction", arg0)
@@ -95,13 +94,13 @@ func (m *MockMachineLearningAPI) CreateBatchPrediction(arg0 *machinelearning.Cre
 	return ret0, ret1
 }
 
-// CreateBatchPrediction indicates an expected call of CreateBatchPrediction.
+// CreateBatchPrediction indicates an expected call of CreateBatchPrediction
 func (mr *MockMachineLearningAPIMockRecorder) CreateBatchPrediction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchPrediction", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateBatchPrediction), arg0)
 }
 
-// CreateBatchPredictionRequest mocks base method.
+// CreateBatchPredictionRequest mocks base method
 func (m *MockMachineLearningAPI) CreateBatchPredictionRequest(arg0 *machinelearning.CreateBatchPredictionInput) (*request.Request, *machinelearning.CreateBatchPredictionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateBatchPredictionRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockMachineLearningAPI) CreateBatchPredictionRequest(arg0 *machinelearn
 	return ret0, ret1
 }
 
-// CreateBatchPredictionRequest indicates an expected call of CreateBatchPredictionRequest.
+// CreateBatchPredictionRequest indicates an expected call of CreateBatchPredictionRequest
 func (mr *MockMachineLearningAPIMockRecorder) CreateBatchPredictionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchPredictionRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateBatchPredictionRequest), arg0)
 }
 
-// CreateBatchPredictionWithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.CreateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.CreateBatchPredictionOutput, error) {
+// CreateBatchPredictionWithContext mocks base method
+func (m *MockMachineLearningAPI) CreateBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.CreateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.CreateBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockMachineLearningAPI) CreateBatchPredictionWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// CreateBatchPredictionWithContext indicates an expected call of CreateBatchPredictionWithContext.
+// CreateBatchPredictionWithContext indicates an expected call of CreateBatchPredictionWithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateBatchPredictionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchPredictionWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateBatchPredictionWithContext), varargs...)
 }
 
-// CreateDataSourceFromRDS mocks base method.
+// CreateDataSourceFromRDS mocks base method
 func (m *MockMachineLearningAPI) CreateDataSourceFromRDS(arg0 *machinelearning.CreateDataSourceFromRDSInput) (*machinelearning.CreateDataSourceFromRDSOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceFromRDS", arg0)
@@ -145,13 +144,13 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromRDS(arg0 *machinelearning.C
 	return ret0, ret1
 }
 
-// CreateDataSourceFromRDS indicates an expected call of CreateDataSourceFromRDS.
+// CreateDataSourceFromRDS indicates an expected call of CreateDataSourceFromRDS
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRDS(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromRDS", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromRDS), arg0)
 }
 
-// CreateDataSourceFromRDSRequest mocks base method.
+// CreateDataSourceFromRDSRequest mocks base method
 func (m *MockMachineLearningAPI) CreateDataSourceFromRDSRequest(arg0 *machinelearning.CreateDataSourceFromRDSInput) (*request.Request, *machinelearning.CreateDataSourceFromRDSOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceFromRDSRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromRDSRequest(arg0 *machinelea
 	return ret0, ret1
 }
 
-// CreateDataSourceFromRDSRequest indicates an expected call of CreateDataSourceFromRDSRequest.
+// CreateDataSourceFromRDSRequest indicates an expected call of CreateDataSourceFromRDSRequest
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRDSRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromRDSRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromRDSRequest), arg0)
 }
 
-// CreateDataSourceFromRDSWithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateDataSourceFromRDSWithContext(arg0 context.Context, arg1 *machinelearning.CreateDataSourceFromRDSInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRDSOutput, error) {
+// CreateDataSourceFromRDSWithContext mocks base method
+func (m *MockMachineLearningAPI) CreateDataSourceFromRDSWithContext(arg0 aws.Context, arg1 *machinelearning.CreateDataSourceFromRDSInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRDSOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromRDSWithContext(arg0 context
 	return ret0, ret1
 }
 
-// CreateDataSourceFromRDSWithContext indicates an expected call of CreateDataSourceFromRDSWithContext.
+// CreateDataSourceFromRDSWithContext indicates an expected call of CreateDataSourceFromRDSWithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRDSWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromRDSWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromRDSWithContext), varargs...)
 }
 
-// CreateDataSourceFromRedshift mocks base method.
+// CreateDataSourceFromRedshift mocks base method
 func (m *MockMachineLearningAPI) CreateDataSourceFromRedshift(arg0 *machinelearning.CreateDataSourceFromRedshiftInput) (*machinelearning.CreateDataSourceFromRedshiftOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceFromRedshift", arg0)
@@ -195,13 +194,13 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromRedshift(arg0 *machinelearn
 	return ret0, ret1
 }
 
-// CreateDataSourceFromRedshift indicates an expected call of CreateDataSourceFromRedshift.
+// CreateDataSourceFromRedshift indicates an expected call of CreateDataSourceFromRedshift
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRedshift(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromRedshift", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromRedshift), arg0)
 }
 
-// CreateDataSourceFromRedshiftRequest mocks base method.
+// CreateDataSourceFromRedshiftRequest mocks base method
 func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftRequest(arg0 *machinelearning.CreateDataSourceFromRedshiftInput) (*request.Request, *machinelearning.CreateDataSourceFromRedshiftOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceFromRedshiftRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftRequest(arg0 *machi
 	return ret0, ret1
 }
 
-// CreateDataSourceFromRedshiftRequest indicates an expected call of CreateDataSourceFromRedshiftRequest.
+// CreateDataSourceFromRedshiftRequest indicates an expected call of CreateDataSourceFromRedshiftRequest
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRedshiftRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromRedshiftRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromRedshiftRequest), arg0)
 }
 
-// CreateDataSourceFromRedshiftWithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftWithContext(arg0 context.Context, arg1 *machinelearning.CreateDataSourceFromRedshiftInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRedshiftOutput, error) {
+// CreateDataSourceFromRedshiftWithContext mocks base method
+func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftWithContext(arg0 aws.Context, arg1 *machinelearning.CreateDataSourceFromRedshiftInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRedshiftOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftWithContext(arg0 co
 	return ret0, ret1
 }
 
-// CreateDataSourceFromRedshiftWithContext indicates an expected call of CreateDataSourceFromRedshiftWithContext.
+// CreateDataSourceFromRedshiftWithContext indicates an expected call of CreateDataSourceFromRedshiftWithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRedshiftWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromRedshiftWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromRedshiftWithContext), varargs...)
 }
 
-// CreateDataSourceFromS3 mocks base method.
+// CreateDataSourceFromS3 mocks base method
 func (m *MockMachineLearningAPI) CreateDataSourceFromS3(arg0 *machinelearning.CreateDataSourceFromS3Input) (*machinelearning.CreateDataSourceFromS3Output, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceFromS3", arg0)
@@ -245,13 +244,13 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromS3(arg0 *machinelearning.Cr
 	return ret0, ret1
 }
 
-// CreateDataSourceFromS3 indicates an expected call of CreateDataSourceFromS3.
+// CreateDataSourceFromS3 indicates an expected call of CreateDataSourceFromS3
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromS3(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromS3", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromS3), arg0)
 }
 
-// CreateDataSourceFromS3Request mocks base method.
+// CreateDataSourceFromS3Request mocks base method
 func (m *MockMachineLearningAPI) CreateDataSourceFromS3Request(arg0 *machinelearning.CreateDataSourceFromS3Input) (*request.Request, *machinelearning.CreateDataSourceFromS3Output) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceFromS3Request", arg0)
@@ -260,14 +259,14 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromS3Request(arg0 *machinelear
 	return ret0, ret1
 }
 
-// CreateDataSourceFromS3Request indicates an expected call of CreateDataSourceFromS3Request.
+// CreateDataSourceFromS3Request indicates an expected call of CreateDataSourceFromS3Request
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromS3Request(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromS3Request", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromS3Request), arg0)
 }
 
-// CreateDataSourceFromS3WithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateDataSourceFromS3WithContext(arg0 context.Context, arg1 *machinelearning.CreateDataSourceFromS3Input, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromS3Output, error) {
+// CreateDataSourceFromS3WithContext mocks base method
+func (m *MockMachineLearningAPI) CreateDataSourceFromS3WithContext(arg0 aws.Context, arg1 *machinelearning.CreateDataSourceFromS3Input, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromS3Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockMachineLearningAPI) CreateDataSourceFromS3WithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CreateDataSourceFromS3WithContext indicates an expected call of CreateDataSourceFromS3WithContext.
+// CreateDataSourceFromS3WithContext indicates an expected call of CreateDataSourceFromS3WithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromS3WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceFromS3WithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateDataSourceFromS3WithContext), varargs...)
 }
 
-// CreateEvaluation mocks base method.
+// CreateEvaluation mocks base method
 func (m *MockMachineLearningAPI) CreateEvaluation(arg0 *machinelearning.CreateEvaluationInput) (*machinelearning.CreateEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEvaluation", arg0)
@@ -295,13 +294,13 @@ func (m *MockMachineLearningAPI) CreateEvaluation(arg0 *machinelearning.CreateEv
 	return ret0, ret1
 }
 
-// CreateEvaluation indicates an expected call of CreateEvaluation.
+// CreateEvaluation indicates an expected call of CreateEvaluation
 func (mr *MockMachineLearningAPIMockRecorder) CreateEvaluation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluation", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateEvaluation), arg0)
 }
 
-// CreateEvaluationRequest mocks base method.
+// CreateEvaluationRequest mocks base method
 func (m *MockMachineLearningAPI) CreateEvaluationRequest(arg0 *machinelearning.CreateEvaluationInput) (*request.Request, *machinelearning.CreateEvaluationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEvaluationRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockMachineLearningAPI) CreateEvaluationRequest(arg0 *machinelearning.C
 	return ret0, ret1
 }
 
-// CreateEvaluationRequest indicates an expected call of CreateEvaluationRequest.
+// CreateEvaluationRequest indicates an expected call of CreateEvaluationRequest
 func (mr *MockMachineLearningAPIMockRecorder) CreateEvaluationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluationRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateEvaluationRequest), arg0)
 }
 
-// CreateEvaluationWithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.CreateEvaluationInput, arg2 ...request.Option) (*machinelearning.CreateEvaluationOutput, error) {
+// CreateEvaluationWithContext mocks base method
+func (m *MockMachineLearningAPI) CreateEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.CreateEvaluationInput, arg2 ...request.Option) (*machinelearning.CreateEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockMachineLearningAPI) CreateEvaluationWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// CreateEvaluationWithContext indicates an expected call of CreateEvaluationWithContext.
+// CreateEvaluationWithContext indicates an expected call of CreateEvaluationWithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluationWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateEvaluationWithContext), varargs...)
 }
 
-// CreateMLModel mocks base method.
+// CreateMLModel mocks base method
 func (m *MockMachineLearningAPI) CreateMLModel(arg0 *machinelearning.CreateMLModelInput) (*machinelearning.CreateMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateMLModel", arg0)
@@ -345,13 +344,13 @@ func (m *MockMachineLearningAPI) CreateMLModel(arg0 *machinelearning.CreateMLMod
 	return ret0, ret1
 }
 
-// CreateMLModel indicates an expected call of CreateMLModel.
+// CreateMLModel indicates an expected call of CreateMLModel
 func (mr *MockMachineLearningAPIMockRecorder) CreateMLModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMLModel", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateMLModel), arg0)
 }
 
-// CreateMLModelRequest mocks base method.
+// CreateMLModelRequest mocks base method
 func (m *MockMachineLearningAPI) CreateMLModelRequest(arg0 *machinelearning.CreateMLModelInput) (*request.Request, *machinelearning.CreateMLModelOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateMLModelRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockMachineLearningAPI) CreateMLModelRequest(arg0 *machinelearning.Crea
 	return ret0, ret1
 }
 
-// CreateMLModelRequest indicates an expected call of CreateMLModelRequest.
+// CreateMLModelRequest indicates an expected call of CreateMLModelRequest
 func (mr *MockMachineLearningAPIMockRecorder) CreateMLModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMLModelRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateMLModelRequest), arg0)
 }
 
-// CreateMLModelWithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateMLModelWithContext(arg0 context.Context, arg1 *machinelearning.CreateMLModelInput, arg2 ...request.Option) (*machinelearning.CreateMLModelOutput, error) {
+// CreateMLModelWithContext mocks base method
+func (m *MockMachineLearningAPI) CreateMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.CreateMLModelInput, arg2 ...request.Option) (*machinelearning.CreateMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockMachineLearningAPI) CreateMLModelWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CreateMLModelWithContext indicates an expected call of CreateMLModelWithContext.
+// CreateMLModelWithContext indicates an expected call of CreateMLModelWithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateMLModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMLModelWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateMLModelWithContext), varargs...)
 }
 
-// CreateRealtimeEndpoint mocks base method.
+// CreateRealtimeEndpoint mocks base method
 func (m *MockMachineLearningAPI) CreateRealtimeEndpoint(arg0 *machinelearning.CreateRealtimeEndpointInput) (*machinelearning.CreateRealtimeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRealtimeEndpoint", arg0)
@@ -395,13 +394,13 @@ func (m *MockMachineLearningAPI) CreateRealtimeEndpoint(arg0 *machinelearning.Cr
 	return ret0, ret1
 }
 
-// CreateRealtimeEndpoint indicates an expected call of CreateRealtimeEndpoint.
+// CreateRealtimeEndpoint indicates an expected call of CreateRealtimeEndpoint
 func (mr *MockMachineLearningAPIMockRecorder) CreateRealtimeEndpoint(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRealtimeEndpoint", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateRealtimeEndpoint), arg0)
 }
 
-// CreateRealtimeEndpointRequest mocks base method.
+// CreateRealtimeEndpointRequest mocks base method
 func (m *MockMachineLearningAPI) CreateRealtimeEndpointRequest(arg0 *machinelearning.CreateRealtimeEndpointInput) (*request.Request, *machinelearning.CreateRealtimeEndpointOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRealtimeEndpointRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockMachineLearningAPI) CreateRealtimeEndpointRequest(arg0 *machinelear
 	return ret0, ret1
 }
 
-// CreateRealtimeEndpointRequest indicates an expected call of CreateRealtimeEndpointRequest.
+// CreateRealtimeEndpointRequest indicates an expected call of CreateRealtimeEndpointRequest
 func (mr *MockMachineLearningAPIMockRecorder) CreateRealtimeEndpointRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRealtimeEndpointRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateRealtimeEndpointRequest), arg0)
 }
 
-// CreateRealtimeEndpointWithContext mocks base method.
-func (m *MockMachineLearningAPI) CreateRealtimeEndpointWithContext(arg0 context.Context, arg1 *machinelearning.CreateRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.CreateRealtimeEndpointOutput, error) {
+// CreateRealtimeEndpointWithContext mocks base method
+func (m *MockMachineLearningAPI) CreateRealtimeEndpointWithContext(arg0 aws.Context, arg1 *machinelearning.CreateRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.CreateRealtimeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockMachineLearningAPI) CreateRealtimeEndpointWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CreateRealtimeEndpointWithContext indicates an expected call of CreateRealtimeEndpointWithContext.
+// CreateRealtimeEndpointWithContext indicates an expected call of CreateRealtimeEndpointWithContext
 func (mr *MockMachineLearningAPIMockRecorder) CreateRealtimeEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRealtimeEndpointWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).CreateRealtimeEndpointWithContext), varargs...)
 }
 
-// DeleteBatchPrediction mocks base method.
+// DeleteBatchPrediction mocks base method
 func (m *MockMachineLearningAPI) DeleteBatchPrediction(arg0 *machinelearning.DeleteBatchPredictionInput) (*machinelearning.DeleteBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBatchPrediction", arg0)
@@ -445,13 +444,13 @@ func (m *MockMachineLearningAPI) DeleteBatchPrediction(arg0 *machinelearning.Del
 	return ret0, ret1
 }
 
-// DeleteBatchPrediction indicates an expected call of DeleteBatchPrediction.
+// DeleteBatchPrediction indicates an expected call of DeleteBatchPrediction
 func (mr *MockMachineLearningAPIMockRecorder) DeleteBatchPrediction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBatchPrediction", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteBatchPrediction), arg0)
 }
 
-// DeleteBatchPredictionRequest mocks base method.
+// DeleteBatchPredictionRequest mocks base method
 func (m *MockMachineLearningAPI) DeleteBatchPredictionRequest(arg0 *machinelearning.DeleteBatchPredictionInput) (*request.Request, *machinelearning.DeleteBatchPredictionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBatchPredictionRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockMachineLearningAPI) DeleteBatchPredictionRequest(arg0 *machinelearn
 	return ret0, ret1
 }
 
-// DeleteBatchPredictionRequest indicates an expected call of DeleteBatchPredictionRequest.
+// DeleteBatchPredictionRequest indicates an expected call of DeleteBatchPredictionRequest
 func (mr *MockMachineLearningAPIMockRecorder) DeleteBatchPredictionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBatchPredictionRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteBatchPredictionRequest), arg0)
 }
 
-// DeleteBatchPredictionWithContext mocks base method.
-func (m *MockMachineLearningAPI) DeleteBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.DeleteBatchPredictionInput, arg2 ...request.Option) (*machinelearning.DeleteBatchPredictionOutput, error) {
+// DeleteBatchPredictionWithContext mocks base method
+func (m *MockMachineLearningAPI) DeleteBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteBatchPredictionInput, arg2 ...request.Option) (*machinelearning.DeleteBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockMachineLearningAPI) DeleteBatchPredictionWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DeleteBatchPredictionWithContext indicates an expected call of DeleteBatchPredictionWithContext.
+// DeleteBatchPredictionWithContext indicates an expected call of DeleteBatchPredictionWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DeleteBatchPredictionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBatchPredictionWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteBatchPredictionWithContext), varargs...)
 }
 
-// DeleteDataSource mocks base method.
+// DeleteDataSource mocks base method
 func (m *MockMachineLearningAPI) DeleteDataSource(arg0 *machinelearning.DeleteDataSourceInput) (*machinelearning.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDataSource", arg0)
@@ -495,13 +494,13 @@ func (m *MockMachineLearningAPI) DeleteDataSource(arg0 *machinelearning.DeleteDa
 	return ret0, ret1
 }
 
-// DeleteDataSource indicates an expected call of DeleteDataSource.
+// DeleteDataSource indicates an expected call of DeleteDataSource
 func (mr *MockMachineLearningAPIMockRecorder) DeleteDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSource", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteDataSource), arg0)
 }
 
-// DeleteDataSourceRequest mocks base method.
+// DeleteDataSourceRequest mocks base method
 func (m *MockMachineLearningAPI) DeleteDataSourceRequest(arg0 *machinelearning.DeleteDataSourceInput) (*request.Request, *machinelearning.DeleteDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDataSourceRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockMachineLearningAPI) DeleteDataSourceRequest(arg0 *machinelearning.D
 	return ret0, ret1
 }
 
-// DeleteDataSourceRequest indicates an expected call of DeleteDataSourceRequest.
+// DeleteDataSourceRequest indicates an expected call of DeleteDataSourceRequest
 func (mr *MockMachineLearningAPIMockRecorder) DeleteDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSourceRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteDataSourceRequest), arg0)
 }
 
-// DeleteDataSourceWithContext mocks base method.
-func (m *MockMachineLearningAPI) DeleteDataSourceWithContext(arg0 context.Context, arg1 *machinelearning.DeleteDataSourceInput, arg2 ...request.Option) (*machinelearning.DeleteDataSourceOutput, error) {
+// DeleteDataSourceWithContext mocks base method
+func (m *MockMachineLearningAPI) DeleteDataSourceWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteDataSourceInput, arg2 ...request.Option) (*machinelearning.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockMachineLearningAPI) DeleteDataSourceWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteDataSourceWithContext indicates an expected call of DeleteDataSourceWithContext.
+// DeleteDataSourceWithContext indicates an expected call of DeleteDataSourceWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DeleteDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSourceWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteDataSourceWithContext), varargs...)
 }
 
-// DeleteEvaluation mocks base method.
+// DeleteEvaluation mocks base method
 func (m *MockMachineLearningAPI) DeleteEvaluation(arg0 *machinelearning.DeleteEvaluationInput) (*machinelearning.DeleteEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEvaluation", arg0)
@@ -545,13 +544,13 @@ func (m *MockMachineLearningAPI) DeleteEvaluation(arg0 *machinelearning.DeleteEv
 	return ret0, ret1
 }
 
-// DeleteEvaluation indicates an expected call of DeleteEvaluation.
+// DeleteEvaluation indicates an expected call of DeleteEvaluation
 func (mr *MockMachineLearningAPIMockRecorder) DeleteEvaluation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluation", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteEvaluation), arg0)
 }
 
-// DeleteEvaluationRequest mocks base method.
+// DeleteEvaluationRequest mocks base method
 func (m *MockMachineLearningAPI) DeleteEvaluationRequest(arg0 *machinelearning.DeleteEvaluationInput) (*request.Request, *machinelearning.DeleteEvaluationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEvaluationRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockMachineLearningAPI) DeleteEvaluationRequest(arg0 *machinelearning.D
 	return ret0, ret1
 }
 
-// DeleteEvaluationRequest indicates an expected call of DeleteEvaluationRequest.
+// DeleteEvaluationRequest indicates an expected call of DeleteEvaluationRequest
 func (mr *MockMachineLearningAPIMockRecorder) DeleteEvaluationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluationRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteEvaluationRequest), arg0)
 }
 
-// DeleteEvaluationWithContext mocks base method.
-func (m *MockMachineLearningAPI) DeleteEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.DeleteEvaluationInput, arg2 ...request.Option) (*machinelearning.DeleteEvaluationOutput, error) {
+// DeleteEvaluationWithContext mocks base method
+func (m *MockMachineLearningAPI) DeleteEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteEvaluationInput, arg2 ...request.Option) (*machinelearning.DeleteEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockMachineLearningAPI) DeleteEvaluationWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteEvaluationWithContext indicates an expected call of DeleteEvaluationWithContext.
+// DeleteEvaluationWithContext indicates an expected call of DeleteEvaluationWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DeleteEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluationWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteEvaluationWithContext), varargs...)
 }
 
-// DeleteMLModel mocks base method.
+// DeleteMLModel mocks base method
 func (m *MockMachineLearningAPI) DeleteMLModel(arg0 *machinelearning.DeleteMLModelInput) (*machinelearning.DeleteMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMLModel", arg0)
@@ -595,13 +594,13 @@ func (m *MockMachineLearningAPI) DeleteMLModel(arg0 *machinelearning.DeleteMLMod
 	return ret0, ret1
 }
 
-// DeleteMLModel indicates an expected call of DeleteMLModel.
+// DeleteMLModel indicates an expected call of DeleteMLModel
 func (mr *MockMachineLearningAPIMockRecorder) DeleteMLModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMLModel", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteMLModel), arg0)
 }
 
-// DeleteMLModelRequest mocks base method.
+// DeleteMLModelRequest mocks base method
 func (m *MockMachineLearningAPI) DeleteMLModelRequest(arg0 *machinelearning.DeleteMLModelInput) (*request.Request, *machinelearning.DeleteMLModelOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMLModelRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockMachineLearningAPI) DeleteMLModelRequest(arg0 *machinelearning.Dele
 	return ret0, ret1
 }
 
-// DeleteMLModelRequest indicates an expected call of DeleteMLModelRequest.
+// DeleteMLModelRequest indicates an expected call of DeleteMLModelRequest
 func (mr *MockMachineLearningAPIMockRecorder) DeleteMLModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMLModelRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteMLModelRequest), arg0)
 }
 
-// DeleteMLModelWithContext mocks base method.
-func (m *MockMachineLearningAPI) DeleteMLModelWithContext(arg0 context.Context, arg1 *machinelearning.DeleteMLModelInput, arg2 ...request.Option) (*machinelearning.DeleteMLModelOutput, error) {
+// DeleteMLModelWithContext mocks base method
+func (m *MockMachineLearningAPI) DeleteMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteMLModelInput, arg2 ...request.Option) (*machinelearning.DeleteMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockMachineLearningAPI) DeleteMLModelWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DeleteMLModelWithContext indicates an expected call of DeleteMLModelWithContext.
+// DeleteMLModelWithContext indicates an expected call of DeleteMLModelWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DeleteMLModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMLModelWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteMLModelWithContext), varargs...)
 }
 
-// DeleteRealtimeEndpoint mocks base method.
+// DeleteRealtimeEndpoint mocks base method
 func (m *MockMachineLearningAPI) DeleteRealtimeEndpoint(arg0 *machinelearning.DeleteRealtimeEndpointInput) (*machinelearning.DeleteRealtimeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRealtimeEndpoint", arg0)
@@ -645,13 +644,13 @@ func (m *MockMachineLearningAPI) DeleteRealtimeEndpoint(arg0 *machinelearning.De
 	return ret0, ret1
 }
 
-// DeleteRealtimeEndpoint indicates an expected call of DeleteRealtimeEndpoint.
+// DeleteRealtimeEndpoint indicates an expected call of DeleteRealtimeEndpoint
 func (mr *MockMachineLearningAPIMockRecorder) DeleteRealtimeEndpoint(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRealtimeEndpoint", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteRealtimeEndpoint), arg0)
 }
 
-// DeleteRealtimeEndpointRequest mocks base method.
+// DeleteRealtimeEndpointRequest mocks base method
 func (m *MockMachineLearningAPI) DeleteRealtimeEndpointRequest(arg0 *machinelearning.DeleteRealtimeEndpointInput) (*request.Request, *machinelearning.DeleteRealtimeEndpointOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRealtimeEndpointRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockMachineLearningAPI) DeleteRealtimeEndpointRequest(arg0 *machinelear
 	return ret0, ret1
 }
 
-// DeleteRealtimeEndpointRequest indicates an expected call of DeleteRealtimeEndpointRequest.
+// DeleteRealtimeEndpointRequest indicates an expected call of DeleteRealtimeEndpointRequest
 func (mr *MockMachineLearningAPIMockRecorder) DeleteRealtimeEndpointRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRealtimeEndpointRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteRealtimeEndpointRequest), arg0)
 }
 
-// DeleteRealtimeEndpointWithContext mocks base method.
-func (m *MockMachineLearningAPI) DeleteRealtimeEndpointWithContext(arg0 context.Context, arg1 *machinelearning.DeleteRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.DeleteRealtimeEndpointOutput, error) {
+// DeleteRealtimeEndpointWithContext mocks base method
+func (m *MockMachineLearningAPI) DeleteRealtimeEndpointWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.DeleteRealtimeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockMachineLearningAPI) DeleteRealtimeEndpointWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// DeleteRealtimeEndpointWithContext indicates an expected call of DeleteRealtimeEndpointWithContext.
+// DeleteRealtimeEndpointWithContext indicates an expected call of DeleteRealtimeEndpointWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DeleteRealtimeEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRealtimeEndpointWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteRealtimeEndpointWithContext), varargs...)
 }
 
-// DeleteTags mocks base method.
+// DeleteTags mocks base method
 func (m *MockMachineLearningAPI) DeleteTags(arg0 *machinelearning.DeleteTagsInput) (*machinelearning.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTags", arg0)
@@ -695,13 +694,13 @@ func (m *MockMachineLearningAPI) DeleteTags(arg0 *machinelearning.DeleteTagsInpu
 	return ret0, ret1
 }
 
-// DeleteTags indicates an expected call of DeleteTags.
+// DeleteTags indicates an expected call of DeleteTags
 func (mr *MockMachineLearningAPIMockRecorder) DeleteTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTags", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteTags), arg0)
 }
 
-// DeleteTagsRequest mocks base method.
+// DeleteTagsRequest mocks base method
 func (m *MockMachineLearningAPI) DeleteTagsRequest(arg0 *machinelearning.DeleteTagsInput) (*request.Request, *machinelearning.DeleteTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTagsRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockMachineLearningAPI) DeleteTagsRequest(arg0 *machinelearning.DeleteT
 	return ret0, ret1
 }
 
-// DeleteTagsRequest indicates an expected call of DeleteTagsRequest.
+// DeleteTagsRequest indicates an expected call of DeleteTagsRequest
 func (mr *MockMachineLearningAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteTagsRequest), arg0)
 }
 
-// DeleteTagsWithContext mocks base method.
-func (m *MockMachineLearningAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *machinelearning.DeleteTagsInput, arg2 ...request.Option) (*machinelearning.DeleteTagsOutput, error) {
+// DeleteTagsWithContext mocks base method
+func (m *MockMachineLearningAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteTagsInput, arg2 ...request.Option) (*machinelearning.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +728,14 @@ func (m *MockMachineLearningAPI) DeleteTagsWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// DeleteTagsWithContext indicates an expected call of DeleteTagsWithContext.
+// DeleteTagsWithContext indicates an expected call of DeleteTagsWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
-// DescribeBatchPredictions mocks base method.
+// DescribeBatchPredictions mocks base method
 func (m *MockMachineLearningAPI) DescribeBatchPredictions(arg0 *machinelearning.DescribeBatchPredictionsInput) (*machinelearning.DescribeBatchPredictionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBatchPredictions", arg0)
@@ -745,13 +744,13 @@ func (m *MockMachineLearningAPI) DescribeBatchPredictions(arg0 *machinelearning.
 	return ret0, ret1
 }
 
-// DescribeBatchPredictions indicates an expected call of DescribeBatchPredictions.
+// DescribeBatchPredictions indicates an expected call of DescribeBatchPredictions
 func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchPredictions", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeBatchPredictions), arg0)
 }
 
-// DescribeBatchPredictionsPages mocks base method.
+// DescribeBatchPredictionsPages mocks base method
 func (m *MockMachineLearningAPI) DescribeBatchPredictionsPages(arg0 *machinelearning.DescribeBatchPredictionsInput, arg1 func(*machinelearning.DescribeBatchPredictionsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBatchPredictionsPages", arg0, arg1)
@@ -759,14 +758,14 @@ func (m *MockMachineLearningAPI) DescribeBatchPredictionsPages(arg0 *machinelear
 	return ret0
 }
 
-// DescribeBatchPredictionsPages indicates an expected call of DescribeBatchPredictionsPages.
+// DescribeBatchPredictionsPages indicates an expected call of DescribeBatchPredictionsPages
 func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchPredictionsPages", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeBatchPredictionsPages), arg0, arg1)
 }
 
-// DescribeBatchPredictionsPagesWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeBatchPredictionsPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 func(*machinelearning.DescribeBatchPredictionsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeBatchPredictionsPagesWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeBatchPredictionsPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 func(*machinelearning.DescribeBatchPredictionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -777,14 +776,14 @@ func (m *MockMachineLearningAPI) DescribeBatchPredictionsPagesWithContext(arg0 c
 	return ret0
 }
 
-// DescribeBatchPredictionsPagesWithContext indicates an expected call of DescribeBatchPredictionsPagesWithContext.
+// DescribeBatchPredictionsPagesWithContext indicates an expected call of DescribeBatchPredictionsPagesWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchPredictionsPagesWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeBatchPredictionsPagesWithContext), varargs...)
 }
 
-// DescribeBatchPredictionsRequest mocks base method.
+// DescribeBatchPredictionsRequest mocks base method
 func (m *MockMachineLearningAPI) DescribeBatchPredictionsRequest(arg0 *machinelearning.DescribeBatchPredictionsInput) (*request.Request, *machinelearning.DescribeBatchPredictionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBatchPredictionsRequest", arg0)
@@ -793,14 +792,14 @@ func (m *MockMachineLearningAPI) DescribeBatchPredictionsRequest(arg0 *machinele
 	return ret0, ret1
 }
 
-// DescribeBatchPredictionsRequest indicates an expected call of DescribeBatchPredictionsRequest.
+// DescribeBatchPredictionsRequest indicates an expected call of DescribeBatchPredictionsRequest
 func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchPredictionsRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeBatchPredictionsRequest), arg0)
 }
 
-// DescribeBatchPredictionsWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeBatchPredictionsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.Option) (*machinelearning.DescribeBatchPredictionsOutput, error) {
+// DescribeBatchPredictionsWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeBatchPredictionsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.Option) (*machinelearning.DescribeBatchPredictionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -812,14 +811,14 @@ func (m *MockMachineLearningAPI) DescribeBatchPredictionsWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// DescribeBatchPredictionsWithContext indicates an expected call of DescribeBatchPredictionsWithContext.
+// DescribeBatchPredictionsWithContext indicates an expected call of DescribeBatchPredictionsWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchPredictionsWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeBatchPredictionsWithContext), varargs...)
 }
 
-// DescribeDataSources mocks base method.
+// DescribeDataSources mocks base method
 func (m *MockMachineLearningAPI) DescribeDataSources(arg0 *machinelearning.DescribeDataSourcesInput) (*machinelearning.DescribeDataSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDataSources", arg0)
@@ -828,13 +827,13 @@ func (m *MockMachineLearningAPI) DescribeDataSources(arg0 *machinelearning.Descr
 	return ret0, ret1
 }
 
-// DescribeDataSources indicates an expected call of DescribeDataSources.
+// DescribeDataSources indicates an expected call of DescribeDataSources
 func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSources", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeDataSources), arg0)
 }
 
-// DescribeDataSourcesPages mocks base method.
+// DescribeDataSourcesPages mocks base method
 func (m *MockMachineLearningAPI) DescribeDataSourcesPages(arg0 *machinelearning.DescribeDataSourcesInput, arg1 func(*machinelearning.DescribeDataSourcesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDataSourcesPages", arg0, arg1)
@@ -842,14 +841,14 @@ func (m *MockMachineLearningAPI) DescribeDataSourcesPages(arg0 *machinelearning.
 	return ret0
 }
 
-// DescribeDataSourcesPages indicates an expected call of DescribeDataSourcesPages.
+// DescribeDataSourcesPages indicates an expected call of DescribeDataSourcesPages
 func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSourcesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSourcesPages", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeDataSourcesPages), arg0, arg1)
 }
 
-// DescribeDataSourcesPagesWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeDataSourcesPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 func(*machinelearning.DescribeDataSourcesOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeDataSourcesPagesWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeDataSourcesPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 func(*machinelearning.DescribeDataSourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -860,14 +859,14 @@ func (m *MockMachineLearningAPI) DescribeDataSourcesPagesWithContext(arg0 contex
 	return ret0
 }
 
-// DescribeDataSourcesPagesWithContext indicates an expected call of DescribeDataSourcesPagesWithContext.
+// DescribeDataSourcesPagesWithContext indicates an expected call of DescribeDataSourcesPagesWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSourcesPagesWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeDataSourcesPagesWithContext), varargs...)
 }
 
-// DescribeDataSourcesRequest mocks base method.
+// DescribeDataSourcesRequest mocks base method
 func (m *MockMachineLearningAPI) DescribeDataSourcesRequest(arg0 *machinelearning.DescribeDataSourcesInput) (*request.Request, *machinelearning.DescribeDataSourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDataSourcesRequest", arg0)
@@ -876,14 +875,14 @@ func (m *MockMachineLearningAPI) DescribeDataSourcesRequest(arg0 *machinelearnin
 	return ret0, ret1
 }
 
-// DescribeDataSourcesRequest indicates an expected call of DescribeDataSourcesRequest.
+// DescribeDataSourcesRequest indicates an expected call of DescribeDataSourcesRequest
 func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSourcesRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeDataSourcesRequest), arg0)
 }
 
-// DescribeDataSourcesWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeDataSourcesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.Option) (*machinelearning.DescribeDataSourcesOutput, error) {
+// DescribeDataSourcesWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeDataSourcesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.Option) (*machinelearning.DescribeDataSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -895,14 +894,14 @@ func (m *MockMachineLearningAPI) DescribeDataSourcesWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// DescribeDataSourcesWithContext indicates an expected call of DescribeDataSourcesWithContext.
+// DescribeDataSourcesWithContext indicates an expected call of DescribeDataSourcesWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSourcesWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeDataSourcesWithContext), varargs...)
 }
 
-// DescribeEvaluations mocks base method.
+// DescribeEvaluations mocks base method
 func (m *MockMachineLearningAPI) DescribeEvaluations(arg0 *machinelearning.DescribeEvaluationsInput) (*machinelearning.DescribeEvaluationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEvaluations", arg0)
@@ -911,13 +910,13 @@ func (m *MockMachineLearningAPI) DescribeEvaluations(arg0 *machinelearning.Descr
 	return ret0, ret1
 }
 
-// DescribeEvaluations indicates an expected call of DescribeEvaluations.
+// DescribeEvaluations indicates an expected call of DescribeEvaluations
 func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluations", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeEvaluations), arg0)
 }
 
-// DescribeEvaluationsPages mocks base method.
+// DescribeEvaluationsPages mocks base method
 func (m *MockMachineLearningAPI) DescribeEvaluationsPages(arg0 *machinelearning.DescribeEvaluationsInput, arg1 func(*machinelearning.DescribeEvaluationsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEvaluationsPages", arg0, arg1)
@@ -925,14 +924,14 @@ func (m *MockMachineLearningAPI) DescribeEvaluationsPages(arg0 *machinelearning.
 	return ret0
 }
 
-// DescribeEvaluationsPages indicates an expected call of DescribeEvaluationsPages.
+// DescribeEvaluationsPages indicates an expected call of DescribeEvaluationsPages
 func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluationsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationsPages", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeEvaluationsPages), arg0, arg1)
 }
 
-// DescribeEvaluationsPagesWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeEvaluationsPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 func(*machinelearning.DescribeEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeEvaluationsPagesWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeEvaluationsPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 func(*machinelearning.DescribeEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -943,14 +942,14 @@ func (m *MockMachineLearningAPI) DescribeEvaluationsPagesWithContext(arg0 contex
 	return ret0
 }
 
-// DescribeEvaluationsPagesWithContext indicates an expected call of DescribeEvaluationsPagesWithContext.
+// DescribeEvaluationsPagesWithContext indicates an expected call of DescribeEvaluationsPagesWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationsPagesWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeEvaluationsPagesWithContext), varargs...)
 }
 
-// DescribeEvaluationsRequest mocks base method.
+// DescribeEvaluationsRequest mocks base method
 func (m *MockMachineLearningAPI) DescribeEvaluationsRequest(arg0 *machinelearning.DescribeEvaluationsInput) (*request.Request, *machinelearning.DescribeEvaluationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEvaluationsRequest", arg0)
@@ -959,14 +958,14 @@ func (m *MockMachineLearningAPI) DescribeEvaluationsRequest(arg0 *machinelearnin
 	return ret0, ret1
 }
 
-// DescribeEvaluationsRequest indicates an expected call of DescribeEvaluationsRequest.
+// DescribeEvaluationsRequest indicates an expected call of DescribeEvaluationsRequest
 func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationsRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeEvaluationsRequest), arg0)
 }
 
-// DescribeEvaluationsWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeEvaluationsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.Option) (*machinelearning.DescribeEvaluationsOutput, error) {
+// DescribeEvaluationsWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeEvaluationsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.Option) (*machinelearning.DescribeEvaluationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -978,14 +977,14 @@ func (m *MockMachineLearningAPI) DescribeEvaluationsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// DescribeEvaluationsWithContext indicates an expected call of DescribeEvaluationsWithContext.
+// DescribeEvaluationsWithContext indicates an expected call of DescribeEvaluationsWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationsWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeEvaluationsWithContext), varargs...)
 }
 
-// DescribeMLModels mocks base method.
+// DescribeMLModels mocks base method
 func (m *MockMachineLearningAPI) DescribeMLModels(arg0 *machinelearning.DescribeMLModelsInput) (*machinelearning.DescribeMLModelsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMLModels", arg0)
@@ -994,13 +993,13 @@ func (m *MockMachineLearningAPI) DescribeMLModels(arg0 *machinelearning.Describe
 	return ret0, ret1
 }
 
-// DescribeMLModels indicates an expected call of DescribeMLModels.
+// DescribeMLModels indicates an expected call of DescribeMLModels
 func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModels(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMLModels", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeMLModels), arg0)
 }
 
-// DescribeMLModelsPages mocks base method.
+// DescribeMLModelsPages mocks base method
 func (m *MockMachineLearningAPI) DescribeMLModelsPages(arg0 *machinelearning.DescribeMLModelsInput, arg1 func(*machinelearning.DescribeMLModelsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMLModelsPages", arg0, arg1)
@@ -1008,14 +1007,14 @@ func (m *MockMachineLearningAPI) DescribeMLModelsPages(arg0 *machinelearning.Des
 	return ret0
 }
 
-// DescribeMLModelsPages indicates an expected call of DescribeMLModelsPages.
+// DescribeMLModelsPages indicates an expected call of DescribeMLModelsPages
 func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModelsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMLModelsPages", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeMLModelsPages), arg0, arg1)
 }
 
-// DescribeMLModelsPagesWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeMLModelsPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 func(*machinelearning.DescribeMLModelsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeMLModelsPagesWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeMLModelsPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 func(*machinelearning.DescribeMLModelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1026,14 +1025,14 @@ func (m *MockMachineLearningAPI) DescribeMLModelsPagesWithContext(arg0 context.C
 	return ret0
 }
 
-// DescribeMLModelsPagesWithContext indicates an expected call of DescribeMLModelsPagesWithContext.
+// DescribeMLModelsPagesWithContext indicates an expected call of DescribeMLModelsPagesWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMLModelsPagesWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeMLModelsPagesWithContext), varargs...)
 }
 
-// DescribeMLModelsRequest mocks base method.
+// DescribeMLModelsRequest mocks base method
 func (m *MockMachineLearningAPI) DescribeMLModelsRequest(arg0 *machinelearning.DescribeMLModelsInput) (*request.Request, *machinelearning.DescribeMLModelsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMLModelsRequest", arg0)
@@ -1042,14 +1041,14 @@ func (m *MockMachineLearningAPI) DescribeMLModelsRequest(arg0 *machinelearning.D
 	return ret0, ret1
 }
 
-// DescribeMLModelsRequest indicates an expected call of DescribeMLModelsRequest.
+// DescribeMLModelsRequest indicates an expected call of DescribeMLModelsRequest
 func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModelsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMLModelsRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeMLModelsRequest), arg0)
 }
 
-// DescribeMLModelsWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeMLModelsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.Option) (*machinelearning.DescribeMLModelsOutput, error) {
+// DescribeMLModelsWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeMLModelsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.Option) (*machinelearning.DescribeMLModelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1061,14 +1060,14 @@ func (m *MockMachineLearningAPI) DescribeMLModelsWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DescribeMLModelsWithContext indicates an expected call of DescribeMLModelsWithContext.
+// DescribeMLModelsWithContext indicates an expected call of DescribeMLModelsWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMLModelsWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeMLModelsWithContext), varargs...)
 }
 
-// DescribeTags mocks base method.
+// DescribeTags mocks base method
 func (m *MockMachineLearningAPI) DescribeTags(arg0 *machinelearning.DescribeTagsInput) (*machinelearning.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTags", arg0)
@@ -1077,13 +1076,13 @@ func (m *MockMachineLearningAPI) DescribeTags(arg0 *machinelearning.DescribeTags
 	return ret0, ret1
 }
 
-// DescribeTags indicates an expected call of DescribeTags.
+// DescribeTags indicates an expected call of DescribeTags
 func (mr *MockMachineLearningAPIMockRecorder) DescribeTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTags", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeTags), arg0)
 }
 
-// DescribeTagsRequest mocks base method.
+// DescribeTagsRequest mocks base method
 func (m *MockMachineLearningAPI) DescribeTagsRequest(arg0 *machinelearning.DescribeTagsInput) (*request.Request, *machinelearning.DescribeTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTagsRequest", arg0)
@@ -1092,14 +1091,14 @@ func (m *MockMachineLearningAPI) DescribeTagsRequest(arg0 *machinelearning.Descr
 	return ret0, ret1
 }
 
-// DescribeTagsRequest indicates an expected call of DescribeTagsRequest.
+// DescribeTagsRequest indicates an expected call of DescribeTagsRequest
 func (mr *MockMachineLearningAPIMockRecorder) DescribeTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeTagsRequest), arg0)
 }
 
-// DescribeTagsWithContext mocks base method.
-func (m *MockMachineLearningAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeTagsInput, arg2 ...request.Option) (*machinelearning.DescribeTagsOutput, error) {
+// DescribeTagsWithContext mocks base method
+func (m *MockMachineLearningAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeTagsInput, arg2 ...request.Option) (*machinelearning.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1111,14 +1110,14 @@ func (m *MockMachineLearningAPI) DescribeTagsWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DescribeTagsWithContext indicates an expected call of DescribeTagsWithContext.
+// DescribeTagsWithContext indicates an expected call of DescribeTagsWithContext
 func (mr *MockMachineLearningAPIMockRecorder) DescribeTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).DescribeTagsWithContext), varargs...)
 }
 
-// GetBatchPrediction mocks base method.
+// GetBatchPrediction mocks base method
 func (m *MockMachineLearningAPI) GetBatchPrediction(arg0 *machinelearning.GetBatchPredictionInput) (*machinelearning.GetBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBatchPrediction", arg0)
@@ -1127,13 +1126,13 @@ func (m *MockMachineLearningAPI) GetBatchPrediction(arg0 *machinelearning.GetBat
 	return ret0, ret1
 }
 
-// GetBatchPrediction indicates an expected call of GetBatchPrediction.
+// GetBatchPrediction indicates an expected call of GetBatchPrediction
 func (mr *MockMachineLearningAPIMockRecorder) GetBatchPrediction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBatchPrediction", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetBatchPrediction), arg0)
 }
 
-// GetBatchPredictionRequest mocks base method.
+// GetBatchPredictionRequest mocks base method
 func (m *MockMachineLearningAPI) GetBatchPredictionRequest(arg0 *machinelearning.GetBatchPredictionInput) (*request.Request, *machinelearning.GetBatchPredictionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBatchPredictionRequest", arg0)
@@ -1142,14 +1141,14 @@ func (m *MockMachineLearningAPI) GetBatchPredictionRequest(arg0 *machinelearning
 	return ret0, ret1
 }
 
-// GetBatchPredictionRequest indicates an expected call of GetBatchPredictionRequest.
+// GetBatchPredictionRequest indicates an expected call of GetBatchPredictionRequest
 func (mr *MockMachineLearningAPIMockRecorder) GetBatchPredictionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBatchPredictionRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetBatchPredictionRequest), arg0)
 }
 
-// GetBatchPredictionWithContext mocks base method.
-func (m *MockMachineLearningAPI) GetBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.GetBatchPredictionInput, arg2 ...request.Option) (*machinelearning.GetBatchPredictionOutput, error) {
+// GetBatchPredictionWithContext mocks base method
+func (m *MockMachineLearningAPI) GetBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.GetBatchPredictionInput, arg2 ...request.Option) (*machinelearning.GetBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1161,14 +1160,14 @@ func (m *MockMachineLearningAPI) GetBatchPredictionWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// GetBatchPredictionWithContext indicates an expected call of GetBatchPredictionWithContext.
+// GetBatchPredictionWithContext indicates an expected call of GetBatchPredictionWithContext
 func (mr *MockMachineLearningAPIMockRecorder) GetBatchPredictionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBatchPredictionWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetBatchPredictionWithContext), varargs...)
 }
 
-// GetDataSource mocks base method.
+// GetDataSource mocks base method
 func (m *MockMachineLearningAPI) GetDataSource(arg0 *machinelearning.GetDataSourceInput) (*machinelearning.GetDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDataSource", arg0)
@@ -1177,13 +1176,13 @@ func (m *MockMachineLearningAPI) GetDataSource(arg0 *machinelearning.GetDataSour
 	return ret0, ret1
 }
 
-// GetDataSource indicates an expected call of GetDataSource.
+// GetDataSource indicates an expected call of GetDataSource
 func (mr *MockMachineLearningAPIMockRecorder) GetDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSource", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetDataSource), arg0)
 }
 
-// GetDataSourceRequest mocks base method.
+// GetDataSourceRequest mocks base method
 func (m *MockMachineLearningAPI) GetDataSourceRequest(arg0 *machinelearning.GetDataSourceInput) (*request.Request, *machinelearning.GetDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDataSourceRequest", arg0)
@@ -1192,14 +1191,14 @@ func (m *MockMachineLearningAPI) GetDataSourceRequest(arg0 *machinelearning.GetD
 	return ret0, ret1
 }
 
-// GetDataSourceRequest indicates an expected call of GetDataSourceRequest.
+// GetDataSourceRequest indicates an expected call of GetDataSourceRequest
 func (mr *MockMachineLearningAPIMockRecorder) GetDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSourceRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetDataSourceRequest), arg0)
 }
 
-// GetDataSourceWithContext mocks base method.
-func (m *MockMachineLearningAPI) GetDataSourceWithContext(arg0 context.Context, arg1 *machinelearning.GetDataSourceInput, arg2 ...request.Option) (*machinelearning.GetDataSourceOutput, error) {
+// GetDataSourceWithContext mocks base method
+func (m *MockMachineLearningAPI) GetDataSourceWithContext(arg0 aws.Context, arg1 *machinelearning.GetDataSourceInput, arg2 ...request.Option) (*machinelearning.GetDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1211,14 +1210,14 @@ func (m *MockMachineLearningAPI) GetDataSourceWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetDataSourceWithContext indicates an expected call of GetDataSourceWithContext.
+// GetDataSourceWithContext indicates an expected call of GetDataSourceWithContext
 func (mr *MockMachineLearningAPIMockRecorder) GetDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSourceWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetDataSourceWithContext), varargs...)
 }
 
-// GetEvaluation mocks base method.
+// GetEvaluation mocks base method
 func (m *MockMachineLearningAPI) GetEvaluation(arg0 *machinelearning.GetEvaluationInput) (*machinelearning.GetEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetEvaluation", arg0)
@@ -1227,13 +1226,13 @@ func (m *MockMachineLearningAPI) GetEvaluation(arg0 *machinelearning.GetEvaluati
 	return ret0, ret1
 }
 
-// GetEvaluation indicates an expected call of GetEvaluation.
+// GetEvaluation indicates an expected call of GetEvaluation
 func (mr *MockMachineLearningAPIMockRecorder) GetEvaluation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvaluation", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetEvaluation), arg0)
 }
 
-// GetEvaluationRequest mocks base method.
+// GetEvaluationRequest mocks base method
 func (m *MockMachineLearningAPI) GetEvaluationRequest(arg0 *machinelearning.GetEvaluationInput) (*request.Request, *machinelearning.GetEvaluationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetEvaluationRequest", arg0)
@@ -1242,14 +1241,14 @@ func (m *MockMachineLearningAPI) GetEvaluationRequest(arg0 *machinelearning.GetE
 	return ret0, ret1
 }
 
-// GetEvaluationRequest indicates an expected call of GetEvaluationRequest.
+// GetEvaluationRequest indicates an expected call of GetEvaluationRequest
 func (mr *MockMachineLearningAPIMockRecorder) GetEvaluationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvaluationRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetEvaluationRequest), arg0)
 }
 
-// GetEvaluationWithContext mocks base method.
-func (m *MockMachineLearningAPI) GetEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.GetEvaluationInput, arg2 ...request.Option) (*machinelearning.GetEvaluationOutput, error) {
+// GetEvaluationWithContext mocks base method
+func (m *MockMachineLearningAPI) GetEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.GetEvaluationInput, arg2 ...request.Option) (*machinelearning.GetEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1261,14 +1260,14 @@ func (m *MockMachineLearningAPI) GetEvaluationWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetEvaluationWithContext indicates an expected call of GetEvaluationWithContext.
+// GetEvaluationWithContext indicates an expected call of GetEvaluationWithContext
 func (mr *MockMachineLearningAPIMockRecorder) GetEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvaluationWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetEvaluationWithContext), varargs...)
 }
 
-// GetMLModel mocks base method.
+// GetMLModel mocks base method
 func (m *MockMachineLearningAPI) GetMLModel(arg0 *machinelearning.GetMLModelInput) (*machinelearning.GetMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMLModel", arg0)
@@ -1277,13 +1276,13 @@ func (m *MockMachineLearningAPI) GetMLModel(arg0 *machinelearning.GetMLModelInpu
 	return ret0, ret1
 }
 
-// GetMLModel indicates an expected call of GetMLModel.
+// GetMLModel indicates an expected call of GetMLModel
 func (mr *MockMachineLearningAPIMockRecorder) GetMLModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLModel", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetMLModel), arg0)
 }
 
-// GetMLModelRequest mocks base method.
+// GetMLModelRequest mocks base method
 func (m *MockMachineLearningAPI) GetMLModelRequest(arg0 *machinelearning.GetMLModelInput) (*request.Request, *machinelearning.GetMLModelOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMLModelRequest", arg0)
@@ -1292,14 +1291,14 @@ func (m *MockMachineLearningAPI) GetMLModelRequest(arg0 *machinelearning.GetMLMo
 	return ret0, ret1
 }
 
-// GetMLModelRequest indicates an expected call of GetMLModelRequest.
+// GetMLModelRequest indicates an expected call of GetMLModelRequest
 func (mr *MockMachineLearningAPIMockRecorder) GetMLModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLModelRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetMLModelRequest), arg0)
 }
 
-// GetMLModelWithContext mocks base method.
-func (m *MockMachineLearningAPI) GetMLModelWithContext(arg0 context.Context, arg1 *machinelearning.GetMLModelInput, arg2 ...request.Option) (*machinelearning.GetMLModelOutput, error) {
+// GetMLModelWithContext mocks base method
+func (m *MockMachineLearningAPI) GetMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.GetMLModelInput, arg2 ...request.Option) (*machinelearning.GetMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1311,14 +1310,14 @@ func (m *MockMachineLearningAPI) GetMLModelWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// GetMLModelWithContext indicates an expected call of GetMLModelWithContext.
+// GetMLModelWithContext indicates an expected call of GetMLModelWithContext
 func (mr *MockMachineLearningAPIMockRecorder) GetMLModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLModelWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).GetMLModelWithContext), varargs...)
 }
 
-// Predict mocks base method.
+// Predict mocks base method
 func (m *MockMachineLearningAPI) Predict(arg0 *machinelearning.PredictInput) (*machinelearning.PredictOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "Predict", arg0)
@@ -1327,13 +1326,13 @@ func (m *MockMachineLearningAPI) Predict(arg0 *machinelearning.PredictInput) (*m
 	return ret0, ret1
 }
 
-// Predict indicates an expected call of Predict.
+// Predict indicates an expected call of Predict
 func (mr *MockMachineLearningAPIMockRecorder) Predict(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Predict", reflect.TypeOf((*MockMachineLearningAPI)(nil).Predict), arg0)
 }
 
-// PredictRequest mocks base method.
+// PredictRequest mocks base method
 func (m *MockMachineLearningAPI) PredictRequest(arg0 *machinelearning.PredictInput) (*request.Request, *machinelearning.PredictOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PredictRequest", arg0)
@@ -1342,14 +1341,14 @@ func (m *MockMachineLearningAPI) PredictRequest(arg0 *machinelearning.PredictInp
 	return ret0, ret1
 }
 
-// PredictRequest indicates an expected call of PredictRequest.
+// PredictRequest indicates an expected call of PredictRequest
 func (mr *MockMachineLearningAPIMockRecorder) PredictRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PredictRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).PredictRequest), arg0)
 }
 
-// PredictWithContext mocks base method.
-func (m *MockMachineLearningAPI) PredictWithContext(arg0 context.Context, arg1 *machinelearning.PredictInput, arg2 ...request.Option) (*machinelearning.PredictOutput, error) {
+// PredictWithContext mocks base method
+func (m *MockMachineLearningAPI) PredictWithContext(arg0 aws.Context, arg1 *machinelearning.PredictInput, arg2 ...request.Option) (*machinelearning.PredictOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1361,14 +1360,14 @@ func (m *MockMachineLearningAPI) PredictWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// PredictWithContext indicates an expected call of PredictWithContext.
+// PredictWithContext indicates an expected call of PredictWithContext
 func (mr *MockMachineLearningAPIMockRecorder) PredictWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PredictWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).PredictWithContext), varargs...)
 }
 
-// UpdateBatchPrediction mocks base method.
+// UpdateBatchPrediction mocks base method
 func (m *MockMachineLearningAPI) UpdateBatchPrediction(arg0 *machinelearning.UpdateBatchPredictionInput) (*machinelearning.UpdateBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBatchPrediction", arg0)
@@ -1377,13 +1376,13 @@ func (m *MockMachineLearningAPI) UpdateBatchPrediction(arg0 *machinelearning.Upd
 	return ret0, ret1
 }
 
-// UpdateBatchPrediction indicates an expected call of UpdateBatchPrediction.
+// UpdateBatchPrediction indicates an expected call of UpdateBatchPrediction
 func (mr *MockMachineLearningAPIMockRecorder) UpdateBatchPrediction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBatchPrediction", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateBatchPrediction), arg0)
 }
 
-// UpdateBatchPredictionRequest mocks base method.
+// UpdateBatchPredictionRequest mocks base method
 func (m *MockMachineLearningAPI) UpdateBatchPredictionRequest(arg0 *machinelearning.UpdateBatchPredictionInput) (*request.Request, *machinelearning.UpdateBatchPredictionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBatchPredictionRequest", arg0)
@@ -1392,14 +1391,14 @@ func (m *MockMachineLearningAPI) UpdateBatchPredictionRequest(arg0 *machinelearn
 	return ret0, ret1
 }
 
-// UpdateBatchPredictionRequest indicates an expected call of UpdateBatchPredictionRequest.
+// UpdateBatchPredictionRequest indicates an expected call of UpdateBatchPredictionRequest
 func (mr *MockMachineLearningAPIMockRecorder) UpdateBatchPredictionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBatchPredictionRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateBatchPredictionRequest), arg0)
 }
 
-// UpdateBatchPredictionWithContext mocks base method.
-func (m *MockMachineLearningAPI) UpdateBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.UpdateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.UpdateBatchPredictionOutput, error) {
+// UpdateBatchPredictionWithContext mocks base method
+func (m *MockMachineLearningAPI) UpdateBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.UpdateBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1411,14 +1410,14 @@ func (m *MockMachineLearningAPI) UpdateBatchPredictionWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// UpdateBatchPredictionWithContext indicates an expected call of UpdateBatchPredictionWithContext.
+// UpdateBatchPredictionWithContext indicates an expected call of UpdateBatchPredictionWithContext
 func (mr *MockMachineLearningAPIMockRecorder) UpdateBatchPredictionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBatchPredictionWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateBatchPredictionWithContext), varargs...)
 }
 
-// UpdateDataSource mocks base method.
+// UpdateDataSource mocks base method
 func (m *MockMachineLearningAPI) UpdateDataSource(arg0 *machinelearning.UpdateDataSourceInput) (*machinelearning.UpdateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDataSource", arg0)
@@ -1427,13 +1426,13 @@ func (m *MockMachineLearningAPI) UpdateDataSource(arg0 *machinelearning.UpdateDa
 	return ret0, ret1
 }
 
-// UpdateDataSource indicates an expected call of UpdateDataSource.
+// UpdateDataSource indicates an expected call of UpdateDataSource
 func (mr *MockMachineLearningAPIMockRecorder) UpdateDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSource", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateDataSource), arg0)
 }
 
-// UpdateDataSourceRequest mocks base method.
+// UpdateDataSourceRequest mocks base method
 func (m *MockMachineLearningAPI) UpdateDataSourceRequest(arg0 *machinelearning.UpdateDataSourceInput) (*request.Request, *machinelearning.UpdateDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDataSourceRequest", arg0)
@@ -1442,14 +1441,14 @@ func (m *MockMachineLearningAPI) UpdateDataSourceRequest(arg0 *machinelearning.U
 	return ret0, ret1
 }
 
-// UpdateDataSourceRequest indicates an expected call of UpdateDataSourceRequest.
+// UpdateDataSourceRequest indicates an expected call of UpdateDataSourceRequest
 func (mr *MockMachineLearningAPIMockRecorder) UpdateDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSourceRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateDataSourceRequest), arg0)
 }
 
-// UpdateDataSourceWithContext mocks base method.
-func (m *MockMachineLearningAPI) UpdateDataSourceWithContext(arg0 context.Context, arg1 *machinelearning.UpdateDataSourceInput, arg2 ...request.Option) (*machinelearning.UpdateDataSourceOutput, error) {
+// UpdateDataSourceWithContext mocks base method
+func (m *MockMachineLearningAPI) UpdateDataSourceWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateDataSourceInput, arg2 ...request.Option) (*machinelearning.UpdateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1461,14 +1460,14 @@ func (m *MockMachineLearningAPI) UpdateDataSourceWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdateDataSourceWithContext indicates an expected call of UpdateDataSourceWithContext.
+// UpdateDataSourceWithContext indicates an expected call of UpdateDataSourceWithContext
 func (mr *MockMachineLearningAPIMockRecorder) UpdateDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSourceWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateDataSourceWithContext), varargs...)
 }
 
-// UpdateEvaluation mocks base method.
+// UpdateEvaluation mocks base method
 func (m *MockMachineLearningAPI) UpdateEvaluation(arg0 *machinelearning.UpdateEvaluationInput) (*machinelearning.UpdateEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEvaluation", arg0)
@@ -1477,13 +1476,13 @@ func (m *MockMachineLearningAPI) UpdateEvaluation(arg0 *machinelearning.UpdateEv
 	return ret0, ret1
 }
 
-// UpdateEvaluation indicates an expected call of UpdateEvaluation.
+// UpdateEvaluation indicates an expected call of UpdateEvaluation
 func (mr *MockMachineLearningAPIMockRecorder) UpdateEvaluation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEvaluation", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateEvaluation), arg0)
 }
 
-// UpdateEvaluationRequest mocks base method.
+// UpdateEvaluationRequest mocks base method
 func (m *MockMachineLearningAPI) UpdateEvaluationRequest(arg0 *machinelearning.UpdateEvaluationInput) (*request.Request, *machinelearning.UpdateEvaluationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEvaluationRequest", arg0)
@@ -1492,14 +1491,14 @@ func (m *MockMachineLearningAPI) UpdateEvaluationRequest(arg0 *machinelearning.U
 	return ret0, ret1
 }
 
-// UpdateEvaluationRequest indicates an expected call of UpdateEvaluationRequest.
+// UpdateEvaluationRequest indicates an expected call of UpdateEvaluationRequest
 func (mr *MockMachineLearningAPIMockRecorder) UpdateEvaluationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEvaluationRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateEvaluationRequest), arg0)
 }
 
-// UpdateEvaluationWithContext mocks base method.
-func (m *MockMachineLearningAPI) UpdateEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.UpdateEvaluationInput, arg2 ...request.Option) (*machinelearning.UpdateEvaluationOutput, error) {
+// UpdateEvaluationWithContext mocks base method
+func (m *MockMachineLearningAPI) UpdateEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateEvaluationInput, arg2 ...request.Option) (*machinelearning.UpdateEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1511,14 +1510,14 @@ func (m *MockMachineLearningAPI) UpdateEvaluationWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdateEvaluationWithContext indicates an expected call of UpdateEvaluationWithContext.
+// UpdateEvaluationWithContext indicates an expected call of UpdateEvaluationWithContext
 func (mr *MockMachineLearningAPIMockRecorder) UpdateEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEvaluationWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateEvaluationWithContext), varargs...)
 }
 
-// UpdateMLModel mocks base method.
+// UpdateMLModel mocks base method
 func (m *MockMachineLearningAPI) UpdateMLModel(arg0 *machinelearning.UpdateMLModelInput) (*machinelearning.UpdateMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMLModel", arg0)
@@ -1527,13 +1526,13 @@ func (m *MockMachineLearningAPI) UpdateMLModel(arg0 *machinelearning.UpdateMLMod
 	return ret0, ret1
 }
 
-// UpdateMLModel indicates an expected call of UpdateMLModel.
+// UpdateMLModel indicates an expected call of UpdateMLModel
 func (mr *MockMachineLearningAPIMockRecorder) UpdateMLModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMLModel", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateMLModel), arg0)
 }
 
-// UpdateMLModelRequest mocks base method.
+// UpdateMLModelRequest mocks base method
 func (m *MockMachineLearningAPI) UpdateMLModelRequest(arg0 *machinelearning.UpdateMLModelInput) (*request.Request, *machinelearning.UpdateMLModelOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMLModelRequest", arg0)
@@ -1542,14 +1541,14 @@ func (m *MockMachineLearningAPI) UpdateMLModelRequest(arg0 *machinelearning.Upda
 	return ret0, ret1
 }
 
-// UpdateMLModelRequest indicates an expected call of UpdateMLModelRequest.
+// UpdateMLModelRequest indicates an expected call of UpdateMLModelRequest
 func (mr *MockMachineLearningAPIMockRecorder) UpdateMLModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMLModelRequest", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateMLModelRequest), arg0)
 }
 
-// UpdateMLModelWithContext mocks base method.
-func (m *MockMachineLearningAPI) UpdateMLModelWithContext(arg0 context.Context, arg1 *machinelearning.UpdateMLModelInput, arg2 ...request.Option) (*machinelearning.UpdateMLModelOutput, error) {
+// UpdateMLModelWithContext mocks base method
+func (m *MockMachineLearningAPI) UpdateMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateMLModelInput, arg2 ...request.Option) (*machinelearning.UpdateMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1561,14 +1560,14 @@ func (m *MockMachineLearningAPI) UpdateMLModelWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// UpdateMLModelWithContext indicates an expected call of UpdateMLModelWithContext.
+// UpdateMLModelWithContext indicates an expected call of UpdateMLModelWithContext
 func (mr *MockMachineLearningAPIMockRecorder) UpdateMLModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMLModelWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).UpdateMLModelWithContext), varargs...)
 }
 
-// WaitUntilBatchPredictionAvailable mocks base method.
+// WaitUntilBatchPredictionAvailable mocks base method
 func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailable(arg0 *machinelearning.DescribeBatchPredictionsInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilBatchPredictionAvailable", arg0)
@@ -1576,14 +1575,14 @@ func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailable(arg0 *machine
 	return ret0
 }
 
-// WaitUntilBatchPredictionAvailable indicates an expected call of WaitUntilBatchPredictionAvailable.
+// WaitUntilBatchPredictionAvailable indicates an expected call of WaitUntilBatchPredictionAvailable
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilBatchPredictionAvailable(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilBatchPredictionAvailable", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilBatchPredictionAvailable), arg0)
 }
 
-// WaitUntilBatchPredictionAvailableWithContext mocks base method.
-func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.WaiterOption) error {
+// WaitUntilBatchPredictionAvailableWithContext mocks base method
+func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1594,14 +1593,14 @@ func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailableWithContext(ar
 	return ret0
 }
 
-// WaitUntilBatchPredictionAvailableWithContext indicates an expected call of WaitUntilBatchPredictionAvailableWithContext.
+// WaitUntilBatchPredictionAvailableWithContext indicates an expected call of WaitUntilBatchPredictionAvailableWithContext
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilBatchPredictionAvailableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilBatchPredictionAvailableWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilBatchPredictionAvailableWithContext), varargs...)
 }
 
-// WaitUntilDataSourceAvailable mocks base method.
+// WaitUntilDataSourceAvailable mocks base method
 func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailable(arg0 *machinelearning.DescribeDataSourcesInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilDataSourceAvailable", arg0)
@@ -1609,14 +1608,14 @@ func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailable(arg0 *machinelearn
 	return ret0
 }
 
-// WaitUntilDataSourceAvailable indicates an expected call of WaitUntilDataSourceAvailable.
+// WaitUntilDataSourceAvailable indicates an expected call of WaitUntilDataSourceAvailable
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilDataSourceAvailable(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilDataSourceAvailable", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilDataSourceAvailable), arg0)
 }
 
-// WaitUntilDataSourceAvailableWithContext mocks base method.
-func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.WaiterOption) error {
+// WaitUntilDataSourceAvailableWithContext mocks base method
+func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1627,14 +1626,14 @@ func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailableWithContext(arg0 co
 	return ret0
 }
 
-// WaitUntilDataSourceAvailableWithContext indicates an expected call of WaitUntilDataSourceAvailableWithContext.
+// WaitUntilDataSourceAvailableWithContext indicates an expected call of WaitUntilDataSourceAvailableWithContext
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilDataSourceAvailableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilDataSourceAvailableWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilDataSourceAvailableWithContext), varargs...)
 }
 
-// WaitUntilEvaluationAvailable mocks base method.
+// WaitUntilEvaluationAvailable mocks base method
 func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailable(arg0 *machinelearning.DescribeEvaluationsInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilEvaluationAvailable", arg0)
@@ -1642,14 +1641,14 @@ func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailable(arg0 *machinelearn
 	return ret0
 }
 
-// WaitUntilEvaluationAvailable indicates an expected call of WaitUntilEvaluationAvailable.
+// WaitUntilEvaluationAvailable indicates an expected call of WaitUntilEvaluationAvailable
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilEvaluationAvailable(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEvaluationAvailable", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilEvaluationAvailable), arg0)
 }
 
-// WaitUntilEvaluationAvailableWithContext mocks base method.
-func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.WaiterOption) error {
+// WaitUntilEvaluationAvailableWithContext mocks base method
+func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1660,14 +1659,14 @@ func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailableWithContext(arg0 co
 	return ret0
 }
 
-// WaitUntilEvaluationAvailableWithContext indicates an expected call of WaitUntilEvaluationAvailableWithContext.
+// WaitUntilEvaluationAvailableWithContext indicates an expected call of WaitUntilEvaluationAvailableWithContext
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilEvaluationAvailableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEvaluationAvailableWithContext", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilEvaluationAvailableWithContext), varargs...)
 }
 
-// WaitUntilMLModelAvailable mocks base method.
+// WaitUntilMLModelAvailable mocks base method
 func (m *MockMachineLearningAPI) WaitUntilMLModelAvailable(arg0 *machinelearning.DescribeMLModelsInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilMLModelAvailable", arg0)
@@ -1675,14 +1674,14 @@ func (m *MockMachineLearningAPI) WaitUntilMLModelAvailable(arg0 *machinelearning
 	return ret0
 }
 
-// WaitUntilMLModelAvailable indicates an expected call of WaitUntilMLModelAvailable.
+// WaitUntilMLModelAvailable indicates an expected call of WaitUntilMLModelAvailable
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilMLModelAvailable(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMLModelAvailable", reflect.TypeOf((*MockMachineLearningAPI)(nil).WaitUntilMLModelAvailable), arg0)
 }
 
-// WaitUntilMLModelAvailableWithContext mocks base method.
-func (m *MockMachineLearningAPI) WaitUntilMLModelAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.WaiterOption) error {
+// WaitUntilMLModelAvailableWithContext mocks base method
+func (m *MockMachineLearningAPI) WaitUntilMLModelAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1693,7 +1692,7 @@ func (m *MockMachineLearningAPI) WaitUntilMLModelAvailableWithContext(arg0 conte
 	return ret0
 }
 
-// WaitUntilMLModelAvailableWithContext indicates an expected call of WaitUntilMLModelAvailableWithContext.
+// WaitUntilMLModelAvailableWithContext indicates an expected call of WaitUntilMLModelAvailableWithContext
 func (mr *MockMachineLearningAPIMockRecorder) WaitUntilMLModelAvailableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

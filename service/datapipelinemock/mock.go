@@ -5,38 +5,37 @@
 package datapipelinemock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	datapipeline "github.com/aws/aws-sdk-go/service/datapipeline"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockDataPipelineAPI is a mock of DataPipelineAPI interface.
+// MockDataPipelineAPI is a mock of DataPipelineAPI interface
 type MockDataPipelineAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockDataPipelineAPIMockRecorder
 }
 
-// MockDataPipelineAPIMockRecorder is the mock recorder for MockDataPipelineAPI.
+// MockDataPipelineAPIMockRecorder is the mock recorder for MockDataPipelineAPI
 type MockDataPipelineAPIMockRecorder struct {
 	mock *MockDataPipelineAPI
 }
 
-// NewMockDataPipelineAPI creates a new mock instance.
+// NewMockDataPipelineAPI creates a new mock instance
 func NewMockDataPipelineAPI(ctrl *gomock.Controller) *MockDataPipelineAPI {
 	mock := &MockDataPipelineAPI{ctrl: ctrl}
 	mock.recorder = &MockDataPipelineAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockDataPipelineAPI) EXPECT() *MockDataPipelineAPIMockRecorder {
 	return m.recorder
 }
 
-// ActivatePipeline mocks base method.
+// ActivatePipeline mocks base method
 func (m *MockDataPipelineAPI) ActivatePipeline(arg0 *datapipeline.ActivatePipelineInput) (*datapipeline.ActivatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ActivatePipeline", arg0)
@@ -45,13 +44,13 @@ func (m *MockDataPipelineAPI) ActivatePipeline(arg0 *datapipeline.ActivatePipeli
 	return ret0, ret1
 }
 
-// ActivatePipeline indicates an expected call of ActivatePipeline.
+// ActivatePipeline indicates an expected call of ActivatePipeline
 func (mr *MockDataPipelineAPIMockRecorder) ActivatePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivatePipeline", reflect.TypeOf((*MockDataPipelineAPI)(nil).ActivatePipeline), arg0)
 }
 
-// ActivatePipelineRequest mocks base method.
+// ActivatePipelineRequest mocks base method
 func (m *MockDataPipelineAPI) ActivatePipelineRequest(arg0 *datapipeline.ActivatePipelineInput) (*request.Request, *datapipeline.ActivatePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ActivatePipelineRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockDataPipelineAPI) ActivatePipelineRequest(arg0 *datapipeline.Activat
 	return ret0, ret1
 }
 
-// ActivatePipelineRequest indicates an expected call of ActivatePipelineRequest.
+// ActivatePipelineRequest indicates an expected call of ActivatePipelineRequest
 func (mr *MockDataPipelineAPIMockRecorder) ActivatePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivatePipelineRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).ActivatePipelineRequest), arg0)
 }
 
-// ActivatePipelineWithContext mocks base method.
-func (m *MockDataPipelineAPI) ActivatePipelineWithContext(arg0 context.Context, arg1 *datapipeline.ActivatePipelineInput, arg2 ...request.Option) (*datapipeline.ActivatePipelineOutput, error) {
+// ActivatePipelineWithContext mocks base method
+func (m *MockDataPipelineAPI) ActivatePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.ActivatePipelineInput, arg2 ...request.Option) (*datapipeline.ActivatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockDataPipelineAPI) ActivatePipelineWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ActivatePipelineWithContext indicates an expected call of ActivatePipelineWithContext.
+// ActivatePipelineWithContext indicates an expected call of ActivatePipelineWithContext
 func (mr *MockDataPipelineAPIMockRecorder) ActivatePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivatePipelineWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).ActivatePipelineWithContext), varargs...)
 }
 
-// AddTags mocks base method.
+// AddTags mocks base method
 func (m *MockDataPipelineAPI) AddTags(arg0 *datapipeline.AddTagsInput) (*datapipeline.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTags", arg0)
@@ -95,13 +94,13 @@ func (m *MockDataPipelineAPI) AddTags(arg0 *datapipeline.AddTagsInput) (*datapip
 	return ret0, ret1
 }
 
-// AddTags indicates an expected call of AddTags.
+// AddTags indicates an expected call of AddTags
 func (mr *MockDataPipelineAPIMockRecorder) AddTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTags", reflect.TypeOf((*MockDataPipelineAPI)(nil).AddTags), arg0)
 }
 
-// AddTagsRequest mocks base method.
+// AddTagsRequest mocks base method
 func (m *MockDataPipelineAPI) AddTagsRequest(arg0 *datapipeline.AddTagsInput) (*request.Request, *datapipeline.AddTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockDataPipelineAPI) AddTagsRequest(arg0 *datapipeline.AddTagsInput) (*
 	return ret0, ret1
 }
 
-// AddTagsRequest indicates an expected call of AddTagsRequest.
+// AddTagsRequest indicates an expected call of AddTagsRequest
 func (mr *MockDataPipelineAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).AddTagsRequest), arg0)
 }
 
-// AddTagsWithContext mocks base method.
-func (m *MockDataPipelineAPI) AddTagsWithContext(arg0 context.Context, arg1 *datapipeline.AddTagsInput, arg2 ...request.Option) (*datapipeline.AddTagsOutput, error) {
+// AddTagsWithContext mocks base method
+func (m *MockDataPipelineAPI) AddTagsWithContext(arg0 aws.Context, arg1 *datapipeline.AddTagsInput, arg2 ...request.Option) (*datapipeline.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockDataPipelineAPI) AddTagsWithContext(arg0 context.Context, arg1 *dat
 	return ret0, ret1
 }
 
-// AddTagsWithContext indicates an expected call of AddTagsWithContext.
+// AddTagsWithContext indicates an expected call of AddTagsWithContext
 func (mr *MockDataPipelineAPIMockRecorder) AddTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).AddTagsWithContext), varargs...)
 }
 
-// CreatePipeline mocks base method.
+// CreatePipeline mocks base method
 func (m *MockDataPipelineAPI) CreatePipeline(arg0 *datapipeline.CreatePipelineInput) (*datapipeline.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePipeline", arg0)
@@ -145,13 +144,13 @@ func (m *MockDataPipelineAPI) CreatePipeline(arg0 *datapipeline.CreatePipelineIn
 	return ret0, ret1
 }
 
-// CreatePipeline indicates an expected call of CreatePipeline.
+// CreatePipeline indicates an expected call of CreatePipeline
 func (mr *MockDataPipelineAPIMockRecorder) CreatePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePipeline", reflect.TypeOf((*MockDataPipelineAPI)(nil).CreatePipeline), arg0)
 }
 
-// CreatePipelineRequest mocks base method.
+// CreatePipelineRequest mocks base method
 func (m *MockDataPipelineAPI) CreatePipelineRequest(arg0 *datapipeline.CreatePipelineInput) (*request.Request, *datapipeline.CreatePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePipelineRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockDataPipelineAPI) CreatePipelineRequest(arg0 *datapipeline.CreatePip
 	return ret0, ret1
 }
 
-// CreatePipelineRequest indicates an expected call of CreatePipelineRequest.
+// CreatePipelineRequest indicates an expected call of CreatePipelineRequest
 func (mr *MockDataPipelineAPIMockRecorder) CreatePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePipelineRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).CreatePipelineRequest), arg0)
 }
 
-// CreatePipelineWithContext mocks base method.
-func (m *MockDataPipelineAPI) CreatePipelineWithContext(arg0 context.Context, arg1 *datapipeline.CreatePipelineInput, arg2 ...request.Option) (*datapipeline.CreatePipelineOutput, error) {
+// CreatePipelineWithContext mocks base method
+func (m *MockDataPipelineAPI) CreatePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.CreatePipelineInput, arg2 ...request.Option) (*datapipeline.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockDataPipelineAPI) CreatePipelineWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreatePipelineWithContext indicates an expected call of CreatePipelineWithContext.
+// CreatePipelineWithContext indicates an expected call of CreatePipelineWithContext
 func (mr *MockDataPipelineAPIMockRecorder) CreatePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePipelineWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).CreatePipelineWithContext), varargs...)
 }
 
-// DeactivatePipeline mocks base method.
+// DeactivatePipeline mocks base method
 func (m *MockDataPipelineAPI) DeactivatePipeline(arg0 *datapipeline.DeactivatePipelineInput) (*datapipeline.DeactivatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeactivatePipeline", arg0)
@@ -195,13 +194,13 @@ func (m *MockDataPipelineAPI) DeactivatePipeline(arg0 *datapipeline.DeactivatePi
 	return ret0, ret1
 }
 
-// DeactivatePipeline indicates an expected call of DeactivatePipeline.
+// DeactivatePipeline indicates an expected call of DeactivatePipeline
 func (mr *MockDataPipelineAPIMockRecorder) DeactivatePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivatePipeline", reflect.TypeOf((*MockDataPipelineAPI)(nil).DeactivatePipeline), arg0)
 }
 
-// DeactivatePipelineRequest mocks base method.
+// DeactivatePipelineRequest mocks base method
 func (m *MockDataPipelineAPI) DeactivatePipelineRequest(arg0 *datapipeline.DeactivatePipelineInput) (*request.Request, *datapipeline.DeactivatePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeactivatePipelineRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockDataPipelineAPI) DeactivatePipelineRequest(arg0 *datapipeline.Deact
 	return ret0, ret1
 }
 
-// DeactivatePipelineRequest indicates an expected call of DeactivatePipelineRequest.
+// DeactivatePipelineRequest indicates an expected call of DeactivatePipelineRequest
 func (mr *MockDataPipelineAPIMockRecorder) DeactivatePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivatePipelineRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).DeactivatePipelineRequest), arg0)
 }
 
-// DeactivatePipelineWithContext mocks base method.
-func (m *MockDataPipelineAPI) DeactivatePipelineWithContext(arg0 context.Context, arg1 *datapipeline.DeactivatePipelineInput, arg2 ...request.Option) (*datapipeline.DeactivatePipelineOutput, error) {
+// DeactivatePipelineWithContext mocks base method
+func (m *MockDataPipelineAPI) DeactivatePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.DeactivatePipelineInput, arg2 ...request.Option) (*datapipeline.DeactivatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockDataPipelineAPI) DeactivatePipelineWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DeactivatePipelineWithContext indicates an expected call of DeactivatePipelineWithContext.
+// DeactivatePipelineWithContext indicates an expected call of DeactivatePipelineWithContext
 func (mr *MockDataPipelineAPIMockRecorder) DeactivatePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivatePipelineWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).DeactivatePipelineWithContext), varargs...)
 }
 
-// DeletePipeline mocks base method.
+// DeletePipeline mocks base method
 func (m *MockDataPipelineAPI) DeletePipeline(arg0 *datapipeline.DeletePipelineInput) (*datapipeline.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePipeline", arg0)
@@ -245,13 +244,13 @@ func (m *MockDataPipelineAPI) DeletePipeline(arg0 *datapipeline.DeletePipelineIn
 	return ret0, ret1
 }
 
-// DeletePipeline indicates an expected call of DeletePipeline.
+// DeletePipeline indicates an expected call of DeletePipeline
 func (mr *MockDataPipelineAPIMockRecorder) DeletePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePipeline", reflect.TypeOf((*MockDataPipelineAPI)(nil).DeletePipeline), arg0)
 }
 
-// DeletePipelineRequest mocks base method.
+// DeletePipelineRequest mocks base method
 func (m *MockDataPipelineAPI) DeletePipelineRequest(arg0 *datapipeline.DeletePipelineInput) (*request.Request, *datapipeline.DeletePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePipelineRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockDataPipelineAPI) DeletePipelineRequest(arg0 *datapipeline.DeletePip
 	return ret0, ret1
 }
 
-// DeletePipelineRequest indicates an expected call of DeletePipelineRequest.
+// DeletePipelineRequest indicates an expected call of DeletePipelineRequest
 func (mr *MockDataPipelineAPIMockRecorder) DeletePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePipelineRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).DeletePipelineRequest), arg0)
 }
 
-// DeletePipelineWithContext mocks base method.
-func (m *MockDataPipelineAPI) DeletePipelineWithContext(arg0 context.Context, arg1 *datapipeline.DeletePipelineInput, arg2 ...request.Option) (*datapipeline.DeletePipelineOutput, error) {
+// DeletePipelineWithContext mocks base method
+func (m *MockDataPipelineAPI) DeletePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.DeletePipelineInput, arg2 ...request.Option) (*datapipeline.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockDataPipelineAPI) DeletePipelineWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeletePipelineWithContext indicates an expected call of DeletePipelineWithContext.
+// DeletePipelineWithContext indicates an expected call of DeletePipelineWithContext
 func (mr *MockDataPipelineAPIMockRecorder) DeletePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePipelineWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).DeletePipelineWithContext), varargs...)
 }
 
-// DescribeObjects mocks base method.
+// DescribeObjects mocks base method
 func (m *MockDataPipelineAPI) DescribeObjects(arg0 *datapipeline.DescribeObjectsInput) (*datapipeline.DescribeObjectsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeObjects", arg0)
@@ -295,13 +294,13 @@ func (m *MockDataPipelineAPI) DescribeObjects(arg0 *datapipeline.DescribeObjects
 	return ret0, ret1
 }
 
-// DescribeObjects indicates an expected call of DescribeObjects.
+// DescribeObjects indicates an expected call of DescribeObjects
 func (mr *MockDataPipelineAPIMockRecorder) DescribeObjects(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObjects", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribeObjects), arg0)
 }
 
-// DescribeObjectsPages mocks base method.
+// DescribeObjectsPages mocks base method
 func (m *MockDataPipelineAPI) DescribeObjectsPages(arg0 *datapipeline.DescribeObjectsInput, arg1 func(*datapipeline.DescribeObjectsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeObjectsPages", arg0, arg1)
@@ -309,14 +308,14 @@ func (m *MockDataPipelineAPI) DescribeObjectsPages(arg0 *datapipeline.DescribeOb
 	return ret0
 }
 
-// DescribeObjectsPages indicates an expected call of DescribeObjectsPages.
+// DescribeObjectsPages indicates an expected call of DescribeObjectsPages
 func (mr *MockDataPipelineAPIMockRecorder) DescribeObjectsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObjectsPages", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribeObjectsPages), arg0, arg1)
 }
 
-// DescribeObjectsPagesWithContext mocks base method.
-func (m *MockDataPipelineAPI) DescribeObjectsPagesWithContext(arg0 context.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 func(*datapipeline.DescribeObjectsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeObjectsPagesWithContext mocks base method
+func (m *MockDataPipelineAPI) DescribeObjectsPagesWithContext(arg0 aws.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 func(*datapipeline.DescribeObjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -327,14 +326,14 @@ func (m *MockDataPipelineAPI) DescribeObjectsPagesWithContext(arg0 context.Conte
 	return ret0
 }
 
-// DescribeObjectsPagesWithContext indicates an expected call of DescribeObjectsPagesWithContext.
+// DescribeObjectsPagesWithContext indicates an expected call of DescribeObjectsPagesWithContext
 func (mr *MockDataPipelineAPIMockRecorder) DescribeObjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObjectsPagesWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribeObjectsPagesWithContext), varargs...)
 }
 
-// DescribeObjectsRequest mocks base method.
+// DescribeObjectsRequest mocks base method
 func (m *MockDataPipelineAPI) DescribeObjectsRequest(arg0 *datapipeline.DescribeObjectsInput) (*request.Request, *datapipeline.DescribeObjectsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeObjectsRequest", arg0)
@@ -343,14 +342,14 @@ func (m *MockDataPipelineAPI) DescribeObjectsRequest(arg0 *datapipeline.Describe
 	return ret0, ret1
 }
 
-// DescribeObjectsRequest indicates an expected call of DescribeObjectsRequest.
+// DescribeObjectsRequest indicates an expected call of DescribeObjectsRequest
 func (mr *MockDataPipelineAPIMockRecorder) DescribeObjectsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObjectsRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribeObjectsRequest), arg0)
 }
 
-// DescribeObjectsWithContext mocks base method.
-func (m *MockDataPipelineAPI) DescribeObjectsWithContext(arg0 context.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 ...request.Option) (*datapipeline.DescribeObjectsOutput, error) {
+// DescribeObjectsWithContext mocks base method
+func (m *MockDataPipelineAPI) DescribeObjectsWithContext(arg0 aws.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 ...request.Option) (*datapipeline.DescribeObjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -362,14 +361,14 @@ func (m *MockDataPipelineAPI) DescribeObjectsWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DescribeObjectsWithContext indicates an expected call of DescribeObjectsWithContext.
+// DescribeObjectsWithContext indicates an expected call of DescribeObjectsWithContext
 func (mr *MockDataPipelineAPIMockRecorder) DescribeObjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObjectsWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribeObjectsWithContext), varargs...)
 }
 
-// DescribePipelines mocks base method.
+// DescribePipelines mocks base method
 func (m *MockDataPipelineAPI) DescribePipelines(arg0 *datapipeline.DescribePipelinesInput) (*datapipeline.DescribePipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribePipelines", arg0)
@@ -378,13 +377,13 @@ func (m *MockDataPipelineAPI) DescribePipelines(arg0 *datapipeline.DescribePipel
 	return ret0, ret1
 }
 
-// DescribePipelines indicates an expected call of DescribePipelines.
+// DescribePipelines indicates an expected call of DescribePipelines
 func (mr *MockDataPipelineAPIMockRecorder) DescribePipelines(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePipelines", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribePipelines), arg0)
 }
 
-// DescribePipelinesRequest mocks base method.
+// DescribePipelinesRequest mocks base method
 func (m *MockDataPipelineAPI) DescribePipelinesRequest(arg0 *datapipeline.DescribePipelinesInput) (*request.Request, *datapipeline.DescribePipelinesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribePipelinesRequest", arg0)
@@ -393,14 +392,14 @@ func (m *MockDataPipelineAPI) DescribePipelinesRequest(arg0 *datapipeline.Descri
 	return ret0, ret1
 }
 
-// DescribePipelinesRequest indicates an expected call of DescribePipelinesRequest.
+// DescribePipelinesRequest indicates an expected call of DescribePipelinesRequest
 func (mr *MockDataPipelineAPIMockRecorder) DescribePipelinesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePipelinesRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribePipelinesRequest), arg0)
 }
 
-// DescribePipelinesWithContext mocks base method.
-func (m *MockDataPipelineAPI) DescribePipelinesWithContext(arg0 context.Context, arg1 *datapipeline.DescribePipelinesInput, arg2 ...request.Option) (*datapipeline.DescribePipelinesOutput, error) {
+// DescribePipelinesWithContext mocks base method
+func (m *MockDataPipelineAPI) DescribePipelinesWithContext(arg0 aws.Context, arg1 *datapipeline.DescribePipelinesInput, arg2 ...request.Option) (*datapipeline.DescribePipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -412,14 +411,14 @@ func (m *MockDataPipelineAPI) DescribePipelinesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DescribePipelinesWithContext indicates an expected call of DescribePipelinesWithContext.
+// DescribePipelinesWithContext indicates an expected call of DescribePipelinesWithContext
 func (mr *MockDataPipelineAPIMockRecorder) DescribePipelinesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePipelinesWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).DescribePipelinesWithContext), varargs...)
 }
 
-// EvaluateExpression mocks base method.
+// EvaluateExpression mocks base method
 func (m *MockDataPipelineAPI) EvaluateExpression(arg0 *datapipeline.EvaluateExpressionInput) (*datapipeline.EvaluateExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "EvaluateExpression", arg0)
@@ -428,13 +427,13 @@ func (m *MockDataPipelineAPI) EvaluateExpression(arg0 *datapipeline.EvaluateExpr
 	return ret0, ret1
 }
 
-// EvaluateExpression indicates an expected call of EvaluateExpression.
+// EvaluateExpression indicates an expected call of EvaluateExpression
 func (mr *MockDataPipelineAPIMockRecorder) EvaluateExpression(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateExpression", reflect.TypeOf((*MockDataPipelineAPI)(nil).EvaluateExpression), arg0)
 }
 
-// EvaluateExpressionRequest mocks base method.
+// EvaluateExpressionRequest mocks base method
 func (m *MockDataPipelineAPI) EvaluateExpressionRequest(arg0 *datapipeline.EvaluateExpressionInput) (*request.Request, *datapipeline.EvaluateExpressionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "EvaluateExpressionRequest", arg0)
@@ -443,14 +442,14 @@ func (m *MockDataPipelineAPI) EvaluateExpressionRequest(arg0 *datapipeline.Evalu
 	return ret0, ret1
 }
 
-// EvaluateExpressionRequest indicates an expected call of EvaluateExpressionRequest.
+// EvaluateExpressionRequest indicates an expected call of EvaluateExpressionRequest
 func (mr *MockDataPipelineAPIMockRecorder) EvaluateExpressionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateExpressionRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).EvaluateExpressionRequest), arg0)
 }
 
-// EvaluateExpressionWithContext mocks base method.
-func (m *MockDataPipelineAPI) EvaluateExpressionWithContext(arg0 context.Context, arg1 *datapipeline.EvaluateExpressionInput, arg2 ...request.Option) (*datapipeline.EvaluateExpressionOutput, error) {
+// EvaluateExpressionWithContext mocks base method
+func (m *MockDataPipelineAPI) EvaluateExpressionWithContext(arg0 aws.Context, arg1 *datapipeline.EvaluateExpressionInput, arg2 ...request.Option) (*datapipeline.EvaluateExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -462,14 +461,14 @@ func (m *MockDataPipelineAPI) EvaluateExpressionWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// EvaluateExpressionWithContext indicates an expected call of EvaluateExpressionWithContext.
+// EvaluateExpressionWithContext indicates an expected call of EvaluateExpressionWithContext
 func (mr *MockDataPipelineAPIMockRecorder) EvaluateExpressionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateExpressionWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).EvaluateExpressionWithContext), varargs...)
 }
 
-// GetPipelineDefinition mocks base method.
+// GetPipelineDefinition mocks base method
 func (m *MockDataPipelineAPI) GetPipelineDefinition(arg0 *datapipeline.GetPipelineDefinitionInput) (*datapipeline.GetPipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPipelineDefinition", arg0)
@@ -478,13 +477,13 @@ func (m *MockDataPipelineAPI) GetPipelineDefinition(arg0 *datapipeline.GetPipeli
 	return ret0, ret1
 }
 
-// GetPipelineDefinition indicates an expected call of GetPipelineDefinition.
+// GetPipelineDefinition indicates an expected call of GetPipelineDefinition
 func (mr *MockDataPipelineAPIMockRecorder) GetPipelineDefinition(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPipelineDefinition", reflect.TypeOf((*MockDataPipelineAPI)(nil).GetPipelineDefinition), arg0)
 }
 
-// GetPipelineDefinitionRequest mocks base method.
+// GetPipelineDefinitionRequest mocks base method
 func (m *MockDataPipelineAPI) GetPipelineDefinitionRequest(arg0 *datapipeline.GetPipelineDefinitionInput) (*request.Request, *datapipeline.GetPipelineDefinitionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPipelineDefinitionRequest", arg0)
@@ -493,14 +492,14 @@ func (m *MockDataPipelineAPI) GetPipelineDefinitionRequest(arg0 *datapipeline.Ge
 	return ret0, ret1
 }
 
-// GetPipelineDefinitionRequest indicates an expected call of GetPipelineDefinitionRequest.
+// GetPipelineDefinitionRequest indicates an expected call of GetPipelineDefinitionRequest
 func (mr *MockDataPipelineAPIMockRecorder) GetPipelineDefinitionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPipelineDefinitionRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).GetPipelineDefinitionRequest), arg0)
 }
 
-// GetPipelineDefinitionWithContext mocks base method.
-func (m *MockDataPipelineAPI) GetPipelineDefinitionWithContext(arg0 context.Context, arg1 *datapipeline.GetPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.GetPipelineDefinitionOutput, error) {
+// GetPipelineDefinitionWithContext mocks base method
+func (m *MockDataPipelineAPI) GetPipelineDefinitionWithContext(arg0 aws.Context, arg1 *datapipeline.GetPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.GetPipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -512,14 +511,14 @@ func (m *MockDataPipelineAPI) GetPipelineDefinitionWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// GetPipelineDefinitionWithContext indicates an expected call of GetPipelineDefinitionWithContext.
+// GetPipelineDefinitionWithContext indicates an expected call of GetPipelineDefinitionWithContext
 func (mr *MockDataPipelineAPIMockRecorder) GetPipelineDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPipelineDefinitionWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).GetPipelineDefinitionWithContext), varargs...)
 }
 
-// ListPipelines mocks base method.
+// ListPipelines mocks base method
 func (m *MockDataPipelineAPI) ListPipelines(arg0 *datapipeline.ListPipelinesInput) (*datapipeline.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPipelines", arg0)
@@ -528,13 +527,13 @@ func (m *MockDataPipelineAPI) ListPipelines(arg0 *datapipeline.ListPipelinesInpu
 	return ret0, ret1
 }
 
-// ListPipelines indicates an expected call of ListPipelines.
+// ListPipelines indicates an expected call of ListPipelines
 func (mr *MockDataPipelineAPIMockRecorder) ListPipelines(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelines", reflect.TypeOf((*MockDataPipelineAPI)(nil).ListPipelines), arg0)
 }
 
-// ListPipelinesPages mocks base method.
+// ListPipelinesPages mocks base method
 func (m *MockDataPipelineAPI) ListPipelinesPages(arg0 *datapipeline.ListPipelinesInput, arg1 func(*datapipeline.ListPipelinesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPipelinesPages", arg0, arg1)
@@ -542,14 +541,14 @@ func (m *MockDataPipelineAPI) ListPipelinesPages(arg0 *datapipeline.ListPipeline
 	return ret0
 }
 
-// ListPipelinesPages indicates an expected call of ListPipelinesPages.
+// ListPipelinesPages indicates an expected call of ListPipelinesPages
 func (mr *MockDataPipelineAPIMockRecorder) ListPipelinesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesPages", reflect.TypeOf((*MockDataPipelineAPI)(nil).ListPipelinesPages), arg0, arg1)
 }
 
-// ListPipelinesPagesWithContext mocks base method.
-func (m *MockDataPipelineAPI) ListPipelinesPagesWithContext(arg0 context.Context, arg1 *datapipeline.ListPipelinesInput, arg2 func(*datapipeline.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
+// ListPipelinesPagesWithContext mocks base method
+func (m *MockDataPipelineAPI) ListPipelinesPagesWithContext(arg0 aws.Context, arg1 *datapipeline.ListPipelinesInput, arg2 func(*datapipeline.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -560,14 +559,14 @@ func (m *MockDataPipelineAPI) ListPipelinesPagesWithContext(arg0 context.Context
 	return ret0
 }
 
-// ListPipelinesPagesWithContext indicates an expected call of ListPipelinesPagesWithContext.
+// ListPipelinesPagesWithContext indicates an expected call of ListPipelinesPagesWithContext
 func (mr *MockDataPipelineAPIMockRecorder) ListPipelinesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesPagesWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).ListPipelinesPagesWithContext), varargs...)
 }
 
-// ListPipelinesRequest mocks base method.
+// ListPipelinesRequest mocks base method
 func (m *MockDataPipelineAPI) ListPipelinesRequest(arg0 *datapipeline.ListPipelinesInput) (*request.Request, *datapipeline.ListPipelinesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPipelinesRequest", arg0)
@@ -576,14 +575,14 @@ func (m *MockDataPipelineAPI) ListPipelinesRequest(arg0 *datapipeline.ListPipeli
 	return ret0, ret1
 }
 
-// ListPipelinesRequest indicates an expected call of ListPipelinesRequest.
+// ListPipelinesRequest indicates an expected call of ListPipelinesRequest
 func (mr *MockDataPipelineAPIMockRecorder) ListPipelinesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).ListPipelinesRequest), arg0)
 }
 
-// ListPipelinesWithContext mocks base method.
-func (m *MockDataPipelineAPI) ListPipelinesWithContext(arg0 context.Context, arg1 *datapipeline.ListPipelinesInput, arg2 ...request.Option) (*datapipeline.ListPipelinesOutput, error) {
+// ListPipelinesWithContext mocks base method
+func (m *MockDataPipelineAPI) ListPipelinesWithContext(arg0 aws.Context, arg1 *datapipeline.ListPipelinesInput, arg2 ...request.Option) (*datapipeline.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -595,14 +594,14 @@ func (m *MockDataPipelineAPI) ListPipelinesWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// ListPipelinesWithContext indicates an expected call of ListPipelinesWithContext.
+// ListPipelinesWithContext indicates an expected call of ListPipelinesWithContext
 func (mr *MockDataPipelineAPIMockRecorder) ListPipelinesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).ListPipelinesWithContext), varargs...)
 }
 
-// PollForTask mocks base method.
+// PollForTask mocks base method
 func (m *MockDataPipelineAPI) PollForTask(arg0 *datapipeline.PollForTaskInput) (*datapipeline.PollForTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForTask", arg0)
@@ -611,13 +610,13 @@ func (m *MockDataPipelineAPI) PollForTask(arg0 *datapipeline.PollForTaskInput) (
 	return ret0, ret1
 }
 
-// PollForTask indicates an expected call of PollForTask.
+// PollForTask indicates an expected call of PollForTask
 func (mr *MockDataPipelineAPIMockRecorder) PollForTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForTask", reflect.TypeOf((*MockDataPipelineAPI)(nil).PollForTask), arg0)
 }
 
-// PollForTaskRequest mocks base method.
+// PollForTaskRequest mocks base method
 func (m *MockDataPipelineAPI) PollForTaskRequest(arg0 *datapipeline.PollForTaskInput) (*request.Request, *datapipeline.PollForTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForTaskRequest", arg0)
@@ -626,14 +625,14 @@ func (m *MockDataPipelineAPI) PollForTaskRequest(arg0 *datapipeline.PollForTaskI
 	return ret0, ret1
 }
 
-// PollForTaskRequest indicates an expected call of PollForTaskRequest.
+// PollForTaskRequest indicates an expected call of PollForTaskRequest
 func (mr *MockDataPipelineAPIMockRecorder) PollForTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForTaskRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).PollForTaskRequest), arg0)
 }
 
-// PollForTaskWithContext mocks base method.
-func (m *MockDataPipelineAPI) PollForTaskWithContext(arg0 context.Context, arg1 *datapipeline.PollForTaskInput, arg2 ...request.Option) (*datapipeline.PollForTaskOutput, error) {
+// PollForTaskWithContext mocks base method
+func (m *MockDataPipelineAPI) PollForTaskWithContext(arg0 aws.Context, arg1 *datapipeline.PollForTaskInput, arg2 ...request.Option) (*datapipeline.PollForTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -645,14 +644,14 @@ func (m *MockDataPipelineAPI) PollForTaskWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// PollForTaskWithContext indicates an expected call of PollForTaskWithContext.
+// PollForTaskWithContext indicates an expected call of PollForTaskWithContext
 func (mr *MockDataPipelineAPIMockRecorder) PollForTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForTaskWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).PollForTaskWithContext), varargs...)
 }
 
-// PutPipelineDefinition mocks base method.
+// PutPipelineDefinition mocks base method
 func (m *MockDataPipelineAPI) PutPipelineDefinition(arg0 *datapipeline.PutPipelineDefinitionInput) (*datapipeline.PutPipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutPipelineDefinition", arg0)
@@ -661,13 +660,13 @@ func (m *MockDataPipelineAPI) PutPipelineDefinition(arg0 *datapipeline.PutPipeli
 	return ret0, ret1
 }
 
-// PutPipelineDefinition indicates an expected call of PutPipelineDefinition.
+// PutPipelineDefinition indicates an expected call of PutPipelineDefinition
 func (mr *MockDataPipelineAPIMockRecorder) PutPipelineDefinition(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPipelineDefinition", reflect.TypeOf((*MockDataPipelineAPI)(nil).PutPipelineDefinition), arg0)
 }
 
-// PutPipelineDefinitionRequest mocks base method.
+// PutPipelineDefinitionRequest mocks base method
 func (m *MockDataPipelineAPI) PutPipelineDefinitionRequest(arg0 *datapipeline.PutPipelineDefinitionInput) (*request.Request, *datapipeline.PutPipelineDefinitionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutPipelineDefinitionRequest", arg0)
@@ -676,14 +675,14 @@ func (m *MockDataPipelineAPI) PutPipelineDefinitionRequest(arg0 *datapipeline.Pu
 	return ret0, ret1
 }
 
-// PutPipelineDefinitionRequest indicates an expected call of PutPipelineDefinitionRequest.
+// PutPipelineDefinitionRequest indicates an expected call of PutPipelineDefinitionRequest
 func (mr *MockDataPipelineAPIMockRecorder) PutPipelineDefinitionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPipelineDefinitionRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).PutPipelineDefinitionRequest), arg0)
 }
 
-// PutPipelineDefinitionWithContext mocks base method.
-func (m *MockDataPipelineAPI) PutPipelineDefinitionWithContext(arg0 context.Context, arg1 *datapipeline.PutPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.PutPipelineDefinitionOutput, error) {
+// PutPipelineDefinitionWithContext mocks base method
+func (m *MockDataPipelineAPI) PutPipelineDefinitionWithContext(arg0 aws.Context, arg1 *datapipeline.PutPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.PutPipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -695,14 +694,14 @@ func (m *MockDataPipelineAPI) PutPipelineDefinitionWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// PutPipelineDefinitionWithContext indicates an expected call of PutPipelineDefinitionWithContext.
+// PutPipelineDefinitionWithContext indicates an expected call of PutPipelineDefinitionWithContext
 func (mr *MockDataPipelineAPIMockRecorder) PutPipelineDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPipelineDefinitionWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).PutPipelineDefinitionWithContext), varargs...)
 }
 
-// QueryObjects mocks base method.
+// QueryObjects mocks base method
 func (m *MockDataPipelineAPI) QueryObjects(arg0 *datapipeline.QueryObjectsInput) (*datapipeline.QueryObjectsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "QueryObjects", arg0)
@@ -711,13 +710,13 @@ func (m *MockDataPipelineAPI) QueryObjects(arg0 *datapipeline.QueryObjectsInput)
 	return ret0, ret1
 }
 
-// QueryObjects indicates an expected call of QueryObjects.
+// QueryObjects indicates an expected call of QueryObjects
 func (mr *MockDataPipelineAPIMockRecorder) QueryObjects(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryObjects", reflect.TypeOf((*MockDataPipelineAPI)(nil).QueryObjects), arg0)
 }
 
-// QueryObjectsPages mocks base method.
+// QueryObjectsPages mocks base method
 func (m *MockDataPipelineAPI) QueryObjectsPages(arg0 *datapipeline.QueryObjectsInput, arg1 func(*datapipeline.QueryObjectsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "QueryObjectsPages", arg0, arg1)
@@ -725,14 +724,14 @@ func (m *MockDataPipelineAPI) QueryObjectsPages(arg0 *datapipeline.QueryObjectsI
 	return ret0
 }
 
-// QueryObjectsPages indicates an expected call of QueryObjectsPages.
+// QueryObjectsPages indicates an expected call of QueryObjectsPages
 func (mr *MockDataPipelineAPIMockRecorder) QueryObjectsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryObjectsPages", reflect.TypeOf((*MockDataPipelineAPI)(nil).QueryObjectsPages), arg0, arg1)
 }
 
-// QueryObjectsPagesWithContext mocks base method.
-func (m *MockDataPipelineAPI) QueryObjectsPagesWithContext(arg0 context.Context, arg1 *datapipeline.QueryObjectsInput, arg2 func(*datapipeline.QueryObjectsOutput, bool) bool, arg3 ...request.Option) error {
+// QueryObjectsPagesWithContext mocks base method
+func (m *MockDataPipelineAPI) QueryObjectsPagesWithContext(arg0 aws.Context, arg1 *datapipeline.QueryObjectsInput, arg2 func(*datapipeline.QueryObjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -743,14 +742,14 @@ func (m *MockDataPipelineAPI) QueryObjectsPagesWithContext(arg0 context.Context,
 	return ret0
 }
 
-// QueryObjectsPagesWithContext indicates an expected call of QueryObjectsPagesWithContext.
+// QueryObjectsPagesWithContext indicates an expected call of QueryObjectsPagesWithContext
 func (mr *MockDataPipelineAPIMockRecorder) QueryObjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryObjectsPagesWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).QueryObjectsPagesWithContext), varargs...)
 }
 
-// QueryObjectsRequest mocks base method.
+// QueryObjectsRequest mocks base method
 func (m *MockDataPipelineAPI) QueryObjectsRequest(arg0 *datapipeline.QueryObjectsInput) (*request.Request, *datapipeline.QueryObjectsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "QueryObjectsRequest", arg0)
@@ -759,14 +758,14 @@ func (m *MockDataPipelineAPI) QueryObjectsRequest(arg0 *datapipeline.QueryObject
 	return ret0, ret1
 }
 
-// QueryObjectsRequest indicates an expected call of QueryObjectsRequest.
+// QueryObjectsRequest indicates an expected call of QueryObjectsRequest
 func (mr *MockDataPipelineAPIMockRecorder) QueryObjectsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryObjectsRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).QueryObjectsRequest), arg0)
 }
 
-// QueryObjectsWithContext mocks base method.
-func (m *MockDataPipelineAPI) QueryObjectsWithContext(arg0 context.Context, arg1 *datapipeline.QueryObjectsInput, arg2 ...request.Option) (*datapipeline.QueryObjectsOutput, error) {
+// QueryObjectsWithContext mocks base method
+func (m *MockDataPipelineAPI) QueryObjectsWithContext(arg0 aws.Context, arg1 *datapipeline.QueryObjectsInput, arg2 ...request.Option) (*datapipeline.QueryObjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -778,14 +777,14 @@ func (m *MockDataPipelineAPI) QueryObjectsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// QueryObjectsWithContext indicates an expected call of QueryObjectsWithContext.
+// QueryObjectsWithContext indicates an expected call of QueryObjectsWithContext
 func (mr *MockDataPipelineAPIMockRecorder) QueryObjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryObjectsWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).QueryObjectsWithContext), varargs...)
 }
 
-// RemoveTags mocks base method.
+// RemoveTags mocks base method
 func (m *MockDataPipelineAPI) RemoveTags(arg0 *datapipeline.RemoveTagsInput) (*datapipeline.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTags", arg0)
@@ -794,13 +793,13 @@ func (m *MockDataPipelineAPI) RemoveTags(arg0 *datapipeline.RemoveTagsInput) (*d
 	return ret0, ret1
 }
 
-// RemoveTags indicates an expected call of RemoveTags.
+// RemoveTags indicates an expected call of RemoveTags
 func (mr *MockDataPipelineAPIMockRecorder) RemoveTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTags", reflect.TypeOf((*MockDataPipelineAPI)(nil).RemoveTags), arg0)
 }
 
-// RemoveTagsRequest mocks base method.
+// RemoveTagsRequest mocks base method
 func (m *MockDataPipelineAPI) RemoveTagsRequest(arg0 *datapipeline.RemoveTagsInput) (*request.Request, *datapipeline.RemoveTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsRequest", arg0)
@@ -809,14 +808,14 @@ func (m *MockDataPipelineAPI) RemoveTagsRequest(arg0 *datapipeline.RemoveTagsInp
 	return ret0, ret1
 }
 
-// RemoveTagsRequest indicates an expected call of RemoveTagsRequest.
+// RemoveTagsRequest indicates an expected call of RemoveTagsRequest
 func (mr *MockDataPipelineAPIMockRecorder) RemoveTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).RemoveTagsRequest), arg0)
 }
 
-// RemoveTagsWithContext mocks base method.
-func (m *MockDataPipelineAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *datapipeline.RemoveTagsInput, arg2 ...request.Option) (*datapipeline.RemoveTagsOutput, error) {
+// RemoveTagsWithContext mocks base method
+func (m *MockDataPipelineAPI) RemoveTagsWithContext(arg0 aws.Context, arg1 *datapipeline.RemoveTagsInput, arg2 ...request.Option) (*datapipeline.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -828,14 +827,14 @@ func (m *MockDataPipelineAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// RemoveTagsWithContext indicates an expected call of RemoveTagsWithContext.
+// RemoveTagsWithContext indicates an expected call of RemoveTagsWithContext
 func (mr *MockDataPipelineAPIMockRecorder) RemoveTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).RemoveTagsWithContext), varargs...)
 }
 
-// ReportTaskProgress mocks base method.
+// ReportTaskProgress mocks base method
 func (m *MockDataPipelineAPI) ReportTaskProgress(arg0 *datapipeline.ReportTaskProgressInput) (*datapipeline.ReportTaskProgressOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReportTaskProgress", arg0)
@@ -844,13 +843,13 @@ func (m *MockDataPipelineAPI) ReportTaskProgress(arg0 *datapipeline.ReportTaskPr
 	return ret0, ret1
 }
 
-// ReportTaskProgress indicates an expected call of ReportTaskProgress.
+// ReportTaskProgress indicates an expected call of ReportTaskProgress
 func (mr *MockDataPipelineAPIMockRecorder) ReportTaskProgress(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReportTaskProgress", reflect.TypeOf((*MockDataPipelineAPI)(nil).ReportTaskProgress), arg0)
 }
 
-// ReportTaskProgressRequest mocks base method.
+// ReportTaskProgressRequest mocks base method
 func (m *MockDataPipelineAPI) ReportTaskProgressRequest(arg0 *datapipeline.ReportTaskProgressInput) (*request.Request, *datapipeline.ReportTaskProgressOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReportTaskProgressRequest", arg0)
@@ -859,14 +858,14 @@ func (m *MockDataPipelineAPI) ReportTaskProgressRequest(arg0 *datapipeline.Repor
 	return ret0, ret1
 }
 
-// ReportTaskProgressRequest indicates an expected call of ReportTaskProgressRequest.
+// ReportTaskProgressRequest indicates an expected call of ReportTaskProgressRequest
 func (mr *MockDataPipelineAPIMockRecorder) ReportTaskProgressRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReportTaskProgressRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).ReportTaskProgressRequest), arg0)
 }
 
-// ReportTaskProgressWithContext mocks base method.
-func (m *MockDataPipelineAPI) ReportTaskProgressWithContext(arg0 context.Context, arg1 *datapipeline.ReportTaskProgressInput, arg2 ...request.Option) (*datapipeline.ReportTaskProgressOutput, error) {
+// ReportTaskProgressWithContext mocks base method
+func (m *MockDataPipelineAPI) ReportTaskProgressWithContext(arg0 aws.Context, arg1 *datapipeline.ReportTaskProgressInput, arg2 ...request.Option) (*datapipeline.ReportTaskProgressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -878,14 +877,14 @@ func (m *MockDataPipelineAPI) ReportTaskProgressWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ReportTaskProgressWithContext indicates an expected call of ReportTaskProgressWithContext.
+// ReportTaskProgressWithContext indicates an expected call of ReportTaskProgressWithContext
 func (mr *MockDataPipelineAPIMockRecorder) ReportTaskProgressWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReportTaskProgressWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).ReportTaskProgressWithContext), varargs...)
 }
 
-// ReportTaskRunnerHeartbeat mocks base method.
+// ReportTaskRunnerHeartbeat mocks base method
 func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeat(arg0 *datapipeline.ReportTaskRunnerHeartbeatInput) (*datapipeline.ReportTaskRunnerHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReportTaskRunnerHeartbeat", arg0)
@@ -894,13 +893,13 @@ func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeat(arg0 *datapipeline.Repor
 	return ret0, ret1
 }
 
-// ReportTaskRunnerHeartbeat indicates an expected call of ReportTaskRunnerHeartbeat.
+// ReportTaskRunnerHeartbeat indicates an expected call of ReportTaskRunnerHeartbeat
 func (mr *MockDataPipelineAPIMockRecorder) ReportTaskRunnerHeartbeat(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReportTaskRunnerHeartbeat", reflect.TypeOf((*MockDataPipelineAPI)(nil).ReportTaskRunnerHeartbeat), arg0)
 }
 
-// ReportTaskRunnerHeartbeatRequest mocks base method.
+// ReportTaskRunnerHeartbeatRequest mocks base method
 func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatRequest(arg0 *datapipeline.ReportTaskRunnerHeartbeatInput) (*request.Request, *datapipeline.ReportTaskRunnerHeartbeatOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReportTaskRunnerHeartbeatRequest", arg0)
@@ -909,14 +908,14 @@ func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatRequest(arg0 *datapipelin
 	return ret0, ret1
 }
 
-// ReportTaskRunnerHeartbeatRequest indicates an expected call of ReportTaskRunnerHeartbeatRequest.
+// ReportTaskRunnerHeartbeatRequest indicates an expected call of ReportTaskRunnerHeartbeatRequest
 func (mr *MockDataPipelineAPIMockRecorder) ReportTaskRunnerHeartbeatRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReportTaskRunnerHeartbeatRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).ReportTaskRunnerHeartbeatRequest), arg0)
 }
 
-// ReportTaskRunnerHeartbeatWithContext mocks base method.
-func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatWithContext(arg0 context.Context, arg1 *datapipeline.ReportTaskRunnerHeartbeatInput, arg2 ...request.Option) (*datapipeline.ReportTaskRunnerHeartbeatOutput, error) {
+// ReportTaskRunnerHeartbeatWithContext mocks base method
+func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatWithContext(arg0 aws.Context, arg1 *datapipeline.ReportTaskRunnerHeartbeatInput, arg2 ...request.Option) (*datapipeline.ReportTaskRunnerHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -928,14 +927,14 @@ func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// ReportTaskRunnerHeartbeatWithContext indicates an expected call of ReportTaskRunnerHeartbeatWithContext.
+// ReportTaskRunnerHeartbeatWithContext indicates an expected call of ReportTaskRunnerHeartbeatWithContext
 func (mr *MockDataPipelineAPIMockRecorder) ReportTaskRunnerHeartbeatWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReportTaskRunnerHeartbeatWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).ReportTaskRunnerHeartbeatWithContext), varargs...)
 }
 
-// SetStatus mocks base method.
+// SetStatus mocks base method
 func (m *MockDataPipelineAPI) SetStatus(arg0 *datapipeline.SetStatusInput) (*datapipeline.SetStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetStatus", arg0)
@@ -944,13 +943,13 @@ func (m *MockDataPipelineAPI) SetStatus(arg0 *datapipeline.SetStatusInput) (*dat
 	return ret0, ret1
 }
 
-// SetStatus indicates an expected call of SetStatus.
+// SetStatus indicates an expected call of SetStatus
 func (mr *MockDataPipelineAPIMockRecorder) SetStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetStatus", reflect.TypeOf((*MockDataPipelineAPI)(nil).SetStatus), arg0)
 }
 
-// SetStatusRequest mocks base method.
+// SetStatusRequest mocks base method
 func (m *MockDataPipelineAPI) SetStatusRequest(arg0 *datapipeline.SetStatusInput) (*request.Request, *datapipeline.SetStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetStatusRequest", arg0)
@@ -959,14 +958,14 @@ func (m *MockDataPipelineAPI) SetStatusRequest(arg0 *datapipeline.SetStatusInput
 	return ret0, ret1
 }
 
-// SetStatusRequest indicates an expected call of SetStatusRequest.
+// SetStatusRequest indicates an expected call of SetStatusRequest
 func (mr *MockDataPipelineAPIMockRecorder) SetStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetStatusRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).SetStatusRequest), arg0)
 }
 
-// SetStatusWithContext mocks base method.
-func (m *MockDataPipelineAPI) SetStatusWithContext(arg0 context.Context, arg1 *datapipeline.SetStatusInput, arg2 ...request.Option) (*datapipeline.SetStatusOutput, error) {
+// SetStatusWithContext mocks base method
+func (m *MockDataPipelineAPI) SetStatusWithContext(arg0 aws.Context, arg1 *datapipeline.SetStatusInput, arg2 ...request.Option) (*datapipeline.SetStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -978,14 +977,14 @@ func (m *MockDataPipelineAPI) SetStatusWithContext(arg0 context.Context, arg1 *d
 	return ret0, ret1
 }
 
-// SetStatusWithContext indicates an expected call of SetStatusWithContext.
+// SetStatusWithContext indicates an expected call of SetStatusWithContext
 func (mr *MockDataPipelineAPIMockRecorder) SetStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetStatusWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).SetStatusWithContext), varargs...)
 }
 
-// SetTaskStatus mocks base method.
+// SetTaskStatus mocks base method
 func (m *MockDataPipelineAPI) SetTaskStatus(arg0 *datapipeline.SetTaskStatusInput) (*datapipeline.SetTaskStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetTaskStatus", arg0)
@@ -994,13 +993,13 @@ func (m *MockDataPipelineAPI) SetTaskStatus(arg0 *datapipeline.SetTaskStatusInpu
 	return ret0, ret1
 }
 
-// SetTaskStatus indicates an expected call of SetTaskStatus.
+// SetTaskStatus indicates an expected call of SetTaskStatus
 func (mr *MockDataPipelineAPIMockRecorder) SetTaskStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetTaskStatus", reflect.TypeOf((*MockDataPipelineAPI)(nil).SetTaskStatus), arg0)
 }
 
-// SetTaskStatusRequest mocks base method.
+// SetTaskStatusRequest mocks base method
 func (m *MockDataPipelineAPI) SetTaskStatusRequest(arg0 *datapipeline.SetTaskStatusInput) (*request.Request, *datapipeline.SetTaskStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetTaskStatusRequest", arg0)
@@ -1009,14 +1008,14 @@ func (m *MockDataPipelineAPI) SetTaskStatusRequest(arg0 *datapipeline.SetTaskSta
 	return ret0, ret1
 }
 
-// SetTaskStatusRequest indicates an expected call of SetTaskStatusRequest.
+// SetTaskStatusRequest indicates an expected call of SetTaskStatusRequest
 func (mr *MockDataPipelineAPIMockRecorder) SetTaskStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetTaskStatusRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).SetTaskStatusRequest), arg0)
 }
 
-// SetTaskStatusWithContext mocks base method.
-func (m *MockDataPipelineAPI) SetTaskStatusWithContext(arg0 context.Context, arg1 *datapipeline.SetTaskStatusInput, arg2 ...request.Option) (*datapipeline.SetTaskStatusOutput, error) {
+// SetTaskStatusWithContext mocks base method
+func (m *MockDataPipelineAPI) SetTaskStatusWithContext(arg0 aws.Context, arg1 *datapipeline.SetTaskStatusInput, arg2 ...request.Option) (*datapipeline.SetTaskStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1028,14 +1027,14 @@ func (m *MockDataPipelineAPI) SetTaskStatusWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// SetTaskStatusWithContext indicates an expected call of SetTaskStatusWithContext.
+// SetTaskStatusWithContext indicates an expected call of SetTaskStatusWithContext
 func (mr *MockDataPipelineAPIMockRecorder) SetTaskStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetTaskStatusWithContext", reflect.TypeOf((*MockDataPipelineAPI)(nil).SetTaskStatusWithContext), varargs...)
 }
 
-// ValidatePipelineDefinition mocks base method.
+// ValidatePipelineDefinition mocks base method
 func (m *MockDataPipelineAPI) ValidatePipelineDefinition(arg0 *datapipeline.ValidatePipelineDefinitionInput) (*datapipeline.ValidatePipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ValidatePipelineDefinition", arg0)
@@ -1044,13 +1043,13 @@ func (m *MockDataPipelineAPI) ValidatePipelineDefinition(arg0 *datapipeline.Vali
 	return ret0, ret1
 }
 
-// ValidatePipelineDefinition indicates an expected call of ValidatePipelineDefinition.
+// ValidatePipelineDefinition indicates an expected call of ValidatePipelineDefinition
 func (mr *MockDataPipelineAPIMockRecorder) ValidatePipelineDefinition(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePipelineDefinition", reflect.TypeOf((*MockDataPipelineAPI)(nil).ValidatePipelineDefinition), arg0)
 }
 
-// ValidatePipelineDefinitionRequest mocks base method.
+// ValidatePipelineDefinitionRequest mocks base method
 func (m *MockDataPipelineAPI) ValidatePipelineDefinitionRequest(arg0 *datapipeline.ValidatePipelineDefinitionInput) (*request.Request, *datapipeline.ValidatePipelineDefinitionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ValidatePipelineDefinitionRequest", arg0)
@@ -1059,14 +1058,14 @@ func (m *MockDataPipelineAPI) ValidatePipelineDefinitionRequest(arg0 *datapipeli
 	return ret0, ret1
 }
 
-// ValidatePipelineDefinitionRequest indicates an expected call of ValidatePipelineDefinitionRequest.
+// ValidatePipelineDefinitionRequest indicates an expected call of ValidatePipelineDefinitionRequest
 func (mr *MockDataPipelineAPIMockRecorder) ValidatePipelineDefinitionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePipelineDefinitionRequest", reflect.TypeOf((*MockDataPipelineAPI)(nil).ValidatePipelineDefinitionRequest), arg0)
 }
 
-// ValidatePipelineDefinitionWithContext mocks base method.
-func (m *MockDataPipelineAPI) ValidatePipelineDefinitionWithContext(arg0 context.Context, arg1 *datapipeline.ValidatePipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.ValidatePipelineDefinitionOutput, error) {
+// ValidatePipelineDefinitionWithContext mocks base method
+func (m *MockDataPipelineAPI) ValidatePipelineDefinitionWithContext(arg0 aws.Context, arg1 *datapipeline.ValidatePipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.ValidatePipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1078,7 +1077,7 @@ func (m *MockDataPipelineAPI) ValidatePipelineDefinitionWithContext(arg0 context
 	return ret0, ret1
 }
 
-// ValidatePipelineDefinitionWithContext indicates an expected call of ValidatePipelineDefinitionWithContext.
+// ValidatePipelineDefinitionWithContext indicates an expected call of ValidatePipelineDefinitionWithContext
 func (mr *MockDataPipelineAPIMockRecorder) ValidatePipelineDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

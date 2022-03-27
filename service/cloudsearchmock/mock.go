@@ -5,38 +5,37 @@
 package cloudsearchmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudsearch "github.com/aws/aws-sdk-go/service/cloudsearch"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockCloudSearchAPI is a mock of CloudSearchAPI interface.
+// MockCloudSearchAPI is a mock of CloudSearchAPI interface
 type MockCloudSearchAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockCloudSearchAPIMockRecorder
 }
 
-// MockCloudSearchAPIMockRecorder is the mock recorder for MockCloudSearchAPI.
+// MockCloudSearchAPIMockRecorder is the mock recorder for MockCloudSearchAPI
 type MockCloudSearchAPIMockRecorder struct {
 	mock *MockCloudSearchAPI
 }
 
-// NewMockCloudSearchAPI creates a new mock instance.
+// NewMockCloudSearchAPI creates a new mock instance
 func NewMockCloudSearchAPI(ctrl *gomock.Controller) *MockCloudSearchAPI {
 	mock := &MockCloudSearchAPI{ctrl: ctrl}
 	mock.recorder = &MockCloudSearchAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockCloudSearchAPI) EXPECT() *MockCloudSearchAPIMockRecorder {
 	return m.recorder
 }
 
-// BuildSuggesters mocks base method.
+// BuildSuggesters mocks base method
 func (m *MockCloudSearchAPI) BuildSuggesters(arg0 *cloudsearch.BuildSuggestersInput) (*cloudsearch.BuildSuggestersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "BuildSuggesters", arg0)
@@ -45,13 +44,13 @@ func (m *MockCloudSearchAPI) BuildSuggesters(arg0 *cloudsearch.BuildSuggestersIn
 	return ret0, ret1
 }
 
-// BuildSuggesters indicates an expected call of BuildSuggesters.
+// BuildSuggesters indicates an expected call of BuildSuggesters
 func (mr *MockCloudSearchAPIMockRecorder) BuildSuggesters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BuildSuggesters", reflect.TypeOf((*MockCloudSearchAPI)(nil).BuildSuggesters), arg0)
 }
 
-// BuildSuggestersRequest mocks base method.
+// BuildSuggestersRequest mocks base method
 func (m *MockCloudSearchAPI) BuildSuggestersRequest(arg0 *cloudsearch.BuildSuggestersInput) (*request.Request, *cloudsearch.BuildSuggestersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "BuildSuggestersRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockCloudSearchAPI) BuildSuggestersRequest(arg0 *cloudsearch.BuildSugge
 	return ret0, ret1
 }
 
-// BuildSuggestersRequest indicates an expected call of BuildSuggestersRequest.
+// BuildSuggestersRequest indicates an expected call of BuildSuggestersRequest
 func (mr *MockCloudSearchAPIMockRecorder) BuildSuggestersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BuildSuggestersRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).BuildSuggestersRequest), arg0)
 }
 
-// BuildSuggestersWithContext mocks base method.
-func (m *MockCloudSearchAPI) BuildSuggestersWithContext(arg0 context.Context, arg1 *cloudsearch.BuildSuggestersInput, arg2 ...request.Option) (*cloudsearch.BuildSuggestersOutput, error) {
+// BuildSuggestersWithContext mocks base method
+func (m *MockCloudSearchAPI) BuildSuggestersWithContext(arg0 aws.Context, arg1 *cloudsearch.BuildSuggestersInput, arg2 ...request.Option) (*cloudsearch.BuildSuggestersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockCloudSearchAPI) BuildSuggestersWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// BuildSuggestersWithContext indicates an expected call of BuildSuggestersWithContext.
+// BuildSuggestersWithContext indicates an expected call of BuildSuggestersWithContext
 func (mr *MockCloudSearchAPIMockRecorder) BuildSuggestersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BuildSuggestersWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).BuildSuggestersWithContext), varargs...)
 }
 
-// CreateDomain mocks base method.
+// CreateDomain mocks base method
 func (m *MockCloudSearchAPI) CreateDomain(arg0 *cloudsearch.CreateDomainInput) (*cloudsearch.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDomain", arg0)
@@ -95,13 +94,13 @@ func (m *MockCloudSearchAPI) CreateDomain(arg0 *cloudsearch.CreateDomainInput) (
 	return ret0, ret1
 }
 
-// CreateDomain indicates an expected call of CreateDomain.
+// CreateDomain indicates an expected call of CreateDomain
 func (mr *MockCloudSearchAPIMockRecorder) CreateDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomain", reflect.TypeOf((*MockCloudSearchAPI)(nil).CreateDomain), arg0)
 }
 
-// CreateDomainRequest mocks base method.
+// CreateDomainRequest mocks base method
 func (m *MockCloudSearchAPI) CreateDomainRequest(arg0 *cloudsearch.CreateDomainInput) (*request.Request, *cloudsearch.CreateDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDomainRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockCloudSearchAPI) CreateDomainRequest(arg0 *cloudsearch.CreateDomainI
 	return ret0, ret1
 }
 
-// CreateDomainRequest indicates an expected call of CreateDomainRequest.
+// CreateDomainRequest indicates an expected call of CreateDomainRequest
 func (mr *MockCloudSearchAPIMockRecorder) CreateDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).CreateDomainRequest), arg0)
 }
 
-// CreateDomainWithContext mocks base method.
-func (m *MockCloudSearchAPI) CreateDomainWithContext(arg0 context.Context, arg1 *cloudsearch.CreateDomainInput, arg2 ...request.Option) (*cloudsearch.CreateDomainOutput, error) {
+// CreateDomainWithContext mocks base method
+func (m *MockCloudSearchAPI) CreateDomainWithContext(arg0 aws.Context, arg1 *cloudsearch.CreateDomainInput, arg2 ...request.Option) (*cloudsearch.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockCloudSearchAPI) CreateDomainWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateDomainWithContext indicates an expected call of CreateDomainWithContext.
+// CreateDomainWithContext indicates an expected call of CreateDomainWithContext
 func (mr *MockCloudSearchAPIMockRecorder) CreateDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).CreateDomainWithContext), varargs...)
 }
 
-// DefineAnalysisScheme mocks base method.
+// DefineAnalysisScheme mocks base method
 func (m *MockCloudSearchAPI) DefineAnalysisScheme(arg0 *cloudsearch.DefineAnalysisSchemeInput) (*cloudsearch.DefineAnalysisSchemeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineAnalysisScheme", arg0)
@@ -145,13 +144,13 @@ func (m *MockCloudSearchAPI) DefineAnalysisScheme(arg0 *cloudsearch.DefineAnalys
 	return ret0, ret1
 }
 
-// DefineAnalysisScheme indicates an expected call of DefineAnalysisScheme.
+// DefineAnalysisScheme indicates an expected call of DefineAnalysisScheme
 func (mr *MockCloudSearchAPIMockRecorder) DefineAnalysisScheme(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineAnalysisScheme", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineAnalysisScheme), arg0)
 }
 
-// DefineAnalysisSchemeRequest mocks base method.
+// DefineAnalysisSchemeRequest mocks base method
 func (m *MockCloudSearchAPI) DefineAnalysisSchemeRequest(arg0 *cloudsearch.DefineAnalysisSchemeInput) (*request.Request, *cloudsearch.DefineAnalysisSchemeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineAnalysisSchemeRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockCloudSearchAPI) DefineAnalysisSchemeRequest(arg0 *cloudsearch.Defin
 	return ret0, ret1
 }
 
-// DefineAnalysisSchemeRequest indicates an expected call of DefineAnalysisSchemeRequest.
+// DefineAnalysisSchemeRequest indicates an expected call of DefineAnalysisSchemeRequest
 func (mr *MockCloudSearchAPIMockRecorder) DefineAnalysisSchemeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineAnalysisSchemeRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineAnalysisSchemeRequest), arg0)
 }
 
-// DefineAnalysisSchemeWithContext mocks base method.
-func (m *MockCloudSearchAPI) DefineAnalysisSchemeWithContext(arg0 context.Context, arg1 *cloudsearch.DefineAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DefineAnalysisSchemeOutput, error) {
+// DefineAnalysisSchemeWithContext mocks base method
+func (m *MockCloudSearchAPI) DefineAnalysisSchemeWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DefineAnalysisSchemeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockCloudSearchAPI) DefineAnalysisSchemeWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DefineAnalysisSchemeWithContext indicates an expected call of DefineAnalysisSchemeWithContext.
+// DefineAnalysisSchemeWithContext indicates an expected call of DefineAnalysisSchemeWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DefineAnalysisSchemeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineAnalysisSchemeWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineAnalysisSchemeWithContext), varargs...)
 }
 
-// DefineExpression mocks base method.
+// DefineExpression mocks base method
 func (m *MockCloudSearchAPI) DefineExpression(arg0 *cloudsearch.DefineExpressionInput) (*cloudsearch.DefineExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineExpression", arg0)
@@ -195,13 +194,13 @@ func (m *MockCloudSearchAPI) DefineExpression(arg0 *cloudsearch.DefineExpression
 	return ret0, ret1
 }
 
-// DefineExpression indicates an expected call of DefineExpression.
+// DefineExpression indicates an expected call of DefineExpression
 func (mr *MockCloudSearchAPIMockRecorder) DefineExpression(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineExpression", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineExpression), arg0)
 }
 
-// DefineExpressionRequest mocks base method.
+// DefineExpressionRequest mocks base method
 func (m *MockCloudSearchAPI) DefineExpressionRequest(arg0 *cloudsearch.DefineExpressionInput) (*request.Request, *cloudsearch.DefineExpressionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineExpressionRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockCloudSearchAPI) DefineExpressionRequest(arg0 *cloudsearch.DefineExp
 	return ret0, ret1
 }
 
-// DefineExpressionRequest indicates an expected call of DefineExpressionRequest.
+// DefineExpressionRequest indicates an expected call of DefineExpressionRequest
 func (mr *MockCloudSearchAPIMockRecorder) DefineExpressionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineExpressionRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineExpressionRequest), arg0)
 }
 
-// DefineExpressionWithContext mocks base method.
-func (m *MockCloudSearchAPI) DefineExpressionWithContext(arg0 context.Context, arg1 *cloudsearch.DefineExpressionInput, arg2 ...request.Option) (*cloudsearch.DefineExpressionOutput, error) {
+// DefineExpressionWithContext mocks base method
+func (m *MockCloudSearchAPI) DefineExpressionWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineExpressionInput, arg2 ...request.Option) (*cloudsearch.DefineExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockCloudSearchAPI) DefineExpressionWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DefineExpressionWithContext indicates an expected call of DefineExpressionWithContext.
+// DefineExpressionWithContext indicates an expected call of DefineExpressionWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DefineExpressionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineExpressionWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineExpressionWithContext), varargs...)
 }
 
-// DefineIndexField mocks base method.
+// DefineIndexField mocks base method
 func (m *MockCloudSearchAPI) DefineIndexField(arg0 *cloudsearch.DefineIndexFieldInput) (*cloudsearch.DefineIndexFieldOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineIndexField", arg0)
@@ -245,13 +244,13 @@ func (m *MockCloudSearchAPI) DefineIndexField(arg0 *cloudsearch.DefineIndexField
 	return ret0, ret1
 }
 
-// DefineIndexField indicates an expected call of DefineIndexField.
+// DefineIndexField indicates an expected call of DefineIndexField
 func (mr *MockCloudSearchAPIMockRecorder) DefineIndexField(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineIndexField", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineIndexField), arg0)
 }
 
-// DefineIndexFieldRequest mocks base method.
+// DefineIndexFieldRequest mocks base method
 func (m *MockCloudSearchAPI) DefineIndexFieldRequest(arg0 *cloudsearch.DefineIndexFieldInput) (*request.Request, *cloudsearch.DefineIndexFieldOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineIndexFieldRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockCloudSearchAPI) DefineIndexFieldRequest(arg0 *cloudsearch.DefineInd
 	return ret0, ret1
 }
 
-// DefineIndexFieldRequest indicates an expected call of DefineIndexFieldRequest.
+// DefineIndexFieldRequest indicates an expected call of DefineIndexFieldRequest
 func (mr *MockCloudSearchAPIMockRecorder) DefineIndexFieldRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineIndexFieldRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineIndexFieldRequest), arg0)
 }
 
-// DefineIndexFieldWithContext mocks base method.
-func (m *MockCloudSearchAPI) DefineIndexFieldWithContext(arg0 context.Context, arg1 *cloudsearch.DefineIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DefineIndexFieldOutput, error) {
+// DefineIndexFieldWithContext mocks base method
+func (m *MockCloudSearchAPI) DefineIndexFieldWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DefineIndexFieldOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockCloudSearchAPI) DefineIndexFieldWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DefineIndexFieldWithContext indicates an expected call of DefineIndexFieldWithContext.
+// DefineIndexFieldWithContext indicates an expected call of DefineIndexFieldWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DefineIndexFieldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineIndexFieldWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineIndexFieldWithContext), varargs...)
 }
 
-// DefineSuggester mocks base method.
+// DefineSuggester mocks base method
 func (m *MockCloudSearchAPI) DefineSuggester(arg0 *cloudsearch.DefineSuggesterInput) (*cloudsearch.DefineSuggesterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineSuggester", arg0)
@@ -295,13 +294,13 @@ func (m *MockCloudSearchAPI) DefineSuggester(arg0 *cloudsearch.DefineSuggesterIn
 	return ret0, ret1
 }
 
-// DefineSuggester indicates an expected call of DefineSuggester.
+// DefineSuggester indicates an expected call of DefineSuggester
 func (mr *MockCloudSearchAPIMockRecorder) DefineSuggester(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineSuggester", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineSuggester), arg0)
 }
 
-// DefineSuggesterRequest mocks base method.
+// DefineSuggesterRequest mocks base method
 func (m *MockCloudSearchAPI) DefineSuggesterRequest(arg0 *cloudsearch.DefineSuggesterInput) (*request.Request, *cloudsearch.DefineSuggesterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DefineSuggesterRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockCloudSearchAPI) DefineSuggesterRequest(arg0 *cloudsearch.DefineSugg
 	return ret0, ret1
 }
 
-// DefineSuggesterRequest indicates an expected call of DefineSuggesterRequest.
+// DefineSuggesterRequest indicates an expected call of DefineSuggesterRequest
 func (mr *MockCloudSearchAPIMockRecorder) DefineSuggesterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineSuggesterRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineSuggesterRequest), arg0)
 }
 
-// DefineSuggesterWithContext mocks base method.
-func (m *MockCloudSearchAPI) DefineSuggesterWithContext(arg0 context.Context, arg1 *cloudsearch.DefineSuggesterInput, arg2 ...request.Option) (*cloudsearch.DefineSuggesterOutput, error) {
+// DefineSuggesterWithContext mocks base method
+func (m *MockCloudSearchAPI) DefineSuggesterWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineSuggesterInput, arg2 ...request.Option) (*cloudsearch.DefineSuggesterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockCloudSearchAPI) DefineSuggesterWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DefineSuggesterWithContext indicates an expected call of DefineSuggesterWithContext.
+// DefineSuggesterWithContext indicates an expected call of DefineSuggesterWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DefineSuggesterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DefineSuggesterWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DefineSuggesterWithContext), varargs...)
 }
 
-// DeleteAnalysisScheme mocks base method.
+// DeleteAnalysisScheme mocks base method
 func (m *MockCloudSearchAPI) DeleteAnalysisScheme(arg0 *cloudsearch.DeleteAnalysisSchemeInput) (*cloudsearch.DeleteAnalysisSchemeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAnalysisScheme", arg0)
@@ -345,13 +344,13 @@ func (m *MockCloudSearchAPI) DeleteAnalysisScheme(arg0 *cloudsearch.DeleteAnalys
 	return ret0, ret1
 }
 
-// DeleteAnalysisScheme indicates an expected call of DeleteAnalysisScheme.
+// DeleteAnalysisScheme indicates an expected call of DeleteAnalysisScheme
 func (mr *MockCloudSearchAPIMockRecorder) DeleteAnalysisScheme(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisScheme", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteAnalysisScheme), arg0)
 }
 
-// DeleteAnalysisSchemeRequest mocks base method.
+// DeleteAnalysisSchemeRequest mocks base method
 func (m *MockCloudSearchAPI) DeleteAnalysisSchemeRequest(arg0 *cloudsearch.DeleteAnalysisSchemeInput) (*request.Request, *cloudsearch.DeleteAnalysisSchemeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAnalysisSchemeRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockCloudSearchAPI) DeleteAnalysisSchemeRequest(arg0 *cloudsearch.Delet
 	return ret0, ret1
 }
 
-// DeleteAnalysisSchemeRequest indicates an expected call of DeleteAnalysisSchemeRequest.
+// DeleteAnalysisSchemeRequest indicates an expected call of DeleteAnalysisSchemeRequest
 func (mr *MockCloudSearchAPIMockRecorder) DeleteAnalysisSchemeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisSchemeRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteAnalysisSchemeRequest), arg0)
 }
 
-// DeleteAnalysisSchemeWithContext mocks base method.
-func (m *MockCloudSearchAPI) DeleteAnalysisSchemeWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DeleteAnalysisSchemeOutput, error) {
+// DeleteAnalysisSchemeWithContext mocks base method
+func (m *MockCloudSearchAPI) DeleteAnalysisSchemeWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DeleteAnalysisSchemeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockCloudSearchAPI) DeleteAnalysisSchemeWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteAnalysisSchemeWithContext indicates an expected call of DeleteAnalysisSchemeWithContext.
+// DeleteAnalysisSchemeWithContext indicates an expected call of DeleteAnalysisSchemeWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DeleteAnalysisSchemeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisSchemeWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteAnalysisSchemeWithContext), varargs...)
 }
 
-// DeleteDomain mocks base method.
+// DeleteDomain mocks base method
 func (m *MockCloudSearchAPI) DeleteDomain(arg0 *cloudsearch.DeleteDomainInput) (*cloudsearch.DeleteDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDomain", arg0)
@@ -395,13 +394,13 @@ func (m *MockCloudSearchAPI) DeleteDomain(arg0 *cloudsearch.DeleteDomainInput) (
 	return ret0, ret1
 }
 
-// DeleteDomain indicates an expected call of DeleteDomain.
+// DeleteDomain indicates an expected call of DeleteDomain
 func (mr *MockCloudSearchAPIMockRecorder) DeleteDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomain", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteDomain), arg0)
 }
 
-// DeleteDomainRequest mocks base method.
+// DeleteDomainRequest mocks base method
 func (m *MockCloudSearchAPI) DeleteDomainRequest(arg0 *cloudsearch.DeleteDomainInput) (*request.Request, *cloudsearch.DeleteDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDomainRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockCloudSearchAPI) DeleteDomainRequest(arg0 *cloudsearch.DeleteDomainI
 	return ret0, ret1
 }
 
-// DeleteDomainRequest indicates an expected call of DeleteDomainRequest.
+// DeleteDomainRequest indicates an expected call of DeleteDomainRequest
 func (mr *MockCloudSearchAPIMockRecorder) DeleteDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteDomainRequest), arg0)
 }
 
-// DeleteDomainWithContext mocks base method.
-func (m *MockCloudSearchAPI) DeleteDomainWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteDomainInput, arg2 ...request.Option) (*cloudsearch.DeleteDomainOutput, error) {
+// DeleteDomainWithContext mocks base method
+func (m *MockCloudSearchAPI) DeleteDomainWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteDomainInput, arg2 ...request.Option) (*cloudsearch.DeleteDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockCloudSearchAPI) DeleteDomainWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteDomainWithContext indicates an expected call of DeleteDomainWithContext.
+// DeleteDomainWithContext indicates an expected call of DeleteDomainWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DeleteDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteDomainWithContext), varargs...)
 }
 
-// DeleteExpression mocks base method.
+// DeleteExpression mocks base method
 func (m *MockCloudSearchAPI) DeleteExpression(arg0 *cloudsearch.DeleteExpressionInput) (*cloudsearch.DeleteExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteExpression", arg0)
@@ -445,13 +444,13 @@ func (m *MockCloudSearchAPI) DeleteExpression(arg0 *cloudsearch.DeleteExpression
 	return ret0, ret1
 }
 
-// DeleteExpression indicates an expected call of DeleteExpression.
+// DeleteExpression indicates an expected call of DeleteExpression
 func (mr *MockCloudSearchAPIMockRecorder) DeleteExpression(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExpression", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteExpression), arg0)
 }
 
-// DeleteExpressionRequest mocks base method.
+// DeleteExpressionRequest mocks base method
 func (m *MockCloudSearchAPI) DeleteExpressionRequest(arg0 *cloudsearch.DeleteExpressionInput) (*request.Request, *cloudsearch.DeleteExpressionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteExpressionRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockCloudSearchAPI) DeleteExpressionRequest(arg0 *cloudsearch.DeleteExp
 	return ret0, ret1
 }
 
-// DeleteExpressionRequest indicates an expected call of DeleteExpressionRequest.
+// DeleteExpressionRequest indicates an expected call of DeleteExpressionRequest
 func (mr *MockCloudSearchAPIMockRecorder) DeleteExpressionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExpressionRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteExpressionRequest), arg0)
 }
 
-// DeleteExpressionWithContext mocks base method.
-func (m *MockCloudSearchAPI) DeleteExpressionWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteExpressionInput, arg2 ...request.Option) (*cloudsearch.DeleteExpressionOutput, error) {
+// DeleteExpressionWithContext mocks base method
+func (m *MockCloudSearchAPI) DeleteExpressionWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteExpressionInput, arg2 ...request.Option) (*cloudsearch.DeleteExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockCloudSearchAPI) DeleteExpressionWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DeleteExpressionWithContext indicates an expected call of DeleteExpressionWithContext.
+// DeleteExpressionWithContext indicates an expected call of DeleteExpressionWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DeleteExpressionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExpressionWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteExpressionWithContext), varargs...)
 }
 
-// DeleteIndexField mocks base method.
+// DeleteIndexField mocks base method
 func (m *MockCloudSearchAPI) DeleteIndexField(arg0 *cloudsearch.DeleteIndexFieldInput) (*cloudsearch.DeleteIndexFieldOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIndexField", arg0)
@@ -495,13 +494,13 @@ func (m *MockCloudSearchAPI) DeleteIndexField(arg0 *cloudsearch.DeleteIndexField
 	return ret0, ret1
 }
 
-// DeleteIndexField indicates an expected call of DeleteIndexField.
+// DeleteIndexField indicates an expected call of DeleteIndexField
 func (mr *MockCloudSearchAPIMockRecorder) DeleteIndexField(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIndexField", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteIndexField), arg0)
 }
 
-// DeleteIndexFieldRequest mocks base method.
+// DeleteIndexFieldRequest mocks base method
 func (m *MockCloudSearchAPI) DeleteIndexFieldRequest(arg0 *cloudsearch.DeleteIndexFieldInput) (*request.Request, *cloudsearch.DeleteIndexFieldOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIndexFieldRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockCloudSearchAPI) DeleteIndexFieldRequest(arg0 *cloudsearch.DeleteInd
 	return ret0, ret1
 }
 
-// DeleteIndexFieldRequest indicates an expected call of DeleteIndexFieldRequest.
+// DeleteIndexFieldRequest indicates an expected call of DeleteIndexFieldRequest
 func (mr *MockCloudSearchAPIMockRecorder) DeleteIndexFieldRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIndexFieldRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteIndexFieldRequest), arg0)
 }
 
-// DeleteIndexFieldWithContext mocks base method.
-func (m *MockCloudSearchAPI) DeleteIndexFieldWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DeleteIndexFieldOutput, error) {
+// DeleteIndexFieldWithContext mocks base method
+func (m *MockCloudSearchAPI) DeleteIndexFieldWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DeleteIndexFieldOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockCloudSearchAPI) DeleteIndexFieldWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DeleteIndexFieldWithContext indicates an expected call of DeleteIndexFieldWithContext.
+// DeleteIndexFieldWithContext indicates an expected call of DeleteIndexFieldWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DeleteIndexFieldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIndexFieldWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteIndexFieldWithContext), varargs...)
 }
 
-// DeleteSuggester mocks base method.
+// DeleteSuggester mocks base method
 func (m *MockCloudSearchAPI) DeleteSuggester(arg0 *cloudsearch.DeleteSuggesterInput) (*cloudsearch.DeleteSuggesterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSuggester", arg0)
@@ -545,13 +544,13 @@ func (m *MockCloudSearchAPI) DeleteSuggester(arg0 *cloudsearch.DeleteSuggesterIn
 	return ret0, ret1
 }
 
-// DeleteSuggester indicates an expected call of DeleteSuggester.
+// DeleteSuggester indicates an expected call of DeleteSuggester
 func (mr *MockCloudSearchAPIMockRecorder) DeleteSuggester(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuggester", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteSuggester), arg0)
 }
 
-// DeleteSuggesterRequest mocks base method.
+// DeleteSuggesterRequest mocks base method
 func (m *MockCloudSearchAPI) DeleteSuggesterRequest(arg0 *cloudsearch.DeleteSuggesterInput) (*request.Request, *cloudsearch.DeleteSuggesterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSuggesterRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockCloudSearchAPI) DeleteSuggesterRequest(arg0 *cloudsearch.DeleteSugg
 	return ret0, ret1
 }
 
-// DeleteSuggesterRequest indicates an expected call of DeleteSuggesterRequest.
+// DeleteSuggesterRequest indicates an expected call of DeleteSuggesterRequest
 func (mr *MockCloudSearchAPIMockRecorder) DeleteSuggesterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuggesterRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteSuggesterRequest), arg0)
 }
 
-// DeleteSuggesterWithContext mocks base method.
-func (m *MockCloudSearchAPI) DeleteSuggesterWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteSuggesterInput, arg2 ...request.Option) (*cloudsearch.DeleteSuggesterOutput, error) {
+// DeleteSuggesterWithContext mocks base method
+func (m *MockCloudSearchAPI) DeleteSuggesterWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteSuggesterInput, arg2 ...request.Option) (*cloudsearch.DeleteSuggesterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockCloudSearchAPI) DeleteSuggesterWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteSuggesterWithContext indicates an expected call of DeleteSuggesterWithContext.
+// DeleteSuggesterWithContext indicates an expected call of DeleteSuggesterWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DeleteSuggesterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuggesterWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DeleteSuggesterWithContext), varargs...)
 }
 
-// DescribeAnalysisSchemes mocks base method.
+// DescribeAnalysisSchemes mocks base method
 func (m *MockCloudSearchAPI) DescribeAnalysisSchemes(arg0 *cloudsearch.DescribeAnalysisSchemesInput) (*cloudsearch.DescribeAnalysisSchemesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAnalysisSchemes", arg0)
@@ -595,13 +594,13 @@ func (m *MockCloudSearchAPI) DescribeAnalysisSchemes(arg0 *cloudsearch.DescribeA
 	return ret0, ret1
 }
 
-// DescribeAnalysisSchemes indicates an expected call of DescribeAnalysisSchemes.
+// DescribeAnalysisSchemes indicates an expected call of DescribeAnalysisSchemes
 func (mr *MockCloudSearchAPIMockRecorder) DescribeAnalysisSchemes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisSchemes", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAnalysisSchemes), arg0)
 }
 
-// DescribeAnalysisSchemesRequest mocks base method.
+// DescribeAnalysisSchemesRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeAnalysisSchemesRequest(arg0 *cloudsearch.DescribeAnalysisSchemesInput) (*request.Request, *cloudsearch.DescribeAnalysisSchemesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAnalysisSchemesRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockCloudSearchAPI) DescribeAnalysisSchemesRequest(arg0 *cloudsearch.De
 	return ret0, ret1
 }
 
-// DescribeAnalysisSchemesRequest indicates an expected call of DescribeAnalysisSchemesRequest.
+// DescribeAnalysisSchemesRequest indicates an expected call of DescribeAnalysisSchemesRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeAnalysisSchemesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisSchemesRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAnalysisSchemesRequest), arg0)
 }
 
-// DescribeAnalysisSchemesWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeAnalysisSchemesWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeAnalysisSchemesInput, arg2 ...request.Option) (*cloudsearch.DescribeAnalysisSchemesOutput, error) {
+// DescribeAnalysisSchemesWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeAnalysisSchemesWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeAnalysisSchemesInput, arg2 ...request.Option) (*cloudsearch.DescribeAnalysisSchemesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockCloudSearchAPI) DescribeAnalysisSchemesWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// DescribeAnalysisSchemesWithContext indicates an expected call of DescribeAnalysisSchemesWithContext.
+// DescribeAnalysisSchemesWithContext indicates an expected call of DescribeAnalysisSchemesWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeAnalysisSchemesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisSchemesWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAnalysisSchemesWithContext), varargs...)
 }
 
-// DescribeAvailabilityOptions mocks base method.
+// DescribeAvailabilityOptions mocks base method
 func (m *MockCloudSearchAPI) DescribeAvailabilityOptions(arg0 *cloudsearch.DescribeAvailabilityOptionsInput) (*cloudsearch.DescribeAvailabilityOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAvailabilityOptions", arg0)
@@ -645,13 +644,13 @@ func (m *MockCloudSearchAPI) DescribeAvailabilityOptions(arg0 *cloudsearch.Descr
 	return ret0, ret1
 }
 
-// DescribeAvailabilityOptions indicates an expected call of DescribeAvailabilityOptions.
+// DescribeAvailabilityOptions indicates an expected call of DescribeAvailabilityOptions
 func (mr *MockCloudSearchAPIMockRecorder) DescribeAvailabilityOptions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityOptions", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAvailabilityOptions), arg0)
 }
 
-// DescribeAvailabilityOptionsRequest mocks base method.
+// DescribeAvailabilityOptionsRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsRequest(arg0 *cloudsearch.DescribeAvailabilityOptionsInput) (*request.Request, *cloudsearch.DescribeAvailabilityOptionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAvailabilityOptionsRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsRequest(arg0 *cloudsearc
 	return ret0, ret1
 }
 
-// DescribeAvailabilityOptionsRequest indicates an expected call of DescribeAvailabilityOptionsRequest.
+// DescribeAvailabilityOptionsRequest indicates an expected call of DescribeAvailabilityOptionsRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeAvailabilityOptionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityOptionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAvailabilityOptionsRequest), arg0)
 }
 
-// DescribeAvailabilityOptionsWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.DescribeAvailabilityOptionsOutput, error) {
+// DescribeAvailabilityOptionsWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.DescribeAvailabilityOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,64 +678,14 @@ func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DescribeAvailabilityOptionsWithContext indicates an expected call of DescribeAvailabilityOptionsWithContext.
+// DescribeAvailabilityOptionsWithContext indicates an expected call of DescribeAvailabilityOptionsWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeAvailabilityOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAvailabilityOptionsWithContext), varargs...)
 }
 
-// DescribeDomainEndpointOptions mocks base method.
-func (m *MockCloudSearchAPI) DescribeDomainEndpointOptions(arg0 *cloudsearch.DescribeDomainEndpointOptionsInput) (*cloudsearch.DescribeDomainEndpointOptionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeDomainEndpointOptions", arg0)
-	ret0, _ := ret[0].(*cloudsearch.DescribeDomainEndpointOptionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeDomainEndpointOptions indicates an expected call of DescribeDomainEndpointOptions.
-func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainEndpointOptions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainEndpointOptions", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainEndpointOptions), arg0)
-}
-
-// DescribeDomainEndpointOptionsRequest mocks base method.
-func (m *MockCloudSearchAPI) DescribeDomainEndpointOptionsRequest(arg0 *cloudsearch.DescribeDomainEndpointOptionsInput) (*request.Request, *cloudsearch.DescribeDomainEndpointOptionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeDomainEndpointOptionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cloudsearch.DescribeDomainEndpointOptionsOutput)
-	return ret0, ret1
-}
-
-// DescribeDomainEndpointOptionsRequest indicates an expected call of DescribeDomainEndpointOptionsRequest.
-func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainEndpointOptionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainEndpointOptionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainEndpointOptionsRequest), arg0)
-}
-
-// DescribeDomainEndpointOptionsWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeDomainEndpointOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeDomainEndpointOptionsInput, arg2 ...request.Option) (*cloudsearch.DescribeDomainEndpointOptionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeDomainEndpointOptionsWithContext", varargs...)
-	ret0, _ := ret[0].(*cloudsearch.DescribeDomainEndpointOptionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeDomainEndpointOptionsWithContext indicates an expected call of DescribeDomainEndpointOptionsWithContext.
-func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainEndpointOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainEndpointOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainEndpointOptionsWithContext), varargs...)
-}
-
-// DescribeDomains mocks base method.
+// DescribeDomains mocks base method
 func (m *MockCloudSearchAPI) DescribeDomains(arg0 *cloudsearch.DescribeDomainsInput) (*cloudsearch.DescribeDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDomains", arg0)
@@ -745,13 +694,13 @@ func (m *MockCloudSearchAPI) DescribeDomains(arg0 *cloudsearch.DescribeDomainsIn
 	return ret0, ret1
 }
 
-// DescribeDomains indicates an expected call of DescribeDomains.
+// DescribeDomains indicates an expected call of DescribeDomains
 func (mr *MockCloudSearchAPIMockRecorder) DescribeDomains(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomains", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomains), arg0)
 }
 
-// DescribeDomainsRequest mocks base method.
+// DescribeDomainsRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeDomainsRequest(arg0 *cloudsearch.DescribeDomainsInput) (*request.Request, *cloudsearch.DescribeDomainsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDomainsRequest", arg0)
@@ -760,14 +709,14 @@ func (m *MockCloudSearchAPI) DescribeDomainsRequest(arg0 *cloudsearch.DescribeDo
 	return ret0, ret1
 }
 
-// DescribeDomainsRequest indicates an expected call of DescribeDomainsRequest.
+// DescribeDomainsRequest indicates an expected call of DescribeDomainsRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainsRequest), arg0)
 }
 
-// DescribeDomainsWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeDomainsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeDomainsInput, arg2 ...request.Option) (*cloudsearch.DescribeDomainsOutput, error) {
+// DescribeDomainsWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeDomainsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeDomainsInput, arg2 ...request.Option) (*cloudsearch.DescribeDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +728,14 @@ func (m *MockCloudSearchAPI) DescribeDomainsWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DescribeDomainsWithContext indicates an expected call of DescribeDomainsWithContext.
+// DescribeDomainsWithContext indicates an expected call of DescribeDomainsWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainsWithContext), varargs...)
 }
 
-// DescribeExpressions mocks base method.
+// DescribeExpressions mocks base method
 func (m *MockCloudSearchAPI) DescribeExpressions(arg0 *cloudsearch.DescribeExpressionsInput) (*cloudsearch.DescribeExpressionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeExpressions", arg0)
@@ -795,13 +744,13 @@ func (m *MockCloudSearchAPI) DescribeExpressions(arg0 *cloudsearch.DescribeExpre
 	return ret0, ret1
 }
 
-// DescribeExpressions indicates an expected call of DescribeExpressions.
+// DescribeExpressions indicates an expected call of DescribeExpressions
 func (mr *MockCloudSearchAPIMockRecorder) DescribeExpressions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExpressions", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeExpressions), arg0)
 }
 
-// DescribeExpressionsRequest mocks base method.
+// DescribeExpressionsRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeExpressionsRequest(arg0 *cloudsearch.DescribeExpressionsInput) (*request.Request, *cloudsearch.DescribeExpressionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeExpressionsRequest", arg0)
@@ -810,14 +759,14 @@ func (m *MockCloudSearchAPI) DescribeExpressionsRequest(arg0 *cloudsearch.Descri
 	return ret0, ret1
 }
 
-// DescribeExpressionsRequest indicates an expected call of DescribeExpressionsRequest.
+// DescribeExpressionsRequest indicates an expected call of DescribeExpressionsRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeExpressionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExpressionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeExpressionsRequest), arg0)
 }
 
-// DescribeExpressionsWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeExpressionsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeExpressionsInput, arg2 ...request.Option) (*cloudsearch.DescribeExpressionsOutput, error) {
+// DescribeExpressionsWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeExpressionsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeExpressionsInput, arg2 ...request.Option) (*cloudsearch.DescribeExpressionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +778,14 @@ func (m *MockCloudSearchAPI) DescribeExpressionsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DescribeExpressionsWithContext indicates an expected call of DescribeExpressionsWithContext.
+// DescribeExpressionsWithContext indicates an expected call of DescribeExpressionsWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeExpressionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExpressionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeExpressionsWithContext), varargs...)
 }
 
-// DescribeIndexFields mocks base method.
+// DescribeIndexFields mocks base method
 func (m *MockCloudSearchAPI) DescribeIndexFields(arg0 *cloudsearch.DescribeIndexFieldsInput) (*cloudsearch.DescribeIndexFieldsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeIndexFields", arg0)
@@ -845,13 +794,13 @@ func (m *MockCloudSearchAPI) DescribeIndexFields(arg0 *cloudsearch.DescribeIndex
 	return ret0, ret1
 }
 
-// DescribeIndexFields indicates an expected call of DescribeIndexFields.
+// DescribeIndexFields indicates an expected call of DescribeIndexFields
 func (mr *MockCloudSearchAPIMockRecorder) DescribeIndexFields(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIndexFields", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeIndexFields), arg0)
 }
 
-// DescribeIndexFieldsRequest mocks base method.
+// DescribeIndexFieldsRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeIndexFieldsRequest(arg0 *cloudsearch.DescribeIndexFieldsInput) (*request.Request, *cloudsearch.DescribeIndexFieldsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeIndexFieldsRequest", arg0)
@@ -860,14 +809,14 @@ func (m *MockCloudSearchAPI) DescribeIndexFieldsRequest(arg0 *cloudsearch.Descri
 	return ret0, ret1
 }
 
-// DescribeIndexFieldsRequest indicates an expected call of DescribeIndexFieldsRequest.
+// DescribeIndexFieldsRequest indicates an expected call of DescribeIndexFieldsRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeIndexFieldsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIndexFieldsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeIndexFieldsRequest), arg0)
 }
 
-// DescribeIndexFieldsWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeIndexFieldsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeIndexFieldsInput, arg2 ...request.Option) (*cloudsearch.DescribeIndexFieldsOutput, error) {
+// DescribeIndexFieldsWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeIndexFieldsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeIndexFieldsInput, arg2 ...request.Option) (*cloudsearch.DescribeIndexFieldsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +828,14 @@ func (m *MockCloudSearchAPI) DescribeIndexFieldsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DescribeIndexFieldsWithContext indicates an expected call of DescribeIndexFieldsWithContext.
+// DescribeIndexFieldsWithContext indicates an expected call of DescribeIndexFieldsWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeIndexFieldsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIndexFieldsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeIndexFieldsWithContext), varargs...)
 }
 
-// DescribeScalingParameters mocks base method.
+// DescribeScalingParameters mocks base method
 func (m *MockCloudSearchAPI) DescribeScalingParameters(arg0 *cloudsearch.DescribeScalingParametersInput) (*cloudsearch.DescribeScalingParametersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeScalingParameters", arg0)
@@ -895,13 +844,13 @@ func (m *MockCloudSearchAPI) DescribeScalingParameters(arg0 *cloudsearch.Describ
 	return ret0, ret1
 }
 
-// DescribeScalingParameters indicates an expected call of DescribeScalingParameters.
+// DescribeScalingParameters indicates an expected call of DescribeScalingParameters
 func (mr *MockCloudSearchAPIMockRecorder) DescribeScalingParameters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingParameters", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeScalingParameters), arg0)
 }
 
-// DescribeScalingParametersRequest mocks base method.
+// DescribeScalingParametersRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeScalingParametersRequest(arg0 *cloudsearch.DescribeScalingParametersInput) (*request.Request, *cloudsearch.DescribeScalingParametersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeScalingParametersRequest", arg0)
@@ -910,14 +859,14 @@ func (m *MockCloudSearchAPI) DescribeScalingParametersRequest(arg0 *cloudsearch.
 	return ret0, ret1
 }
 
-// DescribeScalingParametersRequest indicates an expected call of DescribeScalingParametersRequest.
+// DescribeScalingParametersRequest indicates an expected call of DescribeScalingParametersRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeScalingParametersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingParametersRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeScalingParametersRequest), arg0)
 }
 
-// DescribeScalingParametersWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeScalingParametersWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeScalingParametersInput, arg2 ...request.Option) (*cloudsearch.DescribeScalingParametersOutput, error) {
+// DescribeScalingParametersWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeScalingParametersWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeScalingParametersInput, arg2 ...request.Option) (*cloudsearch.DescribeScalingParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +878,14 @@ func (m *MockCloudSearchAPI) DescribeScalingParametersWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DescribeScalingParametersWithContext indicates an expected call of DescribeScalingParametersWithContext.
+// DescribeScalingParametersWithContext indicates an expected call of DescribeScalingParametersWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeScalingParametersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingParametersWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeScalingParametersWithContext), varargs...)
 }
 
-// DescribeServiceAccessPolicies mocks base method.
+// DescribeServiceAccessPolicies mocks base method
 func (m *MockCloudSearchAPI) DescribeServiceAccessPolicies(arg0 *cloudsearch.DescribeServiceAccessPoliciesInput) (*cloudsearch.DescribeServiceAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeServiceAccessPolicies", arg0)
@@ -945,13 +894,13 @@ func (m *MockCloudSearchAPI) DescribeServiceAccessPolicies(arg0 *cloudsearch.Des
 	return ret0, ret1
 }
 
-// DescribeServiceAccessPolicies indicates an expected call of DescribeServiceAccessPolicies.
+// DescribeServiceAccessPolicies indicates an expected call of DescribeServiceAccessPolicies
 func (mr *MockCloudSearchAPIMockRecorder) DescribeServiceAccessPolicies(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceAccessPolicies", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeServiceAccessPolicies), arg0)
 }
 
-// DescribeServiceAccessPoliciesRequest mocks base method.
+// DescribeServiceAccessPoliciesRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesRequest(arg0 *cloudsearch.DescribeServiceAccessPoliciesInput) (*request.Request, *cloudsearch.DescribeServiceAccessPoliciesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeServiceAccessPoliciesRequest", arg0)
@@ -960,14 +909,14 @@ func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesRequest(arg0 *cloudsea
 	return ret0, ret1
 }
 
-// DescribeServiceAccessPoliciesRequest indicates an expected call of DescribeServiceAccessPoliciesRequest.
+// DescribeServiceAccessPoliciesRequest indicates an expected call of DescribeServiceAccessPoliciesRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeServiceAccessPoliciesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceAccessPoliciesRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeServiceAccessPoliciesRequest), arg0)
 }
 
-// DescribeServiceAccessPoliciesWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.DescribeServiceAccessPoliciesOutput, error) {
+// DescribeServiceAccessPoliciesWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.DescribeServiceAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +928,14 @@ func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DescribeServiceAccessPoliciesWithContext indicates an expected call of DescribeServiceAccessPoliciesWithContext.
+// DescribeServiceAccessPoliciesWithContext indicates an expected call of DescribeServiceAccessPoliciesWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeServiceAccessPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceAccessPoliciesWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeServiceAccessPoliciesWithContext), varargs...)
 }
 
-// DescribeSuggesters mocks base method.
+// DescribeSuggesters mocks base method
 func (m *MockCloudSearchAPI) DescribeSuggesters(arg0 *cloudsearch.DescribeSuggestersInput) (*cloudsearch.DescribeSuggestersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSuggesters", arg0)
@@ -995,13 +944,13 @@ func (m *MockCloudSearchAPI) DescribeSuggesters(arg0 *cloudsearch.DescribeSugges
 	return ret0, ret1
 }
 
-// DescribeSuggesters indicates an expected call of DescribeSuggesters.
+// DescribeSuggesters indicates an expected call of DescribeSuggesters
 func (mr *MockCloudSearchAPIMockRecorder) DescribeSuggesters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSuggesters", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeSuggesters), arg0)
 }
 
-// DescribeSuggestersRequest mocks base method.
+// DescribeSuggestersRequest mocks base method
 func (m *MockCloudSearchAPI) DescribeSuggestersRequest(arg0 *cloudsearch.DescribeSuggestersInput) (*request.Request, *cloudsearch.DescribeSuggestersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSuggestersRequest", arg0)
@@ -1010,14 +959,14 @@ func (m *MockCloudSearchAPI) DescribeSuggestersRequest(arg0 *cloudsearch.Describ
 	return ret0, ret1
 }
 
-// DescribeSuggestersRequest indicates an expected call of DescribeSuggestersRequest.
+// DescribeSuggestersRequest indicates an expected call of DescribeSuggestersRequest
 func (mr *MockCloudSearchAPIMockRecorder) DescribeSuggestersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSuggestersRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeSuggestersRequest), arg0)
 }
 
-// DescribeSuggestersWithContext mocks base method.
-func (m *MockCloudSearchAPI) DescribeSuggestersWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeSuggestersInput, arg2 ...request.Option) (*cloudsearch.DescribeSuggestersOutput, error) {
+// DescribeSuggestersWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeSuggestersWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeSuggestersInput, arg2 ...request.Option) (*cloudsearch.DescribeSuggestersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +978,14 @@ func (m *MockCloudSearchAPI) DescribeSuggestersWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DescribeSuggestersWithContext indicates an expected call of DescribeSuggestersWithContext.
+// DescribeSuggestersWithContext indicates an expected call of DescribeSuggestersWithContext
 func (mr *MockCloudSearchAPIMockRecorder) DescribeSuggestersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSuggestersWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeSuggestersWithContext), varargs...)
 }
 
-// IndexDocuments mocks base method.
+// IndexDocuments mocks base method
 func (m *MockCloudSearchAPI) IndexDocuments(arg0 *cloudsearch.IndexDocumentsInput) (*cloudsearch.IndexDocumentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "IndexDocuments", arg0)
@@ -1045,13 +994,13 @@ func (m *MockCloudSearchAPI) IndexDocuments(arg0 *cloudsearch.IndexDocumentsInpu
 	return ret0, ret1
 }
 
-// IndexDocuments indicates an expected call of IndexDocuments.
+// IndexDocuments indicates an expected call of IndexDocuments
 func (mr *MockCloudSearchAPIMockRecorder) IndexDocuments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IndexDocuments", reflect.TypeOf((*MockCloudSearchAPI)(nil).IndexDocuments), arg0)
 }
 
-// IndexDocumentsRequest mocks base method.
+// IndexDocumentsRequest mocks base method
 func (m *MockCloudSearchAPI) IndexDocumentsRequest(arg0 *cloudsearch.IndexDocumentsInput) (*request.Request, *cloudsearch.IndexDocumentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "IndexDocumentsRequest", arg0)
@@ -1060,14 +1009,14 @@ func (m *MockCloudSearchAPI) IndexDocumentsRequest(arg0 *cloudsearch.IndexDocume
 	return ret0, ret1
 }
 
-// IndexDocumentsRequest indicates an expected call of IndexDocumentsRequest.
+// IndexDocumentsRequest indicates an expected call of IndexDocumentsRequest
 func (mr *MockCloudSearchAPIMockRecorder) IndexDocumentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IndexDocumentsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).IndexDocumentsRequest), arg0)
 }
 
-// IndexDocumentsWithContext mocks base method.
-func (m *MockCloudSearchAPI) IndexDocumentsWithContext(arg0 context.Context, arg1 *cloudsearch.IndexDocumentsInput, arg2 ...request.Option) (*cloudsearch.IndexDocumentsOutput, error) {
+// IndexDocumentsWithContext mocks base method
+func (m *MockCloudSearchAPI) IndexDocumentsWithContext(arg0 aws.Context, arg1 *cloudsearch.IndexDocumentsInput, arg2 ...request.Option) (*cloudsearch.IndexDocumentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,14 +1028,14 @@ func (m *MockCloudSearchAPI) IndexDocumentsWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// IndexDocumentsWithContext indicates an expected call of IndexDocumentsWithContext.
+// IndexDocumentsWithContext indicates an expected call of IndexDocumentsWithContext
 func (mr *MockCloudSearchAPIMockRecorder) IndexDocumentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IndexDocumentsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).IndexDocumentsWithContext), varargs...)
 }
 
-// ListDomainNames mocks base method.
+// ListDomainNames mocks base method
 func (m *MockCloudSearchAPI) ListDomainNames(arg0 *cloudsearch.ListDomainNamesInput) (*cloudsearch.ListDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomainNames", arg0)
@@ -1095,13 +1044,13 @@ func (m *MockCloudSearchAPI) ListDomainNames(arg0 *cloudsearch.ListDomainNamesIn
 	return ret0, ret1
 }
 
-// ListDomainNames indicates an expected call of ListDomainNames.
+// ListDomainNames indicates an expected call of ListDomainNames
 func (mr *MockCloudSearchAPIMockRecorder) ListDomainNames(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNames", reflect.TypeOf((*MockCloudSearchAPI)(nil).ListDomainNames), arg0)
 }
 
-// ListDomainNamesRequest mocks base method.
+// ListDomainNamesRequest mocks base method
 func (m *MockCloudSearchAPI) ListDomainNamesRequest(arg0 *cloudsearch.ListDomainNamesInput) (*request.Request, *cloudsearch.ListDomainNamesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomainNamesRequest", arg0)
@@ -1110,14 +1059,14 @@ func (m *MockCloudSearchAPI) ListDomainNamesRequest(arg0 *cloudsearch.ListDomain
 	return ret0, ret1
 }
 
-// ListDomainNamesRequest indicates an expected call of ListDomainNamesRequest.
+// ListDomainNamesRequest indicates an expected call of ListDomainNamesRequest
 func (mr *MockCloudSearchAPIMockRecorder) ListDomainNamesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).ListDomainNamesRequest), arg0)
 }
 
-// ListDomainNamesWithContext mocks base method.
-func (m *MockCloudSearchAPI) ListDomainNamesWithContext(arg0 context.Context, arg1 *cloudsearch.ListDomainNamesInput, arg2 ...request.Option) (*cloudsearch.ListDomainNamesOutput, error) {
+// ListDomainNamesWithContext mocks base method
+func (m *MockCloudSearchAPI) ListDomainNamesWithContext(arg0 aws.Context, arg1 *cloudsearch.ListDomainNamesInput, arg2 ...request.Option) (*cloudsearch.ListDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1129,14 +1078,14 @@ func (m *MockCloudSearchAPI) ListDomainNamesWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// ListDomainNamesWithContext indicates an expected call of ListDomainNamesWithContext.
+// ListDomainNamesWithContext indicates an expected call of ListDomainNamesWithContext
 func (mr *MockCloudSearchAPIMockRecorder) ListDomainNamesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).ListDomainNamesWithContext), varargs...)
 }
 
-// UpdateAvailabilityOptions mocks base method.
+// UpdateAvailabilityOptions mocks base method
 func (m *MockCloudSearchAPI) UpdateAvailabilityOptions(arg0 *cloudsearch.UpdateAvailabilityOptionsInput) (*cloudsearch.UpdateAvailabilityOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAvailabilityOptions", arg0)
@@ -1145,13 +1094,13 @@ func (m *MockCloudSearchAPI) UpdateAvailabilityOptions(arg0 *cloudsearch.UpdateA
 	return ret0, ret1
 }
 
-// UpdateAvailabilityOptions indicates an expected call of UpdateAvailabilityOptions.
+// UpdateAvailabilityOptions indicates an expected call of UpdateAvailabilityOptions
 func (mr *MockCloudSearchAPIMockRecorder) UpdateAvailabilityOptions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityOptions", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateAvailabilityOptions), arg0)
 }
 
-// UpdateAvailabilityOptionsRequest mocks base method.
+// UpdateAvailabilityOptionsRequest mocks base method
 func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsRequest(arg0 *cloudsearch.UpdateAvailabilityOptionsInput) (*request.Request, *cloudsearch.UpdateAvailabilityOptionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAvailabilityOptionsRequest", arg0)
@@ -1160,14 +1109,14 @@ func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsRequest(arg0 *cloudsearch.
 	return ret0, ret1
 }
 
-// UpdateAvailabilityOptionsRequest indicates an expected call of UpdateAvailabilityOptionsRequest.
+// UpdateAvailabilityOptionsRequest indicates an expected call of UpdateAvailabilityOptionsRequest
 func (mr *MockCloudSearchAPIMockRecorder) UpdateAvailabilityOptionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityOptionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateAvailabilityOptionsRequest), arg0)
 }
 
-// UpdateAvailabilityOptionsWithContext mocks base method.
-func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.UpdateAvailabilityOptionsOutput, error) {
+// UpdateAvailabilityOptionsWithContext mocks base method
+func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsWithContext(arg0 aws.Context, arg1 *cloudsearch.UpdateAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.UpdateAvailabilityOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1179,64 +1128,14 @@ func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// UpdateAvailabilityOptionsWithContext indicates an expected call of UpdateAvailabilityOptionsWithContext.
+// UpdateAvailabilityOptionsWithContext indicates an expected call of UpdateAvailabilityOptionsWithContext
 func (mr *MockCloudSearchAPIMockRecorder) UpdateAvailabilityOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateAvailabilityOptionsWithContext), varargs...)
 }
 
-// UpdateDomainEndpointOptions mocks base method.
-func (m *MockCloudSearchAPI) UpdateDomainEndpointOptions(arg0 *cloudsearch.UpdateDomainEndpointOptionsInput) (*cloudsearch.UpdateDomainEndpointOptionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDomainEndpointOptions", arg0)
-	ret0, _ := ret[0].(*cloudsearch.UpdateDomainEndpointOptionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateDomainEndpointOptions indicates an expected call of UpdateDomainEndpointOptions.
-func (mr *MockCloudSearchAPIMockRecorder) UpdateDomainEndpointOptions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEndpointOptions", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateDomainEndpointOptions), arg0)
-}
-
-// UpdateDomainEndpointOptionsRequest mocks base method.
-func (m *MockCloudSearchAPI) UpdateDomainEndpointOptionsRequest(arg0 *cloudsearch.UpdateDomainEndpointOptionsInput) (*request.Request, *cloudsearch.UpdateDomainEndpointOptionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDomainEndpointOptionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cloudsearch.UpdateDomainEndpointOptionsOutput)
-	return ret0, ret1
-}
-
-// UpdateDomainEndpointOptionsRequest indicates an expected call of UpdateDomainEndpointOptionsRequest.
-func (mr *MockCloudSearchAPIMockRecorder) UpdateDomainEndpointOptionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEndpointOptionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateDomainEndpointOptionsRequest), arg0)
-}
-
-// UpdateDomainEndpointOptionsWithContext mocks base method.
-func (m *MockCloudSearchAPI) UpdateDomainEndpointOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateDomainEndpointOptionsInput, arg2 ...request.Option) (*cloudsearch.UpdateDomainEndpointOptionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateDomainEndpointOptionsWithContext", varargs...)
-	ret0, _ := ret[0].(*cloudsearch.UpdateDomainEndpointOptionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateDomainEndpointOptionsWithContext indicates an expected call of UpdateDomainEndpointOptionsWithContext.
-func (mr *MockCloudSearchAPIMockRecorder) UpdateDomainEndpointOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEndpointOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateDomainEndpointOptionsWithContext), varargs...)
-}
-
-// UpdateScalingParameters mocks base method.
+// UpdateScalingParameters mocks base method
 func (m *MockCloudSearchAPI) UpdateScalingParameters(arg0 *cloudsearch.UpdateScalingParametersInput) (*cloudsearch.UpdateScalingParametersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateScalingParameters", arg0)
@@ -1245,13 +1144,13 @@ func (m *MockCloudSearchAPI) UpdateScalingParameters(arg0 *cloudsearch.UpdateSca
 	return ret0, ret1
 }
 
-// UpdateScalingParameters indicates an expected call of UpdateScalingParameters.
+// UpdateScalingParameters indicates an expected call of UpdateScalingParameters
 func (mr *MockCloudSearchAPIMockRecorder) UpdateScalingParameters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScalingParameters", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateScalingParameters), arg0)
 }
 
-// UpdateScalingParametersRequest mocks base method.
+// UpdateScalingParametersRequest mocks base method
 func (m *MockCloudSearchAPI) UpdateScalingParametersRequest(arg0 *cloudsearch.UpdateScalingParametersInput) (*request.Request, *cloudsearch.UpdateScalingParametersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateScalingParametersRequest", arg0)
@@ -1260,14 +1159,14 @@ func (m *MockCloudSearchAPI) UpdateScalingParametersRequest(arg0 *cloudsearch.Up
 	return ret0, ret1
 }
 
-// UpdateScalingParametersRequest indicates an expected call of UpdateScalingParametersRequest.
+// UpdateScalingParametersRequest indicates an expected call of UpdateScalingParametersRequest
 func (mr *MockCloudSearchAPIMockRecorder) UpdateScalingParametersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScalingParametersRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateScalingParametersRequest), arg0)
 }
 
-// UpdateScalingParametersWithContext mocks base method.
-func (m *MockCloudSearchAPI) UpdateScalingParametersWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateScalingParametersInput, arg2 ...request.Option) (*cloudsearch.UpdateScalingParametersOutput, error) {
+// UpdateScalingParametersWithContext mocks base method
+func (m *MockCloudSearchAPI) UpdateScalingParametersWithContext(arg0 aws.Context, arg1 *cloudsearch.UpdateScalingParametersInput, arg2 ...request.Option) (*cloudsearch.UpdateScalingParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +1178,14 @@ func (m *MockCloudSearchAPI) UpdateScalingParametersWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// UpdateScalingParametersWithContext indicates an expected call of UpdateScalingParametersWithContext.
+// UpdateScalingParametersWithContext indicates an expected call of UpdateScalingParametersWithContext
 func (mr *MockCloudSearchAPIMockRecorder) UpdateScalingParametersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScalingParametersWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateScalingParametersWithContext), varargs...)
 }
 
-// UpdateServiceAccessPolicies mocks base method.
+// UpdateServiceAccessPolicies mocks base method
 func (m *MockCloudSearchAPI) UpdateServiceAccessPolicies(arg0 *cloudsearch.UpdateServiceAccessPoliciesInput) (*cloudsearch.UpdateServiceAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateServiceAccessPolicies", arg0)
@@ -1295,13 +1194,13 @@ func (m *MockCloudSearchAPI) UpdateServiceAccessPolicies(arg0 *cloudsearch.Updat
 	return ret0, ret1
 }
 
-// UpdateServiceAccessPolicies indicates an expected call of UpdateServiceAccessPolicies.
+// UpdateServiceAccessPolicies indicates an expected call of UpdateServiceAccessPolicies
 func (mr *MockCloudSearchAPIMockRecorder) UpdateServiceAccessPolicies(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceAccessPolicies", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateServiceAccessPolicies), arg0)
 }
 
-// UpdateServiceAccessPoliciesRequest mocks base method.
+// UpdateServiceAccessPoliciesRequest mocks base method
 func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesRequest(arg0 *cloudsearch.UpdateServiceAccessPoliciesInput) (*request.Request, *cloudsearch.UpdateServiceAccessPoliciesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateServiceAccessPoliciesRequest", arg0)
@@ -1310,14 +1209,14 @@ func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesRequest(arg0 *cloudsearc
 	return ret0, ret1
 }
 
-// UpdateServiceAccessPoliciesRequest indicates an expected call of UpdateServiceAccessPoliciesRequest.
+// UpdateServiceAccessPoliciesRequest indicates an expected call of UpdateServiceAccessPoliciesRequest
 func (mr *MockCloudSearchAPIMockRecorder) UpdateServiceAccessPoliciesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceAccessPoliciesRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateServiceAccessPoliciesRequest), arg0)
 }
 
-// UpdateServiceAccessPoliciesWithContext mocks base method.
-func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.UpdateServiceAccessPoliciesOutput, error) {
+// UpdateServiceAccessPoliciesWithContext mocks base method
+func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesWithContext(arg0 aws.Context, arg1 *cloudsearch.UpdateServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.UpdateServiceAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1329,7 +1228,7 @@ func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesWithContext(arg0 context
 	return ret0, ret1
 }
 
-// UpdateServiceAccessPoliciesWithContext indicates an expected call of UpdateServiceAccessPoliciesWithContext.
+// UpdateServiceAccessPoliciesWithContext indicates an expected call of UpdateServiceAccessPoliciesWithContext
 func (mr *MockCloudSearchAPIMockRecorder) UpdateServiceAccessPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

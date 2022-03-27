@@ -5,38 +5,37 @@
 package wafmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	waf "github.com/aws/aws-sdk-go/service/waf"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockWAFAPI is a mock of WAFAPI interface.
+// MockWAFAPI is a mock of WAFAPI interface
 type MockWAFAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockWAFAPIMockRecorder
 }
 
-// MockWAFAPIMockRecorder is the mock recorder for MockWAFAPI.
+// MockWAFAPIMockRecorder is the mock recorder for MockWAFAPI
 type MockWAFAPIMockRecorder struct {
 	mock *MockWAFAPI
 }
 
-// NewMockWAFAPI creates a new mock instance.
+// NewMockWAFAPI creates a new mock instance
 func NewMockWAFAPI(ctrl *gomock.Controller) *MockWAFAPI {
 	mock := &MockWAFAPI{ctrl: ctrl}
 	mock.recorder = &MockWAFAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockWAFAPI) EXPECT() *MockWAFAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateByteMatchSet mocks base method.
+// CreateByteMatchSet mocks base method
 func (m *MockWAFAPI) CreateByteMatchSet(arg0 *waf.CreateByteMatchSetInput) (*waf.CreateByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateByteMatchSet", arg0)
@@ -45,13 +44,13 @@ func (m *MockWAFAPI) CreateByteMatchSet(arg0 *waf.CreateByteMatchSetInput) (*waf
 	return ret0, ret1
 }
 
-// CreateByteMatchSet indicates an expected call of CreateByteMatchSet.
+// CreateByteMatchSet indicates an expected call of CreateByteMatchSet
 func (mr *MockWAFAPIMockRecorder) CreateByteMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateByteMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateByteMatchSet), arg0)
 }
 
-// CreateByteMatchSetRequest mocks base method.
+// CreateByteMatchSetRequest mocks base method
 func (m *MockWAFAPI) CreateByteMatchSetRequest(arg0 *waf.CreateByteMatchSetInput) (*request.Request, *waf.CreateByteMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateByteMatchSetRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockWAFAPI) CreateByteMatchSetRequest(arg0 *waf.CreateByteMatchSetInput
 	return ret0, ret1
 }
 
-// CreateByteMatchSetRequest indicates an expected call of CreateByteMatchSetRequest.
+// CreateByteMatchSetRequest indicates an expected call of CreateByteMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateByteMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateByteMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateByteMatchSetRequest), arg0)
 }
 
-// CreateByteMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateByteMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateByteMatchSetInput, arg2 ...request.Option) (*waf.CreateByteMatchSetOutput, error) {
+// CreateByteMatchSetWithContext mocks base method
+func (m *MockWAFAPI) CreateByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateByteMatchSetInput, arg2 ...request.Option) (*waf.CreateByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockWAFAPI) CreateByteMatchSetWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// CreateByteMatchSetWithContext indicates an expected call of CreateByteMatchSetWithContext.
+// CreateByteMatchSetWithContext indicates an expected call of CreateByteMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateByteMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateByteMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateByteMatchSetWithContext), varargs...)
 }
 
-// CreateGeoMatchSet mocks base method.
+// CreateGeoMatchSet mocks base method
 func (m *MockWAFAPI) CreateGeoMatchSet(arg0 *waf.CreateGeoMatchSetInput) (*waf.CreateGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateGeoMatchSet", arg0)
@@ -95,13 +94,13 @@ func (m *MockWAFAPI) CreateGeoMatchSet(arg0 *waf.CreateGeoMatchSetInput) (*waf.C
 	return ret0, ret1
 }
 
-// CreateGeoMatchSet indicates an expected call of CreateGeoMatchSet.
+// CreateGeoMatchSet indicates an expected call of CreateGeoMatchSet
 func (mr *MockWAFAPIMockRecorder) CreateGeoMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGeoMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateGeoMatchSet), arg0)
 }
 
-// CreateGeoMatchSetRequest mocks base method.
+// CreateGeoMatchSetRequest mocks base method
 func (m *MockWAFAPI) CreateGeoMatchSetRequest(arg0 *waf.CreateGeoMatchSetInput) (*request.Request, *waf.CreateGeoMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateGeoMatchSetRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockWAFAPI) CreateGeoMatchSetRequest(arg0 *waf.CreateGeoMatchSetInput) 
 	return ret0, ret1
 }
 
-// CreateGeoMatchSetRequest indicates an expected call of CreateGeoMatchSetRequest.
+// CreateGeoMatchSetRequest indicates an expected call of CreateGeoMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateGeoMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGeoMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateGeoMatchSetRequest), arg0)
 }
 
-// CreateGeoMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateGeoMatchSetInput, arg2 ...request.Option) (*waf.CreateGeoMatchSetOutput, error) {
+// CreateGeoMatchSetWithContext mocks base method
+func (m *MockWAFAPI) CreateGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateGeoMatchSetInput, arg2 ...request.Option) (*waf.CreateGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockWAFAPI) CreateGeoMatchSetWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// CreateGeoMatchSetWithContext indicates an expected call of CreateGeoMatchSetWithContext.
+// CreateGeoMatchSetWithContext indicates an expected call of CreateGeoMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateGeoMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGeoMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateGeoMatchSetWithContext), varargs...)
 }
 
-// CreateIPSet mocks base method.
+// CreateIPSet mocks base method
 func (m *MockWAFAPI) CreateIPSet(arg0 *waf.CreateIPSetInput) (*waf.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateIPSet", arg0)
@@ -145,13 +144,13 @@ func (m *MockWAFAPI) CreateIPSet(arg0 *waf.CreateIPSetInput) (*waf.CreateIPSetOu
 	return ret0, ret1
 }
 
-// CreateIPSet indicates an expected call of CreateIPSet.
+// CreateIPSet indicates an expected call of CreateIPSet
 func (mr *MockWAFAPIMockRecorder) CreateIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIPSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateIPSet), arg0)
 }
 
-// CreateIPSetRequest mocks base method.
+// CreateIPSetRequest mocks base method
 func (m *MockWAFAPI) CreateIPSetRequest(arg0 *waf.CreateIPSetInput) (*request.Request, *waf.CreateIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateIPSetRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockWAFAPI) CreateIPSetRequest(arg0 *waf.CreateIPSetInput) (*request.Re
 	return ret0, ret1
 }
 
-// CreateIPSetRequest indicates an expected call of CreateIPSetRequest.
+// CreateIPSetRequest indicates an expected call of CreateIPSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIPSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateIPSetRequest), arg0)
 }
 
-// CreateIPSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateIPSetWithContext(arg0 context.Context, arg1 *waf.CreateIPSetInput, arg2 ...request.Option) (*waf.CreateIPSetOutput, error) {
+// CreateIPSetWithContext mocks base method
+func (m *MockWAFAPI) CreateIPSetWithContext(arg0 aws.Context, arg1 *waf.CreateIPSetInput, arg2 ...request.Option) (*waf.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockWAFAPI) CreateIPSetWithContext(arg0 context.Context, arg1 *waf.Crea
 	return ret0, ret1
 }
 
-// CreateIPSetWithContext indicates an expected call of CreateIPSetWithContext.
+// CreateIPSetWithContext indicates an expected call of CreateIPSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIPSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateIPSetWithContext), varargs...)
 }
 
-// CreateRateBasedRule mocks base method.
+// CreateRateBasedRule mocks base method
 func (m *MockWAFAPI) CreateRateBasedRule(arg0 *waf.CreateRateBasedRuleInput) (*waf.CreateRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRateBasedRule", arg0)
@@ -195,13 +194,13 @@ func (m *MockWAFAPI) CreateRateBasedRule(arg0 *waf.CreateRateBasedRuleInput) (*w
 	return ret0, ret1
 }
 
-// CreateRateBasedRule indicates an expected call of CreateRateBasedRule.
+// CreateRateBasedRule indicates an expected call of CreateRateBasedRule
 func (mr *MockWAFAPIMockRecorder) CreateRateBasedRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRateBasedRule", reflect.TypeOf((*MockWAFAPI)(nil).CreateRateBasedRule), arg0)
 }
 
-// CreateRateBasedRuleRequest mocks base method.
+// CreateRateBasedRuleRequest mocks base method
 func (m *MockWAFAPI) CreateRateBasedRuleRequest(arg0 *waf.CreateRateBasedRuleInput) (*request.Request, *waf.CreateRateBasedRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRateBasedRuleRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockWAFAPI) CreateRateBasedRuleRequest(arg0 *waf.CreateRateBasedRuleInp
 	return ret0, ret1
 }
 
-// CreateRateBasedRuleRequest indicates an expected call of CreateRateBasedRuleRequest.
+// CreateRateBasedRuleRequest indicates an expected call of CreateRateBasedRuleRequest
 func (mr *MockWAFAPIMockRecorder) CreateRateBasedRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRateBasedRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateRateBasedRuleRequest), arg0)
 }
 
-// CreateRateBasedRuleWithContext mocks base method.
-func (m *MockWAFAPI) CreateRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.CreateRateBasedRuleInput, arg2 ...request.Option) (*waf.CreateRateBasedRuleOutput, error) {
+// CreateRateBasedRuleWithContext mocks base method
+func (m *MockWAFAPI) CreateRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.CreateRateBasedRuleInput, arg2 ...request.Option) (*waf.CreateRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockWAFAPI) CreateRateBasedRuleWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// CreateRateBasedRuleWithContext indicates an expected call of CreateRateBasedRuleWithContext.
+// CreateRateBasedRuleWithContext indicates an expected call of CreateRateBasedRuleWithContext
 func (mr *MockWAFAPIMockRecorder) CreateRateBasedRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRateBasedRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateRateBasedRuleWithContext), varargs...)
 }
 
-// CreateRegexMatchSet mocks base method.
+// CreateRegexMatchSet mocks base method
 func (m *MockWAFAPI) CreateRegexMatchSet(arg0 *waf.CreateRegexMatchSetInput) (*waf.CreateRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRegexMatchSet", arg0)
@@ -245,13 +244,13 @@ func (m *MockWAFAPI) CreateRegexMatchSet(arg0 *waf.CreateRegexMatchSetInput) (*w
 	return ret0, ret1
 }
 
-// CreateRegexMatchSet indicates an expected call of CreateRegexMatchSet.
+// CreateRegexMatchSet indicates an expected call of CreateRegexMatchSet
 func (mr *MockWAFAPIMockRecorder) CreateRegexMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegexMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateRegexMatchSet), arg0)
 }
 
-// CreateRegexMatchSetRequest mocks base method.
+// CreateRegexMatchSetRequest mocks base method
 func (m *MockWAFAPI) CreateRegexMatchSetRequest(arg0 *waf.CreateRegexMatchSetInput) (*request.Request, *waf.CreateRegexMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRegexMatchSetRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockWAFAPI) CreateRegexMatchSetRequest(arg0 *waf.CreateRegexMatchSetInp
 	return ret0, ret1
 }
 
-// CreateRegexMatchSetRequest indicates an expected call of CreateRegexMatchSetRequest.
+// CreateRegexMatchSetRequest indicates an expected call of CreateRegexMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateRegexMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegexMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateRegexMatchSetRequest), arg0)
 }
 
-// CreateRegexMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateRegexMatchSetInput, arg2 ...request.Option) (*waf.CreateRegexMatchSetOutput, error) {
+// CreateRegexMatchSetWithContext mocks base method
+func (m *MockWAFAPI) CreateRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateRegexMatchSetInput, arg2 ...request.Option) (*waf.CreateRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockWAFAPI) CreateRegexMatchSetWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// CreateRegexMatchSetWithContext indicates an expected call of CreateRegexMatchSetWithContext.
+// CreateRegexMatchSetWithContext indicates an expected call of CreateRegexMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateRegexMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegexMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateRegexMatchSetWithContext), varargs...)
 }
 
-// CreateRegexPatternSet mocks base method.
+// CreateRegexPatternSet mocks base method
 func (m *MockWAFAPI) CreateRegexPatternSet(arg0 *waf.CreateRegexPatternSetInput) (*waf.CreateRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRegexPatternSet", arg0)
@@ -295,13 +294,13 @@ func (m *MockWAFAPI) CreateRegexPatternSet(arg0 *waf.CreateRegexPatternSetInput)
 	return ret0, ret1
 }
 
-// CreateRegexPatternSet indicates an expected call of CreateRegexPatternSet.
+// CreateRegexPatternSet indicates an expected call of CreateRegexPatternSet
 func (mr *MockWAFAPIMockRecorder) CreateRegexPatternSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegexPatternSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateRegexPatternSet), arg0)
 }
 
-// CreateRegexPatternSetRequest mocks base method.
+// CreateRegexPatternSetRequest mocks base method
 func (m *MockWAFAPI) CreateRegexPatternSetRequest(arg0 *waf.CreateRegexPatternSetInput) (*request.Request, *waf.CreateRegexPatternSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRegexPatternSetRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockWAFAPI) CreateRegexPatternSetRequest(arg0 *waf.CreateRegexPatternSe
 	return ret0, ret1
 }
 
-// CreateRegexPatternSetRequest indicates an expected call of CreateRegexPatternSetRequest.
+// CreateRegexPatternSetRequest indicates an expected call of CreateRegexPatternSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateRegexPatternSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegexPatternSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateRegexPatternSetRequest), arg0)
 }
 
-// CreateRegexPatternSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.CreateRegexPatternSetInput, arg2 ...request.Option) (*waf.CreateRegexPatternSetOutput, error) {
+// CreateRegexPatternSetWithContext mocks base method
+func (m *MockWAFAPI) CreateRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.CreateRegexPatternSetInput, arg2 ...request.Option) (*waf.CreateRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockWAFAPI) CreateRegexPatternSetWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// CreateRegexPatternSetWithContext indicates an expected call of CreateRegexPatternSetWithContext.
+// CreateRegexPatternSetWithContext indicates an expected call of CreateRegexPatternSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateRegexPatternSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegexPatternSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateRegexPatternSetWithContext), varargs...)
 }
 
-// CreateRule mocks base method.
+// CreateRule mocks base method
 func (m *MockWAFAPI) CreateRule(arg0 *waf.CreateRuleInput) (*waf.CreateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRule", arg0)
@@ -345,13 +344,13 @@ func (m *MockWAFAPI) CreateRule(arg0 *waf.CreateRuleInput) (*waf.CreateRuleOutpu
 	return ret0, ret1
 }
 
-// CreateRule indicates an expected call of CreateRule.
+// CreateRule indicates an expected call of CreateRule
 func (mr *MockWAFAPIMockRecorder) CreateRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRule", reflect.TypeOf((*MockWAFAPI)(nil).CreateRule), arg0)
 }
 
-// CreateRuleGroup mocks base method.
+// CreateRuleGroup mocks base method
 func (m *MockWAFAPI) CreateRuleGroup(arg0 *waf.CreateRuleGroupInput) (*waf.CreateRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRuleGroup", arg0)
@@ -360,13 +359,13 @@ func (m *MockWAFAPI) CreateRuleGroup(arg0 *waf.CreateRuleGroupInput) (*waf.Creat
 	return ret0, ret1
 }
 
-// CreateRuleGroup indicates an expected call of CreateRuleGroup.
+// CreateRuleGroup indicates an expected call of CreateRuleGroup
 func (mr *MockWAFAPIMockRecorder) CreateRuleGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleGroup", reflect.TypeOf((*MockWAFAPI)(nil).CreateRuleGroup), arg0)
 }
 
-// CreateRuleGroupRequest mocks base method.
+// CreateRuleGroupRequest mocks base method
 func (m *MockWAFAPI) CreateRuleGroupRequest(arg0 *waf.CreateRuleGroupInput) (*request.Request, *waf.CreateRuleGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRuleGroupRequest", arg0)
@@ -375,14 +374,14 @@ func (m *MockWAFAPI) CreateRuleGroupRequest(arg0 *waf.CreateRuleGroupInput) (*re
 	return ret0, ret1
 }
 
-// CreateRuleGroupRequest indicates an expected call of CreateRuleGroupRequest.
+// CreateRuleGroupRequest indicates an expected call of CreateRuleGroupRequest
 func (mr *MockWAFAPIMockRecorder) CreateRuleGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleGroupRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateRuleGroupRequest), arg0)
 }
 
-// CreateRuleGroupWithContext mocks base method.
-func (m *MockWAFAPI) CreateRuleGroupWithContext(arg0 context.Context, arg1 *waf.CreateRuleGroupInput, arg2 ...request.Option) (*waf.CreateRuleGroupOutput, error) {
+// CreateRuleGroupWithContext mocks base method
+func (m *MockWAFAPI) CreateRuleGroupWithContext(arg0 aws.Context, arg1 *waf.CreateRuleGroupInput, arg2 ...request.Option) (*waf.CreateRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -394,14 +393,14 @@ func (m *MockWAFAPI) CreateRuleGroupWithContext(arg0 context.Context, arg1 *waf.
 	return ret0, ret1
 }
 
-// CreateRuleGroupWithContext indicates an expected call of CreateRuleGroupWithContext.
+// CreateRuleGroupWithContext indicates an expected call of CreateRuleGroupWithContext
 func (mr *MockWAFAPIMockRecorder) CreateRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleGroupWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateRuleGroupWithContext), varargs...)
 }
 
-// CreateRuleRequest mocks base method.
+// CreateRuleRequest mocks base method
 func (m *MockWAFAPI) CreateRuleRequest(arg0 *waf.CreateRuleInput) (*request.Request, *waf.CreateRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRuleRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockWAFAPI) CreateRuleRequest(arg0 *waf.CreateRuleInput) (*request.Requ
 	return ret0, ret1
 }
 
-// CreateRuleRequest indicates an expected call of CreateRuleRequest.
+// CreateRuleRequest indicates an expected call of CreateRuleRequest
 func (mr *MockWAFAPIMockRecorder) CreateRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateRuleRequest), arg0)
 }
 
-// CreateRuleWithContext mocks base method.
-func (m *MockWAFAPI) CreateRuleWithContext(arg0 context.Context, arg1 *waf.CreateRuleInput, arg2 ...request.Option) (*waf.CreateRuleOutput, error) {
+// CreateRuleWithContext mocks base method
+func (m *MockWAFAPI) CreateRuleWithContext(arg0 aws.Context, arg1 *waf.CreateRuleInput, arg2 ...request.Option) (*waf.CreateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockWAFAPI) CreateRuleWithContext(arg0 context.Context, arg1 *waf.Creat
 	return ret0, ret1
 }
 
-// CreateRuleWithContext indicates an expected call of CreateRuleWithContext.
+// CreateRuleWithContext indicates an expected call of CreateRuleWithContext
 func (mr *MockWAFAPIMockRecorder) CreateRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateRuleWithContext), varargs...)
 }
 
-// CreateSizeConstraintSet mocks base method.
+// CreateSizeConstraintSet mocks base method
 func (m *MockWAFAPI) CreateSizeConstraintSet(arg0 *waf.CreateSizeConstraintSetInput) (*waf.CreateSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSizeConstraintSet", arg0)
@@ -445,13 +444,13 @@ func (m *MockWAFAPI) CreateSizeConstraintSet(arg0 *waf.CreateSizeConstraintSetIn
 	return ret0, ret1
 }
 
-// CreateSizeConstraintSet indicates an expected call of CreateSizeConstraintSet.
+// CreateSizeConstraintSet indicates an expected call of CreateSizeConstraintSet
 func (mr *MockWAFAPIMockRecorder) CreateSizeConstraintSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSizeConstraintSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateSizeConstraintSet), arg0)
 }
 
-// CreateSizeConstraintSetRequest mocks base method.
+// CreateSizeConstraintSetRequest mocks base method
 func (m *MockWAFAPI) CreateSizeConstraintSetRequest(arg0 *waf.CreateSizeConstraintSetInput) (*request.Request, *waf.CreateSizeConstraintSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSizeConstraintSetRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockWAFAPI) CreateSizeConstraintSetRequest(arg0 *waf.CreateSizeConstrai
 	return ret0, ret1
 }
 
-// CreateSizeConstraintSetRequest indicates an expected call of CreateSizeConstraintSetRequest.
+// CreateSizeConstraintSetRequest indicates an expected call of CreateSizeConstraintSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateSizeConstraintSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSizeConstraintSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateSizeConstraintSetRequest), arg0)
 }
 
-// CreateSizeConstraintSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.CreateSizeConstraintSetInput, arg2 ...request.Option) (*waf.CreateSizeConstraintSetOutput, error) {
+// CreateSizeConstraintSetWithContext mocks base method
+func (m *MockWAFAPI) CreateSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.CreateSizeConstraintSetInput, arg2 ...request.Option) (*waf.CreateSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockWAFAPI) CreateSizeConstraintSetWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateSizeConstraintSetWithContext indicates an expected call of CreateSizeConstraintSetWithContext.
+// CreateSizeConstraintSetWithContext indicates an expected call of CreateSizeConstraintSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateSizeConstraintSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSizeConstraintSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateSizeConstraintSetWithContext), varargs...)
 }
 
-// CreateSqlInjectionMatchSet mocks base method.
+// CreateSqlInjectionMatchSet mocks base method
 func (m *MockWAFAPI) CreateSqlInjectionMatchSet(arg0 *waf.CreateSqlInjectionMatchSetInput) (*waf.CreateSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSqlInjectionMatchSet", arg0)
@@ -495,13 +494,13 @@ func (m *MockWAFAPI) CreateSqlInjectionMatchSet(arg0 *waf.CreateSqlInjectionMatc
 	return ret0, ret1
 }
 
-// CreateSqlInjectionMatchSet indicates an expected call of CreateSqlInjectionMatchSet.
+// CreateSqlInjectionMatchSet indicates an expected call of CreateSqlInjectionMatchSet
 func (mr *MockWAFAPIMockRecorder) CreateSqlInjectionMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSqlInjectionMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateSqlInjectionMatchSet), arg0)
 }
 
-// CreateSqlInjectionMatchSetRequest mocks base method.
+// CreateSqlInjectionMatchSetRequest mocks base method
 func (m *MockWAFAPI) CreateSqlInjectionMatchSetRequest(arg0 *waf.CreateSqlInjectionMatchSetInput) (*request.Request, *waf.CreateSqlInjectionMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSqlInjectionMatchSetRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockWAFAPI) CreateSqlInjectionMatchSetRequest(arg0 *waf.CreateSqlInject
 	return ret0, ret1
 }
 
-// CreateSqlInjectionMatchSetRequest indicates an expected call of CreateSqlInjectionMatchSetRequest.
+// CreateSqlInjectionMatchSetRequest indicates an expected call of CreateSqlInjectionMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateSqlInjectionMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSqlInjectionMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateSqlInjectionMatchSetRequest), arg0)
 }
 
-// CreateSqlInjectionMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.CreateSqlInjectionMatchSetOutput, error) {
+// CreateSqlInjectionMatchSetWithContext mocks base method
+func (m *MockWAFAPI) CreateSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.CreateSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockWAFAPI) CreateSqlInjectionMatchSetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateSqlInjectionMatchSetWithContext indicates an expected call of CreateSqlInjectionMatchSetWithContext.
+// CreateSqlInjectionMatchSetWithContext indicates an expected call of CreateSqlInjectionMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateSqlInjectionMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSqlInjectionMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateSqlInjectionMatchSetWithContext), varargs...)
 }
 
-// CreateWebACL mocks base method.
+// CreateWebACL mocks base method
 func (m *MockWAFAPI) CreateWebACL(arg0 *waf.CreateWebACLInput) (*waf.CreateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateWebACL", arg0)
@@ -545,63 +544,13 @@ func (m *MockWAFAPI) CreateWebACL(arg0 *waf.CreateWebACLInput) (*waf.CreateWebAC
 	return ret0, ret1
 }
 
-// CreateWebACL indicates an expected call of CreateWebACL.
+// CreateWebACL indicates an expected call of CreateWebACL
 func (mr *MockWAFAPIMockRecorder) CreateWebACL(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACL", reflect.TypeOf((*MockWAFAPI)(nil).CreateWebACL), arg0)
 }
 
-// CreateWebACLMigrationStack mocks base method.
-func (m *MockWAFAPI) CreateWebACLMigrationStack(arg0 *waf.CreateWebACLMigrationStackInput) (*waf.CreateWebACLMigrationStackOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateWebACLMigrationStack", arg0)
-	ret0, _ := ret[0].(*waf.CreateWebACLMigrationStackOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateWebACLMigrationStack indicates an expected call of CreateWebACLMigrationStack.
-func (mr *MockWAFAPIMockRecorder) CreateWebACLMigrationStack(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACLMigrationStack", reflect.TypeOf((*MockWAFAPI)(nil).CreateWebACLMigrationStack), arg0)
-}
-
-// CreateWebACLMigrationStackRequest mocks base method.
-func (m *MockWAFAPI) CreateWebACLMigrationStackRequest(arg0 *waf.CreateWebACLMigrationStackInput) (*request.Request, *waf.CreateWebACLMigrationStackOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateWebACLMigrationStackRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.CreateWebACLMigrationStackOutput)
-	return ret0, ret1
-}
-
-// CreateWebACLMigrationStackRequest indicates an expected call of CreateWebACLMigrationStackRequest.
-func (mr *MockWAFAPIMockRecorder) CreateWebACLMigrationStackRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACLMigrationStackRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateWebACLMigrationStackRequest), arg0)
-}
-
-// CreateWebACLMigrationStackWithContext mocks base method.
-func (m *MockWAFAPI) CreateWebACLMigrationStackWithContext(arg0 context.Context, arg1 *waf.CreateWebACLMigrationStackInput, arg2 ...request.Option) (*waf.CreateWebACLMigrationStackOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateWebACLMigrationStackWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.CreateWebACLMigrationStackOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateWebACLMigrationStackWithContext indicates an expected call of CreateWebACLMigrationStackWithContext.
-func (mr *MockWAFAPIMockRecorder) CreateWebACLMigrationStackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACLMigrationStackWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateWebACLMigrationStackWithContext), varargs...)
-}
-
-// CreateWebACLRequest mocks base method.
+// CreateWebACLRequest mocks base method
 func (m *MockWAFAPI) CreateWebACLRequest(arg0 *waf.CreateWebACLInput) (*request.Request, *waf.CreateWebACLOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateWebACLRequest", arg0)
@@ -610,14 +559,14 @@ func (m *MockWAFAPI) CreateWebACLRequest(arg0 *waf.CreateWebACLInput) (*request.
 	return ret0, ret1
 }
 
-// CreateWebACLRequest indicates an expected call of CreateWebACLRequest.
+// CreateWebACLRequest indicates an expected call of CreateWebACLRequest
 func (mr *MockWAFAPIMockRecorder) CreateWebACLRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACLRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateWebACLRequest), arg0)
 }
 
-// CreateWebACLWithContext mocks base method.
-func (m *MockWAFAPI) CreateWebACLWithContext(arg0 context.Context, arg1 *waf.CreateWebACLInput, arg2 ...request.Option) (*waf.CreateWebACLOutput, error) {
+// CreateWebACLWithContext mocks base method
+func (m *MockWAFAPI) CreateWebACLWithContext(arg0 aws.Context, arg1 *waf.CreateWebACLInput, arg2 ...request.Option) (*waf.CreateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +578,14 @@ func (m *MockWAFAPI) CreateWebACLWithContext(arg0 context.Context, arg1 *waf.Cre
 	return ret0, ret1
 }
 
-// CreateWebACLWithContext indicates an expected call of CreateWebACLWithContext.
+// CreateWebACLWithContext indicates an expected call of CreateWebACLWithContext
 func (mr *MockWAFAPIMockRecorder) CreateWebACLWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACLWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateWebACLWithContext), varargs...)
 }
 
-// CreateXssMatchSet mocks base method.
+// CreateXssMatchSet mocks base method
 func (m *MockWAFAPI) CreateXssMatchSet(arg0 *waf.CreateXssMatchSetInput) (*waf.CreateXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateXssMatchSet", arg0)
@@ -645,13 +594,13 @@ func (m *MockWAFAPI) CreateXssMatchSet(arg0 *waf.CreateXssMatchSetInput) (*waf.C
 	return ret0, ret1
 }
 
-// CreateXssMatchSet indicates an expected call of CreateXssMatchSet.
+// CreateXssMatchSet indicates an expected call of CreateXssMatchSet
 func (mr *MockWAFAPIMockRecorder) CreateXssMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateXssMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).CreateXssMatchSet), arg0)
 }
 
-// CreateXssMatchSetRequest mocks base method.
+// CreateXssMatchSetRequest mocks base method
 func (m *MockWAFAPI) CreateXssMatchSetRequest(arg0 *waf.CreateXssMatchSetInput) (*request.Request, *waf.CreateXssMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateXssMatchSetRequest", arg0)
@@ -660,14 +609,14 @@ func (m *MockWAFAPI) CreateXssMatchSetRequest(arg0 *waf.CreateXssMatchSetInput) 
 	return ret0, ret1
 }
 
-// CreateXssMatchSetRequest indicates an expected call of CreateXssMatchSetRequest.
+// CreateXssMatchSetRequest indicates an expected call of CreateXssMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) CreateXssMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateXssMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).CreateXssMatchSetRequest), arg0)
 }
 
-// CreateXssMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) CreateXssMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateXssMatchSetInput, arg2 ...request.Option) (*waf.CreateXssMatchSetOutput, error) {
+// CreateXssMatchSetWithContext mocks base method
+func (m *MockWAFAPI) CreateXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateXssMatchSetInput, arg2 ...request.Option) (*waf.CreateXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +628,14 @@ func (m *MockWAFAPI) CreateXssMatchSetWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// CreateXssMatchSetWithContext indicates an expected call of CreateXssMatchSetWithContext.
+// CreateXssMatchSetWithContext indicates an expected call of CreateXssMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) CreateXssMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateXssMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).CreateXssMatchSetWithContext), varargs...)
 }
 
-// DeleteByteMatchSet mocks base method.
+// DeleteByteMatchSet mocks base method
 func (m *MockWAFAPI) DeleteByteMatchSet(arg0 *waf.DeleteByteMatchSetInput) (*waf.DeleteByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteByteMatchSet", arg0)
@@ -695,13 +644,13 @@ func (m *MockWAFAPI) DeleteByteMatchSet(arg0 *waf.DeleteByteMatchSetInput) (*waf
 	return ret0, ret1
 }
 
-// DeleteByteMatchSet indicates an expected call of DeleteByteMatchSet.
+// DeleteByteMatchSet indicates an expected call of DeleteByteMatchSet
 func (mr *MockWAFAPIMockRecorder) DeleteByteMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteByteMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteByteMatchSet), arg0)
 }
 
-// DeleteByteMatchSetRequest mocks base method.
+// DeleteByteMatchSetRequest mocks base method
 func (m *MockWAFAPI) DeleteByteMatchSetRequest(arg0 *waf.DeleteByteMatchSetInput) (*request.Request, *waf.DeleteByteMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteByteMatchSetRequest", arg0)
@@ -710,14 +659,14 @@ func (m *MockWAFAPI) DeleteByteMatchSetRequest(arg0 *waf.DeleteByteMatchSetInput
 	return ret0, ret1
 }
 
-// DeleteByteMatchSetRequest indicates an expected call of DeleteByteMatchSetRequest.
+// DeleteByteMatchSetRequest indicates an expected call of DeleteByteMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteByteMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteByteMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteByteMatchSetRequest), arg0)
 }
 
-// DeleteByteMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteByteMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteByteMatchSetInput, arg2 ...request.Option) (*waf.DeleteByteMatchSetOutput, error) {
+// DeleteByteMatchSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteByteMatchSetInput, arg2 ...request.Option) (*waf.DeleteByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +678,14 @@ func (m *MockWAFAPI) DeleteByteMatchSetWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// DeleteByteMatchSetWithContext indicates an expected call of DeleteByteMatchSetWithContext.
+// DeleteByteMatchSetWithContext indicates an expected call of DeleteByteMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteByteMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteByteMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteByteMatchSetWithContext), varargs...)
 }
 
-// DeleteGeoMatchSet mocks base method.
+// DeleteGeoMatchSet mocks base method
 func (m *MockWAFAPI) DeleteGeoMatchSet(arg0 *waf.DeleteGeoMatchSetInput) (*waf.DeleteGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGeoMatchSet", arg0)
@@ -745,13 +694,13 @@ func (m *MockWAFAPI) DeleteGeoMatchSet(arg0 *waf.DeleteGeoMatchSetInput) (*waf.D
 	return ret0, ret1
 }
 
-// DeleteGeoMatchSet indicates an expected call of DeleteGeoMatchSet.
+// DeleteGeoMatchSet indicates an expected call of DeleteGeoMatchSet
 func (mr *MockWAFAPIMockRecorder) DeleteGeoMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGeoMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteGeoMatchSet), arg0)
 }
 
-// DeleteGeoMatchSetRequest mocks base method.
+// DeleteGeoMatchSetRequest mocks base method
 func (m *MockWAFAPI) DeleteGeoMatchSetRequest(arg0 *waf.DeleteGeoMatchSetInput) (*request.Request, *waf.DeleteGeoMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGeoMatchSetRequest", arg0)
@@ -760,14 +709,14 @@ func (m *MockWAFAPI) DeleteGeoMatchSetRequest(arg0 *waf.DeleteGeoMatchSetInput) 
 	return ret0, ret1
 }
 
-// DeleteGeoMatchSetRequest indicates an expected call of DeleteGeoMatchSetRequest.
+// DeleteGeoMatchSetRequest indicates an expected call of DeleteGeoMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteGeoMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGeoMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteGeoMatchSetRequest), arg0)
 }
 
-// DeleteGeoMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteGeoMatchSetInput, arg2 ...request.Option) (*waf.DeleteGeoMatchSetOutput, error) {
+// DeleteGeoMatchSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteGeoMatchSetInput, arg2 ...request.Option) (*waf.DeleteGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +728,14 @@ func (m *MockWAFAPI) DeleteGeoMatchSetWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// DeleteGeoMatchSetWithContext indicates an expected call of DeleteGeoMatchSetWithContext.
+// DeleteGeoMatchSetWithContext indicates an expected call of DeleteGeoMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteGeoMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGeoMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteGeoMatchSetWithContext), varargs...)
 }
 
-// DeleteIPSet mocks base method.
+// DeleteIPSet mocks base method
 func (m *MockWAFAPI) DeleteIPSet(arg0 *waf.DeleteIPSetInput) (*waf.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIPSet", arg0)
@@ -795,13 +744,13 @@ func (m *MockWAFAPI) DeleteIPSet(arg0 *waf.DeleteIPSetInput) (*waf.DeleteIPSetOu
 	return ret0, ret1
 }
 
-// DeleteIPSet indicates an expected call of DeleteIPSet.
+// DeleteIPSet indicates an expected call of DeleteIPSet
 func (mr *MockWAFAPIMockRecorder) DeleteIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteIPSet), arg0)
 }
 
-// DeleteIPSetRequest mocks base method.
+// DeleteIPSetRequest mocks base method
 func (m *MockWAFAPI) DeleteIPSetRequest(arg0 *waf.DeleteIPSetInput) (*request.Request, *waf.DeleteIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIPSetRequest", arg0)
@@ -810,14 +759,14 @@ func (m *MockWAFAPI) DeleteIPSetRequest(arg0 *waf.DeleteIPSetInput) (*request.Re
 	return ret0, ret1
 }
 
-// DeleteIPSetRequest indicates an expected call of DeleteIPSetRequest.
+// DeleteIPSetRequest indicates an expected call of DeleteIPSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteIPSetRequest), arg0)
 }
 
-// DeleteIPSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteIPSetWithContext(arg0 context.Context, arg1 *waf.DeleteIPSetInput, arg2 ...request.Option) (*waf.DeleteIPSetOutput, error) {
+// DeleteIPSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteIPSetWithContext(arg0 aws.Context, arg1 *waf.DeleteIPSetInput, arg2 ...request.Option) (*waf.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,64 +778,14 @@ func (m *MockWAFAPI) DeleteIPSetWithContext(arg0 context.Context, arg1 *waf.Dele
 	return ret0, ret1
 }
 
-// DeleteIPSetWithContext indicates an expected call of DeleteIPSetWithContext.
+// DeleteIPSetWithContext indicates an expected call of DeleteIPSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteIPSetWithContext), varargs...)
 }
 
-// DeleteLoggingConfiguration mocks base method.
-func (m *MockWAFAPI) DeleteLoggingConfiguration(arg0 *waf.DeleteLoggingConfigurationInput) (*waf.DeleteLoggingConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteLoggingConfiguration", arg0)
-	ret0, _ := ret[0].(*waf.DeleteLoggingConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteLoggingConfiguration indicates an expected call of DeleteLoggingConfiguration.
-func (mr *MockWAFAPIMockRecorder) DeleteLoggingConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfiguration", reflect.TypeOf((*MockWAFAPI)(nil).DeleteLoggingConfiguration), arg0)
-}
-
-// DeleteLoggingConfigurationRequest mocks base method.
-func (m *MockWAFAPI) DeleteLoggingConfigurationRequest(arg0 *waf.DeleteLoggingConfigurationInput) (*request.Request, *waf.DeleteLoggingConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.DeleteLoggingConfigurationOutput)
-	return ret0, ret1
-}
-
-// DeleteLoggingConfigurationRequest indicates an expected call of DeleteLoggingConfigurationRequest.
-func (mr *MockWAFAPIMockRecorder) DeleteLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteLoggingConfigurationRequest), arg0)
-}
-
-// DeleteLoggingConfigurationWithContext mocks base method.
-func (m *MockWAFAPI) DeleteLoggingConfigurationWithContext(arg0 context.Context, arg1 *waf.DeleteLoggingConfigurationInput, arg2 ...request.Option) (*waf.DeleteLoggingConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.DeleteLoggingConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteLoggingConfigurationWithContext indicates an expected call of DeleteLoggingConfigurationWithContext.
-func (mr *MockWAFAPIMockRecorder) DeleteLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteLoggingConfigurationWithContext), varargs...)
-}
-
-// DeletePermissionPolicy mocks base method.
+// DeletePermissionPolicy mocks base method
 func (m *MockWAFAPI) DeletePermissionPolicy(arg0 *waf.DeletePermissionPolicyInput) (*waf.DeletePermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePermissionPolicy", arg0)
@@ -895,13 +794,13 @@ func (m *MockWAFAPI) DeletePermissionPolicy(arg0 *waf.DeletePermissionPolicyInpu
 	return ret0, ret1
 }
 
-// DeletePermissionPolicy indicates an expected call of DeletePermissionPolicy.
+// DeletePermissionPolicy indicates an expected call of DeletePermissionPolicy
 func (mr *MockWAFAPIMockRecorder) DeletePermissionPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionPolicy", reflect.TypeOf((*MockWAFAPI)(nil).DeletePermissionPolicy), arg0)
 }
 
-// DeletePermissionPolicyRequest mocks base method.
+// DeletePermissionPolicyRequest mocks base method
 func (m *MockWAFAPI) DeletePermissionPolicyRequest(arg0 *waf.DeletePermissionPolicyInput) (*request.Request, *waf.DeletePermissionPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePermissionPolicyRequest", arg0)
@@ -910,14 +809,14 @@ func (m *MockWAFAPI) DeletePermissionPolicyRequest(arg0 *waf.DeletePermissionPol
 	return ret0, ret1
 }
 
-// DeletePermissionPolicyRequest indicates an expected call of DeletePermissionPolicyRequest.
+// DeletePermissionPolicyRequest indicates an expected call of DeletePermissionPolicyRequest
 func (mr *MockWAFAPIMockRecorder) DeletePermissionPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionPolicyRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeletePermissionPolicyRequest), arg0)
 }
 
-// DeletePermissionPolicyWithContext mocks base method.
-func (m *MockWAFAPI) DeletePermissionPolicyWithContext(arg0 context.Context, arg1 *waf.DeletePermissionPolicyInput, arg2 ...request.Option) (*waf.DeletePermissionPolicyOutput, error) {
+// DeletePermissionPolicyWithContext mocks base method
+func (m *MockWAFAPI) DeletePermissionPolicyWithContext(arg0 aws.Context, arg1 *waf.DeletePermissionPolicyInput, arg2 ...request.Option) (*waf.DeletePermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +828,14 @@ func (m *MockWAFAPI) DeletePermissionPolicyWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// DeletePermissionPolicyWithContext indicates an expected call of DeletePermissionPolicyWithContext.
+// DeletePermissionPolicyWithContext indicates an expected call of DeletePermissionPolicyWithContext
 func (mr *MockWAFAPIMockRecorder) DeletePermissionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionPolicyWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeletePermissionPolicyWithContext), varargs...)
 }
 
-// DeleteRateBasedRule mocks base method.
+// DeleteRateBasedRule mocks base method
 func (m *MockWAFAPI) DeleteRateBasedRule(arg0 *waf.DeleteRateBasedRuleInput) (*waf.DeleteRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRateBasedRule", arg0)
@@ -945,13 +844,13 @@ func (m *MockWAFAPI) DeleteRateBasedRule(arg0 *waf.DeleteRateBasedRuleInput) (*w
 	return ret0, ret1
 }
 
-// DeleteRateBasedRule indicates an expected call of DeleteRateBasedRule.
+// DeleteRateBasedRule indicates an expected call of DeleteRateBasedRule
 func (mr *MockWAFAPIMockRecorder) DeleteRateBasedRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRateBasedRule", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRateBasedRule), arg0)
 }
 
-// DeleteRateBasedRuleRequest mocks base method.
+// DeleteRateBasedRuleRequest mocks base method
 func (m *MockWAFAPI) DeleteRateBasedRuleRequest(arg0 *waf.DeleteRateBasedRuleInput) (*request.Request, *waf.DeleteRateBasedRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRateBasedRuleRequest", arg0)
@@ -960,14 +859,14 @@ func (m *MockWAFAPI) DeleteRateBasedRuleRequest(arg0 *waf.DeleteRateBasedRuleInp
 	return ret0, ret1
 }
 
-// DeleteRateBasedRuleRequest indicates an expected call of DeleteRateBasedRuleRequest.
+// DeleteRateBasedRuleRequest indicates an expected call of DeleteRateBasedRuleRequest
 func (mr *MockWAFAPIMockRecorder) DeleteRateBasedRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRateBasedRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRateBasedRuleRequest), arg0)
 }
 
-// DeleteRateBasedRuleWithContext mocks base method.
-func (m *MockWAFAPI) DeleteRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.DeleteRateBasedRuleInput, arg2 ...request.Option) (*waf.DeleteRateBasedRuleOutput, error) {
+// DeleteRateBasedRuleWithContext mocks base method
+func (m *MockWAFAPI) DeleteRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.DeleteRateBasedRuleInput, arg2 ...request.Option) (*waf.DeleteRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +878,14 @@ func (m *MockWAFAPI) DeleteRateBasedRuleWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteRateBasedRuleWithContext indicates an expected call of DeleteRateBasedRuleWithContext.
+// DeleteRateBasedRuleWithContext indicates an expected call of DeleteRateBasedRuleWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteRateBasedRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRateBasedRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRateBasedRuleWithContext), varargs...)
 }
 
-// DeleteRegexMatchSet mocks base method.
+// DeleteRegexMatchSet mocks base method
 func (m *MockWAFAPI) DeleteRegexMatchSet(arg0 *waf.DeleteRegexMatchSetInput) (*waf.DeleteRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRegexMatchSet", arg0)
@@ -995,13 +894,13 @@ func (m *MockWAFAPI) DeleteRegexMatchSet(arg0 *waf.DeleteRegexMatchSetInput) (*w
 	return ret0, ret1
 }
 
-// DeleteRegexMatchSet indicates an expected call of DeleteRegexMatchSet.
+// DeleteRegexMatchSet indicates an expected call of DeleteRegexMatchSet
 func (mr *MockWAFAPIMockRecorder) DeleteRegexMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegexMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRegexMatchSet), arg0)
 }
 
-// DeleteRegexMatchSetRequest mocks base method.
+// DeleteRegexMatchSetRequest mocks base method
 func (m *MockWAFAPI) DeleteRegexMatchSetRequest(arg0 *waf.DeleteRegexMatchSetInput) (*request.Request, *waf.DeleteRegexMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRegexMatchSetRequest", arg0)
@@ -1010,14 +909,14 @@ func (m *MockWAFAPI) DeleteRegexMatchSetRequest(arg0 *waf.DeleteRegexMatchSetInp
 	return ret0, ret1
 }
 
-// DeleteRegexMatchSetRequest indicates an expected call of DeleteRegexMatchSetRequest.
+// DeleteRegexMatchSetRequest indicates an expected call of DeleteRegexMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteRegexMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegexMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRegexMatchSetRequest), arg0)
 }
 
-// DeleteRegexMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteRegexMatchSetInput, arg2 ...request.Option) (*waf.DeleteRegexMatchSetOutput, error) {
+// DeleteRegexMatchSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteRegexMatchSetInput, arg2 ...request.Option) (*waf.DeleteRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +928,14 @@ func (m *MockWAFAPI) DeleteRegexMatchSetWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteRegexMatchSetWithContext indicates an expected call of DeleteRegexMatchSetWithContext.
+// DeleteRegexMatchSetWithContext indicates an expected call of DeleteRegexMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteRegexMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegexMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRegexMatchSetWithContext), varargs...)
 }
 
-// DeleteRegexPatternSet mocks base method.
+// DeleteRegexPatternSet mocks base method
 func (m *MockWAFAPI) DeleteRegexPatternSet(arg0 *waf.DeleteRegexPatternSetInput) (*waf.DeleteRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRegexPatternSet", arg0)
@@ -1045,13 +944,13 @@ func (m *MockWAFAPI) DeleteRegexPatternSet(arg0 *waf.DeleteRegexPatternSetInput)
 	return ret0, ret1
 }
 
-// DeleteRegexPatternSet indicates an expected call of DeleteRegexPatternSet.
+// DeleteRegexPatternSet indicates an expected call of DeleteRegexPatternSet
 func (mr *MockWAFAPIMockRecorder) DeleteRegexPatternSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegexPatternSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRegexPatternSet), arg0)
 }
 
-// DeleteRegexPatternSetRequest mocks base method.
+// DeleteRegexPatternSetRequest mocks base method
 func (m *MockWAFAPI) DeleteRegexPatternSetRequest(arg0 *waf.DeleteRegexPatternSetInput) (*request.Request, *waf.DeleteRegexPatternSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRegexPatternSetRequest", arg0)
@@ -1060,14 +959,14 @@ func (m *MockWAFAPI) DeleteRegexPatternSetRequest(arg0 *waf.DeleteRegexPatternSe
 	return ret0, ret1
 }
 
-// DeleteRegexPatternSetRequest indicates an expected call of DeleteRegexPatternSetRequest.
+// DeleteRegexPatternSetRequest indicates an expected call of DeleteRegexPatternSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteRegexPatternSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegexPatternSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRegexPatternSetRequest), arg0)
 }
 
-// DeleteRegexPatternSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.DeleteRegexPatternSetInput, arg2 ...request.Option) (*waf.DeleteRegexPatternSetOutput, error) {
+// DeleteRegexPatternSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.DeleteRegexPatternSetInput, arg2 ...request.Option) (*waf.DeleteRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,14 +978,14 @@ func (m *MockWAFAPI) DeleteRegexPatternSetWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeleteRegexPatternSetWithContext indicates an expected call of DeleteRegexPatternSetWithContext.
+// DeleteRegexPatternSetWithContext indicates an expected call of DeleteRegexPatternSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteRegexPatternSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegexPatternSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRegexPatternSetWithContext), varargs...)
 }
 
-// DeleteRule mocks base method.
+// DeleteRule mocks base method
 func (m *MockWAFAPI) DeleteRule(arg0 *waf.DeleteRuleInput) (*waf.DeleteRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRule", arg0)
@@ -1095,13 +994,13 @@ func (m *MockWAFAPI) DeleteRule(arg0 *waf.DeleteRuleInput) (*waf.DeleteRuleOutpu
 	return ret0, ret1
 }
 
-// DeleteRule indicates an expected call of DeleteRule.
+// DeleteRule indicates an expected call of DeleteRule
 func (mr *MockWAFAPIMockRecorder) DeleteRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRule", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRule), arg0)
 }
 
-// DeleteRuleGroup mocks base method.
+// DeleteRuleGroup mocks base method
 func (m *MockWAFAPI) DeleteRuleGroup(arg0 *waf.DeleteRuleGroupInput) (*waf.DeleteRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRuleGroup", arg0)
@@ -1110,13 +1009,13 @@ func (m *MockWAFAPI) DeleteRuleGroup(arg0 *waf.DeleteRuleGroupInput) (*waf.Delet
 	return ret0, ret1
 }
 
-// DeleteRuleGroup indicates an expected call of DeleteRuleGroup.
+// DeleteRuleGroup indicates an expected call of DeleteRuleGroup
 func (mr *MockWAFAPIMockRecorder) DeleteRuleGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleGroup", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRuleGroup), arg0)
 }
 
-// DeleteRuleGroupRequest mocks base method.
+// DeleteRuleGroupRequest mocks base method
 func (m *MockWAFAPI) DeleteRuleGroupRequest(arg0 *waf.DeleteRuleGroupInput) (*request.Request, *waf.DeleteRuleGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRuleGroupRequest", arg0)
@@ -1125,14 +1024,14 @@ func (m *MockWAFAPI) DeleteRuleGroupRequest(arg0 *waf.DeleteRuleGroupInput) (*re
 	return ret0, ret1
 }
 
-// DeleteRuleGroupRequest indicates an expected call of DeleteRuleGroupRequest.
+// DeleteRuleGroupRequest indicates an expected call of DeleteRuleGroupRequest
 func (mr *MockWAFAPIMockRecorder) DeleteRuleGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleGroupRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRuleGroupRequest), arg0)
 }
 
-// DeleteRuleGroupWithContext mocks base method.
-func (m *MockWAFAPI) DeleteRuleGroupWithContext(arg0 context.Context, arg1 *waf.DeleteRuleGroupInput, arg2 ...request.Option) (*waf.DeleteRuleGroupOutput, error) {
+// DeleteRuleGroupWithContext mocks base method
+func (m *MockWAFAPI) DeleteRuleGroupWithContext(arg0 aws.Context, arg1 *waf.DeleteRuleGroupInput, arg2 ...request.Option) (*waf.DeleteRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1144,14 +1043,14 @@ func (m *MockWAFAPI) DeleteRuleGroupWithContext(arg0 context.Context, arg1 *waf.
 	return ret0, ret1
 }
 
-// DeleteRuleGroupWithContext indicates an expected call of DeleteRuleGroupWithContext.
+// DeleteRuleGroupWithContext indicates an expected call of DeleteRuleGroupWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleGroupWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRuleGroupWithContext), varargs...)
 }
 
-// DeleteRuleRequest mocks base method.
+// DeleteRuleRequest mocks base method
 func (m *MockWAFAPI) DeleteRuleRequest(arg0 *waf.DeleteRuleInput) (*request.Request, *waf.DeleteRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRuleRequest", arg0)
@@ -1160,14 +1059,14 @@ func (m *MockWAFAPI) DeleteRuleRequest(arg0 *waf.DeleteRuleInput) (*request.Requ
 	return ret0, ret1
 }
 
-// DeleteRuleRequest indicates an expected call of DeleteRuleRequest.
+// DeleteRuleRequest indicates an expected call of DeleteRuleRequest
 func (mr *MockWAFAPIMockRecorder) DeleteRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRuleRequest), arg0)
 }
 
-// DeleteRuleWithContext mocks base method.
-func (m *MockWAFAPI) DeleteRuleWithContext(arg0 context.Context, arg1 *waf.DeleteRuleInput, arg2 ...request.Option) (*waf.DeleteRuleOutput, error) {
+// DeleteRuleWithContext mocks base method
+func (m *MockWAFAPI) DeleteRuleWithContext(arg0 aws.Context, arg1 *waf.DeleteRuleInput, arg2 ...request.Option) (*waf.DeleteRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1179,14 +1078,14 @@ func (m *MockWAFAPI) DeleteRuleWithContext(arg0 context.Context, arg1 *waf.Delet
 	return ret0, ret1
 }
 
-// DeleteRuleWithContext indicates an expected call of DeleteRuleWithContext.
+// DeleteRuleWithContext indicates an expected call of DeleteRuleWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteRuleWithContext), varargs...)
 }
 
-// DeleteSizeConstraintSet mocks base method.
+// DeleteSizeConstraintSet mocks base method
 func (m *MockWAFAPI) DeleteSizeConstraintSet(arg0 *waf.DeleteSizeConstraintSetInput) (*waf.DeleteSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSizeConstraintSet", arg0)
@@ -1195,13 +1094,13 @@ func (m *MockWAFAPI) DeleteSizeConstraintSet(arg0 *waf.DeleteSizeConstraintSetIn
 	return ret0, ret1
 }
 
-// DeleteSizeConstraintSet indicates an expected call of DeleteSizeConstraintSet.
+// DeleteSizeConstraintSet indicates an expected call of DeleteSizeConstraintSet
 func (mr *MockWAFAPIMockRecorder) DeleteSizeConstraintSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSizeConstraintSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteSizeConstraintSet), arg0)
 }
 
-// DeleteSizeConstraintSetRequest mocks base method.
+// DeleteSizeConstraintSetRequest mocks base method
 func (m *MockWAFAPI) DeleteSizeConstraintSetRequest(arg0 *waf.DeleteSizeConstraintSetInput) (*request.Request, *waf.DeleteSizeConstraintSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSizeConstraintSetRequest", arg0)
@@ -1210,14 +1109,14 @@ func (m *MockWAFAPI) DeleteSizeConstraintSetRequest(arg0 *waf.DeleteSizeConstrai
 	return ret0, ret1
 }
 
-// DeleteSizeConstraintSetRequest indicates an expected call of DeleteSizeConstraintSetRequest.
+// DeleteSizeConstraintSetRequest indicates an expected call of DeleteSizeConstraintSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteSizeConstraintSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSizeConstraintSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteSizeConstraintSetRequest), arg0)
 }
 
-// DeleteSizeConstraintSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.DeleteSizeConstraintSetInput, arg2 ...request.Option) (*waf.DeleteSizeConstraintSetOutput, error) {
+// DeleteSizeConstraintSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.DeleteSizeConstraintSetInput, arg2 ...request.Option) (*waf.DeleteSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1229,14 +1128,14 @@ func (m *MockWAFAPI) DeleteSizeConstraintSetWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteSizeConstraintSetWithContext indicates an expected call of DeleteSizeConstraintSetWithContext.
+// DeleteSizeConstraintSetWithContext indicates an expected call of DeleteSizeConstraintSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteSizeConstraintSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSizeConstraintSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteSizeConstraintSetWithContext), varargs...)
 }
 
-// DeleteSqlInjectionMatchSet mocks base method.
+// DeleteSqlInjectionMatchSet mocks base method
 func (m *MockWAFAPI) DeleteSqlInjectionMatchSet(arg0 *waf.DeleteSqlInjectionMatchSetInput) (*waf.DeleteSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSqlInjectionMatchSet", arg0)
@@ -1245,13 +1144,13 @@ func (m *MockWAFAPI) DeleteSqlInjectionMatchSet(arg0 *waf.DeleteSqlInjectionMatc
 	return ret0, ret1
 }
 
-// DeleteSqlInjectionMatchSet indicates an expected call of DeleteSqlInjectionMatchSet.
+// DeleteSqlInjectionMatchSet indicates an expected call of DeleteSqlInjectionMatchSet
 func (mr *MockWAFAPIMockRecorder) DeleteSqlInjectionMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSqlInjectionMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteSqlInjectionMatchSet), arg0)
 }
 
-// DeleteSqlInjectionMatchSetRequest mocks base method.
+// DeleteSqlInjectionMatchSetRequest mocks base method
 func (m *MockWAFAPI) DeleteSqlInjectionMatchSetRequest(arg0 *waf.DeleteSqlInjectionMatchSetInput) (*request.Request, *waf.DeleteSqlInjectionMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSqlInjectionMatchSetRequest", arg0)
@@ -1260,14 +1159,14 @@ func (m *MockWAFAPI) DeleteSqlInjectionMatchSetRequest(arg0 *waf.DeleteSqlInject
 	return ret0, ret1
 }
 
-// DeleteSqlInjectionMatchSetRequest indicates an expected call of DeleteSqlInjectionMatchSetRequest.
+// DeleteSqlInjectionMatchSetRequest indicates an expected call of DeleteSqlInjectionMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteSqlInjectionMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSqlInjectionMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteSqlInjectionMatchSetRequest), arg0)
 }
 
-// DeleteSqlInjectionMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.DeleteSqlInjectionMatchSetOutput, error) {
+// DeleteSqlInjectionMatchSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.DeleteSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +1178,14 @@ func (m *MockWAFAPI) DeleteSqlInjectionMatchSetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteSqlInjectionMatchSetWithContext indicates an expected call of DeleteSqlInjectionMatchSetWithContext.
+// DeleteSqlInjectionMatchSetWithContext indicates an expected call of DeleteSqlInjectionMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteSqlInjectionMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSqlInjectionMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteSqlInjectionMatchSetWithContext), varargs...)
 }
 
-// DeleteWebACL mocks base method.
+// DeleteWebACL mocks base method
 func (m *MockWAFAPI) DeleteWebACL(arg0 *waf.DeleteWebACLInput) (*waf.DeleteWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteWebACL", arg0)
@@ -1295,13 +1194,13 @@ func (m *MockWAFAPI) DeleteWebACL(arg0 *waf.DeleteWebACLInput) (*waf.DeleteWebAC
 	return ret0, ret1
 }
 
-// DeleteWebACL indicates an expected call of DeleteWebACL.
+// DeleteWebACL indicates an expected call of DeleteWebACL
 func (mr *MockWAFAPIMockRecorder) DeleteWebACL(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebACL", reflect.TypeOf((*MockWAFAPI)(nil).DeleteWebACL), arg0)
 }
 
-// DeleteWebACLRequest mocks base method.
+// DeleteWebACLRequest mocks base method
 func (m *MockWAFAPI) DeleteWebACLRequest(arg0 *waf.DeleteWebACLInput) (*request.Request, *waf.DeleteWebACLOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteWebACLRequest", arg0)
@@ -1310,14 +1209,14 @@ func (m *MockWAFAPI) DeleteWebACLRequest(arg0 *waf.DeleteWebACLInput) (*request.
 	return ret0, ret1
 }
 
-// DeleteWebACLRequest indicates an expected call of DeleteWebACLRequest.
+// DeleteWebACLRequest indicates an expected call of DeleteWebACLRequest
 func (mr *MockWAFAPIMockRecorder) DeleteWebACLRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebACLRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteWebACLRequest), arg0)
 }
 
-// DeleteWebACLWithContext mocks base method.
-func (m *MockWAFAPI) DeleteWebACLWithContext(arg0 context.Context, arg1 *waf.DeleteWebACLInput, arg2 ...request.Option) (*waf.DeleteWebACLOutput, error) {
+// DeleteWebACLWithContext mocks base method
+func (m *MockWAFAPI) DeleteWebACLWithContext(arg0 aws.Context, arg1 *waf.DeleteWebACLInput, arg2 ...request.Option) (*waf.DeleteWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1329,14 +1228,14 @@ func (m *MockWAFAPI) DeleteWebACLWithContext(arg0 context.Context, arg1 *waf.Del
 	return ret0, ret1
 }
 
-// DeleteWebACLWithContext indicates an expected call of DeleteWebACLWithContext.
+// DeleteWebACLWithContext indicates an expected call of DeleteWebACLWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteWebACLWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebACLWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteWebACLWithContext), varargs...)
 }
 
-// DeleteXssMatchSet mocks base method.
+// DeleteXssMatchSet mocks base method
 func (m *MockWAFAPI) DeleteXssMatchSet(arg0 *waf.DeleteXssMatchSetInput) (*waf.DeleteXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteXssMatchSet", arg0)
@@ -1345,13 +1244,13 @@ func (m *MockWAFAPI) DeleteXssMatchSet(arg0 *waf.DeleteXssMatchSetInput) (*waf.D
 	return ret0, ret1
 }
 
-// DeleteXssMatchSet indicates an expected call of DeleteXssMatchSet.
+// DeleteXssMatchSet indicates an expected call of DeleteXssMatchSet
 func (mr *MockWAFAPIMockRecorder) DeleteXssMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteXssMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).DeleteXssMatchSet), arg0)
 }
 
-// DeleteXssMatchSetRequest mocks base method.
+// DeleteXssMatchSetRequest mocks base method
 func (m *MockWAFAPI) DeleteXssMatchSetRequest(arg0 *waf.DeleteXssMatchSetInput) (*request.Request, *waf.DeleteXssMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteXssMatchSetRequest", arg0)
@@ -1360,14 +1259,14 @@ func (m *MockWAFAPI) DeleteXssMatchSetRequest(arg0 *waf.DeleteXssMatchSetInput) 
 	return ret0, ret1
 }
 
-// DeleteXssMatchSetRequest indicates an expected call of DeleteXssMatchSetRequest.
+// DeleteXssMatchSetRequest indicates an expected call of DeleteXssMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) DeleteXssMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteXssMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).DeleteXssMatchSetRequest), arg0)
 }
 
-// DeleteXssMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) DeleteXssMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteXssMatchSetInput, arg2 ...request.Option) (*waf.DeleteXssMatchSetOutput, error) {
+// DeleteXssMatchSetWithContext mocks base method
+func (m *MockWAFAPI) DeleteXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteXssMatchSetInput, arg2 ...request.Option) (*waf.DeleteXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1379,14 +1278,14 @@ func (m *MockWAFAPI) DeleteXssMatchSetWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// DeleteXssMatchSetWithContext indicates an expected call of DeleteXssMatchSetWithContext.
+// DeleteXssMatchSetWithContext indicates an expected call of DeleteXssMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) DeleteXssMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteXssMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).DeleteXssMatchSetWithContext), varargs...)
 }
 
-// GetByteMatchSet mocks base method.
+// GetByteMatchSet mocks base method
 func (m *MockWAFAPI) GetByteMatchSet(arg0 *waf.GetByteMatchSetInput) (*waf.GetByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetByteMatchSet", arg0)
@@ -1395,13 +1294,13 @@ func (m *MockWAFAPI) GetByteMatchSet(arg0 *waf.GetByteMatchSetInput) (*waf.GetBy
 	return ret0, ret1
 }
 
-// GetByteMatchSet indicates an expected call of GetByteMatchSet.
+// GetByteMatchSet indicates an expected call of GetByteMatchSet
 func (mr *MockWAFAPIMockRecorder) GetByteMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetByteMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).GetByteMatchSet), arg0)
 }
 
-// GetByteMatchSetRequest mocks base method.
+// GetByteMatchSetRequest mocks base method
 func (m *MockWAFAPI) GetByteMatchSetRequest(arg0 *waf.GetByteMatchSetInput) (*request.Request, *waf.GetByteMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetByteMatchSetRequest", arg0)
@@ -1410,14 +1309,14 @@ func (m *MockWAFAPI) GetByteMatchSetRequest(arg0 *waf.GetByteMatchSetInput) (*re
 	return ret0, ret1
 }
 
-// GetByteMatchSetRequest indicates an expected call of GetByteMatchSetRequest.
+// GetByteMatchSetRequest indicates an expected call of GetByteMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) GetByteMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetByteMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetByteMatchSetRequest), arg0)
 }
 
-// GetByteMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) GetByteMatchSetWithContext(arg0 context.Context, arg1 *waf.GetByteMatchSetInput, arg2 ...request.Option) (*waf.GetByteMatchSetOutput, error) {
+// GetByteMatchSetWithContext mocks base method
+func (m *MockWAFAPI) GetByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetByteMatchSetInput, arg2 ...request.Option) (*waf.GetByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,14 +1328,14 @@ func (m *MockWAFAPI) GetByteMatchSetWithContext(arg0 context.Context, arg1 *waf.
 	return ret0, ret1
 }
 
-// GetByteMatchSetWithContext indicates an expected call of GetByteMatchSetWithContext.
+// GetByteMatchSetWithContext indicates an expected call of GetByteMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetByteMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetByteMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetByteMatchSetWithContext), varargs...)
 }
 
-// GetChangeToken mocks base method.
+// GetChangeToken mocks base method
 func (m *MockWAFAPI) GetChangeToken(arg0 *waf.GetChangeTokenInput) (*waf.GetChangeTokenOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetChangeToken", arg0)
@@ -1445,13 +1344,13 @@ func (m *MockWAFAPI) GetChangeToken(arg0 *waf.GetChangeTokenInput) (*waf.GetChan
 	return ret0, ret1
 }
 
-// GetChangeToken indicates an expected call of GetChangeToken.
+// GetChangeToken indicates an expected call of GetChangeToken
 func (mr *MockWAFAPIMockRecorder) GetChangeToken(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChangeToken", reflect.TypeOf((*MockWAFAPI)(nil).GetChangeToken), arg0)
 }
 
-// GetChangeTokenRequest mocks base method.
+// GetChangeTokenRequest mocks base method
 func (m *MockWAFAPI) GetChangeTokenRequest(arg0 *waf.GetChangeTokenInput) (*request.Request, *waf.GetChangeTokenOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetChangeTokenRequest", arg0)
@@ -1460,13 +1359,13 @@ func (m *MockWAFAPI) GetChangeTokenRequest(arg0 *waf.GetChangeTokenInput) (*requ
 	return ret0, ret1
 }
 
-// GetChangeTokenRequest indicates an expected call of GetChangeTokenRequest.
+// GetChangeTokenRequest indicates an expected call of GetChangeTokenRequest
 func (mr *MockWAFAPIMockRecorder) GetChangeTokenRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChangeTokenRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetChangeTokenRequest), arg0)
 }
 
-// GetChangeTokenStatus mocks base method.
+// GetChangeTokenStatus mocks base method
 func (m *MockWAFAPI) GetChangeTokenStatus(arg0 *waf.GetChangeTokenStatusInput) (*waf.GetChangeTokenStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetChangeTokenStatus", arg0)
@@ -1475,13 +1374,13 @@ func (m *MockWAFAPI) GetChangeTokenStatus(arg0 *waf.GetChangeTokenStatusInput) (
 	return ret0, ret1
 }
 
-// GetChangeTokenStatus indicates an expected call of GetChangeTokenStatus.
+// GetChangeTokenStatus indicates an expected call of GetChangeTokenStatus
 func (mr *MockWAFAPIMockRecorder) GetChangeTokenStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChangeTokenStatus", reflect.TypeOf((*MockWAFAPI)(nil).GetChangeTokenStatus), arg0)
 }
 
-// GetChangeTokenStatusRequest mocks base method.
+// GetChangeTokenStatusRequest mocks base method
 func (m *MockWAFAPI) GetChangeTokenStatusRequest(arg0 *waf.GetChangeTokenStatusInput) (*request.Request, *waf.GetChangeTokenStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetChangeTokenStatusRequest", arg0)
@@ -1490,14 +1389,14 @@ func (m *MockWAFAPI) GetChangeTokenStatusRequest(arg0 *waf.GetChangeTokenStatusI
 	return ret0, ret1
 }
 
-// GetChangeTokenStatusRequest indicates an expected call of GetChangeTokenStatusRequest.
+// GetChangeTokenStatusRequest indicates an expected call of GetChangeTokenStatusRequest
 func (mr *MockWAFAPIMockRecorder) GetChangeTokenStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChangeTokenStatusRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetChangeTokenStatusRequest), arg0)
 }
 
-// GetChangeTokenStatusWithContext mocks base method.
-func (m *MockWAFAPI) GetChangeTokenStatusWithContext(arg0 context.Context, arg1 *waf.GetChangeTokenStatusInput, arg2 ...request.Option) (*waf.GetChangeTokenStatusOutput, error) {
+// GetChangeTokenStatusWithContext mocks base method
+func (m *MockWAFAPI) GetChangeTokenStatusWithContext(arg0 aws.Context, arg1 *waf.GetChangeTokenStatusInput, arg2 ...request.Option) (*waf.GetChangeTokenStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1509,15 +1408,15 @@ func (m *MockWAFAPI) GetChangeTokenStatusWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetChangeTokenStatusWithContext indicates an expected call of GetChangeTokenStatusWithContext.
+// GetChangeTokenStatusWithContext indicates an expected call of GetChangeTokenStatusWithContext
 func (mr *MockWAFAPIMockRecorder) GetChangeTokenStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChangeTokenStatusWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetChangeTokenStatusWithContext), varargs...)
 }
 
-// GetChangeTokenWithContext mocks base method.
-func (m *MockWAFAPI) GetChangeTokenWithContext(arg0 context.Context, arg1 *waf.GetChangeTokenInput, arg2 ...request.Option) (*waf.GetChangeTokenOutput, error) {
+// GetChangeTokenWithContext mocks base method
+func (m *MockWAFAPI) GetChangeTokenWithContext(arg0 aws.Context, arg1 *waf.GetChangeTokenInput, arg2 ...request.Option) (*waf.GetChangeTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1529,14 +1428,14 @@ func (m *MockWAFAPI) GetChangeTokenWithContext(arg0 context.Context, arg1 *waf.G
 	return ret0, ret1
 }
 
-// GetChangeTokenWithContext indicates an expected call of GetChangeTokenWithContext.
+// GetChangeTokenWithContext indicates an expected call of GetChangeTokenWithContext
 func (mr *MockWAFAPIMockRecorder) GetChangeTokenWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChangeTokenWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetChangeTokenWithContext), varargs...)
 }
 
-// GetGeoMatchSet mocks base method.
+// GetGeoMatchSet mocks base method
 func (m *MockWAFAPI) GetGeoMatchSet(arg0 *waf.GetGeoMatchSetInput) (*waf.GetGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGeoMatchSet", arg0)
@@ -1545,13 +1444,13 @@ func (m *MockWAFAPI) GetGeoMatchSet(arg0 *waf.GetGeoMatchSetInput) (*waf.GetGeoM
 	return ret0, ret1
 }
 
-// GetGeoMatchSet indicates an expected call of GetGeoMatchSet.
+// GetGeoMatchSet indicates an expected call of GetGeoMatchSet
 func (mr *MockWAFAPIMockRecorder) GetGeoMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGeoMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).GetGeoMatchSet), arg0)
 }
 
-// GetGeoMatchSetRequest mocks base method.
+// GetGeoMatchSetRequest mocks base method
 func (m *MockWAFAPI) GetGeoMatchSetRequest(arg0 *waf.GetGeoMatchSetInput) (*request.Request, *waf.GetGeoMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGeoMatchSetRequest", arg0)
@@ -1560,14 +1459,14 @@ func (m *MockWAFAPI) GetGeoMatchSetRequest(arg0 *waf.GetGeoMatchSetInput) (*requ
 	return ret0, ret1
 }
 
-// GetGeoMatchSetRequest indicates an expected call of GetGeoMatchSetRequest.
+// GetGeoMatchSetRequest indicates an expected call of GetGeoMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) GetGeoMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGeoMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetGeoMatchSetRequest), arg0)
 }
 
-// GetGeoMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) GetGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.GetGeoMatchSetInput, arg2 ...request.Option) (*waf.GetGeoMatchSetOutput, error) {
+// GetGeoMatchSetWithContext mocks base method
+func (m *MockWAFAPI) GetGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetGeoMatchSetInput, arg2 ...request.Option) (*waf.GetGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1579,14 +1478,14 @@ func (m *MockWAFAPI) GetGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.G
 	return ret0, ret1
 }
 
-// GetGeoMatchSetWithContext indicates an expected call of GetGeoMatchSetWithContext.
+// GetGeoMatchSetWithContext indicates an expected call of GetGeoMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetGeoMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGeoMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetGeoMatchSetWithContext), varargs...)
 }
 
-// GetIPSet mocks base method.
+// GetIPSet mocks base method
 func (m *MockWAFAPI) GetIPSet(arg0 *waf.GetIPSetInput) (*waf.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIPSet", arg0)
@@ -1595,13 +1494,13 @@ func (m *MockWAFAPI) GetIPSet(arg0 *waf.GetIPSetInput) (*waf.GetIPSetOutput, err
 	return ret0, ret1
 }
 
-// GetIPSet indicates an expected call of GetIPSet.
+// GetIPSet indicates an expected call of GetIPSet
 func (mr *MockWAFAPIMockRecorder) GetIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSet", reflect.TypeOf((*MockWAFAPI)(nil).GetIPSet), arg0)
 }
 
-// GetIPSetRequest mocks base method.
+// GetIPSetRequest mocks base method
 func (m *MockWAFAPI) GetIPSetRequest(arg0 *waf.GetIPSetInput) (*request.Request, *waf.GetIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIPSetRequest", arg0)
@@ -1610,14 +1509,14 @@ func (m *MockWAFAPI) GetIPSetRequest(arg0 *waf.GetIPSetInput) (*request.Request,
 	return ret0, ret1
 }
 
-// GetIPSetRequest indicates an expected call of GetIPSetRequest.
+// GetIPSetRequest indicates an expected call of GetIPSetRequest
 func (mr *MockWAFAPIMockRecorder) GetIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetIPSetRequest), arg0)
 }
 
-// GetIPSetWithContext mocks base method.
-func (m *MockWAFAPI) GetIPSetWithContext(arg0 context.Context, arg1 *waf.GetIPSetInput, arg2 ...request.Option) (*waf.GetIPSetOutput, error) {
+// GetIPSetWithContext mocks base method
+func (m *MockWAFAPI) GetIPSetWithContext(arg0 aws.Context, arg1 *waf.GetIPSetInput, arg2 ...request.Option) (*waf.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1629,64 +1528,14 @@ func (m *MockWAFAPI) GetIPSetWithContext(arg0 context.Context, arg1 *waf.GetIPSe
 	return ret0, ret1
 }
 
-// GetIPSetWithContext indicates an expected call of GetIPSetWithContext.
+// GetIPSetWithContext indicates an expected call of GetIPSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetIPSetWithContext), varargs...)
 }
 
-// GetLoggingConfiguration mocks base method.
-func (m *MockWAFAPI) GetLoggingConfiguration(arg0 *waf.GetLoggingConfigurationInput) (*waf.GetLoggingConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetLoggingConfiguration", arg0)
-	ret0, _ := ret[0].(*waf.GetLoggingConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetLoggingConfiguration indicates an expected call of GetLoggingConfiguration.
-func (mr *MockWAFAPIMockRecorder) GetLoggingConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfiguration", reflect.TypeOf((*MockWAFAPI)(nil).GetLoggingConfiguration), arg0)
-}
-
-// GetLoggingConfigurationRequest mocks base method.
-func (m *MockWAFAPI) GetLoggingConfigurationRequest(arg0 *waf.GetLoggingConfigurationInput) (*request.Request, *waf.GetLoggingConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetLoggingConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.GetLoggingConfigurationOutput)
-	return ret0, ret1
-}
-
-// GetLoggingConfigurationRequest indicates an expected call of GetLoggingConfigurationRequest.
-func (mr *MockWAFAPIMockRecorder) GetLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetLoggingConfigurationRequest), arg0)
-}
-
-// GetLoggingConfigurationWithContext mocks base method.
-func (m *MockWAFAPI) GetLoggingConfigurationWithContext(arg0 context.Context, arg1 *waf.GetLoggingConfigurationInput, arg2 ...request.Option) (*waf.GetLoggingConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetLoggingConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.GetLoggingConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetLoggingConfigurationWithContext indicates an expected call of GetLoggingConfigurationWithContext.
-func (mr *MockWAFAPIMockRecorder) GetLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetLoggingConfigurationWithContext), varargs...)
-}
-
-// GetPermissionPolicy mocks base method.
+// GetPermissionPolicy mocks base method
 func (m *MockWAFAPI) GetPermissionPolicy(arg0 *waf.GetPermissionPolicyInput) (*waf.GetPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPermissionPolicy", arg0)
@@ -1695,13 +1544,13 @@ func (m *MockWAFAPI) GetPermissionPolicy(arg0 *waf.GetPermissionPolicyInput) (*w
 	return ret0, ret1
 }
 
-// GetPermissionPolicy indicates an expected call of GetPermissionPolicy.
+// GetPermissionPolicy indicates an expected call of GetPermissionPolicy
 func (mr *MockWAFAPIMockRecorder) GetPermissionPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionPolicy", reflect.TypeOf((*MockWAFAPI)(nil).GetPermissionPolicy), arg0)
 }
 
-// GetPermissionPolicyRequest mocks base method.
+// GetPermissionPolicyRequest mocks base method
 func (m *MockWAFAPI) GetPermissionPolicyRequest(arg0 *waf.GetPermissionPolicyInput) (*request.Request, *waf.GetPermissionPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPermissionPolicyRequest", arg0)
@@ -1710,14 +1559,14 @@ func (m *MockWAFAPI) GetPermissionPolicyRequest(arg0 *waf.GetPermissionPolicyInp
 	return ret0, ret1
 }
 
-// GetPermissionPolicyRequest indicates an expected call of GetPermissionPolicyRequest.
+// GetPermissionPolicyRequest indicates an expected call of GetPermissionPolicyRequest
 func (mr *MockWAFAPIMockRecorder) GetPermissionPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionPolicyRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetPermissionPolicyRequest), arg0)
 }
 
-// GetPermissionPolicyWithContext mocks base method.
-func (m *MockWAFAPI) GetPermissionPolicyWithContext(arg0 context.Context, arg1 *waf.GetPermissionPolicyInput, arg2 ...request.Option) (*waf.GetPermissionPolicyOutput, error) {
+// GetPermissionPolicyWithContext mocks base method
+func (m *MockWAFAPI) GetPermissionPolicyWithContext(arg0 aws.Context, arg1 *waf.GetPermissionPolicyInput, arg2 ...request.Option) (*waf.GetPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1729,14 +1578,14 @@ func (m *MockWAFAPI) GetPermissionPolicyWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// GetPermissionPolicyWithContext indicates an expected call of GetPermissionPolicyWithContext.
+// GetPermissionPolicyWithContext indicates an expected call of GetPermissionPolicyWithContext
 func (mr *MockWAFAPIMockRecorder) GetPermissionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionPolicyWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetPermissionPolicyWithContext), varargs...)
 }
 
-// GetRateBasedRule mocks base method.
+// GetRateBasedRule mocks base method
 func (m *MockWAFAPI) GetRateBasedRule(arg0 *waf.GetRateBasedRuleInput) (*waf.GetRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRateBasedRule", arg0)
@@ -1745,13 +1594,13 @@ func (m *MockWAFAPI) GetRateBasedRule(arg0 *waf.GetRateBasedRuleInput) (*waf.Get
 	return ret0, ret1
 }
 
-// GetRateBasedRule indicates an expected call of GetRateBasedRule.
+// GetRateBasedRule indicates an expected call of GetRateBasedRule
 func (mr *MockWAFAPIMockRecorder) GetRateBasedRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRateBasedRule", reflect.TypeOf((*MockWAFAPI)(nil).GetRateBasedRule), arg0)
 }
 
-// GetRateBasedRuleManagedKeys mocks base method.
+// GetRateBasedRuleManagedKeys mocks base method
 func (m *MockWAFAPI) GetRateBasedRuleManagedKeys(arg0 *waf.GetRateBasedRuleManagedKeysInput) (*waf.GetRateBasedRuleManagedKeysOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRateBasedRuleManagedKeys", arg0)
@@ -1760,13 +1609,13 @@ func (m *MockWAFAPI) GetRateBasedRuleManagedKeys(arg0 *waf.GetRateBasedRuleManag
 	return ret0, ret1
 }
 
-// GetRateBasedRuleManagedKeys indicates an expected call of GetRateBasedRuleManagedKeys.
+// GetRateBasedRuleManagedKeys indicates an expected call of GetRateBasedRuleManagedKeys
 func (mr *MockWAFAPIMockRecorder) GetRateBasedRuleManagedKeys(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRateBasedRuleManagedKeys", reflect.TypeOf((*MockWAFAPI)(nil).GetRateBasedRuleManagedKeys), arg0)
 }
 
-// GetRateBasedRuleManagedKeysRequest mocks base method.
+// GetRateBasedRuleManagedKeysRequest mocks base method
 func (m *MockWAFAPI) GetRateBasedRuleManagedKeysRequest(arg0 *waf.GetRateBasedRuleManagedKeysInput) (*request.Request, *waf.GetRateBasedRuleManagedKeysOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRateBasedRuleManagedKeysRequest", arg0)
@@ -1775,14 +1624,14 @@ func (m *MockWAFAPI) GetRateBasedRuleManagedKeysRequest(arg0 *waf.GetRateBasedRu
 	return ret0, ret1
 }
 
-// GetRateBasedRuleManagedKeysRequest indicates an expected call of GetRateBasedRuleManagedKeysRequest.
+// GetRateBasedRuleManagedKeysRequest indicates an expected call of GetRateBasedRuleManagedKeysRequest
 func (mr *MockWAFAPIMockRecorder) GetRateBasedRuleManagedKeysRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRateBasedRuleManagedKeysRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetRateBasedRuleManagedKeysRequest), arg0)
 }
 
-// GetRateBasedRuleManagedKeysWithContext mocks base method.
-func (m *MockWAFAPI) GetRateBasedRuleManagedKeysWithContext(arg0 context.Context, arg1 *waf.GetRateBasedRuleManagedKeysInput, arg2 ...request.Option) (*waf.GetRateBasedRuleManagedKeysOutput, error) {
+// GetRateBasedRuleManagedKeysWithContext mocks base method
+func (m *MockWAFAPI) GetRateBasedRuleManagedKeysWithContext(arg0 aws.Context, arg1 *waf.GetRateBasedRuleManagedKeysInput, arg2 ...request.Option) (*waf.GetRateBasedRuleManagedKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1794,14 +1643,14 @@ func (m *MockWAFAPI) GetRateBasedRuleManagedKeysWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetRateBasedRuleManagedKeysWithContext indicates an expected call of GetRateBasedRuleManagedKeysWithContext.
+// GetRateBasedRuleManagedKeysWithContext indicates an expected call of GetRateBasedRuleManagedKeysWithContext
 func (mr *MockWAFAPIMockRecorder) GetRateBasedRuleManagedKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRateBasedRuleManagedKeysWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetRateBasedRuleManagedKeysWithContext), varargs...)
 }
 
-// GetRateBasedRuleRequest mocks base method.
+// GetRateBasedRuleRequest mocks base method
 func (m *MockWAFAPI) GetRateBasedRuleRequest(arg0 *waf.GetRateBasedRuleInput) (*request.Request, *waf.GetRateBasedRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRateBasedRuleRequest", arg0)
@@ -1810,14 +1659,14 @@ func (m *MockWAFAPI) GetRateBasedRuleRequest(arg0 *waf.GetRateBasedRuleInput) (*
 	return ret0, ret1
 }
 
-// GetRateBasedRuleRequest indicates an expected call of GetRateBasedRuleRequest.
+// GetRateBasedRuleRequest indicates an expected call of GetRateBasedRuleRequest
 func (mr *MockWAFAPIMockRecorder) GetRateBasedRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRateBasedRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetRateBasedRuleRequest), arg0)
 }
 
-// GetRateBasedRuleWithContext mocks base method.
-func (m *MockWAFAPI) GetRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.GetRateBasedRuleInput, arg2 ...request.Option) (*waf.GetRateBasedRuleOutput, error) {
+// GetRateBasedRuleWithContext mocks base method
+func (m *MockWAFAPI) GetRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.GetRateBasedRuleInput, arg2 ...request.Option) (*waf.GetRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1829,14 +1678,14 @@ func (m *MockWAFAPI) GetRateBasedRuleWithContext(arg0 context.Context, arg1 *waf
 	return ret0, ret1
 }
 
-// GetRateBasedRuleWithContext indicates an expected call of GetRateBasedRuleWithContext.
+// GetRateBasedRuleWithContext indicates an expected call of GetRateBasedRuleWithContext
 func (mr *MockWAFAPIMockRecorder) GetRateBasedRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRateBasedRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetRateBasedRuleWithContext), varargs...)
 }
 
-// GetRegexMatchSet mocks base method.
+// GetRegexMatchSet mocks base method
 func (m *MockWAFAPI) GetRegexMatchSet(arg0 *waf.GetRegexMatchSetInput) (*waf.GetRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRegexMatchSet", arg0)
@@ -1845,13 +1694,13 @@ func (m *MockWAFAPI) GetRegexMatchSet(arg0 *waf.GetRegexMatchSetInput) (*waf.Get
 	return ret0, ret1
 }
 
-// GetRegexMatchSet indicates an expected call of GetRegexMatchSet.
+// GetRegexMatchSet indicates an expected call of GetRegexMatchSet
 func (mr *MockWAFAPIMockRecorder) GetRegexMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegexMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).GetRegexMatchSet), arg0)
 }
 
-// GetRegexMatchSetRequest mocks base method.
+// GetRegexMatchSetRequest mocks base method
 func (m *MockWAFAPI) GetRegexMatchSetRequest(arg0 *waf.GetRegexMatchSetInput) (*request.Request, *waf.GetRegexMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRegexMatchSetRequest", arg0)
@@ -1860,14 +1709,14 @@ func (m *MockWAFAPI) GetRegexMatchSetRequest(arg0 *waf.GetRegexMatchSetInput) (*
 	return ret0, ret1
 }
 
-// GetRegexMatchSetRequest indicates an expected call of GetRegexMatchSetRequest.
+// GetRegexMatchSetRequest indicates an expected call of GetRegexMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) GetRegexMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegexMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetRegexMatchSetRequest), arg0)
 }
 
-// GetRegexMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) GetRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.GetRegexMatchSetInput, arg2 ...request.Option) (*waf.GetRegexMatchSetOutput, error) {
+// GetRegexMatchSetWithContext mocks base method
+func (m *MockWAFAPI) GetRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetRegexMatchSetInput, arg2 ...request.Option) (*waf.GetRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1879,14 +1728,14 @@ func (m *MockWAFAPI) GetRegexMatchSetWithContext(arg0 context.Context, arg1 *waf
 	return ret0, ret1
 }
 
-// GetRegexMatchSetWithContext indicates an expected call of GetRegexMatchSetWithContext.
+// GetRegexMatchSetWithContext indicates an expected call of GetRegexMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetRegexMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegexMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetRegexMatchSetWithContext), varargs...)
 }
 
-// GetRegexPatternSet mocks base method.
+// GetRegexPatternSet mocks base method
 func (m *MockWAFAPI) GetRegexPatternSet(arg0 *waf.GetRegexPatternSetInput) (*waf.GetRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRegexPatternSet", arg0)
@@ -1895,13 +1744,13 @@ func (m *MockWAFAPI) GetRegexPatternSet(arg0 *waf.GetRegexPatternSetInput) (*waf
 	return ret0, ret1
 }
 
-// GetRegexPatternSet indicates an expected call of GetRegexPatternSet.
+// GetRegexPatternSet indicates an expected call of GetRegexPatternSet
 func (mr *MockWAFAPIMockRecorder) GetRegexPatternSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegexPatternSet", reflect.TypeOf((*MockWAFAPI)(nil).GetRegexPatternSet), arg0)
 }
 
-// GetRegexPatternSetRequest mocks base method.
+// GetRegexPatternSetRequest mocks base method
 func (m *MockWAFAPI) GetRegexPatternSetRequest(arg0 *waf.GetRegexPatternSetInput) (*request.Request, *waf.GetRegexPatternSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRegexPatternSetRequest", arg0)
@@ -1910,14 +1759,14 @@ func (m *MockWAFAPI) GetRegexPatternSetRequest(arg0 *waf.GetRegexPatternSetInput
 	return ret0, ret1
 }
 
-// GetRegexPatternSetRequest indicates an expected call of GetRegexPatternSetRequest.
+// GetRegexPatternSetRequest indicates an expected call of GetRegexPatternSetRequest
 func (mr *MockWAFAPIMockRecorder) GetRegexPatternSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegexPatternSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetRegexPatternSetRequest), arg0)
 }
 
-// GetRegexPatternSetWithContext mocks base method.
-func (m *MockWAFAPI) GetRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.GetRegexPatternSetInput, arg2 ...request.Option) (*waf.GetRegexPatternSetOutput, error) {
+// GetRegexPatternSetWithContext mocks base method
+func (m *MockWAFAPI) GetRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.GetRegexPatternSetInput, arg2 ...request.Option) (*waf.GetRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1929,14 +1778,14 @@ func (m *MockWAFAPI) GetRegexPatternSetWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// GetRegexPatternSetWithContext indicates an expected call of GetRegexPatternSetWithContext.
+// GetRegexPatternSetWithContext indicates an expected call of GetRegexPatternSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetRegexPatternSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegexPatternSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetRegexPatternSetWithContext), varargs...)
 }
 
-// GetRule mocks base method.
+// GetRule mocks base method
 func (m *MockWAFAPI) GetRule(arg0 *waf.GetRuleInput) (*waf.GetRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRule", arg0)
@@ -1945,13 +1794,13 @@ func (m *MockWAFAPI) GetRule(arg0 *waf.GetRuleInput) (*waf.GetRuleOutput, error)
 	return ret0, ret1
 }
 
-// GetRule indicates an expected call of GetRule.
+// GetRule indicates an expected call of GetRule
 func (mr *MockWAFAPIMockRecorder) GetRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRule", reflect.TypeOf((*MockWAFAPI)(nil).GetRule), arg0)
 }
 
-// GetRuleGroup mocks base method.
+// GetRuleGroup mocks base method
 func (m *MockWAFAPI) GetRuleGroup(arg0 *waf.GetRuleGroupInput) (*waf.GetRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRuleGroup", arg0)
@@ -1960,13 +1809,13 @@ func (m *MockWAFAPI) GetRuleGroup(arg0 *waf.GetRuleGroupInput) (*waf.GetRuleGrou
 	return ret0, ret1
 }
 
-// GetRuleGroup indicates an expected call of GetRuleGroup.
+// GetRuleGroup indicates an expected call of GetRuleGroup
 func (mr *MockWAFAPIMockRecorder) GetRuleGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRuleGroup", reflect.TypeOf((*MockWAFAPI)(nil).GetRuleGroup), arg0)
 }
 
-// GetRuleGroupRequest mocks base method.
+// GetRuleGroupRequest mocks base method
 func (m *MockWAFAPI) GetRuleGroupRequest(arg0 *waf.GetRuleGroupInput) (*request.Request, *waf.GetRuleGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRuleGroupRequest", arg0)
@@ -1975,14 +1824,14 @@ func (m *MockWAFAPI) GetRuleGroupRequest(arg0 *waf.GetRuleGroupInput) (*request.
 	return ret0, ret1
 }
 
-// GetRuleGroupRequest indicates an expected call of GetRuleGroupRequest.
+// GetRuleGroupRequest indicates an expected call of GetRuleGroupRequest
 func (mr *MockWAFAPIMockRecorder) GetRuleGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRuleGroupRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetRuleGroupRequest), arg0)
 }
 
-// GetRuleGroupWithContext mocks base method.
-func (m *MockWAFAPI) GetRuleGroupWithContext(arg0 context.Context, arg1 *waf.GetRuleGroupInput, arg2 ...request.Option) (*waf.GetRuleGroupOutput, error) {
+// GetRuleGroupWithContext mocks base method
+func (m *MockWAFAPI) GetRuleGroupWithContext(arg0 aws.Context, arg1 *waf.GetRuleGroupInput, arg2 ...request.Option) (*waf.GetRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1994,14 +1843,14 @@ func (m *MockWAFAPI) GetRuleGroupWithContext(arg0 context.Context, arg1 *waf.Get
 	return ret0, ret1
 }
 
-// GetRuleGroupWithContext indicates an expected call of GetRuleGroupWithContext.
+// GetRuleGroupWithContext indicates an expected call of GetRuleGroupWithContext
 func (mr *MockWAFAPIMockRecorder) GetRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRuleGroupWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetRuleGroupWithContext), varargs...)
 }
 
-// GetRuleRequest mocks base method.
+// GetRuleRequest mocks base method
 func (m *MockWAFAPI) GetRuleRequest(arg0 *waf.GetRuleInput) (*request.Request, *waf.GetRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRuleRequest", arg0)
@@ -2010,14 +1859,14 @@ func (m *MockWAFAPI) GetRuleRequest(arg0 *waf.GetRuleInput) (*request.Request, *
 	return ret0, ret1
 }
 
-// GetRuleRequest indicates an expected call of GetRuleRequest.
+// GetRuleRequest indicates an expected call of GetRuleRequest
 func (mr *MockWAFAPIMockRecorder) GetRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetRuleRequest), arg0)
 }
 
-// GetRuleWithContext mocks base method.
-func (m *MockWAFAPI) GetRuleWithContext(arg0 context.Context, arg1 *waf.GetRuleInput, arg2 ...request.Option) (*waf.GetRuleOutput, error) {
+// GetRuleWithContext mocks base method
+func (m *MockWAFAPI) GetRuleWithContext(arg0 aws.Context, arg1 *waf.GetRuleInput, arg2 ...request.Option) (*waf.GetRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2029,14 +1878,14 @@ func (m *MockWAFAPI) GetRuleWithContext(arg0 context.Context, arg1 *waf.GetRuleI
 	return ret0, ret1
 }
 
-// GetRuleWithContext indicates an expected call of GetRuleWithContext.
+// GetRuleWithContext indicates an expected call of GetRuleWithContext
 func (mr *MockWAFAPIMockRecorder) GetRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetRuleWithContext), varargs...)
 }
 
-// GetSampledRequests mocks base method.
+// GetSampledRequests mocks base method
 func (m *MockWAFAPI) GetSampledRequests(arg0 *waf.GetSampledRequestsInput) (*waf.GetSampledRequestsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSampledRequests", arg0)
@@ -2045,13 +1894,13 @@ func (m *MockWAFAPI) GetSampledRequests(arg0 *waf.GetSampledRequestsInput) (*waf
 	return ret0, ret1
 }
 
-// GetSampledRequests indicates an expected call of GetSampledRequests.
+// GetSampledRequests indicates an expected call of GetSampledRequests
 func (mr *MockWAFAPIMockRecorder) GetSampledRequests(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSampledRequests", reflect.TypeOf((*MockWAFAPI)(nil).GetSampledRequests), arg0)
 }
 
-// GetSampledRequestsRequest mocks base method.
+// GetSampledRequestsRequest mocks base method
 func (m *MockWAFAPI) GetSampledRequestsRequest(arg0 *waf.GetSampledRequestsInput) (*request.Request, *waf.GetSampledRequestsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSampledRequestsRequest", arg0)
@@ -2060,14 +1909,14 @@ func (m *MockWAFAPI) GetSampledRequestsRequest(arg0 *waf.GetSampledRequestsInput
 	return ret0, ret1
 }
 
-// GetSampledRequestsRequest indicates an expected call of GetSampledRequestsRequest.
+// GetSampledRequestsRequest indicates an expected call of GetSampledRequestsRequest
 func (mr *MockWAFAPIMockRecorder) GetSampledRequestsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSampledRequestsRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetSampledRequestsRequest), arg0)
 }
 
-// GetSampledRequestsWithContext mocks base method.
-func (m *MockWAFAPI) GetSampledRequestsWithContext(arg0 context.Context, arg1 *waf.GetSampledRequestsInput, arg2 ...request.Option) (*waf.GetSampledRequestsOutput, error) {
+// GetSampledRequestsWithContext mocks base method
+func (m *MockWAFAPI) GetSampledRequestsWithContext(arg0 aws.Context, arg1 *waf.GetSampledRequestsInput, arg2 ...request.Option) (*waf.GetSampledRequestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2079,14 +1928,14 @@ func (m *MockWAFAPI) GetSampledRequestsWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// GetSampledRequestsWithContext indicates an expected call of GetSampledRequestsWithContext.
+// GetSampledRequestsWithContext indicates an expected call of GetSampledRequestsWithContext
 func (mr *MockWAFAPIMockRecorder) GetSampledRequestsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSampledRequestsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetSampledRequestsWithContext), varargs...)
 }
 
-// GetSizeConstraintSet mocks base method.
+// GetSizeConstraintSet mocks base method
 func (m *MockWAFAPI) GetSizeConstraintSet(arg0 *waf.GetSizeConstraintSetInput) (*waf.GetSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSizeConstraintSet", arg0)
@@ -2095,13 +1944,13 @@ func (m *MockWAFAPI) GetSizeConstraintSet(arg0 *waf.GetSizeConstraintSetInput) (
 	return ret0, ret1
 }
 
-// GetSizeConstraintSet indicates an expected call of GetSizeConstraintSet.
+// GetSizeConstraintSet indicates an expected call of GetSizeConstraintSet
 func (mr *MockWAFAPIMockRecorder) GetSizeConstraintSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSizeConstraintSet", reflect.TypeOf((*MockWAFAPI)(nil).GetSizeConstraintSet), arg0)
 }
 
-// GetSizeConstraintSetRequest mocks base method.
+// GetSizeConstraintSetRequest mocks base method
 func (m *MockWAFAPI) GetSizeConstraintSetRequest(arg0 *waf.GetSizeConstraintSetInput) (*request.Request, *waf.GetSizeConstraintSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSizeConstraintSetRequest", arg0)
@@ -2110,14 +1959,14 @@ func (m *MockWAFAPI) GetSizeConstraintSetRequest(arg0 *waf.GetSizeConstraintSetI
 	return ret0, ret1
 }
 
-// GetSizeConstraintSetRequest indicates an expected call of GetSizeConstraintSetRequest.
+// GetSizeConstraintSetRequest indicates an expected call of GetSizeConstraintSetRequest
 func (mr *MockWAFAPIMockRecorder) GetSizeConstraintSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSizeConstraintSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetSizeConstraintSetRequest), arg0)
 }
 
-// GetSizeConstraintSetWithContext mocks base method.
-func (m *MockWAFAPI) GetSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.GetSizeConstraintSetInput, arg2 ...request.Option) (*waf.GetSizeConstraintSetOutput, error) {
+// GetSizeConstraintSetWithContext mocks base method
+func (m *MockWAFAPI) GetSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.GetSizeConstraintSetInput, arg2 ...request.Option) (*waf.GetSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2129,14 +1978,14 @@ func (m *MockWAFAPI) GetSizeConstraintSetWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetSizeConstraintSetWithContext indicates an expected call of GetSizeConstraintSetWithContext.
+// GetSizeConstraintSetWithContext indicates an expected call of GetSizeConstraintSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetSizeConstraintSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSizeConstraintSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetSizeConstraintSetWithContext), varargs...)
 }
 
-// GetSqlInjectionMatchSet mocks base method.
+// GetSqlInjectionMatchSet mocks base method
 func (m *MockWAFAPI) GetSqlInjectionMatchSet(arg0 *waf.GetSqlInjectionMatchSetInput) (*waf.GetSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSqlInjectionMatchSet", arg0)
@@ -2145,13 +1994,13 @@ func (m *MockWAFAPI) GetSqlInjectionMatchSet(arg0 *waf.GetSqlInjectionMatchSetIn
 	return ret0, ret1
 }
 
-// GetSqlInjectionMatchSet indicates an expected call of GetSqlInjectionMatchSet.
+// GetSqlInjectionMatchSet indicates an expected call of GetSqlInjectionMatchSet
 func (mr *MockWAFAPIMockRecorder) GetSqlInjectionMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSqlInjectionMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).GetSqlInjectionMatchSet), arg0)
 }
 
-// GetSqlInjectionMatchSetRequest mocks base method.
+// GetSqlInjectionMatchSetRequest mocks base method
 func (m *MockWAFAPI) GetSqlInjectionMatchSetRequest(arg0 *waf.GetSqlInjectionMatchSetInput) (*request.Request, *waf.GetSqlInjectionMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSqlInjectionMatchSetRequest", arg0)
@@ -2160,14 +2009,14 @@ func (m *MockWAFAPI) GetSqlInjectionMatchSetRequest(arg0 *waf.GetSqlInjectionMat
 	return ret0, ret1
 }
 
-// GetSqlInjectionMatchSetRequest indicates an expected call of GetSqlInjectionMatchSetRequest.
+// GetSqlInjectionMatchSetRequest indicates an expected call of GetSqlInjectionMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) GetSqlInjectionMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSqlInjectionMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetSqlInjectionMatchSetRequest), arg0)
 }
 
-// GetSqlInjectionMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) GetSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.GetSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.GetSqlInjectionMatchSetOutput, error) {
+// GetSqlInjectionMatchSetWithContext mocks base method
+func (m *MockWAFAPI) GetSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.GetSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2179,14 +2028,14 @@ func (m *MockWAFAPI) GetSqlInjectionMatchSetWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetSqlInjectionMatchSetWithContext indicates an expected call of GetSqlInjectionMatchSetWithContext.
+// GetSqlInjectionMatchSetWithContext indicates an expected call of GetSqlInjectionMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetSqlInjectionMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSqlInjectionMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetSqlInjectionMatchSetWithContext), varargs...)
 }
 
-// GetWebACL mocks base method.
+// GetWebACL mocks base method
 func (m *MockWAFAPI) GetWebACL(arg0 *waf.GetWebACLInput) (*waf.GetWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetWebACL", arg0)
@@ -2195,13 +2044,13 @@ func (m *MockWAFAPI) GetWebACL(arg0 *waf.GetWebACLInput) (*waf.GetWebACLOutput, 
 	return ret0, ret1
 }
 
-// GetWebACL indicates an expected call of GetWebACL.
+// GetWebACL indicates an expected call of GetWebACL
 func (mr *MockWAFAPIMockRecorder) GetWebACL(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWebACL", reflect.TypeOf((*MockWAFAPI)(nil).GetWebACL), arg0)
 }
 
-// GetWebACLRequest mocks base method.
+// GetWebACLRequest mocks base method
 func (m *MockWAFAPI) GetWebACLRequest(arg0 *waf.GetWebACLInput) (*request.Request, *waf.GetWebACLOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetWebACLRequest", arg0)
@@ -2210,14 +2059,14 @@ func (m *MockWAFAPI) GetWebACLRequest(arg0 *waf.GetWebACLInput) (*request.Reques
 	return ret0, ret1
 }
 
-// GetWebACLRequest indicates an expected call of GetWebACLRequest.
+// GetWebACLRequest indicates an expected call of GetWebACLRequest
 func (mr *MockWAFAPIMockRecorder) GetWebACLRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWebACLRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetWebACLRequest), arg0)
 }
 
-// GetWebACLWithContext mocks base method.
-func (m *MockWAFAPI) GetWebACLWithContext(arg0 context.Context, arg1 *waf.GetWebACLInput, arg2 ...request.Option) (*waf.GetWebACLOutput, error) {
+// GetWebACLWithContext mocks base method
+func (m *MockWAFAPI) GetWebACLWithContext(arg0 aws.Context, arg1 *waf.GetWebACLInput, arg2 ...request.Option) (*waf.GetWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2229,14 +2078,14 @@ func (m *MockWAFAPI) GetWebACLWithContext(arg0 context.Context, arg1 *waf.GetWeb
 	return ret0, ret1
 }
 
-// GetWebACLWithContext indicates an expected call of GetWebACLWithContext.
+// GetWebACLWithContext indicates an expected call of GetWebACLWithContext
 func (mr *MockWAFAPIMockRecorder) GetWebACLWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWebACLWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetWebACLWithContext), varargs...)
 }
 
-// GetXssMatchSet mocks base method.
+// GetXssMatchSet mocks base method
 func (m *MockWAFAPI) GetXssMatchSet(arg0 *waf.GetXssMatchSetInput) (*waf.GetXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetXssMatchSet", arg0)
@@ -2245,13 +2094,13 @@ func (m *MockWAFAPI) GetXssMatchSet(arg0 *waf.GetXssMatchSetInput) (*waf.GetXssM
 	return ret0, ret1
 }
 
-// GetXssMatchSet indicates an expected call of GetXssMatchSet.
+// GetXssMatchSet indicates an expected call of GetXssMatchSet
 func (mr *MockWAFAPIMockRecorder) GetXssMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetXssMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).GetXssMatchSet), arg0)
 }
 
-// GetXssMatchSetRequest mocks base method.
+// GetXssMatchSetRequest mocks base method
 func (m *MockWAFAPI) GetXssMatchSetRequest(arg0 *waf.GetXssMatchSetInput) (*request.Request, *waf.GetXssMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetXssMatchSetRequest", arg0)
@@ -2260,14 +2109,14 @@ func (m *MockWAFAPI) GetXssMatchSetRequest(arg0 *waf.GetXssMatchSetInput) (*requ
 	return ret0, ret1
 }
 
-// GetXssMatchSetRequest indicates an expected call of GetXssMatchSetRequest.
+// GetXssMatchSetRequest indicates an expected call of GetXssMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) GetXssMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetXssMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).GetXssMatchSetRequest), arg0)
 }
 
-// GetXssMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) GetXssMatchSetWithContext(arg0 context.Context, arg1 *waf.GetXssMatchSetInput, arg2 ...request.Option) (*waf.GetXssMatchSetOutput, error) {
+// GetXssMatchSetWithContext mocks base method
+func (m *MockWAFAPI) GetXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetXssMatchSetInput, arg2 ...request.Option) (*waf.GetXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2279,14 +2128,14 @@ func (m *MockWAFAPI) GetXssMatchSetWithContext(arg0 context.Context, arg1 *waf.G
 	return ret0, ret1
 }
 
-// GetXssMatchSetWithContext indicates an expected call of GetXssMatchSetWithContext.
+// GetXssMatchSetWithContext indicates an expected call of GetXssMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) GetXssMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetXssMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).GetXssMatchSetWithContext), varargs...)
 }
 
-// ListActivatedRulesInRuleGroup mocks base method.
+// ListActivatedRulesInRuleGroup mocks base method
 func (m *MockWAFAPI) ListActivatedRulesInRuleGroup(arg0 *waf.ListActivatedRulesInRuleGroupInput) (*waf.ListActivatedRulesInRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivatedRulesInRuleGroup", arg0)
@@ -2295,13 +2144,13 @@ func (m *MockWAFAPI) ListActivatedRulesInRuleGroup(arg0 *waf.ListActivatedRulesI
 	return ret0, ret1
 }
 
-// ListActivatedRulesInRuleGroup indicates an expected call of ListActivatedRulesInRuleGroup.
+// ListActivatedRulesInRuleGroup indicates an expected call of ListActivatedRulesInRuleGroup
 func (mr *MockWAFAPIMockRecorder) ListActivatedRulesInRuleGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivatedRulesInRuleGroup", reflect.TypeOf((*MockWAFAPI)(nil).ListActivatedRulesInRuleGroup), arg0)
 }
 
-// ListActivatedRulesInRuleGroupRequest mocks base method.
+// ListActivatedRulesInRuleGroupRequest mocks base method
 func (m *MockWAFAPI) ListActivatedRulesInRuleGroupRequest(arg0 *waf.ListActivatedRulesInRuleGroupInput) (*request.Request, *waf.ListActivatedRulesInRuleGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivatedRulesInRuleGroupRequest", arg0)
@@ -2310,14 +2159,14 @@ func (m *MockWAFAPI) ListActivatedRulesInRuleGroupRequest(arg0 *waf.ListActivate
 	return ret0, ret1
 }
 
-// ListActivatedRulesInRuleGroupRequest indicates an expected call of ListActivatedRulesInRuleGroupRequest.
+// ListActivatedRulesInRuleGroupRequest indicates an expected call of ListActivatedRulesInRuleGroupRequest
 func (mr *MockWAFAPIMockRecorder) ListActivatedRulesInRuleGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivatedRulesInRuleGroupRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListActivatedRulesInRuleGroupRequest), arg0)
 }
 
-// ListActivatedRulesInRuleGroupWithContext mocks base method.
-func (m *MockWAFAPI) ListActivatedRulesInRuleGroupWithContext(arg0 context.Context, arg1 *waf.ListActivatedRulesInRuleGroupInput, arg2 ...request.Option) (*waf.ListActivatedRulesInRuleGroupOutput, error) {
+// ListActivatedRulesInRuleGroupWithContext mocks base method
+func (m *MockWAFAPI) ListActivatedRulesInRuleGroupWithContext(arg0 aws.Context, arg1 *waf.ListActivatedRulesInRuleGroupInput, arg2 ...request.Option) (*waf.ListActivatedRulesInRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2329,14 +2178,14 @@ func (m *MockWAFAPI) ListActivatedRulesInRuleGroupWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListActivatedRulesInRuleGroupWithContext indicates an expected call of ListActivatedRulesInRuleGroupWithContext.
+// ListActivatedRulesInRuleGroupWithContext indicates an expected call of ListActivatedRulesInRuleGroupWithContext
 func (mr *MockWAFAPIMockRecorder) ListActivatedRulesInRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivatedRulesInRuleGroupWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListActivatedRulesInRuleGroupWithContext), varargs...)
 }
 
-// ListByteMatchSets mocks base method.
+// ListByteMatchSets mocks base method
 func (m *MockWAFAPI) ListByteMatchSets(arg0 *waf.ListByteMatchSetsInput) (*waf.ListByteMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListByteMatchSets", arg0)
@@ -2345,13 +2194,13 @@ func (m *MockWAFAPI) ListByteMatchSets(arg0 *waf.ListByteMatchSetsInput) (*waf.L
 	return ret0, ret1
 }
 
-// ListByteMatchSets indicates an expected call of ListByteMatchSets.
+// ListByteMatchSets indicates an expected call of ListByteMatchSets
 func (mr *MockWAFAPIMockRecorder) ListByteMatchSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByteMatchSets", reflect.TypeOf((*MockWAFAPI)(nil).ListByteMatchSets), arg0)
 }
 
-// ListByteMatchSetsRequest mocks base method.
+// ListByteMatchSetsRequest mocks base method
 func (m *MockWAFAPI) ListByteMatchSetsRequest(arg0 *waf.ListByteMatchSetsInput) (*request.Request, *waf.ListByteMatchSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListByteMatchSetsRequest", arg0)
@@ -2360,14 +2209,14 @@ func (m *MockWAFAPI) ListByteMatchSetsRequest(arg0 *waf.ListByteMatchSetsInput) 
 	return ret0, ret1
 }
 
-// ListByteMatchSetsRequest indicates an expected call of ListByteMatchSetsRequest.
+// ListByteMatchSetsRequest indicates an expected call of ListByteMatchSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListByteMatchSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByteMatchSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListByteMatchSetsRequest), arg0)
 }
 
-// ListByteMatchSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListByteMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListByteMatchSetsInput, arg2 ...request.Option) (*waf.ListByteMatchSetsOutput, error) {
+// ListByteMatchSetsWithContext mocks base method
+func (m *MockWAFAPI) ListByteMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListByteMatchSetsInput, arg2 ...request.Option) (*waf.ListByteMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2379,14 +2228,14 @@ func (m *MockWAFAPI) ListByteMatchSetsWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// ListByteMatchSetsWithContext indicates an expected call of ListByteMatchSetsWithContext.
+// ListByteMatchSetsWithContext indicates an expected call of ListByteMatchSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListByteMatchSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByteMatchSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListByteMatchSetsWithContext), varargs...)
 }
 
-// ListGeoMatchSets mocks base method.
+// ListGeoMatchSets mocks base method
 func (m *MockWAFAPI) ListGeoMatchSets(arg0 *waf.ListGeoMatchSetsInput) (*waf.ListGeoMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGeoMatchSets", arg0)
@@ -2395,13 +2244,13 @@ func (m *MockWAFAPI) ListGeoMatchSets(arg0 *waf.ListGeoMatchSetsInput) (*waf.Lis
 	return ret0, ret1
 }
 
-// ListGeoMatchSets indicates an expected call of ListGeoMatchSets.
+// ListGeoMatchSets indicates an expected call of ListGeoMatchSets
 func (mr *MockWAFAPIMockRecorder) ListGeoMatchSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGeoMatchSets", reflect.TypeOf((*MockWAFAPI)(nil).ListGeoMatchSets), arg0)
 }
 
-// ListGeoMatchSetsRequest mocks base method.
+// ListGeoMatchSetsRequest mocks base method
 func (m *MockWAFAPI) ListGeoMatchSetsRequest(arg0 *waf.ListGeoMatchSetsInput) (*request.Request, *waf.ListGeoMatchSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGeoMatchSetsRequest", arg0)
@@ -2410,14 +2259,14 @@ func (m *MockWAFAPI) ListGeoMatchSetsRequest(arg0 *waf.ListGeoMatchSetsInput) (*
 	return ret0, ret1
 }
 
-// ListGeoMatchSetsRequest indicates an expected call of ListGeoMatchSetsRequest.
+// ListGeoMatchSetsRequest indicates an expected call of ListGeoMatchSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListGeoMatchSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGeoMatchSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListGeoMatchSetsRequest), arg0)
 }
 
-// ListGeoMatchSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListGeoMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListGeoMatchSetsInput, arg2 ...request.Option) (*waf.ListGeoMatchSetsOutput, error) {
+// ListGeoMatchSetsWithContext mocks base method
+func (m *MockWAFAPI) ListGeoMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListGeoMatchSetsInput, arg2 ...request.Option) (*waf.ListGeoMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2429,14 +2278,14 @@ func (m *MockWAFAPI) ListGeoMatchSetsWithContext(arg0 context.Context, arg1 *waf
 	return ret0, ret1
 }
 
-// ListGeoMatchSetsWithContext indicates an expected call of ListGeoMatchSetsWithContext.
+// ListGeoMatchSetsWithContext indicates an expected call of ListGeoMatchSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListGeoMatchSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGeoMatchSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListGeoMatchSetsWithContext), varargs...)
 }
 
-// ListIPSets mocks base method.
+// ListIPSets mocks base method
 func (m *MockWAFAPI) ListIPSets(arg0 *waf.ListIPSetsInput) (*waf.ListIPSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIPSets", arg0)
@@ -2445,13 +2294,13 @@ func (m *MockWAFAPI) ListIPSets(arg0 *waf.ListIPSetsInput) (*waf.ListIPSetsOutpu
 	return ret0, ret1
 }
 
-// ListIPSets indicates an expected call of ListIPSets.
+// ListIPSets indicates an expected call of ListIPSets
 func (mr *MockWAFAPIMockRecorder) ListIPSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSets", reflect.TypeOf((*MockWAFAPI)(nil).ListIPSets), arg0)
 }
 
-// ListIPSetsRequest mocks base method.
+// ListIPSetsRequest mocks base method
 func (m *MockWAFAPI) ListIPSetsRequest(arg0 *waf.ListIPSetsInput) (*request.Request, *waf.ListIPSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIPSetsRequest", arg0)
@@ -2460,14 +2309,14 @@ func (m *MockWAFAPI) ListIPSetsRequest(arg0 *waf.ListIPSetsInput) (*request.Requ
 	return ret0, ret1
 }
 
-// ListIPSetsRequest indicates an expected call of ListIPSetsRequest.
+// ListIPSetsRequest indicates an expected call of ListIPSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListIPSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListIPSetsRequest), arg0)
 }
 
-// ListIPSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListIPSetsWithContext(arg0 context.Context, arg1 *waf.ListIPSetsInput, arg2 ...request.Option) (*waf.ListIPSetsOutput, error) {
+// ListIPSetsWithContext mocks base method
+func (m *MockWAFAPI) ListIPSetsWithContext(arg0 aws.Context, arg1 *waf.ListIPSetsInput, arg2 ...request.Option) (*waf.ListIPSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2479,64 +2328,14 @@ func (m *MockWAFAPI) ListIPSetsWithContext(arg0 context.Context, arg1 *waf.ListI
 	return ret0, ret1
 }
 
-// ListIPSetsWithContext indicates an expected call of ListIPSetsWithContext.
+// ListIPSetsWithContext indicates an expected call of ListIPSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListIPSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListIPSetsWithContext), varargs...)
 }
 
-// ListLoggingConfigurations mocks base method.
-func (m *MockWAFAPI) ListLoggingConfigurations(arg0 *waf.ListLoggingConfigurationsInput) (*waf.ListLoggingConfigurationsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListLoggingConfigurations", arg0)
-	ret0, _ := ret[0].(*waf.ListLoggingConfigurationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListLoggingConfigurations indicates an expected call of ListLoggingConfigurations.
-func (mr *MockWAFAPIMockRecorder) ListLoggingConfigurations(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurations", reflect.TypeOf((*MockWAFAPI)(nil).ListLoggingConfigurations), arg0)
-}
-
-// ListLoggingConfigurationsRequest mocks base method.
-func (m *MockWAFAPI) ListLoggingConfigurationsRequest(arg0 *waf.ListLoggingConfigurationsInput) (*request.Request, *waf.ListLoggingConfigurationsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListLoggingConfigurationsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.ListLoggingConfigurationsOutput)
-	return ret0, ret1
-}
-
-// ListLoggingConfigurationsRequest indicates an expected call of ListLoggingConfigurationsRequest.
-func (mr *MockWAFAPIMockRecorder) ListLoggingConfigurationsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListLoggingConfigurationsRequest), arg0)
-}
-
-// ListLoggingConfigurationsWithContext mocks base method.
-func (m *MockWAFAPI) ListLoggingConfigurationsWithContext(arg0 context.Context, arg1 *waf.ListLoggingConfigurationsInput, arg2 ...request.Option) (*waf.ListLoggingConfigurationsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListLoggingConfigurationsWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.ListLoggingConfigurationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListLoggingConfigurationsWithContext indicates an expected call of ListLoggingConfigurationsWithContext.
-func (mr *MockWAFAPIMockRecorder) ListLoggingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListLoggingConfigurationsWithContext), varargs...)
-}
-
-// ListRateBasedRules mocks base method.
+// ListRateBasedRules mocks base method
 func (m *MockWAFAPI) ListRateBasedRules(arg0 *waf.ListRateBasedRulesInput) (*waf.ListRateBasedRulesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRateBasedRules", arg0)
@@ -2545,13 +2344,13 @@ func (m *MockWAFAPI) ListRateBasedRules(arg0 *waf.ListRateBasedRulesInput) (*waf
 	return ret0, ret1
 }
 
-// ListRateBasedRules indicates an expected call of ListRateBasedRules.
+// ListRateBasedRules indicates an expected call of ListRateBasedRules
 func (mr *MockWAFAPIMockRecorder) ListRateBasedRules(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRateBasedRules", reflect.TypeOf((*MockWAFAPI)(nil).ListRateBasedRules), arg0)
 }
 
-// ListRateBasedRulesRequest mocks base method.
+// ListRateBasedRulesRequest mocks base method
 func (m *MockWAFAPI) ListRateBasedRulesRequest(arg0 *waf.ListRateBasedRulesInput) (*request.Request, *waf.ListRateBasedRulesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRateBasedRulesRequest", arg0)
@@ -2560,14 +2359,14 @@ func (m *MockWAFAPI) ListRateBasedRulesRequest(arg0 *waf.ListRateBasedRulesInput
 	return ret0, ret1
 }
 
-// ListRateBasedRulesRequest indicates an expected call of ListRateBasedRulesRequest.
+// ListRateBasedRulesRequest indicates an expected call of ListRateBasedRulesRequest
 func (mr *MockWAFAPIMockRecorder) ListRateBasedRulesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRateBasedRulesRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListRateBasedRulesRequest), arg0)
 }
 
-// ListRateBasedRulesWithContext mocks base method.
-func (m *MockWAFAPI) ListRateBasedRulesWithContext(arg0 context.Context, arg1 *waf.ListRateBasedRulesInput, arg2 ...request.Option) (*waf.ListRateBasedRulesOutput, error) {
+// ListRateBasedRulesWithContext mocks base method
+func (m *MockWAFAPI) ListRateBasedRulesWithContext(arg0 aws.Context, arg1 *waf.ListRateBasedRulesInput, arg2 ...request.Option) (*waf.ListRateBasedRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2579,14 +2378,14 @@ func (m *MockWAFAPI) ListRateBasedRulesWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// ListRateBasedRulesWithContext indicates an expected call of ListRateBasedRulesWithContext.
+// ListRateBasedRulesWithContext indicates an expected call of ListRateBasedRulesWithContext
 func (mr *MockWAFAPIMockRecorder) ListRateBasedRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRateBasedRulesWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListRateBasedRulesWithContext), varargs...)
 }
 
-// ListRegexMatchSets mocks base method.
+// ListRegexMatchSets mocks base method
 func (m *MockWAFAPI) ListRegexMatchSets(arg0 *waf.ListRegexMatchSetsInput) (*waf.ListRegexMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRegexMatchSets", arg0)
@@ -2595,13 +2394,13 @@ func (m *MockWAFAPI) ListRegexMatchSets(arg0 *waf.ListRegexMatchSetsInput) (*waf
 	return ret0, ret1
 }
 
-// ListRegexMatchSets indicates an expected call of ListRegexMatchSets.
+// ListRegexMatchSets indicates an expected call of ListRegexMatchSets
 func (mr *MockWAFAPIMockRecorder) ListRegexMatchSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegexMatchSets", reflect.TypeOf((*MockWAFAPI)(nil).ListRegexMatchSets), arg0)
 }
 
-// ListRegexMatchSetsRequest mocks base method.
+// ListRegexMatchSetsRequest mocks base method
 func (m *MockWAFAPI) ListRegexMatchSetsRequest(arg0 *waf.ListRegexMatchSetsInput) (*request.Request, *waf.ListRegexMatchSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRegexMatchSetsRequest", arg0)
@@ -2610,14 +2409,14 @@ func (m *MockWAFAPI) ListRegexMatchSetsRequest(arg0 *waf.ListRegexMatchSetsInput
 	return ret0, ret1
 }
 
-// ListRegexMatchSetsRequest indicates an expected call of ListRegexMatchSetsRequest.
+// ListRegexMatchSetsRequest indicates an expected call of ListRegexMatchSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListRegexMatchSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegexMatchSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListRegexMatchSetsRequest), arg0)
 }
 
-// ListRegexMatchSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListRegexMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListRegexMatchSetsInput, arg2 ...request.Option) (*waf.ListRegexMatchSetsOutput, error) {
+// ListRegexMatchSetsWithContext mocks base method
+func (m *MockWAFAPI) ListRegexMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListRegexMatchSetsInput, arg2 ...request.Option) (*waf.ListRegexMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2629,14 +2428,14 @@ func (m *MockWAFAPI) ListRegexMatchSetsWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// ListRegexMatchSetsWithContext indicates an expected call of ListRegexMatchSetsWithContext.
+// ListRegexMatchSetsWithContext indicates an expected call of ListRegexMatchSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListRegexMatchSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegexMatchSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListRegexMatchSetsWithContext), varargs...)
 }
 
-// ListRegexPatternSets mocks base method.
+// ListRegexPatternSets mocks base method
 func (m *MockWAFAPI) ListRegexPatternSets(arg0 *waf.ListRegexPatternSetsInput) (*waf.ListRegexPatternSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRegexPatternSets", arg0)
@@ -2645,13 +2444,13 @@ func (m *MockWAFAPI) ListRegexPatternSets(arg0 *waf.ListRegexPatternSetsInput) (
 	return ret0, ret1
 }
 
-// ListRegexPatternSets indicates an expected call of ListRegexPatternSets.
+// ListRegexPatternSets indicates an expected call of ListRegexPatternSets
 func (mr *MockWAFAPIMockRecorder) ListRegexPatternSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegexPatternSets", reflect.TypeOf((*MockWAFAPI)(nil).ListRegexPatternSets), arg0)
 }
 
-// ListRegexPatternSetsRequest mocks base method.
+// ListRegexPatternSetsRequest mocks base method
 func (m *MockWAFAPI) ListRegexPatternSetsRequest(arg0 *waf.ListRegexPatternSetsInput) (*request.Request, *waf.ListRegexPatternSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRegexPatternSetsRequest", arg0)
@@ -2660,14 +2459,14 @@ func (m *MockWAFAPI) ListRegexPatternSetsRequest(arg0 *waf.ListRegexPatternSetsI
 	return ret0, ret1
 }
 
-// ListRegexPatternSetsRequest indicates an expected call of ListRegexPatternSetsRequest.
+// ListRegexPatternSetsRequest indicates an expected call of ListRegexPatternSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListRegexPatternSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegexPatternSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListRegexPatternSetsRequest), arg0)
 }
 
-// ListRegexPatternSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListRegexPatternSetsWithContext(arg0 context.Context, arg1 *waf.ListRegexPatternSetsInput, arg2 ...request.Option) (*waf.ListRegexPatternSetsOutput, error) {
+// ListRegexPatternSetsWithContext mocks base method
+func (m *MockWAFAPI) ListRegexPatternSetsWithContext(arg0 aws.Context, arg1 *waf.ListRegexPatternSetsInput, arg2 ...request.Option) (*waf.ListRegexPatternSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2679,14 +2478,14 @@ func (m *MockWAFAPI) ListRegexPatternSetsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListRegexPatternSetsWithContext indicates an expected call of ListRegexPatternSetsWithContext.
+// ListRegexPatternSetsWithContext indicates an expected call of ListRegexPatternSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListRegexPatternSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegexPatternSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListRegexPatternSetsWithContext), varargs...)
 }
 
-// ListRuleGroups mocks base method.
+// ListRuleGroups mocks base method
 func (m *MockWAFAPI) ListRuleGroups(arg0 *waf.ListRuleGroupsInput) (*waf.ListRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRuleGroups", arg0)
@@ -2695,13 +2494,13 @@ func (m *MockWAFAPI) ListRuleGroups(arg0 *waf.ListRuleGroupsInput) (*waf.ListRul
 	return ret0, ret1
 }
 
-// ListRuleGroups indicates an expected call of ListRuleGroups.
+// ListRuleGroups indicates an expected call of ListRuleGroups
 func (mr *MockWAFAPIMockRecorder) ListRuleGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleGroups", reflect.TypeOf((*MockWAFAPI)(nil).ListRuleGroups), arg0)
 }
 
-// ListRuleGroupsRequest mocks base method.
+// ListRuleGroupsRequest mocks base method
 func (m *MockWAFAPI) ListRuleGroupsRequest(arg0 *waf.ListRuleGroupsInput) (*request.Request, *waf.ListRuleGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRuleGroupsRequest", arg0)
@@ -2710,14 +2509,14 @@ func (m *MockWAFAPI) ListRuleGroupsRequest(arg0 *waf.ListRuleGroupsInput) (*requ
 	return ret0, ret1
 }
 
-// ListRuleGroupsRequest indicates an expected call of ListRuleGroupsRequest.
+// ListRuleGroupsRequest indicates an expected call of ListRuleGroupsRequest
 func (mr *MockWAFAPIMockRecorder) ListRuleGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleGroupsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListRuleGroupsRequest), arg0)
 }
 
-// ListRuleGroupsWithContext mocks base method.
-func (m *MockWAFAPI) ListRuleGroupsWithContext(arg0 context.Context, arg1 *waf.ListRuleGroupsInput, arg2 ...request.Option) (*waf.ListRuleGroupsOutput, error) {
+// ListRuleGroupsWithContext mocks base method
+func (m *MockWAFAPI) ListRuleGroupsWithContext(arg0 aws.Context, arg1 *waf.ListRuleGroupsInput, arg2 ...request.Option) (*waf.ListRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2729,14 +2528,14 @@ func (m *MockWAFAPI) ListRuleGroupsWithContext(arg0 context.Context, arg1 *waf.L
 	return ret0, ret1
 }
 
-// ListRuleGroupsWithContext indicates an expected call of ListRuleGroupsWithContext.
+// ListRuleGroupsWithContext indicates an expected call of ListRuleGroupsWithContext
 func (mr *MockWAFAPIMockRecorder) ListRuleGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleGroupsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListRuleGroupsWithContext), varargs...)
 }
 
-// ListRules mocks base method.
+// ListRules mocks base method
 func (m *MockWAFAPI) ListRules(arg0 *waf.ListRulesInput) (*waf.ListRulesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRules", arg0)
@@ -2745,13 +2544,13 @@ func (m *MockWAFAPI) ListRules(arg0 *waf.ListRulesInput) (*waf.ListRulesOutput, 
 	return ret0, ret1
 }
 
-// ListRules indicates an expected call of ListRules.
+// ListRules indicates an expected call of ListRules
 func (mr *MockWAFAPIMockRecorder) ListRules(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRules", reflect.TypeOf((*MockWAFAPI)(nil).ListRules), arg0)
 }
 
-// ListRulesRequest mocks base method.
+// ListRulesRequest mocks base method
 func (m *MockWAFAPI) ListRulesRequest(arg0 *waf.ListRulesInput) (*request.Request, *waf.ListRulesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRulesRequest", arg0)
@@ -2760,14 +2559,14 @@ func (m *MockWAFAPI) ListRulesRequest(arg0 *waf.ListRulesInput) (*request.Reques
 	return ret0, ret1
 }
 
-// ListRulesRequest indicates an expected call of ListRulesRequest.
+// ListRulesRequest indicates an expected call of ListRulesRequest
 func (mr *MockWAFAPIMockRecorder) ListRulesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListRulesRequest), arg0)
 }
 
-// ListRulesWithContext mocks base method.
-func (m *MockWAFAPI) ListRulesWithContext(arg0 context.Context, arg1 *waf.ListRulesInput, arg2 ...request.Option) (*waf.ListRulesOutput, error) {
+// ListRulesWithContext mocks base method
+func (m *MockWAFAPI) ListRulesWithContext(arg0 aws.Context, arg1 *waf.ListRulesInput, arg2 ...request.Option) (*waf.ListRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2779,14 +2578,14 @@ func (m *MockWAFAPI) ListRulesWithContext(arg0 context.Context, arg1 *waf.ListRu
 	return ret0, ret1
 }
 
-// ListRulesWithContext indicates an expected call of ListRulesWithContext.
+// ListRulesWithContext indicates an expected call of ListRulesWithContext
 func (mr *MockWAFAPIMockRecorder) ListRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListRulesWithContext), varargs...)
 }
 
-// ListSizeConstraintSets mocks base method.
+// ListSizeConstraintSets mocks base method
 func (m *MockWAFAPI) ListSizeConstraintSets(arg0 *waf.ListSizeConstraintSetsInput) (*waf.ListSizeConstraintSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSizeConstraintSets", arg0)
@@ -2795,13 +2594,13 @@ func (m *MockWAFAPI) ListSizeConstraintSets(arg0 *waf.ListSizeConstraintSetsInpu
 	return ret0, ret1
 }
 
-// ListSizeConstraintSets indicates an expected call of ListSizeConstraintSets.
+// ListSizeConstraintSets indicates an expected call of ListSizeConstraintSets
 func (mr *MockWAFAPIMockRecorder) ListSizeConstraintSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSizeConstraintSets", reflect.TypeOf((*MockWAFAPI)(nil).ListSizeConstraintSets), arg0)
 }
 
-// ListSizeConstraintSetsRequest mocks base method.
+// ListSizeConstraintSetsRequest mocks base method
 func (m *MockWAFAPI) ListSizeConstraintSetsRequest(arg0 *waf.ListSizeConstraintSetsInput) (*request.Request, *waf.ListSizeConstraintSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSizeConstraintSetsRequest", arg0)
@@ -2810,14 +2609,14 @@ func (m *MockWAFAPI) ListSizeConstraintSetsRequest(arg0 *waf.ListSizeConstraintS
 	return ret0, ret1
 }
 
-// ListSizeConstraintSetsRequest indicates an expected call of ListSizeConstraintSetsRequest.
+// ListSizeConstraintSetsRequest indicates an expected call of ListSizeConstraintSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListSizeConstraintSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSizeConstraintSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListSizeConstraintSetsRequest), arg0)
 }
 
-// ListSizeConstraintSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListSizeConstraintSetsWithContext(arg0 context.Context, arg1 *waf.ListSizeConstraintSetsInput, arg2 ...request.Option) (*waf.ListSizeConstraintSetsOutput, error) {
+// ListSizeConstraintSetsWithContext mocks base method
+func (m *MockWAFAPI) ListSizeConstraintSetsWithContext(arg0 aws.Context, arg1 *waf.ListSizeConstraintSetsInput, arg2 ...request.Option) (*waf.ListSizeConstraintSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2829,14 +2628,14 @@ func (m *MockWAFAPI) ListSizeConstraintSetsWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// ListSizeConstraintSetsWithContext indicates an expected call of ListSizeConstraintSetsWithContext.
+// ListSizeConstraintSetsWithContext indicates an expected call of ListSizeConstraintSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListSizeConstraintSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSizeConstraintSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListSizeConstraintSetsWithContext), varargs...)
 }
 
-// ListSqlInjectionMatchSets mocks base method.
+// ListSqlInjectionMatchSets mocks base method
 func (m *MockWAFAPI) ListSqlInjectionMatchSets(arg0 *waf.ListSqlInjectionMatchSetsInput) (*waf.ListSqlInjectionMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSqlInjectionMatchSets", arg0)
@@ -2845,13 +2644,13 @@ func (m *MockWAFAPI) ListSqlInjectionMatchSets(arg0 *waf.ListSqlInjectionMatchSe
 	return ret0, ret1
 }
 
-// ListSqlInjectionMatchSets indicates an expected call of ListSqlInjectionMatchSets.
+// ListSqlInjectionMatchSets indicates an expected call of ListSqlInjectionMatchSets
 func (mr *MockWAFAPIMockRecorder) ListSqlInjectionMatchSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSqlInjectionMatchSets", reflect.TypeOf((*MockWAFAPI)(nil).ListSqlInjectionMatchSets), arg0)
 }
 
-// ListSqlInjectionMatchSetsRequest mocks base method.
+// ListSqlInjectionMatchSetsRequest mocks base method
 func (m *MockWAFAPI) ListSqlInjectionMatchSetsRequest(arg0 *waf.ListSqlInjectionMatchSetsInput) (*request.Request, *waf.ListSqlInjectionMatchSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSqlInjectionMatchSetsRequest", arg0)
@@ -2860,14 +2659,14 @@ func (m *MockWAFAPI) ListSqlInjectionMatchSetsRequest(arg0 *waf.ListSqlInjection
 	return ret0, ret1
 }
 
-// ListSqlInjectionMatchSetsRequest indicates an expected call of ListSqlInjectionMatchSetsRequest.
+// ListSqlInjectionMatchSetsRequest indicates an expected call of ListSqlInjectionMatchSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListSqlInjectionMatchSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSqlInjectionMatchSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListSqlInjectionMatchSetsRequest), arg0)
 }
 
-// ListSqlInjectionMatchSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListSqlInjectionMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListSqlInjectionMatchSetsInput, arg2 ...request.Option) (*waf.ListSqlInjectionMatchSetsOutput, error) {
+// ListSqlInjectionMatchSetsWithContext mocks base method
+func (m *MockWAFAPI) ListSqlInjectionMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListSqlInjectionMatchSetsInput, arg2 ...request.Option) (*waf.ListSqlInjectionMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2879,14 +2678,14 @@ func (m *MockWAFAPI) ListSqlInjectionMatchSetsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListSqlInjectionMatchSetsWithContext indicates an expected call of ListSqlInjectionMatchSetsWithContext.
+// ListSqlInjectionMatchSetsWithContext indicates an expected call of ListSqlInjectionMatchSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListSqlInjectionMatchSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSqlInjectionMatchSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListSqlInjectionMatchSetsWithContext), varargs...)
 }
 
-// ListSubscribedRuleGroups mocks base method.
+// ListSubscribedRuleGroups mocks base method
 func (m *MockWAFAPI) ListSubscribedRuleGroups(arg0 *waf.ListSubscribedRuleGroupsInput) (*waf.ListSubscribedRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSubscribedRuleGroups", arg0)
@@ -2895,13 +2694,13 @@ func (m *MockWAFAPI) ListSubscribedRuleGroups(arg0 *waf.ListSubscribedRuleGroups
 	return ret0, ret1
 }
 
-// ListSubscribedRuleGroups indicates an expected call of ListSubscribedRuleGroups.
+// ListSubscribedRuleGroups indicates an expected call of ListSubscribedRuleGroups
 func (mr *MockWAFAPIMockRecorder) ListSubscribedRuleGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedRuleGroups", reflect.TypeOf((*MockWAFAPI)(nil).ListSubscribedRuleGroups), arg0)
 }
 
-// ListSubscribedRuleGroupsRequest mocks base method.
+// ListSubscribedRuleGroupsRequest mocks base method
 func (m *MockWAFAPI) ListSubscribedRuleGroupsRequest(arg0 *waf.ListSubscribedRuleGroupsInput) (*request.Request, *waf.ListSubscribedRuleGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSubscribedRuleGroupsRequest", arg0)
@@ -2910,14 +2709,14 @@ func (m *MockWAFAPI) ListSubscribedRuleGroupsRequest(arg0 *waf.ListSubscribedRul
 	return ret0, ret1
 }
 
-// ListSubscribedRuleGroupsRequest indicates an expected call of ListSubscribedRuleGroupsRequest.
+// ListSubscribedRuleGroupsRequest indicates an expected call of ListSubscribedRuleGroupsRequest
 func (mr *MockWAFAPIMockRecorder) ListSubscribedRuleGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedRuleGroupsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListSubscribedRuleGroupsRequest), arg0)
 }
 
-// ListSubscribedRuleGroupsWithContext mocks base method.
-func (m *MockWAFAPI) ListSubscribedRuleGroupsWithContext(arg0 context.Context, arg1 *waf.ListSubscribedRuleGroupsInput, arg2 ...request.Option) (*waf.ListSubscribedRuleGroupsOutput, error) {
+// ListSubscribedRuleGroupsWithContext mocks base method
+func (m *MockWAFAPI) ListSubscribedRuleGroupsWithContext(arg0 aws.Context, arg1 *waf.ListSubscribedRuleGroupsInput, arg2 ...request.Option) (*waf.ListSubscribedRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2929,64 +2728,14 @@ func (m *MockWAFAPI) ListSubscribedRuleGroupsWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// ListSubscribedRuleGroupsWithContext indicates an expected call of ListSubscribedRuleGroupsWithContext.
+// ListSubscribedRuleGroupsWithContext indicates an expected call of ListSubscribedRuleGroupsWithContext
 func (mr *MockWAFAPIMockRecorder) ListSubscribedRuleGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedRuleGroupsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListSubscribedRuleGroupsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockWAFAPI) ListTagsForResource(arg0 *waf.ListTagsForResourceInput) (*waf.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*waf.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockWAFAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockWAFAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockWAFAPI) ListTagsForResourceRequest(arg0 *waf.ListTagsForResourceInput) (*request.Request, *waf.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockWAFAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockWAFAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *waf.ListTagsForResourceInput, arg2 ...request.Option) (*waf.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockWAFAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// ListWebACLs mocks base method.
+// ListWebACLs mocks base method
 func (m *MockWAFAPI) ListWebACLs(arg0 *waf.ListWebACLsInput) (*waf.ListWebACLsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListWebACLs", arg0)
@@ -2995,13 +2744,13 @@ func (m *MockWAFAPI) ListWebACLs(arg0 *waf.ListWebACLsInput) (*waf.ListWebACLsOu
 	return ret0, ret1
 }
 
-// ListWebACLs indicates an expected call of ListWebACLs.
+// ListWebACLs indicates an expected call of ListWebACLs
 func (mr *MockWAFAPIMockRecorder) ListWebACLs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWebACLs", reflect.TypeOf((*MockWAFAPI)(nil).ListWebACLs), arg0)
 }
 
-// ListWebACLsRequest mocks base method.
+// ListWebACLsRequest mocks base method
 func (m *MockWAFAPI) ListWebACLsRequest(arg0 *waf.ListWebACLsInput) (*request.Request, *waf.ListWebACLsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListWebACLsRequest", arg0)
@@ -3010,14 +2759,14 @@ func (m *MockWAFAPI) ListWebACLsRequest(arg0 *waf.ListWebACLsInput) (*request.Re
 	return ret0, ret1
 }
 
-// ListWebACLsRequest indicates an expected call of ListWebACLsRequest.
+// ListWebACLsRequest indicates an expected call of ListWebACLsRequest
 func (mr *MockWAFAPIMockRecorder) ListWebACLsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWebACLsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListWebACLsRequest), arg0)
 }
 
-// ListWebACLsWithContext mocks base method.
-func (m *MockWAFAPI) ListWebACLsWithContext(arg0 context.Context, arg1 *waf.ListWebACLsInput, arg2 ...request.Option) (*waf.ListWebACLsOutput, error) {
+// ListWebACLsWithContext mocks base method
+func (m *MockWAFAPI) ListWebACLsWithContext(arg0 aws.Context, arg1 *waf.ListWebACLsInput, arg2 ...request.Option) (*waf.ListWebACLsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3029,14 +2778,14 @@ func (m *MockWAFAPI) ListWebACLsWithContext(arg0 context.Context, arg1 *waf.List
 	return ret0, ret1
 }
 
-// ListWebACLsWithContext indicates an expected call of ListWebACLsWithContext.
+// ListWebACLsWithContext indicates an expected call of ListWebACLsWithContext
 func (mr *MockWAFAPIMockRecorder) ListWebACLsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWebACLsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListWebACLsWithContext), varargs...)
 }
 
-// ListXssMatchSets mocks base method.
+// ListXssMatchSets mocks base method
 func (m *MockWAFAPI) ListXssMatchSets(arg0 *waf.ListXssMatchSetsInput) (*waf.ListXssMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListXssMatchSets", arg0)
@@ -3045,13 +2794,13 @@ func (m *MockWAFAPI) ListXssMatchSets(arg0 *waf.ListXssMatchSetsInput) (*waf.Lis
 	return ret0, ret1
 }
 
-// ListXssMatchSets indicates an expected call of ListXssMatchSets.
+// ListXssMatchSets indicates an expected call of ListXssMatchSets
 func (mr *MockWAFAPIMockRecorder) ListXssMatchSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListXssMatchSets", reflect.TypeOf((*MockWAFAPI)(nil).ListXssMatchSets), arg0)
 }
 
-// ListXssMatchSetsRequest mocks base method.
+// ListXssMatchSetsRequest mocks base method
 func (m *MockWAFAPI) ListXssMatchSetsRequest(arg0 *waf.ListXssMatchSetsInput) (*request.Request, *waf.ListXssMatchSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListXssMatchSetsRequest", arg0)
@@ -3060,14 +2809,14 @@ func (m *MockWAFAPI) ListXssMatchSetsRequest(arg0 *waf.ListXssMatchSetsInput) (*
 	return ret0, ret1
 }
 
-// ListXssMatchSetsRequest indicates an expected call of ListXssMatchSetsRequest.
+// ListXssMatchSetsRequest indicates an expected call of ListXssMatchSetsRequest
 func (mr *MockWAFAPIMockRecorder) ListXssMatchSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListXssMatchSetsRequest", reflect.TypeOf((*MockWAFAPI)(nil).ListXssMatchSetsRequest), arg0)
 }
 
-// ListXssMatchSetsWithContext mocks base method.
-func (m *MockWAFAPI) ListXssMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListXssMatchSetsInput, arg2 ...request.Option) (*waf.ListXssMatchSetsOutput, error) {
+// ListXssMatchSetsWithContext mocks base method
+func (m *MockWAFAPI) ListXssMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListXssMatchSetsInput, arg2 ...request.Option) (*waf.ListXssMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3079,64 +2828,14 @@ func (m *MockWAFAPI) ListXssMatchSetsWithContext(arg0 context.Context, arg1 *waf
 	return ret0, ret1
 }
 
-// ListXssMatchSetsWithContext indicates an expected call of ListXssMatchSetsWithContext.
+// ListXssMatchSetsWithContext indicates an expected call of ListXssMatchSetsWithContext
 func (mr *MockWAFAPIMockRecorder) ListXssMatchSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListXssMatchSetsWithContext", reflect.TypeOf((*MockWAFAPI)(nil).ListXssMatchSetsWithContext), varargs...)
 }
 
-// PutLoggingConfiguration mocks base method.
-func (m *MockWAFAPI) PutLoggingConfiguration(arg0 *waf.PutLoggingConfigurationInput) (*waf.PutLoggingConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutLoggingConfiguration", arg0)
-	ret0, _ := ret[0].(*waf.PutLoggingConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutLoggingConfiguration indicates an expected call of PutLoggingConfiguration.
-func (mr *MockWAFAPIMockRecorder) PutLoggingConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfiguration", reflect.TypeOf((*MockWAFAPI)(nil).PutLoggingConfiguration), arg0)
-}
-
-// PutLoggingConfigurationRequest mocks base method.
-func (m *MockWAFAPI) PutLoggingConfigurationRequest(arg0 *waf.PutLoggingConfigurationInput) (*request.Request, *waf.PutLoggingConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutLoggingConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.PutLoggingConfigurationOutput)
-	return ret0, ret1
-}
-
-// PutLoggingConfigurationRequest indicates an expected call of PutLoggingConfigurationRequest.
-func (mr *MockWAFAPIMockRecorder) PutLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfigurationRequest", reflect.TypeOf((*MockWAFAPI)(nil).PutLoggingConfigurationRequest), arg0)
-}
-
-// PutLoggingConfigurationWithContext mocks base method.
-func (m *MockWAFAPI) PutLoggingConfigurationWithContext(arg0 context.Context, arg1 *waf.PutLoggingConfigurationInput, arg2 ...request.Option) (*waf.PutLoggingConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutLoggingConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.PutLoggingConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutLoggingConfigurationWithContext indicates an expected call of PutLoggingConfigurationWithContext.
-func (mr *MockWAFAPIMockRecorder) PutLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFAPI)(nil).PutLoggingConfigurationWithContext), varargs...)
-}
-
-// PutPermissionPolicy mocks base method.
+// PutPermissionPolicy mocks base method
 func (m *MockWAFAPI) PutPermissionPolicy(arg0 *waf.PutPermissionPolicyInput) (*waf.PutPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutPermissionPolicy", arg0)
@@ -3145,13 +2844,13 @@ func (m *MockWAFAPI) PutPermissionPolicy(arg0 *waf.PutPermissionPolicyInput) (*w
 	return ret0, ret1
 }
 
-// PutPermissionPolicy indicates an expected call of PutPermissionPolicy.
+// PutPermissionPolicy indicates an expected call of PutPermissionPolicy
 func (mr *MockWAFAPIMockRecorder) PutPermissionPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionPolicy", reflect.TypeOf((*MockWAFAPI)(nil).PutPermissionPolicy), arg0)
 }
 
-// PutPermissionPolicyRequest mocks base method.
+// PutPermissionPolicyRequest mocks base method
 func (m *MockWAFAPI) PutPermissionPolicyRequest(arg0 *waf.PutPermissionPolicyInput) (*request.Request, *waf.PutPermissionPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutPermissionPolicyRequest", arg0)
@@ -3160,14 +2859,14 @@ func (m *MockWAFAPI) PutPermissionPolicyRequest(arg0 *waf.PutPermissionPolicyInp
 	return ret0, ret1
 }
 
-// PutPermissionPolicyRequest indicates an expected call of PutPermissionPolicyRequest.
+// PutPermissionPolicyRequest indicates an expected call of PutPermissionPolicyRequest
 func (mr *MockWAFAPIMockRecorder) PutPermissionPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionPolicyRequest", reflect.TypeOf((*MockWAFAPI)(nil).PutPermissionPolicyRequest), arg0)
 }
 
-// PutPermissionPolicyWithContext mocks base method.
-func (m *MockWAFAPI) PutPermissionPolicyWithContext(arg0 context.Context, arg1 *waf.PutPermissionPolicyInput, arg2 ...request.Option) (*waf.PutPermissionPolicyOutput, error) {
+// PutPermissionPolicyWithContext mocks base method
+func (m *MockWAFAPI) PutPermissionPolicyWithContext(arg0 aws.Context, arg1 *waf.PutPermissionPolicyInput, arg2 ...request.Option) (*waf.PutPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3179,114 +2878,14 @@ func (m *MockWAFAPI) PutPermissionPolicyWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// PutPermissionPolicyWithContext indicates an expected call of PutPermissionPolicyWithContext.
+// PutPermissionPolicyWithContext indicates an expected call of PutPermissionPolicyWithContext
 func (mr *MockWAFAPIMockRecorder) PutPermissionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionPolicyWithContext", reflect.TypeOf((*MockWAFAPI)(nil).PutPermissionPolicyWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockWAFAPI) TagResource(arg0 *waf.TagResourceInput) (*waf.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*waf.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockWAFAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockWAFAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockWAFAPI) TagResourceRequest(arg0 *waf.TagResourceInput) (*request.Request, *waf.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockWAFAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockWAFAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockWAFAPI) TagResourceWithContext(arg0 context.Context, arg1 *waf.TagResourceInput, arg2 ...request.Option) (*waf.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockWAFAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockWAFAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockWAFAPI) UntagResource(arg0 *waf.UntagResourceInput) (*waf.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*waf.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockWAFAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockWAFAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockWAFAPI) UntagResourceRequest(arg0 *waf.UntagResourceInput) (*request.Request, *waf.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*waf.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockWAFAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockWAFAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockWAFAPI) UntagResourceWithContext(arg0 context.Context, arg1 *waf.UntagResourceInput, arg2 ...request.Option) (*waf.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*waf.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockWAFAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateByteMatchSet mocks base method.
+// UpdateByteMatchSet mocks base method
 func (m *MockWAFAPI) UpdateByteMatchSet(arg0 *waf.UpdateByteMatchSetInput) (*waf.UpdateByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateByteMatchSet", arg0)
@@ -3295,13 +2894,13 @@ func (m *MockWAFAPI) UpdateByteMatchSet(arg0 *waf.UpdateByteMatchSetInput) (*waf
 	return ret0, ret1
 }
 
-// UpdateByteMatchSet indicates an expected call of UpdateByteMatchSet.
+// UpdateByteMatchSet indicates an expected call of UpdateByteMatchSet
 func (mr *MockWAFAPIMockRecorder) UpdateByteMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateByteMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateByteMatchSet), arg0)
 }
 
-// UpdateByteMatchSetRequest mocks base method.
+// UpdateByteMatchSetRequest mocks base method
 func (m *MockWAFAPI) UpdateByteMatchSetRequest(arg0 *waf.UpdateByteMatchSetInput) (*request.Request, *waf.UpdateByteMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateByteMatchSetRequest", arg0)
@@ -3310,14 +2909,14 @@ func (m *MockWAFAPI) UpdateByteMatchSetRequest(arg0 *waf.UpdateByteMatchSetInput
 	return ret0, ret1
 }
 
-// UpdateByteMatchSetRequest indicates an expected call of UpdateByteMatchSetRequest.
+// UpdateByteMatchSetRequest indicates an expected call of UpdateByteMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateByteMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateByteMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateByteMatchSetRequest), arg0)
 }
 
-// UpdateByteMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateByteMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateByteMatchSetInput, arg2 ...request.Option) (*waf.UpdateByteMatchSetOutput, error) {
+// UpdateByteMatchSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateByteMatchSetInput, arg2 ...request.Option) (*waf.UpdateByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3329,14 +2928,14 @@ func (m *MockWAFAPI) UpdateByteMatchSetWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// UpdateByteMatchSetWithContext indicates an expected call of UpdateByteMatchSetWithContext.
+// UpdateByteMatchSetWithContext indicates an expected call of UpdateByteMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateByteMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateByteMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateByteMatchSetWithContext), varargs...)
 }
 
-// UpdateGeoMatchSet mocks base method.
+// UpdateGeoMatchSet mocks base method
 func (m *MockWAFAPI) UpdateGeoMatchSet(arg0 *waf.UpdateGeoMatchSetInput) (*waf.UpdateGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGeoMatchSet", arg0)
@@ -3345,13 +2944,13 @@ func (m *MockWAFAPI) UpdateGeoMatchSet(arg0 *waf.UpdateGeoMatchSetInput) (*waf.U
 	return ret0, ret1
 }
 
-// UpdateGeoMatchSet indicates an expected call of UpdateGeoMatchSet.
+// UpdateGeoMatchSet indicates an expected call of UpdateGeoMatchSet
 func (mr *MockWAFAPIMockRecorder) UpdateGeoMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGeoMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateGeoMatchSet), arg0)
 }
 
-// UpdateGeoMatchSetRequest mocks base method.
+// UpdateGeoMatchSetRequest mocks base method
 func (m *MockWAFAPI) UpdateGeoMatchSetRequest(arg0 *waf.UpdateGeoMatchSetInput) (*request.Request, *waf.UpdateGeoMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGeoMatchSetRequest", arg0)
@@ -3360,14 +2959,14 @@ func (m *MockWAFAPI) UpdateGeoMatchSetRequest(arg0 *waf.UpdateGeoMatchSetInput) 
 	return ret0, ret1
 }
 
-// UpdateGeoMatchSetRequest indicates an expected call of UpdateGeoMatchSetRequest.
+// UpdateGeoMatchSetRequest indicates an expected call of UpdateGeoMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateGeoMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGeoMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateGeoMatchSetRequest), arg0)
 }
 
-// UpdateGeoMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateGeoMatchSetInput, arg2 ...request.Option) (*waf.UpdateGeoMatchSetOutput, error) {
+// UpdateGeoMatchSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateGeoMatchSetInput, arg2 ...request.Option) (*waf.UpdateGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3379,14 +2978,14 @@ func (m *MockWAFAPI) UpdateGeoMatchSetWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// UpdateGeoMatchSetWithContext indicates an expected call of UpdateGeoMatchSetWithContext.
+// UpdateGeoMatchSetWithContext indicates an expected call of UpdateGeoMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateGeoMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGeoMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateGeoMatchSetWithContext), varargs...)
 }
 
-// UpdateIPSet mocks base method.
+// UpdateIPSet mocks base method
 func (m *MockWAFAPI) UpdateIPSet(arg0 *waf.UpdateIPSetInput) (*waf.UpdateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIPSet", arg0)
@@ -3395,13 +2994,13 @@ func (m *MockWAFAPI) UpdateIPSet(arg0 *waf.UpdateIPSetInput) (*waf.UpdateIPSetOu
 	return ret0, ret1
 }
 
-// UpdateIPSet indicates an expected call of UpdateIPSet.
+// UpdateIPSet indicates an expected call of UpdateIPSet
 func (mr *MockWAFAPIMockRecorder) UpdateIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateIPSet), arg0)
 }
 
-// UpdateIPSetRequest mocks base method.
+// UpdateIPSetRequest mocks base method
 func (m *MockWAFAPI) UpdateIPSetRequest(arg0 *waf.UpdateIPSetInput) (*request.Request, *waf.UpdateIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIPSetRequest", arg0)
@@ -3410,14 +3009,14 @@ func (m *MockWAFAPI) UpdateIPSetRequest(arg0 *waf.UpdateIPSetInput) (*request.Re
 	return ret0, ret1
 }
 
-// UpdateIPSetRequest indicates an expected call of UpdateIPSetRequest.
+// UpdateIPSetRequest indicates an expected call of UpdateIPSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateIPSetRequest), arg0)
 }
 
-// UpdateIPSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateIPSetWithContext(arg0 context.Context, arg1 *waf.UpdateIPSetInput, arg2 ...request.Option) (*waf.UpdateIPSetOutput, error) {
+// UpdateIPSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateIPSetWithContext(arg0 aws.Context, arg1 *waf.UpdateIPSetInput, arg2 ...request.Option) (*waf.UpdateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3429,14 +3028,14 @@ func (m *MockWAFAPI) UpdateIPSetWithContext(arg0 context.Context, arg1 *waf.Upda
 	return ret0, ret1
 }
 
-// UpdateIPSetWithContext indicates an expected call of UpdateIPSetWithContext.
+// UpdateIPSetWithContext indicates an expected call of UpdateIPSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateIPSetWithContext), varargs...)
 }
 
-// UpdateRateBasedRule mocks base method.
+// UpdateRateBasedRule mocks base method
 func (m *MockWAFAPI) UpdateRateBasedRule(arg0 *waf.UpdateRateBasedRuleInput) (*waf.UpdateRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRateBasedRule", arg0)
@@ -3445,13 +3044,13 @@ func (m *MockWAFAPI) UpdateRateBasedRule(arg0 *waf.UpdateRateBasedRuleInput) (*w
 	return ret0, ret1
 }
 
-// UpdateRateBasedRule indicates an expected call of UpdateRateBasedRule.
+// UpdateRateBasedRule indicates an expected call of UpdateRateBasedRule
 func (mr *MockWAFAPIMockRecorder) UpdateRateBasedRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRateBasedRule", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRateBasedRule), arg0)
 }
 
-// UpdateRateBasedRuleRequest mocks base method.
+// UpdateRateBasedRuleRequest mocks base method
 func (m *MockWAFAPI) UpdateRateBasedRuleRequest(arg0 *waf.UpdateRateBasedRuleInput) (*request.Request, *waf.UpdateRateBasedRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRateBasedRuleRequest", arg0)
@@ -3460,14 +3059,14 @@ func (m *MockWAFAPI) UpdateRateBasedRuleRequest(arg0 *waf.UpdateRateBasedRuleInp
 	return ret0, ret1
 }
 
-// UpdateRateBasedRuleRequest indicates an expected call of UpdateRateBasedRuleRequest.
+// UpdateRateBasedRuleRequest indicates an expected call of UpdateRateBasedRuleRequest
 func (mr *MockWAFAPIMockRecorder) UpdateRateBasedRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRateBasedRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRateBasedRuleRequest), arg0)
 }
 
-// UpdateRateBasedRuleWithContext mocks base method.
-func (m *MockWAFAPI) UpdateRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.UpdateRateBasedRuleInput, arg2 ...request.Option) (*waf.UpdateRateBasedRuleOutput, error) {
+// UpdateRateBasedRuleWithContext mocks base method
+func (m *MockWAFAPI) UpdateRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.UpdateRateBasedRuleInput, arg2 ...request.Option) (*waf.UpdateRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3479,14 +3078,14 @@ func (m *MockWAFAPI) UpdateRateBasedRuleWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// UpdateRateBasedRuleWithContext indicates an expected call of UpdateRateBasedRuleWithContext.
+// UpdateRateBasedRuleWithContext indicates an expected call of UpdateRateBasedRuleWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateRateBasedRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRateBasedRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRateBasedRuleWithContext), varargs...)
 }
 
-// UpdateRegexMatchSet mocks base method.
+// UpdateRegexMatchSet mocks base method
 func (m *MockWAFAPI) UpdateRegexMatchSet(arg0 *waf.UpdateRegexMatchSetInput) (*waf.UpdateRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRegexMatchSet", arg0)
@@ -3495,13 +3094,13 @@ func (m *MockWAFAPI) UpdateRegexMatchSet(arg0 *waf.UpdateRegexMatchSetInput) (*w
 	return ret0, ret1
 }
 
-// UpdateRegexMatchSet indicates an expected call of UpdateRegexMatchSet.
+// UpdateRegexMatchSet indicates an expected call of UpdateRegexMatchSet
 func (mr *MockWAFAPIMockRecorder) UpdateRegexMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegexMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRegexMatchSet), arg0)
 }
 
-// UpdateRegexMatchSetRequest mocks base method.
+// UpdateRegexMatchSetRequest mocks base method
 func (m *MockWAFAPI) UpdateRegexMatchSetRequest(arg0 *waf.UpdateRegexMatchSetInput) (*request.Request, *waf.UpdateRegexMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRegexMatchSetRequest", arg0)
@@ -3510,14 +3109,14 @@ func (m *MockWAFAPI) UpdateRegexMatchSetRequest(arg0 *waf.UpdateRegexMatchSetInp
 	return ret0, ret1
 }
 
-// UpdateRegexMatchSetRequest indicates an expected call of UpdateRegexMatchSetRequest.
+// UpdateRegexMatchSetRequest indicates an expected call of UpdateRegexMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateRegexMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegexMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRegexMatchSetRequest), arg0)
 }
 
-// UpdateRegexMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateRegexMatchSetInput, arg2 ...request.Option) (*waf.UpdateRegexMatchSetOutput, error) {
+// UpdateRegexMatchSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateRegexMatchSetInput, arg2 ...request.Option) (*waf.UpdateRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3529,14 +3128,14 @@ func (m *MockWAFAPI) UpdateRegexMatchSetWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// UpdateRegexMatchSetWithContext indicates an expected call of UpdateRegexMatchSetWithContext.
+// UpdateRegexMatchSetWithContext indicates an expected call of UpdateRegexMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateRegexMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegexMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRegexMatchSetWithContext), varargs...)
 }
 
-// UpdateRegexPatternSet mocks base method.
+// UpdateRegexPatternSet mocks base method
 func (m *MockWAFAPI) UpdateRegexPatternSet(arg0 *waf.UpdateRegexPatternSetInput) (*waf.UpdateRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRegexPatternSet", arg0)
@@ -3545,13 +3144,13 @@ func (m *MockWAFAPI) UpdateRegexPatternSet(arg0 *waf.UpdateRegexPatternSetInput)
 	return ret0, ret1
 }
 
-// UpdateRegexPatternSet indicates an expected call of UpdateRegexPatternSet.
+// UpdateRegexPatternSet indicates an expected call of UpdateRegexPatternSet
 func (mr *MockWAFAPIMockRecorder) UpdateRegexPatternSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegexPatternSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRegexPatternSet), arg0)
 }
 
-// UpdateRegexPatternSetRequest mocks base method.
+// UpdateRegexPatternSetRequest mocks base method
 func (m *MockWAFAPI) UpdateRegexPatternSetRequest(arg0 *waf.UpdateRegexPatternSetInput) (*request.Request, *waf.UpdateRegexPatternSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRegexPatternSetRequest", arg0)
@@ -3560,14 +3159,14 @@ func (m *MockWAFAPI) UpdateRegexPatternSetRequest(arg0 *waf.UpdateRegexPatternSe
 	return ret0, ret1
 }
 
-// UpdateRegexPatternSetRequest indicates an expected call of UpdateRegexPatternSetRequest.
+// UpdateRegexPatternSetRequest indicates an expected call of UpdateRegexPatternSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateRegexPatternSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegexPatternSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRegexPatternSetRequest), arg0)
 }
 
-// UpdateRegexPatternSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.UpdateRegexPatternSetInput, arg2 ...request.Option) (*waf.UpdateRegexPatternSetOutput, error) {
+// UpdateRegexPatternSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.UpdateRegexPatternSetInput, arg2 ...request.Option) (*waf.UpdateRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3579,14 +3178,14 @@ func (m *MockWAFAPI) UpdateRegexPatternSetWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// UpdateRegexPatternSetWithContext indicates an expected call of UpdateRegexPatternSetWithContext.
+// UpdateRegexPatternSetWithContext indicates an expected call of UpdateRegexPatternSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateRegexPatternSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegexPatternSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRegexPatternSetWithContext), varargs...)
 }
 
-// UpdateRule mocks base method.
+// UpdateRule mocks base method
 func (m *MockWAFAPI) UpdateRule(arg0 *waf.UpdateRuleInput) (*waf.UpdateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRule", arg0)
@@ -3595,13 +3194,13 @@ func (m *MockWAFAPI) UpdateRule(arg0 *waf.UpdateRuleInput) (*waf.UpdateRuleOutpu
 	return ret0, ret1
 }
 
-// UpdateRule indicates an expected call of UpdateRule.
+// UpdateRule indicates an expected call of UpdateRule
 func (mr *MockWAFAPIMockRecorder) UpdateRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRule", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRule), arg0)
 }
 
-// UpdateRuleGroup mocks base method.
+// UpdateRuleGroup mocks base method
 func (m *MockWAFAPI) UpdateRuleGroup(arg0 *waf.UpdateRuleGroupInput) (*waf.UpdateRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRuleGroup", arg0)
@@ -3610,13 +3209,13 @@ func (m *MockWAFAPI) UpdateRuleGroup(arg0 *waf.UpdateRuleGroupInput) (*waf.Updat
 	return ret0, ret1
 }
 
-// UpdateRuleGroup indicates an expected call of UpdateRuleGroup.
+// UpdateRuleGroup indicates an expected call of UpdateRuleGroup
 func (mr *MockWAFAPIMockRecorder) UpdateRuleGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleGroup", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRuleGroup), arg0)
 }
 
-// UpdateRuleGroupRequest mocks base method.
+// UpdateRuleGroupRequest mocks base method
 func (m *MockWAFAPI) UpdateRuleGroupRequest(arg0 *waf.UpdateRuleGroupInput) (*request.Request, *waf.UpdateRuleGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRuleGroupRequest", arg0)
@@ -3625,14 +3224,14 @@ func (m *MockWAFAPI) UpdateRuleGroupRequest(arg0 *waf.UpdateRuleGroupInput) (*re
 	return ret0, ret1
 }
 
-// UpdateRuleGroupRequest indicates an expected call of UpdateRuleGroupRequest.
+// UpdateRuleGroupRequest indicates an expected call of UpdateRuleGroupRequest
 func (mr *MockWAFAPIMockRecorder) UpdateRuleGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleGroupRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRuleGroupRequest), arg0)
 }
 
-// UpdateRuleGroupWithContext mocks base method.
-func (m *MockWAFAPI) UpdateRuleGroupWithContext(arg0 context.Context, arg1 *waf.UpdateRuleGroupInput, arg2 ...request.Option) (*waf.UpdateRuleGroupOutput, error) {
+// UpdateRuleGroupWithContext mocks base method
+func (m *MockWAFAPI) UpdateRuleGroupWithContext(arg0 aws.Context, arg1 *waf.UpdateRuleGroupInput, arg2 ...request.Option) (*waf.UpdateRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3644,14 +3243,14 @@ func (m *MockWAFAPI) UpdateRuleGroupWithContext(arg0 context.Context, arg1 *waf.
 	return ret0, ret1
 }
 
-// UpdateRuleGroupWithContext indicates an expected call of UpdateRuleGroupWithContext.
+// UpdateRuleGroupWithContext indicates an expected call of UpdateRuleGroupWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleGroupWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRuleGroupWithContext), varargs...)
 }
 
-// UpdateRuleRequest mocks base method.
+// UpdateRuleRequest mocks base method
 func (m *MockWAFAPI) UpdateRuleRequest(arg0 *waf.UpdateRuleInput) (*request.Request, *waf.UpdateRuleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRuleRequest", arg0)
@@ -3660,14 +3259,14 @@ func (m *MockWAFAPI) UpdateRuleRequest(arg0 *waf.UpdateRuleInput) (*request.Requ
 	return ret0, ret1
 }
 
-// UpdateRuleRequest indicates an expected call of UpdateRuleRequest.
+// UpdateRuleRequest indicates an expected call of UpdateRuleRequest
 func (mr *MockWAFAPIMockRecorder) UpdateRuleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRuleRequest), arg0)
 }
 
-// UpdateRuleWithContext mocks base method.
-func (m *MockWAFAPI) UpdateRuleWithContext(arg0 context.Context, arg1 *waf.UpdateRuleInput, arg2 ...request.Option) (*waf.UpdateRuleOutput, error) {
+// UpdateRuleWithContext mocks base method
+func (m *MockWAFAPI) UpdateRuleWithContext(arg0 aws.Context, arg1 *waf.UpdateRuleInput, arg2 ...request.Option) (*waf.UpdateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3679,14 +3278,14 @@ func (m *MockWAFAPI) UpdateRuleWithContext(arg0 context.Context, arg1 *waf.Updat
 	return ret0, ret1
 }
 
-// UpdateRuleWithContext indicates an expected call of UpdateRuleWithContext.
+// UpdateRuleWithContext indicates an expected call of UpdateRuleWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateRuleWithContext), varargs...)
 }
 
-// UpdateSizeConstraintSet mocks base method.
+// UpdateSizeConstraintSet mocks base method
 func (m *MockWAFAPI) UpdateSizeConstraintSet(arg0 *waf.UpdateSizeConstraintSetInput) (*waf.UpdateSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSizeConstraintSet", arg0)
@@ -3695,13 +3294,13 @@ func (m *MockWAFAPI) UpdateSizeConstraintSet(arg0 *waf.UpdateSizeConstraintSetIn
 	return ret0, ret1
 }
 
-// UpdateSizeConstraintSet indicates an expected call of UpdateSizeConstraintSet.
+// UpdateSizeConstraintSet indicates an expected call of UpdateSizeConstraintSet
 func (mr *MockWAFAPIMockRecorder) UpdateSizeConstraintSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSizeConstraintSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateSizeConstraintSet), arg0)
 }
 
-// UpdateSizeConstraintSetRequest mocks base method.
+// UpdateSizeConstraintSetRequest mocks base method
 func (m *MockWAFAPI) UpdateSizeConstraintSetRequest(arg0 *waf.UpdateSizeConstraintSetInput) (*request.Request, *waf.UpdateSizeConstraintSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSizeConstraintSetRequest", arg0)
@@ -3710,14 +3309,14 @@ func (m *MockWAFAPI) UpdateSizeConstraintSetRequest(arg0 *waf.UpdateSizeConstrai
 	return ret0, ret1
 }
 
-// UpdateSizeConstraintSetRequest indicates an expected call of UpdateSizeConstraintSetRequest.
+// UpdateSizeConstraintSetRequest indicates an expected call of UpdateSizeConstraintSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateSizeConstraintSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSizeConstraintSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateSizeConstraintSetRequest), arg0)
 }
 
-// UpdateSizeConstraintSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.UpdateSizeConstraintSetInput, arg2 ...request.Option) (*waf.UpdateSizeConstraintSetOutput, error) {
+// UpdateSizeConstraintSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.UpdateSizeConstraintSetInput, arg2 ...request.Option) (*waf.UpdateSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3729,14 +3328,14 @@ func (m *MockWAFAPI) UpdateSizeConstraintSetWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UpdateSizeConstraintSetWithContext indicates an expected call of UpdateSizeConstraintSetWithContext.
+// UpdateSizeConstraintSetWithContext indicates an expected call of UpdateSizeConstraintSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateSizeConstraintSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSizeConstraintSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateSizeConstraintSetWithContext), varargs...)
 }
 
-// UpdateSqlInjectionMatchSet mocks base method.
+// UpdateSqlInjectionMatchSet mocks base method
 func (m *MockWAFAPI) UpdateSqlInjectionMatchSet(arg0 *waf.UpdateSqlInjectionMatchSetInput) (*waf.UpdateSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSqlInjectionMatchSet", arg0)
@@ -3745,13 +3344,13 @@ func (m *MockWAFAPI) UpdateSqlInjectionMatchSet(arg0 *waf.UpdateSqlInjectionMatc
 	return ret0, ret1
 }
 
-// UpdateSqlInjectionMatchSet indicates an expected call of UpdateSqlInjectionMatchSet.
+// UpdateSqlInjectionMatchSet indicates an expected call of UpdateSqlInjectionMatchSet
 func (mr *MockWAFAPIMockRecorder) UpdateSqlInjectionMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSqlInjectionMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateSqlInjectionMatchSet), arg0)
 }
 
-// UpdateSqlInjectionMatchSetRequest mocks base method.
+// UpdateSqlInjectionMatchSetRequest mocks base method
 func (m *MockWAFAPI) UpdateSqlInjectionMatchSetRequest(arg0 *waf.UpdateSqlInjectionMatchSetInput) (*request.Request, *waf.UpdateSqlInjectionMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSqlInjectionMatchSetRequest", arg0)
@@ -3760,14 +3359,14 @@ func (m *MockWAFAPI) UpdateSqlInjectionMatchSetRequest(arg0 *waf.UpdateSqlInject
 	return ret0, ret1
 }
 
-// UpdateSqlInjectionMatchSetRequest indicates an expected call of UpdateSqlInjectionMatchSetRequest.
+// UpdateSqlInjectionMatchSetRequest indicates an expected call of UpdateSqlInjectionMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateSqlInjectionMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSqlInjectionMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateSqlInjectionMatchSetRequest), arg0)
 }
 
-// UpdateSqlInjectionMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.UpdateSqlInjectionMatchSetOutput, error) {
+// UpdateSqlInjectionMatchSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.UpdateSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3779,14 +3378,14 @@ func (m *MockWAFAPI) UpdateSqlInjectionMatchSetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateSqlInjectionMatchSetWithContext indicates an expected call of UpdateSqlInjectionMatchSetWithContext.
+// UpdateSqlInjectionMatchSetWithContext indicates an expected call of UpdateSqlInjectionMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateSqlInjectionMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSqlInjectionMatchSetWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateSqlInjectionMatchSetWithContext), varargs...)
 }
 
-// UpdateWebACL mocks base method.
+// UpdateWebACL mocks base method
 func (m *MockWAFAPI) UpdateWebACL(arg0 *waf.UpdateWebACLInput) (*waf.UpdateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateWebACL", arg0)
@@ -3795,13 +3394,13 @@ func (m *MockWAFAPI) UpdateWebACL(arg0 *waf.UpdateWebACLInput) (*waf.UpdateWebAC
 	return ret0, ret1
 }
 
-// UpdateWebACL indicates an expected call of UpdateWebACL.
+// UpdateWebACL indicates an expected call of UpdateWebACL
 func (mr *MockWAFAPIMockRecorder) UpdateWebACL(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWebACL", reflect.TypeOf((*MockWAFAPI)(nil).UpdateWebACL), arg0)
 }
 
-// UpdateWebACLRequest mocks base method.
+// UpdateWebACLRequest mocks base method
 func (m *MockWAFAPI) UpdateWebACLRequest(arg0 *waf.UpdateWebACLInput) (*request.Request, *waf.UpdateWebACLOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateWebACLRequest", arg0)
@@ -3810,14 +3409,14 @@ func (m *MockWAFAPI) UpdateWebACLRequest(arg0 *waf.UpdateWebACLInput) (*request.
 	return ret0, ret1
 }
 
-// UpdateWebACLRequest indicates an expected call of UpdateWebACLRequest.
+// UpdateWebACLRequest indicates an expected call of UpdateWebACLRequest
 func (mr *MockWAFAPIMockRecorder) UpdateWebACLRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWebACLRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateWebACLRequest), arg0)
 }
 
-// UpdateWebACLWithContext mocks base method.
-func (m *MockWAFAPI) UpdateWebACLWithContext(arg0 context.Context, arg1 *waf.UpdateWebACLInput, arg2 ...request.Option) (*waf.UpdateWebACLOutput, error) {
+// UpdateWebACLWithContext mocks base method
+func (m *MockWAFAPI) UpdateWebACLWithContext(arg0 aws.Context, arg1 *waf.UpdateWebACLInput, arg2 ...request.Option) (*waf.UpdateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3829,14 +3428,14 @@ func (m *MockWAFAPI) UpdateWebACLWithContext(arg0 context.Context, arg1 *waf.Upd
 	return ret0, ret1
 }
 
-// UpdateWebACLWithContext indicates an expected call of UpdateWebACLWithContext.
+// UpdateWebACLWithContext indicates an expected call of UpdateWebACLWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateWebACLWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWebACLWithContext", reflect.TypeOf((*MockWAFAPI)(nil).UpdateWebACLWithContext), varargs...)
 }
 
-// UpdateXssMatchSet mocks base method.
+// UpdateXssMatchSet mocks base method
 func (m *MockWAFAPI) UpdateXssMatchSet(arg0 *waf.UpdateXssMatchSetInput) (*waf.UpdateXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateXssMatchSet", arg0)
@@ -3845,13 +3444,13 @@ func (m *MockWAFAPI) UpdateXssMatchSet(arg0 *waf.UpdateXssMatchSetInput) (*waf.U
 	return ret0, ret1
 }
 
-// UpdateXssMatchSet indicates an expected call of UpdateXssMatchSet.
+// UpdateXssMatchSet indicates an expected call of UpdateXssMatchSet
 func (mr *MockWAFAPIMockRecorder) UpdateXssMatchSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateXssMatchSet", reflect.TypeOf((*MockWAFAPI)(nil).UpdateXssMatchSet), arg0)
 }
 
-// UpdateXssMatchSetRequest mocks base method.
+// UpdateXssMatchSetRequest mocks base method
 func (m *MockWAFAPI) UpdateXssMatchSetRequest(arg0 *waf.UpdateXssMatchSetInput) (*request.Request, *waf.UpdateXssMatchSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateXssMatchSetRequest", arg0)
@@ -3860,14 +3459,14 @@ func (m *MockWAFAPI) UpdateXssMatchSetRequest(arg0 *waf.UpdateXssMatchSetInput) 
 	return ret0, ret1
 }
 
-// UpdateXssMatchSetRequest indicates an expected call of UpdateXssMatchSetRequest.
+// UpdateXssMatchSetRequest indicates an expected call of UpdateXssMatchSetRequest
 func (mr *MockWAFAPIMockRecorder) UpdateXssMatchSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateXssMatchSetRequest", reflect.TypeOf((*MockWAFAPI)(nil).UpdateXssMatchSetRequest), arg0)
 }
 
-// UpdateXssMatchSetWithContext mocks base method.
-func (m *MockWAFAPI) UpdateXssMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateXssMatchSetInput, arg2 ...request.Option) (*waf.UpdateXssMatchSetOutput, error) {
+// UpdateXssMatchSetWithContext mocks base method
+func (m *MockWAFAPI) UpdateXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateXssMatchSetInput, arg2 ...request.Option) (*waf.UpdateXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3879,7 +3478,7 @@ func (m *MockWAFAPI) UpdateXssMatchSetWithContext(arg0 context.Context, arg1 *wa
 	return ret0, ret1
 }
 
-// UpdateXssMatchSetWithContext indicates an expected call of UpdateXssMatchSetWithContext.
+// UpdateXssMatchSetWithContext indicates an expected call of UpdateXssMatchSetWithContext
 func (mr *MockWAFAPIMockRecorder) UpdateXssMatchSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

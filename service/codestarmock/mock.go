@@ -5,38 +5,37 @@
 package codestarmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	codestar "github.com/aws/aws-sdk-go/service/codestar"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockCodeStarAPI is a mock of CodeStarAPI interface.
+// MockCodeStarAPI is a mock of CodeStarAPI interface
 type MockCodeStarAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockCodeStarAPIMockRecorder
 }
 
-// MockCodeStarAPIMockRecorder is the mock recorder for MockCodeStarAPI.
+// MockCodeStarAPIMockRecorder is the mock recorder for MockCodeStarAPI
 type MockCodeStarAPIMockRecorder struct {
 	mock *MockCodeStarAPI
 }
 
-// NewMockCodeStarAPI creates a new mock instance.
+// NewMockCodeStarAPI creates a new mock instance
 func NewMockCodeStarAPI(ctrl *gomock.Controller) *MockCodeStarAPI {
 	mock := &MockCodeStarAPI{ctrl: ctrl}
 	mock.recorder = &MockCodeStarAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockCodeStarAPI) EXPECT() *MockCodeStarAPIMockRecorder {
 	return m.recorder
 }
 
-// AssociateTeamMember mocks base method.
+// AssociateTeamMember mocks base method
 func (m *MockCodeStarAPI) AssociateTeamMember(arg0 *codestar.AssociateTeamMemberInput) (*codestar.AssociateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateTeamMember", arg0)
@@ -45,13 +44,13 @@ func (m *MockCodeStarAPI) AssociateTeamMember(arg0 *codestar.AssociateTeamMember
 	return ret0, ret1
 }
 
-// AssociateTeamMember indicates an expected call of AssociateTeamMember.
+// AssociateTeamMember indicates an expected call of AssociateTeamMember
 func (mr *MockCodeStarAPIMockRecorder) AssociateTeamMember(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTeamMember", reflect.TypeOf((*MockCodeStarAPI)(nil).AssociateTeamMember), arg0)
 }
 
-// AssociateTeamMemberRequest mocks base method.
+// AssociateTeamMemberRequest mocks base method
 func (m *MockCodeStarAPI) AssociateTeamMemberRequest(arg0 *codestar.AssociateTeamMemberInput) (*request.Request, *codestar.AssociateTeamMemberOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateTeamMemberRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockCodeStarAPI) AssociateTeamMemberRequest(arg0 *codestar.AssociateTea
 	return ret0, ret1
 }
 
-// AssociateTeamMemberRequest indicates an expected call of AssociateTeamMemberRequest.
+// AssociateTeamMemberRequest indicates an expected call of AssociateTeamMemberRequest
 func (mr *MockCodeStarAPIMockRecorder) AssociateTeamMemberRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTeamMemberRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).AssociateTeamMemberRequest), arg0)
 }
 
-// AssociateTeamMemberWithContext mocks base method.
-func (m *MockCodeStarAPI) AssociateTeamMemberWithContext(arg0 context.Context, arg1 *codestar.AssociateTeamMemberInput, arg2 ...request.Option) (*codestar.AssociateTeamMemberOutput, error) {
+// AssociateTeamMemberWithContext mocks base method
+func (m *MockCodeStarAPI) AssociateTeamMemberWithContext(arg0 aws.Context, arg1 *codestar.AssociateTeamMemberInput, arg2 ...request.Option) (*codestar.AssociateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockCodeStarAPI) AssociateTeamMemberWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// AssociateTeamMemberWithContext indicates an expected call of AssociateTeamMemberWithContext.
+// AssociateTeamMemberWithContext indicates an expected call of AssociateTeamMemberWithContext
 func (mr *MockCodeStarAPIMockRecorder) AssociateTeamMemberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTeamMemberWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).AssociateTeamMemberWithContext), varargs...)
 }
 
-// CreateProject mocks base method.
+// CreateProject mocks base method
 func (m *MockCodeStarAPI) CreateProject(arg0 *codestar.CreateProjectInput) (*codestar.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProject", arg0)
@@ -95,13 +94,13 @@ func (m *MockCodeStarAPI) CreateProject(arg0 *codestar.CreateProjectInput) (*cod
 	return ret0, ret1
 }
 
-// CreateProject indicates an expected call of CreateProject.
+// CreateProject indicates an expected call of CreateProject
 func (mr *MockCodeStarAPIMockRecorder) CreateProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProject", reflect.TypeOf((*MockCodeStarAPI)(nil).CreateProject), arg0)
 }
 
-// CreateProjectRequest mocks base method.
+// CreateProjectRequest mocks base method
 func (m *MockCodeStarAPI) CreateProjectRequest(arg0 *codestar.CreateProjectInput) (*request.Request, *codestar.CreateProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProjectRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockCodeStarAPI) CreateProjectRequest(arg0 *codestar.CreateProjectInput
 	return ret0, ret1
 }
 
-// CreateProjectRequest indicates an expected call of CreateProjectRequest.
+// CreateProjectRequest indicates an expected call of CreateProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) CreateProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).CreateProjectRequest), arg0)
 }
 
-// CreateProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) CreateProjectWithContext(arg0 context.Context, arg1 *codestar.CreateProjectInput, arg2 ...request.Option) (*codestar.CreateProjectOutput, error) {
+// CreateProjectWithContext mocks base method
+func (m *MockCodeStarAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *codestar.CreateProjectInput, arg2 ...request.Option) (*codestar.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockCodeStarAPI) CreateProjectWithContext(arg0 context.Context, arg1 *c
 	return ret0, ret1
 }
 
-// CreateProjectWithContext indicates an expected call of CreateProjectWithContext.
+// CreateProjectWithContext indicates an expected call of CreateProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) CreateProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).CreateProjectWithContext), varargs...)
 }
 
-// CreateUserProfile mocks base method.
+// CreateUserProfile mocks base method
 func (m *MockCodeStarAPI) CreateUserProfile(arg0 *codestar.CreateUserProfileInput) (*codestar.CreateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUserProfile", arg0)
@@ -145,13 +144,13 @@ func (m *MockCodeStarAPI) CreateUserProfile(arg0 *codestar.CreateUserProfileInpu
 	return ret0, ret1
 }
 
-// CreateUserProfile indicates an expected call of CreateUserProfile.
+// CreateUserProfile indicates an expected call of CreateUserProfile
 func (mr *MockCodeStarAPIMockRecorder) CreateUserProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserProfile", reflect.TypeOf((*MockCodeStarAPI)(nil).CreateUserProfile), arg0)
 }
 
-// CreateUserProfileRequest mocks base method.
+// CreateUserProfileRequest mocks base method
 func (m *MockCodeStarAPI) CreateUserProfileRequest(arg0 *codestar.CreateUserProfileInput) (*request.Request, *codestar.CreateUserProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUserProfileRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockCodeStarAPI) CreateUserProfileRequest(arg0 *codestar.CreateUserProf
 	return ret0, ret1
 }
 
-// CreateUserProfileRequest indicates an expected call of CreateUserProfileRequest.
+// CreateUserProfileRequest indicates an expected call of CreateUserProfileRequest
 func (mr *MockCodeStarAPIMockRecorder) CreateUserProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserProfileRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).CreateUserProfileRequest), arg0)
 }
 
-// CreateUserProfileWithContext mocks base method.
-func (m *MockCodeStarAPI) CreateUserProfileWithContext(arg0 context.Context, arg1 *codestar.CreateUserProfileInput, arg2 ...request.Option) (*codestar.CreateUserProfileOutput, error) {
+// CreateUserProfileWithContext mocks base method
+func (m *MockCodeStarAPI) CreateUserProfileWithContext(arg0 aws.Context, arg1 *codestar.CreateUserProfileInput, arg2 ...request.Option) (*codestar.CreateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockCodeStarAPI) CreateUserProfileWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// CreateUserProfileWithContext indicates an expected call of CreateUserProfileWithContext.
+// CreateUserProfileWithContext indicates an expected call of CreateUserProfileWithContext
 func (mr *MockCodeStarAPIMockRecorder) CreateUserProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserProfileWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).CreateUserProfileWithContext), varargs...)
 }
 
-// DeleteProject mocks base method.
+// DeleteProject mocks base method
 func (m *MockCodeStarAPI) DeleteProject(arg0 *codestar.DeleteProjectInput) (*codestar.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProject", arg0)
@@ -195,13 +194,13 @@ func (m *MockCodeStarAPI) DeleteProject(arg0 *codestar.DeleteProjectInput) (*cod
 	return ret0, ret1
 }
 
-// DeleteProject indicates an expected call of DeleteProject.
+// DeleteProject indicates an expected call of DeleteProject
 func (mr *MockCodeStarAPIMockRecorder) DeleteProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProject", reflect.TypeOf((*MockCodeStarAPI)(nil).DeleteProject), arg0)
 }
 
-// DeleteProjectRequest mocks base method.
+// DeleteProjectRequest mocks base method
 func (m *MockCodeStarAPI) DeleteProjectRequest(arg0 *codestar.DeleteProjectInput) (*request.Request, *codestar.DeleteProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProjectRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockCodeStarAPI) DeleteProjectRequest(arg0 *codestar.DeleteProjectInput
 	return ret0, ret1
 }
 
-// DeleteProjectRequest indicates an expected call of DeleteProjectRequest.
+// DeleteProjectRequest indicates an expected call of DeleteProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).DeleteProjectRequest), arg0)
 }
 
-// DeleteProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *codestar.DeleteProjectInput, arg2 ...request.Option) (*codestar.DeleteProjectOutput, error) {
+// DeleteProjectWithContext mocks base method
+func (m *MockCodeStarAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *codestar.DeleteProjectInput, arg2 ...request.Option) (*codestar.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockCodeStarAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *c
 	return ret0, ret1
 }
 
-// DeleteProjectWithContext indicates an expected call of DeleteProjectWithContext.
+// DeleteProjectWithContext indicates an expected call of DeleteProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).DeleteProjectWithContext), varargs...)
 }
 
-// DeleteUserProfile mocks base method.
+// DeleteUserProfile mocks base method
 func (m *MockCodeStarAPI) DeleteUserProfile(arg0 *codestar.DeleteUserProfileInput) (*codestar.DeleteUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUserProfile", arg0)
@@ -245,13 +244,13 @@ func (m *MockCodeStarAPI) DeleteUserProfile(arg0 *codestar.DeleteUserProfileInpu
 	return ret0, ret1
 }
 
-// DeleteUserProfile indicates an expected call of DeleteUserProfile.
+// DeleteUserProfile indicates an expected call of DeleteUserProfile
 func (mr *MockCodeStarAPIMockRecorder) DeleteUserProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserProfile", reflect.TypeOf((*MockCodeStarAPI)(nil).DeleteUserProfile), arg0)
 }
 
-// DeleteUserProfileRequest mocks base method.
+// DeleteUserProfileRequest mocks base method
 func (m *MockCodeStarAPI) DeleteUserProfileRequest(arg0 *codestar.DeleteUserProfileInput) (*request.Request, *codestar.DeleteUserProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUserProfileRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockCodeStarAPI) DeleteUserProfileRequest(arg0 *codestar.DeleteUserProf
 	return ret0, ret1
 }
 
-// DeleteUserProfileRequest indicates an expected call of DeleteUserProfileRequest.
+// DeleteUserProfileRequest indicates an expected call of DeleteUserProfileRequest
 func (mr *MockCodeStarAPIMockRecorder) DeleteUserProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserProfileRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).DeleteUserProfileRequest), arg0)
 }
 
-// DeleteUserProfileWithContext mocks base method.
-func (m *MockCodeStarAPI) DeleteUserProfileWithContext(arg0 context.Context, arg1 *codestar.DeleteUserProfileInput, arg2 ...request.Option) (*codestar.DeleteUserProfileOutput, error) {
+// DeleteUserProfileWithContext mocks base method
+func (m *MockCodeStarAPI) DeleteUserProfileWithContext(arg0 aws.Context, arg1 *codestar.DeleteUserProfileInput, arg2 ...request.Option) (*codestar.DeleteUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockCodeStarAPI) DeleteUserProfileWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// DeleteUserProfileWithContext indicates an expected call of DeleteUserProfileWithContext.
+// DeleteUserProfileWithContext indicates an expected call of DeleteUserProfileWithContext
 func (mr *MockCodeStarAPIMockRecorder) DeleteUserProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserProfileWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).DeleteUserProfileWithContext), varargs...)
 }
 
-// DescribeProject mocks base method.
+// DescribeProject mocks base method
 func (m *MockCodeStarAPI) DescribeProject(arg0 *codestar.DescribeProjectInput) (*codestar.DescribeProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeProject", arg0)
@@ -295,13 +294,13 @@ func (m *MockCodeStarAPI) DescribeProject(arg0 *codestar.DescribeProjectInput) (
 	return ret0, ret1
 }
 
-// DescribeProject indicates an expected call of DescribeProject.
+// DescribeProject indicates an expected call of DescribeProject
 func (mr *MockCodeStarAPIMockRecorder) DescribeProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProject", reflect.TypeOf((*MockCodeStarAPI)(nil).DescribeProject), arg0)
 }
 
-// DescribeProjectRequest mocks base method.
+// DescribeProjectRequest mocks base method
 func (m *MockCodeStarAPI) DescribeProjectRequest(arg0 *codestar.DescribeProjectInput) (*request.Request, *codestar.DescribeProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeProjectRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockCodeStarAPI) DescribeProjectRequest(arg0 *codestar.DescribeProjectI
 	return ret0, ret1
 }
 
-// DescribeProjectRequest indicates an expected call of DescribeProjectRequest.
+// DescribeProjectRequest indicates an expected call of DescribeProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) DescribeProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).DescribeProjectRequest), arg0)
 }
 
-// DescribeProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) DescribeProjectWithContext(arg0 context.Context, arg1 *codestar.DescribeProjectInput, arg2 ...request.Option) (*codestar.DescribeProjectOutput, error) {
+// DescribeProjectWithContext mocks base method
+func (m *MockCodeStarAPI) DescribeProjectWithContext(arg0 aws.Context, arg1 *codestar.DescribeProjectInput, arg2 ...request.Option) (*codestar.DescribeProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockCodeStarAPI) DescribeProjectWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeProjectWithContext indicates an expected call of DescribeProjectWithContext.
+// DescribeProjectWithContext indicates an expected call of DescribeProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) DescribeProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).DescribeProjectWithContext), varargs...)
 }
 
-// DescribeUserProfile mocks base method.
+// DescribeUserProfile mocks base method
 func (m *MockCodeStarAPI) DescribeUserProfile(arg0 *codestar.DescribeUserProfileInput) (*codestar.DescribeUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUserProfile", arg0)
@@ -345,13 +344,13 @@ func (m *MockCodeStarAPI) DescribeUserProfile(arg0 *codestar.DescribeUserProfile
 	return ret0, ret1
 }
 
-// DescribeUserProfile indicates an expected call of DescribeUserProfile.
+// DescribeUserProfile indicates an expected call of DescribeUserProfile
 func (mr *MockCodeStarAPIMockRecorder) DescribeUserProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserProfile", reflect.TypeOf((*MockCodeStarAPI)(nil).DescribeUserProfile), arg0)
 }
 
-// DescribeUserProfileRequest mocks base method.
+// DescribeUserProfileRequest mocks base method
 func (m *MockCodeStarAPI) DescribeUserProfileRequest(arg0 *codestar.DescribeUserProfileInput) (*request.Request, *codestar.DescribeUserProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUserProfileRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockCodeStarAPI) DescribeUserProfileRequest(arg0 *codestar.DescribeUser
 	return ret0, ret1
 }
 
-// DescribeUserProfileRequest indicates an expected call of DescribeUserProfileRequest.
+// DescribeUserProfileRequest indicates an expected call of DescribeUserProfileRequest
 func (mr *MockCodeStarAPIMockRecorder) DescribeUserProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserProfileRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).DescribeUserProfileRequest), arg0)
 }
 
-// DescribeUserProfileWithContext mocks base method.
-func (m *MockCodeStarAPI) DescribeUserProfileWithContext(arg0 context.Context, arg1 *codestar.DescribeUserProfileInput, arg2 ...request.Option) (*codestar.DescribeUserProfileOutput, error) {
+// DescribeUserProfileWithContext mocks base method
+func (m *MockCodeStarAPI) DescribeUserProfileWithContext(arg0 aws.Context, arg1 *codestar.DescribeUserProfileInput, arg2 ...request.Option) (*codestar.DescribeUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockCodeStarAPI) DescribeUserProfileWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DescribeUserProfileWithContext indicates an expected call of DescribeUserProfileWithContext.
+// DescribeUserProfileWithContext indicates an expected call of DescribeUserProfileWithContext
 func (mr *MockCodeStarAPIMockRecorder) DescribeUserProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserProfileWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).DescribeUserProfileWithContext), varargs...)
 }
 
-// DisassociateTeamMember mocks base method.
+// DisassociateTeamMember mocks base method
 func (m *MockCodeStarAPI) DisassociateTeamMember(arg0 *codestar.DisassociateTeamMemberInput) (*codestar.DisassociateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateTeamMember", arg0)
@@ -395,13 +394,13 @@ func (m *MockCodeStarAPI) DisassociateTeamMember(arg0 *codestar.DisassociateTeam
 	return ret0, ret1
 }
 
-// DisassociateTeamMember indicates an expected call of DisassociateTeamMember.
+// DisassociateTeamMember indicates an expected call of DisassociateTeamMember
 func (mr *MockCodeStarAPIMockRecorder) DisassociateTeamMember(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTeamMember", reflect.TypeOf((*MockCodeStarAPI)(nil).DisassociateTeamMember), arg0)
 }
 
-// DisassociateTeamMemberRequest mocks base method.
+// DisassociateTeamMemberRequest mocks base method
 func (m *MockCodeStarAPI) DisassociateTeamMemberRequest(arg0 *codestar.DisassociateTeamMemberInput) (*request.Request, *codestar.DisassociateTeamMemberOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateTeamMemberRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockCodeStarAPI) DisassociateTeamMemberRequest(arg0 *codestar.Disassoci
 	return ret0, ret1
 }
 
-// DisassociateTeamMemberRequest indicates an expected call of DisassociateTeamMemberRequest.
+// DisassociateTeamMemberRequest indicates an expected call of DisassociateTeamMemberRequest
 func (mr *MockCodeStarAPIMockRecorder) DisassociateTeamMemberRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTeamMemberRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).DisassociateTeamMemberRequest), arg0)
 }
 
-// DisassociateTeamMemberWithContext mocks base method.
-func (m *MockCodeStarAPI) DisassociateTeamMemberWithContext(arg0 context.Context, arg1 *codestar.DisassociateTeamMemberInput, arg2 ...request.Option) (*codestar.DisassociateTeamMemberOutput, error) {
+// DisassociateTeamMemberWithContext mocks base method
+func (m *MockCodeStarAPI) DisassociateTeamMemberWithContext(arg0 aws.Context, arg1 *codestar.DisassociateTeamMemberInput, arg2 ...request.Option) (*codestar.DisassociateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockCodeStarAPI) DisassociateTeamMemberWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DisassociateTeamMemberWithContext indicates an expected call of DisassociateTeamMemberWithContext.
+// DisassociateTeamMemberWithContext indicates an expected call of DisassociateTeamMemberWithContext
 func (mr *MockCodeStarAPIMockRecorder) DisassociateTeamMemberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTeamMemberWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).DisassociateTeamMemberWithContext), varargs...)
 }
 
-// ListProjects mocks base method.
+// ListProjects mocks base method
 func (m *MockCodeStarAPI) ListProjects(arg0 *codestar.ListProjectsInput) (*codestar.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProjects", arg0)
@@ -445,13 +444,13 @@ func (m *MockCodeStarAPI) ListProjects(arg0 *codestar.ListProjectsInput) (*codes
 	return ret0, ret1
 }
 
-// ListProjects indicates an expected call of ListProjects.
+// ListProjects indicates an expected call of ListProjects
 func (mr *MockCodeStarAPIMockRecorder) ListProjects(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjects", reflect.TypeOf((*MockCodeStarAPI)(nil).ListProjects), arg0)
 }
 
-// ListProjectsRequest mocks base method.
+// ListProjectsRequest mocks base method
 func (m *MockCodeStarAPI) ListProjectsRequest(arg0 *codestar.ListProjectsInput) (*request.Request, *codestar.ListProjectsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProjectsRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockCodeStarAPI) ListProjectsRequest(arg0 *codestar.ListProjectsInput) 
 	return ret0, ret1
 }
 
-// ListProjectsRequest indicates an expected call of ListProjectsRequest.
+// ListProjectsRequest indicates an expected call of ListProjectsRequest
 func (mr *MockCodeStarAPIMockRecorder) ListProjectsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).ListProjectsRequest), arg0)
 }
 
-// ListProjectsWithContext mocks base method.
-func (m *MockCodeStarAPI) ListProjectsWithContext(arg0 context.Context, arg1 *codestar.ListProjectsInput, arg2 ...request.Option) (*codestar.ListProjectsOutput, error) {
+// ListProjectsWithContext mocks base method
+func (m *MockCodeStarAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *codestar.ListProjectsInput, arg2 ...request.Option) (*codestar.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockCodeStarAPI) ListProjectsWithContext(arg0 context.Context, arg1 *co
 	return ret0, ret1
 }
 
-// ListProjectsWithContext indicates an expected call of ListProjectsWithContext.
+// ListProjectsWithContext indicates an expected call of ListProjectsWithContext
 func (mr *MockCodeStarAPIMockRecorder) ListProjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).ListProjectsWithContext), varargs...)
 }
 
-// ListResources mocks base method.
+// ListResources mocks base method
 func (m *MockCodeStarAPI) ListResources(arg0 *codestar.ListResourcesInput) (*codestar.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListResources", arg0)
@@ -495,13 +494,13 @@ func (m *MockCodeStarAPI) ListResources(arg0 *codestar.ListResourcesInput) (*cod
 	return ret0, ret1
 }
 
-// ListResources indicates an expected call of ListResources.
+// ListResources indicates an expected call of ListResources
 func (mr *MockCodeStarAPIMockRecorder) ListResources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResources", reflect.TypeOf((*MockCodeStarAPI)(nil).ListResources), arg0)
 }
 
-// ListResourcesRequest mocks base method.
+// ListResourcesRequest mocks base method
 func (m *MockCodeStarAPI) ListResourcesRequest(arg0 *codestar.ListResourcesInput) (*request.Request, *codestar.ListResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListResourcesRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockCodeStarAPI) ListResourcesRequest(arg0 *codestar.ListResourcesInput
 	return ret0, ret1
 }
 
-// ListResourcesRequest indicates an expected call of ListResourcesRequest.
+// ListResourcesRequest indicates an expected call of ListResourcesRequest
 func (mr *MockCodeStarAPIMockRecorder) ListResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).ListResourcesRequest), arg0)
 }
 
-// ListResourcesWithContext mocks base method.
-func (m *MockCodeStarAPI) ListResourcesWithContext(arg0 context.Context, arg1 *codestar.ListResourcesInput, arg2 ...request.Option) (*codestar.ListResourcesOutput, error) {
+// ListResourcesWithContext mocks base method
+func (m *MockCodeStarAPI) ListResourcesWithContext(arg0 aws.Context, arg1 *codestar.ListResourcesInput, arg2 ...request.Option) (*codestar.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockCodeStarAPI) ListResourcesWithContext(arg0 context.Context, arg1 *c
 	return ret0, ret1
 }
 
-// ListResourcesWithContext indicates an expected call of ListResourcesWithContext.
+// ListResourcesWithContext indicates an expected call of ListResourcesWithContext
 func (mr *MockCodeStarAPIMockRecorder) ListResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).ListResourcesWithContext), varargs...)
 }
 
-// ListTagsForProject mocks base method.
+// ListTagsForProject mocks base method
 func (m *MockCodeStarAPI) ListTagsForProject(arg0 *codestar.ListTagsForProjectInput) (*codestar.ListTagsForProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForProject", arg0)
@@ -545,13 +544,13 @@ func (m *MockCodeStarAPI) ListTagsForProject(arg0 *codestar.ListTagsForProjectIn
 	return ret0, ret1
 }
 
-// ListTagsForProject indicates an expected call of ListTagsForProject.
+// ListTagsForProject indicates an expected call of ListTagsForProject
 func (mr *MockCodeStarAPIMockRecorder) ListTagsForProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForProject", reflect.TypeOf((*MockCodeStarAPI)(nil).ListTagsForProject), arg0)
 }
 
-// ListTagsForProjectRequest mocks base method.
+// ListTagsForProjectRequest mocks base method
 func (m *MockCodeStarAPI) ListTagsForProjectRequest(arg0 *codestar.ListTagsForProjectInput) (*request.Request, *codestar.ListTagsForProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForProjectRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockCodeStarAPI) ListTagsForProjectRequest(arg0 *codestar.ListTagsForPr
 	return ret0, ret1
 }
 
-// ListTagsForProjectRequest indicates an expected call of ListTagsForProjectRequest.
+// ListTagsForProjectRequest indicates an expected call of ListTagsForProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) ListTagsForProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).ListTagsForProjectRequest), arg0)
 }
 
-// ListTagsForProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) ListTagsForProjectWithContext(arg0 context.Context, arg1 *codestar.ListTagsForProjectInput, arg2 ...request.Option) (*codestar.ListTagsForProjectOutput, error) {
+// ListTagsForProjectWithContext mocks base method
+func (m *MockCodeStarAPI) ListTagsForProjectWithContext(arg0 aws.Context, arg1 *codestar.ListTagsForProjectInput, arg2 ...request.Option) (*codestar.ListTagsForProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockCodeStarAPI) ListTagsForProjectWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// ListTagsForProjectWithContext indicates an expected call of ListTagsForProjectWithContext.
+// ListTagsForProjectWithContext indicates an expected call of ListTagsForProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) ListTagsForProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).ListTagsForProjectWithContext), varargs...)
 }
 
-// ListTeamMembers mocks base method.
+// ListTeamMembers mocks base method
 func (m *MockCodeStarAPI) ListTeamMembers(arg0 *codestar.ListTeamMembersInput) (*codestar.ListTeamMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTeamMembers", arg0)
@@ -595,13 +594,13 @@ func (m *MockCodeStarAPI) ListTeamMembers(arg0 *codestar.ListTeamMembersInput) (
 	return ret0, ret1
 }
 
-// ListTeamMembers indicates an expected call of ListTeamMembers.
+// ListTeamMembers indicates an expected call of ListTeamMembers
 func (mr *MockCodeStarAPIMockRecorder) ListTeamMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTeamMembers", reflect.TypeOf((*MockCodeStarAPI)(nil).ListTeamMembers), arg0)
 }
 
-// ListTeamMembersRequest mocks base method.
+// ListTeamMembersRequest mocks base method
 func (m *MockCodeStarAPI) ListTeamMembersRequest(arg0 *codestar.ListTeamMembersInput) (*request.Request, *codestar.ListTeamMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTeamMembersRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockCodeStarAPI) ListTeamMembersRequest(arg0 *codestar.ListTeamMembersI
 	return ret0, ret1
 }
 
-// ListTeamMembersRequest indicates an expected call of ListTeamMembersRequest.
+// ListTeamMembersRequest indicates an expected call of ListTeamMembersRequest
 func (mr *MockCodeStarAPIMockRecorder) ListTeamMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTeamMembersRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).ListTeamMembersRequest), arg0)
 }
 
-// ListTeamMembersWithContext mocks base method.
-func (m *MockCodeStarAPI) ListTeamMembersWithContext(arg0 context.Context, arg1 *codestar.ListTeamMembersInput, arg2 ...request.Option) (*codestar.ListTeamMembersOutput, error) {
+// ListTeamMembersWithContext mocks base method
+func (m *MockCodeStarAPI) ListTeamMembersWithContext(arg0 aws.Context, arg1 *codestar.ListTeamMembersInput, arg2 ...request.Option) (*codestar.ListTeamMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockCodeStarAPI) ListTeamMembersWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListTeamMembersWithContext indicates an expected call of ListTeamMembersWithContext.
+// ListTeamMembersWithContext indicates an expected call of ListTeamMembersWithContext
 func (mr *MockCodeStarAPIMockRecorder) ListTeamMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTeamMembersWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).ListTeamMembersWithContext), varargs...)
 }
 
-// ListUserProfiles mocks base method.
+// ListUserProfiles mocks base method
 func (m *MockCodeStarAPI) ListUserProfiles(arg0 *codestar.ListUserProfilesInput) (*codestar.ListUserProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUserProfiles", arg0)
@@ -645,13 +644,13 @@ func (m *MockCodeStarAPI) ListUserProfiles(arg0 *codestar.ListUserProfilesInput)
 	return ret0, ret1
 }
 
-// ListUserProfiles indicates an expected call of ListUserProfiles.
+// ListUserProfiles indicates an expected call of ListUserProfiles
 func (mr *MockCodeStarAPIMockRecorder) ListUserProfiles(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserProfiles", reflect.TypeOf((*MockCodeStarAPI)(nil).ListUserProfiles), arg0)
 }
 
-// ListUserProfilesRequest mocks base method.
+// ListUserProfilesRequest mocks base method
 func (m *MockCodeStarAPI) ListUserProfilesRequest(arg0 *codestar.ListUserProfilesInput) (*request.Request, *codestar.ListUserProfilesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUserProfilesRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockCodeStarAPI) ListUserProfilesRequest(arg0 *codestar.ListUserProfile
 	return ret0, ret1
 }
 
-// ListUserProfilesRequest indicates an expected call of ListUserProfilesRequest.
+// ListUserProfilesRequest indicates an expected call of ListUserProfilesRequest
 func (mr *MockCodeStarAPIMockRecorder) ListUserProfilesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserProfilesRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).ListUserProfilesRequest), arg0)
 }
 
-// ListUserProfilesWithContext mocks base method.
-func (m *MockCodeStarAPI) ListUserProfilesWithContext(arg0 context.Context, arg1 *codestar.ListUserProfilesInput, arg2 ...request.Option) (*codestar.ListUserProfilesOutput, error) {
+// ListUserProfilesWithContext mocks base method
+func (m *MockCodeStarAPI) ListUserProfilesWithContext(arg0 aws.Context, arg1 *codestar.ListUserProfilesInput, arg2 ...request.Option) (*codestar.ListUserProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockCodeStarAPI) ListUserProfilesWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ListUserProfilesWithContext indicates an expected call of ListUserProfilesWithContext.
+// ListUserProfilesWithContext indicates an expected call of ListUserProfilesWithContext
 func (mr *MockCodeStarAPIMockRecorder) ListUserProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserProfilesWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).ListUserProfilesWithContext), varargs...)
 }
 
-// TagProject mocks base method.
+// TagProject mocks base method
 func (m *MockCodeStarAPI) TagProject(arg0 *codestar.TagProjectInput) (*codestar.TagProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagProject", arg0)
@@ -695,13 +694,13 @@ func (m *MockCodeStarAPI) TagProject(arg0 *codestar.TagProjectInput) (*codestar.
 	return ret0, ret1
 }
 
-// TagProject indicates an expected call of TagProject.
+// TagProject indicates an expected call of TagProject
 func (mr *MockCodeStarAPIMockRecorder) TagProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagProject", reflect.TypeOf((*MockCodeStarAPI)(nil).TagProject), arg0)
 }
 
-// TagProjectRequest mocks base method.
+// TagProjectRequest mocks base method
 func (m *MockCodeStarAPI) TagProjectRequest(arg0 *codestar.TagProjectInput) (*request.Request, *codestar.TagProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagProjectRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockCodeStarAPI) TagProjectRequest(arg0 *codestar.TagProjectInput) (*re
 	return ret0, ret1
 }
 
-// TagProjectRequest indicates an expected call of TagProjectRequest.
+// TagProjectRequest indicates an expected call of TagProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) TagProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).TagProjectRequest), arg0)
 }
 
-// TagProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) TagProjectWithContext(arg0 context.Context, arg1 *codestar.TagProjectInput, arg2 ...request.Option) (*codestar.TagProjectOutput, error) {
+// TagProjectWithContext mocks base method
+func (m *MockCodeStarAPI) TagProjectWithContext(arg0 aws.Context, arg1 *codestar.TagProjectInput, arg2 ...request.Option) (*codestar.TagProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +728,14 @@ func (m *MockCodeStarAPI) TagProjectWithContext(arg0 context.Context, arg1 *code
 	return ret0, ret1
 }
 
-// TagProjectWithContext indicates an expected call of TagProjectWithContext.
+// TagProjectWithContext indicates an expected call of TagProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) TagProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).TagProjectWithContext), varargs...)
 }
 
-// UntagProject mocks base method.
+// UntagProject mocks base method
 func (m *MockCodeStarAPI) UntagProject(arg0 *codestar.UntagProjectInput) (*codestar.UntagProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagProject", arg0)
@@ -745,13 +744,13 @@ func (m *MockCodeStarAPI) UntagProject(arg0 *codestar.UntagProjectInput) (*codes
 	return ret0, ret1
 }
 
-// UntagProject indicates an expected call of UntagProject.
+// UntagProject indicates an expected call of UntagProject
 func (mr *MockCodeStarAPIMockRecorder) UntagProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagProject", reflect.TypeOf((*MockCodeStarAPI)(nil).UntagProject), arg0)
 }
 
-// UntagProjectRequest mocks base method.
+// UntagProjectRequest mocks base method
 func (m *MockCodeStarAPI) UntagProjectRequest(arg0 *codestar.UntagProjectInput) (*request.Request, *codestar.UntagProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagProjectRequest", arg0)
@@ -760,14 +759,14 @@ func (m *MockCodeStarAPI) UntagProjectRequest(arg0 *codestar.UntagProjectInput) 
 	return ret0, ret1
 }
 
-// UntagProjectRequest indicates an expected call of UntagProjectRequest.
+// UntagProjectRequest indicates an expected call of UntagProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) UntagProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).UntagProjectRequest), arg0)
 }
 
-// UntagProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) UntagProjectWithContext(arg0 context.Context, arg1 *codestar.UntagProjectInput, arg2 ...request.Option) (*codestar.UntagProjectOutput, error) {
+// UntagProjectWithContext mocks base method
+func (m *MockCodeStarAPI) UntagProjectWithContext(arg0 aws.Context, arg1 *codestar.UntagProjectInput, arg2 ...request.Option) (*codestar.UntagProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +778,14 @@ func (m *MockCodeStarAPI) UntagProjectWithContext(arg0 context.Context, arg1 *co
 	return ret0, ret1
 }
 
-// UntagProjectWithContext indicates an expected call of UntagProjectWithContext.
+// UntagProjectWithContext indicates an expected call of UntagProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) UntagProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).UntagProjectWithContext), varargs...)
 }
 
-// UpdateProject mocks base method.
+// UpdateProject mocks base method
 func (m *MockCodeStarAPI) UpdateProject(arg0 *codestar.UpdateProjectInput) (*codestar.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateProject", arg0)
@@ -795,13 +794,13 @@ func (m *MockCodeStarAPI) UpdateProject(arg0 *codestar.UpdateProjectInput) (*cod
 	return ret0, ret1
 }
 
-// UpdateProject indicates an expected call of UpdateProject.
+// UpdateProject indicates an expected call of UpdateProject
 func (mr *MockCodeStarAPIMockRecorder) UpdateProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProject", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateProject), arg0)
 }
 
-// UpdateProjectRequest mocks base method.
+// UpdateProjectRequest mocks base method
 func (m *MockCodeStarAPI) UpdateProjectRequest(arg0 *codestar.UpdateProjectInput) (*request.Request, *codestar.UpdateProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateProjectRequest", arg0)
@@ -810,14 +809,14 @@ func (m *MockCodeStarAPI) UpdateProjectRequest(arg0 *codestar.UpdateProjectInput
 	return ret0, ret1
 }
 
-// UpdateProjectRequest indicates an expected call of UpdateProjectRequest.
+// UpdateProjectRequest indicates an expected call of UpdateProjectRequest
 func (mr *MockCodeStarAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateProjectRequest), arg0)
 }
 
-// UpdateProjectWithContext mocks base method.
-func (m *MockCodeStarAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *codestar.UpdateProjectInput, arg2 ...request.Option) (*codestar.UpdateProjectOutput, error) {
+// UpdateProjectWithContext mocks base method
+func (m *MockCodeStarAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *codestar.UpdateProjectInput, arg2 ...request.Option) (*codestar.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +828,14 @@ func (m *MockCodeStarAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *c
 	return ret0, ret1
 }
 
-// UpdateProjectWithContext indicates an expected call of UpdateProjectWithContext.
+// UpdateProjectWithContext indicates an expected call of UpdateProjectWithContext
 func (mr *MockCodeStarAPIMockRecorder) UpdateProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateProjectWithContext), varargs...)
 }
 
-// UpdateTeamMember mocks base method.
+// UpdateTeamMember mocks base method
 func (m *MockCodeStarAPI) UpdateTeamMember(arg0 *codestar.UpdateTeamMemberInput) (*codestar.UpdateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTeamMember", arg0)
@@ -845,13 +844,13 @@ func (m *MockCodeStarAPI) UpdateTeamMember(arg0 *codestar.UpdateTeamMemberInput)
 	return ret0, ret1
 }
 
-// UpdateTeamMember indicates an expected call of UpdateTeamMember.
+// UpdateTeamMember indicates an expected call of UpdateTeamMember
 func (mr *MockCodeStarAPIMockRecorder) UpdateTeamMember(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTeamMember", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateTeamMember), arg0)
 }
 
-// UpdateTeamMemberRequest mocks base method.
+// UpdateTeamMemberRequest mocks base method
 func (m *MockCodeStarAPI) UpdateTeamMemberRequest(arg0 *codestar.UpdateTeamMemberInput) (*request.Request, *codestar.UpdateTeamMemberOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTeamMemberRequest", arg0)
@@ -860,14 +859,14 @@ func (m *MockCodeStarAPI) UpdateTeamMemberRequest(arg0 *codestar.UpdateTeamMembe
 	return ret0, ret1
 }
 
-// UpdateTeamMemberRequest indicates an expected call of UpdateTeamMemberRequest.
+// UpdateTeamMemberRequest indicates an expected call of UpdateTeamMemberRequest
 func (mr *MockCodeStarAPIMockRecorder) UpdateTeamMemberRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTeamMemberRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateTeamMemberRequest), arg0)
 }
 
-// UpdateTeamMemberWithContext mocks base method.
-func (m *MockCodeStarAPI) UpdateTeamMemberWithContext(arg0 context.Context, arg1 *codestar.UpdateTeamMemberInput, arg2 ...request.Option) (*codestar.UpdateTeamMemberOutput, error) {
+// UpdateTeamMemberWithContext mocks base method
+func (m *MockCodeStarAPI) UpdateTeamMemberWithContext(arg0 aws.Context, arg1 *codestar.UpdateTeamMemberInput, arg2 ...request.Option) (*codestar.UpdateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +878,14 @@ func (m *MockCodeStarAPI) UpdateTeamMemberWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// UpdateTeamMemberWithContext indicates an expected call of UpdateTeamMemberWithContext.
+// UpdateTeamMemberWithContext indicates an expected call of UpdateTeamMemberWithContext
 func (mr *MockCodeStarAPIMockRecorder) UpdateTeamMemberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTeamMemberWithContext", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateTeamMemberWithContext), varargs...)
 }
 
-// UpdateUserProfile mocks base method.
+// UpdateUserProfile mocks base method
 func (m *MockCodeStarAPI) UpdateUserProfile(arg0 *codestar.UpdateUserProfileInput) (*codestar.UpdateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUserProfile", arg0)
@@ -895,13 +894,13 @@ func (m *MockCodeStarAPI) UpdateUserProfile(arg0 *codestar.UpdateUserProfileInpu
 	return ret0, ret1
 }
 
-// UpdateUserProfile indicates an expected call of UpdateUserProfile.
+// UpdateUserProfile indicates an expected call of UpdateUserProfile
 func (mr *MockCodeStarAPIMockRecorder) UpdateUserProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserProfile", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateUserProfile), arg0)
 }
 
-// UpdateUserProfileRequest mocks base method.
+// UpdateUserProfileRequest mocks base method
 func (m *MockCodeStarAPI) UpdateUserProfileRequest(arg0 *codestar.UpdateUserProfileInput) (*request.Request, *codestar.UpdateUserProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUserProfileRequest", arg0)
@@ -910,14 +909,14 @@ func (m *MockCodeStarAPI) UpdateUserProfileRequest(arg0 *codestar.UpdateUserProf
 	return ret0, ret1
 }
 
-// UpdateUserProfileRequest indicates an expected call of UpdateUserProfileRequest.
+// UpdateUserProfileRequest indicates an expected call of UpdateUserProfileRequest
 func (mr *MockCodeStarAPIMockRecorder) UpdateUserProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserProfileRequest", reflect.TypeOf((*MockCodeStarAPI)(nil).UpdateUserProfileRequest), arg0)
 }
 
-// UpdateUserProfileWithContext mocks base method.
-func (m *MockCodeStarAPI) UpdateUserProfileWithContext(arg0 context.Context, arg1 *codestar.UpdateUserProfileInput, arg2 ...request.Option) (*codestar.UpdateUserProfileOutput, error) {
+// UpdateUserProfileWithContext mocks base method
+func (m *MockCodeStarAPI) UpdateUserProfileWithContext(arg0 aws.Context, arg1 *codestar.UpdateUserProfileInput, arg2 ...request.Option) (*codestar.UpdateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,7 +928,7 @@ func (m *MockCodeStarAPI) UpdateUserProfileWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// UpdateUserProfileWithContext indicates an expected call of UpdateUserProfileWithContext.
+// UpdateUserProfileWithContext indicates an expected call of UpdateUserProfileWithContext
 func (mr *MockCodeStarAPIMockRecorder) UpdateUserProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

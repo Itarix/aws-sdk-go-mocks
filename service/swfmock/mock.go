@@ -5,38 +5,37 @@
 package swfmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	swf "github.com/aws/aws-sdk-go/service/swf"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockSWFAPI is a mock of SWFAPI interface.
+// MockSWFAPI is a mock of SWFAPI interface
 type MockSWFAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockSWFAPIMockRecorder
 }
 
-// MockSWFAPIMockRecorder is the mock recorder for MockSWFAPI.
+// MockSWFAPIMockRecorder is the mock recorder for MockSWFAPI
 type MockSWFAPIMockRecorder struct {
 	mock *MockSWFAPI
 }
 
-// NewMockSWFAPI creates a new mock instance.
+// NewMockSWFAPI creates a new mock instance
 func NewMockSWFAPI(ctrl *gomock.Controller) *MockSWFAPI {
 	mock := &MockSWFAPI{ctrl: ctrl}
 	mock.recorder = &MockSWFAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockSWFAPI) EXPECT() *MockSWFAPIMockRecorder {
 	return m.recorder
 }
 
-// CountClosedWorkflowExecutions mocks base method.
+// CountClosedWorkflowExecutions mocks base method
 func (m *MockSWFAPI) CountClosedWorkflowExecutions(arg0 *swf.CountClosedWorkflowExecutionsInput) (*swf.WorkflowExecutionCount, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountClosedWorkflowExecutions", arg0)
@@ -45,13 +44,13 @@ func (m *MockSWFAPI) CountClosedWorkflowExecutions(arg0 *swf.CountClosedWorkflow
 	return ret0, ret1
 }
 
-// CountClosedWorkflowExecutions indicates an expected call of CountClosedWorkflowExecutions.
+// CountClosedWorkflowExecutions indicates an expected call of CountClosedWorkflowExecutions
 func (mr *MockSWFAPIMockRecorder) CountClosedWorkflowExecutions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountClosedWorkflowExecutions", reflect.TypeOf((*MockSWFAPI)(nil).CountClosedWorkflowExecutions), arg0)
 }
 
-// CountClosedWorkflowExecutionsRequest mocks base method.
+// CountClosedWorkflowExecutionsRequest mocks base method
 func (m *MockSWFAPI) CountClosedWorkflowExecutionsRequest(arg0 *swf.CountClosedWorkflowExecutionsInput) (*request.Request, *swf.WorkflowExecutionCount) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountClosedWorkflowExecutionsRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockSWFAPI) CountClosedWorkflowExecutionsRequest(arg0 *swf.CountClosedW
 	return ret0, ret1
 }
 
-// CountClosedWorkflowExecutionsRequest indicates an expected call of CountClosedWorkflowExecutionsRequest.
+// CountClosedWorkflowExecutionsRequest indicates an expected call of CountClosedWorkflowExecutionsRequest
 func (mr *MockSWFAPIMockRecorder) CountClosedWorkflowExecutionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountClosedWorkflowExecutionsRequest", reflect.TypeOf((*MockSWFAPI)(nil).CountClosedWorkflowExecutionsRequest), arg0)
 }
 
-// CountClosedWorkflowExecutionsWithContext mocks base method.
-func (m *MockSWFAPI) CountClosedWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.CountClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
+// CountClosedWorkflowExecutionsWithContext mocks base method
+func (m *MockSWFAPI) CountClosedWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.CountClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockSWFAPI) CountClosedWorkflowExecutionsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// CountClosedWorkflowExecutionsWithContext indicates an expected call of CountClosedWorkflowExecutionsWithContext.
+// CountClosedWorkflowExecutionsWithContext indicates an expected call of CountClosedWorkflowExecutionsWithContext
 func (mr *MockSWFAPIMockRecorder) CountClosedWorkflowExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountClosedWorkflowExecutionsWithContext", reflect.TypeOf((*MockSWFAPI)(nil).CountClosedWorkflowExecutionsWithContext), varargs...)
 }
 
-// CountOpenWorkflowExecutions mocks base method.
+// CountOpenWorkflowExecutions mocks base method
 func (m *MockSWFAPI) CountOpenWorkflowExecutions(arg0 *swf.CountOpenWorkflowExecutionsInput) (*swf.WorkflowExecutionCount, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountOpenWorkflowExecutions", arg0)
@@ -95,13 +94,13 @@ func (m *MockSWFAPI) CountOpenWorkflowExecutions(arg0 *swf.CountOpenWorkflowExec
 	return ret0, ret1
 }
 
-// CountOpenWorkflowExecutions indicates an expected call of CountOpenWorkflowExecutions.
+// CountOpenWorkflowExecutions indicates an expected call of CountOpenWorkflowExecutions
 func (mr *MockSWFAPIMockRecorder) CountOpenWorkflowExecutions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountOpenWorkflowExecutions", reflect.TypeOf((*MockSWFAPI)(nil).CountOpenWorkflowExecutions), arg0)
 }
 
-// CountOpenWorkflowExecutionsRequest mocks base method.
+// CountOpenWorkflowExecutionsRequest mocks base method
 func (m *MockSWFAPI) CountOpenWorkflowExecutionsRequest(arg0 *swf.CountOpenWorkflowExecutionsInput) (*request.Request, *swf.WorkflowExecutionCount) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountOpenWorkflowExecutionsRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockSWFAPI) CountOpenWorkflowExecutionsRequest(arg0 *swf.CountOpenWorkf
 	return ret0, ret1
 }
 
-// CountOpenWorkflowExecutionsRequest indicates an expected call of CountOpenWorkflowExecutionsRequest.
+// CountOpenWorkflowExecutionsRequest indicates an expected call of CountOpenWorkflowExecutionsRequest
 func (mr *MockSWFAPIMockRecorder) CountOpenWorkflowExecutionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountOpenWorkflowExecutionsRequest", reflect.TypeOf((*MockSWFAPI)(nil).CountOpenWorkflowExecutionsRequest), arg0)
 }
 
-// CountOpenWorkflowExecutionsWithContext mocks base method.
-func (m *MockSWFAPI) CountOpenWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.CountOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
+// CountOpenWorkflowExecutionsWithContext mocks base method
+func (m *MockSWFAPI) CountOpenWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.CountOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockSWFAPI) CountOpenWorkflowExecutionsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// CountOpenWorkflowExecutionsWithContext indicates an expected call of CountOpenWorkflowExecutionsWithContext.
+// CountOpenWorkflowExecutionsWithContext indicates an expected call of CountOpenWorkflowExecutionsWithContext
 func (mr *MockSWFAPIMockRecorder) CountOpenWorkflowExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountOpenWorkflowExecutionsWithContext", reflect.TypeOf((*MockSWFAPI)(nil).CountOpenWorkflowExecutionsWithContext), varargs...)
 }
 
-// CountPendingActivityTasks mocks base method.
+// CountPendingActivityTasks mocks base method
 func (m *MockSWFAPI) CountPendingActivityTasks(arg0 *swf.CountPendingActivityTasksInput) (*swf.PendingTaskCount, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountPendingActivityTasks", arg0)
@@ -145,13 +144,13 @@ func (m *MockSWFAPI) CountPendingActivityTasks(arg0 *swf.CountPendingActivityTas
 	return ret0, ret1
 }
 
-// CountPendingActivityTasks indicates an expected call of CountPendingActivityTasks.
+// CountPendingActivityTasks indicates an expected call of CountPendingActivityTasks
 func (mr *MockSWFAPIMockRecorder) CountPendingActivityTasks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountPendingActivityTasks", reflect.TypeOf((*MockSWFAPI)(nil).CountPendingActivityTasks), arg0)
 }
 
-// CountPendingActivityTasksRequest mocks base method.
+// CountPendingActivityTasksRequest mocks base method
 func (m *MockSWFAPI) CountPendingActivityTasksRequest(arg0 *swf.CountPendingActivityTasksInput) (*request.Request, *swf.PendingTaskCount) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountPendingActivityTasksRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockSWFAPI) CountPendingActivityTasksRequest(arg0 *swf.CountPendingActi
 	return ret0, ret1
 }
 
-// CountPendingActivityTasksRequest indicates an expected call of CountPendingActivityTasksRequest.
+// CountPendingActivityTasksRequest indicates an expected call of CountPendingActivityTasksRequest
 func (mr *MockSWFAPIMockRecorder) CountPendingActivityTasksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountPendingActivityTasksRequest", reflect.TypeOf((*MockSWFAPI)(nil).CountPendingActivityTasksRequest), arg0)
 }
 
-// CountPendingActivityTasksWithContext mocks base method.
-func (m *MockSWFAPI) CountPendingActivityTasksWithContext(arg0 context.Context, arg1 *swf.CountPendingActivityTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
+// CountPendingActivityTasksWithContext mocks base method
+func (m *MockSWFAPI) CountPendingActivityTasksWithContext(arg0 aws.Context, arg1 *swf.CountPendingActivityTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockSWFAPI) CountPendingActivityTasksWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CountPendingActivityTasksWithContext indicates an expected call of CountPendingActivityTasksWithContext.
+// CountPendingActivityTasksWithContext indicates an expected call of CountPendingActivityTasksWithContext
 func (mr *MockSWFAPIMockRecorder) CountPendingActivityTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountPendingActivityTasksWithContext", reflect.TypeOf((*MockSWFAPI)(nil).CountPendingActivityTasksWithContext), varargs...)
 }
 
-// CountPendingDecisionTasks mocks base method.
+// CountPendingDecisionTasks mocks base method
 func (m *MockSWFAPI) CountPendingDecisionTasks(arg0 *swf.CountPendingDecisionTasksInput) (*swf.PendingTaskCount, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountPendingDecisionTasks", arg0)
@@ -195,13 +194,13 @@ func (m *MockSWFAPI) CountPendingDecisionTasks(arg0 *swf.CountPendingDecisionTas
 	return ret0, ret1
 }
 
-// CountPendingDecisionTasks indicates an expected call of CountPendingDecisionTasks.
+// CountPendingDecisionTasks indicates an expected call of CountPendingDecisionTasks
 func (mr *MockSWFAPIMockRecorder) CountPendingDecisionTasks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountPendingDecisionTasks", reflect.TypeOf((*MockSWFAPI)(nil).CountPendingDecisionTasks), arg0)
 }
 
-// CountPendingDecisionTasksRequest mocks base method.
+// CountPendingDecisionTasksRequest mocks base method
 func (m *MockSWFAPI) CountPendingDecisionTasksRequest(arg0 *swf.CountPendingDecisionTasksInput) (*request.Request, *swf.PendingTaskCount) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CountPendingDecisionTasksRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockSWFAPI) CountPendingDecisionTasksRequest(arg0 *swf.CountPendingDeci
 	return ret0, ret1
 }
 
-// CountPendingDecisionTasksRequest indicates an expected call of CountPendingDecisionTasksRequest.
+// CountPendingDecisionTasksRequest indicates an expected call of CountPendingDecisionTasksRequest
 func (mr *MockSWFAPIMockRecorder) CountPendingDecisionTasksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountPendingDecisionTasksRequest", reflect.TypeOf((*MockSWFAPI)(nil).CountPendingDecisionTasksRequest), arg0)
 }
 
-// CountPendingDecisionTasksWithContext mocks base method.
-func (m *MockSWFAPI) CountPendingDecisionTasksWithContext(arg0 context.Context, arg1 *swf.CountPendingDecisionTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
+// CountPendingDecisionTasksWithContext mocks base method
+func (m *MockSWFAPI) CountPendingDecisionTasksWithContext(arg0 aws.Context, arg1 *swf.CountPendingDecisionTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockSWFAPI) CountPendingDecisionTasksWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CountPendingDecisionTasksWithContext indicates an expected call of CountPendingDecisionTasksWithContext.
+// CountPendingDecisionTasksWithContext indicates an expected call of CountPendingDecisionTasksWithContext
 func (mr *MockSWFAPIMockRecorder) CountPendingDecisionTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CountPendingDecisionTasksWithContext", reflect.TypeOf((*MockSWFAPI)(nil).CountPendingDecisionTasksWithContext), varargs...)
 }
 
-// DeprecateActivityType mocks base method.
+// DeprecateActivityType mocks base method
 func (m *MockSWFAPI) DeprecateActivityType(arg0 *swf.DeprecateActivityTypeInput) (*swf.DeprecateActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeprecateActivityType", arg0)
@@ -245,13 +244,13 @@ func (m *MockSWFAPI) DeprecateActivityType(arg0 *swf.DeprecateActivityTypeInput)
 	return ret0, ret1
 }
 
-// DeprecateActivityType indicates an expected call of DeprecateActivityType.
+// DeprecateActivityType indicates an expected call of DeprecateActivityType
 func (mr *MockSWFAPIMockRecorder) DeprecateActivityType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateActivityType", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateActivityType), arg0)
 }
 
-// DeprecateActivityTypeRequest mocks base method.
+// DeprecateActivityTypeRequest mocks base method
 func (m *MockSWFAPI) DeprecateActivityTypeRequest(arg0 *swf.DeprecateActivityTypeInput) (*request.Request, *swf.DeprecateActivityTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeprecateActivityTypeRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockSWFAPI) DeprecateActivityTypeRequest(arg0 *swf.DeprecateActivityTyp
 	return ret0, ret1
 }
 
-// DeprecateActivityTypeRequest indicates an expected call of DeprecateActivityTypeRequest.
+// DeprecateActivityTypeRequest indicates an expected call of DeprecateActivityTypeRequest
 func (mr *MockSWFAPIMockRecorder) DeprecateActivityTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateActivityTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateActivityTypeRequest), arg0)
 }
 
-// DeprecateActivityTypeWithContext mocks base method.
-func (m *MockSWFAPI) DeprecateActivityTypeWithContext(arg0 context.Context, arg1 *swf.DeprecateActivityTypeInput, arg2 ...request.Option) (*swf.DeprecateActivityTypeOutput, error) {
+// DeprecateActivityTypeWithContext mocks base method
+func (m *MockSWFAPI) DeprecateActivityTypeWithContext(arg0 aws.Context, arg1 *swf.DeprecateActivityTypeInput, arg2 ...request.Option) (*swf.DeprecateActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockSWFAPI) DeprecateActivityTypeWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeprecateActivityTypeWithContext indicates an expected call of DeprecateActivityTypeWithContext.
+// DeprecateActivityTypeWithContext indicates an expected call of DeprecateActivityTypeWithContext
 func (mr *MockSWFAPIMockRecorder) DeprecateActivityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateActivityTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateActivityTypeWithContext), varargs...)
 }
 
-// DeprecateDomain mocks base method.
+// DeprecateDomain mocks base method
 func (m *MockSWFAPI) DeprecateDomain(arg0 *swf.DeprecateDomainInput) (*swf.DeprecateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeprecateDomain", arg0)
@@ -295,13 +294,13 @@ func (m *MockSWFAPI) DeprecateDomain(arg0 *swf.DeprecateDomainInput) (*swf.Depre
 	return ret0, ret1
 }
 
-// DeprecateDomain indicates an expected call of DeprecateDomain.
+// DeprecateDomain indicates an expected call of DeprecateDomain
 func (mr *MockSWFAPIMockRecorder) DeprecateDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateDomain", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateDomain), arg0)
 }
 
-// DeprecateDomainRequest mocks base method.
+// DeprecateDomainRequest mocks base method
 func (m *MockSWFAPI) DeprecateDomainRequest(arg0 *swf.DeprecateDomainInput) (*request.Request, *swf.DeprecateDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeprecateDomainRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockSWFAPI) DeprecateDomainRequest(arg0 *swf.DeprecateDomainInput) (*re
 	return ret0, ret1
 }
 
-// DeprecateDomainRequest indicates an expected call of DeprecateDomainRequest.
+// DeprecateDomainRequest indicates an expected call of DeprecateDomainRequest
 func (mr *MockSWFAPIMockRecorder) DeprecateDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateDomainRequest", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateDomainRequest), arg0)
 }
 
-// DeprecateDomainWithContext mocks base method.
-func (m *MockSWFAPI) DeprecateDomainWithContext(arg0 context.Context, arg1 *swf.DeprecateDomainInput, arg2 ...request.Option) (*swf.DeprecateDomainOutput, error) {
+// DeprecateDomainWithContext mocks base method
+func (m *MockSWFAPI) DeprecateDomainWithContext(arg0 aws.Context, arg1 *swf.DeprecateDomainInput, arg2 ...request.Option) (*swf.DeprecateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockSWFAPI) DeprecateDomainWithContext(arg0 context.Context, arg1 *swf.
 	return ret0, ret1
 }
 
-// DeprecateDomainWithContext indicates an expected call of DeprecateDomainWithContext.
+// DeprecateDomainWithContext indicates an expected call of DeprecateDomainWithContext
 func (mr *MockSWFAPIMockRecorder) DeprecateDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateDomainWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateDomainWithContext), varargs...)
 }
 
-// DeprecateWorkflowType mocks base method.
+// DeprecateWorkflowType mocks base method
 func (m *MockSWFAPI) DeprecateWorkflowType(arg0 *swf.DeprecateWorkflowTypeInput) (*swf.DeprecateWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeprecateWorkflowType", arg0)
@@ -345,13 +344,13 @@ func (m *MockSWFAPI) DeprecateWorkflowType(arg0 *swf.DeprecateWorkflowTypeInput)
 	return ret0, ret1
 }
 
-// DeprecateWorkflowType indicates an expected call of DeprecateWorkflowType.
+// DeprecateWorkflowType indicates an expected call of DeprecateWorkflowType
 func (mr *MockSWFAPIMockRecorder) DeprecateWorkflowType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateWorkflowType", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateWorkflowType), arg0)
 }
 
-// DeprecateWorkflowTypeRequest mocks base method.
+// DeprecateWorkflowTypeRequest mocks base method
 func (m *MockSWFAPI) DeprecateWorkflowTypeRequest(arg0 *swf.DeprecateWorkflowTypeInput) (*request.Request, *swf.DeprecateWorkflowTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeprecateWorkflowTypeRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockSWFAPI) DeprecateWorkflowTypeRequest(arg0 *swf.DeprecateWorkflowTyp
 	return ret0, ret1
 }
 
-// DeprecateWorkflowTypeRequest indicates an expected call of DeprecateWorkflowTypeRequest.
+// DeprecateWorkflowTypeRequest indicates an expected call of DeprecateWorkflowTypeRequest
 func (mr *MockSWFAPIMockRecorder) DeprecateWorkflowTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateWorkflowTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateWorkflowTypeRequest), arg0)
 }
 
-// DeprecateWorkflowTypeWithContext mocks base method.
-func (m *MockSWFAPI) DeprecateWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.DeprecateWorkflowTypeInput, arg2 ...request.Option) (*swf.DeprecateWorkflowTypeOutput, error) {
+// DeprecateWorkflowTypeWithContext mocks base method
+func (m *MockSWFAPI) DeprecateWorkflowTypeWithContext(arg0 aws.Context, arg1 *swf.DeprecateWorkflowTypeInput, arg2 ...request.Option) (*swf.DeprecateWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockSWFAPI) DeprecateWorkflowTypeWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeprecateWorkflowTypeWithContext indicates an expected call of DeprecateWorkflowTypeWithContext.
+// DeprecateWorkflowTypeWithContext indicates an expected call of DeprecateWorkflowTypeWithContext
 func (mr *MockSWFAPIMockRecorder) DeprecateWorkflowTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprecateWorkflowTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DeprecateWorkflowTypeWithContext), varargs...)
 }
 
-// DescribeActivityType mocks base method.
+// DescribeActivityType mocks base method
 func (m *MockSWFAPI) DescribeActivityType(arg0 *swf.DescribeActivityTypeInput) (*swf.DescribeActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeActivityType", arg0)
@@ -395,13 +394,13 @@ func (m *MockSWFAPI) DescribeActivityType(arg0 *swf.DescribeActivityTypeInput) (
 	return ret0, ret1
 }
 
-// DescribeActivityType indicates an expected call of DescribeActivityType.
+// DescribeActivityType indicates an expected call of DescribeActivityType
 func (mr *MockSWFAPIMockRecorder) DescribeActivityType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivityType", reflect.TypeOf((*MockSWFAPI)(nil).DescribeActivityType), arg0)
 }
 
-// DescribeActivityTypeRequest mocks base method.
+// DescribeActivityTypeRequest mocks base method
 func (m *MockSWFAPI) DescribeActivityTypeRequest(arg0 *swf.DescribeActivityTypeInput) (*request.Request, *swf.DescribeActivityTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeActivityTypeRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockSWFAPI) DescribeActivityTypeRequest(arg0 *swf.DescribeActivityTypeI
 	return ret0, ret1
 }
 
-// DescribeActivityTypeRequest indicates an expected call of DescribeActivityTypeRequest.
+// DescribeActivityTypeRequest indicates an expected call of DescribeActivityTypeRequest
 func (mr *MockSWFAPIMockRecorder) DescribeActivityTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivityTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).DescribeActivityTypeRequest), arg0)
 }
 
-// DescribeActivityTypeWithContext mocks base method.
-func (m *MockSWFAPI) DescribeActivityTypeWithContext(arg0 context.Context, arg1 *swf.DescribeActivityTypeInput, arg2 ...request.Option) (*swf.DescribeActivityTypeOutput, error) {
+// DescribeActivityTypeWithContext mocks base method
+func (m *MockSWFAPI) DescribeActivityTypeWithContext(arg0 aws.Context, arg1 *swf.DescribeActivityTypeInput, arg2 ...request.Option) (*swf.DescribeActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockSWFAPI) DescribeActivityTypeWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeActivityTypeWithContext indicates an expected call of DescribeActivityTypeWithContext.
+// DescribeActivityTypeWithContext indicates an expected call of DescribeActivityTypeWithContext
 func (mr *MockSWFAPIMockRecorder) DescribeActivityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivityTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DescribeActivityTypeWithContext), varargs...)
 }
 
-// DescribeDomain mocks base method.
+// DescribeDomain mocks base method
 func (m *MockSWFAPI) DescribeDomain(arg0 *swf.DescribeDomainInput) (*swf.DescribeDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDomain", arg0)
@@ -445,13 +444,13 @@ func (m *MockSWFAPI) DescribeDomain(arg0 *swf.DescribeDomainInput) (*swf.Describ
 	return ret0, ret1
 }
 
-// DescribeDomain indicates an expected call of DescribeDomain.
+// DescribeDomain indicates an expected call of DescribeDomain
 func (mr *MockSWFAPIMockRecorder) DescribeDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomain", reflect.TypeOf((*MockSWFAPI)(nil).DescribeDomain), arg0)
 }
 
-// DescribeDomainRequest mocks base method.
+// DescribeDomainRequest mocks base method
 func (m *MockSWFAPI) DescribeDomainRequest(arg0 *swf.DescribeDomainInput) (*request.Request, *swf.DescribeDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDomainRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockSWFAPI) DescribeDomainRequest(arg0 *swf.DescribeDomainInput) (*requ
 	return ret0, ret1
 }
 
-// DescribeDomainRequest indicates an expected call of DescribeDomainRequest.
+// DescribeDomainRequest indicates an expected call of DescribeDomainRequest
 func (mr *MockSWFAPIMockRecorder) DescribeDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainRequest", reflect.TypeOf((*MockSWFAPI)(nil).DescribeDomainRequest), arg0)
 }
 
-// DescribeDomainWithContext mocks base method.
-func (m *MockSWFAPI) DescribeDomainWithContext(arg0 context.Context, arg1 *swf.DescribeDomainInput, arg2 ...request.Option) (*swf.DescribeDomainOutput, error) {
+// DescribeDomainWithContext mocks base method
+func (m *MockSWFAPI) DescribeDomainWithContext(arg0 aws.Context, arg1 *swf.DescribeDomainInput, arg2 ...request.Option) (*swf.DescribeDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockSWFAPI) DescribeDomainWithContext(arg0 context.Context, arg1 *swf.D
 	return ret0, ret1
 }
 
-// DescribeDomainWithContext indicates an expected call of DescribeDomainWithContext.
+// DescribeDomainWithContext indicates an expected call of DescribeDomainWithContext
 func (mr *MockSWFAPIMockRecorder) DescribeDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DescribeDomainWithContext), varargs...)
 }
 
-// DescribeWorkflowExecution mocks base method.
+// DescribeWorkflowExecution mocks base method
 func (m *MockSWFAPI) DescribeWorkflowExecution(arg0 *swf.DescribeWorkflowExecutionInput) (*swf.DescribeWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeWorkflowExecution", arg0)
@@ -495,13 +494,13 @@ func (m *MockSWFAPI) DescribeWorkflowExecution(arg0 *swf.DescribeWorkflowExecuti
 	return ret0, ret1
 }
 
-// DescribeWorkflowExecution indicates an expected call of DescribeWorkflowExecution.
+// DescribeWorkflowExecution indicates an expected call of DescribeWorkflowExecution
 func (mr *MockSWFAPIMockRecorder) DescribeWorkflowExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowExecution", reflect.TypeOf((*MockSWFAPI)(nil).DescribeWorkflowExecution), arg0)
 }
 
-// DescribeWorkflowExecutionRequest mocks base method.
+// DescribeWorkflowExecutionRequest mocks base method
 func (m *MockSWFAPI) DescribeWorkflowExecutionRequest(arg0 *swf.DescribeWorkflowExecutionInput) (*request.Request, *swf.DescribeWorkflowExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeWorkflowExecutionRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockSWFAPI) DescribeWorkflowExecutionRequest(arg0 *swf.DescribeWorkflow
 	return ret0, ret1
 }
 
-// DescribeWorkflowExecutionRequest indicates an expected call of DescribeWorkflowExecutionRequest.
+// DescribeWorkflowExecutionRequest indicates an expected call of DescribeWorkflowExecutionRequest
 func (mr *MockSWFAPIMockRecorder) DescribeWorkflowExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowExecutionRequest", reflect.TypeOf((*MockSWFAPI)(nil).DescribeWorkflowExecutionRequest), arg0)
 }
 
-// DescribeWorkflowExecutionWithContext mocks base method.
-func (m *MockSWFAPI) DescribeWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.DescribeWorkflowExecutionInput, arg2 ...request.Option) (*swf.DescribeWorkflowExecutionOutput, error) {
+// DescribeWorkflowExecutionWithContext mocks base method
+func (m *MockSWFAPI) DescribeWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.DescribeWorkflowExecutionInput, arg2 ...request.Option) (*swf.DescribeWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockSWFAPI) DescribeWorkflowExecutionWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DescribeWorkflowExecutionWithContext indicates an expected call of DescribeWorkflowExecutionWithContext.
+// DescribeWorkflowExecutionWithContext indicates an expected call of DescribeWorkflowExecutionWithContext
 func (mr *MockSWFAPIMockRecorder) DescribeWorkflowExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowExecutionWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DescribeWorkflowExecutionWithContext), varargs...)
 }
 
-// DescribeWorkflowType mocks base method.
+// DescribeWorkflowType mocks base method
 func (m *MockSWFAPI) DescribeWorkflowType(arg0 *swf.DescribeWorkflowTypeInput) (*swf.DescribeWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeWorkflowType", arg0)
@@ -545,13 +544,13 @@ func (m *MockSWFAPI) DescribeWorkflowType(arg0 *swf.DescribeWorkflowTypeInput) (
 	return ret0, ret1
 }
 
-// DescribeWorkflowType indicates an expected call of DescribeWorkflowType.
+// DescribeWorkflowType indicates an expected call of DescribeWorkflowType
 func (mr *MockSWFAPIMockRecorder) DescribeWorkflowType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowType", reflect.TypeOf((*MockSWFAPI)(nil).DescribeWorkflowType), arg0)
 }
 
-// DescribeWorkflowTypeRequest mocks base method.
+// DescribeWorkflowTypeRequest mocks base method
 func (m *MockSWFAPI) DescribeWorkflowTypeRequest(arg0 *swf.DescribeWorkflowTypeInput) (*request.Request, *swf.DescribeWorkflowTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeWorkflowTypeRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockSWFAPI) DescribeWorkflowTypeRequest(arg0 *swf.DescribeWorkflowTypeI
 	return ret0, ret1
 }
 
-// DescribeWorkflowTypeRequest indicates an expected call of DescribeWorkflowTypeRequest.
+// DescribeWorkflowTypeRequest indicates an expected call of DescribeWorkflowTypeRequest
 func (mr *MockSWFAPIMockRecorder) DescribeWorkflowTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).DescribeWorkflowTypeRequest), arg0)
 }
 
-// DescribeWorkflowTypeWithContext mocks base method.
-func (m *MockSWFAPI) DescribeWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.DescribeWorkflowTypeInput, arg2 ...request.Option) (*swf.DescribeWorkflowTypeOutput, error) {
+// DescribeWorkflowTypeWithContext mocks base method
+func (m *MockSWFAPI) DescribeWorkflowTypeWithContext(arg0 aws.Context, arg1 *swf.DescribeWorkflowTypeInput, arg2 ...request.Option) (*swf.DescribeWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockSWFAPI) DescribeWorkflowTypeWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeWorkflowTypeWithContext indicates an expected call of DescribeWorkflowTypeWithContext.
+// DescribeWorkflowTypeWithContext indicates an expected call of DescribeWorkflowTypeWithContext
 func (mr *MockSWFAPIMockRecorder) DescribeWorkflowTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).DescribeWorkflowTypeWithContext), varargs...)
 }
 
-// GetWorkflowExecutionHistory mocks base method.
+// GetWorkflowExecutionHistory mocks base method
 func (m *MockSWFAPI) GetWorkflowExecutionHistory(arg0 *swf.GetWorkflowExecutionHistoryInput) (*swf.GetWorkflowExecutionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetWorkflowExecutionHistory", arg0)
@@ -595,13 +594,13 @@ func (m *MockSWFAPI) GetWorkflowExecutionHistory(arg0 *swf.GetWorkflowExecutionH
 	return ret0, ret1
 }
 
-// GetWorkflowExecutionHistory indicates an expected call of GetWorkflowExecutionHistory.
+// GetWorkflowExecutionHistory indicates an expected call of GetWorkflowExecutionHistory
 func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistory(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowExecutionHistory", reflect.TypeOf((*MockSWFAPI)(nil).GetWorkflowExecutionHistory), arg0)
 }
 
-// GetWorkflowExecutionHistoryPages mocks base method.
+// GetWorkflowExecutionHistoryPages mocks base method
 func (m *MockSWFAPI) GetWorkflowExecutionHistoryPages(arg0 *swf.GetWorkflowExecutionHistoryInput, arg1 func(*swf.GetWorkflowExecutionHistoryOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetWorkflowExecutionHistoryPages", arg0, arg1)
@@ -609,14 +608,14 @@ func (m *MockSWFAPI) GetWorkflowExecutionHistoryPages(arg0 *swf.GetWorkflowExecu
 	return ret0
 }
 
-// GetWorkflowExecutionHistoryPages indicates an expected call of GetWorkflowExecutionHistoryPages.
+// GetWorkflowExecutionHistoryPages indicates an expected call of GetWorkflowExecutionHistoryPages
 func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistoryPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowExecutionHistoryPages", reflect.TypeOf((*MockSWFAPI)(nil).GetWorkflowExecutionHistoryPages), arg0, arg1)
 }
 
-// GetWorkflowExecutionHistoryPagesWithContext mocks base method.
-func (m *MockSWFAPI) GetWorkflowExecutionHistoryPagesWithContext(arg0 context.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 func(*swf.GetWorkflowExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
+// GetWorkflowExecutionHistoryPagesWithContext mocks base method
+func (m *MockSWFAPI) GetWorkflowExecutionHistoryPagesWithContext(arg0 aws.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 func(*swf.GetWorkflowExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -627,14 +626,14 @@ func (m *MockSWFAPI) GetWorkflowExecutionHistoryPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// GetWorkflowExecutionHistoryPagesWithContext indicates an expected call of GetWorkflowExecutionHistoryPagesWithContext.
+// GetWorkflowExecutionHistoryPagesWithContext indicates an expected call of GetWorkflowExecutionHistoryPagesWithContext
 func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowExecutionHistoryPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).GetWorkflowExecutionHistoryPagesWithContext), varargs...)
 }
 
-// GetWorkflowExecutionHistoryRequest mocks base method.
+// GetWorkflowExecutionHistoryRequest mocks base method
 func (m *MockSWFAPI) GetWorkflowExecutionHistoryRequest(arg0 *swf.GetWorkflowExecutionHistoryInput) (*request.Request, *swf.GetWorkflowExecutionHistoryOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetWorkflowExecutionHistoryRequest", arg0)
@@ -643,14 +642,14 @@ func (m *MockSWFAPI) GetWorkflowExecutionHistoryRequest(arg0 *swf.GetWorkflowExe
 	return ret0, ret1
 }
 
-// GetWorkflowExecutionHistoryRequest indicates an expected call of GetWorkflowExecutionHistoryRequest.
+// GetWorkflowExecutionHistoryRequest indicates an expected call of GetWorkflowExecutionHistoryRequest
 func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistoryRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowExecutionHistoryRequest", reflect.TypeOf((*MockSWFAPI)(nil).GetWorkflowExecutionHistoryRequest), arg0)
 }
 
-// GetWorkflowExecutionHistoryWithContext mocks base method.
-func (m *MockSWFAPI) GetWorkflowExecutionHistoryWithContext(arg0 context.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 ...request.Option) (*swf.GetWorkflowExecutionHistoryOutput, error) {
+// GetWorkflowExecutionHistoryWithContext mocks base method
+func (m *MockSWFAPI) GetWorkflowExecutionHistoryWithContext(arg0 aws.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 ...request.Option) (*swf.GetWorkflowExecutionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -662,14 +661,14 @@ func (m *MockSWFAPI) GetWorkflowExecutionHistoryWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetWorkflowExecutionHistoryWithContext indicates an expected call of GetWorkflowExecutionHistoryWithContext.
+// GetWorkflowExecutionHistoryWithContext indicates an expected call of GetWorkflowExecutionHistoryWithContext
 func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowExecutionHistoryWithContext", reflect.TypeOf((*MockSWFAPI)(nil).GetWorkflowExecutionHistoryWithContext), varargs...)
 }
 
-// ListActivityTypes mocks base method.
+// ListActivityTypes mocks base method
 func (m *MockSWFAPI) ListActivityTypes(arg0 *swf.ListActivityTypesInput) (*swf.ListActivityTypesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivityTypes", arg0)
@@ -678,13 +677,13 @@ func (m *MockSWFAPI) ListActivityTypes(arg0 *swf.ListActivityTypesInput) (*swf.L
 	return ret0, ret1
 }
 
-// ListActivityTypes indicates an expected call of ListActivityTypes.
+// ListActivityTypes indicates an expected call of ListActivityTypes
 func (mr *MockSWFAPIMockRecorder) ListActivityTypes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivityTypes", reflect.TypeOf((*MockSWFAPI)(nil).ListActivityTypes), arg0)
 }
 
-// ListActivityTypesPages mocks base method.
+// ListActivityTypesPages mocks base method
 func (m *MockSWFAPI) ListActivityTypesPages(arg0 *swf.ListActivityTypesInput, arg1 func(*swf.ListActivityTypesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivityTypesPages", arg0, arg1)
@@ -692,14 +691,14 @@ func (m *MockSWFAPI) ListActivityTypesPages(arg0 *swf.ListActivityTypesInput, ar
 	return ret0
 }
 
-// ListActivityTypesPages indicates an expected call of ListActivityTypesPages.
+// ListActivityTypesPages indicates an expected call of ListActivityTypesPages
 func (mr *MockSWFAPIMockRecorder) ListActivityTypesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivityTypesPages", reflect.TypeOf((*MockSWFAPI)(nil).ListActivityTypesPages), arg0, arg1)
 }
 
-// ListActivityTypesPagesWithContext mocks base method.
-func (m *MockSWFAPI) ListActivityTypesPagesWithContext(arg0 context.Context, arg1 *swf.ListActivityTypesInput, arg2 func(*swf.ListActivityTypesOutput, bool) bool, arg3 ...request.Option) error {
+// ListActivityTypesPagesWithContext mocks base method
+func (m *MockSWFAPI) ListActivityTypesPagesWithContext(arg0 aws.Context, arg1 *swf.ListActivityTypesInput, arg2 func(*swf.ListActivityTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -710,14 +709,14 @@ func (m *MockSWFAPI) ListActivityTypesPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListActivityTypesPagesWithContext indicates an expected call of ListActivityTypesPagesWithContext.
+// ListActivityTypesPagesWithContext indicates an expected call of ListActivityTypesPagesWithContext
 func (mr *MockSWFAPIMockRecorder) ListActivityTypesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivityTypesPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListActivityTypesPagesWithContext), varargs...)
 }
 
-// ListActivityTypesRequest mocks base method.
+// ListActivityTypesRequest mocks base method
 func (m *MockSWFAPI) ListActivityTypesRequest(arg0 *swf.ListActivityTypesInput) (*request.Request, *swf.ListActivityTypesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivityTypesRequest", arg0)
@@ -726,14 +725,14 @@ func (m *MockSWFAPI) ListActivityTypesRequest(arg0 *swf.ListActivityTypesInput) 
 	return ret0, ret1
 }
 
-// ListActivityTypesRequest indicates an expected call of ListActivityTypesRequest.
+// ListActivityTypesRequest indicates an expected call of ListActivityTypesRequest
 func (mr *MockSWFAPIMockRecorder) ListActivityTypesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivityTypesRequest", reflect.TypeOf((*MockSWFAPI)(nil).ListActivityTypesRequest), arg0)
 }
 
-// ListActivityTypesWithContext mocks base method.
-func (m *MockSWFAPI) ListActivityTypesWithContext(arg0 context.Context, arg1 *swf.ListActivityTypesInput, arg2 ...request.Option) (*swf.ListActivityTypesOutput, error) {
+// ListActivityTypesWithContext mocks base method
+func (m *MockSWFAPI) ListActivityTypesWithContext(arg0 aws.Context, arg1 *swf.ListActivityTypesInput, arg2 ...request.Option) (*swf.ListActivityTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -745,14 +744,14 @@ func (m *MockSWFAPI) ListActivityTypesWithContext(arg0 context.Context, arg1 *sw
 	return ret0, ret1
 }
 
-// ListActivityTypesWithContext indicates an expected call of ListActivityTypesWithContext.
+// ListActivityTypesWithContext indicates an expected call of ListActivityTypesWithContext
 func (mr *MockSWFAPIMockRecorder) ListActivityTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivityTypesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListActivityTypesWithContext), varargs...)
 }
 
-// ListClosedWorkflowExecutions mocks base method.
+// ListClosedWorkflowExecutions mocks base method
 func (m *MockSWFAPI) ListClosedWorkflowExecutions(arg0 *swf.ListClosedWorkflowExecutionsInput) (*swf.WorkflowExecutionInfos, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListClosedWorkflowExecutions", arg0)
@@ -761,13 +760,13 @@ func (m *MockSWFAPI) ListClosedWorkflowExecutions(arg0 *swf.ListClosedWorkflowEx
 	return ret0, ret1
 }
 
-// ListClosedWorkflowExecutions indicates an expected call of ListClosedWorkflowExecutions.
+// ListClosedWorkflowExecutions indicates an expected call of ListClosedWorkflowExecutions
 func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClosedWorkflowExecutions", reflect.TypeOf((*MockSWFAPI)(nil).ListClosedWorkflowExecutions), arg0)
 }
 
-// ListClosedWorkflowExecutionsPages mocks base method.
+// ListClosedWorkflowExecutionsPages mocks base method
 func (m *MockSWFAPI) ListClosedWorkflowExecutionsPages(arg0 *swf.ListClosedWorkflowExecutionsInput, arg1 func(*swf.WorkflowExecutionInfos, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListClosedWorkflowExecutionsPages", arg0, arg1)
@@ -775,14 +774,14 @@ func (m *MockSWFAPI) ListClosedWorkflowExecutionsPages(arg0 *swf.ListClosedWorkf
 	return ret0
 }
 
-// ListClosedWorkflowExecutionsPages indicates an expected call of ListClosedWorkflowExecutionsPages.
+// ListClosedWorkflowExecutionsPages indicates an expected call of ListClosedWorkflowExecutionsPages
 func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClosedWorkflowExecutionsPages", reflect.TypeOf((*MockSWFAPI)(nil).ListClosedWorkflowExecutionsPages), arg0, arg1)
 }
 
-// ListClosedWorkflowExecutionsPagesWithContext mocks base method.
-func (m *MockSWFAPI) ListClosedWorkflowExecutionsPagesWithContext(arg0 context.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
+// ListClosedWorkflowExecutionsPagesWithContext mocks base method
+func (m *MockSWFAPI) ListClosedWorkflowExecutionsPagesWithContext(arg0 aws.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -793,14 +792,14 @@ func (m *MockSWFAPI) ListClosedWorkflowExecutionsPagesWithContext(arg0 context.C
 	return ret0
 }
 
-// ListClosedWorkflowExecutionsPagesWithContext indicates an expected call of ListClosedWorkflowExecutionsPagesWithContext.
+// ListClosedWorkflowExecutionsPagesWithContext indicates an expected call of ListClosedWorkflowExecutionsPagesWithContext
 func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClosedWorkflowExecutionsPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListClosedWorkflowExecutionsPagesWithContext), varargs...)
 }
 
-// ListClosedWorkflowExecutionsRequest mocks base method.
+// ListClosedWorkflowExecutionsRequest mocks base method
 func (m *MockSWFAPI) ListClosedWorkflowExecutionsRequest(arg0 *swf.ListClosedWorkflowExecutionsInput) (*request.Request, *swf.WorkflowExecutionInfos) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListClosedWorkflowExecutionsRequest", arg0)
@@ -809,14 +808,14 @@ func (m *MockSWFAPI) ListClosedWorkflowExecutionsRequest(arg0 *swf.ListClosedWor
 	return ret0, ret1
 }
 
-// ListClosedWorkflowExecutionsRequest indicates an expected call of ListClosedWorkflowExecutionsRequest.
+// ListClosedWorkflowExecutionsRequest indicates an expected call of ListClosedWorkflowExecutionsRequest
 func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClosedWorkflowExecutionsRequest", reflect.TypeOf((*MockSWFAPI)(nil).ListClosedWorkflowExecutionsRequest), arg0)
 }
 
-// ListClosedWorkflowExecutionsWithContext mocks base method.
-func (m *MockSWFAPI) ListClosedWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
+// ListClosedWorkflowExecutionsWithContext mocks base method
+func (m *MockSWFAPI) ListClosedWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -828,14 +827,14 @@ func (m *MockSWFAPI) ListClosedWorkflowExecutionsWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// ListClosedWorkflowExecutionsWithContext indicates an expected call of ListClosedWorkflowExecutionsWithContext.
+// ListClosedWorkflowExecutionsWithContext indicates an expected call of ListClosedWorkflowExecutionsWithContext
 func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClosedWorkflowExecutionsWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListClosedWorkflowExecutionsWithContext), varargs...)
 }
 
-// ListDomains mocks base method.
+// ListDomains mocks base method
 func (m *MockSWFAPI) ListDomains(arg0 *swf.ListDomainsInput) (*swf.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomains", arg0)
@@ -844,13 +843,13 @@ func (m *MockSWFAPI) ListDomains(arg0 *swf.ListDomainsInput) (*swf.ListDomainsOu
 	return ret0, ret1
 }
 
-// ListDomains indicates an expected call of ListDomains.
+// ListDomains indicates an expected call of ListDomains
 func (mr *MockSWFAPIMockRecorder) ListDomains(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomains", reflect.TypeOf((*MockSWFAPI)(nil).ListDomains), arg0)
 }
 
-// ListDomainsPages mocks base method.
+// ListDomainsPages mocks base method
 func (m *MockSWFAPI) ListDomainsPages(arg0 *swf.ListDomainsInput, arg1 func(*swf.ListDomainsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomainsPages", arg0, arg1)
@@ -858,14 +857,14 @@ func (m *MockSWFAPI) ListDomainsPages(arg0 *swf.ListDomainsInput, arg1 func(*swf
 	return ret0
 }
 
-// ListDomainsPages indicates an expected call of ListDomainsPages.
+// ListDomainsPages indicates an expected call of ListDomainsPages
 func (mr *MockSWFAPIMockRecorder) ListDomainsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsPages", reflect.TypeOf((*MockSWFAPI)(nil).ListDomainsPages), arg0, arg1)
 }
 
-// ListDomainsPagesWithContext mocks base method.
-func (m *MockSWFAPI) ListDomainsPagesWithContext(arg0 context.Context, arg1 *swf.ListDomainsInput, arg2 func(*swf.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
+// ListDomainsPagesWithContext mocks base method
+func (m *MockSWFAPI) ListDomainsPagesWithContext(arg0 aws.Context, arg1 *swf.ListDomainsInput, arg2 func(*swf.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -876,14 +875,14 @@ func (m *MockSWFAPI) ListDomainsPagesWithContext(arg0 context.Context, arg1 *swf
 	return ret0
 }
 
-// ListDomainsPagesWithContext indicates an expected call of ListDomainsPagesWithContext.
+// ListDomainsPagesWithContext indicates an expected call of ListDomainsPagesWithContext
 func (mr *MockSWFAPIMockRecorder) ListDomainsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListDomainsPagesWithContext), varargs...)
 }
 
-// ListDomainsRequest mocks base method.
+// ListDomainsRequest mocks base method
 func (m *MockSWFAPI) ListDomainsRequest(arg0 *swf.ListDomainsInput) (*request.Request, *swf.ListDomainsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomainsRequest", arg0)
@@ -892,14 +891,14 @@ func (m *MockSWFAPI) ListDomainsRequest(arg0 *swf.ListDomainsInput) (*request.Re
 	return ret0, ret1
 }
 
-// ListDomainsRequest indicates an expected call of ListDomainsRequest.
+// ListDomainsRequest indicates an expected call of ListDomainsRequest
 func (mr *MockSWFAPIMockRecorder) ListDomainsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsRequest", reflect.TypeOf((*MockSWFAPI)(nil).ListDomainsRequest), arg0)
 }
 
-// ListDomainsWithContext mocks base method.
-func (m *MockSWFAPI) ListDomainsWithContext(arg0 context.Context, arg1 *swf.ListDomainsInput, arg2 ...request.Option) (*swf.ListDomainsOutput, error) {
+// ListDomainsWithContext mocks base method
+func (m *MockSWFAPI) ListDomainsWithContext(arg0 aws.Context, arg1 *swf.ListDomainsInput, arg2 ...request.Option) (*swf.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -911,14 +910,14 @@ func (m *MockSWFAPI) ListDomainsWithContext(arg0 context.Context, arg1 *swf.List
 	return ret0, ret1
 }
 
-// ListDomainsWithContext indicates an expected call of ListDomainsWithContext.
+// ListDomainsWithContext indicates an expected call of ListDomainsWithContext
 func (mr *MockSWFAPIMockRecorder) ListDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListDomainsWithContext), varargs...)
 }
 
-// ListOpenWorkflowExecutions mocks base method.
+// ListOpenWorkflowExecutions mocks base method
 func (m *MockSWFAPI) ListOpenWorkflowExecutions(arg0 *swf.ListOpenWorkflowExecutionsInput) (*swf.WorkflowExecutionInfos, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOpenWorkflowExecutions", arg0)
@@ -927,13 +926,13 @@ func (m *MockSWFAPI) ListOpenWorkflowExecutions(arg0 *swf.ListOpenWorkflowExecut
 	return ret0, ret1
 }
 
-// ListOpenWorkflowExecutions indicates an expected call of ListOpenWorkflowExecutions.
+// ListOpenWorkflowExecutions indicates an expected call of ListOpenWorkflowExecutions
 func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpenWorkflowExecutions", reflect.TypeOf((*MockSWFAPI)(nil).ListOpenWorkflowExecutions), arg0)
 }
 
-// ListOpenWorkflowExecutionsPages mocks base method.
+// ListOpenWorkflowExecutionsPages mocks base method
 func (m *MockSWFAPI) ListOpenWorkflowExecutionsPages(arg0 *swf.ListOpenWorkflowExecutionsInput, arg1 func(*swf.WorkflowExecutionInfos, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOpenWorkflowExecutionsPages", arg0, arg1)
@@ -941,14 +940,14 @@ func (m *MockSWFAPI) ListOpenWorkflowExecutionsPages(arg0 *swf.ListOpenWorkflowE
 	return ret0
 }
 
-// ListOpenWorkflowExecutionsPages indicates an expected call of ListOpenWorkflowExecutionsPages.
+// ListOpenWorkflowExecutionsPages indicates an expected call of ListOpenWorkflowExecutionsPages
 func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpenWorkflowExecutionsPages", reflect.TypeOf((*MockSWFAPI)(nil).ListOpenWorkflowExecutionsPages), arg0, arg1)
 }
 
-// ListOpenWorkflowExecutionsPagesWithContext mocks base method.
-func (m *MockSWFAPI) ListOpenWorkflowExecutionsPagesWithContext(arg0 context.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
+// ListOpenWorkflowExecutionsPagesWithContext mocks base method
+func (m *MockSWFAPI) ListOpenWorkflowExecutionsPagesWithContext(arg0 aws.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -959,14 +958,14 @@ func (m *MockSWFAPI) ListOpenWorkflowExecutionsPagesWithContext(arg0 context.Con
 	return ret0
 }
 
-// ListOpenWorkflowExecutionsPagesWithContext indicates an expected call of ListOpenWorkflowExecutionsPagesWithContext.
+// ListOpenWorkflowExecutionsPagesWithContext indicates an expected call of ListOpenWorkflowExecutionsPagesWithContext
 func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpenWorkflowExecutionsPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListOpenWorkflowExecutionsPagesWithContext), varargs...)
 }
 
-// ListOpenWorkflowExecutionsRequest mocks base method.
+// ListOpenWorkflowExecutionsRequest mocks base method
 func (m *MockSWFAPI) ListOpenWorkflowExecutionsRequest(arg0 *swf.ListOpenWorkflowExecutionsInput) (*request.Request, *swf.WorkflowExecutionInfos) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOpenWorkflowExecutionsRequest", arg0)
@@ -975,14 +974,14 @@ func (m *MockSWFAPI) ListOpenWorkflowExecutionsRequest(arg0 *swf.ListOpenWorkflo
 	return ret0, ret1
 }
 
-// ListOpenWorkflowExecutionsRequest indicates an expected call of ListOpenWorkflowExecutionsRequest.
+// ListOpenWorkflowExecutionsRequest indicates an expected call of ListOpenWorkflowExecutionsRequest
 func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpenWorkflowExecutionsRequest", reflect.TypeOf((*MockSWFAPI)(nil).ListOpenWorkflowExecutionsRequest), arg0)
 }
 
-// ListOpenWorkflowExecutionsWithContext mocks base method.
-func (m *MockSWFAPI) ListOpenWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
+// ListOpenWorkflowExecutionsWithContext mocks base method
+func (m *MockSWFAPI) ListOpenWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -994,64 +993,14 @@ func (m *MockSWFAPI) ListOpenWorkflowExecutionsWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListOpenWorkflowExecutionsWithContext indicates an expected call of ListOpenWorkflowExecutionsWithContext.
+// ListOpenWorkflowExecutionsWithContext indicates an expected call of ListOpenWorkflowExecutionsWithContext
 func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpenWorkflowExecutionsWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListOpenWorkflowExecutionsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockSWFAPI) ListTagsForResource(arg0 *swf.ListTagsForResourceInput) (*swf.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*swf.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockSWFAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockSWFAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockSWFAPI) ListTagsForResourceRequest(arg0 *swf.ListTagsForResourceInput) (*request.Request, *swf.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*swf.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockSWFAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockSWFAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockSWFAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *swf.ListTagsForResourceInput, arg2 ...request.Option) (*swf.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*swf.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockSWFAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// ListWorkflowTypes mocks base method.
+// ListWorkflowTypes mocks base method
 func (m *MockSWFAPI) ListWorkflowTypes(arg0 *swf.ListWorkflowTypesInput) (*swf.ListWorkflowTypesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListWorkflowTypes", arg0)
@@ -1060,13 +1009,13 @@ func (m *MockSWFAPI) ListWorkflowTypes(arg0 *swf.ListWorkflowTypesInput) (*swf.L
 	return ret0, ret1
 }
 
-// ListWorkflowTypes indicates an expected call of ListWorkflowTypes.
+// ListWorkflowTypes indicates an expected call of ListWorkflowTypes
 func (mr *MockSWFAPIMockRecorder) ListWorkflowTypes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowTypes", reflect.TypeOf((*MockSWFAPI)(nil).ListWorkflowTypes), arg0)
 }
 
-// ListWorkflowTypesPages mocks base method.
+// ListWorkflowTypesPages mocks base method
 func (m *MockSWFAPI) ListWorkflowTypesPages(arg0 *swf.ListWorkflowTypesInput, arg1 func(*swf.ListWorkflowTypesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListWorkflowTypesPages", arg0, arg1)
@@ -1074,14 +1023,14 @@ func (m *MockSWFAPI) ListWorkflowTypesPages(arg0 *swf.ListWorkflowTypesInput, ar
 	return ret0
 }
 
-// ListWorkflowTypesPages indicates an expected call of ListWorkflowTypesPages.
+// ListWorkflowTypesPages indicates an expected call of ListWorkflowTypesPages
 func (mr *MockSWFAPIMockRecorder) ListWorkflowTypesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowTypesPages", reflect.TypeOf((*MockSWFAPI)(nil).ListWorkflowTypesPages), arg0, arg1)
 }
 
-// ListWorkflowTypesPagesWithContext mocks base method.
-func (m *MockSWFAPI) ListWorkflowTypesPagesWithContext(arg0 context.Context, arg1 *swf.ListWorkflowTypesInput, arg2 func(*swf.ListWorkflowTypesOutput, bool) bool, arg3 ...request.Option) error {
+// ListWorkflowTypesPagesWithContext mocks base method
+func (m *MockSWFAPI) ListWorkflowTypesPagesWithContext(arg0 aws.Context, arg1 *swf.ListWorkflowTypesInput, arg2 func(*swf.ListWorkflowTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1092,14 +1041,14 @@ func (m *MockSWFAPI) ListWorkflowTypesPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListWorkflowTypesPagesWithContext indicates an expected call of ListWorkflowTypesPagesWithContext.
+// ListWorkflowTypesPagesWithContext indicates an expected call of ListWorkflowTypesPagesWithContext
 func (mr *MockSWFAPIMockRecorder) ListWorkflowTypesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowTypesPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListWorkflowTypesPagesWithContext), varargs...)
 }
 
-// ListWorkflowTypesRequest mocks base method.
+// ListWorkflowTypesRequest mocks base method
 func (m *MockSWFAPI) ListWorkflowTypesRequest(arg0 *swf.ListWorkflowTypesInput) (*request.Request, *swf.ListWorkflowTypesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListWorkflowTypesRequest", arg0)
@@ -1108,14 +1057,14 @@ func (m *MockSWFAPI) ListWorkflowTypesRequest(arg0 *swf.ListWorkflowTypesInput) 
 	return ret0, ret1
 }
 
-// ListWorkflowTypesRequest indicates an expected call of ListWorkflowTypesRequest.
+// ListWorkflowTypesRequest indicates an expected call of ListWorkflowTypesRequest
 func (mr *MockSWFAPIMockRecorder) ListWorkflowTypesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowTypesRequest", reflect.TypeOf((*MockSWFAPI)(nil).ListWorkflowTypesRequest), arg0)
 }
 
-// ListWorkflowTypesWithContext mocks base method.
-func (m *MockSWFAPI) ListWorkflowTypesWithContext(arg0 context.Context, arg1 *swf.ListWorkflowTypesInput, arg2 ...request.Option) (*swf.ListWorkflowTypesOutput, error) {
+// ListWorkflowTypesWithContext mocks base method
+func (m *MockSWFAPI) ListWorkflowTypesWithContext(arg0 aws.Context, arg1 *swf.ListWorkflowTypesInput, arg2 ...request.Option) (*swf.ListWorkflowTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1127,14 +1076,14 @@ func (m *MockSWFAPI) ListWorkflowTypesWithContext(arg0 context.Context, arg1 *sw
 	return ret0, ret1
 }
 
-// ListWorkflowTypesWithContext indicates an expected call of ListWorkflowTypesWithContext.
+// ListWorkflowTypesWithContext indicates an expected call of ListWorkflowTypesWithContext
 func (mr *MockSWFAPIMockRecorder) ListWorkflowTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowTypesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).ListWorkflowTypesWithContext), varargs...)
 }
 
-// PollForActivityTask mocks base method.
+// PollForActivityTask mocks base method
 func (m *MockSWFAPI) PollForActivityTask(arg0 *swf.PollForActivityTaskInput) (*swf.PollForActivityTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForActivityTask", arg0)
@@ -1143,13 +1092,13 @@ func (m *MockSWFAPI) PollForActivityTask(arg0 *swf.PollForActivityTaskInput) (*s
 	return ret0, ret1
 }
 
-// PollForActivityTask indicates an expected call of PollForActivityTask.
+// PollForActivityTask indicates an expected call of PollForActivityTask
 func (mr *MockSWFAPIMockRecorder) PollForActivityTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForActivityTask", reflect.TypeOf((*MockSWFAPI)(nil).PollForActivityTask), arg0)
 }
 
-// PollForActivityTaskRequest mocks base method.
+// PollForActivityTaskRequest mocks base method
 func (m *MockSWFAPI) PollForActivityTaskRequest(arg0 *swf.PollForActivityTaskInput) (*request.Request, *swf.PollForActivityTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForActivityTaskRequest", arg0)
@@ -1158,14 +1107,14 @@ func (m *MockSWFAPI) PollForActivityTaskRequest(arg0 *swf.PollForActivityTaskInp
 	return ret0, ret1
 }
 
-// PollForActivityTaskRequest indicates an expected call of PollForActivityTaskRequest.
+// PollForActivityTaskRequest indicates an expected call of PollForActivityTaskRequest
 func (mr *MockSWFAPIMockRecorder) PollForActivityTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForActivityTaskRequest", reflect.TypeOf((*MockSWFAPI)(nil).PollForActivityTaskRequest), arg0)
 }
 
-// PollForActivityTaskWithContext mocks base method.
-func (m *MockSWFAPI) PollForActivityTaskWithContext(arg0 context.Context, arg1 *swf.PollForActivityTaskInput, arg2 ...request.Option) (*swf.PollForActivityTaskOutput, error) {
+// PollForActivityTaskWithContext mocks base method
+func (m *MockSWFAPI) PollForActivityTaskWithContext(arg0 aws.Context, arg1 *swf.PollForActivityTaskInput, arg2 ...request.Option) (*swf.PollForActivityTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1177,14 +1126,14 @@ func (m *MockSWFAPI) PollForActivityTaskWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// PollForActivityTaskWithContext indicates an expected call of PollForActivityTaskWithContext.
+// PollForActivityTaskWithContext indicates an expected call of PollForActivityTaskWithContext
 func (mr *MockSWFAPIMockRecorder) PollForActivityTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForActivityTaskWithContext", reflect.TypeOf((*MockSWFAPI)(nil).PollForActivityTaskWithContext), varargs...)
 }
 
-// PollForDecisionTask mocks base method.
+// PollForDecisionTask mocks base method
 func (m *MockSWFAPI) PollForDecisionTask(arg0 *swf.PollForDecisionTaskInput) (*swf.PollForDecisionTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForDecisionTask", arg0)
@@ -1193,13 +1142,13 @@ func (m *MockSWFAPI) PollForDecisionTask(arg0 *swf.PollForDecisionTaskInput) (*s
 	return ret0, ret1
 }
 
-// PollForDecisionTask indicates an expected call of PollForDecisionTask.
+// PollForDecisionTask indicates an expected call of PollForDecisionTask
 func (mr *MockSWFAPIMockRecorder) PollForDecisionTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForDecisionTask", reflect.TypeOf((*MockSWFAPI)(nil).PollForDecisionTask), arg0)
 }
 
-// PollForDecisionTaskPages mocks base method.
+// PollForDecisionTaskPages mocks base method
 func (m *MockSWFAPI) PollForDecisionTaskPages(arg0 *swf.PollForDecisionTaskInput, arg1 func(*swf.PollForDecisionTaskOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForDecisionTaskPages", arg0, arg1)
@@ -1207,14 +1156,14 @@ func (m *MockSWFAPI) PollForDecisionTaskPages(arg0 *swf.PollForDecisionTaskInput
 	return ret0
 }
 
-// PollForDecisionTaskPages indicates an expected call of PollForDecisionTaskPages.
+// PollForDecisionTaskPages indicates an expected call of PollForDecisionTaskPages
 func (mr *MockSWFAPIMockRecorder) PollForDecisionTaskPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForDecisionTaskPages", reflect.TypeOf((*MockSWFAPI)(nil).PollForDecisionTaskPages), arg0, arg1)
 }
 
-// PollForDecisionTaskPagesWithContext mocks base method.
-func (m *MockSWFAPI) PollForDecisionTaskPagesWithContext(arg0 context.Context, arg1 *swf.PollForDecisionTaskInput, arg2 func(*swf.PollForDecisionTaskOutput, bool) bool, arg3 ...request.Option) error {
+// PollForDecisionTaskPagesWithContext mocks base method
+func (m *MockSWFAPI) PollForDecisionTaskPagesWithContext(arg0 aws.Context, arg1 *swf.PollForDecisionTaskInput, arg2 func(*swf.PollForDecisionTaskOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1225,14 +1174,14 @@ func (m *MockSWFAPI) PollForDecisionTaskPagesWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// PollForDecisionTaskPagesWithContext indicates an expected call of PollForDecisionTaskPagesWithContext.
+// PollForDecisionTaskPagesWithContext indicates an expected call of PollForDecisionTaskPagesWithContext
 func (mr *MockSWFAPIMockRecorder) PollForDecisionTaskPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForDecisionTaskPagesWithContext", reflect.TypeOf((*MockSWFAPI)(nil).PollForDecisionTaskPagesWithContext), varargs...)
 }
 
-// PollForDecisionTaskRequest mocks base method.
+// PollForDecisionTaskRequest mocks base method
 func (m *MockSWFAPI) PollForDecisionTaskRequest(arg0 *swf.PollForDecisionTaskInput) (*request.Request, *swf.PollForDecisionTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PollForDecisionTaskRequest", arg0)
@@ -1241,14 +1190,14 @@ func (m *MockSWFAPI) PollForDecisionTaskRequest(arg0 *swf.PollForDecisionTaskInp
 	return ret0, ret1
 }
 
-// PollForDecisionTaskRequest indicates an expected call of PollForDecisionTaskRequest.
+// PollForDecisionTaskRequest indicates an expected call of PollForDecisionTaskRequest
 func (mr *MockSWFAPIMockRecorder) PollForDecisionTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForDecisionTaskRequest", reflect.TypeOf((*MockSWFAPI)(nil).PollForDecisionTaskRequest), arg0)
 }
 
-// PollForDecisionTaskWithContext mocks base method.
-func (m *MockSWFAPI) PollForDecisionTaskWithContext(arg0 context.Context, arg1 *swf.PollForDecisionTaskInput, arg2 ...request.Option) (*swf.PollForDecisionTaskOutput, error) {
+// PollForDecisionTaskWithContext mocks base method
+func (m *MockSWFAPI) PollForDecisionTaskWithContext(arg0 aws.Context, arg1 *swf.PollForDecisionTaskInput, arg2 ...request.Option) (*swf.PollForDecisionTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1260,14 +1209,14 @@ func (m *MockSWFAPI) PollForDecisionTaskWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// PollForDecisionTaskWithContext indicates an expected call of PollForDecisionTaskWithContext.
+// PollForDecisionTaskWithContext indicates an expected call of PollForDecisionTaskWithContext
 func (mr *MockSWFAPIMockRecorder) PollForDecisionTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PollForDecisionTaskWithContext", reflect.TypeOf((*MockSWFAPI)(nil).PollForDecisionTaskWithContext), varargs...)
 }
 
-// RecordActivityTaskHeartbeat mocks base method.
+// RecordActivityTaskHeartbeat mocks base method
 func (m *MockSWFAPI) RecordActivityTaskHeartbeat(arg0 *swf.RecordActivityTaskHeartbeatInput) (*swf.RecordActivityTaskHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RecordActivityTaskHeartbeat", arg0)
@@ -1276,13 +1225,13 @@ func (m *MockSWFAPI) RecordActivityTaskHeartbeat(arg0 *swf.RecordActivityTaskHea
 	return ret0, ret1
 }
 
-// RecordActivityTaskHeartbeat indicates an expected call of RecordActivityTaskHeartbeat.
+// RecordActivityTaskHeartbeat indicates an expected call of RecordActivityTaskHeartbeat
 func (mr *MockSWFAPIMockRecorder) RecordActivityTaskHeartbeat(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RecordActivityTaskHeartbeat", reflect.TypeOf((*MockSWFAPI)(nil).RecordActivityTaskHeartbeat), arg0)
 }
 
-// RecordActivityTaskHeartbeatRequest mocks base method.
+// RecordActivityTaskHeartbeatRequest mocks base method
 func (m *MockSWFAPI) RecordActivityTaskHeartbeatRequest(arg0 *swf.RecordActivityTaskHeartbeatInput) (*request.Request, *swf.RecordActivityTaskHeartbeatOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RecordActivityTaskHeartbeatRequest", arg0)
@@ -1291,14 +1240,14 @@ func (m *MockSWFAPI) RecordActivityTaskHeartbeatRequest(arg0 *swf.RecordActivity
 	return ret0, ret1
 }
 
-// RecordActivityTaskHeartbeatRequest indicates an expected call of RecordActivityTaskHeartbeatRequest.
+// RecordActivityTaskHeartbeatRequest indicates an expected call of RecordActivityTaskHeartbeatRequest
 func (mr *MockSWFAPIMockRecorder) RecordActivityTaskHeartbeatRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RecordActivityTaskHeartbeatRequest", reflect.TypeOf((*MockSWFAPI)(nil).RecordActivityTaskHeartbeatRequest), arg0)
 }
 
-// RecordActivityTaskHeartbeatWithContext mocks base method.
-func (m *MockSWFAPI) RecordActivityTaskHeartbeatWithContext(arg0 context.Context, arg1 *swf.RecordActivityTaskHeartbeatInput, arg2 ...request.Option) (*swf.RecordActivityTaskHeartbeatOutput, error) {
+// RecordActivityTaskHeartbeatWithContext mocks base method
+func (m *MockSWFAPI) RecordActivityTaskHeartbeatWithContext(arg0 aws.Context, arg1 *swf.RecordActivityTaskHeartbeatInput, arg2 ...request.Option) (*swf.RecordActivityTaskHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1310,14 +1259,14 @@ func (m *MockSWFAPI) RecordActivityTaskHeartbeatWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// RecordActivityTaskHeartbeatWithContext indicates an expected call of RecordActivityTaskHeartbeatWithContext.
+// RecordActivityTaskHeartbeatWithContext indicates an expected call of RecordActivityTaskHeartbeatWithContext
 func (mr *MockSWFAPIMockRecorder) RecordActivityTaskHeartbeatWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RecordActivityTaskHeartbeatWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RecordActivityTaskHeartbeatWithContext), varargs...)
 }
 
-// RegisterActivityType mocks base method.
+// RegisterActivityType mocks base method
 func (m *MockSWFAPI) RegisterActivityType(arg0 *swf.RegisterActivityTypeInput) (*swf.RegisterActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterActivityType", arg0)
@@ -1326,13 +1275,13 @@ func (m *MockSWFAPI) RegisterActivityType(arg0 *swf.RegisterActivityTypeInput) (
 	return ret0, ret1
 }
 
-// RegisterActivityType indicates an expected call of RegisterActivityType.
+// RegisterActivityType indicates an expected call of RegisterActivityType
 func (mr *MockSWFAPIMockRecorder) RegisterActivityType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterActivityType", reflect.TypeOf((*MockSWFAPI)(nil).RegisterActivityType), arg0)
 }
 
-// RegisterActivityTypeRequest mocks base method.
+// RegisterActivityTypeRequest mocks base method
 func (m *MockSWFAPI) RegisterActivityTypeRequest(arg0 *swf.RegisterActivityTypeInput) (*request.Request, *swf.RegisterActivityTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterActivityTypeRequest", arg0)
@@ -1341,14 +1290,14 @@ func (m *MockSWFAPI) RegisterActivityTypeRequest(arg0 *swf.RegisterActivityTypeI
 	return ret0, ret1
 }
 
-// RegisterActivityTypeRequest indicates an expected call of RegisterActivityTypeRequest.
+// RegisterActivityTypeRequest indicates an expected call of RegisterActivityTypeRequest
 func (mr *MockSWFAPIMockRecorder) RegisterActivityTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterActivityTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).RegisterActivityTypeRequest), arg0)
 }
 
-// RegisterActivityTypeWithContext mocks base method.
-func (m *MockSWFAPI) RegisterActivityTypeWithContext(arg0 context.Context, arg1 *swf.RegisterActivityTypeInput, arg2 ...request.Option) (*swf.RegisterActivityTypeOutput, error) {
+// RegisterActivityTypeWithContext mocks base method
+func (m *MockSWFAPI) RegisterActivityTypeWithContext(arg0 aws.Context, arg1 *swf.RegisterActivityTypeInput, arg2 ...request.Option) (*swf.RegisterActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1360,14 +1309,14 @@ func (m *MockSWFAPI) RegisterActivityTypeWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// RegisterActivityTypeWithContext indicates an expected call of RegisterActivityTypeWithContext.
+// RegisterActivityTypeWithContext indicates an expected call of RegisterActivityTypeWithContext
 func (mr *MockSWFAPIMockRecorder) RegisterActivityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterActivityTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RegisterActivityTypeWithContext), varargs...)
 }
 
-// RegisterDomain mocks base method.
+// RegisterDomain mocks base method
 func (m *MockSWFAPI) RegisterDomain(arg0 *swf.RegisterDomainInput) (*swf.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterDomain", arg0)
@@ -1376,13 +1325,13 @@ func (m *MockSWFAPI) RegisterDomain(arg0 *swf.RegisterDomainInput) (*swf.Registe
 	return ret0, ret1
 }
 
-// RegisterDomain indicates an expected call of RegisterDomain.
+// RegisterDomain indicates an expected call of RegisterDomain
 func (mr *MockSWFAPIMockRecorder) RegisterDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomain", reflect.TypeOf((*MockSWFAPI)(nil).RegisterDomain), arg0)
 }
 
-// RegisterDomainRequest mocks base method.
+// RegisterDomainRequest mocks base method
 func (m *MockSWFAPI) RegisterDomainRequest(arg0 *swf.RegisterDomainInput) (*request.Request, *swf.RegisterDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterDomainRequest", arg0)
@@ -1391,14 +1340,14 @@ func (m *MockSWFAPI) RegisterDomainRequest(arg0 *swf.RegisterDomainInput) (*requ
 	return ret0, ret1
 }
 
-// RegisterDomainRequest indicates an expected call of RegisterDomainRequest.
+// RegisterDomainRequest indicates an expected call of RegisterDomainRequest
 func (mr *MockSWFAPIMockRecorder) RegisterDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomainRequest", reflect.TypeOf((*MockSWFAPI)(nil).RegisterDomainRequest), arg0)
 }
 
-// RegisterDomainWithContext mocks base method.
-func (m *MockSWFAPI) RegisterDomainWithContext(arg0 context.Context, arg1 *swf.RegisterDomainInput, arg2 ...request.Option) (*swf.RegisterDomainOutput, error) {
+// RegisterDomainWithContext mocks base method
+func (m *MockSWFAPI) RegisterDomainWithContext(arg0 aws.Context, arg1 *swf.RegisterDomainInput, arg2 ...request.Option) (*swf.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1410,14 +1359,14 @@ func (m *MockSWFAPI) RegisterDomainWithContext(arg0 context.Context, arg1 *swf.R
 	return ret0, ret1
 }
 
-// RegisterDomainWithContext indicates an expected call of RegisterDomainWithContext.
+// RegisterDomainWithContext indicates an expected call of RegisterDomainWithContext
 func (mr *MockSWFAPIMockRecorder) RegisterDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomainWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RegisterDomainWithContext), varargs...)
 }
 
-// RegisterWorkflowType mocks base method.
+// RegisterWorkflowType mocks base method
 func (m *MockSWFAPI) RegisterWorkflowType(arg0 *swf.RegisterWorkflowTypeInput) (*swf.RegisterWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterWorkflowType", arg0)
@@ -1426,13 +1375,13 @@ func (m *MockSWFAPI) RegisterWorkflowType(arg0 *swf.RegisterWorkflowTypeInput) (
 	return ret0, ret1
 }
 
-// RegisterWorkflowType indicates an expected call of RegisterWorkflowType.
+// RegisterWorkflowType indicates an expected call of RegisterWorkflowType
 func (mr *MockSWFAPIMockRecorder) RegisterWorkflowType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterWorkflowType", reflect.TypeOf((*MockSWFAPI)(nil).RegisterWorkflowType), arg0)
 }
 
-// RegisterWorkflowTypeRequest mocks base method.
+// RegisterWorkflowTypeRequest mocks base method
 func (m *MockSWFAPI) RegisterWorkflowTypeRequest(arg0 *swf.RegisterWorkflowTypeInput) (*request.Request, *swf.RegisterWorkflowTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterWorkflowTypeRequest", arg0)
@@ -1441,14 +1390,14 @@ func (m *MockSWFAPI) RegisterWorkflowTypeRequest(arg0 *swf.RegisterWorkflowTypeI
 	return ret0, ret1
 }
 
-// RegisterWorkflowTypeRequest indicates an expected call of RegisterWorkflowTypeRequest.
+// RegisterWorkflowTypeRequest indicates an expected call of RegisterWorkflowTypeRequest
 func (mr *MockSWFAPIMockRecorder) RegisterWorkflowTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterWorkflowTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).RegisterWorkflowTypeRequest), arg0)
 }
 
-// RegisterWorkflowTypeWithContext mocks base method.
-func (m *MockSWFAPI) RegisterWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.RegisterWorkflowTypeInput, arg2 ...request.Option) (*swf.RegisterWorkflowTypeOutput, error) {
+// RegisterWorkflowTypeWithContext mocks base method
+func (m *MockSWFAPI) RegisterWorkflowTypeWithContext(arg0 aws.Context, arg1 *swf.RegisterWorkflowTypeInput, arg2 ...request.Option) (*swf.RegisterWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1460,14 +1409,14 @@ func (m *MockSWFAPI) RegisterWorkflowTypeWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// RegisterWorkflowTypeWithContext indicates an expected call of RegisterWorkflowTypeWithContext.
+// RegisterWorkflowTypeWithContext indicates an expected call of RegisterWorkflowTypeWithContext
 func (mr *MockSWFAPIMockRecorder) RegisterWorkflowTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterWorkflowTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RegisterWorkflowTypeWithContext), varargs...)
 }
 
-// RequestCancelWorkflowExecution mocks base method.
+// RequestCancelWorkflowExecution mocks base method
 func (m *MockSWFAPI) RequestCancelWorkflowExecution(arg0 *swf.RequestCancelWorkflowExecutionInput) (*swf.RequestCancelWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RequestCancelWorkflowExecution", arg0)
@@ -1476,13 +1425,13 @@ func (m *MockSWFAPI) RequestCancelWorkflowExecution(arg0 *swf.RequestCancelWorkf
 	return ret0, ret1
 }
 
-// RequestCancelWorkflowExecution indicates an expected call of RequestCancelWorkflowExecution.
+// RequestCancelWorkflowExecution indicates an expected call of RequestCancelWorkflowExecution
 func (mr *MockSWFAPIMockRecorder) RequestCancelWorkflowExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RequestCancelWorkflowExecution", reflect.TypeOf((*MockSWFAPI)(nil).RequestCancelWorkflowExecution), arg0)
 }
 
-// RequestCancelWorkflowExecutionRequest mocks base method.
+// RequestCancelWorkflowExecutionRequest mocks base method
 func (m *MockSWFAPI) RequestCancelWorkflowExecutionRequest(arg0 *swf.RequestCancelWorkflowExecutionInput) (*request.Request, *swf.RequestCancelWorkflowExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RequestCancelWorkflowExecutionRequest", arg0)
@@ -1491,14 +1440,14 @@ func (m *MockSWFAPI) RequestCancelWorkflowExecutionRequest(arg0 *swf.RequestCanc
 	return ret0, ret1
 }
 
-// RequestCancelWorkflowExecutionRequest indicates an expected call of RequestCancelWorkflowExecutionRequest.
+// RequestCancelWorkflowExecutionRequest indicates an expected call of RequestCancelWorkflowExecutionRequest
 func (mr *MockSWFAPIMockRecorder) RequestCancelWorkflowExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RequestCancelWorkflowExecutionRequest", reflect.TypeOf((*MockSWFAPI)(nil).RequestCancelWorkflowExecutionRequest), arg0)
 }
 
-// RequestCancelWorkflowExecutionWithContext mocks base method.
-func (m *MockSWFAPI) RequestCancelWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.RequestCancelWorkflowExecutionInput, arg2 ...request.Option) (*swf.RequestCancelWorkflowExecutionOutput, error) {
+// RequestCancelWorkflowExecutionWithContext mocks base method
+func (m *MockSWFAPI) RequestCancelWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.RequestCancelWorkflowExecutionInput, arg2 ...request.Option) (*swf.RequestCancelWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1510,14 +1459,14 @@ func (m *MockSWFAPI) RequestCancelWorkflowExecutionWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// RequestCancelWorkflowExecutionWithContext indicates an expected call of RequestCancelWorkflowExecutionWithContext.
+// RequestCancelWorkflowExecutionWithContext indicates an expected call of RequestCancelWorkflowExecutionWithContext
 func (mr *MockSWFAPIMockRecorder) RequestCancelWorkflowExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RequestCancelWorkflowExecutionWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RequestCancelWorkflowExecutionWithContext), varargs...)
 }
 
-// RespondActivityTaskCanceled mocks base method.
+// RespondActivityTaskCanceled mocks base method
 func (m *MockSWFAPI) RespondActivityTaskCanceled(arg0 *swf.RespondActivityTaskCanceledInput) (*swf.RespondActivityTaskCanceledOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondActivityTaskCanceled", arg0)
@@ -1526,13 +1475,13 @@ func (m *MockSWFAPI) RespondActivityTaskCanceled(arg0 *swf.RespondActivityTaskCa
 	return ret0, ret1
 }
 
-// RespondActivityTaskCanceled indicates an expected call of RespondActivityTaskCanceled.
+// RespondActivityTaskCanceled indicates an expected call of RespondActivityTaskCanceled
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCanceled(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskCanceled", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskCanceled), arg0)
 }
 
-// RespondActivityTaskCanceledRequest mocks base method.
+// RespondActivityTaskCanceledRequest mocks base method
 func (m *MockSWFAPI) RespondActivityTaskCanceledRequest(arg0 *swf.RespondActivityTaskCanceledInput) (*request.Request, *swf.RespondActivityTaskCanceledOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondActivityTaskCanceledRequest", arg0)
@@ -1541,14 +1490,14 @@ func (m *MockSWFAPI) RespondActivityTaskCanceledRequest(arg0 *swf.RespondActivit
 	return ret0, ret1
 }
 
-// RespondActivityTaskCanceledRequest indicates an expected call of RespondActivityTaskCanceledRequest.
+// RespondActivityTaskCanceledRequest indicates an expected call of RespondActivityTaskCanceledRequest
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCanceledRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskCanceledRequest", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskCanceledRequest), arg0)
 }
 
-// RespondActivityTaskCanceledWithContext mocks base method.
-func (m *MockSWFAPI) RespondActivityTaskCanceledWithContext(arg0 context.Context, arg1 *swf.RespondActivityTaskCanceledInput, arg2 ...request.Option) (*swf.RespondActivityTaskCanceledOutput, error) {
+// RespondActivityTaskCanceledWithContext mocks base method
+func (m *MockSWFAPI) RespondActivityTaskCanceledWithContext(arg0 aws.Context, arg1 *swf.RespondActivityTaskCanceledInput, arg2 ...request.Option) (*swf.RespondActivityTaskCanceledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1560,14 +1509,14 @@ func (m *MockSWFAPI) RespondActivityTaskCanceledWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// RespondActivityTaskCanceledWithContext indicates an expected call of RespondActivityTaskCanceledWithContext.
+// RespondActivityTaskCanceledWithContext indicates an expected call of RespondActivityTaskCanceledWithContext
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCanceledWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskCanceledWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskCanceledWithContext), varargs...)
 }
 
-// RespondActivityTaskCompleted mocks base method.
+// RespondActivityTaskCompleted mocks base method
 func (m *MockSWFAPI) RespondActivityTaskCompleted(arg0 *swf.RespondActivityTaskCompletedInput) (*swf.RespondActivityTaskCompletedOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondActivityTaskCompleted", arg0)
@@ -1576,13 +1525,13 @@ func (m *MockSWFAPI) RespondActivityTaskCompleted(arg0 *swf.RespondActivityTaskC
 	return ret0, ret1
 }
 
-// RespondActivityTaskCompleted indicates an expected call of RespondActivityTaskCompleted.
+// RespondActivityTaskCompleted indicates an expected call of RespondActivityTaskCompleted
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCompleted(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskCompleted", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskCompleted), arg0)
 }
 
-// RespondActivityTaskCompletedRequest mocks base method.
+// RespondActivityTaskCompletedRequest mocks base method
 func (m *MockSWFAPI) RespondActivityTaskCompletedRequest(arg0 *swf.RespondActivityTaskCompletedInput) (*request.Request, *swf.RespondActivityTaskCompletedOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondActivityTaskCompletedRequest", arg0)
@@ -1591,14 +1540,14 @@ func (m *MockSWFAPI) RespondActivityTaskCompletedRequest(arg0 *swf.RespondActivi
 	return ret0, ret1
 }
 
-// RespondActivityTaskCompletedRequest indicates an expected call of RespondActivityTaskCompletedRequest.
+// RespondActivityTaskCompletedRequest indicates an expected call of RespondActivityTaskCompletedRequest
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCompletedRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskCompletedRequest", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskCompletedRequest), arg0)
 }
 
-// RespondActivityTaskCompletedWithContext mocks base method.
-func (m *MockSWFAPI) RespondActivityTaskCompletedWithContext(arg0 context.Context, arg1 *swf.RespondActivityTaskCompletedInput, arg2 ...request.Option) (*swf.RespondActivityTaskCompletedOutput, error) {
+// RespondActivityTaskCompletedWithContext mocks base method
+func (m *MockSWFAPI) RespondActivityTaskCompletedWithContext(arg0 aws.Context, arg1 *swf.RespondActivityTaskCompletedInput, arg2 ...request.Option) (*swf.RespondActivityTaskCompletedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1610,14 +1559,14 @@ func (m *MockSWFAPI) RespondActivityTaskCompletedWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// RespondActivityTaskCompletedWithContext indicates an expected call of RespondActivityTaskCompletedWithContext.
+// RespondActivityTaskCompletedWithContext indicates an expected call of RespondActivityTaskCompletedWithContext
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCompletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskCompletedWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskCompletedWithContext), varargs...)
 }
 
-// RespondActivityTaskFailed mocks base method.
+// RespondActivityTaskFailed mocks base method
 func (m *MockSWFAPI) RespondActivityTaskFailed(arg0 *swf.RespondActivityTaskFailedInput) (*swf.RespondActivityTaskFailedOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondActivityTaskFailed", arg0)
@@ -1626,13 +1575,13 @@ func (m *MockSWFAPI) RespondActivityTaskFailed(arg0 *swf.RespondActivityTaskFail
 	return ret0, ret1
 }
 
-// RespondActivityTaskFailed indicates an expected call of RespondActivityTaskFailed.
+// RespondActivityTaskFailed indicates an expected call of RespondActivityTaskFailed
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskFailed(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskFailed", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskFailed), arg0)
 }
 
-// RespondActivityTaskFailedRequest mocks base method.
+// RespondActivityTaskFailedRequest mocks base method
 func (m *MockSWFAPI) RespondActivityTaskFailedRequest(arg0 *swf.RespondActivityTaskFailedInput) (*request.Request, *swf.RespondActivityTaskFailedOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondActivityTaskFailedRequest", arg0)
@@ -1641,14 +1590,14 @@ func (m *MockSWFAPI) RespondActivityTaskFailedRequest(arg0 *swf.RespondActivityT
 	return ret0, ret1
 }
 
-// RespondActivityTaskFailedRequest indicates an expected call of RespondActivityTaskFailedRequest.
+// RespondActivityTaskFailedRequest indicates an expected call of RespondActivityTaskFailedRequest
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskFailedRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskFailedRequest", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskFailedRequest), arg0)
 }
 
-// RespondActivityTaskFailedWithContext mocks base method.
-func (m *MockSWFAPI) RespondActivityTaskFailedWithContext(arg0 context.Context, arg1 *swf.RespondActivityTaskFailedInput, arg2 ...request.Option) (*swf.RespondActivityTaskFailedOutput, error) {
+// RespondActivityTaskFailedWithContext mocks base method
+func (m *MockSWFAPI) RespondActivityTaskFailedWithContext(arg0 aws.Context, arg1 *swf.RespondActivityTaskFailedInput, arg2 ...request.Option) (*swf.RespondActivityTaskFailedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1660,14 +1609,14 @@ func (m *MockSWFAPI) RespondActivityTaskFailedWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// RespondActivityTaskFailedWithContext indicates an expected call of RespondActivityTaskFailedWithContext.
+// RespondActivityTaskFailedWithContext indicates an expected call of RespondActivityTaskFailedWithContext
 func (mr *MockSWFAPIMockRecorder) RespondActivityTaskFailedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondActivityTaskFailedWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RespondActivityTaskFailedWithContext), varargs...)
 }
 
-// RespondDecisionTaskCompleted mocks base method.
+// RespondDecisionTaskCompleted mocks base method
 func (m *MockSWFAPI) RespondDecisionTaskCompleted(arg0 *swf.RespondDecisionTaskCompletedInput) (*swf.RespondDecisionTaskCompletedOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondDecisionTaskCompleted", arg0)
@@ -1676,13 +1625,13 @@ func (m *MockSWFAPI) RespondDecisionTaskCompleted(arg0 *swf.RespondDecisionTaskC
 	return ret0, ret1
 }
 
-// RespondDecisionTaskCompleted indicates an expected call of RespondDecisionTaskCompleted.
+// RespondDecisionTaskCompleted indicates an expected call of RespondDecisionTaskCompleted
 func (mr *MockSWFAPIMockRecorder) RespondDecisionTaskCompleted(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondDecisionTaskCompleted", reflect.TypeOf((*MockSWFAPI)(nil).RespondDecisionTaskCompleted), arg0)
 }
 
-// RespondDecisionTaskCompletedRequest mocks base method.
+// RespondDecisionTaskCompletedRequest mocks base method
 func (m *MockSWFAPI) RespondDecisionTaskCompletedRequest(arg0 *swf.RespondDecisionTaskCompletedInput) (*request.Request, *swf.RespondDecisionTaskCompletedOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RespondDecisionTaskCompletedRequest", arg0)
@@ -1691,14 +1640,14 @@ func (m *MockSWFAPI) RespondDecisionTaskCompletedRequest(arg0 *swf.RespondDecisi
 	return ret0, ret1
 }
 
-// RespondDecisionTaskCompletedRequest indicates an expected call of RespondDecisionTaskCompletedRequest.
+// RespondDecisionTaskCompletedRequest indicates an expected call of RespondDecisionTaskCompletedRequest
 func (mr *MockSWFAPIMockRecorder) RespondDecisionTaskCompletedRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondDecisionTaskCompletedRequest", reflect.TypeOf((*MockSWFAPI)(nil).RespondDecisionTaskCompletedRequest), arg0)
 }
 
-// RespondDecisionTaskCompletedWithContext mocks base method.
-func (m *MockSWFAPI) RespondDecisionTaskCompletedWithContext(arg0 context.Context, arg1 *swf.RespondDecisionTaskCompletedInput, arg2 ...request.Option) (*swf.RespondDecisionTaskCompletedOutput, error) {
+// RespondDecisionTaskCompletedWithContext mocks base method
+func (m *MockSWFAPI) RespondDecisionTaskCompletedWithContext(arg0 aws.Context, arg1 *swf.RespondDecisionTaskCompletedInput, arg2 ...request.Option) (*swf.RespondDecisionTaskCompletedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1710,14 +1659,14 @@ func (m *MockSWFAPI) RespondDecisionTaskCompletedWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// RespondDecisionTaskCompletedWithContext indicates an expected call of RespondDecisionTaskCompletedWithContext.
+// RespondDecisionTaskCompletedWithContext indicates an expected call of RespondDecisionTaskCompletedWithContext
 func (mr *MockSWFAPIMockRecorder) RespondDecisionTaskCompletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RespondDecisionTaskCompletedWithContext", reflect.TypeOf((*MockSWFAPI)(nil).RespondDecisionTaskCompletedWithContext), varargs...)
 }
 
-// SignalWorkflowExecution mocks base method.
+// SignalWorkflowExecution mocks base method
 func (m *MockSWFAPI) SignalWorkflowExecution(arg0 *swf.SignalWorkflowExecutionInput) (*swf.SignalWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SignalWorkflowExecution", arg0)
@@ -1726,13 +1675,13 @@ func (m *MockSWFAPI) SignalWorkflowExecution(arg0 *swf.SignalWorkflowExecutionIn
 	return ret0, ret1
 }
 
-// SignalWorkflowExecution indicates an expected call of SignalWorkflowExecution.
+// SignalWorkflowExecution indicates an expected call of SignalWorkflowExecution
 func (mr *MockSWFAPIMockRecorder) SignalWorkflowExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignalWorkflowExecution", reflect.TypeOf((*MockSWFAPI)(nil).SignalWorkflowExecution), arg0)
 }
 
-// SignalWorkflowExecutionRequest mocks base method.
+// SignalWorkflowExecutionRequest mocks base method
 func (m *MockSWFAPI) SignalWorkflowExecutionRequest(arg0 *swf.SignalWorkflowExecutionInput) (*request.Request, *swf.SignalWorkflowExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SignalWorkflowExecutionRequest", arg0)
@@ -1741,14 +1690,14 @@ func (m *MockSWFAPI) SignalWorkflowExecutionRequest(arg0 *swf.SignalWorkflowExec
 	return ret0, ret1
 }
 
-// SignalWorkflowExecutionRequest indicates an expected call of SignalWorkflowExecutionRequest.
+// SignalWorkflowExecutionRequest indicates an expected call of SignalWorkflowExecutionRequest
 func (mr *MockSWFAPIMockRecorder) SignalWorkflowExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignalWorkflowExecutionRequest", reflect.TypeOf((*MockSWFAPI)(nil).SignalWorkflowExecutionRequest), arg0)
 }
 
-// SignalWorkflowExecutionWithContext mocks base method.
-func (m *MockSWFAPI) SignalWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.SignalWorkflowExecutionInput, arg2 ...request.Option) (*swf.SignalWorkflowExecutionOutput, error) {
+// SignalWorkflowExecutionWithContext mocks base method
+func (m *MockSWFAPI) SignalWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.SignalWorkflowExecutionInput, arg2 ...request.Option) (*swf.SignalWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1760,14 +1709,14 @@ func (m *MockSWFAPI) SignalWorkflowExecutionWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// SignalWorkflowExecutionWithContext indicates an expected call of SignalWorkflowExecutionWithContext.
+// SignalWorkflowExecutionWithContext indicates an expected call of SignalWorkflowExecutionWithContext
 func (mr *MockSWFAPIMockRecorder) SignalWorkflowExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignalWorkflowExecutionWithContext", reflect.TypeOf((*MockSWFAPI)(nil).SignalWorkflowExecutionWithContext), varargs...)
 }
 
-// StartWorkflowExecution mocks base method.
+// StartWorkflowExecution mocks base method
 func (m *MockSWFAPI) StartWorkflowExecution(arg0 *swf.StartWorkflowExecutionInput) (*swf.StartWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartWorkflowExecution", arg0)
@@ -1776,13 +1725,13 @@ func (m *MockSWFAPI) StartWorkflowExecution(arg0 *swf.StartWorkflowExecutionInpu
 	return ret0, ret1
 }
 
-// StartWorkflowExecution indicates an expected call of StartWorkflowExecution.
+// StartWorkflowExecution indicates an expected call of StartWorkflowExecution
 func (mr *MockSWFAPIMockRecorder) StartWorkflowExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkflowExecution", reflect.TypeOf((*MockSWFAPI)(nil).StartWorkflowExecution), arg0)
 }
 
-// StartWorkflowExecutionRequest mocks base method.
+// StartWorkflowExecutionRequest mocks base method
 func (m *MockSWFAPI) StartWorkflowExecutionRequest(arg0 *swf.StartWorkflowExecutionInput) (*request.Request, *swf.StartWorkflowExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartWorkflowExecutionRequest", arg0)
@@ -1791,14 +1740,14 @@ func (m *MockSWFAPI) StartWorkflowExecutionRequest(arg0 *swf.StartWorkflowExecut
 	return ret0, ret1
 }
 
-// StartWorkflowExecutionRequest indicates an expected call of StartWorkflowExecutionRequest.
+// StartWorkflowExecutionRequest indicates an expected call of StartWorkflowExecutionRequest
 func (mr *MockSWFAPIMockRecorder) StartWorkflowExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkflowExecutionRequest", reflect.TypeOf((*MockSWFAPI)(nil).StartWorkflowExecutionRequest), arg0)
 }
 
-// StartWorkflowExecutionWithContext mocks base method.
-func (m *MockSWFAPI) StartWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.StartWorkflowExecutionInput, arg2 ...request.Option) (*swf.StartWorkflowExecutionOutput, error) {
+// StartWorkflowExecutionWithContext mocks base method
+func (m *MockSWFAPI) StartWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.StartWorkflowExecutionInput, arg2 ...request.Option) (*swf.StartWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1810,64 +1759,14 @@ func (m *MockSWFAPI) StartWorkflowExecutionWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// StartWorkflowExecutionWithContext indicates an expected call of StartWorkflowExecutionWithContext.
+// StartWorkflowExecutionWithContext indicates an expected call of StartWorkflowExecutionWithContext
 func (mr *MockSWFAPIMockRecorder) StartWorkflowExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkflowExecutionWithContext", reflect.TypeOf((*MockSWFAPI)(nil).StartWorkflowExecutionWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockSWFAPI) TagResource(arg0 *swf.TagResourceInput) (*swf.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*swf.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockSWFAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockSWFAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockSWFAPI) TagResourceRequest(arg0 *swf.TagResourceInput) (*request.Request, *swf.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*swf.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockSWFAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockSWFAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockSWFAPI) TagResourceWithContext(arg0 context.Context, arg1 *swf.TagResourceInput, arg2 ...request.Option) (*swf.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*swf.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockSWFAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockSWFAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// TerminateWorkflowExecution mocks base method.
+// TerminateWorkflowExecution mocks base method
 func (m *MockSWFAPI) TerminateWorkflowExecution(arg0 *swf.TerminateWorkflowExecutionInput) (*swf.TerminateWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TerminateWorkflowExecution", arg0)
@@ -1876,13 +1775,13 @@ func (m *MockSWFAPI) TerminateWorkflowExecution(arg0 *swf.TerminateWorkflowExecu
 	return ret0, ret1
 }
 
-// TerminateWorkflowExecution indicates an expected call of TerminateWorkflowExecution.
+// TerminateWorkflowExecution indicates an expected call of TerminateWorkflowExecution
 func (mr *MockSWFAPIMockRecorder) TerminateWorkflowExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkflowExecution", reflect.TypeOf((*MockSWFAPI)(nil).TerminateWorkflowExecution), arg0)
 }
 
-// TerminateWorkflowExecutionRequest mocks base method.
+// TerminateWorkflowExecutionRequest mocks base method
 func (m *MockSWFAPI) TerminateWorkflowExecutionRequest(arg0 *swf.TerminateWorkflowExecutionInput) (*request.Request, *swf.TerminateWorkflowExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TerminateWorkflowExecutionRequest", arg0)
@@ -1891,14 +1790,14 @@ func (m *MockSWFAPI) TerminateWorkflowExecutionRequest(arg0 *swf.TerminateWorkfl
 	return ret0, ret1
 }
 
-// TerminateWorkflowExecutionRequest indicates an expected call of TerminateWorkflowExecutionRequest.
+// TerminateWorkflowExecutionRequest indicates an expected call of TerminateWorkflowExecutionRequest
 func (mr *MockSWFAPIMockRecorder) TerminateWorkflowExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkflowExecutionRequest", reflect.TypeOf((*MockSWFAPI)(nil).TerminateWorkflowExecutionRequest), arg0)
 }
 
-// TerminateWorkflowExecutionWithContext mocks base method.
-func (m *MockSWFAPI) TerminateWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.TerminateWorkflowExecutionInput, arg2 ...request.Option) (*swf.TerminateWorkflowExecutionOutput, error) {
+// TerminateWorkflowExecutionWithContext mocks base method
+func (m *MockSWFAPI) TerminateWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.TerminateWorkflowExecutionInput, arg2 ...request.Option) (*swf.TerminateWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1910,209 +1809,9 @@ func (m *MockSWFAPI) TerminateWorkflowExecutionWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// TerminateWorkflowExecutionWithContext indicates an expected call of TerminateWorkflowExecutionWithContext.
+// TerminateWorkflowExecutionWithContext indicates an expected call of TerminateWorkflowExecutionWithContext
 func (mr *MockSWFAPIMockRecorder) TerminateWorkflowExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkflowExecutionWithContext", reflect.TypeOf((*MockSWFAPI)(nil).TerminateWorkflowExecutionWithContext), varargs...)
-}
-
-// UndeprecateActivityType mocks base method.
-func (m *MockSWFAPI) UndeprecateActivityType(arg0 *swf.UndeprecateActivityTypeInput) (*swf.UndeprecateActivityTypeOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UndeprecateActivityType", arg0)
-	ret0, _ := ret[0].(*swf.UndeprecateActivityTypeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UndeprecateActivityType indicates an expected call of UndeprecateActivityType.
-func (mr *MockSWFAPIMockRecorder) UndeprecateActivityType(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateActivityType", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateActivityType), arg0)
-}
-
-// UndeprecateActivityTypeRequest mocks base method.
-func (m *MockSWFAPI) UndeprecateActivityTypeRequest(arg0 *swf.UndeprecateActivityTypeInput) (*request.Request, *swf.UndeprecateActivityTypeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UndeprecateActivityTypeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*swf.UndeprecateActivityTypeOutput)
-	return ret0, ret1
-}
-
-// UndeprecateActivityTypeRequest indicates an expected call of UndeprecateActivityTypeRequest.
-func (mr *MockSWFAPIMockRecorder) UndeprecateActivityTypeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateActivityTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateActivityTypeRequest), arg0)
-}
-
-// UndeprecateActivityTypeWithContext mocks base method.
-func (m *MockSWFAPI) UndeprecateActivityTypeWithContext(arg0 context.Context, arg1 *swf.UndeprecateActivityTypeInput, arg2 ...request.Option) (*swf.UndeprecateActivityTypeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UndeprecateActivityTypeWithContext", varargs...)
-	ret0, _ := ret[0].(*swf.UndeprecateActivityTypeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UndeprecateActivityTypeWithContext indicates an expected call of UndeprecateActivityTypeWithContext.
-func (mr *MockSWFAPIMockRecorder) UndeprecateActivityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateActivityTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateActivityTypeWithContext), varargs...)
-}
-
-// UndeprecateDomain mocks base method.
-func (m *MockSWFAPI) UndeprecateDomain(arg0 *swf.UndeprecateDomainInput) (*swf.UndeprecateDomainOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UndeprecateDomain", arg0)
-	ret0, _ := ret[0].(*swf.UndeprecateDomainOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UndeprecateDomain indicates an expected call of UndeprecateDomain.
-func (mr *MockSWFAPIMockRecorder) UndeprecateDomain(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateDomain", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateDomain), arg0)
-}
-
-// UndeprecateDomainRequest mocks base method.
-func (m *MockSWFAPI) UndeprecateDomainRequest(arg0 *swf.UndeprecateDomainInput) (*request.Request, *swf.UndeprecateDomainOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UndeprecateDomainRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*swf.UndeprecateDomainOutput)
-	return ret0, ret1
-}
-
-// UndeprecateDomainRequest indicates an expected call of UndeprecateDomainRequest.
-func (mr *MockSWFAPIMockRecorder) UndeprecateDomainRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateDomainRequest", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateDomainRequest), arg0)
-}
-
-// UndeprecateDomainWithContext mocks base method.
-func (m *MockSWFAPI) UndeprecateDomainWithContext(arg0 context.Context, arg1 *swf.UndeprecateDomainInput, arg2 ...request.Option) (*swf.UndeprecateDomainOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UndeprecateDomainWithContext", varargs...)
-	ret0, _ := ret[0].(*swf.UndeprecateDomainOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UndeprecateDomainWithContext indicates an expected call of UndeprecateDomainWithContext.
-func (mr *MockSWFAPIMockRecorder) UndeprecateDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateDomainWithContext", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateDomainWithContext), varargs...)
-}
-
-// UndeprecateWorkflowType mocks base method.
-func (m *MockSWFAPI) UndeprecateWorkflowType(arg0 *swf.UndeprecateWorkflowTypeInput) (*swf.UndeprecateWorkflowTypeOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UndeprecateWorkflowType", arg0)
-	ret0, _ := ret[0].(*swf.UndeprecateWorkflowTypeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UndeprecateWorkflowType indicates an expected call of UndeprecateWorkflowType.
-func (mr *MockSWFAPIMockRecorder) UndeprecateWorkflowType(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateWorkflowType", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateWorkflowType), arg0)
-}
-
-// UndeprecateWorkflowTypeRequest mocks base method.
-func (m *MockSWFAPI) UndeprecateWorkflowTypeRequest(arg0 *swf.UndeprecateWorkflowTypeInput) (*request.Request, *swf.UndeprecateWorkflowTypeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UndeprecateWorkflowTypeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*swf.UndeprecateWorkflowTypeOutput)
-	return ret0, ret1
-}
-
-// UndeprecateWorkflowTypeRequest indicates an expected call of UndeprecateWorkflowTypeRequest.
-func (mr *MockSWFAPIMockRecorder) UndeprecateWorkflowTypeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateWorkflowTypeRequest", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateWorkflowTypeRequest), arg0)
-}
-
-// UndeprecateWorkflowTypeWithContext mocks base method.
-func (m *MockSWFAPI) UndeprecateWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.UndeprecateWorkflowTypeInput, arg2 ...request.Option) (*swf.UndeprecateWorkflowTypeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UndeprecateWorkflowTypeWithContext", varargs...)
-	ret0, _ := ret[0].(*swf.UndeprecateWorkflowTypeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UndeprecateWorkflowTypeWithContext indicates an expected call of UndeprecateWorkflowTypeWithContext.
-func (mr *MockSWFAPIMockRecorder) UndeprecateWorkflowTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UndeprecateWorkflowTypeWithContext", reflect.TypeOf((*MockSWFAPI)(nil).UndeprecateWorkflowTypeWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockSWFAPI) UntagResource(arg0 *swf.UntagResourceInput) (*swf.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*swf.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockSWFAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockSWFAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockSWFAPI) UntagResourceRequest(arg0 *swf.UntagResourceInput) (*request.Request, *swf.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*swf.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockSWFAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockSWFAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockSWFAPI) UntagResourceWithContext(arg0 context.Context, arg1 *swf.UntagResourceInput, arg2 ...request.Option) (*swf.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*swf.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockSWFAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockSWFAPI)(nil).UntagResourceWithContext), varargs...)
 }

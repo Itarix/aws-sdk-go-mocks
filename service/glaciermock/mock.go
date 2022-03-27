@@ -5,38 +5,37 @@
 package glaciermock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	glacier "github.com/aws/aws-sdk-go/service/glacier"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockGlacierAPI is a mock of GlacierAPI interface.
+// MockGlacierAPI is a mock of GlacierAPI interface
 type MockGlacierAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockGlacierAPIMockRecorder
 }
 
-// MockGlacierAPIMockRecorder is the mock recorder for MockGlacierAPI.
+// MockGlacierAPIMockRecorder is the mock recorder for MockGlacierAPI
 type MockGlacierAPIMockRecorder struct {
 	mock *MockGlacierAPI
 }
 
-// NewMockGlacierAPI creates a new mock instance.
+// NewMockGlacierAPI creates a new mock instance
 func NewMockGlacierAPI(ctrl *gomock.Controller) *MockGlacierAPI {
 	mock := &MockGlacierAPI{ctrl: ctrl}
 	mock.recorder = &MockGlacierAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockGlacierAPI) EXPECT() *MockGlacierAPIMockRecorder {
 	return m.recorder
 }
 
-// AbortMultipartUpload mocks base method.
+// AbortMultipartUpload mocks base method
 func (m *MockGlacierAPI) AbortMultipartUpload(arg0 *glacier.AbortMultipartUploadInput) (*glacier.AbortMultipartUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortMultipartUpload", arg0)
@@ -45,13 +44,13 @@ func (m *MockGlacierAPI) AbortMultipartUpload(arg0 *glacier.AbortMultipartUpload
 	return ret0, ret1
 }
 
-// AbortMultipartUpload indicates an expected call of AbortMultipartUpload.
+// AbortMultipartUpload indicates an expected call of AbortMultipartUpload
 func (mr *MockGlacierAPIMockRecorder) AbortMultipartUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartUpload", reflect.TypeOf((*MockGlacierAPI)(nil).AbortMultipartUpload), arg0)
 }
 
-// AbortMultipartUploadRequest mocks base method.
+// AbortMultipartUploadRequest mocks base method
 func (m *MockGlacierAPI) AbortMultipartUploadRequest(arg0 *glacier.AbortMultipartUploadInput) (*request.Request, *glacier.AbortMultipartUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortMultipartUploadRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockGlacierAPI) AbortMultipartUploadRequest(arg0 *glacier.AbortMultipar
 	return ret0, ret1
 }
 
-// AbortMultipartUploadRequest indicates an expected call of AbortMultipartUploadRequest.
+// AbortMultipartUploadRequest indicates an expected call of AbortMultipartUploadRequest
 func (mr *MockGlacierAPIMockRecorder) AbortMultipartUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartUploadRequest", reflect.TypeOf((*MockGlacierAPI)(nil).AbortMultipartUploadRequest), arg0)
 }
 
-// AbortMultipartUploadWithContext mocks base method.
-func (m *MockGlacierAPI) AbortMultipartUploadWithContext(arg0 context.Context, arg1 *glacier.AbortMultipartUploadInput, arg2 ...request.Option) (*glacier.AbortMultipartUploadOutput, error) {
+// AbortMultipartUploadWithContext mocks base method
+func (m *MockGlacierAPI) AbortMultipartUploadWithContext(arg0 aws.Context, arg1 *glacier.AbortMultipartUploadInput, arg2 ...request.Option) (*glacier.AbortMultipartUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockGlacierAPI) AbortMultipartUploadWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// AbortMultipartUploadWithContext indicates an expected call of AbortMultipartUploadWithContext.
+// AbortMultipartUploadWithContext indicates an expected call of AbortMultipartUploadWithContext
 func (mr *MockGlacierAPIMockRecorder) AbortMultipartUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartUploadWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).AbortMultipartUploadWithContext), varargs...)
 }
 
-// AbortVaultLock mocks base method.
+// AbortVaultLock mocks base method
 func (m *MockGlacierAPI) AbortVaultLock(arg0 *glacier.AbortVaultLockInput) (*glacier.AbortVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortVaultLock", arg0)
@@ -95,13 +94,13 @@ func (m *MockGlacierAPI) AbortVaultLock(arg0 *glacier.AbortVaultLockInput) (*gla
 	return ret0, ret1
 }
 
-// AbortVaultLock indicates an expected call of AbortVaultLock.
+// AbortVaultLock indicates an expected call of AbortVaultLock
 func (mr *MockGlacierAPIMockRecorder) AbortVaultLock(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortVaultLock", reflect.TypeOf((*MockGlacierAPI)(nil).AbortVaultLock), arg0)
 }
 
-// AbortVaultLockRequest mocks base method.
+// AbortVaultLockRequest mocks base method
 func (m *MockGlacierAPI) AbortVaultLockRequest(arg0 *glacier.AbortVaultLockInput) (*request.Request, *glacier.AbortVaultLockOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortVaultLockRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockGlacierAPI) AbortVaultLockRequest(arg0 *glacier.AbortVaultLockInput
 	return ret0, ret1
 }
 
-// AbortVaultLockRequest indicates an expected call of AbortVaultLockRequest.
+// AbortVaultLockRequest indicates an expected call of AbortVaultLockRequest
 func (mr *MockGlacierAPIMockRecorder) AbortVaultLockRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortVaultLockRequest", reflect.TypeOf((*MockGlacierAPI)(nil).AbortVaultLockRequest), arg0)
 }
 
-// AbortVaultLockWithContext mocks base method.
-func (m *MockGlacierAPI) AbortVaultLockWithContext(arg0 context.Context, arg1 *glacier.AbortVaultLockInput, arg2 ...request.Option) (*glacier.AbortVaultLockOutput, error) {
+// AbortVaultLockWithContext mocks base method
+func (m *MockGlacierAPI) AbortVaultLockWithContext(arg0 aws.Context, arg1 *glacier.AbortVaultLockInput, arg2 ...request.Option) (*glacier.AbortVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockGlacierAPI) AbortVaultLockWithContext(arg0 context.Context, arg1 *g
 	return ret0, ret1
 }
 
-// AbortVaultLockWithContext indicates an expected call of AbortVaultLockWithContext.
+// AbortVaultLockWithContext indicates an expected call of AbortVaultLockWithContext
 func (mr *MockGlacierAPIMockRecorder) AbortVaultLockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortVaultLockWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).AbortVaultLockWithContext), varargs...)
 }
 
-// AddTagsToVault mocks base method.
+// AddTagsToVault mocks base method
 func (m *MockGlacierAPI) AddTagsToVault(arg0 *glacier.AddTagsToVaultInput) (*glacier.AddTagsToVaultOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsToVault", arg0)
@@ -145,13 +144,13 @@ func (m *MockGlacierAPI) AddTagsToVault(arg0 *glacier.AddTagsToVaultInput) (*gla
 	return ret0, ret1
 }
 
-// AddTagsToVault indicates an expected call of AddTagsToVault.
+// AddTagsToVault indicates an expected call of AddTagsToVault
 func (mr *MockGlacierAPIMockRecorder) AddTagsToVault(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToVault", reflect.TypeOf((*MockGlacierAPI)(nil).AddTagsToVault), arg0)
 }
 
-// AddTagsToVaultRequest mocks base method.
+// AddTagsToVaultRequest mocks base method
 func (m *MockGlacierAPI) AddTagsToVaultRequest(arg0 *glacier.AddTagsToVaultInput) (*request.Request, *glacier.AddTagsToVaultOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsToVaultRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockGlacierAPI) AddTagsToVaultRequest(arg0 *glacier.AddTagsToVaultInput
 	return ret0, ret1
 }
 
-// AddTagsToVaultRequest indicates an expected call of AddTagsToVaultRequest.
+// AddTagsToVaultRequest indicates an expected call of AddTagsToVaultRequest
 func (mr *MockGlacierAPIMockRecorder) AddTagsToVaultRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToVaultRequest", reflect.TypeOf((*MockGlacierAPI)(nil).AddTagsToVaultRequest), arg0)
 }
 
-// AddTagsToVaultWithContext mocks base method.
-func (m *MockGlacierAPI) AddTagsToVaultWithContext(arg0 context.Context, arg1 *glacier.AddTagsToVaultInput, arg2 ...request.Option) (*glacier.AddTagsToVaultOutput, error) {
+// AddTagsToVaultWithContext mocks base method
+func (m *MockGlacierAPI) AddTagsToVaultWithContext(arg0 aws.Context, arg1 *glacier.AddTagsToVaultInput, arg2 ...request.Option) (*glacier.AddTagsToVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockGlacierAPI) AddTagsToVaultWithContext(arg0 context.Context, arg1 *g
 	return ret0, ret1
 }
 
-// AddTagsToVaultWithContext indicates an expected call of AddTagsToVaultWithContext.
+// AddTagsToVaultWithContext indicates an expected call of AddTagsToVaultWithContext
 func (mr *MockGlacierAPIMockRecorder) AddTagsToVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToVaultWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).AddTagsToVaultWithContext), varargs...)
 }
 
-// CompleteMultipartUpload mocks base method.
+// CompleteMultipartUpload mocks base method
 func (m *MockGlacierAPI) CompleteMultipartUpload(arg0 *glacier.CompleteMultipartUploadInput) (*glacier.ArchiveCreationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CompleteMultipartUpload", arg0)
@@ -195,13 +194,13 @@ func (m *MockGlacierAPI) CompleteMultipartUpload(arg0 *glacier.CompleteMultipart
 	return ret0, ret1
 }
 
-// CompleteMultipartUpload indicates an expected call of CompleteMultipartUpload.
+// CompleteMultipartUpload indicates an expected call of CompleteMultipartUpload
 func (mr *MockGlacierAPIMockRecorder) CompleteMultipartUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteMultipartUpload", reflect.TypeOf((*MockGlacierAPI)(nil).CompleteMultipartUpload), arg0)
 }
 
-// CompleteMultipartUploadRequest mocks base method.
+// CompleteMultipartUploadRequest mocks base method
 func (m *MockGlacierAPI) CompleteMultipartUploadRequest(arg0 *glacier.CompleteMultipartUploadInput) (*request.Request, *glacier.ArchiveCreationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CompleteMultipartUploadRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockGlacierAPI) CompleteMultipartUploadRequest(arg0 *glacier.CompleteMu
 	return ret0, ret1
 }
 
-// CompleteMultipartUploadRequest indicates an expected call of CompleteMultipartUploadRequest.
+// CompleteMultipartUploadRequest indicates an expected call of CompleteMultipartUploadRequest
 func (mr *MockGlacierAPIMockRecorder) CompleteMultipartUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteMultipartUploadRequest", reflect.TypeOf((*MockGlacierAPI)(nil).CompleteMultipartUploadRequest), arg0)
 }
 
-// CompleteMultipartUploadWithContext mocks base method.
-func (m *MockGlacierAPI) CompleteMultipartUploadWithContext(arg0 context.Context, arg1 *glacier.CompleteMultipartUploadInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
+// CompleteMultipartUploadWithContext mocks base method
+func (m *MockGlacierAPI) CompleteMultipartUploadWithContext(arg0 aws.Context, arg1 *glacier.CompleteMultipartUploadInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockGlacierAPI) CompleteMultipartUploadWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// CompleteMultipartUploadWithContext indicates an expected call of CompleteMultipartUploadWithContext.
+// CompleteMultipartUploadWithContext indicates an expected call of CompleteMultipartUploadWithContext
 func (mr *MockGlacierAPIMockRecorder) CompleteMultipartUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteMultipartUploadWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).CompleteMultipartUploadWithContext), varargs...)
 }
 
-// CompleteVaultLock mocks base method.
+// CompleteVaultLock mocks base method
 func (m *MockGlacierAPI) CompleteVaultLock(arg0 *glacier.CompleteVaultLockInput) (*glacier.CompleteVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CompleteVaultLock", arg0)
@@ -245,13 +244,13 @@ func (m *MockGlacierAPI) CompleteVaultLock(arg0 *glacier.CompleteVaultLockInput)
 	return ret0, ret1
 }
 
-// CompleteVaultLock indicates an expected call of CompleteVaultLock.
+// CompleteVaultLock indicates an expected call of CompleteVaultLock
 func (mr *MockGlacierAPIMockRecorder) CompleteVaultLock(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteVaultLock", reflect.TypeOf((*MockGlacierAPI)(nil).CompleteVaultLock), arg0)
 }
 
-// CompleteVaultLockRequest mocks base method.
+// CompleteVaultLockRequest mocks base method
 func (m *MockGlacierAPI) CompleteVaultLockRequest(arg0 *glacier.CompleteVaultLockInput) (*request.Request, *glacier.CompleteVaultLockOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CompleteVaultLockRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockGlacierAPI) CompleteVaultLockRequest(arg0 *glacier.CompleteVaultLoc
 	return ret0, ret1
 }
 
-// CompleteVaultLockRequest indicates an expected call of CompleteVaultLockRequest.
+// CompleteVaultLockRequest indicates an expected call of CompleteVaultLockRequest
 func (mr *MockGlacierAPIMockRecorder) CompleteVaultLockRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteVaultLockRequest", reflect.TypeOf((*MockGlacierAPI)(nil).CompleteVaultLockRequest), arg0)
 }
 
-// CompleteVaultLockWithContext mocks base method.
-func (m *MockGlacierAPI) CompleteVaultLockWithContext(arg0 context.Context, arg1 *glacier.CompleteVaultLockInput, arg2 ...request.Option) (*glacier.CompleteVaultLockOutput, error) {
+// CompleteVaultLockWithContext mocks base method
+func (m *MockGlacierAPI) CompleteVaultLockWithContext(arg0 aws.Context, arg1 *glacier.CompleteVaultLockInput, arg2 ...request.Option) (*glacier.CompleteVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockGlacierAPI) CompleteVaultLockWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// CompleteVaultLockWithContext indicates an expected call of CompleteVaultLockWithContext.
+// CompleteVaultLockWithContext indicates an expected call of CompleteVaultLockWithContext
 func (mr *MockGlacierAPIMockRecorder) CompleteVaultLockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteVaultLockWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).CompleteVaultLockWithContext), varargs...)
 }
 
-// CreateVault mocks base method.
+// CreateVault mocks base method
 func (m *MockGlacierAPI) CreateVault(arg0 *glacier.CreateVaultInput) (*glacier.CreateVaultOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateVault", arg0)
@@ -295,13 +294,13 @@ func (m *MockGlacierAPI) CreateVault(arg0 *glacier.CreateVaultInput) (*glacier.C
 	return ret0, ret1
 }
 
-// CreateVault indicates an expected call of CreateVault.
+// CreateVault indicates an expected call of CreateVault
 func (mr *MockGlacierAPIMockRecorder) CreateVault(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVault", reflect.TypeOf((*MockGlacierAPI)(nil).CreateVault), arg0)
 }
 
-// CreateVaultRequest mocks base method.
+// CreateVaultRequest mocks base method
 func (m *MockGlacierAPI) CreateVaultRequest(arg0 *glacier.CreateVaultInput) (*request.Request, *glacier.CreateVaultOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateVaultRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockGlacierAPI) CreateVaultRequest(arg0 *glacier.CreateVaultInput) (*re
 	return ret0, ret1
 }
 
-// CreateVaultRequest indicates an expected call of CreateVaultRequest.
+// CreateVaultRequest indicates an expected call of CreateVaultRequest
 func (mr *MockGlacierAPIMockRecorder) CreateVaultRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVaultRequest", reflect.TypeOf((*MockGlacierAPI)(nil).CreateVaultRequest), arg0)
 }
 
-// CreateVaultWithContext mocks base method.
-func (m *MockGlacierAPI) CreateVaultWithContext(arg0 context.Context, arg1 *glacier.CreateVaultInput, arg2 ...request.Option) (*glacier.CreateVaultOutput, error) {
+// CreateVaultWithContext mocks base method
+func (m *MockGlacierAPI) CreateVaultWithContext(arg0 aws.Context, arg1 *glacier.CreateVaultInput, arg2 ...request.Option) (*glacier.CreateVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockGlacierAPI) CreateVaultWithContext(arg0 context.Context, arg1 *glac
 	return ret0, ret1
 }
 
-// CreateVaultWithContext indicates an expected call of CreateVaultWithContext.
+// CreateVaultWithContext indicates an expected call of CreateVaultWithContext
 func (mr *MockGlacierAPIMockRecorder) CreateVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVaultWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).CreateVaultWithContext), varargs...)
 }
 
-// DeleteArchive mocks base method.
+// DeleteArchive mocks base method
 func (m *MockGlacierAPI) DeleteArchive(arg0 *glacier.DeleteArchiveInput) (*glacier.DeleteArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteArchive", arg0)
@@ -345,13 +344,13 @@ func (m *MockGlacierAPI) DeleteArchive(arg0 *glacier.DeleteArchiveInput) (*glaci
 	return ret0, ret1
 }
 
-// DeleteArchive indicates an expected call of DeleteArchive.
+// DeleteArchive indicates an expected call of DeleteArchive
 func (mr *MockGlacierAPIMockRecorder) DeleteArchive(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchive", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteArchive), arg0)
 }
 
-// DeleteArchiveRequest mocks base method.
+// DeleteArchiveRequest mocks base method
 func (m *MockGlacierAPI) DeleteArchiveRequest(arg0 *glacier.DeleteArchiveInput) (*request.Request, *glacier.DeleteArchiveOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteArchiveRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockGlacierAPI) DeleteArchiveRequest(arg0 *glacier.DeleteArchiveInput) 
 	return ret0, ret1
 }
 
-// DeleteArchiveRequest indicates an expected call of DeleteArchiveRequest.
+// DeleteArchiveRequest indicates an expected call of DeleteArchiveRequest
 func (mr *MockGlacierAPIMockRecorder) DeleteArchiveRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchiveRequest", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteArchiveRequest), arg0)
 }
 
-// DeleteArchiveWithContext mocks base method.
-func (m *MockGlacierAPI) DeleteArchiveWithContext(arg0 context.Context, arg1 *glacier.DeleteArchiveInput, arg2 ...request.Option) (*glacier.DeleteArchiveOutput, error) {
+// DeleteArchiveWithContext mocks base method
+func (m *MockGlacierAPI) DeleteArchiveWithContext(arg0 aws.Context, arg1 *glacier.DeleteArchiveInput, arg2 ...request.Option) (*glacier.DeleteArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockGlacierAPI) DeleteArchiveWithContext(arg0 context.Context, arg1 *gl
 	return ret0, ret1
 }
 
-// DeleteArchiveWithContext indicates an expected call of DeleteArchiveWithContext.
+// DeleteArchiveWithContext indicates an expected call of DeleteArchiveWithContext
 func (mr *MockGlacierAPIMockRecorder) DeleteArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchiveWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteArchiveWithContext), varargs...)
 }
 
-// DeleteVault mocks base method.
+// DeleteVault mocks base method
 func (m *MockGlacierAPI) DeleteVault(arg0 *glacier.DeleteVaultInput) (*glacier.DeleteVaultOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVault", arg0)
@@ -395,13 +394,13 @@ func (m *MockGlacierAPI) DeleteVault(arg0 *glacier.DeleteVaultInput) (*glacier.D
 	return ret0, ret1
 }
 
-// DeleteVault indicates an expected call of DeleteVault.
+// DeleteVault indicates an expected call of DeleteVault
 func (mr *MockGlacierAPIMockRecorder) DeleteVault(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVault", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVault), arg0)
 }
 
-// DeleteVaultAccessPolicy mocks base method.
+// DeleteVaultAccessPolicy mocks base method
 func (m *MockGlacierAPI) DeleteVaultAccessPolicy(arg0 *glacier.DeleteVaultAccessPolicyInput) (*glacier.DeleteVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVaultAccessPolicy", arg0)
@@ -410,13 +409,13 @@ func (m *MockGlacierAPI) DeleteVaultAccessPolicy(arg0 *glacier.DeleteVaultAccess
 	return ret0, ret1
 }
 
-// DeleteVaultAccessPolicy indicates an expected call of DeleteVaultAccessPolicy.
+// DeleteVaultAccessPolicy indicates an expected call of DeleteVaultAccessPolicy
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultAccessPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultAccessPolicy", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultAccessPolicy), arg0)
 }
 
-// DeleteVaultAccessPolicyRequest mocks base method.
+// DeleteVaultAccessPolicyRequest mocks base method
 func (m *MockGlacierAPI) DeleteVaultAccessPolicyRequest(arg0 *glacier.DeleteVaultAccessPolicyInput) (*request.Request, *glacier.DeleteVaultAccessPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVaultAccessPolicyRequest", arg0)
@@ -425,14 +424,14 @@ func (m *MockGlacierAPI) DeleteVaultAccessPolicyRequest(arg0 *glacier.DeleteVaul
 	return ret0, ret1
 }
 
-// DeleteVaultAccessPolicyRequest indicates an expected call of DeleteVaultAccessPolicyRequest.
+// DeleteVaultAccessPolicyRequest indicates an expected call of DeleteVaultAccessPolicyRequest
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultAccessPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultAccessPolicyRequest", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultAccessPolicyRequest), arg0)
 }
 
-// DeleteVaultAccessPolicyWithContext mocks base method.
-func (m *MockGlacierAPI) DeleteVaultAccessPolicyWithContext(arg0 context.Context, arg1 *glacier.DeleteVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.DeleteVaultAccessPolicyOutput, error) {
+// DeleteVaultAccessPolicyWithContext mocks base method
+func (m *MockGlacierAPI) DeleteVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *glacier.DeleteVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.DeleteVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -444,14 +443,14 @@ func (m *MockGlacierAPI) DeleteVaultAccessPolicyWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DeleteVaultAccessPolicyWithContext indicates an expected call of DeleteVaultAccessPolicyWithContext.
+// DeleteVaultAccessPolicyWithContext indicates an expected call of DeleteVaultAccessPolicyWithContext
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultAccessPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultAccessPolicyWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultAccessPolicyWithContext), varargs...)
 }
 
-// DeleteVaultNotifications mocks base method.
+// DeleteVaultNotifications mocks base method
 func (m *MockGlacierAPI) DeleteVaultNotifications(arg0 *glacier.DeleteVaultNotificationsInput) (*glacier.DeleteVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVaultNotifications", arg0)
@@ -460,13 +459,13 @@ func (m *MockGlacierAPI) DeleteVaultNotifications(arg0 *glacier.DeleteVaultNotif
 	return ret0, ret1
 }
 
-// DeleteVaultNotifications indicates an expected call of DeleteVaultNotifications.
+// DeleteVaultNotifications indicates an expected call of DeleteVaultNotifications
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultNotifications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultNotifications", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultNotifications), arg0)
 }
 
-// DeleteVaultNotificationsRequest mocks base method.
+// DeleteVaultNotificationsRequest mocks base method
 func (m *MockGlacierAPI) DeleteVaultNotificationsRequest(arg0 *glacier.DeleteVaultNotificationsInput) (*request.Request, *glacier.DeleteVaultNotificationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVaultNotificationsRequest", arg0)
@@ -475,14 +474,14 @@ func (m *MockGlacierAPI) DeleteVaultNotificationsRequest(arg0 *glacier.DeleteVau
 	return ret0, ret1
 }
 
-// DeleteVaultNotificationsRequest indicates an expected call of DeleteVaultNotificationsRequest.
+// DeleteVaultNotificationsRequest indicates an expected call of DeleteVaultNotificationsRequest
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultNotificationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultNotificationsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultNotificationsRequest), arg0)
 }
 
-// DeleteVaultNotificationsWithContext mocks base method.
-func (m *MockGlacierAPI) DeleteVaultNotificationsWithContext(arg0 context.Context, arg1 *glacier.DeleteVaultNotificationsInput, arg2 ...request.Option) (*glacier.DeleteVaultNotificationsOutput, error) {
+// DeleteVaultNotificationsWithContext mocks base method
+func (m *MockGlacierAPI) DeleteVaultNotificationsWithContext(arg0 aws.Context, arg1 *glacier.DeleteVaultNotificationsInput, arg2 ...request.Option) (*glacier.DeleteVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -494,14 +493,14 @@ func (m *MockGlacierAPI) DeleteVaultNotificationsWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteVaultNotificationsWithContext indicates an expected call of DeleteVaultNotificationsWithContext.
+// DeleteVaultNotificationsWithContext indicates an expected call of DeleteVaultNotificationsWithContext
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultNotificationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultNotificationsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultNotificationsWithContext), varargs...)
 }
 
-// DeleteVaultRequest mocks base method.
+// DeleteVaultRequest mocks base method
 func (m *MockGlacierAPI) DeleteVaultRequest(arg0 *glacier.DeleteVaultInput) (*request.Request, *glacier.DeleteVaultOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVaultRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockGlacierAPI) DeleteVaultRequest(arg0 *glacier.DeleteVaultInput) (*re
 	return ret0, ret1
 }
 
-// DeleteVaultRequest indicates an expected call of DeleteVaultRequest.
+// DeleteVaultRequest indicates an expected call of DeleteVaultRequest
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultRequest", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultRequest), arg0)
 }
 
-// DeleteVaultWithContext mocks base method.
-func (m *MockGlacierAPI) DeleteVaultWithContext(arg0 context.Context, arg1 *glacier.DeleteVaultInput, arg2 ...request.Option) (*glacier.DeleteVaultOutput, error) {
+// DeleteVaultWithContext mocks base method
+func (m *MockGlacierAPI) DeleteVaultWithContext(arg0 aws.Context, arg1 *glacier.DeleteVaultInput, arg2 ...request.Option) (*glacier.DeleteVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockGlacierAPI) DeleteVaultWithContext(arg0 context.Context, arg1 *glac
 	return ret0, ret1
 }
 
-// DeleteVaultWithContext indicates an expected call of DeleteVaultWithContext.
+// DeleteVaultWithContext indicates an expected call of DeleteVaultWithContext
 func (mr *MockGlacierAPIMockRecorder) DeleteVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVaultWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).DeleteVaultWithContext), varargs...)
 }
 
-// DescribeJob mocks base method.
+// DescribeJob mocks base method
 func (m *MockGlacierAPI) DescribeJob(arg0 *glacier.DescribeJobInput) (*glacier.JobDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeJob", arg0)
@@ -545,13 +544,13 @@ func (m *MockGlacierAPI) DescribeJob(arg0 *glacier.DescribeJobInput) (*glacier.J
 	return ret0, ret1
 }
 
-// DescribeJob indicates an expected call of DescribeJob.
+// DescribeJob indicates an expected call of DescribeJob
 func (mr *MockGlacierAPIMockRecorder) DescribeJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJob", reflect.TypeOf((*MockGlacierAPI)(nil).DescribeJob), arg0)
 }
 
-// DescribeJobRequest mocks base method.
+// DescribeJobRequest mocks base method
 func (m *MockGlacierAPI) DescribeJobRequest(arg0 *glacier.DescribeJobInput) (*request.Request, *glacier.JobDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeJobRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockGlacierAPI) DescribeJobRequest(arg0 *glacier.DescribeJobInput) (*re
 	return ret0, ret1
 }
 
-// DescribeJobRequest indicates an expected call of DescribeJobRequest.
+// DescribeJobRequest indicates an expected call of DescribeJobRequest
 func (mr *MockGlacierAPIMockRecorder) DescribeJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobRequest", reflect.TypeOf((*MockGlacierAPI)(nil).DescribeJobRequest), arg0)
 }
 
-// DescribeJobWithContext mocks base method.
-func (m *MockGlacierAPI) DescribeJobWithContext(arg0 context.Context, arg1 *glacier.DescribeJobInput, arg2 ...request.Option) (*glacier.JobDescription, error) {
+// DescribeJobWithContext mocks base method
+func (m *MockGlacierAPI) DescribeJobWithContext(arg0 aws.Context, arg1 *glacier.DescribeJobInput, arg2 ...request.Option) (*glacier.JobDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockGlacierAPI) DescribeJobWithContext(arg0 context.Context, arg1 *glac
 	return ret0, ret1
 }
 
-// DescribeJobWithContext indicates an expected call of DescribeJobWithContext.
+// DescribeJobWithContext indicates an expected call of DescribeJobWithContext
 func (mr *MockGlacierAPIMockRecorder) DescribeJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).DescribeJobWithContext), varargs...)
 }
 
-// DescribeVault mocks base method.
+// DescribeVault mocks base method
 func (m *MockGlacierAPI) DescribeVault(arg0 *glacier.DescribeVaultInput) (*glacier.DescribeVaultOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVault", arg0)
@@ -595,13 +594,13 @@ func (m *MockGlacierAPI) DescribeVault(arg0 *glacier.DescribeVaultInput) (*glaci
 	return ret0, ret1
 }
 
-// DescribeVault indicates an expected call of DescribeVault.
+// DescribeVault indicates an expected call of DescribeVault
 func (mr *MockGlacierAPIMockRecorder) DescribeVault(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVault", reflect.TypeOf((*MockGlacierAPI)(nil).DescribeVault), arg0)
 }
 
-// DescribeVaultRequest mocks base method.
+// DescribeVaultRequest mocks base method
 func (m *MockGlacierAPI) DescribeVaultRequest(arg0 *glacier.DescribeVaultInput) (*request.Request, *glacier.DescribeVaultOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVaultRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockGlacierAPI) DescribeVaultRequest(arg0 *glacier.DescribeVaultInput) 
 	return ret0, ret1
 }
 
-// DescribeVaultRequest indicates an expected call of DescribeVaultRequest.
+// DescribeVaultRequest indicates an expected call of DescribeVaultRequest
 func (mr *MockGlacierAPIMockRecorder) DescribeVaultRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVaultRequest", reflect.TypeOf((*MockGlacierAPI)(nil).DescribeVaultRequest), arg0)
 }
 
-// DescribeVaultWithContext mocks base method.
-func (m *MockGlacierAPI) DescribeVaultWithContext(arg0 context.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.Option) (*glacier.DescribeVaultOutput, error) {
+// DescribeVaultWithContext mocks base method
+func (m *MockGlacierAPI) DescribeVaultWithContext(arg0 aws.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.Option) (*glacier.DescribeVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockGlacierAPI) DescribeVaultWithContext(arg0 context.Context, arg1 *gl
 	return ret0, ret1
 }
 
-// DescribeVaultWithContext indicates an expected call of DescribeVaultWithContext.
+// DescribeVaultWithContext indicates an expected call of DescribeVaultWithContext
 func (mr *MockGlacierAPIMockRecorder) DescribeVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVaultWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).DescribeVaultWithContext), varargs...)
 }
 
-// GetDataRetrievalPolicy mocks base method.
+// GetDataRetrievalPolicy mocks base method
 func (m *MockGlacierAPI) GetDataRetrievalPolicy(arg0 *glacier.GetDataRetrievalPolicyInput) (*glacier.GetDataRetrievalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDataRetrievalPolicy", arg0)
@@ -645,13 +644,13 @@ func (m *MockGlacierAPI) GetDataRetrievalPolicy(arg0 *glacier.GetDataRetrievalPo
 	return ret0, ret1
 }
 
-// GetDataRetrievalPolicy indicates an expected call of GetDataRetrievalPolicy.
+// GetDataRetrievalPolicy indicates an expected call of GetDataRetrievalPolicy
 func (mr *MockGlacierAPIMockRecorder) GetDataRetrievalPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataRetrievalPolicy", reflect.TypeOf((*MockGlacierAPI)(nil).GetDataRetrievalPolicy), arg0)
 }
 
-// GetDataRetrievalPolicyRequest mocks base method.
+// GetDataRetrievalPolicyRequest mocks base method
 func (m *MockGlacierAPI) GetDataRetrievalPolicyRequest(arg0 *glacier.GetDataRetrievalPolicyInput) (*request.Request, *glacier.GetDataRetrievalPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDataRetrievalPolicyRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockGlacierAPI) GetDataRetrievalPolicyRequest(arg0 *glacier.GetDataRetr
 	return ret0, ret1
 }
 
-// GetDataRetrievalPolicyRequest indicates an expected call of GetDataRetrievalPolicyRequest.
+// GetDataRetrievalPolicyRequest indicates an expected call of GetDataRetrievalPolicyRequest
 func (mr *MockGlacierAPIMockRecorder) GetDataRetrievalPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataRetrievalPolicyRequest", reflect.TypeOf((*MockGlacierAPI)(nil).GetDataRetrievalPolicyRequest), arg0)
 }
 
-// GetDataRetrievalPolicyWithContext mocks base method.
-func (m *MockGlacierAPI) GetDataRetrievalPolicyWithContext(arg0 context.Context, arg1 *glacier.GetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.GetDataRetrievalPolicyOutput, error) {
+// GetDataRetrievalPolicyWithContext mocks base method
+func (m *MockGlacierAPI) GetDataRetrievalPolicyWithContext(arg0 aws.Context, arg1 *glacier.GetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.GetDataRetrievalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockGlacierAPI) GetDataRetrievalPolicyWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetDataRetrievalPolicyWithContext indicates an expected call of GetDataRetrievalPolicyWithContext.
+// GetDataRetrievalPolicyWithContext indicates an expected call of GetDataRetrievalPolicyWithContext
 func (mr *MockGlacierAPIMockRecorder) GetDataRetrievalPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataRetrievalPolicyWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).GetDataRetrievalPolicyWithContext), varargs...)
 }
 
-// GetJobOutput mocks base method.
+// GetJobOutput mocks base method
 func (m *MockGlacierAPI) GetJobOutput(arg0 *glacier.GetJobOutputInput) (*glacier.GetJobOutputOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJobOutput", arg0)
@@ -695,13 +694,13 @@ func (m *MockGlacierAPI) GetJobOutput(arg0 *glacier.GetJobOutputInput) (*glacier
 	return ret0, ret1
 }
 
-// GetJobOutput indicates an expected call of GetJobOutput.
+// GetJobOutput indicates an expected call of GetJobOutput
 func (mr *MockGlacierAPIMockRecorder) GetJobOutput(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobOutput", reflect.TypeOf((*MockGlacierAPI)(nil).GetJobOutput), arg0)
 }
 
-// GetJobOutputRequest mocks base method.
+// GetJobOutputRequest mocks base method
 func (m *MockGlacierAPI) GetJobOutputRequest(arg0 *glacier.GetJobOutputInput) (*request.Request, *glacier.GetJobOutputOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJobOutputRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockGlacierAPI) GetJobOutputRequest(arg0 *glacier.GetJobOutputInput) (*
 	return ret0, ret1
 }
 
-// GetJobOutputRequest indicates an expected call of GetJobOutputRequest.
+// GetJobOutputRequest indicates an expected call of GetJobOutputRequest
 func (mr *MockGlacierAPIMockRecorder) GetJobOutputRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobOutputRequest", reflect.TypeOf((*MockGlacierAPI)(nil).GetJobOutputRequest), arg0)
 }
 
-// GetJobOutputWithContext mocks base method.
-func (m *MockGlacierAPI) GetJobOutputWithContext(arg0 context.Context, arg1 *glacier.GetJobOutputInput, arg2 ...request.Option) (*glacier.GetJobOutputOutput, error) {
+// GetJobOutputWithContext mocks base method
+func (m *MockGlacierAPI) GetJobOutputWithContext(arg0 aws.Context, arg1 *glacier.GetJobOutputInput, arg2 ...request.Option) (*glacier.GetJobOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +728,14 @@ func (m *MockGlacierAPI) GetJobOutputWithContext(arg0 context.Context, arg1 *gla
 	return ret0, ret1
 }
 
-// GetJobOutputWithContext indicates an expected call of GetJobOutputWithContext.
+// GetJobOutputWithContext indicates an expected call of GetJobOutputWithContext
 func (mr *MockGlacierAPIMockRecorder) GetJobOutputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobOutputWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).GetJobOutputWithContext), varargs...)
 }
 
-// GetVaultAccessPolicy mocks base method.
+// GetVaultAccessPolicy mocks base method
 func (m *MockGlacierAPI) GetVaultAccessPolicy(arg0 *glacier.GetVaultAccessPolicyInput) (*glacier.GetVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVaultAccessPolicy", arg0)
@@ -745,13 +744,13 @@ func (m *MockGlacierAPI) GetVaultAccessPolicy(arg0 *glacier.GetVaultAccessPolicy
 	return ret0, ret1
 }
 
-// GetVaultAccessPolicy indicates an expected call of GetVaultAccessPolicy.
+// GetVaultAccessPolicy indicates an expected call of GetVaultAccessPolicy
 func (mr *MockGlacierAPIMockRecorder) GetVaultAccessPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultAccessPolicy", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultAccessPolicy), arg0)
 }
 
-// GetVaultAccessPolicyRequest mocks base method.
+// GetVaultAccessPolicyRequest mocks base method
 func (m *MockGlacierAPI) GetVaultAccessPolicyRequest(arg0 *glacier.GetVaultAccessPolicyInput) (*request.Request, *glacier.GetVaultAccessPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVaultAccessPolicyRequest", arg0)
@@ -760,14 +759,14 @@ func (m *MockGlacierAPI) GetVaultAccessPolicyRequest(arg0 *glacier.GetVaultAcces
 	return ret0, ret1
 }
 
-// GetVaultAccessPolicyRequest indicates an expected call of GetVaultAccessPolicyRequest.
+// GetVaultAccessPolicyRequest indicates an expected call of GetVaultAccessPolicyRequest
 func (mr *MockGlacierAPIMockRecorder) GetVaultAccessPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultAccessPolicyRequest", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultAccessPolicyRequest), arg0)
 }
 
-// GetVaultAccessPolicyWithContext mocks base method.
-func (m *MockGlacierAPI) GetVaultAccessPolicyWithContext(arg0 context.Context, arg1 *glacier.GetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.GetVaultAccessPolicyOutput, error) {
+// GetVaultAccessPolicyWithContext mocks base method
+func (m *MockGlacierAPI) GetVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *glacier.GetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.GetVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +778,14 @@ func (m *MockGlacierAPI) GetVaultAccessPolicyWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetVaultAccessPolicyWithContext indicates an expected call of GetVaultAccessPolicyWithContext.
+// GetVaultAccessPolicyWithContext indicates an expected call of GetVaultAccessPolicyWithContext
 func (mr *MockGlacierAPIMockRecorder) GetVaultAccessPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultAccessPolicyWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultAccessPolicyWithContext), varargs...)
 }
 
-// GetVaultLock mocks base method.
+// GetVaultLock mocks base method
 func (m *MockGlacierAPI) GetVaultLock(arg0 *glacier.GetVaultLockInput) (*glacier.GetVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVaultLock", arg0)
@@ -795,13 +794,13 @@ func (m *MockGlacierAPI) GetVaultLock(arg0 *glacier.GetVaultLockInput) (*glacier
 	return ret0, ret1
 }
 
-// GetVaultLock indicates an expected call of GetVaultLock.
+// GetVaultLock indicates an expected call of GetVaultLock
 func (mr *MockGlacierAPIMockRecorder) GetVaultLock(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultLock", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultLock), arg0)
 }
 
-// GetVaultLockRequest mocks base method.
+// GetVaultLockRequest mocks base method
 func (m *MockGlacierAPI) GetVaultLockRequest(arg0 *glacier.GetVaultLockInput) (*request.Request, *glacier.GetVaultLockOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVaultLockRequest", arg0)
@@ -810,14 +809,14 @@ func (m *MockGlacierAPI) GetVaultLockRequest(arg0 *glacier.GetVaultLockInput) (*
 	return ret0, ret1
 }
 
-// GetVaultLockRequest indicates an expected call of GetVaultLockRequest.
+// GetVaultLockRequest indicates an expected call of GetVaultLockRequest
 func (mr *MockGlacierAPIMockRecorder) GetVaultLockRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultLockRequest", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultLockRequest), arg0)
 }
 
-// GetVaultLockWithContext mocks base method.
-func (m *MockGlacierAPI) GetVaultLockWithContext(arg0 context.Context, arg1 *glacier.GetVaultLockInput, arg2 ...request.Option) (*glacier.GetVaultLockOutput, error) {
+// GetVaultLockWithContext mocks base method
+func (m *MockGlacierAPI) GetVaultLockWithContext(arg0 aws.Context, arg1 *glacier.GetVaultLockInput, arg2 ...request.Option) (*glacier.GetVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +828,14 @@ func (m *MockGlacierAPI) GetVaultLockWithContext(arg0 context.Context, arg1 *gla
 	return ret0, ret1
 }
 
-// GetVaultLockWithContext indicates an expected call of GetVaultLockWithContext.
+// GetVaultLockWithContext indicates an expected call of GetVaultLockWithContext
 func (mr *MockGlacierAPIMockRecorder) GetVaultLockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultLockWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultLockWithContext), varargs...)
 }
 
-// GetVaultNotifications mocks base method.
+// GetVaultNotifications mocks base method
 func (m *MockGlacierAPI) GetVaultNotifications(arg0 *glacier.GetVaultNotificationsInput) (*glacier.GetVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVaultNotifications", arg0)
@@ -845,13 +844,13 @@ func (m *MockGlacierAPI) GetVaultNotifications(arg0 *glacier.GetVaultNotificatio
 	return ret0, ret1
 }
 
-// GetVaultNotifications indicates an expected call of GetVaultNotifications.
+// GetVaultNotifications indicates an expected call of GetVaultNotifications
 func (mr *MockGlacierAPIMockRecorder) GetVaultNotifications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultNotifications", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultNotifications), arg0)
 }
 
-// GetVaultNotificationsRequest mocks base method.
+// GetVaultNotificationsRequest mocks base method
 func (m *MockGlacierAPI) GetVaultNotificationsRequest(arg0 *glacier.GetVaultNotificationsInput) (*request.Request, *glacier.GetVaultNotificationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVaultNotificationsRequest", arg0)
@@ -860,14 +859,14 @@ func (m *MockGlacierAPI) GetVaultNotificationsRequest(arg0 *glacier.GetVaultNoti
 	return ret0, ret1
 }
 
-// GetVaultNotificationsRequest indicates an expected call of GetVaultNotificationsRequest.
+// GetVaultNotificationsRequest indicates an expected call of GetVaultNotificationsRequest
 func (mr *MockGlacierAPIMockRecorder) GetVaultNotificationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultNotificationsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultNotificationsRequest), arg0)
 }
 
-// GetVaultNotificationsWithContext mocks base method.
-func (m *MockGlacierAPI) GetVaultNotificationsWithContext(arg0 context.Context, arg1 *glacier.GetVaultNotificationsInput, arg2 ...request.Option) (*glacier.GetVaultNotificationsOutput, error) {
+// GetVaultNotificationsWithContext mocks base method
+func (m *MockGlacierAPI) GetVaultNotificationsWithContext(arg0 aws.Context, arg1 *glacier.GetVaultNotificationsInput, arg2 ...request.Option) (*glacier.GetVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +878,14 @@ func (m *MockGlacierAPI) GetVaultNotificationsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetVaultNotificationsWithContext indicates an expected call of GetVaultNotificationsWithContext.
+// GetVaultNotificationsWithContext indicates an expected call of GetVaultNotificationsWithContext
 func (mr *MockGlacierAPIMockRecorder) GetVaultNotificationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVaultNotificationsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).GetVaultNotificationsWithContext), varargs...)
 }
 
-// InitiateJob mocks base method.
+// InitiateJob mocks base method
 func (m *MockGlacierAPI) InitiateJob(arg0 *glacier.InitiateJobInput) (*glacier.InitiateJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateJob", arg0)
@@ -895,13 +894,13 @@ func (m *MockGlacierAPI) InitiateJob(arg0 *glacier.InitiateJobInput) (*glacier.I
 	return ret0, ret1
 }
 
-// InitiateJob indicates an expected call of InitiateJob.
+// InitiateJob indicates an expected call of InitiateJob
 func (mr *MockGlacierAPIMockRecorder) InitiateJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateJob", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateJob), arg0)
 }
 
-// InitiateJobRequest mocks base method.
+// InitiateJobRequest mocks base method
 func (m *MockGlacierAPI) InitiateJobRequest(arg0 *glacier.InitiateJobInput) (*request.Request, *glacier.InitiateJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateJobRequest", arg0)
@@ -910,14 +909,14 @@ func (m *MockGlacierAPI) InitiateJobRequest(arg0 *glacier.InitiateJobInput) (*re
 	return ret0, ret1
 }
 
-// InitiateJobRequest indicates an expected call of InitiateJobRequest.
+// InitiateJobRequest indicates an expected call of InitiateJobRequest
 func (mr *MockGlacierAPIMockRecorder) InitiateJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateJobRequest", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateJobRequest), arg0)
 }
 
-// InitiateJobWithContext mocks base method.
-func (m *MockGlacierAPI) InitiateJobWithContext(arg0 context.Context, arg1 *glacier.InitiateJobInput, arg2 ...request.Option) (*glacier.InitiateJobOutput, error) {
+// InitiateJobWithContext mocks base method
+func (m *MockGlacierAPI) InitiateJobWithContext(arg0 aws.Context, arg1 *glacier.InitiateJobInput, arg2 ...request.Option) (*glacier.InitiateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +928,14 @@ func (m *MockGlacierAPI) InitiateJobWithContext(arg0 context.Context, arg1 *glac
 	return ret0, ret1
 }
 
-// InitiateJobWithContext indicates an expected call of InitiateJobWithContext.
+// InitiateJobWithContext indicates an expected call of InitiateJobWithContext
 func (mr *MockGlacierAPIMockRecorder) InitiateJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateJobWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateJobWithContext), varargs...)
 }
 
-// InitiateMultipartUpload mocks base method.
+// InitiateMultipartUpload mocks base method
 func (m *MockGlacierAPI) InitiateMultipartUpload(arg0 *glacier.InitiateMultipartUploadInput) (*glacier.InitiateMultipartUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateMultipartUpload", arg0)
@@ -945,13 +944,13 @@ func (m *MockGlacierAPI) InitiateMultipartUpload(arg0 *glacier.InitiateMultipart
 	return ret0, ret1
 }
 
-// InitiateMultipartUpload indicates an expected call of InitiateMultipartUpload.
+// InitiateMultipartUpload indicates an expected call of InitiateMultipartUpload
 func (mr *MockGlacierAPIMockRecorder) InitiateMultipartUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateMultipartUpload", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateMultipartUpload), arg0)
 }
 
-// InitiateMultipartUploadRequest mocks base method.
+// InitiateMultipartUploadRequest mocks base method
 func (m *MockGlacierAPI) InitiateMultipartUploadRequest(arg0 *glacier.InitiateMultipartUploadInput) (*request.Request, *glacier.InitiateMultipartUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateMultipartUploadRequest", arg0)
@@ -960,14 +959,14 @@ func (m *MockGlacierAPI) InitiateMultipartUploadRequest(arg0 *glacier.InitiateMu
 	return ret0, ret1
 }
 
-// InitiateMultipartUploadRequest indicates an expected call of InitiateMultipartUploadRequest.
+// InitiateMultipartUploadRequest indicates an expected call of InitiateMultipartUploadRequest
 func (mr *MockGlacierAPIMockRecorder) InitiateMultipartUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateMultipartUploadRequest", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateMultipartUploadRequest), arg0)
 }
 
-// InitiateMultipartUploadWithContext mocks base method.
-func (m *MockGlacierAPI) InitiateMultipartUploadWithContext(arg0 context.Context, arg1 *glacier.InitiateMultipartUploadInput, arg2 ...request.Option) (*glacier.InitiateMultipartUploadOutput, error) {
+// InitiateMultipartUploadWithContext mocks base method
+func (m *MockGlacierAPI) InitiateMultipartUploadWithContext(arg0 aws.Context, arg1 *glacier.InitiateMultipartUploadInput, arg2 ...request.Option) (*glacier.InitiateMultipartUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +978,14 @@ func (m *MockGlacierAPI) InitiateMultipartUploadWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// InitiateMultipartUploadWithContext indicates an expected call of InitiateMultipartUploadWithContext.
+// InitiateMultipartUploadWithContext indicates an expected call of InitiateMultipartUploadWithContext
 func (mr *MockGlacierAPIMockRecorder) InitiateMultipartUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateMultipartUploadWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateMultipartUploadWithContext), varargs...)
 }
 
-// InitiateVaultLock mocks base method.
+// InitiateVaultLock mocks base method
 func (m *MockGlacierAPI) InitiateVaultLock(arg0 *glacier.InitiateVaultLockInput) (*glacier.InitiateVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateVaultLock", arg0)
@@ -995,13 +994,13 @@ func (m *MockGlacierAPI) InitiateVaultLock(arg0 *glacier.InitiateVaultLockInput)
 	return ret0, ret1
 }
 
-// InitiateVaultLock indicates an expected call of InitiateVaultLock.
+// InitiateVaultLock indicates an expected call of InitiateVaultLock
 func (mr *MockGlacierAPIMockRecorder) InitiateVaultLock(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateVaultLock", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateVaultLock), arg0)
 }
 
-// InitiateVaultLockRequest mocks base method.
+// InitiateVaultLockRequest mocks base method
 func (m *MockGlacierAPI) InitiateVaultLockRequest(arg0 *glacier.InitiateVaultLockInput) (*request.Request, *glacier.InitiateVaultLockOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateVaultLockRequest", arg0)
@@ -1010,14 +1009,14 @@ func (m *MockGlacierAPI) InitiateVaultLockRequest(arg0 *glacier.InitiateVaultLoc
 	return ret0, ret1
 }
 
-// InitiateVaultLockRequest indicates an expected call of InitiateVaultLockRequest.
+// InitiateVaultLockRequest indicates an expected call of InitiateVaultLockRequest
 func (mr *MockGlacierAPIMockRecorder) InitiateVaultLockRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateVaultLockRequest", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateVaultLockRequest), arg0)
 }
 
-// InitiateVaultLockWithContext mocks base method.
-func (m *MockGlacierAPI) InitiateVaultLockWithContext(arg0 context.Context, arg1 *glacier.InitiateVaultLockInput, arg2 ...request.Option) (*glacier.InitiateVaultLockOutput, error) {
+// InitiateVaultLockWithContext mocks base method
+func (m *MockGlacierAPI) InitiateVaultLockWithContext(arg0 aws.Context, arg1 *glacier.InitiateVaultLockInput, arg2 ...request.Option) (*glacier.InitiateVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +1028,14 @@ func (m *MockGlacierAPI) InitiateVaultLockWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// InitiateVaultLockWithContext indicates an expected call of InitiateVaultLockWithContext.
+// InitiateVaultLockWithContext indicates an expected call of InitiateVaultLockWithContext
 func (mr *MockGlacierAPIMockRecorder) InitiateVaultLockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateVaultLockWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).InitiateVaultLockWithContext), varargs...)
 }
 
-// ListJobs mocks base method.
+// ListJobs mocks base method
 func (m *MockGlacierAPI) ListJobs(arg0 *glacier.ListJobsInput) (*glacier.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobs", arg0)
@@ -1045,13 +1044,13 @@ func (m *MockGlacierAPI) ListJobs(arg0 *glacier.ListJobsInput) (*glacier.ListJob
 	return ret0, ret1
 }
 
-// ListJobs indicates an expected call of ListJobs.
+// ListJobs indicates an expected call of ListJobs
 func (mr *MockGlacierAPIMockRecorder) ListJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobs", reflect.TypeOf((*MockGlacierAPI)(nil).ListJobs), arg0)
 }
 
-// ListJobsPages mocks base method.
+// ListJobsPages mocks base method
 func (m *MockGlacierAPI) ListJobsPages(arg0 *glacier.ListJobsInput, arg1 func(*glacier.ListJobsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsPages", arg0, arg1)
@@ -1059,14 +1058,14 @@ func (m *MockGlacierAPI) ListJobsPages(arg0 *glacier.ListJobsInput, arg1 func(*g
 	return ret0
 }
 
-// ListJobsPages indicates an expected call of ListJobsPages.
+// ListJobsPages indicates an expected call of ListJobsPages
 func (mr *MockGlacierAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPages", reflect.TypeOf((*MockGlacierAPI)(nil).ListJobsPages), arg0, arg1)
 }
 
-// ListJobsPagesWithContext mocks base method.
-func (m *MockGlacierAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *glacier.ListJobsInput, arg2 func(*glacier.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+// ListJobsPagesWithContext mocks base method
+func (m *MockGlacierAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListJobsInput, arg2 func(*glacier.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1077,14 +1076,14 @@ func (m *MockGlacierAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *gl
 	return ret0
 }
 
-// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext.
+// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext
 func (mr *MockGlacierAPIMockRecorder) ListJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPagesWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListJobsPagesWithContext), varargs...)
 }
 
-// ListJobsRequest mocks base method.
+// ListJobsRequest mocks base method
 func (m *MockGlacierAPI) ListJobsRequest(arg0 *glacier.ListJobsInput) (*request.Request, *glacier.ListJobsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsRequest", arg0)
@@ -1093,14 +1092,14 @@ func (m *MockGlacierAPI) ListJobsRequest(arg0 *glacier.ListJobsInput) (*request.
 	return ret0, ret1
 }
 
-// ListJobsRequest indicates an expected call of ListJobsRequest.
+// ListJobsRequest indicates an expected call of ListJobsRequest
 func (mr *MockGlacierAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).ListJobsRequest), arg0)
 }
 
-// ListJobsWithContext mocks base method.
-func (m *MockGlacierAPI) ListJobsWithContext(arg0 context.Context, arg1 *glacier.ListJobsInput, arg2 ...request.Option) (*glacier.ListJobsOutput, error) {
+// ListJobsWithContext mocks base method
+func (m *MockGlacierAPI) ListJobsWithContext(arg0 aws.Context, arg1 *glacier.ListJobsInput, arg2 ...request.Option) (*glacier.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1112,14 +1111,14 @@ func (m *MockGlacierAPI) ListJobsWithContext(arg0 context.Context, arg1 *glacier
 	return ret0, ret1
 }
 
-// ListJobsWithContext indicates an expected call of ListJobsWithContext.
+// ListJobsWithContext indicates an expected call of ListJobsWithContext
 func (mr *MockGlacierAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListJobsWithContext), varargs...)
 }
 
-// ListMultipartUploads mocks base method.
+// ListMultipartUploads mocks base method
 func (m *MockGlacierAPI) ListMultipartUploads(arg0 *glacier.ListMultipartUploadsInput) (*glacier.ListMultipartUploadsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMultipartUploads", arg0)
@@ -1128,13 +1127,13 @@ func (m *MockGlacierAPI) ListMultipartUploads(arg0 *glacier.ListMultipartUploads
 	return ret0, ret1
 }
 
-// ListMultipartUploads indicates an expected call of ListMultipartUploads.
+// ListMultipartUploads indicates an expected call of ListMultipartUploads
 func (mr *MockGlacierAPIMockRecorder) ListMultipartUploads(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartUploads", reflect.TypeOf((*MockGlacierAPI)(nil).ListMultipartUploads), arg0)
 }
 
-// ListMultipartUploadsPages mocks base method.
+// ListMultipartUploadsPages mocks base method
 func (m *MockGlacierAPI) ListMultipartUploadsPages(arg0 *glacier.ListMultipartUploadsInput, arg1 func(*glacier.ListMultipartUploadsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMultipartUploadsPages", arg0, arg1)
@@ -1142,14 +1141,14 @@ func (m *MockGlacierAPI) ListMultipartUploadsPages(arg0 *glacier.ListMultipartUp
 	return ret0
 }
 
-// ListMultipartUploadsPages indicates an expected call of ListMultipartUploadsPages.
+// ListMultipartUploadsPages indicates an expected call of ListMultipartUploadsPages
 func (mr *MockGlacierAPIMockRecorder) ListMultipartUploadsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartUploadsPages", reflect.TypeOf((*MockGlacierAPI)(nil).ListMultipartUploadsPages), arg0, arg1)
 }
 
-// ListMultipartUploadsPagesWithContext mocks base method.
-func (m *MockGlacierAPI) ListMultipartUploadsPagesWithContext(arg0 context.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 func(*glacier.ListMultipartUploadsOutput, bool) bool, arg3 ...request.Option) error {
+// ListMultipartUploadsPagesWithContext mocks base method
+func (m *MockGlacierAPI) ListMultipartUploadsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 func(*glacier.ListMultipartUploadsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1160,14 +1159,14 @@ func (m *MockGlacierAPI) ListMultipartUploadsPagesWithContext(arg0 context.Conte
 	return ret0
 }
 
-// ListMultipartUploadsPagesWithContext indicates an expected call of ListMultipartUploadsPagesWithContext.
+// ListMultipartUploadsPagesWithContext indicates an expected call of ListMultipartUploadsPagesWithContext
 func (mr *MockGlacierAPIMockRecorder) ListMultipartUploadsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartUploadsPagesWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListMultipartUploadsPagesWithContext), varargs...)
 }
 
-// ListMultipartUploadsRequest mocks base method.
+// ListMultipartUploadsRequest mocks base method
 func (m *MockGlacierAPI) ListMultipartUploadsRequest(arg0 *glacier.ListMultipartUploadsInput) (*request.Request, *glacier.ListMultipartUploadsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMultipartUploadsRequest", arg0)
@@ -1176,14 +1175,14 @@ func (m *MockGlacierAPI) ListMultipartUploadsRequest(arg0 *glacier.ListMultipart
 	return ret0, ret1
 }
 
-// ListMultipartUploadsRequest indicates an expected call of ListMultipartUploadsRequest.
+// ListMultipartUploadsRequest indicates an expected call of ListMultipartUploadsRequest
 func (mr *MockGlacierAPIMockRecorder) ListMultipartUploadsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartUploadsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).ListMultipartUploadsRequest), arg0)
 }
 
-// ListMultipartUploadsWithContext mocks base method.
-func (m *MockGlacierAPI) ListMultipartUploadsWithContext(arg0 context.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 ...request.Option) (*glacier.ListMultipartUploadsOutput, error) {
+// ListMultipartUploadsWithContext mocks base method
+func (m *MockGlacierAPI) ListMultipartUploadsWithContext(arg0 aws.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 ...request.Option) (*glacier.ListMultipartUploadsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1195,14 +1194,14 @@ func (m *MockGlacierAPI) ListMultipartUploadsWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// ListMultipartUploadsWithContext indicates an expected call of ListMultipartUploadsWithContext.
+// ListMultipartUploadsWithContext indicates an expected call of ListMultipartUploadsWithContext
 func (mr *MockGlacierAPIMockRecorder) ListMultipartUploadsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartUploadsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListMultipartUploadsWithContext), varargs...)
 }
 
-// ListParts mocks base method.
+// ListParts mocks base method
 func (m *MockGlacierAPI) ListParts(arg0 *glacier.ListPartsInput) (*glacier.ListPartsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListParts", arg0)
@@ -1211,13 +1210,13 @@ func (m *MockGlacierAPI) ListParts(arg0 *glacier.ListPartsInput) (*glacier.ListP
 	return ret0, ret1
 }
 
-// ListParts indicates an expected call of ListParts.
+// ListParts indicates an expected call of ListParts
 func (mr *MockGlacierAPIMockRecorder) ListParts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParts", reflect.TypeOf((*MockGlacierAPI)(nil).ListParts), arg0)
 }
 
-// ListPartsPages mocks base method.
+// ListPartsPages mocks base method
 func (m *MockGlacierAPI) ListPartsPages(arg0 *glacier.ListPartsInput, arg1 func(*glacier.ListPartsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPartsPages", arg0, arg1)
@@ -1225,14 +1224,14 @@ func (m *MockGlacierAPI) ListPartsPages(arg0 *glacier.ListPartsInput, arg1 func(
 	return ret0
 }
 
-// ListPartsPages indicates an expected call of ListPartsPages.
+// ListPartsPages indicates an expected call of ListPartsPages
 func (mr *MockGlacierAPIMockRecorder) ListPartsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartsPages", reflect.TypeOf((*MockGlacierAPI)(nil).ListPartsPages), arg0, arg1)
 }
 
-// ListPartsPagesWithContext mocks base method.
-func (m *MockGlacierAPI) ListPartsPagesWithContext(arg0 context.Context, arg1 *glacier.ListPartsInput, arg2 func(*glacier.ListPartsOutput, bool) bool, arg3 ...request.Option) error {
+// ListPartsPagesWithContext mocks base method
+func (m *MockGlacierAPI) ListPartsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListPartsInput, arg2 func(*glacier.ListPartsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1243,14 +1242,14 @@ func (m *MockGlacierAPI) ListPartsPagesWithContext(arg0 context.Context, arg1 *g
 	return ret0
 }
 
-// ListPartsPagesWithContext indicates an expected call of ListPartsPagesWithContext.
+// ListPartsPagesWithContext indicates an expected call of ListPartsPagesWithContext
 func (mr *MockGlacierAPIMockRecorder) ListPartsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartsPagesWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListPartsPagesWithContext), varargs...)
 }
 
-// ListPartsRequest mocks base method.
+// ListPartsRequest mocks base method
 func (m *MockGlacierAPI) ListPartsRequest(arg0 *glacier.ListPartsInput) (*request.Request, *glacier.ListPartsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPartsRequest", arg0)
@@ -1259,14 +1258,14 @@ func (m *MockGlacierAPI) ListPartsRequest(arg0 *glacier.ListPartsInput) (*reques
 	return ret0, ret1
 }
 
-// ListPartsRequest indicates an expected call of ListPartsRequest.
+// ListPartsRequest indicates an expected call of ListPartsRequest
 func (mr *MockGlacierAPIMockRecorder) ListPartsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).ListPartsRequest), arg0)
 }
 
-// ListPartsWithContext mocks base method.
-func (m *MockGlacierAPI) ListPartsWithContext(arg0 context.Context, arg1 *glacier.ListPartsInput, arg2 ...request.Option) (*glacier.ListPartsOutput, error) {
+// ListPartsWithContext mocks base method
+func (m *MockGlacierAPI) ListPartsWithContext(arg0 aws.Context, arg1 *glacier.ListPartsInput, arg2 ...request.Option) (*glacier.ListPartsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1278,14 +1277,14 @@ func (m *MockGlacierAPI) ListPartsWithContext(arg0 context.Context, arg1 *glacie
 	return ret0, ret1
 }
 
-// ListPartsWithContext indicates an expected call of ListPartsWithContext.
+// ListPartsWithContext indicates an expected call of ListPartsWithContext
 func (mr *MockGlacierAPIMockRecorder) ListPartsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListPartsWithContext), varargs...)
 }
 
-// ListProvisionedCapacity mocks base method.
+// ListProvisionedCapacity mocks base method
 func (m *MockGlacierAPI) ListProvisionedCapacity(arg0 *glacier.ListProvisionedCapacityInput) (*glacier.ListProvisionedCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProvisionedCapacity", arg0)
@@ -1294,13 +1293,13 @@ func (m *MockGlacierAPI) ListProvisionedCapacity(arg0 *glacier.ListProvisionedCa
 	return ret0, ret1
 }
 
-// ListProvisionedCapacity indicates an expected call of ListProvisionedCapacity.
+// ListProvisionedCapacity indicates an expected call of ListProvisionedCapacity
 func (mr *MockGlacierAPIMockRecorder) ListProvisionedCapacity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedCapacity", reflect.TypeOf((*MockGlacierAPI)(nil).ListProvisionedCapacity), arg0)
 }
 
-// ListProvisionedCapacityRequest mocks base method.
+// ListProvisionedCapacityRequest mocks base method
 func (m *MockGlacierAPI) ListProvisionedCapacityRequest(arg0 *glacier.ListProvisionedCapacityInput) (*request.Request, *glacier.ListProvisionedCapacityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProvisionedCapacityRequest", arg0)
@@ -1309,14 +1308,14 @@ func (m *MockGlacierAPI) ListProvisionedCapacityRequest(arg0 *glacier.ListProvis
 	return ret0, ret1
 }
 
-// ListProvisionedCapacityRequest indicates an expected call of ListProvisionedCapacityRequest.
+// ListProvisionedCapacityRequest indicates an expected call of ListProvisionedCapacityRequest
 func (mr *MockGlacierAPIMockRecorder) ListProvisionedCapacityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedCapacityRequest", reflect.TypeOf((*MockGlacierAPI)(nil).ListProvisionedCapacityRequest), arg0)
 }
 
-// ListProvisionedCapacityWithContext mocks base method.
-func (m *MockGlacierAPI) ListProvisionedCapacityWithContext(arg0 context.Context, arg1 *glacier.ListProvisionedCapacityInput, arg2 ...request.Option) (*glacier.ListProvisionedCapacityOutput, error) {
+// ListProvisionedCapacityWithContext mocks base method
+func (m *MockGlacierAPI) ListProvisionedCapacityWithContext(arg0 aws.Context, arg1 *glacier.ListProvisionedCapacityInput, arg2 ...request.Option) (*glacier.ListProvisionedCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1328,14 +1327,14 @@ func (m *MockGlacierAPI) ListProvisionedCapacityWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ListProvisionedCapacityWithContext indicates an expected call of ListProvisionedCapacityWithContext.
+// ListProvisionedCapacityWithContext indicates an expected call of ListProvisionedCapacityWithContext
 func (mr *MockGlacierAPIMockRecorder) ListProvisionedCapacityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedCapacityWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListProvisionedCapacityWithContext), varargs...)
 }
 
-// ListTagsForVault mocks base method.
+// ListTagsForVault mocks base method
 func (m *MockGlacierAPI) ListTagsForVault(arg0 *glacier.ListTagsForVaultInput) (*glacier.ListTagsForVaultOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForVault", arg0)
@@ -1344,13 +1343,13 @@ func (m *MockGlacierAPI) ListTagsForVault(arg0 *glacier.ListTagsForVaultInput) (
 	return ret0, ret1
 }
 
-// ListTagsForVault indicates an expected call of ListTagsForVault.
+// ListTagsForVault indicates an expected call of ListTagsForVault
 func (mr *MockGlacierAPIMockRecorder) ListTagsForVault(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForVault", reflect.TypeOf((*MockGlacierAPI)(nil).ListTagsForVault), arg0)
 }
 
-// ListTagsForVaultRequest mocks base method.
+// ListTagsForVaultRequest mocks base method
 func (m *MockGlacierAPI) ListTagsForVaultRequest(arg0 *glacier.ListTagsForVaultInput) (*request.Request, *glacier.ListTagsForVaultOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForVaultRequest", arg0)
@@ -1359,14 +1358,14 @@ func (m *MockGlacierAPI) ListTagsForVaultRequest(arg0 *glacier.ListTagsForVaultI
 	return ret0, ret1
 }
 
-// ListTagsForVaultRequest indicates an expected call of ListTagsForVaultRequest.
+// ListTagsForVaultRequest indicates an expected call of ListTagsForVaultRequest
 func (mr *MockGlacierAPIMockRecorder) ListTagsForVaultRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForVaultRequest", reflect.TypeOf((*MockGlacierAPI)(nil).ListTagsForVaultRequest), arg0)
 }
 
-// ListTagsForVaultWithContext mocks base method.
-func (m *MockGlacierAPI) ListTagsForVaultWithContext(arg0 context.Context, arg1 *glacier.ListTagsForVaultInput, arg2 ...request.Option) (*glacier.ListTagsForVaultOutput, error) {
+// ListTagsForVaultWithContext mocks base method
+func (m *MockGlacierAPI) ListTagsForVaultWithContext(arg0 aws.Context, arg1 *glacier.ListTagsForVaultInput, arg2 ...request.Option) (*glacier.ListTagsForVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1378,14 +1377,14 @@ func (m *MockGlacierAPI) ListTagsForVaultWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListTagsForVaultWithContext indicates an expected call of ListTagsForVaultWithContext.
+// ListTagsForVaultWithContext indicates an expected call of ListTagsForVaultWithContext
 func (mr *MockGlacierAPIMockRecorder) ListTagsForVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForVaultWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListTagsForVaultWithContext), varargs...)
 }
 
-// ListVaults mocks base method.
+// ListVaults mocks base method
 func (m *MockGlacierAPI) ListVaults(arg0 *glacier.ListVaultsInput) (*glacier.ListVaultsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVaults", arg0)
@@ -1394,13 +1393,13 @@ func (m *MockGlacierAPI) ListVaults(arg0 *glacier.ListVaultsInput) (*glacier.Lis
 	return ret0, ret1
 }
 
-// ListVaults indicates an expected call of ListVaults.
+// ListVaults indicates an expected call of ListVaults
 func (mr *MockGlacierAPIMockRecorder) ListVaults(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVaults", reflect.TypeOf((*MockGlacierAPI)(nil).ListVaults), arg0)
 }
 
-// ListVaultsPages mocks base method.
+// ListVaultsPages mocks base method
 func (m *MockGlacierAPI) ListVaultsPages(arg0 *glacier.ListVaultsInput, arg1 func(*glacier.ListVaultsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVaultsPages", arg0, arg1)
@@ -1408,14 +1407,14 @@ func (m *MockGlacierAPI) ListVaultsPages(arg0 *glacier.ListVaultsInput, arg1 fun
 	return ret0
 }
 
-// ListVaultsPages indicates an expected call of ListVaultsPages.
+// ListVaultsPages indicates an expected call of ListVaultsPages
 func (mr *MockGlacierAPIMockRecorder) ListVaultsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVaultsPages", reflect.TypeOf((*MockGlacierAPI)(nil).ListVaultsPages), arg0, arg1)
 }
 
-// ListVaultsPagesWithContext mocks base method.
-func (m *MockGlacierAPI) ListVaultsPagesWithContext(arg0 context.Context, arg1 *glacier.ListVaultsInput, arg2 func(*glacier.ListVaultsOutput, bool) bool, arg3 ...request.Option) error {
+// ListVaultsPagesWithContext mocks base method
+func (m *MockGlacierAPI) ListVaultsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListVaultsInput, arg2 func(*glacier.ListVaultsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1426,14 +1425,14 @@ func (m *MockGlacierAPI) ListVaultsPagesWithContext(arg0 context.Context, arg1 *
 	return ret0
 }
 
-// ListVaultsPagesWithContext indicates an expected call of ListVaultsPagesWithContext.
+// ListVaultsPagesWithContext indicates an expected call of ListVaultsPagesWithContext
 func (mr *MockGlacierAPIMockRecorder) ListVaultsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVaultsPagesWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListVaultsPagesWithContext), varargs...)
 }
 
-// ListVaultsRequest mocks base method.
+// ListVaultsRequest mocks base method
 func (m *MockGlacierAPI) ListVaultsRequest(arg0 *glacier.ListVaultsInput) (*request.Request, *glacier.ListVaultsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVaultsRequest", arg0)
@@ -1442,14 +1441,14 @@ func (m *MockGlacierAPI) ListVaultsRequest(arg0 *glacier.ListVaultsInput) (*requ
 	return ret0, ret1
 }
 
-// ListVaultsRequest indicates an expected call of ListVaultsRequest.
+// ListVaultsRequest indicates an expected call of ListVaultsRequest
 func (mr *MockGlacierAPIMockRecorder) ListVaultsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVaultsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).ListVaultsRequest), arg0)
 }
 
-// ListVaultsWithContext mocks base method.
-func (m *MockGlacierAPI) ListVaultsWithContext(arg0 context.Context, arg1 *glacier.ListVaultsInput, arg2 ...request.Option) (*glacier.ListVaultsOutput, error) {
+// ListVaultsWithContext mocks base method
+func (m *MockGlacierAPI) ListVaultsWithContext(arg0 aws.Context, arg1 *glacier.ListVaultsInput, arg2 ...request.Option) (*glacier.ListVaultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1461,14 +1460,14 @@ func (m *MockGlacierAPI) ListVaultsWithContext(arg0 context.Context, arg1 *glaci
 	return ret0, ret1
 }
 
-// ListVaultsWithContext indicates an expected call of ListVaultsWithContext.
+// ListVaultsWithContext indicates an expected call of ListVaultsWithContext
 func (mr *MockGlacierAPIMockRecorder) ListVaultsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVaultsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).ListVaultsWithContext), varargs...)
 }
 
-// PurchaseProvisionedCapacity mocks base method.
+// PurchaseProvisionedCapacity mocks base method
 func (m *MockGlacierAPI) PurchaseProvisionedCapacity(arg0 *glacier.PurchaseProvisionedCapacityInput) (*glacier.PurchaseProvisionedCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PurchaseProvisionedCapacity", arg0)
@@ -1477,13 +1476,13 @@ func (m *MockGlacierAPI) PurchaseProvisionedCapacity(arg0 *glacier.PurchaseProvi
 	return ret0, ret1
 }
 
-// PurchaseProvisionedCapacity indicates an expected call of PurchaseProvisionedCapacity.
+// PurchaseProvisionedCapacity indicates an expected call of PurchaseProvisionedCapacity
 func (mr *MockGlacierAPIMockRecorder) PurchaseProvisionedCapacity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseProvisionedCapacity", reflect.TypeOf((*MockGlacierAPI)(nil).PurchaseProvisionedCapacity), arg0)
 }
 
-// PurchaseProvisionedCapacityRequest mocks base method.
+// PurchaseProvisionedCapacityRequest mocks base method
 func (m *MockGlacierAPI) PurchaseProvisionedCapacityRequest(arg0 *glacier.PurchaseProvisionedCapacityInput) (*request.Request, *glacier.PurchaseProvisionedCapacityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PurchaseProvisionedCapacityRequest", arg0)
@@ -1492,14 +1491,14 @@ func (m *MockGlacierAPI) PurchaseProvisionedCapacityRequest(arg0 *glacier.Purcha
 	return ret0, ret1
 }
 
-// PurchaseProvisionedCapacityRequest indicates an expected call of PurchaseProvisionedCapacityRequest.
+// PurchaseProvisionedCapacityRequest indicates an expected call of PurchaseProvisionedCapacityRequest
 func (mr *MockGlacierAPIMockRecorder) PurchaseProvisionedCapacityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseProvisionedCapacityRequest", reflect.TypeOf((*MockGlacierAPI)(nil).PurchaseProvisionedCapacityRequest), arg0)
 }
 
-// PurchaseProvisionedCapacityWithContext mocks base method.
-func (m *MockGlacierAPI) PurchaseProvisionedCapacityWithContext(arg0 context.Context, arg1 *glacier.PurchaseProvisionedCapacityInput, arg2 ...request.Option) (*glacier.PurchaseProvisionedCapacityOutput, error) {
+// PurchaseProvisionedCapacityWithContext mocks base method
+func (m *MockGlacierAPI) PurchaseProvisionedCapacityWithContext(arg0 aws.Context, arg1 *glacier.PurchaseProvisionedCapacityInput, arg2 ...request.Option) (*glacier.PurchaseProvisionedCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1511,14 +1510,14 @@ func (m *MockGlacierAPI) PurchaseProvisionedCapacityWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// PurchaseProvisionedCapacityWithContext indicates an expected call of PurchaseProvisionedCapacityWithContext.
+// PurchaseProvisionedCapacityWithContext indicates an expected call of PurchaseProvisionedCapacityWithContext
 func (mr *MockGlacierAPIMockRecorder) PurchaseProvisionedCapacityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseProvisionedCapacityWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).PurchaseProvisionedCapacityWithContext), varargs...)
 }
 
-// RemoveTagsFromVault mocks base method.
+// RemoveTagsFromVault mocks base method
 func (m *MockGlacierAPI) RemoveTagsFromVault(arg0 *glacier.RemoveTagsFromVaultInput) (*glacier.RemoveTagsFromVaultOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsFromVault", arg0)
@@ -1527,13 +1526,13 @@ func (m *MockGlacierAPI) RemoveTagsFromVault(arg0 *glacier.RemoveTagsFromVaultIn
 	return ret0, ret1
 }
 
-// RemoveTagsFromVault indicates an expected call of RemoveTagsFromVault.
+// RemoveTagsFromVault indicates an expected call of RemoveTagsFromVault
 func (mr *MockGlacierAPIMockRecorder) RemoveTagsFromVault(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromVault", reflect.TypeOf((*MockGlacierAPI)(nil).RemoveTagsFromVault), arg0)
 }
 
-// RemoveTagsFromVaultRequest mocks base method.
+// RemoveTagsFromVaultRequest mocks base method
 func (m *MockGlacierAPI) RemoveTagsFromVaultRequest(arg0 *glacier.RemoveTagsFromVaultInput) (*request.Request, *glacier.RemoveTagsFromVaultOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsFromVaultRequest", arg0)
@@ -1542,14 +1541,14 @@ func (m *MockGlacierAPI) RemoveTagsFromVaultRequest(arg0 *glacier.RemoveTagsFrom
 	return ret0, ret1
 }
 
-// RemoveTagsFromVaultRequest indicates an expected call of RemoveTagsFromVaultRequest.
+// RemoveTagsFromVaultRequest indicates an expected call of RemoveTagsFromVaultRequest
 func (mr *MockGlacierAPIMockRecorder) RemoveTagsFromVaultRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromVaultRequest", reflect.TypeOf((*MockGlacierAPI)(nil).RemoveTagsFromVaultRequest), arg0)
 }
 
-// RemoveTagsFromVaultWithContext mocks base method.
-func (m *MockGlacierAPI) RemoveTagsFromVaultWithContext(arg0 context.Context, arg1 *glacier.RemoveTagsFromVaultInput, arg2 ...request.Option) (*glacier.RemoveTagsFromVaultOutput, error) {
+// RemoveTagsFromVaultWithContext mocks base method
+func (m *MockGlacierAPI) RemoveTagsFromVaultWithContext(arg0 aws.Context, arg1 *glacier.RemoveTagsFromVaultInput, arg2 ...request.Option) (*glacier.RemoveTagsFromVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1561,14 +1560,14 @@ func (m *MockGlacierAPI) RemoveTagsFromVaultWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// RemoveTagsFromVaultWithContext indicates an expected call of RemoveTagsFromVaultWithContext.
+// RemoveTagsFromVaultWithContext indicates an expected call of RemoveTagsFromVaultWithContext
 func (mr *MockGlacierAPIMockRecorder) RemoveTagsFromVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromVaultWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).RemoveTagsFromVaultWithContext), varargs...)
 }
 
-// SetDataRetrievalPolicy mocks base method.
+// SetDataRetrievalPolicy mocks base method
 func (m *MockGlacierAPI) SetDataRetrievalPolicy(arg0 *glacier.SetDataRetrievalPolicyInput) (*glacier.SetDataRetrievalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetDataRetrievalPolicy", arg0)
@@ -1577,13 +1576,13 @@ func (m *MockGlacierAPI) SetDataRetrievalPolicy(arg0 *glacier.SetDataRetrievalPo
 	return ret0, ret1
 }
 
-// SetDataRetrievalPolicy indicates an expected call of SetDataRetrievalPolicy.
+// SetDataRetrievalPolicy indicates an expected call of SetDataRetrievalPolicy
 func (mr *MockGlacierAPIMockRecorder) SetDataRetrievalPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetDataRetrievalPolicy", reflect.TypeOf((*MockGlacierAPI)(nil).SetDataRetrievalPolicy), arg0)
 }
 
-// SetDataRetrievalPolicyRequest mocks base method.
+// SetDataRetrievalPolicyRequest mocks base method
 func (m *MockGlacierAPI) SetDataRetrievalPolicyRequest(arg0 *glacier.SetDataRetrievalPolicyInput) (*request.Request, *glacier.SetDataRetrievalPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetDataRetrievalPolicyRequest", arg0)
@@ -1592,14 +1591,14 @@ func (m *MockGlacierAPI) SetDataRetrievalPolicyRequest(arg0 *glacier.SetDataRetr
 	return ret0, ret1
 }
 
-// SetDataRetrievalPolicyRequest indicates an expected call of SetDataRetrievalPolicyRequest.
+// SetDataRetrievalPolicyRequest indicates an expected call of SetDataRetrievalPolicyRequest
 func (mr *MockGlacierAPIMockRecorder) SetDataRetrievalPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetDataRetrievalPolicyRequest", reflect.TypeOf((*MockGlacierAPI)(nil).SetDataRetrievalPolicyRequest), arg0)
 }
 
-// SetDataRetrievalPolicyWithContext mocks base method.
-func (m *MockGlacierAPI) SetDataRetrievalPolicyWithContext(arg0 context.Context, arg1 *glacier.SetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.SetDataRetrievalPolicyOutput, error) {
+// SetDataRetrievalPolicyWithContext mocks base method
+func (m *MockGlacierAPI) SetDataRetrievalPolicyWithContext(arg0 aws.Context, arg1 *glacier.SetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.SetDataRetrievalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1611,14 +1610,14 @@ func (m *MockGlacierAPI) SetDataRetrievalPolicyWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// SetDataRetrievalPolicyWithContext indicates an expected call of SetDataRetrievalPolicyWithContext.
+// SetDataRetrievalPolicyWithContext indicates an expected call of SetDataRetrievalPolicyWithContext
 func (mr *MockGlacierAPIMockRecorder) SetDataRetrievalPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetDataRetrievalPolicyWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).SetDataRetrievalPolicyWithContext), varargs...)
 }
 
-// SetVaultAccessPolicy mocks base method.
+// SetVaultAccessPolicy mocks base method
 func (m *MockGlacierAPI) SetVaultAccessPolicy(arg0 *glacier.SetVaultAccessPolicyInput) (*glacier.SetVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetVaultAccessPolicy", arg0)
@@ -1627,13 +1626,13 @@ func (m *MockGlacierAPI) SetVaultAccessPolicy(arg0 *glacier.SetVaultAccessPolicy
 	return ret0, ret1
 }
 
-// SetVaultAccessPolicy indicates an expected call of SetVaultAccessPolicy.
+// SetVaultAccessPolicy indicates an expected call of SetVaultAccessPolicy
 func (mr *MockGlacierAPIMockRecorder) SetVaultAccessPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVaultAccessPolicy", reflect.TypeOf((*MockGlacierAPI)(nil).SetVaultAccessPolicy), arg0)
 }
 
-// SetVaultAccessPolicyRequest mocks base method.
+// SetVaultAccessPolicyRequest mocks base method
 func (m *MockGlacierAPI) SetVaultAccessPolicyRequest(arg0 *glacier.SetVaultAccessPolicyInput) (*request.Request, *glacier.SetVaultAccessPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetVaultAccessPolicyRequest", arg0)
@@ -1642,14 +1641,14 @@ func (m *MockGlacierAPI) SetVaultAccessPolicyRequest(arg0 *glacier.SetVaultAcces
 	return ret0, ret1
 }
 
-// SetVaultAccessPolicyRequest indicates an expected call of SetVaultAccessPolicyRequest.
+// SetVaultAccessPolicyRequest indicates an expected call of SetVaultAccessPolicyRequest
 func (mr *MockGlacierAPIMockRecorder) SetVaultAccessPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVaultAccessPolicyRequest", reflect.TypeOf((*MockGlacierAPI)(nil).SetVaultAccessPolicyRequest), arg0)
 }
 
-// SetVaultAccessPolicyWithContext mocks base method.
-func (m *MockGlacierAPI) SetVaultAccessPolicyWithContext(arg0 context.Context, arg1 *glacier.SetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.SetVaultAccessPolicyOutput, error) {
+// SetVaultAccessPolicyWithContext mocks base method
+func (m *MockGlacierAPI) SetVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *glacier.SetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.SetVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1661,14 +1660,14 @@ func (m *MockGlacierAPI) SetVaultAccessPolicyWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// SetVaultAccessPolicyWithContext indicates an expected call of SetVaultAccessPolicyWithContext.
+// SetVaultAccessPolicyWithContext indicates an expected call of SetVaultAccessPolicyWithContext
 func (mr *MockGlacierAPIMockRecorder) SetVaultAccessPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVaultAccessPolicyWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).SetVaultAccessPolicyWithContext), varargs...)
 }
 
-// SetVaultNotifications mocks base method.
+// SetVaultNotifications mocks base method
 func (m *MockGlacierAPI) SetVaultNotifications(arg0 *glacier.SetVaultNotificationsInput) (*glacier.SetVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetVaultNotifications", arg0)
@@ -1677,13 +1676,13 @@ func (m *MockGlacierAPI) SetVaultNotifications(arg0 *glacier.SetVaultNotificatio
 	return ret0, ret1
 }
 
-// SetVaultNotifications indicates an expected call of SetVaultNotifications.
+// SetVaultNotifications indicates an expected call of SetVaultNotifications
 func (mr *MockGlacierAPIMockRecorder) SetVaultNotifications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVaultNotifications", reflect.TypeOf((*MockGlacierAPI)(nil).SetVaultNotifications), arg0)
 }
 
-// SetVaultNotificationsRequest mocks base method.
+// SetVaultNotificationsRequest mocks base method
 func (m *MockGlacierAPI) SetVaultNotificationsRequest(arg0 *glacier.SetVaultNotificationsInput) (*request.Request, *glacier.SetVaultNotificationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetVaultNotificationsRequest", arg0)
@@ -1692,14 +1691,14 @@ func (m *MockGlacierAPI) SetVaultNotificationsRequest(arg0 *glacier.SetVaultNoti
 	return ret0, ret1
 }
 
-// SetVaultNotificationsRequest indicates an expected call of SetVaultNotificationsRequest.
+// SetVaultNotificationsRequest indicates an expected call of SetVaultNotificationsRequest
 func (mr *MockGlacierAPIMockRecorder) SetVaultNotificationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVaultNotificationsRequest", reflect.TypeOf((*MockGlacierAPI)(nil).SetVaultNotificationsRequest), arg0)
 }
 
-// SetVaultNotificationsWithContext mocks base method.
-func (m *MockGlacierAPI) SetVaultNotificationsWithContext(arg0 context.Context, arg1 *glacier.SetVaultNotificationsInput, arg2 ...request.Option) (*glacier.SetVaultNotificationsOutput, error) {
+// SetVaultNotificationsWithContext mocks base method
+func (m *MockGlacierAPI) SetVaultNotificationsWithContext(arg0 aws.Context, arg1 *glacier.SetVaultNotificationsInput, arg2 ...request.Option) (*glacier.SetVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1711,14 +1710,14 @@ func (m *MockGlacierAPI) SetVaultNotificationsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// SetVaultNotificationsWithContext indicates an expected call of SetVaultNotificationsWithContext.
+// SetVaultNotificationsWithContext indicates an expected call of SetVaultNotificationsWithContext
 func (mr *MockGlacierAPIMockRecorder) SetVaultNotificationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVaultNotificationsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).SetVaultNotificationsWithContext), varargs...)
 }
 
-// UploadArchive mocks base method.
+// UploadArchive mocks base method
 func (m *MockGlacierAPI) UploadArchive(arg0 *glacier.UploadArchiveInput) (*glacier.ArchiveCreationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UploadArchive", arg0)
@@ -1727,13 +1726,13 @@ func (m *MockGlacierAPI) UploadArchive(arg0 *glacier.UploadArchiveInput) (*glaci
 	return ret0, ret1
 }
 
-// UploadArchive indicates an expected call of UploadArchive.
+// UploadArchive indicates an expected call of UploadArchive
 func (mr *MockGlacierAPIMockRecorder) UploadArchive(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadArchive", reflect.TypeOf((*MockGlacierAPI)(nil).UploadArchive), arg0)
 }
 
-// UploadArchiveRequest mocks base method.
+// UploadArchiveRequest mocks base method
 func (m *MockGlacierAPI) UploadArchiveRequest(arg0 *glacier.UploadArchiveInput) (*request.Request, *glacier.ArchiveCreationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UploadArchiveRequest", arg0)
@@ -1742,14 +1741,14 @@ func (m *MockGlacierAPI) UploadArchiveRequest(arg0 *glacier.UploadArchiveInput) 
 	return ret0, ret1
 }
 
-// UploadArchiveRequest indicates an expected call of UploadArchiveRequest.
+// UploadArchiveRequest indicates an expected call of UploadArchiveRequest
 func (mr *MockGlacierAPIMockRecorder) UploadArchiveRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadArchiveRequest", reflect.TypeOf((*MockGlacierAPI)(nil).UploadArchiveRequest), arg0)
 }
 
-// UploadArchiveWithContext mocks base method.
-func (m *MockGlacierAPI) UploadArchiveWithContext(arg0 context.Context, arg1 *glacier.UploadArchiveInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
+// UploadArchiveWithContext mocks base method
+func (m *MockGlacierAPI) UploadArchiveWithContext(arg0 aws.Context, arg1 *glacier.UploadArchiveInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1761,14 +1760,14 @@ func (m *MockGlacierAPI) UploadArchiveWithContext(arg0 context.Context, arg1 *gl
 	return ret0, ret1
 }
 
-// UploadArchiveWithContext indicates an expected call of UploadArchiveWithContext.
+// UploadArchiveWithContext indicates an expected call of UploadArchiveWithContext
 func (mr *MockGlacierAPIMockRecorder) UploadArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadArchiveWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).UploadArchiveWithContext), varargs...)
 }
 
-// UploadMultipartPart mocks base method.
+// UploadMultipartPart mocks base method
 func (m *MockGlacierAPI) UploadMultipartPart(arg0 *glacier.UploadMultipartPartInput) (*glacier.UploadMultipartPartOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UploadMultipartPart", arg0)
@@ -1777,13 +1776,13 @@ func (m *MockGlacierAPI) UploadMultipartPart(arg0 *glacier.UploadMultipartPartIn
 	return ret0, ret1
 }
 
-// UploadMultipartPart indicates an expected call of UploadMultipartPart.
+// UploadMultipartPart indicates an expected call of UploadMultipartPart
 func (mr *MockGlacierAPIMockRecorder) UploadMultipartPart(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadMultipartPart", reflect.TypeOf((*MockGlacierAPI)(nil).UploadMultipartPart), arg0)
 }
 
-// UploadMultipartPartRequest mocks base method.
+// UploadMultipartPartRequest mocks base method
 func (m *MockGlacierAPI) UploadMultipartPartRequest(arg0 *glacier.UploadMultipartPartInput) (*request.Request, *glacier.UploadMultipartPartOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UploadMultipartPartRequest", arg0)
@@ -1792,14 +1791,14 @@ func (m *MockGlacierAPI) UploadMultipartPartRequest(arg0 *glacier.UploadMultipar
 	return ret0, ret1
 }
 
-// UploadMultipartPartRequest indicates an expected call of UploadMultipartPartRequest.
+// UploadMultipartPartRequest indicates an expected call of UploadMultipartPartRequest
 func (mr *MockGlacierAPIMockRecorder) UploadMultipartPartRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadMultipartPartRequest", reflect.TypeOf((*MockGlacierAPI)(nil).UploadMultipartPartRequest), arg0)
 }
 
-// UploadMultipartPartWithContext mocks base method.
-func (m *MockGlacierAPI) UploadMultipartPartWithContext(arg0 context.Context, arg1 *glacier.UploadMultipartPartInput, arg2 ...request.Option) (*glacier.UploadMultipartPartOutput, error) {
+// UploadMultipartPartWithContext mocks base method
+func (m *MockGlacierAPI) UploadMultipartPartWithContext(arg0 aws.Context, arg1 *glacier.UploadMultipartPartInput, arg2 ...request.Option) (*glacier.UploadMultipartPartOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1811,14 +1810,14 @@ func (m *MockGlacierAPI) UploadMultipartPartWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UploadMultipartPartWithContext indicates an expected call of UploadMultipartPartWithContext.
+// UploadMultipartPartWithContext indicates an expected call of UploadMultipartPartWithContext
 func (mr *MockGlacierAPIMockRecorder) UploadMultipartPartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadMultipartPartWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).UploadMultipartPartWithContext), varargs...)
 }
 
-// WaitUntilVaultExists mocks base method.
+// WaitUntilVaultExists mocks base method
 func (m *MockGlacierAPI) WaitUntilVaultExists(arg0 *glacier.DescribeVaultInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilVaultExists", arg0)
@@ -1826,14 +1825,14 @@ func (m *MockGlacierAPI) WaitUntilVaultExists(arg0 *glacier.DescribeVaultInput) 
 	return ret0
 }
 
-// WaitUntilVaultExists indicates an expected call of WaitUntilVaultExists.
+// WaitUntilVaultExists indicates an expected call of WaitUntilVaultExists
 func (mr *MockGlacierAPIMockRecorder) WaitUntilVaultExists(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilVaultExists", reflect.TypeOf((*MockGlacierAPI)(nil).WaitUntilVaultExists), arg0)
 }
 
-// WaitUntilVaultExistsWithContext mocks base method.
-func (m *MockGlacierAPI) WaitUntilVaultExistsWithContext(arg0 context.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
+// WaitUntilVaultExistsWithContext mocks base method
+func (m *MockGlacierAPI) WaitUntilVaultExistsWithContext(arg0 aws.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1844,14 +1843,14 @@ func (m *MockGlacierAPI) WaitUntilVaultExistsWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// WaitUntilVaultExistsWithContext indicates an expected call of WaitUntilVaultExistsWithContext.
+// WaitUntilVaultExistsWithContext indicates an expected call of WaitUntilVaultExistsWithContext
 func (mr *MockGlacierAPIMockRecorder) WaitUntilVaultExistsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilVaultExistsWithContext", reflect.TypeOf((*MockGlacierAPI)(nil).WaitUntilVaultExistsWithContext), varargs...)
 }
 
-// WaitUntilVaultNotExists mocks base method.
+// WaitUntilVaultNotExists mocks base method
 func (m *MockGlacierAPI) WaitUntilVaultNotExists(arg0 *glacier.DescribeVaultInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilVaultNotExists", arg0)
@@ -1859,14 +1858,14 @@ func (m *MockGlacierAPI) WaitUntilVaultNotExists(arg0 *glacier.DescribeVaultInpu
 	return ret0
 }
 
-// WaitUntilVaultNotExists indicates an expected call of WaitUntilVaultNotExists.
+// WaitUntilVaultNotExists indicates an expected call of WaitUntilVaultNotExists
 func (mr *MockGlacierAPIMockRecorder) WaitUntilVaultNotExists(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilVaultNotExists", reflect.TypeOf((*MockGlacierAPI)(nil).WaitUntilVaultNotExists), arg0)
 }
 
-// WaitUntilVaultNotExistsWithContext mocks base method.
-func (m *MockGlacierAPI) WaitUntilVaultNotExistsWithContext(arg0 context.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
+// WaitUntilVaultNotExistsWithContext mocks base method
+func (m *MockGlacierAPI) WaitUntilVaultNotExistsWithContext(arg0 aws.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1877,7 +1876,7 @@ func (m *MockGlacierAPI) WaitUntilVaultNotExistsWithContext(arg0 context.Context
 	return ret0
 }
 
-// WaitUntilVaultNotExistsWithContext indicates an expected call of WaitUntilVaultNotExistsWithContext.
+// WaitUntilVaultNotExistsWithContext indicates an expected call of WaitUntilVaultNotExistsWithContext
 func (mr *MockGlacierAPIMockRecorder) WaitUntilVaultNotExistsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

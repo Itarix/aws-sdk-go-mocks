@@ -5,138 +5,37 @@
 package appsyncmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	appsync "github.com/aws/aws-sdk-go/service/appsync"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockAppSyncAPI is a mock of AppSyncAPI interface.
+// MockAppSyncAPI is a mock of AppSyncAPI interface
 type MockAppSyncAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockAppSyncAPIMockRecorder
 }
 
-// MockAppSyncAPIMockRecorder is the mock recorder for MockAppSyncAPI.
+// MockAppSyncAPIMockRecorder is the mock recorder for MockAppSyncAPI
 type MockAppSyncAPIMockRecorder struct {
 	mock *MockAppSyncAPI
 }
 
-// NewMockAppSyncAPI creates a new mock instance.
+// NewMockAppSyncAPI creates a new mock instance
 func NewMockAppSyncAPI(ctrl *gomock.Controller) *MockAppSyncAPI {
 	mock := &MockAppSyncAPI{ctrl: ctrl}
 	mock.recorder = &MockAppSyncAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockAppSyncAPI) EXPECT() *MockAppSyncAPIMockRecorder {
 	return m.recorder
 }
 
-// AssociateApi mocks base method.
-func (m *MockAppSyncAPI) AssociateApi(arg0 *appsync.AssociateApiInput) (*appsync.AssociateApiOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateApi", arg0)
-	ret0, _ := ret[0].(*appsync.AssociateApiOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateApi indicates an expected call of AssociateApi.
-func (mr *MockAppSyncAPIMockRecorder) AssociateApi(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApi", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApi), arg0)
-}
-
-// AssociateApiRequest mocks base method.
-func (m *MockAppSyncAPI) AssociateApiRequest(arg0 *appsync.AssociateApiInput) (*request.Request, *appsync.AssociateApiOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateApiRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.AssociateApiOutput)
-	return ret0, ret1
-}
-
-// AssociateApiRequest indicates an expected call of AssociateApiRequest.
-func (mr *MockAppSyncAPIMockRecorder) AssociateApiRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApiRequest), arg0)
-}
-
-// AssociateApiWithContext mocks base method.
-func (m *MockAppSyncAPI) AssociateApiWithContext(arg0 context.Context, arg1 *appsync.AssociateApiInput, arg2 ...request.Option) (*appsync.AssociateApiOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateApiWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.AssociateApiOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateApiWithContext indicates an expected call of AssociateApiWithContext.
-func (mr *MockAppSyncAPIMockRecorder) AssociateApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApiWithContext), varargs...)
-}
-
-// CreateApiCache mocks base method.
-func (m *MockAppSyncAPI) CreateApiCache(arg0 *appsync.CreateApiCacheInput) (*appsync.CreateApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateApiCache", arg0)
-	ret0, _ := ret[0].(*appsync.CreateApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateApiCache indicates an expected call of CreateApiCache.
-func (mr *MockAppSyncAPIMockRecorder) CreateApiCache(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiCache), arg0)
-}
-
-// CreateApiCacheRequest mocks base method.
-func (m *MockAppSyncAPI) CreateApiCacheRequest(arg0 *appsync.CreateApiCacheInput) (*request.Request, *appsync.CreateApiCacheOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateApiCacheRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.CreateApiCacheOutput)
-	return ret0, ret1
-}
-
-// CreateApiCacheRequest indicates an expected call of CreateApiCacheRequest.
-func (mr *MockAppSyncAPIMockRecorder) CreateApiCacheRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiCacheRequest), arg0)
-}
-
-// CreateApiCacheWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateApiCacheWithContext(arg0 context.Context, arg1 *appsync.CreateApiCacheInput, arg2 ...request.Option) (*appsync.CreateApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateApiCacheWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.CreateApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateApiCacheWithContext indicates an expected call of CreateApiCacheWithContext.
-func (mr *MockAppSyncAPIMockRecorder) CreateApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiCacheWithContext), varargs...)
-}
-
-// CreateApiKey mocks base method.
+// CreateApiKey mocks base method
 func (m *MockAppSyncAPI) CreateApiKey(arg0 *appsync.CreateApiKeyInput) (*appsync.CreateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApiKey", arg0)
@@ -145,13 +44,13 @@ func (m *MockAppSyncAPI) CreateApiKey(arg0 *appsync.CreateApiKeyInput) (*appsync
 	return ret0, ret1
 }
 
-// CreateApiKey indicates an expected call of CreateApiKey.
+// CreateApiKey indicates an expected call of CreateApiKey
 func (mr *MockAppSyncAPIMockRecorder) CreateApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiKey", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiKey), arg0)
 }
 
-// CreateApiKeyRequest mocks base method.
+// CreateApiKeyRequest mocks base method
 func (m *MockAppSyncAPI) CreateApiKeyRequest(arg0 *appsync.CreateApiKeyInput) (*request.Request, *appsync.CreateApiKeyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApiKeyRequest", arg0)
@@ -160,14 +59,14 @@ func (m *MockAppSyncAPI) CreateApiKeyRequest(arg0 *appsync.CreateApiKeyInput) (*
 	return ret0, ret1
 }
 
-// CreateApiKeyRequest indicates an expected call of CreateApiKeyRequest.
+// CreateApiKeyRequest indicates an expected call of CreateApiKeyRequest
 func (mr *MockAppSyncAPIMockRecorder) CreateApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiKeyRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiKeyRequest), arg0)
 }
 
-// CreateApiKeyWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateApiKeyWithContext(arg0 context.Context, arg1 *appsync.CreateApiKeyInput, arg2 ...request.Option) (*appsync.CreateApiKeyOutput, error) {
+// CreateApiKeyWithContext mocks base method
+func (m *MockAppSyncAPI) CreateApiKeyWithContext(arg0 aws.Context, arg1 *appsync.CreateApiKeyInput, arg2 ...request.Option) (*appsync.CreateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +78,14 @@ func (m *MockAppSyncAPI) CreateApiKeyWithContext(arg0 context.Context, arg1 *app
 	return ret0, ret1
 }
 
-// CreateApiKeyWithContext indicates an expected call of CreateApiKeyWithContext.
+// CreateApiKeyWithContext indicates an expected call of CreateApiKeyWithContext
 func (mr *MockAppSyncAPIMockRecorder) CreateApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiKeyWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiKeyWithContext), varargs...)
 }
 
-// CreateDataSource mocks base method.
+// CreateDataSource mocks base method
 func (m *MockAppSyncAPI) CreateDataSource(arg0 *appsync.CreateDataSourceInput) (*appsync.CreateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSource", arg0)
@@ -195,13 +94,13 @@ func (m *MockAppSyncAPI) CreateDataSource(arg0 *appsync.CreateDataSourceInput) (
 	return ret0, ret1
 }
 
-// CreateDataSource indicates an expected call of CreateDataSource.
+// CreateDataSource indicates an expected call of CreateDataSource
 func (mr *MockAppSyncAPIMockRecorder) CreateDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSource", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDataSource), arg0)
 }
 
-// CreateDataSourceRequest mocks base method.
+// CreateDataSourceRequest mocks base method
 func (m *MockAppSyncAPI) CreateDataSourceRequest(arg0 *appsync.CreateDataSourceInput) (*request.Request, *appsync.CreateDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDataSourceRequest", arg0)
@@ -210,14 +109,14 @@ func (m *MockAppSyncAPI) CreateDataSourceRequest(arg0 *appsync.CreateDataSourceI
 	return ret0, ret1
 }
 
-// CreateDataSourceRequest indicates an expected call of CreateDataSourceRequest.
+// CreateDataSourceRequest indicates an expected call of CreateDataSourceRequest
 func (mr *MockAppSyncAPIMockRecorder) CreateDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDataSourceRequest), arg0)
 }
 
-// CreateDataSourceWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateDataSourceWithContext(arg0 context.Context, arg1 *appsync.CreateDataSourceInput, arg2 ...request.Option) (*appsync.CreateDataSourceOutput, error) {
+// CreateDataSourceWithContext mocks base method
+func (m *MockAppSyncAPI) CreateDataSourceWithContext(arg0 aws.Context, arg1 *appsync.CreateDataSourceInput, arg2 ...request.Option) (*appsync.CreateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,114 +128,14 @@ func (m *MockAppSyncAPI) CreateDataSourceWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateDataSourceWithContext indicates an expected call of CreateDataSourceWithContext.
+// CreateDataSourceWithContext indicates an expected call of CreateDataSourceWithContext
 func (mr *MockAppSyncAPIMockRecorder) CreateDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDataSourceWithContext), varargs...)
 }
 
-// CreateDomainName mocks base method.
-func (m *MockAppSyncAPI) CreateDomainName(arg0 *appsync.CreateDomainNameInput) (*appsync.CreateDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDomainName", arg0)
-	ret0, _ := ret[0].(*appsync.CreateDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateDomainName indicates an expected call of CreateDomainName.
-func (mr *MockAppSyncAPIMockRecorder) CreateDomainName(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDomainName), arg0)
-}
-
-// CreateDomainNameRequest mocks base method.
-func (m *MockAppSyncAPI) CreateDomainNameRequest(arg0 *appsync.CreateDomainNameInput) (*request.Request, *appsync.CreateDomainNameOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDomainNameRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.CreateDomainNameOutput)
-	return ret0, ret1
-}
-
-// CreateDomainNameRequest indicates an expected call of CreateDomainNameRequest.
-func (mr *MockAppSyncAPIMockRecorder) CreateDomainNameRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDomainNameRequest), arg0)
-}
-
-// CreateDomainNameWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateDomainNameWithContext(arg0 context.Context, arg1 *appsync.CreateDomainNameInput, arg2 ...request.Option) (*appsync.CreateDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateDomainNameWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.CreateDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateDomainNameWithContext indicates an expected call of CreateDomainNameWithContext.
-func (mr *MockAppSyncAPIMockRecorder) CreateDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDomainNameWithContext), varargs...)
-}
-
-// CreateFunction mocks base method.
-func (m *MockAppSyncAPI) CreateFunction(arg0 *appsync.CreateFunctionInput) (*appsync.CreateFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateFunction", arg0)
-	ret0, _ := ret[0].(*appsync.CreateFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateFunction indicates an expected call of CreateFunction.
-func (mr *MockAppSyncAPIMockRecorder) CreateFunction(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFunction", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateFunction), arg0)
-}
-
-// CreateFunctionRequest mocks base method.
-func (m *MockAppSyncAPI) CreateFunctionRequest(arg0 *appsync.CreateFunctionInput) (*request.Request, *appsync.CreateFunctionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateFunctionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.CreateFunctionOutput)
-	return ret0, ret1
-}
-
-// CreateFunctionRequest indicates an expected call of CreateFunctionRequest.
-func (mr *MockAppSyncAPIMockRecorder) CreateFunctionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFunctionRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateFunctionRequest), arg0)
-}
-
-// CreateFunctionWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateFunctionWithContext(arg0 context.Context, arg1 *appsync.CreateFunctionInput, arg2 ...request.Option) (*appsync.CreateFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateFunctionWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.CreateFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateFunctionWithContext indicates an expected call of CreateFunctionWithContext.
-func (mr *MockAppSyncAPIMockRecorder) CreateFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFunctionWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateFunctionWithContext), varargs...)
-}
-
-// CreateGraphqlApi mocks base method.
+// CreateGraphqlApi mocks base method
 func (m *MockAppSyncAPI) CreateGraphqlApi(arg0 *appsync.CreateGraphqlApiInput) (*appsync.CreateGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateGraphqlApi", arg0)
@@ -345,13 +144,13 @@ func (m *MockAppSyncAPI) CreateGraphqlApi(arg0 *appsync.CreateGraphqlApiInput) (
 	return ret0, ret1
 }
 
-// CreateGraphqlApi indicates an expected call of CreateGraphqlApi.
+// CreateGraphqlApi indicates an expected call of CreateGraphqlApi
 func (mr *MockAppSyncAPIMockRecorder) CreateGraphqlApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateGraphqlApi), arg0)
 }
 
-// CreateGraphqlApiRequest mocks base method.
+// CreateGraphqlApiRequest mocks base method
 func (m *MockAppSyncAPI) CreateGraphqlApiRequest(arg0 *appsync.CreateGraphqlApiInput) (*request.Request, *appsync.CreateGraphqlApiOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateGraphqlApiRequest", arg0)
@@ -360,14 +159,14 @@ func (m *MockAppSyncAPI) CreateGraphqlApiRequest(arg0 *appsync.CreateGraphqlApiI
 	return ret0, ret1
 }
 
-// CreateGraphqlApiRequest indicates an expected call of CreateGraphqlApiRequest.
+// CreateGraphqlApiRequest indicates an expected call of CreateGraphqlApiRequest
 func (mr *MockAppSyncAPIMockRecorder) CreateGraphqlApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateGraphqlApiRequest), arg0)
 }
 
-// CreateGraphqlApiWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.CreateGraphqlApiInput, arg2 ...request.Option) (*appsync.CreateGraphqlApiOutput, error) {
+// CreateGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) CreateGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.CreateGraphqlApiInput, arg2 ...request.Option) (*appsync.CreateGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +178,14 @@ func (m *MockAppSyncAPI) CreateGraphqlApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateGraphqlApiWithContext indicates an expected call of CreateGraphqlApiWithContext.
+// CreateGraphqlApiWithContext indicates an expected call of CreateGraphqlApiWithContext
 func (mr *MockAppSyncAPIMockRecorder) CreateGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateGraphqlApiWithContext), varargs...)
 }
 
-// CreateResolver mocks base method.
+// CreateResolver mocks base method
 func (m *MockAppSyncAPI) CreateResolver(arg0 *appsync.CreateResolverInput) (*appsync.CreateResolverOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateResolver", arg0)
@@ -395,13 +194,13 @@ func (m *MockAppSyncAPI) CreateResolver(arg0 *appsync.CreateResolverInput) (*app
 	return ret0, ret1
 }
 
-// CreateResolver indicates an expected call of CreateResolver.
+// CreateResolver indicates an expected call of CreateResolver
 func (mr *MockAppSyncAPIMockRecorder) CreateResolver(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolver", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateResolver), arg0)
 }
 
-// CreateResolverRequest mocks base method.
+// CreateResolverRequest mocks base method
 func (m *MockAppSyncAPI) CreateResolverRequest(arg0 *appsync.CreateResolverInput) (*request.Request, *appsync.CreateResolverOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateResolverRequest", arg0)
@@ -410,14 +209,14 @@ func (m *MockAppSyncAPI) CreateResolverRequest(arg0 *appsync.CreateResolverInput
 	return ret0, ret1
 }
 
-// CreateResolverRequest indicates an expected call of CreateResolverRequest.
+// CreateResolverRequest indicates an expected call of CreateResolverRequest
 func (mr *MockAppSyncAPIMockRecorder) CreateResolverRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateResolverRequest), arg0)
 }
 
-// CreateResolverWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateResolverWithContext(arg0 context.Context, arg1 *appsync.CreateResolverInput, arg2 ...request.Option) (*appsync.CreateResolverOutput, error) {
+// CreateResolverWithContext mocks base method
+func (m *MockAppSyncAPI) CreateResolverWithContext(arg0 aws.Context, arg1 *appsync.CreateResolverInput, arg2 ...request.Option) (*appsync.CreateResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +228,14 @@ func (m *MockAppSyncAPI) CreateResolverWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// CreateResolverWithContext indicates an expected call of CreateResolverWithContext.
+// CreateResolverWithContext indicates an expected call of CreateResolverWithContext
 func (mr *MockAppSyncAPIMockRecorder) CreateResolverWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateResolverWithContext), varargs...)
 }
 
-// CreateType mocks base method.
+// CreateType mocks base method
 func (m *MockAppSyncAPI) CreateType(arg0 *appsync.CreateTypeInput) (*appsync.CreateTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateType", arg0)
@@ -445,13 +244,13 @@ func (m *MockAppSyncAPI) CreateType(arg0 *appsync.CreateTypeInput) (*appsync.Cre
 	return ret0, ret1
 }
 
-// CreateType indicates an expected call of CreateType.
+// CreateType indicates an expected call of CreateType
 func (mr *MockAppSyncAPIMockRecorder) CreateType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateType", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateType), arg0)
 }
 
-// CreateTypeRequest mocks base method.
+// CreateTypeRequest mocks base method
 func (m *MockAppSyncAPI) CreateTypeRequest(arg0 *appsync.CreateTypeInput) (*request.Request, *appsync.CreateTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateTypeRequest", arg0)
@@ -460,14 +259,14 @@ func (m *MockAppSyncAPI) CreateTypeRequest(arg0 *appsync.CreateTypeInput) (*requ
 	return ret0, ret1
 }
 
-// CreateTypeRequest indicates an expected call of CreateTypeRequest.
+// CreateTypeRequest indicates an expected call of CreateTypeRequest
 func (mr *MockAppSyncAPIMockRecorder) CreateTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTypeRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateTypeRequest), arg0)
 }
 
-// CreateTypeWithContext mocks base method.
-func (m *MockAppSyncAPI) CreateTypeWithContext(arg0 context.Context, arg1 *appsync.CreateTypeInput, arg2 ...request.Option) (*appsync.CreateTypeOutput, error) {
+// CreateTypeWithContext mocks base method
+func (m *MockAppSyncAPI) CreateTypeWithContext(arg0 aws.Context, arg1 *appsync.CreateTypeInput, arg2 ...request.Option) (*appsync.CreateTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,64 +278,14 @@ func (m *MockAppSyncAPI) CreateTypeWithContext(arg0 context.Context, arg1 *appsy
 	return ret0, ret1
 }
 
-// CreateTypeWithContext indicates an expected call of CreateTypeWithContext.
+// CreateTypeWithContext indicates an expected call of CreateTypeWithContext
 func (mr *MockAppSyncAPIMockRecorder) CreateTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTypeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateTypeWithContext), varargs...)
 }
 
-// DeleteApiCache mocks base method.
-func (m *MockAppSyncAPI) DeleteApiCache(arg0 *appsync.DeleteApiCacheInput) (*appsync.DeleteApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteApiCache", arg0)
-	ret0, _ := ret[0].(*appsync.DeleteApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteApiCache indicates an expected call of DeleteApiCache.
-func (mr *MockAppSyncAPIMockRecorder) DeleteApiCache(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiCache), arg0)
-}
-
-// DeleteApiCacheRequest mocks base method.
-func (m *MockAppSyncAPI) DeleteApiCacheRequest(arg0 *appsync.DeleteApiCacheInput) (*request.Request, *appsync.DeleteApiCacheOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteApiCacheRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.DeleteApiCacheOutput)
-	return ret0, ret1
-}
-
-// DeleteApiCacheRequest indicates an expected call of DeleteApiCacheRequest.
-func (mr *MockAppSyncAPIMockRecorder) DeleteApiCacheRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiCacheRequest), arg0)
-}
-
-// DeleteApiCacheWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteApiCacheWithContext(arg0 context.Context, arg1 *appsync.DeleteApiCacheInput, arg2 ...request.Option) (*appsync.DeleteApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteApiCacheWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.DeleteApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteApiCacheWithContext indicates an expected call of DeleteApiCacheWithContext.
-func (mr *MockAppSyncAPIMockRecorder) DeleteApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiCacheWithContext), varargs...)
-}
-
-// DeleteApiKey mocks base method.
+// DeleteApiKey mocks base method
 func (m *MockAppSyncAPI) DeleteApiKey(arg0 *appsync.DeleteApiKeyInput) (*appsync.DeleteApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApiKey", arg0)
@@ -545,13 +294,13 @@ func (m *MockAppSyncAPI) DeleteApiKey(arg0 *appsync.DeleteApiKeyInput) (*appsync
 	return ret0, ret1
 }
 
-// DeleteApiKey indicates an expected call of DeleteApiKey.
+// DeleteApiKey indicates an expected call of DeleteApiKey
 func (mr *MockAppSyncAPIMockRecorder) DeleteApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiKey", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiKey), arg0)
 }
 
-// DeleteApiKeyRequest mocks base method.
+// DeleteApiKeyRequest mocks base method
 func (m *MockAppSyncAPI) DeleteApiKeyRequest(arg0 *appsync.DeleteApiKeyInput) (*request.Request, *appsync.DeleteApiKeyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApiKeyRequest", arg0)
@@ -560,14 +309,14 @@ func (m *MockAppSyncAPI) DeleteApiKeyRequest(arg0 *appsync.DeleteApiKeyInput) (*
 	return ret0, ret1
 }
 
-// DeleteApiKeyRequest indicates an expected call of DeleteApiKeyRequest.
+// DeleteApiKeyRequest indicates an expected call of DeleteApiKeyRequest
 func (mr *MockAppSyncAPIMockRecorder) DeleteApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiKeyRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiKeyRequest), arg0)
 }
 
-// DeleteApiKeyWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteApiKeyWithContext(arg0 context.Context, arg1 *appsync.DeleteApiKeyInput, arg2 ...request.Option) (*appsync.DeleteApiKeyOutput, error) {
+// DeleteApiKeyWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteApiKeyWithContext(arg0 aws.Context, arg1 *appsync.DeleteApiKeyInput, arg2 ...request.Option) (*appsync.DeleteApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +328,14 @@ func (m *MockAppSyncAPI) DeleteApiKeyWithContext(arg0 context.Context, arg1 *app
 	return ret0, ret1
 }
 
-// DeleteApiKeyWithContext indicates an expected call of DeleteApiKeyWithContext.
+// DeleteApiKeyWithContext indicates an expected call of DeleteApiKeyWithContext
 func (mr *MockAppSyncAPIMockRecorder) DeleteApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiKeyWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiKeyWithContext), varargs...)
 }
 
-// DeleteDataSource mocks base method.
+// DeleteDataSource mocks base method
 func (m *MockAppSyncAPI) DeleteDataSource(arg0 *appsync.DeleteDataSourceInput) (*appsync.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDataSource", arg0)
@@ -595,13 +344,13 @@ func (m *MockAppSyncAPI) DeleteDataSource(arg0 *appsync.DeleteDataSourceInput) (
 	return ret0, ret1
 }
 
-// DeleteDataSource indicates an expected call of DeleteDataSource.
+// DeleteDataSource indicates an expected call of DeleteDataSource
 func (mr *MockAppSyncAPIMockRecorder) DeleteDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSource", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDataSource), arg0)
 }
 
-// DeleteDataSourceRequest mocks base method.
+// DeleteDataSourceRequest mocks base method
 func (m *MockAppSyncAPI) DeleteDataSourceRequest(arg0 *appsync.DeleteDataSourceInput) (*request.Request, *appsync.DeleteDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDataSourceRequest", arg0)
@@ -610,14 +359,14 @@ func (m *MockAppSyncAPI) DeleteDataSourceRequest(arg0 *appsync.DeleteDataSourceI
 	return ret0, ret1
 }
 
-// DeleteDataSourceRequest indicates an expected call of DeleteDataSourceRequest.
+// DeleteDataSourceRequest indicates an expected call of DeleteDataSourceRequest
 func (mr *MockAppSyncAPIMockRecorder) DeleteDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDataSourceRequest), arg0)
 }
 
-// DeleteDataSourceWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteDataSourceWithContext(arg0 context.Context, arg1 *appsync.DeleteDataSourceInput, arg2 ...request.Option) (*appsync.DeleteDataSourceOutput, error) {
+// DeleteDataSourceWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteDataSourceWithContext(arg0 aws.Context, arg1 *appsync.DeleteDataSourceInput, arg2 ...request.Option) (*appsync.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,114 +378,14 @@ func (m *MockAppSyncAPI) DeleteDataSourceWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteDataSourceWithContext indicates an expected call of DeleteDataSourceWithContext.
+// DeleteDataSourceWithContext indicates an expected call of DeleteDataSourceWithContext
 func (mr *MockAppSyncAPIMockRecorder) DeleteDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDataSourceWithContext), varargs...)
 }
 
-// DeleteDomainName mocks base method.
-func (m *MockAppSyncAPI) DeleteDomainName(arg0 *appsync.DeleteDomainNameInput) (*appsync.DeleteDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDomainName", arg0)
-	ret0, _ := ret[0].(*appsync.DeleteDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDomainName indicates an expected call of DeleteDomainName.
-func (mr *MockAppSyncAPIMockRecorder) DeleteDomainName(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDomainName), arg0)
-}
-
-// DeleteDomainNameRequest mocks base method.
-func (m *MockAppSyncAPI) DeleteDomainNameRequest(arg0 *appsync.DeleteDomainNameInput) (*request.Request, *appsync.DeleteDomainNameOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDomainNameRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.DeleteDomainNameOutput)
-	return ret0, ret1
-}
-
-// DeleteDomainNameRequest indicates an expected call of DeleteDomainNameRequest.
-func (mr *MockAppSyncAPIMockRecorder) DeleteDomainNameRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDomainNameRequest), arg0)
-}
-
-// DeleteDomainNameWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteDomainNameWithContext(arg0 context.Context, arg1 *appsync.DeleteDomainNameInput, arg2 ...request.Option) (*appsync.DeleteDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteDomainNameWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.DeleteDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDomainNameWithContext indicates an expected call of DeleteDomainNameWithContext.
-func (mr *MockAppSyncAPIMockRecorder) DeleteDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDomainNameWithContext), varargs...)
-}
-
-// DeleteFunction mocks base method.
-func (m *MockAppSyncAPI) DeleteFunction(arg0 *appsync.DeleteFunctionInput) (*appsync.DeleteFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteFunction", arg0)
-	ret0, _ := ret[0].(*appsync.DeleteFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteFunction indicates an expected call of DeleteFunction.
-func (mr *MockAppSyncAPIMockRecorder) DeleteFunction(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunction", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteFunction), arg0)
-}
-
-// DeleteFunctionRequest mocks base method.
-func (m *MockAppSyncAPI) DeleteFunctionRequest(arg0 *appsync.DeleteFunctionInput) (*request.Request, *appsync.DeleteFunctionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteFunctionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.DeleteFunctionOutput)
-	return ret0, ret1
-}
-
-// DeleteFunctionRequest indicates an expected call of DeleteFunctionRequest.
-func (mr *MockAppSyncAPIMockRecorder) DeleteFunctionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteFunctionRequest), arg0)
-}
-
-// DeleteFunctionWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteFunctionWithContext(arg0 context.Context, arg1 *appsync.DeleteFunctionInput, arg2 ...request.Option) (*appsync.DeleteFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteFunctionWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.DeleteFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteFunctionWithContext indicates an expected call of DeleteFunctionWithContext.
-func (mr *MockAppSyncAPIMockRecorder) DeleteFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteFunctionWithContext), varargs...)
-}
-
-// DeleteGraphqlApi mocks base method.
+// DeleteGraphqlApi mocks base method
 func (m *MockAppSyncAPI) DeleteGraphqlApi(arg0 *appsync.DeleteGraphqlApiInput) (*appsync.DeleteGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGraphqlApi", arg0)
@@ -745,13 +394,13 @@ func (m *MockAppSyncAPI) DeleteGraphqlApi(arg0 *appsync.DeleteGraphqlApiInput) (
 	return ret0, ret1
 }
 
-// DeleteGraphqlApi indicates an expected call of DeleteGraphqlApi.
+// DeleteGraphqlApi indicates an expected call of DeleteGraphqlApi
 func (mr *MockAppSyncAPIMockRecorder) DeleteGraphqlApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteGraphqlApi), arg0)
 }
 
-// DeleteGraphqlApiRequest mocks base method.
+// DeleteGraphqlApiRequest mocks base method
 func (m *MockAppSyncAPI) DeleteGraphqlApiRequest(arg0 *appsync.DeleteGraphqlApiInput) (*request.Request, *appsync.DeleteGraphqlApiOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGraphqlApiRequest", arg0)
@@ -760,14 +409,14 @@ func (m *MockAppSyncAPI) DeleteGraphqlApiRequest(arg0 *appsync.DeleteGraphqlApiI
 	return ret0, ret1
 }
 
-// DeleteGraphqlApiRequest indicates an expected call of DeleteGraphqlApiRequest.
+// DeleteGraphqlApiRequest indicates an expected call of DeleteGraphqlApiRequest
 func (mr *MockAppSyncAPIMockRecorder) DeleteGraphqlApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteGraphqlApiRequest), arg0)
 }
 
-// DeleteGraphqlApiWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.DeleteGraphqlApiInput, arg2 ...request.Option) (*appsync.DeleteGraphqlApiOutput, error) {
+// DeleteGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.DeleteGraphqlApiInput, arg2 ...request.Option) (*appsync.DeleteGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +428,14 @@ func (m *MockAppSyncAPI) DeleteGraphqlApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteGraphqlApiWithContext indicates an expected call of DeleteGraphqlApiWithContext.
+// DeleteGraphqlApiWithContext indicates an expected call of DeleteGraphqlApiWithContext
 func (mr *MockAppSyncAPIMockRecorder) DeleteGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteGraphqlApiWithContext), varargs...)
 }
 
-// DeleteResolver mocks base method.
+// DeleteResolver mocks base method
 func (m *MockAppSyncAPI) DeleteResolver(arg0 *appsync.DeleteResolverInput) (*appsync.DeleteResolverOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteResolver", arg0)
@@ -795,13 +444,13 @@ func (m *MockAppSyncAPI) DeleteResolver(arg0 *appsync.DeleteResolverInput) (*app
 	return ret0, ret1
 }
 
-// DeleteResolver indicates an expected call of DeleteResolver.
+// DeleteResolver indicates an expected call of DeleteResolver
 func (mr *MockAppSyncAPIMockRecorder) DeleteResolver(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolver", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteResolver), arg0)
 }
 
-// DeleteResolverRequest mocks base method.
+// DeleteResolverRequest mocks base method
 func (m *MockAppSyncAPI) DeleteResolverRequest(arg0 *appsync.DeleteResolverInput) (*request.Request, *appsync.DeleteResolverOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteResolverRequest", arg0)
@@ -810,14 +459,14 @@ func (m *MockAppSyncAPI) DeleteResolverRequest(arg0 *appsync.DeleteResolverInput
 	return ret0, ret1
 }
 
-// DeleteResolverRequest indicates an expected call of DeleteResolverRequest.
+// DeleteResolverRequest indicates an expected call of DeleteResolverRequest
 func (mr *MockAppSyncAPIMockRecorder) DeleteResolverRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteResolverRequest), arg0)
 }
 
-// DeleteResolverWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteResolverWithContext(arg0 context.Context, arg1 *appsync.DeleteResolverInput, arg2 ...request.Option) (*appsync.DeleteResolverOutput, error) {
+// DeleteResolverWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteResolverWithContext(arg0 aws.Context, arg1 *appsync.DeleteResolverInput, arg2 ...request.Option) (*appsync.DeleteResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +478,14 @@ func (m *MockAppSyncAPI) DeleteResolverWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// DeleteResolverWithContext indicates an expected call of DeleteResolverWithContext.
+// DeleteResolverWithContext indicates an expected call of DeleteResolverWithContext
 func (mr *MockAppSyncAPIMockRecorder) DeleteResolverWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteResolverWithContext), varargs...)
 }
 
-// DeleteType mocks base method.
+// DeleteType mocks base method
 func (m *MockAppSyncAPI) DeleteType(arg0 *appsync.DeleteTypeInput) (*appsync.DeleteTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteType", arg0)
@@ -845,13 +494,13 @@ func (m *MockAppSyncAPI) DeleteType(arg0 *appsync.DeleteTypeInput) (*appsync.Del
 	return ret0, ret1
 }
 
-// DeleteType indicates an expected call of DeleteType.
+// DeleteType indicates an expected call of DeleteType
 func (mr *MockAppSyncAPIMockRecorder) DeleteType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteType", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteType), arg0)
 }
 
-// DeleteTypeRequest mocks base method.
+// DeleteTypeRequest mocks base method
 func (m *MockAppSyncAPI) DeleteTypeRequest(arg0 *appsync.DeleteTypeInput) (*request.Request, *appsync.DeleteTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTypeRequest", arg0)
@@ -860,14 +509,14 @@ func (m *MockAppSyncAPI) DeleteTypeRequest(arg0 *appsync.DeleteTypeInput) (*requ
 	return ret0, ret1
 }
 
-// DeleteTypeRequest indicates an expected call of DeleteTypeRequest.
+// DeleteTypeRequest indicates an expected call of DeleteTypeRequest
 func (mr *MockAppSyncAPIMockRecorder) DeleteTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTypeRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteTypeRequest), arg0)
 }
 
-// DeleteTypeWithContext mocks base method.
-func (m *MockAppSyncAPI) DeleteTypeWithContext(arg0 context.Context, arg1 *appsync.DeleteTypeInput, arg2 ...request.Option) (*appsync.DeleteTypeOutput, error) {
+// DeleteTypeWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteTypeWithContext(arg0 aws.Context, arg1 *appsync.DeleteTypeInput, arg2 ...request.Option) (*appsync.DeleteTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,214 +528,14 @@ func (m *MockAppSyncAPI) DeleteTypeWithContext(arg0 context.Context, arg1 *appsy
 	return ret0, ret1
 }
 
-// DeleteTypeWithContext indicates an expected call of DeleteTypeWithContext.
+// DeleteTypeWithContext indicates an expected call of DeleteTypeWithContext
 func (mr *MockAppSyncAPIMockRecorder) DeleteTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTypeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteTypeWithContext), varargs...)
 }
 
-// DisassociateApi mocks base method.
-func (m *MockAppSyncAPI) DisassociateApi(arg0 *appsync.DisassociateApiInput) (*appsync.DisassociateApiOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateApi", arg0)
-	ret0, _ := ret[0].(*appsync.DisassociateApiOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateApi indicates an expected call of DisassociateApi.
-func (mr *MockAppSyncAPIMockRecorder) DisassociateApi(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApi", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApi), arg0)
-}
-
-// DisassociateApiRequest mocks base method.
-func (m *MockAppSyncAPI) DisassociateApiRequest(arg0 *appsync.DisassociateApiInput) (*request.Request, *appsync.DisassociateApiOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateApiRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.DisassociateApiOutput)
-	return ret0, ret1
-}
-
-// DisassociateApiRequest indicates an expected call of DisassociateApiRequest.
-func (mr *MockAppSyncAPIMockRecorder) DisassociateApiRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiRequest), arg0)
-}
-
-// DisassociateApiWithContext mocks base method.
-func (m *MockAppSyncAPI) DisassociateApiWithContext(arg0 context.Context, arg1 *appsync.DisassociateApiInput, arg2 ...request.Option) (*appsync.DisassociateApiOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateApiWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.DisassociateApiOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateApiWithContext indicates an expected call of DisassociateApiWithContext.
-func (mr *MockAppSyncAPIMockRecorder) DisassociateApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiWithContext), varargs...)
-}
-
-// FlushApiCache mocks base method.
-func (m *MockAppSyncAPI) FlushApiCache(arg0 *appsync.FlushApiCacheInput) (*appsync.FlushApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "FlushApiCache", arg0)
-	ret0, _ := ret[0].(*appsync.FlushApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// FlushApiCache indicates an expected call of FlushApiCache.
-func (mr *MockAppSyncAPIMockRecorder) FlushApiCache(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCache), arg0)
-}
-
-// FlushApiCacheRequest mocks base method.
-func (m *MockAppSyncAPI) FlushApiCacheRequest(arg0 *appsync.FlushApiCacheInput) (*request.Request, *appsync.FlushApiCacheOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "FlushApiCacheRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.FlushApiCacheOutput)
-	return ret0, ret1
-}
-
-// FlushApiCacheRequest indicates an expected call of FlushApiCacheRequest.
-func (mr *MockAppSyncAPIMockRecorder) FlushApiCacheRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCacheRequest), arg0)
-}
-
-// FlushApiCacheWithContext mocks base method.
-func (m *MockAppSyncAPI) FlushApiCacheWithContext(arg0 context.Context, arg1 *appsync.FlushApiCacheInput, arg2 ...request.Option) (*appsync.FlushApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "FlushApiCacheWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.FlushApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// FlushApiCacheWithContext indicates an expected call of FlushApiCacheWithContext.
-func (mr *MockAppSyncAPIMockRecorder) FlushApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCacheWithContext), varargs...)
-}
-
-// GetApiAssociation mocks base method.
-func (m *MockAppSyncAPI) GetApiAssociation(arg0 *appsync.GetApiAssociationInput) (*appsync.GetApiAssociationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetApiAssociation", arg0)
-	ret0, _ := ret[0].(*appsync.GetApiAssociationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetApiAssociation indicates an expected call of GetApiAssociation.
-func (mr *MockAppSyncAPIMockRecorder) GetApiAssociation(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiAssociation", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiAssociation), arg0)
-}
-
-// GetApiAssociationRequest mocks base method.
-func (m *MockAppSyncAPI) GetApiAssociationRequest(arg0 *appsync.GetApiAssociationInput) (*request.Request, *appsync.GetApiAssociationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetApiAssociationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.GetApiAssociationOutput)
-	return ret0, ret1
-}
-
-// GetApiAssociationRequest indicates an expected call of GetApiAssociationRequest.
-func (mr *MockAppSyncAPIMockRecorder) GetApiAssociationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiAssociationRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiAssociationRequest), arg0)
-}
-
-// GetApiAssociationWithContext mocks base method.
-func (m *MockAppSyncAPI) GetApiAssociationWithContext(arg0 context.Context, arg1 *appsync.GetApiAssociationInput, arg2 ...request.Option) (*appsync.GetApiAssociationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetApiAssociationWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.GetApiAssociationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetApiAssociationWithContext indicates an expected call of GetApiAssociationWithContext.
-func (mr *MockAppSyncAPIMockRecorder) GetApiAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiAssociationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiAssociationWithContext), varargs...)
-}
-
-// GetApiCache mocks base method.
-func (m *MockAppSyncAPI) GetApiCache(arg0 *appsync.GetApiCacheInput) (*appsync.GetApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetApiCache", arg0)
-	ret0, _ := ret[0].(*appsync.GetApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetApiCache indicates an expected call of GetApiCache.
-func (mr *MockAppSyncAPIMockRecorder) GetApiCache(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiCache), arg0)
-}
-
-// GetApiCacheRequest mocks base method.
-func (m *MockAppSyncAPI) GetApiCacheRequest(arg0 *appsync.GetApiCacheInput) (*request.Request, *appsync.GetApiCacheOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetApiCacheRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.GetApiCacheOutput)
-	return ret0, ret1
-}
-
-// GetApiCacheRequest indicates an expected call of GetApiCacheRequest.
-func (mr *MockAppSyncAPIMockRecorder) GetApiCacheRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiCacheRequest), arg0)
-}
-
-// GetApiCacheWithContext mocks base method.
-func (m *MockAppSyncAPI) GetApiCacheWithContext(arg0 context.Context, arg1 *appsync.GetApiCacheInput, arg2 ...request.Option) (*appsync.GetApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetApiCacheWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.GetApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetApiCacheWithContext indicates an expected call of GetApiCacheWithContext.
-func (mr *MockAppSyncAPIMockRecorder) GetApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiCacheWithContext), varargs...)
-}
-
-// GetDataSource mocks base method.
+// GetDataSource mocks base method
 func (m *MockAppSyncAPI) GetDataSource(arg0 *appsync.GetDataSourceInput) (*appsync.GetDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDataSource", arg0)
@@ -1095,13 +544,13 @@ func (m *MockAppSyncAPI) GetDataSource(arg0 *appsync.GetDataSourceInput) (*appsy
 	return ret0, ret1
 }
 
-// GetDataSource indicates an expected call of GetDataSource.
+// GetDataSource indicates an expected call of GetDataSource
 func (mr *MockAppSyncAPIMockRecorder) GetDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSource", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDataSource), arg0)
 }
 
-// GetDataSourceRequest mocks base method.
+// GetDataSourceRequest mocks base method
 func (m *MockAppSyncAPI) GetDataSourceRequest(arg0 *appsync.GetDataSourceInput) (*request.Request, *appsync.GetDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDataSourceRequest", arg0)
@@ -1110,14 +559,14 @@ func (m *MockAppSyncAPI) GetDataSourceRequest(arg0 *appsync.GetDataSourceInput) 
 	return ret0, ret1
 }
 
-// GetDataSourceRequest indicates an expected call of GetDataSourceRequest.
+// GetDataSourceRequest indicates an expected call of GetDataSourceRequest
 func (mr *MockAppSyncAPIMockRecorder) GetDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDataSourceRequest), arg0)
 }
 
-// GetDataSourceWithContext mocks base method.
-func (m *MockAppSyncAPI) GetDataSourceWithContext(arg0 context.Context, arg1 *appsync.GetDataSourceInput, arg2 ...request.Option) (*appsync.GetDataSourceOutput, error) {
+// GetDataSourceWithContext mocks base method
+func (m *MockAppSyncAPI) GetDataSourceWithContext(arg0 aws.Context, arg1 *appsync.GetDataSourceInput, arg2 ...request.Option) (*appsync.GetDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1129,114 +578,14 @@ func (m *MockAppSyncAPI) GetDataSourceWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetDataSourceWithContext indicates an expected call of GetDataSourceWithContext.
+// GetDataSourceWithContext indicates an expected call of GetDataSourceWithContext
 func (mr *MockAppSyncAPIMockRecorder) GetDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDataSourceWithContext), varargs...)
 }
 
-// GetDomainName mocks base method.
-func (m *MockAppSyncAPI) GetDomainName(arg0 *appsync.GetDomainNameInput) (*appsync.GetDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDomainName", arg0)
-	ret0, _ := ret[0].(*appsync.GetDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetDomainName indicates an expected call of GetDomainName.
-func (mr *MockAppSyncAPIMockRecorder) GetDomainName(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDomainName), arg0)
-}
-
-// GetDomainNameRequest mocks base method.
-func (m *MockAppSyncAPI) GetDomainNameRequest(arg0 *appsync.GetDomainNameInput) (*request.Request, *appsync.GetDomainNameOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDomainNameRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.GetDomainNameOutput)
-	return ret0, ret1
-}
-
-// GetDomainNameRequest indicates an expected call of GetDomainNameRequest.
-func (mr *MockAppSyncAPIMockRecorder) GetDomainNameRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDomainNameRequest), arg0)
-}
-
-// GetDomainNameWithContext mocks base method.
-func (m *MockAppSyncAPI) GetDomainNameWithContext(arg0 context.Context, arg1 *appsync.GetDomainNameInput, arg2 ...request.Option) (*appsync.GetDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetDomainNameWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.GetDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetDomainNameWithContext indicates an expected call of GetDomainNameWithContext.
-func (mr *MockAppSyncAPIMockRecorder) GetDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDomainNameWithContext), varargs...)
-}
-
-// GetFunction mocks base method.
-func (m *MockAppSyncAPI) GetFunction(arg0 *appsync.GetFunctionInput) (*appsync.GetFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetFunction", arg0)
-	ret0, _ := ret[0].(*appsync.GetFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetFunction indicates an expected call of GetFunction.
-func (mr *MockAppSyncAPIMockRecorder) GetFunction(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunction", reflect.TypeOf((*MockAppSyncAPI)(nil).GetFunction), arg0)
-}
-
-// GetFunctionRequest mocks base method.
-func (m *MockAppSyncAPI) GetFunctionRequest(arg0 *appsync.GetFunctionInput) (*request.Request, *appsync.GetFunctionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetFunctionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.GetFunctionOutput)
-	return ret0, ret1
-}
-
-// GetFunctionRequest indicates an expected call of GetFunctionRequest.
-func (mr *MockAppSyncAPIMockRecorder) GetFunctionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetFunctionRequest), arg0)
-}
-
-// GetFunctionWithContext mocks base method.
-func (m *MockAppSyncAPI) GetFunctionWithContext(arg0 context.Context, arg1 *appsync.GetFunctionInput, arg2 ...request.Option) (*appsync.GetFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetFunctionWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.GetFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetFunctionWithContext indicates an expected call of GetFunctionWithContext.
-func (mr *MockAppSyncAPIMockRecorder) GetFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetFunctionWithContext), varargs...)
-}
-
-// GetGraphqlApi mocks base method.
+// GetGraphqlApi mocks base method
 func (m *MockAppSyncAPI) GetGraphqlApi(arg0 *appsync.GetGraphqlApiInput) (*appsync.GetGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGraphqlApi", arg0)
@@ -1245,13 +594,13 @@ func (m *MockAppSyncAPI) GetGraphqlApi(arg0 *appsync.GetGraphqlApiInput) (*appsy
 	return ret0, ret1
 }
 
-// GetGraphqlApi indicates an expected call of GetGraphqlApi.
+// GetGraphqlApi indicates an expected call of GetGraphqlApi
 func (mr *MockAppSyncAPIMockRecorder) GetGraphqlApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).GetGraphqlApi), arg0)
 }
 
-// GetGraphqlApiRequest mocks base method.
+// GetGraphqlApiRequest mocks base method
 func (m *MockAppSyncAPI) GetGraphqlApiRequest(arg0 *appsync.GetGraphqlApiInput) (*request.Request, *appsync.GetGraphqlApiOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGraphqlApiRequest", arg0)
@@ -1260,14 +609,14 @@ func (m *MockAppSyncAPI) GetGraphqlApiRequest(arg0 *appsync.GetGraphqlApiInput) 
 	return ret0, ret1
 }
 
-// GetGraphqlApiRequest indicates an expected call of GetGraphqlApiRequest.
+// GetGraphqlApiRequest indicates an expected call of GetGraphqlApiRequest
 func (mr *MockAppSyncAPIMockRecorder) GetGraphqlApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetGraphqlApiRequest), arg0)
 }
 
-// GetGraphqlApiWithContext mocks base method.
-func (m *MockAppSyncAPI) GetGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.GetGraphqlApiInput, arg2 ...request.Option) (*appsync.GetGraphqlApiOutput, error) {
+// GetGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) GetGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.GetGraphqlApiInput, arg2 ...request.Option) (*appsync.GetGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +628,14 @@ func (m *MockAppSyncAPI) GetGraphqlApiWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetGraphqlApiWithContext indicates an expected call of GetGraphqlApiWithContext.
+// GetGraphqlApiWithContext indicates an expected call of GetGraphqlApiWithContext
 func (mr *MockAppSyncAPIMockRecorder) GetGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetGraphqlApiWithContext), varargs...)
 }
 
-// GetIntrospectionSchema mocks base method.
+// GetIntrospectionSchema mocks base method
 func (m *MockAppSyncAPI) GetIntrospectionSchema(arg0 *appsync.GetIntrospectionSchemaInput) (*appsync.GetIntrospectionSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIntrospectionSchema", arg0)
@@ -1295,13 +644,13 @@ func (m *MockAppSyncAPI) GetIntrospectionSchema(arg0 *appsync.GetIntrospectionSc
 	return ret0, ret1
 }
 
-// GetIntrospectionSchema indicates an expected call of GetIntrospectionSchema.
+// GetIntrospectionSchema indicates an expected call of GetIntrospectionSchema
 func (mr *MockAppSyncAPIMockRecorder) GetIntrospectionSchema(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntrospectionSchema", reflect.TypeOf((*MockAppSyncAPI)(nil).GetIntrospectionSchema), arg0)
 }
 
-// GetIntrospectionSchemaRequest mocks base method.
+// GetIntrospectionSchemaRequest mocks base method
 func (m *MockAppSyncAPI) GetIntrospectionSchemaRequest(arg0 *appsync.GetIntrospectionSchemaInput) (*request.Request, *appsync.GetIntrospectionSchemaOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIntrospectionSchemaRequest", arg0)
@@ -1310,14 +659,14 @@ func (m *MockAppSyncAPI) GetIntrospectionSchemaRequest(arg0 *appsync.GetIntrospe
 	return ret0, ret1
 }
 
-// GetIntrospectionSchemaRequest indicates an expected call of GetIntrospectionSchemaRequest.
+// GetIntrospectionSchemaRequest indicates an expected call of GetIntrospectionSchemaRequest
 func (mr *MockAppSyncAPIMockRecorder) GetIntrospectionSchemaRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntrospectionSchemaRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetIntrospectionSchemaRequest), arg0)
 }
 
-// GetIntrospectionSchemaWithContext mocks base method.
-func (m *MockAppSyncAPI) GetIntrospectionSchemaWithContext(arg0 context.Context, arg1 *appsync.GetIntrospectionSchemaInput, arg2 ...request.Option) (*appsync.GetIntrospectionSchemaOutput, error) {
+// GetIntrospectionSchemaWithContext mocks base method
+func (m *MockAppSyncAPI) GetIntrospectionSchemaWithContext(arg0 aws.Context, arg1 *appsync.GetIntrospectionSchemaInput, arg2 ...request.Option) (*appsync.GetIntrospectionSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1329,14 +678,14 @@ func (m *MockAppSyncAPI) GetIntrospectionSchemaWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetIntrospectionSchemaWithContext indicates an expected call of GetIntrospectionSchemaWithContext.
+// GetIntrospectionSchemaWithContext indicates an expected call of GetIntrospectionSchemaWithContext
 func (mr *MockAppSyncAPIMockRecorder) GetIntrospectionSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntrospectionSchemaWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetIntrospectionSchemaWithContext), varargs...)
 }
 
-// GetResolver mocks base method.
+// GetResolver mocks base method
 func (m *MockAppSyncAPI) GetResolver(arg0 *appsync.GetResolverInput) (*appsync.GetResolverOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResolver", arg0)
@@ -1345,13 +694,13 @@ func (m *MockAppSyncAPI) GetResolver(arg0 *appsync.GetResolverInput) (*appsync.G
 	return ret0, ret1
 }
 
-// GetResolver indicates an expected call of GetResolver.
+// GetResolver indicates an expected call of GetResolver
 func (mr *MockAppSyncAPIMockRecorder) GetResolver(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolver", reflect.TypeOf((*MockAppSyncAPI)(nil).GetResolver), arg0)
 }
 
-// GetResolverRequest mocks base method.
+// GetResolverRequest mocks base method
 func (m *MockAppSyncAPI) GetResolverRequest(arg0 *appsync.GetResolverInput) (*request.Request, *appsync.GetResolverOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResolverRequest", arg0)
@@ -1360,14 +709,14 @@ func (m *MockAppSyncAPI) GetResolverRequest(arg0 *appsync.GetResolverInput) (*re
 	return ret0, ret1
 }
 
-// GetResolverRequest indicates an expected call of GetResolverRequest.
+// GetResolverRequest indicates an expected call of GetResolverRequest
 func (mr *MockAppSyncAPIMockRecorder) GetResolverRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetResolverRequest), arg0)
 }
 
-// GetResolverWithContext mocks base method.
-func (m *MockAppSyncAPI) GetResolverWithContext(arg0 context.Context, arg1 *appsync.GetResolverInput, arg2 ...request.Option) (*appsync.GetResolverOutput, error) {
+// GetResolverWithContext mocks base method
+func (m *MockAppSyncAPI) GetResolverWithContext(arg0 aws.Context, arg1 *appsync.GetResolverInput, arg2 ...request.Option) (*appsync.GetResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1379,14 +728,14 @@ func (m *MockAppSyncAPI) GetResolverWithContext(arg0 context.Context, arg1 *apps
 	return ret0, ret1
 }
 
-// GetResolverWithContext indicates an expected call of GetResolverWithContext.
+// GetResolverWithContext indicates an expected call of GetResolverWithContext
 func (mr *MockAppSyncAPIMockRecorder) GetResolverWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetResolverWithContext), varargs...)
 }
 
-// GetSchemaCreationStatus mocks base method.
+// GetSchemaCreationStatus mocks base method
 func (m *MockAppSyncAPI) GetSchemaCreationStatus(arg0 *appsync.GetSchemaCreationStatusInput) (*appsync.GetSchemaCreationStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSchemaCreationStatus", arg0)
@@ -1395,13 +744,13 @@ func (m *MockAppSyncAPI) GetSchemaCreationStatus(arg0 *appsync.GetSchemaCreation
 	return ret0, ret1
 }
 
-// GetSchemaCreationStatus indicates an expected call of GetSchemaCreationStatus.
+// GetSchemaCreationStatus indicates an expected call of GetSchemaCreationStatus
 func (mr *MockAppSyncAPIMockRecorder) GetSchemaCreationStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaCreationStatus", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSchemaCreationStatus), arg0)
 }
 
-// GetSchemaCreationStatusRequest mocks base method.
+// GetSchemaCreationStatusRequest mocks base method
 func (m *MockAppSyncAPI) GetSchemaCreationStatusRequest(arg0 *appsync.GetSchemaCreationStatusInput) (*request.Request, *appsync.GetSchemaCreationStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSchemaCreationStatusRequest", arg0)
@@ -1410,14 +759,14 @@ func (m *MockAppSyncAPI) GetSchemaCreationStatusRequest(arg0 *appsync.GetSchemaC
 	return ret0, ret1
 }
 
-// GetSchemaCreationStatusRequest indicates an expected call of GetSchemaCreationStatusRequest.
+// GetSchemaCreationStatusRequest indicates an expected call of GetSchemaCreationStatusRequest
 func (mr *MockAppSyncAPIMockRecorder) GetSchemaCreationStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaCreationStatusRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSchemaCreationStatusRequest), arg0)
 }
 
-// GetSchemaCreationStatusWithContext mocks base method.
-func (m *MockAppSyncAPI) GetSchemaCreationStatusWithContext(arg0 context.Context, arg1 *appsync.GetSchemaCreationStatusInput, arg2 ...request.Option) (*appsync.GetSchemaCreationStatusOutput, error) {
+// GetSchemaCreationStatusWithContext mocks base method
+func (m *MockAppSyncAPI) GetSchemaCreationStatusWithContext(arg0 aws.Context, arg1 *appsync.GetSchemaCreationStatusInput, arg2 ...request.Option) (*appsync.GetSchemaCreationStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,14 +778,14 @@ func (m *MockAppSyncAPI) GetSchemaCreationStatusWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetSchemaCreationStatusWithContext indicates an expected call of GetSchemaCreationStatusWithContext.
+// GetSchemaCreationStatusWithContext indicates an expected call of GetSchemaCreationStatusWithContext
 func (mr *MockAppSyncAPIMockRecorder) GetSchemaCreationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaCreationStatusWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSchemaCreationStatusWithContext), varargs...)
 }
 
-// GetType mocks base method.
+// GetType mocks base method
 func (m *MockAppSyncAPI) GetType(arg0 *appsync.GetTypeInput) (*appsync.GetTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetType", arg0)
@@ -1445,13 +794,13 @@ func (m *MockAppSyncAPI) GetType(arg0 *appsync.GetTypeInput) (*appsync.GetTypeOu
 	return ret0, ret1
 }
 
-// GetType indicates an expected call of GetType.
+// GetType indicates an expected call of GetType
 func (mr *MockAppSyncAPIMockRecorder) GetType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetType", reflect.TypeOf((*MockAppSyncAPI)(nil).GetType), arg0)
 }
 
-// GetTypeRequest mocks base method.
+// GetTypeRequest mocks base method
 func (m *MockAppSyncAPI) GetTypeRequest(arg0 *appsync.GetTypeInput) (*request.Request, *appsync.GetTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetTypeRequest", arg0)
@@ -1460,14 +809,14 @@ func (m *MockAppSyncAPI) GetTypeRequest(arg0 *appsync.GetTypeInput) (*request.Re
 	return ret0, ret1
 }
 
-// GetTypeRequest indicates an expected call of GetTypeRequest.
+// GetTypeRequest indicates an expected call of GetTypeRequest
 func (mr *MockAppSyncAPIMockRecorder) GetTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTypeRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetTypeRequest), arg0)
 }
 
-// GetTypeWithContext mocks base method.
-func (m *MockAppSyncAPI) GetTypeWithContext(arg0 context.Context, arg1 *appsync.GetTypeInput, arg2 ...request.Option) (*appsync.GetTypeOutput, error) {
+// GetTypeWithContext mocks base method
+func (m *MockAppSyncAPI) GetTypeWithContext(arg0 aws.Context, arg1 *appsync.GetTypeInput, arg2 ...request.Option) (*appsync.GetTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1479,14 +828,14 @@ func (m *MockAppSyncAPI) GetTypeWithContext(arg0 context.Context, arg1 *appsync.
 	return ret0, ret1
 }
 
-// GetTypeWithContext indicates an expected call of GetTypeWithContext.
+// GetTypeWithContext indicates an expected call of GetTypeWithContext
 func (mr *MockAppSyncAPIMockRecorder) GetTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTypeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetTypeWithContext), varargs...)
 }
 
-// ListApiKeys mocks base method.
+// ListApiKeys mocks base method
 func (m *MockAppSyncAPI) ListApiKeys(arg0 *appsync.ListApiKeysInput) (*appsync.ListApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListApiKeys", arg0)
@@ -1495,13 +844,13 @@ func (m *MockAppSyncAPI) ListApiKeys(arg0 *appsync.ListApiKeysInput) (*appsync.L
 	return ret0, ret1
 }
 
-// ListApiKeys indicates an expected call of ListApiKeys.
+// ListApiKeys indicates an expected call of ListApiKeys
 func (mr *MockAppSyncAPIMockRecorder) ListApiKeys(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiKeys", reflect.TypeOf((*MockAppSyncAPI)(nil).ListApiKeys), arg0)
 }
 
-// ListApiKeysRequest mocks base method.
+// ListApiKeysRequest mocks base method
 func (m *MockAppSyncAPI) ListApiKeysRequest(arg0 *appsync.ListApiKeysInput) (*request.Request, *appsync.ListApiKeysOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListApiKeysRequest", arg0)
@@ -1510,14 +859,14 @@ func (m *MockAppSyncAPI) ListApiKeysRequest(arg0 *appsync.ListApiKeysInput) (*re
 	return ret0, ret1
 }
 
-// ListApiKeysRequest indicates an expected call of ListApiKeysRequest.
+// ListApiKeysRequest indicates an expected call of ListApiKeysRequest
 func (mr *MockAppSyncAPIMockRecorder) ListApiKeysRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiKeysRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListApiKeysRequest), arg0)
 }
 
-// ListApiKeysWithContext mocks base method.
-func (m *MockAppSyncAPI) ListApiKeysWithContext(arg0 context.Context, arg1 *appsync.ListApiKeysInput, arg2 ...request.Option) (*appsync.ListApiKeysOutput, error) {
+// ListApiKeysWithContext mocks base method
+func (m *MockAppSyncAPI) ListApiKeysWithContext(arg0 aws.Context, arg1 *appsync.ListApiKeysInput, arg2 ...request.Option) (*appsync.ListApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1529,14 +878,14 @@ func (m *MockAppSyncAPI) ListApiKeysWithContext(arg0 context.Context, arg1 *apps
 	return ret0, ret1
 }
 
-// ListApiKeysWithContext indicates an expected call of ListApiKeysWithContext.
+// ListApiKeysWithContext indicates an expected call of ListApiKeysWithContext
 func (mr *MockAppSyncAPIMockRecorder) ListApiKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiKeysWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListApiKeysWithContext), varargs...)
 }
 
-// ListDataSources mocks base method.
+// ListDataSources mocks base method
 func (m *MockAppSyncAPI) ListDataSources(arg0 *appsync.ListDataSourcesInput) (*appsync.ListDataSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDataSources", arg0)
@@ -1545,13 +894,13 @@ func (m *MockAppSyncAPI) ListDataSources(arg0 *appsync.ListDataSourcesInput) (*a
 	return ret0, ret1
 }
 
-// ListDataSources indicates an expected call of ListDataSources.
+// ListDataSources indicates an expected call of ListDataSources
 func (mr *MockAppSyncAPIMockRecorder) ListDataSources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSources", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSources), arg0)
 }
 
-// ListDataSourcesRequest mocks base method.
+// ListDataSourcesRequest mocks base method
 func (m *MockAppSyncAPI) ListDataSourcesRequest(arg0 *appsync.ListDataSourcesInput) (*request.Request, *appsync.ListDataSourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDataSourcesRequest", arg0)
@@ -1560,14 +909,14 @@ func (m *MockAppSyncAPI) ListDataSourcesRequest(arg0 *appsync.ListDataSourcesInp
 	return ret0, ret1
 }
 
-// ListDataSourcesRequest indicates an expected call of ListDataSourcesRequest.
+// ListDataSourcesRequest indicates an expected call of ListDataSourcesRequest
 func (mr *MockAppSyncAPIMockRecorder) ListDataSourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSourcesRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSourcesRequest), arg0)
 }
 
-// ListDataSourcesWithContext mocks base method.
-func (m *MockAppSyncAPI) ListDataSourcesWithContext(arg0 context.Context, arg1 *appsync.ListDataSourcesInput, arg2 ...request.Option) (*appsync.ListDataSourcesOutput, error) {
+// ListDataSourcesWithContext mocks base method
+func (m *MockAppSyncAPI) ListDataSourcesWithContext(arg0 aws.Context, arg1 *appsync.ListDataSourcesInput, arg2 ...request.Option) (*appsync.ListDataSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1579,114 +928,14 @@ func (m *MockAppSyncAPI) ListDataSourcesWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ListDataSourcesWithContext indicates an expected call of ListDataSourcesWithContext.
+// ListDataSourcesWithContext indicates an expected call of ListDataSourcesWithContext
 func (mr *MockAppSyncAPIMockRecorder) ListDataSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSourcesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSourcesWithContext), varargs...)
 }
 
-// ListDomainNames mocks base method.
-func (m *MockAppSyncAPI) ListDomainNames(arg0 *appsync.ListDomainNamesInput) (*appsync.ListDomainNamesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListDomainNames", arg0)
-	ret0, _ := ret[0].(*appsync.ListDomainNamesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListDomainNames indicates an expected call of ListDomainNames.
-func (mr *MockAppSyncAPIMockRecorder) ListDomainNames(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNames", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNames), arg0)
-}
-
-// ListDomainNamesRequest mocks base method.
-func (m *MockAppSyncAPI) ListDomainNamesRequest(arg0 *appsync.ListDomainNamesInput) (*request.Request, *appsync.ListDomainNamesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListDomainNamesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.ListDomainNamesOutput)
-	return ret0, ret1
-}
-
-// ListDomainNamesRequest indicates an expected call of ListDomainNamesRequest.
-func (mr *MockAppSyncAPIMockRecorder) ListDomainNamesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNamesRequest), arg0)
-}
-
-// ListDomainNamesWithContext mocks base method.
-func (m *MockAppSyncAPI) ListDomainNamesWithContext(arg0 context.Context, arg1 *appsync.ListDomainNamesInput, arg2 ...request.Option) (*appsync.ListDomainNamesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListDomainNamesWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.ListDomainNamesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListDomainNamesWithContext indicates an expected call of ListDomainNamesWithContext.
-func (mr *MockAppSyncAPIMockRecorder) ListDomainNamesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNamesWithContext), varargs...)
-}
-
-// ListFunctions mocks base method.
-func (m *MockAppSyncAPI) ListFunctions(arg0 *appsync.ListFunctionsInput) (*appsync.ListFunctionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListFunctions", arg0)
-	ret0, _ := ret[0].(*appsync.ListFunctionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListFunctions indicates an expected call of ListFunctions.
-func (mr *MockAppSyncAPIMockRecorder) ListFunctions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctions", reflect.TypeOf((*MockAppSyncAPI)(nil).ListFunctions), arg0)
-}
-
-// ListFunctionsRequest mocks base method.
-func (m *MockAppSyncAPI) ListFunctionsRequest(arg0 *appsync.ListFunctionsInput) (*request.Request, *appsync.ListFunctionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListFunctionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.ListFunctionsOutput)
-	return ret0, ret1
-}
-
-// ListFunctionsRequest indicates an expected call of ListFunctionsRequest.
-func (mr *MockAppSyncAPIMockRecorder) ListFunctionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListFunctionsRequest), arg0)
-}
-
-// ListFunctionsWithContext mocks base method.
-func (m *MockAppSyncAPI) ListFunctionsWithContext(arg0 context.Context, arg1 *appsync.ListFunctionsInput, arg2 ...request.Option) (*appsync.ListFunctionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListFunctionsWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.ListFunctionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListFunctionsWithContext indicates an expected call of ListFunctionsWithContext.
-func (mr *MockAppSyncAPIMockRecorder) ListFunctionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListFunctionsWithContext), varargs...)
-}
-
-// ListGraphqlApis mocks base method.
+// ListGraphqlApis mocks base method
 func (m *MockAppSyncAPI) ListGraphqlApis(arg0 *appsync.ListGraphqlApisInput) (*appsync.ListGraphqlApisOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGraphqlApis", arg0)
@@ -1695,13 +944,13 @@ func (m *MockAppSyncAPI) ListGraphqlApis(arg0 *appsync.ListGraphqlApisInput) (*a
 	return ret0, ret1
 }
 
-// ListGraphqlApis indicates an expected call of ListGraphqlApis.
+// ListGraphqlApis indicates an expected call of ListGraphqlApis
 func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApis(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGraphqlApis", reflect.TypeOf((*MockAppSyncAPI)(nil).ListGraphqlApis), arg0)
 }
 
-// ListGraphqlApisRequest mocks base method.
+// ListGraphqlApisRequest mocks base method
 func (m *MockAppSyncAPI) ListGraphqlApisRequest(arg0 *appsync.ListGraphqlApisInput) (*request.Request, *appsync.ListGraphqlApisOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGraphqlApisRequest", arg0)
@@ -1710,14 +959,14 @@ func (m *MockAppSyncAPI) ListGraphqlApisRequest(arg0 *appsync.ListGraphqlApisInp
 	return ret0, ret1
 }
 
-// ListGraphqlApisRequest indicates an expected call of ListGraphqlApisRequest.
+// ListGraphqlApisRequest indicates an expected call of ListGraphqlApisRequest
 func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApisRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGraphqlApisRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListGraphqlApisRequest), arg0)
 }
 
-// ListGraphqlApisWithContext mocks base method.
-func (m *MockAppSyncAPI) ListGraphqlApisWithContext(arg0 context.Context, arg1 *appsync.ListGraphqlApisInput, arg2 ...request.Option) (*appsync.ListGraphqlApisOutput, error) {
+// ListGraphqlApisWithContext mocks base method
+func (m *MockAppSyncAPI) ListGraphqlApisWithContext(arg0 aws.Context, arg1 *appsync.ListGraphqlApisInput, arg2 ...request.Option) (*appsync.ListGraphqlApisOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1729,14 +978,14 @@ func (m *MockAppSyncAPI) ListGraphqlApisWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ListGraphqlApisWithContext indicates an expected call of ListGraphqlApisWithContext.
+// ListGraphqlApisWithContext indicates an expected call of ListGraphqlApisWithContext
 func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGraphqlApisWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListGraphqlApisWithContext), varargs...)
 }
 
-// ListResolvers mocks base method.
+// ListResolvers mocks base method
 func (m *MockAppSyncAPI) ListResolvers(arg0 *appsync.ListResolversInput) (*appsync.ListResolversOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListResolvers", arg0)
@@ -1745,63 +994,13 @@ func (m *MockAppSyncAPI) ListResolvers(arg0 *appsync.ListResolversInput) (*appsy
 	return ret0, ret1
 }
 
-// ListResolvers indicates an expected call of ListResolvers.
+// ListResolvers indicates an expected call of ListResolvers
 func (mr *MockAppSyncAPIMockRecorder) ListResolvers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolvers", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolvers), arg0)
 }
 
-// ListResolversByFunction mocks base method.
-func (m *MockAppSyncAPI) ListResolversByFunction(arg0 *appsync.ListResolversByFunctionInput) (*appsync.ListResolversByFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListResolversByFunction", arg0)
-	ret0, _ := ret[0].(*appsync.ListResolversByFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListResolversByFunction indicates an expected call of ListResolversByFunction.
-func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunction(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunction", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunction), arg0)
-}
-
-// ListResolversByFunctionRequest mocks base method.
-func (m *MockAppSyncAPI) ListResolversByFunctionRequest(arg0 *appsync.ListResolversByFunctionInput) (*request.Request, *appsync.ListResolversByFunctionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListResolversByFunctionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.ListResolversByFunctionOutput)
-	return ret0, ret1
-}
-
-// ListResolversByFunctionRequest indicates an expected call of ListResolversByFunctionRequest.
-func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunctionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunctionRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunctionRequest), arg0)
-}
-
-// ListResolversByFunctionWithContext mocks base method.
-func (m *MockAppSyncAPI) ListResolversByFunctionWithContext(arg0 context.Context, arg1 *appsync.ListResolversByFunctionInput, arg2 ...request.Option) (*appsync.ListResolversByFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListResolversByFunctionWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.ListResolversByFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListResolversByFunctionWithContext indicates an expected call of ListResolversByFunctionWithContext.
-func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunctionWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunctionWithContext), varargs...)
-}
-
-// ListResolversRequest mocks base method.
+// ListResolversRequest mocks base method
 func (m *MockAppSyncAPI) ListResolversRequest(arg0 *appsync.ListResolversInput) (*request.Request, *appsync.ListResolversOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListResolversRequest", arg0)
@@ -1810,14 +1009,14 @@ func (m *MockAppSyncAPI) ListResolversRequest(arg0 *appsync.ListResolversInput) 
 	return ret0, ret1
 }
 
-// ListResolversRequest indicates an expected call of ListResolversRequest.
+// ListResolversRequest indicates an expected call of ListResolversRequest
 func (mr *MockAppSyncAPIMockRecorder) ListResolversRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversRequest), arg0)
 }
 
-// ListResolversWithContext mocks base method.
-func (m *MockAppSyncAPI) ListResolversWithContext(arg0 context.Context, arg1 *appsync.ListResolversInput, arg2 ...request.Option) (*appsync.ListResolversOutput, error) {
+// ListResolversWithContext mocks base method
+func (m *MockAppSyncAPI) ListResolversWithContext(arg0 aws.Context, arg1 *appsync.ListResolversInput, arg2 ...request.Option) (*appsync.ListResolversOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1829,64 +1028,14 @@ func (m *MockAppSyncAPI) ListResolversWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// ListResolversWithContext indicates an expected call of ListResolversWithContext.
+// ListResolversWithContext indicates an expected call of ListResolversWithContext
 func (mr *MockAppSyncAPIMockRecorder) ListResolversWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockAppSyncAPI) ListTagsForResource(arg0 *appsync.ListTagsForResourceInput) (*appsync.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*appsync.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockAppSyncAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockAppSyncAPI) ListTagsForResourceRequest(arg0 *appsync.ListTagsForResourceInput) (*request.Request, *appsync.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockAppSyncAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockAppSyncAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *appsync.ListTagsForResourceInput, arg2 ...request.Option) (*appsync.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockAppSyncAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// ListTypes mocks base method.
+// ListTypes mocks base method
 func (m *MockAppSyncAPI) ListTypes(arg0 *appsync.ListTypesInput) (*appsync.ListTypesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTypes", arg0)
@@ -1895,13 +1044,13 @@ func (m *MockAppSyncAPI) ListTypes(arg0 *appsync.ListTypesInput) (*appsync.ListT
 	return ret0, ret1
 }
 
-// ListTypes indicates an expected call of ListTypes.
+// ListTypes indicates an expected call of ListTypes
 func (mr *MockAppSyncAPIMockRecorder) ListTypes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypes", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypes), arg0)
 }
 
-// ListTypesRequest mocks base method.
+// ListTypesRequest mocks base method
 func (m *MockAppSyncAPI) ListTypesRequest(arg0 *appsync.ListTypesInput) (*request.Request, *appsync.ListTypesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTypesRequest", arg0)
@@ -1910,14 +1059,14 @@ func (m *MockAppSyncAPI) ListTypesRequest(arg0 *appsync.ListTypesInput) (*reques
 	return ret0, ret1
 }
 
-// ListTypesRequest indicates an expected call of ListTypesRequest.
+// ListTypesRequest indicates an expected call of ListTypesRequest
 func (mr *MockAppSyncAPIMockRecorder) ListTypesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesRequest), arg0)
 }
 
-// ListTypesWithContext mocks base method.
-func (m *MockAppSyncAPI) ListTypesWithContext(arg0 context.Context, arg1 *appsync.ListTypesInput, arg2 ...request.Option) (*appsync.ListTypesOutput, error) {
+// ListTypesWithContext mocks base method
+func (m *MockAppSyncAPI) ListTypesWithContext(arg0 aws.Context, arg1 *appsync.ListTypesInput, arg2 ...request.Option) (*appsync.ListTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1929,14 +1078,14 @@ func (m *MockAppSyncAPI) ListTypesWithContext(arg0 context.Context, arg1 *appsyn
 	return ret0, ret1
 }
 
-// ListTypesWithContext indicates an expected call of ListTypesWithContext.
+// ListTypesWithContext indicates an expected call of ListTypesWithContext
 func (mr *MockAppSyncAPIMockRecorder) ListTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesWithContext), varargs...)
 }
 
-// StartSchemaCreation mocks base method.
+// StartSchemaCreation mocks base method
 func (m *MockAppSyncAPI) StartSchemaCreation(arg0 *appsync.StartSchemaCreationInput) (*appsync.StartSchemaCreationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartSchemaCreation", arg0)
@@ -1945,13 +1094,13 @@ func (m *MockAppSyncAPI) StartSchemaCreation(arg0 *appsync.StartSchemaCreationIn
 	return ret0, ret1
 }
 
-// StartSchemaCreation indicates an expected call of StartSchemaCreation.
+// StartSchemaCreation indicates an expected call of StartSchemaCreation
 func (mr *MockAppSyncAPIMockRecorder) StartSchemaCreation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaCreation", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaCreation), arg0)
 }
 
-// StartSchemaCreationRequest mocks base method.
+// StartSchemaCreationRequest mocks base method
 func (m *MockAppSyncAPI) StartSchemaCreationRequest(arg0 *appsync.StartSchemaCreationInput) (*request.Request, *appsync.StartSchemaCreationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartSchemaCreationRequest", arg0)
@@ -1960,14 +1109,14 @@ func (m *MockAppSyncAPI) StartSchemaCreationRequest(arg0 *appsync.StartSchemaCre
 	return ret0, ret1
 }
 
-// StartSchemaCreationRequest indicates an expected call of StartSchemaCreationRequest.
+// StartSchemaCreationRequest indicates an expected call of StartSchemaCreationRequest
 func (mr *MockAppSyncAPIMockRecorder) StartSchemaCreationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaCreationRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaCreationRequest), arg0)
 }
 
-// StartSchemaCreationWithContext mocks base method.
-func (m *MockAppSyncAPI) StartSchemaCreationWithContext(arg0 context.Context, arg1 *appsync.StartSchemaCreationInput, arg2 ...request.Option) (*appsync.StartSchemaCreationOutput, error) {
+// StartSchemaCreationWithContext mocks base method
+func (m *MockAppSyncAPI) StartSchemaCreationWithContext(arg0 aws.Context, arg1 *appsync.StartSchemaCreationInput, arg2 ...request.Option) (*appsync.StartSchemaCreationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1979,164 +1128,14 @@ func (m *MockAppSyncAPI) StartSchemaCreationWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// StartSchemaCreationWithContext indicates an expected call of StartSchemaCreationWithContext.
+// StartSchemaCreationWithContext indicates an expected call of StartSchemaCreationWithContext
 func (mr *MockAppSyncAPIMockRecorder) StartSchemaCreationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaCreationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaCreationWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockAppSyncAPI) TagResource(arg0 *appsync.TagResourceInput) (*appsync.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*appsync.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockAppSyncAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockAppSyncAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockAppSyncAPI) TagResourceRequest(arg0 *appsync.TagResourceInput) (*request.Request, *appsync.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockAppSyncAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockAppSyncAPI) TagResourceWithContext(arg0 context.Context, arg1 *appsync.TagResourceInput, arg2 ...request.Option) (*appsync.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockAppSyncAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockAppSyncAPI) UntagResource(arg0 *appsync.UntagResourceInput) (*appsync.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*appsync.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockAppSyncAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockAppSyncAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockAppSyncAPI) UntagResourceRequest(arg0 *appsync.UntagResourceInput) (*request.Request, *appsync.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockAppSyncAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockAppSyncAPI) UntagResourceWithContext(arg0 context.Context, arg1 *appsync.UntagResourceInput, arg2 ...request.Option) (*appsync.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockAppSyncAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateApiCache mocks base method.
-func (m *MockAppSyncAPI) UpdateApiCache(arg0 *appsync.UpdateApiCacheInput) (*appsync.UpdateApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateApiCache", arg0)
-	ret0, _ := ret[0].(*appsync.UpdateApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateApiCache indicates an expected call of UpdateApiCache.
-func (mr *MockAppSyncAPIMockRecorder) UpdateApiCache(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiCache), arg0)
-}
-
-// UpdateApiCacheRequest mocks base method.
-func (m *MockAppSyncAPI) UpdateApiCacheRequest(arg0 *appsync.UpdateApiCacheInput) (*request.Request, *appsync.UpdateApiCacheOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateApiCacheRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.UpdateApiCacheOutput)
-	return ret0, ret1
-}
-
-// UpdateApiCacheRequest indicates an expected call of UpdateApiCacheRequest.
-func (mr *MockAppSyncAPIMockRecorder) UpdateApiCacheRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiCacheRequest), arg0)
-}
-
-// UpdateApiCacheWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateApiCacheWithContext(arg0 context.Context, arg1 *appsync.UpdateApiCacheInput, arg2 ...request.Option) (*appsync.UpdateApiCacheOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateApiCacheWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.UpdateApiCacheOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateApiCacheWithContext indicates an expected call of UpdateApiCacheWithContext.
-func (mr *MockAppSyncAPIMockRecorder) UpdateApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiCacheWithContext), varargs...)
-}
-
-// UpdateApiKey mocks base method.
+// UpdateApiKey mocks base method
 func (m *MockAppSyncAPI) UpdateApiKey(arg0 *appsync.UpdateApiKeyInput) (*appsync.UpdateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApiKey", arg0)
@@ -2145,13 +1144,13 @@ func (m *MockAppSyncAPI) UpdateApiKey(arg0 *appsync.UpdateApiKeyInput) (*appsync
 	return ret0, ret1
 }
 
-// UpdateApiKey indicates an expected call of UpdateApiKey.
+// UpdateApiKey indicates an expected call of UpdateApiKey
 func (mr *MockAppSyncAPIMockRecorder) UpdateApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiKey", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiKey), arg0)
 }
 
-// UpdateApiKeyRequest mocks base method.
+// UpdateApiKeyRequest mocks base method
 func (m *MockAppSyncAPI) UpdateApiKeyRequest(arg0 *appsync.UpdateApiKeyInput) (*request.Request, *appsync.UpdateApiKeyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApiKeyRequest", arg0)
@@ -2160,14 +1159,14 @@ func (m *MockAppSyncAPI) UpdateApiKeyRequest(arg0 *appsync.UpdateApiKeyInput) (*
 	return ret0, ret1
 }
 
-// UpdateApiKeyRequest indicates an expected call of UpdateApiKeyRequest.
+// UpdateApiKeyRequest indicates an expected call of UpdateApiKeyRequest
 func (mr *MockAppSyncAPIMockRecorder) UpdateApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiKeyRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiKeyRequest), arg0)
 }
 
-// UpdateApiKeyWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateApiKeyWithContext(arg0 context.Context, arg1 *appsync.UpdateApiKeyInput, arg2 ...request.Option) (*appsync.UpdateApiKeyOutput, error) {
+// UpdateApiKeyWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateApiKeyWithContext(arg0 aws.Context, arg1 *appsync.UpdateApiKeyInput, arg2 ...request.Option) (*appsync.UpdateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2179,14 +1178,14 @@ func (m *MockAppSyncAPI) UpdateApiKeyWithContext(arg0 context.Context, arg1 *app
 	return ret0, ret1
 }
 
-// UpdateApiKeyWithContext indicates an expected call of UpdateApiKeyWithContext.
+// UpdateApiKeyWithContext indicates an expected call of UpdateApiKeyWithContext
 func (mr *MockAppSyncAPIMockRecorder) UpdateApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiKeyWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiKeyWithContext), varargs...)
 }
 
-// UpdateDataSource mocks base method.
+// UpdateDataSource mocks base method
 func (m *MockAppSyncAPI) UpdateDataSource(arg0 *appsync.UpdateDataSourceInput) (*appsync.UpdateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDataSource", arg0)
@@ -2195,13 +1194,13 @@ func (m *MockAppSyncAPI) UpdateDataSource(arg0 *appsync.UpdateDataSourceInput) (
 	return ret0, ret1
 }
 
-// UpdateDataSource indicates an expected call of UpdateDataSource.
+// UpdateDataSource indicates an expected call of UpdateDataSource
 func (mr *MockAppSyncAPIMockRecorder) UpdateDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSource", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDataSource), arg0)
 }
 
-// UpdateDataSourceRequest mocks base method.
+// UpdateDataSourceRequest mocks base method
 func (m *MockAppSyncAPI) UpdateDataSourceRequest(arg0 *appsync.UpdateDataSourceInput) (*request.Request, *appsync.UpdateDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDataSourceRequest", arg0)
@@ -2210,14 +1209,14 @@ func (m *MockAppSyncAPI) UpdateDataSourceRequest(arg0 *appsync.UpdateDataSourceI
 	return ret0, ret1
 }
 
-// UpdateDataSourceRequest indicates an expected call of UpdateDataSourceRequest.
+// UpdateDataSourceRequest indicates an expected call of UpdateDataSourceRequest
 func (mr *MockAppSyncAPIMockRecorder) UpdateDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSourceRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDataSourceRequest), arg0)
 }
 
-// UpdateDataSourceWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateDataSourceWithContext(arg0 context.Context, arg1 *appsync.UpdateDataSourceInput, arg2 ...request.Option) (*appsync.UpdateDataSourceOutput, error) {
+// UpdateDataSourceWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateDataSourceWithContext(arg0 aws.Context, arg1 *appsync.UpdateDataSourceInput, arg2 ...request.Option) (*appsync.UpdateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2229,114 +1228,14 @@ func (m *MockAppSyncAPI) UpdateDataSourceWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateDataSourceWithContext indicates an expected call of UpdateDataSourceWithContext.
+// UpdateDataSourceWithContext indicates an expected call of UpdateDataSourceWithContext
 func (mr *MockAppSyncAPIMockRecorder) UpdateDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDataSourceWithContext), varargs...)
 }
 
-// UpdateDomainName mocks base method.
-func (m *MockAppSyncAPI) UpdateDomainName(arg0 *appsync.UpdateDomainNameInput) (*appsync.UpdateDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDomainName", arg0)
-	ret0, _ := ret[0].(*appsync.UpdateDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateDomainName indicates an expected call of UpdateDomainName.
-func (mr *MockAppSyncAPIMockRecorder) UpdateDomainName(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDomainName), arg0)
-}
-
-// UpdateDomainNameRequest mocks base method.
-func (m *MockAppSyncAPI) UpdateDomainNameRequest(arg0 *appsync.UpdateDomainNameInput) (*request.Request, *appsync.UpdateDomainNameOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDomainNameRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.UpdateDomainNameOutput)
-	return ret0, ret1
-}
-
-// UpdateDomainNameRequest indicates an expected call of UpdateDomainNameRequest.
-func (mr *MockAppSyncAPIMockRecorder) UpdateDomainNameRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDomainNameRequest), arg0)
-}
-
-// UpdateDomainNameWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateDomainNameWithContext(arg0 context.Context, arg1 *appsync.UpdateDomainNameInput, arg2 ...request.Option) (*appsync.UpdateDomainNameOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateDomainNameWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.UpdateDomainNameOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateDomainNameWithContext indicates an expected call of UpdateDomainNameWithContext.
-func (mr *MockAppSyncAPIMockRecorder) UpdateDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDomainNameWithContext), varargs...)
-}
-
-// UpdateFunction mocks base method.
-func (m *MockAppSyncAPI) UpdateFunction(arg0 *appsync.UpdateFunctionInput) (*appsync.UpdateFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateFunction", arg0)
-	ret0, _ := ret[0].(*appsync.UpdateFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateFunction indicates an expected call of UpdateFunction.
-func (mr *MockAppSyncAPIMockRecorder) UpdateFunction(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunction", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateFunction), arg0)
-}
-
-// UpdateFunctionRequest mocks base method.
-func (m *MockAppSyncAPI) UpdateFunctionRequest(arg0 *appsync.UpdateFunctionInput) (*request.Request, *appsync.UpdateFunctionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateFunctionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*appsync.UpdateFunctionOutput)
-	return ret0, ret1
-}
-
-// UpdateFunctionRequest indicates an expected call of UpdateFunctionRequest.
-func (mr *MockAppSyncAPIMockRecorder) UpdateFunctionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateFunctionRequest), arg0)
-}
-
-// UpdateFunctionWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateFunctionWithContext(arg0 context.Context, arg1 *appsync.UpdateFunctionInput, arg2 ...request.Option) (*appsync.UpdateFunctionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateFunctionWithContext", varargs...)
-	ret0, _ := ret[0].(*appsync.UpdateFunctionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateFunctionWithContext indicates an expected call of UpdateFunctionWithContext.
-func (mr *MockAppSyncAPIMockRecorder) UpdateFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateFunctionWithContext), varargs...)
-}
-
-// UpdateGraphqlApi mocks base method.
+// UpdateGraphqlApi mocks base method
 func (m *MockAppSyncAPI) UpdateGraphqlApi(arg0 *appsync.UpdateGraphqlApiInput) (*appsync.UpdateGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGraphqlApi", arg0)
@@ -2345,13 +1244,13 @@ func (m *MockAppSyncAPI) UpdateGraphqlApi(arg0 *appsync.UpdateGraphqlApiInput) (
 	return ret0, ret1
 }
 
-// UpdateGraphqlApi indicates an expected call of UpdateGraphqlApi.
+// UpdateGraphqlApi indicates an expected call of UpdateGraphqlApi
 func (mr *MockAppSyncAPIMockRecorder) UpdateGraphqlApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateGraphqlApi), arg0)
 }
 
-// UpdateGraphqlApiRequest mocks base method.
+// UpdateGraphqlApiRequest mocks base method
 func (m *MockAppSyncAPI) UpdateGraphqlApiRequest(arg0 *appsync.UpdateGraphqlApiInput) (*request.Request, *appsync.UpdateGraphqlApiOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGraphqlApiRequest", arg0)
@@ -2360,14 +1259,14 @@ func (m *MockAppSyncAPI) UpdateGraphqlApiRequest(arg0 *appsync.UpdateGraphqlApiI
 	return ret0, ret1
 }
 
-// UpdateGraphqlApiRequest indicates an expected call of UpdateGraphqlApiRequest.
+// UpdateGraphqlApiRequest indicates an expected call of UpdateGraphqlApiRequest
 func (mr *MockAppSyncAPIMockRecorder) UpdateGraphqlApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateGraphqlApiRequest), arg0)
 }
 
-// UpdateGraphqlApiWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.UpdateGraphqlApiInput, arg2 ...request.Option) (*appsync.UpdateGraphqlApiOutput, error) {
+// UpdateGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.UpdateGraphqlApiInput, arg2 ...request.Option) (*appsync.UpdateGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2379,14 +1278,14 @@ func (m *MockAppSyncAPI) UpdateGraphqlApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateGraphqlApiWithContext indicates an expected call of UpdateGraphqlApiWithContext.
+// UpdateGraphqlApiWithContext indicates an expected call of UpdateGraphqlApiWithContext
 func (mr *MockAppSyncAPIMockRecorder) UpdateGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateGraphqlApiWithContext), varargs...)
 }
 
-// UpdateResolver mocks base method.
+// UpdateResolver mocks base method
 func (m *MockAppSyncAPI) UpdateResolver(arg0 *appsync.UpdateResolverInput) (*appsync.UpdateResolverOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateResolver", arg0)
@@ -2395,13 +1294,13 @@ func (m *MockAppSyncAPI) UpdateResolver(arg0 *appsync.UpdateResolverInput) (*app
 	return ret0, ret1
 }
 
-// UpdateResolver indicates an expected call of UpdateResolver.
+// UpdateResolver indicates an expected call of UpdateResolver
 func (mr *MockAppSyncAPIMockRecorder) UpdateResolver(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolver", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateResolver), arg0)
 }
 
-// UpdateResolverRequest mocks base method.
+// UpdateResolverRequest mocks base method
 func (m *MockAppSyncAPI) UpdateResolverRequest(arg0 *appsync.UpdateResolverInput) (*request.Request, *appsync.UpdateResolverOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateResolverRequest", arg0)
@@ -2410,14 +1309,14 @@ func (m *MockAppSyncAPI) UpdateResolverRequest(arg0 *appsync.UpdateResolverInput
 	return ret0, ret1
 }
 
-// UpdateResolverRequest indicates an expected call of UpdateResolverRequest.
+// UpdateResolverRequest indicates an expected call of UpdateResolverRequest
 func (mr *MockAppSyncAPIMockRecorder) UpdateResolverRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateResolverRequest), arg0)
 }
 
-// UpdateResolverWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateResolverWithContext(arg0 context.Context, arg1 *appsync.UpdateResolverInput, arg2 ...request.Option) (*appsync.UpdateResolverOutput, error) {
+// UpdateResolverWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateResolverWithContext(arg0 aws.Context, arg1 *appsync.UpdateResolverInput, arg2 ...request.Option) (*appsync.UpdateResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2429,14 +1328,14 @@ func (m *MockAppSyncAPI) UpdateResolverWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// UpdateResolverWithContext indicates an expected call of UpdateResolverWithContext.
+// UpdateResolverWithContext indicates an expected call of UpdateResolverWithContext
 func (mr *MockAppSyncAPIMockRecorder) UpdateResolverWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateResolverWithContext), varargs...)
 }
 
-// UpdateType mocks base method.
+// UpdateType mocks base method
 func (m *MockAppSyncAPI) UpdateType(arg0 *appsync.UpdateTypeInput) (*appsync.UpdateTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateType", arg0)
@@ -2445,13 +1344,13 @@ func (m *MockAppSyncAPI) UpdateType(arg0 *appsync.UpdateTypeInput) (*appsync.Upd
 	return ret0, ret1
 }
 
-// UpdateType indicates an expected call of UpdateType.
+// UpdateType indicates an expected call of UpdateType
 func (mr *MockAppSyncAPIMockRecorder) UpdateType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateType", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateType), arg0)
 }
 
-// UpdateTypeRequest mocks base method.
+// UpdateTypeRequest mocks base method
 func (m *MockAppSyncAPI) UpdateTypeRequest(arg0 *appsync.UpdateTypeInput) (*request.Request, *appsync.UpdateTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTypeRequest", arg0)
@@ -2460,14 +1359,14 @@ func (m *MockAppSyncAPI) UpdateTypeRequest(arg0 *appsync.UpdateTypeInput) (*requ
 	return ret0, ret1
 }
 
-// UpdateTypeRequest indicates an expected call of UpdateTypeRequest.
+// UpdateTypeRequest indicates an expected call of UpdateTypeRequest
 func (mr *MockAppSyncAPIMockRecorder) UpdateTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTypeRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateTypeRequest), arg0)
 }
 
-// UpdateTypeWithContext mocks base method.
-func (m *MockAppSyncAPI) UpdateTypeWithContext(arg0 context.Context, arg1 *appsync.UpdateTypeInput, arg2 ...request.Option) (*appsync.UpdateTypeOutput, error) {
+// UpdateTypeWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateTypeWithContext(arg0 aws.Context, arg1 *appsync.UpdateTypeInput, arg2 ...request.Option) (*appsync.UpdateTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2479,7 +1378,7 @@ func (m *MockAppSyncAPI) UpdateTypeWithContext(arg0 context.Context, arg1 *appsy
 	return ret0, ret1
 }
 
-// UpdateTypeWithContext indicates an expected call of UpdateTypeWithContext.
+// UpdateTypeWithContext indicates an expected call of UpdateTypeWithContext
 func (mr *MockAppSyncAPIMockRecorder) UpdateTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

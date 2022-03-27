@@ -5,38 +5,37 @@
 package kinesisanalyticsmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	kinesisanalytics "github.com/aws/aws-sdk-go/service/kinesisanalytics"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockKinesisAnalyticsAPI is a mock of KinesisAnalyticsAPI interface.
+// MockKinesisAnalyticsAPI is a mock of KinesisAnalyticsAPI interface
 type MockKinesisAnalyticsAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockKinesisAnalyticsAPIMockRecorder
 }
 
-// MockKinesisAnalyticsAPIMockRecorder is the mock recorder for MockKinesisAnalyticsAPI.
+// MockKinesisAnalyticsAPIMockRecorder is the mock recorder for MockKinesisAnalyticsAPI
 type MockKinesisAnalyticsAPIMockRecorder struct {
 	mock *MockKinesisAnalyticsAPI
 }
 
-// NewMockKinesisAnalyticsAPI creates a new mock instance.
+// NewMockKinesisAnalyticsAPI creates a new mock instance
 func NewMockKinesisAnalyticsAPI(ctrl *gomock.Controller) *MockKinesisAnalyticsAPI {
 	mock := &MockKinesisAnalyticsAPI{ctrl: ctrl}
 	mock.recorder = &MockKinesisAnalyticsAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockKinesisAnalyticsAPI) EXPECT() *MockKinesisAnalyticsAPIMockRecorder {
 	return m.recorder
 }
 
-// AddApplicationCloudWatchLoggingOption mocks base method.
+// AddApplicationCloudWatchLoggingOption mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOption(arg0 *kinesisanalytics.AddApplicationCloudWatchLoggingOptionInput) (*kinesisanalytics.AddApplicationCloudWatchLoggingOptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationCloudWatchLoggingOption", arg0)
@@ -45,13 +44,13 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOption(arg0 *ki
 	return ret0, ret1
 }
 
-// AddApplicationCloudWatchLoggingOption indicates an expected call of AddApplicationCloudWatchLoggingOption.
+// AddApplicationCloudWatchLoggingOption indicates an expected call of AddApplicationCloudWatchLoggingOption
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationCloudWatchLoggingOption(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationCloudWatchLoggingOption", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationCloudWatchLoggingOption), arg0)
 }
 
-// AddApplicationCloudWatchLoggingOptionRequest mocks base method.
+// AddApplicationCloudWatchLoggingOptionRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOptionRequest(arg0 *kinesisanalytics.AddApplicationCloudWatchLoggingOptionInput) (*request.Request, *kinesisanalytics.AddApplicationCloudWatchLoggingOptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationCloudWatchLoggingOptionRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOptionRequest(a
 	return ret0, ret1
 }
 
-// AddApplicationCloudWatchLoggingOptionRequest indicates an expected call of AddApplicationCloudWatchLoggingOptionRequest.
+// AddApplicationCloudWatchLoggingOptionRequest indicates an expected call of AddApplicationCloudWatchLoggingOptionRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationCloudWatchLoggingOptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationCloudWatchLoggingOptionRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationCloudWatchLoggingOptionRequest), arg0)
 }
 
-// AddApplicationCloudWatchLoggingOptionWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOptionWithContext(arg0 context.Context, arg1 *kinesisanalytics.AddApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationCloudWatchLoggingOptionOutput, error) {
+// AddApplicationCloudWatchLoggingOptionWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOptionWithContext(arg0 aws.Context, arg1 *kinesisanalytics.AddApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationCloudWatchLoggingOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationCloudWatchLoggingOptionWithConte
 	return ret0, ret1
 }
 
-// AddApplicationCloudWatchLoggingOptionWithContext indicates an expected call of AddApplicationCloudWatchLoggingOptionWithContext.
+// AddApplicationCloudWatchLoggingOptionWithContext indicates an expected call of AddApplicationCloudWatchLoggingOptionWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationCloudWatchLoggingOptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationCloudWatchLoggingOptionWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationCloudWatchLoggingOptionWithContext), varargs...)
 }
 
-// AddApplicationInput mocks base method.
+// AddApplicationInput mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationInput(arg0 *kinesisanalytics.AddApplicationInputInput) (*kinesisanalytics.AddApplicationInputOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationInput", arg0)
@@ -95,13 +94,13 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationInput(arg0 *kinesisanalytics.Add
 	return ret0, ret1
 }
 
-// AddApplicationInput indicates an expected call of AddApplicationInput.
+// AddApplicationInput indicates an expected call of AddApplicationInput
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationInput(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationInput", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationInput), arg0)
 }
 
-// AddApplicationInputProcessingConfiguration mocks base method.
+// AddApplicationInputProcessingConfiguration mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfiguration(arg0 *kinesisanalytics.AddApplicationInputProcessingConfigurationInput) (*kinesisanalytics.AddApplicationInputProcessingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationInputProcessingConfiguration", arg0)
@@ -110,13 +109,13 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfiguration(arg
 	return ret0, ret1
 }
 
-// AddApplicationInputProcessingConfiguration indicates an expected call of AddApplicationInputProcessingConfiguration.
+// AddApplicationInputProcessingConfiguration indicates an expected call of AddApplicationInputProcessingConfiguration
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationInputProcessingConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationInputProcessingConfiguration", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationInputProcessingConfiguration), arg0)
 }
 
-// AddApplicationInputProcessingConfigurationRequest mocks base method.
+// AddApplicationInputProcessingConfigurationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfigurationRequest(arg0 *kinesisanalytics.AddApplicationInputProcessingConfigurationInput) (*request.Request, *kinesisanalytics.AddApplicationInputProcessingConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationInputProcessingConfigurationRequest", arg0)
@@ -125,14 +124,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfigurationRequ
 	return ret0, ret1
 }
 
-// AddApplicationInputProcessingConfigurationRequest indicates an expected call of AddApplicationInputProcessingConfigurationRequest.
+// AddApplicationInputProcessingConfigurationRequest indicates an expected call of AddApplicationInputProcessingConfigurationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationInputProcessingConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationInputProcessingConfigurationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationInputProcessingConfigurationRequest), arg0)
 }
 
-// AddApplicationInputProcessingConfigurationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalytics.AddApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationInputProcessingConfigurationOutput, error) {
+// AddApplicationInputProcessingConfigurationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfigurationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.AddApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationInputProcessingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -144,14 +143,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationInputProcessingConfigurationWith
 	return ret0, ret1
 }
 
-// AddApplicationInputProcessingConfigurationWithContext indicates an expected call of AddApplicationInputProcessingConfigurationWithContext.
+// AddApplicationInputProcessingConfigurationWithContext indicates an expected call of AddApplicationInputProcessingConfigurationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationInputProcessingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationInputProcessingConfigurationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationInputProcessingConfigurationWithContext), varargs...)
 }
 
-// AddApplicationInputRequest mocks base method.
+// AddApplicationInputRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationInputRequest(arg0 *kinesisanalytics.AddApplicationInputInput) (*request.Request, *kinesisanalytics.AddApplicationInputOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationInputRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationInputRequest(arg0 *kinesisanalyt
 	return ret0, ret1
 }
 
-// AddApplicationInputRequest indicates an expected call of AddApplicationInputRequest.
+// AddApplicationInputRequest indicates an expected call of AddApplicationInputRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationInputRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationInputRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationInputRequest), arg0)
 }
 
-// AddApplicationInputWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) AddApplicationInputWithContext(arg0 context.Context, arg1 *kinesisanalytics.AddApplicationInputInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationInputOutput, error) {
+// AddApplicationInputWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) AddApplicationInputWithContext(arg0 aws.Context, arg1 *kinesisanalytics.AddApplicationInputInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationInputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationInputWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// AddApplicationInputWithContext indicates an expected call of AddApplicationInputWithContext.
+// AddApplicationInputWithContext indicates an expected call of AddApplicationInputWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationInputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationInputWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationInputWithContext), varargs...)
 }
 
-// AddApplicationOutput mocks base method.
+// AddApplicationOutput mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationOutput(arg0 *kinesisanalytics.AddApplicationOutputInput) (*kinesisanalytics.AddApplicationOutputOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationOutput", arg0)
@@ -195,13 +194,13 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationOutput(arg0 *kinesisanalytics.Ad
 	return ret0, ret1
 }
 
-// AddApplicationOutput indicates an expected call of AddApplicationOutput.
+// AddApplicationOutput indicates an expected call of AddApplicationOutput
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationOutput(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationOutput", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationOutput), arg0)
 }
 
-// AddApplicationOutputRequest mocks base method.
+// AddApplicationOutputRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationOutputRequest(arg0 *kinesisanalytics.AddApplicationOutputInput) (*request.Request, *kinesisanalytics.AddApplicationOutputOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationOutputRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationOutputRequest(arg0 *kinesisanaly
 	return ret0, ret1
 }
 
-// AddApplicationOutputRequest indicates an expected call of AddApplicationOutputRequest.
+// AddApplicationOutputRequest indicates an expected call of AddApplicationOutputRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationOutputRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationOutputRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationOutputRequest), arg0)
 }
 
-// AddApplicationOutputWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) AddApplicationOutputWithContext(arg0 context.Context, arg1 *kinesisanalytics.AddApplicationOutputInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationOutputOutput, error) {
+// AddApplicationOutputWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) AddApplicationOutputWithContext(arg0 aws.Context, arg1 *kinesisanalytics.AddApplicationOutputInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationOutputWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// AddApplicationOutputWithContext indicates an expected call of AddApplicationOutputWithContext.
+// AddApplicationOutputWithContext indicates an expected call of AddApplicationOutputWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationOutputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationOutputWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationOutputWithContext), varargs...)
 }
 
-// AddApplicationReferenceDataSource mocks base method.
+// AddApplicationReferenceDataSource mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSource(arg0 *kinesisanalytics.AddApplicationReferenceDataSourceInput) (*kinesisanalytics.AddApplicationReferenceDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationReferenceDataSource", arg0)
@@ -245,13 +244,13 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSource(arg0 *kinesi
 	return ret0, ret1
 }
 
-// AddApplicationReferenceDataSource indicates an expected call of AddApplicationReferenceDataSource.
+// AddApplicationReferenceDataSource indicates an expected call of AddApplicationReferenceDataSource
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationReferenceDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationReferenceDataSource", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationReferenceDataSource), arg0)
 }
 
-// AddApplicationReferenceDataSourceRequest mocks base method.
+// AddApplicationReferenceDataSourceRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSourceRequest(arg0 *kinesisanalytics.AddApplicationReferenceDataSourceInput) (*request.Request, *kinesisanalytics.AddApplicationReferenceDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddApplicationReferenceDataSourceRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSourceRequest(arg0 
 	return ret0, ret1
 }
 
-// AddApplicationReferenceDataSourceRequest indicates an expected call of AddApplicationReferenceDataSourceRequest.
+// AddApplicationReferenceDataSourceRequest indicates an expected call of AddApplicationReferenceDataSourceRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationReferenceDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationReferenceDataSourceRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationReferenceDataSourceRequest), arg0)
 }
 
-// AddApplicationReferenceDataSourceWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSourceWithContext(arg0 context.Context, arg1 *kinesisanalytics.AddApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationReferenceDataSourceOutput, error) {
+// AddApplicationReferenceDataSourceWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSourceWithContext(arg0 aws.Context, arg1 *kinesisanalytics.AddApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalytics.AddApplicationReferenceDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockKinesisAnalyticsAPI) AddApplicationReferenceDataSourceWithContext(a
 	return ret0, ret1
 }
 
-// AddApplicationReferenceDataSourceWithContext indicates an expected call of AddApplicationReferenceDataSourceWithContext.
+// AddApplicationReferenceDataSourceWithContext indicates an expected call of AddApplicationReferenceDataSourceWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) AddApplicationReferenceDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationReferenceDataSourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).AddApplicationReferenceDataSourceWithContext), varargs...)
 }
 
-// CreateApplication mocks base method.
+// CreateApplication mocks base method
 func (m *MockKinesisAnalyticsAPI) CreateApplication(arg0 *kinesisanalytics.CreateApplicationInput) (*kinesisanalytics.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApplication", arg0)
@@ -295,13 +294,13 @@ func (m *MockKinesisAnalyticsAPI) CreateApplication(arg0 *kinesisanalytics.Creat
 	return ret0, ret1
 }
 
-// CreateApplication indicates an expected call of CreateApplication.
+// CreateApplication indicates an expected call of CreateApplication
 func (mr *MockKinesisAnalyticsAPIMockRecorder) CreateApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplication", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).CreateApplication), arg0)
 }
 
-// CreateApplicationRequest mocks base method.
+// CreateApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) CreateApplicationRequest(arg0 *kinesisanalytics.CreateApplicationInput) (*request.Request, *kinesisanalytics.CreateApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApplicationRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockKinesisAnalyticsAPI) CreateApplicationRequest(arg0 *kinesisanalytic
 	return ret0, ret1
 }
 
-// CreateApplicationRequest indicates an expected call of CreateApplicationRequest.
+// CreateApplicationRequest indicates an expected call of CreateApplicationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) CreateApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).CreateApplicationRequest), arg0)
 }
 
-// CreateApplicationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *kinesisanalytics.CreateApplicationInput, arg2 ...request.Option) (*kinesisanalytics.CreateApplicationOutput, error) {
+// CreateApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) CreateApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.CreateApplicationInput, arg2 ...request.Option) (*kinesisanalytics.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockKinesisAnalyticsAPI) CreateApplicationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateApplicationWithContext indicates an expected call of CreateApplicationWithContext.
+// CreateApplicationWithContext indicates an expected call of CreateApplicationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) CreateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).CreateApplicationWithContext), varargs...)
 }
 
-// DeleteApplication mocks base method.
+// DeleteApplication mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplication(arg0 *kinesisanalytics.DeleteApplicationInput) (*kinesisanalytics.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplication", arg0)
@@ -345,13 +344,13 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplication(arg0 *kinesisanalytics.Delet
 	return ret0, ret1
 }
 
-// DeleteApplication indicates an expected call of DeleteApplication.
+// DeleteApplication indicates an expected call of DeleteApplication
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplication", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplication), arg0)
 }
 
-// DeleteApplicationCloudWatchLoggingOption mocks base method.
+// DeleteApplicationCloudWatchLoggingOption mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOption(arg0 *kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionInput) (*kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationCloudWatchLoggingOption", arg0)
@@ -360,13 +359,13 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOption(arg0 
 	return ret0, ret1
 }
 
-// DeleteApplicationCloudWatchLoggingOption indicates an expected call of DeleteApplicationCloudWatchLoggingOption.
+// DeleteApplicationCloudWatchLoggingOption indicates an expected call of DeleteApplicationCloudWatchLoggingOption
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationCloudWatchLoggingOption(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationCloudWatchLoggingOption", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationCloudWatchLoggingOption), arg0)
 }
 
-// DeleteApplicationCloudWatchLoggingOptionRequest mocks base method.
+// DeleteApplicationCloudWatchLoggingOptionRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOptionRequest(arg0 *kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionInput) (*request.Request, *kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationCloudWatchLoggingOptionRequest", arg0)
@@ -375,14 +374,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOptionReques
 	return ret0, ret1
 }
 
-// DeleteApplicationCloudWatchLoggingOptionRequest indicates an expected call of DeleteApplicationCloudWatchLoggingOptionRequest.
+// DeleteApplicationCloudWatchLoggingOptionRequest indicates an expected call of DeleteApplicationCloudWatchLoggingOptionRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationCloudWatchLoggingOptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationCloudWatchLoggingOptionRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationCloudWatchLoggingOptionRequest), arg0)
 }
 
-// DeleteApplicationCloudWatchLoggingOptionWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOptionWithContext(arg0 context.Context, arg1 *kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionOutput, error) {
+// DeleteApplicationCloudWatchLoggingOptionWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOptionWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationCloudWatchLoggingOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -394,14 +393,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationCloudWatchLoggingOptionWithCo
 	return ret0, ret1
 }
 
-// DeleteApplicationCloudWatchLoggingOptionWithContext indicates an expected call of DeleteApplicationCloudWatchLoggingOptionWithContext.
+// DeleteApplicationCloudWatchLoggingOptionWithContext indicates an expected call of DeleteApplicationCloudWatchLoggingOptionWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationCloudWatchLoggingOptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationCloudWatchLoggingOptionWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationCloudWatchLoggingOptionWithContext), varargs...)
 }
 
-// DeleteApplicationInputProcessingConfiguration mocks base method.
+// DeleteApplicationInputProcessingConfiguration mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfiguration(arg0 *kinesisanalytics.DeleteApplicationInputProcessingConfigurationInput) (*kinesisanalytics.DeleteApplicationInputProcessingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationInputProcessingConfiguration", arg0)
@@ -410,13 +409,13 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfiguration(
 	return ret0, ret1
 }
 
-// DeleteApplicationInputProcessingConfiguration indicates an expected call of DeleteApplicationInputProcessingConfiguration.
+// DeleteApplicationInputProcessingConfiguration indicates an expected call of DeleteApplicationInputProcessingConfiguration
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationInputProcessingConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationInputProcessingConfiguration", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationInputProcessingConfiguration), arg0)
 }
 
-// DeleteApplicationInputProcessingConfigurationRequest mocks base method.
+// DeleteApplicationInputProcessingConfigurationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfigurationRequest(arg0 *kinesisanalytics.DeleteApplicationInputProcessingConfigurationInput) (*request.Request, *kinesisanalytics.DeleteApplicationInputProcessingConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationInputProcessingConfigurationRequest", arg0)
@@ -425,14 +424,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfigurationR
 	return ret0, ret1
 }
 
-// DeleteApplicationInputProcessingConfigurationRequest indicates an expected call of DeleteApplicationInputProcessingConfigurationRequest.
+// DeleteApplicationInputProcessingConfigurationRequest indicates an expected call of DeleteApplicationInputProcessingConfigurationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationInputProcessingConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationInputProcessingConfigurationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationInputProcessingConfigurationRequest), arg0)
 }
 
-// DeleteApplicationInputProcessingConfigurationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalytics.DeleteApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationInputProcessingConfigurationOutput, error) {
+// DeleteApplicationInputProcessingConfigurationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfigurationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DeleteApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationInputProcessingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -444,14 +443,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationInputProcessingConfigurationW
 	return ret0, ret1
 }
 
-// DeleteApplicationInputProcessingConfigurationWithContext indicates an expected call of DeleteApplicationInputProcessingConfigurationWithContext.
+// DeleteApplicationInputProcessingConfigurationWithContext indicates an expected call of DeleteApplicationInputProcessingConfigurationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationInputProcessingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationInputProcessingConfigurationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationInputProcessingConfigurationWithContext), varargs...)
 }
 
-// DeleteApplicationOutput mocks base method.
+// DeleteApplicationOutput mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutput(arg0 *kinesisanalytics.DeleteApplicationOutputInput) (*kinesisanalytics.DeleteApplicationOutputOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationOutput", arg0)
@@ -460,13 +459,13 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutput(arg0 *kinesisanalytics
 	return ret0, ret1
 }
 
-// DeleteApplicationOutput indicates an expected call of DeleteApplicationOutput.
+// DeleteApplicationOutput indicates an expected call of DeleteApplicationOutput
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationOutput(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationOutput", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationOutput), arg0)
 }
 
-// DeleteApplicationOutputRequest mocks base method.
+// DeleteApplicationOutputRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutputRequest(arg0 *kinesisanalytics.DeleteApplicationOutputInput) (*request.Request, *kinesisanalytics.DeleteApplicationOutputOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationOutputRequest", arg0)
@@ -475,14 +474,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutputRequest(arg0 *kinesisan
 	return ret0, ret1
 }
 
-// DeleteApplicationOutputRequest indicates an expected call of DeleteApplicationOutputRequest.
+// DeleteApplicationOutputRequest indicates an expected call of DeleteApplicationOutputRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationOutputRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationOutputRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationOutputRequest), arg0)
 }
 
-// DeleteApplicationOutputWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutputWithContext(arg0 context.Context, arg1 *kinesisanalytics.DeleteApplicationOutputInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationOutputOutput, error) {
+// DeleteApplicationOutputWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutputWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DeleteApplicationOutputInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -494,14 +493,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationOutputWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// DeleteApplicationOutputWithContext indicates an expected call of DeleteApplicationOutputWithContext.
+// DeleteApplicationOutputWithContext indicates an expected call of DeleteApplicationOutputWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationOutputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationOutputWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationOutputWithContext), varargs...)
 }
 
-// DeleteApplicationReferenceDataSource mocks base method.
+// DeleteApplicationReferenceDataSource mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSource(arg0 *kinesisanalytics.DeleteApplicationReferenceDataSourceInput) (*kinesisanalytics.DeleteApplicationReferenceDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationReferenceDataSource", arg0)
@@ -510,13 +509,13 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSource(arg0 *kin
 	return ret0, ret1
 }
 
-// DeleteApplicationReferenceDataSource indicates an expected call of DeleteApplicationReferenceDataSource.
+// DeleteApplicationReferenceDataSource indicates an expected call of DeleteApplicationReferenceDataSource
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationReferenceDataSource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationReferenceDataSource", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationReferenceDataSource), arg0)
 }
 
-// DeleteApplicationReferenceDataSourceRequest mocks base method.
+// DeleteApplicationReferenceDataSourceRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSourceRequest(arg0 *kinesisanalytics.DeleteApplicationReferenceDataSourceInput) (*request.Request, *kinesisanalytics.DeleteApplicationReferenceDataSourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationReferenceDataSourceRequest", arg0)
@@ -525,14 +524,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSourceRequest(ar
 	return ret0, ret1
 }
 
-// DeleteApplicationReferenceDataSourceRequest indicates an expected call of DeleteApplicationReferenceDataSourceRequest.
+// DeleteApplicationReferenceDataSourceRequest indicates an expected call of DeleteApplicationReferenceDataSourceRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationReferenceDataSourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationReferenceDataSourceRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationReferenceDataSourceRequest), arg0)
 }
 
-// DeleteApplicationReferenceDataSourceWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSourceWithContext(arg0 context.Context, arg1 *kinesisanalytics.DeleteApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationReferenceDataSourceOutput, error) {
+// DeleteApplicationReferenceDataSourceWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSourceWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DeleteApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationReferenceDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -544,14 +543,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationReferenceDataSourceWithContex
 	return ret0, ret1
 }
 
-// DeleteApplicationReferenceDataSourceWithContext indicates an expected call of DeleteApplicationReferenceDataSourceWithContext.
+// DeleteApplicationReferenceDataSourceWithContext indicates an expected call of DeleteApplicationReferenceDataSourceWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationReferenceDataSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationReferenceDataSourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationReferenceDataSourceWithContext), varargs...)
 }
 
-// DeleteApplicationRequest mocks base method.
+// DeleteApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DeleteApplicationRequest(arg0 *kinesisanalytics.DeleteApplicationInput) (*request.Request, *kinesisanalytics.DeleteApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationRequest(arg0 *kinesisanalytic
 	return ret0, ret1
 }
 
-// DeleteApplicationRequest indicates an expected call of DeleteApplicationRequest.
+// DeleteApplicationRequest indicates an expected call of DeleteApplicationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationRequest), arg0)
 }
 
-// DeleteApplicationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *kinesisanalytics.DeleteApplicationInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationOutput, error) {
+// DeleteApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DeleteApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DeleteApplicationInput, arg2 ...request.Option) (*kinesisanalytics.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockKinesisAnalyticsAPI) DeleteApplicationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteApplicationWithContext indicates an expected call of DeleteApplicationWithContext.
+// DeleteApplicationWithContext indicates an expected call of DeleteApplicationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DeleteApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DeleteApplicationWithContext), varargs...)
 }
 
-// DescribeApplication mocks base method.
+// DescribeApplication mocks base method
 func (m *MockKinesisAnalyticsAPI) DescribeApplication(arg0 *kinesisanalytics.DescribeApplicationInput) (*kinesisanalytics.DescribeApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplication", arg0)
@@ -595,13 +594,13 @@ func (m *MockKinesisAnalyticsAPI) DescribeApplication(arg0 *kinesisanalytics.Des
 	return ret0, ret1
 }
 
-// DescribeApplication indicates an expected call of DescribeApplication.
+// DescribeApplication indicates an expected call of DescribeApplication
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DescribeApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplication", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DescribeApplication), arg0)
 }
 
-// DescribeApplicationRequest mocks base method.
+// DescribeApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DescribeApplicationRequest(arg0 *kinesisanalytics.DescribeApplicationInput) (*request.Request, *kinesisanalytics.DescribeApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplicationRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockKinesisAnalyticsAPI) DescribeApplicationRequest(arg0 *kinesisanalyt
 	return ret0, ret1
 }
 
-// DescribeApplicationRequest indicates an expected call of DescribeApplicationRequest.
+// DescribeApplicationRequest indicates an expected call of DescribeApplicationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DescribeApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DescribeApplicationRequest), arg0)
 }
 
-// DescribeApplicationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DescribeApplicationWithContext(arg0 context.Context, arg1 *kinesisanalytics.DescribeApplicationInput, arg2 ...request.Option) (*kinesisanalytics.DescribeApplicationOutput, error) {
+// DescribeApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DescribeApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DescribeApplicationInput, arg2 ...request.Option) (*kinesisanalytics.DescribeApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockKinesisAnalyticsAPI) DescribeApplicationWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DescribeApplicationWithContext indicates an expected call of DescribeApplicationWithContext.
+// DescribeApplicationWithContext indicates an expected call of DescribeApplicationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DescribeApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DescribeApplicationWithContext), varargs...)
 }
 
-// DiscoverInputSchema mocks base method.
+// DiscoverInputSchema mocks base method
 func (m *MockKinesisAnalyticsAPI) DiscoverInputSchema(arg0 *kinesisanalytics.DiscoverInputSchemaInput) (*kinesisanalytics.DiscoverInputSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DiscoverInputSchema", arg0)
@@ -645,13 +644,13 @@ func (m *MockKinesisAnalyticsAPI) DiscoverInputSchema(arg0 *kinesisanalytics.Dis
 	return ret0, ret1
 }
 
-// DiscoverInputSchema indicates an expected call of DiscoverInputSchema.
+// DiscoverInputSchema indicates an expected call of DiscoverInputSchema
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DiscoverInputSchema(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInputSchema", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DiscoverInputSchema), arg0)
 }
 
-// DiscoverInputSchemaRequest mocks base method.
+// DiscoverInputSchemaRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) DiscoverInputSchemaRequest(arg0 *kinesisanalytics.DiscoverInputSchemaInput) (*request.Request, *kinesisanalytics.DiscoverInputSchemaOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DiscoverInputSchemaRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockKinesisAnalyticsAPI) DiscoverInputSchemaRequest(arg0 *kinesisanalyt
 	return ret0, ret1
 }
 
-// DiscoverInputSchemaRequest indicates an expected call of DiscoverInputSchemaRequest.
+// DiscoverInputSchemaRequest indicates an expected call of DiscoverInputSchemaRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DiscoverInputSchemaRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInputSchemaRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DiscoverInputSchemaRequest), arg0)
 }
 
-// DiscoverInputSchemaWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) DiscoverInputSchemaWithContext(arg0 context.Context, arg1 *kinesisanalytics.DiscoverInputSchemaInput, arg2 ...request.Option) (*kinesisanalytics.DiscoverInputSchemaOutput, error) {
+// DiscoverInputSchemaWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) DiscoverInputSchemaWithContext(arg0 aws.Context, arg1 *kinesisanalytics.DiscoverInputSchemaInput, arg2 ...request.Option) (*kinesisanalytics.DiscoverInputSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockKinesisAnalyticsAPI) DiscoverInputSchemaWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DiscoverInputSchemaWithContext indicates an expected call of DiscoverInputSchemaWithContext.
+// DiscoverInputSchemaWithContext indicates an expected call of DiscoverInputSchemaWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) DiscoverInputSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInputSchemaWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).DiscoverInputSchemaWithContext), varargs...)
 }
 
-// ListApplications mocks base method.
+// ListApplications mocks base method
 func (m *MockKinesisAnalyticsAPI) ListApplications(arg0 *kinesisanalytics.ListApplicationsInput) (*kinesisanalytics.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListApplications", arg0)
@@ -695,13 +694,13 @@ func (m *MockKinesisAnalyticsAPI) ListApplications(arg0 *kinesisanalytics.ListAp
 	return ret0, ret1
 }
 
-// ListApplications indicates an expected call of ListApplications.
+// ListApplications indicates an expected call of ListApplications
 func (mr *MockKinesisAnalyticsAPIMockRecorder) ListApplications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplications", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).ListApplications), arg0)
 }
 
-// ListApplicationsRequest mocks base method.
+// ListApplicationsRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) ListApplicationsRequest(arg0 *kinesisanalytics.ListApplicationsInput) (*request.Request, *kinesisanalytics.ListApplicationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListApplicationsRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockKinesisAnalyticsAPI) ListApplicationsRequest(arg0 *kinesisanalytics
 	return ret0, ret1
 }
 
-// ListApplicationsRequest indicates an expected call of ListApplicationsRequest.
+// ListApplicationsRequest indicates an expected call of ListApplicationsRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) ListApplicationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).ListApplicationsRequest), arg0)
 }
 
-// ListApplicationsWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) ListApplicationsWithContext(arg0 context.Context, arg1 *kinesisanalytics.ListApplicationsInput, arg2 ...request.Option) (*kinesisanalytics.ListApplicationsOutput, error) {
+// ListApplicationsWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) ListApplicationsWithContext(arg0 aws.Context, arg1 *kinesisanalytics.ListApplicationsInput, arg2 ...request.Option) (*kinesisanalytics.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,64 +728,14 @@ func (m *MockKinesisAnalyticsAPI) ListApplicationsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListApplicationsWithContext indicates an expected call of ListApplicationsWithContext.
+// ListApplicationsWithContext indicates an expected call of ListApplicationsWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) ListApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).ListApplicationsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockKinesisAnalyticsAPI) ListTagsForResource(arg0 *kinesisanalytics.ListTagsForResourceInput) (*kinesisanalytics.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*kinesisanalytics.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockKinesisAnalyticsAPI) ListTagsForResourceRequest(arg0 *kinesisanalytics.ListTagsForResourceInput) (*request.Request, *kinesisanalytics.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*kinesisanalytics.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *kinesisanalytics.ListTagsForResourceInput, arg2 ...request.Option) (*kinesisanalytics.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*kinesisanalytics.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// StartApplication mocks base method.
+// StartApplication mocks base method
 func (m *MockKinesisAnalyticsAPI) StartApplication(arg0 *kinesisanalytics.StartApplicationInput) (*kinesisanalytics.StartApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartApplication", arg0)
@@ -795,13 +744,13 @@ func (m *MockKinesisAnalyticsAPI) StartApplication(arg0 *kinesisanalytics.StartA
 	return ret0, ret1
 }
 
-// StartApplication indicates an expected call of StartApplication.
+// StartApplication indicates an expected call of StartApplication
 func (mr *MockKinesisAnalyticsAPIMockRecorder) StartApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartApplication", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).StartApplication), arg0)
 }
 
-// StartApplicationRequest mocks base method.
+// StartApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) StartApplicationRequest(arg0 *kinesisanalytics.StartApplicationInput) (*request.Request, *kinesisanalytics.StartApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartApplicationRequest", arg0)
@@ -810,14 +759,14 @@ func (m *MockKinesisAnalyticsAPI) StartApplicationRequest(arg0 *kinesisanalytics
 	return ret0, ret1
 }
 
-// StartApplicationRequest indicates an expected call of StartApplicationRequest.
+// StartApplicationRequest indicates an expected call of StartApplicationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) StartApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).StartApplicationRequest), arg0)
 }
 
-// StartApplicationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) StartApplicationWithContext(arg0 context.Context, arg1 *kinesisanalytics.StartApplicationInput, arg2 ...request.Option) (*kinesisanalytics.StartApplicationOutput, error) {
+// StartApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) StartApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.StartApplicationInput, arg2 ...request.Option) (*kinesisanalytics.StartApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +778,14 @@ func (m *MockKinesisAnalyticsAPI) StartApplicationWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// StartApplicationWithContext indicates an expected call of StartApplicationWithContext.
+// StartApplicationWithContext indicates an expected call of StartApplicationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) StartApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartApplicationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).StartApplicationWithContext), varargs...)
 }
 
-// StopApplication mocks base method.
+// StopApplication mocks base method
 func (m *MockKinesisAnalyticsAPI) StopApplication(arg0 *kinesisanalytics.StopApplicationInput) (*kinesisanalytics.StopApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopApplication", arg0)
@@ -845,13 +794,13 @@ func (m *MockKinesisAnalyticsAPI) StopApplication(arg0 *kinesisanalytics.StopApp
 	return ret0, ret1
 }
 
-// StopApplication indicates an expected call of StopApplication.
+// StopApplication indicates an expected call of StopApplication
 func (mr *MockKinesisAnalyticsAPIMockRecorder) StopApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopApplication", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).StopApplication), arg0)
 }
 
-// StopApplicationRequest mocks base method.
+// StopApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) StopApplicationRequest(arg0 *kinesisanalytics.StopApplicationInput) (*request.Request, *kinesisanalytics.StopApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopApplicationRequest", arg0)
@@ -860,14 +809,14 @@ func (m *MockKinesisAnalyticsAPI) StopApplicationRequest(arg0 *kinesisanalytics.
 	return ret0, ret1
 }
 
-// StopApplicationRequest indicates an expected call of StopApplicationRequest.
+// StopApplicationRequest indicates an expected call of StopApplicationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) StopApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).StopApplicationRequest), arg0)
 }
 
-// StopApplicationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) StopApplicationWithContext(arg0 context.Context, arg1 *kinesisanalytics.StopApplicationInput, arg2 ...request.Option) (*kinesisanalytics.StopApplicationOutput, error) {
+// StopApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) StopApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.StopApplicationInput, arg2 ...request.Option) (*kinesisanalytics.StopApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,114 +828,14 @@ func (m *MockKinesisAnalyticsAPI) StopApplicationWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// StopApplicationWithContext indicates an expected call of StopApplicationWithContext.
+// StopApplicationWithContext indicates an expected call of StopApplicationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) StopApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopApplicationWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).StopApplicationWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockKinesisAnalyticsAPI) TagResource(arg0 *kinesisanalytics.TagResourceInput) (*kinesisanalytics.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*kinesisanalytics.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockKinesisAnalyticsAPI) TagResourceRequest(arg0 *kinesisanalytics.TagResourceInput) (*request.Request, *kinesisanalytics.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*kinesisanalytics.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) TagResourceWithContext(arg0 context.Context, arg1 *kinesisanalytics.TagResourceInput, arg2 ...request.Option) (*kinesisanalytics.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*kinesisanalytics.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockKinesisAnalyticsAPI) UntagResource(arg0 *kinesisanalytics.UntagResourceInput) (*kinesisanalytics.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*kinesisanalytics.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockKinesisAnalyticsAPI) UntagResourceRequest(arg0 *kinesisanalytics.UntagResourceInput) (*request.Request, *kinesisanalytics.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*kinesisanalytics.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) UntagResourceWithContext(arg0 context.Context, arg1 *kinesisanalytics.UntagResourceInput, arg2 ...request.Option) (*kinesisanalytics.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*kinesisanalytics.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockKinesisAnalyticsAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateApplication mocks base method.
+// UpdateApplication mocks base method
 func (m *MockKinesisAnalyticsAPI) UpdateApplication(arg0 *kinesisanalytics.UpdateApplicationInput) (*kinesisanalytics.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplication", arg0)
@@ -995,13 +844,13 @@ func (m *MockKinesisAnalyticsAPI) UpdateApplication(arg0 *kinesisanalytics.Updat
 	return ret0, ret1
 }
 
-// UpdateApplication indicates an expected call of UpdateApplication.
+// UpdateApplication indicates an expected call of UpdateApplication
 func (mr *MockKinesisAnalyticsAPIMockRecorder) UpdateApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplication", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).UpdateApplication), arg0)
 }
 
-// UpdateApplicationRequest mocks base method.
+// UpdateApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsAPI) UpdateApplicationRequest(arg0 *kinesisanalytics.UpdateApplicationInput) (*request.Request, *kinesisanalytics.UpdateApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplicationRequest", arg0)
@@ -1010,14 +859,14 @@ func (m *MockKinesisAnalyticsAPI) UpdateApplicationRequest(arg0 *kinesisanalytic
 	return ret0, ret1
 }
 
-// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest.
+// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest
 func (mr *MockKinesisAnalyticsAPIMockRecorder) UpdateApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsAPI)(nil).UpdateApplicationRequest), arg0)
 }
 
-// UpdateApplicationWithContext mocks base method.
-func (m *MockKinesisAnalyticsAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *kinesisanalytics.UpdateApplicationInput, arg2 ...request.Option) (*kinesisanalytics.UpdateApplicationOutput, error) {
+// UpdateApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsAPI) UpdateApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalytics.UpdateApplicationInput, arg2 ...request.Option) (*kinesisanalytics.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,7 +878,7 @@ func (m *MockKinesisAnalyticsAPI) UpdateApplicationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext.
+// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext
 func (mr *MockKinesisAnalyticsAPIMockRecorder) UpdateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

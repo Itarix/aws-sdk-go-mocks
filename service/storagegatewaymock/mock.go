@@ -5,38 +5,37 @@
 package storagegatewaymock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	storagegateway "github.com/aws/aws-sdk-go/service/storagegateway"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockStorageGatewayAPI is a mock of StorageGatewayAPI interface.
+// MockStorageGatewayAPI is a mock of StorageGatewayAPI interface
 type MockStorageGatewayAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockStorageGatewayAPIMockRecorder
 }
 
-// MockStorageGatewayAPIMockRecorder is the mock recorder for MockStorageGatewayAPI.
+// MockStorageGatewayAPIMockRecorder is the mock recorder for MockStorageGatewayAPI
 type MockStorageGatewayAPIMockRecorder struct {
 	mock *MockStorageGatewayAPI
 }
 
-// NewMockStorageGatewayAPI creates a new mock instance.
+// NewMockStorageGatewayAPI creates a new mock instance
 func NewMockStorageGatewayAPI(ctrl *gomock.Controller) *MockStorageGatewayAPI {
 	mock := &MockStorageGatewayAPI{ctrl: ctrl}
 	mock.recorder = &MockStorageGatewayAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockStorageGatewayAPI) EXPECT() *MockStorageGatewayAPIMockRecorder {
 	return m.recorder
 }
 
-// ActivateGateway mocks base method.
+// ActivateGateway mocks base method
 func (m *MockStorageGatewayAPI) ActivateGateway(arg0 *storagegateway.ActivateGatewayInput) (*storagegateway.ActivateGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ActivateGateway", arg0)
@@ -45,13 +44,13 @@ func (m *MockStorageGatewayAPI) ActivateGateway(arg0 *storagegateway.ActivateGat
 	return ret0, ret1
 }
 
-// ActivateGateway indicates an expected call of ActivateGateway.
+// ActivateGateway indicates an expected call of ActivateGateway
 func (mr *MockStorageGatewayAPIMockRecorder) ActivateGateway(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateGateway", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ActivateGateway), arg0)
 }
 
-// ActivateGatewayRequest mocks base method.
+// ActivateGatewayRequest mocks base method
 func (m *MockStorageGatewayAPI) ActivateGatewayRequest(arg0 *storagegateway.ActivateGatewayInput) (*request.Request, *storagegateway.ActivateGatewayOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ActivateGatewayRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockStorageGatewayAPI) ActivateGatewayRequest(arg0 *storagegateway.Acti
 	return ret0, ret1
 }
 
-// ActivateGatewayRequest indicates an expected call of ActivateGatewayRequest.
+// ActivateGatewayRequest indicates an expected call of ActivateGatewayRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ActivateGatewayRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateGatewayRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ActivateGatewayRequest), arg0)
 }
 
-// ActivateGatewayWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ActivateGatewayWithContext(arg0 context.Context, arg1 *storagegateway.ActivateGatewayInput, arg2 ...request.Option) (*storagegateway.ActivateGatewayOutput, error) {
+// ActivateGatewayWithContext mocks base method
+func (m *MockStorageGatewayAPI) ActivateGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.ActivateGatewayInput, arg2 ...request.Option) (*storagegateway.ActivateGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockStorageGatewayAPI) ActivateGatewayWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ActivateGatewayWithContext indicates an expected call of ActivateGatewayWithContext.
+// ActivateGatewayWithContext indicates an expected call of ActivateGatewayWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ActivateGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ActivateGatewayWithContext), varargs...)
 }
 
-// AddCache mocks base method.
+// AddCache mocks base method
 func (m *MockStorageGatewayAPI) AddCache(arg0 *storagegateway.AddCacheInput) (*storagegateway.AddCacheOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddCache", arg0)
@@ -95,13 +94,13 @@ func (m *MockStorageGatewayAPI) AddCache(arg0 *storagegateway.AddCacheInput) (*s
 	return ret0, ret1
 }
 
-// AddCache indicates an expected call of AddCache.
+// AddCache indicates an expected call of AddCache
 func (mr *MockStorageGatewayAPIMockRecorder) AddCache(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddCache", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddCache), arg0)
 }
 
-// AddCacheRequest mocks base method.
+// AddCacheRequest mocks base method
 func (m *MockStorageGatewayAPI) AddCacheRequest(arg0 *storagegateway.AddCacheInput) (*request.Request, *storagegateway.AddCacheOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddCacheRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockStorageGatewayAPI) AddCacheRequest(arg0 *storagegateway.AddCacheInp
 	return ret0, ret1
 }
 
-// AddCacheRequest indicates an expected call of AddCacheRequest.
+// AddCacheRequest indicates an expected call of AddCacheRequest
 func (mr *MockStorageGatewayAPIMockRecorder) AddCacheRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddCacheRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddCacheRequest), arg0)
 }
 
-// AddCacheWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AddCacheWithContext(arg0 context.Context, arg1 *storagegateway.AddCacheInput, arg2 ...request.Option) (*storagegateway.AddCacheOutput, error) {
+// AddCacheWithContext mocks base method
+func (m *MockStorageGatewayAPI) AddCacheWithContext(arg0 aws.Context, arg1 *storagegateway.AddCacheInput, arg2 ...request.Option) (*storagegateway.AddCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockStorageGatewayAPI) AddCacheWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// AddCacheWithContext indicates an expected call of AddCacheWithContext.
+// AddCacheWithContext indicates an expected call of AddCacheWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) AddCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddCacheWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddCacheWithContext), varargs...)
 }
 
-// AddTagsToResource mocks base method.
+// AddTagsToResource mocks base method
 func (m *MockStorageGatewayAPI) AddTagsToResource(arg0 *storagegateway.AddTagsToResourceInput) (*storagegateway.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsToResource", arg0)
@@ -145,13 +144,13 @@ func (m *MockStorageGatewayAPI) AddTagsToResource(arg0 *storagegateway.AddTagsTo
 	return ret0, ret1
 }
 
-// AddTagsToResource indicates an expected call of AddTagsToResource.
+// AddTagsToResource indicates an expected call of AddTagsToResource
 func (mr *MockStorageGatewayAPIMockRecorder) AddTagsToResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToResource", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddTagsToResource), arg0)
 }
 
-// AddTagsToResourceRequest mocks base method.
+// AddTagsToResourceRequest mocks base method
 func (m *MockStorageGatewayAPI) AddTagsToResourceRequest(arg0 *storagegateway.AddTagsToResourceInput) (*request.Request, *storagegateway.AddTagsToResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsToResourceRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockStorageGatewayAPI) AddTagsToResourceRequest(arg0 *storagegateway.Ad
 	return ret0, ret1
 }
 
-// AddTagsToResourceRequest indicates an expected call of AddTagsToResourceRequest.
+// AddTagsToResourceRequest indicates an expected call of AddTagsToResourceRequest
 func (mr *MockStorageGatewayAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToResourceRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddTagsToResourceRequest), arg0)
 }
 
-// AddTagsToResourceWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *storagegateway.AddTagsToResourceInput, arg2 ...request.Option) (*storagegateway.AddTagsToResourceOutput, error) {
+// AddTagsToResourceWithContext mocks base method
+func (m *MockStorageGatewayAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *storagegateway.AddTagsToResourceInput, arg2 ...request.Option) (*storagegateway.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockStorageGatewayAPI) AddTagsToResourceWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// AddTagsToResourceWithContext indicates an expected call of AddTagsToResourceWithContext.
+// AddTagsToResourceWithContext indicates an expected call of AddTagsToResourceWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) AddTagsToResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToResourceWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddTagsToResourceWithContext), varargs...)
 }
 
-// AddUploadBuffer mocks base method.
+// AddUploadBuffer mocks base method
 func (m *MockStorageGatewayAPI) AddUploadBuffer(arg0 *storagegateway.AddUploadBufferInput) (*storagegateway.AddUploadBufferOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddUploadBuffer", arg0)
@@ -195,13 +194,13 @@ func (m *MockStorageGatewayAPI) AddUploadBuffer(arg0 *storagegateway.AddUploadBu
 	return ret0, ret1
 }
 
-// AddUploadBuffer indicates an expected call of AddUploadBuffer.
+// AddUploadBuffer indicates an expected call of AddUploadBuffer
 func (mr *MockStorageGatewayAPIMockRecorder) AddUploadBuffer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddUploadBuffer", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddUploadBuffer), arg0)
 }
 
-// AddUploadBufferRequest mocks base method.
+// AddUploadBufferRequest mocks base method
 func (m *MockStorageGatewayAPI) AddUploadBufferRequest(arg0 *storagegateway.AddUploadBufferInput) (*request.Request, *storagegateway.AddUploadBufferOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddUploadBufferRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockStorageGatewayAPI) AddUploadBufferRequest(arg0 *storagegateway.AddU
 	return ret0, ret1
 }
 
-// AddUploadBufferRequest indicates an expected call of AddUploadBufferRequest.
+// AddUploadBufferRequest indicates an expected call of AddUploadBufferRequest
 func (mr *MockStorageGatewayAPIMockRecorder) AddUploadBufferRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddUploadBufferRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddUploadBufferRequest), arg0)
 }
 
-// AddUploadBufferWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AddUploadBufferWithContext(arg0 context.Context, arg1 *storagegateway.AddUploadBufferInput, arg2 ...request.Option) (*storagegateway.AddUploadBufferOutput, error) {
+// AddUploadBufferWithContext mocks base method
+func (m *MockStorageGatewayAPI) AddUploadBufferWithContext(arg0 aws.Context, arg1 *storagegateway.AddUploadBufferInput, arg2 ...request.Option) (*storagegateway.AddUploadBufferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockStorageGatewayAPI) AddUploadBufferWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// AddUploadBufferWithContext indicates an expected call of AddUploadBufferWithContext.
+// AddUploadBufferWithContext indicates an expected call of AddUploadBufferWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) AddUploadBufferWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddUploadBufferWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddUploadBufferWithContext), varargs...)
 }
 
-// AddWorkingStorage mocks base method.
+// AddWorkingStorage mocks base method
 func (m *MockStorageGatewayAPI) AddWorkingStorage(arg0 *storagegateway.AddWorkingStorageInput) (*storagegateway.AddWorkingStorageOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddWorkingStorage", arg0)
@@ -245,13 +244,13 @@ func (m *MockStorageGatewayAPI) AddWorkingStorage(arg0 *storagegateway.AddWorkin
 	return ret0, ret1
 }
 
-// AddWorkingStorage indicates an expected call of AddWorkingStorage.
+// AddWorkingStorage indicates an expected call of AddWorkingStorage
 func (mr *MockStorageGatewayAPIMockRecorder) AddWorkingStorage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkingStorage", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddWorkingStorage), arg0)
 }
 
-// AddWorkingStorageRequest mocks base method.
+// AddWorkingStorageRequest mocks base method
 func (m *MockStorageGatewayAPI) AddWorkingStorageRequest(arg0 *storagegateway.AddWorkingStorageInput) (*request.Request, *storagegateway.AddWorkingStorageOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddWorkingStorageRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockStorageGatewayAPI) AddWorkingStorageRequest(arg0 *storagegateway.Ad
 	return ret0, ret1
 }
 
-// AddWorkingStorageRequest indicates an expected call of AddWorkingStorageRequest.
+// AddWorkingStorageRequest indicates an expected call of AddWorkingStorageRequest
 func (mr *MockStorageGatewayAPIMockRecorder) AddWorkingStorageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkingStorageRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddWorkingStorageRequest), arg0)
 }
 
-// AddWorkingStorageWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AddWorkingStorageWithContext(arg0 context.Context, arg1 *storagegateway.AddWorkingStorageInput, arg2 ...request.Option) (*storagegateway.AddWorkingStorageOutput, error) {
+// AddWorkingStorageWithContext mocks base method
+func (m *MockStorageGatewayAPI) AddWorkingStorageWithContext(arg0 aws.Context, arg1 *storagegateway.AddWorkingStorageInput, arg2 ...request.Option) (*storagegateway.AddWorkingStorageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,164 +278,14 @@ func (m *MockStorageGatewayAPI) AddWorkingStorageWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// AddWorkingStorageWithContext indicates an expected call of AddWorkingStorageWithContext.
+// AddWorkingStorageWithContext indicates an expected call of AddWorkingStorageWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) AddWorkingStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkingStorageWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AddWorkingStorageWithContext), varargs...)
 }
 
-// AssignTapePool mocks base method.
-func (m *MockStorageGatewayAPI) AssignTapePool(arg0 *storagegateway.AssignTapePoolInput) (*storagegateway.AssignTapePoolOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssignTapePool", arg0)
-	ret0, _ := ret[0].(*storagegateway.AssignTapePoolOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssignTapePool indicates an expected call of AssignTapePool.
-func (mr *MockStorageGatewayAPIMockRecorder) AssignTapePool(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssignTapePool", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssignTapePool), arg0)
-}
-
-// AssignTapePoolRequest mocks base method.
-func (m *MockStorageGatewayAPI) AssignTapePoolRequest(arg0 *storagegateway.AssignTapePoolInput) (*request.Request, *storagegateway.AssignTapePoolOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssignTapePoolRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.AssignTapePoolOutput)
-	return ret0, ret1
-}
-
-// AssignTapePoolRequest indicates an expected call of AssignTapePoolRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) AssignTapePoolRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssignTapePoolRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssignTapePoolRequest), arg0)
-}
-
-// AssignTapePoolWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AssignTapePoolWithContext(arg0 context.Context, arg1 *storagegateway.AssignTapePoolInput, arg2 ...request.Option) (*storagegateway.AssignTapePoolOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssignTapePoolWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.AssignTapePoolOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssignTapePoolWithContext indicates an expected call of AssignTapePoolWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) AssignTapePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssignTapePoolWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssignTapePoolWithContext), varargs...)
-}
-
-// AssociateFileSystem mocks base method.
-func (m *MockStorageGatewayAPI) AssociateFileSystem(arg0 *storagegateway.AssociateFileSystemInput) (*storagegateway.AssociateFileSystemOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateFileSystem", arg0)
-	ret0, _ := ret[0].(*storagegateway.AssociateFileSystemOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateFileSystem indicates an expected call of AssociateFileSystem.
-func (mr *MockStorageGatewayAPIMockRecorder) AssociateFileSystem(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystem", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssociateFileSystem), arg0)
-}
-
-// AssociateFileSystemRequest mocks base method.
-func (m *MockStorageGatewayAPI) AssociateFileSystemRequest(arg0 *storagegateway.AssociateFileSystemInput) (*request.Request, *storagegateway.AssociateFileSystemOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateFileSystemRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.AssociateFileSystemOutput)
-	return ret0, ret1
-}
-
-// AssociateFileSystemRequest indicates an expected call of AssociateFileSystemRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) AssociateFileSystemRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssociateFileSystemRequest), arg0)
-}
-
-// AssociateFileSystemWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AssociateFileSystemWithContext(arg0 context.Context, arg1 *storagegateway.AssociateFileSystemInput, arg2 ...request.Option) (*storagegateway.AssociateFileSystemOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateFileSystemWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.AssociateFileSystemOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateFileSystemWithContext indicates an expected call of AssociateFileSystemWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) AssociateFileSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssociateFileSystemWithContext), varargs...)
-}
-
-// AttachVolume mocks base method.
-func (m *MockStorageGatewayAPI) AttachVolume(arg0 *storagegateway.AttachVolumeInput) (*storagegateway.AttachVolumeOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AttachVolume", arg0)
-	ret0, _ := ret[0].(*storagegateway.AttachVolumeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AttachVolume indicates an expected call of AttachVolume.
-func (mr *MockStorageGatewayAPIMockRecorder) AttachVolume(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AttachVolume), arg0)
-}
-
-// AttachVolumeRequest mocks base method.
-func (m *MockStorageGatewayAPI) AttachVolumeRequest(arg0 *storagegateway.AttachVolumeInput) (*request.Request, *storagegateway.AttachVolumeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AttachVolumeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.AttachVolumeOutput)
-	return ret0, ret1
-}
-
-// AttachVolumeRequest indicates an expected call of AttachVolumeRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) AttachVolumeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AttachVolumeRequest), arg0)
-}
-
-// AttachVolumeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) AttachVolumeWithContext(arg0 context.Context, arg1 *storagegateway.AttachVolumeInput, arg2 ...request.Option) (*storagegateway.AttachVolumeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AttachVolumeWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.AttachVolumeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AttachVolumeWithContext indicates an expected call of AttachVolumeWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) AttachVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AttachVolumeWithContext), varargs...)
-}
-
-// CancelArchival mocks base method.
+// CancelArchival mocks base method
 func (m *MockStorageGatewayAPI) CancelArchival(arg0 *storagegateway.CancelArchivalInput) (*storagegateway.CancelArchivalOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelArchival", arg0)
@@ -445,13 +294,13 @@ func (m *MockStorageGatewayAPI) CancelArchival(arg0 *storagegateway.CancelArchiv
 	return ret0, ret1
 }
 
-// CancelArchival indicates an expected call of CancelArchival.
+// CancelArchival indicates an expected call of CancelArchival
 func (mr *MockStorageGatewayAPIMockRecorder) CancelArchival(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelArchival", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CancelArchival), arg0)
 }
 
-// CancelArchivalRequest mocks base method.
+// CancelArchivalRequest mocks base method
 func (m *MockStorageGatewayAPI) CancelArchivalRequest(arg0 *storagegateway.CancelArchivalInput) (*request.Request, *storagegateway.CancelArchivalOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelArchivalRequest", arg0)
@@ -460,14 +309,14 @@ func (m *MockStorageGatewayAPI) CancelArchivalRequest(arg0 *storagegateway.Cance
 	return ret0, ret1
 }
 
-// CancelArchivalRequest indicates an expected call of CancelArchivalRequest.
+// CancelArchivalRequest indicates an expected call of CancelArchivalRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CancelArchivalRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelArchivalRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CancelArchivalRequest), arg0)
 }
 
-// CancelArchivalWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CancelArchivalWithContext(arg0 context.Context, arg1 *storagegateway.CancelArchivalInput, arg2 ...request.Option) (*storagegateway.CancelArchivalOutput, error) {
+// CancelArchivalWithContext mocks base method
+func (m *MockStorageGatewayAPI) CancelArchivalWithContext(arg0 aws.Context, arg1 *storagegateway.CancelArchivalInput, arg2 ...request.Option) (*storagegateway.CancelArchivalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +328,14 @@ func (m *MockStorageGatewayAPI) CancelArchivalWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CancelArchivalWithContext indicates an expected call of CancelArchivalWithContext.
+// CancelArchivalWithContext indicates an expected call of CancelArchivalWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CancelArchivalWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelArchivalWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CancelArchivalWithContext), varargs...)
 }
 
-// CancelRetrieval mocks base method.
+// CancelRetrieval mocks base method
 func (m *MockStorageGatewayAPI) CancelRetrieval(arg0 *storagegateway.CancelRetrievalInput) (*storagegateway.CancelRetrievalOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelRetrieval", arg0)
@@ -495,13 +344,13 @@ func (m *MockStorageGatewayAPI) CancelRetrieval(arg0 *storagegateway.CancelRetri
 	return ret0, ret1
 }
 
-// CancelRetrieval indicates an expected call of CancelRetrieval.
+// CancelRetrieval indicates an expected call of CancelRetrieval
 func (mr *MockStorageGatewayAPIMockRecorder) CancelRetrieval(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelRetrieval", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CancelRetrieval), arg0)
 }
 
-// CancelRetrievalRequest mocks base method.
+// CancelRetrievalRequest mocks base method
 func (m *MockStorageGatewayAPI) CancelRetrievalRequest(arg0 *storagegateway.CancelRetrievalInput) (*request.Request, *storagegateway.CancelRetrievalOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelRetrievalRequest", arg0)
@@ -510,14 +359,14 @@ func (m *MockStorageGatewayAPI) CancelRetrievalRequest(arg0 *storagegateway.Canc
 	return ret0, ret1
 }
 
-// CancelRetrievalRequest indicates an expected call of CancelRetrievalRequest.
+// CancelRetrievalRequest indicates an expected call of CancelRetrievalRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CancelRetrievalRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelRetrievalRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CancelRetrievalRequest), arg0)
 }
 
-// CancelRetrievalWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CancelRetrievalWithContext(arg0 context.Context, arg1 *storagegateway.CancelRetrievalInput, arg2 ...request.Option) (*storagegateway.CancelRetrievalOutput, error) {
+// CancelRetrievalWithContext mocks base method
+func (m *MockStorageGatewayAPI) CancelRetrievalWithContext(arg0 aws.Context, arg1 *storagegateway.CancelRetrievalInput, arg2 ...request.Option) (*storagegateway.CancelRetrievalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +378,14 @@ func (m *MockStorageGatewayAPI) CancelRetrievalWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CancelRetrievalWithContext indicates an expected call of CancelRetrievalWithContext.
+// CancelRetrievalWithContext indicates an expected call of CancelRetrievalWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CancelRetrievalWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelRetrievalWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CancelRetrievalWithContext), varargs...)
 }
 
-// CreateCachediSCSIVolume mocks base method.
+// CreateCachediSCSIVolume mocks base method
 func (m *MockStorageGatewayAPI) CreateCachediSCSIVolume(arg0 *storagegateway.CreateCachediSCSIVolumeInput) (*storagegateway.CreateCachediSCSIVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateCachediSCSIVolume", arg0)
@@ -545,13 +394,13 @@ func (m *MockStorageGatewayAPI) CreateCachediSCSIVolume(arg0 *storagegateway.Cre
 	return ret0, ret1
 }
 
-// CreateCachediSCSIVolume indicates an expected call of CreateCachediSCSIVolume.
+// CreateCachediSCSIVolume indicates an expected call of CreateCachediSCSIVolume
 func (mr *MockStorageGatewayAPIMockRecorder) CreateCachediSCSIVolume(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCachediSCSIVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateCachediSCSIVolume), arg0)
 }
 
-// CreateCachediSCSIVolumeRequest mocks base method.
+// CreateCachediSCSIVolumeRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeRequest(arg0 *storagegateway.CreateCachediSCSIVolumeInput) (*request.Request, *storagegateway.CreateCachediSCSIVolumeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateCachediSCSIVolumeRequest", arg0)
@@ -560,14 +409,14 @@ func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeRequest(arg0 *storagegate
 	return ret0, ret1
 }
 
-// CreateCachediSCSIVolumeRequest indicates an expected call of CreateCachediSCSIVolumeRequest.
+// CreateCachediSCSIVolumeRequest indicates an expected call of CreateCachediSCSIVolumeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateCachediSCSIVolumeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCachediSCSIVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateCachediSCSIVolumeRequest), arg0)
 }
 
-// CreateCachediSCSIVolumeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeWithContext(arg0 context.Context, arg1 *storagegateway.CreateCachediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateCachediSCSIVolumeOutput, error) {
+// CreateCachediSCSIVolumeWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.CreateCachediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateCachediSCSIVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +428,14 @@ func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CreateCachediSCSIVolumeWithContext indicates an expected call of CreateCachediSCSIVolumeWithContext.
+// CreateCachediSCSIVolumeWithContext indicates an expected call of CreateCachediSCSIVolumeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateCachediSCSIVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCachediSCSIVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateCachediSCSIVolumeWithContext), varargs...)
 }
 
-// CreateNFSFileShare mocks base method.
+// CreateNFSFileShare mocks base method
 func (m *MockStorageGatewayAPI) CreateNFSFileShare(arg0 *storagegateway.CreateNFSFileShareInput) (*storagegateway.CreateNFSFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateNFSFileShare", arg0)
@@ -595,13 +444,13 @@ func (m *MockStorageGatewayAPI) CreateNFSFileShare(arg0 *storagegateway.CreateNF
 	return ret0, ret1
 }
 
-// CreateNFSFileShare indicates an expected call of CreateNFSFileShare.
+// CreateNFSFileShare indicates an expected call of CreateNFSFileShare
 func (mr *MockStorageGatewayAPIMockRecorder) CreateNFSFileShare(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNFSFileShare", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateNFSFileShare), arg0)
 }
 
-// CreateNFSFileShareRequest mocks base method.
+// CreateNFSFileShareRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateNFSFileShareRequest(arg0 *storagegateway.CreateNFSFileShareInput) (*request.Request, *storagegateway.CreateNFSFileShareOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateNFSFileShareRequest", arg0)
@@ -610,14 +459,14 @@ func (m *MockStorageGatewayAPI) CreateNFSFileShareRequest(arg0 *storagegateway.C
 	return ret0, ret1
 }
 
-// CreateNFSFileShareRequest indicates an expected call of CreateNFSFileShareRequest.
+// CreateNFSFileShareRequest indicates an expected call of CreateNFSFileShareRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateNFSFileShareRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNFSFileShareRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateNFSFileShareRequest), arg0)
 }
 
-// CreateNFSFileShareWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateNFSFileShareWithContext(arg0 context.Context, arg1 *storagegateway.CreateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.CreateNFSFileShareOutput, error) {
+// CreateNFSFileShareWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateNFSFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.CreateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.CreateNFSFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +478,14 @@ func (m *MockStorageGatewayAPI) CreateNFSFileShareWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// CreateNFSFileShareWithContext indicates an expected call of CreateNFSFileShareWithContext.
+// CreateNFSFileShareWithContext indicates an expected call of CreateNFSFileShareWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateNFSFileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNFSFileShareWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateNFSFileShareWithContext), varargs...)
 }
 
-// CreateSMBFileShare mocks base method.
+// CreateSMBFileShare mocks base method
 func (m *MockStorageGatewayAPI) CreateSMBFileShare(arg0 *storagegateway.CreateSMBFileShareInput) (*storagegateway.CreateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSMBFileShare", arg0)
@@ -645,13 +494,13 @@ func (m *MockStorageGatewayAPI) CreateSMBFileShare(arg0 *storagegateway.CreateSM
 	return ret0, ret1
 }
 
-// CreateSMBFileShare indicates an expected call of CreateSMBFileShare.
+// CreateSMBFileShare indicates an expected call of CreateSMBFileShare
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSMBFileShare(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSMBFileShare", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSMBFileShare), arg0)
 }
 
-// CreateSMBFileShareRequest mocks base method.
+// CreateSMBFileShareRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateSMBFileShareRequest(arg0 *storagegateway.CreateSMBFileShareInput) (*request.Request, *storagegateway.CreateSMBFileShareOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSMBFileShareRequest", arg0)
@@ -660,14 +509,14 @@ func (m *MockStorageGatewayAPI) CreateSMBFileShareRequest(arg0 *storagegateway.C
 	return ret0, ret1
 }
 
-// CreateSMBFileShareRequest indicates an expected call of CreateSMBFileShareRequest.
+// CreateSMBFileShareRequest indicates an expected call of CreateSMBFileShareRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSMBFileShareRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSMBFileShareRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSMBFileShareRequest), arg0)
 }
 
-// CreateSMBFileShareWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateSMBFileShareWithContext(arg0 context.Context, arg1 *storagegateway.CreateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.CreateSMBFileShareOutput, error) {
+// CreateSMBFileShareWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateSMBFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.CreateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.CreateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +528,14 @@ func (m *MockStorageGatewayAPI) CreateSMBFileShareWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// CreateSMBFileShareWithContext indicates an expected call of CreateSMBFileShareWithContext.
+// CreateSMBFileShareWithContext indicates an expected call of CreateSMBFileShareWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSMBFileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSMBFileShareWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSMBFileShareWithContext), varargs...)
 }
 
-// CreateSnapshot mocks base method.
+// CreateSnapshot mocks base method
 func (m *MockStorageGatewayAPI) CreateSnapshot(arg0 *storagegateway.CreateSnapshotInput) (*storagegateway.CreateSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSnapshot", arg0)
@@ -695,13 +544,13 @@ func (m *MockStorageGatewayAPI) CreateSnapshot(arg0 *storagegateway.CreateSnapsh
 	return ret0, ret1
 }
 
-// CreateSnapshot indicates an expected call of CreateSnapshot.
+// CreateSnapshot indicates an expected call of CreateSnapshot
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshot(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshot", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSnapshot), arg0)
 }
 
-// CreateSnapshotFromVolumeRecoveryPoint mocks base method.
+// CreateSnapshotFromVolumeRecoveryPoint mocks base method
 func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPoint(arg0 *storagegateway.CreateSnapshotFromVolumeRecoveryPointInput) (*storagegateway.CreateSnapshotFromVolumeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSnapshotFromVolumeRecoveryPoint", arg0)
@@ -710,13 +559,13 @@ func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPoint(arg0 *stor
 	return ret0, ret1
 }
 
-// CreateSnapshotFromVolumeRecoveryPoint indicates an expected call of CreateSnapshotFromVolumeRecoveryPoint.
+// CreateSnapshotFromVolumeRecoveryPoint indicates an expected call of CreateSnapshotFromVolumeRecoveryPoint
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotFromVolumeRecoveryPoint(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotFromVolumeRecoveryPoint", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSnapshotFromVolumeRecoveryPoint), arg0)
 }
 
-// CreateSnapshotFromVolumeRecoveryPointRequest mocks base method.
+// CreateSnapshotFromVolumeRecoveryPointRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointRequest(arg0 *storagegateway.CreateSnapshotFromVolumeRecoveryPointInput) (*request.Request, *storagegateway.CreateSnapshotFromVolumeRecoveryPointOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSnapshotFromVolumeRecoveryPointRequest", arg0)
@@ -725,14 +574,14 @@ func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointRequest(arg
 	return ret0, ret1
 }
 
-// CreateSnapshotFromVolumeRecoveryPointRequest indicates an expected call of CreateSnapshotFromVolumeRecoveryPointRequest.
+// CreateSnapshotFromVolumeRecoveryPointRequest indicates an expected call of CreateSnapshotFromVolumeRecoveryPointRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotFromVolumeRecoveryPointRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotFromVolumeRecoveryPointRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSnapshotFromVolumeRecoveryPointRequest), arg0)
 }
 
-// CreateSnapshotFromVolumeRecoveryPointWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointWithContext(arg0 context.Context, arg1 *storagegateway.CreateSnapshotFromVolumeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotFromVolumeRecoveryPointOutput, error) {
+// CreateSnapshotFromVolumeRecoveryPointWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointWithContext(arg0 aws.Context, arg1 *storagegateway.CreateSnapshotFromVolumeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotFromVolumeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -744,14 +593,14 @@ func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointWithContext
 	return ret0, ret1
 }
 
-// CreateSnapshotFromVolumeRecoveryPointWithContext indicates an expected call of CreateSnapshotFromVolumeRecoveryPointWithContext.
+// CreateSnapshotFromVolumeRecoveryPointWithContext indicates an expected call of CreateSnapshotFromVolumeRecoveryPointWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotFromVolumeRecoveryPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotFromVolumeRecoveryPointWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSnapshotFromVolumeRecoveryPointWithContext), varargs...)
 }
 
-// CreateSnapshotRequest mocks base method.
+// CreateSnapshotRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateSnapshotRequest(arg0 *storagegateway.CreateSnapshotInput) (*request.Request, *storagegateway.CreateSnapshotOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSnapshotRequest", arg0)
@@ -760,14 +609,14 @@ func (m *MockStorageGatewayAPI) CreateSnapshotRequest(arg0 *storagegateway.Creat
 	return ret0, ret1
 }
 
-// CreateSnapshotRequest indicates an expected call of CreateSnapshotRequest.
+// CreateSnapshotRequest indicates an expected call of CreateSnapshotRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSnapshotRequest), arg0)
 }
 
-// CreateSnapshotWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateSnapshotWithContext(arg0 context.Context, arg1 *storagegateway.CreateSnapshotInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotOutput, error) {
+// CreateSnapshotWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateSnapshotWithContext(arg0 aws.Context, arg1 *storagegateway.CreateSnapshotInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +628,14 @@ func (m *MockStorageGatewayAPI) CreateSnapshotWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CreateSnapshotWithContext indicates an expected call of CreateSnapshotWithContext.
+// CreateSnapshotWithContext indicates an expected call of CreateSnapshotWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateSnapshotWithContext), varargs...)
 }
 
-// CreateStorediSCSIVolume mocks base method.
+// CreateStorediSCSIVolume mocks base method
 func (m *MockStorageGatewayAPI) CreateStorediSCSIVolume(arg0 *storagegateway.CreateStorediSCSIVolumeInput) (*storagegateway.CreateStorediSCSIVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStorediSCSIVolume", arg0)
@@ -795,13 +644,13 @@ func (m *MockStorageGatewayAPI) CreateStorediSCSIVolume(arg0 *storagegateway.Cre
 	return ret0, ret1
 }
 
-// CreateStorediSCSIVolume indicates an expected call of CreateStorediSCSIVolume.
+// CreateStorediSCSIVolume indicates an expected call of CreateStorediSCSIVolume
 func (mr *MockStorageGatewayAPIMockRecorder) CreateStorediSCSIVolume(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorediSCSIVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateStorediSCSIVolume), arg0)
 }
 
-// CreateStorediSCSIVolumeRequest mocks base method.
+// CreateStorediSCSIVolumeRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeRequest(arg0 *storagegateway.CreateStorediSCSIVolumeInput) (*request.Request, *storagegateway.CreateStorediSCSIVolumeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStorediSCSIVolumeRequest", arg0)
@@ -810,14 +659,14 @@ func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeRequest(arg0 *storagegate
 	return ret0, ret1
 }
 
-// CreateStorediSCSIVolumeRequest indicates an expected call of CreateStorediSCSIVolumeRequest.
+// CreateStorediSCSIVolumeRequest indicates an expected call of CreateStorediSCSIVolumeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateStorediSCSIVolumeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorediSCSIVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateStorediSCSIVolumeRequest), arg0)
 }
 
-// CreateStorediSCSIVolumeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeWithContext(arg0 context.Context, arg1 *storagegateway.CreateStorediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateStorediSCSIVolumeOutput, error) {
+// CreateStorediSCSIVolumeWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.CreateStorediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateStorediSCSIVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,64 +678,14 @@ func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CreateStorediSCSIVolumeWithContext indicates an expected call of CreateStorediSCSIVolumeWithContext.
+// CreateStorediSCSIVolumeWithContext indicates an expected call of CreateStorediSCSIVolumeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateStorediSCSIVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorediSCSIVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateStorediSCSIVolumeWithContext), varargs...)
 }
 
-// CreateTapePool mocks base method.
-func (m *MockStorageGatewayAPI) CreateTapePool(arg0 *storagegateway.CreateTapePoolInput) (*storagegateway.CreateTapePoolOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTapePool", arg0)
-	ret0, _ := ret[0].(*storagegateway.CreateTapePoolOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTapePool indicates an expected call of CreateTapePool.
-func (mr *MockStorageGatewayAPIMockRecorder) CreateTapePool(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapePool", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapePool), arg0)
-}
-
-// CreateTapePoolRequest mocks base method.
-func (m *MockStorageGatewayAPI) CreateTapePoolRequest(arg0 *storagegateway.CreateTapePoolInput) (*request.Request, *storagegateway.CreateTapePoolOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTapePoolRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.CreateTapePoolOutput)
-	return ret0, ret1
-}
-
-// CreateTapePoolRequest indicates an expected call of CreateTapePoolRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) CreateTapePoolRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapePoolRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapePoolRequest), arg0)
-}
-
-// CreateTapePoolWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateTapePoolWithContext(arg0 context.Context, arg1 *storagegateway.CreateTapePoolInput, arg2 ...request.Option) (*storagegateway.CreateTapePoolOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateTapePoolWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.CreateTapePoolOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTapePoolWithContext indicates an expected call of CreateTapePoolWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) CreateTapePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapePoolWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapePoolWithContext), varargs...)
-}
-
-// CreateTapeWithBarcode mocks base method.
+// CreateTapeWithBarcode mocks base method
 func (m *MockStorageGatewayAPI) CreateTapeWithBarcode(arg0 *storagegateway.CreateTapeWithBarcodeInput) (*storagegateway.CreateTapeWithBarcodeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateTapeWithBarcode", arg0)
@@ -895,13 +694,13 @@ func (m *MockStorageGatewayAPI) CreateTapeWithBarcode(arg0 *storagegateway.Creat
 	return ret0, ret1
 }
 
-// CreateTapeWithBarcode indicates an expected call of CreateTapeWithBarcode.
+// CreateTapeWithBarcode indicates an expected call of CreateTapeWithBarcode
 func (mr *MockStorageGatewayAPIMockRecorder) CreateTapeWithBarcode(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapeWithBarcode", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapeWithBarcode), arg0)
 }
 
-// CreateTapeWithBarcodeRequest mocks base method.
+// CreateTapeWithBarcodeRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeRequest(arg0 *storagegateway.CreateTapeWithBarcodeInput) (*request.Request, *storagegateway.CreateTapeWithBarcodeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateTapeWithBarcodeRequest", arg0)
@@ -910,14 +709,14 @@ func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeRequest(arg0 *storagegatewa
 	return ret0, ret1
 }
 
-// CreateTapeWithBarcodeRequest indicates an expected call of CreateTapeWithBarcodeRequest.
+// CreateTapeWithBarcodeRequest indicates an expected call of CreateTapeWithBarcodeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateTapeWithBarcodeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapeWithBarcodeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapeWithBarcodeRequest), arg0)
 }
 
-// CreateTapeWithBarcodeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeWithContext(arg0 context.Context, arg1 *storagegateway.CreateTapeWithBarcodeInput, arg2 ...request.Option) (*storagegateway.CreateTapeWithBarcodeOutput, error) {
+// CreateTapeWithBarcodeWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeWithContext(arg0 aws.Context, arg1 *storagegateway.CreateTapeWithBarcodeInput, arg2 ...request.Option) (*storagegateway.CreateTapeWithBarcodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +728,14 @@ func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// CreateTapeWithBarcodeWithContext indicates an expected call of CreateTapeWithBarcodeWithContext.
+// CreateTapeWithBarcodeWithContext indicates an expected call of CreateTapeWithBarcodeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateTapeWithBarcodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapeWithBarcodeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapeWithBarcodeWithContext), varargs...)
 }
 
-// CreateTapes mocks base method.
+// CreateTapes mocks base method
 func (m *MockStorageGatewayAPI) CreateTapes(arg0 *storagegateway.CreateTapesInput) (*storagegateway.CreateTapesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateTapes", arg0)
@@ -945,13 +744,13 @@ func (m *MockStorageGatewayAPI) CreateTapes(arg0 *storagegateway.CreateTapesInpu
 	return ret0, ret1
 }
 
-// CreateTapes indicates an expected call of CreateTapes.
+// CreateTapes indicates an expected call of CreateTapes
 func (mr *MockStorageGatewayAPIMockRecorder) CreateTapes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapes", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapes), arg0)
 }
 
-// CreateTapesRequest mocks base method.
+// CreateTapesRequest mocks base method
 func (m *MockStorageGatewayAPI) CreateTapesRequest(arg0 *storagegateway.CreateTapesInput) (*request.Request, *storagegateway.CreateTapesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateTapesRequest", arg0)
@@ -960,14 +759,14 @@ func (m *MockStorageGatewayAPI) CreateTapesRequest(arg0 *storagegateway.CreateTa
 	return ret0, ret1
 }
 
-// CreateTapesRequest indicates an expected call of CreateTapesRequest.
+// CreateTapesRequest indicates an expected call of CreateTapesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) CreateTapesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapesRequest), arg0)
 }
 
-// CreateTapesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) CreateTapesWithContext(arg0 context.Context, arg1 *storagegateway.CreateTapesInput, arg2 ...request.Option) (*storagegateway.CreateTapesOutput, error) {
+// CreateTapesWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateTapesWithContext(arg0 aws.Context, arg1 *storagegateway.CreateTapesInput, arg2 ...request.Option) (*storagegateway.CreateTapesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,64 +778,14 @@ func (m *MockStorageGatewayAPI) CreateTapesWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// CreateTapesWithContext indicates an expected call of CreateTapesWithContext.
+// CreateTapesWithContext indicates an expected call of CreateTapesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) CreateTapesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapesWithContext), varargs...)
 }
 
-// DeleteAutomaticTapeCreationPolicy mocks base method.
-func (m *MockStorageGatewayAPI) DeleteAutomaticTapeCreationPolicy(arg0 *storagegateway.DeleteAutomaticTapeCreationPolicyInput) (*storagegateway.DeleteAutomaticTapeCreationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteAutomaticTapeCreationPolicy", arg0)
-	ret0, _ := ret[0].(*storagegateway.DeleteAutomaticTapeCreationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteAutomaticTapeCreationPolicy indicates an expected call of DeleteAutomaticTapeCreationPolicy.
-func (mr *MockStorageGatewayAPIMockRecorder) DeleteAutomaticTapeCreationPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutomaticTapeCreationPolicy", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteAutomaticTapeCreationPolicy), arg0)
-}
-
-// DeleteAutomaticTapeCreationPolicyRequest mocks base method.
-func (m *MockStorageGatewayAPI) DeleteAutomaticTapeCreationPolicyRequest(arg0 *storagegateway.DeleteAutomaticTapeCreationPolicyInput) (*request.Request, *storagegateway.DeleteAutomaticTapeCreationPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteAutomaticTapeCreationPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DeleteAutomaticTapeCreationPolicyOutput)
-	return ret0, ret1
-}
-
-// DeleteAutomaticTapeCreationPolicyRequest indicates an expected call of DeleteAutomaticTapeCreationPolicyRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DeleteAutomaticTapeCreationPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutomaticTapeCreationPolicyRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteAutomaticTapeCreationPolicyRequest), arg0)
-}
-
-// DeleteAutomaticTapeCreationPolicyWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteAutomaticTapeCreationPolicyWithContext(arg0 context.Context, arg1 *storagegateway.DeleteAutomaticTapeCreationPolicyInput, arg2 ...request.Option) (*storagegateway.DeleteAutomaticTapeCreationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteAutomaticTapeCreationPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DeleteAutomaticTapeCreationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteAutomaticTapeCreationPolicyWithContext indicates an expected call of DeleteAutomaticTapeCreationPolicyWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DeleteAutomaticTapeCreationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutomaticTapeCreationPolicyWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteAutomaticTapeCreationPolicyWithContext), varargs...)
-}
-
-// DeleteBandwidthRateLimit mocks base method.
+// DeleteBandwidthRateLimit mocks base method
 func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimit(arg0 *storagegateway.DeleteBandwidthRateLimitInput) (*storagegateway.DeleteBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBandwidthRateLimit", arg0)
@@ -1045,13 +794,13 @@ func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimit(arg0 *storagegateway.De
 	return ret0, ret1
 }
 
-// DeleteBandwidthRateLimit indicates an expected call of DeleteBandwidthRateLimit.
+// DeleteBandwidthRateLimit indicates an expected call of DeleteBandwidthRateLimit
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteBandwidthRateLimit(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBandwidthRateLimit", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteBandwidthRateLimit), arg0)
 }
 
-// DeleteBandwidthRateLimitRequest mocks base method.
+// DeleteBandwidthRateLimitRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitRequest(arg0 *storagegateway.DeleteBandwidthRateLimitInput) (*request.Request, *storagegateway.DeleteBandwidthRateLimitOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBandwidthRateLimitRequest", arg0)
@@ -1060,14 +809,14 @@ func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitRequest(arg0 *storagegat
 	return ret0, ret1
 }
 
-// DeleteBandwidthRateLimitRequest indicates an expected call of DeleteBandwidthRateLimitRequest.
+// DeleteBandwidthRateLimitRequest indicates an expected call of DeleteBandwidthRateLimitRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteBandwidthRateLimitRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBandwidthRateLimitRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteBandwidthRateLimitRequest), arg0)
 }
 
-// DeleteBandwidthRateLimitWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.DeleteBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DeleteBandwidthRateLimitOutput, error) {
+// DeleteBandwidthRateLimitWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DeleteBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,14 +828,14 @@ func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DeleteBandwidthRateLimitWithContext indicates an expected call of DeleteBandwidthRateLimitWithContext.
+// DeleteBandwidthRateLimitWithContext indicates an expected call of DeleteBandwidthRateLimitWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteBandwidthRateLimitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBandwidthRateLimitWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteBandwidthRateLimitWithContext), varargs...)
 }
 
-// DeleteChapCredentials mocks base method.
+// DeleteChapCredentials mocks base method
 func (m *MockStorageGatewayAPI) DeleteChapCredentials(arg0 *storagegateway.DeleteChapCredentialsInput) (*storagegateway.DeleteChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteChapCredentials", arg0)
@@ -1095,13 +844,13 @@ func (m *MockStorageGatewayAPI) DeleteChapCredentials(arg0 *storagegateway.Delet
 	return ret0, ret1
 }
 
-// DeleteChapCredentials indicates an expected call of DeleteChapCredentials.
+// DeleteChapCredentials indicates an expected call of DeleteChapCredentials
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteChapCredentials(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChapCredentials", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteChapCredentials), arg0)
 }
 
-// DeleteChapCredentialsRequest mocks base method.
+// DeleteChapCredentialsRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteChapCredentialsRequest(arg0 *storagegateway.DeleteChapCredentialsInput) (*request.Request, *storagegateway.DeleteChapCredentialsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteChapCredentialsRequest", arg0)
@@ -1110,14 +859,14 @@ func (m *MockStorageGatewayAPI) DeleteChapCredentialsRequest(arg0 *storagegatewa
 	return ret0, ret1
 }
 
-// DeleteChapCredentialsRequest indicates an expected call of DeleteChapCredentialsRequest.
+// DeleteChapCredentialsRequest indicates an expected call of DeleteChapCredentialsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteChapCredentialsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChapCredentialsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteChapCredentialsRequest), arg0)
 }
 
-// DeleteChapCredentialsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteChapCredentialsWithContext(arg0 context.Context, arg1 *storagegateway.DeleteChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DeleteChapCredentialsOutput, error) {
+// DeleteChapCredentialsWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteChapCredentialsWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DeleteChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1129,14 +878,14 @@ func (m *MockStorageGatewayAPI) DeleteChapCredentialsWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DeleteChapCredentialsWithContext indicates an expected call of DeleteChapCredentialsWithContext.
+// DeleteChapCredentialsWithContext indicates an expected call of DeleteChapCredentialsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteChapCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChapCredentialsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteChapCredentialsWithContext), varargs...)
 }
 
-// DeleteFileShare mocks base method.
+// DeleteFileShare mocks base method
 func (m *MockStorageGatewayAPI) DeleteFileShare(arg0 *storagegateway.DeleteFileShareInput) (*storagegateway.DeleteFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFileShare", arg0)
@@ -1145,13 +894,13 @@ func (m *MockStorageGatewayAPI) DeleteFileShare(arg0 *storagegateway.DeleteFileS
 	return ret0, ret1
 }
 
-// DeleteFileShare indicates an expected call of DeleteFileShare.
+// DeleteFileShare indicates an expected call of DeleteFileShare
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteFileShare(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileShare", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteFileShare), arg0)
 }
 
-// DeleteFileShareRequest mocks base method.
+// DeleteFileShareRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteFileShareRequest(arg0 *storagegateway.DeleteFileShareInput) (*request.Request, *storagegateway.DeleteFileShareOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFileShareRequest", arg0)
@@ -1160,14 +909,14 @@ func (m *MockStorageGatewayAPI) DeleteFileShareRequest(arg0 *storagegateway.Dele
 	return ret0, ret1
 }
 
-// DeleteFileShareRequest indicates an expected call of DeleteFileShareRequest.
+// DeleteFileShareRequest indicates an expected call of DeleteFileShareRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteFileShareRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileShareRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteFileShareRequest), arg0)
 }
 
-// DeleteFileShareWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteFileShareWithContext(arg0 context.Context, arg1 *storagegateway.DeleteFileShareInput, arg2 ...request.Option) (*storagegateway.DeleteFileShareOutput, error) {
+// DeleteFileShareWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteFileShareInput, arg2 ...request.Option) (*storagegateway.DeleteFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1179,14 +928,14 @@ func (m *MockStorageGatewayAPI) DeleteFileShareWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteFileShareWithContext indicates an expected call of DeleteFileShareWithContext.
+// DeleteFileShareWithContext indicates an expected call of DeleteFileShareWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteFileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileShareWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteFileShareWithContext), varargs...)
 }
 
-// DeleteGateway mocks base method.
+// DeleteGateway mocks base method
 func (m *MockStorageGatewayAPI) DeleteGateway(arg0 *storagegateway.DeleteGatewayInput) (*storagegateway.DeleteGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGateway", arg0)
@@ -1195,13 +944,13 @@ func (m *MockStorageGatewayAPI) DeleteGateway(arg0 *storagegateway.DeleteGateway
 	return ret0, ret1
 }
 
-// DeleteGateway indicates an expected call of DeleteGateway.
+// DeleteGateway indicates an expected call of DeleteGateway
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteGateway(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGateway", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteGateway), arg0)
 }
 
-// DeleteGatewayRequest mocks base method.
+// DeleteGatewayRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteGatewayRequest(arg0 *storagegateway.DeleteGatewayInput) (*request.Request, *storagegateway.DeleteGatewayOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGatewayRequest", arg0)
@@ -1210,14 +959,14 @@ func (m *MockStorageGatewayAPI) DeleteGatewayRequest(arg0 *storagegateway.Delete
 	return ret0, ret1
 }
 
-// DeleteGatewayRequest indicates an expected call of DeleteGatewayRequest.
+// DeleteGatewayRequest indicates an expected call of DeleteGatewayRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteGatewayRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteGatewayRequest), arg0)
 }
 
-// DeleteGatewayWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteGatewayWithContext(arg0 context.Context, arg1 *storagegateway.DeleteGatewayInput, arg2 ...request.Option) (*storagegateway.DeleteGatewayOutput, error) {
+// DeleteGatewayWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteGatewayInput, arg2 ...request.Option) (*storagegateway.DeleteGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1229,14 +978,14 @@ func (m *MockStorageGatewayAPI) DeleteGatewayWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DeleteGatewayWithContext indicates an expected call of DeleteGatewayWithContext.
+// DeleteGatewayWithContext indicates an expected call of DeleteGatewayWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteGatewayWithContext), varargs...)
 }
 
-// DeleteSnapshotSchedule mocks base method.
+// DeleteSnapshotSchedule mocks base method
 func (m *MockStorageGatewayAPI) DeleteSnapshotSchedule(arg0 *storagegateway.DeleteSnapshotScheduleInput) (*storagegateway.DeleteSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSnapshotSchedule", arg0)
@@ -1245,13 +994,13 @@ func (m *MockStorageGatewayAPI) DeleteSnapshotSchedule(arg0 *storagegateway.Dele
 	return ret0, ret1
 }
 
-// DeleteSnapshotSchedule indicates an expected call of DeleteSnapshotSchedule.
+// DeleteSnapshotSchedule indicates an expected call of DeleteSnapshotSchedule
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteSnapshotSchedule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteSnapshotSchedule), arg0)
 }
 
-// DeleteSnapshotScheduleRequest mocks base method.
+// DeleteSnapshotScheduleRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleRequest(arg0 *storagegateway.DeleteSnapshotScheduleInput) (*request.Request, *storagegateway.DeleteSnapshotScheduleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSnapshotScheduleRequest", arg0)
@@ -1260,14 +1009,14 @@ func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleRequest(arg0 *storagegatew
 	return ret0, ret1
 }
 
-// DeleteSnapshotScheduleRequest indicates an expected call of DeleteSnapshotScheduleRequest.
+// DeleteSnapshotScheduleRequest indicates an expected call of DeleteSnapshotScheduleRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteSnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteSnapshotScheduleRequest), arg0)
 }
 
-// DeleteSnapshotScheduleWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleWithContext(arg0 context.Context, arg1 *storagegateway.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DeleteSnapshotScheduleOutput, error) {
+// DeleteSnapshotScheduleWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DeleteSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +1028,14 @@ func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DeleteSnapshotScheduleWithContext indicates an expected call of DeleteSnapshotScheduleWithContext.
+// DeleteSnapshotScheduleWithContext indicates an expected call of DeleteSnapshotScheduleWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteSnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteSnapshotScheduleWithContext), varargs...)
 }
 
-// DeleteTape mocks base method.
+// DeleteTape mocks base method
 func (m *MockStorageGatewayAPI) DeleteTape(arg0 *storagegateway.DeleteTapeInput) (*storagegateway.DeleteTapeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTape", arg0)
@@ -1295,13 +1044,13 @@ func (m *MockStorageGatewayAPI) DeleteTape(arg0 *storagegateway.DeleteTapeInput)
 	return ret0, ret1
 }
 
-// DeleteTape indicates an expected call of DeleteTape.
+// DeleteTape indicates an expected call of DeleteTape
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteTape(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTape", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTape), arg0)
 }
 
-// DeleteTapeArchive mocks base method.
+// DeleteTapeArchive mocks base method
 func (m *MockStorageGatewayAPI) DeleteTapeArchive(arg0 *storagegateway.DeleteTapeArchiveInput) (*storagegateway.DeleteTapeArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTapeArchive", arg0)
@@ -1310,13 +1059,13 @@ func (m *MockStorageGatewayAPI) DeleteTapeArchive(arg0 *storagegateway.DeleteTap
 	return ret0, ret1
 }
 
-// DeleteTapeArchive indicates an expected call of DeleteTapeArchive.
+// DeleteTapeArchive indicates an expected call of DeleteTapeArchive
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeArchive(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapeArchive", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapeArchive), arg0)
 }
 
-// DeleteTapeArchiveRequest mocks base method.
+// DeleteTapeArchiveRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteTapeArchiveRequest(arg0 *storagegateway.DeleteTapeArchiveInput) (*request.Request, *storagegateway.DeleteTapeArchiveOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTapeArchiveRequest", arg0)
@@ -1325,14 +1074,14 @@ func (m *MockStorageGatewayAPI) DeleteTapeArchiveRequest(arg0 *storagegateway.De
 	return ret0, ret1
 }
 
-// DeleteTapeArchiveRequest indicates an expected call of DeleteTapeArchiveRequest.
+// DeleteTapeArchiveRequest indicates an expected call of DeleteTapeArchiveRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeArchiveRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapeArchiveRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapeArchiveRequest), arg0)
 }
 
-// DeleteTapeArchiveWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteTapeArchiveWithContext(arg0 context.Context, arg1 *storagegateway.DeleteTapeArchiveInput, arg2 ...request.Option) (*storagegateway.DeleteTapeArchiveOutput, error) {
+// DeleteTapeArchiveWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteTapeArchiveWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteTapeArchiveInput, arg2 ...request.Option) (*storagegateway.DeleteTapeArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1344,64 +1093,14 @@ func (m *MockStorageGatewayAPI) DeleteTapeArchiveWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteTapeArchiveWithContext indicates an expected call of DeleteTapeArchiveWithContext.
+// DeleteTapeArchiveWithContext indicates an expected call of DeleteTapeArchiveWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapeArchiveWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapeArchiveWithContext), varargs...)
 }
 
-// DeleteTapePool mocks base method.
-func (m *MockStorageGatewayAPI) DeleteTapePool(arg0 *storagegateway.DeleteTapePoolInput) (*storagegateway.DeleteTapePoolOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteTapePool", arg0)
-	ret0, _ := ret[0].(*storagegateway.DeleteTapePoolOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteTapePool indicates an expected call of DeleteTapePool.
-func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapePool(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapePool", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapePool), arg0)
-}
-
-// DeleteTapePoolRequest mocks base method.
-func (m *MockStorageGatewayAPI) DeleteTapePoolRequest(arg0 *storagegateway.DeleteTapePoolInput) (*request.Request, *storagegateway.DeleteTapePoolOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteTapePoolRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DeleteTapePoolOutput)
-	return ret0, ret1
-}
-
-// DeleteTapePoolRequest indicates an expected call of DeleteTapePoolRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapePoolRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapePoolRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapePoolRequest), arg0)
-}
-
-// DeleteTapePoolWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteTapePoolWithContext(arg0 context.Context, arg1 *storagegateway.DeleteTapePoolInput, arg2 ...request.Option) (*storagegateway.DeleteTapePoolOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteTapePoolWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DeleteTapePoolOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteTapePoolWithContext indicates an expected call of DeleteTapePoolWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapePoolWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapePoolWithContext), varargs...)
-}
-
-// DeleteTapeRequest mocks base method.
+// DeleteTapeRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteTapeRequest(arg0 *storagegateway.DeleteTapeInput) (*request.Request, *storagegateway.DeleteTapeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTapeRequest", arg0)
@@ -1410,14 +1109,14 @@ func (m *MockStorageGatewayAPI) DeleteTapeRequest(arg0 *storagegateway.DeleteTap
 	return ret0, ret1
 }
 
-// DeleteTapeRequest indicates an expected call of DeleteTapeRequest.
+// DeleteTapeRequest indicates an expected call of DeleteTapeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapeRequest), arg0)
 }
 
-// DeleteTapeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteTapeWithContext(arg0 context.Context, arg1 *storagegateway.DeleteTapeInput, arg2 ...request.Option) (*storagegateway.DeleteTapeOutput, error) {
+// DeleteTapeWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteTapeWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteTapeInput, arg2 ...request.Option) (*storagegateway.DeleteTapeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,14 +1128,14 @@ func (m *MockStorageGatewayAPI) DeleteTapeWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeleteTapeWithContext indicates an expected call of DeleteTapeWithContext.
+// DeleteTapeWithContext indicates an expected call of DeleteTapeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapeWithContext), varargs...)
 }
 
-// DeleteVolume mocks base method.
+// DeleteVolume mocks base method
 func (m *MockStorageGatewayAPI) DeleteVolume(arg0 *storagegateway.DeleteVolumeInput) (*storagegateway.DeleteVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVolume", arg0)
@@ -1445,13 +1144,13 @@ func (m *MockStorageGatewayAPI) DeleteVolume(arg0 *storagegateway.DeleteVolumeIn
 	return ret0, ret1
 }
 
-// DeleteVolume indicates an expected call of DeleteVolume.
+// DeleteVolume indicates an expected call of DeleteVolume
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteVolume(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteVolume), arg0)
 }
 
-// DeleteVolumeRequest mocks base method.
+// DeleteVolumeRequest mocks base method
 func (m *MockStorageGatewayAPI) DeleteVolumeRequest(arg0 *storagegateway.DeleteVolumeInput) (*request.Request, *storagegateway.DeleteVolumeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVolumeRequest", arg0)
@@ -1460,14 +1159,14 @@ func (m *MockStorageGatewayAPI) DeleteVolumeRequest(arg0 *storagegateway.DeleteV
 	return ret0, ret1
 }
 
-// DeleteVolumeRequest indicates an expected call of DeleteVolumeRequest.
+// DeleteVolumeRequest indicates an expected call of DeleteVolumeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteVolumeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteVolumeRequest), arg0)
 }
 
-// DeleteVolumeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DeleteVolumeWithContext(arg0 context.Context, arg1 *storagegateway.DeleteVolumeInput, arg2 ...request.Option) (*storagegateway.DeleteVolumeOutput, error) {
+// DeleteVolumeWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteVolumeInput, arg2 ...request.Option) (*storagegateway.DeleteVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1479,64 +1178,14 @@ func (m *MockStorageGatewayAPI) DeleteVolumeWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteVolumeWithContext indicates an expected call of DeleteVolumeWithContext.
+// DeleteVolumeWithContext indicates an expected call of DeleteVolumeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DeleteVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteVolumeWithContext), varargs...)
 }
 
-// DescribeAvailabilityMonitorTest mocks base method.
-func (m *MockStorageGatewayAPI) DescribeAvailabilityMonitorTest(arg0 *storagegateway.DescribeAvailabilityMonitorTestInput) (*storagegateway.DescribeAvailabilityMonitorTestOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeAvailabilityMonitorTest", arg0)
-	ret0, _ := ret[0].(*storagegateway.DescribeAvailabilityMonitorTestOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeAvailabilityMonitorTest indicates an expected call of DescribeAvailabilityMonitorTest.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeAvailabilityMonitorTest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityMonitorTest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeAvailabilityMonitorTest), arg0)
-}
-
-// DescribeAvailabilityMonitorTestRequest mocks base method.
-func (m *MockStorageGatewayAPI) DescribeAvailabilityMonitorTestRequest(arg0 *storagegateway.DescribeAvailabilityMonitorTestInput) (*request.Request, *storagegateway.DescribeAvailabilityMonitorTestOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeAvailabilityMonitorTestRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DescribeAvailabilityMonitorTestOutput)
-	return ret0, ret1
-}
-
-// DescribeAvailabilityMonitorTestRequest indicates an expected call of DescribeAvailabilityMonitorTestRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeAvailabilityMonitorTestRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityMonitorTestRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeAvailabilityMonitorTestRequest), arg0)
-}
-
-// DescribeAvailabilityMonitorTestWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeAvailabilityMonitorTestWithContext(arg0 context.Context, arg1 *storagegateway.DescribeAvailabilityMonitorTestInput, arg2 ...request.Option) (*storagegateway.DescribeAvailabilityMonitorTestOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeAvailabilityMonitorTestWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DescribeAvailabilityMonitorTestOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeAvailabilityMonitorTestWithContext indicates an expected call of DescribeAvailabilityMonitorTestWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeAvailabilityMonitorTestWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityMonitorTestWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeAvailabilityMonitorTestWithContext), varargs...)
-}
-
-// DescribeBandwidthRateLimit mocks base method.
+// DescribeBandwidthRateLimit mocks base method
 func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimit(arg0 *storagegateway.DescribeBandwidthRateLimitInput) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimit", arg0)
@@ -1545,13 +1194,13 @@ func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimit(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// DescribeBandwidthRateLimit indicates an expected call of DescribeBandwidthRateLimit.
+// DescribeBandwidthRateLimit indicates an expected call of DescribeBandwidthRateLimit
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimit(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimit", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimit), arg0)
 }
 
-// DescribeBandwidthRateLimitRequest mocks base method.
+// DescribeBandwidthRateLimitRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitRequest(arg0 *storagegateway.DescribeBandwidthRateLimitInput) (*request.Request, *storagegateway.DescribeBandwidthRateLimitOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitRequest", arg0)
@@ -1560,64 +1209,14 @@ func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitRequest(arg0 *storageg
 	return ret0, ret1
 }
 
-// DescribeBandwidthRateLimitRequest indicates an expected call of DescribeBandwidthRateLimitRequest.
+// DescribeBandwidthRateLimitRequest indicates an expected call of DescribeBandwidthRateLimitRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitRequest), arg0)
 }
 
-// DescribeBandwidthRateLimitSchedule mocks base method.
-func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitSchedule(arg0 *storagegateway.DescribeBandwidthRateLimitScheduleInput) (*storagegateway.DescribeBandwidthRateLimitScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitSchedule", arg0)
-	ret0, _ := ret[0].(*storagegateway.DescribeBandwidthRateLimitScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeBandwidthRateLimitSchedule indicates an expected call of DescribeBandwidthRateLimitSchedule.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitSchedule(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitSchedule), arg0)
-}
-
-// DescribeBandwidthRateLimitScheduleRequest mocks base method.
-func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitScheduleRequest(arg0 *storagegateway.DescribeBandwidthRateLimitScheduleInput) (*request.Request, *storagegateway.DescribeBandwidthRateLimitScheduleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitScheduleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DescribeBandwidthRateLimitScheduleOutput)
-	return ret0, ret1
-}
-
-// DescribeBandwidthRateLimitScheduleRequest indicates an expected call of DescribeBandwidthRateLimitScheduleRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitScheduleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitScheduleRequest), arg0)
-}
-
-// DescribeBandwidthRateLimitScheduleWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitScheduleWithContext(arg0 context.Context, arg1 *storagegateway.DescribeBandwidthRateLimitScheduleInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitScheduleWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DescribeBandwidthRateLimitScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeBandwidthRateLimitScheduleWithContext indicates an expected call of DescribeBandwidthRateLimitScheduleWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitScheduleWithContext), varargs...)
-}
-
-// DescribeBandwidthRateLimitWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.DescribeBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
+// DescribeBandwidthRateLimitWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1629,14 +1228,14 @@ func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DescribeBandwidthRateLimitWithContext indicates an expected call of DescribeBandwidthRateLimitWithContext.
+// DescribeBandwidthRateLimitWithContext indicates an expected call of DescribeBandwidthRateLimitWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitWithContext), varargs...)
 }
 
-// DescribeCache mocks base method.
+// DescribeCache mocks base method
 func (m *MockStorageGatewayAPI) DescribeCache(arg0 *storagegateway.DescribeCacheInput) (*storagegateway.DescribeCacheOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeCache", arg0)
@@ -1645,13 +1244,13 @@ func (m *MockStorageGatewayAPI) DescribeCache(arg0 *storagegateway.DescribeCache
 	return ret0, ret1
 }
 
-// DescribeCache indicates an expected call of DescribeCache.
+// DescribeCache indicates an expected call of DescribeCache
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeCache(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCache", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeCache), arg0)
 }
 
-// DescribeCacheRequest mocks base method.
+// DescribeCacheRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeCacheRequest(arg0 *storagegateway.DescribeCacheInput) (*request.Request, *storagegateway.DescribeCacheOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeCacheRequest", arg0)
@@ -1660,14 +1259,14 @@ func (m *MockStorageGatewayAPI) DescribeCacheRequest(arg0 *storagegateway.Descri
 	return ret0, ret1
 }
 
-// DescribeCacheRequest indicates an expected call of DescribeCacheRequest.
+// DescribeCacheRequest indicates an expected call of DescribeCacheRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeCacheRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCacheRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeCacheRequest), arg0)
 }
 
-// DescribeCacheWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeCacheWithContext(arg0 context.Context, arg1 *storagegateway.DescribeCacheInput, arg2 ...request.Option) (*storagegateway.DescribeCacheOutput, error) {
+// DescribeCacheWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeCacheWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeCacheInput, arg2 ...request.Option) (*storagegateway.DescribeCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1679,14 +1278,14 @@ func (m *MockStorageGatewayAPI) DescribeCacheWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DescribeCacheWithContext indicates an expected call of DescribeCacheWithContext.
+// DescribeCacheWithContext indicates an expected call of DescribeCacheWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCacheWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeCacheWithContext), varargs...)
 }
 
-// DescribeCachediSCSIVolumes mocks base method.
+// DescribeCachediSCSIVolumes mocks base method
 func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumes(arg0 *storagegateway.DescribeCachediSCSIVolumesInput) (*storagegateway.DescribeCachediSCSIVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeCachediSCSIVolumes", arg0)
@@ -1695,13 +1294,13 @@ func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumes(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// DescribeCachediSCSIVolumes indicates an expected call of DescribeCachediSCSIVolumes.
+// DescribeCachediSCSIVolumes indicates an expected call of DescribeCachediSCSIVolumes
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeCachediSCSIVolumes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCachediSCSIVolumes", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeCachediSCSIVolumes), arg0)
 }
 
-// DescribeCachediSCSIVolumesRequest mocks base method.
+// DescribeCachediSCSIVolumesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesRequest(arg0 *storagegateway.DescribeCachediSCSIVolumesInput) (*request.Request, *storagegateway.DescribeCachediSCSIVolumesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeCachediSCSIVolumesRequest", arg0)
@@ -1710,14 +1309,14 @@ func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesRequest(arg0 *storageg
 	return ret0, ret1
 }
 
-// DescribeCachediSCSIVolumesRequest indicates an expected call of DescribeCachediSCSIVolumesRequest.
+// DescribeCachediSCSIVolumesRequest indicates an expected call of DescribeCachediSCSIVolumesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeCachediSCSIVolumesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCachediSCSIVolumesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeCachediSCSIVolumesRequest), arg0)
 }
 
-// DescribeCachediSCSIVolumesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeCachediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeCachediSCSIVolumesOutput, error) {
+// DescribeCachediSCSIVolumesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeCachediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeCachediSCSIVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1729,14 +1328,14 @@ func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DescribeCachediSCSIVolumesWithContext indicates an expected call of DescribeCachediSCSIVolumesWithContext.
+// DescribeCachediSCSIVolumesWithContext indicates an expected call of DescribeCachediSCSIVolumesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeCachediSCSIVolumesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCachediSCSIVolumesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeCachediSCSIVolumesWithContext), varargs...)
 }
 
-// DescribeChapCredentials mocks base method.
+// DescribeChapCredentials mocks base method
 func (m *MockStorageGatewayAPI) DescribeChapCredentials(arg0 *storagegateway.DescribeChapCredentialsInput) (*storagegateway.DescribeChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeChapCredentials", arg0)
@@ -1745,13 +1344,13 @@ func (m *MockStorageGatewayAPI) DescribeChapCredentials(arg0 *storagegateway.Des
 	return ret0, ret1
 }
 
-// DescribeChapCredentials indicates an expected call of DescribeChapCredentials.
+// DescribeChapCredentials indicates an expected call of DescribeChapCredentials
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeChapCredentials(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChapCredentials", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeChapCredentials), arg0)
 }
 
-// DescribeChapCredentialsRequest mocks base method.
+// DescribeChapCredentialsRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeChapCredentialsRequest(arg0 *storagegateway.DescribeChapCredentialsInput) (*request.Request, *storagegateway.DescribeChapCredentialsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeChapCredentialsRequest", arg0)
@@ -1760,14 +1359,14 @@ func (m *MockStorageGatewayAPI) DescribeChapCredentialsRequest(arg0 *storagegate
 	return ret0, ret1
 }
 
-// DescribeChapCredentialsRequest indicates an expected call of DescribeChapCredentialsRequest.
+// DescribeChapCredentialsRequest indicates an expected call of DescribeChapCredentialsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeChapCredentialsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChapCredentialsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeChapCredentialsRequest), arg0)
 }
 
-// DescribeChapCredentialsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeChapCredentialsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DescribeChapCredentialsOutput, error) {
+// DescribeChapCredentialsWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeChapCredentialsWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DescribeChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1779,64 +1378,14 @@ func (m *MockStorageGatewayAPI) DescribeChapCredentialsWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// DescribeChapCredentialsWithContext indicates an expected call of DescribeChapCredentialsWithContext.
+// DescribeChapCredentialsWithContext indicates an expected call of DescribeChapCredentialsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeChapCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChapCredentialsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeChapCredentialsWithContext), varargs...)
 }
 
-// DescribeFileSystemAssociations mocks base method.
-func (m *MockStorageGatewayAPI) DescribeFileSystemAssociations(arg0 *storagegateway.DescribeFileSystemAssociationsInput) (*storagegateway.DescribeFileSystemAssociationsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeFileSystemAssociations", arg0)
-	ret0, _ := ret[0].(*storagegateway.DescribeFileSystemAssociationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeFileSystemAssociations indicates an expected call of DescribeFileSystemAssociations.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeFileSystemAssociations(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAssociations", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeFileSystemAssociations), arg0)
-}
-
-// DescribeFileSystemAssociationsRequest mocks base method.
-func (m *MockStorageGatewayAPI) DescribeFileSystemAssociationsRequest(arg0 *storagegateway.DescribeFileSystemAssociationsInput) (*request.Request, *storagegateway.DescribeFileSystemAssociationsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeFileSystemAssociationsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DescribeFileSystemAssociationsOutput)
-	return ret0, ret1
-}
-
-// DescribeFileSystemAssociationsRequest indicates an expected call of DescribeFileSystemAssociationsRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeFileSystemAssociationsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAssociationsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeFileSystemAssociationsRequest), arg0)
-}
-
-// DescribeFileSystemAssociationsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeFileSystemAssociationsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeFileSystemAssociationsInput, arg2 ...request.Option) (*storagegateway.DescribeFileSystemAssociationsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeFileSystemAssociationsWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DescribeFileSystemAssociationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeFileSystemAssociationsWithContext indicates an expected call of DescribeFileSystemAssociationsWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DescribeFileSystemAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAssociationsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeFileSystemAssociationsWithContext), varargs...)
-}
-
-// DescribeGatewayInformation mocks base method.
+// DescribeGatewayInformation mocks base method
 func (m *MockStorageGatewayAPI) DescribeGatewayInformation(arg0 *storagegateway.DescribeGatewayInformationInput) (*storagegateway.DescribeGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeGatewayInformation", arg0)
@@ -1845,13 +1394,13 @@ func (m *MockStorageGatewayAPI) DescribeGatewayInformation(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// DescribeGatewayInformation indicates an expected call of DescribeGatewayInformation.
+// DescribeGatewayInformation indicates an expected call of DescribeGatewayInformation
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeGatewayInformation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayInformation", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeGatewayInformation), arg0)
 }
 
-// DescribeGatewayInformationRequest mocks base method.
+// DescribeGatewayInformationRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeGatewayInformationRequest(arg0 *storagegateway.DescribeGatewayInformationInput) (*request.Request, *storagegateway.DescribeGatewayInformationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeGatewayInformationRequest", arg0)
@@ -1860,14 +1409,14 @@ func (m *MockStorageGatewayAPI) DescribeGatewayInformationRequest(arg0 *storageg
 	return ret0, ret1
 }
 
-// DescribeGatewayInformationRequest indicates an expected call of DescribeGatewayInformationRequest.
+// DescribeGatewayInformationRequest indicates an expected call of DescribeGatewayInformationRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeGatewayInformationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayInformationRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeGatewayInformationRequest), arg0)
 }
 
-// DescribeGatewayInformationWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeGatewayInformationWithContext(arg0 context.Context, arg1 *storagegateway.DescribeGatewayInformationInput, arg2 ...request.Option) (*storagegateway.DescribeGatewayInformationOutput, error) {
+// DescribeGatewayInformationWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeGatewayInformationWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeGatewayInformationInput, arg2 ...request.Option) (*storagegateway.DescribeGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1879,14 +1428,14 @@ func (m *MockStorageGatewayAPI) DescribeGatewayInformationWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DescribeGatewayInformationWithContext indicates an expected call of DescribeGatewayInformationWithContext.
+// DescribeGatewayInformationWithContext indicates an expected call of DescribeGatewayInformationWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeGatewayInformationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayInformationWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeGatewayInformationWithContext), varargs...)
 }
 
-// DescribeMaintenanceStartTime mocks base method.
+// DescribeMaintenanceStartTime mocks base method
 func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTime(arg0 *storagegateway.DescribeMaintenanceStartTimeInput) (*storagegateway.DescribeMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMaintenanceStartTime", arg0)
@@ -1895,13 +1444,13 @@ func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTime(arg0 *storagegatewa
 	return ret0, ret1
 }
 
-// DescribeMaintenanceStartTime indicates an expected call of DescribeMaintenanceStartTime.
+// DescribeMaintenanceStartTime indicates an expected call of DescribeMaintenanceStartTime
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeMaintenanceStartTime(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceStartTime", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeMaintenanceStartTime), arg0)
 }
 
-// DescribeMaintenanceStartTimeRequest mocks base method.
+// DescribeMaintenanceStartTimeRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeRequest(arg0 *storagegateway.DescribeMaintenanceStartTimeInput) (*request.Request, *storagegateway.DescribeMaintenanceStartTimeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMaintenanceStartTimeRequest", arg0)
@@ -1910,14 +1459,14 @@ func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeRequest(arg0 *storag
 	return ret0, ret1
 }
 
-// DescribeMaintenanceStartTimeRequest indicates an expected call of DescribeMaintenanceStartTimeRequest.
+// DescribeMaintenanceStartTimeRequest indicates an expected call of DescribeMaintenanceStartTimeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeMaintenanceStartTimeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceStartTimeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeMaintenanceStartTimeRequest), arg0)
 }
 
-// DescribeMaintenanceStartTimeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeWithContext(arg0 context.Context, arg1 *storagegateway.DescribeMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.DescribeMaintenanceStartTimeOutput, error) {
+// DescribeMaintenanceStartTimeWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.DescribeMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1929,14 +1478,14 @@ func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeWithContext(arg0 con
 	return ret0, ret1
 }
 
-// DescribeMaintenanceStartTimeWithContext indicates an expected call of DescribeMaintenanceStartTimeWithContext.
+// DescribeMaintenanceStartTimeWithContext indicates an expected call of DescribeMaintenanceStartTimeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeMaintenanceStartTimeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceStartTimeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeMaintenanceStartTimeWithContext), varargs...)
 }
 
-// DescribeNFSFileShares mocks base method.
+// DescribeNFSFileShares mocks base method
 func (m *MockStorageGatewayAPI) DescribeNFSFileShares(arg0 *storagegateway.DescribeNFSFileSharesInput) (*storagegateway.DescribeNFSFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeNFSFileShares", arg0)
@@ -1945,13 +1494,13 @@ func (m *MockStorageGatewayAPI) DescribeNFSFileShares(arg0 *storagegateway.Descr
 	return ret0, ret1
 }
 
-// DescribeNFSFileShares indicates an expected call of DescribeNFSFileShares.
+// DescribeNFSFileShares indicates an expected call of DescribeNFSFileShares
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeNFSFileShares(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNFSFileShares", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeNFSFileShares), arg0)
 }
 
-// DescribeNFSFileSharesRequest mocks base method.
+// DescribeNFSFileSharesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeNFSFileSharesRequest(arg0 *storagegateway.DescribeNFSFileSharesInput) (*request.Request, *storagegateway.DescribeNFSFileSharesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeNFSFileSharesRequest", arg0)
@@ -1960,14 +1509,14 @@ func (m *MockStorageGatewayAPI) DescribeNFSFileSharesRequest(arg0 *storagegatewa
 	return ret0, ret1
 }
 
-// DescribeNFSFileSharesRequest indicates an expected call of DescribeNFSFileSharesRequest.
+// DescribeNFSFileSharesRequest indicates an expected call of DescribeNFSFileSharesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeNFSFileSharesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNFSFileSharesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeNFSFileSharesRequest), arg0)
 }
 
-// DescribeNFSFileSharesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeNFSFileSharesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeNFSFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeNFSFileSharesOutput, error) {
+// DescribeNFSFileSharesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeNFSFileSharesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeNFSFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeNFSFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1979,14 +1528,14 @@ func (m *MockStorageGatewayAPI) DescribeNFSFileSharesWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DescribeNFSFileSharesWithContext indicates an expected call of DescribeNFSFileSharesWithContext.
+// DescribeNFSFileSharesWithContext indicates an expected call of DescribeNFSFileSharesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeNFSFileSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNFSFileSharesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeNFSFileSharesWithContext), varargs...)
 }
 
-// DescribeSMBFileShares mocks base method.
+// DescribeSMBFileShares mocks base method
 func (m *MockStorageGatewayAPI) DescribeSMBFileShares(arg0 *storagegateway.DescribeSMBFileSharesInput) (*storagegateway.DescribeSMBFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSMBFileShares", arg0)
@@ -1995,13 +1544,13 @@ func (m *MockStorageGatewayAPI) DescribeSMBFileShares(arg0 *storagegateway.Descr
 	return ret0, ret1
 }
 
-// DescribeSMBFileShares indicates an expected call of DescribeSMBFileShares.
+// DescribeSMBFileShares indicates an expected call of DescribeSMBFileShares
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBFileShares(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSMBFileShares", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSMBFileShares), arg0)
 }
 
-// DescribeSMBFileSharesRequest mocks base method.
+// DescribeSMBFileSharesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeSMBFileSharesRequest(arg0 *storagegateway.DescribeSMBFileSharesInput) (*request.Request, *storagegateway.DescribeSMBFileSharesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSMBFileSharesRequest", arg0)
@@ -2010,14 +1559,14 @@ func (m *MockStorageGatewayAPI) DescribeSMBFileSharesRequest(arg0 *storagegatewa
 	return ret0, ret1
 }
 
-// DescribeSMBFileSharesRequest indicates an expected call of DescribeSMBFileSharesRequest.
+// DescribeSMBFileSharesRequest indicates an expected call of DescribeSMBFileSharesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBFileSharesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSMBFileSharesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSMBFileSharesRequest), arg0)
 }
 
-// DescribeSMBFileSharesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeSMBFileSharesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeSMBFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeSMBFileSharesOutput, error) {
+// DescribeSMBFileSharesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeSMBFileSharesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeSMBFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeSMBFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2029,14 +1578,14 @@ func (m *MockStorageGatewayAPI) DescribeSMBFileSharesWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DescribeSMBFileSharesWithContext indicates an expected call of DescribeSMBFileSharesWithContext.
+// DescribeSMBFileSharesWithContext indicates an expected call of DescribeSMBFileSharesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBFileSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSMBFileSharesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSMBFileSharesWithContext), varargs...)
 }
 
-// DescribeSMBSettings mocks base method.
+// DescribeSMBSettings mocks base method
 func (m *MockStorageGatewayAPI) DescribeSMBSettings(arg0 *storagegateway.DescribeSMBSettingsInput) (*storagegateway.DescribeSMBSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSMBSettings", arg0)
@@ -2045,13 +1594,13 @@ func (m *MockStorageGatewayAPI) DescribeSMBSettings(arg0 *storagegateway.Describ
 	return ret0, ret1
 }
 
-// DescribeSMBSettings indicates an expected call of DescribeSMBSettings.
+// DescribeSMBSettings indicates an expected call of DescribeSMBSettings
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBSettings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSMBSettings", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSMBSettings), arg0)
 }
 
-// DescribeSMBSettingsRequest mocks base method.
+// DescribeSMBSettingsRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeSMBSettingsRequest(arg0 *storagegateway.DescribeSMBSettingsInput) (*request.Request, *storagegateway.DescribeSMBSettingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSMBSettingsRequest", arg0)
@@ -2060,14 +1609,14 @@ func (m *MockStorageGatewayAPI) DescribeSMBSettingsRequest(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// DescribeSMBSettingsRequest indicates an expected call of DescribeSMBSettingsRequest.
+// DescribeSMBSettingsRequest indicates an expected call of DescribeSMBSettingsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBSettingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSMBSettingsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSMBSettingsRequest), arg0)
 }
 
-// DescribeSMBSettingsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeSMBSettingsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeSMBSettingsInput, arg2 ...request.Option) (*storagegateway.DescribeSMBSettingsOutput, error) {
+// DescribeSMBSettingsWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeSMBSettingsWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeSMBSettingsInput, arg2 ...request.Option) (*storagegateway.DescribeSMBSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2079,14 +1628,14 @@ func (m *MockStorageGatewayAPI) DescribeSMBSettingsWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DescribeSMBSettingsWithContext indicates an expected call of DescribeSMBSettingsWithContext.
+// DescribeSMBSettingsWithContext indicates an expected call of DescribeSMBSettingsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSMBSettingsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSMBSettingsWithContext), varargs...)
 }
 
-// DescribeSnapshotSchedule mocks base method.
+// DescribeSnapshotSchedule mocks base method
 func (m *MockStorageGatewayAPI) DescribeSnapshotSchedule(arg0 *storagegateway.DescribeSnapshotScheduleInput) (*storagegateway.DescribeSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSnapshotSchedule", arg0)
@@ -2095,13 +1644,13 @@ func (m *MockStorageGatewayAPI) DescribeSnapshotSchedule(arg0 *storagegateway.De
 	return ret0, ret1
 }
 
-// DescribeSnapshotSchedule indicates an expected call of DescribeSnapshotSchedule.
+// DescribeSnapshotSchedule indicates an expected call of DescribeSnapshotSchedule
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSnapshotSchedule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSnapshotSchedule), arg0)
 }
 
-// DescribeSnapshotScheduleRequest mocks base method.
+// DescribeSnapshotScheduleRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleRequest(arg0 *storagegateway.DescribeSnapshotScheduleInput) (*request.Request, *storagegateway.DescribeSnapshotScheduleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSnapshotScheduleRequest", arg0)
@@ -2110,14 +1659,14 @@ func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleRequest(arg0 *storagegat
 	return ret0, ret1
 }
 
-// DescribeSnapshotScheduleRequest indicates an expected call of DescribeSnapshotScheduleRequest.
+// DescribeSnapshotScheduleRequest indicates an expected call of DescribeSnapshotScheduleRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSnapshotScheduleRequest), arg0)
 }
 
-// DescribeSnapshotScheduleWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleWithContext(arg0 context.Context, arg1 *storagegateway.DescribeSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DescribeSnapshotScheduleOutput, error) {
+// DescribeSnapshotScheduleWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DescribeSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2129,14 +1678,14 @@ func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DescribeSnapshotScheduleWithContext indicates an expected call of DescribeSnapshotScheduleWithContext.
+// DescribeSnapshotScheduleWithContext indicates an expected call of DescribeSnapshotScheduleWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeSnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeSnapshotScheduleWithContext), varargs...)
 }
 
-// DescribeStorediSCSIVolumes mocks base method.
+// DescribeStorediSCSIVolumes mocks base method
 func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumes(arg0 *storagegateway.DescribeStorediSCSIVolumesInput) (*storagegateway.DescribeStorediSCSIVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStorediSCSIVolumes", arg0)
@@ -2145,13 +1694,13 @@ func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumes(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// DescribeStorediSCSIVolumes indicates an expected call of DescribeStorediSCSIVolumes.
+// DescribeStorediSCSIVolumes indicates an expected call of DescribeStorediSCSIVolumes
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeStorediSCSIVolumes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorediSCSIVolumes", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeStorediSCSIVolumes), arg0)
 }
 
-// DescribeStorediSCSIVolumesRequest mocks base method.
+// DescribeStorediSCSIVolumesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesRequest(arg0 *storagegateway.DescribeStorediSCSIVolumesInput) (*request.Request, *storagegateway.DescribeStorediSCSIVolumesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStorediSCSIVolumesRequest", arg0)
@@ -2160,14 +1709,14 @@ func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesRequest(arg0 *storageg
 	return ret0, ret1
 }
 
-// DescribeStorediSCSIVolumesRequest indicates an expected call of DescribeStorediSCSIVolumesRequest.
+// DescribeStorediSCSIVolumesRequest indicates an expected call of DescribeStorediSCSIVolumesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeStorediSCSIVolumesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorediSCSIVolumesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeStorediSCSIVolumesRequest), arg0)
 }
 
-// DescribeStorediSCSIVolumesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeStorediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeStorediSCSIVolumesOutput, error) {
+// DescribeStorediSCSIVolumesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeStorediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeStorediSCSIVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2179,14 +1728,14 @@ func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DescribeStorediSCSIVolumesWithContext indicates an expected call of DescribeStorediSCSIVolumesWithContext.
+// DescribeStorediSCSIVolumesWithContext indicates an expected call of DescribeStorediSCSIVolumesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeStorediSCSIVolumesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorediSCSIVolumesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeStorediSCSIVolumesWithContext), varargs...)
 }
 
-// DescribeTapeArchives mocks base method.
+// DescribeTapeArchives mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapeArchives(arg0 *storagegateway.DescribeTapeArchivesInput) (*storagegateway.DescribeTapeArchivesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapeArchives", arg0)
@@ -2195,13 +1744,13 @@ func (m *MockStorageGatewayAPI) DescribeTapeArchives(arg0 *storagegateway.Descri
 	return ret0, ret1
 }
 
-// DescribeTapeArchives indicates an expected call of DescribeTapeArchives.
+// DescribeTapeArchives indicates an expected call of DescribeTapeArchives
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchives(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeArchives", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeArchives), arg0)
 }
 
-// DescribeTapeArchivesPages mocks base method.
+// DescribeTapeArchivesPages mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapeArchivesPages(arg0 *storagegateway.DescribeTapeArchivesInput, arg1 func(*storagegateway.DescribeTapeArchivesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapeArchivesPages", arg0, arg1)
@@ -2209,14 +1758,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeArchivesPages(arg0 *storagegateway.D
 	return ret0
 }
 
-// DescribeTapeArchivesPages indicates an expected call of DescribeTapeArchivesPages.
+// DescribeTapeArchivesPages indicates an expected call of DescribeTapeArchivesPages
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchivesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeArchivesPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeArchivesPages), arg0, arg1)
 }
 
-// DescribeTapeArchivesPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeTapeArchivesPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 func(*storagegateway.DescribeTapeArchivesOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeTapeArchivesPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeTapeArchivesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 func(*storagegateway.DescribeTapeArchivesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2227,14 +1776,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeArchivesPagesWithContext(arg0 contex
 	return ret0
 }
 
-// DescribeTapeArchivesPagesWithContext indicates an expected call of DescribeTapeArchivesPagesWithContext.
+// DescribeTapeArchivesPagesWithContext indicates an expected call of DescribeTapeArchivesPagesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchivesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeArchivesPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeArchivesPagesWithContext), varargs...)
 }
 
-// DescribeTapeArchivesRequest mocks base method.
+// DescribeTapeArchivesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapeArchivesRequest(arg0 *storagegateway.DescribeTapeArchivesInput) (*request.Request, *storagegateway.DescribeTapeArchivesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapeArchivesRequest", arg0)
@@ -2243,14 +1792,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeArchivesRequest(arg0 *storagegateway
 	return ret0, ret1
 }
 
-// DescribeTapeArchivesRequest indicates an expected call of DescribeTapeArchivesRequest.
+// DescribeTapeArchivesRequest indicates an expected call of DescribeTapeArchivesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchivesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeArchivesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeArchivesRequest), arg0)
 }
 
-// DescribeTapeArchivesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeTapeArchivesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 ...request.Option) (*storagegateway.DescribeTapeArchivesOutput, error) {
+// DescribeTapeArchivesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeTapeArchivesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 ...request.Option) (*storagegateway.DescribeTapeArchivesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2262,14 +1811,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeArchivesWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// DescribeTapeArchivesWithContext indicates an expected call of DescribeTapeArchivesWithContext.
+// DescribeTapeArchivesWithContext indicates an expected call of DescribeTapeArchivesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchivesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeArchivesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeArchivesWithContext), varargs...)
 }
 
-// DescribeTapeRecoveryPoints mocks base method.
+// DescribeTapeRecoveryPoints mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPoints(arg0 *storagegateway.DescribeTapeRecoveryPointsInput) (*storagegateway.DescribeTapeRecoveryPointsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapeRecoveryPoints", arg0)
@@ -2278,13 +1827,13 @@ func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPoints(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// DescribeTapeRecoveryPoints indicates an expected call of DescribeTapeRecoveryPoints.
+// DescribeTapeRecoveryPoints indicates an expected call of DescribeTapeRecoveryPoints
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPoints(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeRecoveryPoints", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeRecoveryPoints), arg0)
 }
 
-// DescribeTapeRecoveryPointsPages mocks base method.
+// DescribeTapeRecoveryPointsPages mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPages(arg0 *storagegateway.DescribeTapeRecoveryPointsInput, arg1 func(*storagegateway.DescribeTapeRecoveryPointsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapeRecoveryPointsPages", arg0, arg1)
@@ -2292,14 +1841,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPages(arg0 *storagegat
 	return ret0
 }
 
-// DescribeTapeRecoveryPointsPages indicates an expected call of DescribeTapeRecoveryPointsPages.
+// DescribeTapeRecoveryPointsPages indicates an expected call of DescribeTapeRecoveryPointsPages
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPointsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeRecoveryPointsPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeRecoveryPointsPages), arg0, arg1)
 }
 
-// DescribeTapeRecoveryPointsPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 func(*storagegateway.DescribeTapeRecoveryPointsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeTapeRecoveryPointsPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 func(*storagegateway.DescribeTapeRecoveryPointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2310,14 +1859,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPagesWithContext(arg0 
 	return ret0
 }
 
-// DescribeTapeRecoveryPointsPagesWithContext indicates an expected call of DescribeTapeRecoveryPointsPagesWithContext.
+// DescribeTapeRecoveryPointsPagesWithContext indicates an expected call of DescribeTapeRecoveryPointsPagesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeRecoveryPointsPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeRecoveryPointsPagesWithContext), varargs...)
 }
 
-// DescribeTapeRecoveryPointsRequest mocks base method.
+// DescribeTapeRecoveryPointsRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsRequest(arg0 *storagegateway.DescribeTapeRecoveryPointsInput) (*request.Request, *storagegateway.DescribeTapeRecoveryPointsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapeRecoveryPointsRequest", arg0)
@@ -2326,14 +1875,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsRequest(arg0 *storageg
 	return ret0, ret1
 }
 
-// DescribeTapeRecoveryPointsRequest indicates an expected call of DescribeTapeRecoveryPointsRequest.
+// DescribeTapeRecoveryPointsRequest indicates an expected call of DescribeTapeRecoveryPointsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPointsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeRecoveryPointsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeRecoveryPointsRequest), arg0)
 }
 
-// DescribeTapeRecoveryPointsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.DescribeTapeRecoveryPointsOutput, error) {
+// DescribeTapeRecoveryPointsWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.DescribeTapeRecoveryPointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2345,14 +1894,14 @@ func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DescribeTapeRecoveryPointsWithContext indicates an expected call of DescribeTapeRecoveryPointsWithContext.
+// DescribeTapeRecoveryPointsWithContext indicates an expected call of DescribeTapeRecoveryPointsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapeRecoveryPointsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapeRecoveryPointsWithContext), varargs...)
 }
 
-// DescribeTapes mocks base method.
+// DescribeTapes mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapes(arg0 *storagegateway.DescribeTapesInput) (*storagegateway.DescribeTapesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapes", arg0)
@@ -2361,13 +1910,13 @@ func (m *MockStorageGatewayAPI) DescribeTapes(arg0 *storagegateway.DescribeTapes
 	return ret0, ret1
 }
 
-// DescribeTapes indicates an expected call of DescribeTapes.
+// DescribeTapes indicates an expected call of DescribeTapes
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapes", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapes), arg0)
 }
 
-// DescribeTapesPages mocks base method.
+// DescribeTapesPages mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapesPages(arg0 *storagegateway.DescribeTapesInput, arg1 func(*storagegateway.DescribeTapesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapesPages", arg0, arg1)
@@ -2375,14 +1924,14 @@ func (m *MockStorageGatewayAPI) DescribeTapesPages(arg0 *storagegateway.Describe
 	return ret0
 }
 
-// DescribeTapesPages indicates an expected call of DescribeTapesPages.
+// DescribeTapesPages indicates an expected call of DescribeTapesPages
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapesPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapesPages), arg0, arg1)
 }
 
-// DescribeTapesPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeTapesPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapesInput, arg2 func(*storagegateway.DescribeTapesOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeTapesPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeTapesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapesInput, arg2 func(*storagegateway.DescribeTapesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2393,14 +1942,14 @@ func (m *MockStorageGatewayAPI) DescribeTapesPagesWithContext(arg0 context.Conte
 	return ret0
 }
 
-// DescribeTapesPagesWithContext indicates an expected call of DescribeTapesPagesWithContext.
+// DescribeTapesPagesWithContext indicates an expected call of DescribeTapesPagesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapesPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapesPagesWithContext), varargs...)
 }
 
-// DescribeTapesRequest mocks base method.
+// DescribeTapesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeTapesRequest(arg0 *storagegateway.DescribeTapesInput) (*request.Request, *storagegateway.DescribeTapesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeTapesRequest", arg0)
@@ -2409,14 +1958,14 @@ func (m *MockStorageGatewayAPI) DescribeTapesRequest(arg0 *storagegateway.Descri
 	return ret0, ret1
 }
 
-// DescribeTapesRequest indicates an expected call of DescribeTapesRequest.
+// DescribeTapesRequest indicates an expected call of DescribeTapesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapesRequest), arg0)
 }
 
-// DescribeTapesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeTapesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapesInput, arg2 ...request.Option) (*storagegateway.DescribeTapesOutput, error) {
+// DescribeTapesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeTapesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapesInput, arg2 ...request.Option) (*storagegateway.DescribeTapesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2428,14 +1977,14 @@ func (m *MockStorageGatewayAPI) DescribeTapesWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DescribeTapesWithContext indicates an expected call of DescribeTapesWithContext.
+// DescribeTapesWithContext indicates an expected call of DescribeTapesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTapesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeTapesWithContext), varargs...)
 }
 
-// DescribeUploadBuffer mocks base method.
+// DescribeUploadBuffer mocks base method
 func (m *MockStorageGatewayAPI) DescribeUploadBuffer(arg0 *storagegateway.DescribeUploadBufferInput) (*storagegateway.DescribeUploadBufferOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUploadBuffer", arg0)
@@ -2444,13 +1993,13 @@ func (m *MockStorageGatewayAPI) DescribeUploadBuffer(arg0 *storagegateway.Descri
 	return ret0, ret1
 }
 
-// DescribeUploadBuffer indicates an expected call of DescribeUploadBuffer.
+// DescribeUploadBuffer indicates an expected call of DescribeUploadBuffer
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeUploadBuffer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUploadBuffer", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeUploadBuffer), arg0)
 }
 
-// DescribeUploadBufferRequest mocks base method.
+// DescribeUploadBufferRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeUploadBufferRequest(arg0 *storagegateway.DescribeUploadBufferInput) (*request.Request, *storagegateway.DescribeUploadBufferOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUploadBufferRequest", arg0)
@@ -2459,14 +2008,14 @@ func (m *MockStorageGatewayAPI) DescribeUploadBufferRequest(arg0 *storagegateway
 	return ret0, ret1
 }
 
-// DescribeUploadBufferRequest indicates an expected call of DescribeUploadBufferRequest.
+// DescribeUploadBufferRequest indicates an expected call of DescribeUploadBufferRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeUploadBufferRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUploadBufferRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeUploadBufferRequest), arg0)
 }
 
-// DescribeUploadBufferWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeUploadBufferWithContext(arg0 context.Context, arg1 *storagegateway.DescribeUploadBufferInput, arg2 ...request.Option) (*storagegateway.DescribeUploadBufferOutput, error) {
+// DescribeUploadBufferWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeUploadBufferWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeUploadBufferInput, arg2 ...request.Option) (*storagegateway.DescribeUploadBufferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2478,14 +2027,14 @@ func (m *MockStorageGatewayAPI) DescribeUploadBufferWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// DescribeUploadBufferWithContext indicates an expected call of DescribeUploadBufferWithContext.
+// DescribeUploadBufferWithContext indicates an expected call of DescribeUploadBufferWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeUploadBufferWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUploadBufferWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeUploadBufferWithContext), varargs...)
 }
 
-// DescribeVTLDevices mocks base method.
+// DescribeVTLDevices mocks base method
 func (m *MockStorageGatewayAPI) DescribeVTLDevices(arg0 *storagegateway.DescribeVTLDevicesInput) (*storagegateway.DescribeVTLDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVTLDevices", arg0)
@@ -2494,13 +2043,13 @@ func (m *MockStorageGatewayAPI) DescribeVTLDevices(arg0 *storagegateway.Describe
 	return ret0, ret1
 }
 
-// DescribeVTLDevices indicates an expected call of DescribeVTLDevices.
+// DescribeVTLDevices indicates an expected call of DescribeVTLDevices
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVTLDevices", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeVTLDevices), arg0)
 }
 
-// DescribeVTLDevicesPages mocks base method.
+// DescribeVTLDevicesPages mocks base method
 func (m *MockStorageGatewayAPI) DescribeVTLDevicesPages(arg0 *storagegateway.DescribeVTLDevicesInput, arg1 func(*storagegateway.DescribeVTLDevicesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVTLDevicesPages", arg0, arg1)
@@ -2508,14 +2057,14 @@ func (m *MockStorageGatewayAPI) DescribeVTLDevicesPages(arg0 *storagegateway.Des
 	return ret0
 }
 
-// DescribeVTLDevicesPages indicates an expected call of DescribeVTLDevicesPages.
+// DescribeVTLDevicesPages indicates an expected call of DescribeVTLDevicesPages
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevicesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVTLDevicesPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeVTLDevicesPages), arg0, arg1)
 }
 
-// DescribeVTLDevicesPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeVTLDevicesPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 func(*storagegateway.DescribeVTLDevicesOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeVTLDevicesPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeVTLDevicesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 func(*storagegateway.DescribeVTLDevicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2526,14 +2075,14 @@ func (m *MockStorageGatewayAPI) DescribeVTLDevicesPagesWithContext(arg0 context.
 	return ret0
 }
 
-// DescribeVTLDevicesPagesWithContext indicates an expected call of DescribeVTLDevicesPagesWithContext.
+// DescribeVTLDevicesPagesWithContext indicates an expected call of DescribeVTLDevicesPagesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVTLDevicesPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeVTLDevicesPagesWithContext), varargs...)
 }
 
-// DescribeVTLDevicesRequest mocks base method.
+// DescribeVTLDevicesRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeVTLDevicesRequest(arg0 *storagegateway.DescribeVTLDevicesInput) (*request.Request, *storagegateway.DescribeVTLDevicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVTLDevicesRequest", arg0)
@@ -2542,14 +2091,14 @@ func (m *MockStorageGatewayAPI) DescribeVTLDevicesRequest(arg0 *storagegateway.D
 	return ret0, ret1
 }
 
-// DescribeVTLDevicesRequest indicates an expected call of DescribeVTLDevicesRequest.
+// DescribeVTLDevicesRequest indicates an expected call of DescribeVTLDevicesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVTLDevicesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeVTLDevicesRequest), arg0)
 }
 
-// DescribeVTLDevicesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeVTLDevicesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 ...request.Option) (*storagegateway.DescribeVTLDevicesOutput, error) {
+// DescribeVTLDevicesWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeVTLDevicesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 ...request.Option) (*storagegateway.DescribeVTLDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2561,14 +2110,14 @@ func (m *MockStorageGatewayAPI) DescribeVTLDevicesWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// DescribeVTLDevicesWithContext indicates an expected call of DescribeVTLDevicesWithContext.
+// DescribeVTLDevicesWithContext indicates an expected call of DescribeVTLDevicesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVTLDevicesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeVTLDevicesWithContext), varargs...)
 }
 
-// DescribeWorkingStorage mocks base method.
+// DescribeWorkingStorage mocks base method
 func (m *MockStorageGatewayAPI) DescribeWorkingStorage(arg0 *storagegateway.DescribeWorkingStorageInput) (*storagegateway.DescribeWorkingStorageOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeWorkingStorage", arg0)
@@ -2577,13 +2126,13 @@ func (m *MockStorageGatewayAPI) DescribeWorkingStorage(arg0 *storagegateway.Desc
 	return ret0, ret1
 }
 
-// DescribeWorkingStorage indicates an expected call of DescribeWorkingStorage.
+// DescribeWorkingStorage indicates an expected call of DescribeWorkingStorage
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeWorkingStorage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkingStorage", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeWorkingStorage), arg0)
 }
 
-// DescribeWorkingStorageRequest mocks base method.
+// DescribeWorkingStorageRequest mocks base method
 func (m *MockStorageGatewayAPI) DescribeWorkingStorageRequest(arg0 *storagegateway.DescribeWorkingStorageInput) (*request.Request, *storagegateway.DescribeWorkingStorageOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeWorkingStorageRequest", arg0)
@@ -2592,14 +2141,14 @@ func (m *MockStorageGatewayAPI) DescribeWorkingStorageRequest(arg0 *storagegatew
 	return ret0, ret1
 }
 
-// DescribeWorkingStorageRequest indicates an expected call of DescribeWorkingStorageRequest.
+// DescribeWorkingStorageRequest indicates an expected call of DescribeWorkingStorageRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeWorkingStorageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkingStorageRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeWorkingStorageRequest), arg0)
 }
 
-// DescribeWorkingStorageWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DescribeWorkingStorageWithContext(arg0 context.Context, arg1 *storagegateway.DescribeWorkingStorageInput, arg2 ...request.Option) (*storagegateway.DescribeWorkingStorageOutput, error) {
+// DescribeWorkingStorageWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeWorkingStorageWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeWorkingStorageInput, arg2 ...request.Option) (*storagegateway.DescribeWorkingStorageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2611,64 +2160,14 @@ func (m *MockStorageGatewayAPI) DescribeWorkingStorageWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DescribeWorkingStorageWithContext indicates an expected call of DescribeWorkingStorageWithContext.
+// DescribeWorkingStorageWithContext indicates an expected call of DescribeWorkingStorageWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DescribeWorkingStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkingStorageWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeWorkingStorageWithContext), varargs...)
 }
 
-// DetachVolume mocks base method.
-func (m *MockStorageGatewayAPI) DetachVolume(arg0 *storagegateway.DetachVolumeInput) (*storagegateway.DetachVolumeOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DetachVolume", arg0)
-	ret0, _ := ret[0].(*storagegateway.DetachVolumeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DetachVolume indicates an expected call of DetachVolume.
-func (mr *MockStorageGatewayAPIMockRecorder) DetachVolume(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachVolume", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DetachVolume), arg0)
-}
-
-// DetachVolumeRequest mocks base method.
-func (m *MockStorageGatewayAPI) DetachVolumeRequest(arg0 *storagegateway.DetachVolumeInput) (*request.Request, *storagegateway.DetachVolumeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DetachVolumeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DetachVolumeOutput)
-	return ret0, ret1
-}
-
-// DetachVolumeRequest indicates an expected call of DetachVolumeRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DetachVolumeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachVolumeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DetachVolumeRequest), arg0)
-}
-
-// DetachVolumeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DetachVolumeWithContext(arg0 context.Context, arg1 *storagegateway.DetachVolumeInput, arg2 ...request.Option) (*storagegateway.DetachVolumeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DetachVolumeWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DetachVolumeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DetachVolumeWithContext indicates an expected call of DetachVolumeWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DetachVolumeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DetachVolumeWithContext), varargs...)
-}
-
-// DisableGateway mocks base method.
+// DisableGateway mocks base method
 func (m *MockStorageGatewayAPI) DisableGateway(arg0 *storagegateway.DisableGatewayInput) (*storagegateway.DisableGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisableGateway", arg0)
@@ -2677,13 +2176,13 @@ func (m *MockStorageGatewayAPI) DisableGateway(arg0 *storagegateway.DisableGatew
 	return ret0, ret1
 }
 
-// DisableGateway indicates an expected call of DisableGateway.
+// DisableGateway indicates an expected call of DisableGateway
 func (mr *MockStorageGatewayAPIMockRecorder) DisableGateway(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableGateway", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisableGateway), arg0)
 }
 
-// DisableGatewayRequest mocks base method.
+// DisableGatewayRequest mocks base method
 func (m *MockStorageGatewayAPI) DisableGatewayRequest(arg0 *storagegateway.DisableGatewayInput) (*request.Request, *storagegateway.DisableGatewayOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisableGatewayRequest", arg0)
@@ -2692,14 +2191,14 @@ func (m *MockStorageGatewayAPI) DisableGatewayRequest(arg0 *storagegateway.Disab
 	return ret0, ret1
 }
 
-// DisableGatewayRequest indicates an expected call of DisableGatewayRequest.
+// DisableGatewayRequest indicates an expected call of DisableGatewayRequest
 func (mr *MockStorageGatewayAPIMockRecorder) DisableGatewayRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableGatewayRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisableGatewayRequest), arg0)
 }
 
-// DisableGatewayWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DisableGatewayWithContext(arg0 context.Context, arg1 *storagegateway.DisableGatewayInput, arg2 ...request.Option) (*storagegateway.DisableGatewayOutput, error) {
+// DisableGatewayWithContext mocks base method
+func (m *MockStorageGatewayAPI) DisableGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.DisableGatewayInput, arg2 ...request.Option) (*storagegateway.DisableGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2711,64 +2210,14 @@ func (m *MockStorageGatewayAPI) DisableGatewayWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DisableGatewayWithContext indicates an expected call of DisableGatewayWithContext.
+// DisableGatewayWithContext indicates an expected call of DisableGatewayWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) DisableGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisableGatewayWithContext), varargs...)
 }
 
-// DisassociateFileSystem mocks base method.
-func (m *MockStorageGatewayAPI) DisassociateFileSystem(arg0 *storagegateway.DisassociateFileSystemInput) (*storagegateway.DisassociateFileSystemOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateFileSystem", arg0)
-	ret0, _ := ret[0].(*storagegateway.DisassociateFileSystemOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateFileSystem indicates an expected call of DisassociateFileSystem.
-func (mr *MockStorageGatewayAPIMockRecorder) DisassociateFileSystem(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystem", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisassociateFileSystem), arg0)
-}
-
-// DisassociateFileSystemRequest mocks base method.
-func (m *MockStorageGatewayAPI) DisassociateFileSystemRequest(arg0 *storagegateway.DisassociateFileSystemInput) (*request.Request, *storagegateway.DisassociateFileSystemOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateFileSystemRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.DisassociateFileSystemOutput)
-	return ret0, ret1
-}
-
-// DisassociateFileSystemRequest indicates an expected call of DisassociateFileSystemRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) DisassociateFileSystemRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisassociateFileSystemRequest), arg0)
-}
-
-// DisassociateFileSystemWithContext mocks base method.
-func (m *MockStorageGatewayAPI) DisassociateFileSystemWithContext(arg0 context.Context, arg1 *storagegateway.DisassociateFileSystemInput, arg2 ...request.Option) (*storagegateway.DisassociateFileSystemOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateFileSystemWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.DisassociateFileSystemOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateFileSystemWithContext indicates an expected call of DisassociateFileSystemWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) DisassociateFileSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisassociateFileSystemWithContext), varargs...)
-}
-
-// JoinDomain mocks base method.
+// JoinDomain mocks base method
 func (m *MockStorageGatewayAPI) JoinDomain(arg0 *storagegateway.JoinDomainInput) (*storagegateway.JoinDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "JoinDomain", arg0)
@@ -2777,13 +2226,13 @@ func (m *MockStorageGatewayAPI) JoinDomain(arg0 *storagegateway.JoinDomainInput)
 	return ret0, ret1
 }
 
-// JoinDomain indicates an expected call of JoinDomain.
+// JoinDomain indicates an expected call of JoinDomain
 func (mr *MockStorageGatewayAPIMockRecorder) JoinDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinDomain", reflect.TypeOf((*MockStorageGatewayAPI)(nil).JoinDomain), arg0)
 }
 
-// JoinDomainRequest mocks base method.
+// JoinDomainRequest mocks base method
 func (m *MockStorageGatewayAPI) JoinDomainRequest(arg0 *storagegateway.JoinDomainInput) (*request.Request, *storagegateway.JoinDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "JoinDomainRequest", arg0)
@@ -2792,14 +2241,14 @@ func (m *MockStorageGatewayAPI) JoinDomainRequest(arg0 *storagegateway.JoinDomai
 	return ret0, ret1
 }
 
-// JoinDomainRequest indicates an expected call of JoinDomainRequest.
+// JoinDomainRequest indicates an expected call of JoinDomainRequest
 func (mr *MockStorageGatewayAPIMockRecorder) JoinDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinDomainRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).JoinDomainRequest), arg0)
 }
 
-// JoinDomainWithContext mocks base method.
-func (m *MockStorageGatewayAPI) JoinDomainWithContext(arg0 context.Context, arg1 *storagegateway.JoinDomainInput, arg2 ...request.Option) (*storagegateway.JoinDomainOutput, error) {
+// JoinDomainWithContext mocks base method
+func (m *MockStorageGatewayAPI) JoinDomainWithContext(arg0 aws.Context, arg1 *storagegateway.JoinDomainInput, arg2 ...request.Option) (*storagegateway.JoinDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2811,64 +2260,14 @@ func (m *MockStorageGatewayAPI) JoinDomainWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// JoinDomainWithContext indicates an expected call of JoinDomainWithContext.
+// JoinDomainWithContext indicates an expected call of JoinDomainWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) JoinDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinDomainWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).JoinDomainWithContext), varargs...)
 }
 
-// ListAutomaticTapeCreationPolicies mocks base method.
-func (m *MockStorageGatewayAPI) ListAutomaticTapeCreationPolicies(arg0 *storagegateway.ListAutomaticTapeCreationPoliciesInput) (*storagegateway.ListAutomaticTapeCreationPoliciesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListAutomaticTapeCreationPolicies", arg0)
-	ret0, _ := ret[0].(*storagegateway.ListAutomaticTapeCreationPoliciesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListAutomaticTapeCreationPolicies indicates an expected call of ListAutomaticTapeCreationPolicies.
-func (mr *MockStorageGatewayAPIMockRecorder) ListAutomaticTapeCreationPolicies(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAutomaticTapeCreationPolicies", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListAutomaticTapeCreationPolicies), arg0)
-}
-
-// ListAutomaticTapeCreationPoliciesRequest mocks base method.
-func (m *MockStorageGatewayAPI) ListAutomaticTapeCreationPoliciesRequest(arg0 *storagegateway.ListAutomaticTapeCreationPoliciesInput) (*request.Request, *storagegateway.ListAutomaticTapeCreationPoliciesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListAutomaticTapeCreationPoliciesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.ListAutomaticTapeCreationPoliciesOutput)
-	return ret0, ret1
-}
-
-// ListAutomaticTapeCreationPoliciesRequest indicates an expected call of ListAutomaticTapeCreationPoliciesRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) ListAutomaticTapeCreationPoliciesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAutomaticTapeCreationPoliciesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListAutomaticTapeCreationPoliciesRequest), arg0)
-}
-
-// ListAutomaticTapeCreationPoliciesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListAutomaticTapeCreationPoliciesWithContext(arg0 context.Context, arg1 *storagegateway.ListAutomaticTapeCreationPoliciesInput, arg2 ...request.Option) (*storagegateway.ListAutomaticTapeCreationPoliciesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListAutomaticTapeCreationPoliciesWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.ListAutomaticTapeCreationPoliciesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListAutomaticTapeCreationPoliciesWithContext indicates an expected call of ListAutomaticTapeCreationPoliciesWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListAutomaticTapeCreationPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAutomaticTapeCreationPoliciesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListAutomaticTapeCreationPoliciesWithContext), varargs...)
-}
-
-// ListFileShares mocks base method.
+// ListFileShares mocks base method
 func (m *MockStorageGatewayAPI) ListFileShares(arg0 *storagegateway.ListFileSharesInput) (*storagegateway.ListFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFileShares", arg0)
@@ -2877,46 +2276,13 @@ func (m *MockStorageGatewayAPI) ListFileShares(arg0 *storagegateway.ListFileShar
 	return ret0, ret1
 }
 
-// ListFileShares indicates an expected call of ListFileShares.
+// ListFileShares indicates an expected call of ListFileShares
 func (mr *MockStorageGatewayAPIMockRecorder) ListFileShares(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileShares", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileShares), arg0)
 }
 
-// ListFileSharesPages mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSharesPages(arg0 *storagegateway.ListFileSharesInput, arg1 func(*storagegateway.ListFileSharesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListFileSharesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListFileSharesPages indicates an expected call of ListFileSharesPages.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSharesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSharesPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSharesPages), arg0, arg1)
-}
-
-// ListFileSharesPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSharesPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSharesInput, arg2 func(*storagegateway.ListFileSharesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListFileSharesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListFileSharesPagesWithContext indicates an expected call of ListFileSharesPagesWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSharesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSharesPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSharesPagesWithContext), varargs...)
-}
-
-// ListFileSharesRequest mocks base method.
+// ListFileSharesRequest mocks base method
 func (m *MockStorageGatewayAPI) ListFileSharesRequest(arg0 *storagegateway.ListFileSharesInput) (*request.Request, *storagegateway.ListFileSharesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFileSharesRequest", arg0)
@@ -2925,14 +2291,14 @@ func (m *MockStorageGatewayAPI) ListFileSharesRequest(arg0 *storagegateway.ListF
 	return ret0, ret1
 }
 
-// ListFileSharesRequest indicates an expected call of ListFileSharesRequest.
+// ListFileSharesRequest indicates an expected call of ListFileSharesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListFileSharesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSharesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSharesRequest), arg0)
 }
 
-// ListFileSharesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSharesWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSharesInput, arg2 ...request.Option) (*storagegateway.ListFileSharesOutput, error) {
+// ListFileSharesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListFileSharesWithContext(arg0 aws.Context, arg1 *storagegateway.ListFileSharesInput, arg2 ...request.Option) (*storagegateway.ListFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2944,97 +2310,14 @@ func (m *MockStorageGatewayAPI) ListFileSharesWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListFileSharesWithContext indicates an expected call of ListFileSharesWithContext.
+// ListFileSharesWithContext indicates an expected call of ListFileSharesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListFileSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSharesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSharesWithContext), varargs...)
 }
 
-// ListFileSystemAssociations mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSystemAssociations(arg0 *storagegateway.ListFileSystemAssociationsInput) (*storagegateway.ListFileSystemAssociationsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListFileSystemAssociations", arg0)
-	ret0, _ := ret[0].(*storagegateway.ListFileSystemAssociationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListFileSystemAssociations indicates an expected call of ListFileSystemAssociations.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociations(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociations", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociations), arg0)
-}
-
-// ListFileSystemAssociationsPages mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSystemAssociationsPages(arg0 *storagegateway.ListFileSystemAssociationsInput, arg1 func(*storagegateway.ListFileSystemAssociationsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListFileSystemAssociationsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListFileSystemAssociationsPages indicates an expected call of ListFileSystemAssociationsPages.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsPages), arg0, arg1)
-}
-
-// ListFileSystemAssociationsPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSystemAssociationsPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSystemAssociationsInput, arg2 func(*storagegateway.ListFileSystemAssociationsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListFileSystemAssociationsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListFileSystemAssociationsPagesWithContext indicates an expected call of ListFileSystemAssociationsPagesWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsPagesWithContext), varargs...)
-}
-
-// ListFileSystemAssociationsRequest mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSystemAssociationsRequest(arg0 *storagegateway.ListFileSystemAssociationsInput) (*request.Request, *storagegateway.ListFileSystemAssociationsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListFileSystemAssociationsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.ListFileSystemAssociationsOutput)
-	return ret0, ret1
-}
-
-// ListFileSystemAssociationsRequest indicates an expected call of ListFileSystemAssociationsRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsRequest), arg0)
-}
-
-// ListFileSystemAssociationsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListFileSystemAssociationsWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSystemAssociationsInput, arg2 ...request.Option) (*storagegateway.ListFileSystemAssociationsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListFileSystemAssociationsWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.ListFileSystemAssociationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListFileSystemAssociationsWithContext indicates an expected call of ListFileSystemAssociationsWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsWithContext), varargs...)
-}
-
-// ListGateways mocks base method.
+// ListGateways mocks base method
 func (m *MockStorageGatewayAPI) ListGateways(arg0 *storagegateway.ListGatewaysInput) (*storagegateway.ListGatewaysOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGateways", arg0)
@@ -3043,13 +2326,13 @@ func (m *MockStorageGatewayAPI) ListGateways(arg0 *storagegateway.ListGatewaysIn
 	return ret0, ret1
 }
 
-// ListGateways indicates an expected call of ListGateways.
+// ListGateways indicates an expected call of ListGateways
 func (mr *MockStorageGatewayAPIMockRecorder) ListGateways(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGateways", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListGateways), arg0)
 }
 
-// ListGatewaysPages mocks base method.
+// ListGatewaysPages mocks base method
 func (m *MockStorageGatewayAPI) ListGatewaysPages(arg0 *storagegateway.ListGatewaysInput, arg1 func(*storagegateway.ListGatewaysOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGatewaysPages", arg0, arg1)
@@ -3057,14 +2340,14 @@ func (m *MockStorageGatewayAPI) ListGatewaysPages(arg0 *storagegateway.ListGatew
 	return ret0
 }
 
-// ListGatewaysPages indicates an expected call of ListGatewaysPages.
+// ListGatewaysPages indicates an expected call of ListGatewaysPages
 func (mr *MockStorageGatewayAPIMockRecorder) ListGatewaysPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListGatewaysPages), arg0, arg1)
 }
 
-// ListGatewaysPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListGatewaysPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListGatewaysInput, arg2 func(*storagegateway.ListGatewaysOutput, bool) bool, arg3 ...request.Option) error {
+// ListGatewaysPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListGatewaysPagesWithContext(arg0 aws.Context, arg1 *storagegateway.ListGatewaysInput, arg2 func(*storagegateway.ListGatewaysOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3075,14 +2358,14 @@ func (m *MockStorageGatewayAPI) ListGatewaysPagesWithContext(arg0 context.Contex
 	return ret0
 }
 
-// ListGatewaysPagesWithContext indicates an expected call of ListGatewaysPagesWithContext.
+// ListGatewaysPagesWithContext indicates an expected call of ListGatewaysPagesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListGatewaysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListGatewaysPagesWithContext), varargs...)
 }
 
-// ListGatewaysRequest mocks base method.
+// ListGatewaysRequest mocks base method
 func (m *MockStorageGatewayAPI) ListGatewaysRequest(arg0 *storagegateway.ListGatewaysInput) (*request.Request, *storagegateway.ListGatewaysOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListGatewaysRequest", arg0)
@@ -3091,14 +2374,14 @@ func (m *MockStorageGatewayAPI) ListGatewaysRequest(arg0 *storagegateway.ListGat
 	return ret0, ret1
 }
 
-// ListGatewaysRequest indicates an expected call of ListGatewaysRequest.
+// ListGatewaysRequest indicates an expected call of ListGatewaysRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListGatewaysRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListGatewaysRequest), arg0)
 }
 
-// ListGatewaysWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListGatewaysWithContext(arg0 context.Context, arg1 *storagegateway.ListGatewaysInput, arg2 ...request.Option) (*storagegateway.ListGatewaysOutput, error) {
+// ListGatewaysWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListGatewaysWithContext(arg0 aws.Context, arg1 *storagegateway.ListGatewaysInput, arg2 ...request.Option) (*storagegateway.ListGatewaysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3110,14 +2393,14 @@ func (m *MockStorageGatewayAPI) ListGatewaysWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// ListGatewaysWithContext indicates an expected call of ListGatewaysWithContext.
+// ListGatewaysWithContext indicates an expected call of ListGatewaysWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListGatewaysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListGatewaysWithContext), varargs...)
 }
 
-// ListLocalDisks mocks base method.
+// ListLocalDisks mocks base method
 func (m *MockStorageGatewayAPI) ListLocalDisks(arg0 *storagegateway.ListLocalDisksInput) (*storagegateway.ListLocalDisksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListLocalDisks", arg0)
@@ -3126,13 +2409,13 @@ func (m *MockStorageGatewayAPI) ListLocalDisks(arg0 *storagegateway.ListLocalDis
 	return ret0, ret1
 }
 
-// ListLocalDisks indicates an expected call of ListLocalDisks.
+// ListLocalDisks indicates an expected call of ListLocalDisks
 func (mr *MockStorageGatewayAPIMockRecorder) ListLocalDisks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLocalDisks", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListLocalDisks), arg0)
 }
 
-// ListLocalDisksRequest mocks base method.
+// ListLocalDisksRequest mocks base method
 func (m *MockStorageGatewayAPI) ListLocalDisksRequest(arg0 *storagegateway.ListLocalDisksInput) (*request.Request, *storagegateway.ListLocalDisksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListLocalDisksRequest", arg0)
@@ -3141,14 +2424,14 @@ func (m *MockStorageGatewayAPI) ListLocalDisksRequest(arg0 *storagegateway.ListL
 	return ret0, ret1
 }
 
-// ListLocalDisksRequest indicates an expected call of ListLocalDisksRequest.
+// ListLocalDisksRequest indicates an expected call of ListLocalDisksRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListLocalDisksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLocalDisksRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListLocalDisksRequest), arg0)
 }
 
-// ListLocalDisksWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListLocalDisksWithContext(arg0 context.Context, arg1 *storagegateway.ListLocalDisksInput, arg2 ...request.Option) (*storagegateway.ListLocalDisksOutput, error) {
+// ListLocalDisksWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListLocalDisksWithContext(arg0 aws.Context, arg1 *storagegateway.ListLocalDisksInput, arg2 ...request.Option) (*storagegateway.ListLocalDisksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3160,14 +2443,14 @@ func (m *MockStorageGatewayAPI) ListLocalDisksWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListLocalDisksWithContext indicates an expected call of ListLocalDisksWithContext.
+// ListLocalDisksWithContext indicates an expected call of ListLocalDisksWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListLocalDisksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLocalDisksWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListLocalDisksWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
+// ListTagsForResource mocks base method
 func (m *MockStorageGatewayAPI) ListTagsForResource(arg0 *storagegateway.ListTagsForResourceInput) (*storagegateway.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
@@ -3176,46 +2459,13 @@ func (m *MockStorageGatewayAPI) ListTagsForResource(arg0 *storagegateway.ListTag
 	return ret0, ret1
 }
 
-// ListTagsForResource indicates an expected call of ListTagsForResource.
+// ListTagsForResource indicates an expected call of ListTagsForResource
 func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTagsForResource), arg0)
 }
 
-// ListTagsForResourcePages mocks base method.
-func (m *MockStorageGatewayAPI) ListTagsForResourcePages(arg0 *storagegateway.ListTagsForResourceInput, arg1 func(*storagegateway.ListTagsForResourceOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTagsForResourcePages), arg0, arg1)
-}
-
-// ListTagsForResourcePagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *storagegateway.ListTagsForResourceInput, arg2 func(*storagegateway.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
-}
-
-// ListTagsForResourceRequest mocks base method.
+// ListTagsForResourceRequest mocks base method
 func (m *MockStorageGatewayAPI) ListTagsForResourceRequest(arg0 *storagegateway.ListTagsForResourceInput) (*request.Request, *storagegateway.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
@@ -3224,14 +2474,14 @@ func (m *MockStorageGatewayAPI) ListTagsForResourceRequest(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTagsForResourceRequest), arg0)
 }
 
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *storagegateway.ListTagsForResourceInput, arg2 ...request.Option) (*storagegateway.ListTagsForResourceOutput, error) {
+// ListTagsForResourceWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *storagegateway.ListTagsForResourceInput, arg2 ...request.Option) (*storagegateway.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3243,97 +2493,14 @@ func (m *MockStorageGatewayAPI) ListTagsForResourceWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
-// ListTapePools mocks base method.
-func (m *MockStorageGatewayAPI) ListTapePools(arg0 *storagegateway.ListTapePoolsInput) (*storagegateway.ListTapePoolsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTapePools", arg0)
-	ret0, _ := ret[0].(*storagegateway.ListTapePoolsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTapePools indicates an expected call of ListTapePools.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapePools(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePools", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePools), arg0)
-}
-
-// ListTapePoolsPages mocks base method.
-func (m *MockStorageGatewayAPI) ListTapePoolsPages(arg0 *storagegateway.ListTapePoolsInput, arg1 func(*storagegateway.ListTapePoolsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTapePoolsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTapePoolsPages indicates an expected call of ListTapePoolsPages.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsPages), arg0, arg1)
-}
-
-// ListTapePoolsPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListTapePoolsPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListTapePoolsInput, arg2 func(*storagegateway.ListTapePoolsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTapePoolsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTapePoolsPagesWithContext indicates an expected call of ListTapePoolsPagesWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsPagesWithContext), varargs...)
-}
-
-// ListTapePoolsRequest mocks base method.
-func (m *MockStorageGatewayAPI) ListTapePoolsRequest(arg0 *storagegateway.ListTapePoolsInput) (*request.Request, *storagegateway.ListTapePoolsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTapePoolsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.ListTapePoolsOutput)
-	return ret0, ret1
-}
-
-// ListTapePoolsRequest indicates an expected call of ListTapePoolsRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsRequest), arg0)
-}
-
-// ListTapePoolsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListTapePoolsWithContext(arg0 context.Context, arg1 *storagegateway.ListTapePoolsInput, arg2 ...request.Option) (*storagegateway.ListTapePoolsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTapePoolsWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.ListTapePoolsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTapePoolsWithContext indicates an expected call of ListTapePoolsWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsWithContext), varargs...)
-}
-
-// ListTapes mocks base method.
+// ListTapes mocks base method
 func (m *MockStorageGatewayAPI) ListTapes(arg0 *storagegateway.ListTapesInput) (*storagegateway.ListTapesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTapes", arg0)
@@ -3342,46 +2509,13 @@ func (m *MockStorageGatewayAPI) ListTapes(arg0 *storagegateway.ListTapesInput) (
 	return ret0, ret1
 }
 
-// ListTapes indicates an expected call of ListTapes.
+// ListTapes indicates an expected call of ListTapes
 func (mr *MockStorageGatewayAPIMockRecorder) ListTapes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapes", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapes), arg0)
 }
 
-// ListTapesPages mocks base method.
-func (m *MockStorageGatewayAPI) ListTapesPages(arg0 *storagegateway.ListTapesInput, arg1 func(*storagegateway.ListTapesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTapesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTapesPages indicates an expected call of ListTapesPages.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapesPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapesPages), arg0, arg1)
-}
-
-// ListTapesPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListTapesPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListTapesInput, arg2 func(*storagegateway.ListTapesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTapesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTapesPagesWithContext indicates an expected call of ListTapesPagesWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) ListTapesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapesPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapesPagesWithContext), varargs...)
-}
-
-// ListTapesRequest mocks base method.
+// ListTapesRequest mocks base method
 func (m *MockStorageGatewayAPI) ListTapesRequest(arg0 *storagegateway.ListTapesInput) (*request.Request, *storagegateway.ListTapesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTapesRequest", arg0)
@@ -3390,14 +2524,14 @@ func (m *MockStorageGatewayAPI) ListTapesRequest(arg0 *storagegateway.ListTapesI
 	return ret0, ret1
 }
 
-// ListTapesRequest indicates an expected call of ListTapesRequest.
+// ListTapesRequest indicates an expected call of ListTapesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListTapesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapesRequest), arg0)
 }
 
-// ListTapesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListTapesWithContext(arg0 context.Context, arg1 *storagegateway.ListTapesInput, arg2 ...request.Option) (*storagegateway.ListTapesOutput, error) {
+// ListTapesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListTapesWithContext(arg0 aws.Context, arg1 *storagegateway.ListTapesInput, arg2 ...request.Option) (*storagegateway.ListTapesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3409,14 +2543,14 @@ func (m *MockStorageGatewayAPI) ListTapesWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListTapesWithContext indicates an expected call of ListTapesWithContext.
+// ListTapesWithContext indicates an expected call of ListTapesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListTapesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapesWithContext), varargs...)
 }
 
-// ListVolumeInitiators mocks base method.
+// ListVolumeInitiators mocks base method
 func (m *MockStorageGatewayAPI) ListVolumeInitiators(arg0 *storagegateway.ListVolumeInitiatorsInput) (*storagegateway.ListVolumeInitiatorsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumeInitiators", arg0)
@@ -3425,13 +2559,13 @@ func (m *MockStorageGatewayAPI) ListVolumeInitiators(arg0 *storagegateway.ListVo
 	return ret0, ret1
 }
 
-// ListVolumeInitiators indicates an expected call of ListVolumeInitiators.
+// ListVolumeInitiators indicates an expected call of ListVolumeInitiators
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeInitiators(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumeInitiators", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumeInitiators), arg0)
 }
 
-// ListVolumeInitiatorsRequest mocks base method.
+// ListVolumeInitiatorsRequest mocks base method
 func (m *MockStorageGatewayAPI) ListVolumeInitiatorsRequest(arg0 *storagegateway.ListVolumeInitiatorsInput) (*request.Request, *storagegateway.ListVolumeInitiatorsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumeInitiatorsRequest", arg0)
@@ -3440,14 +2574,14 @@ func (m *MockStorageGatewayAPI) ListVolumeInitiatorsRequest(arg0 *storagegateway
 	return ret0, ret1
 }
 
-// ListVolumeInitiatorsRequest indicates an expected call of ListVolumeInitiatorsRequest.
+// ListVolumeInitiatorsRequest indicates an expected call of ListVolumeInitiatorsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeInitiatorsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumeInitiatorsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumeInitiatorsRequest), arg0)
 }
 
-// ListVolumeInitiatorsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListVolumeInitiatorsWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumeInitiatorsInput, arg2 ...request.Option) (*storagegateway.ListVolumeInitiatorsOutput, error) {
+// ListVolumeInitiatorsWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListVolumeInitiatorsWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumeInitiatorsInput, arg2 ...request.Option) (*storagegateway.ListVolumeInitiatorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3459,14 +2593,14 @@ func (m *MockStorageGatewayAPI) ListVolumeInitiatorsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// ListVolumeInitiatorsWithContext indicates an expected call of ListVolumeInitiatorsWithContext.
+// ListVolumeInitiatorsWithContext indicates an expected call of ListVolumeInitiatorsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeInitiatorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumeInitiatorsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumeInitiatorsWithContext), varargs...)
 }
 
-// ListVolumeRecoveryPoints mocks base method.
+// ListVolumeRecoveryPoints mocks base method
 func (m *MockStorageGatewayAPI) ListVolumeRecoveryPoints(arg0 *storagegateway.ListVolumeRecoveryPointsInput) (*storagegateway.ListVolumeRecoveryPointsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumeRecoveryPoints", arg0)
@@ -3475,13 +2609,13 @@ func (m *MockStorageGatewayAPI) ListVolumeRecoveryPoints(arg0 *storagegateway.Li
 	return ret0, ret1
 }
 
-// ListVolumeRecoveryPoints indicates an expected call of ListVolumeRecoveryPoints.
+// ListVolumeRecoveryPoints indicates an expected call of ListVolumeRecoveryPoints
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeRecoveryPoints(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumeRecoveryPoints", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumeRecoveryPoints), arg0)
 }
 
-// ListVolumeRecoveryPointsRequest mocks base method.
+// ListVolumeRecoveryPointsRequest mocks base method
 func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsRequest(arg0 *storagegateway.ListVolumeRecoveryPointsInput) (*request.Request, *storagegateway.ListVolumeRecoveryPointsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumeRecoveryPointsRequest", arg0)
@@ -3490,14 +2624,14 @@ func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsRequest(arg0 *storagegat
 	return ret0, ret1
 }
 
-// ListVolumeRecoveryPointsRequest indicates an expected call of ListVolumeRecoveryPointsRequest.
+// ListVolumeRecoveryPointsRequest indicates an expected call of ListVolumeRecoveryPointsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeRecoveryPointsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumeRecoveryPointsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumeRecoveryPointsRequest), arg0)
 }
 
-// ListVolumeRecoveryPointsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.ListVolumeRecoveryPointsOutput, error) {
+// ListVolumeRecoveryPointsWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.ListVolumeRecoveryPointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3509,14 +2643,14 @@ func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsWithContext(arg0 context
 	return ret0, ret1
 }
 
-// ListVolumeRecoveryPointsWithContext indicates an expected call of ListVolumeRecoveryPointsWithContext.
+// ListVolumeRecoveryPointsWithContext indicates an expected call of ListVolumeRecoveryPointsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeRecoveryPointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumeRecoveryPointsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumeRecoveryPointsWithContext), varargs...)
 }
 
-// ListVolumes mocks base method.
+// ListVolumes mocks base method
 func (m *MockStorageGatewayAPI) ListVolumes(arg0 *storagegateway.ListVolumesInput) (*storagegateway.ListVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumes", arg0)
@@ -3525,13 +2659,13 @@ func (m *MockStorageGatewayAPI) ListVolumes(arg0 *storagegateway.ListVolumesInpu
 	return ret0, ret1
 }
 
-// ListVolumes indicates an expected call of ListVolumes.
+// ListVolumes indicates an expected call of ListVolumes
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumes", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumes), arg0)
 }
 
-// ListVolumesPages mocks base method.
+// ListVolumesPages mocks base method
 func (m *MockStorageGatewayAPI) ListVolumesPages(arg0 *storagegateway.ListVolumesInput, arg1 func(*storagegateway.ListVolumesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumesPages", arg0, arg1)
@@ -3539,14 +2673,14 @@ func (m *MockStorageGatewayAPI) ListVolumesPages(arg0 *storagegateway.ListVolume
 	return ret0
 }
 
-// ListVolumesPages indicates an expected call of ListVolumesPages.
+// ListVolumesPages indicates an expected call of ListVolumesPages
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumesPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumesPages), arg0, arg1)
 }
 
-// ListVolumesPagesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListVolumesPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumesInput, arg2 func(*storagegateway.ListVolumesOutput, bool) bool, arg3 ...request.Option) error {
+// ListVolumesPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListVolumesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumesInput, arg2 func(*storagegateway.ListVolumesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3557,14 +2691,14 @@ func (m *MockStorageGatewayAPI) ListVolumesPagesWithContext(arg0 context.Context
 	return ret0
 }
 
-// ListVolumesPagesWithContext indicates an expected call of ListVolumesPagesWithContext.
+// ListVolumesPagesWithContext indicates an expected call of ListVolumesPagesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumesPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumesPagesWithContext), varargs...)
 }
 
-// ListVolumesRequest mocks base method.
+// ListVolumesRequest mocks base method
 func (m *MockStorageGatewayAPI) ListVolumesRequest(arg0 *storagegateway.ListVolumesInput) (*request.Request, *storagegateway.ListVolumesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVolumesRequest", arg0)
@@ -3573,14 +2707,14 @@ func (m *MockStorageGatewayAPI) ListVolumesRequest(arg0 *storagegateway.ListVolu
 	return ret0, ret1
 }
 
-// ListVolumesRequest indicates an expected call of ListVolumesRequest.
+// ListVolumesRequest indicates an expected call of ListVolumesRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumesRequest), arg0)
 }
 
-// ListVolumesWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ListVolumesWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumesInput, arg2 ...request.Option) (*storagegateway.ListVolumesOutput, error) {
+// ListVolumesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListVolumesWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumesInput, arg2 ...request.Option) (*storagegateway.ListVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3592,14 +2726,14 @@ func (m *MockStorageGatewayAPI) ListVolumesWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// ListVolumesWithContext indicates an expected call of ListVolumesWithContext.
+// ListVolumesWithContext indicates an expected call of ListVolumesWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ListVolumesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVolumesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListVolumesWithContext), varargs...)
 }
 
-// NotifyWhenUploaded mocks base method.
+// NotifyWhenUploaded mocks base method
 func (m *MockStorageGatewayAPI) NotifyWhenUploaded(arg0 *storagegateway.NotifyWhenUploadedInput) (*storagegateway.NotifyWhenUploadedOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "NotifyWhenUploaded", arg0)
@@ -3608,13 +2742,13 @@ func (m *MockStorageGatewayAPI) NotifyWhenUploaded(arg0 *storagegateway.NotifyWh
 	return ret0, ret1
 }
 
-// NotifyWhenUploaded indicates an expected call of NotifyWhenUploaded.
+// NotifyWhenUploaded indicates an expected call of NotifyWhenUploaded
 func (mr *MockStorageGatewayAPIMockRecorder) NotifyWhenUploaded(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyWhenUploaded", reflect.TypeOf((*MockStorageGatewayAPI)(nil).NotifyWhenUploaded), arg0)
 }
 
-// NotifyWhenUploadedRequest mocks base method.
+// NotifyWhenUploadedRequest mocks base method
 func (m *MockStorageGatewayAPI) NotifyWhenUploadedRequest(arg0 *storagegateway.NotifyWhenUploadedInput) (*request.Request, *storagegateway.NotifyWhenUploadedOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "NotifyWhenUploadedRequest", arg0)
@@ -3623,14 +2757,14 @@ func (m *MockStorageGatewayAPI) NotifyWhenUploadedRequest(arg0 *storagegateway.N
 	return ret0, ret1
 }
 
-// NotifyWhenUploadedRequest indicates an expected call of NotifyWhenUploadedRequest.
+// NotifyWhenUploadedRequest indicates an expected call of NotifyWhenUploadedRequest
 func (mr *MockStorageGatewayAPIMockRecorder) NotifyWhenUploadedRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyWhenUploadedRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).NotifyWhenUploadedRequest), arg0)
 }
 
-// NotifyWhenUploadedWithContext mocks base method.
-func (m *MockStorageGatewayAPI) NotifyWhenUploadedWithContext(arg0 context.Context, arg1 *storagegateway.NotifyWhenUploadedInput, arg2 ...request.Option) (*storagegateway.NotifyWhenUploadedOutput, error) {
+// NotifyWhenUploadedWithContext mocks base method
+func (m *MockStorageGatewayAPI) NotifyWhenUploadedWithContext(arg0 aws.Context, arg1 *storagegateway.NotifyWhenUploadedInput, arg2 ...request.Option) (*storagegateway.NotifyWhenUploadedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3642,14 +2776,14 @@ func (m *MockStorageGatewayAPI) NotifyWhenUploadedWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// NotifyWhenUploadedWithContext indicates an expected call of NotifyWhenUploadedWithContext.
+// NotifyWhenUploadedWithContext indicates an expected call of NotifyWhenUploadedWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) NotifyWhenUploadedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyWhenUploadedWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).NotifyWhenUploadedWithContext), varargs...)
 }
 
-// RefreshCache mocks base method.
+// RefreshCache mocks base method
 func (m *MockStorageGatewayAPI) RefreshCache(arg0 *storagegateway.RefreshCacheInput) (*storagegateway.RefreshCacheOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RefreshCache", arg0)
@@ -3658,13 +2792,13 @@ func (m *MockStorageGatewayAPI) RefreshCache(arg0 *storagegateway.RefreshCacheIn
 	return ret0, ret1
 }
 
-// RefreshCache indicates an expected call of RefreshCache.
+// RefreshCache indicates an expected call of RefreshCache
 func (mr *MockStorageGatewayAPIMockRecorder) RefreshCache(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RefreshCache", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RefreshCache), arg0)
 }
 
-// RefreshCacheRequest mocks base method.
+// RefreshCacheRequest mocks base method
 func (m *MockStorageGatewayAPI) RefreshCacheRequest(arg0 *storagegateway.RefreshCacheInput) (*request.Request, *storagegateway.RefreshCacheOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RefreshCacheRequest", arg0)
@@ -3673,14 +2807,14 @@ func (m *MockStorageGatewayAPI) RefreshCacheRequest(arg0 *storagegateway.Refresh
 	return ret0, ret1
 }
 
-// RefreshCacheRequest indicates an expected call of RefreshCacheRequest.
+// RefreshCacheRequest indicates an expected call of RefreshCacheRequest
 func (mr *MockStorageGatewayAPIMockRecorder) RefreshCacheRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RefreshCacheRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RefreshCacheRequest), arg0)
 }
 
-// RefreshCacheWithContext mocks base method.
-func (m *MockStorageGatewayAPI) RefreshCacheWithContext(arg0 context.Context, arg1 *storagegateway.RefreshCacheInput, arg2 ...request.Option) (*storagegateway.RefreshCacheOutput, error) {
+// RefreshCacheWithContext mocks base method
+func (m *MockStorageGatewayAPI) RefreshCacheWithContext(arg0 aws.Context, arg1 *storagegateway.RefreshCacheInput, arg2 ...request.Option) (*storagegateway.RefreshCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3692,14 +2826,14 @@ func (m *MockStorageGatewayAPI) RefreshCacheWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// RefreshCacheWithContext indicates an expected call of RefreshCacheWithContext.
+// RefreshCacheWithContext indicates an expected call of RefreshCacheWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) RefreshCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RefreshCacheWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RefreshCacheWithContext), varargs...)
 }
 
-// RemoveTagsFromResource mocks base method.
+// RemoveTagsFromResource mocks base method
 func (m *MockStorageGatewayAPI) RemoveTagsFromResource(arg0 *storagegateway.RemoveTagsFromResourceInput) (*storagegateway.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsFromResource", arg0)
@@ -3708,13 +2842,13 @@ func (m *MockStorageGatewayAPI) RemoveTagsFromResource(arg0 *storagegateway.Remo
 	return ret0, ret1
 }
 
-// RemoveTagsFromResource indicates an expected call of RemoveTagsFromResource.
+// RemoveTagsFromResource indicates an expected call of RemoveTagsFromResource
 func (mr *MockStorageGatewayAPIMockRecorder) RemoveTagsFromResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResource", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RemoveTagsFromResource), arg0)
 }
 
-// RemoveTagsFromResourceRequest mocks base method.
+// RemoveTagsFromResourceRequest mocks base method
 func (m *MockStorageGatewayAPI) RemoveTagsFromResourceRequest(arg0 *storagegateway.RemoveTagsFromResourceInput) (*request.Request, *storagegateway.RemoveTagsFromResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsFromResourceRequest", arg0)
@@ -3723,14 +2857,14 @@ func (m *MockStorageGatewayAPI) RemoveTagsFromResourceRequest(arg0 *storagegatew
 	return ret0, ret1
 }
 
-// RemoveTagsFromResourceRequest indicates an expected call of RemoveTagsFromResourceRequest.
+// RemoveTagsFromResourceRequest indicates an expected call of RemoveTagsFromResourceRequest
 func (mr *MockStorageGatewayAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResourceRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RemoveTagsFromResourceRequest), arg0)
 }
 
-// RemoveTagsFromResourceWithContext mocks base method.
-func (m *MockStorageGatewayAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *storagegateway.RemoveTagsFromResourceInput, arg2 ...request.Option) (*storagegateway.RemoveTagsFromResourceOutput, error) {
+// RemoveTagsFromResourceWithContext mocks base method
+func (m *MockStorageGatewayAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *storagegateway.RemoveTagsFromResourceInput, arg2 ...request.Option) (*storagegateway.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3742,14 +2876,14 @@ func (m *MockStorageGatewayAPI) RemoveTagsFromResourceWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// RemoveTagsFromResourceWithContext indicates an expected call of RemoveTagsFromResourceWithContext.
+// RemoveTagsFromResourceWithContext indicates an expected call of RemoveTagsFromResourceWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) RemoveTagsFromResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResourceWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RemoveTagsFromResourceWithContext), varargs...)
 }
 
-// ResetCache mocks base method.
+// ResetCache mocks base method
 func (m *MockStorageGatewayAPI) ResetCache(arg0 *storagegateway.ResetCacheInput) (*storagegateway.ResetCacheOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ResetCache", arg0)
@@ -3758,13 +2892,13 @@ func (m *MockStorageGatewayAPI) ResetCache(arg0 *storagegateway.ResetCacheInput)
 	return ret0, ret1
 }
 
-// ResetCache indicates an expected call of ResetCache.
+// ResetCache indicates an expected call of ResetCache
 func (mr *MockStorageGatewayAPIMockRecorder) ResetCache(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetCache", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ResetCache), arg0)
 }
 
-// ResetCacheRequest mocks base method.
+// ResetCacheRequest mocks base method
 func (m *MockStorageGatewayAPI) ResetCacheRequest(arg0 *storagegateway.ResetCacheInput) (*request.Request, *storagegateway.ResetCacheOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ResetCacheRequest", arg0)
@@ -3773,14 +2907,14 @@ func (m *MockStorageGatewayAPI) ResetCacheRequest(arg0 *storagegateway.ResetCach
 	return ret0, ret1
 }
 
-// ResetCacheRequest indicates an expected call of ResetCacheRequest.
+// ResetCacheRequest indicates an expected call of ResetCacheRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ResetCacheRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetCacheRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ResetCacheRequest), arg0)
 }
 
-// ResetCacheWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ResetCacheWithContext(arg0 context.Context, arg1 *storagegateway.ResetCacheInput, arg2 ...request.Option) (*storagegateway.ResetCacheOutput, error) {
+// ResetCacheWithContext mocks base method
+func (m *MockStorageGatewayAPI) ResetCacheWithContext(arg0 aws.Context, arg1 *storagegateway.ResetCacheInput, arg2 ...request.Option) (*storagegateway.ResetCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3792,14 +2926,14 @@ func (m *MockStorageGatewayAPI) ResetCacheWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ResetCacheWithContext indicates an expected call of ResetCacheWithContext.
+// ResetCacheWithContext indicates an expected call of ResetCacheWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ResetCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetCacheWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ResetCacheWithContext), varargs...)
 }
 
-// RetrieveTapeArchive mocks base method.
+// RetrieveTapeArchive mocks base method
 func (m *MockStorageGatewayAPI) RetrieveTapeArchive(arg0 *storagegateway.RetrieveTapeArchiveInput) (*storagegateway.RetrieveTapeArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveTapeArchive", arg0)
@@ -3808,13 +2942,13 @@ func (m *MockStorageGatewayAPI) RetrieveTapeArchive(arg0 *storagegateway.Retriev
 	return ret0, ret1
 }
 
-// RetrieveTapeArchive indicates an expected call of RetrieveTapeArchive.
+// RetrieveTapeArchive indicates an expected call of RetrieveTapeArchive
 func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeArchive(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveTapeArchive", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RetrieveTapeArchive), arg0)
 }
 
-// RetrieveTapeArchiveRequest mocks base method.
+// RetrieveTapeArchiveRequest mocks base method
 func (m *MockStorageGatewayAPI) RetrieveTapeArchiveRequest(arg0 *storagegateway.RetrieveTapeArchiveInput) (*request.Request, *storagegateway.RetrieveTapeArchiveOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveTapeArchiveRequest", arg0)
@@ -3823,14 +2957,14 @@ func (m *MockStorageGatewayAPI) RetrieveTapeArchiveRequest(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// RetrieveTapeArchiveRequest indicates an expected call of RetrieveTapeArchiveRequest.
+// RetrieveTapeArchiveRequest indicates an expected call of RetrieveTapeArchiveRequest
 func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeArchiveRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveTapeArchiveRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RetrieveTapeArchiveRequest), arg0)
 }
 
-// RetrieveTapeArchiveWithContext mocks base method.
-func (m *MockStorageGatewayAPI) RetrieveTapeArchiveWithContext(arg0 context.Context, arg1 *storagegateway.RetrieveTapeArchiveInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeArchiveOutput, error) {
+// RetrieveTapeArchiveWithContext mocks base method
+func (m *MockStorageGatewayAPI) RetrieveTapeArchiveWithContext(arg0 aws.Context, arg1 *storagegateway.RetrieveTapeArchiveInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3842,14 +2976,14 @@ func (m *MockStorageGatewayAPI) RetrieveTapeArchiveWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// RetrieveTapeArchiveWithContext indicates an expected call of RetrieveTapeArchiveWithContext.
+// RetrieveTapeArchiveWithContext indicates an expected call of RetrieveTapeArchiveWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveTapeArchiveWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RetrieveTapeArchiveWithContext), varargs...)
 }
 
-// RetrieveTapeRecoveryPoint mocks base method.
+// RetrieveTapeRecoveryPoint mocks base method
 func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPoint(arg0 *storagegateway.RetrieveTapeRecoveryPointInput) (*storagegateway.RetrieveTapeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveTapeRecoveryPoint", arg0)
@@ -3858,13 +2992,13 @@ func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPoint(arg0 *storagegateway.R
 	return ret0, ret1
 }
 
-// RetrieveTapeRecoveryPoint indicates an expected call of RetrieveTapeRecoveryPoint.
+// RetrieveTapeRecoveryPoint indicates an expected call of RetrieveTapeRecoveryPoint
 func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeRecoveryPoint(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveTapeRecoveryPoint", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RetrieveTapeRecoveryPoint), arg0)
 }
 
-// RetrieveTapeRecoveryPointRequest mocks base method.
+// RetrieveTapeRecoveryPointRequest mocks base method
 func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointRequest(arg0 *storagegateway.RetrieveTapeRecoveryPointInput) (*request.Request, *storagegateway.RetrieveTapeRecoveryPointOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveTapeRecoveryPointRequest", arg0)
@@ -3873,14 +3007,14 @@ func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointRequest(arg0 *storagega
 	return ret0, ret1
 }
 
-// RetrieveTapeRecoveryPointRequest indicates an expected call of RetrieveTapeRecoveryPointRequest.
+// RetrieveTapeRecoveryPointRequest indicates an expected call of RetrieveTapeRecoveryPointRequest
 func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeRecoveryPointRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveTapeRecoveryPointRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RetrieveTapeRecoveryPointRequest), arg0)
 }
 
-// RetrieveTapeRecoveryPointWithContext mocks base method.
-func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointWithContext(arg0 context.Context, arg1 *storagegateway.RetrieveTapeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeRecoveryPointOutput, error) {
+// RetrieveTapeRecoveryPointWithContext mocks base method
+func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointWithContext(arg0 aws.Context, arg1 *storagegateway.RetrieveTapeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3892,14 +3026,14 @@ func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// RetrieveTapeRecoveryPointWithContext indicates an expected call of RetrieveTapeRecoveryPointWithContext.
+// RetrieveTapeRecoveryPointWithContext indicates an expected call of RetrieveTapeRecoveryPointWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeRecoveryPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveTapeRecoveryPointWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).RetrieveTapeRecoveryPointWithContext), varargs...)
 }
 
-// SetLocalConsolePassword mocks base method.
+// SetLocalConsolePassword mocks base method
 func (m *MockStorageGatewayAPI) SetLocalConsolePassword(arg0 *storagegateway.SetLocalConsolePasswordInput) (*storagegateway.SetLocalConsolePasswordOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetLocalConsolePassword", arg0)
@@ -3908,13 +3042,13 @@ func (m *MockStorageGatewayAPI) SetLocalConsolePassword(arg0 *storagegateway.Set
 	return ret0, ret1
 }
 
-// SetLocalConsolePassword indicates an expected call of SetLocalConsolePassword.
+// SetLocalConsolePassword indicates an expected call of SetLocalConsolePassword
 func (mr *MockStorageGatewayAPIMockRecorder) SetLocalConsolePassword(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetLocalConsolePassword", reflect.TypeOf((*MockStorageGatewayAPI)(nil).SetLocalConsolePassword), arg0)
 }
 
-// SetLocalConsolePasswordRequest mocks base method.
+// SetLocalConsolePasswordRequest mocks base method
 func (m *MockStorageGatewayAPI) SetLocalConsolePasswordRequest(arg0 *storagegateway.SetLocalConsolePasswordInput) (*request.Request, *storagegateway.SetLocalConsolePasswordOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetLocalConsolePasswordRequest", arg0)
@@ -3923,14 +3057,14 @@ func (m *MockStorageGatewayAPI) SetLocalConsolePasswordRequest(arg0 *storagegate
 	return ret0, ret1
 }
 
-// SetLocalConsolePasswordRequest indicates an expected call of SetLocalConsolePasswordRequest.
+// SetLocalConsolePasswordRequest indicates an expected call of SetLocalConsolePasswordRequest
 func (mr *MockStorageGatewayAPIMockRecorder) SetLocalConsolePasswordRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetLocalConsolePasswordRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).SetLocalConsolePasswordRequest), arg0)
 }
 
-// SetLocalConsolePasswordWithContext mocks base method.
-func (m *MockStorageGatewayAPI) SetLocalConsolePasswordWithContext(arg0 context.Context, arg1 *storagegateway.SetLocalConsolePasswordInput, arg2 ...request.Option) (*storagegateway.SetLocalConsolePasswordOutput, error) {
+// SetLocalConsolePasswordWithContext mocks base method
+func (m *MockStorageGatewayAPI) SetLocalConsolePasswordWithContext(arg0 aws.Context, arg1 *storagegateway.SetLocalConsolePasswordInput, arg2 ...request.Option) (*storagegateway.SetLocalConsolePasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3942,14 +3076,14 @@ func (m *MockStorageGatewayAPI) SetLocalConsolePasswordWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// SetLocalConsolePasswordWithContext indicates an expected call of SetLocalConsolePasswordWithContext.
+// SetLocalConsolePasswordWithContext indicates an expected call of SetLocalConsolePasswordWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) SetLocalConsolePasswordWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetLocalConsolePasswordWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).SetLocalConsolePasswordWithContext), varargs...)
 }
 
-// SetSMBGuestPassword mocks base method.
+// SetSMBGuestPassword mocks base method
 func (m *MockStorageGatewayAPI) SetSMBGuestPassword(arg0 *storagegateway.SetSMBGuestPasswordInput) (*storagegateway.SetSMBGuestPasswordOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetSMBGuestPassword", arg0)
@@ -3958,13 +3092,13 @@ func (m *MockStorageGatewayAPI) SetSMBGuestPassword(arg0 *storagegateway.SetSMBG
 	return ret0, ret1
 }
 
-// SetSMBGuestPassword indicates an expected call of SetSMBGuestPassword.
+// SetSMBGuestPassword indicates an expected call of SetSMBGuestPassword
 func (mr *MockStorageGatewayAPIMockRecorder) SetSMBGuestPassword(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetSMBGuestPassword", reflect.TypeOf((*MockStorageGatewayAPI)(nil).SetSMBGuestPassword), arg0)
 }
 
-// SetSMBGuestPasswordRequest mocks base method.
+// SetSMBGuestPasswordRequest mocks base method
 func (m *MockStorageGatewayAPI) SetSMBGuestPasswordRequest(arg0 *storagegateway.SetSMBGuestPasswordInput) (*request.Request, *storagegateway.SetSMBGuestPasswordOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetSMBGuestPasswordRequest", arg0)
@@ -3973,14 +3107,14 @@ func (m *MockStorageGatewayAPI) SetSMBGuestPasswordRequest(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// SetSMBGuestPasswordRequest indicates an expected call of SetSMBGuestPasswordRequest.
+// SetSMBGuestPasswordRequest indicates an expected call of SetSMBGuestPasswordRequest
 func (mr *MockStorageGatewayAPIMockRecorder) SetSMBGuestPasswordRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetSMBGuestPasswordRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).SetSMBGuestPasswordRequest), arg0)
 }
 
-// SetSMBGuestPasswordWithContext mocks base method.
-func (m *MockStorageGatewayAPI) SetSMBGuestPasswordWithContext(arg0 context.Context, arg1 *storagegateway.SetSMBGuestPasswordInput, arg2 ...request.Option) (*storagegateway.SetSMBGuestPasswordOutput, error) {
+// SetSMBGuestPasswordWithContext mocks base method
+func (m *MockStorageGatewayAPI) SetSMBGuestPasswordWithContext(arg0 aws.Context, arg1 *storagegateway.SetSMBGuestPasswordInput, arg2 ...request.Option) (*storagegateway.SetSMBGuestPasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3992,14 +3126,14 @@ func (m *MockStorageGatewayAPI) SetSMBGuestPasswordWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// SetSMBGuestPasswordWithContext indicates an expected call of SetSMBGuestPasswordWithContext.
+// SetSMBGuestPasswordWithContext indicates an expected call of SetSMBGuestPasswordWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) SetSMBGuestPasswordWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetSMBGuestPasswordWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).SetSMBGuestPasswordWithContext), varargs...)
 }
 
-// ShutdownGateway mocks base method.
+// ShutdownGateway mocks base method
 func (m *MockStorageGatewayAPI) ShutdownGateway(arg0 *storagegateway.ShutdownGatewayInput) (*storagegateway.ShutdownGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ShutdownGateway", arg0)
@@ -4008,13 +3142,13 @@ func (m *MockStorageGatewayAPI) ShutdownGateway(arg0 *storagegateway.ShutdownGat
 	return ret0, ret1
 }
 
-// ShutdownGateway indicates an expected call of ShutdownGateway.
+// ShutdownGateway indicates an expected call of ShutdownGateway
 func (mr *MockStorageGatewayAPIMockRecorder) ShutdownGateway(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShutdownGateway", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ShutdownGateway), arg0)
 }
 
-// ShutdownGatewayRequest mocks base method.
+// ShutdownGatewayRequest mocks base method
 func (m *MockStorageGatewayAPI) ShutdownGatewayRequest(arg0 *storagegateway.ShutdownGatewayInput) (*request.Request, *storagegateway.ShutdownGatewayOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ShutdownGatewayRequest", arg0)
@@ -4023,14 +3157,14 @@ func (m *MockStorageGatewayAPI) ShutdownGatewayRequest(arg0 *storagegateway.Shut
 	return ret0, ret1
 }
 
-// ShutdownGatewayRequest indicates an expected call of ShutdownGatewayRequest.
+// ShutdownGatewayRequest indicates an expected call of ShutdownGatewayRequest
 func (mr *MockStorageGatewayAPIMockRecorder) ShutdownGatewayRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShutdownGatewayRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ShutdownGatewayRequest), arg0)
 }
 
-// ShutdownGatewayWithContext mocks base method.
-func (m *MockStorageGatewayAPI) ShutdownGatewayWithContext(arg0 context.Context, arg1 *storagegateway.ShutdownGatewayInput, arg2 ...request.Option) (*storagegateway.ShutdownGatewayOutput, error) {
+// ShutdownGatewayWithContext mocks base method
+func (m *MockStorageGatewayAPI) ShutdownGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.ShutdownGatewayInput, arg2 ...request.Option) (*storagegateway.ShutdownGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4042,64 +3176,14 @@ func (m *MockStorageGatewayAPI) ShutdownGatewayWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ShutdownGatewayWithContext indicates an expected call of ShutdownGatewayWithContext.
+// ShutdownGatewayWithContext indicates an expected call of ShutdownGatewayWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) ShutdownGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShutdownGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ShutdownGatewayWithContext), varargs...)
 }
 
-// StartAvailabilityMonitorTest mocks base method.
-func (m *MockStorageGatewayAPI) StartAvailabilityMonitorTest(arg0 *storagegateway.StartAvailabilityMonitorTestInput) (*storagegateway.StartAvailabilityMonitorTestOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartAvailabilityMonitorTest", arg0)
-	ret0, _ := ret[0].(*storagegateway.StartAvailabilityMonitorTestOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartAvailabilityMonitorTest indicates an expected call of StartAvailabilityMonitorTest.
-func (mr *MockStorageGatewayAPIMockRecorder) StartAvailabilityMonitorTest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAvailabilityMonitorTest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartAvailabilityMonitorTest), arg0)
-}
-
-// StartAvailabilityMonitorTestRequest mocks base method.
-func (m *MockStorageGatewayAPI) StartAvailabilityMonitorTestRequest(arg0 *storagegateway.StartAvailabilityMonitorTestInput) (*request.Request, *storagegateway.StartAvailabilityMonitorTestOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartAvailabilityMonitorTestRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.StartAvailabilityMonitorTestOutput)
-	return ret0, ret1
-}
-
-// StartAvailabilityMonitorTestRequest indicates an expected call of StartAvailabilityMonitorTestRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) StartAvailabilityMonitorTestRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAvailabilityMonitorTestRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartAvailabilityMonitorTestRequest), arg0)
-}
-
-// StartAvailabilityMonitorTestWithContext mocks base method.
-func (m *MockStorageGatewayAPI) StartAvailabilityMonitorTestWithContext(arg0 context.Context, arg1 *storagegateway.StartAvailabilityMonitorTestInput, arg2 ...request.Option) (*storagegateway.StartAvailabilityMonitorTestOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "StartAvailabilityMonitorTestWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.StartAvailabilityMonitorTestOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartAvailabilityMonitorTestWithContext indicates an expected call of StartAvailabilityMonitorTestWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) StartAvailabilityMonitorTestWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAvailabilityMonitorTestWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartAvailabilityMonitorTestWithContext), varargs...)
-}
-
-// StartGateway mocks base method.
+// StartGateway mocks base method
 func (m *MockStorageGatewayAPI) StartGateway(arg0 *storagegateway.StartGatewayInput) (*storagegateway.StartGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartGateway", arg0)
@@ -4108,13 +3192,13 @@ func (m *MockStorageGatewayAPI) StartGateway(arg0 *storagegateway.StartGatewayIn
 	return ret0, ret1
 }
 
-// StartGateway indicates an expected call of StartGateway.
+// StartGateway indicates an expected call of StartGateway
 func (mr *MockStorageGatewayAPIMockRecorder) StartGateway(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGateway", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartGateway), arg0)
 }
 
-// StartGatewayRequest mocks base method.
+// StartGatewayRequest mocks base method
 func (m *MockStorageGatewayAPI) StartGatewayRequest(arg0 *storagegateway.StartGatewayInput) (*request.Request, *storagegateway.StartGatewayOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartGatewayRequest", arg0)
@@ -4123,14 +3207,14 @@ func (m *MockStorageGatewayAPI) StartGatewayRequest(arg0 *storagegateway.StartGa
 	return ret0, ret1
 }
 
-// StartGatewayRequest indicates an expected call of StartGatewayRequest.
+// StartGatewayRequest indicates an expected call of StartGatewayRequest
 func (mr *MockStorageGatewayAPIMockRecorder) StartGatewayRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGatewayRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartGatewayRequest), arg0)
 }
 
-// StartGatewayWithContext mocks base method.
-func (m *MockStorageGatewayAPI) StartGatewayWithContext(arg0 context.Context, arg1 *storagegateway.StartGatewayInput, arg2 ...request.Option) (*storagegateway.StartGatewayOutput, error) {
+// StartGatewayWithContext mocks base method
+func (m *MockStorageGatewayAPI) StartGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.StartGatewayInput, arg2 ...request.Option) (*storagegateway.StartGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4142,64 +3226,14 @@ func (m *MockStorageGatewayAPI) StartGatewayWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// StartGatewayWithContext indicates an expected call of StartGatewayWithContext.
+// StartGatewayWithContext indicates an expected call of StartGatewayWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) StartGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartGatewayWithContext), varargs...)
 }
 
-// UpdateAutomaticTapeCreationPolicy mocks base method.
-func (m *MockStorageGatewayAPI) UpdateAutomaticTapeCreationPolicy(arg0 *storagegateway.UpdateAutomaticTapeCreationPolicyInput) (*storagegateway.UpdateAutomaticTapeCreationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateAutomaticTapeCreationPolicy", arg0)
-	ret0, _ := ret[0].(*storagegateway.UpdateAutomaticTapeCreationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateAutomaticTapeCreationPolicy indicates an expected call of UpdateAutomaticTapeCreationPolicy.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateAutomaticTapeCreationPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutomaticTapeCreationPolicy", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateAutomaticTapeCreationPolicy), arg0)
-}
-
-// UpdateAutomaticTapeCreationPolicyRequest mocks base method.
-func (m *MockStorageGatewayAPI) UpdateAutomaticTapeCreationPolicyRequest(arg0 *storagegateway.UpdateAutomaticTapeCreationPolicyInput) (*request.Request, *storagegateway.UpdateAutomaticTapeCreationPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateAutomaticTapeCreationPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.UpdateAutomaticTapeCreationPolicyOutput)
-	return ret0, ret1
-}
-
-// UpdateAutomaticTapeCreationPolicyRequest indicates an expected call of UpdateAutomaticTapeCreationPolicyRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateAutomaticTapeCreationPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutomaticTapeCreationPolicyRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateAutomaticTapeCreationPolicyRequest), arg0)
-}
-
-// UpdateAutomaticTapeCreationPolicyWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateAutomaticTapeCreationPolicyWithContext(arg0 context.Context, arg1 *storagegateway.UpdateAutomaticTapeCreationPolicyInput, arg2 ...request.Option) (*storagegateway.UpdateAutomaticTapeCreationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateAutomaticTapeCreationPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.UpdateAutomaticTapeCreationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateAutomaticTapeCreationPolicyWithContext indicates an expected call of UpdateAutomaticTapeCreationPolicyWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateAutomaticTapeCreationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutomaticTapeCreationPolicyWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateAutomaticTapeCreationPolicyWithContext), varargs...)
-}
-
-// UpdateBandwidthRateLimit mocks base method.
+// UpdateBandwidthRateLimit mocks base method
 func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimit(arg0 *storagegateway.UpdateBandwidthRateLimitInput) (*storagegateway.UpdateBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimit", arg0)
@@ -4208,13 +3242,13 @@ func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimit(arg0 *storagegateway.Up
 	return ret0, ret1
 }
 
-// UpdateBandwidthRateLimit indicates an expected call of UpdateBandwidthRateLimit.
+// UpdateBandwidthRateLimit indicates an expected call of UpdateBandwidthRateLimit
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimit(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimit", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimit), arg0)
 }
 
-// UpdateBandwidthRateLimitRequest mocks base method.
+// UpdateBandwidthRateLimitRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitRequest(arg0 *storagegateway.UpdateBandwidthRateLimitInput) (*request.Request, *storagegateway.UpdateBandwidthRateLimitOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitRequest", arg0)
@@ -4223,64 +3257,14 @@ func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitRequest(arg0 *storagegat
 	return ret0, ret1
 }
 
-// UpdateBandwidthRateLimitRequest indicates an expected call of UpdateBandwidthRateLimitRequest.
+// UpdateBandwidthRateLimitRequest indicates an expected call of UpdateBandwidthRateLimitRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitRequest), arg0)
 }
 
-// UpdateBandwidthRateLimitSchedule mocks base method.
-func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitSchedule(arg0 *storagegateway.UpdateBandwidthRateLimitScheduleInput) (*storagegateway.UpdateBandwidthRateLimitScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitSchedule", arg0)
-	ret0, _ := ret[0].(*storagegateway.UpdateBandwidthRateLimitScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateBandwidthRateLimitSchedule indicates an expected call of UpdateBandwidthRateLimitSchedule.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitSchedule(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitSchedule), arg0)
-}
-
-// UpdateBandwidthRateLimitScheduleRequest mocks base method.
-func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitScheduleRequest(arg0 *storagegateway.UpdateBandwidthRateLimitScheduleInput) (*request.Request, *storagegateway.UpdateBandwidthRateLimitScheduleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitScheduleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.UpdateBandwidthRateLimitScheduleOutput)
-	return ret0, ret1
-}
-
-// UpdateBandwidthRateLimitScheduleRequest indicates an expected call of UpdateBandwidthRateLimitScheduleRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitScheduleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitScheduleRequest), arg0)
-}
-
-// UpdateBandwidthRateLimitScheduleWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitScheduleWithContext(arg0 context.Context, arg1 *storagegateway.UpdateBandwidthRateLimitScheduleInput, arg2 ...request.Option) (*storagegateway.UpdateBandwidthRateLimitScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitScheduleWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.UpdateBandwidthRateLimitScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateBandwidthRateLimitScheduleWithContext indicates an expected call of UpdateBandwidthRateLimitScheduleWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitScheduleWithContext), varargs...)
-}
-
-// UpdateBandwidthRateLimitWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.UpdateBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.UpdateBandwidthRateLimitOutput, error) {
+// UpdateBandwidthRateLimitWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.UpdateBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4292,14 +3276,14 @@ func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitWithContext(arg0 context
 	return ret0, ret1
 }
 
-// UpdateBandwidthRateLimitWithContext indicates an expected call of UpdateBandwidthRateLimitWithContext.
+// UpdateBandwidthRateLimitWithContext indicates an expected call of UpdateBandwidthRateLimitWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitWithContext), varargs...)
 }
 
-// UpdateChapCredentials mocks base method.
+// UpdateChapCredentials mocks base method
 func (m *MockStorageGatewayAPI) UpdateChapCredentials(arg0 *storagegateway.UpdateChapCredentialsInput) (*storagegateway.UpdateChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateChapCredentials", arg0)
@@ -4308,13 +3292,13 @@ func (m *MockStorageGatewayAPI) UpdateChapCredentials(arg0 *storagegateway.Updat
 	return ret0, ret1
 }
 
-// UpdateChapCredentials indicates an expected call of UpdateChapCredentials.
+// UpdateChapCredentials indicates an expected call of UpdateChapCredentials
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateChapCredentials(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChapCredentials", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateChapCredentials), arg0)
 }
 
-// UpdateChapCredentialsRequest mocks base method.
+// UpdateChapCredentialsRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateChapCredentialsRequest(arg0 *storagegateway.UpdateChapCredentialsInput) (*request.Request, *storagegateway.UpdateChapCredentialsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateChapCredentialsRequest", arg0)
@@ -4323,14 +3307,14 @@ func (m *MockStorageGatewayAPI) UpdateChapCredentialsRequest(arg0 *storagegatewa
 	return ret0, ret1
 }
 
-// UpdateChapCredentialsRequest indicates an expected call of UpdateChapCredentialsRequest.
+// UpdateChapCredentialsRequest indicates an expected call of UpdateChapCredentialsRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateChapCredentialsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChapCredentialsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateChapCredentialsRequest), arg0)
 }
 
-// UpdateChapCredentialsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateChapCredentialsWithContext(arg0 context.Context, arg1 *storagegateway.UpdateChapCredentialsInput, arg2 ...request.Option) (*storagegateway.UpdateChapCredentialsOutput, error) {
+// UpdateChapCredentialsWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateChapCredentialsWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateChapCredentialsInput, arg2 ...request.Option) (*storagegateway.UpdateChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4342,64 +3326,14 @@ func (m *MockStorageGatewayAPI) UpdateChapCredentialsWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// UpdateChapCredentialsWithContext indicates an expected call of UpdateChapCredentialsWithContext.
+// UpdateChapCredentialsWithContext indicates an expected call of UpdateChapCredentialsWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateChapCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChapCredentialsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateChapCredentialsWithContext), varargs...)
 }
 
-// UpdateFileSystemAssociation mocks base method.
-func (m *MockStorageGatewayAPI) UpdateFileSystemAssociation(arg0 *storagegateway.UpdateFileSystemAssociationInput) (*storagegateway.UpdateFileSystemAssociationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateFileSystemAssociation", arg0)
-	ret0, _ := ret[0].(*storagegateway.UpdateFileSystemAssociationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateFileSystemAssociation indicates an expected call of UpdateFileSystemAssociation.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateFileSystemAssociation(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemAssociation", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateFileSystemAssociation), arg0)
-}
-
-// UpdateFileSystemAssociationRequest mocks base method.
-func (m *MockStorageGatewayAPI) UpdateFileSystemAssociationRequest(arg0 *storagegateway.UpdateFileSystemAssociationInput) (*request.Request, *storagegateway.UpdateFileSystemAssociationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateFileSystemAssociationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.UpdateFileSystemAssociationOutput)
-	return ret0, ret1
-}
-
-// UpdateFileSystemAssociationRequest indicates an expected call of UpdateFileSystemAssociationRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateFileSystemAssociationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemAssociationRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateFileSystemAssociationRequest), arg0)
-}
-
-// UpdateFileSystemAssociationWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateFileSystemAssociationWithContext(arg0 context.Context, arg1 *storagegateway.UpdateFileSystemAssociationInput, arg2 ...request.Option) (*storagegateway.UpdateFileSystemAssociationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateFileSystemAssociationWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.UpdateFileSystemAssociationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateFileSystemAssociationWithContext indicates an expected call of UpdateFileSystemAssociationWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateFileSystemAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemAssociationWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateFileSystemAssociationWithContext), varargs...)
-}
-
-// UpdateGatewayInformation mocks base method.
+// UpdateGatewayInformation mocks base method
 func (m *MockStorageGatewayAPI) UpdateGatewayInformation(arg0 *storagegateway.UpdateGatewayInformationInput) (*storagegateway.UpdateGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGatewayInformation", arg0)
@@ -4408,13 +3342,13 @@ func (m *MockStorageGatewayAPI) UpdateGatewayInformation(arg0 *storagegateway.Up
 	return ret0, ret1
 }
 
-// UpdateGatewayInformation indicates an expected call of UpdateGatewayInformation.
+// UpdateGatewayInformation indicates an expected call of UpdateGatewayInformation
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewayInformation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInformation", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateGatewayInformation), arg0)
 }
 
-// UpdateGatewayInformationRequest mocks base method.
+// UpdateGatewayInformationRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateGatewayInformationRequest(arg0 *storagegateway.UpdateGatewayInformationInput) (*request.Request, *storagegateway.UpdateGatewayInformationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGatewayInformationRequest", arg0)
@@ -4423,14 +3357,14 @@ func (m *MockStorageGatewayAPI) UpdateGatewayInformationRequest(arg0 *storagegat
 	return ret0, ret1
 }
 
-// UpdateGatewayInformationRequest indicates an expected call of UpdateGatewayInformationRequest.
+// UpdateGatewayInformationRequest indicates an expected call of UpdateGatewayInformationRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewayInformationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInformationRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateGatewayInformationRequest), arg0)
 }
 
-// UpdateGatewayInformationWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateGatewayInformationWithContext(arg0 context.Context, arg1 *storagegateway.UpdateGatewayInformationInput, arg2 ...request.Option) (*storagegateway.UpdateGatewayInformationOutput, error) {
+// UpdateGatewayInformationWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateGatewayInformationWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateGatewayInformationInput, arg2 ...request.Option) (*storagegateway.UpdateGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4442,14 +3376,14 @@ func (m *MockStorageGatewayAPI) UpdateGatewayInformationWithContext(arg0 context
 	return ret0, ret1
 }
 
-// UpdateGatewayInformationWithContext indicates an expected call of UpdateGatewayInformationWithContext.
+// UpdateGatewayInformationWithContext indicates an expected call of UpdateGatewayInformationWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewayInformationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInformationWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateGatewayInformationWithContext), varargs...)
 }
 
-// UpdateGatewaySoftwareNow mocks base method.
+// UpdateGatewaySoftwareNow mocks base method
 func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNow(arg0 *storagegateway.UpdateGatewaySoftwareNowInput) (*storagegateway.UpdateGatewaySoftwareNowOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGatewaySoftwareNow", arg0)
@@ -4458,13 +3392,13 @@ func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNow(arg0 *storagegateway.Up
 	return ret0, ret1
 }
 
-// UpdateGatewaySoftwareNow indicates an expected call of UpdateGatewaySoftwareNow.
+// UpdateGatewaySoftwareNow indicates an expected call of UpdateGatewaySoftwareNow
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewaySoftwareNow(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewaySoftwareNow", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateGatewaySoftwareNow), arg0)
 }
 
-// UpdateGatewaySoftwareNowRequest mocks base method.
+// UpdateGatewaySoftwareNowRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowRequest(arg0 *storagegateway.UpdateGatewaySoftwareNowInput) (*request.Request, *storagegateway.UpdateGatewaySoftwareNowOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGatewaySoftwareNowRequest", arg0)
@@ -4473,14 +3407,14 @@ func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowRequest(arg0 *storagegat
 	return ret0, ret1
 }
 
-// UpdateGatewaySoftwareNowRequest indicates an expected call of UpdateGatewaySoftwareNowRequest.
+// UpdateGatewaySoftwareNowRequest indicates an expected call of UpdateGatewaySoftwareNowRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewaySoftwareNowRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewaySoftwareNowRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateGatewaySoftwareNowRequest), arg0)
 }
 
-// UpdateGatewaySoftwareNowWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowWithContext(arg0 context.Context, arg1 *storagegateway.UpdateGatewaySoftwareNowInput, arg2 ...request.Option) (*storagegateway.UpdateGatewaySoftwareNowOutput, error) {
+// UpdateGatewaySoftwareNowWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateGatewaySoftwareNowInput, arg2 ...request.Option) (*storagegateway.UpdateGatewaySoftwareNowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4492,14 +3426,14 @@ func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowWithContext(arg0 context
 	return ret0, ret1
 }
 
-// UpdateGatewaySoftwareNowWithContext indicates an expected call of UpdateGatewaySoftwareNowWithContext.
+// UpdateGatewaySoftwareNowWithContext indicates an expected call of UpdateGatewaySoftwareNowWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewaySoftwareNowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewaySoftwareNowWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateGatewaySoftwareNowWithContext), varargs...)
 }
 
-// UpdateMaintenanceStartTime mocks base method.
+// UpdateMaintenanceStartTime mocks base method
 func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTime(arg0 *storagegateway.UpdateMaintenanceStartTimeInput) (*storagegateway.UpdateMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMaintenanceStartTime", arg0)
@@ -4508,13 +3442,13 @@ func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTime(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// UpdateMaintenanceStartTime indicates an expected call of UpdateMaintenanceStartTime.
+// UpdateMaintenanceStartTime indicates an expected call of UpdateMaintenanceStartTime
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateMaintenanceStartTime(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMaintenanceStartTime", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateMaintenanceStartTime), arg0)
 }
 
-// UpdateMaintenanceStartTimeRequest mocks base method.
+// UpdateMaintenanceStartTimeRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeRequest(arg0 *storagegateway.UpdateMaintenanceStartTimeInput) (*request.Request, *storagegateway.UpdateMaintenanceStartTimeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMaintenanceStartTimeRequest", arg0)
@@ -4523,14 +3457,14 @@ func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeRequest(arg0 *storageg
 	return ret0, ret1
 }
 
-// UpdateMaintenanceStartTimeRequest indicates an expected call of UpdateMaintenanceStartTimeRequest.
+// UpdateMaintenanceStartTimeRequest indicates an expected call of UpdateMaintenanceStartTimeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateMaintenanceStartTimeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMaintenanceStartTimeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateMaintenanceStartTimeRequest), arg0)
 }
 
-// UpdateMaintenanceStartTimeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeWithContext(arg0 context.Context, arg1 *storagegateway.UpdateMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.UpdateMaintenanceStartTimeOutput, error) {
+// UpdateMaintenanceStartTimeWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.UpdateMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4542,14 +3476,14 @@ func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// UpdateMaintenanceStartTimeWithContext indicates an expected call of UpdateMaintenanceStartTimeWithContext.
+// UpdateMaintenanceStartTimeWithContext indicates an expected call of UpdateMaintenanceStartTimeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateMaintenanceStartTimeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMaintenanceStartTimeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateMaintenanceStartTimeWithContext), varargs...)
 }
 
-// UpdateNFSFileShare mocks base method.
+// UpdateNFSFileShare mocks base method
 func (m *MockStorageGatewayAPI) UpdateNFSFileShare(arg0 *storagegateway.UpdateNFSFileShareInput) (*storagegateway.UpdateNFSFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateNFSFileShare", arg0)
@@ -4558,13 +3492,13 @@ func (m *MockStorageGatewayAPI) UpdateNFSFileShare(arg0 *storagegateway.UpdateNF
 	return ret0, ret1
 }
 
-// UpdateNFSFileShare indicates an expected call of UpdateNFSFileShare.
+// UpdateNFSFileShare indicates an expected call of UpdateNFSFileShare
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateNFSFileShare(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNFSFileShare", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateNFSFileShare), arg0)
 }
 
-// UpdateNFSFileShareRequest mocks base method.
+// UpdateNFSFileShareRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateNFSFileShareRequest(arg0 *storagegateway.UpdateNFSFileShareInput) (*request.Request, *storagegateway.UpdateNFSFileShareOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateNFSFileShareRequest", arg0)
@@ -4573,14 +3507,14 @@ func (m *MockStorageGatewayAPI) UpdateNFSFileShareRequest(arg0 *storagegateway.U
 	return ret0, ret1
 }
 
-// UpdateNFSFileShareRequest indicates an expected call of UpdateNFSFileShareRequest.
+// UpdateNFSFileShareRequest indicates an expected call of UpdateNFSFileShareRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateNFSFileShareRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNFSFileShareRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateNFSFileShareRequest), arg0)
 }
 
-// UpdateNFSFileShareWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateNFSFileShareWithContext(arg0 context.Context, arg1 *storagegateway.UpdateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateNFSFileShareOutput, error) {
+// UpdateNFSFileShareWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateNFSFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateNFSFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4592,14 +3526,14 @@ func (m *MockStorageGatewayAPI) UpdateNFSFileShareWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// UpdateNFSFileShareWithContext indicates an expected call of UpdateNFSFileShareWithContext.
+// UpdateNFSFileShareWithContext indicates an expected call of UpdateNFSFileShareWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateNFSFileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNFSFileShareWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateNFSFileShareWithContext), varargs...)
 }
 
-// UpdateSMBFileShare mocks base method.
+// UpdateSMBFileShare mocks base method
 func (m *MockStorageGatewayAPI) UpdateSMBFileShare(arg0 *storagegateway.UpdateSMBFileShareInput) (*storagegateway.UpdateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSMBFileShare", arg0)
@@ -4608,13 +3542,13 @@ func (m *MockStorageGatewayAPI) UpdateSMBFileShare(arg0 *storagegateway.UpdateSM
 	return ret0, ret1
 }
 
-// UpdateSMBFileShare indicates an expected call of UpdateSMBFileShare.
+// UpdateSMBFileShare indicates an expected call of UpdateSMBFileShare
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShare(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShare", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShare), arg0)
 }
 
-// UpdateSMBFileShareRequest mocks base method.
+// UpdateSMBFileShareRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateSMBFileShareRequest(arg0 *storagegateway.UpdateSMBFileShareInput) (*request.Request, *storagegateway.UpdateSMBFileShareOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSMBFileShareRequest", arg0)
@@ -4623,64 +3557,14 @@ func (m *MockStorageGatewayAPI) UpdateSMBFileShareRequest(arg0 *storagegateway.U
 	return ret0, ret1
 }
 
-// UpdateSMBFileShareRequest indicates an expected call of UpdateSMBFileShareRequest.
+// UpdateSMBFileShareRequest indicates an expected call of UpdateSMBFileShareRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareRequest), arg0)
 }
 
-// UpdateSMBFileShareVisibility mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBFileShareVisibility(arg0 *storagegateway.UpdateSMBFileShareVisibilityInput) (*storagegateway.UpdateSMBFileShareVisibilityOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSMBFileShareVisibility", arg0)
-	ret0, _ := ret[0].(*storagegateway.UpdateSMBFileShareVisibilityOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSMBFileShareVisibility indicates an expected call of UpdateSMBFileShareVisibility.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareVisibility(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareVisibility", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareVisibility), arg0)
-}
-
-// UpdateSMBFileShareVisibilityRequest mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBFileShareVisibilityRequest(arg0 *storagegateway.UpdateSMBFileShareVisibilityInput) (*request.Request, *storagegateway.UpdateSMBFileShareVisibilityOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSMBFileShareVisibilityRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.UpdateSMBFileShareVisibilityOutput)
-	return ret0, ret1
-}
-
-// UpdateSMBFileShareVisibilityRequest indicates an expected call of UpdateSMBFileShareVisibilityRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareVisibilityRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareVisibilityRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareVisibilityRequest), arg0)
-}
-
-// UpdateSMBFileShareVisibilityWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBFileShareVisibilityWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBFileShareVisibilityInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareVisibilityOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateSMBFileShareVisibilityWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.UpdateSMBFileShareVisibilityOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSMBFileShareVisibilityWithContext indicates an expected call of UpdateSMBFileShareVisibilityWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareVisibilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareVisibilityWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareVisibilityWithContext), varargs...)
-}
-
-// UpdateSMBFileShareWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBFileShareWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareOutput, error) {
+// UpdateSMBFileShareWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4692,114 +3576,14 @@ func (m *MockStorageGatewayAPI) UpdateSMBFileShareWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// UpdateSMBFileShareWithContext indicates an expected call of UpdateSMBFileShareWithContext.
+// UpdateSMBFileShareWithContext indicates an expected call of UpdateSMBFileShareWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareWithContext), varargs...)
 }
 
-// UpdateSMBLocalGroups mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBLocalGroups(arg0 *storagegateway.UpdateSMBLocalGroupsInput) (*storagegateway.UpdateSMBLocalGroupsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSMBLocalGroups", arg0)
-	ret0, _ := ret[0].(*storagegateway.UpdateSMBLocalGroupsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSMBLocalGroups indicates an expected call of UpdateSMBLocalGroups.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBLocalGroups(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBLocalGroups", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBLocalGroups), arg0)
-}
-
-// UpdateSMBLocalGroupsRequest mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBLocalGroupsRequest(arg0 *storagegateway.UpdateSMBLocalGroupsInput) (*request.Request, *storagegateway.UpdateSMBLocalGroupsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSMBLocalGroupsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.UpdateSMBLocalGroupsOutput)
-	return ret0, ret1
-}
-
-// UpdateSMBLocalGroupsRequest indicates an expected call of UpdateSMBLocalGroupsRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBLocalGroupsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBLocalGroupsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBLocalGroupsRequest), arg0)
-}
-
-// UpdateSMBLocalGroupsWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBLocalGroupsWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBLocalGroupsInput, arg2 ...request.Option) (*storagegateway.UpdateSMBLocalGroupsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateSMBLocalGroupsWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.UpdateSMBLocalGroupsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSMBLocalGroupsWithContext indicates an expected call of UpdateSMBLocalGroupsWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBLocalGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBLocalGroupsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBLocalGroupsWithContext), varargs...)
-}
-
-// UpdateSMBSecurityStrategy mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBSecurityStrategy(arg0 *storagegateway.UpdateSMBSecurityStrategyInput) (*storagegateway.UpdateSMBSecurityStrategyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSMBSecurityStrategy", arg0)
-	ret0, _ := ret[0].(*storagegateway.UpdateSMBSecurityStrategyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSMBSecurityStrategy indicates an expected call of UpdateSMBSecurityStrategy.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBSecurityStrategy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBSecurityStrategy", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBSecurityStrategy), arg0)
-}
-
-// UpdateSMBSecurityStrategyRequest mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBSecurityStrategyRequest(arg0 *storagegateway.UpdateSMBSecurityStrategyInput) (*request.Request, *storagegateway.UpdateSMBSecurityStrategyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSMBSecurityStrategyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*storagegateway.UpdateSMBSecurityStrategyOutput)
-	return ret0, ret1
-}
-
-// UpdateSMBSecurityStrategyRequest indicates an expected call of UpdateSMBSecurityStrategyRequest.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBSecurityStrategyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBSecurityStrategyRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBSecurityStrategyRequest), arg0)
-}
-
-// UpdateSMBSecurityStrategyWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSMBSecurityStrategyWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBSecurityStrategyInput, arg2 ...request.Option) (*storagegateway.UpdateSMBSecurityStrategyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateSMBSecurityStrategyWithContext", varargs...)
-	ret0, _ := ret[0].(*storagegateway.UpdateSMBSecurityStrategyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSMBSecurityStrategyWithContext indicates an expected call of UpdateSMBSecurityStrategyWithContext.
-func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBSecurityStrategyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBSecurityStrategyWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBSecurityStrategyWithContext), varargs...)
-}
-
-// UpdateSnapshotSchedule mocks base method.
+// UpdateSnapshotSchedule mocks base method
 func (m *MockStorageGatewayAPI) UpdateSnapshotSchedule(arg0 *storagegateway.UpdateSnapshotScheduleInput) (*storagegateway.UpdateSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSnapshotSchedule", arg0)
@@ -4808,13 +3592,13 @@ func (m *MockStorageGatewayAPI) UpdateSnapshotSchedule(arg0 *storagegateway.Upda
 	return ret0, ret1
 }
 
-// UpdateSnapshotSchedule indicates an expected call of UpdateSnapshotSchedule.
+// UpdateSnapshotSchedule indicates an expected call of UpdateSnapshotSchedule
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateSnapshotSchedule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSnapshotSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSnapshotSchedule), arg0)
 }
 
-// UpdateSnapshotScheduleRequest mocks base method.
+// UpdateSnapshotScheduleRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleRequest(arg0 *storagegateway.UpdateSnapshotScheduleInput) (*request.Request, *storagegateway.UpdateSnapshotScheduleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSnapshotScheduleRequest", arg0)
@@ -4823,14 +3607,14 @@ func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleRequest(arg0 *storagegatew
 	return ret0, ret1
 }
 
-// UpdateSnapshotScheduleRequest indicates an expected call of UpdateSnapshotScheduleRequest.
+// UpdateSnapshotScheduleRequest indicates an expected call of UpdateSnapshotScheduleRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateSnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSnapshotScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSnapshotScheduleRequest), arg0)
 }
 
-// UpdateSnapshotScheduleWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.UpdateSnapshotScheduleOutput, error) {
+// UpdateSnapshotScheduleWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.UpdateSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4842,14 +3626,14 @@ func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// UpdateSnapshotScheduleWithContext indicates an expected call of UpdateSnapshotScheduleWithContext.
+// UpdateSnapshotScheduleWithContext indicates an expected call of UpdateSnapshotScheduleWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateSnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSnapshotScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSnapshotScheduleWithContext), varargs...)
 }
 
-// UpdateVTLDeviceType mocks base method.
+// UpdateVTLDeviceType mocks base method
 func (m *MockStorageGatewayAPI) UpdateVTLDeviceType(arg0 *storagegateway.UpdateVTLDeviceTypeInput) (*storagegateway.UpdateVTLDeviceTypeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateVTLDeviceType", arg0)
@@ -4858,13 +3642,13 @@ func (m *MockStorageGatewayAPI) UpdateVTLDeviceType(arg0 *storagegateway.UpdateV
 	return ret0, ret1
 }
 
-// UpdateVTLDeviceType indicates an expected call of UpdateVTLDeviceType.
+// UpdateVTLDeviceType indicates an expected call of UpdateVTLDeviceType
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateVTLDeviceType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVTLDeviceType", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateVTLDeviceType), arg0)
 }
 
-// UpdateVTLDeviceTypeRequest mocks base method.
+// UpdateVTLDeviceTypeRequest mocks base method
 func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeRequest(arg0 *storagegateway.UpdateVTLDeviceTypeInput) (*request.Request, *storagegateway.UpdateVTLDeviceTypeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateVTLDeviceTypeRequest", arg0)
@@ -4873,14 +3657,14 @@ func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeRequest(arg0 *storagegateway.
 	return ret0, ret1
 }
 
-// UpdateVTLDeviceTypeRequest indicates an expected call of UpdateVTLDeviceTypeRequest.
+// UpdateVTLDeviceTypeRequest indicates an expected call of UpdateVTLDeviceTypeRequest
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateVTLDeviceTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVTLDeviceTypeRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateVTLDeviceTypeRequest), arg0)
 }
 
-// UpdateVTLDeviceTypeWithContext mocks base method.
-func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeWithContext(arg0 context.Context, arg1 *storagegateway.UpdateVTLDeviceTypeInput, arg2 ...request.Option) (*storagegateway.UpdateVTLDeviceTypeOutput, error) {
+// UpdateVTLDeviceTypeWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateVTLDeviceTypeInput, arg2 ...request.Option) (*storagegateway.UpdateVTLDeviceTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4892,7 +3676,7 @@ func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateVTLDeviceTypeWithContext indicates an expected call of UpdateVTLDeviceTypeWithContext.
+// UpdateVTLDeviceTypeWithContext indicates an expected call of UpdateVTLDeviceTypeWithContext
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateVTLDeviceTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

@@ -5,38 +5,37 @@
 package devicefarmmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	devicefarm "github.com/aws/aws-sdk-go/service/devicefarm"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockDeviceFarmAPI is a mock of DeviceFarmAPI interface.
+// MockDeviceFarmAPI is a mock of DeviceFarmAPI interface
 type MockDeviceFarmAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockDeviceFarmAPIMockRecorder
 }
 
-// MockDeviceFarmAPIMockRecorder is the mock recorder for MockDeviceFarmAPI.
+// MockDeviceFarmAPIMockRecorder is the mock recorder for MockDeviceFarmAPI
 type MockDeviceFarmAPIMockRecorder struct {
 	mock *MockDeviceFarmAPI
 }
 
-// NewMockDeviceFarmAPI creates a new mock instance.
+// NewMockDeviceFarmAPI creates a new mock instance
 func NewMockDeviceFarmAPI(ctrl *gomock.Controller) *MockDeviceFarmAPI {
 	mock := &MockDeviceFarmAPI{ctrl: ctrl}
 	mock.recorder = &MockDeviceFarmAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockDeviceFarmAPI) EXPECT() *MockDeviceFarmAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateDevicePool mocks base method.
+// CreateDevicePool mocks base method
 func (m *MockDeviceFarmAPI) CreateDevicePool(arg0 *devicefarm.CreateDevicePoolInput) (*devicefarm.CreateDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDevicePool", arg0)
@@ -45,13 +44,13 @@ func (m *MockDeviceFarmAPI) CreateDevicePool(arg0 *devicefarm.CreateDevicePoolIn
 	return ret0, ret1
 }
 
-// CreateDevicePool indicates an expected call of CreateDevicePool.
+// CreateDevicePool indicates an expected call of CreateDevicePool
 func (mr *MockDeviceFarmAPIMockRecorder) CreateDevicePool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDevicePool", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateDevicePool), arg0)
 }
 
-// CreateDevicePoolRequest mocks base method.
+// CreateDevicePoolRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateDevicePoolRequest(arg0 *devicefarm.CreateDevicePoolInput) (*request.Request, *devicefarm.CreateDevicePoolOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDevicePoolRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockDeviceFarmAPI) CreateDevicePoolRequest(arg0 *devicefarm.CreateDevic
 	return ret0, ret1
 }
 
-// CreateDevicePoolRequest indicates an expected call of CreateDevicePoolRequest.
+// CreateDevicePoolRequest indicates an expected call of CreateDevicePoolRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateDevicePoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDevicePoolRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateDevicePoolRequest), arg0)
 }
 
-// CreateDevicePoolWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.CreateDevicePoolInput, arg2 ...request.Option) (*devicefarm.CreateDevicePoolOutput, error) {
+// CreateDevicePoolWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.CreateDevicePoolInput, arg2 ...request.Option) (*devicefarm.CreateDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockDeviceFarmAPI) CreateDevicePoolWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateDevicePoolWithContext indicates an expected call of CreateDevicePoolWithContext.
+// CreateDevicePoolWithContext indicates an expected call of CreateDevicePoolWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateDevicePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDevicePoolWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateDevicePoolWithContext), varargs...)
 }
 
-// CreateInstanceProfile mocks base method.
+// CreateInstanceProfile mocks base method
 func (m *MockDeviceFarmAPI) CreateInstanceProfile(arg0 *devicefarm.CreateInstanceProfileInput) (*devicefarm.CreateInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateInstanceProfile", arg0)
@@ -95,13 +94,13 @@ func (m *MockDeviceFarmAPI) CreateInstanceProfile(arg0 *devicefarm.CreateInstanc
 	return ret0, ret1
 }
 
-// CreateInstanceProfile indicates an expected call of CreateInstanceProfile.
+// CreateInstanceProfile indicates an expected call of CreateInstanceProfile
 func (mr *MockDeviceFarmAPIMockRecorder) CreateInstanceProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateInstanceProfile), arg0)
 }
 
-// CreateInstanceProfileRequest mocks base method.
+// CreateInstanceProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateInstanceProfileRequest(arg0 *devicefarm.CreateInstanceProfileInput) (*request.Request, *devicefarm.CreateInstanceProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateInstanceProfileRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockDeviceFarmAPI) CreateInstanceProfileRequest(arg0 *devicefarm.Create
 	return ret0, ret1
 }
 
-// CreateInstanceProfileRequest indicates an expected call of CreateInstanceProfileRequest.
+// CreateInstanceProfileRequest indicates an expected call of CreateInstanceProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateInstanceProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateInstanceProfileRequest), arg0)
 }
 
-// CreateInstanceProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.CreateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.CreateInstanceProfileOutput, error) {
+// CreateInstanceProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.CreateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.CreateInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockDeviceFarmAPI) CreateInstanceProfileWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// CreateInstanceProfileWithContext indicates an expected call of CreateInstanceProfileWithContext.
+// CreateInstanceProfileWithContext indicates an expected call of CreateInstanceProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateInstanceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateInstanceProfileWithContext), varargs...)
 }
 
-// CreateNetworkProfile mocks base method.
+// CreateNetworkProfile mocks base method
 func (m *MockDeviceFarmAPI) CreateNetworkProfile(arg0 *devicefarm.CreateNetworkProfileInput) (*devicefarm.CreateNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateNetworkProfile", arg0)
@@ -145,13 +144,13 @@ func (m *MockDeviceFarmAPI) CreateNetworkProfile(arg0 *devicefarm.CreateNetworkP
 	return ret0, ret1
 }
 
-// CreateNetworkProfile indicates an expected call of CreateNetworkProfile.
+// CreateNetworkProfile indicates an expected call of CreateNetworkProfile
 func (mr *MockDeviceFarmAPIMockRecorder) CreateNetworkProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNetworkProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateNetworkProfile), arg0)
 }
 
-// CreateNetworkProfileRequest mocks base method.
+// CreateNetworkProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateNetworkProfileRequest(arg0 *devicefarm.CreateNetworkProfileInput) (*request.Request, *devicefarm.CreateNetworkProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateNetworkProfileRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockDeviceFarmAPI) CreateNetworkProfileRequest(arg0 *devicefarm.CreateN
 	return ret0, ret1
 }
 
-// CreateNetworkProfileRequest indicates an expected call of CreateNetworkProfileRequest.
+// CreateNetworkProfileRequest indicates an expected call of CreateNetworkProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateNetworkProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNetworkProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateNetworkProfileRequest), arg0)
 }
 
-// CreateNetworkProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.CreateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.CreateNetworkProfileOutput, error) {
+// CreateNetworkProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.CreateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.CreateNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockDeviceFarmAPI) CreateNetworkProfileWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// CreateNetworkProfileWithContext indicates an expected call of CreateNetworkProfileWithContext.
+// CreateNetworkProfileWithContext indicates an expected call of CreateNetworkProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNetworkProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateNetworkProfileWithContext), varargs...)
 }
 
-// CreateProject mocks base method.
+// CreateProject mocks base method
 func (m *MockDeviceFarmAPI) CreateProject(arg0 *devicefarm.CreateProjectInput) (*devicefarm.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProject", arg0)
@@ -195,13 +194,13 @@ func (m *MockDeviceFarmAPI) CreateProject(arg0 *devicefarm.CreateProjectInput) (
 	return ret0, ret1
 }
 
-// CreateProject indicates an expected call of CreateProject.
+// CreateProject indicates an expected call of CreateProject
 func (mr *MockDeviceFarmAPIMockRecorder) CreateProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateProject), arg0)
 }
 
-// CreateProjectRequest mocks base method.
+// CreateProjectRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateProjectRequest(arg0 *devicefarm.CreateProjectInput) (*request.Request, *devicefarm.CreateProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProjectRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockDeviceFarmAPI) CreateProjectRequest(arg0 *devicefarm.CreateProjectI
 	return ret0, ret1
 }
 
-// CreateProjectRequest indicates an expected call of CreateProjectRequest.
+// CreateProjectRequest indicates an expected call of CreateProjectRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateProjectRequest), arg0)
 }
 
-// CreateProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateProjectWithContext(arg0 context.Context, arg1 *devicefarm.CreateProjectInput, arg2 ...request.Option) (*devicefarm.CreateProjectOutput, error) {
+// CreateProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *devicefarm.CreateProjectInput, arg2 ...request.Option) (*devicefarm.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockDeviceFarmAPI) CreateProjectWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateProjectWithContext indicates an expected call of CreateProjectWithContext.
+// CreateProjectWithContext indicates an expected call of CreateProjectWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateProjectWithContext), varargs...)
 }
 
-// CreateRemoteAccessSession mocks base method.
+// CreateRemoteAccessSession mocks base method
 func (m *MockDeviceFarmAPI) CreateRemoteAccessSession(arg0 *devicefarm.CreateRemoteAccessSessionInput) (*devicefarm.CreateRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRemoteAccessSession", arg0)
@@ -245,13 +244,13 @@ func (m *MockDeviceFarmAPI) CreateRemoteAccessSession(arg0 *devicefarm.CreateRem
 	return ret0, ret1
 }
 
-// CreateRemoteAccessSession indicates an expected call of CreateRemoteAccessSession.
+// CreateRemoteAccessSession indicates an expected call of CreateRemoteAccessSession
 func (mr *MockDeviceFarmAPIMockRecorder) CreateRemoteAccessSession(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRemoteAccessSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateRemoteAccessSession), arg0)
 }
 
-// CreateRemoteAccessSessionRequest mocks base method.
+// CreateRemoteAccessSessionRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionRequest(arg0 *devicefarm.CreateRemoteAccessSessionInput) (*request.Request, *devicefarm.CreateRemoteAccessSessionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRemoteAccessSessionRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionRequest(arg0 *devicefarm.Cr
 	return ret0, ret1
 }
 
-// CreateRemoteAccessSessionRequest indicates an expected call of CreateRemoteAccessSessionRequest.
+// CreateRemoteAccessSessionRequest indicates an expected call of CreateRemoteAccessSessionRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateRemoteAccessSessionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRemoteAccessSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateRemoteAccessSessionRequest), arg0)
 }
 
-// CreateRemoteAccessSessionWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.CreateRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.CreateRemoteAccessSessionOutput, error) {
+// CreateRemoteAccessSessionWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.CreateRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.CreateRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,114 +278,14 @@ func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// CreateRemoteAccessSessionWithContext indicates an expected call of CreateRemoteAccessSessionWithContext.
+// CreateRemoteAccessSessionWithContext indicates an expected call of CreateRemoteAccessSessionWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateRemoteAccessSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRemoteAccessSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateRemoteAccessSessionWithContext), varargs...)
 }
 
-// CreateTestGridProject mocks base method.
-func (m *MockDeviceFarmAPI) CreateTestGridProject(arg0 *devicefarm.CreateTestGridProjectInput) (*devicefarm.CreateTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTestGridProject", arg0)
-	ret0, _ := ret[0].(*devicefarm.CreateTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTestGridProject indicates an expected call of CreateTestGridProject.
-func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridProject(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridProject), arg0)
-}
-
-// CreateTestGridProjectRequest mocks base method.
-func (m *MockDeviceFarmAPI) CreateTestGridProjectRequest(arg0 *devicefarm.CreateTestGridProjectInput) (*request.Request, *devicefarm.CreateTestGridProjectOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTestGridProjectRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.CreateTestGridProjectOutput)
-	return ret0, ret1
-}
-
-// CreateTestGridProjectRequest indicates an expected call of CreateTestGridProjectRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridProjectRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridProjectRequest), arg0)
-}
-
-// CreateTestGridProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.CreateTestGridProjectInput, arg2 ...request.Option) (*devicefarm.CreateTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateTestGridProjectWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.CreateTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTestGridProjectWithContext indicates an expected call of CreateTestGridProjectWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridProjectWithContext), varargs...)
-}
-
-// CreateTestGridUrl mocks base method.
-func (m *MockDeviceFarmAPI) CreateTestGridUrl(arg0 *devicefarm.CreateTestGridUrlInput) (*devicefarm.CreateTestGridUrlOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTestGridUrl", arg0)
-	ret0, _ := ret[0].(*devicefarm.CreateTestGridUrlOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTestGridUrl indicates an expected call of CreateTestGridUrl.
-func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridUrl(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridUrl", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridUrl), arg0)
-}
-
-// CreateTestGridUrlRequest mocks base method.
-func (m *MockDeviceFarmAPI) CreateTestGridUrlRequest(arg0 *devicefarm.CreateTestGridUrlInput) (*request.Request, *devicefarm.CreateTestGridUrlOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTestGridUrlRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.CreateTestGridUrlOutput)
-	return ret0, ret1
-}
-
-// CreateTestGridUrlRequest indicates an expected call of CreateTestGridUrlRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridUrlRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridUrlRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridUrlRequest), arg0)
-}
-
-// CreateTestGridUrlWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateTestGridUrlWithContext(arg0 context.Context, arg1 *devicefarm.CreateTestGridUrlInput, arg2 ...request.Option) (*devicefarm.CreateTestGridUrlOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateTestGridUrlWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.CreateTestGridUrlOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTestGridUrlWithContext indicates an expected call of CreateTestGridUrlWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridUrlWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridUrlWithContext), varargs...)
-}
-
-// CreateUpload mocks base method.
+// CreateUpload mocks base method
 func (m *MockDeviceFarmAPI) CreateUpload(arg0 *devicefarm.CreateUploadInput) (*devicefarm.CreateUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUpload", arg0)
@@ -395,13 +294,13 @@ func (m *MockDeviceFarmAPI) CreateUpload(arg0 *devicefarm.CreateUploadInput) (*d
 	return ret0, ret1
 }
 
-// CreateUpload indicates an expected call of CreateUpload.
+// CreateUpload indicates an expected call of CreateUpload
 func (mr *MockDeviceFarmAPIMockRecorder) CreateUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpload", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateUpload), arg0)
 }
 
-// CreateUploadRequest mocks base method.
+// CreateUploadRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateUploadRequest(arg0 *devicefarm.CreateUploadInput) (*request.Request, *devicefarm.CreateUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUploadRequest", arg0)
@@ -410,14 +309,14 @@ func (m *MockDeviceFarmAPI) CreateUploadRequest(arg0 *devicefarm.CreateUploadInp
 	return ret0, ret1
 }
 
-// CreateUploadRequest indicates an expected call of CreateUploadRequest.
+// CreateUploadRequest indicates an expected call of CreateUploadRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUploadRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateUploadRequest), arg0)
 }
 
-// CreateUploadWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateUploadWithContext(arg0 context.Context, arg1 *devicefarm.CreateUploadInput, arg2 ...request.Option) (*devicefarm.CreateUploadOutput, error) {
+// CreateUploadWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateUploadWithContext(arg0 aws.Context, arg1 *devicefarm.CreateUploadInput, arg2 ...request.Option) (*devicefarm.CreateUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +328,14 @@ func (m *MockDeviceFarmAPI) CreateUploadWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// CreateUploadWithContext indicates an expected call of CreateUploadWithContext.
+// CreateUploadWithContext indicates an expected call of CreateUploadWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUploadWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateUploadWithContext), varargs...)
 }
 
-// CreateVPCEConfiguration mocks base method.
+// CreateVPCEConfiguration mocks base method
 func (m *MockDeviceFarmAPI) CreateVPCEConfiguration(arg0 *devicefarm.CreateVPCEConfigurationInput) (*devicefarm.CreateVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateVPCEConfiguration", arg0)
@@ -445,13 +344,13 @@ func (m *MockDeviceFarmAPI) CreateVPCEConfiguration(arg0 *devicefarm.CreateVPCEC
 	return ret0, ret1
 }
 
-// CreateVPCEConfiguration indicates an expected call of CreateVPCEConfiguration.
+// CreateVPCEConfiguration indicates an expected call of CreateVPCEConfiguration
 func (mr *MockDeviceFarmAPIMockRecorder) CreateVPCEConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVPCEConfiguration", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateVPCEConfiguration), arg0)
 }
 
-// CreateVPCEConfigurationRequest mocks base method.
+// CreateVPCEConfigurationRequest mocks base method
 func (m *MockDeviceFarmAPI) CreateVPCEConfigurationRequest(arg0 *devicefarm.CreateVPCEConfigurationInput) (*request.Request, *devicefarm.CreateVPCEConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateVPCEConfigurationRequest", arg0)
@@ -460,14 +359,14 @@ func (m *MockDeviceFarmAPI) CreateVPCEConfigurationRequest(arg0 *devicefarm.Crea
 	return ret0, ret1
 }
 
-// CreateVPCEConfigurationRequest indicates an expected call of CreateVPCEConfigurationRequest.
+// CreateVPCEConfigurationRequest indicates an expected call of CreateVPCEConfigurationRequest
 func (mr *MockDeviceFarmAPIMockRecorder) CreateVPCEConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVPCEConfigurationRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateVPCEConfigurationRequest), arg0)
 }
 
-// CreateVPCEConfigurationWithContext mocks base method.
-func (m *MockDeviceFarmAPI) CreateVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.CreateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.CreateVPCEConfigurationOutput, error) {
+// CreateVPCEConfigurationWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.CreateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.CreateVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +378,14 @@ func (m *MockDeviceFarmAPI) CreateVPCEConfigurationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateVPCEConfigurationWithContext indicates an expected call of CreateVPCEConfigurationWithContext.
+// CreateVPCEConfigurationWithContext indicates an expected call of CreateVPCEConfigurationWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) CreateVPCEConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVPCEConfigurationWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateVPCEConfigurationWithContext), varargs...)
 }
 
-// DeleteDevicePool mocks base method.
+// DeleteDevicePool mocks base method
 func (m *MockDeviceFarmAPI) DeleteDevicePool(arg0 *devicefarm.DeleteDevicePoolInput) (*devicefarm.DeleteDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDevicePool", arg0)
@@ -495,13 +394,13 @@ func (m *MockDeviceFarmAPI) DeleteDevicePool(arg0 *devicefarm.DeleteDevicePoolIn
 	return ret0, ret1
 }
 
-// DeleteDevicePool indicates an expected call of DeleteDevicePool.
+// DeleteDevicePool indicates an expected call of DeleteDevicePool
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteDevicePool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDevicePool", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteDevicePool), arg0)
 }
 
-// DeleteDevicePoolRequest mocks base method.
+// DeleteDevicePoolRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteDevicePoolRequest(arg0 *devicefarm.DeleteDevicePoolInput) (*request.Request, *devicefarm.DeleteDevicePoolOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDevicePoolRequest", arg0)
@@ -510,14 +409,14 @@ func (m *MockDeviceFarmAPI) DeleteDevicePoolRequest(arg0 *devicefarm.DeleteDevic
 	return ret0, ret1
 }
 
-// DeleteDevicePoolRequest indicates an expected call of DeleteDevicePoolRequest.
+// DeleteDevicePoolRequest indicates an expected call of DeleteDevicePoolRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteDevicePoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDevicePoolRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteDevicePoolRequest), arg0)
 }
 
-// DeleteDevicePoolWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.DeleteDevicePoolInput, arg2 ...request.Option) (*devicefarm.DeleteDevicePoolOutput, error) {
+// DeleteDevicePoolWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteDevicePoolInput, arg2 ...request.Option) (*devicefarm.DeleteDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +428,14 @@ func (m *MockDeviceFarmAPI) DeleteDevicePoolWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteDevicePoolWithContext indicates an expected call of DeleteDevicePoolWithContext.
+// DeleteDevicePoolWithContext indicates an expected call of DeleteDevicePoolWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteDevicePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDevicePoolWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteDevicePoolWithContext), varargs...)
 }
 
-// DeleteInstanceProfile mocks base method.
+// DeleteInstanceProfile mocks base method
 func (m *MockDeviceFarmAPI) DeleteInstanceProfile(arg0 *devicefarm.DeleteInstanceProfileInput) (*devicefarm.DeleteInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteInstanceProfile", arg0)
@@ -545,13 +444,13 @@ func (m *MockDeviceFarmAPI) DeleteInstanceProfile(arg0 *devicefarm.DeleteInstanc
 	return ret0, ret1
 }
 
-// DeleteInstanceProfile indicates an expected call of DeleteInstanceProfile.
+// DeleteInstanceProfile indicates an expected call of DeleteInstanceProfile
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteInstanceProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteInstanceProfile), arg0)
 }
 
-// DeleteInstanceProfileRequest mocks base method.
+// DeleteInstanceProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteInstanceProfileRequest(arg0 *devicefarm.DeleteInstanceProfileInput) (*request.Request, *devicefarm.DeleteInstanceProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteInstanceProfileRequest", arg0)
@@ -560,14 +459,14 @@ func (m *MockDeviceFarmAPI) DeleteInstanceProfileRequest(arg0 *devicefarm.Delete
 	return ret0, ret1
 }
 
-// DeleteInstanceProfileRequest indicates an expected call of DeleteInstanceProfileRequest.
+// DeleteInstanceProfileRequest indicates an expected call of DeleteInstanceProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteInstanceProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteInstanceProfileRequest), arg0)
 }
 
-// DeleteInstanceProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.DeleteInstanceProfileInput, arg2 ...request.Option) (*devicefarm.DeleteInstanceProfileOutput, error) {
+// DeleteInstanceProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteInstanceProfileInput, arg2 ...request.Option) (*devicefarm.DeleteInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +478,14 @@ func (m *MockDeviceFarmAPI) DeleteInstanceProfileWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteInstanceProfileWithContext indicates an expected call of DeleteInstanceProfileWithContext.
+// DeleteInstanceProfileWithContext indicates an expected call of DeleteInstanceProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteInstanceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteInstanceProfileWithContext), varargs...)
 }
 
-// DeleteNetworkProfile mocks base method.
+// DeleteNetworkProfile mocks base method
 func (m *MockDeviceFarmAPI) DeleteNetworkProfile(arg0 *devicefarm.DeleteNetworkProfileInput) (*devicefarm.DeleteNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteNetworkProfile", arg0)
@@ -595,13 +494,13 @@ func (m *MockDeviceFarmAPI) DeleteNetworkProfile(arg0 *devicefarm.DeleteNetworkP
 	return ret0, ret1
 }
 
-// DeleteNetworkProfile indicates an expected call of DeleteNetworkProfile.
+// DeleteNetworkProfile indicates an expected call of DeleteNetworkProfile
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteNetworkProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNetworkProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteNetworkProfile), arg0)
 }
 
-// DeleteNetworkProfileRequest mocks base method.
+// DeleteNetworkProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteNetworkProfileRequest(arg0 *devicefarm.DeleteNetworkProfileInput) (*request.Request, *devicefarm.DeleteNetworkProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteNetworkProfileRequest", arg0)
@@ -610,14 +509,14 @@ func (m *MockDeviceFarmAPI) DeleteNetworkProfileRequest(arg0 *devicefarm.DeleteN
 	return ret0, ret1
 }
 
-// DeleteNetworkProfileRequest indicates an expected call of DeleteNetworkProfileRequest.
+// DeleteNetworkProfileRequest indicates an expected call of DeleteNetworkProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteNetworkProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNetworkProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteNetworkProfileRequest), arg0)
 }
 
-// DeleteNetworkProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.DeleteNetworkProfileInput, arg2 ...request.Option) (*devicefarm.DeleteNetworkProfileOutput, error) {
+// DeleteNetworkProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteNetworkProfileInput, arg2 ...request.Option) (*devicefarm.DeleteNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +528,14 @@ func (m *MockDeviceFarmAPI) DeleteNetworkProfileWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DeleteNetworkProfileWithContext indicates an expected call of DeleteNetworkProfileWithContext.
+// DeleteNetworkProfileWithContext indicates an expected call of DeleteNetworkProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNetworkProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteNetworkProfileWithContext), varargs...)
 }
 
-// DeleteProject mocks base method.
+// DeleteProject mocks base method
 func (m *MockDeviceFarmAPI) DeleteProject(arg0 *devicefarm.DeleteProjectInput) (*devicefarm.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProject", arg0)
@@ -645,13 +544,13 @@ func (m *MockDeviceFarmAPI) DeleteProject(arg0 *devicefarm.DeleteProjectInput) (
 	return ret0, ret1
 }
 
-// DeleteProject indicates an expected call of DeleteProject.
+// DeleteProject indicates an expected call of DeleteProject
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteProject), arg0)
 }
 
-// DeleteProjectRequest mocks base method.
+// DeleteProjectRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteProjectRequest(arg0 *devicefarm.DeleteProjectInput) (*request.Request, *devicefarm.DeleteProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProjectRequest", arg0)
@@ -660,14 +559,14 @@ func (m *MockDeviceFarmAPI) DeleteProjectRequest(arg0 *devicefarm.DeleteProjectI
 	return ret0, ret1
 }
 
-// DeleteProjectRequest indicates an expected call of DeleteProjectRequest.
+// DeleteProjectRequest indicates an expected call of DeleteProjectRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteProjectRequest), arg0)
 }
 
-// DeleteProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *devicefarm.DeleteProjectInput, arg2 ...request.Option) (*devicefarm.DeleteProjectOutput, error) {
+// DeleteProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteProjectInput, arg2 ...request.Option) (*devicefarm.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +578,14 @@ func (m *MockDeviceFarmAPI) DeleteProjectWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteProjectWithContext indicates an expected call of DeleteProjectWithContext.
+// DeleteProjectWithContext indicates an expected call of DeleteProjectWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteProjectWithContext), varargs...)
 }
 
-// DeleteRemoteAccessSession mocks base method.
+// DeleteRemoteAccessSession mocks base method
 func (m *MockDeviceFarmAPI) DeleteRemoteAccessSession(arg0 *devicefarm.DeleteRemoteAccessSessionInput) (*devicefarm.DeleteRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRemoteAccessSession", arg0)
@@ -695,13 +594,13 @@ func (m *MockDeviceFarmAPI) DeleteRemoteAccessSession(arg0 *devicefarm.DeleteRem
 	return ret0, ret1
 }
 
-// DeleteRemoteAccessSession indicates an expected call of DeleteRemoteAccessSession.
+// DeleteRemoteAccessSession indicates an expected call of DeleteRemoteAccessSession
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteRemoteAccessSession(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemoteAccessSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRemoteAccessSession), arg0)
 }
 
-// DeleteRemoteAccessSessionRequest mocks base method.
+// DeleteRemoteAccessSessionRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionRequest(arg0 *devicefarm.DeleteRemoteAccessSessionInput) (*request.Request, *devicefarm.DeleteRemoteAccessSessionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRemoteAccessSessionRequest", arg0)
@@ -710,14 +609,14 @@ func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionRequest(arg0 *devicefarm.De
 	return ret0, ret1
 }
 
-// DeleteRemoteAccessSessionRequest indicates an expected call of DeleteRemoteAccessSessionRequest.
+// DeleteRemoteAccessSessionRequest indicates an expected call of DeleteRemoteAccessSessionRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteRemoteAccessSessionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemoteAccessSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRemoteAccessSessionRequest), arg0)
 }
 
-// DeleteRemoteAccessSessionWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.DeleteRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.DeleteRemoteAccessSessionOutput, error) {
+// DeleteRemoteAccessSessionWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.DeleteRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +628,14 @@ func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DeleteRemoteAccessSessionWithContext indicates an expected call of DeleteRemoteAccessSessionWithContext.
+// DeleteRemoteAccessSessionWithContext indicates an expected call of DeleteRemoteAccessSessionWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteRemoteAccessSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemoteAccessSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRemoteAccessSessionWithContext), varargs...)
 }
 
-// DeleteRun mocks base method.
+// DeleteRun mocks base method
 func (m *MockDeviceFarmAPI) DeleteRun(arg0 *devicefarm.DeleteRunInput) (*devicefarm.DeleteRunOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRun", arg0)
@@ -745,13 +644,13 @@ func (m *MockDeviceFarmAPI) DeleteRun(arg0 *devicefarm.DeleteRunInput) (*devicef
 	return ret0, ret1
 }
 
-// DeleteRun indicates an expected call of DeleteRun.
+// DeleteRun indicates an expected call of DeleteRun
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteRun(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRun", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRun), arg0)
 }
 
-// DeleteRunRequest mocks base method.
+// DeleteRunRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteRunRequest(arg0 *devicefarm.DeleteRunInput) (*request.Request, *devicefarm.DeleteRunOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRunRequest", arg0)
@@ -760,14 +659,14 @@ func (m *MockDeviceFarmAPI) DeleteRunRequest(arg0 *devicefarm.DeleteRunInput) (*
 	return ret0, ret1
 }
 
-// DeleteRunRequest indicates an expected call of DeleteRunRequest.
+// DeleteRunRequest indicates an expected call of DeleteRunRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteRunRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRunRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRunRequest), arg0)
 }
 
-// DeleteRunWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteRunWithContext(arg0 context.Context, arg1 *devicefarm.DeleteRunInput, arg2 ...request.Option) (*devicefarm.DeleteRunOutput, error) {
+// DeleteRunWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteRunWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteRunInput, arg2 ...request.Option) (*devicefarm.DeleteRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,64 +678,14 @@ func (m *MockDeviceFarmAPI) DeleteRunWithContext(arg0 context.Context, arg1 *dev
 	return ret0, ret1
 }
 
-// DeleteRunWithContext indicates an expected call of DeleteRunWithContext.
+// DeleteRunWithContext indicates an expected call of DeleteRunWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRunWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRunWithContext), varargs...)
 }
 
-// DeleteTestGridProject mocks base method.
-func (m *MockDeviceFarmAPI) DeleteTestGridProject(arg0 *devicefarm.DeleteTestGridProjectInput) (*devicefarm.DeleteTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteTestGridProject", arg0)
-	ret0, _ := ret[0].(*devicefarm.DeleteTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteTestGridProject indicates an expected call of DeleteTestGridProject.
-func (mr *MockDeviceFarmAPIMockRecorder) DeleteTestGridProject(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteTestGridProject), arg0)
-}
-
-// DeleteTestGridProjectRequest mocks base method.
-func (m *MockDeviceFarmAPI) DeleteTestGridProjectRequest(arg0 *devicefarm.DeleteTestGridProjectInput) (*request.Request, *devicefarm.DeleteTestGridProjectOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteTestGridProjectRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.DeleteTestGridProjectOutput)
-	return ret0, ret1
-}
-
-// DeleteTestGridProjectRequest indicates an expected call of DeleteTestGridProjectRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) DeleteTestGridProjectRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteTestGridProjectRequest), arg0)
-}
-
-// DeleteTestGridProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.DeleteTestGridProjectInput, arg2 ...request.Option) (*devicefarm.DeleteTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteTestGridProjectWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.DeleteTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteTestGridProjectWithContext indicates an expected call of DeleteTestGridProjectWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) DeleteTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteTestGridProjectWithContext), varargs...)
-}
-
-// DeleteUpload mocks base method.
+// DeleteUpload mocks base method
 func (m *MockDeviceFarmAPI) DeleteUpload(arg0 *devicefarm.DeleteUploadInput) (*devicefarm.DeleteUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUpload", arg0)
@@ -845,13 +694,13 @@ func (m *MockDeviceFarmAPI) DeleteUpload(arg0 *devicefarm.DeleteUploadInput) (*d
 	return ret0, ret1
 }
 
-// DeleteUpload indicates an expected call of DeleteUpload.
+// DeleteUpload indicates an expected call of DeleteUpload
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUpload", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteUpload), arg0)
 }
 
-// DeleteUploadRequest mocks base method.
+// DeleteUploadRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteUploadRequest(arg0 *devicefarm.DeleteUploadInput) (*request.Request, *devicefarm.DeleteUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUploadRequest", arg0)
@@ -860,14 +709,14 @@ func (m *MockDeviceFarmAPI) DeleteUploadRequest(arg0 *devicefarm.DeleteUploadInp
 	return ret0, ret1
 }
 
-// DeleteUploadRequest indicates an expected call of DeleteUploadRequest.
+// DeleteUploadRequest indicates an expected call of DeleteUploadRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUploadRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteUploadRequest), arg0)
 }
 
-// DeleteUploadWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteUploadWithContext(arg0 context.Context, arg1 *devicefarm.DeleteUploadInput, arg2 ...request.Option) (*devicefarm.DeleteUploadOutput, error) {
+// DeleteUploadWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteUploadWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteUploadInput, arg2 ...request.Option) (*devicefarm.DeleteUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +728,14 @@ func (m *MockDeviceFarmAPI) DeleteUploadWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteUploadWithContext indicates an expected call of DeleteUploadWithContext.
+// DeleteUploadWithContext indicates an expected call of DeleteUploadWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUploadWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteUploadWithContext), varargs...)
 }
 
-// DeleteVPCEConfiguration mocks base method.
+// DeleteVPCEConfiguration mocks base method
 func (m *MockDeviceFarmAPI) DeleteVPCEConfiguration(arg0 *devicefarm.DeleteVPCEConfigurationInput) (*devicefarm.DeleteVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVPCEConfiguration", arg0)
@@ -895,13 +744,13 @@ func (m *MockDeviceFarmAPI) DeleteVPCEConfiguration(arg0 *devicefarm.DeleteVPCEC
 	return ret0, ret1
 }
 
-// DeleteVPCEConfiguration indicates an expected call of DeleteVPCEConfiguration.
+// DeleteVPCEConfiguration indicates an expected call of DeleteVPCEConfiguration
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteVPCEConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVPCEConfiguration", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteVPCEConfiguration), arg0)
 }
 
-// DeleteVPCEConfigurationRequest mocks base method.
+// DeleteVPCEConfigurationRequest mocks base method
 func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationRequest(arg0 *devicefarm.DeleteVPCEConfigurationInput) (*request.Request, *devicefarm.DeleteVPCEConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVPCEConfigurationRequest", arg0)
@@ -910,14 +759,14 @@ func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationRequest(arg0 *devicefarm.Dele
 	return ret0, ret1
 }
 
-// DeleteVPCEConfigurationRequest indicates an expected call of DeleteVPCEConfigurationRequest.
+// DeleteVPCEConfigurationRequest indicates an expected call of DeleteVPCEConfigurationRequest
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteVPCEConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVPCEConfigurationRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteVPCEConfigurationRequest), arg0)
 }
 
-// DeleteVPCEConfigurationWithContext mocks base method.
-func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.DeleteVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.DeleteVPCEConfigurationOutput, error) {
+// DeleteVPCEConfigurationWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.DeleteVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +778,14 @@ func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteVPCEConfigurationWithContext indicates an expected call of DeleteVPCEConfigurationWithContext.
+// DeleteVPCEConfigurationWithContext indicates an expected call of DeleteVPCEConfigurationWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) DeleteVPCEConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVPCEConfigurationWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteVPCEConfigurationWithContext), varargs...)
 }
 
-// GetAccountSettings mocks base method.
+// GetAccountSettings mocks base method
 func (m *MockDeviceFarmAPI) GetAccountSettings(arg0 *devicefarm.GetAccountSettingsInput) (*devicefarm.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAccountSettings", arg0)
@@ -945,13 +794,13 @@ func (m *MockDeviceFarmAPI) GetAccountSettings(arg0 *devicefarm.GetAccountSettin
 	return ret0, ret1
 }
 
-// GetAccountSettings indicates an expected call of GetAccountSettings.
+// GetAccountSettings indicates an expected call of GetAccountSettings
 func (mr *MockDeviceFarmAPIMockRecorder) GetAccountSettings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettings", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetAccountSettings), arg0)
 }
 
-// GetAccountSettingsRequest mocks base method.
+// GetAccountSettingsRequest mocks base method
 func (m *MockDeviceFarmAPI) GetAccountSettingsRequest(arg0 *devicefarm.GetAccountSettingsInput) (*request.Request, *devicefarm.GetAccountSettingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAccountSettingsRequest", arg0)
@@ -960,14 +809,14 @@ func (m *MockDeviceFarmAPI) GetAccountSettingsRequest(arg0 *devicefarm.GetAccoun
 	return ret0, ret1
 }
 
-// GetAccountSettingsRequest indicates an expected call of GetAccountSettingsRequest.
+// GetAccountSettingsRequest indicates an expected call of GetAccountSettingsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetAccountSettingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettingsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetAccountSettingsRequest), arg0)
 }
 
-// GetAccountSettingsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetAccountSettingsWithContext(arg0 context.Context, arg1 *devicefarm.GetAccountSettingsInput, arg2 ...request.Option) (*devicefarm.GetAccountSettingsOutput, error) {
+// GetAccountSettingsWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetAccountSettingsWithContext(arg0 aws.Context, arg1 *devicefarm.GetAccountSettingsInput, arg2 ...request.Option) (*devicefarm.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +828,14 @@ func (m *MockDeviceFarmAPI) GetAccountSettingsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetAccountSettingsWithContext indicates an expected call of GetAccountSettingsWithContext.
+// GetAccountSettingsWithContext indicates an expected call of GetAccountSettingsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetAccountSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettingsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetAccountSettingsWithContext), varargs...)
 }
 
-// GetDevice mocks base method.
+// GetDevice mocks base method
 func (m *MockDeviceFarmAPI) GetDevice(arg0 *devicefarm.GetDeviceInput) (*devicefarm.GetDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDevice", arg0)
@@ -995,13 +844,13 @@ func (m *MockDeviceFarmAPI) GetDevice(arg0 *devicefarm.GetDeviceInput) (*devicef
 	return ret0, ret1
 }
 
-// GetDevice indicates an expected call of GetDevice.
+// GetDevice indicates an expected call of GetDevice
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevice(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevice", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevice), arg0)
 }
 
-// GetDeviceInstance mocks base method.
+// GetDeviceInstance mocks base method
 func (m *MockDeviceFarmAPI) GetDeviceInstance(arg0 *devicefarm.GetDeviceInstanceInput) (*devicefarm.GetDeviceInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeviceInstance", arg0)
@@ -1010,13 +859,13 @@ func (m *MockDeviceFarmAPI) GetDeviceInstance(arg0 *devicefarm.GetDeviceInstance
 	return ret0, ret1
 }
 
-// GetDeviceInstance indicates an expected call of GetDeviceInstance.
+// GetDeviceInstance indicates an expected call of GetDeviceInstance
 func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceInstance(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceInstance", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDeviceInstance), arg0)
 }
 
-// GetDeviceInstanceRequest mocks base method.
+// GetDeviceInstanceRequest mocks base method
 func (m *MockDeviceFarmAPI) GetDeviceInstanceRequest(arg0 *devicefarm.GetDeviceInstanceInput) (*request.Request, *devicefarm.GetDeviceInstanceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeviceInstanceRequest", arg0)
@@ -1025,14 +874,14 @@ func (m *MockDeviceFarmAPI) GetDeviceInstanceRequest(arg0 *devicefarm.GetDeviceI
 	return ret0, ret1
 }
 
-// GetDeviceInstanceRequest indicates an expected call of GetDeviceInstanceRequest.
+// GetDeviceInstanceRequest indicates an expected call of GetDeviceInstanceRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceInstanceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceInstanceRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDeviceInstanceRequest), arg0)
 }
 
-// GetDeviceInstanceWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetDeviceInstanceWithContext(arg0 context.Context, arg1 *devicefarm.GetDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.GetDeviceInstanceOutput, error) {
+// GetDeviceInstanceWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetDeviceInstanceWithContext(arg0 aws.Context, arg1 *devicefarm.GetDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.GetDeviceInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1044,14 +893,14 @@ func (m *MockDeviceFarmAPI) GetDeviceInstanceWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetDeviceInstanceWithContext indicates an expected call of GetDeviceInstanceWithContext.
+// GetDeviceInstanceWithContext indicates an expected call of GetDeviceInstanceWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceInstanceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDeviceInstanceWithContext), varargs...)
 }
 
-// GetDevicePool mocks base method.
+// GetDevicePool mocks base method
 func (m *MockDeviceFarmAPI) GetDevicePool(arg0 *devicefarm.GetDevicePoolInput) (*devicefarm.GetDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDevicePool", arg0)
@@ -1060,13 +909,13 @@ func (m *MockDeviceFarmAPI) GetDevicePool(arg0 *devicefarm.GetDevicePoolInput) (
 	return ret0, ret1
 }
 
-// GetDevicePool indicates an expected call of GetDevicePool.
+// GetDevicePool indicates an expected call of GetDevicePool
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevicePool", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevicePool), arg0)
 }
 
-// GetDevicePoolCompatibility mocks base method.
+// GetDevicePoolCompatibility mocks base method
 func (m *MockDeviceFarmAPI) GetDevicePoolCompatibility(arg0 *devicefarm.GetDevicePoolCompatibilityInput) (*devicefarm.GetDevicePoolCompatibilityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDevicePoolCompatibility", arg0)
@@ -1075,13 +924,13 @@ func (m *MockDeviceFarmAPI) GetDevicePoolCompatibility(arg0 *devicefarm.GetDevic
 	return ret0, ret1
 }
 
-// GetDevicePoolCompatibility indicates an expected call of GetDevicePoolCompatibility.
+// GetDevicePoolCompatibility indicates an expected call of GetDevicePoolCompatibility
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolCompatibility(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevicePoolCompatibility", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevicePoolCompatibility), arg0)
 }
 
-// GetDevicePoolCompatibilityRequest mocks base method.
+// GetDevicePoolCompatibilityRequest mocks base method
 func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityRequest(arg0 *devicefarm.GetDevicePoolCompatibilityInput) (*request.Request, *devicefarm.GetDevicePoolCompatibilityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDevicePoolCompatibilityRequest", arg0)
@@ -1090,14 +939,14 @@ func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityRequest(arg0 *devicefarm.G
 	return ret0, ret1
 }
 
-// GetDevicePoolCompatibilityRequest indicates an expected call of GetDevicePoolCompatibilityRequest.
+// GetDevicePoolCompatibilityRequest indicates an expected call of GetDevicePoolCompatibilityRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolCompatibilityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevicePoolCompatibilityRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevicePoolCompatibilityRequest), arg0)
 }
 
-// GetDevicePoolCompatibilityWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityWithContext(arg0 context.Context, arg1 *devicefarm.GetDevicePoolCompatibilityInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolCompatibilityOutput, error) {
+// GetDevicePoolCompatibilityWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityWithContext(arg0 aws.Context, arg1 *devicefarm.GetDevicePoolCompatibilityInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolCompatibilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1109,14 +958,14 @@ func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// GetDevicePoolCompatibilityWithContext indicates an expected call of GetDevicePoolCompatibilityWithContext.
+// GetDevicePoolCompatibilityWithContext indicates an expected call of GetDevicePoolCompatibilityWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolCompatibilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevicePoolCompatibilityWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevicePoolCompatibilityWithContext), varargs...)
 }
 
-// GetDevicePoolRequest mocks base method.
+// GetDevicePoolRequest mocks base method
 func (m *MockDeviceFarmAPI) GetDevicePoolRequest(arg0 *devicefarm.GetDevicePoolInput) (*request.Request, *devicefarm.GetDevicePoolOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDevicePoolRequest", arg0)
@@ -1125,14 +974,14 @@ func (m *MockDeviceFarmAPI) GetDevicePoolRequest(arg0 *devicefarm.GetDevicePoolI
 	return ret0, ret1
 }
 
-// GetDevicePoolRequest indicates an expected call of GetDevicePoolRequest.
+// GetDevicePoolRequest indicates an expected call of GetDevicePoolRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevicePoolRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevicePoolRequest), arg0)
 }
 
-// GetDevicePoolWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.GetDevicePoolInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolOutput, error) {
+// GetDevicePoolWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.GetDevicePoolInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1144,14 +993,14 @@ func (m *MockDeviceFarmAPI) GetDevicePoolWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetDevicePoolWithContext indicates an expected call of GetDevicePoolWithContext.
+// GetDevicePoolWithContext indicates an expected call of GetDevicePoolWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevicePoolWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDevicePoolWithContext), varargs...)
 }
 
-// GetDeviceRequest mocks base method.
+// GetDeviceRequest mocks base method
 func (m *MockDeviceFarmAPI) GetDeviceRequest(arg0 *devicefarm.GetDeviceInput) (*request.Request, *devicefarm.GetDeviceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeviceRequest", arg0)
@@ -1160,14 +1009,14 @@ func (m *MockDeviceFarmAPI) GetDeviceRequest(arg0 *devicefarm.GetDeviceInput) (*
 	return ret0, ret1
 }
 
-// GetDeviceRequest indicates an expected call of GetDeviceRequest.
+// GetDeviceRequest indicates an expected call of GetDeviceRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDeviceRequest), arg0)
 }
 
-// GetDeviceWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetDeviceWithContext(arg0 context.Context, arg1 *devicefarm.GetDeviceInput, arg2 ...request.Option) (*devicefarm.GetDeviceOutput, error) {
+// GetDeviceWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetDeviceWithContext(arg0 aws.Context, arg1 *devicefarm.GetDeviceInput, arg2 ...request.Option) (*devicefarm.GetDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1179,14 +1028,14 @@ func (m *MockDeviceFarmAPI) GetDeviceWithContext(arg0 context.Context, arg1 *dev
 	return ret0, ret1
 }
 
-// GetDeviceWithContext indicates an expected call of GetDeviceWithContext.
+// GetDeviceWithContext indicates an expected call of GetDeviceWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetDeviceWithContext), varargs...)
 }
 
-// GetInstanceProfile mocks base method.
+// GetInstanceProfile mocks base method
 func (m *MockDeviceFarmAPI) GetInstanceProfile(arg0 *devicefarm.GetInstanceProfileInput) (*devicefarm.GetInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstanceProfile", arg0)
@@ -1195,13 +1044,13 @@ func (m *MockDeviceFarmAPI) GetInstanceProfile(arg0 *devicefarm.GetInstanceProfi
 	return ret0, ret1
 }
 
-// GetInstanceProfile indicates an expected call of GetInstanceProfile.
+// GetInstanceProfile indicates an expected call of GetInstanceProfile
 func (mr *MockDeviceFarmAPIMockRecorder) GetInstanceProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstanceProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetInstanceProfile), arg0)
 }
 
-// GetInstanceProfileRequest mocks base method.
+// GetInstanceProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) GetInstanceProfileRequest(arg0 *devicefarm.GetInstanceProfileInput) (*request.Request, *devicefarm.GetInstanceProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstanceProfileRequest", arg0)
@@ -1210,14 +1059,14 @@ func (m *MockDeviceFarmAPI) GetInstanceProfileRequest(arg0 *devicefarm.GetInstan
 	return ret0, ret1
 }
 
-// GetInstanceProfileRequest indicates an expected call of GetInstanceProfileRequest.
+// GetInstanceProfileRequest indicates an expected call of GetInstanceProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetInstanceProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstanceProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetInstanceProfileRequest), arg0)
 }
 
-// GetInstanceProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.GetInstanceProfileInput, arg2 ...request.Option) (*devicefarm.GetInstanceProfileOutput, error) {
+// GetInstanceProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.GetInstanceProfileInput, arg2 ...request.Option) (*devicefarm.GetInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1229,14 +1078,14 @@ func (m *MockDeviceFarmAPI) GetInstanceProfileWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetInstanceProfileWithContext indicates an expected call of GetInstanceProfileWithContext.
+// GetInstanceProfileWithContext indicates an expected call of GetInstanceProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetInstanceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstanceProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetInstanceProfileWithContext), varargs...)
 }
 
-// GetJob mocks base method.
+// GetJob mocks base method
 func (m *MockDeviceFarmAPI) GetJob(arg0 *devicefarm.GetJobInput) (*devicefarm.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJob", arg0)
@@ -1245,13 +1094,13 @@ func (m *MockDeviceFarmAPI) GetJob(arg0 *devicefarm.GetJobInput) (*devicefarm.Ge
 	return ret0, ret1
 }
 
-// GetJob indicates an expected call of GetJob.
+// GetJob indicates an expected call of GetJob
 func (mr *MockDeviceFarmAPIMockRecorder) GetJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJob", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetJob), arg0)
 }
 
-// GetJobRequest mocks base method.
+// GetJobRequest mocks base method
 func (m *MockDeviceFarmAPI) GetJobRequest(arg0 *devicefarm.GetJobInput) (*request.Request, *devicefarm.GetJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJobRequest", arg0)
@@ -1260,14 +1109,14 @@ func (m *MockDeviceFarmAPI) GetJobRequest(arg0 *devicefarm.GetJobInput) (*reques
 	return ret0, ret1
 }
 
-// GetJobRequest indicates an expected call of GetJobRequest.
+// GetJobRequest indicates an expected call of GetJobRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetJobRequest), arg0)
 }
 
-// GetJobWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetJobWithContext(arg0 context.Context, arg1 *devicefarm.GetJobInput, arg2 ...request.Option) (*devicefarm.GetJobOutput, error) {
+// GetJobWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetJobWithContext(arg0 aws.Context, arg1 *devicefarm.GetJobInput, arg2 ...request.Option) (*devicefarm.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +1128,14 @@ func (m *MockDeviceFarmAPI) GetJobWithContext(arg0 context.Context, arg1 *device
 	return ret0, ret1
 }
 
-// GetJobWithContext indicates an expected call of GetJobWithContext.
+// GetJobWithContext indicates an expected call of GetJobWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetJobWithContext), varargs...)
 }
 
-// GetNetworkProfile mocks base method.
+// GetNetworkProfile mocks base method
 func (m *MockDeviceFarmAPI) GetNetworkProfile(arg0 *devicefarm.GetNetworkProfileInput) (*devicefarm.GetNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetNetworkProfile", arg0)
@@ -1295,13 +1144,13 @@ func (m *MockDeviceFarmAPI) GetNetworkProfile(arg0 *devicefarm.GetNetworkProfile
 	return ret0, ret1
 }
 
-// GetNetworkProfile indicates an expected call of GetNetworkProfile.
+// GetNetworkProfile indicates an expected call of GetNetworkProfile
 func (mr *MockDeviceFarmAPIMockRecorder) GetNetworkProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetNetworkProfile), arg0)
 }
 
-// GetNetworkProfileRequest mocks base method.
+// GetNetworkProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) GetNetworkProfileRequest(arg0 *devicefarm.GetNetworkProfileInput) (*request.Request, *devicefarm.GetNetworkProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetNetworkProfileRequest", arg0)
@@ -1310,14 +1159,14 @@ func (m *MockDeviceFarmAPI) GetNetworkProfileRequest(arg0 *devicefarm.GetNetwork
 	return ret0, ret1
 }
 
-// GetNetworkProfileRequest indicates an expected call of GetNetworkProfileRequest.
+// GetNetworkProfileRequest indicates an expected call of GetNetworkProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetNetworkProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetNetworkProfileRequest), arg0)
 }
 
-// GetNetworkProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.GetNetworkProfileInput, arg2 ...request.Option) (*devicefarm.GetNetworkProfileOutput, error) {
+// GetNetworkProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.GetNetworkProfileInput, arg2 ...request.Option) (*devicefarm.GetNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1329,14 +1178,14 @@ func (m *MockDeviceFarmAPI) GetNetworkProfileWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetNetworkProfileWithContext indicates an expected call of GetNetworkProfileWithContext.
+// GetNetworkProfileWithContext indicates an expected call of GetNetworkProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetNetworkProfileWithContext), varargs...)
 }
 
-// GetOfferingStatus mocks base method.
+// GetOfferingStatus mocks base method
 func (m *MockDeviceFarmAPI) GetOfferingStatus(arg0 *devicefarm.GetOfferingStatusInput) (*devicefarm.GetOfferingStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOfferingStatus", arg0)
@@ -1345,13 +1194,13 @@ func (m *MockDeviceFarmAPI) GetOfferingStatus(arg0 *devicefarm.GetOfferingStatus
 	return ret0, ret1
 }
 
-// GetOfferingStatus indicates an expected call of GetOfferingStatus.
+// GetOfferingStatus indicates an expected call of GetOfferingStatus
 func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOfferingStatus", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetOfferingStatus), arg0)
 }
 
-// GetOfferingStatusPages mocks base method.
+// GetOfferingStatusPages mocks base method
 func (m *MockDeviceFarmAPI) GetOfferingStatusPages(arg0 *devicefarm.GetOfferingStatusInput, arg1 func(*devicefarm.GetOfferingStatusOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOfferingStatusPages", arg0, arg1)
@@ -1359,14 +1208,14 @@ func (m *MockDeviceFarmAPI) GetOfferingStatusPages(arg0 *devicefarm.GetOfferingS
 	return ret0
 }
 
-// GetOfferingStatusPages indicates an expected call of GetOfferingStatusPages.
+// GetOfferingStatusPages indicates an expected call of GetOfferingStatusPages
 func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatusPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOfferingStatusPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetOfferingStatusPages), arg0, arg1)
 }
 
-// GetOfferingStatusPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetOfferingStatusPagesWithContext(arg0 context.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 func(*devicefarm.GetOfferingStatusOutput, bool) bool, arg3 ...request.Option) error {
+// GetOfferingStatusPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetOfferingStatusPagesWithContext(arg0 aws.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 func(*devicefarm.GetOfferingStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1377,14 +1226,14 @@ func (m *MockDeviceFarmAPI) GetOfferingStatusPagesWithContext(arg0 context.Conte
 	return ret0
 }
 
-// GetOfferingStatusPagesWithContext indicates an expected call of GetOfferingStatusPagesWithContext.
+// GetOfferingStatusPagesWithContext indicates an expected call of GetOfferingStatusPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOfferingStatusPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetOfferingStatusPagesWithContext), varargs...)
 }
 
-// GetOfferingStatusRequest mocks base method.
+// GetOfferingStatusRequest mocks base method
 func (m *MockDeviceFarmAPI) GetOfferingStatusRequest(arg0 *devicefarm.GetOfferingStatusInput) (*request.Request, *devicefarm.GetOfferingStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOfferingStatusRequest", arg0)
@@ -1393,14 +1242,14 @@ func (m *MockDeviceFarmAPI) GetOfferingStatusRequest(arg0 *devicefarm.GetOfferin
 	return ret0, ret1
 }
 
-// GetOfferingStatusRequest indicates an expected call of GetOfferingStatusRequest.
+// GetOfferingStatusRequest indicates an expected call of GetOfferingStatusRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOfferingStatusRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetOfferingStatusRequest), arg0)
 }
 
-// GetOfferingStatusWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetOfferingStatusWithContext(arg0 context.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 ...request.Option) (*devicefarm.GetOfferingStatusOutput, error) {
+// GetOfferingStatusWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetOfferingStatusWithContext(arg0 aws.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 ...request.Option) (*devicefarm.GetOfferingStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1412,14 +1261,14 @@ func (m *MockDeviceFarmAPI) GetOfferingStatusWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetOfferingStatusWithContext indicates an expected call of GetOfferingStatusWithContext.
+// GetOfferingStatusWithContext indicates an expected call of GetOfferingStatusWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOfferingStatusWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetOfferingStatusWithContext), varargs...)
 }
 
-// GetProject mocks base method.
+// GetProject mocks base method
 func (m *MockDeviceFarmAPI) GetProject(arg0 *devicefarm.GetProjectInput) (*devicefarm.GetProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProject", arg0)
@@ -1428,13 +1277,13 @@ func (m *MockDeviceFarmAPI) GetProject(arg0 *devicefarm.GetProjectInput) (*devic
 	return ret0, ret1
 }
 
-// GetProject indicates an expected call of GetProject.
+// GetProject indicates an expected call of GetProject
 func (mr *MockDeviceFarmAPIMockRecorder) GetProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetProject), arg0)
 }
 
-// GetProjectRequest mocks base method.
+// GetProjectRequest mocks base method
 func (m *MockDeviceFarmAPI) GetProjectRequest(arg0 *devicefarm.GetProjectInput) (*request.Request, *devicefarm.GetProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProjectRequest", arg0)
@@ -1443,14 +1292,14 @@ func (m *MockDeviceFarmAPI) GetProjectRequest(arg0 *devicefarm.GetProjectInput) 
 	return ret0, ret1
 }
 
-// GetProjectRequest indicates an expected call of GetProjectRequest.
+// GetProjectRequest indicates an expected call of GetProjectRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetProjectRequest), arg0)
 }
 
-// GetProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetProjectWithContext(arg0 context.Context, arg1 *devicefarm.GetProjectInput, arg2 ...request.Option) (*devicefarm.GetProjectOutput, error) {
+// GetProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetProjectWithContext(arg0 aws.Context, arg1 *devicefarm.GetProjectInput, arg2 ...request.Option) (*devicefarm.GetProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1462,14 +1311,14 @@ func (m *MockDeviceFarmAPI) GetProjectWithContext(arg0 context.Context, arg1 *de
 	return ret0, ret1
 }
 
-// GetProjectWithContext indicates an expected call of GetProjectWithContext.
+// GetProjectWithContext indicates an expected call of GetProjectWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetProjectWithContext), varargs...)
 }
 
-// GetRemoteAccessSession mocks base method.
+// GetRemoteAccessSession mocks base method
 func (m *MockDeviceFarmAPI) GetRemoteAccessSession(arg0 *devicefarm.GetRemoteAccessSessionInput) (*devicefarm.GetRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRemoteAccessSession", arg0)
@@ -1478,13 +1327,13 @@ func (m *MockDeviceFarmAPI) GetRemoteAccessSession(arg0 *devicefarm.GetRemoteAcc
 	return ret0, ret1
 }
 
-// GetRemoteAccessSession indicates an expected call of GetRemoteAccessSession.
+// GetRemoteAccessSession indicates an expected call of GetRemoteAccessSession
 func (mr *MockDeviceFarmAPIMockRecorder) GetRemoteAccessSession(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRemoteAccessSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetRemoteAccessSession), arg0)
 }
 
-// GetRemoteAccessSessionRequest mocks base method.
+// GetRemoteAccessSessionRequest mocks base method
 func (m *MockDeviceFarmAPI) GetRemoteAccessSessionRequest(arg0 *devicefarm.GetRemoteAccessSessionInput) (*request.Request, *devicefarm.GetRemoteAccessSessionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRemoteAccessSessionRequest", arg0)
@@ -1493,14 +1342,14 @@ func (m *MockDeviceFarmAPI) GetRemoteAccessSessionRequest(arg0 *devicefarm.GetRe
 	return ret0, ret1
 }
 
-// GetRemoteAccessSessionRequest indicates an expected call of GetRemoteAccessSessionRequest.
+// GetRemoteAccessSessionRequest indicates an expected call of GetRemoteAccessSessionRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetRemoteAccessSessionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRemoteAccessSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetRemoteAccessSessionRequest), arg0)
 }
 
-// GetRemoteAccessSessionWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.GetRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.GetRemoteAccessSessionOutput, error) {
+// GetRemoteAccessSessionWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.GetRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.GetRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1512,14 +1361,14 @@ func (m *MockDeviceFarmAPI) GetRemoteAccessSessionWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// GetRemoteAccessSessionWithContext indicates an expected call of GetRemoteAccessSessionWithContext.
+// GetRemoteAccessSessionWithContext indicates an expected call of GetRemoteAccessSessionWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetRemoteAccessSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRemoteAccessSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetRemoteAccessSessionWithContext), varargs...)
 }
 
-// GetRun mocks base method.
+// GetRun mocks base method
 func (m *MockDeviceFarmAPI) GetRun(arg0 *devicefarm.GetRunInput) (*devicefarm.GetRunOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRun", arg0)
@@ -1528,13 +1377,13 @@ func (m *MockDeviceFarmAPI) GetRun(arg0 *devicefarm.GetRunInput) (*devicefarm.Ge
 	return ret0, ret1
 }
 
-// GetRun indicates an expected call of GetRun.
+// GetRun indicates an expected call of GetRun
 func (mr *MockDeviceFarmAPIMockRecorder) GetRun(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRun", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetRun), arg0)
 }
 
-// GetRunRequest mocks base method.
+// GetRunRequest mocks base method
 func (m *MockDeviceFarmAPI) GetRunRequest(arg0 *devicefarm.GetRunInput) (*request.Request, *devicefarm.GetRunOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRunRequest", arg0)
@@ -1543,14 +1392,14 @@ func (m *MockDeviceFarmAPI) GetRunRequest(arg0 *devicefarm.GetRunInput) (*reques
 	return ret0, ret1
 }
 
-// GetRunRequest indicates an expected call of GetRunRequest.
+// GetRunRequest indicates an expected call of GetRunRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetRunRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRunRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetRunRequest), arg0)
 }
 
-// GetRunWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetRunWithContext(arg0 context.Context, arg1 *devicefarm.GetRunInput, arg2 ...request.Option) (*devicefarm.GetRunOutput, error) {
+// GetRunWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetRunWithContext(arg0 aws.Context, arg1 *devicefarm.GetRunInput, arg2 ...request.Option) (*devicefarm.GetRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1562,14 +1411,14 @@ func (m *MockDeviceFarmAPI) GetRunWithContext(arg0 context.Context, arg1 *device
 	return ret0, ret1
 }
 
-// GetRunWithContext indicates an expected call of GetRunWithContext.
+// GetRunWithContext indicates an expected call of GetRunWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRunWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetRunWithContext), varargs...)
 }
 
-// GetSuite mocks base method.
+// GetSuite mocks base method
 func (m *MockDeviceFarmAPI) GetSuite(arg0 *devicefarm.GetSuiteInput) (*devicefarm.GetSuiteOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSuite", arg0)
@@ -1578,13 +1427,13 @@ func (m *MockDeviceFarmAPI) GetSuite(arg0 *devicefarm.GetSuiteInput) (*devicefar
 	return ret0, ret1
 }
 
-// GetSuite indicates an expected call of GetSuite.
+// GetSuite indicates an expected call of GetSuite
 func (mr *MockDeviceFarmAPIMockRecorder) GetSuite(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSuite", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetSuite), arg0)
 }
 
-// GetSuiteRequest mocks base method.
+// GetSuiteRequest mocks base method
 func (m *MockDeviceFarmAPI) GetSuiteRequest(arg0 *devicefarm.GetSuiteInput) (*request.Request, *devicefarm.GetSuiteOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSuiteRequest", arg0)
@@ -1593,14 +1442,14 @@ func (m *MockDeviceFarmAPI) GetSuiteRequest(arg0 *devicefarm.GetSuiteInput) (*re
 	return ret0, ret1
 }
 
-// GetSuiteRequest indicates an expected call of GetSuiteRequest.
+// GetSuiteRequest indicates an expected call of GetSuiteRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetSuiteRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSuiteRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetSuiteRequest), arg0)
 }
 
-// GetSuiteWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetSuiteWithContext(arg0 context.Context, arg1 *devicefarm.GetSuiteInput, arg2 ...request.Option) (*devicefarm.GetSuiteOutput, error) {
+// GetSuiteWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetSuiteWithContext(arg0 aws.Context, arg1 *devicefarm.GetSuiteInput, arg2 ...request.Option) (*devicefarm.GetSuiteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1612,14 +1461,14 @@ func (m *MockDeviceFarmAPI) GetSuiteWithContext(arg0 context.Context, arg1 *devi
 	return ret0, ret1
 }
 
-// GetSuiteWithContext indicates an expected call of GetSuiteWithContext.
+// GetSuiteWithContext indicates an expected call of GetSuiteWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetSuiteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSuiteWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetSuiteWithContext), varargs...)
 }
 
-// GetTest mocks base method.
+// GetTest mocks base method
 func (m *MockDeviceFarmAPI) GetTest(arg0 *devicefarm.GetTestInput) (*devicefarm.GetTestOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetTest", arg0)
@@ -1628,113 +1477,13 @@ func (m *MockDeviceFarmAPI) GetTest(arg0 *devicefarm.GetTestInput) (*devicefarm.
 	return ret0, ret1
 }
 
-// GetTest indicates an expected call of GetTest.
+// GetTest indicates an expected call of GetTest
 func (mr *MockDeviceFarmAPIMockRecorder) GetTest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTest), arg0)
 }
 
-// GetTestGridProject mocks base method.
-func (m *MockDeviceFarmAPI) GetTestGridProject(arg0 *devicefarm.GetTestGridProjectInput) (*devicefarm.GetTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetTestGridProject", arg0)
-	ret0, _ := ret[0].(*devicefarm.GetTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetTestGridProject indicates an expected call of GetTestGridProject.
-func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridProject(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridProject), arg0)
-}
-
-// GetTestGridProjectRequest mocks base method.
-func (m *MockDeviceFarmAPI) GetTestGridProjectRequest(arg0 *devicefarm.GetTestGridProjectInput) (*request.Request, *devicefarm.GetTestGridProjectOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetTestGridProjectRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.GetTestGridProjectOutput)
-	return ret0, ret1
-}
-
-// GetTestGridProjectRequest indicates an expected call of GetTestGridProjectRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridProjectRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridProjectRequest), arg0)
-}
-
-// GetTestGridProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.GetTestGridProjectInput, arg2 ...request.Option) (*devicefarm.GetTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetTestGridProjectWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.GetTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetTestGridProjectWithContext indicates an expected call of GetTestGridProjectWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridProjectWithContext), varargs...)
-}
-
-// GetTestGridSession mocks base method.
-func (m *MockDeviceFarmAPI) GetTestGridSession(arg0 *devicefarm.GetTestGridSessionInput) (*devicefarm.GetTestGridSessionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetTestGridSession", arg0)
-	ret0, _ := ret[0].(*devicefarm.GetTestGridSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetTestGridSession indicates an expected call of GetTestGridSession.
-func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridSession(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridSession), arg0)
-}
-
-// GetTestGridSessionRequest mocks base method.
-func (m *MockDeviceFarmAPI) GetTestGridSessionRequest(arg0 *devicefarm.GetTestGridSessionInput) (*request.Request, *devicefarm.GetTestGridSessionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetTestGridSessionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.GetTestGridSessionOutput)
-	return ret0, ret1
-}
-
-// GetTestGridSessionRequest indicates an expected call of GetTestGridSessionRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridSessionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridSessionRequest), arg0)
-}
-
-// GetTestGridSessionWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetTestGridSessionWithContext(arg0 context.Context, arg1 *devicefarm.GetTestGridSessionInput, arg2 ...request.Option) (*devicefarm.GetTestGridSessionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetTestGridSessionWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.GetTestGridSessionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetTestGridSessionWithContext indicates an expected call of GetTestGridSessionWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridSessionWithContext), varargs...)
-}
-
-// GetTestRequest mocks base method.
+// GetTestRequest mocks base method
 func (m *MockDeviceFarmAPI) GetTestRequest(arg0 *devicefarm.GetTestInput) (*request.Request, *devicefarm.GetTestOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetTestRequest", arg0)
@@ -1743,14 +1492,14 @@ func (m *MockDeviceFarmAPI) GetTestRequest(arg0 *devicefarm.GetTestInput) (*requ
 	return ret0, ret1
 }
 
-// GetTestRequest indicates an expected call of GetTestRequest.
+// GetTestRequest indicates an expected call of GetTestRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetTestRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestRequest), arg0)
 }
 
-// GetTestWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetTestWithContext(arg0 context.Context, arg1 *devicefarm.GetTestInput, arg2 ...request.Option) (*devicefarm.GetTestOutput, error) {
+// GetTestWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetTestWithContext(arg0 aws.Context, arg1 *devicefarm.GetTestInput, arg2 ...request.Option) (*devicefarm.GetTestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1762,14 +1511,14 @@ func (m *MockDeviceFarmAPI) GetTestWithContext(arg0 context.Context, arg1 *devic
 	return ret0, ret1
 }
 
-// GetTestWithContext indicates an expected call of GetTestWithContext.
+// GetTestWithContext indicates an expected call of GetTestWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetTestWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestWithContext), varargs...)
 }
 
-// GetUpload mocks base method.
+// GetUpload mocks base method
 func (m *MockDeviceFarmAPI) GetUpload(arg0 *devicefarm.GetUploadInput) (*devicefarm.GetUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUpload", arg0)
@@ -1778,13 +1527,13 @@ func (m *MockDeviceFarmAPI) GetUpload(arg0 *devicefarm.GetUploadInput) (*devicef
 	return ret0, ret1
 }
 
-// GetUpload indicates an expected call of GetUpload.
+// GetUpload indicates an expected call of GetUpload
 func (mr *MockDeviceFarmAPIMockRecorder) GetUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpload", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetUpload), arg0)
 }
 
-// GetUploadRequest mocks base method.
+// GetUploadRequest mocks base method
 func (m *MockDeviceFarmAPI) GetUploadRequest(arg0 *devicefarm.GetUploadInput) (*request.Request, *devicefarm.GetUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUploadRequest", arg0)
@@ -1793,14 +1542,14 @@ func (m *MockDeviceFarmAPI) GetUploadRequest(arg0 *devicefarm.GetUploadInput) (*
 	return ret0, ret1
 }
 
-// GetUploadRequest indicates an expected call of GetUploadRequest.
+// GetUploadRequest indicates an expected call of GetUploadRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUploadRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetUploadRequest), arg0)
 }
 
-// GetUploadWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetUploadWithContext(arg0 context.Context, arg1 *devicefarm.GetUploadInput, arg2 ...request.Option) (*devicefarm.GetUploadOutput, error) {
+// GetUploadWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetUploadWithContext(arg0 aws.Context, arg1 *devicefarm.GetUploadInput, arg2 ...request.Option) (*devicefarm.GetUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1812,14 +1561,14 @@ func (m *MockDeviceFarmAPI) GetUploadWithContext(arg0 context.Context, arg1 *dev
 	return ret0, ret1
 }
 
-// GetUploadWithContext indicates an expected call of GetUploadWithContext.
+// GetUploadWithContext indicates an expected call of GetUploadWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUploadWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetUploadWithContext), varargs...)
 }
 
-// GetVPCEConfiguration mocks base method.
+// GetVPCEConfiguration mocks base method
 func (m *MockDeviceFarmAPI) GetVPCEConfiguration(arg0 *devicefarm.GetVPCEConfigurationInput) (*devicefarm.GetVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVPCEConfiguration", arg0)
@@ -1828,13 +1577,13 @@ func (m *MockDeviceFarmAPI) GetVPCEConfiguration(arg0 *devicefarm.GetVPCEConfigu
 	return ret0, ret1
 }
 
-// GetVPCEConfiguration indicates an expected call of GetVPCEConfiguration.
+// GetVPCEConfiguration indicates an expected call of GetVPCEConfiguration
 func (mr *MockDeviceFarmAPIMockRecorder) GetVPCEConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVPCEConfiguration", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetVPCEConfiguration), arg0)
 }
 
-// GetVPCEConfigurationRequest mocks base method.
+// GetVPCEConfigurationRequest mocks base method
 func (m *MockDeviceFarmAPI) GetVPCEConfigurationRequest(arg0 *devicefarm.GetVPCEConfigurationInput) (*request.Request, *devicefarm.GetVPCEConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVPCEConfigurationRequest", arg0)
@@ -1843,14 +1592,14 @@ func (m *MockDeviceFarmAPI) GetVPCEConfigurationRequest(arg0 *devicefarm.GetVPCE
 	return ret0, ret1
 }
 
-// GetVPCEConfigurationRequest indicates an expected call of GetVPCEConfigurationRequest.
+// GetVPCEConfigurationRequest indicates an expected call of GetVPCEConfigurationRequest
 func (mr *MockDeviceFarmAPIMockRecorder) GetVPCEConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVPCEConfigurationRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetVPCEConfigurationRequest), arg0)
 }
 
-// GetVPCEConfigurationWithContext mocks base method.
-func (m *MockDeviceFarmAPI) GetVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.GetVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.GetVPCEConfigurationOutput, error) {
+// GetVPCEConfigurationWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.GetVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.GetVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1862,14 +1611,14 @@ func (m *MockDeviceFarmAPI) GetVPCEConfigurationWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetVPCEConfigurationWithContext indicates an expected call of GetVPCEConfigurationWithContext.
+// GetVPCEConfigurationWithContext indicates an expected call of GetVPCEConfigurationWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) GetVPCEConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVPCEConfigurationWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetVPCEConfigurationWithContext), varargs...)
 }
 
-// InstallToRemoteAccessSession mocks base method.
+// InstallToRemoteAccessSession mocks base method
 func (m *MockDeviceFarmAPI) InstallToRemoteAccessSession(arg0 *devicefarm.InstallToRemoteAccessSessionInput) (*devicefarm.InstallToRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InstallToRemoteAccessSession", arg0)
@@ -1878,13 +1627,13 @@ func (m *MockDeviceFarmAPI) InstallToRemoteAccessSession(arg0 *devicefarm.Instal
 	return ret0, ret1
 }
 
-// InstallToRemoteAccessSession indicates an expected call of InstallToRemoteAccessSession.
+// InstallToRemoteAccessSession indicates an expected call of InstallToRemoteAccessSession
 func (mr *MockDeviceFarmAPIMockRecorder) InstallToRemoteAccessSession(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InstallToRemoteAccessSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).InstallToRemoteAccessSession), arg0)
 }
 
-// InstallToRemoteAccessSessionRequest mocks base method.
+// InstallToRemoteAccessSessionRequest mocks base method
 func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionRequest(arg0 *devicefarm.InstallToRemoteAccessSessionInput) (*request.Request, *devicefarm.InstallToRemoteAccessSessionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InstallToRemoteAccessSessionRequest", arg0)
@@ -1893,14 +1642,14 @@ func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionRequest(arg0 *devicefarm
 	return ret0, ret1
 }
 
-// InstallToRemoteAccessSessionRequest indicates an expected call of InstallToRemoteAccessSessionRequest.
+// InstallToRemoteAccessSessionRequest indicates an expected call of InstallToRemoteAccessSessionRequest
 func (mr *MockDeviceFarmAPIMockRecorder) InstallToRemoteAccessSessionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InstallToRemoteAccessSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).InstallToRemoteAccessSessionRequest), arg0)
 }
 
-// InstallToRemoteAccessSessionWithContext mocks base method.
-func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.InstallToRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.InstallToRemoteAccessSessionOutput, error) {
+// InstallToRemoteAccessSessionWithContext mocks base method
+func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.InstallToRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.InstallToRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1912,14 +1661,14 @@ func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionWithContext(arg0 context
 	return ret0, ret1
 }
 
-// InstallToRemoteAccessSessionWithContext indicates an expected call of InstallToRemoteAccessSessionWithContext.
+// InstallToRemoteAccessSessionWithContext indicates an expected call of InstallToRemoteAccessSessionWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) InstallToRemoteAccessSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InstallToRemoteAccessSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).InstallToRemoteAccessSessionWithContext), varargs...)
 }
 
-// ListArtifacts mocks base method.
+// ListArtifacts mocks base method
 func (m *MockDeviceFarmAPI) ListArtifacts(arg0 *devicefarm.ListArtifactsInput) (*devicefarm.ListArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListArtifacts", arg0)
@@ -1928,13 +1677,13 @@ func (m *MockDeviceFarmAPI) ListArtifacts(arg0 *devicefarm.ListArtifactsInput) (
 	return ret0, ret1
 }
 
-// ListArtifacts indicates an expected call of ListArtifacts.
+// ListArtifacts indicates an expected call of ListArtifacts
 func (mr *MockDeviceFarmAPIMockRecorder) ListArtifacts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifacts", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListArtifacts), arg0)
 }
 
-// ListArtifactsPages mocks base method.
+// ListArtifactsPages mocks base method
 func (m *MockDeviceFarmAPI) ListArtifactsPages(arg0 *devicefarm.ListArtifactsInput, arg1 func(*devicefarm.ListArtifactsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListArtifactsPages", arg0, arg1)
@@ -1942,14 +1691,14 @@ func (m *MockDeviceFarmAPI) ListArtifactsPages(arg0 *devicefarm.ListArtifactsInp
 	return ret0
 }
 
-// ListArtifactsPages indicates an expected call of ListArtifactsPages.
+// ListArtifactsPages indicates an expected call of ListArtifactsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListArtifactsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListArtifactsPages), arg0, arg1)
 }
 
-// ListArtifactsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListArtifactsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListArtifactsInput, arg2 func(*devicefarm.ListArtifactsOutput, bool) bool, arg3 ...request.Option) error {
+// ListArtifactsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListArtifactsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListArtifactsInput, arg2 func(*devicefarm.ListArtifactsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1960,14 +1709,14 @@ func (m *MockDeviceFarmAPI) ListArtifactsPagesWithContext(arg0 context.Context, 
 	return ret0
 }
 
-// ListArtifactsPagesWithContext indicates an expected call of ListArtifactsPagesWithContext.
+// ListArtifactsPagesWithContext indicates an expected call of ListArtifactsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListArtifactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListArtifactsPagesWithContext), varargs...)
 }
 
-// ListArtifactsRequest mocks base method.
+// ListArtifactsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListArtifactsRequest(arg0 *devicefarm.ListArtifactsInput) (*request.Request, *devicefarm.ListArtifactsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListArtifactsRequest", arg0)
@@ -1976,14 +1725,14 @@ func (m *MockDeviceFarmAPI) ListArtifactsRequest(arg0 *devicefarm.ListArtifactsI
 	return ret0, ret1
 }
 
-// ListArtifactsRequest indicates an expected call of ListArtifactsRequest.
+// ListArtifactsRequest indicates an expected call of ListArtifactsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListArtifactsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListArtifactsRequest), arg0)
 }
 
-// ListArtifactsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListArtifactsWithContext(arg0 context.Context, arg1 *devicefarm.ListArtifactsInput, arg2 ...request.Option) (*devicefarm.ListArtifactsOutput, error) {
+// ListArtifactsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListArtifactsWithContext(arg0 aws.Context, arg1 *devicefarm.ListArtifactsInput, arg2 ...request.Option) (*devicefarm.ListArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1995,14 +1744,14 @@ func (m *MockDeviceFarmAPI) ListArtifactsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListArtifactsWithContext indicates an expected call of ListArtifactsWithContext.
+// ListArtifactsWithContext indicates an expected call of ListArtifactsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListArtifactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListArtifactsWithContext), varargs...)
 }
 
-// ListDeviceInstances mocks base method.
+// ListDeviceInstances mocks base method
 func (m *MockDeviceFarmAPI) ListDeviceInstances(arg0 *devicefarm.ListDeviceInstancesInput) (*devicefarm.ListDeviceInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceInstances", arg0)
@@ -2011,13 +1760,13 @@ func (m *MockDeviceFarmAPI) ListDeviceInstances(arg0 *devicefarm.ListDeviceInsta
 	return ret0, ret1
 }
 
-// ListDeviceInstances indicates an expected call of ListDeviceInstances.
+// ListDeviceInstances indicates an expected call of ListDeviceInstances
 func (mr *MockDeviceFarmAPIMockRecorder) ListDeviceInstances(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceInstances", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDeviceInstances), arg0)
 }
 
-// ListDeviceInstancesRequest mocks base method.
+// ListDeviceInstancesRequest mocks base method
 func (m *MockDeviceFarmAPI) ListDeviceInstancesRequest(arg0 *devicefarm.ListDeviceInstancesInput) (*request.Request, *devicefarm.ListDeviceInstancesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceInstancesRequest", arg0)
@@ -2026,14 +1775,14 @@ func (m *MockDeviceFarmAPI) ListDeviceInstancesRequest(arg0 *devicefarm.ListDevi
 	return ret0, ret1
 }
 
-// ListDeviceInstancesRequest indicates an expected call of ListDeviceInstancesRequest.
+// ListDeviceInstancesRequest indicates an expected call of ListDeviceInstancesRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListDeviceInstancesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceInstancesRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDeviceInstancesRequest), arg0)
 }
 
-// ListDeviceInstancesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListDeviceInstancesWithContext(arg0 context.Context, arg1 *devicefarm.ListDeviceInstancesInput, arg2 ...request.Option) (*devicefarm.ListDeviceInstancesOutput, error) {
+// ListDeviceInstancesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListDeviceInstancesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDeviceInstancesInput, arg2 ...request.Option) (*devicefarm.ListDeviceInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2045,14 +1794,14 @@ func (m *MockDeviceFarmAPI) ListDeviceInstancesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListDeviceInstancesWithContext indicates an expected call of ListDeviceInstancesWithContext.
+// ListDeviceInstancesWithContext indicates an expected call of ListDeviceInstancesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListDeviceInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceInstancesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDeviceInstancesWithContext), varargs...)
 }
 
-// ListDevicePools mocks base method.
+// ListDevicePools mocks base method
 func (m *MockDeviceFarmAPI) ListDevicePools(arg0 *devicefarm.ListDevicePoolsInput) (*devicefarm.ListDevicePoolsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevicePools", arg0)
@@ -2061,13 +1810,13 @@ func (m *MockDeviceFarmAPI) ListDevicePools(arg0 *devicefarm.ListDevicePoolsInpu
 	return ret0, ret1
 }
 
-// ListDevicePools indicates an expected call of ListDevicePools.
+// ListDevicePools indicates an expected call of ListDevicePools
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePools(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicePools", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicePools), arg0)
 }
 
-// ListDevicePoolsPages mocks base method.
+// ListDevicePoolsPages mocks base method
 func (m *MockDeviceFarmAPI) ListDevicePoolsPages(arg0 *devicefarm.ListDevicePoolsInput, arg1 func(*devicefarm.ListDevicePoolsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevicePoolsPages", arg0, arg1)
@@ -2075,14 +1824,14 @@ func (m *MockDeviceFarmAPI) ListDevicePoolsPages(arg0 *devicefarm.ListDevicePool
 	return ret0
 }
 
-// ListDevicePoolsPages indicates an expected call of ListDevicePoolsPages.
+// ListDevicePoolsPages indicates an expected call of ListDevicePoolsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePoolsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicePoolsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicePoolsPages), arg0, arg1)
 }
 
-// ListDevicePoolsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListDevicePoolsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 func(*devicefarm.ListDevicePoolsOutput, bool) bool, arg3 ...request.Option) error {
+// ListDevicePoolsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListDevicePoolsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 func(*devicefarm.ListDevicePoolsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2093,14 +1842,14 @@ func (m *MockDeviceFarmAPI) ListDevicePoolsPagesWithContext(arg0 context.Context
 	return ret0
 }
 
-// ListDevicePoolsPagesWithContext indicates an expected call of ListDevicePoolsPagesWithContext.
+// ListDevicePoolsPagesWithContext indicates an expected call of ListDevicePoolsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePoolsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicePoolsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicePoolsPagesWithContext), varargs...)
 }
 
-// ListDevicePoolsRequest mocks base method.
+// ListDevicePoolsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListDevicePoolsRequest(arg0 *devicefarm.ListDevicePoolsInput) (*request.Request, *devicefarm.ListDevicePoolsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevicePoolsRequest", arg0)
@@ -2109,14 +1858,14 @@ func (m *MockDeviceFarmAPI) ListDevicePoolsRequest(arg0 *devicefarm.ListDevicePo
 	return ret0, ret1
 }
 
-// ListDevicePoolsRequest indicates an expected call of ListDevicePoolsRequest.
+// ListDevicePoolsRequest indicates an expected call of ListDevicePoolsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePoolsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicePoolsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicePoolsRequest), arg0)
 }
 
-// ListDevicePoolsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListDevicePoolsWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 ...request.Option) (*devicefarm.ListDevicePoolsOutput, error) {
+// ListDevicePoolsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListDevicePoolsWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 ...request.Option) (*devicefarm.ListDevicePoolsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2128,14 +1877,14 @@ func (m *MockDeviceFarmAPI) ListDevicePoolsWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// ListDevicePoolsWithContext indicates an expected call of ListDevicePoolsWithContext.
+// ListDevicePoolsWithContext indicates an expected call of ListDevicePoolsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePoolsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicePoolsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicePoolsWithContext), varargs...)
 }
 
-// ListDevices mocks base method.
+// ListDevices mocks base method
 func (m *MockDeviceFarmAPI) ListDevices(arg0 *devicefarm.ListDevicesInput) (*devicefarm.ListDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevices", arg0)
@@ -2144,13 +1893,13 @@ func (m *MockDeviceFarmAPI) ListDevices(arg0 *devicefarm.ListDevicesInput) (*dev
 	return ret0, ret1
 }
 
-// ListDevices indicates an expected call of ListDevices.
+// ListDevices indicates an expected call of ListDevices
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevices", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevices), arg0)
 }
 
-// ListDevicesPages mocks base method.
+// ListDevicesPages mocks base method
 func (m *MockDeviceFarmAPI) ListDevicesPages(arg0 *devicefarm.ListDevicesInput, arg1 func(*devicefarm.ListDevicesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevicesPages", arg0, arg1)
@@ -2158,14 +1907,14 @@ func (m *MockDeviceFarmAPI) ListDevicesPages(arg0 *devicefarm.ListDevicesInput, 
 	return ret0
 }
 
-// ListDevicesPages indicates an expected call of ListDevicesPages.
+// ListDevicesPages indicates an expected call of ListDevicesPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicesPages), arg0, arg1)
 }
 
-// ListDevicesPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListDevicesPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicesInput, arg2 func(*devicefarm.ListDevicesOutput, bool) bool, arg3 ...request.Option) error {
+// ListDevicesPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListDevicesPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicesInput, arg2 func(*devicefarm.ListDevicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2176,14 +1925,14 @@ func (m *MockDeviceFarmAPI) ListDevicesPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// ListDevicesPagesWithContext indicates an expected call of ListDevicesPagesWithContext.
+// ListDevicesPagesWithContext indicates an expected call of ListDevicesPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicesPagesWithContext), varargs...)
 }
 
-// ListDevicesRequest mocks base method.
+// ListDevicesRequest mocks base method
 func (m *MockDeviceFarmAPI) ListDevicesRequest(arg0 *devicefarm.ListDevicesInput) (*request.Request, *devicefarm.ListDevicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevicesRequest", arg0)
@@ -2192,14 +1941,14 @@ func (m *MockDeviceFarmAPI) ListDevicesRequest(arg0 *devicefarm.ListDevicesInput
 	return ret0, ret1
 }
 
-// ListDevicesRequest indicates an expected call of ListDevicesRequest.
+// ListDevicesRequest indicates an expected call of ListDevicesRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicesRequest), arg0)
 }
 
-// ListDevicesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListDevicesWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicesInput, arg2 ...request.Option) (*devicefarm.ListDevicesOutput, error) {
+// ListDevicesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListDevicesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicesInput, arg2 ...request.Option) (*devicefarm.ListDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2211,14 +1960,14 @@ func (m *MockDeviceFarmAPI) ListDevicesWithContext(arg0 context.Context, arg1 *d
 	return ret0, ret1
 }
 
-// ListDevicesWithContext indicates an expected call of ListDevicesWithContext.
+// ListDevicesWithContext indicates an expected call of ListDevicesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListDevicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListDevicesWithContext), varargs...)
 }
 
-// ListInstanceProfiles mocks base method.
+// ListInstanceProfiles mocks base method
 func (m *MockDeviceFarmAPI) ListInstanceProfiles(arg0 *devicefarm.ListInstanceProfilesInput) (*devicefarm.ListInstanceProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceProfiles", arg0)
@@ -2227,13 +1976,13 @@ func (m *MockDeviceFarmAPI) ListInstanceProfiles(arg0 *devicefarm.ListInstancePr
 	return ret0, ret1
 }
 
-// ListInstanceProfiles indicates an expected call of ListInstanceProfiles.
+// ListInstanceProfiles indicates an expected call of ListInstanceProfiles
 func (mr *MockDeviceFarmAPIMockRecorder) ListInstanceProfiles(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceProfiles", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListInstanceProfiles), arg0)
 }
 
-// ListInstanceProfilesRequest mocks base method.
+// ListInstanceProfilesRequest mocks base method
 func (m *MockDeviceFarmAPI) ListInstanceProfilesRequest(arg0 *devicefarm.ListInstanceProfilesInput) (*request.Request, *devicefarm.ListInstanceProfilesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceProfilesRequest", arg0)
@@ -2242,14 +1991,14 @@ func (m *MockDeviceFarmAPI) ListInstanceProfilesRequest(arg0 *devicefarm.ListIns
 	return ret0, ret1
 }
 
-// ListInstanceProfilesRequest indicates an expected call of ListInstanceProfilesRequest.
+// ListInstanceProfilesRequest indicates an expected call of ListInstanceProfilesRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListInstanceProfilesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceProfilesRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListInstanceProfilesRequest), arg0)
 }
 
-// ListInstanceProfilesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListInstanceProfilesWithContext(arg0 context.Context, arg1 *devicefarm.ListInstanceProfilesInput, arg2 ...request.Option) (*devicefarm.ListInstanceProfilesOutput, error) {
+// ListInstanceProfilesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListInstanceProfilesWithContext(arg0 aws.Context, arg1 *devicefarm.ListInstanceProfilesInput, arg2 ...request.Option) (*devicefarm.ListInstanceProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2261,14 +2010,14 @@ func (m *MockDeviceFarmAPI) ListInstanceProfilesWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ListInstanceProfilesWithContext indicates an expected call of ListInstanceProfilesWithContext.
+// ListInstanceProfilesWithContext indicates an expected call of ListInstanceProfilesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListInstanceProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceProfilesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListInstanceProfilesWithContext), varargs...)
 }
 
-// ListJobs mocks base method.
+// ListJobs mocks base method
 func (m *MockDeviceFarmAPI) ListJobs(arg0 *devicefarm.ListJobsInput) (*devicefarm.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobs", arg0)
@@ -2277,13 +2026,13 @@ func (m *MockDeviceFarmAPI) ListJobs(arg0 *devicefarm.ListJobsInput) (*devicefar
 	return ret0, ret1
 }
 
-// ListJobs indicates an expected call of ListJobs.
+// ListJobs indicates an expected call of ListJobs
 func (mr *MockDeviceFarmAPIMockRecorder) ListJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobs", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListJobs), arg0)
 }
 
-// ListJobsPages mocks base method.
+// ListJobsPages mocks base method
 func (m *MockDeviceFarmAPI) ListJobsPages(arg0 *devicefarm.ListJobsInput, arg1 func(*devicefarm.ListJobsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsPages", arg0, arg1)
@@ -2291,14 +2040,14 @@ func (m *MockDeviceFarmAPI) ListJobsPages(arg0 *devicefarm.ListJobsInput, arg1 f
 	return ret0
 }
 
-// ListJobsPages indicates an expected call of ListJobsPages.
+// ListJobsPages indicates an expected call of ListJobsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListJobsPages), arg0, arg1)
 }
 
-// ListJobsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListJobsInput, arg2 func(*devicefarm.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+// ListJobsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListJobsInput, arg2 func(*devicefarm.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2309,14 +2058,14 @@ func (m *MockDeviceFarmAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 
 	return ret0
 }
 
-// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext.
+// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListJobsPagesWithContext), varargs...)
 }
 
-// ListJobsRequest mocks base method.
+// ListJobsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListJobsRequest(arg0 *devicefarm.ListJobsInput) (*request.Request, *devicefarm.ListJobsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsRequest", arg0)
@@ -2325,14 +2074,14 @@ func (m *MockDeviceFarmAPI) ListJobsRequest(arg0 *devicefarm.ListJobsInput) (*re
 	return ret0, ret1
 }
 
-// ListJobsRequest indicates an expected call of ListJobsRequest.
+// ListJobsRequest indicates an expected call of ListJobsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListJobsRequest), arg0)
 }
 
-// ListJobsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListJobsWithContext(arg0 context.Context, arg1 *devicefarm.ListJobsInput, arg2 ...request.Option) (*devicefarm.ListJobsOutput, error) {
+// ListJobsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListJobsWithContext(arg0 aws.Context, arg1 *devicefarm.ListJobsInput, arg2 ...request.Option) (*devicefarm.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2344,14 +2093,14 @@ func (m *MockDeviceFarmAPI) ListJobsWithContext(arg0 context.Context, arg1 *devi
 	return ret0, ret1
 }
 
-// ListJobsWithContext indicates an expected call of ListJobsWithContext.
+// ListJobsWithContext indicates an expected call of ListJobsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListJobsWithContext), varargs...)
 }
 
-// ListNetworkProfiles mocks base method.
+// ListNetworkProfiles mocks base method
 func (m *MockDeviceFarmAPI) ListNetworkProfiles(arg0 *devicefarm.ListNetworkProfilesInput) (*devicefarm.ListNetworkProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListNetworkProfiles", arg0)
@@ -2360,13 +2109,13 @@ func (m *MockDeviceFarmAPI) ListNetworkProfiles(arg0 *devicefarm.ListNetworkProf
 	return ret0, ret1
 }
 
-// ListNetworkProfiles indicates an expected call of ListNetworkProfiles.
+// ListNetworkProfiles indicates an expected call of ListNetworkProfiles
 func (mr *MockDeviceFarmAPIMockRecorder) ListNetworkProfiles(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNetworkProfiles", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListNetworkProfiles), arg0)
 }
 
-// ListNetworkProfilesRequest mocks base method.
+// ListNetworkProfilesRequest mocks base method
 func (m *MockDeviceFarmAPI) ListNetworkProfilesRequest(arg0 *devicefarm.ListNetworkProfilesInput) (*request.Request, *devicefarm.ListNetworkProfilesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListNetworkProfilesRequest", arg0)
@@ -2375,14 +2124,14 @@ func (m *MockDeviceFarmAPI) ListNetworkProfilesRequest(arg0 *devicefarm.ListNetw
 	return ret0, ret1
 }
 
-// ListNetworkProfilesRequest indicates an expected call of ListNetworkProfilesRequest.
+// ListNetworkProfilesRequest indicates an expected call of ListNetworkProfilesRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListNetworkProfilesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNetworkProfilesRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListNetworkProfilesRequest), arg0)
 }
 
-// ListNetworkProfilesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListNetworkProfilesWithContext(arg0 context.Context, arg1 *devicefarm.ListNetworkProfilesInput, arg2 ...request.Option) (*devicefarm.ListNetworkProfilesOutput, error) {
+// ListNetworkProfilesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListNetworkProfilesWithContext(arg0 aws.Context, arg1 *devicefarm.ListNetworkProfilesInput, arg2 ...request.Option) (*devicefarm.ListNetworkProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2394,14 +2143,14 @@ func (m *MockDeviceFarmAPI) ListNetworkProfilesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListNetworkProfilesWithContext indicates an expected call of ListNetworkProfilesWithContext.
+// ListNetworkProfilesWithContext indicates an expected call of ListNetworkProfilesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListNetworkProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNetworkProfilesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListNetworkProfilesWithContext), varargs...)
 }
 
-// ListOfferingPromotions mocks base method.
+// ListOfferingPromotions mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingPromotions(arg0 *devicefarm.ListOfferingPromotionsInput) (*devicefarm.ListOfferingPromotionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingPromotions", arg0)
@@ -2410,13 +2159,13 @@ func (m *MockDeviceFarmAPI) ListOfferingPromotions(arg0 *devicefarm.ListOffering
 	return ret0, ret1
 }
 
-// ListOfferingPromotions indicates an expected call of ListOfferingPromotions.
+// ListOfferingPromotions indicates an expected call of ListOfferingPromotions
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingPromotions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingPromotions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingPromotions), arg0)
 }
 
-// ListOfferingPromotionsRequest mocks base method.
+// ListOfferingPromotionsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingPromotionsRequest(arg0 *devicefarm.ListOfferingPromotionsInput) (*request.Request, *devicefarm.ListOfferingPromotionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingPromotionsRequest", arg0)
@@ -2425,14 +2174,14 @@ func (m *MockDeviceFarmAPI) ListOfferingPromotionsRequest(arg0 *devicefarm.ListO
 	return ret0, ret1
 }
 
-// ListOfferingPromotionsRequest indicates an expected call of ListOfferingPromotionsRequest.
+// ListOfferingPromotionsRequest indicates an expected call of ListOfferingPromotionsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingPromotionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingPromotionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingPromotionsRequest), arg0)
 }
 
-// ListOfferingPromotionsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListOfferingPromotionsWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingPromotionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingPromotionsOutput, error) {
+// ListOfferingPromotionsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListOfferingPromotionsWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingPromotionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingPromotionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2444,14 +2193,14 @@ func (m *MockDeviceFarmAPI) ListOfferingPromotionsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListOfferingPromotionsWithContext indicates an expected call of ListOfferingPromotionsWithContext.
+// ListOfferingPromotionsWithContext indicates an expected call of ListOfferingPromotionsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingPromotionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingPromotionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingPromotionsWithContext), varargs...)
 }
 
-// ListOfferingTransactions mocks base method.
+// ListOfferingTransactions mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingTransactions(arg0 *devicefarm.ListOfferingTransactionsInput) (*devicefarm.ListOfferingTransactionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingTransactions", arg0)
@@ -2460,13 +2209,13 @@ func (m *MockDeviceFarmAPI) ListOfferingTransactions(arg0 *devicefarm.ListOfferi
 	return ret0, ret1
 }
 
-// ListOfferingTransactions indicates an expected call of ListOfferingTransactions.
+// ListOfferingTransactions indicates an expected call of ListOfferingTransactions
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingTransactions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingTransactions), arg0)
 }
 
-// ListOfferingTransactionsPages mocks base method.
+// ListOfferingTransactionsPages mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingTransactionsPages(arg0 *devicefarm.ListOfferingTransactionsInput, arg1 func(*devicefarm.ListOfferingTransactionsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingTransactionsPages", arg0, arg1)
@@ -2474,14 +2223,14 @@ func (m *MockDeviceFarmAPI) ListOfferingTransactionsPages(arg0 *devicefarm.ListO
 	return ret0
 }
 
-// ListOfferingTransactionsPages indicates an expected call of ListOfferingTransactionsPages.
+// ListOfferingTransactionsPages indicates an expected call of ListOfferingTransactionsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingTransactionsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingTransactionsPages), arg0, arg1)
 }
 
-// ListOfferingTransactionsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListOfferingTransactionsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 func(*devicefarm.ListOfferingTransactionsOutput, bool) bool, arg3 ...request.Option) error {
+// ListOfferingTransactionsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListOfferingTransactionsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 func(*devicefarm.ListOfferingTransactionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2492,14 +2241,14 @@ func (m *MockDeviceFarmAPI) ListOfferingTransactionsPagesWithContext(arg0 contex
 	return ret0
 }
 
-// ListOfferingTransactionsPagesWithContext indicates an expected call of ListOfferingTransactionsPagesWithContext.
+// ListOfferingTransactionsPagesWithContext indicates an expected call of ListOfferingTransactionsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingTransactionsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingTransactionsPagesWithContext), varargs...)
 }
 
-// ListOfferingTransactionsRequest mocks base method.
+// ListOfferingTransactionsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingTransactionsRequest(arg0 *devicefarm.ListOfferingTransactionsInput) (*request.Request, *devicefarm.ListOfferingTransactionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingTransactionsRequest", arg0)
@@ -2508,14 +2257,14 @@ func (m *MockDeviceFarmAPI) ListOfferingTransactionsRequest(arg0 *devicefarm.Lis
 	return ret0, ret1
 }
 
-// ListOfferingTransactionsRequest indicates an expected call of ListOfferingTransactionsRequest.
+// ListOfferingTransactionsRequest indicates an expected call of ListOfferingTransactionsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingTransactionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingTransactionsRequest), arg0)
 }
 
-// ListOfferingTransactionsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListOfferingTransactionsWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingTransactionsOutput, error) {
+// ListOfferingTransactionsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListOfferingTransactionsWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingTransactionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2527,14 +2276,14 @@ func (m *MockDeviceFarmAPI) ListOfferingTransactionsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// ListOfferingTransactionsWithContext indicates an expected call of ListOfferingTransactionsWithContext.
+// ListOfferingTransactionsWithContext indicates an expected call of ListOfferingTransactionsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingTransactionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingTransactionsWithContext), varargs...)
 }
 
-// ListOfferings mocks base method.
+// ListOfferings mocks base method
 func (m *MockDeviceFarmAPI) ListOfferings(arg0 *devicefarm.ListOfferingsInput) (*devicefarm.ListOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferings", arg0)
@@ -2543,13 +2292,13 @@ func (m *MockDeviceFarmAPI) ListOfferings(arg0 *devicefarm.ListOfferingsInput) (
 	return ret0, ret1
 }
 
-// ListOfferings indicates an expected call of ListOfferings.
+// ListOfferings indicates an expected call of ListOfferings
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferings", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferings), arg0)
 }
 
-// ListOfferingsPages mocks base method.
+// ListOfferingsPages mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingsPages(arg0 *devicefarm.ListOfferingsInput, arg1 func(*devicefarm.ListOfferingsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingsPages", arg0, arg1)
@@ -2557,14 +2306,14 @@ func (m *MockDeviceFarmAPI) ListOfferingsPages(arg0 *devicefarm.ListOfferingsInp
 	return ret0
 }
 
-// ListOfferingsPages indicates an expected call of ListOfferingsPages.
+// ListOfferingsPages indicates an expected call of ListOfferingsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingsPages), arg0, arg1)
 }
 
-// ListOfferingsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListOfferingsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingsInput, arg2 func(*devicefarm.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+// ListOfferingsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListOfferingsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingsInput, arg2 func(*devicefarm.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2575,14 +2324,14 @@ func (m *MockDeviceFarmAPI) ListOfferingsPagesWithContext(arg0 context.Context, 
 	return ret0
 }
 
-// ListOfferingsPagesWithContext indicates an expected call of ListOfferingsPagesWithContext.
+// ListOfferingsPagesWithContext indicates an expected call of ListOfferingsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingsPagesWithContext), varargs...)
 }
 
-// ListOfferingsRequest mocks base method.
+// ListOfferingsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListOfferingsRequest(arg0 *devicefarm.ListOfferingsInput) (*request.Request, *devicefarm.ListOfferingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOfferingsRequest", arg0)
@@ -2591,14 +2340,14 @@ func (m *MockDeviceFarmAPI) ListOfferingsRequest(arg0 *devicefarm.ListOfferingsI
 	return ret0, ret1
 }
 
-// ListOfferingsRequest indicates an expected call of ListOfferingsRequest.
+// ListOfferingsRequest indicates an expected call of ListOfferingsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingsRequest), arg0)
 }
 
-// ListOfferingsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListOfferingsWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingsInput, arg2 ...request.Option) (*devicefarm.ListOfferingsOutput, error) {
+// ListOfferingsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListOfferingsWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingsInput, arg2 ...request.Option) (*devicefarm.ListOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2610,14 +2359,14 @@ func (m *MockDeviceFarmAPI) ListOfferingsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListOfferingsWithContext indicates an expected call of ListOfferingsWithContext.
+// ListOfferingsWithContext indicates an expected call of ListOfferingsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListOfferingsWithContext), varargs...)
 }
 
-// ListProjects mocks base method.
+// ListProjects mocks base method
 func (m *MockDeviceFarmAPI) ListProjects(arg0 *devicefarm.ListProjectsInput) (*devicefarm.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProjects", arg0)
@@ -2626,13 +2375,13 @@ func (m *MockDeviceFarmAPI) ListProjects(arg0 *devicefarm.ListProjectsInput) (*d
 	return ret0, ret1
 }
 
-// ListProjects indicates an expected call of ListProjects.
+// ListProjects indicates an expected call of ListProjects
 func (mr *MockDeviceFarmAPIMockRecorder) ListProjects(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjects", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListProjects), arg0)
 }
 
-// ListProjectsPages mocks base method.
+// ListProjectsPages mocks base method
 func (m *MockDeviceFarmAPI) ListProjectsPages(arg0 *devicefarm.ListProjectsInput, arg1 func(*devicefarm.ListProjectsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProjectsPages", arg0, arg1)
@@ -2640,14 +2389,14 @@ func (m *MockDeviceFarmAPI) ListProjectsPages(arg0 *devicefarm.ListProjectsInput
 	return ret0
 }
 
-// ListProjectsPages indicates an expected call of ListProjectsPages.
+// ListProjectsPages indicates an expected call of ListProjectsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListProjectsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListProjectsPages), arg0, arg1)
 }
 
-// ListProjectsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListProjectsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListProjectsInput, arg2 func(*devicefarm.ListProjectsOutput, bool) bool, arg3 ...request.Option) error {
+// ListProjectsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListProjectsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListProjectsInput, arg2 func(*devicefarm.ListProjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2658,14 +2407,14 @@ func (m *MockDeviceFarmAPI) ListProjectsPagesWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// ListProjectsPagesWithContext indicates an expected call of ListProjectsPagesWithContext.
+// ListProjectsPagesWithContext indicates an expected call of ListProjectsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListProjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListProjectsPagesWithContext), varargs...)
 }
 
-// ListProjectsRequest mocks base method.
+// ListProjectsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListProjectsRequest(arg0 *devicefarm.ListProjectsInput) (*request.Request, *devicefarm.ListProjectsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProjectsRequest", arg0)
@@ -2674,14 +2423,14 @@ func (m *MockDeviceFarmAPI) ListProjectsRequest(arg0 *devicefarm.ListProjectsInp
 	return ret0, ret1
 }
 
-// ListProjectsRequest indicates an expected call of ListProjectsRequest.
+// ListProjectsRequest indicates an expected call of ListProjectsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListProjectsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListProjectsRequest), arg0)
 }
 
-// ListProjectsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListProjectsWithContext(arg0 context.Context, arg1 *devicefarm.ListProjectsInput, arg2 ...request.Option) (*devicefarm.ListProjectsOutput, error) {
+// ListProjectsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *devicefarm.ListProjectsInput, arg2 ...request.Option) (*devicefarm.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2693,14 +2442,14 @@ func (m *MockDeviceFarmAPI) ListProjectsWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ListProjectsWithContext indicates an expected call of ListProjectsWithContext.
+// ListProjectsWithContext indicates an expected call of ListProjectsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListProjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListProjectsWithContext), varargs...)
 }
 
-// ListRemoteAccessSessions mocks base method.
+// ListRemoteAccessSessions mocks base method
 func (m *MockDeviceFarmAPI) ListRemoteAccessSessions(arg0 *devicefarm.ListRemoteAccessSessionsInput) (*devicefarm.ListRemoteAccessSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRemoteAccessSessions", arg0)
@@ -2709,13 +2458,13 @@ func (m *MockDeviceFarmAPI) ListRemoteAccessSessions(arg0 *devicefarm.ListRemote
 	return ret0, ret1
 }
 
-// ListRemoteAccessSessions indicates an expected call of ListRemoteAccessSessions.
+// ListRemoteAccessSessions indicates an expected call of ListRemoteAccessSessions
 func (mr *MockDeviceFarmAPIMockRecorder) ListRemoteAccessSessions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRemoteAccessSessions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRemoteAccessSessions), arg0)
 }
 
-// ListRemoteAccessSessionsRequest mocks base method.
+// ListRemoteAccessSessionsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsRequest(arg0 *devicefarm.ListRemoteAccessSessionsInput) (*request.Request, *devicefarm.ListRemoteAccessSessionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRemoteAccessSessionsRequest", arg0)
@@ -2724,14 +2473,14 @@ func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsRequest(arg0 *devicefarm.Lis
 	return ret0, ret1
 }
 
-// ListRemoteAccessSessionsRequest indicates an expected call of ListRemoteAccessSessionsRequest.
+// ListRemoteAccessSessionsRequest indicates an expected call of ListRemoteAccessSessionsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListRemoteAccessSessionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRemoteAccessSessionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRemoteAccessSessionsRequest), arg0)
 }
 
-// ListRemoteAccessSessionsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsWithContext(arg0 context.Context, arg1 *devicefarm.ListRemoteAccessSessionsInput, arg2 ...request.Option) (*devicefarm.ListRemoteAccessSessionsOutput, error) {
+// ListRemoteAccessSessionsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsWithContext(arg0 aws.Context, arg1 *devicefarm.ListRemoteAccessSessionsInput, arg2 ...request.Option) (*devicefarm.ListRemoteAccessSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2743,14 +2492,14 @@ func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// ListRemoteAccessSessionsWithContext indicates an expected call of ListRemoteAccessSessionsWithContext.
+// ListRemoteAccessSessionsWithContext indicates an expected call of ListRemoteAccessSessionsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListRemoteAccessSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRemoteAccessSessionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRemoteAccessSessionsWithContext), varargs...)
 }
 
-// ListRuns mocks base method.
+// ListRuns mocks base method
 func (m *MockDeviceFarmAPI) ListRuns(arg0 *devicefarm.ListRunsInput) (*devicefarm.ListRunsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRuns", arg0)
@@ -2759,13 +2508,13 @@ func (m *MockDeviceFarmAPI) ListRuns(arg0 *devicefarm.ListRunsInput) (*devicefar
 	return ret0, ret1
 }
 
-// ListRuns indicates an expected call of ListRuns.
+// ListRuns indicates an expected call of ListRuns
 func (mr *MockDeviceFarmAPIMockRecorder) ListRuns(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuns", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRuns), arg0)
 }
 
-// ListRunsPages mocks base method.
+// ListRunsPages mocks base method
 func (m *MockDeviceFarmAPI) ListRunsPages(arg0 *devicefarm.ListRunsInput, arg1 func(*devicefarm.ListRunsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRunsPages", arg0, arg1)
@@ -2773,14 +2522,14 @@ func (m *MockDeviceFarmAPI) ListRunsPages(arg0 *devicefarm.ListRunsInput, arg1 f
 	return ret0
 }
 
-// ListRunsPages indicates an expected call of ListRunsPages.
+// ListRunsPages indicates an expected call of ListRunsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListRunsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRunsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRunsPages), arg0, arg1)
 }
 
-// ListRunsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListRunsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListRunsInput, arg2 func(*devicefarm.ListRunsOutput, bool) bool, arg3 ...request.Option) error {
+// ListRunsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListRunsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListRunsInput, arg2 func(*devicefarm.ListRunsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2791,14 +2540,14 @@ func (m *MockDeviceFarmAPI) ListRunsPagesWithContext(arg0 context.Context, arg1 
 	return ret0
 }
 
-// ListRunsPagesWithContext indicates an expected call of ListRunsPagesWithContext.
+// ListRunsPagesWithContext indicates an expected call of ListRunsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListRunsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRunsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRunsPagesWithContext), varargs...)
 }
 
-// ListRunsRequest mocks base method.
+// ListRunsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListRunsRequest(arg0 *devicefarm.ListRunsInput) (*request.Request, *devicefarm.ListRunsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListRunsRequest", arg0)
@@ -2807,14 +2556,14 @@ func (m *MockDeviceFarmAPI) ListRunsRequest(arg0 *devicefarm.ListRunsInput) (*re
 	return ret0, ret1
 }
 
-// ListRunsRequest indicates an expected call of ListRunsRequest.
+// ListRunsRequest indicates an expected call of ListRunsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListRunsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRunsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRunsRequest), arg0)
 }
 
-// ListRunsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListRunsWithContext(arg0 context.Context, arg1 *devicefarm.ListRunsInput, arg2 ...request.Option) (*devicefarm.ListRunsOutput, error) {
+// ListRunsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListRunsWithContext(arg0 aws.Context, arg1 *devicefarm.ListRunsInput, arg2 ...request.Option) (*devicefarm.ListRunsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2826,14 +2575,14 @@ func (m *MockDeviceFarmAPI) ListRunsWithContext(arg0 context.Context, arg1 *devi
 	return ret0, ret1
 }
 
-// ListRunsWithContext indicates an expected call of ListRunsWithContext.
+// ListRunsWithContext indicates an expected call of ListRunsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListRunsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRunsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListRunsWithContext), varargs...)
 }
 
-// ListSamples mocks base method.
+// ListSamples mocks base method
 func (m *MockDeviceFarmAPI) ListSamples(arg0 *devicefarm.ListSamplesInput) (*devicefarm.ListSamplesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSamples", arg0)
@@ -2842,13 +2591,13 @@ func (m *MockDeviceFarmAPI) ListSamples(arg0 *devicefarm.ListSamplesInput) (*dev
 	return ret0, ret1
 }
 
-// ListSamples indicates an expected call of ListSamples.
+// ListSamples indicates an expected call of ListSamples
 func (mr *MockDeviceFarmAPIMockRecorder) ListSamples(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSamples", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSamples), arg0)
 }
 
-// ListSamplesPages mocks base method.
+// ListSamplesPages mocks base method
 func (m *MockDeviceFarmAPI) ListSamplesPages(arg0 *devicefarm.ListSamplesInput, arg1 func(*devicefarm.ListSamplesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSamplesPages", arg0, arg1)
@@ -2856,14 +2605,14 @@ func (m *MockDeviceFarmAPI) ListSamplesPages(arg0 *devicefarm.ListSamplesInput, 
 	return ret0
 }
 
-// ListSamplesPages indicates an expected call of ListSamplesPages.
+// ListSamplesPages indicates an expected call of ListSamplesPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListSamplesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSamplesPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSamplesPages), arg0, arg1)
 }
 
-// ListSamplesPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListSamplesPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListSamplesInput, arg2 func(*devicefarm.ListSamplesOutput, bool) bool, arg3 ...request.Option) error {
+// ListSamplesPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListSamplesPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSamplesInput, arg2 func(*devicefarm.ListSamplesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2874,14 +2623,14 @@ func (m *MockDeviceFarmAPI) ListSamplesPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// ListSamplesPagesWithContext indicates an expected call of ListSamplesPagesWithContext.
+// ListSamplesPagesWithContext indicates an expected call of ListSamplesPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListSamplesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSamplesPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSamplesPagesWithContext), varargs...)
 }
 
-// ListSamplesRequest mocks base method.
+// ListSamplesRequest mocks base method
 func (m *MockDeviceFarmAPI) ListSamplesRequest(arg0 *devicefarm.ListSamplesInput) (*request.Request, *devicefarm.ListSamplesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSamplesRequest", arg0)
@@ -2890,14 +2639,14 @@ func (m *MockDeviceFarmAPI) ListSamplesRequest(arg0 *devicefarm.ListSamplesInput
 	return ret0, ret1
 }
 
-// ListSamplesRequest indicates an expected call of ListSamplesRequest.
+// ListSamplesRequest indicates an expected call of ListSamplesRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListSamplesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSamplesRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSamplesRequest), arg0)
 }
 
-// ListSamplesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListSamplesWithContext(arg0 context.Context, arg1 *devicefarm.ListSamplesInput, arg2 ...request.Option) (*devicefarm.ListSamplesOutput, error) {
+// ListSamplesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListSamplesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSamplesInput, arg2 ...request.Option) (*devicefarm.ListSamplesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2909,14 +2658,14 @@ func (m *MockDeviceFarmAPI) ListSamplesWithContext(arg0 context.Context, arg1 *d
 	return ret0, ret1
 }
 
-// ListSamplesWithContext indicates an expected call of ListSamplesWithContext.
+// ListSamplesWithContext indicates an expected call of ListSamplesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListSamplesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSamplesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSamplesWithContext), varargs...)
 }
 
-// ListSuites mocks base method.
+// ListSuites mocks base method
 func (m *MockDeviceFarmAPI) ListSuites(arg0 *devicefarm.ListSuitesInput) (*devicefarm.ListSuitesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSuites", arg0)
@@ -2925,13 +2674,13 @@ func (m *MockDeviceFarmAPI) ListSuites(arg0 *devicefarm.ListSuitesInput) (*devic
 	return ret0, ret1
 }
 
-// ListSuites indicates an expected call of ListSuites.
+// ListSuites indicates an expected call of ListSuites
 func (mr *MockDeviceFarmAPIMockRecorder) ListSuites(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuites", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSuites), arg0)
 }
 
-// ListSuitesPages mocks base method.
+// ListSuitesPages mocks base method
 func (m *MockDeviceFarmAPI) ListSuitesPages(arg0 *devicefarm.ListSuitesInput, arg1 func(*devicefarm.ListSuitesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSuitesPages", arg0, arg1)
@@ -2939,14 +2688,14 @@ func (m *MockDeviceFarmAPI) ListSuitesPages(arg0 *devicefarm.ListSuitesInput, ar
 	return ret0
 }
 
-// ListSuitesPages indicates an expected call of ListSuitesPages.
+// ListSuitesPages indicates an expected call of ListSuitesPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListSuitesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuitesPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSuitesPages), arg0, arg1)
 }
 
-// ListSuitesPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListSuitesPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListSuitesInput, arg2 func(*devicefarm.ListSuitesOutput, bool) bool, arg3 ...request.Option) error {
+// ListSuitesPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListSuitesPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSuitesInput, arg2 func(*devicefarm.ListSuitesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2957,14 +2706,14 @@ func (m *MockDeviceFarmAPI) ListSuitesPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListSuitesPagesWithContext indicates an expected call of ListSuitesPagesWithContext.
+// ListSuitesPagesWithContext indicates an expected call of ListSuitesPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListSuitesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuitesPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSuitesPagesWithContext), varargs...)
 }
 
-// ListSuitesRequest mocks base method.
+// ListSuitesRequest mocks base method
 func (m *MockDeviceFarmAPI) ListSuitesRequest(arg0 *devicefarm.ListSuitesInput) (*request.Request, *devicefarm.ListSuitesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSuitesRequest", arg0)
@@ -2973,14 +2722,14 @@ func (m *MockDeviceFarmAPI) ListSuitesRequest(arg0 *devicefarm.ListSuitesInput) 
 	return ret0, ret1
 }
 
-// ListSuitesRequest indicates an expected call of ListSuitesRequest.
+// ListSuitesRequest indicates an expected call of ListSuitesRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListSuitesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuitesRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSuitesRequest), arg0)
 }
 
-// ListSuitesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListSuitesWithContext(arg0 context.Context, arg1 *devicefarm.ListSuitesInput, arg2 ...request.Option) (*devicefarm.ListSuitesOutput, error) {
+// ListSuitesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListSuitesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSuitesInput, arg2 ...request.Option) (*devicefarm.ListSuitesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2992,396 +2741,14 @@ func (m *MockDeviceFarmAPI) ListSuitesWithContext(arg0 context.Context, arg1 *de
 	return ret0, ret1
 }
 
-// ListSuitesWithContext indicates an expected call of ListSuitesWithContext.
+// ListSuitesWithContext indicates an expected call of ListSuitesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListSuitesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuitesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListSuitesWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockDeviceFarmAPI) ListTagsForResource(arg0 *devicefarm.ListTagsForResourceInput) (*devicefarm.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*devicefarm.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockDeviceFarmAPI) ListTagsForResourceRequest(arg0 *devicefarm.ListTagsForResourceInput) (*request.Request, *devicefarm.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *devicefarm.ListTagsForResourceInput, arg2 ...request.Option) (*devicefarm.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// ListTestGridProjects mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridProjects(arg0 *devicefarm.ListTestGridProjectsInput) (*devicefarm.ListTestGridProjectsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridProjects", arg0)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridProjectsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridProjects indicates an expected call of ListTestGridProjects.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjects(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjects", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjects), arg0)
-}
-
-// ListTestGridProjectsPages mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridProjectsPages(arg0 *devicefarm.ListTestGridProjectsInput, arg1 func(*devicefarm.ListTestGridProjectsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridProjectsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridProjectsPages indicates an expected call of ListTestGridProjectsPages.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsPages), arg0, arg1)
-}
-
-// ListTestGridProjectsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridProjectsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridProjectsInput, arg2 func(*devicefarm.ListTestGridProjectsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridProjectsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridProjectsPagesWithContext indicates an expected call of ListTestGridProjectsPagesWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsPagesWithContext), varargs...)
-}
-
-// ListTestGridProjectsRequest mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridProjectsRequest(arg0 *devicefarm.ListTestGridProjectsInput) (*request.Request, *devicefarm.ListTestGridProjectsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridProjectsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.ListTestGridProjectsOutput)
-	return ret0, ret1
-}
-
-// ListTestGridProjectsRequest indicates an expected call of ListTestGridProjectsRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsRequest), arg0)
-}
-
-// ListTestGridProjectsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridProjectsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridProjectsInput, arg2 ...request.Option) (*devicefarm.ListTestGridProjectsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridProjectsWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridProjectsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridProjectsWithContext indicates an expected call of ListTestGridProjectsWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsWithContext), varargs...)
-}
-
-// ListTestGridSessionActions mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionActions(arg0 *devicefarm.ListTestGridSessionActionsInput) (*devicefarm.ListTestGridSessionActionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionActions", arg0)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionActionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridSessionActions indicates an expected call of ListTestGridSessionActions.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActions), arg0)
-}
-
-// ListTestGridSessionActionsPages mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionActionsPages(arg0 *devicefarm.ListTestGridSessionActionsInput, arg1 func(*devicefarm.ListTestGridSessionActionsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionActionsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridSessionActionsPages indicates an expected call of ListTestGridSessionActionsPages.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsPages), arg0, arg1)
-}
-
-// ListTestGridSessionActionsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionActionsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionActionsInput, arg2 func(*devicefarm.ListTestGridSessionActionsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridSessionActionsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridSessionActionsPagesWithContext indicates an expected call of ListTestGridSessionActionsPagesWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsPagesWithContext), varargs...)
-}
-
-// ListTestGridSessionActionsRequest mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionActionsRequest(arg0 *devicefarm.ListTestGridSessionActionsInput) (*request.Request, *devicefarm.ListTestGridSessionActionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionActionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.ListTestGridSessionActionsOutput)
-	return ret0, ret1
-}
-
-// ListTestGridSessionActionsRequest indicates an expected call of ListTestGridSessionActionsRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsRequest), arg0)
-}
-
-// ListTestGridSessionActionsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionActionsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionActionsInput, arg2 ...request.Option) (*devicefarm.ListTestGridSessionActionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridSessionActionsWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionActionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridSessionActionsWithContext indicates an expected call of ListTestGridSessionActionsWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsWithContext), varargs...)
-}
-
-// ListTestGridSessionArtifacts mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionArtifacts(arg0 *devicefarm.ListTestGridSessionArtifactsInput) (*devicefarm.ListTestGridSessionArtifactsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionArtifacts", arg0)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionArtifactsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridSessionArtifacts indicates an expected call of ListTestGridSessionArtifacts.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifacts(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifacts", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifacts), arg0)
-}
-
-// ListTestGridSessionArtifactsPages mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsPages(arg0 *devicefarm.ListTestGridSessionArtifactsInput, arg1 func(*devicefarm.ListTestGridSessionArtifactsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridSessionArtifactsPages indicates an expected call of ListTestGridSessionArtifactsPages.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsPages), arg0, arg1)
-}
-
-// ListTestGridSessionArtifactsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionArtifactsInput, arg2 func(*devicefarm.ListTestGridSessionArtifactsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridSessionArtifactsPagesWithContext indicates an expected call of ListTestGridSessionArtifactsPagesWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsPagesWithContext), varargs...)
-}
-
-// ListTestGridSessionArtifactsRequest mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsRequest(arg0 *devicefarm.ListTestGridSessionArtifactsInput) (*request.Request, *devicefarm.ListTestGridSessionArtifactsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.ListTestGridSessionArtifactsOutput)
-	return ret0, ret1
-}
-
-// ListTestGridSessionArtifactsRequest indicates an expected call of ListTestGridSessionArtifactsRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsRequest), arg0)
-}
-
-// ListTestGridSessionArtifactsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionArtifactsInput, arg2 ...request.Option) (*devicefarm.ListTestGridSessionArtifactsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionArtifactsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridSessionArtifactsWithContext indicates an expected call of ListTestGridSessionArtifactsWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsWithContext), varargs...)
-}
-
-// ListTestGridSessions mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessions(arg0 *devicefarm.ListTestGridSessionsInput) (*devicefarm.ListTestGridSessionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessions", arg0)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridSessions indicates an expected call of ListTestGridSessions.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessions), arg0)
-}
-
-// ListTestGridSessionsPages mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionsPages(arg0 *devicefarm.ListTestGridSessionsInput, arg1 func(*devicefarm.ListTestGridSessionsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridSessionsPages indicates an expected call of ListTestGridSessionsPages.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsPages), arg0, arg1)
-}
-
-// ListTestGridSessionsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionsInput, arg2 func(*devicefarm.ListTestGridSessionsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridSessionsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTestGridSessionsPagesWithContext indicates an expected call of ListTestGridSessionsPagesWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsPagesWithContext), varargs...)
-}
-
-// ListTestGridSessionsRequest mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionsRequest(arg0 *devicefarm.ListTestGridSessionsInput) (*request.Request, *devicefarm.ListTestGridSessionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTestGridSessionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.ListTestGridSessionsOutput)
-	return ret0, ret1
-}
-
-// ListTestGridSessionsRequest indicates an expected call of ListTestGridSessionsRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsRequest), arg0)
-}
-
-// ListTestGridSessionsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestGridSessionsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionsInput, arg2 ...request.Option) (*devicefarm.ListTestGridSessionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTestGridSessionsWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTestGridSessionsWithContext indicates an expected call of ListTestGridSessionsWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsWithContext), varargs...)
-}
-
-// ListTests mocks base method.
+// ListTests mocks base method
 func (m *MockDeviceFarmAPI) ListTests(arg0 *devicefarm.ListTestsInput) (*devicefarm.ListTestsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTests", arg0)
@@ -3390,13 +2757,13 @@ func (m *MockDeviceFarmAPI) ListTests(arg0 *devicefarm.ListTestsInput) (*devicef
 	return ret0, ret1
 }
 
-// ListTests indicates an expected call of ListTests.
+// ListTests indicates an expected call of ListTests
 func (mr *MockDeviceFarmAPIMockRecorder) ListTests(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTests", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTests), arg0)
 }
 
-// ListTestsPages mocks base method.
+// ListTestsPages mocks base method
 func (m *MockDeviceFarmAPI) ListTestsPages(arg0 *devicefarm.ListTestsInput, arg1 func(*devicefarm.ListTestsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTestsPages", arg0, arg1)
@@ -3404,14 +2771,14 @@ func (m *MockDeviceFarmAPI) ListTestsPages(arg0 *devicefarm.ListTestsInput, arg1
 	return ret0
 }
 
-// ListTestsPages indicates an expected call of ListTestsPages.
+// ListTestsPages indicates an expected call of ListTestsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListTestsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestsPages), arg0, arg1)
 }
 
-// ListTestsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestsInput, arg2 func(*devicefarm.ListTestsOutput, bool) bool, arg3 ...request.Option) error {
+// ListTestsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListTestsInput, arg2 func(*devicefarm.ListTestsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3422,14 +2789,14 @@ func (m *MockDeviceFarmAPI) ListTestsPagesWithContext(arg0 context.Context, arg1
 	return ret0
 }
 
-// ListTestsPagesWithContext indicates an expected call of ListTestsPagesWithContext.
+// ListTestsPagesWithContext indicates an expected call of ListTestsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListTestsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestsPagesWithContext), varargs...)
 }
 
-// ListTestsRequest mocks base method.
+// ListTestsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListTestsRequest(arg0 *devicefarm.ListTestsInput) (*request.Request, *devicefarm.ListTestsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTestsRequest", arg0)
@@ -3438,14 +2805,14 @@ func (m *MockDeviceFarmAPI) ListTestsRequest(arg0 *devicefarm.ListTestsInput) (*
 	return ret0, ret1
 }
 
-// ListTestsRequest indicates an expected call of ListTestsRequest.
+// ListTestsRequest indicates an expected call of ListTestsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListTestsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestsRequest), arg0)
 }
 
-// ListTestsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListTestsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestsInput, arg2 ...request.Option) (*devicefarm.ListTestsOutput, error) {
+// ListTestsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestsWithContext(arg0 aws.Context, arg1 *devicefarm.ListTestsInput, arg2 ...request.Option) (*devicefarm.ListTestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3457,14 +2824,14 @@ func (m *MockDeviceFarmAPI) ListTestsWithContext(arg0 context.Context, arg1 *dev
 	return ret0, ret1
 }
 
-// ListTestsWithContext indicates an expected call of ListTestsWithContext.
+// ListTestsWithContext indicates an expected call of ListTestsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListTestsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestsWithContext), varargs...)
 }
 
-// ListUniqueProblems mocks base method.
+// ListUniqueProblems mocks base method
 func (m *MockDeviceFarmAPI) ListUniqueProblems(arg0 *devicefarm.ListUniqueProblemsInput) (*devicefarm.ListUniqueProblemsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUniqueProblems", arg0)
@@ -3473,13 +2840,13 @@ func (m *MockDeviceFarmAPI) ListUniqueProblems(arg0 *devicefarm.ListUniqueProble
 	return ret0, ret1
 }
 
-// ListUniqueProblems indicates an expected call of ListUniqueProblems.
+// ListUniqueProblems indicates an expected call of ListUniqueProblems
 func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblems(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUniqueProblems", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUniqueProblems), arg0)
 }
 
-// ListUniqueProblemsPages mocks base method.
+// ListUniqueProblemsPages mocks base method
 func (m *MockDeviceFarmAPI) ListUniqueProblemsPages(arg0 *devicefarm.ListUniqueProblemsInput, arg1 func(*devicefarm.ListUniqueProblemsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUniqueProblemsPages", arg0, arg1)
@@ -3487,14 +2854,14 @@ func (m *MockDeviceFarmAPI) ListUniqueProblemsPages(arg0 *devicefarm.ListUniqueP
 	return ret0
 }
 
-// ListUniqueProblemsPages indicates an expected call of ListUniqueProblemsPages.
+// ListUniqueProblemsPages indicates an expected call of ListUniqueProblemsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblemsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUniqueProblemsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUniqueProblemsPages), arg0, arg1)
 }
 
-// ListUniqueProblemsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListUniqueProblemsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 func(*devicefarm.ListUniqueProblemsOutput, bool) bool, arg3 ...request.Option) error {
+// ListUniqueProblemsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListUniqueProblemsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 func(*devicefarm.ListUniqueProblemsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3505,14 +2872,14 @@ func (m *MockDeviceFarmAPI) ListUniqueProblemsPagesWithContext(arg0 context.Cont
 	return ret0
 }
 
-// ListUniqueProblemsPagesWithContext indicates an expected call of ListUniqueProblemsPagesWithContext.
+// ListUniqueProblemsPagesWithContext indicates an expected call of ListUniqueProblemsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblemsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUniqueProblemsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUniqueProblemsPagesWithContext), varargs...)
 }
 
-// ListUniqueProblemsRequest mocks base method.
+// ListUniqueProblemsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListUniqueProblemsRequest(arg0 *devicefarm.ListUniqueProblemsInput) (*request.Request, *devicefarm.ListUniqueProblemsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUniqueProblemsRequest", arg0)
@@ -3521,14 +2888,14 @@ func (m *MockDeviceFarmAPI) ListUniqueProblemsRequest(arg0 *devicefarm.ListUniqu
 	return ret0, ret1
 }
 
-// ListUniqueProblemsRequest indicates an expected call of ListUniqueProblemsRequest.
+// ListUniqueProblemsRequest indicates an expected call of ListUniqueProblemsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblemsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUniqueProblemsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUniqueProblemsRequest), arg0)
 }
 
-// ListUniqueProblemsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListUniqueProblemsWithContext(arg0 context.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 ...request.Option) (*devicefarm.ListUniqueProblemsOutput, error) {
+// ListUniqueProblemsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListUniqueProblemsWithContext(arg0 aws.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 ...request.Option) (*devicefarm.ListUniqueProblemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3540,14 +2907,14 @@ func (m *MockDeviceFarmAPI) ListUniqueProblemsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListUniqueProblemsWithContext indicates an expected call of ListUniqueProblemsWithContext.
+// ListUniqueProblemsWithContext indicates an expected call of ListUniqueProblemsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblemsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUniqueProblemsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUniqueProblemsWithContext), varargs...)
 }
 
-// ListUploads mocks base method.
+// ListUploads mocks base method
 func (m *MockDeviceFarmAPI) ListUploads(arg0 *devicefarm.ListUploadsInput) (*devicefarm.ListUploadsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUploads", arg0)
@@ -3556,13 +2923,13 @@ func (m *MockDeviceFarmAPI) ListUploads(arg0 *devicefarm.ListUploadsInput) (*dev
 	return ret0, ret1
 }
 
-// ListUploads indicates an expected call of ListUploads.
+// ListUploads indicates an expected call of ListUploads
 func (mr *MockDeviceFarmAPIMockRecorder) ListUploads(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUploads", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUploads), arg0)
 }
 
-// ListUploadsPages mocks base method.
+// ListUploadsPages mocks base method
 func (m *MockDeviceFarmAPI) ListUploadsPages(arg0 *devicefarm.ListUploadsInput, arg1 func(*devicefarm.ListUploadsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUploadsPages", arg0, arg1)
@@ -3570,14 +2937,14 @@ func (m *MockDeviceFarmAPI) ListUploadsPages(arg0 *devicefarm.ListUploadsInput, 
 	return ret0
 }
 
-// ListUploadsPages indicates an expected call of ListUploadsPages.
+// ListUploadsPages indicates an expected call of ListUploadsPages
 func (mr *MockDeviceFarmAPIMockRecorder) ListUploadsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUploadsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUploadsPages), arg0, arg1)
 }
 
-// ListUploadsPagesWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListUploadsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListUploadsInput, arg2 func(*devicefarm.ListUploadsOutput, bool) bool, arg3 ...request.Option) error {
+// ListUploadsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListUploadsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListUploadsInput, arg2 func(*devicefarm.ListUploadsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3588,14 +2955,14 @@ func (m *MockDeviceFarmAPI) ListUploadsPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// ListUploadsPagesWithContext indicates an expected call of ListUploadsPagesWithContext.
+// ListUploadsPagesWithContext indicates an expected call of ListUploadsPagesWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListUploadsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUploadsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUploadsPagesWithContext), varargs...)
 }
 
-// ListUploadsRequest mocks base method.
+// ListUploadsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListUploadsRequest(arg0 *devicefarm.ListUploadsInput) (*request.Request, *devicefarm.ListUploadsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUploadsRequest", arg0)
@@ -3604,14 +2971,14 @@ func (m *MockDeviceFarmAPI) ListUploadsRequest(arg0 *devicefarm.ListUploadsInput
 	return ret0, ret1
 }
 
-// ListUploadsRequest indicates an expected call of ListUploadsRequest.
+// ListUploadsRequest indicates an expected call of ListUploadsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListUploadsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUploadsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUploadsRequest), arg0)
 }
 
-// ListUploadsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListUploadsWithContext(arg0 context.Context, arg1 *devicefarm.ListUploadsInput, arg2 ...request.Option) (*devicefarm.ListUploadsOutput, error) {
+// ListUploadsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListUploadsWithContext(arg0 aws.Context, arg1 *devicefarm.ListUploadsInput, arg2 ...request.Option) (*devicefarm.ListUploadsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3623,14 +2990,14 @@ func (m *MockDeviceFarmAPI) ListUploadsWithContext(arg0 context.Context, arg1 *d
 	return ret0, ret1
 }
 
-// ListUploadsWithContext indicates an expected call of ListUploadsWithContext.
+// ListUploadsWithContext indicates an expected call of ListUploadsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListUploadsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUploadsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListUploadsWithContext), varargs...)
 }
 
-// ListVPCEConfigurations mocks base method.
+// ListVPCEConfigurations mocks base method
 func (m *MockDeviceFarmAPI) ListVPCEConfigurations(arg0 *devicefarm.ListVPCEConfigurationsInput) (*devicefarm.ListVPCEConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVPCEConfigurations", arg0)
@@ -3639,13 +3006,13 @@ func (m *MockDeviceFarmAPI) ListVPCEConfigurations(arg0 *devicefarm.ListVPCEConf
 	return ret0, ret1
 }
 
-// ListVPCEConfigurations indicates an expected call of ListVPCEConfigurations.
+// ListVPCEConfigurations indicates an expected call of ListVPCEConfigurations
 func (mr *MockDeviceFarmAPIMockRecorder) ListVPCEConfigurations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVPCEConfigurations", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListVPCEConfigurations), arg0)
 }
 
-// ListVPCEConfigurationsRequest mocks base method.
+// ListVPCEConfigurationsRequest mocks base method
 func (m *MockDeviceFarmAPI) ListVPCEConfigurationsRequest(arg0 *devicefarm.ListVPCEConfigurationsInput) (*request.Request, *devicefarm.ListVPCEConfigurationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVPCEConfigurationsRequest", arg0)
@@ -3654,14 +3021,14 @@ func (m *MockDeviceFarmAPI) ListVPCEConfigurationsRequest(arg0 *devicefarm.ListV
 	return ret0, ret1
 }
 
-// ListVPCEConfigurationsRequest indicates an expected call of ListVPCEConfigurationsRequest.
+// ListVPCEConfigurationsRequest indicates an expected call of ListVPCEConfigurationsRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ListVPCEConfigurationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVPCEConfigurationsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListVPCEConfigurationsRequest), arg0)
 }
 
-// ListVPCEConfigurationsWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ListVPCEConfigurationsWithContext(arg0 context.Context, arg1 *devicefarm.ListVPCEConfigurationsInput, arg2 ...request.Option) (*devicefarm.ListVPCEConfigurationsOutput, error) {
+// ListVPCEConfigurationsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListVPCEConfigurationsWithContext(arg0 aws.Context, arg1 *devicefarm.ListVPCEConfigurationsInput, arg2 ...request.Option) (*devicefarm.ListVPCEConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3673,14 +3040,14 @@ func (m *MockDeviceFarmAPI) ListVPCEConfigurationsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListVPCEConfigurationsWithContext indicates an expected call of ListVPCEConfigurationsWithContext.
+// ListVPCEConfigurationsWithContext indicates an expected call of ListVPCEConfigurationsWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ListVPCEConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVPCEConfigurationsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListVPCEConfigurationsWithContext), varargs...)
 }
 
-// PurchaseOffering mocks base method.
+// PurchaseOffering mocks base method
 func (m *MockDeviceFarmAPI) PurchaseOffering(arg0 *devicefarm.PurchaseOfferingInput) (*devicefarm.PurchaseOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PurchaseOffering", arg0)
@@ -3689,13 +3056,13 @@ func (m *MockDeviceFarmAPI) PurchaseOffering(arg0 *devicefarm.PurchaseOfferingIn
 	return ret0, ret1
 }
 
-// PurchaseOffering indicates an expected call of PurchaseOffering.
+// PurchaseOffering indicates an expected call of PurchaseOffering
 func (mr *MockDeviceFarmAPIMockRecorder) PurchaseOffering(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOffering", reflect.TypeOf((*MockDeviceFarmAPI)(nil).PurchaseOffering), arg0)
 }
 
-// PurchaseOfferingRequest mocks base method.
+// PurchaseOfferingRequest mocks base method
 func (m *MockDeviceFarmAPI) PurchaseOfferingRequest(arg0 *devicefarm.PurchaseOfferingInput) (*request.Request, *devicefarm.PurchaseOfferingOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PurchaseOfferingRequest", arg0)
@@ -3704,14 +3071,14 @@ func (m *MockDeviceFarmAPI) PurchaseOfferingRequest(arg0 *devicefarm.PurchaseOff
 	return ret0, ret1
 }
 
-// PurchaseOfferingRequest indicates an expected call of PurchaseOfferingRequest.
+// PurchaseOfferingRequest indicates an expected call of PurchaseOfferingRequest
 func (mr *MockDeviceFarmAPIMockRecorder) PurchaseOfferingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).PurchaseOfferingRequest), arg0)
 }
 
-// PurchaseOfferingWithContext mocks base method.
-func (m *MockDeviceFarmAPI) PurchaseOfferingWithContext(arg0 context.Context, arg1 *devicefarm.PurchaseOfferingInput, arg2 ...request.Option) (*devicefarm.PurchaseOfferingOutput, error) {
+// PurchaseOfferingWithContext mocks base method
+func (m *MockDeviceFarmAPI) PurchaseOfferingWithContext(arg0 aws.Context, arg1 *devicefarm.PurchaseOfferingInput, arg2 ...request.Option) (*devicefarm.PurchaseOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3723,14 +3090,14 @@ func (m *MockDeviceFarmAPI) PurchaseOfferingWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// PurchaseOfferingWithContext indicates an expected call of PurchaseOfferingWithContext.
+// PurchaseOfferingWithContext indicates an expected call of PurchaseOfferingWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) PurchaseOfferingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).PurchaseOfferingWithContext), varargs...)
 }
 
-// RenewOffering mocks base method.
+// RenewOffering mocks base method
 func (m *MockDeviceFarmAPI) RenewOffering(arg0 *devicefarm.RenewOfferingInput) (*devicefarm.RenewOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RenewOffering", arg0)
@@ -3739,13 +3106,13 @@ func (m *MockDeviceFarmAPI) RenewOffering(arg0 *devicefarm.RenewOfferingInput) (
 	return ret0, ret1
 }
 
-// RenewOffering indicates an expected call of RenewOffering.
+// RenewOffering indicates an expected call of RenewOffering
 func (mr *MockDeviceFarmAPIMockRecorder) RenewOffering(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenewOffering", reflect.TypeOf((*MockDeviceFarmAPI)(nil).RenewOffering), arg0)
 }
 
-// RenewOfferingRequest mocks base method.
+// RenewOfferingRequest mocks base method
 func (m *MockDeviceFarmAPI) RenewOfferingRequest(arg0 *devicefarm.RenewOfferingInput) (*request.Request, *devicefarm.RenewOfferingOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RenewOfferingRequest", arg0)
@@ -3754,14 +3121,14 @@ func (m *MockDeviceFarmAPI) RenewOfferingRequest(arg0 *devicefarm.RenewOfferingI
 	return ret0, ret1
 }
 
-// RenewOfferingRequest indicates an expected call of RenewOfferingRequest.
+// RenewOfferingRequest indicates an expected call of RenewOfferingRequest
 func (mr *MockDeviceFarmAPIMockRecorder) RenewOfferingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenewOfferingRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).RenewOfferingRequest), arg0)
 }
 
-// RenewOfferingWithContext mocks base method.
-func (m *MockDeviceFarmAPI) RenewOfferingWithContext(arg0 context.Context, arg1 *devicefarm.RenewOfferingInput, arg2 ...request.Option) (*devicefarm.RenewOfferingOutput, error) {
+// RenewOfferingWithContext mocks base method
+func (m *MockDeviceFarmAPI) RenewOfferingWithContext(arg0 aws.Context, arg1 *devicefarm.RenewOfferingInput, arg2 ...request.Option) (*devicefarm.RenewOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3773,14 +3140,14 @@ func (m *MockDeviceFarmAPI) RenewOfferingWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// RenewOfferingWithContext indicates an expected call of RenewOfferingWithContext.
+// RenewOfferingWithContext indicates an expected call of RenewOfferingWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) RenewOfferingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenewOfferingWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).RenewOfferingWithContext), varargs...)
 }
 
-// ScheduleRun mocks base method.
+// ScheduleRun mocks base method
 func (m *MockDeviceFarmAPI) ScheduleRun(arg0 *devicefarm.ScheduleRunInput) (*devicefarm.ScheduleRunOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ScheduleRun", arg0)
@@ -3789,13 +3156,13 @@ func (m *MockDeviceFarmAPI) ScheduleRun(arg0 *devicefarm.ScheduleRunInput) (*dev
 	return ret0, ret1
 }
 
-// ScheduleRun indicates an expected call of ScheduleRun.
+// ScheduleRun indicates an expected call of ScheduleRun
 func (mr *MockDeviceFarmAPIMockRecorder) ScheduleRun(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ScheduleRun", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ScheduleRun), arg0)
 }
 
-// ScheduleRunRequest mocks base method.
+// ScheduleRunRequest mocks base method
 func (m *MockDeviceFarmAPI) ScheduleRunRequest(arg0 *devicefarm.ScheduleRunInput) (*request.Request, *devicefarm.ScheduleRunOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ScheduleRunRequest", arg0)
@@ -3804,14 +3171,14 @@ func (m *MockDeviceFarmAPI) ScheduleRunRequest(arg0 *devicefarm.ScheduleRunInput
 	return ret0, ret1
 }
 
-// ScheduleRunRequest indicates an expected call of ScheduleRunRequest.
+// ScheduleRunRequest indicates an expected call of ScheduleRunRequest
 func (mr *MockDeviceFarmAPIMockRecorder) ScheduleRunRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ScheduleRunRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ScheduleRunRequest), arg0)
 }
 
-// ScheduleRunWithContext mocks base method.
-func (m *MockDeviceFarmAPI) ScheduleRunWithContext(arg0 context.Context, arg1 *devicefarm.ScheduleRunInput, arg2 ...request.Option) (*devicefarm.ScheduleRunOutput, error) {
+// ScheduleRunWithContext mocks base method
+func (m *MockDeviceFarmAPI) ScheduleRunWithContext(arg0 aws.Context, arg1 *devicefarm.ScheduleRunInput, arg2 ...request.Option) (*devicefarm.ScheduleRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3823,64 +3190,14 @@ func (m *MockDeviceFarmAPI) ScheduleRunWithContext(arg0 context.Context, arg1 *d
 	return ret0, ret1
 }
 
-// ScheduleRunWithContext indicates an expected call of ScheduleRunWithContext.
+// ScheduleRunWithContext indicates an expected call of ScheduleRunWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) ScheduleRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ScheduleRunWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ScheduleRunWithContext), varargs...)
 }
 
-// StopJob mocks base method.
-func (m *MockDeviceFarmAPI) StopJob(arg0 *devicefarm.StopJobInput) (*devicefarm.StopJobOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StopJob", arg0)
-	ret0, _ := ret[0].(*devicefarm.StopJobOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StopJob indicates an expected call of StopJob.
-func (mr *MockDeviceFarmAPIMockRecorder) StopJob(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopJob", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopJob), arg0)
-}
-
-// StopJobRequest mocks base method.
-func (m *MockDeviceFarmAPI) StopJobRequest(arg0 *devicefarm.StopJobInput) (*request.Request, *devicefarm.StopJobOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StopJobRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.StopJobOutput)
-	return ret0, ret1
-}
-
-// StopJobRequest indicates an expected call of StopJobRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) StopJobRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopJobRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopJobRequest), arg0)
-}
-
-// StopJobWithContext mocks base method.
-func (m *MockDeviceFarmAPI) StopJobWithContext(arg0 context.Context, arg1 *devicefarm.StopJobInput, arg2 ...request.Option) (*devicefarm.StopJobOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "StopJobWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.StopJobOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StopJobWithContext indicates an expected call of StopJobWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) StopJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopJobWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopJobWithContext), varargs...)
-}
-
-// StopRemoteAccessSession mocks base method.
+// StopRemoteAccessSession mocks base method
 func (m *MockDeviceFarmAPI) StopRemoteAccessSession(arg0 *devicefarm.StopRemoteAccessSessionInput) (*devicefarm.StopRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopRemoteAccessSession", arg0)
@@ -3889,13 +3206,13 @@ func (m *MockDeviceFarmAPI) StopRemoteAccessSession(arg0 *devicefarm.StopRemoteA
 	return ret0, ret1
 }
 
-// StopRemoteAccessSession indicates an expected call of StopRemoteAccessSession.
+// StopRemoteAccessSession indicates an expected call of StopRemoteAccessSession
 func (mr *MockDeviceFarmAPIMockRecorder) StopRemoteAccessSession(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRemoteAccessSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopRemoteAccessSession), arg0)
 }
 
-// StopRemoteAccessSessionRequest mocks base method.
+// StopRemoteAccessSessionRequest mocks base method
 func (m *MockDeviceFarmAPI) StopRemoteAccessSessionRequest(arg0 *devicefarm.StopRemoteAccessSessionInput) (*request.Request, *devicefarm.StopRemoteAccessSessionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopRemoteAccessSessionRequest", arg0)
@@ -3904,14 +3221,14 @@ func (m *MockDeviceFarmAPI) StopRemoteAccessSessionRequest(arg0 *devicefarm.Stop
 	return ret0, ret1
 }
 
-// StopRemoteAccessSessionRequest indicates an expected call of StopRemoteAccessSessionRequest.
+// StopRemoteAccessSessionRequest indicates an expected call of StopRemoteAccessSessionRequest
 func (mr *MockDeviceFarmAPIMockRecorder) StopRemoteAccessSessionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRemoteAccessSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopRemoteAccessSessionRequest), arg0)
 }
 
-// StopRemoteAccessSessionWithContext mocks base method.
-func (m *MockDeviceFarmAPI) StopRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.StopRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.StopRemoteAccessSessionOutput, error) {
+// StopRemoteAccessSessionWithContext mocks base method
+func (m *MockDeviceFarmAPI) StopRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.StopRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.StopRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3923,14 +3240,14 @@ func (m *MockDeviceFarmAPI) StopRemoteAccessSessionWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// StopRemoteAccessSessionWithContext indicates an expected call of StopRemoteAccessSessionWithContext.
+// StopRemoteAccessSessionWithContext indicates an expected call of StopRemoteAccessSessionWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) StopRemoteAccessSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRemoteAccessSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopRemoteAccessSessionWithContext), varargs...)
 }
 
-// StopRun mocks base method.
+// StopRun mocks base method
 func (m *MockDeviceFarmAPI) StopRun(arg0 *devicefarm.StopRunInput) (*devicefarm.StopRunOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopRun", arg0)
@@ -3939,13 +3256,13 @@ func (m *MockDeviceFarmAPI) StopRun(arg0 *devicefarm.StopRunInput) (*devicefarm.
 	return ret0, ret1
 }
 
-// StopRun indicates an expected call of StopRun.
+// StopRun indicates an expected call of StopRun
 func (mr *MockDeviceFarmAPIMockRecorder) StopRun(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRun", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopRun), arg0)
 }
 
-// StopRunRequest mocks base method.
+// StopRunRequest mocks base method
 func (m *MockDeviceFarmAPI) StopRunRequest(arg0 *devicefarm.StopRunInput) (*request.Request, *devicefarm.StopRunOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopRunRequest", arg0)
@@ -3954,14 +3271,14 @@ func (m *MockDeviceFarmAPI) StopRunRequest(arg0 *devicefarm.StopRunInput) (*requ
 	return ret0, ret1
 }
 
-// StopRunRequest indicates an expected call of StopRunRequest.
+// StopRunRequest indicates an expected call of StopRunRequest
 func (mr *MockDeviceFarmAPIMockRecorder) StopRunRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRunRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopRunRequest), arg0)
 }
 
-// StopRunWithContext mocks base method.
-func (m *MockDeviceFarmAPI) StopRunWithContext(arg0 context.Context, arg1 *devicefarm.StopRunInput, arg2 ...request.Option) (*devicefarm.StopRunOutput, error) {
+// StopRunWithContext mocks base method
+func (m *MockDeviceFarmAPI) StopRunWithContext(arg0 aws.Context, arg1 *devicefarm.StopRunInput, arg2 ...request.Option) (*devicefarm.StopRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3973,114 +3290,14 @@ func (m *MockDeviceFarmAPI) StopRunWithContext(arg0 context.Context, arg1 *devic
 	return ret0, ret1
 }
 
-// StopRunWithContext indicates an expected call of StopRunWithContext.
+// StopRunWithContext indicates an expected call of StopRunWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) StopRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRunWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopRunWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockDeviceFarmAPI) TagResource(arg0 *devicefarm.TagResourceInput) (*devicefarm.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*devicefarm.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockDeviceFarmAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockDeviceFarmAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockDeviceFarmAPI) TagResourceRequest(arg0 *devicefarm.TagResourceInput) (*request.Request, *devicefarm.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockDeviceFarmAPI) TagResourceWithContext(arg0 context.Context, arg1 *devicefarm.TagResourceInput, arg2 ...request.Option) (*devicefarm.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockDeviceFarmAPI) UntagResource(arg0 *devicefarm.UntagResourceInput) (*devicefarm.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*devicefarm.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockDeviceFarmAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockDeviceFarmAPI) UntagResourceRequest(arg0 *devicefarm.UntagResourceInput) (*request.Request, *devicefarm.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UntagResourceWithContext(arg0 context.Context, arg1 *devicefarm.UntagResourceInput, arg2 ...request.Option) (*devicefarm.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateDeviceInstance mocks base method.
+// UpdateDeviceInstance mocks base method
 func (m *MockDeviceFarmAPI) UpdateDeviceInstance(arg0 *devicefarm.UpdateDeviceInstanceInput) (*devicefarm.UpdateDeviceInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeviceInstance", arg0)
@@ -4089,13 +3306,13 @@ func (m *MockDeviceFarmAPI) UpdateDeviceInstance(arg0 *devicefarm.UpdateDeviceIn
 	return ret0, ret1
 }
 
-// UpdateDeviceInstance indicates an expected call of UpdateDeviceInstance.
+// UpdateDeviceInstance indicates an expected call of UpdateDeviceInstance
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateDeviceInstance(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceInstance", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateDeviceInstance), arg0)
 }
 
-// UpdateDeviceInstanceRequest mocks base method.
+// UpdateDeviceInstanceRequest mocks base method
 func (m *MockDeviceFarmAPI) UpdateDeviceInstanceRequest(arg0 *devicefarm.UpdateDeviceInstanceInput) (*request.Request, *devicefarm.UpdateDeviceInstanceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeviceInstanceRequest", arg0)
@@ -4104,14 +3321,14 @@ func (m *MockDeviceFarmAPI) UpdateDeviceInstanceRequest(arg0 *devicefarm.UpdateD
 	return ret0, ret1
 }
 
-// UpdateDeviceInstanceRequest indicates an expected call of UpdateDeviceInstanceRequest.
+// UpdateDeviceInstanceRequest indicates an expected call of UpdateDeviceInstanceRequest
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateDeviceInstanceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceInstanceRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateDeviceInstanceRequest), arg0)
 }
 
-// UpdateDeviceInstanceWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateDeviceInstanceWithContext(arg0 context.Context, arg1 *devicefarm.UpdateDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.UpdateDeviceInstanceOutput, error) {
+// UpdateDeviceInstanceWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateDeviceInstanceWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.UpdateDeviceInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4123,14 +3340,14 @@ func (m *MockDeviceFarmAPI) UpdateDeviceInstanceWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// UpdateDeviceInstanceWithContext indicates an expected call of UpdateDeviceInstanceWithContext.
+// UpdateDeviceInstanceWithContext indicates an expected call of UpdateDeviceInstanceWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateDeviceInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceInstanceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateDeviceInstanceWithContext), varargs...)
 }
 
-// UpdateDevicePool mocks base method.
+// UpdateDevicePool mocks base method
 func (m *MockDeviceFarmAPI) UpdateDevicePool(arg0 *devicefarm.UpdateDevicePoolInput) (*devicefarm.UpdateDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDevicePool", arg0)
@@ -4139,13 +3356,13 @@ func (m *MockDeviceFarmAPI) UpdateDevicePool(arg0 *devicefarm.UpdateDevicePoolIn
 	return ret0, ret1
 }
 
-// UpdateDevicePool indicates an expected call of UpdateDevicePool.
+// UpdateDevicePool indicates an expected call of UpdateDevicePool
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateDevicePool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDevicePool", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateDevicePool), arg0)
 }
 
-// UpdateDevicePoolRequest mocks base method.
+// UpdateDevicePoolRequest mocks base method
 func (m *MockDeviceFarmAPI) UpdateDevicePoolRequest(arg0 *devicefarm.UpdateDevicePoolInput) (*request.Request, *devicefarm.UpdateDevicePoolOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDevicePoolRequest", arg0)
@@ -4154,14 +3371,14 @@ func (m *MockDeviceFarmAPI) UpdateDevicePoolRequest(arg0 *devicefarm.UpdateDevic
 	return ret0, ret1
 }
 
-// UpdateDevicePoolRequest indicates an expected call of UpdateDevicePoolRequest.
+// UpdateDevicePoolRequest indicates an expected call of UpdateDevicePoolRequest
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateDevicePoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDevicePoolRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateDevicePoolRequest), arg0)
 }
 
-// UpdateDevicePoolWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.UpdateDevicePoolInput, arg2 ...request.Option) (*devicefarm.UpdateDevicePoolOutput, error) {
+// UpdateDevicePoolWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateDevicePoolInput, arg2 ...request.Option) (*devicefarm.UpdateDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4173,14 +3390,14 @@ func (m *MockDeviceFarmAPI) UpdateDevicePoolWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UpdateDevicePoolWithContext indicates an expected call of UpdateDevicePoolWithContext.
+// UpdateDevicePoolWithContext indicates an expected call of UpdateDevicePoolWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateDevicePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDevicePoolWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateDevicePoolWithContext), varargs...)
 }
 
-// UpdateInstanceProfile mocks base method.
+// UpdateInstanceProfile mocks base method
 func (m *MockDeviceFarmAPI) UpdateInstanceProfile(arg0 *devicefarm.UpdateInstanceProfileInput) (*devicefarm.UpdateInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateInstanceProfile", arg0)
@@ -4189,13 +3406,13 @@ func (m *MockDeviceFarmAPI) UpdateInstanceProfile(arg0 *devicefarm.UpdateInstanc
 	return ret0, ret1
 }
 
-// UpdateInstanceProfile indicates an expected call of UpdateInstanceProfile.
+// UpdateInstanceProfile indicates an expected call of UpdateInstanceProfile
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateInstanceProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateInstanceProfile), arg0)
 }
 
-// UpdateInstanceProfileRequest mocks base method.
+// UpdateInstanceProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) UpdateInstanceProfileRequest(arg0 *devicefarm.UpdateInstanceProfileInput) (*request.Request, *devicefarm.UpdateInstanceProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateInstanceProfileRequest", arg0)
@@ -4204,14 +3421,14 @@ func (m *MockDeviceFarmAPI) UpdateInstanceProfileRequest(arg0 *devicefarm.Update
 	return ret0, ret1
 }
 
-// UpdateInstanceProfileRequest indicates an expected call of UpdateInstanceProfileRequest.
+// UpdateInstanceProfileRequest indicates an expected call of UpdateInstanceProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateInstanceProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateInstanceProfileRequest), arg0)
 }
 
-// UpdateInstanceProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.UpdateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.UpdateInstanceProfileOutput, error) {
+// UpdateInstanceProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.UpdateInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4223,14 +3440,14 @@ func (m *MockDeviceFarmAPI) UpdateInstanceProfileWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdateInstanceProfileWithContext indicates an expected call of UpdateInstanceProfileWithContext.
+// UpdateInstanceProfileWithContext indicates an expected call of UpdateInstanceProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateInstanceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateInstanceProfileWithContext), varargs...)
 }
 
-// UpdateNetworkProfile mocks base method.
+// UpdateNetworkProfile mocks base method
 func (m *MockDeviceFarmAPI) UpdateNetworkProfile(arg0 *devicefarm.UpdateNetworkProfileInput) (*devicefarm.UpdateNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateNetworkProfile", arg0)
@@ -4239,13 +3456,13 @@ func (m *MockDeviceFarmAPI) UpdateNetworkProfile(arg0 *devicefarm.UpdateNetworkP
 	return ret0, ret1
 }
 
-// UpdateNetworkProfile indicates an expected call of UpdateNetworkProfile.
+// UpdateNetworkProfile indicates an expected call of UpdateNetworkProfile
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateNetworkProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkProfile", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateNetworkProfile), arg0)
 }
 
-// UpdateNetworkProfileRequest mocks base method.
+// UpdateNetworkProfileRequest mocks base method
 func (m *MockDeviceFarmAPI) UpdateNetworkProfileRequest(arg0 *devicefarm.UpdateNetworkProfileInput) (*request.Request, *devicefarm.UpdateNetworkProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateNetworkProfileRequest", arg0)
@@ -4254,14 +3471,14 @@ func (m *MockDeviceFarmAPI) UpdateNetworkProfileRequest(arg0 *devicefarm.UpdateN
 	return ret0, ret1
 }
 
-// UpdateNetworkProfileRequest indicates an expected call of UpdateNetworkProfileRequest.
+// UpdateNetworkProfileRequest indicates an expected call of UpdateNetworkProfileRequest
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateNetworkProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkProfileRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateNetworkProfileRequest), arg0)
 }
 
-// UpdateNetworkProfileWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.UpdateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.UpdateNetworkProfileOutput, error) {
+// UpdateNetworkProfileWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.UpdateNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4273,14 +3490,14 @@ func (m *MockDeviceFarmAPI) UpdateNetworkProfileWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// UpdateNetworkProfileWithContext indicates an expected call of UpdateNetworkProfileWithContext.
+// UpdateNetworkProfileWithContext indicates an expected call of UpdateNetworkProfileWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkProfileWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateNetworkProfileWithContext), varargs...)
 }
 
-// UpdateProject mocks base method.
+// UpdateProject mocks base method
 func (m *MockDeviceFarmAPI) UpdateProject(arg0 *devicefarm.UpdateProjectInput) (*devicefarm.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateProject", arg0)
@@ -4289,13 +3506,13 @@ func (m *MockDeviceFarmAPI) UpdateProject(arg0 *devicefarm.UpdateProjectInput) (
 	return ret0, ret1
 }
 
-// UpdateProject indicates an expected call of UpdateProject.
+// UpdateProject indicates an expected call of UpdateProject
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateProject), arg0)
 }
 
-// UpdateProjectRequest mocks base method.
+// UpdateProjectRequest mocks base method
 func (m *MockDeviceFarmAPI) UpdateProjectRequest(arg0 *devicefarm.UpdateProjectInput) (*request.Request, *devicefarm.UpdateProjectOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateProjectRequest", arg0)
@@ -4304,14 +3521,14 @@ func (m *MockDeviceFarmAPI) UpdateProjectRequest(arg0 *devicefarm.UpdateProjectI
 	return ret0, ret1
 }
 
-// UpdateProjectRequest indicates an expected call of UpdateProjectRequest.
+// UpdateProjectRequest indicates an expected call of UpdateProjectRequest
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateProjectRequest), arg0)
 }
 
-// UpdateProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *devicefarm.UpdateProjectInput, arg2 ...request.Option) (*devicefarm.UpdateProjectOutput, error) {
+// UpdateProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateProjectInput, arg2 ...request.Option) (*devicefarm.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4323,114 +3540,14 @@ func (m *MockDeviceFarmAPI) UpdateProjectWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateProjectWithContext indicates an expected call of UpdateProjectWithContext.
+// UpdateProjectWithContext indicates an expected call of UpdateProjectWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateProjectWithContext), varargs...)
 }
 
-// UpdateTestGridProject mocks base method.
-func (m *MockDeviceFarmAPI) UpdateTestGridProject(arg0 *devicefarm.UpdateTestGridProjectInput) (*devicefarm.UpdateTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateTestGridProject", arg0)
-	ret0, _ := ret[0].(*devicefarm.UpdateTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateTestGridProject indicates an expected call of UpdateTestGridProject.
-func (mr *MockDeviceFarmAPIMockRecorder) UpdateTestGridProject(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateTestGridProject), arg0)
-}
-
-// UpdateTestGridProjectRequest mocks base method.
-func (m *MockDeviceFarmAPI) UpdateTestGridProjectRequest(arg0 *devicefarm.UpdateTestGridProjectInput) (*request.Request, *devicefarm.UpdateTestGridProjectOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateTestGridProjectRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.UpdateTestGridProjectOutput)
-	return ret0, ret1
-}
-
-// UpdateTestGridProjectRequest indicates an expected call of UpdateTestGridProjectRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) UpdateTestGridProjectRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateTestGridProjectRequest), arg0)
-}
-
-// UpdateTestGridProjectWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.UpdateTestGridProjectInput, arg2 ...request.Option) (*devicefarm.UpdateTestGridProjectOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateTestGridProjectWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.UpdateTestGridProjectOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateTestGridProjectWithContext indicates an expected call of UpdateTestGridProjectWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) UpdateTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateTestGridProjectWithContext), varargs...)
-}
-
-// UpdateUpload mocks base method.
-func (m *MockDeviceFarmAPI) UpdateUpload(arg0 *devicefarm.UpdateUploadInput) (*devicefarm.UpdateUploadOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateUpload", arg0)
-	ret0, _ := ret[0].(*devicefarm.UpdateUploadOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateUpload indicates an expected call of UpdateUpload.
-func (mr *MockDeviceFarmAPIMockRecorder) UpdateUpload(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUpload", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateUpload), arg0)
-}
-
-// UpdateUploadRequest mocks base method.
-func (m *MockDeviceFarmAPI) UpdateUploadRequest(arg0 *devicefarm.UpdateUploadInput) (*request.Request, *devicefarm.UpdateUploadOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateUploadRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*devicefarm.UpdateUploadOutput)
-	return ret0, ret1
-}
-
-// UpdateUploadRequest indicates an expected call of UpdateUploadRequest.
-func (mr *MockDeviceFarmAPIMockRecorder) UpdateUploadRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUploadRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateUploadRequest), arg0)
-}
-
-// UpdateUploadWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateUploadWithContext(arg0 context.Context, arg1 *devicefarm.UpdateUploadInput, arg2 ...request.Option) (*devicefarm.UpdateUploadOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateUploadWithContext", varargs...)
-	ret0, _ := ret[0].(*devicefarm.UpdateUploadOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateUploadWithContext indicates an expected call of UpdateUploadWithContext.
-func (mr *MockDeviceFarmAPIMockRecorder) UpdateUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUploadWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateUploadWithContext), varargs...)
-}
-
-// UpdateVPCEConfiguration mocks base method.
+// UpdateVPCEConfiguration mocks base method
 func (m *MockDeviceFarmAPI) UpdateVPCEConfiguration(arg0 *devicefarm.UpdateVPCEConfigurationInput) (*devicefarm.UpdateVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateVPCEConfiguration", arg0)
@@ -4439,13 +3556,13 @@ func (m *MockDeviceFarmAPI) UpdateVPCEConfiguration(arg0 *devicefarm.UpdateVPCEC
 	return ret0, ret1
 }
 
-// UpdateVPCEConfiguration indicates an expected call of UpdateVPCEConfiguration.
+// UpdateVPCEConfiguration indicates an expected call of UpdateVPCEConfiguration
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateVPCEConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVPCEConfiguration", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateVPCEConfiguration), arg0)
 }
 
-// UpdateVPCEConfigurationRequest mocks base method.
+// UpdateVPCEConfigurationRequest mocks base method
 func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationRequest(arg0 *devicefarm.UpdateVPCEConfigurationInput) (*request.Request, *devicefarm.UpdateVPCEConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateVPCEConfigurationRequest", arg0)
@@ -4454,14 +3571,14 @@ func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationRequest(arg0 *devicefarm.Upda
 	return ret0, ret1
 }
 
-// UpdateVPCEConfigurationRequest indicates an expected call of UpdateVPCEConfigurationRequest.
+// UpdateVPCEConfigurationRequest indicates an expected call of UpdateVPCEConfigurationRequest
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateVPCEConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVPCEConfigurationRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateVPCEConfigurationRequest), arg0)
 }
 
-// UpdateVPCEConfigurationWithContext mocks base method.
-func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.UpdateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.UpdateVPCEConfigurationOutput, error) {
+// UpdateVPCEConfigurationWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.UpdateVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4473,7 +3590,7 @@ func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateVPCEConfigurationWithContext indicates an expected call of UpdateVPCEConfigurationWithContext.
+// UpdateVPCEConfigurationWithContext indicates an expected call of UpdateVPCEConfigurationWithContext
 func (mr *MockDeviceFarmAPIMockRecorder) UpdateVPCEConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

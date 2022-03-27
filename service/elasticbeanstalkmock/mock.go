@@ -5,38 +5,37 @@
 package elasticbeanstalkmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elasticbeanstalk "github.com/aws/aws-sdk-go/service/elasticbeanstalk"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockElasticBeanstalkAPI is a mock of ElasticBeanstalkAPI interface.
+// MockElasticBeanstalkAPI is a mock of ElasticBeanstalkAPI interface
 type MockElasticBeanstalkAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockElasticBeanstalkAPIMockRecorder
 }
 
-// MockElasticBeanstalkAPIMockRecorder is the mock recorder for MockElasticBeanstalkAPI.
+// MockElasticBeanstalkAPIMockRecorder is the mock recorder for MockElasticBeanstalkAPI
 type MockElasticBeanstalkAPIMockRecorder struct {
 	mock *MockElasticBeanstalkAPI
 }
 
-// NewMockElasticBeanstalkAPI creates a new mock instance.
+// NewMockElasticBeanstalkAPI creates a new mock instance
 func NewMockElasticBeanstalkAPI(ctrl *gomock.Controller) *MockElasticBeanstalkAPI {
 	mock := &MockElasticBeanstalkAPI{ctrl: ctrl}
 	mock.recorder = &MockElasticBeanstalkAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockElasticBeanstalkAPI) EXPECT() *MockElasticBeanstalkAPIMockRecorder {
 	return m.recorder
 }
 
-// AbortEnvironmentUpdate mocks base method.
+// AbortEnvironmentUpdate mocks base method
 func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdate(arg0 *elasticbeanstalk.AbortEnvironmentUpdateInput) (*elasticbeanstalk.AbortEnvironmentUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortEnvironmentUpdate", arg0)
@@ -45,13 +44,13 @@ func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdate(arg0 *elasticbeanstalk.
 	return ret0, ret1
 }
 
-// AbortEnvironmentUpdate indicates an expected call of AbortEnvironmentUpdate.
+// AbortEnvironmentUpdate indicates an expected call of AbortEnvironmentUpdate
 func (mr *MockElasticBeanstalkAPIMockRecorder) AbortEnvironmentUpdate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortEnvironmentUpdate", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).AbortEnvironmentUpdate), arg0)
 }
 
-// AbortEnvironmentUpdateRequest mocks base method.
+// AbortEnvironmentUpdateRequest mocks base method
 func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateRequest(arg0 *elasticbeanstalk.AbortEnvironmentUpdateInput) (*request.Request, *elasticbeanstalk.AbortEnvironmentUpdateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortEnvironmentUpdateRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateRequest(arg0 *elasticbea
 	return ret0, ret1
 }
 
-// AbortEnvironmentUpdateRequest indicates an expected call of AbortEnvironmentUpdateRequest.
+// AbortEnvironmentUpdateRequest indicates an expected call of AbortEnvironmentUpdateRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) AbortEnvironmentUpdateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortEnvironmentUpdateRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).AbortEnvironmentUpdateRequest), arg0)
 }
 
-// AbortEnvironmentUpdateWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.AbortEnvironmentUpdateInput, arg2 ...request.Option) (*elasticbeanstalk.AbortEnvironmentUpdateOutput, error) {
+// AbortEnvironmentUpdateWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.AbortEnvironmentUpdateInput, arg2 ...request.Option) (*elasticbeanstalk.AbortEnvironmentUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateWithContext(arg0 context
 	return ret0, ret1
 }
 
-// AbortEnvironmentUpdateWithContext indicates an expected call of AbortEnvironmentUpdateWithContext.
+// AbortEnvironmentUpdateWithContext indicates an expected call of AbortEnvironmentUpdateWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) AbortEnvironmentUpdateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortEnvironmentUpdateWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).AbortEnvironmentUpdateWithContext), varargs...)
 }
 
-// ApplyEnvironmentManagedAction mocks base method.
+// ApplyEnvironmentManagedAction mocks base method
 func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedAction(arg0 *elasticbeanstalk.ApplyEnvironmentManagedActionInput) (*elasticbeanstalk.ApplyEnvironmentManagedActionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ApplyEnvironmentManagedAction", arg0)
@@ -95,13 +94,13 @@ func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedAction(arg0 *elasticbea
 	return ret0, ret1
 }
 
-// ApplyEnvironmentManagedAction indicates an expected call of ApplyEnvironmentManagedAction.
+// ApplyEnvironmentManagedAction indicates an expected call of ApplyEnvironmentManagedAction
 func (mr *MockElasticBeanstalkAPIMockRecorder) ApplyEnvironmentManagedAction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyEnvironmentManagedAction", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ApplyEnvironmentManagedAction), arg0)
 }
 
-// ApplyEnvironmentManagedActionRequest mocks base method.
+// ApplyEnvironmentManagedActionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionRequest(arg0 *elasticbeanstalk.ApplyEnvironmentManagedActionInput) (*request.Request, *elasticbeanstalk.ApplyEnvironmentManagedActionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ApplyEnvironmentManagedActionRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionRequest(arg0 *ela
 	return ret0, ret1
 }
 
-// ApplyEnvironmentManagedActionRequest indicates an expected call of ApplyEnvironmentManagedActionRequest.
+// ApplyEnvironmentManagedActionRequest indicates an expected call of ApplyEnvironmentManagedActionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) ApplyEnvironmentManagedActionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyEnvironmentManagedActionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ApplyEnvironmentManagedActionRequest), arg0)
 }
 
-// ApplyEnvironmentManagedActionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ApplyEnvironmentManagedActionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplyEnvironmentManagedActionOutput, error) {
+// ApplyEnvironmentManagedActionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ApplyEnvironmentManagedActionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplyEnvironmentManagedActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,64 +128,14 @@ func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionWithContext(arg0 
 	return ret0, ret1
 }
 
-// ApplyEnvironmentManagedActionWithContext indicates an expected call of ApplyEnvironmentManagedActionWithContext.
+// ApplyEnvironmentManagedActionWithContext indicates an expected call of ApplyEnvironmentManagedActionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) ApplyEnvironmentManagedActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyEnvironmentManagedActionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ApplyEnvironmentManagedActionWithContext), varargs...)
 }
 
-// AssociateEnvironmentOperationsRole mocks base method.
-func (m *MockElasticBeanstalkAPI) AssociateEnvironmentOperationsRole(arg0 *elasticbeanstalk.AssociateEnvironmentOperationsRoleInput) (*elasticbeanstalk.AssociateEnvironmentOperationsRoleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateEnvironmentOperationsRole", arg0)
-	ret0, _ := ret[0].(*elasticbeanstalk.AssociateEnvironmentOperationsRoleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateEnvironmentOperationsRole indicates an expected call of AssociateEnvironmentOperationsRole.
-func (mr *MockElasticBeanstalkAPIMockRecorder) AssociateEnvironmentOperationsRole(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateEnvironmentOperationsRole", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).AssociateEnvironmentOperationsRole), arg0)
-}
-
-// AssociateEnvironmentOperationsRoleRequest mocks base method.
-func (m *MockElasticBeanstalkAPI) AssociateEnvironmentOperationsRoleRequest(arg0 *elasticbeanstalk.AssociateEnvironmentOperationsRoleInput) (*request.Request, *elasticbeanstalk.AssociateEnvironmentOperationsRoleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateEnvironmentOperationsRoleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*elasticbeanstalk.AssociateEnvironmentOperationsRoleOutput)
-	return ret0, ret1
-}
-
-// AssociateEnvironmentOperationsRoleRequest indicates an expected call of AssociateEnvironmentOperationsRoleRequest.
-func (mr *MockElasticBeanstalkAPIMockRecorder) AssociateEnvironmentOperationsRoleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateEnvironmentOperationsRoleRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).AssociateEnvironmentOperationsRoleRequest), arg0)
-}
-
-// AssociateEnvironmentOperationsRoleWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) AssociateEnvironmentOperationsRoleWithContext(arg0 context.Context, arg1 *elasticbeanstalk.AssociateEnvironmentOperationsRoleInput, arg2 ...request.Option) (*elasticbeanstalk.AssociateEnvironmentOperationsRoleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateEnvironmentOperationsRoleWithContext", varargs...)
-	ret0, _ := ret[0].(*elasticbeanstalk.AssociateEnvironmentOperationsRoleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateEnvironmentOperationsRoleWithContext indicates an expected call of AssociateEnvironmentOperationsRoleWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) AssociateEnvironmentOperationsRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateEnvironmentOperationsRoleWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).AssociateEnvironmentOperationsRoleWithContext), varargs...)
-}
-
-// CheckDNSAvailability mocks base method.
+// CheckDNSAvailability mocks base method
 func (m *MockElasticBeanstalkAPI) CheckDNSAvailability(arg0 *elasticbeanstalk.CheckDNSAvailabilityInput) (*elasticbeanstalk.CheckDNSAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CheckDNSAvailability", arg0)
@@ -195,13 +144,13 @@ func (m *MockElasticBeanstalkAPI) CheckDNSAvailability(arg0 *elasticbeanstalk.Ch
 	return ret0, ret1
 }
 
-// CheckDNSAvailability indicates an expected call of CheckDNSAvailability.
+// CheckDNSAvailability indicates an expected call of CheckDNSAvailability
 func (mr *MockElasticBeanstalkAPIMockRecorder) CheckDNSAvailability(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDNSAvailability", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CheckDNSAvailability), arg0)
 }
 
-// CheckDNSAvailabilityRequest mocks base method.
+// CheckDNSAvailabilityRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityRequest(arg0 *elasticbeanstalk.CheckDNSAvailabilityInput) (*request.Request, *elasticbeanstalk.CheckDNSAvailabilityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CheckDNSAvailabilityRequest", arg0)
@@ -210,14 +159,14 @@ func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityRequest(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// CheckDNSAvailabilityRequest indicates an expected call of CheckDNSAvailabilityRequest.
+// CheckDNSAvailabilityRequest indicates an expected call of CheckDNSAvailabilityRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CheckDNSAvailabilityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDNSAvailabilityRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CheckDNSAvailabilityRequest), arg0)
 }
 
-// CheckDNSAvailabilityWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CheckDNSAvailabilityInput, arg2 ...request.Option) (*elasticbeanstalk.CheckDNSAvailabilityOutput, error) {
+// CheckDNSAvailabilityWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CheckDNSAvailabilityInput, arg2 ...request.Option) (*elasticbeanstalk.CheckDNSAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +178,14 @@ func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// CheckDNSAvailabilityWithContext indicates an expected call of CheckDNSAvailabilityWithContext.
+// CheckDNSAvailabilityWithContext indicates an expected call of CheckDNSAvailabilityWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CheckDNSAvailabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDNSAvailabilityWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CheckDNSAvailabilityWithContext), varargs...)
 }
 
-// ComposeEnvironments mocks base method.
+// ComposeEnvironments mocks base method
 func (m *MockElasticBeanstalkAPI) ComposeEnvironments(arg0 *elasticbeanstalk.ComposeEnvironmentsInput) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ComposeEnvironments", arg0)
@@ -245,13 +194,13 @@ func (m *MockElasticBeanstalkAPI) ComposeEnvironments(arg0 *elasticbeanstalk.Com
 	return ret0, ret1
 }
 
-// ComposeEnvironments indicates an expected call of ComposeEnvironments.
+// ComposeEnvironments indicates an expected call of ComposeEnvironments
 func (mr *MockElasticBeanstalkAPIMockRecorder) ComposeEnvironments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ComposeEnvironments", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ComposeEnvironments), arg0)
 }
 
-// ComposeEnvironmentsRequest mocks base method.
+// ComposeEnvironmentsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsRequest(arg0 *elasticbeanstalk.ComposeEnvironmentsInput) (*request.Request, *elasticbeanstalk.EnvironmentDescriptionsMessage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ComposeEnvironmentsRequest", arg0)
@@ -260,14 +209,14 @@ func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsRequest(arg0 *elasticbeanst
 	return ret0, ret1
 }
 
-// ComposeEnvironmentsRequest indicates an expected call of ComposeEnvironmentsRequest.
+// ComposeEnvironmentsRequest indicates an expected call of ComposeEnvironmentsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) ComposeEnvironmentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ComposeEnvironmentsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ComposeEnvironmentsRequest), arg0)
 }
 
-// ComposeEnvironmentsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ComposeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
+// ComposeEnvironmentsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ComposeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +228,14 @@ func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// ComposeEnvironmentsWithContext indicates an expected call of ComposeEnvironmentsWithContext.
+// ComposeEnvironmentsWithContext indicates an expected call of ComposeEnvironmentsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) ComposeEnvironmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ComposeEnvironmentsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ComposeEnvironmentsWithContext), varargs...)
 }
 
-// CreateApplication mocks base method.
+// CreateApplication mocks base method
 func (m *MockElasticBeanstalkAPI) CreateApplication(arg0 *elasticbeanstalk.CreateApplicationInput) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApplication", arg0)
@@ -295,13 +244,13 @@ func (m *MockElasticBeanstalkAPI) CreateApplication(arg0 *elasticbeanstalk.Creat
 	return ret0, ret1
 }
 
-// CreateApplication indicates an expected call of CreateApplication.
+// CreateApplication indicates an expected call of CreateApplication
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplication", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateApplication), arg0)
 }
 
-// CreateApplicationRequest mocks base method.
+// CreateApplicationRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CreateApplicationRequest(arg0 *elasticbeanstalk.CreateApplicationInput) (*request.Request, *elasticbeanstalk.ApplicationDescriptionMessage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApplicationRequest", arg0)
@@ -310,13 +259,13 @@ func (m *MockElasticBeanstalkAPI) CreateApplicationRequest(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// CreateApplicationRequest indicates an expected call of CreateApplicationRequest.
+// CreateApplicationRequest indicates an expected call of CreateApplicationRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateApplicationRequest), arg0)
 }
 
-// CreateApplicationVersion mocks base method.
+// CreateApplicationVersion mocks base method
 func (m *MockElasticBeanstalkAPI) CreateApplicationVersion(arg0 *elasticbeanstalk.CreateApplicationVersionInput) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApplicationVersion", arg0)
@@ -325,13 +274,13 @@ func (m *MockElasticBeanstalkAPI) CreateApplicationVersion(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// CreateApplicationVersion indicates an expected call of CreateApplicationVersion.
+// CreateApplicationVersion indicates an expected call of CreateApplicationVersion
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationVersion", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateApplicationVersion), arg0)
 }
 
-// CreateApplicationVersionRequest mocks base method.
+// CreateApplicationVersionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CreateApplicationVersionRequest(arg0 *elasticbeanstalk.CreateApplicationVersionInput) (*request.Request, *elasticbeanstalk.ApplicationVersionDescriptionMessage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApplicationVersionRequest", arg0)
@@ -340,14 +289,14 @@ func (m *MockElasticBeanstalkAPI) CreateApplicationVersionRequest(arg0 *elasticb
 	return ret0, ret1
 }
 
-// CreateApplicationVersionRequest indicates an expected call of CreateApplicationVersionRequest.
+// CreateApplicationVersionRequest indicates an expected call of CreateApplicationVersionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationVersionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateApplicationVersionRequest), arg0)
 }
 
-// CreateApplicationVersionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CreateApplicationVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
+// CreateApplicationVersionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CreateApplicationVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -359,15 +308,15 @@ func (m *MockElasticBeanstalkAPI) CreateApplicationVersionWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// CreateApplicationVersionWithContext indicates an expected call of CreateApplicationVersionWithContext.
+// CreateApplicationVersionWithContext indicates an expected call of CreateApplicationVersionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationVersionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateApplicationVersionWithContext), varargs...)
 }
 
-// CreateApplicationWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
+// CreateApplicationWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CreateApplicationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +328,14 @@ func (m *MockElasticBeanstalkAPI) CreateApplicationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateApplicationWithContext indicates an expected call of CreateApplicationWithContext.
+// CreateApplicationWithContext indicates an expected call of CreateApplicationWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateApplicationWithContext), varargs...)
 }
 
-// CreateConfigurationTemplate mocks base method.
+// CreateConfigurationTemplate mocks base method
 func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplate(arg0 *elasticbeanstalk.CreateConfigurationTemplateInput) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateConfigurationTemplate", arg0)
@@ -395,13 +344,13 @@ func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplate(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// CreateConfigurationTemplate indicates an expected call of CreateConfigurationTemplate.
+// CreateConfigurationTemplate indicates an expected call of CreateConfigurationTemplate
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateConfigurationTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationTemplate", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateConfigurationTemplate), arg0)
 }
 
-// CreateConfigurationTemplateRequest mocks base method.
+// CreateConfigurationTemplateRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateRequest(arg0 *elasticbeanstalk.CreateConfigurationTemplateInput) (*request.Request, *elasticbeanstalk.ConfigurationSettingsDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateConfigurationTemplateRequest", arg0)
@@ -410,14 +359,14 @@ func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateRequest(arg0 *elast
 	return ret0, ret1
 }
 
-// CreateConfigurationTemplateRequest indicates an expected call of CreateConfigurationTemplateRequest.
+// CreateConfigurationTemplateRequest indicates an expected call of CreateConfigurationTemplateRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationTemplateRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateConfigurationTemplateRequest), arg0)
 }
 
-// CreateConfigurationTemplateWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
+// CreateConfigurationTemplateWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +378,14 @@ func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateWithContext(arg0 co
 	return ret0, ret1
 }
 
-// CreateConfigurationTemplateWithContext indicates an expected call of CreateConfigurationTemplateWithContext.
+// CreateConfigurationTemplateWithContext indicates an expected call of CreateConfigurationTemplateWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationTemplateWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateConfigurationTemplateWithContext), varargs...)
 }
 
-// CreateEnvironment mocks base method.
+// CreateEnvironment mocks base method
 func (m *MockElasticBeanstalkAPI) CreateEnvironment(arg0 *elasticbeanstalk.CreateEnvironmentInput) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEnvironment", arg0)
@@ -445,13 +394,13 @@ func (m *MockElasticBeanstalkAPI) CreateEnvironment(arg0 *elasticbeanstalk.Creat
 	return ret0, ret1
 }
 
-// CreateEnvironment indicates an expected call of CreateEnvironment.
+// CreateEnvironment indicates an expected call of CreateEnvironment
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateEnvironment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironment", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateEnvironment), arg0)
 }
 
-// CreateEnvironmentRequest mocks base method.
+// CreateEnvironmentRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CreateEnvironmentRequest(arg0 *elasticbeanstalk.CreateEnvironmentInput) (*request.Request, *elasticbeanstalk.EnvironmentDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEnvironmentRequest", arg0)
@@ -460,14 +409,14 @@ func (m *MockElasticBeanstalkAPI) CreateEnvironmentRequest(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// CreateEnvironmentRequest indicates an expected call of CreateEnvironmentRequest.
+// CreateEnvironmentRequest indicates an expected call of CreateEnvironmentRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateEnvironmentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateEnvironmentRequest), arg0)
 }
 
-// CreateEnvironmentWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CreateEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
+// CreateEnvironmentWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CreateEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +428,14 @@ func (m *MockElasticBeanstalkAPI) CreateEnvironmentWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateEnvironmentWithContext indicates an expected call of CreateEnvironmentWithContext.
+// CreateEnvironmentWithContext indicates an expected call of CreateEnvironmentWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateEnvironmentWithContext), varargs...)
 }
 
-// CreatePlatformVersion mocks base method.
+// CreatePlatformVersion mocks base method
 func (m *MockElasticBeanstalkAPI) CreatePlatformVersion(arg0 *elasticbeanstalk.CreatePlatformVersionInput) (*elasticbeanstalk.CreatePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePlatformVersion", arg0)
@@ -495,13 +444,13 @@ func (m *MockElasticBeanstalkAPI) CreatePlatformVersion(arg0 *elasticbeanstalk.C
 	return ret0, ret1
 }
 
-// CreatePlatformVersion indicates an expected call of CreatePlatformVersion.
+// CreatePlatformVersion indicates an expected call of CreatePlatformVersion
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreatePlatformVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePlatformVersion", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreatePlatformVersion), arg0)
 }
 
-// CreatePlatformVersionRequest mocks base method.
+// CreatePlatformVersionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CreatePlatformVersionRequest(arg0 *elasticbeanstalk.CreatePlatformVersionInput) (*request.Request, *elasticbeanstalk.CreatePlatformVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePlatformVersionRequest", arg0)
@@ -510,14 +459,14 @@ func (m *MockElasticBeanstalkAPI) CreatePlatformVersionRequest(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// CreatePlatformVersionRequest indicates an expected call of CreatePlatformVersionRequest.
+// CreatePlatformVersionRequest indicates an expected call of CreatePlatformVersionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreatePlatformVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePlatformVersionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreatePlatformVersionRequest), arg0)
 }
 
-// CreatePlatformVersionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CreatePlatformVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreatePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.CreatePlatformVersionOutput, error) {
+// CreatePlatformVersionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CreatePlatformVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreatePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.CreatePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +478,14 @@ func (m *MockElasticBeanstalkAPI) CreatePlatformVersionWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CreatePlatformVersionWithContext indicates an expected call of CreatePlatformVersionWithContext.
+// CreatePlatformVersionWithContext indicates an expected call of CreatePlatformVersionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreatePlatformVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePlatformVersionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreatePlatformVersionWithContext), varargs...)
 }
 
-// CreateStorageLocation mocks base method.
+// CreateStorageLocation mocks base method
 func (m *MockElasticBeanstalkAPI) CreateStorageLocation(arg0 *elasticbeanstalk.CreateStorageLocationInput) (*elasticbeanstalk.CreateStorageLocationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStorageLocation", arg0)
@@ -545,13 +494,13 @@ func (m *MockElasticBeanstalkAPI) CreateStorageLocation(arg0 *elasticbeanstalk.C
 	return ret0, ret1
 }
 
-// CreateStorageLocation indicates an expected call of CreateStorageLocation.
+// CreateStorageLocation indicates an expected call of CreateStorageLocation
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateStorageLocation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorageLocation", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateStorageLocation), arg0)
 }
 
-// CreateStorageLocationRequest mocks base method.
+// CreateStorageLocationRequest mocks base method
 func (m *MockElasticBeanstalkAPI) CreateStorageLocationRequest(arg0 *elasticbeanstalk.CreateStorageLocationInput) (*request.Request, *elasticbeanstalk.CreateStorageLocationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStorageLocationRequest", arg0)
@@ -560,14 +509,14 @@ func (m *MockElasticBeanstalkAPI) CreateStorageLocationRequest(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// CreateStorageLocationRequest indicates an expected call of CreateStorageLocationRequest.
+// CreateStorageLocationRequest indicates an expected call of CreateStorageLocationRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateStorageLocationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorageLocationRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateStorageLocationRequest), arg0)
 }
 
-// CreateStorageLocationWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) CreateStorageLocationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateStorageLocationInput, arg2 ...request.Option) (*elasticbeanstalk.CreateStorageLocationOutput, error) {
+// CreateStorageLocationWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) CreateStorageLocationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateStorageLocationInput, arg2 ...request.Option) (*elasticbeanstalk.CreateStorageLocationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +528,14 @@ func (m *MockElasticBeanstalkAPI) CreateStorageLocationWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CreateStorageLocationWithContext indicates an expected call of CreateStorageLocationWithContext.
+// CreateStorageLocationWithContext indicates an expected call of CreateStorageLocationWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) CreateStorageLocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorageLocationWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).CreateStorageLocationWithContext), varargs...)
 }
 
-// DeleteApplication mocks base method.
+// DeleteApplication mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteApplication(arg0 *elasticbeanstalk.DeleteApplicationInput) (*elasticbeanstalk.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplication", arg0)
@@ -595,13 +544,13 @@ func (m *MockElasticBeanstalkAPI) DeleteApplication(arg0 *elasticbeanstalk.Delet
 	return ret0, ret1
 }
 
-// DeleteApplication indicates an expected call of DeleteApplication.
+// DeleteApplication indicates an expected call of DeleteApplication
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplication", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteApplication), arg0)
 }
 
-// DeleteApplicationRequest mocks base method.
+// DeleteApplicationRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteApplicationRequest(arg0 *elasticbeanstalk.DeleteApplicationInput) (*request.Request, *elasticbeanstalk.DeleteApplicationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationRequest", arg0)
@@ -610,13 +559,13 @@ func (m *MockElasticBeanstalkAPI) DeleteApplicationRequest(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// DeleteApplicationRequest indicates an expected call of DeleteApplicationRequest.
+// DeleteApplicationRequest indicates an expected call of DeleteApplicationRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteApplicationRequest), arg0)
 }
 
-// DeleteApplicationVersion mocks base method.
+// DeleteApplicationVersion mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteApplicationVersion(arg0 *elasticbeanstalk.DeleteApplicationVersionInput) (*elasticbeanstalk.DeleteApplicationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationVersion", arg0)
@@ -625,13 +574,13 @@ func (m *MockElasticBeanstalkAPI) DeleteApplicationVersion(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// DeleteApplicationVersion indicates an expected call of DeleteApplicationVersion.
+// DeleteApplicationVersion indicates an expected call of DeleteApplicationVersion
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationVersion", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteApplicationVersion), arg0)
 }
 
-// DeleteApplicationVersionRequest mocks base method.
+// DeleteApplicationVersionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionRequest(arg0 *elasticbeanstalk.DeleteApplicationVersionInput) (*request.Request, *elasticbeanstalk.DeleteApplicationVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApplicationVersionRequest", arg0)
@@ -640,14 +589,14 @@ func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionRequest(arg0 *elasticb
 	return ret0, ret1
 }
 
-// DeleteApplicationVersionRequest indicates an expected call of DeleteApplicationVersionRequest.
+// DeleteApplicationVersionRequest indicates an expected call of DeleteApplicationVersionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationVersionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteApplicationVersionRequest), arg0)
 }
 
-// DeleteApplicationVersionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationVersionOutput, error) {
+// DeleteApplicationVersionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -659,15 +608,15 @@ func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DeleteApplicationVersionWithContext indicates an expected call of DeleteApplicationVersionWithContext.
+// DeleteApplicationVersionWithContext indicates an expected call of DeleteApplicationVersionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationVersionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteApplicationVersionWithContext), varargs...)
 }
 
-// DeleteApplicationWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationOutput, error) {
+// DeleteApplicationWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DeleteApplicationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +628,14 @@ func (m *MockElasticBeanstalkAPI) DeleteApplicationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteApplicationWithContext indicates an expected call of DeleteApplicationWithContext.
+// DeleteApplicationWithContext indicates an expected call of DeleteApplicationWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteApplicationWithContext), varargs...)
 }
 
-// DeleteConfigurationTemplate mocks base method.
+// DeleteConfigurationTemplate mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplate(arg0 *elasticbeanstalk.DeleteConfigurationTemplateInput) (*elasticbeanstalk.DeleteConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteConfigurationTemplate", arg0)
@@ -695,13 +644,13 @@ func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplate(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// DeleteConfigurationTemplate indicates an expected call of DeleteConfigurationTemplate.
+// DeleteConfigurationTemplate indicates an expected call of DeleteConfigurationTemplate
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteConfigurationTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationTemplate", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteConfigurationTemplate), arg0)
 }
 
-// DeleteConfigurationTemplateRequest mocks base method.
+// DeleteConfigurationTemplateRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateRequest(arg0 *elasticbeanstalk.DeleteConfigurationTemplateInput) (*request.Request, *elasticbeanstalk.DeleteConfigurationTemplateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteConfigurationTemplateRequest", arg0)
@@ -710,14 +659,14 @@ func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateRequest(arg0 *elast
 	return ret0, ret1
 }
 
-// DeleteConfigurationTemplateRequest indicates an expected call of DeleteConfigurationTemplateRequest.
+// DeleteConfigurationTemplateRequest indicates an expected call of DeleteConfigurationTemplateRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationTemplateRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteConfigurationTemplateRequest), arg0)
 }
 
-// DeleteConfigurationTemplateWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteConfigurationTemplateOutput, error) {
+// DeleteConfigurationTemplateWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +678,14 @@ func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateWithContext(arg0 co
 	return ret0, ret1
 }
 
-// DeleteConfigurationTemplateWithContext indicates an expected call of DeleteConfigurationTemplateWithContext.
+// DeleteConfigurationTemplateWithContext indicates an expected call of DeleteConfigurationTemplateWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationTemplateWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteConfigurationTemplateWithContext), varargs...)
 }
 
-// DeleteEnvironmentConfiguration mocks base method.
+// DeleteEnvironmentConfiguration mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfiguration(arg0 *elasticbeanstalk.DeleteEnvironmentConfigurationInput) (*elasticbeanstalk.DeleteEnvironmentConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEnvironmentConfiguration", arg0)
@@ -745,13 +694,13 @@ func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfiguration(arg0 *elasticbe
 	return ret0, ret1
 }
 
-// DeleteEnvironmentConfiguration indicates an expected call of DeleteEnvironmentConfiguration.
+// DeleteEnvironmentConfiguration indicates an expected call of DeleteEnvironmentConfiguration
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteEnvironmentConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentConfiguration", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteEnvironmentConfiguration), arg0)
 }
 
-// DeleteEnvironmentConfigurationRequest mocks base method.
+// DeleteEnvironmentConfigurationRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationRequest(arg0 *elasticbeanstalk.DeleteEnvironmentConfigurationInput) (*request.Request, *elasticbeanstalk.DeleteEnvironmentConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEnvironmentConfigurationRequest", arg0)
@@ -760,14 +709,14 @@ func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationRequest(arg0 *el
 	return ret0, ret1
 }
 
-// DeleteEnvironmentConfigurationRequest indicates an expected call of DeleteEnvironmentConfigurationRequest.
+// DeleteEnvironmentConfigurationRequest indicates an expected call of DeleteEnvironmentConfigurationRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteEnvironmentConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentConfigurationRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteEnvironmentConfigurationRequest), arg0)
 }
 
-// DeleteEnvironmentConfigurationWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteEnvironmentConfigurationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteEnvironmentConfigurationOutput, error) {
+// DeleteEnvironmentConfigurationWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteEnvironmentConfigurationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteEnvironmentConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +728,14 @@ func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationWithContext(arg0
 	return ret0, ret1
 }
 
-// DeleteEnvironmentConfigurationWithContext indicates an expected call of DeleteEnvironmentConfigurationWithContext.
+// DeleteEnvironmentConfigurationWithContext indicates an expected call of DeleteEnvironmentConfigurationWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteEnvironmentConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentConfigurationWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeleteEnvironmentConfigurationWithContext), varargs...)
 }
 
-// DeletePlatformVersion mocks base method.
+// DeletePlatformVersion mocks base method
 func (m *MockElasticBeanstalkAPI) DeletePlatformVersion(arg0 *elasticbeanstalk.DeletePlatformVersionInput) (*elasticbeanstalk.DeletePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePlatformVersion", arg0)
@@ -795,13 +744,13 @@ func (m *MockElasticBeanstalkAPI) DeletePlatformVersion(arg0 *elasticbeanstalk.D
 	return ret0, ret1
 }
 
-// DeletePlatformVersion indicates an expected call of DeletePlatformVersion.
+// DeletePlatformVersion indicates an expected call of DeletePlatformVersion
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeletePlatformVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlatformVersion", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeletePlatformVersion), arg0)
 }
 
-// DeletePlatformVersionRequest mocks base method.
+// DeletePlatformVersionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DeletePlatformVersionRequest(arg0 *elasticbeanstalk.DeletePlatformVersionInput) (*request.Request, *elasticbeanstalk.DeletePlatformVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePlatformVersionRequest", arg0)
@@ -810,14 +759,14 @@ func (m *MockElasticBeanstalkAPI) DeletePlatformVersionRequest(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// DeletePlatformVersionRequest indicates an expected call of DeletePlatformVersionRequest.
+// DeletePlatformVersionRequest indicates an expected call of DeletePlatformVersionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeletePlatformVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlatformVersionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeletePlatformVersionRequest), arg0)
 }
 
-// DeletePlatformVersionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DeletePlatformVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeletePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeletePlatformVersionOutput, error) {
+// DeletePlatformVersionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DeletePlatformVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeletePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeletePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +778,14 @@ func (m *MockElasticBeanstalkAPI) DeletePlatformVersionWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// DeletePlatformVersionWithContext indicates an expected call of DeletePlatformVersionWithContext.
+// DeletePlatformVersionWithContext indicates an expected call of DeletePlatformVersionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DeletePlatformVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlatformVersionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DeletePlatformVersionWithContext), varargs...)
 }
 
-// DescribeAccountAttributes mocks base method.
+// DescribeAccountAttributes mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeAccountAttributes(arg0 *elasticbeanstalk.DescribeAccountAttributesInput) (*elasticbeanstalk.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAccountAttributes", arg0)
@@ -845,13 +794,13 @@ func (m *MockElasticBeanstalkAPI) DescribeAccountAttributes(arg0 *elasticbeansta
 	return ret0, ret1
 }
 
-// DescribeAccountAttributes indicates an expected call of DescribeAccountAttributes.
+// DescribeAccountAttributes indicates an expected call of DescribeAccountAttributes
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeAccountAttributes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAttributes", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeAccountAttributes), arg0)
 }
 
-// DescribeAccountAttributesRequest mocks base method.
+// DescribeAccountAttributesRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesRequest(arg0 *elasticbeanstalk.DescribeAccountAttributesInput) (*request.Request, *elasticbeanstalk.DescribeAccountAttributesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAccountAttributesRequest", arg0)
@@ -860,14 +809,14 @@ func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesRequest(arg0 *elastic
 	return ret0, ret1
 }
 
-// DescribeAccountAttributesRequest indicates an expected call of DescribeAccountAttributesRequest.
+// DescribeAccountAttributesRequest indicates an expected call of DescribeAccountAttributesRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeAccountAttributesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAttributesRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeAccountAttributesRequest), arg0)
 }
 
-// DescribeAccountAttributesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeAccountAttributesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeAccountAttributesOutput, error) {
+// DescribeAccountAttributesWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeAccountAttributesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +828,14 @@ func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesWithContext(arg0 cont
 	return ret0, ret1
 }
 
-// DescribeAccountAttributesWithContext indicates an expected call of DescribeAccountAttributesWithContext.
+// DescribeAccountAttributesWithContext indicates an expected call of DescribeAccountAttributesWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeAccountAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAttributesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeAccountAttributesWithContext), varargs...)
 }
 
-// DescribeApplicationVersions mocks base method.
+// DescribeApplicationVersions mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeApplicationVersions(arg0 *elasticbeanstalk.DescribeApplicationVersionsInput) (*elasticbeanstalk.DescribeApplicationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplicationVersions", arg0)
@@ -895,13 +844,13 @@ func (m *MockElasticBeanstalkAPI) DescribeApplicationVersions(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// DescribeApplicationVersions indicates an expected call of DescribeApplicationVersions.
+// DescribeApplicationVersions indicates an expected call of DescribeApplicationVersions
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationVersions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationVersions", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeApplicationVersions), arg0)
 }
 
-// DescribeApplicationVersionsRequest mocks base method.
+// DescribeApplicationVersionsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsRequest(arg0 *elasticbeanstalk.DescribeApplicationVersionsInput) (*request.Request, *elasticbeanstalk.DescribeApplicationVersionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplicationVersionsRequest", arg0)
@@ -910,14 +859,14 @@ func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsRequest(arg0 *elast
 	return ret0, ret1
 }
 
-// DescribeApplicationVersionsRequest indicates an expected call of DescribeApplicationVersionsRequest.
+// DescribeApplicationVersionsRequest indicates an expected call of DescribeApplicationVersionsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationVersionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationVersionsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeApplicationVersionsRequest), arg0)
 }
 
-// DescribeApplicationVersionsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeApplicationVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationVersionsOutput, error) {
+// DescribeApplicationVersionsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeApplicationVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +878,14 @@ func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsWithContext(arg0 co
 	return ret0, ret1
 }
 
-// DescribeApplicationVersionsWithContext indicates an expected call of DescribeApplicationVersionsWithContext.
+// DescribeApplicationVersionsWithContext indicates an expected call of DescribeApplicationVersionsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationVersionsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeApplicationVersionsWithContext), varargs...)
 }
 
-// DescribeApplications mocks base method.
+// DescribeApplications mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeApplications(arg0 *elasticbeanstalk.DescribeApplicationsInput) (*elasticbeanstalk.DescribeApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplications", arg0)
@@ -945,13 +894,13 @@ func (m *MockElasticBeanstalkAPI) DescribeApplications(arg0 *elasticbeanstalk.De
 	return ret0, ret1
 }
 
-// DescribeApplications indicates an expected call of DescribeApplications.
+// DescribeApplications indicates an expected call of DescribeApplications
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplications", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeApplications), arg0)
 }
 
-// DescribeApplicationsRequest mocks base method.
+// DescribeApplicationsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeApplicationsRequest(arg0 *elasticbeanstalk.DescribeApplicationsInput) (*request.Request, *elasticbeanstalk.DescribeApplicationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplicationsRequest", arg0)
@@ -960,14 +909,14 @@ func (m *MockElasticBeanstalkAPI) DescribeApplicationsRequest(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// DescribeApplicationsRequest indicates an expected call of DescribeApplicationsRequest.
+// DescribeApplicationsRequest indicates an expected call of DescribeApplicationsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeApplicationsRequest), arg0)
 }
 
-// DescribeApplicationsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeApplicationsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeApplicationsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationsOutput, error) {
+// DescribeApplicationsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeApplicationsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeApplicationsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +928,14 @@ func (m *MockElasticBeanstalkAPI) DescribeApplicationsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DescribeApplicationsWithContext indicates an expected call of DescribeApplicationsWithContext.
+// DescribeApplicationsWithContext indicates an expected call of DescribeApplicationsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeApplicationsWithContext), varargs...)
 }
 
-// DescribeConfigurationOptions mocks base method.
+// DescribeConfigurationOptions mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptions(arg0 *elasticbeanstalk.DescribeConfigurationOptionsInput) (*elasticbeanstalk.DescribeConfigurationOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationOptions", arg0)
@@ -995,13 +944,13 @@ func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptions(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// DescribeConfigurationOptions indicates an expected call of DescribeConfigurationOptions.
+// DescribeConfigurationOptions indicates an expected call of DescribeConfigurationOptions
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationOptions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationOptions", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeConfigurationOptions), arg0)
 }
 
-// DescribeConfigurationOptionsRequest mocks base method.
+// DescribeConfigurationOptionsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsRequest(arg0 *elasticbeanstalk.DescribeConfigurationOptionsInput) (*request.Request, *elasticbeanstalk.DescribeConfigurationOptionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationOptionsRequest", arg0)
@@ -1010,14 +959,14 @@ func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsRequest(arg0 *elas
 	return ret0, ret1
 }
 
-// DescribeConfigurationOptionsRequest indicates an expected call of DescribeConfigurationOptionsRequest.
+// DescribeConfigurationOptionsRequest indicates an expected call of DescribeConfigurationOptionsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationOptionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationOptionsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeConfigurationOptionsRequest), arg0)
 }
 
-// DescribeConfigurationOptionsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeConfigurationOptionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationOptionsOutput, error) {
+// DescribeConfigurationOptionsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeConfigurationOptionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +978,14 @@ func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsWithContext(arg0 c
 	return ret0, ret1
 }
 
-// DescribeConfigurationOptionsWithContext indicates an expected call of DescribeConfigurationOptionsWithContext.
+// DescribeConfigurationOptionsWithContext indicates an expected call of DescribeConfigurationOptionsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationOptionsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeConfigurationOptionsWithContext), varargs...)
 }
 
-// DescribeConfigurationSettings mocks base method.
+// DescribeConfigurationSettings mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettings(arg0 *elasticbeanstalk.DescribeConfigurationSettingsInput) (*elasticbeanstalk.DescribeConfigurationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationSettings", arg0)
@@ -1045,13 +994,13 @@ func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettings(arg0 *elasticbea
 	return ret0, ret1
 }
 
-// DescribeConfigurationSettings indicates an expected call of DescribeConfigurationSettings.
+// DescribeConfigurationSettings indicates an expected call of DescribeConfigurationSettings
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationSettings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationSettings", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeConfigurationSettings), arg0)
 }
 
-// DescribeConfigurationSettingsRequest mocks base method.
+// DescribeConfigurationSettingsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsRequest(arg0 *elasticbeanstalk.DescribeConfigurationSettingsInput) (*request.Request, *elasticbeanstalk.DescribeConfigurationSettingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationSettingsRequest", arg0)
@@ -1060,14 +1009,14 @@ func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsRequest(arg0 *ela
 	return ret0, ret1
 }
 
-// DescribeConfigurationSettingsRequest indicates an expected call of DescribeConfigurationSettingsRequest.
+// DescribeConfigurationSettingsRequest indicates an expected call of DescribeConfigurationSettingsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationSettingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationSettingsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeConfigurationSettingsRequest), arg0)
 }
 
-// DescribeConfigurationSettingsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationSettingsOutput, error) {
+// DescribeConfigurationSettingsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,14 +1028,14 @@ func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsWithContext(arg0 
 	return ret0, ret1
 }
 
-// DescribeConfigurationSettingsWithContext indicates an expected call of DescribeConfigurationSettingsWithContext.
+// DescribeConfigurationSettingsWithContext indicates an expected call of DescribeConfigurationSettingsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationSettingsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeConfigurationSettingsWithContext), varargs...)
 }
 
-// DescribeEnvironmentHealth mocks base method.
+// DescribeEnvironmentHealth mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealth(arg0 *elasticbeanstalk.DescribeEnvironmentHealthInput) (*elasticbeanstalk.DescribeEnvironmentHealthOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentHealth", arg0)
@@ -1095,13 +1044,13 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealth(arg0 *elasticbeansta
 	return ret0, ret1
 }
 
-// DescribeEnvironmentHealth indicates an expected call of DescribeEnvironmentHealth.
+// DescribeEnvironmentHealth indicates an expected call of DescribeEnvironmentHealth
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentHealth(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentHealth", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentHealth), arg0)
 }
 
-// DescribeEnvironmentHealthRequest mocks base method.
+// DescribeEnvironmentHealthRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthRequest(arg0 *elasticbeanstalk.DescribeEnvironmentHealthInput) (*request.Request, *elasticbeanstalk.DescribeEnvironmentHealthOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentHealthRequest", arg0)
@@ -1110,14 +1059,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthRequest(arg0 *elastic
 	return ret0, ret1
 }
 
-// DescribeEnvironmentHealthRequest indicates an expected call of DescribeEnvironmentHealthRequest.
+// DescribeEnvironmentHealthRequest indicates an expected call of DescribeEnvironmentHealthRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentHealthRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentHealthRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentHealthRequest), arg0)
 }
 
-// DescribeEnvironmentHealthWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentHealthOutput, error) {
+// DescribeEnvironmentHealthWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentHealthOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1129,14 +1078,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthWithContext(arg0 cont
 	return ret0, ret1
 }
 
-// DescribeEnvironmentHealthWithContext indicates an expected call of DescribeEnvironmentHealthWithContext.
+// DescribeEnvironmentHealthWithContext indicates an expected call of DescribeEnvironmentHealthWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentHealthWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentHealthWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentHealthWithContext), varargs...)
 }
 
-// DescribeEnvironmentManagedActionHistory mocks base method.
+// DescribeEnvironmentManagedActionHistory mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistory(arg0 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput) (*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentManagedActionHistory", arg0)
@@ -1145,46 +1094,13 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistory(arg0 *
 	return ret0, ret1
 }
 
-// DescribeEnvironmentManagedActionHistory indicates an expected call of DescribeEnvironmentManagedActionHistory.
+// DescribeEnvironmentManagedActionHistory indicates an expected call of DescribeEnvironmentManagedActionHistory
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionHistory(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionHistory", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionHistory), arg0)
 }
 
-// DescribeEnvironmentManagedActionHistoryPages mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryPages(arg0 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput, arg1 func(*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeEnvironmentManagedActionHistoryPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// DescribeEnvironmentManagedActionHistoryPages indicates an expected call of DescribeEnvironmentManagedActionHistoryPages.
-func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionHistoryPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionHistoryPages", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionHistoryPages), arg0, arg1)
-}
-
-// DescribeEnvironmentManagedActionHistoryPagesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryPagesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput, arg2 func(*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeEnvironmentManagedActionHistoryPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// DescribeEnvironmentManagedActionHistoryPagesWithContext indicates an expected call of DescribeEnvironmentManagedActionHistoryPagesWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionHistoryPagesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionHistoryPagesWithContext), varargs...)
-}
-
-// DescribeEnvironmentManagedActionHistoryRequest mocks base method.
+// DescribeEnvironmentManagedActionHistoryRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryRequest(arg0 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput) (*request.Request, *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentManagedActionHistoryRequest", arg0)
@@ -1193,14 +1109,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryRequest
 	return ret0, ret1
 }
 
-// DescribeEnvironmentManagedActionHistoryRequest indicates an expected call of DescribeEnvironmentManagedActionHistoryRequest.
+// DescribeEnvironmentManagedActionHistoryRequest indicates an expected call of DescribeEnvironmentManagedActionHistoryRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionHistoryRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionHistoryRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionHistoryRequest), arg0)
 }
 
-// DescribeEnvironmentManagedActionHistoryWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, error) {
+// DescribeEnvironmentManagedActionHistoryWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1212,14 +1128,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryWithCon
 	return ret0, ret1
 }
 
-// DescribeEnvironmentManagedActionHistoryWithContext indicates an expected call of DescribeEnvironmentManagedActionHistoryWithContext.
+// DescribeEnvironmentManagedActionHistoryWithContext indicates an expected call of DescribeEnvironmentManagedActionHistoryWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionHistoryWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionHistoryWithContext), varargs...)
 }
 
-// DescribeEnvironmentManagedActions mocks base method.
+// DescribeEnvironmentManagedActions mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActions(arg0 *elasticbeanstalk.DescribeEnvironmentManagedActionsInput) (*elasticbeanstalk.DescribeEnvironmentManagedActionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentManagedActions", arg0)
@@ -1228,13 +1144,13 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActions(arg0 *elasti
 	return ret0, ret1
 }
 
-// DescribeEnvironmentManagedActions indicates an expected call of DescribeEnvironmentManagedActions.
+// DescribeEnvironmentManagedActions indicates an expected call of DescribeEnvironmentManagedActions
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActions", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActions), arg0)
 }
 
-// DescribeEnvironmentManagedActionsRequest mocks base method.
+// DescribeEnvironmentManagedActionsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsRequest(arg0 *elasticbeanstalk.DescribeEnvironmentManagedActionsInput) (*request.Request, *elasticbeanstalk.DescribeEnvironmentManagedActionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentManagedActionsRequest", arg0)
@@ -1243,14 +1159,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsRequest(arg0 
 	return ret0, ret1
 }
 
-// DescribeEnvironmentManagedActionsRequest indicates an expected call of DescribeEnvironmentManagedActionsRequest.
+// DescribeEnvironmentManagedActionsRequest indicates an expected call of DescribeEnvironmentManagedActionsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionsRequest), arg0)
 }
 
-// DescribeEnvironmentManagedActionsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionsOutput, error) {
+// DescribeEnvironmentManagedActionsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1262,14 +1178,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsWithContext(a
 	return ret0, ret1
 }
 
-// DescribeEnvironmentManagedActionsWithContext indicates an expected call of DescribeEnvironmentManagedActionsWithContext.
+// DescribeEnvironmentManagedActionsWithContext indicates an expected call of DescribeEnvironmentManagedActionsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentManagedActionsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentManagedActionsWithContext), varargs...)
 }
 
-// DescribeEnvironmentResources mocks base method.
+// DescribeEnvironmentResources mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResources(arg0 *elasticbeanstalk.DescribeEnvironmentResourcesInput) (*elasticbeanstalk.DescribeEnvironmentResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentResources", arg0)
@@ -1278,13 +1194,13 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResources(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// DescribeEnvironmentResources indicates an expected call of DescribeEnvironmentResources.
+// DescribeEnvironmentResources indicates an expected call of DescribeEnvironmentResources
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentResources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentResources", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentResources), arg0)
 }
 
-// DescribeEnvironmentResourcesRequest mocks base method.
+// DescribeEnvironmentResourcesRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesRequest(arg0 *elasticbeanstalk.DescribeEnvironmentResourcesInput) (*request.Request, *elasticbeanstalk.DescribeEnvironmentResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentResourcesRequest", arg0)
@@ -1293,14 +1209,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesRequest(arg0 *elas
 	return ret0, ret1
 }
 
-// DescribeEnvironmentResourcesRequest indicates an expected call of DescribeEnvironmentResourcesRequest.
+// DescribeEnvironmentResourcesRequest indicates an expected call of DescribeEnvironmentResourcesRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentResourcesRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentResourcesRequest), arg0)
 }
 
-// DescribeEnvironmentResourcesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentResourcesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentResourcesOutput, error) {
+// DescribeEnvironmentResourcesWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentResourcesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1312,14 +1228,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesWithContext(arg0 c
 	return ret0, ret1
 }
 
-// DescribeEnvironmentResourcesWithContext indicates an expected call of DescribeEnvironmentResourcesWithContext.
+// DescribeEnvironmentResourcesWithContext indicates an expected call of DescribeEnvironmentResourcesWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentResourcesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentResourcesWithContext), varargs...)
 }
 
-// DescribeEnvironments mocks base method.
+// DescribeEnvironments mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironments(arg0 *elasticbeanstalk.DescribeEnvironmentsInput) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironments", arg0)
@@ -1328,13 +1244,13 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironments(arg0 *elasticbeanstalk.De
 	return ret0, ret1
 }
 
-// DescribeEnvironments indicates an expected call of DescribeEnvironments.
+// DescribeEnvironments indicates an expected call of DescribeEnvironments
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironments", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironments), arg0)
 }
 
-// DescribeEnvironmentsRequest mocks base method.
+// DescribeEnvironmentsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsRequest(arg0 *elasticbeanstalk.DescribeEnvironmentsInput) (*request.Request, *elasticbeanstalk.EnvironmentDescriptionsMessage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentsRequest", arg0)
@@ -1343,14 +1259,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsRequest(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// DescribeEnvironmentsRequest indicates an expected call of DescribeEnvironmentsRequest.
+// DescribeEnvironmentsRequest indicates an expected call of DescribeEnvironmentsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentsRequest), arg0)
 }
 
-// DescribeEnvironmentsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
+// DescribeEnvironmentsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1362,14 +1278,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DescribeEnvironmentsWithContext indicates an expected call of DescribeEnvironmentsWithContext.
+// DescribeEnvironmentsWithContext indicates an expected call of DescribeEnvironmentsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEnvironmentsWithContext), varargs...)
 }
 
-// DescribeEvents mocks base method.
+// DescribeEvents mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEvents(arg0 *elasticbeanstalk.DescribeEventsInput) (*elasticbeanstalk.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEvents", arg0)
@@ -1378,13 +1294,13 @@ func (m *MockElasticBeanstalkAPI) DescribeEvents(arg0 *elasticbeanstalk.Describe
 	return ret0, ret1
 }
 
-// DescribeEvents indicates an expected call of DescribeEvents.
+// DescribeEvents indicates an expected call of DescribeEvents
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvents", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEvents), arg0)
 }
 
-// DescribeEventsPages mocks base method.
+// DescribeEventsPages mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEventsPages(arg0 *elasticbeanstalk.DescribeEventsInput, arg1 func(*elasticbeanstalk.DescribeEventsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEventsPages", arg0, arg1)
@@ -1392,14 +1308,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEventsPages(arg0 *elasticbeanstalk.Des
 	return ret0
 }
 
-// DescribeEventsPages indicates an expected call of DescribeEventsPages.
+// DescribeEventsPages indicates an expected call of DescribeEventsPages
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsPages", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEventsPages), arg0, arg1)
 }
 
-// DescribeEventsPagesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 func(*elasticbeanstalk.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeEventsPagesWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 func(*elasticbeanstalk.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1410,14 +1326,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEventsPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// DescribeEventsPagesWithContext indicates an expected call of DescribeEventsPagesWithContext.
+// DescribeEventsPagesWithContext indicates an expected call of DescribeEventsPagesWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsPagesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEventsPagesWithContext), varargs...)
 }
 
-// DescribeEventsRequest mocks base method.
+// DescribeEventsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeEventsRequest(arg0 *elasticbeanstalk.DescribeEventsInput) (*request.Request, *elasticbeanstalk.DescribeEventsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEventsRequest", arg0)
@@ -1426,14 +1342,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEventsRequest(arg0 *elasticbeanstalk.D
 	return ret0, ret1
 }
 
-// DescribeEventsRequest indicates an expected call of DescribeEventsRequest.
+// DescribeEventsRequest indicates an expected call of DescribeEventsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEventsRequest), arg0)
 }
 
-// DescribeEventsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEventsOutput, error) {
+// DescribeEventsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1445,14 +1361,14 @@ func (m *MockElasticBeanstalkAPI) DescribeEventsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DescribeEventsWithContext indicates an expected call of DescribeEventsWithContext.
+// DescribeEventsWithContext indicates an expected call of DescribeEventsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeEventsWithContext), varargs...)
 }
 
-// DescribeInstancesHealth mocks base method.
+// DescribeInstancesHealth mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeInstancesHealth(arg0 *elasticbeanstalk.DescribeInstancesHealthInput) (*elasticbeanstalk.DescribeInstancesHealthOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeInstancesHealth", arg0)
@@ -1461,13 +1377,13 @@ func (m *MockElasticBeanstalkAPI) DescribeInstancesHealth(arg0 *elasticbeanstalk
 	return ret0, ret1
 }
 
-// DescribeInstancesHealth indicates an expected call of DescribeInstancesHealth.
+// DescribeInstancesHealth indicates an expected call of DescribeInstancesHealth
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeInstancesHealth(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstancesHealth", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeInstancesHealth), arg0)
 }
 
-// DescribeInstancesHealthRequest mocks base method.
+// DescribeInstancesHealthRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthRequest(arg0 *elasticbeanstalk.DescribeInstancesHealthInput) (*request.Request, *elasticbeanstalk.DescribeInstancesHealthOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeInstancesHealthRequest", arg0)
@@ -1476,14 +1392,14 @@ func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthRequest(arg0 *elasticbe
 	return ret0, ret1
 }
 
-// DescribeInstancesHealthRequest indicates an expected call of DescribeInstancesHealthRequest.
+// DescribeInstancesHealthRequest indicates an expected call of DescribeInstancesHealthRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeInstancesHealthRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstancesHealthRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeInstancesHealthRequest), arg0)
 }
 
-// DescribeInstancesHealthWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeInstancesHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeInstancesHealthOutput, error) {
+// DescribeInstancesHealthWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeInstancesHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeInstancesHealthOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1495,14 +1411,14 @@ func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// DescribeInstancesHealthWithContext indicates an expected call of DescribeInstancesHealthWithContext.
+// DescribeInstancesHealthWithContext indicates an expected call of DescribeInstancesHealthWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeInstancesHealthWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstancesHealthWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribeInstancesHealthWithContext), varargs...)
 }
 
-// DescribePlatformVersion mocks base method.
+// DescribePlatformVersion mocks base method
 func (m *MockElasticBeanstalkAPI) DescribePlatformVersion(arg0 *elasticbeanstalk.DescribePlatformVersionInput) (*elasticbeanstalk.DescribePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribePlatformVersion", arg0)
@@ -1511,13 +1427,13 @@ func (m *MockElasticBeanstalkAPI) DescribePlatformVersion(arg0 *elasticbeanstalk
 	return ret0, ret1
 }
 
-// DescribePlatformVersion indicates an expected call of DescribePlatformVersion.
+// DescribePlatformVersion indicates an expected call of DescribePlatformVersion
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribePlatformVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePlatformVersion", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribePlatformVersion), arg0)
 }
 
-// DescribePlatformVersionRequest mocks base method.
+// DescribePlatformVersionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) DescribePlatformVersionRequest(arg0 *elasticbeanstalk.DescribePlatformVersionInput) (*request.Request, *elasticbeanstalk.DescribePlatformVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribePlatformVersionRequest", arg0)
@@ -1526,14 +1442,14 @@ func (m *MockElasticBeanstalkAPI) DescribePlatformVersionRequest(arg0 *elasticbe
 	return ret0, ret1
 }
 
-// DescribePlatformVersionRequest indicates an expected call of DescribePlatformVersionRequest.
+// DescribePlatformVersionRequest indicates an expected call of DescribePlatformVersionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribePlatformVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePlatformVersionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribePlatformVersionRequest), arg0)
 }
 
-// DescribePlatformVersionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DescribePlatformVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DescribePlatformVersionOutput, error) {
+// DescribePlatformVersionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) DescribePlatformVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DescribePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1545,64 +1461,14 @@ func (m *MockElasticBeanstalkAPI) DescribePlatformVersionWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// DescribePlatformVersionWithContext indicates an expected call of DescribePlatformVersionWithContext.
+// DescribePlatformVersionWithContext indicates an expected call of DescribePlatformVersionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) DescribePlatformVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePlatformVersionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DescribePlatformVersionWithContext), varargs...)
 }
 
-// DisassociateEnvironmentOperationsRole mocks base method.
-func (m *MockElasticBeanstalkAPI) DisassociateEnvironmentOperationsRole(arg0 *elasticbeanstalk.DisassociateEnvironmentOperationsRoleInput) (*elasticbeanstalk.DisassociateEnvironmentOperationsRoleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateEnvironmentOperationsRole", arg0)
-	ret0, _ := ret[0].(*elasticbeanstalk.DisassociateEnvironmentOperationsRoleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateEnvironmentOperationsRole indicates an expected call of DisassociateEnvironmentOperationsRole.
-func (mr *MockElasticBeanstalkAPIMockRecorder) DisassociateEnvironmentOperationsRole(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateEnvironmentOperationsRole", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DisassociateEnvironmentOperationsRole), arg0)
-}
-
-// DisassociateEnvironmentOperationsRoleRequest mocks base method.
-func (m *MockElasticBeanstalkAPI) DisassociateEnvironmentOperationsRoleRequest(arg0 *elasticbeanstalk.DisassociateEnvironmentOperationsRoleInput) (*request.Request, *elasticbeanstalk.DisassociateEnvironmentOperationsRoleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateEnvironmentOperationsRoleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*elasticbeanstalk.DisassociateEnvironmentOperationsRoleOutput)
-	return ret0, ret1
-}
-
-// DisassociateEnvironmentOperationsRoleRequest indicates an expected call of DisassociateEnvironmentOperationsRoleRequest.
-func (mr *MockElasticBeanstalkAPIMockRecorder) DisassociateEnvironmentOperationsRoleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateEnvironmentOperationsRoleRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DisassociateEnvironmentOperationsRoleRequest), arg0)
-}
-
-// DisassociateEnvironmentOperationsRoleWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) DisassociateEnvironmentOperationsRoleWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DisassociateEnvironmentOperationsRoleInput, arg2 ...request.Option) (*elasticbeanstalk.DisassociateEnvironmentOperationsRoleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateEnvironmentOperationsRoleWithContext", varargs...)
-	ret0, _ := ret[0].(*elasticbeanstalk.DisassociateEnvironmentOperationsRoleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateEnvironmentOperationsRoleWithContext indicates an expected call of DisassociateEnvironmentOperationsRoleWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) DisassociateEnvironmentOperationsRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateEnvironmentOperationsRoleWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).DisassociateEnvironmentOperationsRoleWithContext), varargs...)
-}
-
-// ListAvailableSolutionStacks mocks base method.
+// ListAvailableSolutionStacks mocks base method
 func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacks(arg0 *elasticbeanstalk.ListAvailableSolutionStacksInput) (*elasticbeanstalk.ListAvailableSolutionStacksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAvailableSolutionStacks", arg0)
@@ -1611,13 +1477,13 @@ func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacks(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// ListAvailableSolutionStacks indicates an expected call of ListAvailableSolutionStacks.
+// ListAvailableSolutionStacks indicates an expected call of ListAvailableSolutionStacks
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListAvailableSolutionStacks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableSolutionStacks", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListAvailableSolutionStacks), arg0)
 }
 
-// ListAvailableSolutionStacksRequest mocks base method.
+// ListAvailableSolutionStacksRequest mocks base method
 func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksRequest(arg0 *elasticbeanstalk.ListAvailableSolutionStacksInput) (*request.Request, *elasticbeanstalk.ListAvailableSolutionStacksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAvailableSolutionStacksRequest", arg0)
@@ -1626,14 +1492,14 @@ func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksRequest(arg0 *elast
 	return ret0, ret1
 }
 
-// ListAvailableSolutionStacksRequest indicates an expected call of ListAvailableSolutionStacksRequest.
+// ListAvailableSolutionStacksRequest indicates an expected call of ListAvailableSolutionStacksRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListAvailableSolutionStacksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableSolutionStacksRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListAvailableSolutionStacksRequest), arg0)
 }
 
-// ListAvailableSolutionStacksWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListAvailableSolutionStacksInput, arg2 ...request.Option) (*elasticbeanstalk.ListAvailableSolutionStacksOutput, error) {
+// ListAvailableSolutionStacksWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ListAvailableSolutionStacksInput, arg2 ...request.Option) (*elasticbeanstalk.ListAvailableSolutionStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1645,97 +1511,14 @@ func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksWithContext(arg0 co
 	return ret0, ret1
 }
 
-// ListAvailableSolutionStacksWithContext indicates an expected call of ListAvailableSolutionStacksWithContext.
+// ListAvailableSolutionStacksWithContext indicates an expected call of ListAvailableSolutionStacksWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListAvailableSolutionStacksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableSolutionStacksWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListAvailableSolutionStacksWithContext), varargs...)
 }
 
-// ListPlatformBranches mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformBranches(arg0 *elasticbeanstalk.ListPlatformBranchesInput) (*elasticbeanstalk.ListPlatformBranchesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPlatformBranches", arg0)
-	ret0, _ := ret[0].(*elasticbeanstalk.ListPlatformBranchesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListPlatformBranches indicates an expected call of ListPlatformBranches.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranches(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranches", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranches), arg0)
-}
-
-// ListPlatformBranchesPages mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformBranchesPages(arg0 *elasticbeanstalk.ListPlatformBranchesInput, arg1 func(*elasticbeanstalk.ListPlatformBranchesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPlatformBranchesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPlatformBranchesPages indicates an expected call of ListPlatformBranchesPages.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesPages", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesPages), arg0, arg1)
-}
-
-// ListPlatformBranchesPagesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformBranchesPagesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformBranchesInput, arg2 func(*elasticbeanstalk.ListPlatformBranchesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPlatformBranchesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPlatformBranchesPagesWithContext indicates an expected call of ListPlatformBranchesPagesWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesPagesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesPagesWithContext), varargs...)
-}
-
-// ListPlatformBranchesRequest mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformBranchesRequest(arg0 *elasticbeanstalk.ListPlatformBranchesInput) (*request.Request, *elasticbeanstalk.ListPlatformBranchesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPlatformBranchesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*elasticbeanstalk.ListPlatformBranchesOutput)
-	return ret0, ret1
-}
-
-// ListPlatformBranchesRequest indicates an expected call of ListPlatformBranchesRequest.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesRequest), arg0)
-}
-
-// ListPlatformBranchesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformBranchesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformBranchesInput, arg2 ...request.Option) (*elasticbeanstalk.ListPlatformBranchesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPlatformBranchesWithContext", varargs...)
-	ret0, _ := ret[0].(*elasticbeanstalk.ListPlatformBranchesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListPlatformBranchesWithContext indicates an expected call of ListPlatformBranchesWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesWithContext), varargs...)
-}
-
-// ListPlatformVersions mocks base method.
+// ListPlatformVersions mocks base method
 func (m *MockElasticBeanstalkAPI) ListPlatformVersions(arg0 *elasticbeanstalk.ListPlatformVersionsInput) (*elasticbeanstalk.ListPlatformVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPlatformVersions", arg0)
@@ -1744,46 +1527,13 @@ func (m *MockElasticBeanstalkAPI) ListPlatformVersions(arg0 *elasticbeanstalk.Li
 	return ret0, ret1
 }
 
-// ListPlatformVersions indicates an expected call of ListPlatformVersions.
+// ListPlatformVersions indicates an expected call of ListPlatformVersions
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformVersions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformVersions", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformVersions), arg0)
 }
 
-// ListPlatformVersionsPages mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformVersionsPages(arg0 *elasticbeanstalk.ListPlatformVersionsInput, arg1 func(*elasticbeanstalk.ListPlatformVersionsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPlatformVersionsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPlatformVersionsPages indicates an expected call of ListPlatformVersionsPages.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformVersionsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformVersionsPages", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformVersionsPages), arg0, arg1)
-}
-
-// ListPlatformVersionsPagesWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformVersionsPagesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformVersionsInput, arg2 func(*elasticbeanstalk.ListPlatformVersionsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPlatformVersionsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPlatformVersionsPagesWithContext indicates an expected call of ListPlatformVersionsPagesWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformVersionsPagesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformVersionsPagesWithContext), varargs...)
-}
-
-// ListPlatformVersionsRequest mocks base method.
+// ListPlatformVersionsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) ListPlatformVersionsRequest(arg0 *elasticbeanstalk.ListPlatformVersionsInput) (*request.Request, *elasticbeanstalk.ListPlatformVersionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPlatformVersionsRequest", arg0)
@@ -1792,14 +1542,14 @@ func (m *MockElasticBeanstalkAPI) ListPlatformVersionsRequest(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// ListPlatformVersionsRequest indicates an expected call of ListPlatformVersionsRequest.
+// ListPlatformVersionsRequest indicates an expected call of ListPlatformVersionsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformVersionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformVersionsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformVersionsRequest), arg0)
 }
 
-// ListPlatformVersionsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ListPlatformVersionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.ListPlatformVersionsOutput, error) {
+// ListPlatformVersionsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ListPlatformVersionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ListPlatformVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.ListPlatformVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1811,14 +1561,14 @@ func (m *MockElasticBeanstalkAPI) ListPlatformVersionsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// ListPlatformVersionsWithContext indicates an expected call of ListPlatformVersionsWithContext.
+// ListPlatformVersionsWithContext indicates an expected call of ListPlatformVersionsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformVersionsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformVersionsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
+// ListTagsForResource mocks base method
 func (m *MockElasticBeanstalkAPI) ListTagsForResource(arg0 *elasticbeanstalk.ListTagsForResourceInput) (*elasticbeanstalk.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
@@ -1827,13 +1577,13 @@ func (m *MockElasticBeanstalkAPI) ListTagsForResource(arg0 *elasticbeanstalk.Lis
 	return ret0, ret1
 }
 
-// ListTagsForResource indicates an expected call of ListTagsForResource.
+// ListTagsForResource indicates an expected call of ListTagsForResource
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListTagsForResource), arg0)
 }
 
-// ListTagsForResourceRequest mocks base method.
+// ListTagsForResourceRequest mocks base method
 func (m *MockElasticBeanstalkAPI) ListTagsForResourceRequest(arg0 *elasticbeanstalk.ListTagsForResourceInput) (*request.Request, *elasticbeanstalk.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
@@ -1842,14 +1592,14 @@ func (m *MockElasticBeanstalkAPI) ListTagsForResourceRequest(arg0 *elasticbeanst
 	return ret0, ret1
 }
 
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListTagsForResourceRequest), arg0)
 }
 
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.ListTagsForResourceOutput, error) {
+// ListTagsForResourceWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ListTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1861,14 +1611,14 @@ func (m *MockElasticBeanstalkAPI) ListTagsForResourceWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
-// RebuildEnvironment mocks base method.
+// RebuildEnvironment mocks base method
 func (m *MockElasticBeanstalkAPI) RebuildEnvironment(arg0 *elasticbeanstalk.RebuildEnvironmentInput) (*elasticbeanstalk.RebuildEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RebuildEnvironment", arg0)
@@ -1877,13 +1627,13 @@ func (m *MockElasticBeanstalkAPI) RebuildEnvironment(arg0 *elasticbeanstalk.Rebu
 	return ret0, ret1
 }
 
-// RebuildEnvironment indicates an expected call of RebuildEnvironment.
+// RebuildEnvironment indicates an expected call of RebuildEnvironment
 func (mr *MockElasticBeanstalkAPIMockRecorder) RebuildEnvironment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebuildEnvironment", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RebuildEnvironment), arg0)
 }
 
-// RebuildEnvironmentRequest mocks base method.
+// RebuildEnvironmentRequest mocks base method
 func (m *MockElasticBeanstalkAPI) RebuildEnvironmentRequest(arg0 *elasticbeanstalk.RebuildEnvironmentInput) (*request.Request, *elasticbeanstalk.RebuildEnvironmentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RebuildEnvironmentRequest", arg0)
@@ -1892,14 +1642,14 @@ func (m *MockElasticBeanstalkAPI) RebuildEnvironmentRequest(arg0 *elasticbeansta
 	return ret0, ret1
 }
 
-// RebuildEnvironmentRequest indicates an expected call of RebuildEnvironmentRequest.
+// RebuildEnvironmentRequest indicates an expected call of RebuildEnvironmentRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) RebuildEnvironmentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebuildEnvironmentRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RebuildEnvironmentRequest), arg0)
 }
 
-// RebuildEnvironmentWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) RebuildEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RebuildEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.RebuildEnvironmentOutput, error) {
+// RebuildEnvironmentWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) RebuildEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RebuildEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.RebuildEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1911,14 +1661,14 @@ func (m *MockElasticBeanstalkAPI) RebuildEnvironmentWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// RebuildEnvironmentWithContext indicates an expected call of RebuildEnvironmentWithContext.
+// RebuildEnvironmentWithContext indicates an expected call of RebuildEnvironmentWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) RebuildEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebuildEnvironmentWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RebuildEnvironmentWithContext), varargs...)
 }
 
-// RequestEnvironmentInfo mocks base method.
+// RequestEnvironmentInfo mocks base method
 func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfo(arg0 *elasticbeanstalk.RequestEnvironmentInfoInput) (*elasticbeanstalk.RequestEnvironmentInfoOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RequestEnvironmentInfo", arg0)
@@ -1927,13 +1677,13 @@ func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfo(arg0 *elasticbeanstalk.
 	return ret0, ret1
 }
 
-// RequestEnvironmentInfo indicates an expected call of RequestEnvironmentInfo.
+// RequestEnvironmentInfo indicates an expected call of RequestEnvironmentInfo
 func (mr *MockElasticBeanstalkAPIMockRecorder) RequestEnvironmentInfo(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RequestEnvironmentInfo", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RequestEnvironmentInfo), arg0)
 }
 
-// RequestEnvironmentInfoRequest mocks base method.
+// RequestEnvironmentInfoRequest mocks base method
 func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoRequest(arg0 *elasticbeanstalk.RequestEnvironmentInfoInput) (*request.Request, *elasticbeanstalk.RequestEnvironmentInfoOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RequestEnvironmentInfoRequest", arg0)
@@ -1942,14 +1692,14 @@ func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoRequest(arg0 *elasticbea
 	return ret0, ret1
 }
 
-// RequestEnvironmentInfoRequest indicates an expected call of RequestEnvironmentInfoRequest.
+// RequestEnvironmentInfoRequest indicates an expected call of RequestEnvironmentInfoRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) RequestEnvironmentInfoRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RequestEnvironmentInfoRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RequestEnvironmentInfoRequest), arg0)
 }
 
-// RequestEnvironmentInfoWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RequestEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RequestEnvironmentInfoOutput, error) {
+// RequestEnvironmentInfoWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RequestEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RequestEnvironmentInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1961,14 +1711,14 @@ func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoWithContext(arg0 context
 	return ret0, ret1
 }
 
-// RequestEnvironmentInfoWithContext indicates an expected call of RequestEnvironmentInfoWithContext.
+// RequestEnvironmentInfoWithContext indicates an expected call of RequestEnvironmentInfoWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) RequestEnvironmentInfoWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RequestEnvironmentInfoWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RequestEnvironmentInfoWithContext), varargs...)
 }
 
-// RestartAppServer mocks base method.
+// RestartAppServer mocks base method
 func (m *MockElasticBeanstalkAPI) RestartAppServer(arg0 *elasticbeanstalk.RestartAppServerInput) (*elasticbeanstalk.RestartAppServerOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RestartAppServer", arg0)
@@ -1977,13 +1727,13 @@ func (m *MockElasticBeanstalkAPI) RestartAppServer(arg0 *elasticbeanstalk.Restar
 	return ret0, ret1
 }
 
-// RestartAppServer indicates an expected call of RestartAppServer.
+// RestartAppServer indicates an expected call of RestartAppServer
 func (mr *MockElasticBeanstalkAPIMockRecorder) RestartAppServer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestartAppServer", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RestartAppServer), arg0)
 }
 
-// RestartAppServerRequest mocks base method.
+// RestartAppServerRequest mocks base method
 func (m *MockElasticBeanstalkAPI) RestartAppServerRequest(arg0 *elasticbeanstalk.RestartAppServerInput) (*request.Request, *elasticbeanstalk.RestartAppServerOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RestartAppServerRequest", arg0)
@@ -1992,14 +1742,14 @@ func (m *MockElasticBeanstalkAPI) RestartAppServerRequest(arg0 *elasticbeanstalk
 	return ret0, ret1
 }
 
-// RestartAppServerRequest indicates an expected call of RestartAppServerRequest.
+// RestartAppServerRequest indicates an expected call of RestartAppServerRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) RestartAppServerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestartAppServerRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RestartAppServerRequest), arg0)
 }
 
-// RestartAppServerWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) RestartAppServerWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RestartAppServerInput, arg2 ...request.Option) (*elasticbeanstalk.RestartAppServerOutput, error) {
+// RestartAppServerWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) RestartAppServerWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RestartAppServerInput, arg2 ...request.Option) (*elasticbeanstalk.RestartAppServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2011,14 +1761,14 @@ func (m *MockElasticBeanstalkAPI) RestartAppServerWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// RestartAppServerWithContext indicates an expected call of RestartAppServerWithContext.
+// RestartAppServerWithContext indicates an expected call of RestartAppServerWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) RestartAppServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestartAppServerWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RestartAppServerWithContext), varargs...)
 }
 
-// RetrieveEnvironmentInfo mocks base method.
+// RetrieveEnvironmentInfo mocks base method
 func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfo(arg0 *elasticbeanstalk.RetrieveEnvironmentInfoInput) (*elasticbeanstalk.RetrieveEnvironmentInfoOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveEnvironmentInfo", arg0)
@@ -2027,13 +1777,13 @@ func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfo(arg0 *elasticbeanstalk
 	return ret0, ret1
 }
 
-// RetrieveEnvironmentInfo indicates an expected call of RetrieveEnvironmentInfo.
+// RetrieveEnvironmentInfo indicates an expected call of RetrieveEnvironmentInfo
 func (mr *MockElasticBeanstalkAPIMockRecorder) RetrieveEnvironmentInfo(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveEnvironmentInfo", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RetrieveEnvironmentInfo), arg0)
 }
 
-// RetrieveEnvironmentInfoRequest mocks base method.
+// RetrieveEnvironmentInfoRequest mocks base method
 func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoRequest(arg0 *elasticbeanstalk.RetrieveEnvironmentInfoInput) (*request.Request, *elasticbeanstalk.RetrieveEnvironmentInfoOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveEnvironmentInfoRequest", arg0)
@@ -2042,14 +1792,14 @@ func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoRequest(arg0 *elasticbe
 	return ret0, ret1
 }
 
-// RetrieveEnvironmentInfoRequest indicates an expected call of RetrieveEnvironmentInfoRequest.
+// RetrieveEnvironmentInfoRequest indicates an expected call of RetrieveEnvironmentInfoRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) RetrieveEnvironmentInfoRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveEnvironmentInfoRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RetrieveEnvironmentInfoRequest), arg0)
 }
 
-// RetrieveEnvironmentInfoWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RetrieveEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RetrieveEnvironmentInfoOutput, error) {
+// RetrieveEnvironmentInfoWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RetrieveEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RetrieveEnvironmentInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2061,14 +1811,14 @@ func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// RetrieveEnvironmentInfoWithContext indicates an expected call of RetrieveEnvironmentInfoWithContext.
+// RetrieveEnvironmentInfoWithContext indicates an expected call of RetrieveEnvironmentInfoWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) RetrieveEnvironmentInfoWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveEnvironmentInfoWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).RetrieveEnvironmentInfoWithContext), varargs...)
 }
 
-// SwapEnvironmentCNAMEs mocks base method.
+// SwapEnvironmentCNAMEs mocks base method
 func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEs(arg0 *elasticbeanstalk.SwapEnvironmentCNAMEsInput) (*elasticbeanstalk.SwapEnvironmentCNAMEsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SwapEnvironmentCNAMEs", arg0)
@@ -2077,13 +1827,13 @@ func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEs(arg0 *elasticbeanstalk.S
 	return ret0, ret1
 }
 
-// SwapEnvironmentCNAMEs indicates an expected call of SwapEnvironmentCNAMEs.
+// SwapEnvironmentCNAMEs indicates an expected call of SwapEnvironmentCNAMEs
 func (mr *MockElasticBeanstalkAPIMockRecorder) SwapEnvironmentCNAMEs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SwapEnvironmentCNAMEs", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).SwapEnvironmentCNAMEs), arg0)
 }
 
-// SwapEnvironmentCNAMEsRequest mocks base method.
+// SwapEnvironmentCNAMEsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsRequest(arg0 *elasticbeanstalk.SwapEnvironmentCNAMEsInput) (*request.Request, *elasticbeanstalk.SwapEnvironmentCNAMEsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SwapEnvironmentCNAMEsRequest", arg0)
@@ -2092,14 +1842,14 @@ func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsRequest(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// SwapEnvironmentCNAMEsRequest indicates an expected call of SwapEnvironmentCNAMEsRequest.
+// SwapEnvironmentCNAMEsRequest indicates an expected call of SwapEnvironmentCNAMEsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) SwapEnvironmentCNAMEsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SwapEnvironmentCNAMEsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).SwapEnvironmentCNAMEsRequest), arg0)
 }
 
-// SwapEnvironmentCNAMEsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.SwapEnvironmentCNAMEsInput, arg2 ...request.Option) (*elasticbeanstalk.SwapEnvironmentCNAMEsOutput, error) {
+// SwapEnvironmentCNAMEsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.SwapEnvironmentCNAMEsInput, arg2 ...request.Option) (*elasticbeanstalk.SwapEnvironmentCNAMEsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2111,14 +1861,14 @@ func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// SwapEnvironmentCNAMEsWithContext indicates an expected call of SwapEnvironmentCNAMEsWithContext.
+// SwapEnvironmentCNAMEsWithContext indicates an expected call of SwapEnvironmentCNAMEsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) SwapEnvironmentCNAMEsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SwapEnvironmentCNAMEsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).SwapEnvironmentCNAMEsWithContext), varargs...)
 }
 
-// TerminateEnvironment mocks base method.
+// TerminateEnvironment mocks base method
 func (m *MockElasticBeanstalkAPI) TerminateEnvironment(arg0 *elasticbeanstalk.TerminateEnvironmentInput) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TerminateEnvironment", arg0)
@@ -2127,13 +1877,13 @@ func (m *MockElasticBeanstalkAPI) TerminateEnvironment(arg0 *elasticbeanstalk.Te
 	return ret0, ret1
 }
 
-// TerminateEnvironment indicates an expected call of TerminateEnvironment.
+// TerminateEnvironment indicates an expected call of TerminateEnvironment
 func (mr *MockElasticBeanstalkAPIMockRecorder) TerminateEnvironment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateEnvironment", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).TerminateEnvironment), arg0)
 }
 
-// TerminateEnvironmentRequest mocks base method.
+// TerminateEnvironmentRequest mocks base method
 func (m *MockElasticBeanstalkAPI) TerminateEnvironmentRequest(arg0 *elasticbeanstalk.TerminateEnvironmentInput) (*request.Request, *elasticbeanstalk.EnvironmentDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TerminateEnvironmentRequest", arg0)
@@ -2142,14 +1892,14 @@ func (m *MockElasticBeanstalkAPI) TerminateEnvironmentRequest(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// TerminateEnvironmentRequest indicates an expected call of TerminateEnvironmentRequest.
+// TerminateEnvironmentRequest indicates an expected call of TerminateEnvironmentRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) TerminateEnvironmentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateEnvironmentRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).TerminateEnvironmentRequest), arg0)
 }
 
-// TerminateEnvironmentWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) TerminateEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.TerminateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
+// TerminateEnvironmentWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) TerminateEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.TerminateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2161,14 +1911,14 @@ func (m *MockElasticBeanstalkAPI) TerminateEnvironmentWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// TerminateEnvironmentWithContext indicates an expected call of TerminateEnvironmentWithContext.
+// TerminateEnvironmentWithContext indicates an expected call of TerminateEnvironmentWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) TerminateEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateEnvironmentWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).TerminateEnvironmentWithContext), varargs...)
 }
 
-// UpdateApplication mocks base method.
+// UpdateApplication mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateApplication(arg0 *elasticbeanstalk.UpdateApplicationInput) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplication", arg0)
@@ -2177,13 +1927,13 @@ func (m *MockElasticBeanstalkAPI) UpdateApplication(arg0 *elasticbeanstalk.Updat
 	return ret0, ret1
 }
 
-// UpdateApplication indicates an expected call of UpdateApplication.
+// UpdateApplication indicates an expected call of UpdateApplication
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplication(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplication", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplication), arg0)
 }
 
-// UpdateApplicationRequest mocks base method.
+// UpdateApplicationRequest mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateApplicationRequest(arg0 *elasticbeanstalk.UpdateApplicationInput) (*request.Request, *elasticbeanstalk.ApplicationDescriptionMessage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplicationRequest", arg0)
@@ -2192,13 +1942,13 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationRequest(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest.
+// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationRequest), arg0)
 }
 
-// UpdateApplicationResourceLifecycle mocks base method.
+// UpdateApplicationResourceLifecycle mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycle(arg0 *elasticbeanstalk.UpdateApplicationResourceLifecycleInput) (*elasticbeanstalk.UpdateApplicationResourceLifecycleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplicationResourceLifecycle", arg0)
@@ -2207,13 +1957,13 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycle(arg0 *elast
 	return ret0, ret1
 }
 
-// UpdateApplicationResourceLifecycle indicates an expected call of UpdateApplicationResourceLifecycle.
+// UpdateApplicationResourceLifecycle indicates an expected call of UpdateApplicationResourceLifecycle
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationResourceLifecycle(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationResourceLifecycle", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationResourceLifecycle), arg0)
 }
 
-// UpdateApplicationResourceLifecycleRequest mocks base method.
+// UpdateApplicationResourceLifecycleRequest mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleRequest(arg0 *elasticbeanstalk.UpdateApplicationResourceLifecycleInput) (*request.Request, *elasticbeanstalk.UpdateApplicationResourceLifecycleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplicationResourceLifecycleRequest", arg0)
@@ -2222,14 +1972,14 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleRequest(arg0
 	return ret0, ret1
 }
 
-// UpdateApplicationResourceLifecycleRequest indicates an expected call of UpdateApplicationResourceLifecycleRequest.
+// UpdateApplicationResourceLifecycleRequest indicates an expected call of UpdateApplicationResourceLifecycleRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationResourceLifecycleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationResourceLifecycleRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationResourceLifecycleRequest), arg0)
 }
 
-// UpdateApplicationResourceLifecycleWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateApplicationResourceLifecycleInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateApplicationResourceLifecycleOutput, error) {
+// UpdateApplicationResourceLifecycleWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateApplicationResourceLifecycleInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateApplicationResourceLifecycleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2241,14 +1991,14 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleWithContext(
 	return ret0, ret1
 }
 
-// UpdateApplicationResourceLifecycleWithContext indicates an expected call of UpdateApplicationResourceLifecycleWithContext.
+// UpdateApplicationResourceLifecycleWithContext indicates an expected call of UpdateApplicationResourceLifecycleWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationResourceLifecycleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationResourceLifecycleWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationResourceLifecycleWithContext), varargs...)
 }
 
-// UpdateApplicationVersion mocks base method.
+// UpdateApplicationVersion mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateApplicationVersion(arg0 *elasticbeanstalk.UpdateApplicationVersionInput) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplicationVersion", arg0)
@@ -2257,13 +2007,13 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationVersion(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// UpdateApplicationVersion indicates an expected call of UpdateApplicationVersion.
+// UpdateApplicationVersion indicates an expected call of UpdateApplicationVersion
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationVersion", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationVersion), arg0)
 }
 
-// UpdateApplicationVersionRequest mocks base method.
+// UpdateApplicationVersionRequest mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionRequest(arg0 *elasticbeanstalk.UpdateApplicationVersionInput) (*request.Request, *elasticbeanstalk.ApplicationVersionDescriptionMessage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApplicationVersionRequest", arg0)
@@ -2272,14 +2022,14 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionRequest(arg0 *elasticb
 	return ret0, ret1
 }
 
-// UpdateApplicationVersionRequest indicates an expected call of UpdateApplicationVersionRequest.
+// UpdateApplicationVersionRequest indicates an expected call of UpdateApplicationVersionRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationVersionRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationVersionRequest), arg0)
 }
 
-// UpdateApplicationVersionWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
+// UpdateApplicationVersionWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2291,15 +2041,15 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// UpdateApplicationVersionWithContext indicates an expected call of UpdateApplicationVersionWithContext.
+// UpdateApplicationVersionWithContext indicates an expected call of UpdateApplicationVersionWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationVersionWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationVersionWithContext), varargs...)
 }
 
-// UpdateApplicationWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
+// UpdateApplicationWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) UpdateApplicationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2311,14 +2061,14 @@ func (m *MockElasticBeanstalkAPI) UpdateApplicationWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext.
+// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateApplicationWithContext), varargs...)
 }
 
-// UpdateConfigurationTemplate mocks base method.
+// UpdateConfigurationTemplate mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplate(arg0 *elasticbeanstalk.UpdateConfigurationTemplateInput) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateConfigurationTemplate", arg0)
@@ -2327,13 +2077,13 @@ func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplate(arg0 *elasticbeans
 	return ret0, ret1
 }
 
-// UpdateConfigurationTemplate indicates an expected call of UpdateConfigurationTemplate.
+// UpdateConfigurationTemplate indicates an expected call of UpdateConfigurationTemplate
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateConfigurationTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationTemplate", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateConfigurationTemplate), arg0)
 }
 
-// UpdateConfigurationTemplateRequest mocks base method.
+// UpdateConfigurationTemplateRequest mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateRequest(arg0 *elasticbeanstalk.UpdateConfigurationTemplateInput) (*request.Request, *elasticbeanstalk.ConfigurationSettingsDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateConfigurationTemplateRequest", arg0)
@@ -2342,14 +2092,14 @@ func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateRequest(arg0 *elast
 	return ret0, ret1
 }
 
-// UpdateConfigurationTemplateRequest indicates an expected call of UpdateConfigurationTemplateRequest.
+// UpdateConfigurationTemplateRequest indicates an expected call of UpdateConfigurationTemplateRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationTemplateRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateConfigurationTemplateRequest), arg0)
 }
 
-// UpdateConfigurationTemplateWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
+// UpdateConfigurationTemplateWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2361,14 +2111,14 @@ func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateWithContext(arg0 co
 	return ret0, ret1
 }
 
-// UpdateConfigurationTemplateWithContext indicates an expected call of UpdateConfigurationTemplateWithContext.
+// UpdateConfigurationTemplateWithContext indicates an expected call of UpdateConfigurationTemplateWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationTemplateWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateConfigurationTemplateWithContext), varargs...)
 }
 
-// UpdateEnvironment mocks base method.
+// UpdateEnvironment mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateEnvironment(arg0 *elasticbeanstalk.UpdateEnvironmentInput) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEnvironment", arg0)
@@ -2377,13 +2127,13 @@ func (m *MockElasticBeanstalkAPI) UpdateEnvironment(arg0 *elasticbeanstalk.Updat
 	return ret0, ret1
 }
 
-// UpdateEnvironment indicates an expected call of UpdateEnvironment.
+// UpdateEnvironment indicates an expected call of UpdateEnvironment
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateEnvironment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironment", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateEnvironment), arg0)
 }
 
-// UpdateEnvironmentRequest mocks base method.
+// UpdateEnvironmentRequest mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateEnvironmentRequest(arg0 *elasticbeanstalk.UpdateEnvironmentInput) (*request.Request, *elasticbeanstalk.EnvironmentDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEnvironmentRequest", arg0)
@@ -2392,14 +2142,14 @@ func (m *MockElasticBeanstalkAPI) UpdateEnvironmentRequest(arg0 *elasticbeanstal
 	return ret0, ret1
 }
 
-// UpdateEnvironmentRequest indicates an expected call of UpdateEnvironmentRequest.
+// UpdateEnvironmentRequest indicates an expected call of UpdateEnvironmentRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateEnvironmentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateEnvironmentRequest), arg0)
 }
 
-// UpdateEnvironmentWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) UpdateEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
+// UpdateEnvironmentWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) UpdateEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2411,14 +2161,14 @@ func (m *MockElasticBeanstalkAPI) UpdateEnvironmentWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateEnvironmentWithContext indicates an expected call of UpdateEnvironmentWithContext.
+// UpdateEnvironmentWithContext indicates an expected call of UpdateEnvironmentWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateEnvironmentWithContext), varargs...)
 }
 
-// UpdateTagsForResource mocks base method.
+// UpdateTagsForResource mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateTagsForResource(arg0 *elasticbeanstalk.UpdateTagsForResourceInput) (*elasticbeanstalk.UpdateTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTagsForResource", arg0)
@@ -2427,13 +2177,13 @@ func (m *MockElasticBeanstalkAPI) UpdateTagsForResource(arg0 *elasticbeanstalk.U
 	return ret0, ret1
 }
 
-// UpdateTagsForResource indicates an expected call of UpdateTagsForResource.
+// UpdateTagsForResource indicates an expected call of UpdateTagsForResource
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTagsForResource", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateTagsForResource), arg0)
 }
 
-// UpdateTagsForResourceRequest mocks base method.
+// UpdateTagsForResourceRequest mocks base method
 func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceRequest(arg0 *elasticbeanstalk.UpdateTagsForResourceInput) (*request.Request, *elasticbeanstalk.UpdateTagsForResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTagsForResourceRequest", arg0)
@@ -2442,14 +2192,14 @@ func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceRequest(arg0 *elasticbean
 	return ret0, ret1
 }
 
-// UpdateTagsForResourceRequest indicates an expected call of UpdateTagsForResourceRequest.
+// UpdateTagsForResourceRequest indicates an expected call of UpdateTagsForResourceRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateTagsForResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTagsForResourceRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateTagsForResourceRequest), arg0)
 }
 
-// UpdateTagsForResourceWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateTagsForResourceOutput, error) {
+// UpdateTagsForResourceWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2461,14 +2211,14 @@ func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// UpdateTagsForResourceWithContext indicates an expected call of UpdateTagsForResourceWithContext.
+// UpdateTagsForResourceWithContext indicates an expected call of UpdateTagsForResourceWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTagsForResourceWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).UpdateTagsForResourceWithContext), varargs...)
 }
 
-// ValidateConfigurationSettings mocks base method.
+// ValidateConfigurationSettings mocks base method
 func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettings(arg0 *elasticbeanstalk.ValidateConfigurationSettingsInput) (*elasticbeanstalk.ValidateConfigurationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ValidateConfigurationSettings", arg0)
@@ -2477,13 +2227,13 @@ func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettings(arg0 *elasticbea
 	return ret0, ret1
 }
 
-// ValidateConfigurationSettings indicates an expected call of ValidateConfigurationSettings.
+// ValidateConfigurationSettings indicates an expected call of ValidateConfigurationSettings
 func (mr *MockElasticBeanstalkAPIMockRecorder) ValidateConfigurationSettings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateConfigurationSettings", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ValidateConfigurationSettings), arg0)
 }
 
-// ValidateConfigurationSettingsRequest mocks base method.
+// ValidateConfigurationSettingsRequest mocks base method
 func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsRequest(arg0 *elasticbeanstalk.ValidateConfigurationSettingsInput) (*request.Request, *elasticbeanstalk.ValidateConfigurationSettingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ValidateConfigurationSettingsRequest", arg0)
@@ -2492,14 +2242,14 @@ func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsRequest(arg0 *ela
 	return ret0, ret1
 }
 
-// ValidateConfigurationSettingsRequest indicates an expected call of ValidateConfigurationSettingsRequest.
+// ValidateConfigurationSettingsRequest indicates an expected call of ValidateConfigurationSettingsRequest
 func (mr *MockElasticBeanstalkAPIMockRecorder) ValidateConfigurationSettingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateConfigurationSettingsRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ValidateConfigurationSettingsRequest), arg0)
 }
 
-// ValidateConfigurationSettingsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ValidateConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.ValidateConfigurationSettingsOutput, error) {
+// ValidateConfigurationSettingsWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ValidateConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.ValidateConfigurationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2511,108 +2261,9 @@ func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsWithContext(arg0 
 	return ret0, ret1
 }
 
-// ValidateConfigurationSettingsWithContext indicates an expected call of ValidateConfigurationSettingsWithContext.
+// ValidateConfigurationSettingsWithContext indicates an expected call of ValidateConfigurationSettingsWithContext
 func (mr *MockElasticBeanstalkAPIMockRecorder) ValidateConfigurationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateConfigurationSettingsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ValidateConfigurationSettingsWithContext), varargs...)
-}
-
-// WaitUntilEnvironmentExists mocks base method.
-func (m *MockElasticBeanstalkAPI) WaitUntilEnvironmentExists(arg0 *elasticbeanstalk.DescribeEnvironmentsInput) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "WaitUntilEnvironmentExists", arg0)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// WaitUntilEnvironmentExists indicates an expected call of WaitUntilEnvironmentExists.
-func (mr *MockElasticBeanstalkAPIMockRecorder) WaitUntilEnvironmentExists(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEnvironmentExists", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).WaitUntilEnvironmentExists), arg0)
-}
-
-// WaitUntilEnvironmentExistsWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) WaitUntilEnvironmentExistsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.WaiterOption) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "WaitUntilEnvironmentExistsWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// WaitUntilEnvironmentExistsWithContext indicates an expected call of WaitUntilEnvironmentExistsWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) WaitUntilEnvironmentExistsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEnvironmentExistsWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).WaitUntilEnvironmentExistsWithContext), varargs...)
-}
-
-// WaitUntilEnvironmentTerminated mocks base method.
-func (m *MockElasticBeanstalkAPI) WaitUntilEnvironmentTerminated(arg0 *elasticbeanstalk.DescribeEnvironmentsInput) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "WaitUntilEnvironmentTerminated", arg0)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// WaitUntilEnvironmentTerminated indicates an expected call of WaitUntilEnvironmentTerminated.
-func (mr *MockElasticBeanstalkAPIMockRecorder) WaitUntilEnvironmentTerminated(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEnvironmentTerminated", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).WaitUntilEnvironmentTerminated), arg0)
-}
-
-// WaitUntilEnvironmentTerminatedWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) WaitUntilEnvironmentTerminatedWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.WaiterOption) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "WaitUntilEnvironmentTerminatedWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// WaitUntilEnvironmentTerminatedWithContext indicates an expected call of WaitUntilEnvironmentTerminatedWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) WaitUntilEnvironmentTerminatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEnvironmentTerminatedWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).WaitUntilEnvironmentTerminatedWithContext), varargs...)
-}
-
-// WaitUntilEnvironmentUpdated mocks base method.
-func (m *MockElasticBeanstalkAPI) WaitUntilEnvironmentUpdated(arg0 *elasticbeanstalk.DescribeEnvironmentsInput) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "WaitUntilEnvironmentUpdated", arg0)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// WaitUntilEnvironmentUpdated indicates an expected call of WaitUntilEnvironmentUpdated.
-func (mr *MockElasticBeanstalkAPIMockRecorder) WaitUntilEnvironmentUpdated(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEnvironmentUpdated", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).WaitUntilEnvironmentUpdated), arg0)
-}
-
-// WaitUntilEnvironmentUpdatedWithContext mocks base method.
-func (m *MockElasticBeanstalkAPI) WaitUntilEnvironmentUpdatedWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.WaiterOption) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "WaitUntilEnvironmentUpdatedWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// WaitUntilEnvironmentUpdatedWithContext indicates an expected call of WaitUntilEnvironmentUpdatedWithContext.
-func (mr *MockElasticBeanstalkAPIMockRecorder) WaitUntilEnvironmentUpdatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEnvironmentUpdatedWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).WaitUntilEnvironmentUpdatedWithContext), varargs...)
 }

@@ -5,38 +5,37 @@
 package mqmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mq "github.com/aws/aws-sdk-go/service/mq"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMQAPI is a mock of MQAPI interface.
+// MockMQAPI is a mock of MQAPI interface
 type MockMQAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMQAPIMockRecorder
 }
 
-// MockMQAPIMockRecorder is the mock recorder for MockMQAPI.
+// MockMQAPIMockRecorder is the mock recorder for MockMQAPI
 type MockMQAPIMockRecorder struct {
 	mock *MockMQAPI
 }
 
-// NewMockMQAPI creates a new mock instance.
+// NewMockMQAPI creates a new mock instance
 func NewMockMQAPI(ctrl *gomock.Controller) *MockMQAPI {
 	mock := &MockMQAPI{ctrl: ctrl}
 	mock.recorder = &MockMQAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMQAPI) EXPECT() *MockMQAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateBroker mocks base method.
+// CreateBroker mocks base method
 func (m *MockMQAPI) CreateBroker(arg0 *mq.CreateBrokerRequest) (*mq.CreateBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateBroker", arg0)
@@ -45,13 +44,13 @@ func (m *MockMQAPI) CreateBroker(arg0 *mq.CreateBrokerRequest) (*mq.CreateBroker
 	return ret0, ret1
 }
 
-// CreateBroker indicates an expected call of CreateBroker.
+// CreateBroker indicates an expected call of CreateBroker
 func (mr *MockMQAPIMockRecorder) CreateBroker(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBroker", reflect.TypeOf((*MockMQAPI)(nil).CreateBroker), arg0)
 }
 
-// CreateBrokerRequest mocks base method.
+// CreateBrokerRequest mocks base method
 func (m *MockMQAPI) CreateBrokerRequest(arg0 *mq.CreateBrokerRequest) (*request.Request, *mq.CreateBrokerResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateBrokerRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMQAPI) CreateBrokerRequest(arg0 *mq.CreateBrokerRequest) (*request.
 	return ret0, ret1
 }
 
-// CreateBrokerRequest indicates an expected call of CreateBrokerRequest.
+// CreateBrokerRequest indicates an expected call of CreateBrokerRequest
 func (mr *MockMQAPIMockRecorder) CreateBrokerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBrokerRequest", reflect.TypeOf((*MockMQAPI)(nil).CreateBrokerRequest), arg0)
 }
 
-// CreateBrokerWithContext mocks base method.
-func (m *MockMQAPI) CreateBrokerWithContext(arg0 context.Context, arg1 *mq.CreateBrokerRequest, arg2 ...request.Option) (*mq.CreateBrokerResponse, error) {
+// CreateBrokerWithContext mocks base method
+func (m *MockMQAPI) CreateBrokerWithContext(arg0 aws.Context, arg1 *mq.CreateBrokerRequest, arg2 ...request.Option) (*mq.CreateBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockMQAPI) CreateBrokerWithContext(arg0 context.Context, arg1 *mq.Creat
 	return ret0, ret1
 }
 
-// CreateBrokerWithContext indicates an expected call of CreateBrokerWithContext.
+// CreateBrokerWithContext indicates an expected call of CreateBrokerWithContext
 func (mr *MockMQAPIMockRecorder) CreateBrokerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBrokerWithContext", reflect.TypeOf((*MockMQAPI)(nil).CreateBrokerWithContext), varargs...)
 }
 
-// CreateConfiguration mocks base method.
+// CreateConfiguration mocks base method
 func (m *MockMQAPI) CreateConfiguration(arg0 *mq.CreateConfigurationRequest) (*mq.CreateConfigurationResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateConfiguration", arg0)
@@ -95,13 +94,13 @@ func (m *MockMQAPI) CreateConfiguration(arg0 *mq.CreateConfigurationRequest) (*m
 	return ret0, ret1
 }
 
-// CreateConfiguration indicates an expected call of CreateConfiguration.
+// CreateConfiguration indicates an expected call of CreateConfiguration
 func (mr *MockMQAPIMockRecorder) CreateConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfiguration", reflect.TypeOf((*MockMQAPI)(nil).CreateConfiguration), arg0)
 }
 
-// CreateConfigurationRequest mocks base method.
+// CreateConfigurationRequest mocks base method
 func (m *MockMQAPI) CreateConfigurationRequest(arg0 *mq.CreateConfigurationRequest) (*request.Request, *mq.CreateConfigurationResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateConfigurationRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockMQAPI) CreateConfigurationRequest(arg0 *mq.CreateConfigurationReque
 	return ret0, ret1
 }
 
-// CreateConfigurationRequest indicates an expected call of CreateConfigurationRequest.
+// CreateConfigurationRequest indicates an expected call of CreateConfigurationRequest
 func (mr *MockMQAPIMockRecorder) CreateConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationRequest", reflect.TypeOf((*MockMQAPI)(nil).CreateConfigurationRequest), arg0)
 }
 
-// CreateConfigurationWithContext mocks base method.
-func (m *MockMQAPI) CreateConfigurationWithContext(arg0 context.Context, arg1 *mq.CreateConfigurationRequest, arg2 ...request.Option) (*mq.CreateConfigurationResponse, error) {
+// CreateConfigurationWithContext mocks base method
+func (m *MockMQAPI) CreateConfigurationWithContext(arg0 aws.Context, arg1 *mq.CreateConfigurationRequest, arg2 ...request.Option) (*mq.CreateConfigurationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,64 +128,14 @@ func (m *MockMQAPI) CreateConfigurationWithContext(arg0 context.Context, arg1 *m
 	return ret0, ret1
 }
 
-// CreateConfigurationWithContext indicates an expected call of CreateConfigurationWithContext.
+// CreateConfigurationWithContext indicates an expected call of CreateConfigurationWithContext
 func (mr *MockMQAPIMockRecorder) CreateConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationWithContext", reflect.TypeOf((*MockMQAPI)(nil).CreateConfigurationWithContext), varargs...)
 }
 
-// CreateTags mocks base method.
-func (m *MockMQAPI) CreateTags(arg0 *mq.CreateTagsInput) (*mq.CreateTagsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTags", arg0)
-	ret0, _ := ret[0].(*mq.CreateTagsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTags indicates an expected call of CreateTags.
-func (mr *MockMQAPIMockRecorder) CreateTags(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTags", reflect.TypeOf((*MockMQAPI)(nil).CreateTags), arg0)
-}
-
-// CreateTagsRequest mocks base method.
-func (m *MockMQAPI) CreateTagsRequest(arg0 *mq.CreateTagsInput) (*request.Request, *mq.CreateTagsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateTagsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mq.CreateTagsOutput)
-	return ret0, ret1
-}
-
-// CreateTagsRequest indicates an expected call of CreateTagsRequest.
-func (mr *MockMQAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsRequest", reflect.TypeOf((*MockMQAPI)(nil).CreateTagsRequest), arg0)
-}
-
-// CreateTagsWithContext mocks base method.
-func (m *MockMQAPI) CreateTagsWithContext(arg0 context.Context, arg1 *mq.CreateTagsInput, arg2 ...request.Option) (*mq.CreateTagsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateTagsWithContext", varargs...)
-	ret0, _ := ret[0].(*mq.CreateTagsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateTagsWithContext indicates an expected call of CreateTagsWithContext.
-func (mr *MockMQAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockMQAPI)(nil).CreateTagsWithContext), varargs...)
-}
-
-// CreateUser mocks base method.
+// CreateUser mocks base method
 func (m *MockMQAPI) CreateUser(arg0 *mq.CreateUserRequest) (*mq.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUser", arg0)
@@ -195,13 +144,13 @@ func (m *MockMQAPI) CreateUser(arg0 *mq.CreateUserRequest) (*mq.CreateUserOutput
 	return ret0, ret1
 }
 
-// CreateUser indicates an expected call of CreateUser.
+// CreateUser indicates an expected call of CreateUser
 func (mr *MockMQAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockMQAPI)(nil).CreateUser), arg0)
 }
 
-// CreateUserRequest mocks base method.
+// CreateUserRequest mocks base method
 func (m *MockMQAPI) CreateUserRequest(arg0 *mq.CreateUserRequest) (*request.Request, *mq.CreateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
@@ -210,14 +159,14 @@ func (m *MockMQAPI) CreateUserRequest(arg0 *mq.CreateUserRequest) (*request.Requ
 	return ret0, ret1
 }
 
-// CreateUserRequest indicates an expected call of CreateUserRequest.
+// CreateUserRequest indicates an expected call of CreateUserRequest
 func (mr *MockMQAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockMQAPI)(nil).CreateUserRequest), arg0)
 }
 
-// CreateUserWithContext mocks base method.
-func (m *MockMQAPI) CreateUserWithContext(arg0 context.Context, arg1 *mq.CreateUserRequest, arg2 ...request.Option) (*mq.CreateUserOutput, error) {
+// CreateUserWithContext mocks base method
+func (m *MockMQAPI) CreateUserWithContext(arg0 aws.Context, arg1 *mq.CreateUserRequest, arg2 ...request.Option) (*mq.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +178,14 @@ func (m *MockMQAPI) CreateUserWithContext(arg0 context.Context, arg1 *mq.CreateU
 	return ret0, ret1
 }
 
-// CreateUserWithContext indicates an expected call of CreateUserWithContext.
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
 func (mr *MockMQAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockMQAPI)(nil).CreateUserWithContext), varargs...)
 }
 
-// DeleteBroker mocks base method.
+// DeleteBroker mocks base method
 func (m *MockMQAPI) DeleteBroker(arg0 *mq.DeleteBrokerInput) (*mq.DeleteBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBroker", arg0)
@@ -245,13 +194,13 @@ func (m *MockMQAPI) DeleteBroker(arg0 *mq.DeleteBrokerInput) (*mq.DeleteBrokerRe
 	return ret0, ret1
 }
 
-// DeleteBroker indicates an expected call of DeleteBroker.
+// DeleteBroker indicates an expected call of DeleteBroker
 func (mr *MockMQAPIMockRecorder) DeleteBroker(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBroker", reflect.TypeOf((*MockMQAPI)(nil).DeleteBroker), arg0)
 }
 
-// DeleteBrokerRequest mocks base method.
+// DeleteBrokerRequest mocks base method
 func (m *MockMQAPI) DeleteBrokerRequest(arg0 *mq.DeleteBrokerInput) (*request.Request, *mq.DeleteBrokerResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBrokerRequest", arg0)
@@ -260,14 +209,14 @@ func (m *MockMQAPI) DeleteBrokerRequest(arg0 *mq.DeleteBrokerInput) (*request.Re
 	return ret0, ret1
 }
 
-// DeleteBrokerRequest indicates an expected call of DeleteBrokerRequest.
+// DeleteBrokerRequest indicates an expected call of DeleteBrokerRequest
 func (mr *MockMQAPIMockRecorder) DeleteBrokerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBrokerRequest", reflect.TypeOf((*MockMQAPI)(nil).DeleteBrokerRequest), arg0)
 }
 
-// DeleteBrokerWithContext mocks base method.
-func (m *MockMQAPI) DeleteBrokerWithContext(arg0 context.Context, arg1 *mq.DeleteBrokerInput, arg2 ...request.Option) (*mq.DeleteBrokerResponse, error) {
+// DeleteBrokerWithContext mocks base method
+func (m *MockMQAPI) DeleteBrokerWithContext(arg0 aws.Context, arg1 *mq.DeleteBrokerInput, arg2 ...request.Option) (*mq.DeleteBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,64 +228,14 @@ func (m *MockMQAPI) DeleteBrokerWithContext(arg0 context.Context, arg1 *mq.Delet
 	return ret0, ret1
 }
 
-// DeleteBrokerWithContext indicates an expected call of DeleteBrokerWithContext.
+// DeleteBrokerWithContext indicates an expected call of DeleteBrokerWithContext
 func (mr *MockMQAPIMockRecorder) DeleteBrokerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBrokerWithContext", reflect.TypeOf((*MockMQAPI)(nil).DeleteBrokerWithContext), varargs...)
 }
 
-// DeleteTags mocks base method.
-func (m *MockMQAPI) DeleteTags(arg0 *mq.DeleteTagsInput) (*mq.DeleteTagsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteTags", arg0)
-	ret0, _ := ret[0].(*mq.DeleteTagsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteTags indicates an expected call of DeleteTags.
-func (mr *MockMQAPIMockRecorder) DeleteTags(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTags", reflect.TypeOf((*MockMQAPI)(nil).DeleteTags), arg0)
-}
-
-// DeleteTagsRequest mocks base method.
-func (m *MockMQAPI) DeleteTagsRequest(arg0 *mq.DeleteTagsInput) (*request.Request, *mq.DeleteTagsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteTagsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mq.DeleteTagsOutput)
-	return ret0, ret1
-}
-
-// DeleteTagsRequest indicates an expected call of DeleteTagsRequest.
-func (mr *MockMQAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsRequest", reflect.TypeOf((*MockMQAPI)(nil).DeleteTagsRequest), arg0)
-}
-
-// DeleteTagsWithContext mocks base method.
-func (m *MockMQAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *mq.DeleteTagsInput, arg2 ...request.Option) (*mq.DeleteTagsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteTagsWithContext", varargs...)
-	ret0, _ := ret[0].(*mq.DeleteTagsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteTagsWithContext indicates an expected call of DeleteTagsWithContext.
-func (mr *MockMQAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockMQAPI)(nil).DeleteTagsWithContext), varargs...)
-}
-
-// DeleteUser mocks base method.
+// DeleteUser mocks base method
 func (m *MockMQAPI) DeleteUser(arg0 *mq.DeleteUserInput) (*mq.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUser", arg0)
@@ -345,13 +244,13 @@ func (m *MockMQAPI) DeleteUser(arg0 *mq.DeleteUserInput) (*mq.DeleteUserOutput, 
 	return ret0, ret1
 }
 
-// DeleteUser indicates an expected call of DeleteUser.
+// DeleteUser indicates an expected call of DeleteUser
 func (mr *MockMQAPIMockRecorder) DeleteUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUser", reflect.TypeOf((*MockMQAPI)(nil).DeleteUser), arg0)
 }
 
-// DeleteUserRequest mocks base method.
+// DeleteUserRequest mocks base method
 func (m *MockMQAPI) DeleteUserRequest(arg0 *mq.DeleteUserInput) (*request.Request, *mq.DeleteUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUserRequest", arg0)
@@ -360,14 +259,14 @@ func (m *MockMQAPI) DeleteUserRequest(arg0 *mq.DeleteUserInput) (*request.Reques
 	return ret0, ret1
 }
 
-// DeleteUserRequest indicates an expected call of DeleteUserRequest.
+// DeleteUserRequest indicates an expected call of DeleteUserRequest
 func (mr *MockMQAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserRequest", reflect.TypeOf((*MockMQAPI)(nil).DeleteUserRequest), arg0)
 }
 
-// DeleteUserWithContext mocks base method.
-func (m *MockMQAPI) DeleteUserWithContext(arg0 context.Context, arg1 *mq.DeleteUserInput, arg2 ...request.Option) (*mq.DeleteUserOutput, error) {
+// DeleteUserWithContext mocks base method
+func (m *MockMQAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *mq.DeleteUserInput, arg2 ...request.Option) (*mq.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +278,14 @@ func (m *MockMQAPI) DeleteUserWithContext(arg0 context.Context, arg1 *mq.DeleteU
 	return ret0, ret1
 }
 
-// DeleteUserWithContext indicates an expected call of DeleteUserWithContext.
+// DeleteUserWithContext indicates an expected call of DeleteUserWithContext
 func (mr *MockMQAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockMQAPI)(nil).DeleteUserWithContext), varargs...)
 }
 
-// DescribeBroker mocks base method.
+// DescribeBroker mocks base method
 func (m *MockMQAPI) DescribeBroker(arg0 *mq.DescribeBrokerInput) (*mq.DescribeBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBroker", arg0)
@@ -395,113 +294,13 @@ func (m *MockMQAPI) DescribeBroker(arg0 *mq.DescribeBrokerInput) (*mq.DescribeBr
 	return ret0, ret1
 }
 
-// DescribeBroker indicates an expected call of DescribeBroker.
+// DescribeBroker indicates an expected call of DescribeBroker
 func (mr *MockMQAPIMockRecorder) DescribeBroker(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBroker", reflect.TypeOf((*MockMQAPI)(nil).DescribeBroker), arg0)
 }
 
-// DescribeBrokerEngineTypes mocks base method.
-func (m *MockMQAPI) DescribeBrokerEngineTypes(arg0 *mq.DescribeBrokerEngineTypesInput) (*mq.DescribeBrokerEngineTypesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeBrokerEngineTypes", arg0)
-	ret0, _ := ret[0].(*mq.DescribeBrokerEngineTypesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeBrokerEngineTypes indicates an expected call of DescribeBrokerEngineTypes.
-func (mr *MockMQAPIMockRecorder) DescribeBrokerEngineTypes(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerEngineTypes", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerEngineTypes), arg0)
-}
-
-// DescribeBrokerEngineTypesRequest mocks base method.
-func (m *MockMQAPI) DescribeBrokerEngineTypesRequest(arg0 *mq.DescribeBrokerEngineTypesInput) (*request.Request, *mq.DescribeBrokerEngineTypesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeBrokerEngineTypesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mq.DescribeBrokerEngineTypesOutput)
-	return ret0, ret1
-}
-
-// DescribeBrokerEngineTypesRequest indicates an expected call of DescribeBrokerEngineTypesRequest.
-func (mr *MockMQAPIMockRecorder) DescribeBrokerEngineTypesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerEngineTypesRequest", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerEngineTypesRequest), arg0)
-}
-
-// DescribeBrokerEngineTypesWithContext mocks base method.
-func (m *MockMQAPI) DescribeBrokerEngineTypesWithContext(arg0 context.Context, arg1 *mq.DescribeBrokerEngineTypesInput, arg2 ...request.Option) (*mq.DescribeBrokerEngineTypesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeBrokerEngineTypesWithContext", varargs...)
-	ret0, _ := ret[0].(*mq.DescribeBrokerEngineTypesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeBrokerEngineTypesWithContext indicates an expected call of DescribeBrokerEngineTypesWithContext.
-func (mr *MockMQAPIMockRecorder) DescribeBrokerEngineTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerEngineTypesWithContext", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerEngineTypesWithContext), varargs...)
-}
-
-// DescribeBrokerInstanceOptions mocks base method.
-func (m *MockMQAPI) DescribeBrokerInstanceOptions(arg0 *mq.DescribeBrokerInstanceOptionsInput) (*mq.DescribeBrokerInstanceOptionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeBrokerInstanceOptions", arg0)
-	ret0, _ := ret[0].(*mq.DescribeBrokerInstanceOptionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeBrokerInstanceOptions indicates an expected call of DescribeBrokerInstanceOptions.
-func (mr *MockMQAPIMockRecorder) DescribeBrokerInstanceOptions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerInstanceOptions", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerInstanceOptions), arg0)
-}
-
-// DescribeBrokerInstanceOptionsRequest mocks base method.
-func (m *MockMQAPI) DescribeBrokerInstanceOptionsRequest(arg0 *mq.DescribeBrokerInstanceOptionsInput) (*request.Request, *mq.DescribeBrokerInstanceOptionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeBrokerInstanceOptionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mq.DescribeBrokerInstanceOptionsOutput)
-	return ret0, ret1
-}
-
-// DescribeBrokerInstanceOptionsRequest indicates an expected call of DescribeBrokerInstanceOptionsRequest.
-func (mr *MockMQAPIMockRecorder) DescribeBrokerInstanceOptionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerInstanceOptionsRequest", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerInstanceOptionsRequest), arg0)
-}
-
-// DescribeBrokerInstanceOptionsWithContext mocks base method.
-func (m *MockMQAPI) DescribeBrokerInstanceOptionsWithContext(arg0 context.Context, arg1 *mq.DescribeBrokerInstanceOptionsInput, arg2 ...request.Option) (*mq.DescribeBrokerInstanceOptionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeBrokerInstanceOptionsWithContext", varargs...)
-	ret0, _ := ret[0].(*mq.DescribeBrokerInstanceOptionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeBrokerInstanceOptionsWithContext indicates an expected call of DescribeBrokerInstanceOptionsWithContext.
-func (mr *MockMQAPIMockRecorder) DescribeBrokerInstanceOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerInstanceOptionsWithContext", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerInstanceOptionsWithContext), varargs...)
-}
-
-// DescribeBrokerRequest mocks base method.
+// DescribeBrokerRequest mocks base method
 func (m *MockMQAPI) DescribeBrokerRequest(arg0 *mq.DescribeBrokerInput) (*request.Request, *mq.DescribeBrokerResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeBrokerRequest", arg0)
@@ -510,14 +309,14 @@ func (m *MockMQAPI) DescribeBrokerRequest(arg0 *mq.DescribeBrokerInput) (*reques
 	return ret0, ret1
 }
 
-// DescribeBrokerRequest indicates an expected call of DescribeBrokerRequest.
+// DescribeBrokerRequest indicates an expected call of DescribeBrokerRequest
 func (mr *MockMQAPIMockRecorder) DescribeBrokerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerRequest", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerRequest), arg0)
 }
 
-// DescribeBrokerWithContext mocks base method.
-func (m *MockMQAPI) DescribeBrokerWithContext(arg0 context.Context, arg1 *mq.DescribeBrokerInput, arg2 ...request.Option) (*mq.DescribeBrokerResponse, error) {
+// DescribeBrokerWithContext mocks base method
+func (m *MockMQAPI) DescribeBrokerWithContext(arg0 aws.Context, arg1 *mq.DescribeBrokerInput, arg2 ...request.Option) (*mq.DescribeBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +328,14 @@ func (m *MockMQAPI) DescribeBrokerWithContext(arg0 context.Context, arg1 *mq.Des
 	return ret0, ret1
 }
 
-// DescribeBrokerWithContext indicates an expected call of DescribeBrokerWithContext.
+// DescribeBrokerWithContext indicates an expected call of DescribeBrokerWithContext
 func (mr *MockMQAPIMockRecorder) DescribeBrokerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBrokerWithContext", reflect.TypeOf((*MockMQAPI)(nil).DescribeBrokerWithContext), varargs...)
 }
 
-// DescribeConfiguration mocks base method.
+// DescribeConfiguration mocks base method
 func (m *MockMQAPI) DescribeConfiguration(arg0 *mq.DescribeConfigurationInput) (*mq.DescribeConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfiguration", arg0)
@@ -545,13 +344,13 @@ func (m *MockMQAPI) DescribeConfiguration(arg0 *mq.DescribeConfigurationInput) (
 	return ret0, ret1
 }
 
-// DescribeConfiguration indicates an expected call of DescribeConfiguration.
+// DescribeConfiguration indicates an expected call of DescribeConfiguration
 func (mr *MockMQAPIMockRecorder) DescribeConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfiguration", reflect.TypeOf((*MockMQAPI)(nil).DescribeConfiguration), arg0)
 }
 
-// DescribeConfigurationRequest mocks base method.
+// DescribeConfigurationRequest mocks base method
 func (m *MockMQAPI) DescribeConfigurationRequest(arg0 *mq.DescribeConfigurationInput) (*request.Request, *mq.DescribeConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationRequest", arg0)
@@ -560,13 +359,13 @@ func (m *MockMQAPI) DescribeConfigurationRequest(arg0 *mq.DescribeConfigurationI
 	return ret0, ret1
 }
 
-// DescribeConfigurationRequest indicates an expected call of DescribeConfigurationRequest.
+// DescribeConfigurationRequest indicates an expected call of DescribeConfigurationRequest
 func (mr *MockMQAPIMockRecorder) DescribeConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationRequest", reflect.TypeOf((*MockMQAPI)(nil).DescribeConfigurationRequest), arg0)
 }
 
-// DescribeConfigurationRevision mocks base method.
+// DescribeConfigurationRevision mocks base method
 func (m *MockMQAPI) DescribeConfigurationRevision(arg0 *mq.DescribeConfigurationRevisionInput) (*mq.DescribeConfigurationRevisionResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationRevision", arg0)
@@ -575,13 +374,13 @@ func (m *MockMQAPI) DescribeConfigurationRevision(arg0 *mq.DescribeConfiguration
 	return ret0, ret1
 }
 
-// DescribeConfigurationRevision indicates an expected call of DescribeConfigurationRevision.
+// DescribeConfigurationRevision indicates an expected call of DescribeConfigurationRevision
 func (mr *MockMQAPIMockRecorder) DescribeConfigurationRevision(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationRevision", reflect.TypeOf((*MockMQAPI)(nil).DescribeConfigurationRevision), arg0)
 }
 
-// DescribeConfigurationRevisionRequest mocks base method.
+// DescribeConfigurationRevisionRequest mocks base method
 func (m *MockMQAPI) DescribeConfigurationRevisionRequest(arg0 *mq.DescribeConfigurationRevisionInput) (*request.Request, *mq.DescribeConfigurationRevisionResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeConfigurationRevisionRequest", arg0)
@@ -590,14 +389,14 @@ func (m *MockMQAPI) DescribeConfigurationRevisionRequest(arg0 *mq.DescribeConfig
 	return ret0, ret1
 }
 
-// DescribeConfigurationRevisionRequest indicates an expected call of DescribeConfigurationRevisionRequest.
+// DescribeConfigurationRevisionRequest indicates an expected call of DescribeConfigurationRevisionRequest
 func (mr *MockMQAPIMockRecorder) DescribeConfigurationRevisionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationRevisionRequest", reflect.TypeOf((*MockMQAPI)(nil).DescribeConfigurationRevisionRequest), arg0)
 }
 
-// DescribeConfigurationRevisionWithContext mocks base method.
-func (m *MockMQAPI) DescribeConfigurationRevisionWithContext(arg0 context.Context, arg1 *mq.DescribeConfigurationRevisionInput, arg2 ...request.Option) (*mq.DescribeConfigurationRevisionResponse, error) {
+// DescribeConfigurationRevisionWithContext mocks base method
+func (m *MockMQAPI) DescribeConfigurationRevisionWithContext(arg0 aws.Context, arg1 *mq.DescribeConfigurationRevisionInput, arg2 ...request.Option) (*mq.DescribeConfigurationRevisionResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -609,15 +408,15 @@ func (m *MockMQAPI) DescribeConfigurationRevisionWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DescribeConfigurationRevisionWithContext indicates an expected call of DescribeConfigurationRevisionWithContext.
+// DescribeConfigurationRevisionWithContext indicates an expected call of DescribeConfigurationRevisionWithContext
 func (mr *MockMQAPIMockRecorder) DescribeConfigurationRevisionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationRevisionWithContext", reflect.TypeOf((*MockMQAPI)(nil).DescribeConfigurationRevisionWithContext), varargs...)
 }
 
-// DescribeConfigurationWithContext mocks base method.
-func (m *MockMQAPI) DescribeConfigurationWithContext(arg0 context.Context, arg1 *mq.DescribeConfigurationInput, arg2 ...request.Option) (*mq.DescribeConfigurationOutput, error) {
+// DescribeConfigurationWithContext mocks base method
+func (m *MockMQAPI) DescribeConfigurationWithContext(arg0 aws.Context, arg1 *mq.DescribeConfigurationInput, arg2 ...request.Option) (*mq.DescribeConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +428,14 @@ func (m *MockMQAPI) DescribeConfigurationWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeConfigurationWithContext indicates an expected call of DescribeConfigurationWithContext.
+// DescribeConfigurationWithContext indicates an expected call of DescribeConfigurationWithContext
 func (mr *MockMQAPIMockRecorder) DescribeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationWithContext", reflect.TypeOf((*MockMQAPI)(nil).DescribeConfigurationWithContext), varargs...)
 }
 
-// DescribeUser mocks base method.
+// DescribeUser mocks base method
 func (m *MockMQAPI) DescribeUser(arg0 *mq.DescribeUserInput) (*mq.DescribeUserResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUser", arg0)
@@ -645,13 +444,13 @@ func (m *MockMQAPI) DescribeUser(arg0 *mq.DescribeUserInput) (*mq.DescribeUserRe
 	return ret0, ret1
 }
 
-// DescribeUser indicates an expected call of DescribeUser.
+// DescribeUser indicates an expected call of DescribeUser
 func (mr *MockMQAPIMockRecorder) DescribeUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUser", reflect.TypeOf((*MockMQAPI)(nil).DescribeUser), arg0)
 }
 
-// DescribeUserRequest mocks base method.
+// DescribeUserRequest mocks base method
 func (m *MockMQAPI) DescribeUserRequest(arg0 *mq.DescribeUserInput) (*request.Request, *mq.DescribeUserResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUserRequest", arg0)
@@ -660,14 +459,14 @@ func (m *MockMQAPI) DescribeUserRequest(arg0 *mq.DescribeUserInput) (*request.Re
 	return ret0, ret1
 }
 
-// DescribeUserRequest indicates an expected call of DescribeUserRequest.
+// DescribeUserRequest indicates an expected call of DescribeUserRequest
 func (mr *MockMQAPIMockRecorder) DescribeUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserRequest", reflect.TypeOf((*MockMQAPI)(nil).DescribeUserRequest), arg0)
 }
 
-// DescribeUserWithContext mocks base method.
-func (m *MockMQAPI) DescribeUserWithContext(arg0 context.Context, arg1 *mq.DescribeUserInput, arg2 ...request.Option) (*mq.DescribeUserResponse, error) {
+// DescribeUserWithContext mocks base method
+func (m *MockMQAPI) DescribeUserWithContext(arg0 aws.Context, arg1 *mq.DescribeUserInput, arg2 ...request.Option) (*mq.DescribeUserResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +478,14 @@ func (m *MockMQAPI) DescribeUserWithContext(arg0 context.Context, arg1 *mq.Descr
 	return ret0, ret1
 }
 
-// DescribeUserWithContext indicates an expected call of DescribeUserWithContext.
+// DescribeUserWithContext indicates an expected call of DescribeUserWithContext
 func (mr *MockMQAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockMQAPI)(nil).DescribeUserWithContext), varargs...)
 }
 
-// ListBrokers mocks base method.
+// ListBrokers mocks base method
 func (m *MockMQAPI) ListBrokers(arg0 *mq.ListBrokersInput) (*mq.ListBrokersResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListBrokers", arg0)
@@ -695,46 +494,13 @@ func (m *MockMQAPI) ListBrokers(arg0 *mq.ListBrokersInput) (*mq.ListBrokersRespo
 	return ret0, ret1
 }
 
-// ListBrokers indicates an expected call of ListBrokers.
+// ListBrokers indicates an expected call of ListBrokers
 func (mr *MockMQAPIMockRecorder) ListBrokers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBrokers", reflect.TypeOf((*MockMQAPI)(nil).ListBrokers), arg0)
 }
 
-// ListBrokersPages mocks base method.
-func (m *MockMQAPI) ListBrokersPages(arg0 *mq.ListBrokersInput, arg1 func(*mq.ListBrokersResponse, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListBrokersPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListBrokersPages indicates an expected call of ListBrokersPages.
-func (mr *MockMQAPIMockRecorder) ListBrokersPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBrokersPages", reflect.TypeOf((*MockMQAPI)(nil).ListBrokersPages), arg0, arg1)
-}
-
-// ListBrokersPagesWithContext mocks base method.
-func (m *MockMQAPI) ListBrokersPagesWithContext(arg0 context.Context, arg1 *mq.ListBrokersInput, arg2 func(*mq.ListBrokersResponse, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListBrokersPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListBrokersPagesWithContext indicates an expected call of ListBrokersPagesWithContext.
-func (mr *MockMQAPIMockRecorder) ListBrokersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBrokersPagesWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListBrokersPagesWithContext), varargs...)
-}
-
-// ListBrokersRequest mocks base method.
+// ListBrokersRequest mocks base method
 func (m *MockMQAPI) ListBrokersRequest(arg0 *mq.ListBrokersInput) (*request.Request, *mq.ListBrokersResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListBrokersRequest", arg0)
@@ -743,14 +509,14 @@ func (m *MockMQAPI) ListBrokersRequest(arg0 *mq.ListBrokersInput) (*request.Requ
 	return ret0, ret1
 }
 
-// ListBrokersRequest indicates an expected call of ListBrokersRequest.
+// ListBrokersRequest indicates an expected call of ListBrokersRequest
 func (mr *MockMQAPIMockRecorder) ListBrokersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBrokersRequest", reflect.TypeOf((*MockMQAPI)(nil).ListBrokersRequest), arg0)
 }
 
-// ListBrokersWithContext mocks base method.
-func (m *MockMQAPI) ListBrokersWithContext(arg0 context.Context, arg1 *mq.ListBrokersInput, arg2 ...request.Option) (*mq.ListBrokersResponse, error) {
+// ListBrokersWithContext mocks base method
+func (m *MockMQAPI) ListBrokersWithContext(arg0 aws.Context, arg1 *mq.ListBrokersInput, arg2 ...request.Option) (*mq.ListBrokersResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -762,14 +528,14 @@ func (m *MockMQAPI) ListBrokersWithContext(arg0 context.Context, arg1 *mq.ListBr
 	return ret0, ret1
 }
 
-// ListBrokersWithContext indicates an expected call of ListBrokersWithContext.
+// ListBrokersWithContext indicates an expected call of ListBrokersWithContext
 func (mr *MockMQAPIMockRecorder) ListBrokersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBrokersWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListBrokersWithContext), varargs...)
 }
 
-// ListConfigurationRevisions mocks base method.
+// ListConfigurationRevisions mocks base method
 func (m *MockMQAPI) ListConfigurationRevisions(arg0 *mq.ListConfigurationRevisionsInput) (*mq.ListConfigurationRevisionsResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListConfigurationRevisions", arg0)
@@ -778,13 +544,13 @@ func (m *MockMQAPI) ListConfigurationRevisions(arg0 *mq.ListConfigurationRevisio
 	return ret0, ret1
 }
 
-// ListConfigurationRevisions indicates an expected call of ListConfigurationRevisions.
+// ListConfigurationRevisions indicates an expected call of ListConfigurationRevisions
 func (mr *MockMQAPIMockRecorder) ListConfigurationRevisions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationRevisions", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurationRevisions), arg0)
 }
 
-// ListConfigurationRevisionsRequest mocks base method.
+// ListConfigurationRevisionsRequest mocks base method
 func (m *MockMQAPI) ListConfigurationRevisionsRequest(arg0 *mq.ListConfigurationRevisionsInput) (*request.Request, *mq.ListConfigurationRevisionsResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListConfigurationRevisionsRequest", arg0)
@@ -793,14 +559,14 @@ func (m *MockMQAPI) ListConfigurationRevisionsRequest(arg0 *mq.ListConfiguration
 	return ret0, ret1
 }
 
-// ListConfigurationRevisionsRequest indicates an expected call of ListConfigurationRevisionsRequest.
+// ListConfigurationRevisionsRequest indicates an expected call of ListConfigurationRevisionsRequest
 func (mr *MockMQAPIMockRecorder) ListConfigurationRevisionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationRevisionsRequest", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurationRevisionsRequest), arg0)
 }
 
-// ListConfigurationRevisionsWithContext mocks base method.
-func (m *MockMQAPI) ListConfigurationRevisionsWithContext(arg0 context.Context, arg1 *mq.ListConfigurationRevisionsInput, arg2 ...request.Option) (*mq.ListConfigurationRevisionsResponse, error) {
+// ListConfigurationRevisionsWithContext mocks base method
+func (m *MockMQAPI) ListConfigurationRevisionsWithContext(arg0 aws.Context, arg1 *mq.ListConfigurationRevisionsInput, arg2 ...request.Option) (*mq.ListConfigurationRevisionsResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -812,14 +578,14 @@ func (m *MockMQAPI) ListConfigurationRevisionsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListConfigurationRevisionsWithContext indicates an expected call of ListConfigurationRevisionsWithContext.
+// ListConfigurationRevisionsWithContext indicates an expected call of ListConfigurationRevisionsWithContext
 func (mr *MockMQAPIMockRecorder) ListConfigurationRevisionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationRevisionsWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurationRevisionsWithContext), varargs...)
 }
 
-// ListConfigurations mocks base method.
+// ListConfigurations mocks base method
 func (m *MockMQAPI) ListConfigurations(arg0 *mq.ListConfigurationsInput) (*mq.ListConfigurationsResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListConfigurations", arg0)
@@ -828,13 +594,13 @@ func (m *MockMQAPI) ListConfigurations(arg0 *mq.ListConfigurationsInput) (*mq.Li
 	return ret0, ret1
 }
 
-// ListConfigurations indicates an expected call of ListConfigurations.
+// ListConfigurations indicates an expected call of ListConfigurations
 func (mr *MockMQAPIMockRecorder) ListConfigurations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurations", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurations), arg0)
 }
 
-// ListConfigurationsRequest mocks base method.
+// ListConfigurationsRequest mocks base method
 func (m *MockMQAPI) ListConfigurationsRequest(arg0 *mq.ListConfigurationsInput) (*request.Request, *mq.ListConfigurationsResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListConfigurationsRequest", arg0)
@@ -843,14 +609,14 @@ func (m *MockMQAPI) ListConfigurationsRequest(arg0 *mq.ListConfigurationsInput) 
 	return ret0, ret1
 }
 
-// ListConfigurationsRequest indicates an expected call of ListConfigurationsRequest.
+// ListConfigurationsRequest indicates an expected call of ListConfigurationsRequest
 func (mr *MockMQAPIMockRecorder) ListConfigurationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationsRequest", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurationsRequest), arg0)
 }
 
-// ListConfigurationsWithContext mocks base method.
-func (m *MockMQAPI) ListConfigurationsWithContext(arg0 context.Context, arg1 *mq.ListConfigurationsInput, arg2 ...request.Option) (*mq.ListConfigurationsResponse, error) {
+// ListConfigurationsWithContext mocks base method
+func (m *MockMQAPI) ListConfigurationsWithContext(arg0 aws.Context, arg1 *mq.ListConfigurationsInput, arg2 ...request.Option) (*mq.ListConfigurationsResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -862,64 +628,14 @@ func (m *MockMQAPI) ListConfigurationsWithContext(arg0 context.Context, arg1 *mq
 	return ret0, ret1
 }
 
-// ListConfigurationsWithContext indicates an expected call of ListConfigurationsWithContext.
+// ListConfigurationsWithContext indicates an expected call of ListConfigurationsWithContext
 func (mr *MockMQAPIMockRecorder) ListConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationsWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListConfigurationsWithContext), varargs...)
 }
 
-// ListTags mocks base method.
-func (m *MockMQAPI) ListTags(arg0 *mq.ListTagsInput) (*mq.ListTagsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTags", arg0)
-	ret0, _ := ret[0].(*mq.ListTagsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTags indicates an expected call of ListTags.
-func (mr *MockMQAPIMockRecorder) ListTags(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTags", reflect.TypeOf((*MockMQAPI)(nil).ListTags), arg0)
-}
-
-// ListTagsRequest mocks base method.
-func (m *MockMQAPI) ListTagsRequest(arg0 *mq.ListTagsInput) (*request.Request, *mq.ListTagsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mq.ListTagsOutput)
-	return ret0, ret1
-}
-
-// ListTagsRequest indicates an expected call of ListTagsRequest.
-func (mr *MockMQAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsRequest", reflect.TypeOf((*MockMQAPI)(nil).ListTagsRequest), arg0)
-}
-
-// ListTagsWithContext mocks base method.
-func (m *MockMQAPI) ListTagsWithContext(arg0 context.Context, arg1 *mq.ListTagsInput, arg2 ...request.Option) (*mq.ListTagsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsWithContext", varargs...)
-	ret0, _ := ret[0].(*mq.ListTagsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsWithContext indicates an expected call of ListTagsWithContext.
-func (mr *MockMQAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListTagsWithContext), varargs...)
-}
-
-// ListUsers mocks base method.
+// ListUsers mocks base method
 func (m *MockMQAPI) ListUsers(arg0 *mq.ListUsersInput) (*mq.ListUsersResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUsers", arg0)
@@ -928,13 +644,13 @@ func (m *MockMQAPI) ListUsers(arg0 *mq.ListUsersInput) (*mq.ListUsersResponse, e
 	return ret0, ret1
 }
 
-// ListUsers indicates an expected call of ListUsers.
+// ListUsers indicates an expected call of ListUsers
 func (mr *MockMQAPIMockRecorder) ListUsers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsers", reflect.TypeOf((*MockMQAPI)(nil).ListUsers), arg0)
 }
 
-// ListUsersRequest mocks base method.
+// ListUsersRequest mocks base method
 func (m *MockMQAPI) ListUsersRequest(arg0 *mq.ListUsersInput) (*request.Request, *mq.ListUsersResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListUsersRequest", arg0)
@@ -943,14 +659,14 @@ func (m *MockMQAPI) ListUsersRequest(arg0 *mq.ListUsersInput) (*request.Request,
 	return ret0, ret1
 }
 
-// ListUsersRequest indicates an expected call of ListUsersRequest.
+// ListUsersRequest indicates an expected call of ListUsersRequest
 func (mr *MockMQAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersRequest", reflect.TypeOf((*MockMQAPI)(nil).ListUsersRequest), arg0)
 }
 
-// ListUsersWithContext mocks base method.
-func (m *MockMQAPI) ListUsersWithContext(arg0 context.Context, arg1 *mq.ListUsersInput, arg2 ...request.Option) (*mq.ListUsersResponse, error) {
+// ListUsersWithContext mocks base method
+func (m *MockMQAPI) ListUsersWithContext(arg0 aws.Context, arg1 *mq.ListUsersInput, arg2 ...request.Option) (*mq.ListUsersResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -962,14 +678,14 @@ func (m *MockMQAPI) ListUsersWithContext(arg0 context.Context, arg1 *mq.ListUser
 	return ret0, ret1
 }
 
-// ListUsersWithContext indicates an expected call of ListUsersWithContext.
+// ListUsersWithContext indicates an expected call of ListUsersWithContext
 func (mr *MockMQAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListUsersWithContext), varargs...)
 }
 
-// RebootBroker mocks base method.
+// RebootBroker mocks base method
 func (m *MockMQAPI) RebootBroker(arg0 *mq.RebootBrokerInput) (*mq.RebootBrokerOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RebootBroker", arg0)
@@ -978,13 +694,13 @@ func (m *MockMQAPI) RebootBroker(arg0 *mq.RebootBrokerInput) (*mq.RebootBrokerOu
 	return ret0, ret1
 }
 
-// RebootBroker indicates an expected call of RebootBroker.
+// RebootBroker indicates an expected call of RebootBroker
 func (mr *MockMQAPIMockRecorder) RebootBroker(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootBroker", reflect.TypeOf((*MockMQAPI)(nil).RebootBroker), arg0)
 }
 
-// RebootBrokerRequest mocks base method.
+// RebootBrokerRequest mocks base method
 func (m *MockMQAPI) RebootBrokerRequest(arg0 *mq.RebootBrokerInput) (*request.Request, *mq.RebootBrokerOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RebootBrokerRequest", arg0)
@@ -993,14 +709,14 @@ func (m *MockMQAPI) RebootBrokerRequest(arg0 *mq.RebootBrokerInput) (*request.Re
 	return ret0, ret1
 }
 
-// RebootBrokerRequest indicates an expected call of RebootBrokerRequest.
+// RebootBrokerRequest indicates an expected call of RebootBrokerRequest
 func (mr *MockMQAPIMockRecorder) RebootBrokerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootBrokerRequest", reflect.TypeOf((*MockMQAPI)(nil).RebootBrokerRequest), arg0)
 }
 
-// RebootBrokerWithContext mocks base method.
-func (m *MockMQAPI) RebootBrokerWithContext(arg0 context.Context, arg1 *mq.RebootBrokerInput, arg2 ...request.Option) (*mq.RebootBrokerOutput, error) {
+// RebootBrokerWithContext mocks base method
+func (m *MockMQAPI) RebootBrokerWithContext(arg0 aws.Context, arg1 *mq.RebootBrokerInput, arg2 ...request.Option) (*mq.RebootBrokerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1012,14 +728,14 @@ func (m *MockMQAPI) RebootBrokerWithContext(arg0 context.Context, arg1 *mq.Reboo
 	return ret0, ret1
 }
 
-// RebootBrokerWithContext indicates an expected call of RebootBrokerWithContext.
+// RebootBrokerWithContext indicates an expected call of RebootBrokerWithContext
 func (mr *MockMQAPIMockRecorder) RebootBrokerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootBrokerWithContext", reflect.TypeOf((*MockMQAPI)(nil).RebootBrokerWithContext), varargs...)
 }
 
-// UpdateBroker mocks base method.
+// UpdateBroker mocks base method
 func (m *MockMQAPI) UpdateBroker(arg0 *mq.UpdateBrokerRequest) (*mq.UpdateBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBroker", arg0)
@@ -1028,13 +744,13 @@ func (m *MockMQAPI) UpdateBroker(arg0 *mq.UpdateBrokerRequest) (*mq.UpdateBroker
 	return ret0, ret1
 }
 
-// UpdateBroker indicates an expected call of UpdateBroker.
+// UpdateBroker indicates an expected call of UpdateBroker
 func (mr *MockMQAPIMockRecorder) UpdateBroker(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBroker", reflect.TypeOf((*MockMQAPI)(nil).UpdateBroker), arg0)
 }
 
-// UpdateBrokerRequest mocks base method.
+// UpdateBrokerRequest mocks base method
 func (m *MockMQAPI) UpdateBrokerRequest(arg0 *mq.UpdateBrokerRequest) (*request.Request, *mq.UpdateBrokerResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBrokerRequest", arg0)
@@ -1043,14 +759,14 @@ func (m *MockMQAPI) UpdateBrokerRequest(arg0 *mq.UpdateBrokerRequest) (*request.
 	return ret0, ret1
 }
 
-// UpdateBrokerRequest indicates an expected call of UpdateBrokerRequest.
+// UpdateBrokerRequest indicates an expected call of UpdateBrokerRequest
 func (mr *MockMQAPIMockRecorder) UpdateBrokerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerRequest", reflect.TypeOf((*MockMQAPI)(nil).UpdateBrokerRequest), arg0)
 }
 
-// UpdateBrokerWithContext mocks base method.
-func (m *MockMQAPI) UpdateBrokerWithContext(arg0 context.Context, arg1 *mq.UpdateBrokerRequest, arg2 ...request.Option) (*mq.UpdateBrokerResponse, error) {
+// UpdateBrokerWithContext mocks base method
+func (m *MockMQAPI) UpdateBrokerWithContext(arg0 aws.Context, arg1 *mq.UpdateBrokerRequest, arg2 ...request.Option) (*mq.UpdateBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1062,14 +778,14 @@ func (m *MockMQAPI) UpdateBrokerWithContext(arg0 context.Context, arg1 *mq.Updat
 	return ret0, ret1
 }
 
-// UpdateBrokerWithContext indicates an expected call of UpdateBrokerWithContext.
+// UpdateBrokerWithContext indicates an expected call of UpdateBrokerWithContext
 func (mr *MockMQAPIMockRecorder) UpdateBrokerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerWithContext", reflect.TypeOf((*MockMQAPI)(nil).UpdateBrokerWithContext), varargs...)
 }
 
-// UpdateConfiguration mocks base method.
+// UpdateConfiguration mocks base method
 func (m *MockMQAPI) UpdateConfiguration(arg0 *mq.UpdateConfigurationRequest) (*mq.UpdateConfigurationResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateConfiguration", arg0)
@@ -1078,13 +794,13 @@ func (m *MockMQAPI) UpdateConfiguration(arg0 *mq.UpdateConfigurationRequest) (*m
 	return ret0, ret1
 }
 
-// UpdateConfiguration indicates an expected call of UpdateConfiguration.
+// UpdateConfiguration indicates an expected call of UpdateConfiguration
 func (mr *MockMQAPIMockRecorder) UpdateConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguration", reflect.TypeOf((*MockMQAPI)(nil).UpdateConfiguration), arg0)
 }
 
-// UpdateConfigurationRequest mocks base method.
+// UpdateConfigurationRequest mocks base method
 func (m *MockMQAPI) UpdateConfigurationRequest(arg0 *mq.UpdateConfigurationRequest) (*request.Request, *mq.UpdateConfigurationResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateConfigurationRequest", arg0)
@@ -1093,14 +809,14 @@ func (m *MockMQAPI) UpdateConfigurationRequest(arg0 *mq.UpdateConfigurationReque
 	return ret0, ret1
 }
 
-// UpdateConfigurationRequest indicates an expected call of UpdateConfigurationRequest.
+// UpdateConfigurationRequest indicates an expected call of UpdateConfigurationRequest
 func (mr *MockMQAPIMockRecorder) UpdateConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationRequest", reflect.TypeOf((*MockMQAPI)(nil).UpdateConfigurationRequest), arg0)
 }
 
-// UpdateConfigurationWithContext mocks base method.
-func (m *MockMQAPI) UpdateConfigurationWithContext(arg0 context.Context, arg1 *mq.UpdateConfigurationRequest, arg2 ...request.Option) (*mq.UpdateConfigurationResponse, error) {
+// UpdateConfigurationWithContext mocks base method
+func (m *MockMQAPI) UpdateConfigurationWithContext(arg0 aws.Context, arg1 *mq.UpdateConfigurationRequest, arg2 ...request.Option) (*mq.UpdateConfigurationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1112,14 +828,14 @@ func (m *MockMQAPI) UpdateConfigurationWithContext(arg0 context.Context, arg1 *m
 	return ret0, ret1
 }
 
-// UpdateConfigurationWithContext indicates an expected call of UpdateConfigurationWithContext.
+// UpdateConfigurationWithContext indicates an expected call of UpdateConfigurationWithContext
 func (mr *MockMQAPIMockRecorder) UpdateConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationWithContext", reflect.TypeOf((*MockMQAPI)(nil).UpdateConfigurationWithContext), varargs...)
 }
 
-// UpdateUser mocks base method.
+// UpdateUser mocks base method
 func (m *MockMQAPI) UpdateUser(arg0 *mq.UpdateUserRequest) (*mq.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUser", arg0)
@@ -1128,13 +844,13 @@ func (m *MockMQAPI) UpdateUser(arg0 *mq.UpdateUserRequest) (*mq.UpdateUserOutput
 	return ret0, ret1
 }
 
-// UpdateUser indicates an expected call of UpdateUser.
+// UpdateUser indicates an expected call of UpdateUser
 func (mr *MockMQAPIMockRecorder) UpdateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUser", reflect.TypeOf((*MockMQAPI)(nil).UpdateUser), arg0)
 }
 
-// UpdateUserRequest mocks base method.
+// UpdateUserRequest mocks base method
 func (m *MockMQAPI) UpdateUserRequest(arg0 *mq.UpdateUserRequest) (*request.Request, *mq.UpdateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUserRequest", arg0)
@@ -1143,14 +859,14 @@ func (m *MockMQAPI) UpdateUserRequest(arg0 *mq.UpdateUserRequest) (*request.Requ
 	return ret0, ret1
 }
 
-// UpdateUserRequest indicates an expected call of UpdateUserRequest.
+// UpdateUserRequest indicates an expected call of UpdateUserRequest
 func (mr *MockMQAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserRequest", reflect.TypeOf((*MockMQAPI)(nil).UpdateUserRequest), arg0)
 }
 
-// UpdateUserWithContext mocks base method.
-func (m *MockMQAPI) UpdateUserWithContext(arg0 context.Context, arg1 *mq.UpdateUserRequest, arg2 ...request.Option) (*mq.UpdateUserOutput, error) {
+// UpdateUserWithContext mocks base method
+func (m *MockMQAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *mq.UpdateUserRequest, arg2 ...request.Option) (*mq.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1162,7 +878,7 @@ func (m *MockMQAPI) UpdateUserWithContext(arg0 context.Context, arg1 *mq.UpdateU
 	return ret0, ret1
 }
 
-// UpdateUserWithContext indicates an expected call of UpdateUserWithContext.
+// UpdateUserWithContext indicates an expected call of UpdateUserWithContext
 func (mr *MockMQAPIMockRecorder) UpdateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

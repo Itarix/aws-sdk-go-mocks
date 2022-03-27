@@ -5,38 +5,37 @@
 package shieldmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	shield "github.com/aws/aws-sdk-go/service/shield"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockShieldAPI is a mock of ShieldAPI interface.
+// MockShieldAPI is a mock of ShieldAPI interface
 type MockShieldAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockShieldAPIMockRecorder
 }
 
-// MockShieldAPIMockRecorder is the mock recorder for MockShieldAPI.
+// MockShieldAPIMockRecorder is the mock recorder for MockShieldAPI
 type MockShieldAPIMockRecorder struct {
 	mock *MockShieldAPI
 }
 
-// NewMockShieldAPI creates a new mock instance.
+// NewMockShieldAPI creates a new mock instance
 func NewMockShieldAPI(ctrl *gomock.Controller) *MockShieldAPI {
 	mock := &MockShieldAPI{ctrl: ctrl}
 	mock.recorder = &MockShieldAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockShieldAPI) EXPECT() *MockShieldAPIMockRecorder {
 	return m.recorder
 }
 
-// AssociateDRTLogBucket mocks base method.
+// AssociateDRTLogBucket mocks base method
 func (m *MockShieldAPI) AssociateDRTLogBucket(arg0 *shield.AssociateDRTLogBucketInput) (*shield.AssociateDRTLogBucketOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDRTLogBucket", arg0)
@@ -45,13 +44,13 @@ func (m *MockShieldAPI) AssociateDRTLogBucket(arg0 *shield.AssociateDRTLogBucket
 	return ret0, ret1
 }
 
-// AssociateDRTLogBucket indicates an expected call of AssociateDRTLogBucket.
+// AssociateDRTLogBucket indicates an expected call of AssociateDRTLogBucket
 func (mr *MockShieldAPIMockRecorder) AssociateDRTLogBucket(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTLogBucket", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTLogBucket), arg0)
 }
 
-// AssociateDRTLogBucketRequest mocks base method.
+// AssociateDRTLogBucketRequest mocks base method
 func (m *MockShieldAPI) AssociateDRTLogBucketRequest(arg0 *shield.AssociateDRTLogBucketInput) (*request.Request, *shield.AssociateDRTLogBucketOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDRTLogBucketRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockShieldAPI) AssociateDRTLogBucketRequest(arg0 *shield.AssociateDRTLo
 	return ret0, ret1
 }
 
-// AssociateDRTLogBucketRequest indicates an expected call of AssociateDRTLogBucketRequest.
+// AssociateDRTLogBucketRequest indicates an expected call of AssociateDRTLogBucketRequest
 func (mr *MockShieldAPIMockRecorder) AssociateDRTLogBucketRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTLogBucketRequest", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTLogBucketRequest), arg0)
 }
 
-// AssociateDRTLogBucketWithContext mocks base method.
-func (m *MockShieldAPI) AssociateDRTLogBucketWithContext(arg0 context.Context, arg1 *shield.AssociateDRTLogBucketInput, arg2 ...request.Option) (*shield.AssociateDRTLogBucketOutput, error) {
+// AssociateDRTLogBucketWithContext mocks base method
+func (m *MockShieldAPI) AssociateDRTLogBucketWithContext(arg0 aws.Context, arg1 *shield.AssociateDRTLogBucketInput, arg2 ...request.Option) (*shield.AssociateDRTLogBucketOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockShieldAPI) AssociateDRTLogBucketWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// AssociateDRTLogBucketWithContext indicates an expected call of AssociateDRTLogBucketWithContext.
+// AssociateDRTLogBucketWithContext indicates an expected call of AssociateDRTLogBucketWithContext
 func (mr *MockShieldAPIMockRecorder) AssociateDRTLogBucketWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTLogBucketWithContext", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTLogBucketWithContext), varargs...)
 }
 
-// AssociateDRTRole mocks base method.
+// AssociateDRTRole mocks base method
 func (m *MockShieldAPI) AssociateDRTRole(arg0 *shield.AssociateDRTRoleInput) (*shield.AssociateDRTRoleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDRTRole", arg0)
@@ -95,13 +94,13 @@ func (m *MockShieldAPI) AssociateDRTRole(arg0 *shield.AssociateDRTRoleInput) (*s
 	return ret0, ret1
 }
 
-// AssociateDRTRole indicates an expected call of AssociateDRTRole.
+// AssociateDRTRole indicates an expected call of AssociateDRTRole
 func (mr *MockShieldAPIMockRecorder) AssociateDRTRole(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTRole", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTRole), arg0)
 }
 
-// AssociateDRTRoleRequest mocks base method.
+// AssociateDRTRoleRequest mocks base method
 func (m *MockShieldAPI) AssociateDRTRoleRequest(arg0 *shield.AssociateDRTRoleInput) (*request.Request, *shield.AssociateDRTRoleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDRTRoleRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockShieldAPI) AssociateDRTRoleRequest(arg0 *shield.AssociateDRTRoleInp
 	return ret0, ret1
 }
 
-// AssociateDRTRoleRequest indicates an expected call of AssociateDRTRoleRequest.
+// AssociateDRTRoleRequest indicates an expected call of AssociateDRTRoleRequest
 func (mr *MockShieldAPIMockRecorder) AssociateDRTRoleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTRoleRequest", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTRoleRequest), arg0)
 }
 
-// AssociateDRTRoleWithContext mocks base method.
-func (m *MockShieldAPI) AssociateDRTRoleWithContext(arg0 context.Context, arg1 *shield.AssociateDRTRoleInput, arg2 ...request.Option) (*shield.AssociateDRTRoleOutput, error) {
+// AssociateDRTRoleWithContext mocks base method
+func (m *MockShieldAPI) AssociateDRTRoleWithContext(arg0 aws.Context, arg1 *shield.AssociateDRTRoleInput, arg2 ...request.Option) (*shield.AssociateDRTRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,114 +128,14 @@ func (m *MockShieldAPI) AssociateDRTRoleWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// AssociateDRTRoleWithContext indicates an expected call of AssociateDRTRoleWithContext.
+// AssociateDRTRoleWithContext indicates an expected call of AssociateDRTRoleWithContext
 func (mr *MockShieldAPIMockRecorder) AssociateDRTRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTRoleWithContext", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTRoleWithContext), varargs...)
 }
 
-// AssociateHealthCheck mocks base method.
-func (m *MockShieldAPI) AssociateHealthCheck(arg0 *shield.AssociateHealthCheckInput) (*shield.AssociateHealthCheckOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateHealthCheck", arg0)
-	ret0, _ := ret[0].(*shield.AssociateHealthCheckOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateHealthCheck indicates an expected call of AssociateHealthCheck.
-func (mr *MockShieldAPIMockRecorder) AssociateHealthCheck(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateHealthCheck", reflect.TypeOf((*MockShieldAPI)(nil).AssociateHealthCheck), arg0)
-}
-
-// AssociateHealthCheckRequest mocks base method.
-func (m *MockShieldAPI) AssociateHealthCheckRequest(arg0 *shield.AssociateHealthCheckInput) (*request.Request, *shield.AssociateHealthCheckOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateHealthCheckRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.AssociateHealthCheckOutput)
-	return ret0, ret1
-}
-
-// AssociateHealthCheckRequest indicates an expected call of AssociateHealthCheckRequest.
-func (mr *MockShieldAPIMockRecorder) AssociateHealthCheckRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateHealthCheckRequest", reflect.TypeOf((*MockShieldAPI)(nil).AssociateHealthCheckRequest), arg0)
-}
-
-// AssociateHealthCheckWithContext mocks base method.
-func (m *MockShieldAPI) AssociateHealthCheckWithContext(arg0 context.Context, arg1 *shield.AssociateHealthCheckInput, arg2 ...request.Option) (*shield.AssociateHealthCheckOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateHealthCheckWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.AssociateHealthCheckOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateHealthCheckWithContext indicates an expected call of AssociateHealthCheckWithContext.
-func (mr *MockShieldAPIMockRecorder) AssociateHealthCheckWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateHealthCheckWithContext", reflect.TypeOf((*MockShieldAPI)(nil).AssociateHealthCheckWithContext), varargs...)
-}
-
-// AssociateProactiveEngagementDetails mocks base method.
-func (m *MockShieldAPI) AssociateProactiveEngagementDetails(arg0 *shield.AssociateProactiveEngagementDetailsInput) (*shield.AssociateProactiveEngagementDetailsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateProactiveEngagementDetails", arg0)
-	ret0, _ := ret[0].(*shield.AssociateProactiveEngagementDetailsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateProactiveEngagementDetails indicates an expected call of AssociateProactiveEngagementDetails.
-func (mr *MockShieldAPIMockRecorder) AssociateProactiveEngagementDetails(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProactiveEngagementDetails", reflect.TypeOf((*MockShieldAPI)(nil).AssociateProactiveEngagementDetails), arg0)
-}
-
-// AssociateProactiveEngagementDetailsRequest mocks base method.
-func (m *MockShieldAPI) AssociateProactiveEngagementDetailsRequest(arg0 *shield.AssociateProactiveEngagementDetailsInput) (*request.Request, *shield.AssociateProactiveEngagementDetailsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateProactiveEngagementDetailsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.AssociateProactiveEngagementDetailsOutput)
-	return ret0, ret1
-}
-
-// AssociateProactiveEngagementDetailsRequest indicates an expected call of AssociateProactiveEngagementDetailsRequest.
-func (mr *MockShieldAPIMockRecorder) AssociateProactiveEngagementDetailsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProactiveEngagementDetailsRequest", reflect.TypeOf((*MockShieldAPI)(nil).AssociateProactiveEngagementDetailsRequest), arg0)
-}
-
-// AssociateProactiveEngagementDetailsWithContext mocks base method.
-func (m *MockShieldAPI) AssociateProactiveEngagementDetailsWithContext(arg0 context.Context, arg1 *shield.AssociateProactiveEngagementDetailsInput, arg2 ...request.Option) (*shield.AssociateProactiveEngagementDetailsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateProactiveEngagementDetailsWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.AssociateProactiveEngagementDetailsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateProactiveEngagementDetailsWithContext indicates an expected call of AssociateProactiveEngagementDetailsWithContext.
-func (mr *MockShieldAPIMockRecorder) AssociateProactiveEngagementDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProactiveEngagementDetailsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).AssociateProactiveEngagementDetailsWithContext), varargs...)
-}
-
-// CreateProtection mocks base method.
+// CreateProtection mocks base method
 func (m *MockShieldAPI) CreateProtection(arg0 *shield.CreateProtectionInput) (*shield.CreateProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProtection", arg0)
@@ -245,63 +144,13 @@ func (m *MockShieldAPI) CreateProtection(arg0 *shield.CreateProtectionInput) (*s
 	return ret0, ret1
 }
 
-// CreateProtection indicates an expected call of CreateProtection.
+// CreateProtection indicates an expected call of CreateProtection
 func (mr *MockShieldAPIMockRecorder) CreateProtection(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtection", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtection), arg0)
 }
 
-// CreateProtectionGroup mocks base method.
-func (m *MockShieldAPI) CreateProtectionGroup(arg0 *shield.CreateProtectionGroupInput) (*shield.CreateProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateProtectionGroup", arg0)
-	ret0, _ := ret[0].(*shield.CreateProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateProtectionGroup indicates an expected call of CreateProtectionGroup.
-func (mr *MockShieldAPIMockRecorder) CreateProtectionGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionGroup), arg0)
-}
-
-// CreateProtectionGroupRequest mocks base method.
-func (m *MockShieldAPI) CreateProtectionGroupRequest(arg0 *shield.CreateProtectionGroupInput) (*request.Request, *shield.CreateProtectionGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateProtectionGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.CreateProtectionGroupOutput)
-	return ret0, ret1
-}
-
-// CreateProtectionGroupRequest indicates an expected call of CreateProtectionGroupRequest.
-func (mr *MockShieldAPIMockRecorder) CreateProtectionGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionGroupRequest), arg0)
-}
-
-// CreateProtectionGroupWithContext mocks base method.
-func (m *MockShieldAPI) CreateProtectionGroupWithContext(arg0 context.Context, arg1 *shield.CreateProtectionGroupInput, arg2 ...request.Option) (*shield.CreateProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateProtectionGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.CreateProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateProtectionGroupWithContext indicates an expected call of CreateProtectionGroupWithContext.
-func (mr *MockShieldAPIMockRecorder) CreateProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionGroupWithContext), varargs...)
-}
-
-// CreateProtectionRequest mocks base method.
+// CreateProtectionRequest mocks base method
 func (m *MockShieldAPI) CreateProtectionRequest(arg0 *shield.CreateProtectionInput) (*request.Request, *shield.CreateProtectionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProtectionRequest", arg0)
@@ -310,14 +159,14 @@ func (m *MockShieldAPI) CreateProtectionRequest(arg0 *shield.CreateProtectionInp
 	return ret0, ret1
 }
 
-// CreateProtectionRequest indicates an expected call of CreateProtectionRequest.
+// CreateProtectionRequest indicates an expected call of CreateProtectionRequest
 func (mr *MockShieldAPIMockRecorder) CreateProtectionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionRequest", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionRequest), arg0)
 }
 
-// CreateProtectionWithContext mocks base method.
-func (m *MockShieldAPI) CreateProtectionWithContext(arg0 context.Context, arg1 *shield.CreateProtectionInput, arg2 ...request.Option) (*shield.CreateProtectionOutput, error) {
+// CreateProtectionWithContext mocks base method
+func (m *MockShieldAPI) CreateProtectionWithContext(arg0 aws.Context, arg1 *shield.CreateProtectionInput, arg2 ...request.Option) (*shield.CreateProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +178,14 @@ func (m *MockShieldAPI) CreateProtectionWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// CreateProtectionWithContext indicates an expected call of CreateProtectionWithContext.
+// CreateProtectionWithContext indicates an expected call of CreateProtectionWithContext
 func (mr *MockShieldAPIMockRecorder) CreateProtectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionWithContext", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionWithContext), varargs...)
 }
 
-// CreateSubscription mocks base method.
+// CreateSubscription mocks base method
 func (m *MockShieldAPI) CreateSubscription(arg0 *shield.CreateSubscriptionInput) (*shield.CreateSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSubscription", arg0)
@@ -345,13 +194,13 @@ func (m *MockShieldAPI) CreateSubscription(arg0 *shield.CreateSubscriptionInput)
 	return ret0, ret1
 }
 
-// CreateSubscription indicates an expected call of CreateSubscription.
+// CreateSubscription indicates an expected call of CreateSubscription
 func (mr *MockShieldAPIMockRecorder) CreateSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscription", reflect.TypeOf((*MockShieldAPI)(nil).CreateSubscription), arg0)
 }
 
-// CreateSubscriptionRequest mocks base method.
+// CreateSubscriptionRequest mocks base method
 func (m *MockShieldAPI) CreateSubscriptionRequest(arg0 *shield.CreateSubscriptionInput) (*request.Request, *shield.CreateSubscriptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSubscriptionRequest", arg0)
@@ -360,14 +209,14 @@ func (m *MockShieldAPI) CreateSubscriptionRequest(arg0 *shield.CreateSubscriptio
 	return ret0, ret1
 }
 
-// CreateSubscriptionRequest indicates an expected call of CreateSubscriptionRequest.
+// CreateSubscriptionRequest indicates an expected call of CreateSubscriptionRequest
 func (mr *MockShieldAPIMockRecorder) CreateSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriptionRequest", reflect.TypeOf((*MockShieldAPI)(nil).CreateSubscriptionRequest), arg0)
 }
 
-// CreateSubscriptionWithContext mocks base method.
-func (m *MockShieldAPI) CreateSubscriptionWithContext(arg0 context.Context, arg1 *shield.CreateSubscriptionInput, arg2 ...request.Option) (*shield.CreateSubscriptionOutput, error) {
+// CreateSubscriptionWithContext mocks base method
+func (m *MockShieldAPI) CreateSubscriptionWithContext(arg0 aws.Context, arg1 *shield.CreateSubscriptionInput, arg2 ...request.Option) (*shield.CreateSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +228,14 @@ func (m *MockShieldAPI) CreateSubscriptionWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// CreateSubscriptionWithContext indicates an expected call of CreateSubscriptionWithContext.
+// CreateSubscriptionWithContext indicates an expected call of CreateSubscriptionWithContext
 func (mr *MockShieldAPIMockRecorder) CreateSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriptionWithContext", reflect.TypeOf((*MockShieldAPI)(nil).CreateSubscriptionWithContext), varargs...)
 }
 
-// DeleteProtection mocks base method.
+// DeleteProtection mocks base method
 func (m *MockShieldAPI) DeleteProtection(arg0 *shield.DeleteProtectionInput) (*shield.DeleteProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProtection", arg0)
@@ -395,63 +244,13 @@ func (m *MockShieldAPI) DeleteProtection(arg0 *shield.DeleteProtectionInput) (*s
 	return ret0, ret1
 }
 
-// DeleteProtection indicates an expected call of DeleteProtection.
+// DeleteProtection indicates an expected call of DeleteProtection
 func (mr *MockShieldAPIMockRecorder) DeleteProtection(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtection", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtection), arg0)
 }
 
-// DeleteProtectionGroup mocks base method.
-func (m *MockShieldAPI) DeleteProtectionGroup(arg0 *shield.DeleteProtectionGroupInput) (*shield.DeleteProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteProtectionGroup", arg0)
-	ret0, _ := ret[0].(*shield.DeleteProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteProtectionGroup indicates an expected call of DeleteProtectionGroup.
-func (mr *MockShieldAPIMockRecorder) DeleteProtectionGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionGroup), arg0)
-}
-
-// DeleteProtectionGroupRequest mocks base method.
-func (m *MockShieldAPI) DeleteProtectionGroupRequest(arg0 *shield.DeleteProtectionGroupInput) (*request.Request, *shield.DeleteProtectionGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteProtectionGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.DeleteProtectionGroupOutput)
-	return ret0, ret1
-}
-
-// DeleteProtectionGroupRequest indicates an expected call of DeleteProtectionGroupRequest.
-func (mr *MockShieldAPIMockRecorder) DeleteProtectionGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionGroupRequest), arg0)
-}
-
-// DeleteProtectionGroupWithContext mocks base method.
-func (m *MockShieldAPI) DeleteProtectionGroupWithContext(arg0 context.Context, arg1 *shield.DeleteProtectionGroupInput, arg2 ...request.Option) (*shield.DeleteProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteProtectionGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.DeleteProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteProtectionGroupWithContext indicates an expected call of DeleteProtectionGroupWithContext.
-func (mr *MockShieldAPIMockRecorder) DeleteProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionGroupWithContext), varargs...)
-}
-
-// DeleteProtectionRequest mocks base method.
+// DeleteProtectionRequest mocks base method
 func (m *MockShieldAPI) DeleteProtectionRequest(arg0 *shield.DeleteProtectionInput) (*request.Request, *shield.DeleteProtectionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProtectionRequest", arg0)
@@ -460,14 +259,14 @@ func (m *MockShieldAPI) DeleteProtectionRequest(arg0 *shield.DeleteProtectionInp
 	return ret0, ret1
 }
 
-// DeleteProtectionRequest indicates an expected call of DeleteProtectionRequest.
+// DeleteProtectionRequest indicates an expected call of DeleteProtectionRequest
 func (mr *MockShieldAPIMockRecorder) DeleteProtectionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionRequest", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionRequest), arg0)
 }
 
-// DeleteProtectionWithContext mocks base method.
-func (m *MockShieldAPI) DeleteProtectionWithContext(arg0 context.Context, arg1 *shield.DeleteProtectionInput, arg2 ...request.Option) (*shield.DeleteProtectionOutput, error) {
+// DeleteProtectionWithContext mocks base method
+func (m *MockShieldAPI) DeleteProtectionWithContext(arg0 aws.Context, arg1 *shield.DeleteProtectionInput, arg2 ...request.Option) (*shield.DeleteProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +278,14 @@ func (m *MockShieldAPI) DeleteProtectionWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteProtectionWithContext indicates an expected call of DeleteProtectionWithContext.
+// DeleteProtectionWithContext indicates an expected call of DeleteProtectionWithContext
 func (mr *MockShieldAPIMockRecorder) DeleteProtectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionWithContext), varargs...)
 }
 
-// DeleteSubscription mocks base method.
+// DeleteSubscription mocks base method
 func (m *MockShieldAPI) DeleteSubscription(arg0 *shield.DeleteSubscriptionInput) (*shield.DeleteSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSubscription", arg0)
@@ -495,13 +294,13 @@ func (m *MockShieldAPI) DeleteSubscription(arg0 *shield.DeleteSubscriptionInput)
 	return ret0, ret1
 }
 
-// DeleteSubscription indicates an expected call of DeleteSubscription.
+// DeleteSubscription indicates an expected call of DeleteSubscription
 func (mr *MockShieldAPIMockRecorder) DeleteSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscription", reflect.TypeOf((*MockShieldAPI)(nil).DeleteSubscription), arg0)
 }
 
-// DeleteSubscriptionRequest mocks base method.
+// DeleteSubscriptionRequest mocks base method
 func (m *MockShieldAPI) DeleteSubscriptionRequest(arg0 *shield.DeleteSubscriptionInput) (*request.Request, *shield.DeleteSubscriptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSubscriptionRequest", arg0)
@@ -510,14 +309,14 @@ func (m *MockShieldAPI) DeleteSubscriptionRequest(arg0 *shield.DeleteSubscriptio
 	return ret0, ret1
 }
 
-// DeleteSubscriptionRequest indicates an expected call of DeleteSubscriptionRequest.
+// DeleteSubscriptionRequest indicates an expected call of DeleteSubscriptionRequest
 func (mr *MockShieldAPIMockRecorder) DeleteSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriptionRequest", reflect.TypeOf((*MockShieldAPI)(nil).DeleteSubscriptionRequest), arg0)
 }
 
-// DeleteSubscriptionWithContext mocks base method.
-func (m *MockShieldAPI) DeleteSubscriptionWithContext(arg0 context.Context, arg1 *shield.DeleteSubscriptionInput, arg2 ...request.Option) (*shield.DeleteSubscriptionOutput, error) {
+// DeleteSubscriptionWithContext mocks base method
+func (m *MockShieldAPI) DeleteSubscriptionWithContext(arg0 aws.Context, arg1 *shield.DeleteSubscriptionInput, arg2 ...request.Option) (*shield.DeleteSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +328,14 @@ func (m *MockShieldAPI) DeleteSubscriptionWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeleteSubscriptionWithContext indicates an expected call of DeleteSubscriptionWithContext.
+// DeleteSubscriptionWithContext indicates an expected call of DeleteSubscriptionWithContext
 func (mr *MockShieldAPIMockRecorder) DeleteSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriptionWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DeleteSubscriptionWithContext), varargs...)
 }
 
-// DescribeAttack mocks base method.
+// DescribeAttack mocks base method
 func (m *MockShieldAPI) DescribeAttack(arg0 *shield.DescribeAttackInput) (*shield.DescribeAttackOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAttack", arg0)
@@ -545,13 +344,13 @@ func (m *MockShieldAPI) DescribeAttack(arg0 *shield.DescribeAttackInput) (*shiel
 	return ret0, ret1
 }
 
-// DescribeAttack indicates an expected call of DescribeAttack.
+// DescribeAttack indicates an expected call of DescribeAttack
 func (mr *MockShieldAPIMockRecorder) DescribeAttack(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttack", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttack), arg0)
 }
 
-// DescribeAttackRequest mocks base method.
+// DescribeAttackRequest mocks base method
 func (m *MockShieldAPI) DescribeAttackRequest(arg0 *shield.DescribeAttackInput) (*request.Request, *shield.DescribeAttackOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeAttackRequest", arg0)
@@ -560,64 +359,14 @@ func (m *MockShieldAPI) DescribeAttackRequest(arg0 *shield.DescribeAttackInput) 
 	return ret0, ret1
 }
 
-// DescribeAttackRequest indicates an expected call of DescribeAttackRequest.
+// DescribeAttackRequest indicates an expected call of DescribeAttackRequest
 func (mr *MockShieldAPIMockRecorder) DescribeAttackRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackRequest), arg0)
 }
 
-// DescribeAttackStatistics mocks base method.
-func (m *MockShieldAPI) DescribeAttackStatistics(arg0 *shield.DescribeAttackStatisticsInput) (*shield.DescribeAttackStatisticsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeAttackStatistics", arg0)
-	ret0, _ := ret[0].(*shield.DescribeAttackStatisticsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeAttackStatistics indicates an expected call of DescribeAttackStatistics.
-func (mr *MockShieldAPIMockRecorder) DescribeAttackStatistics(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackStatistics", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackStatistics), arg0)
-}
-
-// DescribeAttackStatisticsRequest mocks base method.
-func (m *MockShieldAPI) DescribeAttackStatisticsRequest(arg0 *shield.DescribeAttackStatisticsInput) (*request.Request, *shield.DescribeAttackStatisticsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeAttackStatisticsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.DescribeAttackStatisticsOutput)
-	return ret0, ret1
-}
-
-// DescribeAttackStatisticsRequest indicates an expected call of DescribeAttackStatisticsRequest.
-func (mr *MockShieldAPIMockRecorder) DescribeAttackStatisticsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackStatisticsRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackStatisticsRequest), arg0)
-}
-
-// DescribeAttackStatisticsWithContext mocks base method.
-func (m *MockShieldAPI) DescribeAttackStatisticsWithContext(arg0 context.Context, arg1 *shield.DescribeAttackStatisticsInput, arg2 ...request.Option) (*shield.DescribeAttackStatisticsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeAttackStatisticsWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.DescribeAttackStatisticsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeAttackStatisticsWithContext indicates an expected call of DescribeAttackStatisticsWithContext.
-func (mr *MockShieldAPIMockRecorder) DescribeAttackStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackStatisticsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackStatisticsWithContext), varargs...)
-}
-
-// DescribeAttackWithContext mocks base method.
-func (m *MockShieldAPI) DescribeAttackWithContext(arg0 context.Context, arg1 *shield.DescribeAttackInput, arg2 ...request.Option) (*shield.DescribeAttackOutput, error) {
+// DescribeAttackWithContext mocks base method
+func (m *MockShieldAPI) DescribeAttackWithContext(arg0 aws.Context, arg1 *shield.DescribeAttackInput, arg2 ...request.Option) (*shield.DescribeAttackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +378,14 @@ func (m *MockShieldAPI) DescribeAttackWithContext(arg0 context.Context, arg1 *sh
 	return ret0, ret1
 }
 
-// DescribeAttackWithContext indicates an expected call of DescribeAttackWithContext.
+// DescribeAttackWithContext indicates an expected call of DescribeAttackWithContext
 func (mr *MockShieldAPIMockRecorder) DescribeAttackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackWithContext), varargs...)
 }
 
-// DescribeDRTAccess mocks base method.
+// DescribeDRTAccess mocks base method
 func (m *MockShieldAPI) DescribeDRTAccess(arg0 *shield.DescribeDRTAccessInput) (*shield.DescribeDRTAccessOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDRTAccess", arg0)
@@ -645,13 +394,13 @@ func (m *MockShieldAPI) DescribeDRTAccess(arg0 *shield.DescribeDRTAccessInput) (
 	return ret0, ret1
 }
 
-// DescribeDRTAccess indicates an expected call of DescribeDRTAccess.
+// DescribeDRTAccess indicates an expected call of DescribeDRTAccess
 func (mr *MockShieldAPIMockRecorder) DescribeDRTAccess(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDRTAccess", reflect.TypeOf((*MockShieldAPI)(nil).DescribeDRTAccess), arg0)
 }
 
-// DescribeDRTAccessRequest mocks base method.
+// DescribeDRTAccessRequest mocks base method
 func (m *MockShieldAPI) DescribeDRTAccessRequest(arg0 *shield.DescribeDRTAccessInput) (*request.Request, *shield.DescribeDRTAccessOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDRTAccessRequest", arg0)
@@ -660,14 +409,14 @@ func (m *MockShieldAPI) DescribeDRTAccessRequest(arg0 *shield.DescribeDRTAccessI
 	return ret0, ret1
 }
 
-// DescribeDRTAccessRequest indicates an expected call of DescribeDRTAccessRequest.
+// DescribeDRTAccessRequest indicates an expected call of DescribeDRTAccessRequest
 func (mr *MockShieldAPIMockRecorder) DescribeDRTAccessRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDRTAccessRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeDRTAccessRequest), arg0)
 }
 
-// DescribeDRTAccessWithContext mocks base method.
-func (m *MockShieldAPI) DescribeDRTAccessWithContext(arg0 context.Context, arg1 *shield.DescribeDRTAccessInput, arg2 ...request.Option) (*shield.DescribeDRTAccessOutput, error) {
+// DescribeDRTAccessWithContext mocks base method
+func (m *MockShieldAPI) DescribeDRTAccessWithContext(arg0 aws.Context, arg1 *shield.DescribeDRTAccessInput, arg2 ...request.Option) (*shield.DescribeDRTAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +428,14 @@ func (m *MockShieldAPI) DescribeDRTAccessWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeDRTAccessWithContext indicates an expected call of DescribeDRTAccessWithContext.
+// DescribeDRTAccessWithContext indicates an expected call of DescribeDRTAccessWithContext
 func (mr *MockShieldAPIMockRecorder) DescribeDRTAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDRTAccessWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeDRTAccessWithContext), varargs...)
 }
 
-// DescribeEmergencyContactSettings mocks base method.
+// DescribeEmergencyContactSettings mocks base method
 func (m *MockShieldAPI) DescribeEmergencyContactSettings(arg0 *shield.DescribeEmergencyContactSettingsInput) (*shield.DescribeEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEmergencyContactSettings", arg0)
@@ -695,13 +444,13 @@ func (m *MockShieldAPI) DescribeEmergencyContactSettings(arg0 *shield.DescribeEm
 	return ret0, ret1
 }
 
-// DescribeEmergencyContactSettings indicates an expected call of DescribeEmergencyContactSettings.
+// DescribeEmergencyContactSettings indicates an expected call of DescribeEmergencyContactSettings
 func (mr *MockShieldAPIMockRecorder) DescribeEmergencyContactSettings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmergencyContactSettings", reflect.TypeOf((*MockShieldAPI)(nil).DescribeEmergencyContactSettings), arg0)
 }
 
-// DescribeEmergencyContactSettingsRequest mocks base method.
+// DescribeEmergencyContactSettingsRequest mocks base method
 func (m *MockShieldAPI) DescribeEmergencyContactSettingsRequest(arg0 *shield.DescribeEmergencyContactSettingsInput) (*request.Request, *shield.DescribeEmergencyContactSettingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEmergencyContactSettingsRequest", arg0)
@@ -710,14 +459,14 @@ func (m *MockShieldAPI) DescribeEmergencyContactSettingsRequest(arg0 *shield.Des
 	return ret0, ret1
 }
 
-// DescribeEmergencyContactSettingsRequest indicates an expected call of DescribeEmergencyContactSettingsRequest.
+// DescribeEmergencyContactSettingsRequest indicates an expected call of DescribeEmergencyContactSettingsRequest
 func (mr *MockShieldAPIMockRecorder) DescribeEmergencyContactSettingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmergencyContactSettingsRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeEmergencyContactSettingsRequest), arg0)
 }
 
-// DescribeEmergencyContactSettingsWithContext mocks base method.
-func (m *MockShieldAPI) DescribeEmergencyContactSettingsWithContext(arg0 context.Context, arg1 *shield.DescribeEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.DescribeEmergencyContactSettingsOutput, error) {
+// DescribeEmergencyContactSettingsWithContext mocks base method
+func (m *MockShieldAPI) DescribeEmergencyContactSettingsWithContext(arg0 aws.Context, arg1 *shield.DescribeEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.DescribeEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +478,14 @@ func (m *MockShieldAPI) DescribeEmergencyContactSettingsWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DescribeEmergencyContactSettingsWithContext indicates an expected call of DescribeEmergencyContactSettingsWithContext.
+// DescribeEmergencyContactSettingsWithContext indicates an expected call of DescribeEmergencyContactSettingsWithContext
 func (mr *MockShieldAPIMockRecorder) DescribeEmergencyContactSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmergencyContactSettingsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeEmergencyContactSettingsWithContext), varargs...)
 }
 
-// DescribeProtection mocks base method.
+// DescribeProtection mocks base method
 func (m *MockShieldAPI) DescribeProtection(arg0 *shield.DescribeProtectionInput) (*shield.DescribeProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeProtection", arg0)
@@ -745,63 +494,13 @@ func (m *MockShieldAPI) DescribeProtection(arg0 *shield.DescribeProtectionInput)
 	return ret0, ret1
 }
 
-// DescribeProtection indicates an expected call of DescribeProtection.
+// DescribeProtection indicates an expected call of DescribeProtection
 func (mr *MockShieldAPIMockRecorder) DescribeProtection(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtection", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtection), arg0)
 }
 
-// DescribeProtectionGroup mocks base method.
-func (m *MockShieldAPI) DescribeProtectionGroup(arg0 *shield.DescribeProtectionGroupInput) (*shield.DescribeProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeProtectionGroup", arg0)
-	ret0, _ := ret[0].(*shield.DescribeProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeProtectionGroup indicates an expected call of DescribeProtectionGroup.
-func (mr *MockShieldAPIMockRecorder) DescribeProtectionGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionGroup), arg0)
-}
-
-// DescribeProtectionGroupRequest mocks base method.
-func (m *MockShieldAPI) DescribeProtectionGroupRequest(arg0 *shield.DescribeProtectionGroupInput) (*request.Request, *shield.DescribeProtectionGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeProtectionGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.DescribeProtectionGroupOutput)
-	return ret0, ret1
-}
-
-// DescribeProtectionGroupRequest indicates an expected call of DescribeProtectionGroupRequest.
-func (mr *MockShieldAPIMockRecorder) DescribeProtectionGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionGroupRequest), arg0)
-}
-
-// DescribeProtectionGroupWithContext mocks base method.
-func (m *MockShieldAPI) DescribeProtectionGroupWithContext(arg0 context.Context, arg1 *shield.DescribeProtectionGroupInput, arg2 ...request.Option) (*shield.DescribeProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeProtectionGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.DescribeProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeProtectionGroupWithContext indicates an expected call of DescribeProtectionGroupWithContext.
-func (mr *MockShieldAPIMockRecorder) DescribeProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionGroupWithContext), varargs...)
-}
-
-// DescribeProtectionRequest mocks base method.
+// DescribeProtectionRequest mocks base method
 func (m *MockShieldAPI) DescribeProtectionRequest(arg0 *shield.DescribeProtectionInput) (*request.Request, *shield.DescribeProtectionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeProtectionRequest", arg0)
@@ -810,14 +509,14 @@ func (m *MockShieldAPI) DescribeProtectionRequest(arg0 *shield.DescribeProtectio
 	return ret0, ret1
 }
 
-// DescribeProtectionRequest indicates an expected call of DescribeProtectionRequest.
+// DescribeProtectionRequest indicates an expected call of DescribeProtectionRequest
 func (mr *MockShieldAPIMockRecorder) DescribeProtectionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionRequest), arg0)
 }
 
-// DescribeProtectionWithContext mocks base method.
-func (m *MockShieldAPI) DescribeProtectionWithContext(arg0 context.Context, arg1 *shield.DescribeProtectionInput, arg2 ...request.Option) (*shield.DescribeProtectionOutput, error) {
+// DescribeProtectionWithContext mocks base method
+func (m *MockShieldAPI) DescribeProtectionWithContext(arg0 aws.Context, arg1 *shield.DescribeProtectionInput, arg2 ...request.Option) (*shield.DescribeProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +528,14 @@ func (m *MockShieldAPI) DescribeProtectionWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DescribeProtectionWithContext indicates an expected call of DescribeProtectionWithContext.
+// DescribeProtectionWithContext indicates an expected call of DescribeProtectionWithContext
 func (mr *MockShieldAPIMockRecorder) DescribeProtectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionWithContext), varargs...)
 }
 
-// DescribeSubscription mocks base method.
+// DescribeSubscription mocks base method
 func (m *MockShieldAPI) DescribeSubscription(arg0 *shield.DescribeSubscriptionInput) (*shield.DescribeSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSubscription", arg0)
@@ -845,13 +544,13 @@ func (m *MockShieldAPI) DescribeSubscription(arg0 *shield.DescribeSubscriptionIn
 	return ret0, ret1
 }
 
-// DescribeSubscription indicates an expected call of DescribeSubscription.
+// DescribeSubscription indicates an expected call of DescribeSubscription
 func (mr *MockShieldAPIMockRecorder) DescribeSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubscription", reflect.TypeOf((*MockShieldAPI)(nil).DescribeSubscription), arg0)
 }
 
-// DescribeSubscriptionRequest mocks base method.
+// DescribeSubscriptionRequest mocks base method
 func (m *MockShieldAPI) DescribeSubscriptionRequest(arg0 *shield.DescribeSubscriptionInput) (*request.Request, *shield.DescribeSubscriptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSubscriptionRequest", arg0)
@@ -860,14 +559,14 @@ func (m *MockShieldAPI) DescribeSubscriptionRequest(arg0 *shield.DescribeSubscri
 	return ret0, ret1
 }
 
-// DescribeSubscriptionRequest indicates an expected call of DescribeSubscriptionRequest.
+// DescribeSubscriptionRequest indicates an expected call of DescribeSubscriptionRequest
 func (mr *MockShieldAPIMockRecorder) DescribeSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubscriptionRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeSubscriptionRequest), arg0)
 }
 
-// DescribeSubscriptionWithContext mocks base method.
-func (m *MockShieldAPI) DescribeSubscriptionWithContext(arg0 context.Context, arg1 *shield.DescribeSubscriptionInput, arg2 ...request.Option) (*shield.DescribeSubscriptionOutput, error) {
+// DescribeSubscriptionWithContext mocks base method
+func (m *MockShieldAPI) DescribeSubscriptionWithContext(arg0 aws.Context, arg1 *shield.DescribeSubscriptionInput, arg2 ...request.Option) (*shield.DescribeSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,114 +578,14 @@ func (m *MockShieldAPI) DescribeSubscriptionWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DescribeSubscriptionWithContext indicates an expected call of DescribeSubscriptionWithContext.
+// DescribeSubscriptionWithContext indicates an expected call of DescribeSubscriptionWithContext
 func (mr *MockShieldAPIMockRecorder) DescribeSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubscriptionWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeSubscriptionWithContext), varargs...)
 }
 
-// DisableApplicationLayerAutomaticResponse mocks base method.
-func (m *MockShieldAPI) DisableApplicationLayerAutomaticResponse(arg0 *shield.DisableApplicationLayerAutomaticResponseInput) (*shield.DisableApplicationLayerAutomaticResponseOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisableApplicationLayerAutomaticResponse", arg0)
-	ret0, _ := ret[0].(*shield.DisableApplicationLayerAutomaticResponseOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisableApplicationLayerAutomaticResponse indicates an expected call of DisableApplicationLayerAutomaticResponse.
-func (mr *MockShieldAPIMockRecorder) DisableApplicationLayerAutomaticResponse(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableApplicationLayerAutomaticResponse", reflect.TypeOf((*MockShieldAPI)(nil).DisableApplicationLayerAutomaticResponse), arg0)
-}
-
-// DisableApplicationLayerAutomaticResponseRequest mocks base method.
-func (m *MockShieldAPI) DisableApplicationLayerAutomaticResponseRequest(arg0 *shield.DisableApplicationLayerAutomaticResponseInput) (*request.Request, *shield.DisableApplicationLayerAutomaticResponseOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisableApplicationLayerAutomaticResponseRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.DisableApplicationLayerAutomaticResponseOutput)
-	return ret0, ret1
-}
-
-// DisableApplicationLayerAutomaticResponseRequest indicates an expected call of DisableApplicationLayerAutomaticResponseRequest.
-func (mr *MockShieldAPIMockRecorder) DisableApplicationLayerAutomaticResponseRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableApplicationLayerAutomaticResponseRequest", reflect.TypeOf((*MockShieldAPI)(nil).DisableApplicationLayerAutomaticResponseRequest), arg0)
-}
-
-// DisableApplicationLayerAutomaticResponseWithContext mocks base method.
-func (m *MockShieldAPI) DisableApplicationLayerAutomaticResponseWithContext(arg0 context.Context, arg1 *shield.DisableApplicationLayerAutomaticResponseInput, arg2 ...request.Option) (*shield.DisableApplicationLayerAutomaticResponseOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisableApplicationLayerAutomaticResponseWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.DisableApplicationLayerAutomaticResponseOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisableApplicationLayerAutomaticResponseWithContext indicates an expected call of DisableApplicationLayerAutomaticResponseWithContext.
-func (mr *MockShieldAPIMockRecorder) DisableApplicationLayerAutomaticResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableApplicationLayerAutomaticResponseWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisableApplicationLayerAutomaticResponseWithContext), varargs...)
-}
-
-// DisableProactiveEngagement mocks base method.
-func (m *MockShieldAPI) DisableProactiveEngagement(arg0 *shield.DisableProactiveEngagementInput) (*shield.DisableProactiveEngagementOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisableProactiveEngagement", arg0)
-	ret0, _ := ret[0].(*shield.DisableProactiveEngagementOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisableProactiveEngagement indicates an expected call of DisableProactiveEngagement.
-func (mr *MockShieldAPIMockRecorder) DisableProactiveEngagement(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableProactiveEngagement", reflect.TypeOf((*MockShieldAPI)(nil).DisableProactiveEngagement), arg0)
-}
-
-// DisableProactiveEngagementRequest mocks base method.
-func (m *MockShieldAPI) DisableProactiveEngagementRequest(arg0 *shield.DisableProactiveEngagementInput) (*request.Request, *shield.DisableProactiveEngagementOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisableProactiveEngagementRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.DisableProactiveEngagementOutput)
-	return ret0, ret1
-}
-
-// DisableProactiveEngagementRequest indicates an expected call of DisableProactiveEngagementRequest.
-func (mr *MockShieldAPIMockRecorder) DisableProactiveEngagementRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableProactiveEngagementRequest", reflect.TypeOf((*MockShieldAPI)(nil).DisableProactiveEngagementRequest), arg0)
-}
-
-// DisableProactiveEngagementWithContext mocks base method.
-func (m *MockShieldAPI) DisableProactiveEngagementWithContext(arg0 context.Context, arg1 *shield.DisableProactiveEngagementInput, arg2 ...request.Option) (*shield.DisableProactiveEngagementOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisableProactiveEngagementWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.DisableProactiveEngagementOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisableProactiveEngagementWithContext indicates an expected call of DisableProactiveEngagementWithContext.
-func (mr *MockShieldAPIMockRecorder) DisableProactiveEngagementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableProactiveEngagementWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisableProactiveEngagementWithContext), varargs...)
-}
-
-// DisassociateDRTLogBucket mocks base method.
+// DisassociateDRTLogBucket mocks base method
 func (m *MockShieldAPI) DisassociateDRTLogBucket(arg0 *shield.DisassociateDRTLogBucketInput) (*shield.DisassociateDRTLogBucketOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDRTLogBucket", arg0)
@@ -995,13 +594,13 @@ func (m *MockShieldAPI) DisassociateDRTLogBucket(arg0 *shield.DisassociateDRTLog
 	return ret0, ret1
 }
 
-// DisassociateDRTLogBucket indicates an expected call of DisassociateDRTLogBucket.
+// DisassociateDRTLogBucket indicates an expected call of DisassociateDRTLogBucket
 func (mr *MockShieldAPIMockRecorder) DisassociateDRTLogBucket(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTLogBucket", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTLogBucket), arg0)
 }
 
-// DisassociateDRTLogBucketRequest mocks base method.
+// DisassociateDRTLogBucketRequest mocks base method
 func (m *MockShieldAPI) DisassociateDRTLogBucketRequest(arg0 *shield.DisassociateDRTLogBucketInput) (*request.Request, *shield.DisassociateDRTLogBucketOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDRTLogBucketRequest", arg0)
@@ -1010,14 +609,14 @@ func (m *MockShieldAPI) DisassociateDRTLogBucketRequest(arg0 *shield.Disassociat
 	return ret0, ret1
 }
 
-// DisassociateDRTLogBucketRequest indicates an expected call of DisassociateDRTLogBucketRequest.
+// DisassociateDRTLogBucketRequest indicates an expected call of DisassociateDRTLogBucketRequest
 func (mr *MockShieldAPIMockRecorder) DisassociateDRTLogBucketRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTLogBucketRequest", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTLogBucketRequest), arg0)
 }
 
-// DisassociateDRTLogBucketWithContext mocks base method.
-func (m *MockShieldAPI) DisassociateDRTLogBucketWithContext(arg0 context.Context, arg1 *shield.DisassociateDRTLogBucketInput, arg2 ...request.Option) (*shield.DisassociateDRTLogBucketOutput, error) {
+// DisassociateDRTLogBucketWithContext mocks base method
+func (m *MockShieldAPI) DisassociateDRTLogBucketWithContext(arg0 aws.Context, arg1 *shield.DisassociateDRTLogBucketInput, arg2 ...request.Option) (*shield.DisassociateDRTLogBucketOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +628,14 @@ func (m *MockShieldAPI) DisassociateDRTLogBucketWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DisassociateDRTLogBucketWithContext indicates an expected call of DisassociateDRTLogBucketWithContext.
+// DisassociateDRTLogBucketWithContext indicates an expected call of DisassociateDRTLogBucketWithContext
 func (mr *MockShieldAPIMockRecorder) DisassociateDRTLogBucketWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTLogBucketWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTLogBucketWithContext), varargs...)
 }
 
-// DisassociateDRTRole mocks base method.
+// DisassociateDRTRole mocks base method
 func (m *MockShieldAPI) DisassociateDRTRole(arg0 *shield.DisassociateDRTRoleInput) (*shield.DisassociateDRTRoleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDRTRole", arg0)
@@ -1045,13 +644,13 @@ func (m *MockShieldAPI) DisassociateDRTRole(arg0 *shield.DisassociateDRTRoleInpu
 	return ret0, ret1
 }
 
-// DisassociateDRTRole indicates an expected call of DisassociateDRTRole.
+// DisassociateDRTRole indicates an expected call of DisassociateDRTRole
 func (mr *MockShieldAPIMockRecorder) DisassociateDRTRole(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTRole", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTRole), arg0)
 }
 
-// DisassociateDRTRoleRequest mocks base method.
+// DisassociateDRTRoleRequest mocks base method
 func (m *MockShieldAPI) DisassociateDRTRoleRequest(arg0 *shield.DisassociateDRTRoleInput) (*request.Request, *shield.DisassociateDRTRoleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDRTRoleRequest", arg0)
@@ -1060,14 +659,14 @@ func (m *MockShieldAPI) DisassociateDRTRoleRequest(arg0 *shield.DisassociateDRTR
 	return ret0, ret1
 }
 
-// DisassociateDRTRoleRequest indicates an expected call of DisassociateDRTRoleRequest.
+// DisassociateDRTRoleRequest indicates an expected call of DisassociateDRTRoleRequest
 func (mr *MockShieldAPIMockRecorder) DisassociateDRTRoleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTRoleRequest", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTRoleRequest), arg0)
 }
 
-// DisassociateDRTRoleWithContext mocks base method.
-func (m *MockShieldAPI) DisassociateDRTRoleWithContext(arg0 context.Context, arg1 *shield.DisassociateDRTRoleInput, arg2 ...request.Option) (*shield.DisassociateDRTRoleOutput, error) {
+// DisassociateDRTRoleWithContext mocks base method
+func (m *MockShieldAPI) DisassociateDRTRoleWithContext(arg0 aws.Context, arg1 *shield.DisassociateDRTRoleInput, arg2 ...request.Option) (*shield.DisassociateDRTRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,164 +678,14 @@ func (m *MockShieldAPI) DisassociateDRTRoleWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// DisassociateDRTRoleWithContext indicates an expected call of DisassociateDRTRoleWithContext.
+// DisassociateDRTRoleWithContext indicates an expected call of DisassociateDRTRoleWithContext
 func (mr *MockShieldAPIMockRecorder) DisassociateDRTRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTRoleWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTRoleWithContext), varargs...)
 }
 
-// DisassociateHealthCheck mocks base method.
-func (m *MockShieldAPI) DisassociateHealthCheck(arg0 *shield.DisassociateHealthCheckInput) (*shield.DisassociateHealthCheckOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateHealthCheck", arg0)
-	ret0, _ := ret[0].(*shield.DisassociateHealthCheckOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateHealthCheck indicates an expected call of DisassociateHealthCheck.
-func (mr *MockShieldAPIMockRecorder) DisassociateHealthCheck(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateHealthCheck", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateHealthCheck), arg0)
-}
-
-// DisassociateHealthCheckRequest mocks base method.
-func (m *MockShieldAPI) DisassociateHealthCheckRequest(arg0 *shield.DisassociateHealthCheckInput) (*request.Request, *shield.DisassociateHealthCheckOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateHealthCheckRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.DisassociateHealthCheckOutput)
-	return ret0, ret1
-}
-
-// DisassociateHealthCheckRequest indicates an expected call of DisassociateHealthCheckRequest.
-func (mr *MockShieldAPIMockRecorder) DisassociateHealthCheckRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateHealthCheckRequest", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateHealthCheckRequest), arg0)
-}
-
-// DisassociateHealthCheckWithContext mocks base method.
-func (m *MockShieldAPI) DisassociateHealthCheckWithContext(arg0 context.Context, arg1 *shield.DisassociateHealthCheckInput, arg2 ...request.Option) (*shield.DisassociateHealthCheckOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateHealthCheckWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.DisassociateHealthCheckOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateHealthCheckWithContext indicates an expected call of DisassociateHealthCheckWithContext.
-func (mr *MockShieldAPIMockRecorder) DisassociateHealthCheckWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateHealthCheckWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateHealthCheckWithContext), varargs...)
-}
-
-// EnableApplicationLayerAutomaticResponse mocks base method.
-func (m *MockShieldAPI) EnableApplicationLayerAutomaticResponse(arg0 *shield.EnableApplicationLayerAutomaticResponseInput) (*shield.EnableApplicationLayerAutomaticResponseOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "EnableApplicationLayerAutomaticResponse", arg0)
-	ret0, _ := ret[0].(*shield.EnableApplicationLayerAutomaticResponseOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// EnableApplicationLayerAutomaticResponse indicates an expected call of EnableApplicationLayerAutomaticResponse.
-func (mr *MockShieldAPIMockRecorder) EnableApplicationLayerAutomaticResponse(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableApplicationLayerAutomaticResponse", reflect.TypeOf((*MockShieldAPI)(nil).EnableApplicationLayerAutomaticResponse), arg0)
-}
-
-// EnableApplicationLayerAutomaticResponseRequest mocks base method.
-func (m *MockShieldAPI) EnableApplicationLayerAutomaticResponseRequest(arg0 *shield.EnableApplicationLayerAutomaticResponseInput) (*request.Request, *shield.EnableApplicationLayerAutomaticResponseOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "EnableApplicationLayerAutomaticResponseRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.EnableApplicationLayerAutomaticResponseOutput)
-	return ret0, ret1
-}
-
-// EnableApplicationLayerAutomaticResponseRequest indicates an expected call of EnableApplicationLayerAutomaticResponseRequest.
-func (mr *MockShieldAPIMockRecorder) EnableApplicationLayerAutomaticResponseRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableApplicationLayerAutomaticResponseRequest", reflect.TypeOf((*MockShieldAPI)(nil).EnableApplicationLayerAutomaticResponseRequest), arg0)
-}
-
-// EnableApplicationLayerAutomaticResponseWithContext mocks base method.
-func (m *MockShieldAPI) EnableApplicationLayerAutomaticResponseWithContext(arg0 context.Context, arg1 *shield.EnableApplicationLayerAutomaticResponseInput, arg2 ...request.Option) (*shield.EnableApplicationLayerAutomaticResponseOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "EnableApplicationLayerAutomaticResponseWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.EnableApplicationLayerAutomaticResponseOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// EnableApplicationLayerAutomaticResponseWithContext indicates an expected call of EnableApplicationLayerAutomaticResponseWithContext.
-func (mr *MockShieldAPIMockRecorder) EnableApplicationLayerAutomaticResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableApplicationLayerAutomaticResponseWithContext", reflect.TypeOf((*MockShieldAPI)(nil).EnableApplicationLayerAutomaticResponseWithContext), varargs...)
-}
-
-// EnableProactiveEngagement mocks base method.
-func (m *MockShieldAPI) EnableProactiveEngagement(arg0 *shield.EnableProactiveEngagementInput) (*shield.EnableProactiveEngagementOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "EnableProactiveEngagement", arg0)
-	ret0, _ := ret[0].(*shield.EnableProactiveEngagementOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// EnableProactiveEngagement indicates an expected call of EnableProactiveEngagement.
-func (mr *MockShieldAPIMockRecorder) EnableProactiveEngagement(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableProactiveEngagement", reflect.TypeOf((*MockShieldAPI)(nil).EnableProactiveEngagement), arg0)
-}
-
-// EnableProactiveEngagementRequest mocks base method.
-func (m *MockShieldAPI) EnableProactiveEngagementRequest(arg0 *shield.EnableProactiveEngagementInput) (*request.Request, *shield.EnableProactiveEngagementOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "EnableProactiveEngagementRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.EnableProactiveEngagementOutput)
-	return ret0, ret1
-}
-
-// EnableProactiveEngagementRequest indicates an expected call of EnableProactiveEngagementRequest.
-func (mr *MockShieldAPIMockRecorder) EnableProactiveEngagementRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableProactiveEngagementRequest", reflect.TypeOf((*MockShieldAPI)(nil).EnableProactiveEngagementRequest), arg0)
-}
-
-// EnableProactiveEngagementWithContext mocks base method.
-func (m *MockShieldAPI) EnableProactiveEngagementWithContext(arg0 context.Context, arg1 *shield.EnableProactiveEngagementInput, arg2 ...request.Option) (*shield.EnableProactiveEngagementOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "EnableProactiveEngagementWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.EnableProactiveEngagementOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// EnableProactiveEngagementWithContext indicates an expected call of EnableProactiveEngagementWithContext.
-func (mr *MockShieldAPIMockRecorder) EnableProactiveEngagementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableProactiveEngagementWithContext", reflect.TypeOf((*MockShieldAPI)(nil).EnableProactiveEngagementWithContext), varargs...)
-}
-
-// GetSubscriptionState mocks base method.
+// GetSubscriptionState mocks base method
 func (m *MockShieldAPI) GetSubscriptionState(arg0 *shield.GetSubscriptionStateInput) (*shield.GetSubscriptionStateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSubscriptionState", arg0)
@@ -1245,13 +694,13 @@ func (m *MockShieldAPI) GetSubscriptionState(arg0 *shield.GetSubscriptionStateIn
 	return ret0, ret1
 }
 
-// GetSubscriptionState indicates an expected call of GetSubscriptionState.
+// GetSubscriptionState indicates an expected call of GetSubscriptionState
 func (mr *MockShieldAPIMockRecorder) GetSubscriptionState(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSubscriptionState", reflect.TypeOf((*MockShieldAPI)(nil).GetSubscriptionState), arg0)
 }
 
-// GetSubscriptionStateRequest mocks base method.
+// GetSubscriptionStateRequest mocks base method
 func (m *MockShieldAPI) GetSubscriptionStateRequest(arg0 *shield.GetSubscriptionStateInput) (*request.Request, *shield.GetSubscriptionStateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSubscriptionStateRequest", arg0)
@@ -1260,14 +709,14 @@ func (m *MockShieldAPI) GetSubscriptionStateRequest(arg0 *shield.GetSubscription
 	return ret0, ret1
 }
 
-// GetSubscriptionStateRequest indicates an expected call of GetSubscriptionStateRequest.
+// GetSubscriptionStateRequest indicates an expected call of GetSubscriptionStateRequest
 func (mr *MockShieldAPIMockRecorder) GetSubscriptionStateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSubscriptionStateRequest", reflect.TypeOf((*MockShieldAPI)(nil).GetSubscriptionStateRequest), arg0)
 }
 
-// GetSubscriptionStateWithContext mocks base method.
-func (m *MockShieldAPI) GetSubscriptionStateWithContext(arg0 context.Context, arg1 *shield.GetSubscriptionStateInput, arg2 ...request.Option) (*shield.GetSubscriptionStateOutput, error) {
+// GetSubscriptionStateWithContext mocks base method
+func (m *MockShieldAPI) GetSubscriptionStateWithContext(arg0 aws.Context, arg1 *shield.GetSubscriptionStateInput, arg2 ...request.Option) (*shield.GetSubscriptionStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +728,14 @@ func (m *MockShieldAPI) GetSubscriptionStateWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetSubscriptionStateWithContext indicates an expected call of GetSubscriptionStateWithContext.
+// GetSubscriptionStateWithContext indicates an expected call of GetSubscriptionStateWithContext
 func (mr *MockShieldAPIMockRecorder) GetSubscriptionStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSubscriptionStateWithContext", reflect.TypeOf((*MockShieldAPI)(nil).GetSubscriptionStateWithContext), varargs...)
 }
 
-// ListAttacks mocks base method.
+// ListAttacks mocks base method
 func (m *MockShieldAPI) ListAttacks(arg0 *shield.ListAttacksInput) (*shield.ListAttacksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAttacks", arg0)
@@ -1295,46 +744,13 @@ func (m *MockShieldAPI) ListAttacks(arg0 *shield.ListAttacksInput) (*shield.List
 	return ret0, ret1
 }
 
-// ListAttacks indicates an expected call of ListAttacks.
+// ListAttacks indicates an expected call of ListAttacks
 func (mr *MockShieldAPIMockRecorder) ListAttacks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttacks", reflect.TypeOf((*MockShieldAPI)(nil).ListAttacks), arg0)
 }
 
-// ListAttacksPages mocks base method.
-func (m *MockShieldAPI) ListAttacksPages(arg0 *shield.ListAttacksInput, arg1 func(*shield.ListAttacksOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListAttacksPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListAttacksPages indicates an expected call of ListAttacksPages.
-func (mr *MockShieldAPIMockRecorder) ListAttacksPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttacksPages", reflect.TypeOf((*MockShieldAPI)(nil).ListAttacksPages), arg0, arg1)
-}
-
-// ListAttacksPagesWithContext mocks base method.
-func (m *MockShieldAPI) ListAttacksPagesWithContext(arg0 context.Context, arg1 *shield.ListAttacksInput, arg2 func(*shield.ListAttacksOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListAttacksPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListAttacksPagesWithContext indicates an expected call of ListAttacksPagesWithContext.
-func (mr *MockShieldAPIMockRecorder) ListAttacksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttacksPagesWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListAttacksPagesWithContext), varargs...)
-}
-
-// ListAttacksRequest mocks base method.
+// ListAttacksRequest mocks base method
 func (m *MockShieldAPI) ListAttacksRequest(arg0 *shield.ListAttacksInput) (*request.Request, *shield.ListAttacksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAttacksRequest", arg0)
@@ -1343,14 +759,14 @@ func (m *MockShieldAPI) ListAttacksRequest(arg0 *shield.ListAttacksInput) (*requ
 	return ret0, ret1
 }
 
-// ListAttacksRequest indicates an expected call of ListAttacksRequest.
+// ListAttacksRequest indicates an expected call of ListAttacksRequest
 func (mr *MockShieldAPIMockRecorder) ListAttacksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttacksRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListAttacksRequest), arg0)
 }
 
-// ListAttacksWithContext mocks base method.
-func (m *MockShieldAPI) ListAttacksWithContext(arg0 context.Context, arg1 *shield.ListAttacksInput, arg2 ...request.Option) (*shield.ListAttacksOutput, error) {
+// ListAttacksWithContext mocks base method
+func (m *MockShieldAPI) ListAttacksWithContext(arg0 aws.Context, arg1 *shield.ListAttacksInput, arg2 ...request.Option) (*shield.ListAttacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1362,97 +778,14 @@ func (m *MockShieldAPI) ListAttacksWithContext(arg0 context.Context, arg1 *shiel
 	return ret0, ret1
 }
 
-// ListAttacksWithContext indicates an expected call of ListAttacksWithContext.
+// ListAttacksWithContext indicates an expected call of ListAttacksWithContext
 func (mr *MockShieldAPIMockRecorder) ListAttacksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttacksWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListAttacksWithContext), varargs...)
 }
 
-// ListProtectionGroups mocks base method.
-func (m *MockShieldAPI) ListProtectionGroups(arg0 *shield.ListProtectionGroupsInput) (*shield.ListProtectionGroupsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProtectionGroups", arg0)
-	ret0, _ := ret[0].(*shield.ListProtectionGroupsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListProtectionGroups indicates an expected call of ListProtectionGroups.
-func (mr *MockShieldAPIMockRecorder) ListProtectionGroups(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroups", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroups), arg0)
-}
-
-// ListProtectionGroupsPages mocks base method.
-func (m *MockShieldAPI) ListProtectionGroupsPages(arg0 *shield.ListProtectionGroupsInput, arg1 func(*shield.ListProtectionGroupsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProtectionGroupsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProtectionGroupsPages indicates an expected call of ListProtectionGroupsPages.
-func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsPages", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsPages), arg0, arg1)
-}
-
-// ListProtectionGroupsPagesWithContext mocks base method.
-func (m *MockShieldAPI) ListProtectionGroupsPagesWithContext(arg0 context.Context, arg1 *shield.ListProtectionGroupsInput, arg2 func(*shield.ListProtectionGroupsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListProtectionGroupsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProtectionGroupsPagesWithContext indicates an expected call of ListProtectionGroupsPagesWithContext.
-func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsPagesWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsPagesWithContext), varargs...)
-}
-
-// ListProtectionGroupsRequest mocks base method.
-func (m *MockShieldAPI) ListProtectionGroupsRequest(arg0 *shield.ListProtectionGroupsInput) (*request.Request, *shield.ListProtectionGroupsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProtectionGroupsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.ListProtectionGroupsOutput)
-	return ret0, ret1
-}
-
-// ListProtectionGroupsRequest indicates an expected call of ListProtectionGroupsRequest.
-func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsRequest), arg0)
-}
-
-// ListProtectionGroupsWithContext mocks base method.
-func (m *MockShieldAPI) ListProtectionGroupsWithContext(arg0 context.Context, arg1 *shield.ListProtectionGroupsInput, arg2 ...request.Option) (*shield.ListProtectionGroupsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListProtectionGroupsWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.ListProtectionGroupsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListProtectionGroupsWithContext indicates an expected call of ListProtectionGroupsWithContext.
-func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsWithContext), varargs...)
-}
-
-// ListProtections mocks base method.
+// ListProtections mocks base method
 func (m *MockShieldAPI) ListProtections(arg0 *shield.ListProtectionsInput) (*shield.ListProtectionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProtections", arg0)
@@ -1461,46 +794,13 @@ func (m *MockShieldAPI) ListProtections(arg0 *shield.ListProtectionsInput) (*shi
 	return ret0, ret1
 }
 
-// ListProtections indicates an expected call of ListProtections.
+// ListProtections indicates an expected call of ListProtections
 func (mr *MockShieldAPIMockRecorder) ListProtections(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtections", reflect.TypeOf((*MockShieldAPI)(nil).ListProtections), arg0)
 }
 
-// ListProtectionsPages mocks base method.
-func (m *MockShieldAPI) ListProtectionsPages(arg0 *shield.ListProtectionsInput, arg1 func(*shield.ListProtectionsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProtectionsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProtectionsPages indicates an expected call of ListProtectionsPages.
-func (mr *MockShieldAPIMockRecorder) ListProtectionsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionsPages", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionsPages), arg0, arg1)
-}
-
-// ListProtectionsPagesWithContext mocks base method.
-func (m *MockShieldAPI) ListProtectionsPagesWithContext(arg0 context.Context, arg1 *shield.ListProtectionsInput, arg2 func(*shield.ListProtectionsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListProtectionsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProtectionsPagesWithContext indicates an expected call of ListProtectionsPagesWithContext.
-func (mr *MockShieldAPIMockRecorder) ListProtectionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionsPagesWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionsPagesWithContext), varargs...)
-}
-
-// ListProtectionsRequest mocks base method.
+// ListProtectionsRequest mocks base method
 func (m *MockShieldAPI) ListProtectionsRequest(arg0 *shield.ListProtectionsInput) (*request.Request, *shield.ListProtectionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProtectionsRequest", arg0)
@@ -1509,14 +809,14 @@ func (m *MockShieldAPI) ListProtectionsRequest(arg0 *shield.ListProtectionsInput
 	return ret0, ret1
 }
 
-// ListProtectionsRequest indicates an expected call of ListProtectionsRequest.
+// ListProtectionsRequest indicates an expected call of ListProtectionsRequest
 func (mr *MockShieldAPIMockRecorder) ListProtectionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionsRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionsRequest), arg0)
 }
 
-// ListProtectionsWithContext mocks base method.
-func (m *MockShieldAPI) ListProtectionsWithContext(arg0 context.Context, arg1 *shield.ListProtectionsInput, arg2 ...request.Option) (*shield.ListProtectionsOutput, error) {
+// ListProtectionsWithContext mocks base method
+func (m *MockShieldAPI) ListProtectionsWithContext(arg0 aws.Context, arg1 *shield.ListProtectionsInput, arg2 ...request.Option) (*shield.ListProtectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1528,297 +828,14 @@ func (m *MockShieldAPI) ListProtectionsWithContext(arg0 context.Context, arg1 *s
 	return ret0, ret1
 }
 
-// ListProtectionsWithContext indicates an expected call of ListProtectionsWithContext.
+// ListProtectionsWithContext indicates an expected call of ListProtectionsWithContext
 func (mr *MockShieldAPIMockRecorder) ListProtectionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionsWithContext), varargs...)
 }
 
-// ListResourcesInProtectionGroup mocks base method.
-func (m *MockShieldAPI) ListResourcesInProtectionGroup(arg0 *shield.ListResourcesInProtectionGroupInput) (*shield.ListResourcesInProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroup", arg0)
-	ret0, _ := ret[0].(*shield.ListResourcesInProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListResourcesInProtectionGroup indicates an expected call of ListResourcesInProtectionGroup.
-func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroup), arg0)
-}
-
-// ListResourcesInProtectionGroupPages mocks base method.
-func (m *MockShieldAPI) ListResourcesInProtectionGroupPages(arg0 *shield.ListResourcesInProtectionGroupInput, arg1 func(*shield.ListResourcesInProtectionGroupOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListResourcesInProtectionGroupPages indicates an expected call of ListResourcesInProtectionGroupPages.
-func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupPages", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupPages), arg0, arg1)
-}
-
-// ListResourcesInProtectionGroupPagesWithContext mocks base method.
-func (m *MockShieldAPI) ListResourcesInProtectionGroupPagesWithContext(arg0 context.Context, arg1 *shield.ListResourcesInProtectionGroupInput, arg2 func(*shield.ListResourcesInProtectionGroupOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListResourcesInProtectionGroupPagesWithContext indicates an expected call of ListResourcesInProtectionGroupPagesWithContext.
-func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupPagesWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupPagesWithContext), varargs...)
-}
-
-// ListResourcesInProtectionGroupRequest mocks base method.
-func (m *MockShieldAPI) ListResourcesInProtectionGroupRequest(arg0 *shield.ListResourcesInProtectionGroupInput) (*request.Request, *shield.ListResourcesInProtectionGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.ListResourcesInProtectionGroupOutput)
-	return ret0, ret1
-}
-
-// ListResourcesInProtectionGroupRequest indicates an expected call of ListResourcesInProtectionGroupRequest.
-func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupRequest), arg0)
-}
-
-// ListResourcesInProtectionGroupWithContext mocks base method.
-func (m *MockShieldAPI) ListResourcesInProtectionGroupWithContext(arg0 context.Context, arg1 *shield.ListResourcesInProtectionGroupInput, arg2 ...request.Option) (*shield.ListResourcesInProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.ListResourcesInProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListResourcesInProtectionGroupWithContext indicates an expected call of ListResourcesInProtectionGroupWithContext.
-func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupWithContext), varargs...)
-}
-
-// ListTagsForResource mocks base method.
-func (m *MockShieldAPI) ListTagsForResource(arg0 *shield.ListTagsForResourceInput) (*shield.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*shield.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockShieldAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockShieldAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockShieldAPI) ListTagsForResourceRequest(arg0 *shield.ListTagsForResourceInput) (*request.Request, *shield.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockShieldAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockShieldAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *shield.ListTagsForResourceInput, arg2 ...request.Option) (*shield.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockShieldAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// TagResource mocks base method.
-func (m *MockShieldAPI) TagResource(arg0 *shield.TagResourceInput) (*shield.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*shield.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockShieldAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockShieldAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockShieldAPI) TagResourceRequest(arg0 *shield.TagResourceInput) (*request.Request, *shield.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockShieldAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockShieldAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockShieldAPI) TagResourceWithContext(arg0 context.Context, arg1 *shield.TagResourceInput, arg2 ...request.Option) (*shield.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockShieldAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockShieldAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockShieldAPI) UntagResource(arg0 *shield.UntagResourceInput) (*shield.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*shield.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockShieldAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockShieldAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockShieldAPI) UntagResourceRequest(arg0 *shield.UntagResourceInput) (*request.Request, *shield.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockShieldAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockShieldAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockShieldAPI) UntagResourceWithContext(arg0 context.Context, arg1 *shield.UntagResourceInput, arg2 ...request.Option) (*shield.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockShieldAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockShieldAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateApplicationLayerAutomaticResponse mocks base method.
-func (m *MockShieldAPI) UpdateApplicationLayerAutomaticResponse(arg0 *shield.UpdateApplicationLayerAutomaticResponseInput) (*shield.UpdateApplicationLayerAutomaticResponseOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateApplicationLayerAutomaticResponse", arg0)
-	ret0, _ := ret[0].(*shield.UpdateApplicationLayerAutomaticResponseOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateApplicationLayerAutomaticResponse indicates an expected call of UpdateApplicationLayerAutomaticResponse.
-func (mr *MockShieldAPIMockRecorder) UpdateApplicationLayerAutomaticResponse(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationLayerAutomaticResponse", reflect.TypeOf((*MockShieldAPI)(nil).UpdateApplicationLayerAutomaticResponse), arg0)
-}
-
-// UpdateApplicationLayerAutomaticResponseRequest mocks base method.
-func (m *MockShieldAPI) UpdateApplicationLayerAutomaticResponseRequest(arg0 *shield.UpdateApplicationLayerAutomaticResponseInput) (*request.Request, *shield.UpdateApplicationLayerAutomaticResponseOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateApplicationLayerAutomaticResponseRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.UpdateApplicationLayerAutomaticResponseOutput)
-	return ret0, ret1
-}
-
-// UpdateApplicationLayerAutomaticResponseRequest indicates an expected call of UpdateApplicationLayerAutomaticResponseRequest.
-func (mr *MockShieldAPIMockRecorder) UpdateApplicationLayerAutomaticResponseRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationLayerAutomaticResponseRequest", reflect.TypeOf((*MockShieldAPI)(nil).UpdateApplicationLayerAutomaticResponseRequest), arg0)
-}
-
-// UpdateApplicationLayerAutomaticResponseWithContext mocks base method.
-func (m *MockShieldAPI) UpdateApplicationLayerAutomaticResponseWithContext(arg0 context.Context, arg1 *shield.UpdateApplicationLayerAutomaticResponseInput, arg2 ...request.Option) (*shield.UpdateApplicationLayerAutomaticResponseOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateApplicationLayerAutomaticResponseWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.UpdateApplicationLayerAutomaticResponseOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateApplicationLayerAutomaticResponseWithContext indicates an expected call of UpdateApplicationLayerAutomaticResponseWithContext.
-func (mr *MockShieldAPIMockRecorder) UpdateApplicationLayerAutomaticResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationLayerAutomaticResponseWithContext", reflect.TypeOf((*MockShieldAPI)(nil).UpdateApplicationLayerAutomaticResponseWithContext), varargs...)
-}
-
-// UpdateEmergencyContactSettings mocks base method.
+// UpdateEmergencyContactSettings mocks base method
 func (m *MockShieldAPI) UpdateEmergencyContactSettings(arg0 *shield.UpdateEmergencyContactSettingsInput) (*shield.UpdateEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEmergencyContactSettings", arg0)
@@ -1827,13 +844,13 @@ func (m *MockShieldAPI) UpdateEmergencyContactSettings(arg0 *shield.UpdateEmerge
 	return ret0, ret1
 }
 
-// UpdateEmergencyContactSettings indicates an expected call of UpdateEmergencyContactSettings.
+// UpdateEmergencyContactSettings indicates an expected call of UpdateEmergencyContactSettings
 func (mr *MockShieldAPIMockRecorder) UpdateEmergencyContactSettings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEmergencyContactSettings", reflect.TypeOf((*MockShieldAPI)(nil).UpdateEmergencyContactSettings), arg0)
 }
 
-// UpdateEmergencyContactSettingsRequest mocks base method.
+// UpdateEmergencyContactSettingsRequest mocks base method
 func (m *MockShieldAPI) UpdateEmergencyContactSettingsRequest(arg0 *shield.UpdateEmergencyContactSettingsInput) (*request.Request, *shield.UpdateEmergencyContactSettingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEmergencyContactSettingsRequest", arg0)
@@ -1842,14 +859,14 @@ func (m *MockShieldAPI) UpdateEmergencyContactSettingsRequest(arg0 *shield.Updat
 	return ret0, ret1
 }
 
-// UpdateEmergencyContactSettingsRequest indicates an expected call of UpdateEmergencyContactSettingsRequest.
+// UpdateEmergencyContactSettingsRequest indicates an expected call of UpdateEmergencyContactSettingsRequest
 func (mr *MockShieldAPIMockRecorder) UpdateEmergencyContactSettingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEmergencyContactSettingsRequest", reflect.TypeOf((*MockShieldAPI)(nil).UpdateEmergencyContactSettingsRequest), arg0)
 }
 
-// UpdateEmergencyContactSettingsWithContext mocks base method.
-func (m *MockShieldAPI) UpdateEmergencyContactSettingsWithContext(arg0 context.Context, arg1 *shield.UpdateEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.UpdateEmergencyContactSettingsOutput, error) {
+// UpdateEmergencyContactSettingsWithContext mocks base method
+func (m *MockShieldAPI) UpdateEmergencyContactSettingsWithContext(arg0 aws.Context, arg1 *shield.UpdateEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.UpdateEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1861,64 +878,14 @@ func (m *MockShieldAPI) UpdateEmergencyContactSettingsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// UpdateEmergencyContactSettingsWithContext indicates an expected call of UpdateEmergencyContactSettingsWithContext.
+// UpdateEmergencyContactSettingsWithContext indicates an expected call of UpdateEmergencyContactSettingsWithContext
 func (mr *MockShieldAPIMockRecorder) UpdateEmergencyContactSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEmergencyContactSettingsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).UpdateEmergencyContactSettingsWithContext), varargs...)
 }
 
-// UpdateProtectionGroup mocks base method.
-func (m *MockShieldAPI) UpdateProtectionGroup(arg0 *shield.UpdateProtectionGroupInput) (*shield.UpdateProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateProtectionGroup", arg0)
-	ret0, _ := ret[0].(*shield.UpdateProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateProtectionGroup indicates an expected call of UpdateProtectionGroup.
-func (mr *MockShieldAPIMockRecorder) UpdateProtectionGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).UpdateProtectionGroup), arg0)
-}
-
-// UpdateProtectionGroupRequest mocks base method.
-func (m *MockShieldAPI) UpdateProtectionGroupRequest(arg0 *shield.UpdateProtectionGroupInput) (*request.Request, *shield.UpdateProtectionGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateProtectionGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*shield.UpdateProtectionGroupOutput)
-	return ret0, ret1
-}
-
-// UpdateProtectionGroupRequest indicates an expected call of UpdateProtectionGroupRequest.
-func (mr *MockShieldAPIMockRecorder) UpdateProtectionGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).UpdateProtectionGroupRequest), arg0)
-}
-
-// UpdateProtectionGroupWithContext mocks base method.
-func (m *MockShieldAPI) UpdateProtectionGroupWithContext(arg0 context.Context, arg1 *shield.UpdateProtectionGroupInput, arg2 ...request.Option) (*shield.UpdateProtectionGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateProtectionGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*shield.UpdateProtectionGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateProtectionGroupWithContext indicates an expected call of UpdateProtectionGroupWithContext.
-func (mr *MockShieldAPIMockRecorder) UpdateProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).UpdateProtectionGroupWithContext), varargs...)
-}
-
-// UpdateSubscription mocks base method.
+// UpdateSubscription mocks base method
 func (m *MockShieldAPI) UpdateSubscription(arg0 *shield.UpdateSubscriptionInput) (*shield.UpdateSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSubscription", arg0)
@@ -1927,13 +894,13 @@ func (m *MockShieldAPI) UpdateSubscription(arg0 *shield.UpdateSubscriptionInput)
 	return ret0, ret1
 }
 
-// UpdateSubscription indicates an expected call of UpdateSubscription.
+// UpdateSubscription indicates an expected call of UpdateSubscription
 func (mr *MockShieldAPIMockRecorder) UpdateSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscription", reflect.TypeOf((*MockShieldAPI)(nil).UpdateSubscription), arg0)
 }
 
-// UpdateSubscriptionRequest mocks base method.
+// UpdateSubscriptionRequest mocks base method
 func (m *MockShieldAPI) UpdateSubscriptionRequest(arg0 *shield.UpdateSubscriptionInput) (*request.Request, *shield.UpdateSubscriptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSubscriptionRequest", arg0)
@@ -1942,14 +909,14 @@ func (m *MockShieldAPI) UpdateSubscriptionRequest(arg0 *shield.UpdateSubscriptio
 	return ret0, ret1
 }
 
-// UpdateSubscriptionRequest indicates an expected call of UpdateSubscriptionRequest.
+// UpdateSubscriptionRequest indicates an expected call of UpdateSubscriptionRequest
 func (mr *MockShieldAPIMockRecorder) UpdateSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionRequest", reflect.TypeOf((*MockShieldAPI)(nil).UpdateSubscriptionRequest), arg0)
 }
 
-// UpdateSubscriptionWithContext mocks base method.
-func (m *MockShieldAPI) UpdateSubscriptionWithContext(arg0 context.Context, arg1 *shield.UpdateSubscriptionInput, arg2 ...request.Option) (*shield.UpdateSubscriptionOutput, error) {
+// UpdateSubscriptionWithContext mocks base method
+func (m *MockShieldAPI) UpdateSubscriptionWithContext(arg0 aws.Context, arg1 *shield.UpdateSubscriptionInput, arg2 ...request.Option) (*shield.UpdateSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1961,7 +928,7 @@ func (m *MockShieldAPI) UpdateSubscriptionWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// UpdateSubscriptionWithContext indicates an expected call of UpdateSubscriptionWithContext.
+// UpdateSubscriptionWithContext indicates an expected call of UpdateSubscriptionWithContext
 func (mr *MockShieldAPIMockRecorder) UpdateSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

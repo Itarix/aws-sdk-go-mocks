@@ -5,38 +5,37 @@
 package guarddutymock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	guardduty "github.com/aws/aws-sdk-go/service/guardduty"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockGuardDutyAPI is a mock of GuardDutyAPI interface.
+// MockGuardDutyAPI is a mock of GuardDutyAPI interface
 type MockGuardDutyAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockGuardDutyAPIMockRecorder
 }
 
-// MockGuardDutyAPIMockRecorder is the mock recorder for MockGuardDutyAPI.
+// MockGuardDutyAPIMockRecorder is the mock recorder for MockGuardDutyAPI
 type MockGuardDutyAPIMockRecorder struct {
 	mock *MockGuardDutyAPI
 }
 
-// NewMockGuardDutyAPI creates a new mock instance.
+// NewMockGuardDutyAPI creates a new mock instance
 func NewMockGuardDutyAPI(ctrl *gomock.Controller) *MockGuardDutyAPI {
 	mock := &MockGuardDutyAPI{ctrl: ctrl}
 	mock.recorder = &MockGuardDutyAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockGuardDutyAPI) EXPECT() *MockGuardDutyAPIMockRecorder {
 	return m.recorder
 }
 
-// AcceptInvitation mocks base method.
+// AcceptInvitation mocks base method
 func (m *MockGuardDutyAPI) AcceptInvitation(arg0 *guardduty.AcceptInvitationInput) (*guardduty.AcceptInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AcceptInvitation", arg0)
@@ -45,13 +44,13 @@ func (m *MockGuardDutyAPI) AcceptInvitation(arg0 *guardduty.AcceptInvitationInpu
 	return ret0, ret1
 }
 
-// AcceptInvitation indicates an expected call of AcceptInvitation.
+// AcceptInvitation indicates an expected call of AcceptInvitation
 func (mr *MockGuardDutyAPIMockRecorder) AcceptInvitation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInvitation", reflect.TypeOf((*MockGuardDutyAPI)(nil).AcceptInvitation), arg0)
 }
 
-// AcceptInvitationRequest mocks base method.
+// AcceptInvitationRequest mocks base method
 func (m *MockGuardDutyAPI) AcceptInvitationRequest(arg0 *guardduty.AcceptInvitationInput) (*request.Request, *guardduty.AcceptInvitationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AcceptInvitationRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockGuardDutyAPI) AcceptInvitationRequest(arg0 *guardduty.AcceptInvitat
 	return ret0, ret1
 }
 
-// AcceptInvitationRequest indicates an expected call of AcceptInvitationRequest.
+// AcceptInvitationRequest indicates an expected call of AcceptInvitationRequest
 func (mr *MockGuardDutyAPIMockRecorder) AcceptInvitationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInvitationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).AcceptInvitationRequest), arg0)
 }
 
-// AcceptInvitationWithContext mocks base method.
-func (m *MockGuardDutyAPI) AcceptInvitationWithContext(arg0 context.Context, arg1 *guardduty.AcceptInvitationInput, arg2 ...request.Option) (*guardduty.AcceptInvitationOutput, error) {
+// AcceptInvitationWithContext mocks base method
+func (m *MockGuardDutyAPI) AcceptInvitationWithContext(arg0 aws.Context, arg1 *guardduty.AcceptInvitationInput, arg2 ...request.Option) (*guardduty.AcceptInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockGuardDutyAPI) AcceptInvitationWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// AcceptInvitationWithContext indicates an expected call of AcceptInvitationWithContext.
+// AcceptInvitationWithContext indicates an expected call of AcceptInvitationWithContext
 func (mr *MockGuardDutyAPIMockRecorder) AcceptInvitationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInvitationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).AcceptInvitationWithContext), varargs...)
 }
 
-// ArchiveFindings mocks base method.
+// ArchiveFindings mocks base method
 func (m *MockGuardDutyAPI) ArchiveFindings(arg0 *guardduty.ArchiveFindingsInput) (*guardduty.ArchiveFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ArchiveFindings", arg0)
@@ -95,13 +94,13 @@ func (m *MockGuardDutyAPI) ArchiveFindings(arg0 *guardduty.ArchiveFindingsInput)
 	return ret0, ret1
 }
 
-// ArchiveFindings indicates an expected call of ArchiveFindings.
+// ArchiveFindings indicates an expected call of ArchiveFindings
 func (mr *MockGuardDutyAPIMockRecorder) ArchiveFindings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveFindings", reflect.TypeOf((*MockGuardDutyAPI)(nil).ArchiveFindings), arg0)
 }
 
-// ArchiveFindingsRequest mocks base method.
+// ArchiveFindingsRequest mocks base method
 func (m *MockGuardDutyAPI) ArchiveFindingsRequest(arg0 *guardduty.ArchiveFindingsInput) (*request.Request, *guardduty.ArchiveFindingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ArchiveFindingsRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockGuardDutyAPI) ArchiveFindingsRequest(arg0 *guardduty.ArchiveFinding
 	return ret0, ret1
 }
 
-// ArchiveFindingsRequest indicates an expected call of ArchiveFindingsRequest.
+// ArchiveFindingsRequest indicates an expected call of ArchiveFindingsRequest
 func (mr *MockGuardDutyAPIMockRecorder) ArchiveFindingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveFindingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ArchiveFindingsRequest), arg0)
 }
 
-// ArchiveFindingsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ArchiveFindingsWithContext(arg0 context.Context, arg1 *guardduty.ArchiveFindingsInput, arg2 ...request.Option) (*guardduty.ArchiveFindingsOutput, error) {
+// ArchiveFindingsWithContext mocks base method
+func (m *MockGuardDutyAPI) ArchiveFindingsWithContext(arg0 aws.Context, arg1 *guardduty.ArchiveFindingsInput, arg2 ...request.Option) (*guardduty.ArchiveFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockGuardDutyAPI) ArchiveFindingsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ArchiveFindingsWithContext indicates an expected call of ArchiveFindingsWithContext.
+// ArchiveFindingsWithContext indicates an expected call of ArchiveFindingsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ArchiveFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveFindingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ArchiveFindingsWithContext), varargs...)
 }
 
-// CreateDetector mocks base method.
+// CreateDetector mocks base method
 func (m *MockGuardDutyAPI) CreateDetector(arg0 *guardduty.CreateDetectorInput) (*guardduty.CreateDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDetector", arg0)
@@ -145,13 +144,13 @@ func (m *MockGuardDutyAPI) CreateDetector(arg0 *guardduty.CreateDetectorInput) (
 	return ret0, ret1
 }
 
-// CreateDetector indicates an expected call of CreateDetector.
+// CreateDetector indicates an expected call of CreateDetector
 func (mr *MockGuardDutyAPIMockRecorder) CreateDetector(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDetector", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateDetector), arg0)
 }
 
-// CreateDetectorRequest mocks base method.
+// CreateDetectorRequest mocks base method
 func (m *MockGuardDutyAPI) CreateDetectorRequest(arg0 *guardduty.CreateDetectorInput) (*request.Request, *guardduty.CreateDetectorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDetectorRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockGuardDutyAPI) CreateDetectorRequest(arg0 *guardduty.CreateDetectorI
 	return ret0, ret1
 }
 
-// CreateDetectorRequest indicates an expected call of CreateDetectorRequest.
+// CreateDetectorRequest indicates an expected call of CreateDetectorRequest
 func (mr *MockGuardDutyAPIMockRecorder) CreateDetectorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDetectorRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateDetectorRequest), arg0)
 }
 
-// CreateDetectorWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreateDetectorWithContext(arg0 context.Context, arg1 *guardduty.CreateDetectorInput, arg2 ...request.Option) (*guardduty.CreateDetectorOutput, error) {
+// CreateDetectorWithContext mocks base method
+func (m *MockGuardDutyAPI) CreateDetectorWithContext(arg0 aws.Context, arg1 *guardduty.CreateDetectorInput, arg2 ...request.Option) (*guardduty.CreateDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockGuardDutyAPI) CreateDetectorWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateDetectorWithContext indicates an expected call of CreateDetectorWithContext.
+// CreateDetectorWithContext indicates an expected call of CreateDetectorWithContext
 func (mr *MockGuardDutyAPIMockRecorder) CreateDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDetectorWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateDetectorWithContext), varargs...)
 }
 
-// CreateFilter mocks base method.
+// CreateFilter mocks base method
 func (m *MockGuardDutyAPI) CreateFilter(arg0 *guardduty.CreateFilterInput) (*guardduty.CreateFilterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateFilter", arg0)
@@ -195,13 +194,13 @@ func (m *MockGuardDutyAPI) CreateFilter(arg0 *guardduty.CreateFilterInput) (*gua
 	return ret0, ret1
 }
 
-// CreateFilter indicates an expected call of CreateFilter.
+// CreateFilter indicates an expected call of CreateFilter
 func (mr *MockGuardDutyAPIMockRecorder) CreateFilter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFilter", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateFilter), arg0)
 }
 
-// CreateFilterRequest mocks base method.
+// CreateFilterRequest mocks base method
 func (m *MockGuardDutyAPI) CreateFilterRequest(arg0 *guardduty.CreateFilterInput) (*request.Request, *guardduty.CreateFilterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateFilterRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockGuardDutyAPI) CreateFilterRequest(arg0 *guardduty.CreateFilterInput
 	return ret0, ret1
 }
 
-// CreateFilterRequest indicates an expected call of CreateFilterRequest.
+// CreateFilterRequest indicates an expected call of CreateFilterRequest
 func (mr *MockGuardDutyAPIMockRecorder) CreateFilterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFilterRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateFilterRequest), arg0)
 }
 
-// CreateFilterWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreateFilterWithContext(arg0 context.Context, arg1 *guardduty.CreateFilterInput, arg2 ...request.Option) (*guardduty.CreateFilterOutput, error) {
+// CreateFilterWithContext mocks base method
+func (m *MockGuardDutyAPI) CreateFilterWithContext(arg0 aws.Context, arg1 *guardduty.CreateFilterInput, arg2 ...request.Option) (*guardduty.CreateFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockGuardDutyAPI) CreateFilterWithContext(arg0 context.Context, arg1 *g
 	return ret0, ret1
 }
 
-// CreateFilterWithContext indicates an expected call of CreateFilterWithContext.
+// CreateFilterWithContext indicates an expected call of CreateFilterWithContext
 func (mr *MockGuardDutyAPIMockRecorder) CreateFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFilterWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateFilterWithContext), varargs...)
 }
 
-// CreateIPSet mocks base method.
+// CreateIPSet mocks base method
 func (m *MockGuardDutyAPI) CreateIPSet(arg0 *guardduty.CreateIPSetInput) (*guardduty.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateIPSet", arg0)
@@ -245,13 +244,13 @@ func (m *MockGuardDutyAPI) CreateIPSet(arg0 *guardduty.CreateIPSetInput) (*guard
 	return ret0, ret1
 }
 
-// CreateIPSet indicates an expected call of CreateIPSet.
+// CreateIPSet indicates an expected call of CreateIPSet
 func (mr *MockGuardDutyAPIMockRecorder) CreateIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIPSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateIPSet), arg0)
 }
 
-// CreateIPSetRequest mocks base method.
+// CreateIPSetRequest mocks base method
 func (m *MockGuardDutyAPI) CreateIPSetRequest(arg0 *guardduty.CreateIPSetInput) (*request.Request, *guardduty.CreateIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateIPSetRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockGuardDutyAPI) CreateIPSetRequest(arg0 *guardduty.CreateIPSetInput) 
 	return ret0, ret1
 }
 
-// CreateIPSetRequest indicates an expected call of CreateIPSetRequest.
+// CreateIPSetRequest indicates an expected call of CreateIPSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) CreateIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIPSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateIPSetRequest), arg0)
 }
 
-// CreateIPSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreateIPSetWithContext(arg0 context.Context, arg1 *guardduty.CreateIPSetInput, arg2 ...request.Option) (*guardduty.CreateIPSetOutput, error) {
+// CreateIPSetWithContext mocks base method
+func (m *MockGuardDutyAPI) CreateIPSetWithContext(arg0 aws.Context, arg1 *guardduty.CreateIPSetInput, arg2 ...request.Option) (*guardduty.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockGuardDutyAPI) CreateIPSetWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// CreateIPSetWithContext indicates an expected call of CreateIPSetWithContext.
+// CreateIPSetWithContext indicates an expected call of CreateIPSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) CreateIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateIPSetWithContext), varargs...)
 }
 
-// CreateMembers mocks base method.
+// CreateMembers mocks base method
 func (m *MockGuardDutyAPI) CreateMembers(arg0 *guardduty.CreateMembersInput) (*guardduty.CreateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateMembers", arg0)
@@ -295,13 +294,13 @@ func (m *MockGuardDutyAPI) CreateMembers(arg0 *guardduty.CreateMembersInput) (*g
 	return ret0, ret1
 }
 
-// CreateMembers indicates an expected call of CreateMembers.
+// CreateMembers indicates an expected call of CreateMembers
 func (mr *MockGuardDutyAPIMockRecorder) CreateMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateMembers), arg0)
 }
 
-// CreateMembersRequest mocks base method.
+// CreateMembersRequest mocks base method
 func (m *MockGuardDutyAPI) CreateMembersRequest(arg0 *guardduty.CreateMembersInput) (*request.Request, *guardduty.CreateMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateMembersRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockGuardDutyAPI) CreateMembersRequest(arg0 *guardduty.CreateMembersInp
 	return ret0, ret1
 }
 
-// CreateMembersRequest indicates an expected call of CreateMembersRequest.
+// CreateMembersRequest indicates an expected call of CreateMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) CreateMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateMembersRequest), arg0)
 }
 
-// CreateMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreateMembersWithContext(arg0 context.Context, arg1 *guardduty.CreateMembersInput, arg2 ...request.Option) (*guardduty.CreateMembersOutput, error) {
+// CreateMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) CreateMembersWithContext(arg0 aws.Context, arg1 *guardduty.CreateMembersInput, arg2 ...request.Option) (*guardduty.CreateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,64 +328,14 @@ func (m *MockGuardDutyAPI) CreateMembersWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// CreateMembersWithContext indicates an expected call of CreateMembersWithContext.
+// CreateMembersWithContext indicates an expected call of CreateMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) CreateMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateMembersWithContext), varargs...)
 }
 
-// CreatePublishingDestination mocks base method.
-func (m *MockGuardDutyAPI) CreatePublishingDestination(arg0 *guardduty.CreatePublishingDestinationInput) (*guardduty.CreatePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreatePublishingDestination", arg0)
-	ret0, _ := ret[0].(*guardduty.CreatePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreatePublishingDestination indicates an expected call of CreatePublishingDestination.
-func (mr *MockGuardDutyAPIMockRecorder) CreatePublishingDestination(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreatePublishingDestination), arg0)
-}
-
-// CreatePublishingDestinationRequest mocks base method.
-func (m *MockGuardDutyAPI) CreatePublishingDestinationRequest(arg0 *guardduty.CreatePublishingDestinationInput) (*request.Request, *guardduty.CreatePublishingDestinationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreatePublishingDestinationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.CreatePublishingDestinationOutput)
-	return ret0, ret1
-}
-
-// CreatePublishingDestinationRequest indicates an expected call of CreatePublishingDestinationRequest.
-func (mr *MockGuardDutyAPIMockRecorder) CreatePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreatePublishingDestinationRequest), arg0)
-}
-
-// CreatePublishingDestinationWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreatePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.CreatePublishingDestinationInput, arg2 ...request.Option) (*guardduty.CreatePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreatePublishingDestinationWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.CreatePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreatePublishingDestinationWithContext indicates an expected call of CreatePublishingDestinationWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) CreatePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreatePublishingDestinationWithContext), varargs...)
-}
-
-// CreateSampleFindings mocks base method.
+// CreateSampleFindings mocks base method
 func (m *MockGuardDutyAPI) CreateSampleFindings(arg0 *guardduty.CreateSampleFindingsInput) (*guardduty.CreateSampleFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSampleFindings", arg0)
@@ -395,13 +344,13 @@ func (m *MockGuardDutyAPI) CreateSampleFindings(arg0 *guardduty.CreateSampleFind
 	return ret0, ret1
 }
 
-// CreateSampleFindings indicates an expected call of CreateSampleFindings.
+// CreateSampleFindings indicates an expected call of CreateSampleFindings
 func (mr *MockGuardDutyAPIMockRecorder) CreateSampleFindings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSampleFindings", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateSampleFindings), arg0)
 }
 
-// CreateSampleFindingsRequest mocks base method.
+// CreateSampleFindingsRequest mocks base method
 func (m *MockGuardDutyAPI) CreateSampleFindingsRequest(arg0 *guardduty.CreateSampleFindingsInput) (*request.Request, *guardduty.CreateSampleFindingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSampleFindingsRequest", arg0)
@@ -410,14 +359,14 @@ func (m *MockGuardDutyAPI) CreateSampleFindingsRequest(arg0 *guardduty.CreateSam
 	return ret0, ret1
 }
 
-// CreateSampleFindingsRequest indicates an expected call of CreateSampleFindingsRequest.
+// CreateSampleFindingsRequest indicates an expected call of CreateSampleFindingsRequest
 func (mr *MockGuardDutyAPIMockRecorder) CreateSampleFindingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSampleFindingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateSampleFindingsRequest), arg0)
 }
 
-// CreateSampleFindingsWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreateSampleFindingsWithContext(arg0 context.Context, arg1 *guardduty.CreateSampleFindingsInput, arg2 ...request.Option) (*guardduty.CreateSampleFindingsOutput, error) {
+// CreateSampleFindingsWithContext mocks base method
+func (m *MockGuardDutyAPI) CreateSampleFindingsWithContext(arg0 aws.Context, arg1 *guardduty.CreateSampleFindingsInput, arg2 ...request.Option) (*guardduty.CreateSampleFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +378,14 @@ func (m *MockGuardDutyAPI) CreateSampleFindingsWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateSampleFindingsWithContext indicates an expected call of CreateSampleFindingsWithContext.
+// CreateSampleFindingsWithContext indicates an expected call of CreateSampleFindingsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) CreateSampleFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSampleFindingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateSampleFindingsWithContext), varargs...)
 }
 
-// CreateThreatIntelSet mocks base method.
+// CreateThreatIntelSet mocks base method
 func (m *MockGuardDutyAPI) CreateThreatIntelSet(arg0 *guardduty.CreateThreatIntelSetInput) (*guardduty.CreateThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateThreatIntelSet", arg0)
@@ -445,13 +394,13 @@ func (m *MockGuardDutyAPI) CreateThreatIntelSet(arg0 *guardduty.CreateThreatInte
 	return ret0, ret1
 }
 
-// CreateThreatIntelSet indicates an expected call of CreateThreatIntelSet.
+// CreateThreatIntelSet indicates an expected call of CreateThreatIntelSet
 func (mr *MockGuardDutyAPIMockRecorder) CreateThreatIntelSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThreatIntelSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateThreatIntelSet), arg0)
 }
 
-// CreateThreatIntelSetRequest mocks base method.
+// CreateThreatIntelSetRequest mocks base method
 func (m *MockGuardDutyAPI) CreateThreatIntelSetRequest(arg0 *guardduty.CreateThreatIntelSetInput) (*request.Request, *guardduty.CreateThreatIntelSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateThreatIntelSetRequest", arg0)
@@ -460,14 +409,14 @@ func (m *MockGuardDutyAPI) CreateThreatIntelSetRequest(arg0 *guardduty.CreateThr
 	return ret0, ret1
 }
 
-// CreateThreatIntelSetRequest indicates an expected call of CreateThreatIntelSetRequest.
+// CreateThreatIntelSetRequest indicates an expected call of CreateThreatIntelSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) CreateThreatIntelSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThreatIntelSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateThreatIntelSetRequest), arg0)
 }
 
-// CreateThreatIntelSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) CreateThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.CreateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.CreateThreatIntelSetOutput, error) {
+// CreateThreatIntelSetWithContext mocks base method
+func (m *MockGuardDutyAPI) CreateThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.CreateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.CreateThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +428,14 @@ func (m *MockGuardDutyAPI) CreateThreatIntelSetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateThreatIntelSetWithContext indicates an expected call of CreateThreatIntelSetWithContext.
+// CreateThreatIntelSetWithContext indicates an expected call of CreateThreatIntelSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) CreateThreatIntelSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThreatIntelSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateThreatIntelSetWithContext), varargs...)
 }
 
-// DeclineInvitations mocks base method.
+// DeclineInvitations mocks base method
 func (m *MockGuardDutyAPI) DeclineInvitations(arg0 *guardduty.DeclineInvitationsInput) (*guardduty.DeclineInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeclineInvitations", arg0)
@@ -495,13 +444,13 @@ func (m *MockGuardDutyAPI) DeclineInvitations(arg0 *guardduty.DeclineInvitations
 	return ret0, ret1
 }
 
-// DeclineInvitations indicates an expected call of DeclineInvitations.
+// DeclineInvitations indicates an expected call of DeclineInvitations
 func (mr *MockGuardDutyAPIMockRecorder) DeclineInvitations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeclineInvitations", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeclineInvitations), arg0)
 }
 
-// DeclineInvitationsRequest mocks base method.
+// DeclineInvitationsRequest mocks base method
 func (m *MockGuardDutyAPI) DeclineInvitationsRequest(arg0 *guardduty.DeclineInvitationsInput) (*request.Request, *guardduty.DeclineInvitationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeclineInvitationsRequest", arg0)
@@ -510,14 +459,14 @@ func (m *MockGuardDutyAPI) DeclineInvitationsRequest(arg0 *guardduty.DeclineInvi
 	return ret0, ret1
 }
 
-// DeclineInvitationsRequest indicates an expected call of DeclineInvitationsRequest.
+// DeclineInvitationsRequest indicates an expected call of DeclineInvitationsRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeclineInvitationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeclineInvitationsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeclineInvitationsRequest), arg0)
 }
 
-// DeclineInvitationsWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeclineInvitationsWithContext(arg0 context.Context, arg1 *guardduty.DeclineInvitationsInput, arg2 ...request.Option) (*guardduty.DeclineInvitationsOutput, error) {
+// DeclineInvitationsWithContext mocks base method
+func (m *MockGuardDutyAPI) DeclineInvitationsWithContext(arg0 aws.Context, arg1 *guardduty.DeclineInvitationsInput, arg2 ...request.Option) (*guardduty.DeclineInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +478,14 @@ func (m *MockGuardDutyAPI) DeclineInvitationsWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DeclineInvitationsWithContext indicates an expected call of DeclineInvitationsWithContext.
+// DeclineInvitationsWithContext indicates an expected call of DeclineInvitationsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeclineInvitationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeclineInvitationsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeclineInvitationsWithContext), varargs...)
 }
 
-// DeleteDetector mocks base method.
+// DeleteDetector mocks base method
 func (m *MockGuardDutyAPI) DeleteDetector(arg0 *guardduty.DeleteDetectorInput) (*guardduty.DeleteDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDetector", arg0)
@@ -545,13 +494,13 @@ func (m *MockGuardDutyAPI) DeleteDetector(arg0 *guardduty.DeleteDetectorInput) (
 	return ret0, ret1
 }
 
-// DeleteDetector indicates an expected call of DeleteDetector.
+// DeleteDetector indicates an expected call of DeleteDetector
 func (mr *MockGuardDutyAPIMockRecorder) DeleteDetector(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDetector", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteDetector), arg0)
 }
 
-// DeleteDetectorRequest mocks base method.
+// DeleteDetectorRequest mocks base method
 func (m *MockGuardDutyAPI) DeleteDetectorRequest(arg0 *guardduty.DeleteDetectorInput) (*request.Request, *guardduty.DeleteDetectorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDetectorRequest", arg0)
@@ -560,14 +509,14 @@ func (m *MockGuardDutyAPI) DeleteDetectorRequest(arg0 *guardduty.DeleteDetectorI
 	return ret0, ret1
 }
 
-// DeleteDetectorRequest indicates an expected call of DeleteDetectorRequest.
+// DeleteDetectorRequest indicates an expected call of DeleteDetectorRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeleteDetectorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDetectorRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteDetectorRequest), arg0)
 }
 
-// DeleteDetectorWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeleteDetectorWithContext(arg0 context.Context, arg1 *guardduty.DeleteDetectorInput, arg2 ...request.Option) (*guardduty.DeleteDetectorOutput, error) {
+// DeleteDetectorWithContext mocks base method
+func (m *MockGuardDutyAPI) DeleteDetectorWithContext(arg0 aws.Context, arg1 *guardduty.DeleteDetectorInput, arg2 ...request.Option) (*guardduty.DeleteDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +528,14 @@ func (m *MockGuardDutyAPI) DeleteDetectorWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteDetectorWithContext indicates an expected call of DeleteDetectorWithContext.
+// DeleteDetectorWithContext indicates an expected call of DeleteDetectorWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeleteDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDetectorWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteDetectorWithContext), varargs...)
 }
 
-// DeleteFilter mocks base method.
+// DeleteFilter mocks base method
 func (m *MockGuardDutyAPI) DeleteFilter(arg0 *guardduty.DeleteFilterInput) (*guardduty.DeleteFilterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFilter", arg0)
@@ -595,13 +544,13 @@ func (m *MockGuardDutyAPI) DeleteFilter(arg0 *guardduty.DeleteFilterInput) (*gua
 	return ret0, ret1
 }
 
-// DeleteFilter indicates an expected call of DeleteFilter.
+// DeleteFilter indicates an expected call of DeleteFilter
 func (mr *MockGuardDutyAPIMockRecorder) DeleteFilter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFilter", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteFilter), arg0)
 }
 
-// DeleteFilterRequest mocks base method.
+// DeleteFilterRequest mocks base method
 func (m *MockGuardDutyAPI) DeleteFilterRequest(arg0 *guardduty.DeleteFilterInput) (*request.Request, *guardduty.DeleteFilterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFilterRequest", arg0)
@@ -610,14 +559,14 @@ func (m *MockGuardDutyAPI) DeleteFilterRequest(arg0 *guardduty.DeleteFilterInput
 	return ret0, ret1
 }
 
-// DeleteFilterRequest indicates an expected call of DeleteFilterRequest.
+// DeleteFilterRequest indicates an expected call of DeleteFilterRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeleteFilterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFilterRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteFilterRequest), arg0)
 }
 
-// DeleteFilterWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeleteFilterWithContext(arg0 context.Context, arg1 *guardduty.DeleteFilterInput, arg2 ...request.Option) (*guardduty.DeleteFilterOutput, error) {
+// DeleteFilterWithContext mocks base method
+func (m *MockGuardDutyAPI) DeleteFilterWithContext(arg0 aws.Context, arg1 *guardduty.DeleteFilterInput, arg2 ...request.Option) (*guardduty.DeleteFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +578,14 @@ func (m *MockGuardDutyAPI) DeleteFilterWithContext(arg0 context.Context, arg1 *g
 	return ret0, ret1
 }
 
-// DeleteFilterWithContext indicates an expected call of DeleteFilterWithContext.
+// DeleteFilterWithContext indicates an expected call of DeleteFilterWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeleteFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFilterWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteFilterWithContext), varargs...)
 }
 
-// DeleteIPSet mocks base method.
+// DeleteIPSet mocks base method
 func (m *MockGuardDutyAPI) DeleteIPSet(arg0 *guardduty.DeleteIPSetInput) (*guardduty.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIPSet", arg0)
@@ -645,13 +594,13 @@ func (m *MockGuardDutyAPI) DeleteIPSet(arg0 *guardduty.DeleteIPSetInput) (*guard
 	return ret0, ret1
 }
 
-// DeleteIPSet indicates an expected call of DeleteIPSet.
+// DeleteIPSet indicates an expected call of DeleteIPSet
 func (mr *MockGuardDutyAPIMockRecorder) DeleteIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteIPSet), arg0)
 }
 
-// DeleteIPSetRequest mocks base method.
+// DeleteIPSetRequest mocks base method
 func (m *MockGuardDutyAPI) DeleteIPSetRequest(arg0 *guardduty.DeleteIPSetInput) (*request.Request, *guardduty.DeleteIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIPSetRequest", arg0)
@@ -660,14 +609,14 @@ func (m *MockGuardDutyAPI) DeleteIPSetRequest(arg0 *guardduty.DeleteIPSetInput) 
 	return ret0, ret1
 }
 
-// DeleteIPSetRequest indicates an expected call of DeleteIPSetRequest.
+// DeleteIPSetRequest indicates an expected call of DeleteIPSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeleteIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteIPSetRequest), arg0)
 }
 
-// DeleteIPSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeleteIPSetWithContext(arg0 context.Context, arg1 *guardduty.DeleteIPSetInput, arg2 ...request.Option) (*guardduty.DeleteIPSetOutput, error) {
+// DeleteIPSetWithContext mocks base method
+func (m *MockGuardDutyAPI) DeleteIPSetWithContext(arg0 aws.Context, arg1 *guardduty.DeleteIPSetInput, arg2 ...request.Option) (*guardduty.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +628,14 @@ func (m *MockGuardDutyAPI) DeleteIPSetWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// DeleteIPSetWithContext indicates an expected call of DeleteIPSetWithContext.
+// DeleteIPSetWithContext indicates an expected call of DeleteIPSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeleteIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteIPSetWithContext), varargs...)
 }
 
-// DeleteInvitations mocks base method.
+// DeleteInvitations mocks base method
 func (m *MockGuardDutyAPI) DeleteInvitations(arg0 *guardduty.DeleteInvitationsInput) (*guardduty.DeleteInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteInvitations", arg0)
@@ -695,13 +644,13 @@ func (m *MockGuardDutyAPI) DeleteInvitations(arg0 *guardduty.DeleteInvitationsIn
 	return ret0, ret1
 }
 
-// DeleteInvitations indicates an expected call of DeleteInvitations.
+// DeleteInvitations indicates an expected call of DeleteInvitations
 func (mr *MockGuardDutyAPIMockRecorder) DeleteInvitations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInvitations", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteInvitations), arg0)
 }
 
-// DeleteInvitationsRequest mocks base method.
+// DeleteInvitationsRequest mocks base method
 func (m *MockGuardDutyAPI) DeleteInvitationsRequest(arg0 *guardduty.DeleteInvitationsInput) (*request.Request, *guardduty.DeleteInvitationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteInvitationsRequest", arg0)
@@ -710,14 +659,14 @@ func (m *MockGuardDutyAPI) DeleteInvitationsRequest(arg0 *guardduty.DeleteInvita
 	return ret0, ret1
 }
 
-// DeleteInvitationsRequest indicates an expected call of DeleteInvitationsRequest.
+// DeleteInvitationsRequest indicates an expected call of DeleteInvitationsRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeleteInvitationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInvitationsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteInvitationsRequest), arg0)
 }
 
-// DeleteInvitationsWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeleteInvitationsWithContext(arg0 context.Context, arg1 *guardduty.DeleteInvitationsInput, arg2 ...request.Option) (*guardduty.DeleteInvitationsOutput, error) {
+// DeleteInvitationsWithContext mocks base method
+func (m *MockGuardDutyAPI) DeleteInvitationsWithContext(arg0 aws.Context, arg1 *guardduty.DeleteInvitationsInput, arg2 ...request.Option) (*guardduty.DeleteInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +678,14 @@ func (m *MockGuardDutyAPI) DeleteInvitationsWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteInvitationsWithContext indicates an expected call of DeleteInvitationsWithContext.
+// DeleteInvitationsWithContext indicates an expected call of DeleteInvitationsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeleteInvitationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInvitationsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteInvitationsWithContext), varargs...)
 }
 
-// DeleteMembers mocks base method.
+// DeleteMembers mocks base method
 func (m *MockGuardDutyAPI) DeleteMembers(arg0 *guardduty.DeleteMembersInput) (*guardduty.DeleteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMembers", arg0)
@@ -745,13 +694,13 @@ func (m *MockGuardDutyAPI) DeleteMembers(arg0 *guardduty.DeleteMembersInput) (*g
 	return ret0, ret1
 }
 
-// DeleteMembers indicates an expected call of DeleteMembers.
+// DeleteMembers indicates an expected call of DeleteMembers
 func (mr *MockGuardDutyAPIMockRecorder) DeleteMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteMembers), arg0)
 }
 
-// DeleteMembersRequest mocks base method.
+// DeleteMembersRequest mocks base method
 func (m *MockGuardDutyAPI) DeleteMembersRequest(arg0 *guardduty.DeleteMembersInput) (*request.Request, *guardduty.DeleteMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMembersRequest", arg0)
@@ -760,14 +709,14 @@ func (m *MockGuardDutyAPI) DeleteMembersRequest(arg0 *guardduty.DeleteMembersInp
 	return ret0, ret1
 }
 
-// DeleteMembersRequest indicates an expected call of DeleteMembersRequest.
+// DeleteMembersRequest indicates an expected call of DeleteMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeleteMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteMembersRequest), arg0)
 }
 
-// DeleteMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeleteMembersWithContext(arg0 context.Context, arg1 *guardduty.DeleteMembersInput, arg2 ...request.Option) (*guardduty.DeleteMembersOutput, error) {
+// DeleteMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) DeleteMembersWithContext(arg0 aws.Context, arg1 *guardduty.DeleteMembersInput, arg2 ...request.Option) (*guardduty.DeleteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,64 +728,14 @@ func (m *MockGuardDutyAPI) DeleteMembersWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteMembersWithContext indicates an expected call of DeleteMembersWithContext.
+// DeleteMembersWithContext indicates an expected call of DeleteMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeleteMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteMembersWithContext), varargs...)
 }
 
-// DeletePublishingDestination mocks base method.
-func (m *MockGuardDutyAPI) DeletePublishingDestination(arg0 *guardduty.DeletePublishingDestinationInput) (*guardduty.DeletePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeletePublishingDestination", arg0)
-	ret0, _ := ret[0].(*guardduty.DeletePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeletePublishingDestination indicates an expected call of DeletePublishingDestination.
-func (mr *MockGuardDutyAPIMockRecorder) DeletePublishingDestination(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeletePublishingDestination), arg0)
-}
-
-// DeletePublishingDestinationRequest mocks base method.
-func (m *MockGuardDutyAPI) DeletePublishingDestinationRequest(arg0 *guardduty.DeletePublishingDestinationInput) (*request.Request, *guardduty.DeletePublishingDestinationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeletePublishingDestinationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.DeletePublishingDestinationOutput)
-	return ret0, ret1
-}
-
-// DeletePublishingDestinationRequest indicates an expected call of DeletePublishingDestinationRequest.
-func (mr *MockGuardDutyAPIMockRecorder) DeletePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeletePublishingDestinationRequest), arg0)
-}
-
-// DeletePublishingDestinationWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeletePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.DeletePublishingDestinationInput, arg2 ...request.Option) (*guardduty.DeletePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeletePublishingDestinationWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.DeletePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeletePublishingDestinationWithContext indicates an expected call of DeletePublishingDestinationWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) DeletePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeletePublishingDestinationWithContext), varargs...)
-}
-
-// DeleteThreatIntelSet mocks base method.
+// DeleteThreatIntelSet mocks base method
 func (m *MockGuardDutyAPI) DeleteThreatIntelSet(arg0 *guardduty.DeleteThreatIntelSetInput) (*guardduty.DeleteThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteThreatIntelSet", arg0)
@@ -845,13 +744,13 @@ func (m *MockGuardDutyAPI) DeleteThreatIntelSet(arg0 *guardduty.DeleteThreatInte
 	return ret0, ret1
 }
 
-// DeleteThreatIntelSet indicates an expected call of DeleteThreatIntelSet.
+// DeleteThreatIntelSet indicates an expected call of DeleteThreatIntelSet
 func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThreatIntelSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteThreatIntelSet), arg0)
 }
 
-// DeleteThreatIntelSetRequest mocks base method.
+// DeleteThreatIntelSetRequest mocks base method
 func (m *MockGuardDutyAPI) DeleteThreatIntelSetRequest(arg0 *guardduty.DeleteThreatIntelSetInput) (*request.Request, *guardduty.DeleteThreatIntelSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteThreatIntelSetRequest", arg0)
@@ -860,14 +759,14 @@ func (m *MockGuardDutyAPI) DeleteThreatIntelSetRequest(arg0 *guardduty.DeleteThr
 	return ret0, ret1
 }
 
-// DeleteThreatIntelSetRequest indicates an expected call of DeleteThreatIntelSetRequest.
+// DeleteThreatIntelSetRequest indicates an expected call of DeleteThreatIntelSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThreatIntelSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteThreatIntelSetRequest), arg0)
 }
 
-// DeleteThreatIntelSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) DeleteThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.DeleteThreatIntelSetInput, arg2 ...request.Option) (*guardduty.DeleteThreatIntelSetOutput, error) {
+// DeleteThreatIntelSetWithContext mocks base method
+func (m *MockGuardDutyAPI) DeleteThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.DeleteThreatIntelSetInput, arg2 ...request.Option) (*guardduty.DeleteThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,164 +778,14 @@ func (m *MockGuardDutyAPI) DeleteThreatIntelSetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteThreatIntelSetWithContext indicates an expected call of DeleteThreatIntelSetWithContext.
+// DeleteThreatIntelSetWithContext indicates an expected call of DeleteThreatIntelSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThreatIntelSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteThreatIntelSetWithContext), varargs...)
 }
 
-// DescribeOrganizationConfiguration mocks base method.
-func (m *MockGuardDutyAPI) DescribeOrganizationConfiguration(arg0 *guardduty.DescribeOrganizationConfigurationInput) (*guardduty.DescribeOrganizationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeOrganizationConfiguration", arg0)
-	ret0, _ := ret[0].(*guardduty.DescribeOrganizationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeOrganizationConfiguration indicates an expected call of DescribeOrganizationConfiguration.
-func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfiguration", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfiguration), arg0)
-}
-
-// DescribeOrganizationConfigurationRequest mocks base method.
-func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationRequest(arg0 *guardduty.DescribeOrganizationConfigurationInput) (*request.Request, *guardduty.DescribeOrganizationConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.DescribeOrganizationConfigurationOutput)
-	return ret0, ret1
-}
-
-// DescribeOrganizationConfigurationRequest indicates an expected call of DescribeOrganizationConfigurationRequest.
-func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfigurationRequest), arg0)
-}
-
-// DescribeOrganizationConfigurationWithContext mocks base method.
-func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationWithContext(arg0 context.Context, arg1 *guardduty.DescribeOrganizationConfigurationInput, arg2 ...request.Option) (*guardduty.DescribeOrganizationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.DescribeOrganizationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeOrganizationConfigurationWithContext indicates an expected call of DescribeOrganizationConfigurationWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfigurationWithContext), varargs...)
-}
-
-// DescribePublishingDestination mocks base method.
-func (m *MockGuardDutyAPI) DescribePublishingDestination(arg0 *guardduty.DescribePublishingDestinationInput) (*guardduty.DescribePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribePublishingDestination", arg0)
-	ret0, _ := ret[0].(*guardduty.DescribePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribePublishingDestination indicates an expected call of DescribePublishingDestination.
-func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestination(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestination), arg0)
-}
-
-// DescribePublishingDestinationRequest mocks base method.
-func (m *MockGuardDutyAPI) DescribePublishingDestinationRequest(arg0 *guardduty.DescribePublishingDestinationInput) (*request.Request, *guardduty.DescribePublishingDestinationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribePublishingDestinationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.DescribePublishingDestinationOutput)
-	return ret0, ret1
-}
-
-// DescribePublishingDestinationRequest indicates an expected call of DescribePublishingDestinationRequest.
-func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestinationRequest), arg0)
-}
-
-// DescribePublishingDestinationWithContext mocks base method.
-func (m *MockGuardDutyAPI) DescribePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.DescribePublishingDestinationInput, arg2 ...request.Option) (*guardduty.DescribePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribePublishingDestinationWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.DescribePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribePublishingDestinationWithContext indicates an expected call of DescribePublishingDestinationWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestinationWithContext), varargs...)
-}
-
-// DisableOrganizationAdminAccount mocks base method.
-func (m *MockGuardDutyAPI) DisableOrganizationAdminAccount(arg0 *guardduty.DisableOrganizationAdminAccountInput) (*guardduty.DisableOrganizationAdminAccountOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccount", arg0)
-	ret0, _ := ret[0].(*guardduty.DisableOrganizationAdminAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisableOrganizationAdminAccount indicates an expected call of DisableOrganizationAdminAccount.
-func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccount(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccount), arg0)
-}
-
-// DisableOrganizationAdminAccountRequest mocks base method.
-func (m *MockGuardDutyAPI) DisableOrganizationAdminAccountRequest(arg0 *guardduty.DisableOrganizationAdminAccountInput) (*request.Request, *guardduty.DisableOrganizationAdminAccountOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccountRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.DisableOrganizationAdminAccountOutput)
-	return ret0, ret1
-}
-
-// DisableOrganizationAdminAccountRequest indicates an expected call of DisableOrganizationAdminAccountRequest.
-func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccountRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccountRequest), arg0)
-}
-
-// DisableOrganizationAdminAccountWithContext mocks base method.
-func (m *MockGuardDutyAPI) DisableOrganizationAdminAccountWithContext(arg0 context.Context, arg1 *guardduty.DisableOrganizationAdminAccountInput, arg2 ...request.Option) (*guardduty.DisableOrganizationAdminAccountOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccountWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.DisableOrganizationAdminAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisableOrganizationAdminAccountWithContext indicates an expected call of DisableOrganizationAdminAccountWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccountWithContext), varargs...)
-}
-
-// DisassociateFromMasterAccount mocks base method.
+// DisassociateFromMasterAccount mocks base method
 func (m *MockGuardDutyAPI) DisassociateFromMasterAccount(arg0 *guardduty.DisassociateFromMasterAccountInput) (*guardduty.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateFromMasterAccount", arg0)
@@ -1045,13 +794,13 @@ func (m *MockGuardDutyAPI) DisassociateFromMasterAccount(arg0 *guardduty.Disasso
 	return ret0, ret1
 }
 
-// DisassociateFromMasterAccount indicates an expected call of DisassociateFromMasterAccount.
+// DisassociateFromMasterAccount indicates an expected call of DisassociateFromMasterAccount
 func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromMasterAccount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromMasterAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateFromMasterAccount), arg0)
 }
 
-// DisassociateFromMasterAccountRequest mocks base method.
+// DisassociateFromMasterAccountRequest mocks base method
 func (m *MockGuardDutyAPI) DisassociateFromMasterAccountRequest(arg0 *guardduty.DisassociateFromMasterAccountInput) (*request.Request, *guardduty.DisassociateFromMasterAccountOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateFromMasterAccountRequest", arg0)
@@ -1060,14 +809,14 @@ func (m *MockGuardDutyAPI) DisassociateFromMasterAccountRequest(arg0 *guardduty.
 	return ret0, ret1
 }
 
-// DisassociateFromMasterAccountRequest indicates an expected call of DisassociateFromMasterAccountRequest.
+// DisassociateFromMasterAccountRequest indicates an expected call of DisassociateFromMasterAccountRequest
 func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromMasterAccountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromMasterAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateFromMasterAccountRequest), arg0)
 }
 
-// DisassociateFromMasterAccountWithContext mocks base method.
-func (m *MockGuardDutyAPI) DisassociateFromMasterAccountWithContext(arg0 context.Context, arg1 *guardduty.DisassociateFromMasterAccountInput, arg2 ...request.Option) (*guardduty.DisassociateFromMasterAccountOutput, error) {
+// DisassociateFromMasterAccountWithContext mocks base method
+func (m *MockGuardDutyAPI) DisassociateFromMasterAccountWithContext(arg0 aws.Context, arg1 *guardduty.DisassociateFromMasterAccountInput, arg2 ...request.Option) (*guardduty.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,14 +828,14 @@ func (m *MockGuardDutyAPI) DisassociateFromMasterAccountWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DisassociateFromMasterAccountWithContext indicates an expected call of DisassociateFromMasterAccountWithContext.
+// DisassociateFromMasterAccountWithContext indicates an expected call of DisassociateFromMasterAccountWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromMasterAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromMasterAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateFromMasterAccountWithContext), varargs...)
 }
 
-// DisassociateMembers mocks base method.
+// DisassociateMembers mocks base method
 func (m *MockGuardDutyAPI) DisassociateMembers(arg0 *guardduty.DisassociateMembersInput) (*guardduty.DisassociateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateMembers", arg0)
@@ -1095,13 +844,13 @@ func (m *MockGuardDutyAPI) DisassociateMembers(arg0 *guardduty.DisassociateMembe
 	return ret0, ret1
 }
 
-// DisassociateMembers indicates an expected call of DisassociateMembers.
+// DisassociateMembers indicates an expected call of DisassociateMembers
 func (mr *MockGuardDutyAPIMockRecorder) DisassociateMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateMembers), arg0)
 }
 
-// DisassociateMembersRequest mocks base method.
+// DisassociateMembersRequest mocks base method
 func (m *MockGuardDutyAPI) DisassociateMembersRequest(arg0 *guardduty.DisassociateMembersInput) (*request.Request, *guardduty.DisassociateMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateMembersRequest", arg0)
@@ -1110,14 +859,14 @@ func (m *MockGuardDutyAPI) DisassociateMembersRequest(arg0 *guardduty.Disassocia
 	return ret0, ret1
 }
 
-// DisassociateMembersRequest indicates an expected call of DisassociateMembersRequest.
+// DisassociateMembersRequest indicates an expected call of DisassociateMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) DisassociateMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateMembersRequest), arg0)
 }
 
-// DisassociateMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) DisassociateMembersWithContext(arg0 context.Context, arg1 *guardduty.DisassociateMembersInput, arg2 ...request.Option) (*guardduty.DisassociateMembersOutput, error) {
+// DisassociateMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) DisassociateMembersWithContext(arg0 aws.Context, arg1 *guardduty.DisassociateMembersInput, arg2 ...request.Option) (*guardduty.DisassociateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1129,64 +878,14 @@ func (m *MockGuardDutyAPI) DisassociateMembersWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DisassociateMembersWithContext indicates an expected call of DisassociateMembersWithContext.
+// DisassociateMembersWithContext indicates an expected call of DisassociateMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) DisassociateMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateMembersWithContext), varargs...)
 }
 
-// EnableOrganizationAdminAccount mocks base method.
-func (m *MockGuardDutyAPI) EnableOrganizationAdminAccount(arg0 *guardduty.EnableOrganizationAdminAccountInput) (*guardduty.EnableOrganizationAdminAccountOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccount", arg0)
-	ret0, _ := ret[0].(*guardduty.EnableOrganizationAdminAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// EnableOrganizationAdminAccount indicates an expected call of EnableOrganizationAdminAccount.
-func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccount(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccount), arg0)
-}
-
-// EnableOrganizationAdminAccountRequest mocks base method.
-func (m *MockGuardDutyAPI) EnableOrganizationAdminAccountRequest(arg0 *guardduty.EnableOrganizationAdminAccountInput) (*request.Request, *guardduty.EnableOrganizationAdminAccountOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccountRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.EnableOrganizationAdminAccountOutput)
-	return ret0, ret1
-}
-
-// EnableOrganizationAdminAccountRequest indicates an expected call of EnableOrganizationAdminAccountRequest.
-func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccountRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccountRequest), arg0)
-}
-
-// EnableOrganizationAdminAccountWithContext mocks base method.
-func (m *MockGuardDutyAPI) EnableOrganizationAdminAccountWithContext(arg0 context.Context, arg1 *guardduty.EnableOrganizationAdminAccountInput, arg2 ...request.Option) (*guardduty.EnableOrganizationAdminAccountOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccountWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.EnableOrganizationAdminAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// EnableOrganizationAdminAccountWithContext indicates an expected call of EnableOrganizationAdminAccountWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccountWithContext), varargs...)
-}
-
-// GetDetector mocks base method.
+// GetDetector mocks base method
 func (m *MockGuardDutyAPI) GetDetector(arg0 *guardduty.GetDetectorInput) (*guardduty.GetDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDetector", arg0)
@@ -1195,13 +894,13 @@ func (m *MockGuardDutyAPI) GetDetector(arg0 *guardduty.GetDetectorInput) (*guard
 	return ret0, ret1
 }
 
-// GetDetector indicates an expected call of GetDetector.
+// GetDetector indicates an expected call of GetDetector
 func (mr *MockGuardDutyAPIMockRecorder) GetDetector(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDetector", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetDetector), arg0)
 }
 
-// GetDetectorRequest mocks base method.
+// GetDetectorRequest mocks base method
 func (m *MockGuardDutyAPI) GetDetectorRequest(arg0 *guardduty.GetDetectorInput) (*request.Request, *guardduty.GetDetectorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDetectorRequest", arg0)
@@ -1210,14 +909,14 @@ func (m *MockGuardDutyAPI) GetDetectorRequest(arg0 *guardduty.GetDetectorInput) 
 	return ret0, ret1
 }
 
-// GetDetectorRequest indicates an expected call of GetDetectorRequest.
+// GetDetectorRequest indicates an expected call of GetDetectorRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetDetectorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDetectorRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetDetectorRequest), arg0)
 }
 
-// GetDetectorWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetDetectorWithContext(arg0 context.Context, arg1 *guardduty.GetDetectorInput, arg2 ...request.Option) (*guardduty.GetDetectorOutput, error) {
+// GetDetectorWithContext mocks base method
+func (m *MockGuardDutyAPI) GetDetectorWithContext(arg0 aws.Context, arg1 *guardduty.GetDetectorInput, arg2 ...request.Option) (*guardduty.GetDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1229,14 +928,14 @@ func (m *MockGuardDutyAPI) GetDetectorWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// GetDetectorWithContext indicates an expected call of GetDetectorWithContext.
+// GetDetectorWithContext indicates an expected call of GetDetectorWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDetectorWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetDetectorWithContext), varargs...)
 }
 
-// GetFilter mocks base method.
+// GetFilter mocks base method
 func (m *MockGuardDutyAPI) GetFilter(arg0 *guardduty.GetFilterInput) (*guardduty.GetFilterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFilter", arg0)
@@ -1245,13 +944,13 @@ func (m *MockGuardDutyAPI) GetFilter(arg0 *guardduty.GetFilterInput) (*guardduty
 	return ret0, ret1
 }
 
-// GetFilter indicates an expected call of GetFilter.
+// GetFilter indicates an expected call of GetFilter
 func (mr *MockGuardDutyAPIMockRecorder) GetFilter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFilter", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFilter), arg0)
 }
 
-// GetFilterRequest mocks base method.
+// GetFilterRequest mocks base method
 func (m *MockGuardDutyAPI) GetFilterRequest(arg0 *guardduty.GetFilterInput) (*request.Request, *guardduty.GetFilterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFilterRequest", arg0)
@@ -1260,14 +959,14 @@ func (m *MockGuardDutyAPI) GetFilterRequest(arg0 *guardduty.GetFilterInput) (*re
 	return ret0, ret1
 }
 
-// GetFilterRequest indicates an expected call of GetFilterRequest.
+// GetFilterRequest indicates an expected call of GetFilterRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetFilterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFilterRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFilterRequest), arg0)
 }
 
-// GetFilterWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetFilterWithContext(arg0 context.Context, arg1 *guardduty.GetFilterInput, arg2 ...request.Option) (*guardduty.GetFilterOutput, error) {
+// GetFilterWithContext mocks base method
+func (m *MockGuardDutyAPI) GetFilterWithContext(arg0 aws.Context, arg1 *guardduty.GetFilterInput, arg2 ...request.Option) (*guardduty.GetFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1279,14 +978,14 @@ func (m *MockGuardDutyAPI) GetFilterWithContext(arg0 context.Context, arg1 *guar
 	return ret0, ret1
 }
 
-// GetFilterWithContext indicates an expected call of GetFilterWithContext.
+// GetFilterWithContext indicates an expected call of GetFilterWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFilterWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFilterWithContext), varargs...)
 }
 
-// GetFindings mocks base method.
+// GetFindings mocks base method
 func (m *MockGuardDutyAPI) GetFindings(arg0 *guardduty.GetFindingsInput) (*guardduty.GetFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFindings", arg0)
@@ -1295,13 +994,13 @@ func (m *MockGuardDutyAPI) GetFindings(arg0 *guardduty.GetFindingsInput) (*guard
 	return ret0, ret1
 }
 
-// GetFindings indicates an expected call of GetFindings.
+// GetFindings indicates an expected call of GetFindings
 func (mr *MockGuardDutyAPIMockRecorder) GetFindings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindings", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFindings), arg0)
 }
 
-// GetFindingsRequest mocks base method.
+// GetFindingsRequest mocks base method
 func (m *MockGuardDutyAPI) GetFindingsRequest(arg0 *guardduty.GetFindingsInput) (*request.Request, *guardduty.GetFindingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFindingsRequest", arg0)
@@ -1310,13 +1009,13 @@ func (m *MockGuardDutyAPI) GetFindingsRequest(arg0 *guardduty.GetFindingsInput) 
 	return ret0, ret1
 }
 
-// GetFindingsRequest indicates an expected call of GetFindingsRequest.
+// GetFindingsRequest indicates an expected call of GetFindingsRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetFindingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFindingsRequest), arg0)
 }
 
-// GetFindingsStatistics mocks base method.
+// GetFindingsStatistics mocks base method
 func (m *MockGuardDutyAPI) GetFindingsStatistics(arg0 *guardduty.GetFindingsStatisticsInput) (*guardduty.GetFindingsStatisticsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFindingsStatistics", arg0)
@@ -1325,13 +1024,13 @@ func (m *MockGuardDutyAPI) GetFindingsStatistics(arg0 *guardduty.GetFindingsStat
 	return ret0, ret1
 }
 
-// GetFindingsStatistics indicates an expected call of GetFindingsStatistics.
+// GetFindingsStatistics indicates an expected call of GetFindingsStatistics
 func (mr *MockGuardDutyAPIMockRecorder) GetFindingsStatistics(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsStatistics", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFindingsStatistics), arg0)
 }
 
-// GetFindingsStatisticsRequest mocks base method.
+// GetFindingsStatisticsRequest mocks base method
 func (m *MockGuardDutyAPI) GetFindingsStatisticsRequest(arg0 *guardduty.GetFindingsStatisticsInput) (*request.Request, *guardduty.GetFindingsStatisticsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFindingsStatisticsRequest", arg0)
@@ -1340,14 +1039,14 @@ func (m *MockGuardDutyAPI) GetFindingsStatisticsRequest(arg0 *guardduty.GetFindi
 	return ret0, ret1
 }
 
-// GetFindingsStatisticsRequest indicates an expected call of GetFindingsStatisticsRequest.
+// GetFindingsStatisticsRequest indicates an expected call of GetFindingsStatisticsRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetFindingsStatisticsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsStatisticsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFindingsStatisticsRequest), arg0)
 }
 
-// GetFindingsStatisticsWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetFindingsStatisticsWithContext(arg0 context.Context, arg1 *guardduty.GetFindingsStatisticsInput, arg2 ...request.Option) (*guardduty.GetFindingsStatisticsOutput, error) {
+// GetFindingsStatisticsWithContext mocks base method
+func (m *MockGuardDutyAPI) GetFindingsStatisticsWithContext(arg0 aws.Context, arg1 *guardduty.GetFindingsStatisticsInput, arg2 ...request.Option) (*guardduty.GetFindingsStatisticsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1359,15 +1058,15 @@ func (m *MockGuardDutyAPI) GetFindingsStatisticsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetFindingsStatisticsWithContext indicates an expected call of GetFindingsStatisticsWithContext.
+// GetFindingsStatisticsWithContext indicates an expected call of GetFindingsStatisticsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetFindingsStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsStatisticsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFindingsStatisticsWithContext), varargs...)
 }
 
-// GetFindingsWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetFindingsWithContext(arg0 context.Context, arg1 *guardduty.GetFindingsInput, arg2 ...request.Option) (*guardduty.GetFindingsOutput, error) {
+// GetFindingsWithContext mocks base method
+func (m *MockGuardDutyAPI) GetFindingsWithContext(arg0 aws.Context, arg1 *guardduty.GetFindingsInput, arg2 ...request.Option) (*guardduty.GetFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1379,14 +1078,14 @@ func (m *MockGuardDutyAPI) GetFindingsWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// GetFindingsWithContext indicates an expected call of GetFindingsWithContext.
+// GetFindingsWithContext indicates an expected call of GetFindingsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetFindingsWithContext), varargs...)
 }
 
-// GetIPSet mocks base method.
+// GetIPSet mocks base method
 func (m *MockGuardDutyAPI) GetIPSet(arg0 *guardduty.GetIPSetInput) (*guardduty.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIPSet", arg0)
@@ -1395,13 +1094,13 @@ func (m *MockGuardDutyAPI) GetIPSet(arg0 *guardduty.GetIPSetInput) (*guardduty.G
 	return ret0, ret1
 }
 
-// GetIPSet indicates an expected call of GetIPSet.
+// GetIPSet indicates an expected call of GetIPSet
 func (mr *MockGuardDutyAPIMockRecorder) GetIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetIPSet), arg0)
 }
 
-// GetIPSetRequest mocks base method.
+// GetIPSetRequest mocks base method
 func (m *MockGuardDutyAPI) GetIPSetRequest(arg0 *guardduty.GetIPSetInput) (*request.Request, *guardduty.GetIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIPSetRequest", arg0)
@@ -1410,14 +1109,14 @@ func (m *MockGuardDutyAPI) GetIPSetRequest(arg0 *guardduty.GetIPSetInput) (*requ
 	return ret0, ret1
 }
 
-// GetIPSetRequest indicates an expected call of GetIPSetRequest.
+// GetIPSetRequest indicates an expected call of GetIPSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetIPSetRequest), arg0)
 }
 
-// GetIPSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetIPSetWithContext(arg0 context.Context, arg1 *guardduty.GetIPSetInput, arg2 ...request.Option) (*guardduty.GetIPSetOutput, error) {
+// GetIPSetWithContext mocks base method
+func (m *MockGuardDutyAPI) GetIPSetWithContext(arg0 aws.Context, arg1 *guardduty.GetIPSetInput, arg2 ...request.Option) (*guardduty.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,14 +1128,14 @@ func (m *MockGuardDutyAPI) GetIPSetWithContext(arg0 context.Context, arg1 *guard
 	return ret0, ret1
 }
 
-// GetIPSetWithContext indicates an expected call of GetIPSetWithContext.
+// GetIPSetWithContext indicates an expected call of GetIPSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetIPSetWithContext), varargs...)
 }
 
-// GetInvitationsCount mocks base method.
+// GetInvitationsCount mocks base method
 func (m *MockGuardDutyAPI) GetInvitationsCount(arg0 *guardduty.GetInvitationsCountInput) (*guardduty.GetInvitationsCountOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInvitationsCount", arg0)
@@ -1445,13 +1144,13 @@ func (m *MockGuardDutyAPI) GetInvitationsCount(arg0 *guardduty.GetInvitationsCou
 	return ret0, ret1
 }
 
-// GetInvitationsCount indicates an expected call of GetInvitationsCount.
+// GetInvitationsCount indicates an expected call of GetInvitationsCount
 func (mr *MockGuardDutyAPIMockRecorder) GetInvitationsCount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationsCount", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetInvitationsCount), arg0)
 }
 
-// GetInvitationsCountRequest mocks base method.
+// GetInvitationsCountRequest mocks base method
 func (m *MockGuardDutyAPI) GetInvitationsCountRequest(arg0 *guardduty.GetInvitationsCountInput) (*request.Request, *guardduty.GetInvitationsCountOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInvitationsCountRequest", arg0)
@@ -1460,14 +1159,14 @@ func (m *MockGuardDutyAPI) GetInvitationsCountRequest(arg0 *guardduty.GetInvitat
 	return ret0, ret1
 }
 
-// GetInvitationsCountRequest indicates an expected call of GetInvitationsCountRequest.
+// GetInvitationsCountRequest indicates an expected call of GetInvitationsCountRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetInvitationsCountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationsCountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetInvitationsCountRequest), arg0)
 }
 
-// GetInvitationsCountWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetInvitationsCountWithContext(arg0 context.Context, arg1 *guardduty.GetInvitationsCountInput, arg2 ...request.Option) (*guardduty.GetInvitationsCountOutput, error) {
+// GetInvitationsCountWithContext mocks base method
+func (m *MockGuardDutyAPI) GetInvitationsCountWithContext(arg0 aws.Context, arg1 *guardduty.GetInvitationsCountInput, arg2 ...request.Option) (*guardduty.GetInvitationsCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1479,14 +1178,14 @@ func (m *MockGuardDutyAPI) GetInvitationsCountWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetInvitationsCountWithContext indicates an expected call of GetInvitationsCountWithContext.
+// GetInvitationsCountWithContext indicates an expected call of GetInvitationsCountWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetInvitationsCountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationsCountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetInvitationsCountWithContext), varargs...)
 }
 
-// GetMasterAccount mocks base method.
+// GetMasterAccount mocks base method
 func (m *MockGuardDutyAPI) GetMasterAccount(arg0 *guardduty.GetMasterAccountInput) (*guardduty.GetMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMasterAccount", arg0)
@@ -1495,13 +1194,13 @@ func (m *MockGuardDutyAPI) GetMasterAccount(arg0 *guardduty.GetMasterAccountInpu
 	return ret0, ret1
 }
 
-// GetMasterAccount indicates an expected call of GetMasterAccount.
+// GetMasterAccount indicates an expected call of GetMasterAccount
 func (mr *MockGuardDutyAPIMockRecorder) GetMasterAccount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMasterAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMasterAccount), arg0)
 }
 
-// GetMasterAccountRequest mocks base method.
+// GetMasterAccountRequest mocks base method
 func (m *MockGuardDutyAPI) GetMasterAccountRequest(arg0 *guardduty.GetMasterAccountInput) (*request.Request, *guardduty.GetMasterAccountOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMasterAccountRequest", arg0)
@@ -1510,14 +1209,14 @@ func (m *MockGuardDutyAPI) GetMasterAccountRequest(arg0 *guardduty.GetMasterAcco
 	return ret0, ret1
 }
 
-// GetMasterAccountRequest indicates an expected call of GetMasterAccountRequest.
+// GetMasterAccountRequest indicates an expected call of GetMasterAccountRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetMasterAccountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMasterAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMasterAccountRequest), arg0)
 }
 
-// GetMasterAccountWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetMasterAccountWithContext(arg0 context.Context, arg1 *guardduty.GetMasterAccountInput, arg2 ...request.Option) (*guardduty.GetMasterAccountOutput, error) {
+// GetMasterAccountWithContext mocks base method
+func (m *MockGuardDutyAPI) GetMasterAccountWithContext(arg0 aws.Context, arg1 *guardduty.GetMasterAccountInput, arg2 ...request.Option) (*guardduty.GetMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1529,64 +1228,14 @@ func (m *MockGuardDutyAPI) GetMasterAccountWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// GetMasterAccountWithContext indicates an expected call of GetMasterAccountWithContext.
+// GetMasterAccountWithContext indicates an expected call of GetMasterAccountWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetMasterAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMasterAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMasterAccountWithContext), varargs...)
 }
 
-// GetMemberDetectors mocks base method.
-func (m *MockGuardDutyAPI) GetMemberDetectors(arg0 *guardduty.GetMemberDetectorsInput) (*guardduty.GetMemberDetectorsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetMemberDetectors", arg0)
-	ret0, _ := ret[0].(*guardduty.GetMemberDetectorsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetMemberDetectors indicates an expected call of GetMemberDetectors.
-func (mr *MockGuardDutyAPIMockRecorder) GetMemberDetectors(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMemberDetectors", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMemberDetectors), arg0)
-}
-
-// GetMemberDetectorsRequest mocks base method.
-func (m *MockGuardDutyAPI) GetMemberDetectorsRequest(arg0 *guardduty.GetMemberDetectorsInput) (*request.Request, *guardduty.GetMemberDetectorsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetMemberDetectorsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.GetMemberDetectorsOutput)
-	return ret0, ret1
-}
-
-// GetMemberDetectorsRequest indicates an expected call of GetMemberDetectorsRequest.
-func (mr *MockGuardDutyAPIMockRecorder) GetMemberDetectorsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMemberDetectorsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMemberDetectorsRequest), arg0)
-}
-
-// GetMemberDetectorsWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetMemberDetectorsWithContext(arg0 context.Context, arg1 *guardduty.GetMemberDetectorsInput, arg2 ...request.Option) (*guardduty.GetMemberDetectorsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetMemberDetectorsWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.GetMemberDetectorsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetMemberDetectorsWithContext indicates an expected call of GetMemberDetectorsWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) GetMemberDetectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMemberDetectorsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMemberDetectorsWithContext), varargs...)
-}
-
-// GetMembers mocks base method.
+// GetMembers mocks base method
 func (m *MockGuardDutyAPI) GetMembers(arg0 *guardduty.GetMembersInput) (*guardduty.GetMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMembers", arg0)
@@ -1595,13 +1244,13 @@ func (m *MockGuardDutyAPI) GetMembers(arg0 *guardduty.GetMembersInput) (*guarddu
 	return ret0, ret1
 }
 
-// GetMembers indicates an expected call of GetMembers.
+// GetMembers indicates an expected call of GetMembers
 func (mr *MockGuardDutyAPIMockRecorder) GetMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMembers), arg0)
 }
 
-// GetMembersRequest mocks base method.
+// GetMembersRequest mocks base method
 func (m *MockGuardDutyAPI) GetMembersRequest(arg0 *guardduty.GetMembersInput) (*request.Request, *guardduty.GetMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMembersRequest", arg0)
@@ -1610,14 +1259,14 @@ func (m *MockGuardDutyAPI) GetMembersRequest(arg0 *guardduty.GetMembersInput) (*
 	return ret0, ret1
 }
 
-// GetMembersRequest indicates an expected call of GetMembersRequest.
+// GetMembersRequest indicates an expected call of GetMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMembersRequest), arg0)
 }
 
-// GetMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetMembersWithContext(arg0 context.Context, arg1 *guardduty.GetMembersInput, arg2 ...request.Option) (*guardduty.GetMembersOutput, error) {
+// GetMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) GetMembersWithContext(arg0 aws.Context, arg1 *guardduty.GetMembersInput, arg2 ...request.Option) (*guardduty.GetMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1629,14 +1278,14 @@ func (m *MockGuardDutyAPI) GetMembersWithContext(arg0 context.Context, arg1 *gua
 	return ret0, ret1
 }
 
-// GetMembersWithContext indicates an expected call of GetMembersWithContext.
+// GetMembersWithContext indicates an expected call of GetMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMembersWithContext), varargs...)
 }
 
-// GetThreatIntelSet mocks base method.
+// GetThreatIntelSet mocks base method
 func (m *MockGuardDutyAPI) GetThreatIntelSet(arg0 *guardduty.GetThreatIntelSetInput) (*guardduty.GetThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetThreatIntelSet", arg0)
@@ -1645,13 +1294,13 @@ func (m *MockGuardDutyAPI) GetThreatIntelSet(arg0 *guardduty.GetThreatIntelSetIn
 	return ret0, ret1
 }
 
-// GetThreatIntelSet indicates an expected call of GetThreatIntelSet.
+// GetThreatIntelSet indicates an expected call of GetThreatIntelSet
 func (mr *MockGuardDutyAPIMockRecorder) GetThreatIntelSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThreatIntelSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetThreatIntelSet), arg0)
 }
 
-// GetThreatIntelSetRequest mocks base method.
+// GetThreatIntelSetRequest mocks base method
 func (m *MockGuardDutyAPI) GetThreatIntelSetRequest(arg0 *guardduty.GetThreatIntelSetInput) (*request.Request, *guardduty.GetThreatIntelSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetThreatIntelSetRequest", arg0)
@@ -1660,14 +1309,14 @@ func (m *MockGuardDutyAPI) GetThreatIntelSetRequest(arg0 *guardduty.GetThreatInt
 	return ret0, ret1
 }
 
-// GetThreatIntelSetRequest indicates an expected call of GetThreatIntelSetRequest.
+// GetThreatIntelSetRequest indicates an expected call of GetThreatIntelSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) GetThreatIntelSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThreatIntelSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetThreatIntelSetRequest), arg0)
 }
 
-// GetThreatIntelSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.GetThreatIntelSetInput, arg2 ...request.Option) (*guardduty.GetThreatIntelSetOutput, error) {
+// GetThreatIntelSetWithContext mocks base method
+func (m *MockGuardDutyAPI) GetThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.GetThreatIntelSetInput, arg2 ...request.Option) (*guardduty.GetThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1679,97 +1328,14 @@ func (m *MockGuardDutyAPI) GetThreatIntelSetWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetThreatIntelSetWithContext indicates an expected call of GetThreatIntelSetWithContext.
+// GetThreatIntelSetWithContext indicates an expected call of GetThreatIntelSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) GetThreatIntelSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThreatIntelSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetThreatIntelSetWithContext), varargs...)
 }
 
-// GetUsageStatistics mocks base method.
-func (m *MockGuardDutyAPI) GetUsageStatistics(arg0 *guardduty.GetUsageStatisticsInput) (*guardduty.GetUsageStatisticsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetUsageStatistics", arg0)
-	ret0, _ := ret[0].(*guardduty.GetUsageStatisticsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetUsageStatistics indicates an expected call of GetUsageStatistics.
-func (mr *MockGuardDutyAPIMockRecorder) GetUsageStatistics(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageStatistics", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetUsageStatistics), arg0)
-}
-
-// GetUsageStatisticsPages mocks base method.
-func (m *MockGuardDutyAPI) GetUsageStatisticsPages(arg0 *guardduty.GetUsageStatisticsInput, arg1 func(*guardduty.GetUsageStatisticsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetUsageStatisticsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// GetUsageStatisticsPages indicates an expected call of GetUsageStatisticsPages.
-func (mr *MockGuardDutyAPIMockRecorder) GetUsageStatisticsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageStatisticsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetUsageStatisticsPages), arg0, arg1)
-}
-
-// GetUsageStatisticsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetUsageStatisticsPagesWithContext(arg0 context.Context, arg1 *guardduty.GetUsageStatisticsInput, arg2 func(*guardduty.GetUsageStatisticsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetUsageStatisticsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// GetUsageStatisticsPagesWithContext indicates an expected call of GetUsageStatisticsPagesWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) GetUsageStatisticsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageStatisticsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetUsageStatisticsPagesWithContext), varargs...)
-}
-
-// GetUsageStatisticsRequest mocks base method.
-func (m *MockGuardDutyAPI) GetUsageStatisticsRequest(arg0 *guardduty.GetUsageStatisticsInput) (*request.Request, *guardduty.GetUsageStatisticsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetUsageStatisticsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.GetUsageStatisticsOutput)
-	return ret0, ret1
-}
-
-// GetUsageStatisticsRequest indicates an expected call of GetUsageStatisticsRequest.
-func (mr *MockGuardDutyAPIMockRecorder) GetUsageStatisticsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageStatisticsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetUsageStatisticsRequest), arg0)
-}
-
-// GetUsageStatisticsWithContext mocks base method.
-func (m *MockGuardDutyAPI) GetUsageStatisticsWithContext(arg0 context.Context, arg1 *guardduty.GetUsageStatisticsInput, arg2 ...request.Option) (*guardduty.GetUsageStatisticsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetUsageStatisticsWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.GetUsageStatisticsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetUsageStatisticsWithContext indicates an expected call of GetUsageStatisticsWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) GetUsageStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageStatisticsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetUsageStatisticsWithContext), varargs...)
-}
-
-// InviteMembers mocks base method.
+// InviteMembers mocks base method
 func (m *MockGuardDutyAPI) InviteMembers(arg0 *guardduty.InviteMembersInput) (*guardduty.InviteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InviteMembers", arg0)
@@ -1778,13 +1344,13 @@ func (m *MockGuardDutyAPI) InviteMembers(arg0 *guardduty.InviteMembersInput) (*g
 	return ret0, ret1
 }
 
-// InviteMembers indicates an expected call of InviteMembers.
+// InviteMembers indicates an expected call of InviteMembers
 func (mr *MockGuardDutyAPIMockRecorder) InviteMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InviteMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).InviteMembers), arg0)
 }
 
-// InviteMembersRequest mocks base method.
+// InviteMembersRequest mocks base method
 func (m *MockGuardDutyAPI) InviteMembersRequest(arg0 *guardduty.InviteMembersInput) (*request.Request, *guardduty.InviteMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InviteMembersRequest", arg0)
@@ -1793,14 +1359,14 @@ func (m *MockGuardDutyAPI) InviteMembersRequest(arg0 *guardduty.InviteMembersInp
 	return ret0, ret1
 }
 
-// InviteMembersRequest indicates an expected call of InviteMembersRequest.
+// InviteMembersRequest indicates an expected call of InviteMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) InviteMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InviteMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).InviteMembersRequest), arg0)
 }
 
-// InviteMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) InviteMembersWithContext(arg0 context.Context, arg1 *guardduty.InviteMembersInput, arg2 ...request.Option) (*guardduty.InviteMembersOutput, error) {
+// InviteMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) InviteMembersWithContext(arg0 aws.Context, arg1 *guardduty.InviteMembersInput, arg2 ...request.Option) (*guardduty.InviteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1812,14 +1378,14 @@ func (m *MockGuardDutyAPI) InviteMembersWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// InviteMembersWithContext indicates an expected call of InviteMembersWithContext.
+// InviteMembersWithContext indicates an expected call of InviteMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) InviteMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InviteMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).InviteMembersWithContext), varargs...)
 }
 
-// ListDetectors mocks base method.
+// ListDetectors mocks base method
 func (m *MockGuardDutyAPI) ListDetectors(arg0 *guardduty.ListDetectorsInput) (*guardduty.ListDetectorsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDetectors", arg0)
@@ -1828,13 +1394,13 @@ func (m *MockGuardDutyAPI) ListDetectors(arg0 *guardduty.ListDetectorsInput) (*g
 	return ret0, ret1
 }
 
-// ListDetectors indicates an expected call of ListDetectors.
+// ListDetectors indicates an expected call of ListDetectors
 func (mr *MockGuardDutyAPIMockRecorder) ListDetectors(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectors", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListDetectors), arg0)
 }
 
-// ListDetectorsPages mocks base method.
+// ListDetectorsPages mocks base method
 func (m *MockGuardDutyAPI) ListDetectorsPages(arg0 *guardduty.ListDetectorsInput, arg1 func(*guardduty.ListDetectorsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDetectorsPages", arg0, arg1)
@@ -1842,14 +1408,14 @@ func (m *MockGuardDutyAPI) ListDetectorsPages(arg0 *guardduty.ListDetectorsInput
 	return ret0
 }
 
-// ListDetectorsPages indicates an expected call of ListDetectorsPages.
+// ListDetectorsPages indicates an expected call of ListDetectorsPages
 func (mr *MockGuardDutyAPIMockRecorder) ListDetectorsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectorsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListDetectorsPages), arg0, arg1)
 }
 
-// ListDetectorsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListDetectorsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListDetectorsInput, arg2 func(*guardduty.ListDetectorsOutput, bool) bool, arg3 ...request.Option) error {
+// ListDetectorsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListDetectorsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListDetectorsInput, arg2 func(*guardduty.ListDetectorsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1860,14 +1426,14 @@ func (m *MockGuardDutyAPI) ListDetectorsPagesWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// ListDetectorsPagesWithContext indicates an expected call of ListDetectorsPagesWithContext.
+// ListDetectorsPagesWithContext indicates an expected call of ListDetectorsPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListDetectorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectorsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListDetectorsPagesWithContext), varargs...)
 }
 
-// ListDetectorsRequest mocks base method.
+// ListDetectorsRequest mocks base method
 func (m *MockGuardDutyAPI) ListDetectorsRequest(arg0 *guardduty.ListDetectorsInput) (*request.Request, *guardduty.ListDetectorsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDetectorsRequest", arg0)
@@ -1876,14 +1442,14 @@ func (m *MockGuardDutyAPI) ListDetectorsRequest(arg0 *guardduty.ListDetectorsInp
 	return ret0, ret1
 }
 
-// ListDetectorsRequest indicates an expected call of ListDetectorsRequest.
+// ListDetectorsRequest indicates an expected call of ListDetectorsRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListDetectorsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectorsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListDetectorsRequest), arg0)
 }
 
-// ListDetectorsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListDetectorsWithContext(arg0 context.Context, arg1 *guardduty.ListDetectorsInput, arg2 ...request.Option) (*guardduty.ListDetectorsOutput, error) {
+// ListDetectorsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListDetectorsWithContext(arg0 aws.Context, arg1 *guardduty.ListDetectorsInput, arg2 ...request.Option) (*guardduty.ListDetectorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1895,14 +1461,14 @@ func (m *MockGuardDutyAPI) ListDetectorsWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ListDetectorsWithContext indicates an expected call of ListDetectorsWithContext.
+// ListDetectorsWithContext indicates an expected call of ListDetectorsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListDetectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectorsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListDetectorsWithContext), varargs...)
 }
 
-// ListFilters mocks base method.
+// ListFilters mocks base method
 func (m *MockGuardDutyAPI) ListFilters(arg0 *guardduty.ListFiltersInput) (*guardduty.ListFiltersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFilters", arg0)
@@ -1911,13 +1477,13 @@ func (m *MockGuardDutyAPI) ListFilters(arg0 *guardduty.ListFiltersInput) (*guard
 	return ret0, ret1
 }
 
-// ListFilters indicates an expected call of ListFilters.
+// ListFilters indicates an expected call of ListFilters
 func (mr *MockGuardDutyAPIMockRecorder) ListFilters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFilters", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFilters), arg0)
 }
 
-// ListFiltersPages mocks base method.
+// ListFiltersPages mocks base method
 func (m *MockGuardDutyAPI) ListFiltersPages(arg0 *guardduty.ListFiltersInput, arg1 func(*guardduty.ListFiltersOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFiltersPages", arg0, arg1)
@@ -1925,14 +1491,14 @@ func (m *MockGuardDutyAPI) ListFiltersPages(arg0 *guardduty.ListFiltersInput, ar
 	return ret0
 }
 
-// ListFiltersPages indicates an expected call of ListFiltersPages.
+// ListFiltersPages indicates an expected call of ListFiltersPages
 func (mr *MockGuardDutyAPIMockRecorder) ListFiltersPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFiltersPages), arg0, arg1)
 }
 
-// ListFiltersPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListFiltersPagesWithContext(arg0 context.Context, arg1 *guardduty.ListFiltersInput, arg2 func(*guardduty.ListFiltersOutput, bool) bool, arg3 ...request.Option) error {
+// ListFiltersPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListFiltersPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListFiltersInput, arg2 func(*guardduty.ListFiltersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1943,14 +1509,14 @@ func (m *MockGuardDutyAPI) ListFiltersPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListFiltersPagesWithContext indicates an expected call of ListFiltersPagesWithContext.
+// ListFiltersPagesWithContext indicates an expected call of ListFiltersPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListFiltersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFiltersPagesWithContext), varargs...)
 }
 
-// ListFiltersRequest mocks base method.
+// ListFiltersRequest mocks base method
 func (m *MockGuardDutyAPI) ListFiltersRequest(arg0 *guardduty.ListFiltersInput) (*request.Request, *guardduty.ListFiltersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFiltersRequest", arg0)
@@ -1959,14 +1525,14 @@ func (m *MockGuardDutyAPI) ListFiltersRequest(arg0 *guardduty.ListFiltersInput) 
 	return ret0, ret1
 }
 
-// ListFiltersRequest indicates an expected call of ListFiltersRequest.
+// ListFiltersRequest indicates an expected call of ListFiltersRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListFiltersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFiltersRequest), arg0)
 }
 
-// ListFiltersWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListFiltersWithContext(arg0 context.Context, arg1 *guardduty.ListFiltersInput, arg2 ...request.Option) (*guardduty.ListFiltersOutput, error) {
+// ListFiltersWithContext mocks base method
+func (m *MockGuardDutyAPI) ListFiltersWithContext(arg0 aws.Context, arg1 *guardduty.ListFiltersInput, arg2 ...request.Option) (*guardduty.ListFiltersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1978,14 +1544,14 @@ func (m *MockGuardDutyAPI) ListFiltersWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// ListFiltersWithContext indicates an expected call of ListFiltersWithContext.
+// ListFiltersWithContext indicates an expected call of ListFiltersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListFiltersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFiltersWithContext), varargs...)
 }
 
-// ListFindings mocks base method.
+// ListFindings mocks base method
 func (m *MockGuardDutyAPI) ListFindings(arg0 *guardduty.ListFindingsInput) (*guardduty.ListFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFindings", arg0)
@@ -1994,13 +1560,13 @@ func (m *MockGuardDutyAPI) ListFindings(arg0 *guardduty.ListFindingsInput) (*gua
 	return ret0, ret1
 }
 
-// ListFindings indicates an expected call of ListFindings.
+// ListFindings indicates an expected call of ListFindings
 func (mr *MockGuardDutyAPIMockRecorder) ListFindings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFindings", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFindings), arg0)
 }
 
-// ListFindingsPages mocks base method.
+// ListFindingsPages mocks base method
 func (m *MockGuardDutyAPI) ListFindingsPages(arg0 *guardduty.ListFindingsInput, arg1 func(*guardduty.ListFindingsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFindingsPages", arg0, arg1)
@@ -2008,14 +1574,14 @@ func (m *MockGuardDutyAPI) ListFindingsPages(arg0 *guardduty.ListFindingsInput, 
 	return ret0
 }
 
-// ListFindingsPages indicates an expected call of ListFindingsPages.
+// ListFindingsPages indicates an expected call of ListFindingsPages
 func (mr *MockGuardDutyAPIMockRecorder) ListFindingsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFindingsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFindingsPages), arg0, arg1)
 }
 
-// ListFindingsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListFindingsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListFindingsInput, arg2 func(*guardduty.ListFindingsOutput, bool) bool, arg3 ...request.Option) error {
+// ListFindingsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListFindingsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListFindingsInput, arg2 func(*guardduty.ListFindingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2026,14 +1592,14 @@ func (m *MockGuardDutyAPI) ListFindingsPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// ListFindingsPagesWithContext indicates an expected call of ListFindingsPagesWithContext.
+// ListFindingsPagesWithContext indicates an expected call of ListFindingsPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListFindingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFindingsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFindingsPagesWithContext), varargs...)
 }
 
-// ListFindingsRequest mocks base method.
+// ListFindingsRequest mocks base method
 func (m *MockGuardDutyAPI) ListFindingsRequest(arg0 *guardduty.ListFindingsInput) (*request.Request, *guardduty.ListFindingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFindingsRequest", arg0)
@@ -2042,14 +1608,14 @@ func (m *MockGuardDutyAPI) ListFindingsRequest(arg0 *guardduty.ListFindingsInput
 	return ret0, ret1
 }
 
-// ListFindingsRequest indicates an expected call of ListFindingsRequest.
+// ListFindingsRequest indicates an expected call of ListFindingsRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListFindingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFindingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFindingsRequest), arg0)
 }
 
-// ListFindingsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListFindingsWithContext(arg0 context.Context, arg1 *guardduty.ListFindingsInput, arg2 ...request.Option) (*guardduty.ListFindingsOutput, error) {
+// ListFindingsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListFindingsWithContext(arg0 aws.Context, arg1 *guardduty.ListFindingsInput, arg2 ...request.Option) (*guardduty.ListFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2061,14 +1627,14 @@ func (m *MockGuardDutyAPI) ListFindingsWithContext(arg0 context.Context, arg1 *g
 	return ret0, ret1
 }
 
-// ListFindingsWithContext indicates an expected call of ListFindingsWithContext.
+// ListFindingsWithContext indicates an expected call of ListFindingsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFindingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListFindingsWithContext), varargs...)
 }
 
-// ListIPSets mocks base method.
+// ListIPSets mocks base method
 func (m *MockGuardDutyAPI) ListIPSets(arg0 *guardduty.ListIPSetsInput) (*guardduty.ListIPSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIPSets", arg0)
@@ -2077,13 +1643,13 @@ func (m *MockGuardDutyAPI) ListIPSets(arg0 *guardduty.ListIPSetsInput) (*guarddu
 	return ret0, ret1
 }
 
-// ListIPSets indicates an expected call of ListIPSets.
+// ListIPSets indicates an expected call of ListIPSets
 func (mr *MockGuardDutyAPIMockRecorder) ListIPSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSets", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListIPSets), arg0)
 }
 
-// ListIPSetsPages mocks base method.
+// ListIPSetsPages mocks base method
 func (m *MockGuardDutyAPI) ListIPSetsPages(arg0 *guardduty.ListIPSetsInput, arg1 func(*guardduty.ListIPSetsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIPSetsPages", arg0, arg1)
@@ -2091,14 +1657,14 @@ func (m *MockGuardDutyAPI) ListIPSetsPages(arg0 *guardduty.ListIPSetsInput, arg1
 	return ret0
 }
 
-// ListIPSetsPages indicates an expected call of ListIPSetsPages.
+// ListIPSetsPages indicates an expected call of ListIPSetsPages
 func (mr *MockGuardDutyAPIMockRecorder) ListIPSetsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListIPSetsPages), arg0, arg1)
 }
 
-// ListIPSetsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListIPSetsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListIPSetsInput, arg2 func(*guardduty.ListIPSetsOutput, bool) bool, arg3 ...request.Option) error {
+// ListIPSetsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListIPSetsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListIPSetsInput, arg2 func(*guardduty.ListIPSetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2109,14 +1675,14 @@ func (m *MockGuardDutyAPI) ListIPSetsPagesWithContext(arg0 context.Context, arg1
 	return ret0
 }
 
-// ListIPSetsPagesWithContext indicates an expected call of ListIPSetsPagesWithContext.
+// ListIPSetsPagesWithContext indicates an expected call of ListIPSetsPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListIPSetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListIPSetsPagesWithContext), varargs...)
 }
 
-// ListIPSetsRequest mocks base method.
+// ListIPSetsRequest mocks base method
 func (m *MockGuardDutyAPI) ListIPSetsRequest(arg0 *guardduty.ListIPSetsInput) (*request.Request, *guardduty.ListIPSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIPSetsRequest", arg0)
@@ -2125,14 +1691,14 @@ func (m *MockGuardDutyAPI) ListIPSetsRequest(arg0 *guardduty.ListIPSetsInput) (*
 	return ret0, ret1
 }
 
-// ListIPSetsRequest indicates an expected call of ListIPSetsRequest.
+// ListIPSetsRequest indicates an expected call of ListIPSetsRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListIPSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListIPSetsRequest), arg0)
 }
 
-// ListIPSetsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListIPSetsWithContext(arg0 context.Context, arg1 *guardduty.ListIPSetsInput, arg2 ...request.Option) (*guardduty.ListIPSetsOutput, error) {
+// ListIPSetsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListIPSetsWithContext(arg0 aws.Context, arg1 *guardduty.ListIPSetsInput, arg2 ...request.Option) (*guardduty.ListIPSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2144,14 +1710,14 @@ func (m *MockGuardDutyAPI) ListIPSetsWithContext(arg0 context.Context, arg1 *gua
 	return ret0, ret1
 }
 
-// ListIPSetsWithContext indicates an expected call of ListIPSetsWithContext.
+// ListIPSetsWithContext indicates an expected call of ListIPSetsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListIPSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIPSetsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListIPSetsWithContext), varargs...)
 }
 
-// ListInvitations mocks base method.
+// ListInvitations mocks base method
 func (m *MockGuardDutyAPI) ListInvitations(arg0 *guardduty.ListInvitationsInput) (*guardduty.ListInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInvitations", arg0)
@@ -2160,13 +1726,13 @@ func (m *MockGuardDutyAPI) ListInvitations(arg0 *guardduty.ListInvitationsInput)
 	return ret0, ret1
 }
 
-// ListInvitations indicates an expected call of ListInvitations.
+// ListInvitations indicates an expected call of ListInvitations
 func (mr *MockGuardDutyAPIMockRecorder) ListInvitations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitations", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListInvitations), arg0)
 }
 
-// ListInvitationsPages mocks base method.
+// ListInvitationsPages mocks base method
 func (m *MockGuardDutyAPI) ListInvitationsPages(arg0 *guardduty.ListInvitationsInput, arg1 func(*guardduty.ListInvitationsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInvitationsPages", arg0, arg1)
@@ -2174,14 +1740,14 @@ func (m *MockGuardDutyAPI) ListInvitationsPages(arg0 *guardduty.ListInvitationsI
 	return ret0
 }
 
-// ListInvitationsPages indicates an expected call of ListInvitationsPages.
+// ListInvitationsPages indicates an expected call of ListInvitationsPages
 func (mr *MockGuardDutyAPIMockRecorder) ListInvitationsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListInvitationsPages), arg0, arg1)
 }
 
-// ListInvitationsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListInvitationsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListInvitationsInput, arg2 func(*guardduty.ListInvitationsOutput, bool) bool, arg3 ...request.Option) error {
+// ListInvitationsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListInvitationsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListInvitationsInput, arg2 func(*guardduty.ListInvitationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2192,14 +1758,14 @@ func (m *MockGuardDutyAPI) ListInvitationsPagesWithContext(arg0 context.Context,
 	return ret0
 }
 
-// ListInvitationsPagesWithContext indicates an expected call of ListInvitationsPagesWithContext.
+// ListInvitationsPagesWithContext indicates an expected call of ListInvitationsPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListInvitationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListInvitationsPagesWithContext), varargs...)
 }
 
-// ListInvitationsRequest mocks base method.
+// ListInvitationsRequest mocks base method
 func (m *MockGuardDutyAPI) ListInvitationsRequest(arg0 *guardduty.ListInvitationsInput) (*request.Request, *guardduty.ListInvitationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInvitationsRequest", arg0)
@@ -2208,14 +1774,14 @@ func (m *MockGuardDutyAPI) ListInvitationsRequest(arg0 *guardduty.ListInvitation
 	return ret0, ret1
 }
 
-// ListInvitationsRequest indicates an expected call of ListInvitationsRequest.
+// ListInvitationsRequest indicates an expected call of ListInvitationsRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListInvitationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListInvitationsRequest), arg0)
 }
 
-// ListInvitationsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListInvitationsWithContext(arg0 context.Context, arg1 *guardduty.ListInvitationsInput, arg2 ...request.Option) (*guardduty.ListInvitationsOutput, error) {
+// ListInvitationsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListInvitationsWithContext(arg0 aws.Context, arg1 *guardduty.ListInvitationsInput, arg2 ...request.Option) (*guardduty.ListInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2227,14 +1793,14 @@ func (m *MockGuardDutyAPI) ListInvitationsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ListInvitationsWithContext indicates an expected call of ListInvitationsWithContext.
+// ListInvitationsWithContext indicates an expected call of ListInvitationsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListInvitationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListInvitationsWithContext), varargs...)
 }
 
-// ListMembers mocks base method.
+// ListMembers mocks base method
 func (m *MockGuardDutyAPI) ListMembers(arg0 *guardduty.ListMembersInput) (*guardduty.ListMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMembers", arg0)
@@ -2243,13 +1809,13 @@ func (m *MockGuardDutyAPI) ListMembers(arg0 *guardduty.ListMembersInput) (*guard
 	return ret0, ret1
 }
 
-// ListMembers indicates an expected call of ListMembers.
+// ListMembers indicates an expected call of ListMembers
 func (mr *MockGuardDutyAPIMockRecorder) ListMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembers), arg0)
 }
 
-// ListMembersPages mocks base method.
+// ListMembersPages mocks base method
 func (m *MockGuardDutyAPI) ListMembersPages(arg0 *guardduty.ListMembersInput, arg1 func(*guardduty.ListMembersOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMembersPages", arg0, arg1)
@@ -2257,14 +1823,14 @@ func (m *MockGuardDutyAPI) ListMembersPages(arg0 *guardduty.ListMembersInput, ar
 	return ret0
 }
 
-// ListMembersPages indicates an expected call of ListMembersPages.
+// ListMembersPages indicates an expected call of ListMembersPages
 func (mr *MockGuardDutyAPIMockRecorder) ListMembersPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembersPages), arg0, arg1)
 }
 
-// ListMembersPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListMembersPagesWithContext(arg0 context.Context, arg1 *guardduty.ListMembersInput, arg2 func(*guardduty.ListMembersOutput, bool) bool, arg3 ...request.Option) error {
+// ListMembersPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListMembersPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListMembersInput, arg2 func(*guardduty.ListMembersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2275,14 +1841,14 @@ func (m *MockGuardDutyAPI) ListMembersPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListMembersPagesWithContext indicates an expected call of ListMembersPagesWithContext.
+// ListMembersPagesWithContext indicates an expected call of ListMembersPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListMembersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembersPagesWithContext), varargs...)
 }
 
-// ListMembersRequest mocks base method.
+// ListMembersRequest mocks base method
 func (m *MockGuardDutyAPI) ListMembersRequest(arg0 *guardduty.ListMembersInput) (*request.Request, *guardduty.ListMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMembersRequest", arg0)
@@ -2291,14 +1857,14 @@ func (m *MockGuardDutyAPI) ListMembersRequest(arg0 *guardduty.ListMembersInput) 
 	return ret0, ret1
 }
 
-// ListMembersRequest indicates an expected call of ListMembersRequest.
+// ListMembersRequest indicates an expected call of ListMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembersRequest), arg0)
 }
 
-// ListMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListMembersWithContext(arg0 context.Context, arg1 *guardduty.ListMembersInput, arg2 ...request.Option) (*guardduty.ListMembersOutput, error) {
+// ListMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) ListMembersWithContext(arg0 aws.Context, arg1 *guardduty.ListMembersInput, arg2 ...request.Option) (*guardduty.ListMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2310,230 +1876,14 @@ func (m *MockGuardDutyAPI) ListMembersWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// ListMembersWithContext indicates an expected call of ListMembersWithContext.
+// ListMembersWithContext indicates an expected call of ListMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembersWithContext), varargs...)
 }
 
-// ListOrganizationAdminAccounts mocks base method.
-func (m *MockGuardDutyAPI) ListOrganizationAdminAccounts(arg0 *guardduty.ListOrganizationAdminAccountsInput) (*guardduty.ListOrganizationAdminAccountsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListOrganizationAdminAccounts", arg0)
-	ret0, _ := ret[0].(*guardduty.ListOrganizationAdminAccountsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListOrganizationAdminAccounts indicates an expected call of ListOrganizationAdminAccounts.
-func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccounts(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccounts", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccounts), arg0)
-}
-
-// ListOrganizationAdminAccountsPages mocks base method.
-func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsPages(arg0 *guardduty.ListOrganizationAdminAccountsInput, arg1 func(*guardduty.ListOrganizationAdminAccountsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListOrganizationAdminAccountsPages indicates an expected call of ListOrganizationAdminAccountsPages.
-func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsPages), arg0, arg1)
-}
-
-// ListOrganizationAdminAccountsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListOrganizationAdminAccountsInput, arg2 func(*guardduty.ListOrganizationAdminAccountsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListOrganizationAdminAccountsPagesWithContext indicates an expected call of ListOrganizationAdminAccountsPagesWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsPagesWithContext), varargs...)
-}
-
-// ListOrganizationAdminAccountsRequest mocks base method.
-func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsRequest(arg0 *guardduty.ListOrganizationAdminAccountsInput) (*request.Request, *guardduty.ListOrganizationAdminAccountsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.ListOrganizationAdminAccountsOutput)
-	return ret0, ret1
-}
-
-// ListOrganizationAdminAccountsRequest indicates an expected call of ListOrganizationAdminAccountsRequest.
-func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsRequest), arg0)
-}
-
-// ListOrganizationAdminAccountsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsWithContext(arg0 context.Context, arg1 *guardduty.ListOrganizationAdminAccountsInput, arg2 ...request.Option) (*guardduty.ListOrganizationAdminAccountsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.ListOrganizationAdminAccountsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListOrganizationAdminAccountsWithContext indicates an expected call of ListOrganizationAdminAccountsWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsWithContext), varargs...)
-}
-
-// ListPublishingDestinations mocks base method.
-func (m *MockGuardDutyAPI) ListPublishingDestinations(arg0 *guardduty.ListPublishingDestinationsInput) (*guardduty.ListPublishingDestinationsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPublishingDestinations", arg0)
-	ret0, _ := ret[0].(*guardduty.ListPublishingDestinationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListPublishingDestinations indicates an expected call of ListPublishingDestinations.
-func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinations(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinations", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinations), arg0)
-}
-
-// ListPublishingDestinationsPages mocks base method.
-func (m *MockGuardDutyAPI) ListPublishingDestinationsPages(arg0 *guardduty.ListPublishingDestinationsInput, arg1 func(*guardduty.ListPublishingDestinationsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPublishingDestinationsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPublishingDestinationsPages indicates an expected call of ListPublishingDestinationsPages.
-func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsPages), arg0, arg1)
-}
-
-// ListPublishingDestinationsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListPublishingDestinationsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListPublishingDestinationsInput, arg2 func(*guardduty.ListPublishingDestinationsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPublishingDestinationsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPublishingDestinationsPagesWithContext indicates an expected call of ListPublishingDestinationsPagesWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsPagesWithContext), varargs...)
-}
-
-// ListPublishingDestinationsRequest mocks base method.
-func (m *MockGuardDutyAPI) ListPublishingDestinationsRequest(arg0 *guardduty.ListPublishingDestinationsInput) (*request.Request, *guardduty.ListPublishingDestinationsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPublishingDestinationsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.ListPublishingDestinationsOutput)
-	return ret0, ret1
-}
-
-// ListPublishingDestinationsRequest indicates an expected call of ListPublishingDestinationsRequest.
-func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsRequest), arg0)
-}
-
-// ListPublishingDestinationsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListPublishingDestinationsWithContext(arg0 context.Context, arg1 *guardduty.ListPublishingDestinationsInput, arg2 ...request.Option) (*guardduty.ListPublishingDestinationsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPublishingDestinationsWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.ListPublishingDestinationsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListPublishingDestinationsWithContext indicates an expected call of ListPublishingDestinationsWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsWithContext), varargs...)
-}
-
-// ListTagsForResource mocks base method.
-func (m *MockGuardDutyAPI) ListTagsForResource(arg0 *guardduty.ListTagsForResourceInput) (*guardduty.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*guardduty.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockGuardDutyAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockGuardDutyAPI) ListTagsForResourceRequest(arg0 *guardduty.ListTagsForResourceInput) (*request.Request, *guardduty.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockGuardDutyAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *guardduty.ListTagsForResourceInput, arg2 ...request.Option) (*guardduty.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// ListThreatIntelSets mocks base method.
+// ListThreatIntelSets mocks base method
 func (m *MockGuardDutyAPI) ListThreatIntelSets(arg0 *guardduty.ListThreatIntelSetsInput) (*guardduty.ListThreatIntelSetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListThreatIntelSets", arg0)
@@ -2542,13 +1892,13 @@ func (m *MockGuardDutyAPI) ListThreatIntelSets(arg0 *guardduty.ListThreatIntelSe
 	return ret0, ret1
 }
 
-// ListThreatIntelSets indicates an expected call of ListThreatIntelSets.
+// ListThreatIntelSets indicates an expected call of ListThreatIntelSets
 func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThreatIntelSets", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListThreatIntelSets), arg0)
 }
 
-// ListThreatIntelSetsPages mocks base method.
+// ListThreatIntelSetsPages mocks base method
 func (m *MockGuardDutyAPI) ListThreatIntelSetsPages(arg0 *guardduty.ListThreatIntelSetsInput, arg1 func(*guardduty.ListThreatIntelSetsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListThreatIntelSetsPages", arg0, arg1)
@@ -2556,14 +1906,14 @@ func (m *MockGuardDutyAPI) ListThreatIntelSetsPages(arg0 *guardduty.ListThreatIn
 	return ret0
 }
 
-// ListThreatIntelSetsPages indicates an expected call of ListThreatIntelSetsPages.
+// ListThreatIntelSetsPages indicates an expected call of ListThreatIntelSetsPages
 func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThreatIntelSetsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListThreatIntelSetsPages), arg0, arg1)
 }
 
-// ListThreatIntelSetsPagesWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListThreatIntelSetsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 func(*guardduty.ListThreatIntelSetsOutput, bool) bool, arg3 ...request.Option) error {
+// ListThreatIntelSetsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListThreatIntelSetsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 func(*guardduty.ListThreatIntelSetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2574,14 +1924,14 @@ func (m *MockGuardDutyAPI) ListThreatIntelSetsPagesWithContext(arg0 context.Cont
 	return ret0
 }
 
-// ListThreatIntelSetsPagesWithContext indicates an expected call of ListThreatIntelSetsPagesWithContext.
+// ListThreatIntelSetsPagesWithContext indicates an expected call of ListThreatIntelSetsPagesWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThreatIntelSetsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListThreatIntelSetsPagesWithContext), varargs...)
 }
 
-// ListThreatIntelSetsRequest mocks base method.
+// ListThreatIntelSetsRequest mocks base method
 func (m *MockGuardDutyAPI) ListThreatIntelSetsRequest(arg0 *guardduty.ListThreatIntelSetsInput) (*request.Request, *guardduty.ListThreatIntelSetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListThreatIntelSetsRequest", arg0)
@@ -2590,14 +1940,14 @@ func (m *MockGuardDutyAPI) ListThreatIntelSetsRequest(arg0 *guardduty.ListThreat
 	return ret0, ret1
 }
 
-// ListThreatIntelSetsRequest indicates an expected call of ListThreatIntelSetsRequest.
+// ListThreatIntelSetsRequest indicates an expected call of ListThreatIntelSetsRequest
 func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThreatIntelSetsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListThreatIntelSetsRequest), arg0)
 }
 
-// ListThreatIntelSetsWithContext mocks base method.
-func (m *MockGuardDutyAPI) ListThreatIntelSetsWithContext(arg0 context.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 ...request.Option) (*guardduty.ListThreatIntelSetsOutput, error) {
+// ListThreatIntelSetsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListThreatIntelSetsWithContext(arg0 aws.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 ...request.Option) (*guardduty.ListThreatIntelSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2609,14 +1959,14 @@ func (m *MockGuardDutyAPI) ListThreatIntelSetsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListThreatIntelSetsWithContext indicates an expected call of ListThreatIntelSetsWithContext.
+// ListThreatIntelSetsWithContext indicates an expected call of ListThreatIntelSetsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThreatIntelSetsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListThreatIntelSetsWithContext), varargs...)
 }
 
-// StartMonitoringMembers mocks base method.
+// StartMonitoringMembers mocks base method
 func (m *MockGuardDutyAPI) StartMonitoringMembers(arg0 *guardduty.StartMonitoringMembersInput) (*guardduty.StartMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartMonitoringMembers", arg0)
@@ -2625,13 +1975,13 @@ func (m *MockGuardDutyAPI) StartMonitoringMembers(arg0 *guardduty.StartMonitorin
 	return ret0, ret1
 }
 
-// StartMonitoringMembers indicates an expected call of StartMonitoringMembers.
+// StartMonitoringMembers indicates an expected call of StartMonitoringMembers
 func (mr *MockGuardDutyAPIMockRecorder) StartMonitoringMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMonitoringMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).StartMonitoringMembers), arg0)
 }
 
-// StartMonitoringMembersRequest mocks base method.
+// StartMonitoringMembersRequest mocks base method
 func (m *MockGuardDutyAPI) StartMonitoringMembersRequest(arg0 *guardduty.StartMonitoringMembersInput) (*request.Request, *guardduty.StartMonitoringMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartMonitoringMembersRequest", arg0)
@@ -2640,14 +1990,14 @@ func (m *MockGuardDutyAPI) StartMonitoringMembersRequest(arg0 *guardduty.StartMo
 	return ret0, ret1
 }
 
-// StartMonitoringMembersRequest indicates an expected call of StartMonitoringMembersRequest.
+// StartMonitoringMembersRequest indicates an expected call of StartMonitoringMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) StartMonitoringMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMonitoringMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).StartMonitoringMembersRequest), arg0)
 }
 
-// StartMonitoringMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) StartMonitoringMembersWithContext(arg0 context.Context, arg1 *guardduty.StartMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StartMonitoringMembersOutput, error) {
+// StartMonitoringMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) StartMonitoringMembersWithContext(arg0 aws.Context, arg1 *guardduty.StartMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StartMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2659,14 +2009,14 @@ func (m *MockGuardDutyAPI) StartMonitoringMembersWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// StartMonitoringMembersWithContext indicates an expected call of StartMonitoringMembersWithContext.
+// StartMonitoringMembersWithContext indicates an expected call of StartMonitoringMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) StartMonitoringMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMonitoringMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).StartMonitoringMembersWithContext), varargs...)
 }
 
-// StopMonitoringMembers mocks base method.
+// StopMonitoringMembers mocks base method
 func (m *MockGuardDutyAPI) StopMonitoringMembers(arg0 *guardduty.StopMonitoringMembersInput) (*guardduty.StopMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopMonitoringMembers", arg0)
@@ -2675,13 +2025,13 @@ func (m *MockGuardDutyAPI) StopMonitoringMembers(arg0 *guardduty.StopMonitoringM
 	return ret0, ret1
 }
 
-// StopMonitoringMembers indicates an expected call of StopMonitoringMembers.
+// StopMonitoringMembers indicates an expected call of StopMonitoringMembers
 func (mr *MockGuardDutyAPIMockRecorder) StopMonitoringMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMonitoringMembers", reflect.TypeOf((*MockGuardDutyAPI)(nil).StopMonitoringMembers), arg0)
 }
 
-// StopMonitoringMembersRequest mocks base method.
+// StopMonitoringMembersRequest mocks base method
 func (m *MockGuardDutyAPI) StopMonitoringMembersRequest(arg0 *guardduty.StopMonitoringMembersInput) (*request.Request, *guardduty.StopMonitoringMembersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopMonitoringMembersRequest", arg0)
@@ -2690,14 +2040,14 @@ func (m *MockGuardDutyAPI) StopMonitoringMembersRequest(arg0 *guardduty.StopMoni
 	return ret0, ret1
 }
 
-// StopMonitoringMembersRequest indicates an expected call of StopMonitoringMembersRequest.
+// StopMonitoringMembersRequest indicates an expected call of StopMonitoringMembersRequest
 func (mr *MockGuardDutyAPIMockRecorder) StopMonitoringMembersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMonitoringMembersRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).StopMonitoringMembersRequest), arg0)
 }
 
-// StopMonitoringMembersWithContext mocks base method.
-func (m *MockGuardDutyAPI) StopMonitoringMembersWithContext(arg0 context.Context, arg1 *guardduty.StopMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StopMonitoringMembersOutput, error) {
+// StopMonitoringMembersWithContext mocks base method
+func (m *MockGuardDutyAPI) StopMonitoringMembersWithContext(arg0 aws.Context, arg1 *guardduty.StopMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StopMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2709,64 +2059,14 @@ func (m *MockGuardDutyAPI) StopMonitoringMembersWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// StopMonitoringMembersWithContext indicates an expected call of StopMonitoringMembersWithContext.
+// StopMonitoringMembersWithContext indicates an expected call of StopMonitoringMembersWithContext
 func (mr *MockGuardDutyAPIMockRecorder) StopMonitoringMembersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMonitoringMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).StopMonitoringMembersWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockGuardDutyAPI) TagResource(arg0 *guardduty.TagResourceInput) (*guardduty.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*guardduty.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockGuardDutyAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockGuardDutyAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockGuardDutyAPI) TagResourceRequest(arg0 *guardduty.TagResourceInput) (*request.Request, *guardduty.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockGuardDutyAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockGuardDutyAPI) TagResourceWithContext(arg0 context.Context, arg1 *guardduty.TagResourceInput, arg2 ...request.Option) (*guardduty.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UnarchiveFindings mocks base method.
+// UnarchiveFindings mocks base method
 func (m *MockGuardDutyAPI) UnarchiveFindings(arg0 *guardduty.UnarchiveFindingsInput) (*guardduty.UnarchiveFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnarchiveFindings", arg0)
@@ -2775,13 +2075,13 @@ func (m *MockGuardDutyAPI) UnarchiveFindings(arg0 *guardduty.UnarchiveFindingsIn
 	return ret0, ret1
 }
 
-// UnarchiveFindings indicates an expected call of UnarchiveFindings.
+// UnarchiveFindings indicates an expected call of UnarchiveFindings
 func (mr *MockGuardDutyAPIMockRecorder) UnarchiveFindings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveFindings", reflect.TypeOf((*MockGuardDutyAPI)(nil).UnarchiveFindings), arg0)
 }
 
-// UnarchiveFindingsRequest mocks base method.
+// UnarchiveFindingsRequest mocks base method
 func (m *MockGuardDutyAPI) UnarchiveFindingsRequest(arg0 *guardduty.UnarchiveFindingsInput) (*request.Request, *guardduty.UnarchiveFindingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnarchiveFindingsRequest", arg0)
@@ -2790,14 +2090,14 @@ func (m *MockGuardDutyAPI) UnarchiveFindingsRequest(arg0 *guardduty.UnarchiveFin
 	return ret0, ret1
 }
 
-// UnarchiveFindingsRequest indicates an expected call of UnarchiveFindingsRequest.
+// UnarchiveFindingsRequest indicates an expected call of UnarchiveFindingsRequest
 func (mr *MockGuardDutyAPIMockRecorder) UnarchiveFindingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveFindingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UnarchiveFindingsRequest), arg0)
 }
 
-// UnarchiveFindingsWithContext mocks base method.
-func (m *MockGuardDutyAPI) UnarchiveFindingsWithContext(arg0 context.Context, arg1 *guardduty.UnarchiveFindingsInput, arg2 ...request.Option) (*guardduty.UnarchiveFindingsOutput, error) {
+// UnarchiveFindingsWithContext mocks base method
+func (m *MockGuardDutyAPI) UnarchiveFindingsWithContext(arg0 aws.Context, arg1 *guardduty.UnarchiveFindingsInput, arg2 ...request.Option) (*guardduty.UnarchiveFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2809,64 +2109,14 @@ func (m *MockGuardDutyAPI) UnarchiveFindingsWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UnarchiveFindingsWithContext indicates an expected call of UnarchiveFindingsWithContext.
+// UnarchiveFindingsWithContext indicates an expected call of UnarchiveFindingsWithContext
 func (mr *MockGuardDutyAPIMockRecorder) UnarchiveFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveFindingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UnarchiveFindingsWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
-func (m *MockGuardDutyAPI) UntagResource(arg0 *guardduty.UntagResourceInput) (*guardduty.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*guardduty.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockGuardDutyAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockGuardDutyAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockGuardDutyAPI) UntagResourceRequest(arg0 *guardduty.UntagResourceInput) (*request.Request, *guardduty.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockGuardDutyAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockGuardDutyAPI) UntagResourceWithContext(arg0 context.Context, arg1 *guardduty.UntagResourceInput, arg2 ...request.Option) (*guardduty.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateDetector mocks base method.
+// UpdateDetector mocks base method
 func (m *MockGuardDutyAPI) UpdateDetector(arg0 *guardduty.UpdateDetectorInput) (*guardduty.UpdateDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDetector", arg0)
@@ -2875,13 +2125,13 @@ func (m *MockGuardDutyAPI) UpdateDetector(arg0 *guardduty.UpdateDetectorInput) (
 	return ret0, ret1
 }
 
-// UpdateDetector indicates an expected call of UpdateDetector.
+// UpdateDetector indicates an expected call of UpdateDetector
 func (mr *MockGuardDutyAPIMockRecorder) UpdateDetector(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDetector", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateDetector), arg0)
 }
 
-// UpdateDetectorRequest mocks base method.
+// UpdateDetectorRequest mocks base method
 func (m *MockGuardDutyAPI) UpdateDetectorRequest(arg0 *guardduty.UpdateDetectorInput) (*request.Request, *guardduty.UpdateDetectorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDetectorRequest", arg0)
@@ -2890,14 +2140,14 @@ func (m *MockGuardDutyAPI) UpdateDetectorRequest(arg0 *guardduty.UpdateDetectorI
 	return ret0, ret1
 }
 
-// UpdateDetectorRequest indicates an expected call of UpdateDetectorRequest.
+// UpdateDetectorRequest indicates an expected call of UpdateDetectorRequest
 func (mr *MockGuardDutyAPIMockRecorder) UpdateDetectorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDetectorRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateDetectorRequest), arg0)
 }
 
-// UpdateDetectorWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateDetectorWithContext(arg0 context.Context, arg1 *guardduty.UpdateDetectorInput, arg2 ...request.Option) (*guardduty.UpdateDetectorOutput, error) {
+// UpdateDetectorWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateDetectorWithContext(arg0 aws.Context, arg1 *guardduty.UpdateDetectorInput, arg2 ...request.Option) (*guardduty.UpdateDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2909,14 +2159,14 @@ func (m *MockGuardDutyAPI) UpdateDetectorWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateDetectorWithContext indicates an expected call of UpdateDetectorWithContext.
+// UpdateDetectorWithContext indicates an expected call of UpdateDetectorWithContext
 func (mr *MockGuardDutyAPIMockRecorder) UpdateDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDetectorWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateDetectorWithContext), varargs...)
 }
 
-// UpdateFilter mocks base method.
+// UpdateFilter mocks base method
 func (m *MockGuardDutyAPI) UpdateFilter(arg0 *guardduty.UpdateFilterInput) (*guardduty.UpdateFilterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFilter", arg0)
@@ -2925,13 +2175,13 @@ func (m *MockGuardDutyAPI) UpdateFilter(arg0 *guardduty.UpdateFilterInput) (*gua
 	return ret0, ret1
 }
 
-// UpdateFilter indicates an expected call of UpdateFilter.
+// UpdateFilter indicates an expected call of UpdateFilter
 func (mr *MockGuardDutyAPIMockRecorder) UpdateFilter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFilter", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateFilter), arg0)
 }
 
-// UpdateFilterRequest mocks base method.
+// UpdateFilterRequest mocks base method
 func (m *MockGuardDutyAPI) UpdateFilterRequest(arg0 *guardduty.UpdateFilterInput) (*request.Request, *guardduty.UpdateFilterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFilterRequest", arg0)
@@ -2940,14 +2190,14 @@ func (m *MockGuardDutyAPI) UpdateFilterRequest(arg0 *guardduty.UpdateFilterInput
 	return ret0, ret1
 }
 
-// UpdateFilterRequest indicates an expected call of UpdateFilterRequest.
+// UpdateFilterRequest indicates an expected call of UpdateFilterRequest
 func (mr *MockGuardDutyAPIMockRecorder) UpdateFilterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFilterRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateFilterRequest), arg0)
 }
 
-// UpdateFilterWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateFilterWithContext(arg0 context.Context, arg1 *guardduty.UpdateFilterInput, arg2 ...request.Option) (*guardduty.UpdateFilterOutput, error) {
+// UpdateFilterWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateFilterWithContext(arg0 aws.Context, arg1 *guardduty.UpdateFilterInput, arg2 ...request.Option) (*guardduty.UpdateFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2959,14 +2209,14 @@ func (m *MockGuardDutyAPI) UpdateFilterWithContext(arg0 context.Context, arg1 *g
 	return ret0, ret1
 }
 
-// UpdateFilterWithContext indicates an expected call of UpdateFilterWithContext.
+// UpdateFilterWithContext indicates an expected call of UpdateFilterWithContext
 func (mr *MockGuardDutyAPIMockRecorder) UpdateFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFilterWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateFilterWithContext), varargs...)
 }
 
-// UpdateFindingsFeedback mocks base method.
+// UpdateFindingsFeedback mocks base method
 func (m *MockGuardDutyAPI) UpdateFindingsFeedback(arg0 *guardduty.UpdateFindingsFeedbackInput) (*guardduty.UpdateFindingsFeedbackOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFindingsFeedback", arg0)
@@ -2975,13 +2225,13 @@ func (m *MockGuardDutyAPI) UpdateFindingsFeedback(arg0 *guardduty.UpdateFindings
 	return ret0, ret1
 }
 
-// UpdateFindingsFeedback indicates an expected call of UpdateFindingsFeedback.
+// UpdateFindingsFeedback indicates an expected call of UpdateFindingsFeedback
 func (mr *MockGuardDutyAPIMockRecorder) UpdateFindingsFeedback(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFindingsFeedback", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateFindingsFeedback), arg0)
 }
 
-// UpdateFindingsFeedbackRequest mocks base method.
+// UpdateFindingsFeedbackRequest mocks base method
 func (m *MockGuardDutyAPI) UpdateFindingsFeedbackRequest(arg0 *guardduty.UpdateFindingsFeedbackInput) (*request.Request, *guardduty.UpdateFindingsFeedbackOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFindingsFeedbackRequest", arg0)
@@ -2990,14 +2240,14 @@ func (m *MockGuardDutyAPI) UpdateFindingsFeedbackRequest(arg0 *guardduty.UpdateF
 	return ret0, ret1
 }
 
-// UpdateFindingsFeedbackRequest indicates an expected call of UpdateFindingsFeedbackRequest.
+// UpdateFindingsFeedbackRequest indicates an expected call of UpdateFindingsFeedbackRequest
 func (mr *MockGuardDutyAPIMockRecorder) UpdateFindingsFeedbackRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFindingsFeedbackRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateFindingsFeedbackRequest), arg0)
 }
 
-// UpdateFindingsFeedbackWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateFindingsFeedbackWithContext(arg0 context.Context, arg1 *guardduty.UpdateFindingsFeedbackInput, arg2 ...request.Option) (*guardduty.UpdateFindingsFeedbackOutput, error) {
+// UpdateFindingsFeedbackWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateFindingsFeedbackWithContext(arg0 aws.Context, arg1 *guardduty.UpdateFindingsFeedbackInput, arg2 ...request.Option) (*guardduty.UpdateFindingsFeedbackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3009,14 +2259,14 @@ func (m *MockGuardDutyAPI) UpdateFindingsFeedbackWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdateFindingsFeedbackWithContext indicates an expected call of UpdateFindingsFeedbackWithContext.
+// UpdateFindingsFeedbackWithContext indicates an expected call of UpdateFindingsFeedbackWithContext
 func (mr *MockGuardDutyAPIMockRecorder) UpdateFindingsFeedbackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFindingsFeedbackWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateFindingsFeedbackWithContext), varargs...)
 }
 
-// UpdateIPSet mocks base method.
+// UpdateIPSet mocks base method
 func (m *MockGuardDutyAPI) UpdateIPSet(arg0 *guardduty.UpdateIPSetInput) (*guardduty.UpdateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIPSet", arg0)
@@ -3025,13 +2275,13 @@ func (m *MockGuardDutyAPI) UpdateIPSet(arg0 *guardduty.UpdateIPSetInput) (*guard
 	return ret0, ret1
 }
 
-// UpdateIPSet indicates an expected call of UpdateIPSet.
+// UpdateIPSet indicates an expected call of UpdateIPSet
 func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateIPSet), arg0)
 }
 
-// UpdateIPSetRequest mocks base method.
+// UpdateIPSetRequest mocks base method
 func (m *MockGuardDutyAPI) UpdateIPSetRequest(arg0 *guardduty.UpdateIPSetInput) (*request.Request, *guardduty.UpdateIPSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIPSetRequest", arg0)
@@ -3040,14 +2290,14 @@ func (m *MockGuardDutyAPI) UpdateIPSetRequest(arg0 *guardduty.UpdateIPSetInput) 
 	return ret0, ret1
 }
 
-// UpdateIPSetRequest indicates an expected call of UpdateIPSetRequest.
+// UpdateIPSetRequest indicates an expected call of UpdateIPSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateIPSetRequest), arg0)
 }
 
-// UpdateIPSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateIPSetWithContext(arg0 context.Context, arg1 *guardduty.UpdateIPSetInput, arg2 ...request.Option) (*guardduty.UpdateIPSetOutput, error) {
+// UpdateIPSetWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateIPSetWithContext(arg0 aws.Context, arg1 *guardduty.UpdateIPSetInput, arg2 ...request.Option) (*guardduty.UpdateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3059,164 +2309,14 @@ func (m *MockGuardDutyAPI) UpdateIPSetWithContext(arg0 context.Context, arg1 *gu
 	return ret0, ret1
 }
 
-// UpdateIPSetWithContext indicates an expected call of UpdateIPSetWithContext.
+// UpdateIPSetWithContext indicates an expected call of UpdateIPSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateIPSetWithContext), varargs...)
 }
 
-// UpdateMemberDetectors mocks base method.
-func (m *MockGuardDutyAPI) UpdateMemberDetectors(arg0 *guardduty.UpdateMemberDetectorsInput) (*guardduty.UpdateMemberDetectorsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateMemberDetectors", arg0)
-	ret0, _ := ret[0].(*guardduty.UpdateMemberDetectorsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateMemberDetectors indicates an expected call of UpdateMemberDetectors.
-func (mr *MockGuardDutyAPIMockRecorder) UpdateMemberDetectors(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMemberDetectors", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateMemberDetectors), arg0)
-}
-
-// UpdateMemberDetectorsRequest mocks base method.
-func (m *MockGuardDutyAPI) UpdateMemberDetectorsRequest(arg0 *guardduty.UpdateMemberDetectorsInput) (*request.Request, *guardduty.UpdateMemberDetectorsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateMemberDetectorsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.UpdateMemberDetectorsOutput)
-	return ret0, ret1
-}
-
-// UpdateMemberDetectorsRequest indicates an expected call of UpdateMemberDetectorsRequest.
-func (mr *MockGuardDutyAPIMockRecorder) UpdateMemberDetectorsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMemberDetectorsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateMemberDetectorsRequest), arg0)
-}
-
-// UpdateMemberDetectorsWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateMemberDetectorsWithContext(arg0 context.Context, arg1 *guardduty.UpdateMemberDetectorsInput, arg2 ...request.Option) (*guardduty.UpdateMemberDetectorsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateMemberDetectorsWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.UpdateMemberDetectorsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateMemberDetectorsWithContext indicates an expected call of UpdateMemberDetectorsWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) UpdateMemberDetectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMemberDetectorsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateMemberDetectorsWithContext), varargs...)
-}
-
-// UpdateOrganizationConfiguration mocks base method.
-func (m *MockGuardDutyAPI) UpdateOrganizationConfiguration(arg0 *guardduty.UpdateOrganizationConfigurationInput) (*guardduty.UpdateOrganizationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateOrganizationConfiguration", arg0)
-	ret0, _ := ret[0].(*guardduty.UpdateOrganizationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateOrganizationConfiguration indicates an expected call of UpdateOrganizationConfiguration.
-func (mr *MockGuardDutyAPIMockRecorder) UpdateOrganizationConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfiguration", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateOrganizationConfiguration), arg0)
-}
-
-// UpdateOrganizationConfigurationRequest mocks base method.
-func (m *MockGuardDutyAPI) UpdateOrganizationConfigurationRequest(arg0 *guardduty.UpdateOrganizationConfigurationInput) (*request.Request, *guardduty.UpdateOrganizationConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateOrganizationConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.UpdateOrganizationConfigurationOutput)
-	return ret0, ret1
-}
-
-// UpdateOrganizationConfigurationRequest indicates an expected call of UpdateOrganizationConfigurationRequest.
-func (mr *MockGuardDutyAPIMockRecorder) UpdateOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateOrganizationConfigurationRequest), arg0)
-}
-
-// UpdateOrganizationConfigurationWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateOrganizationConfigurationWithContext(arg0 context.Context, arg1 *guardduty.UpdateOrganizationConfigurationInput, arg2 ...request.Option) (*guardduty.UpdateOrganizationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateOrganizationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.UpdateOrganizationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateOrganizationConfigurationWithContext indicates an expected call of UpdateOrganizationConfigurationWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) UpdateOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateOrganizationConfigurationWithContext), varargs...)
-}
-
-// UpdatePublishingDestination mocks base method.
-func (m *MockGuardDutyAPI) UpdatePublishingDestination(arg0 *guardduty.UpdatePublishingDestinationInput) (*guardduty.UpdatePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdatePublishingDestination", arg0)
-	ret0, _ := ret[0].(*guardduty.UpdatePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdatePublishingDestination indicates an expected call of UpdatePublishingDestination.
-func (mr *MockGuardDutyAPIMockRecorder) UpdatePublishingDestination(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdatePublishingDestination), arg0)
-}
-
-// UpdatePublishingDestinationRequest mocks base method.
-func (m *MockGuardDutyAPI) UpdatePublishingDestinationRequest(arg0 *guardduty.UpdatePublishingDestinationInput) (*request.Request, *guardduty.UpdatePublishingDestinationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdatePublishingDestinationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*guardduty.UpdatePublishingDestinationOutput)
-	return ret0, ret1
-}
-
-// UpdatePublishingDestinationRequest indicates an expected call of UpdatePublishingDestinationRequest.
-func (mr *MockGuardDutyAPIMockRecorder) UpdatePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdatePublishingDestinationRequest), arg0)
-}
-
-// UpdatePublishingDestinationWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdatePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.UpdatePublishingDestinationInput, arg2 ...request.Option) (*guardduty.UpdatePublishingDestinationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdatePublishingDestinationWithContext", varargs...)
-	ret0, _ := ret[0].(*guardduty.UpdatePublishingDestinationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdatePublishingDestinationWithContext indicates an expected call of UpdatePublishingDestinationWithContext.
-func (mr *MockGuardDutyAPIMockRecorder) UpdatePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdatePublishingDestinationWithContext), varargs...)
-}
-
-// UpdateThreatIntelSet mocks base method.
+// UpdateThreatIntelSet mocks base method
 func (m *MockGuardDutyAPI) UpdateThreatIntelSet(arg0 *guardduty.UpdateThreatIntelSetInput) (*guardduty.UpdateThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateThreatIntelSet", arg0)
@@ -3225,13 +2325,13 @@ func (m *MockGuardDutyAPI) UpdateThreatIntelSet(arg0 *guardduty.UpdateThreatInte
 	return ret0, ret1
 }
 
-// UpdateThreatIntelSet indicates an expected call of UpdateThreatIntelSet.
+// UpdateThreatIntelSet indicates an expected call of UpdateThreatIntelSet
 func (mr *MockGuardDutyAPIMockRecorder) UpdateThreatIntelSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThreatIntelSet", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateThreatIntelSet), arg0)
 }
 
-// UpdateThreatIntelSetRequest mocks base method.
+// UpdateThreatIntelSetRequest mocks base method
 func (m *MockGuardDutyAPI) UpdateThreatIntelSetRequest(arg0 *guardduty.UpdateThreatIntelSetInput) (*request.Request, *guardduty.UpdateThreatIntelSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateThreatIntelSetRequest", arg0)
@@ -3240,14 +2340,14 @@ func (m *MockGuardDutyAPI) UpdateThreatIntelSetRequest(arg0 *guardduty.UpdateThr
 	return ret0, ret1
 }
 
-// UpdateThreatIntelSetRequest indicates an expected call of UpdateThreatIntelSetRequest.
+// UpdateThreatIntelSetRequest indicates an expected call of UpdateThreatIntelSetRequest
 func (mr *MockGuardDutyAPIMockRecorder) UpdateThreatIntelSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThreatIntelSetRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateThreatIntelSetRequest), arg0)
 }
 
-// UpdateThreatIntelSetWithContext mocks base method.
-func (m *MockGuardDutyAPI) UpdateThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.UpdateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.UpdateThreatIntelSetOutput, error) {
+// UpdateThreatIntelSetWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.UpdateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.UpdateThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3259,7 +2359,7 @@ func (m *MockGuardDutyAPI) UpdateThreatIntelSetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateThreatIntelSetWithContext indicates an expected call of UpdateThreatIntelSetWithContext.
+// UpdateThreatIntelSetWithContext indicates an expected call of UpdateThreatIntelSetWithContext
 func (mr *MockGuardDutyAPIMockRecorder) UpdateThreatIntelSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

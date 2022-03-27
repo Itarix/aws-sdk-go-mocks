@@ -5,38 +5,37 @@
 package pollymock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	polly "github.com/aws/aws-sdk-go/service/polly"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockPollyAPI is a mock of PollyAPI interface.
+// MockPollyAPI is a mock of PollyAPI interface
 type MockPollyAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockPollyAPIMockRecorder
 }
 
-// MockPollyAPIMockRecorder is the mock recorder for MockPollyAPI.
+// MockPollyAPIMockRecorder is the mock recorder for MockPollyAPI
 type MockPollyAPIMockRecorder struct {
 	mock *MockPollyAPI
 }
 
-// NewMockPollyAPI creates a new mock instance.
+// NewMockPollyAPI creates a new mock instance
 func NewMockPollyAPI(ctrl *gomock.Controller) *MockPollyAPI {
 	mock := &MockPollyAPI{ctrl: ctrl}
 	mock.recorder = &MockPollyAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockPollyAPI) EXPECT() *MockPollyAPIMockRecorder {
 	return m.recorder
 }
 
-// DeleteLexicon mocks base method.
+// DeleteLexicon mocks base method
 func (m *MockPollyAPI) DeleteLexicon(arg0 *polly.DeleteLexiconInput) (*polly.DeleteLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteLexicon", arg0)
@@ -45,13 +44,13 @@ func (m *MockPollyAPI) DeleteLexicon(arg0 *polly.DeleteLexiconInput) (*polly.Del
 	return ret0, ret1
 }
 
-// DeleteLexicon indicates an expected call of DeleteLexicon.
+// DeleteLexicon indicates an expected call of DeleteLexicon
 func (mr *MockPollyAPIMockRecorder) DeleteLexicon(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLexicon", reflect.TypeOf((*MockPollyAPI)(nil).DeleteLexicon), arg0)
 }
 
-// DeleteLexiconRequest mocks base method.
+// DeleteLexiconRequest mocks base method
 func (m *MockPollyAPI) DeleteLexiconRequest(arg0 *polly.DeleteLexiconInput) (*request.Request, *polly.DeleteLexiconOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteLexiconRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockPollyAPI) DeleteLexiconRequest(arg0 *polly.DeleteLexiconInput) (*re
 	return ret0, ret1
 }
 
-// DeleteLexiconRequest indicates an expected call of DeleteLexiconRequest.
+// DeleteLexiconRequest indicates an expected call of DeleteLexiconRequest
 func (mr *MockPollyAPIMockRecorder) DeleteLexiconRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLexiconRequest", reflect.TypeOf((*MockPollyAPI)(nil).DeleteLexiconRequest), arg0)
 }
 
-// DeleteLexiconWithContext mocks base method.
-func (m *MockPollyAPI) DeleteLexiconWithContext(arg0 context.Context, arg1 *polly.DeleteLexiconInput, arg2 ...request.Option) (*polly.DeleteLexiconOutput, error) {
+// DeleteLexiconWithContext mocks base method
+func (m *MockPollyAPI) DeleteLexiconWithContext(arg0 aws.Context, arg1 *polly.DeleteLexiconInput, arg2 ...request.Option) (*polly.DeleteLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockPollyAPI) DeleteLexiconWithContext(arg0 context.Context, arg1 *poll
 	return ret0, ret1
 }
 
-// DeleteLexiconWithContext indicates an expected call of DeleteLexiconWithContext.
+// DeleteLexiconWithContext indicates an expected call of DeleteLexiconWithContext
 func (mr *MockPollyAPIMockRecorder) DeleteLexiconWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLexiconWithContext", reflect.TypeOf((*MockPollyAPI)(nil).DeleteLexiconWithContext), varargs...)
 }
 
-// DescribeVoices mocks base method.
+// DescribeVoices mocks base method
 func (m *MockPollyAPI) DescribeVoices(arg0 *polly.DescribeVoicesInput) (*polly.DescribeVoicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVoices", arg0)
@@ -95,13 +94,13 @@ func (m *MockPollyAPI) DescribeVoices(arg0 *polly.DescribeVoicesInput) (*polly.D
 	return ret0, ret1
 }
 
-// DescribeVoices indicates an expected call of DescribeVoices.
+// DescribeVoices indicates an expected call of DescribeVoices
 func (mr *MockPollyAPIMockRecorder) DescribeVoices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVoices", reflect.TypeOf((*MockPollyAPI)(nil).DescribeVoices), arg0)
 }
 
-// DescribeVoicesRequest mocks base method.
+// DescribeVoicesRequest mocks base method
 func (m *MockPollyAPI) DescribeVoicesRequest(arg0 *polly.DescribeVoicesInput) (*request.Request, *polly.DescribeVoicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeVoicesRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockPollyAPI) DescribeVoicesRequest(arg0 *polly.DescribeVoicesInput) (*
 	return ret0, ret1
 }
 
-// DescribeVoicesRequest indicates an expected call of DescribeVoicesRequest.
+// DescribeVoicesRequest indicates an expected call of DescribeVoicesRequest
 func (mr *MockPollyAPIMockRecorder) DescribeVoicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVoicesRequest", reflect.TypeOf((*MockPollyAPI)(nil).DescribeVoicesRequest), arg0)
 }
 
-// DescribeVoicesWithContext mocks base method.
-func (m *MockPollyAPI) DescribeVoicesWithContext(arg0 context.Context, arg1 *polly.DescribeVoicesInput, arg2 ...request.Option) (*polly.DescribeVoicesOutput, error) {
+// DescribeVoicesWithContext mocks base method
+func (m *MockPollyAPI) DescribeVoicesWithContext(arg0 aws.Context, arg1 *polly.DescribeVoicesInput, arg2 ...request.Option) (*polly.DescribeVoicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockPollyAPI) DescribeVoicesWithContext(arg0 context.Context, arg1 *pol
 	return ret0, ret1
 }
 
-// DescribeVoicesWithContext indicates an expected call of DescribeVoicesWithContext.
+// DescribeVoicesWithContext indicates an expected call of DescribeVoicesWithContext
 func (mr *MockPollyAPIMockRecorder) DescribeVoicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVoicesWithContext", reflect.TypeOf((*MockPollyAPI)(nil).DescribeVoicesWithContext), varargs...)
 }
 
-// GetLexicon mocks base method.
+// GetLexicon mocks base method
 func (m *MockPollyAPI) GetLexicon(arg0 *polly.GetLexiconInput) (*polly.GetLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetLexicon", arg0)
@@ -145,13 +144,13 @@ func (m *MockPollyAPI) GetLexicon(arg0 *polly.GetLexiconInput) (*polly.GetLexico
 	return ret0, ret1
 }
 
-// GetLexicon indicates an expected call of GetLexicon.
+// GetLexicon indicates an expected call of GetLexicon
 func (mr *MockPollyAPIMockRecorder) GetLexicon(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLexicon", reflect.TypeOf((*MockPollyAPI)(nil).GetLexicon), arg0)
 }
 
-// GetLexiconRequest mocks base method.
+// GetLexiconRequest mocks base method
 func (m *MockPollyAPI) GetLexiconRequest(arg0 *polly.GetLexiconInput) (*request.Request, *polly.GetLexiconOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetLexiconRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockPollyAPI) GetLexiconRequest(arg0 *polly.GetLexiconInput) (*request.
 	return ret0, ret1
 }
 
-// GetLexiconRequest indicates an expected call of GetLexiconRequest.
+// GetLexiconRequest indicates an expected call of GetLexiconRequest
 func (mr *MockPollyAPIMockRecorder) GetLexiconRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLexiconRequest", reflect.TypeOf((*MockPollyAPI)(nil).GetLexiconRequest), arg0)
 }
 
-// GetLexiconWithContext mocks base method.
-func (m *MockPollyAPI) GetLexiconWithContext(arg0 context.Context, arg1 *polly.GetLexiconInput, arg2 ...request.Option) (*polly.GetLexiconOutput, error) {
+// GetLexiconWithContext mocks base method
+func (m *MockPollyAPI) GetLexiconWithContext(arg0 aws.Context, arg1 *polly.GetLexiconInput, arg2 ...request.Option) (*polly.GetLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockPollyAPI) GetLexiconWithContext(arg0 context.Context, arg1 *polly.G
 	return ret0, ret1
 }
 
-// GetLexiconWithContext indicates an expected call of GetLexiconWithContext.
+// GetLexiconWithContext indicates an expected call of GetLexiconWithContext
 func (mr *MockPollyAPIMockRecorder) GetLexiconWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLexiconWithContext", reflect.TypeOf((*MockPollyAPI)(nil).GetLexiconWithContext), varargs...)
 }
 
-// GetSpeechSynthesisTask mocks base method.
+// GetSpeechSynthesisTask mocks base method
 func (m *MockPollyAPI) GetSpeechSynthesisTask(arg0 *polly.GetSpeechSynthesisTaskInput) (*polly.GetSpeechSynthesisTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSpeechSynthesisTask", arg0)
@@ -195,13 +194,13 @@ func (m *MockPollyAPI) GetSpeechSynthesisTask(arg0 *polly.GetSpeechSynthesisTask
 	return ret0, ret1
 }
 
-// GetSpeechSynthesisTask indicates an expected call of GetSpeechSynthesisTask.
+// GetSpeechSynthesisTask indicates an expected call of GetSpeechSynthesisTask
 func (mr *MockPollyAPIMockRecorder) GetSpeechSynthesisTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeechSynthesisTask", reflect.TypeOf((*MockPollyAPI)(nil).GetSpeechSynthesisTask), arg0)
 }
 
-// GetSpeechSynthesisTaskRequest mocks base method.
+// GetSpeechSynthesisTaskRequest mocks base method
 func (m *MockPollyAPI) GetSpeechSynthesisTaskRequest(arg0 *polly.GetSpeechSynthesisTaskInput) (*request.Request, *polly.GetSpeechSynthesisTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSpeechSynthesisTaskRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockPollyAPI) GetSpeechSynthesisTaskRequest(arg0 *polly.GetSpeechSynthe
 	return ret0, ret1
 }
 
-// GetSpeechSynthesisTaskRequest indicates an expected call of GetSpeechSynthesisTaskRequest.
+// GetSpeechSynthesisTaskRequest indicates an expected call of GetSpeechSynthesisTaskRequest
 func (mr *MockPollyAPIMockRecorder) GetSpeechSynthesisTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeechSynthesisTaskRequest", reflect.TypeOf((*MockPollyAPI)(nil).GetSpeechSynthesisTaskRequest), arg0)
 }
 
-// GetSpeechSynthesisTaskWithContext mocks base method.
-func (m *MockPollyAPI) GetSpeechSynthesisTaskWithContext(arg0 context.Context, arg1 *polly.GetSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.GetSpeechSynthesisTaskOutput, error) {
+// GetSpeechSynthesisTaskWithContext mocks base method
+func (m *MockPollyAPI) GetSpeechSynthesisTaskWithContext(arg0 aws.Context, arg1 *polly.GetSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.GetSpeechSynthesisTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockPollyAPI) GetSpeechSynthesisTaskWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetSpeechSynthesisTaskWithContext indicates an expected call of GetSpeechSynthesisTaskWithContext.
+// GetSpeechSynthesisTaskWithContext indicates an expected call of GetSpeechSynthesisTaskWithContext
 func (mr *MockPollyAPIMockRecorder) GetSpeechSynthesisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeechSynthesisTaskWithContext", reflect.TypeOf((*MockPollyAPI)(nil).GetSpeechSynthesisTaskWithContext), varargs...)
 }
 
-// ListLexicons mocks base method.
+// ListLexicons mocks base method
 func (m *MockPollyAPI) ListLexicons(arg0 *polly.ListLexiconsInput) (*polly.ListLexiconsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListLexicons", arg0)
@@ -245,13 +244,13 @@ func (m *MockPollyAPI) ListLexicons(arg0 *polly.ListLexiconsInput) (*polly.ListL
 	return ret0, ret1
 }
 
-// ListLexicons indicates an expected call of ListLexicons.
+// ListLexicons indicates an expected call of ListLexicons
 func (mr *MockPollyAPIMockRecorder) ListLexicons(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexicons", reflect.TypeOf((*MockPollyAPI)(nil).ListLexicons), arg0)
 }
 
-// ListLexiconsRequest mocks base method.
+// ListLexiconsRequest mocks base method
 func (m *MockPollyAPI) ListLexiconsRequest(arg0 *polly.ListLexiconsInput) (*request.Request, *polly.ListLexiconsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListLexiconsRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockPollyAPI) ListLexiconsRequest(arg0 *polly.ListLexiconsInput) (*requ
 	return ret0, ret1
 }
 
-// ListLexiconsRequest indicates an expected call of ListLexiconsRequest.
+// ListLexiconsRequest indicates an expected call of ListLexiconsRequest
 func (mr *MockPollyAPIMockRecorder) ListLexiconsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexiconsRequest", reflect.TypeOf((*MockPollyAPI)(nil).ListLexiconsRequest), arg0)
 }
 
-// ListLexiconsWithContext mocks base method.
-func (m *MockPollyAPI) ListLexiconsWithContext(arg0 context.Context, arg1 *polly.ListLexiconsInput, arg2 ...request.Option) (*polly.ListLexiconsOutput, error) {
+// ListLexiconsWithContext mocks base method
+func (m *MockPollyAPI) ListLexiconsWithContext(arg0 aws.Context, arg1 *polly.ListLexiconsInput, arg2 ...request.Option) (*polly.ListLexiconsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockPollyAPI) ListLexiconsWithContext(arg0 context.Context, arg1 *polly
 	return ret0, ret1
 }
 
-// ListLexiconsWithContext indicates an expected call of ListLexiconsWithContext.
+// ListLexiconsWithContext indicates an expected call of ListLexiconsWithContext
 func (mr *MockPollyAPIMockRecorder) ListLexiconsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexiconsWithContext", reflect.TypeOf((*MockPollyAPI)(nil).ListLexiconsWithContext), varargs...)
 }
 
-// ListSpeechSynthesisTasks mocks base method.
+// ListSpeechSynthesisTasks mocks base method
 func (m *MockPollyAPI) ListSpeechSynthesisTasks(arg0 *polly.ListSpeechSynthesisTasksInput) (*polly.ListSpeechSynthesisTasksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSpeechSynthesisTasks", arg0)
@@ -295,13 +294,13 @@ func (m *MockPollyAPI) ListSpeechSynthesisTasks(arg0 *polly.ListSpeechSynthesisT
 	return ret0, ret1
 }
 
-// ListSpeechSynthesisTasks indicates an expected call of ListSpeechSynthesisTasks.
+// ListSpeechSynthesisTasks indicates an expected call of ListSpeechSynthesisTasks
 func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSpeechSynthesisTasks", reflect.TypeOf((*MockPollyAPI)(nil).ListSpeechSynthesisTasks), arg0)
 }
 
-// ListSpeechSynthesisTasksPages mocks base method.
+// ListSpeechSynthesisTasksPages mocks base method
 func (m *MockPollyAPI) ListSpeechSynthesisTasksPages(arg0 *polly.ListSpeechSynthesisTasksInput, arg1 func(*polly.ListSpeechSynthesisTasksOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSpeechSynthesisTasksPages", arg0, arg1)
@@ -309,14 +308,14 @@ func (m *MockPollyAPI) ListSpeechSynthesisTasksPages(arg0 *polly.ListSpeechSynth
 	return ret0
 }
 
-// ListSpeechSynthesisTasksPages indicates an expected call of ListSpeechSynthesisTasksPages.
+// ListSpeechSynthesisTasksPages indicates an expected call of ListSpeechSynthesisTasksPages
 func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasksPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSpeechSynthesisTasksPages", reflect.TypeOf((*MockPollyAPI)(nil).ListSpeechSynthesisTasksPages), arg0, arg1)
 }
 
-// ListSpeechSynthesisTasksPagesWithContext mocks base method.
-func (m *MockPollyAPI) ListSpeechSynthesisTasksPagesWithContext(arg0 context.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 func(*polly.ListSpeechSynthesisTasksOutput, bool) bool, arg3 ...request.Option) error {
+// ListSpeechSynthesisTasksPagesWithContext mocks base method
+func (m *MockPollyAPI) ListSpeechSynthesisTasksPagesWithContext(arg0 aws.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 func(*polly.ListSpeechSynthesisTasksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -327,14 +326,14 @@ func (m *MockPollyAPI) ListSpeechSynthesisTasksPagesWithContext(arg0 context.Con
 	return ret0
 }
 
-// ListSpeechSynthesisTasksPagesWithContext indicates an expected call of ListSpeechSynthesisTasksPagesWithContext.
+// ListSpeechSynthesisTasksPagesWithContext indicates an expected call of ListSpeechSynthesisTasksPagesWithContext
 func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSpeechSynthesisTasksPagesWithContext", reflect.TypeOf((*MockPollyAPI)(nil).ListSpeechSynthesisTasksPagesWithContext), varargs...)
 }
 
-// ListSpeechSynthesisTasksRequest mocks base method.
+// ListSpeechSynthesisTasksRequest mocks base method
 func (m *MockPollyAPI) ListSpeechSynthesisTasksRequest(arg0 *polly.ListSpeechSynthesisTasksInput) (*request.Request, *polly.ListSpeechSynthesisTasksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSpeechSynthesisTasksRequest", arg0)
@@ -343,14 +342,14 @@ func (m *MockPollyAPI) ListSpeechSynthesisTasksRequest(arg0 *polly.ListSpeechSyn
 	return ret0, ret1
 }
 
-// ListSpeechSynthesisTasksRequest indicates an expected call of ListSpeechSynthesisTasksRequest.
+// ListSpeechSynthesisTasksRequest indicates an expected call of ListSpeechSynthesisTasksRequest
 func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSpeechSynthesisTasksRequest", reflect.TypeOf((*MockPollyAPI)(nil).ListSpeechSynthesisTasksRequest), arg0)
 }
 
-// ListSpeechSynthesisTasksWithContext mocks base method.
-func (m *MockPollyAPI) ListSpeechSynthesisTasksWithContext(arg0 context.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 ...request.Option) (*polly.ListSpeechSynthesisTasksOutput, error) {
+// ListSpeechSynthesisTasksWithContext mocks base method
+func (m *MockPollyAPI) ListSpeechSynthesisTasksWithContext(arg0 aws.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 ...request.Option) (*polly.ListSpeechSynthesisTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -362,14 +361,14 @@ func (m *MockPollyAPI) ListSpeechSynthesisTasksWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListSpeechSynthesisTasksWithContext indicates an expected call of ListSpeechSynthesisTasksWithContext.
+// ListSpeechSynthesisTasksWithContext indicates an expected call of ListSpeechSynthesisTasksWithContext
 func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSpeechSynthesisTasksWithContext", reflect.TypeOf((*MockPollyAPI)(nil).ListSpeechSynthesisTasksWithContext), varargs...)
 }
 
-// PutLexicon mocks base method.
+// PutLexicon mocks base method
 func (m *MockPollyAPI) PutLexicon(arg0 *polly.PutLexiconInput) (*polly.PutLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutLexicon", arg0)
@@ -378,13 +377,13 @@ func (m *MockPollyAPI) PutLexicon(arg0 *polly.PutLexiconInput) (*polly.PutLexico
 	return ret0, ret1
 }
 
-// PutLexicon indicates an expected call of PutLexicon.
+// PutLexicon indicates an expected call of PutLexicon
 func (mr *MockPollyAPIMockRecorder) PutLexicon(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLexicon", reflect.TypeOf((*MockPollyAPI)(nil).PutLexicon), arg0)
 }
 
-// PutLexiconRequest mocks base method.
+// PutLexiconRequest mocks base method
 func (m *MockPollyAPI) PutLexiconRequest(arg0 *polly.PutLexiconInput) (*request.Request, *polly.PutLexiconOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutLexiconRequest", arg0)
@@ -393,14 +392,14 @@ func (m *MockPollyAPI) PutLexiconRequest(arg0 *polly.PutLexiconInput) (*request.
 	return ret0, ret1
 }
 
-// PutLexiconRequest indicates an expected call of PutLexiconRequest.
+// PutLexiconRequest indicates an expected call of PutLexiconRequest
 func (mr *MockPollyAPIMockRecorder) PutLexiconRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLexiconRequest", reflect.TypeOf((*MockPollyAPI)(nil).PutLexiconRequest), arg0)
 }
 
-// PutLexiconWithContext mocks base method.
-func (m *MockPollyAPI) PutLexiconWithContext(arg0 context.Context, arg1 *polly.PutLexiconInput, arg2 ...request.Option) (*polly.PutLexiconOutput, error) {
+// PutLexiconWithContext mocks base method
+func (m *MockPollyAPI) PutLexiconWithContext(arg0 aws.Context, arg1 *polly.PutLexiconInput, arg2 ...request.Option) (*polly.PutLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -412,14 +411,14 @@ func (m *MockPollyAPI) PutLexiconWithContext(arg0 context.Context, arg1 *polly.P
 	return ret0, ret1
 }
 
-// PutLexiconWithContext indicates an expected call of PutLexiconWithContext.
+// PutLexiconWithContext indicates an expected call of PutLexiconWithContext
 func (mr *MockPollyAPIMockRecorder) PutLexiconWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLexiconWithContext", reflect.TypeOf((*MockPollyAPI)(nil).PutLexiconWithContext), varargs...)
 }
 
-// StartSpeechSynthesisTask mocks base method.
+// StartSpeechSynthesisTask mocks base method
 func (m *MockPollyAPI) StartSpeechSynthesisTask(arg0 *polly.StartSpeechSynthesisTaskInput) (*polly.StartSpeechSynthesisTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartSpeechSynthesisTask", arg0)
@@ -428,13 +427,13 @@ func (m *MockPollyAPI) StartSpeechSynthesisTask(arg0 *polly.StartSpeechSynthesis
 	return ret0, ret1
 }
 
-// StartSpeechSynthesisTask indicates an expected call of StartSpeechSynthesisTask.
+// StartSpeechSynthesisTask indicates an expected call of StartSpeechSynthesisTask
 func (mr *MockPollyAPIMockRecorder) StartSpeechSynthesisTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeechSynthesisTask", reflect.TypeOf((*MockPollyAPI)(nil).StartSpeechSynthesisTask), arg0)
 }
 
-// StartSpeechSynthesisTaskRequest mocks base method.
+// StartSpeechSynthesisTaskRequest mocks base method
 func (m *MockPollyAPI) StartSpeechSynthesisTaskRequest(arg0 *polly.StartSpeechSynthesisTaskInput) (*request.Request, *polly.StartSpeechSynthesisTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartSpeechSynthesisTaskRequest", arg0)
@@ -443,14 +442,14 @@ func (m *MockPollyAPI) StartSpeechSynthesisTaskRequest(arg0 *polly.StartSpeechSy
 	return ret0, ret1
 }
 
-// StartSpeechSynthesisTaskRequest indicates an expected call of StartSpeechSynthesisTaskRequest.
+// StartSpeechSynthesisTaskRequest indicates an expected call of StartSpeechSynthesisTaskRequest
 func (mr *MockPollyAPIMockRecorder) StartSpeechSynthesisTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeechSynthesisTaskRequest", reflect.TypeOf((*MockPollyAPI)(nil).StartSpeechSynthesisTaskRequest), arg0)
 }
 
-// StartSpeechSynthesisTaskWithContext mocks base method.
-func (m *MockPollyAPI) StartSpeechSynthesisTaskWithContext(arg0 context.Context, arg1 *polly.StartSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.StartSpeechSynthesisTaskOutput, error) {
+// StartSpeechSynthesisTaskWithContext mocks base method
+func (m *MockPollyAPI) StartSpeechSynthesisTaskWithContext(arg0 aws.Context, arg1 *polly.StartSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.StartSpeechSynthesisTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -462,14 +461,14 @@ func (m *MockPollyAPI) StartSpeechSynthesisTaskWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// StartSpeechSynthesisTaskWithContext indicates an expected call of StartSpeechSynthesisTaskWithContext.
+// StartSpeechSynthesisTaskWithContext indicates an expected call of StartSpeechSynthesisTaskWithContext
 func (mr *MockPollyAPIMockRecorder) StartSpeechSynthesisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeechSynthesisTaskWithContext", reflect.TypeOf((*MockPollyAPI)(nil).StartSpeechSynthesisTaskWithContext), varargs...)
 }
 
-// SynthesizeSpeech mocks base method.
+// SynthesizeSpeech mocks base method
 func (m *MockPollyAPI) SynthesizeSpeech(arg0 *polly.SynthesizeSpeechInput) (*polly.SynthesizeSpeechOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SynthesizeSpeech", arg0)
@@ -478,13 +477,13 @@ func (m *MockPollyAPI) SynthesizeSpeech(arg0 *polly.SynthesizeSpeechInput) (*pol
 	return ret0, ret1
 }
 
-// SynthesizeSpeech indicates an expected call of SynthesizeSpeech.
+// SynthesizeSpeech indicates an expected call of SynthesizeSpeech
 func (mr *MockPollyAPIMockRecorder) SynthesizeSpeech(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SynthesizeSpeech", reflect.TypeOf((*MockPollyAPI)(nil).SynthesizeSpeech), arg0)
 }
 
-// SynthesizeSpeechRequest mocks base method.
+// SynthesizeSpeechRequest mocks base method
 func (m *MockPollyAPI) SynthesizeSpeechRequest(arg0 *polly.SynthesizeSpeechInput) (*request.Request, *polly.SynthesizeSpeechOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SynthesizeSpeechRequest", arg0)
@@ -493,14 +492,14 @@ func (m *MockPollyAPI) SynthesizeSpeechRequest(arg0 *polly.SynthesizeSpeechInput
 	return ret0, ret1
 }
 
-// SynthesizeSpeechRequest indicates an expected call of SynthesizeSpeechRequest.
+// SynthesizeSpeechRequest indicates an expected call of SynthesizeSpeechRequest
 func (mr *MockPollyAPIMockRecorder) SynthesizeSpeechRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SynthesizeSpeechRequest", reflect.TypeOf((*MockPollyAPI)(nil).SynthesizeSpeechRequest), arg0)
 }
 
-// SynthesizeSpeechWithContext mocks base method.
-func (m *MockPollyAPI) SynthesizeSpeechWithContext(arg0 context.Context, arg1 *polly.SynthesizeSpeechInput, arg2 ...request.Option) (*polly.SynthesizeSpeechOutput, error) {
+// SynthesizeSpeechWithContext mocks base method
+func (m *MockPollyAPI) SynthesizeSpeechWithContext(arg0 aws.Context, arg1 *polly.SynthesizeSpeechInput, arg2 ...request.Option) (*polly.SynthesizeSpeechOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -512,7 +511,7 @@ func (m *MockPollyAPI) SynthesizeSpeechWithContext(arg0 context.Context, arg1 *p
 	return ret0, ret1
 }
 
-// SynthesizeSpeechWithContext indicates an expected call of SynthesizeSpeechWithContext.
+// SynthesizeSpeechWithContext indicates an expected call of SynthesizeSpeechWithContext
 func (mr *MockPollyAPIMockRecorder) SynthesizeSpeechWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

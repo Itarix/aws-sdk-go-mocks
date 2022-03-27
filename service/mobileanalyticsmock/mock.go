@@ -5,38 +5,37 @@
 package mobileanalyticsmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mobileanalytics "github.com/aws/aws-sdk-go/service/mobileanalytics"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMobileAnalyticsAPI is a mock of MobileAnalyticsAPI interface.
+// MockMobileAnalyticsAPI is a mock of MobileAnalyticsAPI interface
 type MockMobileAnalyticsAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMobileAnalyticsAPIMockRecorder
 }
 
-// MockMobileAnalyticsAPIMockRecorder is the mock recorder for MockMobileAnalyticsAPI.
+// MockMobileAnalyticsAPIMockRecorder is the mock recorder for MockMobileAnalyticsAPI
 type MockMobileAnalyticsAPIMockRecorder struct {
 	mock *MockMobileAnalyticsAPI
 }
 
-// NewMockMobileAnalyticsAPI creates a new mock instance.
+// NewMockMobileAnalyticsAPI creates a new mock instance
 func NewMockMobileAnalyticsAPI(ctrl *gomock.Controller) *MockMobileAnalyticsAPI {
 	mock := &MockMobileAnalyticsAPI{ctrl: ctrl}
 	mock.recorder = &MockMobileAnalyticsAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMobileAnalyticsAPI) EXPECT() *MockMobileAnalyticsAPIMockRecorder {
 	return m.recorder
 }
 
-// PutEvents mocks base method.
+// PutEvents mocks base method
 func (m *MockMobileAnalyticsAPI) PutEvents(arg0 *mobileanalytics.PutEventsInput) (*mobileanalytics.PutEventsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutEvents", arg0)
@@ -45,13 +44,13 @@ func (m *MockMobileAnalyticsAPI) PutEvents(arg0 *mobileanalytics.PutEventsInput)
 	return ret0, ret1
 }
 
-// PutEvents indicates an expected call of PutEvents.
+// PutEvents indicates an expected call of PutEvents
 func (mr *MockMobileAnalyticsAPIMockRecorder) PutEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEvents", reflect.TypeOf((*MockMobileAnalyticsAPI)(nil).PutEvents), arg0)
 }
 
-// PutEventsRequest mocks base method.
+// PutEventsRequest mocks base method
 func (m *MockMobileAnalyticsAPI) PutEventsRequest(arg0 *mobileanalytics.PutEventsInput) (*request.Request, *mobileanalytics.PutEventsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutEventsRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMobileAnalyticsAPI) PutEventsRequest(arg0 *mobileanalytics.PutEvent
 	return ret0, ret1
 }
 
-// PutEventsRequest indicates an expected call of PutEventsRequest.
+// PutEventsRequest indicates an expected call of PutEventsRequest
 func (mr *MockMobileAnalyticsAPIMockRecorder) PutEventsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEventsRequest", reflect.TypeOf((*MockMobileAnalyticsAPI)(nil).PutEventsRequest), arg0)
 }
 
-// PutEventsWithContext mocks base method.
-func (m *MockMobileAnalyticsAPI) PutEventsWithContext(arg0 context.Context, arg1 *mobileanalytics.PutEventsInput, arg2 ...request.Option) (*mobileanalytics.PutEventsOutput, error) {
+// PutEventsWithContext mocks base method
+func (m *MockMobileAnalyticsAPI) PutEventsWithContext(arg0 aws.Context, arg1 *mobileanalytics.PutEventsInput, arg2 ...request.Option) (*mobileanalytics.PutEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,7 +78,7 @@ func (m *MockMobileAnalyticsAPI) PutEventsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// PutEventsWithContext indicates an expected call of PutEventsWithContext.
+// PutEventsWithContext indicates an expected call of PutEventsWithContext
 func (mr *MockMobileAnalyticsAPIMockRecorder) PutEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

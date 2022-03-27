@@ -5,38 +5,37 @@
 package workdocsmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	workdocs "github.com/aws/aws-sdk-go/service/workdocs"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockWorkDocsAPI is a mock of WorkDocsAPI interface.
+// MockWorkDocsAPI is a mock of WorkDocsAPI interface
 type MockWorkDocsAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockWorkDocsAPIMockRecorder
 }
 
-// MockWorkDocsAPIMockRecorder is the mock recorder for MockWorkDocsAPI.
+// MockWorkDocsAPIMockRecorder is the mock recorder for MockWorkDocsAPI
 type MockWorkDocsAPIMockRecorder struct {
 	mock *MockWorkDocsAPI
 }
 
-// NewMockWorkDocsAPI creates a new mock instance.
+// NewMockWorkDocsAPI creates a new mock instance
 func NewMockWorkDocsAPI(ctrl *gomock.Controller) *MockWorkDocsAPI {
 	mock := &MockWorkDocsAPI{ctrl: ctrl}
 	mock.recorder = &MockWorkDocsAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockWorkDocsAPI) EXPECT() *MockWorkDocsAPIMockRecorder {
 	return m.recorder
 }
 
-// AbortDocumentVersionUpload mocks base method.
+// AbortDocumentVersionUpload mocks base method
 func (m *MockWorkDocsAPI) AbortDocumentVersionUpload(arg0 *workdocs.AbortDocumentVersionUploadInput) (*workdocs.AbortDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortDocumentVersionUpload", arg0)
@@ -45,13 +44,13 @@ func (m *MockWorkDocsAPI) AbortDocumentVersionUpload(arg0 *workdocs.AbortDocumen
 	return ret0, ret1
 }
 
-// AbortDocumentVersionUpload indicates an expected call of AbortDocumentVersionUpload.
+// AbortDocumentVersionUpload indicates an expected call of AbortDocumentVersionUpload
 func (mr *MockWorkDocsAPIMockRecorder) AbortDocumentVersionUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortDocumentVersionUpload", reflect.TypeOf((*MockWorkDocsAPI)(nil).AbortDocumentVersionUpload), arg0)
 }
 
-// AbortDocumentVersionUploadRequest mocks base method.
+// AbortDocumentVersionUploadRequest mocks base method
 func (m *MockWorkDocsAPI) AbortDocumentVersionUploadRequest(arg0 *workdocs.AbortDocumentVersionUploadInput) (*request.Request, *workdocs.AbortDocumentVersionUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AbortDocumentVersionUploadRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockWorkDocsAPI) AbortDocumentVersionUploadRequest(arg0 *workdocs.Abort
 	return ret0, ret1
 }
 
-// AbortDocumentVersionUploadRequest indicates an expected call of AbortDocumentVersionUploadRequest.
+// AbortDocumentVersionUploadRequest indicates an expected call of AbortDocumentVersionUploadRequest
 func (mr *MockWorkDocsAPIMockRecorder) AbortDocumentVersionUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortDocumentVersionUploadRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).AbortDocumentVersionUploadRequest), arg0)
 }
 
-// AbortDocumentVersionUploadWithContext mocks base method.
-func (m *MockWorkDocsAPI) AbortDocumentVersionUploadWithContext(arg0 context.Context, arg1 *workdocs.AbortDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.AbortDocumentVersionUploadOutput, error) {
+// AbortDocumentVersionUploadWithContext mocks base method
+func (m *MockWorkDocsAPI) AbortDocumentVersionUploadWithContext(arg0 aws.Context, arg1 *workdocs.AbortDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.AbortDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockWorkDocsAPI) AbortDocumentVersionUploadWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// AbortDocumentVersionUploadWithContext indicates an expected call of AbortDocumentVersionUploadWithContext.
+// AbortDocumentVersionUploadWithContext indicates an expected call of AbortDocumentVersionUploadWithContext
 func (mr *MockWorkDocsAPIMockRecorder) AbortDocumentVersionUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortDocumentVersionUploadWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).AbortDocumentVersionUploadWithContext), varargs...)
 }
 
-// ActivateUser mocks base method.
+// ActivateUser mocks base method
 func (m *MockWorkDocsAPI) ActivateUser(arg0 *workdocs.ActivateUserInput) (*workdocs.ActivateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ActivateUser", arg0)
@@ -95,13 +94,13 @@ func (m *MockWorkDocsAPI) ActivateUser(arg0 *workdocs.ActivateUserInput) (*workd
 	return ret0, ret1
 }
 
-// ActivateUser indicates an expected call of ActivateUser.
+// ActivateUser indicates an expected call of ActivateUser
 func (mr *MockWorkDocsAPIMockRecorder) ActivateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateUser", reflect.TypeOf((*MockWorkDocsAPI)(nil).ActivateUser), arg0)
 }
 
-// ActivateUserRequest mocks base method.
+// ActivateUserRequest mocks base method
 func (m *MockWorkDocsAPI) ActivateUserRequest(arg0 *workdocs.ActivateUserInput) (*request.Request, *workdocs.ActivateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ActivateUserRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockWorkDocsAPI) ActivateUserRequest(arg0 *workdocs.ActivateUserInput) 
 	return ret0, ret1
 }
 
-// ActivateUserRequest indicates an expected call of ActivateUserRequest.
+// ActivateUserRequest indicates an expected call of ActivateUserRequest
 func (mr *MockWorkDocsAPIMockRecorder) ActivateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateUserRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).ActivateUserRequest), arg0)
 }
 
-// ActivateUserWithContext mocks base method.
-func (m *MockWorkDocsAPI) ActivateUserWithContext(arg0 context.Context, arg1 *workdocs.ActivateUserInput, arg2 ...request.Option) (*workdocs.ActivateUserOutput, error) {
+// ActivateUserWithContext mocks base method
+func (m *MockWorkDocsAPI) ActivateUserWithContext(arg0 aws.Context, arg1 *workdocs.ActivateUserInput, arg2 ...request.Option) (*workdocs.ActivateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockWorkDocsAPI) ActivateUserWithContext(arg0 context.Context, arg1 *wo
 	return ret0, ret1
 }
 
-// ActivateUserWithContext indicates an expected call of ActivateUserWithContext.
+// ActivateUserWithContext indicates an expected call of ActivateUserWithContext
 func (mr *MockWorkDocsAPIMockRecorder) ActivateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateUserWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).ActivateUserWithContext), varargs...)
 }
 
-// AddResourcePermissions mocks base method.
+// AddResourcePermissions mocks base method
 func (m *MockWorkDocsAPI) AddResourcePermissions(arg0 *workdocs.AddResourcePermissionsInput) (*workdocs.AddResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddResourcePermissions", arg0)
@@ -145,13 +144,13 @@ func (m *MockWorkDocsAPI) AddResourcePermissions(arg0 *workdocs.AddResourcePermi
 	return ret0, ret1
 }
 
-// AddResourcePermissions indicates an expected call of AddResourcePermissions.
+// AddResourcePermissions indicates an expected call of AddResourcePermissions
 func (mr *MockWorkDocsAPIMockRecorder) AddResourcePermissions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddResourcePermissions", reflect.TypeOf((*MockWorkDocsAPI)(nil).AddResourcePermissions), arg0)
 }
 
-// AddResourcePermissionsRequest mocks base method.
+// AddResourcePermissionsRequest mocks base method
 func (m *MockWorkDocsAPI) AddResourcePermissionsRequest(arg0 *workdocs.AddResourcePermissionsInput) (*request.Request, *workdocs.AddResourcePermissionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddResourcePermissionsRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockWorkDocsAPI) AddResourcePermissionsRequest(arg0 *workdocs.AddResour
 	return ret0, ret1
 }
 
-// AddResourcePermissionsRequest indicates an expected call of AddResourcePermissionsRequest.
+// AddResourcePermissionsRequest indicates an expected call of AddResourcePermissionsRequest
 func (mr *MockWorkDocsAPIMockRecorder) AddResourcePermissionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddResourcePermissionsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).AddResourcePermissionsRequest), arg0)
 }
 
-// AddResourcePermissionsWithContext mocks base method.
-func (m *MockWorkDocsAPI) AddResourcePermissionsWithContext(arg0 context.Context, arg1 *workdocs.AddResourcePermissionsInput, arg2 ...request.Option) (*workdocs.AddResourcePermissionsOutput, error) {
+// AddResourcePermissionsWithContext mocks base method
+func (m *MockWorkDocsAPI) AddResourcePermissionsWithContext(arg0 aws.Context, arg1 *workdocs.AddResourcePermissionsInput, arg2 ...request.Option) (*workdocs.AddResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockWorkDocsAPI) AddResourcePermissionsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// AddResourcePermissionsWithContext indicates an expected call of AddResourcePermissionsWithContext.
+// AddResourcePermissionsWithContext indicates an expected call of AddResourcePermissionsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) AddResourcePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddResourcePermissionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).AddResourcePermissionsWithContext), varargs...)
 }
 
-// CreateComment mocks base method.
+// CreateComment mocks base method
 func (m *MockWorkDocsAPI) CreateComment(arg0 *workdocs.CreateCommentInput) (*workdocs.CreateCommentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateComment", arg0)
@@ -195,13 +194,13 @@ func (m *MockWorkDocsAPI) CreateComment(arg0 *workdocs.CreateCommentInput) (*wor
 	return ret0, ret1
 }
 
-// CreateComment indicates an expected call of CreateComment.
+// CreateComment indicates an expected call of CreateComment
 func (mr *MockWorkDocsAPIMockRecorder) CreateComment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateComment", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateComment), arg0)
 }
 
-// CreateCommentRequest mocks base method.
+// CreateCommentRequest mocks base method
 func (m *MockWorkDocsAPI) CreateCommentRequest(arg0 *workdocs.CreateCommentInput) (*request.Request, *workdocs.CreateCommentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateCommentRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockWorkDocsAPI) CreateCommentRequest(arg0 *workdocs.CreateCommentInput
 	return ret0, ret1
 }
 
-// CreateCommentRequest indicates an expected call of CreateCommentRequest.
+// CreateCommentRequest indicates an expected call of CreateCommentRequest
 func (mr *MockWorkDocsAPIMockRecorder) CreateCommentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCommentRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateCommentRequest), arg0)
 }
 
-// CreateCommentWithContext mocks base method.
-func (m *MockWorkDocsAPI) CreateCommentWithContext(arg0 context.Context, arg1 *workdocs.CreateCommentInput, arg2 ...request.Option) (*workdocs.CreateCommentOutput, error) {
+// CreateCommentWithContext mocks base method
+func (m *MockWorkDocsAPI) CreateCommentWithContext(arg0 aws.Context, arg1 *workdocs.CreateCommentInput, arg2 ...request.Option) (*workdocs.CreateCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockWorkDocsAPI) CreateCommentWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// CreateCommentWithContext indicates an expected call of CreateCommentWithContext.
+// CreateCommentWithContext indicates an expected call of CreateCommentWithContext
 func (mr *MockWorkDocsAPIMockRecorder) CreateCommentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCommentWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateCommentWithContext), varargs...)
 }
 
-// CreateCustomMetadata mocks base method.
+// CreateCustomMetadata mocks base method
 func (m *MockWorkDocsAPI) CreateCustomMetadata(arg0 *workdocs.CreateCustomMetadataInput) (*workdocs.CreateCustomMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateCustomMetadata", arg0)
@@ -245,13 +244,13 @@ func (m *MockWorkDocsAPI) CreateCustomMetadata(arg0 *workdocs.CreateCustomMetada
 	return ret0, ret1
 }
 
-// CreateCustomMetadata indicates an expected call of CreateCustomMetadata.
+// CreateCustomMetadata indicates an expected call of CreateCustomMetadata
 func (mr *MockWorkDocsAPIMockRecorder) CreateCustomMetadata(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomMetadata", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateCustomMetadata), arg0)
 }
 
-// CreateCustomMetadataRequest mocks base method.
+// CreateCustomMetadataRequest mocks base method
 func (m *MockWorkDocsAPI) CreateCustomMetadataRequest(arg0 *workdocs.CreateCustomMetadataInput) (*request.Request, *workdocs.CreateCustomMetadataOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateCustomMetadataRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockWorkDocsAPI) CreateCustomMetadataRequest(arg0 *workdocs.CreateCusto
 	return ret0, ret1
 }
 
-// CreateCustomMetadataRequest indicates an expected call of CreateCustomMetadataRequest.
+// CreateCustomMetadataRequest indicates an expected call of CreateCustomMetadataRequest
 func (mr *MockWorkDocsAPIMockRecorder) CreateCustomMetadataRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomMetadataRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateCustomMetadataRequest), arg0)
 }
 
-// CreateCustomMetadataWithContext mocks base method.
-func (m *MockWorkDocsAPI) CreateCustomMetadataWithContext(arg0 context.Context, arg1 *workdocs.CreateCustomMetadataInput, arg2 ...request.Option) (*workdocs.CreateCustomMetadataOutput, error) {
+// CreateCustomMetadataWithContext mocks base method
+func (m *MockWorkDocsAPI) CreateCustomMetadataWithContext(arg0 aws.Context, arg1 *workdocs.CreateCustomMetadataInput, arg2 ...request.Option) (*workdocs.CreateCustomMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockWorkDocsAPI) CreateCustomMetadataWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CreateCustomMetadataWithContext indicates an expected call of CreateCustomMetadataWithContext.
+// CreateCustomMetadataWithContext indicates an expected call of CreateCustomMetadataWithContext
 func (mr *MockWorkDocsAPIMockRecorder) CreateCustomMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomMetadataWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateCustomMetadataWithContext), varargs...)
 }
 
-// CreateFolder mocks base method.
+// CreateFolder mocks base method
 func (m *MockWorkDocsAPI) CreateFolder(arg0 *workdocs.CreateFolderInput) (*workdocs.CreateFolderOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateFolder", arg0)
@@ -295,13 +294,13 @@ func (m *MockWorkDocsAPI) CreateFolder(arg0 *workdocs.CreateFolderInput) (*workd
 	return ret0, ret1
 }
 
-// CreateFolder indicates an expected call of CreateFolder.
+// CreateFolder indicates an expected call of CreateFolder
 func (mr *MockWorkDocsAPIMockRecorder) CreateFolder(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFolder", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateFolder), arg0)
 }
 
-// CreateFolderRequest mocks base method.
+// CreateFolderRequest mocks base method
 func (m *MockWorkDocsAPI) CreateFolderRequest(arg0 *workdocs.CreateFolderInput) (*request.Request, *workdocs.CreateFolderOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateFolderRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockWorkDocsAPI) CreateFolderRequest(arg0 *workdocs.CreateFolderInput) 
 	return ret0, ret1
 }
 
-// CreateFolderRequest indicates an expected call of CreateFolderRequest.
+// CreateFolderRequest indicates an expected call of CreateFolderRequest
 func (mr *MockWorkDocsAPIMockRecorder) CreateFolderRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFolderRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateFolderRequest), arg0)
 }
 
-// CreateFolderWithContext mocks base method.
-func (m *MockWorkDocsAPI) CreateFolderWithContext(arg0 context.Context, arg1 *workdocs.CreateFolderInput, arg2 ...request.Option) (*workdocs.CreateFolderOutput, error) {
+// CreateFolderWithContext mocks base method
+func (m *MockWorkDocsAPI) CreateFolderWithContext(arg0 aws.Context, arg1 *workdocs.CreateFolderInput, arg2 ...request.Option) (*workdocs.CreateFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockWorkDocsAPI) CreateFolderWithContext(arg0 context.Context, arg1 *wo
 	return ret0, ret1
 }
 
-// CreateFolderWithContext indicates an expected call of CreateFolderWithContext.
+// CreateFolderWithContext indicates an expected call of CreateFolderWithContext
 func (mr *MockWorkDocsAPIMockRecorder) CreateFolderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFolderWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateFolderWithContext), varargs...)
 }
 
-// CreateLabels mocks base method.
+// CreateLabels mocks base method
 func (m *MockWorkDocsAPI) CreateLabels(arg0 *workdocs.CreateLabelsInput) (*workdocs.CreateLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateLabels", arg0)
@@ -345,13 +344,13 @@ func (m *MockWorkDocsAPI) CreateLabels(arg0 *workdocs.CreateLabelsInput) (*workd
 	return ret0, ret1
 }
 
-// CreateLabels indicates an expected call of CreateLabels.
+// CreateLabels indicates an expected call of CreateLabels
 func (mr *MockWorkDocsAPIMockRecorder) CreateLabels(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabels", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateLabels), arg0)
 }
 
-// CreateLabelsRequest mocks base method.
+// CreateLabelsRequest mocks base method
 func (m *MockWorkDocsAPI) CreateLabelsRequest(arg0 *workdocs.CreateLabelsInput) (*request.Request, *workdocs.CreateLabelsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateLabelsRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockWorkDocsAPI) CreateLabelsRequest(arg0 *workdocs.CreateLabelsInput) 
 	return ret0, ret1
 }
 
-// CreateLabelsRequest indicates an expected call of CreateLabelsRequest.
+// CreateLabelsRequest indicates an expected call of CreateLabelsRequest
 func (mr *MockWorkDocsAPIMockRecorder) CreateLabelsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateLabelsRequest), arg0)
 }
 
-// CreateLabelsWithContext mocks base method.
-func (m *MockWorkDocsAPI) CreateLabelsWithContext(arg0 context.Context, arg1 *workdocs.CreateLabelsInput, arg2 ...request.Option) (*workdocs.CreateLabelsOutput, error) {
+// CreateLabelsWithContext mocks base method
+func (m *MockWorkDocsAPI) CreateLabelsWithContext(arg0 aws.Context, arg1 *workdocs.CreateLabelsInput, arg2 ...request.Option) (*workdocs.CreateLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockWorkDocsAPI) CreateLabelsWithContext(arg0 context.Context, arg1 *wo
 	return ret0, ret1
 }
 
-// CreateLabelsWithContext indicates an expected call of CreateLabelsWithContext.
+// CreateLabelsWithContext indicates an expected call of CreateLabelsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) CreateLabelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateLabelsWithContext), varargs...)
 }
 
-// CreateNotificationSubscription mocks base method.
+// CreateNotificationSubscription mocks base method
 func (m *MockWorkDocsAPI) CreateNotificationSubscription(arg0 *workdocs.CreateNotificationSubscriptionInput) (*workdocs.CreateNotificationSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateNotificationSubscription", arg0)
@@ -395,13 +394,13 @@ func (m *MockWorkDocsAPI) CreateNotificationSubscription(arg0 *workdocs.CreateNo
 	return ret0, ret1
 }
 
-// CreateNotificationSubscription indicates an expected call of CreateNotificationSubscription.
+// CreateNotificationSubscription indicates an expected call of CreateNotificationSubscription
 func (mr *MockWorkDocsAPIMockRecorder) CreateNotificationSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotificationSubscription", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateNotificationSubscription), arg0)
 }
 
-// CreateNotificationSubscriptionRequest mocks base method.
+// CreateNotificationSubscriptionRequest mocks base method
 func (m *MockWorkDocsAPI) CreateNotificationSubscriptionRequest(arg0 *workdocs.CreateNotificationSubscriptionInput) (*request.Request, *workdocs.CreateNotificationSubscriptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateNotificationSubscriptionRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockWorkDocsAPI) CreateNotificationSubscriptionRequest(arg0 *workdocs.C
 	return ret0, ret1
 }
 
-// CreateNotificationSubscriptionRequest indicates an expected call of CreateNotificationSubscriptionRequest.
+// CreateNotificationSubscriptionRequest indicates an expected call of CreateNotificationSubscriptionRequest
 func (mr *MockWorkDocsAPIMockRecorder) CreateNotificationSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotificationSubscriptionRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateNotificationSubscriptionRequest), arg0)
 }
 
-// CreateNotificationSubscriptionWithContext mocks base method.
-func (m *MockWorkDocsAPI) CreateNotificationSubscriptionWithContext(arg0 context.Context, arg1 *workdocs.CreateNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.CreateNotificationSubscriptionOutput, error) {
+// CreateNotificationSubscriptionWithContext mocks base method
+func (m *MockWorkDocsAPI) CreateNotificationSubscriptionWithContext(arg0 aws.Context, arg1 *workdocs.CreateNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.CreateNotificationSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockWorkDocsAPI) CreateNotificationSubscriptionWithContext(arg0 context
 	return ret0, ret1
 }
 
-// CreateNotificationSubscriptionWithContext indicates an expected call of CreateNotificationSubscriptionWithContext.
+// CreateNotificationSubscriptionWithContext indicates an expected call of CreateNotificationSubscriptionWithContext
 func (mr *MockWorkDocsAPIMockRecorder) CreateNotificationSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotificationSubscriptionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateNotificationSubscriptionWithContext), varargs...)
 }
 
-// CreateUser mocks base method.
+// CreateUser mocks base method
 func (m *MockWorkDocsAPI) CreateUser(arg0 *workdocs.CreateUserInput) (*workdocs.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUser", arg0)
@@ -445,13 +444,13 @@ func (m *MockWorkDocsAPI) CreateUser(arg0 *workdocs.CreateUserInput) (*workdocs.
 	return ret0, ret1
 }
 
-// CreateUser indicates an expected call of CreateUser.
+// CreateUser indicates an expected call of CreateUser
 func (mr *MockWorkDocsAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateUser), arg0)
 }
 
-// CreateUserRequest mocks base method.
+// CreateUserRequest mocks base method
 func (m *MockWorkDocsAPI) CreateUserRequest(arg0 *workdocs.CreateUserInput) (*request.Request, *workdocs.CreateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockWorkDocsAPI) CreateUserRequest(arg0 *workdocs.CreateUserInput) (*re
 	return ret0, ret1
 }
 
-// CreateUserRequest indicates an expected call of CreateUserRequest.
+// CreateUserRequest indicates an expected call of CreateUserRequest
 func (mr *MockWorkDocsAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateUserRequest), arg0)
 }
 
-// CreateUserWithContext mocks base method.
-func (m *MockWorkDocsAPI) CreateUserWithContext(arg0 context.Context, arg1 *workdocs.CreateUserInput, arg2 ...request.Option) (*workdocs.CreateUserOutput, error) {
+// CreateUserWithContext mocks base method
+func (m *MockWorkDocsAPI) CreateUserWithContext(arg0 aws.Context, arg1 *workdocs.CreateUserInput, arg2 ...request.Option) (*workdocs.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockWorkDocsAPI) CreateUserWithContext(arg0 context.Context, arg1 *work
 	return ret0, ret1
 }
 
-// CreateUserWithContext indicates an expected call of CreateUserWithContext.
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
 func (mr *MockWorkDocsAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).CreateUserWithContext), varargs...)
 }
 
-// DeactivateUser mocks base method.
+// DeactivateUser mocks base method
 func (m *MockWorkDocsAPI) DeactivateUser(arg0 *workdocs.DeactivateUserInput) (*workdocs.DeactivateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeactivateUser", arg0)
@@ -495,13 +494,13 @@ func (m *MockWorkDocsAPI) DeactivateUser(arg0 *workdocs.DeactivateUserInput) (*w
 	return ret0, ret1
 }
 
-// DeactivateUser indicates an expected call of DeactivateUser.
+// DeactivateUser indicates an expected call of DeactivateUser
 func (mr *MockWorkDocsAPIMockRecorder) DeactivateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateUser", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeactivateUser), arg0)
 }
 
-// DeactivateUserRequest mocks base method.
+// DeactivateUserRequest mocks base method
 func (m *MockWorkDocsAPI) DeactivateUserRequest(arg0 *workdocs.DeactivateUserInput) (*request.Request, *workdocs.DeactivateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeactivateUserRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockWorkDocsAPI) DeactivateUserRequest(arg0 *workdocs.DeactivateUserInp
 	return ret0, ret1
 }
 
-// DeactivateUserRequest indicates an expected call of DeactivateUserRequest.
+// DeactivateUserRequest indicates an expected call of DeactivateUserRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeactivateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateUserRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeactivateUserRequest), arg0)
 }
 
-// DeactivateUserWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeactivateUserWithContext(arg0 context.Context, arg1 *workdocs.DeactivateUserInput, arg2 ...request.Option) (*workdocs.DeactivateUserOutput, error) {
+// DeactivateUserWithContext mocks base method
+func (m *MockWorkDocsAPI) DeactivateUserWithContext(arg0 aws.Context, arg1 *workdocs.DeactivateUserInput, arg2 ...request.Option) (*workdocs.DeactivateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockWorkDocsAPI) DeactivateUserWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeactivateUserWithContext indicates an expected call of DeactivateUserWithContext.
+// DeactivateUserWithContext indicates an expected call of DeactivateUserWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeactivateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateUserWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeactivateUserWithContext), varargs...)
 }
 
-// DeleteComment mocks base method.
+// DeleteComment mocks base method
 func (m *MockWorkDocsAPI) DeleteComment(arg0 *workdocs.DeleteCommentInput) (*workdocs.DeleteCommentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteComment", arg0)
@@ -545,13 +544,13 @@ func (m *MockWorkDocsAPI) DeleteComment(arg0 *workdocs.DeleteCommentInput) (*wor
 	return ret0, ret1
 }
 
-// DeleteComment indicates an expected call of DeleteComment.
+// DeleteComment indicates an expected call of DeleteComment
 func (mr *MockWorkDocsAPIMockRecorder) DeleteComment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteComment", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteComment), arg0)
 }
 
-// DeleteCommentRequest mocks base method.
+// DeleteCommentRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteCommentRequest(arg0 *workdocs.DeleteCommentInput) (*request.Request, *workdocs.DeleteCommentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteCommentRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockWorkDocsAPI) DeleteCommentRequest(arg0 *workdocs.DeleteCommentInput
 	return ret0, ret1
 }
 
-// DeleteCommentRequest indicates an expected call of DeleteCommentRequest.
+// DeleteCommentRequest indicates an expected call of DeleteCommentRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteCommentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCommentRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteCommentRequest), arg0)
 }
 
-// DeleteCommentWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteCommentWithContext(arg0 context.Context, arg1 *workdocs.DeleteCommentInput, arg2 ...request.Option) (*workdocs.DeleteCommentOutput, error) {
+// DeleteCommentWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteCommentWithContext(arg0 aws.Context, arg1 *workdocs.DeleteCommentInput, arg2 ...request.Option) (*workdocs.DeleteCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockWorkDocsAPI) DeleteCommentWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// DeleteCommentWithContext indicates an expected call of DeleteCommentWithContext.
+// DeleteCommentWithContext indicates an expected call of DeleteCommentWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteCommentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCommentWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteCommentWithContext), varargs...)
 }
 
-// DeleteCustomMetadata mocks base method.
+// DeleteCustomMetadata mocks base method
 func (m *MockWorkDocsAPI) DeleteCustomMetadata(arg0 *workdocs.DeleteCustomMetadataInput) (*workdocs.DeleteCustomMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteCustomMetadata", arg0)
@@ -595,13 +594,13 @@ func (m *MockWorkDocsAPI) DeleteCustomMetadata(arg0 *workdocs.DeleteCustomMetada
 	return ret0, ret1
 }
 
-// DeleteCustomMetadata indicates an expected call of DeleteCustomMetadata.
+// DeleteCustomMetadata indicates an expected call of DeleteCustomMetadata
 func (mr *MockWorkDocsAPIMockRecorder) DeleteCustomMetadata(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomMetadata", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteCustomMetadata), arg0)
 }
 
-// DeleteCustomMetadataRequest mocks base method.
+// DeleteCustomMetadataRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteCustomMetadataRequest(arg0 *workdocs.DeleteCustomMetadataInput) (*request.Request, *workdocs.DeleteCustomMetadataOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteCustomMetadataRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockWorkDocsAPI) DeleteCustomMetadataRequest(arg0 *workdocs.DeleteCusto
 	return ret0, ret1
 }
 
-// DeleteCustomMetadataRequest indicates an expected call of DeleteCustomMetadataRequest.
+// DeleteCustomMetadataRequest indicates an expected call of DeleteCustomMetadataRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteCustomMetadataRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomMetadataRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteCustomMetadataRequest), arg0)
 }
 
-// DeleteCustomMetadataWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteCustomMetadataWithContext(arg0 context.Context, arg1 *workdocs.DeleteCustomMetadataInput, arg2 ...request.Option) (*workdocs.DeleteCustomMetadataOutput, error) {
+// DeleteCustomMetadataWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteCustomMetadataWithContext(arg0 aws.Context, arg1 *workdocs.DeleteCustomMetadataInput, arg2 ...request.Option) (*workdocs.DeleteCustomMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockWorkDocsAPI) DeleteCustomMetadataWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DeleteCustomMetadataWithContext indicates an expected call of DeleteCustomMetadataWithContext.
+// DeleteCustomMetadataWithContext indicates an expected call of DeleteCustomMetadataWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteCustomMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomMetadataWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteCustomMetadataWithContext), varargs...)
 }
 
-// DeleteDocument mocks base method.
+// DeleteDocument mocks base method
 func (m *MockWorkDocsAPI) DeleteDocument(arg0 *workdocs.DeleteDocumentInput) (*workdocs.DeleteDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDocument", arg0)
@@ -645,13 +644,13 @@ func (m *MockWorkDocsAPI) DeleteDocument(arg0 *workdocs.DeleteDocumentInput) (*w
 	return ret0, ret1
 }
 
-// DeleteDocument indicates an expected call of DeleteDocument.
+// DeleteDocument indicates an expected call of DeleteDocument
 func (mr *MockWorkDocsAPIMockRecorder) DeleteDocument(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocument", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocument), arg0)
 }
 
-// DeleteDocumentRequest mocks base method.
+// DeleteDocumentRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteDocumentRequest(arg0 *workdocs.DeleteDocumentInput) (*request.Request, *workdocs.DeleteDocumentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDocumentRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockWorkDocsAPI) DeleteDocumentRequest(arg0 *workdocs.DeleteDocumentInp
 	return ret0, ret1
 }
 
-// DeleteDocumentRequest indicates an expected call of DeleteDocumentRequest.
+// DeleteDocumentRequest indicates an expected call of DeleteDocumentRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocumentRequest), arg0)
 }
 
-// DeleteDocumentWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteDocumentWithContext(arg0 context.Context, arg1 *workdocs.DeleteDocumentInput, arg2 ...request.Option) (*workdocs.DeleteDocumentOutput, error) {
+// DeleteDocumentWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteDocumentWithContext(arg0 aws.Context, arg1 *workdocs.DeleteDocumentInput, arg2 ...request.Option) (*workdocs.DeleteDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockWorkDocsAPI) DeleteDocumentWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteDocumentWithContext indicates an expected call of DeleteDocumentWithContext.
+// DeleteDocumentWithContext indicates an expected call of DeleteDocumentWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocumentWithContext), varargs...)
 }
 
-// DeleteFolder mocks base method.
+// DeleteFolder mocks base method
 func (m *MockWorkDocsAPI) DeleteFolder(arg0 *workdocs.DeleteFolderInput) (*workdocs.DeleteFolderOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFolder", arg0)
@@ -695,13 +694,13 @@ func (m *MockWorkDocsAPI) DeleteFolder(arg0 *workdocs.DeleteFolderInput) (*workd
 	return ret0, ret1
 }
 
-// DeleteFolder indicates an expected call of DeleteFolder.
+// DeleteFolder indicates an expected call of DeleteFolder
 func (mr *MockWorkDocsAPIMockRecorder) DeleteFolder(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFolder", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteFolder), arg0)
 }
 
-// DeleteFolderContents mocks base method.
+// DeleteFolderContents mocks base method
 func (m *MockWorkDocsAPI) DeleteFolderContents(arg0 *workdocs.DeleteFolderContentsInput) (*workdocs.DeleteFolderContentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFolderContents", arg0)
@@ -710,13 +709,13 @@ func (m *MockWorkDocsAPI) DeleteFolderContents(arg0 *workdocs.DeleteFolderConten
 	return ret0, ret1
 }
 
-// DeleteFolderContents indicates an expected call of DeleteFolderContents.
+// DeleteFolderContents indicates an expected call of DeleteFolderContents
 func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderContents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFolderContents", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteFolderContents), arg0)
 }
 
-// DeleteFolderContentsRequest mocks base method.
+// DeleteFolderContentsRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteFolderContentsRequest(arg0 *workdocs.DeleteFolderContentsInput) (*request.Request, *workdocs.DeleteFolderContentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFolderContentsRequest", arg0)
@@ -725,14 +724,14 @@ func (m *MockWorkDocsAPI) DeleteFolderContentsRequest(arg0 *workdocs.DeleteFolde
 	return ret0, ret1
 }
 
-// DeleteFolderContentsRequest indicates an expected call of DeleteFolderContentsRequest.
+// DeleteFolderContentsRequest indicates an expected call of DeleteFolderContentsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderContentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFolderContentsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteFolderContentsRequest), arg0)
 }
 
-// DeleteFolderContentsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteFolderContentsWithContext(arg0 context.Context, arg1 *workdocs.DeleteFolderContentsInput, arg2 ...request.Option) (*workdocs.DeleteFolderContentsOutput, error) {
+// DeleteFolderContentsWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteFolderContentsWithContext(arg0 aws.Context, arg1 *workdocs.DeleteFolderContentsInput, arg2 ...request.Option) (*workdocs.DeleteFolderContentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -744,14 +743,14 @@ func (m *MockWorkDocsAPI) DeleteFolderContentsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DeleteFolderContentsWithContext indicates an expected call of DeleteFolderContentsWithContext.
+// DeleteFolderContentsWithContext indicates an expected call of DeleteFolderContentsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderContentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFolderContentsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteFolderContentsWithContext), varargs...)
 }
 
-// DeleteFolderRequest mocks base method.
+// DeleteFolderRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteFolderRequest(arg0 *workdocs.DeleteFolderInput) (*request.Request, *workdocs.DeleteFolderOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFolderRequest", arg0)
@@ -760,14 +759,14 @@ func (m *MockWorkDocsAPI) DeleteFolderRequest(arg0 *workdocs.DeleteFolderInput) 
 	return ret0, ret1
 }
 
-// DeleteFolderRequest indicates an expected call of DeleteFolderRequest.
+// DeleteFolderRequest indicates an expected call of DeleteFolderRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFolderRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteFolderRequest), arg0)
 }
 
-// DeleteFolderWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteFolderWithContext(arg0 context.Context, arg1 *workdocs.DeleteFolderInput, arg2 ...request.Option) (*workdocs.DeleteFolderOutput, error) {
+// DeleteFolderWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteFolderWithContext(arg0 aws.Context, arg1 *workdocs.DeleteFolderInput, arg2 ...request.Option) (*workdocs.DeleteFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +778,14 @@ func (m *MockWorkDocsAPI) DeleteFolderWithContext(arg0 context.Context, arg1 *wo
 	return ret0, ret1
 }
 
-// DeleteFolderWithContext indicates an expected call of DeleteFolderWithContext.
+// DeleteFolderWithContext indicates an expected call of DeleteFolderWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFolderWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteFolderWithContext), varargs...)
 }
 
-// DeleteLabels mocks base method.
+// DeleteLabels mocks base method
 func (m *MockWorkDocsAPI) DeleteLabels(arg0 *workdocs.DeleteLabelsInput) (*workdocs.DeleteLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteLabels", arg0)
@@ -795,13 +794,13 @@ func (m *MockWorkDocsAPI) DeleteLabels(arg0 *workdocs.DeleteLabelsInput) (*workd
 	return ret0, ret1
 }
 
-// DeleteLabels indicates an expected call of DeleteLabels.
+// DeleteLabels indicates an expected call of DeleteLabels
 func (mr *MockWorkDocsAPIMockRecorder) DeleteLabels(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabels", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteLabels), arg0)
 }
 
-// DeleteLabelsRequest mocks base method.
+// DeleteLabelsRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteLabelsRequest(arg0 *workdocs.DeleteLabelsInput) (*request.Request, *workdocs.DeleteLabelsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteLabelsRequest", arg0)
@@ -810,14 +809,14 @@ func (m *MockWorkDocsAPI) DeleteLabelsRequest(arg0 *workdocs.DeleteLabelsInput) 
 	return ret0, ret1
 }
 
-// DeleteLabelsRequest indicates an expected call of DeleteLabelsRequest.
+// DeleteLabelsRequest indicates an expected call of DeleteLabelsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteLabelsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteLabelsRequest), arg0)
 }
 
-// DeleteLabelsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteLabelsWithContext(arg0 context.Context, arg1 *workdocs.DeleteLabelsInput, arg2 ...request.Option) (*workdocs.DeleteLabelsOutput, error) {
+// DeleteLabelsWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteLabelsWithContext(arg0 aws.Context, arg1 *workdocs.DeleteLabelsInput, arg2 ...request.Option) (*workdocs.DeleteLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +828,14 @@ func (m *MockWorkDocsAPI) DeleteLabelsWithContext(arg0 context.Context, arg1 *wo
 	return ret0, ret1
 }
 
-// DeleteLabelsWithContext indicates an expected call of DeleteLabelsWithContext.
+// DeleteLabelsWithContext indicates an expected call of DeleteLabelsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteLabelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteLabelsWithContext), varargs...)
 }
 
-// DeleteNotificationSubscription mocks base method.
+// DeleteNotificationSubscription mocks base method
 func (m *MockWorkDocsAPI) DeleteNotificationSubscription(arg0 *workdocs.DeleteNotificationSubscriptionInput) (*workdocs.DeleteNotificationSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteNotificationSubscription", arg0)
@@ -845,13 +844,13 @@ func (m *MockWorkDocsAPI) DeleteNotificationSubscription(arg0 *workdocs.DeleteNo
 	return ret0, ret1
 }
 
-// DeleteNotificationSubscription indicates an expected call of DeleteNotificationSubscription.
+// DeleteNotificationSubscription indicates an expected call of DeleteNotificationSubscription
 func (mr *MockWorkDocsAPIMockRecorder) DeleteNotificationSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotificationSubscription", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteNotificationSubscription), arg0)
 }
 
-// DeleteNotificationSubscriptionRequest mocks base method.
+// DeleteNotificationSubscriptionRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionRequest(arg0 *workdocs.DeleteNotificationSubscriptionInput) (*request.Request, *workdocs.DeleteNotificationSubscriptionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteNotificationSubscriptionRequest", arg0)
@@ -860,14 +859,14 @@ func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionRequest(arg0 *workdocs.D
 	return ret0, ret1
 }
 
-// DeleteNotificationSubscriptionRequest indicates an expected call of DeleteNotificationSubscriptionRequest.
+// DeleteNotificationSubscriptionRequest indicates an expected call of DeleteNotificationSubscriptionRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteNotificationSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotificationSubscriptionRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteNotificationSubscriptionRequest), arg0)
 }
 
-// DeleteNotificationSubscriptionWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionWithContext(arg0 context.Context, arg1 *workdocs.DeleteNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.DeleteNotificationSubscriptionOutput, error) {
+// DeleteNotificationSubscriptionWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionWithContext(arg0 aws.Context, arg1 *workdocs.DeleteNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.DeleteNotificationSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +878,14 @@ func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DeleteNotificationSubscriptionWithContext indicates an expected call of DeleteNotificationSubscriptionWithContext.
+// DeleteNotificationSubscriptionWithContext indicates an expected call of DeleteNotificationSubscriptionWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteNotificationSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotificationSubscriptionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteNotificationSubscriptionWithContext), varargs...)
 }
 
-// DeleteUser mocks base method.
+// DeleteUser mocks base method
 func (m *MockWorkDocsAPI) DeleteUser(arg0 *workdocs.DeleteUserInput) (*workdocs.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUser", arg0)
@@ -895,13 +894,13 @@ func (m *MockWorkDocsAPI) DeleteUser(arg0 *workdocs.DeleteUserInput) (*workdocs.
 	return ret0, ret1
 }
 
-// DeleteUser indicates an expected call of DeleteUser.
+// DeleteUser indicates an expected call of DeleteUser
 func (mr *MockWorkDocsAPIMockRecorder) DeleteUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUser", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteUser), arg0)
 }
 
-// DeleteUserRequest mocks base method.
+// DeleteUserRequest mocks base method
 func (m *MockWorkDocsAPI) DeleteUserRequest(arg0 *workdocs.DeleteUserInput) (*request.Request, *workdocs.DeleteUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUserRequest", arg0)
@@ -910,14 +909,14 @@ func (m *MockWorkDocsAPI) DeleteUserRequest(arg0 *workdocs.DeleteUserInput) (*re
 	return ret0, ret1
 }
 
-// DeleteUserRequest indicates an expected call of DeleteUserRequest.
+// DeleteUserRequest indicates an expected call of DeleteUserRequest
 func (mr *MockWorkDocsAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteUserRequest), arg0)
 }
 
-// DeleteUserWithContext mocks base method.
-func (m *MockWorkDocsAPI) DeleteUserWithContext(arg0 context.Context, arg1 *workdocs.DeleteUserInput, arg2 ...request.Option) (*workdocs.DeleteUserOutput, error) {
+// DeleteUserWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *workdocs.DeleteUserInput, arg2 ...request.Option) (*workdocs.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +928,14 @@ func (m *MockWorkDocsAPI) DeleteUserWithContext(arg0 context.Context, arg1 *work
 	return ret0, ret1
 }
 
-// DeleteUserWithContext indicates an expected call of DeleteUserWithContext.
+// DeleteUserWithContext indicates an expected call of DeleteUserWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteUserWithContext), varargs...)
 }
 
-// DescribeActivities mocks base method.
+// DescribeActivities mocks base method
 func (m *MockWorkDocsAPI) DescribeActivities(arg0 *workdocs.DescribeActivitiesInput) (*workdocs.DescribeActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeActivities", arg0)
@@ -945,13 +944,13 @@ func (m *MockWorkDocsAPI) DescribeActivities(arg0 *workdocs.DescribeActivitiesIn
 	return ret0, ret1
 }
 
-// DescribeActivities indicates an expected call of DescribeActivities.
+// DescribeActivities indicates an expected call of DescribeActivities
 func (mr *MockWorkDocsAPIMockRecorder) DescribeActivities(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivities", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeActivities), arg0)
 }
 
-// DescribeActivitiesRequest mocks base method.
+// DescribeActivitiesRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeActivitiesRequest(arg0 *workdocs.DescribeActivitiesInput) (*request.Request, *workdocs.DescribeActivitiesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeActivitiesRequest", arg0)
@@ -960,14 +959,14 @@ func (m *MockWorkDocsAPI) DescribeActivitiesRequest(arg0 *workdocs.DescribeActiv
 	return ret0, ret1
 }
 
-// DescribeActivitiesRequest indicates an expected call of DescribeActivitiesRequest.
+// DescribeActivitiesRequest indicates an expected call of DescribeActivitiesRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeActivitiesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivitiesRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeActivitiesRequest), arg0)
 }
 
-// DescribeActivitiesWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeActivitiesWithContext(arg0 context.Context, arg1 *workdocs.DescribeActivitiesInput, arg2 ...request.Option) (*workdocs.DescribeActivitiesOutput, error) {
+// DescribeActivitiesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeActivitiesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeActivitiesInput, arg2 ...request.Option) (*workdocs.DescribeActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +978,14 @@ func (m *MockWorkDocsAPI) DescribeActivitiesWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DescribeActivitiesWithContext indicates an expected call of DescribeActivitiesWithContext.
+// DescribeActivitiesWithContext indicates an expected call of DescribeActivitiesWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeActivitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivitiesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeActivitiesWithContext), varargs...)
 }
 
-// DescribeComments mocks base method.
+// DescribeComments mocks base method
 func (m *MockWorkDocsAPI) DescribeComments(arg0 *workdocs.DescribeCommentsInput) (*workdocs.DescribeCommentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeComments", arg0)
@@ -995,13 +994,13 @@ func (m *MockWorkDocsAPI) DescribeComments(arg0 *workdocs.DescribeCommentsInput)
 	return ret0, ret1
 }
 
-// DescribeComments indicates an expected call of DescribeComments.
+// DescribeComments indicates an expected call of DescribeComments
 func (mr *MockWorkDocsAPIMockRecorder) DescribeComments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComments", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeComments), arg0)
 }
 
-// DescribeCommentsRequest mocks base method.
+// DescribeCommentsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeCommentsRequest(arg0 *workdocs.DescribeCommentsInput) (*request.Request, *workdocs.DescribeCommentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeCommentsRequest", arg0)
@@ -1010,14 +1009,14 @@ func (m *MockWorkDocsAPI) DescribeCommentsRequest(arg0 *workdocs.DescribeComment
 	return ret0, ret1
 }
 
-// DescribeCommentsRequest indicates an expected call of DescribeCommentsRequest.
+// DescribeCommentsRequest indicates an expected call of DescribeCommentsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeCommentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCommentsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeCommentsRequest), arg0)
 }
 
-// DescribeCommentsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeCommentsWithContext(arg0 context.Context, arg1 *workdocs.DescribeCommentsInput, arg2 ...request.Option) (*workdocs.DescribeCommentsOutput, error) {
+// DescribeCommentsWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeCommentsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeCommentsInput, arg2 ...request.Option) (*workdocs.DescribeCommentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +1028,14 @@ func (m *MockWorkDocsAPI) DescribeCommentsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DescribeCommentsWithContext indicates an expected call of DescribeCommentsWithContext.
+// DescribeCommentsWithContext indicates an expected call of DescribeCommentsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeCommentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCommentsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeCommentsWithContext), varargs...)
 }
 
-// DescribeDocumentVersions mocks base method.
+// DescribeDocumentVersions mocks base method
 func (m *MockWorkDocsAPI) DescribeDocumentVersions(arg0 *workdocs.DescribeDocumentVersionsInput) (*workdocs.DescribeDocumentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDocumentVersions", arg0)
@@ -1045,13 +1044,13 @@ func (m *MockWorkDocsAPI) DescribeDocumentVersions(arg0 *workdocs.DescribeDocume
 	return ret0, ret1
 }
 
-// DescribeDocumentVersions indicates an expected call of DescribeDocumentVersions.
+// DescribeDocumentVersions indicates an expected call of DescribeDocumentVersions
 func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentVersions", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeDocumentVersions), arg0)
 }
 
-// DescribeDocumentVersionsPages mocks base method.
+// DescribeDocumentVersionsPages mocks base method
 func (m *MockWorkDocsAPI) DescribeDocumentVersionsPages(arg0 *workdocs.DescribeDocumentVersionsInput, arg1 func(*workdocs.DescribeDocumentVersionsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDocumentVersionsPages", arg0, arg1)
@@ -1059,14 +1058,14 @@ func (m *MockWorkDocsAPI) DescribeDocumentVersionsPages(arg0 *workdocs.DescribeD
 	return ret0
 }
 
-// DescribeDocumentVersionsPages indicates an expected call of DescribeDocumentVersionsPages.
+// DescribeDocumentVersionsPages indicates an expected call of DescribeDocumentVersionsPages
 func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentVersionsPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeDocumentVersionsPages), arg0, arg1)
 }
 
-// DescribeDocumentVersionsPagesWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeDocumentVersionsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 func(*workdocs.DescribeDocumentVersionsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeDocumentVersionsPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeDocumentVersionsPagesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 func(*workdocs.DescribeDocumentVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1077,14 +1076,14 @@ func (m *MockWorkDocsAPI) DescribeDocumentVersionsPagesWithContext(arg0 context.
 	return ret0
 }
 
-// DescribeDocumentVersionsPagesWithContext indicates an expected call of DescribeDocumentVersionsPagesWithContext.
+// DescribeDocumentVersionsPagesWithContext indicates an expected call of DescribeDocumentVersionsPagesWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentVersionsPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeDocumentVersionsPagesWithContext), varargs...)
 }
 
-// DescribeDocumentVersionsRequest mocks base method.
+// DescribeDocumentVersionsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeDocumentVersionsRequest(arg0 *workdocs.DescribeDocumentVersionsInput) (*request.Request, *workdocs.DescribeDocumentVersionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDocumentVersionsRequest", arg0)
@@ -1093,14 +1092,14 @@ func (m *MockWorkDocsAPI) DescribeDocumentVersionsRequest(arg0 *workdocs.Describ
 	return ret0, ret1
 }
 
-// DescribeDocumentVersionsRequest indicates an expected call of DescribeDocumentVersionsRequest.
+// DescribeDocumentVersionsRequest indicates an expected call of DescribeDocumentVersionsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentVersionsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeDocumentVersionsRequest), arg0)
 }
 
-// DescribeDocumentVersionsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeDocumentVersionsWithContext(arg0 context.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 ...request.Option) (*workdocs.DescribeDocumentVersionsOutput, error) {
+// DescribeDocumentVersionsWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeDocumentVersionsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 ...request.Option) (*workdocs.DescribeDocumentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1112,14 +1111,14 @@ func (m *MockWorkDocsAPI) DescribeDocumentVersionsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// DescribeDocumentVersionsWithContext indicates an expected call of DescribeDocumentVersionsWithContext.
+// DescribeDocumentVersionsWithContext indicates an expected call of DescribeDocumentVersionsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentVersionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeDocumentVersionsWithContext), varargs...)
 }
 
-// DescribeFolderContents mocks base method.
+// DescribeFolderContents mocks base method
 func (m *MockWorkDocsAPI) DescribeFolderContents(arg0 *workdocs.DescribeFolderContentsInput) (*workdocs.DescribeFolderContentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeFolderContents", arg0)
@@ -1128,13 +1127,13 @@ func (m *MockWorkDocsAPI) DescribeFolderContents(arg0 *workdocs.DescribeFolderCo
 	return ret0, ret1
 }
 
-// DescribeFolderContents indicates an expected call of DescribeFolderContents.
+// DescribeFolderContents indicates an expected call of DescribeFolderContents
 func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderContents", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeFolderContents), arg0)
 }
 
-// DescribeFolderContentsPages mocks base method.
+// DescribeFolderContentsPages mocks base method
 func (m *MockWorkDocsAPI) DescribeFolderContentsPages(arg0 *workdocs.DescribeFolderContentsInput, arg1 func(*workdocs.DescribeFolderContentsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeFolderContentsPages", arg0, arg1)
@@ -1142,14 +1141,14 @@ func (m *MockWorkDocsAPI) DescribeFolderContentsPages(arg0 *workdocs.DescribeFol
 	return ret0
 }
 
-// DescribeFolderContentsPages indicates an expected call of DescribeFolderContentsPages.
+// DescribeFolderContentsPages indicates an expected call of DescribeFolderContentsPages
 func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContentsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderContentsPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeFolderContentsPages), arg0, arg1)
 }
 
-// DescribeFolderContentsPagesWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeFolderContentsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 func(*workdocs.DescribeFolderContentsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeFolderContentsPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeFolderContentsPagesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 func(*workdocs.DescribeFolderContentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1160,14 +1159,14 @@ func (m *MockWorkDocsAPI) DescribeFolderContentsPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// DescribeFolderContentsPagesWithContext indicates an expected call of DescribeFolderContentsPagesWithContext.
+// DescribeFolderContentsPagesWithContext indicates an expected call of DescribeFolderContentsPagesWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderContentsPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeFolderContentsPagesWithContext), varargs...)
 }
 
-// DescribeFolderContentsRequest mocks base method.
+// DescribeFolderContentsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeFolderContentsRequest(arg0 *workdocs.DescribeFolderContentsInput) (*request.Request, *workdocs.DescribeFolderContentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeFolderContentsRequest", arg0)
@@ -1176,14 +1175,14 @@ func (m *MockWorkDocsAPI) DescribeFolderContentsRequest(arg0 *workdocs.DescribeF
 	return ret0, ret1
 }
 
-// DescribeFolderContentsRequest indicates an expected call of DescribeFolderContentsRequest.
+// DescribeFolderContentsRequest indicates an expected call of DescribeFolderContentsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderContentsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeFolderContentsRequest), arg0)
 }
 
-// DescribeFolderContentsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeFolderContentsWithContext(arg0 context.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 ...request.Option) (*workdocs.DescribeFolderContentsOutput, error) {
+// DescribeFolderContentsWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeFolderContentsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 ...request.Option) (*workdocs.DescribeFolderContentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1195,14 +1194,14 @@ func (m *MockWorkDocsAPI) DescribeFolderContentsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DescribeFolderContentsWithContext indicates an expected call of DescribeFolderContentsWithContext.
+// DescribeFolderContentsWithContext indicates an expected call of DescribeFolderContentsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderContentsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeFolderContentsWithContext), varargs...)
 }
 
-// DescribeGroups mocks base method.
+// DescribeGroups mocks base method
 func (m *MockWorkDocsAPI) DescribeGroups(arg0 *workdocs.DescribeGroupsInput) (*workdocs.DescribeGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeGroups", arg0)
@@ -1211,13 +1210,13 @@ func (m *MockWorkDocsAPI) DescribeGroups(arg0 *workdocs.DescribeGroupsInput) (*w
 	return ret0, ret1
 }
 
-// DescribeGroups indicates an expected call of DescribeGroups.
+// DescribeGroups indicates an expected call of DescribeGroups
 func (mr *MockWorkDocsAPIMockRecorder) DescribeGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroups", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeGroups), arg0)
 }
 
-// DescribeGroupsRequest mocks base method.
+// DescribeGroupsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeGroupsRequest(arg0 *workdocs.DescribeGroupsInput) (*request.Request, *workdocs.DescribeGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeGroupsRequest", arg0)
@@ -1226,14 +1225,14 @@ func (m *MockWorkDocsAPI) DescribeGroupsRequest(arg0 *workdocs.DescribeGroupsInp
 	return ret0, ret1
 }
 
-// DescribeGroupsRequest indicates an expected call of DescribeGroupsRequest.
+// DescribeGroupsRequest indicates an expected call of DescribeGroupsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeGroupsRequest), arg0)
 }
 
-// DescribeGroupsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeGroupsWithContext(arg0 context.Context, arg1 *workdocs.DescribeGroupsInput, arg2 ...request.Option) (*workdocs.DescribeGroupsOutput, error) {
+// DescribeGroupsWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeGroupsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeGroupsInput, arg2 ...request.Option) (*workdocs.DescribeGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1245,14 +1244,14 @@ func (m *MockWorkDocsAPI) DescribeGroupsWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DescribeGroupsWithContext indicates an expected call of DescribeGroupsWithContext.
+// DescribeGroupsWithContext indicates an expected call of DescribeGroupsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeGroupsWithContext), varargs...)
 }
 
-// DescribeNotificationSubscriptions mocks base method.
+// DescribeNotificationSubscriptions mocks base method
 func (m *MockWorkDocsAPI) DescribeNotificationSubscriptions(arg0 *workdocs.DescribeNotificationSubscriptionsInput) (*workdocs.DescribeNotificationSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeNotificationSubscriptions", arg0)
@@ -1261,13 +1260,13 @@ func (m *MockWorkDocsAPI) DescribeNotificationSubscriptions(arg0 *workdocs.Descr
 	return ret0, ret1
 }
 
-// DescribeNotificationSubscriptions indicates an expected call of DescribeNotificationSubscriptions.
+// DescribeNotificationSubscriptions indicates an expected call of DescribeNotificationSubscriptions
 func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotificationSubscriptions", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeNotificationSubscriptions), arg0)
 }
 
-// DescribeNotificationSubscriptionsRequest mocks base method.
+// DescribeNotificationSubscriptionsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsRequest(arg0 *workdocs.DescribeNotificationSubscriptionsInput) (*request.Request, *workdocs.DescribeNotificationSubscriptionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeNotificationSubscriptionsRequest", arg0)
@@ -1276,14 +1275,14 @@ func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsRequest(arg0 *workdoc
 	return ret0, ret1
 }
 
-// DescribeNotificationSubscriptionsRequest indicates an expected call of DescribeNotificationSubscriptionsRequest.
+// DescribeNotificationSubscriptionsRequest indicates an expected call of DescribeNotificationSubscriptionsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotificationSubscriptionsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeNotificationSubscriptionsRequest), arg0)
 }
 
-// DescribeNotificationSubscriptionsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsWithContext(arg0 context.Context, arg1 *workdocs.DescribeNotificationSubscriptionsInput, arg2 ...request.Option) (*workdocs.DescribeNotificationSubscriptionsOutput, error) {
+// DescribeNotificationSubscriptionsWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeNotificationSubscriptionsInput, arg2 ...request.Option) (*workdocs.DescribeNotificationSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1295,14 +1294,14 @@ func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsWithContext(arg0 cont
 	return ret0, ret1
 }
 
-// DescribeNotificationSubscriptionsWithContext indicates an expected call of DescribeNotificationSubscriptionsWithContext.
+// DescribeNotificationSubscriptionsWithContext indicates an expected call of DescribeNotificationSubscriptionsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotificationSubscriptionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeNotificationSubscriptionsWithContext), varargs...)
 }
 
-// DescribeResourcePermissions mocks base method.
+// DescribeResourcePermissions mocks base method
 func (m *MockWorkDocsAPI) DescribeResourcePermissions(arg0 *workdocs.DescribeResourcePermissionsInput) (*workdocs.DescribeResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeResourcePermissions", arg0)
@@ -1311,13 +1310,13 @@ func (m *MockWorkDocsAPI) DescribeResourcePermissions(arg0 *workdocs.DescribeRes
 	return ret0, ret1
 }
 
-// DescribeResourcePermissions indicates an expected call of DescribeResourcePermissions.
+// DescribeResourcePermissions indicates an expected call of DescribeResourcePermissions
 func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePermissions", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeResourcePermissions), arg0)
 }
 
-// DescribeResourcePermissionsRequest mocks base method.
+// DescribeResourcePermissionsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeResourcePermissionsRequest(arg0 *workdocs.DescribeResourcePermissionsInput) (*request.Request, *workdocs.DescribeResourcePermissionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeResourcePermissionsRequest", arg0)
@@ -1326,14 +1325,14 @@ func (m *MockWorkDocsAPI) DescribeResourcePermissionsRequest(arg0 *workdocs.Desc
 	return ret0, ret1
 }
 
-// DescribeResourcePermissionsRequest indicates an expected call of DescribeResourcePermissionsRequest.
+// DescribeResourcePermissionsRequest indicates an expected call of DescribeResourcePermissionsRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePermissionsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeResourcePermissionsRequest), arg0)
 }
 
-// DescribeResourcePermissionsWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeResourcePermissionsWithContext(arg0 context.Context, arg1 *workdocs.DescribeResourcePermissionsInput, arg2 ...request.Option) (*workdocs.DescribeResourcePermissionsOutput, error) {
+// DescribeResourcePermissionsWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeResourcePermissionsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeResourcePermissionsInput, arg2 ...request.Option) (*workdocs.DescribeResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1345,14 +1344,14 @@ func (m *MockWorkDocsAPI) DescribeResourcePermissionsWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DescribeResourcePermissionsWithContext indicates an expected call of DescribeResourcePermissionsWithContext.
+// DescribeResourcePermissionsWithContext indicates an expected call of DescribeResourcePermissionsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePermissionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeResourcePermissionsWithContext), varargs...)
 }
 
-// DescribeRootFolders mocks base method.
+// DescribeRootFolders mocks base method
 func (m *MockWorkDocsAPI) DescribeRootFolders(arg0 *workdocs.DescribeRootFoldersInput) (*workdocs.DescribeRootFoldersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeRootFolders", arg0)
@@ -1361,13 +1360,13 @@ func (m *MockWorkDocsAPI) DescribeRootFolders(arg0 *workdocs.DescribeRootFolders
 	return ret0, ret1
 }
 
-// DescribeRootFolders indicates an expected call of DescribeRootFolders.
+// DescribeRootFolders indicates an expected call of DescribeRootFolders
 func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFolders(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRootFolders", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeRootFolders), arg0)
 }
 
-// DescribeRootFoldersRequest mocks base method.
+// DescribeRootFoldersRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeRootFoldersRequest(arg0 *workdocs.DescribeRootFoldersInput) (*request.Request, *workdocs.DescribeRootFoldersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeRootFoldersRequest", arg0)
@@ -1376,14 +1375,14 @@ func (m *MockWorkDocsAPI) DescribeRootFoldersRequest(arg0 *workdocs.DescribeRoot
 	return ret0, ret1
 }
 
-// DescribeRootFoldersRequest indicates an expected call of DescribeRootFoldersRequest.
+// DescribeRootFoldersRequest indicates an expected call of DescribeRootFoldersRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFoldersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRootFoldersRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeRootFoldersRequest), arg0)
 }
 
-// DescribeRootFoldersWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeRootFoldersWithContext(arg0 context.Context, arg1 *workdocs.DescribeRootFoldersInput, arg2 ...request.Option) (*workdocs.DescribeRootFoldersOutput, error) {
+// DescribeRootFoldersWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeRootFoldersWithContext(arg0 aws.Context, arg1 *workdocs.DescribeRootFoldersInput, arg2 ...request.Option) (*workdocs.DescribeRootFoldersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1395,14 +1394,14 @@ func (m *MockWorkDocsAPI) DescribeRootFoldersWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DescribeRootFoldersWithContext indicates an expected call of DescribeRootFoldersWithContext.
+// DescribeRootFoldersWithContext indicates an expected call of DescribeRootFoldersWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFoldersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRootFoldersWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeRootFoldersWithContext), varargs...)
 }
 
-// DescribeUsers mocks base method.
+// DescribeUsers mocks base method
 func (m *MockWorkDocsAPI) DescribeUsers(arg0 *workdocs.DescribeUsersInput) (*workdocs.DescribeUsersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUsers", arg0)
@@ -1411,13 +1410,13 @@ func (m *MockWorkDocsAPI) DescribeUsers(arg0 *workdocs.DescribeUsersInput) (*wor
 	return ret0, ret1
 }
 
-// DescribeUsers indicates an expected call of DescribeUsers.
+// DescribeUsers indicates an expected call of DescribeUsers
 func (mr *MockWorkDocsAPIMockRecorder) DescribeUsers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsers", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeUsers), arg0)
 }
 
-// DescribeUsersPages mocks base method.
+// DescribeUsersPages mocks base method
 func (m *MockWorkDocsAPI) DescribeUsersPages(arg0 *workdocs.DescribeUsersInput, arg1 func(*workdocs.DescribeUsersOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUsersPages", arg0, arg1)
@@ -1425,14 +1424,14 @@ func (m *MockWorkDocsAPI) DescribeUsersPages(arg0 *workdocs.DescribeUsersInput, 
 	return ret0
 }
 
-// DescribeUsersPages indicates an expected call of DescribeUsersPages.
+// DescribeUsersPages indicates an expected call of DescribeUsersPages
 func (mr *MockWorkDocsAPIMockRecorder) DescribeUsersPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeUsersPages), arg0, arg1)
 }
 
-// DescribeUsersPagesWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeUsersPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeUsersInput, arg2 func(*workdocs.DescribeUsersOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeUsersPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeUsersPagesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeUsersInput, arg2 func(*workdocs.DescribeUsersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1443,14 +1442,14 @@ func (m *MockWorkDocsAPI) DescribeUsersPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// DescribeUsersPagesWithContext indicates an expected call of DescribeUsersPagesWithContext.
+// DescribeUsersPagesWithContext indicates an expected call of DescribeUsersPagesWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeUsersPagesWithContext), varargs...)
 }
 
-// DescribeUsersRequest mocks base method.
+// DescribeUsersRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeUsersRequest(arg0 *workdocs.DescribeUsersInput) (*request.Request, *workdocs.DescribeUsersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeUsersRequest", arg0)
@@ -1459,14 +1458,14 @@ func (m *MockWorkDocsAPI) DescribeUsersRequest(arg0 *workdocs.DescribeUsersInput
 	return ret0, ret1
 }
 
-// DescribeUsersRequest indicates an expected call of DescribeUsersRequest.
+// DescribeUsersRequest indicates an expected call of DescribeUsersRequest
 func (mr *MockWorkDocsAPIMockRecorder) DescribeUsersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeUsersRequest), arg0)
 }
 
-// DescribeUsersWithContext mocks base method.
-func (m *MockWorkDocsAPI) DescribeUsersWithContext(arg0 context.Context, arg1 *workdocs.DescribeUsersInput, arg2 ...request.Option) (*workdocs.DescribeUsersOutput, error) {
+// DescribeUsersWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeUsersWithContext(arg0 aws.Context, arg1 *workdocs.DescribeUsersInput, arg2 ...request.Option) (*workdocs.DescribeUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1478,14 +1477,14 @@ func (m *MockWorkDocsAPI) DescribeUsersWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// DescribeUsersWithContext indicates an expected call of DescribeUsersWithContext.
+// DescribeUsersWithContext indicates an expected call of DescribeUsersWithContext
 func (mr *MockWorkDocsAPIMockRecorder) DescribeUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeUsersWithContext), varargs...)
 }
 
-// GetCurrentUser mocks base method.
+// GetCurrentUser mocks base method
 func (m *MockWorkDocsAPI) GetCurrentUser(arg0 *workdocs.GetCurrentUserInput) (*workdocs.GetCurrentUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetCurrentUser", arg0)
@@ -1494,13 +1493,13 @@ func (m *MockWorkDocsAPI) GetCurrentUser(arg0 *workdocs.GetCurrentUserInput) (*w
 	return ret0, ret1
 }
 
-// GetCurrentUser indicates an expected call of GetCurrentUser.
+// GetCurrentUser indicates an expected call of GetCurrentUser
 func (mr *MockWorkDocsAPIMockRecorder) GetCurrentUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUser", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetCurrentUser), arg0)
 }
 
-// GetCurrentUserRequest mocks base method.
+// GetCurrentUserRequest mocks base method
 func (m *MockWorkDocsAPI) GetCurrentUserRequest(arg0 *workdocs.GetCurrentUserInput) (*request.Request, *workdocs.GetCurrentUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetCurrentUserRequest", arg0)
@@ -1509,14 +1508,14 @@ func (m *MockWorkDocsAPI) GetCurrentUserRequest(arg0 *workdocs.GetCurrentUserInp
 	return ret0, ret1
 }
 
-// GetCurrentUserRequest indicates an expected call of GetCurrentUserRequest.
+// GetCurrentUserRequest indicates an expected call of GetCurrentUserRequest
 func (mr *MockWorkDocsAPIMockRecorder) GetCurrentUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetCurrentUserRequest), arg0)
 }
 
-// GetCurrentUserWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetCurrentUserWithContext(arg0 context.Context, arg1 *workdocs.GetCurrentUserInput, arg2 ...request.Option) (*workdocs.GetCurrentUserOutput, error) {
+// GetCurrentUserWithContext mocks base method
+func (m *MockWorkDocsAPI) GetCurrentUserWithContext(arg0 aws.Context, arg1 *workdocs.GetCurrentUserInput, arg2 ...request.Option) (*workdocs.GetCurrentUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1528,14 +1527,14 @@ func (m *MockWorkDocsAPI) GetCurrentUserWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// GetCurrentUserWithContext indicates an expected call of GetCurrentUserWithContext.
+// GetCurrentUserWithContext indicates an expected call of GetCurrentUserWithContext
 func (mr *MockWorkDocsAPIMockRecorder) GetCurrentUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetCurrentUserWithContext), varargs...)
 }
 
-// GetDocument mocks base method.
+// GetDocument mocks base method
 func (m *MockWorkDocsAPI) GetDocument(arg0 *workdocs.GetDocumentInput) (*workdocs.GetDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocument", arg0)
@@ -1544,13 +1543,13 @@ func (m *MockWorkDocsAPI) GetDocument(arg0 *workdocs.GetDocumentInput) (*workdoc
 	return ret0, ret1
 }
 
-// GetDocument indicates an expected call of GetDocument.
+// GetDocument indicates an expected call of GetDocument
 func (mr *MockWorkDocsAPIMockRecorder) GetDocument(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocument", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocument), arg0)
 }
 
-// GetDocumentPath mocks base method.
+// GetDocumentPath mocks base method
 func (m *MockWorkDocsAPI) GetDocumentPath(arg0 *workdocs.GetDocumentPathInput) (*workdocs.GetDocumentPathOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentPath", arg0)
@@ -1559,13 +1558,13 @@ func (m *MockWorkDocsAPI) GetDocumentPath(arg0 *workdocs.GetDocumentPathInput) (
 	return ret0, ret1
 }
 
-// GetDocumentPath indicates an expected call of GetDocumentPath.
+// GetDocumentPath indicates an expected call of GetDocumentPath
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentPath(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentPath", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentPath), arg0)
 }
 
-// GetDocumentPathRequest mocks base method.
+// GetDocumentPathRequest mocks base method
 func (m *MockWorkDocsAPI) GetDocumentPathRequest(arg0 *workdocs.GetDocumentPathInput) (*request.Request, *workdocs.GetDocumentPathOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentPathRequest", arg0)
@@ -1574,14 +1573,14 @@ func (m *MockWorkDocsAPI) GetDocumentPathRequest(arg0 *workdocs.GetDocumentPathI
 	return ret0, ret1
 }
 
-// GetDocumentPathRequest indicates an expected call of GetDocumentPathRequest.
+// GetDocumentPathRequest indicates an expected call of GetDocumentPathRequest
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentPathRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentPathRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentPathRequest), arg0)
 }
 
-// GetDocumentPathWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetDocumentPathWithContext(arg0 context.Context, arg1 *workdocs.GetDocumentPathInput, arg2 ...request.Option) (*workdocs.GetDocumentPathOutput, error) {
+// GetDocumentPathWithContext mocks base method
+func (m *MockWorkDocsAPI) GetDocumentPathWithContext(arg0 aws.Context, arg1 *workdocs.GetDocumentPathInput, arg2 ...request.Option) (*workdocs.GetDocumentPathOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1593,14 +1592,14 @@ func (m *MockWorkDocsAPI) GetDocumentPathWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetDocumentPathWithContext indicates an expected call of GetDocumentPathWithContext.
+// GetDocumentPathWithContext indicates an expected call of GetDocumentPathWithContext
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentPathWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentPathWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentPathWithContext), varargs...)
 }
 
-// GetDocumentRequest mocks base method.
+// GetDocumentRequest mocks base method
 func (m *MockWorkDocsAPI) GetDocumentRequest(arg0 *workdocs.GetDocumentInput) (*request.Request, *workdocs.GetDocumentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentRequest", arg0)
@@ -1609,13 +1608,13 @@ func (m *MockWorkDocsAPI) GetDocumentRequest(arg0 *workdocs.GetDocumentInput) (*
 	return ret0, ret1
 }
 
-// GetDocumentRequest indicates an expected call of GetDocumentRequest.
+// GetDocumentRequest indicates an expected call of GetDocumentRequest
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentRequest), arg0)
 }
 
-// GetDocumentVersion mocks base method.
+// GetDocumentVersion mocks base method
 func (m *MockWorkDocsAPI) GetDocumentVersion(arg0 *workdocs.GetDocumentVersionInput) (*workdocs.GetDocumentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentVersion", arg0)
@@ -1624,13 +1623,13 @@ func (m *MockWorkDocsAPI) GetDocumentVersion(arg0 *workdocs.GetDocumentVersionIn
 	return ret0, ret1
 }
 
-// GetDocumentVersion indicates an expected call of GetDocumentVersion.
+// GetDocumentVersion indicates an expected call of GetDocumentVersion
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentVersion", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentVersion), arg0)
 }
 
-// GetDocumentVersionRequest mocks base method.
+// GetDocumentVersionRequest mocks base method
 func (m *MockWorkDocsAPI) GetDocumentVersionRequest(arg0 *workdocs.GetDocumentVersionInput) (*request.Request, *workdocs.GetDocumentVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentVersionRequest", arg0)
@@ -1639,14 +1638,14 @@ func (m *MockWorkDocsAPI) GetDocumentVersionRequest(arg0 *workdocs.GetDocumentVe
 	return ret0, ret1
 }
 
-// GetDocumentVersionRequest indicates an expected call of GetDocumentVersionRequest.
+// GetDocumentVersionRequest indicates an expected call of GetDocumentVersionRequest
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentVersionRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentVersionRequest), arg0)
 }
 
-// GetDocumentVersionWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetDocumentVersionWithContext(arg0 context.Context, arg1 *workdocs.GetDocumentVersionInput, arg2 ...request.Option) (*workdocs.GetDocumentVersionOutput, error) {
+// GetDocumentVersionWithContext mocks base method
+func (m *MockWorkDocsAPI) GetDocumentVersionWithContext(arg0 aws.Context, arg1 *workdocs.GetDocumentVersionInput, arg2 ...request.Option) (*workdocs.GetDocumentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1658,15 +1657,15 @@ func (m *MockWorkDocsAPI) GetDocumentVersionWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetDocumentVersionWithContext indicates an expected call of GetDocumentVersionWithContext.
+// GetDocumentVersionWithContext indicates an expected call of GetDocumentVersionWithContext
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentVersionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentVersionWithContext), varargs...)
 }
 
-// GetDocumentWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetDocumentWithContext(arg0 context.Context, arg1 *workdocs.GetDocumentInput, arg2 ...request.Option) (*workdocs.GetDocumentOutput, error) {
+// GetDocumentWithContext mocks base method
+func (m *MockWorkDocsAPI) GetDocumentWithContext(arg0 aws.Context, arg1 *workdocs.GetDocumentInput, arg2 ...request.Option) (*workdocs.GetDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1678,14 +1677,14 @@ func (m *MockWorkDocsAPI) GetDocumentWithContext(arg0 context.Context, arg1 *wor
 	return ret0, ret1
 }
 
-// GetDocumentWithContext indicates an expected call of GetDocumentWithContext.
+// GetDocumentWithContext indicates an expected call of GetDocumentWithContext
 func (mr *MockWorkDocsAPIMockRecorder) GetDocumentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetDocumentWithContext), varargs...)
 }
 
-// GetFolder mocks base method.
+// GetFolder mocks base method
 func (m *MockWorkDocsAPI) GetFolder(arg0 *workdocs.GetFolderInput) (*workdocs.GetFolderOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFolder", arg0)
@@ -1694,13 +1693,13 @@ func (m *MockWorkDocsAPI) GetFolder(arg0 *workdocs.GetFolderInput) (*workdocs.Ge
 	return ret0, ret1
 }
 
-// GetFolder indicates an expected call of GetFolder.
+// GetFolder indicates an expected call of GetFolder
 func (mr *MockWorkDocsAPIMockRecorder) GetFolder(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolder", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolder), arg0)
 }
 
-// GetFolderPath mocks base method.
+// GetFolderPath mocks base method
 func (m *MockWorkDocsAPI) GetFolderPath(arg0 *workdocs.GetFolderPathInput) (*workdocs.GetFolderPathOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFolderPath", arg0)
@@ -1709,13 +1708,13 @@ func (m *MockWorkDocsAPI) GetFolderPath(arg0 *workdocs.GetFolderPathInput) (*wor
 	return ret0, ret1
 }
 
-// GetFolderPath indicates an expected call of GetFolderPath.
+// GetFolderPath indicates an expected call of GetFolderPath
 func (mr *MockWorkDocsAPIMockRecorder) GetFolderPath(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderPath", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolderPath), arg0)
 }
 
-// GetFolderPathRequest mocks base method.
+// GetFolderPathRequest mocks base method
 func (m *MockWorkDocsAPI) GetFolderPathRequest(arg0 *workdocs.GetFolderPathInput) (*request.Request, *workdocs.GetFolderPathOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFolderPathRequest", arg0)
@@ -1724,14 +1723,14 @@ func (m *MockWorkDocsAPI) GetFolderPathRequest(arg0 *workdocs.GetFolderPathInput
 	return ret0, ret1
 }
 
-// GetFolderPathRequest indicates an expected call of GetFolderPathRequest.
+// GetFolderPathRequest indicates an expected call of GetFolderPathRequest
 func (mr *MockWorkDocsAPIMockRecorder) GetFolderPathRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderPathRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolderPathRequest), arg0)
 }
 
-// GetFolderPathWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetFolderPathWithContext(arg0 context.Context, arg1 *workdocs.GetFolderPathInput, arg2 ...request.Option) (*workdocs.GetFolderPathOutput, error) {
+// GetFolderPathWithContext mocks base method
+func (m *MockWorkDocsAPI) GetFolderPathWithContext(arg0 aws.Context, arg1 *workdocs.GetFolderPathInput, arg2 ...request.Option) (*workdocs.GetFolderPathOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1743,14 +1742,14 @@ func (m *MockWorkDocsAPI) GetFolderPathWithContext(arg0 context.Context, arg1 *w
 	return ret0, ret1
 }
 
-// GetFolderPathWithContext indicates an expected call of GetFolderPathWithContext.
+// GetFolderPathWithContext indicates an expected call of GetFolderPathWithContext
 func (mr *MockWorkDocsAPIMockRecorder) GetFolderPathWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderPathWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolderPathWithContext), varargs...)
 }
 
-// GetFolderRequest mocks base method.
+// GetFolderRequest mocks base method
 func (m *MockWorkDocsAPI) GetFolderRequest(arg0 *workdocs.GetFolderInput) (*request.Request, *workdocs.GetFolderOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFolderRequest", arg0)
@@ -1759,14 +1758,14 @@ func (m *MockWorkDocsAPI) GetFolderRequest(arg0 *workdocs.GetFolderInput) (*requ
 	return ret0, ret1
 }
 
-// GetFolderRequest indicates an expected call of GetFolderRequest.
+// GetFolderRequest indicates an expected call of GetFolderRequest
 func (mr *MockWorkDocsAPIMockRecorder) GetFolderRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolderRequest), arg0)
 }
 
-// GetFolderWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetFolderWithContext(arg0 context.Context, arg1 *workdocs.GetFolderInput, arg2 ...request.Option) (*workdocs.GetFolderOutput, error) {
+// GetFolderWithContext mocks base method
+func (m *MockWorkDocsAPI) GetFolderWithContext(arg0 aws.Context, arg1 *workdocs.GetFolderInput, arg2 ...request.Option) (*workdocs.GetFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1778,64 +1777,14 @@ func (m *MockWorkDocsAPI) GetFolderWithContext(arg0 context.Context, arg1 *workd
 	return ret0, ret1
 }
 
-// GetFolderWithContext indicates an expected call of GetFolderWithContext.
+// GetFolderWithContext indicates an expected call of GetFolderWithContext
 func (mr *MockWorkDocsAPIMockRecorder) GetFolderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolderWithContext), varargs...)
 }
 
-// GetResources mocks base method.
-func (m *MockWorkDocsAPI) GetResources(arg0 *workdocs.GetResourcesInput) (*workdocs.GetResourcesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetResources", arg0)
-	ret0, _ := ret[0].(*workdocs.GetResourcesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetResources indicates an expected call of GetResources.
-func (mr *MockWorkDocsAPIMockRecorder) GetResources(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResources", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetResources), arg0)
-}
-
-// GetResourcesRequest mocks base method.
-func (m *MockWorkDocsAPI) GetResourcesRequest(arg0 *workdocs.GetResourcesInput) (*request.Request, *workdocs.GetResourcesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetResourcesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*workdocs.GetResourcesOutput)
-	return ret0, ret1
-}
-
-// GetResourcesRequest indicates an expected call of GetResourcesRequest.
-func (mr *MockWorkDocsAPIMockRecorder) GetResourcesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetResourcesRequest), arg0)
-}
-
-// GetResourcesWithContext mocks base method.
-func (m *MockWorkDocsAPI) GetResourcesWithContext(arg0 context.Context, arg1 *workdocs.GetResourcesInput, arg2 ...request.Option) (*workdocs.GetResourcesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetResourcesWithContext", varargs...)
-	ret0, _ := ret[0].(*workdocs.GetResourcesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetResourcesWithContext indicates an expected call of GetResourcesWithContext.
-func (mr *MockWorkDocsAPIMockRecorder) GetResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetResourcesWithContext), varargs...)
-}
-
-// InitiateDocumentVersionUpload mocks base method.
+// InitiateDocumentVersionUpload mocks base method
 func (m *MockWorkDocsAPI) InitiateDocumentVersionUpload(arg0 *workdocs.InitiateDocumentVersionUploadInput) (*workdocs.InitiateDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateDocumentVersionUpload", arg0)
@@ -1844,13 +1793,13 @@ func (m *MockWorkDocsAPI) InitiateDocumentVersionUpload(arg0 *workdocs.InitiateD
 	return ret0, ret1
 }
 
-// InitiateDocumentVersionUpload indicates an expected call of InitiateDocumentVersionUpload.
+// InitiateDocumentVersionUpload indicates an expected call of InitiateDocumentVersionUpload
 func (mr *MockWorkDocsAPIMockRecorder) InitiateDocumentVersionUpload(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateDocumentVersionUpload", reflect.TypeOf((*MockWorkDocsAPI)(nil).InitiateDocumentVersionUpload), arg0)
 }
 
-// InitiateDocumentVersionUploadRequest mocks base method.
+// InitiateDocumentVersionUploadRequest mocks base method
 func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadRequest(arg0 *workdocs.InitiateDocumentVersionUploadInput) (*request.Request, *workdocs.InitiateDocumentVersionUploadOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateDocumentVersionUploadRequest", arg0)
@@ -1859,14 +1808,14 @@ func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadRequest(arg0 *workdocs.In
 	return ret0, ret1
 }
 
-// InitiateDocumentVersionUploadRequest indicates an expected call of InitiateDocumentVersionUploadRequest.
+// InitiateDocumentVersionUploadRequest indicates an expected call of InitiateDocumentVersionUploadRequest
 func (mr *MockWorkDocsAPIMockRecorder) InitiateDocumentVersionUploadRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateDocumentVersionUploadRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).InitiateDocumentVersionUploadRequest), arg0)
 }
 
-// InitiateDocumentVersionUploadWithContext mocks base method.
-func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadWithContext(arg0 context.Context, arg1 *workdocs.InitiateDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.InitiateDocumentVersionUploadOutput, error) {
+// InitiateDocumentVersionUploadWithContext mocks base method
+func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadWithContext(arg0 aws.Context, arg1 *workdocs.InitiateDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.InitiateDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1878,14 +1827,14 @@ func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// InitiateDocumentVersionUploadWithContext indicates an expected call of InitiateDocumentVersionUploadWithContext.
+// InitiateDocumentVersionUploadWithContext indicates an expected call of InitiateDocumentVersionUploadWithContext
 func (mr *MockWorkDocsAPIMockRecorder) InitiateDocumentVersionUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateDocumentVersionUploadWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).InitiateDocumentVersionUploadWithContext), varargs...)
 }
 
-// RemoveAllResourcePermissions mocks base method.
+// RemoveAllResourcePermissions mocks base method
 func (m *MockWorkDocsAPI) RemoveAllResourcePermissions(arg0 *workdocs.RemoveAllResourcePermissionsInput) (*workdocs.RemoveAllResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveAllResourcePermissions", arg0)
@@ -1894,13 +1843,13 @@ func (m *MockWorkDocsAPI) RemoveAllResourcePermissions(arg0 *workdocs.RemoveAllR
 	return ret0, ret1
 }
 
-// RemoveAllResourcePermissions indicates an expected call of RemoveAllResourcePermissions.
+// RemoveAllResourcePermissions indicates an expected call of RemoveAllResourcePermissions
 func (mr *MockWorkDocsAPIMockRecorder) RemoveAllResourcePermissions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAllResourcePermissions", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveAllResourcePermissions), arg0)
 }
 
-// RemoveAllResourcePermissionsRequest mocks base method.
+// RemoveAllResourcePermissionsRequest mocks base method
 func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsRequest(arg0 *workdocs.RemoveAllResourcePermissionsInput) (*request.Request, *workdocs.RemoveAllResourcePermissionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveAllResourcePermissionsRequest", arg0)
@@ -1909,14 +1858,14 @@ func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsRequest(arg0 *workdocs.Rem
 	return ret0, ret1
 }
 
-// RemoveAllResourcePermissionsRequest indicates an expected call of RemoveAllResourcePermissionsRequest.
+// RemoveAllResourcePermissionsRequest indicates an expected call of RemoveAllResourcePermissionsRequest
 func (mr *MockWorkDocsAPIMockRecorder) RemoveAllResourcePermissionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAllResourcePermissionsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveAllResourcePermissionsRequest), arg0)
 }
 
-// RemoveAllResourcePermissionsWithContext mocks base method.
-func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsWithContext(arg0 context.Context, arg1 *workdocs.RemoveAllResourcePermissionsInput, arg2 ...request.Option) (*workdocs.RemoveAllResourcePermissionsOutput, error) {
+// RemoveAllResourcePermissionsWithContext mocks base method
+func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsWithContext(arg0 aws.Context, arg1 *workdocs.RemoveAllResourcePermissionsInput, arg2 ...request.Option) (*workdocs.RemoveAllResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1928,14 +1877,14 @@ func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// RemoveAllResourcePermissionsWithContext indicates an expected call of RemoveAllResourcePermissionsWithContext.
+// RemoveAllResourcePermissionsWithContext indicates an expected call of RemoveAllResourcePermissionsWithContext
 func (mr *MockWorkDocsAPIMockRecorder) RemoveAllResourcePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAllResourcePermissionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveAllResourcePermissionsWithContext), varargs...)
 }
 
-// RemoveResourcePermission mocks base method.
+// RemoveResourcePermission mocks base method
 func (m *MockWorkDocsAPI) RemoveResourcePermission(arg0 *workdocs.RemoveResourcePermissionInput) (*workdocs.RemoveResourcePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveResourcePermission", arg0)
@@ -1944,13 +1893,13 @@ func (m *MockWorkDocsAPI) RemoveResourcePermission(arg0 *workdocs.RemoveResource
 	return ret0, ret1
 }
 
-// RemoveResourcePermission indicates an expected call of RemoveResourcePermission.
+// RemoveResourcePermission indicates an expected call of RemoveResourcePermission
 func (mr *MockWorkDocsAPIMockRecorder) RemoveResourcePermission(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveResourcePermission", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveResourcePermission), arg0)
 }
 
-// RemoveResourcePermissionRequest mocks base method.
+// RemoveResourcePermissionRequest mocks base method
 func (m *MockWorkDocsAPI) RemoveResourcePermissionRequest(arg0 *workdocs.RemoveResourcePermissionInput) (*request.Request, *workdocs.RemoveResourcePermissionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveResourcePermissionRequest", arg0)
@@ -1959,14 +1908,14 @@ func (m *MockWorkDocsAPI) RemoveResourcePermissionRequest(arg0 *workdocs.RemoveR
 	return ret0, ret1
 }
 
-// RemoveResourcePermissionRequest indicates an expected call of RemoveResourcePermissionRequest.
+// RemoveResourcePermissionRequest indicates an expected call of RemoveResourcePermissionRequest
 func (mr *MockWorkDocsAPIMockRecorder) RemoveResourcePermissionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveResourcePermissionRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveResourcePermissionRequest), arg0)
 }
 
-// RemoveResourcePermissionWithContext mocks base method.
-func (m *MockWorkDocsAPI) RemoveResourcePermissionWithContext(arg0 context.Context, arg1 *workdocs.RemoveResourcePermissionInput, arg2 ...request.Option) (*workdocs.RemoveResourcePermissionOutput, error) {
+// RemoveResourcePermissionWithContext mocks base method
+func (m *MockWorkDocsAPI) RemoveResourcePermissionWithContext(arg0 aws.Context, arg1 *workdocs.RemoveResourcePermissionInput, arg2 ...request.Option) (*workdocs.RemoveResourcePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1978,14 +1927,14 @@ func (m *MockWorkDocsAPI) RemoveResourcePermissionWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// RemoveResourcePermissionWithContext indicates an expected call of RemoveResourcePermissionWithContext.
+// RemoveResourcePermissionWithContext indicates an expected call of RemoveResourcePermissionWithContext
 func (mr *MockWorkDocsAPIMockRecorder) RemoveResourcePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveResourcePermissionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveResourcePermissionWithContext), varargs...)
 }
 
-// UpdateDocument mocks base method.
+// UpdateDocument mocks base method
 func (m *MockWorkDocsAPI) UpdateDocument(arg0 *workdocs.UpdateDocumentInput) (*workdocs.UpdateDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocument", arg0)
@@ -1994,13 +1943,13 @@ func (m *MockWorkDocsAPI) UpdateDocument(arg0 *workdocs.UpdateDocumentInput) (*w
 	return ret0, ret1
 }
 
-// UpdateDocument indicates an expected call of UpdateDocument.
+// UpdateDocument indicates an expected call of UpdateDocument
 func (mr *MockWorkDocsAPIMockRecorder) UpdateDocument(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocument", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateDocument), arg0)
 }
 
-// UpdateDocumentRequest mocks base method.
+// UpdateDocumentRequest mocks base method
 func (m *MockWorkDocsAPI) UpdateDocumentRequest(arg0 *workdocs.UpdateDocumentInput) (*request.Request, *workdocs.UpdateDocumentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentRequest", arg0)
@@ -2009,13 +1958,13 @@ func (m *MockWorkDocsAPI) UpdateDocumentRequest(arg0 *workdocs.UpdateDocumentInp
 	return ret0, ret1
 }
 
-// UpdateDocumentRequest indicates an expected call of UpdateDocumentRequest.
+// UpdateDocumentRequest indicates an expected call of UpdateDocumentRequest
 func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateDocumentRequest), arg0)
 }
 
-// UpdateDocumentVersion mocks base method.
+// UpdateDocumentVersion mocks base method
 func (m *MockWorkDocsAPI) UpdateDocumentVersion(arg0 *workdocs.UpdateDocumentVersionInput) (*workdocs.UpdateDocumentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentVersion", arg0)
@@ -2024,13 +1973,13 @@ func (m *MockWorkDocsAPI) UpdateDocumentVersion(arg0 *workdocs.UpdateDocumentVer
 	return ret0, ret1
 }
 
-// UpdateDocumentVersion indicates an expected call of UpdateDocumentVersion.
+// UpdateDocumentVersion indicates an expected call of UpdateDocumentVersion
 func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentVersion", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateDocumentVersion), arg0)
 }
 
-// UpdateDocumentVersionRequest mocks base method.
+// UpdateDocumentVersionRequest mocks base method
 func (m *MockWorkDocsAPI) UpdateDocumentVersionRequest(arg0 *workdocs.UpdateDocumentVersionInput) (*request.Request, *workdocs.UpdateDocumentVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentVersionRequest", arg0)
@@ -2039,14 +1988,14 @@ func (m *MockWorkDocsAPI) UpdateDocumentVersionRequest(arg0 *workdocs.UpdateDocu
 	return ret0, ret1
 }
 
-// UpdateDocumentVersionRequest indicates an expected call of UpdateDocumentVersionRequest.
+// UpdateDocumentVersionRequest indicates an expected call of UpdateDocumentVersionRequest
 func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentVersionRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateDocumentVersionRequest), arg0)
 }
 
-// UpdateDocumentVersionWithContext mocks base method.
-func (m *MockWorkDocsAPI) UpdateDocumentVersionWithContext(arg0 context.Context, arg1 *workdocs.UpdateDocumentVersionInput, arg2 ...request.Option) (*workdocs.UpdateDocumentVersionOutput, error) {
+// UpdateDocumentVersionWithContext mocks base method
+func (m *MockWorkDocsAPI) UpdateDocumentVersionWithContext(arg0 aws.Context, arg1 *workdocs.UpdateDocumentVersionInput, arg2 ...request.Option) (*workdocs.UpdateDocumentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2058,15 +2007,15 @@ func (m *MockWorkDocsAPI) UpdateDocumentVersionWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateDocumentVersionWithContext indicates an expected call of UpdateDocumentVersionWithContext.
+// UpdateDocumentVersionWithContext indicates an expected call of UpdateDocumentVersionWithContext
 func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentVersionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateDocumentVersionWithContext), varargs...)
 }
 
-// UpdateDocumentWithContext mocks base method.
-func (m *MockWorkDocsAPI) UpdateDocumentWithContext(arg0 context.Context, arg1 *workdocs.UpdateDocumentInput, arg2 ...request.Option) (*workdocs.UpdateDocumentOutput, error) {
+// UpdateDocumentWithContext mocks base method
+func (m *MockWorkDocsAPI) UpdateDocumentWithContext(arg0 aws.Context, arg1 *workdocs.UpdateDocumentInput, arg2 ...request.Option) (*workdocs.UpdateDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2078,14 +2027,14 @@ func (m *MockWorkDocsAPI) UpdateDocumentWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// UpdateDocumentWithContext indicates an expected call of UpdateDocumentWithContext.
+// UpdateDocumentWithContext indicates an expected call of UpdateDocumentWithContext
 func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateDocumentWithContext), varargs...)
 }
 
-// UpdateFolder mocks base method.
+// UpdateFolder mocks base method
 func (m *MockWorkDocsAPI) UpdateFolder(arg0 *workdocs.UpdateFolderInput) (*workdocs.UpdateFolderOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFolder", arg0)
@@ -2094,13 +2043,13 @@ func (m *MockWorkDocsAPI) UpdateFolder(arg0 *workdocs.UpdateFolderInput) (*workd
 	return ret0, ret1
 }
 
-// UpdateFolder indicates an expected call of UpdateFolder.
+// UpdateFolder indicates an expected call of UpdateFolder
 func (mr *MockWorkDocsAPIMockRecorder) UpdateFolder(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFolder", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateFolder), arg0)
 }
 
-// UpdateFolderRequest mocks base method.
+// UpdateFolderRequest mocks base method
 func (m *MockWorkDocsAPI) UpdateFolderRequest(arg0 *workdocs.UpdateFolderInput) (*request.Request, *workdocs.UpdateFolderOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFolderRequest", arg0)
@@ -2109,14 +2058,14 @@ func (m *MockWorkDocsAPI) UpdateFolderRequest(arg0 *workdocs.UpdateFolderInput) 
 	return ret0, ret1
 }
 
-// UpdateFolderRequest indicates an expected call of UpdateFolderRequest.
+// UpdateFolderRequest indicates an expected call of UpdateFolderRequest
 func (mr *MockWorkDocsAPIMockRecorder) UpdateFolderRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFolderRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateFolderRequest), arg0)
 }
 
-// UpdateFolderWithContext mocks base method.
-func (m *MockWorkDocsAPI) UpdateFolderWithContext(arg0 context.Context, arg1 *workdocs.UpdateFolderInput, arg2 ...request.Option) (*workdocs.UpdateFolderOutput, error) {
+// UpdateFolderWithContext mocks base method
+func (m *MockWorkDocsAPI) UpdateFolderWithContext(arg0 aws.Context, arg1 *workdocs.UpdateFolderInput, arg2 ...request.Option) (*workdocs.UpdateFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2128,14 +2077,14 @@ func (m *MockWorkDocsAPI) UpdateFolderWithContext(arg0 context.Context, arg1 *wo
 	return ret0, ret1
 }
 
-// UpdateFolderWithContext indicates an expected call of UpdateFolderWithContext.
+// UpdateFolderWithContext indicates an expected call of UpdateFolderWithContext
 func (mr *MockWorkDocsAPIMockRecorder) UpdateFolderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFolderWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateFolderWithContext), varargs...)
 }
 
-// UpdateUser mocks base method.
+// UpdateUser mocks base method
 func (m *MockWorkDocsAPI) UpdateUser(arg0 *workdocs.UpdateUserInput) (*workdocs.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUser", arg0)
@@ -2144,13 +2093,13 @@ func (m *MockWorkDocsAPI) UpdateUser(arg0 *workdocs.UpdateUserInput) (*workdocs.
 	return ret0, ret1
 }
 
-// UpdateUser indicates an expected call of UpdateUser.
+// UpdateUser indicates an expected call of UpdateUser
 func (mr *MockWorkDocsAPIMockRecorder) UpdateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUser", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateUser), arg0)
 }
 
-// UpdateUserRequest mocks base method.
+// UpdateUserRequest mocks base method
 func (m *MockWorkDocsAPI) UpdateUserRequest(arg0 *workdocs.UpdateUserInput) (*request.Request, *workdocs.UpdateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUserRequest", arg0)
@@ -2159,14 +2108,14 @@ func (m *MockWorkDocsAPI) UpdateUserRequest(arg0 *workdocs.UpdateUserInput) (*re
 	return ret0, ret1
 }
 
-// UpdateUserRequest indicates an expected call of UpdateUserRequest.
+// UpdateUserRequest indicates an expected call of UpdateUserRequest
 func (mr *MockWorkDocsAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).UpdateUserRequest), arg0)
 }
 
-// UpdateUserWithContext mocks base method.
-func (m *MockWorkDocsAPI) UpdateUserWithContext(arg0 context.Context, arg1 *workdocs.UpdateUserInput, arg2 ...request.Option) (*workdocs.UpdateUserOutput, error) {
+// UpdateUserWithContext mocks base method
+func (m *MockWorkDocsAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *workdocs.UpdateUserInput, arg2 ...request.Option) (*workdocs.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2178,7 +2127,7 @@ func (m *MockWorkDocsAPI) UpdateUserWithContext(arg0 context.Context, arg1 *work
 	return ret0, ret1
 }
 
-// UpdateUserWithContext indicates an expected call of UpdateUserWithContext.
+// UpdateUserWithContext indicates an expected call of UpdateUserWithContext
 func (mr *MockWorkDocsAPIMockRecorder) UpdateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

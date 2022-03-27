@@ -5,38 +5,37 @@
 package marketplacecommerceanalyticsmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	marketplacecommerceanalytics "github.com/aws/aws-sdk-go/service/marketplacecommerceanalytics"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMarketplaceCommerceAnalyticsAPI is a mock of MarketplaceCommerceAnalyticsAPI interface.
+// MockMarketplaceCommerceAnalyticsAPI is a mock of MarketplaceCommerceAnalyticsAPI interface
 type MockMarketplaceCommerceAnalyticsAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMarketplaceCommerceAnalyticsAPIMockRecorder
 }
 
-// MockMarketplaceCommerceAnalyticsAPIMockRecorder is the mock recorder for MockMarketplaceCommerceAnalyticsAPI.
+// MockMarketplaceCommerceAnalyticsAPIMockRecorder is the mock recorder for MockMarketplaceCommerceAnalyticsAPI
 type MockMarketplaceCommerceAnalyticsAPIMockRecorder struct {
 	mock *MockMarketplaceCommerceAnalyticsAPI
 }
 
-// NewMockMarketplaceCommerceAnalyticsAPI creates a new mock instance.
+// NewMockMarketplaceCommerceAnalyticsAPI creates a new mock instance
 func NewMockMarketplaceCommerceAnalyticsAPI(ctrl *gomock.Controller) *MockMarketplaceCommerceAnalyticsAPI {
 	mock := &MockMarketplaceCommerceAnalyticsAPI{ctrl: ctrl}
 	mock.recorder = &MockMarketplaceCommerceAnalyticsAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMarketplaceCommerceAnalyticsAPI) EXPECT() *MockMarketplaceCommerceAnalyticsAPIMockRecorder {
 	return m.recorder
 }
 
-// GenerateDataSet mocks base method.
+// GenerateDataSet mocks base method
 func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSet(arg0 *marketplacecommerceanalytics.GenerateDataSetInput) (*marketplacecommerceanalytics.GenerateDataSetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GenerateDataSet", arg0)
@@ -45,13 +44,13 @@ func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSet(arg0 *marketplacec
 	return ret0, ret1
 }
 
-// GenerateDataSet indicates an expected call of GenerateDataSet.
+// GenerateDataSet indicates an expected call of GenerateDataSet
 func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) GenerateDataSet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateDataSet", reflect.TypeOf((*MockMarketplaceCommerceAnalyticsAPI)(nil).GenerateDataSet), arg0)
 }
 
-// GenerateDataSetRequest mocks base method.
+// GenerateDataSetRequest mocks base method
 func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetRequest(arg0 *marketplacecommerceanalytics.GenerateDataSetInput) (*request.Request, *marketplacecommerceanalytics.GenerateDataSetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GenerateDataSetRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetRequest(arg0 *marke
 	return ret0, ret1
 }
 
-// GenerateDataSetRequest indicates an expected call of GenerateDataSetRequest.
+// GenerateDataSetRequest indicates an expected call of GenerateDataSetRequest
 func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) GenerateDataSetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateDataSetRequest", reflect.TypeOf((*MockMarketplaceCommerceAnalyticsAPI)(nil).GenerateDataSetRequest), arg0)
 }
 
-// GenerateDataSetWithContext mocks base method.
-func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetWithContext(arg0 context.Context, arg1 *marketplacecommerceanalytics.GenerateDataSetInput, arg2 ...request.Option) (*marketplacecommerceanalytics.GenerateDataSetOutput, error) {
+// GenerateDataSetWithContext mocks base method
+func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetWithContext(arg0 aws.Context, arg1 *marketplacecommerceanalytics.GenerateDataSetInput, arg2 ...request.Option) (*marketplacecommerceanalytics.GenerateDataSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetWithContext(arg0 co
 	return ret0, ret1
 }
 
-// GenerateDataSetWithContext indicates an expected call of GenerateDataSetWithContext.
+// GenerateDataSetWithContext indicates an expected call of GenerateDataSetWithContext
 func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) GenerateDataSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateDataSetWithContext", reflect.TypeOf((*MockMarketplaceCommerceAnalyticsAPI)(nil).GenerateDataSetWithContext), varargs...)
 }
 
-// StartSupportDataExport mocks base method.
+// StartSupportDataExport mocks base method
 func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExport(arg0 *marketplacecommerceanalytics.StartSupportDataExportInput) (*marketplacecommerceanalytics.StartSupportDataExportOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartSupportDataExport", arg0)
@@ -95,13 +94,13 @@ func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExport(arg0 *marke
 	return ret0, ret1
 }
 
-// StartSupportDataExport indicates an expected call of StartSupportDataExport.
+// StartSupportDataExport indicates an expected call of StartSupportDataExport
 func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) StartSupportDataExport(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSupportDataExport", reflect.TypeOf((*MockMarketplaceCommerceAnalyticsAPI)(nil).StartSupportDataExport), arg0)
 }
 
-// StartSupportDataExportRequest mocks base method.
+// StartSupportDataExportRequest mocks base method
 func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportRequest(arg0 *marketplacecommerceanalytics.StartSupportDataExportInput) (*request.Request, *marketplacecommerceanalytics.StartSupportDataExportOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartSupportDataExportRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportRequest(arg0
 	return ret0, ret1
 }
 
-// StartSupportDataExportRequest indicates an expected call of StartSupportDataExportRequest.
+// StartSupportDataExportRequest indicates an expected call of StartSupportDataExportRequest
 func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) StartSupportDataExportRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSupportDataExportRequest", reflect.TypeOf((*MockMarketplaceCommerceAnalyticsAPI)(nil).StartSupportDataExportRequest), arg0)
 }
 
-// StartSupportDataExportWithContext mocks base method.
-func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportWithContext(arg0 context.Context, arg1 *marketplacecommerceanalytics.StartSupportDataExportInput, arg2 ...request.Option) (*marketplacecommerceanalytics.StartSupportDataExportOutput, error) {
+// StartSupportDataExportWithContext mocks base method
+func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportWithContext(arg0 aws.Context, arg1 *marketplacecommerceanalytics.StartSupportDataExportInput, arg2 ...request.Option) (*marketplacecommerceanalytics.StartSupportDataExportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,7 +128,7 @@ func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportWithContext(
 	return ret0, ret1
 }
 
-// StartSupportDataExportWithContext indicates an expected call of StartSupportDataExportWithContext.
+// StartSupportDataExportWithContext indicates an expected call of StartSupportDataExportWithContext
 func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) StartSupportDataExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

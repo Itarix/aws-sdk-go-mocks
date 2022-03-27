@@ -5,38 +5,37 @@
 package iot1clickdevicesservicemock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iot1clickdevicesservice "github.com/aws/aws-sdk-go/service/iot1clickdevicesservice"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockIoT1ClickDevicesServiceAPI is a mock of IoT1ClickDevicesServiceAPI interface.
+// MockIoT1ClickDevicesServiceAPI is a mock of IoT1ClickDevicesServiceAPI interface
 type MockIoT1ClickDevicesServiceAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockIoT1ClickDevicesServiceAPIMockRecorder
 }
 
-// MockIoT1ClickDevicesServiceAPIMockRecorder is the mock recorder for MockIoT1ClickDevicesServiceAPI.
+// MockIoT1ClickDevicesServiceAPIMockRecorder is the mock recorder for MockIoT1ClickDevicesServiceAPI
 type MockIoT1ClickDevicesServiceAPIMockRecorder struct {
 	mock *MockIoT1ClickDevicesServiceAPI
 }
 
-// NewMockIoT1ClickDevicesServiceAPI creates a new mock instance.
+// NewMockIoT1ClickDevicesServiceAPI creates a new mock instance
 func NewMockIoT1ClickDevicesServiceAPI(ctrl *gomock.Controller) *MockIoT1ClickDevicesServiceAPI {
 	mock := &MockIoT1ClickDevicesServiceAPI{ctrl: ctrl}
 	mock.recorder = &MockIoT1ClickDevicesServiceAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockIoT1ClickDevicesServiceAPI) EXPECT() *MockIoT1ClickDevicesServiceAPIMockRecorder {
 	return m.recorder
 }
 
-// ClaimDevicesByClaimCode mocks base method.
+// ClaimDevicesByClaimCode mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCode(arg0 *iot1clickdevicesservice.ClaimDevicesByClaimCodeInput) (*iot1clickdevicesservice.ClaimDevicesByClaimCodeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ClaimDevicesByClaimCode", arg0)
@@ -45,13 +44,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCode(arg0 *iot1click
 	return ret0, ret1
 }
 
-// ClaimDevicesByClaimCode indicates an expected call of ClaimDevicesByClaimCode.
+// ClaimDevicesByClaimCode indicates an expected call of ClaimDevicesByClaimCode
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ClaimDevicesByClaimCode(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimDevicesByClaimCode", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ClaimDevicesByClaimCode), arg0)
 }
 
-// ClaimDevicesByClaimCodeRequest mocks base method.
+// ClaimDevicesByClaimCodeRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeRequest(arg0 *iot1clickdevicesservice.ClaimDevicesByClaimCodeInput) (*request.Request, *iot1clickdevicesservice.ClaimDevicesByClaimCodeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ClaimDevicesByClaimCodeRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeRequest(arg0 *io
 	return ret0, ret1
 }
 
-// ClaimDevicesByClaimCodeRequest indicates an expected call of ClaimDevicesByClaimCodeRequest.
+// ClaimDevicesByClaimCodeRequest indicates an expected call of ClaimDevicesByClaimCodeRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ClaimDevicesByClaimCodeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimDevicesByClaimCodeRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ClaimDevicesByClaimCodeRequest), arg0)
 }
 
-// ClaimDevicesByClaimCodeWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ClaimDevicesByClaimCodeInput, arg2 ...request.Option) (*iot1clickdevicesservice.ClaimDevicesByClaimCodeOutput, error) {
+// ClaimDevicesByClaimCodeWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.ClaimDevicesByClaimCodeInput, arg2 ...request.Option) (*iot1clickdevicesservice.ClaimDevicesByClaimCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeWithContext(arg0
 	return ret0, ret1
 }
 
-// ClaimDevicesByClaimCodeWithContext indicates an expected call of ClaimDevicesByClaimCodeWithContext.
+// ClaimDevicesByClaimCodeWithContext indicates an expected call of ClaimDevicesByClaimCodeWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ClaimDevicesByClaimCodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimDevicesByClaimCodeWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ClaimDevicesByClaimCodeWithContext), varargs...)
 }
 
-// DescribeDevice mocks base method.
+// DescribeDevice mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) DescribeDevice(arg0 *iot1clickdevicesservice.DescribeDeviceInput) (*iot1clickdevicesservice.DescribeDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDevice", arg0)
@@ -95,13 +94,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) DescribeDevice(arg0 *iot1clickdevicesse
 	return ret0, ret1
 }
 
-// DescribeDevice indicates an expected call of DescribeDevice.
+// DescribeDevice indicates an expected call of DescribeDevice
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) DescribeDevice(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDevice", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).DescribeDevice), arg0)
 }
 
-// DescribeDeviceRequest mocks base method.
+// DescribeDeviceRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceRequest(arg0 *iot1clickdevicesservice.DescribeDeviceInput) (*request.Request, *iot1clickdevicesservice.DescribeDeviceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDeviceRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceRequest(arg0 *iot1clickde
 	return ret0, ret1
 }
 
-// DescribeDeviceRequest indicates an expected call of DescribeDeviceRequest.
+// DescribeDeviceRequest indicates an expected call of DescribeDeviceRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) DescribeDeviceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDeviceRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).DescribeDeviceRequest), arg0)
 }
 
-// DescribeDeviceWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.DescribeDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.DescribeDeviceOutput, error) {
+// DescribeDeviceWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.DescribeDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.DescribeDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// DescribeDeviceWithContext indicates an expected call of DescribeDeviceWithContext.
+// DescribeDeviceWithContext indicates an expected call of DescribeDeviceWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) DescribeDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDeviceWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).DescribeDeviceWithContext), varargs...)
 }
 
-// FinalizeDeviceClaim mocks base method.
+// FinalizeDeviceClaim mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaim(arg0 *iot1clickdevicesservice.FinalizeDeviceClaimInput) (*iot1clickdevicesservice.FinalizeDeviceClaimOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "FinalizeDeviceClaim", arg0)
@@ -145,13 +144,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaim(arg0 *iot1clickdevi
 	return ret0, ret1
 }
 
-// FinalizeDeviceClaim indicates an expected call of FinalizeDeviceClaim.
+// FinalizeDeviceClaim indicates an expected call of FinalizeDeviceClaim
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) FinalizeDeviceClaim(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FinalizeDeviceClaim", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).FinalizeDeviceClaim), arg0)
 }
 
-// FinalizeDeviceClaimRequest mocks base method.
+// FinalizeDeviceClaimRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimRequest(arg0 *iot1clickdevicesservice.FinalizeDeviceClaimInput) (*request.Request, *iot1clickdevicesservice.FinalizeDeviceClaimOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "FinalizeDeviceClaimRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimRequest(arg0 *iot1cl
 	return ret0, ret1
 }
 
-// FinalizeDeviceClaimRequest indicates an expected call of FinalizeDeviceClaimRequest.
+// FinalizeDeviceClaimRequest indicates an expected call of FinalizeDeviceClaimRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) FinalizeDeviceClaimRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FinalizeDeviceClaimRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).FinalizeDeviceClaimRequest), arg0)
 }
 
-// FinalizeDeviceClaimWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.FinalizeDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.FinalizeDeviceClaimOutput, error) {
+// FinalizeDeviceClaimWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.FinalizeDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.FinalizeDeviceClaimOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimWithContext(arg0 con
 	return ret0, ret1
 }
 
-// FinalizeDeviceClaimWithContext indicates an expected call of FinalizeDeviceClaimWithContext.
+// FinalizeDeviceClaimWithContext indicates an expected call of FinalizeDeviceClaimWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) FinalizeDeviceClaimWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FinalizeDeviceClaimWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).FinalizeDeviceClaimWithContext), varargs...)
 }
 
-// GetDeviceMethods mocks base method.
+// GetDeviceMethods mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethods(arg0 *iot1clickdevicesservice.GetDeviceMethodsInput) (*iot1clickdevicesservice.GetDeviceMethodsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeviceMethods", arg0)
@@ -195,13 +194,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethods(arg0 *iot1clickdevices
 	return ret0, ret1
 }
 
-// GetDeviceMethods indicates an expected call of GetDeviceMethods.
+// GetDeviceMethods indicates an expected call of GetDeviceMethods
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) GetDeviceMethods(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceMethods", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).GetDeviceMethods), arg0)
 }
 
-// GetDeviceMethodsRequest mocks base method.
+// GetDeviceMethodsRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsRequest(arg0 *iot1clickdevicesservice.GetDeviceMethodsInput) (*request.Request, *iot1clickdevicesservice.GetDeviceMethodsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeviceMethodsRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsRequest(arg0 *iot1click
 	return ret0, ret1
 }
 
-// GetDeviceMethodsRequest indicates an expected call of GetDeviceMethodsRequest.
+// GetDeviceMethodsRequest indicates an expected call of GetDeviceMethodsRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) GetDeviceMethodsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceMethodsRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).GetDeviceMethodsRequest), arg0)
 }
 
-// GetDeviceMethodsWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.GetDeviceMethodsInput, arg2 ...request.Option) (*iot1clickdevicesservice.GetDeviceMethodsOutput, error) {
+// GetDeviceMethodsWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.GetDeviceMethodsInput, arg2 ...request.Option) (*iot1clickdevicesservice.GetDeviceMethodsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// GetDeviceMethodsWithContext indicates an expected call of GetDeviceMethodsWithContext.
+// GetDeviceMethodsWithContext indicates an expected call of GetDeviceMethodsWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) GetDeviceMethodsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceMethodsWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).GetDeviceMethodsWithContext), varargs...)
 }
 
-// InitiateDeviceClaim mocks base method.
+// InitiateDeviceClaim mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaim(arg0 *iot1clickdevicesservice.InitiateDeviceClaimInput) (*iot1clickdevicesservice.InitiateDeviceClaimOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateDeviceClaim", arg0)
@@ -245,13 +244,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaim(arg0 *iot1clickdevi
 	return ret0, ret1
 }
 
-// InitiateDeviceClaim indicates an expected call of InitiateDeviceClaim.
+// InitiateDeviceClaim indicates an expected call of InitiateDeviceClaim
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InitiateDeviceClaim(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateDeviceClaim", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).InitiateDeviceClaim), arg0)
 }
 
-// InitiateDeviceClaimRequest mocks base method.
+// InitiateDeviceClaimRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimRequest(arg0 *iot1clickdevicesservice.InitiateDeviceClaimInput) (*request.Request, *iot1clickdevicesservice.InitiateDeviceClaimOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InitiateDeviceClaimRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimRequest(arg0 *iot1cl
 	return ret0, ret1
 }
 
-// InitiateDeviceClaimRequest indicates an expected call of InitiateDeviceClaimRequest.
+// InitiateDeviceClaimRequest indicates an expected call of InitiateDeviceClaimRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InitiateDeviceClaimRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateDeviceClaimRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).InitiateDeviceClaimRequest), arg0)
 }
 
-// InitiateDeviceClaimWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.InitiateDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.InitiateDeviceClaimOutput, error) {
+// InitiateDeviceClaimWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.InitiateDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.InitiateDeviceClaimOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimWithContext(arg0 con
 	return ret0, ret1
 }
 
-// InitiateDeviceClaimWithContext indicates an expected call of InitiateDeviceClaimWithContext.
+// InitiateDeviceClaimWithContext indicates an expected call of InitiateDeviceClaimWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InitiateDeviceClaimWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitiateDeviceClaimWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).InitiateDeviceClaimWithContext), varargs...)
 }
 
-// InvokeDeviceMethod mocks base method.
+// InvokeDeviceMethod mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethod(arg0 *iot1clickdevicesservice.InvokeDeviceMethodInput) (*iot1clickdevicesservice.InvokeDeviceMethodOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InvokeDeviceMethod", arg0)
@@ -295,13 +294,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethod(arg0 *iot1clickdevic
 	return ret0, ret1
 }
 
-// InvokeDeviceMethod indicates an expected call of InvokeDeviceMethod.
+// InvokeDeviceMethod indicates an expected call of InvokeDeviceMethod
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InvokeDeviceMethod(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeDeviceMethod", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).InvokeDeviceMethod), arg0)
 }
 
-// InvokeDeviceMethodRequest mocks base method.
+// InvokeDeviceMethodRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodRequest(arg0 *iot1clickdevicesservice.InvokeDeviceMethodInput) (*request.Request, *iot1clickdevicesservice.InvokeDeviceMethodOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InvokeDeviceMethodRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodRequest(arg0 *iot1cli
 	return ret0, ret1
 }
 
-// InvokeDeviceMethodRequest indicates an expected call of InvokeDeviceMethodRequest.
+// InvokeDeviceMethodRequest indicates an expected call of InvokeDeviceMethodRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InvokeDeviceMethodRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeDeviceMethodRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).InvokeDeviceMethodRequest), arg0)
 }
 
-// InvokeDeviceMethodWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.InvokeDeviceMethodInput, arg2 ...request.Option) (*iot1clickdevicesservice.InvokeDeviceMethodOutput, error) {
+// InvokeDeviceMethodWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.InvokeDeviceMethodInput, arg2 ...request.Option) (*iot1clickdevicesservice.InvokeDeviceMethodOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodWithContext(arg0 cont
 	return ret0, ret1
 }
 
-// InvokeDeviceMethodWithContext indicates an expected call of InvokeDeviceMethodWithContext.
+// InvokeDeviceMethodWithContext indicates an expected call of InvokeDeviceMethodWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InvokeDeviceMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeDeviceMethodWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).InvokeDeviceMethodWithContext), varargs...)
 }
 
-// ListDeviceEvents mocks base method.
+// ListDeviceEvents mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEvents(arg0 *iot1clickdevicesservice.ListDeviceEventsInput) (*iot1clickdevicesservice.ListDeviceEventsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceEvents", arg0)
@@ -345,13 +344,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEvents(arg0 *iot1clickdevices
 	return ret0, ret1
 }
 
-// ListDeviceEvents indicates an expected call of ListDeviceEvents.
+// ListDeviceEvents indicates an expected call of ListDeviceEvents
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDeviceEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEvents", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListDeviceEvents), arg0)
 }
 
-// ListDeviceEventsRequest mocks base method.
+// ListDeviceEventsRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsRequest(arg0 *iot1clickdevicesservice.ListDeviceEventsInput) (*request.Request, *iot1clickdevicesservice.ListDeviceEventsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceEventsRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsRequest(arg0 *iot1click
 	return ret0, ret1
 }
 
-// ListDeviceEventsRequest indicates an expected call of ListDeviceEventsRequest.
+// ListDeviceEventsRequest indicates an expected call of ListDeviceEventsRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDeviceEventsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEventsRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListDeviceEventsRequest), arg0)
 }
 
-// ListDeviceEventsWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ListDeviceEventsInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDeviceEventsOutput, error) {
+// ListDeviceEventsWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.ListDeviceEventsInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDeviceEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// ListDeviceEventsWithContext indicates an expected call of ListDeviceEventsWithContext.
+// ListDeviceEventsWithContext indicates an expected call of ListDeviceEventsWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDeviceEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEventsWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListDeviceEventsWithContext), varargs...)
 }
 
-// ListDevices mocks base method.
+// ListDevices mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) ListDevices(arg0 *iot1clickdevicesservice.ListDevicesInput) (*iot1clickdevicesservice.ListDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevices", arg0)
@@ -395,13 +394,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) ListDevices(arg0 *iot1clickdevicesservi
 	return ret0, ret1
 }
 
-// ListDevices indicates an expected call of ListDevices.
+// ListDevices indicates an expected call of ListDevices
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDevices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevices", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListDevices), arg0)
 }
 
-// ListDevicesRequest mocks base method.
+// ListDevicesRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesRequest(arg0 *iot1clickdevicesservice.ListDevicesInput) (*request.Request, *iot1clickdevicesservice.ListDevicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDevicesRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesRequest(arg0 *iot1clickdevic
 	return ret0, ret1
 }
 
-// ListDevicesRequest indicates an expected call of ListDevicesRequest.
+// ListDevicesRequest indicates an expected call of ListDevicesRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDevicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListDevicesRequest), arg0)
 }
 
-// ListDevicesWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ListDevicesInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDevicesOutput, error) {
+// ListDevicesWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.ListDevicesInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,114 +428,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// ListDevicesWithContext indicates an expected call of ListDevicesWithContext.
+// ListDevicesWithContext indicates an expected call of ListDevicesWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDevicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListDevicesWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) ListTagsForResource(arg0 *iot1clickdevicesservice.ListTagsForResourceInput) (*iot1clickdevicesservice.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*iot1clickdevicesservice.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) ListTagsForResourceRequest(arg0 *iot1clickdevicesservice.ListTagsForResourceInput) (*request.Request, *iot1clickdevicesservice.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*iot1clickdevicesservice.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ListTagsForResourceInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*iot1clickdevicesservice.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// TagResource mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) TagResource(arg0 *iot1clickdevicesservice.TagResourceInput) (*iot1clickdevicesservice.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*iot1clickdevicesservice.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) TagResourceRequest(arg0 *iot1clickdevicesservice.TagResourceInput) (*request.Request, *iot1clickdevicesservice.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*iot1clickdevicesservice.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) TagResourceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.TagResourceInput, arg2 ...request.Option) (*iot1clickdevicesservice.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*iot1clickdevicesservice.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UnclaimDevice mocks base method.
+// UnclaimDevice mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDevice(arg0 *iot1clickdevicesservice.UnclaimDeviceInput) (*iot1clickdevicesservice.UnclaimDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnclaimDevice", arg0)
@@ -545,13 +444,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDevice(arg0 *iot1clickdevicesser
 	return ret0, ret1
 }
 
-// UnclaimDevice indicates an expected call of UnclaimDevice.
+// UnclaimDevice indicates an expected call of UnclaimDevice
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UnclaimDevice(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnclaimDevice", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UnclaimDevice), arg0)
 }
 
-// UnclaimDeviceRequest mocks base method.
+// UnclaimDeviceRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceRequest(arg0 *iot1clickdevicesservice.UnclaimDeviceInput) (*request.Request, *iot1clickdevicesservice.UnclaimDeviceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnclaimDeviceRequest", arg0)
@@ -560,14 +459,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceRequest(arg0 *iot1clickdev
 	return ret0, ret1
 }
 
-// UnclaimDeviceRequest indicates an expected call of UnclaimDeviceRequest.
+// UnclaimDeviceRequest indicates an expected call of UnclaimDeviceRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UnclaimDeviceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnclaimDeviceRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UnclaimDeviceRequest), arg0)
 }
 
-// UnclaimDeviceWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.UnclaimDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.UnclaimDeviceOutput, error) {
+// UnclaimDeviceWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.UnclaimDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.UnclaimDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,64 +478,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// UnclaimDeviceWithContext indicates an expected call of UnclaimDeviceWithContext.
+// UnclaimDeviceWithContext indicates an expected call of UnclaimDeviceWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UnclaimDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnclaimDeviceWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UnclaimDeviceWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) UntagResource(arg0 *iot1clickdevicesservice.UntagResourceInput) (*iot1clickdevicesservice.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*iot1clickdevicesservice.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) UntagResourceRequest(arg0 *iot1clickdevicesservice.UntagResourceInput) (*request.Request, *iot1clickdevicesservice.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*iot1clickdevicesservice.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) UntagResourceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.UntagResourceInput, arg2 ...request.Option) (*iot1clickdevicesservice.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*iot1clickdevicesservice.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateDeviceState mocks base method.
+// UpdateDeviceState mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceState(arg0 *iot1clickdevicesservice.UpdateDeviceStateInput) (*iot1clickdevicesservice.UpdateDeviceStateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeviceState", arg0)
@@ -645,13 +494,13 @@ func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceState(arg0 *iot1clickdevice
 	return ret0, ret1
 }
 
-// UpdateDeviceState indicates an expected call of UpdateDeviceState.
+// UpdateDeviceState indicates an expected call of UpdateDeviceState
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UpdateDeviceState(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceState", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UpdateDeviceState), arg0)
 }
 
-// UpdateDeviceStateRequest mocks base method.
+// UpdateDeviceStateRequest mocks base method
 func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateRequest(arg0 *iot1clickdevicesservice.UpdateDeviceStateInput) (*request.Request, *iot1clickdevicesservice.UpdateDeviceStateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeviceStateRequest", arg0)
@@ -660,14 +509,14 @@ func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateRequest(arg0 *iot1clic
 	return ret0, ret1
 }
 
-// UpdateDeviceStateRequest indicates an expected call of UpdateDeviceStateRequest.
+// UpdateDeviceStateRequest indicates an expected call of UpdateDeviceStateRequest
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UpdateDeviceStateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceStateRequest", reflect.TypeOf((*MockIoT1ClickDevicesServiceAPI)(nil).UpdateDeviceStateRequest), arg0)
 }
 
-// UpdateDeviceStateWithContext mocks base method.
-func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.UpdateDeviceStateInput, arg2 ...request.Option) (*iot1clickdevicesservice.UpdateDeviceStateOutput, error) {
+// UpdateDeviceStateWithContext mocks base method
+func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.UpdateDeviceStateInput, arg2 ...request.Option) (*iot1clickdevicesservice.UpdateDeviceStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,7 +528,7 @@ func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// UpdateDeviceStateWithContext indicates an expected call of UpdateDeviceStateWithContext.
+// UpdateDeviceStateWithContext indicates an expected call of UpdateDeviceStateWithContext
 func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UpdateDeviceStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

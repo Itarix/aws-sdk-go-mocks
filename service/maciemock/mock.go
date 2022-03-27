@@ -5,38 +5,37 @@
 package maciemock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	macie "github.com/aws/aws-sdk-go/service/macie"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMacieAPI is a mock of MacieAPI interface.
+// MockMacieAPI is a mock of MacieAPI interface
 type MockMacieAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMacieAPIMockRecorder
 }
 
-// MockMacieAPIMockRecorder is the mock recorder for MockMacieAPI.
+// MockMacieAPIMockRecorder is the mock recorder for MockMacieAPI
 type MockMacieAPIMockRecorder struct {
 	mock *MockMacieAPI
 }
 
-// NewMockMacieAPI creates a new mock instance.
+// NewMockMacieAPI creates a new mock instance
 func NewMockMacieAPI(ctrl *gomock.Controller) *MockMacieAPI {
 	mock := &MockMacieAPI{ctrl: ctrl}
 	mock.recorder = &MockMacieAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMacieAPI) EXPECT() *MockMacieAPIMockRecorder {
 	return m.recorder
 }
 
-// AssociateMemberAccount mocks base method.
+// AssociateMemberAccount mocks base method
 func (m *MockMacieAPI) AssociateMemberAccount(arg0 *macie.AssociateMemberAccountInput) (*macie.AssociateMemberAccountOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateMemberAccount", arg0)
@@ -45,13 +44,13 @@ func (m *MockMacieAPI) AssociateMemberAccount(arg0 *macie.AssociateMemberAccount
 	return ret0, ret1
 }
 
-// AssociateMemberAccount indicates an expected call of AssociateMemberAccount.
+// AssociateMemberAccount indicates an expected call of AssociateMemberAccount
 func (mr *MockMacieAPIMockRecorder) AssociateMemberAccount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMemberAccount", reflect.TypeOf((*MockMacieAPI)(nil).AssociateMemberAccount), arg0)
 }
 
-// AssociateMemberAccountRequest mocks base method.
+// AssociateMemberAccountRequest mocks base method
 func (m *MockMacieAPI) AssociateMemberAccountRequest(arg0 *macie.AssociateMemberAccountInput) (*request.Request, *macie.AssociateMemberAccountOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateMemberAccountRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMacieAPI) AssociateMemberAccountRequest(arg0 *macie.AssociateMember
 	return ret0, ret1
 }
 
-// AssociateMemberAccountRequest indicates an expected call of AssociateMemberAccountRequest.
+// AssociateMemberAccountRequest indicates an expected call of AssociateMemberAccountRequest
 func (mr *MockMacieAPIMockRecorder) AssociateMemberAccountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMemberAccountRequest", reflect.TypeOf((*MockMacieAPI)(nil).AssociateMemberAccountRequest), arg0)
 }
 
-// AssociateMemberAccountWithContext mocks base method.
-func (m *MockMacieAPI) AssociateMemberAccountWithContext(arg0 context.Context, arg1 *macie.AssociateMemberAccountInput, arg2 ...request.Option) (*macie.AssociateMemberAccountOutput, error) {
+// AssociateMemberAccountWithContext mocks base method
+func (m *MockMacieAPI) AssociateMemberAccountWithContext(arg0 aws.Context, arg1 *macie.AssociateMemberAccountInput, arg2 ...request.Option) (*macie.AssociateMemberAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockMacieAPI) AssociateMemberAccountWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// AssociateMemberAccountWithContext indicates an expected call of AssociateMemberAccountWithContext.
+// AssociateMemberAccountWithContext indicates an expected call of AssociateMemberAccountWithContext
 func (mr *MockMacieAPIMockRecorder) AssociateMemberAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMemberAccountWithContext", reflect.TypeOf((*MockMacieAPI)(nil).AssociateMemberAccountWithContext), varargs...)
 }
 
-// AssociateS3Resources mocks base method.
+// AssociateS3Resources mocks base method
 func (m *MockMacieAPI) AssociateS3Resources(arg0 *macie.AssociateS3ResourcesInput) (*macie.AssociateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateS3Resources", arg0)
@@ -95,13 +94,13 @@ func (m *MockMacieAPI) AssociateS3Resources(arg0 *macie.AssociateS3ResourcesInpu
 	return ret0, ret1
 }
 
-// AssociateS3Resources indicates an expected call of AssociateS3Resources.
+// AssociateS3Resources indicates an expected call of AssociateS3Resources
 func (mr *MockMacieAPIMockRecorder) AssociateS3Resources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateS3Resources", reflect.TypeOf((*MockMacieAPI)(nil).AssociateS3Resources), arg0)
 }
 
-// AssociateS3ResourcesRequest mocks base method.
+// AssociateS3ResourcesRequest mocks base method
 func (m *MockMacieAPI) AssociateS3ResourcesRequest(arg0 *macie.AssociateS3ResourcesInput) (*request.Request, *macie.AssociateS3ResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateS3ResourcesRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockMacieAPI) AssociateS3ResourcesRequest(arg0 *macie.AssociateS3Resour
 	return ret0, ret1
 }
 
-// AssociateS3ResourcesRequest indicates an expected call of AssociateS3ResourcesRequest.
+// AssociateS3ResourcesRequest indicates an expected call of AssociateS3ResourcesRequest
 func (mr *MockMacieAPIMockRecorder) AssociateS3ResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateS3ResourcesRequest", reflect.TypeOf((*MockMacieAPI)(nil).AssociateS3ResourcesRequest), arg0)
 }
 
-// AssociateS3ResourcesWithContext mocks base method.
-func (m *MockMacieAPI) AssociateS3ResourcesWithContext(arg0 context.Context, arg1 *macie.AssociateS3ResourcesInput, arg2 ...request.Option) (*macie.AssociateS3ResourcesOutput, error) {
+// AssociateS3ResourcesWithContext mocks base method
+func (m *MockMacieAPI) AssociateS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.AssociateS3ResourcesInput, arg2 ...request.Option) (*macie.AssociateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockMacieAPI) AssociateS3ResourcesWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// AssociateS3ResourcesWithContext indicates an expected call of AssociateS3ResourcesWithContext.
+// AssociateS3ResourcesWithContext indicates an expected call of AssociateS3ResourcesWithContext
 func (mr *MockMacieAPIMockRecorder) AssociateS3ResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateS3ResourcesWithContext", reflect.TypeOf((*MockMacieAPI)(nil).AssociateS3ResourcesWithContext), varargs...)
 }
 
-// DisassociateMemberAccount mocks base method.
+// DisassociateMemberAccount mocks base method
 func (m *MockMacieAPI) DisassociateMemberAccount(arg0 *macie.DisassociateMemberAccountInput) (*macie.DisassociateMemberAccountOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateMemberAccount", arg0)
@@ -145,13 +144,13 @@ func (m *MockMacieAPI) DisassociateMemberAccount(arg0 *macie.DisassociateMemberA
 	return ret0, ret1
 }
 
-// DisassociateMemberAccount indicates an expected call of DisassociateMemberAccount.
+// DisassociateMemberAccount indicates an expected call of DisassociateMemberAccount
 func (mr *MockMacieAPIMockRecorder) DisassociateMemberAccount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMemberAccount", reflect.TypeOf((*MockMacieAPI)(nil).DisassociateMemberAccount), arg0)
 }
 
-// DisassociateMemberAccountRequest mocks base method.
+// DisassociateMemberAccountRequest mocks base method
 func (m *MockMacieAPI) DisassociateMemberAccountRequest(arg0 *macie.DisassociateMemberAccountInput) (*request.Request, *macie.DisassociateMemberAccountOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateMemberAccountRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockMacieAPI) DisassociateMemberAccountRequest(arg0 *macie.Disassociate
 	return ret0, ret1
 }
 
-// DisassociateMemberAccountRequest indicates an expected call of DisassociateMemberAccountRequest.
+// DisassociateMemberAccountRequest indicates an expected call of DisassociateMemberAccountRequest
 func (mr *MockMacieAPIMockRecorder) DisassociateMemberAccountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMemberAccountRequest", reflect.TypeOf((*MockMacieAPI)(nil).DisassociateMemberAccountRequest), arg0)
 }
 
-// DisassociateMemberAccountWithContext mocks base method.
-func (m *MockMacieAPI) DisassociateMemberAccountWithContext(arg0 context.Context, arg1 *macie.DisassociateMemberAccountInput, arg2 ...request.Option) (*macie.DisassociateMemberAccountOutput, error) {
+// DisassociateMemberAccountWithContext mocks base method
+func (m *MockMacieAPI) DisassociateMemberAccountWithContext(arg0 aws.Context, arg1 *macie.DisassociateMemberAccountInput, arg2 ...request.Option) (*macie.DisassociateMemberAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockMacieAPI) DisassociateMemberAccountWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DisassociateMemberAccountWithContext indicates an expected call of DisassociateMemberAccountWithContext.
+// DisassociateMemberAccountWithContext indicates an expected call of DisassociateMemberAccountWithContext
 func (mr *MockMacieAPIMockRecorder) DisassociateMemberAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMemberAccountWithContext", reflect.TypeOf((*MockMacieAPI)(nil).DisassociateMemberAccountWithContext), varargs...)
 }
 
-// DisassociateS3Resources mocks base method.
+// DisassociateS3Resources mocks base method
 func (m *MockMacieAPI) DisassociateS3Resources(arg0 *macie.DisassociateS3ResourcesInput) (*macie.DisassociateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateS3Resources", arg0)
@@ -195,13 +194,13 @@ func (m *MockMacieAPI) DisassociateS3Resources(arg0 *macie.DisassociateS3Resourc
 	return ret0, ret1
 }
 
-// DisassociateS3Resources indicates an expected call of DisassociateS3Resources.
+// DisassociateS3Resources indicates an expected call of DisassociateS3Resources
 func (mr *MockMacieAPIMockRecorder) DisassociateS3Resources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateS3Resources", reflect.TypeOf((*MockMacieAPI)(nil).DisassociateS3Resources), arg0)
 }
 
-// DisassociateS3ResourcesRequest mocks base method.
+// DisassociateS3ResourcesRequest mocks base method
 func (m *MockMacieAPI) DisassociateS3ResourcesRequest(arg0 *macie.DisassociateS3ResourcesInput) (*request.Request, *macie.DisassociateS3ResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateS3ResourcesRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockMacieAPI) DisassociateS3ResourcesRequest(arg0 *macie.DisassociateS3
 	return ret0, ret1
 }
 
-// DisassociateS3ResourcesRequest indicates an expected call of DisassociateS3ResourcesRequest.
+// DisassociateS3ResourcesRequest indicates an expected call of DisassociateS3ResourcesRequest
 func (mr *MockMacieAPIMockRecorder) DisassociateS3ResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateS3ResourcesRequest", reflect.TypeOf((*MockMacieAPI)(nil).DisassociateS3ResourcesRequest), arg0)
 }
 
-// DisassociateS3ResourcesWithContext mocks base method.
-func (m *MockMacieAPI) DisassociateS3ResourcesWithContext(arg0 context.Context, arg1 *macie.DisassociateS3ResourcesInput, arg2 ...request.Option) (*macie.DisassociateS3ResourcesOutput, error) {
+// DisassociateS3ResourcesWithContext mocks base method
+func (m *MockMacieAPI) DisassociateS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.DisassociateS3ResourcesInput, arg2 ...request.Option) (*macie.DisassociateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockMacieAPI) DisassociateS3ResourcesWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DisassociateS3ResourcesWithContext indicates an expected call of DisassociateS3ResourcesWithContext.
+// DisassociateS3ResourcesWithContext indicates an expected call of DisassociateS3ResourcesWithContext
 func (mr *MockMacieAPIMockRecorder) DisassociateS3ResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateS3ResourcesWithContext", reflect.TypeOf((*MockMacieAPI)(nil).DisassociateS3ResourcesWithContext), varargs...)
 }
 
-// ListMemberAccounts mocks base method.
+// ListMemberAccounts mocks base method
 func (m *MockMacieAPI) ListMemberAccounts(arg0 *macie.ListMemberAccountsInput) (*macie.ListMemberAccountsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMemberAccounts", arg0)
@@ -245,13 +244,13 @@ func (m *MockMacieAPI) ListMemberAccounts(arg0 *macie.ListMemberAccountsInput) (
 	return ret0, ret1
 }
 
-// ListMemberAccounts indicates an expected call of ListMemberAccounts.
+// ListMemberAccounts indicates an expected call of ListMemberAccounts
 func (mr *MockMacieAPIMockRecorder) ListMemberAccounts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccounts", reflect.TypeOf((*MockMacieAPI)(nil).ListMemberAccounts), arg0)
 }
 
-// ListMemberAccountsPages mocks base method.
+// ListMemberAccountsPages mocks base method
 func (m *MockMacieAPI) ListMemberAccountsPages(arg0 *macie.ListMemberAccountsInput, arg1 func(*macie.ListMemberAccountsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMemberAccountsPages", arg0, arg1)
@@ -259,14 +258,14 @@ func (m *MockMacieAPI) ListMemberAccountsPages(arg0 *macie.ListMemberAccountsInp
 	return ret0
 }
 
-// ListMemberAccountsPages indicates an expected call of ListMemberAccountsPages.
+// ListMemberAccountsPages indicates an expected call of ListMemberAccountsPages
 func (mr *MockMacieAPIMockRecorder) ListMemberAccountsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccountsPages", reflect.TypeOf((*MockMacieAPI)(nil).ListMemberAccountsPages), arg0, arg1)
 }
 
-// ListMemberAccountsPagesWithContext mocks base method.
-func (m *MockMacieAPI) ListMemberAccountsPagesWithContext(arg0 context.Context, arg1 *macie.ListMemberAccountsInput, arg2 func(*macie.ListMemberAccountsOutput, bool) bool, arg3 ...request.Option) error {
+// ListMemberAccountsPagesWithContext mocks base method
+func (m *MockMacieAPI) ListMemberAccountsPagesWithContext(arg0 aws.Context, arg1 *macie.ListMemberAccountsInput, arg2 func(*macie.ListMemberAccountsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -277,14 +276,14 @@ func (m *MockMacieAPI) ListMemberAccountsPagesWithContext(arg0 context.Context, 
 	return ret0
 }
 
-// ListMemberAccountsPagesWithContext indicates an expected call of ListMemberAccountsPagesWithContext.
+// ListMemberAccountsPagesWithContext indicates an expected call of ListMemberAccountsPagesWithContext
 func (mr *MockMacieAPIMockRecorder) ListMemberAccountsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccountsPagesWithContext", reflect.TypeOf((*MockMacieAPI)(nil).ListMemberAccountsPagesWithContext), varargs...)
 }
 
-// ListMemberAccountsRequest mocks base method.
+// ListMemberAccountsRequest mocks base method
 func (m *MockMacieAPI) ListMemberAccountsRequest(arg0 *macie.ListMemberAccountsInput) (*request.Request, *macie.ListMemberAccountsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMemberAccountsRequest", arg0)
@@ -293,14 +292,14 @@ func (m *MockMacieAPI) ListMemberAccountsRequest(arg0 *macie.ListMemberAccountsI
 	return ret0, ret1
 }
 
-// ListMemberAccountsRequest indicates an expected call of ListMemberAccountsRequest.
+// ListMemberAccountsRequest indicates an expected call of ListMemberAccountsRequest
 func (mr *MockMacieAPIMockRecorder) ListMemberAccountsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccountsRequest", reflect.TypeOf((*MockMacieAPI)(nil).ListMemberAccountsRequest), arg0)
 }
 
-// ListMemberAccountsWithContext mocks base method.
-func (m *MockMacieAPI) ListMemberAccountsWithContext(arg0 context.Context, arg1 *macie.ListMemberAccountsInput, arg2 ...request.Option) (*macie.ListMemberAccountsOutput, error) {
+// ListMemberAccountsWithContext mocks base method
+func (m *MockMacieAPI) ListMemberAccountsWithContext(arg0 aws.Context, arg1 *macie.ListMemberAccountsInput, arg2 ...request.Option) (*macie.ListMemberAccountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -312,14 +311,14 @@ func (m *MockMacieAPI) ListMemberAccountsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListMemberAccountsWithContext indicates an expected call of ListMemberAccountsWithContext.
+// ListMemberAccountsWithContext indicates an expected call of ListMemberAccountsWithContext
 func (mr *MockMacieAPIMockRecorder) ListMemberAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMemberAccountsWithContext", reflect.TypeOf((*MockMacieAPI)(nil).ListMemberAccountsWithContext), varargs...)
 }
 
-// ListS3Resources mocks base method.
+// ListS3Resources mocks base method
 func (m *MockMacieAPI) ListS3Resources(arg0 *macie.ListS3ResourcesInput) (*macie.ListS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListS3Resources", arg0)
@@ -328,13 +327,13 @@ func (m *MockMacieAPI) ListS3Resources(arg0 *macie.ListS3ResourcesInput) (*macie
 	return ret0, ret1
 }
 
-// ListS3Resources indicates an expected call of ListS3Resources.
+// ListS3Resources indicates an expected call of ListS3Resources
 func (mr *MockMacieAPIMockRecorder) ListS3Resources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3Resources", reflect.TypeOf((*MockMacieAPI)(nil).ListS3Resources), arg0)
 }
 
-// ListS3ResourcesPages mocks base method.
+// ListS3ResourcesPages mocks base method
 func (m *MockMacieAPI) ListS3ResourcesPages(arg0 *macie.ListS3ResourcesInput, arg1 func(*macie.ListS3ResourcesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListS3ResourcesPages", arg0, arg1)
@@ -342,14 +341,14 @@ func (m *MockMacieAPI) ListS3ResourcesPages(arg0 *macie.ListS3ResourcesInput, ar
 	return ret0
 }
 
-// ListS3ResourcesPages indicates an expected call of ListS3ResourcesPages.
+// ListS3ResourcesPages indicates an expected call of ListS3ResourcesPages
 func (mr *MockMacieAPIMockRecorder) ListS3ResourcesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3ResourcesPages", reflect.TypeOf((*MockMacieAPI)(nil).ListS3ResourcesPages), arg0, arg1)
 }
 
-// ListS3ResourcesPagesWithContext mocks base method.
-func (m *MockMacieAPI) ListS3ResourcesPagesWithContext(arg0 context.Context, arg1 *macie.ListS3ResourcesInput, arg2 func(*macie.ListS3ResourcesOutput, bool) bool, arg3 ...request.Option) error {
+// ListS3ResourcesPagesWithContext mocks base method
+func (m *MockMacieAPI) ListS3ResourcesPagesWithContext(arg0 aws.Context, arg1 *macie.ListS3ResourcesInput, arg2 func(*macie.ListS3ResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -360,14 +359,14 @@ func (m *MockMacieAPI) ListS3ResourcesPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListS3ResourcesPagesWithContext indicates an expected call of ListS3ResourcesPagesWithContext.
+// ListS3ResourcesPagesWithContext indicates an expected call of ListS3ResourcesPagesWithContext
 func (mr *MockMacieAPIMockRecorder) ListS3ResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3ResourcesPagesWithContext", reflect.TypeOf((*MockMacieAPI)(nil).ListS3ResourcesPagesWithContext), varargs...)
 }
 
-// ListS3ResourcesRequest mocks base method.
+// ListS3ResourcesRequest mocks base method
 func (m *MockMacieAPI) ListS3ResourcesRequest(arg0 *macie.ListS3ResourcesInput) (*request.Request, *macie.ListS3ResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListS3ResourcesRequest", arg0)
@@ -376,14 +375,14 @@ func (m *MockMacieAPI) ListS3ResourcesRequest(arg0 *macie.ListS3ResourcesInput) 
 	return ret0, ret1
 }
 
-// ListS3ResourcesRequest indicates an expected call of ListS3ResourcesRequest.
+// ListS3ResourcesRequest indicates an expected call of ListS3ResourcesRequest
 func (mr *MockMacieAPIMockRecorder) ListS3ResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3ResourcesRequest", reflect.TypeOf((*MockMacieAPI)(nil).ListS3ResourcesRequest), arg0)
 }
 
-// ListS3ResourcesWithContext mocks base method.
-func (m *MockMacieAPI) ListS3ResourcesWithContext(arg0 context.Context, arg1 *macie.ListS3ResourcesInput, arg2 ...request.Option) (*macie.ListS3ResourcesOutput, error) {
+// ListS3ResourcesWithContext mocks base method
+func (m *MockMacieAPI) ListS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.ListS3ResourcesInput, arg2 ...request.Option) (*macie.ListS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -395,14 +394,14 @@ func (m *MockMacieAPI) ListS3ResourcesWithContext(arg0 context.Context, arg1 *ma
 	return ret0, ret1
 }
 
-// ListS3ResourcesWithContext indicates an expected call of ListS3ResourcesWithContext.
+// ListS3ResourcesWithContext indicates an expected call of ListS3ResourcesWithContext
 func (mr *MockMacieAPIMockRecorder) ListS3ResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3ResourcesWithContext", reflect.TypeOf((*MockMacieAPI)(nil).ListS3ResourcesWithContext), varargs...)
 }
 
-// UpdateS3Resources mocks base method.
+// UpdateS3Resources mocks base method
 func (m *MockMacieAPI) UpdateS3Resources(arg0 *macie.UpdateS3ResourcesInput) (*macie.UpdateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateS3Resources", arg0)
@@ -411,13 +410,13 @@ func (m *MockMacieAPI) UpdateS3Resources(arg0 *macie.UpdateS3ResourcesInput) (*m
 	return ret0, ret1
 }
 
-// UpdateS3Resources indicates an expected call of UpdateS3Resources.
+// UpdateS3Resources indicates an expected call of UpdateS3Resources
 func (mr *MockMacieAPIMockRecorder) UpdateS3Resources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateS3Resources", reflect.TypeOf((*MockMacieAPI)(nil).UpdateS3Resources), arg0)
 }
 
-// UpdateS3ResourcesRequest mocks base method.
+// UpdateS3ResourcesRequest mocks base method
 func (m *MockMacieAPI) UpdateS3ResourcesRequest(arg0 *macie.UpdateS3ResourcesInput) (*request.Request, *macie.UpdateS3ResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateS3ResourcesRequest", arg0)
@@ -426,14 +425,14 @@ func (m *MockMacieAPI) UpdateS3ResourcesRequest(arg0 *macie.UpdateS3ResourcesInp
 	return ret0, ret1
 }
 
-// UpdateS3ResourcesRequest indicates an expected call of UpdateS3ResourcesRequest.
+// UpdateS3ResourcesRequest indicates an expected call of UpdateS3ResourcesRequest
 func (mr *MockMacieAPIMockRecorder) UpdateS3ResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateS3ResourcesRequest", reflect.TypeOf((*MockMacieAPI)(nil).UpdateS3ResourcesRequest), arg0)
 }
 
-// UpdateS3ResourcesWithContext mocks base method.
-func (m *MockMacieAPI) UpdateS3ResourcesWithContext(arg0 context.Context, arg1 *macie.UpdateS3ResourcesInput, arg2 ...request.Option) (*macie.UpdateS3ResourcesOutput, error) {
+// UpdateS3ResourcesWithContext mocks base method
+func (m *MockMacieAPI) UpdateS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.UpdateS3ResourcesInput, arg2 ...request.Option) (*macie.UpdateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -445,7 +444,7 @@ func (m *MockMacieAPI) UpdateS3ResourcesWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// UpdateS3ResourcesWithContext indicates an expected call of UpdateS3ResourcesWithContext.
+// UpdateS3ResourcesWithContext indicates an expected call of UpdateS3ResourcesWithContext
 func (mr *MockMacieAPIMockRecorder) UpdateS3ResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

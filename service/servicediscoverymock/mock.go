@@ -5,88 +5,37 @@
 package servicediscoverymock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	servicediscovery "github.com/aws/aws-sdk-go/service/servicediscovery"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockServiceDiscoveryAPI is a mock of ServiceDiscoveryAPI interface.
+// MockServiceDiscoveryAPI is a mock of ServiceDiscoveryAPI interface
 type MockServiceDiscoveryAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockServiceDiscoveryAPIMockRecorder
 }
 
-// MockServiceDiscoveryAPIMockRecorder is the mock recorder for MockServiceDiscoveryAPI.
+// MockServiceDiscoveryAPIMockRecorder is the mock recorder for MockServiceDiscoveryAPI
 type MockServiceDiscoveryAPIMockRecorder struct {
 	mock *MockServiceDiscoveryAPI
 }
 
-// NewMockServiceDiscoveryAPI creates a new mock instance.
+// NewMockServiceDiscoveryAPI creates a new mock instance
 func NewMockServiceDiscoveryAPI(ctrl *gomock.Controller) *MockServiceDiscoveryAPI {
 	mock := &MockServiceDiscoveryAPI{ctrl: ctrl}
 	mock.recorder = &MockServiceDiscoveryAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockServiceDiscoveryAPI) EXPECT() *MockServiceDiscoveryAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateHttpNamespace mocks base method.
-func (m *MockServiceDiscoveryAPI) CreateHttpNamespace(arg0 *servicediscovery.CreateHttpNamespaceInput) (*servicediscovery.CreateHttpNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateHttpNamespace", arg0)
-	ret0, _ := ret[0].(*servicediscovery.CreateHttpNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateHttpNamespace indicates an expected call of CreateHttpNamespace.
-func (mr *MockServiceDiscoveryAPIMockRecorder) CreateHttpNamespace(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHttpNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreateHttpNamespace), arg0)
-}
-
-// CreateHttpNamespaceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) CreateHttpNamespaceRequest(arg0 *servicediscovery.CreateHttpNamespaceInput) (*request.Request, *servicediscovery.CreateHttpNamespaceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateHttpNamespaceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.CreateHttpNamespaceOutput)
-	return ret0, ret1
-}
-
-// CreateHttpNamespaceRequest indicates an expected call of CreateHttpNamespaceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) CreateHttpNamespaceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHttpNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreateHttpNamespaceRequest), arg0)
-}
-
-// CreateHttpNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) CreateHttpNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.CreateHttpNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreateHttpNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateHttpNamespaceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.CreateHttpNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateHttpNamespaceWithContext indicates an expected call of CreateHttpNamespaceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) CreateHttpNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHttpNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreateHttpNamespaceWithContext), varargs...)
-}
-
-// CreatePrivateDnsNamespace mocks base method.
+// CreatePrivateDnsNamespace mocks base method
 func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespace(arg0 *servicediscovery.CreatePrivateDnsNamespaceInput) (*servicediscovery.CreatePrivateDnsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePrivateDnsNamespace", arg0)
@@ -95,13 +44,13 @@ func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespace(arg0 *servicediscove
 	return ret0, ret1
 }
 
-// CreatePrivateDnsNamespace indicates an expected call of CreatePrivateDnsNamespace.
+// CreatePrivateDnsNamespace indicates an expected call of CreatePrivateDnsNamespace
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePrivateDnsNamespace(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrivateDnsNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreatePrivateDnsNamespace), arg0)
 }
 
-// CreatePrivateDnsNamespaceRequest mocks base method.
+// CreatePrivateDnsNamespaceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceRequest(arg0 *servicediscovery.CreatePrivateDnsNamespaceInput) (*request.Request, *servicediscovery.CreatePrivateDnsNamespaceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePrivateDnsNamespaceRequest", arg0)
@@ -110,14 +59,14 @@ func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceRequest(arg0 *service
 	return ret0, ret1
 }
 
-// CreatePrivateDnsNamespaceRequest indicates an expected call of CreatePrivateDnsNamespaceRequest.
+// CreatePrivateDnsNamespaceRequest indicates an expected call of CreatePrivateDnsNamespaceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePrivateDnsNamespaceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrivateDnsNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreatePrivateDnsNamespaceRequest), arg0)
 }
 
-// CreatePrivateDnsNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.CreatePrivateDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePrivateDnsNamespaceOutput, error) {
+// CreatePrivateDnsNamespaceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreatePrivateDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePrivateDnsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +78,14 @@ func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceWithContext(arg0 cont
 	return ret0, ret1
 }
 
-// CreatePrivateDnsNamespaceWithContext indicates an expected call of CreatePrivateDnsNamespaceWithContext.
+// CreatePrivateDnsNamespaceWithContext indicates an expected call of CreatePrivateDnsNamespaceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePrivateDnsNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrivateDnsNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreatePrivateDnsNamespaceWithContext), varargs...)
 }
 
-// CreatePublicDnsNamespace mocks base method.
+// CreatePublicDnsNamespace mocks base method
 func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespace(arg0 *servicediscovery.CreatePublicDnsNamespaceInput) (*servicediscovery.CreatePublicDnsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePublicDnsNamespace", arg0)
@@ -145,13 +94,13 @@ func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespace(arg0 *servicediscover
 	return ret0, ret1
 }
 
-// CreatePublicDnsNamespace indicates an expected call of CreatePublicDnsNamespace.
+// CreatePublicDnsNamespace indicates an expected call of CreatePublicDnsNamespace
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePublicDnsNamespace(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublicDnsNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreatePublicDnsNamespace), arg0)
 }
 
-// CreatePublicDnsNamespaceRequest mocks base method.
+// CreatePublicDnsNamespaceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceRequest(arg0 *servicediscovery.CreatePublicDnsNamespaceInput) (*request.Request, *servicediscovery.CreatePublicDnsNamespaceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePublicDnsNamespaceRequest", arg0)
@@ -160,14 +109,14 @@ func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceRequest(arg0 *serviced
 	return ret0, ret1
 }
 
-// CreatePublicDnsNamespaceRequest indicates an expected call of CreatePublicDnsNamespaceRequest.
+// CreatePublicDnsNamespaceRequest indicates an expected call of CreatePublicDnsNamespaceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePublicDnsNamespaceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublicDnsNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreatePublicDnsNamespaceRequest), arg0)
 }
 
-// CreatePublicDnsNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.CreatePublicDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePublicDnsNamespaceOutput, error) {
+// CreatePublicDnsNamespaceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreatePublicDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePublicDnsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +128,14 @@ func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// CreatePublicDnsNamespaceWithContext indicates an expected call of CreatePublicDnsNamespaceWithContext.
+// CreatePublicDnsNamespaceWithContext indicates an expected call of CreatePublicDnsNamespaceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePublicDnsNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublicDnsNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreatePublicDnsNamespaceWithContext), varargs...)
 }
 
-// CreateService mocks base method.
+// CreateService mocks base method
 func (m *MockServiceDiscoveryAPI) CreateService(arg0 *servicediscovery.CreateServiceInput) (*servicediscovery.CreateServiceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateService", arg0)
@@ -195,13 +144,13 @@ func (m *MockServiceDiscoveryAPI) CreateService(arg0 *servicediscovery.CreateSer
 	return ret0, ret1
 }
 
-// CreateService indicates an expected call of CreateService.
+// CreateService indicates an expected call of CreateService
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreateService(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateService", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreateService), arg0)
 }
 
-// CreateServiceRequest mocks base method.
+// CreateServiceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) CreateServiceRequest(arg0 *servicediscovery.CreateServiceInput) (*request.Request, *servicediscovery.CreateServiceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateServiceRequest", arg0)
@@ -210,14 +159,14 @@ func (m *MockServiceDiscoveryAPI) CreateServiceRequest(arg0 *servicediscovery.Cr
 	return ret0, ret1
 }
 
-// CreateServiceRequest indicates an expected call of CreateServiceRequest.
+// CreateServiceRequest indicates an expected call of CreateServiceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreateServiceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateServiceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreateServiceRequest), arg0)
 }
 
-// CreateServiceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) CreateServiceWithContext(arg0 context.Context, arg1 *servicediscovery.CreateServiceInput, arg2 ...request.Option) (*servicediscovery.CreateServiceOutput, error) {
+// CreateServiceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) CreateServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreateServiceInput, arg2 ...request.Option) (*servicediscovery.CreateServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +178,14 @@ func (m *MockServiceDiscoveryAPI) CreateServiceWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateServiceWithContext indicates an expected call of CreateServiceWithContext.
+// CreateServiceWithContext indicates an expected call of CreateServiceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) CreateServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateServiceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).CreateServiceWithContext), varargs...)
 }
 
-// DeleteNamespace mocks base method.
+// DeleteNamespace mocks base method
 func (m *MockServiceDiscoveryAPI) DeleteNamespace(arg0 *servicediscovery.DeleteNamespaceInput) (*servicediscovery.DeleteNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteNamespace", arg0)
@@ -245,13 +194,13 @@ func (m *MockServiceDiscoveryAPI) DeleteNamespace(arg0 *servicediscovery.DeleteN
 	return ret0, ret1
 }
 
-// DeleteNamespace indicates an expected call of DeleteNamespace.
+// DeleteNamespace indicates an expected call of DeleteNamespace
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteNamespace(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeleteNamespace), arg0)
 }
 
-// DeleteNamespaceRequest mocks base method.
+// DeleteNamespaceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) DeleteNamespaceRequest(arg0 *servicediscovery.DeleteNamespaceInput) (*request.Request, *servicediscovery.DeleteNamespaceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteNamespaceRequest", arg0)
@@ -260,14 +209,14 @@ func (m *MockServiceDiscoveryAPI) DeleteNamespaceRequest(arg0 *servicediscovery.
 	return ret0, ret1
 }
 
-// DeleteNamespaceRequest indicates an expected call of DeleteNamespaceRequest.
+// DeleteNamespaceRequest indicates an expected call of DeleteNamespaceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteNamespaceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeleteNamespaceRequest), arg0)
 }
 
-// DeleteNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) DeleteNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.DeleteNamespaceInput, arg2 ...request.Option) (*servicediscovery.DeleteNamespaceOutput, error) {
+// DeleteNamespaceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) DeleteNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.DeleteNamespaceInput, arg2 ...request.Option) (*servicediscovery.DeleteNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +228,14 @@ func (m *MockServiceDiscoveryAPI) DeleteNamespaceWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteNamespaceWithContext indicates an expected call of DeleteNamespaceWithContext.
+// DeleteNamespaceWithContext indicates an expected call of DeleteNamespaceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeleteNamespaceWithContext), varargs...)
 }
 
-// DeleteService mocks base method.
+// DeleteService mocks base method
 func (m *MockServiceDiscoveryAPI) DeleteService(arg0 *servicediscovery.DeleteServiceInput) (*servicediscovery.DeleteServiceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteService", arg0)
@@ -295,13 +244,13 @@ func (m *MockServiceDiscoveryAPI) DeleteService(arg0 *servicediscovery.DeleteSer
 	return ret0, ret1
 }
 
-// DeleteService indicates an expected call of DeleteService.
+// DeleteService indicates an expected call of DeleteService
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteService(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteService", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeleteService), arg0)
 }
 
-// DeleteServiceRequest mocks base method.
+// DeleteServiceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) DeleteServiceRequest(arg0 *servicediscovery.DeleteServiceInput) (*request.Request, *servicediscovery.DeleteServiceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteServiceRequest", arg0)
@@ -310,14 +259,14 @@ func (m *MockServiceDiscoveryAPI) DeleteServiceRequest(arg0 *servicediscovery.De
 	return ret0, ret1
 }
 
-// DeleteServiceRequest indicates an expected call of DeleteServiceRequest.
+// DeleteServiceRequest indicates an expected call of DeleteServiceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteServiceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteServiceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeleteServiceRequest), arg0)
 }
 
-// DeleteServiceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) DeleteServiceWithContext(arg0 context.Context, arg1 *servicediscovery.DeleteServiceInput, arg2 ...request.Option) (*servicediscovery.DeleteServiceOutput, error) {
+// DeleteServiceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) DeleteServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.DeleteServiceInput, arg2 ...request.Option) (*servicediscovery.DeleteServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +278,14 @@ func (m *MockServiceDiscoveryAPI) DeleteServiceWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteServiceWithContext indicates an expected call of DeleteServiceWithContext.
+// DeleteServiceWithContext indicates an expected call of DeleteServiceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteServiceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeleteServiceWithContext), varargs...)
 }
 
-// DeregisterInstance mocks base method.
+// DeregisterInstance mocks base method
 func (m *MockServiceDiscoveryAPI) DeregisterInstance(arg0 *servicediscovery.DeregisterInstanceInput) (*servicediscovery.DeregisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeregisterInstance", arg0)
@@ -345,13 +294,13 @@ func (m *MockServiceDiscoveryAPI) DeregisterInstance(arg0 *servicediscovery.Dere
 	return ret0, ret1
 }
 
-// DeregisterInstance indicates an expected call of DeregisterInstance.
+// DeregisterInstance indicates an expected call of DeregisterInstance
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeregisterInstance(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterInstance", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeregisterInstance), arg0)
 }
 
-// DeregisterInstanceRequest mocks base method.
+// DeregisterInstanceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) DeregisterInstanceRequest(arg0 *servicediscovery.DeregisterInstanceInput) (*request.Request, *servicediscovery.DeregisterInstanceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeregisterInstanceRequest", arg0)
@@ -360,14 +309,14 @@ func (m *MockServiceDiscoveryAPI) DeregisterInstanceRequest(arg0 *servicediscove
 	return ret0, ret1
 }
 
-// DeregisterInstanceRequest indicates an expected call of DeregisterInstanceRequest.
+// DeregisterInstanceRequest indicates an expected call of DeregisterInstanceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeregisterInstanceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterInstanceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeregisterInstanceRequest), arg0)
 }
 
-// DeregisterInstanceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) DeregisterInstanceWithContext(arg0 context.Context, arg1 *servicediscovery.DeregisterInstanceInput, arg2 ...request.Option) (*servicediscovery.DeregisterInstanceOutput, error) {
+// DeregisterInstanceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) DeregisterInstanceWithContext(arg0 aws.Context, arg1 *servicediscovery.DeregisterInstanceInput, arg2 ...request.Option) (*servicediscovery.DeregisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,64 +328,14 @@ func (m *MockServiceDiscoveryAPI) DeregisterInstanceWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// DeregisterInstanceWithContext indicates an expected call of DeregisterInstanceWithContext.
+// DeregisterInstanceWithContext indicates an expected call of DeregisterInstanceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) DeregisterInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterInstanceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DeregisterInstanceWithContext), varargs...)
 }
 
-// DiscoverInstances mocks base method.
-func (m *MockServiceDiscoveryAPI) DiscoverInstances(arg0 *servicediscovery.DiscoverInstancesInput) (*servicediscovery.DiscoverInstancesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DiscoverInstances", arg0)
-	ret0, _ := ret[0].(*servicediscovery.DiscoverInstancesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DiscoverInstances indicates an expected call of DiscoverInstances.
-func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstances(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstances", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstances), arg0)
-}
-
-// DiscoverInstancesRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) DiscoverInstancesRequest(arg0 *servicediscovery.DiscoverInstancesInput) (*request.Request, *servicediscovery.DiscoverInstancesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DiscoverInstancesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.DiscoverInstancesOutput)
-	return ret0, ret1
-}
-
-// DiscoverInstancesRequest indicates an expected call of DiscoverInstancesRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstancesRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstancesRequest), arg0)
-}
-
-// DiscoverInstancesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) DiscoverInstancesWithContext(arg0 context.Context, arg1 *servicediscovery.DiscoverInstancesInput, arg2 ...request.Option) (*servicediscovery.DiscoverInstancesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DiscoverInstancesWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.DiscoverInstancesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DiscoverInstancesWithContext indicates an expected call of DiscoverInstancesWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstancesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstancesWithContext), varargs...)
-}
-
-// GetInstance mocks base method.
+// GetInstance mocks base method
 func (m *MockServiceDiscoveryAPI) GetInstance(arg0 *servicediscovery.GetInstanceInput) (*servicediscovery.GetInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstance", arg0)
@@ -445,13 +344,13 @@ func (m *MockServiceDiscoveryAPI) GetInstance(arg0 *servicediscovery.GetInstance
 	return ret0, ret1
 }
 
-// GetInstance indicates an expected call of GetInstance.
+// GetInstance indicates an expected call of GetInstance
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstance(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstance", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstance), arg0)
 }
 
-// GetInstanceRequest mocks base method.
+// GetInstanceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) GetInstanceRequest(arg0 *servicediscovery.GetInstanceInput) (*request.Request, *servicediscovery.GetInstanceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstanceRequest", arg0)
@@ -460,14 +359,14 @@ func (m *MockServiceDiscoveryAPI) GetInstanceRequest(arg0 *servicediscovery.GetI
 	return ret0, ret1
 }
 
-// GetInstanceRequest indicates an expected call of GetInstanceRequest.
+// GetInstanceRequest indicates an expected call of GetInstanceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstanceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstanceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstanceRequest), arg0)
 }
 
-// GetInstanceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) GetInstanceWithContext(arg0 context.Context, arg1 *servicediscovery.GetInstanceInput, arg2 ...request.Option) (*servicediscovery.GetInstanceOutput, error) {
+// GetInstanceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) GetInstanceWithContext(arg0 aws.Context, arg1 *servicediscovery.GetInstanceInput, arg2 ...request.Option) (*servicediscovery.GetInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +378,14 @@ func (m *MockServiceDiscoveryAPI) GetInstanceWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetInstanceWithContext indicates an expected call of GetInstanceWithContext.
+// GetInstanceWithContext indicates an expected call of GetInstanceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstanceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstanceWithContext), varargs...)
 }
 
-// GetInstancesHealthStatus mocks base method.
+// GetInstancesHealthStatus mocks base method
 func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatus(arg0 *servicediscovery.GetInstancesHealthStatusInput) (*servicediscovery.GetInstancesHealthStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstancesHealthStatus", arg0)
@@ -495,13 +394,13 @@ func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatus(arg0 *servicediscover
 	return ret0, ret1
 }
 
-// GetInstancesHealthStatus indicates an expected call of GetInstancesHealthStatus.
+// GetInstancesHealthStatus indicates an expected call of GetInstancesHealthStatus
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstancesHealthStatus", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstancesHealthStatus), arg0)
 }
 
-// GetInstancesHealthStatusPages mocks base method.
+// GetInstancesHealthStatusPages mocks base method
 func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPages(arg0 *servicediscovery.GetInstancesHealthStatusInput, arg1 func(*servicediscovery.GetInstancesHealthStatusOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstancesHealthStatusPages", arg0, arg1)
@@ -509,14 +408,14 @@ func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPages(arg0 *servicedis
 	return ret0
 }
 
-// GetInstancesHealthStatusPages indicates an expected call of GetInstancesHealthStatusPages.
+// GetInstancesHealthStatusPages indicates an expected call of GetInstancesHealthStatusPages
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatusPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstancesHealthStatusPages", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstancesHealthStatusPages), arg0, arg1)
 }
 
-// GetInstancesHealthStatusPagesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPagesWithContext(arg0 context.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 func(*servicediscovery.GetInstancesHealthStatusOutput, bool) bool, arg3 ...request.Option) error {
+// GetInstancesHealthStatusPagesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 func(*servicediscovery.GetInstancesHealthStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -527,14 +426,14 @@ func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPagesWithContext(arg0 
 	return ret0
 }
 
-// GetInstancesHealthStatusPagesWithContext indicates an expected call of GetInstancesHealthStatusPagesWithContext.
+// GetInstancesHealthStatusPagesWithContext indicates an expected call of GetInstancesHealthStatusPagesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstancesHealthStatusPagesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstancesHealthStatusPagesWithContext), varargs...)
 }
 
-// GetInstancesHealthStatusRequest mocks base method.
+// GetInstancesHealthStatusRequest mocks base method
 func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusRequest(arg0 *servicediscovery.GetInstancesHealthStatusInput) (*request.Request, *servicediscovery.GetInstancesHealthStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetInstancesHealthStatusRequest", arg0)
@@ -543,14 +442,14 @@ func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusRequest(arg0 *serviced
 	return ret0, ret1
 }
 
-// GetInstancesHealthStatusRequest indicates an expected call of GetInstancesHealthStatusRequest.
+// GetInstancesHealthStatusRequest indicates an expected call of GetInstancesHealthStatusRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstancesHealthStatusRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstancesHealthStatusRequest), arg0)
 }
 
-// GetInstancesHealthStatusWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusWithContext(arg0 context.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 ...request.Option) (*servicediscovery.GetInstancesHealthStatusOutput, error) {
+// GetInstancesHealthStatusWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusWithContext(arg0 aws.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 ...request.Option) (*servicediscovery.GetInstancesHealthStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -562,14 +461,14 @@ func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// GetInstancesHealthStatusWithContext indicates an expected call of GetInstancesHealthStatusWithContext.
+// GetInstancesHealthStatusWithContext indicates an expected call of GetInstancesHealthStatusWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInstancesHealthStatusWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetInstancesHealthStatusWithContext), varargs...)
 }
 
-// GetNamespace mocks base method.
+// GetNamespace mocks base method
 func (m *MockServiceDiscoveryAPI) GetNamespace(arg0 *servicediscovery.GetNamespaceInput) (*servicediscovery.GetNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetNamespace", arg0)
@@ -578,13 +477,13 @@ func (m *MockServiceDiscoveryAPI) GetNamespace(arg0 *servicediscovery.GetNamespa
 	return ret0, ret1
 }
 
-// GetNamespace indicates an expected call of GetNamespace.
+// GetNamespace indicates an expected call of GetNamespace
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetNamespace(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetNamespace), arg0)
 }
 
-// GetNamespaceRequest mocks base method.
+// GetNamespaceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) GetNamespaceRequest(arg0 *servicediscovery.GetNamespaceInput) (*request.Request, *servicediscovery.GetNamespaceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetNamespaceRequest", arg0)
@@ -593,14 +492,14 @@ func (m *MockServiceDiscoveryAPI) GetNamespaceRequest(arg0 *servicediscovery.Get
 	return ret0, ret1
 }
 
-// GetNamespaceRequest indicates an expected call of GetNamespaceRequest.
+// GetNamespaceRequest indicates an expected call of GetNamespaceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetNamespaceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetNamespaceRequest), arg0)
 }
 
-// GetNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) GetNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.GetNamespaceInput, arg2 ...request.Option) (*servicediscovery.GetNamespaceOutput, error) {
+// GetNamespaceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) GetNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.GetNamespaceInput, arg2 ...request.Option) (*servicediscovery.GetNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -612,14 +511,14 @@ func (m *MockServiceDiscoveryAPI) GetNamespaceWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetNamespaceWithContext indicates an expected call of GetNamespaceWithContext.
+// GetNamespaceWithContext indicates an expected call of GetNamespaceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetNamespaceWithContext), varargs...)
 }
 
-// GetOperation mocks base method.
+// GetOperation mocks base method
 func (m *MockServiceDiscoveryAPI) GetOperation(arg0 *servicediscovery.GetOperationInput) (*servicediscovery.GetOperationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOperation", arg0)
@@ -628,13 +527,13 @@ func (m *MockServiceDiscoveryAPI) GetOperation(arg0 *servicediscovery.GetOperati
 	return ret0, ret1
 }
 
-// GetOperation indicates an expected call of GetOperation.
+// GetOperation indicates an expected call of GetOperation
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetOperation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOperation", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetOperation), arg0)
 }
 
-// GetOperationRequest mocks base method.
+// GetOperationRequest mocks base method
 func (m *MockServiceDiscoveryAPI) GetOperationRequest(arg0 *servicediscovery.GetOperationInput) (*request.Request, *servicediscovery.GetOperationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOperationRequest", arg0)
@@ -643,14 +542,14 @@ func (m *MockServiceDiscoveryAPI) GetOperationRequest(arg0 *servicediscovery.Get
 	return ret0, ret1
 }
 
-// GetOperationRequest indicates an expected call of GetOperationRequest.
+// GetOperationRequest indicates an expected call of GetOperationRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetOperationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOperationRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetOperationRequest), arg0)
 }
 
-// GetOperationWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) GetOperationWithContext(arg0 context.Context, arg1 *servicediscovery.GetOperationInput, arg2 ...request.Option) (*servicediscovery.GetOperationOutput, error) {
+// GetOperationWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) GetOperationWithContext(arg0 aws.Context, arg1 *servicediscovery.GetOperationInput, arg2 ...request.Option) (*servicediscovery.GetOperationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -662,14 +561,14 @@ func (m *MockServiceDiscoveryAPI) GetOperationWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetOperationWithContext indicates an expected call of GetOperationWithContext.
+// GetOperationWithContext indicates an expected call of GetOperationWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetOperationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOperationWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetOperationWithContext), varargs...)
 }
 
-// GetService mocks base method.
+// GetService mocks base method
 func (m *MockServiceDiscoveryAPI) GetService(arg0 *servicediscovery.GetServiceInput) (*servicediscovery.GetServiceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetService", arg0)
@@ -678,13 +577,13 @@ func (m *MockServiceDiscoveryAPI) GetService(arg0 *servicediscovery.GetServiceIn
 	return ret0, ret1
 }
 
-// GetService indicates an expected call of GetService.
+// GetService indicates an expected call of GetService
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetService(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetService", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetService), arg0)
 }
 
-// GetServiceRequest mocks base method.
+// GetServiceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) GetServiceRequest(arg0 *servicediscovery.GetServiceInput) (*request.Request, *servicediscovery.GetServiceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetServiceRequest", arg0)
@@ -693,14 +592,14 @@ func (m *MockServiceDiscoveryAPI) GetServiceRequest(arg0 *servicediscovery.GetSe
 	return ret0, ret1
 }
 
-// GetServiceRequest indicates an expected call of GetServiceRequest.
+// GetServiceRequest indicates an expected call of GetServiceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetServiceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetServiceRequest), arg0)
 }
 
-// GetServiceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) GetServiceWithContext(arg0 context.Context, arg1 *servicediscovery.GetServiceInput, arg2 ...request.Option) (*servicediscovery.GetServiceOutput, error) {
+// GetServiceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) GetServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.GetServiceInput, arg2 ...request.Option) (*servicediscovery.GetServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -712,14 +611,14 @@ func (m *MockServiceDiscoveryAPI) GetServiceWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetServiceWithContext indicates an expected call of GetServiceWithContext.
+// GetServiceWithContext indicates an expected call of GetServiceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) GetServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).GetServiceWithContext), varargs...)
 }
 
-// ListInstances mocks base method.
+// ListInstances mocks base method
 func (m *MockServiceDiscoveryAPI) ListInstances(arg0 *servicediscovery.ListInstancesInput) (*servicediscovery.ListInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstances", arg0)
@@ -728,13 +627,13 @@ func (m *MockServiceDiscoveryAPI) ListInstances(arg0 *servicediscovery.ListInsta
 	return ret0, ret1
 }
 
-// ListInstances indicates an expected call of ListInstances.
+// ListInstances indicates an expected call of ListInstances
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstances(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstances", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListInstances), arg0)
 }
 
-// ListInstancesPages mocks base method.
+// ListInstancesPages mocks base method
 func (m *MockServiceDiscoveryAPI) ListInstancesPages(arg0 *servicediscovery.ListInstancesInput, arg1 func(*servicediscovery.ListInstancesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstancesPages", arg0, arg1)
@@ -742,14 +641,14 @@ func (m *MockServiceDiscoveryAPI) ListInstancesPages(arg0 *servicediscovery.List
 	return ret0
 }
 
-// ListInstancesPages indicates an expected call of ListInstancesPages.
+// ListInstancesPages indicates an expected call of ListInstancesPages
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstancesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesPages", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListInstancesPages), arg0, arg1)
 }
 
-// ListInstancesPagesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListInstancesPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListInstancesInput, arg2 func(*servicediscovery.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
+// ListInstancesPagesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListInstancesPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListInstancesInput, arg2 func(*servicediscovery.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -760,14 +659,14 @@ func (m *MockServiceDiscoveryAPI) ListInstancesPagesWithContext(arg0 context.Con
 	return ret0
 }
 
-// ListInstancesPagesWithContext indicates an expected call of ListInstancesPagesWithContext.
+// ListInstancesPagesWithContext indicates an expected call of ListInstancesPagesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesPagesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListInstancesPagesWithContext), varargs...)
 }
 
-// ListInstancesRequest mocks base method.
+// ListInstancesRequest mocks base method
 func (m *MockServiceDiscoveryAPI) ListInstancesRequest(arg0 *servicediscovery.ListInstancesInput) (*request.Request, *servicediscovery.ListInstancesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstancesRequest", arg0)
@@ -776,14 +675,14 @@ func (m *MockServiceDiscoveryAPI) ListInstancesRequest(arg0 *servicediscovery.Li
 	return ret0, ret1
 }
 
-// ListInstancesRequest indicates an expected call of ListInstancesRequest.
+// ListInstancesRequest indicates an expected call of ListInstancesRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstancesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListInstancesRequest), arg0)
 }
 
-// ListInstancesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListInstancesWithContext(arg0 context.Context, arg1 *servicediscovery.ListInstancesInput, arg2 ...request.Option) (*servicediscovery.ListInstancesOutput, error) {
+// ListInstancesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListInstancesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListInstancesInput, arg2 ...request.Option) (*servicediscovery.ListInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -795,14 +694,14 @@ func (m *MockServiceDiscoveryAPI) ListInstancesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListInstancesWithContext indicates an expected call of ListInstancesWithContext.
+// ListInstancesWithContext indicates an expected call of ListInstancesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListInstancesWithContext), varargs...)
 }
 
-// ListNamespaces mocks base method.
+// ListNamespaces mocks base method
 func (m *MockServiceDiscoveryAPI) ListNamespaces(arg0 *servicediscovery.ListNamespacesInput) (*servicediscovery.ListNamespacesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListNamespaces", arg0)
@@ -811,13 +710,13 @@ func (m *MockServiceDiscoveryAPI) ListNamespaces(arg0 *servicediscovery.ListName
 	return ret0, ret1
 }
 
-// ListNamespaces indicates an expected call of ListNamespaces.
+// ListNamespaces indicates an expected call of ListNamespaces
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespaces(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamespaces", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListNamespaces), arg0)
 }
 
-// ListNamespacesPages mocks base method.
+// ListNamespacesPages mocks base method
 func (m *MockServiceDiscoveryAPI) ListNamespacesPages(arg0 *servicediscovery.ListNamespacesInput, arg1 func(*servicediscovery.ListNamespacesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListNamespacesPages", arg0, arg1)
@@ -825,14 +724,14 @@ func (m *MockServiceDiscoveryAPI) ListNamespacesPages(arg0 *servicediscovery.Lis
 	return ret0
 }
 
-// ListNamespacesPages indicates an expected call of ListNamespacesPages.
+// ListNamespacesPages indicates an expected call of ListNamespacesPages
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespacesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamespacesPages", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListNamespacesPages), arg0, arg1)
 }
 
-// ListNamespacesPagesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListNamespacesPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 func(*servicediscovery.ListNamespacesOutput, bool) bool, arg3 ...request.Option) error {
+// ListNamespacesPagesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListNamespacesPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 func(*servicediscovery.ListNamespacesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -843,14 +742,14 @@ func (m *MockServiceDiscoveryAPI) ListNamespacesPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// ListNamespacesPagesWithContext indicates an expected call of ListNamespacesPagesWithContext.
+// ListNamespacesPagesWithContext indicates an expected call of ListNamespacesPagesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespacesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamespacesPagesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListNamespacesPagesWithContext), varargs...)
 }
 
-// ListNamespacesRequest mocks base method.
+// ListNamespacesRequest mocks base method
 func (m *MockServiceDiscoveryAPI) ListNamespacesRequest(arg0 *servicediscovery.ListNamespacesInput) (*request.Request, *servicediscovery.ListNamespacesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListNamespacesRequest", arg0)
@@ -859,14 +758,14 @@ func (m *MockServiceDiscoveryAPI) ListNamespacesRequest(arg0 *servicediscovery.L
 	return ret0, ret1
 }
 
-// ListNamespacesRequest indicates an expected call of ListNamespacesRequest.
+// ListNamespacesRequest indicates an expected call of ListNamespacesRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespacesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamespacesRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListNamespacesRequest), arg0)
 }
 
-// ListNamespacesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListNamespacesWithContext(arg0 context.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 ...request.Option) (*servicediscovery.ListNamespacesOutput, error) {
+// ListNamespacesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListNamespacesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 ...request.Option) (*servicediscovery.ListNamespacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -878,14 +777,14 @@ func (m *MockServiceDiscoveryAPI) ListNamespacesWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ListNamespacesWithContext indicates an expected call of ListNamespacesWithContext.
+// ListNamespacesWithContext indicates an expected call of ListNamespacesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespacesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamespacesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListNamespacesWithContext), varargs...)
 }
 
-// ListOperations mocks base method.
+// ListOperations mocks base method
 func (m *MockServiceDiscoveryAPI) ListOperations(arg0 *servicediscovery.ListOperationsInput) (*servicediscovery.ListOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOperations", arg0)
@@ -894,13 +793,13 @@ func (m *MockServiceDiscoveryAPI) ListOperations(arg0 *servicediscovery.ListOper
 	return ret0, ret1
 }
 
-// ListOperations indicates an expected call of ListOperations.
+// ListOperations indicates an expected call of ListOperations
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperations", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListOperations), arg0)
 }
 
-// ListOperationsPages mocks base method.
+// ListOperationsPages mocks base method
 func (m *MockServiceDiscoveryAPI) ListOperationsPages(arg0 *servicediscovery.ListOperationsInput, arg1 func(*servicediscovery.ListOperationsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOperationsPages", arg0, arg1)
@@ -908,14 +807,14 @@ func (m *MockServiceDiscoveryAPI) ListOperationsPages(arg0 *servicediscovery.Lis
 	return ret0
 }
 
-// ListOperationsPages indicates an expected call of ListOperationsPages.
+// ListOperationsPages indicates an expected call of ListOperationsPages
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperationsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsPages", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListOperationsPages), arg0, arg1)
 }
 
-// ListOperationsPagesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListOperationsPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListOperationsInput, arg2 func(*servicediscovery.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
+// ListOperationsPagesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListOperationsPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListOperationsInput, arg2 func(*servicediscovery.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -926,14 +825,14 @@ func (m *MockServiceDiscoveryAPI) ListOperationsPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// ListOperationsPagesWithContext indicates an expected call of ListOperationsPagesWithContext.
+// ListOperationsPagesWithContext indicates an expected call of ListOperationsPagesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsPagesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListOperationsPagesWithContext), varargs...)
 }
 
-// ListOperationsRequest mocks base method.
+// ListOperationsRequest mocks base method
 func (m *MockServiceDiscoveryAPI) ListOperationsRequest(arg0 *servicediscovery.ListOperationsInput) (*request.Request, *servicediscovery.ListOperationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOperationsRequest", arg0)
@@ -942,14 +841,14 @@ func (m *MockServiceDiscoveryAPI) ListOperationsRequest(arg0 *servicediscovery.L
 	return ret0, ret1
 }
 
-// ListOperationsRequest indicates an expected call of ListOperationsRequest.
+// ListOperationsRequest indicates an expected call of ListOperationsRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListOperationsRequest), arg0)
 }
 
-// ListOperationsWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListOperationsWithContext(arg0 context.Context, arg1 *servicediscovery.ListOperationsInput, arg2 ...request.Option) (*servicediscovery.ListOperationsOutput, error) {
+// ListOperationsWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListOperationsWithContext(arg0 aws.Context, arg1 *servicediscovery.ListOperationsInput, arg2 ...request.Option) (*servicediscovery.ListOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -961,14 +860,14 @@ func (m *MockServiceDiscoveryAPI) ListOperationsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ListOperationsWithContext indicates an expected call of ListOperationsWithContext.
+// ListOperationsWithContext indicates an expected call of ListOperationsWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListOperationsWithContext), varargs...)
 }
 
-// ListServices mocks base method.
+// ListServices mocks base method
 func (m *MockServiceDiscoveryAPI) ListServices(arg0 *servicediscovery.ListServicesInput) (*servicediscovery.ListServicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListServices", arg0)
@@ -977,13 +876,13 @@ func (m *MockServiceDiscoveryAPI) ListServices(arg0 *servicediscovery.ListServic
 	return ret0, ret1
 }
 
-// ListServices indicates an expected call of ListServices.
+// ListServices indicates an expected call of ListServices
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListServices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServices", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListServices), arg0)
 }
 
-// ListServicesPages mocks base method.
+// ListServicesPages mocks base method
 func (m *MockServiceDiscoveryAPI) ListServicesPages(arg0 *servicediscovery.ListServicesInput, arg1 func(*servicediscovery.ListServicesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListServicesPages", arg0, arg1)
@@ -991,14 +890,14 @@ func (m *MockServiceDiscoveryAPI) ListServicesPages(arg0 *servicediscovery.ListS
 	return ret0
 }
 
-// ListServicesPages indicates an expected call of ListServicesPages.
+// ListServicesPages indicates an expected call of ListServicesPages
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListServicesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesPages", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListServicesPages), arg0, arg1)
 }
 
-// ListServicesPagesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListServicesPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListServicesInput, arg2 func(*servicediscovery.ListServicesOutput, bool) bool, arg3 ...request.Option) error {
+// ListServicesPagesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListServicesPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListServicesInput, arg2 func(*servicediscovery.ListServicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1009,14 +908,14 @@ func (m *MockServiceDiscoveryAPI) ListServicesPagesWithContext(arg0 context.Cont
 	return ret0
 }
 
-// ListServicesPagesWithContext indicates an expected call of ListServicesPagesWithContext.
+// ListServicesPagesWithContext indicates an expected call of ListServicesPagesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListServicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesPagesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListServicesPagesWithContext), varargs...)
 }
 
-// ListServicesRequest mocks base method.
+// ListServicesRequest mocks base method
 func (m *MockServiceDiscoveryAPI) ListServicesRequest(arg0 *servicediscovery.ListServicesInput) (*request.Request, *servicediscovery.ListServicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListServicesRequest", arg0)
@@ -1025,14 +924,14 @@ func (m *MockServiceDiscoveryAPI) ListServicesRequest(arg0 *servicediscovery.Lis
 	return ret0, ret1
 }
 
-// ListServicesRequest indicates an expected call of ListServicesRequest.
+// ListServicesRequest indicates an expected call of ListServicesRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListServicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListServicesRequest), arg0)
 }
 
-// ListServicesWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListServicesWithContext(arg0 context.Context, arg1 *servicediscovery.ListServicesInput, arg2 ...request.Option) (*servicediscovery.ListServicesOutput, error) {
+// ListServicesWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) ListServicesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListServicesInput, arg2 ...request.Option) (*servicediscovery.ListServicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1044,64 +943,14 @@ func (m *MockServiceDiscoveryAPI) ListServicesWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListServicesWithContext indicates an expected call of ListServicesWithContext.
+// ListServicesWithContext indicates an expected call of ListServicesWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) ListServicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListServicesWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockServiceDiscoveryAPI) ListTagsForResource(arg0 *servicediscovery.ListTagsForResourceInput) (*servicediscovery.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*servicediscovery.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockServiceDiscoveryAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) ListTagsForResourceRequest(arg0 *servicediscovery.ListTagsForResourceInput) (*request.Request, *servicediscovery.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *servicediscovery.ListTagsForResourceInput, arg2 ...request.Option) (*servicediscovery.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// RegisterInstance mocks base method.
+// RegisterInstance mocks base method
 func (m *MockServiceDiscoveryAPI) RegisterInstance(arg0 *servicediscovery.RegisterInstanceInput) (*servicediscovery.RegisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterInstance", arg0)
@@ -1110,13 +959,13 @@ func (m *MockServiceDiscoveryAPI) RegisterInstance(arg0 *servicediscovery.Regist
 	return ret0, ret1
 }
 
-// RegisterInstance indicates an expected call of RegisterInstance.
+// RegisterInstance indicates an expected call of RegisterInstance
 func (mr *MockServiceDiscoveryAPIMockRecorder) RegisterInstance(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterInstance", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).RegisterInstance), arg0)
 }
 
-// RegisterInstanceRequest mocks base method.
+// RegisterInstanceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) RegisterInstanceRequest(arg0 *servicediscovery.RegisterInstanceInput) (*request.Request, *servicediscovery.RegisterInstanceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterInstanceRequest", arg0)
@@ -1125,14 +974,14 @@ func (m *MockServiceDiscoveryAPI) RegisterInstanceRequest(arg0 *servicediscovery
 	return ret0, ret1
 }
 
-// RegisterInstanceRequest indicates an expected call of RegisterInstanceRequest.
+// RegisterInstanceRequest indicates an expected call of RegisterInstanceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) RegisterInstanceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterInstanceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).RegisterInstanceRequest), arg0)
 }
 
-// RegisterInstanceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) RegisterInstanceWithContext(arg0 context.Context, arg1 *servicediscovery.RegisterInstanceInput, arg2 ...request.Option) (*servicediscovery.RegisterInstanceOutput, error) {
+// RegisterInstanceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) RegisterInstanceWithContext(arg0 aws.Context, arg1 *servicediscovery.RegisterInstanceInput, arg2 ...request.Option) (*servicediscovery.RegisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1144,164 +993,14 @@ func (m *MockServiceDiscoveryAPI) RegisterInstanceWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// RegisterInstanceWithContext indicates an expected call of RegisterInstanceWithContext.
+// RegisterInstanceWithContext indicates an expected call of RegisterInstanceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) RegisterInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterInstanceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).RegisterInstanceWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockServiceDiscoveryAPI) TagResource(arg0 *servicediscovery.TagResourceInput) (*servicediscovery.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*servicediscovery.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockServiceDiscoveryAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) TagResourceRequest(arg0 *servicediscovery.TagResourceInput) (*request.Request, *servicediscovery.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) TagResourceWithContext(arg0 context.Context, arg1 *servicediscovery.TagResourceInput, arg2 ...request.Option) (*servicediscovery.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockServiceDiscoveryAPI) UntagResource(arg0 *servicediscovery.UntagResourceInput) (*servicediscovery.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*servicediscovery.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) UntagResourceRequest(arg0 *servicediscovery.UntagResourceInput) (*request.Request, *servicediscovery.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) UntagResourceWithContext(arg0 context.Context, arg1 *servicediscovery.UntagResourceInput, arg2 ...request.Option) (*servicediscovery.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateHttpNamespace mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdateHttpNamespace(arg0 *servicediscovery.UpdateHttpNamespaceInput) (*servicediscovery.UpdateHttpNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateHttpNamespace", arg0)
-	ret0, _ := ret[0].(*servicediscovery.UpdateHttpNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateHttpNamespace indicates an expected call of UpdateHttpNamespace.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateHttpNamespace(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHttpNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateHttpNamespace), arg0)
-}
-
-// UpdateHttpNamespaceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdateHttpNamespaceRequest(arg0 *servicediscovery.UpdateHttpNamespaceInput) (*request.Request, *servicediscovery.UpdateHttpNamespaceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateHttpNamespaceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.UpdateHttpNamespaceOutput)
-	return ret0, ret1
-}
-
-// UpdateHttpNamespaceRequest indicates an expected call of UpdateHttpNamespaceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateHttpNamespaceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHttpNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateHttpNamespaceRequest), arg0)
-}
-
-// UpdateHttpNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdateHttpNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.UpdateHttpNamespaceInput, arg2 ...request.Option) (*servicediscovery.UpdateHttpNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateHttpNamespaceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.UpdateHttpNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateHttpNamespaceWithContext indicates an expected call of UpdateHttpNamespaceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateHttpNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHttpNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateHttpNamespaceWithContext), varargs...)
-}
-
-// UpdateInstanceCustomHealthStatus mocks base method.
+// UpdateInstanceCustomHealthStatus mocks base method
 func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatus(arg0 *servicediscovery.UpdateInstanceCustomHealthStatusInput) (*servicediscovery.UpdateInstanceCustomHealthStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateInstanceCustomHealthStatus", arg0)
@@ -1310,13 +1009,13 @@ func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatus(arg0 *service
 	return ret0, ret1
 }
 
-// UpdateInstanceCustomHealthStatus indicates an expected call of UpdateInstanceCustomHealthStatus.
+// UpdateInstanceCustomHealthStatus indicates an expected call of UpdateInstanceCustomHealthStatus
 func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateInstanceCustomHealthStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceCustomHealthStatus", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateInstanceCustomHealthStatus), arg0)
 }
 
-// UpdateInstanceCustomHealthStatusRequest mocks base method.
+// UpdateInstanceCustomHealthStatusRequest mocks base method
 func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusRequest(arg0 *servicediscovery.UpdateInstanceCustomHealthStatusInput) (*request.Request, *servicediscovery.UpdateInstanceCustomHealthStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateInstanceCustomHealthStatusRequest", arg0)
@@ -1325,14 +1024,14 @@ func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusRequest(arg0 *
 	return ret0, ret1
 }
 
-// UpdateInstanceCustomHealthStatusRequest indicates an expected call of UpdateInstanceCustomHealthStatusRequest.
+// UpdateInstanceCustomHealthStatusRequest indicates an expected call of UpdateInstanceCustomHealthStatusRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateInstanceCustomHealthStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceCustomHealthStatusRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateInstanceCustomHealthStatusRequest), arg0)
 }
 
-// UpdateInstanceCustomHealthStatusWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusWithContext(arg0 context.Context, arg1 *servicediscovery.UpdateInstanceCustomHealthStatusInput, arg2 ...request.Option) (*servicediscovery.UpdateInstanceCustomHealthStatusOutput, error) {
+// UpdateInstanceCustomHealthStatusWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusWithContext(arg0 aws.Context, arg1 *servicediscovery.UpdateInstanceCustomHealthStatusInput, arg2 ...request.Option) (*servicediscovery.UpdateInstanceCustomHealthStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1344,114 +1043,14 @@ func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusWithContext(ar
 	return ret0, ret1
 }
 
-// UpdateInstanceCustomHealthStatusWithContext indicates an expected call of UpdateInstanceCustomHealthStatusWithContext.
+// UpdateInstanceCustomHealthStatusWithContext indicates an expected call of UpdateInstanceCustomHealthStatusWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateInstanceCustomHealthStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceCustomHealthStatusWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateInstanceCustomHealthStatusWithContext), varargs...)
 }
 
-// UpdatePrivateDnsNamespace mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdatePrivateDnsNamespace(arg0 *servicediscovery.UpdatePrivateDnsNamespaceInput) (*servicediscovery.UpdatePrivateDnsNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdatePrivateDnsNamespace", arg0)
-	ret0, _ := ret[0].(*servicediscovery.UpdatePrivateDnsNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdatePrivateDnsNamespace indicates an expected call of UpdatePrivateDnsNamespace.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdatePrivateDnsNamespace(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePrivateDnsNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdatePrivateDnsNamespace), arg0)
-}
-
-// UpdatePrivateDnsNamespaceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdatePrivateDnsNamespaceRequest(arg0 *servicediscovery.UpdatePrivateDnsNamespaceInput) (*request.Request, *servicediscovery.UpdatePrivateDnsNamespaceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdatePrivateDnsNamespaceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.UpdatePrivateDnsNamespaceOutput)
-	return ret0, ret1
-}
-
-// UpdatePrivateDnsNamespaceRequest indicates an expected call of UpdatePrivateDnsNamespaceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdatePrivateDnsNamespaceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePrivateDnsNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdatePrivateDnsNamespaceRequest), arg0)
-}
-
-// UpdatePrivateDnsNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdatePrivateDnsNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.UpdatePrivateDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.UpdatePrivateDnsNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdatePrivateDnsNamespaceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.UpdatePrivateDnsNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdatePrivateDnsNamespaceWithContext indicates an expected call of UpdatePrivateDnsNamespaceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdatePrivateDnsNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePrivateDnsNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdatePrivateDnsNamespaceWithContext), varargs...)
-}
-
-// UpdatePublicDnsNamespace mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdatePublicDnsNamespace(arg0 *servicediscovery.UpdatePublicDnsNamespaceInput) (*servicediscovery.UpdatePublicDnsNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdatePublicDnsNamespace", arg0)
-	ret0, _ := ret[0].(*servicediscovery.UpdatePublicDnsNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdatePublicDnsNamespace indicates an expected call of UpdatePublicDnsNamespace.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdatePublicDnsNamespace(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicDnsNamespace", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdatePublicDnsNamespace), arg0)
-}
-
-// UpdatePublicDnsNamespaceRequest mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdatePublicDnsNamespaceRequest(arg0 *servicediscovery.UpdatePublicDnsNamespaceInput) (*request.Request, *servicediscovery.UpdatePublicDnsNamespaceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdatePublicDnsNamespaceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*servicediscovery.UpdatePublicDnsNamespaceOutput)
-	return ret0, ret1
-}
-
-// UpdatePublicDnsNamespaceRequest indicates an expected call of UpdatePublicDnsNamespaceRequest.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdatePublicDnsNamespaceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicDnsNamespaceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdatePublicDnsNamespaceRequest), arg0)
-}
-
-// UpdatePublicDnsNamespaceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdatePublicDnsNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.UpdatePublicDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.UpdatePublicDnsNamespaceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdatePublicDnsNamespaceWithContext", varargs...)
-	ret0, _ := ret[0].(*servicediscovery.UpdatePublicDnsNamespaceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdatePublicDnsNamespaceWithContext indicates an expected call of UpdatePublicDnsNamespaceWithContext.
-func (mr *MockServiceDiscoveryAPIMockRecorder) UpdatePublicDnsNamespaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicDnsNamespaceWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdatePublicDnsNamespaceWithContext), varargs...)
-}
-
-// UpdateService mocks base method.
+// UpdateService mocks base method
 func (m *MockServiceDiscoveryAPI) UpdateService(arg0 *servicediscovery.UpdateServiceInput) (*servicediscovery.UpdateServiceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateService", arg0)
@@ -1460,13 +1059,13 @@ func (m *MockServiceDiscoveryAPI) UpdateService(arg0 *servicediscovery.UpdateSer
 	return ret0, ret1
 }
 
-// UpdateService indicates an expected call of UpdateService.
+// UpdateService indicates an expected call of UpdateService
 func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateService(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateService", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateService), arg0)
 }
 
-// UpdateServiceRequest mocks base method.
+// UpdateServiceRequest mocks base method
 func (m *MockServiceDiscoveryAPI) UpdateServiceRequest(arg0 *servicediscovery.UpdateServiceInput) (*request.Request, *servicediscovery.UpdateServiceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateServiceRequest", arg0)
@@ -1475,14 +1074,14 @@ func (m *MockServiceDiscoveryAPI) UpdateServiceRequest(arg0 *servicediscovery.Up
 	return ret0, ret1
 }
 
-// UpdateServiceRequest indicates an expected call of UpdateServiceRequest.
+// UpdateServiceRequest indicates an expected call of UpdateServiceRequest
 func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateServiceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).UpdateServiceRequest), arg0)
 }
 
-// UpdateServiceWithContext mocks base method.
-func (m *MockServiceDiscoveryAPI) UpdateServiceWithContext(arg0 context.Context, arg1 *servicediscovery.UpdateServiceInput, arg2 ...request.Option) (*servicediscovery.UpdateServiceOutput, error) {
+// UpdateServiceWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) UpdateServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.UpdateServiceInput, arg2 ...request.Option) (*servicediscovery.UpdateServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1494,7 +1093,7 @@ func (m *MockServiceDiscoveryAPI) UpdateServiceWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateServiceWithContext indicates an expected call of UpdateServiceWithContext.
+// UpdateServiceWithContext indicates an expected call of UpdateServiceWithContext
 func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

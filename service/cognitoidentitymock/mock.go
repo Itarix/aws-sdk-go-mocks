@@ -5,38 +5,37 @@
 package cognitoidentitymock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cognitoidentity "github.com/aws/aws-sdk-go/service/cognitoidentity"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockCognitoIdentityAPI is a mock of CognitoIdentityAPI interface.
+// MockCognitoIdentityAPI is a mock of CognitoIdentityAPI interface
 type MockCognitoIdentityAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockCognitoIdentityAPIMockRecorder
 }
 
-// MockCognitoIdentityAPIMockRecorder is the mock recorder for MockCognitoIdentityAPI.
+// MockCognitoIdentityAPIMockRecorder is the mock recorder for MockCognitoIdentityAPI
 type MockCognitoIdentityAPIMockRecorder struct {
 	mock *MockCognitoIdentityAPI
 }
 
-// NewMockCognitoIdentityAPI creates a new mock instance.
+// NewMockCognitoIdentityAPI creates a new mock instance
 func NewMockCognitoIdentityAPI(ctrl *gomock.Controller) *MockCognitoIdentityAPI {
 	mock := &MockCognitoIdentityAPI{ctrl: ctrl}
 	mock.recorder = &MockCognitoIdentityAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockCognitoIdentityAPI) EXPECT() *MockCognitoIdentityAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateIdentityPool mocks base method.
+// CreateIdentityPool mocks base method
 func (m *MockCognitoIdentityAPI) CreateIdentityPool(arg0 *cognitoidentity.CreateIdentityPoolInput) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateIdentityPool", arg0)
@@ -45,13 +44,13 @@ func (m *MockCognitoIdentityAPI) CreateIdentityPool(arg0 *cognitoidentity.Create
 	return ret0, ret1
 }
 
-// CreateIdentityPool indicates an expected call of CreateIdentityPool.
+// CreateIdentityPool indicates an expected call of CreateIdentityPool
 func (mr *MockCognitoIdentityAPIMockRecorder) CreateIdentityPool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdentityPool", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).CreateIdentityPool), arg0)
 }
 
-// CreateIdentityPoolRequest mocks base method.
+// CreateIdentityPoolRequest mocks base method
 func (m *MockCognitoIdentityAPI) CreateIdentityPoolRequest(arg0 *cognitoidentity.CreateIdentityPoolInput) (*request.Request, *cognitoidentity.IdentityPool) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateIdentityPoolRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockCognitoIdentityAPI) CreateIdentityPoolRequest(arg0 *cognitoidentity
 	return ret0, ret1
 }
 
-// CreateIdentityPoolRequest indicates an expected call of CreateIdentityPoolRequest.
+// CreateIdentityPoolRequest indicates an expected call of CreateIdentityPoolRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) CreateIdentityPoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdentityPoolRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).CreateIdentityPoolRequest), arg0)
 }
 
-// CreateIdentityPoolWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) CreateIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.CreateIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
+// CreateIdentityPoolWithContext mocks base method
+func (m *MockCognitoIdentityAPI) CreateIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.CreateIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockCognitoIdentityAPI) CreateIdentityPoolWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateIdentityPoolWithContext indicates an expected call of CreateIdentityPoolWithContext.
+// CreateIdentityPoolWithContext indicates an expected call of CreateIdentityPoolWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) CreateIdentityPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdentityPoolWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).CreateIdentityPoolWithContext), varargs...)
 }
 
-// DeleteIdentities mocks base method.
+// DeleteIdentities mocks base method
 func (m *MockCognitoIdentityAPI) DeleteIdentities(arg0 *cognitoidentity.DeleteIdentitiesInput) (*cognitoidentity.DeleteIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIdentities", arg0)
@@ -95,13 +94,13 @@ func (m *MockCognitoIdentityAPI) DeleteIdentities(arg0 *cognitoidentity.DeleteId
 	return ret0, ret1
 }
 
-// DeleteIdentities indicates an expected call of DeleteIdentities.
+// DeleteIdentities indicates an expected call of DeleteIdentities
 func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentities(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentities", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DeleteIdentities), arg0)
 }
 
-// DeleteIdentitiesRequest mocks base method.
+// DeleteIdentitiesRequest mocks base method
 func (m *MockCognitoIdentityAPI) DeleteIdentitiesRequest(arg0 *cognitoidentity.DeleteIdentitiesInput) (*request.Request, *cognitoidentity.DeleteIdentitiesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIdentitiesRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockCognitoIdentityAPI) DeleteIdentitiesRequest(arg0 *cognitoidentity.D
 	return ret0, ret1
 }
 
-// DeleteIdentitiesRequest indicates an expected call of DeleteIdentitiesRequest.
+// DeleteIdentitiesRequest indicates an expected call of DeleteIdentitiesRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentitiesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentitiesRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DeleteIdentitiesRequest), arg0)
 }
 
-// DeleteIdentitiesWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) DeleteIdentitiesWithContext(arg0 context.Context, arg1 *cognitoidentity.DeleteIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentitiesOutput, error) {
+// DeleteIdentitiesWithContext mocks base method
+func (m *MockCognitoIdentityAPI) DeleteIdentitiesWithContext(arg0 aws.Context, arg1 *cognitoidentity.DeleteIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockCognitoIdentityAPI) DeleteIdentitiesWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteIdentitiesWithContext indicates an expected call of DeleteIdentitiesWithContext.
+// DeleteIdentitiesWithContext indicates an expected call of DeleteIdentitiesWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentitiesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DeleteIdentitiesWithContext), varargs...)
 }
 
-// DeleteIdentityPool mocks base method.
+// DeleteIdentityPool mocks base method
 func (m *MockCognitoIdentityAPI) DeleteIdentityPool(arg0 *cognitoidentity.DeleteIdentityPoolInput) (*cognitoidentity.DeleteIdentityPoolOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIdentityPool", arg0)
@@ -145,13 +144,13 @@ func (m *MockCognitoIdentityAPI) DeleteIdentityPool(arg0 *cognitoidentity.Delete
 	return ret0, ret1
 }
 
-// DeleteIdentityPool indicates an expected call of DeleteIdentityPool.
+// DeleteIdentityPool indicates an expected call of DeleteIdentityPool
 func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentityPool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentityPool", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DeleteIdentityPool), arg0)
 }
 
-// DeleteIdentityPoolRequest mocks base method.
+// DeleteIdentityPoolRequest mocks base method
 func (m *MockCognitoIdentityAPI) DeleteIdentityPoolRequest(arg0 *cognitoidentity.DeleteIdentityPoolInput) (*request.Request, *cognitoidentity.DeleteIdentityPoolOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIdentityPoolRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockCognitoIdentityAPI) DeleteIdentityPoolRequest(arg0 *cognitoidentity
 	return ret0, ret1
 }
 
-// DeleteIdentityPoolRequest indicates an expected call of DeleteIdentityPoolRequest.
+// DeleteIdentityPoolRequest indicates an expected call of DeleteIdentityPoolRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentityPoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentityPoolRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DeleteIdentityPoolRequest), arg0)
 }
 
-// DeleteIdentityPoolWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) DeleteIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.DeleteIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentityPoolOutput, error) {
+// DeleteIdentityPoolWithContext mocks base method
+func (m *MockCognitoIdentityAPI) DeleteIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.DeleteIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentityPoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockCognitoIdentityAPI) DeleteIdentityPoolWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteIdentityPoolWithContext indicates an expected call of DeleteIdentityPoolWithContext.
+// DeleteIdentityPoolWithContext indicates an expected call of DeleteIdentityPoolWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentityPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentityPoolWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DeleteIdentityPoolWithContext), varargs...)
 }
 
-// DescribeIdentity mocks base method.
+// DescribeIdentity mocks base method
 func (m *MockCognitoIdentityAPI) DescribeIdentity(arg0 *cognitoidentity.DescribeIdentityInput) (*cognitoidentity.IdentityDescription, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeIdentity", arg0)
@@ -195,13 +194,13 @@ func (m *MockCognitoIdentityAPI) DescribeIdentity(arg0 *cognitoidentity.Describe
 	return ret0, ret1
 }
 
-// DescribeIdentity indicates an expected call of DescribeIdentity.
+// DescribeIdentity indicates an expected call of DescribeIdentity
 func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIdentity", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DescribeIdentity), arg0)
 }
 
-// DescribeIdentityPool mocks base method.
+// DescribeIdentityPool mocks base method
 func (m *MockCognitoIdentityAPI) DescribeIdentityPool(arg0 *cognitoidentity.DescribeIdentityPoolInput) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeIdentityPool", arg0)
@@ -210,13 +209,13 @@ func (m *MockCognitoIdentityAPI) DescribeIdentityPool(arg0 *cognitoidentity.Desc
 	return ret0, ret1
 }
 
-// DescribeIdentityPool indicates an expected call of DescribeIdentityPool.
+// DescribeIdentityPool indicates an expected call of DescribeIdentityPool
 func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityPool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIdentityPool", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DescribeIdentityPool), arg0)
 }
 
-// DescribeIdentityPoolRequest mocks base method.
+// DescribeIdentityPoolRequest mocks base method
 func (m *MockCognitoIdentityAPI) DescribeIdentityPoolRequest(arg0 *cognitoidentity.DescribeIdentityPoolInput) (*request.Request, *cognitoidentity.IdentityPool) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeIdentityPoolRequest", arg0)
@@ -225,14 +224,14 @@ func (m *MockCognitoIdentityAPI) DescribeIdentityPoolRequest(arg0 *cognitoidenti
 	return ret0, ret1
 }
 
-// DescribeIdentityPoolRequest indicates an expected call of DescribeIdentityPoolRequest.
+// DescribeIdentityPoolRequest indicates an expected call of DescribeIdentityPoolRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityPoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIdentityPoolRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DescribeIdentityPoolRequest), arg0)
 }
 
-// DescribeIdentityPoolWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) DescribeIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.DescribeIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
+// DescribeIdentityPoolWithContext mocks base method
+func (m *MockCognitoIdentityAPI) DescribeIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.DescribeIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -244,14 +243,14 @@ func (m *MockCognitoIdentityAPI) DescribeIdentityPoolWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DescribeIdentityPoolWithContext indicates an expected call of DescribeIdentityPoolWithContext.
+// DescribeIdentityPoolWithContext indicates an expected call of DescribeIdentityPoolWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIdentityPoolWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DescribeIdentityPoolWithContext), varargs...)
 }
 
-// DescribeIdentityRequest mocks base method.
+// DescribeIdentityRequest mocks base method
 func (m *MockCognitoIdentityAPI) DescribeIdentityRequest(arg0 *cognitoidentity.DescribeIdentityInput) (*request.Request, *cognitoidentity.IdentityDescription) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeIdentityRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockCognitoIdentityAPI) DescribeIdentityRequest(arg0 *cognitoidentity.D
 	return ret0, ret1
 }
 
-// DescribeIdentityRequest indicates an expected call of DescribeIdentityRequest.
+// DescribeIdentityRequest indicates an expected call of DescribeIdentityRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIdentityRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DescribeIdentityRequest), arg0)
 }
 
-// DescribeIdentityWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) DescribeIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.DescribeIdentityInput, arg2 ...request.Option) (*cognitoidentity.IdentityDescription, error) {
+// DescribeIdentityWithContext mocks base method
+func (m *MockCognitoIdentityAPI) DescribeIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.DescribeIdentityInput, arg2 ...request.Option) (*cognitoidentity.IdentityDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockCognitoIdentityAPI) DescribeIdentityWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DescribeIdentityWithContext indicates an expected call of DescribeIdentityWithContext.
+// DescribeIdentityWithContext indicates an expected call of DescribeIdentityWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIdentityWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).DescribeIdentityWithContext), varargs...)
 }
 
-// GetCredentialsForIdentity mocks base method.
+// GetCredentialsForIdentity mocks base method
 func (m *MockCognitoIdentityAPI) GetCredentialsForIdentity(arg0 *cognitoidentity.GetCredentialsForIdentityInput) (*cognitoidentity.GetCredentialsForIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetCredentialsForIdentity", arg0)
@@ -295,13 +294,13 @@ func (m *MockCognitoIdentityAPI) GetCredentialsForIdentity(arg0 *cognitoidentity
 	return ret0, ret1
 }
 
-// GetCredentialsForIdentity indicates an expected call of GetCredentialsForIdentity.
+// GetCredentialsForIdentity indicates an expected call of GetCredentialsForIdentity
 func (mr *MockCognitoIdentityAPIMockRecorder) GetCredentialsForIdentity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCredentialsForIdentity", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetCredentialsForIdentity), arg0)
 }
 
-// GetCredentialsForIdentityRequest mocks base method.
+// GetCredentialsForIdentityRequest mocks base method
 func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityRequest(arg0 *cognitoidentity.GetCredentialsForIdentityInput) (*request.Request, *cognitoidentity.GetCredentialsForIdentityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetCredentialsForIdentityRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityRequest(arg0 *cognitoi
 	return ret0, ret1
 }
 
-// GetCredentialsForIdentityRequest indicates an expected call of GetCredentialsForIdentityRequest.
+// GetCredentialsForIdentityRequest indicates an expected call of GetCredentialsForIdentityRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) GetCredentialsForIdentityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCredentialsForIdentityRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetCredentialsForIdentityRequest), arg0)
 }
 
-// GetCredentialsForIdentityWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.GetCredentialsForIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetCredentialsForIdentityOutput, error) {
+// GetCredentialsForIdentityWithContext mocks base method
+func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetCredentialsForIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetCredentialsForIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// GetCredentialsForIdentityWithContext indicates an expected call of GetCredentialsForIdentityWithContext.
+// GetCredentialsForIdentityWithContext indicates an expected call of GetCredentialsForIdentityWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) GetCredentialsForIdentityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCredentialsForIdentityWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetCredentialsForIdentityWithContext), varargs...)
 }
 
-// GetId mocks base method.
+// GetId mocks base method
 func (m *MockCognitoIdentityAPI) GetId(arg0 *cognitoidentity.GetIdInput) (*cognitoidentity.GetIdOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetId", arg0)
@@ -345,13 +344,13 @@ func (m *MockCognitoIdentityAPI) GetId(arg0 *cognitoidentity.GetIdInput) (*cogni
 	return ret0, ret1
 }
 
-// GetId indicates an expected call of GetId.
+// GetId indicates an expected call of GetId
 func (mr *MockCognitoIdentityAPIMockRecorder) GetId(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetId", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetId), arg0)
 }
 
-// GetIdRequest mocks base method.
+// GetIdRequest mocks base method
 func (m *MockCognitoIdentityAPI) GetIdRequest(arg0 *cognitoidentity.GetIdInput) (*request.Request, *cognitoidentity.GetIdOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIdRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockCognitoIdentityAPI) GetIdRequest(arg0 *cognitoidentity.GetIdInput) 
 	return ret0, ret1
 }
 
-// GetIdRequest indicates an expected call of GetIdRequest.
+// GetIdRequest indicates an expected call of GetIdRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) GetIdRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetIdRequest), arg0)
 }
 
-// GetIdWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) GetIdWithContext(arg0 context.Context, arg1 *cognitoidentity.GetIdInput, arg2 ...request.Option) (*cognitoidentity.GetIdOutput, error) {
+// GetIdWithContext mocks base method
+func (m *MockCognitoIdentityAPI) GetIdWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetIdInput, arg2 ...request.Option) (*cognitoidentity.GetIdOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockCognitoIdentityAPI) GetIdWithContext(arg0 context.Context, arg1 *co
 	return ret0, ret1
 }
 
-// GetIdWithContext indicates an expected call of GetIdWithContext.
+// GetIdWithContext indicates an expected call of GetIdWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) GetIdWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetIdWithContext), varargs...)
 }
 
-// GetIdentityPoolRoles mocks base method.
+// GetIdentityPoolRoles mocks base method
 func (m *MockCognitoIdentityAPI) GetIdentityPoolRoles(arg0 *cognitoidentity.GetIdentityPoolRolesInput) (*cognitoidentity.GetIdentityPoolRolesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIdentityPoolRoles", arg0)
@@ -395,13 +394,13 @@ func (m *MockCognitoIdentityAPI) GetIdentityPoolRoles(arg0 *cognitoidentity.GetI
 	return ret0, ret1
 }
 
-// GetIdentityPoolRoles indicates an expected call of GetIdentityPoolRoles.
+// GetIdentityPoolRoles indicates an expected call of GetIdentityPoolRoles
 func (mr *MockCognitoIdentityAPIMockRecorder) GetIdentityPoolRoles(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdentityPoolRoles", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetIdentityPoolRoles), arg0)
 }
 
-// GetIdentityPoolRolesRequest mocks base method.
+// GetIdentityPoolRolesRequest mocks base method
 func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesRequest(arg0 *cognitoidentity.GetIdentityPoolRolesInput) (*request.Request, *cognitoidentity.GetIdentityPoolRolesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIdentityPoolRolesRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesRequest(arg0 *cognitoidenti
 	return ret0, ret1
 }
 
-// GetIdentityPoolRolesRequest indicates an expected call of GetIdentityPoolRolesRequest.
+// GetIdentityPoolRolesRequest indicates an expected call of GetIdentityPoolRolesRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) GetIdentityPoolRolesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdentityPoolRolesRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetIdentityPoolRolesRequest), arg0)
 }
 
-// GetIdentityPoolRolesWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesWithContext(arg0 context.Context, arg1 *cognitoidentity.GetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.GetIdentityPoolRolesOutput, error) {
+// GetIdentityPoolRolesWithContext mocks base method
+func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.GetIdentityPoolRolesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// GetIdentityPoolRolesWithContext indicates an expected call of GetIdentityPoolRolesWithContext.
+// GetIdentityPoolRolesWithContext indicates an expected call of GetIdentityPoolRolesWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) GetIdentityPoolRolesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdentityPoolRolesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetIdentityPoolRolesWithContext), varargs...)
 }
 
-// GetOpenIdToken mocks base method.
+// GetOpenIdToken mocks base method
 func (m *MockCognitoIdentityAPI) GetOpenIdToken(arg0 *cognitoidentity.GetOpenIdTokenInput) (*cognitoidentity.GetOpenIdTokenOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOpenIdToken", arg0)
@@ -445,13 +444,13 @@ func (m *MockCognitoIdentityAPI) GetOpenIdToken(arg0 *cognitoidentity.GetOpenIdT
 	return ret0, ret1
 }
 
-// GetOpenIdToken indicates an expected call of GetOpenIdToken.
+// GetOpenIdToken indicates an expected call of GetOpenIdToken
 func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdToken(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdToken", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdToken), arg0)
 }
 
-// GetOpenIdTokenForDeveloperIdentity mocks base method.
+// GetOpenIdTokenForDeveloperIdentity mocks base method
 func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentity(arg0 *cognitoidentity.GetOpenIdTokenForDeveloperIdentityInput) (*cognitoidentity.GetOpenIdTokenForDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOpenIdTokenForDeveloperIdentity", arg0)
@@ -460,13 +459,13 @@ func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentity(arg0 *cognit
 	return ret0, ret1
 }
 
-// GetOpenIdTokenForDeveloperIdentity indicates an expected call of GetOpenIdTokenForDeveloperIdentity.
+// GetOpenIdTokenForDeveloperIdentity indicates an expected call of GetOpenIdTokenForDeveloperIdentity
 func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenForDeveloperIdentity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdTokenForDeveloperIdentity", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdTokenForDeveloperIdentity), arg0)
 }
 
-// GetOpenIdTokenForDeveloperIdentityRequest mocks base method.
+// GetOpenIdTokenForDeveloperIdentityRequest mocks base method
 func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityRequest(arg0 *cognitoidentity.GetOpenIdTokenForDeveloperIdentityInput) (*request.Request, *cognitoidentity.GetOpenIdTokenForDeveloperIdentityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOpenIdTokenForDeveloperIdentityRequest", arg0)
@@ -475,14 +474,14 @@ func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityRequest(arg0 
 	return ret0, ret1
 }
 
-// GetOpenIdTokenForDeveloperIdentityRequest indicates an expected call of GetOpenIdTokenForDeveloperIdentityRequest.
+// GetOpenIdTokenForDeveloperIdentityRequest indicates an expected call of GetOpenIdTokenForDeveloperIdentityRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenForDeveloperIdentityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdTokenForDeveloperIdentityRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdTokenForDeveloperIdentityRequest), arg0)
 }
 
-// GetOpenIdTokenForDeveloperIdentityWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.GetOpenIdTokenForDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenForDeveloperIdentityOutput, error) {
+// GetOpenIdTokenForDeveloperIdentityWithContext mocks base method
+func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetOpenIdTokenForDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenForDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -494,14 +493,14 @@ func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityWithContext(a
 	return ret0, ret1
 }
 
-// GetOpenIdTokenForDeveloperIdentityWithContext indicates an expected call of GetOpenIdTokenForDeveloperIdentityWithContext.
+// GetOpenIdTokenForDeveloperIdentityWithContext indicates an expected call of GetOpenIdTokenForDeveloperIdentityWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenForDeveloperIdentityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdTokenForDeveloperIdentityWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdTokenForDeveloperIdentityWithContext), varargs...)
 }
 
-// GetOpenIdTokenRequest mocks base method.
+// GetOpenIdTokenRequest mocks base method
 func (m *MockCognitoIdentityAPI) GetOpenIdTokenRequest(arg0 *cognitoidentity.GetOpenIdTokenInput) (*request.Request, *cognitoidentity.GetOpenIdTokenOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOpenIdTokenRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockCognitoIdentityAPI) GetOpenIdTokenRequest(arg0 *cognitoidentity.Get
 	return ret0, ret1
 }
 
-// GetOpenIdTokenRequest indicates an expected call of GetOpenIdTokenRequest.
+// GetOpenIdTokenRequest indicates an expected call of GetOpenIdTokenRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdTokenRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdTokenRequest), arg0)
 }
 
-// GetOpenIdTokenWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) GetOpenIdTokenWithContext(arg0 context.Context, arg1 *cognitoidentity.GetOpenIdTokenInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenOutput, error) {
+// GetOpenIdTokenWithContext mocks base method
+func (m *MockCognitoIdentityAPI) GetOpenIdTokenWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetOpenIdTokenInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,64 +528,14 @@ func (m *MockCognitoIdentityAPI) GetOpenIdTokenWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetOpenIdTokenWithContext indicates an expected call of GetOpenIdTokenWithContext.
+// GetOpenIdTokenWithContext indicates an expected call of GetOpenIdTokenWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdTokenWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdTokenWithContext), varargs...)
 }
 
-// GetPrincipalTagAttributeMap mocks base method.
-func (m *MockCognitoIdentityAPI) GetPrincipalTagAttributeMap(arg0 *cognitoidentity.GetPrincipalTagAttributeMapInput) (*cognitoidentity.GetPrincipalTagAttributeMapOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetPrincipalTagAttributeMap", arg0)
-	ret0, _ := ret[0].(*cognitoidentity.GetPrincipalTagAttributeMapOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetPrincipalTagAttributeMap indicates an expected call of GetPrincipalTagAttributeMap.
-func (mr *MockCognitoIdentityAPIMockRecorder) GetPrincipalTagAttributeMap(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrincipalTagAttributeMap", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetPrincipalTagAttributeMap), arg0)
-}
-
-// GetPrincipalTagAttributeMapRequest mocks base method.
-func (m *MockCognitoIdentityAPI) GetPrincipalTagAttributeMapRequest(arg0 *cognitoidentity.GetPrincipalTagAttributeMapInput) (*request.Request, *cognitoidentity.GetPrincipalTagAttributeMapOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetPrincipalTagAttributeMapRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cognitoidentity.GetPrincipalTagAttributeMapOutput)
-	return ret0, ret1
-}
-
-// GetPrincipalTagAttributeMapRequest indicates an expected call of GetPrincipalTagAttributeMapRequest.
-func (mr *MockCognitoIdentityAPIMockRecorder) GetPrincipalTagAttributeMapRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrincipalTagAttributeMapRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetPrincipalTagAttributeMapRequest), arg0)
-}
-
-// GetPrincipalTagAttributeMapWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) GetPrincipalTagAttributeMapWithContext(arg0 context.Context, arg1 *cognitoidentity.GetPrincipalTagAttributeMapInput, arg2 ...request.Option) (*cognitoidentity.GetPrincipalTagAttributeMapOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetPrincipalTagAttributeMapWithContext", varargs...)
-	ret0, _ := ret[0].(*cognitoidentity.GetPrincipalTagAttributeMapOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetPrincipalTagAttributeMapWithContext indicates an expected call of GetPrincipalTagAttributeMapWithContext.
-func (mr *MockCognitoIdentityAPIMockRecorder) GetPrincipalTagAttributeMapWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrincipalTagAttributeMapWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetPrincipalTagAttributeMapWithContext), varargs...)
-}
-
-// ListIdentities mocks base method.
+// ListIdentities mocks base method
 func (m *MockCognitoIdentityAPI) ListIdentities(arg0 *cognitoidentity.ListIdentitiesInput) (*cognitoidentity.ListIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIdentities", arg0)
@@ -595,13 +544,13 @@ func (m *MockCognitoIdentityAPI) ListIdentities(arg0 *cognitoidentity.ListIdenti
 	return ret0, ret1
 }
 
-// ListIdentities indicates an expected call of ListIdentities.
+// ListIdentities indicates an expected call of ListIdentities
 func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentities(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentities", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentities), arg0)
 }
 
-// ListIdentitiesRequest mocks base method.
+// ListIdentitiesRequest mocks base method
 func (m *MockCognitoIdentityAPI) ListIdentitiesRequest(arg0 *cognitoidentity.ListIdentitiesInput) (*request.Request, *cognitoidentity.ListIdentitiesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIdentitiesRequest", arg0)
@@ -610,14 +559,14 @@ func (m *MockCognitoIdentityAPI) ListIdentitiesRequest(arg0 *cognitoidentity.Lis
 	return ret0, ret1
 }
 
-// ListIdentitiesRequest indicates an expected call of ListIdentitiesRequest.
+// ListIdentitiesRequest indicates an expected call of ListIdentitiesRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentitiesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentitiesRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentitiesRequest), arg0)
 }
 
-// ListIdentitiesWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) ListIdentitiesWithContext(arg0 context.Context, arg1 *cognitoidentity.ListIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.ListIdentitiesOutput, error) {
+// ListIdentitiesWithContext mocks base method
+func (m *MockCognitoIdentityAPI) ListIdentitiesWithContext(arg0 aws.Context, arg1 *cognitoidentity.ListIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.ListIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +578,14 @@ func (m *MockCognitoIdentityAPI) ListIdentitiesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListIdentitiesWithContext indicates an expected call of ListIdentitiesWithContext.
+// ListIdentitiesWithContext indicates an expected call of ListIdentitiesWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentitiesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentitiesWithContext), varargs...)
 }
 
-// ListIdentityPools mocks base method.
+// ListIdentityPools mocks base method
 func (m *MockCognitoIdentityAPI) ListIdentityPools(arg0 *cognitoidentity.ListIdentityPoolsInput) (*cognitoidentity.ListIdentityPoolsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIdentityPools", arg0)
@@ -645,46 +594,13 @@ func (m *MockCognitoIdentityAPI) ListIdentityPools(arg0 *cognitoidentity.ListIde
 	return ret0, ret1
 }
 
-// ListIdentityPools indicates an expected call of ListIdentityPools.
+// ListIdentityPools indicates an expected call of ListIdentityPools
 func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPools(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPools", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPools), arg0)
 }
 
-// ListIdentityPoolsPages mocks base method.
-func (m *MockCognitoIdentityAPI) ListIdentityPoolsPages(arg0 *cognitoidentity.ListIdentityPoolsInput, arg1 func(*cognitoidentity.ListIdentityPoolsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListIdentityPoolsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListIdentityPoolsPages indicates an expected call of ListIdentityPoolsPages.
-func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPoolsPages", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPoolsPages), arg0, arg1)
-}
-
-// ListIdentityPoolsPagesWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) ListIdentityPoolsPagesWithContext(arg0 context.Context, arg1 *cognitoidentity.ListIdentityPoolsInput, arg2 func(*cognitoidentity.ListIdentityPoolsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListIdentityPoolsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListIdentityPoolsPagesWithContext indicates an expected call of ListIdentityPoolsPagesWithContext.
-func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPoolsPagesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPoolsPagesWithContext), varargs...)
-}
-
-// ListIdentityPoolsRequest mocks base method.
+// ListIdentityPoolsRequest mocks base method
 func (m *MockCognitoIdentityAPI) ListIdentityPoolsRequest(arg0 *cognitoidentity.ListIdentityPoolsInput) (*request.Request, *cognitoidentity.ListIdentityPoolsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListIdentityPoolsRequest", arg0)
@@ -693,14 +609,14 @@ func (m *MockCognitoIdentityAPI) ListIdentityPoolsRequest(arg0 *cognitoidentity.
 	return ret0, ret1
 }
 
-// ListIdentityPoolsRequest indicates an expected call of ListIdentityPoolsRequest.
+// ListIdentityPoolsRequest indicates an expected call of ListIdentityPoolsRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPoolsRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPoolsRequest), arg0)
 }
 
-// ListIdentityPoolsWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) ListIdentityPoolsWithContext(arg0 context.Context, arg1 *cognitoidentity.ListIdentityPoolsInput, arg2 ...request.Option) (*cognitoidentity.ListIdentityPoolsOutput, error) {
+// ListIdentityPoolsWithContext mocks base method
+func (m *MockCognitoIdentityAPI) ListIdentityPoolsWithContext(arg0 aws.Context, arg1 *cognitoidentity.ListIdentityPoolsInput, arg2 ...request.Option) (*cognitoidentity.ListIdentityPoolsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -712,64 +628,14 @@ func (m *MockCognitoIdentityAPI) ListIdentityPoolsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListIdentityPoolsWithContext indicates an expected call of ListIdentityPoolsWithContext.
+// ListIdentityPoolsWithContext indicates an expected call of ListIdentityPoolsWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPoolsWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPoolsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockCognitoIdentityAPI) ListTagsForResource(arg0 *cognitoidentity.ListTagsForResourceInput) (*cognitoidentity.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*cognitoidentity.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockCognitoIdentityAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockCognitoIdentityAPI) ListTagsForResourceRequest(arg0 *cognitoidentity.ListTagsForResourceInput) (*request.Request, *cognitoidentity.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cognitoidentity.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockCognitoIdentityAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *cognitoidentity.ListTagsForResourceInput, arg2 ...request.Option) (*cognitoidentity.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*cognitoidentity.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockCognitoIdentityAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// LookupDeveloperIdentity mocks base method.
+// LookupDeveloperIdentity mocks base method
 func (m *MockCognitoIdentityAPI) LookupDeveloperIdentity(arg0 *cognitoidentity.LookupDeveloperIdentityInput) (*cognitoidentity.LookupDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "LookupDeveloperIdentity", arg0)
@@ -778,13 +644,13 @@ func (m *MockCognitoIdentityAPI) LookupDeveloperIdentity(arg0 *cognitoidentity.L
 	return ret0, ret1
 }
 
-// LookupDeveloperIdentity indicates an expected call of LookupDeveloperIdentity.
+// LookupDeveloperIdentity indicates an expected call of LookupDeveloperIdentity
 func (mr *MockCognitoIdentityAPIMockRecorder) LookupDeveloperIdentity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LookupDeveloperIdentity", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).LookupDeveloperIdentity), arg0)
 }
 
-// LookupDeveloperIdentityRequest mocks base method.
+// LookupDeveloperIdentityRequest mocks base method
 func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityRequest(arg0 *cognitoidentity.LookupDeveloperIdentityInput) (*request.Request, *cognitoidentity.LookupDeveloperIdentityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "LookupDeveloperIdentityRequest", arg0)
@@ -793,14 +659,14 @@ func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityRequest(arg0 *cognitoide
 	return ret0, ret1
 }
 
-// LookupDeveloperIdentityRequest indicates an expected call of LookupDeveloperIdentityRequest.
+// LookupDeveloperIdentityRequest indicates an expected call of LookupDeveloperIdentityRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) LookupDeveloperIdentityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LookupDeveloperIdentityRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).LookupDeveloperIdentityRequest), arg0)
 }
 
-// LookupDeveloperIdentityWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.LookupDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.LookupDeveloperIdentityOutput, error) {
+// LookupDeveloperIdentityWithContext mocks base method
+func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.LookupDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.LookupDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -812,14 +678,14 @@ func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityWithContext(arg0 context
 	return ret0, ret1
 }
 
-// LookupDeveloperIdentityWithContext indicates an expected call of LookupDeveloperIdentityWithContext.
+// LookupDeveloperIdentityWithContext indicates an expected call of LookupDeveloperIdentityWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) LookupDeveloperIdentityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LookupDeveloperIdentityWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).LookupDeveloperIdentityWithContext), varargs...)
 }
 
-// MergeDeveloperIdentities mocks base method.
+// MergeDeveloperIdentities mocks base method
 func (m *MockCognitoIdentityAPI) MergeDeveloperIdentities(arg0 *cognitoidentity.MergeDeveloperIdentitiesInput) (*cognitoidentity.MergeDeveloperIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "MergeDeveloperIdentities", arg0)
@@ -828,13 +694,13 @@ func (m *MockCognitoIdentityAPI) MergeDeveloperIdentities(arg0 *cognitoidentity.
 	return ret0, ret1
 }
 
-// MergeDeveloperIdentities indicates an expected call of MergeDeveloperIdentities.
+// MergeDeveloperIdentities indicates an expected call of MergeDeveloperIdentities
 func (mr *MockCognitoIdentityAPIMockRecorder) MergeDeveloperIdentities(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergeDeveloperIdentities", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).MergeDeveloperIdentities), arg0)
 }
 
-// MergeDeveloperIdentitiesRequest mocks base method.
+// MergeDeveloperIdentitiesRequest mocks base method
 func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesRequest(arg0 *cognitoidentity.MergeDeveloperIdentitiesInput) (*request.Request, *cognitoidentity.MergeDeveloperIdentitiesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "MergeDeveloperIdentitiesRequest", arg0)
@@ -843,14 +709,14 @@ func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesRequest(arg0 *cognitoid
 	return ret0, ret1
 }
 
-// MergeDeveloperIdentitiesRequest indicates an expected call of MergeDeveloperIdentitiesRequest.
+// MergeDeveloperIdentitiesRequest indicates an expected call of MergeDeveloperIdentitiesRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) MergeDeveloperIdentitiesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergeDeveloperIdentitiesRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).MergeDeveloperIdentitiesRequest), arg0)
 }
 
-// MergeDeveloperIdentitiesWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesWithContext(arg0 context.Context, arg1 *cognitoidentity.MergeDeveloperIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.MergeDeveloperIdentitiesOutput, error) {
+// MergeDeveloperIdentitiesWithContext mocks base method
+func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesWithContext(arg0 aws.Context, arg1 *cognitoidentity.MergeDeveloperIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.MergeDeveloperIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -862,14 +728,14 @@ func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// MergeDeveloperIdentitiesWithContext indicates an expected call of MergeDeveloperIdentitiesWithContext.
+// MergeDeveloperIdentitiesWithContext indicates an expected call of MergeDeveloperIdentitiesWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) MergeDeveloperIdentitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergeDeveloperIdentitiesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).MergeDeveloperIdentitiesWithContext), varargs...)
 }
 
-// SetIdentityPoolRoles mocks base method.
+// SetIdentityPoolRoles mocks base method
 func (m *MockCognitoIdentityAPI) SetIdentityPoolRoles(arg0 *cognitoidentity.SetIdentityPoolRolesInput) (*cognitoidentity.SetIdentityPoolRolesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetIdentityPoolRoles", arg0)
@@ -878,13 +744,13 @@ func (m *MockCognitoIdentityAPI) SetIdentityPoolRoles(arg0 *cognitoidentity.SetI
 	return ret0, ret1
 }
 
-// SetIdentityPoolRoles indicates an expected call of SetIdentityPoolRoles.
+// SetIdentityPoolRoles indicates an expected call of SetIdentityPoolRoles
 func (mr *MockCognitoIdentityAPIMockRecorder) SetIdentityPoolRoles(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIdentityPoolRoles", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetIdentityPoolRoles), arg0)
 }
 
-// SetIdentityPoolRolesRequest mocks base method.
+// SetIdentityPoolRolesRequest mocks base method
 func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesRequest(arg0 *cognitoidentity.SetIdentityPoolRolesInput) (*request.Request, *cognitoidentity.SetIdentityPoolRolesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetIdentityPoolRolesRequest", arg0)
@@ -893,14 +759,14 @@ func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesRequest(arg0 *cognitoidenti
 	return ret0, ret1
 }
 
-// SetIdentityPoolRolesRequest indicates an expected call of SetIdentityPoolRolesRequest.
+// SetIdentityPoolRolesRequest indicates an expected call of SetIdentityPoolRolesRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) SetIdentityPoolRolesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIdentityPoolRolesRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetIdentityPoolRolesRequest), arg0)
 }
 
-// SetIdentityPoolRolesWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesWithContext(arg0 context.Context, arg1 *cognitoidentity.SetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.SetIdentityPoolRolesOutput, error) {
+// SetIdentityPoolRolesWithContext mocks base method
+func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesWithContext(arg0 aws.Context, arg1 *cognitoidentity.SetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.SetIdentityPoolRolesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -912,114 +778,14 @@ func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// SetIdentityPoolRolesWithContext indicates an expected call of SetIdentityPoolRolesWithContext.
+// SetIdentityPoolRolesWithContext indicates an expected call of SetIdentityPoolRolesWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) SetIdentityPoolRolesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIdentityPoolRolesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetIdentityPoolRolesWithContext), varargs...)
 }
 
-// SetPrincipalTagAttributeMap mocks base method.
-func (m *MockCognitoIdentityAPI) SetPrincipalTagAttributeMap(arg0 *cognitoidentity.SetPrincipalTagAttributeMapInput) (*cognitoidentity.SetPrincipalTagAttributeMapOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SetPrincipalTagAttributeMap", arg0)
-	ret0, _ := ret[0].(*cognitoidentity.SetPrincipalTagAttributeMapOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// SetPrincipalTagAttributeMap indicates an expected call of SetPrincipalTagAttributeMap.
-func (mr *MockCognitoIdentityAPIMockRecorder) SetPrincipalTagAttributeMap(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetPrincipalTagAttributeMap", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetPrincipalTagAttributeMap), arg0)
-}
-
-// SetPrincipalTagAttributeMapRequest mocks base method.
-func (m *MockCognitoIdentityAPI) SetPrincipalTagAttributeMapRequest(arg0 *cognitoidentity.SetPrincipalTagAttributeMapInput) (*request.Request, *cognitoidentity.SetPrincipalTagAttributeMapOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SetPrincipalTagAttributeMapRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cognitoidentity.SetPrincipalTagAttributeMapOutput)
-	return ret0, ret1
-}
-
-// SetPrincipalTagAttributeMapRequest indicates an expected call of SetPrincipalTagAttributeMapRequest.
-func (mr *MockCognitoIdentityAPIMockRecorder) SetPrincipalTagAttributeMapRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetPrincipalTagAttributeMapRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetPrincipalTagAttributeMapRequest), arg0)
-}
-
-// SetPrincipalTagAttributeMapWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) SetPrincipalTagAttributeMapWithContext(arg0 context.Context, arg1 *cognitoidentity.SetPrincipalTagAttributeMapInput, arg2 ...request.Option) (*cognitoidentity.SetPrincipalTagAttributeMapOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "SetPrincipalTagAttributeMapWithContext", varargs...)
-	ret0, _ := ret[0].(*cognitoidentity.SetPrincipalTagAttributeMapOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// SetPrincipalTagAttributeMapWithContext indicates an expected call of SetPrincipalTagAttributeMapWithContext.
-func (mr *MockCognitoIdentityAPIMockRecorder) SetPrincipalTagAttributeMapWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetPrincipalTagAttributeMapWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetPrincipalTagAttributeMapWithContext), varargs...)
-}
-
-// TagResource mocks base method.
-func (m *MockCognitoIdentityAPI) TagResource(arg0 *cognitoidentity.TagResourceInput) (*cognitoidentity.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*cognitoidentity.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockCognitoIdentityAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockCognitoIdentityAPI) TagResourceRequest(arg0 *cognitoidentity.TagResourceInput) (*request.Request, *cognitoidentity.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cognitoidentity.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockCognitoIdentityAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) TagResourceWithContext(arg0 context.Context, arg1 *cognitoidentity.TagResourceInput, arg2 ...request.Option) (*cognitoidentity.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*cognitoidentity.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockCognitoIdentityAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UnlinkDeveloperIdentity mocks base method.
+// UnlinkDeveloperIdentity mocks base method
 func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentity(arg0 *cognitoidentity.UnlinkDeveloperIdentityInput) (*cognitoidentity.UnlinkDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnlinkDeveloperIdentity", arg0)
@@ -1028,13 +794,13 @@ func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentity(arg0 *cognitoidentity.U
 	return ret0, ret1
 }
 
-// UnlinkDeveloperIdentity indicates an expected call of UnlinkDeveloperIdentity.
+// UnlinkDeveloperIdentity indicates an expected call of UnlinkDeveloperIdentity
 func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkDeveloperIdentity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlinkDeveloperIdentity", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UnlinkDeveloperIdentity), arg0)
 }
 
-// UnlinkDeveloperIdentityRequest mocks base method.
+// UnlinkDeveloperIdentityRequest mocks base method
 func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityRequest(arg0 *cognitoidentity.UnlinkDeveloperIdentityInput) (*request.Request, *cognitoidentity.UnlinkDeveloperIdentityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnlinkDeveloperIdentityRequest", arg0)
@@ -1043,14 +809,14 @@ func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityRequest(arg0 *cognitoide
 	return ret0, ret1
 }
 
-// UnlinkDeveloperIdentityRequest indicates an expected call of UnlinkDeveloperIdentityRequest.
+// UnlinkDeveloperIdentityRequest indicates an expected call of UnlinkDeveloperIdentityRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkDeveloperIdentityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlinkDeveloperIdentityRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UnlinkDeveloperIdentityRequest), arg0)
 }
 
-// UnlinkDeveloperIdentityWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.UnlinkDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkDeveloperIdentityOutput, error) {
+// UnlinkDeveloperIdentityWithContext mocks base method
+func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.UnlinkDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1062,14 +828,14 @@ func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityWithContext(arg0 context
 	return ret0, ret1
 }
 
-// UnlinkDeveloperIdentityWithContext indicates an expected call of UnlinkDeveloperIdentityWithContext.
+// UnlinkDeveloperIdentityWithContext indicates an expected call of UnlinkDeveloperIdentityWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkDeveloperIdentityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlinkDeveloperIdentityWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UnlinkDeveloperIdentityWithContext), varargs...)
 }
 
-// UnlinkIdentity mocks base method.
+// UnlinkIdentity mocks base method
 func (m *MockCognitoIdentityAPI) UnlinkIdentity(arg0 *cognitoidentity.UnlinkIdentityInput) (*cognitoidentity.UnlinkIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnlinkIdentity", arg0)
@@ -1078,13 +844,13 @@ func (m *MockCognitoIdentityAPI) UnlinkIdentity(arg0 *cognitoidentity.UnlinkIden
 	return ret0, ret1
 }
 
-// UnlinkIdentity indicates an expected call of UnlinkIdentity.
+// UnlinkIdentity indicates an expected call of UnlinkIdentity
 func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkIdentity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlinkIdentity", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UnlinkIdentity), arg0)
 }
 
-// UnlinkIdentityRequest mocks base method.
+// UnlinkIdentityRequest mocks base method
 func (m *MockCognitoIdentityAPI) UnlinkIdentityRequest(arg0 *cognitoidentity.UnlinkIdentityInput) (*request.Request, *cognitoidentity.UnlinkIdentityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UnlinkIdentityRequest", arg0)
@@ -1093,14 +859,14 @@ func (m *MockCognitoIdentityAPI) UnlinkIdentityRequest(arg0 *cognitoidentity.Unl
 	return ret0, ret1
 }
 
-// UnlinkIdentityRequest indicates an expected call of UnlinkIdentityRequest.
+// UnlinkIdentityRequest indicates an expected call of UnlinkIdentityRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkIdentityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlinkIdentityRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UnlinkIdentityRequest), arg0)
 }
 
-// UnlinkIdentityWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) UnlinkIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.UnlinkIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkIdentityOutput, error) {
+// UnlinkIdentityWithContext mocks base method
+func (m *MockCognitoIdentityAPI) UnlinkIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.UnlinkIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1112,64 +878,14 @@ func (m *MockCognitoIdentityAPI) UnlinkIdentityWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UnlinkIdentityWithContext indicates an expected call of UnlinkIdentityWithContext.
+// UnlinkIdentityWithContext indicates an expected call of UnlinkIdentityWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkIdentityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlinkIdentityWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UnlinkIdentityWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
-func (m *MockCognitoIdentityAPI) UntagResource(arg0 *cognitoidentity.UntagResourceInput) (*cognitoidentity.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*cognitoidentity.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockCognitoIdentityAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockCognitoIdentityAPI) UntagResourceRequest(arg0 *cognitoidentity.UntagResourceInput) (*request.Request, *cognitoidentity.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cognitoidentity.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockCognitoIdentityAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) UntagResourceWithContext(arg0 context.Context, arg1 *cognitoidentity.UntagResourceInput, arg2 ...request.Option) (*cognitoidentity.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*cognitoidentity.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockCognitoIdentityAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateIdentityPool mocks base method.
+// UpdateIdentityPool mocks base method
 func (m *MockCognitoIdentityAPI) UpdateIdentityPool(arg0 *cognitoidentity.IdentityPool) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIdentityPool", arg0)
@@ -1178,13 +894,13 @@ func (m *MockCognitoIdentityAPI) UpdateIdentityPool(arg0 *cognitoidentity.Identi
 	return ret0, ret1
 }
 
-// UpdateIdentityPool indicates an expected call of UpdateIdentityPool.
+// UpdateIdentityPool indicates an expected call of UpdateIdentityPool
 func (mr *MockCognitoIdentityAPIMockRecorder) UpdateIdentityPool(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdentityPool", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UpdateIdentityPool), arg0)
 }
 
-// UpdateIdentityPoolRequest mocks base method.
+// UpdateIdentityPoolRequest mocks base method
 func (m *MockCognitoIdentityAPI) UpdateIdentityPoolRequest(arg0 *cognitoidentity.IdentityPool) (*request.Request, *cognitoidentity.IdentityPool) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIdentityPoolRequest", arg0)
@@ -1193,14 +909,14 @@ func (m *MockCognitoIdentityAPI) UpdateIdentityPoolRequest(arg0 *cognitoidentity
 	return ret0, ret1
 }
 
-// UpdateIdentityPoolRequest indicates an expected call of UpdateIdentityPoolRequest.
+// UpdateIdentityPoolRequest indicates an expected call of UpdateIdentityPoolRequest
 func (mr *MockCognitoIdentityAPIMockRecorder) UpdateIdentityPoolRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdentityPoolRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).UpdateIdentityPoolRequest), arg0)
 }
 
-// UpdateIdentityPoolWithContext mocks base method.
-func (m *MockCognitoIdentityAPI) UpdateIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.IdentityPool, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
+// UpdateIdentityPoolWithContext mocks base method
+func (m *MockCognitoIdentityAPI) UpdateIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.IdentityPool, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1212,7 +928,7 @@ func (m *MockCognitoIdentityAPI) UpdateIdentityPoolWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateIdentityPoolWithContext indicates an expected call of UpdateIdentityPoolWithContext.
+// UpdateIdentityPoolWithContext indicates an expected call of UpdateIdentityPoolWithContext
 func (mr *MockCognitoIdentityAPIMockRecorder) UpdateIdentityPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

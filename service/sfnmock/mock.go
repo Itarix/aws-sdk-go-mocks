@@ -5,38 +5,37 @@
 package sfnmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sfn "github.com/aws/aws-sdk-go/service/sfn"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockSFNAPI is a mock of SFNAPI interface.
+// MockSFNAPI is a mock of SFNAPI interface
 type MockSFNAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockSFNAPIMockRecorder
 }
 
-// MockSFNAPIMockRecorder is the mock recorder for MockSFNAPI.
+// MockSFNAPIMockRecorder is the mock recorder for MockSFNAPI
 type MockSFNAPIMockRecorder struct {
 	mock *MockSFNAPI
 }
 
-// NewMockSFNAPI creates a new mock instance.
+// NewMockSFNAPI creates a new mock instance
 func NewMockSFNAPI(ctrl *gomock.Controller) *MockSFNAPI {
 	mock := &MockSFNAPI{ctrl: ctrl}
 	mock.recorder = &MockSFNAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockSFNAPI) EXPECT() *MockSFNAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateActivity mocks base method.
+// CreateActivity mocks base method
 func (m *MockSFNAPI) CreateActivity(arg0 *sfn.CreateActivityInput) (*sfn.CreateActivityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateActivity", arg0)
@@ -45,13 +44,13 @@ func (m *MockSFNAPI) CreateActivity(arg0 *sfn.CreateActivityInput) (*sfn.CreateA
 	return ret0, ret1
 }
 
-// CreateActivity indicates an expected call of CreateActivity.
+// CreateActivity indicates an expected call of CreateActivity
 func (mr *MockSFNAPIMockRecorder) CreateActivity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateActivity", reflect.TypeOf((*MockSFNAPI)(nil).CreateActivity), arg0)
 }
 
-// CreateActivityRequest mocks base method.
+// CreateActivityRequest mocks base method
 func (m *MockSFNAPI) CreateActivityRequest(arg0 *sfn.CreateActivityInput) (*request.Request, *sfn.CreateActivityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateActivityRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockSFNAPI) CreateActivityRequest(arg0 *sfn.CreateActivityInput) (*requ
 	return ret0, ret1
 }
 
-// CreateActivityRequest indicates an expected call of CreateActivityRequest.
+// CreateActivityRequest indicates an expected call of CreateActivityRequest
 func (mr *MockSFNAPIMockRecorder) CreateActivityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateActivityRequest", reflect.TypeOf((*MockSFNAPI)(nil).CreateActivityRequest), arg0)
 }
 
-// CreateActivityWithContext mocks base method.
-func (m *MockSFNAPI) CreateActivityWithContext(arg0 context.Context, arg1 *sfn.CreateActivityInput, arg2 ...request.Option) (*sfn.CreateActivityOutput, error) {
+// CreateActivityWithContext mocks base method
+func (m *MockSFNAPI) CreateActivityWithContext(arg0 aws.Context, arg1 *sfn.CreateActivityInput, arg2 ...request.Option) (*sfn.CreateActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockSFNAPI) CreateActivityWithContext(arg0 context.Context, arg1 *sfn.C
 	return ret0, ret1
 }
 
-// CreateActivityWithContext indicates an expected call of CreateActivityWithContext.
+// CreateActivityWithContext indicates an expected call of CreateActivityWithContext
 func (mr *MockSFNAPIMockRecorder) CreateActivityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateActivityWithContext", reflect.TypeOf((*MockSFNAPI)(nil).CreateActivityWithContext), varargs...)
 }
 
-// CreateStateMachine mocks base method.
+// CreateStateMachine mocks base method
 func (m *MockSFNAPI) CreateStateMachine(arg0 *sfn.CreateStateMachineInput) (*sfn.CreateStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStateMachine", arg0)
@@ -95,13 +94,13 @@ func (m *MockSFNAPI) CreateStateMachine(arg0 *sfn.CreateStateMachineInput) (*sfn
 	return ret0, ret1
 }
 
-// CreateStateMachine indicates an expected call of CreateStateMachine.
+// CreateStateMachine indicates an expected call of CreateStateMachine
 func (mr *MockSFNAPIMockRecorder) CreateStateMachine(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachine), arg0)
 }
 
-// CreateStateMachineRequest mocks base method.
+// CreateStateMachineRequest mocks base method
 func (m *MockSFNAPI) CreateStateMachineRequest(arg0 *sfn.CreateStateMachineInput) (*request.Request, *sfn.CreateStateMachineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStateMachineRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockSFNAPI) CreateStateMachineRequest(arg0 *sfn.CreateStateMachineInput
 	return ret0, ret1
 }
 
-// CreateStateMachineRequest indicates an expected call of CreateStateMachineRequest.
+// CreateStateMachineRequest indicates an expected call of CreateStateMachineRequest
 func (mr *MockSFNAPIMockRecorder) CreateStateMachineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachineRequest", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachineRequest), arg0)
 }
 
-// CreateStateMachineWithContext mocks base method.
-func (m *MockSFNAPI) CreateStateMachineWithContext(arg0 context.Context, arg1 *sfn.CreateStateMachineInput, arg2 ...request.Option) (*sfn.CreateStateMachineOutput, error) {
+// CreateStateMachineWithContext mocks base method
+func (m *MockSFNAPI) CreateStateMachineWithContext(arg0 aws.Context, arg1 *sfn.CreateStateMachineInput, arg2 ...request.Option) (*sfn.CreateStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockSFNAPI) CreateStateMachineWithContext(arg0 context.Context, arg1 *s
 	return ret0, ret1
 }
 
-// CreateStateMachineWithContext indicates an expected call of CreateStateMachineWithContext.
+// CreateStateMachineWithContext indicates an expected call of CreateStateMachineWithContext
 func (mr *MockSFNAPIMockRecorder) CreateStateMachineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachineWithContext", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachineWithContext), varargs...)
 }
 
-// DeleteActivity mocks base method.
+// DeleteActivity mocks base method
 func (m *MockSFNAPI) DeleteActivity(arg0 *sfn.DeleteActivityInput) (*sfn.DeleteActivityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteActivity", arg0)
@@ -145,13 +144,13 @@ func (m *MockSFNAPI) DeleteActivity(arg0 *sfn.DeleteActivityInput) (*sfn.DeleteA
 	return ret0, ret1
 }
 
-// DeleteActivity indicates an expected call of DeleteActivity.
+// DeleteActivity indicates an expected call of DeleteActivity
 func (mr *MockSFNAPIMockRecorder) DeleteActivity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteActivity", reflect.TypeOf((*MockSFNAPI)(nil).DeleteActivity), arg0)
 }
 
-// DeleteActivityRequest mocks base method.
+// DeleteActivityRequest mocks base method
 func (m *MockSFNAPI) DeleteActivityRequest(arg0 *sfn.DeleteActivityInput) (*request.Request, *sfn.DeleteActivityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteActivityRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockSFNAPI) DeleteActivityRequest(arg0 *sfn.DeleteActivityInput) (*requ
 	return ret0, ret1
 }
 
-// DeleteActivityRequest indicates an expected call of DeleteActivityRequest.
+// DeleteActivityRequest indicates an expected call of DeleteActivityRequest
 func (mr *MockSFNAPIMockRecorder) DeleteActivityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteActivityRequest", reflect.TypeOf((*MockSFNAPI)(nil).DeleteActivityRequest), arg0)
 }
 
-// DeleteActivityWithContext mocks base method.
-func (m *MockSFNAPI) DeleteActivityWithContext(arg0 context.Context, arg1 *sfn.DeleteActivityInput, arg2 ...request.Option) (*sfn.DeleteActivityOutput, error) {
+// DeleteActivityWithContext mocks base method
+func (m *MockSFNAPI) DeleteActivityWithContext(arg0 aws.Context, arg1 *sfn.DeleteActivityInput, arg2 ...request.Option) (*sfn.DeleteActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockSFNAPI) DeleteActivityWithContext(arg0 context.Context, arg1 *sfn.D
 	return ret0, ret1
 }
 
-// DeleteActivityWithContext indicates an expected call of DeleteActivityWithContext.
+// DeleteActivityWithContext indicates an expected call of DeleteActivityWithContext
 func (mr *MockSFNAPIMockRecorder) DeleteActivityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteActivityWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DeleteActivityWithContext), varargs...)
 }
 
-// DeleteStateMachine mocks base method.
+// DeleteStateMachine mocks base method
 func (m *MockSFNAPI) DeleteStateMachine(arg0 *sfn.DeleteStateMachineInput) (*sfn.DeleteStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteStateMachine", arg0)
@@ -195,13 +194,13 @@ func (m *MockSFNAPI) DeleteStateMachine(arg0 *sfn.DeleteStateMachineInput) (*sfn
 	return ret0, ret1
 }
 
-// DeleteStateMachine indicates an expected call of DeleteStateMachine.
+// DeleteStateMachine indicates an expected call of DeleteStateMachine
 func (mr *MockSFNAPIMockRecorder) DeleteStateMachine(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachine), arg0)
 }
 
-// DeleteStateMachineRequest mocks base method.
+// DeleteStateMachineRequest mocks base method
 func (m *MockSFNAPI) DeleteStateMachineRequest(arg0 *sfn.DeleteStateMachineInput) (*request.Request, *sfn.DeleteStateMachineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteStateMachineRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockSFNAPI) DeleteStateMachineRequest(arg0 *sfn.DeleteStateMachineInput
 	return ret0, ret1
 }
 
-// DeleteStateMachineRequest indicates an expected call of DeleteStateMachineRequest.
+// DeleteStateMachineRequest indicates an expected call of DeleteStateMachineRequest
 func (mr *MockSFNAPIMockRecorder) DeleteStateMachineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineRequest", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineRequest), arg0)
 }
 
-// DeleteStateMachineWithContext mocks base method.
-func (m *MockSFNAPI) DeleteStateMachineWithContext(arg0 context.Context, arg1 *sfn.DeleteStateMachineInput, arg2 ...request.Option) (*sfn.DeleteStateMachineOutput, error) {
+// DeleteStateMachineWithContext mocks base method
+func (m *MockSFNAPI) DeleteStateMachineWithContext(arg0 aws.Context, arg1 *sfn.DeleteStateMachineInput, arg2 ...request.Option) (*sfn.DeleteStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockSFNAPI) DeleteStateMachineWithContext(arg0 context.Context, arg1 *s
 	return ret0, ret1
 }
 
-// DeleteStateMachineWithContext indicates an expected call of DeleteStateMachineWithContext.
+// DeleteStateMachineWithContext indicates an expected call of DeleteStateMachineWithContext
 func (mr *MockSFNAPIMockRecorder) DeleteStateMachineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineWithContext), varargs...)
 }
 
-// DescribeActivity mocks base method.
+// DescribeActivity mocks base method
 func (m *MockSFNAPI) DescribeActivity(arg0 *sfn.DescribeActivityInput) (*sfn.DescribeActivityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeActivity", arg0)
@@ -245,13 +244,13 @@ func (m *MockSFNAPI) DescribeActivity(arg0 *sfn.DescribeActivityInput) (*sfn.Des
 	return ret0, ret1
 }
 
-// DescribeActivity indicates an expected call of DescribeActivity.
+// DescribeActivity indicates an expected call of DescribeActivity
 func (mr *MockSFNAPIMockRecorder) DescribeActivity(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivity", reflect.TypeOf((*MockSFNAPI)(nil).DescribeActivity), arg0)
 }
 
-// DescribeActivityRequest mocks base method.
+// DescribeActivityRequest mocks base method
 func (m *MockSFNAPI) DescribeActivityRequest(arg0 *sfn.DescribeActivityInput) (*request.Request, *sfn.DescribeActivityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeActivityRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockSFNAPI) DescribeActivityRequest(arg0 *sfn.DescribeActivityInput) (*
 	return ret0, ret1
 }
 
-// DescribeActivityRequest indicates an expected call of DescribeActivityRequest.
+// DescribeActivityRequest indicates an expected call of DescribeActivityRequest
 func (mr *MockSFNAPIMockRecorder) DescribeActivityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivityRequest", reflect.TypeOf((*MockSFNAPI)(nil).DescribeActivityRequest), arg0)
 }
 
-// DescribeActivityWithContext mocks base method.
-func (m *MockSFNAPI) DescribeActivityWithContext(arg0 context.Context, arg1 *sfn.DescribeActivityInput, arg2 ...request.Option) (*sfn.DescribeActivityOutput, error) {
+// DescribeActivityWithContext mocks base method
+func (m *MockSFNAPI) DescribeActivityWithContext(arg0 aws.Context, arg1 *sfn.DescribeActivityInput, arg2 ...request.Option) (*sfn.DescribeActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockSFNAPI) DescribeActivityWithContext(arg0 context.Context, arg1 *sfn
 	return ret0, ret1
 }
 
-// DescribeActivityWithContext indicates an expected call of DescribeActivityWithContext.
+// DescribeActivityWithContext indicates an expected call of DescribeActivityWithContext
 func (mr *MockSFNAPIMockRecorder) DescribeActivityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivityWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeActivityWithContext), varargs...)
 }
 
-// DescribeExecution mocks base method.
+// DescribeExecution mocks base method
 func (m *MockSFNAPI) DescribeExecution(arg0 *sfn.DescribeExecutionInput) (*sfn.DescribeExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeExecution", arg0)
@@ -295,13 +294,13 @@ func (m *MockSFNAPI) DescribeExecution(arg0 *sfn.DescribeExecutionInput) (*sfn.D
 	return ret0, ret1
 }
 
-// DescribeExecution indicates an expected call of DescribeExecution.
+// DescribeExecution indicates an expected call of DescribeExecution
 func (mr *MockSFNAPIMockRecorder) DescribeExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecution", reflect.TypeOf((*MockSFNAPI)(nil).DescribeExecution), arg0)
 }
 
-// DescribeExecutionRequest mocks base method.
+// DescribeExecutionRequest mocks base method
 func (m *MockSFNAPI) DescribeExecutionRequest(arg0 *sfn.DescribeExecutionInput) (*request.Request, *sfn.DescribeExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeExecutionRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockSFNAPI) DescribeExecutionRequest(arg0 *sfn.DescribeExecutionInput) 
 	return ret0, ret1
 }
 
-// DescribeExecutionRequest indicates an expected call of DescribeExecutionRequest.
+// DescribeExecutionRequest indicates an expected call of DescribeExecutionRequest
 func (mr *MockSFNAPIMockRecorder) DescribeExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionRequest", reflect.TypeOf((*MockSFNAPI)(nil).DescribeExecutionRequest), arg0)
 }
 
-// DescribeExecutionWithContext mocks base method.
-func (m *MockSFNAPI) DescribeExecutionWithContext(arg0 context.Context, arg1 *sfn.DescribeExecutionInput, arg2 ...request.Option) (*sfn.DescribeExecutionOutput, error) {
+// DescribeExecutionWithContext mocks base method
+func (m *MockSFNAPI) DescribeExecutionWithContext(arg0 aws.Context, arg1 *sfn.DescribeExecutionInput, arg2 ...request.Option) (*sfn.DescribeExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockSFNAPI) DescribeExecutionWithContext(arg0 context.Context, arg1 *sf
 	return ret0, ret1
 }
 
-// DescribeExecutionWithContext indicates an expected call of DescribeExecutionWithContext.
+// DescribeExecutionWithContext indicates an expected call of DescribeExecutionWithContext
 func (mr *MockSFNAPIMockRecorder) DescribeExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeExecutionWithContext), varargs...)
 }
 
-// DescribeStateMachine mocks base method.
+// DescribeStateMachine mocks base method
 func (m *MockSFNAPI) DescribeStateMachine(arg0 *sfn.DescribeStateMachineInput) (*sfn.DescribeStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStateMachine", arg0)
@@ -345,13 +344,13 @@ func (m *MockSFNAPI) DescribeStateMachine(arg0 *sfn.DescribeStateMachineInput) (
 	return ret0, ret1
 }
 
-// DescribeStateMachine indicates an expected call of DescribeStateMachine.
+// DescribeStateMachine indicates an expected call of DescribeStateMachine
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachine(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachine), arg0)
 }
 
-// DescribeStateMachineForExecution mocks base method.
+// DescribeStateMachineForExecution mocks base method
 func (m *MockSFNAPI) DescribeStateMachineForExecution(arg0 *sfn.DescribeStateMachineForExecutionInput) (*sfn.DescribeStateMachineForExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStateMachineForExecution", arg0)
@@ -360,13 +359,13 @@ func (m *MockSFNAPI) DescribeStateMachineForExecution(arg0 *sfn.DescribeStateMac
 	return ret0, ret1
 }
 
-// DescribeStateMachineForExecution indicates an expected call of DescribeStateMachineForExecution.
+// DescribeStateMachineForExecution indicates an expected call of DescribeStateMachineForExecution
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachineForExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineForExecution", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineForExecution), arg0)
 }
 
-// DescribeStateMachineForExecutionRequest mocks base method.
+// DescribeStateMachineForExecutionRequest mocks base method
 func (m *MockSFNAPI) DescribeStateMachineForExecutionRequest(arg0 *sfn.DescribeStateMachineForExecutionInput) (*request.Request, *sfn.DescribeStateMachineForExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStateMachineForExecutionRequest", arg0)
@@ -375,14 +374,14 @@ func (m *MockSFNAPI) DescribeStateMachineForExecutionRequest(arg0 *sfn.DescribeS
 	return ret0, ret1
 }
 
-// DescribeStateMachineForExecutionRequest indicates an expected call of DescribeStateMachineForExecutionRequest.
+// DescribeStateMachineForExecutionRequest indicates an expected call of DescribeStateMachineForExecutionRequest
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachineForExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineForExecutionRequest", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineForExecutionRequest), arg0)
 }
 
-// DescribeStateMachineForExecutionWithContext mocks base method.
-func (m *MockSFNAPI) DescribeStateMachineForExecutionWithContext(arg0 context.Context, arg1 *sfn.DescribeStateMachineForExecutionInput, arg2 ...request.Option) (*sfn.DescribeStateMachineForExecutionOutput, error) {
+// DescribeStateMachineForExecutionWithContext mocks base method
+func (m *MockSFNAPI) DescribeStateMachineForExecutionWithContext(arg0 aws.Context, arg1 *sfn.DescribeStateMachineForExecutionInput, arg2 ...request.Option) (*sfn.DescribeStateMachineForExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -394,14 +393,14 @@ func (m *MockSFNAPI) DescribeStateMachineForExecutionWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DescribeStateMachineForExecutionWithContext indicates an expected call of DescribeStateMachineForExecutionWithContext.
+// DescribeStateMachineForExecutionWithContext indicates an expected call of DescribeStateMachineForExecutionWithContext
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachineForExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineForExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineForExecutionWithContext), varargs...)
 }
 
-// DescribeStateMachineRequest mocks base method.
+// DescribeStateMachineRequest mocks base method
 func (m *MockSFNAPI) DescribeStateMachineRequest(arg0 *sfn.DescribeStateMachineInput) (*request.Request, *sfn.DescribeStateMachineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStateMachineRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockSFNAPI) DescribeStateMachineRequest(arg0 *sfn.DescribeStateMachineI
 	return ret0, ret1
 }
 
-// DescribeStateMachineRequest indicates an expected call of DescribeStateMachineRequest.
+// DescribeStateMachineRequest indicates an expected call of DescribeStateMachineRequest
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineRequest", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineRequest), arg0)
 }
 
-// DescribeStateMachineWithContext mocks base method.
-func (m *MockSFNAPI) DescribeStateMachineWithContext(arg0 context.Context, arg1 *sfn.DescribeStateMachineInput, arg2 ...request.Option) (*sfn.DescribeStateMachineOutput, error) {
+// DescribeStateMachineWithContext mocks base method
+func (m *MockSFNAPI) DescribeStateMachineWithContext(arg0 aws.Context, arg1 *sfn.DescribeStateMachineInput, arg2 ...request.Option) (*sfn.DescribeStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockSFNAPI) DescribeStateMachineWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeStateMachineWithContext indicates an expected call of DescribeStateMachineWithContext.
+// DescribeStateMachineWithContext indicates an expected call of DescribeStateMachineWithContext
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineWithContext), varargs...)
 }
 
-// GetActivityTask mocks base method.
+// GetActivityTask mocks base method
 func (m *MockSFNAPI) GetActivityTask(arg0 *sfn.GetActivityTaskInput) (*sfn.GetActivityTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetActivityTask", arg0)
@@ -445,13 +444,13 @@ func (m *MockSFNAPI) GetActivityTask(arg0 *sfn.GetActivityTaskInput) (*sfn.GetAc
 	return ret0, ret1
 }
 
-// GetActivityTask indicates an expected call of GetActivityTask.
+// GetActivityTask indicates an expected call of GetActivityTask
 func (mr *MockSFNAPIMockRecorder) GetActivityTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActivityTask", reflect.TypeOf((*MockSFNAPI)(nil).GetActivityTask), arg0)
 }
 
-// GetActivityTaskRequest mocks base method.
+// GetActivityTaskRequest mocks base method
 func (m *MockSFNAPI) GetActivityTaskRequest(arg0 *sfn.GetActivityTaskInput) (*request.Request, *sfn.GetActivityTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetActivityTaskRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockSFNAPI) GetActivityTaskRequest(arg0 *sfn.GetActivityTaskInput) (*re
 	return ret0, ret1
 }
 
-// GetActivityTaskRequest indicates an expected call of GetActivityTaskRequest.
+// GetActivityTaskRequest indicates an expected call of GetActivityTaskRequest
 func (mr *MockSFNAPIMockRecorder) GetActivityTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActivityTaskRequest", reflect.TypeOf((*MockSFNAPI)(nil).GetActivityTaskRequest), arg0)
 }
 
-// GetActivityTaskWithContext mocks base method.
-func (m *MockSFNAPI) GetActivityTaskWithContext(arg0 context.Context, arg1 *sfn.GetActivityTaskInput, arg2 ...request.Option) (*sfn.GetActivityTaskOutput, error) {
+// GetActivityTaskWithContext mocks base method
+func (m *MockSFNAPI) GetActivityTaskWithContext(arg0 aws.Context, arg1 *sfn.GetActivityTaskInput, arg2 ...request.Option) (*sfn.GetActivityTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockSFNAPI) GetActivityTaskWithContext(arg0 context.Context, arg1 *sfn.
 	return ret0, ret1
 }
 
-// GetActivityTaskWithContext indicates an expected call of GetActivityTaskWithContext.
+// GetActivityTaskWithContext indicates an expected call of GetActivityTaskWithContext
 func (mr *MockSFNAPIMockRecorder) GetActivityTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActivityTaskWithContext", reflect.TypeOf((*MockSFNAPI)(nil).GetActivityTaskWithContext), varargs...)
 }
 
-// GetExecutionHistory mocks base method.
+// GetExecutionHistory mocks base method
 func (m *MockSFNAPI) GetExecutionHistory(arg0 *sfn.GetExecutionHistoryInput) (*sfn.GetExecutionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetExecutionHistory", arg0)
@@ -495,13 +494,13 @@ func (m *MockSFNAPI) GetExecutionHistory(arg0 *sfn.GetExecutionHistoryInput) (*s
 	return ret0, ret1
 }
 
-// GetExecutionHistory indicates an expected call of GetExecutionHistory.
+// GetExecutionHistory indicates an expected call of GetExecutionHistory
 func (mr *MockSFNAPIMockRecorder) GetExecutionHistory(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExecutionHistory", reflect.TypeOf((*MockSFNAPI)(nil).GetExecutionHistory), arg0)
 }
 
-// GetExecutionHistoryPages mocks base method.
+// GetExecutionHistoryPages mocks base method
 func (m *MockSFNAPI) GetExecutionHistoryPages(arg0 *sfn.GetExecutionHistoryInput, arg1 func(*sfn.GetExecutionHistoryOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetExecutionHistoryPages", arg0, arg1)
@@ -509,14 +508,14 @@ func (m *MockSFNAPI) GetExecutionHistoryPages(arg0 *sfn.GetExecutionHistoryInput
 	return ret0
 }
 
-// GetExecutionHistoryPages indicates an expected call of GetExecutionHistoryPages.
+// GetExecutionHistoryPages indicates an expected call of GetExecutionHistoryPages
 func (mr *MockSFNAPIMockRecorder) GetExecutionHistoryPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExecutionHistoryPages", reflect.TypeOf((*MockSFNAPI)(nil).GetExecutionHistoryPages), arg0, arg1)
 }
 
-// GetExecutionHistoryPagesWithContext mocks base method.
-func (m *MockSFNAPI) GetExecutionHistoryPagesWithContext(arg0 context.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 func(*sfn.GetExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
+// GetExecutionHistoryPagesWithContext mocks base method
+func (m *MockSFNAPI) GetExecutionHistoryPagesWithContext(arg0 aws.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 func(*sfn.GetExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -527,14 +526,14 @@ func (m *MockSFNAPI) GetExecutionHistoryPagesWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// GetExecutionHistoryPagesWithContext indicates an expected call of GetExecutionHistoryPagesWithContext.
+// GetExecutionHistoryPagesWithContext indicates an expected call of GetExecutionHistoryPagesWithContext
 func (mr *MockSFNAPIMockRecorder) GetExecutionHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExecutionHistoryPagesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).GetExecutionHistoryPagesWithContext), varargs...)
 }
 
-// GetExecutionHistoryRequest mocks base method.
+// GetExecutionHistoryRequest mocks base method
 func (m *MockSFNAPI) GetExecutionHistoryRequest(arg0 *sfn.GetExecutionHistoryInput) (*request.Request, *sfn.GetExecutionHistoryOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetExecutionHistoryRequest", arg0)
@@ -543,14 +542,14 @@ func (m *MockSFNAPI) GetExecutionHistoryRequest(arg0 *sfn.GetExecutionHistoryInp
 	return ret0, ret1
 }
 
-// GetExecutionHistoryRequest indicates an expected call of GetExecutionHistoryRequest.
+// GetExecutionHistoryRequest indicates an expected call of GetExecutionHistoryRequest
 func (mr *MockSFNAPIMockRecorder) GetExecutionHistoryRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExecutionHistoryRequest", reflect.TypeOf((*MockSFNAPI)(nil).GetExecutionHistoryRequest), arg0)
 }
 
-// GetExecutionHistoryWithContext mocks base method.
-func (m *MockSFNAPI) GetExecutionHistoryWithContext(arg0 context.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 ...request.Option) (*sfn.GetExecutionHistoryOutput, error) {
+// GetExecutionHistoryWithContext mocks base method
+func (m *MockSFNAPI) GetExecutionHistoryWithContext(arg0 aws.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 ...request.Option) (*sfn.GetExecutionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -562,14 +561,14 @@ func (m *MockSFNAPI) GetExecutionHistoryWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// GetExecutionHistoryWithContext indicates an expected call of GetExecutionHistoryWithContext.
+// GetExecutionHistoryWithContext indicates an expected call of GetExecutionHistoryWithContext
 func (mr *MockSFNAPIMockRecorder) GetExecutionHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExecutionHistoryWithContext", reflect.TypeOf((*MockSFNAPI)(nil).GetExecutionHistoryWithContext), varargs...)
 }
 
-// ListActivities mocks base method.
+// ListActivities mocks base method
 func (m *MockSFNAPI) ListActivities(arg0 *sfn.ListActivitiesInput) (*sfn.ListActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivities", arg0)
@@ -578,13 +577,13 @@ func (m *MockSFNAPI) ListActivities(arg0 *sfn.ListActivitiesInput) (*sfn.ListAct
 	return ret0, ret1
 }
 
-// ListActivities indicates an expected call of ListActivities.
+// ListActivities indicates an expected call of ListActivities
 func (mr *MockSFNAPIMockRecorder) ListActivities(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivities", reflect.TypeOf((*MockSFNAPI)(nil).ListActivities), arg0)
 }
 
-// ListActivitiesPages mocks base method.
+// ListActivitiesPages mocks base method
 func (m *MockSFNAPI) ListActivitiesPages(arg0 *sfn.ListActivitiesInput, arg1 func(*sfn.ListActivitiesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivitiesPages", arg0, arg1)
@@ -592,14 +591,14 @@ func (m *MockSFNAPI) ListActivitiesPages(arg0 *sfn.ListActivitiesInput, arg1 fun
 	return ret0
 }
 
-// ListActivitiesPages indicates an expected call of ListActivitiesPages.
+// ListActivitiesPages indicates an expected call of ListActivitiesPages
 func (mr *MockSFNAPIMockRecorder) ListActivitiesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivitiesPages", reflect.TypeOf((*MockSFNAPI)(nil).ListActivitiesPages), arg0, arg1)
 }
 
-// ListActivitiesPagesWithContext mocks base method.
-func (m *MockSFNAPI) ListActivitiesPagesWithContext(arg0 context.Context, arg1 *sfn.ListActivitiesInput, arg2 func(*sfn.ListActivitiesOutput, bool) bool, arg3 ...request.Option) error {
+// ListActivitiesPagesWithContext mocks base method
+func (m *MockSFNAPI) ListActivitiesPagesWithContext(arg0 aws.Context, arg1 *sfn.ListActivitiesInput, arg2 func(*sfn.ListActivitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -610,14 +609,14 @@ func (m *MockSFNAPI) ListActivitiesPagesWithContext(arg0 context.Context, arg1 *
 	return ret0
 }
 
-// ListActivitiesPagesWithContext indicates an expected call of ListActivitiesPagesWithContext.
+// ListActivitiesPagesWithContext indicates an expected call of ListActivitiesPagesWithContext
 func (mr *MockSFNAPIMockRecorder) ListActivitiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivitiesPagesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListActivitiesPagesWithContext), varargs...)
 }
 
-// ListActivitiesRequest mocks base method.
+// ListActivitiesRequest mocks base method
 func (m *MockSFNAPI) ListActivitiesRequest(arg0 *sfn.ListActivitiesInput) (*request.Request, *sfn.ListActivitiesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListActivitiesRequest", arg0)
@@ -626,14 +625,14 @@ func (m *MockSFNAPI) ListActivitiesRequest(arg0 *sfn.ListActivitiesInput) (*requ
 	return ret0, ret1
 }
 
-// ListActivitiesRequest indicates an expected call of ListActivitiesRequest.
+// ListActivitiesRequest indicates an expected call of ListActivitiesRequest
 func (mr *MockSFNAPIMockRecorder) ListActivitiesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivitiesRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListActivitiesRequest), arg0)
 }
 
-// ListActivitiesWithContext mocks base method.
-func (m *MockSFNAPI) ListActivitiesWithContext(arg0 context.Context, arg1 *sfn.ListActivitiesInput, arg2 ...request.Option) (*sfn.ListActivitiesOutput, error) {
+// ListActivitiesWithContext mocks base method
+func (m *MockSFNAPI) ListActivitiesWithContext(arg0 aws.Context, arg1 *sfn.ListActivitiesInput, arg2 ...request.Option) (*sfn.ListActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -645,14 +644,14 @@ func (m *MockSFNAPI) ListActivitiesWithContext(arg0 context.Context, arg1 *sfn.L
 	return ret0, ret1
 }
 
-// ListActivitiesWithContext indicates an expected call of ListActivitiesWithContext.
+// ListActivitiesWithContext indicates an expected call of ListActivitiesWithContext
 func (mr *MockSFNAPIMockRecorder) ListActivitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListActivitiesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListActivitiesWithContext), varargs...)
 }
 
-// ListExecutions mocks base method.
+// ListExecutions mocks base method
 func (m *MockSFNAPI) ListExecutions(arg0 *sfn.ListExecutionsInput) (*sfn.ListExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListExecutions", arg0)
@@ -661,13 +660,13 @@ func (m *MockSFNAPI) ListExecutions(arg0 *sfn.ListExecutionsInput) (*sfn.ListExe
 	return ret0, ret1
 }
 
-// ListExecutions indicates an expected call of ListExecutions.
+// ListExecutions indicates an expected call of ListExecutions
 func (mr *MockSFNAPIMockRecorder) ListExecutions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutions", reflect.TypeOf((*MockSFNAPI)(nil).ListExecutions), arg0)
 }
 
-// ListExecutionsPages mocks base method.
+// ListExecutionsPages mocks base method
 func (m *MockSFNAPI) ListExecutionsPages(arg0 *sfn.ListExecutionsInput, arg1 func(*sfn.ListExecutionsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListExecutionsPages", arg0, arg1)
@@ -675,14 +674,14 @@ func (m *MockSFNAPI) ListExecutionsPages(arg0 *sfn.ListExecutionsInput, arg1 fun
 	return ret0
 }
 
-// ListExecutionsPages indicates an expected call of ListExecutionsPages.
+// ListExecutionsPages indicates an expected call of ListExecutionsPages
 func (mr *MockSFNAPIMockRecorder) ListExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsPages", reflect.TypeOf((*MockSFNAPI)(nil).ListExecutionsPages), arg0, arg1)
 }
 
-// ListExecutionsPagesWithContext mocks base method.
-func (m *MockSFNAPI) ListExecutionsPagesWithContext(arg0 context.Context, arg1 *sfn.ListExecutionsInput, arg2 func(*sfn.ListExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+// ListExecutionsPagesWithContext mocks base method
+func (m *MockSFNAPI) ListExecutionsPagesWithContext(arg0 aws.Context, arg1 *sfn.ListExecutionsInput, arg2 func(*sfn.ListExecutionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -693,14 +692,14 @@ func (m *MockSFNAPI) ListExecutionsPagesWithContext(arg0 context.Context, arg1 *
 	return ret0
 }
 
-// ListExecutionsPagesWithContext indicates an expected call of ListExecutionsPagesWithContext.
+// ListExecutionsPagesWithContext indicates an expected call of ListExecutionsPagesWithContext
 func (mr *MockSFNAPIMockRecorder) ListExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsPagesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListExecutionsPagesWithContext), varargs...)
 }
 
-// ListExecutionsRequest mocks base method.
+// ListExecutionsRequest mocks base method
 func (m *MockSFNAPI) ListExecutionsRequest(arg0 *sfn.ListExecutionsInput) (*request.Request, *sfn.ListExecutionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListExecutionsRequest", arg0)
@@ -709,14 +708,14 @@ func (m *MockSFNAPI) ListExecutionsRequest(arg0 *sfn.ListExecutionsInput) (*requ
 	return ret0, ret1
 }
 
-// ListExecutionsRequest indicates an expected call of ListExecutionsRequest.
+// ListExecutionsRequest indicates an expected call of ListExecutionsRequest
 func (mr *MockSFNAPIMockRecorder) ListExecutionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListExecutionsRequest), arg0)
 }
 
-// ListExecutionsWithContext mocks base method.
-func (m *MockSFNAPI) ListExecutionsWithContext(arg0 context.Context, arg1 *sfn.ListExecutionsInput, arg2 ...request.Option) (*sfn.ListExecutionsOutput, error) {
+// ListExecutionsWithContext mocks base method
+func (m *MockSFNAPI) ListExecutionsWithContext(arg0 aws.Context, arg1 *sfn.ListExecutionsInput, arg2 ...request.Option) (*sfn.ListExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -728,14 +727,14 @@ func (m *MockSFNAPI) ListExecutionsWithContext(arg0 context.Context, arg1 *sfn.L
 	return ret0, ret1
 }
 
-// ListExecutionsWithContext indicates an expected call of ListExecutionsWithContext.
+// ListExecutionsWithContext indicates an expected call of ListExecutionsWithContext
 func (mr *MockSFNAPIMockRecorder) ListExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListExecutionsWithContext), varargs...)
 }
 
-// ListStateMachines mocks base method.
+// ListStateMachines mocks base method
 func (m *MockSFNAPI) ListStateMachines(arg0 *sfn.ListStateMachinesInput) (*sfn.ListStateMachinesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListStateMachines", arg0)
@@ -744,13 +743,13 @@ func (m *MockSFNAPI) ListStateMachines(arg0 *sfn.ListStateMachinesInput) (*sfn.L
 	return ret0, ret1
 }
 
-// ListStateMachines indicates an expected call of ListStateMachines.
+// ListStateMachines indicates an expected call of ListStateMachines
 func (mr *MockSFNAPIMockRecorder) ListStateMachines(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachines", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachines), arg0)
 }
 
-// ListStateMachinesPages mocks base method.
+// ListStateMachinesPages mocks base method
 func (m *MockSFNAPI) ListStateMachinesPages(arg0 *sfn.ListStateMachinesInput, arg1 func(*sfn.ListStateMachinesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListStateMachinesPages", arg0, arg1)
@@ -758,14 +757,14 @@ func (m *MockSFNAPI) ListStateMachinesPages(arg0 *sfn.ListStateMachinesInput, ar
 	return ret0
 }
 
-// ListStateMachinesPages indicates an expected call of ListStateMachinesPages.
+// ListStateMachinesPages indicates an expected call of ListStateMachinesPages
 func (mr *MockSFNAPIMockRecorder) ListStateMachinesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachinesPages", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachinesPages), arg0, arg1)
 }
 
-// ListStateMachinesPagesWithContext mocks base method.
-func (m *MockSFNAPI) ListStateMachinesPagesWithContext(arg0 context.Context, arg1 *sfn.ListStateMachinesInput, arg2 func(*sfn.ListStateMachinesOutput, bool) bool, arg3 ...request.Option) error {
+// ListStateMachinesPagesWithContext mocks base method
+func (m *MockSFNAPI) ListStateMachinesPagesWithContext(arg0 aws.Context, arg1 *sfn.ListStateMachinesInput, arg2 func(*sfn.ListStateMachinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -776,14 +775,14 @@ func (m *MockSFNAPI) ListStateMachinesPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// ListStateMachinesPagesWithContext indicates an expected call of ListStateMachinesPagesWithContext.
+// ListStateMachinesPagesWithContext indicates an expected call of ListStateMachinesPagesWithContext
 func (mr *MockSFNAPIMockRecorder) ListStateMachinesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachinesPagesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachinesPagesWithContext), varargs...)
 }
 
-// ListStateMachinesRequest mocks base method.
+// ListStateMachinesRequest mocks base method
 func (m *MockSFNAPI) ListStateMachinesRequest(arg0 *sfn.ListStateMachinesInput) (*request.Request, *sfn.ListStateMachinesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListStateMachinesRequest", arg0)
@@ -792,14 +791,14 @@ func (m *MockSFNAPI) ListStateMachinesRequest(arg0 *sfn.ListStateMachinesInput) 
 	return ret0, ret1
 }
 
-// ListStateMachinesRequest indicates an expected call of ListStateMachinesRequest.
+// ListStateMachinesRequest indicates an expected call of ListStateMachinesRequest
 func (mr *MockSFNAPIMockRecorder) ListStateMachinesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachinesRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachinesRequest), arg0)
 }
 
-// ListStateMachinesWithContext mocks base method.
-func (m *MockSFNAPI) ListStateMachinesWithContext(arg0 context.Context, arg1 *sfn.ListStateMachinesInput, arg2 ...request.Option) (*sfn.ListStateMachinesOutput, error) {
+// ListStateMachinesWithContext mocks base method
+func (m *MockSFNAPI) ListStateMachinesWithContext(arg0 aws.Context, arg1 *sfn.ListStateMachinesInput, arg2 ...request.Option) (*sfn.ListStateMachinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -811,64 +810,14 @@ func (m *MockSFNAPI) ListStateMachinesWithContext(arg0 context.Context, arg1 *sf
 	return ret0, ret1
 }
 
-// ListStateMachinesWithContext indicates an expected call of ListStateMachinesWithContext.
+// ListStateMachinesWithContext indicates an expected call of ListStateMachinesWithContext
 func (mr *MockSFNAPIMockRecorder) ListStateMachinesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachinesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachinesWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockSFNAPI) ListTagsForResource(arg0 *sfn.ListTagsForResourceInput) (*sfn.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*sfn.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockSFNAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockSFNAPI)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockSFNAPI) ListTagsForResourceRequest(arg0 *sfn.ListTagsForResourceInput) (*request.Request, *sfn.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*sfn.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockSFNAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockSFNAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *sfn.ListTagsForResourceInput, arg2 ...request.Option) (*sfn.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*sfn.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockSFNAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// SendTaskFailure mocks base method.
+// SendTaskFailure mocks base method
 func (m *MockSFNAPI) SendTaskFailure(arg0 *sfn.SendTaskFailureInput) (*sfn.SendTaskFailureOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendTaskFailure", arg0)
@@ -877,13 +826,13 @@ func (m *MockSFNAPI) SendTaskFailure(arg0 *sfn.SendTaskFailureInput) (*sfn.SendT
 	return ret0, ret1
 }
 
-// SendTaskFailure indicates an expected call of SendTaskFailure.
+// SendTaskFailure indicates an expected call of SendTaskFailure
 func (mr *MockSFNAPIMockRecorder) SendTaskFailure(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskFailure", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskFailure), arg0)
 }
 
-// SendTaskFailureRequest mocks base method.
+// SendTaskFailureRequest mocks base method
 func (m *MockSFNAPI) SendTaskFailureRequest(arg0 *sfn.SendTaskFailureInput) (*request.Request, *sfn.SendTaskFailureOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendTaskFailureRequest", arg0)
@@ -892,14 +841,14 @@ func (m *MockSFNAPI) SendTaskFailureRequest(arg0 *sfn.SendTaskFailureInput) (*re
 	return ret0, ret1
 }
 
-// SendTaskFailureRequest indicates an expected call of SendTaskFailureRequest.
+// SendTaskFailureRequest indicates an expected call of SendTaskFailureRequest
 func (mr *MockSFNAPIMockRecorder) SendTaskFailureRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskFailureRequest", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskFailureRequest), arg0)
 }
 
-// SendTaskFailureWithContext mocks base method.
-func (m *MockSFNAPI) SendTaskFailureWithContext(arg0 context.Context, arg1 *sfn.SendTaskFailureInput, arg2 ...request.Option) (*sfn.SendTaskFailureOutput, error) {
+// SendTaskFailureWithContext mocks base method
+func (m *MockSFNAPI) SendTaskFailureWithContext(arg0 aws.Context, arg1 *sfn.SendTaskFailureInput, arg2 ...request.Option) (*sfn.SendTaskFailureOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -911,14 +860,14 @@ func (m *MockSFNAPI) SendTaskFailureWithContext(arg0 context.Context, arg1 *sfn.
 	return ret0, ret1
 }
 
-// SendTaskFailureWithContext indicates an expected call of SendTaskFailureWithContext.
+// SendTaskFailureWithContext indicates an expected call of SendTaskFailureWithContext
 func (mr *MockSFNAPIMockRecorder) SendTaskFailureWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskFailureWithContext", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskFailureWithContext), varargs...)
 }
 
-// SendTaskHeartbeat mocks base method.
+// SendTaskHeartbeat mocks base method
 func (m *MockSFNAPI) SendTaskHeartbeat(arg0 *sfn.SendTaskHeartbeatInput) (*sfn.SendTaskHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendTaskHeartbeat", arg0)
@@ -927,13 +876,13 @@ func (m *MockSFNAPI) SendTaskHeartbeat(arg0 *sfn.SendTaskHeartbeatInput) (*sfn.S
 	return ret0, ret1
 }
 
-// SendTaskHeartbeat indicates an expected call of SendTaskHeartbeat.
+// SendTaskHeartbeat indicates an expected call of SendTaskHeartbeat
 func (mr *MockSFNAPIMockRecorder) SendTaskHeartbeat(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskHeartbeat", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskHeartbeat), arg0)
 }
 
-// SendTaskHeartbeatRequest mocks base method.
+// SendTaskHeartbeatRequest mocks base method
 func (m *MockSFNAPI) SendTaskHeartbeatRequest(arg0 *sfn.SendTaskHeartbeatInput) (*request.Request, *sfn.SendTaskHeartbeatOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendTaskHeartbeatRequest", arg0)
@@ -942,14 +891,14 @@ func (m *MockSFNAPI) SendTaskHeartbeatRequest(arg0 *sfn.SendTaskHeartbeatInput) 
 	return ret0, ret1
 }
 
-// SendTaskHeartbeatRequest indicates an expected call of SendTaskHeartbeatRequest.
+// SendTaskHeartbeatRequest indicates an expected call of SendTaskHeartbeatRequest
 func (mr *MockSFNAPIMockRecorder) SendTaskHeartbeatRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskHeartbeatRequest", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskHeartbeatRequest), arg0)
 }
 
-// SendTaskHeartbeatWithContext mocks base method.
-func (m *MockSFNAPI) SendTaskHeartbeatWithContext(arg0 context.Context, arg1 *sfn.SendTaskHeartbeatInput, arg2 ...request.Option) (*sfn.SendTaskHeartbeatOutput, error) {
+// SendTaskHeartbeatWithContext mocks base method
+func (m *MockSFNAPI) SendTaskHeartbeatWithContext(arg0 aws.Context, arg1 *sfn.SendTaskHeartbeatInput, arg2 ...request.Option) (*sfn.SendTaskHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -961,14 +910,14 @@ func (m *MockSFNAPI) SendTaskHeartbeatWithContext(arg0 context.Context, arg1 *sf
 	return ret0, ret1
 }
 
-// SendTaskHeartbeatWithContext indicates an expected call of SendTaskHeartbeatWithContext.
+// SendTaskHeartbeatWithContext indicates an expected call of SendTaskHeartbeatWithContext
 func (mr *MockSFNAPIMockRecorder) SendTaskHeartbeatWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskHeartbeatWithContext", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskHeartbeatWithContext), varargs...)
 }
 
-// SendTaskSuccess mocks base method.
+// SendTaskSuccess mocks base method
 func (m *MockSFNAPI) SendTaskSuccess(arg0 *sfn.SendTaskSuccessInput) (*sfn.SendTaskSuccessOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendTaskSuccess", arg0)
@@ -977,13 +926,13 @@ func (m *MockSFNAPI) SendTaskSuccess(arg0 *sfn.SendTaskSuccessInput) (*sfn.SendT
 	return ret0, ret1
 }
 
-// SendTaskSuccess indicates an expected call of SendTaskSuccess.
+// SendTaskSuccess indicates an expected call of SendTaskSuccess
 func (mr *MockSFNAPIMockRecorder) SendTaskSuccess(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskSuccess", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskSuccess), arg0)
 }
 
-// SendTaskSuccessRequest mocks base method.
+// SendTaskSuccessRequest mocks base method
 func (m *MockSFNAPI) SendTaskSuccessRequest(arg0 *sfn.SendTaskSuccessInput) (*request.Request, *sfn.SendTaskSuccessOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendTaskSuccessRequest", arg0)
@@ -992,14 +941,14 @@ func (m *MockSFNAPI) SendTaskSuccessRequest(arg0 *sfn.SendTaskSuccessInput) (*re
 	return ret0, ret1
 }
 
-// SendTaskSuccessRequest indicates an expected call of SendTaskSuccessRequest.
+// SendTaskSuccessRequest indicates an expected call of SendTaskSuccessRequest
 func (mr *MockSFNAPIMockRecorder) SendTaskSuccessRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskSuccessRequest", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskSuccessRequest), arg0)
 }
 
-// SendTaskSuccessWithContext mocks base method.
-func (m *MockSFNAPI) SendTaskSuccessWithContext(arg0 context.Context, arg1 *sfn.SendTaskSuccessInput, arg2 ...request.Option) (*sfn.SendTaskSuccessOutput, error) {
+// SendTaskSuccessWithContext mocks base method
+func (m *MockSFNAPI) SendTaskSuccessWithContext(arg0 aws.Context, arg1 *sfn.SendTaskSuccessInput, arg2 ...request.Option) (*sfn.SendTaskSuccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1011,14 +960,14 @@ func (m *MockSFNAPI) SendTaskSuccessWithContext(arg0 context.Context, arg1 *sfn.
 	return ret0, ret1
 }
 
-// SendTaskSuccessWithContext indicates an expected call of SendTaskSuccessWithContext.
+// SendTaskSuccessWithContext indicates an expected call of SendTaskSuccessWithContext
 func (mr *MockSFNAPIMockRecorder) SendTaskSuccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendTaskSuccessWithContext", reflect.TypeOf((*MockSFNAPI)(nil).SendTaskSuccessWithContext), varargs...)
 }
 
-// StartExecution mocks base method.
+// StartExecution mocks base method
 func (m *MockSFNAPI) StartExecution(arg0 *sfn.StartExecutionInput) (*sfn.StartExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartExecution", arg0)
@@ -1027,13 +976,13 @@ func (m *MockSFNAPI) StartExecution(arg0 *sfn.StartExecutionInput) (*sfn.StartEx
 	return ret0, ret1
 }
 
-// StartExecution indicates an expected call of StartExecution.
+// StartExecution indicates an expected call of StartExecution
 func (mr *MockSFNAPIMockRecorder) StartExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExecution", reflect.TypeOf((*MockSFNAPI)(nil).StartExecution), arg0)
 }
 
-// StartExecutionRequest mocks base method.
+// StartExecutionRequest mocks base method
 func (m *MockSFNAPI) StartExecutionRequest(arg0 *sfn.StartExecutionInput) (*request.Request, *sfn.StartExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartExecutionRequest", arg0)
@@ -1042,14 +991,14 @@ func (m *MockSFNAPI) StartExecutionRequest(arg0 *sfn.StartExecutionInput) (*requ
 	return ret0, ret1
 }
 
-// StartExecutionRequest indicates an expected call of StartExecutionRequest.
+// StartExecutionRequest indicates an expected call of StartExecutionRequest
 func (mr *MockSFNAPIMockRecorder) StartExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExecutionRequest", reflect.TypeOf((*MockSFNAPI)(nil).StartExecutionRequest), arg0)
 }
 
-// StartExecutionWithContext mocks base method.
-func (m *MockSFNAPI) StartExecutionWithContext(arg0 context.Context, arg1 *sfn.StartExecutionInput, arg2 ...request.Option) (*sfn.StartExecutionOutput, error) {
+// StartExecutionWithContext mocks base method
+func (m *MockSFNAPI) StartExecutionWithContext(arg0 aws.Context, arg1 *sfn.StartExecutionInput, arg2 ...request.Option) (*sfn.StartExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1061,64 +1010,14 @@ func (m *MockSFNAPI) StartExecutionWithContext(arg0 context.Context, arg1 *sfn.S
 	return ret0, ret1
 }
 
-// StartExecutionWithContext indicates an expected call of StartExecutionWithContext.
+// StartExecutionWithContext indicates an expected call of StartExecutionWithContext
 func (mr *MockSFNAPIMockRecorder) StartExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).StartExecutionWithContext), varargs...)
 }
 
-// StartSyncExecution mocks base method.
-func (m *MockSFNAPI) StartSyncExecution(arg0 *sfn.StartSyncExecutionInput) (*sfn.StartSyncExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartSyncExecution", arg0)
-	ret0, _ := ret[0].(*sfn.StartSyncExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartSyncExecution indicates an expected call of StartSyncExecution.
-func (mr *MockSFNAPIMockRecorder) StartSyncExecution(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSyncExecution", reflect.TypeOf((*MockSFNAPI)(nil).StartSyncExecution), arg0)
-}
-
-// StartSyncExecutionRequest mocks base method.
-func (m *MockSFNAPI) StartSyncExecutionRequest(arg0 *sfn.StartSyncExecutionInput) (*request.Request, *sfn.StartSyncExecutionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartSyncExecutionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*sfn.StartSyncExecutionOutput)
-	return ret0, ret1
-}
-
-// StartSyncExecutionRequest indicates an expected call of StartSyncExecutionRequest.
-func (mr *MockSFNAPIMockRecorder) StartSyncExecutionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSyncExecutionRequest", reflect.TypeOf((*MockSFNAPI)(nil).StartSyncExecutionRequest), arg0)
-}
-
-// StartSyncExecutionWithContext mocks base method.
-func (m *MockSFNAPI) StartSyncExecutionWithContext(arg0 context.Context, arg1 *sfn.StartSyncExecutionInput, arg2 ...request.Option) (*sfn.StartSyncExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "StartSyncExecutionWithContext", varargs...)
-	ret0, _ := ret[0].(*sfn.StartSyncExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartSyncExecutionWithContext indicates an expected call of StartSyncExecutionWithContext.
-func (mr *MockSFNAPIMockRecorder) StartSyncExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSyncExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).StartSyncExecutionWithContext), varargs...)
-}
-
-// StopExecution mocks base method.
+// StopExecution mocks base method
 func (m *MockSFNAPI) StopExecution(arg0 *sfn.StopExecutionInput) (*sfn.StopExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopExecution", arg0)
@@ -1127,13 +1026,13 @@ func (m *MockSFNAPI) StopExecution(arg0 *sfn.StopExecutionInput) (*sfn.StopExecu
 	return ret0, ret1
 }
 
-// StopExecution indicates an expected call of StopExecution.
+// StopExecution indicates an expected call of StopExecution
 func (mr *MockSFNAPIMockRecorder) StopExecution(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopExecution", reflect.TypeOf((*MockSFNAPI)(nil).StopExecution), arg0)
 }
 
-// StopExecutionRequest mocks base method.
+// StopExecutionRequest mocks base method
 func (m *MockSFNAPI) StopExecutionRequest(arg0 *sfn.StopExecutionInput) (*request.Request, *sfn.StopExecutionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StopExecutionRequest", arg0)
@@ -1142,14 +1041,14 @@ func (m *MockSFNAPI) StopExecutionRequest(arg0 *sfn.StopExecutionInput) (*reques
 	return ret0, ret1
 }
 
-// StopExecutionRequest indicates an expected call of StopExecutionRequest.
+// StopExecutionRequest indicates an expected call of StopExecutionRequest
 func (mr *MockSFNAPIMockRecorder) StopExecutionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopExecutionRequest", reflect.TypeOf((*MockSFNAPI)(nil).StopExecutionRequest), arg0)
 }
 
-// StopExecutionWithContext mocks base method.
-func (m *MockSFNAPI) StopExecutionWithContext(arg0 context.Context, arg1 *sfn.StopExecutionInput, arg2 ...request.Option) (*sfn.StopExecutionOutput, error) {
+// StopExecutionWithContext mocks base method
+func (m *MockSFNAPI) StopExecutionWithContext(arg0 aws.Context, arg1 *sfn.StopExecutionInput, arg2 ...request.Option) (*sfn.StopExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1161,114 +1060,14 @@ func (m *MockSFNAPI) StopExecutionWithContext(arg0 context.Context, arg1 *sfn.St
 	return ret0, ret1
 }
 
-// StopExecutionWithContext indicates an expected call of StopExecutionWithContext.
+// StopExecutionWithContext indicates an expected call of StopExecutionWithContext
 func (mr *MockSFNAPIMockRecorder) StopExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).StopExecutionWithContext), varargs...)
 }
 
-// TagResource mocks base method.
-func (m *MockSFNAPI) TagResource(arg0 *sfn.TagResourceInput) (*sfn.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*sfn.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockSFNAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockSFNAPI)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockSFNAPI) TagResourceRequest(arg0 *sfn.TagResourceInput) (*request.Request, *sfn.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*sfn.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockSFNAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockSFNAPI)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockSFNAPI) TagResourceWithContext(arg0 context.Context, arg1 *sfn.TagResourceInput, arg2 ...request.Option) (*sfn.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*sfn.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockSFNAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockSFNAPI)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockSFNAPI) UntagResource(arg0 *sfn.UntagResourceInput) (*sfn.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*sfn.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockSFNAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockSFNAPI)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockSFNAPI) UntagResourceRequest(arg0 *sfn.UntagResourceInput) (*request.Request, *sfn.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*sfn.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockSFNAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockSFNAPI)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockSFNAPI) UntagResourceWithContext(arg0 context.Context, arg1 *sfn.UntagResourceInput, arg2 ...request.Option) (*sfn.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*sfn.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockSFNAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockSFNAPI)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateStateMachine mocks base method.
+// UpdateStateMachine mocks base method
 func (m *MockSFNAPI) UpdateStateMachine(arg0 *sfn.UpdateStateMachineInput) (*sfn.UpdateStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateStateMachine", arg0)
@@ -1277,13 +1076,13 @@ func (m *MockSFNAPI) UpdateStateMachine(arg0 *sfn.UpdateStateMachineInput) (*sfn
 	return ret0, ret1
 }
 
-// UpdateStateMachine indicates an expected call of UpdateStateMachine.
+// UpdateStateMachine indicates an expected call of UpdateStateMachine
 func (mr *MockSFNAPIMockRecorder) UpdateStateMachine(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).UpdateStateMachine), arg0)
 }
 
-// UpdateStateMachineRequest mocks base method.
+// UpdateStateMachineRequest mocks base method
 func (m *MockSFNAPI) UpdateStateMachineRequest(arg0 *sfn.UpdateStateMachineInput) (*request.Request, *sfn.UpdateStateMachineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateStateMachineRequest", arg0)
@@ -1292,14 +1091,14 @@ func (m *MockSFNAPI) UpdateStateMachineRequest(arg0 *sfn.UpdateStateMachineInput
 	return ret0, ret1
 }
 
-// UpdateStateMachineRequest indicates an expected call of UpdateStateMachineRequest.
+// UpdateStateMachineRequest indicates an expected call of UpdateStateMachineRequest
 func (mr *MockSFNAPIMockRecorder) UpdateStateMachineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStateMachineRequest", reflect.TypeOf((*MockSFNAPI)(nil).UpdateStateMachineRequest), arg0)
 }
 
-// UpdateStateMachineWithContext mocks base method.
-func (m *MockSFNAPI) UpdateStateMachineWithContext(arg0 context.Context, arg1 *sfn.UpdateStateMachineInput, arg2 ...request.Option) (*sfn.UpdateStateMachineOutput, error) {
+// UpdateStateMachineWithContext mocks base method
+func (m *MockSFNAPI) UpdateStateMachineWithContext(arg0 aws.Context, arg1 *sfn.UpdateStateMachineInput, arg2 ...request.Option) (*sfn.UpdateStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1311,7 +1110,7 @@ func (m *MockSFNAPI) UpdateStateMachineWithContext(arg0 context.Context, arg1 *s
 	return ret0, ret1
 }
 
-// UpdateStateMachineWithContext indicates an expected call of UpdateStateMachineWithContext.
+// UpdateStateMachineWithContext indicates an expected call of UpdateStateMachineWithContext
 func (mr *MockSFNAPIMockRecorder) UpdateStateMachineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

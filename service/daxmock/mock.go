@@ -5,38 +5,37 @@
 package daxmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	dax "github.com/aws/aws-sdk-go/service/dax"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockDAXAPI is a mock of DAXAPI interface.
+// MockDAXAPI is a mock of DAXAPI interface
 type MockDAXAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockDAXAPIMockRecorder
 }
 
-// MockDAXAPIMockRecorder is the mock recorder for MockDAXAPI.
+// MockDAXAPIMockRecorder is the mock recorder for MockDAXAPI
 type MockDAXAPIMockRecorder struct {
 	mock *MockDAXAPI
 }
 
-// NewMockDAXAPI creates a new mock instance.
+// NewMockDAXAPI creates a new mock instance
 func NewMockDAXAPI(ctrl *gomock.Controller) *MockDAXAPI {
 	mock := &MockDAXAPI{ctrl: ctrl}
 	mock.recorder = &MockDAXAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockDAXAPI) EXPECT() *MockDAXAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateCluster mocks base method.
+// CreateCluster mocks base method
 func (m *MockDAXAPI) CreateCluster(arg0 *dax.CreateClusterInput) (*dax.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateCluster", arg0)
@@ -45,13 +44,13 @@ func (m *MockDAXAPI) CreateCluster(arg0 *dax.CreateClusterInput) (*dax.CreateClu
 	return ret0, ret1
 }
 
-// CreateCluster indicates an expected call of CreateCluster.
+// CreateCluster indicates an expected call of CreateCluster
 func (mr *MockDAXAPIMockRecorder) CreateCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCluster", reflect.TypeOf((*MockDAXAPI)(nil).CreateCluster), arg0)
 }
 
-// CreateClusterRequest mocks base method.
+// CreateClusterRequest mocks base method
 func (m *MockDAXAPI) CreateClusterRequest(arg0 *dax.CreateClusterInput) (*request.Request, *dax.CreateClusterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateClusterRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockDAXAPI) CreateClusterRequest(arg0 *dax.CreateClusterInput) (*reques
 	return ret0, ret1
 }
 
-// CreateClusterRequest indicates an expected call of CreateClusterRequest.
+// CreateClusterRequest indicates an expected call of CreateClusterRequest
 func (mr *MockDAXAPIMockRecorder) CreateClusterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateClusterRequest", reflect.TypeOf((*MockDAXAPI)(nil).CreateClusterRequest), arg0)
 }
 
-// CreateClusterWithContext mocks base method.
-func (m *MockDAXAPI) CreateClusterWithContext(arg0 context.Context, arg1 *dax.CreateClusterInput, arg2 ...request.Option) (*dax.CreateClusterOutput, error) {
+// CreateClusterWithContext mocks base method
+func (m *MockDAXAPI) CreateClusterWithContext(arg0 aws.Context, arg1 *dax.CreateClusterInput, arg2 ...request.Option) (*dax.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockDAXAPI) CreateClusterWithContext(arg0 context.Context, arg1 *dax.Cr
 	return ret0, ret1
 }
 
-// CreateClusterWithContext indicates an expected call of CreateClusterWithContext.
+// CreateClusterWithContext indicates an expected call of CreateClusterWithContext
 func (mr *MockDAXAPIMockRecorder) CreateClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateClusterWithContext", reflect.TypeOf((*MockDAXAPI)(nil).CreateClusterWithContext), varargs...)
 }
 
-// CreateParameterGroup mocks base method.
+// CreateParameterGroup mocks base method
 func (m *MockDAXAPI) CreateParameterGroup(arg0 *dax.CreateParameterGroupInput) (*dax.CreateParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateParameterGroup", arg0)
@@ -95,13 +94,13 @@ func (m *MockDAXAPI) CreateParameterGroup(arg0 *dax.CreateParameterGroupInput) (
 	return ret0, ret1
 }
 
-// CreateParameterGroup indicates an expected call of CreateParameterGroup.
+// CreateParameterGroup indicates an expected call of CreateParameterGroup
 func (mr *MockDAXAPIMockRecorder) CreateParameterGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParameterGroup", reflect.TypeOf((*MockDAXAPI)(nil).CreateParameterGroup), arg0)
 }
 
-// CreateParameterGroupRequest mocks base method.
+// CreateParameterGroupRequest mocks base method
 func (m *MockDAXAPI) CreateParameterGroupRequest(arg0 *dax.CreateParameterGroupInput) (*request.Request, *dax.CreateParameterGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateParameterGroupRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockDAXAPI) CreateParameterGroupRequest(arg0 *dax.CreateParameterGroupI
 	return ret0, ret1
 }
 
-// CreateParameterGroupRequest indicates an expected call of CreateParameterGroupRequest.
+// CreateParameterGroupRequest indicates an expected call of CreateParameterGroupRequest
 func (mr *MockDAXAPIMockRecorder) CreateParameterGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParameterGroupRequest", reflect.TypeOf((*MockDAXAPI)(nil).CreateParameterGroupRequest), arg0)
 }
 
-// CreateParameterGroupWithContext mocks base method.
-func (m *MockDAXAPI) CreateParameterGroupWithContext(arg0 context.Context, arg1 *dax.CreateParameterGroupInput, arg2 ...request.Option) (*dax.CreateParameterGroupOutput, error) {
+// CreateParameterGroupWithContext mocks base method
+func (m *MockDAXAPI) CreateParameterGroupWithContext(arg0 aws.Context, arg1 *dax.CreateParameterGroupInput, arg2 ...request.Option) (*dax.CreateParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockDAXAPI) CreateParameterGroupWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateParameterGroupWithContext indicates an expected call of CreateParameterGroupWithContext.
+// CreateParameterGroupWithContext indicates an expected call of CreateParameterGroupWithContext
 func (mr *MockDAXAPIMockRecorder) CreateParameterGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParameterGroupWithContext", reflect.TypeOf((*MockDAXAPI)(nil).CreateParameterGroupWithContext), varargs...)
 }
 
-// CreateSubnetGroup mocks base method.
+// CreateSubnetGroup mocks base method
 func (m *MockDAXAPI) CreateSubnetGroup(arg0 *dax.CreateSubnetGroupInput) (*dax.CreateSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSubnetGroup", arg0)
@@ -145,13 +144,13 @@ func (m *MockDAXAPI) CreateSubnetGroup(arg0 *dax.CreateSubnetGroupInput) (*dax.C
 	return ret0, ret1
 }
 
-// CreateSubnetGroup indicates an expected call of CreateSubnetGroup.
+// CreateSubnetGroup indicates an expected call of CreateSubnetGroup
 func (mr *MockDAXAPIMockRecorder) CreateSubnetGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubnetGroup", reflect.TypeOf((*MockDAXAPI)(nil).CreateSubnetGroup), arg0)
 }
 
-// CreateSubnetGroupRequest mocks base method.
+// CreateSubnetGroupRequest mocks base method
 func (m *MockDAXAPI) CreateSubnetGroupRequest(arg0 *dax.CreateSubnetGroupInput) (*request.Request, *dax.CreateSubnetGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSubnetGroupRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockDAXAPI) CreateSubnetGroupRequest(arg0 *dax.CreateSubnetGroupInput) 
 	return ret0, ret1
 }
 
-// CreateSubnetGroupRequest indicates an expected call of CreateSubnetGroupRequest.
+// CreateSubnetGroupRequest indicates an expected call of CreateSubnetGroupRequest
 func (mr *MockDAXAPIMockRecorder) CreateSubnetGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubnetGroupRequest", reflect.TypeOf((*MockDAXAPI)(nil).CreateSubnetGroupRequest), arg0)
 }
 
-// CreateSubnetGroupWithContext mocks base method.
-func (m *MockDAXAPI) CreateSubnetGroupWithContext(arg0 context.Context, arg1 *dax.CreateSubnetGroupInput, arg2 ...request.Option) (*dax.CreateSubnetGroupOutput, error) {
+// CreateSubnetGroupWithContext mocks base method
+func (m *MockDAXAPI) CreateSubnetGroupWithContext(arg0 aws.Context, arg1 *dax.CreateSubnetGroupInput, arg2 ...request.Option) (*dax.CreateSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockDAXAPI) CreateSubnetGroupWithContext(arg0 context.Context, arg1 *da
 	return ret0, ret1
 }
 
-// CreateSubnetGroupWithContext indicates an expected call of CreateSubnetGroupWithContext.
+// CreateSubnetGroupWithContext indicates an expected call of CreateSubnetGroupWithContext
 func (mr *MockDAXAPIMockRecorder) CreateSubnetGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubnetGroupWithContext", reflect.TypeOf((*MockDAXAPI)(nil).CreateSubnetGroupWithContext), varargs...)
 }
 
-// DecreaseReplicationFactor mocks base method.
+// DecreaseReplicationFactor mocks base method
 func (m *MockDAXAPI) DecreaseReplicationFactor(arg0 *dax.DecreaseReplicationFactorInput) (*dax.DecreaseReplicationFactorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DecreaseReplicationFactor", arg0)
@@ -195,13 +194,13 @@ func (m *MockDAXAPI) DecreaseReplicationFactor(arg0 *dax.DecreaseReplicationFact
 	return ret0, ret1
 }
 
-// DecreaseReplicationFactor indicates an expected call of DecreaseReplicationFactor.
+// DecreaseReplicationFactor indicates an expected call of DecreaseReplicationFactor
 func (mr *MockDAXAPIMockRecorder) DecreaseReplicationFactor(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecreaseReplicationFactor", reflect.TypeOf((*MockDAXAPI)(nil).DecreaseReplicationFactor), arg0)
 }
 
-// DecreaseReplicationFactorRequest mocks base method.
+// DecreaseReplicationFactorRequest mocks base method
 func (m *MockDAXAPI) DecreaseReplicationFactorRequest(arg0 *dax.DecreaseReplicationFactorInput) (*request.Request, *dax.DecreaseReplicationFactorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DecreaseReplicationFactorRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockDAXAPI) DecreaseReplicationFactorRequest(arg0 *dax.DecreaseReplicat
 	return ret0, ret1
 }
 
-// DecreaseReplicationFactorRequest indicates an expected call of DecreaseReplicationFactorRequest.
+// DecreaseReplicationFactorRequest indicates an expected call of DecreaseReplicationFactorRequest
 func (mr *MockDAXAPIMockRecorder) DecreaseReplicationFactorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecreaseReplicationFactorRequest", reflect.TypeOf((*MockDAXAPI)(nil).DecreaseReplicationFactorRequest), arg0)
 }
 
-// DecreaseReplicationFactorWithContext mocks base method.
-func (m *MockDAXAPI) DecreaseReplicationFactorWithContext(arg0 context.Context, arg1 *dax.DecreaseReplicationFactorInput, arg2 ...request.Option) (*dax.DecreaseReplicationFactorOutput, error) {
+// DecreaseReplicationFactorWithContext mocks base method
+func (m *MockDAXAPI) DecreaseReplicationFactorWithContext(arg0 aws.Context, arg1 *dax.DecreaseReplicationFactorInput, arg2 ...request.Option) (*dax.DecreaseReplicationFactorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockDAXAPI) DecreaseReplicationFactorWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DecreaseReplicationFactorWithContext indicates an expected call of DecreaseReplicationFactorWithContext.
+// DecreaseReplicationFactorWithContext indicates an expected call of DecreaseReplicationFactorWithContext
 func (mr *MockDAXAPIMockRecorder) DecreaseReplicationFactorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecreaseReplicationFactorWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DecreaseReplicationFactorWithContext), varargs...)
 }
 
-// DeleteCluster mocks base method.
+// DeleteCluster mocks base method
 func (m *MockDAXAPI) DeleteCluster(arg0 *dax.DeleteClusterInput) (*dax.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteCluster", arg0)
@@ -245,13 +244,13 @@ func (m *MockDAXAPI) DeleteCluster(arg0 *dax.DeleteClusterInput) (*dax.DeleteClu
 	return ret0, ret1
 }
 
-// DeleteCluster indicates an expected call of DeleteCluster.
+// DeleteCluster indicates an expected call of DeleteCluster
 func (mr *MockDAXAPIMockRecorder) DeleteCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCluster", reflect.TypeOf((*MockDAXAPI)(nil).DeleteCluster), arg0)
 }
 
-// DeleteClusterRequest mocks base method.
+// DeleteClusterRequest mocks base method
 func (m *MockDAXAPI) DeleteClusterRequest(arg0 *dax.DeleteClusterInput) (*request.Request, *dax.DeleteClusterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteClusterRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockDAXAPI) DeleteClusterRequest(arg0 *dax.DeleteClusterInput) (*reques
 	return ret0, ret1
 }
 
-// DeleteClusterRequest indicates an expected call of DeleteClusterRequest.
+// DeleteClusterRequest indicates an expected call of DeleteClusterRequest
 func (mr *MockDAXAPIMockRecorder) DeleteClusterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterRequest", reflect.TypeOf((*MockDAXAPI)(nil).DeleteClusterRequest), arg0)
 }
 
-// DeleteClusterWithContext mocks base method.
-func (m *MockDAXAPI) DeleteClusterWithContext(arg0 context.Context, arg1 *dax.DeleteClusterInput, arg2 ...request.Option) (*dax.DeleteClusterOutput, error) {
+// DeleteClusterWithContext mocks base method
+func (m *MockDAXAPI) DeleteClusterWithContext(arg0 aws.Context, arg1 *dax.DeleteClusterInput, arg2 ...request.Option) (*dax.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockDAXAPI) DeleteClusterWithContext(arg0 context.Context, arg1 *dax.De
 	return ret0, ret1
 }
 
-// DeleteClusterWithContext indicates an expected call of DeleteClusterWithContext.
+// DeleteClusterWithContext indicates an expected call of DeleteClusterWithContext
 func (mr *MockDAXAPIMockRecorder) DeleteClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DeleteClusterWithContext), varargs...)
 }
 
-// DeleteParameterGroup mocks base method.
+// DeleteParameterGroup mocks base method
 func (m *MockDAXAPI) DeleteParameterGroup(arg0 *dax.DeleteParameterGroupInput) (*dax.DeleteParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteParameterGroup", arg0)
@@ -295,13 +294,13 @@ func (m *MockDAXAPI) DeleteParameterGroup(arg0 *dax.DeleteParameterGroupInput) (
 	return ret0, ret1
 }
 
-// DeleteParameterGroup indicates an expected call of DeleteParameterGroup.
+// DeleteParameterGroup indicates an expected call of DeleteParameterGroup
 func (mr *MockDAXAPIMockRecorder) DeleteParameterGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteParameterGroup", reflect.TypeOf((*MockDAXAPI)(nil).DeleteParameterGroup), arg0)
 }
 
-// DeleteParameterGroupRequest mocks base method.
+// DeleteParameterGroupRequest mocks base method
 func (m *MockDAXAPI) DeleteParameterGroupRequest(arg0 *dax.DeleteParameterGroupInput) (*request.Request, *dax.DeleteParameterGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteParameterGroupRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockDAXAPI) DeleteParameterGroupRequest(arg0 *dax.DeleteParameterGroupI
 	return ret0, ret1
 }
 
-// DeleteParameterGroupRequest indicates an expected call of DeleteParameterGroupRequest.
+// DeleteParameterGroupRequest indicates an expected call of DeleteParameterGroupRequest
 func (mr *MockDAXAPIMockRecorder) DeleteParameterGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteParameterGroupRequest", reflect.TypeOf((*MockDAXAPI)(nil).DeleteParameterGroupRequest), arg0)
 }
 
-// DeleteParameterGroupWithContext mocks base method.
-func (m *MockDAXAPI) DeleteParameterGroupWithContext(arg0 context.Context, arg1 *dax.DeleteParameterGroupInput, arg2 ...request.Option) (*dax.DeleteParameterGroupOutput, error) {
+// DeleteParameterGroupWithContext mocks base method
+func (m *MockDAXAPI) DeleteParameterGroupWithContext(arg0 aws.Context, arg1 *dax.DeleteParameterGroupInput, arg2 ...request.Option) (*dax.DeleteParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockDAXAPI) DeleteParameterGroupWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteParameterGroupWithContext indicates an expected call of DeleteParameterGroupWithContext.
+// DeleteParameterGroupWithContext indicates an expected call of DeleteParameterGroupWithContext
 func (mr *MockDAXAPIMockRecorder) DeleteParameterGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteParameterGroupWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DeleteParameterGroupWithContext), varargs...)
 }
 
-// DeleteSubnetGroup mocks base method.
+// DeleteSubnetGroup mocks base method
 func (m *MockDAXAPI) DeleteSubnetGroup(arg0 *dax.DeleteSubnetGroupInput) (*dax.DeleteSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSubnetGroup", arg0)
@@ -345,13 +344,13 @@ func (m *MockDAXAPI) DeleteSubnetGroup(arg0 *dax.DeleteSubnetGroupInput) (*dax.D
 	return ret0, ret1
 }
 
-// DeleteSubnetGroup indicates an expected call of DeleteSubnetGroup.
+// DeleteSubnetGroup indicates an expected call of DeleteSubnetGroup
 func (mr *MockDAXAPIMockRecorder) DeleteSubnetGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubnetGroup", reflect.TypeOf((*MockDAXAPI)(nil).DeleteSubnetGroup), arg0)
 }
 
-// DeleteSubnetGroupRequest mocks base method.
+// DeleteSubnetGroupRequest mocks base method
 func (m *MockDAXAPI) DeleteSubnetGroupRequest(arg0 *dax.DeleteSubnetGroupInput) (*request.Request, *dax.DeleteSubnetGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSubnetGroupRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockDAXAPI) DeleteSubnetGroupRequest(arg0 *dax.DeleteSubnetGroupInput) 
 	return ret0, ret1
 }
 
-// DeleteSubnetGroupRequest indicates an expected call of DeleteSubnetGroupRequest.
+// DeleteSubnetGroupRequest indicates an expected call of DeleteSubnetGroupRequest
 func (mr *MockDAXAPIMockRecorder) DeleteSubnetGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubnetGroupRequest", reflect.TypeOf((*MockDAXAPI)(nil).DeleteSubnetGroupRequest), arg0)
 }
 
-// DeleteSubnetGroupWithContext mocks base method.
-func (m *MockDAXAPI) DeleteSubnetGroupWithContext(arg0 context.Context, arg1 *dax.DeleteSubnetGroupInput, arg2 ...request.Option) (*dax.DeleteSubnetGroupOutput, error) {
+// DeleteSubnetGroupWithContext mocks base method
+func (m *MockDAXAPI) DeleteSubnetGroupWithContext(arg0 aws.Context, arg1 *dax.DeleteSubnetGroupInput, arg2 ...request.Option) (*dax.DeleteSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockDAXAPI) DeleteSubnetGroupWithContext(arg0 context.Context, arg1 *da
 	return ret0, ret1
 }
 
-// DeleteSubnetGroupWithContext indicates an expected call of DeleteSubnetGroupWithContext.
+// DeleteSubnetGroupWithContext indicates an expected call of DeleteSubnetGroupWithContext
 func (mr *MockDAXAPIMockRecorder) DeleteSubnetGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubnetGroupWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DeleteSubnetGroupWithContext), varargs...)
 }
 
-// DescribeClusters mocks base method.
+// DescribeClusters mocks base method
 func (m *MockDAXAPI) DescribeClusters(arg0 *dax.DescribeClustersInput) (*dax.DescribeClustersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeClusters", arg0)
@@ -395,13 +394,13 @@ func (m *MockDAXAPI) DescribeClusters(arg0 *dax.DescribeClustersInput) (*dax.Des
 	return ret0, ret1
 }
 
-// DescribeClusters indicates an expected call of DescribeClusters.
+// DescribeClusters indicates an expected call of DescribeClusters
 func (mr *MockDAXAPIMockRecorder) DescribeClusters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusters", reflect.TypeOf((*MockDAXAPI)(nil).DescribeClusters), arg0)
 }
 
-// DescribeClustersRequest mocks base method.
+// DescribeClustersRequest mocks base method
 func (m *MockDAXAPI) DescribeClustersRequest(arg0 *dax.DescribeClustersInput) (*request.Request, *dax.DescribeClustersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeClustersRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockDAXAPI) DescribeClustersRequest(arg0 *dax.DescribeClustersInput) (*
 	return ret0, ret1
 }
 
-// DescribeClustersRequest indicates an expected call of DescribeClustersRequest.
+// DescribeClustersRequest indicates an expected call of DescribeClustersRequest
 func (mr *MockDAXAPIMockRecorder) DescribeClustersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersRequest", reflect.TypeOf((*MockDAXAPI)(nil).DescribeClustersRequest), arg0)
 }
 
-// DescribeClustersWithContext mocks base method.
-func (m *MockDAXAPI) DescribeClustersWithContext(arg0 context.Context, arg1 *dax.DescribeClustersInput, arg2 ...request.Option) (*dax.DescribeClustersOutput, error) {
+// DescribeClustersWithContext mocks base method
+func (m *MockDAXAPI) DescribeClustersWithContext(arg0 aws.Context, arg1 *dax.DescribeClustersInput, arg2 ...request.Option) (*dax.DescribeClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockDAXAPI) DescribeClustersWithContext(arg0 context.Context, arg1 *dax
 	return ret0, ret1
 }
 
-// DescribeClustersWithContext indicates an expected call of DescribeClustersWithContext.
+// DescribeClustersWithContext indicates an expected call of DescribeClustersWithContext
 func (mr *MockDAXAPIMockRecorder) DescribeClustersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DescribeClustersWithContext), varargs...)
 }
 
-// DescribeDefaultParameters mocks base method.
+// DescribeDefaultParameters mocks base method
 func (m *MockDAXAPI) DescribeDefaultParameters(arg0 *dax.DescribeDefaultParametersInput) (*dax.DescribeDefaultParametersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDefaultParameters", arg0)
@@ -445,13 +444,13 @@ func (m *MockDAXAPI) DescribeDefaultParameters(arg0 *dax.DescribeDefaultParamete
 	return ret0, ret1
 }
 
-// DescribeDefaultParameters indicates an expected call of DescribeDefaultParameters.
+// DescribeDefaultParameters indicates an expected call of DescribeDefaultParameters
 func (mr *MockDAXAPIMockRecorder) DescribeDefaultParameters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultParameters", reflect.TypeOf((*MockDAXAPI)(nil).DescribeDefaultParameters), arg0)
 }
 
-// DescribeDefaultParametersRequest mocks base method.
+// DescribeDefaultParametersRequest mocks base method
 func (m *MockDAXAPI) DescribeDefaultParametersRequest(arg0 *dax.DescribeDefaultParametersInput) (*request.Request, *dax.DescribeDefaultParametersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeDefaultParametersRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockDAXAPI) DescribeDefaultParametersRequest(arg0 *dax.DescribeDefaultP
 	return ret0, ret1
 }
 
-// DescribeDefaultParametersRequest indicates an expected call of DescribeDefaultParametersRequest.
+// DescribeDefaultParametersRequest indicates an expected call of DescribeDefaultParametersRequest
 func (mr *MockDAXAPIMockRecorder) DescribeDefaultParametersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultParametersRequest", reflect.TypeOf((*MockDAXAPI)(nil).DescribeDefaultParametersRequest), arg0)
 }
 
-// DescribeDefaultParametersWithContext mocks base method.
-func (m *MockDAXAPI) DescribeDefaultParametersWithContext(arg0 context.Context, arg1 *dax.DescribeDefaultParametersInput, arg2 ...request.Option) (*dax.DescribeDefaultParametersOutput, error) {
+// DescribeDefaultParametersWithContext mocks base method
+func (m *MockDAXAPI) DescribeDefaultParametersWithContext(arg0 aws.Context, arg1 *dax.DescribeDefaultParametersInput, arg2 ...request.Option) (*dax.DescribeDefaultParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockDAXAPI) DescribeDefaultParametersWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DescribeDefaultParametersWithContext indicates an expected call of DescribeDefaultParametersWithContext.
+// DescribeDefaultParametersWithContext indicates an expected call of DescribeDefaultParametersWithContext
 func (mr *MockDAXAPIMockRecorder) DescribeDefaultParametersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultParametersWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DescribeDefaultParametersWithContext), varargs...)
 }
 
-// DescribeEvents mocks base method.
+// DescribeEvents mocks base method
 func (m *MockDAXAPI) DescribeEvents(arg0 *dax.DescribeEventsInput) (*dax.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEvents", arg0)
@@ -495,13 +494,13 @@ func (m *MockDAXAPI) DescribeEvents(arg0 *dax.DescribeEventsInput) (*dax.Describ
 	return ret0, ret1
 }
 
-// DescribeEvents indicates an expected call of DescribeEvents.
+// DescribeEvents indicates an expected call of DescribeEvents
 func (mr *MockDAXAPIMockRecorder) DescribeEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvents", reflect.TypeOf((*MockDAXAPI)(nil).DescribeEvents), arg0)
 }
 
-// DescribeEventsRequest mocks base method.
+// DescribeEventsRequest mocks base method
 func (m *MockDAXAPI) DescribeEventsRequest(arg0 *dax.DescribeEventsInput) (*request.Request, *dax.DescribeEventsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEventsRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockDAXAPI) DescribeEventsRequest(arg0 *dax.DescribeEventsInput) (*requ
 	return ret0, ret1
 }
 
-// DescribeEventsRequest indicates an expected call of DescribeEventsRequest.
+// DescribeEventsRequest indicates an expected call of DescribeEventsRequest
 func (mr *MockDAXAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsRequest", reflect.TypeOf((*MockDAXAPI)(nil).DescribeEventsRequest), arg0)
 }
 
-// DescribeEventsWithContext mocks base method.
-func (m *MockDAXAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *dax.DescribeEventsInput, arg2 ...request.Option) (*dax.DescribeEventsOutput, error) {
+// DescribeEventsWithContext mocks base method
+func (m *MockDAXAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *dax.DescribeEventsInput, arg2 ...request.Option) (*dax.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockDAXAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *dax.D
 	return ret0, ret1
 }
 
-// DescribeEventsWithContext indicates an expected call of DescribeEventsWithContext.
+// DescribeEventsWithContext indicates an expected call of DescribeEventsWithContext
 func (mr *MockDAXAPIMockRecorder) DescribeEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DescribeEventsWithContext), varargs...)
 }
 
-// DescribeParameterGroups mocks base method.
+// DescribeParameterGroups mocks base method
 func (m *MockDAXAPI) DescribeParameterGroups(arg0 *dax.DescribeParameterGroupsInput) (*dax.DescribeParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeParameterGroups", arg0)
@@ -545,13 +544,13 @@ func (m *MockDAXAPI) DescribeParameterGroups(arg0 *dax.DescribeParameterGroupsIn
 	return ret0, ret1
 }
 
-// DescribeParameterGroups indicates an expected call of DescribeParameterGroups.
+// DescribeParameterGroups indicates an expected call of DescribeParameterGroups
 func (mr *MockDAXAPIMockRecorder) DescribeParameterGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameterGroups", reflect.TypeOf((*MockDAXAPI)(nil).DescribeParameterGroups), arg0)
 }
 
-// DescribeParameterGroupsRequest mocks base method.
+// DescribeParameterGroupsRequest mocks base method
 func (m *MockDAXAPI) DescribeParameterGroupsRequest(arg0 *dax.DescribeParameterGroupsInput) (*request.Request, *dax.DescribeParameterGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeParameterGroupsRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockDAXAPI) DescribeParameterGroupsRequest(arg0 *dax.DescribeParameterG
 	return ret0, ret1
 }
 
-// DescribeParameterGroupsRequest indicates an expected call of DescribeParameterGroupsRequest.
+// DescribeParameterGroupsRequest indicates an expected call of DescribeParameterGroupsRequest
 func (mr *MockDAXAPIMockRecorder) DescribeParameterGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameterGroupsRequest", reflect.TypeOf((*MockDAXAPI)(nil).DescribeParameterGroupsRequest), arg0)
 }
 
-// DescribeParameterGroupsWithContext mocks base method.
-func (m *MockDAXAPI) DescribeParameterGroupsWithContext(arg0 context.Context, arg1 *dax.DescribeParameterGroupsInput, arg2 ...request.Option) (*dax.DescribeParameterGroupsOutput, error) {
+// DescribeParameterGroupsWithContext mocks base method
+func (m *MockDAXAPI) DescribeParameterGroupsWithContext(arg0 aws.Context, arg1 *dax.DescribeParameterGroupsInput, arg2 ...request.Option) (*dax.DescribeParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockDAXAPI) DescribeParameterGroupsWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DescribeParameterGroupsWithContext indicates an expected call of DescribeParameterGroupsWithContext.
+// DescribeParameterGroupsWithContext indicates an expected call of DescribeParameterGroupsWithContext
 func (mr *MockDAXAPIMockRecorder) DescribeParameterGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameterGroupsWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DescribeParameterGroupsWithContext), varargs...)
 }
 
-// DescribeParameters mocks base method.
+// DescribeParameters mocks base method
 func (m *MockDAXAPI) DescribeParameters(arg0 *dax.DescribeParametersInput) (*dax.DescribeParametersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeParameters", arg0)
@@ -595,13 +594,13 @@ func (m *MockDAXAPI) DescribeParameters(arg0 *dax.DescribeParametersInput) (*dax
 	return ret0, ret1
 }
 
-// DescribeParameters indicates an expected call of DescribeParameters.
+// DescribeParameters indicates an expected call of DescribeParameters
 func (mr *MockDAXAPIMockRecorder) DescribeParameters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameters", reflect.TypeOf((*MockDAXAPI)(nil).DescribeParameters), arg0)
 }
 
-// DescribeParametersRequest mocks base method.
+// DescribeParametersRequest mocks base method
 func (m *MockDAXAPI) DescribeParametersRequest(arg0 *dax.DescribeParametersInput) (*request.Request, *dax.DescribeParametersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeParametersRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockDAXAPI) DescribeParametersRequest(arg0 *dax.DescribeParametersInput
 	return ret0, ret1
 }
 
-// DescribeParametersRequest indicates an expected call of DescribeParametersRequest.
+// DescribeParametersRequest indicates an expected call of DescribeParametersRequest
 func (mr *MockDAXAPIMockRecorder) DescribeParametersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParametersRequest", reflect.TypeOf((*MockDAXAPI)(nil).DescribeParametersRequest), arg0)
 }
 
-// DescribeParametersWithContext mocks base method.
-func (m *MockDAXAPI) DescribeParametersWithContext(arg0 context.Context, arg1 *dax.DescribeParametersInput, arg2 ...request.Option) (*dax.DescribeParametersOutput, error) {
+// DescribeParametersWithContext mocks base method
+func (m *MockDAXAPI) DescribeParametersWithContext(arg0 aws.Context, arg1 *dax.DescribeParametersInput, arg2 ...request.Option) (*dax.DescribeParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockDAXAPI) DescribeParametersWithContext(arg0 context.Context, arg1 *d
 	return ret0, ret1
 }
 
-// DescribeParametersWithContext indicates an expected call of DescribeParametersWithContext.
+// DescribeParametersWithContext indicates an expected call of DescribeParametersWithContext
 func (mr *MockDAXAPIMockRecorder) DescribeParametersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParametersWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DescribeParametersWithContext), varargs...)
 }
 
-// DescribeSubnetGroups mocks base method.
+// DescribeSubnetGroups mocks base method
 func (m *MockDAXAPI) DescribeSubnetGroups(arg0 *dax.DescribeSubnetGroupsInput) (*dax.DescribeSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSubnetGroups", arg0)
@@ -645,13 +644,13 @@ func (m *MockDAXAPI) DescribeSubnetGroups(arg0 *dax.DescribeSubnetGroupsInput) (
 	return ret0, ret1
 }
 
-// DescribeSubnetGroups indicates an expected call of DescribeSubnetGroups.
+// DescribeSubnetGroups indicates an expected call of DescribeSubnetGroups
 func (mr *MockDAXAPIMockRecorder) DescribeSubnetGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubnetGroups", reflect.TypeOf((*MockDAXAPI)(nil).DescribeSubnetGroups), arg0)
 }
 
-// DescribeSubnetGroupsRequest mocks base method.
+// DescribeSubnetGroupsRequest mocks base method
 func (m *MockDAXAPI) DescribeSubnetGroupsRequest(arg0 *dax.DescribeSubnetGroupsInput) (*request.Request, *dax.DescribeSubnetGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSubnetGroupsRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockDAXAPI) DescribeSubnetGroupsRequest(arg0 *dax.DescribeSubnetGroupsI
 	return ret0, ret1
 }
 
-// DescribeSubnetGroupsRequest indicates an expected call of DescribeSubnetGroupsRequest.
+// DescribeSubnetGroupsRequest indicates an expected call of DescribeSubnetGroupsRequest
 func (mr *MockDAXAPIMockRecorder) DescribeSubnetGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubnetGroupsRequest", reflect.TypeOf((*MockDAXAPI)(nil).DescribeSubnetGroupsRequest), arg0)
 }
 
-// DescribeSubnetGroupsWithContext mocks base method.
-func (m *MockDAXAPI) DescribeSubnetGroupsWithContext(arg0 context.Context, arg1 *dax.DescribeSubnetGroupsInput, arg2 ...request.Option) (*dax.DescribeSubnetGroupsOutput, error) {
+// DescribeSubnetGroupsWithContext mocks base method
+func (m *MockDAXAPI) DescribeSubnetGroupsWithContext(arg0 aws.Context, arg1 *dax.DescribeSubnetGroupsInput, arg2 ...request.Option) (*dax.DescribeSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockDAXAPI) DescribeSubnetGroupsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeSubnetGroupsWithContext indicates an expected call of DescribeSubnetGroupsWithContext.
+// DescribeSubnetGroupsWithContext indicates an expected call of DescribeSubnetGroupsWithContext
 func (mr *MockDAXAPIMockRecorder) DescribeSubnetGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubnetGroupsWithContext", reflect.TypeOf((*MockDAXAPI)(nil).DescribeSubnetGroupsWithContext), varargs...)
 }
 
-// IncreaseReplicationFactor mocks base method.
+// IncreaseReplicationFactor mocks base method
 func (m *MockDAXAPI) IncreaseReplicationFactor(arg0 *dax.IncreaseReplicationFactorInput) (*dax.IncreaseReplicationFactorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "IncreaseReplicationFactor", arg0)
@@ -695,13 +694,13 @@ func (m *MockDAXAPI) IncreaseReplicationFactor(arg0 *dax.IncreaseReplicationFact
 	return ret0, ret1
 }
 
-// IncreaseReplicationFactor indicates an expected call of IncreaseReplicationFactor.
+// IncreaseReplicationFactor indicates an expected call of IncreaseReplicationFactor
 func (mr *MockDAXAPIMockRecorder) IncreaseReplicationFactor(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IncreaseReplicationFactor", reflect.TypeOf((*MockDAXAPI)(nil).IncreaseReplicationFactor), arg0)
 }
 
-// IncreaseReplicationFactorRequest mocks base method.
+// IncreaseReplicationFactorRequest mocks base method
 func (m *MockDAXAPI) IncreaseReplicationFactorRequest(arg0 *dax.IncreaseReplicationFactorInput) (*request.Request, *dax.IncreaseReplicationFactorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "IncreaseReplicationFactorRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockDAXAPI) IncreaseReplicationFactorRequest(arg0 *dax.IncreaseReplicat
 	return ret0, ret1
 }
 
-// IncreaseReplicationFactorRequest indicates an expected call of IncreaseReplicationFactorRequest.
+// IncreaseReplicationFactorRequest indicates an expected call of IncreaseReplicationFactorRequest
 func (mr *MockDAXAPIMockRecorder) IncreaseReplicationFactorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IncreaseReplicationFactorRequest", reflect.TypeOf((*MockDAXAPI)(nil).IncreaseReplicationFactorRequest), arg0)
 }
 
-// IncreaseReplicationFactorWithContext mocks base method.
-func (m *MockDAXAPI) IncreaseReplicationFactorWithContext(arg0 context.Context, arg1 *dax.IncreaseReplicationFactorInput, arg2 ...request.Option) (*dax.IncreaseReplicationFactorOutput, error) {
+// IncreaseReplicationFactorWithContext mocks base method
+func (m *MockDAXAPI) IncreaseReplicationFactorWithContext(arg0 aws.Context, arg1 *dax.IncreaseReplicationFactorInput, arg2 ...request.Option) (*dax.IncreaseReplicationFactorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +728,14 @@ func (m *MockDAXAPI) IncreaseReplicationFactorWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// IncreaseReplicationFactorWithContext indicates an expected call of IncreaseReplicationFactorWithContext.
+// IncreaseReplicationFactorWithContext indicates an expected call of IncreaseReplicationFactorWithContext
 func (mr *MockDAXAPIMockRecorder) IncreaseReplicationFactorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IncreaseReplicationFactorWithContext", reflect.TypeOf((*MockDAXAPI)(nil).IncreaseReplicationFactorWithContext), varargs...)
 }
 
-// ListTags mocks base method.
+// ListTags mocks base method
 func (m *MockDAXAPI) ListTags(arg0 *dax.ListTagsInput) (*dax.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTags", arg0)
@@ -745,13 +744,13 @@ func (m *MockDAXAPI) ListTags(arg0 *dax.ListTagsInput) (*dax.ListTagsOutput, err
 	return ret0, ret1
 }
 
-// ListTags indicates an expected call of ListTags.
+// ListTags indicates an expected call of ListTags
 func (mr *MockDAXAPIMockRecorder) ListTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTags", reflect.TypeOf((*MockDAXAPI)(nil).ListTags), arg0)
 }
 
-// ListTagsRequest mocks base method.
+// ListTagsRequest mocks base method
 func (m *MockDAXAPI) ListTagsRequest(arg0 *dax.ListTagsInput) (*request.Request, *dax.ListTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsRequest", arg0)
@@ -760,14 +759,14 @@ func (m *MockDAXAPI) ListTagsRequest(arg0 *dax.ListTagsInput) (*request.Request,
 	return ret0, ret1
 }
 
-// ListTagsRequest indicates an expected call of ListTagsRequest.
+// ListTagsRequest indicates an expected call of ListTagsRequest
 func (mr *MockDAXAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsRequest", reflect.TypeOf((*MockDAXAPI)(nil).ListTagsRequest), arg0)
 }
 
-// ListTagsWithContext mocks base method.
-func (m *MockDAXAPI) ListTagsWithContext(arg0 context.Context, arg1 *dax.ListTagsInput, arg2 ...request.Option) (*dax.ListTagsOutput, error) {
+// ListTagsWithContext mocks base method
+func (m *MockDAXAPI) ListTagsWithContext(arg0 aws.Context, arg1 *dax.ListTagsInput, arg2 ...request.Option) (*dax.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +778,14 @@ func (m *MockDAXAPI) ListTagsWithContext(arg0 context.Context, arg1 *dax.ListTag
 	return ret0, ret1
 }
 
-// ListTagsWithContext indicates an expected call of ListTagsWithContext.
+// ListTagsWithContext indicates an expected call of ListTagsWithContext
 func (mr *MockDAXAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockDAXAPI)(nil).ListTagsWithContext), varargs...)
 }
 
-// RebootNode mocks base method.
+// RebootNode mocks base method
 func (m *MockDAXAPI) RebootNode(arg0 *dax.RebootNodeInput) (*dax.RebootNodeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RebootNode", arg0)
@@ -795,13 +794,13 @@ func (m *MockDAXAPI) RebootNode(arg0 *dax.RebootNodeInput) (*dax.RebootNodeOutpu
 	return ret0, ret1
 }
 
-// RebootNode indicates an expected call of RebootNode.
+// RebootNode indicates an expected call of RebootNode
 func (mr *MockDAXAPIMockRecorder) RebootNode(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootNode", reflect.TypeOf((*MockDAXAPI)(nil).RebootNode), arg0)
 }
 
-// RebootNodeRequest mocks base method.
+// RebootNodeRequest mocks base method
 func (m *MockDAXAPI) RebootNodeRequest(arg0 *dax.RebootNodeInput) (*request.Request, *dax.RebootNodeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RebootNodeRequest", arg0)
@@ -810,14 +809,14 @@ func (m *MockDAXAPI) RebootNodeRequest(arg0 *dax.RebootNodeInput) (*request.Requ
 	return ret0, ret1
 }
 
-// RebootNodeRequest indicates an expected call of RebootNodeRequest.
+// RebootNodeRequest indicates an expected call of RebootNodeRequest
 func (mr *MockDAXAPIMockRecorder) RebootNodeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootNodeRequest", reflect.TypeOf((*MockDAXAPI)(nil).RebootNodeRequest), arg0)
 }
 
-// RebootNodeWithContext mocks base method.
-func (m *MockDAXAPI) RebootNodeWithContext(arg0 context.Context, arg1 *dax.RebootNodeInput, arg2 ...request.Option) (*dax.RebootNodeOutput, error) {
+// RebootNodeWithContext mocks base method
+func (m *MockDAXAPI) RebootNodeWithContext(arg0 aws.Context, arg1 *dax.RebootNodeInput, arg2 ...request.Option) (*dax.RebootNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +828,14 @@ func (m *MockDAXAPI) RebootNodeWithContext(arg0 context.Context, arg1 *dax.Reboo
 	return ret0, ret1
 }
 
-// RebootNodeWithContext indicates an expected call of RebootNodeWithContext.
+// RebootNodeWithContext indicates an expected call of RebootNodeWithContext
 func (mr *MockDAXAPIMockRecorder) RebootNodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootNodeWithContext", reflect.TypeOf((*MockDAXAPI)(nil).RebootNodeWithContext), varargs...)
 }
 
-// TagResource mocks base method.
+// TagResource mocks base method
 func (m *MockDAXAPI) TagResource(arg0 *dax.TagResourceInput) (*dax.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResource", arg0)
@@ -845,13 +844,13 @@ func (m *MockDAXAPI) TagResource(arg0 *dax.TagResourceInput) (*dax.TagResourceOu
 	return ret0, ret1
 }
 
-// TagResource indicates an expected call of TagResource.
+// TagResource indicates an expected call of TagResource
 func (mr *MockDAXAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockDAXAPI)(nil).TagResource), arg0)
 }
 
-// TagResourceRequest mocks base method.
+// TagResourceRequest mocks base method
 func (m *MockDAXAPI) TagResourceRequest(arg0 *dax.TagResourceInput) (*request.Request, *dax.TagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
@@ -860,14 +859,14 @@ func (m *MockDAXAPI) TagResourceRequest(arg0 *dax.TagResourceInput) (*request.Re
 	return ret0, ret1
 }
 
-// TagResourceRequest indicates an expected call of TagResourceRequest.
+// TagResourceRequest indicates an expected call of TagResourceRequest
 func (mr *MockDAXAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockDAXAPI)(nil).TagResourceRequest), arg0)
 }
 
-// TagResourceWithContext mocks base method.
-func (m *MockDAXAPI) TagResourceWithContext(arg0 context.Context, arg1 *dax.TagResourceInput, arg2 ...request.Option) (*dax.TagResourceOutput, error) {
+// TagResourceWithContext mocks base method
+func (m *MockDAXAPI) TagResourceWithContext(arg0 aws.Context, arg1 *dax.TagResourceInput, arg2 ...request.Option) (*dax.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +878,14 @@ func (m *MockDAXAPI) TagResourceWithContext(arg0 context.Context, arg1 *dax.TagR
 	return ret0, ret1
 }
 
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
 func (mr *MockDAXAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockDAXAPI)(nil).TagResourceWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
+// UntagResource mocks base method
 func (m *MockDAXAPI) UntagResource(arg0 *dax.UntagResourceInput) (*dax.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResource", arg0)
@@ -895,13 +894,13 @@ func (m *MockDAXAPI) UntagResource(arg0 *dax.UntagResourceInput) (*dax.UntagReso
 	return ret0, ret1
 }
 
-// UntagResource indicates an expected call of UntagResource.
+// UntagResource indicates an expected call of UntagResource
 func (mr *MockDAXAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockDAXAPI)(nil).UntagResource), arg0)
 }
 
-// UntagResourceRequest mocks base method.
+// UntagResourceRequest mocks base method
 func (m *MockDAXAPI) UntagResourceRequest(arg0 *dax.UntagResourceInput) (*request.Request, *dax.UntagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
@@ -910,14 +909,14 @@ func (m *MockDAXAPI) UntagResourceRequest(arg0 *dax.UntagResourceInput) (*reques
 	return ret0, ret1
 }
 
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
 func (mr *MockDAXAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockDAXAPI)(nil).UntagResourceRequest), arg0)
 }
 
-// UntagResourceWithContext mocks base method.
-func (m *MockDAXAPI) UntagResourceWithContext(arg0 context.Context, arg1 *dax.UntagResourceInput, arg2 ...request.Option) (*dax.UntagResourceOutput, error) {
+// UntagResourceWithContext mocks base method
+func (m *MockDAXAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *dax.UntagResourceInput, arg2 ...request.Option) (*dax.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +928,14 @@ func (m *MockDAXAPI) UntagResourceWithContext(arg0 context.Context, arg1 *dax.Un
 	return ret0, ret1
 }
 
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
 func (mr *MockDAXAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockDAXAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
-// UpdateCluster mocks base method.
+// UpdateCluster mocks base method
 func (m *MockDAXAPI) UpdateCluster(arg0 *dax.UpdateClusterInput) (*dax.UpdateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateCluster", arg0)
@@ -945,13 +944,13 @@ func (m *MockDAXAPI) UpdateCluster(arg0 *dax.UpdateClusterInput) (*dax.UpdateClu
 	return ret0, ret1
 }
 
-// UpdateCluster indicates an expected call of UpdateCluster.
+// UpdateCluster indicates an expected call of UpdateCluster
 func (mr *MockDAXAPIMockRecorder) UpdateCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCluster", reflect.TypeOf((*MockDAXAPI)(nil).UpdateCluster), arg0)
 }
 
-// UpdateClusterRequest mocks base method.
+// UpdateClusterRequest mocks base method
 func (m *MockDAXAPI) UpdateClusterRequest(arg0 *dax.UpdateClusterInput) (*request.Request, *dax.UpdateClusterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateClusterRequest", arg0)
@@ -960,14 +959,14 @@ func (m *MockDAXAPI) UpdateClusterRequest(arg0 *dax.UpdateClusterInput) (*reques
 	return ret0, ret1
 }
 
-// UpdateClusterRequest indicates an expected call of UpdateClusterRequest.
+// UpdateClusterRequest indicates an expected call of UpdateClusterRequest
 func (mr *MockDAXAPIMockRecorder) UpdateClusterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterRequest", reflect.TypeOf((*MockDAXAPI)(nil).UpdateClusterRequest), arg0)
 }
 
-// UpdateClusterWithContext mocks base method.
-func (m *MockDAXAPI) UpdateClusterWithContext(arg0 context.Context, arg1 *dax.UpdateClusterInput, arg2 ...request.Option) (*dax.UpdateClusterOutput, error) {
+// UpdateClusterWithContext mocks base method
+func (m *MockDAXAPI) UpdateClusterWithContext(arg0 aws.Context, arg1 *dax.UpdateClusterInput, arg2 ...request.Option) (*dax.UpdateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +978,14 @@ func (m *MockDAXAPI) UpdateClusterWithContext(arg0 context.Context, arg1 *dax.Up
 	return ret0, ret1
 }
 
-// UpdateClusterWithContext indicates an expected call of UpdateClusterWithContext.
+// UpdateClusterWithContext indicates an expected call of UpdateClusterWithContext
 func (mr *MockDAXAPIMockRecorder) UpdateClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterWithContext", reflect.TypeOf((*MockDAXAPI)(nil).UpdateClusterWithContext), varargs...)
 }
 
-// UpdateParameterGroup mocks base method.
+// UpdateParameterGroup mocks base method
 func (m *MockDAXAPI) UpdateParameterGroup(arg0 *dax.UpdateParameterGroupInput) (*dax.UpdateParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateParameterGroup", arg0)
@@ -995,13 +994,13 @@ func (m *MockDAXAPI) UpdateParameterGroup(arg0 *dax.UpdateParameterGroupInput) (
 	return ret0, ret1
 }
 
-// UpdateParameterGroup indicates an expected call of UpdateParameterGroup.
+// UpdateParameterGroup indicates an expected call of UpdateParameterGroup
 func (mr *MockDAXAPIMockRecorder) UpdateParameterGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateParameterGroup", reflect.TypeOf((*MockDAXAPI)(nil).UpdateParameterGroup), arg0)
 }
 
-// UpdateParameterGroupRequest mocks base method.
+// UpdateParameterGroupRequest mocks base method
 func (m *MockDAXAPI) UpdateParameterGroupRequest(arg0 *dax.UpdateParameterGroupInput) (*request.Request, *dax.UpdateParameterGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateParameterGroupRequest", arg0)
@@ -1010,14 +1009,14 @@ func (m *MockDAXAPI) UpdateParameterGroupRequest(arg0 *dax.UpdateParameterGroupI
 	return ret0, ret1
 }
 
-// UpdateParameterGroupRequest indicates an expected call of UpdateParameterGroupRequest.
+// UpdateParameterGroupRequest indicates an expected call of UpdateParameterGroupRequest
 func (mr *MockDAXAPIMockRecorder) UpdateParameterGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateParameterGroupRequest", reflect.TypeOf((*MockDAXAPI)(nil).UpdateParameterGroupRequest), arg0)
 }
 
-// UpdateParameterGroupWithContext mocks base method.
-func (m *MockDAXAPI) UpdateParameterGroupWithContext(arg0 context.Context, arg1 *dax.UpdateParameterGroupInput, arg2 ...request.Option) (*dax.UpdateParameterGroupOutput, error) {
+// UpdateParameterGroupWithContext mocks base method
+func (m *MockDAXAPI) UpdateParameterGroupWithContext(arg0 aws.Context, arg1 *dax.UpdateParameterGroupInput, arg2 ...request.Option) (*dax.UpdateParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +1028,14 @@ func (m *MockDAXAPI) UpdateParameterGroupWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateParameterGroupWithContext indicates an expected call of UpdateParameterGroupWithContext.
+// UpdateParameterGroupWithContext indicates an expected call of UpdateParameterGroupWithContext
 func (mr *MockDAXAPIMockRecorder) UpdateParameterGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateParameterGroupWithContext", reflect.TypeOf((*MockDAXAPI)(nil).UpdateParameterGroupWithContext), varargs...)
 }
 
-// UpdateSubnetGroup mocks base method.
+// UpdateSubnetGroup mocks base method
 func (m *MockDAXAPI) UpdateSubnetGroup(arg0 *dax.UpdateSubnetGroupInput) (*dax.UpdateSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSubnetGroup", arg0)
@@ -1045,13 +1044,13 @@ func (m *MockDAXAPI) UpdateSubnetGroup(arg0 *dax.UpdateSubnetGroupInput) (*dax.U
 	return ret0, ret1
 }
 
-// UpdateSubnetGroup indicates an expected call of UpdateSubnetGroup.
+// UpdateSubnetGroup indicates an expected call of UpdateSubnetGroup
 func (mr *MockDAXAPIMockRecorder) UpdateSubnetGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubnetGroup", reflect.TypeOf((*MockDAXAPI)(nil).UpdateSubnetGroup), arg0)
 }
 
-// UpdateSubnetGroupRequest mocks base method.
+// UpdateSubnetGroupRequest mocks base method
 func (m *MockDAXAPI) UpdateSubnetGroupRequest(arg0 *dax.UpdateSubnetGroupInput) (*request.Request, *dax.UpdateSubnetGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSubnetGroupRequest", arg0)
@@ -1060,14 +1059,14 @@ func (m *MockDAXAPI) UpdateSubnetGroupRequest(arg0 *dax.UpdateSubnetGroupInput) 
 	return ret0, ret1
 }
 
-// UpdateSubnetGroupRequest indicates an expected call of UpdateSubnetGroupRequest.
+// UpdateSubnetGroupRequest indicates an expected call of UpdateSubnetGroupRequest
 func (mr *MockDAXAPIMockRecorder) UpdateSubnetGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubnetGroupRequest", reflect.TypeOf((*MockDAXAPI)(nil).UpdateSubnetGroupRequest), arg0)
 }
 
-// UpdateSubnetGroupWithContext mocks base method.
-func (m *MockDAXAPI) UpdateSubnetGroupWithContext(arg0 context.Context, arg1 *dax.UpdateSubnetGroupInput, arg2 ...request.Option) (*dax.UpdateSubnetGroupOutput, error) {
+// UpdateSubnetGroupWithContext mocks base method
+func (m *MockDAXAPI) UpdateSubnetGroupWithContext(arg0 aws.Context, arg1 *dax.UpdateSubnetGroupInput, arg2 ...request.Option) (*dax.UpdateSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,7 +1078,7 @@ func (m *MockDAXAPI) UpdateSubnetGroupWithContext(arg0 context.Context, arg1 *da
 	return ret0, ret1
 }
 
-// UpdateSubnetGroupWithContext indicates an expected call of UpdateSubnetGroupWithContext.
+// UpdateSubnetGroupWithContext indicates an expected call of UpdateSubnetGroupWithContext
 func (mr *MockDAXAPIMockRecorder) UpdateSubnetGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

@@ -5,38 +5,37 @@
 package pricingmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	pricing "github.com/aws/aws-sdk-go/service/pricing"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockPricingAPI is a mock of PricingAPI interface.
+// MockPricingAPI is a mock of PricingAPI interface
 type MockPricingAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockPricingAPIMockRecorder
 }
 
-// MockPricingAPIMockRecorder is the mock recorder for MockPricingAPI.
+// MockPricingAPIMockRecorder is the mock recorder for MockPricingAPI
 type MockPricingAPIMockRecorder struct {
 	mock *MockPricingAPI
 }
 
-// NewMockPricingAPI creates a new mock instance.
+// NewMockPricingAPI creates a new mock instance
 func NewMockPricingAPI(ctrl *gomock.Controller) *MockPricingAPI {
 	mock := &MockPricingAPI{ctrl: ctrl}
 	mock.recorder = &MockPricingAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockPricingAPI) EXPECT() *MockPricingAPIMockRecorder {
 	return m.recorder
 }
 
-// DescribeServices mocks base method.
+// DescribeServices mocks base method
 func (m *MockPricingAPI) DescribeServices(arg0 *pricing.DescribeServicesInput) (*pricing.DescribeServicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeServices", arg0)
@@ -45,13 +44,13 @@ func (m *MockPricingAPI) DescribeServices(arg0 *pricing.DescribeServicesInput) (
 	return ret0, ret1
 }
 
-// DescribeServices indicates an expected call of DescribeServices.
+// DescribeServices indicates an expected call of DescribeServices
 func (mr *MockPricingAPIMockRecorder) DescribeServices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServices", reflect.TypeOf((*MockPricingAPI)(nil).DescribeServices), arg0)
 }
 
-// DescribeServicesPages mocks base method.
+// DescribeServicesPages mocks base method
 func (m *MockPricingAPI) DescribeServicesPages(arg0 *pricing.DescribeServicesInput, arg1 func(*pricing.DescribeServicesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeServicesPages", arg0, arg1)
@@ -59,14 +58,14 @@ func (m *MockPricingAPI) DescribeServicesPages(arg0 *pricing.DescribeServicesInp
 	return ret0
 }
 
-// DescribeServicesPages indicates an expected call of DescribeServicesPages.
+// DescribeServicesPages indicates an expected call of DescribeServicesPages
 func (mr *MockPricingAPIMockRecorder) DescribeServicesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServicesPages", reflect.TypeOf((*MockPricingAPI)(nil).DescribeServicesPages), arg0, arg1)
 }
 
-// DescribeServicesPagesWithContext mocks base method.
-func (m *MockPricingAPI) DescribeServicesPagesWithContext(arg0 context.Context, arg1 *pricing.DescribeServicesInput, arg2 func(*pricing.DescribeServicesOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeServicesPagesWithContext mocks base method
+func (m *MockPricingAPI) DescribeServicesPagesWithContext(arg0 aws.Context, arg1 *pricing.DescribeServicesInput, arg2 func(*pricing.DescribeServicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -77,14 +76,14 @@ func (m *MockPricingAPI) DescribeServicesPagesWithContext(arg0 context.Context, 
 	return ret0
 }
 
-// DescribeServicesPagesWithContext indicates an expected call of DescribeServicesPagesWithContext.
+// DescribeServicesPagesWithContext indicates an expected call of DescribeServicesPagesWithContext
 func (mr *MockPricingAPIMockRecorder) DescribeServicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServicesPagesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).DescribeServicesPagesWithContext), varargs...)
 }
 
-// DescribeServicesRequest mocks base method.
+// DescribeServicesRequest mocks base method
 func (m *MockPricingAPI) DescribeServicesRequest(arg0 *pricing.DescribeServicesInput) (*request.Request, *pricing.DescribeServicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeServicesRequest", arg0)
@@ -93,14 +92,14 @@ func (m *MockPricingAPI) DescribeServicesRequest(arg0 *pricing.DescribeServicesI
 	return ret0, ret1
 }
 
-// DescribeServicesRequest indicates an expected call of DescribeServicesRequest.
+// DescribeServicesRequest indicates an expected call of DescribeServicesRequest
 func (mr *MockPricingAPIMockRecorder) DescribeServicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServicesRequest", reflect.TypeOf((*MockPricingAPI)(nil).DescribeServicesRequest), arg0)
 }
 
-// DescribeServicesWithContext mocks base method.
-func (m *MockPricingAPI) DescribeServicesWithContext(arg0 context.Context, arg1 *pricing.DescribeServicesInput, arg2 ...request.Option) (*pricing.DescribeServicesOutput, error) {
+// DescribeServicesWithContext mocks base method
+func (m *MockPricingAPI) DescribeServicesWithContext(arg0 aws.Context, arg1 *pricing.DescribeServicesInput, arg2 ...request.Option) (*pricing.DescribeServicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -112,14 +111,14 @@ func (m *MockPricingAPI) DescribeServicesWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DescribeServicesWithContext indicates an expected call of DescribeServicesWithContext.
+// DescribeServicesWithContext indicates an expected call of DescribeServicesWithContext
 func (mr *MockPricingAPIMockRecorder) DescribeServicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServicesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).DescribeServicesWithContext), varargs...)
 }
 
-// GetAttributeValues mocks base method.
+// GetAttributeValues mocks base method
 func (m *MockPricingAPI) GetAttributeValues(arg0 *pricing.GetAttributeValuesInput) (*pricing.GetAttributeValuesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAttributeValues", arg0)
@@ -128,13 +127,13 @@ func (m *MockPricingAPI) GetAttributeValues(arg0 *pricing.GetAttributeValuesInpu
 	return ret0, ret1
 }
 
-// GetAttributeValues indicates an expected call of GetAttributeValues.
+// GetAttributeValues indicates an expected call of GetAttributeValues
 func (mr *MockPricingAPIMockRecorder) GetAttributeValues(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeValues", reflect.TypeOf((*MockPricingAPI)(nil).GetAttributeValues), arg0)
 }
 
-// GetAttributeValuesPages mocks base method.
+// GetAttributeValuesPages mocks base method
 func (m *MockPricingAPI) GetAttributeValuesPages(arg0 *pricing.GetAttributeValuesInput, arg1 func(*pricing.GetAttributeValuesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAttributeValuesPages", arg0, arg1)
@@ -142,14 +141,14 @@ func (m *MockPricingAPI) GetAttributeValuesPages(arg0 *pricing.GetAttributeValue
 	return ret0
 }
 
-// GetAttributeValuesPages indicates an expected call of GetAttributeValuesPages.
+// GetAttributeValuesPages indicates an expected call of GetAttributeValuesPages
 func (mr *MockPricingAPIMockRecorder) GetAttributeValuesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeValuesPages", reflect.TypeOf((*MockPricingAPI)(nil).GetAttributeValuesPages), arg0, arg1)
 }
 
-// GetAttributeValuesPagesWithContext mocks base method.
-func (m *MockPricingAPI) GetAttributeValuesPagesWithContext(arg0 context.Context, arg1 *pricing.GetAttributeValuesInput, arg2 func(*pricing.GetAttributeValuesOutput, bool) bool, arg3 ...request.Option) error {
+// GetAttributeValuesPagesWithContext mocks base method
+func (m *MockPricingAPI) GetAttributeValuesPagesWithContext(arg0 aws.Context, arg1 *pricing.GetAttributeValuesInput, arg2 func(*pricing.GetAttributeValuesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -160,14 +159,14 @@ func (m *MockPricingAPI) GetAttributeValuesPagesWithContext(arg0 context.Context
 	return ret0
 }
 
-// GetAttributeValuesPagesWithContext indicates an expected call of GetAttributeValuesPagesWithContext.
+// GetAttributeValuesPagesWithContext indicates an expected call of GetAttributeValuesPagesWithContext
 func (mr *MockPricingAPIMockRecorder) GetAttributeValuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeValuesPagesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).GetAttributeValuesPagesWithContext), varargs...)
 }
 
-// GetAttributeValuesRequest mocks base method.
+// GetAttributeValuesRequest mocks base method
 func (m *MockPricingAPI) GetAttributeValuesRequest(arg0 *pricing.GetAttributeValuesInput) (*request.Request, *pricing.GetAttributeValuesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAttributeValuesRequest", arg0)
@@ -176,14 +175,14 @@ func (m *MockPricingAPI) GetAttributeValuesRequest(arg0 *pricing.GetAttributeVal
 	return ret0, ret1
 }
 
-// GetAttributeValuesRequest indicates an expected call of GetAttributeValuesRequest.
+// GetAttributeValuesRequest indicates an expected call of GetAttributeValuesRequest
 func (mr *MockPricingAPIMockRecorder) GetAttributeValuesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeValuesRequest", reflect.TypeOf((*MockPricingAPI)(nil).GetAttributeValuesRequest), arg0)
 }
 
-// GetAttributeValuesWithContext mocks base method.
-func (m *MockPricingAPI) GetAttributeValuesWithContext(arg0 context.Context, arg1 *pricing.GetAttributeValuesInput, arg2 ...request.Option) (*pricing.GetAttributeValuesOutput, error) {
+// GetAttributeValuesWithContext mocks base method
+func (m *MockPricingAPI) GetAttributeValuesWithContext(arg0 aws.Context, arg1 *pricing.GetAttributeValuesInput, arg2 ...request.Option) (*pricing.GetAttributeValuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -195,14 +194,14 @@ func (m *MockPricingAPI) GetAttributeValuesWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// GetAttributeValuesWithContext indicates an expected call of GetAttributeValuesWithContext.
+// GetAttributeValuesWithContext indicates an expected call of GetAttributeValuesWithContext
 func (mr *MockPricingAPIMockRecorder) GetAttributeValuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeValuesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).GetAttributeValuesWithContext), varargs...)
 }
 
-// GetProducts mocks base method.
+// GetProducts mocks base method
 func (m *MockPricingAPI) GetProducts(arg0 *pricing.GetProductsInput) (*pricing.GetProductsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProducts", arg0)
@@ -211,13 +210,13 @@ func (m *MockPricingAPI) GetProducts(arg0 *pricing.GetProductsInput) (*pricing.G
 	return ret0, ret1
 }
 
-// GetProducts indicates an expected call of GetProducts.
+// GetProducts indicates an expected call of GetProducts
 func (mr *MockPricingAPIMockRecorder) GetProducts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProducts", reflect.TypeOf((*MockPricingAPI)(nil).GetProducts), arg0)
 }
 
-// GetProductsPages mocks base method.
+// GetProductsPages mocks base method
 func (m *MockPricingAPI) GetProductsPages(arg0 *pricing.GetProductsInput, arg1 func(*pricing.GetProductsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProductsPages", arg0, arg1)
@@ -225,14 +224,14 @@ func (m *MockPricingAPI) GetProductsPages(arg0 *pricing.GetProductsInput, arg1 f
 	return ret0
 }
 
-// GetProductsPages indicates an expected call of GetProductsPages.
+// GetProductsPages indicates an expected call of GetProductsPages
 func (mr *MockPricingAPIMockRecorder) GetProductsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProductsPages", reflect.TypeOf((*MockPricingAPI)(nil).GetProductsPages), arg0, arg1)
 }
 
-// GetProductsPagesWithContext mocks base method.
-func (m *MockPricingAPI) GetProductsPagesWithContext(arg0 context.Context, arg1 *pricing.GetProductsInput, arg2 func(*pricing.GetProductsOutput, bool) bool, arg3 ...request.Option) error {
+// GetProductsPagesWithContext mocks base method
+func (m *MockPricingAPI) GetProductsPagesWithContext(arg0 aws.Context, arg1 *pricing.GetProductsInput, arg2 func(*pricing.GetProductsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -243,14 +242,14 @@ func (m *MockPricingAPI) GetProductsPagesWithContext(arg0 context.Context, arg1 
 	return ret0
 }
 
-// GetProductsPagesWithContext indicates an expected call of GetProductsPagesWithContext.
+// GetProductsPagesWithContext indicates an expected call of GetProductsPagesWithContext
 func (mr *MockPricingAPIMockRecorder) GetProductsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProductsPagesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).GetProductsPagesWithContext), varargs...)
 }
 
-// GetProductsRequest mocks base method.
+// GetProductsRequest mocks base method
 func (m *MockPricingAPI) GetProductsRequest(arg0 *pricing.GetProductsInput) (*request.Request, *pricing.GetProductsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProductsRequest", arg0)
@@ -259,14 +258,14 @@ func (m *MockPricingAPI) GetProductsRequest(arg0 *pricing.GetProductsInput) (*re
 	return ret0, ret1
 }
 
-// GetProductsRequest indicates an expected call of GetProductsRequest.
+// GetProductsRequest indicates an expected call of GetProductsRequest
 func (mr *MockPricingAPIMockRecorder) GetProductsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProductsRequest", reflect.TypeOf((*MockPricingAPI)(nil).GetProductsRequest), arg0)
 }
 
-// GetProductsWithContext mocks base method.
-func (m *MockPricingAPI) GetProductsWithContext(arg0 context.Context, arg1 *pricing.GetProductsInput, arg2 ...request.Option) (*pricing.GetProductsOutput, error) {
+// GetProductsWithContext mocks base method
+func (m *MockPricingAPI) GetProductsWithContext(arg0 aws.Context, arg1 *pricing.GetProductsInput, arg2 ...request.Option) (*pricing.GetProductsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -278,7 +277,7 @@ func (m *MockPricingAPI) GetProductsWithContext(arg0 context.Context, arg1 *pric
 	return ret0, ret1
 }
 
-// GetProductsWithContext indicates an expected call of GetProductsWithContext.
+// GetProductsWithContext indicates an expected call of GetProductsWithContext
 func (mr *MockPricingAPIMockRecorder) GetProductsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

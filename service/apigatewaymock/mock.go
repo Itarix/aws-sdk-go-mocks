@@ -5,38 +5,37 @@
 package apigatewaymock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	apigateway "github.com/aws/aws-sdk-go/service/apigateway"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockAPIGatewayAPI is a mock of APIGatewayAPI interface.
+// MockAPIGatewayAPI is a mock of APIGatewayAPI interface
 type MockAPIGatewayAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockAPIGatewayAPIMockRecorder
 }
 
-// MockAPIGatewayAPIMockRecorder is the mock recorder for MockAPIGatewayAPI.
+// MockAPIGatewayAPIMockRecorder is the mock recorder for MockAPIGatewayAPI
 type MockAPIGatewayAPIMockRecorder struct {
 	mock *MockAPIGatewayAPI
 }
 
-// NewMockAPIGatewayAPI creates a new mock instance.
+// NewMockAPIGatewayAPI creates a new mock instance
 func NewMockAPIGatewayAPI(ctrl *gomock.Controller) *MockAPIGatewayAPI {
 	mock := &MockAPIGatewayAPI{ctrl: ctrl}
 	mock.recorder = &MockAPIGatewayAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockAPIGatewayAPI) EXPECT() *MockAPIGatewayAPIMockRecorder {
 	return m.recorder
 }
 
-// CreateApiKey mocks base method.
+// CreateApiKey mocks base method
 func (m *MockAPIGatewayAPI) CreateApiKey(arg0 *apigateway.CreateApiKeyInput) (*apigateway.ApiKey, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApiKey", arg0)
@@ -45,13 +44,13 @@ func (m *MockAPIGatewayAPI) CreateApiKey(arg0 *apigateway.CreateApiKeyInput) (*a
 	return ret0, ret1
 }
 
-// CreateApiKey indicates an expected call of CreateApiKey.
+// CreateApiKey indicates an expected call of CreateApiKey
 func (mr *MockAPIGatewayAPIMockRecorder) CreateApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateApiKey), arg0)
 }
 
-// CreateApiKeyRequest mocks base method.
+// CreateApiKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateApiKeyRequest(arg0 *apigateway.CreateApiKeyInput) (*request.Request, *apigateway.ApiKey) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateApiKeyRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockAPIGatewayAPI) CreateApiKeyRequest(arg0 *apigateway.CreateApiKeyInp
 	return ret0, ret1
 }
 
-// CreateApiKeyRequest indicates an expected call of CreateApiKeyRequest.
+// CreateApiKeyRequest indicates an expected call of CreateApiKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateApiKeyRequest), arg0)
 }
 
-// CreateApiKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateApiKeyWithContext(arg0 context.Context, arg1 *apigateway.CreateApiKeyInput, arg2 ...request.Option) (*apigateway.ApiKey, error) {
+// CreateApiKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateApiKeyWithContext(arg0 aws.Context, arg1 *apigateway.CreateApiKeyInput, arg2 ...request.Option) (*apigateway.ApiKey, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockAPIGatewayAPI) CreateApiKeyWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// CreateApiKeyWithContext indicates an expected call of CreateApiKeyWithContext.
+// CreateApiKeyWithContext indicates an expected call of CreateApiKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateApiKeyWithContext), varargs...)
 }
 
-// CreateAuthorizer mocks base method.
+// CreateAuthorizer mocks base method
 func (m *MockAPIGatewayAPI) CreateAuthorizer(arg0 *apigateway.CreateAuthorizerInput) (*apigateway.Authorizer, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateAuthorizer", arg0)
@@ -95,13 +94,13 @@ func (m *MockAPIGatewayAPI) CreateAuthorizer(arg0 *apigateway.CreateAuthorizerIn
 	return ret0, ret1
 }
 
-// CreateAuthorizer indicates an expected call of CreateAuthorizer.
+// CreateAuthorizer indicates an expected call of CreateAuthorizer
 func (mr *MockAPIGatewayAPIMockRecorder) CreateAuthorizer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAuthorizer", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateAuthorizer), arg0)
 }
 
-// CreateAuthorizerRequest mocks base method.
+// CreateAuthorizerRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateAuthorizerRequest(arg0 *apigateway.CreateAuthorizerInput) (*request.Request, *apigateway.Authorizer) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateAuthorizerRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockAPIGatewayAPI) CreateAuthorizerRequest(arg0 *apigateway.CreateAutho
 	return ret0, ret1
 }
 
-// CreateAuthorizerRequest indicates an expected call of CreateAuthorizerRequest.
+// CreateAuthorizerRequest indicates an expected call of CreateAuthorizerRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateAuthorizerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAuthorizerRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateAuthorizerRequest), arg0)
 }
 
-// CreateAuthorizerWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateAuthorizerWithContext(arg0 context.Context, arg1 *apigateway.CreateAuthorizerInput, arg2 ...request.Option) (*apigateway.Authorizer, error) {
+// CreateAuthorizerWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateAuthorizerWithContext(arg0 aws.Context, arg1 *apigateway.CreateAuthorizerInput, arg2 ...request.Option) (*apigateway.Authorizer, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockAPIGatewayAPI) CreateAuthorizerWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateAuthorizerWithContext indicates an expected call of CreateAuthorizerWithContext.
+// CreateAuthorizerWithContext indicates an expected call of CreateAuthorizerWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateAuthorizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAuthorizerWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateAuthorizerWithContext), varargs...)
 }
 
-// CreateBasePathMapping mocks base method.
+// CreateBasePathMapping mocks base method
 func (m *MockAPIGatewayAPI) CreateBasePathMapping(arg0 *apigateway.CreateBasePathMappingInput) (*apigateway.BasePathMapping, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateBasePathMapping", arg0)
@@ -145,13 +144,13 @@ func (m *MockAPIGatewayAPI) CreateBasePathMapping(arg0 *apigateway.CreateBasePat
 	return ret0, ret1
 }
 
-// CreateBasePathMapping indicates an expected call of CreateBasePathMapping.
+// CreateBasePathMapping indicates an expected call of CreateBasePathMapping
 func (mr *MockAPIGatewayAPIMockRecorder) CreateBasePathMapping(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBasePathMapping", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateBasePathMapping), arg0)
 }
 
-// CreateBasePathMappingRequest mocks base method.
+// CreateBasePathMappingRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateBasePathMappingRequest(arg0 *apigateway.CreateBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateBasePathMappingRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockAPIGatewayAPI) CreateBasePathMappingRequest(arg0 *apigateway.Create
 	return ret0, ret1
 }
 
-// CreateBasePathMappingRequest indicates an expected call of CreateBasePathMappingRequest.
+// CreateBasePathMappingRequest indicates an expected call of CreateBasePathMappingRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateBasePathMappingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBasePathMappingRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateBasePathMappingRequest), arg0)
 }
 
-// CreateBasePathMappingWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateBasePathMappingWithContext(arg0 context.Context, arg1 *apigateway.CreateBasePathMappingInput, arg2 ...request.Option) (*apigateway.BasePathMapping, error) {
+// CreateBasePathMappingWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateBasePathMappingWithContext(arg0 aws.Context, arg1 *apigateway.CreateBasePathMappingInput, arg2 ...request.Option) (*apigateway.BasePathMapping, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockAPIGatewayAPI) CreateBasePathMappingWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// CreateBasePathMappingWithContext indicates an expected call of CreateBasePathMappingWithContext.
+// CreateBasePathMappingWithContext indicates an expected call of CreateBasePathMappingWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateBasePathMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBasePathMappingWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateBasePathMappingWithContext), varargs...)
 }
 
-// CreateDeployment mocks base method.
+// CreateDeployment mocks base method
 func (m *MockAPIGatewayAPI) CreateDeployment(arg0 *apigateway.CreateDeploymentInput) (*apigateway.Deployment, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDeployment", arg0)
@@ -195,13 +194,13 @@ func (m *MockAPIGatewayAPI) CreateDeployment(arg0 *apigateway.CreateDeploymentIn
 	return ret0, ret1
 }
 
-// CreateDeployment indicates an expected call of CreateDeployment.
+// CreateDeployment indicates an expected call of CreateDeployment
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDeployment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeployment", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDeployment), arg0)
 }
 
-// CreateDeploymentRequest mocks base method.
+// CreateDeploymentRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateDeploymentRequest(arg0 *apigateway.CreateDeploymentInput) (*request.Request, *apigateway.Deployment) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDeploymentRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockAPIGatewayAPI) CreateDeploymentRequest(arg0 *apigateway.CreateDeplo
 	return ret0, ret1
 }
 
-// CreateDeploymentRequest indicates an expected call of CreateDeploymentRequest.
+// CreateDeploymentRequest indicates an expected call of CreateDeploymentRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDeploymentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeploymentRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDeploymentRequest), arg0)
 }
 
-// CreateDeploymentWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateDeploymentWithContext(arg0 context.Context, arg1 *apigateway.CreateDeploymentInput, arg2 ...request.Option) (*apigateway.Deployment, error) {
+// CreateDeploymentWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateDeploymentWithContext(arg0 aws.Context, arg1 *apigateway.CreateDeploymentInput, arg2 ...request.Option) (*apigateway.Deployment, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockAPIGatewayAPI) CreateDeploymentWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateDeploymentWithContext indicates an expected call of CreateDeploymentWithContext.
+// CreateDeploymentWithContext indicates an expected call of CreateDeploymentWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeploymentWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDeploymentWithContext), varargs...)
 }
 
-// CreateDocumentationPart mocks base method.
+// CreateDocumentationPart mocks base method
 func (m *MockAPIGatewayAPI) CreateDocumentationPart(arg0 *apigateway.CreateDocumentationPartInput) (*apigateway.DocumentationPart, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDocumentationPart", arg0)
@@ -245,13 +244,13 @@ func (m *MockAPIGatewayAPI) CreateDocumentationPart(arg0 *apigateway.CreateDocum
 	return ret0, ret1
 }
 
-// CreateDocumentationPart indicates an expected call of CreateDocumentationPart.
+// CreateDocumentationPart indicates an expected call of CreateDocumentationPart
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDocumentationPart(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentationPart", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDocumentationPart), arg0)
 }
 
-// CreateDocumentationPartRequest mocks base method.
+// CreateDocumentationPartRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateDocumentationPartRequest(arg0 *apigateway.CreateDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDocumentationPartRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockAPIGatewayAPI) CreateDocumentationPartRequest(arg0 *apigateway.Crea
 	return ret0, ret1
 }
 
-// CreateDocumentationPartRequest indicates an expected call of CreateDocumentationPartRequest.
+// CreateDocumentationPartRequest indicates an expected call of CreateDocumentationPartRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDocumentationPartRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentationPartRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDocumentationPartRequest), arg0)
 }
 
-// CreateDocumentationPartWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateDocumentationPartWithContext(arg0 context.Context, arg1 *apigateway.CreateDocumentationPartInput, arg2 ...request.Option) (*apigateway.DocumentationPart, error) {
+// CreateDocumentationPartWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateDocumentationPartWithContext(arg0 aws.Context, arg1 *apigateway.CreateDocumentationPartInput, arg2 ...request.Option) (*apigateway.DocumentationPart, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockAPIGatewayAPI) CreateDocumentationPartWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateDocumentationPartWithContext indicates an expected call of CreateDocumentationPartWithContext.
+// CreateDocumentationPartWithContext indicates an expected call of CreateDocumentationPartWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDocumentationPartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentationPartWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDocumentationPartWithContext), varargs...)
 }
 
-// CreateDocumentationVersion mocks base method.
+// CreateDocumentationVersion mocks base method
 func (m *MockAPIGatewayAPI) CreateDocumentationVersion(arg0 *apigateway.CreateDocumentationVersionInput) (*apigateway.DocumentationVersion, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDocumentationVersion", arg0)
@@ -295,13 +294,13 @@ func (m *MockAPIGatewayAPI) CreateDocumentationVersion(arg0 *apigateway.CreateDo
 	return ret0, ret1
 }
 
-// CreateDocumentationVersion indicates an expected call of CreateDocumentationVersion.
+// CreateDocumentationVersion indicates an expected call of CreateDocumentationVersion
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDocumentationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentationVersion", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDocumentationVersion), arg0)
 }
 
-// CreateDocumentationVersionRequest mocks base method.
+// CreateDocumentationVersionRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateDocumentationVersionRequest(arg0 *apigateway.CreateDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDocumentationVersionRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockAPIGatewayAPI) CreateDocumentationVersionRequest(arg0 *apigateway.C
 	return ret0, ret1
 }
 
-// CreateDocumentationVersionRequest indicates an expected call of CreateDocumentationVersionRequest.
+// CreateDocumentationVersionRequest indicates an expected call of CreateDocumentationVersionRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDocumentationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentationVersionRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDocumentationVersionRequest), arg0)
 }
 
-// CreateDocumentationVersionWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateDocumentationVersionWithContext(arg0 context.Context, arg1 *apigateway.CreateDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DocumentationVersion, error) {
+// CreateDocumentationVersionWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateDocumentationVersionWithContext(arg0 aws.Context, arg1 *apigateway.CreateDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DocumentationVersion, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockAPIGatewayAPI) CreateDocumentationVersionWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// CreateDocumentationVersionWithContext indicates an expected call of CreateDocumentationVersionWithContext.
+// CreateDocumentationVersionWithContext indicates an expected call of CreateDocumentationVersionWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDocumentationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentationVersionWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDocumentationVersionWithContext), varargs...)
 }
 
-// CreateDomainName mocks base method.
+// CreateDomainName mocks base method
 func (m *MockAPIGatewayAPI) CreateDomainName(arg0 *apigateway.CreateDomainNameInput) (*apigateway.DomainName, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDomainName", arg0)
@@ -345,13 +344,13 @@ func (m *MockAPIGatewayAPI) CreateDomainName(arg0 *apigateway.CreateDomainNameIn
 	return ret0, ret1
 }
 
-// CreateDomainName indicates an expected call of CreateDomainName.
+// CreateDomainName indicates an expected call of CreateDomainName
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDomainName(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainName", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDomainName), arg0)
 }
 
-// CreateDomainNameRequest mocks base method.
+// CreateDomainNameRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateDomainNameRequest(arg0 *apigateway.CreateDomainNameInput) (*request.Request, *apigateway.DomainName) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateDomainNameRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockAPIGatewayAPI) CreateDomainNameRequest(arg0 *apigateway.CreateDomai
 	return ret0, ret1
 }
 
-// CreateDomainNameRequest indicates an expected call of CreateDomainNameRequest.
+// CreateDomainNameRequest indicates an expected call of CreateDomainNameRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDomainNameRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainNameRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDomainNameRequest), arg0)
 }
 
-// CreateDomainNameWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateDomainNameWithContext(arg0 context.Context, arg1 *apigateway.CreateDomainNameInput, arg2 ...request.Option) (*apigateway.DomainName, error) {
+// CreateDomainNameWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateDomainNameWithContext(arg0 aws.Context, arg1 *apigateway.CreateDomainNameInput, arg2 ...request.Option) (*apigateway.DomainName, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockAPIGatewayAPI) CreateDomainNameWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateDomainNameWithContext indicates an expected call of CreateDomainNameWithContext.
+// CreateDomainNameWithContext indicates an expected call of CreateDomainNameWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainNameWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateDomainNameWithContext), varargs...)
 }
 
-// CreateModel mocks base method.
+// CreateModel mocks base method
 func (m *MockAPIGatewayAPI) CreateModel(arg0 *apigateway.CreateModelInput) (*apigateway.Model, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateModel", arg0)
@@ -395,13 +394,13 @@ func (m *MockAPIGatewayAPI) CreateModel(arg0 *apigateway.CreateModelInput) (*api
 	return ret0, ret1
 }
 
-// CreateModel indicates an expected call of CreateModel.
+// CreateModel indicates an expected call of CreateModel
 func (mr *MockAPIGatewayAPIMockRecorder) CreateModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModel", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateModel), arg0)
 }
 
-// CreateModelRequest mocks base method.
+// CreateModelRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateModelRequest(arg0 *apigateway.CreateModelInput) (*request.Request, *apigateway.Model) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateModelRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockAPIGatewayAPI) CreateModelRequest(arg0 *apigateway.CreateModelInput
 	return ret0, ret1
 }
 
-// CreateModelRequest indicates an expected call of CreateModelRequest.
+// CreateModelRequest indicates an expected call of CreateModelRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateModelRequest), arg0)
 }
 
-// CreateModelWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateModelWithContext(arg0 context.Context, arg1 *apigateway.CreateModelInput, arg2 ...request.Option) (*apigateway.Model, error) {
+// CreateModelWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateModelWithContext(arg0 aws.Context, arg1 *apigateway.CreateModelInput, arg2 ...request.Option) (*apigateway.Model, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockAPIGatewayAPI) CreateModelWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// CreateModelWithContext indicates an expected call of CreateModelWithContext.
+// CreateModelWithContext indicates an expected call of CreateModelWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateModelWithContext), varargs...)
 }
 
-// CreateRequestValidator mocks base method.
+// CreateRequestValidator mocks base method
 func (m *MockAPIGatewayAPI) CreateRequestValidator(arg0 *apigateway.CreateRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRequestValidator", arg0)
@@ -445,13 +444,13 @@ func (m *MockAPIGatewayAPI) CreateRequestValidator(arg0 *apigateway.CreateReques
 	return ret0, ret1
 }
 
-// CreateRequestValidator indicates an expected call of CreateRequestValidator.
+// CreateRequestValidator indicates an expected call of CreateRequestValidator
 func (mr *MockAPIGatewayAPIMockRecorder) CreateRequestValidator(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRequestValidator", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateRequestValidator), arg0)
 }
 
-// CreateRequestValidatorRequest mocks base method.
+// CreateRequestValidatorRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateRequestValidatorRequest(arg0 *apigateway.CreateRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRequestValidatorRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockAPIGatewayAPI) CreateRequestValidatorRequest(arg0 *apigateway.Creat
 	return ret0, ret1
 }
 
-// CreateRequestValidatorRequest indicates an expected call of CreateRequestValidatorRequest.
+// CreateRequestValidatorRequest indicates an expected call of CreateRequestValidatorRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateRequestValidatorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRequestValidatorRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateRequestValidatorRequest), arg0)
 }
 
-// CreateRequestValidatorWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateRequestValidatorWithContext(arg0 context.Context, arg1 *apigateway.CreateRequestValidatorInput, arg2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
+// CreateRequestValidatorWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateRequestValidatorWithContext(arg0 aws.Context, arg1 *apigateway.CreateRequestValidatorInput, arg2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockAPIGatewayAPI) CreateRequestValidatorWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// CreateRequestValidatorWithContext indicates an expected call of CreateRequestValidatorWithContext.
+// CreateRequestValidatorWithContext indicates an expected call of CreateRequestValidatorWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateRequestValidatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRequestValidatorWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateRequestValidatorWithContext), varargs...)
 }
 
-// CreateResource mocks base method.
+// CreateResource mocks base method
 func (m *MockAPIGatewayAPI) CreateResource(arg0 *apigateway.CreateResourceInput) (*apigateway.Resource, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateResource", arg0)
@@ -495,13 +494,13 @@ func (m *MockAPIGatewayAPI) CreateResource(arg0 *apigateway.CreateResourceInput)
 	return ret0, ret1
 }
 
-// CreateResource indicates an expected call of CreateResource.
+// CreateResource indicates an expected call of CreateResource
 func (mr *MockAPIGatewayAPIMockRecorder) CreateResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResource", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateResource), arg0)
 }
 
-// CreateResourceRequest mocks base method.
+// CreateResourceRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateResourceRequest(arg0 *apigateway.CreateResourceInput) (*request.Request, *apigateway.Resource) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateResourceRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockAPIGatewayAPI) CreateResourceRequest(arg0 *apigateway.CreateResourc
 	return ret0, ret1
 }
 
-// CreateResourceRequest indicates an expected call of CreateResourceRequest.
+// CreateResourceRequest indicates an expected call of CreateResourceRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResourceRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateResourceRequest), arg0)
 }
 
-// CreateResourceWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateResourceWithContext(arg0 context.Context, arg1 *apigateway.CreateResourceInput, arg2 ...request.Option) (*apigateway.Resource, error) {
+// CreateResourceWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateResourceWithContext(arg0 aws.Context, arg1 *apigateway.CreateResourceInput, arg2 ...request.Option) (*apigateway.Resource, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockAPIGatewayAPI) CreateResourceWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// CreateResourceWithContext indicates an expected call of CreateResourceWithContext.
+// CreateResourceWithContext indicates an expected call of CreateResourceWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResourceWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateResourceWithContext), varargs...)
 }
 
-// CreateRestApi mocks base method.
+// CreateRestApi mocks base method
 func (m *MockAPIGatewayAPI) CreateRestApi(arg0 *apigateway.CreateRestApiInput) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRestApi", arg0)
@@ -545,13 +544,13 @@ func (m *MockAPIGatewayAPI) CreateRestApi(arg0 *apigateway.CreateRestApiInput) (
 	return ret0, ret1
 }
 
-// CreateRestApi indicates an expected call of CreateRestApi.
+// CreateRestApi indicates an expected call of CreateRestApi
 func (mr *MockAPIGatewayAPIMockRecorder) CreateRestApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRestApi", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateRestApi), arg0)
 }
 
-// CreateRestApiRequest mocks base method.
+// CreateRestApiRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateRestApiRequest(arg0 *apigateway.CreateRestApiInput) (*request.Request, *apigateway.RestApi) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRestApiRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockAPIGatewayAPI) CreateRestApiRequest(arg0 *apigateway.CreateRestApiI
 	return ret0, ret1
 }
 
-// CreateRestApiRequest indicates an expected call of CreateRestApiRequest.
+// CreateRestApiRequest indicates an expected call of CreateRestApiRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateRestApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRestApiRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateRestApiRequest), arg0)
 }
 
-// CreateRestApiWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateRestApiWithContext(arg0 context.Context, arg1 *apigateway.CreateRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
+// CreateRestApiWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateRestApiWithContext(arg0 aws.Context, arg1 *apigateway.CreateRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockAPIGatewayAPI) CreateRestApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateRestApiWithContext indicates an expected call of CreateRestApiWithContext.
+// CreateRestApiWithContext indicates an expected call of CreateRestApiWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateRestApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRestApiWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateRestApiWithContext), varargs...)
 }
 
-// CreateStage mocks base method.
+// CreateStage mocks base method
 func (m *MockAPIGatewayAPI) CreateStage(arg0 *apigateway.CreateStageInput) (*apigateway.Stage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStage", arg0)
@@ -595,13 +594,13 @@ func (m *MockAPIGatewayAPI) CreateStage(arg0 *apigateway.CreateStageInput) (*api
 	return ret0, ret1
 }
 
-// CreateStage indicates an expected call of CreateStage.
+// CreateStage indicates an expected call of CreateStage
 func (mr *MockAPIGatewayAPIMockRecorder) CreateStage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStage", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateStage), arg0)
 }
 
-// CreateStageRequest mocks base method.
+// CreateStageRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateStageRequest(arg0 *apigateway.CreateStageInput) (*request.Request, *apigateway.Stage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateStageRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockAPIGatewayAPI) CreateStageRequest(arg0 *apigateway.CreateStageInput
 	return ret0, ret1
 }
 
-// CreateStageRequest indicates an expected call of CreateStageRequest.
+// CreateStageRequest indicates an expected call of CreateStageRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateStageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStageRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateStageRequest), arg0)
 }
 
-// CreateStageWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateStageWithContext(arg0 context.Context, arg1 *apigateway.CreateStageInput, arg2 ...request.Option) (*apigateway.Stage, error) {
+// CreateStageWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateStageWithContext(arg0 aws.Context, arg1 *apigateway.CreateStageInput, arg2 ...request.Option) (*apigateway.Stage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockAPIGatewayAPI) CreateStageWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// CreateStageWithContext indicates an expected call of CreateStageWithContext.
+// CreateStageWithContext indicates an expected call of CreateStageWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStageWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateStageWithContext), varargs...)
 }
 
-// CreateUsagePlan mocks base method.
+// CreateUsagePlan mocks base method
 func (m *MockAPIGatewayAPI) CreateUsagePlan(arg0 *apigateway.CreateUsagePlanInput) (*apigateway.UsagePlan, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUsagePlan", arg0)
@@ -645,13 +644,13 @@ func (m *MockAPIGatewayAPI) CreateUsagePlan(arg0 *apigateway.CreateUsagePlanInpu
 	return ret0, ret1
 }
 
-// CreateUsagePlan indicates an expected call of CreateUsagePlan.
+// CreateUsagePlan indicates an expected call of CreateUsagePlan
 func (mr *MockAPIGatewayAPIMockRecorder) CreateUsagePlan(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsagePlan", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateUsagePlan), arg0)
 }
 
-// CreateUsagePlanKey mocks base method.
+// CreateUsagePlanKey mocks base method
 func (m *MockAPIGatewayAPI) CreateUsagePlanKey(arg0 *apigateway.CreateUsagePlanKeyInput) (*apigateway.UsagePlanKey, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUsagePlanKey", arg0)
@@ -660,13 +659,13 @@ func (m *MockAPIGatewayAPI) CreateUsagePlanKey(arg0 *apigateway.CreateUsagePlanK
 	return ret0, ret1
 }
 
-// CreateUsagePlanKey indicates an expected call of CreateUsagePlanKey.
+// CreateUsagePlanKey indicates an expected call of CreateUsagePlanKey
 func (mr *MockAPIGatewayAPIMockRecorder) CreateUsagePlanKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsagePlanKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateUsagePlanKey), arg0)
 }
 
-// CreateUsagePlanKeyRequest mocks base method.
+// CreateUsagePlanKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateUsagePlanKeyRequest(arg0 *apigateway.CreateUsagePlanKeyInput) (*request.Request, *apigateway.UsagePlanKey) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUsagePlanKeyRequest", arg0)
@@ -675,14 +674,14 @@ func (m *MockAPIGatewayAPI) CreateUsagePlanKeyRequest(arg0 *apigateway.CreateUsa
 	return ret0, ret1
 }
 
-// CreateUsagePlanKeyRequest indicates an expected call of CreateUsagePlanKeyRequest.
+// CreateUsagePlanKeyRequest indicates an expected call of CreateUsagePlanKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateUsagePlanKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsagePlanKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateUsagePlanKeyRequest), arg0)
 }
 
-// CreateUsagePlanKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateUsagePlanKeyWithContext(arg0 context.Context, arg1 *apigateway.CreateUsagePlanKeyInput, arg2 ...request.Option) (*apigateway.UsagePlanKey, error) {
+// CreateUsagePlanKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateUsagePlanKeyWithContext(arg0 aws.Context, arg1 *apigateway.CreateUsagePlanKeyInput, arg2 ...request.Option) (*apigateway.UsagePlanKey, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -694,14 +693,14 @@ func (m *MockAPIGatewayAPI) CreateUsagePlanKeyWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// CreateUsagePlanKeyWithContext indicates an expected call of CreateUsagePlanKeyWithContext.
+// CreateUsagePlanKeyWithContext indicates an expected call of CreateUsagePlanKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateUsagePlanKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsagePlanKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateUsagePlanKeyWithContext), varargs...)
 }
 
-// CreateUsagePlanRequest mocks base method.
+// CreateUsagePlanRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateUsagePlanRequest(arg0 *apigateway.CreateUsagePlanInput) (*request.Request, *apigateway.UsagePlan) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUsagePlanRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockAPIGatewayAPI) CreateUsagePlanRequest(arg0 *apigateway.CreateUsageP
 	return ret0, ret1
 }
 
-// CreateUsagePlanRequest indicates an expected call of CreateUsagePlanRequest.
+// CreateUsagePlanRequest indicates an expected call of CreateUsagePlanRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateUsagePlanRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsagePlanRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateUsagePlanRequest), arg0)
 }
 
-// CreateUsagePlanWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateUsagePlanWithContext(arg0 context.Context, arg1 *apigateway.CreateUsagePlanInput, arg2 ...request.Option) (*apigateway.UsagePlan, error) {
+// CreateUsagePlanWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateUsagePlanWithContext(arg0 aws.Context, arg1 *apigateway.CreateUsagePlanInput, arg2 ...request.Option) (*apigateway.UsagePlan, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +728,14 @@ func (m *MockAPIGatewayAPI) CreateUsagePlanWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// CreateUsagePlanWithContext indicates an expected call of CreateUsagePlanWithContext.
+// CreateUsagePlanWithContext indicates an expected call of CreateUsagePlanWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateUsagePlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsagePlanWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateUsagePlanWithContext), varargs...)
 }
 
-// CreateVpcLink mocks base method.
+// CreateVpcLink mocks base method
 func (m *MockAPIGatewayAPI) CreateVpcLink(arg0 *apigateway.CreateVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateVpcLink", arg0)
@@ -745,13 +744,13 @@ func (m *MockAPIGatewayAPI) CreateVpcLink(arg0 *apigateway.CreateVpcLinkInput) (
 	return ret0, ret1
 }
 
-// CreateVpcLink indicates an expected call of CreateVpcLink.
+// CreateVpcLink indicates an expected call of CreateVpcLink
 func (mr *MockAPIGatewayAPIMockRecorder) CreateVpcLink(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcLink", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateVpcLink), arg0)
 }
 
-// CreateVpcLinkRequest mocks base method.
+// CreateVpcLinkRequest mocks base method
 func (m *MockAPIGatewayAPI) CreateVpcLinkRequest(arg0 *apigateway.CreateVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateVpcLinkRequest", arg0)
@@ -760,14 +759,14 @@ func (m *MockAPIGatewayAPI) CreateVpcLinkRequest(arg0 *apigateway.CreateVpcLinkI
 	return ret0, ret1
 }
 
-// CreateVpcLinkRequest indicates an expected call of CreateVpcLinkRequest.
+// CreateVpcLinkRequest indicates an expected call of CreateVpcLinkRequest
 func (mr *MockAPIGatewayAPIMockRecorder) CreateVpcLinkRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcLinkRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateVpcLinkRequest), arg0)
 }
 
-// CreateVpcLinkWithContext mocks base method.
-func (m *MockAPIGatewayAPI) CreateVpcLinkWithContext(arg0 context.Context, arg1 *apigateway.CreateVpcLinkInput, arg2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
+// CreateVpcLinkWithContext mocks base method
+func (m *MockAPIGatewayAPI) CreateVpcLinkWithContext(arg0 aws.Context, arg1 *apigateway.CreateVpcLinkInput, arg2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +778,14 @@ func (m *MockAPIGatewayAPI) CreateVpcLinkWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateVpcLinkWithContext indicates an expected call of CreateVpcLinkWithContext.
+// CreateVpcLinkWithContext indicates an expected call of CreateVpcLinkWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) CreateVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcLinkWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).CreateVpcLinkWithContext), varargs...)
 }
 
-// DeleteApiKey mocks base method.
+// DeleteApiKey mocks base method
 func (m *MockAPIGatewayAPI) DeleteApiKey(arg0 *apigateway.DeleteApiKeyInput) (*apigateway.DeleteApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApiKey", arg0)
@@ -795,13 +794,13 @@ func (m *MockAPIGatewayAPI) DeleteApiKey(arg0 *apigateway.DeleteApiKeyInput) (*a
 	return ret0, ret1
 }
 
-// DeleteApiKey indicates an expected call of DeleteApiKey.
+// DeleteApiKey indicates an expected call of DeleteApiKey
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteApiKey), arg0)
 }
 
-// DeleteApiKeyRequest mocks base method.
+// DeleteApiKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteApiKeyRequest(arg0 *apigateway.DeleteApiKeyInput) (*request.Request, *apigateway.DeleteApiKeyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteApiKeyRequest", arg0)
@@ -810,14 +809,14 @@ func (m *MockAPIGatewayAPI) DeleteApiKeyRequest(arg0 *apigateway.DeleteApiKeyInp
 	return ret0, ret1
 }
 
-// DeleteApiKeyRequest indicates an expected call of DeleteApiKeyRequest.
+// DeleteApiKeyRequest indicates an expected call of DeleteApiKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteApiKeyRequest), arg0)
 }
 
-// DeleteApiKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteApiKeyWithContext(arg0 context.Context, arg1 *apigateway.DeleteApiKeyInput, arg2 ...request.Option) (*apigateway.DeleteApiKeyOutput, error) {
+// DeleteApiKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteApiKeyWithContext(arg0 aws.Context, arg1 *apigateway.DeleteApiKeyInput, arg2 ...request.Option) (*apigateway.DeleteApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +828,14 @@ func (m *MockAPIGatewayAPI) DeleteApiKeyWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteApiKeyWithContext indicates an expected call of DeleteApiKeyWithContext.
+// DeleteApiKeyWithContext indicates an expected call of DeleteApiKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteApiKeyWithContext), varargs...)
 }
 
-// DeleteAuthorizer mocks base method.
+// DeleteAuthorizer mocks base method
 func (m *MockAPIGatewayAPI) DeleteAuthorizer(arg0 *apigateway.DeleteAuthorizerInput) (*apigateway.DeleteAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAuthorizer", arg0)
@@ -845,13 +844,13 @@ func (m *MockAPIGatewayAPI) DeleteAuthorizer(arg0 *apigateway.DeleteAuthorizerIn
 	return ret0, ret1
 }
 
-// DeleteAuthorizer indicates an expected call of DeleteAuthorizer.
+// DeleteAuthorizer indicates an expected call of DeleteAuthorizer
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteAuthorizer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAuthorizer", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteAuthorizer), arg0)
 }
 
-// DeleteAuthorizerRequest mocks base method.
+// DeleteAuthorizerRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteAuthorizerRequest(arg0 *apigateway.DeleteAuthorizerInput) (*request.Request, *apigateway.DeleteAuthorizerOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAuthorizerRequest", arg0)
@@ -860,14 +859,14 @@ func (m *MockAPIGatewayAPI) DeleteAuthorizerRequest(arg0 *apigateway.DeleteAutho
 	return ret0, ret1
 }
 
-// DeleteAuthorizerRequest indicates an expected call of DeleteAuthorizerRequest.
+// DeleteAuthorizerRequest indicates an expected call of DeleteAuthorizerRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteAuthorizerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAuthorizerRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteAuthorizerRequest), arg0)
 }
 
-// DeleteAuthorizerWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteAuthorizerWithContext(arg0 context.Context, arg1 *apigateway.DeleteAuthorizerInput, arg2 ...request.Option) (*apigateway.DeleteAuthorizerOutput, error) {
+// DeleteAuthorizerWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteAuthorizerWithContext(arg0 aws.Context, arg1 *apigateway.DeleteAuthorizerInput, arg2 ...request.Option) (*apigateway.DeleteAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +878,14 @@ func (m *MockAPIGatewayAPI) DeleteAuthorizerWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteAuthorizerWithContext indicates an expected call of DeleteAuthorizerWithContext.
+// DeleteAuthorizerWithContext indicates an expected call of DeleteAuthorizerWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteAuthorizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAuthorizerWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteAuthorizerWithContext), varargs...)
 }
 
-// DeleteBasePathMapping mocks base method.
+// DeleteBasePathMapping mocks base method
 func (m *MockAPIGatewayAPI) DeleteBasePathMapping(arg0 *apigateway.DeleteBasePathMappingInput) (*apigateway.DeleteBasePathMappingOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBasePathMapping", arg0)
@@ -895,13 +894,13 @@ func (m *MockAPIGatewayAPI) DeleteBasePathMapping(arg0 *apigateway.DeleteBasePat
 	return ret0, ret1
 }
 
-// DeleteBasePathMapping indicates an expected call of DeleteBasePathMapping.
+// DeleteBasePathMapping indicates an expected call of DeleteBasePathMapping
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteBasePathMapping(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBasePathMapping", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteBasePathMapping), arg0)
 }
 
-// DeleteBasePathMappingRequest mocks base method.
+// DeleteBasePathMappingRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteBasePathMappingRequest(arg0 *apigateway.DeleteBasePathMappingInput) (*request.Request, *apigateway.DeleteBasePathMappingOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteBasePathMappingRequest", arg0)
@@ -910,14 +909,14 @@ func (m *MockAPIGatewayAPI) DeleteBasePathMappingRequest(arg0 *apigateway.Delete
 	return ret0, ret1
 }
 
-// DeleteBasePathMappingRequest indicates an expected call of DeleteBasePathMappingRequest.
+// DeleteBasePathMappingRequest indicates an expected call of DeleteBasePathMappingRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteBasePathMappingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBasePathMappingRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteBasePathMappingRequest), arg0)
 }
 
-// DeleteBasePathMappingWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteBasePathMappingWithContext(arg0 context.Context, arg1 *apigateway.DeleteBasePathMappingInput, arg2 ...request.Option) (*apigateway.DeleteBasePathMappingOutput, error) {
+// DeleteBasePathMappingWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteBasePathMappingWithContext(arg0 aws.Context, arg1 *apigateway.DeleteBasePathMappingInput, arg2 ...request.Option) (*apigateway.DeleteBasePathMappingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +928,14 @@ func (m *MockAPIGatewayAPI) DeleteBasePathMappingWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteBasePathMappingWithContext indicates an expected call of DeleteBasePathMappingWithContext.
+// DeleteBasePathMappingWithContext indicates an expected call of DeleteBasePathMappingWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteBasePathMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBasePathMappingWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteBasePathMappingWithContext), varargs...)
 }
 
-// DeleteClientCertificate mocks base method.
+// DeleteClientCertificate mocks base method
 func (m *MockAPIGatewayAPI) DeleteClientCertificate(arg0 *apigateway.DeleteClientCertificateInput) (*apigateway.DeleteClientCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteClientCertificate", arg0)
@@ -945,13 +944,13 @@ func (m *MockAPIGatewayAPI) DeleteClientCertificate(arg0 *apigateway.DeleteClien
 	return ret0, ret1
 }
 
-// DeleteClientCertificate indicates an expected call of DeleteClientCertificate.
+// DeleteClientCertificate indicates an expected call of DeleteClientCertificate
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteClientCertificate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClientCertificate", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteClientCertificate), arg0)
 }
 
-// DeleteClientCertificateRequest mocks base method.
+// DeleteClientCertificateRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteClientCertificateRequest(arg0 *apigateway.DeleteClientCertificateInput) (*request.Request, *apigateway.DeleteClientCertificateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteClientCertificateRequest", arg0)
@@ -960,14 +959,14 @@ func (m *MockAPIGatewayAPI) DeleteClientCertificateRequest(arg0 *apigateway.Dele
 	return ret0, ret1
 }
 
-// DeleteClientCertificateRequest indicates an expected call of DeleteClientCertificateRequest.
+// DeleteClientCertificateRequest indicates an expected call of DeleteClientCertificateRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteClientCertificateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClientCertificateRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteClientCertificateRequest), arg0)
 }
 
-// DeleteClientCertificateWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteClientCertificateWithContext(arg0 context.Context, arg1 *apigateway.DeleteClientCertificateInput, arg2 ...request.Option) (*apigateway.DeleteClientCertificateOutput, error) {
+// DeleteClientCertificateWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteClientCertificateWithContext(arg0 aws.Context, arg1 *apigateway.DeleteClientCertificateInput, arg2 ...request.Option) (*apigateway.DeleteClientCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +978,14 @@ func (m *MockAPIGatewayAPI) DeleteClientCertificateWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteClientCertificateWithContext indicates an expected call of DeleteClientCertificateWithContext.
+// DeleteClientCertificateWithContext indicates an expected call of DeleteClientCertificateWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteClientCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClientCertificateWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteClientCertificateWithContext), varargs...)
 }
 
-// DeleteDeployment mocks base method.
+// DeleteDeployment mocks base method
 func (m *MockAPIGatewayAPI) DeleteDeployment(arg0 *apigateway.DeleteDeploymentInput) (*apigateway.DeleteDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDeployment", arg0)
@@ -995,13 +994,13 @@ func (m *MockAPIGatewayAPI) DeleteDeployment(arg0 *apigateway.DeleteDeploymentIn
 	return ret0, ret1
 }
 
-// DeleteDeployment indicates an expected call of DeleteDeployment.
+// DeleteDeployment indicates an expected call of DeleteDeployment
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDeployment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeployment", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDeployment), arg0)
 }
 
-// DeleteDeploymentRequest mocks base method.
+// DeleteDeploymentRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteDeploymentRequest(arg0 *apigateway.DeleteDeploymentInput) (*request.Request, *apigateway.DeleteDeploymentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDeploymentRequest", arg0)
@@ -1010,14 +1009,14 @@ func (m *MockAPIGatewayAPI) DeleteDeploymentRequest(arg0 *apigateway.DeleteDeplo
 	return ret0, ret1
 }
 
-// DeleteDeploymentRequest indicates an expected call of DeleteDeploymentRequest.
+// DeleteDeploymentRequest indicates an expected call of DeleteDeploymentRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDeploymentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeploymentRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDeploymentRequest), arg0)
 }
 
-// DeleteDeploymentWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteDeploymentWithContext(arg0 context.Context, arg1 *apigateway.DeleteDeploymentInput, arg2 ...request.Option) (*apigateway.DeleteDeploymentOutput, error) {
+// DeleteDeploymentWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteDeploymentWithContext(arg0 aws.Context, arg1 *apigateway.DeleteDeploymentInput, arg2 ...request.Option) (*apigateway.DeleteDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,14 +1028,14 @@ func (m *MockAPIGatewayAPI) DeleteDeploymentWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteDeploymentWithContext indicates an expected call of DeleteDeploymentWithContext.
+// DeleteDeploymentWithContext indicates an expected call of DeleteDeploymentWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeploymentWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDeploymentWithContext), varargs...)
 }
 
-// DeleteDocumentationPart mocks base method.
+// DeleteDocumentationPart mocks base method
 func (m *MockAPIGatewayAPI) DeleteDocumentationPart(arg0 *apigateway.DeleteDocumentationPartInput) (*apigateway.DeleteDocumentationPartOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDocumentationPart", arg0)
@@ -1045,13 +1044,13 @@ func (m *MockAPIGatewayAPI) DeleteDocumentationPart(arg0 *apigateway.DeleteDocum
 	return ret0, ret1
 }
 
-// DeleteDocumentationPart indicates an expected call of DeleteDocumentationPart.
+// DeleteDocumentationPart indicates an expected call of DeleteDocumentationPart
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDocumentationPart(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentationPart", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDocumentationPart), arg0)
 }
 
-// DeleteDocumentationPartRequest mocks base method.
+// DeleteDocumentationPartRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteDocumentationPartRequest(arg0 *apigateway.DeleteDocumentationPartInput) (*request.Request, *apigateway.DeleteDocumentationPartOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDocumentationPartRequest", arg0)
@@ -1060,14 +1059,14 @@ func (m *MockAPIGatewayAPI) DeleteDocumentationPartRequest(arg0 *apigateway.Dele
 	return ret0, ret1
 }
 
-// DeleteDocumentationPartRequest indicates an expected call of DeleteDocumentationPartRequest.
+// DeleteDocumentationPartRequest indicates an expected call of DeleteDocumentationPartRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDocumentationPartRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentationPartRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDocumentationPartRequest), arg0)
 }
 
-// DeleteDocumentationPartWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteDocumentationPartWithContext(arg0 context.Context, arg1 *apigateway.DeleteDocumentationPartInput, arg2 ...request.Option) (*apigateway.DeleteDocumentationPartOutput, error) {
+// DeleteDocumentationPartWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteDocumentationPartWithContext(arg0 aws.Context, arg1 *apigateway.DeleteDocumentationPartInput, arg2 ...request.Option) (*apigateway.DeleteDocumentationPartOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,14 +1078,14 @@ func (m *MockAPIGatewayAPI) DeleteDocumentationPartWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteDocumentationPartWithContext indicates an expected call of DeleteDocumentationPartWithContext.
+// DeleteDocumentationPartWithContext indicates an expected call of DeleteDocumentationPartWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDocumentationPartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentationPartWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDocumentationPartWithContext), varargs...)
 }
 
-// DeleteDocumentationVersion mocks base method.
+// DeleteDocumentationVersion mocks base method
 func (m *MockAPIGatewayAPI) DeleteDocumentationVersion(arg0 *apigateway.DeleteDocumentationVersionInput) (*apigateway.DeleteDocumentationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDocumentationVersion", arg0)
@@ -1095,13 +1094,13 @@ func (m *MockAPIGatewayAPI) DeleteDocumentationVersion(arg0 *apigateway.DeleteDo
 	return ret0, ret1
 }
 
-// DeleteDocumentationVersion indicates an expected call of DeleteDocumentationVersion.
+// DeleteDocumentationVersion indicates an expected call of DeleteDocumentationVersion
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDocumentationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentationVersion", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDocumentationVersion), arg0)
 }
 
-// DeleteDocumentationVersionRequest mocks base method.
+// DeleteDocumentationVersionRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteDocumentationVersionRequest(arg0 *apigateway.DeleteDocumentationVersionInput) (*request.Request, *apigateway.DeleteDocumentationVersionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDocumentationVersionRequest", arg0)
@@ -1110,14 +1109,14 @@ func (m *MockAPIGatewayAPI) DeleteDocumentationVersionRequest(arg0 *apigateway.D
 	return ret0, ret1
 }
 
-// DeleteDocumentationVersionRequest indicates an expected call of DeleteDocumentationVersionRequest.
+// DeleteDocumentationVersionRequest indicates an expected call of DeleteDocumentationVersionRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDocumentationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentationVersionRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDocumentationVersionRequest), arg0)
 }
 
-// DeleteDocumentationVersionWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteDocumentationVersionWithContext(arg0 context.Context, arg1 *apigateway.DeleteDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DeleteDocumentationVersionOutput, error) {
+// DeleteDocumentationVersionWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteDocumentationVersionWithContext(arg0 aws.Context, arg1 *apigateway.DeleteDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DeleteDocumentationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1129,14 +1128,14 @@ func (m *MockAPIGatewayAPI) DeleteDocumentationVersionWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DeleteDocumentationVersionWithContext indicates an expected call of DeleteDocumentationVersionWithContext.
+// DeleteDocumentationVersionWithContext indicates an expected call of DeleteDocumentationVersionWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDocumentationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentationVersionWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDocumentationVersionWithContext), varargs...)
 }
 
-// DeleteDomainName mocks base method.
+// DeleteDomainName mocks base method
 func (m *MockAPIGatewayAPI) DeleteDomainName(arg0 *apigateway.DeleteDomainNameInput) (*apigateway.DeleteDomainNameOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDomainName", arg0)
@@ -1145,13 +1144,13 @@ func (m *MockAPIGatewayAPI) DeleteDomainName(arg0 *apigateway.DeleteDomainNameIn
 	return ret0, ret1
 }
 
-// DeleteDomainName indicates an expected call of DeleteDomainName.
+// DeleteDomainName indicates an expected call of DeleteDomainName
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDomainName(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainName", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDomainName), arg0)
 }
 
-// DeleteDomainNameRequest mocks base method.
+// DeleteDomainNameRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteDomainNameRequest(arg0 *apigateway.DeleteDomainNameInput) (*request.Request, *apigateway.DeleteDomainNameOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteDomainNameRequest", arg0)
@@ -1160,14 +1159,14 @@ func (m *MockAPIGatewayAPI) DeleteDomainNameRequest(arg0 *apigateway.DeleteDomai
 	return ret0, ret1
 }
 
-// DeleteDomainNameRequest indicates an expected call of DeleteDomainNameRequest.
+// DeleteDomainNameRequest indicates an expected call of DeleteDomainNameRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDomainNameRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainNameRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDomainNameRequest), arg0)
 }
 
-// DeleteDomainNameWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteDomainNameWithContext(arg0 context.Context, arg1 *apigateway.DeleteDomainNameInput, arg2 ...request.Option) (*apigateway.DeleteDomainNameOutput, error) {
+// DeleteDomainNameWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteDomainNameWithContext(arg0 aws.Context, arg1 *apigateway.DeleteDomainNameInput, arg2 ...request.Option) (*apigateway.DeleteDomainNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1179,14 +1178,14 @@ func (m *MockAPIGatewayAPI) DeleteDomainNameWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteDomainNameWithContext indicates an expected call of DeleteDomainNameWithContext.
+// DeleteDomainNameWithContext indicates an expected call of DeleteDomainNameWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainNameWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteDomainNameWithContext), varargs...)
 }
 
-// DeleteGatewayResponse mocks base method.
+// DeleteGatewayResponse mocks base method
 func (m *MockAPIGatewayAPI) DeleteGatewayResponse(arg0 *apigateway.DeleteGatewayResponseInput) (*apigateway.DeleteGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGatewayResponse", arg0)
@@ -1195,13 +1194,13 @@ func (m *MockAPIGatewayAPI) DeleteGatewayResponse(arg0 *apigateway.DeleteGateway
 	return ret0, ret1
 }
 
-// DeleteGatewayResponse indicates an expected call of DeleteGatewayResponse.
+// DeleteGatewayResponse indicates an expected call of DeleteGatewayResponse
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteGatewayResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteGatewayResponse), arg0)
 }
 
-// DeleteGatewayResponseRequest mocks base method.
+// DeleteGatewayResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteGatewayResponseRequest(arg0 *apigateway.DeleteGatewayResponseInput) (*request.Request, *apigateway.DeleteGatewayResponseOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteGatewayResponseRequest", arg0)
@@ -1210,14 +1209,14 @@ func (m *MockAPIGatewayAPI) DeleteGatewayResponseRequest(arg0 *apigateway.Delete
 	return ret0, ret1
 }
 
-// DeleteGatewayResponseRequest indicates an expected call of DeleteGatewayResponseRequest.
+// DeleteGatewayResponseRequest indicates an expected call of DeleteGatewayResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteGatewayResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteGatewayResponseRequest), arg0)
 }
 
-// DeleteGatewayResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteGatewayResponseWithContext(arg0 context.Context, arg1 *apigateway.DeleteGatewayResponseInput, arg2 ...request.Option) (*apigateway.DeleteGatewayResponseOutput, error) {
+// DeleteGatewayResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteGatewayResponseWithContext(arg0 aws.Context, arg1 *apigateway.DeleteGatewayResponseInput, arg2 ...request.Option) (*apigateway.DeleteGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1229,14 +1228,14 @@ func (m *MockAPIGatewayAPI) DeleteGatewayResponseWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeleteGatewayResponseWithContext indicates an expected call of DeleteGatewayResponseWithContext.
+// DeleteGatewayResponseWithContext indicates an expected call of DeleteGatewayResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteGatewayResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteGatewayResponseWithContext), varargs...)
 }
 
-// DeleteIntegration mocks base method.
+// DeleteIntegration mocks base method
 func (m *MockAPIGatewayAPI) DeleteIntegration(arg0 *apigateway.DeleteIntegrationInput) (*apigateway.DeleteIntegrationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIntegration", arg0)
@@ -1245,13 +1244,13 @@ func (m *MockAPIGatewayAPI) DeleteIntegration(arg0 *apigateway.DeleteIntegration
 	return ret0, ret1
 }
 
-// DeleteIntegration indicates an expected call of DeleteIntegration.
+// DeleteIntegration indicates an expected call of DeleteIntegration
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteIntegration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegration", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteIntegration), arg0)
 }
 
-// DeleteIntegrationRequest mocks base method.
+// DeleteIntegrationRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteIntegrationRequest(arg0 *apigateway.DeleteIntegrationInput) (*request.Request, *apigateway.DeleteIntegrationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIntegrationRequest", arg0)
@@ -1260,13 +1259,13 @@ func (m *MockAPIGatewayAPI) DeleteIntegrationRequest(arg0 *apigateway.DeleteInte
 	return ret0, ret1
 }
 
-// DeleteIntegrationRequest indicates an expected call of DeleteIntegrationRequest.
+// DeleteIntegrationRequest indicates an expected call of DeleteIntegrationRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteIntegrationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegrationRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteIntegrationRequest), arg0)
 }
 
-// DeleteIntegrationResponse mocks base method.
+// DeleteIntegrationResponse mocks base method
 func (m *MockAPIGatewayAPI) DeleteIntegrationResponse(arg0 *apigateway.DeleteIntegrationResponseInput) (*apigateway.DeleteIntegrationResponseOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIntegrationResponse", arg0)
@@ -1275,13 +1274,13 @@ func (m *MockAPIGatewayAPI) DeleteIntegrationResponse(arg0 *apigateway.DeleteInt
 	return ret0, ret1
 }
 
-// DeleteIntegrationResponse indicates an expected call of DeleteIntegrationResponse.
+// DeleteIntegrationResponse indicates an expected call of DeleteIntegrationResponse
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteIntegrationResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegrationResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteIntegrationResponse), arg0)
 }
 
-// DeleteIntegrationResponseRequest mocks base method.
+// DeleteIntegrationResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteIntegrationResponseRequest(arg0 *apigateway.DeleteIntegrationResponseInput) (*request.Request, *apigateway.DeleteIntegrationResponseOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteIntegrationResponseRequest", arg0)
@@ -1290,14 +1289,14 @@ func (m *MockAPIGatewayAPI) DeleteIntegrationResponseRequest(arg0 *apigateway.De
 	return ret0, ret1
 }
 
-// DeleteIntegrationResponseRequest indicates an expected call of DeleteIntegrationResponseRequest.
+// DeleteIntegrationResponseRequest indicates an expected call of DeleteIntegrationResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteIntegrationResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegrationResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteIntegrationResponseRequest), arg0)
 }
 
-// DeleteIntegrationResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteIntegrationResponseWithContext(arg0 context.Context, arg1 *apigateway.DeleteIntegrationResponseInput, arg2 ...request.Option) (*apigateway.DeleteIntegrationResponseOutput, error) {
+// DeleteIntegrationResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigateway.DeleteIntegrationResponseInput, arg2 ...request.Option) (*apigateway.DeleteIntegrationResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1309,15 +1308,15 @@ func (m *MockAPIGatewayAPI) DeleteIntegrationResponseWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// DeleteIntegrationResponseWithContext indicates an expected call of DeleteIntegrationResponseWithContext.
+// DeleteIntegrationResponseWithContext indicates an expected call of DeleteIntegrationResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteIntegrationResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegrationResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteIntegrationResponseWithContext), varargs...)
 }
 
-// DeleteIntegrationWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteIntegrationWithContext(arg0 context.Context, arg1 *apigateway.DeleteIntegrationInput, arg2 ...request.Option) (*apigateway.DeleteIntegrationOutput, error) {
+// DeleteIntegrationWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteIntegrationWithContext(arg0 aws.Context, arg1 *apigateway.DeleteIntegrationInput, arg2 ...request.Option) (*apigateway.DeleteIntegrationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1329,14 +1328,14 @@ func (m *MockAPIGatewayAPI) DeleteIntegrationWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// DeleteIntegrationWithContext indicates an expected call of DeleteIntegrationWithContext.
+// DeleteIntegrationWithContext indicates an expected call of DeleteIntegrationWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegrationWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteIntegrationWithContext), varargs...)
 }
 
-// DeleteMethod mocks base method.
+// DeleteMethod mocks base method
 func (m *MockAPIGatewayAPI) DeleteMethod(arg0 *apigateway.DeleteMethodInput) (*apigateway.DeleteMethodOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMethod", arg0)
@@ -1345,13 +1344,13 @@ func (m *MockAPIGatewayAPI) DeleteMethod(arg0 *apigateway.DeleteMethodInput) (*a
 	return ret0, ret1
 }
 
-// DeleteMethod indicates an expected call of DeleteMethod.
+// DeleteMethod indicates an expected call of DeleteMethod
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteMethod(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMethod", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteMethod), arg0)
 }
 
-// DeleteMethodRequest mocks base method.
+// DeleteMethodRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteMethodRequest(arg0 *apigateway.DeleteMethodInput) (*request.Request, *apigateway.DeleteMethodOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMethodRequest", arg0)
@@ -1360,13 +1359,13 @@ func (m *MockAPIGatewayAPI) DeleteMethodRequest(arg0 *apigateway.DeleteMethodInp
 	return ret0, ret1
 }
 
-// DeleteMethodRequest indicates an expected call of DeleteMethodRequest.
+// DeleteMethodRequest indicates an expected call of DeleteMethodRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteMethodRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMethodRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteMethodRequest), arg0)
 }
 
-// DeleteMethodResponse mocks base method.
+// DeleteMethodResponse mocks base method
 func (m *MockAPIGatewayAPI) DeleteMethodResponse(arg0 *apigateway.DeleteMethodResponseInput) (*apigateway.DeleteMethodResponseOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMethodResponse", arg0)
@@ -1375,13 +1374,13 @@ func (m *MockAPIGatewayAPI) DeleteMethodResponse(arg0 *apigateway.DeleteMethodRe
 	return ret0, ret1
 }
 
-// DeleteMethodResponse indicates an expected call of DeleteMethodResponse.
+// DeleteMethodResponse indicates an expected call of DeleteMethodResponse
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteMethodResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMethodResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteMethodResponse), arg0)
 }
 
-// DeleteMethodResponseRequest mocks base method.
+// DeleteMethodResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteMethodResponseRequest(arg0 *apigateway.DeleteMethodResponseInput) (*request.Request, *apigateway.DeleteMethodResponseOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteMethodResponseRequest", arg0)
@@ -1390,14 +1389,14 @@ func (m *MockAPIGatewayAPI) DeleteMethodResponseRequest(arg0 *apigateway.DeleteM
 	return ret0, ret1
 }
 
-// DeleteMethodResponseRequest indicates an expected call of DeleteMethodResponseRequest.
+// DeleteMethodResponseRequest indicates an expected call of DeleteMethodResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteMethodResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMethodResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteMethodResponseRequest), arg0)
 }
 
-// DeleteMethodResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteMethodResponseWithContext(arg0 context.Context, arg1 *apigateway.DeleteMethodResponseInput, arg2 ...request.Option) (*apigateway.DeleteMethodResponseOutput, error) {
+// DeleteMethodResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteMethodResponseWithContext(arg0 aws.Context, arg1 *apigateway.DeleteMethodResponseInput, arg2 ...request.Option) (*apigateway.DeleteMethodResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1409,15 +1408,15 @@ func (m *MockAPIGatewayAPI) DeleteMethodResponseWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DeleteMethodResponseWithContext indicates an expected call of DeleteMethodResponseWithContext.
+// DeleteMethodResponseWithContext indicates an expected call of DeleteMethodResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteMethodResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMethodResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteMethodResponseWithContext), varargs...)
 }
 
-// DeleteMethodWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteMethodWithContext(arg0 context.Context, arg1 *apigateway.DeleteMethodInput, arg2 ...request.Option) (*apigateway.DeleteMethodOutput, error) {
+// DeleteMethodWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteMethodWithContext(arg0 aws.Context, arg1 *apigateway.DeleteMethodInput, arg2 ...request.Option) (*apigateway.DeleteMethodOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,14 +1428,14 @@ func (m *MockAPIGatewayAPI) DeleteMethodWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// DeleteMethodWithContext indicates an expected call of DeleteMethodWithContext.
+// DeleteMethodWithContext indicates an expected call of DeleteMethodWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMethodWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteMethodWithContext), varargs...)
 }
 
-// DeleteModel mocks base method.
+// DeleteModel mocks base method
 func (m *MockAPIGatewayAPI) DeleteModel(arg0 *apigateway.DeleteModelInput) (*apigateway.DeleteModelOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteModel", arg0)
@@ -1445,13 +1444,13 @@ func (m *MockAPIGatewayAPI) DeleteModel(arg0 *apigateway.DeleteModelInput) (*api
 	return ret0, ret1
 }
 
-// DeleteModel indicates an expected call of DeleteModel.
+// DeleteModel indicates an expected call of DeleteModel
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModel", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteModel), arg0)
 }
 
-// DeleteModelRequest mocks base method.
+// DeleteModelRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteModelRequest(arg0 *apigateway.DeleteModelInput) (*request.Request, *apigateway.DeleteModelOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteModelRequest", arg0)
@@ -1460,14 +1459,14 @@ func (m *MockAPIGatewayAPI) DeleteModelRequest(arg0 *apigateway.DeleteModelInput
 	return ret0, ret1
 }
 
-// DeleteModelRequest indicates an expected call of DeleteModelRequest.
+// DeleteModelRequest indicates an expected call of DeleteModelRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteModelRequest), arg0)
 }
 
-// DeleteModelWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteModelWithContext(arg0 context.Context, arg1 *apigateway.DeleteModelInput, arg2 ...request.Option) (*apigateway.DeleteModelOutput, error) {
+// DeleteModelWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteModelWithContext(arg0 aws.Context, arg1 *apigateway.DeleteModelInput, arg2 ...request.Option) (*apigateway.DeleteModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1479,14 +1478,14 @@ func (m *MockAPIGatewayAPI) DeleteModelWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// DeleteModelWithContext indicates an expected call of DeleteModelWithContext.
+// DeleteModelWithContext indicates an expected call of DeleteModelWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteModelWithContext), varargs...)
 }
 
-// DeleteRequestValidator mocks base method.
+// DeleteRequestValidator mocks base method
 func (m *MockAPIGatewayAPI) DeleteRequestValidator(arg0 *apigateway.DeleteRequestValidatorInput) (*apigateway.DeleteRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRequestValidator", arg0)
@@ -1495,13 +1494,13 @@ func (m *MockAPIGatewayAPI) DeleteRequestValidator(arg0 *apigateway.DeleteReques
 	return ret0, ret1
 }
 
-// DeleteRequestValidator indicates an expected call of DeleteRequestValidator.
+// DeleteRequestValidator indicates an expected call of DeleteRequestValidator
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteRequestValidator(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRequestValidator", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteRequestValidator), arg0)
 }
 
-// DeleteRequestValidatorRequest mocks base method.
+// DeleteRequestValidatorRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteRequestValidatorRequest(arg0 *apigateway.DeleteRequestValidatorInput) (*request.Request, *apigateway.DeleteRequestValidatorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRequestValidatorRequest", arg0)
@@ -1510,14 +1509,14 @@ func (m *MockAPIGatewayAPI) DeleteRequestValidatorRequest(arg0 *apigateway.Delet
 	return ret0, ret1
 }
 
-// DeleteRequestValidatorRequest indicates an expected call of DeleteRequestValidatorRequest.
+// DeleteRequestValidatorRequest indicates an expected call of DeleteRequestValidatorRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteRequestValidatorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRequestValidatorRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteRequestValidatorRequest), arg0)
 }
 
-// DeleteRequestValidatorWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteRequestValidatorWithContext(arg0 context.Context, arg1 *apigateway.DeleteRequestValidatorInput, arg2 ...request.Option) (*apigateway.DeleteRequestValidatorOutput, error) {
+// DeleteRequestValidatorWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteRequestValidatorWithContext(arg0 aws.Context, arg1 *apigateway.DeleteRequestValidatorInput, arg2 ...request.Option) (*apigateway.DeleteRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1529,14 +1528,14 @@ func (m *MockAPIGatewayAPI) DeleteRequestValidatorWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// DeleteRequestValidatorWithContext indicates an expected call of DeleteRequestValidatorWithContext.
+// DeleteRequestValidatorWithContext indicates an expected call of DeleteRequestValidatorWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteRequestValidatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRequestValidatorWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteRequestValidatorWithContext), varargs...)
 }
 
-// DeleteResource mocks base method.
+// DeleteResource mocks base method
 func (m *MockAPIGatewayAPI) DeleteResource(arg0 *apigateway.DeleteResourceInput) (*apigateway.DeleteResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteResource", arg0)
@@ -1545,13 +1544,13 @@ func (m *MockAPIGatewayAPI) DeleteResource(arg0 *apigateway.DeleteResourceInput)
 	return ret0, ret1
 }
 
-// DeleteResource indicates an expected call of DeleteResource.
+// DeleteResource indicates an expected call of DeleteResource
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResource", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteResource), arg0)
 }
 
-// DeleteResourceRequest mocks base method.
+// DeleteResourceRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteResourceRequest(arg0 *apigateway.DeleteResourceInput) (*request.Request, *apigateway.DeleteResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteResourceRequest", arg0)
@@ -1560,14 +1559,14 @@ func (m *MockAPIGatewayAPI) DeleteResourceRequest(arg0 *apigateway.DeleteResourc
 	return ret0, ret1
 }
 
-// DeleteResourceRequest indicates an expected call of DeleteResourceRequest.
+// DeleteResourceRequest indicates an expected call of DeleteResourceRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteResourceRequest), arg0)
 }
 
-// DeleteResourceWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteResourceWithContext(arg0 context.Context, arg1 *apigateway.DeleteResourceInput, arg2 ...request.Option) (*apigateway.DeleteResourceOutput, error) {
+// DeleteResourceWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteResourceWithContext(arg0 aws.Context, arg1 *apigateway.DeleteResourceInput, arg2 ...request.Option) (*apigateway.DeleteResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1579,14 +1578,14 @@ func (m *MockAPIGatewayAPI) DeleteResourceWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeleteResourceWithContext indicates an expected call of DeleteResourceWithContext.
+// DeleteResourceWithContext indicates an expected call of DeleteResourceWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteResourceWithContext), varargs...)
 }
 
-// DeleteRestApi mocks base method.
+// DeleteRestApi mocks base method
 func (m *MockAPIGatewayAPI) DeleteRestApi(arg0 *apigateway.DeleteRestApiInput) (*apigateway.DeleteRestApiOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRestApi", arg0)
@@ -1595,13 +1594,13 @@ func (m *MockAPIGatewayAPI) DeleteRestApi(arg0 *apigateway.DeleteRestApiInput) (
 	return ret0, ret1
 }
 
-// DeleteRestApi indicates an expected call of DeleteRestApi.
+// DeleteRestApi indicates an expected call of DeleteRestApi
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteRestApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRestApi", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteRestApi), arg0)
 }
 
-// DeleteRestApiRequest mocks base method.
+// DeleteRestApiRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteRestApiRequest(arg0 *apigateway.DeleteRestApiInput) (*request.Request, *apigateway.DeleteRestApiOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRestApiRequest", arg0)
@@ -1610,14 +1609,14 @@ func (m *MockAPIGatewayAPI) DeleteRestApiRequest(arg0 *apigateway.DeleteRestApiI
 	return ret0, ret1
 }
 
-// DeleteRestApiRequest indicates an expected call of DeleteRestApiRequest.
+// DeleteRestApiRequest indicates an expected call of DeleteRestApiRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteRestApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRestApiRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteRestApiRequest), arg0)
 }
 
-// DeleteRestApiWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteRestApiWithContext(arg0 context.Context, arg1 *apigateway.DeleteRestApiInput, arg2 ...request.Option) (*apigateway.DeleteRestApiOutput, error) {
+// DeleteRestApiWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteRestApiWithContext(arg0 aws.Context, arg1 *apigateway.DeleteRestApiInput, arg2 ...request.Option) (*apigateway.DeleteRestApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1629,14 +1628,14 @@ func (m *MockAPIGatewayAPI) DeleteRestApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteRestApiWithContext indicates an expected call of DeleteRestApiWithContext.
+// DeleteRestApiWithContext indicates an expected call of DeleteRestApiWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteRestApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRestApiWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteRestApiWithContext), varargs...)
 }
 
-// DeleteStage mocks base method.
+// DeleteStage mocks base method
 func (m *MockAPIGatewayAPI) DeleteStage(arg0 *apigateway.DeleteStageInput) (*apigateway.DeleteStageOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteStage", arg0)
@@ -1645,13 +1644,13 @@ func (m *MockAPIGatewayAPI) DeleteStage(arg0 *apigateway.DeleteStageInput) (*api
 	return ret0, ret1
 }
 
-// DeleteStage indicates an expected call of DeleteStage.
+// DeleteStage indicates an expected call of DeleteStage
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteStage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStage", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteStage), arg0)
 }
 
-// DeleteStageRequest mocks base method.
+// DeleteStageRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteStageRequest(arg0 *apigateway.DeleteStageInput) (*request.Request, *apigateway.DeleteStageOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteStageRequest", arg0)
@@ -1660,14 +1659,14 @@ func (m *MockAPIGatewayAPI) DeleteStageRequest(arg0 *apigateway.DeleteStageInput
 	return ret0, ret1
 }
 
-// DeleteStageRequest indicates an expected call of DeleteStageRequest.
+// DeleteStageRequest indicates an expected call of DeleteStageRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteStageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStageRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteStageRequest), arg0)
 }
 
-// DeleteStageWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteStageWithContext(arg0 context.Context, arg1 *apigateway.DeleteStageInput, arg2 ...request.Option) (*apigateway.DeleteStageOutput, error) {
+// DeleteStageWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteStageWithContext(arg0 aws.Context, arg1 *apigateway.DeleteStageInput, arg2 ...request.Option) (*apigateway.DeleteStageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1679,14 +1678,14 @@ func (m *MockAPIGatewayAPI) DeleteStageWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// DeleteStageWithContext indicates an expected call of DeleteStageWithContext.
+// DeleteStageWithContext indicates an expected call of DeleteStageWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStageWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteStageWithContext), varargs...)
 }
 
-// DeleteUsagePlan mocks base method.
+// DeleteUsagePlan mocks base method
 func (m *MockAPIGatewayAPI) DeleteUsagePlan(arg0 *apigateway.DeleteUsagePlanInput) (*apigateway.DeleteUsagePlanOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUsagePlan", arg0)
@@ -1695,13 +1694,13 @@ func (m *MockAPIGatewayAPI) DeleteUsagePlan(arg0 *apigateway.DeleteUsagePlanInpu
 	return ret0, ret1
 }
 
-// DeleteUsagePlan indicates an expected call of DeleteUsagePlan.
+// DeleteUsagePlan indicates an expected call of DeleteUsagePlan
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteUsagePlan(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsagePlan", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteUsagePlan), arg0)
 }
 
-// DeleteUsagePlanKey mocks base method.
+// DeleteUsagePlanKey mocks base method
 func (m *MockAPIGatewayAPI) DeleteUsagePlanKey(arg0 *apigateway.DeleteUsagePlanKeyInput) (*apigateway.DeleteUsagePlanKeyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUsagePlanKey", arg0)
@@ -1710,13 +1709,13 @@ func (m *MockAPIGatewayAPI) DeleteUsagePlanKey(arg0 *apigateway.DeleteUsagePlanK
 	return ret0, ret1
 }
 
-// DeleteUsagePlanKey indicates an expected call of DeleteUsagePlanKey.
+// DeleteUsagePlanKey indicates an expected call of DeleteUsagePlanKey
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteUsagePlanKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsagePlanKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteUsagePlanKey), arg0)
 }
 
-// DeleteUsagePlanKeyRequest mocks base method.
+// DeleteUsagePlanKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteUsagePlanKeyRequest(arg0 *apigateway.DeleteUsagePlanKeyInput) (*request.Request, *apigateway.DeleteUsagePlanKeyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUsagePlanKeyRequest", arg0)
@@ -1725,14 +1724,14 @@ func (m *MockAPIGatewayAPI) DeleteUsagePlanKeyRequest(arg0 *apigateway.DeleteUsa
 	return ret0, ret1
 }
 
-// DeleteUsagePlanKeyRequest indicates an expected call of DeleteUsagePlanKeyRequest.
+// DeleteUsagePlanKeyRequest indicates an expected call of DeleteUsagePlanKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteUsagePlanKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsagePlanKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteUsagePlanKeyRequest), arg0)
 }
 
-// DeleteUsagePlanKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteUsagePlanKeyWithContext(arg0 context.Context, arg1 *apigateway.DeleteUsagePlanKeyInput, arg2 ...request.Option) (*apigateway.DeleteUsagePlanKeyOutput, error) {
+// DeleteUsagePlanKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteUsagePlanKeyWithContext(arg0 aws.Context, arg1 *apigateway.DeleteUsagePlanKeyInput, arg2 ...request.Option) (*apigateway.DeleteUsagePlanKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1744,14 +1743,14 @@ func (m *MockAPIGatewayAPI) DeleteUsagePlanKeyWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// DeleteUsagePlanKeyWithContext indicates an expected call of DeleteUsagePlanKeyWithContext.
+// DeleteUsagePlanKeyWithContext indicates an expected call of DeleteUsagePlanKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteUsagePlanKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsagePlanKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteUsagePlanKeyWithContext), varargs...)
 }
 
-// DeleteUsagePlanRequest mocks base method.
+// DeleteUsagePlanRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteUsagePlanRequest(arg0 *apigateway.DeleteUsagePlanInput) (*request.Request, *apigateway.DeleteUsagePlanOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUsagePlanRequest", arg0)
@@ -1760,14 +1759,14 @@ func (m *MockAPIGatewayAPI) DeleteUsagePlanRequest(arg0 *apigateway.DeleteUsageP
 	return ret0, ret1
 }
 
-// DeleteUsagePlanRequest indicates an expected call of DeleteUsagePlanRequest.
+// DeleteUsagePlanRequest indicates an expected call of DeleteUsagePlanRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteUsagePlanRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsagePlanRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteUsagePlanRequest), arg0)
 }
 
-// DeleteUsagePlanWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteUsagePlanWithContext(arg0 context.Context, arg1 *apigateway.DeleteUsagePlanInput, arg2 ...request.Option) (*apigateway.DeleteUsagePlanOutput, error) {
+// DeleteUsagePlanWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteUsagePlanWithContext(arg0 aws.Context, arg1 *apigateway.DeleteUsagePlanInput, arg2 ...request.Option) (*apigateway.DeleteUsagePlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1779,14 +1778,14 @@ func (m *MockAPIGatewayAPI) DeleteUsagePlanWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// DeleteUsagePlanWithContext indicates an expected call of DeleteUsagePlanWithContext.
+// DeleteUsagePlanWithContext indicates an expected call of DeleteUsagePlanWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteUsagePlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsagePlanWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteUsagePlanWithContext), varargs...)
 }
 
-// DeleteVpcLink mocks base method.
+// DeleteVpcLink mocks base method
 func (m *MockAPIGatewayAPI) DeleteVpcLink(arg0 *apigateway.DeleteVpcLinkInput) (*apigateway.DeleteVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVpcLink", arg0)
@@ -1795,13 +1794,13 @@ func (m *MockAPIGatewayAPI) DeleteVpcLink(arg0 *apigateway.DeleteVpcLinkInput) (
 	return ret0, ret1
 }
 
-// DeleteVpcLink indicates an expected call of DeleteVpcLink.
+// DeleteVpcLink indicates an expected call of DeleteVpcLink
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteVpcLink(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLink", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteVpcLink), arg0)
 }
 
-// DeleteVpcLinkRequest mocks base method.
+// DeleteVpcLinkRequest mocks base method
 func (m *MockAPIGatewayAPI) DeleteVpcLinkRequest(arg0 *apigateway.DeleteVpcLinkInput) (*request.Request, *apigateway.DeleteVpcLinkOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteVpcLinkRequest", arg0)
@@ -1810,14 +1809,14 @@ func (m *MockAPIGatewayAPI) DeleteVpcLinkRequest(arg0 *apigateway.DeleteVpcLinkI
 	return ret0, ret1
 }
 
-// DeleteVpcLinkRequest indicates an expected call of DeleteVpcLinkRequest.
+// DeleteVpcLinkRequest indicates an expected call of DeleteVpcLinkRequest
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteVpcLinkRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLinkRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteVpcLinkRequest), arg0)
 }
 
-// DeleteVpcLinkWithContext mocks base method.
-func (m *MockAPIGatewayAPI) DeleteVpcLinkWithContext(arg0 context.Context, arg1 *apigateway.DeleteVpcLinkInput, arg2 ...request.Option) (*apigateway.DeleteVpcLinkOutput, error) {
+// DeleteVpcLinkWithContext mocks base method
+func (m *MockAPIGatewayAPI) DeleteVpcLinkWithContext(arg0 aws.Context, arg1 *apigateway.DeleteVpcLinkInput, arg2 ...request.Option) (*apigateway.DeleteVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1829,14 +1828,14 @@ func (m *MockAPIGatewayAPI) DeleteVpcLinkWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteVpcLinkWithContext indicates an expected call of DeleteVpcLinkWithContext.
+// DeleteVpcLinkWithContext indicates an expected call of DeleteVpcLinkWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) DeleteVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLinkWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).DeleteVpcLinkWithContext), varargs...)
 }
 
-// FlushStageAuthorizersCache mocks base method.
+// FlushStageAuthorizersCache mocks base method
 func (m *MockAPIGatewayAPI) FlushStageAuthorizersCache(arg0 *apigateway.FlushStageAuthorizersCacheInput) (*apigateway.FlushStageAuthorizersCacheOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "FlushStageAuthorizersCache", arg0)
@@ -1845,13 +1844,13 @@ func (m *MockAPIGatewayAPI) FlushStageAuthorizersCache(arg0 *apigateway.FlushSta
 	return ret0, ret1
 }
 
-// FlushStageAuthorizersCache indicates an expected call of FlushStageAuthorizersCache.
+// FlushStageAuthorizersCache indicates an expected call of FlushStageAuthorizersCache
 func (mr *MockAPIGatewayAPIMockRecorder) FlushStageAuthorizersCache(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushStageAuthorizersCache", reflect.TypeOf((*MockAPIGatewayAPI)(nil).FlushStageAuthorizersCache), arg0)
 }
 
-// FlushStageAuthorizersCacheRequest mocks base method.
+// FlushStageAuthorizersCacheRequest mocks base method
 func (m *MockAPIGatewayAPI) FlushStageAuthorizersCacheRequest(arg0 *apigateway.FlushStageAuthorizersCacheInput) (*request.Request, *apigateway.FlushStageAuthorizersCacheOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "FlushStageAuthorizersCacheRequest", arg0)
@@ -1860,14 +1859,14 @@ func (m *MockAPIGatewayAPI) FlushStageAuthorizersCacheRequest(arg0 *apigateway.F
 	return ret0, ret1
 }
 
-// FlushStageAuthorizersCacheRequest indicates an expected call of FlushStageAuthorizersCacheRequest.
+// FlushStageAuthorizersCacheRequest indicates an expected call of FlushStageAuthorizersCacheRequest
 func (mr *MockAPIGatewayAPIMockRecorder) FlushStageAuthorizersCacheRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushStageAuthorizersCacheRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).FlushStageAuthorizersCacheRequest), arg0)
 }
 
-// FlushStageAuthorizersCacheWithContext mocks base method.
-func (m *MockAPIGatewayAPI) FlushStageAuthorizersCacheWithContext(arg0 context.Context, arg1 *apigateway.FlushStageAuthorizersCacheInput, arg2 ...request.Option) (*apigateway.FlushStageAuthorizersCacheOutput, error) {
+// FlushStageAuthorizersCacheWithContext mocks base method
+func (m *MockAPIGatewayAPI) FlushStageAuthorizersCacheWithContext(arg0 aws.Context, arg1 *apigateway.FlushStageAuthorizersCacheInput, arg2 ...request.Option) (*apigateway.FlushStageAuthorizersCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1879,14 +1878,14 @@ func (m *MockAPIGatewayAPI) FlushStageAuthorizersCacheWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// FlushStageAuthorizersCacheWithContext indicates an expected call of FlushStageAuthorizersCacheWithContext.
+// FlushStageAuthorizersCacheWithContext indicates an expected call of FlushStageAuthorizersCacheWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) FlushStageAuthorizersCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushStageAuthorizersCacheWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).FlushStageAuthorizersCacheWithContext), varargs...)
 }
 
-// FlushStageCache mocks base method.
+// FlushStageCache mocks base method
 func (m *MockAPIGatewayAPI) FlushStageCache(arg0 *apigateway.FlushStageCacheInput) (*apigateway.FlushStageCacheOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "FlushStageCache", arg0)
@@ -1895,13 +1894,13 @@ func (m *MockAPIGatewayAPI) FlushStageCache(arg0 *apigateway.FlushStageCacheInpu
 	return ret0, ret1
 }
 
-// FlushStageCache indicates an expected call of FlushStageCache.
+// FlushStageCache indicates an expected call of FlushStageCache
 func (mr *MockAPIGatewayAPIMockRecorder) FlushStageCache(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushStageCache", reflect.TypeOf((*MockAPIGatewayAPI)(nil).FlushStageCache), arg0)
 }
 
-// FlushStageCacheRequest mocks base method.
+// FlushStageCacheRequest mocks base method
 func (m *MockAPIGatewayAPI) FlushStageCacheRequest(arg0 *apigateway.FlushStageCacheInput) (*request.Request, *apigateway.FlushStageCacheOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "FlushStageCacheRequest", arg0)
@@ -1910,14 +1909,14 @@ func (m *MockAPIGatewayAPI) FlushStageCacheRequest(arg0 *apigateway.FlushStageCa
 	return ret0, ret1
 }
 
-// FlushStageCacheRequest indicates an expected call of FlushStageCacheRequest.
+// FlushStageCacheRequest indicates an expected call of FlushStageCacheRequest
 func (mr *MockAPIGatewayAPIMockRecorder) FlushStageCacheRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushStageCacheRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).FlushStageCacheRequest), arg0)
 }
 
-// FlushStageCacheWithContext mocks base method.
-func (m *MockAPIGatewayAPI) FlushStageCacheWithContext(arg0 context.Context, arg1 *apigateway.FlushStageCacheInput, arg2 ...request.Option) (*apigateway.FlushStageCacheOutput, error) {
+// FlushStageCacheWithContext mocks base method
+func (m *MockAPIGatewayAPI) FlushStageCacheWithContext(arg0 aws.Context, arg1 *apigateway.FlushStageCacheInput, arg2 ...request.Option) (*apigateway.FlushStageCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1929,14 +1928,14 @@ func (m *MockAPIGatewayAPI) FlushStageCacheWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// FlushStageCacheWithContext indicates an expected call of FlushStageCacheWithContext.
+// FlushStageCacheWithContext indicates an expected call of FlushStageCacheWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) FlushStageCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushStageCacheWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).FlushStageCacheWithContext), varargs...)
 }
 
-// GenerateClientCertificate mocks base method.
+// GenerateClientCertificate mocks base method
 func (m *MockAPIGatewayAPI) GenerateClientCertificate(arg0 *apigateway.GenerateClientCertificateInput) (*apigateway.ClientCertificate, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GenerateClientCertificate", arg0)
@@ -1945,13 +1944,13 @@ func (m *MockAPIGatewayAPI) GenerateClientCertificate(arg0 *apigateway.GenerateC
 	return ret0, ret1
 }
 
-// GenerateClientCertificate indicates an expected call of GenerateClientCertificate.
+// GenerateClientCertificate indicates an expected call of GenerateClientCertificate
 func (mr *MockAPIGatewayAPIMockRecorder) GenerateClientCertificate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateClientCertificate", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GenerateClientCertificate), arg0)
 }
 
-// GenerateClientCertificateRequest mocks base method.
+// GenerateClientCertificateRequest mocks base method
 func (m *MockAPIGatewayAPI) GenerateClientCertificateRequest(arg0 *apigateway.GenerateClientCertificateInput) (*request.Request, *apigateway.ClientCertificate) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GenerateClientCertificateRequest", arg0)
@@ -1960,14 +1959,14 @@ func (m *MockAPIGatewayAPI) GenerateClientCertificateRequest(arg0 *apigateway.Ge
 	return ret0, ret1
 }
 
-// GenerateClientCertificateRequest indicates an expected call of GenerateClientCertificateRequest.
+// GenerateClientCertificateRequest indicates an expected call of GenerateClientCertificateRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GenerateClientCertificateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateClientCertificateRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GenerateClientCertificateRequest), arg0)
 }
 
-// GenerateClientCertificateWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GenerateClientCertificateWithContext(arg0 context.Context, arg1 *apigateway.GenerateClientCertificateInput, arg2 ...request.Option) (*apigateway.ClientCertificate, error) {
+// GenerateClientCertificateWithContext mocks base method
+func (m *MockAPIGatewayAPI) GenerateClientCertificateWithContext(arg0 aws.Context, arg1 *apigateway.GenerateClientCertificateInput, arg2 ...request.Option) (*apigateway.ClientCertificate, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1979,14 +1978,14 @@ func (m *MockAPIGatewayAPI) GenerateClientCertificateWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// GenerateClientCertificateWithContext indicates an expected call of GenerateClientCertificateWithContext.
+// GenerateClientCertificateWithContext indicates an expected call of GenerateClientCertificateWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GenerateClientCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateClientCertificateWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GenerateClientCertificateWithContext), varargs...)
 }
 
-// GetAccount mocks base method.
+// GetAccount mocks base method
 func (m *MockAPIGatewayAPI) GetAccount(arg0 *apigateway.GetAccountInput) (*apigateway.Account, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAccount", arg0)
@@ -1995,13 +1994,13 @@ func (m *MockAPIGatewayAPI) GetAccount(arg0 *apigateway.GetAccountInput) (*apiga
 	return ret0, ret1
 }
 
-// GetAccount indicates an expected call of GetAccount.
+// GetAccount indicates an expected call of GetAccount
 func (mr *MockAPIGatewayAPIMockRecorder) GetAccount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccount", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAccount), arg0)
 }
 
-// GetAccountRequest mocks base method.
+// GetAccountRequest mocks base method
 func (m *MockAPIGatewayAPI) GetAccountRequest(arg0 *apigateway.GetAccountInput) (*request.Request, *apigateway.Account) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAccountRequest", arg0)
@@ -2010,14 +2009,14 @@ func (m *MockAPIGatewayAPI) GetAccountRequest(arg0 *apigateway.GetAccountInput) 
 	return ret0, ret1
 }
 
-// GetAccountRequest indicates an expected call of GetAccountRequest.
+// GetAccountRequest indicates an expected call of GetAccountRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetAccountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAccountRequest), arg0)
 }
 
-// GetAccountWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetAccountWithContext(arg0 context.Context, arg1 *apigateway.GetAccountInput, arg2 ...request.Option) (*apigateway.Account, error) {
+// GetAccountWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetAccountWithContext(arg0 aws.Context, arg1 *apigateway.GetAccountInput, arg2 ...request.Option) (*apigateway.Account, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2029,14 +2028,14 @@ func (m *MockAPIGatewayAPI) GetAccountWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetAccountWithContext indicates an expected call of GetAccountWithContext.
+// GetAccountWithContext indicates an expected call of GetAccountWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAccountWithContext), varargs...)
 }
 
-// GetApiKey mocks base method.
+// GetApiKey mocks base method
 func (m *MockAPIGatewayAPI) GetApiKey(arg0 *apigateway.GetApiKeyInput) (*apigateway.ApiKey, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetApiKey", arg0)
@@ -2045,13 +2044,13 @@ func (m *MockAPIGatewayAPI) GetApiKey(arg0 *apigateway.GetApiKeyInput) (*apigate
 	return ret0, ret1
 }
 
-// GetApiKey indicates an expected call of GetApiKey.
+// GetApiKey indicates an expected call of GetApiKey
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKey), arg0)
 }
 
-// GetApiKeyRequest mocks base method.
+// GetApiKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) GetApiKeyRequest(arg0 *apigateway.GetApiKeyInput) (*request.Request, *apigateway.ApiKey) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetApiKeyRequest", arg0)
@@ -2060,14 +2059,14 @@ func (m *MockAPIGatewayAPI) GetApiKeyRequest(arg0 *apigateway.GetApiKeyInput) (*
 	return ret0, ret1
 }
 
-// GetApiKeyRequest indicates an expected call of GetApiKeyRequest.
+// GetApiKeyRequest indicates an expected call of GetApiKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeyRequest), arg0)
 }
 
-// GetApiKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetApiKeyWithContext(arg0 context.Context, arg1 *apigateway.GetApiKeyInput, arg2 ...request.Option) (*apigateway.ApiKey, error) {
+// GetApiKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetApiKeyWithContext(arg0 aws.Context, arg1 *apigateway.GetApiKeyInput, arg2 ...request.Option) (*apigateway.ApiKey, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2079,14 +2078,14 @@ func (m *MockAPIGatewayAPI) GetApiKeyWithContext(arg0 context.Context, arg1 *api
 	return ret0, ret1
 }
 
-// GetApiKeyWithContext indicates an expected call of GetApiKeyWithContext.
+// GetApiKeyWithContext indicates an expected call of GetApiKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeyWithContext), varargs...)
 }
 
-// GetApiKeys mocks base method.
+// GetApiKeys mocks base method
 func (m *MockAPIGatewayAPI) GetApiKeys(arg0 *apigateway.GetApiKeysInput) (*apigateway.GetApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetApiKeys", arg0)
@@ -2095,13 +2094,13 @@ func (m *MockAPIGatewayAPI) GetApiKeys(arg0 *apigateway.GetApiKeysInput) (*apiga
 	return ret0, ret1
 }
 
-// GetApiKeys indicates an expected call of GetApiKeys.
+// GetApiKeys indicates an expected call of GetApiKeys
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeys(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeys", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeys), arg0)
 }
 
-// GetApiKeysPages mocks base method.
+// GetApiKeysPages mocks base method
 func (m *MockAPIGatewayAPI) GetApiKeysPages(arg0 *apigateway.GetApiKeysInput, arg1 func(*apigateway.GetApiKeysOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetApiKeysPages", arg0, arg1)
@@ -2109,14 +2108,14 @@ func (m *MockAPIGatewayAPI) GetApiKeysPages(arg0 *apigateway.GetApiKeysInput, ar
 	return ret0
 }
 
-// GetApiKeysPages indicates an expected call of GetApiKeysPages.
+// GetApiKeysPages indicates an expected call of GetApiKeysPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeysPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeysPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeysPages), arg0, arg1)
 }
 
-// GetApiKeysPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetApiKeysPagesWithContext(arg0 context.Context, arg1 *apigateway.GetApiKeysInput, arg2 func(*apigateway.GetApiKeysOutput, bool) bool, arg3 ...request.Option) error {
+// GetApiKeysPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetApiKeysPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetApiKeysInput, arg2 func(*apigateway.GetApiKeysOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2127,14 +2126,14 @@ func (m *MockAPIGatewayAPI) GetApiKeysPagesWithContext(arg0 context.Context, arg
 	return ret0
 }
 
-// GetApiKeysPagesWithContext indicates an expected call of GetApiKeysPagesWithContext.
+// GetApiKeysPagesWithContext indicates an expected call of GetApiKeysPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeysPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeysPagesWithContext), varargs...)
 }
 
-// GetApiKeysRequest mocks base method.
+// GetApiKeysRequest mocks base method
 func (m *MockAPIGatewayAPI) GetApiKeysRequest(arg0 *apigateway.GetApiKeysInput) (*request.Request, *apigateway.GetApiKeysOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetApiKeysRequest", arg0)
@@ -2143,14 +2142,14 @@ func (m *MockAPIGatewayAPI) GetApiKeysRequest(arg0 *apigateway.GetApiKeysInput) 
 	return ret0, ret1
 }
 
-// GetApiKeysRequest indicates an expected call of GetApiKeysRequest.
+// GetApiKeysRequest indicates an expected call of GetApiKeysRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeysRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeysRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeysRequest), arg0)
 }
 
-// GetApiKeysWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetApiKeysWithContext(arg0 context.Context, arg1 *apigateway.GetApiKeysInput, arg2 ...request.Option) (*apigateway.GetApiKeysOutput, error) {
+// GetApiKeysWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetApiKeysWithContext(arg0 aws.Context, arg1 *apigateway.GetApiKeysInput, arg2 ...request.Option) (*apigateway.GetApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2162,14 +2161,14 @@ func (m *MockAPIGatewayAPI) GetApiKeysWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetApiKeysWithContext indicates an expected call of GetApiKeysWithContext.
+// GetApiKeysWithContext indicates an expected call of GetApiKeysWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetApiKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiKeysWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetApiKeysWithContext), varargs...)
 }
 
-// GetAuthorizer mocks base method.
+// GetAuthorizer mocks base method
 func (m *MockAPIGatewayAPI) GetAuthorizer(arg0 *apigateway.GetAuthorizerInput) (*apigateway.Authorizer, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAuthorizer", arg0)
@@ -2178,13 +2177,13 @@ func (m *MockAPIGatewayAPI) GetAuthorizer(arg0 *apigateway.GetAuthorizerInput) (
 	return ret0, ret1
 }
 
-// GetAuthorizer indicates an expected call of GetAuthorizer.
+// GetAuthorizer indicates an expected call of GetAuthorizer
 func (mr *MockAPIGatewayAPIMockRecorder) GetAuthorizer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthorizer", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAuthorizer), arg0)
 }
 
-// GetAuthorizerRequest mocks base method.
+// GetAuthorizerRequest mocks base method
 func (m *MockAPIGatewayAPI) GetAuthorizerRequest(arg0 *apigateway.GetAuthorizerInput) (*request.Request, *apigateway.Authorizer) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAuthorizerRequest", arg0)
@@ -2193,14 +2192,14 @@ func (m *MockAPIGatewayAPI) GetAuthorizerRequest(arg0 *apigateway.GetAuthorizerI
 	return ret0, ret1
 }
 
-// GetAuthorizerRequest indicates an expected call of GetAuthorizerRequest.
+// GetAuthorizerRequest indicates an expected call of GetAuthorizerRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetAuthorizerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthorizerRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAuthorizerRequest), arg0)
 }
 
-// GetAuthorizerWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetAuthorizerWithContext(arg0 context.Context, arg1 *apigateway.GetAuthorizerInput, arg2 ...request.Option) (*apigateway.Authorizer, error) {
+// GetAuthorizerWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetAuthorizerWithContext(arg0 aws.Context, arg1 *apigateway.GetAuthorizerInput, arg2 ...request.Option) (*apigateway.Authorizer, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2212,14 +2211,14 @@ func (m *MockAPIGatewayAPI) GetAuthorizerWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetAuthorizerWithContext indicates an expected call of GetAuthorizerWithContext.
+// GetAuthorizerWithContext indicates an expected call of GetAuthorizerWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetAuthorizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthorizerWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAuthorizerWithContext), varargs...)
 }
 
-// GetAuthorizers mocks base method.
+// GetAuthorizers mocks base method
 func (m *MockAPIGatewayAPI) GetAuthorizers(arg0 *apigateway.GetAuthorizersInput) (*apigateway.GetAuthorizersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAuthorizers", arg0)
@@ -2228,13 +2227,13 @@ func (m *MockAPIGatewayAPI) GetAuthorizers(arg0 *apigateway.GetAuthorizersInput)
 	return ret0, ret1
 }
 
-// GetAuthorizers indicates an expected call of GetAuthorizers.
+// GetAuthorizers indicates an expected call of GetAuthorizers
 func (mr *MockAPIGatewayAPIMockRecorder) GetAuthorizers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthorizers", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAuthorizers), arg0)
 }
 
-// GetAuthorizersRequest mocks base method.
+// GetAuthorizersRequest mocks base method
 func (m *MockAPIGatewayAPI) GetAuthorizersRequest(arg0 *apigateway.GetAuthorizersInput) (*request.Request, *apigateway.GetAuthorizersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAuthorizersRequest", arg0)
@@ -2243,14 +2242,14 @@ func (m *MockAPIGatewayAPI) GetAuthorizersRequest(arg0 *apigateway.GetAuthorizer
 	return ret0, ret1
 }
 
-// GetAuthorizersRequest indicates an expected call of GetAuthorizersRequest.
+// GetAuthorizersRequest indicates an expected call of GetAuthorizersRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetAuthorizersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthorizersRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAuthorizersRequest), arg0)
 }
 
-// GetAuthorizersWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetAuthorizersWithContext(arg0 context.Context, arg1 *apigateway.GetAuthorizersInput, arg2 ...request.Option) (*apigateway.GetAuthorizersOutput, error) {
+// GetAuthorizersWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetAuthorizersWithContext(arg0 aws.Context, arg1 *apigateway.GetAuthorizersInput, arg2 ...request.Option) (*apigateway.GetAuthorizersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2262,14 +2261,14 @@ func (m *MockAPIGatewayAPI) GetAuthorizersWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// GetAuthorizersWithContext indicates an expected call of GetAuthorizersWithContext.
+// GetAuthorizersWithContext indicates an expected call of GetAuthorizersWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetAuthorizersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthorizersWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetAuthorizersWithContext), varargs...)
 }
 
-// GetBasePathMapping mocks base method.
+// GetBasePathMapping mocks base method
 func (m *MockAPIGatewayAPI) GetBasePathMapping(arg0 *apigateway.GetBasePathMappingInput) (*apigateway.BasePathMapping, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBasePathMapping", arg0)
@@ -2278,13 +2277,13 @@ func (m *MockAPIGatewayAPI) GetBasePathMapping(arg0 *apigateway.GetBasePathMappi
 	return ret0, ret1
 }
 
-// GetBasePathMapping indicates an expected call of GetBasePathMapping.
+// GetBasePathMapping indicates an expected call of GetBasePathMapping
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMapping(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMapping", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMapping), arg0)
 }
 
-// GetBasePathMappingRequest mocks base method.
+// GetBasePathMappingRequest mocks base method
 func (m *MockAPIGatewayAPI) GetBasePathMappingRequest(arg0 *apigateway.GetBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBasePathMappingRequest", arg0)
@@ -2293,14 +2292,14 @@ func (m *MockAPIGatewayAPI) GetBasePathMappingRequest(arg0 *apigateway.GetBasePa
 	return ret0, ret1
 }
 
-// GetBasePathMappingRequest indicates an expected call of GetBasePathMappingRequest.
+// GetBasePathMappingRequest indicates an expected call of GetBasePathMappingRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappingRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappingRequest), arg0)
 }
 
-// GetBasePathMappingWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetBasePathMappingWithContext(arg0 context.Context, arg1 *apigateway.GetBasePathMappingInput, arg2 ...request.Option) (*apigateway.BasePathMapping, error) {
+// GetBasePathMappingWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetBasePathMappingWithContext(arg0 aws.Context, arg1 *apigateway.GetBasePathMappingInput, arg2 ...request.Option) (*apigateway.BasePathMapping, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2312,14 +2311,14 @@ func (m *MockAPIGatewayAPI) GetBasePathMappingWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetBasePathMappingWithContext indicates an expected call of GetBasePathMappingWithContext.
+// GetBasePathMappingWithContext indicates an expected call of GetBasePathMappingWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappingWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappingWithContext), varargs...)
 }
 
-// GetBasePathMappings mocks base method.
+// GetBasePathMappings mocks base method
 func (m *MockAPIGatewayAPI) GetBasePathMappings(arg0 *apigateway.GetBasePathMappingsInput) (*apigateway.GetBasePathMappingsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBasePathMappings", arg0)
@@ -2328,13 +2327,13 @@ func (m *MockAPIGatewayAPI) GetBasePathMappings(arg0 *apigateway.GetBasePathMapp
 	return ret0, ret1
 }
 
-// GetBasePathMappings indicates an expected call of GetBasePathMappings.
+// GetBasePathMappings indicates an expected call of GetBasePathMappings
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappings", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappings), arg0)
 }
 
-// GetBasePathMappingsPages mocks base method.
+// GetBasePathMappingsPages mocks base method
 func (m *MockAPIGatewayAPI) GetBasePathMappingsPages(arg0 *apigateway.GetBasePathMappingsInput, arg1 func(*apigateway.GetBasePathMappingsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBasePathMappingsPages", arg0, arg1)
@@ -2342,14 +2341,14 @@ func (m *MockAPIGatewayAPI) GetBasePathMappingsPages(arg0 *apigateway.GetBasePat
 	return ret0
 }
 
-// GetBasePathMappingsPages indicates an expected call of GetBasePathMappingsPages.
+// GetBasePathMappingsPages indicates an expected call of GetBasePathMappingsPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappingsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappingsPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappingsPages), arg0, arg1)
 }
 
-// GetBasePathMappingsPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetBasePathMappingsPagesWithContext(arg0 context.Context, arg1 *apigateway.GetBasePathMappingsInput, arg2 func(*apigateway.GetBasePathMappingsOutput, bool) bool, arg3 ...request.Option) error {
+// GetBasePathMappingsPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetBasePathMappingsPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetBasePathMappingsInput, arg2 func(*apigateway.GetBasePathMappingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2360,14 +2359,14 @@ func (m *MockAPIGatewayAPI) GetBasePathMappingsPagesWithContext(arg0 context.Con
 	return ret0
 }
 
-// GetBasePathMappingsPagesWithContext indicates an expected call of GetBasePathMappingsPagesWithContext.
+// GetBasePathMappingsPagesWithContext indicates an expected call of GetBasePathMappingsPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappingsPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappingsPagesWithContext), varargs...)
 }
 
-// GetBasePathMappingsRequest mocks base method.
+// GetBasePathMappingsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetBasePathMappingsRequest(arg0 *apigateway.GetBasePathMappingsInput) (*request.Request, *apigateway.GetBasePathMappingsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetBasePathMappingsRequest", arg0)
@@ -2376,14 +2375,14 @@ func (m *MockAPIGatewayAPI) GetBasePathMappingsRequest(arg0 *apigateway.GetBaseP
 	return ret0, ret1
 }
 
-// GetBasePathMappingsRequest indicates an expected call of GetBasePathMappingsRequest.
+// GetBasePathMappingsRequest indicates an expected call of GetBasePathMappingsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappingsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappingsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappingsRequest), arg0)
 }
 
-// GetBasePathMappingsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetBasePathMappingsWithContext(arg0 context.Context, arg1 *apigateway.GetBasePathMappingsInput, arg2 ...request.Option) (*apigateway.GetBasePathMappingsOutput, error) {
+// GetBasePathMappingsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetBasePathMappingsWithContext(arg0 aws.Context, arg1 *apigateway.GetBasePathMappingsInput, arg2 ...request.Option) (*apigateway.GetBasePathMappingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2395,14 +2394,14 @@ func (m *MockAPIGatewayAPI) GetBasePathMappingsWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetBasePathMappingsWithContext indicates an expected call of GetBasePathMappingsWithContext.
+// GetBasePathMappingsWithContext indicates an expected call of GetBasePathMappingsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetBasePathMappingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBasePathMappingsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetBasePathMappingsWithContext), varargs...)
 }
 
-// GetClientCertificate mocks base method.
+// GetClientCertificate mocks base method
 func (m *MockAPIGatewayAPI) GetClientCertificate(arg0 *apigateway.GetClientCertificateInput) (*apigateway.ClientCertificate, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetClientCertificate", arg0)
@@ -2411,13 +2410,13 @@ func (m *MockAPIGatewayAPI) GetClientCertificate(arg0 *apigateway.GetClientCerti
 	return ret0, ret1
 }
 
-// GetClientCertificate indicates an expected call of GetClientCertificate.
+// GetClientCertificate indicates an expected call of GetClientCertificate
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificate", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificate), arg0)
 }
 
-// GetClientCertificateRequest mocks base method.
+// GetClientCertificateRequest mocks base method
 func (m *MockAPIGatewayAPI) GetClientCertificateRequest(arg0 *apigateway.GetClientCertificateInput) (*request.Request, *apigateway.ClientCertificate) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetClientCertificateRequest", arg0)
@@ -2426,14 +2425,14 @@ func (m *MockAPIGatewayAPI) GetClientCertificateRequest(arg0 *apigateway.GetClie
 	return ret0, ret1
 }
 
-// GetClientCertificateRequest indicates an expected call of GetClientCertificateRequest.
+// GetClientCertificateRequest indicates an expected call of GetClientCertificateRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificateRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificateRequest), arg0)
 }
 
-// GetClientCertificateWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetClientCertificateWithContext(arg0 context.Context, arg1 *apigateway.GetClientCertificateInput, arg2 ...request.Option) (*apigateway.ClientCertificate, error) {
+// GetClientCertificateWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetClientCertificateWithContext(arg0 aws.Context, arg1 *apigateway.GetClientCertificateInput, arg2 ...request.Option) (*apigateway.ClientCertificate, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2445,14 +2444,14 @@ func (m *MockAPIGatewayAPI) GetClientCertificateWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetClientCertificateWithContext indicates an expected call of GetClientCertificateWithContext.
+// GetClientCertificateWithContext indicates an expected call of GetClientCertificateWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificateWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificateWithContext), varargs...)
 }
 
-// GetClientCertificates mocks base method.
+// GetClientCertificates mocks base method
 func (m *MockAPIGatewayAPI) GetClientCertificates(arg0 *apigateway.GetClientCertificatesInput) (*apigateway.GetClientCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetClientCertificates", arg0)
@@ -2461,13 +2460,13 @@ func (m *MockAPIGatewayAPI) GetClientCertificates(arg0 *apigateway.GetClientCert
 	return ret0, ret1
 }
 
-// GetClientCertificates indicates an expected call of GetClientCertificates.
+// GetClientCertificates indicates an expected call of GetClientCertificates
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificates(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificates", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificates), arg0)
 }
 
-// GetClientCertificatesPages mocks base method.
+// GetClientCertificatesPages mocks base method
 func (m *MockAPIGatewayAPI) GetClientCertificatesPages(arg0 *apigateway.GetClientCertificatesInput, arg1 func(*apigateway.GetClientCertificatesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetClientCertificatesPages", arg0, arg1)
@@ -2475,14 +2474,14 @@ func (m *MockAPIGatewayAPI) GetClientCertificatesPages(arg0 *apigateway.GetClien
 	return ret0
 }
 
-// GetClientCertificatesPages indicates an expected call of GetClientCertificatesPages.
+// GetClientCertificatesPages indicates an expected call of GetClientCertificatesPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificatesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificatesPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificatesPages), arg0, arg1)
 }
 
-// GetClientCertificatesPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetClientCertificatesPagesWithContext(arg0 context.Context, arg1 *apigateway.GetClientCertificatesInput, arg2 func(*apigateway.GetClientCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+// GetClientCertificatesPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetClientCertificatesPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetClientCertificatesInput, arg2 func(*apigateway.GetClientCertificatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2493,14 +2492,14 @@ func (m *MockAPIGatewayAPI) GetClientCertificatesPagesWithContext(arg0 context.C
 	return ret0
 }
 
-// GetClientCertificatesPagesWithContext indicates an expected call of GetClientCertificatesPagesWithContext.
+// GetClientCertificatesPagesWithContext indicates an expected call of GetClientCertificatesPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificatesPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificatesPagesWithContext), varargs...)
 }
 
-// GetClientCertificatesRequest mocks base method.
+// GetClientCertificatesRequest mocks base method
 func (m *MockAPIGatewayAPI) GetClientCertificatesRequest(arg0 *apigateway.GetClientCertificatesInput) (*request.Request, *apigateway.GetClientCertificatesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetClientCertificatesRequest", arg0)
@@ -2509,14 +2508,14 @@ func (m *MockAPIGatewayAPI) GetClientCertificatesRequest(arg0 *apigateway.GetCli
 	return ret0, ret1
 }
 
-// GetClientCertificatesRequest indicates an expected call of GetClientCertificatesRequest.
+// GetClientCertificatesRequest indicates an expected call of GetClientCertificatesRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificatesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificatesRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificatesRequest), arg0)
 }
 
-// GetClientCertificatesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetClientCertificatesWithContext(arg0 context.Context, arg1 *apigateway.GetClientCertificatesInput, arg2 ...request.Option) (*apigateway.GetClientCertificatesOutput, error) {
+// GetClientCertificatesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetClientCertificatesWithContext(arg0 aws.Context, arg1 *apigateway.GetClientCertificatesInput, arg2 ...request.Option) (*apigateway.GetClientCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2528,14 +2527,14 @@ func (m *MockAPIGatewayAPI) GetClientCertificatesWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// GetClientCertificatesWithContext indicates an expected call of GetClientCertificatesWithContext.
+// GetClientCertificatesWithContext indicates an expected call of GetClientCertificatesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetClientCertificatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClientCertificatesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetClientCertificatesWithContext), varargs...)
 }
 
-// GetDeployment mocks base method.
+// GetDeployment mocks base method
 func (m *MockAPIGatewayAPI) GetDeployment(arg0 *apigateway.GetDeploymentInput) (*apigateway.Deployment, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeployment", arg0)
@@ -2544,13 +2543,13 @@ func (m *MockAPIGatewayAPI) GetDeployment(arg0 *apigateway.GetDeploymentInput) (
 	return ret0, ret1
 }
 
-// GetDeployment indicates an expected call of GetDeployment.
+// GetDeployment indicates an expected call of GetDeployment
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeployment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeployment", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeployment), arg0)
 }
 
-// GetDeploymentRequest mocks base method.
+// GetDeploymentRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDeploymentRequest(arg0 *apigateway.GetDeploymentInput) (*request.Request, *apigateway.Deployment) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeploymentRequest", arg0)
@@ -2559,14 +2558,14 @@ func (m *MockAPIGatewayAPI) GetDeploymentRequest(arg0 *apigateway.GetDeploymentI
 	return ret0, ret1
 }
 
-// GetDeploymentRequest indicates an expected call of GetDeploymentRequest.
+// GetDeploymentRequest indicates an expected call of GetDeploymentRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeploymentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeploymentRequest), arg0)
 }
 
-// GetDeploymentWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDeploymentWithContext(arg0 context.Context, arg1 *apigateway.GetDeploymentInput, arg2 ...request.Option) (*apigateway.Deployment, error) {
+// GetDeploymentWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDeploymentWithContext(arg0 aws.Context, arg1 *apigateway.GetDeploymentInput, arg2 ...request.Option) (*apigateway.Deployment, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2578,14 +2577,14 @@ func (m *MockAPIGatewayAPI) GetDeploymentWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetDeploymentWithContext indicates an expected call of GetDeploymentWithContext.
+// GetDeploymentWithContext indicates an expected call of GetDeploymentWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeploymentWithContext), varargs...)
 }
 
-// GetDeployments mocks base method.
+// GetDeployments mocks base method
 func (m *MockAPIGatewayAPI) GetDeployments(arg0 *apigateway.GetDeploymentsInput) (*apigateway.GetDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeployments", arg0)
@@ -2594,13 +2593,13 @@ func (m *MockAPIGatewayAPI) GetDeployments(arg0 *apigateway.GetDeploymentsInput)
 	return ret0, ret1
 }
 
-// GetDeployments indicates an expected call of GetDeployments.
+// GetDeployments indicates an expected call of GetDeployments
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeployments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeployments", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeployments), arg0)
 }
 
-// GetDeploymentsPages mocks base method.
+// GetDeploymentsPages mocks base method
 func (m *MockAPIGatewayAPI) GetDeploymentsPages(arg0 *apigateway.GetDeploymentsInput, arg1 func(*apigateway.GetDeploymentsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeploymentsPages", arg0, arg1)
@@ -2608,14 +2607,14 @@ func (m *MockAPIGatewayAPI) GetDeploymentsPages(arg0 *apigateway.GetDeploymentsI
 	return ret0
 }
 
-// GetDeploymentsPages indicates an expected call of GetDeploymentsPages.
+// GetDeploymentsPages indicates an expected call of GetDeploymentsPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeploymentsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentsPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeploymentsPages), arg0, arg1)
 }
 
-// GetDeploymentsPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDeploymentsPagesWithContext(arg0 context.Context, arg1 *apigateway.GetDeploymentsInput, arg2 func(*apigateway.GetDeploymentsOutput, bool) bool, arg3 ...request.Option) error {
+// GetDeploymentsPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDeploymentsPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetDeploymentsInput, arg2 func(*apigateway.GetDeploymentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2626,14 +2625,14 @@ func (m *MockAPIGatewayAPI) GetDeploymentsPagesWithContext(arg0 context.Context,
 	return ret0
 }
 
-// GetDeploymentsPagesWithContext indicates an expected call of GetDeploymentsPagesWithContext.
+// GetDeploymentsPagesWithContext indicates an expected call of GetDeploymentsPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeploymentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentsPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeploymentsPagesWithContext), varargs...)
 }
 
-// GetDeploymentsRequest mocks base method.
+// GetDeploymentsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDeploymentsRequest(arg0 *apigateway.GetDeploymentsInput) (*request.Request, *apigateway.GetDeploymentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeploymentsRequest", arg0)
@@ -2642,14 +2641,14 @@ func (m *MockAPIGatewayAPI) GetDeploymentsRequest(arg0 *apigateway.GetDeployment
 	return ret0, ret1
 }
 
-// GetDeploymentsRequest indicates an expected call of GetDeploymentsRequest.
+// GetDeploymentsRequest indicates an expected call of GetDeploymentsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeploymentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeploymentsRequest), arg0)
 }
 
-// GetDeploymentsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDeploymentsWithContext(arg0 context.Context, arg1 *apigateway.GetDeploymentsInput, arg2 ...request.Option) (*apigateway.GetDeploymentsOutput, error) {
+// GetDeploymentsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDeploymentsWithContext(arg0 aws.Context, arg1 *apigateway.GetDeploymentsInput, arg2 ...request.Option) (*apigateway.GetDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2661,14 +2660,14 @@ func (m *MockAPIGatewayAPI) GetDeploymentsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// GetDeploymentsWithContext indicates an expected call of GetDeploymentsWithContext.
+// GetDeploymentsWithContext indicates an expected call of GetDeploymentsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDeploymentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDeploymentsWithContext), varargs...)
 }
 
-// GetDocumentationPart mocks base method.
+// GetDocumentationPart mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationPart(arg0 *apigateway.GetDocumentationPartInput) (*apigateway.DocumentationPart, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationPart", arg0)
@@ -2677,13 +2676,13 @@ func (m *MockAPIGatewayAPI) GetDocumentationPart(arg0 *apigateway.GetDocumentati
 	return ret0, ret1
 }
 
-// GetDocumentationPart indicates an expected call of GetDocumentationPart.
+// GetDocumentationPart indicates an expected call of GetDocumentationPart
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationPart(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationPart", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationPart), arg0)
 }
 
-// GetDocumentationPartRequest mocks base method.
+// GetDocumentationPartRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationPartRequest(arg0 *apigateway.GetDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationPartRequest", arg0)
@@ -2692,14 +2691,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationPartRequest(arg0 *apigateway.GetDocu
 	return ret0, ret1
 }
 
-// GetDocumentationPartRequest indicates an expected call of GetDocumentationPartRequest.
+// GetDocumentationPartRequest indicates an expected call of GetDocumentationPartRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationPartRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationPartRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationPartRequest), arg0)
 }
 
-// GetDocumentationPartWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDocumentationPartWithContext(arg0 context.Context, arg1 *apigateway.GetDocumentationPartInput, arg2 ...request.Option) (*apigateway.DocumentationPart, error) {
+// GetDocumentationPartWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDocumentationPartWithContext(arg0 aws.Context, arg1 *apigateway.GetDocumentationPartInput, arg2 ...request.Option) (*apigateway.DocumentationPart, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2711,14 +2710,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationPartWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetDocumentationPartWithContext indicates an expected call of GetDocumentationPartWithContext.
+// GetDocumentationPartWithContext indicates an expected call of GetDocumentationPartWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationPartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationPartWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationPartWithContext), varargs...)
 }
 
-// GetDocumentationParts mocks base method.
+// GetDocumentationParts mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationParts(arg0 *apigateway.GetDocumentationPartsInput) (*apigateway.GetDocumentationPartsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationParts", arg0)
@@ -2727,13 +2726,13 @@ func (m *MockAPIGatewayAPI) GetDocumentationParts(arg0 *apigateway.GetDocumentat
 	return ret0, ret1
 }
 
-// GetDocumentationParts indicates an expected call of GetDocumentationParts.
+// GetDocumentationParts indicates an expected call of GetDocumentationParts
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationParts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationParts", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationParts), arg0)
 }
 
-// GetDocumentationPartsRequest mocks base method.
+// GetDocumentationPartsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationPartsRequest(arg0 *apigateway.GetDocumentationPartsInput) (*request.Request, *apigateway.GetDocumentationPartsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationPartsRequest", arg0)
@@ -2742,14 +2741,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationPartsRequest(arg0 *apigateway.GetDoc
 	return ret0, ret1
 }
 
-// GetDocumentationPartsRequest indicates an expected call of GetDocumentationPartsRequest.
+// GetDocumentationPartsRequest indicates an expected call of GetDocumentationPartsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationPartsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationPartsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationPartsRequest), arg0)
 }
 
-// GetDocumentationPartsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDocumentationPartsWithContext(arg0 context.Context, arg1 *apigateway.GetDocumentationPartsInput, arg2 ...request.Option) (*apigateway.GetDocumentationPartsOutput, error) {
+// GetDocumentationPartsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDocumentationPartsWithContext(arg0 aws.Context, arg1 *apigateway.GetDocumentationPartsInput, arg2 ...request.Option) (*apigateway.GetDocumentationPartsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2761,14 +2760,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationPartsWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// GetDocumentationPartsWithContext indicates an expected call of GetDocumentationPartsWithContext.
+// GetDocumentationPartsWithContext indicates an expected call of GetDocumentationPartsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationPartsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationPartsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationPartsWithContext), varargs...)
 }
 
-// GetDocumentationVersion mocks base method.
+// GetDocumentationVersion mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationVersion(arg0 *apigateway.GetDocumentationVersionInput) (*apigateway.DocumentationVersion, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationVersion", arg0)
@@ -2777,13 +2776,13 @@ func (m *MockAPIGatewayAPI) GetDocumentationVersion(arg0 *apigateway.GetDocument
 	return ret0, ret1
 }
 
-// GetDocumentationVersion indicates an expected call of GetDocumentationVersion.
+// GetDocumentationVersion indicates an expected call of GetDocumentationVersion
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationVersion", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationVersion), arg0)
 }
 
-// GetDocumentationVersionRequest mocks base method.
+// GetDocumentationVersionRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationVersionRequest(arg0 *apigateway.GetDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationVersionRequest", arg0)
@@ -2792,14 +2791,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationVersionRequest(arg0 *apigateway.GetD
 	return ret0, ret1
 }
 
-// GetDocumentationVersionRequest indicates an expected call of GetDocumentationVersionRequest.
+// GetDocumentationVersionRequest indicates an expected call of GetDocumentationVersionRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationVersionRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationVersionRequest), arg0)
 }
 
-// GetDocumentationVersionWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDocumentationVersionWithContext(arg0 context.Context, arg1 *apigateway.GetDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DocumentationVersion, error) {
+// GetDocumentationVersionWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDocumentationVersionWithContext(arg0 aws.Context, arg1 *apigateway.GetDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DocumentationVersion, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2811,14 +2810,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationVersionWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// GetDocumentationVersionWithContext indicates an expected call of GetDocumentationVersionWithContext.
+// GetDocumentationVersionWithContext indicates an expected call of GetDocumentationVersionWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationVersionWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationVersionWithContext), varargs...)
 }
 
-// GetDocumentationVersions mocks base method.
+// GetDocumentationVersions mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationVersions(arg0 *apigateway.GetDocumentationVersionsInput) (*apigateway.GetDocumentationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationVersions", arg0)
@@ -2827,13 +2826,13 @@ func (m *MockAPIGatewayAPI) GetDocumentationVersions(arg0 *apigateway.GetDocumen
 	return ret0, ret1
 }
 
-// GetDocumentationVersions indicates an expected call of GetDocumentationVersions.
+// GetDocumentationVersions indicates an expected call of GetDocumentationVersions
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationVersions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationVersions", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationVersions), arg0)
 }
 
-// GetDocumentationVersionsRequest mocks base method.
+// GetDocumentationVersionsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDocumentationVersionsRequest(arg0 *apigateway.GetDocumentationVersionsInput) (*request.Request, *apigateway.GetDocumentationVersionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDocumentationVersionsRequest", arg0)
@@ -2842,14 +2841,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationVersionsRequest(arg0 *apigateway.Get
 	return ret0, ret1
 }
 
-// GetDocumentationVersionsRequest indicates an expected call of GetDocumentationVersionsRequest.
+// GetDocumentationVersionsRequest indicates an expected call of GetDocumentationVersionsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationVersionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationVersionsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationVersionsRequest), arg0)
 }
 
-// GetDocumentationVersionsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDocumentationVersionsWithContext(arg0 context.Context, arg1 *apigateway.GetDocumentationVersionsInput, arg2 ...request.Option) (*apigateway.GetDocumentationVersionsOutput, error) {
+// GetDocumentationVersionsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDocumentationVersionsWithContext(arg0 aws.Context, arg1 *apigateway.GetDocumentationVersionsInput, arg2 ...request.Option) (*apigateway.GetDocumentationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2861,14 +2860,14 @@ func (m *MockAPIGatewayAPI) GetDocumentationVersionsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// GetDocumentationVersionsWithContext indicates an expected call of GetDocumentationVersionsWithContext.
+// GetDocumentationVersionsWithContext indicates an expected call of GetDocumentationVersionsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDocumentationVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDocumentationVersionsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDocumentationVersionsWithContext), varargs...)
 }
 
-// GetDomainName mocks base method.
+// GetDomainName mocks base method
 func (m *MockAPIGatewayAPI) GetDomainName(arg0 *apigateway.GetDomainNameInput) (*apigateway.DomainName, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainName", arg0)
@@ -2877,13 +2876,13 @@ func (m *MockAPIGatewayAPI) GetDomainName(arg0 *apigateway.GetDomainNameInput) (
 	return ret0, ret1
 }
 
-// GetDomainName indicates an expected call of GetDomainName.
+// GetDomainName indicates an expected call of GetDomainName
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainName(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainName", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainName), arg0)
 }
 
-// GetDomainNameRequest mocks base method.
+// GetDomainNameRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDomainNameRequest(arg0 *apigateway.GetDomainNameInput) (*request.Request, *apigateway.DomainName) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainNameRequest", arg0)
@@ -2892,14 +2891,14 @@ func (m *MockAPIGatewayAPI) GetDomainNameRequest(arg0 *apigateway.GetDomainNameI
 	return ret0, ret1
 }
 
-// GetDomainNameRequest indicates an expected call of GetDomainNameRequest.
+// GetDomainNameRequest indicates an expected call of GetDomainNameRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNameRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNameRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNameRequest), arg0)
 }
 
-// GetDomainNameWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDomainNameWithContext(arg0 context.Context, arg1 *apigateway.GetDomainNameInput, arg2 ...request.Option) (*apigateway.DomainName, error) {
+// GetDomainNameWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDomainNameWithContext(arg0 aws.Context, arg1 *apigateway.GetDomainNameInput, arg2 ...request.Option) (*apigateway.DomainName, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2911,14 +2910,14 @@ func (m *MockAPIGatewayAPI) GetDomainNameWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetDomainNameWithContext indicates an expected call of GetDomainNameWithContext.
+// GetDomainNameWithContext indicates an expected call of GetDomainNameWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNameWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNameWithContext), varargs...)
 }
 
-// GetDomainNames mocks base method.
+// GetDomainNames mocks base method
 func (m *MockAPIGatewayAPI) GetDomainNames(arg0 *apigateway.GetDomainNamesInput) (*apigateway.GetDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainNames", arg0)
@@ -2927,13 +2926,13 @@ func (m *MockAPIGatewayAPI) GetDomainNames(arg0 *apigateway.GetDomainNamesInput)
 	return ret0, ret1
 }
 
-// GetDomainNames indicates an expected call of GetDomainNames.
+// GetDomainNames indicates an expected call of GetDomainNames
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNames(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNames", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNames), arg0)
 }
 
-// GetDomainNamesPages mocks base method.
+// GetDomainNamesPages mocks base method
 func (m *MockAPIGatewayAPI) GetDomainNamesPages(arg0 *apigateway.GetDomainNamesInput, arg1 func(*apigateway.GetDomainNamesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainNamesPages", arg0, arg1)
@@ -2941,14 +2940,14 @@ func (m *MockAPIGatewayAPI) GetDomainNamesPages(arg0 *apigateway.GetDomainNamesI
 	return ret0
 }
 
-// GetDomainNamesPages indicates an expected call of GetDomainNamesPages.
+// GetDomainNamesPages indicates an expected call of GetDomainNamesPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNamesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNamesPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNamesPages), arg0, arg1)
 }
 
-// GetDomainNamesPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDomainNamesPagesWithContext(arg0 context.Context, arg1 *apigateway.GetDomainNamesInput, arg2 func(*apigateway.GetDomainNamesOutput, bool) bool, arg3 ...request.Option) error {
+// GetDomainNamesPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDomainNamesPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetDomainNamesInput, arg2 func(*apigateway.GetDomainNamesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2959,14 +2958,14 @@ func (m *MockAPIGatewayAPI) GetDomainNamesPagesWithContext(arg0 context.Context,
 	return ret0
 }
 
-// GetDomainNamesPagesWithContext indicates an expected call of GetDomainNamesPagesWithContext.
+// GetDomainNamesPagesWithContext indicates an expected call of GetDomainNamesPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNamesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNamesPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNamesPagesWithContext), varargs...)
 }
 
-// GetDomainNamesRequest mocks base method.
+// GetDomainNamesRequest mocks base method
 func (m *MockAPIGatewayAPI) GetDomainNamesRequest(arg0 *apigateway.GetDomainNamesInput) (*request.Request, *apigateway.GetDomainNamesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainNamesRequest", arg0)
@@ -2975,14 +2974,14 @@ func (m *MockAPIGatewayAPI) GetDomainNamesRequest(arg0 *apigateway.GetDomainName
 	return ret0, ret1
 }
 
-// GetDomainNamesRequest indicates an expected call of GetDomainNamesRequest.
+// GetDomainNamesRequest indicates an expected call of GetDomainNamesRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNamesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNamesRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNamesRequest), arg0)
 }
 
-// GetDomainNamesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetDomainNamesWithContext(arg0 context.Context, arg1 *apigateway.GetDomainNamesInput, arg2 ...request.Option) (*apigateway.GetDomainNamesOutput, error) {
+// GetDomainNamesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetDomainNamesWithContext(arg0 aws.Context, arg1 *apigateway.GetDomainNamesInput, arg2 ...request.Option) (*apigateway.GetDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2994,14 +2993,14 @@ func (m *MockAPIGatewayAPI) GetDomainNamesWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// GetDomainNamesWithContext indicates an expected call of GetDomainNamesWithContext.
+// GetDomainNamesWithContext indicates an expected call of GetDomainNamesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetDomainNamesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNamesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetDomainNamesWithContext), varargs...)
 }
 
-// GetExport mocks base method.
+// GetExport mocks base method
 func (m *MockAPIGatewayAPI) GetExport(arg0 *apigateway.GetExportInput) (*apigateway.GetExportOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetExport", arg0)
@@ -3010,13 +3009,13 @@ func (m *MockAPIGatewayAPI) GetExport(arg0 *apigateway.GetExportInput) (*apigate
 	return ret0, ret1
 }
 
-// GetExport indicates an expected call of GetExport.
+// GetExport indicates an expected call of GetExport
 func (mr *MockAPIGatewayAPIMockRecorder) GetExport(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExport", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetExport), arg0)
 }
 
-// GetExportRequest mocks base method.
+// GetExportRequest mocks base method
 func (m *MockAPIGatewayAPI) GetExportRequest(arg0 *apigateway.GetExportInput) (*request.Request, *apigateway.GetExportOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetExportRequest", arg0)
@@ -3025,14 +3024,14 @@ func (m *MockAPIGatewayAPI) GetExportRequest(arg0 *apigateway.GetExportInput) (*
 	return ret0, ret1
 }
 
-// GetExportRequest indicates an expected call of GetExportRequest.
+// GetExportRequest indicates an expected call of GetExportRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetExportRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExportRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetExportRequest), arg0)
 }
 
-// GetExportWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetExportWithContext(arg0 context.Context, arg1 *apigateway.GetExportInput, arg2 ...request.Option) (*apigateway.GetExportOutput, error) {
+// GetExportWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetExportWithContext(arg0 aws.Context, arg1 *apigateway.GetExportInput, arg2 ...request.Option) (*apigateway.GetExportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3044,14 +3043,14 @@ func (m *MockAPIGatewayAPI) GetExportWithContext(arg0 context.Context, arg1 *api
 	return ret0, ret1
 }
 
-// GetExportWithContext indicates an expected call of GetExportWithContext.
+// GetExportWithContext indicates an expected call of GetExportWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExportWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetExportWithContext), varargs...)
 }
 
-// GetGatewayResponse mocks base method.
+// GetGatewayResponse mocks base method
 func (m *MockAPIGatewayAPI) GetGatewayResponse(arg0 *apigateway.GetGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGatewayResponse", arg0)
@@ -3060,13 +3059,13 @@ func (m *MockAPIGatewayAPI) GetGatewayResponse(arg0 *apigateway.GetGatewayRespon
 	return ret0, ret1
 }
 
-// GetGatewayResponse indicates an expected call of GetGatewayResponse.
+// GetGatewayResponse indicates an expected call of GetGatewayResponse
 func (mr *MockAPIGatewayAPIMockRecorder) GetGatewayResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetGatewayResponse), arg0)
 }
 
-// GetGatewayResponseRequest mocks base method.
+// GetGatewayResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) GetGatewayResponseRequest(arg0 *apigateway.GetGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGatewayResponseRequest", arg0)
@@ -3075,14 +3074,14 @@ func (m *MockAPIGatewayAPI) GetGatewayResponseRequest(arg0 *apigateway.GetGatewa
 	return ret0, ret1
 }
 
-// GetGatewayResponseRequest indicates an expected call of GetGatewayResponseRequest.
+// GetGatewayResponseRequest indicates an expected call of GetGatewayResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetGatewayResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetGatewayResponseRequest), arg0)
 }
 
-// GetGatewayResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetGatewayResponseWithContext(arg0 context.Context, arg1 *apigateway.GetGatewayResponseInput, arg2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
+// GetGatewayResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetGatewayResponseWithContext(arg0 aws.Context, arg1 *apigateway.GetGatewayResponseInput, arg2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3094,14 +3093,14 @@ func (m *MockAPIGatewayAPI) GetGatewayResponseWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// GetGatewayResponseWithContext indicates an expected call of GetGatewayResponseWithContext.
+// GetGatewayResponseWithContext indicates an expected call of GetGatewayResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetGatewayResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetGatewayResponseWithContext), varargs...)
 }
 
-// GetGatewayResponses mocks base method.
+// GetGatewayResponses mocks base method
 func (m *MockAPIGatewayAPI) GetGatewayResponses(arg0 *apigateway.GetGatewayResponsesInput) (*apigateway.GetGatewayResponsesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGatewayResponses", arg0)
@@ -3110,13 +3109,13 @@ func (m *MockAPIGatewayAPI) GetGatewayResponses(arg0 *apigateway.GetGatewayRespo
 	return ret0, ret1
 }
 
-// GetGatewayResponses indicates an expected call of GetGatewayResponses.
+// GetGatewayResponses indicates an expected call of GetGatewayResponses
 func (mr *MockAPIGatewayAPIMockRecorder) GetGatewayResponses(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayResponses", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetGatewayResponses), arg0)
 }
 
-// GetGatewayResponsesRequest mocks base method.
+// GetGatewayResponsesRequest mocks base method
 func (m *MockAPIGatewayAPI) GetGatewayResponsesRequest(arg0 *apigateway.GetGatewayResponsesInput) (*request.Request, *apigateway.GetGatewayResponsesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetGatewayResponsesRequest", arg0)
@@ -3125,14 +3124,14 @@ func (m *MockAPIGatewayAPI) GetGatewayResponsesRequest(arg0 *apigateway.GetGatew
 	return ret0, ret1
 }
 
-// GetGatewayResponsesRequest indicates an expected call of GetGatewayResponsesRequest.
+// GetGatewayResponsesRequest indicates an expected call of GetGatewayResponsesRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetGatewayResponsesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayResponsesRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetGatewayResponsesRequest), arg0)
 }
 
-// GetGatewayResponsesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetGatewayResponsesWithContext(arg0 context.Context, arg1 *apigateway.GetGatewayResponsesInput, arg2 ...request.Option) (*apigateway.GetGatewayResponsesOutput, error) {
+// GetGatewayResponsesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetGatewayResponsesWithContext(arg0 aws.Context, arg1 *apigateway.GetGatewayResponsesInput, arg2 ...request.Option) (*apigateway.GetGatewayResponsesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3144,14 +3143,14 @@ func (m *MockAPIGatewayAPI) GetGatewayResponsesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetGatewayResponsesWithContext indicates an expected call of GetGatewayResponsesWithContext.
+// GetGatewayResponsesWithContext indicates an expected call of GetGatewayResponsesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetGatewayResponsesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayResponsesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetGatewayResponsesWithContext), varargs...)
 }
 
-// GetIntegration mocks base method.
+// GetIntegration mocks base method
 func (m *MockAPIGatewayAPI) GetIntegration(arg0 *apigateway.GetIntegrationInput) (*apigateway.Integration, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIntegration", arg0)
@@ -3160,13 +3159,13 @@ func (m *MockAPIGatewayAPI) GetIntegration(arg0 *apigateway.GetIntegrationInput)
 	return ret0, ret1
 }
 
-// GetIntegration indicates an expected call of GetIntegration.
+// GetIntegration indicates an expected call of GetIntegration
 func (mr *MockAPIGatewayAPIMockRecorder) GetIntegration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegration", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetIntegration), arg0)
 }
 
-// GetIntegrationRequest mocks base method.
+// GetIntegrationRequest mocks base method
 func (m *MockAPIGatewayAPI) GetIntegrationRequest(arg0 *apigateway.GetIntegrationInput) (*request.Request, *apigateway.Integration) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIntegrationRequest", arg0)
@@ -3175,13 +3174,13 @@ func (m *MockAPIGatewayAPI) GetIntegrationRequest(arg0 *apigateway.GetIntegratio
 	return ret0, ret1
 }
 
-// GetIntegrationRequest indicates an expected call of GetIntegrationRequest.
+// GetIntegrationRequest indicates an expected call of GetIntegrationRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetIntegrationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegrationRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetIntegrationRequest), arg0)
 }
 
-// GetIntegrationResponse mocks base method.
+// GetIntegrationResponse mocks base method
 func (m *MockAPIGatewayAPI) GetIntegrationResponse(arg0 *apigateway.GetIntegrationResponseInput) (*apigateway.IntegrationResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIntegrationResponse", arg0)
@@ -3190,13 +3189,13 @@ func (m *MockAPIGatewayAPI) GetIntegrationResponse(arg0 *apigateway.GetIntegrati
 	return ret0, ret1
 }
 
-// GetIntegrationResponse indicates an expected call of GetIntegrationResponse.
+// GetIntegrationResponse indicates an expected call of GetIntegrationResponse
 func (mr *MockAPIGatewayAPIMockRecorder) GetIntegrationResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegrationResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetIntegrationResponse), arg0)
 }
 
-// GetIntegrationResponseRequest mocks base method.
+// GetIntegrationResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) GetIntegrationResponseRequest(arg0 *apigateway.GetIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetIntegrationResponseRequest", arg0)
@@ -3205,14 +3204,14 @@ func (m *MockAPIGatewayAPI) GetIntegrationResponseRequest(arg0 *apigateway.GetIn
 	return ret0, ret1
 }
 
-// GetIntegrationResponseRequest indicates an expected call of GetIntegrationResponseRequest.
+// GetIntegrationResponseRequest indicates an expected call of GetIntegrationResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetIntegrationResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegrationResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetIntegrationResponseRequest), arg0)
 }
 
-// GetIntegrationResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetIntegrationResponseWithContext(arg0 context.Context, arg1 *apigateway.GetIntegrationResponseInput, arg2 ...request.Option) (*apigateway.IntegrationResponse, error) {
+// GetIntegrationResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigateway.GetIntegrationResponseInput, arg2 ...request.Option) (*apigateway.IntegrationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3224,15 +3223,15 @@ func (m *MockAPIGatewayAPI) GetIntegrationResponseWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// GetIntegrationResponseWithContext indicates an expected call of GetIntegrationResponseWithContext.
+// GetIntegrationResponseWithContext indicates an expected call of GetIntegrationResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetIntegrationResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegrationResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetIntegrationResponseWithContext), varargs...)
 }
 
-// GetIntegrationWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetIntegrationWithContext(arg0 context.Context, arg1 *apigateway.GetIntegrationInput, arg2 ...request.Option) (*apigateway.Integration, error) {
+// GetIntegrationWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetIntegrationWithContext(arg0 aws.Context, arg1 *apigateway.GetIntegrationInput, arg2 ...request.Option) (*apigateway.Integration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3244,14 +3243,14 @@ func (m *MockAPIGatewayAPI) GetIntegrationWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// GetIntegrationWithContext indicates an expected call of GetIntegrationWithContext.
+// GetIntegrationWithContext indicates an expected call of GetIntegrationWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegrationWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetIntegrationWithContext), varargs...)
 }
 
-// GetMethod mocks base method.
+// GetMethod mocks base method
 func (m *MockAPIGatewayAPI) GetMethod(arg0 *apigateway.GetMethodInput) (*apigateway.Method, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMethod", arg0)
@@ -3260,13 +3259,13 @@ func (m *MockAPIGatewayAPI) GetMethod(arg0 *apigateway.GetMethodInput) (*apigate
 	return ret0, ret1
 }
 
-// GetMethod indicates an expected call of GetMethod.
+// GetMethod indicates an expected call of GetMethod
 func (mr *MockAPIGatewayAPIMockRecorder) GetMethod(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMethod", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetMethod), arg0)
 }
 
-// GetMethodRequest mocks base method.
+// GetMethodRequest mocks base method
 func (m *MockAPIGatewayAPI) GetMethodRequest(arg0 *apigateway.GetMethodInput) (*request.Request, *apigateway.Method) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMethodRequest", arg0)
@@ -3275,13 +3274,13 @@ func (m *MockAPIGatewayAPI) GetMethodRequest(arg0 *apigateway.GetMethodInput) (*
 	return ret0, ret1
 }
 
-// GetMethodRequest indicates an expected call of GetMethodRequest.
+// GetMethodRequest indicates an expected call of GetMethodRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetMethodRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMethodRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetMethodRequest), arg0)
 }
 
-// GetMethodResponse mocks base method.
+// GetMethodResponse mocks base method
 func (m *MockAPIGatewayAPI) GetMethodResponse(arg0 *apigateway.GetMethodResponseInput) (*apigateway.MethodResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMethodResponse", arg0)
@@ -3290,13 +3289,13 @@ func (m *MockAPIGatewayAPI) GetMethodResponse(arg0 *apigateway.GetMethodResponse
 	return ret0, ret1
 }
 
-// GetMethodResponse indicates an expected call of GetMethodResponse.
+// GetMethodResponse indicates an expected call of GetMethodResponse
 func (mr *MockAPIGatewayAPIMockRecorder) GetMethodResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMethodResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetMethodResponse), arg0)
 }
 
-// GetMethodResponseRequest mocks base method.
+// GetMethodResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) GetMethodResponseRequest(arg0 *apigateway.GetMethodResponseInput) (*request.Request, *apigateway.MethodResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetMethodResponseRequest", arg0)
@@ -3305,14 +3304,14 @@ func (m *MockAPIGatewayAPI) GetMethodResponseRequest(arg0 *apigateway.GetMethodR
 	return ret0, ret1
 }
 
-// GetMethodResponseRequest indicates an expected call of GetMethodResponseRequest.
+// GetMethodResponseRequest indicates an expected call of GetMethodResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetMethodResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMethodResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetMethodResponseRequest), arg0)
 }
 
-// GetMethodResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetMethodResponseWithContext(arg0 context.Context, arg1 *apigateway.GetMethodResponseInput, arg2 ...request.Option) (*apigateway.MethodResponse, error) {
+// GetMethodResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetMethodResponseWithContext(arg0 aws.Context, arg1 *apigateway.GetMethodResponseInput, arg2 ...request.Option) (*apigateway.MethodResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3324,15 +3323,15 @@ func (m *MockAPIGatewayAPI) GetMethodResponseWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// GetMethodResponseWithContext indicates an expected call of GetMethodResponseWithContext.
+// GetMethodResponseWithContext indicates an expected call of GetMethodResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetMethodResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMethodResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetMethodResponseWithContext), varargs...)
 }
 
-// GetMethodWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetMethodWithContext(arg0 context.Context, arg1 *apigateway.GetMethodInput, arg2 ...request.Option) (*apigateway.Method, error) {
+// GetMethodWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetMethodWithContext(arg0 aws.Context, arg1 *apigateway.GetMethodInput, arg2 ...request.Option) (*apigateway.Method, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3344,14 +3343,14 @@ func (m *MockAPIGatewayAPI) GetMethodWithContext(arg0 context.Context, arg1 *api
 	return ret0, ret1
 }
 
-// GetMethodWithContext indicates an expected call of GetMethodWithContext.
+// GetMethodWithContext indicates an expected call of GetMethodWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMethodWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetMethodWithContext), varargs...)
 }
 
-// GetModel mocks base method.
+// GetModel mocks base method
 func (m *MockAPIGatewayAPI) GetModel(arg0 *apigateway.GetModelInput) (*apigateway.Model, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModel", arg0)
@@ -3360,13 +3359,13 @@ func (m *MockAPIGatewayAPI) GetModel(arg0 *apigateway.GetModelInput) (*apigatewa
 	return ret0, ret1
 }
 
-// GetModel indicates an expected call of GetModel.
+// GetModel indicates an expected call of GetModel
 func (mr *MockAPIGatewayAPIMockRecorder) GetModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModel", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModel), arg0)
 }
 
-// GetModelRequest mocks base method.
+// GetModelRequest mocks base method
 func (m *MockAPIGatewayAPI) GetModelRequest(arg0 *apigateway.GetModelInput) (*request.Request, *apigateway.Model) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModelRequest", arg0)
@@ -3375,13 +3374,13 @@ func (m *MockAPIGatewayAPI) GetModelRequest(arg0 *apigateway.GetModelInput) (*re
 	return ret0, ret1
 }
 
-// GetModelRequest indicates an expected call of GetModelRequest.
+// GetModelRequest indicates an expected call of GetModelRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelRequest), arg0)
 }
 
-// GetModelTemplate mocks base method.
+// GetModelTemplate mocks base method
 func (m *MockAPIGatewayAPI) GetModelTemplate(arg0 *apigateway.GetModelTemplateInput) (*apigateway.GetModelTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModelTemplate", arg0)
@@ -3390,13 +3389,13 @@ func (m *MockAPIGatewayAPI) GetModelTemplate(arg0 *apigateway.GetModelTemplateIn
 	return ret0, ret1
 }
 
-// GetModelTemplate indicates an expected call of GetModelTemplate.
+// GetModelTemplate indicates an expected call of GetModelTemplate
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelTemplate", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelTemplate), arg0)
 }
 
-// GetModelTemplateRequest mocks base method.
+// GetModelTemplateRequest mocks base method
 func (m *MockAPIGatewayAPI) GetModelTemplateRequest(arg0 *apigateway.GetModelTemplateInput) (*request.Request, *apigateway.GetModelTemplateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModelTemplateRequest", arg0)
@@ -3405,14 +3404,14 @@ func (m *MockAPIGatewayAPI) GetModelTemplateRequest(arg0 *apigateway.GetModelTem
 	return ret0, ret1
 }
 
-// GetModelTemplateRequest indicates an expected call of GetModelTemplateRequest.
+// GetModelTemplateRequest indicates an expected call of GetModelTemplateRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelTemplateRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelTemplateRequest), arg0)
 }
 
-// GetModelTemplateWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetModelTemplateWithContext(arg0 context.Context, arg1 *apigateway.GetModelTemplateInput, arg2 ...request.Option) (*apigateway.GetModelTemplateOutput, error) {
+// GetModelTemplateWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetModelTemplateWithContext(arg0 aws.Context, arg1 *apigateway.GetModelTemplateInput, arg2 ...request.Option) (*apigateway.GetModelTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3424,15 +3423,15 @@ func (m *MockAPIGatewayAPI) GetModelTemplateWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetModelTemplateWithContext indicates an expected call of GetModelTemplateWithContext.
+// GetModelTemplateWithContext indicates an expected call of GetModelTemplateWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelTemplateWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelTemplateWithContext), varargs...)
 }
 
-// GetModelWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetModelWithContext(arg0 context.Context, arg1 *apigateway.GetModelInput, arg2 ...request.Option) (*apigateway.Model, error) {
+// GetModelWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetModelWithContext(arg0 aws.Context, arg1 *apigateway.GetModelInput, arg2 ...request.Option) (*apigateway.Model, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3444,14 +3443,14 @@ func (m *MockAPIGatewayAPI) GetModelWithContext(arg0 context.Context, arg1 *apig
 	return ret0, ret1
 }
 
-// GetModelWithContext indicates an expected call of GetModelWithContext.
+// GetModelWithContext indicates an expected call of GetModelWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelWithContext), varargs...)
 }
 
-// GetModels mocks base method.
+// GetModels mocks base method
 func (m *MockAPIGatewayAPI) GetModels(arg0 *apigateway.GetModelsInput) (*apigateway.GetModelsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModels", arg0)
@@ -3460,13 +3459,13 @@ func (m *MockAPIGatewayAPI) GetModels(arg0 *apigateway.GetModelsInput) (*apigate
 	return ret0, ret1
 }
 
-// GetModels indicates an expected call of GetModels.
+// GetModels indicates an expected call of GetModels
 func (mr *MockAPIGatewayAPIMockRecorder) GetModels(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModels", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModels), arg0)
 }
 
-// GetModelsPages mocks base method.
+// GetModelsPages mocks base method
 func (m *MockAPIGatewayAPI) GetModelsPages(arg0 *apigateway.GetModelsInput, arg1 func(*apigateway.GetModelsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModelsPages", arg0, arg1)
@@ -3474,14 +3473,14 @@ func (m *MockAPIGatewayAPI) GetModelsPages(arg0 *apigateway.GetModelsInput, arg1
 	return ret0
 }
 
-// GetModelsPages indicates an expected call of GetModelsPages.
+// GetModelsPages indicates an expected call of GetModelsPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelsPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelsPages), arg0, arg1)
 }
 
-// GetModelsPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetModelsPagesWithContext(arg0 context.Context, arg1 *apigateway.GetModelsInput, arg2 func(*apigateway.GetModelsOutput, bool) bool, arg3 ...request.Option) error {
+// GetModelsPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetModelsPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetModelsInput, arg2 func(*apigateway.GetModelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3492,14 +3491,14 @@ func (m *MockAPIGatewayAPI) GetModelsPagesWithContext(arg0 context.Context, arg1
 	return ret0
 }
 
-// GetModelsPagesWithContext indicates an expected call of GetModelsPagesWithContext.
+// GetModelsPagesWithContext indicates an expected call of GetModelsPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelsPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelsPagesWithContext), varargs...)
 }
 
-// GetModelsRequest mocks base method.
+// GetModelsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetModelsRequest(arg0 *apigateway.GetModelsInput) (*request.Request, *apigateway.GetModelsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetModelsRequest", arg0)
@@ -3508,14 +3507,14 @@ func (m *MockAPIGatewayAPI) GetModelsRequest(arg0 *apigateway.GetModelsInput) (*
 	return ret0, ret1
 }
 
-// GetModelsRequest indicates an expected call of GetModelsRequest.
+// GetModelsRequest indicates an expected call of GetModelsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelsRequest), arg0)
 }
 
-// GetModelsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetModelsWithContext(arg0 context.Context, arg1 *apigateway.GetModelsInput, arg2 ...request.Option) (*apigateway.GetModelsOutput, error) {
+// GetModelsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetModelsWithContext(arg0 aws.Context, arg1 *apigateway.GetModelsInput, arg2 ...request.Option) (*apigateway.GetModelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3527,14 +3526,14 @@ func (m *MockAPIGatewayAPI) GetModelsWithContext(arg0 context.Context, arg1 *api
 	return ret0, ret1
 }
 
-// GetModelsWithContext indicates an expected call of GetModelsWithContext.
+// GetModelsWithContext indicates an expected call of GetModelsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetModelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetModelsWithContext), varargs...)
 }
 
-// GetRequestValidator mocks base method.
+// GetRequestValidator mocks base method
 func (m *MockAPIGatewayAPI) GetRequestValidator(arg0 *apigateway.GetRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRequestValidator", arg0)
@@ -3543,13 +3542,13 @@ func (m *MockAPIGatewayAPI) GetRequestValidator(arg0 *apigateway.GetRequestValid
 	return ret0, ret1
 }
 
-// GetRequestValidator indicates an expected call of GetRequestValidator.
+// GetRequestValidator indicates an expected call of GetRequestValidator
 func (mr *MockAPIGatewayAPIMockRecorder) GetRequestValidator(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRequestValidator", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRequestValidator), arg0)
 }
 
-// GetRequestValidatorRequest mocks base method.
+// GetRequestValidatorRequest mocks base method
 func (m *MockAPIGatewayAPI) GetRequestValidatorRequest(arg0 *apigateway.GetRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRequestValidatorRequest", arg0)
@@ -3558,14 +3557,14 @@ func (m *MockAPIGatewayAPI) GetRequestValidatorRequest(arg0 *apigateway.GetReque
 	return ret0, ret1
 }
 
-// GetRequestValidatorRequest indicates an expected call of GetRequestValidatorRequest.
+// GetRequestValidatorRequest indicates an expected call of GetRequestValidatorRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetRequestValidatorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRequestValidatorRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRequestValidatorRequest), arg0)
 }
 
-// GetRequestValidatorWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetRequestValidatorWithContext(arg0 context.Context, arg1 *apigateway.GetRequestValidatorInput, arg2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
+// GetRequestValidatorWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetRequestValidatorWithContext(arg0 aws.Context, arg1 *apigateway.GetRequestValidatorInput, arg2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3577,14 +3576,14 @@ func (m *MockAPIGatewayAPI) GetRequestValidatorWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetRequestValidatorWithContext indicates an expected call of GetRequestValidatorWithContext.
+// GetRequestValidatorWithContext indicates an expected call of GetRequestValidatorWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetRequestValidatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRequestValidatorWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRequestValidatorWithContext), varargs...)
 }
 
-// GetRequestValidators mocks base method.
+// GetRequestValidators mocks base method
 func (m *MockAPIGatewayAPI) GetRequestValidators(arg0 *apigateway.GetRequestValidatorsInput) (*apigateway.GetRequestValidatorsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRequestValidators", arg0)
@@ -3593,13 +3592,13 @@ func (m *MockAPIGatewayAPI) GetRequestValidators(arg0 *apigateway.GetRequestVali
 	return ret0, ret1
 }
 
-// GetRequestValidators indicates an expected call of GetRequestValidators.
+// GetRequestValidators indicates an expected call of GetRequestValidators
 func (mr *MockAPIGatewayAPIMockRecorder) GetRequestValidators(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRequestValidators", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRequestValidators), arg0)
 }
 
-// GetRequestValidatorsRequest mocks base method.
+// GetRequestValidatorsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetRequestValidatorsRequest(arg0 *apigateway.GetRequestValidatorsInput) (*request.Request, *apigateway.GetRequestValidatorsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRequestValidatorsRequest", arg0)
@@ -3608,14 +3607,14 @@ func (m *MockAPIGatewayAPI) GetRequestValidatorsRequest(arg0 *apigateway.GetRequ
 	return ret0, ret1
 }
 
-// GetRequestValidatorsRequest indicates an expected call of GetRequestValidatorsRequest.
+// GetRequestValidatorsRequest indicates an expected call of GetRequestValidatorsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetRequestValidatorsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRequestValidatorsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRequestValidatorsRequest), arg0)
 }
 
-// GetRequestValidatorsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetRequestValidatorsWithContext(arg0 context.Context, arg1 *apigateway.GetRequestValidatorsInput, arg2 ...request.Option) (*apigateway.GetRequestValidatorsOutput, error) {
+// GetRequestValidatorsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetRequestValidatorsWithContext(arg0 aws.Context, arg1 *apigateway.GetRequestValidatorsInput, arg2 ...request.Option) (*apigateway.GetRequestValidatorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3627,14 +3626,14 @@ func (m *MockAPIGatewayAPI) GetRequestValidatorsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetRequestValidatorsWithContext indicates an expected call of GetRequestValidatorsWithContext.
+// GetRequestValidatorsWithContext indicates an expected call of GetRequestValidatorsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetRequestValidatorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRequestValidatorsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRequestValidatorsWithContext), varargs...)
 }
 
-// GetResource mocks base method.
+// GetResource mocks base method
 func (m *MockAPIGatewayAPI) GetResource(arg0 *apigateway.GetResourceInput) (*apigateway.Resource, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResource", arg0)
@@ -3643,13 +3642,13 @@ func (m *MockAPIGatewayAPI) GetResource(arg0 *apigateway.GetResourceInput) (*api
 	return ret0, ret1
 }
 
-// GetResource indicates an expected call of GetResource.
+// GetResource indicates an expected call of GetResource
 func (mr *MockAPIGatewayAPIMockRecorder) GetResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResource", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResource), arg0)
 }
 
-// GetResourceRequest mocks base method.
+// GetResourceRequest mocks base method
 func (m *MockAPIGatewayAPI) GetResourceRequest(arg0 *apigateway.GetResourceInput) (*request.Request, *apigateway.Resource) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResourceRequest", arg0)
@@ -3658,14 +3657,14 @@ func (m *MockAPIGatewayAPI) GetResourceRequest(arg0 *apigateway.GetResourceInput
 	return ret0, ret1
 }
 
-// GetResourceRequest indicates an expected call of GetResourceRequest.
+// GetResourceRequest indicates an expected call of GetResourceRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResourceRequest), arg0)
 }
 
-// GetResourceWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetResourceWithContext(arg0 context.Context, arg1 *apigateway.GetResourceInput, arg2 ...request.Option) (*apigateway.Resource, error) {
+// GetResourceWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetResourceWithContext(arg0 aws.Context, arg1 *apigateway.GetResourceInput, arg2 ...request.Option) (*apigateway.Resource, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3677,14 +3676,14 @@ func (m *MockAPIGatewayAPI) GetResourceWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// GetResourceWithContext indicates an expected call of GetResourceWithContext.
+// GetResourceWithContext indicates an expected call of GetResourceWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResourceWithContext), varargs...)
 }
 
-// GetResources mocks base method.
+// GetResources mocks base method
 func (m *MockAPIGatewayAPI) GetResources(arg0 *apigateway.GetResourcesInput) (*apigateway.GetResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResources", arg0)
@@ -3693,13 +3692,13 @@ func (m *MockAPIGatewayAPI) GetResources(arg0 *apigateway.GetResourcesInput) (*a
 	return ret0, ret1
 }
 
-// GetResources indicates an expected call of GetResources.
+// GetResources indicates an expected call of GetResources
 func (mr *MockAPIGatewayAPIMockRecorder) GetResources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResources", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResources), arg0)
 }
 
-// GetResourcesPages mocks base method.
+// GetResourcesPages mocks base method
 func (m *MockAPIGatewayAPI) GetResourcesPages(arg0 *apigateway.GetResourcesInput, arg1 func(*apigateway.GetResourcesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResourcesPages", arg0, arg1)
@@ -3707,14 +3706,14 @@ func (m *MockAPIGatewayAPI) GetResourcesPages(arg0 *apigateway.GetResourcesInput
 	return ret0
 }
 
-// GetResourcesPages indicates an expected call of GetResourcesPages.
+// GetResourcesPages indicates an expected call of GetResourcesPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetResourcesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResourcesPages), arg0, arg1)
 }
 
-// GetResourcesPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetResourcesPagesWithContext(arg0 context.Context, arg1 *apigateway.GetResourcesInput, arg2 func(*apigateway.GetResourcesOutput, bool) bool, arg3 ...request.Option) error {
+// GetResourcesPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetResourcesPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetResourcesInput, arg2 func(*apigateway.GetResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3725,14 +3724,14 @@ func (m *MockAPIGatewayAPI) GetResourcesPagesWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// GetResourcesPagesWithContext indicates an expected call of GetResourcesPagesWithContext.
+// GetResourcesPagesWithContext indicates an expected call of GetResourcesPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResourcesPagesWithContext), varargs...)
 }
 
-// GetResourcesRequest mocks base method.
+// GetResourcesRequest mocks base method
 func (m *MockAPIGatewayAPI) GetResourcesRequest(arg0 *apigateway.GetResourcesInput) (*request.Request, *apigateway.GetResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetResourcesRequest", arg0)
@@ -3741,14 +3740,14 @@ func (m *MockAPIGatewayAPI) GetResourcesRequest(arg0 *apigateway.GetResourcesInp
 	return ret0, ret1
 }
 
-// GetResourcesRequest indicates an expected call of GetResourcesRequest.
+// GetResourcesRequest indicates an expected call of GetResourcesRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResourcesRequest), arg0)
 }
 
-// GetResourcesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetResourcesWithContext(arg0 context.Context, arg1 *apigateway.GetResourcesInput, arg2 ...request.Option) (*apigateway.GetResourcesOutput, error) {
+// GetResourcesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetResourcesWithContext(arg0 aws.Context, arg1 *apigateway.GetResourcesInput, arg2 ...request.Option) (*apigateway.GetResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3760,14 +3759,14 @@ func (m *MockAPIGatewayAPI) GetResourcesWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// GetResourcesWithContext indicates an expected call of GetResourcesWithContext.
+// GetResourcesWithContext indicates an expected call of GetResourcesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetResourcesWithContext), varargs...)
 }
 
-// GetRestApi mocks base method.
+// GetRestApi mocks base method
 func (m *MockAPIGatewayAPI) GetRestApi(arg0 *apigateway.GetRestApiInput) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRestApi", arg0)
@@ -3776,13 +3775,13 @@ func (m *MockAPIGatewayAPI) GetRestApi(arg0 *apigateway.GetRestApiInput) (*apiga
 	return ret0, ret1
 }
 
-// GetRestApi indicates an expected call of GetRestApi.
+// GetRestApi indicates an expected call of GetRestApi
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApi", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApi), arg0)
 }
 
-// GetRestApiRequest mocks base method.
+// GetRestApiRequest mocks base method
 func (m *MockAPIGatewayAPI) GetRestApiRequest(arg0 *apigateway.GetRestApiInput) (*request.Request, *apigateway.RestApi) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRestApiRequest", arg0)
@@ -3791,14 +3790,14 @@ func (m *MockAPIGatewayAPI) GetRestApiRequest(arg0 *apigateway.GetRestApiInput) 
 	return ret0, ret1
 }
 
-// GetRestApiRequest indicates an expected call of GetRestApiRequest.
+// GetRestApiRequest indicates an expected call of GetRestApiRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApiRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApiRequest), arg0)
 }
 
-// GetRestApiWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetRestApiWithContext(arg0 context.Context, arg1 *apigateway.GetRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
+// GetRestApiWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetRestApiWithContext(arg0 aws.Context, arg1 *apigateway.GetRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3810,14 +3809,14 @@ func (m *MockAPIGatewayAPI) GetRestApiWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetRestApiWithContext indicates an expected call of GetRestApiWithContext.
+// GetRestApiWithContext indicates an expected call of GetRestApiWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApiWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApiWithContext), varargs...)
 }
 
-// GetRestApis mocks base method.
+// GetRestApis mocks base method
 func (m *MockAPIGatewayAPI) GetRestApis(arg0 *apigateway.GetRestApisInput) (*apigateway.GetRestApisOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRestApis", arg0)
@@ -3826,13 +3825,13 @@ func (m *MockAPIGatewayAPI) GetRestApis(arg0 *apigateway.GetRestApisInput) (*api
 	return ret0, ret1
 }
 
-// GetRestApis indicates an expected call of GetRestApis.
+// GetRestApis indicates an expected call of GetRestApis
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApis(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApis", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApis), arg0)
 }
 
-// GetRestApisPages mocks base method.
+// GetRestApisPages mocks base method
 func (m *MockAPIGatewayAPI) GetRestApisPages(arg0 *apigateway.GetRestApisInput, arg1 func(*apigateway.GetRestApisOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRestApisPages", arg0, arg1)
@@ -3840,14 +3839,14 @@ func (m *MockAPIGatewayAPI) GetRestApisPages(arg0 *apigateway.GetRestApisInput, 
 	return ret0
 }
 
-// GetRestApisPages indicates an expected call of GetRestApisPages.
+// GetRestApisPages indicates an expected call of GetRestApisPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApisPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApisPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApisPages), arg0, arg1)
 }
 
-// GetRestApisPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetRestApisPagesWithContext(arg0 context.Context, arg1 *apigateway.GetRestApisInput, arg2 func(*apigateway.GetRestApisOutput, bool) bool, arg3 ...request.Option) error {
+// GetRestApisPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetRestApisPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetRestApisInput, arg2 func(*apigateway.GetRestApisOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3858,14 +3857,14 @@ func (m *MockAPIGatewayAPI) GetRestApisPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// GetRestApisPagesWithContext indicates an expected call of GetRestApisPagesWithContext.
+// GetRestApisPagesWithContext indicates an expected call of GetRestApisPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApisPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApisPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApisPagesWithContext), varargs...)
 }
 
-// GetRestApisRequest mocks base method.
+// GetRestApisRequest mocks base method
 func (m *MockAPIGatewayAPI) GetRestApisRequest(arg0 *apigateway.GetRestApisInput) (*request.Request, *apigateway.GetRestApisOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRestApisRequest", arg0)
@@ -3874,14 +3873,14 @@ func (m *MockAPIGatewayAPI) GetRestApisRequest(arg0 *apigateway.GetRestApisInput
 	return ret0, ret1
 }
 
-// GetRestApisRequest indicates an expected call of GetRestApisRequest.
+// GetRestApisRequest indicates an expected call of GetRestApisRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApisRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApisRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApisRequest), arg0)
 }
 
-// GetRestApisWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetRestApisWithContext(arg0 context.Context, arg1 *apigateway.GetRestApisInput, arg2 ...request.Option) (*apigateway.GetRestApisOutput, error) {
+// GetRestApisWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetRestApisWithContext(arg0 aws.Context, arg1 *apigateway.GetRestApisInput, arg2 ...request.Option) (*apigateway.GetRestApisOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3893,14 +3892,14 @@ func (m *MockAPIGatewayAPI) GetRestApisWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// GetRestApisWithContext indicates an expected call of GetRestApisWithContext.
+// GetRestApisWithContext indicates an expected call of GetRestApisWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetRestApisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRestApisWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetRestApisWithContext), varargs...)
 }
 
-// GetSdk mocks base method.
+// GetSdk mocks base method
 func (m *MockAPIGatewayAPI) GetSdk(arg0 *apigateway.GetSdkInput) (*apigateway.GetSdkOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSdk", arg0)
@@ -3909,13 +3908,13 @@ func (m *MockAPIGatewayAPI) GetSdk(arg0 *apigateway.GetSdkInput) (*apigateway.Ge
 	return ret0, ret1
 }
 
-// GetSdk indicates an expected call of GetSdk.
+// GetSdk indicates an expected call of GetSdk
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdk(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdk", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdk), arg0)
 }
 
-// GetSdkRequest mocks base method.
+// GetSdkRequest mocks base method
 func (m *MockAPIGatewayAPI) GetSdkRequest(arg0 *apigateway.GetSdkInput) (*request.Request, *apigateway.GetSdkOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSdkRequest", arg0)
@@ -3924,13 +3923,13 @@ func (m *MockAPIGatewayAPI) GetSdkRequest(arg0 *apigateway.GetSdkInput) (*reques
 	return ret0, ret1
 }
 
-// GetSdkRequest indicates an expected call of GetSdkRequest.
+// GetSdkRequest indicates an expected call of GetSdkRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkRequest), arg0)
 }
 
-// GetSdkType mocks base method.
+// GetSdkType mocks base method
 func (m *MockAPIGatewayAPI) GetSdkType(arg0 *apigateway.GetSdkTypeInput) (*apigateway.SdkType, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSdkType", arg0)
@@ -3939,13 +3938,13 @@ func (m *MockAPIGatewayAPI) GetSdkType(arg0 *apigateway.GetSdkTypeInput) (*apiga
 	return ret0, ret1
 }
 
-// GetSdkType indicates an expected call of GetSdkType.
+// GetSdkType indicates an expected call of GetSdkType
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkType(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkType", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkType), arg0)
 }
 
-// GetSdkTypeRequest mocks base method.
+// GetSdkTypeRequest mocks base method
 func (m *MockAPIGatewayAPI) GetSdkTypeRequest(arg0 *apigateway.GetSdkTypeInput) (*request.Request, *apigateway.SdkType) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSdkTypeRequest", arg0)
@@ -3954,14 +3953,14 @@ func (m *MockAPIGatewayAPI) GetSdkTypeRequest(arg0 *apigateway.GetSdkTypeInput) 
 	return ret0, ret1
 }
 
-// GetSdkTypeRequest indicates an expected call of GetSdkTypeRequest.
+// GetSdkTypeRequest indicates an expected call of GetSdkTypeRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkTypeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkTypeRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkTypeRequest), arg0)
 }
 
-// GetSdkTypeWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetSdkTypeWithContext(arg0 context.Context, arg1 *apigateway.GetSdkTypeInput, arg2 ...request.Option) (*apigateway.SdkType, error) {
+// GetSdkTypeWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetSdkTypeWithContext(arg0 aws.Context, arg1 *apigateway.GetSdkTypeInput, arg2 ...request.Option) (*apigateway.SdkType, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3973,14 +3972,14 @@ func (m *MockAPIGatewayAPI) GetSdkTypeWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetSdkTypeWithContext indicates an expected call of GetSdkTypeWithContext.
+// GetSdkTypeWithContext indicates an expected call of GetSdkTypeWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkTypeWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkTypeWithContext), varargs...)
 }
 
-// GetSdkTypes mocks base method.
+// GetSdkTypes mocks base method
 func (m *MockAPIGatewayAPI) GetSdkTypes(arg0 *apigateway.GetSdkTypesInput) (*apigateway.GetSdkTypesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSdkTypes", arg0)
@@ -3989,13 +3988,13 @@ func (m *MockAPIGatewayAPI) GetSdkTypes(arg0 *apigateway.GetSdkTypesInput) (*api
 	return ret0, ret1
 }
 
-// GetSdkTypes indicates an expected call of GetSdkTypes.
+// GetSdkTypes indicates an expected call of GetSdkTypes
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkTypes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkTypes", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkTypes), arg0)
 }
 
-// GetSdkTypesRequest mocks base method.
+// GetSdkTypesRequest mocks base method
 func (m *MockAPIGatewayAPI) GetSdkTypesRequest(arg0 *apigateway.GetSdkTypesInput) (*request.Request, *apigateway.GetSdkTypesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSdkTypesRequest", arg0)
@@ -4004,14 +4003,14 @@ func (m *MockAPIGatewayAPI) GetSdkTypesRequest(arg0 *apigateway.GetSdkTypesInput
 	return ret0, ret1
 }
 
-// GetSdkTypesRequest indicates an expected call of GetSdkTypesRequest.
+// GetSdkTypesRequest indicates an expected call of GetSdkTypesRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkTypesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkTypesRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkTypesRequest), arg0)
 }
 
-// GetSdkTypesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetSdkTypesWithContext(arg0 context.Context, arg1 *apigateway.GetSdkTypesInput, arg2 ...request.Option) (*apigateway.GetSdkTypesOutput, error) {
+// GetSdkTypesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetSdkTypesWithContext(arg0 aws.Context, arg1 *apigateway.GetSdkTypesInput, arg2 ...request.Option) (*apigateway.GetSdkTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4023,15 +4022,15 @@ func (m *MockAPIGatewayAPI) GetSdkTypesWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// GetSdkTypesWithContext indicates an expected call of GetSdkTypesWithContext.
+// GetSdkTypesWithContext indicates an expected call of GetSdkTypesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkTypesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkTypesWithContext), varargs...)
 }
 
-// GetSdkWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetSdkWithContext(arg0 context.Context, arg1 *apigateway.GetSdkInput, arg2 ...request.Option) (*apigateway.GetSdkOutput, error) {
+// GetSdkWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetSdkWithContext(arg0 aws.Context, arg1 *apigateway.GetSdkInput, arg2 ...request.Option) (*apigateway.GetSdkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4043,14 +4042,14 @@ func (m *MockAPIGatewayAPI) GetSdkWithContext(arg0 context.Context, arg1 *apigat
 	return ret0, ret1
 }
 
-// GetSdkWithContext indicates an expected call of GetSdkWithContext.
+// GetSdkWithContext indicates an expected call of GetSdkWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetSdkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSdkWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetSdkWithContext), varargs...)
 }
 
-// GetStage mocks base method.
+// GetStage mocks base method
 func (m *MockAPIGatewayAPI) GetStage(arg0 *apigateway.GetStageInput) (*apigateway.Stage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetStage", arg0)
@@ -4059,13 +4058,13 @@ func (m *MockAPIGatewayAPI) GetStage(arg0 *apigateway.GetStageInput) (*apigatewa
 	return ret0, ret1
 }
 
-// GetStage indicates an expected call of GetStage.
+// GetStage indicates an expected call of GetStage
 func (mr *MockAPIGatewayAPIMockRecorder) GetStage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStage", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetStage), arg0)
 }
 
-// GetStageRequest mocks base method.
+// GetStageRequest mocks base method
 func (m *MockAPIGatewayAPI) GetStageRequest(arg0 *apigateway.GetStageInput) (*request.Request, *apigateway.Stage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetStageRequest", arg0)
@@ -4074,14 +4073,14 @@ func (m *MockAPIGatewayAPI) GetStageRequest(arg0 *apigateway.GetStageInput) (*re
 	return ret0, ret1
 }
 
-// GetStageRequest indicates an expected call of GetStageRequest.
+// GetStageRequest indicates an expected call of GetStageRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetStageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetStageRequest), arg0)
 }
 
-// GetStageWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetStageWithContext(arg0 context.Context, arg1 *apigateway.GetStageInput, arg2 ...request.Option) (*apigateway.Stage, error) {
+// GetStageWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetStageWithContext(arg0 aws.Context, arg1 *apigateway.GetStageInput, arg2 ...request.Option) (*apigateway.Stage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4093,14 +4092,14 @@ func (m *MockAPIGatewayAPI) GetStageWithContext(arg0 context.Context, arg1 *apig
 	return ret0, ret1
 }
 
-// GetStageWithContext indicates an expected call of GetStageWithContext.
+// GetStageWithContext indicates an expected call of GetStageWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetStageWithContext), varargs...)
 }
 
-// GetStages mocks base method.
+// GetStages mocks base method
 func (m *MockAPIGatewayAPI) GetStages(arg0 *apigateway.GetStagesInput) (*apigateway.GetStagesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetStages", arg0)
@@ -4109,13 +4108,13 @@ func (m *MockAPIGatewayAPI) GetStages(arg0 *apigateway.GetStagesInput) (*apigate
 	return ret0, ret1
 }
 
-// GetStages indicates an expected call of GetStages.
+// GetStages indicates an expected call of GetStages
 func (mr *MockAPIGatewayAPIMockRecorder) GetStages(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetStages), arg0)
 }
 
-// GetStagesRequest mocks base method.
+// GetStagesRequest mocks base method
 func (m *MockAPIGatewayAPI) GetStagesRequest(arg0 *apigateway.GetStagesInput) (*request.Request, *apigateway.GetStagesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetStagesRequest", arg0)
@@ -4124,14 +4123,14 @@ func (m *MockAPIGatewayAPI) GetStagesRequest(arg0 *apigateway.GetStagesInput) (*
 	return ret0, ret1
 }
 
-// GetStagesRequest indicates an expected call of GetStagesRequest.
+// GetStagesRequest indicates an expected call of GetStagesRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetStagesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStagesRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetStagesRequest), arg0)
 }
 
-// GetStagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetStagesWithContext(arg0 context.Context, arg1 *apigateway.GetStagesInput, arg2 ...request.Option) (*apigateway.GetStagesOutput, error) {
+// GetStagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetStagesWithContext(arg0 aws.Context, arg1 *apigateway.GetStagesInput, arg2 ...request.Option) (*apigateway.GetStagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4143,14 +4142,14 @@ func (m *MockAPIGatewayAPI) GetStagesWithContext(arg0 context.Context, arg1 *api
 	return ret0, ret1
 }
 
-// GetStagesWithContext indicates an expected call of GetStagesWithContext.
+// GetStagesWithContext indicates an expected call of GetStagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetStagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetStagesWithContext), varargs...)
 }
 
-// GetTags mocks base method.
+// GetTags mocks base method
 func (m *MockAPIGatewayAPI) GetTags(arg0 *apigateway.GetTagsInput) (*apigateway.GetTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetTags", arg0)
@@ -4159,13 +4158,13 @@ func (m *MockAPIGatewayAPI) GetTags(arg0 *apigateway.GetTagsInput) (*apigateway.
 	return ret0, ret1
 }
 
-// GetTags indicates an expected call of GetTags.
+// GetTags indicates an expected call of GetTags
 func (mr *MockAPIGatewayAPIMockRecorder) GetTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTags", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetTags), arg0)
 }
 
-// GetTagsRequest mocks base method.
+// GetTagsRequest mocks base method
 func (m *MockAPIGatewayAPI) GetTagsRequest(arg0 *apigateway.GetTagsInput) (*request.Request, *apigateway.GetTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetTagsRequest", arg0)
@@ -4174,14 +4173,14 @@ func (m *MockAPIGatewayAPI) GetTagsRequest(arg0 *apigateway.GetTagsInput) (*requ
 	return ret0, ret1
 }
 
-// GetTagsRequest indicates an expected call of GetTagsRequest.
+// GetTagsRequest indicates an expected call of GetTagsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetTagsRequest), arg0)
 }
 
-// GetTagsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetTagsWithContext(arg0 context.Context, arg1 *apigateway.GetTagsInput, arg2 ...request.Option) (*apigateway.GetTagsOutput, error) {
+// GetTagsWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetTagsWithContext(arg0 aws.Context, arg1 *apigateway.GetTagsInput, arg2 ...request.Option) (*apigateway.GetTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4193,14 +4192,14 @@ func (m *MockAPIGatewayAPI) GetTagsWithContext(arg0 context.Context, arg1 *apiga
 	return ret0, ret1
 }
 
-// GetTagsWithContext indicates an expected call of GetTagsWithContext.
+// GetTagsWithContext indicates an expected call of GetTagsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetTagsWithContext), varargs...)
 }
 
-// GetUsage mocks base method.
+// GetUsage mocks base method
 func (m *MockAPIGatewayAPI) GetUsage(arg0 *apigateway.GetUsageInput) (*apigateway.Usage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsage", arg0)
@@ -4209,13 +4208,13 @@ func (m *MockAPIGatewayAPI) GetUsage(arg0 *apigateway.GetUsageInput) (*apigatewa
 	return ret0, ret1
 }
 
-// GetUsage indicates an expected call of GetUsage.
+// GetUsage indicates an expected call of GetUsage
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsage", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsage), arg0)
 }
 
-// GetUsagePages mocks base method.
+// GetUsagePages mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePages(arg0 *apigateway.GetUsageInput, arg1 func(*apigateway.Usage, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePages", arg0, arg1)
@@ -4223,14 +4222,14 @@ func (m *MockAPIGatewayAPI) GetUsagePages(arg0 *apigateway.GetUsageInput, arg1 f
 	return ret0
 }
 
-// GetUsagePages indicates an expected call of GetUsagePages.
+// GetUsagePages indicates an expected call of GetUsagePages
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePages), arg0, arg1)
 }
 
-// GetUsagePagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePagesWithContext(arg0 context.Context, arg1 *apigateway.GetUsageInput, arg2 func(*apigateway.Usage, bool) bool, arg3 ...request.Option) error {
+// GetUsagePagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePagesWithContext(arg0 aws.Context, arg1 *apigateway.GetUsageInput, arg2 func(*apigateway.Usage, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4241,14 +4240,14 @@ func (m *MockAPIGatewayAPI) GetUsagePagesWithContext(arg0 context.Context, arg1 
 	return ret0
 }
 
-// GetUsagePagesWithContext indicates an expected call of GetUsagePagesWithContext.
+// GetUsagePagesWithContext indicates an expected call of GetUsagePagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePagesWithContext), varargs...)
 }
 
-// GetUsagePlan mocks base method.
+// GetUsagePlan mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlan(arg0 *apigateway.GetUsagePlanInput) (*apigateway.UsagePlan, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlan", arg0)
@@ -4257,13 +4256,13 @@ func (m *MockAPIGatewayAPI) GetUsagePlan(arg0 *apigateway.GetUsagePlanInput) (*a
 	return ret0, ret1
 }
 
-// GetUsagePlan indicates an expected call of GetUsagePlan.
+// GetUsagePlan indicates an expected call of GetUsagePlan
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlan(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlan", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlan), arg0)
 }
 
-// GetUsagePlanKey mocks base method.
+// GetUsagePlanKey mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlanKey(arg0 *apigateway.GetUsagePlanKeyInput) (*apigateway.UsagePlanKey, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlanKey", arg0)
@@ -4272,13 +4271,13 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKey(arg0 *apigateway.GetUsagePlanKeyInpu
 	return ret0, ret1
 }
 
-// GetUsagePlanKey indicates an expected call of GetUsagePlanKey.
+// GetUsagePlanKey indicates an expected call of GetUsagePlanKey
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKey), arg0)
 }
 
-// GetUsagePlanKeyRequest mocks base method.
+// GetUsagePlanKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlanKeyRequest(arg0 *apigateway.GetUsagePlanKeyInput) (*request.Request, *apigateway.UsagePlanKey) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlanKeyRequest", arg0)
@@ -4287,14 +4286,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeyRequest(arg0 *apigateway.GetUsagePlan
 	return ret0, ret1
 }
 
-// GetUsagePlanKeyRequest indicates an expected call of GetUsagePlanKeyRequest.
+// GetUsagePlanKeyRequest indicates an expected call of GetUsagePlanKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeyRequest), arg0)
 }
 
-// GetUsagePlanKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePlanKeyWithContext(arg0 context.Context, arg1 *apigateway.GetUsagePlanKeyInput, arg2 ...request.Option) (*apigateway.UsagePlanKey, error) {
+// GetUsagePlanKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePlanKeyWithContext(arg0 aws.Context, arg1 *apigateway.GetUsagePlanKeyInput, arg2 ...request.Option) (*apigateway.UsagePlanKey, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4306,14 +4305,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeyWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// GetUsagePlanKeyWithContext indicates an expected call of GetUsagePlanKeyWithContext.
+// GetUsagePlanKeyWithContext indicates an expected call of GetUsagePlanKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeyWithContext), varargs...)
 }
 
-// GetUsagePlanKeys mocks base method.
+// GetUsagePlanKeys mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlanKeys(arg0 *apigateway.GetUsagePlanKeysInput) (*apigateway.GetUsagePlanKeysOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlanKeys", arg0)
@@ -4322,13 +4321,13 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeys(arg0 *apigateway.GetUsagePlanKeysIn
 	return ret0, ret1
 }
 
-// GetUsagePlanKeys indicates an expected call of GetUsagePlanKeys.
+// GetUsagePlanKeys indicates an expected call of GetUsagePlanKeys
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeys(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeys", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeys), arg0)
 }
 
-// GetUsagePlanKeysPages mocks base method.
+// GetUsagePlanKeysPages mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlanKeysPages(arg0 *apigateway.GetUsagePlanKeysInput, arg1 func(*apigateway.GetUsagePlanKeysOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlanKeysPages", arg0, arg1)
@@ -4336,14 +4335,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeysPages(arg0 *apigateway.GetUsagePlanK
 	return ret0
 }
 
-// GetUsagePlanKeysPages indicates an expected call of GetUsagePlanKeysPages.
+// GetUsagePlanKeysPages indicates an expected call of GetUsagePlanKeysPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeysPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeysPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeysPages), arg0, arg1)
 }
 
-// GetUsagePlanKeysPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePlanKeysPagesWithContext(arg0 context.Context, arg1 *apigateway.GetUsagePlanKeysInput, arg2 func(*apigateway.GetUsagePlanKeysOutput, bool) bool, arg3 ...request.Option) error {
+// GetUsagePlanKeysPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePlanKeysPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetUsagePlanKeysInput, arg2 func(*apigateway.GetUsagePlanKeysOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4354,14 +4353,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeysPagesWithContext(arg0 context.Contex
 	return ret0
 }
 
-// GetUsagePlanKeysPagesWithContext indicates an expected call of GetUsagePlanKeysPagesWithContext.
+// GetUsagePlanKeysPagesWithContext indicates an expected call of GetUsagePlanKeysPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeysPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeysPagesWithContext), varargs...)
 }
 
-// GetUsagePlanKeysRequest mocks base method.
+// GetUsagePlanKeysRequest mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlanKeysRequest(arg0 *apigateway.GetUsagePlanKeysInput) (*request.Request, *apigateway.GetUsagePlanKeysOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlanKeysRequest", arg0)
@@ -4370,14 +4369,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeysRequest(arg0 *apigateway.GetUsagePla
 	return ret0, ret1
 }
 
-// GetUsagePlanKeysRequest indicates an expected call of GetUsagePlanKeysRequest.
+// GetUsagePlanKeysRequest indicates an expected call of GetUsagePlanKeysRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeysRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeysRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeysRequest), arg0)
 }
 
-// GetUsagePlanKeysWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePlanKeysWithContext(arg0 context.Context, arg1 *apigateway.GetUsagePlanKeysInput, arg2 ...request.Option) (*apigateway.GetUsagePlanKeysOutput, error) {
+// GetUsagePlanKeysWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePlanKeysWithContext(arg0 aws.Context, arg1 *apigateway.GetUsagePlanKeysInput, arg2 ...request.Option) (*apigateway.GetUsagePlanKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4389,14 +4388,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanKeysWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetUsagePlanKeysWithContext indicates an expected call of GetUsagePlanKeysWithContext.
+// GetUsagePlanKeysWithContext indicates an expected call of GetUsagePlanKeysWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanKeysWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanKeysWithContext), varargs...)
 }
 
-// GetUsagePlanRequest mocks base method.
+// GetUsagePlanRequest mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlanRequest(arg0 *apigateway.GetUsagePlanInput) (*request.Request, *apigateway.UsagePlan) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlanRequest", arg0)
@@ -4405,14 +4404,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanRequest(arg0 *apigateway.GetUsagePlanInp
 	return ret0, ret1
 }
 
-// GetUsagePlanRequest indicates an expected call of GetUsagePlanRequest.
+// GetUsagePlanRequest indicates an expected call of GetUsagePlanRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanRequest), arg0)
 }
 
-// GetUsagePlanWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePlanWithContext(arg0 context.Context, arg1 *apigateway.GetUsagePlanInput, arg2 ...request.Option) (*apigateway.UsagePlan, error) {
+// GetUsagePlanWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePlanWithContext(arg0 aws.Context, arg1 *apigateway.GetUsagePlanInput, arg2 ...request.Option) (*apigateway.UsagePlan, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4424,14 +4423,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlanWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// GetUsagePlanWithContext indicates an expected call of GetUsagePlanWithContext.
+// GetUsagePlanWithContext indicates an expected call of GetUsagePlanWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlanWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlanWithContext), varargs...)
 }
 
-// GetUsagePlans mocks base method.
+// GetUsagePlans mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlans(arg0 *apigateway.GetUsagePlansInput) (*apigateway.GetUsagePlansOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlans", arg0)
@@ -4440,13 +4439,13 @@ func (m *MockAPIGatewayAPI) GetUsagePlans(arg0 *apigateway.GetUsagePlansInput) (
 	return ret0, ret1
 }
 
-// GetUsagePlans indicates an expected call of GetUsagePlans.
+// GetUsagePlans indicates an expected call of GetUsagePlans
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlans(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlans", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlans), arg0)
 }
 
-// GetUsagePlansPages mocks base method.
+// GetUsagePlansPages mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlansPages(arg0 *apigateway.GetUsagePlansInput, arg1 func(*apigateway.GetUsagePlansOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlansPages", arg0, arg1)
@@ -4454,14 +4453,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlansPages(arg0 *apigateway.GetUsagePlansInp
 	return ret0
 }
 
-// GetUsagePlansPages indicates an expected call of GetUsagePlansPages.
+// GetUsagePlansPages indicates an expected call of GetUsagePlansPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlansPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlansPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlansPages), arg0, arg1)
 }
 
-// GetUsagePlansPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePlansPagesWithContext(arg0 context.Context, arg1 *apigateway.GetUsagePlansInput, arg2 func(*apigateway.GetUsagePlansOutput, bool) bool, arg3 ...request.Option) error {
+// GetUsagePlansPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePlansPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetUsagePlansInput, arg2 func(*apigateway.GetUsagePlansOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4472,14 +4471,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlansPagesWithContext(arg0 context.Context, 
 	return ret0
 }
 
-// GetUsagePlansPagesWithContext indicates an expected call of GetUsagePlansPagesWithContext.
+// GetUsagePlansPagesWithContext indicates an expected call of GetUsagePlansPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlansPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlansPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlansPagesWithContext), varargs...)
 }
 
-// GetUsagePlansRequest mocks base method.
+// GetUsagePlansRequest mocks base method
 func (m *MockAPIGatewayAPI) GetUsagePlansRequest(arg0 *apigateway.GetUsagePlansInput) (*request.Request, *apigateway.GetUsagePlansOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsagePlansRequest", arg0)
@@ -4488,14 +4487,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlansRequest(arg0 *apigateway.GetUsagePlansI
 	return ret0, ret1
 }
 
-// GetUsagePlansRequest indicates an expected call of GetUsagePlansRequest.
+// GetUsagePlansRequest indicates an expected call of GetUsagePlansRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlansRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlansRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlansRequest), arg0)
 }
 
-// GetUsagePlansWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsagePlansWithContext(arg0 context.Context, arg1 *apigateway.GetUsagePlansInput, arg2 ...request.Option) (*apigateway.GetUsagePlansOutput, error) {
+// GetUsagePlansWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsagePlansWithContext(arg0 aws.Context, arg1 *apigateway.GetUsagePlansInput, arg2 ...request.Option) (*apigateway.GetUsagePlansOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4507,14 +4506,14 @@ func (m *MockAPIGatewayAPI) GetUsagePlansWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetUsagePlansWithContext indicates an expected call of GetUsagePlansWithContext.
+// GetUsagePlansWithContext indicates an expected call of GetUsagePlansWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsagePlansWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsagePlansWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsagePlansWithContext), varargs...)
 }
 
-// GetUsageRequest mocks base method.
+// GetUsageRequest mocks base method
 func (m *MockAPIGatewayAPI) GetUsageRequest(arg0 *apigateway.GetUsageInput) (*request.Request, *apigateway.Usage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetUsageRequest", arg0)
@@ -4523,14 +4522,14 @@ func (m *MockAPIGatewayAPI) GetUsageRequest(arg0 *apigateway.GetUsageInput) (*re
 	return ret0, ret1
 }
 
-// GetUsageRequest indicates an expected call of GetUsageRequest.
+// GetUsageRequest indicates an expected call of GetUsageRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsageRequest), arg0)
 }
 
-// GetUsageWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetUsageWithContext(arg0 context.Context, arg1 *apigateway.GetUsageInput, arg2 ...request.Option) (*apigateway.Usage, error) {
+// GetUsageWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetUsageWithContext(arg0 aws.Context, arg1 *apigateway.GetUsageInput, arg2 ...request.Option) (*apigateway.Usage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4542,14 +4541,14 @@ func (m *MockAPIGatewayAPI) GetUsageWithContext(arg0 context.Context, arg1 *apig
 	return ret0, ret1
 }
 
-// GetUsageWithContext indicates an expected call of GetUsageWithContext.
+// GetUsageWithContext indicates an expected call of GetUsageWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetUsageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetUsageWithContext), varargs...)
 }
 
-// GetVpcLink mocks base method.
+// GetVpcLink mocks base method
 func (m *MockAPIGatewayAPI) GetVpcLink(arg0 *apigateway.GetVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVpcLink", arg0)
@@ -4558,13 +4557,13 @@ func (m *MockAPIGatewayAPI) GetVpcLink(arg0 *apigateway.GetVpcLinkInput) (*apiga
 	return ret0, ret1
 }
 
-// GetVpcLink indicates an expected call of GetVpcLink.
+// GetVpcLink indicates an expected call of GetVpcLink
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLink(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLink", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLink), arg0)
 }
 
-// GetVpcLinkRequest mocks base method.
+// GetVpcLinkRequest mocks base method
 func (m *MockAPIGatewayAPI) GetVpcLinkRequest(arg0 *apigateway.GetVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVpcLinkRequest", arg0)
@@ -4573,14 +4572,14 @@ func (m *MockAPIGatewayAPI) GetVpcLinkRequest(arg0 *apigateway.GetVpcLinkInput) 
 	return ret0, ret1
 }
 
-// GetVpcLinkRequest indicates an expected call of GetVpcLinkRequest.
+// GetVpcLinkRequest indicates an expected call of GetVpcLinkRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinkRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinkRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinkRequest), arg0)
 }
 
-// GetVpcLinkWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetVpcLinkWithContext(arg0 context.Context, arg1 *apigateway.GetVpcLinkInput, arg2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
+// GetVpcLinkWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetVpcLinkWithContext(arg0 aws.Context, arg1 *apigateway.GetVpcLinkInput, arg2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4592,14 +4591,14 @@ func (m *MockAPIGatewayAPI) GetVpcLinkWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// GetVpcLinkWithContext indicates an expected call of GetVpcLinkWithContext.
+// GetVpcLinkWithContext indicates an expected call of GetVpcLinkWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinkWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinkWithContext), varargs...)
 }
 
-// GetVpcLinks mocks base method.
+// GetVpcLinks mocks base method
 func (m *MockAPIGatewayAPI) GetVpcLinks(arg0 *apigateway.GetVpcLinksInput) (*apigateway.GetVpcLinksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVpcLinks", arg0)
@@ -4608,13 +4607,13 @@ func (m *MockAPIGatewayAPI) GetVpcLinks(arg0 *apigateway.GetVpcLinksInput) (*api
 	return ret0, ret1
 }
 
-// GetVpcLinks indicates an expected call of GetVpcLinks.
+// GetVpcLinks indicates an expected call of GetVpcLinks
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinks", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinks), arg0)
 }
 
-// GetVpcLinksPages mocks base method.
+// GetVpcLinksPages mocks base method
 func (m *MockAPIGatewayAPI) GetVpcLinksPages(arg0 *apigateway.GetVpcLinksInput, arg1 func(*apigateway.GetVpcLinksOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVpcLinksPages", arg0, arg1)
@@ -4622,14 +4621,14 @@ func (m *MockAPIGatewayAPI) GetVpcLinksPages(arg0 *apigateway.GetVpcLinksInput, 
 	return ret0
 }
 
-// GetVpcLinksPages indicates an expected call of GetVpcLinksPages.
+// GetVpcLinksPages indicates an expected call of GetVpcLinksPages
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinksPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinksPages", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinksPages), arg0, arg1)
 }
 
-// GetVpcLinksPagesWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetVpcLinksPagesWithContext(arg0 context.Context, arg1 *apigateway.GetVpcLinksInput, arg2 func(*apigateway.GetVpcLinksOutput, bool) bool, arg3 ...request.Option) error {
+// GetVpcLinksPagesWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetVpcLinksPagesWithContext(arg0 aws.Context, arg1 *apigateway.GetVpcLinksInput, arg2 func(*apigateway.GetVpcLinksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4640,14 +4639,14 @@ func (m *MockAPIGatewayAPI) GetVpcLinksPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// GetVpcLinksPagesWithContext indicates an expected call of GetVpcLinksPagesWithContext.
+// GetVpcLinksPagesWithContext indicates an expected call of GetVpcLinksPagesWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinksPagesWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinksPagesWithContext), varargs...)
 }
 
-// GetVpcLinksRequest mocks base method.
+// GetVpcLinksRequest mocks base method
 func (m *MockAPIGatewayAPI) GetVpcLinksRequest(arg0 *apigateway.GetVpcLinksInput) (*request.Request, *apigateway.GetVpcLinksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetVpcLinksRequest", arg0)
@@ -4656,14 +4655,14 @@ func (m *MockAPIGatewayAPI) GetVpcLinksRequest(arg0 *apigateway.GetVpcLinksInput
 	return ret0, ret1
 }
 
-// GetVpcLinksRequest indicates an expected call of GetVpcLinksRequest.
+// GetVpcLinksRequest indicates an expected call of GetVpcLinksRequest
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinksRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinksRequest), arg0)
 }
 
-// GetVpcLinksWithContext mocks base method.
-func (m *MockAPIGatewayAPI) GetVpcLinksWithContext(arg0 context.Context, arg1 *apigateway.GetVpcLinksInput, arg2 ...request.Option) (*apigateway.GetVpcLinksOutput, error) {
+// GetVpcLinksWithContext mocks base method
+func (m *MockAPIGatewayAPI) GetVpcLinksWithContext(arg0 aws.Context, arg1 *apigateway.GetVpcLinksInput, arg2 ...request.Option) (*apigateway.GetVpcLinksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4675,14 +4674,14 @@ func (m *MockAPIGatewayAPI) GetVpcLinksWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// GetVpcLinksWithContext indicates an expected call of GetVpcLinksWithContext.
+// GetVpcLinksWithContext indicates an expected call of GetVpcLinksWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) GetVpcLinksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinksWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).GetVpcLinksWithContext), varargs...)
 }
 
-// ImportApiKeys mocks base method.
+// ImportApiKeys mocks base method
 func (m *MockAPIGatewayAPI) ImportApiKeys(arg0 *apigateway.ImportApiKeysInput) (*apigateway.ImportApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportApiKeys", arg0)
@@ -4691,13 +4690,13 @@ func (m *MockAPIGatewayAPI) ImportApiKeys(arg0 *apigateway.ImportApiKeysInput) (
 	return ret0, ret1
 }
 
-// ImportApiKeys indicates an expected call of ImportApiKeys.
+// ImportApiKeys indicates an expected call of ImportApiKeys
 func (mr *MockAPIGatewayAPIMockRecorder) ImportApiKeys(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportApiKeys", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportApiKeys), arg0)
 }
 
-// ImportApiKeysRequest mocks base method.
+// ImportApiKeysRequest mocks base method
 func (m *MockAPIGatewayAPI) ImportApiKeysRequest(arg0 *apigateway.ImportApiKeysInput) (*request.Request, *apigateway.ImportApiKeysOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportApiKeysRequest", arg0)
@@ -4706,14 +4705,14 @@ func (m *MockAPIGatewayAPI) ImportApiKeysRequest(arg0 *apigateway.ImportApiKeysI
 	return ret0, ret1
 }
 
-// ImportApiKeysRequest indicates an expected call of ImportApiKeysRequest.
+// ImportApiKeysRequest indicates an expected call of ImportApiKeysRequest
 func (mr *MockAPIGatewayAPIMockRecorder) ImportApiKeysRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportApiKeysRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportApiKeysRequest), arg0)
 }
 
-// ImportApiKeysWithContext mocks base method.
-func (m *MockAPIGatewayAPI) ImportApiKeysWithContext(arg0 context.Context, arg1 *apigateway.ImportApiKeysInput, arg2 ...request.Option) (*apigateway.ImportApiKeysOutput, error) {
+// ImportApiKeysWithContext mocks base method
+func (m *MockAPIGatewayAPI) ImportApiKeysWithContext(arg0 aws.Context, arg1 *apigateway.ImportApiKeysInput, arg2 ...request.Option) (*apigateway.ImportApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4725,14 +4724,14 @@ func (m *MockAPIGatewayAPI) ImportApiKeysWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ImportApiKeysWithContext indicates an expected call of ImportApiKeysWithContext.
+// ImportApiKeysWithContext indicates an expected call of ImportApiKeysWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) ImportApiKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportApiKeysWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportApiKeysWithContext), varargs...)
 }
 
-// ImportDocumentationParts mocks base method.
+// ImportDocumentationParts mocks base method
 func (m *MockAPIGatewayAPI) ImportDocumentationParts(arg0 *apigateway.ImportDocumentationPartsInput) (*apigateway.ImportDocumentationPartsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportDocumentationParts", arg0)
@@ -4741,13 +4740,13 @@ func (m *MockAPIGatewayAPI) ImportDocumentationParts(arg0 *apigateway.ImportDocu
 	return ret0, ret1
 }
 
-// ImportDocumentationParts indicates an expected call of ImportDocumentationParts.
+// ImportDocumentationParts indicates an expected call of ImportDocumentationParts
 func (mr *MockAPIGatewayAPIMockRecorder) ImportDocumentationParts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportDocumentationParts", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportDocumentationParts), arg0)
 }
 
-// ImportDocumentationPartsRequest mocks base method.
+// ImportDocumentationPartsRequest mocks base method
 func (m *MockAPIGatewayAPI) ImportDocumentationPartsRequest(arg0 *apigateway.ImportDocumentationPartsInput) (*request.Request, *apigateway.ImportDocumentationPartsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportDocumentationPartsRequest", arg0)
@@ -4756,14 +4755,14 @@ func (m *MockAPIGatewayAPI) ImportDocumentationPartsRequest(arg0 *apigateway.Imp
 	return ret0, ret1
 }
 
-// ImportDocumentationPartsRequest indicates an expected call of ImportDocumentationPartsRequest.
+// ImportDocumentationPartsRequest indicates an expected call of ImportDocumentationPartsRequest
 func (mr *MockAPIGatewayAPIMockRecorder) ImportDocumentationPartsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportDocumentationPartsRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportDocumentationPartsRequest), arg0)
 }
 
-// ImportDocumentationPartsWithContext mocks base method.
-func (m *MockAPIGatewayAPI) ImportDocumentationPartsWithContext(arg0 context.Context, arg1 *apigateway.ImportDocumentationPartsInput, arg2 ...request.Option) (*apigateway.ImportDocumentationPartsOutput, error) {
+// ImportDocumentationPartsWithContext mocks base method
+func (m *MockAPIGatewayAPI) ImportDocumentationPartsWithContext(arg0 aws.Context, arg1 *apigateway.ImportDocumentationPartsInput, arg2 ...request.Option) (*apigateway.ImportDocumentationPartsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4775,14 +4774,14 @@ func (m *MockAPIGatewayAPI) ImportDocumentationPartsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// ImportDocumentationPartsWithContext indicates an expected call of ImportDocumentationPartsWithContext.
+// ImportDocumentationPartsWithContext indicates an expected call of ImportDocumentationPartsWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) ImportDocumentationPartsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportDocumentationPartsWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportDocumentationPartsWithContext), varargs...)
 }
 
-// ImportRestApi mocks base method.
+// ImportRestApi mocks base method
 func (m *MockAPIGatewayAPI) ImportRestApi(arg0 *apigateway.ImportRestApiInput) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportRestApi", arg0)
@@ -4791,13 +4790,13 @@ func (m *MockAPIGatewayAPI) ImportRestApi(arg0 *apigateway.ImportRestApiInput) (
 	return ret0, ret1
 }
 
-// ImportRestApi indicates an expected call of ImportRestApi.
+// ImportRestApi indicates an expected call of ImportRestApi
 func (mr *MockAPIGatewayAPIMockRecorder) ImportRestApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportRestApi", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportRestApi), arg0)
 }
 
-// ImportRestApiRequest mocks base method.
+// ImportRestApiRequest mocks base method
 func (m *MockAPIGatewayAPI) ImportRestApiRequest(arg0 *apigateway.ImportRestApiInput) (*request.Request, *apigateway.RestApi) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportRestApiRequest", arg0)
@@ -4806,14 +4805,14 @@ func (m *MockAPIGatewayAPI) ImportRestApiRequest(arg0 *apigateway.ImportRestApiI
 	return ret0, ret1
 }
 
-// ImportRestApiRequest indicates an expected call of ImportRestApiRequest.
+// ImportRestApiRequest indicates an expected call of ImportRestApiRequest
 func (mr *MockAPIGatewayAPIMockRecorder) ImportRestApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportRestApiRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportRestApiRequest), arg0)
 }
 
-// ImportRestApiWithContext mocks base method.
-func (m *MockAPIGatewayAPI) ImportRestApiWithContext(arg0 context.Context, arg1 *apigateway.ImportRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
+// ImportRestApiWithContext mocks base method
+func (m *MockAPIGatewayAPI) ImportRestApiWithContext(arg0 aws.Context, arg1 *apigateway.ImportRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4825,14 +4824,14 @@ func (m *MockAPIGatewayAPI) ImportRestApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ImportRestApiWithContext indicates an expected call of ImportRestApiWithContext.
+// ImportRestApiWithContext indicates an expected call of ImportRestApiWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) ImportRestApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportRestApiWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).ImportRestApiWithContext), varargs...)
 }
 
-// PutGatewayResponse mocks base method.
+// PutGatewayResponse mocks base method
 func (m *MockAPIGatewayAPI) PutGatewayResponse(arg0 *apigateway.PutGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutGatewayResponse", arg0)
@@ -4841,13 +4840,13 @@ func (m *MockAPIGatewayAPI) PutGatewayResponse(arg0 *apigateway.PutGatewayRespon
 	return ret0, ret1
 }
 
-// PutGatewayResponse indicates an expected call of PutGatewayResponse.
+// PutGatewayResponse indicates an expected call of PutGatewayResponse
 func (mr *MockAPIGatewayAPIMockRecorder) PutGatewayResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutGatewayResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutGatewayResponse), arg0)
 }
 
-// PutGatewayResponseRequest mocks base method.
+// PutGatewayResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) PutGatewayResponseRequest(arg0 *apigateway.PutGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutGatewayResponseRequest", arg0)
@@ -4856,14 +4855,14 @@ func (m *MockAPIGatewayAPI) PutGatewayResponseRequest(arg0 *apigateway.PutGatewa
 	return ret0, ret1
 }
 
-// PutGatewayResponseRequest indicates an expected call of PutGatewayResponseRequest.
+// PutGatewayResponseRequest indicates an expected call of PutGatewayResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) PutGatewayResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutGatewayResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutGatewayResponseRequest), arg0)
 }
 
-// PutGatewayResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) PutGatewayResponseWithContext(arg0 context.Context, arg1 *apigateway.PutGatewayResponseInput, arg2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
+// PutGatewayResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) PutGatewayResponseWithContext(arg0 aws.Context, arg1 *apigateway.PutGatewayResponseInput, arg2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4875,14 +4874,14 @@ func (m *MockAPIGatewayAPI) PutGatewayResponseWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// PutGatewayResponseWithContext indicates an expected call of PutGatewayResponseWithContext.
+// PutGatewayResponseWithContext indicates an expected call of PutGatewayResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) PutGatewayResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutGatewayResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutGatewayResponseWithContext), varargs...)
 }
 
-// PutIntegration mocks base method.
+// PutIntegration mocks base method
 func (m *MockAPIGatewayAPI) PutIntegration(arg0 *apigateway.PutIntegrationInput) (*apigateway.Integration, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutIntegration", arg0)
@@ -4891,13 +4890,13 @@ func (m *MockAPIGatewayAPI) PutIntegration(arg0 *apigateway.PutIntegrationInput)
 	return ret0, ret1
 }
 
-// PutIntegration indicates an expected call of PutIntegration.
+// PutIntegration indicates an expected call of PutIntegration
 func (mr *MockAPIGatewayAPIMockRecorder) PutIntegration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutIntegration", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutIntegration), arg0)
 }
 
-// PutIntegrationRequest mocks base method.
+// PutIntegrationRequest mocks base method
 func (m *MockAPIGatewayAPI) PutIntegrationRequest(arg0 *apigateway.PutIntegrationInput) (*request.Request, *apigateway.Integration) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutIntegrationRequest", arg0)
@@ -4906,13 +4905,13 @@ func (m *MockAPIGatewayAPI) PutIntegrationRequest(arg0 *apigateway.PutIntegratio
 	return ret0, ret1
 }
 
-// PutIntegrationRequest indicates an expected call of PutIntegrationRequest.
+// PutIntegrationRequest indicates an expected call of PutIntegrationRequest
 func (mr *MockAPIGatewayAPIMockRecorder) PutIntegrationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutIntegrationRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutIntegrationRequest), arg0)
 }
 
-// PutIntegrationResponse mocks base method.
+// PutIntegrationResponse mocks base method
 func (m *MockAPIGatewayAPI) PutIntegrationResponse(arg0 *apigateway.PutIntegrationResponseInput) (*apigateway.IntegrationResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutIntegrationResponse", arg0)
@@ -4921,13 +4920,13 @@ func (m *MockAPIGatewayAPI) PutIntegrationResponse(arg0 *apigateway.PutIntegrati
 	return ret0, ret1
 }
 
-// PutIntegrationResponse indicates an expected call of PutIntegrationResponse.
+// PutIntegrationResponse indicates an expected call of PutIntegrationResponse
 func (mr *MockAPIGatewayAPIMockRecorder) PutIntegrationResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutIntegrationResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutIntegrationResponse), arg0)
 }
 
-// PutIntegrationResponseRequest mocks base method.
+// PutIntegrationResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) PutIntegrationResponseRequest(arg0 *apigateway.PutIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutIntegrationResponseRequest", arg0)
@@ -4936,14 +4935,14 @@ func (m *MockAPIGatewayAPI) PutIntegrationResponseRequest(arg0 *apigateway.PutIn
 	return ret0, ret1
 }
 
-// PutIntegrationResponseRequest indicates an expected call of PutIntegrationResponseRequest.
+// PutIntegrationResponseRequest indicates an expected call of PutIntegrationResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) PutIntegrationResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutIntegrationResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutIntegrationResponseRequest), arg0)
 }
 
-// PutIntegrationResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) PutIntegrationResponseWithContext(arg0 context.Context, arg1 *apigateway.PutIntegrationResponseInput, arg2 ...request.Option) (*apigateway.IntegrationResponse, error) {
+// PutIntegrationResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) PutIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigateway.PutIntegrationResponseInput, arg2 ...request.Option) (*apigateway.IntegrationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4955,15 +4954,15 @@ func (m *MockAPIGatewayAPI) PutIntegrationResponseWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// PutIntegrationResponseWithContext indicates an expected call of PutIntegrationResponseWithContext.
+// PutIntegrationResponseWithContext indicates an expected call of PutIntegrationResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) PutIntegrationResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutIntegrationResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutIntegrationResponseWithContext), varargs...)
 }
 
-// PutIntegrationWithContext mocks base method.
-func (m *MockAPIGatewayAPI) PutIntegrationWithContext(arg0 context.Context, arg1 *apigateway.PutIntegrationInput, arg2 ...request.Option) (*apigateway.Integration, error) {
+// PutIntegrationWithContext mocks base method
+func (m *MockAPIGatewayAPI) PutIntegrationWithContext(arg0 aws.Context, arg1 *apigateway.PutIntegrationInput, arg2 ...request.Option) (*apigateway.Integration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4975,14 +4974,14 @@ func (m *MockAPIGatewayAPI) PutIntegrationWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// PutIntegrationWithContext indicates an expected call of PutIntegrationWithContext.
+// PutIntegrationWithContext indicates an expected call of PutIntegrationWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) PutIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutIntegrationWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutIntegrationWithContext), varargs...)
 }
 
-// PutMethod mocks base method.
+// PutMethod mocks base method
 func (m *MockAPIGatewayAPI) PutMethod(arg0 *apigateway.PutMethodInput) (*apigateway.Method, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutMethod", arg0)
@@ -4991,13 +4990,13 @@ func (m *MockAPIGatewayAPI) PutMethod(arg0 *apigateway.PutMethodInput) (*apigate
 	return ret0, ret1
 }
 
-// PutMethod indicates an expected call of PutMethod.
+// PutMethod indicates an expected call of PutMethod
 func (mr *MockAPIGatewayAPIMockRecorder) PutMethod(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMethod", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutMethod), arg0)
 }
 
-// PutMethodRequest mocks base method.
+// PutMethodRequest mocks base method
 func (m *MockAPIGatewayAPI) PutMethodRequest(arg0 *apigateway.PutMethodInput) (*request.Request, *apigateway.Method) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutMethodRequest", arg0)
@@ -5006,13 +5005,13 @@ func (m *MockAPIGatewayAPI) PutMethodRequest(arg0 *apigateway.PutMethodInput) (*
 	return ret0, ret1
 }
 
-// PutMethodRequest indicates an expected call of PutMethodRequest.
+// PutMethodRequest indicates an expected call of PutMethodRequest
 func (mr *MockAPIGatewayAPIMockRecorder) PutMethodRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMethodRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutMethodRequest), arg0)
 }
 
-// PutMethodResponse mocks base method.
+// PutMethodResponse mocks base method
 func (m *MockAPIGatewayAPI) PutMethodResponse(arg0 *apigateway.PutMethodResponseInput) (*apigateway.MethodResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutMethodResponse", arg0)
@@ -5021,13 +5020,13 @@ func (m *MockAPIGatewayAPI) PutMethodResponse(arg0 *apigateway.PutMethodResponse
 	return ret0, ret1
 }
 
-// PutMethodResponse indicates an expected call of PutMethodResponse.
+// PutMethodResponse indicates an expected call of PutMethodResponse
 func (mr *MockAPIGatewayAPIMockRecorder) PutMethodResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMethodResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutMethodResponse), arg0)
 }
 
-// PutMethodResponseRequest mocks base method.
+// PutMethodResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) PutMethodResponseRequest(arg0 *apigateway.PutMethodResponseInput) (*request.Request, *apigateway.MethodResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutMethodResponseRequest", arg0)
@@ -5036,14 +5035,14 @@ func (m *MockAPIGatewayAPI) PutMethodResponseRequest(arg0 *apigateway.PutMethodR
 	return ret0, ret1
 }
 
-// PutMethodResponseRequest indicates an expected call of PutMethodResponseRequest.
+// PutMethodResponseRequest indicates an expected call of PutMethodResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) PutMethodResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMethodResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutMethodResponseRequest), arg0)
 }
 
-// PutMethodResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) PutMethodResponseWithContext(arg0 context.Context, arg1 *apigateway.PutMethodResponseInput, arg2 ...request.Option) (*apigateway.MethodResponse, error) {
+// PutMethodResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) PutMethodResponseWithContext(arg0 aws.Context, arg1 *apigateway.PutMethodResponseInput, arg2 ...request.Option) (*apigateway.MethodResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5055,15 +5054,15 @@ func (m *MockAPIGatewayAPI) PutMethodResponseWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// PutMethodResponseWithContext indicates an expected call of PutMethodResponseWithContext.
+// PutMethodResponseWithContext indicates an expected call of PutMethodResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) PutMethodResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMethodResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutMethodResponseWithContext), varargs...)
 }
 
-// PutMethodWithContext mocks base method.
-func (m *MockAPIGatewayAPI) PutMethodWithContext(arg0 context.Context, arg1 *apigateway.PutMethodInput, arg2 ...request.Option) (*apigateway.Method, error) {
+// PutMethodWithContext mocks base method
+func (m *MockAPIGatewayAPI) PutMethodWithContext(arg0 aws.Context, arg1 *apigateway.PutMethodInput, arg2 ...request.Option) (*apigateway.Method, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5075,14 +5074,14 @@ func (m *MockAPIGatewayAPI) PutMethodWithContext(arg0 context.Context, arg1 *api
 	return ret0, ret1
 }
 
-// PutMethodWithContext indicates an expected call of PutMethodWithContext.
+// PutMethodWithContext indicates an expected call of PutMethodWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) PutMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMethodWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutMethodWithContext), varargs...)
 }
 
-// PutRestApi mocks base method.
+// PutRestApi mocks base method
 func (m *MockAPIGatewayAPI) PutRestApi(arg0 *apigateway.PutRestApiInput) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutRestApi", arg0)
@@ -5091,13 +5090,13 @@ func (m *MockAPIGatewayAPI) PutRestApi(arg0 *apigateway.PutRestApiInput) (*apiga
 	return ret0, ret1
 }
 
-// PutRestApi indicates an expected call of PutRestApi.
+// PutRestApi indicates an expected call of PutRestApi
 func (mr *MockAPIGatewayAPIMockRecorder) PutRestApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRestApi", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutRestApi), arg0)
 }
 
-// PutRestApiRequest mocks base method.
+// PutRestApiRequest mocks base method
 func (m *MockAPIGatewayAPI) PutRestApiRequest(arg0 *apigateway.PutRestApiInput) (*request.Request, *apigateway.RestApi) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutRestApiRequest", arg0)
@@ -5106,14 +5105,14 @@ func (m *MockAPIGatewayAPI) PutRestApiRequest(arg0 *apigateway.PutRestApiInput) 
 	return ret0, ret1
 }
 
-// PutRestApiRequest indicates an expected call of PutRestApiRequest.
+// PutRestApiRequest indicates an expected call of PutRestApiRequest
 func (mr *MockAPIGatewayAPIMockRecorder) PutRestApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRestApiRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutRestApiRequest), arg0)
 }
 
-// PutRestApiWithContext mocks base method.
-func (m *MockAPIGatewayAPI) PutRestApiWithContext(arg0 context.Context, arg1 *apigateway.PutRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
+// PutRestApiWithContext mocks base method
+func (m *MockAPIGatewayAPI) PutRestApiWithContext(arg0 aws.Context, arg1 *apigateway.PutRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5125,14 +5124,14 @@ func (m *MockAPIGatewayAPI) PutRestApiWithContext(arg0 context.Context, arg1 *ap
 	return ret0, ret1
 }
 
-// PutRestApiWithContext indicates an expected call of PutRestApiWithContext.
+// PutRestApiWithContext indicates an expected call of PutRestApiWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) PutRestApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRestApiWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).PutRestApiWithContext), varargs...)
 }
 
-// TagResource mocks base method.
+// TagResource mocks base method
 func (m *MockAPIGatewayAPI) TagResource(arg0 *apigateway.TagResourceInput) (*apigateway.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResource", arg0)
@@ -5141,13 +5140,13 @@ func (m *MockAPIGatewayAPI) TagResource(arg0 *apigateway.TagResourceInput) (*api
 	return ret0, ret1
 }
 
-// TagResource indicates an expected call of TagResource.
+// TagResource indicates an expected call of TagResource
 func (mr *MockAPIGatewayAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TagResource), arg0)
 }
 
-// TagResourceRequest mocks base method.
+// TagResourceRequest mocks base method
 func (m *MockAPIGatewayAPI) TagResourceRequest(arg0 *apigateway.TagResourceInput) (*request.Request, *apigateway.TagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
@@ -5156,14 +5155,14 @@ func (m *MockAPIGatewayAPI) TagResourceRequest(arg0 *apigateway.TagResourceInput
 	return ret0, ret1
 }
 
-// TagResourceRequest indicates an expected call of TagResourceRequest.
+// TagResourceRequest indicates an expected call of TagResourceRequest
 func (mr *MockAPIGatewayAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TagResourceRequest), arg0)
 }
 
-// TagResourceWithContext mocks base method.
-func (m *MockAPIGatewayAPI) TagResourceWithContext(arg0 context.Context, arg1 *apigateway.TagResourceInput, arg2 ...request.Option) (*apigateway.TagResourceOutput, error) {
+// TagResourceWithContext mocks base method
+func (m *MockAPIGatewayAPI) TagResourceWithContext(arg0 aws.Context, arg1 *apigateway.TagResourceInput, arg2 ...request.Option) (*apigateway.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5175,14 +5174,14 @@ func (m *MockAPIGatewayAPI) TagResourceWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TagResourceWithContext), varargs...)
 }
 
-// TestInvokeAuthorizer mocks base method.
+// TestInvokeAuthorizer mocks base method
 func (m *MockAPIGatewayAPI) TestInvokeAuthorizer(arg0 *apigateway.TestInvokeAuthorizerInput) (*apigateway.TestInvokeAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TestInvokeAuthorizer", arg0)
@@ -5191,13 +5190,13 @@ func (m *MockAPIGatewayAPI) TestInvokeAuthorizer(arg0 *apigateway.TestInvokeAuth
 	return ret0, ret1
 }
 
-// TestInvokeAuthorizer indicates an expected call of TestInvokeAuthorizer.
+// TestInvokeAuthorizer indicates an expected call of TestInvokeAuthorizer
 func (mr *MockAPIGatewayAPIMockRecorder) TestInvokeAuthorizer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestInvokeAuthorizer", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TestInvokeAuthorizer), arg0)
 }
 
-// TestInvokeAuthorizerRequest mocks base method.
+// TestInvokeAuthorizerRequest mocks base method
 func (m *MockAPIGatewayAPI) TestInvokeAuthorizerRequest(arg0 *apigateway.TestInvokeAuthorizerInput) (*request.Request, *apigateway.TestInvokeAuthorizerOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TestInvokeAuthorizerRequest", arg0)
@@ -5206,14 +5205,14 @@ func (m *MockAPIGatewayAPI) TestInvokeAuthorizerRequest(arg0 *apigateway.TestInv
 	return ret0, ret1
 }
 
-// TestInvokeAuthorizerRequest indicates an expected call of TestInvokeAuthorizerRequest.
+// TestInvokeAuthorizerRequest indicates an expected call of TestInvokeAuthorizerRequest
 func (mr *MockAPIGatewayAPIMockRecorder) TestInvokeAuthorizerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestInvokeAuthorizerRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TestInvokeAuthorizerRequest), arg0)
 }
 
-// TestInvokeAuthorizerWithContext mocks base method.
-func (m *MockAPIGatewayAPI) TestInvokeAuthorizerWithContext(arg0 context.Context, arg1 *apigateway.TestInvokeAuthorizerInput, arg2 ...request.Option) (*apigateway.TestInvokeAuthorizerOutput, error) {
+// TestInvokeAuthorizerWithContext mocks base method
+func (m *MockAPIGatewayAPI) TestInvokeAuthorizerWithContext(arg0 aws.Context, arg1 *apigateway.TestInvokeAuthorizerInput, arg2 ...request.Option) (*apigateway.TestInvokeAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5225,14 +5224,14 @@ func (m *MockAPIGatewayAPI) TestInvokeAuthorizerWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// TestInvokeAuthorizerWithContext indicates an expected call of TestInvokeAuthorizerWithContext.
+// TestInvokeAuthorizerWithContext indicates an expected call of TestInvokeAuthorizerWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) TestInvokeAuthorizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestInvokeAuthorizerWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TestInvokeAuthorizerWithContext), varargs...)
 }
 
-// TestInvokeMethod mocks base method.
+// TestInvokeMethod mocks base method
 func (m *MockAPIGatewayAPI) TestInvokeMethod(arg0 *apigateway.TestInvokeMethodInput) (*apigateway.TestInvokeMethodOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TestInvokeMethod", arg0)
@@ -5241,13 +5240,13 @@ func (m *MockAPIGatewayAPI) TestInvokeMethod(arg0 *apigateway.TestInvokeMethodIn
 	return ret0, ret1
 }
 
-// TestInvokeMethod indicates an expected call of TestInvokeMethod.
+// TestInvokeMethod indicates an expected call of TestInvokeMethod
 func (mr *MockAPIGatewayAPIMockRecorder) TestInvokeMethod(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestInvokeMethod", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TestInvokeMethod), arg0)
 }
 
-// TestInvokeMethodRequest mocks base method.
+// TestInvokeMethodRequest mocks base method
 func (m *MockAPIGatewayAPI) TestInvokeMethodRequest(arg0 *apigateway.TestInvokeMethodInput) (*request.Request, *apigateway.TestInvokeMethodOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TestInvokeMethodRequest", arg0)
@@ -5256,14 +5255,14 @@ func (m *MockAPIGatewayAPI) TestInvokeMethodRequest(arg0 *apigateway.TestInvokeM
 	return ret0, ret1
 }
 
-// TestInvokeMethodRequest indicates an expected call of TestInvokeMethodRequest.
+// TestInvokeMethodRequest indicates an expected call of TestInvokeMethodRequest
 func (mr *MockAPIGatewayAPIMockRecorder) TestInvokeMethodRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestInvokeMethodRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TestInvokeMethodRequest), arg0)
 }
 
-// TestInvokeMethodWithContext mocks base method.
-func (m *MockAPIGatewayAPI) TestInvokeMethodWithContext(arg0 context.Context, arg1 *apigateway.TestInvokeMethodInput, arg2 ...request.Option) (*apigateway.TestInvokeMethodOutput, error) {
+// TestInvokeMethodWithContext mocks base method
+func (m *MockAPIGatewayAPI) TestInvokeMethodWithContext(arg0 aws.Context, arg1 *apigateway.TestInvokeMethodInput, arg2 ...request.Option) (*apigateway.TestInvokeMethodOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5275,14 +5274,14 @@ func (m *MockAPIGatewayAPI) TestInvokeMethodWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// TestInvokeMethodWithContext indicates an expected call of TestInvokeMethodWithContext.
+// TestInvokeMethodWithContext indicates an expected call of TestInvokeMethodWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) TestInvokeMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestInvokeMethodWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).TestInvokeMethodWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
+// UntagResource mocks base method
 func (m *MockAPIGatewayAPI) UntagResource(arg0 *apigateway.UntagResourceInput) (*apigateway.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResource", arg0)
@@ -5291,13 +5290,13 @@ func (m *MockAPIGatewayAPI) UntagResource(arg0 *apigateway.UntagResourceInput) (
 	return ret0, ret1
 }
 
-// UntagResource indicates an expected call of UntagResource.
+// UntagResource indicates an expected call of UntagResource
 func (mr *MockAPIGatewayAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UntagResource), arg0)
 }
 
-// UntagResourceRequest mocks base method.
+// UntagResourceRequest mocks base method
 func (m *MockAPIGatewayAPI) UntagResourceRequest(arg0 *apigateway.UntagResourceInput) (*request.Request, *apigateway.UntagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
@@ -5306,14 +5305,14 @@ func (m *MockAPIGatewayAPI) UntagResourceRequest(arg0 *apigateway.UntagResourceI
 	return ret0, ret1
 }
 
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UntagResourceRequest), arg0)
 }
 
-// UntagResourceWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UntagResourceWithContext(arg0 context.Context, arg1 *apigateway.UntagResourceInput, arg2 ...request.Option) (*apigateway.UntagResourceOutput, error) {
+// UntagResourceWithContext mocks base method
+func (m *MockAPIGatewayAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *apigateway.UntagResourceInput, arg2 ...request.Option) (*apigateway.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5325,14 +5324,14 @@ func (m *MockAPIGatewayAPI) UntagResourceWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
-// UpdateAccount mocks base method.
+// UpdateAccount mocks base method
 func (m *MockAPIGatewayAPI) UpdateAccount(arg0 *apigateway.UpdateAccountInput) (*apigateway.Account, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAccount", arg0)
@@ -5341,13 +5340,13 @@ func (m *MockAPIGatewayAPI) UpdateAccount(arg0 *apigateway.UpdateAccountInput) (
 	return ret0, ret1
 }
 
-// UpdateAccount indicates an expected call of UpdateAccount.
+// UpdateAccount indicates an expected call of UpdateAccount
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateAccount(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccount", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateAccount), arg0)
 }
 
-// UpdateAccountRequest mocks base method.
+// UpdateAccountRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateAccountRequest(arg0 *apigateway.UpdateAccountInput) (*request.Request, *apigateway.Account) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAccountRequest", arg0)
@@ -5356,14 +5355,14 @@ func (m *MockAPIGatewayAPI) UpdateAccountRequest(arg0 *apigateway.UpdateAccountI
 	return ret0, ret1
 }
 
-// UpdateAccountRequest indicates an expected call of UpdateAccountRequest.
+// UpdateAccountRequest indicates an expected call of UpdateAccountRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateAccountRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateAccountRequest), arg0)
 }
 
-// UpdateAccountWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateAccountWithContext(arg0 context.Context, arg1 *apigateway.UpdateAccountInput, arg2 ...request.Option) (*apigateway.Account, error) {
+// UpdateAccountWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateAccountWithContext(arg0 aws.Context, arg1 *apigateway.UpdateAccountInput, arg2 ...request.Option) (*apigateway.Account, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5375,14 +5374,14 @@ func (m *MockAPIGatewayAPI) UpdateAccountWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateAccountWithContext indicates an expected call of UpdateAccountWithContext.
+// UpdateAccountWithContext indicates an expected call of UpdateAccountWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateAccountWithContext), varargs...)
 }
 
-// UpdateApiKey mocks base method.
+// UpdateApiKey mocks base method
 func (m *MockAPIGatewayAPI) UpdateApiKey(arg0 *apigateway.UpdateApiKeyInput) (*apigateway.ApiKey, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApiKey", arg0)
@@ -5391,13 +5390,13 @@ func (m *MockAPIGatewayAPI) UpdateApiKey(arg0 *apigateway.UpdateApiKeyInput) (*a
 	return ret0, ret1
 }
 
-// UpdateApiKey indicates an expected call of UpdateApiKey.
+// UpdateApiKey indicates an expected call of UpdateApiKey
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateApiKey(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiKey", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateApiKey), arg0)
 }
 
-// UpdateApiKeyRequest mocks base method.
+// UpdateApiKeyRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateApiKeyRequest(arg0 *apigateway.UpdateApiKeyInput) (*request.Request, *apigateway.ApiKey) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateApiKeyRequest", arg0)
@@ -5406,14 +5405,14 @@ func (m *MockAPIGatewayAPI) UpdateApiKeyRequest(arg0 *apigateway.UpdateApiKeyInp
 	return ret0, ret1
 }
 
-// UpdateApiKeyRequest indicates an expected call of UpdateApiKeyRequest.
+// UpdateApiKeyRequest indicates an expected call of UpdateApiKeyRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateApiKeyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiKeyRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateApiKeyRequest), arg0)
 }
 
-// UpdateApiKeyWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateApiKeyWithContext(arg0 context.Context, arg1 *apigateway.UpdateApiKeyInput, arg2 ...request.Option) (*apigateway.ApiKey, error) {
+// UpdateApiKeyWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateApiKeyWithContext(arg0 aws.Context, arg1 *apigateway.UpdateApiKeyInput, arg2 ...request.Option) (*apigateway.ApiKey, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5425,14 +5424,14 @@ func (m *MockAPIGatewayAPI) UpdateApiKeyWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// UpdateApiKeyWithContext indicates an expected call of UpdateApiKeyWithContext.
+// UpdateApiKeyWithContext indicates an expected call of UpdateApiKeyWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiKeyWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateApiKeyWithContext), varargs...)
 }
 
-// UpdateAuthorizer mocks base method.
+// UpdateAuthorizer mocks base method
 func (m *MockAPIGatewayAPI) UpdateAuthorizer(arg0 *apigateway.UpdateAuthorizerInput) (*apigateway.Authorizer, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAuthorizer", arg0)
@@ -5441,13 +5440,13 @@ func (m *MockAPIGatewayAPI) UpdateAuthorizer(arg0 *apigateway.UpdateAuthorizerIn
 	return ret0, ret1
 }
 
-// UpdateAuthorizer indicates an expected call of UpdateAuthorizer.
+// UpdateAuthorizer indicates an expected call of UpdateAuthorizer
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateAuthorizer(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthorizer", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateAuthorizer), arg0)
 }
 
-// UpdateAuthorizerRequest mocks base method.
+// UpdateAuthorizerRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateAuthorizerRequest(arg0 *apigateway.UpdateAuthorizerInput) (*request.Request, *apigateway.Authorizer) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAuthorizerRequest", arg0)
@@ -5456,14 +5455,14 @@ func (m *MockAPIGatewayAPI) UpdateAuthorizerRequest(arg0 *apigateway.UpdateAutho
 	return ret0, ret1
 }
 
-// UpdateAuthorizerRequest indicates an expected call of UpdateAuthorizerRequest.
+// UpdateAuthorizerRequest indicates an expected call of UpdateAuthorizerRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateAuthorizerRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthorizerRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateAuthorizerRequest), arg0)
 }
 
-// UpdateAuthorizerWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateAuthorizerWithContext(arg0 context.Context, arg1 *apigateway.UpdateAuthorizerInput, arg2 ...request.Option) (*apigateway.Authorizer, error) {
+// UpdateAuthorizerWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateAuthorizerWithContext(arg0 aws.Context, arg1 *apigateway.UpdateAuthorizerInput, arg2 ...request.Option) (*apigateway.Authorizer, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5475,14 +5474,14 @@ func (m *MockAPIGatewayAPI) UpdateAuthorizerWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UpdateAuthorizerWithContext indicates an expected call of UpdateAuthorizerWithContext.
+// UpdateAuthorizerWithContext indicates an expected call of UpdateAuthorizerWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateAuthorizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthorizerWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateAuthorizerWithContext), varargs...)
 }
 
-// UpdateBasePathMapping mocks base method.
+// UpdateBasePathMapping mocks base method
 func (m *MockAPIGatewayAPI) UpdateBasePathMapping(arg0 *apigateway.UpdateBasePathMappingInput) (*apigateway.BasePathMapping, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBasePathMapping", arg0)
@@ -5491,13 +5490,13 @@ func (m *MockAPIGatewayAPI) UpdateBasePathMapping(arg0 *apigateway.UpdateBasePat
 	return ret0, ret1
 }
 
-// UpdateBasePathMapping indicates an expected call of UpdateBasePathMapping.
+// UpdateBasePathMapping indicates an expected call of UpdateBasePathMapping
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateBasePathMapping(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBasePathMapping", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateBasePathMapping), arg0)
 }
 
-// UpdateBasePathMappingRequest mocks base method.
+// UpdateBasePathMappingRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateBasePathMappingRequest(arg0 *apigateway.UpdateBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateBasePathMappingRequest", arg0)
@@ -5506,14 +5505,14 @@ func (m *MockAPIGatewayAPI) UpdateBasePathMappingRequest(arg0 *apigateway.Update
 	return ret0, ret1
 }
 
-// UpdateBasePathMappingRequest indicates an expected call of UpdateBasePathMappingRequest.
+// UpdateBasePathMappingRequest indicates an expected call of UpdateBasePathMappingRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateBasePathMappingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBasePathMappingRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateBasePathMappingRequest), arg0)
 }
 
-// UpdateBasePathMappingWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateBasePathMappingWithContext(arg0 context.Context, arg1 *apigateway.UpdateBasePathMappingInput, arg2 ...request.Option) (*apigateway.BasePathMapping, error) {
+// UpdateBasePathMappingWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateBasePathMappingWithContext(arg0 aws.Context, arg1 *apigateway.UpdateBasePathMappingInput, arg2 ...request.Option) (*apigateway.BasePathMapping, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5525,14 +5524,14 @@ func (m *MockAPIGatewayAPI) UpdateBasePathMappingWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdateBasePathMappingWithContext indicates an expected call of UpdateBasePathMappingWithContext.
+// UpdateBasePathMappingWithContext indicates an expected call of UpdateBasePathMappingWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateBasePathMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBasePathMappingWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateBasePathMappingWithContext), varargs...)
 }
 
-// UpdateClientCertificate mocks base method.
+// UpdateClientCertificate mocks base method
 func (m *MockAPIGatewayAPI) UpdateClientCertificate(arg0 *apigateway.UpdateClientCertificateInput) (*apigateway.ClientCertificate, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateClientCertificate", arg0)
@@ -5541,13 +5540,13 @@ func (m *MockAPIGatewayAPI) UpdateClientCertificate(arg0 *apigateway.UpdateClien
 	return ret0, ret1
 }
 
-// UpdateClientCertificate indicates an expected call of UpdateClientCertificate.
+// UpdateClientCertificate indicates an expected call of UpdateClientCertificate
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateClientCertificate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClientCertificate", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateClientCertificate), arg0)
 }
 
-// UpdateClientCertificateRequest mocks base method.
+// UpdateClientCertificateRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateClientCertificateRequest(arg0 *apigateway.UpdateClientCertificateInput) (*request.Request, *apigateway.ClientCertificate) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateClientCertificateRequest", arg0)
@@ -5556,14 +5555,14 @@ func (m *MockAPIGatewayAPI) UpdateClientCertificateRequest(arg0 *apigateway.Upda
 	return ret0, ret1
 }
 
-// UpdateClientCertificateRequest indicates an expected call of UpdateClientCertificateRequest.
+// UpdateClientCertificateRequest indicates an expected call of UpdateClientCertificateRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateClientCertificateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClientCertificateRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateClientCertificateRequest), arg0)
 }
 
-// UpdateClientCertificateWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateClientCertificateWithContext(arg0 context.Context, arg1 *apigateway.UpdateClientCertificateInput, arg2 ...request.Option) (*apigateway.ClientCertificate, error) {
+// UpdateClientCertificateWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateClientCertificateWithContext(arg0 aws.Context, arg1 *apigateway.UpdateClientCertificateInput, arg2 ...request.Option) (*apigateway.ClientCertificate, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5575,14 +5574,14 @@ func (m *MockAPIGatewayAPI) UpdateClientCertificateWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateClientCertificateWithContext indicates an expected call of UpdateClientCertificateWithContext.
+// UpdateClientCertificateWithContext indicates an expected call of UpdateClientCertificateWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateClientCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClientCertificateWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateClientCertificateWithContext), varargs...)
 }
 
-// UpdateDeployment mocks base method.
+// UpdateDeployment mocks base method
 func (m *MockAPIGatewayAPI) UpdateDeployment(arg0 *apigateway.UpdateDeploymentInput) (*apigateway.Deployment, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeployment", arg0)
@@ -5591,13 +5590,13 @@ func (m *MockAPIGatewayAPI) UpdateDeployment(arg0 *apigateway.UpdateDeploymentIn
 	return ret0, ret1
 }
 
-// UpdateDeployment indicates an expected call of UpdateDeployment.
+// UpdateDeployment indicates an expected call of UpdateDeployment
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDeployment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeployment", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDeployment), arg0)
 }
 
-// UpdateDeploymentRequest mocks base method.
+// UpdateDeploymentRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateDeploymentRequest(arg0 *apigateway.UpdateDeploymentInput) (*request.Request, *apigateway.Deployment) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeploymentRequest", arg0)
@@ -5606,14 +5605,14 @@ func (m *MockAPIGatewayAPI) UpdateDeploymentRequest(arg0 *apigateway.UpdateDeplo
 	return ret0, ret1
 }
 
-// UpdateDeploymentRequest indicates an expected call of UpdateDeploymentRequest.
+// UpdateDeploymentRequest indicates an expected call of UpdateDeploymentRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDeploymentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeploymentRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDeploymentRequest), arg0)
 }
 
-// UpdateDeploymentWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateDeploymentWithContext(arg0 context.Context, arg1 *apigateway.UpdateDeploymentInput, arg2 ...request.Option) (*apigateway.Deployment, error) {
+// UpdateDeploymentWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateDeploymentWithContext(arg0 aws.Context, arg1 *apigateway.UpdateDeploymentInput, arg2 ...request.Option) (*apigateway.Deployment, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5625,14 +5624,14 @@ func (m *MockAPIGatewayAPI) UpdateDeploymentWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UpdateDeploymentWithContext indicates an expected call of UpdateDeploymentWithContext.
+// UpdateDeploymentWithContext indicates an expected call of UpdateDeploymentWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeploymentWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDeploymentWithContext), varargs...)
 }
 
-// UpdateDocumentationPart mocks base method.
+// UpdateDocumentationPart mocks base method
 func (m *MockAPIGatewayAPI) UpdateDocumentationPart(arg0 *apigateway.UpdateDocumentationPartInput) (*apigateway.DocumentationPart, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentationPart", arg0)
@@ -5641,13 +5640,13 @@ func (m *MockAPIGatewayAPI) UpdateDocumentationPart(arg0 *apigateway.UpdateDocum
 	return ret0, ret1
 }
 
-// UpdateDocumentationPart indicates an expected call of UpdateDocumentationPart.
+// UpdateDocumentationPart indicates an expected call of UpdateDocumentationPart
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDocumentationPart(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentationPart", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDocumentationPart), arg0)
 }
 
-// UpdateDocumentationPartRequest mocks base method.
+// UpdateDocumentationPartRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateDocumentationPartRequest(arg0 *apigateway.UpdateDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentationPartRequest", arg0)
@@ -5656,14 +5655,14 @@ func (m *MockAPIGatewayAPI) UpdateDocumentationPartRequest(arg0 *apigateway.Upda
 	return ret0, ret1
 }
 
-// UpdateDocumentationPartRequest indicates an expected call of UpdateDocumentationPartRequest.
+// UpdateDocumentationPartRequest indicates an expected call of UpdateDocumentationPartRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDocumentationPartRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentationPartRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDocumentationPartRequest), arg0)
 }
 
-// UpdateDocumentationPartWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateDocumentationPartWithContext(arg0 context.Context, arg1 *apigateway.UpdateDocumentationPartInput, arg2 ...request.Option) (*apigateway.DocumentationPart, error) {
+// UpdateDocumentationPartWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateDocumentationPartWithContext(arg0 aws.Context, arg1 *apigateway.UpdateDocumentationPartInput, arg2 ...request.Option) (*apigateway.DocumentationPart, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5675,14 +5674,14 @@ func (m *MockAPIGatewayAPI) UpdateDocumentationPartWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateDocumentationPartWithContext indicates an expected call of UpdateDocumentationPartWithContext.
+// UpdateDocumentationPartWithContext indicates an expected call of UpdateDocumentationPartWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDocumentationPartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentationPartWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDocumentationPartWithContext), varargs...)
 }
 
-// UpdateDocumentationVersion mocks base method.
+// UpdateDocumentationVersion mocks base method
 func (m *MockAPIGatewayAPI) UpdateDocumentationVersion(arg0 *apigateway.UpdateDocumentationVersionInput) (*apigateway.DocumentationVersion, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentationVersion", arg0)
@@ -5691,13 +5690,13 @@ func (m *MockAPIGatewayAPI) UpdateDocumentationVersion(arg0 *apigateway.UpdateDo
 	return ret0, ret1
 }
 
-// UpdateDocumentationVersion indicates an expected call of UpdateDocumentationVersion.
+// UpdateDocumentationVersion indicates an expected call of UpdateDocumentationVersion
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDocumentationVersion(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentationVersion", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDocumentationVersion), arg0)
 }
 
-// UpdateDocumentationVersionRequest mocks base method.
+// UpdateDocumentationVersionRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateDocumentationVersionRequest(arg0 *apigateway.UpdateDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDocumentationVersionRequest", arg0)
@@ -5706,14 +5705,14 @@ func (m *MockAPIGatewayAPI) UpdateDocumentationVersionRequest(arg0 *apigateway.U
 	return ret0, ret1
 }
 
-// UpdateDocumentationVersionRequest indicates an expected call of UpdateDocumentationVersionRequest.
+// UpdateDocumentationVersionRequest indicates an expected call of UpdateDocumentationVersionRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDocumentationVersionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentationVersionRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDocumentationVersionRequest), arg0)
 }
 
-// UpdateDocumentationVersionWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateDocumentationVersionWithContext(arg0 context.Context, arg1 *apigateway.UpdateDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DocumentationVersion, error) {
+// UpdateDocumentationVersionWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateDocumentationVersionWithContext(arg0 aws.Context, arg1 *apigateway.UpdateDocumentationVersionInput, arg2 ...request.Option) (*apigateway.DocumentationVersion, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5725,14 +5724,14 @@ func (m *MockAPIGatewayAPI) UpdateDocumentationVersionWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// UpdateDocumentationVersionWithContext indicates an expected call of UpdateDocumentationVersionWithContext.
+// UpdateDocumentationVersionWithContext indicates an expected call of UpdateDocumentationVersionWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDocumentationVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentationVersionWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDocumentationVersionWithContext), varargs...)
 }
 
-// UpdateDomainName mocks base method.
+// UpdateDomainName mocks base method
 func (m *MockAPIGatewayAPI) UpdateDomainName(arg0 *apigateway.UpdateDomainNameInput) (*apigateway.DomainName, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainName", arg0)
@@ -5741,13 +5740,13 @@ func (m *MockAPIGatewayAPI) UpdateDomainName(arg0 *apigateway.UpdateDomainNameIn
 	return ret0, ret1
 }
 
-// UpdateDomainName indicates an expected call of UpdateDomainName.
+// UpdateDomainName indicates an expected call of UpdateDomainName
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDomainName(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainName", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDomainName), arg0)
 }
 
-// UpdateDomainNameRequest mocks base method.
+// UpdateDomainNameRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateDomainNameRequest(arg0 *apigateway.UpdateDomainNameInput) (*request.Request, *apigateway.DomainName) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainNameRequest", arg0)
@@ -5756,14 +5755,14 @@ func (m *MockAPIGatewayAPI) UpdateDomainNameRequest(arg0 *apigateway.UpdateDomai
 	return ret0, ret1
 }
 
-// UpdateDomainNameRequest indicates an expected call of UpdateDomainNameRequest.
+// UpdateDomainNameRequest indicates an expected call of UpdateDomainNameRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDomainNameRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDomainNameRequest), arg0)
 }
 
-// UpdateDomainNameWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateDomainNameWithContext(arg0 context.Context, arg1 *apigateway.UpdateDomainNameInput, arg2 ...request.Option) (*apigateway.DomainName, error) {
+// UpdateDomainNameWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateDomainNameWithContext(arg0 aws.Context, arg1 *apigateway.UpdateDomainNameInput, arg2 ...request.Option) (*apigateway.DomainName, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5775,14 +5774,14 @@ func (m *MockAPIGatewayAPI) UpdateDomainNameWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UpdateDomainNameWithContext indicates an expected call of UpdateDomainNameWithContext.
+// UpdateDomainNameWithContext indicates an expected call of UpdateDomainNameWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateDomainNameWithContext), varargs...)
 }
 
-// UpdateGatewayResponse mocks base method.
+// UpdateGatewayResponse mocks base method
 func (m *MockAPIGatewayAPI) UpdateGatewayResponse(arg0 *apigateway.UpdateGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGatewayResponse", arg0)
@@ -5791,13 +5790,13 @@ func (m *MockAPIGatewayAPI) UpdateGatewayResponse(arg0 *apigateway.UpdateGateway
 	return ret0, ret1
 }
 
-// UpdateGatewayResponse indicates an expected call of UpdateGatewayResponse.
+// UpdateGatewayResponse indicates an expected call of UpdateGatewayResponse
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateGatewayResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateGatewayResponse), arg0)
 }
 
-// UpdateGatewayResponseRequest mocks base method.
+// UpdateGatewayResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateGatewayResponseRequest(arg0 *apigateway.UpdateGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateGatewayResponseRequest", arg0)
@@ -5806,14 +5805,14 @@ func (m *MockAPIGatewayAPI) UpdateGatewayResponseRequest(arg0 *apigateway.Update
 	return ret0, ret1
 }
 
-// UpdateGatewayResponseRequest indicates an expected call of UpdateGatewayResponseRequest.
+// UpdateGatewayResponseRequest indicates an expected call of UpdateGatewayResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateGatewayResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateGatewayResponseRequest), arg0)
 }
 
-// UpdateGatewayResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateGatewayResponseWithContext(arg0 context.Context, arg1 *apigateway.UpdateGatewayResponseInput, arg2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
+// UpdateGatewayResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateGatewayResponseWithContext(arg0 aws.Context, arg1 *apigateway.UpdateGatewayResponseInput, arg2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5825,14 +5824,14 @@ func (m *MockAPIGatewayAPI) UpdateGatewayResponseWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdateGatewayResponseWithContext indicates an expected call of UpdateGatewayResponseWithContext.
+// UpdateGatewayResponseWithContext indicates an expected call of UpdateGatewayResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateGatewayResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateGatewayResponseWithContext), varargs...)
 }
 
-// UpdateIntegration mocks base method.
+// UpdateIntegration mocks base method
 func (m *MockAPIGatewayAPI) UpdateIntegration(arg0 *apigateway.UpdateIntegrationInput) (*apigateway.Integration, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIntegration", arg0)
@@ -5841,13 +5840,13 @@ func (m *MockAPIGatewayAPI) UpdateIntegration(arg0 *apigateway.UpdateIntegration
 	return ret0, ret1
 }
 
-// UpdateIntegration indicates an expected call of UpdateIntegration.
+// UpdateIntegration indicates an expected call of UpdateIntegration
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateIntegration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIntegration", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateIntegration), arg0)
 }
 
-// UpdateIntegrationRequest mocks base method.
+// UpdateIntegrationRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateIntegrationRequest(arg0 *apigateway.UpdateIntegrationInput) (*request.Request, *apigateway.Integration) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIntegrationRequest", arg0)
@@ -5856,13 +5855,13 @@ func (m *MockAPIGatewayAPI) UpdateIntegrationRequest(arg0 *apigateway.UpdateInte
 	return ret0, ret1
 }
 
-// UpdateIntegrationRequest indicates an expected call of UpdateIntegrationRequest.
+// UpdateIntegrationRequest indicates an expected call of UpdateIntegrationRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateIntegrationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIntegrationRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateIntegrationRequest), arg0)
 }
 
-// UpdateIntegrationResponse mocks base method.
+// UpdateIntegrationResponse mocks base method
 func (m *MockAPIGatewayAPI) UpdateIntegrationResponse(arg0 *apigateway.UpdateIntegrationResponseInput) (*apigateway.IntegrationResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIntegrationResponse", arg0)
@@ -5871,13 +5870,13 @@ func (m *MockAPIGatewayAPI) UpdateIntegrationResponse(arg0 *apigateway.UpdateInt
 	return ret0, ret1
 }
 
-// UpdateIntegrationResponse indicates an expected call of UpdateIntegrationResponse.
+// UpdateIntegrationResponse indicates an expected call of UpdateIntegrationResponse
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateIntegrationResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIntegrationResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateIntegrationResponse), arg0)
 }
 
-// UpdateIntegrationResponseRequest mocks base method.
+// UpdateIntegrationResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateIntegrationResponseRequest(arg0 *apigateway.UpdateIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateIntegrationResponseRequest", arg0)
@@ -5886,14 +5885,14 @@ func (m *MockAPIGatewayAPI) UpdateIntegrationResponseRequest(arg0 *apigateway.Up
 	return ret0, ret1
 }
 
-// UpdateIntegrationResponseRequest indicates an expected call of UpdateIntegrationResponseRequest.
+// UpdateIntegrationResponseRequest indicates an expected call of UpdateIntegrationResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateIntegrationResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIntegrationResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateIntegrationResponseRequest), arg0)
 }
 
-// UpdateIntegrationResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateIntegrationResponseWithContext(arg0 context.Context, arg1 *apigateway.UpdateIntegrationResponseInput, arg2 ...request.Option) (*apigateway.IntegrationResponse, error) {
+// UpdateIntegrationResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigateway.UpdateIntegrationResponseInput, arg2 ...request.Option) (*apigateway.IntegrationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5905,15 +5904,15 @@ func (m *MockAPIGatewayAPI) UpdateIntegrationResponseWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// UpdateIntegrationResponseWithContext indicates an expected call of UpdateIntegrationResponseWithContext.
+// UpdateIntegrationResponseWithContext indicates an expected call of UpdateIntegrationResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateIntegrationResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIntegrationResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateIntegrationResponseWithContext), varargs...)
 }
 
-// UpdateIntegrationWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateIntegrationWithContext(arg0 context.Context, arg1 *apigateway.UpdateIntegrationInput, arg2 ...request.Option) (*apigateway.Integration, error) {
+// UpdateIntegrationWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateIntegrationWithContext(arg0 aws.Context, arg1 *apigateway.UpdateIntegrationInput, arg2 ...request.Option) (*apigateway.Integration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5925,14 +5924,14 @@ func (m *MockAPIGatewayAPI) UpdateIntegrationWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// UpdateIntegrationWithContext indicates an expected call of UpdateIntegrationWithContext.
+// UpdateIntegrationWithContext indicates an expected call of UpdateIntegrationWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIntegrationWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateIntegrationWithContext), varargs...)
 }
 
-// UpdateMethod mocks base method.
+// UpdateMethod mocks base method
 func (m *MockAPIGatewayAPI) UpdateMethod(arg0 *apigateway.UpdateMethodInput) (*apigateway.Method, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMethod", arg0)
@@ -5941,13 +5940,13 @@ func (m *MockAPIGatewayAPI) UpdateMethod(arg0 *apigateway.UpdateMethodInput) (*a
 	return ret0, ret1
 }
 
-// UpdateMethod indicates an expected call of UpdateMethod.
+// UpdateMethod indicates an expected call of UpdateMethod
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateMethod(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMethod", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateMethod), arg0)
 }
 
-// UpdateMethodRequest mocks base method.
+// UpdateMethodRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateMethodRequest(arg0 *apigateway.UpdateMethodInput) (*request.Request, *apigateway.Method) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMethodRequest", arg0)
@@ -5956,13 +5955,13 @@ func (m *MockAPIGatewayAPI) UpdateMethodRequest(arg0 *apigateway.UpdateMethodInp
 	return ret0, ret1
 }
 
-// UpdateMethodRequest indicates an expected call of UpdateMethodRequest.
+// UpdateMethodRequest indicates an expected call of UpdateMethodRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateMethodRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMethodRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateMethodRequest), arg0)
 }
 
-// UpdateMethodResponse mocks base method.
+// UpdateMethodResponse mocks base method
 func (m *MockAPIGatewayAPI) UpdateMethodResponse(arg0 *apigateway.UpdateMethodResponseInput) (*apigateway.MethodResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMethodResponse", arg0)
@@ -5971,13 +5970,13 @@ func (m *MockAPIGatewayAPI) UpdateMethodResponse(arg0 *apigateway.UpdateMethodRe
 	return ret0, ret1
 }
 
-// UpdateMethodResponse indicates an expected call of UpdateMethodResponse.
+// UpdateMethodResponse indicates an expected call of UpdateMethodResponse
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateMethodResponse(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMethodResponse", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateMethodResponse), arg0)
 }
 
-// UpdateMethodResponseRequest mocks base method.
+// UpdateMethodResponseRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateMethodResponseRequest(arg0 *apigateway.UpdateMethodResponseInput) (*request.Request, *apigateway.MethodResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateMethodResponseRequest", arg0)
@@ -5986,14 +5985,14 @@ func (m *MockAPIGatewayAPI) UpdateMethodResponseRequest(arg0 *apigateway.UpdateM
 	return ret0, ret1
 }
 
-// UpdateMethodResponseRequest indicates an expected call of UpdateMethodResponseRequest.
+// UpdateMethodResponseRequest indicates an expected call of UpdateMethodResponseRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateMethodResponseRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMethodResponseRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateMethodResponseRequest), arg0)
 }
 
-// UpdateMethodResponseWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateMethodResponseWithContext(arg0 context.Context, arg1 *apigateway.UpdateMethodResponseInput, arg2 ...request.Option) (*apigateway.MethodResponse, error) {
+// UpdateMethodResponseWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateMethodResponseWithContext(arg0 aws.Context, arg1 *apigateway.UpdateMethodResponseInput, arg2 ...request.Option) (*apigateway.MethodResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6005,15 +6004,15 @@ func (m *MockAPIGatewayAPI) UpdateMethodResponseWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// UpdateMethodResponseWithContext indicates an expected call of UpdateMethodResponseWithContext.
+// UpdateMethodResponseWithContext indicates an expected call of UpdateMethodResponseWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateMethodResponseWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMethodResponseWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateMethodResponseWithContext), varargs...)
 }
 
-// UpdateMethodWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateMethodWithContext(arg0 context.Context, arg1 *apigateway.UpdateMethodInput, arg2 ...request.Option) (*apigateway.Method, error) {
+// UpdateMethodWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateMethodWithContext(arg0 aws.Context, arg1 *apigateway.UpdateMethodInput, arg2 ...request.Option) (*apigateway.Method, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6025,14 +6024,14 @@ func (m *MockAPIGatewayAPI) UpdateMethodWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// UpdateMethodWithContext indicates an expected call of UpdateMethodWithContext.
+// UpdateMethodWithContext indicates an expected call of UpdateMethodWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMethodWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateMethodWithContext), varargs...)
 }
 
-// UpdateModel mocks base method.
+// UpdateModel mocks base method
 func (m *MockAPIGatewayAPI) UpdateModel(arg0 *apigateway.UpdateModelInput) (*apigateway.Model, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateModel", arg0)
@@ -6041,13 +6040,13 @@ func (m *MockAPIGatewayAPI) UpdateModel(arg0 *apigateway.UpdateModelInput) (*api
 	return ret0, ret1
 }
 
-// UpdateModel indicates an expected call of UpdateModel.
+// UpdateModel indicates an expected call of UpdateModel
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateModel", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateModel), arg0)
 }
 
-// UpdateModelRequest mocks base method.
+// UpdateModelRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateModelRequest(arg0 *apigateway.UpdateModelInput) (*request.Request, *apigateway.Model) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateModelRequest", arg0)
@@ -6056,14 +6055,14 @@ func (m *MockAPIGatewayAPI) UpdateModelRequest(arg0 *apigateway.UpdateModelInput
 	return ret0, ret1
 }
 
-// UpdateModelRequest indicates an expected call of UpdateModelRequest.
+// UpdateModelRequest indicates an expected call of UpdateModelRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateModelRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateModelRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateModelRequest), arg0)
 }
 
-// UpdateModelWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateModelWithContext(arg0 context.Context, arg1 *apigateway.UpdateModelInput, arg2 ...request.Option) (*apigateway.Model, error) {
+// UpdateModelWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateModelWithContext(arg0 aws.Context, arg1 *apigateway.UpdateModelInput, arg2 ...request.Option) (*apigateway.Model, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6075,14 +6074,14 @@ func (m *MockAPIGatewayAPI) UpdateModelWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// UpdateModelWithContext indicates an expected call of UpdateModelWithContext.
+// UpdateModelWithContext indicates an expected call of UpdateModelWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateModelWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateModelWithContext), varargs...)
 }
 
-// UpdateRequestValidator mocks base method.
+// UpdateRequestValidator mocks base method
 func (m *MockAPIGatewayAPI) UpdateRequestValidator(arg0 *apigateway.UpdateRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRequestValidator", arg0)
@@ -6091,13 +6090,13 @@ func (m *MockAPIGatewayAPI) UpdateRequestValidator(arg0 *apigateway.UpdateReques
 	return ret0, ret1
 }
 
-// UpdateRequestValidator indicates an expected call of UpdateRequestValidator.
+// UpdateRequestValidator indicates an expected call of UpdateRequestValidator
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateRequestValidator(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRequestValidator", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateRequestValidator), arg0)
 }
 
-// UpdateRequestValidatorRequest mocks base method.
+// UpdateRequestValidatorRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateRequestValidatorRequest(arg0 *apigateway.UpdateRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRequestValidatorRequest", arg0)
@@ -6106,14 +6105,14 @@ func (m *MockAPIGatewayAPI) UpdateRequestValidatorRequest(arg0 *apigateway.Updat
 	return ret0, ret1
 }
 
-// UpdateRequestValidatorRequest indicates an expected call of UpdateRequestValidatorRequest.
+// UpdateRequestValidatorRequest indicates an expected call of UpdateRequestValidatorRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateRequestValidatorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRequestValidatorRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateRequestValidatorRequest), arg0)
 }
 
-// UpdateRequestValidatorWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateRequestValidatorWithContext(arg0 context.Context, arg1 *apigateway.UpdateRequestValidatorInput, arg2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
+// UpdateRequestValidatorWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateRequestValidatorWithContext(arg0 aws.Context, arg1 *apigateway.UpdateRequestValidatorInput, arg2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6125,14 +6124,14 @@ func (m *MockAPIGatewayAPI) UpdateRequestValidatorWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// UpdateRequestValidatorWithContext indicates an expected call of UpdateRequestValidatorWithContext.
+// UpdateRequestValidatorWithContext indicates an expected call of UpdateRequestValidatorWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateRequestValidatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRequestValidatorWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateRequestValidatorWithContext), varargs...)
 }
 
-// UpdateResource mocks base method.
+// UpdateResource mocks base method
 func (m *MockAPIGatewayAPI) UpdateResource(arg0 *apigateway.UpdateResourceInput) (*apigateway.Resource, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateResource", arg0)
@@ -6141,13 +6140,13 @@ func (m *MockAPIGatewayAPI) UpdateResource(arg0 *apigateway.UpdateResourceInput)
 	return ret0, ret1
 }
 
-// UpdateResource indicates an expected call of UpdateResource.
+// UpdateResource indicates an expected call of UpdateResource
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResource", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateResource), arg0)
 }
 
-// UpdateResourceRequest mocks base method.
+// UpdateResourceRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateResourceRequest(arg0 *apigateway.UpdateResourceInput) (*request.Request, *apigateway.Resource) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateResourceRequest", arg0)
@@ -6156,14 +6155,14 @@ func (m *MockAPIGatewayAPI) UpdateResourceRequest(arg0 *apigateway.UpdateResourc
 	return ret0, ret1
 }
 
-// UpdateResourceRequest indicates an expected call of UpdateResourceRequest.
+// UpdateResourceRequest indicates an expected call of UpdateResourceRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateResourceRequest), arg0)
 }
 
-// UpdateResourceWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateResourceWithContext(arg0 context.Context, arg1 *apigateway.UpdateResourceInput, arg2 ...request.Option) (*apigateway.Resource, error) {
+// UpdateResourceWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateResourceWithContext(arg0 aws.Context, arg1 *apigateway.UpdateResourceInput, arg2 ...request.Option) (*apigateway.Resource, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6175,14 +6174,14 @@ func (m *MockAPIGatewayAPI) UpdateResourceWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// UpdateResourceWithContext indicates an expected call of UpdateResourceWithContext.
+// UpdateResourceWithContext indicates an expected call of UpdateResourceWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateResourceWithContext), varargs...)
 }
 
-// UpdateRestApi mocks base method.
+// UpdateRestApi mocks base method
 func (m *MockAPIGatewayAPI) UpdateRestApi(arg0 *apigateway.UpdateRestApiInput) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRestApi", arg0)
@@ -6191,13 +6190,13 @@ func (m *MockAPIGatewayAPI) UpdateRestApi(arg0 *apigateway.UpdateRestApiInput) (
 	return ret0, ret1
 }
 
-// UpdateRestApi indicates an expected call of UpdateRestApi.
+// UpdateRestApi indicates an expected call of UpdateRestApi
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateRestApi(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRestApi", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateRestApi), arg0)
 }
 
-// UpdateRestApiRequest mocks base method.
+// UpdateRestApiRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateRestApiRequest(arg0 *apigateway.UpdateRestApiInput) (*request.Request, *apigateway.RestApi) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRestApiRequest", arg0)
@@ -6206,14 +6205,14 @@ func (m *MockAPIGatewayAPI) UpdateRestApiRequest(arg0 *apigateway.UpdateRestApiI
 	return ret0, ret1
 }
 
-// UpdateRestApiRequest indicates an expected call of UpdateRestApiRequest.
+// UpdateRestApiRequest indicates an expected call of UpdateRestApiRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateRestApiRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRestApiRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateRestApiRequest), arg0)
 }
 
-// UpdateRestApiWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateRestApiWithContext(arg0 context.Context, arg1 *apigateway.UpdateRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
+// UpdateRestApiWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateRestApiWithContext(arg0 aws.Context, arg1 *apigateway.UpdateRestApiInput, arg2 ...request.Option) (*apigateway.RestApi, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6225,14 +6224,14 @@ func (m *MockAPIGatewayAPI) UpdateRestApiWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateRestApiWithContext indicates an expected call of UpdateRestApiWithContext.
+// UpdateRestApiWithContext indicates an expected call of UpdateRestApiWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateRestApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRestApiWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateRestApiWithContext), varargs...)
 }
 
-// UpdateStage mocks base method.
+// UpdateStage mocks base method
 func (m *MockAPIGatewayAPI) UpdateStage(arg0 *apigateway.UpdateStageInput) (*apigateway.Stage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateStage", arg0)
@@ -6241,13 +6240,13 @@ func (m *MockAPIGatewayAPI) UpdateStage(arg0 *apigateway.UpdateStageInput) (*api
 	return ret0, ret1
 }
 
-// UpdateStage indicates an expected call of UpdateStage.
+// UpdateStage indicates an expected call of UpdateStage
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateStage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStage", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateStage), arg0)
 }
 
-// UpdateStageRequest mocks base method.
+// UpdateStageRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateStageRequest(arg0 *apigateway.UpdateStageInput) (*request.Request, *apigateway.Stage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateStageRequest", arg0)
@@ -6256,14 +6255,14 @@ func (m *MockAPIGatewayAPI) UpdateStageRequest(arg0 *apigateway.UpdateStageInput
 	return ret0, ret1
 }
 
-// UpdateStageRequest indicates an expected call of UpdateStageRequest.
+// UpdateStageRequest indicates an expected call of UpdateStageRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateStageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStageRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateStageRequest), arg0)
 }
 
-// UpdateStageWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateStageWithContext(arg0 context.Context, arg1 *apigateway.UpdateStageInput, arg2 ...request.Option) (*apigateway.Stage, error) {
+// UpdateStageWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateStageWithContext(arg0 aws.Context, arg1 *apigateway.UpdateStageInput, arg2 ...request.Option) (*apigateway.Stage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6275,14 +6274,14 @@ func (m *MockAPIGatewayAPI) UpdateStageWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// UpdateStageWithContext indicates an expected call of UpdateStageWithContext.
+// UpdateStageWithContext indicates an expected call of UpdateStageWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStageWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateStageWithContext), varargs...)
 }
 
-// UpdateUsage mocks base method.
+// UpdateUsage mocks base method
 func (m *MockAPIGatewayAPI) UpdateUsage(arg0 *apigateway.UpdateUsageInput) (*apigateway.Usage, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUsage", arg0)
@@ -6291,13 +6290,13 @@ func (m *MockAPIGatewayAPI) UpdateUsage(arg0 *apigateway.UpdateUsageInput) (*api
 	return ret0, ret1
 }
 
-// UpdateUsage indicates an expected call of UpdateUsage.
+// UpdateUsage indicates an expected call of UpdateUsage
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateUsage(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUsage", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateUsage), arg0)
 }
 
-// UpdateUsagePlan mocks base method.
+// UpdateUsagePlan mocks base method
 func (m *MockAPIGatewayAPI) UpdateUsagePlan(arg0 *apigateway.UpdateUsagePlanInput) (*apigateway.UsagePlan, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUsagePlan", arg0)
@@ -6306,13 +6305,13 @@ func (m *MockAPIGatewayAPI) UpdateUsagePlan(arg0 *apigateway.UpdateUsagePlanInpu
 	return ret0, ret1
 }
 
-// UpdateUsagePlan indicates an expected call of UpdateUsagePlan.
+// UpdateUsagePlan indicates an expected call of UpdateUsagePlan
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateUsagePlan(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUsagePlan", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateUsagePlan), arg0)
 }
 
-// UpdateUsagePlanRequest mocks base method.
+// UpdateUsagePlanRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateUsagePlanRequest(arg0 *apigateway.UpdateUsagePlanInput) (*request.Request, *apigateway.UsagePlan) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUsagePlanRequest", arg0)
@@ -6321,14 +6320,14 @@ func (m *MockAPIGatewayAPI) UpdateUsagePlanRequest(arg0 *apigateway.UpdateUsageP
 	return ret0, ret1
 }
 
-// UpdateUsagePlanRequest indicates an expected call of UpdateUsagePlanRequest.
+// UpdateUsagePlanRequest indicates an expected call of UpdateUsagePlanRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateUsagePlanRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUsagePlanRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateUsagePlanRequest), arg0)
 }
 
-// UpdateUsagePlanWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateUsagePlanWithContext(arg0 context.Context, arg1 *apigateway.UpdateUsagePlanInput, arg2 ...request.Option) (*apigateway.UsagePlan, error) {
+// UpdateUsagePlanWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateUsagePlanWithContext(arg0 aws.Context, arg1 *apigateway.UpdateUsagePlanInput, arg2 ...request.Option) (*apigateway.UsagePlan, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6340,14 +6339,14 @@ func (m *MockAPIGatewayAPI) UpdateUsagePlanWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// UpdateUsagePlanWithContext indicates an expected call of UpdateUsagePlanWithContext.
+// UpdateUsagePlanWithContext indicates an expected call of UpdateUsagePlanWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateUsagePlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUsagePlanWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateUsagePlanWithContext), varargs...)
 }
 
-// UpdateUsageRequest mocks base method.
+// UpdateUsageRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateUsageRequest(arg0 *apigateway.UpdateUsageInput) (*request.Request, *apigateway.Usage) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateUsageRequest", arg0)
@@ -6356,14 +6355,14 @@ func (m *MockAPIGatewayAPI) UpdateUsageRequest(arg0 *apigateway.UpdateUsageInput
 	return ret0, ret1
 }
 
-// UpdateUsageRequest indicates an expected call of UpdateUsageRequest.
+// UpdateUsageRequest indicates an expected call of UpdateUsageRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateUsageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUsageRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateUsageRequest), arg0)
 }
 
-// UpdateUsageWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateUsageWithContext(arg0 context.Context, arg1 *apigateway.UpdateUsageInput, arg2 ...request.Option) (*apigateway.Usage, error) {
+// UpdateUsageWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateUsageWithContext(arg0 aws.Context, arg1 *apigateway.UpdateUsageInput, arg2 ...request.Option) (*apigateway.Usage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6375,14 +6374,14 @@ func (m *MockAPIGatewayAPI) UpdateUsageWithContext(arg0 context.Context, arg1 *a
 	return ret0, ret1
 }
 
-// UpdateUsageWithContext indicates an expected call of UpdateUsageWithContext.
+// UpdateUsageWithContext indicates an expected call of UpdateUsageWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateUsageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUsageWithContext", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateUsageWithContext), varargs...)
 }
 
-// UpdateVpcLink mocks base method.
+// UpdateVpcLink mocks base method
 func (m *MockAPIGatewayAPI) UpdateVpcLink(arg0 *apigateway.UpdateVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateVpcLink", arg0)
@@ -6391,13 +6390,13 @@ func (m *MockAPIGatewayAPI) UpdateVpcLink(arg0 *apigateway.UpdateVpcLinkInput) (
 	return ret0, ret1
 }
 
-// UpdateVpcLink indicates an expected call of UpdateVpcLink.
+// UpdateVpcLink indicates an expected call of UpdateVpcLink
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateVpcLink(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcLink", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateVpcLink), arg0)
 }
 
-// UpdateVpcLinkRequest mocks base method.
+// UpdateVpcLinkRequest mocks base method
 func (m *MockAPIGatewayAPI) UpdateVpcLinkRequest(arg0 *apigateway.UpdateVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateVpcLinkRequest", arg0)
@@ -6406,14 +6405,14 @@ func (m *MockAPIGatewayAPI) UpdateVpcLinkRequest(arg0 *apigateway.UpdateVpcLinkI
 	return ret0, ret1
 }
 
-// UpdateVpcLinkRequest indicates an expected call of UpdateVpcLinkRequest.
+// UpdateVpcLinkRequest indicates an expected call of UpdateVpcLinkRequest
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateVpcLinkRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcLinkRequest", reflect.TypeOf((*MockAPIGatewayAPI)(nil).UpdateVpcLinkRequest), arg0)
 }
 
-// UpdateVpcLinkWithContext mocks base method.
-func (m *MockAPIGatewayAPI) UpdateVpcLinkWithContext(arg0 context.Context, arg1 *apigateway.UpdateVpcLinkInput, arg2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
+// UpdateVpcLinkWithContext mocks base method
+func (m *MockAPIGatewayAPI) UpdateVpcLinkWithContext(arg0 aws.Context, arg1 *apigateway.UpdateVpcLinkInput, arg2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6425,7 +6424,7 @@ func (m *MockAPIGatewayAPI) UpdateVpcLinkWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateVpcLinkWithContext indicates an expected call of UpdateVpcLinkWithContext.
+// UpdateVpcLinkWithContext indicates an expected call of UpdateVpcLinkWithContext
 func (mr *MockAPIGatewayAPIMockRecorder) UpdateVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

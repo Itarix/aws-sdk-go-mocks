@@ -5,88 +5,37 @@
 package alexaforbusinessmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	alexaforbusiness "github.com/aws/aws-sdk-go/service/alexaforbusiness"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockAlexaForBusinessAPI is a mock of AlexaForBusinessAPI interface.
+// MockAlexaForBusinessAPI is a mock of AlexaForBusinessAPI interface
 type MockAlexaForBusinessAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockAlexaForBusinessAPIMockRecorder
 }
 
-// MockAlexaForBusinessAPIMockRecorder is the mock recorder for MockAlexaForBusinessAPI.
+// MockAlexaForBusinessAPIMockRecorder is the mock recorder for MockAlexaForBusinessAPI
 type MockAlexaForBusinessAPIMockRecorder struct {
 	mock *MockAlexaForBusinessAPI
 }
 
-// NewMockAlexaForBusinessAPI creates a new mock instance.
+// NewMockAlexaForBusinessAPI creates a new mock instance
 func NewMockAlexaForBusinessAPI(ctrl *gomock.Controller) *MockAlexaForBusinessAPI {
 	mock := &MockAlexaForBusinessAPI{ctrl: ctrl}
 	mock.recorder = &MockAlexaForBusinessAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockAlexaForBusinessAPI) EXPECT() *MockAlexaForBusinessAPIMockRecorder {
 	return m.recorder
 }
 
-// ApproveSkill mocks base method.
-func (m *MockAlexaForBusinessAPI) ApproveSkill(arg0 *alexaforbusiness.ApproveSkillInput) (*alexaforbusiness.ApproveSkillOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ApproveSkill", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ApproveSkillOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ApproveSkill indicates an expected call of ApproveSkill.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ApproveSkill(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApproveSkill", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ApproveSkill), arg0)
-}
-
-// ApproveSkillRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ApproveSkillRequest(arg0 *alexaforbusiness.ApproveSkillInput) (*request.Request, *alexaforbusiness.ApproveSkillOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ApproveSkillRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ApproveSkillOutput)
-	return ret0, ret1
-}
-
-// ApproveSkillRequest indicates an expected call of ApproveSkillRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ApproveSkillRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApproveSkillRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ApproveSkillRequest), arg0)
-}
-
-// ApproveSkillWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ApproveSkillWithContext(arg0 context.Context, arg1 *alexaforbusiness.ApproveSkillInput, arg2 ...request.Option) (*alexaforbusiness.ApproveSkillOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ApproveSkillWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ApproveSkillOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ApproveSkillWithContext indicates an expected call of ApproveSkillWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ApproveSkillWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApproveSkillWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ApproveSkillWithContext), varargs...)
-}
-
-// AssociateContactWithAddressBook mocks base method.
+// AssociateContactWithAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBook(arg0 *alexaforbusiness.AssociateContactWithAddressBookInput) (*alexaforbusiness.AssociateContactWithAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateContactWithAddressBook", arg0)
@@ -95,13 +44,13 @@ func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBook(arg0 *alexafor
 	return ret0, ret1
 }
 
-// AssociateContactWithAddressBook indicates an expected call of AssociateContactWithAddressBook.
+// AssociateContactWithAddressBook indicates an expected call of AssociateContactWithAddressBook
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateContactWithAddressBook(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateContactWithAddressBook", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateContactWithAddressBook), arg0)
 }
 
-// AssociateContactWithAddressBookRequest mocks base method.
+// AssociateContactWithAddressBookRequest mocks base method
 func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookRequest(arg0 *alexaforbusiness.AssociateContactWithAddressBookInput) (*request.Request, *alexaforbusiness.AssociateContactWithAddressBookOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateContactWithAddressBookRequest", arg0)
@@ -110,14 +59,14 @@ func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookRequest(arg0 *a
 	return ret0, ret1
 }
 
-// AssociateContactWithAddressBookRequest indicates an expected call of AssociateContactWithAddressBookRequest.
+// AssociateContactWithAddressBookRequest indicates an expected call of AssociateContactWithAddressBookRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateContactWithAddressBookRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateContactWithAddressBookRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateContactWithAddressBookRequest), arg0)
 }
 
-// AssociateContactWithAddressBookWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateContactWithAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.AssociateContactWithAddressBookOutput, error) {
+// AssociateContactWithAddressBookWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateContactWithAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.AssociateContactWithAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,64 +78,14 @@ func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookWithContext(arg
 	return ret0, ret1
 }
 
-// AssociateContactWithAddressBookWithContext indicates an expected call of AssociateContactWithAddressBookWithContext.
+// AssociateContactWithAddressBookWithContext indicates an expected call of AssociateContactWithAddressBookWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateContactWithAddressBookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateContactWithAddressBookWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateContactWithAddressBookWithContext), varargs...)
 }
 
-// AssociateDeviceWithNetworkProfile mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateDeviceWithNetworkProfile(arg0 *alexaforbusiness.AssociateDeviceWithNetworkProfileInput) (*alexaforbusiness.AssociateDeviceWithNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateDeviceWithNetworkProfile", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.AssociateDeviceWithNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateDeviceWithNetworkProfile indicates an expected call of AssociateDeviceWithNetworkProfile.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithNetworkProfile(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDeviceWithNetworkProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateDeviceWithNetworkProfile), arg0)
-}
-
-// AssociateDeviceWithNetworkProfileRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateDeviceWithNetworkProfileRequest(arg0 *alexaforbusiness.AssociateDeviceWithNetworkProfileInput) (*request.Request, *alexaforbusiness.AssociateDeviceWithNetworkProfileOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateDeviceWithNetworkProfileRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.AssociateDeviceWithNetworkProfileOutput)
-	return ret0, ret1
-}
-
-// AssociateDeviceWithNetworkProfileRequest indicates an expected call of AssociateDeviceWithNetworkProfileRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithNetworkProfileRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDeviceWithNetworkProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateDeviceWithNetworkProfileRequest), arg0)
-}
-
-// AssociateDeviceWithNetworkProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateDeviceWithNetworkProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateDeviceWithNetworkProfileInput, arg2 ...request.Option) (*alexaforbusiness.AssociateDeviceWithNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateDeviceWithNetworkProfileWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.AssociateDeviceWithNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateDeviceWithNetworkProfileWithContext indicates an expected call of AssociateDeviceWithNetworkProfileWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDeviceWithNetworkProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateDeviceWithNetworkProfileWithContext), varargs...)
-}
-
-// AssociateDeviceWithRoom mocks base method.
+// AssociateDeviceWithRoom mocks base method
 func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoom(arg0 *alexaforbusiness.AssociateDeviceWithRoomInput) (*alexaforbusiness.AssociateDeviceWithRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDeviceWithRoom", arg0)
@@ -195,13 +94,13 @@ func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoom(arg0 *alexaforbusiness
 	return ret0, ret1
 }
 
-// AssociateDeviceWithRoom indicates an expected call of AssociateDeviceWithRoom.
+// AssociateDeviceWithRoom indicates an expected call of AssociateDeviceWithRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDeviceWithRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateDeviceWithRoom), arg0)
 }
 
-// AssociateDeviceWithRoomRequest mocks base method.
+// AssociateDeviceWithRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomRequest(arg0 *alexaforbusiness.AssociateDeviceWithRoomInput) (*request.Request, *alexaforbusiness.AssociateDeviceWithRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDeviceWithRoomRequest", arg0)
@@ -210,14 +109,14 @@ func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomRequest(arg0 *alexaforb
 	return ret0, ret1
 }
 
-// AssociateDeviceWithRoomRequest indicates an expected call of AssociateDeviceWithRoomRequest.
+// AssociateDeviceWithRoomRequest indicates an expected call of AssociateDeviceWithRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDeviceWithRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateDeviceWithRoomRequest), arg0)
 }
 
-// AssociateDeviceWithRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateDeviceWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateDeviceWithRoomOutput, error) {
+// AssociateDeviceWithRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateDeviceWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateDeviceWithRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +128,14 @@ func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// AssociateDeviceWithRoomWithContext indicates an expected call of AssociateDeviceWithRoomWithContext.
+// AssociateDeviceWithRoomWithContext indicates an expected call of AssociateDeviceWithRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDeviceWithRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateDeviceWithRoomWithContext), varargs...)
 }
 
-// AssociateSkillGroupWithRoom mocks base method.
+// AssociateSkillGroupWithRoom mocks base method
 func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoom(arg0 *alexaforbusiness.AssociateSkillGroupWithRoomInput) (*alexaforbusiness.AssociateSkillGroupWithRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateSkillGroupWithRoom", arg0)
@@ -245,13 +144,13 @@ func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoom(arg0 *alexaforbusi
 	return ret0, ret1
 }
 
-// AssociateSkillGroupWithRoom indicates an expected call of AssociateSkillGroupWithRoom.
+// AssociateSkillGroupWithRoom indicates an expected call of AssociateSkillGroupWithRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillGroupWithRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillGroupWithRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillGroupWithRoom), arg0)
 }
 
-// AssociateSkillGroupWithRoomRequest mocks base method.
+// AssociateSkillGroupWithRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomRequest(arg0 *alexaforbusiness.AssociateSkillGroupWithRoomInput) (*request.Request, *alexaforbusiness.AssociateSkillGroupWithRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateSkillGroupWithRoomRequest", arg0)
@@ -260,14 +159,14 @@ func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomRequest(arg0 *alexa
 	return ret0, ret1
 }
 
-// AssociateSkillGroupWithRoomRequest indicates an expected call of AssociateSkillGroupWithRoomRequest.
+// AssociateSkillGroupWithRoomRequest indicates an expected call of AssociateSkillGroupWithRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillGroupWithRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillGroupWithRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillGroupWithRoomRequest), arg0)
 }
 
-// AssociateSkillGroupWithRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateSkillGroupWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillGroupWithRoomOutput, error) {
+// AssociateSkillGroupWithRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateSkillGroupWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillGroupWithRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,114 +178,14 @@ func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomWithContext(arg0 co
 	return ret0, ret1
 }
 
-// AssociateSkillGroupWithRoomWithContext indicates an expected call of AssociateSkillGroupWithRoomWithContext.
+// AssociateSkillGroupWithRoomWithContext indicates an expected call of AssociateSkillGroupWithRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillGroupWithRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillGroupWithRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillGroupWithRoomWithContext), varargs...)
 }
 
-// AssociateSkillWithSkillGroup mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithSkillGroup(arg0 *alexaforbusiness.AssociateSkillWithSkillGroupInput) (*alexaforbusiness.AssociateSkillWithSkillGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateSkillWithSkillGroup", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.AssociateSkillWithSkillGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateSkillWithSkillGroup indicates an expected call of AssociateSkillWithSkillGroup.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithSkillGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithSkillGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithSkillGroup), arg0)
-}
-
-// AssociateSkillWithSkillGroupRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithSkillGroupRequest(arg0 *alexaforbusiness.AssociateSkillWithSkillGroupInput) (*request.Request, *alexaforbusiness.AssociateSkillWithSkillGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateSkillWithSkillGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.AssociateSkillWithSkillGroupOutput)
-	return ret0, ret1
-}
-
-// AssociateSkillWithSkillGroupRequest indicates an expected call of AssociateSkillWithSkillGroupRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithSkillGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithSkillGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithSkillGroupRequest), arg0)
-}
-
-// AssociateSkillWithSkillGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateSkillWithSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithSkillGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateSkillWithSkillGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.AssociateSkillWithSkillGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateSkillWithSkillGroupWithContext indicates an expected call of AssociateSkillWithSkillGroupWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithSkillGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithSkillGroupWithContext), varargs...)
-}
-
-// AssociateSkillWithUsers mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsers(arg0 *alexaforbusiness.AssociateSkillWithUsersInput) (*alexaforbusiness.AssociateSkillWithUsersOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateSkillWithUsers", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.AssociateSkillWithUsersOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateSkillWithUsers indicates an expected call of AssociateSkillWithUsers.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsers(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithUsers", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithUsers), arg0)
-}
-
-// AssociateSkillWithUsersRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsersRequest(arg0 *alexaforbusiness.AssociateSkillWithUsersInput) (*request.Request, *alexaforbusiness.AssociateSkillWithUsersOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateSkillWithUsersRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.AssociateSkillWithUsersOutput)
-	return ret0, ret1
-}
-
-// AssociateSkillWithUsersRequest indicates an expected call of AssociateSkillWithUsersRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsersRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithUsersRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithUsersRequest), arg0)
-}
-
-// AssociateSkillWithUsersWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsersWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateSkillWithUsersInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithUsersOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateSkillWithUsersWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.AssociateSkillWithUsersOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateSkillWithUsersWithContext indicates an expected call of AssociateSkillWithUsersWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSkillWithUsersWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).AssociateSkillWithUsersWithContext), varargs...)
-}
-
-// CreateAddressBook mocks base method.
+// CreateAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) CreateAddressBook(arg0 *alexaforbusiness.CreateAddressBookInput) (*alexaforbusiness.CreateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateAddressBook", arg0)
@@ -395,13 +194,13 @@ func (m *MockAlexaForBusinessAPI) CreateAddressBook(arg0 *alexaforbusiness.Creat
 	return ret0, ret1
 }
 
-// CreateAddressBook indicates an expected call of CreateAddressBook.
+// CreateAddressBook indicates an expected call of CreateAddressBook
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateAddressBook(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAddressBook", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateAddressBook), arg0)
 }
 
-// CreateAddressBookRequest mocks base method.
+// CreateAddressBookRequest mocks base method
 func (m *MockAlexaForBusinessAPI) CreateAddressBookRequest(arg0 *alexaforbusiness.CreateAddressBookInput) (*request.Request, *alexaforbusiness.CreateAddressBookOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateAddressBookRequest", arg0)
@@ -410,14 +209,14 @@ func (m *MockAlexaForBusinessAPI) CreateAddressBookRequest(arg0 *alexaforbusines
 	return ret0, ret1
 }
 
-// CreateAddressBookRequest indicates an expected call of CreateAddressBookRequest.
+// CreateAddressBookRequest indicates an expected call of CreateAddressBookRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateAddressBookRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAddressBookRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateAddressBookRequest), arg0)
 }
 
-// CreateAddressBookWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.CreateAddressBookOutput, error) {
+// CreateAddressBookWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) CreateAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.CreateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,114 +228,14 @@ func (m *MockAlexaForBusinessAPI) CreateAddressBookWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateAddressBookWithContext indicates an expected call of CreateAddressBookWithContext.
+// CreateAddressBookWithContext indicates an expected call of CreateAddressBookWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateAddressBookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAddressBookWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateAddressBookWithContext), varargs...)
 }
 
-// CreateBusinessReportSchedule mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateBusinessReportSchedule(arg0 *alexaforbusiness.CreateBusinessReportScheduleInput) (*alexaforbusiness.CreateBusinessReportScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateBusinessReportSchedule", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateBusinessReportScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateBusinessReportSchedule indicates an expected call of CreateBusinessReportSchedule.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateBusinessReportSchedule(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBusinessReportSchedule", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateBusinessReportSchedule), arg0)
-}
-
-// CreateBusinessReportScheduleRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateBusinessReportScheduleRequest(arg0 *alexaforbusiness.CreateBusinessReportScheduleInput) (*request.Request, *alexaforbusiness.CreateBusinessReportScheduleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateBusinessReportScheduleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.CreateBusinessReportScheduleOutput)
-	return ret0, ret1
-}
-
-// CreateBusinessReportScheduleRequest indicates an expected call of CreateBusinessReportScheduleRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateBusinessReportScheduleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBusinessReportScheduleRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateBusinessReportScheduleRequest), arg0)
-}
-
-// CreateBusinessReportScheduleWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateBusinessReportScheduleWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.CreateBusinessReportScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateBusinessReportScheduleWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateBusinessReportScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateBusinessReportScheduleWithContext indicates an expected call of CreateBusinessReportScheduleWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateBusinessReportScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBusinessReportScheduleWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateBusinessReportScheduleWithContext), varargs...)
-}
-
-// CreateConferenceProvider mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateConferenceProvider(arg0 *alexaforbusiness.CreateConferenceProviderInput) (*alexaforbusiness.CreateConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateConferenceProvider", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateConferenceProvider indicates an expected call of CreateConferenceProvider.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateConferenceProvider(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConferenceProvider", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateConferenceProvider), arg0)
-}
-
-// CreateConferenceProviderRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateConferenceProviderRequest(arg0 *alexaforbusiness.CreateConferenceProviderInput) (*request.Request, *alexaforbusiness.CreateConferenceProviderOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateConferenceProviderRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.CreateConferenceProviderOutput)
-	return ret0, ret1
-}
-
-// CreateConferenceProviderRequest indicates an expected call of CreateConferenceProviderRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateConferenceProviderRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConferenceProviderRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateConferenceProviderRequest), arg0)
-}
-
-// CreateConferenceProviderWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.CreateConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateConferenceProviderWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateConferenceProviderWithContext indicates an expected call of CreateConferenceProviderWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateConferenceProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConferenceProviderWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateConferenceProviderWithContext), varargs...)
-}
-
-// CreateContact mocks base method.
+// CreateContact mocks base method
 func (m *MockAlexaForBusinessAPI) CreateContact(arg0 *alexaforbusiness.CreateContactInput) (*alexaforbusiness.CreateContactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateContact", arg0)
@@ -545,13 +244,13 @@ func (m *MockAlexaForBusinessAPI) CreateContact(arg0 *alexaforbusiness.CreateCon
 	return ret0, ret1
 }
 
-// CreateContact indicates an expected call of CreateContact.
+// CreateContact indicates an expected call of CreateContact
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateContact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContact", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateContact), arg0)
 }
 
-// CreateContactRequest mocks base method.
+// CreateContactRequest mocks base method
 func (m *MockAlexaForBusinessAPI) CreateContactRequest(arg0 *alexaforbusiness.CreateContactInput) (*request.Request, *alexaforbusiness.CreateContactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateContactRequest", arg0)
@@ -560,14 +259,14 @@ func (m *MockAlexaForBusinessAPI) CreateContactRequest(arg0 *alexaforbusiness.Cr
 	return ret0, ret1
 }
 
-// CreateContactRequest indicates an expected call of CreateContactRequest.
+// CreateContactRequest indicates an expected call of CreateContactRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateContactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateContactRequest), arg0)
 }
 
-// CreateContactWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateContactInput, arg2 ...request.Option) (*alexaforbusiness.CreateContactOutput, error) {
+// CreateContactWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) CreateContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateContactInput, arg2 ...request.Option) (*alexaforbusiness.CreateContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,114 +278,14 @@ func (m *MockAlexaForBusinessAPI) CreateContactWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateContactWithContext indicates an expected call of CreateContactWithContext.
+// CreateContactWithContext indicates an expected call of CreateContactWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateContactWithContext), varargs...)
 }
 
-// CreateGatewayGroup mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateGatewayGroup(arg0 *alexaforbusiness.CreateGatewayGroupInput) (*alexaforbusiness.CreateGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateGatewayGroup", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateGatewayGroup indicates an expected call of CreateGatewayGroup.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateGatewayGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGatewayGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateGatewayGroup), arg0)
-}
-
-// CreateGatewayGroupRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateGatewayGroupRequest(arg0 *alexaforbusiness.CreateGatewayGroupInput) (*request.Request, *alexaforbusiness.CreateGatewayGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateGatewayGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.CreateGatewayGroupOutput)
-	return ret0, ret1
-}
-
-// CreateGatewayGroupRequest indicates an expected call of CreateGatewayGroupRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateGatewayGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGatewayGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateGatewayGroupRequest), arg0)
-}
-
-// CreateGatewayGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateGatewayGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateGatewayGroupInput, arg2 ...request.Option) (*alexaforbusiness.CreateGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateGatewayGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateGatewayGroupWithContext indicates an expected call of CreateGatewayGroupWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateGatewayGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGatewayGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateGatewayGroupWithContext), varargs...)
-}
-
-// CreateNetworkProfile mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateNetworkProfile(arg0 *alexaforbusiness.CreateNetworkProfileInput) (*alexaforbusiness.CreateNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateNetworkProfile", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateNetworkProfile indicates an expected call of CreateNetworkProfile.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateNetworkProfile(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNetworkProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateNetworkProfile), arg0)
-}
-
-// CreateNetworkProfileRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateNetworkProfileRequest(arg0 *alexaforbusiness.CreateNetworkProfileInput) (*request.Request, *alexaforbusiness.CreateNetworkProfileOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateNetworkProfileRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.CreateNetworkProfileOutput)
-	return ret0, ret1
-}
-
-// CreateNetworkProfileRequest indicates an expected call of CreateNetworkProfileRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateNetworkProfileRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNetworkProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateNetworkProfileRequest), arg0)
-}
-
-// CreateNetworkProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateNetworkProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateNetworkProfileInput, arg2 ...request.Option) (*alexaforbusiness.CreateNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateNetworkProfileWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.CreateNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateNetworkProfileWithContext indicates an expected call of CreateNetworkProfileWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) CreateNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNetworkProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateNetworkProfileWithContext), varargs...)
-}
-
-// CreateProfile mocks base method.
+// CreateProfile mocks base method
 func (m *MockAlexaForBusinessAPI) CreateProfile(arg0 *alexaforbusiness.CreateProfileInput) (*alexaforbusiness.CreateProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProfile", arg0)
@@ -695,13 +294,13 @@ func (m *MockAlexaForBusinessAPI) CreateProfile(arg0 *alexaforbusiness.CreatePro
 	return ret0, ret1
 }
 
-// CreateProfile indicates an expected call of CreateProfile.
+// CreateProfile indicates an expected call of CreateProfile
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateProfile), arg0)
 }
 
-// CreateProfileRequest mocks base method.
+// CreateProfileRequest mocks base method
 func (m *MockAlexaForBusinessAPI) CreateProfileRequest(arg0 *alexaforbusiness.CreateProfileInput) (*request.Request, *alexaforbusiness.CreateProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProfileRequest", arg0)
@@ -710,14 +309,14 @@ func (m *MockAlexaForBusinessAPI) CreateProfileRequest(arg0 *alexaforbusiness.Cr
 	return ret0, ret1
 }
 
-// CreateProfileRequest indicates an expected call of CreateProfileRequest.
+// CreateProfileRequest indicates an expected call of CreateProfileRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateProfileRequest), arg0)
 }
 
-// CreateProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateProfileInput, arg2 ...request.Option) (*alexaforbusiness.CreateProfileOutput, error) {
+// CreateProfileWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) CreateProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateProfileInput, arg2 ...request.Option) (*alexaforbusiness.CreateProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +328,14 @@ func (m *MockAlexaForBusinessAPI) CreateProfileWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateProfileWithContext indicates an expected call of CreateProfileWithContext.
+// CreateProfileWithContext indicates an expected call of CreateProfileWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateProfileWithContext), varargs...)
 }
 
-// CreateRoom mocks base method.
+// CreateRoom mocks base method
 func (m *MockAlexaForBusinessAPI) CreateRoom(arg0 *alexaforbusiness.CreateRoomInput) (*alexaforbusiness.CreateRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRoom", arg0)
@@ -745,13 +344,13 @@ func (m *MockAlexaForBusinessAPI) CreateRoom(arg0 *alexaforbusiness.CreateRoomIn
 	return ret0, ret1
 }
 
-// CreateRoom indicates an expected call of CreateRoom.
+// CreateRoom indicates an expected call of CreateRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateRoom), arg0)
 }
 
-// CreateRoomRequest mocks base method.
+// CreateRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) CreateRoomRequest(arg0 *alexaforbusiness.CreateRoomInput) (*request.Request, *alexaforbusiness.CreateRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateRoomRequest", arg0)
@@ -760,14 +359,14 @@ func (m *MockAlexaForBusinessAPI) CreateRoomRequest(arg0 *alexaforbusiness.Creat
 	return ret0, ret1
 }
 
-// CreateRoomRequest indicates an expected call of CreateRoomRequest.
+// CreateRoomRequest indicates an expected call of CreateRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateRoomRequest), arg0)
 }
 
-// CreateRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateRoomInput, arg2 ...request.Option) (*alexaforbusiness.CreateRoomOutput, error) {
+// CreateRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) CreateRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateRoomInput, arg2 ...request.Option) (*alexaforbusiness.CreateRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +378,14 @@ func (m *MockAlexaForBusinessAPI) CreateRoomWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateRoomWithContext indicates an expected call of CreateRoomWithContext.
+// CreateRoomWithContext indicates an expected call of CreateRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateRoomWithContext), varargs...)
 }
 
-// CreateSkillGroup mocks base method.
+// CreateSkillGroup mocks base method
 func (m *MockAlexaForBusinessAPI) CreateSkillGroup(arg0 *alexaforbusiness.CreateSkillGroupInput) (*alexaforbusiness.CreateSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSkillGroup", arg0)
@@ -795,13 +394,13 @@ func (m *MockAlexaForBusinessAPI) CreateSkillGroup(arg0 *alexaforbusiness.Create
 	return ret0, ret1
 }
 
-// CreateSkillGroup indicates an expected call of CreateSkillGroup.
+// CreateSkillGroup indicates an expected call of CreateSkillGroup
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateSkillGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSkillGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateSkillGroup), arg0)
 }
 
-// CreateSkillGroupRequest mocks base method.
+// CreateSkillGroupRequest mocks base method
 func (m *MockAlexaForBusinessAPI) CreateSkillGroupRequest(arg0 *alexaforbusiness.CreateSkillGroupInput) (*request.Request, *alexaforbusiness.CreateSkillGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSkillGroupRequest", arg0)
@@ -810,14 +409,14 @@ func (m *MockAlexaForBusinessAPI) CreateSkillGroupRequest(arg0 *alexaforbusiness
 	return ret0, ret1
 }
 
-// CreateSkillGroupRequest indicates an expected call of CreateSkillGroupRequest.
+// CreateSkillGroupRequest indicates an expected call of CreateSkillGroupRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateSkillGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSkillGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateSkillGroupRequest), arg0)
 }
 
-// CreateSkillGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.CreateSkillGroupOutput, error) {
+// CreateSkillGroupWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) CreateSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.CreateSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +428,14 @@ func (m *MockAlexaForBusinessAPI) CreateSkillGroupWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// CreateSkillGroupWithContext indicates an expected call of CreateSkillGroupWithContext.
+// CreateSkillGroupWithContext indicates an expected call of CreateSkillGroupWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateSkillGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateSkillGroupWithContext), varargs...)
 }
 
-// CreateUser mocks base method.
+// CreateUser mocks base method
 func (m *MockAlexaForBusinessAPI) CreateUser(arg0 *alexaforbusiness.CreateUserInput) (*alexaforbusiness.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUser", arg0)
@@ -845,13 +444,13 @@ func (m *MockAlexaForBusinessAPI) CreateUser(arg0 *alexaforbusiness.CreateUserIn
 	return ret0, ret1
 }
 
-// CreateUser indicates an expected call of CreateUser.
+// CreateUser indicates an expected call of CreateUser
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateUser), arg0)
 }
 
-// CreateUserRequest mocks base method.
+// CreateUserRequest mocks base method
 func (m *MockAlexaForBusinessAPI) CreateUserRequest(arg0 *alexaforbusiness.CreateUserInput) (*request.Request, *alexaforbusiness.CreateUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
@@ -860,14 +459,14 @@ func (m *MockAlexaForBusinessAPI) CreateUserRequest(arg0 *alexaforbusiness.Creat
 	return ret0, ret1
 }
 
-// CreateUserRequest indicates an expected call of CreateUserRequest.
+// CreateUserRequest indicates an expected call of CreateUserRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateUserRequest), arg0)
 }
 
-// CreateUserWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) CreateUserWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateUserInput, arg2 ...request.Option) (*alexaforbusiness.CreateUserOutput, error) {
+// CreateUserWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) CreateUserWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateUserInput, arg2 ...request.Option) (*alexaforbusiness.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +478,14 @@ func (m *MockAlexaForBusinessAPI) CreateUserWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateUserWithContext indicates an expected call of CreateUserWithContext.
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).CreateUserWithContext), varargs...)
 }
 
-// DeleteAddressBook mocks base method.
+// DeleteAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteAddressBook(arg0 *alexaforbusiness.DeleteAddressBookInput) (*alexaforbusiness.DeleteAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAddressBook", arg0)
@@ -895,13 +494,13 @@ func (m *MockAlexaForBusinessAPI) DeleteAddressBook(arg0 *alexaforbusiness.Delet
 	return ret0, ret1
 }
 
-// DeleteAddressBook indicates an expected call of DeleteAddressBook.
+// DeleteAddressBook indicates an expected call of DeleteAddressBook
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteAddressBook(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAddressBook", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteAddressBook), arg0)
 }
 
-// DeleteAddressBookRequest mocks base method.
+// DeleteAddressBookRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteAddressBookRequest(arg0 *alexaforbusiness.DeleteAddressBookInput) (*request.Request, *alexaforbusiness.DeleteAddressBookOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAddressBookRequest", arg0)
@@ -910,14 +509,14 @@ func (m *MockAlexaForBusinessAPI) DeleteAddressBookRequest(arg0 *alexaforbusines
 	return ret0, ret1
 }
 
-// DeleteAddressBookRequest indicates an expected call of DeleteAddressBookRequest.
+// DeleteAddressBookRequest indicates an expected call of DeleteAddressBookRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteAddressBookRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAddressBookRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteAddressBookRequest), arg0)
 }
 
-// DeleteAddressBookWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DeleteAddressBookOutput, error) {
+// DeleteAddressBookWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DeleteAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,114 +528,14 @@ func (m *MockAlexaForBusinessAPI) DeleteAddressBookWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteAddressBookWithContext indicates an expected call of DeleteAddressBookWithContext.
+// DeleteAddressBookWithContext indicates an expected call of DeleteAddressBookWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteAddressBookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAddressBookWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteAddressBookWithContext), varargs...)
 }
 
-// DeleteBusinessReportSchedule mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteBusinessReportSchedule(arg0 *alexaforbusiness.DeleteBusinessReportScheduleInput) (*alexaforbusiness.DeleteBusinessReportScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteBusinessReportSchedule", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteBusinessReportScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteBusinessReportSchedule indicates an expected call of DeleteBusinessReportSchedule.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteBusinessReportSchedule(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBusinessReportSchedule", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteBusinessReportSchedule), arg0)
-}
-
-// DeleteBusinessReportScheduleRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteBusinessReportScheduleRequest(arg0 *alexaforbusiness.DeleteBusinessReportScheduleInput) (*request.Request, *alexaforbusiness.DeleteBusinessReportScheduleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteBusinessReportScheduleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteBusinessReportScheduleOutput)
-	return ret0, ret1
-}
-
-// DeleteBusinessReportScheduleRequest indicates an expected call of DeleteBusinessReportScheduleRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteBusinessReportScheduleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBusinessReportScheduleRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteBusinessReportScheduleRequest), arg0)
-}
-
-// DeleteBusinessReportScheduleWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteBusinessReportScheduleWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.DeleteBusinessReportScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteBusinessReportScheduleWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteBusinessReportScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteBusinessReportScheduleWithContext indicates an expected call of DeleteBusinessReportScheduleWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteBusinessReportScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBusinessReportScheduleWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteBusinessReportScheduleWithContext), varargs...)
-}
-
-// DeleteConferenceProvider mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteConferenceProvider(arg0 *alexaforbusiness.DeleteConferenceProviderInput) (*alexaforbusiness.DeleteConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteConferenceProvider", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteConferenceProvider indicates an expected call of DeleteConferenceProvider.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteConferenceProvider(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConferenceProvider", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteConferenceProvider), arg0)
-}
-
-// DeleteConferenceProviderRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteConferenceProviderRequest(arg0 *alexaforbusiness.DeleteConferenceProviderInput) (*request.Request, *alexaforbusiness.DeleteConferenceProviderOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteConferenceProviderRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteConferenceProviderOutput)
-	return ret0, ret1
-}
-
-// DeleteConferenceProviderRequest indicates an expected call of DeleteConferenceProviderRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteConferenceProviderRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConferenceProviderRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteConferenceProviderRequest), arg0)
-}
-
-// DeleteConferenceProviderWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.DeleteConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteConferenceProviderWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteConferenceProviderWithContext indicates an expected call of DeleteConferenceProviderWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteConferenceProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConferenceProviderWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteConferenceProviderWithContext), varargs...)
-}
-
-// DeleteContact mocks base method.
+// DeleteContact mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteContact(arg0 *alexaforbusiness.DeleteContactInput) (*alexaforbusiness.DeleteContactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteContact", arg0)
@@ -1045,13 +544,13 @@ func (m *MockAlexaForBusinessAPI) DeleteContact(arg0 *alexaforbusiness.DeleteCon
 	return ret0, ret1
 }
 
-// DeleteContact indicates an expected call of DeleteContact.
+// DeleteContact indicates an expected call of DeleteContact
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteContact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContact", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteContact), arg0)
 }
 
-// DeleteContactRequest mocks base method.
+// DeleteContactRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteContactRequest(arg0 *alexaforbusiness.DeleteContactInput) (*request.Request, *alexaforbusiness.DeleteContactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteContactRequest", arg0)
@@ -1060,14 +559,14 @@ func (m *MockAlexaForBusinessAPI) DeleteContactRequest(arg0 *alexaforbusiness.De
 	return ret0, ret1
 }
 
-// DeleteContactRequest indicates an expected call of DeleteContactRequest.
+// DeleteContactRequest indicates an expected call of DeleteContactRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteContactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteContactRequest), arg0)
 }
 
-// DeleteContactWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteContactInput, arg2 ...request.Option) (*alexaforbusiness.DeleteContactOutput, error) {
+// DeleteContactWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteContactInput, arg2 ...request.Option) (*alexaforbusiness.DeleteContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1079,214 +578,14 @@ func (m *MockAlexaForBusinessAPI) DeleteContactWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteContactWithContext indicates an expected call of DeleteContactWithContext.
+// DeleteContactWithContext indicates an expected call of DeleteContactWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteContactWithContext), varargs...)
 }
 
-// DeleteDevice mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteDevice(arg0 *alexaforbusiness.DeleteDeviceInput) (*alexaforbusiness.DeleteDeviceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDevice", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteDeviceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDevice indicates an expected call of DeleteDevice.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDevice(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDevice", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteDevice), arg0)
-}
-
-// DeleteDeviceRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteDeviceRequest(arg0 *alexaforbusiness.DeleteDeviceInput) (*request.Request, *alexaforbusiness.DeleteDeviceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDeviceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteDeviceOutput)
-	return ret0, ret1
-}
-
-// DeleteDeviceRequest indicates an expected call of DeleteDeviceRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDeviceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeviceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteDeviceRequest), arg0)
-}
-
-// DeleteDeviceUsageData mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteDeviceUsageData(arg0 *alexaforbusiness.DeleteDeviceUsageDataInput) (*alexaforbusiness.DeleteDeviceUsageDataOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDeviceUsageData", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteDeviceUsageDataOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDeviceUsageData indicates an expected call of DeleteDeviceUsageData.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDeviceUsageData(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeviceUsageData", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteDeviceUsageData), arg0)
-}
-
-// DeleteDeviceUsageDataRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteDeviceUsageDataRequest(arg0 *alexaforbusiness.DeleteDeviceUsageDataInput) (*request.Request, *alexaforbusiness.DeleteDeviceUsageDataOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDeviceUsageDataRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteDeviceUsageDataOutput)
-	return ret0, ret1
-}
-
-// DeleteDeviceUsageDataRequest indicates an expected call of DeleteDeviceUsageDataRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDeviceUsageDataRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeviceUsageDataRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteDeviceUsageDataRequest), arg0)
-}
-
-// DeleteDeviceUsageDataWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteDeviceUsageDataWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteDeviceUsageDataInput, arg2 ...request.Option) (*alexaforbusiness.DeleteDeviceUsageDataOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteDeviceUsageDataWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteDeviceUsageDataOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDeviceUsageDataWithContext indicates an expected call of DeleteDeviceUsageDataWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDeviceUsageDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeviceUsageDataWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteDeviceUsageDataWithContext), varargs...)
-}
-
-// DeleteDeviceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteDeviceInput, arg2 ...request.Option) (*alexaforbusiness.DeleteDeviceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteDeviceWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteDeviceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDeviceWithContext indicates an expected call of DeleteDeviceWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeviceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteDeviceWithContext), varargs...)
-}
-
-// DeleteGatewayGroup mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteGatewayGroup(arg0 *alexaforbusiness.DeleteGatewayGroupInput) (*alexaforbusiness.DeleteGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteGatewayGroup", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteGatewayGroup indicates an expected call of DeleteGatewayGroup.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteGatewayGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteGatewayGroup), arg0)
-}
-
-// DeleteGatewayGroupRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteGatewayGroupRequest(arg0 *alexaforbusiness.DeleteGatewayGroupInput) (*request.Request, *alexaforbusiness.DeleteGatewayGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteGatewayGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteGatewayGroupOutput)
-	return ret0, ret1
-}
-
-// DeleteGatewayGroupRequest indicates an expected call of DeleteGatewayGroupRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteGatewayGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteGatewayGroupRequest), arg0)
-}
-
-// DeleteGatewayGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteGatewayGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteGatewayGroupInput, arg2 ...request.Option) (*alexaforbusiness.DeleteGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteGatewayGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteGatewayGroupWithContext indicates an expected call of DeleteGatewayGroupWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteGatewayGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteGatewayGroupWithContext), varargs...)
-}
-
-// DeleteNetworkProfile mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteNetworkProfile(arg0 *alexaforbusiness.DeleteNetworkProfileInput) (*alexaforbusiness.DeleteNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteNetworkProfile", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteNetworkProfile indicates an expected call of DeleteNetworkProfile.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteNetworkProfile(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNetworkProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteNetworkProfile), arg0)
-}
-
-// DeleteNetworkProfileRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteNetworkProfileRequest(arg0 *alexaforbusiness.DeleteNetworkProfileInput) (*request.Request, *alexaforbusiness.DeleteNetworkProfileOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteNetworkProfileRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteNetworkProfileOutput)
-	return ret0, ret1
-}
-
-// DeleteNetworkProfileRequest indicates an expected call of DeleteNetworkProfileRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteNetworkProfileRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNetworkProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteNetworkProfileRequest), arg0)
-}
-
-// DeleteNetworkProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteNetworkProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteNetworkProfileInput, arg2 ...request.Option) (*alexaforbusiness.DeleteNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteNetworkProfileWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteNetworkProfileWithContext indicates an expected call of DeleteNetworkProfileWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNetworkProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteNetworkProfileWithContext), varargs...)
-}
-
-// DeleteProfile mocks base method.
+// DeleteProfile mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteProfile(arg0 *alexaforbusiness.DeleteProfileInput) (*alexaforbusiness.DeleteProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProfile", arg0)
@@ -1295,13 +594,13 @@ func (m *MockAlexaForBusinessAPI) DeleteProfile(arg0 *alexaforbusiness.DeletePro
 	return ret0, ret1
 }
 
-// DeleteProfile indicates an expected call of DeleteProfile.
+// DeleteProfile indicates an expected call of DeleteProfile
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteProfile), arg0)
 }
 
-// DeleteProfileRequest mocks base method.
+// DeleteProfileRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteProfileRequest(arg0 *alexaforbusiness.DeleteProfileInput) (*request.Request, *alexaforbusiness.DeleteProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProfileRequest", arg0)
@@ -1310,14 +609,14 @@ func (m *MockAlexaForBusinessAPI) DeleteProfileRequest(arg0 *alexaforbusiness.De
 	return ret0, ret1
 }
 
-// DeleteProfileRequest indicates an expected call of DeleteProfileRequest.
+// DeleteProfileRequest indicates an expected call of DeleteProfileRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteProfileRequest), arg0)
 }
 
-// DeleteProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteProfileInput, arg2 ...request.Option) (*alexaforbusiness.DeleteProfileOutput, error) {
+// DeleteProfileWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteProfileInput, arg2 ...request.Option) (*alexaforbusiness.DeleteProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1329,14 +628,14 @@ func (m *MockAlexaForBusinessAPI) DeleteProfileWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteProfileWithContext indicates an expected call of DeleteProfileWithContext.
+// DeleteProfileWithContext indicates an expected call of DeleteProfileWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteProfileWithContext), varargs...)
 }
 
-// DeleteRoom mocks base method.
+// DeleteRoom mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteRoom(arg0 *alexaforbusiness.DeleteRoomInput) (*alexaforbusiness.DeleteRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRoom", arg0)
@@ -1345,13 +644,13 @@ func (m *MockAlexaForBusinessAPI) DeleteRoom(arg0 *alexaforbusiness.DeleteRoomIn
 	return ret0, ret1
 }
 
-// DeleteRoom indicates an expected call of DeleteRoom.
+// DeleteRoom indicates an expected call of DeleteRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteRoom), arg0)
 }
 
-// DeleteRoomRequest mocks base method.
+// DeleteRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteRoomRequest(arg0 *alexaforbusiness.DeleteRoomInput) (*request.Request, *alexaforbusiness.DeleteRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRoomRequest", arg0)
@@ -1360,13 +659,13 @@ func (m *MockAlexaForBusinessAPI) DeleteRoomRequest(arg0 *alexaforbusiness.Delet
 	return ret0, ret1
 }
 
-// DeleteRoomRequest indicates an expected call of DeleteRoomRequest.
+// DeleteRoomRequest indicates an expected call of DeleteRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteRoomRequest), arg0)
 }
 
-// DeleteRoomSkillParameter mocks base method.
+// DeleteRoomSkillParameter mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameter(arg0 *alexaforbusiness.DeleteRoomSkillParameterInput) (*alexaforbusiness.DeleteRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRoomSkillParameter", arg0)
@@ -1375,13 +674,13 @@ func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameter(arg0 *alexaforbusines
 	return ret0, ret1
 }
 
-// DeleteRoomSkillParameter indicates an expected call of DeleteRoomSkillParameter.
+// DeleteRoomSkillParameter indicates an expected call of DeleteRoomSkillParameter
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomSkillParameter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomSkillParameter", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteRoomSkillParameter), arg0)
 }
 
-// DeleteRoomSkillParameterRequest mocks base method.
+// DeleteRoomSkillParameterRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterRequest(arg0 *alexaforbusiness.DeleteRoomSkillParameterInput) (*request.Request, *alexaforbusiness.DeleteRoomSkillParameterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteRoomSkillParameterRequest", arg0)
@@ -1390,14 +689,14 @@ func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterRequest(arg0 *alexafor
 	return ret0, ret1
 }
 
-// DeleteRoomSkillParameterRequest indicates an expected call of DeleteRoomSkillParameterRequest.
+// DeleteRoomSkillParameterRequest indicates an expected call of DeleteRoomSkillParameterRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomSkillParameterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomSkillParameterRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteRoomSkillParameterRequest), arg0)
 }
 
-// DeleteRoomSkillParameterWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomSkillParameterOutput, error) {
+// DeleteRoomSkillParameterWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1409,15 +708,15 @@ func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// DeleteRoomSkillParameterWithContext indicates an expected call of DeleteRoomSkillParameterWithContext.
+// DeleteRoomSkillParameterWithContext indicates an expected call of DeleteRoomSkillParameterWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomSkillParameterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomSkillParameterWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteRoomSkillParameterWithContext), varargs...)
 }
 
-// DeleteRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteRoomInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomOutput, error) {
+// DeleteRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteRoomInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,64 +728,14 @@ func (m *MockAlexaForBusinessAPI) DeleteRoomWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteRoomWithContext indicates an expected call of DeleteRoomWithContext.
+// DeleteRoomWithContext indicates an expected call of DeleteRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteRoomWithContext), varargs...)
 }
 
-// DeleteSkillAuthorization mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteSkillAuthorization(arg0 *alexaforbusiness.DeleteSkillAuthorizationInput) (*alexaforbusiness.DeleteSkillAuthorizationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteSkillAuthorization", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteSkillAuthorizationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteSkillAuthorization indicates an expected call of DeleteSkillAuthorization.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillAuthorization(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSkillAuthorization", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteSkillAuthorization), arg0)
-}
-
-// DeleteSkillAuthorizationRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteSkillAuthorizationRequest(arg0 *alexaforbusiness.DeleteSkillAuthorizationInput) (*request.Request, *alexaforbusiness.DeleteSkillAuthorizationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteSkillAuthorizationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DeleteSkillAuthorizationOutput)
-	return ret0, ret1
-}
-
-// DeleteSkillAuthorizationRequest indicates an expected call of DeleteSkillAuthorizationRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillAuthorizationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSkillAuthorizationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteSkillAuthorizationRequest), arg0)
-}
-
-// DeleteSkillAuthorizationWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteSkillAuthorizationWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteSkillAuthorizationInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillAuthorizationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteSkillAuthorizationWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DeleteSkillAuthorizationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteSkillAuthorizationWithContext indicates an expected call of DeleteSkillAuthorizationWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillAuthorizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSkillAuthorizationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteSkillAuthorizationWithContext), varargs...)
-}
-
-// DeleteSkillGroup mocks base method.
+// DeleteSkillGroup mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteSkillGroup(arg0 *alexaforbusiness.DeleteSkillGroupInput) (*alexaforbusiness.DeleteSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSkillGroup", arg0)
@@ -1495,13 +744,13 @@ func (m *MockAlexaForBusinessAPI) DeleteSkillGroup(arg0 *alexaforbusiness.Delete
 	return ret0, ret1
 }
 
-// DeleteSkillGroup indicates an expected call of DeleteSkillGroup.
+// DeleteSkillGroup indicates an expected call of DeleteSkillGroup
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSkillGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteSkillGroup), arg0)
 }
 
-// DeleteSkillGroupRequest mocks base method.
+// DeleteSkillGroupRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteSkillGroupRequest(arg0 *alexaforbusiness.DeleteSkillGroupInput) (*request.Request, *alexaforbusiness.DeleteSkillGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSkillGroupRequest", arg0)
@@ -1510,14 +759,14 @@ func (m *MockAlexaForBusinessAPI) DeleteSkillGroupRequest(arg0 *alexaforbusiness
 	return ret0, ret1
 }
 
-// DeleteSkillGroupRequest indicates an expected call of DeleteSkillGroupRequest.
+// DeleteSkillGroupRequest indicates an expected call of DeleteSkillGroupRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSkillGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteSkillGroupRequest), arg0)
 }
 
-// DeleteSkillGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillGroupOutput, error) {
+// DeleteSkillGroupWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1529,14 +778,14 @@ func (m *MockAlexaForBusinessAPI) DeleteSkillGroupWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// DeleteSkillGroupWithContext indicates an expected call of DeleteSkillGroupWithContext.
+// DeleteSkillGroupWithContext indicates an expected call of DeleteSkillGroupWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteSkillGroupWithContext), varargs...)
 }
 
-// DeleteUser mocks base method.
+// DeleteUser mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteUser(arg0 *alexaforbusiness.DeleteUserInput) (*alexaforbusiness.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUser", arg0)
@@ -1545,13 +794,13 @@ func (m *MockAlexaForBusinessAPI) DeleteUser(arg0 *alexaforbusiness.DeleteUserIn
 	return ret0, ret1
 }
 
-// DeleteUser indicates an expected call of DeleteUser.
+// DeleteUser indicates an expected call of DeleteUser
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUser", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteUser), arg0)
 }
 
-// DeleteUserRequest mocks base method.
+// DeleteUserRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DeleteUserRequest(arg0 *alexaforbusiness.DeleteUserInput) (*request.Request, *alexaforbusiness.DeleteUserOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteUserRequest", arg0)
@@ -1560,14 +809,14 @@ func (m *MockAlexaForBusinessAPI) DeleteUserRequest(arg0 *alexaforbusiness.Delet
 	return ret0, ret1
 }
 
-// DeleteUserRequest indicates an expected call of DeleteUserRequest.
+// DeleteUserRequest indicates an expected call of DeleteUserRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteUserRequest), arg0)
 }
 
-// DeleteUserWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DeleteUserWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteUserInput, arg2 ...request.Option) (*alexaforbusiness.DeleteUserOutput, error) {
+// DeleteUserWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteUserInput, arg2 ...request.Option) (*alexaforbusiness.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1579,14 +828,14 @@ func (m *MockAlexaForBusinessAPI) DeleteUserWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DeleteUserWithContext indicates an expected call of DeleteUserWithContext.
+// DeleteUserWithContext indicates an expected call of DeleteUserWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DeleteUserWithContext), varargs...)
 }
 
-// DisassociateContactFromAddressBook mocks base method.
+// DisassociateContactFromAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBook(arg0 *alexaforbusiness.DisassociateContactFromAddressBookInput) (*alexaforbusiness.DisassociateContactFromAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateContactFromAddressBook", arg0)
@@ -1595,13 +844,13 @@ func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBook(arg0 *alexa
 	return ret0, ret1
 }
 
-// DisassociateContactFromAddressBook indicates an expected call of DisassociateContactFromAddressBook.
+// DisassociateContactFromAddressBook indicates an expected call of DisassociateContactFromAddressBook
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateContactFromAddressBook(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateContactFromAddressBook", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateContactFromAddressBook), arg0)
 }
 
-// DisassociateContactFromAddressBookRequest mocks base method.
+// DisassociateContactFromAddressBookRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookRequest(arg0 *alexaforbusiness.DisassociateContactFromAddressBookInput) (*request.Request, *alexaforbusiness.DisassociateContactFromAddressBookOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateContactFromAddressBookRequest", arg0)
@@ -1610,14 +859,14 @@ func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookRequest(arg0
 	return ret0, ret1
 }
 
-// DisassociateContactFromAddressBookRequest indicates an expected call of DisassociateContactFromAddressBookRequest.
+// DisassociateContactFromAddressBookRequest indicates an expected call of DisassociateContactFromAddressBookRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateContactFromAddressBookRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateContactFromAddressBookRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateContactFromAddressBookRequest), arg0)
 }
 
-// DisassociateContactFromAddressBookWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateContactFromAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateContactFromAddressBookOutput, error) {
+// DisassociateContactFromAddressBookWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateContactFromAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateContactFromAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1629,14 +878,14 @@ func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookWithContext(
 	return ret0, ret1
 }
 
-// DisassociateContactFromAddressBookWithContext indicates an expected call of DisassociateContactFromAddressBookWithContext.
+// DisassociateContactFromAddressBookWithContext indicates an expected call of DisassociateContactFromAddressBookWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateContactFromAddressBookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateContactFromAddressBookWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateContactFromAddressBookWithContext), varargs...)
 }
 
-// DisassociateDeviceFromRoom mocks base method.
+// DisassociateDeviceFromRoom mocks base method
 func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoom(arg0 *alexaforbusiness.DisassociateDeviceFromRoomInput) (*alexaforbusiness.DisassociateDeviceFromRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDeviceFromRoom", arg0)
@@ -1645,13 +894,13 @@ func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoom(arg0 *alexaforbusin
 	return ret0, ret1
 }
 
-// DisassociateDeviceFromRoom indicates an expected call of DisassociateDeviceFromRoom.
+// DisassociateDeviceFromRoom indicates an expected call of DisassociateDeviceFromRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateDeviceFromRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDeviceFromRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateDeviceFromRoom), arg0)
 }
 
-// DisassociateDeviceFromRoomRequest mocks base method.
+// DisassociateDeviceFromRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomRequest(arg0 *alexaforbusiness.DisassociateDeviceFromRoomInput) (*request.Request, *alexaforbusiness.DisassociateDeviceFromRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDeviceFromRoomRequest", arg0)
@@ -1660,14 +909,14 @@ func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomRequest(arg0 *alexaf
 	return ret0, ret1
 }
 
-// DisassociateDeviceFromRoomRequest indicates an expected call of DisassociateDeviceFromRoomRequest.
+// DisassociateDeviceFromRoomRequest indicates an expected call of DisassociateDeviceFromRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateDeviceFromRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDeviceFromRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateDeviceFromRoomRequest), arg0)
 }
 
-// DisassociateDeviceFromRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateDeviceFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateDeviceFromRoomOutput, error) {
+// DisassociateDeviceFromRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateDeviceFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateDeviceFromRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1679,114 +928,14 @@ func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomWithContext(arg0 con
 	return ret0, ret1
 }
 
-// DisassociateDeviceFromRoomWithContext indicates an expected call of DisassociateDeviceFromRoomWithContext.
+// DisassociateDeviceFromRoomWithContext indicates an expected call of DisassociateDeviceFromRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateDeviceFromRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDeviceFromRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateDeviceFromRoomWithContext), varargs...)
 }
 
-// DisassociateSkillFromSkillGroup mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromSkillGroup(arg0 *alexaforbusiness.DisassociateSkillFromSkillGroupInput) (*alexaforbusiness.DisassociateSkillFromSkillGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateSkillFromSkillGroup", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DisassociateSkillFromSkillGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateSkillFromSkillGroup indicates an expected call of DisassociateSkillFromSkillGroup.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromSkillGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromSkillGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromSkillGroup), arg0)
-}
-
-// DisassociateSkillFromSkillGroupRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromSkillGroupRequest(arg0 *alexaforbusiness.DisassociateSkillFromSkillGroupInput) (*request.Request, *alexaforbusiness.DisassociateSkillFromSkillGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateSkillFromSkillGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DisassociateSkillFromSkillGroupOutput)
-	return ret0, ret1
-}
-
-// DisassociateSkillFromSkillGroupRequest indicates an expected call of DisassociateSkillFromSkillGroupRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromSkillGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromSkillGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromSkillGroupRequest), arg0)
-}
-
-// DisassociateSkillFromSkillGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateSkillFromSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromSkillGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateSkillFromSkillGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DisassociateSkillFromSkillGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateSkillFromSkillGroupWithContext indicates an expected call of DisassociateSkillFromSkillGroupWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromSkillGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromSkillGroupWithContext), varargs...)
-}
-
-// DisassociateSkillFromUsers mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsers(arg0 *alexaforbusiness.DisassociateSkillFromUsersInput) (*alexaforbusiness.DisassociateSkillFromUsersOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateSkillFromUsers", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.DisassociateSkillFromUsersOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateSkillFromUsers indicates an expected call of DisassociateSkillFromUsers.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsers(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromUsers", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromUsers), arg0)
-}
-
-// DisassociateSkillFromUsersRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsersRequest(arg0 *alexaforbusiness.DisassociateSkillFromUsersInput) (*request.Request, *alexaforbusiness.DisassociateSkillFromUsersOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateSkillFromUsersRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.DisassociateSkillFromUsersOutput)
-	return ret0, ret1
-}
-
-// DisassociateSkillFromUsersRequest indicates an expected call of DisassociateSkillFromUsersRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsersRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromUsersRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromUsersRequest), arg0)
-}
-
-// DisassociateSkillFromUsersWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsersWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateSkillFromUsersInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromUsersOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateSkillFromUsersWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.DisassociateSkillFromUsersOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateSkillFromUsersWithContext indicates an expected call of DisassociateSkillFromUsersWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillFromUsersWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillFromUsersWithContext), varargs...)
-}
-
-// DisassociateSkillGroupFromRoom mocks base method.
+// DisassociateSkillGroupFromRoom mocks base method
 func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoom(arg0 *alexaforbusiness.DisassociateSkillGroupFromRoomInput) (*alexaforbusiness.DisassociateSkillGroupFromRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateSkillGroupFromRoom", arg0)
@@ -1795,13 +944,13 @@ func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoom(arg0 *alexaforb
 	return ret0, ret1
 }
 
-// DisassociateSkillGroupFromRoom indicates an expected call of DisassociateSkillGroupFromRoom.
+// DisassociateSkillGroupFromRoom indicates an expected call of DisassociateSkillGroupFromRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillGroupFromRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillGroupFromRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillGroupFromRoom), arg0)
 }
 
-// DisassociateSkillGroupFromRoomRequest mocks base method.
+// DisassociateSkillGroupFromRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomRequest(arg0 *alexaforbusiness.DisassociateSkillGroupFromRoomInput) (*request.Request, *alexaforbusiness.DisassociateSkillGroupFromRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateSkillGroupFromRoomRequest", arg0)
@@ -1810,14 +959,14 @@ func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomRequest(arg0 *al
 	return ret0, ret1
 }
 
-// DisassociateSkillGroupFromRoomRequest indicates an expected call of DisassociateSkillGroupFromRoomRequest.
+// DisassociateSkillGroupFromRoomRequest indicates an expected call of DisassociateSkillGroupFromRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillGroupFromRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillGroupFromRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillGroupFromRoomRequest), arg0)
 }
 
-// DisassociateSkillGroupFromRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateSkillGroupFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillGroupFromRoomOutput, error) {
+// DisassociateSkillGroupFromRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateSkillGroupFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillGroupFromRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1829,64 +978,14 @@ func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomWithContext(arg0
 	return ret0, ret1
 }
 
-// DisassociateSkillGroupFromRoomWithContext indicates an expected call of DisassociateSkillGroupFromRoomWithContext.
+// DisassociateSkillGroupFromRoomWithContext indicates an expected call of DisassociateSkillGroupFromRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillGroupFromRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSkillGroupFromRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).DisassociateSkillGroupFromRoomWithContext), varargs...)
 }
 
-// ForgetSmartHomeAppliances mocks base method.
-func (m *MockAlexaForBusinessAPI) ForgetSmartHomeAppliances(arg0 *alexaforbusiness.ForgetSmartHomeAppliancesInput) (*alexaforbusiness.ForgetSmartHomeAppliancesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ForgetSmartHomeAppliances", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ForgetSmartHomeAppliancesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ForgetSmartHomeAppliances indicates an expected call of ForgetSmartHomeAppliances.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ForgetSmartHomeAppliances(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ForgetSmartHomeAppliances", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ForgetSmartHomeAppliances), arg0)
-}
-
-// ForgetSmartHomeAppliancesRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ForgetSmartHomeAppliancesRequest(arg0 *alexaforbusiness.ForgetSmartHomeAppliancesInput) (*request.Request, *alexaforbusiness.ForgetSmartHomeAppliancesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ForgetSmartHomeAppliancesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ForgetSmartHomeAppliancesOutput)
-	return ret0, ret1
-}
-
-// ForgetSmartHomeAppliancesRequest indicates an expected call of ForgetSmartHomeAppliancesRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ForgetSmartHomeAppliancesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ForgetSmartHomeAppliancesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ForgetSmartHomeAppliancesRequest), arg0)
-}
-
-// ForgetSmartHomeAppliancesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ForgetSmartHomeAppliancesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ForgetSmartHomeAppliancesInput, arg2 ...request.Option) (*alexaforbusiness.ForgetSmartHomeAppliancesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ForgetSmartHomeAppliancesWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ForgetSmartHomeAppliancesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ForgetSmartHomeAppliancesWithContext indicates an expected call of ForgetSmartHomeAppliancesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ForgetSmartHomeAppliancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ForgetSmartHomeAppliancesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ForgetSmartHomeAppliancesWithContext), varargs...)
-}
-
-// GetAddressBook mocks base method.
+// GetAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) GetAddressBook(arg0 *alexaforbusiness.GetAddressBookInput) (*alexaforbusiness.GetAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAddressBook", arg0)
@@ -1895,13 +994,13 @@ func (m *MockAlexaForBusinessAPI) GetAddressBook(arg0 *alexaforbusiness.GetAddre
 	return ret0, ret1
 }
 
-// GetAddressBook indicates an expected call of GetAddressBook.
+// GetAddressBook indicates an expected call of GetAddressBook
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetAddressBook(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAddressBook", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetAddressBook), arg0)
 }
 
-// GetAddressBookRequest mocks base method.
+// GetAddressBookRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetAddressBookRequest(arg0 *alexaforbusiness.GetAddressBookInput) (*request.Request, *alexaforbusiness.GetAddressBookOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAddressBookRequest", arg0)
@@ -1910,14 +1009,14 @@ func (m *MockAlexaForBusinessAPI) GetAddressBookRequest(arg0 *alexaforbusiness.G
 	return ret0, ret1
 }
 
-// GetAddressBookRequest indicates an expected call of GetAddressBookRequest.
+// GetAddressBookRequest indicates an expected call of GetAddressBookRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetAddressBookRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAddressBookRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetAddressBookRequest), arg0)
 }
 
-// GetAddressBookWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.GetAddressBookOutput, error) {
+// GetAddressBookWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.GetAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1929,114 +1028,14 @@ func (m *MockAlexaForBusinessAPI) GetAddressBookWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// GetAddressBookWithContext indicates an expected call of GetAddressBookWithContext.
+// GetAddressBookWithContext indicates an expected call of GetAddressBookWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetAddressBookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAddressBookWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetAddressBookWithContext), varargs...)
 }
 
-// GetConferencePreference mocks base method.
-func (m *MockAlexaForBusinessAPI) GetConferencePreference(arg0 *alexaforbusiness.GetConferencePreferenceInput) (*alexaforbusiness.GetConferencePreferenceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetConferencePreference", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.GetConferencePreferenceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetConferencePreference indicates an expected call of GetConferencePreference.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferencePreference(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConferencePreference", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetConferencePreference), arg0)
-}
-
-// GetConferencePreferenceRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) GetConferencePreferenceRequest(arg0 *alexaforbusiness.GetConferencePreferenceInput) (*request.Request, *alexaforbusiness.GetConferencePreferenceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetConferencePreferenceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.GetConferencePreferenceOutput)
-	return ret0, ret1
-}
-
-// GetConferencePreferenceRequest indicates an expected call of GetConferencePreferenceRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferencePreferenceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConferencePreferenceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetConferencePreferenceRequest), arg0)
-}
-
-// GetConferencePreferenceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetConferencePreferenceWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetConferencePreferenceInput, arg2 ...request.Option) (*alexaforbusiness.GetConferencePreferenceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetConferencePreferenceWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.GetConferencePreferenceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetConferencePreferenceWithContext indicates an expected call of GetConferencePreferenceWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferencePreferenceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConferencePreferenceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetConferencePreferenceWithContext), varargs...)
-}
-
-// GetConferenceProvider mocks base method.
-func (m *MockAlexaForBusinessAPI) GetConferenceProvider(arg0 *alexaforbusiness.GetConferenceProviderInput) (*alexaforbusiness.GetConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetConferenceProvider", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.GetConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetConferenceProvider indicates an expected call of GetConferenceProvider.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferenceProvider(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConferenceProvider", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetConferenceProvider), arg0)
-}
-
-// GetConferenceProviderRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) GetConferenceProviderRequest(arg0 *alexaforbusiness.GetConferenceProviderInput) (*request.Request, *alexaforbusiness.GetConferenceProviderOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetConferenceProviderRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.GetConferenceProviderOutput)
-	return ret0, ret1
-}
-
-// GetConferenceProviderRequest indicates an expected call of GetConferenceProviderRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferenceProviderRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConferenceProviderRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetConferenceProviderRequest), arg0)
-}
-
-// GetConferenceProviderWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.GetConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetConferenceProviderWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.GetConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetConferenceProviderWithContext indicates an expected call of GetConferenceProviderWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferenceProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConferenceProviderWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetConferenceProviderWithContext), varargs...)
-}
-
-// GetContact mocks base method.
+// GetContact mocks base method
 func (m *MockAlexaForBusinessAPI) GetContact(arg0 *alexaforbusiness.GetContactInput) (*alexaforbusiness.GetContactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetContact", arg0)
@@ -2045,13 +1044,13 @@ func (m *MockAlexaForBusinessAPI) GetContact(arg0 *alexaforbusiness.GetContactIn
 	return ret0, ret1
 }
 
-// GetContact indicates an expected call of GetContact.
+// GetContact indicates an expected call of GetContact
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetContact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContact", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetContact), arg0)
 }
 
-// GetContactRequest mocks base method.
+// GetContactRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetContactRequest(arg0 *alexaforbusiness.GetContactInput) (*request.Request, *alexaforbusiness.GetContactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetContactRequest", arg0)
@@ -2060,14 +1059,14 @@ func (m *MockAlexaForBusinessAPI) GetContactRequest(arg0 *alexaforbusiness.GetCo
 	return ret0, ret1
 }
 
-// GetContactRequest indicates an expected call of GetContactRequest.
+// GetContactRequest indicates an expected call of GetContactRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetContactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetContactRequest), arg0)
 }
 
-// GetContactWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetContactInput, arg2 ...request.Option) (*alexaforbusiness.GetContactOutput, error) {
+// GetContactWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetContactInput, arg2 ...request.Option) (*alexaforbusiness.GetContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2079,14 +1078,14 @@ func (m *MockAlexaForBusinessAPI) GetContactWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetContactWithContext indicates an expected call of GetContactWithContext.
+// GetContactWithContext indicates an expected call of GetContactWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetContactWithContext), varargs...)
 }
 
-// GetDevice mocks base method.
+// GetDevice mocks base method
 func (m *MockAlexaForBusinessAPI) GetDevice(arg0 *alexaforbusiness.GetDeviceInput) (*alexaforbusiness.GetDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDevice", arg0)
@@ -2095,13 +1094,13 @@ func (m *MockAlexaForBusinessAPI) GetDevice(arg0 *alexaforbusiness.GetDeviceInpu
 	return ret0, ret1
 }
 
-// GetDevice indicates an expected call of GetDevice.
+// GetDevice indicates an expected call of GetDevice
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetDevice(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDevice", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetDevice), arg0)
 }
 
-// GetDeviceRequest mocks base method.
+// GetDeviceRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetDeviceRequest(arg0 *alexaforbusiness.GetDeviceInput) (*request.Request, *alexaforbusiness.GetDeviceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDeviceRequest", arg0)
@@ -2110,14 +1109,14 @@ func (m *MockAlexaForBusinessAPI) GetDeviceRequest(arg0 *alexaforbusiness.GetDev
 	return ret0, ret1
 }
 
-// GetDeviceRequest indicates an expected call of GetDeviceRequest.
+// GetDeviceRequest indicates an expected call of GetDeviceRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetDeviceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetDeviceRequest), arg0)
 }
 
-// GetDeviceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetDeviceInput, arg2 ...request.Option) (*alexaforbusiness.GetDeviceOutput, error) {
+// GetDeviceWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetDeviceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetDeviceInput, arg2 ...request.Option) (*alexaforbusiness.GetDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2129,214 +1128,14 @@ func (m *MockAlexaForBusinessAPI) GetDeviceWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// GetDeviceWithContext indicates an expected call of GetDeviceWithContext.
+// GetDeviceWithContext indicates an expected call of GetDeviceWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetDeviceWithContext), varargs...)
 }
 
-// GetGateway mocks base method.
-func (m *MockAlexaForBusinessAPI) GetGateway(arg0 *alexaforbusiness.GetGatewayInput) (*alexaforbusiness.GetGatewayOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetGateway", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.GetGatewayOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetGateway indicates an expected call of GetGateway.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetGateway(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGateway", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetGateway), arg0)
-}
-
-// GetGatewayGroup mocks base method.
-func (m *MockAlexaForBusinessAPI) GetGatewayGroup(arg0 *alexaforbusiness.GetGatewayGroupInput) (*alexaforbusiness.GetGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetGatewayGroup", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.GetGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetGatewayGroup indicates an expected call of GetGatewayGroup.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetGatewayGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetGatewayGroup), arg0)
-}
-
-// GetGatewayGroupRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) GetGatewayGroupRequest(arg0 *alexaforbusiness.GetGatewayGroupInput) (*request.Request, *alexaforbusiness.GetGatewayGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetGatewayGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.GetGatewayGroupOutput)
-	return ret0, ret1
-}
-
-// GetGatewayGroupRequest indicates an expected call of GetGatewayGroupRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetGatewayGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetGatewayGroupRequest), arg0)
-}
-
-// GetGatewayGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetGatewayGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetGatewayGroupInput, arg2 ...request.Option) (*alexaforbusiness.GetGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetGatewayGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.GetGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetGatewayGroupWithContext indicates an expected call of GetGatewayGroupWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetGatewayGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetGatewayGroupWithContext), varargs...)
-}
-
-// GetGatewayRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) GetGatewayRequest(arg0 *alexaforbusiness.GetGatewayInput) (*request.Request, *alexaforbusiness.GetGatewayOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetGatewayRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.GetGatewayOutput)
-	return ret0, ret1
-}
-
-// GetGatewayRequest indicates an expected call of GetGatewayRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetGatewayRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetGatewayRequest), arg0)
-}
-
-// GetGatewayWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetGatewayWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetGatewayInput, arg2 ...request.Option) (*alexaforbusiness.GetGatewayOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetGatewayWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.GetGatewayOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetGatewayWithContext indicates an expected call of GetGatewayWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetGatewayWithContext), varargs...)
-}
-
-// GetInvitationConfiguration mocks base method.
-func (m *MockAlexaForBusinessAPI) GetInvitationConfiguration(arg0 *alexaforbusiness.GetInvitationConfigurationInput) (*alexaforbusiness.GetInvitationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetInvitationConfiguration", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.GetInvitationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetInvitationConfiguration indicates an expected call of GetInvitationConfiguration.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetInvitationConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationConfiguration", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetInvitationConfiguration), arg0)
-}
-
-// GetInvitationConfigurationRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) GetInvitationConfigurationRequest(arg0 *alexaforbusiness.GetInvitationConfigurationInput) (*request.Request, *alexaforbusiness.GetInvitationConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetInvitationConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.GetInvitationConfigurationOutput)
-	return ret0, ret1
-}
-
-// GetInvitationConfigurationRequest indicates an expected call of GetInvitationConfigurationRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetInvitationConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationConfigurationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetInvitationConfigurationRequest), arg0)
-}
-
-// GetInvitationConfigurationWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetInvitationConfigurationWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetInvitationConfigurationInput, arg2 ...request.Option) (*alexaforbusiness.GetInvitationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetInvitationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.GetInvitationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetInvitationConfigurationWithContext indicates an expected call of GetInvitationConfigurationWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetInvitationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationConfigurationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetInvitationConfigurationWithContext), varargs...)
-}
-
-// GetNetworkProfile mocks base method.
-func (m *MockAlexaForBusinessAPI) GetNetworkProfile(arg0 *alexaforbusiness.GetNetworkProfileInput) (*alexaforbusiness.GetNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetNetworkProfile", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.GetNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetNetworkProfile indicates an expected call of GetNetworkProfile.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetNetworkProfile(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetNetworkProfile), arg0)
-}
-
-// GetNetworkProfileRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) GetNetworkProfileRequest(arg0 *alexaforbusiness.GetNetworkProfileInput) (*request.Request, *alexaforbusiness.GetNetworkProfileOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetNetworkProfileRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.GetNetworkProfileOutput)
-	return ret0, ret1
-}
-
-// GetNetworkProfileRequest indicates an expected call of GetNetworkProfileRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetNetworkProfileRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetNetworkProfileRequest), arg0)
-}
-
-// GetNetworkProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetNetworkProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetNetworkProfileInput, arg2 ...request.Option) (*alexaforbusiness.GetNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetNetworkProfileWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.GetNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetNetworkProfileWithContext indicates an expected call of GetNetworkProfileWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) GetNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetNetworkProfileWithContext), varargs...)
-}
-
-// GetProfile mocks base method.
+// GetProfile mocks base method
 func (m *MockAlexaForBusinessAPI) GetProfile(arg0 *alexaforbusiness.GetProfileInput) (*alexaforbusiness.GetProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProfile", arg0)
@@ -2345,13 +1144,13 @@ func (m *MockAlexaForBusinessAPI) GetProfile(arg0 *alexaforbusiness.GetProfileIn
 	return ret0, ret1
 }
 
-// GetProfile indicates an expected call of GetProfile.
+// GetProfile indicates an expected call of GetProfile
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetProfile), arg0)
 }
 
-// GetProfileRequest mocks base method.
+// GetProfileRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetProfileRequest(arg0 *alexaforbusiness.GetProfileInput) (*request.Request, *alexaforbusiness.GetProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetProfileRequest", arg0)
@@ -2360,14 +1159,14 @@ func (m *MockAlexaForBusinessAPI) GetProfileRequest(arg0 *alexaforbusiness.GetPr
 	return ret0, ret1
 }
 
-// GetProfileRequest indicates an expected call of GetProfileRequest.
+// GetProfileRequest indicates an expected call of GetProfileRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetProfileRequest), arg0)
 }
 
-// GetProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetProfileInput, arg2 ...request.Option) (*alexaforbusiness.GetProfileOutput, error) {
+// GetProfileWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetProfileInput, arg2 ...request.Option) (*alexaforbusiness.GetProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2379,14 +1178,14 @@ func (m *MockAlexaForBusinessAPI) GetProfileWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetProfileWithContext indicates an expected call of GetProfileWithContext.
+// GetProfileWithContext indicates an expected call of GetProfileWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetProfileWithContext), varargs...)
 }
 
-// GetRoom mocks base method.
+// GetRoom mocks base method
 func (m *MockAlexaForBusinessAPI) GetRoom(arg0 *alexaforbusiness.GetRoomInput) (*alexaforbusiness.GetRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRoom", arg0)
@@ -2395,13 +1194,13 @@ func (m *MockAlexaForBusinessAPI) GetRoom(arg0 *alexaforbusiness.GetRoomInput) (
 	return ret0, ret1
 }
 
-// GetRoom indicates an expected call of GetRoom.
+// GetRoom indicates an expected call of GetRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetRoom), arg0)
 }
 
-// GetRoomRequest mocks base method.
+// GetRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetRoomRequest(arg0 *alexaforbusiness.GetRoomInput) (*request.Request, *alexaforbusiness.GetRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRoomRequest", arg0)
@@ -2410,13 +1209,13 @@ func (m *MockAlexaForBusinessAPI) GetRoomRequest(arg0 *alexaforbusiness.GetRoomI
 	return ret0, ret1
 }
 
-// GetRoomRequest indicates an expected call of GetRoomRequest.
+// GetRoomRequest indicates an expected call of GetRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetRoomRequest), arg0)
 }
 
-// GetRoomSkillParameter mocks base method.
+// GetRoomSkillParameter mocks base method
 func (m *MockAlexaForBusinessAPI) GetRoomSkillParameter(arg0 *alexaforbusiness.GetRoomSkillParameterInput) (*alexaforbusiness.GetRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRoomSkillParameter", arg0)
@@ -2425,13 +1224,13 @@ func (m *MockAlexaForBusinessAPI) GetRoomSkillParameter(arg0 *alexaforbusiness.G
 	return ret0, ret1
 }
 
-// GetRoomSkillParameter indicates an expected call of GetRoomSkillParameter.
+// GetRoomSkillParameter indicates an expected call of GetRoomSkillParameter
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomSkillParameter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomSkillParameter", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetRoomSkillParameter), arg0)
 }
 
-// GetRoomSkillParameterRequest mocks base method.
+// GetRoomSkillParameterRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterRequest(arg0 *alexaforbusiness.GetRoomSkillParameterInput) (*request.Request, *alexaforbusiness.GetRoomSkillParameterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetRoomSkillParameterRequest", arg0)
@@ -2440,14 +1239,14 @@ func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterRequest(arg0 *alexaforbus
 	return ret0, ret1
 }
 
-// GetRoomSkillParameterRequest indicates an expected call of GetRoomSkillParameterRequest.
+// GetRoomSkillParameterRequest indicates an expected call of GetRoomSkillParameterRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomSkillParameterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomSkillParameterRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetRoomSkillParameterRequest), arg0)
 }
 
-// GetRoomSkillParameterWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomSkillParameterOutput, error) {
+// GetRoomSkillParameterWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2459,15 +1258,15 @@ func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// GetRoomSkillParameterWithContext indicates an expected call of GetRoomSkillParameterWithContext.
+// GetRoomSkillParameterWithContext indicates an expected call of GetRoomSkillParameterWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomSkillParameterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomSkillParameterWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetRoomSkillParameterWithContext), varargs...)
 }
 
-// GetRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetRoomInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomOutput, error) {
+// GetRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetRoomInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2479,14 +1278,14 @@ func (m *MockAlexaForBusinessAPI) GetRoomWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// GetRoomWithContext indicates an expected call of GetRoomWithContext.
+// GetRoomWithContext indicates an expected call of GetRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetRoomWithContext), varargs...)
 }
 
-// GetSkillGroup mocks base method.
+// GetSkillGroup mocks base method
 func (m *MockAlexaForBusinessAPI) GetSkillGroup(arg0 *alexaforbusiness.GetSkillGroupInput) (*alexaforbusiness.GetSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSkillGroup", arg0)
@@ -2495,13 +1294,13 @@ func (m *MockAlexaForBusinessAPI) GetSkillGroup(arg0 *alexaforbusiness.GetSkillG
 	return ret0, ret1
 }
 
-// GetSkillGroup indicates an expected call of GetSkillGroup.
+// GetSkillGroup indicates an expected call of GetSkillGroup
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetSkillGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSkillGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetSkillGroup), arg0)
 }
 
-// GetSkillGroupRequest mocks base method.
+// GetSkillGroupRequest mocks base method
 func (m *MockAlexaForBusinessAPI) GetSkillGroupRequest(arg0 *alexaforbusiness.GetSkillGroupInput) (*request.Request, *alexaforbusiness.GetSkillGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetSkillGroupRequest", arg0)
@@ -2510,14 +1309,14 @@ func (m *MockAlexaForBusinessAPI) GetSkillGroupRequest(arg0 *alexaforbusiness.Ge
 	return ret0, ret1
 }
 
-// GetSkillGroupRequest indicates an expected call of GetSkillGroupRequest.
+// GetSkillGroupRequest indicates an expected call of GetSkillGroupRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetSkillGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSkillGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetSkillGroupRequest), arg0)
 }
 
-// GetSkillGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) GetSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.GetSkillGroupOutput, error) {
+// GetSkillGroupWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.GetSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2529,180 +1328,14 @@ func (m *MockAlexaForBusinessAPI) GetSkillGroupWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetSkillGroupWithContext indicates an expected call of GetSkillGroupWithContext.
+// GetSkillGroupWithContext indicates an expected call of GetSkillGroupWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) GetSkillGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSkillGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetSkillGroupWithContext), varargs...)
 }
 
-// ListBusinessReportSchedules mocks base method.
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedules(arg0 *alexaforbusiness.ListBusinessReportSchedulesInput) (*alexaforbusiness.ListBusinessReportSchedulesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListBusinessReportSchedules", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListBusinessReportSchedulesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListBusinessReportSchedules indicates an expected call of ListBusinessReportSchedules.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedules(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBusinessReportSchedules", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListBusinessReportSchedules), arg0)
-}
-
-// ListBusinessReportSchedulesPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesPages(arg0 *alexaforbusiness.ListBusinessReportSchedulesInput, arg1 func(*alexaforbusiness.ListBusinessReportSchedulesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListBusinessReportSchedulesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListBusinessReportSchedulesPages indicates an expected call of ListBusinessReportSchedulesPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedulesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBusinessReportSchedulesPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListBusinessReportSchedulesPages), arg0, arg1)
-}
-
-// ListBusinessReportSchedulesPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListBusinessReportSchedulesInput, arg2 func(*alexaforbusiness.ListBusinessReportSchedulesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListBusinessReportSchedulesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListBusinessReportSchedulesPagesWithContext indicates an expected call of ListBusinessReportSchedulesPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBusinessReportSchedulesPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListBusinessReportSchedulesPagesWithContext), varargs...)
-}
-
-// ListBusinessReportSchedulesRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesRequest(arg0 *alexaforbusiness.ListBusinessReportSchedulesInput) (*request.Request, *alexaforbusiness.ListBusinessReportSchedulesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListBusinessReportSchedulesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListBusinessReportSchedulesOutput)
-	return ret0, ret1
-}
-
-// ListBusinessReportSchedulesRequest indicates an expected call of ListBusinessReportSchedulesRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedulesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBusinessReportSchedulesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListBusinessReportSchedulesRequest), arg0)
-}
-
-// ListBusinessReportSchedulesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListBusinessReportSchedulesInput, arg2 ...request.Option) (*alexaforbusiness.ListBusinessReportSchedulesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListBusinessReportSchedulesWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListBusinessReportSchedulesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListBusinessReportSchedulesWithContext indicates an expected call of ListBusinessReportSchedulesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBusinessReportSchedulesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListBusinessReportSchedulesWithContext), varargs...)
-}
-
-// ListConferenceProviders mocks base method.
-func (m *MockAlexaForBusinessAPI) ListConferenceProviders(arg0 *alexaforbusiness.ListConferenceProvidersInput) (*alexaforbusiness.ListConferenceProvidersOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListConferenceProviders", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListConferenceProvidersOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListConferenceProviders indicates an expected call of ListConferenceProviders.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProviders(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConferenceProviders", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListConferenceProviders), arg0)
-}
-
-// ListConferenceProvidersPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListConferenceProvidersPages(arg0 *alexaforbusiness.ListConferenceProvidersInput, arg1 func(*alexaforbusiness.ListConferenceProvidersOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListConferenceProvidersPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListConferenceProvidersPages indicates an expected call of ListConferenceProvidersPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProvidersPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConferenceProvidersPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListConferenceProvidersPages), arg0, arg1)
-}
-
-// ListConferenceProvidersPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListConferenceProvidersPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListConferenceProvidersInput, arg2 func(*alexaforbusiness.ListConferenceProvidersOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListConferenceProvidersPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListConferenceProvidersPagesWithContext indicates an expected call of ListConferenceProvidersPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProvidersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConferenceProvidersPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListConferenceProvidersPagesWithContext), varargs...)
-}
-
-// ListConferenceProvidersRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListConferenceProvidersRequest(arg0 *alexaforbusiness.ListConferenceProvidersInput) (*request.Request, *alexaforbusiness.ListConferenceProvidersOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListConferenceProvidersRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListConferenceProvidersOutput)
-	return ret0, ret1
-}
-
-// ListConferenceProvidersRequest indicates an expected call of ListConferenceProvidersRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProvidersRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConferenceProvidersRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListConferenceProvidersRequest), arg0)
-}
-
-// ListConferenceProvidersWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListConferenceProvidersWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListConferenceProvidersInput, arg2 ...request.Option) (*alexaforbusiness.ListConferenceProvidersOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListConferenceProvidersWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListConferenceProvidersOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListConferenceProvidersWithContext indicates an expected call of ListConferenceProvidersWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProvidersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConferenceProvidersWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListConferenceProvidersWithContext), varargs...)
-}
-
-// ListDeviceEvents mocks base method.
+// ListDeviceEvents mocks base method
 func (m *MockAlexaForBusinessAPI) ListDeviceEvents(arg0 *alexaforbusiness.ListDeviceEventsInput) (*alexaforbusiness.ListDeviceEventsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceEvents", arg0)
@@ -2711,13 +1344,13 @@ func (m *MockAlexaForBusinessAPI) ListDeviceEvents(arg0 *alexaforbusiness.ListDe
 	return ret0, ret1
 }
 
-// ListDeviceEvents indicates an expected call of ListDeviceEvents.
+// ListDeviceEvents indicates an expected call of ListDeviceEvents
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEvents", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListDeviceEvents), arg0)
 }
 
-// ListDeviceEventsPages mocks base method.
+// ListDeviceEventsPages mocks base method
 func (m *MockAlexaForBusinessAPI) ListDeviceEventsPages(arg0 *alexaforbusiness.ListDeviceEventsInput, arg1 func(*alexaforbusiness.ListDeviceEventsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceEventsPages", arg0, arg1)
@@ -2725,14 +1358,14 @@ func (m *MockAlexaForBusinessAPI) ListDeviceEventsPages(arg0 *alexaforbusiness.L
 	return ret0
 }
 
-// ListDeviceEventsPages indicates an expected call of ListDeviceEventsPages.
+// ListDeviceEventsPages indicates an expected call of ListDeviceEventsPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEventsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEventsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListDeviceEventsPages), arg0, arg1)
 }
 
-// ListDeviceEventsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListDeviceEventsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 func(*alexaforbusiness.ListDeviceEventsOutput, bool) bool, arg3 ...request.Option) error {
+// ListDeviceEventsPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ListDeviceEventsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 func(*alexaforbusiness.ListDeviceEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2743,14 +1376,14 @@ func (m *MockAlexaForBusinessAPI) ListDeviceEventsPagesWithContext(arg0 context.
 	return ret0
 }
 
-// ListDeviceEventsPagesWithContext indicates an expected call of ListDeviceEventsPagesWithContext.
+// ListDeviceEventsPagesWithContext indicates an expected call of ListDeviceEventsPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEventsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListDeviceEventsPagesWithContext), varargs...)
 }
 
-// ListDeviceEventsRequest mocks base method.
+// ListDeviceEventsRequest mocks base method
 func (m *MockAlexaForBusinessAPI) ListDeviceEventsRequest(arg0 *alexaforbusiness.ListDeviceEventsInput) (*request.Request, *alexaforbusiness.ListDeviceEventsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDeviceEventsRequest", arg0)
@@ -2759,14 +1392,14 @@ func (m *MockAlexaForBusinessAPI) ListDeviceEventsRequest(arg0 *alexaforbusiness
 	return ret0, ret1
 }
 
-// ListDeviceEventsRequest indicates an expected call of ListDeviceEventsRequest.
+// ListDeviceEventsRequest indicates an expected call of ListDeviceEventsRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEventsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEventsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListDeviceEventsRequest), arg0)
 }
 
-// ListDeviceEventsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListDeviceEventsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 ...request.Option) (*alexaforbusiness.ListDeviceEventsOutput, error) {
+// ListDeviceEventsWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ListDeviceEventsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 ...request.Option) (*alexaforbusiness.ListDeviceEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2778,180 +1411,14 @@ func (m *MockAlexaForBusinessAPI) ListDeviceEventsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListDeviceEventsWithContext indicates an expected call of ListDeviceEventsWithContext.
+// ListDeviceEventsWithContext indicates an expected call of ListDeviceEventsWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceEventsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListDeviceEventsWithContext), varargs...)
 }
 
-// ListGatewayGroups mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewayGroups(arg0 *alexaforbusiness.ListGatewayGroupsInput) (*alexaforbusiness.ListGatewayGroupsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListGatewayGroups", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListGatewayGroupsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListGatewayGroups indicates an expected call of ListGatewayGroups.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewayGroups(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayGroups", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewayGroups), arg0)
-}
-
-// ListGatewayGroupsPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewayGroupsPages(arg0 *alexaforbusiness.ListGatewayGroupsInput, arg1 func(*alexaforbusiness.ListGatewayGroupsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListGatewayGroupsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListGatewayGroupsPages indicates an expected call of ListGatewayGroupsPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewayGroupsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayGroupsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewayGroupsPages), arg0, arg1)
-}
-
-// ListGatewayGroupsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewayGroupsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListGatewayGroupsInput, arg2 func(*alexaforbusiness.ListGatewayGroupsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListGatewayGroupsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListGatewayGroupsPagesWithContext indicates an expected call of ListGatewayGroupsPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewayGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayGroupsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewayGroupsPagesWithContext), varargs...)
-}
-
-// ListGatewayGroupsRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewayGroupsRequest(arg0 *alexaforbusiness.ListGatewayGroupsInput) (*request.Request, *alexaforbusiness.ListGatewayGroupsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListGatewayGroupsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListGatewayGroupsOutput)
-	return ret0, ret1
-}
-
-// ListGatewayGroupsRequest indicates an expected call of ListGatewayGroupsRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewayGroupsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayGroupsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewayGroupsRequest), arg0)
-}
-
-// ListGatewayGroupsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewayGroupsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListGatewayGroupsInput, arg2 ...request.Option) (*alexaforbusiness.ListGatewayGroupsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListGatewayGroupsWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListGatewayGroupsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListGatewayGroupsWithContext indicates an expected call of ListGatewayGroupsWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewayGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayGroupsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewayGroupsWithContext), varargs...)
-}
-
-// ListGateways mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGateways(arg0 *alexaforbusiness.ListGatewaysInput) (*alexaforbusiness.ListGatewaysOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListGateways", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListGatewaysOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListGateways indicates an expected call of ListGateways.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGateways(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGateways", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGateways), arg0)
-}
-
-// ListGatewaysPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewaysPages(arg0 *alexaforbusiness.ListGatewaysInput, arg1 func(*alexaforbusiness.ListGatewaysOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListGatewaysPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListGatewaysPages indicates an expected call of ListGatewaysPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewaysPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewaysPages), arg0, arg1)
-}
-
-// ListGatewaysPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewaysPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListGatewaysInput, arg2 func(*alexaforbusiness.ListGatewaysOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListGatewaysPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListGatewaysPagesWithContext indicates an expected call of ListGatewaysPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewaysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewaysPagesWithContext), varargs...)
-}
-
-// ListGatewaysRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewaysRequest(arg0 *alexaforbusiness.ListGatewaysInput) (*request.Request, *alexaforbusiness.ListGatewaysOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListGatewaysRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListGatewaysOutput)
-	return ret0, ret1
-}
-
-// ListGatewaysRequest indicates an expected call of ListGatewaysRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewaysRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewaysRequest), arg0)
-}
-
-// ListGatewaysWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListGatewaysWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListGatewaysInput, arg2 ...request.Option) (*alexaforbusiness.ListGatewaysOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListGatewaysWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListGatewaysOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListGatewaysWithContext indicates an expected call of ListGatewaysWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListGatewaysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListGatewaysWithContext), varargs...)
-}
-
-// ListSkills mocks base method.
+// ListSkills mocks base method
 func (m *MockAlexaForBusinessAPI) ListSkills(arg0 *alexaforbusiness.ListSkillsInput) (*alexaforbusiness.ListSkillsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSkills", arg0)
@@ -2960,13 +1427,13 @@ func (m *MockAlexaForBusinessAPI) ListSkills(arg0 *alexaforbusiness.ListSkillsIn
 	return ret0, ret1
 }
 
-// ListSkills indicates an expected call of ListSkills.
+// ListSkills indicates an expected call of ListSkills
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkills(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkills", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkills), arg0)
 }
 
-// ListSkillsPages mocks base method.
+// ListSkillsPages mocks base method
 func (m *MockAlexaForBusinessAPI) ListSkillsPages(arg0 *alexaforbusiness.ListSkillsInput, arg1 func(*alexaforbusiness.ListSkillsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSkillsPages", arg0, arg1)
@@ -2974,14 +1441,14 @@ func (m *MockAlexaForBusinessAPI) ListSkillsPages(arg0 *alexaforbusiness.ListSki
 	return ret0
 }
 
-// ListSkillsPages indicates an expected call of ListSkillsPages.
+// ListSkillsPages indicates an expected call of ListSkillsPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsPages), arg0, arg1)
 }
 
-// ListSkillsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 func(*alexaforbusiness.ListSkillsOutput, bool) bool, arg3 ...request.Option) error {
+// ListSkillsPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ListSkillsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 func(*alexaforbusiness.ListSkillsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2992,14 +1459,14 @@ func (m *MockAlexaForBusinessAPI) ListSkillsPagesWithContext(arg0 context.Contex
 	return ret0
 }
 
-// ListSkillsPagesWithContext indicates an expected call of ListSkillsPagesWithContext.
+// ListSkillsPagesWithContext indicates an expected call of ListSkillsPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsPagesWithContext), varargs...)
 }
 
-// ListSkillsRequest mocks base method.
+// ListSkillsRequest mocks base method
 func (m *MockAlexaForBusinessAPI) ListSkillsRequest(arg0 *alexaforbusiness.ListSkillsInput) (*request.Request, *alexaforbusiness.ListSkillsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSkillsRequest", arg0)
@@ -3008,180 +1475,14 @@ func (m *MockAlexaForBusinessAPI) ListSkillsRequest(arg0 *alexaforbusiness.ListS
 	return ret0, ret1
 }
 
-// ListSkillsRequest indicates an expected call of ListSkillsRequest.
+// ListSkillsRequest indicates an expected call of ListSkillsRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsRequest), arg0)
 }
 
-// ListSkillsStoreCategories mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategories(arg0 *alexaforbusiness.ListSkillsStoreCategoriesInput) (*alexaforbusiness.ListSkillsStoreCategoriesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSkillsStoreCategories", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListSkillsStoreCategoriesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListSkillsStoreCategories indicates an expected call of ListSkillsStoreCategories.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategories(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreCategories", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreCategories), arg0)
-}
-
-// ListSkillsStoreCategoriesPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesPages(arg0 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg1 func(*alexaforbusiness.ListSkillsStoreCategoriesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSkillsStoreCategoriesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSkillsStoreCategoriesPages indicates an expected call of ListSkillsStoreCategoriesPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategoriesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreCategoriesPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreCategoriesPages), arg0, arg1)
-}
-
-// ListSkillsStoreCategoriesPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg2 func(*alexaforbusiness.ListSkillsStoreCategoriesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSkillsStoreCategoriesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSkillsStoreCategoriesPagesWithContext indicates an expected call of ListSkillsStoreCategoriesPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategoriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreCategoriesPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreCategoriesPagesWithContext), varargs...)
-}
-
-// ListSkillsStoreCategoriesRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesRequest(arg0 *alexaforbusiness.ListSkillsStoreCategoriesInput) (*request.Request, *alexaforbusiness.ListSkillsStoreCategoriesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSkillsStoreCategoriesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListSkillsStoreCategoriesOutput)
-	return ret0, ret1
-}
-
-// ListSkillsStoreCategoriesRequest indicates an expected call of ListSkillsStoreCategoriesRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategoriesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreCategoriesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreCategoriesRequest), arg0)
-}
-
-// ListSkillsStoreCategoriesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsStoreCategoriesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSkillsStoreCategoriesWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListSkillsStoreCategoriesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListSkillsStoreCategoriesWithContext indicates an expected call of ListSkillsStoreCategoriesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreCategoriesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreCategoriesWithContext), varargs...)
-}
-
-// ListSkillsStoreSkillsByCategory mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategory(arg0 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput) (*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSkillsStoreSkillsByCategory", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListSkillsStoreSkillsByCategory indicates an expected call of ListSkillsStoreSkillsByCategory.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategory(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreSkillsByCategory", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreSkillsByCategory), arg0)
-}
-
-// ListSkillsStoreSkillsByCategoryPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryPages(arg0 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg1 func(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSkillsStoreSkillsByCategoryPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSkillsStoreSkillsByCategoryPages indicates an expected call of ListSkillsStoreSkillsByCategoryPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreSkillsByCategoryPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreSkillsByCategoryPages), arg0, arg1)
-}
-
-// ListSkillsStoreSkillsByCategoryPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg2 func(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSkillsStoreSkillsByCategoryPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSkillsStoreSkillsByCategoryPagesWithContext indicates an expected call of ListSkillsStoreSkillsByCategoryPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreSkillsByCategoryPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreSkillsByCategoryPagesWithContext), varargs...)
-}
-
-// ListSkillsStoreSkillsByCategoryRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryRequest(arg0 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput) (*request.Request, *alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSkillsStoreSkillsByCategoryRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput)
-	return ret0, ret1
-}
-
-// ListSkillsStoreSkillsByCategoryRequest indicates an expected call of ListSkillsStoreSkillsByCategoryRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreSkillsByCategoryRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreSkillsByCategoryRequest), arg0)
-}
-
-// ListSkillsStoreSkillsByCategoryWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSkillsStoreSkillsByCategoryWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListSkillsStoreSkillsByCategoryWithContext indicates an expected call of ListSkillsStoreSkillsByCategoryWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsStoreSkillsByCategoryWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsStoreSkillsByCategoryWithContext), varargs...)
-}
-
-// ListSkillsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSkillsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsOutput, error) {
+// ListSkillsWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ListSkillsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3193,97 +1494,14 @@ func (m *MockAlexaForBusinessAPI) ListSkillsWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// ListSkillsWithContext indicates an expected call of ListSkillsWithContext.
+// ListSkillsWithContext indicates an expected call of ListSkillsWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSkillsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSkillsWithContext), varargs...)
 }
 
-// ListSmartHomeAppliances mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliances(arg0 *alexaforbusiness.ListSmartHomeAppliancesInput) (*alexaforbusiness.ListSmartHomeAppliancesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSmartHomeAppliances", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.ListSmartHomeAppliancesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListSmartHomeAppliances indicates an expected call of ListSmartHomeAppliances.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliances(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSmartHomeAppliances", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSmartHomeAppliances), arg0)
-}
-
-// ListSmartHomeAppliancesPages mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesPages(arg0 *alexaforbusiness.ListSmartHomeAppliancesInput, arg1 func(*alexaforbusiness.ListSmartHomeAppliancesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSmartHomeAppliancesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSmartHomeAppliancesPages indicates an expected call of ListSmartHomeAppliancesPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliancesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSmartHomeAppliancesPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSmartHomeAppliancesPages), arg0, arg1)
-}
-
-// ListSmartHomeAppliancesPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSmartHomeAppliancesInput, arg2 func(*alexaforbusiness.ListSmartHomeAppliancesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSmartHomeAppliancesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSmartHomeAppliancesPagesWithContext indicates an expected call of ListSmartHomeAppliancesPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSmartHomeAppliancesPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSmartHomeAppliancesPagesWithContext), varargs...)
-}
-
-// ListSmartHomeAppliancesRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesRequest(arg0 *alexaforbusiness.ListSmartHomeAppliancesInput) (*request.Request, *alexaforbusiness.ListSmartHomeAppliancesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSmartHomeAppliancesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.ListSmartHomeAppliancesOutput)
-	return ret0, ret1
-}
-
-// ListSmartHomeAppliancesRequest indicates an expected call of ListSmartHomeAppliancesRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliancesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSmartHomeAppliancesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSmartHomeAppliancesRequest), arg0)
-}
-
-// ListSmartHomeAppliancesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSmartHomeAppliancesInput, arg2 ...request.Option) (*alexaforbusiness.ListSmartHomeAppliancesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSmartHomeAppliancesWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.ListSmartHomeAppliancesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListSmartHomeAppliancesWithContext indicates an expected call of ListSmartHomeAppliancesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSmartHomeAppliancesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListSmartHomeAppliancesWithContext), varargs...)
-}
-
-// ListTags mocks base method.
+// ListTags mocks base method
 func (m *MockAlexaForBusinessAPI) ListTags(arg0 *alexaforbusiness.ListTagsInput) (*alexaforbusiness.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTags", arg0)
@@ -3292,13 +1510,13 @@ func (m *MockAlexaForBusinessAPI) ListTags(arg0 *alexaforbusiness.ListTagsInput)
 	return ret0, ret1
 }
 
-// ListTags indicates an expected call of ListTags.
+// ListTags indicates an expected call of ListTags
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTags", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListTags), arg0)
 }
 
-// ListTagsPages mocks base method.
+// ListTagsPages mocks base method
 func (m *MockAlexaForBusinessAPI) ListTagsPages(arg0 *alexaforbusiness.ListTagsInput, arg1 func(*alexaforbusiness.ListTagsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsPages", arg0, arg1)
@@ -3306,14 +1524,14 @@ func (m *MockAlexaForBusinessAPI) ListTagsPages(arg0 *alexaforbusiness.ListTagsI
 	return ret0
 }
 
-// ListTagsPages indicates an expected call of ListTagsPages.
+// ListTagsPages indicates an expected call of ListTagsPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListTagsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListTagsPages), arg0, arg1)
 }
 
-// ListTagsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListTagsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 func(*alexaforbusiness.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
+// ListTagsPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ListTagsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 func(*alexaforbusiness.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3324,14 +1542,14 @@ func (m *MockAlexaForBusinessAPI) ListTagsPagesWithContext(arg0 context.Context,
 	return ret0
 }
 
-// ListTagsPagesWithContext indicates an expected call of ListTagsPagesWithContext.
+// ListTagsPagesWithContext indicates an expected call of ListTagsPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListTagsPagesWithContext), varargs...)
 }
 
-// ListTagsRequest mocks base method.
+// ListTagsRequest mocks base method
 func (m *MockAlexaForBusinessAPI) ListTagsRequest(arg0 *alexaforbusiness.ListTagsInput) (*request.Request, *alexaforbusiness.ListTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsRequest", arg0)
@@ -3340,14 +1558,14 @@ func (m *MockAlexaForBusinessAPI) ListTagsRequest(arg0 *alexaforbusiness.ListTag
 	return ret0, ret1
 }
 
-// ListTagsRequest indicates an expected call of ListTagsRequest.
+// ListTagsRequest indicates an expected call of ListTagsRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListTagsRequest), arg0)
 }
 
-// ListTagsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ListTagsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 ...request.Option) (*alexaforbusiness.ListTagsOutput, error) {
+// ListTagsWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ListTagsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 ...request.Option) (*alexaforbusiness.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3359,114 +1577,14 @@ func (m *MockAlexaForBusinessAPI) ListTagsWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ListTagsWithContext indicates an expected call of ListTagsWithContext.
+// ListTagsWithContext indicates an expected call of ListTagsWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ListTagsWithContext), varargs...)
 }
 
-// PutConferencePreference mocks base method.
-func (m *MockAlexaForBusinessAPI) PutConferencePreference(arg0 *alexaforbusiness.PutConferencePreferenceInput) (*alexaforbusiness.PutConferencePreferenceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutConferencePreference", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.PutConferencePreferenceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutConferencePreference indicates an expected call of PutConferencePreference.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutConferencePreference(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConferencePreference", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutConferencePreference), arg0)
-}
-
-// PutConferencePreferenceRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) PutConferencePreferenceRequest(arg0 *alexaforbusiness.PutConferencePreferenceInput) (*request.Request, *alexaforbusiness.PutConferencePreferenceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutConferencePreferenceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.PutConferencePreferenceOutput)
-	return ret0, ret1
-}
-
-// PutConferencePreferenceRequest indicates an expected call of PutConferencePreferenceRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutConferencePreferenceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConferencePreferenceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutConferencePreferenceRequest), arg0)
-}
-
-// PutConferencePreferenceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) PutConferencePreferenceWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutConferencePreferenceInput, arg2 ...request.Option) (*alexaforbusiness.PutConferencePreferenceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutConferencePreferenceWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.PutConferencePreferenceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutConferencePreferenceWithContext indicates an expected call of PutConferencePreferenceWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutConferencePreferenceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConferencePreferenceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutConferencePreferenceWithContext), varargs...)
-}
-
-// PutInvitationConfiguration mocks base method.
-func (m *MockAlexaForBusinessAPI) PutInvitationConfiguration(arg0 *alexaforbusiness.PutInvitationConfigurationInput) (*alexaforbusiness.PutInvitationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutInvitationConfiguration", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.PutInvitationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutInvitationConfiguration indicates an expected call of PutInvitationConfiguration.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutInvitationConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInvitationConfiguration", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutInvitationConfiguration), arg0)
-}
-
-// PutInvitationConfigurationRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) PutInvitationConfigurationRequest(arg0 *alexaforbusiness.PutInvitationConfigurationInput) (*request.Request, *alexaforbusiness.PutInvitationConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutInvitationConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.PutInvitationConfigurationOutput)
-	return ret0, ret1
-}
-
-// PutInvitationConfigurationRequest indicates an expected call of PutInvitationConfigurationRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutInvitationConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInvitationConfigurationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutInvitationConfigurationRequest), arg0)
-}
-
-// PutInvitationConfigurationWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) PutInvitationConfigurationWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutInvitationConfigurationInput, arg2 ...request.Option) (*alexaforbusiness.PutInvitationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutInvitationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.PutInvitationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutInvitationConfigurationWithContext indicates an expected call of PutInvitationConfigurationWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutInvitationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInvitationConfigurationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutInvitationConfigurationWithContext), varargs...)
-}
-
-// PutRoomSkillParameter mocks base method.
+// PutRoomSkillParameter mocks base method
 func (m *MockAlexaForBusinessAPI) PutRoomSkillParameter(arg0 *alexaforbusiness.PutRoomSkillParameterInput) (*alexaforbusiness.PutRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutRoomSkillParameter", arg0)
@@ -3475,13 +1593,13 @@ func (m *MockAlexaForBusinessAPI) PutRoomSkillParameter(arg0 *alexaforbusiness.P
 	return ret0, ret1
 }
 
-// PutRoomSkillParameter indicates an expected call of PutRoomSkillParameter.
+// PutRoomSkillParameter indicates an expected call of PutRoomSkillParameter
 func (mr *MockAlexaForBusinessAPIMockRecorder) PutRoomSkillParameter(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRoomSkillParameter", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutRoomSkillParameter), arg0)
 }
 
-// PutRoomSkillParameterRequest mocks base method.
+// PutRoomSkillParameterRequest mocks base method
 func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterRequest(arg0 *alexaforbusiness.PutRoomSkillParameterInput) (*request.Request, *alexaforbusiness.PutRoomSkillParameterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutRoomSkillParameterRequest", arg0)
@@ -3490,14 +1608,14 @@ func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterRequest(arg0 *alexaforbus
 	return ret0, ret1
 }
 
-// PutRoomSkillParameterRequest indicates an expected call of PutRoomSkillParameterRequest.
+// PutRoomSkillParameterRequest indicates an expected call of PutRoomSkillParameterRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) PutRoomSkillParameterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRoomSkillParameterRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutRoomSkillParameterRequest), arg0)
 }
 
-// PutRoomSkillParameterWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.PutRoomSkillParameterOutput, error) {
+// PutRoomSkillParameterWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterWithContext(arg0 aws.Context, arg1 *alexaforbusiness.PutRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.PutRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3509,164 +1627,14 @@ func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// PutRoomSkillParameterWithContext indicates an expected call of PutRoomSkillParameterWithContext.
+// PutRoomSkillParameterWithContext indicates an expected call of PutRoomSkillParameterWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) PutRoomSkillParameterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRoomSkillParameterWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutRoomSkillParameterWithContext), varargs...)
 }
 
-// PutSkillAuthorization mocks base method.
-func (m *MockAlexaForBusinessAPI) PutSkillAuthorization(arg0 *alexaforbusiness.PutSkillAuthorizationInput) (*alexaforbusiness.PutSkillAuthorizationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutSkillAuthorization", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.PutSkillAuthorizationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutSkillAuthorization indicates an expected call of PutSkillAuthorization.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutSkillAuthorization(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSkillAuthorization", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutSkillAuthorization), arg0)
-}
-
-// PutSkillAuthorizationRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) PutSkillAuthorizationRequest(arg0 *alexaforbusiness.PutSkillAuthorizationInput) (*request.Request, *alexaforbusiness.PutSkillAuthorizationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutSkillAuthorizationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.PutSkillAuthorizationOutput)
-	return ret0, ret1
-}
-
-// PutSkillAuthorizationRequest indicates an expected call of PutSkillAuthorizationRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutSkillAuthorizationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSkillAuthorizationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutSkillAuthorizationRequest), arg0)
-}
-
-// PutSkillAuthorizationWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) PutSkillAuthorizationWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutSkillAuthorizationInput, arg2 ...request.Option) (*alexaforbusiness.PutSkillAuthorizationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutSkillAuthorizationWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.PutSkillAuthorizationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutSkillAuthorizationWithContext indicates an expected call of PutSkillAuthorizationWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) PutSkillAuthorizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSkillAuthorizationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutSkillAuthorizationWithContext), varargs...)
-}
-
-// RegisterAVSDevice mocks base method.
-func (m *MockAlexaForBusinessAPI) RegisterAVSDevice(arg0 *alexaforbusiness.RegisterAVSDeviceInput) (*alexaforbusiness.RegisterAVSDeviceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RegisterAVSDevice", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.RegisterAVSDeviceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RegisterAVSDevice indicates an expected call of RegisterAVSDevice.
-func (mr *MockAlexaForBusinessAPIMockRecorder) RegisterAVSDevice(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterAVSDevice", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RegisterAVSDevice), arg0)
-}
-
-// RegisterAVSDeviceRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) RegisterAVSDeviceRequest(arg0 *alexaforbusiness.RegisterAVSDeviceInput) (*request.Request, *alexaforbusiness.RegisterAVSDeviceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RegisterAVSDeviceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.RegisterAVSDeviceOutput)
-	return ret0, ret1
-}
-
-// RegisterAVSDeviceRequest indicates an expected call of RegisterAVSDeviceRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) RegisterAVSDeviceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterAVSDeviceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RegisterAVSDeviceRequest), arg0)
-}
-
-// RegisterAVSDeviceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) RegisterAVSDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.RegisterAVSDeviceInput, arg2 ...request.Option) (*alexaforbusiness.RegisterAVSDeviceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "RegisterAVSDeviceWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.RegisterAVSDeviceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RegisterAVSDeviceWithContext indicates an expected call of RegisterAVSDeviceWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) RegisterAVSDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterAVSDeviceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RegisterAVSDeviceWithContext), varargs...)
-}
-
-// RejectSkill mocks base method.
-func (m *MockAlexaForBusinessAPI) RejectSkill(arg0 *alexaforbusiness.RejectSkillInput) (*alexaforbusiness.RejectSkillOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RejectSkill", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.RejectSkillOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RejectSkill indicates an expected call of RejectSkill.
-func (mr *MockAlexaForBusinessAPIMockRecorder) RejectSkill(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectSkill", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RejectSkill), arg0)
-}
-
-// RejectSkillRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) RejectSkillRequest(arg0 *alexaforbusiness.RejectSkillInput) (*request.Request, *alexaforbusiness.RejectSkillOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RejectSkillRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.RejectSkillOutput)
-	return ret0, ret1
-}
-
-// RejectSkillRequest indicates an expected call of RejectSkillRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) RejectSkillRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectSkillRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RejectSkillRequest), arg0)
-}
-
-// RejectSkillWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) RejectSkillWithContext(arg0 context.Context, arg1 *alexaforbusiness.RejectSkillInput, arg2 ...request.Option) (*alexaforbusiness.RejectSkillOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "RejectSkillWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.RejectSkillOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RejectSkillWithContext indicates an expected call of RejectSkillWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) RejectSkillWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectSkillWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RejectSkillWithContext), varargs...)
-}
-
-// ResolveRoom mocks base method.
+// ResolveRoom mocks base method
 func (m *MockAlexaForBusinessAPI) ResolveRoom(arg0 *alexaforbusiness.ResolveRoomInput) (*alexaforbusiness.ResolveRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ResolveRoom", arg0)
@@ -3675,13 +1643,13 @@ func (m *MockAlexaForBusinessAPI) ResolveRoom(arg0 *alexaforbusiness.ResolveRoom
 	return ret0, ret1
 }
 
-// ResolveRoom indicates an expected call of ResolveRoom.
+// ResolveRoom indicates an expected call of ResolveRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) ResolveRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResolveRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ResolveRoom), arg0)
 }
 
-// ResolveRoomRequest mocks base method.
+// ResolveRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) ResolveRoomRequest(arg0 *alexaforbusiness.ResolveRoomInput) (*request.Request, *alexaforbusiness.ResolveRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ResolveRoomRequest", arg0)
@@ -3690,14 +1658,14 @@ func (m *MockAlexaForBusinessAPI) ResolveRoomRequest(arg0 *alexaforbusiness.Reso
 	return ret0, ret1
 }
 
-// ResolveRoomRequest indicates an expected call of ResolveRoomRequest.
+// ResolveRoomRequest indicates an expected call of ResolveRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) ResolveRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResolveRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ResolveRoomRequest), arg0)
 }
 
-// ResolveRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) ResolveRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.ResolveRoomInput, arg2 ...request.Option) (*alexaforbusiness.ResolveRoomOutput, error) {
+// ResolveRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) ResolveRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ResolveRoomInput, arg2 ...request.Option) (*alexaforbusiness.ResolveRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3709,14 +1677,14 @@ func (m *MockAlexaForBusinessAPI) ResolveRoomWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// ResolveRoomWithContext indicates an expected call of ResolveRoomWithContext.
+// ResolveRoomWithContext indicates an expected call of ResolveRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) ResolveRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResolveRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).ResolveRoomWithContext), varargs...)
 }
 
-// RevokeInvitation mocks base method.
+// RevokeInvitation mocks base method
 func (m *MockAlexaForBusinessAPI) RevokeInvitation(arg0 *alexaforbusiness.RevokeInvitationInput) (*alexaforbusiness.RevokeInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RevokeInvitation", arg0)
@@ -3725,13 +1693,13 @@ func (m *MockAlexaForBusinessAPI) RevokeInvitation(arg0 *alexaforbusiness.Revoke
 	return ret0, ret1
 }
 
-// RevokeInvitation indicates an expected call of RevokeInvitation.
+// RevokeInvitation indicates an expected call of RevokeInvitation
 func (mr *MockAlexaForBusinessAPIMockRecorder) RevokeInvitation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeInvitation", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RevokeInvitation), arg0)
 }
 
-// RevokeInvitationRequest mocks base method.
+// RevokeInvitationRequest mocks base method
 func (m *MockAlexaForBusinessAPI) RevokeInvitationRequest(arg0 *alexaforbusiness.RevokeInvitationInput) (*request.Request, *alexaforbusiness.RevokeInvitationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RevokeInvitationRequest", arg0)
@@ -3740,14 +1708,14 @@ func (m *MockAlexaForBusinessAPI) RevokeInvitationRequest(arg0 *alexaforbusiness
 	return ret0, ret1
 }
 
-// RevokeInvitationRequest indicates an expected call of RevokeInvitationRequest.
+// RevokeInvitationRequest indicates an expected call of RevokeInvitationRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) RevokeInvitationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeInvitationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RevokeInvitationRequest), arg0)
 }
 
-// RevokeInvitationWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) RevokeInvitationWithContext(arg0 context.Context, arg1 *alexaforbusiness.RevokeInvitationInput, arg2 ...request.Option) (*alexaforbusiness.RevokeInvitationOutput, error) {
+// RevokeInvitationWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) RevokeInvitationWithContext(arg0 aws.Context, arg1 *alexaforbusiness.RevokeInvitationInput, arg2 ...request.Option) (*alexaforbusiness.RevokeInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3759,14 +1727,14 @@ func (m *MockAlexaForBusinessAPI) RevokeInvitationWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// RevokeInvitationWithContext indicates an expected call of RevokeInvitationWithContext.
+// RevokeInvitationWithContext indicates an expected call of RevokeInvitationWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) RevokeInvitationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeInvitationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).RevokeInvitationWithContext), varargs...)
 }
 
-// SearchAddressBooks mocks base method.
+// SearchAddressBooks mocks base method
 func (m *MockAlexaForBusinessAPI) SearchAddressBooks(arg0 *alexaforbusiness.SearchAddressBooksInput) (*alexaforbusiness.SearchAddressBooksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchAddressBooks", arg0)
@@ -3775,13 +1743,13 @@ func (m *MockAlexaForBusinessAPI) SearchAddressBooks(arg0 *alexaforbusiness.Sear
 	return ret0, ret1
 }
 
-// SearchAddressBooks indicates an expected call of SearchAddressBooks.
+// SearchAddressBooks indicates an expected call of SearchAddressBooks
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAddressBooks", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchAddressBooks), arg0)
 }
 
-// SearchAddressBooksPages mocks base method.
+// SearchAddressBooksPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchAddressBooksPages(arg0 *alexaforbusiness.SearchAddressBooksInput, arg1 func(*alexaforbusiness.SearchAddressBooksOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchAddressBooksPages", arg0, arg1)
@@ -3789,14 +1757,14 @@ func (m *MockAlexaForBusinessAPI) SearchAddressBooksPages(arg0 *alexaforbusiness
 	return ret0
 }
 
-// SearchAddressBooksPages indicates an expected call of SearchAddressBooksPages.
+// SearchAddressBooksPages indicates an expected call of SearchAddressBooksPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooksPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAddressBooksPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchAddressBooksPages), arg0, arg1)
 }
 
-// SearchAddressBooksPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchAddressBooksPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 func(*alexaforbusiness.SearchAddressBooksOutput, bool) bool, arg3 ...request.Option) error {
+// SearchAddressBooksPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchAddressBooksPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 func(*alexaforbusiness.SearchAddressBooksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3807,14 +1775,14 @@ func (m *MockAlexaForBusinessAPI) SearchAddressBooksPagesWithContext(arg0 contex
 	return ret0
 }
 
-// SearchAddressBooksPagesWithContext indicates an expected call of SearchAddressBooksPagesWithContext.
+// SearchAddressBooksPagesWithContext indicates an expected call of SearchAddressBooksPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAddressBooksPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchAddressBooksPagesWithContext), varargs...)
 }
 
-// SearchAddressBooksRequest mocks base method.
+// SearchAddressBooksRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchAddressBooksRequest(arg0 *alexaforbusiness.SearchAddressBooksInput) (*request.Request, *alexaforbusiness.SearchAddressBooksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchAddressBooksRequest", arg0)
@@ -3823,14 +1791,14 @@ func (m *MockAlexaForBusinessAPI) SearchAddressBooksRequest(arg0 *alexaforbusine
 	return ret0, ret1
 }
 
-// SearchAddressBooksRequest indicates an expected call of SearchAddressBooksRequest.
+// SearchAddressBooksRequest indicates an expected call of SearchAddressBooksRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAddressBooksRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchAddressBooksRequest), arg0)
 }
 
-// SearchAddressBooksWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchAddressBooksWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 ...request.Option) (*alexaforbusiness.SearchAddressBooksOutput, error) {
+// SearchAddressBooksWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchAddressBooksWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 ...request.Option) (*alexaforbusiness.SearchAddressBooksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3842,14 +1810,14 @@ func (m *MockAlexaForBusinessAPI) SearchAddressBooksWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// SearchAddressBooksWithContext indicates an expected call of SearchAddressBooksWithContext.
+// SearchAddressBooksWithContext indicates an expected call of SearchAddressBooksWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAddressBooksWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchAddressBooksWithContext), varargs...)
 }
 
-// SearchContacts mocks base method.
+// SearchContacts mocks base method
 func (m *MockAlexaForBusinessAPI) SearchContacts(arg0 *alexaforbusiness.SearchContactsInput) (*alexaforbusiness.SearchContactsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchContacts", arg0)
@@ -3858,13 +1826,13 @@ func (m *MockAlexaForBusinessAPI) SearchContacts(arg0 *alexaforbusiness.SearchCo
 	return ret0, ret1
 }
 
-// SearchContacts indicates an expected call of SearchContacts.
+// SearchContacts indicates an expected call of SearchContacts
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContacts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchContacts", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchContacts), arg0)
 }
 
-// SearchContactsPages mocks base method.
+// SearchContactsPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchContactsPages(arg0 *alexaforbusiness.SearchContactsInput, arg1 func(*alexaforbusiness.SearchContactsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchContactsPages", arg0, arg1)
@@ -3872,14 +1840,14 @@ func (m *MockAlexaForBusinessAPI) SearchContactsPages(arg0 *alexaforbusiness.Sea
 	return ret0
 }
 
-// SearchContactsPages indicates an expected call of SearchContactsPages.
+// SearchContactsPages indicates an expected call of SearchContactsPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContactsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchContactsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchContactsPages), arg0, arg1)
 }
 
-// SearchContactsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchContactsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 func(*alexaforbusiness.SearchContactsOutput, bool) bool, arg3 ...request.Option) error {
+// SearchContactsPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchContactsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 func(*alexaforbusiness.SearchContactsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3890,14 +1858,14 @@ func (m *MockAlexaForBusinessAPI) SearchContactsPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// SearchContactsPagesWithContext indicates an expected call of SearchContactsPagesWithContext.
+// SearchContactsPagesWithContext indicates an expected call of SearchContactsPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchContactsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchContactsPagesWithContext), varargs...)
 }
 
-// SearchContactsRequest mocks base method.
+// SearchContactsRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchContactsRequest(arg0 *alexaforbusiness.SearchContactsInput) (*request.Request, *alexaforbusiness.SearchContactsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchContactsRequest", arg0)
@@ -3906,14 +1874,14 @@ func (m *MockAlexaForBusinessAPI) SearchContactsRequest(arg0 *alexaforbusiness.S
 	return ret0, ret1
 }
 
-// SearchContactsRequest indicates an expected call of SearchContactsRequest.
+// SearchContactsRequest indicates an expected call of SearchContactsRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContactsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchContactsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchContactsRequest), arg0)
 }
 
-// SearchContactsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchContactsWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 ...request.Option) (*alexaforbusiness.SearchContactsOutput, error) {
+// SearchContactsWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchContactsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 ...request.Option) (*alexaforbusiness.SearchContactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3925,14 +1893,14 @@ func (m *MockAlexaForBusinessAPI) SearchContactsWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// SearchContactsWithContext indicates an expected call of SearchContactsWithContext.
+// SearchContactsWithContext indicates an expected call of SearchContactsWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchContactsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchContactsWithContext), varargs...)
 }
 
-// SearchDevices mocks base method.
+// SearchDevices mocks base method
 func (m *MockAlexaForBusinessAPI) SearchDevices(arg0 *alexaforbusiness.SearchDevicesInput) (*alexaforbusiness.SearchDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchDevices", arg0)
@@ -3941,13 +1909,13 @@ func (m *MockAlexaForBusinessAPI) SearchDevices(arg0 *alexaforbusiness.SearchDev
 	return ret0, ret1
 }
 
-// SearchDevices indicates an expected call of SearchDevices.
+// SearchDevices indicates an expected call of SearchDevices
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevices(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDevices", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchDevices), arg0)
 }
 
-// SearchDevicesPages mocks base method.
+// SearchDevicesPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchDevicesPages(arg0 *alexaforbusiness.SearchDevicesInput, arg1 func(*alexaforbusiness.SearchDevicesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchDevicesPages", arg0, arg1)
@@ -3955,14 +1923,14 @@ func (m *MockAlexaForBusinessAPI) SearchDevicesPages(arg0 *alexaforbusiness.Sear
 	return ret0
 }
 
-// SearchDevicesPages indicates an expected call of SearchDevicesPages.
+// SearchDevicesPages indicates an expected call of SearchDevicesPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevicesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDevicesPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchDevicesPages), arg0, arg1)
 }
 
-// SearchDevicesPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchDevicesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 func(*alexaforbusiness.SearchDevicesOutput, bool) bool, arg3 ...request.Option) error {
+// SearchDevicesPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchDevicesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 func(*alexaforbusiness.SearchDevicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3973,14 +1941,14 @@ func (m *MockAlexaForBusinessAPI) SearchDevicesPagesWithContext(arg0 context.Con
 	return ret0
 }
 
-// SearchDevicesPagesWithContext indicates an expected call of SearchDevicesPagesWithContext.
+// SearchDevicesPagesWithContext indicates an expected call of SearchDevicesPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDevicesPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchDevicesPagesWithContext), varargs...)
 }
 
-// SearchDevicesRequest mocks base method.
+// SearchDevicesRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchDevicesRequest(arg0 *alexaforbusiness.SearchDevicesInput) (*request.Request, *alexaforbusiness.SearchDevicesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchDevicesRequest", arg0)
@@ -3989,14 +1957,14 @@ func (m *MockAlexaForBusinessAPI) SearchDevicesRequest(arg0 *alexaforbusiness.Se
 	return ret0, ret1
 }
 
-// SearchDevicesRequest indicates an expected call of SearchDevicesRequest.
+// SearchDevicesRequest indicates an expected call of SearchDevicesRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevicesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDevicesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchDevicesRequest), arg0)
 }
 
-// SearchDevicesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchDevicesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 ...request.Option) (*alexaforbusiness.SearchDevicesOutput, error) {
+// SearchDevicesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchDevicesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 ...request.Option) (*alexaforbusiness.SearchDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4008,97 +1976,14 @@ func (m *MockAlexaForBusinessAPI) SearchDevicesWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// SearchDevicesWithContext indicates an expected call of SearchDevicesWithContext.
+// SearchDevicesWithContext indicates an expected call of SearchDevicesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDevicesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchDevicesWithContext), varargs...)
 }
 
-// SearchNetworkProfiles mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchNetworkProfiles(arg0 *alexaforbusiness.SearchNetworkProfilesInput) (*alexaforbusiness.SearchNetworkProfilesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SearchNetworkProfiles", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.SearchNetworkProfilesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// SearchNetworkProfiles indicates an expected call of SearchNetworkProfiles.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SearchNetworkProfiles(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchNetworkProfiles", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchNetworkProfiles), arg0)
-}
-
-// SearchNetworkProfilesPages mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchNetworkProfilesPages(arg0 *alexaforbusiness.SearchNetworkProfilesInput, arg1 func(*alexaforbusiness.SearchNetworkProfilesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SearchNetworkProfilesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// SearchNetworkProfilesPages indicates an expected call of SearchNetworkProfilesPages.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SearchNetworkProfilesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchNetworkProfilesPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchNetworkProfilesPages), arg0, arg1)
-}
-
-// SearchNetworkProfilesPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchNetworkProfilesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchNetworkProfilesInput, arg2 func(*alexaforbusiness.SearchNetworkProfilesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "SearchNetworkProfilesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// SearchNetworkProfilesPagesWithContext indicates an expected call of SearchNetworkProfilesPagesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SearchNetworkProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchNetworkProfilesPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchNetworkProfilesPagesWithContext), varargs...)
-}
-
-// SearchNetworkProfilesRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchNetworkProfilesRequest(arg0 *alexaforbusiness.SearchNetworkProfilesInput) (*request.Request, *alexaforbusiness.SearchNetworkProfilesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SearchNetworkProfilesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.SearchNetworkProfilesOutput)
-	return ret0, ret1
-}
-
-// SearchNetworkProfilesRequest indicates an expected call of SearchNetworkProfilesRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SearchNetworkProfilesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchNetworkProfilesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchNetworkProfilesRequest), arg0)
-}
-
-// SearchNetworkProfilesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchNetworkProfilesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchNetworkProfilesInput, arg2 ...request.Option) (*alexaforbusiness.SearchNetworkProfilesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "SearchNetworkProfilesWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.SearchNetworkProfilesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// SearchNetworkProfilesWithContext indicates an expected call of SearchNetworkProfilesWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SearchNetworkProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchNetworkProfilesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchNetworkProfilesWithContext), varargs...)
-}
-
-// SearchProfiles mocks base method.
+// SearchProfiles mocks base method
 func (m *MockAlexaForBusinessAPI) SearchProfiles(arg0 *alexaforbusiness.SearchProfilesInput) (*alexaforbusiness.SearchProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchProfiles", arg0)
@@ -4107,13 +1992,13 @@ func (m *MockAlexaForBusinessAPI) SearchProfiles(arg0 *alexaforbusiness.SearchPr
 	return ret0, ret1
 }
 
-// SearchProfiles indicates an expected call of SearchProfiles.
+// SearchProfiles indicates an expected call of SearchProfiles
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfiles(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchProfiles", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchProfiles), arg0)
 }
 
-// SearchProfilesPages mocks base method.
+// SearchProfilesPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchProfilesPages(arg0 *alexaforbusiness.SearchProfilesInput, arg1 func(*alexaforbusiness.SearchProfilesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchProfilesPages", arg0, arg1)
@@ -4121,14 +2006,14 @@ func (m *MockAlexaForBusinessAPI) SearchProfilesPages(arg0 *alexaforbusiness.Sea
 	return ret0
 }
 
-// SearchProfilesPages indicates an expected call of SearchProfilesPages.
+// SearchProfilesPages indicates an expected call of SearchProfilesPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfilesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchProfilesPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchProfilesPages), arg0, arg1)
 }
 
-// SearchProfilesPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchProfilesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 func(*alexaforbusiness.SearchProfilesOutput, bool) bool, arg3 ...request.Option) error {
+// SearchProfilesPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchProfilesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 func(*alexaforbusiness.SearchProfilesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4139,14 +2024,14 @@ func (m *MockAlexaForBusinessAPI) SearchProfilesPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// SearchProfilesPagesWithContext indicates an expected call of SearchProfilesPagesWithContext.
+// SearchProfilesPagesWithContext indicates an expected call of SearchProfilesPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchProfilesPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchProfilesPagesWithContext), varargs...)
 }
 
-// SearchProfilesRequest mocks base method.
+// SearchProfilesRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchProfilesRequest(arg0 *alexaforbusiness.SearchProfilesInput) (*request.Request, *alexaforbusiness.SearchProfilesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchProfilesRequest", arg0)
@@ -4155,14 +2040,14 @@ func (m *MockAlexaForBusinessAPI) SearchProfilesRequest(arg0 *alexaforbusiness.S
 	return ret0, ret1
 }
 
-// SearchProfilesRequest indicates an expected call of SearchProfilesRequest.
+// SearchProfilesRequest indicates an expected call of SearchProfilesRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfilesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchProfilesRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchProfilesRequest), arg0)
 }
 
-// SearchProfilesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchProfilesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 ...request.Option) (*alexaforbusiness.SearchProfilesOutput, error) {
+// SearchProfilesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchProfilesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 ...request.Option) (*alexaforbusiness.SearchProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4174,14 +2059,14 @@ func (m *MockAlexaForBusinessAPI) SearchProfilesWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// SearchProfilesWithContext indicates an expected call of SearchProfilesWithContext.
+// SearchProfilesWithContext indicates an expected call of SearchProfilesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchProfilesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchProfilesWithContext), varargs...)
 }
 
-// SearchRooms mocks base method.
+// SearchRooms mocks base method
 func (m *MockAlexaForBusinessAPI) SearchRooms(arg0 *alexaforbusiness.SearchRoomsInput) (*alexaforbusiness.SearchRoomsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchRooms", arg0)
@@ -4190,13 +2075,13 @@ func (m *MockAlexaForBusinessAPI) SearchRooms(arg0 *alexaforbusiness.SearchRooms
 	return ret0, ret1
 }
 
-// SearchRooms indicates an expected call of SearchRooms.
+// SearchRooms indicates an expected call of SearchRooms
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRooms(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchRooms", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchRooms), arg0)
 }
 
-// SearchRoomsPages mocks base method.
+// SearchRoomsPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchRoomsPages(arg0 *alexaforbusiness.SearchRoomsInput, arg1 func(*alexaforbusiness.SearchRoomsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchRoomsPages", arg0, arg1)
@@ -4204,14 +2089,14 @@ func (m *MockAlexaForBusinessAPI) SearchRoomsPages(arg0 *alexaforbusiness.Search
 	return ret0
 }
 
-// SearchRoomsPages indicates an expected call of SearchRoomsPages.
+// SearchRoomsPages indicates an expected call of SearchRoomsPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRoomsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchRoomsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchRoomsPages), arg0, arg1)
 }
 
-// SearchRoomsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchRoomsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 func(*alexaforbusiness.SearchRoomsOutput, bool) bool, arg3 ...request.Option) error {
+// SearchRoomsPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchRoomsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 func(*alexaforbusiness.SearchRoomsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4222,14 +2107,14 @@ func (m *MockAlexaForBusinessAPI) SearchRoomsPagesWithContext(arg0 context.Conte
 	return ret0
 }
 
-// SearchRoomsPagesWithContext indicates an expected call of SearchRoomsPagesWithContext.
+// SearchRoomsPagesWithContext indicates an expected call of SearchRoomsPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRoomsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchRoomsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchRoomsPagesWithContext), varargs...)
 }
 
-// SearchRoomsRequest mocks base method.
+// SearchRoomsRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchRoomsRequest(arg0 *alexaforbusiness.SearchRoomsInput) (*request.Request, *alexaforbusiness.SearchRoomsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchRoomsRequest", arg0)
@@ -4238,14 +2123,14 @@ func (m *MockAlexaForBusinessAPI) SearchRoomsRequest(arg0 *alexaforbusiness.Sear
 	return ret0, ret1
 }
 
-// SearchRoomsRequest indicates an expected call of SearchRoomsRequest.
+// SearchRoomsRequest indicates an expected call of SearchRoomsRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRoomsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchRoomsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchRoomsRequest), arg0)
 }
 
-// SearchRoomsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchRoomsWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 ...request.Option) (*alexaforbusiness.SearchRoomsOutput, error) {
+// SearchRoomsWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchRoomsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 ...request.Option) (*alexaforbusiness.SearchRoomsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4257,14 +2142,14 @@ func (m *MockAlexaForBusinessAPI) SearchRoomsWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// SearchRoomsWithContext indicates an expected call of SearchRoomsWithContext.
+// SearchRoomsWithContext indicates an expected call of SearchRoomsWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRoomsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchRoomsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchRoomsWithContext), varargs...)
 }
 
-// SearchSkillGroups mocks base method.
+// SearchSkillGroups mocks base method
 func (m *MockAlexaForBusinessAPI) SearchSkillGroups(arg0 *alexaforbusiness.SearchSkillGroupsInput) (*alexaforbusiness.SearchSkillGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchSkillGroups", arg0)
@@ -4273,13 +2158,13 @@ func (m *MockAlexaForBusinessAPI) SearchSkillGroups(arg0 *alexaforbusiness.Searc
 	return ret0, ret1
 }
 
-// SearchSkillGroups indicates an expected call of SearchSkillGroups.
+// SearchSkillGroups indicates an expected call of SearchSkillGroups
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSkillGroups", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchSkillGroups), arg0)
 }
 
-// SearchSkillGroupsPages mocks base method.
+// SearchSkillGroupsPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPages(arg0 *alexaforbusiness.SearchSkillGroupsInput, arg1 func(*alexaforbusiness.SearchSkillGroupsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchSkillGroupsPages", arg0, arg1)
@@ -4287,14 +2172,14 @@ func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPages(arg0 *alexaforbusiness.
 	return ret0
 }
 
-// SearchSkillGroupsPages indicates an expected call of SearchSkillGroupsPages.
+// SearchSkillGroupsPages indicates an expected call of SearchSkillGroupsPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroupsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSkillGroupsPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchSkillGroupsPages), arg0, arg1)
 }
 
-// SearchSkillGroupsPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 func(*alexaforbusiness.SearchSkillGroupsOutput, bool) bool, arg3 ...request.Option) error {
+// SearchSkillGroupsPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 func(*alexaforbusiness.SearchSkillGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4305,14 +2190,14 @@ func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPagesWithContext(arg0 context
 	return ret0
 }
 
-// SearchSkillGroupsPagesWithContext indicates an expected call of SearchSkillGroupsPagesWithContext.
+// SearchSkillGroupsPagesWithContext indicates an expected call of SearchSkillGroupsPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSkillGroupsPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchSkillGroupsPagesWithContext), varargs...)
 }
 
-// SearchSkillGroupsRequest mocks base method.
+// SearchSkillGroupsRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchSkillGroupsRequest(arg0 *alexaforbusiness.SearchSkillGroupsInput) (*request.Request, *alexaforbusiness.SearchSkillGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchSkillGroupsRequest", arg0)
@@ -4321,14 +2206,14 @@ func (m *MockAlexaForBusinessAPI) SearchSkillGroupsRequest(arg0 *alexaforbusines
 	return ret0, ret1
 }
 
-// SearchSkillGroupsRequest indicates an expected call of SearchSkillGroupsRequest.
+// SearchSkillGroupsRequest indicates an expected call of SearchSkillGroupsRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSkillGroupsRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchSkillGroupsRequest), arg0)
 }
 
-// SearchSkillGroupsWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchSkillGroupsWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 ...request.Option) (*alexaforbusiness.SearchSkillGroupsOutput, error) {
+// SearchSkillGroupsWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchSkillGroupsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 ...request.Option) (*alexaforbusiness.SearchSkillGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4340,14 +2225,14 @@ func (m *MockAlexaForBusinessAPI) SearchSkillGroupsWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// SearchSkillGroupsWithContext indicates an expected call of SearchSkillGroupsWithContext.
+// SearchSkillGroupsWithContext indicates an expected call of SearchSkillGroupsWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSkillGroupsWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchSkillGroupsWithContext), varargs...)
 }
 
-// SearchUsers mocks base method.
+// SearchUsers mocks base method
 func (m *MockAlexaForBusinessAPI) SearchUsers(arg0 *alexaforbusiness.SearchUsersInput) (*alexaforbusiness.SearchUsersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchUsers", arg0)
@@ -4356,13 +2241,13 @@ func (m *MockAlexaForBusinessAPI) SearchUsers(arg0 *alexaforbusiness.SearchUsers
 	return ret0, ret1
 }
 
-// SearchUsers indicates an expected call of SearchUsers.
+// SearchUsers indicates an expected call of SearchUsers
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsers", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchUsers), arg0)
 }
 
-// SearchUsersPages mocks base method.
+// SearchUsersPages mocks base method
 func (m *MockAlexaForBusinessAPI) SearchUsersPages(arg0 *alexaforbusiness.SearchUsersInput, arg1 func(*alexaforbusiness.SearchUsersOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchUsersPages", arg0, arg1)
@@ -4370,14 +2255,14 @@ func (m *MockAlexaForBusinessAPI) SearchUsersPages(arg0 *alexaforbusiness.Search
 	return ret0
 }
 
-// SearchUsersPages indicates an expected call of SearchUsersPages.
+// SearchUsersPages indicates an expected call of SearchUsersPages
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsersPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersPages", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchUsersPages), arg0, arg1)
 }
 
-// SearchUsersPagesWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchUsersPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 func(*alexaforbusiness.SearchUsersOutput, bool) bool, arg3 ...request.Option) error {
+// SearchUsersPagesWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchUsersPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 func(*alexaforbusiness.SearchUsersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4388,14 +2273,14 @@ func (m *MockAlexaForBusinessAPI) SearchUsersPagesWithContext(arg0 context.Conte
 	return ret0
 }
 
-// SearchUsersPagesWithContext indicates an expected call of SearchUsersPagesWithContext.
+// SearchUsersPagesWithContext indicates an expected call of SearchUsersPagesWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersPagesWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchUsersPagesWithContext), varargs...)
 }
 
-// SearchUsersRequest mocks base method.
+// SearchUsersRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SearchUsersRequest(arg0 *alexaforbusiness.SearchUsersInput) (*request.Request, *alexaforbusiness.SearchUsersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SearchUsersRequest", arg0)
@@ -4404,14 +2289,14 @@ func (m *MockAlexaForBusinessAPI) SearchUsersRequest(arg0 *alexaforbusiness.Sear
 	return ret0, ret1
 }
 
-// SearchUsersRequest indicates an expected call of SearchUsersRequest.
+// SearchUsersRequest indicates an expected call of SearchUsersRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchUsersRequest), arg0)
 }
 
-// SearchUsersWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SearchUsersWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 ...request.Option) (*alexaforbusiness.SearchUsersOutput, error) {
+// SearchUsersWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SearchUsersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 ...request.Option) (*alexaforbusiness.SearchUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4423,64 +2308,14 @@ func (m *MockAlexaForBusinessAPI) SearchUsersWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// SearchUsersWithContext indicates an expected call of SearchUsersWithContext.
+// SearchUsersWithContext indicates an expected call of SearchUsersWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SearchUsersWithContext), varargs...)
 }
 
-// SendAnnouncement mocks base method.
-func (m *MockAlexaForBusinessAPI) SendAnnouncement(arg0 *alexaforbusiness.SendAnnouncementInput) (*alexaforbusiness.SendAnnouncementOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SendAnnouncement", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.SendAnnouncementOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// SendAnnouncement indicates an expected call of SendAnnouncement.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SendAnnouncement(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendAnnouncement", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SendAnnouncement), arg0)
-}
-
-// SendAnnouncementRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) SendAnnouncementRequest(arg0 *alexaforbusiness.SendAnnouncementInput) (*request.Request, *alexaforbusiness.SendAnnouncementOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SendAnnouncementRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.SendAnnouncementOutput)
-	return ret0, ret1
-}
-
-// SendAnnouncementRequest indicates an expected call of SendAnnouncementRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SendAnnouncementRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendAnnouncementRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SendAnnouncementRequest), arg0)
-}
-
-// SendAnnouncementWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SendAnnouncementWithContext(arg0 context.Context, arg1 *alexaforbusiness.SendAnnouncementInput, arg2 ...request.Option) (*alexaforbusiness.SendAnnouncementOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "SendAnnouncementWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.SendAnnouncementOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// SendAnnouncementWithContext indicates an expected call of SendAnnouncementWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) SendAnnouncementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendAnnouncementWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SendAnnouncementWithContext), varargs...)
-}
-
-// SendInvitation mocks base method.
+// SendInvitation mocks base method
 func (m *MockAlexaForBusinessAPI) SendInvitation(arg0 *alexaforbusiness.SendInvitationInput) (*alexaforbusiness.SendInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendInvitation", arg0)
@@ -4489,13 +2324,13 @@ func (m *MockAlexaForBusinessAPI) SendInvitation(arg0 *alexaforbusiness.SendInvi
 	return ret0, ret1
 }
 
-// SendInvitation indicates an expected call of SendInvitation.
+// SendInvitation indicates an expected call of SendInvitation
 func (mr *MockAlexaForBusinessAPIMockRecorder) SendInvitation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendInvitation", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SendInvitation), arg0)
 }
 
-// SendInvitationRequest mocks base method.
+// SendInvitationRequest mocks base method
 func (m *MockAlexaForBusinessAPI) SendInvitationRequest(arg0 *alexaforbusiness.SendInvitationInput) (*request.Request, *alexaforbusiness.SendInvitationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SendInvitationRequest", arg0)
@@ -4504,14 +2339,14 @@ func (m *MockAlexaForBusinessAPI) SendInvitationRequest(arg0 *alexaforbusiness.S
 	return ret0, ret1
 }
 
-// SendInvitationRequest indicates an expected call of SendInvitationRequest.
+// SendInvitationRequest indicates an expected call of SendInvitationRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) SendInvitationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendInvitationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SendInvitationRequest), arg0)
 }
 
-// SendInvitationWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) SendInvitationWithContext(arg0 context.Context, arg1 *alexaforbusiness.SendInvitationInput, arg2 ...request.Option) (*alexaforbusiness.SendInvitationOutput, error) {
+// SendInvitationWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) SendInvitationWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SendInvitationInput, arg2 ...request.Option) (*alexaforbusiness.SendInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4523,14 +2358,14 @@ func (m *MockAlexaForBusinessAPI) SendInvitationWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// SendInvitationWithContext indicates an expected call of SendInvitationWithContext.
+// SendInvitationWithContext indicates an expected call of SendInvitationWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) SendInvitationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendInvitationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).SendInvitationWithContext), varargs...)
 }
 
-// StartDeviceSync mocks base method.
+// StartDeviceSync mocks base method
 func (m *MockAlexaForBusinessAPI) StartDeviceSync(arg0 *alexaforbusiness.StartDeviceSyncInput) (*alexaforbusiness.StartDeviceSyncOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartDeviceSync", arg0)
@@ -4539,13 +2374,13 @@ func (m *MockAlexaForBusinessAPI) StartDeviceSync(arg0 *alexaforbusiness.StartDe
 	return ret0, ret1
 }
 
-// StartDeviceSync indicates an expected call of StartDeviceSync.
+// StartDeviceSync indicates an expected call of StartDeviceSync
 func (mr *MockAlexaForBusinessAPIMockRecorder) StartDeviceSync(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDeviceSync", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).StartDeviceSync), arg0)
 }
 
-// StartDeviceSyncRequest mocks base method.
+// StartDeviceSyncRequest mocks base method
 func (m *MockAlexaForBusinessAPI) StartDeviceSyncRequest(arg0 *alexaforbusiness.StartDeviceSyncInput) (*request.Request, *alexaforbusiness.StartDeviceSyncOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "StartDeviceSyncRequest", arg0)
@@ -4554,14 +2389,14 @@ func (m *MockAlexaForBusinessAPI) StartDeviceSyncRequest(arg0 *alexaforbusiness.
 	return ret0, ret1
 }
 
-// StartDeviceSyncRequest indicates an expected call of StartDeviceSyncRequest.
+// StartDeviceSyncRequest indicates an expected call of StartDeviceSyncRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) StartDeviceSyncRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDeviceSyncRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).StartDeviceSyncRequest), arg0)
 }
 
-// StartDeviceSyncWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) StartDeviceSyncWithContext(arg0 context.Context, arg1 *alexaforbusiness.StartDeviceSyncInput, arg2 ...request.Option) (*alexaforbusiness.StartDeviceSyncOutput, error) {
+// StartDeviceSyncWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) StartDeviceSyncWithContext(arg0 aws.Context, arg1 *alexaforbusiness.StartDeviceSyncInput, arg2 ...request.Option) (*alexaforbusiness.StartDeviceSyncOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4573,64 +2408,14 @@ func (m *MockAlexaForBusinessAPI) StartDeviceSyncWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// StartDeviceSyncWithContext indicates an expected call of StartDeviceSyncWithContext.
+// StartDeviceSyncWithContext indicates an expected call of StartDeviceSyncWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) StartDeviceSyncWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDeviceSyncWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).StartDeviceSyncWithContext), varargs...)
 }
 
-// StartSmartHomeApplianceDiscovery mocks base method.
-func (m *MockAlexaForBusinessAPI) StartSmartHomeApplianceDiscovery(arg0 *alexaforbusiness.StartSmartHomeApplianceDiscoveryInput) (*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartSmartHomeApplianceDiscovery", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartSmartHomeApplianceDiscovery indicates an expected call of StartSmartHomeApplianceDiscovery.
-func (mr *MockAlexaForBusinessAPIMockRecorder) StartSmartHomeApplianceDiscovery(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSmartHomeApplianceDiscovery", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).StartSmartHomeApplianceDiscovery), arg0)
-}
-
-// StartSmartHomeApplianceDiscoveryRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) StartSmartHomeApplianceDiscoveryRequest(arg0 *alexaforbusiness.StartSmartHomeApplianceDiscoveryInput) (*request.Request, *alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartSmartHomeApplianceDiscoveryRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput)
-	return ret0, ret1
-}
-
-// StartSmartHomeApplianceDiscoveryRequest indicates an expected call of StartSmartHomeApplianceDiscoveryRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) StartSmartHomeApplianceDiscoveryRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSmartHomeApplianceDiscoveryRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).StartSmartHomeApplianceDiscoveryRequest), arg0)
-}
-
-// StartSmartHomeApplianceDiscoveryWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) StartSmartHomeApplianceDiscoveryWithContext(arg0 context.Context, arg1 *alexaforbusiness.StartSmartHomeApplianceDiscoveryInput, arg2 ...request.Option) (*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "StartSmartHomeApplianceDiscoveryWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartSmartHomeApplianceDiscoveryWithContext indicates an expected call of StartSmartHomeApplianceDiscoveryWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) StartSmartHomeApplianceDiscoveryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSmartHomeApplianceDiscoveryWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).StartSmartHomeApplianceDiscoveryWithContext), varargs...)
-}
-
-// TagResource mocks base method.
+// TagResource mocks base method
 func (m *MockAlexaForBusinessAPI) TagResource(arg0 *alexaforbusiness.TagResourceInput) (*alexaforbusiness.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResource", arg0)
@@ -4639,13 +2424,13 @@ func (m *MockAlexaForBusinessAPI) TagResource(arg0 *alexaforbusiness.TagResource
 	return ret0, ret1
 }
 
-// TagResource indicates an expected call of TagResource.
+// TagResource indicates an expected call of TagResource
 func (mr *MockAlexaForBusinessAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).TagResource), arg0)
 }
 
-// TagResourceRequest mocks base method.
+// TagResourceRequest mocks base method
 func (m *MockAlexaForBusinessAPI) TagResourceRequest(arg0 *alexaforbusiness.TagResourceInput) (*request.Request, *alexaforbusiness.TagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
@@ -4654,14 +2439,14 @@ func (m *MockAlexaForBusinessAPI) TagResourceRequest(arg0 *alexaforbusiness.TagR
 	return ret0, ret1
 }
 
-// TagResourceRequest indicates an expected call of TagResourceRequest.
+// TagResourceRequest indicates an expected call of TagResourceRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).TagResourceRequest), arg0)
 }
 
-// TagResourceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) TagResourceWithContext(arg0 context.Context, arg1 *alexaforbusiness.TagResourceInput, arg2 ...request.Option) (*alexaforbusiness.TagResourceOutput, error) {
+// TagResourceWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) TagResourceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.TagResourceInput, arg2 ...request.Option) (*alexaforbusiness.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4673,14 +2458,14 @@ func (m *MockAlexaForBusinessAPI) TagResourceWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).TagResourceWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
+// UntagResource mocks base method
 func (m *MockAlexaForBusinessAPI) UntagResource(arg0 *alexaforbusiness.UntagResourceInput) (*alexaforbusiness.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResource", arg0)
@@ -4689,13 +2474,13 @@ func (m *MockAlexaForBusinessAPI) UntagResource(arg0 *alexaforbusiness.UntagReso
 	return ret0, ret1
 }
 
-// UntagResource indicates an expected call of UntagResource.
+// UntagResource indicates an expected call of UntagResource
 func (mr *MockAlexaForBusinessAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UntagResource), arg0)
 }
 
-// UntagResourceRequest mocks base method.
+// UntagResourceRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UntagResourceRequest(arg0 *alexaforbusiness.UntagResourceInput) (*request.Request, *alexaforbusiness.UntagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
@@ -4704,14 +2489,14 @@ func (m *MockAlexaForBusinessAPI) UntagResourceRequest(arg0 *alexaforbusiness.Un
 	return ret0, ret1
 }
 
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UntagResourceRequest), arg0)
 }
 
-// UntagResourceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UntagResourceWithContext(arg0 context.Context, arg1 *alexaforbusiness.UntagResourceInput, arg2 ...request.Option) (*alexaforbusiness.UntagResourceOutput, error) {
+// UntagResourceWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UntagResourceInput, arg2 ...request.Option) (*alexaforbusiness.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4723,14 +2508,14 @@ func (m *MockAlexaForBusinessAPI) UntagResourceWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
-// UpdateAddressBook mocks base method.
+// UpdateAddressBook mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateAddressBook(arg0 *alexaforbusiness.UpdateAddressBookInput) (*alexaforbusiness.UpdateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAddressBook", arg0)
@@ -4739,13 +2524,13 @@ func (m *MockAlexaForBusinessAPI) UpdateAddressBook(arg0 *alexaforbusiness.Updat
 	return ret0, ret1
 }
 
-// UpdateAddressBook indicates an expected call of UpdateAddressBook.
+// UpdateAddressBook indicates an expected call of UpdateAddressBook
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateAddressBook(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAddressBook", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateAddressBook), arg0)
 }
 
-// UpdateAddressBookRequest mocks base method.
+// UpdateAddressBookRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateAddressBookRequest(arg0 *alexaforbusiness.UpdateAddressBookInput) (*request.Request, *alexaforbusiness.UpdateAddressBookOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAddressBookRequest", arg0)
@@ -4754,14 +2539,14 @@ func (m *MockAlexaForBusinessAPI) UpdateAddressBookRequest(arg0 *alexaforbusines
 	return ret0, ret1
 }
 
-// UpdateAddressBookRequest indicates an expected call of UpdateAddressBookRequest.
+// UpdateAddressBookRequest indicates an expected call of UpdateAddressBookRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateAddressBookRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAddressBookRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateAddressBookRequest), arg0)
 }
 
-// UpdateAddressBookWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.UpdateAddressBookOutput, error) {
+// UpdateAddressBookWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UpdateAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.UpdateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4773,114 +2558,14 @@ func (m *MockAlexaForBusinessAPI) UpdateAddressBookWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateAddressBookWithContext indicates an expected call of UpdateAddressBookWithContext.
+// UpdateAddressBookWithContext indicates an expected call of UpdateAddressBookWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateAddressBookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAddressBookWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateAddressBookWithContext), varargs...)
 }
 
-// UpdateBusinessReportSchedule mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateBusinessReportSchedule(arg0 *alexaforbusiness.UpdateBusinessReportScheduleInput) (*alexaforbusiness.UpdateBusinessReportScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateBusinessReportSchedule", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateBusinessReportScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateBusinessReportSchedule indicates an expected call of UpdateBusinessReportSchedule.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateBusinessReportSchedule(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBusinessReportSchedule", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateBusinessReportSchedule), arg0)
-}
-
-// UpdateBusinessReportScheduleRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateBusinessReportScheduleRequest(arg0 *alexaforbusiness.UpdateBusinessReportScheduleInput) (*request.Request, *alexaforbusiness.UpdateBusinessReportScheduleOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateBusinessReportScheduleRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.UpdateBusinessReportScheduleOutput)
-	return ret0, ret1
-}
-
-// UpdateBusinessReportScheduleRequest indicates an expected call of UpdateBusinessReportScheduleRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateBusinessReportScheduleRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBusinessReportScheduleRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateBusinessReportScheduleRequest), arg0)
-}
-
-// UpdateBusinessReportScheduleWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateBusinessReportScheduleWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.UpdateBusinessReportScheduleOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateBusinessReportScheduleWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateBusinessReportScheduleOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateBusinessReportScheduleWithContext indicates an expected call of UpdateBusinessReportScheduleWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateBusinessReportScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBusinessReportScheduleWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateBusinessReportScheduleWithContext), varargs...)
-}
-
-// UpdateConferenceProvider mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateConferenceProvider(arg0 *alexaforbusiness.UpdateConferenceProviderInput) (*alexaforbusiness.UpdateConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateConferenceProvider", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateConferenceProvider indicates an expected call of UpdateConferenceProvider.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateConferenceProvider(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConferenceProvider", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateConferenceProvider), arg0)
-}
-
-// UpdateConferenceProviderRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateConferenceProviderRequest(arg0 *alexaforbusiness.UpdateConferenceProviderInput) (*request.Request, *alexaforbusiness.UpdateConferenceProviderOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateConferenceProviderRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.UpdateConferenceProviderOutput)
-	return ret0, ret1
-}
-
-// UpdateConferenceProviderRequest indicates an expected call of UpdateConferenceProviderRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateConferenceProviderRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConferenceProviderRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateConferenceProviderRequest), arg0)
-}
-
-// UpdateConferenceProviderWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.UpdateConferenceProviderOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateConferenceProviderWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateConferenceProviderOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateConferenceProviderWithContext indicates an expected call of UpdateConferenceProviderWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateConferenceProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConferenceProviderWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateConferenceProviderWithContext), varargs...)
-}
-
-// UpdateContact mocks base method.
+// UpdateContact mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateContact(arg0 *alexaforbusiness.UpdateContactInput) (*alexaforbusiness.UpdateContactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateContact", arg0)
@@ -4889,13 +2574,13 @@ func (m *MockAlexaForBusinessAPI) UpdateContact(arg0 *alexaforbusiness.UpdateCon
 	return ret0, ret1
 }
 
-// UpdateContact indicates an expected call of UpdateContact.
+// UpdateContact indicates an expected call of UpdateContact
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateContact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContact", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateContact), arg0)
 }
 
-// UpdateContactRequest mocks base method.
+// UpdateContactRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateContactRequest(arg0 *alexaforbusiness.UpdateContactInput) (*request.Request, *alexaforbusiness.UpdateContactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateContactRequest", arg0)
@@ -4904,14 +2589,14 @@ func (m *MockAlexaForBusinessAPI) UpdateContactRequest(arg0 *alexaforbusiness.Up
 	return ret0, ret1
 }
 
-// UpdateContactRequest indicates an expected call of UpdateContactRequest.
+// UpdateContactRequest indicates an expected call of UpdateContactRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateContactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateContactRequest), arg0)
 }
 
-// UpdateContactWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateContactInput, arg2 ...request.Option) (*alexaforbusiness.UpdateContactOutput, error) {
+// UpdateContactWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UpdateContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateContactInput, arg2 ...request.Option) (*alexaforbusiness.UpdateContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4923,14 +2608,14 @@ func (m *MockAlexaForBusinessAPI) UpdateContactWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateContactWithContext indicates an expected call of UpdateContactWithContext.
+// UpdateContactWithContext indicates an expected call of UpdateContactWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateContactWithContext), varargs...)
 }
 
-// UpdateDevice mocks base method.
+// UpdateDevice mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateDevice(arg0 *alexaforbusiness.UpdateDeviceInput) (*alexaforbusiness.UpdateDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDevice", arg0)
@@ -4939,13 +2624,13 @@ func (m *MockAlexaForBusinessAPI) UpdateDevice(arg0 *alexaforbusiness.UpdateDevi
 	return ret0, ret1
 }
 
-// UpdateDevice indicates an expected call of UpdateDevice.
+// UpdateDevice indicates an expected call of UpdateDevice
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateDevice(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDevice", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateDevice), arg0)
 }
 
-// UpdateDeviceRequest mocks base method.
+// UpdateDeviceRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateDeviceRequest(arg0 *alexaforbusiness.UpdateDeviceInput) (*request.Request, *alexaforbusiness.UpdateDeviceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDeviceRequest", arg0)
@@ -4954,14 +2639,14 @@ func (m *MockAlexaForBusinessAPI) UpdateDeviceRequest(arg0 *alexaforbusiness.Upd
 	return ret0, ret1
 }
 
-// UpdateDeviceRequest indicates an expected call of UpdateDeviceRequest.
+// UpdateDeviceRequest indicates an expected call of UpdateDeviceRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateDeviceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateDeviceRequest), arg0)
 }
 
-// UpdateDeviceWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateDeviceInput, arg2 ...request.Option) (*alexaforbusiness.UpdateDeviceOutput, error) {
+// UpdateDeviceWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UpdateDeviceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateDeviceInput, arg2 ...request.Option) (*alexaforbusiness.UpdateDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4973,164 +2658,14 @@ func (m *MockAlexaForBusinessAPI) UpdateDeviceWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// UpdateDeviceWithContext indicates an expected call of UpdateDeviceWithContext.
+// UpdateDeviceWithContext indicates an expected call of UpdateDeviceWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDeviceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateDeviceWithContext), varargs...)
 }
 
-// UpdateGateway mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateGateway(arg0 *alexaforbusiness.UpdateGatewayInput) (*alexaforbusiness.UpdateGatewayOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateGateway", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateGatewayOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateGateway indicates an expected call of UpdateGateway.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateGateway(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGateway", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateGateway), arg0)
-}
-
-// UpdateGatewayGroup mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateGatewayGroup(arg0 *alexaforbusiness.UpdateGatewayGroupInput) (*alexaforbusiness.UpdateGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateGatewayGroup", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateGatewayGroup indicates an expected call of UpdateGatewayGroup.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateGatewayGroup(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateGatewayGroup), arg0)
-}
-
-// UpdateGatewayGroupRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateGatewayGroupRequest(arg0 *alexaforbusiness.UpdateGatewayGroupInput) (*request.Request, *alexaforbusiness.UpdateGatewayGroupOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateGatewayGroupRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.UpdateGatewayGroupOutput)
-	return ret0, ret1
-}
-
-// UpdateGatewayGroupRequest indicates an expected call of UpdateGatewayGroupRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateGatewayGroupRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateGatewayGroupRequest), arg0)
-}
-
-// UpdateGatewayGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateGatewayGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateGatewayGroupInput, arg2 ...request.Option) (*alexaforbusiness.UpdateGatewayGroupOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateGatewayGroupWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateGatewayGroupOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateGatewayGroupWithContext indicates an expected call of UpdateGatewayGroupWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateGatewayGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayGroupWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateGatewayGroupWithContext), varargs...)
-}
-
-// UpdateGatewayRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateGatewayRequest(arg0 *alexaforbusiness.UpdateGatewayInput) (*request.Request, *alexaforbusiness.UpdateGatewayOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateGatewayRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.UpdateGatewayOutput)
-	return ret0, ret1
-}
-
-// UpdateGatewayRequest indicates an expected call of UpdateGatewayRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateGatewayRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateGatewayRequest), arg0)
-}
-
-// UpdateGatewayWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateGatewayWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateGatewayInput, arg2 ...request.Option) (*alexaforbusiness.UpdateGatewayOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateGatewayWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateGatewayOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateGatewayWithContext indicates an expected call of UpdateGatewayWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateGatewayWithContext), varargs...)
-}
-
-// UpdateNetworkProfile mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateNetworkProfile(arg0 *alexaforbusiness.UpdateNetworkProfileInput) (*alexaforbusiness.UpdateNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateNetworkProfile", arg0)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateNetworkProfile indicates an expected call of UpdateNetworkProfile.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateNetworkProfile(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateNetworkProfile), arg0)
-}
-
-// UpdateNetworkProfileRequest mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateNetworkProfileRequest(arg0 *alexaforbusiness.UpdateNetworkProfileInput) (*request.Request, *alexaforbusiness.UpdateNetworkProfileOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateNetworkProfileRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*alexaforbusiness.UpdateNetworkProfileOutput)
-	return ret0, ret1
-}
-
-// UpdateNetworkProfileRequest indicates an expected call of UpdateNetworkProfileRequest.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateNetworkProfileRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateNetworkProfileRequest), arg0)
-}
-
-// UpdateNetworkProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateNetworkProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateNetworkProfileInput, arg2 ...request.Option) (*alexaforbusiness.UpdateNetworkProfileOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateNetworkProfileWithContext", varargs...)
-	ret0, _ := ret[0].(*alexaforbusiness.UpdateNetworkProfileOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateNetworkProfileWithContext indicates an expected call of UpdateNetworkProfileWithContext.
-func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateNetworkProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateNetworkProfileWithContext), varargs...)
-}
-
-// UpdateProfile mocks base method.
+// UpdateProfile mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateProfile(arg0 *alexaforbusiness.UpdateProfileInput) (*alexaforbusiness.UpdateProfileOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateProfile", arg0)
@@ -5139,13 +2674,13 @@ func (m *MockAlexaForBusinessAPI) UpdateProfile(arg0 *alexaforbusiness.UpdatePro
 	return ret0, ret1
 }
 
-// UpdateProfile indicates an expected call of UpdateProfile.
+// UpdateProfile indicates an expected call of UpdateProfile
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateProfile(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfile", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateProfile), arg0)
 }
 
-// UpdateProfileRequest mocks base method.
+// UpdateProfileRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateProfileRequest(arg0 *alexaforbusiness.UpdateProfileInput) (*request.Request, *alexaforbusiness.UpdateProfileOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateProfileRequest", arg0)
@@ -5154,14 +2689,14 @@ func (m *MockAlexaForBusinessAPI) UpdateProfileRequest(arg0 *alexaforbusiness.Up
 	return ret0, ret1
 }
 
-// UpdateProfileRequest indicates an expected call of UpdateProfileRequest.
+// UpdateProfileRequest indicates an expected call of UpdateProfileRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateProfileRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfileRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateProfileRequest), arg0)
 }
 
-// UpdateProfileWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateProfileInput, arg2 ...request.Option) (*alexaforbusiness.UpdateProfileOutput, error) {
+// UpdateProfileWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UpdateProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateProfileInput, arg2 ...request.Option) (*alexaforbusiness.UpdateProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5173,14 +2708,14 @@ func (m *MockAlexaForBusinessAPI) UpdateProfileWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateProfileWithContext indicates an expected call of UpdateProfileWithContext.
+// UpdateProfileWithContext indicates an expected call of UpdateProfileWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfileWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateProfileWithContext), varargs...)
 }
 
-// UpdateRoom mocks base method.
+// UpdateRoom mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateRoom(arg0 *alexaforbusiness.UpdateRoomInput) (*alexaforbusiness.UpdateRoomOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRoom", arg0)
@@ -5189,13 +2724,13 @@ func (m *MockAlexaForBusinessAPI) UpdateRoom(arg0 *alexaforbusiness.UpdateRoomIn
 	return ret0, ret1
 }
 
-// UpdateRoom indicates an expected call of UpdateRoom.
+// UpdateRoom indicates an expected call of UpdateRoom
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateRoom(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoom", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateRoom), arg0)
 }
 
-// UpdateRoomRequest mocks base method.
+// UpdateRoomRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateRoomRequest(arg0 *alexaforbusiness.UpdateRoomInput) (*request.Request, *alexaforbusiness.UpdateRoomOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateRoomRequest", arg0)
@@ -5204,14 +2739,14 @@ func (m *MockAlexaForBusinessAPI) UpdateRoomRequest(arg0 *alexaforbusiness.Updat
 	return ret0, ret1
 }
 
-// UpdateRoomRequest indicates an expected call of UpdateRoomRequest.
+// UpdateRoomRequest indicates an expected call of UpdateRoomRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateRoomRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateRoomRequest), arg0)
 }
 
-// UpdateRoomWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateRoomInput, arg2 ...request.Option) (*alexaforbusiness.UpdateRoomOutput, error) {
+// UpdateRoomWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UpdateRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateRoomInput, arg2 ...request.Option) (*alexaforbusiness.UpdateRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5223,14 +2758,14 @@ func (m *MockAlexaForBusinessAPI) UpdateRoomWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// UpdateRoomWithContext indicates an expected call of UpdateRoomWithContext.
+// UpdateRoomWithContext indicates an expected call of UpdateRoomWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateRoomWithContext), varargs...)
 }
 
-// UpdateSkillGroup mocks base method.
+// UpdateSkillGroup mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateSkillGroup(arg0 *alexaforbusiness.UpdateSkillGroupInput) (*alexaforbusiness.UpdateSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSkillGroup", arg0)
@@ -5239,13 +2774,13 @@ func (m *MockAlexaForBusinessAPI) UpdateSkillGroup(arg0 *alexaforbusiness.Update
 	return ret0, ret1
 }
 
-// UpdateSkillGroup indicates an expected call of UpdateSkillGroup.
+// UpdateSkillGroup indicates an expected call of UpdateSkillGroup
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateSkillGroup(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSkillGroup", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateSkillGroup), arg0)
 }
 
-// UpdateSkillGroupRequest mocks base method.
+// UpdateSkillGroupRequest mocks base method
 func (m *MockAlexaForBusinessAPI) UpdateSkillGroupRequest(arg0 *alexaforbusiness.UpdateSkillGroupInput) (*request.Request, *alexaforbusiness.UpdateSkillGroupOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateSkillGroupRequest", arg0)
@@ -5254,14 +2789,14 @@ func (m *MockAlexaForBusinessAPI) UpdateSkillGroupRequest(arg0 *alexaforbusiness
 	return ret0, ret1
 }
 
-// UpdateSkillGroupRequest indicates an expected call of UpdateSkillGroupRequest.
+// UpdateSkillGroupRequest indicates an expected call of UpdateSkillGroupRequest
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateSkillGroupRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSkillGroupRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).UpdateSkillGroupRequest), arg0)
 }
 
-// UpdateSkillGroupWithContext mocks base method.
-func (m *MockAlexaForBusinessAPI) UpdateSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.UpdateSkillGroupOutput, error) {
+// UpdateSkillGroupWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) UpdateSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.UpdateSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5273,7 +2808,7 @@ func (m *MockAlexaForBusinessAPI) UpdateSkillGroupWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// UpdateSkillGroupWithContext indicates an expected call of UpdateSkillGroupWithContext.
+// UpdateSkillGroupWithContext indicates an expected call of UpdateSkillGroupWithContext
 func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateSkillGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

@@ -5,38 +5,37 @@
 package emrmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	emr "github.com/aws/aws-sdk-go/service/emr"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockEMRAPI is a mock of EMRAPI interface.
+// MockEMRAPI is a mock of EMRAPI interface
 type MockEMRAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockEMRAPIMockRecorder
 }
 
-// MockEMRAPIMockRecorder is the mock recorder for MockEMRAPI.
+// MockEMRAPIMockRecorder is the mock recorder for MockEMRAPI
 type MockEMRAPIMockRecorder struct {
 	mock *MockEMRAPI
 }
 
-// NewMockEMRAPI creates a new mock instance.
+// NewMockEMRAPI creates a new mock instance
 func NewMockEMRAPI(ctrl *gomock.Controller) *MockEMRAPI {
 	mock := &MockEMRAPI{ctrl: ctrl}
 	mock.recorder = &MockEMRAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockEMRAPI) EXPECT() *MockEMRAPIMockRecorder {
 	return m.recorder
 }
 
-// AddInstanceFleet mocks base method.
+// AddInstanceFleet mocks base method
 func (m *MockEMRAPI) AddInstanceFleet(arg0 *emr.AddInstanceFleetInput) (*emr.AddInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddInstanceFleet", arg0)
@@ -45,13 +44,13 @@ func (m *MockEMRAPI) AddInstanceFleet(arg0 *emr.AddInstanceFleetInput) (*emr.Add
 	return ret0, ret1
 }
 
-// AddInstanceFleet indicates an expected call of AddInstanceFleet.
+// AddInstanceFleet indicates an expected call of AddInstanceFleet
 func (mr *MockEMRAPIMockRecorder) AddInstanceFleet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddInstanceFleet", reflect.TypeOf((*MockEMRAPI)(nil).AddInstanceFleet), arg0)
 }
 
-// AddInstanceFleetRequest mocks base method.
+// AddInstanceFleetRequest mocks base method
 func (m *MockEMRAPI) AddInstanceFleetRequest(arg0 *emr.AddInstanceFleetInput) (*request.Request, *emr.AddInstanceFleetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddInstanceFleetRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockEMRAPI) AddInstanceFleetRequest(arg0 *emr.AddInstanceFleetInput) (*
 	return ret0, ret1
 }
 
-// AddInstanceFleetRequest indicates an expected call of AddInstanceFleetRequest.
+// AddInstanceFleetRequest indicates an expected call of AddInstanceFleetRequest
 func (mr *MockEMRAPIMockRecorder) AddInstanceFleetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddInstanceFleetRequest", reflect.TypeOf((*MockEMRAPI)(nil).AddInstanceFleetRequest), arg0)
 }
 
-// AddInstanceFleetWithContext mocks base method.
-func (m *MockEMRAPI) AddInstanceFleetWithContext(arg0 context.Context, arg1 *emr.AddInstanceFleetInput, arg2 ...request.Option) (*emr.AddInstanceFleetOutput, error) {
+// AddInstanceFleetWithContext mocks base method
+func (m *MockEMRAPI) AddInstanceFleetWithContext(arg0 aws.Context, arg1 *emr.AddInstanceFleetInput, arg2 ...request.Option) (*emr.AddInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockEMRAPI) AddInstanceFleetWithContext(arg0 context.Context, arg1 *emr
 	return ret0, ret1
 }
 
-// AddInstanceFleetWithContext indicates an expected call of AddInstanceFleetWithContext.
+// AddInstanceFleetWithContext indicates an expected call of AddInstanceFleetWithContext
 func (mr *MockEMRAPIMockRecorder) AddInstanceFleetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddInstanceFleetWithContext", reflect.TypeOf((*MockEMRAPI)(nil).AddInstanceFleetWithContext), varargs...)
 }
 
-// AddInstanceGroups mocks base method.
+// AddInstanceGroups mocks base method
 func (m *MockEMRAPI) AddInstanceGroups(arg0 *emr.AddInstanceGroupsInput) (*emr.AddInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddInstanceGroups", arg0)
@@ -95,13 +94,13 @@ func (m *MockEMRAPI) AddInstanceGroups(arg0 *emr.AddInstanceGroupsInput) (*emr.A
 	return ret0, ret1
 }
 
-// AddInstanceGroups indicates an expected call of AddInstanceGroups.
+// AddInstanceGroups indicates an expected call of AddInstanceGroups
 func (mr *MockEMRAPIMockRecorder) AddInstanceGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddInstanceGroups", reflect.TypeOf((*MockEMRAPI)(nil).AddInstanceGroups), arg0)
 }
 
-// AddInstanceGroupsRequest mocks base method.
+// AddInstanceGroupsRequest mocks base method
 func (m *MockEMRAPI) AddInstanceGroupsRequest(arg0 *emr.AddInstanceGroupsInput) (*request.Request, *emr.AddInstanceGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddInstanceGroupsRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockEMRAPI) AddInstanceGroupsRequest(arg0 *emr.AddInstanceGroupsInput) 
 	return ret0, ret1
 }
 
-// AddInstanceGroupsRequest indicates an expected call of AddInstanceGroupsRequest.
+// AddInstanceGroupsRequest indicates an expected call of AddInstanceGroupsRequest
 func (mr *MockEMRAPIMockRecorder) AddInstanceGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddInstanceGroupsRequest", reflect.TypeOf((*MockEMRAPI)(nil).AddInstanceGroupsRequest), arg0)
 }
 
-// AddInstanceGroupsWithContext mocks base method.
-func (m *MockEMRAPI) AddInstanceGroupsWithContext(arg0 context.Context, arg1 *emr.AddInstanceGroupsInput, arg2 ...request.Option) (*emr.AddInstanceGroupsOutput, error) {
+// AddInstanceGroupsWithContext mocks base method
+func (m *MockEMRAPI) AddInstanceGroupsWithContext(arg0 aws.Context, arg1 *emr.AddInstanceGroupsInput, arg2 ...request.Option) (*emr.AddInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockEMRAPI) AddInstanceGroupsWithContext(arg0 context.Context, arg1 *em
 	return ret0, ret1
 }
 
-// AddInstanceGroupsWithContext indicates an expected call of AddInstanceGroupsWithContext.
+// AddInstanceGroupsWithContext indicates an expected call of AddInstanceGroupsWithContext
 func (mr *MockEMRAPIMockRecorder) AddInstanceGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddInstanceGroupsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).AddInstanceGroupsWithContext), varargs...)
 }
 
-// AddJobFlowSteps mocks base method.
+// AddJobFlowSteps mocks base method
 func (m *MockEMRAPI) AddJobFlowSteps(arg0 *emr.AddJobFlowStepsInput) (*emr.AddJobFlowStepsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddJobFlowSteps", arg0)
@@ -145,13 +144,13 @@ func (m *MockEMRAPI) AddJobFlowSteps(arg0 *emr.AddJobFlowStepsInput) (*emr.AddJo
 	return ret0, ret1
 }
 
-// AddJobFlowSteps indicates an expected call of AddJobFlowSteps.
+// AddJobFlowSteps indicates an expected call of AddJobFlowSteps
 func (mr *MockEMRAPIMockRecorder) AddJobFlowSteps(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddJobFlowSteps", reflect.TypeOf((*MockEMRAPI)(nil).AddJobFlowSteps), arg0)
 }
 
-// AddJobFlowStepsRequest mocks base method.
+// AddJobFlowStepsRequest mocks base method
 func (m *MockEMRAPI) AddJobFlowStepsRequest(arg0 *emr.AddJobFlowStepsInput) (*request.Request, *emr.AddJobFlowStepsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddJobFlowStepsRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockEMRAPI) AddJobFlowStepsRequest(arg0 *emr.AddJobFlowStepsInput) (*re
 	return ret0, ret1
 }
 
-// AddJobFlowStepsRequest indicates an expected call of AddJobFlowStepsRequest.
+// AddJobFlowStepsRequest indicates an expected call of AddJobFlowStepsRequest
 func (mr *MockEMRAPIMockRecorder) AddJobFlowStepsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddJobFlowStepsRequest", reflect.TypeOf((*MockEMRAPI)(nil).AddJobFlowStepsRequest), arg0)
 }
 
-// AddJobFlowStepsWithContext mocks base method.
-func (m *MockEMRAPI) AddJobFlowStepsWithContext(arg0 context.Context, arg1 *emr.AddJobFlowStepsInput, arg2 ...request.Option) (*emr.AddJobFlowStepsOutput, error) {
+// AddJobFlowStepsWithContext mocks base method
+func (m *MockEMRAPI) AddJobFlowStepsWithContext(arg0 aws.Context, arg1 *emr.AddJobFlowStepsInput, arg2 ...request.Option) (*emr.AddJobFlowStepsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockEMRAPI) AddJobFlowStepsWithContext(arg0 context.Context, arg1 *emr.
 	return ret0, ret1
 }
 
-// AddJobFlowStepsWithContext indicates an expected call of AddJobFlowStepsWithContext.
+// AddJobFlowStepsWithContext indicates an expected call of AddJobFlowStepsWithContext
 func (mr *MockEMRAPIMockRecorder) AddJobFlowStepsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddJobFlowStepsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).AddJobFlowStepsWithContext), varargs...)
 }
 
-// AddTags mocks base method.
+// AddTags mocks base method
 func (m *MockEMRAPI) AddTags(arg0 *emr.AddTagsInput) (*emr.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTags", arg0)
@@ -195,13 +194,13 @@ func (m *MockEMRAPI) AddTags(arg0 *emr.AddTagsInput) (*emr.AddTagsOutput, error)
 	return ret0, ret1
 }
 
-// AddTags indicates an expected call of AddTags.
+// AddTags indicates an expected call of AddTags
 func (mr *MockEMRAPIMockRecorder) AddTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTags", reflect.TypeOf((*MockEMRAPI)(nil).AddTags), arg0)
 }
 
-// AddTagsRequest mocks base method.
+// AddTagsRequest mocks base method
 func (m *MockEMRAPI) AddTagsRequest(arg0 *emr.AddTagsInput) (*request.Request, *emr.AddTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockEMRAPI) AddTagsRequest(arg0 *emr.AddTagsInput) (*request.Request, *
 	return ret0, ret1
 }
 
-// AddTagsRequest indicates an expected call of AddTagsRequest.
+// AddTagsRequest indicates an expected call of AddTagsRequest
 func (mr *MockEMRAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsRequest", reflect.TypeOf((*MockEMRAPI)(nil).AddTagsRequest), arg0)
 }
 
-// AddTagsWithContext mocks base method.
-func (m *MockEMRAPI) AddTagsWithContext(arg0 context.Context, arg1 *emr.AddTagsInput, arg2 ...request.Option) (*emr.AddTagsOutput, error) {
+// AddTagsWithContext mocks base method
+func (m *MockEMRAPI) AddTagsWithContext(arg0 aws.Context, arg1 *emr.AddTagsInput, arg2 ...request.Option) (*emr.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockEMRAPI) AddTagsWithContext(arg0 context.Context, arg1 *emr.AddTagsI
 	return ret0, ret1
 }
 
-// AddTagsWithContext indicates an expected call of AddTagsWithContext.
+// AddTagsWithContext indicates an expected call of AddTagsWithContext
 func (mr *MockEMRAPIMockRecorder) AddTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).AddTagsWithContext), varargs...)
 }
 
-// CancelSteps mocks base method.
+// CancelSteps mocks base method
 func (m *MockEMRAPI) CancelSteps(arg0 *emr.CancelStepsInput) (*emr.CancelStepsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelSteps", arg0)
@@ -245,13 +244,13 @@ func (m *MockEMRAPI) CancelSteps(arg0 *emr.CancelStepsInput) (*emr.CancelStepsOu
 	return ret0, ret1
 }
 
-// CancelSteps indicates an expected call of CancelSteps.
+// CancelSteps indicates an expected call of CancelSteps
 func (mr *MockEMRAPIMockRecorder) CancelSteps(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSteps", reflect.TypeOf((*MockEMRAPI)(nil).CancelSteps), arg0)
 }
 
-// CancelStepsRequest mocks base method.
+// CancelStepsRequest mocks base method
 func (m *MockEMRAPI) CancelStepsRequest(arg0 *emr.CancelStepsInput) (*request.Request, *emr.CancelStepsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelStepsRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockEMRAPI) CancelStepsRequest(arg0 *emr.CancelStepsInput) (*request.Re
 	return ret0, ret1
 }
 
-// CancelStepsRequest indicates an expected call of CancelStepsRequest.
+// CancelStepsRequest indicates an expected call of CancelStepsRequest
 func (mr *MockEMRAPIMockRecorder) CancelStepsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelStepsRequest", reflect.TypeOf((*MockEMRAPI)(nil).CancelStepsRequest), arg0)
 }
 
-// CancelStepsWithContext mocks base method.
-func (m *MockEMRAPI) CancelStepsWithContext(arg0 context.Context, arg1 *emr.CancelStepsInput, arg2 ...request.Option) (*emr.CancelStepsOutput, error) {
+// CancelStepsWithContext mocks base method
+func (m *MockEMRAPI) CancelStepsWithContext(arg0 aws.Context, arg1 *emr.CancelStepsInput, arg2 ...request.Option) (*emr.CancelStepsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockEMRAPI) CancelStepsWithContext(arg0 context.Context, arg1 *emr.Canc
 	return ret0, ret1
 }
 
-// CancelStepsWithContext indicates an expected call of CancelStepsWithContext.
+// CancelStepsWithContext indicates an expected call of CancelStepsWithContext
 func (mr *MockEMRAPIMockRecorder) CancelStepsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelStepsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CancelStepsWithContext), varargs...)
 }
 
-// CreateSecurityConfiguration mocks base method.
+// CreateSecurityConfiguration mocks base method
 func (m *MockEMRAPI) CreateSecurityConfiguration(arg0 *emr.CreateSecurityConfigurationInput) (*emr.CreateSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSecurityConfiguration", arg0)
@@ -295,13 +294,13 @@ func (m *MockEMRAPI) CreateSecurityConfiguration(arg0 *emr.CreateSecurityConfigu
 	return ret0, ret1
 }
 
-// CreateSecurityConfiguration indicates an expected call of CreateSecurityConfiguration.
+// CreateSecurityConfiguration indicates an expected call of CreateSecurityConfiguration
 func (mr *MockEMRAPIMockRecorder) CreateSecurityConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).CreateSecurityConfiguration), arg0)
 }
 
-// CreateSecurityConfigurationRequest mocks base method.
+// CreateSecurityConfigurationRequest mocks base method
 func (m *MockEMRAPI) CreateSecurityConfigurationRequest(arg0 *emr.CreateSecurityConfigurationInput) (*request.Request, *emr.CreateSecurityConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateSecurityConfigurationRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockEMRAPI) CreateSecurityConfigurationRequest(arg0 *emr.CreateSecurity
 	return ret0, ret1
 }
 
-// CreateSecurityConfigurationRequest indicates an expected call of CreateSecurityConfigurationRequest.
+// CreateSecurityConfigurationRequest indicates an expected call of CreateSecurityConfigurationRequest
 func (mr *MockEMRAPIMockRecorder) CreateSecurityConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).CreateSecurityConfigurationRequest), arg0)
 }
 
-// CreateSecurityConfigurationWithContext mocks base method.
-func (m *MockEMRAPI) CreateSecurityConfigurationWithContext(arg0 context.Context, arg1 *emr.CreateSecurityConfigurationInput, arg2 ...request.Option) (*emr.CreateSecurityConfigurationOutput, error) {
+// CreateSecurityConfigurationWithContext mocks base method
+func (m *MockEMRAPI) CreateSecurityConfigurationWithContext(arg0 aws.Context, arg1 *emr.CreateSecurityConfigurationInput, arg2 ...request.Option) (*emr.CreateSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,114 +328,14 @@ func (m *MockEMRAPI) CreateSecurityConfigurationWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// CreateSecurityConfigurationWithContext indicates an expected call of CreateSecurityConfigurationWithContext.
+// CreateSecurityConfigurationWithContext indicates an expected call of CreateSecurityConfigurationWithContext
 func (mr *MockEMRAPIMockRecorder) CreateSecurityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CreateSecurityConfigurationWithContext), varargs...)
 }
 
-// CreateStudio mocks base method.
-func (m *MockEMRAPI) CreateStudio(arg0 *emr.CreateStudioInput) (*emr.CreateStudioOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateStudio", arg0)
-	ret0, _ := ret[0].(*emr.CreateStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateStudio indicates an expected call of CreateStudio.
-func (mr *MockEMRAPIMockRecorder) CreateStudio(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudio", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudio), arg0)
-}
-
-// CreateStudioRequest mocks base method.
-func (m *MockEMRAPI) CreateStudioRequest(arg0 *emr.CreateStudioInput) (*request.Request, *emr.CreateStudioOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateStudioRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.CreateStudioOutput)
-	return ret0, ret1
-}
-
-// CreateStudioRequest indicates an expected call of CreateStudioRequest.
-func (mr *MockEMRAPIMockRecorder) CreateStudioRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioRequest), arg0)
-}
-
-// CreateStudioSessionMapping mocks base method.
-func (m *MockEMRAPI) CreateStudioSessionMapping(arg0 *emr.CreateStudioSessionMappingInput) (*emr.CreateStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateStudioSessionMapping", arg0)
-	ret0, _ := ret[0].(*emr.CreateStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateStudioSessionMapping indicates an expected call of CreateStudioSessionMapping.
-func (mr *MockEMRAPIMockRecorder) CreateStudioSessionMapping(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioSessionMapping), arg0)
-}
-
-// CreateStudioSessionMappingRequest mocks base method.
-func (m *MockEMRAPI) CreateStudioSessionMappingRequest(arg0 *emr.CreateStudioSessionMappingInput) (*request.Request, *emr.CreateStudioSessionMappingOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateStudioSessionMappingRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.CreateStudioSessionMappingOutput)
-	return ret0, ret1
-}
-
-// CreateStudioSessionMappingRequest indicates an expected call of CreateStudioSessionMappingRequest.
-func (mr *MockEMRAPIMockRecorder) CreateStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioSessionMappingRequest), arg0)
-}
-
-// CreateStudioSessionMappingWithContext mocks base method.
-func (m *MockEMRAPI) CreateStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.CreateStudioSessionMappingInput, arg2 ...request.Option) (*emr.CreateStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateStudioSessionMappingWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.CreateStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateStudioSessionMappingWithContext indicates an expected call of CreateStudioSessionMappingWithContext.
-func (mr *MockEMRAPIMockRecorder) CreateStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioSessionMappingWithContext), varargs...)
-}
-
-// CreateStudioWithContext mocks base method.
-func (m *MockEMRAPI) CreateStudioWithContext(arg0 context.Context, arg1 *emr.CreateStudioInput, arg2 ...request.Option) (*emr.CreateStudioOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateStudioWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.CreateStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateStudioWithContext indicates an expected call of CreateStudioWithContext.
-func (mr *MockEMRAPIMockRecorder) CreateStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioWithContext), varargs...)
-}
-
-// DeleteSecurityConfiguration mocks base method.
+// DeleteSecurityConfiguration mocks base method
 func (m *MockEMRAPI) DeleteSecurityConfiguration(arg0 *emr.DeleteSecurityConfigurationInput) (*emr.DeleteSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSecurityConfiguration", arg0)
@@ -445,13 +344,13 @@ func (m *MockEMRAPI) DeleteSecurityConfiguration(arg0 *emr.DeleteSecurityConfigu
 	return ret0, ret1
 }
 
-// DeleteSecurityConfiguration indicates an expected call of DeleteSecurityConfiguration.
+// DeleteSecurityConfiguration indicates an expected call of DeleteSecurityConfiguration
 func (mr *MockEMRAPIMockRecorder) DeleteSecurityConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).DeleteSecurityConfiguration), arg0)
 }
 
-// DeleteSecurityConfigurationRequest mocks base method.
+// DeleteSecurityConfigurationRequest mocks base method
 func (m *MockEMRAPI) DeleteSecurityConfigurationRequest(arg0 *emr.DeleteSecurityConfigurationInput) (*request.Request, *emr.DeleteSecurityConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteSecurityConfigurationRequest", arg0)
@@ -460,14 +359,14 @@ func (m *MockEMRAPI) DeleteSecurityConfigurationRequest(arg0 *emr.DeleteSecurity
 	return ret0, ret1
 }
 
-// DeleteSecurityConfigurationRequest indicates an expected call of DeleteSecurityConfigurationRequest.
+// DeleteSecurityConfigurationRequest indicates an expected call of DeleteSecurityConfigurationRequest
 func (mr *MockEMRAPIMockRecorder) DeleteSecurityConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).DeleteSecurityConfigurationRequest), arg0)
 }
 
-// DeleteSecurityConfigurationWithContext mocks base method.
-func (m *MockEMRAPI) DeleteSecurityConfigurationWithContext(arg0 context.Context, arg1 *emr.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*emr.DeleteSecurityConfigurationOutput, error) {
+// DeleteSecurityConfigurationWithContext mocks base method
+func (m *MockEMRAPI) DeleteSecurityConfigurationWithContext(arg0 aws.Context, arg1 *emr.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*emr.DeleteSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,114 +378,14 @@ func (m *MockEMRAPI) DeleteSecurityConfigurationWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// DeleteSecurityConfigurationWithContext indicates an expected call of DeleteSecurityConfigurationWithContext.
+// DeleteSecurityConfigurationWithContext indicates an expected call of DeleteSecurityConfigurationWithContext
 func (mr *MockEMRAPIMockRecorder) DeleteSecurityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DeleteSecurityConfigurationWithContext), varargs...)
 }
 
-// DeleteStudio mocks base method.
-func (m *MockEMRAPI) DeleteStudio(arg0 *emr.DeleteStudioInput) (*emr.DeleteStudioOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteStudio", arg0)
-	ret0, _ := ret[0].(*emr.DeleteStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteStudio indicates an expected call of DeleteStudio.
-func (mr *MockEMRAPIMockRecorder) DeleteStudio(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudio", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudio), arg0)
-}
-
-// DeleteStudioRequest mocks base method.
-func (m *MockEMRAPI) DeleteStudioRequest(arg0 *emr.DeleteStudioInput) (*request.Request, *emr.DeleteStudioOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteStudioRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.DeleteStudioOutput)
-	return ret0, ret1
-}
-
-// DeleteStudioRequest indicates an expected call of DeleteStudioRequest.
-func (mr *MockEMRAPIMockRecorder) DeleteStudioRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioRequest), arg0)
-}
-
-// DeleteStudioSessionMapping mocks base method.
-func (m *MockEMRAPI) DeleteStudioSessionMapping(arg0 *emr.DeleteStudioSessionMappingInput) (*emr.DeleteStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteStudioSessionMapping", arg0)
-	ret0, _ := ret[0].(*emr.DeleteStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteStudioSessionMapping indicates an expected call of DeleteStudioSessionMapping.
-func (mr *MockEMRAPIMockRecorder) DeleteStudioSessionMapping(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioSessionMapping), arg0)
-}
-
-// DeleteStudioSessionMappingRequest mocks base method.
-func (m *MockEMRAPI) DeleteStudioSessionMappingRequest(arg0 *emr.DeleteStudioSessionMappingInput) (*request.Request, *emr.DeleteStudioSessionMappingOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteStudioSessionMappingRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.DeleteStudioSessionMappingOutput)
-	return ret0, ret1
-}
-
-// DeleteStudioSessionMappingRequest indicates an expected call of DeleteStudioSessionMappingRequest.
-func (mr *MockEMRAPIMockRecorder) DeleteStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioSessionMappingRequest), arg0)
-}
-
-// DeleteStudioSessionMappingWithContext mocks base method.
-func (m *MockEMRAPI) DeleteStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.DeleteStudioSessionMappingInput, arg2 ...request.Option) (*emr.DeleteStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteStudioSessionMappingWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.DeleteStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteStudioSessionMappingWithContext indicates an expected call of DeleteStudioSessionMappingWithContext.
-func (mr *MockEMRAPIMockRecorder) DeleteStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioSessionMappingWithContext), varargs...)
-}
-
-// DeleteStudioWithContext mocks base method.
-func (m *MockEMRAPI) DeleteStudioWithContext(arg0 context.Context, arg1 *emr.DeleteStudioInput, arg2 ...request.Option) (*emr.DeleteStudioOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteStudioWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.DeleteStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteStudioWithContext indicates an expected call of DeleteStudioWithContext.
-func (mr *MockEMRAPIMockRecorder) DeleteStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioWithContext), varargs...)
-}
-
-// DescribeCluster mocks base method.
+// DescribeCluster mocks base method
 func (m *MockEMRAPI) DescribeCluster(arg0 *emr.DescribeClusterInput) (*emr.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeCluster", arg0)
@@ -595,13 +394,13 @@ func (m *MockEMRAPI) DescribeCluster(arg0 *emr.DescribeClusterInput) (*emr.Descr
 	return ret0, ret1
 }
 
-// DescribeCluster indicates an expected call of DescribeCluster.
+// DescribeCluster indicates an expected call of DescribeCluster
 func (mr *MockEMRAPIMockRecorder) DescribeCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCluster", reflect.TypeOf((*MockEMRAPI)(nil).DescribeCluster), arg0)
 }
 
-// DescribeClusterRequest mocks base method.
+// DescribeClusterRequest mocks base method
 func (m *MockEMRAPI) DescribeClusterRequest(arg0 *emr.DescribeClusterInput) (*request.Request, *emr.DescribeClusterOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeClusterRequest", arg0)
@@ -610,14 +409,14 @@ func (m *MockEMRAPI) DescribeClusterRequest(arg0 *emr.DescribeClusterInput) (*re
 	return ret0, ret1
 }
 
-// DescribeClusterRequest indicates an expected call of DescribeClusterRequest.
+// DescribeClusterRequest indicates an expected call of DescribeClusterRequest
 func (mr *MockEMRAPIMockRecorder) DescribeClusterRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeClusterRequest), arg0)
 }
 
-// DescribeClusterWithContext mocks base method.
-func (m *MockEMRAPI) DescribeClusterWithContext(arg0 context.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.Option) (*emr.DescribeClusterOutput, error) {
+// DescribeClusterWithContext mocks base method
+func (m *MockEMRAPI) DescribeClusterWithContext(arg0 aws.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.Option) (*emr.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +428,14 @@ func (m *MockEMRAPI) DescribeClusterWithContext(arg0 context.Context, arg1 *emr.
 	return ret0, ret1
 }
 
-// DescribeClusterWithContext indicates an expected call of DescribeClusterWithContext.
+// DescribeClusterWithContext indicates an expected call of DescribeClusterWithContext
 func (mr *MockEMRAPIMockRecorder) DescribeClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeClusterWithContext), varargs...)
 }
 
-// DescribeJobFlows mocks base method.
+// DescribeJobFlows mocks base method
 func (m *MockEMRAPI) DescribeJobFlows(arg0 *emr.DescribeJobFlowsInput) (*emr.DescribeJobFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeJobFlows", arg0)
@@ -645,13 +444,13 @@ func (m *MockEMRAPI) DescribeJobFlows(arg0 *emr.DescribeJobFlowsInput) (*emr.Des
 	return ret0, ret1
 }
 
-// DescribeJobFlows indicates an expected call of DescribeJobFlows.
+// DescribeJobFlows indicates an expected call of DescribeJobFlows
 func (mr *MockEMRAPIMockRecorder) DescribeJobFlows(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobFlows", reflect.TypeOf((*MockEMRAPI)(nil).DescribeJobFlows), arg0)
 }
 
-// DescribeJobFlowsRequest mocks base method.
+// DescribeJobFlowsRequest mocks base method
 func (m *MockEMRAPI) DescribeJobFlowsRequest(arg0 *emr.DescribeJobFlowsInput) (*request.Request, *emr.DescribeJobFlowsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeJobFlowsRequest", arg0)
@@ -660,14 +459,14 @@ func (m *MockEMRAPI) DescribeJobFlowsRequest(arg0 *emr.DescribeJobFlowsInput) (*
 	return ret0, ret1
 }
 
-// DescribeJobFlowsRequest indicates an expected call of DescribeJobFlowsRequest.
+// DescribeJobFlowsRequest indicates an expected call of DescribeJobFlowsRequest
 func (mr *MockEMRAPIMockRecorder) DescribeJobFlowsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobFlowsRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeJobFlowsRequest), arg0)
 }
 
-// DescribeJobFlowsWithContext mocks base method.
-func (m *MockEMRAPI) DescribeJobFlowsWithContext(arg0 context.Context, arg1 *emr.DescribeJobFlowsInput, arg2 ...request.Option) (*emr.DescribeJobFlowsOutput, error) {
+// DescribeJobFlowsWithContext mocks base method
+func (m *MockEMRAPI) DescribeJobFlowsWithContext(arg0 aws.Context, arg1 *emr.DescribeJobFlowsInput, arg2 ...request.Option) (*emr.DescribeJobFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,114 +478,14 @@ func (m *MockEMRAPI) DescribeJobFlowsWithContext(arg0 context.Context, arg1 *emr
 	return ret0, ret1
 }
 
-// DescribeJobFlowsWithContext indicates an expected call of DescribeJobFlowsWithContext.
+// DescribeJobFlowsWithContext indicates an expected call of DescribeJobFlowsWithContext
 func (mr *MockEMRAPIMockRecorder) DescribeJobFlowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobFlowsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeJobFlowsWithContext), varargs...)
 }
 
-// DescribeNotebookExecution mocks base method.
-func (m *MockEMRAPI) DescribeNotebookExecution(arg0 *emr.DescribeNotebookExecutionInput) (*emr.DescribeNotebookExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeNotebookExecution", arg0)
-	ret0, _ := ret[0].(*emr.DescribeNotebookExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeNotebookExecution indicates an expected call of DescribeNotebookExecution.
-func (mr *MockEMRAPIMockRecorder) DescribeNotebookExecution(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookExecution", reflect.TypeOf((*MockEMRAPI)(nil).DescribeNotebookExecution), arg0)
-}
-
-// DescribeNotebookExecutionRequest mocks base method.
-func (m *MockEMRAPI) DescribeNotebookExecutionRequest(arg0 *emr.DescribeNotebookExecutionInput) (*request.Request, *emr.DescribeNotebookExecutionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeNotebookExecutionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.DescribeNotebookExecutionOutput)
-	return ret0, ret1
-}
-
-// DescribeNotebookExecutionRequest indicates an expected call of DescribeNotebookExecutionRequest.
-func (mr *MockEMRAPIMockRecorder) DescribeNotebookExecutionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookExecutionRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeNotebookExecutionRequest), arg0)
-}
-
-// DescribeNotebookExecutionWithContext mocks base method.
-func (m *MockEMRAPI) DescribeNotebookExecutionWithContext(arg0 context.Context, arg1 *emr.DescribeNotebookExecutionInput, arg2 ...request.Option) (*emr.DescribeNotebookExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeNotebookExecutionWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.DescribeNotebookExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeNotebookExecutionWithContext indicates an expected call of DescribeNotebookExecutionWithContext.
-func (mr *MockEMRAPIMockRecorder) DescribeNotebookExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookExecutionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeNotebookExecutionWithContext), varargs...)
-}
-
-// DescribeReleaseLabel mocks base method.
-func (m *MockEMRAPI) DescribeReleaseLabel(arg0 *emr.DescribeReleaseLabelInput) (*emr.DescribeReleaseLabelOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeReleaseLabel", arg0)
-	ret0, _ := ret[0].(*emr.DescribeReleaseLabelOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeReleaseLabel indicates an expected call of DescribeReleaseLabel.
-func (mr *MockEMRAPIMockRecorder) DescribeReleaseLabel(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReleaseLabel", reflect.TypeOf((*MockEMRAPI)(nil).DescribeReleaseLabel), arg0)
-}
-
-// DescribeReleaseLabelRequest mocks base method.
-func (m *MockEMRAPI) DescribeReleaseLabelRequest(arg0 *emr.DescribeReleaseLabelInput) (*request.Request, *emr.DescribeReleaseLabelOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeReleaseLabelRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.DescribeReleaseLabelOutput)
-	return ret0, ret1
-}
-
-// DescribeReleaseLabelRequest indicates an expected call of DescribeReleaseLabelRequest.
-func (mr *MockEMRAPIMockRecorder) DescribeReleaseLabelRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReleaseLabelRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeReleaseLabelRequest), arg0)
-}
-
-// DescribeReleaseLabelWithContext mocks base method.
-func (m *MockEMRAPI) DescribeReleaseLabelWithContext(arg0 context.Context, arg1 *emr.DescribeReleaseLabelInput, arg2 ...request.Option) (*emr.DescribeReleaseLabelOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeReleaseLabelWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.DescribeReleaseLabelOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeReleaseLabelWithContext indicates an expected call of DescribeReleaseLabelWithContext.
-func (mr *MockEMRAPIMockRecorder) DescribeReleaseLabelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReleaseLabelWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeReleaseLabelWithContext), varargs...)
-}
-
-// DescribeSecurityConfiguration mocks base method.
+// DescribeSecurityConfiguration mocks base method
 func (m *MockEMRAPI) DescribeSecurityConfiguration(arg0 *emr.DescribeSecurityConfigurationInput) (*emr.DescribeSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSecurityConfiguration", arg0)
@@ -795,13 +494,13 @@ func (m *MockEMRAPI) DescribeSecurityConfiguration(arg0 *emr.DescribeSecurityCon
 	return ret0, ret1
 }
 
-// DescribeSecurityConfiguration indicates an expected call of DescribeSecurityConfiguration.
+// DescribeSecurityConfiguration indicates an expected call of DescribeSecurityConfiguration
 func (mr *MockEMRAPIMockRecorder) DescribeSecurityConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).DescribeSecurityConfiguration), arg0)
 }
 
-// DescribeSecurityConfigurationRequest mocks base method.
+// DescribeSecurityConfigurationRequest mocks base method
 func (m *MockEMRAPI) DescribeSecurityConfigurationRequest(arg0 *emr.DescribeSecurityConfigurationInput) (*request.Request, *emr.DescribeSecurityConfigurationOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeSecurityConfigurationRequest", arg0)
@@ -810,14 +509,14 @@ func (m *MockEMRAPI) DescribeSecurityConfigurationRequest(arg0 *emr.DescribeSecu
 	return ret0, ret1
 }
 
-// DescribeSecurityConfigurationRequest indicates an expected call of DescribeSecurityConfigurationRequest.
+// DescribeSecurityConfigurationRequest indicates an expected call of DescribeSecurityConfigurationRequest
 func (mr *MockEMRAPIMockRecorder) DescribeSecurityConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeSecurityConfigurationRequest), arg0)
 }
 
-// DescribeSecurityConfigurationWithContext mocks base method.
-func (m *MockEMRAPI) DescribeSecurityConfigurationWithContext(arg0 context.Context, arg1 *emr.DescribeSecurityConfigurationInput, arg2 ...request.Option) (*emr.DescribeSecurityConfigurationOutput, error) {
+// DescribeSecurityConfigurationWithContext mocks base method
+func (m *MockEMRAPI) DescribeSecurityConfigurationWithContext(arg0 aws.Context, arg1 *emr.DescribeSecurityConfigurationInput, arg2 ...request.Option) (*emr.DescribeSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +528,14 @@ func (m *MockEMRAPI) DescribeSecurityConfigurationWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// DescribeSecurityConfigurationWithContext indicates an expected call of DescribeSecurityConfigurationWithContext.
+// DescribeSecurityConfigurationWithContext indicates an expected call of DescribeSecurityConfigurationWithContext
 func (mr *MockEMRAPIMockRecorder) DescribeSecurityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeSecurityConfigurationWithContext), varargs...)
 }
 
-// DescribeStep mocks base method.
+// DescribeStep mocks base method
 func (m *MockEMRAPI) DescribeStep(arg0 *emr.DescribeStepInput) (*emr.DescribeStepOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStep", arg0)
@@ -845,13 +544,13 @@ func (m *MockEMRAPI) DescribeStep(arg0 *emr.DescribeStepInput) (*emr.DescribeSte
 	return ret0, ret1
 }
 
-// DescribeStep indicates an expected call of DescribeStep.
+// DescribeStep indicates an expected call of DescribeStep
 func (mr *MockEMRAPIMockRecorder) DescribeStep(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStep", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStep), arg0)
 }
 
-// DescribeStepRequest mocks base method.
+// DescribeStepRequest mocks base method
 func (m *MockEMRAPI) DescribeStepRequest(arg0 *emr.DescribeStepInput) (*request.Request, *emr.DescribeStepOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeStepRequest", arg0)
@@ -860,14 +559,14 @@ func (m *MockEMRAPI) DescribeStepRequest(arg0 *emr.DescribeStepInput) (*request.
 	return ret0, ret1
 }
 
-// DescribeStepRequest indicates an expected call of DescribeStepRequest.
+// DescribeStepRequest indicates an expected call of DescribeStepRequest
 func (mr *MockEMRAPIMockRecorder) DescribeStepRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStepRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStepRequest), arg0)
 }
 
-// DescribeStepWithContext mocks base method.
-func (m *MockEMRAPI) DescribeStepWithContext(arg0 context.Context, arg1 *emr.DescribeStepInput, arg2 ...request.Option) (*emr.DescribeStepOutput, error) {
+// DescribeStepWithContext mocks base method
+func (m *MockEMRAPI) DescribeStepWithContext(arg0 aws.Context, arg1 *emr.DescribeStepInput, arg2 ...request.Option) (*emr.DescribeStepOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,264 +578,14 @@ func (m *MockEMRAPI) DescribeStepWithContext(arg0 context.Context, arg1 *emr.Des
 	return ret0, ret1
 }
 
-// DescribeStepWithContext indicates an expected call of DescribeStepWithContext.
+// DescribeStepWithContext indicates an expected call of DescribeStepWithContext
 func (mr *MockEMRAPIMockRecorder) DescribeStepWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStepWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStepWithContext), varargs...)
 }
 
-// DescribeStudio mocks base method.
-func (m *MockEMRAPI) DescribeStudio(arg0 *emr.DescribeStudioInput) (*emr.DescribeStudioOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeStudio", arg0)
-	ret0, _ := ret[0].(*emr.DescribeStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeStudio indicates an expected call of DescribeStudio.
-func (mr *MockEMRAPIMockRecorder) DescribeStudio(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudio", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudio), arg0)
-}
-
-// DescribeStudioRequest mocks base method.
-func (m *MockEMRAPI) DescribeStudioRequest(arg0 *emr.DescribeStudioInput) (*request.Request, *emr.DescribeStudioOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeStudioRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.DescribeStudioOutput)
-	return ret0, ret1
-}
-
-// DescribeStudioRequest indicates an expected call of DescribeStudioRequest.
-func (mr *MockEMRAPIMockRecorder) DescribeStudioRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudioRequest), arg0)
-}
-
-// DescribeStudioWithContext mocks base method.
-func (m *MockEMRAPI) DescribeStudioWithContext(arg0 context.Context, arg1 *emr.DescribeStudioInput, arg2 ...request.Option) (*emr.DescribeStudioOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeStudioWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.DescribeStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DescribeStudioWithContext indicates an expected call of DescribeStudioWithContext.
-func (mr *MockEMRAPIMockRecorder) DescribeStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudioWithContext), varargs...)
-}
-
-// GetAutoTerminationPolicy mocks base method.
-func (m *MockEMRAPI) GetAutoTerminationPolicy(arg0 *emr.GetAutoTerminationPolicyInput) (*emr.GetAutoTerminationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetAutoTerminationPolicy", arg0)
-	ret0, _ := ret[0].(*emr.GetAutoTerminationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetAutoTerminationPolicy indicates an expected call of GetAutoTerminationPolicy.
-func (mr *MockEMRAPIMockRecorder) GetAutoTerminationPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoTerminationPolicy", reflect.TypeOf((*MockEMRAPI)(nil).GetAutoTerminationPolicy), arg0)
-}
-
-// GetAutoTerminationPolicyRequest mocks base method.
-func (m *MockEMRAPI) GetAutoTerminationPolicyRequest(arg0 *emr.GetAutoTerminationPolicyInput) (*request.Request, *emr.GetAutoTerminationPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetAutoTerminationPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.GetAutoTerminationPolicyOutput)
-	return ret0, ret1
-}
-
-// GetAutoTerminationPolicyRequest indicates an expected call of GetAutoTerminationPolicyRequest.
-func (mr *MockEMRAPIMockRecorder) GetAutoTerminationPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoTerminationPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetAutoTerminationPolicyRequest), arg0)
-}
-
-// GetAutoTerminationPolicyWithContext mocks base method.
-func (m *MockEMRAPI) GetAutoTerminationPolicyWithContext(arg0 context.Context, arg1 *emr.GetAutoTerminationPolicyInput, arg2 ...request.Option) (*emr.GetAutoTerminationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetAutoTerminationPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.GetAutoTerminationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetAutoTerminationPolicyWithContext indicates an expected call of GetAutoTerminationPolicyWithContext.
-func (mr *MockEMRAPIMockRecorder) GetAutoTerminationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoTerminationPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetAutoTerminationPolicyWithContext), varargs...)
-}
-
-// GetBlockPublicAccessConfiguration mocks base method.
-func (m *MockEMRAPI) GetBlockPublicAccessConfiguration(arg0 *emr.GetBlockPublicAccessConfigurationInput) (*emr.GetBlockPublicAccessConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetBlockPublicAccessConfiguration", arg0)
-	ret0, _ := ret[0].(*emr.GetBlockPublicAccessConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetBlockPublicAccessConfiguration indicates an expected call of GetBlockPublicAccessConfiguration.
-func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfiguration), arg0)
-}
-
-// GetBlockPublicAccessConfigurationRequest mocks base method.
-func (m *MockEMRAPI) GetBlockPublicAccessConfigurationRequest(arg0 *emr.GetBlockPublicAccessConfigurationInput) (*request.Request, *emr.GetBlockPublicAccessConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetBlockPublicAccessConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.GetBlockPublicAccessConfigurationOutput)
-	return ret0, ret1
-}
-
-// GetBlockPublicAccessConfigurationRequest indicates an expected call of GetBlockPublicAccessConfigurationRequest.
-func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfigurationRequest), arg0)
-}
-
-// GetBlockPublicAccessConfigurationWithContext mocks base method.
-func (m *MockEMRAPI) GetBlockPublicAccessConfigurationWithContext(arg0 context.Context, arg1 *emr.GetBlockPublicAccessConfigurationInput, arg2 ...request.Option) (*emr.GetBlockPublicAccessConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetBlockPublicAccessConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.GetBlockPublicAccessConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetBlockPublicAccessConfigurationWithContext indicates an expected call of GetBlockPublicAccessConfigurationWithContext.
-func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfigurationWithContext), varargs...)
-}
-
-// GetManagedScalingPolicy mocks base method.
-func (m *MockEMRAPI) GetManagedScalingPolicy(arg0 *emr.GetManagedScalingPolicyInput) (*emr.GetManagedScalingPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetManagedScalingPolicy", arg0)
-	ret0, _ := ret[0].(*emr.GetManagedScalingPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetManagedScalingPolicy indicates an expected call of GetManagedScalingPolicy.
-func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicy), arg0)
-}
-
-// GetManagedScalingPolicyRequest mocks base method.
-func (m *MockEMRAPI) GetManagedScalingPolicyRequest(arg0 *emr.GetManagedScalingPolicyInput) (*request.Request, *emr.GetManagedScalingPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetManagedScalingPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.GetManagedScalingPolicyOutput)
-	return ret0, ret1
-}
-
-// GetManagedScalingPolicyRequest indicates an expected call of GetManagedScalingPolicyRequest.
-func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicyRequest), arg0)
-}
-
-// GetManagedScalingPolicyWithContext mocks base method.
-func (m *MockEMRAPI) GetManagedScalingPolicyWithContext(arg0 context.Context, arg1 *emr.GetManagedScalingPolicyInput, arg2 ...request.Option) (*emr.GetManagedScalingPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetManagedScalingPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.GetManagedScalingPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetManagedScalingPolicyWithContext indicates an expected call of GetManagedScalingPolicyWithContext.
-func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicyWithContext), varargs...)
-}
-
-// GetStudioSessionMapping mocks base method.
-func (m *MockEMRAPI) GetStudioSessionMapping(arg0 *emr.GetStudioSessionMappingInput) (*emr.GetStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetStudioSessionMapping", arg0)
-	ret0, _ := ret[0].(*emr.GetStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetStudioSessionMapping indicates an expected call of GetStudioSessionMapping.
-func (mr *MockEMRAPIMockRecorder) GetStudioSessionMapping(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).GetStudioSessionMapping), arg0)
-}
-
-// GetStudioSessionMappingRequest mocks base method.
-func (m *MockEMRAPI) GetStudioSessionMappingRequest(arg0 *emr.GetStudioSessionMappingInput) (*request.Request, *emr.GetStudioSessionMappingOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetStudioSessionMappingRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.GetStudioSessionMappingOutput)
-	return ret0, ret1
-}
-
-// GetStudioSessionMappingRequest indicates an expected call of GetStudioSessionMappingRequest.
-func (mr *MockEMRAPIMockRecorder) GetStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetStudioSessionMappingRequest), arg0)
-}
-
-// GetStudioSessionMappingWithContext mocks base method.
-func (m *MockEMRAPI) GetStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.GetStudioSessionMappingInput, arg2 ...request.Option) (*emr.GetStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetStudioSessionMappingWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.GetStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetStudioSessionMappingWithContext indicates an expected call of GetStudioSessionMappingWithContext.
-func (mr *MockEMRAPIMockRecorder) GetStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetStudioSessionMappingWithContext), varargs...)
-}
-
-// ListBootstrapActions mocks base method.
+// ListBootstrapActions mocks base method
 func (m *MockEMRAPI) ListBootstrapActions(arg0 *emr.ListBootstrapActionsInput) (*emr.ListBootstrapActionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListBootstrapActions", arg0)
@@ -1145,13 +594,13 @@ func (m *MockEMRAPI) ListBootstrapActions(arg0 *emr.ListBootstrapActionsInput) (
 	return ret0, ret1
 }
 
-// ListBootstrapActions indicates an expected call of ListBootstrapActions.
+// ListBootstrapActions indicates an expected call of ListBootstrapActions
 func (mr *MockEMRAPIMockRecorder) ListBootstrapActions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBootstrapActions", reflect.TypeOf((*MockEMRAPI)(nil).ListBootstrapActions), arg0)
 }
 
-// ListBootstrapActionsPages mocks base method.
+// ListBootstrapActionsPages mocks base method
 func (m *MockEMRAPI) ListBootstrapActionsPages(arg0 *emr.ListBootstrapActionsInput, arg1 func(*emr.ListBootstrapActionsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListBootstrapActionsPages", arg0, arg1)
@@ -1159,14 +608,14 @@ func (m *MockEMRAPI) ListBootstrapActionsPages(arg0 *emr.ListBootstrapActionsInp
 	return ret0
 }
 
-// ListBootstrapActionsPages indicates an expected call of ListBootstrapActionsPages.
+// ListBootstrapActionsPages indicates an expected call of ListBootstrapActionsPages
 func (mr *MockEMRAPIMockRecorder) ListBootstrapActionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBootstrapActionsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListBootstrapActionsPages), arg0, arg1)
 }
 
-// ListBootstrapActionsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListBootstrapActionsPagesWithContext(arg0 context.Context, arg1 *emr.ListBootstrapActionsInput, arg2 func(*emr.ListBootstrapActionsOutput, bool) bool, arg3 ...request.Option) error {
+// ListBootstrapActionsPagesWithContext mocks base method
+func (m *MockEMRAPI) ListBootstrapActionsPagesWithContext(arg0 aws.Context, arg1 *emr.ListBootstrapActionsInput, arg2 func(*emr.ListBootstrapActionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1177,14 +626,14 @@ func (m *MockEMRAPI) ListBootstrapActionsPagesWithContext(arg0 context.Context, 
 	return ret0
 }
 
-// ListBootstrapActionsPagesWithContext indicates an expected call of ListBootstrapActionsPagesWithContext.
+// ListBootstrapActionsPagesWithContext indicates an expected call of ListBootstrapActionsPagesWithContext
 func (mr *MockEMRAPIMockRecorder) ListBootstrapActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBootstrapActionsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListBootstrapActionsPagesWithContext), varargs...)
 }
 
-// ListBootstrapActionsRequest mocks base method.
+// ListBootstrapActionsRequest mocks base method
 func (m *MockEMRAPI) ListBootstrapActionsRequest(arg0 *emr.ListBootstrapActionsInput) (*request.Request, *emr.ListBootstrapActionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListBootstrapActionsRequest", arg0)
@@ -1193,14 +642,14 @@ func (m *MockEMRAPI) ListBootstrapActionsRequest(arg0 *emr.ListBootstrapActionsI
 	return ret0, ret1
 }
 
-// ListBootstrapActionsRequest indicates an expected call of ListBootstrapActionsRequest.
+// ListBootstrapActionsRequest indicates an expected call of ListBootstrapActionsRequest
 func (mr *MockEMRAPIMockRecorder) ListBootstrapActionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBootstrapActionsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListBootstrapActionsRequest), arg0)
 }
 
-// ListBootstrapActionsWithContext mocks base method.
-func (m *MockEMRAPI) ListBootstrapActionsWithContext(arg0 context.Context, arg1 *emr.ListBootstrapActionsInput, arg2 ...request.Option) (*emr.ListBootstrapActionsOutput, error) {
+// ListBootstrapActionsWithContext mocks base method
+func (m *MockEMRAPI) ListBootstrapActionsWithContext(arg0 aws.Context, arg1 *emr.ListBootstrapActionsInput, arg2 ...request.Option) (*emr.ListBootstrapActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1212,14 +661,14 @@ func (m *MockEMRAPI) ListBootstrapActionsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListBootstrapActionsWithContext indicates an expected call of ListBootstrapActionsWithContext.
+// ListBootstrapActionsWithContext indicates an expected call of ListBootstrapActionsWithContext
 func (mr *MockEMRAPIMockRecorder) ListBootstrapActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBootstrapActionsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListBootstrapActionsWithContext), varargs...)
 }
 
-// ListClusters mocks base method.
+// ListClusters mocks base method
 func (m *MockEMRAPI) ListClusters(arg0 *emr.ListClustersInput) (*emr.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListClusters", arg0)
@@ -1228,13 +677,13 @@ func (m *MockEMRAPI) ListClusters(arg0 *emr.ListClustersInput) (*emr.ListCluster
 	return ret0, ret1
 }
 
-// ListClusters indicates an expected call of ListClusters.
+// ListClusters indicates an expected call of ListClusters
 func (mr *MockEMRAPIMockRecorder) ListClusters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusters", reflect.TypeOf((*MockEMRAPI)(nil).ListClusters), arg0)
 }
 
-// ListClustersPages mocks base method.
+// ListClustersPages mocks base method
 func (m *MockEMRAPI) ListClustersPages(arg0 *emr.ListClustersInput, arg1 func(*emr.ListClustersOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListClustersPages", arg0, arg1)
@@ -1242,14 +691,14 @@ func (m *MockEMRAPI) ListClustersPages(arg0 *emr.ListClustersInput, arg1 func(*e
 	return ret0
 }
 
-// ListClustersPages indicates an expected call of ListClustersPages.
+// ListClustersPages indicates an expected call of ListClustersPages
 func (mr *MockEMRAPIMockRecorder) ListClustersPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersPages", reflect.TypeOf((*MockEMRAPI)(nil).ListClustersPages), arg0, arg1)
 }
 
-// ListClustersPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListClustersPagesWithContext(arg0 context.Context, arg1 *emr.ListClustersInput, arg2 func(*emr.ListClustersOutput, bool) bool, arg3 ...request.Option) error {
+// ListClustersPagesWithContext mocks base method
+func (m *MockEMRAPI) ListClustersPagesWithContext(arg0 aws.Context, arg1 *emr.ListClustersInput, arg2 func(*emr.ListClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1260,14 +709,14 @@ func (m *MockEMRAPI) ListClustersPagesWithContext(arg0 context.Context, arg1 *em
 	return ret0
 }
 
-// ListClustersPagesWithContext indicates an expected call of ListClustersPagesWithContext.
+// ListClustersPagesWithContext indicates an expected call of ListClustersPagesWithContext
 func (mr *MockEMRAPIMockRecorder) ListClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListClustersPagesWithContext), varargs...)
 }
 
-// ListClustersRequest mocks base method.
+// ListClustersRequest mocks base method
 func (m *MockEMRAPI) ListClustersRequest(arg0 *emr.ListClustersInput) (*request.Request, *emr.ListClustersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListClustersRequest", arg0)
@@ -1276,14 +725,14 @@ func (m *MockEMRAPI) ListClustersRequest(arg0 *emr.ListClustersInput) (*request.
 	return ret0, ret1
 }
 
-// ListClustersRequest indicates an expected call of ListClustersRequest.
+// ListClustersRequest indicates an expected call of ListClustersRequest
 func (mr *MockEMRAPIMockRecorder) ListClustersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListClustersRequest), arg0)
 }
 
-// ListClustersWithContext mocks base method.
-func (m *MockEMRAPI) ListClustersWithContext(arg0 context.Context, arg1 *emr.ListClustersInput, arg2 ...request.Option) (*emr.ListClustersOutput, error) {
+// ListClustersWithContext mocks base method
+func (m *MockEMRAPI) ListClustersWithContext(arg0 aws.Context, arg1 *emr.ListClustersInput, arg2 ...request.Option) (*emr.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1295,14 +744,14 @@ func (m *MockEMRAPI) ListClustersWithContext(arg0 context.Context, arg1 *emr.Lis
 	return ret0, ret1
 }
 
-// ListClustersWithContext indicates an expected call of ListClustersWithContext.
+// ListClustersWithContext indicates an expected call of ListClustersWithContext
 func (mr *MockEMRAPIMockRecorder) ListClustersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListClustersWithContext), varargs...)
 }
 
-// ListInstanceFleets mocks base method.
+// ListInstanceFleets mocks base method
 func (m *MockEMRAPI) ListInstanceFleets(arg0 *emr.ListInstanceFleetsInput) (*emr.ListInstanceFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceFleets", arg0)
@@ -1311,13 +760,13 @@ func (m *MockEMRAPI) ListInstanceFleets(arg0 *emr.ListInstanceFleetsInput) (*emr
 	return ret0, ret1
 }
 
-// ListInstanceFleets indicates an expected call of ListInstanceFleets.
+// ListInstanceFleets indicates an expected call of ListInstanceFleets
 func (mr *MockEMRAPIMockRecorder) ListInstanceFleets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceFleets", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceFleets), arg0)
 }
 
-// ListInstanceFleetsPages mocks base method.
+// ListInstanceFleetsPages mocks base method
 func (m *MockEMRAPI) ListInstanceFleetsPages(arg0 *emr.ListInstanceFleetsInput, arg1 func(*emr.ListInstanceFleetsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceFleetsPages", arg0, arg1)
@@ -1325,14 +774,14 @@ func (m *MockEMRAPI) ListInstanceFleetsPages(arg0 *emr.ListInstanceFleetsInput, 
 	return ret0
 }
 
-// ListInstanceFleetsPages indicates an expected call of ListInstanceFleetsPages.
+// ListInstanceFleetsPages indicates an expected call of ListInstanceFleetsPages
 func (mr *MockEMRAPIMockRecorder) ListInstanceFleetsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceFleetsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceFleetsPages), arg0, arg1)
 }
 
-// ListInstanceFleetsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListInstanceFleetsPagesWithContext(arg0 context.Context, arg1 *emr.ListInstanceFleetsInput, arg2 func(*emr.ListInstanceFleetsOutput, bool) bool, arg3 ...request.Option) error {
+// ListInstanceFleetsPagesWithContext mocks base method
+func (m *MockEMRAPI) ListInstanceFleetsPagesWithContext(arg0 aws.Context, arg1 *emr.ListInstanceFleetsInput, arg2 func(*emr.ListInstanceFleetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1343,14 +792,14 @@ func (m *MockEMRAPI) ListInstanceFleetsPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// ListInstanceFleetsPagesWithContext indicates an expected call of ListInstanceFleetsPagesWithContext.
+// ListInstanceFleetsPagesWithContext indicates an expected call of ListInstanceFleetsPagesWithContext
 func (mr *MockEMRAPIMockRecorder) ListInstanceFleetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceFleetsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceFleetsPagesWithContext), varargs...)
 }
 
-// ListInstanceFleetsRequest mocks base method.
+// ListInstanceFleetsRequest mocks base method
 func (m *MockEMRAPI) ListInstanceFleetsRequest(arg0 *emr.ListInstanceFleetsInput) (*request.Request, *emr.ListInstanceFleetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceFleetsRequest", arg0)
@@ -1359,14 +808,14 @@ func (m *MockEMRAPI) ListInstanceFleetsRequest(arg0 *emr.ListInstanceFleetsInput
 	return ret0, ret1
 }
 
-// ListInstanceFleetsRequest indicates an expected call of ListInstanceFleetsRequest.
+// ListInstanceFleetsRequest indicates an expected call of ListInstanceFleetsRequest
 func (mr *MockEMRAPIMockRecorder) ListInstanceFleetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceFleetsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceFleetsRequest), arg0)
 }
 
-// ListInstanceFleetsWithContext mocks base method.
-func (m *MockEMRAPI) ListInstanceFleetsWithContext(arg0 context.Context, arg1 *emr.ListInstanceFleetsInput, arg2 ...request.Option) (*emr.ListInstanceFleetsOutput, error) {
+// ListInstanceFleetsWithContext mocks base method
+func (m *MockEMRAPI) ListInstanceFleetsWithContext(arg0 aws.Context, arg1 *emr.ListInstanceFleetsInput, arg2 ...request.Option) (*emr.ListInstanceFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1378,14 +827,14 @@ func (m *MockEMRAPI) ListInstanceFleetsWithContext(arg0 context.Context, arg1 *e
 	return ret0, ret1
 }
 
-// ListInstanceFleetsWithContext indicates an expected call of ListInstanceFleetsWithContext.
+// ListInstanceFleetsWithContext indicates an expected call of ListInstanceFleetsWithContext
 func (mr *MockEMRAPIMockRecorder) ListInstanceFleetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceFleetsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceFleetsWithContext), varargs...)
 }
 
-// ListInstanceGroups mocks base method.
+// ListInstanceGroups mocks base method
 func (m *MockEMRAPI) ListInstanceGroups(arg0 *emr.ListInstanceGroupsInput) (*emr.ListInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceGroups", arg0)
@@ -1394,13 +843,13 @@ func (m *MockEMRAPI) ListInstanceGroups(arg0 *emr.ListInstanceGroupsInput) (*emr
 	return ret0, ret1
 }
 
-// ListInstanceGroups indicates an expected call of ListInstanceGroups.
+// ListInstanceGroups indicates an expected call of ListInstanceGroups
 func (mr *MockEMRAPIMockRecorder) ListInstanceGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceGroups", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceGroups), arg0)
 }
 
-// ListInstanceGroupsPages mocks base method.
+// ListInstanceGroupsPages mocks base method
 func (m *MockEMRAPI) ListInstanceGroupsPages(arg0 *emr.ListInstanceGroupsInput, arg1 func(*emr.ListInstanceGroupsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceGroupsPages", arg0, arg1)
@@ -1408,14 +857,14 @@ func (m *MockEMRAPI) ListInstanceGroupsPages(arg0 *emr.ListInstanceGroupsInput, 
 	return ret0
 }
 
-// ListInstanceGroupsPages indicates an expected call of ListInstanceGroupsPages.
+// ListInstanceGroupsPages indicates an expected call of ListInstanceGroupsPages
 func (mr *MockEMRAPIMockRecorder) ListInstanceGroupsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceGroupsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceGroupsPages), arg0, arg1)
 }
 
-// ListInstanceGroupsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListInstanceGroupsPagesWithContext(arg0 context.Context, arg1 *emr.ListInstanceGroupsInput, arg2 func(*emr.ListInstanceGroupsOutput, bool) bool, arg3 ...request.Option) error {
+// ListInstanceGroupsPagesWithContext mocks base method
+func (m *MockEMRAPI) ListInstanceGroupsPagesWithContext(arg0 aws.Context, arg1 *emr.ListInstanceGroupsInput, arg2 func(*emr.ListInstanceGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1426,14 +875,14 @@ func (m *MockEMRAPI) ListInstanceGroupsPagesWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// ListInstanceGroupsPagesWithContext indicates an expected call of ListInstanceGroupsPagesWithContext.
+// ListInstanceGroupsPagesWithContext indicates an expected call of ListInstanceGroupsPagesWithContext
 func (mr *MockEMRAPIMockRecorder) ListInstanceGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceGroupsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceGroupsPagesWithContext), varargs...)
 }
 
-// ListInstanceGroupsRequest mocks base method.
+// ListInstanceGroupsRequest mocks base method
 func (m *MockEMRAPI) ListInstanceGroupsRequest(arg0 *emr.ListInstanceGroupsInput) (*request.Request, *emr.ListInstanceGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstanceGroupsRequest", arg0)
@@ -1442,14 +891,14 @@ func (m *MockEMRAPI) ListInstanceGroupsRequest(arg0 *emr.ListInstanceGroupsInput
 	return ret0, ret1
 }
 
-// ListInstanceGroupsRequest indicates an expected call of ListInstanceGroupsRequest.
+// ListInstanceGroupsRequest indicates an expected call of ListInstanceGroupsRequest
 func (mr *MockEMRAPIMockRecorder) ListInstanceGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceGroupsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceGroupsRequest), arg0)
 }
 
-// ListInstanceGroupsWithContext mocks base method.
-func (m *MockEMRAPI) ListInstanceGroupsWithContext(arg0 context.Context, arg1 *emr.ListInstanceGroupsInput, arg2 ...request.Option) (*emr.ListInstanceGroupsOutput, error) {
+// ListInstanceGroupsWithContext mocks base method
+func (m *MockEMRAPI) ListInstanceGroupsWithContext(arg0 aws.Context, arg1 *emr.ListInstanceGroupsInput, arg2 ...request.Option) (*emr.ListInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1461,14 +910,14 @@ func (m *MockEMRAPI) ListInstanceGroupsWithContext(arg0 context.Context, arg1 *e
 	return ret0, ret1
 }
 
-// ListInstanceGroupsWithContext indicates an expected call of ListInstanceGroupsWithContext.
+// ListInstanceGroupsWithContext indicates an expected call of ListInstanceGroupsWithContext
 func (mr *MockEMRAPIMockRecorder) ListInstanceGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceGroupsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstanceGroupsWithContext), varargs...)
 }
 
-// ListInstances mocks base method.
+// ListInstances mocks base method
 func (m *MockEMRAPI) ListInstances(arg0 *emr.ListInstancesInput) (*emr.ListInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstances", arg0)
@@ -1477,13 +926,13 @@ func (m *MockEMRAPI) ListInstances(arg0 *emr.ListInstancesInput) (*emr.ListInsta
 	return ret0, ret1
 }
 
-// ListInstances indicates an expected call of ListInstances.
+// ListInstances indicates an expected call of ListInstances
 func (mr *MockEMRAPIMockRecorder) ListInstances(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstances", reflect.TypeOf((*MockEMRAPI)(nil).ListInstances), arg0)
 }
 
-// ListInstancesPages mocks base method.
+// ListInstancesPages mocks base method
 func (m *MockEMRAPI) ListInstancesPages(arg0 *emr.ListInstancesInput, arg1 func(*emr.ListInstancesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstancesPages", arg0, arg1)
@@ -1491,14 +940,14 @@ func (m *MockEMRAPI) ListInstancesPages(arg0 *emr.ListInstancesInput, arg1 func(
 	return ret0
 }
 
-// ListInstancesPages indicates an expected call of ListInstancesPages.
+// ListInstancesPages indicates an expected call of ListInstancesPages
 func (mr *MockEMRAPIMockRecorder) ListInstancesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesPages", reflect.TypeOf((*MockEMRAPI)(nil).ListInstancesPages), arg0, arg1)
 }
 
-// ListInstancesPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListInstancesPagesWithContext(arg0 context.Context, arg1 *emr.ListInstancesInput, arg2 func(*emr.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
+// ListInstancesPagesWithContext mocks base method
+func (m *MockEMRAPI) ListInstancesPagesWithContext(arg0 aws.Context, arg1 *emr.ListInstancesInput, arg2 func(*emr.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1509,14 +958,14 @@ func (m *MockEMRAPI) ListInstancesPagesWithContext(arg0 context.Context, arg1 *e
 	return ret0
 }
 
-// ListInstancesPagesWithContext indicates an expected call of ListInstancesPagesWithContext.
+// ListInstancesPagesWithContext indicates an expected call of ListInstancesPagesWithContext
 func (mr *MockEMRAPIMockRecorder) ListInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstancesPagesWithContext), varargs...)
 }
 
-// ListInstancesRequest mocks base method.
+// ListInstancesRequest mocks base method
 func (m *MockEMRAPI) ListInstancesRequest(arg0 *emr.ListInstancesInput) (*request.Request, *emr.ListInstancesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListInstancesRequest", arg0)
@@ -1525,14 +974,14 @@ func (m *MockEMRAPI) ListInstancesRequest(arg0 *emr.ListInstancesInput) (*reques
 	return ret0, ret1
 }
 
-// ListInstancesRequest indicates an expected call of ListInstancesRequest.
+// ListInstancesRequest indicates an expected call of ListInstancesRequest
 func (mr *MockEMRAPIMockRecorder) ListInstancesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListInstancesRequest), arg0)
 }
 
-// ListInstancesWithContext mocks base method.
-func (m *MockEMRAPI) ListInstancesWithContext(arg0 context.Context, arg1 *emr.ListInstancesInput, arg2 ...request.Option) (*emr.ListInstancesOutput, error) {
+// ListInstancesWithContext mocks base method
+func (m *MockEMRAPI) ListInstancesWithContext(arg0 aws.Context, arg1 *emr.ListInstancesInput, arg2 ...request.Option) (*emr.ListInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1544,180 +993,14 @@ func (m *MockEMRAPI) ListInstancesWithContext(arg0 context.Context, arg1 *emr.Li
 	return ret0, ret1
 }
 
-// ListInstancesWithContext indicates an expected call of ListInstancesWithContext.
+// ListInstancesWithContext indicates an expected call of ListInstancesWithContext
 func (mr *MockEMRAPIMockRecorder) ListInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstancesWithContext), varargs...)
 }
 
-// ListNotebookExecutions mocks base method.
-func (m *MockEMRAPI) ListNotebookExecutions(arg0 *emr.ListNotebookExecutionsInput) (*emr.ListNotebookExecutionsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListNotebookExecutions", arg0)
-	ret0, _ := ret[0].(*emr.ListNotebookExecutionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListNotebookExecutions indicates an expected call of ListNotebookExecutions.
-func (mr *MockEMRAPIMockRecorder) ListNotebookExecutions(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutions", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutions), arg0)
-}
-
-// ListNotebookExecutionsPages mocks base method.
-func (m *MockEMRAPI) ListNotebookExecutionsPages(arg0 *emr.ListNotebookExecutionsInput, arg1 func(*emr.ListNotebookExecutionsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListNotebookExecutionsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListNotebookExecutionsPages indicates an expected call of ListNotebookExecutionsPages.
-func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsPages), arg0, arg1)
-}
-
-// ListNotebookExecutionsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListNotebookExecutionsPagesWithContext(arg0 context.Context, arg1 *emr.ListNotebookExecutionsInput, arg2 func(*emr.ListNotebookExecutionsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListNotebookExecutionsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListNotebookExecutionsPagesWithContext indicates an expected call of ListNotebookExecutionsPagesWithContext.
-func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsPagesWithContext), varargs...)
-}
-
-// ListNotebookExecutionsRequest mocks base method.
-func (m *MockEMRAPI) ListNotebookExecutionsRequest(arg0 *emr.ListNotebookExecutionsInput) (*request.Request, *emr.ListNotebookExecutionsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListNotebookExecutionsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.ListNotebookExecutionsOutput)
-	return ret0, ret1
-}
-
-// ListNotebookExecutionsRequest indicates an expected call of ListNotebookExecutionsRequest.
-func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsRequest), arg0)
-}
-
-// ListNotebookExecutionsWithContext mocks base method.
-func (m *MockEMRAPI) ListNotebookExecutionsWithContext(arg0 context.Context, arg1 *emr.ListNotebookExecutionsInput, arg2 ...request.Option) (*emr.ListNotebookExecutionsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListNotebookExecutionsWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.ListNotebookExecutionsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListNotebookExecutionsWithContext indicates an expected call of ListNotebookExecutionsWithContext.
-func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsWithContext), varargs...)
-}
-
-// ListReleaseLabels mocks base method.
-func (m *MockEMRAPI) ListReleaseLabels(arg0 *emr.ListReleaseLabelsInput) (*emr.ListReleaseLabelsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListReleaseLabels", arg0)
-	ret0, _ := ret[0].(*emr.ListReleaseLabelsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListReleaseLabels indicates an expected call of ListReleaseLabels.
-func (mr *MockEMRAPIMockRecorder) ListReleaseLabels(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReleaseLabels", reflect.TypeOf((*MockEMRAPI)(nil).ListReleaseLabels), arg0)
-}
-
-// ListReleaseLabelsPages mocks base method.
-func (m *MockEMRAPI) ListReleaseLabelsPages(arg0 *emr.ListReleaseLabelsInput, arg1 func(*emr.ListReleaseLabelsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListReleaseLabelsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListReleaseLabelsPages indicates an expected call of ListReleaseLabelsPages.
-func (mr *MockEMRAPIMockRecorder) ListReleaseLabelsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReleaseLabelsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListReleaseLabelsPages), arg0, arg1)
-}
-
-// ListReleaseLabelsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListReleaseLabelsPagesWithContext(arg0 context.Context, arg1 *emr.ListReleaseLabelsInput, arg2 func(*emr.ListReleaseLabelsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListReleaseLabelsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListReleaseLabelsPagesWithContext indicates an expected call of ListReleaseLabelsPagesWithContext.
-func (mr *MockEMRAPIMockRecorder) ListReleaseLabelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReleaseLabelsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListReleaseLabelsPagesWithContext), varargs...)
-}
-
-// ListReleaseLabelsRequest mocks base method.
-func (m *MockEMRAPI) ListReleaseLabelsRequest(arg0 *emr.ListReleaseLabelsInput) (*request.Request, *emr.ListReleaseLabelsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListReleaseLabelsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.ListReleaseLabelsOutput)
-	return ret0, ret1
-}
-
-// ListReleaseLabelsRequest indicates an expected call of ListReleaseLabelsRequest.
-func (mr *MockEMRAPIMockRecorder) ListReleaseLabelsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReleaseLabelsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListReleaseLabelsRequest), arg0)
-}
-
-// ListReleaseLabelsWithContext mocks base method.
-func (m *MockEMRAPI) ListReleaseLabelsWithContext(arg0 context.Context, arg1 *emr.ListReleaseLabelsInput, arg2 ...request.Option) (*emr.ListReleaseLabelsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListReleaseLabelsWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.ListReleaseLabelsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListReleaseLabelsWithContext indicates an expected call of ListReleaseLabelsWithContext.
-func (mr *MockEMRAPIMockRecorder) ListReleaseLabelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReleaseLabelsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListReleaseLabelsWithContext), varargs...)
-}
-
-// ListSecurityConfigurations mocks base method.
+// ListSecurityConfigurations mocks base method
 func (m *MockEMRAPI) ListSecurityConfigurations(arg0 *emr.ListSecurityConfigurationsInput) (*emr.ListSecurityConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSecurityConfigurations", arg0)
@@ -1726,46 +1009,13 @@ func (m *MockEMRAPI) ListSecurityConfigurations(arg0 *emr.ListSecurityConfigurat
 	return ret0, ret1
 }
 
-// ListSecurityConfigurations indicates an expected call of ListSecurityConfigurations.
+// ListSecurityConfigurations indicates an expected call of ListSecurityConfigurations
 func (mr *MockEMRAPIMockRecorder) ListSecurityConfigurations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityConfigurations", reflect.TypeOf((*MockEMRAPI)(nil).ListSecurityConfigurations), arg0)
 }
 
-// ListSecurityConfigurationsPages mocks base method.
-func (m *MockEMRAPI) ListSecurityConfigurationsPages(arg0 *emr.ListSecurityConfigurationsInput, arg1 func(*emr.ListSecurityConfigurationsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListSecurityConfigurationsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSecurityConfigurationsPages indicates an expected call of ListSecurityConfigurationsPages.
-func (mr *MockEMRAPIMockRecorder) ListSecurityConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityConfigurationsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListSecurityConfigurationsPages), arg0, arg1)
-}
-
-// ListSecurityConfigurationsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListSecurityConfigurationsPagesWithContext(arg0 context.Context, arg1 *emr.ListSecurityConfigurationsInput, arg2 func(*emr.ListSecurityConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListSecurityConfigurationsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListSecurityConfigurationsPagesWithContext indicates an expected call of ListSecurityConfigurationsPagesWithContext.
-func (mr *MockEMRAPIMockRecorder) ListSecurityConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityConfigurationsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListSecurityConfigurationsPagesWithContext), varargs...)
-}
-
-// ListSecurityConfigurationsRequest mocks base method.
+// ListSecurityConfigurationsRequest mocks base method
 func (m *MockEMRAPI) ListSecurityConfigurationsRequest(arg0 *emr.ListSecurityConfigurationsInput) (*request.Request, *emr.ListSecurityConfigurationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSecurityConfigurationsRequest", arg0)
@@ -1774,14 +1024,14 @@ func (m *MockEMRAPI) ListSecurityConfigurationsRequest(arg0 *emr.ListSecurityCon
 	return ret0, ret1
 }
 
-// ListSecurityConfigurationsRequest indicates an expected call of ListSecurityConfigurationsRequest.
+// ListSecurityConfigurationsRequest indicates an expected call of ListSecurityConfigurationsRequest
 func (mr *MockEMRAPIMockRecorder) ListSecurityConfigurationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityConfigurationsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListSecurityConfigurationsRequest), arg0)
 }
 
-// ListSecurityConfigurationsWithContext mocks base method.
-func (m *MockEMRAPI) ListSecurityConfigurationsWithContext(arg0 context.Context, arg1 *emr.ListSecurityConfigurationsInput, arg2 ...request.Option) (*emr.ListSecurityConfigurationsOutput, error) {
+// ListSecurityConfigurationsWithContext mocks base method
+func (m *MockEMRAPI) ListSecurityConfigurationsWithContext(arg0 aws.Context, arg1 *emr.ListSecurityConfigurationsInput, arg2 ...request.Option) (*emr.ListSecurityConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1793,14 +1043,14 @@ func (m *MockEMRAPI) ListSecurityConfigurationsWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ListSecurityConfigurationsWithContext indicates an expected call of ListSecurityConfigurationsWithContext.
+// ListSecurityConfigurationsWithContext indicates an expected call of ListSecurityConfigurationsWithContext
 func (mr *MockEMRAPIMockRecorder) ListSecurityConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityConfigurationsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListSecurityConfigurationsWithContext), varargs...)
 }
 
-// ListSteps mocks base method.
+// ListSteps mocks base method
 func (m *MockEMRAPI) ListSteps(arg0 *emr.ListStepsInput) (*emr.ListStepsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListSteps", arg0)
@@ -1809,13 +1059,13 @@ func (m *MockEMRAPI) ListSteps(arg0 *emr.ListStepsInput) (*emr.ListStepsOutput, 
 	return ret0, ret1
 }
 
-// ListSteps indicates an expected call of ListSteps.
+// ListSteps indicates an expected call of ListSteps
 func (mr *MockEMRAPIMockRecorder) ListSteps(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSteps", reflect.TypeOf((*MockEMRAPI)(nil).ListSteps), arg0)
 }
 
-// ListStepsPages mocks base method.
+// ListStepsPages mocks base method
 func (m *MockEMRAPI) ListStepsPages(arg0 *emr.ListStepsInput, arg1 func(*emr.ListStepsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListStepsPages", arg0, arg1)
@@ -1823,14 +1073,14 @@ func (m *MockEMRAPI) ListStepsPages(arg0 *emr.ListStepsInput, arg1 func(*emr.Lis
 	return ret0
 }
 
-// ListStepsPages indicates an expected call of ListStepsPages.
+// ListStepsPages indicates an expected call of ListStepsPages
 func (mr *MockEMRAPIMockRecorder) ListStepsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStepsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListStepsPages), arg0, arg1)
 }
 
-// ListStepsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListStepsPagesWithContext(arg0 context.Context, arg1 *emr.ListStepsInput, arg2 func(*emr.ListStepsOutput, bool) bool, arg3 ...request.Option) error {
+// ListStepsPagesWithContext mocks base method
+func (m *MockEMRAPI) ListStepsPagesWithContext(arg0 aws.Context, arg1 *emr.ListStepsInput, arg2 func(*emr.ListStepsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1841,14 +1091,14 @@ func (m *MockEMRAPI) ListStepsPagesWithContext(arg0 context.Context, arg1 *emr.L
 	return ret0
 }
 
-// ListStepsPagesWithContext indicates an expected call of ListStepsPagesWithContext.
+// ListStepsPagesWithContext indicates an expected call of ListStepsPagesWithContext
 func (mr *MockEMRAPIMockRecorder) ListStepsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStepsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStepsPagesWithContext), varargs...)
 }
 
-// ListStepsRequest mocks base method.
+// ListStepsRequest mocks base method
 func (m *MockEMRAPI) ListStepsRequest(arg0 *emr.ListStepsInput) (*request.Request, *emr.ListStepsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListStepsRequest", arg0)
@@ -1857,14 +1107,14 @@ func (m *MockEMRAPI) ListStepsRequest(arg0 *emr.ListStepsInput) (*request.Reques
 	return ret0, ret1
 }
 
-// ListStepsRequest indicates an expected call of ListStepsRequest.
+// ListStepsRequest indicates an expected call of ListStepsRequest
 func (mr *MockEMRAPIMockRecorder) ListStepsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStepsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListStepsRequest), arg0)
 }
 
-// ListStepsWithContext mocks base method.
-func (m *MockEMRAPI) ListStepsWithContext(arg0 context.Context, arg1 *emr.ListStepsInput, arg2 ...request.Option) (*emr.ListStepsOutput, error) {
+// ListStepsWithContext mocks base method
+func (m *MockEMRAPI) ListStepsWithContext(arg0 aws.Context, arg1 *emr.ListStepsInput, arg2 ...request.Option) (*emr.ListStepsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1876,230 +1126,14 @@ func (m *MockEMRAPI) ListStepsWithContext(arg0 context.Context, arg1 *emr.ListSt
 	return ret0, ret1
 }
 
-// ListStepsWithContext indicates an expected call of ListStepsWithContext.
+// ListStepsWithContext indicates an expected call of ListStepsWithContext
 func (mr *MockEMRAPIMockRecorder) ListStepsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStepsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStepsWithContext), varargs...)
 }
 
-// ListStudioSessionMappings mocks base method.
-func (m *MockEMRAPI) ListStudioSessionMappings(arg0 *emr.ListStudioSessionMappingsInput) (*emr.ListStudioSessionMappingsOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListStudioSessionMappings", arg0)
-	ret0, _ := ret[0].(*emr.ListStudioSessionMappingsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListStudioSessionMappings indicates an expected call of ListStudioSessionMappings.
-func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappings(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappings", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappings), arg0)
-}
-
-// ListStudioSessionMappingsPages mocks base method.
-func (m *MockEMRAPI) ListStudioSessionMappingsPages(arg0 *emr.ListStudioSessionMappingsInput, arg1 func(*emr.ListStudioSessionMappingsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListStudioSessionMappingsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListStudioSessionMappingsPages indicates an expected call of ListStudioSessionMappingsPages.
-func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsPages), arg0, arg1)
-}
-
-// ListStudioSessionMappingsPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListStudioSessionMappingsPagesWithContext(arg0 context.Context, arg1 *emr.ListStudioSessionMappingsInput, arg2 func(*emr.ListStudioSessionMappingsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListStudioSessionMappingsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListStudioSessionMappingsPagesWithContext indicates an expected call of ListStudioSessionMappingsPagesWithContext.
-func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsPagesWithContext), varargs...)
-}
-
-// ListStudioSessionMappingsRequest mocks base method.
-func (m *MockEMRAPI) ListStudioSessionMappingsRequest(arg0 *emr.ListStudioSessionMappingsInput) (*request.Request, *emr.ListStudioSessionMappingsOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListStudioSessionMappingsRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.ListStudioSessionMappingsOutput)
-	return ret0, ret1
-}
-
-// ListStudioSessionMappingsRequest indicates an expected call of ListStudioSessionMappingsRequest.
-func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsRequest), arg0)
-}
-
-// ListStudioSessionMappingsWithContext mocks base method.
-func (m *MockEMRAPI) ListStudioSessionMappingsWithContext(arg0 context.Context, arg1 *emr.ListStudioSessionMappingsInput, arg2 ...request.Option) (*emr.ListStudioSessionMappingsOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListStudioSessionMappingsWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.ListStudioSessionMappingsOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListStudioSessionMappingsWithContext indicates an expected call of ListStudioSessionMappingsWithContext.
-func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsWithContext), varargs...)
-}
-
-// ListStudios mocks base method.
-func (m *MockEMRAPI) ListStudios(arg0 *emr.ListStudiosInput) (*emr.ListStudiosOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListStudios", arg0)
-	ret0, _ := ret[0].(*emr.ListStudiosOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListStudios indicates an expected call of ListStudios.
-func (mr *MockEMRAPIMockRecorder) ListStudios(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudios", reflect.TypeOf((*MockEMRAPI)(nil).ListStudios), arg0)
-}
-
-// ListStudiosPages mocks base method.
-func (m *MockEMRAPI) ListStudiosPages(arg0 *emr.ListStudiosInput, arg1 func(*emr.ListStudiosOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListStudiosPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListStudiosPages indicates an expected call of ListStudiosPages.
-func (mr *MockEMRAPIMockRecorder) ListStudiosPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosPages", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosPages), arg0, arg1)
-}
-
-// ListStudiosPagesWithContext mocks base method.
-func (m *MockEMRAPI) ListStudiosPagesWithContext(arg0 context.Context, arg1 *emr.ListStudiosInput, arg2 func(*emr.ListStudiosOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListStudiosPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListStudiosPagesWithContext indicates an expected call of ListStudiosPagesWithContext.
-func (mr *MockEMRAPIMockRecorder) ListStudiosPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosPagesWithContext), varargs...)
-}
-
-// ListStudiosRequest mocks base method.
-func (m *MockEMRAPI) ListStudiosRequest(arg0 *emr.ListStudiosInput) (*request.Request, *emr.ListStudiosOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListStudiosRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.ListStudiosOutput)
-	return ret0, ret1
-}
-
-// ListStudiosRequest indicates an expected call of ListStudiosRequest.
-func (mr *MockEMRAPIMockRecorder) ListStudiosRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosRequest), arg0)
-}
-
-// ListStudiosWithContext mocks base method.
-func (m *MockEMRAPI) ListStudiosWithContext(arg0 context.Context, arg1 *emr.ListStudiosInput, arg2 ...request.Option) (*emr.ListStudiosOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListStudiosWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.ListStudiosOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListStudiosWithContext indicates an expected call of ListStudiosWithContext.
-func (mr *MockEMRAPIMockRecorder) ListStudiosWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosWithContext), varargs...)
-}
-
-// ModifyCluster mocks base method.
-func (m *MockEMRAPI) ModifyCluster(arg0 *emr.ModifyClusterInput) (*emr.ModifyClusterOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ModifyCluster", arg0)
-	ret0, _ := ret[0].(*emr.ModifyClusterOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ModifyCluster indicates an expected call of ModifyCluster.
-func (mr *MockEMRAPIMockRecorder) ModifyCluster(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCluster", reflect.TypeOf((*MockEMRAPI)(nil).ModifyCluster), arg0)
-}
-
-// ModifyClusterRequest mocks base method.
-func (m *MockEMRAPI) ModifyClusterRequest(arg0 *emr.ModifyClusterInput) (*request.Request, *emr.ModifyClusterOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ModifyClusterRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.ModifyClusterOutput)
-	return ret0, ret1
-}
-
-// ModifyClusterRequest indicates an expected call of ModifyClusterRequest.
-func (mr *MockEMRAPIMockRecorder) ModifyClusterRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterRequest", reflect.TypeOf((*MockEMRAPI)(nil).ModifyClusterRequest), arg0)
-}
-
-// ModifyClusterWithContext mocks base method.
-func (m *MockEMRAPI) ModifyClusterWithContext(arg0 context.Context, arg1 *emr.ModifyClusterInput, arg2 ...request.Option) (*emr.ModifyClusterOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ModifyClusterWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.ModifyClusterOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ModifyClusterWithContext indicates an expected call of ModifyClusterWithContext.
-func (mr *MockEMRAPIMockRecorder) ModifyClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ModifyClusterWithContext), varargs...)
-}
-
-// ModifyInstanceFleet mocks base method.
+// ModifyInstanceFleet mocks base method
 func (m *MockEMRAPI) ModifyInstanceFleet(arg0 *emr.ModifyInstanceFleetInput) (*emr.ModifyInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyInstanceFleet", arg0)
@@ -2108,13 +1142,13 @@ func (m *MockEMRAPI) ModifyInstanceFleet(arg0 *emr.ModifyInstanceFleetInput) (*e
 	return ret0, ret1
 }
 
-// ModifyInstanceFleet indicates an expected call of ModifyInstanceFleet.
+// ModifyInstanceFleet indicates an expected call of ModifyInstanceFleet
 func (mr *MockEMRAPIMockRecorder) ModifyInstanceFleet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceFleet", reflect.TypeOf((*MockEMRAPI)(nil).ModifyInstanceFleet), arg0)
 }
 
-// ModifyInstanceFleetRequest mocks base method.
+// ModifyInstanceFleetRequest mocks base method
 func (m *MockEMRAPI) ModifyInstanceFleetRequest(arg0 *emr.ModifyInstanceFleetInput) (*request.Request, *emr.ModifyInstanceFleetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyInstanceFleetRequest", arg0)
@@ -2123,14 +1157,14 @@ func (m *MockEMRAPI) ModifyInstanceFleetRequest(arg0 *emr.ModifyInstanceFleetInp
 	return ret0, ret1
 }
 
-// ModifyInstanceFleetRequest indicates an expected call of ModifyInstanceFleetRequest.
+// ModifyInstanceFleetRequest indicates an expected call of ModifyInstanceFleetRequest
 func (mr *MockEMRAPIMockRecorder) ModifyInstanceFleetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceFleetRequest", reflect.TypeOf((*MockEMRAPI)(nil).ModifyInstanceFleetRequest), arg0)
 }
 
-// ModifyInstanceFleetWithContext mocks base method.
-func (m *MockEMRAPI) ModifyInstanceFleetWithContext(arg0 context.Context, arg1 *emr.ModifyInstanceFleetInput, arg2 ...request.Option) (*emr.ModifyInstanceFleetOutput, error) {
+// ModifyInstanceFleetWithContext mocks base method
+func (m *MockEMRAPI) ModifyInstanceFleetWithContext(arg0 aws.Context, arg1 *emr.ModifyInstanceFleetInput, arg2 ...request.Option) (*emr.ModifyInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2142,14 +1176,14 @@ func (m *MockEMRAPI) ModifyInstanceFleetWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ModifyInstanceFleetWithContext indicates an expected call of ModifyInstanceFleetWithContext.
+// ModifyInstanceFleetWithContext indicates an expected call of ModifyInstanceFleetWithContext
 func (mr *MockEMRAPIMockRecorder) ModifyInstanceFleetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceFleetWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ModifyInstanceFleetWithContext), varargs...)
 }
 
-// ModifyInstanceGroups mocks base method.
+// ModifyInstanceGroups mocks base method
 func (m *MockEMRAPI) ModifyInstanceGroups(arg0 *emr.ModifyInstanceGroupsInput) (*emr.ModifyInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyInstanceGroups", arg0)
@@ -2158,13 +1192,13 @@ func (m *MockEMRAPI) ModifyInstanceGroups(arg0 *emr.ModifyInstanceGroupsInput) (
 	return ret0, ret1
 }
 
-// ModifyInstanceGroups indicates an expected call of ModifyInstanceGroups.
+// ModifyInstanceGroups indicates an expected call of ModifyInstanceGroups
 func (mr *MockEMRAPIMockRecorder) ModifyInstanceGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceGroups", reflect.TypeOf((*MockEMRAPI)(nil).ModifyInstanceGroups), arg0)
 }
 
-// ModifyInstanceGroupsRequest mocks base method.
+// ModifyInstanceGroupsRequest mocks base method
 func (m *MockEMRAPI) ModifyInstanceGroupsRequest(arg0 *emr.ModifyInstanceGroupsInput) (*request.Request, *emr.ModifyInstanceGroupsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyInstanceGroupsRequest", arg0)
@@ -2173,14 +1207,14 @@ func (m *MockEMRAPI) ModifyInstanceGroupsRequest(arg0 *emr.ModifyInstanceGroupsI
 	return ret0, ret1
 }
 
-// ModifyInstanceGroupsRequest indicates an expected call of ModifyInstanceGroupsRequest.
+// ModifyInstanceGroupsRequest indicates an expected call of ModifyInstanceGroupsRequest
 func (mr *MockEMRAPIMockRecorder) ModifyInstanceGroupsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceGroupsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ModifyInstanceGroupsRequest), arg0)
 }
 
-// ModifyInstanceGroupsWithContext mocks base method.
-func (m *MockEMRAPI) ModifyInstanceGroupsWithContext(arg0 context.Context, arg1 *emr.ModifyInstanceGroupsInput, arg2 ...request.Option) (*emr.ModifyInstanceGroupsOutput, error) {
+// ModifyInstanceGroupsWithContext mocks base method
+func (m *MockEMRAPI) ModifyInstanceGroupsWithContext(arg0 aws.Context, arg1 *emr.ModifyInstanceGroupsInput, arg2 ...request.Option) (*emr.ModifyInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2192,14 +1226,14 @@ func (m *MockEMRAPI) ModifyInstanceGroupsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ModifyInstanceGroupsWithContext indicates an expected call of ModifyInstanceGroupsWithContext.
+// ModifyInstanceGroupsWithContext indicates an expected call of ModifyInstanceGroupsWithContext
 func (mr *MockEMRAPIMockRecorder) ModifyInstanceGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceGroupsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ModifyInstanceGroupsWithContext), varargs...)
 }
 
-// PutAutoScalingPolicy mocks base method.
+// PutAutoScalingPolicy mocks base method
 func (m *MockEMRAPI) PutAutoScalingPolicy(arg0 *emr.PutAutoScalingPolicyInput) (*emr.PutAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutAutoScalingPolicy", arg0)
@@ -2208,13 +1242,13 @@ func (m *MockEMRAPI) PutAutoScalingPolicy(arg0 *emr.PutAutoScalingPolicyInput) (
 	return ret0, ret1
 }
 
-// PutAutoScalingPolicy indicates an expected call of PutAutoScalingPolicy.
+// PutAutoScalingPolicy indicates an expected call of PutAutoScalingPolicy
 func (mr *MockEMRAPIMockRecorder) PutAutoScalingPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoScalingPolicy), arg0)
 }
 
-// PutAutoScalingPolicyRequest mocks base method.
+// PutAutoScalingPolicyRequest mocks base method
 func (m *MockEMRAPI) PutAutoScalingPolicyRequest(arg0 *emr.PutAutoScalingPolicyInput) (*request.Request, *emr.PutAutoScalingPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutAutoScalingPolicyRequest", arg0)
@@ -2223,14 +1257,14 @@ func (m *MockEMRAPI) PutAutoScalingPolicyRequest(arg0 *emr.PutAutoScalingPolicyI
 	return ret0, ret1
 }
 
-// PutAutoScalingPolicyRequest indicates an expected call of PutAutoScalingPolicyRequest.
+// PutAutoScalingPolicyRequest indicates an expected call of PutAutoScalingPolicyRequest
 func (mr *MockEMRAPIMockRecorder) PutAutoScalingPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoScalingPolicyRequest), arg0)
 }
 
-// PutAutoScalingPolicyWithContext mocks base method.
-func (m *MockEMRAPI) PutAutoScalingPolicyWithContext(arg0 context.Context, arg1 *emr.PutAutoScalingPolicyInput, arg2 ...request.Option) (*emr.PutAutoScalingPolicyOutput, error) {
+// PutAutoScalingPolicyWithContext mocks base method
+func (m *MockEMRAPI) PutAutoScalingPolicyWithContext(arg0 aws.Context, arg1 *emr.PutAutoScalingPolicyInput, arg2 ...request.Option) (*emr.PutAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2242,164 +1276,14 @@ func (m *MockEMRAPI) PutAutoScalingPolicyWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// PutAutoScalingPolicyWithContext indicates an expected call of PutAutoScalingPolicyWithContext.
+// PutAutoScalingPolicyWithContext indicates an expected call of PutAutoScalingPolicyWithContext
 func (mr *MockEMRAPIMockRecorder) PutAutoScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoScalingPolicyWithContext), varargs...)
 }
 
-// PutAutoTerminationPolicy mocks base method.
-func (m *MockEMRAPI) PutAutoTerminationPolicy(arg0 *emr.PutAutoTerminationPolicyInput) (*emr.PutAutoTerminationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutAutoTerminationPolicy", arg0)
-	ret0, _ := ret[0].(*emr.PutAutoTerminationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutAutoTerminationPolicy indicates an expected call of PutAutoTerminationPolicy.
-func (mr *MockEMRAPIMockRecorder) PutAutoTerminationPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoTerminationPolicy", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoTerminationPolicy), arg0)
-}
-
-// PutAutoTerminationPolicyRequest mocks base method.
-func (m *MockEMRAPI) PutAutoTerminationPolicyRequest(arg0 *emr.PutAutoTerminationPolicyInput) (*request.Request, *emr.PutAutoTerminationPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutAutoTerminationPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.PutAutoTerminationPolicyOutput)
-	return ret0, ret1
-}
-
-// PutAutoTerminationPolicyRequest indicates an expected call of PutAutoTerminationPolicyRequest.
-func (mr *MockEMRAPIMockRecorder) PutAutoTerminationPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoTerminationPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoTerminationPolicyRequest), arg0)
-}
-
-// PutAutoTerminationPolicyWithContext mocks base method.
-func (m *MockEMRAPI) PutAutoTerminationPolicyWithContext(arg0 context.Context, arg1 *emr.PutAutoTerminationPolicyInput, arg2 ...request.Option) (*emr.PutAutoTerminationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutAutoTerminationPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.PutAutoTerminationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutAutoTerminationPolicyWithContext indicates an expected call of PutAutoTerminationPolicyWithContext.
-func (mr *MockEMRAPIMockRecorder) PutAutoTerminationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoTerminationPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoTerminationPolicyWithContext), varargs...)
-}
-
-// PutBlockPublicAccessConfiguration mocks base method.
-func (m *MockEMRAPI) PutBlockPublicAccessConfiguration(arg0 *emr.PutBlockPublicAccessConfigurationInput) (*emr.PutBlockPublicAccessConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutBlockPublicAccessConfiguration", arg0)
-	ret0, _ := ret[0].(*emr.PutBlockPublicAccessConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutBlockPublicAccessConfiguration indicates an expected call of PutBlockPublicAccessConfiguration.
-func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfiguration), arg0)
-}
-
-// PutBlockPublicAccessConfigurationRequest mocks base method.
-func (m *MockEMRAPI) PutBlockPublicAccessConfigurationRequest(arg0 *emr.PutBlockPublicAccessConfigurationInput) (*request.Request, *emr.PutBlockPublicAccessConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutBlockPublicAccessConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.PutBlockPublicAccessConfigurationOutput)
-	return ret0, ret1
-}
-
-// PutBlockPublicAccessConfigurationRequest indicates an expected call of PutBlockPublicAccessConfigurationRequest.
-func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfigurationRequest), arg0)
-}
-
-// PutBlockPublicAccessConfigurationWithContext mocks base method.
-func (m *MockEMRAPI) PutBlockPublicAccessConfigurationWithContext(arg0 context.Context, arg1 *emr.PutBlockPublicAccessConfigurationInput, arg2 ...request.Option) (*emr.PutBlockPublicAccessConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutBlockPublicAccessConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.PutBlockPublicAccessConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutBlockPublicAccessConfigurationWithContext indicates an expected call of PutBlockPublicAccessConfigurationWithContext.
-func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfigurationWithContext), varargs...)
-}
-
-// PutManagedScalingPolicy mocks base method.
-func (m *MockEMRAPI) PutManagedScalingPolicy(arg0 *emr.PutManagedScalingPolicyInput) (*emr.PutManagedScalingPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutManagedScalingPolicy", arg0)
-	ret0, _ := ret[0].(*emr.PutManagedScalingPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutManagedScalingPolicy indicates an expected call of PutManagedScalingPolicy.
-func (mr *MockEMRAPIMockRecorder) PutManagedScalingPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).PutManagedScalingPolicy), arg0)
-}
-
-// PutManagedScalingPolicyRequest mocks base method.
-func (m *MockEMRAPI) PutManagedScalingPolicyRequest(arg0 *emr.PutManagedScalingPolicyInput) (*request.Request, *emr.PutManagedScalingPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutManagedScalingPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.PutManagedScalingPolicyOutput)
-	return ret0, ret1
-}
-
-// PutManagedScalingPolicyRequest indicates an expected call of PutManagedScalingPolicyRequest.
-func (mr *MockEMRAPIMockRecorder) PutManagedScalingPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutManagedScalingPolicyRequest), arg0)
-}
-
-// PutManagedScalingPolicyWithContext mocks base method.
-func (m *MockEMRAPI) PutManagedScalingPolicyWithContext(arg0 context.Context, arg1 *emr.PutManagedScalingPolicyInput, arg2 ...request.Option) (*emr.PutManagedScalingPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutManagedScalingPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.PutManagedScalingPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutManagedScalingPolicyWithContext indicates an expected call of PutManagedScalingPolicyWithContext.
-func (mr *MockEMRAPIMockRecorder) PutManagedScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutManagedScalingPolicyWithContext), varargs...)
-}
-
-// RemoveAutoScalingPolicy mocks base method.
+// RemoveAutoScalingPolicy mocks base method
 func (m *MockEMRAPI) RemoveAutoScalingPolicy(arg0 *emr.RemoveAutoScalingPolicyInput) (*emr.RemoveAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveAutoScalingPolicy", arg0)
@@ -2408,13 +1292,13 @@ func (m *MockEMRAPI) RemoveAutoScalingPolicy(arg0 *emr.RemoveAutoScalingPolicyIn
 	return ret0, ret1
 }
 
-// RemoveAutoScalingPolicy indicates an expected call of RemoveAutoScalingPolicy.
+// RemoveAutoScalingPolicy indicates an expected call of RemoveAutoScalingPolicy
 func (mr *MockEMRAPIMockRecorder) RemoveAutoScalingPolicy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoScalingPolicy), arg0)
 }
 
-// RemoveAutoScalingPolicyRequest mocks base method.
+// RemoveAutoScalingPolicyRequest mocks base method
 func (m *MockEMRAPI) RemoveAutoScalingPolicyRequest(arg0 *emr.RemoveAutoScalingPolicyInput) (*request.Request, *emr.RemoveAutoScalingPolicyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveAutoScalingPolicyRequest", arg0)
@@ -2423,14 +1307,14 @@ func (m *MockEMRAPI) RemoveAutoScalingPolicyRequest(arg0 *emr.RemoveAutoScalingP
 	return ret0, ret1
 }
 
-// RemoveAutoScalingPolicyRequest indicates an expected call of RemoveAutoScalingPolicyRequest.
+// RemoveAutoScalingPolicyRequest indicates an expected call of RemoveAutoScalingPolicyRequest
 func (mr *MockEMRAPIMockRecorder) RemoveAutoScalingPolicyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoScalingPolicyRequest), arg0)
 }
 
-// RemoveAutoScalingPolicyWithContext mocks base method.
-func (m *MockEMRAPI) RemoveAutoScalingPolicyWithContext(arg0 context.Context, arg1 *emr.RemoveAutoScalingPolicyInput, arg2 ...request.Option) (*emr.RemoveAutoScalingPolicyOutput, error) {
+// RemoveAutoScalingPolicyWithContext mocks base method
+func (m *MockEMRAPI) RemoveAutoScalingPolicyWithContext(arg0 aws.Context, arg1 *emr.RemoveAutoScalingPolicyInput, arg2 ...request.Option) (*emr.RemoveAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2442,114 +1326,14 @@ func (m *MockEMRAPI) RemoveAutoScalingPolicyWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// RemoveAutoScalingPolicyWithContext indicates an expected call of RemoveAutoScalingPolicyWithContext.
+// RemoveAutoScalingPolicyWithContext indicates an expected call of RemoveAutoScalingPolicyWithContext
 func (mr *MockEMRAPIMockRecorder) RemoveAutoScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoScalingPolicyWithContext), varargs...)
 }
 
-// RemoveAutoTerminationPolicy mocks base method.
-func (m *MockEMRAPI) RemoveAutoTerminationPolicy(arg0 *emr.RemoveAutoTerminationPolicyInput) (*emr.RemoveAutoTerminationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RemoveAutoTerminationPolicy", arg0)
-	ret0, _ := ret[0].(*emr.RemoveAutoTerminationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RemoveAutoTerminationPolicy indicates an expected call of RemoveAutoTerminationPolicy.
-func (mr *MockEMRAPIMockRecorder) RemoveAutoTerminationPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoTerminationPolicy", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoTerminationPolicy), arg0)
-}
-
-// RemoveAutoTerminationPolicyRequest mocks base method.
-func (m *MockEMRAPI) RemoveAutoTerminationPolicyRequest(arg0 *emr.RemoveAutoTerminationPolicyInput) (*request.Request, *emr.RemoveAutoTerminationPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RemoveAutoTerminationPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.RemoveAutoTerminationPolicyOutput)
-	return ret0, ret1
-}
-
-// RemoveAutoTerminationPolicyRequest indicates an expected call of RemoveAutoTerminationPolicyRequest.
-func (mr *MockEMRAPIMockRecorder) RemoveAutoTerminationPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoTerminationPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoTerminationPolicyRequest), arg0)
-}
-
-// RemoveAutoTerminationPolicyWithContext mocks base method.
-func (m *MockEMRAPI) RemoveAutoTerminationPolicyWithContext(arg0 context.Context, arg1 *emr.RemoveAutoTerminationPolicyInput, arg2 ...request.Option) (*emr.RemoveAutoTerminationPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "RemoveAutoTerminationPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.RemoveAutoTerminationPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RemoveAutoTerminationPolicyWithContext indicates an expected call of RemoveAutoTerminationPolicyWithContext.
-func (mr *MockEMRAPIMockRecorder) RemoveAutoTerminationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoTerminationPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoTerminationPolicyWithContext), varargs...)
-}
-
-// RemoveManagedScalingPolicy mocks base method.
-func (m *MockEMRAPI) RemoveManagedScalingPolicy(arg0 *emr.RemoveManagedScalingPolicyInput) (*emr.RemoveManagedScalingPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RemoveManagedScalingPolicy", arg0)
-	ret0, _ := ret[0].(*emr.RemoveManagedScalingPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RemoveManagedScalingPolicy indicates an expected call of RemoveManagedScalingPolicy.
-func (mr *MockEMRAPIMockRecorder) RemoveManagedScalingPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveManagedScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).RemoveManagedScalingPolicy), arg0)
-}
-
-// RemoveManagedScalingPolicyRequest mocks base method.
-func (m *MockEMRAPI) RemoveManagedScalingPolicyRequest(arg0 *emr.RemoveManagedScalingPolicyInput) (*request.Request, *emr.RemoveManagedScalingPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RemoveManagedScalingPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.RemoveManagedScalingPolicyOutput)
-	return ret0, ret1
-}
-
-// RemoveManagedScalingPolicyRequest indicates an expected call of RemoveManagedScalingPolicyRequest.
-func (mr *MockEMRAPIMockRecorder) RemoveManagedScalingPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveManagedScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).RemoveManagedScalingPolicyRequest), arg0)
-}
-
-// RemoveManagedScalingPolicyWithContext mocks base method.
-func (m *MockEMRAPI) RemoveManagedScalingPolicyWithContext(arg0 context.Context, arg1 *emr.RemoveManagedScalingPolicyInput, arg2 ...request.Option) (*emr.RemoveManagedScalingPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "RemoveManagedScalingPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.RemoveManagedScalingPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RemoveManagedScalingPolicyWithContext indicates an expected call of RemoveManagedScalingPolicyWithContext.
-func (mr *MockEMRAPIMockRecorder) RemoveManagedScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveManagedScalingPolicyWithContext), varargs...)
-}
-
-// RemoveTags mocks base method.
+// RemoveTags mocks base method
 func (m *MockEMRAPI) RemoveTags(arg0 *emr.RemoveTagsInput) (*emr.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTags", arg0)
@@ -2558,13 +1342,13 @@ func (m *MockEMRAPI) RemoveTags(arg0 *emr.RemoveTagsInput) (*emr.RemoveTagsOutpu
 	return ret0, ret1
 }
 
-// RemoveTags indicates an expected call of RemoveTags.
+// RemoveTags indicates an expected call of RemoveTags
 func (mr *MockEMRAPIMockRecorder) RemoveTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTags", reflect.TypeOf((*MockEMRAPI)(nil).RemoveTags), arg0)
 }
 
-// RemoveTagsRequest mocks base method.
+// RemoveTagsRequest mocks base method
 func (m *MockEMRAPI) RemoveTagsRequest(arg0 *emr.RemoveTagsInput) (*request.Request, *emr.RemoveTagsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsRequest", arg0)
@@ -2573,14 +1357,14 @@ func (m *MockEMRAPI) RemoveTagsRequest(arg0 *emr.RemoveTagsInput) (*request.Requ
 	return ret0, ret1
 }
 
-// RemoveTagsRequest indicates an expected call of RemoveTagsRequest.
+// RemoveTagsRequest indicates an expected call of RemoveTagsRequest
 func (mr *MockEMRAPIMockRecorder) RemoveTagsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsRequest", reflect.TypeOf((*MockEMRAPI)(nil).RemoveTagsRequest), arg0)
 }
 
-// RemoveTagsWithContext mocks base method.
-func (m *MockEMRAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *emr.RemoveTagsInput, arg2 ...request.Option) (*emr.RemoveTagsOutput, error) {
+// RemoveTagsWithContext mocks base method
+func (m *MockEMRAPI) RemoveTagsWithContext(arg0 aws.Context, arg1 *emr.RemoveTagsInput, arg2 ...request.Option) (*emr.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2592,14 +1376,14 @@ func (m *MockEMRAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *emr.Remov
 	return ret0, ret1
 }
 
-// RemoveTagsWithContext indicates an expected call of RemoveTagsWithContext.
+// RemoveTagsWithContext indicates an expected call of RemoveTagsWithContext
 func (mr *MockEMRAPIMockRecorder) RemoveTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveTagsWithContext), varargs...)
 }
 
-// RunJobFlow mocks base method.
+// RunJobFlow mocks base method
 func (m *MockEMRAPI) RunJobFlow(arg0 *emr.RunJobFlowInput) (*emr.RunJobFlowOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RunJobFlow", arg0)
@@ -2608,13 +1392,13 @@ func (m *MockEMRAPI) RunJobFlow(arg0 *emr.RunJobFlowInput) (*emr.RunJobFlowOutpu
 	return ret0, ret1
 }
 
-// RunJobFlow indicates an expected call of RunJobFlow.
+// RunJobFlow indicates an expected call of RunJobFlow
 func (mr *MockEMRAPIMockRecorder) RunJobFlow(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunJobFlow", reflect.TypeOf((*MockEMRAPI)(nil).RunJobFlow), arg0)
 }
 
-// RunJobFlowRequest mocks base method.
+// RunJobFlowRequest mocks base method
 func (m *MockEMRAPI) RunJobFlowRequest(arg0 *emr.RunJobFlowInput) (*request.Request, *emr.RunJobFlowOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RunJobFlowRequest", arg0)
@@ -2623,14 +1407,14 @@ func (m *MockEMRAPI) RunJobFlowRequest(arg0 *emr.RunJobFlowInput) (*request.Requ
 	return ret0, ret1
 }
 
-// RunJobFlowRequest indicates an expected call of RunJobFlowRequest.
+// RunJobFlowRequest indicates an expected call of RunJobFlowRequest
 func (mr *MockEMRAPIMockRecorder) RunJobFlowRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunJobFlowRequest", reflect.TypeOf((*MockEMRAPI)(nil).RunJobFlowRequest), arg0)
 }
 
-// RunJobFlowWithContext mocks base method.
-func (m *MockEMRAPI) RunJobFlowWithContext(arg0 context.Context, arg1 *emr.RunJobFlowInput, arg2 ...request.Option) (*emr.RunJobFlowOutput, error) {
+// RunJobFlowWithContext mocks base method
+func (m *MockEMRAPI) RunJobFlowWithContext(arg0 aws.Context, arg1 *emr.RunJobFlowInput, arg2 ...request.Option) (*emr.RunJobFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2642,14 +1426,14 @@ func (m *MockEMRAPI) RunJobFlowWithContext(arg0 context.Context, arg1 *emr.RunJo
 	return ret0, ret1
 }
 
-// RunJobFlowWithContext indicates an expected call of RunJobFlowWithContext.
+// RunJobFlowWithContext indicates an expected call of RunJobFlowWithContext
 func (mr *MockEMRAPIMockRecorder) RunJobFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunJobFlowWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RunJobFlowWithContext), varargs...)
 }
 
-// SetTerminationProtection mocks base method.
+// SetTerminationProtection mocks base method
 func (m *MockEMRAPI) SetTerminationProtection(arg0 *emr.SetTerminationProtectionInput) (*emr.SetTerminationProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetTerminationProtection", arg0)
@@ -2658,13 +1442,13 @@ func (m *MockEMRAPI) SetTerminationProtection(arg0 *emr.SetTerminationProtection
 	return ret0, ret1
 }
 
-// SetTerminationProtection indicates an expected call of SetTerminationProtection.
+// SetTerminationProtection indicates an expected call of SetTerminationProtection
 func (mr *MockEMRAPIMockRecorder) SetTerminationProtection(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetTerminationProtection", reflect.TypeOf((*MockEMRAPI)(nil).SetTerminationProtection), arg0)
 }
 
-// SetTerminationProtectionRequest mocks base method.
+// SetTerminationProtectionRequest mocks base method
 func (m *MockEMRAPI) SetTerminationProtectionRequest(arg0 *emr.SetTerminationProtectionInput) (*request.Request, *emr.SetTerminationProtectionOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetTerminationProtectionRequest", arg0)
@@ -2673,14 +1457,14 @@ func (m *MockEMRAPI) SetTerminationProtectionRequest(arg0 *emr.SetTerminationPro
 	return ret0, ret1
 }
 
-// SetTerminationProtectionRequest indicates an expected call of SetTerminationProtectionRequest.
+// SetTerminationProtectionRequest indicates an expected call of SetTerminationProtectionRequest
 func (mr *MockEMRAPIMockRecorder) SetTerminationProtectionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetTerminationProtectionRequest", reflect.TypeOf((*MockEMRAPI)(nil).SetTerminationProtectionRequest), arg0)
 }
 
-// SetTerminationProtectionWithContext mocks base method.
-func (m *MockEMRAPI) SetTerminationProtectionWithContext(arg0 context.Context, arg1 *emr.SetTerminationProtectionInput, arg2 ...request.Option) (*emr.SetTerminationProtectionOutput, error) {
+// SetTerminationProtectionWithContext mocks base method
+func (m *MockEMRAPI) SetTerminationProtectionWithContext(arg0 aws.Context, arg1 *emr.SetTerminationProtectionInput, arg2 ...request.Option) (*emr.SetTerminationProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2692,14 +1476,14 @@ func (m *MockEMRAPI) SetTerminationProtectionWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// SetTerminationProtectionWithContext indicates an expected call of SetTerminationProtectionWithContext.
+// SetTerminationProtectionWithContext indicates an expected call of SetTerminationProtectionWithContext
 func (mr *MockEMRAPIMockRecorder) SetTerminationProtectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetTerminationProtectionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).SetTerminationProtectionWithContext), varargs...)
 }
 
-// SetVisibleToAllUsers mocks base method.
+// SetVisibleToAllUsers mocks base method
 func (m *MockEMRAPI) SetVisibleToAllUsers(arg0 *emr.SetVisibleToAllUsersInput) (*emr.SetVisibleToAllUsersOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetVisibleToAllUsers", arg0)
@@ -2708,13 +1492,13 @@ func (m *MockEMRAPI) SetVisibleToAllUsers(arg0 *emr.SetVisibleToAllUsersInput) (
 	return ret0, ret1
 }
 
-// SetVisibleToAllUsers indicates an expected call of SetVisibleToAllUsers.
+// SetVisibleToAllUsers indicates an expected call of SetVisibleToAllUsers
 func (mr *MockEMRAPIMockRecorder) SetVisibleToAllUsers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVisibleToAllUsers", reflect.TypeOf((*MockEMRAPI)(nil).SetVisibleToAllUsers), arg0)
 }
 
-// SetVisibleToAllUsersRequest mocks base method.
+// SetVisibleToAllUsersRequest mocks base method
 func (m *MockEMRAPI) SetVisibleToAllUsersRequest(arg0 *emr.SetVisibleToAllUsersInput) (*request.Request, *emr.SetVisibleToAllUsersOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetVisibleToAllUsersRequest", arg0)
@@ -2723,14 +1507,14 @@ func (m *MockEMRAPI) SetVisibleToAllUsersRequest(arg0 *emr.SetVisibleToAllUsersI
 	return ret0, ret1
 }
 
-// SetVisibleToAllUsersRequest indicates an expected call of SetVisibleToAllUsersRequest.
+// SetVisibleToAllUsersRequest indicates an expected call of SetVisibleToAllUsersRequest
 func (mr *MockEMRAPIMockRecorder) SetVisibleToAllUsersRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVisibleToAllUsersRequest", reflect.TypeOf((*MockEMRAPI)(nil).SetVisibleToAllUsersRequest), arg0)
 }
 
-// SetVisibleToAllUsersWithContext mocks base method.
-func (m *MockEMRAPI) SetVisibleToAllUsersWithContext(arg0 context.Context, arg1 *emr.SetVisibleToAllUsersInput, arg2 ...request.Option) (*emr.SetVisibleToAllUsersOutput, error) {
+// SetVisibleToAllUsersWithContext mocks base method
+func (m *MockEMRAPI) SetVisibleToAllUsersWithContext(arg0 aws.Context, arg1 *emr.SetVisibleToAllUsersInput, arg2 ...request.Option) (*emr.SetVisibleToAllUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2742,114 +1526,14 @@ func (m *MockEMRAPI) SetVisibleToAllUsersWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// SetVisibleToAllUsersWithContext indicates an expected call of SetVisibleToAllUsersWithContext.
+// SetVisibleToAllUsersWithContext indicates an expected call of SetVisibleToAllUsersWithContext
 func (mr *MockEMRAPIMockRecorder) SetVisibleToAllUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVisibleToAllUsersWithContext", reflect.TypeOf((*MockEMRAPI)(nil).SetVisibleToAllUsersWithContext), varargs...)
 }
 
-// StartNotebookExecution mocks base method.
-func (m *MockEMRAPI) StartNotebookExecution(arg0 *emr.StartNotebookExecutionInput) (*emr.StartNotebookExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartNotebookExecution", arg0)
-	ret0, _ := ret[0].(*emr.StartNotebookExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartNotebookExecution indicates an expected call of StartNotebookExecution.
-func (mr *MockEMRAPIMockRecorder) StartNotebookExecution(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookExecution", reflect.TypeOf((*MockEMRAPI)(nil).StartNotebookExecution), arg0)
-}
-
-// StartNotebookExecutionRequest mocks base method.
-func (m *MockEMRAPI) StartNotebookExecutionRequest(arg0 *emr.StartNotebookExecutionInput) (*request.Request, *emr.StartNotebookExecutionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StartNotebookExecutionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.StartNotebookExecutionOutput)
-	return ret0, ret1
-}
-
-// StartNotebookExecutionRequest indicates an expected call of StartNotebookExecutionRequest.
-func (mr *MockEMRAPIMockRecorder) StartNotebookExecutionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookExecutionRequest", reflect.TypeOf((*MockEMRAPI)(nil).StartNotebookExecutionRequest), arg0)
-}
-
-// StartNotebookExecutionWithContext mocks base method.
-func (m *MockEMRAPI) StartNotebookExecutionWithContext(arg0 context.Context, arg1 *emr.StartNotebookExecutionInput, arg2 ...request.Option) (*emr.StartNotebookExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "StartNotebookExecutionWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.StartNotebookExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StartNotebookExecutionWithContext indicates an expected call of StartNotebookExecutionWithContext.
-func (mr *MockEMRAPIMockRecorder) StartNotebookExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookExecutionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).StartNotebookExecutionWithContext), varargs...)
-}
-
-// StopNotebookExecution mocks base method.
-func (m *MockEMRAPI) StopNotebookExecution(arg0 *emr.StopNotebookExecutionInput) (*emr.StopNotebookExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StopNotebookExecution", arg0)
-	ret0, _ := ret[0].(*emr.StopNotebookExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StopNotebookExecution indicates an expected call of StopNotebookExecution.
-func (mr *MockEMRAPIMockRecorder) StopNotebookExecution(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookExecution", reflect.TypeOf((*MockEMRAPI)(nil).StopNotebookExecution), arg0)
-}
-
-// StopNotebookExecutionRequest mocks base method.
-func (m *MockEMRAPI) StopNotebookExecutionRequest(arg0 *emr.StopNotebookExecutionInput) (*request.Request, *emr.StopNotebookExecutionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StopNotebookExecutionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.StopNotebookExecutionOutput)
-	return ret0, ret1
-}
-
-// StopNotebookExecutionRequest indicates an expected call of StopNotebookExecutionRequest.
-func (mr *MockEMRAPIMockRecorder) StopNotebookExecutionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookExecutionRequest", reflect.TypeOf((*MockEMRAPI)(nil).StopNotebookExecutionRequest), arg0)
-}
-
-// StopNotebookExecutionWithContext mocks base method.
-func (m *MockEMRAPI) StopNotebookExecutionWithContext(arg0 context.Context, arg1 *emr.StopNotebookExecutionInput, arg2 ...request.Option) (*emr.StopNotebookExecutionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "StopNotebookExecutionWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.StopNotebookExecutionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// StopNotebookExecutionWithContext indicates an expected call of StopNotebookExecutionWithContext.
-func (mr *MockEMRAPIMockRecorder) StopNotebookExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookExecutionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).StopNotebookExecutionWithContext), varargs...)
-}
-
-// TerminateJobFlows mocks base method.
+// TerminateJobFlows mocks base method
 func (m *MockEMRAPI) TerminateJobFlows(arg0 *emr.TerminateJobFlowsInput) (*emr.TerminateJobFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TerminateJobFlows", arg0)
@@ -2858,13 +1542,13 @@ func (m *MockEMRAPI) TerminateJobFlows(arg0 *emr.TerminateJobFlowsInput) (*emr.T
 	return ret0, ret1
 }
 
-// TerminateJobFlows indicates an expected call of TerminateJobFlows.
+// TerminateJobFlows indicates an expected call of TerminateJobFlows
 func (mr *MockEMRAPIMockRecorder) TerminateJobFlows(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateJobFlows", reflect.TypeOf((*MockEMRAPI)(nil).TerminateJobFlows), arg0)
 }
 
-// TerminateJobFlowsRequest mocks base method.
+// TerminateJobFlowsRequest mocks base method
 func (m *MockEMRAPI) TerminateJobFlowsRequest(arg0 *emr.TerminateJobFlowsInput) (*request.Request, *emr.TerminateJobFlowsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TerminateJobFlowsRequest", arg0)
@@ -2873,14 +1557,14 @@ func (m *MockEMRAPI) TerminateJobFlowsRequest(arg0 *emr.TerminateJobFlowsInput) 
 	return ret0, ret1
 }
 
-// TerminateJobFlowsRequest indicates an expected call of TerminateJobFlowsRequest.
+// TerminateJobFlowsRequest indicates an expected call of TerminateJobFlowsRequest
 func (mr *MockEMRAPIMockRecorder) TerminateJobFlowsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateJobFlowsRequest", reflect.TypeOf((*MockEMRAPI)(nil).TerminateJobFlowsRequest), arg0)
 }
 
-// TerminateJobFlowsWithContext mocks base method.
-func (m *MockEMRAPI) TerminateJobFlowsWithContext(arg0 context.Context, arg1 *emr.TerminateJobFlowsInput, arg2 ...request.Option) (*emr.TerminateJobFlowsOutput, error) {
+// TerminateJobFlowsWithContext mocks base method
+func (m *MockEMRAPI) TerminateJobFlowsWithContext(arg0 aws.Context, arg1 *emr.TerminateJobFlowsInput, arg2 ...request.Option) (*emr.TerminateJobFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2892,114 +1576,14 @@ func (m *MockEMRAPI) TerminateJobFlowsWithContext(arg0 context.Context, arg1 *em
 	return ret0, ret1
 }
 
-// TerminateJobFlowsWithContext indicates an expected call of TerminateJobFlowsWithContext.
+// TerminateJobFlowsWithContext indicates an expected call of TerminateJobFlowsWithContext
 func (mr *MockEMRAPIMockRecorder) TerminateJobFlowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateJobFlowsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).TerminateJobFlowsWithContext), varargs...)
 }
 
-// UpdateStudio mocks base method.
-func (m *MockEMRAPI) UpdateStudio(arg0 *emr.UpdateStudioInput) (*emr.UpdateStudioOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateStudio", arg0)
-	ret0, _ := ret[0].(*emr.UpdateStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateStudio indicates an expected call of UpdateStudio.
-func (mr *MockEMRAPIMockRecorder) UpdateStudio(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudio", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudio), arg0)
-}
-
-// UpdateStudioRequest mocks base method.
-func (m *MockEMRAPI) UpdateStudioRequest(arg0 *emr.UpdateStudioInput) (*request.Request, *emr.UpdateStudioOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateStudioRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.UpdateStudioOutput)
-	return ret0, ret1
-}
-
-// UpdateStudioRequest indicates an expected call of UpdateStudioRequest.
-func (mr *MockEMRAPIMockRecorder) UpdateStudioRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioRequest), arg0)
-}
-
-// UpdateStudioSessionMapping mocks base method.
-func (m *MockEMRAPI) UpdateStudioSessionMapping(arg0 *emr.UpdateStudioSessionMappingInput) (*emr.UpdateStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateStudioSessionMapping", arg0)
-	ret0, _ := ret[0].(*emr.UpdateStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateStudioSessionMapping indicates an expected call of UpdateStudioSessionMapping.
-func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMapping(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMapping), arg0)
-}
-
-// UpdateStudioSessionMappingRequest mocks base method.
-func (m *MockEMRAPI) UpdateStudioSessionMappingRequest(arg0 *emr.UpdateStudioSessionMappingInput) (*request.Request, *emr.UpdateStudioSessionMappingOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateStudioSessionMappingRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*emr.UpdateStudioSessionMappingOutput)
-	return ret0, ret1
-}
-
-// UpdateStudioSessionMappingRequest indicates an expected call of UpdateStudioSessionMappingRequest.
-func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMappingRequest), arg0)
-}
-
-// UpdateStudioSessionMappingWithContext mocks base method.
-func (m *MockEMRAPI) UpdateStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.UpdateStudioSessionMappingInput, arg2 ...request.Option) (*emr.UpdateStudioSessionMappingOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateStudioSessionMappingWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.UpdateStudioSessionMappingOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateStudioSessionMappingWithContext indicates an expected call of UpdateStudioSessionMappingWithContext.
-func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMappingWithContext), varargs...)
-}
-
-// UpdateStudioWithContext mocks base method.
-func (m *MockEMRAPI) UpdateStudioWithContext(arg0 context.Context, arg1 *emr.UpdateStudioInput, arg2 ...request.Option) (*emr.UpdateStudioOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateStudioWithContext", varargs...)
-	ret0, _ := ret[0].(*emr.UpdateStudioOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateStudioWithContext indicates an expected call of UpdateStudioWithContext.
-func (mr *MockEMRAPIMockRecorder) UpdateStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioWithContext), varargs...)
-}
-
-// WaitUntilClusterRunning mocks base method.
+// WaitUntilClusterRunning mocks base method
 func (m *MockEMRAPI) WaitUntilClusterRunning(arg0 *emr.DescribeClusterInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilClusterRunning", arg0)
@@ -3007,14 +1591,14 @@ func (m *MockEMRAPI) WaitUntilClusterRunning(arg0 *emr.DescribeClusterInput) err
 	return ret0
 }
 
-// WaitUntilClusterRunning indicates an expected call of WaitUntilClusterRunning.
+// WaitUntilClusterRunning indicates an expected call of WaitUntilClusterRunning
 func (mr *MockEMRAPIMockRecorder) WaitUntilClusterRunning(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterRunning", reflect.TypeOf((*MockEMRAPI)(nil).WaitUntilClusterRunning), arg0)
 }
 
-// WaitUntilClusterRunningWithContext mocks base method.
-func (m *MockEMRAPI) WaitUntilClusterRunningWithContext(arg0 context.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+// WaitUntilClusterRunningWithContext mocks base method
+func (m *MockEMRAPI) WaitUntilClusterRunningWithContext(arg0 aws.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3025,14 +1609,14 @@ func (m *MockEMRAPI) WaitUntilClusterRunningWithContext(arg0 context.Context, ar
 	return ret0
 }
 
-// WaitUntilClusterRunningWithContext indicates an expected call of WaitUntilClusterRunningWithContext.
+// WaitUntilClusterRunningWithContext indicates an expected call of WaitUntilClusterRunningWithContext
 func (mr *MockEMRAPIMockRecorder) WaitUntilClusterRunningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterRunningWithContext", reflect.TypeOf((*MockEMRAPI)(nil).WaitUntilClusterRunningWithContext), varargs...)
 }
 
-// WaitUntilClusterTerminated mocks base method.
+// WaitUntilClusterTerminated mocks base method
 func (m *MockEMRAPI) WaitUntilClusterTerminated(arg0 *emr.DescribeClusterInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilClusterTerminated", arg0)
@@ -3040,14 +1624,14 @@ func (m *MockEMRAPI) WaitUntilClusterTerminated(arg0 *emr.DescribeClusterInput) 
 	return ret0
 }
 
-// WaitUntilClusterTerminated indicates an expected call of WaitUntilClusterTerminated.
+// WaitUntilClusterTerminated indicates an expected call of WaitUntilClusterTerminated
 func (mr *MockEMRAPIMockRecorder) WaitUntilClusterTerminated(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterTerminated", reflect.TypeOf((*MockEMRAPI)(nil).WaitUntilClusterTerminated), arg0)
 }
 
-// WaitUntilClusterTerminatedWithContext mocks base method.
-func (m *MockEMRAPI) WaitUntilClusterTerminatedWithContext(arg0 context.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+// WaitUntilClusterTerminatedWithContext mocks base method
+func (m *MockEMRAPI) WaitUntilClusterTerminatedWithContext(arg0 aws.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3058,14 +1642,14 @@ func (m *MockEMRAPI) WaitUntilClusterTerminatedWithContext(arg0 context.Context,
 	return ret0
 }
 
-// WaitUntilClusterTerminatedWithContext indicates an expected call of WaitUntilClusterTerminatedWithContext.
+// WaitUntilClusterTerminatedWithContext indicates an expected call of WaitUntilClusterTerminatedWithContext
 func (mr *MockEMRAPIMockRecorder) WaitUntilClusterTerminatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterTerminatedWithContext", reflect.TypeOf((*MockEMRAPI)(nil).WaitUntilClusterTerminatedWithContext), varargs...)
 }
 
-// WaitUntilStepComplete mocks base method.
+// WaitUntilStepComplete mocks base method
 func (m *MockEMRAPI) WaitUntilStepComplete(arg0 *emr.DescribeStepInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilStepComplete", arg0)
@@ -3073,14 +1657,14 @@ func (m *MockEMRAPI) WaitUntilStepComplete(arg0 *emr.DescribeStepInput) error {
 	return ret0
 }
 
-// WaitUntilStepComplete indicates an expected call of WaitUntilStepComplete.
+// WaitUntilStepComplete indicates an expected call of WaitUntilStepComplete
 func (mr *MockEMRAPIMockRecorder) WaitUntilStepComplete(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStepComplete", reflect.TypeOf((*MockEMRAPI)(nil).WaitUntilStepComplete), arg0)
 }
 
-// WaitUntilStepCompleteWithContext mocks base method.
-func (m *MockEMRAPI) WaitUntilStepCompleteWithContext(arg0 context.Context, arg1 *emr.DescribeStepInput, arg2 ...request.WaiterOption) error {
+// WaitUntilStepCompleteWithContext mocks base method
+func (m *MockEMRAPI) WaitUntilStepCompleteWithContext(arg0 aws.Context, arg1 *emr.DescribeStepInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3091,7 +1675,7 @@ func (m *MockEMRAPI) WaitUntilStepCompleteWithContext(arg0 context.Context, arg1
 	return ret0
 }
 
-// WaitUntilStepCompleteWithContext indicates an expected call of WaitUntilStepCompleteWithContext.
+// WaitUntilStepCompleteWithContext indicates an expected call of WaitUntilStepCompleteWithContext
 func (mr *MockEMRAPIMockRecorder) WaitUntilStepCompleteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

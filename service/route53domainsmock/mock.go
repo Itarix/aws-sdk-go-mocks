@@ -5,138 +5,37 @@
 package route53domainsmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	route53domains "github.com/aws/aws-sdk-go/service/route53domains"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockRoute53DomainsAPI is a mock of Route53DomainsAPI interface.
+// MockRoute53DomainsAPI is a mock of Route53DomainsAPI interface
 type MockRoute53DomainsAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockRoute53DomainsAPIMockRecorder
 }
 
-// MockRoute53DomainsAPIMockRecorder is the mock recorder for MockRoute53DomainsAPI.
+// MockRoute53DomainsAPIMockRecorder is the mock recorder for MockRoute53DomainsAPI
 type MockRoute53DomainsAPIMockRecorder struct {
 	mock *MockRoute53DomainsAPI
 }
 
-// NewMockRoute53DomainsAPI creates a new mock instance.
+// NewMockRoute53DomainsAPI creates a new mock instance
 func NewMockRoute53DomainsAPI(ctrl *gomock.Controller) *MockRoute53DomainsAPI {
 	mock := &MockRoute53DomainsAPI{ctrl: ctrl}
 	mock.recorder = &MockRoute53DomainsAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockRoute53DomainsAPI) EXPECT() *MockRoute53DomainsAPIMockRecorder {
 	return m.recorder
 }
 
-// AcceptDomainTransferFromAnotherAwsAccount mocks base method.
-func (m *MockRoute53DomainsAPI) AcceptDomainTransferFromAnotherAwsAccount(arg0 *route53domains.AcceptDomainTransferFromAnotherAwsAccountInput) (*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AcceptDomainTransferFromAnotherAwsAccount", arg0)
-	ret0, _ := ret[0].(*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AcceptDomainTransferFromAnotherAwsAccount indicates an expected call of AcceptDomainTransferFromAnotherAwsAccount.
-func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsAccount(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccount), arg0)
-}
-
-// AcceptDomainTransferFromAnotherAwsAccountRequest mocks base method.
-func (m *MockRoute53DomainsAPI) AcceptDomainTransferFromAnotherAwsAccountRequest(arg0 *route53domains.AcceptDomainTransferFromAnotherAwsAccountInput) (*request.Request, *route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AcceptDomainTransferFromAnotherAwsAccountRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput)
-	return ret0, ret1
-}
-
-// AcceptDomainTransferFromAnotherAwsAccountRequest indicates an expected call of AcceptDomainTransferFromAnotherAwsAccountRequest.
-func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccountRequest), arg0)
-}
-
-// AcceptDomainTransferFromAnotherAwsAccountWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) AcceptDomainTransferFromAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.AcceptDomainTransferFromAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AcceptDomainTransferFromAnotherAwsAccountWithContext", varargs...)
-	ret0, _ := ret[0].(*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AcceptDomainTransferFromAnotherAwsAccountWithContext indicates an expected call of AcceptDomainTransferFromAnotherAwsAccountWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccountWithContext), varargs...)
-}
-
-// CancelDomainTransferToAnotherAwsAccount mocks base method.
-func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccount(arg0 *route53domains.CancelDomainTransferToAnotherAwsAccountInput) (*route53domains.CancelDomainTransferToAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CancelDomainTransferToAnotherAwsAccount", arg0)
-	ret0, _ := ret[0].(*route53domains.CancelDomainTransferToAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CancelDomainTransferToAnotherAwsAccount indicates an expected call of CancelDomainTransferToAnotherAwsAccount.
-func (mr *MockRoute53DomainsAPIMockRecorder) CancelDomainTransferToAnotherAwsAccount(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDomainTransferToAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CancelDomainTransferToAnotherAwsAccount), arg0)
-}
-
-// CancelDomainTransferToAnotherAwsAccountRequest mocks base method.
-func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccountRequest(arg0 *route53domains.CancelDomainTransferToAnotherAwsAccountInput) (*request.Request, *route53domains.CancelDomainTransferToAnotherAwsAccountOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CancelDomainTransferToAnotherAwsAccountRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*route53domains.CancelDomainTransferToAnotherAwsAccountOutput)
-	return ret0, ret1
-}
-
-// CancelDomainTransferToAnotherAwsAccountRequest indicates an expected call of CancelDomainTransferToAnotherAwsAccountRequest.
-func (mr *MockRoute53DomainsAPIMockRecorder) CancelDomainTransferToAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDomainTransferToAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CancelDomainTransferToAnotherAwsAccountRequest), arg0)
-}
-
-// CancelDomainTransferToAnotherAwsAccountWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.CancelDomainTransferToAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.CancelDomainTransferToAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CancelDomainTransferToAnotherAwsAccountWithContext", varargs...)
-	ret0, _ := ret[0].(*route53domains.CancelDomainTransferToAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CancelDomainTransferToAnotherAwsAccountWithContext indicates an expected call of CancelDomainTransferToAnotherAwsAccountWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) CancelDomainTransferToAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDomainTransferToAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CancelDomainTransferToAnotherAwsAccountWithContext), varargs...)
-}
-
-// CheckDomainAvailability mocks base method.
+// CheckDomainAvailability mocks base method
 func (m *MockRoute53DomainsAPI) CheckDomainAvailability(arg0 *route53domains.CheckDomainAvailabilityInput) (*route53domains.CheckDomainAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CheckDomainAvailability", arg0)
@@ -145,13 +44,13 @@ func (m *MockRoute53DomainsAPI) CheckDomainAvailability(arg0 *route53domains.Che
 	return ret0, ret1
 }
 
-// CheckDomainAvailability indicates an expected call of CheckDomainAvailability.
+// CheckDomainAvailability indicates an expected call of CheckDomainAvailability
 func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainAvailability(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainAvailability", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainAvailability), arg0)
 }
 
-// CheckDomainAvailabilityRequest mocks base method.
+// CheckDomainAvailabilityRequest mocks base method
 func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityRequest(arg0 *route53domains.CheckDomainAvailabilityInput) (*request.Request, *route53domains.CheckDomainAvailabilityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CheckDomainAvailabilityRequest", arg0)
@@ -160,14 +59,14 @@ func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityRequest(arg0 *route53doma
 	return ret0, ret1
 }
 
-// CheckDomainAvailabilityRequest indicates an expected call of CheckDomainAvailabilityRequest.
+// CheckDomainAvailabilityRequest indicates an expected call of CheckDomainAvailabilityRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainAvailabilityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainAvailabilityRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainAvailabilityRequest), arg0)
 }
 
-// CheckDomainAvailabilityWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityWithContext(arg0 context.Context, arg1 *route53domains.CheckDomainAvailabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainAvailabilityOutput, error) {
+// CheckDomainAvailabilityWithContext mocks base method
+func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityWithContext(arg0 aws.Context, arg1 *route53domains.CheckDomainAvailabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +78,14 @@ func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// CheckDomainAvailabilityWithContext indicates an expected call of CheckDomainAvailabilityWithContext.
+// CheckDomainAvailabilityWithContext indicates an expected call of CheckDomainAvailabilityWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainAvailabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainAvailabilityWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainAvailabilityWithContext), varargs...)
 }
 
-// CheckDomainTransferability mocks base method.
+// CheckDomainTransferability mocks base method
 func (m *MockRoute53DomainsAPI) CheckDomainTransferability(arg0 *route53domains.CheckDomainTransferabilityInput) (*route53domains.CheckDomainTransferabilityOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CheckDomainTransferability", arg0)
@@ -195,13 +94,13 @@ func (m *MockRoute53DomainsAPI) CheckDomainTransferability(arg0 *route53domains.
 	return ret0, ret1
 }
 
-// CheckDomainTransferability indicates an expected call of CheckDomainTransferability.
+// CheckDomainTransferability indicates an expected call of CheckDomainTransferability
 func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainTransferability(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainTransferability", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainTransferability), arg0)
 }
 
-// CheckDomainTransferabilityRequest mocks base method.
+// CheckDomainTransferabilityRequest mocks base method
 func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityRequest(arg0 *route53domains.CheckDomainTransferabilityInput) (*request.Request, *route53domains.CheckDomainTransferabilityOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CheckDomainTransferabilityRequest", arg0)
@@ -210,14 +109,14 @@ func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityRequest(arg0 *route53d
 	return ret0, ret1
 }
 
-// CheckDomainTransferabilityRequest indicates an expected call of CheckDomainTransferabilityRequest.
+// CheckDomainTransferabilityRequest indicates an expected call of CheckDomainTransferabilityRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainTransferabilityRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainTransferabilityRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainTransferabilityRequest), arg0)
 }
 
-// CheckDomainTransferabilityWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityWithContext(arg0 context.Context, arg1 *route53domains.CheckDomainTransferabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainTransferabilityOutput, error) {
+// CheckDomainTransferabilityWithContext mocks base method
+func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityWithContext(arg0 aws.Context, arg1 *route53domains.CheckDomainTransferabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainTransferabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,64 +128,14 @@ func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// CheckDomainTransferabilityWithContext indicates an expected call of CheckDomainTransferabilityWithContext.
+// CheckDomainTransferabilityWithContext indicates an expected call of CheckDomainTransferabilityWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainTransferabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainTransferabilityWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainTransferabilityWithContext), varargs...)
 }
 
-// DeleteDomain mocks base method.
-func (m *MockRoute53DomainsAPI) DeleteDomain(arg0 *route53domains.DeleteDomainInput) (*route53domains.DeleteDomainOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDomain", arg0)
-	ret0, _ := ret[0].(*route53domains.DeleteDomainOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDomain indicates an expected call of DeleteDomain.
-func (mr *MockRoute53DomainsAPIMockRecorder) DeleteDomain(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteDomain), arg0)
-}
-
-// DeleteDomainRequest mocks base method.
-func (m *MockRoute53DomainsAPI) DeleteDomainRequest(arg0 *route53domains.DeleteDomainInput) (*request.Request, *route53domains.DeleteDomainOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDomainRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*route53domains.DeleteDomainOutput)
-	return ret0, ret1
-}
-
-// DeleteDomainRequest indicates an expected call of DeleteDomainRequest.
-func (mr *MockRoute53DomainsAPIMockRecorder) DeleteDomainRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteDomainRequest), arg0)
-}
-
-// DeleteDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) DeleteDomainWithContext(arg0 context.Context, arg1 *route53domains.DeleteDomainInput, arg2 ...request.Option) (*route53domains.DeleteDomainOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteDomainWithContext", varargs...)
-	ret0, _ := ret[0].(*route53domains.DeleteDomainOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDomainWithContext indicates an expected call of DeleteDomainWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) DeleteDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteDomainWithContext), varargs...)
-}
-
-// DeleteTagsForDomain mocks base method.
+// DeleteTagsForDomain mocks base method
 func (m *MockRoute53DomainsAPI) DeleteTagsForDomain(arg0 *route53domains.DeleteTagsForDomainInput) (*route53domains.DeleteTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTagsForDomain", arg0)
@@ -295,13 +144,13 @@ func (m *MockRoute53DomainsAPI) DeleteTagsForDomain(arg0 *route53domains.DeleteT
 	return ret0, ret1
 }
 
-// DeleteTagsForDomain indicates an expected call of DeleteTagsForDomain.
+// DeleteTagsForDomain indicates an expected call of DeleteTagsForDomain
 func (mr *MockRoute53DomainsAPIMockRecorder) DeleteTagsForDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsForDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteTagsForDomain), arg0)
 }
 
-// DeleteTagsForDomainRequest mocks base method.
+// DeleteTagsForDomainRequest mocks base method
 func (m *MockRoute53DomainsAPI) DeleteTagsForDomainRequest(arg0 *route53domains.DeleteTagsForDomainInput) (*request.Request, *route53domains.DeleteTagsForDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteTagsForDomainRequest", arg0)
@@ -310,14 +159,14 @@ func (m *MockRoute53DomainsAPI) DeleteTagsForDomainRequest(arg0 *route53domains.
 	return ret0, ret1
 }
 
-// DeleteTagsForDomainRequest indicates an expected call of DeleteTagsForDomainRequest.
+// DeleteTagsForDomainRequest indicates an expected call of DeleteTagsForDomainRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) DeleteTagsForDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsForDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteTagsForDomainRequest), arg0)
 }
 
-// DeleteTagsForDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) DeleteTagsForDomainWithContext(arg0 context.Context, arg1 *route53domains.DeleteTagsForDomainInput, arg2 ...request.Option) (*route53domains.DeleteTagsForDomainOutput, error) {
+// DeleteTagsForDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) DeleteTagsForDomainWithContext(arg0 aws.Context, arg1 *route53domains.DeleteTagsForDomainInput, arg2 ...request.Option) (*route53domains.DeleteTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +178,14 @@ func (m *MockRoute53DomainsAPI) DeleteTagsForDomainWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteTagsForDomainWithContext indicates an expected call of DeleteTagsForDomainWithContext.
+// DeleteTagsForDomainWithContext indicates an expected call of DeleteTagsForDomainWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) DeleteTagsForDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsForDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteTagsForDomainWithContext), varargs...)
 }
 
-// DisableDomainAutoRenew mocks base method.
+// DisableDomainAutoRenew mocks base method
 func (m *MockRoute53DomainsAPI) DisableDomainAutoRenew(arg0 *route53domains.DisableDomainAutoRenewInput) (*route53domains.DisableDomainAutoRenewOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisableDomainAutoRenew", arg0)
@@ -345,13 +194,13 @@ func (m *MockRoute53DomainsAPI) DisableDomainAutoRenew(arg0 *route53domains.Disa
 	return ret0, ret1
 }
 
-// DisableDomainAutoRenew indicates an expected call of DisableDomainAutoRenew.
+// DisableDomainAutoRenew indicates an expected call of DisableDomainAutoRenew
 func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainAutoRenew(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainAutoRenew", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainAutoRenew), arg0)
 }
 
-// DisableDomainAutoRenewRequest mocks base method.
+// DisableDomainAutoRenewRequest mocks base method
 func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewRequest(arg0 *route53domains.DisableDomainAutoRenewInput) (*request.Request, *route53domains.DisableDomainAutoRenewOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisableDomainAutoRenewRequest", arg0)
@@ -360,14 +209,14 @@ func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewRequest(arg0 *route53domai
 	return ret0, ret1
 }
 
-// DisableDomainAutoRenewRequest indicates an expected call of DisableDomainAutoRenewRequest.
+// DisableDomainAutoRenewRequest indicates an expected call of DisableDomainAutoRenewRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainAutoRenewRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainAutoRenewRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainAutoRenewRequest), arg0)
 }
 
-// DisableDomainAutoRenewWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewWithContext(arg0 context.Context, arg1 *route53domains.DisableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.DisableDomainAutoRenewOutput, error) {
+// DisableDomainAutoRenewWithContext mocks base method
+func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewWithContext(arg0 aws.Context, arg1 *route53domains.DisableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.DisableDomainAutoRenewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +228,14 @@ func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DisableDomainAutoRenewWithContext indicates an expected call of DisableDomainAutoRenewWithContext.
+// DisableDomainAutoRenewWithContext indicates an expected call of DisableDomainAutoRenewWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainAutoRenewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainAutoRenewWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainAutoRenewWithContext), varargs...)
 }
 
-// DisableDomainTransferLock mocks base method.
+// DisableDomainTransferLock mocks base method
 func (m *MockRoute53DomainsAPI) DisableDomainTransferLock(arg0 *route53domains.DisableDomainTransferLockInput) (*route53domains.DisableDomainTransferLockOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisableDomainTransferLock", arg0)
@@ -395,13 +244,13 @@ func (m *MockRoute53DomainsAPI) DisableDomainTransferLock(arg0 *route53domains.D
 	return ret0, ret1
 }
 
-// DisableDomainTransferLock indicates an expected call of DisableDomainTransferLock.
+// DisableDomainTransferLock indicates an expected call of DisableDomainTransferLock
 func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainTransferLock(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainTransferLock", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainTransferLock), arg0)
 }
 
-// DisableDomainTransferLockRequest mocks base method.
+// DisableDomainTransferLockRequest mocks base method
 func (m *MockRoute53DomainsAPI) DisableDomainTransferLockRequest(arg0 *route53domains.DisableDomainTransferLockInput) (*request.Request, *route53domains.DisableDomainTransferLockOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisableDomainTransferLockRequest", arg0)
@@ -410,14 +259,14 @@ func (m *MockRoute53DomainsAPI) DisableDomainTransferLockRequest(arg0 *route53do
 	return ret0, ret1
 }
 
-// DisableDomainTransferLockRequest indicates an expected call of DisableDomainTransferLockRequest.
+// DisableDomainTransferLockRequest indicates an expected call of DisableDomainTransferLockRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainTransferLockRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainTransferLockRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainTransferLockRequest), arg0)
 }
 
-// DisableDomainTransferLockWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) DisableDomainTransferLockWithContext(arg0 context.Context, arg1 *route53domains.DisableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.DisableDomainTransferLockOutput, error) {
+// DisableDomainTransferLockWithContext mocks base method
+func (m *MockRoute53DomainsAPI) DisableDomainTransferLockWithContext(arg0 aws.Context, arg1 *route53domains.DisableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.DisableDomainTransferLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +278,14 @@ func (m *MockRoute53DomainsAPI) DisableDomainTransferLockWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// DisableDomainTransferLockWithContext indicates an expected call of DisableDomainTransferLockWithContext.
+// DisableDomainTransferLockWithContext indicates an expected call of DisableDomainTransferLockWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainTransferLockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainTransferLockWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainTransferLockWithContext), varargs...)
 }
 
-// EnableDomainAutoRenew mocks base method.
+// EnableDomainAutoRenew mocks base method
 func (m *MockRoute53DomainsAPI) EnableDomainAutoRenew(arg0 *route53domains.EnableDomainAutoRenewInput) (*route53domains.EnableDomainAutoRenewOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "EnableDomainAutoRenew", arg0)
@@ -445,13 +294,13 @@ func (m *MockRoute53DomainsAPI) EnableDomainAutoRenew(arg0 *route53domains.Enabl
 	return ret0, ret1
 }
 
-// EnableDomainAutoRenew indicates an expected call of EnableDomainAutoRenew.
+// EnableDomainAutoRenew indicates an expected call of EnableDomainAutoRenew
 func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainAutoRenew(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableDomainAutoRenew", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).EnableDomainAutoRenew), arg0)
 }
 
-// EnableDomainAutoRenewRequest mocks base method.
+// EnableDomainAutoRenewRequest mocks base method
 func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewRequest(arg0 *route53domains.EnableDomainAutoRenewInput) (*request.Request, *route53domains.EnableDomainAutoRenewOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "EnableDomainAutoRenewRequest", arg0)
@@ -460,14 +309,14 @@ func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewRequest(arg0 *route53domain
 	return ret0, ret1
 }
 
-// EnableDomainAutoRenewRequest indicates an expected call of EnableDomainAutoRenewRequest.
+// EnableDomainAutoRenewRequest indicates an expected call of EnableDomainAutoRenewRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainAutoRenewRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableDomainAutoRenewRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).EnableDomainAutoRenewRequest), arg0)
 }
 
-// EnableDomainAutoRenewWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewWithContext(arg0 context.Context, arg1 *route53domains.EnableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.EnableDomainAutoRenewOutput, error) {
+// EnableDomainAutoRenewWithContext mocks base method
+func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewWithContext(arg0 aws.Context, arg1 *route53domains.EnableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.EnableDomainAutoRenewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +328,14 @@ func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// EnableDomainAutoRenewWithContext indicates an expected call of EnableDomainAutoRenewWithContext.
+// EnableDomainAutoRenewWithContext indicates an expected call of EnableDomainAutoRenewWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainAutoRenewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableDomainAutoRenewWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).EnableDomainAutoRenewWithContext), varargs...)
 }
 
-// EnableDomainTransferLock mocks base method.
+// EnableDomainTransferLock mocks base method
 func (m *MockRoute53DomainsAPI) EnableDomainTransferLock(arg0 *route53domains.EnableDomainTransferLockInput) (*route53domains.EnableDomainTransferLockOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "EnableDomainTransferLock", arg0)
@@ -495,13 +344,13 @@ func (m *MockRoute53DomainsAPI) EnableDomainTransferLock(arg0 *route53domains.En
 	return ret0, ret1
 }
 
-// EnableDomainTransferLock indicates an expected call of EnableDomainTransferLock.
+// EnableDomainTransferLock indicates an expected call of EnableDomainTransferLock
 func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainTransferLock(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableDomainTransferLock", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).EnableDomainTransferLock), arg0)
 }
 
-// EnableDomainTransferLockRequest mocks base method.
+// EnableDomainTransferLockRequest mocks base method
 func (m *MockRoute53DomainsAPI) EnableDomainTransferLockRequest(arg0 *route53domains.EnableDomainTransferLockInput) (*request.Request, *route53domains.EnableDomainTransferLockOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "EnableDomainTransferLockRequest", arg0)
@@ -510,14 +359,14 @@ func (m *MockRoute53DomainsAPI) EnableDomainTransferLockRequest(arg0 *route53dom
 	return ret0, ret1
 }
 
-// EnableDomainTransferLockRequest indicates an expected call of EnableDomainTransferLockRequest.
+// EnableDomainTransferLockRequest indicates an expected call of EnableDomainTransferLockRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainTransferLockRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableDomainTransferLockRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).EnableDomainTransferLockRequest), arg0)
 }
 
-// EnableDomainTransferLockWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) EnableDomainTransferLockWithContext(arg0 context.Context, arg1 *route53domains.EnableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.EnableDomainTransferLockOutput, error) {
+// EnableDomainTransferLockWithContext mocks base method
+func (m *MockRoute53DomainsAPI) EnableDomainTransferLockWithContext(arg0 aws.Context, arg1 *route53domains.EnableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.EnableDomainTransferLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +378,14 @@ func (m *MockRoute53DomainsAPI) EnableDomainTransferLockWithContext(arg0 context
 	return ret0, ret1
 }
 
-// EnableDomainTransferLockWithContext indicates an expected call of EnableDomainTransferLockWithContext.
+// EnableDomainTransferLockWithContext indicates an expected call of EnableDomainTransferLockWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainTransferLockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableDomainTransferLockWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).EnableDomainTransferLockWithContext), varargs...)
 }
 
-// GetContactReachabilityStatus mocks base method.
+// GetContactReachabilityStatus mocks base method
 func (m *MockRoute53DomainsAPI) GetContactReachabilityStatus(arg0 *route53domains.GetContactReachabilityStatusInput) (*route53domains.GetContactReachabilityStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetContactReachabilityStatus", arg0)
@@ -545,13 +394,13 @@ func (m *MockRoute53DomainsAPI) GetContactReachabilityStatus(arg0 *route53domain
 	return ret0, ret1
 }
 
-// GetContactReachabilityStatus indicates an expected call of GetContactReachabilityStatus.
+// GetContactReachabilityStatus indicates an expected call of GetContactReachabilityStatus
 func (mr *MockRoute53DomainsAPIMockRecorder) GetContactReachabilityStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactReachabilityStatus", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetContactReachabilityStatus), arg0)
 }
 
-// GetContactReachabilityStatusRequest mocks base method.
+// GetContactReachabilityStatusRequest mocks base method
 func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusRequest(arg0 *route53domains.GetContactReachabilityStatusInput) (*request.Request, *route53domains.GetContactReachabilityStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetContactReachabilityStatusRequest", arg0)
@@ -560,14 +409,14 @@ func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusRequest(arg0 *route5
 	return ret0, ret1
 }
 
-// GetContactReachabilityStatusRequest indicates an expected call of GetContactReachabilityStatusRequest.
+// GetContactReachabilityStatusRequest indicates an expected call of GetContactReachabilityStatusRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) GetContactReachabilityStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactReachabilityStatusRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetContactReachabilityStatusRequest), arg0)
 }
 
-// GetContactReachabilityStatusWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusWithContext(arg0 context.Context, arg1 *route53domains.GetContactReachabilityStatusInput, arg2 ...request.Option) (*route53domains.GetContactReachabilityStatusOutput, error) {
+// GetContactReachabilityStatusWithContext mocks base method
+func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusWithContext(arg0 aws.Context, arg1 *route53domains.GetContactReachabilityStatusInput, arg2 ...request.Option) (*route53domains.GetContactReachabilityStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +428,14 @@ func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusWithContext(arg0 con
 	return ret0, ret1
 }
 
-// GetContactReachabilityStatusWithContext indicates an expected call of GetContactReachabilityStatusWithContext.
+// GetContactReachabilityStatusWithContext indicates an expected call of GetContactReachabilityStatusWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) GetContactReachabilityStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactReachabilityStatusWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetContactReachabilityStatusWithContext), varargs...)
 }
 
-// GetDomainDetail mocks base method.
+// GetDomainDetail mocks base method
 func (m *MockRoute53DomainsAPI) GetDomainDetail(arg0 *route53domains.GetDomainDetailInput) (*route53domains.GetDomainDetailOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainDetail", arg0)
@@ -595,13 +444,13 @@ func (m *MockRoute53DomainsAPI) GetDomainDetail(arg0 *route53domains.GetDomainDe
 	return ret0, ret1
 }
 
-// GetDomainDetail indicates an expected call of GetDomainDetail.
+// GetDomainDetail indicates an expected call of GetDomainDetail
 func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainDetail(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainDetail", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetDomainDetail), arg0)
 }
 
-// GetDomainDetailRequest mocks base method.
+// GetDomainDetailRequest mocks base method
 func (m *MockRoute53DomainsAPI) GetDomainDetailRequest(arg0 *route53domains.GetDomainDetailInput) (*request.Request, *route53domains.GetDomainDetailOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainDetailRequest", arg0)
@@ -610,14 +459,14 @@ func (m *MockRoute53DomainsAPI) GetDomainDetailRequest(arg0 *route53domains.GetD
 	return ret0, ret1
 }
 
-// GetDomainDetailRequest indicates an expected call of GetDomainDetailRequest.
+// GetDomainDetailRequest indicates an expected call of GetDomainDetailRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainDetailRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainDetailRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetDomainDetailRequest), arg0)
 }
 
-// GetDomainDetailWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) GetDomainDetailWithContext(arg0 context.Context, arg1 *route53domains.GetDomainDetailInput, arg2 ...request.Option) (*route53domains.GetDomainDetailOutput, error) {
+// GetDomainDetailWithContext mocks base method
+func (m *MockRoute53DomainsAPI) GetDomainDetailWithContext(arg0 aws.Context, arg1 *route53domains.GetDomainDetailInput, arg2 ...request.Option) (*route53domains.GetDomainDetailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +478,14 @@ func (m *MockRoute53DomainsAPI) GetDomainDetailWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// GetDomainDetailWithContext indicates an expected call of GetDomainDetailWithContext.
+// GetDomainDetailWithContext indicates an expected call of GetDomainDetailWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainDetailWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainDetailWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetDomainDetailWithContext), varargs...)
 }
 
-// GetDomainSuggestions mocks base method.
+// GetDomainSuggestions mocks base method
 func (m *MockRoute53DomainsAPI) GetDomainSuggestions(arg0 *route53domains.GetDomainSuggestionsInput) (*route53domains.GetDomainSuggestionsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainSuggestions", arg0)
@@ -645,13 +494,13 @@ func (m *MockRoute53DomainsAPI) GetDomainSuggestions(arg0 *route53domains.GetDom
 	return ret0, ret1
 }
 
-// GetDomainSuggestions indicates an expected call of GetDomainSuggestions.
+// GetDomainSuggestions indicates an expected call of GetDomainSuggestions
 func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainSuggestions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainSuggestions", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetDomainSuggestions), arg0)
 }
 
-// GetDomainSuggestionsRequest mocks base method.
+// GetDomainSuggestionsRequest mocks base method
 func (m *MockRoute53DomainsAPI) GetDomainSuggestionsRequest(arg0 *route53domains.GetDomainSuggestionsInput) (*request.Request, *route53domains.GetDomainSuggestionsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetDomainSuggestionsRequest", arg0)
@@ -660,14 +509,14 @@ func (m *MockRoute53DomainsAPI) GetDomainSuggestionsRequest(arg0 *route53domains
 	return ret0, ret1
 }
 
-// GetDomainSuggestionsRequest indicates an expected call of GetDomainSuggestionsRequest.
+// GetDomainSuggestionsRequest indicates an expected call of GetDomainSuggestionsRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainSuggestionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainSuggestionsRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetDomainSuggestionsRequest), arg0)
 }
 
-// GetDomainSuggestionsWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) GetDomainSuggestionsWithContext(arg0 context.Context, arg1 *route53domains.GetDomainSuggestionsInput, arg2 ...request.Option) (*route53domains.GetDomainSuggestionsOutput, error) {
+// GetDomainSuggestionsWithContext mocks base method
+func (m *MockRoute53DomainsAPI) GetDomainSuggestionsWithContext(arg0 aws.Context, arg1 *route53domains.GetDomainSuggestionsInput, arg2 ...request.Option) (*route53domains.GetDomainSuggestionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +528,14 @@ func (m *MockRoute53DomainsAPI) GetDomainSuggestionsWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// GetDomainSuggestionsWithContext indicates an expected call of GetDomainSuggestionsWithContext.
+// GetDomainSuggestionsWithContext indicates an expected call of GetDomainSuggestionsWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainSuggestionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainSuggestionsWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetDomainSuggestionsWithContext), varargs...)
 }
 
-// GetOperationDetail mocks base method.
+// GetOperationDetail mocks base method
 func (m *MockRoute53DomainsAPI) GetOperationDetail(arg0 *route53domains.GetOperationDetailInput) (*route53domains.GetOperationDetailOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOperationDetail", arg0)
@@ -695,13 +544,13 @@ func (m *MockRoute53DomainsAPI) GetOperationDetail(arg0 *route53domains.GetOpera
 	return ret0, ret1
 }
 
-// GetOperationDetail indicates an expected call of GetOperationDetail.
+// GetOperationDetail indicates an expected call of GetOperationDetail
 func (mr *MockRoute53DomainsAPIMockRecorder) GetOperationDetail(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOperationDetail", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetOperationDetail), arg0)
 }
 
-// GetOperationDetailRequest mocks base method.
+// GetOperationDetailRequest mocks base method
 func (m *MockRoute53DomainsAPI) GetOperationDetailRequest(arg0 *route53domains.GetOperationDetailInput) (*request.Request, *route53domains.GetOperationDetailOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetOperationDetailRequest", arg0)
@@ -710,14 +559,14 @@ func (m *MockRoute53DomainsAPI) GetOperationDetailRequest(arg0 *route53domains.G
 	return ret0, ret1
 }
 
-// GetOperationDetailRequest indicates an expected call of GetOperationDetailRequest.
+// GetOperationDetailRequest indicates an expected call of GetOperationDetailRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) GetOperationDetailRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOperationDetailRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetOperationDetailRequest), arg0)
 }
 
-// GetOperationDetailWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) GetOperationDetailWithContext(arg0 context.Context, arg1 *route53domains.GetOperationDetailInput, arg2 ...request.Option) (*route53domains.GetOperationDetailOutput, error) {
+// GetOperationDetailWithContext mocks base method
+func (m *MockRoute53DomainsAPI) GetOperationDetailWithContext(arg0 aws.Context, arg1 *route53domains.GetOperationDetailInput, arg2 ...request.Option) (*route53domains.GetOperationDetailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +578,14 @@ func (m *MockRoute53DomainsAPI) GetOperationDetailWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// GetOperationDetailWithContext indicates an expected call of GetOperationDetailWithContext.
+// GetOperationDetailWithContext indicates an expected call of GetOperationDetailWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) GetOperationDetailWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOperationDetailWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).GetOperationDetailWithContext), varargs...)
 }
 
-// ListDomains mocks base method.
+// ListDomains mocks base method
 func (m *MockRoute53DomainsAPI) ListDomains(arg0 *route53domains.ListDomainsInput) (*route53domains.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomains", arg0)
@@ -745,13 +594,13 @@ func (m *MockRoute53DomainsAPI) ListDomains(arg0 *route53domains.ListDomainsInpu
 	return ret0, ret1
 }
 
-// ListDomains indicates an expected call of ListDomains.
+// ListDomains indicates an expected call of ListDomains
 func (mr *MockRoute53DomainsAPIMockRecorder) ListDomains(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomains", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListDomains), arg0)
 }
 
-// ListDomainsPages mocks base method.
+// ListDomainsPages mocks base method
 func (m *MockRoute53DomainsAPI) ListDomainsPages(arg0 *route53domains.ListDomainsInput, arg1 func(*route53domains.ListDomainsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomainsPages", arg0, arg1)
@@ -759,14 +608,14 @@ func (m *MockRoute53DomainsAPI) ListDomainsPages(arg0 *route53domains.ListDomain
 	return ret0
 }
 
-// ListDomainsPages indicates an expected call of ListDomainsPages.
+// ListDomainsPages indicates an expected call of ListDomainsPages
 func (mr *MockRoute53DomainsAPIMockRecorder) ListDomainsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsPages", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListDomainsPages), arg0, arg1)
 }
 
-// ListDomainsPagesWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListDomainsPagesWithContext(arg0 context.Context, arg1 *route53domains.ListDomainsInput, arg2 func(*route53domains.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
+// ListDomainsPagesWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListDomainsPagesWithContext(arg0 aws.Context, arg1 *route53domains.ListDomainsInput, arg2 func(*route53domains.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -777,14 +626,14 @@ func (m *MockRoute53DomainsAPI) ListDomainsPagesWithContext(arg0 context.Context
 	return ret0
 }
 
-// ListDomainsPagesWithContext indicates an expected call of ListDomainsPagesWithContext.
+// ListDomainsPagesWithContext indicates an expected call of ListDomainsPagesWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ListDomainsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsPagesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListDomainsPagesWithContext), varargs...)
 }
 
-// ListDomainsRequest mocks base method.
+// ListDomainsRequest mocks base method
 func (m *MockRoute53DomainsAPI) ListDomainsRequest(arg0 *route53domains.ListDomainsInput) (*request.Request, *route53domains.ListDomainsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDomainsRequest", arg0)
@@ -793,14 +642,14 @@ func (m *MockRoute53DomainsAPI) ListDomainsRequest(arg0 *route53domains.ListDoma
 	return ret0, ret1
 }
 
-// ListDomainsRequest indicates an expected call of ListDomainsRequest.
+// ListDomainsRequest indicates an expected call of ListDomainsRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) ListDomainsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListDomainsRequest), arg0)
 }
 
-// ListDomainsWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListDomainsWithContext(arg0 context.Context, arg1 *route53domains.ListDomainsInput, arg2 ...request.Option) (*route53domains.ListDomainsOutput, error) {
+// ListDomainsWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListDomainsWithContext(arg0 aws.Context, arg1 *route53domains.ListDomainsInput, arg2 ...request.Option) (*route53domains.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -812,14 +661,14 @@ func (m *MockRoute53DomainsAPI) ListDomainsWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// ListDomainsWithContext indicates an expected call of ListDomainsWithContext.
+// ListDomainsWithContext indicates an expected call of ListDomainsWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ListDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListDomainsWithContext), varargs...)
 }
 
-// ListOperations mocks base method.
+// ListOperations mocks base method
 func (m *MockRoute53DomainsAPI) ListOperations(arg0 *route53domains.ListOperationsInput) (*route53domains.ListOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOperations", arg0)
@@ -828,13 +677,13 @@ func (m *MockRoute53DomainsAPI) ListOperations(arg0 *route53domains.ListOperatio
 	return ret0, ret1
 }
 
-// ListOperations indicates an expected call of ListOperations.
+// ListOperations indicates an expected call of ListOperations
 func (mr *MockRoute53DomainsAPIMockRecorder) ListOperations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperations", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListOperations), arg0)
 }
 
-// ListOperationsPages mocks base method.
+// ListOperationsPages mocks base method
 func (m *MockRoute53DomainsAPI) ListOperationsPages(arg0 *route53domains.ListOperationsInput, arg1 func(*route53domains.ListOperationsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOperationsPages", arg0, arg1)
@@ -842,14 +691,14 @@ func (m *MockRoute53DomainsAPI) ListOperationsPages(arg0 *route53domains.ListOpe
 	return ret0
 }
 
-// ListOperationsPages indicates an expected call of ListOperationsPages.
+// ListOperationsPages indicates an expected call of ListOperationsPages
 func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsPages", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListOperationsPages), arg0, arg1)
 }
 
-// ListOperationsPagesWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListOperationsPagesWithContext(arg0 context.Context, arg1 *route53domains.ListOperationsInput, arg2 func(*route53domains.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
+// ListOperationsPagesWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListOperationsPagesWithContext(arg0 aws.Context, arg1 *route53domains.ListOperationsInput, arg2 func(*route53domains.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -860,14 +709,14 @@ func (m *MockRoute53DomainsAPI) ListOperationsPagesWithContext(arg0 context.Cont
 	return ret0
 }
 
-// ListOperationsPagesWithContext indicates an expected call of ListOperationsPagesWithContext.
+// ListOperationsPagesWithContext indicates an expected call of ListOperationsPagesWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsPagesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListOperationsPagesWithContext), varargs...)
 }
 
-// ListOperationsRequest mocks base method.
+// ListOperationsRequest mocks base method
 func (m *MockRoute53DomainsAPI) ListOperationsRequest(arg0 *route53domains.ListOperationsInput) (*request.Request, *route53domains.ListOperationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListOperationsRequest", arg0)
@@ -876,14 +725,14 @@ func (m *MockRoute53DomainsAPI) ListOperationsRequest(arg0 *route53domains.ListO
 	return ret0, ret1
 }
 
-// ListOperationsRequest indicates an expected call of ListOperationsRequest.
+// ListOperationsRequest indicates an expected call of ListOperationsRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListOperationsRequest), arg0)
 }
 
-// ListOperationsWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListOperationsWithContext(arg0 context.Context, arg1 *route53domains.ListOperationsInput, arg2 ...request.Option) (*route53domains.ListOperationsOutput, error) {
+// ListOperationsWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListOperationsWithContext(arg0 aws.Context, arg1 *route53domains.ListOperationsInput, arg2 ...request.Option) (*route53domains.ListOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -895,97 +744,14 @@ func (m *MockRoute53DomainsAPI) ListOperationsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListOperationsWithContext indicates an expected call of ListOperationsWithContext.
+// ListOperationsWithContext indicates an expected call of ListOperationsWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListOperationsWithContext), varargs...)
 }
 
-// ListPrices mocks base method.
-func (m *MockRoute53DomainsAPI) ListPrices(arg0 *route53domains.ListPricesInput) (*route53domains.ListPricesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPrices", arg0)
-	ret0, _ := ret[0].(*route53domains.ListPricesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListPrices indicates an expected call of ListPrices.
-func (mr *MockRoute53DomainsAPIMockRecorder) ListPrices(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrices", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPrices), arg0)
-}
-
-// ListPricesPages mocks base method.
-func (m *MockRoute53DomainsAPI) ListPricesPages(arg0 *route53domains.ListPricesInput, arg1 func(*route53domains.ListPricesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPricesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPricesPages indicates an expected call of ListPricesPages.
-func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesPages", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesPages), arg0, arg1)
-}
-
-// ListPricesPagesWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListPricesPagesWithContext(arg0 context.Context, arg1 *route53domains.ListPricesInput, arg2 func(*route53domains.ListPricesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPricesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPricesPagesWithContext indicates an expected call of ListPricesPagesWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesPagesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesPagesWithContext), varargs...)
-}
-
-// ListPricesRequest mocks base method.
-func (m *MockRoute53DomainsAPI) ListPricesRequest(arg0 *route53domains.ListPricesInput) (*request.Request, *route53domains.ListPricesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPricesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*route53domains.ListPricesOutput)
-	return ret0, ret1
-}
-
-// ListPricesRequest indicates an expected call of ListPricesRequest.
-func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesRequest), arg0)
-}
-
-// ListPricesWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListPricesWithContext(arg0 context.Context, arg1 *route53domains.ListPricesInput, arg2 ...request.Option) (*route53domains.ListPricesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPricesWithContext", varargs...)
-	ret0, _ := ret[0].(*route53domains.ListPricesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListPricesWithContext indicates an expected call of ListPricesWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesWithContext), varargs...)
-}
-
-// ListTagsForDomain mocks base method.
+// ListTagsForDomain mocks base method
 func (m *MockRoute53DomainsAPI) ListTagsForDomain(arg0 *route53domains.ListTagsForDomainInput) (*route53domains.ListTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForDomain", arg0)
@@ -994,13 +760,13 @@ func (m *MockRoute53DomainsAPI) ListTagsForDomain(arg0 *route53domains.ListTagsF
 	return ret0, ret1
 }
 
-// ListTagsForDomain indicates an expected call of ListTagsForDomain.
+// ListTagsForDomain indicates an expected call of ListTagsForDomain
 func (mr *MockRoute53DomainsAPIMockRecorder) ListTagsForDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListTagsForDomain), arg0)
 }
 
-// ListTagsForDomainRequest mocks base method.
+// ListTagsForDomainRequest mocks base method
 func (m *MockRoute53DomainsAPI) ListTagsForDomainRequest(arg0 *route53domains.ListTagsForDomainInput) (*request.Request, *route53domains.ListTagsForDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForDomainRequest", arg0)
@@ -1009,14 +775,14 @@ func (m *MockRoute53DomainsAPI) ListTagsForDomainRequest(arg0 *route53domains.Li
 	return ret0, ret1
 }
 
-// ListTagsForDomainRequest indicates an expected call of ListTagsForDomainRequest.
+// ListTagsForDomainRequest indicates an expected call of ListTagsForDomainRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) ListTagsForDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListTagsForDomainRequest), arg0)
 }
 
-// ListTagsForDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ListTagsForDomainWithContext(arg0 context.Context, arg1 *route53domains.ListTagsForDomainInput, arg2 ...request.Option) (*route53domains.ListTagsForDomainOutput, error) {
+// ListTagsForDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListTagsForDomainWithContext(arg0 aws.Context, arg1 *route53domains.ListTagsForDomainInput, arg2 ...request.Option) (*route53domains.ListTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1028,14 +794,14 @@ func (m *MockRoute53DomainsAPI) ListTagsForDomainWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// ListTagsForDomainWithContext indicates an expected call of ListTagsForDomainWithContext.
+// ListTagsForDomainWithContext indicates an expected call of ListTagsForDomainWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ListTagsForDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListTagsForDomainWithContext), varargs...)
 }
 
-// RegisterDomain mocks base method.
+// RegisterDomain mocks base method
 func (m *MockRoute53DomainsAPI) RegisterDomain(arg0 *route53domains.RegisterDomainInput) (*route53domains.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterDomain", arg0)
@@ -1044,13 +810,13 @@ func (m *MockRoute53DomainsAPI) RegisterDomain(arg0 *route53domains.RegisterDoma
 	return ret0, ret1
 }
 
-// RegisterDomain indicates an expected call of RegisterDomain.
+// RegisterDomain indicates an expected call of RegisterDomain
 func (mr *MockRoute53DomainsAPIMockRecorder) RegisterDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RegisterDomain), arg0)
 }
 
-// RegisterDomainRequest mocks base method.
+// RegisterDomainRequest mocks base method
 func (m *MockRoute53DomainsAPI) RegisterDomainRequest(arg0 *route53domains.RegisterDomainInput) (*request.Request, *route53domains.RegisterDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RegisterDomainRequest", arg0)
@@ -1059,14 +825,14 @@ func (m *MockRoute53DomainsAPI) RegisterDomainRequest(arg0 *route53domains.Regis
 	return ret0, ret1
 }
 
-// RegisterDomainRequest indicates an expected call of RegisterDomainRequest.
+// RegisterDomainRequest indicates an expected call of RegisterDomainRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) RegisterDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RegisterDomainRequest), arg0)
 }
 
-// RegisterDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) RegisterDomainWithContext(arg0 context.Context, arg1 *route53domains.RegisterDomainInput, arg2 ...request.Option) (*route53domains.RegisterDomainOutput, error) {
+// RegisterDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) RegisterDomainWithContext(arg0 aws.Context, arg1 *route53domains.RegisterDomainInput, arg2 ...request.Option) (*route53domains.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1078,64 +844,14 @@ func (m *MockRoute53DomainsAPI) RegisterDomainWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// RegisterDomainWithContext indicates an expected call of RegisterDomainWithContext.
+// RegisterDomainWithContext indicates an expected call of RegisterDomainWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) RegisterDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RegisterDomainWithContext), varargs...)
 }
 
-// RejectDomainTransferFromAnotherAwsAccount mocks base method.
-func (m *MockRoute53DomainsAPI) RejectDomainTransferFromAnotherAwsAccount(arg0 *route53domains.RejectDomainTransferFromAnotherAwsAccountInput) (*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RejectDomainTransferFromAnotherAwsAccount", arg0)
-	ret0, _ := ret[0].(*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RejectDomainTransferFromAnotherAwsAccount indicates an expected call of RejectDomainTransferFromAnotherAwsAccount.
-func (mr *MockRoute53DomainsAPIMockRecorder) RejectDomainTransferFromAnotherAwsAccount(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDomainTransferFromAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RejectDomainTransferFromAnotherAwsAccount), arg0)
-}
-
-// RejectDomainTransferFromAnotherAwsAccountRequest mocks base method.
-func (m *MockRoute53DomainsAPI) RejectDomainTransferFromAnotherAwsAccountRequest(arg0 *route53domains.RejectDomainTransferFromAnotherAwsAccountInput) (*request.Request, *route53domains.RejectDomainTransferFromAnotherAwsAccountOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "RejectDomainTransferFromAnotherAwsAccountRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput)
-	return ret0, ret1
-}
-
-// RejectDomainTransferFromAnotherAwsAccountRequest indicates an expected call of RejectDomainTransferFromAnotherAwsAccountRequest.
-func (mr *MockRoute53DomainsAPIMockRecorder) RejectDomainTransferFromAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDomainTransferFromAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RejectDomainTransferFromAnotherAwsAccountRequest), arg0)
-}
-
-// RejectDomainTransferFromAnotherAwsAccountWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) RejectDomainTransferFromAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.RejectDomainTransferFromAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "RejectDomainTransferFromAnotherAwsAccountWithContext", varargs...)
-	ret0, _ := ret[0].(*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// RejectDomainTransferFromAnotherAwsAccountWithContext indicates an expected call of RejectDomainTransferFromAnotherAwsAccountWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) RejectDomainTransferFromAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDomainTransferFromAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RejectDomainTransferFromAnotherAwsAccountWithContext), varargs...)
-}
-
-// RenewDomain mocks base method.
+// RenewDomain mocks base method
 func (m *MockRoute53DomainsAPI) RenewDomain(arg0 *route53domains.RenewDomainInput) (*route53domains.RenewDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RenewDomain", arg0)
@@ -1144,13 +860,13 @@ func (m *MockRoute53DomainsAPI) RenewDomain(arg0 *route53domains.RenewDomainInpu
 	return ret0, ret1
 }
 
-// RenewDomain indicates an expected call of RenewDomain.
+// RenewDomain indicates an expected call of RenewDomain
 func (mr *MockRoute53DomainsAPIMockRecorder) RenewDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenewDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RenewDomain), arg0)
 }
 
-// RenewDomainRequest mocks base method.
+// RenewDomainRequest mocks base method
 func (m *MockRoute53DomainsAPI) RenewDomainRequest(arg0 *route53domains.RenewDomainInput) (*request.Request, *route53domains.RenewDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RenewDomainRequest", arg0)
@@ -1159,14 +875,14 @@ func (m *MockRoute53DomainsAPI) RenewDomainRequest(arg0 *route53domains.RenewDom
 	return ret0, ret1
 }
 
-// RenewDomainRequest indicates an expected call of RenewDomainRequest.
+// RenewDomainRequest indicates an expected call of RenewDomainRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) RenewDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenewDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RenewDomainRequest), arg0)
 }
 
-// RenewDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) RenewDomainWithContext(arg0 context.Context, arg1 *route53domains.RenewDomainInput, arg2 ...request.Option) (*route53domains.RenewDomainOutput, error) {
+// RenewDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) RenewDomainWithContext(arg0 aws.Context, arg1 *route53domains.RenewDomainInput, arg2 ...request.Option) (*route53domains.RenewDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1178,14 +894,14 @@ func (m *MockRoute53DomainsAPI) RenewDomainWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// RenewDomainWithContext indicates an expected call of RenewDomainWithContext.
+// RenewDomainWithContext indicates an expected call of RenewDomainWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) RenewDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenewDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RenewDomainWithContext), varargs...)
 }
 
-// ResendContactReachabilityEmail mocks base method.
+// ResendContactReachabilityEmail mocks base method
 func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmail(arg0 *route53domains.ResendContactReachabilityEmailInput) (*route53domains.ResendContactReachabilityEmailOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ResendContactReachabilityEmail", arg0)
@@ -1194,13 +910,13 @@ func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmail(arg0 *route53doma
 	return ret0, ret1
 }
 
-// ResendContactReachabilityEmail indicates an expected call of ResendContactReachabilityEmail.
+// ResendContactReachabilityEmail indicates an expected call of ResendContactReachabilityEmail
 func (mr *MockRoute53DomainsAPIMockRecorder) ResendContactReachabilityEmail(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendContactReachabilityEmail", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendContactReachabilityEmail), arg0)
 }
 
-// ResendContactReachabilityEmailRequest mocks base method.
+// ResendContactReachabilityEmailRequest mocks base method
 func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailRequest(arg0 *route53domains.ResendContactReachabilityEmailInput) (*request.Request, *route53domains.ResendContactReachabilityEmailOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ResendContactReachabilityEmailRequest", arg0)
@@ -1209,14 +925,14 @@ func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailRequest(arg0 *rout
 	return ret0, ret1
 }
 
-// ResendContactReachabilityEmailRequest indicates an expected call of ResendContactReachabilityEmailRequest.
+// ResendContactReachabilityEmailRequest indicates an expected call of ResendContactReachabilityEmailRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) ResendContactReachabilityEmailRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendContactReachabilityEmailRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendContactReachabilityEmailRequest), arg0)
 }
 
-// ResendContactReachabilityEmailWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailWithContext(arg0 context.Context, arg1 *route53domains.ResendContactReachabilityEmailInput, arg2 ...request.Option) (*route53domains.ResendContactReachabilityEmailOutput, error) {
+// ResendContactReachabilityEmailWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailWithContext(arg0 aws.Context, arg1 *route53domains.ResendContactReachabilityEmailInput, arg2 ...request.Option) (*route53domains.ResendContactReachabilityEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1228,14 +944,14 @@ func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailWithContext(arg0 c
 	return ret0, ret1
 }
 
-// ResendContactReachabilityEmailWithContext indicates an expected call of ResendContactReachabilityEmailWithContext.
+// ResendContactReachabilityEmailWithContext indicates an expected call of ResendContactReachabilityEmailWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ResendContactReachabilityEmailWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendContactReachabilityEmailWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendContactReachabilityEmailWithContext), varargs...)
 }
 
-// RetrieveDomainAuthCode mocks base method.
+// RetrieveDomainAuthCode mocks base method
 func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCode(arg0 *route53domains.RetrieveDomainAuthCodeInput) (*route53domains.RetrieveDomainAuthCodeOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveDomainAuthCode", arg0)
@@ -1244,13 +960,13 @@ func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCode(arg0 *route53domains.Retr
 	return ret0, ret1
 }
 
-// RetrieveDomainAuthCode indicates an expected call of RetrieveDomainAuthCode.
+// RetrieveDomainAuthCode indicates an expected call of RetrieveDomainAuthCode
 func (mr *MockRoute53DomainsAPIMockRecorder) RetrieveDomainAuthCode(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveDomainAuthCode", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RetrieveDomainAuthCode), arg0)
 }
 
-// RetrieveDomainAuthCodeRequest mocks base method.
+// RetrieveDomainAuthCodeRequest mocks base method
 func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeRequest(arg0 *route53domains.RetrieveDomainAuthCodeInput) (*request.Request, *route53domains.RetrieveDomainAuthCodeOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetrieveDomainAuthCodeRequest", arg0)
@@ -1259,14 +975,14 @@ func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeRequest(arg0 *route53domai
 	return ret0, ret1
 }
 
-// RetrieveDomainAuthCodeRequest indicates an expected call of RetrieveDomainAuthCodeRequest.
+// RetrieveDomainAuthCodeRequest indicates an expected call of RetrieveDomainAuthCodeRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) RetrieveDomainAuthCodeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveDomainAuthCodeRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RetrieveDomainAuthCodeRequest), arg0)
 }
 
-// RetrieveDomainAuthCodeWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeWithContext(arg0 context.Context, arg1 *route53domains.RetrieveDomainAuthCodeInput, arg2 ...request.Option) (*route53domains.RetrieveDomainAuthCodeOutput, error) {
+// RetrieveDomainAuthCodeWithContext mocks base method
+func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeWithContext(arg0 aws.Context, arg1 *route53domains.RetrieveDomainAuthCodeInput, arg2 ...request.Option) (*route53domains.RetrieveDomainAuthCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1278,14 +994,14 @@ func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// RetrieveDomainAuthCodeWithContext indicates an expected call of RetrieveDomainAuthCodeWithContext.
+// RetrieveDomainAuthCodeWithContext indicates an expected call of RetrieveDomainAuthCodeWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) RetrieveDomainAuthCodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveDomainAuthCodeWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RetrieveDomainAuthCodeWithContext), varargs...)
 }
 
-// TransferDomain mocks base method.
+// TransferDomain mocks base method
 func (m *MockRoute53DomainsAPI) TransferDomain(arg0 *route53domains.TransferDomainInput) (*route53domains.TransferDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TransferDomain", arg0)
@@ -1294,13 +1010,13 @@ func (m *MockRoute53DomainsAPI) TransferDomain(arg0 *route53domains.TransferDoma
 	return ret0, ret1
 }
 
-// TransferDomain indicates an expected call of TransferDomain.
+// TransferDomain indicates an expected call of TransferDomain
 func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomain), arg0)
 }
 
-// TransferDomainRequest mocks base method.
+// TransferDomainRequest mocks base method
 func (m *MockRoute53DomainsAPI) TransferDomainRequest(arg0 *route53domains.TransferDomainInput) (*request.Request, *route53domains.TransferDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TransferDomainRequest", arg0)
@@ -1309,64 +1025,14 @@ func (m *MockRoute53DomainsAPI) TransferDomainRequest(arg0 *route53domains.Trans
 	return ret0, ret1
 }
 
-// TransferDomainRequest indicates an expected call of TransferDomainRequest.
+// TransferDomainRequest indicates an expected call of TransferDomainRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainRequest), arg0)
 }
 
-// TransferDomainToAnotherAwsAccount mocks base method.
-func (m *MockRoute53DomainsAPI) TransferDomainToAnotherAwsAccount(arg0 *route53domains.TransferDomainToAnotherAwsAccountInput) (*route53domains.TransferDomainToAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TransferDomainToAnotherAwsAccount", arg0)
-	ret0, _ := ret[0].(*route53domains.TransferDomainToAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TransferDomainToAnotherAwsAccount indicates an expected call of TransferDomainToAnotherAwsAccount.
-func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainToAnotherAwsAccount(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainToAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainToAnotherAwsAccount), arg0)
-}
-
-// TransferDomainToAnotherAwsAccountRequest mocks base method.
-func (m *MockRoute53DomainsAPI) TransferDomainToAnotherAwsAccountRequest(arg0 *route53domains.TransferDomainToAnotherAwsAccountInput) (*request.Request, *route53domains.TransferDomainToAnotherAwsAccountOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TransferDomainToAnotherAwsAccountRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*route53domains.TransferDomainToAnotherAwsAccountOutput)
-	return ret0, ret1
-}
-
-// TransferDomainToAnotherAwsAccountRequest indicates an expected call of TransferDomainToAnotherAwsAccountRequest.
-func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainToAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainToAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainToAnotherAwsAccountRequest), arg0)
-}
-
-// TransferDomainToAnotherAwsAccountWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) TransferDomainToAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.TransferDomainToAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.TransferDomainToAnotherAwsAccountOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TransferDomainToAnotherAwsAccountWithContext", varargs...)
-	ret0, _ := ret[0].(*route53domains.TransferDomainToAnotherAwsAccountOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TransferDomainToAnotherAwsAccountWithContext indicates an expected call of TransferDomainToAnotherAwsAccountWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainToAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainToAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainToAnotherAwsAccountWithContext), varargs...)
-}
-
-// TransferDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) TransferDomainWithContext(arg0 context.Context, arg1 *route53domains.TransferDomainInput, arg2 ...request.Option) (*route53domains.TransferDomainOutput, error) {
+// TransferDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) TransferDomainWithContext(arg0 aws.Context, arg1 *route53domains.TransferDomainInput, arg2 ...request.Option) (*route53domains.TransferDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1378,14 +1044,14 @@ func (m *MockRoute53DomainsAPI) TransferDomainWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// TransferDomainWithContext indicates an expected call of TransferDomainWithContext.
+// TransferDomainWithContext indicates an expected call of TransferDomainWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainWithContext), varargs...)
 }
 
-// UpdateDomainContact mocks base method.
+// UpdateDomainContact mocks base method
 func (m *MockRoute53DomainsAPI) UpdateDomainContact(arg0 *route53domains.UpdateDomainContactInput) (*route53domains.UpdateDomainContactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainContact", arg0)
@@ -1394,13 +1060,13 @@ func (m *MockRoute53DomainsAPI) UpdateDomainContact(arg0 *route53domains.UpdateD
 	return ret0, ret1
 }
 
-// UpdateDomainContact indicates an expected call of UpdateDomainContact.
+// UpdateDomainContact indicates an expected call of UpdateDomainContact
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainContact", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainContact), arg0)
 }
 
-// UpdateDomainContactPrivacy mocks base method.
+// UpdateDomainContactPrivacy mocks base method
 func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacy(arg0 *route53domains.UpdateDomainContactPrivacyInput) (*route53domains.UpdateDomainContactPrivacyOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainContactPrivacy", arg0)
@@ -1409,13 +1075,13 @@ func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacy(arg0 *route53domains.
 	return ret0, ret1
 }
 
-// UpdateDomainContactPrivacy indicates an expected call of UpdateDomainContactPrivacy.
+// UpdateDomainContactPrivacy indicates an expected call of UpdateDomainContactPrivacy
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactPrivacy(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainContactPrivacy", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainContactPrivacy), arg0)
 }
 
-// UpdateDomainContactPrivacyRequest mocks base method.
+// UpdateDomainContactPrivacyRequest mocks base method
 func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyRequest(arg0 *route53domains.UpdateDomainContactPrivacyInput) (*request.Request, *route53domains.UpdateDomainContactPrivacyOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainContactPrivacyRequest", arg0)
@@ -1424,14 +1090,14 @@ func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyRequest(arg0 *route53d
 	return ret0, ret1
 }
 
-// UpdateDomainContactPrivacyRequest indicates an expected call of UpdateDomainContactPrivacyRequest.
+// UpdateDomainContactPrivacyRequest indicates an expected call of UpdateDomainContactPrivacyRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactPrivacyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainContactPrivacyRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainContactPrivacyRequest), arg0)
 }
 
-// UpdateDomainContactPrivacyWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyWithContext(arg0 context.Context, arg1 *route53domains.UpdateDomainContactPrivacyInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactPrivacyOutput, error) {
+// UpdateDomainContactPrivacyWithContext mocks base method
+func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyWithContext(arg0 aws.Context, arg1 *route53domains.UpdateDomainContactPrivacyInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactPrivacyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1443,14 +1109,14 @@ func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyWithContext(arg0 conte
 	return ret0, ret1
 }
 
-// UpdateDomainContactPrivacyWithContext indicates an expected call of UpdateDomainContactPrivacyWithContext.
+// UpdateDomainContactPrivacyWithContext indicates an expected call of UpdateDomainContactPrivacyWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactPrivacyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainContactPrivacyWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainContactPrivacyWithContext), varargs...)
 }
 
-// UpdateDomainContactRequest mocks base method.
+// UpdateDomainContactRequest mocks base method
 func (m *MockRoute53DomainsAPI) UpdateDomainContactRequest(arg0 *route53domains.UpdateDomainContactInput) (*request.Request, *route53domains.UpdateDomainContactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainContactRequest", arg0)
@@ -1459,14 +1125,14 @@ func (m *MockRoute53DomainsAPI) UpdateDomainContactRequest(arg0 *route53domains.
 	return ret0, ret1
 }
 
-// UpdateDomainContactRequest indicates an expected call of UpdateDomainContactRequest.
+// UpdateDomainContactRequest indicates an expected call of UpdateDomainContactRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainContactRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainContactRequest), arg0)
 }
 
-// UpdateDomainContactWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) UpdateDomainContactWithContext(arg0 context.Context, arg1 *route53domains.UpdateDomainContactInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactOutput, error) {
+// UpdateDomainContactWithContext mocks base method
+func (m *MockRoute53DomainsAPI) UpdateDomainContactWithContext(arg0 aws.Context, arg1 *route53domains.UpdateDomainContactInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1478,14 +1144,14 @@ func (m *MockRoute53DomainsAPI) UpdateDomainContactWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateDomainContactWithContext indicates an expected call of UpdateDomainContactWithContext.
+// UpdateDomainContactWithContext indicates an expected call of UpdateDomainContactWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainContactWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainContactWithContext), varargs...)
 }
 
-// UpdateDomainNameservers mocks base method.
+// UpdateDomainNameservers mocks base method
 func (m *MockRoute53DomainsAPI) UpdateDomainNameservers(arg0 *route53domains.UpdateDomainNameserversInput) (*route53domains.UpdateDomainNameserversOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainNameservers", arg0)
@@ -1494,13 +1160,13 @@ func (m *MockRoute53DomainsAPI) UpdateDomainNameservers(arg0 *route53domains.Upd
 	return ret0, ret1
 }
 
-// UpdateDomainNameservers indicates an expected call of UpdateDomainNameservers.
+// UpdateDomainNameservers indicates an expected call of UpdateDomainNameservers
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainNameservers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameservers", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainNameservers), arg0)
 }
 
-// UpdateDomainNameserversRequest mocks base method.
+// UpdateDomainNameserversRequest mocks base method
 func (m *MockRoute53DomainsAPI) UpdateDomainNameserversRequest(arg0 *route53domains.UpdateDomainNameserversInput) (*request.Request, *route53domains.UpdateDomainNameserversOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateDomainNameserversRequest", arg0)
@@ -1509,14 +1175,14 @@ func (m *MockRoute53DomainsAPI) UpdateDomainNameserversRequest(arg0 *route53doma
 	return ret0, ret1
 }
 
-// UpdateDomainNameserversRequest indicates an expected call of UpdateDomainNameserversRequest.
+// UpdateDomainNameserversRequest indicates an expected call of UpdateDomainNameserversRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainNameserversRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameserversRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainNameserversRequest), arg0)
 }
 
-// UpdateDomainNameserversWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) UpdateDomainNameserversWithContext(arg0 context.Context, arg1 *route53domains.UpdateDomainNameserversInput, arg2 ...request.Option) (*route53domains.UpdateDomainNameserversOutput, error) {
+// UpdateDomainNameserversWithContext mocks base method
+func (m *MockRoute53DomainsAPI) UpdateDomainNameserversWithContext(arg0 aws.Context, arg1 *route53domains.UpdateDomainNameserversInput, arg2 ...request.Option) (*route53domains.UpdateDomainNameserversOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1528,14 +1194,14 @@ func (m *MockRoute53DomainsAPI) UpdateDomainNameserversWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// UpdateDomainNameserversWithContext indicates an expected call of UpdateDomainNameserversWithContext.
+// UpdateDomainNameserversWithContext indicates an expected call of UpdateDomainNameserversWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainNameserversWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameserversWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateDomainNameserversWithContext), varargs...)
 }
 
-// UpdateTagsForDomain mocks base method.
+// UpdateTagsForDomain mocks base method
 func (m *MockRoute53DomainsAPI) UpdateTagsForDomain(arg0 *route53domains.UpdateTagsForDomainInput) (*route53domains.UpdateTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTagsForDomain", arg0)
@@ -1544,13 +1210,13 @@ func (m *MockRoute53DomainsAPI) UpdateTagsForDomain(arg0 *route53domains.UpdateT
 	return ret0, ret1
 }
 
-// UpdateTagsForDomain indicates an expected call of UpdateTagsForDomain.
+// UpdateTagsForDomain indicates an expected call of UpdateTagsForDomain
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateTagsForDomain(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTagsForDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateTagsForDomain), arg0)
 }
 
-// UpdateTagsForDomainRequest mocks base method.
+// UpdateTagsForDomainRequest mocks base method
 func (m *MockRoute53DomainsAPI) UpdateTagsForDomainRequest(arg0 *route53domains.UpdateTagsForDomainInput) (*request.Request, *route53domains.UpdateTagsForDomainOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateTagsForDomainRequest", arg0)
@@ -1559,14 +1225,14 @@ func (m *MockRoute53DomainsAPI) UpdateTagsForDomainRequest(arg0 *route53domains.
 	return ret0, ret1
 }
 
-// UpdateTagsForDomainRequest indicates an expected call of UpdateTagsForDomainRequest.
+// UpdateTagsForDomainRequest indicates an expected call of UpdateTagsForDomainRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateTagsForDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTagsForDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateTagsForDomainRequest), arg0)
 }
 
-// UpdateTagsForDomainWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) UpdateTagsForDomainWithContext(arg0 context.Context, arg1 *route53domains.UpdateTagsForDomainInput, arg2 ...request.Option) (*route53domains.UpdateTagsForDomainOutput, error) {
+// UpdateTagsForDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) UpdateTagsForDomainWithContext(arg0 aws.Context, arg1 *route53domains.UpdateTagsForDomainInput, arg2 ...request.Option) (*route53domains.UpdateTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1578,14 +1244,14 @@ func (m *MockRoute53DomainsAPI) UpdateTagsForDomainWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateTagsForDomainWithContext indicates an expected call of UpdateTagsForDomainWithContext.
+// UpdateTagsForDomainWithContext indicates an expected call of UpdateTagsForDomainWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) UpdateTagsForDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTagsForDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).UpdateTagsForDomainWithContext), varargs...)
 }
 
-// ViewBilling mocks base method.
+// ViewBilling mocks base method
 func (m *MockRoute53DomainsAPI) ViewBilling(arg0 *route53domains.ViewBillingInput) (*route53domains.ViewBillingOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ViewBilling", arg0)
@@ -1594,46 +1260,13 @@ func (m *MockRoute53DomainsAPI) ViewBilling(arg0 *route53domains.ViewBillingInpu
 	return ret0, ret1
 }
 
-// ViewBilling indicates an expected call of ViewBilling.
+// ViewBilling indicates an expected call of ViewBilling
 func (mr *MockRoute53DomainsAPIMockRecorder) ViewBilling(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBilling", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBilling), arg0)
 }
 
-// ViewBillingPages mocks base method.
-func (m *MockRoute53DomainsAPI) ViewBillingPages(arg0 *route53domains.ViewBillingInput, arg1 func(*route53domains.ViewBillingOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ViewBillingPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ViewBillingPages indicates an expected call of ViewBillingPages.
-func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBillingPages", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBillingPages), arg0, arg1)
-}
-
-// ViewBillingPagesWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ViewBillingPagesWithContext(arg0 context.Context, arg1 *route53domains.ViewBillingInput, arg2 func(*route53domains.ViewBillingOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ViewBillingPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ViewBillingPagesWithContext indicates an expected call of ViewBillingPagesWithContext.
-func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBillingPagesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBillingPagesWithContext), varargs...)
-}
-
-// ViewBillingRequest mocks base method.
+// ViewBillingRequest mocks base method
 func (m *MockRoute53DomainsAPI) ViewBillingRequest(arg0 *route53domains.ViewBillingInput) (*request.Request, *route53domains.ViewBillingOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ViewBillingRequest", arg0)
@@ -1642,14 +1275,14 @@ func (m *MockRoute53DomainsAPI) ViewBillingRequest(arg0 *route53domains.ViewBill
 	return ret0, ret1
 }
 
-// ViewBillingRequest indicates an expected call of ViewBillingRequest.
+// ViewBillingRequest indicates an expected call of ViewBillingRequest
 func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBillingRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBillingRequest), arg0)
 }
 
-// ViewBillingWithContext mocks base method.
-func (m *MockRoute53DomainsAPI) ViewBillingWithContext(arg0 context.Context, arg1 *route53domains.ViewBillingInput, arg2 ...request.Option) (*route53domains.ViewBillingOutput, error) {
+// ViewBillingWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ViewBillingWithContext(arg0 aws.Context, arg1 *route53domains.ViewBillingInput, arg2 ...request.Option) (*route53domains.ViewBillingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1661,7 +1294,7 @@ func (m *MockRoute53DomainsAPI) ViewBillingWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// ViewBillingWithContext indicates an expected call of ViewBillingWithContext.
+// ViewBillingWithContext indicates an expected call of ViewBillingWithContext
 func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

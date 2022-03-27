@@ -5,38 +5,37 @@
 package cloud9mock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloud9 "github.com/aws/aws-sdk-go/service/cloud9"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockCloud9API is a mock of Cloud9API interface.
+// MockCloud9API is a mock of Cloud9API interface
 type MockCloud9API struct {
 	ctrl     *gomock.Controller
 	recorder *MockCloud9APIMockRecorder
 }
 
-// MockCloud9APIMockRecorder is the mock recorder for MockCloud9API.
+// MockCloud9APIMockRecorder is the mock recorder for MockCloud9API
 type MockCloud9APIMockRecorder struct {
 	mock *MockCloud9API
 }
 
-// NewMockCloud9API creates a new mock instance.
+// NewMockCloud9API creates a new mock instance
 func NewMockCloud9API(ctrl *gomock.Controller) *MockCloud9API {
 	mock := &MockCloud9API{ctrl: ctrl}
 	mock.recorder = &MockCloud9APIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockCloud9API) EXPECT() *MockCloud9APIMockRecorder {
 	return m.recorder
 }
 
-// CreateEnvironmentEC2 mocks base method.
+// CreateEnvironmentEC2 mocks base method
 func (m *MockCloud9API) CreateEnvironmentEC2(arg0 *cloud9.CreateEnvironmentEC2Input) (*cloud9.CreateEnvironmentEC2Output, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEnvironmentEC2", arg0)
@@ -45,13 +44,13 @@ func (m *MockCloud9API) CreateEnvironmentEC2(arg0 *cloud9.CreateEnvironmentEC2In
 	return ret0, ret1
 }
 
-// CreateEnvironmentEC2 indicates an expected call of CreateEnvironmentEC2.
+// CreateEnvironmentEC2 indicates an expected call of CreateEnvironmentEC2
 func (mr *MockCloud9APIMockRecorder) CreateEnvironmentEC2(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentEC2", reflect.TypeOf((*MockCloud9API)(nil).CreateEnvironmentEC2), arg0)
 }
 
-// CreateEnvironmentEC2Request mocks base method.
+// CreateEnvironmentEC2Request mocks base method
 func (m *MockCloud9API) CreateEnvironmentEC2Request(arg0 *cloud9.CreateEnvironmentEC2Input) (*request.Request, *cloud9.CreateEnvironmentEC2Output) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEnvironmentEC2Request", arg0)
@@ -60,14 +59,14 @@ func (m *MockCloud9API) CreateEnvironmentEC2Request(arg0 *cloud9.CreateEnvironme
 	return ret0, ret1
 }
 
-// CreateEnvironmentEC2Request indicates an expected call of CreateEnvironmentEC2Request.
+// CreateEnvironmentEC2Request indicates an expected call of CreateEnvironmentEC2Request
 func (mr *MockCloud9APIMockRecorder) CreateEnvironmentEC2Request(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentEC2Request", reflect.TypeOf((*MockCloud9API)(nil).CreateEnvironmentEC2Request), arg0)
 }
 
-// CreateEnvironmentEC2WithContext mocks base method.
-func (m *MockCloud9API) CreateEnvironmentEC2WithContext(arg0 context.Context, arg1 *cloud9.CreateEnvironmentEC2Input, arg2 ...request.Option) (*cloud9.CreateEnvironmentEC2Output, error) {
+// CreateEnvironmentEC2WithContext mocks base method
+func (m *MockCloud9API) CreateEnvironmentEC2WithContext(arg0 aws.Context, arg1 *cloud9.CreateEnvironmentEC2Input, arg2 ...request.Option) (*cloud9.CreateEnvironmentEC2Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockCloud9API) CreateEnvironmentEC2WithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateEnvironmentEC2WithContext indicates an expected call of CreateEnvironmentEC2WithContext.
+// CreateEnvironmentEC2WithContext indicates an expected call of CreateEnvironmentEC2WithContext
 func (mr *MockCloud9APIMockRecorder) CreateEnvironmentEC2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentEC2WithContext", reflect.TypeOf((*MockCloud9API)(nil).CreateEnvironmentEC2WithContext), varargs...)
 }
 
-// CreateEnvironmentMembership mocks base method.
+// CreateEnvironmentMembership mocks base method
 func (m *MockCloud9API) CreateEnvironmentMembership(arg0 *cloud9.CreateEnvironmentMembershipInput) (*cloud9.CreateEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEnvironmentMembership", arg0)
@@ -95,13 +94,13 @@ func (m *MockCloud9API) CreateEnvironmentMembership(arg0 *cloud9.CreateEnvironme
 	return ret0, ret1
 }
 
-// CreateEnvironmentMembership indicates an expected call of CreateEnvironmentMembership.
+// CreateEnvironmentMembership indicates an expected call of CreateEnvironmentMembership
 func (mr *MockCloud9APIMockRecorder) CreateEnvironmentMembership(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentMembership", reflect.TypeOf((*MockCloud9API)(nil).CreateEnvironmentMembership), arg0)
 }
 
-// CreateEnvironmentMembershipRequest mocks base method.
+// CreateEnvironmentMembershipRequest mocks base method
 func (m *MockCloud9API) CreateEnvironmentMembershipRequest(arg0 *cloud9.CreateEnvironmentMembershipInput) (*request.Request, *cloud9.CreateEnvironmentMembershipOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEnvironmentMembershipRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockCloud9API) CreateEnvironmentMembershipRequest(arg0 *cloud9.CreateEn
 	return ret0, ret1
 }
 
-// CreateEnvironmentMembershipRequest indicates an expected call of CreateEnvironmentMembershipRequest.
+// CreateEnvironmentMembershipRequest indicates an expected call of CreateEnvironmentMembershipRequest
 func (mr *MockCloud9APIMockRecorder) CreateEnvironmentMembershipRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentMembershipRequest", reflect.TypeOf((*MockCloud9API)(nil).CreateEnvironmentMembershipRequest), arg0)
 }
 
-// CreateEnvironmentMembershipWithContext mocks base method.
-func (m *MockCloud9API) CreateEnvironmentMembershipWithContext(arg0 context.Context, arg1 *cloud9.CreateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.CreateEnvironmentMembershipOutput, error) {
+// CreateEnvironmentMembershipWithContext mocks base method
+func (m *MockCloud9API) CreateEnvironmentMembershipWithContext(arg0 aws.Context, arg1 *cloud9.CreateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.CreateEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockCloud9API) CreateEnvironmentMembershipWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// CreateEnvironmentMembershipWithContext indicates an expected call of CreateEnvironmentMembershipWithContext.
+// CreateEnvironmentMembershipWithContext indicates an expected call of CreateEnvironmentMembershipWithContext
 func (mr *MockCloud9APIMockRecorder) CreateEnvironmentMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentMembershipWithContext", reflect.TypeOf((*MockCloud9API)(nil).CreateEnvironmentMembershipWithContext), varargs...)
 }
 
-// DeleteEnvironment mocks base method.
+// DeleteEnvironment mocks base method
 func (m *MockCloud9API) DeleteEnvironment(arg0 *cloud9.DeleteEnvironmentInput) (*cloud9.DeleteEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEnvironment", arg0)
@@ -145,13 +144,13 @@ func (m *MockCloud9API) DeleteEnvironment(arg0 *cloud9.DeleteEnvironmentInput) (
 	return ret0, ret1
 }
 
-// DeleteEnvironment indicates an expected call of DeleteEnvironment.
+// DeleteEnvironment indicates an expected call of DeleteEnvironment
 func (mr *MockCloud9APIMockRecorder) DeleteEnvironment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironment", reflect.TypeOf((*MockCloud9API)(nil).DeleteEnvironment), arg0)
 }
 
-// DeleteEnvironmentMembership mocks base method.
+// DeleteEnvironmentMembership mocks base method
 func (m *MockCloud9API) DeleteEnvironmentMembership(arg0 *cloud9.DeleteEnvironmentMembershipInput) (*cloud9.DeleteEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEnvironmentMembership", arg0)
@@ -160,13 +159,13 @@ func (m *MockCloud9API) DeleteEnvironmentMembership(arg0 *cloud9.DeleteEnvironme
 	return ret0, ret1
 }
 
-// DeleteEnvironmentMembership indicates an expected call of DeleteEnvironmentMembership.
+// DeleteEnvironmentMembership indicates an expected call of DeleteEnvironmentMembership
 func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentMembership(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentMembership", reflect.TypeOf((*MockCloud9API)(nil).DeleteEnvironmentMembership), arg0)
 }
 
-// DeleteEnvironmentMembershipRequest mocks base method.
+// DeleteEnvironmentMembershipRequest mocks base method
 func (m *MockCloud9API) DeleteEnvironmentMembershipRequest(arg0 *cloud9.DeleteEnvironmentMembershipInput) (*request.Request, *cloud9.DeleteEnvironmentMembershipOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEnvironmentMembershipRequest", arg0)
@@ -175,14 +174,14 @@ func (m *MockCloud9API) DeleteEnvironmentMembershipRequest(arg0 *cloud9.DeleteEn
 	return ret0, ret1
 }
 
-// DeleteEnvironmentMembershipRequest indicates an expected call of DeleteEnvironmentMembershipRequest.
+// DeleteEnvironmentMembershipRequest indicates an expected call of DeleteEnvironmentMembershipRequest
 func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentMembershipRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentMembershipRequest", reflect.TypeOf((*MockCloud9API)(nil).DeleteEnvironmentMembershipRequest), arg0)
 }
 
-// DeleteEnvironmentMembershipWithContext mocks base method.
-func (m *MockCloud9API) DeleteEnvironmentMembershipWithContext(arg0 context.Context, arg1 *cloud9.DeleteEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentMembershipOutput, error) {
+// DeleteEnvironmentMembershipWithContext mocks base method
+func (m *MockCloud9API) DeleteEnvironmentMembershipWithContext(arg0 aws.Context, arg1 *cloud9.DeleteEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -194,14 +193,14 @@ func (m *MockCloud9API) DeleteEnvironmentMembershipWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DeleteEnvironmentMembershipWithContext indicates an expected call of DeleteEnvironmentMembershipWithContext.
+// DeleteEnvironmentMembershipWithContext indicates an expected call of DeleteEnvironmentMembershipWithContext
 func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentMembershipWithContext", reflect.TypeOf((*MockCloud9API)(nil).DeleteEnvironmentMembershipWithContext), varargs...)
 }
 
-// DeleteEnvironmentRequest mocks base method.
+// DeleteEnvironmentRequest mocks base method
 func (m *MockCloud9API) DeleteEnvironmentRequest(arg0 *cloud9.DeleteEnvironmentInput) (*request.Request, *cloud9.DeleteEnvironmentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEnvironmentRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockCloud9API) DeleteEnvironmentRequest(arg0 *cloud9.DeleteEnvironmentI
 	return ret0, ret1
 }
 
-// DeleteEnvironmentRequest indicates an expected call of DeleteEnvironmentRequest.
+// DeleteEnvironmentRequest indicates an expected call of DeleteEnvironmentRequest
 func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentRequest", reflect.TypeOf((*MockCloud9API)(nil).DeleteEnvironmentRequest), arg0)
 }
 
-// DeleteEnvironmentWithContext mocks base method.
-func (m *MockCloud9API) DeleteEnvironmentWithContext(arg0 context.Context, arg1 *cloud9.DeleteEnvironmentInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentOutput, error) {
+// DeleteEnvironmentWithContext mocks base method
+func (m *MockCloud9API) DeleteEnvironmentWithContext(arg0 aws.Context, arg1 *cloud9.DeleteEnvironmentInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockCloud9API) DeleteEnvironmentWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteEnvironmentWithContext indicates an expected call of DeleteEnvironmentWithContext.
+// DeleteEnvironmentWithContext indicates an expected call of DeleteEnvironmentWithContext
 func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentWithContext", reflect.TypeOf((*MockCloud9API)(nil).DeleteEnvironmentWithContext), varargs...)
 }
 
-// DescribeEnvironmentMemberships mocks base method.
+// DescribeEnvironmentMemberships mocks base method
 func (m *MockCloud9API) DescribeEnvironmentMemberships(arg0 *cloud9.DescribeEnvironmentMembershipsInput) (*cloud9.DescribeEnvironmentMembershipsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentMemberships", arg0)
@@ -245,13 +244,13 @@ func (m *MockCloud9API) DescribeEnvironmentMemberships(arg0 *cloud9.DescribeEnvi
 	return ret0, ret1
 }
 
-// DescribeEnvironmentMemberships indicates an expected call of DescribeEnvironmentMemberships.
+// DescribeEnvironmentMemberships indicates an expected call of DescribeEnvironmentMemberships
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMemberships(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentMemberships", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentMemberships), arg0)
 }
 
-// DescribeEnvironmentMembershipsPages mocks base method.
+// DescribeEnvironmentMembershipsPages mocks base method
 func (m *MockCloud9API) DescribeEnvironmentMembershipsPages(arg0 *cloud9.DescribeEnvironmentMembershipsInput, arg1 func(*cloud9.DescribeEnvironmentMembershipsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentMembershipsPages", arg0, arg1)
@@ -259,14 +258,14 @@ func (m *MockCloud9API) DescribeEnvironmentMembershipsPages(arg0 *cloud9.Describ
 	return ret0
 }
 
-// DescribeEnvironmentMembershipsPages indicates an expected call of DescribeEnvironmentMembershipsPages.
+// DescribeEnvironmentMembershipsPages indicates an expected call of DescribeEnvironmentMembershipsPages
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMembershipsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentMembershipsPages", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentMembershipsPages), arg0, arg1)
 }
 
-// DescribeEnvironmentMembershipsPagesWithContext mocks base method.
-func (m *MockCloud9API) DescribeEnvironmentMembershipsPagesWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 func(*cloud9.DescribeEnvironmentMembershipsOutput, bool) bool, arg3 ...request.Option) error {
+// DescribeEnvironmentMembershipsPagesWithContext mocks base method
+func (m *MockCloud9API) DescribeEnvironmentMembershipsPagesWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 func(*cloud9.DescribeEnvironmentMembershipsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -277,14 +276,14 @@ func (m *MockCloud9API) DescribeEnvironmentMembershipsPagesWithContext(arg0 cont
 	return ret0
 }
 
-// DescribeEnvironmentMembershipsPagesWithContext indicates an expected call of DescribeEnvironmentMembershipsPagesWithContext.
+// DescribeEnvironmentMembershipsPagesWithContext indicates an expected call of DescribeEnvironmentMembershipsPagesWithContext
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMembershipsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentMembershipsPagesWithContext", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentMembershipsPagesWithContext), varargs...)
 }
 
-// DescribeEnvironmentMembershipsRequest mocks base method.
+// DescribeEnvironmentMembershipsRequest mocks base method
 func (m *MockCloud9API) DescribeEnvironmentMembershipsRequest(arg0 *cloud9.DescribeEnvironmentMembershipsInput) (*request.Request, *cloud9.DescribeEnvironmentMembershipsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentMembershipsRequest", arg0)
@@ -293,14 +292,14 @@ func (m *MockCloud9API) DescribeEnvironmentMembershipsRequest(arg0 *cloud9.Descr
 	return ret0, ret1
 }
 
-// DescribeEnvironmentMembershipsRequest indicates an expected call of DescribeEnvironmentMembershipsRequest.
+// DescribeEnvironmentMembershipsRequest indicates an expected call of DescribeEnvironmentMembershipsRequest
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMembershipsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentMembershipsRequest", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentMembershipsRequest), arg0)
 }
 
-// DescribeEnvironmentMembershipsWithContext mocks base method.
-func (m *MockCloud9API) DescribeEnvironmentMembershipsWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentMembershipsOutput, error) {
+// DescribeEnvironmentMembershipsWithContext mocks base method
+func (m *MockCloud9API) DescribeEnvironmentMembershipsWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentMembershipsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -312,14 +311,14 @@ func (m *MockCloud9API) DescribeEnvironmentMembershipsWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DescribeEnvironmentMembershipsWithContext indicates an expected call of DescribeEnvironmentMembershipsWithContext.
+// DescribeEnvironmentMembershipsWithContext indicates an expected call of DescribeEnvironmentMembershipsWithContext
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMembershipsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentMembershipsWithContext", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentMembershipsWithContext), varargs...)
 }
 
-// DescribeEnvironmentStatus mocks base method.
+// DescribeEnvironmentStatus mocks base method
 func (m *MockCloud9API) DescribeEnvironmentStatus(arg0 *cloud9.DescribeEnvironmentStatusInput) (*cloud9.DescribeEnvironmentStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentStatus", arg0)
@@ -328,13 +327,13 @@ func (m *MockCloud9API) DescribeEnvironmentStatus(arg0 *cloud9.DescribeEnvironme
 	return ret0, ret1
 }
 
-// DescribeEnvironmentStatus indicates an expected call of DescribeEnvironmentStatus.
+// DescribeEnvironmentStatus indicates an expected call of DescribeEnvironmentStatus
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentStatus", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentStatus), arg0)
 }
 
-// DescribeEnvironmentStatusRequest mocks base method.
+// DescribeEnvironmentStatusRequest mocks base method
 func (m *MockCloud9API) DescribeEnvironmentStatusRequest(arg0 *cloud9.DescribeEnvironmentStatusInput) (*request.Request, *cloud9.DescribeEnvironmentStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentStatusRequest", arg0)
@@ -343,14 +342,14 @@ func (m *MockCloud9API) DescribeEnvironmentStatusRequest(arg0 *cloud9.DescribeEn
 	return ret0, ret1
 }
 
-// DescribeEnvironmentStatusRequest indicates an expected call of DescribeEnvironmentStatusRequest.
+// DescribeEnvironmentStatusRequest indicates an expected call of DescribeEnvironmentStatusRequest
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentStatusRequest", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentStatusRequest), arg0)
 }
 
-// DescribeEnvironmentStatusWithContext mocks base method.
-func (m *MockCloud9API) DescribeEnvironmentStatusWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentStatusInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentStatusOutput, error) {
+// DescribeEnvironmentStatusWithContext mocks base method
+func (m *MockCloud9API) DescribeEnvironmentStatusWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentStatusInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -362,14 +361,14 @@ func (m *MockCloud9API) DescribeEnvironmentStatusWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DescribeEnvironmentStatusWithContext indicates an expected call of DescribeEnvironmentStatusWithContext.
+// DescribeEnvironmentStatusWithContext indicates an expected call of DescribeEnvironmentStatusWithContext
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentStatusWithContext", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentStatusWithContext), varargs...)
 }
 
-// DescribeEnvironments mocks base method.
+// DescribeEnvironments mocks base method
 func (m *MockCloud9API) DescribeEnvironments(arg0 *cloud9.DescribeEnvironmentsInput) (*cloud9.DescribeEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironments", arg0)
@@ -378,13 +377,13 @@ func (m *MockCloud9API) DescribeEnvironments(arg0 *cloud9.DescribeEnvironmentsIn
 	return ret0, ret1
 }
 
-// DescribeEnvironments indicates an expected call of DescribeEnvironments.
+// DescribeEnvironments indicates an expected call of DescribeEnvironments
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironments", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironments), arg0)
 }
 
-// DescribeEnvironmentsRequest mocks base method.
+// DescribeEnvironmentsRequest mocks base method
 func (m *MockCloud9API) DescribeEnvironmentsRequest(arg0 *cloud9.DescribeEnvironmentsInput) (*request.Request, *cloud9.DescribeEnvironmentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEnvironmentsRequest", arg0)
@@ -393,14 +392,14 @@ func (m *MockCloud9API) DescribeEnvironmentsRequest(arg0 *cloud9.DescribeEnviron
 	return ret0, ret1
 }
 
-// DescribeEnvironmentsRequest indicates an expected call of DescribeEnvironmentsRequest.
+// DescribeEnvironmentsRequest indicates an expected call of DescribeEnvironmentsRequest
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentsRequest", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentsRequest), arg0)
 }
 
-// DescribeEnvironmentsWithContext mocks base method.
-func (m *MockCloud9API) DescribeEnvironmentsWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentsOutput, error) {
+// DescribeEnvironmentsWithContext mocks base method
+func (m *MockCloud9API) DescribeEnvironmentsWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -412,14 +411,14 @@ func (m *MockCloud9API) DescribeEnvironmentsWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DescribeEnvironmentsWithContext indicates an expected call of DescribeEnvironmentsWithContext.
+// DescribeEnvironmentsWithContext indicates an expected call of DescribeEnvironmentsWithContext
 func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEnvironmentsWithContext", reflect.TypeOf((*MockCloud9API)(nil).DescribeEnvironmentsWithContext), varargs...)
 }
 
-// ListEnvironments mocks base method.
+// ListEnvironments mocks base method
 func (m *MockCloud9API) ListEnvironments(arg0 *cloud9.ListEnvironmentsInput) (*cloud9.ListEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListEnvironments", arg0)
@@ -428,13 +427,13 @@ func (m *MockCloud9API) ListEnvironments(arg0 *cloud9.ListEnvironmentsInput) (*c
 	return ret0, ret1
 }
 
-// ListEnvironments indicates an expected call of ListEnvironments.
+// ListEnvironments indicates an expected call of ListEnvironments
 func (mr *MockCloud9APIMockRecorder) ListEnvironments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironments", reflect.TypeOf((*MockCloud9API)(nil).ListEnvironments), arg0)
 }
 
-// ListEnvironmentsPages mocks base method.
+// ListEnvironmentsPages mocks base method
 func (m *MockCloud9API) ListEnvironmentsPages(arg0 *cloud9.ListEnvironmentsInput, arg1 func(*cloud9.ListEnvironmentsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListEnvironmentsPages", arg0, arg1)
@@ -442,14 +441,14 @@ func (m *MockCloud9API) ListEnvironmentsPages(arg0 *cloud9.ListEnvironmentsInput
 	return ret0
 }
 
-// ListEnvironmentsPages indicates an expected call of ListEnvironmentsPages.
+// ListEnvironmentsPages indicates an expected call of ListEnvironmentsPages
 func (mr *MockCloud9APIMockRecorder) ListEnvironmentsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsPages", reflect.TypeOf((*MockCloud9API)(nil).ListEnvironmentsPages), arg0, arg1)
 }
 
-// ListEnvironmentsPagesWithContext mocks base method.
-func (m *MockCloud9API) ListEnvironmentsPagesWithContext(arg0 context.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 func(*cloud9.ListEnvironmentsOutput, bool) bool, arg3 ...request.Option) error {
+// ListEnvironmentsPagesWithContext mocks base method
+func (m *MockCloud9API) ListEnvironmentsPagesWithContext(arg0 aws.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 func(*cloud9.ListEnvironmentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -460,14 +459,14 @@ func (m *MockCloud9API) ListEnvironmentsPagesWithContext(arg0 context.Context, a
 	return ret0
 }
 
-// ListEnvironmentsPagesWithContext indicates an expected call of ListEnvironmentsPagesWithContext.
+// ListEnvironmentsPagesWithContext indicates an expected call of ListEnvironmentsPagesWithContext
 func (mr *MockCloud9APIMockRecorder) ListEnvironmentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsPagesWithContext", reflect.TypeOf((*MockCloud9API)(nil).ListEnvironmentsPagesWithContext), varargs...)
 }
 
-// ListEnvironmentsRequest mocks base method.
+// ListEnvironmentsRequest mocks base method
 func (m *MockCloud9API) ListEnvironmentsRequest(arg0 *cloud9.ListEnvironmentsInput) (*request.Request, *cloud9.ListEnvironmentsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListEnvironmentsRequest", arg0)
@@ -476,14 +475,14 @@ func (m *MockCloud9API) ListEnvironmentsRequest(arg0 *cloud9.ListEnvironmentsInp
 	return ret0, ret1
 }
 
-// ListEnvironmentsRequest indicates an expected call of ListEnvironmentsRequest.
+// ListEnvironmentsRequest indicates an expected call of ListEnvironmentsRequest
 func (mr *MockCloud9APIMockRecorder) ListEnvironmentsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsRequest", reflect.TypeOf((*MockCloud9API)(nil).ListEnvironmentsRequest), arg0)
 }
 
-// ListEnvironmentsWithContext mocks base method.
-func (m *MockCloud9API) ListEnvironmentsWithContext(arg0 context.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 ...request.Option) (*cloud9.ListEnvironmentsOutput, error) {
+// ListEnvironmentsWithContext mocks base method
+func (m *MockCloud9API) ListEnvironmentsWithContext(arg0 aws.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 ...request.Option) (*cloud9.ListEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -495,164 +494,14 @@ func (m *MockCloud9API) ListEnvironmentsWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ListEnvironmentsWithContext indicates an expected call of ListEnvironmentsWithContext.
+// ListEnvironmentsWithContext indicates an expected call of ListEnvironmentsWithContext
 func (mr *MockCloud9APIMockRecorder) ListEnvironmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsWithContext", reflect.TypeOf((*MockCloud9API)(nil).ListEnvironmentsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
-func (m *MockCloud9API) ListTagsForResource(arg0 *cloud9.ListTagsForResourceInput) (*cloud9.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
-	ret0, _ := ret[0].(*cloud9.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResource indicates an expected call of ListTagsForResource.
-func (mr *MockCloud9APIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockCloud9API)(nil).ListTagsForResource), arg0)
-}
-
-// ListTagsForResourceRequest mocks base method.
-func (m *MockCloud9API) ListTagsForResourceRequest(arg0 *cloud9.ListTagsForResourceInput) (*request.Request, *cloud9.ListTagsForResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cloud9.ListTagsForResourceOutput)
-	return ret0, ret1
-}
-
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
-func (mr *MockCloud9APIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockCloud9API)(nil).ListTagsForResourceRequest), arg0)
-}
-
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockCloud9API) ListTagsForResourceWithContext(arg0 context.Context, arg1 *cloud9.ListTagsForResourceInput, arg2 ...request.Option) (*cloud9.ListTagsForResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*cloud9.ListTagsForResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
-func (mr *MockCloud9APIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCloud9API)(nil).ListTagsForResourceWithContext), varargs...)
-}
-
-// TagResource mocks base method.
-func (m *MockCloud9API) TagResource(arg0 *cloud9.TagResourceInput) (*cloud9.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResource", arg0)
-	ret0, _ := ret[0].(*cloud9.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResource indicates an expected call of TagResource.
-func (mr *MockCloud9APIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockCloud9API)(nil).TagResource), arg0)
-}
-
-// TagResourceRequest mocks base method.
-func (m *MockCloud9API) TagResourceRequest(arg0 *cloud9.TagResourceInput) (*request.Request, *cloud9.TagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cloud9.TagResourceOutput)
-	return ret0, ret1
-}
-
-// TagResourceRequest indicates an expected call of TagResourceRequest.
-func (mr *MockCloud9APIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockCloud9API)(nil).TagResourceRequest), arg0)
-}
-
-// TagResourceWithContext mocks base method.
-func (m *MockCloud9API) TagResourceWithContext(arg0 context.Context, arg1 *cloud9.TagResourceInput, arg2 ...request.Option) (*cloud9.TagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*cloud9.TagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
-func (mr *MockCloud9APIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockCloud9API)(nil).TagResourceWithContext), varargs...)
-}
-
-// UntagResource mocks base method.
-func (m *MockCloud9API) UntagResource(arg0 *cloud9.UntagResourceInput) (*cloud9.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResource", arg0)
-	ret0, _ := ret[0].(*cloud9.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResource indicates an expected call of UntagResource.
-func (mr *MockCloud9APIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockCloud9API)(nil).UntagResource), arg0)
-}
-
-// UntagResourceRequest mocks base method.
-func (m *MockCloud9API) UntagResourceRequest(arg0 *cloud9.UntagResourceInput) (*request.Request, *cloud9.UntagResourceOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*cloud9.UntagResourceOutput)
-	return ret0, ret1
-}
-
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
-func (mr *MockCloud9APIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockCloud9API)(nil).UntagResourceRequest), arg0)
-}
-
-// UntagResourceWithContext mocks base method.
-func (m *MockCloud9API) UntagResourceWithContext(arg0 context.Context, arg1 *cloud9.UntagResourceInput, arg2 ...request.Option) (*cloud9.UntagResourceOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
-	ret0, _ := ret[0].(*cloud9.UntagResourceOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
-func (mr *MockCloud9APIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCloud9API)(nil).UntagResourceWithContext), varargs...)
-}
-
-// UpdateEnvironment mocks base method.
+// UpdateEnvironment mocks base method
 func (m *MockCloud9API) UpdateEnvironment(arg0 *cloud9.UpdateEnvironmentInput) (*cloud9.UpdateEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEnvironment", arg0)
@@ -661,13 +510,13 @@ func (m *MockCloud9API) UpdateEnvironment(arg0 *cloud9.UpdateEnvironmentInput) (
 	return ret0, ret1
 }
 
-// UpdateEnvironment indicates an expected call of UpdateEnvironment.
+// UpdateEnvironment indicates an expected call of UpdateEnvironment
 func (mr *MockCloud9APIMockRecorder) UpdateEnvironment(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironment", reflect.TypeOf((*MockCloud9API)(nil).UpdateEnvironment), arg0)
 }
 
-// UpdateEnvironmentMembership mocks base method.
+// UpdateEnvironmentMembership mocks base method
 func (m *MockCloud9API) UpdateEnvironmentMembership(arg0 *cloud9.UpdateEnvironmentMembershipInput) (*cloud9.UpdateEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEnvironmentMembership", arg0)
@@ -676,13 +525,13 @@ func (m *MockCloud9API) UpdateEnvironmentMembership(arg0 *cloud9.UpdateEnvironme
 	return ret0, ret1
 }
 
-// UpdateEnvironmentMembership indicates an expected call of UpdateEnvironmentMembership.
+// UpdateEnvironmentMembership indicates an expected call of UpdateEnvironmentMembership
 func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentMembership(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentMembership", reflect.TypeOf((*MockCloud9API)(nil).UpdateEnvironmentMembership), arg0)
 }
 
-// UpdateEnvironmentMembershipRequest mocks base method.
+// UpdateEnvironmentMembershipRequest mocks base method
 func (m *MockCloud9API) UpdateEnvironmentMembershipRequest(arg0 *cloud9.UpdateEnvironmentMembershipInput) (*request.Request, *cloud9.UpdateEnvironmentMembershipOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEnvironmentMembershipRequest", arg0)
@@ -691,14 +540,14 @@ func (m *MockCloud9API) UpdateEnvironmentMembershipRequest(arg0 *cloud9.UpdateEn
 	return ret0, ret1
 }
 
-// UpdateEnvironmentMembershipRequest indicates an expected call of UpdateEnvironmentMembershipRequest.
+// UpdateEnvironmentMembershipRequest indicates an expected call of UpdateEnvironmentMembershipRequest
 func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentMembershipRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentMembershipRequest", reflect.TypeOf((*MockCloud9API)(nil).UpdateEnvironmentMembershipRequest), arg0)
 }
 
-// UpdateEnvironmentMembershipWithContext mocks base method.
-func (m *MockCloud9API) UpdateEnvironmentMembershipWithContext(arg0 context.Context, arg1 *cloud9.UpdateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentMembershipOutput, error) {
+// UpdateEnvironmentMembershipWithContext mocks base method
+func (m *MockCloud9API) UpdateEnvironmentMembershipWithContext(arg0 aws.Context, arg1 *cloud9.UpdateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -710,14 +559,14 @@ func (m *MockCloud9API) UpdateEnvironmentMembershipWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// UpdateEnvironmentMembershipWithContext indicates an expected call of UpdateEnvironmentMembershipWithContext.
+// UpdateEnvironmentMembershipWithContext indicates an expected call of UpdateEnvironmentMembershipWithContext
 func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentMembershipWithContext", reflect.TypeOf((*MockCloud9API)(nil).UpdateEnvironmentMembershipWithContext), varargs...)
 }
 
-// UpdateEnvironmentRequest mocks base method.
+// UpdateEnvironmentRequest mocks base method
 func (m *MockCloud9API) UpdateEnvironmentRequest(arg0 *cloud9.UpdateEnvironmentInput) (*request.Request, *cloud9.UpdateEnvironmentOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEnvironmentRequest", arg0)
@@ -726,14 +575,14 @@ func (m *MockCloud9API) UpdateEnvironmentRequest(arg0 *cloud9.UpdateEnvironmentI
 	return ret0, ret1
 }
 
-// UpdateEnvironmentRequest indicates an expected call of UpdateEnvironmentRequest.
+// UpdateEnvironmentRequest indicates an expected call of UpdateEnvironmentRequest
 func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentRequest", reflect.TypeOf((*MockCloud9API)(nil).UpdateEnvironmentRequest), arg0)
 }
 
-// UpdateEnvironmentWithContext mocks base method.
-func (m *MockCloud9API) UpdateEnvironmentWithContext(arg0 context.Context, arg1 *cloud9.UpdateEnvironmentInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentOutput, error) {
+// UpdateEnvironmentWithContext mocks base method
+func (m *MockCloud9API) UpdateEnvironmentWithContext(arg0 aws.Context, arg1 *cloud9.UpdateEnvironmentInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -745,7 +594,7 @@ func (m *MockCloud9API) UpdateEnvironmentWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateEnvironmentWithContext indicates an expected call of UpdateEnvironmentWithContext.
+// UpdateEnvironmentWithContext indicates an expected call of UpdateEnvironmentWithContext
 func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

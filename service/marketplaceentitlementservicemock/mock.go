@@ -5,38 +5,37 @@
 package marketplaceentitlementservicemock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	marketplaceentitlementservice "github.com/aws/aws-sdk-go/service/marketplaceentitlementservice"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMarketplaceEntitlementServiceAPI is a mock of MarketplaceEntitlementServiceAPI interface.
+// MockMarketplaceEntitlementServiceAPI is a mock of MarketplaceEntitlementServiceAPI interface
 type MockMarketplaceEntitlementServiceAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMarketplaceEntitlementServiceAPIMockRecorder
 }
 
-// MockMarketplaceEntitlementServiceAPIMockRecorder is the mock recorder for MockMarketplaceEntitlementServiceAPI.
+// MockMarketplaceEntitlementServiceAPIMockRecorder is the mock recorder for MockMarketplaceEntitlementServiceAPI
 type MockMarketplaceEntitlementServiceAPIMockRecorder struct {
 	mock *MockMarketplaceEntitlementServiceAPI
 }
 
-// NewMockMarketplaceEntitlementServiceAPI creates a new mock instance.
+// NewMockMarketplaceEntitlementServiceAPI creates a new mock instance
 func NewMockMarketplaceEntitlementServiceAPI(ctrl *gomock.Controller) *MockMarketplaceEntitlementServiceAPI {
 	mock := &MockMarketplaceEntitlementServiceAPI{ctrl: ctrl}
 	mock.recorder = &MockMarketplaceEntitlementServiceAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMarketplaceEntitlementServiceAPI) EXPECT() *MockMarketplaceEntitlementServiceAPIMockRecorder {
 	return m.recorder
 }
 
-// GetEntitlements mocks base method.
+// GetEntitlements mocks base method
 func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlements(arg0 *marketplaceentitlementservice.GetEntitlementsInput) (*marketplaceentitlementservice.GetEntitlementsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetEntitlements", arg0)
@@ -45,13 +44,13 @@ func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlements(arg0 *marketplace
 	return ret0, ret1
 }
 
-// GetEntitlements indicates an expected call of GetEntitlements.
+// GetEntitlements indicates an expected call of GetEntitlements
 func (mr *MockMarketplaceEntitlementServiceAPIMockRecorder) GetEntitlements(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEntitlements", reflect.TypeOf((*MockMarketplaceEntitlementServiceAPI)(nil).GetEntitlements), arg0)
 }
 
-// GetEntitlementsRequest mocks base method.
+// GetEntitlementsRequest mocks base method
 func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsRequest(arg0 *marketplaceentitlementservice.GetEntitlementsInput) (*request.Request, *marketplaceentitlementservice.GetEntitlementsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetEntitlementsRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsRequest(arg0 *mark
 	return ret0, ret1
 }
 
-// GetEntitlementsRequest indicates an expected call of GetEntitlementsRequest.
+// GetEntitlementsRequest indicates an expected call of GetEntitlementsRequest
 func (mr *MockMarketplaceEntitlementServiceAPIMockRecorder) GetEntitlementsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEntitlementsRequest", reflect.TypeOf((*MockMarketplaceEntitlementServiceAPI)(nil).GetEntitlementsRequest), arg0)
 }
 
-// GetEntitlementsWithContext mocks base method.
-func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsWithContext(arg0 context.Context, arg1 *marketplaceentitlementservice.GetEntitlementsInput, arg2 ...request.Option) (*marketplaceentitlementservice.GetEntitlementsOutput, error) {
+// GetEntitlementsWithContext mocks base method
+func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsWithContext(arg0 aws.Context, arg1 *marketplaceentitlementservice.GetEntitlementsInput, arg2 ...request.Option) (*marketplaceentitlementservice.GetEntitlementsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,7 +78,7 @@ func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsWithContext(arg0 c
 	return ret0, ret1
 }
 
-// GetEntitlementsWithContext indicates an expected call of GetEntitlementsWithContext.
+// GetEntitlementsWithContext indicates an expected call of GetEntitlementsWithContext
 func (mr *MockMarketplaceEntitlementServiceAPIMockRecorder) GetEntitlementsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

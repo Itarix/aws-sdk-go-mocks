@@ -5,88 +5,37 @@
 package mediaconvertmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediaconvert "github.com/aws/aws-sdk-go/service/mediaconvert"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMediaConvertAPI is a mock of MediaConvertAPI interface.
+// MockMediaConvertAPI is a mock of MediaConvertAPI interface
 type MockMediaConvertAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMediaConvertAPIMockRecorder
 }
 
-// MockMediaConvertAPIMockRecorder is the mock recorder for MockMediaConvertAPI.
+// MockMediaConvertAPIMockRecorder is the mock recorder for MockMediaConvertAPI
 type MockMediaConvertAPIMockRecorder struct {
 	mock *MockMediaConvertAPI
 }
 
-// NewMockMediaConvertAPI creates a new mock instance.
+// NewMockMediaConvertAPI creates a new mock instance
 func NewMockMediaConvertAPI(ctrl *gomock.Controller) *MockMediaConvertAPI {
 	mock := &MockMediaConvertAPI{ctrl: ctrl}
 	mock.recorder = &MockMediaConvertAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMediaConvertAPI) EXPECT() *MockMediaConvertAPIMockRecorder {
 	return m.recorder
 }
 
-// AssociateCertificate mocks base method.
-func (m *MockMediaConvertAPI) AssociateCertificate(arg0 *mediaconvert.AssociateCertificateInput) (*mediaconvert.AssociateCertificateOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateCertificate", arg0)
-	ret0, _ := ret[0].(*mediaconvert.AssociateCertificateOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateCertificate indicates an expected call of AssociateCertificate.
-func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificate(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCertificate", reflect.TypeOf((*MockMediaConvertAPI)(nil).AssociateCertificate), arg0)
-}
-
-// AssociateCertificateRequest mocks base method.
-func (m *MockMediaConvertAPI) AssociateCertificateRequest(arg0 *mediaconvert.AssociateCertificateInput) (*request.Request, *mediaconvert.AssociateCertificateOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AssociateCertificateRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mediaconvert.AssociateCertificateOutput)
-	return ret0, ret1
-}
-
-// AssociateCertificateRequest indicates an expected call of AssociateCertificateRequest.
-func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificateRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCertificateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).AssociateCertificateRequest), arg0)
-}
-
-// AssociateCertificateWithContext mocks base method.
-func (m *MockMediaConvertAPI) AssociateCertificateWithContext(arg0 context.Context, arg1 *mediaconvert.AssociateCertificateInput, arg2 ...request.Option) (*mediaconvert.AssociateCertificateOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "AssociateCertificateWithContext", varargs...)
-	ret0, _ := ret[0].(*mediaconvert.AssociateCertificateOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// AssociateCertificateWithContext indicates an expected call of AssociateCertificateWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCertificateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).AssociateCertificateWithContext), varargs...)
-}
-
-// CancelJob mocks base method.
+// CancelJob mocks base method
 func (m *MockMediaConvertAPI) CancelJob(arg0 *mediaconvert.CancelJobInput) (*mediaconvert.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelJob", arg0)
@@ -95,13 +44,13 @@ func (m *MockMediaConvertAPI) CancelJob(arg0 *mediaconvert.CancelJobInput) (*med
 	return ret0, ret1
 }
 
-// CancelJob indicates an expected call of CancelJob.
+// CancelJob indicates an expected call of CancelJob
 func (mr *MockMediaConvertAPIMockRecorder) CancelJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJob", reflect.TypeOf((*MockMediaConvertAPI)(nil).CancelJob), arg0)
 }
 
-// CancelJobRequest mocks base method.
+// CancelJobRequest mocks base method
 func (m *MockMediaConvertAPI) CancelJobRequest(arg0 *mediaconvert.CancelJobInput) (*request.Request, *mediaconvert.CancelJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelJobRequest", arg0)
@@ -110,14 +59,14 @@ func (m *MockMediaConvertAPI) CancelJobRequest(arg0 *mediaconvert.CancelJobInput
 	return ret0, ret1
 }
 
-// CancelJobRequest indicates an expected call of CancelJobRequest.
+// CancelJobRequest indicates an expected call of CancelJobRequest
 func (mr *MockMediaConvertAPIMockRecorder) CancelJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).CancelJobRequest), arg0)
 }
 
-// CancelJobWithContext mocks base method.
-func (m *MockMediaConvertAPI) CancelJobWithContext(arg0 context.Context, arg1 *mediaconvert.CancelJobInput, arg2 ...request.Option) (*mediaconvert.CancelJobOutput, error) {
+// CancelJobWithContext mocks base method
+func (m *MockMediaConvertAPI) CancelJobWithContext(arg0 aws.Context, arg1 *mediaconvert.CancelJobInput, arg2 ...request.Option) (*mediaconvert.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +78,14 @@ func (m *MockMediaConvertAPI) CancelJobWithContext(arg0 context.Context, arg1 *m
 	return ret0, ret1
 }
 
-// CancelJobWithContext indicates an expected call of CancelJobWithContext.
+// CancelJobWithContext indicates an expected call of CancelJobWithContext
 func (mr *MockMediaConvertAPIMockRecorder) CancelJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).CancelJobWithContext), varargs...)
 }
 
-// CreateJob mocks base method.
+// CreateJob mocks base method
 func (m *MockMediaConvertAPI) CreateJob(arg0 *mediaconvert.CreateJobInput) (*mediaconvert.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateJob", arg0)
@@ -145,13 +94,13 @@ func (m *MockMediaConvertAPI) CreateJob(arg0 *mediaconvert.CreateJobInput) (*med
 	return ret0, ret1
 }
 
-// CreateJob indicates an expected call of CreateJob.
+// CreateJob indicates an expected call of CreateJob
 func (mr *MockMediaConvertAPIMockRecorder) CreateJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJob", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateJob), arg0)
 }
 
-// CreateJobRequest mocks base method.
+// CreateJobRequest mocks base method
 func (m *MockMediaConvertAPI) CreateJobRequest(arg0 *mediaconvert.CreateJobInput) (*request.Request, *mediaconvert.CreateJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateJobRequest", arg0)
@@ -160,13 +109,13 @@ func (m *MockMediaConvertAPI) CreateJobRequest(arg0 *mediaconvert.CreateJobInput
 	return ret0, ret1
 }
 
-// CreateJobRequest indicates an expected call of CreateJobRequest.
+// CreateJobRequest indicates an expected call of CreateJobRequest
 func (mr *MockMediaConvertAPIMockRecorder) CreateJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateJobRequest), arg0)
 }
 
-// CreateJobTemplate mocks base method.
+// CreateJobTemplate mocks base method
 func (m *MockMediaConvertAPI) CreateJobTemplate(arg0 *mediaconvert.CreateJobTemplateInput) (*mediaconvert.CreateJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateJobTemplate", arg0)
@@ -175,13 +124,13 @@ func (m *MockMediaConvertAPI) CreateJobTemplate(arg0 *mediaconvert.CreateJobTemp
 	return ret0, ret1
 }
 
-// CreateJobTemplate indicates an expected call of CreateJobTemplate.
+// CreateJobTemplate indicates an expected call of CreateJobTemplate
 func (mr *MockMediaConvertAPIMockRecorder) CreateJobTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobTemplate", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateJobTemplate), arg0)
 }
 
-// CreateJobTemplateRequest mocks base method.
+// CreateJobTemplateRequest mocks base method
 func (m *MockMediaConvertAPI) CreateJobTemplateRequest(arg0 *mediaconvert.CreateJobTemplateInput) (*request.Request, *mediaconvert.CreateJobTemplateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateJobTemplateRequest", arg0)
@@ -190,14 +139,14 @@ func (m *MockMediaConvertAPI) CreateJobTemplateRequest(arg0 *mediaconvert.Create
 	return ret0, ret1
 }
 
-// CreateJobTemplateRequest indicates an expected call of CreateJobTemplateRequest.
+// CreateJobTemplateRequest indicates an expected call of CreateJobTemplateRequest
 func (mr *MockMediaConvertAPIMockRecorder) CreateJobTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobTemplateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateJobTemplateRequest), arg0)
 }
 
-// CreateJobTemplateWithContext mocks base method.
-func (m *MockMediaConvertAPI) CreateJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.CreateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.CreateJobTemplateOutput, error) {
+// CreateJobTemplateWithContext mocks base method
+func (m *MockMediaConvertAPI) CreateJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.CreateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.CreateJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -209,15 +158,15 @@ func (m *MockMediaConvertAPI) CreateJobTemplateWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreateJobTemplateWithContext indicates an expected call of CreateJobTemplateWithContext.
+// CreateJobTemplateWithContext indicates an expected call of CreateJobTemplateWithContext
 func (mr *MockMediaConvertAPIMockRecorder) CreateJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobTemplateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateJobTemplateWithContext), varargs...)
 }
 
-// CreateJobWithContext mocks base method.
-func (m *MockMediaConvertAPI) CreateJobWithContext(arg0 context.Context, arg1 *mediaconvert.CreateJobInput, arg2 ...request.Option) (*mediaconvert.CreateJobOutput, error) {
+// CreateJobWithContext mocks base method
+func (m *MockMediaConvertAPI) CreateJobWithContext(arg0 aws.Context, arg1 *mediaconvert.CreateJobInput, arg2 ...request.Option) (*mediaconvert.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +178,14 @@ func (m *MockMediaConvertAPI) CreateJobWithContext(arg0 context.Context, arg1 *m
 	return ret0, ret1
 }
 
-// CreateJobWithContext indicates an expected call of CreateJobWithContext.
+// CreateJobWithContext indicates an expected call of CreateJobWithContext
 func (mr *MockMediaConvertAPIMockRecorder) CreateJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateJobWithContext), varargs...)
 }
 
-// CreatePreset mocks base method.
+// CreatePreset mocks base method
 func (m *MockMediaConvertAPI) CreatePreset(arg0 *mediaconvert.CreatePresetInput) (*mediaconvert.CreatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePreset", arg0)
@@ -245,13 +194,13 @@ func (m *MockMediaConvertAPI) CreatePreset(arg0 *mediaconvert.CreatePresetInput)
 	return ret0, ret1
 }
 
-// CreatePreset indicates an expected call of CreatePreset.
+// CreatePreset indicates an expected call of CreatePreset
 func (mr *MockMediaConvertAPIMockRecorder) CreatePreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePreset", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreatePreset), arg0)
 }
 
-// CreatePresetRequest mocks base method.
+// CreatePresetRequest mocks base method
 func (m *MockMediaConvertAPI) CreatePresetRequest(arg0 *mediaconvert.CreatePresetInput) (*request.Request, *mediaconvert.CreatePresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePresetRequest", arg0)
@@ -260,14 +209,14 @@ func (m *MockMediaConvertAPI) CreatePresetRequest(arg0 *mediaconvert.CreatePrese
 	return ret0, ret1
 }
 
-// CreatePresetRequest indicates an expected call of CreatePresetRequest.
+// CreatePresetRequest indicates an expected call of CreatePresetRequest
 func (mr *MockMediaConvertAPIMockRecorder) CreatePresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresetRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreatePresetRequest), arg0)
 }
 
-// CreatePresetWithContext mocks base method.
-func (m *MockMediaConvertAPI) CreatePresetWithContext(arg0 context.Context, arg1 *mediaconvert.CreatePresetInput, arg2 ...request.Option) (*mediaconvert.CreatePresetOutput, error) {
+// CreatePresetWithContext mocks base method
+func (m *MockMediaConvertAPI) CreatePresetWithContext(arg0 aws.Context, arg1 *mediaconvert.CreatePresetInput, arg2 ...request.Option) (*mediaconvert.CreatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +228,14 @@ func (m *MockMediaConvertAPI) CreatePresetWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// CreatePresetWithContext indicates an expected call of CreatePresetWithContext.
+// CreatePresetWithContext indicates an expected call of CreatePresetWithContext
 func (mr *MockMediaConvertAPIMockRecorder) CreatePresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresetWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreatePresetWithContext), varargs...)
 }
 
-// CreateQueue mocks base method.
+// CreateQueue mocks base method
 func (m *MockMediaConvertAPI) CreateQueue(arg0 *mediaconvert.CreateQueueInput) (*mediaconvert.CreateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateQueue", arg0)
@@ -295,13 +244,13 @@ func (m *MockMediaConvertAPI) CreateQueue(arg0 *mediaconvert.CreateQueueInput) (
 	return ret0, ret1
 }
 
-// CreateQueue indicates an expected call of CreateQueue.
+// CreateQueue indicates an expected call of CreateQueue
 func (mr *MockMediaConvertAPIMockRecorder) CreateQueue(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateQueue", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateQueue), arg0)
 }
 
-// CreateQueueRequest mocks base method.
+// CreateQueueRequest mocks base method
 func (m *MockMediaConvertAPI) CreateQueueRequest(arg0 *mediaconvert.CreateQueueInput) (*request.Request, *mediaconvert.CreateQueueOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateQueueRequest", arg0)
@@ -310,14 +259,14 @@ func (m *MockMediaConvertAPI) CreateQueueRequest(arg0 *mediaconvert.CreateQueueI
 	return ret0, ret1
 }
 
-// CreateQueueRequest indicates an expected call of CreateQueueRequest.
+// CreateQueueRequest indicates an expected call of CreateQueueRequest
 func (mr *MockMediaConvertAPIMockRecorder) CreateQueueRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateQueueRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateQueueRequest), arg0)
 }
 
-// CreateQueueWithContext mocks base method.
-func (m *MockMediaConvertAPI) CreateQueueWithContext(arg0 context.Context, arg1 *mediaconvert.CreateQueueInput, arg2 ...request.Option) (*mediaconvert.CreateQueueOutput, error) {
+// CreateQueueWithContext mocks base method
+func (m *MockMediaConvertAPI) CreateQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.CreateQueueInput, arg2 ...request.Option) (*mediaconvert.CreateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +278,14 @@ func (m *MockMediaConvertAPI) CreateQueueWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// CreateQueueWithContext indicates an expected call of CreateQueueWithContext.
+// CreateQueueWithContext indicates an expected call of CreateQueueWithContext
 func (mr *MockMediaConvertAPIMockRecorder) CreateQueueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateQueueWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).CreateQueueWithContext), varargs...)
 }
 
-// DeleteJobTemplate mocks base method.
+// DeleteJobTemplate mocks base method
 func (m *MockMediaConvertAPI) DeleteJobTemplate(arg0 *mediaconvert.DeleteJobTemplateInput) (*mediaconvert.DeleteJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteJobTemplate", arg0)
@@ -345,13 +294,13 @@ func (m *MockMediaConvertAPI) DeleteJobTemplate(arg0 *mediaconvert.DeleteJobTemp
 	return ret0, ret1
 }
 
-// DeleteJobTemplate indicates an expected call of DeleteJobTemplate.
+// DeleteJobTemplate indicates an expected call of DeleteJobTemplate
 func (mr *MockMediaConvertAPIMockRecorder) DeleteJobTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplate", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteJobTemplate), arg0)
 }
 
-// DeleteJobTemplateRequest mocks base method.
+// DeleteJobTemplateRequest mocks base method
 func (m *MockMediaConvertAPI) DeleteJobTemplateRequest(arg0 *mediaconvert.DeleteJobTemplateInput) (*request.Request, *mediaconvert.DeleteJobTemplateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteJobTemplateRequest", arg0)
@@ -360,14 +309,14 @@ func (m *MockMediaConvertAPI) DeleteJobTemplateRequest(arg0 *mediaconvert.Delete
 	return ret0, ret1
 }
 
-// DeleteJobTemplateRequest indicates an expected call of DeleteJobTemplateRequest.
+// DeleteJobTemplateRequest indicates an expected call of DeleteJobTemplateRequest
 func (mr *MockMediaConvertAPIMockRecorder) DeleteJobTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteJobTemplateRequest), arg0)
 }
 
-// DeleteJobTemplateWithContext mocks base method.
-func (m *MockMediaConvertAPI) DeleteJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.DeleteJobTemplateInput, arg2 ...request.Option) (*mediaconvert.DeleteJobTemplateOutput, error) {
+// DeleteJobTemplateWithContext mocks base method
+func (m *MockMediaConvertAPI) DeleteJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.DeleteJobTemplateInput, arg2 ...request.Option) (*mediaconvert.DeleteJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,64 +328,14 @@ func (m *MockMediaConvertAPI) DeleteJobTemplateWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeleteJobTemplateWithContext indicates an expected call of DeleteJobTemplateWithContext.
+// DeleteJobTemplateWithContext indicates an expected call of DeleteJobTemplateWithContext
 func (mr *MockMediaConvertAPIMockRecorder) DeleteJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteJobTemplateWithContext), varargs...)
 }
 
-// DeletePolicy mocks base method.
-func (m *MockMediaConvertAPI) DeletePolicy(arg0 *mediaconvert.DeletePolicyInput) (*mediaconvert.DeletePolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeletePolicy", arg0)
-	ret0, _ := ret[0].(*mediaconvert.DeletePolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeletePolicy indicates an expected call of DeletePolicy.
-func (mr *MockMediaConvertAPIMockRecorder) DeletePolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicy", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePolicy), arg0)
-}
-
-// DeletePolicyRequest mocks base method.
-func (m *MockMediaConvertAPI) DeletePolicyRequest(arg0 *mediaconvert.DeletePolicyInput) (*request.Request, *mediaconvert.DeletePolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeletePolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mediaconvert.DeletePolicyOutput)
-	return ret0, ret1
-}
-
-// DeletePolicyRequest indicates an expected call of DeletePolicyRequest.
-func (mr *MockMediaConvertAPIMockRecorder) DeletePolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePolicyRequest), arg0)
-}
-
-// DeletePolicyWithContext mocks base method.
-func (m *MockMediaConvertAPI) DeletePolicyWithContext(arg0 context.Context, arg1 *mediaconvert.DeletePolicyInput, arg2 ...request.Option) (*mediaconvert.DeletePolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeletePolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*mediaconvert.DeletePolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeletePolicyWithContext indicates an expected call of DeletePolicyWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) DeletePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePolicyWithContext), varargs...)
-}
-
-// DeletePreset mocks base method.
+// DeletePreset mocks base method
 func (m *MockMediaConvertAPI) DeletePreset(arg0 *mediaconvert.DeletePresetInput) (*mediaconvert.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePreset", arg0)
@@ -445,13 +344,13 @@ func (m *MockMediaConvertAPI) DeletePreset(arg0 *mediaconvert.DeletePresetInput)
 	return ret0, ret1
 }
 
-// DeletePreset indicates an expected call of DeletePreset.
+// DeletePreset indicates an expected call of DeletePreset
 func (mr *MockMediaConvertAPIMockRecorder) DeletePreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePreset", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePreset), arg0)
 }
 
-// DeletePresetRequest mocks base method.
+// DeletePresetRequest mocks base method
 func (m *MockMediaConvertAPI) DeletePresetRequest(arg0 *mediaconvert.DeletePresetInput) (*request.Request, *mediaconvert.DeletePresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePresetRequest", arg0)
@@ -460,14 +359,14 @@ func (m *MockMediaConvertAPI) DeletePresetRequest(arg0 *mediaconvert.DeletePrese
 	return ret0, ret1
 }
 
-// DeletePresetRequest indicates an expected call of DeletePresetRequest.
+// DeletePresetRequest indicates an expected call of DeletePresetRequest
 func (mr *MockMediaConvertAPIMockRecorder) DeletePresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePresetRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePresetRequest), arg0)
 }
 
-// DeletePresetWithContext mocks base method.
-func (m *MockMediaConvertAPI) DeletePresetWithContext(arg0 context.Context, arg1 *mediaconvert.DeletePresetInput, arg2 ...request.Option) (*mediaconvert.DeletePresetOutput, error) {
+// DeletePresetWithContext mocks base method
+func (m *MockMediaConvertAPI) DeletePresetWithContext(arg0 aws.Context, arg1 *mediaconvert.DeletePresetInput, arg2 ...request.Option) (*mediaconvert.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +378,14 @@ func (m *MockMediaConvertAPI) DeletePresetWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeletePresetWithContext indicates an expected call of DeletePresetWithContext.
+// DeletePresetWithContext indicates an expected call of DeletePresetWithContext
 func (mr *MockMediaConvertAPIMockRecorder) DeletePresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePresetWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePresetWithContext), varargs...)
 }
 
-// DeleteQueue mocks base method.
+// DeleteQueue mocks base method
 func (m *MockMediaConvertAPI) DeleteQueue(arg0 *mediaconvert.DeleteQueueInput) (*mediaconvert.DeleteQueueOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteQueue", arg0)
@@ -495,13 +394,13 @@ func (m *MockMediaConvertAPI) DeleteQueue(arg0 *mediaconvert.DeleteQueueInput) (
 	return ret0, ret1
 }
 
-// DeleteQueue indicates an expected call of DeleteQueue.
+// DeleteQueue indicates an expected call of DeleteQueue
 func (mr *MockMediaConvertAPIMockRecorder) DeleteQueue(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueue", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteQueue), arg0)
 }
 
-// DeleteQueueRequest mocks base method.
+// DeleteQueueRequest mocks base method
 func (m *MockMediaConvertAPI) DeleteQueueRequest(arg0 *mediaconvert.DeleteQueueInput) (*request.Request, *mediaconvert.DeleteQueueOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteQueueRequest", arg0)
@@ -510,14 +409,14 @@ func (m *MockMediaConvertAPI) DeleteQueueRequest(arg0 *mediaconvert.DeleteQueueI
 	return ret0, ret1
 }
 
-// DeleteQueueRequest indicates an expected call of DeleteQueueRequest.
+// DeleteQueueRequest indicates an expected call of DeleteQueueRequest
 func (mr *MockMediaConvertAPIMockRecorder) DeleteQueueRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueueRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteQueueRequest), arg0)
 }
 
-// DeleteQueueWithContext mocks base method.
-func (m *MockMediaConvertAPI) DeleteQueueWithContext(arg0 context.Context, arg1 *mediaconvert.DeleteQueueInput, arg2 ...request.Option) (*mediaconvert.DeleteQueueOutput, error) {
+// DeleteQueueWithContext mocks base method
+func (m *MockMediaConvertAPI) DeleteQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.DeleteQueueInput, arg2 ...request.Option) (*mediaconvert.DeleteQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +428,14 @@ func (m *MockMediaConvertAPI) DeleteQueueWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// DeleteQueueWithContext indicates an expected call of DeleteQueueWithContext.
+// DeleteQueueWithContext indicates an expected call of DeleteQueueWithContext
 func (mr *MockMediaConvertAPIMockRecorder) DeleteQueueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueueWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteQueueWithContext), varargs...)
 }
 
-// DescribeEndpoints mocks base method.
+// DescribeEndpoints mocks base method
 func (m *MockMediaConvertAPI) DescribeEndpoints(arg0 *mediaconvert.DescribeEndpointsInput) (*mediaconvert.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEndpoints", arg0)
@@ -545,46 +444,13 @@ func (m *MockMediaConvertAPI) DescribeEndpoints(arg0 *mediaconvert.DescribeEndpo
 	return ret0, ret1
 }
 
-// DescribeEndpoints indicates an expected call of DescribeEndpoints.
+// DescribeEndpoints indicates an expected call of DescribeEndpoints
 func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpoints(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpoints", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpoints), arg0)
 }
 
-// DescribeEndpointsPages mocks base method.
-func (m *MockMediaConvertAPI) DescribeEndpointsPages(arg0 *mediaconvert.DescribeEndpointsInput, arg1 func(*mediaconvert.DescribeEndpointsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DescribeEndpointsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// DescribeEndpointsPages indicates an expected call of DescribeEndpointsPages.
-func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsPages), arg0, arg1)
-}
-
-// DescribeEndpointsPagesWithContext mocks base method.
-func (m *MockMediaConvertAPI) DescribeEndpointsPagesWithContext(arg0 context.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 func(*mediaconvert.DescribeEndpointsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DescribeEndpointsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// DescribeEndpointsPagesWithContext indicates an expected call of DescribeEndpointsPagesWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsPagesWithContext), varargs...)
-}
-
-// DescribeEndpointsRequest mocks base method.
+// DescribeEndpointsRequest mocks base method
 func (m *MockMediaConvertAPI) DescribeEndpointsRequest(arg0 *mediaconvert.DescribeEndpointsInput) (*request.Request, *mediaconvert.DescribeEndpointsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeEndpointsRequest", arg0)
@@ -593,14 +459,14 @@ func (m *MockMediaConvertAPI) DescribeEndpointsRequest(arg0 *mediaconvert.Descri
 	return ret0, ret1
 }
 
-// DescribeEndpointsRequest indicates an expected call of DescribeEndpointsRequest.
+// DescribeEndpointsRequest indicates an expected call of DescribeEndpointsRequest
 func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsRequest), arg0)
 }
 
-// DescribeEndpointsWithContext mocks base method.
-func (m *MockMediaConvertAPI) DescribeEndpointsWithContext(arg0 context.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 ...request.Option) (*mediaconvert.DescribeEndpointsOutput, error) {
+// DescribeEndpointsWithContext mocks base method
+func (m *MockMediaConvertAPI) DescribeEndpointsWithContext(arg0 aws.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 ...request.Option) (*mediaconvert.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -612,64 +478,14 @@ func (m *MockMediaConvertAPI) DescribeEndpointsWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DescribeEndpointsWithContext indicates an expected call of DescribeEndpointsWithContext.
+// DescribeEndpointsWithContext indicates an expected call of DescribeEndpointsWithContext
 func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsWithContext), varargs...)
 }
 
-// DisassociateCertificate mocks base method.
-func (m *MockMediaConvertAPI) DisassociateCertificate(arg0 *mediaconvert.DisassociateCertificateInput) (*mediaconvert.DisassociateCertificateOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateCertificate", arg0)
-	ret0, _ := ret[0].(*mediaconvert.DisassociateCertificateOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateCertificate indicates an expected call of DisassociateCertificate.
-func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificate(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCertificate", reflect.TypeOf((*MockMediaConvertAPI)(nil).DisassociateCertificate), arg0)
-}
-
-// DisassociateCertificateRequest mocks base method.
-func (m *MockMediaConvertAPI) DisassociateCertificateRequest(arg0 *mediaconvert.DisassociateCertificateInput) (*request.Request, *mediaconvert.DisassociateCertificateOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DisassociateCertificateRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mediaconvert.DisassociateCertificateOutput)
-	return ret0, ret1
-}
-
-// DisassociateCertificateRequest indicates an expected call of DisassociateCertificateRequest.
-func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificateRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCertificateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DisassociateCertificateRequest), arg0)
-}
-
-// DisassociateCertificateWithContext mocks base method.
-func (m *MockMediaConvertAPI) DisassociateCertificateWithContext(arg0 context.Context, arg1 *mediaconvert.DisassociateCertificateInput, arg2 ...request.Option) (*mediaconvert.DisassociateCertificateOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DisassociateCertificateWithContext", varargs...)
-	ret0, _ := ret[0].(*mediaconvert.DisassociateCertificateOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DisassociateCertificateWithContext indicates an expected call of DisassociateCertificateWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCertificateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DisassociateCertificateWithContext), varargs...)
-}
-
-// GetJob mocks base method.
+// GetJob mocks base method
 func (m *MockMediaConvertAPI) GetJob(arg0 *mediaconvert.GetJobInput) (*mediaconvert.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJob", arg0)
@@ -678,13 +494,13 @@ func (m *MockMediaConvertAPI) GetJob(arg0 *mediaconvert.GetJobInput) (*mediaconv
 	return ret0, ret1
 }
 
-// GetJob indicates an expected call of GetJob.
+// GetJob indicates an expected call of GetJob
 func (mr *MockMediaConvertAPIMockRecorder) GetJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJob", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJob), arg0)
 }
 
-// GetJobRequest mocks base method.
+// GetJobRequest mocks base method
 func (m *MockMediaConvertAPI) GetJobRequest(arg0 *mediaconvert.GetJobInput) (*request.Request, *mediaconvert.GetJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJobRequest", arg0)
@@ -693,13 +509,13 @@ func (m *MockMediaConvertAPI) GetJobRequest(arg0 *mediaconvert.GetJobInput) (*re
 	return ret0, ret1
 }
 
-// GetJobRequest indicates an expected call of GetJobRequest.
+// GetJobRequest indicates an expected call of GetJobRequest
 func (mr *MockMediaConvertAPIMockRecorder) GetJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJobRequest), arg0)
 }
 
-// GetJobTemplate mocks base method.
+// GetJobTemplate mocks base method
 func (m *MockMediaConvertAPI) GetJobTemplate(arg0 *mediaconvert.GetJobTemplateInput) (*mediaconvert.GetJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJobTemplate", arg0)
@@ -708,13 +524,13 @@ func (m *MockMediaConvertAPI) GetJobTemplate(arg0 *mediaconvert.GetJobTemplateIn
 	return ret0, ret1
 }
 
-// GetJobTemplate indicates an expected call of GetJobTemplate.
+// GetJobTemplate indicates an expected call of GetJobTemplate
 func (mr *MockMediaConvertAPIMockRecorder) GetJobTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobTemplate", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJobTemplate), arg0)
 }
 
-// GetJobTemplateRequest mocks base method.
+// GetJobTemplateRequest mocks base method
 func (m *MockMediaConvertAPI) GetJobTemplateRequest(arg0 *mediaconvert.GetJobTemplateInput) (*request.Request, *mediaconvert.GetJobTemplateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetJobTemplateRequest", arg0)
@@ -723,14 +539,14 @@ func (m *MockMediaConvertAPI) GetJobTemplateRequest(arg0 *mediaconvert.GetJobTem
 	return ret0, ret1
 }
 
-// GetJobTemplateRequest indicates an expected call of GetJobTemplateRequest.
+// GetJobTemplateRequest indicates an expected call of GetJobTemplateRequest
 func (mr *MockMediaConvertAPIMockRecorder) GetJobTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobTemplateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJobTemplateRequest), arg0)
 }
 
-// GetJobTemplateWithContext mocks base method.
-func (m *MockMediaConvertAPI) GetJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.GetJobTemplateInput, arg2 ...request.Option) (*mediaconvert.GetJobTemplateOutput, error) {
+// GetJobTemplateWithContext mocks base method
+func (m *MockMediaConvertAPI) GetJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.GetJobTemplateInput, arg2 ...request.Option) (*mediaconvert.GetJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -742,15 +558,15 @@ func (m *MockMediaConvertAPI) GetJobTemplateWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// GetJobTemplateWithContext indicates an expected call of GetJobTemplateWithContext.
+// GetJobTemplateWithContext indicates an expected call of GetJobTemplateWithContext
 func (mr *MockMediaConvertAPIMockRecorder) GetJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobTemplateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJobTemplateWithContext), varargs...)
 }
 
-// GetJobWithContext mocks base method.
-func (m *MockMediaConvertAPI) GetJobWithContext(arg0 context.Context, arg1 *mediaconvert.GetJobInput, arg2 ...request.Option) (*mediaconvert.GetJobOutput, error) {
+// GetJobWithContext mocks base method
+func (m *MockMediaConvertAPI) GetJobWithContext(arg0 aws.Context, arg1 *mediaconvert.GetJobInput, arg2 ...request.Option) (*mediaconvert.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -762,64 +578,14 @@ func (m *MockMediaConvertAPI) GetJobWithContext(arg0 context.Context, arg1 *medi
 	return ret0, ret1
 }
 
-// GetJobWithContext indicates an expected call of GetJobWithContext.
+// GetJobWithContext indicates an expected call of GetJobWithContext
 func (mr *MockMediaConvertAPIMockRecorder) GetJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJobWithContext), varargs...)
 }
 
-// GetPolicy mocks base method.
-func (m *MockMediaConvertAPI) GetPolicy(arg0 *mediaconvert.GetPolicyInput) (*mediaconvert.GetPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetPolicy", arg0)
-	ret0, _ := ret[0].(*mediaconvert.GetPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetPolicy indicates an expected call of GetPolicy.
-func (mr *MockMediaConvertAPIMockRecorder) GetPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicy", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPolicy), arg0)
-}
-
-// GetPolicyRequest mocks base method.
-func (m *MockMediaConvertAPI) GetPolicyRequest(arg0 *mediaconvert.GetPolicyInput) (*request.Request, *mediaconvert.GetPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mediaconvert.GetPolicyOutput)
-	return ret0, ret1
-}
-
-// GetPolicyRequest indicates an expected call of GetPolicyRequest.
-func (mr *MockMediaConvertAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPolicyRequest), arg0)
-}
-
-// GetPolicyWithContext mocks base method.
-func (m *MockMediaConvertAPI) GetPolicyWithContext(arg0 context.Context, arg1 *mediaconvert.GetPolicyInput, arg2 ...request.Option) (*mediaconvert.GetPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*mediaconvert.GetPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetPolicyWithContext indicates an expected call of GetPolicyWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) GetPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPolicyWithContext), varargs...)
-}
-
-// GetPreset mocks base method.
+// GetPreset mocks base method
 func (m *MockMediaConvertAPI) GetPreset(arg0 *mediaconvert.GetPresetInput) (*mediaconvert.GetPresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPreset", arg0)
@@ -828,13 +594,13 @@ func (m *MockMediaConvertAPI) GetPreset(arg0 *mediaconvert.GetPresetInput) (*med
 	return ret0, ret1
 }
 
-// GetPreset indicates an expected call of GetPreset.
+// GetPreset indicates an expected call of GetPreset
 func (mr *MockMediaConvertAPIMockRecorder) GetPreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPreset", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPreset), arg0)
 }
 
-// GetPresetRequest mocks base method.
+// GetPresetRequest mocks base method
 func (m *MockMediaConvertAPI) GetPresetRequest(arg0 *mediaconvert.GetPresetInput) (*request.Request, *mediaconvert.GetPresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPresetRequest", arg0)
@@ -843,14 +609,14 @@ func (m *MockMediaConvertAPI) GetPresetRequest(arg0 *mediaconvert.GetPresetInput
 	return ret0, ret1
 }
 
-// GetPresetRequest indicates an expected call of GetPresetRequest.
+// GetPresetRequest indicates an expected call of GetPresetRequest
 func (mr *MockMediaConvertAPIMockRecorder) GetPresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPresetRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPresetRequest), arg0)
 }
 
-// GetPresetWithContext mocks base method.
-func (m *MockMediaConvertAPI) GetPresetWithContext(arg0 context.Context, arg1 *mediaconvert.GetPresetInput, arg2 ...request.Option) (*mediaconvert.GetPresetOutput, error) {
+// GetPresetWithContext mocks base method
+func (m *MockMediaConvertAPI) GetPresetWithContext(arg0 aws.Context, arg1 *mediaconvert.GetPresetInput, arg2 ...request.Option) (*mediaconvert.GetPresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -862,14 +628,14 @@ func (m *MockMediaConvertAPI) GetPresetWithContext(arg0 context.Context, arg1 *m
 	return ret0, ret1
 }
 
-// GetPresetWithContext indicates an expected call of GetPresetWithContext.
+// GetPresetWithContext indicates an expected call of GetPresetWithContext
 func (mr *MockMediaConvertAPIMockRecorder) GetPresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPresetWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPresetWithContext), varargs...)
 }
 
-// GetQueue mocks base method.
+// GetQueue mocks base method
 func (m *MockMediaConvertAPI) GetQueue(arg0 *mediaconvert.GetQueueInput) (*mediaconvert.GetQueueOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetQueue", arg0)
@@ -878,13 +644,13 @@ func (m *MockMediaConvertAPI) GetQueue(arg0 *mediaconvert.GetQueueInput) (*media
 	return ret0, ret1
 }
 
-// GetQueue indicates an expected call of GetQueue.
+// GetQueue indicates an expected call of GetQueue
 func (mr *MockMediaConvertAPIMockRecorder) GetQueue(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueue", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetQueue), arg0)
 }
 
-// GetQueueRequest mocks base method.
+// GetQueueRequest mocks base method
 func (m *MockMediaConvertAPI) GetQueueRequest(arg0 *mediaconvert.GetQueueInput) (*request.Request, *mediaconvert.GetQueueOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetQueueRequest", arg0)
@@ -893,14 +659,14 @@ func (m *MockMediaConvertAPI) GetQueueRequest(arg0 *mediaconvert.GetQueueInput) 
 	return ret0, ret1
 }
 
-// GetQueueRequest indicates an expected call of GetQueueRequest.
+// GetQueueRequest indicates an expected call of GetQueueRequest
 func (mr *MockMediaConvertAPIMockRecorder) GetQueueRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueueRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetQueueRequest), arg0)
 }
 
-// GetQueueWithContext mocks base method.
-func (m *MockMediaConvertAPI) GetQueueWithContext(arg0 context.Context, arg1 *mediaconvert.GetQueueInput, arg2 ...request.Option) (*mediaconvert.GetQueueOutput, error) {
+// GetQueueWithContext mocks base method
+func (m *MockMediaConvertAPI) GetQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.GetQueueInput, arg2 ...request.Option) (*mediaconvert.GetQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -912,14 +678,14 @@ func (m *MockMediaConvertAPI) GetQueueWithContext(arg0 context.Context, arg1 *me
 	return ret0, ret1
 }
 
-// GetQueueWithContext indicates an expected call of GetQueueWithContext.
+// GetQueueWithContext indicates an expected call of GetQueueWithContext
 func (mr *MockMediaConvertAPIMockRecorder) GetQueueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueueWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetQueueWithContext), varargs...)
 }
 
-// ListJobTemplates mocks base method.
+// ListJobTemplates mocks base method
 func (m *MockMediaConvertAPI) ListJobTemplates(arg0 *mediaconvert.ListJobTemplatesInput) (*mediaconvert.ListJobTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobTemplates", arg0)
@@ -928,46 +694,13 @@ func (m *MockMediaConvertAPI) ListJobTemplates(arg0 *mediaconvert.ListJobTemplat
 	return ret0, ret1
 }
 
-// ListJobTemplates indicates an expected call of ListJobTemplates.
+// ListJobTemplates indicates an expected call of ListJobTemplates
 func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplates(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplates", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplates), arg0)
 }
 
-// ListJobTemplatesPages mocks base method.
-func (m *MockMediaConvertAPI) ListJobTemplatesPages(arg0 *mediaconvert.ListJobTemplatesInput, arg1 func(*mediaconvert.ListJobTemplatesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListJobTemplatesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListJobTemplatesPages indicates an expected call of ListJobTemplatesPages.
-func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplatesPages), arg0, arg1)
-}
-
-// ListJobTemplatesPagesWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListJobTemplatesPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 func(*mediaconvert.ListJobTemplatesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListJobTemplatesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListJobTemplatesPagesWithContext indicates an expected call of ListJobTemplatesPagesWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplatesPagesWithContext), varargs...)
-}
-
-// ListJobTemplatesRequest mocks base method.
+// ListJobTemplatesRequest mocks base method
 func (m *MockMediaConvertAPI) ListJobTemplatesRequest(arg0 *mediaconvert.ListJobTemplatesInput) (*request.Request, *mediaconvert.ListJobTemplatesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobTemplatesRequest", arg0)
@@ -976,14 +709,14 @@ func (m *MockMediaConvertAPI) ListJobTemplatesRequest(arg0 *mediaconvert.ListJob
 	return ret0, ret1
 }
 
-// ListJobTemplatesRequest indicates an expected call of ListJobTemplatesRequest.
+// ListJobTemplatesRequest indicates an expected call of ListJobTemplatesRequest
 func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplatesRequest), arg0)
 }
 
-// ListJobTemplatesWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListJobTemplatesWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 ...request.Option) (*mediaconvert.ListJobTemplatesOutput, error) {
+// ListJobTemplatesWithContext mocks base method
+func (m *MockMediaConvertAPI) ListJobTemplatesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 ...request.Option) (*mediaconvert.ListJobTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -995,14 +728,14 @@ func (m *MockMediaConvertAPI) ListJobTemplatesWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListJobTemplatesWithContext indicates an expected call of ListJobTemplatesWithContext.
+// ListJobTemplatesWithContext indicates an expected call of ListJobTemplatesWithContext
 func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplatesWithContext), varargs...)
 }
 
-// ListJobs mocks base method.
+// ListJobs mocks base method
 func (m *MockMediaConvertAPI) ListJobs(arg0 *mediaconvert.ListJobsInput) (*mediaconvert.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobs", arg0)
@@ -1011,46 +744,13 @@ func (m *MockMediaConvertAPI) ListJobs(arg0 *mediaconvert.ListJobsInput) (*media
 	return ret0, ret1
 }
 
-// ListJobs indicates an expected call of ListJobs.
+// ListJobs indicates an expected call of ListJobs
 func (mr *MockMediaConvertAPIMockRecorder) ListJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobs", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobs), arg0)
 }
 
-// ListJobsPages mocks base method.
-func (m *MockMediaConvertAPI) ListJobsPages(arg0 *mediaconvert.ListJobsInput, arg1 func(*mediaconvert.ListJobsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListJobsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListJobsPages indicates an expected call of ListJobsPages.
-func (mr *MockMediaConvertAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobsPages), arg0, arg1)
-}
-
-// ListJobsPagesWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobsInput, arg2 func(*mediaconvert.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListJobsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) ListJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobsPagesWithContext), varargs...)
-}
-
-// ListJobsRequest mocks base method.
+// ListJobsRequest mocks base method
 func (m *MockMediaConvertAPI) ListJobsRequest(arg0 *mediaconvert.ListJobsInput) (*request.Request, *mediaconvert.ListJobsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsRequest", arg0)
@@ -1059,14 +759,14 @@ func (m *MockMediaConvertAPI) ListJobsRequest(arg0 *mediaconvert.ListJobsInput) 
 	return ret0, ret1
 }
 
-// ListJobsRequest indicates an expected call of ListJobsRequest.
+// ListJobsRequest indicates an expected call of ListJobsRequest
 func (mr *MockMediaConvertAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobsRequest), arg0)
 }
 
-// ListJobsWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListJobsWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobsInput, arg2 ...request.Option) (*mediaconvert.ListJobsOutput, error) {
+// ListJobsWithContext mocks base method
+func (m *MockMediaConvertAPI) ListJobsWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobsInput, arg2 ...request.Option) (*mediaconvert.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1078,14 +778,14 @@ func (m *MockMediaConvertAPI) ListJobsWithContext(arg0 context.Context, arg1 *me
 	return ret0, ret1
 }
 
-// ListJobsWithContext indicates an expected call of ListJobsWithContext.
+// ListJobsWithContext indicates an expected call of ListJobsWithContext
 func (mr *MockMediaConvertAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobsWithContext), varargs...)
 }
 
-// ListPresets mocks base method.
+// ListPresets mocks base method
 func (m *MockMediaConvertAPI) ListPresets(arg0 *mediaconvert.ListPresetsInput) (*mediaconvert.ListPresetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPresets", arg0)
@@ -1094,46 +794,13 @@ func (m *MockMediaConvertAPI) ListPresets(arg0 *mediaconvert.ListPresetsInput) (
 	return ret0, ret1
 }
 
-// ListPresets indicates an expected call of ListPresets.
+// ListPresets indicates an expected call of ListPresets
 func (mr *MockMediaConvertAPIMockRecorder) ListPresets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresets", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresets), arg0)
 }
 
-// ListPresetsPages mocks base method.
-func (m *MockMediaConvertAPI) ListPresetsPages(arg0 *mediaconvert.ListPresetsInput, arg1 func(*mediaconvert.ListPresetsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListPresetsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPresetsPages indicates an expected call of ListPresetsPages.
-func (mr *MockMediaConvertAPIMockRecorder) ListPresetsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresetsPages), arg0, arg1)
-}
-
-// ListPresetsPagesWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListPresetsPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListPresetsInput, arg2 func(*mediaconvert.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListPresetsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListPresetsPagesWithContext indicates an expected call of ListPresetsPagesWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) ListPresetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresetsPagesWithContext), varargs...)
-}
-
-// ListPresetsRequest mocks base method.
+// ListPresetsRequest mocks base method
 func (m *MockMediaConvertAPI) ListPresetsRequest(arg0 *mediaconvert.ListPresetsInput) (*request.Request, *mediaconvert.ListPresetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPresetsRequest", arg0)
@@ -1142,14 +809,14 @@ func (m *MockMediaConvertAPI) ListPresetsRequest(arg0 *mediaconvert.ListPresetsI
 	return ret0, ret1
 }
 
-// ListPresetsRequest indicates an expected call of ListPresetsRequest.
+// ListPresetsRequest indicates an expected call of ListPresetsRequest
 func (mr *MockMediaConvertAPIMockRecorder) ListPresetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresetsRequest), arg0)
 }
 
-// ListPresetsWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListPresetsWithContext(arg0 context.Context, arg1 *mediaconvert.ListPresetsInput, arg2 ...request.Option) (*mediaconvert.ListPresetsOutput, error) {
+// ListPresetsWithContext mocks base method
+func (m *MockMediaConvertAPI) ListPresetsWithContext(arg0 aws.Context, arg1 *mediaconvert.ListPresetsInput, arg2 ...request.Option) (*mediaconvert.ListPresetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1161,14 +828,14 @@ func (m *MockMediaConvertAPI) ListPresetsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListPresetsWithContext indicates an expected call of ListPresetsWithContext.
+// ListPresetsWithContext indicates an expected call of ListPresetsWithContext
 func (mr *MockMediaConvertAPIMockRecorder) ListPresetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresetsWithContext), varargs...)
 }
 
-// ListQueues mocks base method.
+// ListQueues mocks base method
 func (m *MockMediaConvertAPI) ListQueues(arg0 *mediaconvert.ListQueuesInput) (*mediaconvert.ListQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListQueues", arg0)
@@ -1177,46 +844,13 @@ func (m *MockMediaConvertAPI) ListQueues(arg0 *mediaconvert.ListQueuesInput) (*m
 	return ret0, ret1
 }
 
-// ListQueues indicates an expected call of ListQueues.
+// ListQueues indicates an expected call of ListQueues
 func (mr *MockMediaConvertAPIMockRecorder) ListQueues(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueues", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueues), arg0)
 }
 
-// ListQueuesPages mocks base method.
-func (m *MockMediaConvertAPI) ListQueuesPages(arg0 *mediaconvert.ListQueuesInput, arg1 func(*mediaconvert.ListQueuesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListQueuesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListQueuesPages indicates an expected call of ListQueuesPages.
-func (mr *MockMediaConvertAPIMockRecorder) ListQueuesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueuesPages), arg0, arg1)
-}
-
-// ListQueuesPagesWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListQueuesPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListQueuesInput, arg2 func(*mediaconvert.ListQueuesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListQueuesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListQueuesPagesWithContext indicates an expected call of ListQueuesPagesWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) ListQueuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueuesPagesWithContext), varargs...)
-}
-
-// ListQueuesRequest mocks base method.
+// ListQueuesRequest mocks base method
 func (m *MockMediaConvertAPI) ListQueuesRequest(arg0 *mediaconvert.ListQueuesInput) (*request.Request, *mediaconvert.ListQueuesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListQueuesRequest", arg0)
@@ -1225,14 +859,14 @@ func (m *MockMediaConvertAPI) ListQueuesRequest(arg0 *mediaconvert.ListQueuesInp
 	return ret0, ret1
 }
 
-// ListQueuesRequest indicates an expected call of ListQueuesRequest.
+// ListQueuesRequest indicates an expected call of ListQueuesRequest
 func (mr *MockMediaConvertAPIMockRecorder) ListQueuesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueuesRequest), arg0)
 }
 
-// ListQueuesWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListQueuesWithContext(arg0 context.Context, arg1 *mediaconvert.ListQueuesInput, arg2 ...request.Option) (*mediaconvert.ListQueuesOutput, error) {
+// ListQueuesWithContext mocks base method
+func (m *MockMediaConvertAPI) ListQueuesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListQueuesInput, arg2 ...request.Option) (*mediaconvert.ListQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1244,14 +878,14 @@ func (m *MockMediaConvertAPI) ListQueuesWithContext(arg0 context.Context, arg1 *
 	return ret0, ret1
 }
 
-// ListQueuesWithContext indicates an expected call of ListQueuesWithContext.
+// ListQueuesWithContext indicates an expected call of ListQueuesWithContext
 func (mr *MockMediaConvertAPIMockRecorder) ListQueuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueuesWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
+// ListTagsForResource mocks base method
 func (m *MockMediaConvertAPI) ListTagsForResource(arg0 *mediaconvert.ListTagsForResourceInput) (*mediaconvert.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
@@ -1260,13 +894,13 @@ func (m *MockMediaConvertAPI) ListTagsForResource(arg0 *mediaconvert.ListTagsFor
 	return ret0, ret1
 }
 
-// ListTagsForResource indicates an expected call of ListTagsForResource.
+// ListTagsForResource indicates an expected call of ListTagsForResource
 func (mr *MockMediaConvertAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListTagsForResource), arg0)
 }
 
-// ListTagsForResourceRequest mocks base method.
+// ListTagsForResourceRequest mocks base method
 func (m *MockMediaConvertAPI) ListTagsForResourceRequest(arg0 *mediaconvert.ListTagsForResourceInput) (*request.Request, *mediaconvert.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
@@ -1275,14 +909,14 @@ func (m *MockMediaConvertAPI) ListTagsForResourceRequest(arg0 *mediaconvert.List
 	return ret0, ret1
 }
 
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
 func (mr *MockMediaConvertAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListTagsForResourceRequest), arg0)
 }
 
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockMediaConvertAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *mediaconvert.ListTagsForResourceInput, arg2 ...request.Option) (*mediaconvert.ListTagsForResourceOutput, error) {
+// ListTagsForResourceWithContext mocks base method
+func (m *MockMediaConvertAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *mediaconvert.ListTagsForResourceInput, arg2 ...request.Option) (*mediaconvert.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1294,64 +928,14 @@ func (m *MockMediaConvertAPI) ListTagsForResourceWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
 func (mr *MockMediaConvertAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
-// PutPolicy mocks base method.
-func (m *MockMediaConvertAPI) PutPolicy(arg0 *mediaconvert.PutPolicyInput) (*mediaconvert.PutPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutPolicy", arg0)
-	ret0, _ := ret[0].(*mediaconvert.PutPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutPolicy indicates an expected call of PutPolicy.
-func (mr *MockMediaConvertAPIMockRecorder) PutPolicy(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicy", reflect.TypeOf((*MockMediaConvertAPI)(nil).PutPolicy), arg0)
-}
-
-// PutPolicyRequest mocks base method.
-func (m *MockMediaConvertAPI) PutPolicyRequest(arg0 *mediaconvert.PutPolicyInput) (*request.Request, *mediaconvert.PutPolicyOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutPolicyRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*mediaconvert.PutPolicyOutput)
-	return ret0, ret1
-}
-
-// PutPolicyRequest indicates an expected call of PutPolicyRequest.
-func (mr *MockMediaConvertAPIMockRecorder) PutPolicyRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicyRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).PutPolicyRequest), arg0)
-}
-
-// PutPolicyWithContext mocks base method.
-func (m *MockMediaConvertAPI) PutPolicyWithContext(arg0 context.Context, arg1 *mediaconvert.PutPolicyInput, arg2 ...request.Option) (*mediaconvert.PutPolicyOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutPolicyWithContext", varargs...)
-	ret0, _ := ret[0].(*mediaconvert.PutPolicyOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutPolicyWithContext indicates an expected call of PutPolicyWithContext.
-func (mr *MockMediaConvertAPIMockRecorder) PutPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicyWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).PutPolicyWithContext), varargs...)
-}
-
-// TagResource mocks base method.
+// TagResource mocks base method
 func (m *MockMediaConvertAPI) TagResource(arg0 *mediaconvert.TagResourceInput) (*mediaconvert.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResource", arg0)
@@ -1360,13 +944,13 @@ func (m *MockMediaConvertAPI) TagResource(arg0 *mediaconvert.TagResourceInput) (
 	return ret0, ret1
 }
 
-// TagResource indicates an expected call of TagResource.
+// TagResource indicates an expected call of TagResource
 func (mr *MockMediaConvertAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockMediaConvertAPI)(nil).TagResource), arg0)
 }
 
-// TagResourceRequest mocks base method.
+// TagResourceRequest mocks base method
 func (m *MockMediaConvertAPI) TagResourceRequest(arg0 *mediaconvert.TagResourceInput) (*request.Request, *mediaconvert.TagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
@@ -1375,14 +959,14 @@ func (m *MockMediaConvertAPI) TagResourceRequest(arg0 *mediaconvert.TagResourceI
 	return ret0, ret1
 }
 
-// TagResourceRequest indicates an expected call of TagResourceRequest.
+// TagResourceRequest indicates an expected call of TagResourceRequest
 func (mr *MockMediaConvertAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).TagResourceRequest), arg0)
 }
 
-// TagResourceWithContext mocks base method.
-func (m *MockMediaConvertAPI) TagResourceWithContext(arg0 context.Context, arg1 *mediaconvert.TagResourceInput, arg2 ...request.Option) (*mediaconvert.TagResourceOutput, error) {
+// TagResourceWithContext mocks base method
+func (m *MockMediaConvertAPI) TagResourceWithContext(arg0 aws.Context, arg1 *mediaconvert.TagResourceInput, arg2 ...request.Option) (*mediaconvert.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1394,14 +978,14 @@ func (m *MockMediaConvertAPI) TagResourceWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// TagResourceWithContext indicates an expected call of TagResourceWithContext.
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
 func (mr *MockMediaConvertAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).TagResourceWithContext), varargs...)
 }
 
-// UntagResource mocks base method.
+// UntagResource mocks base method
 func (m *MockMediaConvertAPI) UntagResource(arg0 *mediaconvert.UntagResourceInput) (*mediaconvert.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResource", arg0)
@@ -1410,13 +994,13 @@ func (m *MockMediaConvertAPI) UntagResource(arg0 *mediaconvert.UntagResourceInpu
 	return ret0, ret1
 }
 
-// UntagResource indicates an expected call of UntagResource.
+// UntagResource indicates an expected call of UntagResource
 func (mr *MockMediaConvertAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockMediaConvertAPI)(nil).UntagResource), arg0)
 }
 
-// UntagResourceRequest mocks base method.
+// UntagResourceRequest mocks base method
 func (m *MockMediaConvertAPI) UntagResourceRequest(arg0 *mediaconvert.UntagResourceInput) (*request.Request, *mediaconvert.UntagResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
@@ -1425,14 +1009,14 @@ func (m *MockMediaConvertAPI) UntagResourceRequest(arg0 *mediaconvert.UntagResou
 	return ret0, ret1
 }
 
-// UntagResourceRequest indicates an expected call of UntagResourceRequest.
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
 func (mr *MockMediaConvertAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).UntagResourceRequest), arg0)
 }
 
-// UntagResourceWithContext mocks base method.
-func (m *MockMediaConvertAPI) UntagResourceWithContext(arg0 context.Context, arg1 *mediaconvert.UntagResourceInput, arg2 ...request.Option) (*mediaconvert.UntagResourceOutput, error) {
+// UntagResourceWithContext mocks base method
+func (m *MockMediaConvertAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *mediaconvert.UntagResourceInput, arg2 ...request.Option) (*mediaconvert.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1444,14 +1028,14 @@ func (m *MockMediaConvertAPI) UntagResourceWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// UntagResourceWithContext indicates an expected call of UntagResourceWithContext.
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
 func (mr *MockMediaConvertAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
-// UpdateJobTemplate mocks base method.
+// UpdateJobTemplate mocks base method
 func (m *MockMediaConvertAPI) UpdateJobTemplate(arg0 *mediaconvert.UpdateJobTemplateInput) (*mediaconvert.UpdateJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateJobTemplate", arg0)
@@ -1460,13 +1044,13 @@ func (m *MockMediaConvertAPI) UpdateJobTemplate(arg0 *mediaconvert.UpdateJobTemp
 	return ret0, ret1
 }
 
-// UpdateJobTemplate indicates an expected call of UpdateJobTemplate.
+// UpdateJobTemplate indicates an expected call of UpdateJobTemplate
 func (mr *MockMediaConvertAPIMockRecorder) UpdateJobTemplate(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobTemplate", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdateJobTemplate), arg0)
 }
 
-// UpdateJobTemplateRequest mocks base method.
+// UpdateJobTemplateRequest mocks base method
 func (m *MockMediaConvertAPI) UpdateJobTemplateRequest(arg0 *mediaconvert.UpdateJobTemplateInput) (*request.Request, *mediaconvert.UpdateJobTemplateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateJobTemplateRequest", arg0)
@@ -1475,14 +1059,14 @@ func (m *MockMediaConvertAPI) UpdateJobTemplateRequest(arg0 *mediaconvert.Update
 	return ret0, ret1
 }
 
-// UpdateJobTemplateRequest indicates an expected call of UpdateJobTemplateRequest.
+// UpdateJobTemplateRequest indicates an expected call of UpdateJobTemplateRequest
 func (mr *MockMediaConvertAPIMockRecorder) UpdateJobTemplateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobTemplateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdateJobTemplateRequest), arg0)
 }
 
-// UpdateJobTemplateWithContext mocks base method.
-func (m *MockMediaConvertAPI) UpdateJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.UpdateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.UpdateJobTemplateOutput, error) {
+// UpdateJobTemplateWithContext mocks base method
+func (m *MockMediaConvertAPI) UpdateJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.UpdateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.UpdateJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1494,14 +1078,14 @@ func (m *MockMediaConvertAPI) UpdateJobTemplateWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// UpdateJobTemplateWithContext indicates an expected call of UpdateJobTemplateWithContext.
+// UpdateJobTemplateWithContext indicates an expected call of UpdateJobTemplateWithContext
 func (mr *MockMediaConvertAPIMockRecorder) UpdateJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobTemplateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdateJobTemplateWithContext), varargs...)
 }
 
-// UpdatePreset mocks base method.
+// UpdatePreset mocks base method
 func (m *MockMediaConvertAPI) UpdatePreset(arg0 *mediaconvert.UpdatePresetInput) (*mediaconvert.UpdatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePreset", arg0)
@@ -1510,13 +1094,13 @@ func (m *MockMediaConvertAPI) UpdatePreset(arg0 *mediaconvert.UpdatePresetInput)
 	return ret0, ret1
 }
 
-// UpdatePreset indicates an expected call of UpdatePreset.
+// UpdatePreset indicates an expected call of UpdatePreset
 func (mr *MockMediaConvertAPIMockRecorder) UpdatePreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePreset", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdatePreset), arg0)
 }
 
-// UpdatePresetRequest mocks base method.
+// UpdatePresetRequest mocks base method
 func (m *MockMediaConvertAPI) UpdatePresetRequest(arg0 *mediaconvert.UpdatePresetInput) (*request.Request, *mediaconvert.UpdatePresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePresetRequest", arg0)
@@ -1525,14 +1109,14 @@ func (m *MockMediaConvertAPI) UpdatePresetRequest(arg0 *mediaconvert.UpdatePrese
 	return ret0, ret1
 }
 
-// UpdatePresetRequest indicates an expected call of UpdatePresetRequest.
+// UpdatePresetRequest indicates an expected call of UpdatePresetRequest
 func (mr *MockMediaConvertAPIMockRecorder) UpdatePresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePresetRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdatePresetRequest), arg0)
 }
 
-// UpdatePresetWithContext mocks base method.
-func (m *MockMediaConvertAPI) UpdatePresetWithContext(arg0 context.Context, arg1 *mediaconvert.UpdatePresetInput, arg2 ...request.Option) (*mediaconvert.UpdatePresetOutput, error) {
+// UpdatePresetWithContext mocks base method
+func (m *MockMediaConvertAPI) UpdatePresetWithContext(arg0 aws.Context, arg1 *mediaconvert.UpdatePresetInput, arg2 ...request.Option) (*mediaconvert.UpdatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1544,14 +1128,14 @@ func (m *MockMediaConvertAPI) UpdatePresetWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// UpdatePresetWithContext indicates an expected call of UpdatePresetWithContext.
+// UpdatePresetWithContext indicates an expected call of UpdatePresetWithContext
 func (mr *MockMediaConvertAPIMockRecorder) UpdatePresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePresetWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdatePresetWithContext), varargs...)
 }
 
-// UpdateQueue mocks base method.
+// UpdateQueue mocks base method
 func (m *MockMediaConvertAPI) UpdateQueue(arg0 *mediaconvert.UpdateQueueInput) (*mediaconvert.UpdateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateQueue", arg0)
@@ -1560,13 +1144,13 @@ func (m *MockMediaConvertAPI) UpdateQueue(arg0 *mediaconvert.UpdateQueueInput) (
 	return ret0, ret1
 }
 
-// UpdateQueue indicates an expected call of UpdateQueue.
+// UpdateQueue indicates an expected call of UpdateQueue
 func (mr *MockMediaConvertAPIMockRecorder) UpdateQueue(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQueue", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdateQueue), arg0)
 }
 
-// UpdateQueueRequest mocks base method.
+// UpdateQueueRequest mocks base method
 func (m *MockMediaConvertAPI) UpdateQueueRequest(arg0 *mediaconvert.UpdateQueueInput) (*request.Request, *mediaconvert.UpdateQueueOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateQueueRequest", arg0)
@@ -1575,14 +1159,14 @@ func (m *MockMediaConvertAPI) UpdateQueueRequest(arg0 *mediaconvert.UpdateQueueI
 	return ret0, ret1
 }
 
-// UpdateQueueRequest indicates an expected call of UpdateQueueRequest.
+// UpdateQueueRequest indicates an expected call of UpdateQueueRequest
 func (mr *MockMediaConvertAPIMockRecorder) UpdateQueueRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQueueRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).UpdateQueueRequest), arg0)
 }
 
-// UpdateQueueWithContext mocks base method.
-func (m *MockMediaConvertAPI) UpdateQueueWithContext(arg0 context.Context, arg1 *mediaconvert.UpdateQueueInput, arg2 ...request.Option) (*mediaconvert.UpdateQueueOutput, error) {
+// UpdateQueueWithContext mocks base method
+func (m *MockMediaConvertAPI) UpdateQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.UpdateQueueInput, arg2 ...request.Option) (*mediaconvert.UpdateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1594,7 +1178,7 @@ func (m *MockMediaConvertAPI) UpdateQueueWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// UpdateQueueWithContext indicates an expected call of UpdateQueueWithContext.
+// UpdateQueueWithContext indicates an expected call of UpdateQueueWithContext
 func (mr *MockMediaConvertAPIMockRecorder) UpdateQueueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

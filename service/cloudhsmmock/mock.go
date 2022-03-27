@@ -5,38 +5,37 @@
 package cloudhsmmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudhsm "github.com/aws/aws-sdk-go/service/cloudhsm"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockCloudHSMAPI is a mock of CloudHSMAPI interface.
+// MockCloudHSMAPI is a mock of CloudHSMAPI interface
 type MockCloudHSMAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockCloudHSMAPIMockRecorder
 }
 
-// MockCloudHSMAPIMockRecorder is the mock recorder for MockCloudHSMAPI.
+// MockCloudHSMAPIMockRecorder is the mock recorder for MockCloudHSMAPI
 type MockCloudHSMAPIMockRecorder struct {
 	mock *MockCloudHSMAPI
 }
 
-// NewMockCloudHSMAPI creates a new mock instance.
+// NewMockCloudHSMAPI creates a new mock instance
 func NewMockCloudHSMAPI(ctrl *gomock.Controller) *MockCloudHSMAPI {
 	mock := &MockCloudHSMAPI{ctrl: ctrl}
 	mock.recorder = &MockCloudHSMAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockCloudHSMAPI) EXPECT() *MockCloudHSMAPIMockRecorder {
 	return m.recorder
 }
 
-// AddTagsToResource mocks base method.
+// AddTagsToResource mocks base method
 func (m *MockCloudHSMAPI) AddTagsToResource(arg0 *cloudhsm.AddTagsToResourceInput) (*cloudhsm.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsToResource", arg0)
@@ -45,13 +44,13 @@ func (m *MockCloudHSMAPI) AddTagsToResource(arg0 *cloudhsm.AddTagsToResourceInpu
 	return ret0, ret1
 }
 
-// AddTagsToResource indicates an expected call of AddTagsToResource.
+// AddTagsToResource indicates an expected call of AddTagsToResource
 func (mr *MockCloudHSMAPIMockRecorder) AddTagsToResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToResource", reflect.TypeOf((*MockCloudHSMAPI)(nil).AddTagsToResource), arg0)
 }
 
-// AddTagsToResourceRequest mocks base method.
+// AddTagsToResourceRequest mocks base method
 func (m *MockCloudHSMAPI) AddTagsToResourceRequest(arg0 *cloudhsm.AddTagsToResourceInput) (*request.Request, *cloudhsm.AddTagsToResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddTagsToResourceRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockCloudHSMAPI) AddTagsToResourceRequest(arg0 *cloudhsm.AddTagsToResou
 	return ret0, ret1
 }
 
-// AddTagsToResourceRequest indicates an expected call of AddTagsToResourceRequest.
+// AddTagsToResourceRequest indicates an expected call of AddTagsToResourceRequest
 func (mr *MockCloudHSMAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToResourceRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).AddTagsToResourceRequest), arg0)
 }
 
-// AddTagsToResourceWithContext mocks base method.
-func (m *MockCloudHSMAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *cloudhsm.AddTagsToResourceInput, arg2 ...request.Option) (*cloudhsm.AddTagsToResourceOutput, error) {
+// AddTagsToResourceWithContext mocks base method
+func (m *MockCloudHSMAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *cloudhsm.AddTagsToResourceInput, arg2 ...request.Option) (*cloudhsm.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockCloudHSMAPI) AddTagsToResourceWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// AddTagsToResourceWithContext indicates an expected call of AddTagsToResourceWithContext.
+// AddTagsToResourceWithContext indicates an expected call of AddTagsToResourceWithContext
 func (mr *MockCloudHSMAPIMockRecorder) AddTagsToResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsToResourceWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).AddTagsToResourceWithContext), varargs...)
 }
 
-// CreateHapg mocks base method.
+// CreateHapg mocks base method
 func (m *MockCloudHSMAPI) CreateHapg(arg0 *cloudhsm.CreateHapgInput) (*cloudhsm.CreateHapgOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateHapg", arg0)
@@ -95,13 +94,13 @@ func (m *MockCloudHSMAPI) CreateHapg(arg0 *cloudhsm.CreateHapgInput) (*cloudhsm.
 	return ret0, ret1
 }
 
-// CreateHapg indicates an expected call of CreateHapg.
+// CreateHapg indicates an expected call of CreateHapg
 func (mr *MockCloudHSMAPIMockRecorder) CreateHapg(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHapg", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateHapg), arg0)
 }
 
-// CreateHapgRequest mocks base method.
+// CreateHapgRequest mocks base method
 func (m *MockCloudHSMAPI) CreateHapgRequest(arg0 *cloudhsm.CreateHapgInput) (*request.Request, *cloudhsm.CreateHapgOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateHapgRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockCloudHSMAPI) CreateHapgRequest(arg0 *cloudhsm.CreateHapgInput) (*re
 	return ret0, ret1
 }
 
-// CreateHapgRequest indicates an expected call of CreateHapgRequest.
+// CreateHapgRequest indicates an expected call of CreateHapgRequest
 func (mr *MockCloudHSMAPIMockRecorder) CreateHapgRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHapgRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateHapgRequest), arg0)
 }
 
-// CreateHapgWithContext mocks base method.
-func (m *MockCloudHSMAPI) CreateHapgWithContext(arg0 context.Context, arg1 *cloudhsm.CreateHapgInput, arg2 ...request.Option) (*cloudhsm.CreateHapgOutput, error) {
+// CreateHapgWithContext mocks base method
+func (m *MockCloudHSMAPI) CreateHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.CreateHapgInput, arg2 ...request.Option) (*cloudhsm.CreateHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockCloudHSMAPI) CreateHapgWithContext(arg0 context.Context, arg1 *clou
 	return ret0, ret1
 }
 
-// CreateHapgWithContext indicates an expected call of CreateHapgWithContext.
+// CreateHapgWithContext indicates an expected call of CreateHapgWithContext
 func (mr *MockCloudHSMAPIMockRecorder) CreateHapgWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHapgWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateHapgWithContext), varargs...)
 }
 
-// CreateHsm mocks base method.
+// CreateHsm mocks base method
 func (m *MockCloudHSMAPI) CreateHsm(arg0 *cloudhsm.CreateHsmInput) (*cloudhsm.CreateHsmOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateHsm", arg0)
@@ -145,13 +144,13 @@ func (m *MockCloudHSMAPI) CreateHsm(arg0 *cloudhsm.CreateHsmInput) (*cloudhsm.Cr
 	return ret0, ret1
 }
 
-// CreateHsm indicates an expected call of CreateHsm.
+// CreateHsm indicates an expected call of CreateHsm
 func (mr *MockCloudHSMAPIMockRecorder) CreateHsm(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHsm", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateHsm), arg0)
 }
 
-// CreateHsmRequest mocks base method.
+// CreateHsmRequest mocks base method
 func (m *MockCloudHSMAPI) CreateHsmRequest(arg0 *cloudhsm.CreateHsmInput) (*request.Request, *cloudhsm.CreateHsmOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateHsmRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockCloudHSMAPI) CreateHsmRequest(arg0 *cloudhsm.CreateHsmInput) (*requ
 	return ret0, ret1
 }
 
-// CreateHsmRequest indicates an expected call of CreateHsmRequest.
+// CreateHsmRequest indicates an expected call of CreateHsmRequest
 func (mr *MockCloudHSMAPIMockRecorder) CreateHsmRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHsmRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateHsmRequest), arg0)
 }
 
-// CreateHsmWithContext mocks base method.
-func (m *MockCloudHSMAPI) CreateHsmWithContext(arg0 context.Context, arg1 *cloudhsm.CreateHsmInput, arg2 ...request.Option) (*cloudhsm.CreateHsmOutput, error) {
+// CreateHsmWithContext mocks base method
+func (m *MockCloudHSMAPI) CreateHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.CreateHsmInput, arg2 ...request.Option) (*cloudhsm.CreateHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockCloudHSMAPI) CreateHsmWithContext(arg0 context.Context, arg1 *cloud
 	return ret0, ret1
 }
 
-// CreateHsmWithContext indicates an expected call of CreateHsmWithContext.
+// CreateHsmWithContext indicates an expected call of CreateHsmWithContext
 func (mr *MockCloudHSMAPIMockRecorder) CreateHsmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHsmWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateHsmWithContext), varargs...)
 }
 
-// CreateLunaClient mocks base method.
+// CreateLunaClient mocks base method
 func (m *MockCloudHSMAPI) CreateLunaClient(arg0 *cloudhsm.CreateLunaClientInput) (*cloudhsm.CreateLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateLunaClient", arg0)
@@ -195,13 +194,13 @@ func (m *MockCloudHSMAPI) CreateLunaClient(arg0 *cloudhsm.CreateLunaClientInput)
 	return ret0, ret1
 }
 
-// CreateLunaClient indicates an expected call of CreateLunaClient.
+// CreateLunaClient indicates an expected call of CreateLunaClient
 func (mr *MockCloudHSMAPIMockRecorder) CreateLunaClient(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLunaClient", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateLunaClient), arg0)
 }
 
-// CreateLunaClientRequest mocks base method.
+// CreateLunaClientRequest mocks base method
 func (m *MockCloudHSMAPI) CreateLunaClientRequest(arg0 *cloudhsm.CreateLunaClientInput) (*request.Request, *cloudhsm.CreateLunaClientOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateLunaClientRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockCloudHSMAPI) CreateLunaClientRequest(arg0 *cloudhsm.CreateLunaClien
 	return ret0, ret1
 }
 
-// CreateLunaClientRequest indicates an expected call of CreateLunaClientRequest.
+// CreateLunaClientRequest indicates an expected call of CreateLunaClientRequest
 func (mr *MockCloudHSMAPIMockRecorder) CreateLunaClientRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLunaClientRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateLunaClientRequest), arg0)
 }
 
-// CreateLunaClientWithContext mocks base method.
-func (m *MockCloudHSMAPI) CreateLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.CreateLunaClientInput, arg2 ...request.Option) (*cloudhsm.CreateLunaClientOutput, error) {
+// CreateLunaClientWithContext mocks base method
+func (m *MockCloudHSMAPI) CreateLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.CreateLunaClientInput, arg2 ...request.Option) (*cloudhsm.CreateLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockCloudHSMAPI) CreateLunaClientWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// CreateLunaClientWithContext indicates an expected call of CreateLunaClientWithContext.
+// CreateLunaClientWithContext indicates an expected call of CreateLunaClientWithContext
 func (mr *MockCloudHSMAPIMockRecorder) CreateLunaClientWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLunaClientWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).CreateLunaClientWithContext), varargs...)
 }
 
-// DeleteHapg mocks base method.
+// DeleteHapg mocks base method
 func (m *MockCloudHSMAPI) DeleteHapg(arg0 *cloudhsm.DeleteHapgInput) (*cloudhsm.DeleteHapgOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteHapg", arg0)
@@ -245,13 +244,13 @@ func (m *MockCloudHSMAPI) DeleteHapg(arg0 *cloudhsm.DeleteHapgInput) (*cloudhsm.
 	return ret0, ret1
 }
 
-// DeleteHapg indicates an expected call of DeleteHapg.
+// DeleteHapg indicates an expected call of DeleteHapg
 func (mr *MockCloudHSMAPIMockRecorder) DeleteHapg(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHapg", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteHapg), arg0)
 }
 
-// DeleteHapgRequest mocks base method.
+// DeleteHapgRequest mocks base method
 func (m *MockCloudHSMAPI) DeleteHapgRequest(arg0 *cloudhsm.DeleteHapgInput) (*request.Request, *cloudhsm.DeleteHapgOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteHapgRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockCloudHSMAPI) DeleteHapgRequest(arg0 *cloudhsm.DeleteHapgInput) (*re
 	return ret0, ret1
 }
 
-// DeleteHapgRequest indicates an expected call of DeleteHapgRequest.
+// DeleteHapgRequest indicates an expected call of DeleteHapgRequest
 func (mr *MockCloudHSMAPIMockRecorder) DeleteHapgRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHapgRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteHapgRequest), arg0)
 }
 
-// DeleteHapgWithContext mocks base method.
-func (m *MockCloudHSMAPI) DeleteHapgWithContext(arg0 context.Context, arg1 *cloudhsm.DeleteHapgInput, arg2 ...request.Option) (*cloudhsm.DeleteHapgOutput, error) {
+// DeleteHapgWithContext mocks base method
+func (m *MockCloudHSMAPI) DeleteHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.DeleteHapgInput, arg2 ...request.Option) (*cloudhsm.DeleteHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockCloudHSMAPI) DeleteHapgWithContext(arg0 context.Context, arg1 *clou
 	return ret0, ret1
 }
 
-// DeleteHapgWithContext indicates an expected call of DeleteHapgWithContext.
+// DeleteHapgWithContext indicates an expected call of DeleteHapgWithContext
 func (mr *MockCloudHSMAPIMockRecorder) DeleteHapgWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHapgWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteHapgWithContext), varargs...)
 }
 
-// DeleteHsm mocks base method.
+// DeleteHsm mocks base method
 func (m *MockCloudHSMAPI) DeleteHsm(arg0 *cloudhsm.DeleteHsmInput) (*cloudhsm.DeleteHsmOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteHsm", arg0)
@@ -295,13 +294,13 @@ func (m *MockCloudHSMAPI) DeleteHsm(arg0 *cloudhsm.DeleteHsmInput) (*cloudhsm.De
 	return ret0, ret1
 }
 
-// DeleteHsm indicates an expected call of DeleteHsm.
+// DeleteHsm indicates an expected call of DeleteHsm
 func (mr *MockCloudHSMAPIMockRecorder) DeleteHsm(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHsm", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteHsm), arg0)
 }
 
-// DeleteHsmRequest mocks base method.
+// DeleteHsmRequest mocks base method
 func (m *MockCloudHSMAPI) DeleteHsmRequest(arg0 *cloudhsm.DeleteHsmInput) (*request.Request, *cloudhsm.DeleteHsmOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteHsmRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockCloudHSMAPI) DeleteHsmRequest(arg0 *cloudhsm.DeleteHsmInput) (*requ
 	return ret0, ret1
 }
 
-// DeleteHsmRequest indicates an expected call of DeleteHsmRequest.
+// DeleteHsmRequest indicates an expected call of DeleteHsmRequest
 func (mr *MockCloudHSMAPIMockRecorder) DeleteHsmRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHsmRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteHsmRequest), arg0)
 }
 
-// DeleteHsmWithContext mocks base method.
-func (m *MockCloudHSMAPI) DeleteHsmWithContext(arg0 context.Context, arg1 *cloudhsm.DeleteHsmInput, arg2 ...request.Option) (*cloudhsm.DeleteHsmOutput, error) {
+// DeleteHsmWithContext mocks base method
+func (m *MockCloudHSMAPI) DeleteHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.DeleteHsmInput, arg2 ...request.Option) (*cloudhsm.DeleteHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockCloudHSMAPI) DeleteHsmWithContext(arg0 context.Context, arg1 *cloud
 	return ret0, ret1
 }
 
-// DeleteHsmWithContext indicates an expected call of DeleteHsmWithContext.
+// DeleteHsmWithContext indicates an expected call of DeleteHsmWithContext
 func (mr *MockCloudHSMAPIMockRecorder) DeleteHsmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHsmWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteHsmWithContext), varargs...)
 }
 
-// DeleteLunaClient mocks base method.
+// DeleteLunaClient mocks base method
 func (m *MockCloudHSMAPI) DeleteLunaClient(arg0 *cloudhsm.DeleteLunaClientInput) (*cloudhsm.DeleteLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteLunaClient", arg0)
@@ -345,13 +344,13 @@ func (m *MockCloudHSMAPI) DeleteLunaClient(arg0 *cloudhsm.DeleteLunaClientInput)
 	return ret0, ret1
 }
 
-// DeleteLunaClient indicates an expected call of DeleteLunaClient.
+// DeleteLunaClient indicates an expected call of DeleteLunaClient
 func (mr *MockCloudHSMAPIMockRecorder) DeleteLunaClient(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLunaClient", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteLunaClient), arg0)
 }
 
-// DeleteLunaClientRequest mocks base method.
+// DeleteLunaClientRequest mocks base method
 func (m *MockCloudHSMAPI) DeleteLunaClientRequest(arg0 *cloudhsm.DeleteLunaClientInput) (*request.Request, *cloudhsm.DeleteLunaClientOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteLunaClientRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockCloudHSMAPI) DeleteLunaClientRequest(arg0 *cloudhsm.DeleteLunaClien
 	return ret0, ret1
 }
 
-// DeleteLunaClientRequest indicates an expected call of DeleteLunaClientRequest.
+// DeleteLunaClientRequest indicates an expected call of DeleteLunaClientRequest
 func (mr *MockCloudHSMAPIMockRecorder) DeleteLunaClientRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLunaClientRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteLunaClientRequest), arg0)
 }
 
-// DeleteLunaClientWithContext mocks base method.
-func (m *MockCloudHSMAPI) DeleteLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.DeleteLunaClientInput, arg2 ...request.Option) (*cloudhsm.DeleteLunaClientOutput, error) {
+// DeleteLunaClientWithContext mocks base method
+func (m *MockCloudHSMAPI) DeleteLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.DeleteLunaClientInput, arg2 ...request.Option) (*cloudhsm.DeleteLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockCloudHSMAPI) DeleteLunaClientWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// DeleteLunaClientWithContext indicates an expected call of DeleteLunaClientWithContext.
+// DeleteLunaClientWithContext indicates an expected call of DeleteLunaClientWithContext
 func (mr *MockCloudHSMAPIMockRecorder) DeleteLunaClientWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLunaClientWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).DeleteLunaClientWithContext), varargs...)
 }
 
-// DescribeHapg mocks base method.
+// DescribeHapg mocks base method
 func (m *MockCloudHSMAPI) DescribeHapg(arg0 *cloudhsm.DescribeHapgInput) (*cloudhsm.DescribeHapgOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeHapg", arg0)
@@ -395,13 +394,13 @@ func (m *MockCloudHSMAPI) DescribeHapg(arg0 *cloudhsm.DescribeHapgInput) (*cloud
 	return ret0, ret1
 }
 
-// DescribeHapg indicates an expected call of DescribeHapg.
+// DescribeHapg indicates an expected call of DescribeHapg
 func (mr *MockCloudHSMAPIMockRecorder) DescribeHapg(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHapg", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeHapg), arg0)
 }
 
-// DescribeHapgRequest mocks base method.
+// DescribeHapgRequest mocks base method
 func (m *MockCloudHSMAPI) DescribeHapgRequest(arg0 *cloudhsm.DescribeHapgInput) (*request.Request, *cloudhsm.DescribeHapgOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeHapgRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockCloudHSMAPI) DescribeHapgRequest(arg0 *cloudhsm.DescribeHapgInput) 
 	return ret0, ret1
 }
 
-// DescribeHapgRequest indicates an expected call of DescribeHapgRequest.
+// DescribeHapgRequest indicates an expected call of DescribeHapgRequest
 func (mr *MockCloudHSMAPIMockRecorder) DescribeHapgRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHapgRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeHapgRequest), arg0)
 }
 
-// DescribeHapgWithContext mocks base method.
-func (m *MockCloudHSMAPI) DescribeHapgWithContext(arg0 context.Context, arg1 *cloudhsm.DescribeHapgInput, arg2 ...request.Option) (*cloudhsm.DescribeHapgOutput, error) {
+// DescribeHapgWithContext mocks base method
+func (m *MockCloudHSMAPI) DescribeHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.DescribeHapgInput, arg2 ...request.Option) (*cloudhsm.DescribeHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockCloudHSMAPI) DescribeHapgWithContext(arg0 context.Context, arg1 *cl
 	return ret0, ret1
 }
 
-// DescribeHapgWithContext indicates an expected call of DescribeHapgWithContext.
+// DescribeHapgWithContext indicates an expected call of DescribeHapgWithContext
 func (mr *MockCloudHSMAPIMockRecorder) DescribeHapgWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHapgWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeHapgWithContext), varargs...)
 }
 
-// DescribeHsm mocks base method.
+// DescribeHsm mocks base method
 func (m *MockCloudHSMAPI) DescribeHsm(arg0 *cloudhsm.DescribeHsmInput) (*cloudhsm.DescribeHsmOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeHsm", arg0)
@@ -445,13 +444,13 @@ func (m *MockCloudHSMAPI) DescribeHsm(arg0 *cloudhsm.DescribeHsmInput) (*cloudhs
 	return ret0, ret1
 }
 
-// DescribeHsm indicates an expected call of DescribeHsm.
+// DescribeHsm indicates an expected call of DescribeHsm
 func (mr *MockCloudHSMAPIMockRecorder) DescribeHsm(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHsm", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeHsm), arg0)
 }
 
-// DescribeHsmRequest mocks base method.
+// DescribeHsmRequest mocks base method
 func (m *MockCloudHSMAPI) DescribeHsmRequest(arg0 *cloudhsm.DescribeHsmInput) (*request.Request, *cloudhsm.DescribeHsmOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeHsmRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockCloudHSMAPI) DescribeHsmRequest(arg0 *cloudhsm.DescribeHsmInput) (*
 	return ret0, ret1
 }
 
-// DescribeHsmRequest indicates an expected call of DescribeHsmRequest.
+// DescribeHsmRequest indicates an expected call of DescribeHsmRequest
 func (mr *MockCloudHSMAPIMockRecorder) DescribeHsmRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHsmRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeHsmRequest), arg0)
 }
 
-// DescribeHsmWithContext mocks base method.
-func (m *MockCloudHSMAPI) DescribeHsmWithContext(arg0 context.Context, arg1 *cloudhsm.DescribeHsmInput, arg2 ...request.Option) (*cloudhsm.DescribeHsmOutput, error) {
+// DescribeHsmWithContext mocks base method
+func (m *MockCloudHSMAPI) DescribeHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.DescribeHsmInput, arg2 ...request.Option) (*cloudhsm.DescribeHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,14 +478,14 @@ func (m *MockCloudHSMAPI) DescribeHsmWithContext(arg0 context.Context, arg1 *clo
 	return ret0, ret1
 }
 
-// DescribeHsmWithContext indicates an expected call of DescribeHsmWithContext.
+// DescribeHsmWithContext indicates an expected call of DescribeHsmWithContext
 func (mr *MockCloudHSMAPIMockRecorder) DescribeHsmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHsmWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeHsmWithContext), varargs...)
 }
 
-// DescribeLunaClient mocks base method.
+// DescribeLunaClient mocks base method
 func (m *MockCloudHSMAPI) DescribeLunaClient(arg0 *cloudhsm.DescribeLunaClientInput) (*cloudhsm.DescribeLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeLunaClient", arg0)
@@ -495,13 +494,13 @@ func (m *MockCloudHSMAPI) DescribeLunaClient(arg0 *cloudhsm.DescribeLunaClientIn
 	return ret0, ret1
 }
 
-// DescribeLunaClient indicates an expected call of DescribeLunaClient.
+// DescribeLunaClient indicates an expected call of DescribeLunaClient
 func (mr *MockCloudHSMAPIMockRecorder) DescribeLunaClient(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLunaClient", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeLunaClient), arg0)
 }
 
-// DescribeLunaClientRequest mocks base method.
+// DescribeLunaClientRequest mocks base method
 func (m *MockCloudHSMAPI) DescribeLunaClientRequest(arg0 *cloudhsm.DescribeLunaClientInput) (*request.Request, *cloudhsm.DescribeLunaClientOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeLunaClientRequest", arg0)
@@ -510,14 +509,14 @@ func (m *MockCloudHSMAPI) DescribeLunaClientRequest(arg0 *cloudhsm.DescribeLunaC
 	return ret0, ret1
 }
 
-// DescribeLunaClientRequest indicates an expected call of DescribeLunaClientRequest.
+// DescribeLunaClientRequest indicates an expected call of DescribeLunaClientRequest
 func (mr *MockCloudHSMAPIMockRecorder) DescribeLunaClientRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLunaClientRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeLunaClientRequest), arg0)
 }
 
-// DescribeLunaClientWithContext mocks base method.
-func (m *MockCloudHSMAPI) DescribeLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.DescribeLunaClientInput, arg2 ...request.Option) (*cloudhsm.DescribeLunaClientOutput, error) {
+// DescribeLunaClientWithContext mocks base method
+func (m *MockCloudHSMAPI) DescribeLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.DescribeLunaClientInput, arg2 ...request.Option) (*cloudhsm.DescribeLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -529,14 +528,14 @@ func (m *MockCloudHSMAPI) DescribeLunaClientWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// DescribeLunaClientWithContext indicates an expected call of DescribeLunaClientWithContext.
+// DescribeLunaClientWithContext indicates an expected call of DescribeLunaClientWithContext
 func (mr *MockCloudHSMAPIMockRecorder) DescribeLunaClientWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLunaClientWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).DescribeLunaClientWithContext), varargs...)
 }
 
-// GetConfig mocks base method.
+// GetConfig mocks base method
 func (m *MockCloudHSMAPI) GetConfig(arg0 *cloudhsm.GetConfigInput) (*cloudhsm.GetConfigOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetConfig", arg0)
@@ -545,13 +544,13 @@ func (m *MockCloudHSMAPI) GetConfig(arg0 *cloudhsm.GetConfigInput) (*cloudhsm.Ge
 	return ret0, ret1
 }
 
-// GetConfig indicates an expected call of GetConfig.
+// GetConfig indicates an expected call of GetConfig
 func (mr *MockCloudHSMAPIMockRecorder) GetConfig(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfig", reflect.TypeOf((*MockCloudHSMAPI)(nil).GetConfig), arg0)
 }
 
-// GetConfigRequest mocks base method.
+// GetConfigRequest mocks base method
 func (m *MockCloudHSMAPI) GetConfigRequest(arg0 *cloudhsm.GetConfigInput) (*request.Request, *cloudhsm.GetConfigOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetConfigRequest", arg0)
@@ -560,14 +559,14 @@ func (m *MockCloudHSMAPI) GetConfigRequest(arg0 *cloudhsm.GetConfigInput) (*requ
 	return ret0, ret1
 }
 
-// GetConfigRequest indicates an expected call of GetConfigRequest.
+// GetConfigRequest indicates an expected call of GetConfigRequest
 func (mr *MockCloudHSMAPIMockRecorder) GetConfigRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).GetConfigRequest), arg0)
 }
 
-// GetConfigWithContext mocks base method.
-func (m *MockCloudHSMAPI) GetConfigWithContext(arg0 context.Context, arg1 *cloudhsm.GetConfigInput, arg2 ...request.Option) (*cloudhsm.GetConfigOutput, error) {
+// GetConfigWithContext mocks base method
+func (m *MockCloudHSMAPI) GetConfigWithContext(arg0 aws.Context, arg1 *cloudhsm.GetConfigInput, arg2 ...request.Option) (*cloudhsm.GetConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -579,14 +578,14 @@ func (m *MockCloudHSMAPI) GetConfigWithContext(arg0 context.Context, arg1 *cloud
 	return ret0, ret1
 }
 
-// GetConfigWithContext indicates an expected call of GetConfigWithContext.
+// GetConfigWithContext indicates an expected call of GetConfigWithContext
 func (mr *MockCloudHSMAPIMockRecorder) GetConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).GetConfigWithContext), varargs...)
 }
 
-// ListAvailableZones mocks base method.
+// ListAvailableZones mocks base method
 func (m *MockCloudHSMAPI) ListAvailableZones(arg0 *cloudhsm.ListAvailableZonesInput) (*cloudhsm.ListAvailableZonesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAvailableZones", arg0)
@@ -595,13 +594,13 @@ func (m *MockCloudHSMAPI) ListAvailableZones(arg0 *cloudhsm.ListAvailableZonesIn
 	return ret0, ret1
 }
 
-// ListAvailableZones indicates an expected call of ListAvailableZones.
+// ListAvailableZones indicates an expected call of ListAvailableZones
 func (mr *MockCloudHSMAPIMockRecorder) ListAvailableZones(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableZones", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListAvailableZones), arg0)
 }
 
-// ListAvailableZonesRequest mocks base method.
+// ListAvailableZonesRequest mocks base method
 func (m *MockCloudHSMAPI) ListAvailableZonesRequest(arg0 *cloudhsm.ListAvailableZonesInput) (*request.Request, *cloudhsm.ListAvailableZonesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAvailableZonesRequest", arg0)
@@ -610,14 +609,14 @@ func (m *MockCloudHSMAPI) ListAvailableZonesRequest(arg0 *cloudhsm.ListAvailable
 	return ret0, ret1
 }
 
-// ListAvailableZonesRequest indicates an expected call of ListAvailableZonesRequest.
+// ListAvailableZonesRequest indicates an expected call of ListAvailableZonesRequest
 func (mr *MockCloudHSMAPIMockRecorder) ListAvailableZonesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableZonesRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListAvailableZonesRequest), arg0)
 }
 
-// ListAvailableZonesWithContext mocks base method.
-func (m *MockCloudHSMAPI) ListAvailableZonesWithContext(arg0 context.Context, arg1 *cloudhsm.ListAvailableZonesInput, arg2 ...request.Option) (*cloudhsm.ListAvailableZonesOutput, error) {
+// ListAvailableZonesWithContext mocks base method
+func (m *MockCloudHSMAPI) ListAvailableZonesWithContext(arg0 aws.Context, arg1 *cloudhsm.ListAvailableZonesInput, arg2 ...request.Option) (*cloudhsm.ListAvailableZonesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -629,14 +628,14 @@ func (m *MockCloudHSMAPI) ListAvailableZonesWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// ListAvailableZonesWithContext indicates an expected call of ListAvailableZonesWithContext.
+// ListAvailableZonesWithContext indicates an expected call of ListAvailableZonesWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ListAvailableZonesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableZonesWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListAvailableZonesWithContext), varargs...)
 }
 
-// ListHapgs mocks base method.
+// ListHapgs mocks base method
 func (m *MockCloudHSMAPI) ListHapgs(arg0 *cloudhsm.ListHapgsInput) (*cloudhsm.ListHapgsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListHapgs", arg0)
@@ -645,13 +644,13 @@ func (m *MockCloudHSMAPI) ListHapgs(arg0 *cloudhsm.ListHapgsInput) (*cloudhsm.Li
 	return ret0, ret1
 }
 
-// ListHapgs indicates an expected call of ListHapgs.
+// ListHapgs indicates an expected call of ListHapgs
 func (mr *MockCloudHSMAPIMockRecorder) ListHapgs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHapgs", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListHapgs), arg0)
 }
 
-// ListHapgsRequest mocks base method.
+// ListHapgsRequest mocks base method
 func (m *MockCloudHSMAPI) ListHapgsRequest(arg0 *cloudhsm.ListHapgsInput) (*request.Request, *cloudhsm.ListHapgsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListHapgsRequest", arg0)
@@ -660,14 +659,14 @@ func (m *MockCloudHSMAPI) ListHapgsRequest(arg0 *cloudhsm.ListHapgsInput) (*requ
 	return ret0, ret1
 }
 
-// ListHapgsRequest indicates an expected call of ListHapgsRequest.
+// ListHapgsRequest indicates an expected call of ListHapgsRequest
 func (mr *MockCloudHSMAPIMockRecorder) ListHapgsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHapgsRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListHapgsRequest), arg0)
 }
 
-// ListHapgsWithContext mocks base method.
-func (m *MockCloudHSMAPI) ListHapgsWithContext(arg0 context.Context, arg1 *cloudhsm.ListHapgsInput, arg2 ...request.Option) (*cloudhsm.ListHapgsOutput, error) {
+// ListHapgsWithContext mocks base method
+func (m *MockCloudHSMAPI) ListHapgsWithContext(arg0 aws.Context, arg1 *cloudhsm.ListHapgsInput, arg2 ...request.Option) (*cloudhsm.ListHapgsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,14 +678,14 @@ func (m *MockCloudHSMAPI) ListHapgsWithContext(arg0 context.Context, arg1 *cloud
 	return ret0, ret1
 }
 
-// ListHapgsWithContext indicates an expected call of ListHapgsWithContext.
+// ListHapgsWithContext indicates an expected call of ListHapgsWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ListHapgsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHapgsWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListHapgsWithContext), varargs...)
 }
 
-// ListHsms mocks base method.
+// ListHsms mocks base method
 func (m *MockCloudHSMAPI) ListHsms(arg0 *cloudhsm.ListHsmsInput) (*cloudhsm.ListHsmsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListHsms", arg0)
@@ -695,13 +694,13 @@ func (m *MockCloudHSMAPI) ListHsms(arg0 *cloudhsm.ListHsmsInput) (*cloudhsm.List
 	return ret0, ret1
 }
 
-// ListHsms indicates an expected call of ListHsms.
+// ListHsms indicates an expected call of ListHsms
 func (mr *MockCloudHSMAPIMockRecorder) ListHsms(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHsms", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListHsms), arg0)
 }
 
-// ListHsmsRequest mocks base method.
+// ListHsmsRequest mocks base method
 func (m *MockCloudHSMAPI) ListHsmsRequest(arg0 *cloudhsm.ListHsmsInput) (*request.Request, *cloudhsm.ListHsmsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListHsmsRequest", arg0)
@@ -710,14 +709,14 @@ func (m *MockCloudHSMAPI) ListHsmsRequest(arg0 *cloudhsm.ListHsmsInput) (*reques
 	return ret0, ret1
 }
 
-// ListHsmsRequest indicates an expected call of ListHsmsRequest.
+// ListHsmsRequest indicates an expected call of ListHsmsRequest
 func (mr *MockCloudHSMAPIMockRecorder) ListHsmsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHsmsRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListHsmsRequest), arg0)
 }
 
-// ListHsmsWithContext mocks base method.
-func (m *MockCloudHSMAPI) ListHsmsWithContext(arg0 context.Context, arg1 *cloudhsm.ListHsmsInput, arg2 ...request.Option) (*cloudhsm.ListHsmsOutput, error) {
+// ListHsmsWithContext mocks base method
+func (m *MockCloudHSMAPI) ListHsmsWithContext(arg0 aws.Context, arg1 *cloudhsm.ListHsmsInput, arg2 ...request.Option) (*cloudhsm.ListHsmsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -729,14 +728,14 @@ func (m *MockCloudHSMAPI) ListHsmsWithContext(arg0 context.Context, arg1 *cloudh
 	return ret0, ret1
 }
 
-// ListHsmsWithContext indicates an expected call of ListHsmsWithContext.
+// ListHsmsWithContext indicates an expected call of ListHsmsWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ListHsmsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHsmsWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListHsmsWithContext), varargs...)
 }
 
-// ListLunaClients mocks base method.
+// ListLunaClients mocks base method
 func (m *MockCloudHSMAPI) ListLunaClients(arg0 *cloudhsm.ListLunaClientsInput) (*cloudhsm.ListLunaClientsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListLunaClients", arg0)
@@ -745,13 +744,13 @@ func (m *MockCloudHSMAPI) ListLunaClients(arg0 *cloudhsm.ListLunaClientsInput) (
 	return ret0, ret1
 }
 
-// ListLunaClients indicates an expected call of ListLunaClients.
+// ListLunaClients indicates an expected call of ListLunaClients
 func (mr *MockCloudHSMAPIMockRecorder) ListLunaClients(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLunaClients", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListLunaClients), arg0)
 }
 
-// ListLunaClientsRequest mocks base method.
+// ListLunaClientsRequest mocks base method
 func (m *MockCloudHSMAPI) ListLunaClientsRequest(arg0 *cloudhsm.ListLunaClientsInput) (*request.Request, *cloudhsm.ListLunaClientsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListLunaClientsRequest", arg0)
@@ -760,14 +759,14 @@ func (m *MockCloudHSMAPI) ListLunaClientsRequest(arg0 *cloudhsm.ListLunaClientsI
 	return ret0, ret1
 }
 
-// ListLunaClientsRequest indicates an expected call of ListLunaClientsRequest.
+// ListLunaClientsRequest indicates an expected call of ListLunaClientsRequest
 func (mr *MockCloudHSMAPIMockRecorder) ListLunaClientsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLunaClientsRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListLunaClientsRequest), arg0)
 }
 
-// ListLunaClientsWithContext mocks base method.
-func (m *MockCloudHSMAPI) ListLunaClientsWithContext(arg0 context.Context, arg1 *cloudhsm.ListLunaClientsInput, arg2 ...request.Option) (*cloudhsm.ListLunaClientsOutput, error) {
+// ListLunaClientsWithContext mocks base method
+func (m *MockCloudHSMAPI) ListLunaClientsWithContext(arg0 aws.Context, arg1 *cloudhsm.ListLunaClientsInput, arg2 ...request.Option) (*cloudhsm.ListLunaClientsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -779,14 +778,14 @@ func (m *MockCloudHSMAPI) ListLunaClientsWithContext(arg0 context.Context, arg1 
 	return ret0, ret1
 }
 
-// ListLunaClientsWithContext indicates an expected call of ListLunaClientsWithContext.
+// ListLunaClientsWithContext indicates an expected call of ListLunaClientsWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ListLunaClientsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLunaClientsWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListLunaClientsWithContext), varargs...)
 }
 
-// ListTagsForResource mocks base method.
+// ListTagsForResource mocks base method
 func (m *MockCloudHSMAPI) ListTagsForResource(arg0 *cloudhsm.ListTagsForResourceInput) (*cloudhsm.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
@@ -795,13 +794,13 @@ func (m *MockCloudHSMAPI) ListTagsForResource(arg0 *cloudhsm.ListTagsForResource
 	return ret0, ret1
 }
 
-// ListTagsForResource indicates an expected call of ListTagsForResource.
+// ListTagsForResource indicates an expected call of ListTagsForResource
 func (mr *MockCloudHSMAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListTagsForResource), arg0)
 }
 
-// ListTagsForResourceRequest mocks base method.
+// ListTagsForResourceRequest mocks base method
 func (m *MockCloudHSMAPI) ListTagsForResourceRequest(arg0 *cloudhsm.ListTagsForResourceInput) (*request.Request, *cloudhsm.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
@@ -810,14 +809,14 @@ func (m *MockCloudHSMAPI) ListTagsForResourceRequest(arg0 *cloudhsm.ListTagsForR
 	return ret0, ret1
 }
 
-// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest.
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
 func (mr *MockCloudHSMAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListTagsForResourceRequest), arg0)
 }
 
-// ListTagsForResourceWithContext mocks base method.
-func (m *MockCloudHSMAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *cloudhsm.ListTagsForResourceInput, arg2 ...request.Option) (*cloudhsm.ListTagsForResourceOutput, error) {
+// ListTagsForResourceWithContext mocks base method
+func (m *MockCloudHSMAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *cloudhsm.ListTagsForResourceInput, arg2 ...request.Option) (*cloudhsm.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -829,14 +828,14 @@ func (m *MockCloudHSMAPI) ListTagsForResourceWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext.
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
-// ModifyHapg mocks base method.
+// ModifyHapg mocks base method
 func (m *MockCloudHSMAPI) ModifyHapg(arg0 *cloudhsm.ModifyHapgInput) (*cloudhsm.ModifyHapgOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyHapg", arg0)
@@ -845,13 +844,13 @@ func (m *MockCloudHSMAPI) ModifyHapg(arg0 *cloudhsm.ModifyHapgInput) (*cloudhsm.
 	return ret0, ret1
 }
 
-// ModifyHapg indicates an expected call of ModifyHapg.
+// ModifyHapg indicates an expected call of ModifyHapg
 func (mr *MockCloudHSMAPIMockRecorder) ModifyHapg(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyHapg", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyHapg), arg0)
 }
 
-// ModifyHapgRequest mocks base method.
+// ModifyHapgRequest mocks base method
 func (m *MockCloudHSMAPI) ModifyHapgRequest(arg0 *cloudhsm.ModifyHapgInput) (*request.Request, *cloudhsm.ModifyHapgOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyHapgRequest", arg0)
@@ -860,14 +859,14 @@ func (m *MockCloudHSMAPI) ModifyHapgRequest(arg0 *cloudhsm.ModifyHapgInput) (*re
 	return ret0, ret1
 }
 
-// ModifyHapgRequest indicates an expected call of ModifyHapgRequest.
+// ModifyHapgRequest indicates an expected call of ModifyHapgRequest
 func (mr *MockCloudHSMAPIMockRecorder) ModifyHapgRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyHapgRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyHapgRequest), arg0)
 }
 
-// ModifyHapgWithContext mocks base method.
-func (m *MockCloudHSMAPI) ModifyHapgWithContext(arg0 context.Context, arg1 *cloudhsm.ModifyHapgInput, arg2 ...request.Option) (*cloudhsm.ModifyHapgOutput, error) {
+// ModifyHapgWithContext mocks base method
+func (m *MockCloudHSMAPI) ModifyHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.ModifyHapgInput, arg2 ...request.Option) (*cloudhsm.ModifyHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -879,14 +878,14 @@ func (m *MockCloudHSMAPI) ModifyHapgWithContext(arg0 context.Context, arg1 *clou
 	return ret0, ret1
 }
 
-// ModifyHapgWithContext indicates an expected call of ModifyHapgWithContext.
+// ModifyHapgWithContext indicates an expected call of ModifyHapgWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ModifyHapgWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyHapgWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyHapgWithContext), varargs...)
 }
 
-// ModifyHsm mocks base method.
+// ModifyHsm mocks base method
 func (m *MockCloudHSMAPI) ModifyHsm(arg0 *cloudhsm.ModifyHsmInput) (*cloudhsm.ModifyHsmOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyHsm", arg0)
@@ -895,13 +894,13 @@ func (m *MockCloudHSMAPI) ModifyHsm(arg0 *cloudhsm.ModifyHsmInput) (*cloudhsm.Mo
 	return ret0, ret1
 }
 
-// ModifyHsm indicates an expected call of ModifyHsm.
+// ModifyHsm indicates an expected call of ModifyHsm
 func (mr *MockCloudHSMAPIMockRecorder) ModifyHsm(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyHsm", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyHsm), arg0)
 }
 
-// ModifyHsmRequest mocks base method.
+// ModifyHsmRequest mocks base method
 func (m *MockCloudHSMAPI) ModifyHsmRequest(arg0 *cloudhsm.ModifyHsmInput) (*request.Request, *cloudhsm.ModifyHsmOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyHsmRequest", arg0)
@@ -910,14 +909,14 @@ func (m *MockCloudHSMAPI) ModifyHsmRequest(arg0 *cloudhsm.ModifyHsmInput) (*requ
 	return ret0, ret1
 }
 
-// ModifyHsmRequest indicates an expected call of ModifyHsmRequest.
+// ModifyHsmRequest indicates an expected call of ModifyHsmRequest
 func (mr *MockCloudHSMAPIMockRecorder) ModifyHsmRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyHsmRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyHsmRequest), arg0)
 }
 
-// ModifyHsmWithContext mocks base method.
-func (m *MockCloudHSMAPI) ModifyHsmWithContext(arg0 context.Context, arg1 *cloudhsm.ModifyHsmInput, arg2 ...request.Option) (*cloudhsm.ModifyHsmOutput, error) {
+// ModifyHsmWithContext mocks base method
+func (m *MockCloudHSMAPI) ModifyHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.ModifyHsmInput, arg2 ...request.Option) (*cloudhsm.ModifyHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -929,14 +928,14 @@ func (m *MockCloudHSMAPI) ModifyHsmWithContext(arg0 context.Context, arg1 *cloud
 	return ret0, ret1
 }
 
-// ModifyHsmWithContext indicates an expected call of ModifyHsmWithContext.
+// ModifyHsmWithContext indicates an expected call of ModifyHsmWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ModifyHsmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyHsmWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyHsmWithContext), varargs...)
 }
 
-// ModifyLunaClient mocks base method.
+// ModifyLunaClient mocks base method
 func (m *MockCloudHSMAPI) ModifyLunaClient(arg0 *cloudhsm.ModifyLunaClientInput) (*cloudhsm.ModifyLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyLunaClient", arg0)
@@ -945,13 +944,13 @@ func (m *MockCloudHSMAPI) ModifyLunaClient(arg0 *cloudhsm.ModifyLunaClientInput)
 	return ret0, ret1
 }
 
-// ModifyLunaClient indicates an expected call of ModifyLunaClient.
+// ModifyLunaClient indicates an expected call of ModifyLunaClient
 func (mr *MockCloudHSMAPIMockRecorder) ModifyLunaClient(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyLunaClient", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyLunaClient), arg0)
 }
 
-// ModifyLunaClientRequest mocks base method.
+// ModifyLunaClientRequest mocks base method
 func (m *MockCloudHSMAPI) ModifyLunaClientRequest(arg0 *cloudhsm.ModifyLunaClientInput) (*request.Request, *cloudhsm.ModifyLunaClientOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ModifyLunaClientRequest", arg0)
@@ -960,14 +959,14 @@ func (m *MockCloudHSMAPI) ModifyLunaClientRequest(arg0 *cloudhsm.ModifyLunaClien
 	return ret0, ret1
 }
 
-// ModifyLunaClientRequest indicates an expected call of ModifyLunaClientRequest.
+// ModifyLunaClientRequest indicates an expected call of ModifyLunaClientRequest
 func (mr *MockCloudHSMAPIMockRecorder) ModifyLunaClientRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyLunaClientRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyLunaClientRequest), arg0)
 }
 
-// ModifyLunaClientWithContext mocks base method.
-func (m *MockCloudHSMAPI) ModifyLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.ModifyLunaClientInput, arg2 ...request.Option) (*cloudhsm.ModifyLunaClientOutput, error) {
+// ModifyLunaClientWithContext mocks base method
+func (m *MockCloudHSMAPI) ModifyLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.ModifyLunaClientInput, arg2 ...request.Option) (*cloudhsm.ModifyLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -979,14 +978,14 @@ func (m *MockCloudHSMAPI) ModifyLunaClientWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ModifyLunaClientWithContext indicates an expected call of ModifyLunaClientWithContext.
+// ModifyLunaClientWithContext indicates an expected call of ModifyLunaClientWithContext
 func (mr *MockCloudHSMAPIMockRecorder) ModifyLunaClientWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyLunaClientWithContext", reflect.TypeOf((*MockCloudHSMAPI)(nil).ModifyLunaClientWithContext), varargs...)
 }
 
-// RemoveTagsFromResource mocks base method.
+// RemoveTagsFromResource mocks base method
 func (m *MockCloudHSMAPI) RemoveTagsFromResource(arg0 *cloudhsm.RemoveTagsFromResourceInput) (*cloudhsm.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsFromResource", arg0)
@@ -995,13 +994,13 @@ func (m *MockCloudHSMAPI) RemoveTagsFromResource(arg0 *cloudhsm.RemoveTagsFromRe
 	return ret0, ret1
 }
 
-// RemoveTagsFromResource indicates an expected call of RemoveTagsFromResource.
+// RemoveTagsFromResource indicates an expected call of RemoveTagsFromResource
 func (mr *MockCloudHSMAPIMockRecorder) RemoveTagsFromResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResource", reflect.TypeOf((*MockCloudHSMAPI)(nil).RemoveTagsFromResource), arg0)
 }
 
-// RemoveTagsFromResourceRequest mocks base method.
+// RemoveTagsFromResourceRequest mocks base method
 func (m *MockCloudHSMAPI) RemoveTagsFromResourceRequest(arg0 *cloudhsm.RemoveTagsFromResourceInput) (*request.Request, *cloudhsm.RemoveTagsFromResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemoveTagsFromResourceRequest", arg0)
@@ -1010,14 +1009,14 @@ func (m *MockCloudHSMAPI) RemoveTagsFromResourceRequest(arg0 *cloudhsm.RemoveTag
 	return ret0, ret1
 }
 
-// RemoveTagsFromResourceRequest indicates an expected call of RemoveTagsFromResourceRequest.
+// RemoveTagsFromResourceRequest indicates an expected call of RemoveTagsFromResourceRequest
 func (mr *MockCloudHSMAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResourceRequest", reflect.TypeOf((*MockCloudHSMAPI)(nil).RemoveTagsFromResourceRequest), arg0)
 }
 
-// RemoveTagsFromResourceWithContext mocks base method.
-func (m *MockCloudHSMAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *cloudhsm.RemoveTagsFromResourceInput, arg2 ...request.Option) (*cloudhsm.RemoveTagsFromResourceOutput, error) {
+// RemoveTagsFromResourceWithContext mocks base method
+func (m *MockCloudHSMAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *cloudhsm.RemoveTagsFromResourceInput, arg2 ...request.Option) (*cloudhsm.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1029,7 +1028,7 @@ func (m *MockCloudHSMAPI) RemoveTagsFromResourceWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// RemoveTagsFromResourceWithContext indicates an expected call of RemoveTagsFromResourceWithContext.
+// RemoveTagsFromResourceWithContext indicates an expected call of RemoveTagsFromResourceWithContext
 func (mr *MockCloudHSMAPIMockRecorder) RemoveTagsFromResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

@@ -5,38 +5,37 @@
 package elastictranscodermock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elastictranscoder "github.com/aws/aws-sdk-go/service/elastictranscoder"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockElasticTranscoderAPI is a mock of ElasticTranscoderAPI interface.
+// MockElasticTranscoderAPI is a mock of ElasticTranscoderAPI interface
 type MockElasticTranscoderAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockElasticTranscoderAPIMockRecorder
 }
 
-// MockElasticTranscoderAPIMockRecorder is the mock recorder for MockElasticTranscoderAPI.
+// MockElasticTranscoderAPIMockRecorder is the mock recorder for MockElasticTranscoderAPI
 type MockElasticTranscoderAPIMockRecorder struct {
 	mock *MockElasticTranscoderAPI
 }
 
-// NewMockElasticTranscoderAPI creates a new mock instance.
+// NewMockElasticTranscoderAPI creates a new mock instance
 func NewMockElasticTranscoderAPI(ctrl *gomock.Controller) *MockElasticTranscoderAPI {
 	mock := &MockElasticTranscoderAPI{ctrl: ctrl}
 	mock.recorder = &MockElasticTranscoderAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockElasticTranscoderAPI) EXPECT() *MockElasticTranscoderAPIMockRecorder {
 	return m.recorder
 }
 
-// CancelJob mocks base method.
+// CancelJob mocks base method
 func (m *MockElasticTranscoderAPI) CancelJob(arg0 *elastictranscoder.CancelJobInput) (*elastictranscoder.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelJob", arg0)
@@ -45,13 +44,13 @@ func (m *MockElasticTranscoderAPI) CancelJob(arg0 *elastictranscoder.CancelJobIn
 	return ret0, ret1
 }
 
-// CancelJob indicates an expected call of CancelJob.
+// CancelJob indicates an expected call of CancelJob
 func (mr *MockElasticTranscoderAPIMockRecorder) CancelJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJob", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CancelJob), arg0)
 }
 
-// CancelJobRequest mocks base method.
+// CancelJobRequest mocks base method
 func (m *MockElasticTranscoderAPI) CancelJobRequest(arg0 *elastictranscoder.CancelJobInput) (*request.Request, *elastictranscoder.CancelJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CancelJobRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockElasticTranscoderAPI) CancelJobRequest(arg0 *elastictranscoder.Canc
 	return ret0, ret1
 }
 
-// CancelJobRequest indicates an expected call of CancelJobRequest.
+// CancelJobRequest indicates an expected call of CancelJobRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) CancelJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CancelJobRequest), arg0)
 }
 
-// CancelJobWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) CancelJobWithContext(arg0 context.Context, arg1 *elastictranscoder.CancelJobInput, arg2 ...request.Option) (*elastictranscoder.CancelJobOutput, error) {
+// CancelJobWithContext mocks base method
+func (m *MockElasticTranscoderAPI) CancelJobWithContext(arg0 aws.Context, arg1 *elastictranscoder.CancelJobInput, arg2 ...request.Option) (*elastictranscoder.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockElasticTranscoderAPI) CancelJobWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CancelJobWithContext indicates an expected call of CancelJobWithContext.
+// CancelJobWithContext indicates an expected call of CancelJobWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) CancelJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CancelJobWithContext), varargs...)
 }
 
-// CreateJob mocks base method.
+// CreateJob mocks base method
 func (m *MockElasticTranscoderAPI) CreateJob(arg0 *elastictranscoder.CreateJobInput) (*elastictranscoder.CreateJobResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateJob", arg0)
@@ -95,13 +94,13 @@ func (m *MockElasticTranscoderAPI) CreateJob(arg0 *elastictranscoder.CreateJobIn
 	return ret0, ret1
 }
 
-// CreateJob indicates an expected call of CreateJob.
+// CreateJob indicates an expected call of CreateJob
 func (mr *MockElasticTranscoderAPIMockRecorder) CreateJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJob", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreateJob), arg0)
 }
 
-// CreateJobRequest mocks base method.
+// CreateJobRequest mocks base method
 func (m *MockElasticTranscoderAPI) CreateJobRequest(arg0 *elastictranscoder.CreateJobInput) (*request.Request, *elastictranscoder.CreateJobResponse) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateJobRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockElasticTranscoderAPI) CreateJobRequest(arg0 *elastictranscoder.Crea
 	return ret0, ret1
 }
 
-// CreateJobRequest indicates an expected call of CreateJobRequest.
+// CreateJobRequest indicates an expected call of CreateJobRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) CreateJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreateJobRequest), arg0)
 }
 
-// CreateJobWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) CreateJobWithContext(arg0 context.Context, arg1 *elastictranscoder.CreateJobInput, arg2 ...request.Option) (*elastictranscoder.CreateJobResponse, error) {
+// CreateJobWithContext mocks base method
+func (m *MockElasticTranscoderAPI) CreateJobWithContext(arg0 aws.Context, arg1 *elastictranscoder.CreateJobInput, arg2 ...request.Option) (*elastictranscoder.CreateJobResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockElasticTranscoderAPI) CreateJobWithContext(arg0 context.Context, ar
 	return ret0, ret1
 }
 
-// CreateJobWithContext indicates an expected call of CreateJobWithContext.
+// CreateJobWithContext indicates an expected call of CreateJobWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) CreateJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreateJobWithContext), varargs...)
 }
 
-// CreatePipeline mocks base method.
+// CreatePipeline mocks base method
 func (m *MockElasticTranscoderAPI) CreatePipeline(arg0 *elastictranscoder.CreatePipelineInput) (*elastictranscoder.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePipeline", arg0)
@@ -145,13 +144,13 @@ func (m *MockElasticTranscoderAPI) CreatePipeline(arg0 *elastictranscoder.Create
 	return ret0, ret1
 }
 
-// CreatePipeline indicates an expected call of CreatePipeline.
+// CreatePipeline indicates an expected call of CreatePipeline
 func (mr *MockElasticTranscoderAPIMockRecorder) CreatePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePipeline", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreatePipeline), arg0)
 }
 
-// CreatePipelineRequest mocks base method.
+// CreatePipelineRequest mocks base method
 func (m *MockElasticTranscoderAPI) CreatePipelineRequest(arg0 *elastictranscoder.CreatePipelineInput) (*request.Request, *elastictranscoder.CreatePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePipelineRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockElasticTranscoderAPI) CreatePipelineRequest(arg0 *elastictranscoder
 	return ret0, ret1
 }
 
-// CreatePipelineRequest indicates an expected call of CreatePipelineRequest.
+// CreatePipelineRequest indicates an expected call of CreatePipelineRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) CreatePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePipelineRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreatePipelineRequest), arg0)
 }
 
-// CreatePipelineWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) CreatePipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.CreatePipelineInput, arg2 ...request.Option) (*elastictranscoder.CreatePipelineOutput, error) {
+// CreatePipelineWithContext mocks base method
+func (m *MockElasticTranscoderAPI) CreatePipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.CreatePipelineInput, arg2 ...request.Option) (*elastictranscoder.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockElasticTranscoderAPI) CreatePipelineWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// CreatePipelineWithContext indicates an expected call of CreatePipelineWithContext.
+// CreatePipelineWithContext indicates an expected call of CreatePipelineWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) CreatePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePipelineWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreatePipelineWithContext), varargs...)
 }
 
-// CreatePreset mocks base method.
+// CreatePreset mocks base method
 func (m *MockElasticTranscoderAPI) CreatePreset(arg0 *elastictranscoder.CreatePresetInput) (*elastictranscoder.CreatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePreset", arg0)
@@ -195,13 +194,13 @@ func (m *MockElasticTranscoderAPI) CreatePreset(arg0 *elastictranscoder.CreatePr
 	return ret0, ret1
 }
 
-// CreatePreset indicates an expected call of CreatePreset.
+// CreatePreset indicates an expected call of CreatePreset
 func (mr *MockElasticTranscoderAPIMockRecorder) CreatePreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePreset", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreatePreset), arg0)
 }
 
-// CreatePresetRequest mocks base method.
+// CreatePresetRequest mocks base method
 func (m *MockElasticTranscoderAPI) CreatePresetRequest(arg0 *elastictranscoder.CreatePresetInput) (*request.Request, *elastictranscoder.CreatePresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreatePresetRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockElasticTranscoderAPI) CreatePresetRequest(arg0 *elastictranscoder.C
 	return ret0, ret1
 }
 
-// CreatePresetRequest indicates an expected call of CreatePresetRequest.
+// CreatePresetRequest indicates an expected call of CreatePresetRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) CreatePresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresetRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreatePresetRequest), arg0)
 }
 
-// CreatePresetWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) CreatePresetWithContext(arg0 context.Context, arg1 *elastictranscoder.CreatePresetInput, arg2 ...request.Option) (*elastictranscoder.CreatePresetOutput, error) {
+// CreatePresetWithContext mocks base method
+func (m *MockElasticTranscoderAPI) CreatePresetWithContext(arg0 aws.Context, arg1 *elastictranscoder.CreatePresetInput, arg2 ...request.Option) (*elastictranscoder.CreatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockElasticTranscoderAPI) CreatePresetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// CreatePresetWithContext indicates an expected call of CreatePresetWithContext.
+// CreatePresetWithContext indicates an expected call of CreatePresetWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) CreatePresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresetWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).CreatePresetWithContext), varargs...)
 }
 
-// DeletePipeline mocks base method.
+// DeletePipeline mocks base method
 func (m *MockElasticTranscoderAPI) DeletePipeline(arg0 *elastictranscoder.DeletePipelineInput) (*elastictranscoder.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePipeline", arg0)
@@ -245,13 +244,13 @@ func (m *MockElasticTranscoderAPI) DeletePipeline(arg0 *elastictranscoder.Delete
 	return ret0, ret1
 }
 
-// DeletePipeline indicates an expected call of DeletePipeline.
+// DeletePipeline indicates an expected call of DeletePipeline
 func (mr *MockElasticTranscoderAPIMockRecorder) DeletePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePipeline", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).DeletePipeline), arg0)
 }
 
-// DeletePipelineRequest mocks base method.
+// DeletePipelineRequest mocks base method
 func (m *MockElasticTranscoderAPI) DeletePipelineRequest(arg0 *elastictranscoder.DeletePipelineInput) (*request.Request, *elastictranscoder.DeletePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePipelineRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockElasticTranscoderAPI) DeletePipelineRequest(arg0 *elastictranscoder
 	return ret0, ret1
 }
 
-// DeletePipelineRequest indicates an expected call of DeletePipelineRequest.
+// DeletePipelineRequest indicates an expected call of DeletePipelineRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) DeletePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePipelineRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).DeletePipelineRequest), arg0)
 }
 
-// DeletePipelineWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) DeletePipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.DeletePipelineInput, arg2 ...request.Option) (*elastictranscoder.DeletePipelineOutput, error) {
+// DeletePipelineWithContext mocks base method
+func (m *MockElasticTranscoderAPI) DeletePipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.DeletePipelineInput, arg2 ...request.Option) (*elastictranscoder.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockElasticTranscoderAPI) DeletePipelineWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// DeletePipelineWithContext indicates an expected call of DeletePipelineWithContext.
+// DeletePipelineWithContext indicates an expected call of DeletePipelineWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) DeletePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePipelineWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).DeletePipelineWithContext), varargs...)
 }
 
-// DeletePreset mocks base method.
+// DeletePreset mocks base method
 func (m *MockElasticTranscoderAPI) DeletePreset(arg0 *elastictranscoder.DeletePresetInput) (*elastictranscoder.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePreset", arg0)
@@ -295,13 +294,13 @@ func (m *MockElasticTranscoderAPI) DeletePreset(arg0 *elastictranscoder.DeletePr
 	return ret0, ret1
 }
 
-// DeletePreset indicates an expected call of DeletePreset.
+// DeletePreset indicates an expected call of DeletePreset
 func (mr *MockElasticTranscoderAPIMockRecorder) DeletePreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePreset", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).DeletePreset), arg0)
 }
 
-// DeletePresetRequest mocks base method.
+// DeletePresetRequest mocks base method
 func (m *MockElasticTranscoderAPI) DeletePresetRequest(arg0 *elastictranscoder.DeletePresetInput) (*request.Request, *elastictranscoder.DeletePresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeletePresetRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockElasticTranscoderAPI) DeletePresetRequest(arg0 *elastictranscoder.D
 	return ret0, ret1
 }
 
-// DeletePresetRequest indicates an expected call of DeletePresetRequest.
+// DeletePresetRequest indicates an expected call of DeletePresetRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) DeletePresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePresetRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).DeletePresetRequest), arg0)
 }
 
-// DeletePresetWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) DeletePresetWithContext(arg0 context.Context, arg1 *elastictranscoder.DeletePresetInput, arg2 ...request.Option) (*elastictranscoder.DeletePresetOutput, error) {
+// DeletePresetWithContext mocks base method
+func (m *MockElasticTranscoderAPI) DeletePresetWithContext(arg0 aws.Context, arg1 *elastictranscoder.DeletePresetInput, arg2 ...request.Option) (*elastictranscoder.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockElasticTranscoderAPI) DeletePresetWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// DeletePresetWithContext indicates an expected call of DeletePresetWithContext.
+// DeletePresetWithContext indicates an expected call of DeletePresetWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) DeletePresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePresetWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).DeletePresetWithContext), varargs...)
 }
 
-// ListJobsByPipeline mocks base method.
+// ListJobsByPipeline mocks base method
 func (m *MockElasticTranscoderAPI) ListJobsByPipeline(arg0 *elastictranscoder.ListJobsByPipelineInput) (*elastictranscoder.ListJobsByPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsByPipeline", arg0)
@@ -345,13 +344,13 @@ func (m *MockElasticTranscoderAPI) ListJobsByPipeline(arg0 *elastictranscoder.Li
 	return ret0, ret1
 }
 
-// ListJobsByPipeline indicates an expected call of ListJobsByPipeline.
+// ListJobsByPipeline indicates an expected call of ListJobsByPipeline
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByPipeline", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByPipeline), arg0)
 }
 
-// ListJobsByPipelinePages mocks base method.
+// ListJobsByPipelinePages mocks base method
 func (m *MockElasticTranscoderAPI) ListJobsByPipelinePages(arg0 *elastictranscoder.ListJobsByPipelineInput, arg1 func(*elastictranscoder.ListJobsByPipelineOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsByPipelinePages", arg0, arg1)
@@ -359,14 +358,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByPipelinePages(arg0 *elastictranscod
 	return ret0
 }
 
-// ListJobsByPipelinePages indicates an expected call of ListJobsByPipelinePages.
+// ListJobsByPipelinePages indicates an expected call of ListJobsByPipelinePages
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipelinePages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByPipelinePages", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByPipelinePages), arg0, arg1)
 }
 
-// ListJobsByPipelinePagesWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListJobsByPipelinePagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 func(*elastictranscoder.ListJobsByPipelineOutput, bool) bool, arg3 ...request.Option) error {
+// ListJobsByPipelinePagesWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListJobsByPipelinePagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 func(*elastictranscoder.ListJobsByPipelineOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -377,14 +376,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByPipelinePagesWithContext(arg0 conte
 	return ret0
 }
 
-// ListJobsByPipelinePagesWithContext indicates an expected call of ListJobsByPipelinePagesWithContext.
+// ListJobsByPipelinePagesWithContext indicates an expected call of ListJobsByPipelinePagesWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipelinePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByPipelinePagesWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByPipelinePagesWithContext), varargs...)
 }
 
-// ListJobsByPipelineRequest mocks base method.
+// ListJobsByPipelineRequest mocks base method
 func (m *MockElasticTranscoderAPI) ListJobsByPipelineRequest(arg0 *elastictranscoder.ListJobsByPipelineInput) (*request.Request, *elastictranscoder.ListJobsByPipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsByPipelineRequest", arg0)
@@ -393,14 +392,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByPipelineRequest(arg0 *elastictransc
 	return ret0, ret1
 }
 
-// ListJobsByPipelineRequest indicates an expected call of ListJobsByPipelineRequest.
+// ListJobsByPipelineRequest indicates an expected call of ListJobsByPipelineRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByPipelineRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByPipelineRequest), arg0)
 }
 
-// ListJobsByPipelineWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListJobsByPipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByPipelineOutput, error) {
+// ListJobsByPipelineWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListJobsByPipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -412,14 +411,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByPipelineWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// ListJobsByPipelineWithContext indicates an expected call of ListJobsByPipelineWithContext.
+// ListJobsByPipelineWithContext indicates an expected call of ListJobsByPipelineWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByPipelineWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByPipelineWithContext), varargs...)
 }
 
-// ListJobsByStatus mocks base method.
+// ListJobsByStatus mocks base method
 func (m *MockElasticTranscoderAPI) ListJobsByStatus(arg0 *elastictranscoder.ListJobsByStatusInput) (*elastictranscoder.ListJobsByStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsByStatus", arg0)
@@ -428,13 +427,13 @@ func (m *MockElasticTranscoderAPI) ListJobsByStatus(arg0 *elastictranscoder.List
 	return ret0, ret1
 }
 
-// ListJobsByStatus indicates an expected call of ListJobsByStatus.
+// ListJobsByStatus indicates an expected call of ListJobsByStatus
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByStatus", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByStatus), arg0)
 }
 
-// ListJobsByStatusPages mocks base method.
+// ListJobsByStatusPages mocks base method
 func (m *MockElasticTranscoderAPI) ListJobsByStatusPages(arg0 *elastictranscoder.ListJobsByStatusInput, arg1 func(*elastictranscoder.ListJobsByStatusOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsByStatusPages", arg0, arg1)
@@ -442,14 +441,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByStatusPages(arg0 *elastictranscoder
 	return ret0
 }
 
-// ListJobsByStatusPages indicates an expected call of ListJobsByStatusPages.
+// ListJobsByStatusPages indicates an expected call of ListJobsByStatusPages
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatusPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByStatusPages", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByStatusPages), arg0, arg1)
 }
 
-// ListJobsByStatusPagesWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListJobsByStatusPagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 func(*elastictranscoder.ListJobsByStatusOutput, bool) bool, arg3 ...request.Option) error {
+// ListJobsByStatusPagesWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListJobsByStatusPagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 func(*elastictranscoder.ListJobsByStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -460,14 +459,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByStatusPagesWithContext(arg0 context
 	return ret0
 }
 
-// ListJobsByStatusPagesWithContext indicates an expected call of ListJobsByStatusPagesWithContext.
+// ListJobsByStatusPagesWithContext indicates an expected call of ListJobsByStatusPagesWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByStatusPagesWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByStatusPagesWithContext), varargs...)
 }
 
-// ListJobsByStatusRequest mocks base method.
+// ListJobsByStatusRequest mocks base method
 func (m *MockElasticTranscoderAPI) ListJobsByStatusRequest(arg0 *elastictranscoder.ListJobsByStatusInput) (*request.Request, *elastictranscoder.ListJobsByStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListJobsByStatusRequest", arg0)
@@ -476,14 +475,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByStatusRequest(arg0 *elastictranscod
 	return ret0, ret1
 }
 
-// ListJobsByStatusRequest indicates an expected call of ListJobsByStatusRequest.
+// ListJobsByStatusRequest indicates an expected call of ListJobsByStatusRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByStatusRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByStatusRequest), arg0)
 }
 
-// ListJobsByStatusWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListJobsByStatusWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByStatusOutput, error) {
+// ListJobsByStatusWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListJobsByStatusWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -495,14 +494,14 @@ func (m *MockElasticTranscoderAPI) ListJobsByStatusWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// ListJobsByStatusWithContext indicates an expected call of ListJobsByStatusWithContext.
+// ListJobsByStatusWithContext indicates an expected call of ListJobsByStatusWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsByStatusWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListJobsByStatusWithContext), varargs...)
 }
 
-// ListPipelines mocks base method.
+// ListPipelines mocks base method
 func (m *MockElasticTranscoderAPI) ListPipelines(arg0 *elastictranscoder.ListPipelinesInput) (*elastictranscoder.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPipelines", arg0)
@@ -511,13 +510,13 @@ func (m *MockElasticTranscoderAPI) ListPipelines(arg0 *elastictranscoder.ListPip
 	return ret0, ret1
 }
 
-// ListPipelines indicates an expected call of ListPipelines.
+// ListPipelines indicates an expected call of ListPipelines
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelines(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelines", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPipelines), arg0)
 }
 
-// ListPipelinesPages mocks base method.
+// ListPipelinesPages mocks base method
 func (m *MockElasticTranscoderAPI) ListPipelinesPages(arg0 *elastictranscoder.ListPipelinesInput, arg1 func(*elastictranscoder.ListPipelinesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPipelinesPages", arg0, arg1)
@@ -525,14 +524,14 @@ func (m *MockElasticTranscoderAPI) ListPipelinesPages(arg0 *elastictranscoder.Li
 	return ret0
 }
 
-// ListPipelinesPages indicates an expected call of ListPipelinesPages.
+// ListPipelinesPages indicates an expected call of ListPipelinesPages
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelinesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesPages", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPipelinesPages), arg0, arg1)
 }
 
-// ListPipelinesPagesWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListPipelinesPagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 func(*elastictranscoder.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
+// ListPipelinesPagesWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListPipelinesPagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 func(*elastictranscoder.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -543,14 +542,14 @@ func (m *MockElasticTranscoderAPI) ListPipelinesPagesWithContext(arg0 context.Co
 	return ret0
 }
 
-// ListPipelinesPagesWithContext indicates an expected call of ListPipelinesPagesWithContext.
+// ListPipelinesPagesWithContext indicates an expected call of ListPipelinesPagesWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelinesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesPagesWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPipelinesPagesWithContext), varargs...)
 }
 
-// ListPipelinesRequest mocks base method.
+// ListPipelinesRequest mocks base method
 func (m *MockElasticTranscoderAPI) ListPipelinesRequest(arg0 *elastictranscoder.ListPipelinesInput) (*request.Request, *elastictranscoder.ListPipelinesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPipelinesRequest", arg0)
@@ -559,14 +558,14 @@ func (m *MockElasticTranscoderAPI) ListPipelinesRequest(arg0 *elastictranscoder.
 	return ret0, ret1
 }
 
-// ListPipelinesRequest indicates an expected call of ListPipelinesRequest.
+// ListPipelinesRequest indicates an expected call of ListPipelinesRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelinesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPipelinesRequest), arg0)
 }
 
-// ListPipelinesWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListPipelinesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 ...request.Option) (*elastictranscoder.ListPipelinesOutput, error) {
+// ListPipelinesWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListPipelinesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 ...request.Option) (*elastictranscoder.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -578,14 +577,14 @@ func (m *MockElasticTranscoderAPI) ListPipelinesWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ListPipelinesWithContext indicates an expected call of ListPipelinesWithContext.
+// ListPipelinesWithContext indicates an expected call of ListPipelinesWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelinesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPipelinesWithContext), varargs...)
 }
 
-// ListPresets mocks base method.
+// ListPresets mocks base method
 func (m *MockElasticTranscoderAPI) ListPresets(arg0 *elastictranscoder.ListPresetsInput) (*elastictranscoder.ListPresetsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPresets", arg0)
@@ -594,13 +593,13 @@ func (m *MockElasticTranscoderAPI) ListPresets(arg0 *elastictranscoder.ListPrese
 	return ret0, ret1
 }
 
-// ListPresets indicates an expected call of ListPresets.
+// ListPresets indicates an expected call of ListPresets
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPresets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresets", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPresets), arg0)
 }
 
-// ListPresetsPages mocks base method.
+// ListPresetsPages mocks base method
 func (m *MockElasticTranscoderAPI) ListPresetsPages(arg0 *elastictranscoder.ListPresetsInput, arg1 func(*elastictranscoder.ListPresetsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPresetsPages", arg0, arg1)
@@ -608,14 +607,14 @@ func (m *MockElasticTranscoderAPI) ListPresetsPages(arg0 *elastictranscoder.List
 	return ret0
 }
 
-// ListPresetsPages indicates an expected call of ListPresetsPages.
+// ListPresetsPages indicates an expected call of ListPresetsPages
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPresetsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsPages", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPresetsPages), arg0, arg1)
 }
 
-// ListPresetsPagesWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListPresetsPagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 func(*elastictranscoder.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
+// ListPresetsPagesWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListPresetsPagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 func(*elastictranscoder.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -626,14 +625,14 @@ func (m *MockElasticTranscoderAPI) ListPresetsPagesWithContext(arg0 context.Cont
 	return ret0
 }
 
-// ListPresetsPagesWithContext indicates an expected call of ListPresetsPagesWithContext.
+// ListPresetsPagesWithContext indicates an expected call of ListPresetsPagesWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPresetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsPagesWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPresetsPagesWithContext), varargs...)
 }
 
-// ListPresetsRequest mocks base method.
+// ListPresetsRequest mocks base method
 func (m *MockElasticTranscoderAPI) ListPresetsRequest(arg0 *elastictranscoder.ListPresetsInput) (*request.Request, *elastictranscoder.ListPresetsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListPresetsRequest", arg0)
@@ -642,14 +641,14 @@ func (m *MockElasticTranscoderAPI) ListPresetsRequest(arg0 *elastictranscoder.Li
 	return ret0, ret1
 }
 
-// ListPresetsRequest indicates an expected call of ListPresetsRequest.
+// ListPresetsRequest indicates an expected call of ListPresetsRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPresetsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPresetsRequest), arg0)
 }
 
-// ListPresetsWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ListPresetsWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 ...request.Option) (*elastictranscoder.ListPresetsOutput, error) {
+// ListPresetsWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ListPresetsWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 ...request.Option) (*elastictranscoder.ListPresetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -661,14 +660,14 @@ func (m *MockElasticTranscoderAPI) ListPresetsWithContext(arg0 context.Context, 
 	return ret0, ret1
 }
 
-// ListPresetsWithContext indicates an expected call of ListPresetsWithContext.
+// ListPresetsWithContext indicates an expected call of ListPresetsWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ListPresetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ListPresetsWithContext), varargs...)
 }
 
-// ReadJob mocks base method.
+// ReadJob mocks base method
 func (m *MockElasticTranscoderAPI) ReadJob(arg0 *elastictranscoder.ReadJobInput) (*elastictranscoder.ReadJobOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReadJob", arg0)
@@ -677,13 +676,13 @@ func (m *MockElasticTranscoderAPI) ReadJob(arg0 *elastictranscoder.ReadJobInput)
 	return ret0, ret1
 }
 
-// ReadJob indicates an expected call of ReadJob.
+// ReadJob indicates an expected call of ReadJob
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadJob(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadJob", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadJob), arg0)
 }
 
-// ReadJobRequest mocks base method.
+// ReadJobRequest mocks base method
 func (m *MockElasticTranscoderAPI) ReadJobRequest(arg0 *elastictranscoder.ReadJobInput) (*request.Request, *elastictranscoder.ReadJobOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReadJobRequest", arg0)
@@ -692,14 +691,14 @@ func (m *MockElasticTranscoderAPI) ReadJobRequest(arg0 *elastictranscoder.ReadJo
 	return ret0, ret1
 }
 
-// ReadJobRequest indicates an expected call of ReadJobRequest.
+// ReadJobRequest indicates an expected call of ReadJobRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadJobRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadJobRequest), arg0)
 }
 
-// ReadJobWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ReadJobWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.Option) (*elastictranscoder.ReadJobOutput, error) {
+// ReadJobWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ReadJobWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.Option) (*elastictranscoder.ReadJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -711,14 +710,14 @@ func (m *MockElasticTranscoderAPI) ReadJobWithContext(arg0 context.Context, arg1
 	return ret0, ret1
 }
 
-// ReadJobWithContext indicates an expected call of ReadJobWithContext.
+// ReadJobWithContext indicates an expected call of ReadJobWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadJobWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadJobWithContext), varargs...)
 }
 
-// ReadPipeline mocks base method.
+// ReadPipeline mocks base method
 func (m *MockElasticTranscoderAPI) ReadPipeline(arg0 *elastictranscoder.ReadPipelineInput) (*elastictranscoder.ReadPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReadPipeline", arg0)
@@ -727,13 +726,13 @@ func (m *MockElasticTranscoderAPI) ReadPipeline(arg0 *elastictranscoder.ReadPipe
 	return ret0, ret1
 }
 
-// ReadPipeline indicates an expected call of ReadPipeline.
+// ReadPipeline indicates an expected call of ReadPipeline
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadPipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadPipeline", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadPipeline), arg0)
 }
 
-// ReadPipelineRequest mocks base method.
+// ReadPipelineRequest mocks base method
 func (m *MockElasticTranscoderAPI) ReadPipelineRequest(arg0 *elastictranscoder.ReadPipelineInput) (*request.Request, *elastictranscoder.ReadPipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReadPipelineRequest", arg0)
@@ -742,14 +741,14 @@ func (m *MockElasticTranscoderAPI) ReadPipelineRequest(arg0 *elastictranscoder.R
 	return ret0, ret1
 }
 
-// ReadPipelineRequest indicates an expected call of ReadPipelineRequest.
+// ReadPipelineRequest indicates an expected call of ReadPipelineRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadPipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadPipelineRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadPipelineRequest), arg0)
 }
 
-// ReadPipelineWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ReadPipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadPipelineInput, arg2 ...request.Option) (*elastictranscoder.ReadPipelineOutput, error) {
+// ReadPipelineWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ReadPipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadPipelineInput, arg2 ...request.Option) (*elastictranscoder.ReadPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -761,14 +760,14 @@ func (m *MockElasticTranscoderAPI) ReadPipelineWithContext(arg0 context.Context,
 	return ret0, ret1
 }
 
-// ReadPipelineWithContext indicates an expected call of ReadPipelineWithContext.
+// ReadPipelineWithContext indicates an expected call of ReadPipelineWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadPipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadPipelineWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadPipelineWithContext), varargs...)
 }
 
-// ReadPreset mocks base method.
+// ReadPreset mocks base method
 func (m *MockElasticTranscoderAPI) ReadPreset(arg0 *elastictranscoder.ReadPresetInput) (*elastictranscoder.ReadPresetOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReadPreset", arg0)
@@ -777,13 +776,13 @@ func (m *MockElasticTranscoderAPI) ReadPreset(arg0 *elastictranscoder.ReadPreset
 	return ret0, ret1
 }
 
-// ReadPreset indicates an expected call of ReadPreset.
+// ReadPreset indicates an expected call of ReadPreset
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadPreset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadPreset", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadPreset), arg0)
 }
 
-// ReadPresetRequest mocks base method.
+// ReadPresetRequest mocks base method
 func (m *MockElasticTranscoderAPI) ReadPresetRequest(arg0 *elastictranscoder.ReadPresetInput) (*request.Request, *elastictranscoder.ReadPresetOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ReadPresetRequest", arg0)
@@ -792,14 +791,14 @@ func (m *MockElasticTranscoderAPI) ReadPresetRequest(arg0 *elastictranscoder.Rea
 	return ret0, ret1
 }
 
-// ReadPresetRequest indicates an expected call of ReadPresetRequest.
+// ReadPresetRequest indicates an expected call of ReadPresetRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadPresetRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadPresetRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadPresetRequest), arg0)
 }
 
-// ReadPresetWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) ReadPresetWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadPresetInput, arg2 ...request.Option) (*elastictranscoder.ReadPresetOutput, error) {
+// ReadPresetWithContext mocks base method
+func (m *MockElasticTranscoderAPI) ReadPresetWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadPresetInput, arg2 ...request.Option) (*elastictranscoder.ReadPresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -811,14 +810,14 @@ func (m *MockElasticTranscoderAPI) ReadPresetWithContext(arg0 context.Context, a
 	return ret0, ret1
 }
 
-// ReadPresetWithContext indicates an expected call of ReadPresetWithContext.
+// ReadPresetWithContext indicates an expected call of ReadPresetWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) ReadPresetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReadPresetWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).ReadPresetWithContext), varargs...)
 }
 
-// TestRole mocks base method.
+// TestRole mocks base method
 func (m *MockElasticTranscoderAPI) TestRole(arg0 *elastictranscoder.TestRoleInput) (*elastictranscoder.TestRoleOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TestRole", arg0)
@@ -827,13 +826,13 @@ func (m *MockElasticTranscoderAPI) TestRole(arg0 *elastictranscoder.TestRoleInpu
 	return ret0, ret1
 }
 
-// TestRole indicates an expected call of TestRole.
+// TestRole indicates an expected call of TestRole
 func (mr *MockElasticTranscoderAPIMockRecorder) TestRole(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestRole", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).TestRole), arg0)
 }
 
-// TestRoleRequest mocks base method.
+// TestRoleRequest mocks base method
 func (m *MockElasticTranscoderAPI) TestRoleRequest(arg0 *elastictranscoder.TestRoleInput) (*request.Request, *elastictranscoder.TestRoleOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TestRoleRequest", arg0)
@@ -842,14 +841,14 @@ func (m *MockElasticTranscoderAPI) TestRoleRequest(arg0 *elastictranscoder.TestR
 	return ret0, ret1
 }
 
-// TestRoleRequest indicates an expected call of TestRoleRequest.
+// TestRoleRequest indicates an expected call of TestRoleRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) TestRoleRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestRoleRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).TestRoleRequest), arg0)
 }
 
-// TestRoleWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) TestRoleWithContext(arg0 context.Context, arg1 *elastictranscoder.TestRoleInput, arg2 ...request.Option) (*elastictranscoder.TestRoleOutput, error) {
+// TestRoleWithContext mocks base method
+func (m *MockElasticTranscoderAPI) TestRoleWithContext(arg0 aws.Context, arg1 *elastictranscoder.TestRoleInput, arg2 ...request.Option) (*elastictranscoder.TestRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -861,14 +860,14 @@ func (m *MockElasticTranscoderAPI) TestRoleWithContext(arg0 context.Context, arg
 	return ret0, ret1
 }
 
-// TestRoleWithContext indicates an expected call of TestRoleWithContext.
+// TestRoleWithContext indicates an expected call of TestRoleWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) TestRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestRoleWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).TestRoleWithContext), varargs...)
 }
 
-// UpdatePipeline mocks base method.
+// UpdatePipeline mocks base method
 func (m *MockElasticTranscoderAPI) UpdatePipeline(arg0 *elastictranscoder.UpdatePipelineInput) (*elastictranscoder.UpdatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePipeline", arg0)
@@ -877,13 +876,13 @@ func (m *MockElasticTranscoderAPI) UpdatePipeline(arg0 *elastictranscoder.Update
 	return ret0, ret1
 }
 
-// UpdatePipeline indicates an expected call of UpdatePipeline.
+// UpdatePipeline indicates an expected call of UpdatePipeline
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipeline(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipeline", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipeline), arg0)
 }
 
-// UpdatePipelineNotifications mocks base method.
+// UpdatePipelineNotifications mocks base method
 func (m *MockElasticTranscoderAPI) UpdatePipelineNotifications(arg0 *elastictranscoder.UpdatePipelineNotificationsInput) (*elastictranscoder.UpdatePipelineNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePipelineNotifications", arg0)
@@ -892,13 +891,13 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineNotifications(arg0 *elastictran
 	return ret0, ret1
 }
 
-// UpdatePipelineNotifications indicates an expected call of UpdatePipelineNotifications.
+// UpdatePipelineNotifications indicates an expected call of UpdatePipelineNotifications
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineNotifications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineNotifications", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineNotifications), arg0)
 }
 
-// UpdatePipelineNotificationsRequest mocks base method.
+// UpdatePipelineNotificationsRequest mocks base method
 func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsRequest(arg0 *elastictranscoder.UpdatePipelineNotificationsInput) (*request.Request, *elastictranscoder.UpdatePipelineNotificationsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePipelineNotificationsRequest", arg0)
@@ -907,14 +906,14 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsRequest(arg0 *elas
 	return ret0, ret1
 }
 
-// UpdatePipelineNotificationsRequest indicates an expected call of UpdatePipelineNotificationsRequest.
+// UpdatePipelineNotificationsRequest indicates an expected call of UpdatePipelineNotificationsRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineNotificationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineNotificationsRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineNotificationsRequest), arg0)
 }
 
-// UpdatePipelineNotificationsWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsWithContext(arg0 context.Context, arg1 *elastictranscoder.UpdatePipelineNotificationsInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineNotificationsOutput, error) {
+// UpdatePipelineNotificationsWithContext mocks base method
+func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsWithContext(arg0 aws.Context, arg1 *elastictranscoder.UpdatePipelineNotificationsInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -926,14 +925,14 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsWithContext(arg0 c
 	return ret0, ret1
 }
 
-// UpdatePipelineNotificationsWithContext indicates an expected call of UpdatePipelineNotificationsWithContext.
+// UpdatePipelineNotificationsWithContext indicates an expected call of UpdatePipelineNotificationsWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineNotificationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineNotificationsWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineNotificationsWithContext), varargs...)
 }
 
-// UpdatePipelineRequest mocks base method.
+// UpdatePipelineRequest mocks base method
 func (m *MockElasticTranscoderAPI) UpdatePipelineRequest(arg0 *elastictranscoder.UpdatePipelineInput) (*request.Request, *elastictranscoder.UpdatePipelineOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePipelineRequest", arg0)
@@ -942,13 +941,13 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineRequest(arg0 *elastictranscoder
 	return ret0, ret1
 }
 
-// UpdatePipelineRequest indicates an expected call of UpdatePipelineRequest.
+// UpdatePipelineRequest indicates an expected call of UpdatePipelineRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineRequest), arg0)
 }
 
-// UpdatePipelineStatus mocks base method.
+// UpdatePipelineStatus mocks base method
 func (m *MockElasticTranscoderAPI) UpdatePipelineStatus(arg0 *elastictranscoder.UpdatePipelineStatusInput) (*elastictranscoder.UpdatePipelineStatusOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePipelineStatus", arg0)
@@ -957,13 +956,13 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineStatus(arg0 *elastictranscoder.
 	return ret0, ret1
 }
 
-// UpdatePipelineStatus indicates an expected call of UpdatePipelineStatus.
+// UpdatePipelineStatus indicates an expected call of UpdatePipelineStatus
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineStatus(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineStatus", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineStatus), arg0)
 }
 
-// UpdatePipelineStatusRequest mocks base method.
+// UpdatePipelineStatusRequest mocks base method
 func (m *MockElasticTranscoderAPI) UpdatePipelineStatusRequest(arg0 *elastictranscoder.UpdatePipelineStatusInput) (*request.Request, *elastictranscoder.UpdatePipelineStatusOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdatePipelineStatusRequest", arg0)
@@ -972,14 +971,14 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineStatusRequest(arg0 *elastictran
 	return ret0, ret1
 }
 
-// UpdatePipelineStatusRequest indicates an expected call of UpdatePipelineStatusRequest.
+// UpdatePipelineStatusRequest indicates an expected call of UpdatePipelineStatusRequest
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineStatusRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineStatusRequest", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineStatusRequest), arg0)
 }
 
-// UpdatePipelineStatusWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) UpdatePipelineStatusWithContext(arg0 context.Context, arg1 *elastictranscoder.UpdatePipelineStatusInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineStatusOutput, error) {
+// UpdatePipelineStatusWithContext mocks base method
+func (m *MockElasticTranscoderAPI) UpdatePipelineStatusWithContext(arg0 aws.Context, arg1 *elastictranscoder.UpdatePipelineStatusInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -991,15 +990,15 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineStatusWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// UpdatePipelineStatusWithContext indicates an expected call of UpdatePipelineStatusWithContext.
+// UpdatePipelineStatusWithContext indicates an expected call of UpdatePipelineStatusWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineStatusWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineStatusWithContext), varargs...)
 }
 
-// UpdatePipelineWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) UpdatePipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.UpdatePipelineInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineOutput, error) {
+// UpdatePipelineWithContext mocks base method
+func (m *MockElasticTranscoderAPI) UpdatePipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.UpdatePipelineInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1011,14 +1010,14 @@ func (m *MockElasticTranscoderAPI) UpdatePipelineWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// UpdatePipelineWithContext indicates an expected call of UpdatePipelineWithContext.
+// UpdatePipelineWithContext indicates an expected call of UpdatePipelineWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePipelineWithContext", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).UpdatePipelineWithContext), varargs...)
 }
 
-// WaitUntilJobComplete mocks base method.
+// WaitUntilJobComplete mocks base method
 func (m *MockElasticTranscoderAPI) WaitUntilJobComplete(arg0 *elastictranscoder.ReadJobInput) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WaitUntilJobComplete", arg0)
@@ -1026,14 +1025,14 @@ func (m *MockElasticTranscoderAPI) WaitUntilJobComplete(arg0 *elastictranscoder.
 	return ret0
 }
 
-// WaitUntilJobComplete indicates an expected call of WaitUntilJobComplete.
+// WaitUntilJobComplete indicates an expected call of WaitUntilJobComplete
 func (mr *MockElasticTranscoderAPIMockRecorder) WaitUntilJobComplete(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilJobComplete", reflect.TypeOf((*MockElasticTranscoderAPI)(nil).WaitUntilJobComplete), arg0)
 }
 
-// WaitUntilJobCompleteWithContext mocks base method.
-func (m *MockElasticTranscoderAPI) WaitUntilJobCompleteWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.WaiterOption) error {
+// WaitUntilJobCompleteWithContext mocks base method
+func (m *MockElasticTranscoderAPI) WaitUntilJobCompleteWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1044,7 +1043,7 @@ func (m *MockElasticTranscoderAPI) WaitUntilJobCompleteWithContext(arg0 context.
 	return ret0
 }
 
-// WaitUntilJobCompleteWithContext indicates an expected call of WaitUntilJobCompleteWithContext.
+// WaitUntilJobCompleteWithContext indicates an expected call of WaitUntilJobCompleteWithContext
 func (mr *MockElasticTranscoderAPIMockRecorder) WaitUntilJobCompleteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)

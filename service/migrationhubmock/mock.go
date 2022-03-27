@@ -5,38 +5,37 @@
 package migrationhubmock
 
 import (
-	context "context"
-	reflect "reflect"
-
+	aws "github.com/aws/aws-sdk-go/aws"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	migrationhub "github.com/aws/aws-sdk-go/service/migrationhub"
 	gomock "github.com/golang/mock/gomock"
+	reflect "reflect"
 )
 
-// MockMigrationHubAPI is a mock of MigrationHubAPI interface.
+// MockMigrationHubAPI is a mock of MigrationHubAPI interface
 type MockMigrationHubAPI struct {
 	ctrl     *gomock.Controller
 	recorder *MockMigrationHubAPIMockRecorder
 }
 
-// MockMigrationHubAPIMockRecorder is the mock recorder for MockMigrationHubAPI.
+// MockMigrationHubAPIMockRecorder is the mock recorder for MockMigrationHubAPI
 type MockMigrationHubAPIMockRecorder struct {
 	mock *MockMigrationHubAPI
 }
 
-// NewMockMigrationHubAPI creates a new mock instance.
+// NewMockMigrationHubAPI creates a new mock instance
 func NewMockMigrationHubAPI(ctrl *gomock.Controller) *MockMigrationHubAPI {
 	mock := &MockMigrationHubAPI{ctrl: ctrl}
 	mock.recorder = &MockMigrationHubAPIMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use.
+// EXPECT returns an object that allows the caller to indicate expected use
 func (m *MockMigrationHubAPI) EXPECT() *MockMigrationHubAPIMockRecorder {
 	return m.recorder
 }
 
-// AssociateCreatedArtifact mocks base method.
+// AssociateCreatedArtifact mocks base method
 func (m *MockMigrationHubAPI) AssociateCreatedArtifact(arg0 *migrationhub.AssociateCreatedArtifactInput) (*migrationhub.AssociateCreatedArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateCreatedArtifact", arg0)
@@ -45,13 +44,13 @@ func (m *MockMigrationHubAPI) AssociateCreatedArtifact(arg0 *migrationhub.Associ
 	return ret0, ret1
 }
 
-// AssociateCreatedArtifact indicates an expected call of AssociateCreatedArtifact.
+// AssociateCreatedArtifact indicates an expected call of AssociateCreatedArtifact
 func (mr *MockMigrationHubAPIMockRecorder) AssociateCreatedArtifact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCreatedArtifact", reflect.TypeOf((*MockMigrationHubAPI)(nil).AssociateCreatedArtifact), arg0)
 }
 
-// AssociateCreatedArtifactRequest mocks base method.
+// AssociateCreatedArtifactRequest mocks base method
 func (m *MockMigrationHubAPI) AssociateCreatedArtifactRequest(arg0 *migrationhub.AssociateCreatedArtifactInput) (*request.Request, *migrationhub.AssociateCreatedArtifactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateCreatedArtifactRequest", arg0)
@@ -60,14 +59,14 @@ func (m *MockMigrationHubAPI) AssociateCreatedArtifactRequest(arg0 *migrationhub
 	return ret0, ret1
 }
 
-// AssociateCreatedArtifactRequest indicates an expected call of AssociateCreatedArtifactRequest.
+// AssociateCreatedArtifactRequest indicates an expected call of AssociateCreatedArtifactRequest
 func (mr *MockMigrationHubAPIMockRecorder) AssociateCreatedArtifactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCreatedArtifactRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).AssociateCreatedArtifactRequest), arg0)
 }
 
-// AssociateCreatedArtifactWithContext mocks base method.
-func (m *MockMigrationHubAPI) AssociateCreatedArtifactWithContext(arg0 context.Context, arg1 *migrationhub.AssociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.AssociateCreatedArtifactOutput, error) {
+// AssociateCreatedArtifactWithContext mocks base method
+func (m *MockMigrationHubAPI) AssociateCreatedArtifactWithContext(arg0 aws.Context, arg1 *migrationhub.AssociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.AssociateCreatedArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -79,14 +78,14 @@ func (m *MockMigrationHubAPI) AssociateCreatedArtifactWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// AssociateCreatedArtifactWithContext indicates an expected call of AssociateCreatedArtifactWithContext.
+// AssociateCreatedArtifactWithContext indicates an expected call of AssociateCreatedArtifactWithContext
 func (mr *MockMigrationHubAPIMockRecorder) AssociateCreatedArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCreatedArtifactWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).AssociateCreatedArtifactWithContext), varargs...)
 }
 
-// AssociateDiscoveredResource mocks base method.
+// AssociateDiscoveredResource mocks base method
 func (m *MockMigrationHubAPI) AssociateDiscoveredResource(arg0 *migrationhub.AssociateDiscoveredResourceInput) (*migrationhub.AssociateDiscoveredResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDiscoveredResource", arg0)
@@ -95,13 +94,13 @@ func (m *MockMigrationHubAPI) AssociateDiscoveredResource(arg0 *migrationhub.Ass
 	return ret0, ret1
 }
 
-// AssociateDiscoveredResource indicates an expected call of AssociateDiscoveredResource.
+// AssociateDiscoveredResource indicates an expected call of AssociateDiscoveredResource
 func (mr *MockMigrationHubAPIMockRecorder) AssociateDiscoveredResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDiscoveredResource", reflect.TypeOf((*MockMigrationHubAPI)(nil).AssociateDiscoveredResource), arg0)
 }
 
-// AssociateDiscoveredResourceRequest mocks base method.
+// AssociateDiscoveredResourceRequest mocks base method
 func (m *MockMigrationHubAPI) AssociateDiscoveredResourceRequest(arg0 *migrationhub.AssociateDiscoveredResourceInput) (*request.Request, *migrationhub.AssociateDiscoveredResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AssociateDiscoveredResourceRequest", arg0)
@@ -110,14 +109,14 @@ func (m *MockMigrationHubAPI) AssociateDiscoveredResourceRequest(arg0 *migration
 	return ret0, ret1
 }
 
-// AssociateDiscoveredResourceRequest indicates an expected call of AssociateDiscoveredResourceRequest.
+// AssociateDiscoveredResourceRequest indicates an expected call of AssociateDiscoveredResourceRequest
 func (mr *MockMigrationHubAPIMockRecorder) AssociateDiscoveredResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDiscoveredResourceRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).AssociateDiscoveredResourceRequest), arg0)
 }
 
-// AssociateDiscoveredResourceWithContext mocks base method.
-func (m *MockMigrationHubAPI) AssociateDiscoveredResourceWithContext(arg0 context.Context, arg1 *migrationhub.AssociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.AssociateDiscoveredResourceOutput, error) {
+// AssociateDiscoveredResourceWithContext mocks base method
+func (m *MockMigrationHubAPI) AssociateDiscoveredResourceWithContext(arg0 aws.Context, arg1 *migrationhub.AssociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.AssociateDiscoveredResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -129,14 +128,14 @@ func (m *MockMigrationHubAPI) AssociateDiscoveredResourceWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// AssociateDiscoveredResourceWithContext indicates an expected call of AssociateDiscoveredResourceWithContext.
+// AssociateDiscoveredResourceWithContext indicates an expected call of AssociateDiscoveredResourceWithContext
 func (mr *MockMigrationHubAPIMockRecorder) AssociateDiscoveredResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDiscoveredResourceWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).AssociateDiscoveredResourceWithContext), varargs...)
 }
 
-// CreateProgressUpdateStream mocks base method.
+// CreateProgressUpdateStream mocks base method
 func (m *MockMigrationHubAPI) CreateProgressUpdateStream(arg0 *migrationhub.CreateProgressUpdateStreamInput) (*migrationhub.CreateProgressUpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProgressUpdateStream", arg0)
@@ -145,13 +144,13 @@ func (m *MockMigrationHubAPI) CreateProgressUpdateStream(arg0 *migrationhub.Crea
 	return ret0, ret1
 }
 
-// CreateProgressUpdateStream indicates an expected call of CreateProgressUpdateStream.
+// CreateProgressUpdateStream indicates an expected call of CreateProgressUpdateStream
 func (mr *MockMigrationHubAPIMockRecorder) CreateProgressUpdateStream(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProgressUpdateStream", reflect.TypeOf((*MockMigrationHubAPI)(nil).CreateProgressUpdateStream), arg0)
 }
 
-// CreateProgressUpdateStreamRequest mocks base method.
+// CreateProgressUpdateStreamRequest mocks base method
 func (m *MockMigrationHubAPI) CreateProgressUpdateStreamRequest(arg0 *migrationhub.CreateProgressUpdateStreamInput) (*request.Request, *migrationhub.CreateProgressUpdateStreamOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateProgressUpdateStreamRequest", arg0)
@@ -160,14 +159,14 @@ func (m *MockMigrationHubAPI) CreateProgressUpdateStreamRequest(arg0 *migrationh
 	return ret0, ret1
 }
 
-// CreateProgressUpdateStreamRequest indicates an expected call of CreateProgressUpdateStreamRequest.
+// CreateProgressUpdateStreamRequest indicates an expected call of CreateProgressUpdateStreamRequest
 func (mr *MockMigrationHubAPIMockRecorder) CreateProgressUpdateStreamRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProgressUpdateStreamRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).CreateProgressUpdateStreamRequest), arg0)
 }
 
-// CreateProgressUpdateStreamWithContext mocks base method.
-func (m *MockMigrationHubAPI) CreateProgressUpdateStreamWithContext(arg0 context.Context, arg1 *migrationhub.CreateProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.CreateProgressUpdateStreamOutput, error) {
+// CreateProgressUpdateStreamWithContext mocks base method
+func (m *MockMigrationHubAPI) CreateProgressUpdateStreamWithContext(arg0 aws.Context, arg1 *migrationhub.CreateProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.CreateProgressUpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -179,14 +178,14 @@ func (m *MockMigrationHubAPI) CreateProgressUpdateStreamWithContext(arg0 context
 	return ret0, ret1
 }
 
-// CreateProgressUpdateStreamWithContext indicates an expected call of CreateProgressUpdateStreamWithContext.
+// CreateProgressUpdateStreamWithContext indicates an expected call of CreateProgressUpdateStreamWithContext
 func (mr *MockMigrationHubAPIMockRecorder) CreateProgressUpdateStreamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProgressUpdateStreamWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).CreateProgressUpdateStreamWithContext), varargs...)
 }
 
-// DeleteProgressUpdateStream mocks base method.
+// DeleteProgressUpdateStream mocks base method
 func (m *MockMigrationHubAPI) DeleteProgressUpdateStream(arg0 *migrationhub.DeleteProgressUpdateStreamInput) (*migrationhub.DeleteProgressUpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProgressUpdateStream", arg0)
@@ -195,13 +194,13 @@ func (m *MockMigrationHubAPI) DeleteProgressUpdateStream(arg0 *migrationhub.Dele
 	return ret0, ret1
 }
 
-// DeleteProgressUpdateStream indicates an expected call of DeleteProgressUpdateStream.
+// DeleteProgressUpdateStream indicates an expected call of DeleteProgressUpdateStream
 func (mr *MockMigrationHubAPIMockRecorder) DeleteProgressUpdateStream(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProgressUpdateStream", reflect.TypeOf((*MockMigrationHubAPI)(nil).DeleteProgressUpdateStream), arg0)
 }
 
-// DeleteProgressUpdateStreamRequest mocks base method.
+// DeleteProgressUpdateStreamRequest mocks base method
 func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamRequest(arg0 *migrationhub.DeleteProgressUpdateStreamInput) (*request.Request, *migrationhub.DeleteProgressUpdateStreamOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteProgressUpdateStreamRequest", arg0)
@@ -210,14 +209,14 @@ func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamRequest(arg0 *migrationh
 	return ret0, ret1
 }
 
-// DeleteProgressUpdateStreamRequest indicates an expected call of DeleteProgressUpdateStreamRequest.
+// DeleteProgressUpdateStreamRequest indicates an expected call of DeleteProgressUpdateStreamRequest
 func (mr *MockMigrationHubAPIMockRecorder) DeleteProgressUpdateStreamRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProgressUpdateStreamRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).DeleteProgressUpdateStreamRequest), arg0)
 }
 
-// DeleteProgressUpdateStreamWithContext mocks base method.
-func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamWithContext(arg0 context.Context, arg1 *migrationhub.DeleteProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.DeleteProgressUpdateStreamOutput, error) {
+// DeleteProgressUpdateStreamWithContext mocks base method
+func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamWithContext(arg0 aws.Context, arg1 *migrationhub.DeleteProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.DeleteProgressUpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -229,14 +228,14 @@ func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamWithContext(arg0 context
 	return ret0, ret1
 }
 
-// DeleteProgressUpdateStreamWithContext indicates an expected call of DeleteProgressUpdateStreamWithContext.
+// DeleteProgressUpdateStreamWithContext indicates an expected call of DeleteProgressUpdateStreamWithContext
 func (mr *MockMigrationHubAPIMockRecorder) DeleteProgressUpdateStreamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProgressUpdateStreamWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).DeleteProgressUpdateStreamWithContext), varargs...)
 }
 
-// DescribeApplicationState mocks base method.
+// DescribeApplicationState mocks base method
 func (m *MockMigrationHubAPI) DescribeApplicationState(arg0 *migrationhub.DescribeApplicationStateInput) (*migrationhub.DescribeApplicationStateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplicationState", arg0)
@@ -245,13 +244,13 @@ func (m *MockMigrationHubAPI) DescribeApplicationState(arg0 *migrationhub.Descri
 	return ret0, ret1
 }
 
-// DescribeApplicationState indicates an expected call of DescribeApplicationState.
+// DescribeApplicationState indicates an expected call of DescribeApplicationState
 func (mr *MockMigrationHubAPIMockRecorder) DescribeApplicationState(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationState", reflect.TypeOf((*MockMigrationHubAPI)(nil).DescribeApplicationState), arg0)
 }
 
-// DescribeApplicationStateRequest mocks base method.
+// DescribeApplicationStateRequest mocks base method
 func (m *MockMigrationHubAPI) DescribeApplicationStateRequest(arg0 *migrationhub.DescribeApplicationStateInput) (*request.Request, *migrationhub.DescribeApplicationStateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeApplicationStateRequest", arg0)
@@ -260,14 +259,14 @@ func (m *MockMigrationHubAPI) DescribeApplicationStateRequest(arg0 *migrationhub
 	return ret0, ret1
 }
 
-// DescribeApplicationStateRequest indicates an expected call of DescribeApplicationStateRequest.
+// DescribeApplicationStateRequest indicates an expected call of DescribeApplicationStateRequest
 func (mr *MockMigrationHubAPIMockRecorder) DescribeApplicationStateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationStateRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).DescribeApplicationStateRequest), arg0)
 }
 
-// DescribeApplicationStateWithContext mocks base method.
-func (m *MockMigrationHubAPI) DescribeApplicationStateWithContext(arg0 context.Context, arg1 *migrationhub.DescribeApplicationStateInput, arg2 ...request.Option) (*migrationhub.DescribeApplicationStateOutput, error) {
+// DescribeApplicationStateWithContext mocks base method
+func (m *MockMigrationHubAPI) DescribeApplicationStateWithContext(arg0 aws.Context, arg1 *migrationhub.DescribeApplicationStateInput, arg2 ...request.Option) (*migrationhub.DescribeApplicationStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -279,14 +278,14 @@ func (m *MockMigrationHubAPI) DescribeApplicationStateWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// DescribeApplicationStateWithContext indicates an expected call of DescribeApplicationStateWithContext.
+// DescribeApplicationStateWithContext indicates an expected call of DescribeApplicationStateWithContext
 func (mr *MockMigrationHubAPIMockRecorder) DescribeApplicationStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationStateWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).DescribeApplicationStateWithContext), varargs...)
 }
 
-// DescribeMigrationTask mocks base method.
+// DescribeMigrationTask mocks base method
 func (m *MockMigrationHubAPI) DescribeMigrationTask(arg0 *migrationhub.DescribeMigrationTaskInput) (*migrationhub.DescribeMigrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMigrationTask", arg0)
@@ -295,13 +294,13 @@ func (m *MockMigrationHubAPI) DescribeMigrationTask(arg0 *migrationhub.DescribeM
 	return ret0, ret1
 }
 
-// DescribeMigrationTask indicates an expected call of DescribeMigrationTask.
+// DescribeMigrationTask indicates an expected call of DescribeMigrationTask
 func (mr *MockMigrationHubAPIMockRecorder) DescribeMigrationTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMigrationTask", reflect.TypeOf((*MockMigrationHubAPI)(nil).DescribeMigrationTask), arg0)
 }
 
-// DescribeMigrationTaskRequest mocks base method.
+// DescribeMigrationTaskRequest mocks base method
 func (m *MockMigrationHubAPI) DescribeMigrationTaskRequest(arg0 *migrationhub.DescribeMigrationTaskInput) (*request.Request, *migrationhub.DescribeMigrationTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DescribeMigrationTaskRequest", arg0)
@@ -310,14 +309,14 @@ func (m *MockMigrationHubAPI) DescribeMigrationTaskRequest(arg0 *migrationhub.De
 	return ret0, ret1
 }
 
-// DescribeMigrationTaskRequest indicates an expected call of DescribeMigrationTaskRequest.
+// DescribeMigrationTaskRequest indicates an expected call of DescribeMigrationTaskRequest
 func (mr *MockMigrationHubAPIMockRecorder) DescribeMigrationTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMigrationTaskRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).DescribeMigrationTaskRequest), arg0)
 }
 
-// DescribeMigrationTaskWithContext mocks base method.
-func (m *MockMigrationHubAPI) DescribeMigrationTaskWithContext(arg0 context.Context, arg1 *migrationhub.DescribeMigrationTaskInput, arg2 ...request.Option) (*migrationhub.DescribeMigrationTaskOutput, error) {
+// DescribeMigrationTaskWithContext mocks base method
+func (m *MockMigrationHubAPI) DescribeMigrationTaskWithContext(arg0 aws.Context, arg1 *migrationhub.DescribeMigrationTaskInput, arg2 ...request.Option) (*migrationhub.DescribeMigrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -329,14 +328,14 @@ func (m *MockMigrationHubAPI) DescribeMigrationTaskWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// DescribeMigrationTaskWithContext indicates an expected call of DescribeMigrationTaskWithContext.
+// DescribeMigrationTaskWithContext indicates an expected call of DescribeMigrationTaskWithContext
 func (mr *MockMigrationHubAPIMockRecorder) DescribeMigrationTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMigrationTaskWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).DescribeMigrationTaskWithContext), varargs...)
 }
 
-// DisassociateCreatedArtifact mocks base method.
+// DisassociateCreatedArtifact mocks base method
 func (m *MockMigrationHubAPI) DisassociateCreatedArtifact(arg0 *migrationhub.DisassociateCreatedArtifactInput) (*migrationhub.DisassociateCreatedArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateCreatedArtifact", arg0)
@@ -345,13 +344,13 @@ func (m *MockMigrationHubAPI) DisassociateCreatedArtifact(arg0 *migrationhub.Dis
 	return ret0, ret1
 }
 
-// DisassociateCreatedArtifact indicates an expected call of DisassociateCreatedArtifact.
+// DisassociateCreatedArtifact indicates an expected call of DisassociateCreatedArtifact
 func (mr *MockMigrationHubAPIMockRecorder) DisassociateCreatedArtifact(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCreatedArtifact", reflect.TypeOf((*MockMigrationHubAPI)(nil).DisassociateCreatedArtifact), arg0)
 }
 
-// DisassociateCreatedArtifactRequest mocks base method.
+// DisassociateCreatedArtifactRequest mocks base method
 func (m *MockMigrationHubAPI) DisassociateCreatedArtifactRequest(arg0 *migrationhub.DisassociateCreatedArtifactInput) (*request.Request, *migrationhub.DisassociateCreatedArtifactOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateCreatedArtifactRequest", arg0)
@@ -360,14 +359,14 @@ func (m *MockMigrationHubAPI) DisassociateCreatedArtifactRequest(arg0 *migration
 	return ret0, ret1
 }
 
-// DisassociateCreatedArtifactRequest indicates an expected call of DisassociateCreatedArtifactRequest.
+// DisassociateCreatedArtifactRequest indicates an expected call of DisassociateCreatedArtifactRequest
 func (mr *MockMigrationHubAPIMockRecorder) DisassociateCreatedArtifactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCreatedArtifactRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).DisassociateCreatedArtifactRequest), arg0)
 }
 
-// DisassociateCreatedArtifactWithContext mocks base method.
-func (m *MockMigrationHubAPI) DisassociateCreatedArtifactWithContext(arg0 context.Context, arg1 *migrationhub.DisassociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.DisassociateCreatedArtifactOutput, error) {
+// DisassociateCreatedArtifactWithContext mocks base method
+func (m *MockMigrationHubAPI) DisassociateCreatedArtifactWithContext(arg0 aws.Context, arg1 *migrationhub.DisassociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.DisassociateCreatedArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -379,14 +378,14 @@ func (m *MockMigrationHubAPI) DisassociateCreatedArtifactWithContext(arg0 contex
 	return ret0, ret1
 }
 
-// DisassociateCreatedArtifactWithContext indicates an expected call of DisassociateCreatedArtifactWithContext.
+// DisassociateCreatedArtifactWithContext indicates an expected call of DisassociateCreatedArtifactWithContext
 func (mr *MockMigrationHubAPIMockRecorder) DisassociateCreatedArtifactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCreatedArtifactWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).DisassociateCreatedArtifactWithContext), varargs...)
 }
 
-// DisassociateDiscoveredResource mocks base method.
+// DisassociateDiscoveredResource mocks base method
 func (m *MockMigrationHubAPI) DisassociateDiscoveredResource(arg0 *migrationhub.DisassociateDiscoveredResourceInput) (*migrationhub.DisassociateDiscoveredResourceOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDiscoveredResource", arg0)
@@ -395,13 +394,13 @@ func (m *MockMigrationHubAPI) DisassociateDiscoveredResource(arg0 *migrationhub.
 	return ret0, ret1
 }
 
-// DisassociateDiscoveredResource indicates an expected call of DisassociateDiscoveredResource.
+// DisassociateDiscoveredResource indicates an expected call of DisassociateDiscoveredResource
 func (mr *MockMigrationHubAPIMockRecorder) DisassociateDiscoveredResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDiscoveredResource", reflect.TypeOf((*MockMigrationHubAPI)(nil).DisassociateDiscoveredResource), arg0)
 }
 
-// DisassociateDiscoveredResourceRequest mocks base method.
+// DisassociateDiscoveredResourceRequest mocks base method
 func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceRequest(arg0 *migrationhub.DisassociateDiscoveredResourceInput) (*request.Request, *migrationhub.DisassociateDiscoveredResourceOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DisassociateDiscoveredResourceRequest", arg0)
@@ -410,14 +409,14 @@ func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceRequest(arg0 *migrat
 	return ret0, ret1
 }
 
-// DisassociateDiscoveredResourceRequest indicates an expected call of DisassociateDiscoveredResourceRequest.
+// DisassociateDiscoveredResourceRequest indicates an expected call of DisassociateDiscoveredResourceRequest
 func (mr *MockMigrationHubAPIMockRecorder) DisassociateDiscoveredResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDiscoveredResourceRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).DisassociateDiscoveredResourceRequest), arg0)
 }
 
-// DisassociateDiscoveredResourceWithContext mocks base method.
-func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceWithContext(arg0 context.Context, arg1 *migrationhub.DisassociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.DisassociateDiscoveredResourceOutput, error) {
+// DisassociateDiscoveredResourceWithContext mocks base method
+func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceWithContext(arg0 aws.Context, arg1 *migrationhub.DisassociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.DisassociateDiscoveredResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -429,14 +428,14 @@ func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceWithContext(arg0 con
 	return ret0, ret1
 }
 
-// DisassociateDiscoveredResourceWithContext indicates an expected call of DisassociateDiscoveredResourceWithContext.
+// DisassociateDiscoveredResourceWithContext indicates an expected call of DisassociateDiscoveredResourceWithContext
 func (mr *MockMigrationHubAPIMockRecorder) DisassociateDiscoveredResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDiscoveredResourceWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).DisassociateDiscoveredResourceWithContext), varargs...)
 }
 
-// ImportMigrationTask mocks base method.
+// ImportMigrationTask mocks base method
 func (m *MockMigrationHubAPI) ImportMigrationTask(arg0 *migrationhub.ImportMigrationTaskInput) (*migrationhub.ImportMigrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportMigrationTask", arg0)
@@ -445,13 +444,13 @@ func (m *MockMigrationHubAPI) ImportMigrationTask(arg0 *migrationhub.ImportMigra
 	return ret0, ret1
 }
 
-// ImportMigrationTask indicates an expected call of ImportMigrationTask.
+// ImportMigrationTask indicates an expected call of ImportMigrationTask
 func (mr *MockMigrationHubAPIMockRecorder) ImportMigrationTask(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportMigrationTask", reflect.TypeOf((*MockMigrationHubAPI)(nil).ImportMigrationTask), arg0)
 }
 
-// ImportMigrationTaskRequest mocks base method.
+// ImportMigrationTaskRequest mocks base method
 func (m *MockMigrationHubAPI) ImportMigrationTaskRequest(arg0 *migrationhub.ImportMigrationTaskInput) (*request.Request, *migrationhub.ImportMigrationTaskOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ImportMigrationTaskRequest", arg0)
@@ -460,14 +459,14 @@ func (m *MockMigrationHubAPI) ImportMigrationTaskRequest(arg0 *migrationhub.Impo
 	return ret0, ret1
 }
 
-// ImportMigrationTaskRequest indicates an expected call of ImportMigrationTaskRequest.
+// ImportMigrationTaskRequest indicates an expected call of ImportMigrationTaskRequest
 func (mr *MockMigrationHubAPIMockRecorder) ImportMigrationTaskRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportMigrationTaskRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ImportMigrationTaskRequest), arg0)
 }
 
-// ImportMigrationTaskWithContext mocks base method.
-func (m *MockMigrationHubAPI) ImportMigrationTaskWithContext(arg0 context.Context, arg1 *migrationhub.ImportMigrationTaskInput, arg2 ...request.Option) (*migrationhub.ImportMigrationTaskOutput, error) {
+// ImportMigrationTaskWithContext mocks base method
+func (m *MockMigrationHubAPI) ImportMigrationTaskWithContext(arg0 aws.Context, arg1 *migrationhub.ImportMigrationTaskInput, arg2 ...request.Option) (*migrationhub.ImportMigrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -479,97 +478,14 @@ func (m *MockMigrationHubAPI) ImportMigrationTaskWithContext(arg0 context.Contex
 	return ret0, ret1
 }
 
-// ImportMigrationTaskWithContext indicates an expected call of ImportMigrationTaskWithContext.
+// ImportMigrationTaskWithContext indicates an expected call of ImportMigrationTaskWithContext
 func (mr *MockMigrationHubAPIMockRecorder) ImportMigrationTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportMigrationTaskWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ImportMigrationTaskWithContext), varargs...)
 }
 
-// ListApplicationStates mocks base method.
-func (m *MockMigrationHubAPI) ListApplicationStates(arg0 *migrationhub.ListApplicationStatesInput) (*migrationhub.ListApplicationStatesOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListApplicationStates", arg0)
-	ret0, _ := ret[0].(*migrationhub.ListApplicationStatesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListApplicationStates indicates an expected call of ListApplicationStates.
-func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStates(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStates", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStates), arg0)
-}
-
-// ListApplicationStatesPages mocks base method.
-func (m *MockMigrationHubAPI) ListApplicationStatesPages(arg0 *migrationhub.ListApplicationStatesInput, arg1 func(*migrationhub.ListApplicationStatesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListApplicationStatesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListApplicationStatesPages indicates an expected call of ListApplicationStatesPages.
-func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesPages), arg0, arg1)
-}
-
-// ListApplicationStatesPagesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListApplicationStatesPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListApplicationStatesInput, arg2 func(*migrationhub.ListApplicationStatesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListApplicationStatesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListApplicationStatesPagesWithContext indicates an expected call of ListApplicationStatesPagesWithContext.
-func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesPagesWithContext), varargs...)
-}
-
-// ListApplicationStatesRequest mocks base method.
-func (m *MockMigrationHubAPI) ListApplicationStatesRequest(arg0 *migrationhub.ListApplicationStatesInput) (*request.Request, *migrationhub.ListApplicationStatesOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListApplicationStatesRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*migrationhub.ListApplicationStatesOutput)
-	return ret0, ret1
-}
-
-// ListApplicationStatesRequest indicates an expected call of ListApplicationStatesRequest.
-func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesRequest), arg0)
-}
-
-// ListApplicationStatesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListApplicationStatesWithContext(arg0 context.Context, arg1 *migrationhub.ListApplicationStatesInput, arg2 ...request.Option) (*migrationhub.ListApplicationStatesOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListApplicationStatesWithContext", varargs...)
-	ret0, _ := ret[0].(*migrationhub.ListApplicationStatesOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// ListApplicationStatesWithContext indicates an expected call of ListApplicationStatesWithContext.
-func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesWithContext), varargs...)
-}
-
-// ListCreatedArtifacts mocks base method.
+// ListCreatedArtifacts mocks base method
 func (m *MockMigrationHubAPI) ListCreatedArtifacts(arg0 *migrationhub.ListCreatedArtifactsInput) (*migrationhub.ListCreatedArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListCreatedArtifacts", arg0)
@@ -578,46 +494,13 @@ func (m *MockMigrationHubAPI) ListCreatedArtifacts(arg0 *migrationhub.ListCreate
 	return ret0, ret1
 }
 
-// ListCreatedArtifacts indicates an expected call of ListCreatedArtifacts.
+// ListCreatedArtifacts indicates an expected call of ListCreatedArtifacts
 func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifacts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifacts", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifacts), arg0)
 }
 
-// ListCreatedArtifactsPages mocks base method.
-func (m *MockMigrationHubAPI) ListCreatedArtifactsPages(arg0 *migrationhub.ListCreatedArtifactsInput, arg1 func(*migrationhub.ListCreatedArtifactsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListCreatedArtifactsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListCreatedArtifactsPages indicates an expected call of ListCreatedArtifactsPages.
-func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifactsPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifactsPages), arg0, arg1)
-}
-
-// ListCreatedArtifactsPagesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListCreatedArtifactsPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListCreatedArtifactsInput, arg2 func(*migrationhub.ListCreatedArtifactsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListCreatedArtifactsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListCreatedArtifactsPagesWithContext indicates an expected call of ListCreatedArtifactsPagesWithContext.
-func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifactsPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifactsPagesWithContext), varargs...)
-}
-
-// ListCreatedArtifactsRequest mocks base method.
+// ListCreatedArtifactsRequest mocks base method
 func (m *MockMigrationHubAPI) ListCreatedArtifactsRequest(arg0 *migrationhub.ListCreatedArtifactsInput) (*request.Request, *migrationhub.ListCreatedArtifactsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListCreatedArtifactsRequest", arg0)
@@ -626,14 +509,14 @@ func (m *MockMigrationHubAPI) ListCreatedArtifactsRequest(arg0 *migrationhub.Lis
 	return ret0, ret1
 }
 
-// ListCreatedArtifactsRequest indicates an expected call of ListCreatedArtifactsRequest.
+// ListCreatedArtifactsRequest indicates an expected call of ListCreatedArtifactsRequest
 func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifactsRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifactsRequest), arg0)
 }
 
-// ListCreatedArtifactsWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListCreatedArtifactsWithContext(arg0 context.Context, arg1 *migrationhub.ListCreatedArtifactsInput, arg2 ...request.Option) (*migrationhub.ListCreatedArtifactsOutput, error) {
+// ListCreatedArtifactsWithContext mocks base method
+func (m *MockMigrationHubAPI) ListCreatedArtifactsWithContext(arg0 aws.Context, arg1 *migrationhub.ListCreatedArtifactsInput, arg2 ...request.Option) (*migrationhub.ListCreatedArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -645,14 +528,14 @@ func (m *MockMigrationHubAPI) ListCreatedArtifactsWithContext(arg0 context.Conte
 	return ret0, ret1
 }
 
-// ListCreatedArtifactsWithContext indicates an expected call of ListCreatedArtifactsWithContext.
+// ListCreatedArtifactsWithContext indicates an expected call of ListCreatedArtifactsWithContext
 func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifactsWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifactsWithContext), varargs...)
 }
 
-// ListDiscoveredResources mocks base method.
+// ListDiscoveredResources mocks base method
 func (m *MockMigrationHubAPI) ListDiscoveredResources(arg0 *migrationhub.ListDiscoveredResourcesInput) (*migrationhub.ListDiscoveredResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDiscoveredResources", arg0)
@@ -661,46 +544,13 @@ func (m *MockMigrationHubAPI) ListDiscoveredResources(arg0 *migrationhub.ListDis
 	return ret0, ret1
 }
 
-// ListDiscoveredResources indicates an expected call of ListDiscoveredResources.
+// ListDiscoveredResources indicates an expected call of ListDiscoveredResources
 func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResources", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResources), arg0)
 }
 
-// ListDiscoveredResourcesPages mocks base method.
-func (m *MockMigrationHubAPI) ListDiscoveredResourcesPages(arg0 *migrationhub.ListDiscoveredResourcesInput, arg1 func(*migrationhub.ListDiscoveredResourcesOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListDiscoveredResourcesPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListDiscoveredResourcesPages indicates an expected call of ListDiscoveredResourcesPages.
-func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResourcesPages), arg0, arg1)
-}
-
-// ListDiscoveredResourcesPagesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListDiscoveredResourcesPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListDiscoveredResourcesInput, arg2 func(*migrationhub.ListDiscoveredResourcesOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListDiscoveredResourcesPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListDiscoveredResourcesPagesWithContext indicates an expected call of ListDiscoveredResourcesPagesWithContext.
-func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResourcesPagesWithContext), varargs...)
-}
-
-// ListDiscoveredResourcesRequest mocks base method.
+// ListDiscoveredResourcesRequest mocks base method
 func (m *MockMigrationHubAPI) ListDiscoveredResourcesRequest(arg0 *migrationhub.ListDiscoveredResourcesInput) (*request.Request, *migrationhub.ListDiscoveredResourcesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListDiscoveredResourcesRequest", arg0)
@@ -709,14 +559,14 @@ func (m *MockMigrationHubAPI) ListDiscoveredResourcesRequest(arg0 *migrationhub.
 	return ret0, ret1
 }
 
-// ListDiscoveredResourcesRequest indicates an expected call of ListDiscoveredResourcesRequest.
+// ListDiscoveredResourcesRequest indicates an expected call of ListDiscoveredResourcesRequest
 func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResourcesRequest), arg0)
 }
 
-// ListDiscoveredResourcesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListDiscoveredResourcesWithContext(arg0 context.Context, arg1 *migrationhub.ListDiscoveredResourcesInput, arg2 ...request.Option) (*migrationhub.ListDiscoveredResourcesOutput, error) {
+// ListDiscoveredResourcesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListDiscoveredResourcesWithContext(arg0 aws.Context, arg1 *migrationhub.ListDiscoveredResourcesInput, arg2 ...request.Option) (*migrationhub.ListDiscoveredResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -728,14 +578,14 @@ func (m *MockMigrationHubAPI) ListDiscoveredResourcesWithContext(arg0 context.Co
 	return ret0, ret1
 }
 
-// ListDiscoveredResourcesWithContext indicates an expected call of ListDiscoveredResourcesWithContext.
+// ListDiscoveredResourcesWithContext indicates an expected call of ListDiscoveredResourcesWithContext
 func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResourcesWithContext), varargs...)
 }
 
-// ListMigrationTasks mocks base method.
+// ListMigrationTasks mocks base method
 func (m *MockMigrationHubAPI) ListMigrationTasks(arg0 *migrationhub.ListMigrationTasksInput) (*migrationhub.ListMigrationTasksOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMigrationTasks", arg0)
@@ -744,46 +594,13 @@ func (m *MockMigrationHubAPI) ListMigrationTasks(arg0 *migrationhub.ListMigratio
 	return ret0, ret1
 }
 
-// ListMigrationTasks indicates an expected call of ListMigrationTasks.
+// ListMigrationTasks indicates an expected call of ListMigrationTasks
 func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasks", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasks), arg0)
 }
 
-// ListMigrationTasksPages mocks base method.
-func (m *MockMigrationHubAPI) ListMigrationTasksPages(arg0 *migrationhub.ListMigrationTasksInput, arg1 func(*migrationhub.ListMigrationTasksOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListMigrationTasksPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListMigrationTasksPages indicates an expected call of ListMigrationTasksPages.
-func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasksPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasksPages), arg0, arg1)
-}
-
-// ListMigrationTasksPagesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListMigrationTasksPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListMigrationTasksInput, arg2 func(*migrationhub.ListMigrationTasksOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListMigrationTasksPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListMigrationTasksPagesWithContext indicates an expected call of ListMigrationTasksPagesWithContext.
-func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasksPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasksPagesWithContext), varargs...)
-}
-
-// ListMigrationTasksRequest mocks base method.
+// ListMigrationTasksRequest mocks base method
 func (m *MockMigrationHubAPI) ListMigrationTasksRequest(arg0 *migrationhub.ListMigrationTasksInput) (*request.Request, *migrationhub.ListMigrationTasksOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListMigrationTasksRequest", arg0)
@@ -792,14 +609,14 @@ func (m *MockMigrationHubAPI) ListMigrationTasksRequest(arg0 *migrationhub.ListM
 	return ret0, ret1
 }
 
-// ListMigrationTasksRequest indicates an expected call of ListMigrationTasksRequest.
+// ListMigrationTasksRequest indicates an expected call of ListMigrationTasksRequest
 func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasksRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasksRequest), arg0)
 }
 
-// ListMigrationTasksWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListMigrationTasksWithContext(arg0 context.Context, arg1 *migrationhub.ListMigrationTasksInput, arg2 ...request.Option) (*migrationhub.ListMigrationTasksOutput, error) {
+// ListMigrationTasksWithContext mocks base method
+func (m *MockMigrationHubAPI) ListMigrationTasksWithContext(arg0 aws.Context, arg1 *migrationhub.ListMigrationTasksInput, arg2 ...request.Option) (*migrationhub.ListMigrationTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -811,14 +628,14 @@ func (m *MockMigrationHubAPI) ListMigrationTasksWithContext(arg0 context.Context
 	return ret0, ret1
 }
 
-// ListMigrationTasksWithContext indicates an expected call of ListMigrationTasksWithContext.
+// ListMigrationTasksWithContext indicates an expected call of ListMigrationTasksWithContext
 func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasksWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasksWithContext), varargs...)
 }
 
-// ListProgressUpdateStreams mocks base method.
+// ListProgressUpdateStreams mocks base method
 func (m *MockMigrationHubAPI) ListProgressUpdateStreams(arg0 *migrationhub.ListProgressUpdateStreamsInput) (*migrationhub.ListProgressUpdateStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProgressUpdateStreams", arg0)
@@ -827,46 +644,13 @@ func (m *MockMigrationHubAPI) ListProgressUpdateStreams(arg0 *migrationhub.ListP
 	return ret0, ret1
 }
 
-// ListProgressUpdateStreams indicates an expected call of ListProgressUpdateStreams.
+// ListProgressUpdateStreams indicates an expected call of ListProgressUpdateStreams
 func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreams(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreams", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreams), arg0)
 }
 
-// ListProgressUpdateStreamsPages mocks base method.
-func (m *MockMigrationHubAPI) ListProgressUpdateStreamsPages(arg0 *migrationhub.ListProgressUpdateStreamsInput, arg1 func(*migrationhub.ListProgressUpdateStreamsOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProgressUpdateStreamsPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProgressUpdateStreamsPages indicates an expected call of ListProgressUpdateStreamsPages.
-func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreamsPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreamsPages), arg0, arg1)
-}
-
-// ListProgressUpdateStreamsPagesWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListProgressUpdateStreamsPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListProgressUpdateStreamsInput, arg2 func(*migrationhub.ListProgressUpdateStreamsOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListProgressUpdateStreamsPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProgressUpdateStreamsPagesWithContext indicates an expected call of ListProgressUpdateStreamsPagesWithContext.
-func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreamsPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreamsPagesWithContext), varargs...)
-}
-
-// ListProgressUpdateStreamsRequest mocks base method.
+// ListProgressUpdateStreamsRequest mocks base method
 func (m *MockMigrationHubAPI) ListProgressUpdateStreamsRequest(arg0 *migrationhub.ListProgressUpdateStreamsInput) (*request.Request, *migrationhub.ListProgressUpdateStreamsOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListProgressUpdateStreamsRequest", arg0)
@@ -875,14 +659,14 @@ func (m *MockMigrationHubAPI) ListProgressUpdateStreamsRequest(arg0 *migrationhu
 	return ret0, ret1
 }
 
-// ListProgressUpdateStreamsRequest indicates an expected call of ListProgressUpdateStreamsRequest.
+// ListProgressUpdateStreamsRequest indicates an expected call of ListProgressUpdateStreamsRequest
 func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreamsRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreamsRequest), arg0)
 }
 
-// ListProgressUpdateStreamsWithContext mocks base method.
-func (m *MockMigrationHubAPI) ListProgressUpdateStreamsWithContext(arg0 context.Context, arg1 *migrationhub.ListProgressUpdateStreamsInput, arg2 ...request.Option) (*migrationhub.ListProgressUpdateStreamsOutput, error) {
+// ListProgressUpdateStreamsWithContext mocks base method
+func (m *MockMigrationHubAPI) ListProgressUpdateStreamsWithContext(arg0 aws.Context, arg1 *migrationhub.ListProgressUpdateStreamsInput, arg2 ...request.Option) (*migrationhub.ListProgressUpdateStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -894,14 +678,14 @@ func (m *MockMigrationHubAPI) ListProgressUpdateStreamsWithContext(arg0 context.
 	return ret0, ret1
 }
 
-// ListProgressUpdateStreamsWithContext indicates an expected call of ListProgressUpdateStreamsWithContext.
+// ListProgressUpdateStreamsWithContext indicates an expected call of ListProgressUpdateStreamsWithContext
 func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreamsWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreamsWithContext), varargs...)
 }
 
-// NotifyApplicationState mocks base method.
+// NotifyApplicationState mocks base method
 func (m *MockMigrationHubAPI) NotifyApplicationState(arg0 *migrationhub.NotifyApplicationStateInput) (*migrationhub.NotifyApplicationStateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "NotifyApplicationState", arg0)
@@ -910,13 +694,13 @@ func (m *MockMigrationHubAPI) NotifyApplicationState(arg0 *migrationhub.NotifyAp
 	return ret0, ret1
 }
 
-// NotifyApplicationState indicates an expected call of NotifyApplicationState.
+// NotifyApplicationState indicates an expected call of NotifyApplicationState
 func (mr *MockMigrationHubAPIMockRecorder) NotifyApplicationState(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyApplicationState", reflect.TypeOf((*MockMigrationHubAPI)(nil).NotifyApplicationState), arg0)
 }
 
-// NotifyApplicationStateRequest mocks base method.
+// NotifyApplicationStateRequest mocks base method
 func (m *MockMigrationHubAPI) NotifyApplicationStateRequest(arg0 *migrationhub.NotifyApplicationStateInput) (*request.Request, *migrationhub.NotifyApplicationStateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "NotifyApplicationStateRequest", arg0)
@@ -925,14 +709,14 @@ func (m *MockMigrationHubAPI) NotifyApplicationStateRequest(arg0 *migrationhub.N
 	return ret0, ret1
 }
 
-// NotifyApplicationStateRequest indicates an expected call of NotifyApplicationStateRequest.
+// NotifyApplicationStateRequest indicates an expected call of NotifyApplicationStateRequest
 func (mr *MockMigrationHubAPIMockRecorder) NotifyApplicationStateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyApplicationStateRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).NotifyApplicationStateRequest), arg0)
 }
 
-// NotifyApplicationStateWithContext mocks base method.
-func (m *MockMigrationHubAPI) NotifyApplicationStateWithContext(arg0 context.Context, arg1 *migrationhub.NotifyApplicationStateInput, arg2 ...request.Option) (*migrationhub.NotifyApplicationStateOutput, error) {
+// NotifyApplicationStateWithContext mocks base method
+func (m *MockMigrationHubAPI) NotifyApplicationStateWithContext(arg0 aws.Context, arg1 *migrationhub.NotifyApplicationStateInput, arg2 ...request.Option) (*migrationhub.NotifyApplicationStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -944,14 +728,14 @@ func (m *MockMigrationHubAPI) NotifyApplicationStateWithContext(arg0 context.Con
 	return ret0, ret1
 }
 
-// NotifyApplicationStateWithContext indicates an expected call of NotifyApplicationStateWithContext.
+// NotifyApplicationStateWithContext indicates an expected call of NotifyApplicationStateWithContext
 func (mr *MockMigrationHubAPIMockRecorder) NotifyApplicationStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyApplicationStateWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).NotifyApplicationStateWithContext), varargs...)
 }
 
-// NotifyMigrationTaskState mocks base method.
+// NotifyMigrationTaskState mocks base method
 func (m *MockMigrationHubAPI) NotifyMigrationTaskState(arg0 *migrationhub.NotifyMigrationTaskStateInput) (*migrationhub.NotifyMigrationTaskStateOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "NotifyMigrationTaskState", arg0)
@@ -960,13 +744,13 @@ func (m *MockMigrationHubAPI) NotifyMigrationTaskState(arg0 *migrationhub.Notify
 	return ret0, ret1
 }
 
-// NotifyMigrationTaskState indicates an expected call of NotifyMigrationTaskState.
+// NotifyMigrationTaskState indicates an expected call of NotifyMigrationTaskState
 func (mr *MockMigrationHubAPIMockRecorder) NotifyMigrationTaskState(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyMigrationTaskState", reflect.TypeOf((*MockMigrationHubAPI)(nil).NotifyMigrationTaskState), arg0)
 }
 
-// NotifyMigrationTaskStateRequest mocks base method.
+// NotifyMigrationTaskStateRequest mocks base method
 func (m *MockMigrationHubAPI) NotifyMigrationTaskStateRequest(arg0 *migrationhub.NotifyMigrationTaskStateInput) (*request.Request, *migrationhub.NotifyMigrationTaskStateOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "NotifyMigrationTaskStateRequest", arg0)
@@ -975,14 +759,14 @@ func (m *MockMigrationHubAPI) NotifyMigrationTaskStateRequest(arg0 *migrationhub
 	return ret0, ret1
 }
 
-// NotifyMigrationTaskStateRequest indicates an expected call of NotifyMigrationTaskStateRequest.
+// NotifyMigrationTaskStateRequest indicates an expected call of NotifyMigrationTaskStateRequest
 func (mr *MockMigrationHubAPIMockRecorder) NotifyMigrationTaskStateRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyMigrationTaskStateRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).NotifyMigrationTaskStateRequest), arg0)
 }
 
-// NotifyMigrationTaskStateWithContext mocks base method.
-func (m *MockMigrationHubAPI) NotifyMigrationTaskStateWithContext(arg0 context.Context, arg1 *migrationhub.NotifyMigrationTaskStateInput, arg2 ...request.Option) (*migrationhub.NotifyMigrationTaskStateOutput, error) {
+// NotifyMigrationTaskStateWithContext mocks base method
+func (m *MockMigrationHubAPI) NotifyMigrationTaskStateWithContext(arg0 aws.Context, arg1 *migrationhub.NotifyMigrationTaskStateInput, arg2 ...request.Option) (*migrationhub.NotifyMigrationTaskStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -994,14 +778,14 @@ func (m *MockMigrationHubAPI) NotifyMigrationTaskStateWithContext(arg0 context.C
 	return ret0, ret1
 }
 
-// NotifyMigrationTaskStateWithContext indicates an expected call of NotifyMigrationTaskStateWithContext.
+// NotifyMigrationTaskStateWithContext indicates an expected call of NotifyMigrationTaskStateWithContext
 func (mr *MockMigrationHubAPIMockRecorder) NotifyMigrationTaskStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyMigrationTaskStateWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).NotifyMigrationTaskStateWithContext), varargs...)
 }
 
-// PutResourceAttributes mocks base method.
+// PutResourceAttributes mocks base method
 func (m *MockMigrationHubAPI) PutResourceAttributes(arg0 *migrationhub.PutResourceAttributesInput) (*migrationhub.PutResourceAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutResourceAttributes", arg0)
@@ -1010,13 +794,13 @@ func (m *MockMigrationHubAPI) PutResourceAttributes(arg0 *migrationhub.PutResour
 	return ret0, ret1
 }
 
-// PutResourceAttributes indicates an expected call of PutResourceAttributes.
+// PutResourceAttributes indicates an expected call of PutResourceAttributes
 func (mr *MockMigrationHubAPIMockRecorder) PutResourceAttributes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceAttributes", reflect.TypeOf((*MockMigrationHubAPI)(nil).PutResourceAttributes), arg0)
 }
 
-// PutResourceAttributesRequest mocks base method.
+// PutResourceAttributesRequest mocks base method
 func (m *MockMigrationHubAPI) PutResourceAttributesRequest(arg0 *migrationhub.PutResourceAttributesInput) (*request.Request, *migrationhub.PutResourceAttributesOutput) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutResourceAttributesRequest", arg0)
@@ -1025,14 +809,14 @@ func (m *MockMigrationHubAPI) PutResourceAttributesRequest(arg0 *migrationhub.Pu
 	return ret0, ret1
 }
 
-// PutResourceAttributesRequest indicates an expected call of PutResourceAttributesRequest.
+// PutResourceAttributesRequest indicates an expected call of PutResourceAttributesRequest
 func (mr *MockMigrationHubAPIMockRecorder) PutResourceAttributesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceAttributesRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).PutResourceAttributesRequest), arg0)
 }
 
-// PutResourceAttributesWithContext mocks base method.
-func (m *MockMigrationHubAPI) PutResourceAttributesWithContext(arg0 context.Context, arg1 *migrationhub.PutResourceAttributesInput, arg2 ...request.Option) (*migrationhub.PutResourceAttributesOutput, error) {
+// PutResourceAttributesWithContext mocks base method
+func (m *MockMigrationHubAPI) PutResourceAttributesWithContext(arg0 aws.Context, arg1 *migrationhub.PutResourceAttributesInput, arg2 ...request.Option) (*migrationhub.PutResourceAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1044,7 +828,7 @@ func (m *MockMigrationHubAPI) PutResourceAttributesWithContext(arg0 context.Cont
 	return ret0, ret1
 }
 
-// PutResourceAttributesWithContext indicates an expected call of PutResourceAttributesWithContext.
+// PutResourceAttributesWithContext indicates an expected call of PutResourceAttributesWithContext
 func (mr *MockMigrationHubAPIMockRecorder) PutResourceAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
