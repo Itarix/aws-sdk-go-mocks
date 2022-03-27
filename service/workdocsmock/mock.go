@@ -1784,6 +1784,56 @@ func (mr *MockWorkDocsAPIMockRecorder) GetFolderWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetFolderWithContext), varargs...)
 }
 
+// GetResources mocks base method
+func (m *MockWorkDocsAPI) GetResources(arg0 *workdocs.GetResourcesInput) (*workdocs.GetResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResources", arg0)
+	ret0, _ := ret[0].(*workdocs.GetResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResources indicates an expected call of GetResources
+func (mr *MockWorkDocsAPIMockRecorder) GetResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResources", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetResources), arg0)
+}
+
+// GetResourcesRequest mocks base method
+func (m *MockWorkDocsAPI) GetResourcesRequest(arg0 *workdocs.GetResourcesInput) (*request.Request, *workdocs.GetResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workdocs.GetResourcesOutput)
+	return ret0, ret1
+}
+
+// GetResourcesRequest indicates an expected call of GetResourcesRequest
+func (mr *MockWorkDocsAPIMockRecorder) GetResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetResourcesRequest), arg0)
+}
+
+// GetResourcesWithContext mocks base method
+func (m *MockWorkDocsAPI) GetResourcesWithContext(arg0 aws.Context, arg1 *workdocs.GetResourcesInput, arg2 ...request.Option) (*workdocs.GetResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*workdocs.GetResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcesWithContext indicates an expected call of GetResourcesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) GetResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).GetResourcesWithContext), varargs...)
+}
+
 // InitiateDocumentVersionUpload mocks base method
 func (m *MockWorkDocsAPI) InitiateDocumentVersionUpload(arg0 *workdocs.InitiateDocumentVersionUploadInput) (*workdocs.InitiateDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()

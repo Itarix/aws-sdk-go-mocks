@@ -35,6 +35,56 @@ func (m *MockMediaConvertAPI) EXPECT() *MockMediaConvertAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateCertificate mocks base method
+func (m *MockMediaConvertAPI) AssociateCertificate(arg0 *mediaconvert.AssociateCertificateInput) (*mediaconvert.AssociateCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateCertificate", arg0)
+	ret0, _ := ret[0].(*mediaconvert.AssociateCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateCertificate indicates an expected call of AssociateCertificate
+func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCertificate", reflect.TypeOf((*MockMediaConvertAPI)(nil).AssociateCertificate), arg0)
+}
+
+// AssociateCertificateRequest mocks base method
+func (m *MockMediaConvertAPI) AssociateCertificateRequest(arg0 *mediaconvert.AssociateCertificateInput) (*request.Request, *mediaconvert.AssociateCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconvert.AssociateCertificateOutput)
+	return ret0, ret1
+}
+
+// AssociateCertificateRequest indicates an expected call of AssociateCertificateRequest
+func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCertificateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).AssociateCertificateRequest), arg0)
+}
+
+// AssociateCertificateWithContext mocks base method
+func (m *MockMediaConvertAPI) AssociateCertificateWithContext(arg0 aws.Context, arg1 *mediaconvert.AssociateCertificateInput, arg2 ...request.Option) (*mediaconvert.AssociateCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconvert.AssociateCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateCertificateWithContext indicates an expected call of AssociateCertificateWithContext
+func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateCertificateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).AssociateCertificateWithContext), varargs...)
+}
+
 // CancelJob mocks base method
 func (m *MockMediaConvertAPI) CancelJob(arg0 *mediaconvert.CancelJobInput) (*mediaconvert.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -516,6 +566,56 @@ func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsWithContext), varargs...)
+}
+
+// DisassociateCertificate mocks base method
+func (m *MockMediaConvertAPI) DisassociateCertificate(arg0 *mediaconvert.DisassociateCertificateInput) (*mediaconvert.DisassociateCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateCertificate", arg0)
+	ret0, _ := ret[0].(*mediaconvert.DisassociateCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateCertificate indicates an expected call of DisassociateCertificate
+func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCertificate", reflect.TypeOf((*MockMediaConvertAPI)(nil).DisassociateCertificate), arg0)
+}
+
+// DisassociateCertificateRequest mocks base method
+func (m *MockMediaConvertAPI) DisassociateCertificateRequest(arg0 *mediaconvert.DisassociateCertificateInput) (*request.Request, *mediaconvert.DisassociateCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconvert.DisassociateCertificateOutput)
+	return ret0, ret1
+}
+
+// DisassociateCertificateRequest indicates an expected call of DisassociateCertificateRequest
+func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCertificateRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DisassociateCertificateRequest), arg0)
+}
+
+// DisassociateCertificateWithContext mocks base method
+func (m *MockMediaConvertAPI) DisassociateCertificateWithContext(arg0 aws.Context, arg1 *mediaconvert.DisassociateCertificateInput, arg2 ...request.Option) (*mediaconvert.DisassociateCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconvert.DisassociateCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateCertificateWithContext indicates an expected call of DisassociateCertificateWithContext
+func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateCertificateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DisassociateCertificateWithContext), varargs...)
 }
 
 // GetJob mocks base method

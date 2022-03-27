@@ -535,6 +535,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountWithContext), varargs...)
 }
 
+// DescribeClientProperties mocks base method
+func (m *MockWorkSpacesAPI) DescribeClientProperties(arg0 *workspaces.DescribeClientPropertiesInput) (*workspaces.DescribeClientPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeClientPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClientProperties indicates an expected call of DescribeClientProperties
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientProperties), arg0)
+}
+
+// DescribeClientPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeClientPropertiesRequest(arg0 *workspaces.DescribeClientPropertiesInput) (*request.Request, *workspaces.DescribeClientPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeClientPropertiesOutput)
+	return ret0, ret1
+}
+
+// DescribeClientPropertiesRequest indicates an expected call of DescribeClientPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientPropertiesRequest), arg0)
+}
+
+// DescribeClientPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeClientPropertiesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeClientPropertiesInput, arg2 ...request.Option) (*workspaces.DescribeClientPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClientPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeClientPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClientPropertiesWithContext indicates an expected call of DescribeClientPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientPropertiesWithContext), varargs...)
+}
+
 // DescribeIpGroups mocks base method
 func (m *MockWorkSpacesAPI) DescribeIpGroups(arg0 *workspaces.DescribeIpGroupsInput) (*workspaces.DescribeIpGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1182,6 +1232,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyAccountWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAccountWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyAccountWithContext), varargs...)
+}
+
+// ModifyClientProperties mocks base method
+func (m *MockWorkSpacesAPI) ModifyClientProperties(arg0 *workspaces.ModifyClientPropertiesInput) (*workspaces.ModifyClientPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClientProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifyClientPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClientProperties indicates an expected call of ModifyClientProperties
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyClientProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClientProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyClientProperties), arg0)
+}
+
+// ModifyClientPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifyClientPropertiesRequest(arg0 *workspaces.ModifyClientPropertiesInput) (*request.Request, *workspaces.ModifyClientPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClientPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifyClientPropertiesOutput)
+	return ret0, ret1
+}
+
+// ModifyClientPropertiesRequest indicates an expected call of ModifyClientPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyClientPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClientPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyClientPropertiesRequest), arg0)
+}
+
+// ModifyClientPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifyClientPropertiesWithContext(arg0 aws.Context, arg1 *workspaces.ModifyClientPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyClientPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyClientPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifyClientPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClientPropertiesWithContext indicates an expected call of ModifyClientPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyClientPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClientPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyClientPropertiesWithContext), varargs...)
 }
 
 // ModifyWorkspaceProperties mocks base method

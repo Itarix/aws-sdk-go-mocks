@@ -85,6 +85,56 @@ func (mr *MockIoTAPIMockRecorder) AcceptCertificateTransferWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptCertificateTransferWithContext", reflect.TypeOf((*MockIoTAPI)(nil).AcceptCertificateTransferWithContext), varargs...)
 }
 
+// AddThingToBillingGroup mocks base method
+func (m *MockIoTAPI) AddThingToBillingGroup(arg0 *iot.AddThingToBillingGroupInput) (*iot.AddThingToBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddThingToBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.AddThingToBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddThingToBillingGroup indicates an expected call of AddThingToBillingGroup
+func (mr *MockIoTAPIMockRecorder) AddThingToBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddThingToBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).AddThingToBillingGroup), arg0)
+}
+
+// AddThingToBillingGroupRequest mocks base method
+func (m *MockIoTAPI) AddThingToBillingGroupRequest(arg0 *iot.AddThingToBillingGroupInput) (*request.Request, *iot.AddThingToBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddThingToBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.AddThingToBillingGroupOutput)
+	return ret0, ret1
+}
+
+// AddThingToBillingGroupRequest indicates an expected call of AddThingToBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) AddThingToBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddThingToBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).AddThingToBillingGroupRequest), arg0)
+}
+
+// AddThingToBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) AddThingToBillingGroupWithContext(arg0 aws.Context, arg1 *iot.AddThingToBillingGroupInput, arg2 ...request.Option) (*iot.AddThingToBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddThingToBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.AddThingToBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddThingToBillingGroupWithContext indicates an expected call of AddThingToBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) AddThingToBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddThingToBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).AddThingToBillingGroupWithContext), varargs...)
+}
+
 // AddThingToThingGroup mocks base method
 func (m *MockIoTAPI) AddThingToThingGroup(arg0 *iot.AddThingToThingGroupInput) (*iot.AddThingToThingGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -685,6 +735,56 @@ func (mr *MockIoTAPIMockRecorder) CreateAuthorizerWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateAuthorizerWithContext), varargs...)
 }
 
+// CreateBillingGroup mocks base method
+func (m *MockIoTAPI) CreateBillingGroup(arg0 *iot.CreateBillingGroupInput) (*iot.CreateBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.CreateBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBillingGroup indicates an expected call of CreateBillingGroup
+func (mr *MockIoTAPIMockRecorder) CreateBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).CreateBillingGroup), arg0)
+}
+
+// CreateBillingGroupRequest mocks base method
+func (m *MockIoTAPI) CreateBillingGroupRequest(arg0 *iot.CreateBillingGroupInput) (*request.Request, *iot.CreateBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateBillingGroupOutput)
+	return ret0, ret1
+}
+
+// CreateBillingGroupRequest indicates an expected call of CreateBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) CreateBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateBillingGroupRequest), arg0)
+}
+
+// CreateBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) CreateBillingGroupWithContext(arg0 aws.Context, arg1 *iot.CreateBillingGroupInput, arg2 ...request.Option) (*iot.CreateBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBillingGroupWithContext indicates an expected call of CreateBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) CreateBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateBillingGroupWithContext), varargs...)
+}
+
 // CreateCertificateFromCsr mocks base method
 func (m *MockIoTAPI) CreateCertificateFromCsr(arg0 *iot.CreateCertificateFromCsrInput) (*iot.CreateCertificateFromCsrOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +833,56 @@ func (mr *MockIoTAPIMockRecorder) CreateCertificateFromCsrWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCertificateFromCsrWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateCertificateFromCsrWithContext), varargs...)
+}
+
+// CreateDynamicThingGroup mocks base method
+func (m *MockIoTAPI) CreateDynamicThingGroup(arg0 *iot.CreateDynamicThingGroupInput) (*iot.CreateDynamicThingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDynamicThingGroup", arg0)
+	ret0, _ := ret[0].(*iot.CreateDynamicThingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDynamicThingGroup indicates an expected call of CreateDynamicThingGroup
+func (mr *MockIoTAPIMockRecorder) CreateDynamicThingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDynamicThingGroup", reflect.TypeOf((*MockIoTAPI)(nil).CreateDynamicThingGroup), arg0)
+}
+
+// CreateDynamicThingGroupRequest mocks base method
+func (m *MockIoTAPI) CreateDynamicThingGroupRequest(arg0 *iot.CreateDynamicThingGroupInput) (*request.Request, *iot.CreateDynamicThingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDynamicThingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateDynamicThingGroupOutput)
+	return ret0, ret1
+}
+
+// CreateDynamicThingGroupRequest indicates an expected call of CreateDynamicThingGroupRequest
+func (mr *MockIoTAPIMockRecorder) CreateDynamicThingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDynamicThingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateDynamicThingGroupRequest), arg0)
+}
+
+// CreateDynamicThingGroupWithContext mocks base method
+func (m *MockIoTAPI) CreateDynamicThingGroupWithContext(arg0 aws.Context, arg1 *iot.CreateDynamicThingGroupInput, arg2 ...request.Option) (*iot.CreateDynamicThingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDynamicThingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateDynamicThingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDynamicThingGroupWithContext indicates an expected call of CreateDynamicThingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) CreateDynamicThingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDynamicThingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateDynamicThingGroupWithContext), varargs...)
 }
 
 // CreateJob mocks base method
@@ -1485,6 +1635,56 @@ func (mr *MockIoTAPIMockRecorder) DeleteAuthorizerWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteAuthorizerWithContext), varargs...)
 }
 
+// DeleteBillingGroup mocks base method
+func (m *MockIoTAPI) DeleteBillingGroup(arg0 *iot.DeleteBillingGroupInput) (*iot.DeleteBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.DeleteBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBillingGroup indicates an expected call of DeleteBillingGroup
+func (mr *MockIoTAPIMockRecorder) DeleteBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).DeleteBillingGroup), arg0)
+}
+
+// DeleteBillingGroupRequest mocks base method
+func (m *MockIoTAPI) DeleteBillingGroupRequest(arg0 *iot.DeleteBillingGroupInput) (*request.Request, *iot.DeleteBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteBillingGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteBillingGroupRequest indicates an expected call of DeleteBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) DeleteBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteBillingGroupRequest), arg0)
+}
+
+// DeleteBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) DeleteBillingGroupWithContext(arg0 aws.Context, arg1 *iot.DeleteBillingGroupInput, arg2 ...request.Option) (*iot.DeleteBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBillingGroupWithContext indicates an expected call of DeleteBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteBillingGroupWithContext), varargs...)
+}
+
 // DeleteCACertificate mocks base method
 func (m *MockIoTAPI) DeleteCACertificate(arg0 *iot.DeleteCACertificateInput) (*iot.DeleteCACertificateOutput, error) {
 	m.ctrl.T.Helper()
@@ -1583,6 +1783,56 @@ func (mr *MockIoTAPIMockRecorder) DeleteCertificateWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCertificateWithContext), varargs...)
+}
+
+// DeleteDynamicThingGroup mocks base method
+func (m *MockIoTAPI) DeleteDynamicThingGroup(arg0 *iot.DeleteDynamicThingGroupInput) (*iot.DeleteDynamicThingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDynamicThingGroup", arg0)
+	ret0, _ := ret[0].(*iot.DeleteDynamicThingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDynamicThingGroup indicates an expected call of DeleteDynamicThingGroup
+func (mr *MockIoTAPIMockRecorder) DeleteDynamicThingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDynamicThingGroup", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDynamicThingGroup), arg0)
+}
+
+// DeleteDynamicThingGroupRequest mocks base method
+func (m *MockIoTAPI) DeleteDynamicThingGroupRequest(arg0 *iot.DeleteDynamicThingGroupInput) (*request.Request, *iot.DeleteDynamicThingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDynamicThingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteDynamicThingGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteDynamicThingGroupRequest indicates an expected call of DeleteDynamicThingGroupRequest
+func (mr *MockIoTAPIMockRecorder) DeleteDynamicThingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDynamicThingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDynamicThingGroupRequest), arg0)
+}
+
+// DeleteDynamicThingGroupWithContext mocks base method
+func (m *MockIoTAPI) DeleteDynamicThingGroupWithContext(arg0 aws.Context, arg1 *iot.DeleteDynamicThingGroupInput, arg2 ...request.Option) (*iot.DeleteDynamicThingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDynamicThingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteDynamicThingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDynamicThingGroupWithContext indicates an expected call of DeleteDynamicThingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteDynamicThingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDynamicThingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDynamicThingGroupWithContext), varargs...)
 }
 
 // DeleteJob mocks base method
@@ -2533,6 +2783,56 @@ func (mr *MockIoTAPIMockRecorder) DescribeAuthorizerWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeAuthorizerWithContext), varargs...)
+}
+
+// DescribeBillingGroup mocks base method
+func (m *MockIoTAPI) DescribeBillingGroup(arg0 *iot.DescribeBillingGroupInput) (*iot.DescribeBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.DescribeBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBillingGroup indicates an expected call of DescribeBillingGroup
+func (mr *MockIoTAPIMockRecorder) DescribeBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).DescribeBillingGroup), arg0)
+}
+
+// DescribeBillingGroupRequest mocks base method
+func (m *MockIoTAPI) DescribeBillingGroupRequest(arg0 *iot.DescribeBillingGroupInput) (*request.Request, *iot.DescribeBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeBillingGroupOutput)
+	return ret0, ret1
+}
+
+// DescribeBillingGroupRequest indicates an expected call of DescribeBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) DescribeBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeBillingGroupRequest), arg0)
+}
+
+// DescribeBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) DescribeBillingGroupWithContext(arg0 aws.Context, arg1 *iot.DescribeBillingGroupInput, arg2 ...request.Option) (*iot.DescribeBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBillingGroupWithContext indicates an expected call of DescribeBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeBillingGroupWithContext), varargs...)
 }
 
 // DescribeCACertificate mocks base method
@@ -4385,6 +4685,56 @@ func (mr *MockIoTAPIMockRecorder) ListAuthorizersWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuthorizersWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListAuthorizersWithContext), varargs...)
 }
 
+// ListBillingGroups mocks base method
+func (m *MockIoTAPI) ListBillingGroups(arg0 *iot.ListBillingGroupsInput) (*iot.ListBillingGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBillingGroups", arg0)
+	ret0, _ := ret[0].(*iot.ListBillingGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBillingGroups indicates an expected call of ListBillingGroups
+func (mr *MockIoTAPIMockRecorder) ListBillingGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBillingGroups", reflect.TypeOf((*MockIoTAPI)(nil).ListBillingGroups), arg0)
+}
+
+// ListBillingGroupsRequest mocks base method
+func (m *MockIoTAPI) ListBillingGroupsRequest(arg0 *iot.ListBillingGroupsInput) (*request.Request, *iot.ListBillingGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBillingGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListBillingGroupsOutput)
+	return ret0, ret1
+}
+
+// ListBillingGroupsRequest indicates an expected call of ListBillingGroupsRequest
+func (mr *MockIoTAPIMockRecorder) ListBillingGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBillingGroupsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListBillingGroupsRequest), arg0)
+}
+
+// ListBillingGroupsWithContext mocks base method
+func (m *MockIoTAPI) ListBillingGroupsWithContext(arg0 aws.Context, arg1 *iot.ListBillingGroupsInput, arg2 ...request.Option) (*iot.ListBillingGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBillingGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListBillingGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBillingGroupsWithContext indicates an expected call of ListBillingGroupsWithContext
+func (mr *MockIoTAPIMockRecorder) ListBillingGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBillingGroupsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListBillingGroupsWithContext), varargs...)
+}
+
 // ListCACertificates mocks base method
 func (m *MockIoTAPI) ListCACertificates(arg0 *iot.ListCACertificatesInput) (*iot.ListCACertificatesOutput, error) {
 	m.ctrl.T.Helper()
@@ -5335,6 +5685,56 @@ func (mr *MockIoTAPIMockRecorder) ListStreamsWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListStreamsWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockIoTAPI) ListTagsForResource(arg0 *iot.ListTagsForResourceInput) (*iot.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*iot.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockIoTAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockIoTAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockIoTAPI) ListTagsForResourceRequest(arg0 *iot.ListTagsForResourceInput) (*request.Request, *iot.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockIoTAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockIoTAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *iot.ListTagsForResourceInput, arg2 ...request.Option) (*iot.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockIoTAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // ListTargetsForPolicy mocks base method
 func (m *MockIoTAPI) ListTargetsForPolicy(arg0 *iot.ListTargetsForPolicyInput) (*iot.ListTargetsForPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -5748,6 +6148,56 @@ func (m *MockIoTAPI) ListThings(arg0 *iot.ListThingsInput) (*iot.ListThingsOutpu
 func (mr *MockIoTAPIMockRecorder) ListThings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThings", reflect.TypeOf((*MockIoTAPI)(nil).ListThings), arg0)
+}
+
+// ListThingsInBillingGroup mocks base method
+func (m *MockIoTAPI) ListThingsInBillingGroup(arg0 *iot.ListThingsInBillingGroupInput) (*iot.ListThingsInBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThingsInBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.ListThingsInBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListThingsInBillingGroup indicates an expected call of ListThingsInBillingGroup
+func (mr *MockIoTAPIMockRecorder) ListThingsInBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingsInBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).ListThingsInBillingGroup), arg0)
+}
+
+// ListThingsInBillingGroupRequest mocks base method
+func (m *MockIoTAPI) ListThingsInBillingGroupRequest(arg0 *iot.ListThingsInBillingGroupInput) (*request.Request, *iot.ListThingsInBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThingsInBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListThingsInBillingGroupOutput)
+	return ret0, ret1
+}
+
+// ListThingsInBillingGroupRequest indicates an expected call of ListThingsInBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) ListThingsInBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingsInBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListThingsInBillingGroupRequest), arg0)
+}
+
+// ListThingsInBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) ListThingsInBillingGroupWithContext(arg0 aws.Context, arg1 *iot.ListThingsInBillingGroupInput, arg2 ...request.Option) (*iot.ListThingsInBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThingsInBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListThingsInBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListThingsInBillingGroupWithContext indicates an expected call of ListThingsInBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) ListThingsInBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingsInBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListThingsInBillingGroupWithContext), varargs...)
 }
 
 // ListThingsInThingGroup mocks base method
@@ -6183,6 +6633,56 @@ func (mr *MockIoTAPIMockRecorder) RejectCertificateTransferWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectCertificateTransferWithContext", reflect.TypeOf((*MockIoTAPI)(nil).RejectCertificateTransferWithContext), varargs...)
+}
+
+// RemoveThingFromBillingGroup mocks base method
+func (m *MockIoTAPI) RemoveThingFromBillingGroup(arg0 *iot.RemoveThingFromBillingGroupInput) (*iot.RemoveThingFromBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveThingFromBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.RemoveThingFromBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveThingFromBillingGroup indicates an expected call of RemoveThingFromBillingGroup
+func (mr *MockIoTAPIMockRecorder) RemoveThingFromBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveThingFromBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).RemoveThingFromBillingGroup), arg0)
+}
+
+// RemoveThingFromBillingGroupRequest mocks base method
+func (m *MockIoTAPI) RemoveThingFromBillingGroupRequest(arg0 *iot.RemoveThingFromBillingGroupInput) (*request.Request, *iot.RemoveThingFromBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveThingFromBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.RemoveThingFromBillingGroupOutput)
+	return ret0, ret1
+}
+
+// RemoveThingFromBillingGroupRequest indicates an expected call of RemoveThingFromBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) RemoveThingFromBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveThingFromBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).RemoveThingFromBillingGroupRequest), arg0)
+}
+
+// RemoveThingFromBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) RemoveThingFromBillingGroupWithContext(arg0 aws.Context, arg1 *iot.RemoveThingFromBillingGroupInput, arg2 ...request.Option) (*iot.RemoveThingFromBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveThingFromBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.RemoveThingFromBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveThingFromBillingGroupWithContext indicates an expected call of RemoveThingFromBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) RemoveThingFromBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveThingFromBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).RemoveThingFromBillingGroupWithContext), varargs...)
 }
 
 // RemoveThingFromThingGroup mocks base method
@@ -6735,6 +7235,56 @@ func (mr *MockIoTAPIMockRecorder) StopThingRegistrationTaskWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopThingRegistrationTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).StopThingRegistrationTaskWithContext), varargs...)
 }
 
+// TagResource mocks base method
+func (m *MockIoTAPI) TagResource(arg0 *iot.TagResourceInput) (*iot.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*iot.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockIoTAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockIoTAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockIoTAPI) TagResourceRequest(arg0 *iot.TagResourceInput) (*request.Request, *iot.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockIoTAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockIoTAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockIoTAPI) TagResourceWithContext(arg0 aws.Context, arg1 *iot.TagResourceInput, arg2 ...request.Option) (*iot.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockIoTAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockIoTAPI)(nil).TagResourceWithContext), varargs...)
+}
+
 // TestAuthorization mocks base method
 func (m *MockIoTAPI) TestAuthorization(arg0 *iot.TestAuthorizationInput) (*iot.TestAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
@@ -6885,6 +7435,56 @@ func (mr *MockIoTAPIMockRecorder) TransferCertificateWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).TransferCertificateWithContext), varargs...)
 }
 
+// UntagResource mocks base method
+func (m *MockIoTAPI) UntagResource(arg0 *iot.UntagResourceInput) (*iot.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*iot.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockIoTAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockIoTAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockIoTAPI) UntagResourceRequest(arg0 *iot.UntagResourceInput) (*request.Request, *iot.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockIoTAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockIoTAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockIoTAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *iot.UntagResourceInput, arg2 ...request.Option) (*iot.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockIoTAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
 // UpdateAccountAuditConfiguration mocks base method
 func (m *MockIoTAPI) UpdateAccountAuditConfiguration(arg0 *iot.UpdateAccountAuditConfigurationInput) (*iot.UpdateAccountAuditConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -6983,6 +7583,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateAuthorizerWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateAuthorizerWithContext), varargs...)
+}
+
+// UpdateBillingGroup mocks base method
+func (m *MockIoTAPI) UpdateBillingGroup(arg0 *iot.UpdateBillingGroupInput) (*iot.UpdateBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBillingGroup", arg0)
+	ret0, _ := ret[0].(*iot.UpdateBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBillingGroup indicates an expected call of UpdateBillingGroup
+func (mr *MockIoTAPIMockRecorder) UpdateBillingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBillingGroup", reflect.TypeOf((*MockIoTAPI)(nil).UpdateBillingGroup), arg0)
+}
+
+// UpdateBillingGroupRequest mocks base method
+func (m *MockIoTAPI) UpdateBillingGroupRequest(arg0 *iot.UpdateBillingGroupInput) (*request.Request, *iot.UpdateBillingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBillingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateBillingGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateBillingGroupRequest indicates an expected call of UpdateBillingGroupRequest
+func (mr *MockIoTAPIMockRecorder) UpdateBillingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBillingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateBillingGroupRequest), arg0)
+}
+
+// UpdateBillingGroupWithContext mocks base method
+func (m *MockIoTAPI) UpdateBillingGroupWithContext(arg0 aws.Context, arg1 *iot.UpdateBillingGroupInput, arg2 ...request.Option) (*iot.UpdateBillingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBillingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateBillingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBillingGroupWithContext indicates an expected call of UpdateBillingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateBillingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBillingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateBillingGroupWithContext), varargs...)
 }
 
 // UpdateCACertificate mocks base method
@@ -7085,6 +7735,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateCertificateWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCertificateWithContext), varargs...)
 }
 
+// UpdateDynamicThingGroup mocks base method
+func (m *MockIoTAPI) UpdateDynamicThingGroup(arg0 *iot.UpdateDynamicThingGroupInput) (*iot.UpdateDynamicThingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDynamicThingGroup", arg0)
+	ret0, _ := ret[0].(*iot.UpdateDynamicThingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDynamicThingGroup indicates an expected call of UpdateDynamicThingGroup
+func (mr *MockIoTAPIMockRecorder) UpdateDynamicThingGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDynamicThingGroup", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDynamicThingGroup), arg0)
+}
+
+// UpdateDynamicThingGroupRequest mocks base method
+func (m *MockIoTAPI) UpdateDynamicThingGroupRequest(arg0 *iot.UpdateDynamicThingGroupInput) (*request.Request, *iot.UpdateDynamicThingGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDynamicThingGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateDynamicThingGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateDynamicThingGroupRequest indicates an expected call of UpdateDynamicThingGroupRequest
+func (mr *MockIoTAPIMockRecorder) UpdateDynamicThingGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDynamicThingGroupRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDynamicThingGroupRequest), arg0)
+}
+
+// UpdateDynamicThingGroupWithContext mocks base method
+func (m *MockIoTAPI) UpdateDynamicThingGroupWithContext(arg0 aws.Context, arg1 *iot.UpdateDynamicThingGroupInput, arg2 ...request.Option) (*iot.UpdateDynamicThingGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDynamicThingGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateDynamicThingGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDynamicThingGroupWithContext indicates an expected call of UpdateDynamicThingGroupWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateDynamicThingGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDynamicThingGroupWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDynamicThingGroupWithContext), varargs...)
+}
+
 // UpdateEventConfigurations mocks base method
 func (m *MockIoTAPI) UpdateEventConfigurations(arg0 *iot.UpdateEventConfigurationsInput) (*iot.UpdateEventConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -7183,6 +7883,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateIndexingConfigurationWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIndexingConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateIndexingConfigurationWithContext), varargs...)
+}
+
+// UpdateJob mocks base method
+func (m *MockIoTAPI) UpdateJob(arg0 *iot.UpdateJobInput) (*iot.UpdateJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJob", arg0)
+	ret0, _ := ret[0].(*iot.UpdateJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJob indicates an expected call of UpdateJob
+func (mr *MockIoTAPIMockRecorder) UpdateJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJob", reflect.TypeOf((*MockIoTAPI)(nil).UpdateJob), arg0)
+}
+
+// UpdateJobRequest mocks base method
+func (m *MockIoTAPI) UpdateJobRequest(arg0 *iot.UpdateJobInput) (*request.Request, *iot.UpdateJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateJobOutput)
+	return ret0, ret1
+}
+
+// UpdateJobRequest indicates an expected call of UpdateJobRequest
+func (mr *MockIoTAPIMockRecorder) UpdateJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateJobRequest), arg0)
+}
+
+// UpdateJobWithContext mocks base method
+func (m *MockIoTAPI) UpdateJobWithContext(arg0 aws.Context, arg1 *iot.UpdateJobInput, arg2 ...request.Option) (*iot.UpdateJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateJobWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJobWithContext indicates an expected call of UpdateJobWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateJobWithContext), varargs...)
 }
 
 // UpdateRoleAlias mocks base method

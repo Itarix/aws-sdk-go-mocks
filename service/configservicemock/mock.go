@@ -35,6 +35,56 @@ func (m *MockConfigServiceAPI) EXPECT() *MockConfigServiceAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchGetAggregateResourceConfig mocks base method
+func (m *MockConfigServiceAPI) BatchGetAggregateResourceConfig(arg0 *configservice.BatchGetAggregateResourceConfigInput) (*configservice.BatchGetAggregateResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAggregateResourceConfig", arg0)
+	ret0, _ := ret[0].(*configservice.BatchGetAggregateResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAggregateResourceConfig indicates an expected call of BatchGetAggregateResourceConfig
+func (mr *MockConfigServiceAPIMockRecorder) BatchGetAggregateResourceConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAggregateResourceConfig", reflect.TypeOf((*MockConfigServiceAPI)(nil).BatchGetAggregateResourceConfig), arg0)
+}
+
+// BatchGetAggregateResourceConfigRequest mocks base method
+func (m *MockConfigServiceAPI) BatchGetAggregateResourceConfigRequest(arg0 *configservice.BatchGetAggregateResourceConfigInput) (*request.Request, *configservice.BatchGetAggregateResourceConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAggregateResourceConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.BatchGetAggregateResourceConfigOutput)
+	return ret0, ret1
+}
+
+// BatchGetAggregateResourceConfigRequest indicates an expected call of BatchGetAggregateResourceConfigRequest
+func (mr *MockConfigServiceAPIMockRecorder) BatchGetAggregateResourceConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAggregateResourceConfigRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).BatchGetAggregateResourceConfigRequest), arg0)
+}
+
+// BatchGetAggregateResourceConfigWithContext mocks base method
+func (m *MockConfigServiceAPI) BatchGetAggregateResourceConfigWithContext(arg0 aws.Context, arg1 *configservice.BatchGetAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.BatchGetAggregateResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAggregateResourceConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.BatchGetAggregateResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAggregateResourceConfigWithContext indicates an expected call of BatchGetAggregateResourceConfigWithContext
+func (mr *MockConfigServiceAPIMockRecorder) BatchGetAggregateResourceConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAggregateResourceConfigWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).BatchGetAggregateResourceConfigWithContext), varargs...)
+}
+
 // BatchGetResourceConfig mocks base method
 func (m *MockConfigServiceAPI) BatchGetResourceConfig(arg0 *configservice.BatchGetResourceConfigInput) (*configservice.BatchGetResourceConfigOutput, error) {
 	m.ctrl.T.Helper()
@@ -1335,6 +1385,106 @@ func (mr *MockConfigServiceAPIMockRecorder) GetAggregateConfigRuleComplianceSumm
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateConfigRuleComplianceSummaryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateConfigRuleComplianceSummaryWithContext), varargs...)
 }
 
+// GetAggregateDiscoveredResourceCounts mocks base method
+func (m *MockConfigServiceAPI) GetAggregateDiscoveredResourceCounts(arg0 *configservice.GetAggregateDiscoveredResourceCountsInput) (*configservice.GetAggregateDiscoveredResourceCountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAggregateDiscoveredResourceCounts", arg0)
+	ret0, _ := ret[0].(*configservice.GetAggregateDiscoveredResourceCountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAggregateDiscoveredResourceCounts indicates an expected call of GetAggregateDiscoveredResourceCounts
+func (mr *MockConfigServiceAPIMockRecorder) GetAggregateDiscoveredResourceCounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateDiscoveredResourceCounts", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateDiscoveredResourceCounts), arg0)
+}
+
+// GetAggregateDiscoveredResourceCountsRequest mocks base method
+func (m *MockConfigServiceAPI) GetAggregateDiscoveredResourceCountsRequest(arg0 *configservice.GetAggregateDiscoveredResourceCountsInput) (*request.Request, *configservice.GetAggregateDiscoveredResourceCountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAggregateDiscoveredResourceCountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetAggregateDiscoveredResourceCountsOutput)
+	return ret0, ret1
+}
+
+// GetAggregateDiscoveredResourceCountsRequest indicates an expected call of GetAggregateDiscoveredResourceCountsRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetAggregateDiscoveredResourceCountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateDiscoveredResourceCountsRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateDiscoveredResourceCountsRequest), arg0)
+}
+
+// GetAggregateDiscoveredResourceCountsWithContext mocks base method
+func (m *MockConfigServiceAPI) GetAggregateDiscoveredResourceCountsWithContext(arg0 aws.Context, arg1 *configservice.GetAggregateDiscoveredResourceCountsInput, arg2 ...request.Option) (*configservice.GetAggregateDiscoveredResourceCountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAggregateDiscoveredResourceCountsWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetAggregateDiscoveredResourceCountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAggregateDiscoveredResourceCountsWithContext indicates an expected call of GetAggregateDiscoveredResourceCountsWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetAggregateDiscoveredResourceCountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateDiscoveredResourceCountsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateDiscoveredResourceCountsWithContext), varargs...)
+}
+
+// GetAggregateResourceConfig mocks base method
+func (m *MockConfigServiceAPI) GetAggregateResourceConfig(arg0 *configservice.GetAggregateResourceConfigInput) (*configservice.GetAggregateResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAggregateResourceConfig", arg0)
+	ret0, _ := ret[0].(*configservice.GetAggregateResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAggregateResourceConfig indicates an expected call of GetAggregateResourceConfig
+func (mr *MockConfigServiceAPIMockRecorder) GetAggregateResourceConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateResourceConfig", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateResourceConfig), arg0)
+}
+
+// GetAggregateResourceConfigRequest mocks base method
+func (m *MockConfigServiceAPI) GetAggregateResourceConfigRequest(arg0 *configservice.GetAggregateResourceConfigInput) (*request.Request, *configservice.GetAggregateResourceConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAggregateResourceConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetAggregateResourceConfigOutput)
+	return ret0, ret1
+}
+
+// GetAggregateResourceConfigRequest indicates an expected call of GetAggregateResourceConfigRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetAggregateResourceConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateResourceConfigRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateResourceConfigRequest), arg0)
+}
+
+// GetAggregateResourceConfigWithContext mocks base method
+func (m *MockConfigServiceAPI) GetAggregateResourceConfigWithContext(arg0 aws.Context, arg1 *configservice.GetAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.GetAggregateResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAggregateResourceConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetAggregateResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAggregateResourceConfigWithContext indicates an expected call of GetAggregateResourceConfigWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetAggregateResourceConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAggregateResourceConfigWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetAggregateResourceConfigWithContext), varargs...)
+}
+
 // GetComplianceDetailsByConfigRule mocks base method
 func (m *MockConfigServiceAPI) GetComplianceDetailsByConfigRule(arg0 *configservice.GetComplianceDetailsByConfigRuleInput) (*configservice.GetComplianceDetailsByConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -1666,6 +1816,56 @@ func (mr *MockConfigServiceAPIMockRecorder) GetResourceConfigHistoryWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceConfigHistoryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetResourceConfigHistoryWithContext), varargs...)
+}
+
+// ListAggregateDiscoveredResources mocks base method
+func (m *MockConfigServiceAPI) ListAggregateDiscoveredResources(arg0 *configservice.ListAggregateDiscoveredResourcesInput) (*configservice.ListAggregateDiscoveredResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAggregateDiscoveredResources", arg0)
+	ret0, _ := ret[0].(*configservice.ListAggregateDiscoveredResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAggregateDiscoveredResources indicates an expected call of ListAggregateDiscoveredResources
+func (mr *MockConfigServiceAPIMockRecorder) ListAggregateDiscoveredResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregateDiscoveredResources", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListAggregateDiscoveredResources), arg0)
+}
+
+// ListAggregateDiscoveredResourcesRequest mocks base method
+func (m *MockConfigServiceAPI) ListAggregateDiscoveredResourcesRequest(arg0 *configservice.ListAggregateDiscoveredResourcesInput) (*request.Request, *configservice.ListAggregateDiscoveredResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAggregateDiscoveredResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.ListAggregateDiscoveredResourcesOutput)
+	return ret0, ret1
+}
+
+// ListAggregateDiscoveredResourcesRequest indicates an expected call of ListAggregateDiscoveredResourcesRequest
+func (mr *MockConfigServiceAPIMockRecorder) ListAggregateDiscoveredResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregateDiscoveredResourcesRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListAggregateDiscoveredResourcesRequest), arg0)
+}
+
+// ListAggregateDiscoveredResourcesWithContext mocks base method
+func (m *MockConfigServiceAPI) ListAggregateDiscoveredResourcesWithContext(arg0 aws.Context, arg1 *configservice.ListAggregateDiscoveredResourcesInput, arg2 ...request.Option) (*configservice.ListAggregateDiscoveredResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAggregateDiscoveredResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.ListAggregateDiscoveredResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAggregateDiscoveredResourcesWithContext indicates an expected call of ListAggregateDiscoveredResourcesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) ListAggregateDiscoveredResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregateDiscoveredResourcesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListAggregateDiscoveredResourcesWithContext), varargs...)
 }
 
 // ListDiscoveredResources mocks base method
