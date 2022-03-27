@@ -2696,3 +2696,267 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) TestConnectionWithContext
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestConnectionWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).TestConnectionWithContext), varargs...)
 }
+
+// WaitUntilEndpointDeleted mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilEndpointDeleted(arg0 *databasemigrationservice.DescribeEndpointsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilEndpointDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilEndpointDeleted indicates an expected call of WaitUntilEndpointDeleted
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilEndpointDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEndpointDeleted", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilEndpointDeleted), arg0)
+}
+
+// WaitUntilEndpointDeletedWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilEndpointDeletedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilEndpointDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilEndpointDeletedWithContext indicates an expected call of WaitUntilEndpointDeletedWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilEndpointDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEndpointDeletedWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilEndpointDeletedWithContext), varargs...)
+}
+
+// WaitUntilReplicationInstanceAvailable mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceAvailable(arg0 *databasemigrationservice.DescribeReplicationInstancesInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilReplicationInstanceAvailable", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationInstanceAvailable indicates an expected call of WaitUntilReplicationInstanceAvailable
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationInstanceAvailable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationInstanceAvailable", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationInstanceAvailable), arg0)
+}
+
+// WaitUntilReplicationInstanceAvailableWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceAvailableWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilReplicationInstanceAvailableWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationInstanceAvailableWithContext indicates an expected call of WaitUntilReplicationInstanceAvailableWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationInstanceAvailableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationInstanceAvailableWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationInstanceAvailableWithContext), varargs...)
+}
+
+// WaitUntilReplicationInstanceDeleted mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceDeleted(arg0 *databasemigrationservice.DescribeReplicationInstancesInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilReplicationInstanceDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationInstanceDeleted indicates an expected call of WaitUntilReplicationInstanceDeleted
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationInstanceDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationInstanceDeleted", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationInstanceDeleted), arg0)
+}
+
+// WaitUntilReplicationInstanceDeletedWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceDeletedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilReplicationInstanceDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationInstanceDeletedWithContext indicates an expected call of WaitUntilReplicationInstanceDeletedWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationInstanceDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationInstanceDeletedWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationInstanceDeletedWithContext), varargs...)
+}
+
+// WaitUntilReplicationTaskDeleted mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskDeleted(arg0 *databasemigrationservice.DescribeReplicationTasksInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskDeleted indicates an expected call of WaitUntilReplicationTaskDeleted
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskDeleted", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskDeleted), arg0)
+}
+
+// WaitUntilReplicationTaskDeletedWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskDeletedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskDeletedWithContext indicates an expected call of WaitUntilReplicationTaskDeletedWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskDeletedWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskDeletedWithContext), varargs...)
+}
+
+// WaitUntilReplicationTaskReady mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskReady(arg0 *databasemigrationservice.DescribeReplicationTasksInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskReady indicates an expected call of WaitUntilReplicationTaskReady
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskReady", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskReady), arg0)
+}
+
+// WaitUntilReplicationTaskReadyWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskReadyWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskReadyWithContext indicates an expected call of WaitUntilReplicationTaskReadyWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskReadyWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskReadyWithContext), varargs...)
+}
+
+// WaitUntilReplicationTaskRunning mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskRunning(arg0 *databasemigrationservice.DescribeReplicationTasksInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskRunning", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskRunning indicates an expected call of WaitUntilReplicationTaskRunning
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskRunning(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskRunning", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskRunning), arg0)
+}
+
+// WaitUntilReplicationTaskRunningWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskRunningWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskRunningWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskRunningWithContext indicates an expected call of WaitUntilReplicationTaskRunningWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskRunningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskRunningWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskRunningWithContext), varargs...)
+}
+
+// WaitUntilReplicationTaskStopped mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskStopped(arg0 *databasemigrationservice.DescribeReplicationTasksInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskStopped", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskStopped indicates an expected call of WaitUntilReplicationTaskStopped
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskStopped(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskStopped", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskStopped), arg0)
+}
+
+// WaitUntilReplicationTaskStoppedWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskStoppedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilReplicationTaskStoppedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilReplicationTaskStoppedWithContext indicates an expected call of WaitUntilReplicationTaskStoppedWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskStoppedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilReplicationTaskStoppedWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilReplicationTaskStoppedWithContext), varargs...)
+}
+
+// WaitUntilTestConnectionSucceeds mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceeds(arg0 *databasemigrationservice.TestConnectionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilTestConnectionSucceeds", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilTestConnectionSucceeds indicates an expected call of WaitUntilTestConnectionSucceeds
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilTestConnectionSucceeds(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilTestConnectionSucceeds", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilTestConnectionSucceeds), arg0)
+}
+
+// WaitUntilTestConnectionSucceedsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceedsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.TestConnectionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilTestConnectionSucceedsWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilTestConnectionSucceedsWithContext indicates an expected call of WaitUntilTestConnectionSucceedsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilTestConnectionSucceedsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilTestConnectionSucceedsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).WaitUntilTestConnectionSucceedsWithContext), varargs...)
+}
