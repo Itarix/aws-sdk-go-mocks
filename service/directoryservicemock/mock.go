@@ -35,6 +35,56 @@ func (m *MockDirectoryServiceAPI) EXPECT() *MockDirectoryServiceAPIMockRecorder 
 	return m.recorder
 }
 
+// AcceptSharedDirectory mocks base method
+func (m *MockDirectoryServiceAPI) AcceptSharedDirectory(arg0 *directoryservice.AcceptSharedDirectoryInput) (*directoryservice.AcceptSharedDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptSharedDirectory", arg0)
+	ret0, _ := ret[0].(*directoryservice.AcceptSharedDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptSharedDirectory indicates an expected call of AcceptSharedDirectory
+func (mr *MockDirectoryServiceAPIMockRecorder) AcceptSharedDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptSharedDirectory", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AcceptSharedDirectory), arg0)
+}
+
+// AcceptSharedDirectoryRequest mocks base method
+func (m *MockDirectoryServiceAPI) AcceptSharedDirectoryRequest(arg0 *directoryservice.AcceptSharedDirectoryInput) (*request.Request, *directoryservice.AcceptSharedDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptSharedDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.AcceptSharedDirectoryOutput)
+	return ret0, ret1
+}
+
+// AcceptSharedDirectoryRequest indicates an expected call of AcceptSharedDirectoryRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) AcceptSharedDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptSharedDirectoryRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AcceptSharedDirectoryRequest), arg0)
+}
+
+// AcceptSharedDirectoryWithContext mocks base method
+func (m *MockDirectoryServiceAPI) AcceptSharedDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.AcceptSharedDirectoryInput, arg2 ...request.Option) (*directoryservice.AcceptSharedDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptSharedDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.AcceptSharedDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptSharedDirectoryWithContext indicates an expected call of AcceptSharedDirectoryWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) AcceptSharedDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptSharedDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AcceptSharedDirectoryWithContext), varargs...)
+}
+
 // AddIpRoutes mocks base method
 func (m *MockDirectoryServiceAPI) AddIpRoutes(arg0 *directoryservice.AddIpRoutesInput) (*directoryservice.AddIpRoutesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1168,6 +1218,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeEventTopicsWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventTopicsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeEventTopicsWithContext), varargs...)
 }
 
+// DescribeSharedDirectories mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSharedDirectories(arg0 *directoryservice.DescribeSharedDirectoriesInput) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSharedDirectories", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeSharedDirectoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSharedDirectories indicates an expected call of DescribeSharedDirectories
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectories(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSharedDirectories", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSharedDirectories), arg0)
+}
+
+// DescribeSharedDirectoriesRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesRequest(arg0 *directoryservice.DescribeSharedDirectoriesInput) (*request.Request, *directoryservice.DescribeSharedDirectoriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSharedDirectoriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeSharedDirectoriesOutput)
+	return ret0, ret1
+}
+
+// DescribeSharedDirectoriesRequest indicates an expected call of DescribeSharedDirectoriesRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectoriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSharedDirectoriesRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSharedDirectoriesRequest), arg0)
+}
+
+// DescribeSharedDirectoriesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeSharedDirectoriesInput, arg2 ...request.Option) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSharedDirectoriesWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeSharedDirectoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSharedDirectoriesWithContext indicates an expected call of DescribeSharedDirectoriesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSharedDirectoriesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSharedDirectoriesWithContext), varargs...)
+}
+
 // DescribeSnapshots mocks base method
 func (m *MockDirectoryServiceAPI) DescribeSnapshots(arg0 *directoryservice.DescribeSnapshotsInput) (*directoryservice.DescribeSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1818,6 +1918,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RegisterEventTopicWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterEventTopicWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RegisterEventTopicWithContext), varargs...)
 }
 
+// RejectSharedDirectory mocks base method
+func (m *MockDirectoryServiceAPI) RejectSharedDirectory(arg0 *directoryservice.RejectSharedDirectoryInput) (*directoryservice.RejectSharedDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectSharedDirectory", arg0)
+	ret0, _ := ret[0].(*directoryservice.RejectSharedDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectSharedDirectory indicates an expected call of RejectSharedDirectory
+func (mr *MockDirectoryServiceAPIMockRecorder) RejectSharedDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectSharedDirectory", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RejectSharedDirectory), arg0)
+}
+
+// RejectSharedDirectoryRequest mocks base method
+func (m *MockDirectoryServiceAPI) RejectSharedDirectoryRequest(arg0 *directoryservice.RejectSharedDirectoryInput) (*request.Request, *directoryservice.RejectSharedDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectSharedDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.RejectSharedDirectoryOutput)
+	return ret0, ret1
+}
+
+// RejectSharedDirectoryRequest indicates an expected call of RejectSharedDirectoryRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) RejectSharedDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectSharedDirectoryRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RejectSharedDirectoryRequest), arg0)
+}
+
+// RejectSharedDirectoryWithContext mocks base method
+func (m *MockDirectoryServiceAPI) RejectSharedDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.RejectSharedDirectoryInput, arg2 ...request.Option) (*directoryservice.RejectSharedDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RejectSharedDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.RejectSharedDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectSharedDirectoryWithContext indicates an expected call of RejectSharedDirectoryWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) RejectSharedDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectSharedDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RejectSharedDirectoryWithContext), varargs...)
+}
+
 // RemoveIpRoutes mocks base method
 func (m *MockDirectoryServiceAPI) RemoveIpRoutes(arg0 *directoryservice.RemoveIpRoutesInput) (*directoryservice.RemoveIpRoutesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2018,6 +2168,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RestoreFromSnapshotWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreFromSnapshotWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RestoreFromSnapshotWithContext), varargs...)
 }
 
+// ShareDirectory mocks base method
+func (m *MockDirectoryServiceAPI) ShareDirectory(arg0 *directoryservice.ShareDirectoryInput) (*directoryservice.ShareDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ShareDirectory", arg0)
+	ret0, _ := ret[0].(*directoryservice.ShareDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ShareDirectory indicates an expected call of ShareDirectory
+func (mr *MockDirectoryServiceAPIMockRecorder) ShareDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShareDirectory", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ShareDirectory), arg0)
+}
+
+// ShareDirectoryRequest mocks base method
+func (m *MockDirectoryServiceAPI) ShareDirectoryRequest(arg0 *directoryservice.ShareDirectoryInput) (*request.Request, *directoryservice.ShareDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ShareDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.ShareDirectoryOutput)
+	return ret0, ret1
+}
+
+// ShareDirectoryRequest indicates an expected call of ShareDirectoryRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) ShareDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShareDirectoryRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ShareDirectoryRequest), arg0)
+}
+
+// ShareDirectoryWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ShareDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.ShareDirectoryInput, arg2 ...request.Option) (*directoryservice.ShareDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ShareDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.ShareDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ShareDirectoryWithContext indicates an expected call of ShareDirectoryWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ShareDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShareDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ShareDirectoryWithContext), varargs...)
+}
+
 // StartSchemaExtension mocks base method
 func (m *MockDirectoryServiceAPI) StartSchemaExtension(arg0 *directoryservice.StartSchemaExtensionInput) (*directoryservice.StartSchemaExtensionOutput, error) {
 	m.ctrl.T.Helper()
@@ -2066,6 +2266,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) StartSchemaExtensionWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaExtensionWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).StartSchemaExtensionWithContext), varargs...)
+}
+
+// UnshareDirectory mocks base method
+func (m *MockDirectoryServiceAPI) UnshareDirectory(arg0 *directoryservice.UnshareDirectoryInput) (*directoryservice.UnshareDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnshareDirectory", arg0)
+	ret0, _ := ret[0].(*directoryservice.UnshareDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnshareDirectory indicates an expected call of UnshareDirectory
+func (mr *MockDirectoryServiceAPIMockRecorder) UnshareDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnshareDirectory", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UnshareDirectory), arg0)
+}
+
+// UnshareDirectoryRequest mocks base method
+func (m *MockDirectoryServiceAPI) UnshareDirectoryRequest(arg0 *directoryservice.UnshareDirectoryInput) (*request.Request, *directoryservice.UnshareDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnshareDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.UnshareDirectoryOutput)
+	return ret0, ret1
+}
+
+// UnshareDirectoryRequest indicates an expected call of UnshareDirectoryRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) UnshareDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnshareDirectoryRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UnshareDirectoryRequest), arg0)
+}
+
+// UnshareDirectoryWithContext mocks base method
+func (m *MockDirectoryServiceAPI) UnshareDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.UnshareDirectoryInput, arg2 ...request.Option) (*directoryservice.UnshareDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UnshareDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.UnshareDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnshareDirectoryWithContext indicates an expected call of UnshareDirectoryWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) UnshareDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnshareDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UnshareDirectoryWithContext), varargs...)
 }
 
 // UpdateConditionalForwarder mocks base method
