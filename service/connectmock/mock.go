@@ -285,6 +285,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeUserWithContext), varargs...)
 }
 
+// GetContactAttributes mocks base method
+func (m *MockConnectAPI) GetContactAttributes(arg0 *connect.GetContactAttributesInput) (*connect.GetContactAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactAttributes", arg0)
+	ret0, _ := ret[0].(*connect.GetContactAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactAttributes indicates an expected call of GetContactAttributes
+func (mr *MockConnectAPIMockRecorder) GetContactAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactAttributes", reflect.TypeOf((*MockConnectAPI)(nil).GetContactAttributes), arg0)
+}
+
+// GetContactAttributesRequest mocks base method
+func (m *MockConnectAPI) GetContactAttributesRequest(arg0 *connect.GetContactAttributesInput) (*request.Request, *connect.GetContactAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.GetContactAttributesOutput)
+	return ret0, ret1
+}
+
+// GetContactAttributesRequest indicates an expected call of GetContactAttributesRequest
+func (mr *MockConnectAPIMockRecorder) GetContactAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactAttributesRequest", reflect.TypeOf((*MockConnectAPI)(nil).GetContactAttributesRequest), arg0)
+}
+
+// GetContactAttributesWithContext mocks base method
+func (m *MockConnectAPI) GetContactAttributesWithContext(arg0 aws.Context, arg1 *connect.GetContactAttributesInput, arg2 ...request.Option) (*connect.GetContactAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContactAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.GetContactAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactAttributesWithContext indicates an expected call of GetContactAttributesWithContext
+func (mr *MockConnectAPIMockRecorder) GetContactAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactAttributesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetContactAttributesWithContext), varargs...)
+}
+
 // GetCurrentMetricData mocks base method
 func (m *MockConnectAPI) GetCurrentMetricData(arg0 *connect.GetCurrentMetricDataInput) (*connect.GetCurrentMetricDataOutput, error) {
 	m.ctrl.T.Helper()

@@ -235,6 +235,56 @@ func (mr *MockMediaStoreAPIMockRecorder) DeleteCorsPolicyWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCorsPolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteCorsPolicyWithContext), varargs...)
 }
 
+// DeleteLifecyclePolicy mocks base method
+func (m *MockMediaStoreAPI) DeleteLifecyclePolicy(arg0 *mediastore.DeleteLifecyclePolicyInput) (*mediastore.DeleteLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*mediastore.DeleteLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLifecyclePolicy indicates an expected call of DeleteLifecyclePolicy
+func (mr *MockMediaStoreAPIMockRecorder) DeleteLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicy", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteLifecyclePolicy), arg0)
+}
+
+// DeleteLifecyclePolicyRequest mocks base method
+func (m *MockMediaStoreAPI) DeleteLifecyclePolicyRequest(arg0 *mediastore.DeleteLifecyclePolicyInput) (*request.Request, *mediastore.DeleteLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.DeleteLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteLifecyclePolicyRequest indicates an expected call of DeleteLifecyclePolicyRequest
+func (mr *MockMediaStoreAPIMockRecorder) DeleteLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicyRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteLifecyclePolicyRequest), arg0)
+}
+
+// DeleteLifecyclePolicyWithContext mocks base method
+func (m *MockMediaStoreAPI) DeleteLifecyclePolicyWithContext(arg0 aws.Context, arg1 *mediastore.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.DeleteLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.DeleteLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLifecyclePolicyWithContext indicates an expected call of DeleteLifecyclePolicyWithContext
+func (mr *MockMediaStoreAPIMockRecorder) DeleteLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteLifecyclePolicyWithContext), varargs...)
+}
+
 // DescribeContainer mocks base method
 func (m *MockMediaStoreAPI) DescribeContainer(arg0 *mediastore.DescribeContainerInput) (*mediastore.DescribeContainerOutput, error) {
 	m.ctrl.T.Helper()
@@ -385,6 +435,56 @@ func (mr *MockMediaStoreAPIMockRecorder) GetCorsPolicyWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCorsPolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetCorsPolicyWithContext), varargs...)
 }
 
+// GetLifecyclePolicy mocks base method
+func (m *MockMediaStoreAPI) GetLifecyclePolicy(arg0 *mediastore.GetLifecyclePolicyInput) (*mediastore.GetLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*mediastore.GetLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLifecyclePolicy indicates an expected call of GetLifecyclePolicy
+func (mr *MockMediaStoreAPIMockRecorder) GetLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLifecyclePolicy", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetLifecyclePolicy), arg0)
+}
+
+// GetLifecyclePolicyRequest mocks base method
+func (m *MockMediaStoreAPI) GetLifecyclePolicyRequest(arg0 *mediastore.GetLifecyclePolicyInput) (*request.Request, *mediastore.GetLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.GetLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// GetLifecyclePolicyRequest indicates an expected call of GetLifecyclePolicyRequest
+func (mr *MockMediaStoreAPIMockRecorder) GetLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLifecyclePolicyRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetLifecyclePolicyRequest), arg0)
+}
+
+// GetLifecyclePolicyWithContext mocks base method
+func (m *MockMediaStoreAPI) GetLifecyclePolicyWithContext(arg0 aws.Context, arg1 *mediastore.GetLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.GetLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.GetLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLifecyclePolicyWithContext indicates an expected call of GetLifecyclePolicyWithContext
+func (mr *MockMediaStoreAPIMockRecorder) GetLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetLifecyclePolicyWithContext), varargs...)
+}
+
 // ListContainers mocks base method
 func (m *MockMediaStoreAPI) ListContainers(arg0 *mediastore.ListContainersInput) (*mediastore.ListContainersOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,4 +633,54 @@ func (mr *MockMediaStoreAPIMockRecorder) PutCorsPolicyWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCorsPolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutCorsPolicyWithContext), varargs...)
+}
+
+// PutLifecyclePolicy mocks base method
+func (m *MockMediaStoreAPI) PutLifecyclePolicy(arg0 *mediastore.PutLifecyclePolicyInput) (*mediastore.PutLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*mediastore.PutLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLifecyclePolicy indicates an expected call of PutLifecyclePolicy
+func (mr *MockMediaStoreAPIMockRecorder) PutLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecyclePolicy", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutLifecyclePolicy), arg0)
+}
+
+// PutLifecyclePolicyRequest mocks base method
+func (m *MockMediaStoreAPI) PutLifecyclePolicyRequest(arg0 *mediastore.PutLifecyclePolicyInput) (*request.Request, *mediastore.PutLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.PutLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// PutLifecyclePolicyRequest indicates an expected call of PutLifecyclePolicyRequest
+func (mr *MockMediaStoreAPIMockRecorder) PutLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecyclePolicyRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutLifecyclePolicyRequest), arg0)
+}
+
+// PutLifecyclePolicyWithContext mocks base method
+func (m *MockMediaStoreAPI) PutLifecyclePolicyWithContext(arg0 aws.Context, arg1 *mediastore.PutLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.PutLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.PutLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLifecyclePolicyWithContext indicates an expected call of PutLifecyclePolicyWithContext
+func (mr *MockMediaStoreAPIMockRecorder) PutLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutLifecyclePolicyWithContext), varargs...)
 }
