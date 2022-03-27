@@ -23,4 +23,3 @@ Please check the `test` folder.
 ## Original Repo
 
 https://github.com/kamotos/aws-sdk-go-mocks
-toto
