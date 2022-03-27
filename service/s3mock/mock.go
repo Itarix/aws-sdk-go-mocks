@@ -985,6 +985,56 @@ func (mr *MockS3APIMockRecorder) DeleteObjectsWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObjectsWithContext", reflect.TypeOf((*MockS3API)(nil).DeleteObjectsWithContext), varargs...)
 }
 
+// DeletePublicAccessBlock mocks base method
+func (m *MockS3API) DeletePublicAccessBlock(arg0 *s3.DeletePublicAccessBlockInput) (*s3.DeletePublicAccessBlockOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePublicAccessBlock", arg0)
+	ret0, _ := ret[0].(*s3.DeletePublicAccessBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePublicAccessBlock indicates an expected call of DeletePublicAccessBlock
+func (mr *MockS3APIMockRecorder) DeletePublicAccessBlock(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicAccessBlock", reflect.TypeOf((*MockS3API)(nil).DeletePublicAccessBlock), arg0)
+}
+
+// DeletePublicAccessBlockRequest mocks base method
+func (m *MockS3API) DeletePublicAccessBlockRequest(arg0 *s3.DeletePublicAccessBlockInput) (*request.Request, *s3.DeletePublicAccessBlockOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePublicAccessBlockRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3.DeletePublicAccessBlockOutput)
+	return ret0, ret1
+}
+
+// DeletePublicAccessBlockRequest indicates an expected call of DeletePublicAccessBlockRequest
+func (mr *MockS3APIMockRecorder) DeletePublicAccessBlockRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicAccessBlockRequest", reflect.TypeOf((*MockS3API)(nil).DeletePublicAccessBlockRequest), arg0)
+}
+
+// DeletePublicAccessBlockWithContext mocks base method
+func (m *MockS3API) DeletePublicAccessBlockWithContext(arg0 aws.Context, arg1 *s3.DeletePublicAccessBlockInput, arg2 ...request.Option) (*s3.DeletePublicAccessBlockOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePublicAccessBlockWithContext", varargs...)
+	ret0, _ := ret[0].(*s3.DeletePublicAccessBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePublicAccessBlockWithContext indicates an expected call of DeletePublicAccessBlockWithContext
+func (mr *MockS3APIMockRecorder) DeletePublicAccessBlockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicAccessBlockWithContext", reflect.TypeOf((*MockS3API)(nil).DeletePublicAccessBlockWithContext), varargs...)
+}
+
 // GetBucketAccelerateConfiguration mocks base method
 func (m *MockS3API) GetBucketAccelerateConfiguration(arg0 *s3.GetBucketAccelerateConfigurationInput) (*s3.GetBucketAccelerateConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1665,6 +1715,56 @@ func (mr *MockS3APIMockRecorder) GetBucketPolicyRequest(arg0 interface{}) *gomoc
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicyRequest", reflect.TypeOf((*MockS3API)(nil).GetBucketPolicyRequest), arg0)
 }
 
+// GetBucketPolicyStatus mocks base method
+func (m *MockS3API) GetBucketPolicyStatus(arg0 *s3.GetBucketPolicyStatusInput) (*s3.GetBucketPolicyStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketPolicyStatus", arg0)
+	ret0, _ := ret[0].(*s3.GetBucketPolicyStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketPolicyStatus indicates an expected call of GetBucketPolicyStatus
+func (mr *MockS3APIMockRecorder) GetBucketPolicyStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicyStatus", reflect.TypeOf((*MockS3API)(nil).GetBucketPolicyStatus), arg0)
+}
+
+// GetBucketPolicyStatusRequest mocks base method
+func (m *MockS3API) GetBucketPolicyStatusRequest(arg0 *s3.GetBucketPolicyStatusInput) (*request.Request, *s3.GetBucketPolicyStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketPolicyStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3.GetBucketPolicyStatusOutput)
+	return ret0, ret1
+}
+
+// GetBucketPolicyStatusRequest indicates an expected call of GetBucketPolicyStatusRequest
+func (mr *MockS3APIMockRecorder) GetBucketPolicyStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicyStatusRequest", reflect.TypeOf((*MockS3API)(nil).GetBucketPolicyStatusRequest), arg0)
+}
+
+// GetBucketPolicyStatusWithContext mocks base method
+func (m *MockS3API) GetBucketPolicyStatusWithContext(arg0 aws.Context, arg1 *s3.GetBucketPolicyStatusInput, arg2 ...request.Option) (*s3.GetBucketPolicyStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBucketPolicyStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*s3.GetBucketPolicyStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketPolicyStatusWithContext indicates an expected call of GetBucketPolicyStatusWithContext
+func (mr *MockS3APIMockRecorder) GetBucketPolicyStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicyStatusWithContext", reflect.TypeOf((*MockS3API)(nil).GetBucketPolicyStatusWithContext), varargs...)
+}
+
 // GetBucketPolicyWithContext mocks base method
 func (m *MockS3API) GetBucketPolicyWithContext(arg0 aws.Context, arg1 *s3.GetBucketPolicyInput, arg2 ...request.Option) (*s3.GetBucketPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -2133,6 +2233,56 @@ func (mr *MockS3APIMockRecorder) GetObjectWithContext(arg0, arg1 interface{}, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetObjectWithContext", reflect.TypeOf((*MockS3API)(nil).GetObjectWithContext), varargs...)
+}
+
+// GetPublicAccessBlock mocks base method
+func (m *MockS3API) GetPublicAccessBlock(arg0 *s3.GetPublicAccessBlockInput) (*s3.GetPublicAccessBlockOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPublicAccessBlock", arg0)
+	ret0, _ := ret[0].(*s3.GetPublicAccessBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPublicAccessBlock indicates an expected call of GetPublicAccessBlock
+func (mr *MockS3APIMockRecorder) GetPublicAccessBlock(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicAccessBlock", reflect.TypeOf((*MockS3API)(nil).GetPublicAccessBlock), arg0)
+}
+
+// GetPublicAccessBlockRequest mocks base method
+func (m *MockS3API) GetPublicAccessBlockRequest(arg0 *s3.GetPublicAccessBlockInput) (*request.Request, *s3.GetPublicAccessBlockOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPublicAccessBlockRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3.GetPublicAccessBlockOutput)
+	return ret0, ret1
+}
+
+// GetPublicAccessBlockRequest indicates an expected call of GetPublicAccessBlockRequest
+func (mr *MockS3APIMockRecorder) GetPublicAccessBlockRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicAccessBlockRequest", reflect.TypeOf((*MockS3API)(nil).GetPublicAccessBlockRequest), arg0)
+}
+
+// GetPublicAccessBlockWithContext mocks base method
+func (m *MockS3API) GetPublicAccessBlockWithContext(arg0 aws.Context, arg1 *s3.GetPublicAccessBlockInput, arg2 ...request.Option) (*s3.GetPublicAccessBlockOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPublicAccessBlockWithContext", varargs...)
+	ret0, _ := ret[0].(*s3.GetPublicAccessBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPublicAccessBlockWithContext indicates an expected call of GetPublicAccessBlockWithContext
+func (mr *MockS3APIMockRecorder) GetPublicAccessBlockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicAccessBlockWithContext", reflect.TypeOf((*MockS3API)(nil).GetPublicAccessBlockWithContext), varargs...)
 }
 
 // HeadBucket mocks base method
@@ -3898,6 +4048,56 @@ func (mr *MockS3APIMockRecorder) PutObjectWithContext(arg0, arg1 interface{}, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutObjectWithContext", reflect.TypeOf((*MockS3API)(nil).PutObjectWithContext), varargs...)
+}
+
+// PutPublicAccessBlock mocks base method
+func (m *MockS3API) PutPublicAccessBlock(arg0 *s3.PutPublicAccessBlockInput) (*s3.PutPublicAccessBlockOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPublicAccessBlock", arg0)
+	ret0, _ := ret[0].(*s3.PutPublicAccessBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPublicAccessBlock indicates an expected call of PutPublicAccessBlock
+func (mr *MockS3APIMockRecorder) PutPublicAccessBlock(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPublicAccessBlock", reflect.TypeOf((*MockS3API)(nil).PutPublicAccessBlock), arg0)
+}
+
+// PutPublicAccessBlockRequest mocks base method
+func (m *MockS3API) PutPublicAccessBlockRequest(arg0 *s3.PutPublicAccessBlockInput) (*request.Request, *s3.PutPublicAccessBlockOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPublicAccessBlockRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3.PutPublicAccessBlockOutput)
+	return ret0, ret1
+}
+
+// PutPublicAccessBlockRequest indicates an expected call of PutPublicAccessBlockRequest
+func (mr *MockS3APIMockRecorder) PutPublicAccessBlockRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPublicAccessBlockRequest", reflect.TypeOf((*MockS3API)(nil).PutPublicAccessBlockRequest), arg0)
+}
+
+// PutPublicAccessBlockWithContext mocks base method
+func (m *MockS3API) PutPublicAccessBlockWithContext(arg0 aws.Context, arg1 *s3.PutPublicAccessBlockInput, arg2 ...request.Option) (*s3.PutPublicAccessBlockOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPublicAccessBlockWithContext", varargs...)
+	ret0, _ := ret[0].(*s3.PutPublicAccessBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPublicAccessBlockWithContext indicates an expected call of PutPublicAccessBlockWithContext
+func (mr *MockS3APIMockRecorder) PutPublicAccessBlockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPublicAccessBlockWithContext", reflect.TypeOf((*MockS3API)(nil).PutPublicAccessBlockWithContext), varargs...)
 }
 
 // RestoreObject mocks base method

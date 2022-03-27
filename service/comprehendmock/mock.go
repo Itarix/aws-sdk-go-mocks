@@ -285,6 +285,206 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectSyntaxWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDetectSyntaxWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).BatchDetectSyntaxWithContext), varargs...)
 }
 
+// CreateDocumentClassifier mocks base method
+func (m *MockComprehendAPI) CreateDocumentClassifier(arg0 *comprehend.CreateDocumentClassifierInput) (*comprehend.CreateDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDocumentClassifier", arg0)
+	ret0, _ := ret[0].(*comprehend.CreateDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDocumentClassifier indicates an expected call of CreateDocumentClassifier
+func (mr *MockComprehendAPIMockRecorder) CreateDocumentClassifier(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentClassifier", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDocumentClassifier), arg0)
+}
+
+// CreateDocumentClassifierRequest mocks base method
+func (m *MockComprehendAPI) CreateDocumentClassifierRequest(arg0 *comprehend.CreateDocumentClassifierInput) (*request.Request, *comprehend.CreateDocumentClassifierOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDocumentClassifierRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.CreateDocumentClassifierOutput)
+	return ret0, ret1
+}
+
+// CreateDocumentClassifierRequest indicates an expected call of CreateDocumentClassifierRequest
+func (mr *MockComprehendAPIMockRecorder) CreateDocumentClassifierRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentClassifierRequest", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDocumentClassifierRequest), arg0)
+}
+
+// CreateDocumentClassifierWithContext mocks base method
+func (m *MockComprehendAPI) CreateDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.CreateDocumentClassifierInput, arg2 ...request.Option) (*comprehend.CreateDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDocumentClassifierWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.CreateDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDocumentClassifierWithContext indicates an expected call of CreateDocumentClassifierWithContext
+func (mr *MockComprehendAPIMockRecorder) CreateDocumentClassifierWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDocumentClassifierWithContext), varargs...)
+}
+
+// DeleteDocumentClassifier mocks base method
+func (m *MockComprehendAPI) DeleteDocumentClassifier(arg0 *comprehend.DeleteDocumentClassifierInput) (*comprehend.DeleteDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDocumentClassifier", arg0)
+	ret0, _ := ret[0].(*comprehend.DeleteDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDocumentClassifier indicates an expected call of DeleteDocumentClassifier
+func (mr *MockComprehendAPIMockRecorder) DeleteDocumentClassifier(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentClassifier", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteDocumentClassifier), arg0)
+}
+
+// DeleteDocumentClassifierRequest mocks base method
+func (m *MockComprehendAPI) DeleteDocumentClassifierRequest(arg0 *comprehend.DeleteDocumentClassifierInput) (*request.Request, *comprehend.DeleteDocumentClassifierOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDocumentClassifierRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DeleteDocumentClassifierOutput)
+	return ret0, ret1
+}
+
+// DeleteDocumentClassifierRequest indicates an expected call of DeleteDocumentClassifierRequest
+func (mr *MockComprehendAPIMockRecorder) DeleteDocumentClassifierRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentClassifierRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteDocumentClassifierRequest), arg0)
+}
+
+// DeleteDocumentClassifierWithContext mocks base method
+func (m *MockComprehendAPI) DeleteDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.DeleteDocumentClassifierInput, arg2 ...request.Option) (*comprehend.DeleteDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDocumentClassifierWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DeleteDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDocumentClassifierWithContext indicates an expected call of DeleteDocumentClassifierWithContext
+func (mr *MockComprehendAPIMockRecorder) DeleteDocumentClassifierWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteDocumentClassifierWithContext), varargs...)
+}
+
+// DescribeDocumentClassificationJob mocks base method
+func (m *MockComprehendAPI) DescribeDocumentClassificationJob(arg0 *comprehend.DescribeDocumentClassificationJobInput) (*comprehend.DescribeDocumentClassificationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDocumentClassificationJob", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeDocumentClassificationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDocumentClassificationJob indicates an expected call of DescribeDocumentClassificationJob
+func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassificationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentClassificationJob", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDocumentClassificationJob), arg0)
+}
+
+// DescribeDocumentClassificationJobRequest mocks base method
+func (m *MockComprehendAPI) DescribeDocumentClassificationJobRequest(arg0 *comprehend.DescribeDocumentClassificationJobInput) (*request.Request, *comprehend.DescribeDocumentClassificationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDocumentClassificationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeDocumentClassificationJobOutput)
+	return ret0, ret1
+}
+
+// DescribeDocumentClassificationJobRequest indicates an expected call of DescribeDocumentClassificationJobRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassificationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentClassificationJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDocumentClassificationJobRequest), arg0)
+}
+
+// DescribeDocumentClassificationJobWithContext mocks base method
+func (m *MockComprehendAPI) DescribeDocumentClassificationJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeDocumentClassificationJobInput, arg2 ...request.Option) (*comprehend.DescribeDocumentClassificationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDocumentClassificationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeDocumentClassificationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDocumentClassificationJobWithContext indicates an expected call of DescribeDocumentClassificationJobWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassificationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentClassificationJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDocumentClassificationJobWithContext), varargs...)
+}
+
+// DescribeDocumentClassifier mocks base method
+func (m *MockComprehendAPI) DescribeDocumentClassifier(arg0 *comprehend.DescribeDocumentClassifierInput) (*comprehend.DescribeDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDocumentClassifier", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDocumentClassifier indicates an expected call of DescribeDocumentClassifier
+func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassifier(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentClassifier", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDocumentClassifier), arg0)
+}
+
+// DescribeDocumentClassifierRequest mocks base method
+func (m *MockComprehendAPI) DescribeDocumentClassifierRequest(arg0 *comprehend.DescribeDocumentClassifierInput) (*request.Request, *comprehend.DescribeDocumentClassifierOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDocumentClassifierRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeDocumentClassifierOutput)
+	return ret0, ret1
+}
+
+// DescribeDocumentClassifierRequest indicates an expected call of DescribeDocumentClassifierRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassifierRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentClassifierRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDocumentClassifierRequest), arg0)
+}
+
+// DescribeDocumentClassifierWithContext mocks base method
+func (m *MockComprehendAPI) DescribeDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.DescribeDocumentClassifierInput, arg2 ...request.Option) (*comprehend.DescribeDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDocumentClassifierWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDocumentClassifierWithContext indicates an expected call of DescribeDocumentClassifierWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassifierWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDocumentClassifierWithContext), varargs...)
+}
+
 // DescribeDominantLanguageDetectionJob mocks base method
 func (m *MockComprehendAPI) DescribeDominantLanguageDetectionJob(arg0 *comprehend.DescribeDominantLanguageDetectionJobInput) (*comprehend.DescribeDominantLanguageDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -785,6 +985,106 @@ func (mr *MockComprehendAPIMockRecorder) DetectSyntaxWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectSyntaxWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DetectSyntaxWithContext), varargs...)
 }
 
+// ListDocumentClassificationJobs mocks base method
+func (m *MockComprehendAPI) ListDocumentClassificationJobs(arg0 *comprehend.ListDocumentClassificationJobsInput) (*comprehend.ListDocumentClassificationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassificationJobs", arg0)
+	ret0, _ := ret[0].(*comprehend.ListDocumentClassificationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentClassificationJobs indicates an expected call of ListDocumentClassificationJobs
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassificationJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassificationJobs", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassificationJobs), arg0)
+}
+
+// ListDocumentClassificationJobsRequest mocks base method
+func (m *MockComprehendAPI) ListDocumentClassificationJobsRequest(arg0 *comprehend.ListDocumentClassificationJobsInput) (*request.Request, *comprehend.ListDocumentClassificationJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassificationJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListDocumentClassificationJobsOutput)
+	return ret0, ret1
+}
+
+// ListDocumentClassificationJobsRequest indicates an expected call of ListDocumentClassificationJobsRequest
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassificationJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassificationJobsRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassificationJobsRequest), arg0)
+}
+
+// ListDocumentClassificationJobsWithContext mocks base method
+func (m *MockComprehendAPI) ListDocumentClassificationJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListDocumentClassificationJobsInput, arg2 ...request.Option) (*comprehend.ListDocumentClassificationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDocumentClassificationJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListDocumentClassificationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentClassificationJobsWithContext indicates an expected call of ListDocumentClassificationJobsWithContext
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassificationJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassificationJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassificationJobsWithContext), varargs...)
+}
+
+// ListDocumentClassifiers mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifiers(arg0 *comprehend.ListDocumentClassifiersInput) (*comprehend.ListDocumentClassifiersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassifiers", arg0)
+	ret0, _ := ret[0].(*comprehend.ListDocumentClassifiersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentClassifiers indicates an expected call of ListDocumentClassifiers
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifiers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifiers", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifiers), arg0)
+}
+
+// ListDocumentClassifiersRequest mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifiersRequest(arg0 *comprehend.ListDocumentClassifiersInput) (*request.Request, *comprehend.ListDocumentClassifiersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassifiersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListDocumentClassifiersOutput)
+	return ret0, ret1
+}
+
+// ListDocumentClassifiersRequest indicates an expected call of ListDocumentClassifiersRequest
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifiersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifiersRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifiersRequest), arg0)
+}
+
+// ListDocumentClassifiersWithContext mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifiersWithContext(arg0 aws.Context, arg1 *comprehend.ListDocumentClassifiersInput, arg2 ...request.Option) (*comprehend.ListDocumentClassifiersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDocumentClassifiersWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListDocumentClassifiersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentClassifiersWithContext indicates an expected call of ListDocumentClassifiersWithContext
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifiersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifiersWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifiersWithContext), varargs...)
+}
+
 // ListDominantLanguageDetectionJobs mocks base method
 func (m *MockComprehendAPI) ListDominantLanguageDetectionJobs(arg0 *comprehend.ListDominantLanguageDetectionJobsInput) (*comprehend.ListDominantLanguageDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1198,6 +1498,56 @@ func (mr *MockComprehendAPIMockRecorder) ListTopicsDetectionJobsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTopicsDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListTopicsDetectionJobsWithContext), varargs...)
+}
+
+// StartDocumentClassificationJob mocks base method
+func (m *MockComprehendAPI) StartDocumentClassificationJob(arg0 *comprehend.StartDocumentClassificationJobInput) (*comprehend.StartDocumentClassificationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDocumentClassificationJob", arg0)
+	ret0, _ := ret[0].(*comprehend.StartDocumentClassificationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDocumentClassificationJob indicates an expected call of StartDocumentClassificationJob
+func (mr *MockComprehendAPIMockRecorder) StartDocumentClassificationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDocumentClassificationJob", reflect.TypeOf((*MockComprehendAPI)(nil).StartDocumentClassificationJob), arg0)
+}
+
+// StartDocumentClassificationJobRequest mocks base method
+func (m *MockComprehendAPI) StartDocumentClassificationJobRequest(arg0 *comprehend.StartDocumentClassificationJobInput) (*request.Request, *comprehend.StartDocumentClassificationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDocumentClassificationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StartDocumentClassificationJobOutput)
+	return ret0, ret1
+}
+
+// StartDocumentClassificationJobRequest indicates an expected call of StartDocumentClassificationJobRequest
+func (mr *MockComprehendAPIMockRecorder) StartDocumentClassificationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDocumentClassificationJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StartDocumentClassificationJobRequest), arg0)
+}
+
+// StartDocumentClassificationJobWithContext mocks base method
+func (m *MockComprehendAPI) StartDocumentClassificationJobWithContext(arg0 aws.Context, arg1 *comprehend.StartDocumentClassificationJobInput, arg2 ...request.Option) (*comprehend.StartDocumentClassificationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDocumentClassificationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StartDocumentClassificationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDocumentClassificationJobWithContext indicates an expected call of StartDocumentClassificationJobWithContext
+func (mr *MockComprehendAPIMockRecorder) StartDocumentClassificationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDocumentClassificationJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartDocumentClassificationJobWithContext), varargs...)
 }
 
 // StartDominantLanguageDetectionJob mocks base method

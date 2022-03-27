@@ -185,6 +185,106 @@ func (mr *MockRedshiftAPIMockRecorder) AuthorizeSnapshotAccessWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeSnapshotAccessWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).AuthorizeSnapshotAccessWithContext), varargs...)
 }
 
+// BatchDeleteClusterSnapshots mocks base method
+func (m *MockRedshiftAPI) BatchDeleteClusterSnapshots(arg0 *redshift.BatchDeleteClusterSnapshotsInput) (*redshift.BatchDeleteClusterSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteClusterSnapshots", arg0)
+	ret0, _ := ret[0].(*redshift.BatchDeleteClusterSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteClusterSnapshots indicates an expected call of BatchDeleteClusterSnapshots
+func (mr *MockRedshiftAPIMockRecorder) BatchDeleteClusterSnapshots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteClusterSnapshots", reflect.TypeOf((*MockRedshiftAPI)(nil).BatchDeleteClusterSnapshots), arg0)
+}
+
+// BatchDeleteClusterSnapshotsRequest mocks base method
+func (m *MockRedshiftAPI) BatchDeleteClusterSnapshotsRequest(arg0 *redshift.BatchDeleteClusterSnapshotsInput) (*request.Request, *redshift.BatchDeleteClusterSnapshotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteClusterSnapshotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.BatchDeleteClusterSnapshotsOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteClusterSnapshotsRequest indicates an expected call of BatchDeleteClusterSnapshotsRequest
+func (mr *MockRedshiftAPIMockRecorder) BatchDeleteClusterSnapshotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteClusterSnapshotsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).BatchDeleteClusterSnapshotsRequest), arg0)
+}
+
+// BatchDeleteClusterSnapshotsWithContext mocks base method
+func (m *MockRedshiftAPI) BatchDeleteClusterSnapshotsWithContext(arg0 aws.Context, arg1 *redshift.BatchDeleteClusterSnapshotsInput, arg2 ...request.Option) (*redshift.BatchDeleteClusterSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteClusterSnapshotsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.BatchDeleteClusterSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteClusterSnapshotsWithContext indicates an expected call of BatchDeleteClusterSnapshotsWithContext
+func (mr *MockRedshiftAPIMockRecorder) BatchDeleteClusterSnapshotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteClusterSnapshotsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).BatchDeleteClusterSnapshotsWithContext), varargs...)
+}
+
+// BatchModifyClusterSnapshots mocks base method
+func (m *MockRedshiftAPI) BatchModifyClusterSnapshots(arg0 *redshift.BatchModifyClusterSnapshotsInput) (*redshift.BatchModifyClusterSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchModifyClusterSnapshots", arg0)
+	ret0, _ := ret[0].(*redshift.BatchModifyClusterSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchModifyClusterSnapshots indicates an expected call of BatchModifyClusterSnapshots
+func (mr *MockRedshiftAPIMockRecorder) BatchModifyClusterSnapshots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchModifyClusterSnapshots", reflect.TypeOf((*MockRedshiftAPI)(nil).BatchModifyClusterSnapshots), arg0)
+}
+
+// BatchModifyClusterSnapshotsRequest mocks base method
+func (m *MockRedshiftAPI) BatchModifyClusterSnapshotsRequest(arg0 *redshift.BatchModifyClusterSnapshotsInput) (*request.Request, *redshift.BatchModifyClusterSnapshotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchModifyClusterSnapshotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.BatchModifyClusterSnapshotsOutput)
+	return ret0, ret1
+}
+
+// BatchModifyClusterSnapshotsRequest indicates an expected call of BatchModifyClusterSnapshotsRequest
+func (mr *MockRedshiftAPIMockRecorder) BatchModifyClusterSnapshotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchModifyClusterSnapshotsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).BatchModifyClusterSnapshotsRequest), arg0)
+}
+
+// BatchModifyClusterSnapshotsWithContext mocks base method
+func (m *MockRedshiftAPI) BatchModifyClusterSnapshotsWithContext(arg0 aws.Context, arg1 *redshift.BatchModifyClusterSnapshotsInput, arg2 ...request.Option) (*redshift.BatchModifyClusterSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchModifyClusterSnapshotsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.BatchModifyClusterSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchModifyClusterSnapshotsWithContext indicates an expected call of BatchModifyClusterSnapshotsWithContext
+func (mr *MockRedshiftAPIMockRecorder) BatchModifyClusterSnapshotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchModifyClusterSnapshotsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).BatchModifyClusterSnapshotsWithContext), varargs...)
+}
+
 // CancelResize mocks base method
 func (m *MockRedshiftAPI) CancelResize(arg0 *redshift.CancelResizeInput) (*redshift.CancelResizeOutput, error) {
 	m.ctrl.T.Helper()
@@ -735,6 +835,56 @@ func (mr *MockRedshiftAPIMockRecorder) CreateSnapshotCopyGrantWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotCopyGrantWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateSnapshotCopyGrantWithContext), varargs...)
 }
 
+// CreateSnapshotSchedule mocks base method
+func (m *MockRedshiftAPI) CreateSnapshotSchedule(arg0 *redshift.CreateSnapshotScheduleInput) (*redshift.CreateSnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSnapshotSchedule", arg0)
+	ret0, _ := ret[0].(*redshift.CreateSnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSnapshotSchedule indicates an expected call of CreateSnapshotSchedule
+func (mr *MockRedshiftAPIMockRecorder) CreateSnapshotSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotSchedule", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateSnapshotSchedule), arg0)
+}
+
+// CreateSnapshotScheduleRequest mocks base method
+func (m *MockRedshiftAPI) CreateSnapshotScheduleRequest(arg0 *redshift.CreateSnapshotScheduleInput) (*request.Request, *redshift.CreateSnapshotScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSnapshotScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.CreateSnapshotScheduleOutput)
+	return ret0, ret1
+}
+
+// CreateSnapshotScheduleRequest indicates an expected call of CreateSnapshotScheduleRequest
+func (mr *MockRedshiftAPIMockRecorder) CreateSnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotScheduleRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateSnapshotScheduleRequest), arg0)
+}
+
+// CreateSnapshotScheduleWithContext mocks base method
+func (m *MockRedshiftAPI) CreateSnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.CreateSnapshotScheduleInput, arg2 ...request.Option) (*redshift.CreateSnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSnapshotScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.CreateSnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSnapshotScheduleWithContext indicates an expected call of CreateSnapshotScheduleWithContext
+func (mr *MockRedshiftAPIMockRecorder) CreateSnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotScheduleWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateSnapshotScheduleWithContext), varargs...)
+}
+
 // CreateTags mocks base method
 func (m *MockRedshiftAPI) CreateTags(arg0 *redshift.CreateTagsInput) (*redshift.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +1383,56 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteSnapshotCopyGrantWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotCopyGrantWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteSnapshotCopyGrantWithContext), varargs...)
+}
+
+// DeleteSnapshotSchedule mocks base method
+func (m *MockRedshiftAPI) DeleteSnapshotSchedule(arg0 *redshift.DeleteSnapshotScheduleInput) (*redshift.DeleteSnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSnapshotSchedule", arg0)
+	ret0, _ := ret[0].(*redshift.DeleteSnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSnapshotSchedule indicates an expected call of DeleteSnapshotSchedule
+func (mr *MockRedshiftAPIMockRecorder) DeleteSnapshotSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotSchedule", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteSnapshotSchedule), arg0)
+}
+
+// DeleteSnapshotScheduleRequest mocks base method
+func (m *MockRedshiftAPI) DeleteSnapshotScheduleRequest(arg0 *redshift.DeleteSnapshotScheduleInput) (*request.Request, *redshift.DeleteSnapshotScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSnapshotScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DeleteSnapshotScheduleOutput)
+	return ret0, ret1
+}
+
+// DeleteSnapshotScheduleRequest indicates an expected call of DeleteSnapshotScheduleRequest
+func (mr *MockRedshiftAPIMockRecorder) DeleteSnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotScheduleRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteSnapshotScheduleRequest), arg0)
+}
+
+// DeleteSnapshotScheduleWithContext mocks base method
+func (m *MockRedshiftAPI) DeleteSnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*redshift.DeleteSnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSnapshotScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DeleteSnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSnapshotScheduleWithContext indicates an expected call of DeleteSnapshotScheduleWithContext
+func (mr *MockRedshiftAPIMockRecorder) DeleteSnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotScheduleWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteSnapshotScheduleWithContext), varargs...)
 }
 
 // DeleteTags mocks base method
@@ -2880,6 +3080,106 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotCopyGrantsWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotCopyGrantsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotCopyGrantsWithContext), varargs...)
 }
 
+// DescribeSnapshotSchedules mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotSchedules(arg0 *redshift.DescribeSnapshotSchedulesInput) (*redshift.DescribeSnapshotSchedulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotSchedules", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeSnapshotSchedulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSnapshotSchedules indicates an expected call of DescribeSnapshotSchedules
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedules", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotSchedules), arg0)
+}
+
+// DescribeSnapshotSchedulesRequest mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotSchedulesRequest(arg0 *redshift.DescribeSnapshotSchedulesInput) (*request.Request, *redshift.DescribeSnapshotSchedulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotSchedulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeSnapshotSchedulesOutput)
+	return ret0, ret1
+}
+
+// DescribeSnapshotSchedulesRequest indicates an expected call of DescribeSnapshotSchedulesRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedulesRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotSchedulesRequest), arg0)
+}
+
+// DescribeSnapshotSchedulesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotSchedulesWithContext(arg0 aws.Context, arg1 *redshift.DescribeSnapshotSchedulesInput, arg2 ...request.Option) (*redshift.DescribeSnapshotSchedulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotSchedulesWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeSnapshotSchedulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSnapshotSchedulesWithContext indicates an expected call of DescribeSnapshotSchedulesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedulesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotSchedulesWithContext), varargs...)
+}
+
+// DescribeStorage mocks base method
+func (m *MockRedshiftAPI) DescribeStorage(arg0 *redshift.DescribeStorageInput) (*redshift.DescribeStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorage", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorage indicates an expected call of DescribeStorage
+func (mr *MockRedshiftAPIMockRecorder) DescribeStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorage", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeStorage), arg0)
+}
+
+// DescribeStorageRequest mocks base method
+func (m *MockRedshiftAPI) DescribeStorageRequest(arg0 *redshift.DescribeStorageInput) (*request.Request, *redshift.DescribeStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeStorageOutput)
+	return ret0, ret1
+}
+
+// DescribeStorageRequest indicates an expected call of DescribeStorageRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeStorageRequest), arg0)
+}
+
+// DescribeStorageWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeStorageWithContext(arg0 aws.Context, arg1 *redshift.DescribeStorageInput, arg2 ...request.Option) (*redshift.DescribeStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageWithContext indicates an expected call of DescribeStorageWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeStorageWithContext), varargs...)
+}
+
 // DescribeTableRestoreStatus mocks base method
 func (m *MockRedshiftAPI) DescribeTableRestoreStatus(arg0 *redshift.DescribeTableRestoreStatusInput) (*redshift.DescribeTableRestoreStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -3510,6 +3810,106 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterRequest(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterRequest), arg0)
 }
 
+// ModifyClusterSnapshot mocks base method
+func (m *MockRedshiftAPI) ModifyClusterSnapshot(arg0 *redshift.ModifyClusterSnapshotInput) (*redshift.ModifyClusterSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterSnapshot", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyClusterSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterSnapshot indicates an expected call of ModifyClusterSnapshot
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterSnapshot", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterSnapshot), arg0)
+}
+
+// ModifyClusterSnapshotRequest mocks base method
+func (m *MockRedshiftAPI) ModifyClusterSnapshotRequest(arg0 *redshift.ModifyClusterSnapshotInput) (*request.Request, *redshift.ModifyClusterSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyClusterSnapshotOutput)
+	return ret0, ret1
+}
+
+// ModifyClusterSnapshotRequest indicates an expected call of ModifyClusterSnapshotRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterSnapshotRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterSnapshotRequest), arg0)
+}
+
+// ModifyClusterSnapshotSchedule mocks base method
+func (m *MockRedshiftAPI) ModifyClusterSnapshotSchedule(arg0 *redshift.ModifyClusterSnapshotScheduleInput) (*redshift.ModifyClusterSnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterSnapshotSchedule", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyClusterSnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterSnapshotSchedule indicates an expected call of ModifyClusterSnapshotSchedule
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterSnapshotSchedule", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterSnapshotSchedule), arg0)
+}
+
+// ModifyClusterSnapshotScheduleRequest mocks base method
+func (m *MockRedshiftAPI) ModifyClusterSnapshotScheduleRequest(arg0 *redshift.ModifyClusterSnapshotScheduleInput) (*request.Request, *redshift.ModifyClusterSnapshotScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterSnapshotScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyClusterSnapshotScheduleOutput)
+	return ret0, ret1
+}
+
+// ModifyClusterSnapshotScheduleRequest indicates an expected call of ModifyClusterSnapshotScheduleRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterSnapshotScheduleRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterSnapshotScheduleRequest), arg0)
+}
+
+// ModifyClusterSnapshotScheduleWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyClusterSnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterSnapshotScheduleInput, arg2 ...request.Option) (*redshift.ModifyClusterSnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyClusterSnapshotScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyClusterSnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterSnapshotScheduleWithContext indicates an expected call of ModifyClusterSnapshotScheduleWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterSnapshotScheduleWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterSnapshotScheduleWithContext), varargs...)
+}
+
+// ModifyClusterSnapshotWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterSnapshotInput, arg2 ...request.Option) (*redshift.ModifyClusterSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyClusterSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyClusterSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterSnapshotWithContext indicates an expected call of ModifyClusterSnapshotWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterSnapshotWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterSnapshotWithContext), varargs...)
+}
+
 // ModifyClusterSubnetGroup mocks base method
 func (m *MockRedshiftAPI) ModifyClusterSubnetGroup(arg0 *redshift.ModifyClusterSubnetGroupInput) (*redshift.ModifyClusterSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -3678,6 +4078,56 @@ func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotCopyRetentionPeriodWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotCopyRetentionPeriodWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifySnapshotCopyRetentionPeriodWithContext), varargs...)
+}
+
+// ModifySnapshotSchedule mocks base method
+func (m *MockRedshiftAPI) ModifySnapshotSchedule(arg0 *redshift.ModifySnapshotScheduleInput) (*redshift.ModifySnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySnapshotSchedule", arg0)
+	ret0, _ := ret[0].(*redshift.ModifySnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySnapshotSchedule indicates an expected call of ModifySnapshotSchedule
+func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotSchedule", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifySnapshotSchedule), arg0)
+}
+
+// ModifySnapshotScheduleRequest mocks base method
+func (m *MockRedshiftAPI) ModifySnapshotScheduleRequest(arg0 *redshift.ModifySnapshotScheduleInput) (*request.Request, *redshift.ModifySnapshotScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySnapshotScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifySnapshotScheduleOutput)
+	return ret0, ret1
+}
+
+// ModifySnapshotScheduleRequest indicates an expected call of ModifySnapshotScheduleRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotScheduleRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifySnapshotScheduleRequest), arg0)
+}
+
+// ModifySnapshotScheduleWithContext mocks base method
+func (m *MockRedshiftAPI) ModifySnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.ModifySnapshotScheduleInput, arg2 ...request.Option) (*redshift.ModifySnapshotScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifySnapshotScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifySnapshotScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySnapshotScheduleWithContext indicates an expected call of ModifySnapshotScheduleWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotScheduleWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifySnapshotScheduleWithContext), varargs...)
 }
 
 // PurchaseReservedNodeOffering mocks base method
