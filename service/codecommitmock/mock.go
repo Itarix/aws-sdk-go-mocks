@@ -335,6 +335,56 @@ func (mr *MockCodeCommitAPIMockRecorder) DeleteCommentContentWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCommentContentWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteCommentContentWithContext), varargs...)
 }
 
+// DeleteFile mocks base method
+func (m *MockCodeCommitAPI) DeleteFile(arg0 *codecommit.DeleteFileInput) (*codecommit.DeleteFileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFile", arg0)
+	ret0, _ := ret[0].(*codecommit.DeleteFileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFile indicates an expected call of DeleteFile
+func (mr *MockCodeCommitAPIMockRecorder) DeleteFile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFile", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteFile), arg0)
+}
+
+// DeleteFileRequest mocks base method
+func (m *MockCodeCommitAPI) DeleteFileRequest(arg0 *codecommit.DeleteFileInput) (*request.Request, *codecommit.DeleteFileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.DeleteFileOutput)
+	return ret0, ret1
+}
+
+// DeleteFileRequest indicates an expected call of DeleteFileRequest
+func (mr *MockCodeCommitAPIMockRecorder) DeleteFileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteFileRequest), arg0)
+}
+
+// DeleteFileWithContext mocks base method
+func (m *MockCodeCommitAPI) DeleteFileWithContext(arg0 aws.Context, arg1 *codecommit.DeleteFileInput, arg2 ...request.Option) (*codecommit.DeleteFileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFileWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.DeleteFileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFileWithContext indicates an expected call of DeleteFileWithContext
+func (mr *MockCodeCommitAPIMockRecorder) DeleteFileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteFileWithContext), varargs...)
+}
+
 // DeleteRepository mocks base method
 func (m *MockCodeCommitAPI) DeleteRepository(arg0 *codecommit.DeleteRepositoryInput) (*codecommit.DeleteRepositoryOutput, error) {
 	m.ctrl.T.Helper()
@@ -915,6 +965,106 @@ func (mr *MockCodeCommitAPIMockRecorder) GetDifferencesWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDifferencesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetDifferencesWithContext), varargs...)
+}
+
+// GetFile mocks base method
+func (m *MockCodeCommitAPI) GetFile(arg0 *codecommit.GetFileInput) (*codecommit.GetFileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFile", arg0)
+	ret0, _ := ret[0].(*codecommit.GetFileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFile indicates an expected call of GetFile
+func (mr *MockCodeCommitAPIMockRecorder) GetFile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFile", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetFile), arg0)
+}
+
+// GetFileRequest mocks base method
+func (m *MockCodeCommitAPI) GetFileRequest(arg0 *codecommit.GetFileInput) (*request.Request, *codecommit.GetFileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.GetFileOutput)
+	return ret0, ret1
+}
+
+// GetFileRequest indicates an expected call of GetFileRequest
+func (mr *MockCodeCommitAPIMockRecorder) GetFileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFileRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetFileRequest), arg0)
+}
+
+// GetFileWithContext mocks base method
+func (m *MockCodeCommitAPI) GetFileWithContext(arg0 aws.Context, arg1 *codecommit.GetFileInput, arg2 ...request.Option) (*codecommit.GetFileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFileWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.GetFileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFileWithContext indicates an expected call of GetFileWithContext
+func (mr *MockCodeCommitAPIMockRecorder) GetFileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFileWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetFileWithContext), varargs...)
+}
+
+// GetFolder mocks base method
+func (m *MockCodeCommitAPI) GetFolder(arg0 *codecommit.GetFolderInput) (*codecommit.GetFolderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFolder", arg0)
+	ret0, _ := ret[0].(*codecommit.GetFolderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFolder indicates an expected call of GetFolder
+func (mr *MockCodeCommitAPIMockRecorder) GetFolder(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolder", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetFolder), arg0)
+}
+
+// GetFolderRequest mocks base method
+func (m *MockCodeCommitAPI) GetFolderRequest(arg0 *codecommit.GetFolderInput) (*request.Request, *codecommit.GetFolderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFolderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.GetFolderOutput)
+	return ret0, ret1
+}
+
+// GetFolderRequest indicates an expected call of GetFolderRequest
+func (mr *MockCodeCommitAPIMockRecorder) GetFolderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetFolderRequest), arg0)
+}
+
+// GetFolderWithContext mocks base method
+func (m *MockCodeCommitAPI) GetFolderWithContext(arg0 aws.Context, arg1 *codecommit.GetFolderInput, arg2 ...request.Option) (*codecommit.GetFolderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFolderWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.GetFolderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFolderWithContext indicates an expected call of GetFolderWithContext
+func (mr *MockCodeCommitAPIMockRecorder) GetFolderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFolderWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetFolderWithContext), varargs...)
 }
 
 // GetMergeConflicts mocks base method
