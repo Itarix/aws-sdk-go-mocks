@@ -3197,6 +3197,56 @@ func (mr *MockDeviceFarmAPIMockRecorder) ScheduleRunWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ScheduleRunWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ScheduleRunWithContext), varargs...)
 }
 
+// StopJob mocks base method
+func (m *MockDeviceFarmAPI) StopJob(arg0 *devicefarm.StopJobInput) (*devicefarm.StopJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopJob", arg0)
+	ret0, _ := ret[0].(*devicefarm.StopJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopJob indicates an expected call of StopJob
+func (mr *MockDeviceFarmAPIMockRecorder) StopJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopJob", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopJob), arg0)
+}
+
+// StopJobRequest mocks base method
+func (m *MockDeviceFarmAPI) StopJobRequest(arg0 *devicefarm.StopJobInput) (*request.Request, *devicefarm.StopJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.StopJobOutput)
+	return ret0, ret1
+}
+
+// StopJobRequest indicates an expected call of StopJobRequest
+func (mr *MockDeviceFarmAPIMockRecorder) StopJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopJobRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopJobRequest), arg0)
+}
+
+// StopJobWithContext mocks base method
+func (m *MockDeviceFarmAPI) StopJobWithContext(arg0 aws.Context, arg1 *devicefarm.StopJobInput, arg2 ...request.Option) (*devicefarm.StopJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopJobWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.StopJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopJobWithContext indicates an expected call of StopJobWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) StopJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopJobWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).StopJobWithContext), varargs...)
+}
+
 // StopRemoteAccessSession mocks base method
 func (m *MockDeviceFarmAPI) StopRemoteAccessSession(arg0 *devicefarm.StopRemoteAccessSessionInput) (*devicefarm.StopRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
@@ -3545,6 +3595,56 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateProjectWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateProjectWithContext), varargs...)
+}
+
+// UpdateUpload mocks base method
+func (m *MockDeviceFarmAPI) UpdateUpload(arg0 *devicefarm.UpdateUploadInput) (*devicefarm.UpdateUploadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUpload", arg0)
+	ret0, _ := ret[0].(*devicefarm.UpdateUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUpload indicates an expected call of UpdateUpload
+func (mr *MockDeviceFarmAPIMockRecorder) UpdateUpload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUpload", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateUpload), arg0)
+}
+
+// UpdateUploadRequest mocks base method
+func (m *MockDeviceFarmAPI) UpdateUploadRequest(arg0 *devicefarm.UpdateUploadInput) (*request.Request, *devicefarm.UpdateUploadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUploadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.UpdateUploadOutput)
+	return ret0, ret1
+}
+
+// UpdateUploadRequest indicates an expected call of UpdateUploadRequest
+func (mr *MockDeviceFarmAPIMockRecorder) UpdateUploadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUploadRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateUploadRequest), arg0)
+}
+
+// UpdateUploadWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateUploadWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateUploadInput, arg2 ...request.Option) (*devicefarm.UpdateUploadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUploadWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.UpdateUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUploadWithContext indicates an expected call of UpdateUploadWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) UpdateUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUploadWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateUploadWithContext), varargs...)
 }
 
 // UpdateVPCEConfiguration mocks base method
