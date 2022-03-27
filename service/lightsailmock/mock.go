@@ -335,6 +335,106 @@ func (mr *MockLightsailAPIMockRecorder) CloseInstancePublicPortsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CloseInstancePublicPortsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CloseInstancePublicPortsWithContext), varargs...)
 }
 
+// CopySnapshot mocks base method
+func (m *MockLightsailAPI) CopySnapshot(arg0 *lightsail.CopySnapshotInput) (*lightsail.CopySnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopySnapshot", arg0)
+	ret0, _ := ret[0].(*lightsail.CopySnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopySnapshot indicates an expected call of CopySnapshot
+func (mr *MockLightsailAPIMockRecorder) CopySnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopySnapshot", reflect.TypeOf((*MockLightsailAPI)(nil).CopySnapshot), arg0)
+}
+
+// CopySnapshotRequest mocks base method
+func (m *MockLightsailAPI) CopySnapshotRequest(arg0 *lightsail.CopySnapshotInput) (*request.Request, *lightsail.CopySnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopySnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CopySnapshotOutput)
+	return ret0, ret1
+}
+
+// CopySnapshotRequest indicates an expected call of CopySnapshotRequest
+func (mr *MockLightsailAPIMockRecorder) CopySnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopySnapshotRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CopySnapshotRequest), arg0)
+}
+
+// CopySnapshotWithContext mocks base method
+func (m *MockLightsailAPI) CopySnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CopySnapshotInput, arg2 ...request.Option) (*lightsail.CopySnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CopySnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CopySnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopySnapshotWithContext indicates an expected call of CopySnapshotWithContext
+func (mr *MockLightsailAPIMockRecorder) CopySnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopySnapshotWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CopySnapshotWithContext), varargs...)
+}
+
+// CreateCloudFormationStack mocks base method
+func (m *MockLightsailAPI) CreateCloudFormationStack(arg0 *lightsail.CreateCloudFormationStackInput) (*lightsail.CreateCloudFormationStackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCloudFormationStack", arg0)
+	ret0, _ := ret[0].(*lightsail.CreateCloudFormationStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCloudFormationStack indicates an expected call of CreateCloudFormationStack
+func (mr *MockLightsailAPIMockRecorder) CreateCloudFormationStack(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationStack", reflect.TypeOf((*MockLightsailAPI)(nil).CreateCloudFormationStack), arg0)
+}
+
+// CreateCloudFormationStackRequest mocks base method
+func (m *MockLightsailAPI) CreateCloudFormationStackRequest(arg0 *lightsail.CreateCloudFormationStackInput) (*request.Request, *lightsail.CreateCloudFormationStackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCloudFormationStackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CreateCloudFormationStackOutput)
+	return ret0, ret1
+}
+
+// CreateCloudFormationStackRequest indicates an expected call of CreateCloudFormationStackRequest
+func (mr *MockLightsailAPIMockRecorder) CreateCloudFormationStackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationStackRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CreateCloudFormationStackRequest), arg0)
+}
+
+// CreateCloudFormationStackWithContext mocks base method
+func (m *MockLightsailAPI) CreateCloudFormationStackWithContext(arg0 aws.Context, arg1 *lightsail.CreateCloudFormationStackInput, arg2 ...request.Option) (*lightsail.CreateCloudFormationStackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCloudFormationStackWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CreateCloudFormationStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCloudFormationStackWithContext indicates an expected call of CreateCloudFormationStackWithContext
+func (mr *MockLightsailAPIMockRecorder) CreateCloudFormationStackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationStackWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateCloudFormationStackWithContext), varargs...)
+}
+
 // CreateDisk mocks base method
 func (m *MockLightsailAPI) CreateDisk(arg0 *lightsail.CreateDiskInput) (*lightsail.CreateDiskOutput, error) {
 	m.ctrl.T.Helper()
@@ -1785,6 +1885,56 @@ func (mr *MockLightsailAPIMockRecorder) DownloadDefaultKeyPairWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DownloadDefaultKeyPairWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DownloadDefaultKeyPairWithContext), varargs...)
 }
 
+// ExportSnapshot mocks base method
+func (m *MockLightsailAPI) ExportSnapshot(arg0 *lightsail.ExportSnapshotInput) (*lightsail.ExportSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportSnapshot", arg0)
+	ret0, _ := ret[0].(*lightsail.ExportSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportSnapshot indicates an expected call of ExportSnapshot
+func (mr *MockLightsailAPIMockRecorder) ExportSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSnapshot", reflect.TypeOf((*MockLightsailAPI)(nil).ExportSnapshot), arg0)
+}
+
+// ExportSnapshotRequest mocks base method
+func (m *MockLightsailAPI) ExportSnapshotRequest(arg0 *lightsail.ExportSnapshotInput) (*request.Request, *lightsail.ExportSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.ExportSnapshotOutput)
+	return ret0, ret1
+}
+
+// ExportSnapshotRequest indicates an expected call of ExportSnapshotRequest
+func (mr *MockLightsailAPIMockRecorder) ExportSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSnapshotRequest", reflect.TypeOf((*MockLightsailAPI)(nil).ExportSnapshotRequest), arg0)
+}
+
+// ExportSnapshotWithContext mocks base method
+func (m *MockLightsailAPI) ExportSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.ExportSnapshotInput, arg2 ...request.Option) (*lightsail.ExportSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.ExportSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportSnapshotWithContext indicates an expected call of ExportSnapshotWithContext
+func (mr *MockLightsailAPIMockRecorder) ExportSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSnapshotWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).ExportSnapshotWithContext), varargs...)
+}
+
 // GetActiveNames mocks base method
 func (m *MockLightsailAPI) GetActiveNames(arg0 *lightsail.GetActiveNamesInput) (*lightsail.GetActiveNamesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1933,6 +2083,56 @@ func (mr *MockLightsailAPIMockRecorder) GetBundlesWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBundlesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetBundlesWithContext), varargs...)
+}
+
+// GetCloudFormationStackRecords mocks base method
+func (m *MockLightsailAPI) GetCloudFormationStackRecords(arg0 *lightsail.GetCloudFormationStackRecordsInput) (*lightsail.GetCloudFormationStackRecordsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCloudFormationStackRecords", arg0)
+	ret0, _ := ret[0].(*lightsail.GetCloudFormationStackRecordsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCloudFormationStackRecords indicates an expected call of GetCloudFormationStackRecords
+func (mr *MockLightsailAPIMockRecorder) GetCloudFormationStackRecords(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationStackRecords", reflect.TypeOf((*MockLightsailAPI)(nil).GetCloudFormationStackRecords), arg0)
+}
+
+// GetCloudFormationStackRecordsRequest mocks base method
+func (m *MockLightsailAPI) GetCloudFormationStackRecordsRequest(arg0 *lightsail.GetCloudFormationStackRecordsInput) (*request.Request, *lightsail.GetCloudFormationStackRecordsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCloudFormationStackRecordsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetCloudFormationStackRecordsOutput)
+	return ret0, ret1
+}
+
+// GetCloudFormationStackRecordsRequest indicates an expected call of GetCloudFormationStackRecordsRequest
+func (mr *MockLightsailAPIMockRecorder) GetCloudFormationStackRecordsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationStackRecordsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetCloudFormationStackRecordsRequest), arg0)
+}
+
+// GetCloudFormationStackRecordsWithContext mocks base method
+func (m *MockLightsailAPI) GetCloudFormationStackRecordsWithContext(arg0 aws.Context, arg1 *lightsail.GetCloudFormationStackRecordsInput, arg2 ...request.Option) (*lightsail.GetCloudFormationStackRecordsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCloudFormationStackRecordsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetCloudFormationStackRecordsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCloudFormationStackRecordsWithContext indicates an expected call of GetCloudFormationStackRecordsWithContext
+func (mr *MockLightsailAPIMockRecorder) GetCloudFormationStackRecordsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationStackRecordsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetCloudFormationStackRecordsWithContext), varargs...)
 }
 
 // GetDisk mocks base method
@@ -2233,6 +2433,56 @@ func (mr *MockLightsailAPIMockRecorder) GetDomainsWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetDomainsWithContext), varargs...)
+}
+
+// GetExportSnapshotRecords mocks base method
+func (m *MockLightsailAPI) GetExportSnapshotRecords(arg0 *lightsail.GetExportSnapshotRecordsInput) (*lightsail.GetExportSnapshotRecordsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExportSnapshotRecords", arg0)
+	ret0, _ := ret[0].(*lightsail.GetExportSnapshotRecordsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExportSnapshotRecords indicates an expected call of GetExportSnapshotRecords
+func (mr *MockLightsailAPIMockRecorder) GetExportSnapshotRecords(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExportSnapshotRecords", reflect.TypeOf((*MockLightsailAPI)(nil).GetExportSnapshotRecords), arg0)
+}
+
+// GetExportSnapshotRecordsRequest mocks base method
+func (m *MockLightsailAPI) GetExportSnapshotRecordsRequest(arg0 *lightsail.GetExportSnapshotRecordsInput) (*request.Request, *lightsail.GetExportSnapshotRecordsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExportSnapshotRecordsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetExportSnapshotRecordsOutput)
+	return ret0, ret1
+}
+
+// GetExportSnapshotRecordsRequest indicates an expected call of GetExportSnapshotRecordsRequest
+func (mr *MockLightsailAPIMockRecorder) GetExportSnapshotRecordsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExportSnapshotRecordsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetExportSnapshotRecordsRequest), arg0)
+}
+
+// GetExportSnapshotRecordsWithContext mocks base method
+func (m *MockLightsailAPI) GetExportSnapshotRecordsWithContext(arg0 aws.Context, arg1 *lightsail.GetExportSnapshotRecordsInput, arg2 ...request.Option) (*lightsail.GetExportSnapshotRecordsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetExportSnapshotRecordsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetExportSnapshotRecordsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExportSnapshotRecordsWithContext indicates an expected call of GetExportSnapshotRecordsWithContext
+func (mr *MockLightsailAPIMockRecorder) GetExportSnapshotRecordsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExportSnapshotRecordsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetExportSnapshotRecordsWithContext), varargs...)
 }
 
 // GetInstance mocks base method
@@ -4435,6 +4685,56 @@ func (mr *MockLightsailAPIMockRecorder) StopRelationalDatabaseWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRelationalDatabaseWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).StopRelationalDatabaseWithContext), varargs...)
 }
 
+// TagResource mocks base method
+func (m *MockLightsailAPI) TagResource(arg0 *lightsail.TagResourceInput) (*lightsail.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*lightsail.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockLightsailAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockLightsailAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockLightsailAPI) TagResourceRequest(arg0 *lightsail.TagResourceInput) (*request.Request, *lightsail.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockLightsailAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockLightsailAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockLightsailAPI) TagResourceWithContext(arg0 aws.Context, arg1 *lightsail.TagResourceInput, arg2 ...request.Option) (*lightsail.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockLightsailAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).TagResourceWithContext), varargs...)
+}
+
 // UnpeerVpc mocks base method
 func (m *MockLightsailAPI) UnpeerVpc(arg0 *lightsail.UnpeerVpcInput) (*lightsail.UnpeerVpcOutput, error) {
 	m.ctrl.T.Helper()
@@ -4483,6 +4783,56 @@ func (mr *MockLightsailAPIMockRecorder) UnpeerVpcWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnpeerVpcWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).UnpeerVpcWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockLightsailAPI) UntagResource(arg0 *lightsail.UntagResourceInput) (*lightsail.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*lightsail.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockLightsailAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockLightsailAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockLightsailAPI) UntagResourceRequest(arg0 *lightsail.UntagResourceInput) (*request.Request, *lightsail.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockLightsailAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockLightsailAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockLightsailAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *lightsail.UntagResourceInput, arg2 ...request.Option) (*lightsail.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockLightsailAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateDomainEntry mocks base method

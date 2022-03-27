@@ -85,6 +85,156 @@ func (mr *MockSageMakerAPIMockRecorder) AddTagsWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).AddTagsWithContext), varargs...)
 }
 
+// CreateAlgorithm mocks base method
+func (m *MockSageMakerAPI) CreateAlgorithm(arg0 *sagemaker.CreateAlgorithmInput) (*sagemaker.CreateAlgorithmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAlgorithm", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateAlgorithmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAlgorithm indicates an expected call of CreateAlgorithm
+func (mr *MockSageMakerAPIMockRecorder) CreateAlgorithm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAlgorithm", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAlgorithm), arg0)
+}
+
+// CreateAlgorithmRequest mocks base method
+func (m *MockSageMakerAPI) CreateAlgorithmRequest(arg0 *sagemaker.CreateAlgorithmInput) (*request.Request, *sagemaker.CreateAlgorithmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAlgorithmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateAlgorithmOutput)
+	return ret0, ret1
+}
+
+// CreateAlgorithmRequest indicates an expected call of CreateAlgorithmRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateAlgorithmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAlgorithmRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAlgorithmRequest), arg0)
+}
+
+// CreateAlgorithmWithContext mocks base method
+func (m *MockSageMakerAPI) CreateAlgorithmWithContext(arg0 aws.Context, arg1 *sagemaker.CreateAlgorithmInput, arg2 ...request.Option) (*sagemaker.CreateAlgorithmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAlgorithmWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateAlgorithmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAlgorithmWithContext indicates an expected call of CreateAlgorithmWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateAlgorithmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAlgorithmWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAlgorithmWithContext), varargs...)
+}
+
+// CreateCodeRepository mocks base method
+func (m *MockSageMakerAPI) CreateCodeRepository(arg0 *sagemaker.CreateCodeRepositoryInput) (*sagemaker.CreateCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCodeRepository", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCodeRepository indicates an expected call of CreateCodeRepository
+func (mr *MockSageMakerAPIMockRecorder) CreateCodeRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeRepository", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateCodeRepository), arg0)
+}
+
+// CreateCodeRepositoryRequest mocks base method
+func (m *MockSageMakerAPI) CreateCodeRepositoryRequest(arg0 *sagemaker.CreateCodeRepositoryInput) (*request.Request, *sagemaker.CreateCodeRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCodeRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateCodeRepositoryOutput)
+	return ret0, ret1
+}
+
+// CreateCodeRepositoryRequest indicates an expected call of CreateCodeRepositoryRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateCodeRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeRepositoryRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateCodeRepositoryRequest), arg0)
+}
+
+// CreateCodeRepositoryWithContext mocks base method
+func (m *MockSageMakerAPI) CreateCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.CreateCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.CreateCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCodeRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCodeRepositoryWithContext indicates an expected call of CreateCodeRepositoryWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateCodeRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeRepositoryWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateCodeRepositoryWithContext), varargs...)
+}
+
+// CreateCompilationJob mocks base method
+func (m *MockSageMakerAPI) CreateCompilationJob(arg0 *sagemaker.CreateCompilationJobInput) (*sagemaker.CreateCompilationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCompilationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateCompilationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCompilationJob indicates an expected call of CreateCompilationJob
+func (mr *MockSageMakerAPIMockRecorder) CreateCompilationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCompilationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateCompilationJob), arg0)
+}
+
+// CreateCompilationJobRequest mocks base method
+func (m *MockSageMakerAPI) CreateCompilationJobRequest(arg0 *sagemaker.CreateCompilationJobInput) (*request.Request, *sagemaker.CreateCompilationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCompilationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateCompilationJobOutput)
+	return ret0, ret1
+}
+
+// CreateCompilationJobRequest indicates an expected call of CreateCompilationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateCompilationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCompilationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateCompilationJobRequest), arg0)
+}
+
+// CreateCompilationJobWithContext mocks base method
+func (m *MockSageMakerAPI) CreateCompilationJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateCompilationJobInput, arg2 ...request.Option) (*sagemaker.CreateCompilationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCompilationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateCompilationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCompilationJobWithContext indicates an expected call of CreateCompilationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateCompilationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCompilationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateCompilationJobWithContext), varargs...)
+}
+
 // CreateEndpoint mocks base method
 func (m *MockSageMakerAPI) CreateEndpoint(arg0 *sagemaker.CreateEndpointInput) (*sagemaker.CreateEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +385,56 @@ func (mr *MockSageMakerAPIMockRecorder) CreateHyperParameterTuningJobWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHyperParameterTuningJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateHyperParameterTuningJobWithContext), varargs...)
 }
 
+// CreateLabelingJob mocks base method
+func (m *MockSageMakerAPI) CreateLabelingJob(arg0 *sagemaker.CreateLabelingJobInput) (*sagemaker.CreateLabelingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLabelingJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateLabelingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLabelingJob indicates an expected call of CreateLabelingJob
+func (mr *MockSageMakerAPIMockRecorder) CreateLabelingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelingJob", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateLabelingJob), arg0)
+}
+
+// CreateLabelingJobRequest mocks base method
+func (m *MockSageMakerAPI) CreateLabelingJobRequest(arg0 *sagemaker.CreateLabelingJobInput) (*request.Request, *sagemaker.CreateLabelingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLabelingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateLabelingJobOutput)
+	return ret0, ret1
+}
+
+// CreateLabelingJobRequest indicates an expected call of CreateLabelingJobRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateLabelingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelingJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateLabelingJobRequest), arg0)
+}
+
+// CreateLabelingJobWithContext mocks base method
+func (m *MockSageMakerAPI) CreateLabelingJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateLabelingJobInput, arg2 ...request.Option) (*sagemaker.CreateLabelingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLabelingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateLabelingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLabelingJobWithContext indicates an expected call of CreateLabelingJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateLabelingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelingJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateLabelingJobWithContext), varargs...)
+}
+
 // CreateModel mocks base method
 func (m *MockSageMakerAPI) CreateModel(arg0 *sagemaker.CreateModelInput) (*sagemaker.CreateModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -248,6 +448,56 @@ func (m *MockSageMakerAPI) CreateModel(arg0 *sagemaker.CreateModelInput) (*sagem
 func (mr *MockSageMakerAPIMockRecorder) CreateModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModel", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateModel), arg0)
+}
+
+// CreateModelPackage mocks base method
+func (m *MockSageMakerAPI) CreateModelPackage(arg0 *sagemaker.CreateModelPackageInput) (*sagemaker.CreateModelPackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateModelPackage", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateModelPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateModelPackage indicates an expected call of CreateModelPackage
+func (mr *MockSageMakerAPIMockRecorder) CreateModelPackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelPackage", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateModelPackage), arg0)
+}
+
+// CreateModelPackageRequest mocks base method
+func (m *MockSageMakerAPI) CreateModelPackageRequest(arg0 *sagemaker.CreateModelPackageInput) (*request.Request, *sagemaker.CreateModelPackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateModelPackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateModelPackageOutput)
+	return ret0, ret1
+}
+
+// CreateModelPackageRequest indicates an expected call of CreateModelPackageRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateModelPackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelPackageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateModelPackageRequest), arg0)
+}
+
+// CreateModelPackageWithContext mocks base method
+func (m *MockSageMakerAPI) CreateModelPackageWithContext(arg0 aws.Context, arg1 *sagemaker.CreateModelPackageInput, arg2 ...request.Option) (*sagemaker.CreateModelPackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateModelPackageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateModelPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateModelPackageWithContext indicates an expected call of CreateModelPackageWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateModelPackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelPackageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateModelPackageWithContext), varargs...)
 }
 
 // CreateModelRequest mocks base method
@@ -535,6 +785,156 @@ func (mr *MockSageMakerAPIMockRecorder) CreateTransformJobWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTransformJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateTransformJobWithContext), varargs...)
 }
 
+// CreateWorkteam mocks base method
+func (m *MockSageMakerAPI) CreateWorkteam(arg0 *sagemaker.CreateWorkteamInput) (*sagemaker.CreateWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkteam", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkteam indicates an expected call of CreateWorkteam
+func (mr *MockSageMakerAPIMockRecorder) CreateWorkteam(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkteam", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateWorkteam), arg0)
+}
+
+// CreateWorkteamRequest mocks base method
+func (m *MockSageMakerAPI) CreateWorkteamRequest(arg0 *sagemaker.CreateWorkteamInput) (*request.Request, *sagemaker.CreateWorkteamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkteamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateWorkteamOutput)
+	return ret0, ret1
+}
+
+// CreateWorkteamRequest indicates an expected call of CreateWorkteamRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateWorkteamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkteamRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateWorkteamRequest), arg0)
+}
+
+// CreateWorkteamWithContext mocks base method
+func (m *MockSageMakerAPI) CreateWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.CreateWorkteamInput, arg2 ...request.Option) (*sagemaker.CreateWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkteamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkteamWithContext indicates an expected call of CreateWorkteamWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateWorkteamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkteamWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateWorkteamWithContext), varargs...)
+}
+
+// DeleteAlgorithm mocks base method
+func (m *MockSageMakerAPI) DeleteAlgorithm(arg0 *sagemaker.DeleteAlgorithmInput) (*sagemaker.DeleteAlgorithmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAlgorithm", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteAlgorithmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAlgorithm indicates an expected call of DeleteAlgorithm
+func (mr *MockSageMakerAPIMockRecorder) DeleteAlgorithm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlgorithm", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteAlgorithm), arg0)
+}
+
+// DeleteAlgorithmRequest mocks base method
+func (m *MockSageMakerAPI) DeleteAlgorithmRequest(arg0 *sagemaker.DeleteAlgorithmInput) (*request.Request, *sagemaker.DeleteAlgorithmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAlgorithmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteAlgorithmOutput)
+	return ret0, ret1
+}
+
+// DeleteAlgorithmRequest indicates an expected call of DeleteAlgorithmRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteAlgorithmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlgorithmRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteAlgorithmRequest), arg0)
+}
+
+// DeleteAlgorithmWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteAlgorithmWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteAlgorithmInput, arg2 ...request.Option) (*sagemaker.DeleteAlgorithmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAlgorithmWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteAlgorithmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAlgorithmWithContext indicates an expected call of DeleteAlgorithmWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteAlgorithmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlgorithmWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteAlgorithmWithContext), varargs...)
+}
+
+// DeleteCodeRepository mocks base method
+func (m *MockSageMakerAPI) DeleteCodeRepository(arg0 *sagemaker.DeleteCodeRepositoryInput) (*sagemaker.DeleteCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCodeRepository", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCodeRepository indicates an expected call of DeleteCodeRepository
+func (mr *MockSageMakerAPIMockRecorder) DeleteCodeRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCodeRepository", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteCodeRepository), arg0)
+}
+
+// DeleteCodeRepositoryRequest mocks base method
+func (m *MockSageMakerAPI) DeleteCodeRepositoryRequest(arg0 *sagemaker.DeleteCodeRepositoryInput) (*request.Request, *sagemaker.DeleteCodeRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCodeRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteCodeRepositoryOutput)
+	return ret0, ret1
+}
+
+// DeleteCodeRepositoryRequest indicates an expected call of DeleteCodeRepositoryRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteCodeRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCodeRepositoryRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteCodeRepositoryRequest), arg0)
+}
+
+// DeleteCodeRepositoryWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.DeleteCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCodeRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCodeRepositoryWithContext indicates an expected call of DeleteCodeRepositoryWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteCodeRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCodeRepositoryWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteCodeRepositoryWithContext), varargs...)
+}
+
 // DeleteEndpoint mocks base method
 func (m *MockSageMakerAPI) DeleteEndpoint(arg0 *sagemaker.DeleteEndpointInput) (*sagemaker.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -648,6 +1048,56 @@ func (m *MockSageMakerAPI) DeleteModel(arg0 *sagemaker.DeleteModelInput) (*sagem
 func (mr *MockSageMakerAPIMockRecorder) DeleteModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModel", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteModel), arg0)
+}
+
+// DeleteModelPackage mocks base method
+func (m *MockSageMakerAPI) DeleteModelPackage(arg0 *sagemaker.DeleteModelPackageInput) (*sagemaker.DeleteModelPackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteModelPackage", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteModelPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteModelPackage indicates an expected call of DeleteModelPackage
+func (mr *MockSageMakerAPIMockRecorder) DeleteModelPackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelPackage", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteModelPackage), arg0)
+}
+
+// DeleteModelPackageRequest mocks base method
+func (m *MockSageMakerAPI) DeleteModelPackageRequest(arg0 *sagemaker.DeleteModelPackageInput) (*request.Request, *sagemaker.DeleteModelPackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteModelPackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteModelPackageOutput)
+	return ret0, ret1
+}
+
+// DeleteModelPackageRequest indicates an expected call of DeleteModelPackageRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteModelPackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelPackageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteModelPackageRequest), arg0)
+}
+
+// DeleteModelPackageWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteModelPackageWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteModelPackageInput, arg2 ...request.Option) (*sagemaker.DeleteModelPackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteModelPackageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteModelPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteModelPackageWithContext indicates an expected call of DeleteModelPackageWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteModelPackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelPackageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteModelPackageWithContext), varargs...)
 }
 
 // DeleteModelRequest mocks base method
@@ -835,6 +1285,206 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
+// DeleteWorkteam mocks base method
+func (m *MockSageMakerAPI) DeleteWorkteam(arg0 *sagemaker.DeleteWorkteamInput) (*sagemaker.DeleteWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkteam", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkteam indicates an expected call of DeleteWorkteam
+func (mr *MockSageMakerAPIMockRecorder) DeleteWorkteam(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkteam", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteWorkteam), arg0)
+}
+
+// DeleteWorkteamRequest mocks base method
+func (m *MockSageMakerAPI) DeleteWorkteamRequest(arg0 *sagemaker.DeleteWorkteamInput) (*request.Request, *sagemaker.DeleteWorkteamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkteamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteWorkteamOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkteamRequest indicates an expected call of DeleteWorkteamRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteWorkteamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkteamRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteWorkteamRequest), arg0)
+}
+
+// DeleteWorkteamWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteWorkteamInput, arg2 ...request.Option) (*sagemaker.DeleteWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkteamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkteamWithContext indicates an expected call of DeleteWorkteamWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteWorkteamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkteamWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteWorkteamWithContext), varargs...)
+}
+
+// DescribeAlgorithm mocks base method
+func (m *MockSageMakerAPI) DescribeAlgorithm(arg0 *sagemaker.DescribeAlgorithmInput) (*sagemaker.DescribeAlgorithmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAlgorithm", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeAlgorithmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAlgorithm indicates an expected call of DescribeAlgorithm
+func (mr *MockSageMakerAPIMockRecorder) DescribeAlgorithm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAlgorithm", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAlgorithm), arg0)
+}
+
+// DescribeAlgorithmRequest mocks base method
+func (m *MockSageMakerAPI) DescribeAlgorithmRequest(arg0 *sagemaker.DescribeAlgorithmInput) (*request.Request, *sagemaker.DescribeAlgorithmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAlgorithmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeAlgorithmOutput)
+	return ret0, ret1
+}
+
+// DescribeAlgorithmRequest indicates an expected call of DescribeAlgorithmRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeAlgorithmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAlgorithmRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAlgorithmRequest), arg0)
+}
+
+// DescribeAlgorithmWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeAlgorithmWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeAlgorithmInput, arg2 ...request.Option) (*sagemaker.DescribeAlgorithmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAlgorithmWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeAlgorithmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAlgorithmWithContext indicates an expected call of DescribeAlgorithmWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeAlgorithmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAlgorithmWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAlgorithmWithContext), varargs...)
+}
+
+// DescribeCodeRepository mocks base method
+func (m *MockSageMakerAPI) DescribeCodeRepository(arg0 *sagemaker.DescribeCodeRepositoryInput) (*sagemaker.DescribeCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCodeRepository", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCodeRepository indicates an expected call of DescribeCodeRepository
+func (mr *MockSageMakerAPIMockRecorder) DescribeCodeRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCodeRepository", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeCodeRepository), arg0)
+}
+
+// DescribeCodeRepositoryRequest mocks base method
+func (m *MockSageMakerAPI) DescribeCodeRepositoryRequest(arg0 *sagemaker.DescribeCodeRepositoryInput) (*request.Request, *sagemaker.DescribeCodeRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCodeRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeCodeRepositoryOutput)
+	return ret0, ret1
+}
+
+// DescribeCodeRepositoryRequest indicates an expected call of DescribeCodeRepositoryRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeCodeRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCodeRepositoryRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeCodeRepositoryRequest), arg0)
+}
+
+// DescribeCodeRepositoryWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.DescribeCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCodeRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCodeRepositoryWithContext indicates an expected call of DescribeCodeRepositoryWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeCodeRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCodeRepositoryWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeCodeRepositoryWithContext), varargs...)
+}
+
+// DescribeCompilationJob mocks base method
+func (m *MockSageMakerAPI) DescribeCompilationJob(arg0 *sagemaker.DescribeCompilationJobInput) (*sagemaker.DescribeCompilationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCompilationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeCompilationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCompilationJob indicates an expected call of DescribeCompilationJob
+func (mr *MockSageMakerAPIMockRecorder) DescribeCompilationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCompilationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeCompilationJob), arg0)
+}
+
+// DescribeCompilationJobRequest mocks base method
+func (m *MockSageMakerAPI) DescribeCompilationJobRequest(arg0 *sagemaker.DescribeCompilationJobInput) (*request.Request, *sagemaker.DescribeCompilationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCompilationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeCompilationJobOutput)
+	return ret0, ret1
+}
+
+// DescribeCompilationJobRequest indicates an expected call of DescribeCompilationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeCompilationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCompilationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeCompilationJobRequest), arg0)
+}
+
+// DescribeCompilationJobWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeCompilationJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeCompilationJobInput, arg2 ...request.Option) (*sagemaker.DescribeCompilationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCompilationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeCompilationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCompilationJobWithContext indicates an expected call of DescribeCompilationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeCompilationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCompilationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeCompilationJobWithContext), varargs...)
+}
+
 // DescribeEndpoint mocks base method
 func (m *MockSageMakerAPI) DescribeEndpoint(arg0 *sagemaker.DescribeEndpointInput) (*sagemaker.DescribeEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -985,6 +1635,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeHyperParameterTuningJobWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHyperParameterTuningJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeHyperParameterTuningJobWithContext), varargs...)
 }
 
+// DescribeLabelingJob mocks base method
+func (m *MockSageMakerAPI) DescribeLabelingJob(arg0 *sagemaker.DescribeLabelingJobInput) (*sagemaker.DescribeLabelingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLabelingJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeLabelingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLabelingJob indicates an expected call of DescribeLabelingJob
+func (mr *MockSageMakerAPIMockRecorder) DescribeLabelingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelingJob", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeLabelingJob), arg0)
+}
+
+// DescribeLabelingJobRequest mocks base method
+func (m *MockSageMakerAPI) DescribeLabelingJobRequest(arg0 *sagemaker.DescribeLabelingJobInput) (*request.Request, *sagemaker.DescribeLabelingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLabelingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeLabelingJobOutput)
+	return ret0, ret1
+}
+
+// DescribeLabelingJobRequest indicates an expected call of DescribeLabelingJobRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeLabelingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelingJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeLabelingJobRequest), arg0)
+}
+
+// DescribeLabelingJobWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeLabelingJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeLabelingJobInput, arg2 ...request.Option) (*sagemaker.DescribeLabelingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLabelingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeLabelingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLabelingJobWithContext indicates an expected call of DescribeLabelingJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeLabelingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelingJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeLabelingJobWithContext), varargs...)
+}
+
 // DescribeModel mocks base method
 func (m *MockSageMakerAPI) DescribeModel(arg0 *sagemaker.DescribeModelInput) (*sagemaker.DescribeModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -998,6 +1698,56 @@ func (m *MockSageMakerAPI) DescribeModel(arg0 *sagemaker.DescribeModelInput) (*s
 func (mr *MockSageMakerAPIMockRecorder) DescribeModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModel", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeModel), arg0)
+}
+
+// DescribeModelPackage mocks base method
+func (m *MockSageMakerAPI) DescribeModelPackage(arg0 *sagemaker.DescribeModelPackageInput) (*sagemaker.DescribeModelPackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeModelPackage", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeModelPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeModelPackage indicates an expected call of DescribeModelPackage
+func (mr *MockSageMakerAPIMockRecorder) DescribeModelPackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelPackage", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeModelPackage), arg0)
+}
+
+// DescribeModelPackageRequest mocks base method
+func (m *MockSageMakerAPI) DescribeModelPackageRequest(arg0 *sagemaker.DescribeModelPackageInput) (*request.Request, *sagemaker.DescribeModelPackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeModelPackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeModelPackageOutput)
+	return ret0, ret1
+}
+
+// DescribeModelPackageRequest indicates an expected call of DescribeModelPackageRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeModelPackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelPackageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeModelPackageRequest), arg0)
+}
+
+// DescribeModelPackageWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeModelPackageWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeModelPackageInput, arg2 ...request.Option) (*sagemaker.DescribeModelPackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeModelPackageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeModelPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeModelPackageWithContext indicates an expected call of DescribeModelPackageWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeModelPackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelPackageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeModelPackageWithContext), varargs...)
 }
 
 // DescribeModelRequest mocks base method
@@ -1135,6 +1885,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeNotebookInstanceWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeNotebookInstanceWithContext), varargs...)
 }
 
+// DescribeSubscribedWorkteam mocks base method
+func (m *MockSageMakerAPI) DescribeSubscribedWorkteam(arg0 *sagemaker.DescribeSubscribedWorkteamInput) (*sagemaker.DescribeSubscribedWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSubscribedWorkteam", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeSubscribedWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSubscribedWorkteam indicates an expected call of DescribeSubscribedWorkteam
+func (mr *MockSageMakerAPIMockRecorder) DescribeSubscribedWorkteam(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubscribedWorkteam", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeSubscribedWorkteam), arg0)
+}
+
+// DescribeSubscribedWorkteamRequest mocks base method
+func (m *MockSageMakerAPI) DescribeSubscribedWorkteamRequest(arg0 *sagemaker.DescribeSubscribedWorkteamInput) (*request.Request, *sagemaker.DescribeSubscribedWorkteamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSubscribedWorkteamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeSubscribedWorkteamOutput)
+	return ret0, ret1
+}
+
+// DescribeSubscribedWorkteamRequest indicates an expected call of DescribeSubscribedWorkteamRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeSubscribedWorkteamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubscribedWorkteamRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeSubscribedWorkteamRequest), arg0)
+}
+
+// DescribeSubscribedWorkteamWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeSubscribedWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeSubscribedWorkteamInput, arg2 ...request.Option) (*sagemaker.DescribeSubscribedWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSubscribedWorkteamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeSubscribedWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSubscribedWorkteamWithContext indicates an expected call of DescribeSubscribedWorkteamWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeSubscribedWorkteamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubscribedWorkteamWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeSubscribedWorkteamWithContext), varargs...)
+}
+
 // DescribeTrainingJob mocks base method
 func (m *MockSageMakerAPI) DescribeTrainingJob(arg0 *sagemaker.DescribeTrainingJobInput) (*sagemaker.DescribeTrainingJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +2033,289 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeTransformJobWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTransformJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeTransformJobWithContext), varargs...)
+}
+
+// DescribeWorkteam mocks base method
+func (m *MockSageMakerAPI) DescribeWorkteam(arg0 *sagemaker.DescribeWorkteamInput) (*sagemaker.DescribeWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkteam", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkteam indicates an expected call of DescribeWorkteam
+func (mr *MockSageMakerAPIMockRecorder) DescribeWorkteam(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkteam", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeWorkteam), arg0)
+}
+
+// DescribeWorkteamRequest mocks base method
+func (m *MockSageMakerAPI) DescribeWorkteamRequest(arg0 *sagemaker.DescribeWorkteamInput) (*request.Request, *sagemaker.DescribeWorkteamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkteamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeWorkteamOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkteamRequest indicates an expected call of DescribeWorkteamRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeWorkteamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkteamRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeWorkteamRequest), arg0)
+}
+
+// DescribeWorkteamWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeWorkteamInput, arg2 ...request.Option) (*sagemaker.DescribeWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkteamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkteamWithContext indicates an expected call of DescribeWorkteamWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeWorkteamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkteamWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeWorkteamWithContext), varargs...)
+}
+
+// GetSearchSuggestions mocks base method
+func (m *MockSageMakerAPI) GetSearchSuggestions(arg0 *sagemaker.GetSearchSuggestionsInput) (*sagemaker.GetSearchSuggestionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSearchSuggestions", arg0)
+	ret0, _ := ret[0].(*sagemaker.GetSearchSuggestionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSearchSuggestions indicates an expected call of GetSearchSuggestions
+func (mr *MockSageMakerAPIMockRecorder) GetSearchSuggestions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSearchSuggestions", reflect.TypeOf((*MockSageMakerAPI)(nil).GetSearchSuggestions), arg0)
+}
+
+// GetSearchSuggestionsRequest mocks base method
+func (m *MockSageMakerAPI) GetSearchSuggestionsRequest(arg0 *sagemaker.GetSearchSuggestionsInput) (*request.Request, *sagemaker.GetSearchSuggestionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSearchSuggestionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.GetSearchSuggestionsOutput)
+	return ret0, ret1
+}
+
+// GetSearchSuggestionsRequest indicates an expected call of GetSearchSuggestionsRequest
+func (mr *MockSageMakerAPIMockRecorder) GetSearchSuggestionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSearchSuggestionsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).GetSearchSuggestionsRequest), arg0)
+}
+
+// GetSearchSuggestionsWithContext mocks base method
+func (m *MockSageMakerAPI) GetSearchSuggestionsWithContext(arg0 aws.Context, arg1 *sagemaker.GetSearchSuggestionsInput, arg2 ...request.Option) (*sagemaker.GetSearchSuggestionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSearchSuggestionsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.GetSearchSuggestionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSearchSuggestionsWithContext indicates an expected call of GetSearchSuggestionsWithContext
+func (mr *MockSageMakerAPIMockRecorder) GetSearchSuggestionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSearchSuggestionsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).GetSearchSuggestionsWithContext), varargs...)
+}
+
+// ListAlgorithms mocks base method
+func (m *MockSageMakerAPI) ListAlgorithms(arg0 *sagemaker.ListAlgorithmsInput) (*sagemaker.ListAlgorithmsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAlgorithms", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListAlgorithmsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAlgorithms indicates an expected call of ListAlgorithms
+func (mr *MockSageMakerAPIMockRecorder) ListAlgorithms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAlgorithms", reflect.TypeOf((*MockSageMakerAPI)(nil).ListAlgorithms), arg0)
+}
+
+// ListAlgorithmsRequest mocks base method
+func (m *MockSageMakerAPI) ListAlgorithmsRequest(arg0 *sagemaker.ListAlgorithmsInput) (*request.Request, *sagemaker.ListAlgorithmsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAlgorithmsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListAlgorithmsOutput)
+	return ret0, ret1
+}
+
+// ListAlgorithmsRequest indicates an expected call of ListAlgorithmsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListAlgorithmsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAlgorithmsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListAlgorithmsRequest), arg0)
+}
+
+// ListAlgorithmsWithContext mocks base method
+func (m *MockSageMakerAPI) ListAlgorithmsWithContext(arg0 aws.Context, arg1 *sagemaker.ListAlgorithmsInput, arg2 ...request.Option) (*sagemaker.ListAlgorithmsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAlgorithmsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListAlgorithmsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAlgorithmsWithContext indicates an expected call of ListAlgorithmsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListAlgorithmsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAlgorithmsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListAlgorithmsWithContext), varargs...)
+}
+
+// ListCodeRepositories mocks base method
+func (m *MockSageMakerAPI) ListCodeRepositories(arg0 *sagemaker.ListCodeRepositoriesInput) (*sagemaker.ListCodeRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodeRepositories", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListCodeRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCodeRepositories indicates an expected call of ListCodeRepositories
+func (mr *MockSageMakerAPIMockRecorder) ListCodeRepositories(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeRepositories", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCodeRepositories), arg0)
+}
+
+// ListCodeRepositoriesRequest mocks base method
+func (m *MockSageMakerAPI) ListCodeRepositoriesRequest(arg0 *sagemaker.ListCodeRepositoriesInput) (*request.Request, *sagemaker.ListCodeRepositoriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodeRepositoriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListCodeRepositoriesOutput)
+	return ret0, ret1
+}
+
+// ListCodeRepositoriesRequest indicates an expected call of ListCodeRepositoriesRequest
+func (mr *MockSageMakerAPIMockRecorder) ListCodeRepositoriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeRepositoriesRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCodeRepositoriesRequest), arg0)
+}
+
+// ListCodeRepositoriesWithContext mocks base method
+func (m *MockSageMakerAPI) ListCodeRepositoriesWithContext(arg0 aws.Context, arg1 *sagemaker.ListCodeRepositoriesInput, arg2 ...request.Option) (*sagemaker.ListCodeRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCodeRepositoriesWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListCodeRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCodeRepositoriesWithContext indicates an expected call of ListCodeRepositoriesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListCodeRepositoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeRepositoriesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCodeRepositoriesWithContext), varargs...)
+}
+
+// ListCompilationJobs mocks base method
+func (m *MockSageMakerAPI) ListCompilationJobs(arg0 *sagemaker.ListCompilationJobsInput) (*sagemaker.ListCompilationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCompilationJobs", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListCompilationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCompilationJobs indicates an expected call of ListCompilationJobs
+func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompilationJobs", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCompilationJobs), arg0)
+}
+
+// ListCompilationJobsPages mocks base method
+func (m *MockSageMakerAPI) ListCompilationJobsPages(arg0 *sagemaker.ListCompilationJobsInput, arg1 func(*sagemaker.ListCompilationJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCompilationJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCompilationJobsPages indicates an expected call of ListCompilationJobsPages
+func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompilationJobsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCompilationJobsPages), arg0, arg1)
+}
+
+// ListCompilationJobsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListCompilationJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListCompilationJobsInput, arg2 func(*sagemaker.ListCompilationJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCompilationJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCompilationJobsPagesWithContext indicates an expected call of ListCompilationJobsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompilationJobsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCompilationJobsPagesWithContext), varargs...)
+}
+
+// ListCompilationJobsRequest mocks base method
+func (m *MockSageMakerAPI) ListCompilationJobsRequest(arg0 *sagemaker.ListCompilationJobsInput) (*request.Request, *sagemaker.ListCompilationJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCompilationJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListCompilationJobsOutput)
+	return ret0, ret1
+}
+
+// ListCompilationJobsRequest indicates an expected call of ListCompilationJobsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompilationJobsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCompilationJobsRequest), arg0)
+}
+
+// ListCompilationJobsWithContext mocks base method
+func (m *MockSageMakerAPI) ListCompilationJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListCompilationJobsInput, arg2 ...request.Option) (*sagemaker.ListCompilationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCompilationJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListCompilationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCompilationJobsWithContext indicates an expected call of ListCompilationJobsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompilationJobsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListCompilationJobsWithContext), varargs...)
 }
 
 // ListEndpointConfigs mocks base method
@@ -1484,6 +2567,222 @@ func (mr *MockSageMakerAPIMockRecorder) ListHyperParameterTuningJobsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHyperParameterTuningJobsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListHyperParameterTuningJobsWithContext), varargs...)
 }
 
+// ListLabelingJobs mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobs(arg0 *sagemaker.ListLabelingJobsInput) (*sagemaker.ListLabelingJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelingJobs", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListLabelingJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelingJobs indicates an expected call of ListLabelingJobs
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobs", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobs), arg0)
+}
+
+// ListLabelingJobsForWorkteam mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteam(arg0 *sagemaker.ListLabelingJobsForWorkteamInput) (*sagemaker.ListLabelingJobsForWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelingJobsForWorkteam", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListLabelingJobsForWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelingJobsForWorkteam indicates an expected call of ListLabelingJobsForWorkteam
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteam(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsForWorkteam", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsForWorkteam), arg0)
+}
+
+// ListLabelingJobsForWorkteamPages mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamPages(arg0 *sagemaker.ListLabelingJobsForWorkteamInput, arg1 func(*sagemaker.ListLabelingJobsForWorkteamOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelingJobsForWorkteamPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelingJobsForWorkteamPages indicates an expected call of ListLabelingJobsForWorkteamPages
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteamPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsForWorkteamPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsForWorkteamPages), arg0, arg1)
+}
+
+// ListLabelingJobsForWorkteamPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsForWorkteamInput, arg2 func(*sagemaker.ListLabelingJobsForWorkteamOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelingJobsForWorkteamPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelingJobsForWorkteamPagesWithContext indicates an expected call of ListLabelingJobsForWorkteamPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteamPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsForWorkteamPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsForWorkteamPagesWithContext), varargs...)
+}
+
+// ListLabelingJobsForWorkteamRequest mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamRequest(arg0 *sagemaker.ListLabelingJobsForWorkteamInput) (*request.Request, *sagemaker.ListLabelingJobsForWorkteamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelingJobsForWorkteamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListLabelingJobsForWorkteamOutput)
+	return ret0, ret1
+}
+
+// ListLabelingJobsForWorkteamRequest indicates an expected call of ListLabelingJobsForWorkteamRequest
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsForWorkteamRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsForWorkteamRequest), arg0)
+}
+
+// ListLabelingJobsForWorkteamWithContext mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsForWorkteamInput, arg2 ...request.Option) (*sagemaker.ListLabelingJobsForWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelingJobsForWorkteamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListLabelingJobsForWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelingJobsForWorkteamWithContext indicates an expected call of ListLabelingJobsForWorkteamWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsForWorkteamWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsForWorkteamWithContext), varargs...)
+}
+
+// ListLabelingJobsPages mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsPages(arg0 *sagemaker.ListLabelingJobsInput, arg1 func(*sagemaker.ListLabelingJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelingJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelingJobsPages indicates an expected call of ListLabelingJobsPages
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsPages), arg0, arg1)
+}
+
+// ListLabelingJobsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsInput, arg2 func(*sagemaker.ListLabelingJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelingJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelingJobsPagesWithContext indicates an expected call of ListLabelingJobsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsPagesWithContext), varargs...)
+}
+
+// ListLabelingJobsRequest mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsRequest(arg0 *sagemaker.ListLabelingJobsInput) (*request.Request, *sagemaker.ListLabelingJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelingJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListLabelingJobsOutput)
+	return ret0, ret1
+}
+
+// ListLabelingJobsRequest indicates an expected call of ListLabelingJobsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsRequest), arg0)
+}
+
+// ListLabelingJobsWithContext mocks base method
+func (m *MockSageMakerAPI) ListLabelingJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsInput, arg2 ...request.Option) (*sagemaker.ListLabelingJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelingJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListLabelingJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelingJobsWithContext indicates an expected call of ListLabelingJobsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelingJobsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListLabelingJobsWithContext), varargs...)
+}
+
+// ListModelPackages mocks base method
+func (m *MockSageMakerAPI) ListModelPackages(arg0 *sagemaker.ListModelPackagesInput) (*sagemaker.ListModelPackagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelPackages", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListModelPackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListModelPackages indicates an expected call of ListModelPackages
+func (mr *MockSageMakerAPIMockRecorder) ListModelPackages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListModelPackages), arg0)
+}
+
+// ListModelPackagesRequest mocks base method
+func (m *MockSageMakerAPI) ListModelPackagesRequest(arg0 *sagemaker.ListModelPackagesInput) (*request.Request, *sagemaker.ListModelPackagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelPackagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListModelPackagesOutput)
+	return ret0, ret1
+}
+
+// ListModelPackagesRequest indicates an expected call of ListModelPackagesRequest
+func (mr *MockSageMakerAPIMockRecorder) ListModelPackagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagesRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListModelPackagesRequest), arg0)
+}
+
+// ListModelPackagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListModelPackagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListModelPackagesInput, arg2 ...request.Option) (*sagemaker.ListModelPackagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListModelPackagesWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListModelPackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListModelPackagesWithContext indicates an expected call of ListModelPackagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListModelPackagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListModelPackagesWithContext), varargs...)
+}
+
 // ListModels mocks base method
 func (m *MockSageMakerAPI) ListModels(arg0 *sagemaker.ListModelsInput) (*sagemaker.ListModelsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1731,6 +3030,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListNotebookInstancesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookInstancesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListNotebookInstancesWithContext), varargs...)
+}
+
+// ListSubscribedWorkteams mocks base method
+func (m *MockSageMakerAPI) ListSubscribedWorkteams(arg0 *sagemaker.ListSubscribedWorkteamsInput) (*sagemaker.ListSubscribedWorkteamsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSubscribedWorkteams", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListSubscribedWorkteamsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSubscribedWorkteams indicates an expected call of ListSubscribedWorkteams
+func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteams(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedWorkteams", reflect.TypeOf((*MockSageMakerAPI)(nil).ListSubscribedWorkteams), arg0)
+}
+
+// ListSubscribedWorkteamsPages mocks base method
+func (m *MockSageMakerAPI) ListSubscribedWorkteamsPages(arg0 *sagemaker.ListSubscribedWorkteamsInput, arg1 func(*sagemaker.ListSubscribedWorkteamsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSubscribedWorkteamsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSubscribedWorkteamsPages indicates an expected call of ListSubscribedWorkteamsPages
+func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteamsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedWorkteamsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListSubscribedWorkteamsPages), arg0, arg1)
+}
+
+// ListSubscribedWorkteamsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListSubscribedWorkteamsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListSubscribedWorkteamsInput, arg2 func(*sagemaker.ListSubscribedWorkteamsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSubscribedWorkteamsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSubscribedWorkteamsPagesWithContext indicates an expected call of ListSubscribedWorkteamsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteamsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedWorkteamsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListSubscribedWorkteamsPagesWithContext), varargs...)
+}
+
+// ListSubscribedWorkteamsRequest mocks base method
+func (m *MockSageMakerAPI) ListSubscribedWorkteamsRequest(arg0 *sagemaker.ListSubscribedWorkteamsInput) (*request.Request, *sagemaker.ListSubscribedWorkteamsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSubscribedWorkteamsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListSubscribedWorkteamsOutput)
+	return ret0, ret1
+}
+
+// ListSubscribedWorkteamsRequest indicates an expected call of ListSubscribedWorkteamsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteamsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedWorkteamsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListSubscribedWorkteamsRequest), arg0)
+}
+
+// ListSubscribedWorkteamsWithContext mocks base method
+func (m *MockSageMakerAPI) ListSubscribedWorkteamsWithContext(arg0 aws.Context, arg1 *sagemaker.ListSubscribedWorkteamsInput, arg2 ...request.Option) (*sagemaker.ListSubscribedWorkteamsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSubscribedWorkteamsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListSubscribedWorkteamsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSubscribedWorkteamsWithContext indicates an expected call of ListSubscribedWorkteamsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteamsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribedWorkteamsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListSubscribedWorkteamsWithContext), varargs...)
 }
 
 // ListTags mocks base method
@@ -2065,6 +3447,222 @@ func (mr *MockSageMakerAPIMockRecorder) ListTransformJobsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTransformJobsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListTransformJobsWithContext), varargs...)
 }
 
+// ListWorkteams mocks base method
+func (m *MockSageMakerAPI) ListWorkteams(arg0 *sagemaker.ListWorkteamsInput) (*sagemaker.ListWorkteamsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkteams", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListWorkteamsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkteams indicates an expected call of ListWorkteams
+func (mr *MockSageMakerAPIMockRecorder) ListWorkteams(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkteams", reflect.TypeOf((*MockSageMakerAPI)(nil).ListWorkteams), arg0)
+}
+
+// ListWorkteamsPages mocks base method
+func (m *MockSageMakerAPI) ListWorkteamsPages(arg0 *sagemaker.ListWorkteamsInput, arg1 func(*sagemaker.ListWorkteamsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkteamsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkteamsPages indicates an expected call of ListWorkteamsPages
+func (mr *MockSageMakerAPIMockRecorder) ListWorkteamsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkteamsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListWorkteamsPages), arg0, arg1)
+}
+
+// ListWorkteamsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListWorkteamsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListWorkteamsInput, arg2 func(*sagemaker.ListWorkteamsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkteamsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkteamsPagesWithContext indicates an expected call of ListWorkteamsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListWorkteamsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkteamsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListWorkteamsPagesWithContext), varargs...)
+}
+
+// ListWorkteamsRequest mocks base method
+func (m *MockSageMakerAPI) ListWorkteamsRequest(arg0 *sagemaker.ListWorkteamsInput) (*request.Request, *sagemaker.ListWorkteamsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkteamsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListWorkteamsOutput)
+	return ret0, ret1
+}
+
+// ListWorkteamsRequest indicates an expected call of ListWorkteamsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListWorkteamsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkteamsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListWorkteamsRequest), arg0)
+}
+
+// ListWorkteamsWithContext mocks base method
+func (m *MockSageMakerAPI) ListWorkteamsWithContext(arg0 aws.Context, arg1 *sagemaker.ListWorkteamsInput, arg2 ...request.Option) (*sagemaker.ListWorkteamsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkteamsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListWorkteamsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkteamsWithContext indicates an expected call of ListWorkteamsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListWorkteamsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkteamsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListWorkteamsWithContext), varargs...)
+}
+
+// RenderUiTemplate mocks base method
+func (m *MockSageMakerAPI) RenderUiTemplate(arg0 *sagemaker.RenderUiTemplateInput) (*sagemaker.RenderUiTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RenderUiTemplate", arg0)
+	ret0, _ := ret[0].(*sagemaker.RenderUiTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RenderUiTemplate indicates an expected call of RenderUiTemplate
+func (mr *MockSageMakerAPIMockRecorder) RenderUiTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenderUiTemplate", reflect.TypeOf((*MockSageMakerAPI)(nil).RenderUiTemplate), arg0)
+}
+
+// RenderUiTemplateRequest mocks base method
+func (m *MockSageMakerAPI) RenderUiTemplateRequest(arg0 *sagemaker.RenderUiTemplateInput) (*request.Request, *sagemaker.RenderUiTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RenderUiTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.RenderUiTemplateOutput)
+	return ret0, ret1
+}
+
+// RenderUiTemplateRequest indicates an expected call of RenderUiTemplateRequest
+func (mr *MockSageMakerAPIMockRecorder) RenderUiTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenderUiTemplateRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).RenderUiTemplateRequest), arg0)
+}
+
+// RenderUiTemplateWithContext mocks base method
+func (m *MockSageMakerAPI) RenderUiTemplateWithContext(arg0 aws.Context, arg1 *sagemaker.RenderUiTemplateInput, arg2 ...request.Option) (*sagemaker.RenderUiTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RenderUiTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.RenderUiTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RenderUiTemplateWithContext indicates an expected call of RenderUiTemplateWithContext
+func (mr *MockSageMakerAPIMockRecorder) RenderUiTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenderUiTemplateWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).RenderUiTemplateWithContext), varargs...)
+}
+
+// Search mocks base method
+func (m *MockSageMakerAPI) Search(arg0 *sagemaker.SearchInput) (*sagemaker.SearchOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "Search", arg0)
+	ret0, _ := ret[0].(*sagemaker.SearchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// Search indicates an expected call of Search
+func (mr *MockSageMakerAPIMockRecorder) Search(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Search", reflect.TypeOf((*MockSageMakerAPI)(nil).Search), arg0)
+}
+
+// SearchPages mocks base method
+func (m *MockSageMakerAPI) SearchPages(arg0 *sagemaker.SearchInput, arg1 func(*sagemaker.SearchOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchPages indicates an expected call of SearchPages
+func (mr *MockSageMakerAPIMockRecorder) SearchPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchPages", reflect.TypeOf((*MockSageMakerAPI)(nil).SearchPages), arg0, arg1)
+}
+
+// SearchPagesWithContext mocks base method
+func (m *MockSageMakerAPI) SearchPagesWithContext(arg0 aws.Context, arg1 *sagemaker.SearchInput, arg2 func(*sagemaker.SearchOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchPagesWithContext indicates an expected call of SearchPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) SearchPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).SearchPagesWithContext), varargs...)
+}
+
+// SearchRequest mocks base method
+func (m *MockSageMakerAPI) SearchRequest(arg0 *sagemaker.SearchInput) (*request.Request, *sagemaker.SearchOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.SearchOutput)
+	return ret0, ret1
+}
+
+// SearchRequest indicates an expected call of SearchRequest
+func (mr *MockSageMakerAPIMockRecorder) SearchRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).SearchRequest), arg0)
+}
+
+// SearchWithContext mocks base method
+func (m *MockSageMakerAPI) SearchWithContext(arg0 aws.Context, arg1 *sagemaker.SearchInput, arg2 ...request.Option) (*sagemaker.SearchOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.SearchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchWithContext indicates an expected call of SearchWithContext
+func (mr *MockSageMakerAPIMockRecorder) SearchWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).SearchWithContext), varargs...)
+}
+
 // StartNotebookInstance mocks base method
 func (m *MockSageMakerAPI) StartNotebookInstance(arg0 *sagemaker.StartNotebookInstanceInput) (*sagemaker.StartNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -2115,6 +3713,56 @@ func (mr *MockSageMakerAPIMockRecorder) StartNotebookInstanceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StartNotebookInstanceWithContext), varargs...)
 }
 
+// StopCompilationJob mocks base method
+func (m *MockSageMakerAPI) StopCompilationJob(arg0 *sagemaker.StopCompilationJobInput) (*sagemaker.StopCompilationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopCompilationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.StopCompilationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopCompilationJob indicates an expected call of StopCompilationJob
+func (mr *MockSageMakerAPIMockRecorder) StopCompilationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCompilationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).StopCompilationJob), arg0)
+}
+
+// StopCompilationJobRequest mocks base method
+func (m *MockSageMakerAPI) StopCompilationJobRequest(arg0 *sagemaker.StopCompilationJobInput) (*request.Request, *sagemaker.StopCompilationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopCompilationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.StopCompilationJobOutput)
+	return ret0, ret1
+}
+
+// StopCompilationJobRequest indicates an expected call of StopCompilationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) StopCompilationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCompilationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).StopCompilationJobRequest), arg0)
+}
+
+// StopCompilationJobWithContext mocks base method
+func (m *MockSageMakerAPI) StopCompilationJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopCompilationJobInput, arg2 ...request.Option) (*sagemaker.StopCompilationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopCompilationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.StopCompilationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopCompilationJobWithContext indicates an expected call of StopCompilationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) StopCompilationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCompilationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopCompilationJobWithContext), varargs...)
+}
+
 // StopHyperParameterTuningJob mocks base method
 func (m *MockSageMakerAPI) StopHyperParameterTuningJob(arg0 *sagemaker.StopHyperParameterTuningJobInput) (*sagemaker.StopHyperParameterTuningJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -2163,6 +3811,56 @@ func (mr *MockSageMakerAPIMockRecorder) StopHyperParameterTuningJobWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopHyperParameterTuningJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopHyperParameterTuningJobWithContext), varargs...)
+}
+
+// StopLabelingJob mocks base method
+func (m *MockSageMakerAPI) StopLabelingJob(arg0 *sagemaker.StopLabelingJobInput) (*sagemaker.StopLabelingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopLabelingJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.StopLabelingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopLabelingJob indicates an expected call of StopLabelingJob
+func (mr *MockSageMakerAPIMockRecorder) StopLabelingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopLabelingJob", reflect.TypeOf((*MockSageMakerAPI)(nil).StopLabelingJob), arg0)
+}
+
+// StopLabelingJobRequest mocks base method
+func (m *MockSageMakerAPI) StopLabelingJobRequest(arg0 *sagemaker.StopLabelingJobInput) (*request.Request, *sagemaker.StopLabelingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopLabelingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.StopLabelingJobOutput)
+	return ret0, ret1
+}
+
+// StopLabelingJobRequest indicates an expected call of StopLabelingJobRequest
+func (mr *MockSageMakerAPIMockRecorder) StopLabelingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopLabelingJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).StopLabelingJobRequest), arg0)
+}
+
+// StopLabelingJobWithContext mocks base method
+func (m *MockSageMakerAPI) StopLabelingJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopLabelingJobInput, arg2 ...request.Option) (*sagemaker.StopLabelingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopLabelingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.StopLabelingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopLabelingJobWithContext indicates an expected call of StopLabelingJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) StopLabelingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopLabelingJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopLabelingJobWithContext), varargs...)
 }
 
 // StopNotebookInstance mocks base method
@@ -2313,6 +4011,56 @@ func (mr *MockSageMakerAPIMockRecorder) StopTransformJobWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTransformJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopTransformJobWithContext), varargs...)
+}
+
+// UpdateCodeRepository mocks base method
+func (m *MockSageMakerAPI) UpdateCodeRepository(arg0 *sagemaker.UpdateCodeRepositoryInput) (*sagemaker.UpdateCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCodeRepository", arg0)
+	ret0, _ := ret[0].(*sagemaker.UpdateCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCodeRepository indicates an expected call of UpdateCodeRepository
+func (mr *MockSageMakerAPIMockRecorder) UpdateCodeRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCodeRepository", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateCodeRepository), arg0)
+}
+
+// UpdateCodeRepositoryRequest mocks base method
+func (m *MockSageMakerAPI) UpdateCodeRepositoryRequest(arg0 *sagemaker.UpdateCodeRepositoryInput) (*request.Request, *sagemaker.UpdateCodeRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCodeRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.UpdateCodeRepositoryOutput)
+	return ret0, ret1
+}
+
+// UpdateCodeRepositoryRequest indicates an expected call of UpdateCodeRepositoryRequest
+func (mr *MockSageMakerAPIMockRecorder) UpdateCodeRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCodeRepositoryRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateCodeRepositoryRequest), arg0)
+}
+
+// UpdateCodeRepositoryWithContext mocks base method
+func (m *MockSageMakerAPI) UpdateCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.UpdateCodeRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCodeRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.UpdateCodeRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCodeRepositoryWithContext indicates an expected call of UpdateCodeRepositoryWithContext
+func (mr *MockSageMakerAPIMockRecorder) UpdateCodeRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCodeRepositoryWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateCodeRepositoryWithContext), varargs...)
 }
 
 // UpdateEndpoint mocks base method
@@ -2513,6 +4261,56 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateNotebookInstanceWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateNotebookInstanceWithContext), varargs...)
+}
+
+// UpdateWorkteam mocks base method
+func (m *MockSageMakerAPI) UpdateWorkteam(arg0 *sagemaker.UpdateWorkteamInput) (*sagemaker.UpdateWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkteam", arg0)
+	ret0, _ := ret[0].(*sagemaker.UpdateWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkteam indicates an expected call of UpdateWorkteam
+func (mr *MockSageMakerAPIMockRecorder) UpdateWorkteam(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkteam", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateWorkteam), arg0)
+}
+
+// UpdateWorkteamRequest mocks base method
+func (m *MockSageMakerAPI) UpdateWorkteamRequest(arg0 *sagemaker.UpdateWorkteamInput) (*request.Request, *sagemaker.UpdateWorkteamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkteamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.UpdateWorkteamOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkteamRequest indicates an expected call of UpdateWorkteamRequest
+func (mr *MockSageMakerAPIMockRecorder) UpdateWorkteamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkteamRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateWorkteamRequest), arg0)
+}
+
+// UpdateWorkteamWithContext mocks base method
+func (m *MockSageMakerAPI) UpdateWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateWorkteamInput, arg2 ...request.Option) (*sagemaker.UpdateWorkteamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkteamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.UpdateWorkteamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkteamWithContext indicates an expected call of UpdateWorkteamWithContext
+func (mr *MockSageMakerAPIMockRecorder) UpdateWorkteamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkteamWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateWorkteamWithContext), varargs...)
 }
 
 // WaitUntilEndpointDeleted mocks base method
