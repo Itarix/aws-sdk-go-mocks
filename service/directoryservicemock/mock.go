@@ -435,6 +435,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateDirectoryWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).CreateDirectoryWithContext), varargs...)
 }
 
+// CreateLogSubscription mocks base method
+func (m *MockDirectoryServiceAPI) CreateLogSubscription(arg0 *directoryservice.CreateLogSubscriptionInput) (*directoryservice.CreateLogSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLogSubscription", arg0)
+	ret0, _ := ret[0].(*directoryservice.CreateLogSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLogSubscription indicates an expected call of CreateLogSubscription
+func (mr *MockDirectoryServiceAPIMockRecorder) CreateLogSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogSubscription", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).CreateLogSubscription), arg0)
+}
+
+// CreateLogSubscriptionRequest mocks base method
+func (m *MockDirectoryServiceAPI) CreateLogSubscriptionRequest(arg0 *directoryservice.CreateLogSubscriptionInput) (*request.Request, *directoryservice.CreateLogSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLogSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.CreateLogSubscriptionOutput)
+	return ret0, ret1
+}
+
+// CreateLogSubscriptionRequest indicates an expected call of CreateLogSubscriptionRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) CreateLogSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogSubscriptionRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).CreateLogSubscriptionRequest), arg0)
+}
+
+// CreateLogSubscriptionWithContext mocks base method
+func (m *MockDirectoryServiceAPI) CreateLogSubscriptionWithContext(arg0 aws.Context, arg1 *directoryservice.CreateLogSubscriptionInput, arg2 ...request.Option) (*directoryservice.CreateLogSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLogSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.CreateLogSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLogSubscriptionWithContext indicates an expected call of CreateLogSubscriptionWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) CreateLogSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogSubscriptionWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).CreateLogSubscriptionWithContext), varargs...)
+}
+
 // CreateMicrosoftAD mocks base method
 func (m *MockDirectoryServiceAPI) CreateMicrosoftAD(arg0 *directoryservice.CreateMicrosoftADInput) (*directoryservice.CreateMicrosoftADOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +733,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteDirectoryWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeleteDirectoryWithContext), varargs...)
+}
+
+// DeleteLogSubscription mocks base method
+func (m *MockDirectoryServiceAPI) DeleteLogSubscription(arg0 *directoryservice.DeleteLogSubscriptionInput) (*directoryservice.DeleteLogSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLogSubscription", arg0)
+	ret0, _ := ret[0].(*directoryservice.DeleteLogSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLogSubscription indicates an expected call of DeleteLogSubscription
+func (mr *MockDirectoryServiceAPIMockRecorder) DeleteLogSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLogSubscription", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeleteLogSubscription), arg0)
+}
+
+// DeleteLogSubscriptionRequest mocks base method
+func (m *MockDirectoryServiceAPI) DeleteLogSubscriptionRequest(arg0 *directoryservice.DeleteLogSubscriptionInput) (*request.Request, *directoryservice.DeleteLogSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLogSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DeleteLogSubscriptionOutput)
+	return ret0, ret1
+}
+
+// DeleteLogSubscriptionRequest indicates an expected call of DeleteLogSubscriptionRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DeleteLogSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLogSubscriptionRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeleteLogSubscriptionRequest), arg0)
+}
+
+// DeleteLogSubscriptionWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DeleteLogSubscriptionWithContext(arg0 aws.Context, arg1 *directoryservice.DeleteLogSubscriptionInput, arg2 ...request.Option) (*directoryservice.DeleteLogSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLogSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DeleteLogSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLogSubscriptionWithContext indicates an expected call of DeleteLogSubscriptionWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DeleteLogSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLogSubscriptionWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeleteLogSubscriptionWithContext), varargs...)
 }
 
 // DeleteSnapshot mocks base method
@@ -1516,6 +1616,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListIpRoutesWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpRoutesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListIpRoutesWithContext), varargs...)
+}
+
+// ListLogSubscriptions mocks base method
+func (m *MockDirectoryServiceAPI) ListLogSubscriptions(arg0 *directoryservice.ListLogSubscriptionsInput) (*directoryservice.ListLogSubscriptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogSubscriptions", arg0)
+	ret0, _ := ret[0].(*directoryservice.ListLogSubscriptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLogSubscriptions indicates an expected call of ListLogSubscriptions
+func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogSubscriptions", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListLogSubscriptions), arg0)
+}
+
+// ListLogSubscriptionsRequest mocks base method
+func (m *MockDirectoryServiceAPI) ListLogSubscriptionsRequest(arg0 *directoryservice.ListLogSubscriptionsInput) (*request.Request, *directoryservice.ListLogSubscriptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogSubscriptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.ListLogSubscriptionsOutput)
+	return ret0, ret1
+}
+
+// ListLogSubscriptionsRequest indicates an expected call of ListLogSubscriptionsRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogSubscriptionsRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListLogSubscriptionsRequest), arg0)
+}
+
+// ListLogSubscriptionsWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListLogSubscriptionsWithContext(arg0 aws.Context, arg1 *directoryservice.ListLogSubscriptionsInput, arg2 ...request.Option) (*directoryservice.ListLogSubscriptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLogSubscriptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.ListLogSubscriptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLogSubscriptionsWithContext indicates an expected call of ListLogSubscriptionsWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogSubscriptionsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListLogSubscriptionsWithContext), varargs...)
 }
 
 // ListSchemaExtensions mocks base method

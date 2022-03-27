@@ -5229,6 +5229,56 @@ func (mr *MockRDSAPIMockRecorder) RevokeDBSecurityGroupIngressWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeDBSecurityGroupIngressWithContext", reflect.TypeOf((*MockRDSAPI)(nil).RevokeDBSecurityGroupIngressWithContext), varargs...)
 }
 
+// StartDBCluster mocks base method
+func (m *MockRDSAPI) StartDBCluster(arg0 *rds.StartDBClusterInput) (*rds.StartDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDBCluster", arg0)
+	ret0, _ := ret[0].(*rds.StartDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDBCluster indicates an expected call of StartDBCluster
+func (mr *MockRDSAPIMockRecorder) StartDBCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBCluster", reflect.TypeOf((*MockRDSAPI)(nil).StartDBCluster), arg0)
+}
+
+// StartDBClusterRequest mocks base method
+func (m *MockRDSAPI) StartDBClusterRequest(arg0 *rds.StartDBClusterInput) (*request.Request, *rds.StartDBClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDBClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.StartDBClusterOutput)
+	return ret0, ret1
+}
+
+// StartDBClusterRequest indicates an expected call of StartDBClusterRequest
+func (mr *MockRDSAPIMockRecorder) StartDBClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBClusterRequest", reflect.TypeOf((*MockRDSAPI)(nil).StartDBClusterRequest), arg0)
+}
+
+// StartDBClusterWithContext mocks base method
+func (m *MockRDSAPI) StartDBClusterWithContext(arg0 aws.Context, arg1 *rds.StartDBClusterInput, arg2 ...request.Option) (*rds.StartDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDBClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.StartDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDBClusterWithContext indicates an expected call of StartDBClusterWithContext
+func (mr *MockRDSAPIMockRecorder) StartDBClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).StartDBClusterWithContext), varargs...)
+}
+
 // StartDBInstance mocks base method
 func (m *MockRDSAPI) StartDBInstance(arg0 *rds.StartDBInstanceInput) (*rds.StartDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -5277,6 +5327,56 @@ func (mr *MockRDSAPIMockRecorder) StartDBInstanceWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBInstanceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).StartDBInstanceWithContext), varargs...)
+}
+
+// StopDBCluster mocks base method
+func (m *MockRDSAPI) StopDBCluster(arg0 *rds.StopDBClusterInput) (*rds.StopDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDBCluster", arg0)
+	ret0, _ := ret[0].(*rds.StopDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDBCluster indicates an expected call of StopDBCluster
+func (mr *MockRDSAPIMockRecorder) StopDBCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBCluster", reflect.TypeOf((*MockRDSAPI)(nil).StopDBCluster), arg0)
+}
+
+// StopDBClusterRequest mocks base method
+func (m *MockRDSAPI) StopDBClusterRequest(arg0 *rds.StopDBClusterInput) (*request.Request, *rds.StopDBClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDBClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.StopDBClusterOutput)
+	return ret0, ret1
+}
+
+// StopDBClusterRequest indicates an expected call of StopDBClusterRequest
+func (mr *MockRDSAPIMockRecorder) StopDBClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBClusterRequest", reflect.TypeOf((*MockRDSAPI)(nil).StopDBClusterRequest), arg0)
+}
+
+// StopDBClusterWithContext mocks base method
+func (m *MockRDSAPI) StopDBClusterWithContext(arg0 aws.Context, arg1 *rds.StopDBClusterInput, arg2 ...request.Option) (*rds.StopDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopDBClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.StopDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDBClusterWithContext indicates an expected call of StopDBClusterWithContext
+func (mr *MockRDSAPIMockRecorder) StopDBClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).StopDBClusterWithContext), varargs...)
 }
 
 // StopDBInstance mocks base method
