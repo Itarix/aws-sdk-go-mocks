@@ -2712,3 +2712,36 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilTrainingJobCompletedOrStoppedWi
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilTrainingJobCompletedOrStoppedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilTrainingJobCompletedOrStoppedWithContext), varargs...)
 }
+
+// WaitUntilTransformJobCompletedOrStopped mocks base method
+func (m *MockSageMakerAPI) WaitUntilTransformJobCompletedOrStopped(arg0 *sagemaker.DescribeTransformJobInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilTransformJobCompletedOrStopped", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilTransformJobCompletedOrStopped indicates an expected call of WaitUntilTransformJobCompletedOrStopped
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilTransformJobCompletedOrStopped(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilTransformJobCompletedOrStopped", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilTransformJobCompletedOrStopped), arg0)
+}
+
+// WaitUntilTransformJobCompletedOrStoppedWithContext mocks base method
+func (m *MockSageMakerAPI) WaitUntilTransformJobCompletedOrStoppedWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeTransformJobInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilTransformJobCompletedOrStoppedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilTransformJobCompletedOrStoppedWithContext indicates an expected call of WaitUntilTransformJobCompletedOrStoppedWithContext
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilTransformJobCompletedOrStoppedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilTransformJobCompletedOrStoppedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilTransformJobCompletedOrStoppedWithContext), varargs...)
+}
