@@ -450,6 +450,39 @@ func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpoints(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpoints", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpoints), arg0)
 }
 
+// DescribeEndpointsPages mocks base method
+func (m *MockMediaConvertAPI) DescribeEndpointsPages(arg0 *mediaconvert.DescribeEndpointsInput, arg1 func(*mediaconvert.DescribeEndpointsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpointsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEndpointsPages indicates an expected call of DescribeEndpointsPages
+func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsPages), arg0, arg1)
+}
+
+// DescribeEndpointsPagesWithContext mocks base method
+func (m *MockMediaConvertAPI) DescribeEndpointsPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 func(*mediaconvert.DescribeEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEndpointsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEndpointsPagesWithContext indicates an expected call of DescribeEndpointsPagesWithContext
+func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DescribeEndpointsPagesWithContext), varargs...)
+}
+
 // DescribeEndpointsRequest mocks base method
 func (m *MockMediaConvertAPI) DescribeEndpointsRequest(arg0 *mediaconvert.DescribeEndpointsInput) (*request.Request, *mediaconvert.DescribeEndpointsOutput) {
 	m.ctrl.T.Helper()
@@ -700,6 +733,39 @@ func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplates(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplates", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplates), arg0)
 }
 
+// ListJobTemplatesPages mocks base method
+func (m *MockMediaConvertAPI) ListJobTemplatesPages(arg0 *mediaconvert.ListJobTemplatesInput, arg1 func(*mediaconvert.ListJobTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobTemplatesPages indicates an expected call of ListJobTemplatesPages
+func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplatesPages), arg0, arg1)
+}
+
+// ListJobTemplatesPagesWithContext mocks base method
+func (m *MockMediaConvertAPI) ListJobTemplatesPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 func(*mediaconvert.ListJobTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJobTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobTemplatesPagesWithContext indicates an expected call of ListJobTemplatesPagesWithContext
+func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobTemplatesPagesWithContext), varargs...)
+}
+
 // ListJobTemplatesRequest mocks base method
 func (m *MockMediaConvertAPI) ListJobTemplatesRequest(arg0 *mediaconvert.ListJobTemplatesInput) (*request.Request, *mediaconvert.ListJobTemplatesOutput) {
 	m.ctrl.T.Helper()
@@ -748,6 +814,39 @@ func (m *MockMediaConvertAPI) ListJobs(arg0 *mediaconvert.ListJobsInput) (*media
 func (mr *MockMediaConvertAPIMockRecorder) ListJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobs", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobs), arg0)
+}
+
+// ListJobsPages mocks base method
+func (m *MockMediaConvertAPI) ListJobsPages(arg0 *mediaconvert.ListJobsInput, arg1 func(*mediaconvert.ListJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobsPages indicates an expected call of ListJobsPages
+func (mr *MockMediaConvertAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobsPages), arg0, arg1)
+}
+
+// ListJobsPagesWithContext mocks base method
+func (m *MockMediaConvertAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobsInput, arg2 func(*mediaconvert.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext
+func (mr *MockMediaConvertAPIMockRecorder) ListJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListJobsPagesWithContext), varargs...)
 }
 
 // ListJobsRequest mocks base method
@@ -800,6 +899,39 @@ func (mr *MockMediaConvertAPIMockRecorder) ListPresets(arg0 interface{}) *gomock
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresets", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresets), arg0)
 }
 
+// ListPresetsPages mocks base method
+func (m *MockMediaConvertAPI) ListPresetsPages(arg0 *mediaconvert.ListPresetsInput, arg1 func(*mediaconvert.ListPresetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPresetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPresetsPages indicates an expected call of ListPresetsPages
+func (mr *MockMediaConvertAPIMockRecorder) ListPresetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresetsPages), arg0, arg1)
+}
+
+// ListPresetsPagesWithContext mocks base method
+func (m *MockMediaConvertAPI) ListPresetsPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListPresetsInput, arg2 func(*mediaconvert.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPresetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPresetsPagesWithContext indicates an expected call of ListPresetsPagesWithContext
+func (mr *MockMediaConvertAPIMockRecorder) ListPresetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPresetsPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListPresetsPagesWithContext), varargs...)
+}
+
 // ListPresetsRequest mocks base method
 func (m *MockMediaConvertAPI) ListPresetsRequest(arg0 *mediaconvert.ListPresetsInput) (*request.Request, *mediaconvert.ListPresetsOutput) {
 	m.ctrl.T.Helper()
@@ -848,6 +980,39 @@ func (m *MockMediaConvertAPI) ListQueues(arg0 *mediaconvert.ListQueuesInput) (*m
 func (mr *MockMediaConvertAPIMockRecorder) ListQueues(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueues", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueues), arg0)
+}
+
+// ListQueuesPages mocks base method
+func (m *MockMediaConvertAPI) ListQueuesPages(arg0 *mediaconvert.ListQueuesInput, arg1 func(*mediaconvert.ListQueuesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQueuesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQueuesPages indicates an expected call of ListQueuesPages
+func (mr *MockMediaConvertAPIMockRecorder) ListQueuesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesPages", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueuesPages), arg0, arg1)
+}
+
+// ListQueuesPagesWithContext mocks base method
+func (m *MockMediaConvertAPI) ListQueuesPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListQueuesInput, arg2 func(*mediaconvert.ListQueuesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListQueuesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQueuesPagesWithContext indicates an expected call of ListQueuesPagesWithContext
+func (mr *MockMediaConvertAPIMockRecorder) ListQueuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesPagesWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListQueuesPagesWithContext), varargs...)
 }
 
 // ListQueuesRequest mocks base method

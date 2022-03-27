@@ -2234,3 +2234,53 @@ func (mr *MockDirectConnectAPIMockRecorder) UpdateLagWithContext(arg0, arg1 inte
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLagWithContext", reflect.TypeOf((*MockDirectConnectAPI)(nil).UpdateLagWithContext), varargs...)
 }
+
+// UpdateVirtualInterfaceAttributes mocks base method
+func (m *MockDirectConnectAPI) UpdateVirtualInterfaceAttributes(arg0 *directconnect.UpdateVirtualInterfaceAttributesInput) (*directconnect.UpdateVirtualInterfaceAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVirtualInterfaceAttributes", arg0)
+	ret0, _ := ret[0].(*directconnect.UpdateVirtualInterfaceAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVirtualInterfaceAttributes indicates an expected call of UpdateVirtualInterfaceAttributes
+func (mr *MockDirectConnectAPIMockRecorder) UpdateVirtualInterfaceAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVirtualInterfaceAttributes", reflect.TypeOf((*MockDirectConnectAPI)(nil).UpdateVirtualInterfaceAttributes), arg0)
+}
+
+// UpdateVirtualInterfaceAttributesRequest mocks base method
+func (m *MockDirectConnectAPI) UpdateVirtualInterfaceAttributesRequest(arg0 *directconnect.UpdateVirtualInterfaceAttributesInput) (*request.Request, *directconnect.UpdateVirtualInterfaceAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVirtualInterfaceAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directconnect.UpdateVirtualInterfaceAttributesOutput)
+	return ret0, ret1
+}
+
+// UpdateVirtualInterfaceAttributesRequest indicates an expected call of UpdateVirtualInterfaceAttributesRequest
+func (mr *MockDirectConnectAPIMockRecorder) UpdateVirtualInterfaceAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVirtualInterfaceAttributesRequest", reflect.TypeOf((*MockDirectConnectAPI)(nil).UpdateVirtualInterfaceAttributesRequest), arg0)
+}
+
+// UpdateVirtualInterfaceAttributesWithContext mocks base method
+func (m *MockDirectConnectAPI) UpdateVirtualInterfaceAttributesWithContext(arg0 aws.Context, arg1 *directconnect.UpdateVirtualInterfaceAttributesInput, arg2 ...request.Option) (*directconnect.UpdateVirtualInterfaceAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVirtualInterfaceAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*directconnect.UpdateVirtualInterfaceAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVirtualInterfaceAttributesWithContext indicates an expected call of UpdateVirtualInterfaceAttributesWithContext
+func (mr *MockDirectConnectAPIMockRecorder) UpdateVirtualInterfaceAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVirtualInterfaceAttributesWithContext", reflect.TypeOf((*MockDirectConnectAPI)(nil).UpdateVirtualInterfaceAttributesWithContext), varargs...)
+}
