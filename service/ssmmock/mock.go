@@ -135,6 +135,56 @@ func (mr *MockSSMAPIMockRecorder) CancelCommandWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelCommandWithContext", reflect.TypeOf((*MockSSMAPI)(nil).CancelCommandWithContext), varargs...)
 }
 
+// CancelMaintenanceWindowExecution mocks base method
+func (m *MockSSMAPI) CancelMaintenanceWindowExecution(arg0 *ssm.CancelMaintenanceWindowExecutionInput) (*ssm.CancelMaintenanceWindowExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMaintenanceWindowExecution", arg0)
+	ret0, _ := ret[0].(*ssm.CancelMaintenanceWindowExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMaintenanceWindowExecution indicates an expected call of CancelMaintenanceWindowExecution
+func (mr *MockSSMAPIMockRecorder) CancelMaintenanceWindowExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMaintenanceWindowExecution", reflect.TypeOf((*MockSSMAPI)(nil).CancelMaintenanceWindowExecution), arg0)
+}
+
+// CancelMaintenanceWindowExecutionRequest mocks base method
+func (m *MockSSMAPI) CancelMaintenanceWindowExecutionRequest(arg0 *ssm.CancelMaintenanceWindowExecutionInput) (*request.Request, *ssm.CancelMaintenanceWindowExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMaintenanceWindowExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.CancelMaintenanceWindowExecutionOutput)
+	return ret0, ret1
+}
+
+// CancelMaintenanceWindowExecutionRequest indicates an expected call of CancelMaintenanceWindowExecutionRequest
+func (mr *MockSSMAPIMockRecorder) CancelMaintenanceWindowExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMaintenanceWindowExecutionRequest", reflect.TypeOf((*MockSSMAPI)(nil).CancelMaintenanceWindowExecutionRequest), arg0)
+}
+
+// CancelMaintenanceWindowExecutionWithContext mocks base method
+func (m *MockSSMAPI) CancelMaintenanceWindowExecutionWithContext(arg0 aws.Context, arg1 *ssm.CancelMaintenanceWindowExecutionInput, arg2 ...request.Option) (*ssm.CancelMaintenanceWindowExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelMaintenanceWindowExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.CancelMaintenanceWindowExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMaintenanceWindowExecutionWithContext indicates an expected call of CancelMaintenanceWindowExecutionWithContext
+func (mr *MockSSMAPIMockRecorder) CancelMaintenanceWindowExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMaintenanceWindowExecutionWithContext", reflect.TypeOf((*MockSSMAPI)(nil).CancelMaintenanceWindowExecutionWithContext), varargs...)
+}
+
 // CreateActivation mocks base method
 func (m *MockSSMAPI) CreateActivation(arg0 *ssm.CreateActivationInput) (*ssm.CreateActivationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2201,6 +2251,56 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowExecutionsWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowExecutionsWithContext", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowExecutionsWithContext), varargs...)
 }
 
+// DescribeMaintenanceWindowSchedule mocks base method
+func (m *MockSSMAPI) DescribeMaintenanceWindowSchedule(arg0 *ssm.DescribeMaintenanceWindowScheduleInput) (*ssm.DescribeMaintenanceWindowScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMaintenanceWindowSchedule", arg0)
+	ret0, _ := ret[0].(*ssm.DescribeMaintenanceWindowScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMaintenanceWindowSchedule indicates an expected call of DescribeMaintenanceWindowSchedule
+func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowSchedule", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowSchedule), arg0)
+}
+
+// DescribeMaintenanceWindowScheduleRequest mocks base method
+func (m *MockSSMAPI) DescribeMaintenanceWindowScheduleRequest(arg0 *ssm.DescribeMaintenanceWindowScheduleInput) (*request.Request, *ssm.DescribeMaintenanceWindowScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMaintenanceWindowScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.DescribeMaintenanceWindowScheduleOutput)
+	return ret0, ret1
+}
+
+// DescribeMaintenanceWindowScheduleRequest indicates an expected call of DescribeMaintenanceWindowScheduleRequest
+func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowScheduleRequest", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowScheduleRequest), arg0)
+}
+
+// DescribeMaintenanceWindowScheduleWithContext mocks base method
+func (m *MockSSMAPI) DescribeMaintenanceWindowScheduleWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowScheduleInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMaintenanceWindowScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.DescribeMaintenanceWindowScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMaintenanceWindowScheduleWithContext indicates an expected call of DescribeMaintenanceWindowScheduleWithContext
+func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowScheduleWithContext", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowScheduleWithContext), varargs...)
+}
+
 // DescribeMaintenanceWindowTargets mocks base method
 func (m *MockSSMAPI) DescribeMaintenanceWindowTargets(arg0 *ssm.DescribeMaintenanceWindowTargetsInput) (*ssm.DescribeMaintenanceWindowTargetsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2314,6 +2414,56 @@ func (m *MockSSMAPI) DescribeMaintenanceWindows(arg0 *ssm.DescribeMaintenanceWin
 func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindows(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindows", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindows), arg0)
+}
+
+// DescribeMaintenanceWindowsForTarget mocks base method
+func (m *MockSSMAPI) DescribeMaintenanceWindowsForTarget(arg0 *ssm.DescribeMaintenanceWindowsForTargetInput) (*ssm.DescribeMaintenanceWindowsForTargetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMaintenanceWindowsForTarget", arg0)
+	ret0, _ := ret[0].(*ssm.DescribeMaintenanceWindowsForTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMaintenanceWindowsForTarget indicates an expected call of DescribeMaintenanceWindowsForTarget
+func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowsForTarget(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowsForTarget", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowsForTarget), arg0)
+}
+
+// DescribeMaintenanceWindowsForTargetRequest mocks base method
+func (m *MockSSMAPI) DescribeMaintenanceWindowsForTargetRequest(arg0 *ssm.DescribeMaintenanceWindowsForTargetInput) (*request.Request, *ssm.DescribeMaintenanceWindowsForTargetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMaintenanceWindowsForTargetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.DescribeMaintenanceWindowsForTargetOutput)
+	return ret0, ret1
+}
+
+// DescribeMaintenanceWindowsForTargetRequest indicates an expected call of DescribeMaintenanceWindowsForTargetRequest
+func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowsForTargetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowsForTargetRequest", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowsForTargetRequest), arg0)
+}
+
+// DescribeMaintenanceWindowsForTargetWithContext mocks base method
+func (m *MockSSMAPI) DescribeMaintenanceWindowsForTargetWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowsForTargetInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowsForTargetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMaintenanceWindowsForTargetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.DescribeMaintenanceWindowsForTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMaintenanceWindowsForTargetWithContext indicates an expected call of DescribeMaintenanceWindowsForTargetWithContext
+func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowsForTargetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMaintenanceWindowsForTargetWithContext", reflect.TypeOf((*MockSSMAPI)(nil).DescribeMaintenanceWindowsForTargetWithContext), varargs...)
 }
 
 // DescribeMaintenanceWindowsRequest mocks base method
