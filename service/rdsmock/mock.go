@@ -1135,6 +1135,56 @@ func (mr *MockRDSAPIMockRecorder) CreateEventSubscriptionWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventSubscriptionWithContext", reflect.TypeOf((*MockRDSAPI)(nil).CreateEventSubscriptionWithContext), varargs...)
 }
 
+// CreateGlobalCluster mocks base method
+func (m *MockRDSAPI) CreateGlobalCluster(arg0 *rds.CreateGlobalClusterInput) (*rds.CreateGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGlobalCluster", arg0)
+	ret0, _ := ret[0].(*rds.CreateGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGlobalCluster indicates an expected call of CreateGlobalCluster
+func (mr *MockRDSAPIMockRecorder) CreateGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGlobalCluster", reflect.TypeOf((*MockRDSAPI)(nil).CreateGlobalCluster), arg0)
+}
+
+// CreateGlobalClusterRequest mocks base method
+func (m *MockRDSAPI) CreateGlobalClusterRequest(arg0 *rds.CreateGlobalClusterInput) (*request.Request, *rds.CreateGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.CreateGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// CreateGlobalClusterRequest indicates an expected call of CreateGlobalClusterRequest
+func (mr *MockRDSAPIMockRecorder) CreateGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGlobalClusterRequest", reflect.TypeOf((*MockRDSAPI)(nil).CreateGlobalClusterRequest), arg0)
+}
+
+// CreateGlobalClusterWithContext mocks base method
+func (m *MockRDSAPI) CreateGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.CreateGlobalClusterInput, arg2 ...request.Option) (*rds.CreateGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.CreateGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGlobalClusterWithContext indicates an expected call of CreateGlobalClusterWithContext
+func (mr *MockRDSAPIMockRecorder) CreateGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGlobalClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).CreateGlobalClusterWithContext), varargs...)
+}
+
 // CreateOptionGroup mocks base method
 func (m *MockRDSAPI) CreateOptionGroup(arg0 *rds.CreateOptionGroupInput) (*rds.CreateOptionGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1733,6 +1783,56 @@ func (mr *MockRDSAPIMockRecorder) DeleteEventSubscriptionWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSubscriptionWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DeleteEventSubscriptionWithContext), varargs...)
+}
+
+// DeleteGlobalCluster mocks base method
+func (m *MockRDSAPI) DeleteGlobalCluster(arg0 *rds.DeleteGlobalClusterInput) (*rds.DeleteGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGlobalCluster", arg0)
+	ret0, _ := ret[0].(*rds.DeleteGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGlobalCluster indicates an expected call of DeleteGlobalCluster
+func (mr *MockRDSAPIMockRecorder) DeleteGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGlobalCluster", reflect.TypeOf((*MockRDSAPI)(nil).DeleteGlobalCluster), arg0)
+}
+
+// DeleteGlobalClusterRequest mocks base method
+func (m *MockRDSAPI) DeleteGlobalClusterRequest(arg0 *rds.DeleteGlobalClusterInput) (*request.Request, *rds.DeleteGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.DeleteGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// DeleteGlobalClusterRequest indicates an expected call of DeleteGlobalClusterRequest
+func (mr *MockRDSAPIMockRecorder) DeleteGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGlobalClusterRequest", reflect.TypeOf((*MockRDSAPI)(nil).DeleteGlobalClusterRequest), arg0)
+}
+
+// DeleteGlobalClusterWithContext mocks base method
+func (m *MockRDSAPI) DeleteGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.DeleteGlobalClusterInput, arg2 ...request.Option) (*rds.DeleteGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.DeleteGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGlobalClusterWithContext indicates an expected call of DeleteGlobalClusterWithContext
+func (mr *MockRDSAPIMockRecorder) DeleteGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGlobalClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DeleteGlobalClusterWithContext), varargs...)
 }
 
 // DeleteOptionGroup mocks base method
@@ -3414,6 +3514,89 @@ func (mr *MockRDSAPIMockRecorder) DescribeEventsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DescribeEventsWithContext), varargs...)
 }
 
+// DescribeGlobalClusters mocks base method
+func (m *MockRDSAPI) DescribeGlobalClusters(arg0 *rds.DescribeGlobalClustersInput) (*rds.DescribeGlobalClustersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalClusters", arg0)
+	ret0, _ := ret[0].(*rds.DescribeGlobalClustersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGlobalClusters indicates an expected call of DescribeGlobalClusters
+func (mr *MockRDSAPIMockRecorder) DescribeGlobalClusters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClusters", reflect.TypeOf((*MockRDSAPI)(nil).DescribeGlobalClusters), arg0)
+}
+
+// DescribeGlobalClustersPages mocks base method
+func (m *MockRDSAPI) DescribeGlobalClustersPages(arg0 *rds.DescribeGlobalClustersInput, arg1 func(*rds.DescribeGlobalClustersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGlobalClustersPages indicates an expected call of DescribeGlobalClustersPages
+func (mr *MockRDSAPIMockRecorder) DescribeGlobalClustersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersPages", reflect.TypeOf((*MockRDSAPI)(nil).DescribeGlobalClustersPages), arg0, arg1)
+}
+
+// DescribeGlobalClustersPagesWithContext mocks base method
+func (m *MockRDSAPI) DescribeGlobalClustersPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeGlobalClustersInput, arg2 func(*rds.DescribeGlobalClustersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGlobalClustersPagesWithContext indicates an expected call of DescribeGlobalClustersPagesWithContext
+func (mr *MockRDSAPIMockRecorder) DescribeGlobalClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersPagesWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DescribeGlobalClustersPagesWithContext), varargs...)
+}
+
+// DescribeGlobalClustersRequest mocks base method
+func (m *MockRDSAPI) DescribeGlobalClustersRequest(arg0 *rds.DescribeGlobalClustersInput) (*request.Request, *rds.DescribeGlobalClustersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.DescribeGlobalClustersOutput)
+	return ret0, ret1
+}
+
+// DescribeGlobalClustersRequest indicates an expected call of DescribeGlobalClustersRequest
+func (mr *MockRDSAPIMockRecorder) DescribeGlobalClustersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersRequest", reflect.TypeOf((*MockRDSAPI)(nil).DescribeGlobalClustersRequest), arg0)
+}
+
+// DescribeGlobalClustersWithContext mocks base method
+func (m *MockRDSAPI) DescribeGlobalClustersWithContext(arg0 aws.Context, arg1 *rds.DescribeGlobalClustersInput, arg2 ...request.Option) (*rds.DescribeGlobalClustersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.DescribeGlobalClustersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGlobalClustersWithContext indicates an expected call of DescribeGlobalClustersWithContext
+func (mr *MockRDSAPIMockRecorder) DescribeGlobalClustersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersWithContext", reflect.TypeOf((*MockRDSAPI)(nil).DescribeGlobalClustersWithContext), varargs...)
+}
+
 // DescribeOptionGroupOptions mocks base method
 func (m *MockRDSAPI) DescribeOptionGroupOptions(arg0 *rds.DescribeOptionGroupOptionsInput) (*rds.DescribeOptionGroupOptionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4712,6 +4895,56 @@ func (mr *MockRDSAPIMockRecorder) ModifyEventSubscriptionWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyEventSubscriptionWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ModifyEventSubscriptionWithContext), varargs...)
 }
 
+// ModifyGlobalCluster mocks base method
+func (m *MockRDSAPI) ModifyGlobalCluster(arg0 *rds.ModifyGlobalClusterInput) (*rds.ModifyGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyGlobalCluster", arg0)
+	ret0, _ := ret[0].(*rds.ModifyGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyGlobalCluster indicates an expected call of ModifyGlobalCluster
+func (mr *MockRDSAPIMockRecorder) ModifyGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyGlobalCluster", reflect.TypeOf((*MockRDSAPI)(nil).ModifyGlobalCluster), arg0)
+}
+
+// ModifyGlobalClusterRequest mocks base method
+func (m *MockRDSAPI) ModifyGlobalClusterRequest(arg0 *rds.ModifyGlobalClusterInput) (*request.Request, *rds.ModifyGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.ModifyGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// ModifyGlobalClusterRequest indicates an expected call of ModifyGlobalClusterRequest
+func (mr *MockRDSAPIMockRecorder) ModifyGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyGlobalClusterRequest", reflect.TypeOf((*MockRDSAPI)(nil).ModifyGlobalClusterRequest), arg0)
+}
+
+// ModifyGlobalClusterWithContext mocks base method
+func (m *MockRDSAPI) ModifyGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.ModifyGlobalClusterInput, arg2 ...request.Option) (*rds.ModifyGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.ModifyGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyGlobalClusterWithContext indicates an expected call of ModifyGlobalClusterWithContext
+func (mr *MockRDSAPIMockRecorder) ModifyGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyGlobalClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ModifyGlobalClusterWithContext), varargs...)
+}
+
 // ModifyOptionGroup mocks base method
 func (m *MockRDSAPI) ModifyOptionGroup(arg0 *rds.ModifyOptionGroupInput) (*rds.ModifyOptionGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -4960,6 +5193,56 @@ func (mr *MockRDSAPIMockRecorder) RebootDBInstanceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootDBInstanceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).RebootDBInstanceWithContext), varargs...)
+}
+
+// RemoveFromGlobalCluster mocks base method
+func (m *MockRDSAPI) RemoveFromGlobalCluster(arg0 *rds.RemoveFromGlobalClusterInput) (*rds.RemoveFromGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveFromGlobalCluster", arg0)
+	ret0, _ := ret[0].(*rds.RemoveFromGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveFromGlobalCluster indicates an expected call of RemoveFromGlobalCluster
+func (mr *MockRDSAPIMockRecorder) RemoveFromGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFromGlobalCluster", reflect.TypeOf((*MockRDSAPI)(nil).RemoveFromGlobalCluster), arg0)
+}
+
+// RemoveFromGlobalClusterRequest mocks base method
+func (m *MockRDSAPI) RemoveFromGlobalClusterRequest(arg0 *rds.RemoveFromGlobalClusterInput) (*request.Request, *rds.RemoveFromGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveFromGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.RemoveFromGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// RemoveFromGlobalClusterRequest indicates an expected call of RemoveFromGlobalClusterRequest
+func (mr *MockRDSAPIMockRecorder) RemoveFromGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFromGlobalClusterRequest", reflect.TypeOf((*MockRDSAPI)(nil).RemoveFromGlobalClusterRequest), arg0)
+}
+
+// RemoveFromGlobalClusterWithContext mocks base method
+func (m *MockRDSAPI) RemoveFromGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.RemoveFromGlobalClusterInput, arg2 ...request.Option) (*rds.RemoveFromGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveFromGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.RemoveFromGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveFromGlobalClusterWithContext indicates an expected call of RemoveFromGlobalClusterWithContext
+func (mr *MockRDSAPIMockRecorder) RemoveFromGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFromGlobalClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).RemoveFromGlobalClusterWithContext), varargs...)
 }
 
 // RemoveRoleFromDBCluster mocks base method

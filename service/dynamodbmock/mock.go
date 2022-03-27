@@ -1517,6 +1517,106 @@ func (mr *MockDynamoDBAPIMockRecorder) TagResourceWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).TagResourceWithContext), varargs...)
 }
 
+// TransactGetItems mocks base method
+func (m *MockDynamoDBAPI) TransactGetItems(arg0 *dynamodb.TransactGetItemsInput) (*dynamodb.TransactGetItemsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransactGetItems", arg0)
+	ret0, _ := ret[0].(*dynamodb.TransactGetItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransactGetItems indicates an expected call of TransactGetItems
+func (mr *MockDynamoDBAPIMockRecorder) TransactGetItems(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransactGetItems", reflect.TypeOf((*MockDynamoDBAPI)(nil).TransactGetItems), arg0)
+}
+
+// TransactGetItemsRequest mocks base method
+func (m *MockDynamoDBAPI) TransactGetItemsRequest(arg0 *dynamodb.TransactGetItemsInput) (*request.Request, *dynamodb.TransactGetItemsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransactGetItemsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.TransactGetItemsOutput)
+	return ret0, ret1
+}
+
+// TransactGetItemsRequest indicates an expected call of TransactGetItemsRequest
+func (mr *MockDynamoDBAPIMockRecorder) TransactGetItemsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransactGetItemsRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).TransactGetItemsRequest), arg0)
+}
+
+// TransactGetItemsWithContext mocks base method
+func (m *MockDynamoDBAPI) TransactGetItemsWithContext(arg0 aws.Context, arg1 *dynamodb.TransactGetItemsInput, arg2 ...request.Option) (*dynamodb.TransactGetItemsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TransactGetItemsWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.TransactGetItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransactGetItemsWithContext indicates an expected call of TransactGetItemsWithContext
+func (mr *MockDynamoDBAPIMockRecorder) TransactGetItemsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransactGetItemsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).TransactGetItemsWithContext), varargs...)
+}
+
+// TransactWriteItems mocks base method
+func (m *MockDynamoDBAPI) TransactWriteItems(arg0 *dynamodb.TransactWriteItemsInput) (*dynamodb.TransactWriteItemsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransactWriteItems", arg0)
+	ret0, _ := ret[0].(*dynamodb.TransactWriteItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransactWriteItems indicates an expected call of TransactWriteItems
+func (mr *MockDynamoDBAPIMockRecorder) TransactWriteItems(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransactWriteItems", reflect.TypeOf((*MockDynamoDBAPI)(nil).TransactWriteItems), arg0)
+}
+
+// TransactWriteItemsRequest mocks base method
+func (m *MockDynamoDBAPI) TransactWriteItemsRequest(arg0 *dynamodb.TransactWriteItemsInput) (*request.Request, *dynamodb.TransactWriteItemsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransactWriteItemsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.TransactWriteItemsOutput)
+	return ret0, ret1
+}
+
+// TransactWriteItemsRequest indicates an expected call of TransactWriteItemsRequest
+func (mr *MockDynamoDBAPIMockRecorder) TransactWriteItemsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransactWriteItemsRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).TransactWriteItemsRequest), arg0)
+}
+
+// TransactWriteItemsWithContext mocks base method
+func (m *MockDynamoDBAPI) TransactWriteItemsWithContext(arg0 aws.Context, arg1 *dynamodb.TransactWriteItemsInput, arg2 ...request.Option) (*dynamodb.TransactWriteItemsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TransactWriteItemsWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.TransactWriteItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransactWriteItemsWithContext indicates an expected call of TransactWriteItemsWithContext
+func (mr *MockDynamoDBAPIMockRecorder) TransactWriteItemsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransactWriteItemsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).TransactWriteItemsWithContext), varargs...)
+}
+
 // UntagResource mocks base method
 func (m *MockDynamoDBAPI) UntagResource(arg0 *dynamodb.UntagResourceInput) (*dynamodb.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
