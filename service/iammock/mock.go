@@ -2535,6 +2535,56 @@ func (mr *MockIAMAPIMockRecorder) GenerateCredentialReportWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateCredentialReportWithContext", reflect.TypeOf((*MockIAMAPI)(nil).GenerateCredentialReportWithContext), varargs...)
 }
 
+// GenerateServiceLastAccessedDetails mocks base method
+func (m *MockIAMAPI) GenerateServiceLastAccessedDetails(arg0 *iam.GenerateServiceLastAccessedDetailsInput) (*iam.GenerateServiceLastAccessedDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateServiceLastAccessedDetails", arg0)
+	ret0, _ := ret[0].(*iam.GenerateServiceLastAccessedDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateServiceLastAccessedDetails indicates an expected call of GenerateServiceLastAccessedDetails
+func (mr *MockIAMAPIMockRecorder) GenerateServiceLastAccessedDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateServiceLastAccessedDetails", reflect.TypeOf((*MockIAMAPI)(nil).GenerateServiceLastAccessedDetails), arg0)
+}
+
+// GenerateServiceLastAccessedDetailsRequest mocks base method
+func (m *MockIAMAPI) GenerateServiceLastAccessedDetailsRequest(arg0 *iam.GenerateServiceLastAccessedDetailsInput) (*request.Request, *iam.GenerateServiceLastAccessedDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateServiceLastAccessedDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iam.GenerateServiceLastAccessedDetailsOutput)
+	return ret0, ret1
+}
+
+// GenerateServiceLastAccessedDetailsRequest indicates an expected call of GenerateServiceLastAccessedDetailsRequest
+func (mr *MockIAMAPIMockRecorder) GenerateServiceLastAccessedDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateServiceLastAccessedDetailsRequest", reflect.TypeOf((*MockIAMAPI)(nil).GenerateServiceLastAccessedDetailsRequest), arg0)
+}
+
+// GenerateServiceLastAccessedDetailsWithContext mocks base method
+func (m *MockIAMAPI) GenerateServiceLastAccessedDetailsWithContext(arg0 aws.Context, arg1 *iam.GenerateServiceLastAccessedDetailsInput, arg2 ...request.Option) (*iam.GenerateServiceLastAccessedDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GenerateServiceLastAccessedDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*iam.GenerateServiceLastAccessedDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateServiceLastAccessedDetailsWithContext indicates an expected call of GenerateServiceLastAccessedDetailsWithContext
+func (mr *MockIAMAPIMockRecorder) GenerateServiceLastAccessedDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateServiceLastAccessedDetailsWithContext", reflect.TypeOf((*MockIAMAPI)(nil).GenerateServiceLastAccessedDetailsWithContext), varargs...)
+}
+
 // GetAccessKeyLastUsed mocks base method
 func (m *MockIAMAPI) GetAccessKeyLastUsed(arg0 *iam.GetAccessKeyLastUsedInput) (*iam.GetAccessKeyLastUsedOutput, error) {
 	m.ctrl.T.Helper()
@@ -3549,6 +3599,106 @@ func (mr *MockIAMAPIMockRecorder) GetServerCertificateWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServerCertificateWithContext", reflect.TypeOf((*MockIAMAPI)(nil).GetServerCertificateWithContext), varargs...)
+}
+
+// GetServiceLastAccessedDetails mocks base method
+func (m *MockIAMAPI) GetServiceLastAccessedDetails(arg0 *iam.GetServiceLastAccessedDetailsInput) (*iam.GetServiceLastAccessedDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceLastAccessedDetails", arg0)
+	ret0, _ := ret[0].(*iam.GetServiceLastAccessedDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceLastAccessedDetails indicates an expected call of GetServiceLastAccessedDetails
+func (mr *MockIAMAPIMockRecorder) GetServiceLastAccessedDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceLastAccessedDetails", reflect.TypeOf((*MockIAMAPI)(nil).GetServiceLastAccessedDetails), arg0)
+}
+
+// GetServiceLastAccessedDetailsRequest mocks base method
+func (m *MockIAMAPI) GetServiceLastAccessedDetailsRequest(arg0 *iam.GetServiceLastAccessedDetailsInput) (*request.Request, *iam.GetServiceLastAccessedDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceLastAccessedDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iam.GetServiceLastAccessedDetailsOutput)
+	return ret0, ret1
+}
+
+// GetServiceLastAccessedDetailsRequest indicates an expected call of GetServiceLastAccessedDetailsRequest
+func (mr *MockIAMAPIMockRecorder) GetServiceLastAccessedDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceLastAccessedDetailsRequest", reflect.TypeOf((*MockIAMAPI)(nil).GetServiceLastAccessedDetailsRequest), arg0)
+}
+
+// GetServiceLastAccessedDetailsWithContext mocks base method
+func (m *MockIAMAPI) GetServiceLastAccessedDetailsWithContext(arg0 aws.Context, arg1 *iam.GetServiceLastAccessedDetailsInput, arg2 ...request.Option) (*iam.GetServiceLastAccessedDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetServiceLastAccessedDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*iam.GetServiceLastAccessedDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceLastAccessedDetailsWithContext indicates an expected call of GetServiceLastAccessedDetailsWithContext
+func (mr *MockIAMAPIMockRecorder) GetServiceLastAccessedDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceLastAccessedDetailsWithContext", reflect.TypeOf((*MockIAMAPI)(nil).GetServiceLastAccessedDetailsWithContext), varargs...)
+}
+
+// GetServiceLastAccessedDetailsWithEntities mocks base method
+func (m *MockIAMAPI) GetServiceLastAccessedDetailsWithEntities(arg0 *iam.GetServiceLastAccessedDetailsWithEntitiesInput) (*iam.GetServiceLastAccessedDetailsWithEntitiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceLastAccessedDetailsWithEntities", arg0)
+	ret0, _ := ret[0].(*iam.GetServiceLastAccessedDetailsWithEntitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceLastAccessedDetailsWithEntities indicates an expected call of GetServiceLastAccessedDetailsWithEntities
+func (mr *MockIAMAPIMockRecorder) GetServiceLastAccessedDetailsWithEntities(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceLastAccessedDetailsWithEntities", reflect.TypeOf((*MockIAMAPI)(nil).GetServiceLastAccessedDetailsWithEntities), arg0)
+}
+
+// GetServiceLastAccessedDetailsWithEntitiesRequest mocks base method
+func (m *MockIAMAPI) GetServiceLastAccessedDetailsWithEntitiesRequest(arg0 *iam.GetServiceLastAccessedDetailsWithEntitiesInput) (*request.Request, *iam.GetServiceLastAccessedDetailsWithEntitiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceLastAccessedDetailsWithEntitiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iam.GetServiceLastAccessedDetailsWithEntitiesOutput)
+	return ret0, ret1
+}
+
+// GetServiceLastAccessedDetailsWithEntitiesRequest indicates an expected call of GetServiceLastAccessedDetailsWithEntitiesRequest
+func (mr *MockIAMAPIMockRecorder) GetServiceLastAccessedDetailsWithEntitiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceLastAccessedDetailsWithEntitiesRequest", reflect.TypeOf((*MockIAMAPI)(nil).GetServiceLastAccessedDetailsWithEntitiesRequest), arg0)
+}
+
+// GetServiceLastAccessedDetailsWithEntitiesWithContext mocks base method
+func (m *MockIAMAPI) GetServiceLastAccessedDetailsWithEntitiesWithContext(arg0 aws.Context, arg1 *iam.GetServiceLastAccessedDetailsWithEntitiesInput, arg2 ...request.Option) (*iam.GetServiceLastAccessedDetailsWithEntitiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetServiceLastAccessedDetailsWithEntitiesWithContext", varargs...)
+	ret0, _ := ret[0].(*iam.GetServiceLastAccessedDetailsWithEntitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceLastAccessedDetailsWithEntitiesWithContext indicates an expected call of GetServiceLastAccessedDetailsWithEntitiesWithContext
+func (mr *MockIAMAPIMockRecorder) GetServiceLastAccessedDetailsWithEntitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceLastAccessedDetailsWithEntitiesWithContext", reflect.TypeOf((*MockIAMAPI)(nil).GetServiceLastAccessedDetailsWithEntitiesWithContext), varargs...)
 }
 
 // GetServiceLinkedRoleDeletionStatus mocks base method
@@ -4760,6 +4910,56 @@ func (m *MockIAMAPI) ListPolicies(arg0 *iam.ListPoliciesInput) (*iam.ListPolicie
 func (mr *MockIAMAPIMockRecorder) ListPolicies(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPolicies", reflect.TypeOf((*MockIAMAPI)(nil).ListPolicies), arg0)
+}
+
+// ListPoliciesGrantingServiceAccess mocks base method
+func (m *MockIAMAPI) ListPoliciesGrantingServiceAccess(arg0 *iam.ListPoliciesGrantingServiceAccessInput) (*iam.ListPoliciesGrantingServiceAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPoliciesGrantingServiceAccess", arg0)
+	ret0, _ := ret[0].(*iam.ListPoliciesGrantingServiceAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPoliciesGrantingServiceAccess indicates an expected call of ListPoliciesGrantingServiceAccess
+func (mr *MockIAMAPIMockRecorder) ListPoliciesGrantingServiceAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPoliciesGrantingServiceAccess", reflect.TypeOf((*MockIAMAPI)(nil).ListPoliciesGrantingServiceAccess), arg0)
+}
+
+// ListPoliciesGrantingServiceAccessRequest mocks base method
+func (m *MockIAMAPI) ListPoliciesGrantingServiceAccessRequest(arg0 *iam.ListPoliciesGrantingServiceAccessInput) (*request.Request, *iam.ListPoliciesGrantingServiceAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPoliciesGrantingServiceAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iam.ListPoliciesGrantingServiceAccessOutput)
+	return ret0, ret1
+}
+
+// ListPoliciesGrantingServiceAccessRequest indicates an expected call of ListPoliciesGrantingServiceAccessRequest
+func (mr *MockIAMAPIMockRecorder) ListPoliciesGrantingServiceAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPoliciesGrantingServiceAccessRequest", reflect.TypeOf((*MockIAMAPI)(nil).ListPoliciesGrantingServiceAccessRequest), arg0)
+}
+
+// ListPoliciesGrantingServiceAccessWithContext mocks base method
+func (m *MockIAMAPI) ListPoliciesGrantingServiceAccessWithContext(arg0 aws.Context, arg1 *iam.ListPoliciesGrantingServiceAccessInput, arg2 ...request.Option) (*iam.ListPoliciesGrantingServiceAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPoliciesGrantingServiceAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*iam.ListPoliciesGrantingServiceAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPoliciesGrantingServiceAccessWithContext indicates an expected call of ListPoliciesGrantingServiceAccessWithContext
+func (mr *MockIAMAPIMockRecorder) ListPoliciesGrantingServiceAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPoliciesGrantingServiceAccessWithContext", reflect.TypeOf((*MockIAMAPI)(nil).ListPoliciesGrantingServiceAccessWithContext), varargs...)
 }
 
 // ListPoliciesPages mocks base method
