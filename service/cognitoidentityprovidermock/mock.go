@@ -4650,6 +4650,56 @@ func (mr *MockCognitoIdentityProviderAPIMockRecorder) UpdateUserPoolClientWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserPoolClientWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).UpdateUserPoolClientWithContext), varargs...)
 }
 
+// UpdateUserPoolDomain mocks base method
+func (m *MockCognitoIdentityProviderAPI) UpdateUserPoolDomain(arg0 *cognitoidentityprovider.UpdateUserPoolDomainInput) (*cognitoidentityprovider.UpdateUserPoolDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserPoolDomain", arg0)
+	ret0, _ := ret[0].(*cognitoidentityprovider.UpdateUserPoolDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserPoolDomain indicates an expected call of UpdateUserPoolDomain
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) UpdateUserPoolDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserPoolDomain", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).UpdateUserPoolDomain), arg0)
+}
+
+// UpdateUserPoolDomainRequest mocks base method
+func (m *MockCognitoIdentityProviderAPI) UpdateUserPoolDomainRequest(arg0 *cognitoidentityprovider.UpdateUserPoolDomainInput) (*request.Request, *cognitoidentityprovider.UpdateUserPoolDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserPoolDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cognitoidentityprovider.UpdateUserPoolDomainOutput)
+	return ret0, ret1
+}
+
+// UpdateUserPoolDomainRequest indicates an expected call of UpdateUserPoolDomainRequest
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) UpdateUserPoolDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserPoolDomainRequest", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).UpdateUserPoolDomainRequest), arg0)
+}
+
+// UpdateUserPoolDomainWithContext mocks base method
+func (m *MockCognitoIdentityProviderAPI) UpdateUserPoolDomainWithContext(arg0 aws.Context, arg1 *cognitoidentityprovider.UpdateUserPoolDomainInput, arg2 ...request.Option) (*cognitoidentityprovider.UpdateUserPoolDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUserPoolDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*cognitoidentityprovider.UpdateUserPoolDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserPoolDomainWithContext indicates an expected call of UpdateUserPoolDomainWithContext
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) UpdateUserPoolDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserPoolDomainWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).UpdateUserPoolDomainWithContext), varargs...)
+}
+
 // UpdateUserPoolRequest mocks base method
 func (m *MockCognitoIdentityProviderAPI) UpdateUserPoolRequest(arg0 *cognitoidentityprovider.UpdateUserPoolInput) (*request.Request, *cognitoidentityprovider.UpdateUserPoolOutput) {
 	m.ctrl.T.Helper()

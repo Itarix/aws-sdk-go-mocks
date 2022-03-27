@@ -2199,3 +2199,103 @@ func (mr *MockComprehendAPIMockRecorder) StopSentimentDetectionJobWithContext(ar
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopSentimentDetectionJobWithContext), varargs...)
 }
+
+// StopTrainingDocumentClassifier mocks base method
+func (m *MockComprehendAPI) StopTrainingDocumentClassifier(arg0 *comprehend.StopTrainingDocumentClassifierInput) (*comprehend.StopTrainingDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTrainingDocumentClassifier", arg0)
+	ret0, _ := ret[0].(*comprehend.StopTrainingDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTrainingDocumentClassifier indicates an expected call of StopTrainingDocumentClassifier
+func (mr *MockComprehendAPIMockRecorder) StopTrainingDocumentClassifier(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTrainingDocumentClassifier", reflect.TypeOf((*MockComprehendAPI)(nil).StopTrainingDocumentClassifier), arg0)
+}
+
+// StopTrainingDocumentClassifierRequest mocks base method
+func (m *MockComprehendAPI) StopTrainingDocumentClassifierRequest(arg0 *comprehend.StopTrainingDocumentClassifierInput) (*request.Request, *comprehend.StopTrainingDocumentClassifierOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTrainingDocumentClassifierRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StopTrainingDocumentClassifierOutput)
+	return ret0, ret1
+}
+
+// StopTrainingDocumentClassifierRequest indicates an expected call of StopTrainingDocumentClassifierRequest
+func (mr *MockComprehendAPIMockRecorder) StopTrainingDocumentClassifierRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTrainingDocumentClassifierRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StopTrainingDocumentClassifierRequest), arg0)
+}
+
+// StopTrainingDocumentClassifierWithContext mocks base method
+func (m *MockComprehendAPI) StopTrainingDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.StopTrainingDocumentClassifierInput, arg2 ...request.Option) (*comprehend.StopTrainingDocumentClassifierOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopTrainingDocumentClassifierWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StopTrainingDocumentClassifierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTrainingDocumentClassifierWithContext indicates an expected call of StopTrainingDocumentClassifierWithContext
+func (mr *MockComprehendAPIMockRecorder) StopTrainingDocumentClassifierWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTrainingDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopTrainingDocumentClassifierWithContext), varargs...)
+}
+
+// StopTrainingEntityRecognizer mocks base method
+func (m *MockComprehendAPI) StopTrainingEntityRecognizer(arg0 *comprehend.StopTrainingEntityRecognizerInput) (*comprehend.StopTrainingEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTrainingEntityRecognizer", arg0)
+	ret0, _ := ret[0].(*comprehend.StopTrainingEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTrainingEntityRecognizer indicates an expected call of StopTrainingEntityRecognizer
+func (mr *MockComprehendAPIMockRecorder) StopTrainingEntityRecognizer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTrainingEntityRecognizer", reflect.TypeOf((*MockComprehendAPI)(nil).StopTrainingEntityRecognizer), arg0)
+}
+
+// StopTrainingEntityRecognizerRequest mocks base method
+func (m *MockComprehendAPI) StopTrainingEntityRecognizerRequest(arg0 *comprehend.StopTrainingEntityRecognizerInput) (*request.Request, *comprehend.StopTrainingEntityRecognizerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTrainingEntityRecognizerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StopTrainingEntityRecognizerOutput)
+	return ret0, ret1
+}
+
+// StopTrainingEntityRecognizerRequest indicates an expected call of StopTrainingEntityRecognizerRequest
+func (mr *MockComprehendAPIMockRecorder) StopTrainingEntityRecognizerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTrainingEntityRecognizerRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StopTrainingEntityRecognizerRequest), arg0)
+}
+
+// StopTrainingEntityRecognizerWithContext mocks base method
+func (m *MockComprehendAPI) StopTrainingEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.StopTrainingEntityRecognizerInput, arg2 ...request.Option) (*comprehend.StopTrainingEntityRecognizerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopTrainingEntityRecognizerWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StopTrainingEntityRecognizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTrainingEntityRecognizerWithContext indicates an expected call of StopTrainingEntityRecognizerWithContext
+func (mr *MockComprehendAPIMockRecorder) StopTrainingEntityRecognizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTrainingEntityRecognizerWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopTrainingEntityRecognizerWithContext), varargs...)
+}
