@@ -100,7 +100,7 @@ do
     git commit -m "Automatic ci update Version into ${sdk_version}"
     git push
     git checkout main
-    git merge $name_branch
+    git merge --allow-unrelated-histories $name_branch
     git tag $sdk_version -m "Update version for ${sdk_version}"
     git push --tags
 
