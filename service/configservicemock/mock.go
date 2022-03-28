@@ -585,6 +585,56 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteRemediationConfigurationWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemediationConfigurationWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteRemediationConfigurationWithContext), varargs...)
 }
 
+// DeleteRemediationExceptions mocks base method
+func (m *MockConfigServiceAPI) DeleteRemediationExceptions(arg0 *configservice.DeleteRemediationExceptionsInput) (*configservice.DeleteRemediationExceptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRemediationExceptions", arg0)
+	ret0, _ := ret[0].(*configservice.DeleteRemediationExceptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRemediationExceptions indicates an expected call of DeleteRemediationExceptions
+func (mr *MockConfigServiceAPIMockRecorder) DeleteRemediationExceptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemediationExceptions", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteRemediationExceptions), arg0)
+}
+
+// DeleteRemediationExceptionsRequest mocks base method
+func (m *MockConfigServiceAPI) DeleteRemediationExceptionsRequest(arg0 *configservice.DeleteRemediationExceptionsInput) (*request.Request, *configservice.DeleteRemediationExceptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRemediationExceptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DeleteRemediationExceptionsOutput)
+	return ret0, ret1
+}
+
+// DeleteRemediationExceptionsRequest indicates an expected call of DeleteRemediationExceptionsRequest
+func (mr *MockConfigServiceAPIMockRecorder) DeleteRemediationExceptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemediationExceptionsRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteRemediationExceptionsRequest), arg0)
+}
+
+// DeleteRemediationExceptionsWithContext mocks base method
+func (m *MockConfigServiceAPI) DeleteRemediationExceptionsWithContext(arg0 context.Context, arg1 *configservice.DeleteRemediationExceptionsInput, arg2 ...request.Option) (*configservice.DeleteRemediationExceptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRemediationExceptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DeleteRemediationExceptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRemediationExceptionsWithContext indicates an expected call of DeleteRemediationExceptionsWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DeleteRemediationExceptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemediationExceptionsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteRemediationExceptionsWithContext), varargs...)
+}
+
 // DeleteRetentionConfiguration mocks base method
 func (m *MockConfigServiceAPI) DeleteRetentionConfiguration(arg0 *configservice.DeleteRetentionConfigurationInput) (*configservice.DeleteRetentionConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1483,6 +1533,89 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeRemediationConfigurationsWit
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRemediationConfigurationsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeRemediationConfigurationsWithContext), varargs...)
+}
+
+// DescribeRemediationExceptions mocks base method
+func (m *MockConfigServiceAPI) DescribeRemediationExceptions(arg0 *configservice.DescribeRemediationExceptionsInput) (*configservice.DescribeRemediationExceptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRemediationExceptions", arg0)
+	ret0, _ := ret[0].(*configservice.DescribeRemediationExceptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRemediationExceptions indicates an expected call of DescribeRemediationExceptions
+func (mr *MockConfigServiceAPIMockRecorder) DescribeRemediationExceptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRemediationExceptions", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeRemediationExceptions), arg0)
+}
+
+// DescribeRemediationExceptionsPages mocks base method
+func (m *MockConfigServiceAPI) DescribeRemediationExceptionsPages(arg0 *configservice.DescribeRemediationExceptionsInput, arg1 func(*configservice.DescribeRemediationExceptionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRemediationExceptionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRemediationExceptionsPages indicates an expected call of DescribeRemediationExceptionsPages
+func (mr *MockConfigServiceAPIMockRecorder) DescribeRemediationExceptionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRemediationExceptionsPages", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeRemediationExceptionsPages), arg0, arg1)
+}
+
+// DescribeRemediationExceptionsPagesWithContext mocks base method
+func (m *MockConfigServiceAPI) DescribeRemediationExceptionsPagesWithContext(arg0 context.Context, arg1 *configservice.DescribeRemediationExceptionsInput, arg2 func(*configservice.DescribeRemediationExceptionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRemediationExceptionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRemediationExceptionsPagesWithContext indicates an expected call of DescribeRemediationExceptionsPagesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DescribeRemediationExceptionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRemediationExceptionsPagesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeRemediationExceptionsPagesWithContext), varargs...)
+}
+
+// DescribeRemediationExceptionsRequest mocks base method
+func (m *MockConfigServiceAPI) DescribeRemediationExceptionsRequest(arg0 *configservice.DescribeRemediationExceptionsInput) (*request.Request, *configservice.DescribeRemediationExceptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRemediationExceptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DescribeRemediationExceptionsOutput)
+	return ret0, ret1
+}
+
+// DescribeRemediationExceptionsRequest indicates an expected call of DescribeRemediationExceptionsRequest
+func (mr *MockConfigServiceAPIMockRecorder) DescribeRemediationExceptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRemediationExceptionsRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeRemediationExceptionsRequest), arg0)
+}
+
+// DescribeRemediationExceptionsWithContext mocks base method
+func (m *MockConfigServiceAPI) DescribeRemediationExceptionsWithContext(arg0 context.Context, arg1 *configservice.DescribeRemediationExceptionsInput, arg2 ...request.Option) (*configservice.DescribeRemediationExceptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRemediationExceptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DescribeRemediationExceptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRemediationExceptionsWithContext indicates an expected call of DescribeRemediationExceptionsWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DescribeRemediationExceptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRemediationExceptionsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeRemediationExceptionsWithContext), varargs...)
 }
 
 // DescribeRemediationExecutionStatus mocks base method
@@ -2749,6 +2882,56 @@ func (mr *MockConfigServiceAPIMockRecorder) PutRemediationConfigurationsWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRemediationConfigurationsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRemediationConfigurationsWithContext), varargs...)
+}
+
+// PutRemediationExceptions mocks base method
+func (m *MockConfigServiceAPI) PutRemediationExceptions(arg0 *configservice.PutRemediationExceptionsInput) (*configservice.PutRemediationExceptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutRemediationExceptions", arg0)
+	ret0, _ := ret[0].(*configservice.PutRemediationExceptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutRemediationExceptions indicates an expected call of PutRemediationExceptions
+func (mr *MockConfigServiceAPIMockRecorder) PutRemediationExceptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRemediationExceptions", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRemediationExceptions), arg0)
+}
+
+// PutRemediationExceptionsRequest mocks base method
+func (m *MockConfigServiceAPI) PutRemediationExceptionsRequest(arg0 *configservice.PutRemediationExceptionsInput) (*request.Request, *configservice.PutRemediationExceptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutRemediationExceptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.PutRemediationExceptionsOutput)
+	return ret0, ret1
+}
+
+// PutRemediationExceptionsRequest indicates an expected call of PutRemediationExceptionsRequest
+func (mr *MockConfigServiceAPIMockRecorder) PutRemediationExceptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRemediationExceptionsRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRemediationExceptionsRequest), arg0)
+}
+
+// PutRemediationExceptionsWithContext mocks base method
+func (m *MockConfigServiceAPI) PutRemediationExceptionsWithContext(arg0 context.Context, arg1 *configservice.PutRemediationExceptionsInput, arg2 ...request.Option) (*configservice.PutRemediationExceptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutRemediationExceptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.PutRemediationExceptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutRemediationExceptionsWithContext indicates an expected call of PutRemediationExceptionsWithContext
+func (mr *MockConfigServiceAPIMockRecorder) PutRemediationExceptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRemediationExceptionsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRemediationExceptionsWithContext), varargs...)
 }
 
 // PutRetentionConfiguration mocks base method
