@@ -85,6 +85,56 @@ func (mr *MockCodeCommitAPIMockRecorder) BatchDescribeMergeConflictsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDescribeMergeConflictsWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchDescribeMergeConflictsWithContext), varargs...)
 }
 
+// BatchGetCommits mocks base method
+func (m *MockCodeCommitAPI) BatchGetCommits(arg0 *codecommit.BatchGetCommitsInput) (*codecommit.BatchGetCommitsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCommits", arg0)
+	ret0, _ := ret[0].(*codecommit.BatchGetCommitsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCommits indicates an expected call of BatchGetCommits
+func (mr *MockCodeCommitAPIMockRecorder) BatchGetCommits(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCommits", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchGetCommits), arg0)
+}
+
+// BatchGetCommitsRequest mocks base method
+func (m *MockCodeCommitAPI) BatchGetCommitsRequest(arg0 *codecommit.BatchGetCommitsInput) (*request.Request, *codecommit.BatchGetCommitsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCommitsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.BatchGetCommitsOutput)
+	return ret0, ret1
+}
+
+// BatchGetCommitsRequest indicates an expected call of BatchGetCommitsRequest
+func (mr *MockCodeCommitAPIMockRecorder) BatchGetCommitsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCommitsRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchGetCommitsRequest), arg0)
+}
+
+// BatchGetCommitsWithContext mocks base method
+func (m *MockCodeCommitAPI) BatchGetCommitsWithContext(arg0 context.Context, arg1 *codecommit.BatchGetCommitsInput, arg2 ...request.Option) (*codecommit.BatchGetCommitsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetCommitsWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.BatchGetCommitsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCommitsWithContext indicates an expected call of BatchGetCommitsWithContext
+func (mr *MockCodeCommitAPIMockRecorder) BatchGetCommitsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCommitsWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchGetCommitsWithContext), varargs...)
+}
+
 // BatchGetRepositories mocks base method
 func (m *MockCodeCommitAPI) BatchGetRepositories(arg0 *codecommit.BatchGetRepositoriesInput) (*codecommit.BatchGetRepositoriesOutput, error) {
 	m.ctrl.T.Helper()
