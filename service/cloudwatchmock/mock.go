@@ -85,6 +85,56 @@ func (mr *MockCloudWatchAPIMockRecorder) DeleteAlarmsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlarmsWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).DeleteAlarmsWithContext), varargs...)
 }
 
+// DeleteAnomalyDetector mocks base method
+func (m *MockCloudWatchAPI) DeleteAnomalyDetector(arg0 *cloudwatch.DeleteAnomalyDetectorInput) (*cloudwatch.DeleteAnomalyDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnomalyDetector", arg0)
+	ret0, _ := ret[0].(*cloudwatch.DeleteAnomalyDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnomalyDetector indicates an expected call of DeleteAnomalyDetector
+func (mr *MockCloudWatchAPIMockRecorder) DeleteAnomalyDetector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalyDetector", reflect.TypeOf((*MockCloudWatchAPI)(nil).DeleteAnomalyDetector), arg0)
+}
+
+// DeleteAnomalyDetectorRequest mocks base method
+func (m *MockCloudWatchAPI) DeleteAnomalyDetectorRequest(arg0 *cloudwatch.DeleteAnomalyDetectorInput) (*request.Request, *cloudwatch.DeleteAnomalyDetectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnomalyDetectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatch.DeleteAnomalyDetectorOutput)
+	return ret0, ret1
+}
+
+// DeleteAnomalyDetectorRequest indicates an expected call of DeleteAnomalyDetectorRequest
+func (mr *MockCloudWatchAPIMockRecorder) DeleteAnomalyDetectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalyDetectorRequest", reflect.TypeOf((*MockCloudWatchAPI)(nil).DeleteAnomalyDetectorRequest), arg0)
+}
+
+// DeleteAnomalyDetectorWithContext mocks base method
+func (m *MockCloudWatchAPI) DeleteAnomalyDetectorWithContext(arg0 context.Context, arg1 *cloudwatch.DeleteAnomalyDetectorInput, arg2 ...request.Option) (*cloudwatch.DeleteAnomalyDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAnomalyDetectorWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatch.DeleteAnomalyDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnomalyDetectorWithContext indicates an expected call of DeleteAnomalyDetectorWithContext
+func (mr *MockCloudWatchAPIMockRecorder) DeleteAnomalyDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalyDetectorWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).DeleteAnomalyDetectorWithContext), varargs...)
+}
+
 // DeleteDashboards mocks base method
 func (m *MockCloudWatchAPI) DeleteDashboards(arg0 *cloudwatch.DeleteDashboardsInput) (*cloudwatch.DeleteDashboardsOutput, error) {
 	m.ctrl.T.Helper()
@@ -349,6 +399,56 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAlarmsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAlarmsWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAlarmsWithContext), varargs...)
+}
+
+// DescribeAnomalyDetectors mocks base method
+func (m *MockCloudWatchAPI) DescribeAnomalyDetectors(arg0 *cloudwatch.DescribeAnomalyDetectorsInput) (*cloudwatch.DescribeAnomalyDetectorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnomalyDetectors", arg0)
+	ret0, _ := ret[0].(*cloudwatch.DescribeAnomalyDetectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnomalyDetectors indicates an expected call of DescribeAnomalyDetectors
+func (mr *MockCloudWatchAPIMockRecorder) DescribeAnomalyDetectors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyDetectors", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAnomalyDetectors), arg0)
+}
+
+// DescribeAnomalyDetectorsRequest mocks base method
+func (m *MockCloudWatchAPI) DescribeAnomalyDetectorsRequest(arg0 *cloudwatch.DescribeAnomalyDetectorsInput) (*request.Request, *cloudwatch.DescribeAnomalyDetectorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnomalyDetectorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatch.DescribeAnomalyDetectorsOutput)
+	return ret0, ret1
+}
+
+// DescribeAnomalyDetectorsRequest indicates an expected call of DescribeAnomalyDetectorsRequest
+func (mr *MockCloudWatchAPIMockRecorder) DescribeAnomalyDetectorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyDetectorsRequest", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAnomalyDetectorsRequest), arg0)
+}
+
+// DescribeAnomalyDetectorsWithContext mocks base method
+func (m *MockCloudWatchAPI) DescribeAnomalyDetectorsWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAnomalyDetectorsInput, arg2 ...request.Option) (*cloudwatch.DescribeAnomalyDetectorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAnomalyDetectorsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatch.DescribeAnomalyDetectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnomalyDetectorsWithContext indicates an expected call of DescribeAnomalyDetectorsWithContext
+func (mr *MockCloudWatchAPIMockRecorder) DescribeAnomalyDetectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyDetectorsWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAnomalyDetectorsWithContext), varargs...)
 }
 
 // DisableAlarmActions mocks base method
@@ -898,6 +998,56 @@ func (mr *MockCloudWatchAPIMockRecorder) ListTagsForResourceWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutAnomalyDetector mocks base method
+func (m *MockCloudWatchAPI) PutAnomalyDetector(arg0 *cloudwatch.PutAnomalyDetectorInput) (*cloudwatch.PutAnomalyDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAnomalyDetector", arg0)
+	ret0, _ := ret[0].(*cloudwatch.PutAnomalyDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAnomalyDetector indicates an expected call of PutAnomalyDetector
+func (mr *MockCloudWatchAPIMockRecorder) PutAnomalyDetector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAnomalyDetector", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutAnomalyDetector), arg0)
+}
+
+// PutAnomalyDetectorRequest mocks base method
+func (m *MockCloudWatchAPI) PutAnomalyDetectorRequest(arg0 *cloudwatch.PutAnomalyDetectorInput) (*request.Request, *cloudwatch.PutAnomalyDetectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAnomalyDetectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatch.PutAnomalyDetectorOutput)
+	return ret0, ret1
+}
+
+// PutAnomalyDetectorRequest indicates an expected call of PutAnomalyDetectorRequest
+func (mr *MockCloudWatchAPIMockRecorder) PutAnomalyDetectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAnomalyDetectorRequest", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutAnomalyDetectorRequest), arg0)
+}
+
+// PutAnomalyDetectorWithContext mocks base method
+func (m *MockCloudWatchAPI) PutAnomalyDetectorWithContext(arg0 context.Context, arg1 *cloudwatch.PutAnomalyDetectorInput, arg2 ...request.Option) (*cloudwatch.PutAnomalyDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAnomalyDetectorWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatch.PutAnomalyDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAnomalyDetectorWithContext indicates an expected call of PutAnomalyDetectorWithContext
+func (mr *MockCloudWatchAPIMockRecorder) PutAnomalyDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAnomalyDetectorWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutAnomalyDetectorWithContext), varargs...)
 }
 
 // PutDashboard mocks base method

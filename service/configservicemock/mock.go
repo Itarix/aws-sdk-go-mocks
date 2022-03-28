@@ -435,6 +435,56 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteEvaluationResultsWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluationResultsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteEvaluationResultsWithContext), varargs...)
 }
 
+// DeleteOrganizationConfigRule mocks base method
+func (m *MockConfigServiceAPI) DeleteOrganizationConfigRule(arg0 *configservice.DeleteOrganizationConfigRuleInput) (*configservice.DeleteOrganizationConfigRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOrganizationConfigRule", arg0)
+	ret0, _ := ret[0].(*configservice.DeleteOrganizationConfigRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOrganizationConfigRule indicates an expected call of DeleteOrganizationConfigRule
+func (mr *MockConfigServiceAPIMockRecorder) DeleteOrganizationConfigRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOrganizationConfigRule", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteOrganizationConfigRule), arg0)
+}
+
+// DeleteOrganizationConfigRuleRequest mocks base method
+func (m *MockConfigServiceAPI) DeleteOrganizationConfigRuleRequest(arg0 *configservice.DeleteOrganizationConfigRuleInput) (*request.Request, *configservice.DeleteOrganizationConfigRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOrganizationConfigRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DeleteOrganizationConfigRuleOutput)
+	return ret0, ret1
+}
+
+// DeleteOrganizationConfigRuleRequest indicates an expected call of DeleteOrganizationConfigRuleRequest
+func (mr *MockConfigServiceAPIMockRecorder) DeleteOrganizationConfigRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOrganizationConfigRuleRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteOrganizationConfigRuleRequest), arg0)
+}
+
+// DeleteOrganizationConfigRuleWithContext mocks base method
+func (m *MockConfigServiceAPI) DeleteOrganizationConfigRuleWithContext(arg0 context.Context, arg1 *configservice.DeleteOrganizationConfigRuleInput, arg2 ...request.Option) (*configservice.DeleteOrganizationConfigRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteOrganizationConfigRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DeleteOrganizationConfigRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOrganizationConfigRuleWithContext indicates an expected call of DeleteOrganizationConfigRuleWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DeleteOrganizationConfigRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOrganizationConfigRuleWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteOrganizationConfigRuleWithContext), varargs...)
+}
+
 // DeletePendingAggregationRequest mocks base method
 func (m *MockConfigServiceAPI) DeletePendingAggregationRequest(arg0 *configservice.DeletePendingAggregationRequestInput) (*configservice.DeletePendingAggregationRequestOutput, error) {
 	m.ctrl.T.Helper()
@@ -1235,6 +1285,106 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeDeliveryChannelsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDeliveryChannelsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeDeliveryChannelsWithContext), varargs...)
 }
 
+// DescribeOrganizationConfigRuleStatuses mocks base method
+func (m *MockConfigServiceAPI) DescribeOrganizationConfigRuleStatuses(arg0 *configservice.DescribeOrganizationConfigRuleStatusesInput) (*configservice.DescribeOrganizationConfigRuleStatusesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigRuleStatuses", arg0)
+	ret0, _ := ret[0].(*configservice.DescribeOrganizationConfigRuleStatusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigRuleStatuses indicates an expected call of DescribeOrganizationConfigRuleStatuses
+func (mr *MockConfigServiceAPIMockRecorder) DescribeOrganizationConfigRuleStatuses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigRuleStatuses", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeOrganizationConfigRuleStatuses), arg0)
+}
+
+// DescribeOrganizationConfigRuleStatusesRequest mocks base method
+func (m *MockConfigServiceAPI) DescribeOrganizationConfigRuleStatusesRequest(arg0 *configservice.DescribeOrganizationConfigRuleStatusesInput) (*request.Request, *configservice.DescribeOrganizationConfigRuleStatusesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigRuleStatusesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DescribeOrganizationConfigRuleStatusesOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigRuleStatusesRequest indicates an expected call of DescribeOrganizationConfigRuleStatusesRequest
+func (mr *MockConfigServiceAPIMockRecorder) DescribeOrganizationConfigRuleStatusesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigRuleStatusesRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeOrganizationConfigRuleStatusesRequest), arg0)
+}
+
+// DescribeOrganizationConfigRuleStatusesWithContext mocks base method
+func (m *MockConfigServiceAPI) DescribeOrganizationConfigRuleStatusesWithContext(arg0 context.Context, arg1 *configservice.DescribeOrganizationConfigRuleStatusesInput, arg2 ...request.Option) (*configservice.DescribeOrganizationConfigRuleStatusesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigRuleStatusesWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DescribeOrganizationConfigRuleStatusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigRuleStatusesWithContext indicates an expected call of DescribeOrganizationConfigRuleStatusesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DescribeOrganizationConfigRuleStatusesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigRuleStatusesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeOrganizationConfigRuleStatusesWithContext), varargs...)
+}
+
+// DescribeOrganizationConfigRules mocks base method
+func (m *MockConfigServiceAPI) DescribeOrganizationConfigRules(arg0 *configservice.DescribeOrganizationConfigRulesInput) (*configservice.DescribeOrganizationConfigRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigRules", arg0)
+	ret0, _ := ret[0].(*configservice.DescribeOrganizationConfigRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigRules indicates an expected call of DescribeOrganizationConfigRules
+func (mr *MockConfigServiceAPIMockRecorder) DescribeOrganizationConfigRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigRules", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeOrganizationConfigRules), arg0)
+}
+
+// DescribeOrganizationConfigRulesRequest mocks base method
+func (m *MockConfigServiceAPI) DescribeOrganizationConfigRulesRequest(arg0 *configservice.DescribeOrganizationConfigRulesInput) (*request.Request, *configservice.DescribeOrganizationConfigRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DescribeOrganizationConfigRulesOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigRulesRequest indicates an expected call of DescribeOrganizationConfigRulesRequest
+func (mr *MockConfigServiceAPIMockRecorder) DescribeOrganizationConfigRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigRulesRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeOrganizationConfigRulesRequest), arg0)
+}
+
+// DescribeOrganizationConfigRulesWithContext mocks base method
+func (m *MockConfigServiceAPI) DescribeOrganizationConfigRulesWithContext(arg0 context.Context, arg1 *configservice.DescribeOrganizationConfigRulesInput, arg2 ...request.Option) (*configservice.DescribeOrganizationConfigRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DescribeOrganizationConfigRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigRulesWithContext indicates an expected call of DescribeOrganizationConfigRulesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DescribeOrganizationConfigRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigRulesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DescribeOrganizationConfigRulesWithContext), varargs...)
+}
+
 // DescribePendingAggregationRequests mocks base method
 func (m *MockConfigServiceAPI) DescribePendingAggregationRequests(arg0 *configservice.DescribePendingAggregationRequestsInput) (*configservice.DescribePendingAggregationRequestsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1918,6 +2068,56 @@ func (mr *MockConfigServiceAPIMockRecorder) GetDiscoveredResourceCountsWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDiscoveredResourceCountsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetDiscoveredResourceCountsWithContext), varargs...)
 }
 
+// GetOrganizationConfigRuleDetailedStatus mocks base method
+func (m *MockConfigServiceAPI) GetOrganizationConfigRuleDetailedStatus(arg0 *configservice.GetOrganizationConfigRuleDetailedStatusInput) (*configservice.GetOrganizationConfigRuleDetailedStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOrganizationConfigRuleDetailedStatus", arg0)
+	ret0, _ := ret[0].(*configservice.GetOrganizationConfigRuleDetailedStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOrganizationConfigRuleDetailedStatus indicates an expected call of GetOrganizationConfigRuleDetailedStatus
+func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationConfigRuleDetailedStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationConfigRuleDetailedStatus", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationConfigRuleDetailedStatus), arg0)
+}
+
+// GetOrganizationConfigRuleDetailedStatusRequest mocks base method
+func (m *MockConfigServiceAPI) GetOrganizationConfigRuleDetailedStatusRequest(arg0 *configservice.GetOrganizationConfigRuleDetailedStatusInput) (*request.Request, *configservice.GetOrganizationConfigRuleDetailedStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOrganizationConfigRuleDetailedStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetOrganizationConfigRuleDetailedStatusOutput)
+	return ret0, ret1
+}
+
+// GetOrganizationConfigRuleDetailedStatusRequest indicates an expected call of GetOrganizationConfigRuleDetailedStatusRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationConfigRuleDetailedStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationConfigRuleDetailedStatusRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationConfigRuleDetailedStatusRequest), arg0)
+}
+
+// GetOrganizationConfigRuleDetailedStatusWithContext mocks base method
+func (m *MockConfigServiceAPI) GetOrganizationConfigRuleDetailedStatusWithContext(arg0 context.Context, arg1 *configservice.GetOrganizationConfigRuleDetailedStatusInput, arg2 ...request.Option) (*configservice.GetOrganizationConfigRuleDetailedStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetOrganizationConfigRuleDetailedStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetOrganizationConfigRuleDetailedStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOrganizationConfigRuleDetailedStatusWithContext indicates an expected call of GetOrganizationConfigRuleDetailedStatusWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationConfigRuleDetailedStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationConfigRuleDetailedStatusWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationConfigRuleDetailedStatusWithContext), varargs...)
+}
+
 // GetResourceConfigHistory mocks base method
 func (m *MockConfigServiceAPI) GetResourceConfigHistory(arg0 *configservice.GetResourceConfigHistoryInput) (*configservice.GetResourceConfigHistoryOutput, error) {
 	m.ctrl.T.Helper()
@@ -2449,6 +2649,56 @@ func (mr *MockConfigServiceAPIMockRecorder) PutEvaluationsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEvaluationsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutEvaluationsWithContext), varargs...)
+}
+
+// PutOrganizationConfigRule mocks base method
+func (m *MockConfigServiceAPI) PutOrganizationConfigRule(arg0 *configservice.PutOrganizationConfigRuleInput) (*configservice.PutOrganizationConfigRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutOrganizationConfigRule", arg0)
+	ret0, _ := ret[0].(*configservice.PutOrganizationConfigRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutOrganizationConfigRule indicates an expected call of PutOrganizationConfigRule
+func (mr *MockConfigServiceAPIMockRecorder) PutOrganizationConfigRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutOrganizationConfigRule", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutOrganizationConfigRule), arg0)
+}
+
+// PutOrganizationConfigRuleRequest mocks base method
+func (m *MockConfigServiceAPI) PutOrganizationConfigRuleRequest(arg0 *configservice.PutOrganizationConfigRuleInput) (*request.Request, *configservice.PutOrganizationConfigRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutOrganizationConfigRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.PutOrganizationConfigRuleOutput)
+	return ret0, ret1
+}
+
+// PutOrganizationConfigRuleRequest indicates an expected call of PutOrganizationConfigRuleRequest
+func (mr *MockConfigServiceAPIMockRecorder) PutOrganizationConfigRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutOrganizationConfigRuleRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutOrganizationConfigRuleRequest), arg0)
+}
+
+// PutOrganizationConfigRuleWithContext mocks base method
+func (m *MockConfigServiceAPI) PutOrganizationConfigRuleWithContext(arg0 context.Context, arg1 *configservice.PutOrganizationConfigRuleInput, arg2 ...request.Option) (*configservice.PutOrganizationConfigRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutOrganizationConfigRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.PutOrganizationConfigRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutOrganizationConfigRuleWithContext indicates an expected call of PutOrganizationConfigRuleWithContext
+func (mr *MockConfigServiceAPIMockRecorder) PutOrganizationConfigRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutOrganizationConfigRuleWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutOrganizationConfigRuleWithContext), varargs...)
 }
 
 // PutRemediationConfigurations mocks base method

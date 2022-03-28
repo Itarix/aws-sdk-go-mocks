@@ -250,6 +250,39 @@ func (mr *MockKinesisVideoAPIMockRecorder) ListStreams(arg0 interface{}) *gomock
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreams", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListStreams), arg0)
 }
 
+// ListStreamsPages mocks base method
+func (m *MockKinesisVideoAPI) ListStreamsPages(arg0 *kinesisvideo.ListStreamsInput, arg1 func(*kinesisvideo.ListStreamsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamsPages indicates an expected call of ListStreamsPages
+func (mr *MockKinesisVideoAPIMockRecorder) ListStreamsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamsPages", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListStreamsPages), arg0, arg1)
+}
+
+// ListStreamsPagesWithContext mocks base method
+func (m *MockKinesisVideoAPI) ListStreamsPagesWithContext(arg0 context.Context, arg1 *kinesisvideo.ListStreamsInput, arg2 func(*kinesisvideo.ListStreamsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamsPagesWithContext indicates an expected call of ListStreamsPagesWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) ListStreamsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamsPagesWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListStreamsPagesWithContext), varargs...)
+}
+
 // ListStreamsRequest mocks base method
 func (m *MockKinesisVideoAPI) ListStreamsRequest(arg0 *kinesisvideo.ListStreamsInput) (*request.Request, *kinesisvideo.ListStreamsOutput) {
 	m.ctrl.T.Helper()

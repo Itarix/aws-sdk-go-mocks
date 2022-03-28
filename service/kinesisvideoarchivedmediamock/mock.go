@@ -35,6 +35,56 @@ func (m *MockKinesisVideoArchivedMediaAPI) EXPECT() *MockKinesisVideoArchivedMed
 	return m.recorder
 }
 
+// GetDASHStreamingSessionURL mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetDASHStreamingSessionURL(arg0 *kinesisvideoarchivedmedia.GetDASHStreamingSessionURLInput) (*kinesisvideoarchivedmedia.GetDASHStreamingSessionURLOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDASHStreamingSessionURL", arg0)
+	ret0, _ := ret[0].(*kinesisvideoarchivedmedia.GetDASHStreamingSessionURLOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDASHStreamingSessionURL indicates an expected call of GetDASHStreamingSessionURL
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetDASHStreamingSessionURL(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDASHStreamingSessionURL", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetDASHStreamingSessionURL), arg0)
+}
+
+// GetDASHStreamingSessionURLRequest mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetDASHStreamingSessionURLRequest(arg0 *kinesisvideoarchivedmedia.GetDASHStreamingSessionURLInput) (*request.Request, *kinesisvideoarchivedmedia.GetDASHStreamingSessionURLOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDASHStreamingSessionURLRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideoarchivedmedia.GetDASHStreamingSessionURLOutput)
+	return ret0, ret1
+}
+
+// GetDASHStreamingSessionURLRequest indicates an expected call of GetDASHStreamingSessionURLRequest
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetDASHStreamingSessionURLRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDASHStreamingSessionURLRequest", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetDASHStreamingSessionURLRequest), arg0)
+}
+
+// GetDASHStreamingSessionURLWithContext mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetDASHStreamingSessionURLWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.GetDASHStreamingSessionURLInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.GetDASHStreamingSessionURLOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDASHStreamingSessionURLWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideoarchivedmedia.GetDASHStreamingSessionURLOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDASHStreamingSessionURLWithContext indicates an expected call of GetDASHStreamingSessionURLWithContext
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetDASHStreamingSessionURLWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDASHStreamingSessionURLWithContext", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetDASHStreamingSessionURLWithContext), varargs...)
+}
+
 // GetHLSStreamingSessionURL mocks base method
 func (m *MockKinesisVideoArchivedMediaAPI) GetHLSStreamingSessionURL(arg0 *kinesisvideoarchivedmedia.GetHLSStreamingSessionURLInput) (*kinesisvideoarchivedmedia.GetHLSStreamingSessionURLOutput, error) {
 	m.ctrl.T.Helper()
@@ -148,6 +198,39 @@ func (m *MockKinesisVideoArchivedMediaAPI) ListFragments(arg0 *kinesisvideoarchi
 func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) ListFragments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFragments", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).ListFragments), arg0)
+}
+
+// ListFragmentsPages mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) ListFragmentsPages(arg0 *kinesisvideoarchivedmedia.ListFragmentsInput, arg1 func(*kinesisvideoarchivedmedia.ListFragmentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFragmentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFragmentsPages indicates an expected call of ListFragmentsPages
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) ListFragmentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFragmentsPages", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).ListFragmentsPages), arg0, arg1)
+}
+
+// ListFragmentsPagesWithContext mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) ListFragmentsPagesWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.ListFragmentsInput, arg2 func(*kinesisvideoarchivedmedia.ListFragmentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFragmentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFragmentsPagesWithContext indicates an expected call of ListFragmentsPagesWithContext
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) ListFragmentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFragmentsPagesWithContext", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).ListFragmentsPagesWithContext), varargs...)
 }
 
 // ListFragmentsRequest mocks base method
