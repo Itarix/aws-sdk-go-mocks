@@ -1883,6 +1883,56 @@ func (mr *MockCodePipelineAPIMockRecorder) StartPipelineExecutionWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPipelineExecutionWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).StartPipelineExecutionWithContext), varargs...)
 }
 
+// StopPipelineExecution mocks base method
+func (m *MockCodePipelineAPI) StopPipelineExecution(arg0 *codepipeline.StopPipelineExecutionInput) (*codepipeline.StopPipelineExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopPipelineExecution", arg0)
+	ret0, _ := ret[0].(*codepipeline.StopPipelineExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopPipelineExecution indicates an expected call of StopPipelineExecution
+func (mr *MockCodePipelineAPIMockRecorder) StopPipelineExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopPipelineExecution", reflect.TypeOf((*MockCodePipelineAPI)(nil).StopPipelineExecution), arg0)
+}
+
+// StopPipelineExecutionRequest mocks base method
+func (m *MockCodePipelineAPI) StopPipelineExecutionRequest(arg0 *codepipeline.StopPipelineExecutionInput) (*request.Request, *codepipeline.StopPipelineExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopPipelineExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codepipeline.StopPipelineExecutionOutput)
+	return ret0, ret1
+}
+
+// StopPipelineExecutionRequest indicates an expected call of StopPipelineExecutionRequest
+func (mr *MockCodePipelineAPIMockRecorder) StopPipelineExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopPipelineExecutionRequest", reflect.TypeOf((*MockCodePipelineAPI)(nil).StopPipelineExecutionRequest), arg0)
+}
+
+// StopPipelineExecutionWithContext mocks base method
+func (m *MockCodePipelineAPI) StopPipelineExecutionWithContext(arg0 context.Context, arg1 *codepipeline.StopPipelineExecutionInput, arg2 ...request.Option) (*codepipeline.StopPipelineExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopPipelineExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*codepipeline.StopPipelineExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopPipelineExecutionWithContext indicates an expected call of StopPipelineExecutionWithContext
+func (mr *MockCodePipelineAPIMockRecorder) StopPipelineExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopPipelineExecutionWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).StopPipelineExecutionWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockCodePipelineAPI) TagResource(arg0 *codepipeline.TagResourceInput) (*codepipeline.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
