@@ -21662,6 +21662,56 @@ func (mr *MockEC2APIMockRecorder) StartInstancesWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInstancesWithContext", reflect.TypeOf((*MockEC2API)(nil).StartInstancesWithContext), varargs...)
 }
 
+// StartVpcEndpointServicePrivateDnsVerification mocks base method
+func (m *MockEC2API) StartVpcEndpointServicePrivateDnsVerification(arg0 *ec2.StartVpcEndpointServicePrivateDnsVerificationInput) (*ec2.StartVpcEndpointServicePrivateDnsVerificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVpcEndpointServicePrivateDnsVerification", arg0)
+	ret0, _ := ret[0].(*ec2.StartVpcEndpointServicePrivateDnsVerificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVpcEndpointServicePrivateDnsVerification indicates an expected call of StartVpcEndpointServicePrivateDnsVerification
+func (mr *MockEC2APIMockRecorder) StartVpcEndpointServicePrivateDnsVerification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVpcEndpointServicePrivateDnsVerification", reflect.TypeOf((*MockEC2API)(nil).StartVpcEndpointServicePrivateDnsVerification), arg0)
+}
+
+// StartVpcEndpointServicePrivateDnsVerificationRequest mocks base method
+func (m *MockEC2API) StartVpcEndpointServicePrivateDnsVerificationRequest(arg0 *ec2.StartVpcEndpointServicePrivateDnsVerificationInput) (*request.Request, *ec2.StartVpcEndpointServicePrivateDnsVerificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVpcEndpointServicePrivateDnsVerificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.StartVpcEndpointServicePrivateDnsVerificationOutput)
+	return ret0, ret1
+}
+
+// StartVpcEndpointServicePrivateDnsVerificationRequest indicates an expected call of StartVpcEndpointServicePrivateDnsVerificationRequest
+func (mr *MockEC2APIMockRecorder) StartVpcEndpointServicePrivateDnsVerificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVpcEndpointServicePrivateDnsVerificationRequest", reflect.TypeOf((*MockEC2API)(nil).StartVpcEndpointServicePrivateDnsVerificationRequest), arg0)
+}
+
+// StartVpcEndpointServicePrivateDnsVerificationWithContext mocks base method
+func (m *MockEC2API) StartVpcEndpointServicePrivateDnsVerificationWithContext(arg0 context.Context, arg1 *ec2.StartVpcEndpointServicePrivateDnsVerificationInput, arg2 ...request.Option) (*ec2.StartVpcEndpointServicePrivateDnsVerificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartVpcEndpointServicePrivateDnsVerificationWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.StartVpcEndpointServicePrivateDnsVerificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVpcEndpointServicePrivateDnsVerificationWithContext indicates an expected call of StartVpcEndpointServicePrivateDnsVerificationWithContext
+func (mr *MockEC2APIMockRecorder) StartVpcEndpointServicePrivateDnsVerificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVpcEndpointServicePrivateDnsVerificationWithContext", reflect.TypeOf((*MockEC2API)(nil).StartVpcEndpointServicePrivateDnsVerificationWithContext), varargs...)
+}
+
 // StopInstances mocks base method
 func (m *MockEC2API) StopInstances(arg0 *ec2.StopInstancesInput) (*ec2.StopInstancesOutput, error) {
 	m.ctrl.T.Helper()
