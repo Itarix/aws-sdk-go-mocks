@@ -285,6 +285,56 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) GetConfigurationSetEventDestinati
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigurationSetEventDestinationsWithContext", reflect.TypeOf((*MockPinpointSMSVoiceAPI)(nil).GetConfigurationSetEventDestinationsWithContext), varargs...)
 }
 
+// ListConfigurationSets mocks base method
+func (m *MockPinpointSMSVoiceAPI) ListConfigurationSets(arg0 *pinpointsmsvoice.ListConfigurationSetsInput) (*pinpointsmsvoice.ListConfigurationSetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConfigurationSets", arg0)
+	ret0, _ := ret[0].(*pinpointsmsvoice.ListConfigurationSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConfigurationSets indicates an expected call of ListConfigurationSets
+func (mr *MockPinpointSMSVoiceAPIMockRecorder) ListConfigurationSets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationSets", reflect.TypeOf((*MockPinpointSMSVoiceAPI)(nil).ListConfigurationSets), arg0)
+}
+
+// ListConfigurationSetsRequest mocks base method
+func (m *MockPinpointSMSVoiceAPI) ListConfigurationSetsRequest(arg0 *pinpointsmsvoice.ListConfigurationSetsInput) (*request.Request, *pinpointsmsvoice.ListConfigurationSetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConfigurationSetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpointsmsvoice.ListConfigurationSetsOutput)
+	return ret0, ret1
+}
+
+// ListConfigurationSetsRequest indicates an expected call of ListConfigurationSetsRequest
+func (mr *MockPinpointSMSVoiceAPIMockRecorder) ListConfigurationSetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationSetsRequest", reflect.TypeOf((*MockPinpointSMSVoiceAPI)(nil).ListConfigurationSetsRequest), arg0)
+}
+
+// ListConfigurationSetsWithContext mocks base method
+func (m *MockPinpointSMSVoiceAPI) ListConfigurationSetsWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.ListConfigurationSetsInput, arg2 ...request.Option) (*pinpointsmsvoice.ListConfigurationSetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConfigurationSetsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpointsmsvoice.ListConfigurationSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConfigurationSetsWithContext indicates an expected call of ListConfigurationSetsWithContext
+func (mr *MockPinpointSMSVoiceAPIMockRecorder) ListConfigurationSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationSetsWithContext", reflect.TypeOf((*MockPinpointSMSVoiceAPI)(nil).ListConfigurationSetsWithContext), varargs...)
+}
+
 // SendVoiceMessage mocks base method
 func (m *MockPinpointSMSVoiceAPI) SendVoiceMessage(arg0 *pinpointsmsvoice.SendVoiceMessageInput) (*pinpointsmsvoice.SendVoiceMessageOutput, error) {
 	m.ctrl.T.Helper()

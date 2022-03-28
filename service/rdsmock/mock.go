@@ -85,6 +85,56 @@ func (mr *MockRDSAPIMockRecorder) AddRoleToDBClusterWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRoleToDBClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).AddRoleToDBClusterWithContext), varargs...)
 }
 
+// AddRoleToDBInstance mocks base method
+func (m *MockRDSAPI) AddRoleToDBInstance(arg0 *rds.AddRoleToDBInstanceInput) (*rds.AddRoleToDBInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddRoleToDBInstance", arg0)
+	ret0, _ := ret[0].(*rds.AddRoleToDBInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddRoleToDBInstance indicates an expected call of AddRoleToDBInstance
+func (mr *MockRDSAPIMockRecorder) AddRoleToDBInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRoleToDBInstance", reflect.TypeOf((*MockRDSAPI)(nil).AddRoleToDBInstance), arg0)
+}
+
+// AddRoleToDBInstanceRequest mocks base method
+func (m *MockRDSAPI) AddRoleToDBInstanceRequest(arg0 *rds.AddRoleToDBInstanceInput) (*request.Request, *rds.AddRoleToDBInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddRoleToDBInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.AddRoleToDBInstanceOutput)
+	return ret0, ret1
+}
+
+// AddRoleToDBInstanceRequest indicates an expected call of AddRoleToDBInstanceRequest
+func (mr *MockRDSAPIMockRecorder) AddRoleToDBInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRoleToDBInstanceRequest", reflect.TypeOf((*MockRDSAPI)(nil).AddRoleToDBInstanceRequest), arg0)
+}
+
+// AddRoleToDBInstanceWithContext mocks base method
+func (m *MockRDSAPI) AddRoleToDBInstanceWithContext(arg0 context.Context, arg1 *rds.AddRoleToDBInstanceInput, arg2 ...request.Option) (*rds.AddRoleToDBInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddRoleToDBInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.AddRoleToDBInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddRoleToDBInstanceWithContext indicates an expected call of AddRoleToDBInstanceWithContext
+func (mr *MockRDSAPIMockRecorder) AddRoleToDBInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRoleToDBInstanceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).AddRoleToDBInstanceWithContext), varargs...)
+}
+
 // AddSourceIdentifierToSubscription mocks base method
 func (m *MockRDSAPI) AddSourceIdentifierToSubscription(arg0 *rds.AddSourceIdentifierToSubscriptionInput) (*rds.AddSourceIdentifierToSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
@@ -5293,6 +5343,56 @@ func (mr *MockRDSAPIMockRecorder) RemoveRoleFromDBClusterWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRoleFromDBClusterWithContext", reflect.TypeOf((*MockRDSAPI)(nil).RemoveRoleFromDBClusterWithContext), varargs...)
+}
+
+// RemoveRoleFromDBInstance mocks base method
+func (m *MockRDSAPI) RemoveRoleFromDBInstance(arg0 *rds.RemoveRoleFromDBInstanceInput) (*rds.RemoveRoleFromDBInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveRoleFromDBInstance", arg0)
+	ret0, _ := ret[0].(*rds.RemoveRoleFromDBInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveRoleFromDBInstance indicates an expected call of RemoveRoleFromDBInstance
+func (mr *MockRDSAPIMockRecorder) RemoveRoleFromDBInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRoleFromDBInstance", reflect.TypeOf((*MockRDSAPI)(nil).RemoveRoleFromDBInstance), arg0)
+}
+
+// RemoveRoleFromDBInstanceRequest mocks base method
+func (m *MockRDSAPI) RemoveRoleFromDBInstanceRequest(arg0 *rds.RemoveRoleFromDBInstanceInput) (*request.Request, *rds.RemoveRoleFromDBInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveRoleFromDBInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.RemoveRoleFromDBInstanceOutput)
+	return ret0, ret1
+}
+
+// RemoveRoleFromDBInstanceRequest indicates an expected call of RemoveRoleFromDBInstanceRequest
+func (mr *MockRDSAPIMockRecorder) RemoveRoleFromDBInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRoleFromDBInstanceRequest", reflect.TypeOf((*MockRDSAPI)(nil).RemoveRoleFromDBInstanceRequest), arg0)
+}
+
+// RemoveRoleFromDBInstanceWithContext mocks base method
+func (m *MockRDSAPI) RemoveRoleFromDBInstanceWithContext(arg0 context.Context, arg1 *rds.RemoveRoleFromDBInstanceInput, arg2 ...request.Option) (*rds.RemoveRoleFromDBInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveRoleFromDBInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.RemoveRoleFromDBInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveRoleFromDBInstanceWithContext indicates an expected call of RemoveRoleFromDBInstanceWithContext
+func (mr *MockRDSAPIMockRecorder) RemoveRoleFromDBInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRoleFromDBInstanceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).RemoveRoleFromDBInstanceWithContext), varargs...)
 }
 
 // RemoveSourceIdentifierFromSubscription mocks base method
