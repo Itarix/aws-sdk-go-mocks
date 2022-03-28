@@ -85,6 +85,56 @@ func (mr *MockTranslateAPIMockRecorder) DeleteTerminologyWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTerminologyWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).DeleteTerminologyWithContext), varargs...)
 }
 
+// DescribeTextTranslationJob mocks base method
+func (m *MockTranslateAPI) DescribeTextTranslationJob(arg0 *translate.DescribeTextTranslationJobInput) (*translate.DescribeTextTranslationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTextTranslationJob", arg0)
+	ret0, _ := ret[0].(*translate.DescribeTextTranslationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTextTranslationJob indicates an expected call of DescribeTextTranslationJob
+func (mr *MockTranslateAPIMockRecorder) DescribeTextTranslationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTextTranslationJob", reflect.TypeOf((*MockTranslateAPI)(nil).DescribeTextTranslationJob), arg0)
+}
+
+// DescribeTextTranslationJobRequest mocks base method
+func (m *MockTranslateAPI) DescribeTextTranslationJobRequest(arg0 *translate.DescribeTextTranslationJobInput) (*request.Request, *translate.DescribeTextTranslationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTextTranslationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.DescribeTextTranslationJobOutput)
+	return ret0, ret1
+}
+
+// DescribeTextTranslationJobRequest indicates an expected call of DescribeTextTranslationJobRequest
+func (mr *MockTranslateAPIMockRecorder) DescribeTextTranslationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTextTranslationJobRequest", reflect.TypeOf((*MockTranslateAPI)(nil).DescribeTextTranslationJobRequest), arg0)
+}
+
+// DescribeTextTranslationJobWithContext mocks base method
+func (m *MockTranslateAPI) DescribeTextTranslationJobWithContext(arg0 context.Context, arg1 *translate.DescribeTextTranslationJobInput, arg2 ...request.Option) (*translate.DescribeTextTranslationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTextTranslationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.DescribeTextTranslationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTextTranslationJobWithContext indicates an expected call of DescribeTextTranslationJobWithContext
+func (mr *MockTranslateAPIMockRecorder) DescribeTextTranslationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTextTranslationJobWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).DescribeTextTranslationJobWithContext), varargs...)
+}
+
 // GetTerminology mocks base method
 func (m *MockTranslateAPI) GetTerminology(arg0 *translate.GetTerminologyInput) (*translate.GetTerminologyOutput, error) {
 	m.ctrl.T.Helper()
@@ -200,6 +250,39 @@ func (mr *MockTranslateAPIMockRecorder) ListTerminologies(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologies", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologies), arg0)
 }
 
+// ListTerminologiesPages mocks base method
+func (m *MockTranslateAPI) ListTerminologiesPages(arg0 *translate.ListTerminologiesInput, arg1 func(*translate.ListTerminologiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTerminologiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTerminologiesPages indicates an expected call of ListTerminologiesPages
+func (mr *MockTranslateAPIMockRecorder) ListTerminologiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologiesPages", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologiesPages), arg0, arg1)
+}
+
+// ListTerminologiesPagesWithContext mocks base method
+func (m *MockTranslateAPI) ListTerminologiesPagesWithContext(arg0 context.Context, arg1 *translate.ListTerminologiesInput, arg2 func(*translate.ListTerminologiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTerminologiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTerminologiesPagesWithContext indicates an expected call of ListTerminologiesPagesWithContext
+func (mr *MockTranslateAPIMockRecorder) ListTerminologiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologiesPagesWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologiesPagesWithContext), varargs...)
+}
+
 // ListTerminologiesRequest mocks base method
 func (m *MockTranslateAPI) ListTerminologiesRequest(arg0 *translate.ListTerminologiesInput) (*request.Request, *translate.ListTerminologiesOutput) {
 	m.ctrl.T.Helper()
@@ -233,6 +316,189 @@ func (mr *MockTranslateAPIMockRecorder) ListTerminologiesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTerminologiesWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListTerminologiesWithContext), varargs...)
+}
+
+// ListTextTranslationJobs mocks base method
+func (m *MockTranslateAPI) ListTextTranslationJobs(arg0 *translate.ListTextTranslationJobsInput) (*translate.ListTextTranslationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTextTranslationJobs", arg0)
+	ret0, _ := ret[0].(*translate.ListTextTranslationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTextTranslationJobs indicates an expected call of ListTextTranslationJobs
+func (mr *MockTranslateAPIMockRecorder) ListTextTranslationJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTextTranslationJobs", reflect.TypeOf((*MockTranslateAPI)(nil).ListTextTranslationJobs), arg0)
+}
+
+// ListTextTranslationJobsPages mocks base method
+func (m *MockTranslateAPI) ListTextTranslationJobsPages(arg0 *translate.ListTextTranslationJobsInput, arg1 func(*translate.ListTextTranslationJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTextTranslationJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTextTranslationJobsPages indicates an expected call of ListTextTranslationJobsPages
+func (mr *MockTranslateAPIMockRecorder) ListTextTranslationJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTextTranslationJobsPages", reflect.TypeOf((*MockTranslateAPI)(nil).ListTextTranslationJobsPages), arg0, arg1)
+}
+
+// ListTextTranslationJobsPagesWithContext mocks base method
+func (m *MockTranslateAPI) ListTextTranslationJobsPagesWithContext(arg0 context.Context, arg1 *translate.ListTextTranslationJobsInput, arg2 func(*translate.ListTextTranslationJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTextTranslationJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTextTranslationJobsPagesWithContext indicates an expected call of ListTextTranslationJobsPagesWithContext
+func (mr *MockTranslateAPIMockRecorder) ListTextTranslationJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTextTranslationJobsPagesWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListTextTranslationJobsPagesWithContext), varargs...)
+}
+
+// ListTextTranslationJobsRequest mocks base method
+func (m *MockTranslateAPI) ListTextTranslationJobsRequest(arg0 *translate.ListTextTranslationJobsInput) (*request.Request, *translate.ListTextTranslationJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTextTranslationJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.ListTextTranslationJobsOutput)
+	return ret0, ret1
+}
+
+// ListTextTranslationJobsRequest indicates an expected call of ListTextTranslationJobsRequest
+func (mr *MockTranslateAPIMockRecorder) ListTextTranslationJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTextTranslationJobsRequest", reflect.TypeOf((*MockTranslateAPI)(nil).ListTextTranslationJobsRequest), arg0)
+}
+
+// ListTextTranslationJobsWithContext mocks base method
+func (m *MockTranslateAPI) ListTextTranslationJobsWithContext(arg0 context.Context, arg1 *translate.ListTextTranslationJobsInput, arg2 ...request.Option) (*translate.ListTextTranslationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTextTranslationJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.ListTextTranslationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTextTranslationJobsWithContext indicates an expected call of ListTextTranslationJobsWithContext
+func (mr *MockTranslateAPIMockRecorder) ListTextTranslationJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTextTranslationJobsWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListTextTranslationJobsWithContext), varargs...)
+}
+
+// StartTextTranslationJob mocks base method
+func (m *MockTranslateAPI) StartTextTranslationJob(arg0 *translate.StartTextTranslationJobInput) (*translate.StartTextTranslationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTextTranslationJob", arg0)
+	ret0, _ := ret[0].(*translate.StartTextTranslationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTextTranslationJob indicates an expected call of StartTextTranslationJob
+func (mr *MockTranslateAPIMockRecorder) StartTextTranslationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTextTranslationJob", reflect.TypeOf((*MockTranslateAPI)(nil).StartTextTranslationJob), arg0)
+}
+
+// StartTextTranslationJobRequest mocks base method
+func (m *MockTranslateAPI) StartTextTranslationJobRequest(arg0 *translate.StartTextTranslationJobInput) (*request.Request, *translate.StartTextTranslationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTextTranslationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.StartTextTranslationJobOutput)
+	return ret0, ret1
+}
+
+// StartTextTranslationJobRequest indicates an expected call of StartTextTranslationJobRequest
+func (mr *MockTranslateAPIMockRecorder) StartTextTranslationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTextTranslationJobRequest", reflect.TypeOf((*MockTranslateAPI)(nil).StartTextTranslationJobRequest), arg0)
+}
+
+// StartTextTranslationJobWithContext mocks base method
+func (m *MockTranslateAPI) StartTextTranslationJobWithContext(arg0 context.Context, arg1 *translate.StartTextTranslationJobInput, arg2 ...request.Option) (*translate.StartTextTranslationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartTextTranslationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.StartTextTranslationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTextTranslationJobWithContext indicates an expected call of StartTextTranslationJobWithContext
+func (mr *MockTranslateAPIMockRecorder) StartTextTranslationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTextTranslationJobWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).StartTextTranslationJobWithContext), varargs...)
+}
+
+// StopTextTranslationJob mocks base method
+func (m *MockTranslateAPI) StopTextTranslationJob(arg0 *translate.StopTextTranslationJobInput) (*translate.StopTextTranslationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTextTranslationJob", arg0)
+	ret0, _ := ret[0].(*translate.StopTextTranslationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTextTranslationJob indicates an expected call of StopTextTranslationJob
+func (mr *MockTranslateAPIMockRecorder) StopTextTranslationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTextTranslationJob", reflect.TypeOf((*MockTranslateAPI)(nil).StopTextTranslationJob), arg0)
+}
+
+// StopTextTranslationJobRequest mocks base method
+func (m *MockTranslateAPI) StopTextTranslationJobRequest(arg0 *translate.StopTextTranslationJobInput) (*request.Request, *translate.StopTextTranslationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTextTranslationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.StopTextTranslationJobOutput)
+	return ret0, ret1
+}
+
+// StopTextTranslationJobRequest indicates an expected call of StopTextTranslationJobRequest
+func (mr *MockTranslateAPIMockRecorder) StopTextTranslationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTextTranslationJobRequest", reflect.TypeOf((*MockTranslateAPI)(nil).StopTextTranslationJobRequest), arg0)
+}
+
+// StopTextTranslationJobWithContext mocks base method
+func (m *MockTranslateAPI) StopTextTranslationJobWithContext(arg0 context.Context, arg1 *translate.StopTextTranslationJobInput, arg2 ...request.Option) (*translate.StopTextTranslationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopTextTranslationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.StopTextTranslationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTextTranslationJobWithContext indicates an expected call of StopTextTranslationJobWithContext
+func (mr *MockTranslateAPIMockRecorder) StopTextTranslationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTextTranslationJobWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).StopTextTranslationJobWithContext), varargs...)
 }
 
 // Text mocks base method
