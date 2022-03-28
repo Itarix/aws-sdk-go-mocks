@@ -834,6 +834,56 @@ func (mr *MockApplicationInsightsAPIMockRecorder) ListProblemsWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProblemsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListProblemsWithContext), varargs...)
 }
 
+// UpdateApplication mocks base method
+func (m *MockApplicationInsightsAPI) UpdateApplication(arg0 *applicationinsights.UpdateApplicationInput) (*applicationinsights.UpdateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplication", arg0)
+	ret0, _ := ret[0].(*applicationinsights.UpdateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplication indicates an expected call of UpdateApplication
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplication", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateApplication), arg0)
+}
+
+// UpdateApplicationRequest mocks base method
+func (m *MockApplicationInsightsAPI) UpdateApplicationRequest(arg0 *applicationinsights.UpdateApplicationInput) (*request.Request, *applicationinsights.UpdateApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.UpdateApplicationOutput)
+	return ret0, ret1
+}
+
+// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateApplicationRequest), arg0)
+}
+
+// UpdateApplicationWithContext mocks base method
+func (m *MockApplicationInsightsAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *applicationinsights.UpdateApplicationInput, arg2 ...request.Option) (*applicationinsights.UpdateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.UpdateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateApplicationWithContext), varargs...)
+}
+
 // UpdateComponent mocks base method
 func (m *MockApplicationInsightsAPI) UpdateComponent(arg0 *applicationinsights.UpdateComponentInput) (*applicationinsights.UpdateComponentOutput, error) {
 	m.ctrl.T.Helper()
