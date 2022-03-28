@@ -10360,6 +10360,89 @@ func (mr *MockEC2APIMockRecorder) DescribeInternetGatewaysWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInternetGatewaysWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeInternetGatewaysWithContext), varargs...)
 }
 
+// DescribeIpv6Pools mocks base method
+func (m *MockEC2API) DescribeIpv6Pools(arg0 *ec2.DescribeIpv6PoolsInput) (*ec2.DescribeIpv6PoolsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeIpv6Pools", arg0)
+	ret0, _ := ret[0].(*ec2.DescribeIpv6PoolsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeIpv6Pools indicates an expected call of DescribeIpv6Pools
+func (mr *MockEC2APIMockRecorder) DescribeIpv6Pools(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpv6Pools", reflect.TypeOf((*MockEC2API)(nil).DescribeIpv6Pools), arg0)
+}
+
+// DescribeIpv6PoolsPages mocks base method
+func (m *MockEC2API) DescribeIpv6PoolsPages(arg0 *ec2.DescribeIpv6PoolsInput, arg1 func(*ec2.DescribeIpv6PoolsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeIpv6PoolsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeIpv6PoolsPages indicates an expected call of DescribeIpv6PoolsPages
+func (mr *MockEC2APIMockRecorder) DescribeIpv6PoolsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpv6PoolsPages", reflect.TypeOf((*MockEC2API)(nil).DescribeIpv6PoolsPages), arg0, arg1)
+}
+
+// DescribeIpv6PoolsPagesWithContext mocks base method
+func (m *MockEC2API) DescribeIpv6PoolsPagesWithContext(arg0 context.Context, arg1 *ec2.DescribeIpv6PoolsInput, arg2 func(*ec2.DescribeIpv6PoolsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeIpv6PoolsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeIpv6PoolsPagesWithContext indicates an expected call of DescribeIpv6PoolsPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeIpv6PoolsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpv6PoolsPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeIpv6PoolsPagesWithContext), varargs...)
+}
+
+// DescribeIpv6PoolsRequest mocks base method
+func (m *MockEC2API) DescribeIpv6PoolsRequest(arg0 *ec2.DescribeIpv6PoolsInput) (*request.Request, *ec2.DescribeIpv6PoolsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeIpv6PoolsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DescribeIpv6PoolsOutput)
+	return ret0, ret1
+}
+
+// DescribeIpv6PoolsRequest indicates an expected call of DescribeIpv6PoolsRequest
+func (mr *MockEC2APIMockRecorder) DescribeIpv6PoolsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpv6PoolsRequest", reflect.TypeOf((*MockEC2API)(nil).DescribeIpv6PoolsRequest), arg0)
+}
+
+// DescribeIpv6PoolsWithContext mocks base method
+func (m *MockEC2API) DescribeIpv6PoolsWithContext(arg0 context.Context, arg1 *ec2.DescribeIpv6PoolsInput, arg2 ...request.Option) (*ec2.DescribeIpv6PoolsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeIpv6PoolsWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DescribeIpv6PoolsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeIpv6PoolsWithContext indicates an expected call of DescribeIpv6PoolsWithContext
+func (mr *MockEC2APIMockRecorder) DescribeIpv6PoolsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpv6PoolsWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeIpv6PoolsWithContext), varargs...)
+}
+
 // DescribeKeyPairs mocks base method
 func (m *MockEC2API) DescribeKeyPairs(arg0 *ec2.DescribeKeyPairsInput) (*ec2.DescribeKeyPairsOutput, error) {
 	m.ctrl.T.Helper()
@@ -16511,6 +16594,89 @@ func (mr *MockEC2APIMockRecorder) ExportTransitGatewayRoutesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportTransitGatewayRoutesWithContext", reflect.TypeOf((*MockEC2API)(nil).ExportTransitGatewayRoutesWithContext), varargs...)
+}
+
+// GetAssociatedIpv6PoolCidrs mocks base method
+func (m *MockEC2API) GetAssociatedIpv6PoolCidrs(arg0 *ec2.GetAssociatedIpv6PoolCidrsInput) (*ec2.GetAssociatedIpv6PoolCidrsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssociatedIpv6PoolCidrs", arg0)
+	ret0, _ := ret[0].(*ec2.GetAssociatedIpv6PoolCidrsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssociatedIpv6PoolCidrs indicates an expected call of GetAssociatedIpv6PoolCidrs
+func (mr *MockEC2APIMockRecorder) GetAssociatedIpv6PoolCidrs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedIpv6PoolCidrs", reflect.TypeOf((*MockEC2API)(nil).GetAssociatedIpv6PoolCidrs), arg0)
+}
+
+// GetAssociatedIpv6PoolCidrsPages mocks base method
+func (m *MockEC2API) GetAssociatedIpv6PoolCidrsPages(arg0 *ec2.GetAssociatedIpv6PoolCidrsInput, arg1 func(*ec2.GetAssociatedIpv6PoolCidrsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssociatedIpv6PoolCidrsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetAssociatedIpv6PoolCidrsPages indicates an expected call of GetAssociatedIpv6PoolCidrsPages
+func (mr *MockEC2APIMockRecorder) GetAssociatedIpv6PoolCidrsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedIpv6PoolCidrsPages", reflect.TypeOf((*MockEC2API)(nil).GetAssociatedIpv6PoolCidrsPages), arg0, arg1)
+}
+
+// GetAssociatedIpv6PoolCidrsPagesWithContext mocks base method
+func (m *MockEC2API) GetAssociatedIpv6PoolCidrsPagesWithContext(arg0 context.Context, arg1 *ec2.GetAssociatedIpv6PoolCidrsInput, arg2 func(*ec2.GetAssociatedIpv6PoolCidrsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAssociatedIpv6PoolCidrsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetAssociatedIpv6PoolCidrsPagesWithContext indicates an expected call of GetAssociatedIpv6PoolCidrsPagesWithContext
+func (mr *MockEC2APIMockRecorder) GetAssociatedIpv6PoolCidrsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedIpv6PoolCidrsPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).GetAssociatedIpv6PoolCidrsPagesWithContext), varargs...)
+}
+
+// GetAssociatedIpv6PoolCidrsRequest mocks base method
+func (m *MockEC2API) GetAssociatedIpv6PoolCidrsRequest(arg0 *ec2.GetAssociatedIpv6PoolCidrsInput) (*request.Request, *ec2.GetAssociatedIpv6PoolCidrsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssociatedIpv6PoolCidrsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.GetAssociatedIpv6PoolCidrsOutput)
+	return ret0, ret1
+}
+
+// GetAssociatedIpv6PoolCidrsRequest indicates an expected call of GetAssociatedIpv6PoolCidrsRequest
+func (mr *MockEC2APIMockRecorder) GetAssociatedIpv6PoolCidrsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedIpv6PoolCidrsRequest", reflect.TypeOf((*MockEC2API)(nil).GetAssociatedIpv6PoolCidrsRequest), arg0)
+}
+
+// GetAssociatedIpv6PoolCidrsWithContext mocks base method
+func (m *MockEC2API) GetAssociatedIpv6PoolCidrsWithContext(arg0 context.Context, arg1 *ec2.GetAssociatedIpv6PoolCidrsInput, arg2 ...request.Option) (*ec2.GetAssociatedIpv6PoolCidrsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAssociatedIpv6PoolCidrsWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.GetAssociatedIpv6PoolCidrsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssociatedIpv6PoolCidrsWithContext indicates an expected call of GetAssociatedIpv6PoolCidrsWithContext
+func (mr *MockEC2APIMockRecorder) GetAssociatedIpv6PoolCidrsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedIpv6PoolCidrsWithContext", reflect.TypeOf((*MockEC2API)(nil).GetAssociatedIpv6PoolCidrsWithContext), varargs...)
 }
 
 // GetCapacityReservationUsage mocks base method

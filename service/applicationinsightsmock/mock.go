@@ -901,6 +901,89 @@ func (mr *MockApplicationInsightsAPIMockRecorder) ListComponentsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListComponentsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListComponentsWithContext), varargs...)
 }
 
+// ListConfigurationHistory mocks base method
+func (m *MockApplicationInsightsAPI) ListConfigurationHistory(arg0 *applicationinsights.ListConfigurationHistoryInput) (*applicationinsights.ListConfigurationHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConfigurationHistory", arg0)
+	ret0, _ := ret[0].(*applicationinsights.ListConfigurationHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConfigurationHistory indicates an expected call of ListConfigurationHistory
+func (mr *MockApplicationInsightsAPIMockRecorder) ListConfigurationHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationHistory", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListConfigurationHistory), arg0)
+}
+
+// ListConfigurationHistoryPages mocks base method
+func (m *MockApplicationInsightsAPI) ListConfigurationHistoryPages(arg0 *applicationinsights.ListConfigurationHistoryInput, arg1 func(*applicationinsights.ListConfigurationHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConfigurationHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConfigurationHistoryPages indicates an expected call of ListConfigurationHistoryPages
+func (mr *MockApplicationInsightsAPIMockRecorder) ListConfigurationHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationHistoryPages", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListConfigurationHistoryPages), arg0, arg1)
+}
+
+// ListConfigurationHistoryPagesWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListConfigurationHistoryPagesWithContext(arg0 context.Context, arg1 *applicationinsights.ListConfigurationHistoryInput, arg2 func(*applicationinsights.ListConfigurationHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConfigurationHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConfigurationHistoryPagesWithContext indicates an expected call of ListConfigurationHistoryPagesWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListConfigurationHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationHistoryPagesWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListConfigurationHistoryPagesWithContext), varargs...)
+}
+
+// ListConfigurationHistoryRequest mocks base method
+func (m *MockApplicationInsightsAPI) ListConfigurationHistoryRequest(arg0 *applicationinsights.ListConfigurationHistoryInput) (*request.Request, *applicationinsights.ListConfigurationHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConfigurationHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.ListConfigurationHistoryOutput)
+	return ret0, ret1
+}
+
+// ListConfigurationHistoryRequest indicates an expected call of ListConfigurationHistoryRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) ListConfigurationHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationHistoryRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListConfigurationHistoryRequest), arg0)
+}
+
+// ListConfigurationHistoryWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListConfigurationHistoryWithContext(arg0 context.Context, arg1 *applicationinsights.ListConfigurationHistoryInput, arg2 ...request.Option) (*applicationinsights.ListConfigurationHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConfigurationHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.ListConfigurationHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConfigurationHistoryWithContext indicates an expected call of ListConfigurationHistoryWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListConfigurationHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationHistoryWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListConfigurationHistoryWithContext), varargs...)
+}
+
 // ListLogPatternSets mocks base method
 func (m *MockApplicationInsightsAPI) ListLogPatternSets(arg0 *applicationinsights.ListLogPatternSetsInput) (*applicationinsights.ListLogPatternSetsOutput, error) {
 	m.ctrl.T.Helper()
