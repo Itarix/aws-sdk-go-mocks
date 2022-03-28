@@ -685,6 +685,56 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeAvailabilityOptionsWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeAvailabilityOptionsWithContext), varargs...)
 }
 
+// DescribeDomainEndpointOptions mocks base method
+func (m *MockCloudSearchAPI) DescribeDomainEndpointOptions(arg0 *cloudsearch.DescribeDomainEndpointOptionsInput) (*cloudsearch.DescribeDomainEndpointOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainEndpointOptions", arg0)
+	ret0, _ := ret[0].(*cloudsearch.DescribeDomainEndpointOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainEndpointOptions indicates an expected call of DescribeDomainEndpointOptions
+func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainEndpointOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainEndpointOptions", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainEndpointOptions), arg0)
+}
+
+// DescribeDomainEndpointOptionsRequest mocks base method
+func (m *MockCloudSearchAPI) DescribeDomainEndpointOptionsRequest(arg0 *cloudsearch.DescribeDomainEndpointOptionsInput) (*request.Request, *cloudsearch.DescribeDomainEndpointOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainEndpointOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudsearch.DescribeDomainEndpointOptionsOutput)
+	return ret0, ret1
+}
+
+// DescribeDomainEndpointOptionsRequest indicates an expected call of DescribeDomainEndpointOptionsRequest
+func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainEndpointOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainEndpointOptionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainEndpointOptionsRequest), arg0)
+}
+
+// DescribeDomainEndpointOptionsWithContext mocks base method
+func (m *MockCloudSearchAPI) DescribeDomainEndpointOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeDomainEndpointOptionsInput, arg2 ...request.Option) (*cloudsearch.DescribeDomainEndpointOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDomainEndpointOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudsearch.DescribeDomainEndpointOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainEndpointOptionsWithContext indicates an expected call of DescribeDomainEndpointOptionsWithContext
+func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainEndpointOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainEndpointOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).DescribeDomainEndpointOptionsWithContext), varargs...)
+}
+
 // DescribeDomains mocks base method
 func (m *MockCloudSearchAPI) DescribeDomains(arg0 *cloudsearch.DescribeDomainsInput) (*cloudsearch.DescribeDomainsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1133,6 +1183,56 @@ func (mr *MockCloudSearchAPIMockRecorder) UpdateAvailabilityOptionsWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateAvailabilityOptionsWithContext), varargs...)
+}
+
+// UpdateDomainEndpointOptions mocks base method
+func (m *MockCloudSearchAPI) UpdateDomainEndpointOptions(arg0 *cloudsearch.UpdateDomainEndpointOptionsInput) (*cloudsearch.UpdateDomainEndpointOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDomainEndpointOptions", arg0)
+	ret0, _ := ret[0].(*cloudsearch.UpdateDomainEndpointOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDomainEndpointOptions indicates an expected call of UpdateDomainEndpointOptions
+func (mr *MockCloudSearchAPIMockRecorder) UpdateDomainEndpointOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEndpointOptions", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateDomainEndpointOptions), arg0)
+}
+
+// UpdateDomainEndpointOptionsRequest mocks base method
+func (m *MockCloudSearchAPI) UpdateDomainEndpointOptionsRequest(arg0 *cloudsearch.UpdateDomainEndpointOptionsInput) (*request.Request, *cloudsearch.UpdateDomainEndpointOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDomainEndpointOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudsearch.UpdateDomainEndpointOptionsOutput)
+	return ret0, ret1
+}
+
+// UpdateDomainEndpointOptionsRequest indicates an expected call of UpdateDomainEndpointOptionsRequest
+func (mr *MockCloudSearchAPIMockRecorder) UpdateDomainEndpointOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEndpointOptionsRequest", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateDomainEndpointOptionsRequest), arg0)
+}
+
+// UpdateDomainEndpointOptionsWithContext mocks base method
+func (m *MockCloudSearchAPI) UpdateDomainEndpointOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateDomainEndpointOptionsInput, arg2 ...request.Option) (*cloudsearch.UpdateDomainEndpointOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDomainEndpointOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudsearch.UpdateDomainEndpointOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDomainEndpointOptionsWithContext indicates an expected call of UpdateDomainEndpointOptionsWithContext
+func (mr *MockCloudSearchAPIMockRecorder) UpdateDomainEndpointOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEndpointOptionsWithContext", reflect.TypeOf((*MockCloudSearchAPI)(nil).UpdateDomainEndpointOptionsWithContext), varargs...)
 }
 
 // UpdateScalingParameters mocks base method

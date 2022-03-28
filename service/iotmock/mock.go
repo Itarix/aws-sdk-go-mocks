@@ -4235,6 +4235,56 @@ func (mr *MockIoTAPIMockRecorder) EnableTopicRuleWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableTopicRuleWithContext", reflect.TypeOf((*MockIoTAPI)(nil).EnableTopicRuleWithContext), varargs...)
 }
 
+// GetCardinality mocks base method
+func (m *MockIoTAPI) GetCardinality(arg0 *iot.GetCardinalityInput) (*iot.GetCardinalityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCardinality", arg0)
+	ret0, _ := ret[0].(*iot.GetCardinalityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCardinality indicates an expected call of GetCardinality
+func (mr *MockIoTAPIMockRecorder) GetCardinality(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCardinality", reflect.TypeOf((*MockIoTAPI)(nil).GetCardinality), arg0)
+}
+
+// GetCardinalityRequest mocks base method
+func (m *MockIoTAPI) GetCardinalityRequest(arg0 *iot.GetCardinalityInput) (*request.Request, *iot.GetCardinalityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCardinalityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.GetCardinalityOutput)
+	return ret0, ret1
+}
+
+// GetCardinalityRequest indicates an expected call of GetCardinalityRequest
+func (mr *MockIoTAPIMockRecorder) GetCardinalityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCardinalityRequest", reflect.TypeOf((*MockIoTAPI)(nil).GetCardinalityRequest), arg0)
+}
+
+// GetCardinalityWithContext mocks base method
+func (m *MockIoTAPI) GetCardinalityWithContext(arg0 context.Context, arg1 *iot.GetCardinalityInput, arg2 ...request.Option) (*iot.GetCardinalityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCardinalityWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.GetCardinalityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCardinalityWithContext indicates an expected call of GetCardinalityWithContext
+func (mr *MockIoTAPIMockRecorder) GetCardinalityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCardinalityWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetCardinalityWithContext), varargs...)
+}
+
 // GetEffectivePolicies mocks base method
 func (m *MockIoTAPI) GetEffectivePolicies(arg0 *iot.GetEffectivePoliciesInput) (*iot.GetEffectivePoliciesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4483,6 +4533,56 @@ func (mr *MockIoTAPIMockRecorder) GetOTAUpdateWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOTAUpdateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetOTAUpdateWithContext), varargs...)
+}
+
+// GetPercentiles mocks base method
+func (m *MockIoTAPI) GetPercentiles(arg0 *iot.GetPercentilesInput) (*iot.GetPercentilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPercentiles", arg0)
+	ret0, _ := ret[0].(*iot.GetPercentilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPercentiles indicates an expected call of GetPercentiles
+func (mr *MockIoTAPIMockRecorder) GetPercentiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPercentiles", reflect.TypeOf((*MockIoTAPI)(nil).GetPercentiles), arg0)
+}
+
+// GetPercentilesRequest mocks base method
+func (m *MockIoTAPI) GetPercentilesRequest(arg0 *iot.GetPercentilesInput) (*request.Request, *iot.GetPercentilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPercentilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.GetPercentilesOutput)
+	return ret0, ret1
+}
+
+// GetPercentilesRequest indicates an expected call of GetPercentilesRequest
+func (mr *MockIoTAPIMockRecorder) GetPercentilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPercentilesRequest", reflect.TypeOf((*MockIoTAPI)(nil).GetPercentilesRequest), arg0)
+}
+
+// GetPercentilesWithContext mocks base method
+func (m *MockIoTAPI) GetPercentilesWithContext(arg0 context.Context, arg1 *iot.GetPercentilesInput, arg2 ...request.Option) (*iot.GetPercentilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPercentilesWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.GetPercentilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPercentilesWithContext indicates an expected call of GetPercentilesWithContext
+func (mr *MockIoTAPIMockRecorder) GetPercentilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPercentilesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetPercentilesWithContext), varargs...)
 }
 
 // GetPolicy mocks base method
