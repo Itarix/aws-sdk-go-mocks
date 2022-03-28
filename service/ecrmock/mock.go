@@ -1064,6 +1064,56 @@ func (mr *MockECRAPIMockRecorder) PutImageRequest(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutImageRequest", reflect.TypeOf((*MockECRAPI)(nil).PutImageRequest), arg0)
 }
 
+// PutImageTagMutability mocks base method
+func (m *MockECRAPI) PutImageTagMutability(arg0 *ecr.PutImageTagMutabilityInput) (*ecr.PutImageTagMutabilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutImageTagMutability", arg0)
+	ret0, _ := ret[0].(*ecr.PutImageTagMutabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutImageTagMutability indicates an expected call of PutImageTagMutability
+func (mr *MockECRAPIMockRecorder) PutImageTagMutability(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutImageTagMutability", reflect.TypeOf((*MockECRAPI)(nil).PutImageTagMutability), arg0)
+}
+
+// PutImageTagMutabilityRequest mocks base method
+func (m *MockECRAPI) PutImageTagMutabilityRequest(arg0 *ecr.PutImageTagMutabilityInput) (*request.Request, *ecr.PutImageTagMutabilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutImageTagMutabilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecr.PutImageTagMutabilityOutput)
+	return ret0, ret1
+}
+
+// PutImageTagMutabilityRequest indicates an expected call of PutImageTagMutabilityRequest
+func (mr *MockECRAPIMockRecorder) PutImageTagMutabilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutImageTagMutabilityRequest", reflect.TypeOf((*MockECRAPI)(nil).PutImageTagMutabilityRequest), arg0)
+}
+
+// PutImageTagMutabilityWithContext mocks base method
+func (m *MockECRAPI) PutImageTagMutabilityWithContext(arg0 context.Context, arg1 *ecr.PutImageTagMutabilityInput, arg2 ...request.Option) (*ecr.PutImageTagMutabilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutImageTagMutabilityWithContext", varargs...)
+	ret0, _ := ret[0].(*ecr.PutImageTagMutabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutImageTagMutabilityWithContext indicates an expected call of PutImageTagMutabilityWithContext
+func (mr *MockECRAPIMockRecorder) PutImageTagMutabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutImageTagMutabilityWithContext", reflect.TypeOf((*MockECRAPI)(nil).PutImageTagMutabilityWithContext), varargs...)
+}
+
 // PutImageWithContext mocks base method
 func (m *MockECRAPI) PutImageWithContext(arg0 context.Context, arg1 *ecr.PutImageInput, arg2 ...request.Option) (*ecr.PutImageOutput, error) {
 	m.ctrl.T.Helper()
