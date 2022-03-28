@@ -185,6 +185,56 @@ func (mr *MockChimeAPIMockRecorder) AssociatePhoneNumbersWithVoiceConnectorWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePhoneNumbersWithVoiceConnectorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).AssociatePhoneNumbersWithVoiceConnectorWithContext), varargs...)
 }
 
+// AssociateSigninDelegateGroupsWithAccount mocks base method
+func (m *MockChimeAPI) AssociateSigninDelegateGroupsWithAccount(arg0 *chime.AssociateSigninDelegateGroupsWithAccountInput) (*chime.AssociateSigninDelegateGroupsWithAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSigninDelegateGroupsWithAccount", arg0)
+	ret0, _ := ret[0].(*chime.AssociateSigninDelegateGroupsWithAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSigninDelegateGroupsWithAccount indicates an expected call of AssociateSigninDelegateGroupsWithAccount
+func (mr *MockChimeAPIMockRecorder) AssociateSigninDelegateGroupsWithAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSigninDelegateGroupsWithAccount", reflect.TypeOf((*MockChimeAPI)(nil).AssociateSigninDelegateGroupsWithAccount), arg0)
+}
+
+// AssociateSigninDelegateGroupsWithAccountRequest mocks base method
+func (m *MockChimeAPI) AssociateSigninDelegateGroupsWithAccountRequest(arg0 *chime.AssociateSigninDelegateGroupsWithAccountInput) (*request.Request, *chime.AssociateSigninDelegateGroupsWithAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSigninDelegateGroupsWithAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.AssociateSigninDelegateGroupsWithAccountOutput)
+	return ret0, ret1
+}
+
+// AssociateSigninDelegateGroupsWithAccountRequest indicates an expected call of AssociateSigninDelegateGroupsWithAccountRequest
+func (mr *MockChimeAPIMockRecorder) AssociateSigninDelegateGroupsWithAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSigninDelegateGroupsWithAccountRequest", reflect.TypeOf((*MockChimeAPI)(nil).AssociateSigninDelegateGroupsWithAccountRequest), arg0)
+}
+
+// AssociateSigninDelegateGroupsWithAccountWithContext mocks base method
+func (m *MockChimeAPI) AssociateSigninDelegateGroupsWithAccountWithContext(arg0 context.Context, arg1 *chime.AssociateSigninDelegateGroupsWithAccountInput, arg2 ...request.Option) (*chime.AssociateSigninDelegateGroupsWithAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateSigninDelegateGroupsWithAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.AssociateSigninDelegateGroupsWithAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSigninDelegateGroupsWithAccountWithContext indicates an expected call of AssociateSigninDelegateGroupsWithAccountWithContext
+func (mr *MockChimeAPIMockRecorder) AssociateSigninDelegateGroupsWithAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSigninDelegateGroupsWithAccountWithContext", reflect.TypeOf((*MockChimeAPI)(nil).AssociateSigninDelegateGroupsWithAccountWithContext), varargs...)
+}
+
 // BatchCreateAttendee mocks base method
 func (m *MockChimeAPI) BatchCreateAttendee(arg0 *chime.BatchCreateAttendeeInput) (*chime.BatchCreateAttendeeOutput, error) {
 	m.ctrl.T.Helper()
@@ -883,6 +933,56 @@ func (mr *MockChimeAPIMockRecorder) CreateRoomWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomWithContext), varargs...)
+}
+
+// CreateUser mocks base method
+func (m *MockChimeAPI) CreateUser(arg0 *chime.CreateUserInput) (*chime.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUser", arg0)
+	ret0, _ := ret[0].(*chime.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUser indicates an expected call of CreateUser
+func (mr *MockChimeAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockChimeAPI)(nil).CreateUser), arg0)
+}
+
+// CreateUserRequest mocks base method
+func (m *MockChimeAPI) CreateUserRequest(arg0 *chime.CreateUserInput) (*request.Request, *chime.CreateUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateUserOutput)
+	return ret0, ret1
+}
+
+// CreateUserRequest indicates an expected call of CreateUserRequest
+func (mr *MockChimeAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateUserRequest), arg0)
+}
+
+// CreateUserWithContext mocks base method
+func (m *MockChimeAPI) CreateUserWithContext(arg0 context.Context, arg1 *chime.CreateUserInput, arg2 ...request.Option) (*chime.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
+func (mr *MockChimeAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateUserWithContext), varargs...)
 }
 
 // CreateVoiceConnector mocks base method
@@ -1783,6 +1883,56 @@ func (mr *MockChimeAPIMockRecorder) DisassociatePhoneNumbersFromVoiceConnectorWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociatePhoneNumbersFromVoiceConnectorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DisassociatePhoneNumbersFromVoiceConnectorWithContext), varargs...)
+}
+
+// DisassociateSigninDelegateGroupsFromAccount mocks base method
+func (m *MockChimeAPI) DisassociateSigninDelegateGroupsFromAccount(arg0 *chime.DisassociateSigninDelegateGroupsFromAccountInput) (*chime.DisassociateSigninDelegateGroupsFromAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSigninDelegateGroupsFromAccount", arg0)
+	ret0, _ := ret[0].(*chime.DisassociateSigninDelegateGroupsFromAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSigninDelegateGroupsFromAccount indicates an expected call of DisassociateSigninDelegateGroupsFromAccount
+func (mr *MockChimeAPIMockRecorder) DisassociateSigninDelegateGroupsFromAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSigninDelegateGroupsFromAccount", reflect.TypeOf((*MockChimeAPI)(nil).DisassociateSigninDelegateGroupsFromAccount), arg0)
+}
+
+// DisassociateSigninDelegateGroupsFromAccountRequest mocks base method
+func (m *MockChimeAPI) DisassociateSigninDelegateGroupsFromAccountRequest(arg0 *chime.DisassociateSigninDelegateGroupsFromAccountInput) (*request.Request, *chime.DisassociateSigninDelegateGroupsFromAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSigninDelegateGroupsFromAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DisassociateSigninDelegateGroupsFromAccountOutput)
+	return ret0, ret1
+}
+
+// DisassociateSigninDelegateGroupsFromAccountRequest indicates an expected call of DisassociateSigninDelegateGroupsFromAccountRequest
+func (mr *MockChimeAPIMockRecorder) DisassociateSigninDelegateGroupsFromAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSigninDelegateGroupsFromAccountRequest", reflect.TypeOf((*MockChimeAPI)(nil).DisassociateSigninDelegateGroupsFromAccountRequest), arg0)
+}
+
+// DisassociateSigninDelegateGroupsFromAccountWithContext mocks base method
+func (m *MockChimeAPI) DisassociateSigninDelegateGroupsFromAccountWithContext(arg0 context.Context, arg1 *chime.DisassociateSigninDelegateGroupsFromAccountInput, arg2 ...request.Option) (*chime.DisassociateSigninDelegateGroupsFromAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateSigninDelegateGroupsFromAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DisassociateSigninDelegateGroupsFromAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSigninDelegateGroupsFromAccountWithContext indicates an expected call of DisassociateSigninDelegateGroupsFromAccountWithContext
+func (mr *MockChimeAPIMockRecorder) DisassociateSigninDelegateGroupsFromAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSigninDelegateGroupsFromAccountWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DisassociateSigninDelegateGroupsFromAccountWithContext), varargs...)
 }
 
 // GetAccount mocks base method

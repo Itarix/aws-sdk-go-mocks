@@ -1334,6 +1334,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) ListAvailableManagementCidrRangesWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagementCidrRangesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ListAvailableManagementCidrRangesWithContext), varargs...)
 }
 
+// MigrateWorkspace mocks base method
+func (m *MockWorkSpacesAPI) MigrateWorkspace(arg0 *workspaces.MigrateWorkspaceInput) (*workspaces.MigrateWorkspaceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MigrateWorkspace", arg0)
+	ret0, _ := ret[0].(*workspaces.MigrateWorkspaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MigrateWorkspace indicates an expected call of MigrateWorkspace
+func (mr *MockWorkSpacesAPIMockRecorder) MigrateWorkspace(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrateWorkspace", reflect.TypeOf((*MockWorkSpacesAPI)(nil).MigrateWorkspace), arg0)
+}
+
+// MigrateWorkspaceRequest mocks base method
+func (m *MockWorkSpacesAPI) MigrateWorkspaceRequest(arg0 *workspaces.MigrateWorkspaceInput) (*request.Request, *workspaces.MigrateWorkspaceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MigrateWorkspaceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.MigrateWorkspaceOutput)
+	return ret0, ret1
+}
+
+// MigrateWorkspaceRequest indicates an expected call of MigrateWorkspaceRequest
+func (mr *MockWorkSpacesAPIMockRecorder) MigrateWorkspaceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrateWorkspaceRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).MigrateWorkspaceRequest), arg0)
+}
+
+// MigrateWorkspaceWithContext mocks base method
+func (m *MockWorkSpacesAPI) MigrateWorkspaceWithContext(arg0 context.Context, arg1 *workspaces.MigrateWorkspaceInput, arg2 ...request.Option) (*workspaces.MigrateWorkspaceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "MigrateWorkspaceWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.MigrateWorkspaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MigrateWorkspaceWithContext indicates an expected call of MigrateWorkspaceWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) MigrateWorkspaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrateWorkspaceWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).MigrateWorkspaceWithContext), varargs...)
+}
+
 // ModifyAccount mocks base method
 func (m *MockWorkSpacesAPI) ModifyAccount(arg0 *workspaces.ModifyAccountInput) (*workspaces.ModifyAccountOutput, error) {
 	m.ctrl.T.Helper()

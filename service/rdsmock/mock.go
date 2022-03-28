@@ -5160,6 +5160,56 @@ func (mr *MockRDSAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ModifyCertificates mocks base method
+func (m *MockRDSAPI) ModifyCertificates(arg0 *rds.ModifyCertificatesInput) (*rds.ModifyCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCertificates", arg0)
+	ret0, _ := ret[0].(*rds.ModifyCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCertificates indicates an expected call of ModifyCertificates
+func (mr *MockRDSAPIMockRecorder) ModifyCertificates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCertificates", reflect.TypeOf((*MockRDSAPI)(nil).ModifyCertificates), arg0)
+}
+
+// ModifyCertificatesRequest mocks base method
+func (m *MockRDSAPI) ModifyCertificatesRequest(arg0 *rds.ModifyCertificatesInput) (*request.Request, *rds.ModifyCertificatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCertificatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rds.ModifyCertificatesOutput)
+	return ret0, ret1
+}
+
+// ModifyCertificatesRequest indicates an expected call of ModifyCertificatesRequest
+func (mr *MockRDSAPIMockRecorder) ModifyCertificatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCertificatesRequest", reflect.TypeOf((*MockRDSAPI)(nil).ModifyCertificatesRequest), arg0)
+}
+
+// ModifyCertificatesWithContext mocks base method
+func (m *MockRDSAPI) ModifyCertificatesWithContext(arg0 context.Context, arg1 *rds.ModifyCertificatesInput, arg2 ...request.Option) (*rds.ModifyCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyCertificatesWithContext", varargs...)
+	ret0, _ := ret[0].(*rds.ModifyCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCertificatesWithContext indicates an expected call of ModifyCertificatesWithContext
+func (mr *MockRDSAPIMockRecorder) ModifyCertificatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCertificatesWithContext", reflect.TypeOf((*MockRDSAPI)(nil).ModifyCertificatesWithContext), varargs...)
+}
+
 // ModifyCurrentDBClusterCapacity mocks base method
 func (m *MockRDSAPI) ModifyCurrentDBClusterCapacity(arg0 *rds.ModifyCurrentDBClusterCapacityInput) (*rds.ModifyCurrentDBClusterCapacityOutput, error) {
 	m.ctrl.T.Helper()
