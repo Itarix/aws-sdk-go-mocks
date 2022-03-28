@@ -85,6 +85,56 @@ func (mr *MockCostExplorerAPIMockRecorder) GetCostAndUsageWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostAndUsageWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostAndUsageWithContext), varargs...)
 }
 
+// GetCostAndUsageWithResources mocks base method
+func (m *MockCostExplorerAPI) GetCostAndUsageWithResources(arg0 *costexplorer.GetCostAndUsageWithResourcesInput) (*costexplorer.GetCostAndUsageWithResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostAndUsageWithResources", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetCostAndUsageWithResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostAndUsageWithResources indicates an expected call of GetCostAndUsageWithResources
+func (mr *MockCostExplorerAPIMockRecorder) GetCostAndUsageWithResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostAndUsageWithResources", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostAndUsageWithResources), arg0)
+}
+
+// GetCostAndUsageWithResourcesRequest mocks base method
+func (m *MockCostExplorerAPI) GetCostAndUsageWithResourcesRequest(arg0 *costexplorer.GetCostAndUsageWithResourcesInput) (*request.Request, *costexplorer.GetCostAndUsageWithResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostAndUsageWithResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetCostAndUsageWithResourcesOutput)
+	return ret0, ret1
+}
+
+// GetCostAndUsageWithResourcesRequest indicates an expected call of GetCostAndUsageWithResourcesRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetCostAndUsageWithResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostAndUsageWithResourcesRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostAndUsageWithResourcesRequest), arg0)
+}
+
+// GetCostAndUsageWithResourcesWithContext mocks base method
+func (m *MockCostExplorerAPI) GetCostAndUsageWithResourcesWithContext(arg0 context.Context, arg1 *costexplorer.GetCostAndUsageWithResourcesInput, arg2 ...request.Option) (*costexplorer.GetCostAndUsageWithResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCostAndUsageWithResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetCostAndUsageWithResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostAndUsageWithResourcesWithContext indicates an expected call of GetCostAndUsageWithResourcesWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetCostAndUsageWithResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostAndUsageWithResourcesWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetCostAndUsageWithResourcesWithContext), varargs...)
+}
+
 // GetCostForecast mocks base method
 func (m *MockCostExplorerAPI) GetCostForecast(arg0 *costexplorer.GetCostForecastInput) (*costexplorer.GetCostForecastOutput, error) {
 	m.ctrl.T.Helper()

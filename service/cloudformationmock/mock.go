@@ -2648,6 +2648,39 @@ func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackExistsWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStackExistsWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).WaitUntilStackExistsWithContext), varargs...)
 }
 
+// WaitUntilStackImportComplete mocks base method
+func (m *MockCloudFormationAPI) WaitUntilStackImportComplete(arg0 *cloudformation.DescribeStacksInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStackImportComplete", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStackImportComplete indicates an expected call of WaitUntilStackImportComplete
+func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackImportComplete(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStackImportComplete", reflect.TypeOf((*MockCloudFormationAPI)(nil).WaitUntilStackImportComplete), arg0)
+}
+
+// WaitUntilStackImportCompleteWithContext mocks base method
+func (m *MockCloudFormationAPI) WaitUntilStackImportCompleteWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStackImportCompleteWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStackImportCompleteWithContext indicates an expected call of WaitUntilStackImportCompleteWithContext
+func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackImportCompleteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStackImportCompleteWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).WaitUntilStackImportCompleteWithContext), varargs...)
+}
+
 // WaitUntilStackUpdateComplete mocks base method
 func (m *MockCloudFormationAPI) WaitUntilStackUpdateComplete(arg0 *cloudformation.DescribeStacksInput) error {
 	m.ctrl.T.Helper()
