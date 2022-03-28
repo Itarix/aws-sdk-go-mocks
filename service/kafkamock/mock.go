@@ -1000,6 +1000,56 @@ func (mr *MockKafkaAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateBrokerCount mocks base method
+func (m *MockKafkaAPI) UpdateBrokerCount(arg0 *kafka.UpdateBrokerCountInput) (*kafka.UpdateBrokerCountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBrokerCount", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateBrokerCountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBrokerCount indicates an expected call of UpdateBrokerCount
+func (mr *MockKafkaAPIMockRecorder) UpdateBrokerCount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerCount", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerCount), arg0)
+}
+
+// UpdateBrokerCountRequest mocks base method
+func (m *MockKafkaAPI) UpdateBrokerCountRequest(arg0 *kafka.UpdateBrokerCountInput) (*request.Request, *kafka.UpdateBrokerCountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBrokerCountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateBrokerCountOutput)
+	return ret0, ret1
+}
+
+// UpdateBrokerCountRequest indicates an expected call of UpdateBrokerCountRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateBrokerCountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerCountRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerCountRequest), arg0)
+}
+
+// UpdateBrokerCountWithContext mocks base method
+func (m *MockKafkaAPI) UpdateBrokerCountWithContext(arg0 context.Context, arg1 *kafka.UpdateBrokerCountInput, arg2 ...request.Option) (*kafka.UpdateBrokerCountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBrokerCountWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateBrokerCountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBrokerCountWithContext indicates an expected call of UpdateBrokerCountWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateBrokerCountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerCountWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerCountWithContext), varargs...)
+}
+
 // UpdateBrokerStorage mocks base method
 func (m *MockKafkaAPI) UpdateBrokerStorage(arg0 *kafka.UpdateBrokerStorageInput) (*kafka.UpdateBrokerStorageOutput, error) {
 	m.ctrl.T.Helper()
