@@ -1135,6 +1135,56 @@ func (mr *MockLightsailAPIMockRecorder) CreateRelationalDatabaseWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRelationalDatabaseWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateRelationalDatabaseWithContext), varargs...)
 }
 
+// DeleteAutoSnapshot mocks base method
+func (m *MockLightsailAPI) DeleteAutoSnapshot(arg0 *lightsail.DeleteAutoSnapshotInput) (*lightsail.DeleteAutoSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAutoSnapshot", arg0)
+	ret0, _ := ret[0].(*lightsail.DeleteAutoSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAutoSnapshot indicates an expected call of DeleteAutoSnapshot
+func (mr *MockLightsailAPIMockRecorder) DeleteAutoSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutoSnapshot", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAutoSnapshot), arg0)
+}
+
+// DeleteAutoSnapshotRequest mocks base method
+func (m *MockLightsailAPI) DeleteAutoSnapshotRequest(arg0 *lightsail.DeleteAutoSnapshotInput) (*request.Request, *lightsail.DeleteAutoSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAutoSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.DeleteAutoSnapshotOutput)
+	return ret0, ret1
+}
+
+// DeleteAutoSnapshotRequest indicates an expected call of DeleteAutoSnapshotRequest
+func (mr *MockLightsailAPIMockRecorder) DeleteAutoSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutoSnapshotRequest", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAutoSnapshotRequest), arg0)
+}
+
+// DeleteAutoSnapshotWithContext mocks base method
+func (m *MockLightsailAPI) DeleteAutoSnapshotWithContext(arg0 context.Context, arg1 *lightsail.DeleteAutoSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteAutoSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAutoSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.DeleteAutoSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAutoSnapshotWithContext indicates an expected call of DeleteAutoSnapshotWithContext
+func (mr *MockLightsailAPIMockRecorder) DeleteAutoSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutoSnapshotWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAutoSnapshotWithContext), varargs...)
+}
+
 // DeleteDisk mocks base method
 func (m *MockLightsailAPI) DeleteDisk(arg0 *lightsail.DeleteDiskInput) (*lightsail.DeleteDiskOutput, error) {
 	m.ctrl.T.Helper()
@@ -1885,6 +1935,56 @@ func (mr *MockLightsailAPIMockRecorder) DetachStaticIpWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachStaticIpWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DetachStaticIpWithContext), varargs...)
 }
 
+// DisableAddOn mocks base method
+func (m *MockLightsailAPI) DisableAddOn(arg0 *lightsail.DisableAddOnInput) (*lightsail.DisableAddOnOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableAddOn", arg0)
+	ret0, _ := ret[0].(*lightsail.DisableAddOnOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableAddOn indicates an expected call of DisableAddOn
+func (mr *MockLightsailAPIMockRecorder) DisableAddOn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableAddOn", reflect.TypeOf((*MockLightsailAPI)(nil).DisableAddOn), arg0)
+}
+
+// DisableAddOnRequest mocks base method
+func (m *MockLightsailAPI) DisableAddOnRequest(arg0 *lightsail.DisableAddOnInput) (*request.Request, *lightsail.DisableAddOnOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableAddOnRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.DisableAddOnOutput)
+	return ret0, ret1
+}
+
+// DisableAddOnRequest indicates an expected call of DisableAddOnRequest
+func (mr *MockLightsailAPIMockRecorder) DisableAddOnRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableAddOnRequest", reflect.TypeOf((*MockLightsailAPI)(nil).DisableAddOnRequest), arg0)
+}
+
+// DisableAddOnWithContext mocks base method
+func (m *MockLightsailAPI) DisableAddOnWithContext(arg0 context.Context, arg1 *lightsail.DisableAddOnInput, arg2 ...request.Option) (*lightsail.DisableAddOnOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableAddOnWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.DisableAddOnOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableAddOnWithContext indicates an expected call of DisableAddOnWithContext
+func (mr *MockLightsailAPIMockRecorder) DisableAddOnWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableAddOnWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DisableAddOnWithContext), varargs...)
+}
+
 // DownloadDefaultKeyPair mocks base method
 func (m *MockLightsailAPI) DownloadDefaultKeyPair(arg0 *lightsail.DownloadDefaultKeyPairInput) (*lightsail.DownloadDefaultKeyPairOutput, error) {
 	m.ctrl.T.Helper()
@@ -1933,6 +2033,56 @@ func (mr *MockLightsailAPIMockRecorder) DownloadDefaultKeyPairWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DownloadDefaultKeyPairWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DownloadDefaultKeyPairWithContext), varargs...)
+}
+
+// EnableAddOn mocks base method
+func (m *MockLightsailAPI) EnableAddOn(arg0 *lightsail.EnableAddOnInput) (*lightsail.EnableAddOnOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableAddOn", arg0)
+	ret0, _ := ret[0].(*lightsail.EnableAddOnOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableAddOn indicates an expected call of EnableAddOn
+func (mr *MockLightsailAPIMockRecorder) EnableAddOn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableAddOn", reflect.TypeOf((*MockLightsailAPI)(nil).EnableAddOn), arg0)
+}
+
+// EnableAddOnRequest mocks base method
+func (m *MockLightsailAPI) EnableAddOnRequest(arg0 *lightsail.EnableAddOnInput) (*request.Request, *lightsail.EnableAddOnOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableAddOnRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.EnableAddOnOutput)
+	return ret0, ret1
+}
+
+// EnableAddOnRequest indicates an expected call of EnableAddOnRequest
+func (mr *MockLightsailAPIMockRecorder) EnableAddOnRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableAddOnRequest", reflect.TypeOf((*MockLightsailAPI)(nil).EnableAddOnRequest), arg0)
+}
+
+// EnableAddOnWithContext mocks base method
+func (m *MockLightsailAPI) EnableAddOnWithContext(arg0 context.Context, arg1 *lightsail.EnableAddOnInput, arg2 ...request.Option) (*lightsail.EnableAddOnOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableAddOnWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.EnableAddOnOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableAddOnWithContext indicates an expected call of EnableAddOnWithContext
+func (mr *MockLightsailAPIMockRecorder) EnableAddOnWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableAddOnWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).EnableAddOnWithContext), varargs...)
 }
 
 // ExportSnapshot mocks base method
@@ -2033,6 +2183,56 @@ func (mr *MockLightsailAPIMockRecorder) GetActiveNamesWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActiveNamesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetActiveNamesWithContext), varargs...)
+}
+
+// GetAutoSnapshots mocks base method
+func (m *MockLightsailAPI) GetAutoSnapshots(arg0 *lightsail.GetAutoSnapshotsInput) (*lightsail.GetAutoSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAutoSnapshots", arg0)
+	ret0, _ := ret[0].(*lightsail.GetAutoSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAutoSnapshots indicates an expected call of GetAutoSnapshots
+func (mr *MockLightsailAPIMockRecorder) GetAutoSnapshots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoSnapshots", reflect.TypeOf((*MockLightsailAPI)(nil).GetAutoSnapshots), arg0)
+}
+
+// GetAutoSnapshotsRequest mocks base method
+func (m *MockLightsailAPI) GetAutoSnapshotsRequest(arg0 *lightsail.GetAutoSnapshotsInput) (*request.Request, *lightsail.GetAutoSnapshotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAutoSnapshotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetAutoSnapshotsOutput)
+	return ret0, ret1
+}
+
+// GetAutoSnapshotsRequest indicates an expected call of GetAutoSnapshotsRequest
+func (mr *MockLightsailAPIMockRecorder) GetAutoSnapshotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoSnapshotsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetAutoSnapshotsRequest), arg0)
+}
+
+// GetAutoSnapshotsWithContext mocks base method
+func (m *MockLightsailAPI) GetAutoSnapshotsWithContext(arg0 context.Context, arg1 *lightsail.GetAutoSnapshotsInput, arg2 ...request.Option) (*lightsail.GetAutoSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAutoSnapshotsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetAutoSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAutoSnapshotsWithContext indicates an expected call of GetAutoSnapshotsWithContext
+func (mr *MockLightsailAPIMockRecorder) GetAutoSnapshotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoSnapshotsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetAutoSnapshotsWithContext), varargs...)
 }
 
 // GetBlueprints mocks base method
