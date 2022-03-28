@@ -285,6 +285,56 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListAssociationsForLicenseConfigura
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociationsForLicenseConfigurationWithContext", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListAssociationsForLicenseConfigurationWithContext), varargs...)
 }
 
+// ListFailuresForLicenseConfigurationOperations mocks base method
+func (m *MockLicenseManagerAPI) ListFailuresForLicenseConfigurationOperations(arg0 *licensemanager.ListFailuresForLicenseConfigurationOperationsInput) (*licensemanager.ListFailuresForLicenseConfigurationOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFailuresForLicenseConfigurationOperations", arg0)
+	ret0, _ := ret[0].(*licensemanager.ListFailuresForLicenseConfigurationOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFailuresForLicenseConfigurationOperations indicates an expected call of ListFailuresForLicenseConfigurationOperations
+func (mr *MockLicenseManagerAPIMockRecorder) ListFailuresForLicenseConfigurationOperations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFailuresForLicenseConfigurationOperations", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListFailuresForLicenseConfigurationOperations), arg0)
+}
+
+// ListFailuresForLicenseConfigurationOperationsRequest mocks base method
+func (m *MockLicenseManagerAPI) ListFailuresForLicenseConfigurationOperationsRequest(arg0 *licensemanager.ListFailuresForLicenseConfigurationOperationsInput) (*request.Request, *licensemanager.ListFailuresForLicenseConfigurationOperationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFailuresForLicenseConfigurationOperationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanager.ListFailuresForLicenseConfigurationOperationsOutput)
+	return ret0, ret1
+}
+
+// ListFailuresForLicenseConfigurationOperationsRequest indicates an expected call of ListFailuresForLicenseConfigurationOperationsRequest
+func (mr *MockLicenseManagerAPIMockRecorder) ListFailuresForLicenseConfigurationOperationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFailuresForLicenseConfigurationOperationsRequest", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListFailuresForLicenseConfigurationOperationsRequest), arg0)
+}
+
+// ListFailuresForLicenseConfigurationOperationsWithContext mocks base method
+func (m *MockLicenseManagerAPI) ListFailuresForLicenseConfigurationOperationsWithContext(arg0 context.Context, arg1 *licensemanager.ListFailuresForLicenseConfigurationOperationsInput, arg2 ...request.Option) (*licensemanager.ListFailuresForLicenseConfigurationOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFailuresForLicenseConfigurationOperationsWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanager.ListFailuresForLicenseConfigurationOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFailuresForLicenseConfigurationOperationsWithContext indicates an expected call of ListFailuresForLicenseConfigurationOperationsWithContext
+func (mr *MockLicenseManagerAPIMockRecorder) ListFailuresForLicenseConfigurationOperationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFailuresForLicenseConfigurationOperationsWithContext", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListFailuresForLicenseConfigurationOperationsWithContext), varargs...)
+}
+
 // ListLicenseConfigurations mocks base method
 func (m *MockLicenseManagerAPI) ListLicenseConfigurations(arg0 *licensemanager.ListLicenseConfigurationsInput) (*licensemanager.ListLicenseConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
