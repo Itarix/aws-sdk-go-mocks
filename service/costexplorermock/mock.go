@@ -335,6 +335,56 @@ func (mr *MockCostExplorerAPIMockRecorder) GetReservationUtilizationWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReservationUtilizationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetReservationUtilizationWithContext), varargs...)
 }
 
+// GetRightsizingRecommendation mocks base method
+func (m *MockCostExplorerAPI) GetRightsizingRecommendation(arg0 *costexplorer.GetRightsizingRecommendationInput) (*costexplorer.GetRightsizingRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRightsizingRecommendation", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetRightsizingRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRightsizingRecommendation indicates an expected call of GetRightsizingRecommendation
+func (mr *MockCostExplorerAPIMockRecorder) GetRightsizingRecommendation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRightsizingRecommendation", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetRightsizingRecommendation), arg0)
+}
+
+// GetRightsizingRecommendationRequest mocks base method
+func (m *MockCostExplorerAPI) GetRightsizingRecommendationRequest(arg0 *costexplorer.GetRightsizingRecommendationInput) (*request.Request, *costexplorer.GetRightsizingRecommendationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRightsizingRecommendationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetRightsizingRecommendationOutput)
+	return ret0, ret1
+}
+
+// GetRightsizingRecommendationRequest indicates an expected call of GetRightsizingRecommendationRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetRightsizingRecommendationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRightsizingRecommendationRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetRightsizingRecommendationRequest), arg0)
+}
+
+// GetRightsizingRecommendationWithContext mocks base method
+func (m *MockCostExplorerAPI) GetRightsizingRecommendationWithContext(arg0 context.Context, arg1 *costexplorer.GetRightsizingRecommendationInput, arg2 ...request.Option) (*costexplorer.GetRightsizingRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRightsizingRecommendationWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetRightsizingRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRightsizingRecommendationWithContext indicates an expected call of GetRightsizingRecommendationWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetRightsizingRecommendationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRightsizingRecommendationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetRightsizingRecommendationWithContext), varargs...)
+}
+
 // GetTags mocks base method
 func (m *MockCostExplorerAPI) GetTags(arg0 *costexplorer.GetTagsInput) (*costexplorer.GetTagsOutput, error) {
 	m.ctrl.T.Helper()

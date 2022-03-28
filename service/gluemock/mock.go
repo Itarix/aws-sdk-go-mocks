@@ -2898,6 +2898,139 @@ func (mr *MockGlueAPIMockRecorder) GetJob(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJob", reflect.TypeOf((*MockGlueAPI)(nil).GetJob), arg0)
 }
 
+// GetJobBookmark mocks base method
+func (m *MockGlueAPI) GetJobBookmark(arg0 *glue.GetJobBookmarkInput) (*glue.GetJobBookmarkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobBookmark", arg0)
+	ret0, _ := ret[0].(*glue.GetJobBookmarkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobBookmark indicates an expected call of GetJobBookmark
+func (mr *MockGlueAPIMockRecorder) GetJobBookmark(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmark", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmark), arg0)
+}
+
+// GetJobBookmarkRequest mocks base method
+func (m *MockGlueAPI) GetJobBookmarkRequest(arg0 *glue.GetJobBookmarkInput) (*request.Request, *glue.GetJobBookmarkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobBookmarkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetJobBookmarkOutput)
+	return ret0, ret1
+}
+
+// GetJobBookmarkRequest indicates an expected call of GetJobBookmarkRequest
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarkRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarkRequest), arg0)
+}
+
+// GetJobBookmarkWithContext mocks base method
+func (m *MockGlueAPI) GetJobBookmarkWithContext(arg0 context.Context, arg1 *glue.GetJobBookmarkInput, arg2 ...request.Option) (*glue.GetJobBookmarkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJobBookmarkWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetJobBookmarkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobBookmarkWithContext indicates an expected call of GetJobBookmarkWithContext
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarkWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarkWithContext), varargs...)
+}
+
+// GetJobBookmarks mocks base method
+func (m *MockGlueAPI) GetJobBookmarks(arg0 *glue.GetJobBookmarksInput) (*glue.GetJobBookmarksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobBookmarks", arg0)
+	ret0, _ := ret[0].(*glue.GetJobBookmarksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobBookmarks indicates an expected call of GetJobBookmarks
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarks", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarks), arg0)
+}
+
+// GetJobBookmarksPages mocks base method
+func (m *MockGlueAPI) GetJobBookmarksPages(arg0 *glue.GetJobBookmarksInput, arg1 func(*glue.GetJobBookmarksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobBookmarksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetJobBookmarksPages indicates an expected call of GetJobBookmarksPages
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarksPages", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarksPages), arg0, arg1)
+}
+
+// GetJobBookmarksPagesWithContext mocks base method
+func (m *MockGlueAPI) GetJobBookmarksPagesWithContext(arg0 context.Context, arg1 *glue.GetJobBookmarksInput, arg2 func(*glue.GetJobBookmarksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJobBookmarksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetJobBookmarksPagesWithContext indicates an expected call of GetJobBookmarksPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarksPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarksPagesWithContext), varargs...)
+}
+
+// GetJobBookmarksRequest mocks base method
+func (m *MockGlueAPI) GetJobBookmarksRequest(arg0 *glue.GetJobBookmarksInput) (*request.Request, *glue.GetJobBookmarksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobBookmarksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetJobBookmarksOutput)
+	return ret0, ret1
+}
+
+// GetJobBookmarksRequest indicates an expected call of GetJobBookmarksRequest
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarksRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarksRequest), arg0)
+}
+
+// GetJobBookmarksWithContext mocks base method
+func (m *MockGlueAPI) GetJobBookmarksWithContext(arg0 context.Context, arg1 *glue.GetJobBookmarksInput, arg2 ...request.Option) (*glue.GetJobBookmarksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJobBookmarksWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetJobBookmarksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobBookmarksWithContext indicates an expected call of GetJobBookmarksWithContext
+func (mr *MockGlueAPIMockRecorder) GetJobBookmarksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobBookmarksWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetJobBookmarksWithContext), varargs...)
+}
+
 // GetJobRequest mocks base method
 func (m *MockGlueAPI) GetJobRequest(arg0 *glue.GetJobInput) (*request.Request, *glue.GetJobOutput) {
 	m.ctrl.T.Helper()

@@ -14947,6 +14947,56 @@ func (mr *MockEC2APIMockRecorder) ExportTransitGatewayRoutesWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportTransitGatewayRoutesWithContext", reflect.TypeOf((*MockEC2API)(nil).ExportTransitGatewayRoutesWithContext), varargs...)
 }
 
+// GetCapacityReservationUsage mocks base method
+func (m *MockEC2API) GetCapacityReservationUsage(arg0 *ec2.GetCapacityReservationUsageInput) (*ec2.GetCapacityReservationUsageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCapacityReservationUsage", arg0)
+	ret0, _ := ret[0].(*ec2.GetCapacityReservationUsageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCapacityReservationUsage indicates an expected call of GetCapacityReservationUsage
+func (mr *MockEC2APIMockRecorder) GetCapacityReservationUsage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityReservationUsage", reflect.TypeOf((*MockEC2API)(nil).GetCapacityReservationUsage), arg0)
+}
+
+// GetCapacityReservationUsageRequest mocks base method
+func (m *MockEC2API) GetCapacityReservationUsageRequest(arg0 *ec2.GetCapacityReservationUsageInput) (*request.Request, *ec2.GetCapacityReservationUsageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCapacityReservationUsageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.GetCapacityReservationUsageOutput)
+	return ret0, ret1
+}
+
+// GetCapacityReservationUsageRequest indicates an expected call of GetCapacityReservationUsageRequest
+func (mr *MockEC2APIMockRecorder) GetCapacityReservationUsageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityReservationUsageRequest", reflect.TypeOf((*MockEC2API)(nil).GetCapacityReservationUsageRequest), arg0)
+}
+
+// GetCapacityReservationUsageWithContext mocks base method
+func (m *MockEC2API) GetCapacityReservationUsageWithContext(arg0 context.Context, arg1 *ec2.GetCapacityReservationUsageInput, arg2 ...request.Option) (*ec2.GetCapacityReservationUsageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCapacityReservationUsageWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.GetCapacityReservationUsageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCapacityReservationUsageWithContext indicates an expected call of GetCapacityReservationUsageWithContext
+func (mr *MockEC2APIMockRecorder) GetCapacityReservationUsageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityReservationUsageWithContext", reflect.TypeOf((*MockEC2API)(nil).GetCapacityReservationUsageWithContext), varargs...)
+}
+
 // GetConsoleOutput mocks base method
 func (m *MockEC2API) GetConsoleOutput(arg0 *ec2.GetConsoleOutputInput) (*ec2.GetConsoleOutputOutput, error) {
 	m.ctrl.T.Helper()

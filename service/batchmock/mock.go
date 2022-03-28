@@ -350,6 +350,39 @@ func (mr *MockBatchAPIMockRecorder) DescribeComputeEnvironments(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComputeEnvironments", reflect.TypeOf((*MockBatchAPI)(nil).DescribeComputeEnvironments), arg0)
 }
 
+// DescribeComputeEnvironmentsPages mocks base method
+func (m *MockBatchAPI) DescribeComputeEnvironmentsPages(arg0 *batch.DescribeComputeEnvironmentsInput, arg1 func(*batch.DescribeComputeEnvironmentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeComputeEnvironmentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeComputeEnvironmentsPages indicates an expected call of DescribeComputeEnvironmentsPages
+func (mr *MockBatchAPIMockRecorder) DescribeComputeEnvironmentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComputeEnvironmentsPages", reflect.TypeOf((*MockBatchAPI)(nil).DescribeComputeEnvironmentsPages), arg0, arg1)
+}
+
+// DescribeComputeEnvironmentsPagesWithContext mocks base method
+func (m *MockBatchAPI) DescribeComputeEnvironmentsPagesWithContext(arg0 context.Context, arg1 *batch.DescribeComputeEnvironmentsInput, arg2 func(*batch.DescribeComputeEnvironmentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeComputeEnvironmentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeComputeEnvironmentsPagesWithContext indicates an expected call of DescribeComputeEnvironmentsPagesWithContext
+func (mr *MockBatchAPIMockRecorder) DescribeComputeEnvironmentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComputeEnvironmentsPagesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DescribeComputeEnvironmentsPagesWithContext), varargs...)
+}
+
 // DescribeComputeEnvironmentsRequest mocks base method
 func (m *MockBatchAPI) DescribeComputeEnvironmentsRequest(arg0 *batch.DescribeComputeEnvironmentsInput) (*request.Request, *batch.DescribeComputeEnvironmentsOutput) {
 	m.ctrl.T.Helper()
@@ -400,6 +433,39 @@ func (mr *MockBatchAPIMockRecorder) DescribeJobDefinitions(arg0 interface{}) *go
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobDefinitions", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobDefinitions), arg0)
 }
 
+// DescribeJobDefinitionsPages mocks base method
+func (m *MockBatchAPI) DescribeJobDefinitionsPages(arg0 *batch.DescribeJobDefinitionsInput, arg1 func(*batch.DescribeJobDefinitionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeJobDefinitionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeJobDefinitionsPages indicates an expected call of DescribeJobDefinitionsPages
+func (mr *MockBatchAPIMockRecorder) DescribeJobDefinitionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobDefinitionsPages", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobDefinitionsPages), arg0, arg1)
+}
+
+// DescribeJobDefinitionsPagesWithContext mocks base method
+func (m *MockBatchAPI) DescribeJobDefinitionsPagesWithContext(arg0 context.Context, arg1 *batch.DescribeJobDefinitionsInput, arg2 func(*batch.DescribeJobDefinitionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeJobDefinitionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeJobDefinitionsPagesWithContext indicates an expected call of DescribeJobDefinitionsPagesWithContext
+func (mr *MockBatchAPIMockRecorder) DescribeJobDefinitionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobDefinitionsPagesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobDefinitionsPagesWithContext), varargs...)
+}
+
 // DescribeJobDefinitionsRequest mocks base method
 func (m *MockBatchAPI) DescribeJobDefinitionsRequest(arg0 *batch.DescribeJobDefinitionsInput) (*request.Request, *batch.DescribeJobDefinitionsOutput) {
 	m.ctrl.T.Helper()
@@ -448,6 +514,39 @@ func (m *MockBatchAPI) DescribeJobQueues(arg0 *batch.DescribeJobQueuesInput) (*b
 func (mr *MockBatchAPIMockRecorder) DescribeJobQueues(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobQueues", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobQueues), arg0)
+}
+
+// DescribeJobQueuesPages mocks base method
+func (m *MockBatchAPI) DescribeJobQueuesPages(arg0 *batch.DescribeJobQueuesInput, arg1 func(*batch.DescribeJobQueuesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeJobQueuesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeJobQueuesPages indicates an expected call of DescribeJobQueuesPages
+func (mr *MockBatchAPIMockRecorder) DescribeJobQueuesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobQueuesPages", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobQueuesPages), arg0, arg1)
+}
+
+// DescribeJobQueuesPagesWithContext mocks base method
+func (m *MockBatchAPI) DescribeJobQueuesPagesWithContext(arg0 context.Context, arg1 *batch.DescribeJobQueuesInput, arg2 func(*batch.DescribeJobQueuesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeJobQueuesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeJobQueuesPagesWithContext indicates an expected call of DescribeJobQueuesPagesWithContext
+func (mr *MockBatchAPIMockRecorder) DescribeJobQueuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobQueuesPagesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobQueuesPagesWithContext), varargs...)
 }
 
 // DescribeJobQueuesRequest mocks base method
@@ -548,6 +647,39 @@ func (m *MockBatchAPI) ListJobs(arg0 *batch.ListJobsInput) (*batch.ListJobsOutpu
 func (mr *MockBatchAPIMockRecorder) ListJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobs", reflect.TypeOf((*MockBatchAPI)(nil).ListJobs), arg0)
+}
+
+// ListJobsPages mocks base method
+func (m *MockBatchAPI) ListJobsPages(arg0 *batch.ListJobsInput, arg1 func(*batch.ListJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobsPages indicates an expected call of ListJobsPages
+func (mr *MockBatchAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPages", reflect.TypeOf((*MockBatchAPI)(nil).ListJobsPages), arg0, arg1)
+}
+
+// ListJobsPagesWithContext mocks base method
+func (m *MockBatchAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *batch.ListJobsInput, arg2 func(*batch.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext
+func (mr *MockBatchAPIMockRecorder) ListJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPagesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).ListJobsPagesWithContext), varargs...)
 }
 
 // ListJobsRequest mocks base method
