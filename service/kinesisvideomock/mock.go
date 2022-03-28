@@ -35,6 +35,56 @@ func (m *MockKinesisVideoAPI) EXPECT() *MockKinesisVideoAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateSignalingChannel mocks base method
+func (m *MockKinesisVideoAPI) CreateSignalingChannel(arg0 *kinesisvideo.CreateSignalingChannelInput) (*kinesisvideo.CreateSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSignalingChannel", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.CreateSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSignalingChannel indicates an expected call of CreateSignalingChannel
+func (mr *MockKinesisVideoAPIMockRecorder) CreateSignalingChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSignalingChannel", reflect.TypeOf((*MockKinesisVideoAPI)(nil).CreateSignalingChannel), arg0)
+}
+
+// CreateSignalingChannelRequest mocks base method
+func (m *MockKinesisVideoAPI) CreateSignalingChannelRequest(arg0 *kinesisvideo.CreateSignalingChannelInput) (*request.Request, *kinesisvideo.CreateSignalingChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSignalingChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.CreateSignalingChannelOutput)
+	return ret0, ret1
+}
+
+// CreateSignalingChannelRequest indicates an expected call of CreateSignalingChannelRequest
+func (mr *MockKinesisVideoAPIMockRecorder) CreateSignalingChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSignalingChannelRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).CreateSignalingChannelRequest), arg0)
+}
+
+// CreateSignalingChannelWithContext mocks base method
+func (m *MockKinesisVideoAPI) CreateSignalingChannelWithContext(arg0 context.Context, arg1 *kinesisvideo.CreateSignalingChannelInput, arg2 ...request.Option) (*kinesisvideo.CreateSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSignalingChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.CreateSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSignalingChannelWithContext indicates an expected call of CreateSignalingChannelWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) CreateSignalingChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSignalingChannelWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).CreateSignalingChannelWithContext), varargs...)
+}
+
 // CreateStream mocks base method
 func (m *MockKinesisVideoAPI) CreateStream(arg0 *kinesisvideo.CreateStreamInput) (*kinesisvideo.CreateStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -85,6 +135,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) CreateStreamWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStreamWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).CreateStreamWithContext), varargs...)
 }
 
+// DeleteSignalingChannel mocks base method
+func (m *MockKinesisVideoAPI) DeleteSignalingChannel(arg0 *kinesisvideo.DeleteSignalingChannelInput) (*kinesisvideo.DeleteSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSignalingChannel", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.DeleteSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSignalingChannel indicates an expected call of DeleteSignalingChannel
+func (mr *MockKinesisVideoAPIMockRecorder) DeleteSignalingChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSignalingChannel", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteSignalingChannel), arg0)
+}
+
+// DeleteSignalingChannelRequest mocks base method
+func (m *MockKinesisVideoAPI) DeleteSignalingChannelRequest(arg0 *kinesisvideo.DeleteSignalingChannelInput) (*request.Request, *kinesisvideo.DeleteSignalingChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSignalingChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.DeleteSignalingChannelOutput)
+	return ret0, ret1
+}
+
+// DeleteSignalingChannelRequest indicates an expected call of DeleteSignalingChannelRequest
+func (mr *MockKinesisVideoAPIMockRecorder) DeleteSignalingChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSignalingChannelRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteSignalingChannelRequest), arg0)
+}
+
+// DeleteSignalingChannelWithContext mocks base method
+func (m *MockKinesisVideoAPI) DeleteSignalingChannelWithContext(arg0 context.Context, arg1 *kinesisvideo.DeleteSignalingChannelInput, arg2 ...request.Option) (*kinesisvideo.DeleteSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSignalingChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.DeleteSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSignalingChannelWithContext indicates an expected call of DeleteSignalingChannelWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) DeleteSignalingChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSignalingChannelWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteSignalingChannelWithContext), varargs...)
+}
+
 // DeleteStream mocks base method
 func (m *MockKinesisVideoAPI) DeleteStream(arg0 *kinesisvideo.DeleteStreamInput) (*kinesisvideo.DeleteStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +233,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) DeleteStreamWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStreamWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteStreamWithContext), varargs...)
+}
+
+// DescribeSignalingChannel mocks base method
+func (m *MockKinesisVideoAPI) DescribeSignalingChannel(arg0 *kinesisvideo.DescribeSignalingChannelInput) (*kinesisvideo.DescribeSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSignalingChannel", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.DescribeSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSignalingChannel indicates an expected call of DescribeSignalingChannel
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeSignalingChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSignalingChannel", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeSignalingChannel), arg0)
+}
+
+// DescribeSignalingChannelRequest mocks base method
+func (m *MockKinesisVideoAPI) DescribeSignalingChannelRequest(arg0 *kinesisvideo.DescribeSignalingChannelInput) (*request.Request, *kinesisvideo.DescribeSignalingChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSignalingChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.DescribeSignalingChannelOutput)
+	return ret0, ret1
+}
+
+// DescribeSignalingChannelRequest indicates an expected call of DescribeSignalingChannelRequest
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeSignalingChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSignalingChannelRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeSignalingChannelRequest), arg0)
+}
+
+// DescribeSignalingChannelWithContext mocks base method
+func (m *MockKinesisVideoAPI) DescribeSignalingChannelWithContext(arg0 context.Context, arg1 *kinesisvideo.DescribeSignalingChannelInput, arg2 ...request.Option) (*kinesisvideo.DescribeSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSignalingChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.DescribeSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSignalingChannelWithContext indicates an expected call of DescribeSignalingChannelWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeSignalingChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSignalingChannelWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeSignalingChannelWithContext), varargs...)
 }
 
 // DescribeStream mocks base method
@@ -235,6 +385,139 @@ func (mr *MockKinesisVideoAPIMockRecorder) GetDataEndpointWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataEndpointWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).GetDataEndpointWithContext), varargs...)
 }
 
+// GetSignalingChannelEndpoint mocks base method
+func (m *MockKinesisVideoAPI) GetSignalingChannelEndpoint(arg0 *kinesisvideo.GetSignalingChannelEndpointInput) (*kinesisvideo.GetSignalingChannelEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSignalingChannelEndpoint", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.GetSignalingChannelEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSignalingChannelEndpoint indicates an expected call of GetSignalingChannelEndpoint
+func (mr *MockKinesisVideoAPIMockRecorder) GetSignalingChannelEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignalingChannelEndpoint", reflect.TypeOf((*MockKinesisVideoAPI)(nil).GetSignalingChannelEndpoint), arg0)
+}
+
+// GetSignalingChannelEndpointRequest mocks base method
+func (m *MockKinesisVideoAPI) GetSignalingChannelEndpointRequest(arg0 *kinesisvideo.GetSignalingChannelEndpointInput) (*request.Request, *kinesisvideo.GetSignalingChannelEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSignalingChannelEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.GetSignalingChannelEndpointOutput)
+	return ret0, ret1
+}
+
+// GetSignalingChannelEndpointRequest indicates an expected call of GetSignalingChannelEndpointRequest
+func (mr *MockKinesisVideoAPIMockRecorder) GetSignalingChannelEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignalingChannelEndpointRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).GetSignalingChannelEndpointRequest), arg0)
+}
+
+// GetSignalingChannelEndpointWithContext mocks base method
+func (m *MockKinesisVideoAPI) GetSignalingChannelEndpointWithContext(arg0 context.Context, arg1 *kinesisvideo.GetSignalingChannelEndpointInput, arg2 ...request.Option) (*kinesisvideo.GetSignalingChannelEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSignalingChannelEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.GetSignalingChannelEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSignalingChannelEndpointWithContext indicates an expected call of GetSignalingChannelEndpointWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) GetSignalingChannelEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignalingChannelEndpointWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).GetSignalingChannelEndpointWithContext), varargs...)
+}
+
+// ListSignalingChannels mocks base method
+func (m *MockKinesisVideoAPI) ListSignalingChannels(arg0 *kinesisvideo.ListSignalingChannelsInput) (*kinesisvideo.ListSignalingChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSignalingChannels", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.ListSignalingChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSignalingChannels indicates an expected call of ListSignalingChannels
+func (mr *MockKinesisVideoAPIMockRecorder) ListSignalingChannels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSignalingChannels", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListSignalingChannels), arg0)
+}
+
+// ListSignalingChannelsPages mocks base method
+func (m *MockKinesisVideoAPI) ListSignalingChannelsPages(arg0 *kinesisvideo.ListSignalingChannelsInput, arg1 func(*kinesisvideo.ListSignalingChannelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSignalingChannelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSignalingChannelsPages indicates an expected call of ListSignalingChannelsPages
+func (mr *MockKinesisVideoAPIMockRecorder) ListSignalingChannelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSignalingChannelsPages", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListSignalingChannelsPages), arg0, arg1)
+}
+
+// ListSignalingChannelsPagesWithContext mocks base method
+func (m *MockKinesisVideoAPI) ListSignalingChannelsPagesWithContext(arg0 context.Context, arg1 *kinesisvideo.ListSignalingChannelsInput, arg2 func(*kinesisvideo.ListSignalingChannelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSignalingChannelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSignalingChannelsPagesWithContext indicates an expected call of ListSignalingChannelsPagesWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) ListSignalingChannelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSignalingChannelsPagesWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListSignalingChannelsPagesWithContext), varargs...)
+}
+
+// ListSignalingChannelsRequest mocks base method
+func (m *MockKinesisVideoAPI) ListSignalingChannelsRequest(arg0 *kinesisvideo.ListSignalingChannelsInput) (*request.Request, *kinesisvideo.ListSignalingChannelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSignalingChannelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.ListSignalingChannelsOutput)
+	return ret0, ret1
+}
+
+// ListSignalingChannelsRequest indicates an expected call of ListSignalingChannelsRequest
+func (mr *MockKinesisVideoAPIMockRecorder) ListSignalingChannelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSignalingChannelsRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListSignalingChannelsRequest), arg0)
+}
+
+// ListSignalingChannelsWithContext mocks base method
+func (m *MockKinesisVideoAPI) ListSignalingChannelsWithContext(arg0 context.Context, arg1 *kinesisvideo.ListSignalingChannelsInput, arg2 ...request.Option) (*kinesisvideo.ListSignalingChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSignalingChannelsWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.ListSignalingChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSignalingChannelsWithContext indicates an expected call of ListSignalingChannelsWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) ListSignalingChannelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSignalingChannelsWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListSignalingChannelsWithContext), varargs...)
+}
+
 // ListStreams mocks base method
 func (m *MockKinesisVideoAPI) ListStreams(arg0 *kinesisvideo.ListStreamsInput) (*kinesisvideo.ListStreamsOutput, error) {
 	m.ctrl.T.Helper()
@@ -318,6 +601,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) ListStreamsWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamsWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListStreamsWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockKinesisVideoAPI) ListTagsForResource(arg0 *kinesisvideo.ListTagsForResourceInput) (*kinesisvideo.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockKinesisVideoAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockKinesisVideoAPI) ListTagsForResourceRequest(arg0 *kinesisvideo.ListTagsForResourceInput) (*request.Request, *kinesisvideo.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockKinesisVideoAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockKinesisVideoAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *kinesisvideo.ListTagsForResourceInput, arg2 ...request.Option) (*kinesisvideo.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // ListTagsForStream mocks base method
 func (m *MockKinesisVideoAPI) ListTagsForStream(arg0 *kinesisvideo.ListTagsForStreamInput) (*kinesisvideo.ListTagsForStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -368,6 +701,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) ListTagsForStreamWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForStreamWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListTagsForStreamWithContext), varargs...)
 }
 
+// TagResource mocks base method
+func (m *MockKinesisVideoAPI) TagResource(arg0 *kinesisvideo.TagResourceInput) (*kinesisvideo.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockKinesisVideoAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockKinesisVideoAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockKinesisVideoAPI) TagResourceRequest(arg0 *kinesisvideo.TagResourceInput) (*request.Request, *kinesisvideo.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockKinesisVideoAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockKinesisVideoAPI) TagResourceWithContext(arg0 context.Context, arg1 *kinesisvideo.TagResourceInput, arg2 ...request.Option) (*kinesisvideo.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).TagResourceWithContext), varargs...)
+}
+
 // TagStream mocks base method
 func (m *MockKinesisVideoAPI) TagStream(arg0 *kinesisvideo.TagStreamInput) (*kinesisvideo.TagStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -416,6 +799,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) TagStreamWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagStreamWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).TagStreamWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockKinesisVideoAPI) UntagResource(arg0 *kinesisvideo.UntagResourceInput) (*kinesisvideo.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockKinesisVideoAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockKinesisVideoAPI) UntagResourceRequest(arg0 *kinesisvideo.UntagResourceInput) (*request.Request, *kinesisvideo.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockKinesisVideoAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockKinesisVideoAPI) UntagResourceWithContext(arg0 context.Context, arg1 *kinesisvideo.UntagResourceInput, arg2 ...request.Option) (*kinesisvideo.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UntagStream mocks base method
@@ -516,6 +949,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) UpdateDataRetentionWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataRetentionWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateDataRetentionWithContext), varargs...)
+}
+
+// UpdateSignalingChannel mocks base method
+func (m *MockKinesisVideoAPI) UpdateSignalingChannel(arg0 *kinesisvideo.UpdateSignalingChannelInput) (*kinesisvideo.UpdateSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSignalingChannel", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.UpdateSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSignalingChannel indicates an expected call of UpdateSignalingChannel
+func (mr *MockKinesisVideoAPIMockRecorder) UpdateSignalingChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSignalingChannel", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateSignalingChannel), arg0)
+}
+
+// UpdateSignalingChannelRequest mocks base method
+func (m *MockKinesisVideoAPI) UpdateSignalingChannelRequest(arg0 *kinesisvideo.UpdateSignalingChannelInput) (*request.Request, *kinesisvideo.UpdateSignalingChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSignalingChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.UpdateSignalingChannelOutput)
+	return ret0, ret1
+}
+
+// UpdateSignalingChannelRequest indicates an expected call of UpdateSignalingChannelRequest
+func (mr *MockKinesisVideoAPIMockRecorder) UpdateSignalingChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSignalingChannelRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateSignalingChannelRequest), arg0)
+}
+
+// UpdateSignalingChannelWithContext mocks base method
+func (m *MockKinesisVideoAPI) UpdateSignalingChannelWithContext(arg0 context.Context, arg1 *kinesisvideo.UpdateSignalingChannelInput, arg2 ...request.Option) (*kinesisvideo.UpdateSignalingChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSignalingChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.UpdateSignalingChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSignalingChannelWithContext indicates an expected call of UpdateSignalingChannelWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) UpdateSignalingChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSignalingChannelWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateSignalingChannelWithContext), varargs...)
 }
 
 // UpdateStream mocks base method

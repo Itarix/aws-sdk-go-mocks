@@ -735,6 +735,56 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteAuthorizerWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAuthorizerWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteAuthorizerWithContext), varargs...)
 }
 
+// DeleteCorsConfiguration mocks base method
+func (m *MockApiGatewayV2API) DeleteCorsConfiguration(arg0 *apigatewayv2.DeleteCorsConfigurationInput) (*apigatewayv2.DeleteCorsConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCorsConfiguration", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteCorsConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCorsConfiguration indicates an expected call of DeleteCorsConfiguration
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteCorsConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCorsConfiguration", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteCorsConfiguration), arg0)
+}
+
+// DeleteCorsConfigurationRequest mocks base method
+func (m *MockApiGatewayV2API) DeleteCorsConfigurationRequest(arg0 *apigatewayv2.DeleteCorsConfigurationInput) (*request.Request, *apigatewayv2.DeleteCorsConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCorsConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.DeleteCorsConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteCorsConfigurationRequest indicates an expected call of DeleteCorsConfigurationRequest
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteCorsConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCorsConfigurationRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteCorsConfigurationRequest), arg0)
+}
+
+// DeleteCorsConfigurationWithContext mocks base method
+func (m *MockApiGatewayV2API) DeleteCorsConfigurationWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteCorsConfigurationInput, arg2 ...request.Option) (*apigatewayv2.DeleteCorsConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCorsConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteCorsConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCorsConfigurationWithContext indicates an expected call of DeleteCorsConfigurationWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteCorsConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCorsConfigurationWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteCorsConfigurationWithContext), varargs...)
+}
+
 // DeleteDeployment mocks base method
 func (m *MockApiGatewayV2API) DeleteDeployment(arg0 *apigatewayv2.DeleteDeploymentInput) (*apigatewayv2.DeleteDeploymentOutput, error) {
 	m.ctrl.T.Helper()
@@ -1063,6 +1113,56 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteResponseWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteResponseWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteResponseWithContext), varargs...)
+}
+
+// DeleteRouteSettings mocks base method
+func (m *MockApiGatewayV2API) DeleteRouteSettings(arg0 *apigatewayv2.DeleteRouteSettingsInput) (*apigatewayv2.DeleteRouteSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRouteSettings", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteRouteSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRouteSettings indicates an expected call of DeleteRouteSettings
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteSettings", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteSettings), arg0)
+}
+
+// DeleteRouteSettingsRequest mocks base method
+func (m *MockApiGatewayV2API) DeleteRouteSettingsRequest(arg0 *apigatewayv2.DeleteRouteSettingsInput) (*request.Request, *apigatewayv2.DeleteRouteSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRouteSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.DeleteRouteSettingsOutput)
+	return ret0, ret1
+}
+
+// DeleteRouteSettingsRequest indicates an expected call of DeleteRouteSettingsRequest
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteSettingsRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteSettingsRequest), arg0)
+}
+
+// DeleteRouteSettingsWithContext mocks base method
+func (m *MockApiGatewayV2API) DeleteRouteSettingsWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteRouteSettingsInput, arg2 ...request.Option) (*apigatewayv2.DeleteRouteSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRouteSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteRouteSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRouteSettingsWithContext indicates an expected call of DeleteRouteSettingsWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteSettingsWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteSettingsWithContext), varargs...)
 }
 
 // DeleteRouteWithContext mocks base method
@@ -2333,6 +2433,106 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetTagsWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetTagsWithContext), varargs...)
+}
+
+// ImportApi mocks base method
+func (m *MockApiGatewayV2API) ImportApi(arg0 *apigatewayv2.ImportApiInput) (*apigatewayv2.ImportApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportApi", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.ImportApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportApi indicates an expected call of ImportApi
+func (mr *MockApiGatewayV2APIMockRecorder) ImportApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportApi", reflect.TypeOf((*MockApiGatewayV2API)(nil).ImportApi), arg0)
+}
+
+// ImportApiRequest mocks base method
+func (m *MockApiGatewayV2API) ImportApiRequest(arg0 *apigatewayv2.ImportApiInput) (*request.Request, *apigatewayv2.ImportApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.ImportApiOutput)
+	return ret0, ret1
+}
+
+// ImportApiRequest indicates an expected call of ImportApiRequest
+func (mr *MockApiGatewayV2APIMockRecorder) ImportApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportApiRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).ImportApiRequest), arg0)
+}
+
+// ImportApiWithContext mocks base method
+func (m *MockApiGatewayV2API) ImportApiWithContext(arg0 context.Context, arg1 *apigatewayv2.ImportApiInput, arg2 ...request.Option) (*apigatewayv2.ImportApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportApiWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.ImportApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportApiWithContext indicates an expected call of ImportApiWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) ImportApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportApiWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).ImportApiWithContext), varargs...)
+}
+
+// ReimportApi mocks base method
+func (m *MockApiGatewayV2API) ReimportApi(arg0 *apigatewayv2.ReimportApiInput) (*apigatewayv2.ReimportApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReimportApi", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.ReimportApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReimportApi indicates an expected call of ReimportApi
+func (mr *MockApiGatewayV2APIMockRecorder) ReimportApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReimportApi", reflect.TypeOf((*MockApiGatewayV2API)(nil).ReimportApi), arg0)
+}
+
+// ReimportApiRequest mocks base method
+func (m *MockApiGatewayV2API) ReimportApiRequest(arg0 *apigatewayv2.ReimportApiInput) (*request.Request, *apigatewayv2.ReimportApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReimportApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.ReimportApiOutput)
+	return ret0, ret1
+}
+
+// ReimportApiRequest indicates an expected call of ReimportApiRequest
+func (mr *MockApiGatewayV2APIMockRecorder) ReimportApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReimportApiRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).ReimportApiRequest), arg0)
+}
+
+// ReimportApiWithContext mocks base method
+func (m *MockApiGatewayV2API) ReimportApiWithContext(arg0 context.Context, arg1 *apigatewayv2.ReimportApiInput, arg2 ...request.Option) (*apigatewayv2.ReimportApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ReimportApiWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.ReimportApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReimportApiWithContext indicates an expected call of ReimportApiWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) ReimportApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReimportApiWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).ReimportApiWithContext), varargs...)
 }
 
 // TagResource mocks base method
