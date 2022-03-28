@@ -735,6 +735,56 @@ func (mr *MockDocDBAPIMockRecorder) DeleteDBSubnetGroupWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBSubnetGroupWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DeleteDBSubnetGroupWithContext), varargs...)
 }
 
+// DescribeCertificates mocks base method
+func (m *MockDocDBAPI) DescribeCertificates(arg0 *docdb.DescribeCertificatesInput) (*docdb.DescribeCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificates", arg0)
+	ret0, _ := ret[0].(*docdb.DescribeCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCertificates indicates an expected call of DescribeCertificates
+func (mr *MockDocDBAPIMockRecorder) DescribeCertificates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificates", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeCertificates), arg0)
+}
+
+// DescribeCertificatesRequest mocks base method
+func (m *MockDocDBAPI) DescribeCertificatesRequest(arg0 *docdb.DescribeCertificatesInput) (*request.Request, *docdb.DescribeCertificatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*docdb.DescribeCertificatesOutput)
+	return ret0, ret1
+}
+
+// DescribeCertificatesRequest indicates an expected call of DescribeCertificatesRequest
+func (mr *MockDocDBAPIMockRecorder) DescribeCertificatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificatesRequest", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeCertificatesRequest), arg0)
+}
+
+// DescribeCertificatesWithContext mocks base method
+func (m *MockDocDBAPI) DescribeCertificatesWithContext(arg0 context.Context, arg1 *docdb.DescribeCertificatesInput, arg2 ...request.Option) (*docdb.DescribeCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCertificatesWithContext", varargs...)
+	ret0, _ := ret[0].(*docdb.DescribeCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCertificatesWithContext indicates an expected call of DescribeCertificatesWithContext
+func (mr *MockDocDBAPIMockRecorder) DescribeCertificatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificatesWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeCertificatesWithContext), varargs...)
+}
+
 // DescribeDBClusterParameterGroups mocks base method
 func (m *MockDocDBAPI) DescribeDBClusterParameterGroups(arg0 *docdb.DescribeDBClusterParameterGroupsInput) (*docdb.DescribeDBClusterParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
