@@ -2183,6 +2183,106 @@ func (mr *MockDocDBAPIMockRecorder) RestoreDBClusterToPointInTimeWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreDBClusterToPointInTimeWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).RestoreDBClusterToPointInTimeWithContext), varargs...)
 }
 
+// StartDBCluster mocks base method
+func (m *MockDocDBAPI) StartDBCluster(arg0 *docdb.StartDBClusterInput) (*docdb.StartDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDBCluster", arg0)
+	ret0, _ := ret[0].(*docdb.StartDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDBCluster indicates an expected call of StartDBCluster
+func (mr *MockDocDBAPIMockRecorder) StartDBCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBCluster", reflect.TypeOf((*MockDocDBAPI)(nil).StartDBCluster), arg0)
+}
+
+// StartDBClusterRequest mocks base method
+func (m *MockDocDBAPI) StartDBClusterRequest(arg0 *docdb.StartDBClusterInput) (*request.Request, *docdb.StartDBClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDBClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*docdb.StartDBClusterOutput)
+	return ret0, ret1
+}
+
+// StartDBClusterRequest indicates an expected call of StartDBClusterRequest
+func (mr *MockDocDBAPIMockRecorder) StartDBClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBClusterRequest", reflect.TypeOf((*MockDocDBAPI)(nil).StartDBClusterRequest), arg0)
+}
+
+// StartDBClusterWithContext mocks base method
+func (m *MockDocDBAPI) StartDBClusterWithContext(arg0 context.Context, arg1 *docdb.StartDBClusterInput, arg2 ...request.Option) (*docdb.StartDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDBClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*docdb.StartDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDBClusterWithContext indicates an expected call of StartDBClusterWithContext
+func (mr *MockDocDBAPIMockRecorder) StartDBClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBClusterWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).StartDBClusterWithContext), varargs...)
+}
+
+// StopDBCluster mocks base method
+func (m *MockDocDBAPI) StopDBCluster(arg0 *docdb.StopDBClusterInput) (*docdb.StopDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDBCluster", arg0)
+	ret0, _ := ret[0].(*docdb.StopDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDBCluster indicates an expected call of StopDBCluster
+func (mr *MockDocDBAPIMockRecorder) StopDBCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBCluster", reflect.TypeOf((*MockDocDBAPI)(nil).StopDBCluster), arg0)
+}
+
+// StopDBClusterRequest mocks base method
+func (m *MockDocDBAPI) StopDBClusterRequest(arg0 *docdb.StopDBClusterInput) (*request.Request, *docdb.StopDBClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDBClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*docdb.StopDBClusterOutput)
+	return ret0, ret1
+}
+
+// StopDBClusterRequest indicates an expected call of StopDBClusterRequest
+func (mr *MockDocDBAPIMockRecorder) StopDBClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBClusterRequest", reflect.TypeOf((*MockDocDBAPI)(nil).StopDBClusterRequest), arg0)
+}
+
+// StopDBClusterWithContext mocks base method
+func (m *MockDocDBAPI) StopDBClusterWithContext(arg0 context.Context, arg1 *docdb.StopDBClusterInput, arg2 ...request.Option) (*docdb.StopDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopDBClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*docdb.StopDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDBClusterWithContext indicates an expected call of StopDBClusterWithContext
+func (mr *MockDocDBAPIMockRecorder) StopDBClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBClusterWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).StopDBClusterWithContext), varargs...)
+}
+
 // WaitUntilDBInstanceAvailable mocks base method
 func (m *MockDocDBAPI) WaitUntilDBInstanceAvailable(arg0 *docdb.DescribeDBInstancesInput) error {
 	m.ctrl.T.Helper()
