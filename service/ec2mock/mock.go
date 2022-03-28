@@ -7865,6 +7865,56 @@ func (mr *MockEC2APIMockRecorder) DescribeElasticGpusWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeElasticGpusWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeElasticGpusWithContext), varargs...)
 }
 
+// DescribeExportImageTasks mocks base method
+func (m *MockEC2API) DescribeExportImageTasks(arg0 *ec2.DescribeExportImageTasksInput) (*ec2.DescribeExportImageTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExportImageTasks", arg0)
+	ret0, _ := ret[0].(*ec2.DescribeExportImageTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExportImageTasks indicates an expected call of DescribeExportImageTasks
+func (mr *MockEC2APIMockRecorder) DescribeExportImageTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportImageTasks", reflect.TypeOf((*MockEC2API)(nil).DescribeExportImageTasks), arg0)
+}
+
+// DescribeExportImageTasksRequest mocks base method
+func (m *MockEC2API) DescribeExportImageTasksRequest(arg0 *ec2.DescribeExportImageTasksInput) (*request.Request, *ec2.DescribeExportImageTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExportImageTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DescribeExportImageTasksOutput)
+	return ret0, ret1
+}
+
+// DescribeExportImageTasksRequest indicates an expected call of DescribeExportImageTasksRequest
+func (mr *MockEC2APIMockRecorder) DescribeExportImageTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportImageTasksRequest", reflect.TypeOf((*MockEC2API)(nil).DescribeExportImageTasksRequest), arg0)
+}
+
+// DescribeExportImageTasksWithContext mocks base method
+func (m *MockEC2API) DescribeExportImageTasksWithContext(arg0 context.Context, arg1 *ec2.DescribeExportImageTasksInput, arg2 ...request.Option) (*ec2.DescribeExportImageTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExportImageTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DescribeExportImageTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExportImageTasksWithContext indicates an expected call of DescribeExportImageTasksWithContext
+func (mr *MockEC2APIMockRecorder) DescribeExportImageTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportImageTasksWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeExportImageTasksWithContext), varargs...)
+}
+
 // DescribeExportTasks mocks base method
 func (m *MockEC2API) DescribeExportTasks(arg0 *ec2.DescribeExportTasksInput) (*ec2.DescribeExportTasksOutput, error) {
 	m.ctrl.T.Helper()
@@ -14895,6 +14945,56 @@ func (mr *MockEC2APIMockRecorder) ExportClientVpnClientConfigurationWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportClientVpnClientConfigurationWithContext", reflect.TypeOf((*MockEC2API)(nil).ExportClientVpnClientConfigurationWithContext), varargs...)
+}
+
+// ExportImage mocks base method
+func (m *MockEC2API) ExportImage(arg0 *ec2.ExportImageInput) (*ec2.ExportImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportImage", arg0)
+	ret0, _ := ret[0].(*ec2.ExportImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportImage indicates an expected call of ExportImage
+func (mr *MockEC2APIMockRecorder) ExportImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportImage", reflect.TypeOf((*MockEC2API)(nil).ExportImage), arg0)
+}
+
+// ExportImageRequest mocks base method
+func (m *MockEC2API) ExportImageRequest(arg0 *ec2.ExportImageInput) (*request.Request, *ec2.ExportImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ExportImageOutput)
+	return ret0, ret1
+}
+
+// ExportImageRequest indicates an expected call of ExportImageRequest
+func (mr *MockEC2APIMockRecorder) ExportImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportImageRequest", reflect.TypeOf((*MockEC2API)(nil).ExportImageRequest), arg0)
+}
+
+// ExportImageWithContext mocks base method
+func (m *MockEC2API) ExportImageWithContext(arg0 context.Context, arg1 *ec2.ExportImageInput, arg2 ...request.Option) (*ec2.ExportImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportImageWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ExportImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportImageWithContext indicates an expected call of ExportImageWithContext
+func (mr *MockEC2APIMockRecorder) ExportImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportImageWithContext", reflect.TypeOf((*MockEC2API)(nil).ExportImageWithContext), varargs...)
 }
 
 // ExportTransitGatewayRoutes mocks base method
