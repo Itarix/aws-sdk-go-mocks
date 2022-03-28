@@ -15563,6 +15563,56 @@ func (mr *MockEC2APIMockRecorder) GetConsoleScreenshotWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConsoleScreenshotWithContext", reflect.TypeOf((*MockEC2API)(nil).GetConsoleScreenshotWithContext), varargs...)
 }
 
+// GetDefaultCreditSpecification mocks base method
+func (m *MockEC2API) GetDefaultCreditSpecification(arg0 *ec2.GetDefaultCreditSpecificationInput) (*ec2.GetDefaultCreditSpecificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDefaultCreditSpecification", arg0)
+	ret0, _ := ret[0].(*ec2.GetDefaultCreditSpecificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDefaultCreditSpecification indicates an expected call of GetDefaultCreditSpecification
+func (mr *MockEC2APIMockRecorder) GetDefaultCreditSpecification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDefaultCreditSpecification", reflect.TypeOf((*MockEC2API)(nil).GetDefaultCreditSpecification), arg0)
+}
+
+// GetDefaultCreditSpecificationRequest mocks base method
+func (m *MockEC2API) GetDefaultCreditSpecificationRequest(arg0 *ec2.GetDefaultCreditSpecificationInput) (*request.Request, *ec2.GetDefaultCreditSpecificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDefaultCreditSpecificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.GetDefaultCreditSpecificationOutput)
+	return ret0, ret1
+}
+
+// GetDefaultCreditSpecificationRequest indicates an expected call of GetDefaultCreditSpecificationRequest
+func (mr *MockEC2APIMockRecorder) GetDefaultCreditSpecificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDefaultCreditSpecificationRequest", reflect.TypeOf((*MockEC2API)(nil).GetDefaultCreditSpecificationRequest), arg0)
+}
+
+// GetDefaultCreditSpecificationWithContext mocks base method
+func (m *MockEC2API) GetDefaultCreditSpecificationWithContext(arg0 context.Context, arg1 *ec2.GetDefaultCreditSpecificationInput, arg2 ...request.Option) (*ec2.GetDefaultCreditSpecificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDefaultCreditSpecificationWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.GetDefaultCreditSpecificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDefaultCreditSpecificationWithContext indicates an expected call of GetDefaultCreditSpecificationWithContext
+func (mr *MockEC2APIMockRecorder) GetDefaultCreditSpecificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDefaultCreditSpecificationWithContext", reflect.TypeOf((*MockEC2API)(nil).GetDefaultCreditSpecificationWithContext), varargs...)
+}
+
 // GetEbsDefaultKmsKeyId mocks base method
 func (m *MockEC2API) GetEbsDefaultKmsKeyId(arg0 *ec2.GetEbsDefaultKmsKeyIdInput) (*ec2.GetEbsDefaultKmsKeyIdOutput, error) {
 	m.ctrl.T.Helper()
@@ -16510,6 +16560,56 @@ func (mr *MockEC2APIMockRecorder) ModifyClientVpnEndpointWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClientVpnEndpointWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyClientVpnEndpointWithContext), varargs...)
+}
+
+// ModifyDefaultCreditSpecification mocks base method
+func (m *MockEC2API) ModifyDefaultCreditSpecification(arg0 *ec2.ModifyDefaultCreditSpecificationInput) (*ec2.ModifyDefaultCreditSpecificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyDefaultCreditSpecification", arg0)
+	ret0, _ := ret[0].(*ec2.ModifyDefaultCreditSpecificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyDefaultCreditSpecification indicates an expected call of ModifyDefaultCreditSpecification
+func (mr *MockEC2APIMockRecorder) ModifyDefaultCreditSpecification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDefaultCreditSpecification", reflect.TypeOf((*MockEC2API)(nil).ModifyDefaultCreditSpecification), arg0)
+}
+
+// ModifyDefaultCreditSpecificationRequest mocks base method
+func (m *MockEC2API) ModifyDefaultCreditSpecificationRequest(arg0 *ec2.ModifyDefaultCreditSpecificationInput) (*request.Request, *ec2.ModifyDefaultCreditSpecificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyDefaultCreditSpecificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ModifyDefaultCreditSpecificationOutput)
+	return ret0, ret1
+}
+
+// ModifyDefaultCreditSpecificationRequest indicates an expected call of ModifyDefaultCreditSpecificationRequest
+func (mr *MockEC2APIMockRecorder) ModifyDefaultCreditSpecificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDefaultCreditSpecificationRequest", reflect.TypeOf((*MockEC2API)(nil).ModifyDefaultCreditSpecificationRequest), arg0)
+}
+
+// ModifyDefaultCreditSpecificationWithContext mocks base method
+func (m *MockEC2API) ModifyDefaultCreditSpecificationWithContext(arg0 context.Context, arg1 *ec2.ModifyDefaultCreditSpecificationInput, arg2 ...request.Option) (*ec2.ModifyDefaultCreditSpecificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyDefaultCreditSpecificationWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ModifyDefaultCreditSpecificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyDefaultCreditSpecificationWithContext indicates an expected call of ModifyDefaultCreditSpecificationWithContext
+func (mr *MockEC2APIMockRecorder) ModifyDefaultCreditSpecificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDefaultCreditSpecificationWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyDefaultCreditSpecificationWithContext), varargs...)
 }
 
 // ModifyEbsDefaultKmsKeyId mocks base method

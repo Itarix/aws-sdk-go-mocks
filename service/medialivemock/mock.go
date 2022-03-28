@@ -235,6 +235,106 @@ func (mr *MockMediaLiveAPIMockRecorder) CreateInputWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInputWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateInputWithContext), varargs...)
 }
 
+// CreateMultiplex mocks base method
+func (m *MockMediaLiveAPI) CreateMultiplex(arg0 *medialive.CreateMultiplexInput) (*medialive.CreateMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMultiplex", arg0)
+	ret0, _ := ret[0].(*medialive.CreateMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMultiplex indicates an expected call of CreateMultiplex
+func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplex", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplex), arg0)
+}
+
+// CreateMultiplexProgram mocks base method
+func (m *MockMediaLiveAPI) CreateMultiplexProgram(arg0 *medialive.CreateMultiplexProgramInput) (*medialive.CreateMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMultiplexProgram", arg0)
+	ret0, _ := ret[0].(*medialive.CreateMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMultiplexProgram indicates an expected call of CreateMultiplexProgram
+func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplexProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplexProgram", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplexProgram), arg0)
+}
+
+// CreateMultiplexProgramRequest mocks base method
+func (m *MockMediaLiveAPI) CreateMultiplexProgramRequest(arg0 *medialive.CreateMultiplexProgramInput) (*request.Request, *medialive.CreateMultiplexProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMultiplexProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.CreateMultiplexProgramOutput)
+	return ret0, ret1
+}
+
+// CreateMultiplexProgramRequest indicates an expected call of CreateMultiplexProgramRequest
+func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplexProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplexProgramRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplexProgramRequest), arg0)
+}
+
+// CreateMultiplexProgramWithContext mocks base method
+func (m *MockMediaLiveAPI) CreateMultiplexProgramWithContext(arg0 context.Context, arg1 *medialive.CreateMultiplexProgramInput, arg2 ...request.Option) (*medialive.CreateMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMultiplexProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.CreateMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMultiplexProgramWithContext indicates an expected call of CreateMultiplexProgramWithContext
+func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplexProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplexProgramWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplexProgramWithContext), varargs...)
+}
+
+// CreateMultiplexRequest mocks base method
+func (m *MockMediaLiveAPI) CreateMultiplexRequest(arg0 *medialive.CreateMultiplexInput) (*request.Request, *medialive.CreateMultiplexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMultiplexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.CreateMultiplexOutput)
+	return ret0, ret1
+}
+
+// CreateMultiplexRequest indicates an expected call of CreateMultiplexRequest
+func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplexRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplexRequest), arg0)
+}
+
+// CreateMultiplexWithContext mocks base method
+func (m *MockMediaLiveAPI) CreateMultiplexWithContext(arg0 context.Context, arg1 *medialive.CreateMultiplexInput, arg2 ...request.Option) (*medialive.CreateMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMultiplexWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.CreateMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMultiplexWithContext indicates an expected call of CreateMultiplexWithContext
+func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplexWithContext), varargs...)
+}
+
 // CreateTags mocks base method
 func (m *MockMediaLiveAPI) CreateTags(arg0 *medialive.CreateTagsInput) (*medialive.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +533,106 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteInputWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInputWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteInputWithContext), varargs...)
+}
+
+// DeleteMultiplex mocks base method
+func (m *MockMediaLiveAPI) DeleteMultiplex(arg0 *medialive.DeleteMultiplexInput) (*medialive.DeleteMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMultiplex", arg0)
+	ret0, _ := ret[0].(*medialive.DeleteMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMultiplex indicates an expected call of DeleteMultiplex
+func (mr *MockMediaLiveAPIMockRecorder) DeleteMultiplex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMultiplex", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteMultiplex), arg0)
+}
+
+// DeleteMultiplexProgram mocks base method
+func (m *MockMediaLiveAPI) DeleteMultiplexProgram(arg0 *medialive.DeleteMultiplexProgramInput) (*medialive.DeleteMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMultiplexProgram", arg0)
+	ret0, _ := ret[0].(*medialive.DeleteMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMultiplexProgram indicates an expected call of DeleteMultiplexProgram
+func (mr *MockMediaLiveAPIMockRecorder) DeleteMultiplexProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMultiplexProgram", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteMultiplexProgram), arg0)
+}
+
+// DeleteMultiplexProgramRequest mocks base method
+func (m *MockMediaLiveAPI) DeleteMultiplexProgramRequest(arg0 *medialive.DeleteMultiplexProgramInput) (*request.Request, *medialive.DeleteMultiplexProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMultiplexProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DeleteMultiplexProgramOutput)
+	return ret0, ret1
+}
+
+// DeleteMultiplexProgramRequest indicates an expected call of DeleteMultiplexProgramRequest
+func (mr *MockMediaLiveAPIMockRecorder) DeleteMultiplexProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMultiplexProgramRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteMultiplexProgramRequest), arg0)
+}
+
+// DeleteMultiplexProgramWithContext mocks base method
+func (m *MockMediaLiveAPI) DeleteMultiplexProgramWithContext(arg0 context.Context, arg1 *medialive.DeleteMultiplexProgramInput, arg2 ...request.Option) (*medialive.DeleteMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMultiplexProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DeleteMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMultiplexProgramWithContext indicates an expected call of DeleteMultiplexProgramWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DeleteMultiplexProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMultiplexProgramWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteMultiplexProgramWithContext), varargs...)
+}
+
+// DeleteMultiplexRequest mocks base method
+func (m *MockMediaLiveAPI) DeleteMultiplexRequest(arg0 *medialive.DeleteMultiplexInput) (*request.Request, *medialive.DeleteMultiplexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMultiplexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DeleteMultiplexOutput)
+	return ret0, ret1
+}
+
+// DeleteMultiplexRequest indicates an expected call of DeleteMultiplexRequest
+func (mr *MockMediaLiveAPIMockRecorder) DeleteMultiplexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMultiplexRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteMultiplexRequest), arg0)
+}
+
+// DeleteMultiplexWithContext mocks base method
+func (m *MockMediaLiveAPI) DeleteMultiplexWithContext(arg0 context.Context, arg1 *medialive.DeleteMultiplexInput, arg2 ...request.Option) (*medialive.DeleteMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMultiplexWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DeleteMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMultiplexWithContext indicates an expected call of DeleteMultiplexWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DeleteMultiplexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteMultiplexWithContext), varargs...)
 }
 
 // DeleteReservation mocks base method
@@ -733,6 +933,106 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeInputWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInputWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeInputWithContext), varargs...)
+}
+
+// DescribeMultiplex mocks base method
+func (m *MockMediaLiveAPI) DescribeMultiplex(arg0 *medialive.DescribeMultiplexInput) (*medialive.DescribeMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMultiplex", arg0)
+	ret0, _ := ret[0].(*medialive.DescribeMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMultiplex indicates an expected call of DescribeMultiplex
+func (mr *MockMediaLiveAPIMockRecorder) DescribeMultiplex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMultiplex", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeMultiplex), arg0)
+}
+
+// DescribeMultiplexProgram mocks base method
+func (m *MockMediaLiveAPI) DescribeMultiplexProgram(arg0 *medialive.DescribeMultiplexProgramInput) (*medialive.DescribeMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMultiplexProgram", arg0)
+	ret0, _ := ret[0].(*medialive.DescribeMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMultiplexProgram indicates an expected call of DescribeMultiplexProgram
+func (mr *MockMediaLiveAPIMockRecorder) DescribeMultiplexProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMultiplexProgram", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeMultiplexProgram), arg0)
+}
+
+// DescribeMultiplexProgramRequest mocks base method
+func (m *MockMediaLiveAPI) DescribeMultiplexProgramRequest(arg0 *medialive.DescribeMultiplexProgramInput) (*request.Request, *medialive.DescribeMultiplexProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMultiplexProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DescribeMultiplexProgramOutput)
+	return ret0, ret1
+}
+
+// DescribeMultiplexProgramRequest indicates an expected call of DescribeMultiplexProgramRequest
+func (mr *MockMediaLiveAPIMockRecorder) DescribeMultiplexProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMultiplexProgramRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeMultiplexProgramRequest), arg0)
+}
+
+// DescribeMultiplexProgramWithContext mocks base method
+func (m *MockMediaLiveAPI) DescribeMultiplexProgramWithContext(arg0 context.Context, arg1 *medialive.DescribeMultiplexProgramInput, arg2 ...request.Option) (*medialive.DescribeMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMultiplexProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DescribeMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMultiplexProgramWithContext indicates an expected call of DescribeMultiplexProgramWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DescribeMultiplexProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMultiplexProgramWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeMultiplexProgramWithContext), varargs...)
+}
+
+// DescribeMultiplexRequest mocks base method
+func (m *MockMediaLiveAPI) DescribeMultiplexRequest(arg0 *medialive.DescribeMultiplexInput) (*request.Request, *medialive.DescribeMultiplexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMultiplexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DescribeMultiplexOutput)
+	return ret0, ret1
+}
+
+// DescribeMultiplexRequest indicates an expected call of DescribeMultiplexRequest
+func (mr *MockMediaLiveAPIMockRecorder) DescribeMultiplexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMultiplexRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeMultiplexRequest), arg0)
+}
+
+// DescribeMultiplexWithContext mocks base method
+func (m *MockMediaLiveAPI) DescribeMultiplexWithContext(arg0 context.Context, arg1 *medialive.DescribeMultiplexInput, arg2 ...request.Option) (*medialive.DescribeMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMultiplexWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DescribeMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMultiplexWithContext indicates an expected call of DescribeMultiplexWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DescribeMultiplexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeMultiplexWithContext), varargs...)
 }
 
 // DescribeOffering mocks base method
@@ -1167,6 +1467,172 @@ func (mr *MockMediaLiveAPIMockRecorder) ListInputsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInputsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListInputsWithContext), varargs...)
 }
 
+// ListMultiplexPrograms mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexPrograms(arg0 *medialive.ListMultiplexProgramsInput) (*medialive.ListMultiplexProgramsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultiplexPrograms", arg0)
+	ret0, _ := ret[0].(*medialive.ListMultiplexProgramsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMultiplexPrograms indicates an expected call of ListMultiplexPrograms
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexPrograms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexPrograms", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexPrograms), arg0)
+}
+
+// ListMultiplexProgramsPages mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexProgramsPages(arg0 *medialive.ListMultiplexProgramsInput, arg1 func(*medialive.ListMultiplexProgramsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultiplexProgramsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMultiplexProgramsPages indicates an expected call of ListMultiplexProgramsPages
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexProgramsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexProgramsPages", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexProgramsPages), arg0, arg1)
+}
+
+// ListMultiplexProgramsPagesWithContext mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexProgramsPagesWithContext(arg0 context.Context, arg1 *medialive.ListMultiplexProgramsInput, arg2 func(*medialive.ListMultiplexProgramsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMultiplexProgramsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMultiplexProgramsPagesWithContext indicates an expected call of ListMultiplexProgramsPagesWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexProgramsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexProgramsPagesWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexProgramsPagesWithContext), varargs...)
+}
+
+// ListMultiplexProgramsRequest mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexProgramsRequest(arg0 *medialive.ListMultiplexProgramsInput) (*request.Request, *medialive.ListMultiplexProgramsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultiplexProgramsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.ListMultiplexProgramsOutput)
+	return ret0, ret1
+}
+
+// ListMultiplexProgramsRequest indicates an expected call of ListMultiplexProgramsRequest
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexProgramsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexProgramsRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexProgramsRequest), arg0)
+}
+
+// ListMultiplexProgramsWithContext mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexProgramsWithContext(arg0 context.Context, arg1 *medialive.ListMultiplexProgramsInput, arg2 ...request.Option) (*medialive.ListMultiplexProgramsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMultiplexProgramsWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.ListMultiplexProgramsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMultiplexProgramsWithContext indicates an expected call of ListMultiplexProgramsWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexProgramsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexProgramsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexProgramsWithContext), varargs...)
+}
+
+// ListMultiplexes mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexes(arg0 *medialive.ListMultiplexesInput) (*medialive.ListMultiplexesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultiplexes", arg0)
+	ret0, _ := ret[0].(*medialive.ListMultiplexesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMultiplexes indicates an expected call of ListMultiplexes
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexes", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexes), arg0)
+}
+
+// ListMultiplexesPages mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexesPages(arg0 *medialive.ListMultiplexesInput, arg1 func(*medialive.ListMultiplexesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultiplexesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMultiplexesPages indicates an expected call of ListMultiplexesPages
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexesPages", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexesPages), arg0, arg1)
+}
+
+// ListMultiplexesPagesWithContext mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexesPagesWithContext(arg0 context.Context, arg1 *medialive.ListMultiplexesInput, arg2 func(*medialive.ListMultiplexesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMultiplexesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMultiplexesPagesWithContext indicates an expected call of ListMultiplexesPagesWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexesPagesWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexesPagesWithContext), varargs...)
+}
+
+// ListMultiplexesRequest mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexesRequest(arg0 *medialive.ListMultiplexesInput) (*request.Request, *medialive.ListMultiplexesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultiplexesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.ListMultiplexesOutput)
+	return ret0, ret1
+}
+
+// ListMultiplexesRequest indicates an expected call of ListMultiplexesRequest
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexesRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexesRequest), arg0)
+}
+
+// ListMultiplexesWithContext mocks base method
+func (m *MockMediaLiveAPI) ListMultiplexesWithContext(arg0 context.Context, arg1 *medialive.ListMultiplexesInput, arg2 ...request.Option) (*medialive.ListMultiplexesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMultiplexesWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.ListMultiplexesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMultiplexesWithContext indicates an expected call of ListMultiplexesWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListMultiplexesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultiplexesWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListMultiplexesWithContext), varargs...)
+}
+
 // ListOfferings mocks base method
 func (m *MockMediaLiveAPI) ListOfferings(arg0 *medialive.ListOfferingsInput) (*medialive.ListOfferingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1483,6 +1949,56 @@ func (mr *MockMediaLiveAPIMockRecorder) StartChannelWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChannelWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartChannelWithContext), varargs...)
 }
 
+// StartMultiplex mocks base method
+func (m *MockMediaLiveAPI) StartMultiplex(arg0 *medialive.StartMultiplexInput) (*medialive.StartMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMultiplex", arg0)
+	ret0, _ := ret[0].(*medialive.StartMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMultiplex indicates an expected call of StartMultiplex
+func (mr *MockMediaLiveAPIMockRecorder) StartMultiplex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMultiplex", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartMultiplex), arg0)
+}
+
+// StartMultiplexRequest mocks base method
+func (m *MockMediaLiveAPI) StartMultiplexRequest(arg0 *medialive.StartMultiplexInput) (*request.Request, *medialive.StartMultiplexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMultiplexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.StartMultiplexOutput)
+	return ret0, ret1
+}
+
+// StartMultiplexRequest indicates an expected call of StartMultiplexRequest
+func (mr *MockMediaLiveAPIMockRecorder) StartMultiplexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMultiplexRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartMultiplexRequest), arg0)
+}
+
+// StartMultiplexWithContext mocks base method
+func (m *MockMediaLiveAPI) StartMultiplexWithContext(arg0 context.Context, arg1 *medialive.StartMultiplexInput, arg2 ...request.Option) (*medialive.StartMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMultiplexWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.StartMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMultiplexWithContext indicates an expected call of StartMultiplexWithContext
+func (mr *MockMediaLiveAPIMockRecorder) StartMultiplexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartMultiplexWithContext), varargs...)
+}
+
 // StopChannel mocks base method
 func (m *MockMediaLiveAPI) StopChannel(arg0 *medialive.StopChannelInput) (*medialive.StopChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1531,6 +2047,56 @@ func (mr *MockMediaLiveAPIMockRecorder) StopChannelWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopChannelWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopChannelWithContext), varargs...)
+}
+
+// StopMultiplex mocks base method
+func (m *MockMediaLiveAPI) StopMultiplex(arg0 *medialive.StopMultiplexInput) (*medialive.StopMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopMultiplex", arg0)
+	ret0, _ := ret[0].(*medialive.StopMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopMultiplex indicates an expected call of StopMultiplex
+func (mr *MockMediaLiveAPIMockRecorder) StopMultiplex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMultiplex", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopMultiplex), arg0)
+}
+
+// StopMultiplexRequest mocks base method
+func (m *MockMediaLiveAPI) StopMultiplexRequest(arg0 *medialive.StopMultiplexInput) (*request.Request, *medialive.StopMultiplexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopMultiplexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.StopMultiplexOutput)
+	return ret0, ret1
+}
+
+// StopMultiplexRequest indicates an expected call of StopMultiplexRequest
+func (mr *MockMediaLiveAPIMockRecorder) StopMultiplexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMultiplexRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopMultiplexRequest), arg0)
+}
+
+// StopMultiplexWithContext mocks base method
+func (m *MockMediaLiveAPI) StopMultiplexWithContext(arg0 context.Context, arg1 *medialive.StopMultiplexInput, arg2 ...request.Option) (*medialive.StopMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopMultiplexWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.StopMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopMultiplexWithContext indicates an expected call of StopMultiplexWithContext
+func (mr *MockMediaLiveAPIMockRecorder) StopMultiplexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopMultiplexWithContext), varargs...)
 }
 
 // UpdateChannel mocks base method
@@ -1733,6 +2299,106 @@ func (mr *MockMediaLiveAPIMockRecorder) UpdateInputWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInputWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateInputWithContext), varargs...)
 }
 
+// UpdateMultiplex mocks base method
+func (m *MockMediaLiveAPI) UpdateMultiplex(arg0 *medialive.UpdateMultiplexInput) (*medialive.UpdateMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMultiplex", arg0)
+	ret0, _ := ret[0].(*medialive.UpdateMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMultiplex indicates an expected call of UpdateMultiplex
+func (mr *MockMediaLiveAPIMockRecorder) UpdateMultiplex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMultiplex", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateMultiplex), arg0)
+}
+
+// UpdateMultiplexProgram mocks base method
+func (m *MockMediaLiveAPI) UpdateMultiplexProgram(arg0 *medialive.UpdateMultiplexProgramInput) (*medialive.UpdateMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMultiplexProgram", arg0)
+	ret0, _ := ret[0].(*medialive.UpdateMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMultiplexProgram indicates an expected call of UpdateMultiplexProgram
+func (mr *MockMediaLiveAPIMockRecorder) UpdateMultiplexProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMultiplexProgram", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateMultiplexProgram), arg0)
+}
+
+// UpdateMultiplexProgramRequest mocks base method
+func (m *MockMediaLiveAPI) UpdateMultiplexProgramRequest(arg0 *medialive.UpdateMultiplexProgramInput) (*request.Request, *medialive.UpdateMultiplexProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMultiplexProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.UpdateMultiplexProgramOutput)
+	return ret0, ret1
+}
+
+// UpdateMultiplexProgramRequest indicates an expected call of UpdateMultiplexProgramRequest
+func (mr *MockMediaLiveAPIMockRecorder) UpdateMultiplexProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMultiplexProgramRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateMultiplexProgramRequest), arg0)
+}
+
+// UpdateMultiplexProgramWithContext mocks base method
+func (m *MockMediaLiveAPI) UpdateMultiplexProgramWithContext(arg0 context.Context, arg1 *medialive.UpdateMultiplexProgramInput, arg2 ...request.Option) (*medialive.UpdateMultiplexProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMultiplexProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.UpdateMultiplexProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMultiplexProgramWithContext indicates an expected call of UpdateMultiplexProgramWithContext
+func (mr *MockMediaLiveAPIMockRecorder) UpdateMultiplexProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMultiplexProgramWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateMultiplexProgramWithContext), varargs...)
+}
+
+// UpdateMultiplexRequest mocks base method
+func (m *MockMediaLiveAPI) UpdateMultiplexRequest(arg0 *medialive.UpdateMultiplexInput) (*request.Request, *medialive.UpdateMultiplexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMultiplexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.UpdateMultiplexOutput)
+	return ret0, ret1
+}
+
+// UpdateMultiplexRequest indicates an expected call of UpdateMultiplexRequest
+func (mr *MockMediaLiveAPIMockRecorder) UpdateMultiplexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMultiplexRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateMultiplexRequest), arg0)
+}
+
+// UpdateMultiplexWithContext mocks base method
+func (m *MockMediaLiveAPI) UpdateMultiplexWithContext(arg0 context.Context, arg1 *medialive.UpdateMultiplexInput, arg2 ...request.Option) (*medialive.UpdateMultiplexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMultiplexWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.UpdateMultiplexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMultiplexWithContext indicates an expected call of UpdateMultiplexWithContext
+func (mr *MockMediaLiveAPIMockRecorder) UpdateMultiplexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateMultiplexWithContext), varargs...)
+}
+
 // UpdateReservation mocks base method
 func (m *MockMediaLiveAPI) UpdateReservation(arg0 *medialive.UpdateReservationInput) (*medialive.UpdateReservationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1913,4 +2579,136 @@ func (mr *MockMediaLiveAPIMockRecorder) WaitUntilChannelStoppedWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilChannelStoppedWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilChannelStoppedWithContext), varargs...)
+}
+
+// WaitUntilMultiplexCreated mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexCreated(arg0 *medialive.DescribeMultiplexInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexCreated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexCreated indicates an expected call of WaitUntilMultiplexCreated
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexCreated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexCreated", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexCreated), arg0)
+}
+
+// WaitUntilMultiplexCreatedWithContext mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexCreatedWithContext(arg0 context.Context, arg1 *medialive.DescribeMultiplexInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexCreatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexCreatedWithContext indicates an expected call of WaitUntilMultiplexCreatedWithContext
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexCreatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexCreatedWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexCreatedWithContext), varargs...)
+}
+
+// WaitUntilMultiplexDeleted mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexDeleted(arg0 *medialive.DescribeMultiplexInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexDeleted indicates an expected call of WaitUntilMultiplexDeleted
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexDeleted", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexDeleted), arg0)
+}
+
+// WaitUntilMultiplexDeletedWithContext mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexDeletedWithContext(arg0 context.Context, arg1 *medialive.DescribeMultiplexInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexDeletedWithContext indicates an expected call of WaitUntilMultiplexDeletedWithContext
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexDeletedWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexDeletedWithContext), varargs...)
+}
+
+// WaitUntilMultiplexRunning mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexRunning(arg0 *medialive.DescribeMultiplexInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexRunning", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexRunning indicates an expected call of WaitUntilMultiplexRunning
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexRunning(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexRunning", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexRunning), arg0)
+}
+
+// WaitUntilMultiplexRunningWithContext mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexRunningWithContext(arg0 context.Context, arg1 *medialive.DescribeMultiplexInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexRunningWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexRunningWithContext indicates an expected call of WaitUntilMultiplexRunningWithContext
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexRunningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexRunningWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexRunningWithContext), varargs...)
+}
+
+// WaitUntilMultiplexStopped mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexStopped(arg0 *medialive.DescribeMultiplexInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexStopped", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexStopped indicates an expected call of WaitUntilMultiplexStopped
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexStopped(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexStopped", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexStopped), arg0)
+}
+
+// WaitUntilMultiplexStoppedWithContext mocks base method
+func (m *MockMediaLiveAPI) WaitUntilMultiplexStoppedWithContext(arg0 context.Context, arg1 *medialive.DescribeMultiplexInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilMultiplexStoppedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilMultiplexStoppedWithContext indicates an expected call of WaitUntilMultiplexStoppedWithContext
+func (mr *MockMediaLiveAPIMockRecorder) WaitUntilMultiplexStoppedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilMultiplexStoppedWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).WaitUntilMultiplexStoppedWithContext), varargs...)
 }

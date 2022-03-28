@@ -285,6 +285,56 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectSyntaxWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDetectSyntaxWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).BatchDetectSyntaxWithContext), varargs...)
 }
 
+// ClassifyDocument mocks base method
+func (m *MockComprehendAPI) ClassifyDocument(arg0 *comprehend.ClassifyDocumentInput) (*comprehend.ClassifyDocumentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClassifyDocument", arg0)
+	ret0, _ := ret[0].(*comprehend.ClassifyDocumentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClassifyDocument indicates an expected call of ClassifyDocument
+func (mr *MockComprehendAPIMockRecorder) ClassifyDocument(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClassifyDocument", reflect.TypeOf((*MockComprehendAPI)(nil).ClassifyDocument), arg0)
+}
+
+// ClassifyDocumentRequest mocks base method
+func (m *MockComprehendAPI) ClassifyDocumentRequest(arg0 *comprehend.ClassifyDocumentInput) (*request.Request, *comprehend.ClassifyDocumentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClassifyDocumentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ClassifyDocumentOutput)
+	return ret0, ret1
+}
+
+// ClassifyDocumentRequest indicates an expected call of ClassifyDocumentRequest
+func (mr *MockComprehendAPIMockRecorder) ClassifyDocumentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClassifyDocumentRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ClassifyDocumentRequest), arg0)
+}
+
+// ClassifyDocumentWithContext mocks base method
+func (m *MockComprehendAPI) ClassifyDocumentWithContext(arg0 context.Context, arg1 *comprehend.ClassifyDocumentInput, arg2 ...request.Option) (*comprehend.ClassifyDocumentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ClassifyDocumentWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ClassifyDocumentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClassifyDocumentWithContext indicates an expected call of ClassifyDocumentWithContext
+func (mr *MockComprehendAPIMockRecorder) ClassifyDocumentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClassifyDocumentWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ClassifyDocumentWithContext), varargs...)
+}
+
 // CreateDocumentClassifier mocks base method
 func (m *MockComprehendAPI) CreateDocumentClassifier(arg0 *comprehend.CreateDocumentClassifierInput) (*comprehend.CreateDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockComprehendAPIMockRecorder) CreateDocumentClassifierWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDocumentClassifierWithContext), varargs...)
+}
+
+// CreateEndpoint mocks base method
+func (m *MockComprehendAPI) CreateEndpoint(arg0 *comprehend.CreateEndpointInput) (*comprehend.CreateEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEndpoint", arg0)
+	ret0, _ := ret[0].(*comprehend.CreateEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEndpoint indicates an expected call of CreateEndpoint
+func (mr *MockComprehendAPIMockRecorder) CreateEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEndpoint", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEndpoint), arg0)
+}
+
+// CreateEndpointRequest mocks base method
+func (m *MockComprehendAPI) CreateEndpointRequest(arg0 *comprehend.CreateEndpointInput) (*request.Request, *comprehend.CreateEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.CreateEndpointOutput)
+	return ret0, ret1
+}
+
+// CreateEndpointRequest indicates an expected call of CreateEndpointRequest
+func (mr *MockComprehendAPIMockRecorder) CreateEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEndpointRequest", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEndpointRequest), arg0)
+}
+
+// CreateEndpointWithContext mocks base method
+func (m *MockComprehendAPI) CreateEndpointWithContext(arg0 context.Context, arg1 *comprehend.CreateEndpointInput, arg2 ...request.Option) (*comprehend.CreateEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.CreateEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEndpointWithContext indicates an expected call of CreateEndpointWithContext
+func (mr *MockComprehendAPIMockRecorder) CreateEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEndpointWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEndpointWithContext), varargs...)
 }
 
 // CreateEntityRecognizer mocks base method
@@ -433,6 +533,56 @@ func (mr *MockComprehendAPIMockRecorder) DeleteDocumentClassifierWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentClassifierWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteDocumentClassifierWithContext), varargs...)
+}
+
+// DeleteEndpoint mocks base method
+func (m *MockComprehendAPI) DeleteEndpoint(arg0 *comprehend.DeleteEndpointInput) (*comprehend.DeleteEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEndpoint", arg0)
+	ret0, _ := ret[0].(*comprehend.DeleteEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEndpoint indicates an expected call of DeleteEndpoint
+func (mr *MockComprehendAPIMockRecorder) DeleteEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEndpoint", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEndpoint), arg0)
+}
+
+// DeleteEndpointRequest mocks base method
+func (m *MockComprehendAPI) DeleteEndpointRequest(arg0 *comprehend.DeleteEndpointInput) (*request.Request, *comprehend.DeleteEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DeleteEndpointOutput)
+	return ret0, ret1
+}
+
+// DeleteEndpointRequest indicates an expected call of DeleteEndpointRequest
+func (mr *MockComprehendAPIMockRecorder) DeleteEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEndpointRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEndpointRequest), arg0)
+}
+
+// DeleteEndpointWithContext mocks base method
+func (m *MockComprehendAPI) DeleteEndpointWithContext(arg0 context.Context, arg1 *comprehend.DeleteEndpointInput, arg2 ...request.Option) (*comprehend.DeleteEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DeleteEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEndpointWithContext indicates an expected call of DeleteEndpointWithContext
+func (mr *MockComprehendAPIMockRecorder) DeleteEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEndpointWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEndpointWithContext), varargs...)
 }
 
 // DeleteEntityRecognizer mocks base method
@@ -633,6 +783,56 @@ func (mr *MockComprehendAPIMockRecorder) DescribeDominantLanguageDetectionJobWit
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDominantLanguageDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDominantLanguageDetectionJobWithContext), varargs...)
+}
+
+// DescribeEndpoint mocks base method
+func (m *MockComprehendAPI) DescribeEndpoint(arg0 *comprehend.DescribeEndpointInput) (*comprehend.DescribeEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpoint", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEndpoint indicates an expected call of DescribeEndpoint
+func (mr *MockComprehendAPIMockRecorder) DescribeEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpoint", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEndpoint), arg0)
+}
+
+// DescribeEndpointRequest mocks base method
+func (m *MockComprehendAPI) DescribeEndpointRequest(arg0 *comprehend.DescribeEndpointInput) (*request.Request, *comprehend.DescribeEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeEndpointOutput)
+	return ret0, ret1
+}
+
+// DescribeEndpointRequest indicates an expected call of DescribeEndpointRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEndpointRequest), arg0)
+}
+
+// DescribeEndpointWithContext mocks base method
+func (m *MockComprehendAPI) DescribeEndpointWithContext(arg0 context.Context, arg1 *comprehend.DescribeEndpointInput, arg2 ...request.Option) (*comprehend.DescribeEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEndpointWithContext indicates an expected call of DescribeEndpointWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEndpointWithContext), varargs...)
 }
 
 // DescribeEntitiesDetectionJob mocks base method
@@ -1382,6 +1582,56 @@ func (mr *MockComprehendAPIMockRecorder) ListDominantLanguageDetectionJobsWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDominantLanguageDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDominantLanguageDetectionJobsWithContext), varargs...)
+}
+
+// ListEndpoints mocks base method
+func (m *MockComprehendAPI) ListEndpoints(arg0 *comprehend.ListEndpointsInput) (*comprehend.ListEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEndpoints", arg0)
+	ret0, _ := ret[0].(*comprehend.ListEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEndpoints indicates an expected call of ListEndpoints
+func (mr *MockComprehendAPIMockRecorder) ListEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpoints", reflect.TypeOf((*MockComprehendAPI)(nil).ListEndpoints), arg0)
+}
+
+// ListEndpointsRequest mocks base method
+func (m *MockComprehendAPI) ListEndpointsRequest(arg0 *comprehend.ListEndpointsInput) (*request.Request, *comprehend.ListEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListEndpointsOutput)
+	return ret0, ret1
+}
+
+// ListEndpointsRequest indicates an expected call of ListEndpointsRequest
+func (mr *MockComprehendAPIMockRecorder) ListEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpointsRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListEndpointsRequest), arg0)
+}
+
+// ListEndpointsWithContext mocks base method
+func (m *MockComprehendAPI) ListEndpointsWithContext(arg0 context.Context, arg1 *comprehend.ListEndpointsInput, arg2 ...request.Option) (*comprehend.ListEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEndpointsWithContext indicates an expected call of ListEndpointsWithContext
+func (mr *MockComprehendAPIMockRecorder) ListEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpointsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEndpointsWithContext), varargs...)
 }
 
 // ListEntitiesDetectionJobs mocks base method
@@ -2547,4 +2797,54 @@ func (mr *MockComprehendAPIMockRecorder) UntagResourceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateEndpoint mocks base method
+func (m *MockComprehendAPI) UpdateEndpoint(arg0 *comprehend.UpdateEndpointInput) (*comprehend.UpdateEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEndpoint", arg0)
+	ret0, _ := ret[0].(*comprehend.UpdateEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEndpoint indicates an expected call of UpdateEndpoint
+func (mr *MockComprehendAPIMockRecorder) UpdateEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEndpoint", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateEndpoint), arg0)
+}
+
+// UpdateEndpointRequest mocks base method
+func (m *MockComprehendAPI) UpdateEndpointRequest(arg0 *comprehend.UpdateEndpointInput) (*request.Request, *comprehend.UpdateEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.UpdateEndpointOutput)
+	return ret0, ret1
+}
+
+// UpdateEndpointRequest indicates an expected call of UpdateEndpointRequest
+func (mr *MockComprehendAPIMockRecorder) UpdateEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEndpointRequest", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateEndpointRequest), arg0)
+}
+
+// UpdateEndpointWithContext mocks base method
+func (m *MockComprehendAPI) UpdateEndpointWithContext(arg0 context.Context, arg1 *comprehend.UpdateEndpointInput, arg2 ...request.Option) (*comprehend.UpdateEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.UpdateEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEndpointWithContext indicates an expected call of UpdateEndpointWithContext
+func (mr *MockComprehendAPIMockRecorder) UpdateEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEndpointWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateEndpointWithContext), varargs...)
 }

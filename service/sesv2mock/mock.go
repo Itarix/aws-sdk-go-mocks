@@ -485,6 +485,56 @@ func (mr *MockSESV2APIMockRecorder) DeleteEmailIdentityWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEmailIdentityWithContext", reflect.TypeOf((*MockSESV2API)(nil).DeleteEmailIdentityWithContext), varargs...)
 }
 
+// DeleteSuppressedDestination mocks base method
+func (m *MockSESV2API) DeleteSuppressedDestination(arg0 *sesv2.DeleteSuppressedDestinationInput) (*sesv2.DeleteSuppressedDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSuppressedDestination", arg0)
+	ret0, _ := ret[0].(*sesv2.DeleteSuppressedDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSuppressedDestination indicates an expected call of DeleteSuppressedDestination
+func (mr *MockSESV2APIMockRecorder) DeleteSuppressedDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuppressedDestination", reflect.TypeOf((*MockSESV2API)(nil).DeleteSuppressedDestination), arg0)
+}
+
+// DeleteSuppressedDestinationRequest mocks base method
+func (m *MockSESV2API) DeleteSuppressedDestinationRequest(arg0 *sesv2.DeleteSuppressedDestinationInput) (*request.Request, *sesv2.DeleteSuppressedDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSuppressedDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.DeleteSuppressedDestinationOutput)
+	return ret0, ret1
+}
+
+// DeleteSuppressedDestinationRequest indicates an expected call of DeleteSuppressedDestinationRequest
+func (mr *MockSESV2APIMockRecorder) DeleteSuppressedDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuppressedDestinationRequest", reflect.TypeOf((*MockSESV2API)(nil).DeleteSuppressedDestinationRequest), arg0)
+}
+
+// DeleteSuppressedDestinationWithContext mocks base method
+func (m *MockSESV2API) DeleteSuppressedDestinationWithContext(arg0 context.Context, arg1 *sesv2.DeleteSuppressedDestinationInput, arg2 ...request.Option) (*sesv2.DeleteSuppressedDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSuppressedDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.DeleteSuppressedDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSuppressedDestinationWithContext indicates an expected call of DeleteSuppressedDestinationWithContext
+func (mr *MockSESV2APIMockRecorder) DeleteSuppressedDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuppressedDestinationWithContext", reflect.TypeOf((*MockSESV2API)(nil).DeleteSuppressedDestinationWithContext), varargs...)
+}
+
 // GetAccount mocks base method
 func (m *MockSESV2API) GetAccount(arg0 *sesv2.GetAccountInput) (*sesv2.GetAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1068,6 +1118,56 @@ func (mr *MockSESV2APIMockRecorder) GetEmailIdentityWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEmailIdentityWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetEmailIdentityWithContext), varargs...)
 }
 
+// GetSuppressedDestination mocks base method
+func (m *MockSESV2API) GetSuppressedDestination(arg0 *sesv2.GetSuppressedDestinationInput) (*sesv2.GetSuppressedDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSuppressedDestination", arg0)
+	ret0, _ := ret[0].(*sesv2.GetSuppressedDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSuppressedDestination indicates an expected call of GetSuppressedDestination
+func (mr *MockSESV2APIMockRecorder) GetSuppressedDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSuppressedDestination", reflect.TypeOf((*MockSESV2API)(nil).GetSuppressedDestination), arg0)
+}
+
+// GetSuppressedDestinationRequest mocks base method
+func (m *MockSESV2API) GetSuppressedDestinationRequest(arg0 *sesv2.GetSuppressedDestinationInput) (*request.Request, *sesv2.GetSuppressedDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSuppressedDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.GetSuppressedDestinationOutput)
+	return ret0, ret1
+}
+
+// GetSuppressedDestinationRequest indicates an expected call of GetSuppressedDestinationRequest
+func (mr *MockSESV2APIMockRecorder) GetSuppressedDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSuppressedDestinationRequest", reflect.TypeOf((*MockSESV2API)(nil).GetSuppressedDestinationRequest), arg0)
+}
+
+// GetSuppressedDestinationWithContext mocks base method
+func (m *MockSESV2API) GetSuppressedDestinationWithContext(arg0 context.Context, arg1 *sesv2.GetSuppressedDestinationInput, arg2 ...request.Option) (*sesv2.GetSuppressedDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSuppressedDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.GetSuppressedDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSuppressedDestinationWithContext indicates an expected call of GetSuppressedDestinationWithContext
+func (mr *MockSESV2APIMockRecorder) GetSuppressedDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSuppressedDestinationWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetSuppressedDestinationWithContext), varargs...)
+}
+
 // ListConfigurationSets mocks base method
 func (m *MockSESV2API) ListConfigurationSets(arg0 *sesv2.ListConfigurationSetsInput) (*sesv2.ListConfigurationSetsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1483,6 +1583,89 @@ func (mr *MockSESV2APIMockRecorder) ListEmailIdentitiesWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEmailIdentitiesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListEmailIdentitiesWithContext), varargs...)
 }
 
+// ListSuppressedDestinations mocks base method
+func (m *MockSESV2API) ListSuppressedDestinations(arg0 *sesv2.ListSuppressedDestinationsInput) (*sesv2.ListSuppressedDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSuppressedDestinations", arg0)
+	ret0, _ := ret[0].(*sesv2.ListSuppressedDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSuppressedDestinations indicates an expected call of ListSuppressedDestinations
+func (mr *MockSESV2APIMockRecorder) ListSuppressedDestinations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuppressedDestinations", reflect.TypeOf((*MockSESV2API)(nil).ListSuppressedDestinations), arg0)
+}
+
+// ListSuppressedDestinationsPages mocks base method
+func (m *MockSESV2API) ListSuppressedDestinationsPages(arg0 *sesv2.ListSuppressedDestinationsInput, arg1 func(*sesv2.ListSuppressedDestinationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSuppressedDestinationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSuppressedDestinationsPages indicates an expected call of ListSuppressedDestinationsPages
+func (mr *MockSESV2APIMockRecorder) ListSuppressedDestinationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuppressedDestinationsPages", reflect.TypeOf((*MockSESV2API)(nil).ListSuppressedDestinationsPages), arg0, arg1)
+}
+
+// ListSuppressedDestinationsPagesWithContext mocks base method
+func (m *MockSESV2API) ListSuppressedDestinationsPagesWithContext(arg0 context.Context, arg1 *sesv2.ListSuppressedDestinationsInput, arg2 func(*sesv2.ListSuppressedDestinationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSuppressedDestinationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSuppressedDestinationsPagesWithContext indicates an expected call of ListSuppressedDestinationsPagesWithContext
+func (mr *MockSESV2APIMockRecorder) ListSuppressedDestinationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuppressedDestinationsPagesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListSuppressedDestinationsPagesWithContext), varargs...)
+}
+
+// ListSuppressedDestinationsRequest mocks base method
+func (m *MockSESV2API) ListSuppressedDestinationsRequest(arg0 *sesv2.ListSuppressedDestinationsInput) (*request.Request, *sesv2.ListSuppressedDestinationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSuppressedDestinationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.ListSuppressedDestinationsOutput)
+	return ret0, ret1
+}
+
+// ListSuppressedDestinationsRequest indicates an expected call of ListSuppressedDestinationsRequest
+func (mr *MockSESV2APIMockRecorder) ListSuppressedDestinationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuppressedDestinationsRequest", reflect.TypeOf((*MockSESV2API)(nil).ListSuppressedDestinationsRequest), arg0)
+}
+
+// ListSuppressedDestinationsWithContext mocks base method
+func (m *MockSESV2API) ListSuppressedDestinationsWithContext(arg0 context.Context, arg1 *sesv2.ListSuppressedDestinationsInput, arg2 ...request.Option) (*sesv2.ListSuppressedDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSuppressedDestinationsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.ListSuppressedDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSuppressedDestinationsWithContext indicates an expected call of ListSuppressedDestinationsWithContext
+func (mr *MockSESV2APIMockRecorder) ListSuppressedDestinationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSuppressedDestinationsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListSuppressedDestinationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockSESV2API) ListTagsForResource(arg0 *sesv2.ListTagsForResourceInput) (*sesv2.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1633,6 +1816,56 @@ func (mr *MockSESV2APIMockRecorder) PutAccountSendingAttributesWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSendingAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutAccountSendingAttributesWithContext), varargs...)
 }
 
+// PutAccountSuppressionAttributes mocks base method
+func (m *MockSESV2API) PutAccountSuppressionAttributes(arg0 *sesv2.PutAccountSuppressionAttributesInput) (*sesv2.PutAccountSuppressionAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountSuppressionAttributes", arg0)
+	ret0, _ := ret[0].(*sesv2.PutAccountSuppressionAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountSuppressionAttributes indicates an expected call of PutAccountSuppressionAttributes
+func (mr *MockSESV2APIMockRecorder) PutAccountSuppressionAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSuppressionAttributes", reflect.TypeOf((*MockSESV2API)(nil).PutAccountSuppressionAttributes), arg0)
+}
+
+// PutAccountSuppressionAttributesRequest mocks base method
+func (m *MockSESV2API) PutAccountSuppressionAttributesRequest(arg0 *sesv2.PutAccountSuppressionAttributesInput) (*request.Request, *sesv2.PutAccountSuppressionAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountSuppressionAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutAccountSuppressionAttributesOutput)
+	return ret0, ret1
+}
+
+// PutAccountSuppressionAttributesRequest indicates an expected call of PutAccountSuppressionAttributesRequest
+func (mr *MockSESV2APIMockRecorder) PutAccountSuppressionAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSuppressionAttributesRequest", reflect.TypeOf((*MockSESV2API)(nil).PutAccountSuppressionAttributesRequest), arg0)
+}
+
+// PutAccountSuppressionAttributesWithContext mocks base method
+func (m *MockSESV2API) PutAccountSuppressionAttributesWithContext(arg0 context.Context, arg1 *sesv2.PutAccountSuppressionAttributesInput, arg2 ...request.Option) (*sesv2.PutAccountSuppressionAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAccountSuppressionAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutAccountSuppressionAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountSuppressionAttributesWithContext indicates an expected call of PutAccountSuppressionAttributesWithContext
+func (mr *MockSESV2APIMockRecorder) PutAccountSuppressionAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSuppressionAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutAccountSuppressionAttributesWithContext), varargs...)
+}
+
 // PutConfigurationSetDeliveryOptions mocks base method
 func (m *MockSESV2API) PutConfigurationSetDeliveryOptions(arg0 *sesv2.PutConfigurationSetDeliveryOptionsInput) (*sesv2.PutConfigurationSetDeliveryOptionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1781,6 +2014,56 @@ func (mr *MockSESV2APIMockRecorder) PutConfigurationSetSendingOptionsWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetSendingOptionsWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetSendingOptionsWithContext), varargs...)
+}
+
+// PutConfigurationSetSuppressionOptions mocks base method
+func (m *MockSESV2API) PutConfigurationSetSuppressionOptions(arg0 *sesv2.PutConfigurationSetSuppressionOptionsInput) (*sesv2.PutConfigurationSetSuppressionOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutConfigurationSetSuppressionOptions", arg0)
+	ret0, _ := ret[0].(*sesv2.PutConfigurationSetSuppressionOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutConfigurationSetSuppressionOptions indicates an expected call of PutConfigurationSetSuppressionOptions
+func (mr *MockSESV2APIMockRecorder) PutConfigurationSetSuppressionOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetSuppressionOptions", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetSuppressionOptions), arg0)
+}
+
+// PutConfigurationSetSuppressionOptionsRequest mocks base method
+func (m *MockSESV2API) PutConfigurationSetSuppressionOptionsRequest(arg0 *sesv2.PutConfigurationSetSuppressionOptionsInput) (*request.Request, *sesv2.PutConfigurationSetSuppressionOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutConfigurationSetSuppressionOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutConfigurationSetSuppressionOptionsOutput)
+	return ret0, ret1
+}
+
+// PutConfigurationSetSuppressionOptionsRequest indicates an expected call of PutConfigurationSetSuppressionOptionsRequest
+func (mr *MockSESV2APIMockRecorder) PutConfigurationSetSuppressionOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetSuppressionOptionsRequest", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetSuppressionOptionsRequest), arg0)
+}
+
+// PutConfigurationSetSuppressionOptionsWithContext mocks base method
+func (m *MockSESV2API) PutConfigurationSetSuppressionOptionsWithContext(arg0 context.Context, arg1 *sesv2.PutConfigurationSetSuppressionOptionsInput, arg2 ...request.Option) (*sesv2.PutConfigurationSetSuppressionOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutConfigurationSetSuppressionOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutConfigurationSetSuppressionOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutConfigurationSetSuppressionOptionsWithContext indicates an expected call of PutConfigurationSetSuppressionOptionsWithContext
+func (mr *MockSESV2APIMockRecorder) PutConfigurationSetSuppressionOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetSuppressionOptionsWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetSuppressionOptionsWithContext), varargs...)
 }
 
 // PutConfigurationSetTrackingOptions mocks base method
@@ -2131,6 +2414,56 @@ func (mr *MockSESV2APIMockRecorder) PutEmailIdentityMailFromAttributesWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityMailFromAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityMailFromAttributesWithContext), varargs...)
+}
+
+// PutSuppressedDestination mocks base method
+func (m *MockSESV2API) PutSuppressedDestination(arg0 *sesv2.PutSuppressedDestinationInput) (*sesv2.PutSuppressedDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSuppressedDestination", arg0)
+	ret0, _ := ret[0].(*sesv2.PutSuppressedDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSuppressedDestination indicates an expected call of PutSuppressedDestination
+func (mr *MockSESV2APIMockRecorder) PutSuppressedDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSuppressedDestination", reflect.TypeOf((*MockSESV2API)(nil).PutSuppressedDestination), arg0)
+}
+
+// PutSuppressedDestinationRequest mocks base method
+func (m *MockSESV2API) PutSuppressedDestinationRequest(arg0 *sesv2.PutSuppressedDestinationInput) (*request.Request, *sesv2.PutSuppressedDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSuppressedDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutSuppressedDestinationOutput)
+	return ret0, ret1
+}
+
+// PutSuppressedDestinationRequest indicates an expected call of PutSuppressedDestinationRequest
+func (mr *MockSESV2APIMockRecorder) PutSuppressedDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSuppressedDestinationRequest", reflect.TypeOf((*MockSESV2API)(nil).PutSuppressedDestinationRequest), arg0)
+}
+
+// PutSuppressedDestinationWithContext mocks base method
+func (m *MockSESV2API) PutSuppressedDestinationWithContext(arg0 context.Context, arg1 *sesv2.PutSuppressedDestinationInput, arg2 ...request.Option) (*sesv2.PutSuppressedDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutSuppressedDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutSuppressedDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSuppressedDestinationWithContext indicates an expected call of PutSuppressedDestinationWithContext
+func (mr *MockSESV2APIMockRecorder) PutSuppressedDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSuppressedDestinationWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutSuppressedDestinationWithContext), varargs...)
 }
 
 // SendEmail mocks base method

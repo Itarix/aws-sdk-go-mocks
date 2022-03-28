@@ -185,6 +185,106 @@ func (mr *MockCodeBuildAPIMockRecorder) BatchGetProjectsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetProjectsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetProjectsWithContext), varargs...)
 }
 
+// BatchGetReportGroups mocks base method
+func (m *MockCodeBuildAPI) BatchGetReportGroups(arg0 *codebuild.BatchGetReportGroupsInput) (*codebuild.BatchGetReportGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetReportGroups", arg0)
+	ret0, _ := ret[0].(*codebuild.BatchGetReportGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetReportGroups indicates an expected call of BatchGetReportGroups
+func (mr *MockCodeBuildAPIMockRecorder) BatchGetReportGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetReportGroups", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetReportGroups), arg0)
+}
+
+// BatchGetReportGroupsRequest mocks base method
+func (m *MockCodeBuildAPI) BatchGetReportGroupsRequest(arg0 *codebuild.BatchGetReportGroupsInput) (*request.Request, *codebuild.BatchGetReportGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetReportGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.BatchGetReportGroupsOutput)
+	return ret0, ret1
+}
+
+// BatchGetReportGroupsRequest indicates an expected call of BatchGetReportGroupsRequest
+func (mr *MockCodeBuildAPIMockRecorder) BatchGetReportGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetReportGroupsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetReportGroupsRequest), arg0)
+}
+
+// BatchGetReportGroupsWithContext mocks base method
+func (m *MockCodeBuildAPI) BatchGetReportGroupsWithContext(arg0 context.Context, arg1 *codebuild.BatchGetReportGroupsInput, arg2 ...request.Option) (*codebuild.BatchGetReportGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetReportGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.BatchGetReportGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetReportGroupsWithContext indicates an expected call of BatchGetReportGroupsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) BatchGetReportGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetReportGroupsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetReportGroupsWithContext), varargs...)
+}
+
+// BatchGetReports mocks base method
+func (m *MockCodeBuildAPI) BatchGetReports(arg0 *codebuild.BatchGetReportsInput) (*codebuild.BatchGetReportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetReports", arg0)
+	ret0, _ := ret[0].(*codebuild.BatchGetReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetReports indicates an expected call of BatchGetReports
+func (mr *MockCodeBuildAPIMockRecorder) BatchGetReports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetReports", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetReports), arg0)
+}
+
+// BatchGetReportsRequest mocks base method
+func (m *MockCodeBuildAPI) BatchGetReportsRequest(arg0 *codebuild.BatchGetReportsInput) (*request.Request, *codebuild.BatchGetReportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetReportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.BatchGetReportsOutput)
+	return ret0, ret1
+}
+
+// BatchGetReportsRequest indicates an expected call of BatchGetReportsRequest
+func (mr *MockCodeBuildAPIMockRecorder) BatchGetReportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetReportsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetReportsRequest), arg0)
+}
+
+// BatchGetReportsWithContext mocks base method
+func (m *MockCodeBuildAPI) BatchGetReportsWithContext(arg0 context.Context, arg1 *codebuild.BatchGetReportsInput, arg2 ...request.Option) (*codebuild.BatchGetReportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetReportsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.BatchGetReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetReportsWithContext indicates an expected call of BatchGetReportsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) BatchGetReportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetReportsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).BatchGetReportsWithContext), varargs...)
+}
+
 // CreateProject mocks base method
 func (m *MockCodeBuildAPI) CreateProject(arg0 *codebuild.CreateProjectInput) (*codebuild.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +333,56 @@ func (mr *MockCodeBuildAPIMockRecorder) CreateProjectWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).CreateProjectWithContext), varargs...)
+}
+
+// CreateReportGroup mocks base method
+func (m *MockCodeBuildAPI) CreateReportGroup(arg0 *codebuild.CreateReportGroupInput) (*codebuild.CreateReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReportGroup", arg0)
+	ret0, _ := ret[0].(*codebuild.CreateReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReportGroup indicates an expected call of CreateReportGroup
+func (mr *MockCodeBuildAPIMockRecorder) CreateReportGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReportGroup", reflect.TypeOf((*MockCodeBuildAPI)(nil).CreateReportGroup), arg0)
+}
+
+// CreateReportGroupRequest mocks base method
+func (m *MockCodeBuildAPI) CreateReportGroupRequest(arg0 *codebuild.CreateReportGroupInput) (*request.Request, *codebuild.CreateReportGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReportGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.CreateReportGroupOutput)
+	return ret0, ret1
+}
+
+// CreateReportGroupRequest indicates an expected call of CreateReportGroupRequest
+func (mr *MockCodeBuildAPIMockRecorder) CreateReportGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReportGroupRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).CreateReportGroupRequest), arg0)
+}
+
+// CreateReportGroupWithContext mocks base method
+func (m *MockCodeBuildAPI) CreateReportGroupWithContext(arg0 context.Context, arg1 *codebuild.CreateReportGroupInput, arg2 ...request.Option) (*codebuild.CreateReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateReportGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.CreateReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReportGroupWithContext indicates an expected call of CreateReportGroupWithContext
+func (mr *MockCodeBuildAPIMockRecorder) CreateReportGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReportGroupWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).CreateReportGroupWithContext), varargs...)
 }
 
 // CreateWebhook mocks base method
@@ -335,6 +485,106 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteProjectWithContext), varargs...)
 }
 
+// DeleteReport mocks base method
+func (m *MockCodeBuildAPI) DeleteReport(arg0 *codebuild.DeleteReportInput) (*codebuild.DeleteReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReport", arg0)
+	ret0, _ := ret[0].(*codebuild.DeleteReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReport indicates an expected call of DeleteReport
+func (mr *MockCodeBuildAPIMockRecorder) DeleteReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReport", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReport), arg0)
+}
+
+// DeleteReportGroup mocks base method
+func (m *MockCodeBuildAPI) DeleteReportGroup(arg0 *codebuild.DeleteReportGroupInput) (*codebuild.DeleteReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReportGroup", arg0)
+	ret0, _ := ret[0].(*codebuild.DeleteReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReportGroup indicates an expected call of DeleteReportGroup
+func (mr *MockCodeBuildAPIMockRecorder) DeleteReportGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportGroup", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReportGroup), arg0)
+}
+
+// DeleteReportGroupRequest mocks base method
+func (m *MockCodeBuildAPI) DeleteReportGroupRequest(arg0 *codebuild.DeleteReportGroupInput) (*request.Request, *codebuild.DeleteReportGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReportGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.DeleteReportGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteReportGroupRequest indicates an expected call of DeleteReportGroupRequest
+func (mr *MockCodeBuildAPIMockRecorder) DeleteReportGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportGroupRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReportGroupRequest), arg0)
+}
+
+// DeleteReportGroupWithContext mocks base method
+func (m *MockCodeBuildAPI) DeleteReportGroupWithContext(arg0 context.Context, arg1 *codebuild.DeleteReportGroupInput, arg2 ...request.Option) (*codebuild.DeleteReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteReportGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.DeleteReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReportGroupWithContext indicates an expected call of DeleteReportGroupWithContext
+func (mr *MockCodeBuildAPIMockRecorder) DeleteReportGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportGroupWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReportGroupWithContext), varargs...)
+}
+
+// DeleteReportRequest mocks base method
+func (m *MockCodeBuildAPI) DeleteReportRequest(arg0 *codebuild.DeleteReportInput) (*request.Request, *codebuild.DeleteReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.DeleteReportOutput)
+	return ret0, ret1
+}
+
+// DeleteReportRequest indicates an expected call of DeleteReportRequest
+func (mr *MockCodeBuildAPIMockRecorder) DeleteReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReportRequest), arg0)
+}
+
+// DeleteReportWithContext mocks base method
+func (m *MockCodeBuildAPI) DeleteReportWithContext(arg0 context.Context, arg1 *codebuild.DeleteReportInput, arg2 ...request.Option) (*codebuild.DeleteReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteReportWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.DeleteReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReportWithContext indicates an expected call of DeleteReportWithContext
+func (mr *MockCodeBuildAPIMockRecorder) DeleteReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReportWithContext), varargs...)
+}
+
 // DeleteSourceCredentials mocks base method
 func (m *MockCodeBuildAPI) DeleteSourceCredentials(arg0 *codebuild.DeleteSourceCredentialsInput) (*codebuild.DeleteSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +683,56 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteWebhookWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebhookWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteWebhookWithContext), varargs...)
+}
+
+// DescribeTestCases mocks base method
+func (m *MockCodeBuildAPI) DescribeTestCases(arg0 *codebuild.DescribeTestCasesInput) (*codebuild.DescribeTestCasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTestCases", arg0)
+	ret0, _ := ret[0].(*codebuild.DescribeTestCasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTestCases indicates an expected call of DescribeTestCases
+func (mr *MockCodeBuildAPIMockRecorder) DescribeTestCases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTestCases", reflect.TypeOf((*MockCodeBuildAPI)(nil).DescribeTestCases), arg0)
+}
+
+// DescribeTestCasesRequest mocks base method
+func (m *MockCodeBuildAPI) DescribeTestCasesRequest(arg0 *codebuild.DescribeTestCasesInput) (*request.Request, *codebuild.DescribeTestCasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTestCasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.DescribeTestCasesOutput)
+	return ret0, ret1
+}
+
+// DescribeTestCasesRequest indicates an expected call of DescribeTestCasesRequest
+func (mr *MockCodeBuildAPIMockRecorder) DescribeTestCasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTestCasesRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).DescribeTestCasesRequest), arg0)
+}
+
+// DescribeTestCasesWithContext mocks base method
+func (m *MockCodeBuildAPI) DescribeTestCasesWithContext(arg0 context.Context, arg1 *codebuild.DescribeTestCasesInput, arg2 ...request.Option) (*codebuild.DescribeTestCasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTestCasesWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.DescribeTestCasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTestCasesWithContext indicates an expected call of DescribeTestCasesWithContext
+func (mr *MockCodeBuildAPIMockRecorder) DescribeTestCasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTestCasesWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DescribeTestCasesWithContext), varargs...)
 }
 
 // ImportSourceCredentials mocks base method
@@ -735,6 +1035,156 @@ func (mr *MockCodeBuildAPIMockRecorder) ListProjectsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListProjectsWithContext), varargs...)
 }
 
+// ListReportGroups mocks base method
+func (m *MockCodeBuildAPI) ListReportGroups(arg0 *codebuild.ListReportGroupsInput) (*codebuild.ListReportGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportGroups", arg0)
+	ret0, _ := ret[0].(*codebuild.ListReportGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportGroups indicates an expected call of ListReportGroups
+func (mr *MockCodeBuildAPIMockRecorder) ListReportGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportGroups", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportGroups), arg0)
+}
+
+// ListReportGroupsRequest mocks base method
+func (m *MockCodeBuildAPI) ListReportGroupsRequest(arg0 *codebuild.ListReportGroupsInput) (*request.Request, *codebuild.ListReportGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ListReportGroupsOutput)
+	return ret0, ret1
+}
+
+// ListReportGroupsRequest indicates an expected call of ListReportGroupsRequest
+func (mr *MockCodeBuildAPIMockRecorder) ListReportGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportGroupsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportGroupsRequest), arg0)
+}
+
+// ListReportGroupsWithContext mocks base method
+func (m *MockCodeBuildAPI) ListReportGroupsWithContext(arg0 context.Context, arg1 *codebuild.ListReportGroupsInput, arg2 ...request.Option) (*codebuild.ListReportGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ListReportGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportGroupsWithContext indicates an expected call of ListReportGroupsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ListReportGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportGroupsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportGroupsWithContext), varargs...)
+}
+
+// ListReports mocks base method
+func (m *MockCodeBuildAPI) ListReports(arg0 *codebuild.ListReportsInput) (*codebuild.ListReportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReports", arg0)
+	ret0, _ := ret[0].(*codebuild.ListReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReports indicates an expected call of ListReports
+func (mr *MockCodeBuildAPIMockRecorder) ListReports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReports", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReports), arg0)
+}
+
+// ListReportsForReportGroup mocks base method
+func (m *MockCodeBuildAPI) ListReportsForReportGroup(arg0 *codebuild.ListReportsForReportGroupInput) (*codebuild.ListReportsForReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportsForReportGroup", arg0)
+	ret0, _ := ret[0].(*codebuild.ListReportsForReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportsForReportGroup indicates an expected call of ListReportsForReportGroup
+func (mr *MockCodeBuildAPIMockRecorder) ListReportsForReportGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportsForReportGroup", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportsForReportGroup), arg0)
+}
+
+// ListReportsForReportGroupRequest mocks base method
+func (m *MockCodeBuildAPI) ListReportsForReportGroupRequest(arg0 *codebuild.ListReportsForReportGroupInput) (*request.Request, *codebuild.ListReportsForReportGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportsForReportGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ListReportsForReportGroupOutput)
+	return ret0, ret1
+}
+
+// ListReportsForReportGroupRequest indicates an expected call of ListReportsForReportGroupRequest
+func (mr *MockCodeBuildAPIMockRecorder) ListReportsForReportGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportsForReportGroupRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportsForReportGroupRequest), arg0)
+}
+
+// ListReportsForReportGroupWithContext mocks base method
+func (m *MockCodeBuildAPI) ListReportsForReportGroupWithContext(arg0 context.Context, arg1 *codebuild.ListReportsForReportGroupInput, arg2 ...request.Option) (*codebuild.ListReportsForReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportsForReportGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ListReportsForReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportsForReportGroupWithContext indicates an expected call of ListReportsForReportGroupWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ListReportsForReportGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportsForReportGroupWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportsForReportGroupWithContext), varargs...)
+}
+
+// ListReportsRequest mocks base method
+func (m *MockCodeBuildAPI) ListReportsRequest(arg0 *codebuild.ListReportsInput) (*request.Request, *codebuild.ListReportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ListReportsOutput)
+	return ret0, ret1
+}
+
+// ListReportsRequest indicates an expected call of ListReportsRequest
+func (mr *MockCodeBuildAPIMockRecorder) ListReportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportsRequest), arg0)
+}
+
+// ListReportsWithContext mocks base method
+func (m *MockCodeBuildAPI) ListReportsWithContext(arg0 context.Context, arg1 *codebuild.ListReportsInput, arg2 ...request.Option) (*codebuild.ListReportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ListReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportsWithContext indicates an expected call of ListReportsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ListReportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportsWithContext), varargs...)
+}
+
 // ListSourceCredentials mocks base method
 func (m *MockCodeBuildAPI) ListSourceCredentials(arg0 *codebuild.ListSourceCredentialsInput) (*codebuild.ListSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +1383,56 @@ func (mr *MockCodeBuildAPIMockRecorder) UpdateProjectWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateProjectWithContext), varargs...)
+}
+
+// UpdateReportGroup mocks base method
+func (m *MockCodeBuildAPI) UpdateReportGroup(arg0 *codebuild.UpdateReportGroupInput) (*codebuild.UpdateReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateReportGroup", arg0)
+	ret0, _ := ret[0].(*codebuild.UpdateReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateReportGroup indicates an expected call of UpdateReportGroup
+func (mr *MockCodeBuildAPIMockRecorder) UpdateReportGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReportGroup", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateReportGroup), arg0)
+}
+
+// UpdateReportGroupRequest mocks base method
+func (m *MockCodeBuildAPI) UpdateReportGroupRequest(arg0 *codebuild.UpdateReportGroupInput) (*request.Request, *codebuild.UpdateReportGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateReportGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.UpdateReportGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateReportGroupRequest indicates an expected call of UpdateReportGroupRequest
+func (mr *MockCodeBuildAPIMockRecorder) UpdateReportGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReportGroupRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateReportGroupRequest), arg0)
+}
+
+// UpdateReportGroupWithContext mocks base method
+func (m *MockCodeBuildAPI) UpdateReportGroupWithContext(arg0 context.Context, arg1 *codebuild.UpdateReportGroupInput, arg2 ...request.Option) (*codebuild.UpdateReportGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateReportGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.UpdateReportGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateReportGroupWithContext indicates an expected call of UpdateReportGroupWithContext
+func (mr *MockCodeBuildAPIMockRecorder) UpdateReportGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReportGroupWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateReportGroupWithContext), varargs...)
 }
 
 // UpdateWebhook mocks base method

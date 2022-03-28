@@ -285,6 +285,56 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationReferenceDataSour
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationReferenceDataSourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).AddApplicationReferenceDataSourceWithContext), varargs...)
 }
 
+// AddApplicationVpcConfiguration mocks base method
+func (m *MockKinesisAnalyticsV2API) AddApplicationVpcConfiguration(arg0 *kinesisanalyticsv2.AddApplicationVpcConfigurationInput) (*kinesisanalyticsv2.AddApplicationVpcConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddApplicationVpcConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.AddApplicationVpcConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddApplicationVpcConfiguration indicates an expected call of AddApplicationVpcConfiguration
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationVpcConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationVpcConfiguration", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).AddApplicationVpcConfiguration), arg0)
+}
+
+// AddApplicationVpcConfigurationRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) AddApplicationVpcConfigurationRequest(arg0 *kinesisanalyticsv2.AddApplicationVpcConfigurationInput) (*request.Request, *kinesisanalyticsv2.AddApplicationVpcConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddApplicationVpcConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.AddApplicationVpcConfigurationOutput)
+	return ret0, ret1
+}
+
+// AddApplicationVpcConfigurationRequest indicates an expected call of AddApplicationVpcConfigurationRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationVpcConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationVpcConfigurationRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).AddApplicationVpcConfigurationRequest), arg0)
+}
+
+// AddApplicationVpcConfigurationWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) AddApplicationVpcConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.AddApplicationVpcConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationVpcConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddApplicationVpcConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.AddApplicationVpcConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddApplicationVpcConfigurationWithContext indicates an expected call of AddApplicationVpcConfigurationWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationVpcConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddApplicationVpcConfigurationWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).AddApplicationVpcConfigurationWithContext), varargs...)
+}
+
 // CreateApplication mocks base method
 func (m *MockKinesisAnalyticsV2API) CreateApplication(arg0 *kinesisanalyticsv2.CreateApplicationInput) (*kinesisanalyticsv2.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
@@ -663,6 +713,56 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationSnapshotWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationSnapshotWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DeleteApplicationSnapshotWithContext), varargs...)
+}
+
+// DeleteApplicationVpcConfiguration mocks base method
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationVpcConfiguration(arg0 *kinesisanalyticsv2.DeleteApplicationVpcConfigurationInput) (*kinesisanalyticsv2.DeleteApplicationVpcConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApplicationVpcConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.DeleteApplicationVpcConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApplicationVpcConfiguration indicates an expected call of DeleteApplicationVpcConfiguration
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationVpcConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationVpcConfiguration", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DeleteApplicationVpcConfiguration), arg0)
+}
+
+// DeleteApplicationVpcConfigurationRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationVpcConfigurationRequest(arg0 *kinesisanalyticsv2.DeleteApplicationVpcConfigurationInput) (*request.Request, *kinesisanalyticsv2.DeleteApplicationVpcConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApplicationVpcConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.DeleteApplicationVpcConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteApplicationVpcConfigurationRequest indicates an expected call of DeleteApplicationVpcConfigurationRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationVpcConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationVpcConfigurationRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DeleteApplicationVpcConfigurationRequest), arg0)
+}
+
+// DeleteApplicationVpcConfigurationWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationVpcConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationVpcConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationVpcConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteApplicationVpcConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.DeleteApplicationVpcConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApplicationVpcConfigurationWithContext indicates an expected call of DeleteApplicationVpcConfigurationWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationVpcConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationVpcConfigurationWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DeleteApplicationVpcConfigurationWithContext), varargs...)
 }
 
 // DeleteApplicationWithContext mocks base method

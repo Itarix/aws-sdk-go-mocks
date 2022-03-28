@@ -100,6 +100,56 @@ func (mr *MockRAMAPIMockRecorder) AssociateResourceShare(arg0 interface{}) *gomo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResourceShare", reflect.TypeOf((*MockRAMAPI)(nil).AssociateResourceShare), arg0)
 }
 
+// AssociateResourceSharePermission mocks base method
+func (m *MockRAMAPI) AssociateResourceSharePermission(arg0 *ram.AssociateResourceSharePermissionInput) (*ram.AssociateResourceSharePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateResourceSharePermission", arg0)
+	ret0, _ := ret[0].(*ram.AssociateResourceSharePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateResourceSharePermission indicates an expected call of AssociateResourceSharePermission
+func (mr *MockRAMAPIMockRecorder) AssociateResourceSharePermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResourceSharePermission", reflect.TypeOf((*MockRAMAPI)(nil).AssociateResourceSharePermission), arg0)
+}
+
+// AssociateResourceSharePermissionRequest mocks base method
+func (m *MockRAMAPI) AssociateResourceSharePermissionRequest(arg0 *ram.AssociateResourceSharePermissionInput) (*request.Request, *ram.AssociateResourceSharePermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateResourceSharePermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.AssociateResourceSharePermissionOutput)
+	return ret0, ret1
+}
+
+// AssociateResourceSharePermissionRequest indicates an expected call of AssociateResourceSharePermissionRequest
+func (mr *MockRAMAPIMockRecorder) AssociateResourceSharePermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResourceSharePermissionRequest", reflect.TypeOf((*MockRAMAPI)(nil).AssociateResourceSharePermissionRequest), arg0)
+}
+
+// AssociateResourceSharePermissionWithContext mocks base method
+func (m *MockRAMAPI) AssociateResourceSharePermissionWithContext(arg0 context.Context, arg1 *ram.AssociateResourceSharePermissionInput, arg2 ...request.Option) (*ram.AssociateResourceSharePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateResourceSharePermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.AssociateResourceSharePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateResourceSharePermissionWithContext indicates an expected call of AssociateResourceSharePermissionWithContext
+func (mr *MockRAMAPIMockRecorder) AssociateResourceSharePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResourceSharePermissionWithContext", reflect.TypeOf((*MockRAMAPI)(nil).AssociateResourceSharePermissionWithContext), varargs...)
+}
+
 // AssociateResourceShareRequest mocks base method
 func (m *MockRAMAPI) AssociateResourceShareRequest(arg0 *ram.AssociateResourceShareInput) (*request.Request, *ram.AssociateResourceShareOutput) {
 	m.ctrl.T.Helper()
@@ -250,6 +300,56 @@ func (mr *MockRAMAPIMockRecorder) DisassociateResourceShare(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResourceShare", reflect.TypeOf((*MockRAMAPI)(nil).DisassociateResourceShare), arg0)
 }
 
+// DisassociateResourceSharePermission mocks base method
+func (m *MockRAMAPI) DisassociateResourceSharePermission(arg0 *ram.DisassociateResourceSharePermissionInput) (*ram.DisassociateResourceSharePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateResourceSharePermission", arg0)
+	ret0, _ := ret[0].(*ram.DisassociateResourceSharePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateResourceSharePermission indicates an expected call of DisassociateResourceSharePermission
+func (mr *MockRAMAPIMockRecorder) DisassociateResourceSharePermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResourceSharePermission", reflect.TypeOf((*MockRAMAPI)(nil).DisassociateResourceSharePermission), arg0)
+}
+
+// DisassociateResourceSharePermissionRequest mocks base method
+func (m *MockRAMAPI) DisassociateResourceSharePermissionRequest(arg0 *ram.DisassociateResourceSharePermissionInput) (*request.Request, *ram.DisassociateResourceSharePermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateResourceSharePermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.DisassociateResourceSharePermissionOutput)
+	return ret0, ret1
+}
+
+// DisassociateResourceSharePermissionRequest indicates an expected call of DisassociateResourceSharePermissionRequest
+func (mr *MockRAMAPIMockRecorder) DisassociateResourceSharePermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResourceSharePermissionRequest", reflect.TypeOf((*MockRAMAPI)(nil).DisassociateResourceSharePermissionRequest), arg0)
+}
+
+// DisassociateResourceSharePermissionWithContext mocks base method
+func (m *MockRAMAPI) DisassociateResourceSharePermissionWithContext(arg0 context.Context, arg1 *ram.DisassociateResourceSharePermissionInput, arg2 ...request.Option) (*ram.DisassociateResourceSharePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateResourceSharePermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.DisassociateResourceSharePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateResourceSharePermissionWithContext indicates an expected call of DisassociateResourceSharePermissionWithContext
+func (mr *MockRAMAPIMockRecorder) DisassociateResourceSharePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResourceSharePermissionWithContext", reflect.TypeOf((*MockRAMAPI)(nil).DisassociateResourceSharePermissionWithContext), varargs...)
+}
+
 // DisassociateResourceShareRequest mocks base method
 func (m *MockRAMAPI) DisassociateResourceShareRequest(arg0 *ram.DisassociateResourceShareInput) (*request.Request, *ram.DisassociateResourceShareOutput) {
 	m.ctrl.T.Helper()
@@ -333,6 +433,56 @@ func (mr *MockRAMAPIMockRecorder) EnableSharingWithAwsOrganizationWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableSharingWithAwsOrganizationWithContext", reflect.TypeOf((*MockRAMAPI)(nil).EnableSharingWithAwsOrganizationWithContext), varargs...)
+}
+
+// GetPermission mocks base method
+func (m *MockRAMAPI) GetPermission(arg0 *ram.GetPermissionInput) (*ram.GetPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPermission", arg0)
+	ret0, _ := ret[0].(*ram.GetPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPermission indicates an expected call of GetPermission
+func (mr *MockRAMAPIMockRecorder) GetPermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermission", reflect.TypeOf((*MockRAMAPI)(nil).GetPermission), arg0)
+}
+
+// GetPermissionRequest mocks base method
+func (m *MockRAMAPI) GetPermissionRequest(arg0 *ram.GetPermissionInput) (*request.Request, *ram.GetPermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.GetPermissionOutput)
+	return ret0, ret1
+}
+
+// GetPermissionRequest indicates an expected call of GetPermissionRequest
+func (mr *MockRAMAPIMockRecorder) GetPermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionRequest", reflect.TypeOf((*MockRAMAPI)(nil).GetPermissionRequest), arg0)
+}
+
+// GetPermissionWithContext mocks base method
+func (m *MockRAMAPI) GetPermissionWithContext(arg0 context.Context, arg1 *ram.GetPermissionInput, arg2 ...request.Option) (*ram.GetPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.GetPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPermissionWithContext indicates an expected call of GetPermissionWithContext
+func (mr *MockRAMAPIMockRecorder) GetPermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionWithContext", reflect.TypeOf((*MockRAMAPI)(nil).GetPermissionWithContext), varargs...)
 }
 
 // GetResourcePolicies mocks base method
@@ -750,6 +900,56 @@ func (mr *MockRAMAPIMockRecorder) ListPendingInvitationResourcesWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPendingInvitationResourcesWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListPendingInvitationResourcesWithContext), varargs...)
 }
 
+// ListPermissions mocks base method
+func (m *MockRAMAPI) ListPermissions(arg0 *ram.ListPermissionsInput) (*ram.ListPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPermissions", arg0)
+	ret0, _ := ret[0].(*ram.ListPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPermissions indicates an expected call of ListPermissions
+func (mr *MockRAMAPIMockRecorder) ListPermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissions", reflect.TypeOf((*MockRAMAPI)(nil).ListPermissions), arg0)
+}
+
+// ListPermissionsRequest mocks base method
+func (m *MockRAMAPI) ListPermissionsRequest(arg0 *ram.ListPermissionsInput) (*request.Request, *ram.ListPermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.ListPermissionsOutput)
+	return ret0, ret1
+}
+
+// ListPermissionsRequest indicates an expected call of ListPermissionsRequest
+func (mr *MockRAMAPIMockRecorder) ListPermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionsRequest", reflect.TypeOf((*MockRAMAPI)(nil).ListPermissionsRequest), arg0)
+}
+
+// ListPermissionsWithContext mocks base method
+func (m *MockRAMAPI) ListPermissionsWithContext(arg0 context.Context, arg1 *ram.ListPermissionsInput, arg2 ...request.Option) (*ram.ListPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.ListPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPermissionsWithContext indicates an expected call of ListPermissionsWithContext
+func (mr *MockRAMAPIMockRecorder) ListPermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionsWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListPermissionsWithContext), varargs...)
+}
+
 // ListPrincipals mocks base method
 func (m *MockRAMAPI) ListPrincipals(arg0 *ram.ListPrincipalsInput) (*ram.ListPrincipalsOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +1033,56 @@ func (mr *MockRAMAPIMockRecorder) ListPrincipalsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrincipalsWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListPrincipalsWithContext), varargs...)
 }
 
+// ListResourceSharePermissions mocks base method
+func (m *MockRAMAPI) ListResourceSharePermissions(arg0 *ram.ListResourceSharePermissionsInput) (*ram.ListResourceSharePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceSharePermissions", arg0)
+	ret0, _ := ret[0].(*ram.ListResourceSharePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceSharePermissions indicates an expected call of ListResourceSharePermissions
+func (mr *MockRAMAPIMockRecorder) ListResourceSharePermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSharePermissions", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceSharePermissions), arg0)
+}
+
+// ListResourceSharePermissionsRequest mocks base method
+func (m *MockRAMAPI) ListResourceSharePermissionsRequest(arg0 *ram.ListResourceSharePermissionsInput) (*request.Request, *ram.ListResourceSharePermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceSharePermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.ListResourceSharePermissionsOutput)
+	return ret0, ret1
+}
+
+// ListResourceSharePermissionsRequest indicates an expected call of ListResourceSharePermissionsRequest
+func (mr *MockRAMAPIMockRecorder) ListResourceSharePermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSharePermissionsRequest", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceSharePermissionsRequest), arg0)
+}
+
+// ListResourceSharePermissionsWithContext mocks base method
+func (m *MockRAMAPI) ListResourceSharePermissionsWithContext(arg0 context.Context, arg1 *ram.ListResourceSharePermissionsInput, arg2 ...request.Option) (*ram.ListResourceSharePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceSharePermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.ListResourceSharePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceSharePermissionsWithContext indicates an expected call of ListResourceSharePermissionsWithContext
+func (mr *MockRAMAPIMockRecorder) ListResourceSharePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSharePermissionsWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceSharePermissionsWithContext), varargs...)
+}
+
 // ListResources mocks base method
 func (m *MockRAMAPI) ListResources(arg0 *ram.ListResourcesInput) (*ram.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()
@@ -914,6 +1164,56 @@ func (mr *MockRAMAPIMockRecorder) ListResourcesWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListResourcesWithContext), varargs...)
+}
+
+// PromoteResourceShareCreatedFromPolicy mocks base method
+func (m *MockRAMAPI) PromoteResourceShareCreatedFromPolicy(arg0 *ram.PromoteResourceShareCreatedFromPolicyInput) (*ram.PromoteResourceShareCreatedFromPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PromoteResourceShareCreatedFromPolicy", arg0)
+	ret0, _ := ret[0].(*ram.PromoteResourceShareCreatedFromPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PromoteResourceShareCreatedFromPolicy indicates an expected call of PromoteResourceShareCreatedFromPolicy
+func (mr *MockRAMAPIMockRecorder) PromoteResourceShareCreatedFromPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PromoteResourceShareCreatedFromPolicy", reflect.TypeOf((*MockRAMAPI)(nil).PromoteResourceShareCreatedFromPolicy), arg0)
+}
+
+// PromoteResourceShareCreatedFromPolicyRequest mocks base method
+func (m *MockRAMAPI) PromoteResourceShareCreatedFromPolicyRequest(arg0 *ram.PromoteResourceShareCreatedFromPolicyInput) (*request.Request, *ram.PromoteResourceShareCreatedFromPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PromoteResourceShareCreatedFromPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.PromoteResourceShareCreatedFromPolicyOutput)
+	return ret0, ret1
+}
+
+// PromoteResourceShareCreatedFromPolicyRequest indicates an expected call of PromoteResourceShareCreatedFromPolicyRequest
+func (mr *MockRAMAPIMockRecorder) PromoteResourceShareCreatedFromPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PromoteResourceShareCreatedFromPolicyRequest", reflect.TypeOf((*MockRAMAPI)(nil).PromoteResourceShareCreatedFromPolicyRequest), arg0)
+}
+
+// PromoteResourceShareCreatedFromPolicyWithContext mocks base method
+func (m *MockRAMAPI) PromoteResourceShareCreatedFromPolicyWithContext(arg0 context.Context, arg1 *ram.PromoteResourceShareCreatedFromPolicyInput, arg2 ...request.Option) (*ram.PromoteResourceShareCreatedFromPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PromoteResourceShareCreatedFromPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.PromoteResourceShareCreatedFromPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PromoteResourceShareCreatedFromPolicyWithContext indicates an expected call of PromoteResourceShareCreatedFromPolicyWithContext
+func (mr *MockRAMAPIMockRecorder) PromoteResourceShareCreatedFromPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PromoteResourceShareCreatedFromPolicyWithContext", reflect.TypeOf((*MockRAMAPI)(nil).PromoteResourceShareCreatedFromPolicyWithContext), varargs...)
 }
 
 // RejectResourceShareInvitation mocks base method

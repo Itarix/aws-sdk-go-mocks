@@ -450,6 +450,56 @@ func (mr *MockLambdaAPIMockRecorder) DeleteFunctionConcurrencyWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionConcurrencyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionConcurrencyWithContext), varargs...)
 }
 
+// DeleteFunctionEventInvokeConfig mocks base method
+func (m *MockLambdaAPI) DeleteFunctionEventInvokeConfig(arg0 *lambda.DeleteFunctionEventInvokeConfigInput) (*lambda.DeleteFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFunctionEventInvokeConfig", arg0)
+	ret0, _ := ret[0].(*lambda.DeleteFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFunctionEventInvokeConfig indicates an expected call of DeleteFunctionEventInvokeConfig
+func (mr *MockLambdaAPIMockRecorder) DeleteFunctionEventInvokeConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionEventInvokeConfig", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionEventInvokeConfig), arg0)
+}
+
+// DeleteFunctionEventInvokeConfigRequest mocks base method
+func (m *MockLambdaAPI) DeleteFunctionEventInvokeConfigRequest(arg0 *lambda.DeleteFunctionEventInvokeConfigInput) (*request.Request, *lambda.DeleteFunctionEventInvokeConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFunctionEventInvokeConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.DeleteFunctionEventInvokeConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteFunctionEventInvokeConfigRequest indicates an expected call of DeleteFunctionEventInvokeConfigRequest
+func (mr *MockLambdaAPIMockRecorder) DeleteFunctionEventInvokeConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionEventInvokeConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionEventInvokeConfigRequest), arg0)
+}
+
+// DeleteFunctionEventInvokeConfigWithContext mocks base method
+func (m *MockLambdaAPI) DeleteFunctionEventInvokeConfigWithContext(arg0 context.Context, arg1 *lambda.DeleteFunctionEventInvokeConfigInput, arg2 ...request.Option) (*lambda.DeleteFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFunctionEventInvokeConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.DeleteFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFunctionEventInvokeConfigWithContext indicates an expected call of DeleteFunctionEventInvokeConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) DeleteFunctionEventInvokeConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionEventInvokeConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionEventInvokeConfigWithContext), varargs...)
+}
+
 // DeleteFunctionRequest mocks base method
 func (m *MockLambdaAPI) DeleteFunctionRequest(arg0 *lambda.DeleteFunctionInput) (*request.Request, *lambda.DeleteFunctionOutput) {
 	m.ctrl.T.Helper()
@@ -748,6 +798,56 @@ func (mr *MockLambdaAPIMockRecorder) GetFunctionConfigurationWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConfigurationWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConfigurationWithContext), varargs...)
+}
+
+// GetFunctionEventInvokeConfig mocks base method
+func (m *MockLambdaAPI) GetFunctionEventInvokeConfig(arg0 *lambda.GetFunctionEventInvokeConfigInput) (*lambda.GetFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFunctionEventInvokeConfig", arg0)
+	ret0, _ := ret[0].(*lambda.GetFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFunctionEventInvokeConfig indicates an expected call of GetFunctionEventInvokeConfig
+func (mr *MockLambdaAPIMockRecorder) GetFunctionEventInvokeConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionEventInvokeConfig", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionEventInvokeConfig), arg0)
+}
+
+// GetFunctionEventInvokeConfigRequest mocks base method
+func (m *MockLambdaAPI) GetFunctionEventInvokeConfigRequest(arg0 *lambda.GetFunctionEventInvokeConfigInput) (*request.Request, *lambda.GetFunctionEventInvokeConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFunctionEventInvokeConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetFunctionEventInvokeConfigOutput)
+	return ret0, ret1
+}
+
+// GetFunctionEventInvokeConfigRequest indicates an expected call of GetFunctionEventInvokeConfigRequest
+func (mr *MockLambdaAPIMockRecorder) GetFunctionEventInvokeConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionEventInvokeConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionEventInvokeConfigRequest), arg0)
+}
+
+// GetFunctionEventInvokeConfigWithContext mocks base method
+func (m *MockLambdaAPI) GetFunctionEventInvokeConfigWithContext(arg0 context.Context, arg1 *lambda.GetFunctionEventInvokeConfigInput, arg2 ...request.Option) (*lambda.GetFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFunctionEventInvokeConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFunctionEventInvokeConfigWithContext indicates an expected call of GetFunctionEventInvokeConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) GetFunctionEventInvokeConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionEventInvokeConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionEventInvokeConfigWithContext), varargs...)
 }
 
 // GetFunctionRequest mocks base method
@@ -1249,6 +1349,89 @@ func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourceMappingsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListEventSourceMappingsWithContext), varargs...)
+}
+
+// ListFunctionEventInvokeConfigs mocks base method
+func (m *MockLambdaAPI) ListFunctionEventInvokeConfigs(arg0 *lambda.ListFunctionEventInvokeConfigsInput) (*lambda.ListFunctionEventInvokeConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionEventInvokeConfigs", arg0)
+	ret0, _ := ret[0].(*lambda.ListFunctionEventInvokeConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFunctionEventInvokeConfigs indicates an expected call of ListFunctionEventInvokeConfigs
+func (mr *MockLambdaAPIMockRecorder) ListFunctionEventInvokeConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionEventInvokeConfigs", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionEventInvokeConfigs), arg0)
+}
+
+// ListFunctionEventInvokeConfigsPages mocks base method
+func (m *MockLambdaAPI) ListFunctionEventInvokeConfigsPages(arg0 *lambda.ListFunctionEventInvokeConfigsInput, arg1 func(*lambda.ListFunctionEventInvokeConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionEventInvokeConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFunctionEventInvokeConfigsPages indicates an expected call of ListFunctionEventInvokeConfigsPages
+func (mr *MockLambdaAPIMockRecorder) ListFunctionEventInvokeConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionEventInvokeConfigsPages", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionEventInvokeConfigsPages), arg0, arg1)
+}
+
+// ListFunctionEventInvokeConfigsPagesWithContext mocks base method
+func (m *MockLambdaAPI) ListFunctionEventInvokeConfigsPagesWithContext(arg0 context.Context, arg1 *lambda.ListFunctionEventInvokeConfigsInput, arg2 func(*lambda.ListFunctionEventInvokeConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFunctionEventInvokeConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFunctionEventInvokeConfigsPagesWithContext indicates an expected call of ListFunctionEventInvokeConfigsPagesWithContext
+func (mr *MockLambdaAPIMockRecorder) ListFunctionEventInvokeConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionEventInvokeConfigsPagesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionEventInvokeConfigsPagesWithContext), varargs...)
+}
+
+// ListFunctionEventInvokeConfigsRequest mocks base method
+func (m *MockLambdaAPI) ListFunctionEventInvokeConfigsRequest(arg0 *lambda.ListFunctionEventInvokeConfigsInput) (*request.Request, *lambda.ListFunctionEventInvokeConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionEventInvokeConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.ListFunctionEventInvokeConfigsOutput)
+	return ret0, ret1
+}
+
+// ListFunctionEventInvokeConfigsRequest indicates an expected call of ListFunctionEventInvokeConfigsRequest
+func (mr *MockLambdaAPIMockRecorder) ListFunctionEventInvokeConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionEventInvokeConfigsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionEventInvokeConfigsRequest), arg0)
+}
+
+// ListFunctionEventInvokeConfigsWithContext mocks base method
+func (m *MockLambdaAPI) ListFunctionEventInvokeConfigsWithContext(arg0 context.Context, arg1 *lambda.ListFunctionEventInvokeConfigsInput, arg2 ...request.Option) (*lambda.ListFunctionEventInvokeConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFunctionEventInvokeConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.ListFunctionEventInvokeConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFunctionEventInvokeConfigsWithContext indicates an expected call of ListFunctionEventInvokeConfigsWithContext
+func (mr *MockLambdaAPIMockRecorder) ListFunctionEventInvokeConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionEventInvokeConfigsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionEventInvokeConfigsWithContext), varargs...)
 }
 
 // ListFunctions mocks base method
@@ -1783,6 +1966,56 @@ func (mr *MockLambdaAPIMockRecorder) PutFunctionConcurrencyWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionConcurrencyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionConcurrencyWithContext), varargs...)
 }
 
+// PutFunctionEventInvokeConfig mocks base method
+func (m *MockLambdaAPI) PutFunctionEventInvokeConfig(arg0 *lambda.PutFunctionEventInvokeConfigInput) (*lambda.PutFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFunctionEventInvokeConfig", arg0)
+	ret0, _ := ret[0].(*lambda.PutFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFunctionEventInvokeConfig indicates an expected call of PutFunctionEventInvokeConfig
+func (mr *MockLambdaAPIMockRecorder) PutFunctionEventInvokeConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionEventInvokeConfig", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionEventInvokeConfig), arg0)
+}
+
+// PutFunctionEventInvokeConfigRequest mocks base method
+func (m *MockLambdaAPI) PutFunctionEventInvokeConfigRequest(arg0 *lambda.PutFunctionEventInvokeConfigInput) (*request.Request, *lambda.PutFunctionEventInvokeConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFunctionEventInvokeConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.PutFunctionEventInvokeConfigOutput)
+	return ret0, ret1
+}
+
+// PutFunctionEventInvokeConfigRequest indicates an expected call of PutFunctionEventInvokeConfigRequest
+func (mr *MockLambdaAPIMockRecorder) PutFunctionEventInvokeConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionEventInvokeConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionEventInvokeConfigRequest), arg0)
+}
+
+// PutFunctionEventInvokeConfigWithContext mocks base method
+func (m *MockLambdaAPI) PutFunctionEventInvokeConfigWithContext(arg0 context.Context, arg1 *lambda.PutFunctionEventInvokeConfigInput, arg2 ...request.Option) (*lambda.PutFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutFunctionEventInvokeConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.PutFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFunctionEventInvokeConfigWithContext indicates an expected call of PutFunctionEventInvokeConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) PutFunctionEventInvokeConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionEventInvokeConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionEventInvokeConfigWithContext), varargs...)
+}
+
 // RemoveLayerVersionPermission mocks base method
 func (m *MockLambdaAPI) RemoveLayerVersionPermission(arg0 *lambda.RemoveLayerVersionPermissionInput) (*lambda.RemoveLayerVersionPermissionOutput, error) {
 	m.ctrl.T.Helper()
@@ -2183,6 +2416,89 @@ func (mr *MockLambdaAPIMockRecorder) UpdateFunctionConfigurationWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionConfigurationWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionConfigurationWithContext), varargs...)
 }
 
+// UpdateFunctionEventInvokeConfig mocks base method
+func (m *MockLambdaAPI) UpdateFunctionEventInvokeConfig(arg0 *lambda.UpdateFunctionEventInvokeConfigInput) (*lambda.UpdateFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFunctionEventInvokeConfig", arg0)
+	ret0, _ := ret[0].(*lambda.UpdateFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFunctionEventInvokeConfig indicates an expected call of UpdateFunctionEventInvokeConfig
+func (mr *MockLambdaAPIMockRecorder) UpdateFunctionEventInvokeConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionEventInvokeConfig", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionEventInvokeConfig), arg0)
+}
+
+// UpdateFunctionEventInvokeConfigRequest mocks base method
+func (m *MockLambdaAPI) UpdateFunctionEventInvokeConfigRequest(arg0 *lambda.UpdateFunctionEventInvokeConfigInput) (*request.Request, *lambda.UpdateFunctionEventInvokeConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFunctionEventInvokeConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.UpdateFunctionEventInvokeConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateFunctionEventInvokeConfigRequest indicates an expected call of UpdateFunctionEventInvokeConfigRequest
+func (mr *MockLambdaAPIMockRecorder) UpdateFunctionEventInvokeConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionEventInvokeConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionEventInvokeConfigRequest), arg0)
+}
+
+// UpdateFunctionEventInvokeConfigWithContext mocks base method
+func (m *MockLambdaAPI) UpdateFunctionEventInvokeConfigWithContext(arg0 context.Context, arg1 *lambda.UpdateFunctionEventInvokeConfigInput, arg2 ...request.Option) (*lambda.UpdateFunctionEventInvokeConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFunctionEventInvokeConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.UpdateFunctionEventInvokeConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFunctionEventInvokeConfigWithContext indicates an expected call of UpdateFunctionEventInvokeConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) UpdateFunctionEventInvokeConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionEventInvokeConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionEventInvokeConfigWithContext), varargs...)
+}
+
+// WaitUntilFunctionActive mocks base method
+func (m *MockLambdaAPI) WaitUntilFunctionActive(arg0 *lambda.GetFunctionConfigurationInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilFunctionActive", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFunctionActive indicates an expected call of WaitUntilFunctionActive
+func (mr *MockLambdaAPIMockRecorder) WaitUntilFunctionActive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFunctionActive", reflect.TypeOf((*MockLambdaAPI)(nil).WaitUntilFunctionActive), arg0)
+}
+
+// WaitUntilFunctionActiveWithContext mocks base method
+func (m *MockLambdaAPI) WaitUntilFunctionActiveWithContext(arg0 context.Context, arg1 *lambda.GetFunctionConfigurationInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilFunctionActiveWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFunctionActiveWithContext indicates an expected call of WaitUntilFunctionActiveWithContext
+func (mr *MockLambdaAPIMockRecorder) WaitUntilFunctionActiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFunctionActiveWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).WaitUntilFunctionActiveWithContext), varargs...)
+}
+
 // WaitUntilFunctionExists mocks base method
 func (m *MockLambdaAPI) WaitUntilFunctionExists(arg0 *lambda.GetFunctionInput) error {
 	m.ctrl.T.Helper()
@@ -2214,4 +2530,37 @@ func (mr *MockLambdaAPIMockRecorder) WaitUntilFunctionExistsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFunctionExistsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).WaitUntilFunctionExistsWithContext), varargs...)
+}
+
+// WaitUntilFunctionUpdated mocks base method
+func (m *MockLambdaAPI) WaitUntilFunctionUpdated(arg0 *lambda.GetFunctionConfigurationInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilFunctionUpdated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFunctionUpdated indicates an expected call of WaitUntilFunctionUpdated
+func (mr *MockLambdaAPIMockRecorder) WaitUntilFunctionUpdated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFunctionUpdated", reflect.TypeOf((*MockLambdaAPI)(nil).WaitUntilFunctionUpdated), arg0)
+}
+
+// WaitUntilFunctionUpdatedWithContext mocks base method
+func (m *MockLambdaAPI) WaitUntilFunctionUpdatedWithContext(arg0 context.Context, arg1 *lambda.GetFunctionConfigurationInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilFunctionUpdatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFunctionUpdatedWithContext indicates an expected call of WaitUntilFunctionUpdatedWithContext
+func (mr *MockLambdaAPIMockRecorder) WaitUntilFunctionUpdatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFunctionUpdatedWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).WaitUntilFunctionUpdatedWithContext), varargs...)
 }

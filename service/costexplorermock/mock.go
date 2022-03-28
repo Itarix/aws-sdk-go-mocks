@@ -35,6 +35,156 @@ func (m *MockCostExplorerAPI) EXPECT() *MockCostExplorerAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateCostCategoryDefinition mocks base method
+func (m *MockCostExplorerAPI) CreateCostCategoryDefinition(arg0 *costexplorer.CreateCostCategoryDefinitionInput) (*costexplorer.CreateCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCostCategoryDefinition", arg0)
+	ret0, _ := ret[0].(*costexplorer.CreateCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCostCategoryDefinition indicates an expected call of CreateCostCategoryDefinition
+func (mr *MockCostExplorerAPIMockRecorder) CreateCostCategoryDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCostCategoryDefinition", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateCostCategoryDefinition), arg0)
+}
+
+// CreateCostCategoryDefinitionRequest mocks base method
+func (m *MockCostExplorerAPI) CreateCostCategoryDefinitionRequest(arg0 *costexplorer.CreateCostCategoryDefinitionInput) (*request.Request, *costexplorer.CreateCostCategoryDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCostCategoryDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.CreateCostCategoryDefinitionOutput)
+	return ret0, ret1
+}
+
+// CreateCostCategoryDefinitionRequest indicates an expected call of CreateCostCategoryDefinitionRequest
+func (mr *MockCostExplorerAPIMockRecorder) CreateCostCategoryDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCostCategoryDefinitionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateCostCategoryDefinitionRequest), arg0)
+}
+
+// CreateCostCategoryDefinitionWithContext mocks base method
+func (m *MockCostExplorerAPI) CreateCostCategoryDefinitionWithContext(arg0 context.Context, arg1 *costexplorer.CreateCostCategoryDefinitionInput, arg2 ...request.Option) (*costexplorer.CreateCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCostCategoryDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.CreateCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCostCategoryDefinitionWithContext indicates an expected call of CreateCostCategoryDefinitionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) CreateCostCategoryDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCostCategoryDefinitionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateCostCategoryDefinitionWithContext), varargs...)
+}
+
+// DeleteCostCategoryDefinition mocks base method
+func (m *MockCostExplorerAPI) DeleteCostCategoryDefinition(arg0 *costexplorer.DeleteCostCategoryDefinitionInput) (*costexplorer.DeleteCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCostCategoryDefinition", arg0)
+	ret0, _ := ret[0].(*costexplorer.DeleteCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCostCategoryDefinition indicates an expected call of DeleteCostCategoryDefinition
+func (mr *MockCostExplorerAPIMockRecorder) DeleteCostCategoryDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCostCategoryDefinition", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteCostCategoryDefinition), arg0)
+}
+
+// DeleteCostCategoryDefinitionRequest mocks base method
+func (m *MockCostExplorerAPI) DeleteCostCategoryDefinitionRequest(arg0 *costexplorer.DeleteCostCategoryDefinitionInput) (*request.Request, *costexplorer.DeleteCostCategoryDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCostCategoryDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.DeleteCostCategoryDefinitionOutput)
+	return ret0, ret1
+}
+
+// DeleteCostCategoryDefinitionRequest indicates an expected call of DeleteCostCategoryDefinitionRequest
+func (mr *MockCostExplorerAPIMockRecorder) DeleteCostCategoryDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCostCategoryDefinitionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteCostCategoryDefinitionRequest), arg0)
+}
+
+// DeleteCostCategoryDefinitionWithContext mocks base method
+func (m *MockCostExplorerAPI) DeleteCostCategoryDefinitionWithContext(arg0 context.Context, arg1 *costexplorer.DeleteCostCategoryDefinitionInput, arg2 ...request.Option) (*costexplorer.DeleteCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCostCategoryDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.DeleteCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCostCategoryDefinitionWithContext indicates an expected call of DeleteCostCategoryDefinitionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) DeleteCostCategoryDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCostCategoryDefinitionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteCostCategoryDefinitionWithContext), varargs...)
+}
+
+// DescribeCostCategoryDefinition mocks base method
+func (m *MockCostExplorerAPI) DescribeCostCategoryDefinition(arg0 *costexplorer.DescribeCostCategoryDefinitionInput) (*costexplorer.DescribeCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCostCategoryDefinition", arg0)
+	ret0, _ := ret[0].(*costexplorer.DescribeCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCostCategoryDefinition indicates an expected call of DescribeCostCategoryDefinition
+func (mr *MockCostExplorerAPIMockRecorder) DescribeCostCategoryDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCostCategoryDefinition", reflect.TypeOf((*MockCostExplorerAPI)(nil).DescribeCostCategoryDefinition), arg0)
+}
+
+// DescribeCostCategoryDefinitionRequest mocks base method
+func (m *MockCostExplorerAPI) DescribeCostCategoryDefinitionRequest(arg0 *costexplorer.DescribeCostCategoryDefinitionInput) (*request.Request, *costexplorer.DescribeCostCategoryDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCostCategoryDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.DescribeCostCategoryDefinitionOutput)
+	return ret0, ret1
+}
+
+// DescribeCostCategoryDefinitionRequest indicates an expected call of DescribeCostCategoryDefinitionRequest
+func (mr *MockCostExplorerAPIMockRecorder) DescribeCostCategoryDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCostCategoryDefinitionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).DescribeCostCategoryDefinitionRequest), arg0)
+}
+
+// DescribeCostCategoryDefinitionWithContext mocks base method
+func (m *MockCostExplorerAPI) DescribeCostCategoryDefinitionWithContext(arg0 context.Context, arg1 *costexplorer.DescribeCostCategoryDefinitionInput, arg2 ...request.Option) (*costexplorer.DescribeCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCostCategoryDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.DescribeCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCostCategoryDefinitionWithContext indicates an expected call of DescribeCostCategoryDefinitionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) DescribeCostCategoryDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCostCategoryDefinitionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).DescribeCostCategoryDefinitionWithContext), varargs...)
+}
+
 // GetCostAndUsage mocks base method
 func (m *MockCostExplorerAPI) GetCostAndUsage(arg0 *costexplorer.GetCostAndUsageInput) (*costexplorer.GetCostAndUsageOutput, error) {
 	m.ctrl.T.Helper()
@@ -799,4 +949,104 @@ func (mr *MockCostExplorerAPIMockRecorder) GetUsageForecastWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageForecastWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetUsageForecastWithContext), varargs...)
+}
+
+// ListCostCategoryDefinitions mocks base method
+func (m *MockCostExplorerAPI) ListCostCategoryDefinitions(arg0 *costexplorer.ListCostCategoryDefinitionsInput) (*costexplorer.ListCostCategoryDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCostCategoryDefinitions", arg0)
+	ret0, _ := ret[0].(*costexplorer.ListCostCategoryDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCostCategoryDefinitions indicates an expected call of ListCostCategoryDefinitions
+func (mr *MockCostExplorerAPIMockRecorder) ListCostCategoryDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostCategoryDefinitions", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostCategoryDefinitions), arg0)
+}
+
+// ListCostCategoryDefinitionsRequest mocks base method
+func (m *MockCostExplorerAPI) ListCostCategoryDefinitionsRequest(arg0 *costexplorer.ListCostCategoryDefinitionsInput) (*request.Request, *costexplorer.ListCostCategoryDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCostCategoryDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.ListCostCategoryDefinitionsOutput)
+	return ret0, ret1
+}
+
+// ListCostCategoryDefinitionsRequest indicates an expected call of ListCostCategoryDefinitionsRequest
+func (mr *MockCostExplorerAPIMockRecorder) ListCostCategoryDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostCategoryDefinitionsRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostCategoryDefinitionsRequest), arg0)
+}
+
+// ListCostCategoryDefinitionsWithContext mocks base method
+func (m *MockCostExplorerAPI) ListCostCategoryDefinitionsWithContext(arg0 context.Context, arg1 *costexplorer.ListCostCategoryDefinitionsInput, arg2 ...request.Option) (*costexplorer.ListCostCategoryDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCostCategoryDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.ListCostCategoryDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCostCategoryDefinitionsWithContext indicates an expected call of ListCostCategoryDefinitionsWithContext
+func (mr *MockCostExplorerAPIMockRecorder) ListCostCategoryDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostCategoryDefinitionsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostCategoryDefinitionsWithContext), varargs...)
+}
+
+// UpdateCostCategoryDefinition mocks base method
+func (m *MockCostExplorerAPI) UpdateCostCategoryDefinition(arg0 *costexplorer.UpdateCostCategoryDefinitionInput) (*costexplorer.UpdateCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCostCategoryDefinition", arg0)
+	ret0, _ := ret[0].(*costexplorer.UpdateCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCostCategoryDefinition indicates an expected call of UpdateCostCategoryDefinition
+func (mr *MockCostExplorerAPIMockRecorder) UpdateCostCategoryDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCostCategoryDefinition", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateCostCategoryDefinition), arg0)
+}
+
+// UpdateCostCategoryDefinitionRequest mocks base method
+func (m *MockCostExplorerAPI) UpdateCostCategoryDefinitionRequest(arg0 *costexplorer.UpdateCostCategoryDefinitionInput) (*request.Request, *costexplorer.UpdateCostCategoryDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCostCategoryDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.UpdateCostCategoryDefinitionOutput)
+	return ret0, ret1
+}
+
+// UpdateCostCategoryDefinitionRequest indicates an expected call of UpdateCostCategoryDefinitionRequest
+func (mr *MockCostExplorerAPIMockRecorder) UpdateCostCategoryDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCostCategoryDefinitionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateCostCategoryDefinitionRequest), arg0)
+}
+
+// UpdateCostCategoryDefinitionWithContext mocks base method
+func (m *MockCostExplorerAPI) UpdateCostCategoryDefinitionWithContext(arg0 context.Context, arg1 *costexplorer.UpdateCostCategoryDefinitionInput, arg2 ...request.Option) (*costexplorer.UpdateCostCategoryDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCostCategoryDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.UpdateCostCategoryDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCostCategoryDefinitionWithContext indicates an expected call of UpdateCostCategoryDefinitionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) UpdateCostCategoryDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCostCategoryDefinitionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateCostCategoryDefinitionWithContext), varargs...)
 }

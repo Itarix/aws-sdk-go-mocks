@@ -135,6 +135,56 @@ func (mr *MockApplicationInsightsAPIMockRecorder) CreateComponentWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateComponentWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).CreateComponentWithContext), varargs...)
 }
 
+// CreateLogPattern mocks base method
+func (m *MockApplicationInsightsAPI) CreateLogPattern(arg0 *applicationinsights.CreateLogPatternInput) (*applicationinsights.CreateLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLogPattern", arg0)
+	ret0, _ := ret[0].(*applicationinsights.CreateLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLogPattern indicates an expected call of CreateLogPattern
+func (mr *MockApplicationInsightsAPIMockRecorder) CreateLogPattern(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogPattern", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).CreateLogPattern), arg0)
+}
+
+// CreateLogPatternRequest mocks base method
+func (m *MockApplicationInsightsAPI) CreateLogPatternRequest(arg0 *applicationinsights.CreateLogPatternInput) (*request.Request, *applicationinsights.CreateLogPatternOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLogPatternRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.CreateLogPatternOutput)
+	return ret0, ret1
+}
+
+// CreateLogPatternRequest indicates an expected call of CreateLogPatternRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) CreateLogPatternRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogPatternRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).CreateLogPatternRequest), arg0)
+}
+
+// CreateLogPatternWithContext mocks base method
+func (m *MockApplicationInsightsAPI) CreateLogPatternWithContext(arg0 context.Context, arg1 *applicationinsights.CreateLogPatternInput, arg2 ...request.Option) (*applicationinsights.CreateLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLogPatternWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.CreateLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLogPatternWithContext indicates an expected call of CreateLogPatternWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) CreateLogPatternWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogPatternWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).CreateLogPatternWithContext), varargs...)
+}
+
 // DeleteApplication mocks base method
 func (m *MockApplicationInsightsAPI) DeleteApplication(arg0 *applicationinsights.DeleteApplicationInput) (*applicationinsights.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockApplicationInsightsAPIMockRecorder) DeleteComponentWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteComponentWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DeleteComponentWithContext), varargs...)
+}
+
+// DeleteLogPattern mocks base method
+func (m *MockApplicationInsightsAPI) DeleteLogPattern(arg0 *applicationinsights.DeleteLogPatternInput) (*applicationinsights.DeleteLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLogPattern", arg0)
+	ret0, _ := ret[0].(*applicationinsights.DeleteLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLogPattern indicates an expected call of DeleteLogPattern
+func (mr *MockApplicationInsightsAPIMockRecorder) DeleteLogPattern(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLogPattern", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DeleteLogPattern), arg0)
+}
+
+// DeleteLogPatternRequest mocks base method
+func (m *MockApplicationInsightsAPI) DeleteLogPatternRequest(arg0 *applicationinsights.DeleteLogPatternInput) (*request.Request, *applicationinsights.DeleteLogPatternOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLogPatternRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.DeleteLogPatternOutput)
+	return ret0, ret1
+}
+
+// DeleteLogPatternRequest indicates an expected call of DeleteLogPatternRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) DeleteLogPatternRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLogPatternRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DeleteLogPatternRequest), arg0)
+}
+
+// DeleteLogPatternWithContext mocks base method
+func (m *MockApplicationInsightsAPI) DeleteLogPatternWithContext(arg0 context.Context, arg1 *applicationinsights.DeleteLogPatternInput, arg2 ...request.Option) (*applicationinsights.DeleteLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLogPatternWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.DeleteLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLogPatternWithContext indicates an expected call of DeleteLogPatternWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) DeleteLogPatternWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLogPatternWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DeleteLogPatternWithContext), varargs...)
 }
 
 // DescribeApplication mocks base method
@@ -433,6 +533,56 @@ func (mr *MockApplicationInsightsAPIMockRecorder) DescribeComponentWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComponentWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeComponentWithContext), varargs...)
+}
+
+// DescribeLogPattern mocks base method
+func (m *MockApplicationInsightsAPI) DescribeLogPattern(arg0 *applicationinsights.DescribeLogPatternInput) (*applicationinsights.DescribeLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLogPattern", arg0)
+	ret0, _ := ret[0].(*applicationinsights.DescribeLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLogPattern indicates an expected call of DescribeLogPattern
+func (mr *MockApplicationInsightsAPIMockRecorder) DescribeLogPattern(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLogPattern", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeLogPattern), arg0)
+}
+
+// DescribeLogPatternRequest mocks base method
+func (m *MockApplicationInsightsAPI) DescribeLogPatternRequest(arg0 *applicationinsights.DescribeLogPatternInput) (*request.Request, *applicationinsights.DescribeLogPatternOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLogPatternRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.DescribeLogPatternOutput)
+	return ret0, ret1
+}
+
+// DescribeLogPatternRequest indicates an expected call of DescribeLogPatternRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) DescribeLogPatternRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLogPatternRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeLogPatternRequest), arg0)
+}
+
+// DescribeLogPatternWithContext mocks base method
+func (m *MockApplicationInsightsAPI) DescribeLogPatternWithContext(arg0 context.Context, arg1 *applicationinsights.DescribeLogPatternInput, arg2 ...request.Option) (*applicationinsights.DescribeLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLogPatternWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.DescribeLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLogPatternWithContext indicates an expected call of DescribeLogPatternWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) DescribeLogPatternWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLogPatternWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeLogPatternWithContext), varargs...)
 }
 
 // DescribeObservation mocks base method
@@ -751,6 +901,172 @@ func (mr *MockApplicationInsightsAPIMockRecorder) ListComponentsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListComponentsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListComponentsWithContext), varargs...)
 }
 
+// ListLogPatternSets mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternSets(arg0 *applicationinsights.ListLogPatternSetsInput) (*applicationinsights.ListLogPatternSetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogPatternSets", arg0)
+	ret0, _ := ret[0].(*applicationinsights.ListLogPatternSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLogPatternSets indicates an expected call of ListLogPatternSets
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternSets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternSets", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternSets), arg0)
+}
+
+// ListLogPatternSetsPages mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternSetsPages(arg0 *applicationinsights.ListLogPatternSetsInput, arg1 func(*applicationinsights.ListLogPatternSetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogPatternSetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLogPatternSetsPages indicates an expected call of ListLogPatternSetsPages
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternSetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternSetsPages", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternSetsPages), arg0, arg1)
+}
+
+// ListLogPatternSetsPagesWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternSetsPagesWithContext(arg0 context.Context, arg1 *applicationinsights.ListLogPatternSetsInput, arg2 func(*applicationinsights.ListLogPatternSetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLogPatternSetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLogPatternSetsPagesWithContext indicates an expected call of ListLogPatternSetsPagesWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternSetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternSetsPagesWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternSetsPagesWithContext), varargs...)
+}
+
+// ListLogPatternSetsRequest mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternSetsRequest(arg0 *applicationinsights.ListLogPatternSetsInput) (*request.Request, *applicationinsights.ListLogPatternSetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogPatternSetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.ListLogPatternSetsOutput)
+	return ret0, ret1
+}
+
+// ListLogPatternSetsRequest indicates an expected call of ListLogPatternSetsRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternSetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternSetsRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternSetsRequest), arg0)
+}
+
+// ListLogPatternSetsWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternSetsWithContext(arg0 context.Context, arg1 *applicationinsights.ListLogPatternSetsInput, arg2 ...request.Option) (*applicationinsights.ListLogPatternSetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLogPatternSetsWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.ListLogPatternSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLogPatternSetsWithContext indicates an expected call of ListLogPatternSetsWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternSetsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternSetsWithContext), varargs...)
+}
+
+// ListLogPatterns mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatterns(arg0 *applicationinsights.ListLogPatternsInput) (*applicationinsights.ListLogPatternsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogPatterns", arg0)
+	ret0, _ := ret[0].(*applicationinsights.ListLogPatternsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLogPatterns indicates an expected call of ListLogPatterns
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatterns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatterns", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatterns), arg0)
+}
+
+// ListLogPatternsPages mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternsPages(arg0 *applicationinsights.ListLogPatternsInput, arg1 func(*applicationinsights.ListLogPatternsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogPatternsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLogPatternsPages indicates an expected call of ListLogPatternsPages
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternsPages", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternsPages), arg0, arg1)
+}
+
+// ListLogPatternsPagesWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternsPagesWithContext(arg0 context.Context, arg1 *applicationinsights.ListLogPatternsInput, arg2 func(*applicationinsights.ListLogPatternsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLogPatternsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLogPatternsPagesWithContext indicates an expected call of ListLogPatternsPagesWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternsPagesWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternsPagesWithContext), varargs...)
+}
+
+// ListLogPatternsRequest mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternsRequest(arg0 *applicationinsights.ListLogPatternsInput) (*request.Request, *applicationinsights.ListLogPatternsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogPatternsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.ListLogPatternsOutput)
+	return ret0, ret1
+}
+
+// ListLogPatternsRequest indicates an expected call of ListLogPatternsRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternsRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternsRequest), arg0)
+}
+
+// ListLogPatternsWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListLogPatternsWithContext(arg0 context.Context, arg1 *applicationinsights.ListLogPatternsInput, arg2 ...request.Option) (*applicationinsights.ListLogPatternsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLogPatternsWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.ListLogPatternsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLogPatternsWithContext indicates an expected call of ListLogPatternsWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListLogPatternsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogPatternsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListLogPatternsWithContext), varargs...)
+}
+
 // ListProblems mocks base method
 func (m *MockApplicationInsightsAPI) ListProblems(arg0 *applicationinsights.ListProblemsInput) (*applicationinsights.ListProblemsOutput, error) {
 	m.ctrl.T.Helper()
@@ -832,6 +1148,156 @@ func (mr *MockApplicationInsightsAPIMockRecorder) ListProblemsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProblemsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListProblemsWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockApplicationInsightsAPI) ListTagsForResource(arg0 *applicationinsights.ListTagsForResourceInput) (*applicationinsights.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*applicationinsights.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockApplicationInsightsAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockApplicationInsightsAPI) ListTagsForResourceRequest(arg0 *applicationinsights.ListTagsForResourceInput) (*request.Request, *applicationinsights.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *applicationinsights.ListTagsForResourceInput, arg2 ...request.Option) (*applicationinsights.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockApplicationInsightsAPI) TagResource(arg0 *applicationinsights.TagResourceInput) (*applicationinsights.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*applicationinsights.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockApplicationInsightsAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockApplicationInsightsAPI) TagResourceRequest(arg0 *applicationinsights.TagResourceInput) (*request.Request, *applicationinsights.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockApplicationInsightsAPI) TagResourceWithContext(arg0 context.Context, arg1 *applicationinsights.TagResourceInput, arg2 ...request.Option) (*applicationinsights.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockApplicationInsightsAPI) UntagResource(arg0 *applicationinsights.UntagResourceInput) (*applicationinsights.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*applicationinsights.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockApplicationInsightsAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockApplicationInsightsAPI) UntagResourceRequest(arg0 *applicationinsights.UntagResourceInput) (*request.Request, *applicationinsights.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockApplicationInsightsAPI) UntagResourceWithContext(arg0 context.Context, arg1 *applicationinsights.UntagResourceInput, arg2 ...request.Option) (*applicationinsights.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateApplication mocks base method
@@ -982,4 +1448,54 @@ func (mr *MockApplicationInsightsAPIMockRecorder) UpdateComponentWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateComponentWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateComponentWithContext), varargs...)
+}
+
+// UpdateLogPattern mocks base method
+func (m *MockApplicationInsightsAPI) UpdateLogPattern(arg0 *applicationinsights.UpdateLogPatternInput) (*applicationinsights.UpdateLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLogPattern", arg0)
+	ret0, _ := ret[0].(*applicationinsights.UpdateLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLogPattern indicates an expected call of UpdateLogPattern
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateLogPattern(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLogPattern", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateLogPattern), arg0)
+}
+
+// UpdateLogPatternRequest mocks base method
+func (m *MockApplicationInsightsAPI) UpdateLogPatternRequest(arg0 *applicationinsights.UpdateLogPatternInput) (*request.Request, *applicationinsights.UpdateLogPatternOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLogPatternRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.UpdateLogPatternOutput)
+	return ret0, ret1
+}
+
+// UpdateLogPatternRequest indicates an expected call of UpdateLogPatternRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateLogPatternRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLogPatternRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateLogPatternRequest), arg0)
+}
+
+// UpdateLogPatternWithContext mocks base method
+func (m *MockApplicationInsightsAPI) UpdateLogPatternWithContext(arg0 context.Context, arg1 *applicationinsights.UpdateLogPatternInput, arg2 ...request.Option) (*applicationinsights.UpdateLogPatternOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLogPatternWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.UpdateLogPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLogPatternWithContext indicates an expected call of UpdateLogPatternWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateLogPatternWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLogPatternWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateLogPatternWithContext), varargs...)
 }

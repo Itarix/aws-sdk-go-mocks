@@ -785,6 +785,56 @@ func (mr *MockRedshiftAPIMockRecorder) CreateHsmConfigurationWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHsmConfigurationWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateHsmConfigurationWithContext), varargs...)
 }
 
+// CreateScheduledAction mocks base method
+func (m *MockRedshiftAPI) CreateScheduledAction(arg0 *redshift.CreateScheduledActionInput) (*redshift.CreateScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateScheduledAction", arg0)
+	ret0, _ := ret[0].(*redshift.CreateScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateScheduledAction indicates an expected call of CreateScheduledAction
+func (mr *MockRedshiftAPIMockRecorder) CreateScheduledAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledAction", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateScheduledAction), arg0)
+}
+
+// CreateScheduledActionRequest mocks base method
+func (m *MockRedshiftAPI) CreateScheduledActionRequest(arg0 *redshift.CreateScheduledActionInput) (*request.Request, *redshift.CreateScheduledActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateScheduledActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.CreateScheduledActionOutput)
+	return ret0, ret1
+}
+
+// CreateScheduledActionRequest indicates an expected call of CreateScheduledActionRequest
+func (mr *MockRedshiftAPIMockRecorder) CreateScheduledActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledActionRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateScheduledActionRequest), arg0)
+}
+
+// CreateScheduledActionWithContext mocks base method
+func (m *MockRedshiftAPI) CreateScheduledActionWithContext(arg0 context.Context, arg1 *redshift.CreateScheduledActionInput, arg2 ...request.Option) (*redshift.CreateScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateScheduledActionWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.CreateScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateScheduledActionWithContext indicates an expected call of CreateScheduledActionWithContext
+func (mr *MockRedshiftAPIMockRecorder) CreateScheduledActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledActionWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateScheduledActionWithContext), varargs...)
+}
+
 // CreateSnapshotCopyGrant mocks base method
 func (m *MockRedshiftAPI) CreateSnapshotCopyGrant(arg0 *redshift.CreateSnapshotCopyGrantInput) (*redshift.CreateSnapshotCopyGrantOutput, error) {
 	m.ctrl.T.Helper()
@@ -1333,6 +1383,56 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteHsmConfigurationWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHsmConfigurationWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteHsmConfigurationWithContext), varargs...)
+}
+
+// DeleteScheduledAction mocks base method
+func (m *MockRedshiftAPI) DeleteScheduledAction(arg0 *redshift.DeleteScheduledActionInput) (*redshift.DeleteScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteScheduledAction", arg0)
+	ret0, _ := ret[0].(*redshift.DeleteScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteScheduledAction indicates an expected call of DeleteScheduledAction
+func (mr *MockRedshiftAPIMockRecorder) DeleteScheduledAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledAction", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteScheduledAction), arg0)
+}
+
+// DeleteScheduledActionRequest mocks base method
+func (m *MockRedshiftAPI) DeleteScheduledActionRequest(arg0 *redshift.DeleteScheduledActionInput) (*request.Request, *redshift.DeleteScheduledActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteScheduledActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DeleteScheduledActionOutput)
+	return ret0, ret1
+}
+
+// DeleteScheduledActionRequest indicates an expected call of DeleteScheduledActionRequest
+func (mr *MockRedshiftAPIMockRecorder) DeleteScheduledActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledActionRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteScheduledActionRequest), arg0)
+}
+
+// DeleteScheduledActionWithContext mocks base method
+func (m *MockRedshiftAPI) DeleteScheduledActionWithContext(arg0 context.Context, arg1 *redshift.DeleteScheduledActionInput, arg2 ...request.Option) (*redshift.DeleteScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteScheduledActionWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DeleteScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteScheduledActionWithContext indicates an expected call of DeleteScheduledActionWithContext
+func (mr *MockRedshiftAPIMockRecorder) DeleteScheduledActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledActionWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteScheduledActionWithContext), varargs...)
 }
 
 // DeleteSnapshotCopyGrant mocks base method
@@ -3113,6 +3213,89 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeResizeWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResizeWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeResizeWithContext), varargs...)
 }
 
+// DescribeScheduledActions mocks base method
+func (m *MockRedshiftAPI) DescribeScheduledActions(arg0 *redshift.DescribeScheduledActionsInput) (*redshift.DescribeScheduledActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledActions", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeScheduledActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduledActions indicates an expected call of DescribeScheduledActions
+func (mr *MockRedshiftAPIMockRecorder) DescribeScheduledActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActions", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeScheduledActions), arg0)
+}
+
+// DescribeScheduledActionsPages mocks base method
+func (m *MockRedshiftAPI) DescribeScheduledActionsPages(arg0 *redshift.DescribeScheduledActionsInput, arg1 func(*redshift.DescribeScheduledActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeScheduledActionsPages indicates an expected call of DescribeScheduledActionsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeScheduledActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActionsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeScheduledActionsPages), arg0, arg1)
+}
+
+// DescribeScheduledActionsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeScheduledActionsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeScheduledActionsInput, arg2 func(*redshift.DescribeScheduledActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScheduledActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeScheduledActionsPagesWithContext indicates an expected call of DescribeScheduledActionsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeScheduledActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActionsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeScheduledActionsPagesWithContext), varargs...)
+}
+
+// DescribeScheduledActionsRequest mocks base method
+func (m *MockRedshiftAPI) DescribeScheduledActionsRequest(arg0 *redshift.DescribeScheduledActionsInput) (*request.Request, *redshift.DescribeScheduledActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeScheduledActionsOutput)
+	return ret0, ret1
+}
+
+// DescribeScheduledActionsRequest indicates an expected call of DescribeScheduledActionsRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeScheduledActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActionsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeScheduledActionsRequest), arg0)
+}
+
+// DescribeScheduledActionsWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeScheduledActionsWithContext(arg0 context.Context, arg1 *redshift.DescribeScheduledActionsInput, arg2 ...request.Option) (*redshift.DescribeScheduledActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScheduledActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeScheduledActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduledActionsWithContext indicates an expected call of DescribeScheduledActionsWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeScheduledActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActionsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeScheduledActionsWithContext), varargs...)
+}
+
 // DescribeSnapshotCopyGrants mocks base method
 func (m *MockRedshiftAPI) DescribeSnapshotCopyGrants(arg0 *redshift.DescribeSnapshotCopyGrantsInput) (*redshift.DescribeSnapshotCopyGrantsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4111,6 +4294,56 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyEventSubscriptionWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyEventSubscriptionWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyEventSubscriptionWithContext), varargs...)
+}
+
+// ModifyScheduledAction mocks base method
+func (m *MockRedshiftAPI) ModifyScheduledAction(arg0 *redshift.ModifyScheduledActionInput) (*redshift.ModifyScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyScheduledAction", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyScheduledAction indicates an expected call of ModifyScheduledAction
+func (mr *MockRedshiftAPIMockRecorder) ModifyScheduledAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyScheduledAction", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyScheduledAction), arg0)
+}
+
+// ModifyScheduledActionRequest mocks base method
+func (m *MockRedshiftAPI) ModifyScheduledActionRequest(arg0 *redshift.ModifyScheduledActionInput) (*request.Request, *redshift.ModifyScheduledActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyScheduledActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyScheduledActionOutput)
+	return ret0, ret1
+}
+
+// ModifyScheduledActionRequest indicates an expected call of ModifyScheduledActionRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyScheduledActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyScheduledActionRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyScheduledActionRequest), arg0)
+}
+
+// ModifyScheduledActionWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyScheduledActionWithContext(arg0 context.Context, arg1 *redshift.ModifyScheduledActionInput, arg2 ...request.Option) (*redshift.ModifyScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyScheduledActionWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyScheduledActionWithContext indicates an expected call of ModifyScheduledActionWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyScheduledActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyScheduledActionWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyScheduledActionWithContext), varargs...)
 }
 
 // ModifySnapshotCopyRetentionPeriod mocks base method

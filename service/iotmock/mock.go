@@ -935,6 +935,56 @@ func (mr *MockIoTAPIMockRecorder) CreateCertificateFromCsrWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCertificateFromCsrWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateCertificateFromCsrWithContext), varargs...)
 }
 
+// CreateDomainConfiguration mocks base method
+func (m *MockIoTAPI) CreateDomainConfiguration(arg0 *iot.CreateDomainConfigurationInput) (*iot.CreateDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDomainConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.CreateDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDomainConfiguration indicates an expected call of CreateDomainConfiguration
+func (mr *MockIoTAPIMockRecorder) CreateDomainConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).CreateDomainConfiguration), arg0)
+}
+
+// CreateDomainConfigurationRequest mocks base method
+func (m *MockIoTAPI) CreateDomainConfigurationRequest(arg0 *iot.CreateDomainConfigurationInput) (*request.Request, *iot.CreateDomainConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDomainConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateDomainConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateDomainConfigurationRequest indicates an expected call of CreateDomainConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) CreateDomainConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateDomainConfigurationRequest), arg0)
+}
+
+// CreateDomainConfigurationWithContext mocks base method
+func (m *MockIoTAPI) CreateDomainConfigurationWithContext(arg0 context.Context, arg1 *iot.CreateDomainConfigurationInput, arg2 ...request.Option) (*iot.CreateDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDomainConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDomainConfigurationWithContext indicates an expected call of CreateDomainConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) CreateDomainConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateDomainConfigurationWithContext), varargs...)
+}
+
 // CreateDynamicThingGroup mocks base method
 func (m *MockIoTAPI) CreateDynamicThingGroup(arg0 *iot.CreateDynamicThingGroupInput) (*iot.CreateDynamicThingGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1283,6 +1333,156 @@ func (mr *MockIoTAPIMockRecorder) CreatePolicyWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePolicyWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreatePolicyWithContext), varargs...)
+}
+
+// CreateProvisioningClaim mocks base method
+func (m *MockIoTAPI) CreateProvisioningClaim(arg0 *iot.CreateProvisioningClaimInput) (*iot.CreateProvisioningClaimOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisioningClaim", arg0)
+	ret0, _ := ret[0].(*iot.CreateProvisioningClaimOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisioningClaim indicates an expected call of CreateProvisioningClaim
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningClaim(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningClaim", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningClaim), arg0)
+}
+
+// CreateProvisioningClaimRequest mocks base method
+func (m *MockIoTAPI) CreateProvisioningClaimRequest(arg0 *iot.CreateProvisioningClaimInput) (*request.Request, *iot.CreateProvisioningClaimOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisioningClaimRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateProvisioningClaimOutput)
+	return ret0, ret1
+}
+
+// CreateProvisioningClaimRequest indicates an expected call of CreateProvisioningClaimRequest
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningClaimRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningClaimRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningClaimRequest), arg0)
+}
+
+// CreateProvisioningClaimWithContext mocks base method
+func (m *MockIoTAPI) CreateProvisioningClaimWithContext(arg0 context.Context, arg1 *iot.CreateProvisioningClaimInput, arg2 ...request.Option) (*iot.CreateProvisioningClaimOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProvisioningClaimWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateProvisioningClaimOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisioningClaimWithContext indicates an expected call of CreateProvisioningClaimWithContext
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningClaimWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningClaimWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningClaimWithContext), varargs...)
+}
+
+// CreateProvisioningTemplate mocks base method
+func (m *MockIoTAPI) CreateProvisioningTemplate(arg0 *iot.CreateProvisioningTemplateInput) (*iot.CreateProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisioningTemplate", arg0)
+	ret0, _ := ret[0].(*iot.CreateProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisioningTemplate indicates an expected call of CreateProvisioningTemplate
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningTemplate", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningTemplate), arg0)
+}
+
+// CreateProvisioningTemplateRequest mocks base method
+func (m *MockIoTAPI) CreateProvisioningTemplateRequest(arg0 *iot.CreateProvisioningTemplateInput) (*request.Request, *iot.CreateProvisioningTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisioningTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateProvisioningTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateProvisioningTemplateRequest indicates an expected call of CreateProvisioningTemplateRequest
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningTemplateRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningTemplateRequest), arg0)
+}
+
+// CreateProvisioningTemplateVersion mocks base method
+func (m *MockIoTAPI) CreateProvisioningTemplateVersion(arg0 *iot.CreateProvisioningTemplateVersionInput) (*iot.CreateProvisioningTemplateVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisioningTemplateVersion", arg0)
+	ret0, _ := ret[0].(*iot.CreateProvisioningTemplateVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisioningTemplateVersion indicates an expected call of CreateProvisioningTemplateVersion
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningTemplateVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningTemplateVersion", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningTemplateVersion), arg0)
+}
+
+// CreateProvisioningTemplateVersionRequest mocks base method
+func (m *MockIoTAPI) CreateProvisioningTemplateVersionRequest(arg0 *iot.CreateProvisioningTemplateVersionInput) (*request.Request, *iot.CreateProvisioningTemplateVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisioningTemplateVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateProvisioningTemplateVersionOutput)
+	return ret0, ret1
+}
+
+// CreateProvisioningTemplateVersionRequest indicates an expected call of CreateProvisioningTemplateVersionRequest
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningTemplateVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningTemplateVersionRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningTemplateVersionRequest), arg0)
+}
+
+// CreateProvisioningTemplateVersionWithContext mocks base method
+func (m *MockIoTAPI) CreateProvisioningTemplateVersionWithContext(arg0 context.Context, arg1 *iot.CreateProvisioningTemplateVersionInput, arg2 ...request.Option) (*iot.CreateProvisioningTemplateVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProvisioningTemplateVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateProvisioningTemplateVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisioningTemplateVersionWithContext indicates an expected call of CreateProvisioningTemplateVersionWithContext
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningTemplateVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningTemplateVersionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningTemplateVersionWithContext), varargs...)
+}
+
+// CreateProvisioningTemplateWithContext mocks base method
+func (m *MockIoTAPI) CreateProvisioningTemplateWithContext(arg0 context.Context, arg1 *iot.CreateProvisioningTemplateInput, arg2 ...request.Option) (*iot.CreateProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProvisioningTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisioningTemplateWithContext indicates an expected call of CreateProvisioningTemplateWithContext
+func (mr *MockIoTAPIMockRecorder) CreateProvisioningTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisioningTemplateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateProvisioningTemplateWithContext), varargs...)
 }
 
 // CreateRoleAlias mocks base method
@@ -1985,6 +2185,56 @@ func (mr *MockIoTAPIMockRecorder) DeleteCertificateWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCertificateWithContext), varargs...)
 }
 
+// DeleteDomainConfiguration mocks base method
+func (m *MockIoTAPI) DeleteDomainConfiguration(arg0 *iot.DeleteDomainConfigurationInput) (*iot.DeleteDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDomainConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.DeleteDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDomainConfiguration indicates an expected call of DeleteDomainConfiguration
+func (mr *MockIoTAPIMockRecorder) DeleteDomainConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDomainConfiguration), arg0)
+}
+
+// DeleteDomainConfigurationRequest mocks base method
+func (m *MockIoTAPI) DeleteDomainConfigurationRequest(arg0 *iot.DeleteDomainConfigurationInput) (*request.Request, *iot.DeleteDomainConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDomainConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteDomainConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteDomainConfigurationRequest indicates an expected call of DeleteDomainConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) DeleteDomainConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDomainConfigurationRequest), arg0)
+}
+
+// DeleteDomainConfigurationWithContext mocks base method
+func (m *MockIoTAPI) DeleteDomainConfigurationWithContext(arg0 context.Context, arg1 *iot.DeleteDomainConfigurationInput, arg2 ...request.Option) (*iot.DeleteDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDomainConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDomainConfigurationWithContext indicates an expected call of DeleteDomainConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteDomainConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDomainConfigurationWithContext), varargs...)
+}
+
 // DeleteDynamicThingGroup mocks base method
 func (m *MockIoTAPI) DeleteDynamicThingGroup(arg0 *iot.DeleteDynamicThingGroupInput) (*iot.DeleteDynamicThingGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -2333,6 +2583,106 @@ func (mr *MockIoTAPIMockRecorder) DeletePolicyWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeletePolicyWithContext), varargs...)
+}
+
+// DeleteProvisioningTemplate mocks base method
+func (m *MockIoTAPI) DeleteProvisioningTemplate(arg0 *iot.DeleteProvisioningTemplateInput) (*iot.DeleteProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisioningTemplate", arg0)
+	ret0, _ := ret[0].(*iot.DeleteProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisioningTemplate indicates an expected call of DeleteProvisioningTemplate
+func (mr *MockIoTAPIMockRecorder) DeleteProvisioningTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningTemplate", reflect.TypeOf((*MockIoTAPI)(nil).DeleteProvisioningTemplate), arg0)
+}
+
+// DeleteProvisioningTemplateRequest mocks base method
+func (m *MockIoTAPI) DeleteProvisioningTemplateRequest(arg0 *iot.DeleteProvisioningTemplateInput) (*request.Request, *iot.DeleteProvisioningTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisioningTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteProvisioningTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteProvisioningTemplateRequest indicates an expected call of DeleteProvisioningTemplateRequest
+func (mr *MockIoTAPIMockRecorder) DeleteProvisioningTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningTemplateRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteProvisioningTemplateRequest), arg0)
+}
+
+// DeleteProvisioningTemplateVersion mocks base method
+func (m *MockIoTAPI) DeleteProvisioningTemplateVersion(arg0 *iot.DeleteProvisioningTemplateVersionInput) (*iot.DeleteProvisioningTemplateVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisioningTemplateVersion", arg0)
+	ret0, _ := ret[0].(*iot.DeleteProvisioningTemplateVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisioningTemplateVersion indicates an expected call of DeleteProvisioningTemplateVersion
+func (mr *MockIoTAPIMockRecorder) DeleteProvisioningTemplateVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningTemplateVersion", reflect.TypeOf((*MockIoTAPI)(nil).DeleteProvisioningTemplateVersion), arg0)
+}
+
+// DeleteProvisioningTemplateVersionRequest mocks base method
+func (m *MockIoTAPI) DeleteProvisioningTemplateVersionRequest(arg0 *iot.DeleteProvisioningTemplateVersionInput) (*request.Request, *iot.DeleteProvisioningTemplateVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisioningTemplateVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteProvisioningTemplateVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteProvisioningTemplateVersionRequest indicates an expected call of DeleteProvisioningTemplateVersionRequest
+func (mr *MockIoTAPIMockRecorder) DeleteProvisioningTemplateVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningTemplateVersionRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteProvisioningTemplateVersionRequest), arg0)
+}
+
+// DeleteProvisioningTemplateVersionWithContext mocks base method
+func (m *MockIoTAPI) DeleteProvisioningTemplateVersionWithContext(arg0 context.Context, arg1 *iot.DeleteProvisioningTemplateVersionInput, arg2 ...request.Option) (*iot.DeleteProvisioningTemplateVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProvisioningTemplateVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteProvisioningTemplateVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisioningTemplateVersionWithContext indicates an expected call of DeleteProvisioningTemplateVersionWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteProvisioningTemplateVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningTemplateVersionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteProvisioningTemplateVersionWithContext), varargs...)
+}
+
+// DeleteProvisioningTemplateWithContext mocks base method
+func (m *MockIoTAPI) DeleteProvisioningTemplateWithContext(arg0 context.Context, arg1 *iot.DeleteProvisioningTemplateInput, arg2 ...request.Option) (*iot.DeleteProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProvisioningTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisioningTemplateWithContext indicates an expected call of DeleteProvisioningTemplateWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteProvisioningTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisioningTemplateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteProvisioningTemplateWithContext), varargs...)
 }
 
 // DeleteRegistrationCode mocks base method
@@ -3385,6 +3735,56 @@ func (mr *MockIoTAPIMockRecorder) DescribeDefaultAuthorizerWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDefaultAuthorizerWithContext), varargs...)
 }
 
+// DescribeDomainConfiguration mocks base method
+func (m *MockIoTAPI) DescribeDomainConfiguration(arg0 *iot.DescribeDomainConfigurationInput) (*iot.DescribeDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.DescribeDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainConfiguration indicates an expected call of DescribeDomainConfiguration
+func (mr *MockIoTAPIMockRecorder) DescribeDomainConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDomainConfiguration), arg0)
+}
+
+// DescribeDomainConfigurationRequest mocks base method
+func (m *MockIoTAPI) DescribeDomainConfigurationRequest(arg0 *iot.DescribeDomainConfigurationInput) (*request.Request, *iot.DescribeDomainConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeDomainConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeDomainConfigurationRequest indicates an expected call of DescribeDomainConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) DescribeDomainConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDomainConfigurationRequest), arg0)
+}
+
+// DescribeDomainConfigurationWithContext mocks base method
+func (m *MockIoTAPI) DescribeDomainConfigurationWithContext(arg0 context.Context, arg1 *iot.DescribeDomainConfigurationInput, arg2 ...request.Option) (*iot.DescribeDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDomainConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainConfigurationWithContext indicates an expected call of DescribeDomainConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeDomainConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDomainConfigurationWithContext), varargs...)
+}
+
 // DescribeEndpoint mocks base method
 func (m *MockIoTAPI) DescribeEndpoint(arg0 *iot.DescribeEndpointInput) (*iot.DescribeEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -3683,6 +4083,106 @@ func (mr *MockIoTAPIMockRecorder) DescribeMitigationActionWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMitigationActionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeMitigationActionWithContext), varargs...)
+}
+
+// DescribeProvisioningTemplate mocks base method
+func (m *MockIoTAPI) DescribeProvisioningTemplate(arg0 *iot.DescribeProvisioningTemplateInput) (*iot.DescribeProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProvisioningTemplate", arg0)
+	ret0, _ := ret[0].(*iot.DescribeProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProvisioningTemplate indicates an expected call of DescribeProvisioningTemplate
+func (mr *MockIoTAPIMockRecorder) DescribeProvisioningTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisioningTemplate", reflect.TypeOf((*MockIoTAPI)(nil).DescribeProvisioningTemplate), arg0)
+}
+
+// DescribeProvisioningTemplateRequest mocks base method
+func (m *MockIoTAPI) DescribeProvisioningTemplateRequest(arg0 *iot.DescribeProvisioningTemplateInput) (*request.Request, *iot.DescribeProvisioningTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProvisioningTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeProvisioningTemplateOutput)
+	return ret0, ret1
+}
+
+// DescribeProvisioningTemplateRequest indicates an expected call of DescribeProvisioningTemplateRequest
+func (mr *MockIoTAPIMockRecorder) DescribeProvisioningTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisioningTemplateRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeProvisioningTemplateRequest), arg0)
+}
+
+// DescribeProvisioningTemplateVersion mocks base method
+func (m *MockIoTAPI) DescribeProvisioningTemplateVersion(arg0 *iot.DescribeProvisioningTemplateVersionInput) (*iot.DescribeProvisioningTemplateVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProvisioningTemplateVersion", arg0)
+	ret0, _ := ret[0].(*iot.DescribeProvisioningTemplateVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProvisioningTemplateVersion indicates an expected call of DescribeProvisioningTemplateVersion
+func (mr *MockIoTAPIMockRecorder) DescribeProvisioningTemplateVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisioningTemplateVersion", reflect.TypeOf((*MockIoTAPI)(nil).DescribeProvisioningTemplateVersion), arg0)
+}
+
+// DescribeProvisioningTemplateVersionRequest mocks base method
+func (m *MockIoTAPI) DescribeProvisioningTemplateVersionRequest(arg0 *iot.DescribeProvisioningTemplateVersionInput) (*request.Request, *iot.DescribeProvisioningTemplateVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProvisioningTemplateVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeProvisioningTemplateVersionOutput)
+	return ret0, ret1
+}
+
+// DescribeProvisioningTemplateVersionRequest indicates an expected call of DescribeProvisioningTemplateVersionRequest
+func (mr *MockIoTAPIMockRecorder) DescribeProvisioningTemplateVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisioningTemplateVersionRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeProvisioningTemplateVersionRequest), arg0)
+}
+
+// DescribeProvisioningTemplateVersionWithContext mocks base method
+func (m *MockIoTAPI) DescribeProvisioningTemplateVersionWithContext(arg0 context.Context, arg1 *iot.DescribeProvisioningTemplateVersionInput, arg2 ...request.Option) (*iot.DescribeProvisioningTemplateVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProvisioningTemplateVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeProvisioningTemplateVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProvisioningTemplateVersionWithContext indicates an expected call of DescribeProvisioningTemplateVersionWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeProvisioningTemplateVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisioningTemplateVersionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeProvisioningTemplateVersionWithContext), varargs...)
+}
+
+// DescribeProvisioningTemplateWithContext mocks base method
+func (m *MockIoTAPI) DescribeProvisioningTemplateWithContext(arg0 context.Context, arg1 *iot.DescribeProvisioningTemplateInput, arg2 ...request.Option) (*iot.DescribeProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProvisioningTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProvisioningTemplateWithContext indicates an expected call of DescribeProvisioningTemplateWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeProvisioningTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProvisioningTemplateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeProvisioningTemplateWithContext), varargs...)
 }
 
 // DescribeRoleAlias mocks base method
@@ -5635,6 +6135,56 @@ func (mr *MockIoTAPIMockRecorder) ListCertificatesWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListCertificatesWithContext), varargs...)
 }
 
+// ListDomainConfigurations mocks base method
+func (m *MockIoTAPI) ListDomainConfigurations(arg0 *iot.ListDomainConfigurationsInput) (*iot.ListDomainConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainConfigurations", arg0)
+	ret0, _ := ret[0].(*iot.ListDomainConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainConfigurations indicates an expected call of ListDomainConfigurations
+func (mr *MockIoTAPIMockRecorder) ListDomainConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainConfigurations", reflect.TypeOf((*MockIoTAPI)(nil).ListDomainConfigurations), arg0)
+}
+
+// ListDomainConfigurationsRequest mocks base method
+func (m *MockIoTAPI) ListDomainConfigurationsRequest(arg0 *iot.ListDomainConfigurationsInput) (*request.Request, *iot.ListDomainConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListDomainConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListDomainConfigurationsRequest indicates an expected call of ListDomainConfigurationsRequest
+func (mr *MockIoTAPIMockRecorder) ListDomainConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainConfigurationsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListDomainConfigurationsRequest), arg0)
+}
+
+// ListDomainConfigurationsWithContext mocks base method
+func (m *MockIoTAPI) ListDomainConfigurationsWithContext(arg0 context.Context, arg1 *iot.ListDomainConfigurationsInput, arg2 ...request.Option) (*iot.ListDomainConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListDomainConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainConfigurationsWithContext indicates an expected call of ListDomainConfigurationsWithContext
+func (mr *MockIoTAPIMockRecorder) ListDomainConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainConfigurationsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListDomainConfigurationsWithContext), varargs...)
+}
+
 // ListIndices mocks base method
 func (m *MockIoTAPI) ListIndices(arg0 *iot.ListIndicesInput) (*iot.ListIndicesOutput, error) {
 	m.ctrl.T.Helper()
@@ -6233,6 +6783,106 @@ func (mr *MockIoTAPIMockRecorder) ListPrincipalThingsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrincipalThingsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListPrincipalThingsWithContext), varargs...)
+}
+
+// ListProvisioningTemplateVersions mocks base method
+func (m *MockIoTAPI) ListProvisioningTemplateVersions(arg0 *iot.ListProvisioningTemplateVersionsInput) (*iot.ListProvisioningTemplateVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningTemplateVersions", arg0)
+	ret0, _ := ret[0].(*iot.ListProvisioningTemplateVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisioningTemplateVersions indicates an expected call of ListProvisioningTemplateVersions
+func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplateVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplateVersions", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplateVersions), arg0)
+}
+
+// ListProvisioningTemplateVersionsRequest mocks base method
+func (m *MockIoTAPI) ListProvisioningTemplateVersionsRequest(arg0 *iot.ListProvisioningTemplateVersionsInput) (*request.Request, *iot.ListProvisioningTemplateVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningTemplateVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListProvisioningTemplateVersionsOutput)
+	return ret0, ret1
+}
+
+// ListProvisioningTemplateVersionsRequest indicates an expected call of ListProvisioningTemplateVersionsRequest
+func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplateVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplateVersionsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplateVersionsRequest), arg0)
+}
+
+// ListProvisioningTemplateVersionsWithContext mocks base method
+func (m *MockIoTAPI) ListProvisioningTemplateVersionsWithContext(arg0 context.Context, arg1 *iot.ListProvisioningTemplateVersionsInput, arg2 ...request.Option) (*iot.ListProvisioningTemplateVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisioningTemplateVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListProvisioningTemplateVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisioningTemplateVersionsWithContext indicates an expected call of ListProvisioningTemplateVersionsWithContext
+func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplateVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplateVersionsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplateVersionsWithContext), varargs...)
+}
+
+// ListProvisioningTemplates mocks base method
+func (m *MockIoTAPI) ListProvisioningTemplates(arg0 *iot.ListProvisioningTemplatesInput) (*iot.ListProvisioningTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningTemplates", arg0)
+	ret0, _ := ret[0].(*iot.ListProvisioningTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisioningTemplates indicates an expected call of ListProvisioningTemplates
+func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplates", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplates), arg0)
+}
+
+// ListProvisioningTemplatesRequest mocks base method
+func (m *MockIoTAPI) ListProvisioningTemplatesRequest(arg0 *iot.ListProvisioningTemplatesInput) (*request.Request, *iot.ListProvisioningTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisioningTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListProvisioningTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListProvisioningTemplatesRequest indicates an expected call of ListProvisioningTemplatesRequest
+func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplatesRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplatesRequest), arg0)
+}
+
+// ListProvisioningTemplatesWithContext mocks base method
+func (m *MockIoTAPI) ListProvisioningTemplatesWithContext(arg0 context.Context, arg1 *iot.ListProvisioningTemplatesInput, arg2 ...request.Option) (*iot.ListProvisioningTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisioningTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListProvisioningTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisioningTemplatesWithContext indicates an expected call of ListProvisioningTemplatesWithContext
+func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplatesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplatesWithContext), varargs...)
 }
 
 // ListRoleAliases mocks base method
@@ -8635,6 +9285,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateCertificateWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCertificateWithContext), varargs...)
 }
 
+// UpdateDomainConfiguration mocks base method
+func (m *MockIoTAPI) UpdateDomainConfiguration(arg0 *iot.UpdateDomainConfigurationInput) (*iot.UpdateDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDomainConfiguration", arg0)
+	ret0, _ := ret[0].(*iot.UpdateDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDomainConfiguration indicates an expected call of UpdateDomainConfiguration
+func (mr *MockIoTAPIMockRecorder) UpdateDomainConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainConfiguration", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDomainConfiguration), arg0)
+}
+
+// UpdateDomainConfigurationRequest mocks base method
+func (m *MockIoTAPI) UpdateDomainConfigurationRequest(arg0 *iot.UpdateDomainConfigurationInput) (*request.Request, *iot.UpdateDomainConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDomainConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateDomainConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateDomainConfigurationRequest indicates an expected call of UpdateDomainConfigurationRequest
+func (mr *MockIoTAPIMockRecorder) UpdateDomainConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainConfigurationRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDomainConfigurationRequest), arg0)
+}
+
+// UpdateDomainConfigurationWithContext mocks base method
+func (m *MockIoTAPI) UpdateDomainConfigurationWithContext(arg0 context.Context, arg1 *iot.UpdateDomainConfigurationInput, arg2 ...request.Option) (*iot.UpdateDomainConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDomainConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateDomainConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDomainConfigurationWithContext indicates an expected call of UpdateDomainConfigurationWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateDomainConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainConfigurationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDomainConfigurationWithContext), varargs...)
+}
+
 // UpdateDynamicThingGroup mocks base method
 func (m *MockIoTAPI) UpdateDynamicThingGroup(arg0 *iot.UpdateDynamicThingGroupInput) (*iot.UpdateDynamicThingGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -8883,6 +9583,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateMitigationActionWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMitigationActionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateMitigationActionWithContext), varargs...)
+}
+
+// UpdateProvisioningTemplate mocks base method
+func (m *MockIoTAPI) UpdateProvisioningTemplate(arg0 *iot.UpdateProvisioningTemplateInput) (*iot.UpdateProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProvisioningTemplate", arg0)
+	ret0, _ := ret[0].(*iot.UpdateProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProvisioningTemplate indicates an expected call of UpdateProvisioningTemplate
+func (mr *MockIoTAPIMockRecorder) UpdateProvisioningTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisioningTemplate", reflect.TypeOf((*MockIoTAPI)(nil).UpdateProvisioningTemplate), arg0)
+}
+
+// UpdateProvisioningTemplateRequest mocks base method
+func (m *MockIoTAPI) UpdateProvisioningTemplateRequest(arg0 *iot.UpdateProvisioningTemplateInput) (*request.Request, *iot.UpdateProvisioningTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProvisioningTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateProvisioningTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateProvisioningTemplateRequest indicates an expected call of UpdateProvisioningTemplateRequest
+func (mr *MockIoTAPIMockRecorder) UpdateProvisioningTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisioningTemplateRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateProvisioningTemplateRequest), arg0)
+}
+
+// UpdateProvisioningTemplateWithContext mocks base method
+func (m *MockIoTAPI) UpdateProvisioningTemplateWithContext(arg0 context.Context, arg1 *iot.UpdateProvisioningTemplateInput, arg2 ...request.Option) (*iot.UpdateProvisioningTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProvisioningTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateProvisioningTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProvisioningTemplateWithContext indicates an expected call of UpdateProvisioningTemplateWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateProvisioningTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisioningTemplateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateProvisioningTemplateWithContext), varargs...)
 }
 
 // UpdateRoleAlias mocks base method
