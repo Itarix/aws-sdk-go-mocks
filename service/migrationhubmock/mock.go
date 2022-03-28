@@ -485,6 +485,89 @@ func (mr *MockMigrationHubAPIMockRecorder) ImportMigrationTaskWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportMigrationTaskWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ImportMigrationTaskWithContext), varargs...)
 }
 
+// ListApplicationStates mocks base method
+func (m *MockMigrationHubAPI) ListApplicationStates(arg0 *migrationhub.ListApplicationStatesInput) (*migrationhub.ListApplicationStatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationStates", arg0)
+	ret0, _ := ret[0].(*migrationhub.ListApplicationStatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationStates indicates an expected call of ListApplicationStates
+func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStates", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStates), arg0)
+}
+
+// ListApplicationStatesPages mocks base method
+func (m *MockMigrationHubAPI) ListApplicationStatesPages(arg0 *migrationhub.ListApplicationStatesInput, arg1 func(*migrationhub.ListApplicationStatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationStatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationStatesPages indicates an expected call of ListApplicationStatesPages
+func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesPages), arg0, arg1)
+}
+
+// ListApplicationStatesPagesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListApplicationStatesPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListApplicationStatesInput, arg2 func(*migrationhub.ListApplicationStatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationStatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationStatesPagesWithContext indicates an expected call of ListApplicationStatesPagesWithContext
+func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesPagesWithContext), varargs...)
+}
+
+// ListApplicationStatesRequest mocks base method
+func (m *MockMigrationHubAPI) ListApplicationStatesRequest(arg0 *migrationhub.ListApplicationStatesInput) (*request.Request, *migrationhub.ListApplicationStatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationStatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*migrationhub.ListApplicationStatesOutput)
+	return ret0, ret1
+}
+
+// ListApplicationStatesRequest indicates an expected call of ListApplicationStatesRequest
+func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesRequest", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesRequest), arg0)
+}
+
+// ListApplicationStatesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListApplicationStatesWithContext(arg0 context.Context, arg1 *migrationhub.ListApplicationStatesInput, arg2 ...request.Option) (*migrationhub.ListApplicationStatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationStatesWithContext", varargs...)
+	ret0, _ := ret[0].(*migrationhub.ListApplicationStatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationStatesWithContext indicates an expected call of ListApplicationStatesWithContext
+func (mr *MockMigrationHubAPIMockRecorder) ListApplicationStatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationStatesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListApplicationStatesWithContext), varargs...)
+}
+
 // ListCreatedArtifacts mocks base method
 func (m *MockMigrationHubAPI) ListCreatedArtifacts(arg0 *migrationhub.ListCreatedArtifactsInput) (*migrationhub.ListCreatedArtifactsOutput, error) {
 	m.ctrl.T.Helper()
