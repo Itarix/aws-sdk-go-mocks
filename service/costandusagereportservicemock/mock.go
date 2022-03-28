@@ -168,6 +168,56 @@ func (mr *MockCostandUsageReportServiceAPIMockRecorder) DescribeReportDefinition
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportDefinitionsWithContext", reflect.TypeOf((*MockCostandUsageReportServiceAPI)(nil).DescribeReportDefinitionsWithContext), varargs...)
 }
 
+// ModifyReportDefinition mocks base method
+func (m *MockCostandUsageReportServiceAPI) ModifyReportDefinition(arg0 *costandusagereportservice.ModifyReportDefinitionInput) (*costandusagereportservice.ModifyReportDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyReportDefinition", arg0)
+	ret0, _ := ret[0].(*costandusagereportservice.ModifyReportDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyReportDefinition indicates an expected call of ModifyReportDefinition
+func (mr *MockCostandUsageReportServiceAPIMockRecorder) ModifyReportDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReportDefinition", reflect.TypeOf((*MockCostandUsageReportServiceAPI)(nil).ModifyReportDefinition), arg0)
+}
+
+// ModifyReportDefinitionRequest mocks base method
+func (m *MockCostandUsageReportServiceAPI) ModifyReportDefinitionRequest(arg0 *costandusagereportservice.ModifyReportDefinitionInput) (*request.Request, *costandusagereportservice.ModifyReportDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyReportDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costandusagereportservice.ModifyReportDefinitionOutput)
+	return ret0, ret1
+}
+
+// ModifyReportDefinitionRequest indicates an expected call of ModifyReportDefinitionRequest
+func (mr *MockCostandUsageReportServiceAPIMockRecorder) ModifyReportDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReportDefinitionRequest", reflect.TypeOf((*MockCostandUsageReportServiceAPI)(nil).ModifyReportDefinitionRequest), arg0)
+}
+
+// ModifyReportDefinitionWithContext mocks base method
+func (m *MockCostandUsageReportServiceAPI) ModifyReportDefinitionWithContext(arg0 context.Context, arg1 *costandusagereportservice.ModifyReportDefinitionInput, arg2 ...request.Option) (*costandusagereportservice.ModifyReportDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyReportDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*costandusagereportservice.ModifyReportDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyReportDefinitionWithContext indicates an expected call of ModifyReportDefinitionWithContext
+func (mr *MockCostandUsageReportServiceAPIMockRecorder) ModifyReportDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReportDefinitionWithContext", reflect.TypeOf((*MockCostandUsageReportServiceAPI)(nil).ModifyReportDefinitionWithContext), varargs...)
+}
+
 // PutReportDefinition mocks base method
 func (m *MockCostandUsageReportServiceAPI) PutReportDefinition(arg0 *costandusagereportservice.PutReportDefinitionInput) (*costandusagereportservice.PutReportDefinitionOutput, error) {
 	m.ctrl.T.Helper()
