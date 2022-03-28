@@ -585,6 +585,56 @@ func (mr *MockLambdaAPIMockRecorder) DeleteLayerVersionWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLayerVersionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteLayerVersionWithContext), varargs...)
 }
 
+// DeleteProvisionedConcurrencyConfig mocks base method
+func (m *MockLambdaAPI) DeleteProvisionedConcurrencyConfig(arg0 *lambda.DeleteProvisionedConcurrencyConfigInput) (*lambda.DeleteProvisionedConcurrencyConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisionedConcurrencyConfig", arg0)
+	ret0, _ := ret[0].(*lambda.DeleteProvisionedConcurrencyConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisionedConcurrencyConfig indicates an expected call of DeleteProvisionedConcurrencyConfig
+func (mr *MockLambdaAPIMockRecorder) DeleteProvisionedConcurrencyConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisionedConcurrencyConfig", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteProvisionedConcurrencyConfig), arg0)
+}
+
+// DeleteProvisionedConcurrencyConfigRequest mocks base method
+func (m *MockLambdaAPI) DeleteProvisionedConcurrencyConfigRequest(arg0 *lambda.DeleteProvisionedConcurrencyConfigInput) (*request.Request, *lambda.DeleteProvisionedConcurrencyConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisionedConcurrencyConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.DeleteProvisionedConcurrencyConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteProvisionedConcurrencyConfigRequest indicates an expected call of DeleteProvisionedConcurrencyConfigRequest
+func (mr *MockLambdaAPIMockRecorder) DeleteProvisionedConcurrencyConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisionedConcurrencyConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteProvisionedConcurrencyConfigRequest), arg0)
+}
+
+// DeleteProvisionedConcurrencyConfigWithContext mocks base method
+func (m *MockLambdaAPI) DeleteProvisionedConcurrencyConfigWithContext(arg0 context.Context, arg1 *lambda.DeleteProvisionedConcurrencyConfigInput, arg2 ...request.Option) (*lambda.DeleteProvisionedConcurrencyConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProvisionedConcurrencyConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.DeleteProvisionedConcurrencyConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisionedConcurrencyConfigWithContext indicates an expected call of DeleteProvisionedConcurrencyConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) DeleteProvisionedConcurrencyConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisionedConcurrencyConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteProvisionedConcurrencyConfigWithContext), varargs...)
+}
+
 // GetAccountSettings mocks base method
 func (m *MockLambdaAPI) GetAccountSettings(arg0 *lambda.GetAccountSettingsInput) (*lambda.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -748,6 +798,56 @@ func (m *MockLambdaAPI) GetFunction(arg0 *lambda.GetFunctionInput) (*lambda.GetF
 func (mr *MockLambdaAPIMockRecorder) GetFunction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunction", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunction), arg0)
+}
+
+// GetFunctionConcurrency mocks base method
+func (m *MockLambdaAPI) GetFunctionConcurrency(arg0 *lambda.GetFunctionConcurrencyInput) (*lambda.GetFunctionConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFunctionConcurrency", arg0)
+	ret0, _ := ret[0].(*lambda.GetFunctionConcurrencyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFunctionConcurrency indicates an expected call of GetFunctionConcurrency
+func (mr *MockLambdaAPIMockRecorder) GetFunctionConcurrency(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConcurrency", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConcurrency), arg0)
+}
+
+// GetFunctionConcurrencyRequest mocks base method
+func (m *MockLambdaAPI) GetFunctionConcurrencyRequest(arg0 *lambda.GetFunctionConcurrencyInput) (*request.Request, *lambda.GetFunctionConcurrencyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFunctionConcurrencyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetFunctionConcurrencyOutput)
+	return ret0, ret1
+}
+
+// GetFunctionConcurrencyRequest indicates an expected call of GetFunctionConcurrencyRequest
+func (mr *MockLambdaAPIMockRecorder) GetFunctionConcurrencyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConcurrencyRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConcurrencyRequest), arg0)
+}
+
+// GetFunctionConcurrencyWithContext mocks base method
+func (m *MockLambdaAPI) GetFunctionConcurrencyWithContext(arg0 context.Context, arg1 *lambda.GetFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.GetFunctionConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFunctionConcurrencyWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetFunctionConcurrencyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFunctionConcurrencyWithContext indicates an expected call of GetFunctionConcurrencyWithContext
+func (mr *MockLambdaAPIMockRecorder) GetFunctionConcurrencyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConcurrencyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConcurrencyWithContext), varargs...)
 }
 
 // GetFunctionConfiguration mocks base method
@@ -1083,6 +1183,56 @@ func (mr *MockLambdaAPIMockRecorder) GetPolicyWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetPolicyWithContext), varargs...)
+}
+
+// GetProvisionedConcurrencyConfig mocks base method
+func (m *MockLambdaAPI) GetProvisionedConcurrencyConfig(arg0 *lambda.GetProvisionedConcurrencyConfigInput) (*lambda.GetProvisionedConcurrencyConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedConcurrencyConfig", arg0)
+	ret0, _ := ret[0].(*lambda.GetProvisionedConcurrencyConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProvisionedConcurrencyConfig indicates an expected call of GetProvisionedConcurrencyConfig
+func (mr *MockLambdaAPIMockRecorder) GetProvisionedConcurrencyConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedConcurrencyConfig", reflect.TypeOf((*MockLambdaAPI)(nil).GetProvisionedConcurrencyConfig), arg0)
+}
+
+// GetProvisionedConcurrencyConfigRequest mocks base method
+func (m *MockLambdaAPI) GetProvisionedConcurrencyConfigRequest(arg0 *lambda.GetProvisionedConcurrencyConfigInput) (*request.Request, *lambda.GetProvisionedConcurrencyConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedConcurrencyConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetProvisionedConcurrencyConfigOutput)
+	return ret0, ret1
+}
+
+// GetProvisionedConcurrencyConfigRequest indicates an expected call of GetProvisionedConcurrencyConfigRequest
+func (mr *MockLambdaAPIMockRecorder) GetProvisionedConcurrencyConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedConcurrencyConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetProvisionedConcurrencyConfigRequest), arg0)
+}
+
+// GetProvisionedConcurrencyConfigWithContext mocks base method
+func (m *MockLambdaAPI) GetProvisionedConcurrencyConfigWithContext(arg0 context.Context, arg1 *lambda.GetProvisionedConcurrencyConfigInput, arg2 ...request.Option) (*lambda.GetProvisionedConcurrencyConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProvisionedConcurrencyConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetProvisionedConcurrencyConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProvisionedConcurrencyConfigWithContext indicates an expected call of GetProvisionedConcurrencyConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) GetProvisionedConcurrencyConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedConcurrencyConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetProvisionedConcurrencyConfigWithContext), varargs...)
 }
 
 // Invoke mocks base method
@@ -1683,6 +1833,89 @@ func (mr *MockLambdaAPIMockRecorder) ListLayersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLayersWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListLayersWithContext), varargs...)
 }
 
+// ListProvisionedConcurrencyConfigs mocks base method
+func (m *MockLambdaAPI) ListProvisionedConcurrencyConfigs(arg0 *lambda.ListProvisionedConcurrencyConfigsInput) (*lambda.ListProvisionedConcurrencyConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisionedConcurrencyConfigs", arg0)
+	ret0, _ := ret[0].(*lambda.ListProvisionedConcurrencyConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisionedConcurrencyConfigs indicates an expected call of ListProvisionedConcurrencyConfigs
+func (mr *MockLambdaAPIMockRecorder) ListProvisionedConcurrencyConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedConcurrencyConfigs", reflect.TypeOf((*MockLambdaAPI)(nil).ListProvisionedConcurrencyConfigs), arg0)
+}
+
+// ListProvisionedConcurrencyConfigsPages mocks base method
+func (m *MockLambdaAPI) ListProvisionedConcurrencyConfigsPages(arg0 *lambda.ListProvisionedConcurrencyConfigsInput, arg1 func(*lambda.ListProvisionedConcurrencyConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisionedConcurrencyConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProvisionedConcurrencyConfigsPages indicates an expected call of ListProvisionedConcurrencyConfigsPages
+func (mr *MockLambdaAPIMockRecorder) ListProvisionedConcurrencyConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedConcurrencyConfigsPages", reflect.TypeOf((*MockLambdaAPI)(nil).ListProvisionedConcurrencyConfigsPages), arg0, arg1)
+}
+
+// ListProvisionedConcurrencyConfigsPagesWithContext mocks base method
+func (m *MockLambdaAPI) ListProvisionedConcurrencyConfigsPagesWithContext(arg0 context.Context, arg1 *lambda.ListProvisionedConcurrencyConfigsInput, arg2 func(*lambda.ListProvisionedConcurrencyConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisionedConcurrencyConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProvisionedConcurrencyConfigsPagesWithContext indicates an expected call of ListProvisionedConcurrencyConfigsPagesWithContext
+func (mr *MockLambdaAPIMockRecorder) ListProvisionedConcurrencyConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedConcurrencyConfigsPagesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListProvisionedConcurrencyConfigsPagesWithContext), varargs...)
+}
+
+// ListProvisionedConcurrencyConfigsRequest mocks base method
+func (m *MockLambdaAPI) ListProvisionedConcurrencyConfigsRequest(arg0 *lambda.ListProvisionedConcurrencyConfigsInput) (*request.Request, *lambda.ListProvisionedConcurrencyConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisionedConcurrencyConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.ListProvisionedConcurrencyConfigsOutput)
+	return ret0, ret1
+}
+
+// ListProvisionedConcurrencyConfigsRequest indicates an expected call of ListProvisionedConcurrencyConfigsRequest
+func (mr *MockLambdaAPIMockRecorder) ListProvisionedConcurrencyConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedConcurrencyConfigsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListProvisionedConcurrencyConfigsRequest), arg0)
+}
+
+// ListProvisionedConcurrencyConfigsWithContext mocks base method
+func (m *MockLambdaAPI) ListProvisionedConcurrencyConfigsWithContext(arg0 context.Context, arg1 *lambda.ListProvisionedConcurrencyConfigsInput, arg2 ...request.Option) (*lambda.ListProvisionedConcurrencyConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisionedConcurrencyConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.ListProvisionedConcurrencyConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisionedConcurrencyConfigsWithContext indicates an expected call of ListProvisionedConcurrencyConfigsWithContext
+func (mr *MockLambdaAPIMockRecorder) ListProvisionedConcurrencyConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedConcurrencyConfigsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListProvisionedConcurrencyConfigsWithContext), varargs...)
+}
+
 // ListTags mocks base method
 func (m *MockLambdaAPI) ListTags(arg0 *lambda.ListTagsInput) (*lambda.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2014,6 +2247,56 @@ func (mr *MockLambdaAPIMockRecorder) PutFunctionEventInvokeConfigWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionEventInvokeConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionEventInvokeConfigWithContext), varargs...)
+}
+
+// PutProvisionedConcurrencyConfig mocks base method
+func (m *MockLambdaAPI) PutProvisionedConcurrencyConfig(arg0 *lambda.PutProvisionedConcurrencyConfigInput) (*lambda.PutProvisionedConcurrencyConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutProvisionedConcurrencyConfig", arg0)
+	ret0, _ := ret[0].(*lambda.PutProvisionedConcurrencyConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutProvisionedConcurrencyConfig indicates an expected call of PutProvisionedConcurrencyConfig
+func (mr *MockLambdaAPIMockRecorder) PutProvisionedConcurrencyConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProvisionedConcurrencyConfig", reflect.TypeOf((*MockLambdaAPI)(nil).PutProvisionedConcurrencyConfig), arg0)
+}
+
+// PutProvisionedConcurrencyConfigRequest mocks base method
+func (m *MockLambdaAPI) PutProvisionedConcurrencyConfigRequest(arg0 *lambda.PutProvisionedConcurrencyConfigInput) (*request.Request, *lambda.PutProvisionedConcurrencyConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutProvisionedConcurrencyConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.PutProvisionedConcurrencyConfigOutput)
+	return ret0, ret1
+}
+
+// PutProvisionedConcurrencyConfigRequest indicates an expected call of PutProvisionedConcurrencyConfigRequest
+func (mr *MockLambdaAPIMockRecorder) PutProvisionedConcurrencyConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProvisionedConcurrencyConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).PutProvisionedConcurrencyConfigRequest), arg0)
+}
+
+// PutProvisionedConcurrencyConfigWithContext mocks base method
+func (m *MockLambdaAPI) PutProvisionedConcurrencyConfigWithContext(arg0 context.Context, arg1 *lambda.PutProvisionedConcurrencyConfigInput, arg2 ...request.Option) (*lambda.PutProvisionedConcurrencyConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutProvisionedConcurrencyConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.PutProvisionedConcurrencyConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutProvisionedConcurrencyConfigWithContext indicates an expected call of PutProvisionedConcurrencyConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) PutProvisionedConcurrencyConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProvisionedConcurrencyConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutProvisionedConcurrencyConfigWithContext), varargs...)
 }
 
 // RemoveLayerVersionPermission mocks base method

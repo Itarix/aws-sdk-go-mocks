@@ -135,6 +135,106 @@ func (mr *MockRekognitionAPIMockRecorder) CreateCollectionWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCollectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateCollectionWithContext), varargs...)
 }
 
+// CreateProject mocks base method
+func (m *MockRekognitionAPI) CreateProject(arg0 *rekognition.CreateProjectInput) (*rekognition.CreateProjectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProject", arg0)
+	ret0, _ := ret[0].(*rekognition.CreateProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProject indicates an expected call of CreateProject
+func (mr *MockRekognitionAPIMockRecorder) CreateProject(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProject", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateProject), arg0)
+}
+
+// CreateProjectRequest mocks base method
+func (m *MockRekognitionAPI) CreateProjectRequest(arg0 *rekognition.CreateProjectInput) (*request.Request, *rekognition.CreateProjectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProjectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.CreateProjectOutput)
+	return ret0, ret1
+}
+
+// CreateProjectRequest indicates an expected call of CreateProjectRequest
+func (mr *MockRekognitionAPIMockRecorder) CreateProjectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateProjectRequest), arg0)
+}
+
+// CreateProjectVersion mocks base method
+func (m *MockRekognitionAPI) CreateProjectVersion(arg0 *rekognition.CreateProjectVersionInput) (*rekognition.CreateProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProjectVersion", arg0)
+	ret0, _ := ret[0].(*rekognition.CreateProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProjectVersion indicates an expected call of CreateProjectVersion
+func (mr *MockRekognitionAPIMockRecorder) CreateProjectVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectVersion", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateProjectVersion), arg0)
+}
+
+// CreateProjectVersionRequest mocks base method
+func (m *MockRekognitionAPI) CreateProjectVersionRequest(arg0 *rekognition.CreateProjectVersionInput) (*request.Request, *rekognition.CreateProjectVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProjectVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.CreateProjectVersionOutput)
+	return ret0, ret1
+}
+
+// CreateProjectVersionRequest indicates an expected call of CreateProjectVersionRequest
+func (mr *MockRekognitionAPIMockRecorder) CreateProjectVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectVersionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateProjectVersionRequest), arg0)
+}
+
+// CreateProjectVersionWithContext mocks base method
+func (m *MockRekognitionAPI) CreateProjectVersionWithContext(arg0 context.Context, arg1 *rekognition.CreateProjectVersionInput, arg2 ...request.Option) (*rekognition.CreateProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProjectVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.CreateProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProjectVersionWithContext indicates an expected call of CreateProjectVersionWithContext
+func (mr *MockRekognitionAPIMockRecorder) CreateProjectVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectVersionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateProjectVersionWithContext), varargs...)
+}
+
+// CreateProjectWithContext mocks base method
+func (m *MockRekognitionAPI) CreateProjectWithContext(arg0 context.Context, arg1 *rekognition.CreateProjectInput, arg2 ...request.Option) (*rekognition.CreateProjectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProjectWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.CreateProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProjectWithContext indicates an expected call of CreateProjectWithContext
+func (mr *MockRekognitionAPIMockRecorder) CreateProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateProjectWithContext), varargs...)
+}
+
 // CreateStreamProcessor mocks base method
 func (m *MockRekognitionAPI) CreateStreamProcessor(arg0 *rekognition.CreateStreamProcessorInput) (*rekognition.CreateStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
@@ -385,6 +485,172 @@ func (mr *MockRekognitionAPIMockRecorder) DescribeCollectionWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCollectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeCollectionWithContext), varargs...)
 }
 
+// DescribeProjectVersions mocks base method
+func (m *MockRekognitionAPI) DescribeProjectVersions(arg0 *rekognition.DescribeProjectVersionsInput) (*rekognition.DescribeProjectVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProjectVersions", arg0)
+	ret0, _ := ret[0].(*rekognition.DescribeProjectVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProjectVersions indicates an expected call of DescribeProjectVersions
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectVersions", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectVersions), arg0)
+}
+
+// DescribeProjectVersionsPages mocks base method
+func (m *MockRekognitionAPI) DescribeProjectVersionsPages(arg0 *rekognition.DescribeProjectVersionsInput, arg1 func(*rekognition.DescribeProjectVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProjectVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeProjectVersionsPages indicates an expected call of DescribeProjectVersionsPages
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectVersionsPages", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectVersionsPages), arg0, arg1)
+}
+
+// DescribeProjectVersionsPagesWithContext mocks base method
+func (m *MockRekognitionAPI) DescribeProjectVersionsPagesWithContext(arg0 context.Context, arg1 *rekognition.DescribeProjectVersionsInput, arg2 func(*rekognition.DescribeProjectVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProjectVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeProjectVersionsPagesWithContext indicates an expected call of DescribeProjectVersionsPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectVersionsPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectVersionsPagesWithContext), varargs...)
+}
+
+// DescribeProjectVersionsRequest mocks base method
+func (m *MockRekognitionAPI) DescribeProjectVersionsRequest(arg0 *rekognition.DescribeProjectVersionsInput) (*request.Request, *rekognition.DescribeProjectVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProjectVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DescribeProjectVersionsOutput)
+	return ret0, ret1
+}
+
+// DescribeProjectVersionsRequest indicates an expected call of DescribeProjectVersionsRequest
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectVersionsRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectVersionsRequest), arg0)
+}
+
+// DescribeProjectVersionsWithContext mocks base method
+func (m *MockRekognitionAPI) DescribeProjectVersionsWithContext(arg0 context.Context, arg1 *rekognition.DescribeProjectVersionsInput, arg2 ...request.Option) (*rekognition.DescribeProjectVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProjectVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DescribeProjectVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProjectVersionsWithContext indicates an expected call of DescribeProjectVersionsWithContext
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectVersionsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectVersionsWithContext), varargs...)
+}
+
+// DescribeProjects mocks base method
+func (m *MockRekognitionAPI) DescribeProjects(arg0 *rekognition.DescribeProjectsInput) (*rekognition.DescribeProjectsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProjects", arg0)
+	ret0, _ := ret[0].(*rekognition.DescribeProjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProjects indicates an expected call of DescribeProjects
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjects(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjects", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjects), arg0)
+}
+
+// DescribeProjectsPages mocks base method
+func (m *MockRekognitionAPI) DescribeProjectsPages(arg0 *rekognition.DescribeProjectsInput, arg1 func(*rekognition.DescribeProjectsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProjectsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeProjectsPages indicates an expected call of DescribeProjectsPages
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectsPages", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectsPages), arg0, arg1)
+}
+
+// DescribeProjectsPagesWithContext mocks base method
+func (m *MockRekognitionAPI) DescribeProjectsPagesWithContext(arg0 context.Context, arg1 *rekognition.DescribeProjectsInput, arg2 func(*rekognition.DescribeProjectsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProjectsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeProjectsPagesWithContext indicates an expected call of DescribeProjectsPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectsPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectsPagesWithContext), varargs...)
+}
+
+// DescribeProjectsRequest mocks base method
+func (m *MockRekognitionAPI) DescribeProjectsRequest(arg0 *rekognition.DescribeProjectsInput) (*request.Request, *rekognition.DescribeProjectsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProjectsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DescribeProjectsOutput)
+	return ret0, ret1
+}
+
+// DescribeProjectsRequest indicates an expected call of DescribeProjectsRequest
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectsRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectsRequest), arg0)
+}
+
+// DescribeProjectsWithContext mocks base method
+func (m *MockRekognitionAPI) DescribeProjectsWithContext(arg0 context.Context, arg1 *rekognition.DescribeProjectsInput, arg2 ...request.Option) (*rekognition.DescribeProjectsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProjectsWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DescribeProjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProjectsWithContext indicates an expected call of DescribeProjectsWithContext
+func (mr *MockRekognitionAPIMockRecorder) DescribeProjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeProjectsWithContext), varargs...)
+}
+
 // DescribeStreamProcessor mocks base method
 func (m *MockRekognitionAPI) DescribeStreamProcessor(arg0 *rekognition.DescribeStreamProcessorInput) (*rekognition.DescribeStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +699,56 @@ func (mr *MockRekognitionAPIMockRecorder) DescribeStreamProcessorWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeStreamProcessorWithContext), varargs...)
+}
+
+// DetectCustomLabels mocks base method
+func (m *MockRekognitionAPI) DetectCustomLabels(arg0 *rekognition.DetectCustomLabelsInput) (*rekognition.DetectCustomLabelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectCustomLabels", arg0)
+	ret0, _ := ret[0].(*rekognition.DetectCustomLabelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectCustomLabels indicates an expected call of DetectCustomLabels
+func (mr *MockRekognitionAPIMockRecorder) DetectCustomLabels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectCustomLabels", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectCustomLabels), arg0)
+}
+
+// DetectCustomLabelsRequest mocks base method
+func (m *MockRekognitionAPI) DetectCustomLabelsRequest(arg0 *rekognition.DetectCustomLabelsInput) (*request.Request, *rekognition.DetectCustomLabelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectCustomLabelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DetectCustomLabelsOutput)
+	return ret0, ret1
+}
+
+// DetectCustomLabelsRequest indicates an expected call of DetectCustomLabelsRequest
+func (mr *MockRekognitionAPIMockRecorder) DetectCustomLabelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectCustomLabelsRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectCustomLabelsRequest), arg0)
+}
+
+// DetectCustomLabelsWithContext mocks base method
+func (m *MockRekognitionAPI) DetectCustomLabelsWithContext(arg0 context.Context, arg1 *rekognition.DetectCustomLabelsInput, arg2 ...request.Option) (*rekognition.DetectCustomLabelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetectCustomLabelsWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DetectCustomLabelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectCustomLabelsWithContext indicates an expected call of DetectCustomLabelsWithContext
+func (mr *MockRekognitionAPIMockRecorder) DetectCustomLabelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectCustomLabelsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectCustomLabelsWithContext), varargs...)
 }
 
 // DetectFaces mocks base method
@@ -1932,6 +2248,56 @@ func (mr *MockRekognitionAPIMockRecorder) StartPersonTrackingWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPersonTrackingWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartPersonTrackingWithContext), varargs...)
 }
 
+// StartProjectVersion mocks base method
+func (m *MockRekognitionAPI) StartProjectVersion(arg0 *rekognition.StartProjectVersionInput) (*rekognition.StartProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartProjectVersion", arg0)
+	ret0, _ := ret[0].(*rekognition.StartProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartProjectVersion indicates an expected call of StartProjectVersion
+func (mr *MockRekognitionAPIMockRecorder) StartProjectVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartProjectVersion", reflect.TypeOf((*MockRekognitionAPI)(nil).StartProjectVersion), arg0)
+}
+
+// StartProjectVersionRequest mocks base method
+func (m *MockRekognitionAPI) StartProjectVersionRequest(arg0 *rekognition.StartProjectVersionInput) (*request.Request, *rekognition.StartProjectVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartProjectVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.StartProjectVersionOutput)
+	return ret0, ret1
+}
+
+// StartProjectVersionRequest indicates an expected call of StartProjectVersionRequest
+func (mr *MockRekognitionAPIMockRecorder) StartProjectVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartProjectVersionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).StartProjectVersionRequest), arg0)
+}
+
+// StartProjectVersionWithContext mocks base method
+func (m *MockRekognitionAPI) StartProjectVersionWithContext(arg0 context.Context, arg1 *rekognition.StartProjectVersionInput, arg2 ...request.Option) (*rekognition.StartProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartProjectVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.StartProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartProjectVersionWithContext indicates an expected call of StartProjectVersionWithContext
+func (mr *MockRekognitionAPIMockRecorder) StartProjectVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartProjectVersionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartProjectVersionWithContext), varargs...)
+}
+
 // StartStreamProcessor mocks base method
 func (m *MockRekognitionAPI) StartStreamProcessor(arg0 *rekognition.StartStreamProcessorInput) (*rekognition.StartStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
@@ -1982,6 +2348,56 @@ func (mr *MockRekognitionAPIMockRecorder) StartStreamProcessorWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartStreamProcessorWithContext), varargs...)
 }
 
+// StopProjectVersion mocks base method
+func (m *MockRekognitionAPI) StopProjectVersion(arg0 *rekognition.StopProjectVersionInput) (*rekognition.StopProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopProjectVersion", arg0)
+	ret0, _ := ret[0].(*rekognition.StopProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopProjectVersion indicates an expected call of StopProjectVersion
+func (mr *MockRekognitionAPIMockRecorder) StopProjectVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopProjectVersion", reflect.TypeOf((*MockRekognitionAPI)(nil).StopProjectVersion), arg0)
+}
+
+// StopProjectVersionRequest mocks base method
+func (m *MockRekognitionAPI) StopProjectVersionRequest(arg0 *rekognition.StopProjectVersionInput) (*request.Request, *rekognition.StopProjectVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopProjectVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.StopProjectVersionOutput)
+	return ret0, ret1
+}
+
+// StopProjectVersionRequest indicates an expected call of StopProjectVersionRequest
+func (mr *MockRekognitionAPIMockRecorder) StopProjectVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopProjectVersionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).StopProjectVersionRequest), arg0)
+}
+
+// StopProjectVersionWithContext mocks base method
+func (m *MockRekognitionAPI) StopProjectVersionWithContext(arg0 context.Context, arg1 *rekognition.StopProjectVersionInput, arg2 ...request.Option) (*rekognition.StopProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopProjectVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.StopProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopProjectVersionWithContext indicates an expected call of StopProjectVersionWithContext
+func (mr *MockRekognitionAPIMockRecorder) StopProjectVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopProjectVersionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StopProjectVersionWithContext), varargs...)
+}
+
 // StopStreamProcessor mocks base method
 func (m *MockRekognitionAPI) StopStreamProcessor(arg0 *rekognition.StopStreamProcessorInput) (*rekognition.StopStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
@@ -2030,4 +2446,70 @@ func (mr *MockRekognitionAPIMockRecorder) StopStreamProcessorWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StopStreamProcessorWithContext), varargs...)
+}
+
+// WaitUntilProjectVersionRunning mocks base method
+func (m *MockRekognitionAPI) WaitUntilProjectVersionRunning(arg0 *rekognition.DescribeProjectVersionsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilProjectVersionRunning", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilProjectVersionRunning indicates an expected call of WaitUntilProjectVersionRunning
+func (mr *MockRekognitionAPIMockRecorder) WaitUntilProjectVersionRunning(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilProjectVersionRunning", reflect.TypeOf((*MockRekognitionAPI)(nil).WaitUntilProjectVersionRunning), arg0)
+}
+
+// WaitUntilProjectVersionRunningWithContext mocks base method
+func (m *MockRekognitionAPI) WaitUntilProjectVersionRunningWithContext(arg0 context.Context, arg1 *rekognition.DescribeProjectVersionsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilProjectVersionRunningWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilProjectVersionRunningWithContext indicates an expected call of WaitUntilProjectVersionRunningWithContext
+func (mr *MockRekognitionAPIMockRecorder) WaitUntilProjectVersionRunningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilProjectVersionRunningWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).WaitUntilProjectVersionRunningWithContext), varargs...)
+}
+
+// WaitUntilProjectVersionTrainingCompleted mocks base method
+func (m *MockRekognitionAPI) WaitUntilProjectVersionTrainingCompleted(arg0 *rekognition.DescribeProjectVersionsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilProjectVersionTrainingCompleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilProjectVersionTrainingCompleted indicates an expected call of WaitUntilProjectVersionTrainingCompleted
+func (mr *MockRekognitionAPIMockRecorder) WaitUntilProjectVersionTrainingCompleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilProjectVersionTrainingCompleted", reflect.TypeOf((*MockRekognitionAPI)(nil).WaitUntilProjectVersionTrainingCompleted), arg0)
+}
+
+// WaitUntilProjectVersionTrainingCompletedWithContext mocks base method
+func (m *MockRekognitionAPI) WaitUntilProjectVersionTrainingCompletedWithContext(arg0 context.Context, arg1 *rekognition.DescribeProjectVersionsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilProjectVersionTrainingCompletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilProjectVersionTrainingCompletedWithContext indicates an expected call of WaitUntilProjectVersionTrainingCompletedWithContext
+func (mr *MockRekognitionAPIMockRecorder) WaitUntilProjectVersionTrainingCompletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilProjectVersionTrainingCompletedWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).WaitUntilProjectVersionTrainingCompletedWithContext), varargs...)
 }
