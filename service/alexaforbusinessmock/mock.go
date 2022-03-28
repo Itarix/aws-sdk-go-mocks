@@ -1835,6 +1835,56 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetDeviceWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetDeviceWithContext), varargs...)
 }
 
+// GetInvitationConfiguration mocks base method
+func (m *MockAlexaForBusinessAPI) GetInvitationConfiguration(arg0 *alexaforbusiness.GetInvitationConfigurationInput) (*alexaforbusiness.GetInvitationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInvitationConfiguration", arg0)
+	ret0, _ := ret[0].(*alexaforbusiness.GetInvitationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInvitationConfiguration indicates an expected call of GetInvitationConfiguration
+func (mr *MockAlexaForBusinessAPIMockRecorder) GetInvitationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationConfiguration", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetInvitationConfiguration), arg0)
+}
+
+// GetInvitationConfigurationRequest mocks base method
+func (m *MockAlexaForBusinessAPI) GetInvitationConfigurationRequest(arg0 *alexaforbusiness.GetInvitationConfigurationInput) (*request.Request, *alexaforbusiness.GetInvitationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInvitationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*alexaforbusiness.GetInvitationConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetInvitationConfigurationRequest indicates an expected call of GetInvitationConfigurationRequest
+func (mr *MockAlexaForBusinessAPIMockRecorder) GetInvitationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationConfigurationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetInvitationConfigurationRequest), arg0)
+}
+
+// GetInvitationConfigurationWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) GetInvitationConfigurationWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetInvitationConfigurationInput, arg2 ...request.Option) (*alexaforbusiness.GetInvitationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInvitationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*alexaforbusiness.GetInvitationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInvitationConfigurationWithContext indicates an expected call of GetInvitationConfigurationWithContext
+func (mr *MockAlexaForBusinessAPIMockRecorder) GetInvitationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationConfigurationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).GetInvitationConfigurationWithContext), varargs...)
+}
+
 // GetProfile mocks base method
 func (m *MockAlexaForBusinessAPI) GetProfile(arg0 *alexaforbusiness.GetProfileInput) (*alexaforbusiness.GetProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -2747,6 +2797,56 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) PutConferencePreferenceWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConferencePreferenceWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutConferencePreferenceWithContext), varargs...)
+}
+
+// PutInvitationConfiguration mocks base method
+func (m *MockAlexaForBusinessAPI) PutInvitationConfiguration(arg0 *alexaforbusiness.PutInvitationConfigurationInput) (*alexaforbusiness.PutInvitationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutInvitationConfiguration", arg0)
+	ret0, _ := ret[0].(*alexaforbusiness.PutInvitationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutInvitationConfiguration indicates an expected call of PutInvitationConfiguration
+func (mr *MockAlexaForBusinessAPIMockRecorder) PutInvitationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInvitationConfiguration", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutInvitationConfiguration), arg0)
+}
+
+// PutInvitationConfigurationRequest mocks base method
+func (m *MockAlexaForBusinessAPI) PutInvitationConfigurationRequest(arg0 *alexaforbusiness.PutInvitationConfigurationInput) (*request.Request, *alexaforbusiness.PutInvitationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutInvitationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*alexaforbusiness.PutInvitationConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutInvitationConfigurationRequest indicates an expected call of PutInvitationConfigurationRequest
+func (mr *MockAlexaForBusinessAPIMockRecorder) PutInvitationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInvitationConfigurationRequest", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutInvitationConfigurationRequest), arg0)
+}
+
+// PutInvitationConfigurationWithContext mocks base method
+func (m *MockAlexaForBusinessAPI) PutInvitationConfigurationWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutInvitationConfigurationInput, arg2 ...request.Option) (*alexaforbusiness.PutInvitationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutInvitationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*alexaforbusiness.PutInvitationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutInvitationConfigurationWithContext indicates an expected call of PutInvitationConfigurationWithContext
+func (mr *MockAlexaForBusinessAPIMockRecorder) PutInvitationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInvitationConfigurationWithContext", reflect.TypeOf((*MockAlexaForBusinessAPI)(nil).PutInvitationConfigurationWithContext), varargs...)
 }
 
 // PutRoomSkillParameter mocks base method
