@@ -235,6 +235,56 @@ func (mr *MockSecurityHubAPIMockRecorder) BatchImportFindingsWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchImportFindingsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).BatchImportFindingsWithContext), varargs...)
 }
 
+// CreateActionTarget mocks base method
+func (m *MockSecurityHubAPI) CreateActionTarget(arg0 *securityhub.CreateActionTargetInput) (*securityhub.CreateActionTargetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateActionTarget", arg0)
+	ret0, _ := ret[0].(*securityhub.CreateActionTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateActionTarget indicates an expected call of CreateActionTarget
+func (mr *MockSecurityHubAPIMockRecorder) CreateActionTarget(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateActionTarget", reflect.TypeOf((*MockSecurityHubAPI)(nil).CreateActionTarget), arg0)
+}
+
+// CreateActionTargetRequest mocks base method
+func (m *MockSecurityHubAPI) CreateActionTargetRequest(arg0 *securityhub.CreateActionTargetInput) (*request.Request, *securityhub.CreateActionTargetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateActionTargetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.CreateActionTargetOutput)
+	return ret0, ret1
+}
+
+// CreateActionTargetRequest indicates an expected call of CreateActionTargetRequest
+func (mr *MockSecurityHubAPIMockRecorder) CreateActionTargetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateActionTargetRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).CreateActionTargetRequest), arg0)
+}
+
+// CreateActionTargetWithContext mocks base method
+func (m *MockSecurityHubAPI) CreateActionTargetWithContext(arg0 context.Context, arg1 *securityhub.CreateActionTargetInput, arg2 ...request.Option) (*securityhub.CreateActionTargetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateActionTargetWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.CreateActionTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateActionTargetWithContext indicates an expected call of CreateActionTargetWithContext
+func (mr *MockSecurityHubAPIMockRecorder) CreateActionTargetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateActionTargetWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).CreateActionTargetWithContext), varargs...)
+}
+
 // CreateInsight mocks base method
 func (m *MockSecurityHubAPI) CreateInsight(arg0 *securityhub.CreateInsightInput) (*securityhub.CreateInsightOutput, error) {
 	m.ctrl.T.Helper()
@@ -385,6 +435,56 @@ func (mr *MockSecurityHubAPIMockRecorder) DeclineInvitationsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeclineInvitationsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DeclineInvitationsWithContext), varargs...)
 }
 
+// DeleteActionTarget mocks base method
+func (m *MockSecurityHubAPI) DeleteActionTarget(arg0 *securityhub.DeleteActionTargetInput) (*securityhub.DeleteActionTargetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteActionTarget", arg0)
+	ret0, _ := ret[0].(*securityhub.DeleteActionTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteActionTarget indicates an expected call of DeleteActionTarget
+func (mr *MockSecurityHubAPIMockRecorder) DeleteActionTarget(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteActionTarget", reflect.TypeOf((*MockSecurityHubAPI)(nil).DeleteActionTarget), arg0)
+}
+
+// DeleteActionTargetRequest mocks base method
+func (m *MockSecurityHubAPI) DeleteActionTargetRequest(arg0 *securityhub.DeleteActionTargetInput) (*request.Request, *securityhub.DeleteActionTargetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteActionTargetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.DeleteActionTargetOutput)
+	return ret0, ret1
+}
+
+// DeleteActionTargetRequest indicates an expected call of DeleteActionTargetRequest
+func (mr *MockSecurityHubAPIMockRecorder) DeleteActionTargetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteActionTargetRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).DeleteActionTargetRequest), arg0)
+}
+
+// DeleteActionTargetWithContext mocks base method
+func (m *MockSecurityHubAPI) DeleteActionTargetWithContext(arg0 context.Context, arg1 *securityhub.DeleteActionTargetInput, arg2 ...request.Option) (*securityhub.DeleteActionTargetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteActionTargetWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.DeleteActionTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteActionTargetWithContext indicates an expected call of DeleteActionTargetWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DeleteActionTargetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteActionTargetWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DeleteActionTargetWithContext), varargs...)
+}
+
 // DeleteInsight mocks base method
 func (m *MockSecurityHubAPI) DeleteInsight(arg0 *securityhub.DeleteInsightInput) (*securityhub.DeleteInsightOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +633,139 @@ func (mr *MockSecurityHubAPIMockRecorder) DeleteMembersWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembersWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DeleteMembersWithContext), varargs...)
+}
+
+// DescribeActionTargets mocks base method
+func (m *MockSecurityHubAPI) DescribeActionTargets(arg0 *securityhub.DescribeActionTargetsInput) (*securityhub.DescribeActionTargetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeActionTargets", arg0)
+	ret0, _ := ret[0].(*securityhub.DescribeActionTargetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeActionTargets indicates an expected call of DescribeActionTargets
+func (mr *MockSecurityHubAPIMockRecorder) DescribeActionTargets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActionTargets", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeActionTargets), arg0)
+}
+
+// DescribeActionTargetsPages mocks base method
+func (m *MockSecurityHubAPI) DescribeActionTargetsPages(arg0 *securityhub.DescribeActionTargetsInput, arg1 func(*securityhub.DescribeActionTargetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeActionTargetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeActionTargetsPages indicates an expected call of DescribeActionTargetsPages
+func (mr *MockSecurityHubAPIMockRecorder) DescribeActionTargetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActionTargetsPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeActionTargetsPages), arg0, arg1)
+}
+
+// DescribeActionTargetsPagesWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeActionTargetsPagesWithContext(arg0 context.Context, arg1 *securityhub.DescribeActionTargetsInput, arg2 func(*securityhub.DescribeActionTargetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeActionTargetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeActionTargetsPagesWithContext indicates an expected call of DescribeActionTargetsPagesWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeActionTargetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActionTargetsPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeActionTargetsPagesWithContext), varargs...)
+}
+
+// DescribeActionTargetsRequest mocks base method
+func (m *MockSecurityHubAPI) DescribeActionTargetsRequest(arg0 *securityhub.DescribeActionTargetsInput) (*request.Request, *securityhub.DescribeActionTargetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeActionTargetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.DescribeActionTargetsOutput)
+	return ret0, ret1
+}
+
+// DescribeActionTargetsRequest indicates an expected call of DescribeActionTargetsRequest
+func (mr *MockSecurityHubAPIMockRecorder) DescribeActionTargetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActionTargetsRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeActionTargetsRequest), arg0)
+}
+
+// DescribeActionTargetsWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeActionTargetsWithContext(arg0 context.Context, arg1 *securityhub.DescribeActionTargetsInput, arg2 ...request.Option) (*securityhub.DescribeActionTargetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeActionTargetsWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.DescribeActionTargetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeActionTargetsWithContext indicates an expected call of DescribeActionTargetsWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeActionTargetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActionTargetsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeActionTargetsWithContext), varargs...)
+}
+
+// DescribeHub mocks base method
+func (m *MockSecurityHubAPI) DescribeHub(arg0 *securityhub.DescribeHubInput) (*securityhub.DescribeHubOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHub", arg0)
+	ret0, _ := ret[0].(*securityhub.DescribeHubOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHub indicates an expected call of DescribeHub
+func (mr *MockSecurityHubAPIMockRecorder) DescribeHub(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHub", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeHub), arg0)
+}
+
+// DescribeHubRequest mocks base method
+func (m *MockSecurityHubAPI) DescribeHubRequest(arg0 *securityhub.DescribeHubInput) (*request.Request, *securityhub.DescribeHubOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHubRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.DescribeHubOutput)
+	return ret0, ret1
+}
+
+// DescribeHubRequest indicates an expected call of DescribeHubRequest
+func (mr *MockSecurityHubAPIMockRecorder) DescribeHubRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHubRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeHubRequest), arg0)
+}
+
+// DescribeHubWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeHubWithContext(arg0 context.Context, arg1 *securityhub.DescribeHubInput, arg2 ...request.Option) (*securityhub.DescribeHubOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeHubWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.DescribeHubOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHubWithContext indicates an expected call of DescribeHubWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeHubWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHubWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeHubWithContext), varargs...)
 }
 
 // DescribeProducts mocks base method
@@ -1567,87 +1800,204 @@ func (mr *MockSecurityHubAPIMockRecorder) ListMembersWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListMembersWithContext), varargs...)
 }
 
-// ListProductSubscribers mocks base method
-func (m *MockSecurityHubAPI) ListProductSubscribers(arg0 *securityhub.ListProductSubscribersInput) (*securityhub.ListProductSubscribersOutput, error) {
+// ListTagsForResource mocks base method
+func (m *MockSecurityHubAPI) ListTagsForResource(arg0 *securityhub.ListTagsForResourceInput) (*securityhub.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProductSubscribers", arg0)
-	ret0, _ := ret[0].(*securityhub.ListProductSubscribersOutput)
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*securityhub.ListTagsForResourceOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// ListProductSubscribers indicates an expected call of ListProductSubscribers
-func (mr *MockSecurityHubAPIMockRecorder) ListProductSubscribers(arg0 interface{}) *gomock.Call {
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockSecurityHubAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProductSubscribers", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListProductSubscribers), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListTagsForResource), arg0)
 }
 
-// ListProductSubscribersPages mocks base method
-func (m *MockSecurityHubAPI) ListProductSubscribersPages(arg0 *securityhub.ListProductSubscribersInput, arg1 func(*securityhub.ListProductSubscribersOutput, bool) bool) error {
+// ListTagsForResourceRequest mocks base method
+func (m *MockSecurityHubAPI) ListTagsForResourceRequest(arg0 *securityhub.ListTagsForResourceInput) (*request.Request, *securityhub.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProductSubscribersPages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProductSubscribersPages indicates an expected call of ListProductSubscribersPages
-func (mr *MockSecurityHubAPIMockRecorder) ListProductSubscribersPages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProductSubscribersPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListProductSubscribersPages), arg0, arg1)
-}
-
-// ListProductSubscribersPagesWithContext mocks base method
-func (m *MockSecurityHubAPI) ListProductSubscribersPagesWithContext(arg0 context.Context, arg1 *securityhub.ListProductSubscribersInput, arg2 func(*securityhub.ListProductSubscribersOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListProductSubscribersPagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListProductSubscribersPagesWithContext indicates an expected call of ListProductSubscribersPagesWithContext
-func (mr *MockSecurityHubAPIMockRecorder) ListProductSubscribersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProductSubscribersPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListProductSubscribersPagesWithContext), varargs...)
-}
-
-// ListProductSubscribersRequest mocks base method
-func (m *MockSecurityHubAPI) ListProductSubscribersRequest(arg0 *securityhub.ListProductSubscribersInput) (*request.Request, *securityhub.ListProductSubscribersOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListProductSubscribersRequest", arg0)
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securityhub.ListProductSubscribersOutput)
+	ret1, _ := ret[1].(*securityhub.ListTagsForResourceOutput)
 	return ret0, ret1
 }
 
-// ListProductSubscribersRequest indicates an expected call of ListProductSubscribersRequest
-func (mr *MockSecurityHubAPIMockRecorder) ListProductSubscribersRequest(arg0 interface{}) *gomock.Call {
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockSecurityHubAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProductSubscribersRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListProductSubscribersRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListTagsForResourceRequest), arg0)
 }
 
-// ListProductSubscribersWithContext mocks base method
-func (m *MockSecurityHubAPI) ListProductSubscribersWithContext(arg0 context.Context, arg1 *securityhub.ListProductSubscribersInput, arg2 ...request.Option) (*securityhub.ListProductSubscribersOutput, error) {
+// ListTagsForResourceWithContext mocks base method
+func (m *MockSecurityHubAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *securityhub.ListTagsForResourceInput, arg2 ...request.Option) (*securityhub.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "ListProductSubscribersWithContext", varargs...)
-	ret0, _ := ret[0].(*securityhub.ListProductSubscribersOutput)
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.ListTagsForResourceOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// ListProductSubscribersWithContext indicates an expected call of ListProductSubscribersWithContext
-func (mr *MockSecurityHubAPIMockRecorder) ListProductSubscribersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockSecurityHubAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProductSubscribersWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListProductSubscribersWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockSecurityHubAPI) TagResource(arg0 *securityhub.TagResourceInput) (*securityhub.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*securityhub.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockSecurityHubAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockSecurityHubAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockSecurityHubAPI) TagResourceRequest(arg0 *securityhub.TagResourceInput) (*request.Request, *securityhub.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockSecurityHubAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockSecurityHubAPI) TagResourceWithContext(arg0 context.Context, arg1 *securityhub.TagResourceInput, arg2 ...request.Option) (*securityhub.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockSecurityHubAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockSecurityHubAPI) UntagResource(arg0 *securityhub.UntagResourceInput) (*securityhub.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*securityhub.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockSecurityHubAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockSecurityHubAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockSecurityHubAPI) UntagResourceRequest(arg0 *securityhub.UntagResourceInput) (*request.Request, *securityhub.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockSecurityHubAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockSecurityHubAPI) UntagResourceWithContext(arg0 context.Context, arg1 *securityhub.UntagResourceInput, arg2 ...request.Option) (*securityhub.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockSecurityHubAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateActionTarget mocks base method
+func (m *MockSecurityHubAPI) UpdateActionTarget(arg0 *securityhub.UpdateActionTargetInput) (*securityhub.UpdateActionTargetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateActionTarget", arg0)
+	ret0, _ := ret[0].(*securityhub.UpdateActionTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateActionTarget indicates an expected call of UpdateActionTarget
+func (mr *MockSecurityHubAPIMockRecorder) UpdateActionTarget(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActionTarget", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateActionTarget), arg0)
+}
+
+// UpdateActionTargetRequest mocks base method
+func (m *MockSecurityHubAPI) UpdateActionTargetRequest(arg0 *securityhub.UpdateActionTargetInput) (*request.Request, *securityhub.UpdateActionTargetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateActionTargetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.UpdateActionTargetOutput)
+	return ret0, ret1
+}
+
+// UpdateActionTargetRequest indicates an expected call of UpdateActionTargetRequest
+func (mr *MockSecurityHubAPIMockRecorder) UpdateActionTargetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActionTargetRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateActionTargetRequest), arg0)
+}
+
+// UpdateActionTargetWithContext mocks base method
+func (m *MockSecurityHubAPI) UpdateActionTargetWithContext(arg0 context.Context, arg1 *securityhub.UpdateActionTargetInput, arg2 ...request.Option) (*securityhub.UpdateActionTargetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateActionTargetWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.UpdateActionTargetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateActionTargetWithContext indicates an expected call of UpdateActionTargetWithContext
+func (mr *MockSecurityHubAPIMockRecorder) UpdateActionTargetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActionTargetWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateActionTargetWithContext), varargs...)
 }
 
 // UpdateFindings mocks base method
