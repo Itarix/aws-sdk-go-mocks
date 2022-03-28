@@ -5,7 +5,7 @@
 package comprehendmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	comprehend "github.com/aws/aws-sdk-go/service/comprehend"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectDominantLanguageRequest(arg0
 }
 
 // BatchDetectDominantLanguageWithContext mocks base method
-func (m *MockComprehendAPI) BatchDetectDominantLanguageWithContext(arg0 aws.Context, arg1 *comprehend.BatchDetectDominantLanguageInput, arg2 ...request.Option) (*comprehend.BatchDetectDominantLanguageOutput, error) {
+func (m *MockComprehendAPI) BatchDetectDominantLanguageWithContext(arg0 context.Context, arg1 *comprehend.BatchDetectDominantLanguageInput, arg2 ...request.Option) (*comprehend.BatchDetectDominantLanguageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectEntitiesRequest(arg0 interfa
 }
 
 // BatchDetectEntitiesWithContext mocks base method
-func (m *MockComprehendAPI) BatchDetectEntitiesWithContext(arg0 aws.Context, arg1 *comprehend.BatchDetectEntitiesInput, arg2 ...request.Option) (*comprehend.BatchDetectEntitiesOutput, error) {
+func (m *MockComprehendAPI) BatchDetectEntitiesWithContext(arg0 context.Context, arg1 *comprehend.BatchDetectEntitiesInput, arg2 ...request.Option) (*comprehend.BatchDetectEntitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectKeyPhrasesRequest(arg0 inter
 }
 
 // BatchDetectKeyPhrasesWithContext mocks base method
-func (m *MockComprehendAPI) BatchDetectKeyPhrasesWithContext(arg0 aws.Context, arg1 *comprehend.BatchDetectKeyPhrasesInput, arg2 ...request.Option) (*comprehend.BatchDetectKeyPhrasesOutput, error) {
+func (m *MockComprehendAPI) BatchDetectKeyPhrasesWithContext(arg0 context.Context, arg1 *comprehend.BatchDetectKeyPhrasesInput, arg2 ...request.Option) (*comprehend.BatchDetectKeyPhrasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectSentimentRequest(arg0 interf
 }
 
 // BatchDetectSentimentWithContext mocks base method
-func (m *MockComprehendAPI) BatchDetectSentimentWithContext(arg0 aws.Context, arg1 *comprehend.BatchDetectSentimentInput, arg2 ...request.Option) (*comprehend.BatchDetectSentimentOutput, error) {
+func (m *MockComprehendAPI) BatchDetectSentimentWithContext(arg0 context.Context, arg1 *comprehend.BatchDetectSentimentInput, arg2 ...request.Option) (*comprehend.BatchDetectSentimentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectSyntaxRequest(arg0 interface
 }
 
 // BatchDetectSyntaxWithContext mocks base method
-func (m *MockComprehendAPI) BatchDetectSyntaxWithContext(arg0 aws.Context, arg1 *comprehend.BatchDetectSyntaxInput, arg2 ...request.Option) (*comprehend.BatchDetectSyntaxOutput, error) {
+func (m *MockComprehendAPI) BatchDetectSyntaxWithContext(arg0 context.Context, arg1 *comprehend.BatchDetectSyntaxInput, arg2 ...request.Option) (*comprehend.BatchDetectSyntaxOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockComprehendAPIMockRecorder) CreateDocumentClassifierRequest(arg0 in
 }
 
 // CreateDocumentClassifierWithContext mocks base method
-func (m *MockComprehendAPI) CreateDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.CreateDocumentClassifierInput, arg2 ...request.Option) (*comprehend.CreateDocumentClassifierOutput, error) {
+func (m *MockComprehendAPI) CreateDocumentClassifierWithContext(arg0 context.Context, arg1 *comprehend.CreateDocumentClassifierInput, arg2 ...request.Option) (*comprehend.CreateDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockComprehendAPIMockRecorder) CreateEntityRecognizerRequest(arg0 inte
 }
 
 // CreateEntityRecognizerWithContext mocks base method
-func (m *MockComprehendAPI) CreateEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.CreateEntityRecognizerInput, arg2 ...request.Option) (*comprehend.CreateEntityRecognizerOutput, error) {
+func (m *MockComprehendAPI) CreateEntityRecognizerWithContext(arg0 context.Context, arg1 *comprehend.CreateEntityRecognizerInput, arg2 ...request.Option) (*comprehend.CreateEntityRecognizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockComprehendAPIMockRecorder) DeleteDocumentClassifierRequest(arg0 in
 }
 
 // DeleteDocumentClassifierWithContext mocks base method
-func (m *MockComprehendAPI) DeleteDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.DeleteDocumentClassifierInput, arg2 ...request.Option) (*comprehend.DeleteDocumentClassifierOutput, error) {
+func (m *MockComprehendAPI) DeleteDocumentClassifierWithContext(arg0 context.Context, arg1 *comprehend.DeleteDocumentClassifierInput, arg2 ...request.Option) (*comprehend.DeleteDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockComprehendAPIMockRecorder) DeleteEntityRecognizerRequest(arg0 inte
 }
 
 // DeleteEntityRecognizerWithContext mocks base method
-func (m *MockComprehendAPI) DeleteEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.DeleteEntityRecognizerInput, arg2 ...request.Option) (*comprehend.DeleteEntityRecognizerOutput, error) {
+func (m *MockComprehendAPI) DeleteEntityRecognizerWithContext(arg0 context.Context, arg1 *comprehend.DeleteEntityRecognizerInput, arg2 ...request.Option) (*comprehend.DeleteEntityRecognizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassificationJobReques
 }
 
 // DescribeDocumentClassificationJobWithContext mocks base method
-func (m *MockComprehendAPI) DescribeDocumentClassificationJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeDocumentClassificationJobInput, arg2 ...request.Option) (*comprehend.DescribeDocumentClassificationJobOutput, error) {
+func (m *MockComprehendAPI) DescribeDocumentClassificationJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeDocumentClassificationJobInput, arg2 ...request.Option) (*comprehend.DescribeDocumentClassificationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeDocumentClassifierRequest(arg0 
 }
 
 // DescribeDocumentClassifierWithContext mocks base method
-func (m *MockComprehendAPI) DescribeDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.DescribeDocumentClassifierInput, arg2 ...request.Option) (*comprehend.DescribeDocumentClassifierOutput, error) {
+func (m *MockComprehendAPI) DescribeDocumentClassifierWithContext(arg0 context.Context, arg1 *comprehend.DescribeDocumentClassifierInput, arg2 ...request.Option) (*comprehend.DescribeDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeDominantLanguageDetectionJobReq
 }
 
 // DescribeDominantLanguageDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) DescribeDominantLanguageDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeDominantLanguageDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeDominantLanguageDetectionJobOutput, error) {
+func (m *MockComprehendAPI) DescribeDominantLanguageDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeDominantLanguageDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeDominantLanguageDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeEntitiesDetectionJobRequest(arg
 }
 
 // DescribeEntitiesDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) DescribeEntitiesDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeEntitiesDetectionJobOutput, error) {
+func (m *MockComprehendAPI) DescribeEntitiesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeEntitiesDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeEntityRecognizerRequest(arg0 in
 }
 
 // DescribeEntityRecognizerWithContext mocks base method
-func (m *MockComprehendAPI) DescribeEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.DescribeEntityRecognizerInput, arg2 ...request.Option) (*comprehend.DescribeEntityRecognizerOutput, error) {
+func (m *MockComprehendAPI) DescribeEntityRecognizerWithContext(arg0 context.Context, arg1 *comprehend.DescribeEntityRecognizerInput, arg2 ...request.Option) (*comprehend.DescribeEntityRecognizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeKeyPhrasesDetectionJobRequest(a
 }
 
 // DescribeKeyPhrasesDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) DescribeKeyPhrasesDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeKeyPhrasesDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeKeyPhrasesDetectionJobOutput, error) {
+func (m *MockComprehendAPI) DescribeKeyPhrasesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeKeyPhrasesDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeKeyPhrasesDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeSentimentDetectionJobRequest(ar
 }
 
 // DescribeSentimentDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) DescribeSentimentDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeSentimentDetectionJobOutput, error) {
+func (m *MockComprehendAPI) DescribeSentimentDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeSentimentDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockComprehendAPIMockRecorder) DescribeTopicsDetectionJobRequest(arg0 
 }
 
 // DescribeTopicsDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) DescribeTopicsDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.DescribeTopicsDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeTopicsDetectionJobOutput, error) {
+func (m *MockComprehendAPI) DescribeTopicsDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeTopicsDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeTopicsDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockComprehendAPIMockRecorder) DetectDominantLanguageRequest(arg0 inte
 }
 
 // DetectDominantLanguageWithContext mocks base method
-func (m *MockComprehendAPI) DetectDominantLanguageWithContext(arg0 aws.Context, arg1 *comprehend.DetectDominantLanguageInput, arg2 ...request.Option) (*comprehend.DetectDominantLanguageOutput, error) {
+func (m *MockComprehendAPI) DetectDominantLanguageWithContext(arg0 context.Context, arg1 *comprehend.DetectDominantLanguageInput, arg2 ...request.Option) (*comprehend.DetectDominantLanguageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockComprehendAPIMockRecorder) DetectEntitiesRequest(arg0 interface{})
 }
 
 // DetectEntitiesWithContext mocks base method
-func (m *MockComprehendAPI) DetectEntitiesWithContext(arg0 aws.Context, arg1 *comprehend.DetectEntitiesInput, arg2 ...request.Option) (*comprehend.DetectEntitiesOutput, error) {
+func (m *MockComprehendAPI) DetectEntitiesWithContext(arg0 context.Context, arg1 *comprehend.DetectEntitiesInput, arg2 ...request.Option) (*comprehend.DetectEntitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockComprehendAPIMockRecorder) DetectKeyPhrasesRequest(arg0 interface{
 }
 
 // DetectKeyPhrasesWithContext mocks base method
-func (m *MockComprehendAPI) DetectKeyPhrasesWithContext(arg0 aws.Context, arg1 *comprehend.DetectKeyPhrasesInput, arg2 ...request.Option) (*comprehend.DetectKeyPhrasesOutput, error) {
+func (m *MockComprehendAPI) DetectKeyPhrasesWithContext(arg0 context.Context, arg1 *comprehend.DetectKeyPhrasesInput, arg2 ...request.Option) (*comprehend.DetectKeyPhrasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockComprehendAPIMockRecorder) DetectSentimentRequest(arg0 interface{}
 }
 
 // DetectSentimentWithContext mocks base method
-func (m *MockComprehendAPI) DetectSentimentWithContext(arg0 aws.Context, arg1 *comprehend.DetectSentimentInput, arg2 ...request.Option) (*comprehend.DetectSentimentOutput, error) {
+func (m *MockComprehendAPI) DetectSentimentWithContext(arg0 context.Context, arg1 *comprehend.DetectSentimentInput, arg2 ...request.Option) (*comprehend.DetectSentimentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockComprehendAPIMockRecorder) DetectSyntaxRequest(arg0 interface{}) *
 }
 
 // DetectSyntaxWithContext mocks base method
-func (m *MockComprehendAPI) DetectSyntaxWithContext(arg0 aws.Context, arg1 *comprehend.DetectSyntaxInput, arg2 ...request.Option) (*comprehend.DetectSyntaxOutput, error) {
+func (m *MockComprehendAPI) DetectSyntaxWithContext(arg0 context.Context, arg1 *comprehend.DetectSyntaxInput, arg2 ...request.Option) (*comprehend.DetectSyntaxOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockComprehendAPIMockRecorder) ListDocumentClassificationJobsRequest(a
 }
 
 // ListDocumentClassificationJobsWithContext mocks base method
-func (m *MockComprehendAPI) ListDocumentClassificationJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListDocumentClassificationJobsInput, arg2 ...request.Option) (*comprehend.ListDocumentClassificationJobsOutput, error) {
+func (m *MockComprehendAPI) ListDocumentClassificationJobsWithContext(arg0 context.Context, arg1 *comprehend.ListDocumentClassificationJobsInput, arg2 ...request.Option) (*comprehend.ListDocumentClassificationJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifiersRequest(arg0 int
 }
 
 // ListDocumentClassifiersWithContext mocks base method
-func (m *MockComprehendAPI) ListDocumentClassifiersWithContext(arg0 aws.Context, arg1 *comprehend.ListDocumentClassifiersInput, arg2 ...request.Option) (*comprehend.ListDocumentClassifiersOutput, error) {
+func (m *MockComprehendAPI) ListDocumentClassifiersWithContext(arg0 context.Context, arg1 *comprehend.ListDocumentClassifiersInput, arg2 ...request.Option) (*comprehend.ListDocumentClassifiersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1265,7 +1265,7 @@ func (mr *MockComprehendAPIMockRecorder) ListDominantLanguageDetectionJobsPages(
 }
 
 // ListDominantLanguageDetectionJobsPagesWithContext mocks base method
-func (m *MockComprehendAPI) ListDominantLanguageDetectionJobsPagesWithContext(arg0 aws.Context, arg1 *comprehend.ListDominantLanguageDetectionJobsInput, arg2 func(*comprehend.ListDominantLanguageDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockComprehendAPI) ListDominantLanguageDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListDominantLanguageDetectionJobsInput, arg2 func(*comprehend.ListDominantLanguageDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1299,7 +1299,7 @@ func (mr *MockComprehendAPIMockRecorder) ListDominantLanguageDetectionJobsReques
 }
 
 // ListDominantLanguageDetectionJobsWithContext mocks base method
-func (m *MockComprehendAPI) ListDominantLanguageDetectionJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListDominantLanguageDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListDominantLanguageDetectionJobsOutput, error) {
+func (m *MockComprehendAPI) ListDominantLanguageDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListDominantLanguageDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListDominantLanguageDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1348,7 +1348,7 @@ func (mr *MockComprehendAPIMockRecorder) ListEntitiesDetectionJobsPages(arg0, ar
 }
 
 // ListEntitiesDetectionJobsPagesWithContext mocks base method
-func (m *MockComprehendAPI) ListEntitiesDetectionJobsPagesWithContext(arg0 aws.Context, arg1 *comprehend.ListEntitiesDetectionJobsInput, arg2 func(*comprehend.ListEntitiesDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockComprehendAPI) ListEntitiesDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListEntitiesDetectionJobsInput, arg2 func(*comprehend.ListEntitiesDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1382,7 +1382,7 @@ func (mr *MockComprehendAPIMockRecorder) ListEntitiesDetectionJobsRequest(arg0 i
 }
 
 // ListEntitiesDetectionJobsWithContext mocks base method
-func (m *MockComprehendAPI) ListEntitiesDetectionJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListEntitiesDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListEntitiesDetectionJobsOutput, error) {
+func (m *MockComprehendAPI) ListEntitiesDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListEntitiesDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListEntitiesDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1432,7 +1432,7 @@ func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizersRequest(arg0 inter
 }
 
 // ListEntityRecognizersWithContext mocks base method
-func (m *MockComprehendAPI) ListEntityRecognizersWithContext(arg0 aws.Context, arg1 *comprehend.ListEntityRecognizersInput, arg2 ...request.Option) (*comprehend.ListEntityRecognizersOutput, error) {
+func (m *MockComprehendAPI) ListEntityRecognizersWithContext(arg0 context.Context, arg1 *comprehend.ListEntityRecognizersInput, arg2 ...request.Option) (*comprehend.ListEntityRecognizersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockComprehendAPIMockRecorder) ListKeyPhrasesDetectionJobsPages(arg0, 
 }
 
 // ListKeyPhrasesDetectionJobsPagesWithContext mocks base method
-func (m *MockComprehendAPI) ListKeyPhrasesDetectionJobsPagesWithContext(arg0 aws.Context, arg1 *comprehend.ListKeyPhrasesDetectionJobsInput, arg2 func(*comprehend.ListKeyPhrasesDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockComprehendAPI) ListKeyPhrasesDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListKeyPhrasesDetectionJobsInput, arg2 func(*comprehend.ListKeyPhrasesDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1515,7 +1515,7 @@ func (mr *MockComprehendAPIMockRecorder) ListKeyPhrasesDetectionJobsRequest(arg0
 }
 
 // ListKeyPhrasesDetectionJobsWithContext mocks base method
-func (m *MockComprehendAPI) ListKeyPhrasesDetectionJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListKeyPhrasesDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListKeyPhrasesDetectionJobsOutput, error) {
+func (m *MockComprehendAPI) ListKeyPhrasesDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListKeyPhrasesDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListKeyPhrasesDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1564,7 +1564,7 @@ func (mr *MockComprehendAPIMockRecorder) ListSentimentDetectionJobsPages(arg0, a
 }
 
 // ListSentimentDetectionJobsPagesWithContext mocks base method
-func (m *MockComprehendAPI) ListSentimentDetectionJobsPagesWithContext(arg0 aws.Context, arg1 *comprehend.ListSentimentDetectionJobsInput, arg2 func(*comprehend.ListSentimentDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockComprehendAPI) ListSentimentDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListSentimentDetectionJobsInput, arg2 func(*comprehend.ListSentimentDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1598,7 +1598,7 @@ func (mr *MockComprehendAPIMockRecorder) ListSentimentDetectionJobsRequest(arg0 
 }
 
 // ListSentimentDetectionJobsWithContext mocks base method
-func (m *MockComprehendAPI) ListSentimentDetectionJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListSentimentDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListSentimentDetectionJobsOutput, error) {
+func (m *MockComprehendAPI) ListSentimentDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListSentimentDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListSentimentDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1647,7 +1647,7 @@ func (mr *MockComprehendAPIMockRecorder) ListTopicsDetectionJobsPages(arg0, arg1
 }
 
 // ListTopicsDetectionJobsPagesWithContext mocks base method
-func (m *MockComprehendAPI) ListTopicsDetectionJobsPagesWithContext(arg0 aws.Context, arg1 *comprehend.ListTopicsDetectionJobsInput, arg2 func(*comprehend.ListTopicsDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockComprehendAPI) ListTopicsDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListTopicsDetectionJobsInput, arg2 func(*comprehend.ListTopicsDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1681,7 +1681,7 @@ func (mr *MockComprehendAPIMockRecorder) ListTopicsDetectionJobsRequest(arg0 int
 }
 
 // ListTopicsDetectionJobsWithContext mocks base method
-func (m *MockComprehendAPI) ListTopicsDetectionJobsWithContext(arg0 aws.Context, arg1 *comprehend.ListTopicsDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListTopicsDetectionJobsOutput, error) {
+func (m *MockComprehendAPI) ListTopicsDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListTopicsDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListTopicsDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1731,7 +1731,7 @@ func (mr *MockComprehendAPIMockRecorder) StartDocumentClassificationJobRequest(a
 }
 
 // StartDocumentClassificationJobWithContext mocks base method
-func (m *MockComprehendAPI) StartDocumentClassificationJobWithContext(arg0 aws.Context, arg1 *comprehend.StartDocumentClassificationJobInput, arg2 ...request.Option) (*comprehend.StartDocumentClassificationJobOutput, error) {
+func (m *MockComprehendAPI) StartDocumentClassificationJobWithContext(arg0 context.Context, arg1 *comprehend.StartDocumentClassificationJobInput, arg2 ...request.Option) (*comprehend.StartDocumentClassificationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockComprehendAPIMockRecorder) StartDominantLanguageDetectionJobReques
 }
 
 // StartDominantLanguageDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StartDominantLanguageDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StartDominantLanguageDetectionJobInput, arg2 ...request.Option) (*comprehend.StartDominantLanguageDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StartDominantLanguageDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartDominantLanguageDetectionJobInput, arg2 ...request.Option) (*comprehend.StartDominantLanguageDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1831,7 +1831,7 @@ func (mr *MockComprehendAPIMockRecorder) StartEntitiesDetectionJobRequest(arg0 i
 }
 
 // StartEntitiesDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StartEntitiesDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StartEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.StartEntitiesDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StartEntitiesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.StartEntitiesDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1881,7 +1881,7 @@ func (mr *MockComprehendAPIMockRecorder) StartKeyPhrasesDetectionJobRequest(arg0
 }
 
 // StartKeyPhrasesDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StartKeyPhrasesDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StartKeyPhrasesDetectionJobInput, arg2 ...request.Option) (*comprehend.StartKeyPhrasesDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StartKeyPhrasesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartKeyPhrasesDetectionJobInput, arg2 ...request.Option) (*comprehend.StartKeyPhrasesDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1931,7 +1931,7 @@ func (mr *MockComprehendAPIMockRecorder) StartSentimentDetectionJobRequest(arg0 
 }
 
 // StartSentimentDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StartSentimentDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StartSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.StartSentimentDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StartSentimentDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.StartSentimentDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1981,7 +1981,7 @@ func (mr *MockComprehendAPIMockRecorder) StartTopicsDetectionJobRequest(arg0 int
 }
 
 // StartTopicsDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StartTopicsDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StartTopicsDetectionJobInput, arg2 ...request.Option) (*comprehend.StartTopicsDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StartTopicsDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartTopicsDetectionJobInput, arg2 ...request.Option) (*comprehend.StartTopicsDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2031,7 +2031,7 @@ func (mr *MockComprehendAPIMockRecorder) StopDominantLanguageDetectionJobRequest
 }
 
 // StopDominantLanguageDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StopDominantLanguageDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StopDominantLanguageDetectionJobInput, arg2 ...request.Option) (*comprehend.StopDominantLanguageDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StopDominantLanguageDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StopDominantLanguageDetectionJobInput, arg2 ...request.Option) (*comprehend.StopDominantLanguageDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2081,7 +2081,7 @@ func (mr *MockComprehendAPIMockRecorder) StopEntitiesDetectionJobRequest(arg0 in
 }
 
 // StopEntitiesDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StopEntitiesDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StopEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.StopEntitiesDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StopEntitiesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StopEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.StopEntitiesDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2131,7 +2131,7 @@ func (mr *MockComprehendAPIMockRecorder) StopKeyPhrasesDetectionJobRequest(arg0 
 }
 
 // StopKeyPhrasesDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StopKeyPhrasesDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StopKeyPhrasesDetectionJobInput, arg2 ...request.Option) (*comprehend.StopKeyPhrasesDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StopKeyPhrasesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StopKeyPhrasesDetectionJobInput, arg2 ...request.Option) (*comprehend.StopKeyPhrasesDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2181,7 +2181,7 @@ func (mr *MockComprehendAPIMockRecorder) StopSentimentDetectionJobRequest(arg0 i
 }
 
 // StopSentimentDetectionJobWithContext mocks base method
-func (m *MockComprehendAPI) StopSentimentDetectionJobWithContext(arg0 aws.Context, arg1 *comprehend.StopSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.StopSentimentDetectionJobOutput, error) {
+func (m *MockComprehendAPI) StopSentimentDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StopSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.StopSentimentDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2231,7 +2231,7 @@ func (mr *MockComprehendAPIMockRecorder) StopTrainingDocumentClassifierRequest(a
 }
 
 // StopTrainingDocumentClassifierWithContext mocks base method
-func (m *MockComprehendAPI) StopTrainingDocumentClassifierWithContext(arg0 aws.Context, arg1 *comprehend.StopTrainingDocumentClassifierInput, arg2 ...request.Option) (*comprehend.StopTrainingDocumentClassifierOutput, error) {
+func (m *MockComprehendAPI) StopTrainingDocumentClassifierWithContext(arg0 context.Context, arg1 *comprehend.StopTrainingDocumentClassifierInput, arg2 ...request.Option) (*comprehend.StopTrainingDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2281,7 +2281,7 @@ func (mr *MockComprehendAPIMockRecorder) StopTrainingEntityRecognizerRequest(arg
 }
 
 // StopTrainingEntityRecognizerWithContext mocks base method
-func (m *MockComprehendAPI) StopTrainingEntityRecognizerWithContext(arg0 aws.Context, arg1 *comprehend.StopTrainingEntityRecognizerInput, arg2 ...request.Option) (*comprehend.StopTrainingEntityRecognizerOutput, error) {
+func (m *MockComprehendAPI) StopTrainingEntityRecognizerWithContext(arg0 context.Context, arg1 *comprehend.StopTrainingEntityRecognizerInput, arg2 ...request.Option) (*comprehend.StopTrainingEntityRecognizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

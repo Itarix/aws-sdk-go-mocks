@@ -5,7 +5,7 @@
 package cloudformationmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudformation "github.com/aws/aws-sdk-go/service/cloudformation"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudFormationAPIMockRecorder) CancelUpdateStackRequest(arg0 inter
 }
 
 // CancelUpdateStackWithContext mocks base method
-func (m *MockCloudFormationAPI) CancelUpdateStackWithContext(arg0 aws.Context, arg1 *cloudformation.CancelUpdateStackInput, arg2 ...request.Option) (*cloudformation.CancelUpdateStackOutput, error) {
+func (m *MockCloudFormationAPI) CancelUpdateStackWithContext(arg0 context.Context, arg1 *cloudformation.CancelUpdateStackInput, arg2 ...request.Option) (*cloudformation.CancelUpdateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ContinueUpdateRollbackRequest(arg0 
 }
 
 // ContinueUpdateRollbackWithContext mocks base method
-func (m *MockCloudFormationAPI) ContinueUpdateRollbackWithContext(arg0 aws.Context, arg1 *cloudformation.ContinueUpdateRollbackInput, arg2 ...request.Option) (*cloudformation.ContinueUpdateRollbackOutput, error) {
+func (m *MockCloudFormationAPI) ContinueUpdateRollbackWithContext(arg0 context.Context, arg1 *cloudformation.ContinueUpdateRollbackInput, arg2 ...request.Option) (*cloudformation.ContinueUpdateRollbackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudFormationAPIMockRecorder) CreateChangeSetRequest(arg0 interfa
 }
 
 // CreateChangeSetWithContext mocks base method
-func (m *MockCloudFormationAPI) CreateChangeSetWithContext(arg0 aws.Context, arg1 *cloudformation.CreateChangeSetInput, arg2 ...request.Option) (*cloudformation.CreateChangeSetOutput, error) {
+func (m *MockCloudFormationAPI) CreateChangeSetWithContext(arg0 context.Context, arg1 *cloudformation.CreateChangeSetInput, arg2 ...request.Option) (*cloudformation.CreateChangeSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockCloudFormationAPIMockRecorder) CreateStackInstancesRequest(arg0 in
 }
 
 // CreateStackInstancesWithContext mocks base method
-func (m *MockCloudFormationAPI) CreateStackInstancesWithContext(arg0 aws.Context, arg1 *cloudformation.CreateStackInstancesInput, arg2 ...request.Option) (*cloudformation.CreateStackInstancesOutput, error) {
+func (m *MockCloudFormationAPI) CreateStackInstancesWithContext(arg0 context.Context, arg1 *cloudformation.CreateStackInstancesInput, arg2 ...request.Option) (*cloudformation.CreateStackInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -296,7 +296,7 @@ func (mr *MockCloudFormationAPIMockRecorder) CreateStackSetRequest(arg0 interfac
 }
 
 // CreateStackSetWithContext mocks base method
-func (m *MockCloudFormationAPI) CreateStackSetWithContext(arg0 aws.Context, arg1 *cloudformation.CreateStackSetInput, arg2 ...request.Option) (*cloudformation.CreateStackSetOutput, error) {
+func (m *MockCloudFormationAPI) CreateStackSetWithContext(arg0 context.Context, arg1 *cloudformation.CreateStackSetInput, arg2 ...request.Option) (*cloudformation.CreateStackSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudFormationAPIMockRecorder) CreateStackSetWithContext(arg0, arg
 }
 
 // CreateStackWithContext mocks base method
-func (m *MockCloudFormationAPI) CreateStackWithContext(arg0 aws.Context, arg1 *cloudformation.CreateStackInput, arg2 ...request.Option) (*cloudformation.CreateStackOutput, error) {
+func (m *MockCloudFormationAPI) CreateStackWithContext(arg0 context.Context, arg1 *cloudformation.CreateStackInput, arg2 ...request.Option) (*cloudformation.CreateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DeleteChangeSetRequest(arg0 interfa
 }
 
 // DeleteChangeSetWithContext mocks base method
-func (m *MockCloudFormationAPI) DeleteChangeSetWithContext(arg0 aws.Context, arg1 *cloudformation.DeleteChangeSetInput, arg2 ...request.Option) (*cloudformation.DeleteChangeSetOutput, error) {
+func (m *MockCloudFormationAPI) DeleteChangeSetWithContext(arg0 context.Context, arg1 *cloudformation.DeleteChangeSetInput, arg2 ...request.Option) (*cloudformation.DeleteChangeSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DeleteStackInstancesRequest(arg0 in
 }
 
 // DeleteStackInstancesWithContext mocks base method
-func (m *MockCloudFormationAPI) DeleteStackInstancesWithContext(arg0 aws.Context, arg1 *cloudformation.DeleteStackInstancesInput, arg2 ...request.Option) (*cloudformation.DeleteStackInstancesOutput, error) {
+func (m *MockCloudFormationAPI) DeleteStackInstancesWithContext(arg0 context.Context, arg1 *cloudformation.DeleteStackInstancesInput, arg2 ...request.Option) (*cloudformation.DeleteStackInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -496,7 +496,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DeleteStackSetRequest(arg0 interfac
 }
 
 // DeleteStackSetWithContext mocks base method
-func (m *MockCloudFormationAPI) DeleteStackSetWithContext(arg0 aws.Context, arg1 *cloudformation.DeleteStackSetInput, arg2 ...request.Option) (*cloudformation.DeleteStackSetOutput, error) {
+func (m *MockCloudFormationAPI) DeleteStackSetWithContext(arg0 context.Context, arg1 *cloudformation.DeleteStackSetInput, arg2 ...request.Option) (*cloudformation.DeleteStackSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DeleteStackSetWithContext(arg0, arg
 }
 
 // DeleteStackWithContext mocks base method
-func (m *MockCloudFormationAPI) DeleteStackWithContext(arg0 aws.Context, arg1 *cloudformation.DeleteStackInput, arg2 ...request.Option) (*cloudformation.DeleteStackOutput, error) {
+func (m *MockCloudFormationAPI) DeleteStackWithContext(arg0 context.Context, arg1 *cloudformation.DeleteStackInput, arg2 ...request.Option) (*cloudformation.DeleteStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeAccountLimitsRequest(arg0 i
 }
 
 // DescribeAccountLimitsWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeAccountLimitsWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeAccountLimitsInput, arg2 ...request.Option) (*cloudformation.DescribeAccountLimitsOutput, error) {
+func (m *MockCloudFormationAPI) DescribeAccountLimitsWithContext(arg0 context.Context, arg1 *cloudformation.DescribeAccountLimitsInput, arg2 ...request.Option) (*cloudformation.DescribeAccountLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeChangeSetRequest(arg0 inter
 }
 
 // DescribeChangeSetWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeChangeSetWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeChangeSetInput, arg2 ...request.Option) (*cloudformation.DescribeChangeSetOutput, error) {
+func (m *MockCloudFormationAPI) DescribeChangeSetWithContext(arg0 context.Context, arg1 *cloudformation.DescribeChangeSetInput, arg2 ...request.Option) (*cloudformation.DescribeChangeSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackDriftDetectionStatusRe
 }
 
 // DescribeStackDriftDetectionStatusWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackDriftDetectionStatusWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackDriftDetectionStatusInput, arg2 ...request.Option) (*cloudformation.DescribeStackDriftDetectionStatusOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackDriftDetectionStatusWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackDriftDetectionStatusInput, arg2 ...request.Option) (*cloudformation.DescribeStackDriftDetectionStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackEventsPages(arg0, arg1
 }
 
 // DescribeStackEventsPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackEventsPagesWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackEventsInput, arg2 func(*cloudformation.DescribeStackEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) DescribeStackEventsPagesWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackEventsInput, arg2 func(*cloudformation.DescribeStackEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackEventsRequest(arg0 int
 }
 
 // DescribeStackEventsWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackEventsWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackEventsInput, arg2 ...request.Option) (*cloudformation.DescribeStackEventsOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackEventsWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackEventsInput, arg2 ...request.Option) (*cloudformation.DescribeStackEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -799,7 +799,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackInstanceRequest(arg0 i
 }
 
 // DescribeStackInstanceWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackInstanceWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackInstanceInput, arg2 ...request.Option) (*cloudformation.DescribeStackInstanceOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackInstanceWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackInstanceInput, arg2 ...request.Option) (*cloudformation.DescribeStackInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -863,7 +863,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackResourceDriftsPages(ar
 }
 
 // DescribeStackResourceDriftsPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackResourceDriftsPagesWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackResourceDriftsInput, arg2 func(*cloudformation.DescribeStackResourceDriftsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) DescribeStackResourceDriftsPagesWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackResourceDriftsInput, arg2 func(*cloudformation.DescribeStackResourceDriftsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -897,7 +897,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackResourceDriftsRequest(
 }
 
 // DescribeStackResourceDriftsWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackResourceDriftsWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackResourceDriftsInput, arg2 ...request.Option) (*cloudformation.DescribeStackResourceDriftsOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackResourceDriftsWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackResourceDriftsInput, arg2 ...request.Option) (*cloudformation.DescribeStackResourceDriftsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -932,7 +932,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackResourceRequest(arg0 i
 }
 
 // DescribeStackResourceWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackResourceWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackResourceInput, arg2 ...request.Option) (*cloudformation.DescribeStackResourceOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackResourceWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackResourceInput, arg2 ...request.Option) (*cloudformation.DescribeStackResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -982,7 +982,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackResourcesRequest(arg0 
 }
 
 // DescribeStackResourcesWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackResourcesWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackResourcesInput, arg2 ...request.Option) (*cloudformation.DescribeStackResourcesOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackResourcesWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackResourcesInput, arg2 ...request.Option) (*cloudformation.DescribeStackResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1047,7 +1047,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackSetOperationRequest(ar
 }
 
 // DescribeStackSetOperationWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackSetOperationWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackSetOperationInput, arg2 ...request.Option) (*cloudformation.DescribeStackSetOperationOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackSetOperationWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackSetOperationInput, arg2 ...request.Option) (*cloudformation.DescribeStackSetOperationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1082,7 +1082,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStackSetRequest(arg0 interf
 }
 
 // DescribeStackSetWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStackSetWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStackSetInput, arg2 ...request.Option) (*cloudformation.DescribeStackSetOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStackSetWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStackSetInput, arg2 ...request.Option) (*cloudformation.DescribeStackSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStacksPages(arg0, arg1 inte
 }
 
 // DescribeStacksPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStacksPagesWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStacksInput, arg2 func(*cloudformation.DescribeStacksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) DescribeStacksPagesWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 func(*cloudformation.DescribeStacksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeStacksRequest(arg0 interfac
 }
 
 // DescribeStacksWithContext mocks base method
-func (m *MockCloudFormationAPI) DescribeStacksWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.Option) (*cloudformation.DescribeStacksOutput, error) {
+func (m *MockCloudFormationAPI) DescribeStacksWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.Option) (*cloudformation.DescribeStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DetectStackDriftRequest(arg0 interf
 }
 
 // DetectStackDriftWithContext mocks base method
-func (m *MockCloudFormationAPI) DetectStackDriftWithContext(arg0 aws.Context, arg1 *cloudformation.DetectStackDriftInput, arg2 ...request.Option) (*cloudformation.DetectStackDriftOutput, error) {
+func (m *MockCloudFormationAPI) DetectStackDriftWithContext(arg0 context.Context, arg1 *cloudformation.DetectStackDriftInput, arg2 ...request.Option) (*cloudformation.DetectStackDriftOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1265,7 +1265,7 @@ func (mr *MockCloudFormationAPIMockRecorder) DetectStackResourceDriftRequest(arg
 }
 
 // DetectStackResourceDriftWithContext mocks base method
-func (m *MockCloudFormationAPI) DetectStackResourceDriftWithContext(arg0 aws.Context, arg1 *cloudformation.DetectStackResourceDriftInput, arg2 ...request.Option) (*cloudformation.DetectStackResourceDriftOutput, error) {
+func (m *MockCloudFormationAPI) DetectStackResourceDriftWithContext(arg0 context.Context, arg1 *cloudformation.DetectStackResourceDriftInput, arg2 ...request.Option) (*cloudformation.DetectStackResourceDriftOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockCloudFormationAPIMockRecorder) EstimateTemplateCostRequest(arg0 in
 }
 
 // EstimateTemplateCostWithContext mocks base method
-func (m *MockCloudFormationAPI) EstimateTemplateCostWithContext(arg0 aws.Context, arg1 *cloudformation.EstimateTemplateCostInput, arg2 ...request.Option) (*cloudformation.EstimateTemplateCostOutput, error) {
+func (m *MockCloudFormationAPI) EstimateTemplateCostWithContext(arg0 context.Context, arg1 *cloudformation.EstimateTemplateCostInput, arg2 ...request.Option) (*cloudformation.EstimateTemplateCostOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ExecuteChangeSetRequest(arg0 interf
 }
 
 // ExecuteChangeSetWithContext mocks base method
-func (m *MockCloudFormationAPI) ExecuteChangeSetWithContext(arg0 aws.Context, arg1 *cloudformation.ExecuteChangeSetInput, arg2 ...request.Option) (*cloudformation.ExecuteChangeSetOutput, error) {
+func (m *MockCloudFormationAPI) ExecuteChangeSetWithContext(arg0 context.Context, arg1 *cloudformation.ExecuteChangeSetInput, arg2 ...request.Option) (*cloudformation.ExecuteChangeSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1415,7 +1415,7 @@ func (mr *MockCloudFormationAPIMockRecorder) GetStackPolicyRequest(arg0 interfac
 }
 
 // GetStackPolicyWithContext mocks base method
-func (m *MockCloudFormationAPI) GetStackPolicyWithContext(arg0 aws.Context, arg1 *cloudformation.GetStackPolicyInput, arg2 ...request.Option) (*cloudformation.GetStackPolicyOutput, error) {
+func (m *MockCloudFormationAPI) GetStackPolicyWithContext(arg0 context.Context, arg1 *cloudformation.GetStackPolicyInput, arg2 ...request.Option) (*cloudformation.GetStackPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1495,7 +1495,7 @@ func (mr *MockCloudFormationAPIMockRecorder) GetTemplateSummaryRequest(arg0 inte
 }
 
 // GetTemplateSummaryWithContext mocks base method
-func (m *MockCloudFormationAPI) GetTemplateSummaryWithContext(arg0 aws.Context, arg1 *cloudformation.GetTemplateSummaryInput, arg2 ...request.Option) (*cloudformation.GetTemplateSummaryOutput, error) {
+func (m *MockCloudFormationAPI) GetTemplateSummaryWithContext(arg0 context.Context, arg1 *cloudformation.GetTemplateSummaryInput, arg2 ...request.Option) (*cloudformation.GetTemplateSummaryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1515,7 +1515,7 @@ func (mr *MockCloudFormationAPIMockRecorder) GetTemplateSummaryWithContext(arg0,
 }
 
 // GetTemplateWithContext mocks base method
-func (m *MockCloudFormationAPI) GetTemplateWithContext(arg0 aws.Context, arg1 *cloudformation.GetTemplateInput, arg2 ...request.Option) (*cloudformation.GetTemplateOutput, error) {
+func (m *MockCloudFormationAPI) GetTemplateWithContext(arg0 context.Context, arg1 *cloudformation.GetTemplateInput, arg2 ...request.Option) (*cloudformation.GetTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1565,7 +1565,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListChangeSetsRequest(arg0 interfac
 }
 
 // ListChangeSetsWithContext mocks base method
-func (m *MockCloudFormationAPI) ListChangeSetsWithContext(arg0 aws.Context, arg1 *cloudformation.ListChangeSetsInput, arg2 ...request.Option) (*cloudformation.ListChangeSetsOutput, error) {
+func (m *MockCloudFormationAPI) ListChangeSetsWithContext(arg0 context.Context, arg1 *cloudformation.ListChangeSetsInput, arg2 ...request.Option) (*cloudformation.ListChangeSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1614,7 +1614,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListExportsPages(arg0, arg1 interfa
 }
 
 // ListExportsPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) ListExportsPagesWithContext(arg0 aws.Context, arg1 *cloudformation.ListExportsInput, arg2 func(*cloudformation.ListExportsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) ListExportsPagesWithContext(arg0 context.Context, arg1 *cloudformation.ListExportsInput, arg2 func(*cloudformation.ListExportsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1648,7 +1648,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListExportsRequest(arg0 interface{}
 }
 
 // ListExportsWithContext mocks base method
-func (m *MockCloudFormationAPI) ListExportsWithContext(arg0 aws.Context, arg1 *cloudformation.ListExportsInput, arg2 ...request.Option) (*cloudformation.ListExportsOutput, error) {
+func (m *MockCloudFormationAPI) ListExportsWithContext(arg0 context.Context, arg1 *cloudformation.ListExportsInput, arg2 ...request.Option) (*cloudformation.ListExportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListImportsPages(arg0, arg1 interfa
 }
 
 // ListImportsPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) ListImportsPagesWithContext(arg0 aws.Context, arg1 *cloudformation.ListImportsInput, arg2 func(*cloudformation.ListImportsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) ListImportsPagesWithContext(arg0 context.Context, arg1 *cloudformation.ListImportsInput, arg2 func(*cloudformation.ListImportsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1731,7 +1731,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListImportsRequest(arg0 interface{}
 }
 
 // ListImportsWithContext mocks base method
-func (m *MockCloudFormationAPI) ListImportsWithContext(arg0 aws.Context, arg1 *cloudformation.ListImportsInput, arg2 ...request.Option) (*cloudformation.ListImportsOutput, error) {
+func (m *MockCloudFormationAPI) ListImportsWithContext(arg0 context.Context, arg1 *cloudformation.ListImportsInput, arg2 ...request.Option) (*cloudformation.ListImportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStackInstancesRequest(arg0 inte
 }
 
 // ListStackInstancesWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStackInstancesWithContext(arg0 aws.Context, arg1 *cloudformation.ListStackInstancesInput, arg2 ...request.Option) (*cloudformation.ListStackInstancesOutput, error) {
+func (m *MockCloudFormationAPI) ListStackInstancesWithContext(arg0 context.Context, arg1 *cloudformation.ListStackInstancesInput, arg2 ...request.Option) (*cloudformation.ListStackInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1830,7 +1830,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStackResourcesPages(arg0, arg1 
 }
 
 // ListStackResourcesPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStackResourcesPagesWithContext(arg0 aws.Context, arg1 *cloudformation.ListStackResourcesInput, arg2 func(*cloudformation.ListStackResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) ListStackResourcesPagesWithContext(arg0 context.Context, arg1 *cloudformation.ListStackResourcesInput, arg2 func(*cloudformation.ListStackResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1864,7 +1864,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStackResourcesRequest(arg0 inte
 }
 
 // ListStackResourcesWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStackResourcesWithContext(arg0 aws.Context, arg1 *cloudformation.ListStackResourcesInput, arg2 ...request.Option) (*cloudformation.ListStackResourcesOutput, error) {
+func (m *MockCloudFormationAPI) ListStackResourcesWithContext(arg0 context.Context, arg1 *cloudformation.ListStackResourcesInput, arg2 ...request.Option) (*cloudformation.ListStackResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1914,7 +1914,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStackSetOperationResultsRequest
 }
 
 // ListStackSetOperationResultsWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStackSetOperationResultsWithContext(arg0 aws.Context, arg1 *cloudformation.ListStackSetOperationResultsInput, arg2 ...request.Option) (*cloudformation.ListStackSetOperationResultsOutput, error) {
+func (m *MockCloudFormationAPI) ListStackSetOperationResultsWithContext(arg0 context.Context, arg1 *cloudformation.ListStackSetOperationResultsInput, arg2 ...request.Option) (*cloudformation.ListStackSetOperationResultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1964,7 +1964,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStackSetOperationsRequest(arg0 
 }
 
 // ListStackSetOperationsWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStackSetOperationsWithContext(arg0 aws.Context, arg1 *cloudformation.ListStackSetOperationsInput, arg2 ...request.Option) (*cloudformation.ListStackSetOperationsOutput, error) {
+func (m *MockCloudFormationAPI) ListStackSetOperationsWithContext(arg0 context.Context, arg1 *cloudformation.ListStackSetOperationsInput, arg2 ...request.Option) (*cloudformation.ListStackSetOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2014,7 +2014,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStackSetsRequest(arg0 interface
 }
 
 // ListStackSetsWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStackSetsWithContext(arg0 aws.Context, arg1 *cloudformation.ListStackSetsInput, arg2 ...request.Option) (*cloudformation.ListStackSetsOutput, error) {
+func (m *MockCloudFormationAPI) ListStackSetsWithContext(arg0 context.Context, arg1 *cloudformation.ListStackSetsInput, arg2 ...request.Option) (*cloudformation.ListStackSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2063,7 +2063,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStacksPages(arg0, arg1 interfac
 }
 
 // ListStacksPagesWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStacksPagesWithContext(arg0 aws.Context, arg1 *cloudformation.ListStacksInput, arg2 func(*cloudformation.ListStacksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFormationAPI) ListStacksPagesWithContext(arg0 context.Context, arg1 *cloudformation.ListStacksInput, arg2 func(*cloudformation.ListStacksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2097,7 +2097,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ListStacksRequest(arg0 interface{})
 }
 
 // ListStacksWithContext mocks base method
-func (m *MockCloudFormationAPI) ListStacksWithContext(arg0 aws.Context, arg1 *cloudformation.ListStacksInput, arg2 ...request.Option) (*cloudformation.ListStacksOutput, error) {
+func (m *MockCloudFormationAPI) ListStacksWithContext(arg0 context.Context, arg1 *cloudformation.ListStacksInput, arg2 ...request.Option) (*cloudformation.ListStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2147,7 +2147,7 @@ func (mr *MockCloudFormationAPIMockRecorder) SetStackPolicyRequest(arg0 interfac
 }
 
 // SetStackPolicyWithContext mocks base method
-func (m *MockCloudFormationAPI) SetStackPolicyWithContext(arg0 aws.Context, arg1 *cloudformation.SetStackPolicyInput, arg2 ...request.Option) (*cloudformation.SetStackPolicyOutput, error) {
+func (m *MockCloudFormationAPI) SetStackPolicyWithContext(arg0 context.Context, arg1 *cloudformation.SetStackPolicyInput, arg2 ...request.Option) (*cloudformation.SetStackPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2197,7 +2197,7 @@ func (mr *MockCloudFormationAPIMockRecorder) SignalResourceRequest(arg0 interfac
 }
 
 // SignalResourceWithContext mocks base method
-func (m *MockCloudFormationAPI) SignalResourceWithContext(arg0 aws.Context, arg1 *cloudformation.SignalResourceInput, arg2 ...request.Option) (*cloudformation.SignalResourceOutput, error) {
+func (m *MockCloudFormationAPI) SignalResourceWithContext(arg0 context.Context, arg1 *cloudformation.SignalResourceInput, arg2 ...request.Option) (*cloudformation.SignalResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2247,7 +2247,7 @@ func (mr *MockCloudFormationAPIMockRecorder) StopStackSetOperationRequest(arg0 i
 }
 
 // StopStackSetOperationWithContext mocks base method
-func (m *MockCloudFormationAPI) StopStackSetOperationWithContext(arg0 aws.Context, arg1 *cloudformation.StopStackSetOperationInput, arg2 ...request.Option) (*cloudformation.StopStackSetOperationOutput, error) {
+func (m *MockCloudFormationAPI) StopStackSetOperationWithContext(arg0 context.Context, arg1 *cloudformation.StopStackSetOperationInput, arg2 ...request.Option) (*cloudformation.StopStackSetOperationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2312,7 +2312,7 @@ func (mr *MockCloudFormationAPIMockRecorder) UpdateStackInstancesRequest(arg0 in
 }
 
 // UpdateStackInstancesWithContext mocks base method
-func (m *MockCloudFormationAPI) UpdateStackInstancesWithContext(arg0 aws.Context, arg1 *cloudformation.UpdateStackInstancesInput, arg2 ...request.Option) (*cloudformation.UpdateStackInstancesOutput, error) {
+func (m *MockCloudFormationAPI) UpdateStackInstancesWithContext(arg0 context.Context, arg1 *cloudformation.UpdateStackInstancesInput, arg2 ...request.Option) (*cloudformation.UpdateStackInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2377,7 +2377,7 @@ func (mr *MockCloudFormationAPIMockRecorder) UpdateStackSetRequest(arg0 interfac
 }
 
 // UpdateStackSetWithContext mocks base method
-func (m *MockCloudFormationAPI) UpdateStackSetWithContext(arg0 aws.Context, arg1 *cloudformation.UpdateStackSetInput, arg2 ...request.Option) (*cloudformation.UpdateStackSetOutput, error) {
+func (m *MockCloudFormationAPI) UpdateStackSetWithContext(arg0 context.Context, arg1 *cloudformation.UpdateStackSetInput, arg2 ...request.Option) (*cloudformation.UpdateStackSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2397,7 +2397,7 @@ func (mr *MockCloudFormationAPIMockRecorder) UpdateStackSetWithContext(arg0, arg
 }
 
 // UpdateStackWithContext mocks base method
-func (m *MockCloudFormationAPI) UpdateStackWithContext(arg0 aws.Context, arg1 *cloudformation.UpdateStackInput, arg2 ...request.Option) (*cloudformation.UpdateStackOutput, error) {
+func (m *MockCloudFormationAPI) UpdateStackWithContext(arg0 context.Context, arg1 *cloudformation.UpdateStackInput, arg2 ...request.Option) (*cloudformation.UpdateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2447,7 +2447,7 @@ func (mr *MockCloudFormationAPIMockRecorder) UpdateTerminationProtectionRequest(
 }
 
 // UpdateTerminationProtectionWithContext mocks base method
-func (m *MockCloudFormationAPI) UpdateTerminationProtectionWithContext(arg0 aws.Context, arg1 *cloudformation.UpdateTerminationProtectionInput, arg2 ...request.Option) (*cloudformation.UpdateTerminationProtectionOutput, error) {
+func (m *MockCloudFormationAPI) UpdateTerminationProtectionWithContext(arg0 context.Context, arg1 *cloudformation.UpdateTerminationProtectionInput, arg2 ...request.Option) (*cloudformation.UpdateTerminationProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2497,7 +2497,7 @@ func (mr *MockCloudFormationAPIMockRecorder) ValidateTemplateRequest(arg0 interf
 }
 
 // ValidateTemplateWithContext mocks base method
-func (m *MockCloudFormationAPI) ValidateTemplateWithContext(arg0 aws.Context, arg1 *cloudformation.ValidateTemplateInput, arg2 ...request.Option) (*cloudformation.ValidateTemplateOutput, error) {
+func (m *MockCloudFormationAPI) ValidateTemplateWithContext(arg0 context.Context, arg1 *cloudformation.ValidateTemplateInput, arg2 ...request.Option) (*cloudformation.ValidateTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2531,7 +2531,7 @@ func (mr *MockCloudFormationAPIMockRecorder) WaitUntilChangeSetCreateComplete(ar
 }
 
 // WaitUntilChangeSetCreateCompleteWithContext mocks base method
-func (m *MockCloudFormationAPI) WaitUntilChangeSetCreateCompleteWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeChangeSetInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFormationAPI) WaitUntilChangeSetCreateCompleteWithContext(arg0 context.Context, arg1 *cloudformation.DescribeChangeSetInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2564,7 +2564,7 @@ func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackCreateComplete(arg0 i
 }
 
 // WaitUntilStackCreateCompleteWithContext mocks base method
-func (m *MockCloudFormationAPI) WaitUntilStackCreateCompleteWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFormationAPI) WaitUntilStackCreateCompleteWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2597,7 +2597,7 @@ func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackDeleteComplete(arg0 i
 }
 
 // WaitUntilStackDeleteCompleteWithContext mocks base method
-func (m *MockCloudFormationAPI) WaitUntilStackDeleteCompleteWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFormationAPI) WaitUntilStackDeleteCompleteWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2630,7 +2630,7 @@ func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackExists(arg0 interface
 }
 
 // WaitUntilStackExistsWithContext mocks base method
-func (m *MockCloudFormationAPI) WaitUntilStackExistsWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFormationAPI) WaitUntilStackExistsWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2663,7 +2663,7 @@ func (mr *MockCloudFormationAPIMockRecorder) WaitUntilStackUpdateComplete(arg0 i
 }
 
 // WaitUntilStackUpdateCompleteWithContext mocks base method
-func (m *MockCloudFormationAPI) WaitUntilStackUpdateCompleteWithContext(arg0 aws.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFormationAPI) WaitUntilStackUpdateCompleteWithContext(arg0 context.Context, arg1 *cloudformation.DescribeStacksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

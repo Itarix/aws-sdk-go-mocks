@@ -5,7 +5,7 @@
 package applicationautoscalingmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	applicationautoscaling "github.com/aws/aws-sdk-go/service/applicationautoscaling"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DeleteScalingPolicyRequest(
 }
 
 // DeleteScalingPolicyWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DeleteScalingPolicyWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DeleteScalingPolicyInput, arg2 ...request.Option) (*applicationautoscaling.DeleteScalingPolicyOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DeleteScalingPolicyWithContext(arg0 context.Context, arg1 *applicationautoscaling.DeleteScalingPolicyInput, arg2 ...request.Option) (*applicationautoscaling.DeleteScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DeleteScheduledActionReques
 }
 
 // DeleteScheduledActionWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DeleteScheduledActionWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DeleteScheduledActionInput, arg2 ...request.Option) (*applicationautoscaling.DeleteScheduledActionOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DeleteScheduledActionWithContext(arg0 context.Context, arg1 *applicationautoscaling.DeleteScheduledActionInput, arg2 ...request.Option) (*applicationautoscaling.DeleteScheduledActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DeregisterScalableTargetReq
 }
 
 // DeregisterScalableTargetWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DeregisterScalableTargetWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DeregisterScalableTargetInput, arg2 ...request.Option) (*applicationautoscaling.DeregisterScalableTargetOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DeregisterScalableTargetWithContext(arg0 context.Context, arg1 *applicationautoscaling.DeregisterScalableTargetInput, arg2 ...request.Option) (*applicationautoscaling.DeregisterScalableTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -215,7 +215,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScalableTargetsPage
 }
 
 // DescribeScalableTargetsPagesWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScalableTargetsPagesWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScalableTargetsInput, arg2 func(*applicationautoscaling.DescribeScalableTargetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockApplicationAutoScalingAPI) DescribeScalableTargetsPagesWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScalableTargetsInput, arg2 func(*applicationautoscaling.DescribeScalableTargetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -249,7 +249,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScalableTargetsRequ
 }
 
 // DescribeScalableTargetsWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScalableTargetsWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScalableTargetsInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScalableTargetsOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DescribeScalableTargetsWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScalableTargetsInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScalableTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -298,7 +298,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScalingActivitiesPa
 }
 
 // DescribeScalingActivitiesPagesWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScalingActivitiesPagesWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScalingActivitiesInput, arg2 func(*applicationautoscaling.DescribeScalingActivitiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockApplicationAutoScalingAPI) DescribeScalingActivitiesPagesWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScalingActivitiesInput, arg2 func(*applicationautoscaling.DescribeScalingActivitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -332,7 +332,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScalingActivitiesRe
 }
 
 // DescribeScalingActivitiesWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScalingActivitiesWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScalingActivitiesInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScalingActivitiesOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DescribeScalingActivitiesWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScalingActivitiesInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScalingActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScalingPoliciesPage
 }
 
 // DescribeScalingPoliciesPagesWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScalingPoliciesPagesWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScalingPoliciesInput, arg2 func(*applicationautoscaling.DescribeScalingPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockApplicationAutoScalingAPI) DescribeScalingPoliciesPagesWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScalingPoliciesInput, arg2 func(*applicationautoscaling.DescribeScalingPoliciesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -415,7 +415,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScalingPoliciesRequ
 }
 
 // DescribeScalingPoliciesWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScalingPoliciesWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScalingPoliciesInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScalingPoliciesOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DescribeScalingPoliciesWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScalingPoliciesInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScalingPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -465,7 +465,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScheduledActionsReq
 }
 
 // DescribeScheduledActionsWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) DescribeScheduledActionsWithContext(arg0 aws.Context, arg1 *applicationautoscaling.DescribeScheduledActionsInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScheduledActionsOutput, error) {
+func (m *MockApplicationAutoScalingAPI) DescribeScheduledActionsWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScheduledActionsInput, arg2 ...request.Option) (*applicationautoscaling.DescribeScheduledActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) PutScalingPolicyRequest(arg
 }
 
 // PutScalingPolicyWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) PutScalingPolicyWithContext(arg0 aws.Context, arg1 *applicationautoscaling.PutScalingPolicyInput, arg2 ...request.Option) (*applicationautoscaling.PutScalingPolicyOutput, error) {
+func (m *MockApplicationAutoScalingAPI) PutScalingPolicyWithContext(arg0 context.Context, arg1 *applicationautoscaling.PutScalingPolicyInput, arg2 ...request.Option) (*applicationautoscaling.PutScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -565,7 +565,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) PutScheduledActionRequest(a
 }
 
 // PutScheduledActionWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) PutScheduledActionWithContext(arg0 aws.Context, arg1 *applicationautoscaling.PutScheduledActionInput, arg2 ...request.Option) (*applicationautoscaling.PutScheduledActionOutput, error) {
+func (m *MockApplicationAutoScalingAPI) PutScheduledActionWithContext(arg0 context.Context, arg1 *applicationautoscaling.PutScheduledActionInput, arg2 ...request.Option) (*applicationautoscaling.PutScheduledActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -615,7 +615,7 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) RegisterScalableTargetReque
 }
 
 // RegisterScalableTargetWithContext mocks base method
-func (m *MockApplicationAutoScalingAPI) RegisterScalableTargetWithContext(arg0 aws.Context, arg1 *applicationautoscaling.RegisterScalableTargetInput, arg2 ...request.Option) (*applicationautoscaling.RegisterScalableTargetOutput, error) {
+func (m *MockApplicationAutoScalingAPI) RegisterScalableTargetWithContext(arg0 context.Context, arg1 *applicationautoscaling.RegisterScalableTargetInput, arg2 ...request.Option) (*applicationautoscaling.RegisterScalableTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

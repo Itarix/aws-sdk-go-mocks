@@ -5,7 +5,7 @@
 package signermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	signer "github.com/aws/aws-sdk-go/service/signer"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSignerAPIMockRecorder) CancelSigningProfileRequest(arg0 interface{
 }
 
 // CancelSigningProfileWithContext mocks base method
-func (m *MockSignerAPI) CancelSigningProfileWithContext(arg0 aws.Context, arg1 *signer.CancelSigningProfileInput, arg2 ...request.Option) (*signer.CancelSigningProfileOutput, error) {
+func (m *MockSignerAPI) CancelSigningProfileWithContext(arg0 context.Context, arg1 *signer.CancelSigningProfileInput, arg2 ...request.Option) (*signer.CancelSigningProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSignerAPIMockRecorder) DescribeSigningJobRequest(arg0 interface{})
 }
 
 // DescribeSigningJobWithContext mocks base method
-func (m *MockSignerAPI) DescribeSigningJobWithContext(arg0 aws.Context, arg1 *signer.DescribeSigningJobInput, arg2 ...request.Option) (*signer.DescribeSigningJobOutput, error) {
+func (m *MockSignerAPI) DescribeSigningJobWithContext(arg0 context.Context, arg1 *signer.DescribeSigningJobInput, arg2 ...request.Option) (*signer.DescribeSigningJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSignerAPIMockRecorder) GetSigningPlatformRequest(arg0 interface{})
 }
 
 // GetSigningPlatformWithContext mocks base method
-func (m *MockSignerAPI) GetSigningPlatformWithContext(arg0 aws.Context, arg1 *signer.GetSigningPlatformInput, arg2 ...request.Option) (*signer.GetSigningPlatformOutput, error) {
+func (m *MockSignerAPI) GetSigningPlatformWithContext(arg0 context.Context, arg1 *signer.GetSigningPlatformInput, arg2 ...request.Option) (*signer.GetSigningPlatformOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSignerAPIMockRecorder) GetSigningProfileRequest(arg0 interface{}) 
 }
 
 // GetSigningProfileWithContext mocks base method
-func (m *MockSignerAPI) GetSigningProfileWithContext(arg0 aws.Context, arg1 *signer.GetSigningProfileInput, arg2 ...request.Option) (*signer.GetSigningProfileOutput, error) {
+func (m *MockSignerAPI) GetSigningProfileWithContext(arg0 context.Context, arg1 *signer.GetSigningProfileInput, arg2 ...request.Option) (*signer.GetSigningProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -265,7 +265,7 @@ func (mr *MockSignerAPIMockRecorder) ListSigningJobsPages(arg0, arg1 interface{}
 }
 
 // ListSigningJobsPagesWithContext mocks base method
-func (m *MockSignerAPI) ListSigningJobsPagesWithContext(arg0 aws.Context, arg1 *signer.ListSigningJobsInput, arg2 func(*signer.ListSigningJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSignerAPI) ListSigningJobsPagesWithContext(arg0 context.Context, arg1 *signer.ListSigningJobsInput, arg2 func(*signer.ListSigningJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -299,7 +299,7 @@ func (mr *MockSignerAPIMockRecorder) ListSigningJobsRequest(arg0 interface{}) *g
 }
 
 // ListSigningJobsWithContext mocks base method
-func (m *MockSignerAPI) ListSigningJobsWithContext(arg0 aws.Context, arg1 *signer.ListSigningJobsInput, arg2 ...request.Option) (*signer.ListSigningJobsOutput, error) {
+func (m *MockSignerAPI) ListSigningJobsWithContext(arg0 context.Context, arg1 *signer.ListSigningJobsInput, arg2 ...request.Option) (*signer.ListSigningJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -348,7 +348,7 @@ func (mr *MockSignerAPIMockRecorder) ListSigningPlatformsPages(arg0, arg1 interf
 }
 
 // ListSigningPlatformsPagesWithContext mocks base method
-func (m *MockSignerAPI) ListSigningPlatformsPagesWithContext(arg0 aws.Context, arg1 *signer.ListSigningPlatformsInput, arg2 func(*signer.ListSigningPlatformsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSignerAPI) ListSigningPlatformsPagesWithContext(arg0 context.Context, arg1 *signer.ListSigningPlatformsInput, arg2 func(*signer.ListSigningPlatformsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -382,7 +382,7 @@ func (mr *MockSignerAPIMockRecorder) ListSigningPlatformsRequest(arg0 interface{
 }
 
 // ListSigningPlatformsWithContext mocks base method
-func (m *MockSignerAPI) ListSigningPlatformsWithContext(arg0 aws.Context, arg1 *signer.ListSigningPlatformsInput, arg2 ...request.Option) (*signer.ListSigningPlatformsOutput, error) {
+func (m *MockSignerAPI) ListSigningPlatformsWithContext(arg0 context.Context, arg1 *signer.ListSigningPlatformsInput, arg2 ...request.Option) (*signer.ListSigningPlatformsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockSignerAPIMockRecorder) ListSigningProfilesPages(arg0, arg1 interfa
 }
 
 // ListSigningProfilesPagesWithContext mocks base method
-func (m *MockSignerAPI) ListSigningProfilesPagesWithContext(arg0 aws.Context, arg1 *signer.ListSigningProfilesInput, arg2 func(*signer.ListSigningProfilesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSignerAPI) ListSigningProfilesPagesWithContext(arg0 context.Context, arg1 *signer.ListSigningProfilesInput, arg2 func(*signer.ListSigningProfilesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -465,7 +465,7 @@ func (mr *MockSignerAPIMockRecorder) ListSigningProfilesRequest(arg0 interface{}
 }
 
 // ListSigningProfilesWithContext mocks base method
-func (m *MockSignerAPI) ListSigningProfilesWithContext(arg0 aws.Context, arg1 *signer.ListSigningProfilesInput, arg2 ...request.Option) (*signer.ListSigningProfilesOutput, error) {
+func (m *MockSignerAPI) ListSigningProfilesWithContext(arg0 context.Context, arg1 *signer.ListSigningProfilesInput, arg2 ...request.Option) (*signer.ListSigningProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockSignerAPIMockRecorder) PutSigningProfileRequest(arg0 interface{}) 
 }
 
 // PutSigningProfileWithContext mocks base method
-func (m *MockSignerAPI) PutSigningProfileWithContext(arg0 aws.Context, arg1 *signer.PutSigningProfileInput, arg2 ...request.Option) (*signer.PutSigningProfileOutput, error) {
+func (m *MockSignerAPI) PutSigningProfileWithContext(arg0 context.Context, arg1 *signer.PutSigningProfileInput, arg2 ...request.Option) (*signer.PutSigningProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -565,7 +565,7 @@ func (mr *MockSignerAPIMockRecorder) StartSigningJobRequest(arg0 interface{}) *g
 }
 
 // StartSigningJobWithContext mocks base method
-func (m *MockSignerAPI) StartSigningJobWithContext(arg0 aws.Context, arg1 *signer.StartSigningJobInput, arg2 ...request.Option) (*signer.StartSigningJobOutput, error) {
+func (m *MockSignerAPI) StartSigningJobWithContext(arg0 context.Context, arg1 *signer.StartSigningJobInput, arg2 ...request.Option) (*signer.StartSigningJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockSignerAPIMockRecorder) WaitUntilSuccessfulSigningJob(arg0 interfac
 }
 
 // WaitUntilSuccessfulSigningJobWithContext mocks base method
-func (m *MockSignerAPI) WaitUntilSuccessfulSigningJobWithContext(arg0 aws.Context, arg1 *signer.DescribeSigningJobInput, arg2 ...request.WaiterOption) error {
+func (m *MockSignerAPI) WaitUntilSuccessfulSigningJobWithContext(arg0 context.Context, arg1 *signer.DescribeSigningJobInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

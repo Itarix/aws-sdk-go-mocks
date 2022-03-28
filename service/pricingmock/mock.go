@@ -5,7 +5,7 @@
 package pricingmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	pricing "github.com/aws/aws-sdk-go/service/pricing"
 	gomock "github.com/golang/mock/gomock"
@@ -65,7 +65,7 @@ func (mr *MockPricingAPIMockRecorder) DescribeServicesPages(arg0, arg1 interface
 }
 
 // DescribeServicesPagesWithContext mocks base method
-func (m *MockPricingAPI) DescribeServicesPagesWithContext(arg0 aws.Context, arg1 *pricing.DescribeServicesInput, arg2 func(*pricing.DescribeServicesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPricingAPI) DescribeServicesPagesWithContext(arg0 context.Context, arg1 *pricing.DescribeServicesInput, arg2 func(*pricing.DescribeServicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -99,7 +99,7 @@ func (mr *MockPricingAPIMockRecorder) DescribeServicesRequest(arg0 interface{}) 
 }
 
 // DescribeServicesWithContext mocks base method
-func (m *MockPricingAPI) DescribeServicesWithContext(arg0 aws.Context, arg1 *pricing.DescribeServicesInput, arg2 ...request.Option) (*pricing.DescribeServicesOutput, error) {
+func (m *MockPricingAPI) DescribeServicesWithContext(arg0 context.Context, arg1 *pricing.DescribeServicesInput, arg2 ...request.Option) (*pricing.DescribeServicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -148,7 +148,7 @@ func (mr *MockPricingAPIMockRecorder) GetAttributeValuesPages(arg0, arg1 interfa
 }
 
 // GetAttributeValuesPagesWithContext mocks base method
-func (m *MockPricingAPI) GetAttributeValuesPagesWithContext(arg0 aws.Context, arg1 *pricing.GetAttributeValuesInput, arg2 func(*pricing.GetAttributeValuesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPricingAPI) GetAttributeValuesPagesWithContext(arg0 context.Context, arg1 *pricing.GetAttributeValuesInput, arg2 func(*pricing.GetAttributeValuesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -182,7 +182,7 @@ func (mr *MockPricingAPIMockRecorder) GetAttributeValuesRequest(arg0 interface{}
 }
 
 // GetAttributeValuesWithContext mocks base method
-func (m *MockPricingAPI) GetAttributeValuesWithContext(arg0 aws.Context, arg1 *pricing.GetAttributeValuesInput, arg2 ...request.Option) (*pricing.GetAttributeValuesOutput, error) {
+func (m *MockPricingAPI) GetAttributeValuesWithContext(arg0 context.Context, arg1 *pricing.GetAttributeValuesInput, arg2 ...request.Option) (*pricing.GetAttributeValuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockPricingAPIMockRecorder) GetProductsPages(arg0, arg1 interface{}) *
 }
 
 // GetProductsPagesWithContext mocks base method
-func (m *MockPricingAPI) GetProductsPagesWithContext(arg0 aws.Context, arg1 *pricing.GetProductsInput, arg2 func(*pricing.GetProductsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPricingAPI) GetProductsPagesWithContext(arg0 context.Context, arg1 *pricing.GetProductsInput, arg2 func(*pricing.GetProductsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -265,7 +265,7 @@ func (mr *MockPricingAPIMockRecorder) GetProductsRequest(arg0 interface{}) *gomo
 }
 
 // GetProductsWithContext mocks base method
-func (m *MockPricingAPI) GetProductsWithContext(arg0 aws.Context, arg1 *pricing.GetProductsInput, arg2 ...request.Option) (*pricing.GetProductsOutput, error) {
+func (m *MockPricingAPI) GetProductsWithContext(arg0 context.Context, arg1 *pricing.GetProductsInput, arg2 ...request.Option) (*pricing.GetProductsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

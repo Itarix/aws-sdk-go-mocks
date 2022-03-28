@@ -5,7 +5,7 @@
 package datasyncmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	datasync "github.com/aws/aws-sdk-go/service/datasync"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDataSyncAPIMockRecorder) CancelTaskExecutionRequest(arg0 interface
 }
 
 // CancelTaskExecutionWithContext mocks base method
-func (m *MockDataSyncAPI) CancelTaskExecutionWithContext(arg0 aws.Context, arg1 *datasync.CancelTaskExecutionInput, arg2 ...request.Option) (*datasync.CancelTaskExecutionOutput, error) {
+func (m *MockDataSyncAPI) CancelTaskExecutionWithContext(arg0 context.Context, arg1 *datasync.CancelTaskExecutionInput, arg2 ...request.Option) (*datasync.CancelTaskExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDataSyncAPIMockRecorder) CreateAgentRequest(arg0 interface{}) *gom
 }
 
 // CreateAgentWithContext mocks base method
-func (m *MockDataSyncAPI) CreateAgentWithContext(arg0 aws.Context, arg1 *datasync.CreateAgentInput, arg2 ...request.Option) (*datasync.CreateAgentOutput, error) {
+func (m *MockDataSyncAPI) CreateAgentWithContext(arg0 context.Context, arg1 *datasync.CreateAgentInput, arg2 ...request.Option) (*datasync.CreateAgentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationEfsRequest(arg0 interface{}
 }
 
 // CreateLocationEfsWithContext mocks base method
-func (m *MockDataSyncAPI) CreateLocationEfsWithContext(arg0 aws.Context, arg1 *datasync.CreateLocationEfsInput, arg2 ...request.Option) (*datasync.CreateLocationEfsOutput, error) {
+func (m *MockDataSyncAPI) CreateLocationEfsWithContext(arg0 context.Context, arg1 *datasync.CreateLocationEfsInput, arg2 ...request.Option) (*datasync.CreateLocationEfsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationNfsRequest(arg0 interface{}
 }
 
 // CreateLocationNfsWithContext mocks base method
-func (m *MockDataSyncAPI) CreateLocationNfsWithContext(arg0 aws.Context, arg1 *datasync.CreateLocationNfsInput, arg2 ...request.Option) (*datasync.CreateLocationNfsOutput, error) {
+func (m *MockDataSyncAPI) CreateLocationNfsWithContext(arg0 context.Context, arg1 *datasync.CreateLocationNfsInput, arg2 ...request.Option) (*datasync.CreateLocationNfsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationS3Request(arg0 interface{})
 }
 
 // CreateLocationS3WithContext mocks base method
-func (m *MockDataSyncAPI) CreateLocationS3WithContext(arg0 aws.Context, arg1 *datasync.CreateLocationS3Input, arg2 ...request.Option) (*datasync.CreateLocationS3Output, error) {
+func (m *MockDataSyncAPI) CreateLocationS3WithContext(arg0 context.Context, arg1 *datasync.CreateLocationS3Input, arg2 ...request.Option) (*datasync.CreateLocationS3Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockDataSyncAPIMockRecorder) CreateTaskRequest(arg0 interface{}) *gomo
 }
 
 // CreateTaskWithContext mocks base method
-func (m *MockDataSyncAPI) CreateTaskWithContext(arg0 aws.Context, arg1 *datasync.CreateTaskInput, arg2 ...request.Option) (*datasync.CreateTaskOutput, error) {
+func (m *MockDataSyncAPI) CreateTaskWithContext(arg0 context.Context, arg1 *datasync.CreateTaskInput, arg2 ...request.Option) (*datasync.CreateTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDataSyncAPIMockRecorder) DeleteAgentRequest(arg0 interface{}) *gom
 }
 
 // DeleteAgentWithContext mocks base method
-func (m *MockDataSyncAPI) DeleteAgentWithContext(arg0 aws.Context, arg1 *datasync.DeleteAgentInput, arg2 ...request.Option) (*datasync.DeleteAgentOutput, error) {
+func (m *MockDataSyncAPI) DeleteAgentWithContext(arg0 context.Context, arg1 *datasync.DeleteAgentInput, arg2 ...request.Option) (*datasync.DeleteAgentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDataSyncAPIMockRecorder) DeleteLocationRequest(arg0 interface{}) *
 }
 
 // DeleteLocationWithContext mocks base method
-func (m *MockDataSyncAPI) DeleteLocationWithContext(arg0 aws.Context, arg1 *datasync.DeleteLocationInput, arg2 ...request.Option) (*datasync.DeleteLocationOutput, error) {
+func (m *MockDataSyncAPI) DeleteLocationWithContext(arg0 context.Context, arg1 *datasync.DeleteLocationInput, arg2 ...request.Option) (*datasync.DeleteLocationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDataSyncAPIMockRecorder) DeleteTaskRequest(arg0 interface{}) *gomo
 }
 
 // DeleteTaskWithContext mocks base method
-func (m *MockDataSyncAPI) DeleteTaskWithContext(arg0 aws.Context, arg1 *datasync.DeleteTaskInput, arg2 ...request.Option) (*datasync.DeleteTaskOutput, error) {
+func (m *MockDataSyncAPI) DeleteTaskWithContext(arg0 context.Context, arg1 *datasync.DeleteTaskInput, arg2 ...request.Option) (*datasync.DeleteTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeAgentRequest(arg0 interface{}) *g
 }
 
 // DescribeAgentWithContext mocks base method
-func (m *MockDataSyncAPI) DescribeAgentWithContext(arg0 aws.Context, arg1 *datasync.DescribeAgentInput, arg2 ...request.Option) (*datasync.DescribeAgentOutput, error) {
+func (m *MockDataSyncAPI) DescribeAgentWithContext(arg0 context.Context, arg1 *datasync.DescribeAgentInput, arg2 ...request.Option) (*datasync.DescribeAgentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationEfsRequest(arg0 interface
 }
 
 // DescribeLocationEfsWithContext mocks base method
-func (m *MockDataSyncAPI) DescribeLocationEfsWithContext(arg0 aws.Context, arg1 *datasync.DescribeLocationEfsInput, arg2 ...request.Option) (*datasync.DescribeLocationEfsOutput, error) {
+func (m *MockDataSyncAPI) DescribeLocationEfsWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationEfsInput, arg2 ...request.Option) (*datasync.DescribeLocationEfsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationNfsRequest(arg0 interface
 }
 
 // DescribeLocationNfsWithContext mocks base method
-func (m *MockDataSyncAPI) DescribeLocationNfsWithContext(arg0 aws.Context, arg1 *datasync.DescribeLocationNfsInput, arg2 ...request.Option) (*datasync.DescribeLocationNfsOutput, error) {
+func (m *MockDataSyncAPI) DescribeLocationNfsWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationNfsInput, arg2 ...request.Option) (*datasync.DescribeLocationNfsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationS3Request(arg0 interface{
 }
 
 // DescribeLocationS3WithContext mocks base method
-func (m *MockDataSyncAPI) DescribeLocationS3WithContext(arg0 aws.Context, arg1 *datasync.DescribeLocationS3Input, arg2 ...request.Option) (*datasync.DescribeLocationS3Output, error) {
+func (m *MockDataSyncAPI) DescribeLocationS3WithContext(arg0 context.Context, arg1 *datasync.DescribeLocationS3Input, arg2 ...request.Option) (*datasync.DescribeLocationS3Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeTaskExecutionRequest(arg0 interfa
 }
 
 // DescribeTaskExecutionWithContext mocks base method
-func (m *MockDataSyncAPI) DescribeTaskExecutionWithContext(arg0 aws.Context, arg1 *datasync.DescribeTaskExecutionInput, arg2 ...request.Option) (*datasync.DescribeTaskExecutionOutput, error) {
+func (m *MockDataSyncAPI) DescribeTaskExecutionWithContext(arg0 context.Context, arg1 *datasync.DescribeTaskExecutionInput, arg2 ...request.Option) (*datasync.DescribeTaskExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeTaskRequest(arg0 interface{}) *go
 }
 
 // DescribeTaskWithContext mocks base method
-func (m *MockDataSyncAPI) DescribeTaskWithContext(arg0 aws.Context, arg1 *datasync.DescribeTaskInput, arg2 ...request.Option) (*datasync.DescribeTaskOutput, error) {
+func (m *MockDataSyncAPI) DescribeTaskWithContext(arg0 context.Context, arg1 *datasync.DescribeTaskInput, arg2 ...request.Option) (*datasync.DescribeTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -815,7 +815,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListAgentsPages(arg0, arg1 interface{}) *
 }
 
 // ListAgentsPagesWithContext mocks base method
-func (m *MockDataSyncAPI) ListAgentsPagesWithContext(arg0 aws.Context, arg1 *datasync.ListAgentsInput, arg2 func(*datasync.ListAgentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataSyncAPI) ListAgentsPagesWithContext(arg0 context.Context, arg1 *datasync.ListAgentsInput, arg2 func(*datasync.ListAgentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -849,7 +849,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListAgentsRequest(arg0 interface{}) *gomo
 }
 
 // ListAgentsWithContext mocks base method
-func (m *MockDataSyncAPI) ListAgentsWithContext(arg0 aws.Context, arg1 *datasync.ListAgentsInput, arg2 ...request.Option) (*datasync.ListAgentsOutput, error) {
+func (m *MockDataSyncAPI) ListAgentsWithContext(arg0 context.Context, arg1 *datasync.ListAgentsInput, arg2 ...request.Option) (*datasync.ListAgentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -898,7 +898,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListLocationsPages(arg0, arg1 interface{}
 }
 
 // ListLocationsPagesWithContext mocks base method
-func (m *MockDataSyncAPI) ListLocationsPagesWithContext(arg0 aws.Context, arg1 *datasync.ListLocationsInput, arg2 func(*datasync.ListLocationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataSyncAPI) ListLocationsPagesWithContext(arg0 context.Context, arg1 *datasync.ListLocationsInput, arg2 func(*datasync.ListLocationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -932,7 +932,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListLocationsRequest(arg0 interface{}) *g
 }
 
 // ListLocationsWithContext mocks base method
-func (m *MockDataSyncAPI) ListLocationsWithContext(arg0 aws.Context, arg1 *datasync.ListLocationsInput, arg2 ...request.Option) (*datasync.ListLocationsOutput, error) {
+func (m *MockDataSyncAPI) ListLocationsWithContext(arg0 context.Context, arg1 *datasync.ListLocationsInput, arg2 ...request.Option) (*datasync.ListLocationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -981,7 +981,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 inter
 }
 
 // ListTagsForResourcePagesWithContext mocks base method
-func (m *MockDataSyncAPI) ListTagsForResourcePagesWithContext(arg0 aws.Context, arg1 *datasync.ListTagsForResourceInput, arg2 func(*datasync.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataSyncAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *datasync.ListTagsForResourceInput, arg2 func(*datasync.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1015,7 +1015,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListTagsForResourceRequest(arg0 interface
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockDataSyncAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *datasync.ListTagsForResourceInput, arg2 ...request.Option) (*datasync.ListTagsForResourceOutput, error) {
+func (m *MockDataSyncAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *datasync.ListTagsForResourceInput, arg2 ...request.Option) (*datasync.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1064,7 +1064,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListTaskExecutionsPages(arg0, arg1 interf
 }
 
 // ListTaskExecutionsPagesWithContext mocks base method
-func (m *MockDataSyncAPI) ListTaskExecutionsPagesWithContext(arg0 aws.Context, arg1 *datasync.ListTaskExecutionsInput, arg2 func(*datasync.ListTaskExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataSyncAPI) ListTaskExecutionsPagesWithContext(arg0 context.Context, arg1 *datasync.ListTaskExecutionsInput, arg2 func(*datasync.ListTaskExecutionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1098,7 +1098,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListTaskExecutionsRequest(arg0 interface{
 }
 
 // ListTaskExecutionsWithContext mocks base method
-func (m *MockDataSyncAPI) ListTaskExecutionsWithContext(arg0 aws.Context, arg1 *datasync.ListTaskExecutionsInput, arg2 ...request.Option) (*datasync.ListTaskExecutionsOutput, error) {
+func (m *MockDataSyncAPI) ListTaskExecutionsWithContext(arg0 context.Context, arg1 *datasync.ListTaskExecutionsInput, arg2 ...request.Option) (*datasync.ListTaskExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1147,7 +1147,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListTasksPages(arg0, arg1 interface{}) *g
 }
 
 // ListTasksPagesWithContext mocks base method
-func (m *MockDataSyncAPI) ListTasksPagesWithContext(arg0 aws.Context, arg1 *datasync.ListTasksInput, arg2 func(*datasync.ListTasksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataSyncAPI) ListTasksPagesWithContext(arg0 context.Context, arg1 *datasync.ListTasksInput, arg2 func(*datasync.ListTasksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1181,7 +1181,7 @@ func (mr *MockDataSyncAPIMockRecorder) ListTasksRequest(arg0 interface{}) *gomoc
 }
 
 // ListTasksWithContext mocks base method
-func (m *MockDataSyncAPI) ListTasksWithContext(arg0 aws.Context, arg1 *datasync.ListTasksInput, arg2 ...request.Option) (*datasync.ListTasksOutput, error) {
+func (m *MockDataSyncAPI) ListTasksWithContext(arg0 context.Context, arg1 *datasync.ListTasksInput, arg2 ...request.Option) (*datasync.ListTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockDataSyncAPIMockRecorder) StartTaskExecutionRequest(arg0 interface{
 }
 
 // StartTaskExecutionWithContext mocks base method
-func (m *MockDataSyncAPI) StartTaskExecutionWithContext(arg0 aws.Context, arg1 *datasync.StartTaskExecutionInput, arg2 ...request.Option) (*datasync.StartTaskExecutionOutput, error) {
+func (m *MockDataSyncAPI) StartTaskExecutionWithContext(arg0 context.Context, arg1 *datasync.StartTaskExecutionInput, arg2 ...request.Option) (*datasync.StartTaskExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockDataSyncAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gom
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockDataSyncAPI) TagResourceWithContext(arg0 aws.Context, arg1 *datasync.TagResourceInput, arg2 ...request.Option) (*datasync.TagResourceOutput, error) {
+func (m *MockDataSyncAPI) TagResourceWithContext(arg0 context.Context, arg1 *datasync.TagResourceInput, arg2 ...request.Option) (*datasync.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1331,7 +1331,7 @@ func (mr *MockDataSyncAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *g
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockDataSyncAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *datasync.UntagResourceInput, arg2 ...request.Option) (*datasync.UntagResourceOutput, error) {
+func (m *MockDataSyncAPI) UntagResourceWithContext(arg0 context.Context, arg1 *datasync.UntagResourceInput, arg2 ...request.Option) (*datasync.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateAgentRequest(arg0 interface{}) *gom
 }
 
 // UpdateAgentWithContext mocks base method
-func (m *MockDataSyncAPI) UpdateAgentWithContext(arg0 aws.Context, arg1 *datasync.UpdateAgentInput, arg2 ...request.Option) (*datasync.UpdateAgentOutput, error) {
+func (m *MockDataSyncAPI) UpdateAgentWithContext(arg0 context.Context, arg1 *datasync.UpdateAgentInput, arg2 ...request.Option) (*datasync.UpdateAgentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateTaskRequest(arg0 interface{}) *gomo
 }
 
 // UpdateTaskWithContext mocks base method
-func (m *MockDataSyncAPI) UpdateTaskWithContext(arg0 aws.Context, arg1 *datasync.UpdateTaskInput, arg2 ...request.Option) (*datasync.UpdateTaskOutput, error) {
+func (m *MockDataSyncAPI) UpdateTaskWithContext(arg0 context.Context, arg1 *datasync.UpdateTaskInput, arg2 ...request.Option) (*datasync.UpdateTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

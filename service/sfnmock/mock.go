@@ -5,7 +5,7 @@
 package sfnmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sfn "github.com/aws/aws-sdk-go/service/sfn"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSFNAPIMockRecorder) CreateActivityRequest(arg0 interface{}) *gomoc
 }
 
 // CreateActivityWithContext mocks base method
-func (m *MockSFNAPI) CreateActivityWithContext(arg0 aws.Context, arg1 *sfn.CreateActivityInput, arg2 ...request.Option) (*sfn.CreateActivityOutput, error) {
+func (m *MockSFNAPI) CreateActivityWithContext(arg0 context.Context, arg1 *sfn.CreateActivityInput, arg2 ...request.Option) (*sfn.CreateActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSFNAPIMockRecorder) CreateStateMachineRequest(arg0 interface{}) *g
 }
 
 // CreateStateMachineWithContext mocks base method
-func (m *MockSFNAPI) CreateStateMachineWithContext(arg0 aws.Context, arg1 *sfn.CreateStateMachineInput, arg2 ...request.Option) (*sfn.CreateStateMachineOutput, error) {
+func (m *MockSFNAPI) CreateStateMachineWithContext(arg0 context.Context, arg1 *sfn.CreateStateMachineInput, arg2 ...request.Option) (*sfn.CreateStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSFNAPIMockRecorder) DeleteActivityRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteActivityWithContext mocks base method
-func (m *MockSFNAPI) DeleteActivityWithContext(arg0 aws.Context, arg1 *sfn.DeleteActivityInput, arg2 ...request.Option) (*sfn.DeleteActivityOutput, error) {
+func (m *MockSFNAPI) DeleteActivityWithContext(arg0 context.Context, arg1 *sfn.DeleteActivityInput, arg2 ...request.Option) (*sfn.DeleteActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSFNAPIMockRecorder) DeleteStateMachineRequest(arg0 interface{}) *g
 }
 
 // DeleteStateMachineWithContext mocks base method
-func (m *MockSFNAPI) DeleteStateMachineWithContext(arg0 aws.Context, arg1 *sfn.DeleteStateMachineInput, arg2 ...request.Option) (*sfn.DeleteStateMachineOutput, error) {
+func (m *MockSFNAPI) DeleteStateMachineWithContext(arg0 context.Context, arg1 *sfn.DeleteStateMachineInput, arg2 ...request.Option) (*sfn.DeleteStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSFNAPIMockRecorder) DescribeActivityRequest(arg0 interface{}) *gom
 }
 
 // DescribeActivityWithContext mocks base method
-func (m *MockSFNAPI) DescribeActivityWithContext(arg0 aws.Context, arg1 *sfn.DescribeActivityInput, arg2 ...request.Option) (*sfn.DescribeActivityOutput, error) {
+func (m *MockSFNAPI) DescribeActivityWithContext(arg0 context.Context, arg1 *sfn.DescribeActivityInput, arg2 ...request.Option) (*sfn.DescribeActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSFNAPIMockRecorder) DescribeExecutionRequest(arg0 interface{}) *go
 }
 
 // DescribeExecutionWithContext mocks base method
-func (m *MockSFNAPI) DescribeExecutionWithContext(arg0 aws.Context, arg1 *sfn.DescribeExecutionInput, arg2 ...request.Option) (*sfn.DescribeExecutionOutput, error) {
+func (m *MockSFNAPI) DescribeExecutionWithContext(arg0 context.Context, arg1 *sfn.DescribeExecutionInput, arg2 ...request.Option) (*sfn.DescribeExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockSFNAPIMockRecorder) DescribeStateMachineForExecutionRequest(arg0 i
 }
 
 // DescribeStateMachineForExecutionWithContext mocks base method
-func (m *MockSFNAPI) DescribeStateMachineForExecutionWithContext(arg0 aws.Context, arg1 *sfn.DescribeStateMachineForExecutionInput, arg2 ...request.Option) (*sfn.DescribeStateMachineForExecutionOutput, error) {
+func (m *MockSFNAPI) DescribeStateMachineForExecutionWithContext(arg0 context.Context, arg1 *sfn.DescribeStateMachineForExecutionInput, arg2 ...request.Option) (*sfn.DescribeStateMachineForExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSFNAPIMockRecorder) DescribeStateMachineRequest(arg0 interface{}) 
 }
 
 // DescribeStateMachineWithContext mocks base method
-func (m *MockSFNAPI) DescribeStateMachineWithContext(arg0 aws.Context, arg1 *sfn.DescribeStateMachineInput, arg2 ...request.Option) (*sfn.DescribeStateMachineOutput, error) {
+func (m *MockSFNAPI) DescribeStateMachineWithContext(arg0 context.Context, arg1 *sfn.DescribeStateMachineInput, arg2 ...request.Option) (*sfn.DescribeStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSFNAPIMockRecorder) GetActivityTaskRequest(arg0 interface{}) *gomo
 }
 
 // GetActivityTaskWithContext mocks base method
-func (m *MockSFNAPI) GetActivityTaskWithContext(arg0 aws.Context, arg1 *sfn.GetActivityTaskInput, arg2 ...request.Option) (*sfn.GetActivityTaskOutput, error) {
+func (m *MockSFNAPI) GetActivityTaskWithContext(arg0 context.Context, arg1 *sfn.GetActivityTaskInput, arg2 ...request.Option) (*sfn.GetActivityTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockSFNAPIMockRecorder) GetExecutionHistoryPages(arg0, arg1 interface{
 }
 
 // GetExecutionHistoryPagesWithContext mocks base method
-func (m *MockSFNAPI) GetExecutionHistoryPagesWithContext(arg0 aws.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 func(*sfn.GetExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSFNAPI) GetExecutionHistoryPagesWithContext(arg0 context.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 func(*sfn.GetExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -549,7 +549,7 @@ func (mr *MockSFNAPIMockRecorder) GetExecutionHistoryRequest(arg0 interface{}) *
 }
 
 // GetExecutionHistoryWithContext mocks base method
-func (m *MockSFNAPI) GetExecutionHistoryWithContext(arg0 aws.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 ...request.Option) (*sfn.GetExecutionHistoryOutput, error) {
+func (m *MockSFNAPI) GetExecutionHistoryWithContext(arg0 context.Context, arg1 *sfn.GetExecutionHistoryInput, arg2 ...request.Option) (*sfn.GetExecutionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -598,7 +598,7 @@ func (mr *MockSFNAPIMockRecorder) ListActivitiesPages(arg0, arg1 interface{}) *g
 }
 
 // ListActivitiesPagesWithContext mocks base method
-func (m *MockSFNAPI) ListActivitiesPagesWithContext(arg0 aws.Context, arg1 *sfn.ListActivitiesInput, arg2 func(*sfn.ListActivitiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSFNAPI) ListActivitiesPagesWithContext(arg0 context.Context, arg1 *sfn.ListActivitiesInput, arg2 func(*sfn.ListActivitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -632,7 +632,7 @@ func (mr *MockSFNAPIMockRecorder) ListActivitiesRequest(arg0 interface{}) *gomoc
 }
 
 // ListActivitiesWithContext mocks base method
-func (m *MockSFNAPI) ListActivitiesWithContext(arg0 aws.Context, arg1 *sfn.ListActivitiesInput, arg2 ...request.Option) (*sfn.ListActivitiesOutput, error) {
+func (m *MockSFNAPI) ListActivitiesWithContext(arg0 context.Context, arg1 *sfn.ListActivitiesInput, arg2 ...request.Option) (*sfn.ListActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -681,7 +681,7 @@ func (mr *MockSFNAPIMockRecorder) ListExecutionsPages(arg0, arg1 interface{}) *g
 }
 
 // ListExecutionsPagesWithContext mocks base method
-func (m *MockSFNAPI) ListExecutionsPagesWithContext(arg0 aws.Context, arg1 *sfn.ListExecutionsInput, arg2 func(*sfn.ListExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSFNAPI) ListExecutionsPagesWithContext(arg0 context.Context, arg1 *sfn.ListExecutionsInput, arg2 func(*sfn.ListExecutionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -715,7 +715,7 @@ func (mr *MockSFNAPIMockRecorder) ListExecutionsRequest(arg0 interface{}) *gomoc
 }
 
 // ListExecutionsWithContext mocks base method
-func (m *MockSFNAPI) ListExecutionsWithContext(arg0 aws.Context, arg1 *sfn.ListExecutionsInput, arg2 ...request.Option) (*sfn.ListExecutionsOutput, error) {
+func (m *MockSFNAPI) ListExecutionsWithContext(arg0 context.Context, arg1 *sfn.ListExecutionsInput, arg2 ...request.Option) (*sfn.ListExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -764,7 +764,7 @@ func (mr *MockSFNAPIMockRecorder) ListStateMachinesPages(arg0, arg1 interface{})
 }
 
 // ListStateMachinesPagesWithContext mocks base method
-func (m *MockSFNAPI) ListStateMachinesPagesWithContext(arg0 aws.Context, arg1 *sfn.ListStateMachinesInput, arg2 func(*sfn.ListStateMachinesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSFNAPI) ListStateMachinesPagesWithContext(arg0 context.Context, arg1 *sfn.ListStateMachinesInput, arg2 func(*sfn.ListStateMachinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -798,7 +798,7 @@ func (mr *MockSFNAPIMockRecorder) ListStateMachinesRequest(arg0 interface{}) *go
 }
 
 // ListStateMachinesWithContext mocks base method
-func (m *MockSFNAPI) ListStateMachinesWithContext(arg0 aws.Context, arg1 *sfn.ListStateMachinesInput, arg2 ...request.Option) (*sfn.ListStateMachinesOutput, error) {
+func (m *MockSFNAPI) ListStateMachinesWithContext(arg0 context.Context, arg1 *sfn.ListStateMachinesInput, arg2 ...request.Option) (*sfn.ListStateMachinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -848,7 +848,7 @@ func (mr *MockSFNAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockSFNAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *sfn.ListTagsForResourceInput, arg2 ...request.Option) (*sfn.ListTagsForResourceOutput, error) {
+func (m *MockSFNAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *sfn.ListTagsForResourceInput, arg2 ...request.Option) (*sfn.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -898,7 +898,7 @@ func (mr *MockSFNAPIMockRecorder) SendTaskFailureRequest(arg0 interface{}) *gomo
 }
 
 // SendTaskFailureWithContext mocks base method
-func (m *MockSFNAPI) SendTaskFailureWithContext(arg0 aws.Context, arg1 *sfn.SendTaskFailureInput, arg2 ...request.Option) (*sfn.SendTaskFailureOutput, error) {
+func (m *MockSFNAPI) SendTaskFailureWithContext(arg0 context.Context, arg1 *sfn.SendTaskFailureInput, arg2 ...request.Option) (*sfn.SendTaskFailureOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -948,7 +948,7 @@ func (mr *MockSFNAPIMockRecorder) SendTaskHeartbeatRequest(arg0 interface{}) *go
 }
 
 // SendTaskHeartbeatWithContext mocks base method
-func (m *MockSFNAPI) SendTaskHeartbeatWithContext(arg0 aws.Context, arg1 *sfn.SendTaskHeartbeatInput, arg2 ...request.Option) (*sfn.SendTaskHeartbeatOutput, error) {
+func (m *MockSFNAPI) SendTaskHeartbeatWithContext(arg0 context.Context, arg1 *sfn.SendTaskHeartbeatInput, arg2 ...request.Option) (*sfn.SendTaskHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -998,7 +998,7 @@ func (mr *MockSFNAPIMockRecorder) SendTaskSuccessRequest(arg0 interface{}) *gomo
 }
 
 // SendTaskSuccessWithContext mocks base method
-func (m *MockSFNAPI) SendTaskSuccessWithContext(arg0 aws.Context, arg1 *sfn.SendTaskSuccessInput, arg2 ...request.Option) (*sfn.SendTaskSuccessOutput, error) {
+func (m *MockSFNAPI) SendTaskSuccessWithContext(arg0 context.Context, arg1 *sfn.SendTaskSuccessInput, arg2 ...request.Option) (*sfn.SendTaskSuccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockSFNAPIMockRecorder) StartExecutionRequest(arg0 interface{}) *gomoc
 }
 
 // StartExecutionWithContext mocks base method
-func (m *MockSFNAPI) StartExecutionWithContext(arg0 aws.Context, arg1 *sfn.StartExecutionInput, arg2 ...request.Option) (*sfn.StartExecutionOutput, error) {
+func (m *MockSFNAPI) StartExecutionWithContext(arg0 context.Context, arg1 *sfn.StartExecutionInput, arg2 ...request.Option) (*sfn.StartExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockSFNAPIMockRecorder) StopExecutionRequest(arg0 interface{}) *gomock
 }
 
 // StopExecutionWithContext mocks base method
-func (m *MockSFNAPI) StopExecutionWithContext(arg0 aws.Context, arg1 *sfn.StopExecutionInput, arg2 ...request.Option) (*sfn.StopExecutionOutput, error) {
+func (m *MockSFNAPI) StopExecutionWithContext(arg0 context.Context, arg1 *sfn.StopExecutionInput, arg2 ...request.Option) (*sfn.StopExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockSFNAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.C
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockSFNAPI) TagResourceWithContext(arg0 aws.Context, arg1 *sfn.TagResourceInput, arg2 ...request.Option) (*sfn.TagResourceOutput, error) {
+func (m *MockSFNAPI) TagResourceWithContext(arg0 context.Context, arg1 *sfn.TagResourceInput, arg2 ...request.Option) (*sfn.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1198,7 +1198,7 @@ func (mr *MockSFNAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockSFNAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *sfn.UntagResourceInput, arg2 ...request.Option) (*sfn.UntagResourceOutput, error) {
+func (m *MockSFNAPI) UntagResourceWithContext(arg0 context.Context, arg1 *sfn.UntagResourceInput, arg2 ...request.Option) (*sfn.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1248,7 +1248,7 @@ func (mr *MockSFNAPIMockRecorder) UpdateStateMachineRequest(arg0 interface{}) *g
 }
 
 // UpdateStateMachineWithContext mocks base method
-func (m *MockSFNAPI) UpdateStateMachineWithContext(arg0 aws.Context, arg1 *sfn.UpdateStateMachineInput, arg2 ...request.Option) (*sfn.UpdateStateMachineOutput, error) {
+func (m *MockSFNAPI) UpdateStateMachineWithContext(arg0 context.Context, arg1 *sfn.UpdateStateMachineInput, arg2 ...request.Option) (*sfn.UpdateStateMachineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

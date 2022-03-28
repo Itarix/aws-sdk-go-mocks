@@ -5,7 +5,7 @@
 package lexmodelbuildingservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	lexmodelbuildingservice "github.com/aws/aws-sdk-go/service/lexmodelbuildingservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) CreateBotVersionRequest(ar
 }
 
 // CreateBotVersionWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) CreateBotVersionWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.CreateBotVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.CreateBotVersionOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) CreateBotVersionWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.CreateBotVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.CreateBotVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) CreateIntentVersionRequest
 }
 
 // CreateIntentVersionWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) CreateIntentVersionWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.CreateIntentVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.CreateIntentVersionOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) CreateIntentVersionWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.CreateIntentVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.CreateIntentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) CreateSlotTypeVersionReque
 }
 
 // CreateSlotTypeVersionWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) CreateSlotTypeVersionWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.CreateSlotTypeVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.CreateSlotTypeVersionOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) CreateSlotTypeVersionWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.CreateSlotTypeVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.CreateSlotTypeVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteBotAliasRequest(arg0
 }
 
 // DeleteBotAliasWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteBotAliasWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteBotAliasInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotAliasOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteBotAliasWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteBotAliasInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -281,7 +281,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteBotChannelAssociatio
 }
 
 // DeleteBotChannelAssociationWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteBotChannelAssociationWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteBotChannelAssociationInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotChannelAssociationOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteBotChannelAssociationWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteBotChannelAssociationInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotChannelAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -346,7 +346,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteBotVersionRequest(ar
 }
 
 // DeleteBotVersionWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteBotVersionWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteBotVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotVersionOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteBotVersionWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteBotVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteBotVersionWithContex
 }
 
 // DeleteBotWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteBotWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteBotInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteBotWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteBotInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteBotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -446,7 +446,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteIntentVersionRequest
 }
 
 // DeleteIntentVersionWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteIntentVersionWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteIntentVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteIntentVersionOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteIntentVersionWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteIntentVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteIntentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteIntentVersionWithCon
 }
 
 // DeleteIntentWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteIntentWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteIntentOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteIntentWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteIntentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -546,7 +546,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteSlotTypeVersionReque
 }
 
 // DeleteSlotTypeVersionWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteSlotTypeVersionWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteSlotTypeVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteSlotTypeVersionOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteSlotTypeVersionWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteSlotTypeVersionInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteSlotTypeVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteSlotTypeVersionWithC
 }
 
 // DeleteSlotTypeWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteSlotTypeWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteSlotTypeInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteSlotTypeOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteSlotTypeWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteSlotTypeInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteSlotTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) DeleteUtterancesRequest(ar
 }
 
 // DeleteUtterancesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) DeleteUtterancesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.DeleteUtterancesInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteUtterancesOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) DeleteUtterancesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.DeleteUtterancesInput, arg2 ...request.Option) (*lexmodelbuildingservice.DeleteUtterancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -681,7 +681,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotAliasRequest(arg0 in
 }
 
 // GetBotAliasWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotAliasWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotAliasInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotAliasOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotAliasWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotAliasInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -730,7 +730,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotAliasesPages(arg0, a
 }
 
 // GetBotAliasesPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotAliasesPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotAliasesInput, arg2 func(*lexmodelbuildingservice.GetBotAliasesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetBotAliasesPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotAliasesInput, arg2 func(*lexmodelbuildingservice.GetBotAliasesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -764,7 +764,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotAliasesRequest(arg0 
 }
 
 // GetBotAliasesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotAliasesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotAliasesInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotAliasesOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotAliasesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotAliasesInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotAliasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -814,7 +814,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotChannelAssociationRe
 }
 
 // GetBotChannelAssociationWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotChannelAssociationWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotChannelAssociationInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotChannelAssociationOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotChannelAssociationWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotChannelAssociationInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotChannelAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -863,7 +863,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotChannelAssociationsP
 }
 
 // GetBotChannelAssociationsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotChannelAssociationsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotChannelAssociationsInput, arg2 func(*lexmodelbuildingservice.GetBotChannelAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetBotChannelAssociationsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotChannelAssociationsInput, arg2 func(*lexmodelbuildingservice.GetBotChannelAssociationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -897,7 +897,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotChannelAssociationsR
 }
 
 // GetBotChannelAssociationsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotChannelAssociationsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotChannelAssociationsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotChannelAssociationsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotChannelAssociationsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotChannelAssociationsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotChannelAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -961,7 +961,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotVersionsPages(arg0, 
 }
 
 // GetBotVersionsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotVersionsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotVersionsInput, arg2 func(*lexmodelbuildingservice.GetBotVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetBotVersionsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotVersionsInput, arg2 func(*lexmodelbuildingservice.GetBotVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -995,7 +995,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotVersionsRequest(arg0
 }
 
 // GetBotVersionsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotVersionsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotVersionsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotVersionsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotVersionsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotVersionsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1015,7 +1015,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotVersionsWithContext(
 }
 
 // GetBotWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1064,7 +1064,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotsPages(arg0, arg1 in
 }
 
 // GetBotsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotsInput, arg2 func(*lexmodelbuildingservice.GetBotsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetBotsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotsInput, arg2 func(*lexmodelbuildingservice.GetBotsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1098,7 +1098,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBotsRequest(arg0 interf
 }
 
 // GetBotsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBotsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBotsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBotsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBotsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBuiltinIntentRequest(ar
 }
 
 // GetBuiltinIntentWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBuiltinIntentWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBuiltinIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBuiltinIntentOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBuiltinIntentWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBuiltinIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBuiltinIntentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1197,7 +1197,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBuiltinIntentsPages(arg
 }
 
 // GetBuiltinIntentsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBuiltinIntentsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBuiltinIntentsInput, arg2 func(*lexmodelbuildingservice.GetBuiltinIntentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetBuiltinIntentsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBuiltinIntentsInput, arg2 func(*lexmodelbuildingservice.GetBuiltinIntentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1231,7 +1231,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBuiltinIntentsRequest(a
 }
 
 // GetBuiltinIntentsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBuiltinIntentsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBuiltinIntentsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBuiltinIntentsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBuiltinIntentsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBuiltinIntentsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBuiltinIntentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1280,7 +1280,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBuiltinSlotTypesPages(a
 }
 
 // GetBuiltinSlotTypesPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBuiltinSlotTypesPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBuiltinSlotTypesInput, arg2 func(*lexmodelbuildingservice.GetBuiltinSlotTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetBuiltinSlotTypesPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBuiltinSlotTypesInput, arg2 func(*lexmodelbuildingservice.GetBuiltinSlotTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1314,7 +1314,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetBuiltinSlotTypesRequest
 }
 
 // GetBuiltinSlotTypesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetBuiltinSlotTypesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetBuiltinSlotTypesInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBuiltinSlotTypesOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetBuiltinSlotTypesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetBuiltinSlotTypesInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetBuiltinSlotTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1364,7 +1364,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetExportRequest(arg0 inte
 }
 
 // GetExportWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetExportWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetExportInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetExportOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetExportWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetExportInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetExportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1414,7 +1414,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetImportRequest(arg0 inte
 }
 
 // GetImportWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetImportWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetImportInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetImportOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetImportWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetImportInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetImportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1493,7 +1493,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetIntentVersionsPages(arg
 }
 
 // GetIntentVersionsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetIntentVersionsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetIntentVersionsInput, arg2 func(*lexmodelbuildingservice.GetIntentVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetIntentVersionsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetIntentVersionsInput, arg2 func(*lexmodelbuildingservice.GetIntentVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1527,7 +1527,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetIntentVersionsRequest(a
 }
 
 // GetIntentVersionsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetIntentVersionsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetIntentVersionsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetIntentVersionsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetIntentVersionsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetIntentVersionsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetIntentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1547,7 +1547,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetIntentVersionsWithConte
 }
 
 // GetIntentWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetIntentWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetIntentOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetIntentWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetIntentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1596,7 +1596,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetIntentsPages(arg0, arg1
 }
 
 // GetIntentsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetIntentsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetIntentsInput, arg2 func(*lexmodelbuildingservice.GetIntentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetIntentsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetIntentsInput, arg2 func(*lexmodelbuildingservice.GetIntentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1630,7 +1630,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetIntentsRequest(arg0 int
 }
 
 // GetIntentsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetIntentsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetIntentsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetIntentsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetIntentsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetIntentsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetIntentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1709,7 +1709,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetSlotTypeVersionsPages(a
 }
 
 // GetSlotTypeVersionsPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetSlotTypeVersionsPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetSlotTypeVersionsInput, arg2 func(*lexmodelbuildingservice.GetSlotTypeVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetSlotTypeVersionsPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetSlotTypeVersionsInput, arg2 func(*lexmodelbuildingservice.GetSlotTypeVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1743,7 +1743,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetSlotTypeVersionsRequest
 }
 
 // GetSlotTypeVersionsWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetSlotTypeVersionsWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetSlotTypeVersionsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetSlotTypeVersionsOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetSlotTypeVersionsWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetSlotTypeVersionsInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetSlotTypeVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1763,7 +1763,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetSlotTypeVersionsWithCon
 }
 
 // GetSlotTypeWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetSlotTypeWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetSlotTypeInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetSlotTypeOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetSlotTypeWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetSlotTypeInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetSlotTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1812,7 +1812,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetSlotTypesPages(arg0, ar
 }
 
 // GetSlotTypesPagesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetSlotTypesPagesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetSlotTypesInput, arg2 func(*lexmodelbuildingservice.GetSlotTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLexModelBuildingServiceAPI) GetSlotTypesPagesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetSlotTypesInput, arg2 func(*lexmodelbuildingservice.GetSlotTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1846,7 +1846,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetSlotTypesRequest(arg0 i
 }
 
 // GetSlotTypesWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetSlotTypesWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetSlotTypesInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetSlotTypesOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetSlotTypesWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetSlotTypesInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetSlotTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1896,7 +1896,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) GetUtterancesViewRequest(a
 }
 
 // GetUtterancesViewWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) GetUtterancesViewWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.GetUtterancesViewInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetUtterancesViewOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) GetUtterancesViewWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.GetUtterancesViewInput, arg2 ...request.Option) (*lexmodelbuildingservice.GetUtterancesViewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1961,7 +1961,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) PutBotAliasRequest(arg0 in
 }
 
 // PutBotAliasWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) PutBotAliasWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.PutBotAliasInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutBotAliasOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) PutBotAliasWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.PutBotAliasInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutBotAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1996,7 +1996,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) PutBotRequest(arg0 interfa
 }
 
 // PutBotWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) PutBotWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.PutBotInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutBotOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) PutBotWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.PutBotInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutBotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) PutIntentRequest(arg0 inte
 }
 
 // PutIntentWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) PutIntentWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.PutIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutIntentOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) PutIntentWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.PutIntentInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutIntentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2096,7 +2096,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) PutSlotTypeRequest(arg0 in
 }
 
 // PutSlotTypeWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) PutSlotTypeWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.PutSlotTypeInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutSlotTypeOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) PutSlotTypeWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.PutSlotTypeInput, arg2 ...request.Option) (*lexmodelbuildingservice.PutSlotTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2146,7 +2146,7 @@ func (mr *MockLexModelBuildingServiceAPIMockRecorder) StartImportRequest(arg0 in
 }
 
 // StartImportWithContext mocks base method
-func (m *MockLexModelBuildingServiceAPI) StartImportWithContext(arg0 aws.Context, arg1 *lexmodelbuildingservice.StartImportInput, arg2 ...request.Option) (*lexmodelbuildingservice.StartImportOutput, error) {
+func (m *MockLexModelBuildingServiceAPI) StartImportWithContext(arg0 context.Context, arg1 *lexmodelbuildingservice.StartImportInput, arg2 ...request.Option) (*lexmodelbuildingservice.StartImportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

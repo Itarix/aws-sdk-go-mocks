@@ -5,7 +5,7 @@
 package cloudsearchmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudsearch "github.com/aws/aws-sdk-go/service/cloudsearch"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudSearchAPIMockRecorder) BuildSuggestersRequest(arg0 interface{
 }
 
 // BuildSuggestersWithContext mocks base method
-func (m *MockCloudSearchAPI) BuildSuggestersWithContext(arg0 aws.Context, arg1 *cloudsearch.BuildSuggestersInput, arg2 ...request.Option) (*cloudsearch.BuildSuggestersOutput, error) {
+func (m *MockCloudSearchAPI) BuildSuggestersWithContext(arg0 context.Context, arg1 *cloudsearch.BuildSuggestersInput, arg2 ...request.Option) (*cloudsearch.BuildSuggestersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudSearchAPIMockRecorder) CreateDomainRequest(arg0 interface{}) 
 }
 
 // CreateDomainWithContext mocks base method
-func (m *MockCloudSearchAPI) CreateDomainWithContext(arg0 aws.Context, arg1 *cloudsearch.CreateDomainInput, arg2 ...request.Option) (*cloudsearch.CreateDomainOutput, error) {
+func (m *MockCloudSearchAPI) CreateDomainWithContext(arg0 context.Context, arg1 *cloudsearch.CreateDomainInput, arg2 ...request.Option) (*cloudsearch.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DefineAnalysisSchemeRequest(arg0 inter
 }
 
 // DefineAnalysisSchemeWithContext mocks base method
-func (m *MockCloudSearchAPI) DefineAnalysisSchemeWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DefineAnalysisSchemeOutput, error) {
+func (m *MockCloudSearchAPI) DefineAnalysisSchemeWithContext(arg0 context.Context, arg1 *cloudsearch.DefineAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DefineAnalysisSchemeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DefineExpressionRequest(arg0 interface
 }
 
 // DefineExpressionWithContext mocks base method
-func (m *MockCloudSearchAPI) DefineExpressionWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineExpressionInput, arg2 ...request.Option) (*cloudsearch.DefineExpressionOutput, error) {
+func (m *MockCloudSearchAPI) DefineExpressionWithContext(arg0 context.Context, arg1 *cloudsearch.DefineExpressionInput, arg2 ...request.Option) (*cloudsearch.DefineExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DefineIndexFieldRequest(arg0 interface
 }
 
 // DefineIndexFieldWithContext mocks base method
-func (m *MockCloudSearchAPI) DefineIndexFieldWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DefineIndexFieldOutput, error) {
+func (m *MockCloudSearchAPI) DefineIndexFieldWithContext(arg0 context.Context, arg1 *cloudsearch.DefineIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DefineIndexFieldOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DefineSuggesterRequest(arg0 interface{
 }
 
 // DefineSuggesterWithContext mocks base method
-func (m *MockCloudSearchAPI) DefineSuggesterWithContext(arg0 aws.Context, arg1 *cloudsearch.DefineSuggesterInput, arg2 ...request.Option) (*cloudsearch.DefineSuggesterOutput, error) {
+func (m *MockCloudSearchAPI) DefineSuggesterWithContext(arg0 context.Context, arg1 *cloudsearch.DefineSuggesterInput, arg2 ...request.Option) (*cloudsearch.DefineSuggesterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DeleteAnalysisSchemeRequest(arg0 inter
 }
 
 // DeleteAnalysisSchemeWithContext mocks base method
-func (m *MockCloudSearchAPI) DeleteAnalysisSchemeWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DeleteAnalysisSchemeOutput, error) {
+func (m *MockCloudSearchAPI) DeleteAnalysisSchemeWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteAnalysisSchemeInput, arg2 ...request.Option) (*cloudsearch.DeleteAnalysisSchemeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DeleteDomainRequest(arg0 interface{}) 
 }
 
 // DeleteDomainWithContext mocks base method
-func (m *MockCloudSearchAPI) DeleteDomainWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteDomainInput, arg2 ...request.Option) (*cloudsearch.DeleteDomainOutput, error) {
+func (m *MockCloudSearchAPI) DeleteDomainWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteDomainInput, arg2 ...request.Option) (*cloudsearch.DeleteDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DeleteExpressionRequest(arg0 interface
 }
 
 // DeleteExpressionWithContext mocks base method
-func (m *MockCloudSearchAPI) DeleteExpressionWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteExpressionInput, arg2 ...request.Option) (*cloudsearch.DeleteExpressionOutput, error) {
+func (m *MockCloudSearchAPI) DeleteExpressionWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteExpressionInput, arg2 ...request.Option) (*cloudsearch.DeleteExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DeleteIndexFieldRequest(arg0 interface
 }
 
 // DeleteIndexFieldWithContext mocks base method
-func (m *MockCloudSearchAPI) DeleteIndexFieldWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DeleteIndexFieldOutput, error) {
+func (m *MockCloudSearchAPI) DeleteIndexFieldWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteIndexFieldInput, arg2 ...request.Option) (*cloudsearch.DeleteIndexFieldOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DeleteSuggesterRequest(arg0 interface{
 }
 
 // DeleteSuggesterWithContext mocks base method
-func (m *MockCloudSearchAPI) DeleteSuggesterWithContext(arg0 aws.Context, arg1 *cloudsearch.DeleteSuggesterInput, arg2 ...request.Option) (*cloudsearch.DeleteSuggesterOutput, error) {
+func (m *MockCloudSearchAPI) DeleteSuggesterWithContext(arg0 context.Context, arg1 *cloudsearch.DeleteSuggesterInput, arg2 ...request.Option) (*cloudsearch.DeleteSuggesterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeAnalysisSchemesRequest(arg0 in
 }
 
 // DescribeAnalysisSchemesWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeAnalysisSchemesWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeAnalysisSchemesInput, arg2 ...request.Option) (*cloudsearch.DescribeAnalysisSchemesOutput, error) {
+func (m *MockCloudSearchAPI) DescribeAnalysisSchemesWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeAnalysisSchemesInput, arg2 ...request.Option) (*cloudsearch.DescribeAnalysisSchemesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeAvailabilityOptionsRequest(arg
 }
 
 // DescribeAvailabilityOptionsWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.DescribeAvailabilityOptionsOutput, error) {
+func (m *MockCloudSearchAPI) DescribeAvailabilityOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.DescribeAvailabilityOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeDomainsRequest(arg0 interface{
 }
 
 // DescribeDomainsWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeDomainsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeDomainsInput, arg2 ...request.Option) (*cloudsearch.DescribeDomainsOutput, error) {
+func (m *MockCloudSearchAPI) DescribeDomainsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeDomainsInput, arg2 ...request.Option) (*cloudsearch.DescribeDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeExpressionsRequest(arg0 interf
 }
 
 // DescribeExpressionsWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeExpressionsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeExpressionsInput, arg2 ...request.Option) (*cloudsearch.DescribeExpressionsOutput, error) {
+func (m *MockCloudSearchAPI) DescribeExpressionsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeExpressionsInput, arg2 ...request.Option) (*cloudsearch.DescribeExpressionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeIndexFieldsRequest(arg0 interf
 }
 
 // DescribeIndexFieldsWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeIndexFieldsWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeIndexFieldsInput, arg2 ...request.Option) (*cloudsearch.DescribeIndexFieldsOutput, error) {
+func (m *MockCloudSearchAPI) DescribeIndexFieldsWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeIndexFieldsInput, arg2 ...request.Option) (*cloudsearch.DescribeIndexFieldsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeScalingParametersRequest(arg0 
 }
 
 // DescribeScalingParametersWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeScalingParametersWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeScalingParametersInput, arg2 ...request.Option) (*cloudsearch.DescribeScalingParametersOutput, error) {
+func (m *MockCloudSearchAPI) DescribeScalingParametersWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeScalingParametersInput, arg2 ...request.Option) (*cloudsearch.DescribeScalingParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeServiceAccessPoliciesRequest(a
 }
 
 // DescribeServiceAccessPoliciesWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.DescribeServiceAccessPoliciesOutput, error) {
+func (m *MockCloudSearchAPI) DescribeServiceAccessPoliciesWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.DescribeServiceAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockCloudSearchAPIMockRecorder) DescribeSuggestersRequest(arg0 interfa
 }
 
 // DescribeSuggestersWithContext mocks base method
-func (m *MockCloudSearchAPI) DescribeSuggestersWithContext(arg0 aws.Context, arg1 *cloudsearch.DescribeSuggestersInput, arg2 ...request.Option) (*cloudsearch.DescribeSuggestersOutput, error) {
+func (m *MockCloudSearchAPI) DescribeSuggestersWithContext(arg0 context.Context, arg1 *cloudsearch.DescribeSuggestersInput, arg2 ...request.Option) (*cloudsearch.DescribeSuggestersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockCloudSearchAPIMockRecorder) IndexDocumentsRequest(arg0 interface{}
 }
 
 // IndexDocumentsWithContext mocks base method
-func (m *MockCloudSearchAPI) IndexDocumentsWithContext(arg0 aws.Context, arg1 *cloudsearch.IndexDocumentsInput, arg2 ...request.Option) (*cloudsearch.IndexDocumentsOutput, error) {
+func (m *MockCloudSearchAPI) IndexDocumentsWithContext(arg0 context.Context, arg1 *cloudsearch.IndexDocumentsInput, arg2 ...request.Option) (*cloudsearch.IndexDocumentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockCloudSearchAPIMockRecorder) ListDomainNamesRequest(arg0 interface{
 }
 
 // ListDomainNamesWithContext mocks base method
-func (m *MockCloudSearchAPI) ListDomainNamesWithContext(arg0 aws.Context, arg1 *cloudsearch.ListDomainNamesInput, arg2 ...request.Option) (*cloudsearch.ListDomainNamesOutput, error) {
+func (m *MockCloudSearchAPI) ListDomainNamesWithContext(arg0 context.Context, arg1 *cloudsearch.ListDomainNamesInput, arg2 ...request.Option) (*cloudsearch.ListDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockCloudSearchAPIMockRecorder) UpdateAvailabilityOptionsRequest(arg0 
 }
 
 // UpdateAvailabilityOptionsWithContext mocks base method
-func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsWithContext(arg0 aws.Context, arg1 *cloudsearch.UpdateAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.UpdateAvailabilityOptionsOutput, error) {
+func (m *MockCloudSearchAPI) UpdateAvailabilityOptionsWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateAvailabilityOptionsInput, arg2 ...request.Option) (*cloudsearch.UpdateAvailabilityOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockCloudSearchAPIMockRecorder) UpdateScalingParametersRequest(arg0 in
 }
 
 // UpdateScalingParametersWithContext mocks base method
-func (m *MockCloudSearchAPI) UpdateScalingParametersWithContext(arg0 aws.Context, arg1 *cloudsearch.UpdateScalingParametersInput, arg2 ...request.Option) (*cloudsearch.UpdateScalingParametersOutput, error) {
+func (m *MockCloudSearchAPI) UpdateScalingParametersWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateScalingParametersInput, arg2 ...request.Option) (*cloudsearch.UpdateScalingParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockCloudSearchAPIMockRecorder) UpdateServiceAccessPoliciesRequest(arg
 }
 
 // UpdateServiceAccessPoliciesWithContext mocks base method
-func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesWithContext(arg0 aws.Context, arg1 *cloudsearch.UpdateServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.UpdateServiceAccessPoliciesOutput, error) {
+func (m *MockCloudSearchAPI) UpdateServiceAccessPoliciesWithContext(arg0 context.Context, arg1 *cloudsearch.UpdateServiceAccessPoliciesInput, arg2 ...request.Option) (*cloudsearch.UpdateServiceAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

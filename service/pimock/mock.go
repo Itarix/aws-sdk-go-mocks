@@ -5,7 +5,7 @@
 package pimock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	pi "github.com/aws/aws-sdk-go/service/pi"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockPIAPIMockRecorder) DescribeDimensionKeysRequest(arg0 interface{}) 
 }
 
 // DescribeDimensionKeysWithContext mocks base method
-func (m *MockPIAPI) DescribeDimensionKeysWithContext(arg0 aws.Context, arg1 *pi.DescribeDimensionKeysInput, arg2 ...request.Option) (*pi.DescribeDimensionKeysOutput, error) {
+func (m *MockPIAPI) DescribeDimensionKeysWithContext(arg0 context.Context, arg1 *pi.DescribeDimensionKeysInput, arg2 ...request.Option) (*pi.DescribeDimensionKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockPIAPIMockRecorder) GetResourceMetricsRequest(arg0 interface{}) *go
 }
 
 // GetResourceMetricsWithContext mocks base method
-func (m *MockPIAPI) GetResourceMetricsWithContext(arg0 aws.Context, arg1 *pi.GetResourceMetricsInput, arg2 ...request.Option) (*pi.GetResourceMetricsOutput, error) {
+func (m *MockPIAPI) GetResourceMetricsWithContext(arg0 context.Context, arg1 *pi.GetResourceMetricsInput, arg2 ...request.Option) (*pi.GetResourceMetricsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

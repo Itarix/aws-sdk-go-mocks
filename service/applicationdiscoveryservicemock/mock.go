@@ -5,7 +5,7 @@
 package applicationdiscoveryservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	applicationdiscoveryservice "github.com/aws/aws-sdk-go/service/applicationdiscoveryservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) AssociateConfiguration
 }
 
 // AssociateConfigurationItemsToApplicationWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) AssociateConfigurationItemsToApplicationWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.AssociateConfigurationItemsToApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.AssociateConfigurationItemsToApplicationOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) AssociateConfigurationItemsToApplicationWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.AssociateConfigurationItemsToApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.AssociateConfigurationItemsToApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteImportDataR
 }
 
 // BatchDeleteImportDataWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteImportDataWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.BatchDeleteImportDataInput, arg2 ...request.Option) (*applicationdiscoveryservice.BatchDeleteImportDataOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteImportDataWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.BatchDeleteImportDataInput, arg2 ...request.Option) (*applicationdiscoveryservice.BatchDeleteImportDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) CreateApplicationReque
 }
 
 // CreateApplicationWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) CreateApplicationWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.CreateApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.CreateApplicationOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.CreateApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) CreateTagsRequest(arg0
 }
 
 // CreateTagsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) CreateTagsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.CreateTagsInput, arg2 ...request.Option) (*applicationdiscoveryservice.CreateTagsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) CreateTagsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.CreateTagsInput, arg2 ...request.Option) (*applicationdiscoveryservice.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DeleteApplicationsRequ
 }
 
 // DeleteApplicationsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DeleteApplicationsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DeleteApplicationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DeleteApplicationsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DeleteApplicationsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DeleteApplicationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DeleteApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DeleteTagsRequest(arg0
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DeleteTagsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DeleteTagsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DeleteTagsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeAgentsRequest(
 }
 
 // DescribeAgentsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeAgentsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeAgentsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeAgentsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeAgentsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeAgentsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeAgentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeConfigurations
 }
 
 // DescribeConfigurationsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeConfigurationsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeConfigurationsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeConfigurationsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -465,7 +465,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExpo
 }
 
 // DescribeContinuousExportsPagesWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsPagesWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg2 func(*applicationdiscoveryservice.DescribeContinuousExportsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg2 func(*applicationdiscoveryservice.DescribeContinuousExportsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -499,7 +499,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeContinuousExpo
 }
 
 // DescribeContinuousExportsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeContinuousExportsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeContinuousExportsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeContinuousExportsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeContinuousExportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportConfigur
 }
 
 // DescribeExportConfigurationsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeExportConfigurationsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeExportConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeExportConfigurationsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeExportConfigurationsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeExportConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeExportConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportTasksReq
 }
 
 // DescribeExportTasksWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeExportTasksWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeExportTasksInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeExportTasksOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeExportTasksWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeExportTasksInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeExportTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -648,7 +648,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasksPag
 }
 
 // DescribeImportTasksPagesWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksPagesWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeImportTasksInput, arg2 func(*applicationdiscoveryservice.DescribeImportTasksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeImportTasksInput, arg2 func(*applicationdiscoveryservice.DescribeImportTasksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -682,7 +682,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasksReq
 }
 
 // DescribeImportTasksWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeImportTasksInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeImportTasksOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeImportTasksInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeImportTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -732,7 +732,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeTagsRequest(ar
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeTagsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeTagsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeTagsInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -782,7 +782,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DisassociateConfigurat
 }
 
 // DisassociateConfigurationItemsFromApplicationWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) DisassociateConfigurationItemsFromApplicationWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DisassociateConfigurationItemsFromApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.DisassociateConfigurationItemsFromApplicationOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) DisassociateConfigurationItemsFromApplicationWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DisassociateConfigurationItemsFromApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.DisassociateConfigurationItemsFromApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -832,7 +832,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ExportConfigurationsRe
 }
 
 // ExportConfigurationsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) ExportConfigurationsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.ExportConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.ExportConfigurationsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) ExportConfigurationsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.ExportConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.ExportConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -882,7 +882,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) GetDiscoverySummaryReq
 }
 
 // GetDiscoverySummaryWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) GetDiscoverySummaryWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.GetDiscoverySummaryInput, arg2 ...request.Option) (*applicationdiscoveryservice.GetDiscoverySummaryOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) GetDiscoverySummaryWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.GetDiscoverySummaryInput, arg2 ...request.Option) (*applicationdiscoveryservice.GetDiscoverySummaryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -932,7 +932,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListConfigurationsRequ
 }
 
 // ListConfigurationsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) ListConfigurationsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.ListConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.ListConfigurationsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) ListConfigurationsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.ListConfigurationsInput, arg2 ...request.Option) (*applicationdiscoveryservice.ListConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -982,7 +982,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListServerNeighborsReq
 }
 
 // ListServerNeighborsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) ListServerNeighborsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.ListServerNeighborsInput, arg2 ...request.Option) (*applicationdiscoveryservice.ListServerNeighborsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) ListServerNeighborsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.ListServerNeighborsInput, arg2 ...request.Option) (*applicationdiscoveryservice.ListServerNeighborsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1032,7 +1032,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartContinuousExportR
 }
 
 // StartContinuousExportWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) StartContinuousExportWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StartContinuousExportInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartContinuousExportOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) StartContinuousExportWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StartContinuousExportInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartContinuousExportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1082,7 +1082,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartDataCollectionByA
 }
 
 // StartDataCollectionByAgentIdsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) StartDataCollectionByAgentIdsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StartDataCollectionByAgentIdsInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartDataCollectionByAgentIdsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) StartDataCollectionByAgentIdsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StartDataCollectionByAgentIdsInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartDataCollectionByAgentIdsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1132,7 +1132,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartExportTaskRequest
 }
 
 // StartExportTaskWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) StartExportTaskWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StartExportTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartExportTaskOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) StartExportTaskWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StartExportTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartExportTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1182,7 +1182,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartImportTaskRequest
 }
 
 // StartImportTaskWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) StartImportTaskWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StartImportTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartImportTaskOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) StartImportTaskWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StartImportTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartImportTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1232,7 +1232,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StopContinuousExportRe
 }
 
 // StopContinuousExportWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) StopContinuousExportWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StopContinuousExportInput, arg2 ...request.Option) (*applicationdiscoveryservice.StopContinuousExportOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) StopContinuousExportWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StopContinuousExportInput, arg2 ...request.Option) (*applicationdiscoveryservice.StopContinuousExportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1282,7 +1282,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StopDataCollectionByAg
 }
 
 // StopDataCollectionByAgentIdsWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) StopDataCollectionByAgentIdsWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StopDataCollectionByAgentIdsInput, arg2 ...request.Option) (*applicationdiscoveryservice.StopDataCollectionByAgentIdsOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) StopDataCollectionByAgentIdsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StopDataCollectionByAgentIdsInput, arg2 ...request.Option) (*applicationdiscoveryservice.StopDataCollectionByAgentIdsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1332,7 +1332,7 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) UpdateApplicationReque
 }
 
 // UpdateApplicationWithContext mocks base method
-func (m *MockApplicationDiscoveryServiceAPI) UpdateApplicationWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.UpdateApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.UpdateApplicationOutput, error) {
+func (m *MockApplicationDiscoveryServiceAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.UpdateApplicationInput, arg2 ...request.Option) (*applicationdiscoveryservice.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

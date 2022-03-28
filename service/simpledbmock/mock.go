@@ -5,7 +5,7 @@
 package simpledbmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	simpledb "github.com/aws/aws-sdk-go/service/simpledb"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSimpleDBAPIMockRecorder) BatchDeleteAttributesRequest(arg0 interfa
 }
 
 // BatchDeleteAttributesWithContext mocks base method
-func (m *MockSimpleDBAPI) BatchDeleteAttributesWithContext(arg0 aws.Context, arg1 *simpledb.BatchDeleteAttributesInput, arg2 ...request.Option) (*simpledb.BatchDeleteAttributesOutput, error) {
+func (m *MockSimpleDBAPI) BatchDeleteAttributesWithContext(arg0 context.Context, arg1 *simpledb.BatchDeleteAttributesInput, arg2 ...request.Option) (*simpledb.BatchDeleteAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSimpleDBAPIMockRecorder) BatchPutAttributesRequest(arg0 interface{
 }
 
 // BatchPutAttributesWithContext mocks base method
-func (m *MockSimpleDBAPI) BatchPutAttributesWithContext(arg0 aws.Context, arg1 *simpledb.BatchPutAttributesInput, arg2 ...request.Option) (*simpledb.BatchPutAttributesOutput, error) {
+func (m *MockSimpleDBAPI) BatchPutAttributesWithContext(arg0 context.Context, arg1 *simpledb.BatchPutAttributesInput, arg2 ...request.Option) (*simpledb.BatchPutAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSimpleDBAPIMockRecorder) CreateDomainRequest(arg0 interface{}) *go
 }
 
 // CreateDomainWithContext mocks base method
-func (m *MockSimpleDBAPI) CreateDomainWithContext(arg0 aws.Context, arg1 *simpledb.CreateDomainInput, arg2 ...request.Option) (*simpledb.CreateDomainOutput, error) {
+func (m *MockSimpleDBAPI) CreateDomainWithContext(arg0 context.Context, arg1 *simpledb.CreateDomainInput, arg2 ...request.Option) (*simpledb.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSimpleDBAPIMockRecorder) DeleteAttributesRequest(arg0 interface{})
 }
 
 // DeleteAttributesWithContext mocks base method
-func (m *MockSimpleDBAPI) DeleteAttributesWithContext(arg0 aws.Context, arg1 *simpledb.DeleteAttributesInput, arg2 ...request.Option) (*simpledb.DeleteAttributesOutput, error) {
+func (m *MockSimpleDBAPI) DeleteAttributesWithContext(arg0 context.Context, arg1 *simpledb.DeleteAttributesInput, arg2 ...request.Option) (*simpledb.DeleteAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSimpleDBAPIMockRecorder) DeleteDomainRequest(arg0 interface{}) *go
 }
 
 // DeleteDomainWithContext mocks base method
-func (m *MockSimpleDBAPI) DeleteDomainWithContext(arg0 aws.Context, arg1 *simpledb.DeleteDomainInput, arg2 ...request.Option) (*simpledb.DeleteDomainOutput, error) {
+func (m *MockSimpleDBAPI) DeleteDomainWithContext(arg0 context.Context, arg1 *simpledb.DeleteDomainInput, arg2 ...request.Option) (*simpledb.DeleteDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSimpleDBAPIMockRecorder) DomainMetadataRequest(arg0 interface{}) *
 }
 
 // DomainMetadataWithContext mocks base method
-func (m *MockSimpleDBAPI) DomainMetadataWithContext(arg0 aws.Context, arg1 *simpledb.DomainMetadataInput, arg2 ...request.Option) (*simpledb.DomainMetadataOutput, error) {
+func (m *MockSimpleDBAPI) DomainMetadataWithContext(arg0 context.Context, arg1 *simpledb.DomainMetadataInput, arg2 ...request.Option) (*simpledb.DomainMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSimpleDBAPIMockRecorder) GetAttributesRequest(arg0 interface{}) *g
 }
 
 // GetAttributesWithContext mocks base method
-func (m *MockSimpleDBAPI) GetAttributesWithContext(arg0 aws.Context, arg1 *simpledb.GetAttributesInput, arg2 ...request.Option) (*simpledb.GetAttributesOutput, error) {
+func (m *MockSimpleDBAPI) GetAttributesWithContext(arg0 context.Context, arg1 *simpledb.GetAttributesInput, arg2 ...request.Option) (*simpledb.GetAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -415,7 +415,7 @@ func (mr *MockSimpleDBAPIMockRecorder) ListDomainsPages(arg0, arg1 interface{}) 
 }
 
 // ListDomainsPagesWithContext mocks base method
-func (m *MockSimpleDBAPI) ListDomainsPagesWithContext(arg0 aws.Context, arg1 *simpledb.ListDomainsInput, arg2 func(*simpledb.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSimpleDBAPI) ListDomainsPagesWithContext(arg0 context.Context, arg1 *simpledb.ListDomainsInput, arg2 func(*simpledb.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -449,7 +449,7 @@ func (mr *MockSimpleDBAPIMockRecorder) ListDomainsRequest(arg0 interface{}) *gom
 }
 
 // ListDomainsWithContext mocks base method
-func (m *MockSimpleDBAPI) ListDomainsWithContext(arg0 aws.Context, arg1 *simpledb.ListDomainsInput, arg2 ...request.Option) (*simpledb.ListDomainsOutput, error) {
+func (m *MockSimpleDBAPI) ListDomainsWithContext(arg0 context.Context, arg1 *simpledb.ListDomainsInput, arg2 ...request.Option) (*simpledb.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockSimpleDBAPIMockRecorder) PutAttributesRequest(arg0 interface{}) *g
 }
 
 // PutAttributesWithContext mocks base method
-func (m *MockSimpleDBAPI) PutAttributesWithContext(arg0 aws.Context, arg1 *simpledb.PutAttributesInput, arg2 ...request.Option) (*simpledb.PutAttributesOutput, error) {
+func (m *MockSimpleDBAPI) PutAttributesWithContext(arg0 context.Context, arg1 *simpledb.PutAttributesInput, arg2 ...request.Option) (*simpledb.PutAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -548,7 +548,7 @@ func (mr *MockSimpleDBAPIMockRecorder) SelectPages(arg0, arg1 interface{}) *gomo
 }
 
 // SelectPagesWithContext mocks base method
-func (m *MockSimpleDBAPI) SelectPagesWithContext(arg0 aws.Context, arg1 *simpledb.SelectInput, arg2 func(*simpledb.SelectOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSimpleDBAPI) SelectPagesWithContext(arg0 context.Context, arg1 *simpledb.SelectInput, arg2 func(*simpledb.SelectOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -582,7 +582,7 @@ func (mr *MockSimpleDBAPIMockRecorder) SelectRequest(arg0 interface{}) *gomock.C
 }
 
 // SelectWithContext mocks base method
-func (m *MockSimpleDBAPI) SelectWithContext(arg0 aws.Context, arg1 *simpledb.SelectInput, arg2 ...request.Option) (*simpledb.SelectOutput, error) {
+func (m *MockSimpleDBAPI) SelectWithContext(arg0 context.Context, arg1 *simpledb.SelectInput, arg2 ...request.Option) (*simpledb.SelectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package sqsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sqs "github.com/aws/aws-sdk-go/service/sqs"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSQSAPIMockRecorder) AddPermissionRequest(arg0 interface{}) *gomock
 }
 
 // AddPermissionWithContext mocks base method
-func (m *MockSQSAPI) AddPermissionWithContext(arg0 aws.Context, arg1 *sqs.AddPermissionInput, arg2 ...request.Option) (*sqs.AddPermissionOutput, error) {
+func (m *MockSQSAPI) AddPermissionWithContext(arg0 context.Context, arg1 *sqs.AddPermissionInput, arg2 ...request.Option) (*sqs.AddPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -131,7 +131,7 @@ func (mr *MockSQSAPIMockRecorder) ChangeMessageVisibilityBatchRequest(arg0 inter
 }
 
 // ChangeMessageVisibilityBatchWithContext mocks base method
-func (m *MockSQSAPI) ChangeMessageVisibilityBatchWithContext(arg0 aws.Context, arg1 *sqs.ChangeMessageVisibilityBatchInput, arg2 ...request.Option) (*sqs.ChangeMessageVisibilityBatchOutput, error) {
+func (m *MockSQSAPI) ChangeMessageVisibilityBatchWithContext(arg0 context.Context, arg1 *sqs.ChangeMessageVisibilityBatchInput, arg2 ...request.Option) (*sqs.ChangeMessageVisibilityBatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSQSAPIMockRecorder) ChangeMessageVisibilityRequest(arg0 interface{
 }
 
 // ChangeMessageVisibilityWithContext mocks base method
-func (m *MockSQSAPI) ChangeMessageVisibilityWithContext(arg0 aws.Context, arg1 *sqs.ChangeMessageVisibilityInput, arg2 ...request.Option) (*sqs.ChangeMessageVisibilityOutput, error) {
+func (m *MockSQSAPI) ChangeMessageVisibilityWithContext(arg0 context.Context, arg1 *sqs.ChangeMessageVisibilityInput, arg2 ...request.Option) (*sqs.ChangeMessageVisibilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSQSAPIMockRecorder) CreateQueueRequest(arg0 interface{}) *gomock.C
 }
 
 // CreateQueueWithContext mocks base method
-func (m *MockSQSAPI) CreateQueueWithContext(arg0 aws.Context, arg1 *sqs.CreateQueueInput, arg2 ...request.Option) (*sqs.CreateQueueOutput, error) {
+func (m *MockSQSAPI) CreateQueueWithContext(arg0 context.Context, arg1 *sqs.CreateQueueInput, arg2 ...request.Option) (*sqs.CreateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -281,7 +281,7 @@ func (mr *MockSQSAPIMockRecorder) DeleteMessageBatchRequest(arg0 interface{}) *g
 }
 
 // DeleteMessageBatchWithContext mocks base method
-func (m *MockSQSAPI) DeleteMessageBatchWithContext(arg0 aws.Context, arg1 *sqs.DeleteMessageBatchInput, arg2 ...request.Option) (*sqs.DeleteMessageBatchOutput, error) {
+func (m *MockSQSAPI) DeleteMessageBatchWithContext(arg0 context.Context, arg1 *sqs.DeleteMessageBatchInput, arg2 ...request.Option) (*sqs.DeleteMessageBatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSQSAPIMockRecorder) DeleteMessageRequest(arg0 interface{}) *gomock
 }
 
 // DeleteMessageWithContext mocks base method
-func (m *MockSQSAPI) DeleteMessageWithContext(arg0 aws.Context, arg1 *sqs.DeleteMessageInput, arg2 ...request.Option) (*sqs.DeleteMessageOutput, error) {
+func (m *MockSQSAPI) DeleteMessageWithContext(arg0 context.Context, arg1 *sqs.DeleteMessageInput, arg2 ...request.Option) (*sqs.DeleteMessageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSQSAPIMockRecorder) DeleteQueueRequest(arg0 interface{}) *gomock.C
 }
 
 // DeleteQueueWithContext mocks base method
-func (m *MockSQSAPI) DeleteQueueWithContext(arg0 aws.Context, arg1 *sqs.DeleteQueueInput, arg2 ...request.Option) (*sqs.DeleteQueueOutput, error) {
+func (m *MockSQSAPI) DeleteQueueWithContext(arg0 context.Context, arg1 *sqs.DeleteQueueInput, arg2 ...request.Option) (*sqs.DeleteQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSQSAPIMockRecorder) GetQueueAttributesRequest(arg0 interface{}) *g
 }
 
 // GetQueueAttributesWithContext mocks base method
-func (m *MockSQSAPI) GetQueueAttributesWithContext(arg0 aws.Context, arg1 *sqs.GetQueueAttributesInput, arg2 ...request.Option) (*sqs.GetQueueAttributesOutput, error) {
+func (m *MockSQSAPI) GetQueueAttributesWithContext(arg0 context.Context, arg1 *sqs.GetQueueAttributesInput, arg2 ...request.Option) (*sqs.GetQueueAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSQSAPIMockRecorder) GetQueueUrlRequest(arg0 interface{}) *gomock.C
 }
 
 // GetQueueUrlWithContext mocks base method
-func (m *MockSQSAPI) GetQueueUrlWithContext(arg0 aws.Context, arg1 *sqs.GetQueueUrlInput, arg2 ...request.Option) (*sqs.GetQueueUrlOutput, error) {
+func (m *MockSQSAPI) GetQueueUrlWithContext(arg0 context.Context, arg1 *sqs.GetQueueUrlInput, arg2 ...request.Option) (*sqs.GetQueueUrlOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSQSAPIMockRecorder) ListDeadLetterSourceQueuesRequest(arg0 interfa
 }
 
 // ListDeadLetterSourceQueuesWithContext mocks base method
-func (m *MockSQSAPI) ListDeadLetterSourceQueuesWithContext(arg0 aws.Context, arg1 *sqs.ListDeadLetterSourceQueuesInput, arg2 ...request.Option) (*sqs.ListDeadLetterSourceQueuesOutput, error) {
+func (m *MockSQSAPI) ListDeadLetterSourceQueuesWithContext(arg0 context.Context, arg1 *sqs.ListDeadLetterSourceQueuesInput, arg2 ...request.Option) (*sqs.ListDeadLetterSourceQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockSQSAPIMockRecorder) ListQueueTagsRequest(arg0 interface{}) *gomock
 }
 
 // ListQueueTagsWithContext mocks base method
-func (m *MockSQSAPI) ListQueueTagsWithContext(arg0 aws.Context, arg1 *sqs.ListQueueTagsInput, arg2 ...request.Option) (*sqs.ListQueueTagsOutput, error) {
+func (m *MockSQSAPI) ListQueueTagsWithContext(arg0 context.Context, arg1 *sqs.ListQueueTagsInput, arg2 ...request.Option) (*sqs.ListQueueTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockSQSAPIMockRecorder) ListQueuesRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListQueuesWithContext mocks base method
-func (m *MockSQSAPI) ListQueuesWithContext(arg0 aws.Context, arg1 *sqs.ListQueuesInput, arg2 ...request.Option) (*sqs.ListQueuesOutput, error) {
+func (m *MockSQSAPI) ListQueuesWithContext(arg0 context.Context, arg1 *sqs.ListQueuesInput, arg2 ...request.Option) (*sqs.ListQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSQSAPIMockRecorder) PurgeQueueRequest(arg0 interface{}) *gomock.Ca
 }
 
 // PurgeQueueWithContext mocks base method
-func (m *MockSQSAPI) PurgeQueueWithContext(arg0 aws.Context, arg1 *sqs.PurgeQueueInput, arg2 ...request.Option) (*sqs.PurgeQueueOutput, error) {
+func (m *MockSQSAPI) PurgeQueueWithContext(arg0 context.Context, arg1 *sqs.PurgeQueueInput, arg2 ...request.Option) (*sqs.PurgeQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockSQSAPIMockRecorder) ReceiveMessageRequest(arg0 interface{}) *gomoc
 }
 
 // ReceiveMessageWithContext mocks base method
-func (m *MockSQSAPI) ReceiveMessageWithContext(arg0 aws.Context, arg1 *sqs.ReceiveMessageInput, arg2 ...request.Option) (*sqs.ReceiveMessageOutput, error) {
+func (m *MockSQSAPI) ReceiveMessageWithContext(arg0 context.Context, arg1 *sqs.ReceiveMessageInput, arg2 ...request.Option) (*sqs.ReceiveMessageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockSQSAPIMockRecorder) RemovePermissionRequest(arg0 interface{}) *gom
 }
 
 // RemovePermissionWithContext mocks base method
-func (m *MockSQSAPI) RemovePermissionWithContext(arg0 aws.Context, arg1 *sqs.RemovePermissionInput, arg2 ...request.Option) (*sqs.RemovePermissionOutput, error) {
+func (m *MockSQSAPI) RemovePermissionWithContext(arg0 context.Context, arg1 *sqs.RemovePermissionInput, arg2 ...request.Option) (*sqs.RemovePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockSQSAPIMockRecorder) SendMessageBatchRequest(arg0 interface{}) *gom
 }
 
 // SendMessageBatchWithContext mocks base method
-func (m *MockSQSAPI) SendMessageBatchWithContext(arg0 aws.Context, arg1 *sqs.SendMessageBatchInput, arg2 ...request.Option) (*sqs.SendMessageBatchOutput, error) {
+func (m *MockSQSAPI) SendMessageBatchWithContext(arg0 context.Context, arg1 *sqs.SendMessageBatchInput, arg2 ...request.Option) (*sqs.SendMessageBatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockSQSAPIMockRecorder) SendMessageRequest(arg0 interface{}) *gomock.C
 }
 
 // SendMessageWithContext mocks base method
-func (m *MockSQSAPI) SendMessageWithContext(arg0 aws.Context, arg1 *sqs.SendMessageInput, arg2 ...request.Option) (*sqs.SendMessageOutput, error) {
+func (m *MockSQSAPI) SendMessageWithContext(arg0 context.Context, arg1 *sqs.SendMessageInput, arg2 ...request.Option) (*sqs.SendMessageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockSQSAPIMockRecorder) SetQueueAttributesRequest(arg0 interface{}) *g
 }
 
 // SetQueueAttributesWithContext mocks base method
-func (m *MockSQSAPI) SetQueueAttributesWithContext(arg0 aws.Context, arg1 *sqs.SetQueueAttributesInput, arg2 ...request.Option) (*sqs.SetQueueAttributesOutput, error) {
+func (m *MockSQSAPI) SetQueueAttributesWithContext(arg0 context.Context, arg1 *sqs.SetQueueAttributesInput, arg2 ...request.Option) (*sqs.SetQueueAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockSQSAPIMockRecorder) TagQueueRequest(arg0 interface{}) *gomock.Call
 }
 
 // TagQueueWithContext mocks base method
-func (m *MockSQSAPI) TagQueueWithContext(arg0 aws.Context, arg1 *sqs.TagQueueInput, arg2 ...request.Option) (*sqs.TagQueueOutput, error) {
+func (m *MockSQSAPI) TagQueueWithContext(arg0 context.Context, arg1 *sqs.TagQueueInput, arg2 ...request.Option) (*sqs.TagQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockSQSAPIMockRecorder) UntagQueueRequest(arg0 interface{}) *gomock.Ca
 }
 
 // UntagQueueWithContext mocks base method
-func (m *MockSQSAPI) UntagQueueWithContext(arg0 aws.Context, arg1 *sqs.UntagQueueInput, arg2 ...request.Option) (*sqs.UntagQueueOutput, error) {
+func (m *MockSQSAPI) UntagQueueWithContext(arg0 context.Context, arg1 *sqs.UntagQueueInput, arg2 ...request.Option) (*sqs.UntagQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

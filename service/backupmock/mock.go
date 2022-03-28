@@ -5,7 +5,7 @@
 package backupmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	backup "github.com/aws/aws-sdk-go/service/backup"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockBackupAPIMockRecorder) CreateBackupPlanRequest(arg0 interface{}) *
 }
 
 // CreateBackupPlanWithContext mocks base method
-func (m *MockBackupAPI) CreateBackupPlanWithContext(arg0 aws.Context, arg1 *backup.CreateBackupPlanInput, arg2 ...request.Option) (*backup.CreateBackupPlanOutput, error) {
+func (m *MockBackupAPI) CreateBackupPlanWithContext(arg0 context.Context, arg1 *backup.CreateBackupPlanInput, arg2 ...request.Option) (*backup.CreateBackupPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockBackupAPIMockRecorder) CreateBackupSelectionRequest(arg0 interface
 }
 
 // CreateBackupSelectionWithContext mocks base method
-func (m *MockBackupAPI) CreateBackupSelectionWithContext(arg0 aws.Context, arg1 *backup.CreateBackupSelectionInput, arg2 ...request.Option) (*backup.CreateBackupSelectionOutput, error) {
+func (m *MockBackupAPI) CreateBackupSelectionWithContext(arg0 context.Context, arg1 *backup.CreateBackupSelectionInput, arg2 ...request.Option) (*backup.CreateBackupSelectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockBackupAPIMockRecorder) CreateBackupVaultRequest(arg0 interface{}) 
 }
 
 // CreateBackupVaultWithContext mocks base method
-func (m *MockBackupAPI) CreateBackupVaultWithContext(arg0 aws.Context, arg1 *backup.CreateBackupVaultInput, arg2 ...request.Option) (*backup.CreateBackupVaultOutput, error) {
+func (m *MockBackupAPI) CreateBackupVaultWithContext(arg0 context.Context, arg1 *backup.CreateBackupVaultInput, arg2 ...request.Option) (*backup.CreateBackupVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupPlanRequest(arg0 interface{}) *
 }
 
 // DeleteBackupPlanWithContext mocks base method
-func (m *MockBackupAPI) DeleteBackupPlanWithContext(arg0 aws.Context, arg1 *backup.DeleteBackupPlanInput, arg2 ...request.Option) (*backup.DeleteBackupPlanOutput, error) {
+func (m *MockBackupAPI) DeleteBackupPlanWithContext(arg0 context.Context, arg1 *backup.DeleteBackupPlanInput, arg2 ...request.Option) (*backup.DeleteBackupPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupSelectionRequest(arg0 interface
 }
 
 // DeleteBackupSelectionWithContext mocks base method
-func (m *MockBackupAPI) DeleteBackupSelectionWithContext(arg0 aws.Context, arg1 *backup.DeleteBackupSelectionInput, arg2 ...request.Option) (*backup.DeleteBackupSelectionOutput, error) {
+func (m *MockBackupAPI) DeleteBackupSelectionWithContext(arg0 context.Context, arg1 *backup.DeleteBackupSelectionInput, arg2 ...request.Option) (*backup.DeleteBackupSelectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultAccessPolicyRequest(arg0 i
 }
 
 // DeleteBackupVaultAccessPolicyWithContext mocks base method
-func (m *MockBackupAPI) DeleteBackupVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *backup.DeleteBackupVaultAccessPolicyInput, arg2 ...request.Option) (*backup.DeleteBackupVaultAccessPolicyOutput, error) {
+func (m *MockBackupAPI) DeleteBackupVaultAccessPolicyWithContext(arg0 context.Context, arg1 *backup.DeleteBackupVaultAccessPolicyInput, arg2 ...request.Option) (*backup.DeleteBackupVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultNotificationsRequest(arg0 
 }
 
 // DeleteBackupVaultNotificationsWithContext mocks base method
-func (m *MockBackupAPI) DeleteBackupVaultNotificationsWithContext(arg0 aws.Context, arg1 *backup.DeleteBackupVaultNotificationsInput, arg2 ...request.Option) (*backup.DeleteBackupVaultNotificationsOutput, error) {
+func (m *MockBackupAPI) DeleteBackupVaultNotificationsWithContext(arg0 context.Context, arg1 *backup.DeleteBackupVaultNotificationsInput, arg2 ...request.Option) (*backup.DeleteBackupVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultRequest(arg0 interface{}) 
 }
 
 // DeleteBackupVaultWithContext mocks base method
-func (m *MockBackupAPI) DeleteBackupVaultWithContext(arg0 aws.Context, arg1 *backup.DeleteBackupVaultInput, arg2 ...request.Option) (*backup.DeleteBackupVaultOutput, error) {
+func (m *MockBackupAPI) DeleteBackupVaultWithContext(arg0 context.Context, arg1 *backup.DeleteBackupVaultInput, arg2 ...request.Option) (*backup.DeleteBackupVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockBackupAPIMockRecorder) DeleteRecoveryPointRequest(arg0 interface{}
 }
 
 // DeleteRecoveryPointWithContext mocks base method
-func (m *MockBackupAPI) DeleteRecoveryPointWithContext(arg0 aws.Context, arg1 *backup.DeleteRecoveryPointInput, arg2 ...request.Option) (*backup.DeleteRecoveryPointOutput, error) {
+func (m *MockBackupAPI) DeleteRecoveryPointWithContext(arg0 context.Context, arg1 *backup.DeleteRecoveryPointInput, arg2 ...request.Option) (*backup.DeleteRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockBackupAPIMockRecorder) DescribeBackupJobRequest(arg0 interface{}) 
 }
 
 // DescribeBackupJobWithContext mocks base method
-func (m *MockBackupAPI) DescribeBackupJobWithContext(arg0 aws.Context, arg1 *backup.DescribeBackupJobInput, arg2 ...request.Option) (*backup.DescribeBackupJobOutput, error) {
+func (m *MockBackupAPI) DescribeBackupJobWithContext(arg0 context.Context, arg1 *backup.DescribeBackupJobInput, arg2 ...request.Option) (*backup.DescribeBackupJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockBackupAPIMockRecorder) DescribeBackupVaultRequest(arg0 interface{}
 }
 
 // DescribeBackupVaultWithContext mocks base method
-func (m *MockBackupAPI) DescribeBackupVaultWithContext(arg0 aws.Context, arg1 *backup.DescribeBackupVaultInput, arg2 ...request.Option) (*backup.DescribeBackupVaultOutput, error) {
+func (m *MockBackupAPI) DescribeBackupVaultWithContext(arg0 context.Context, arg1 *backup.DescribeBackupVaultInput, arg2 ...request.Option) (*backup.DescribeBackupVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockBackupAPIMockRecorder) DescribeProtectedResourceRequest(arg0 inter
 }
 
 // DescribeProtectedResourceWithContext mocks base method
-func (m *MockBackupAPI) DescribeProtectedResourceWithContext(arg0 aws.Context, arg1 *backup.DescribeProtectedResourceInput, arg2 ...request.Option) (*backup.DescribeProtectedResourceOutput, error) {
+func (m *MockBackupAPI) DescribeProtectedResourceWithContext(arg0 context.Context, arg1 *backup.DescribeProtectedResourceInput, arg2 ...request.Option) (*backup.DescribeProtectedResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockBackupAPIMockRecorder) DescribeRecoveryPointRequest(arg0 interface
 }
 
 // DescribeRecoveryPointWithContext mocks base method
-func (m *MockBackupAPI) DescribeRecoveryPointWithContext(arg0 aws.Context, arg1 *backup.DescribeRecoveryPointInput, arg2 ...request.Option) (*backup.DescribeRecoveryPointOutput, error) {
+func (m *MockBackupAPI) DescribeRecoveryPointWithContext(arg0 context.Context, arg1 *backup.DescribeRecoveryPointInput, arg2 ...request.Option) (*backup.DescribeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockBackupAPIMockRecorder) DescribeRestoreJobRequest(arg0 interface{})
 }
 
 // DescribeRestoreJobWithContext mocks base method
-func (m *MockBackupAPI) DescribeRestoreJobWithContext(arg0 aws.Context, arg1 *backup.DescribeRestoreJobInput, arg2 ...request.Option) (*backup.DescribeRestoreJobOutput, error) {
+func (m *MockBackupAPI) DescribeRestoreJobWithContext(arg0 context.Context, arg1 *backup.DescribeRestoreJobInput, arg2 ...request.Option) (*backup.DescribeRestoreJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockBackupAPIMockRecorder) ExportBackupPlanTemplateRequest(arg0 interf
 }
 
 // ExportBackupPlanTemplateWithContext mocks base method
-func (m *MockBackupAPI) ExportBackupPlanTemplateWithContext(arg0 aws.Context, arg1 *backup.ExportBackupPlanTemplateInput, arg2 ...request.Option) (*backup.ExportBackupPlanTemplateOutput, error) {
+func (m *MockBackupAPI) ExportBackupPlanTemplateWithContext(arg0 context.Context, arg1 *backup.ExportBackupPlanTemplateInput, arg2 ...request.Option) (*backup.ExportBackupPlanTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockBackupAPIMockRecorder) GetBackupPlanFromJSONRequest(arg0 interface
 }
 
 // GetBackupPlanFromJSONWithContext mocks base method
-func (m *MockBackupAPI) GetBackupPlanFromJSONWithContext(arg0 aws.Context, arg1 *backup.GetBackupPlanFromJSONInput, arg2 ...request.Option) (*backup.GetBackupPlanFromJSONOutput, error) {
+func (m *MockBackupAPI) GetBackupPlanFromJSONWithContext(arg0 context.Context, arg1 *backup.GetBackupPlanFromJSONInput, arg2 ...request.Option) (*backup.GetBackupPlanFromJSONOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockBackupAPIMockRecorder) GetBackupPlanFromTemplateRequest(arg0 inter
 }
 
 // GetBackupPlanFromTemplateWithContext mocks base method
-func (m *MockBackupAPI) GetBackupPlanFromTemplateWithContext(arg0 aws.Context, arg1 *backup.GetBackupPlanFromTemplateInput, arg2 ...request.Option) (*backup.GetBackupPlanFromTemplateOutput, error) {
+func (m *MockBackupAPI) GetBackupPlanFromTemplateWithContext(arg0 context.Context, arg1 *backup.GetBackupPlanFromTemplateInput, arg2 ...request.Option) (*backup.GetBackupPlanFromTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockBackupAPIMockRecorder) GetBackupPlanRequest(arg0 interface{}) *gom
 }
 
 // GetBackupPlanWithContext mocks base method
-func (m *MockBackupAPI) GetBackupPlanWithContext(arg0 aws.Context, arg1 *backup.GetBackupPlanInput, arg2 ...request.Option) (*backup.GetBackupPlanOutput, error) {
+func (m *MockBackupAPI) GetBackupPlanWithContext(arg0 context.Context, arg1 *backup.GetBackupPlanInput, arg2 ...request.Option) (*backup.GetBackupPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockBackupAPIMockRecorder) GetBackupSelectionRequest(arg0 interface{})
 }
 
 // GetBackupSelectionWithContext mocks base method
-func (m *MockBackupAPI) GetBackupSelectionWithContext(arg0 aws.Context, arg1 *backup.GetBackupSelectionInput, arg2 ...request.Option) (*backup.GetBackupSelectionOutput, error) {
+func (m *MockBackupAPI) GetBackupSelectionWithContext(arg0 context.Context, arg1 *backup.GetBackupSelectionInput, arg2 ...request.Option) (*backup.GetBackupSelectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockBackupAPIMockRecorder) GetBackupVaultAccessPolicyRequest(arg0 inte
 }
 
 // GetBackupVaultAccessPolicyWithContext mocks base method
-func (m *MockBackupAPI) GetBackupVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *backup.GetBackupVaultAccessPolicyInput, arg2 ...request.Option) (*backup.GetBackupVaultAccessPolicyOutput, error) {
+func (m *MockBackupAPI) GetBackupVaultAccessPolicyWithContext(arg0 context.Context, arg1 *backup.GetBackupVaultAccessPolicyInput, arg2 ...request.Option) (*backup.GetBackupVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockBackupAPIMockRecorder) GetBackupVaultNotificationsRequest(arg0 int
 }
 
 // GetBackupVaultNotificationsWithContext mocks base method
-func (m *MockBackupAPI) GetBackupVaultNotificationsWithContext(arg0 aws.Context, arg1 *backup.GetBackupVaultNotificationsInput, arg2 ...request.Option) (*backup.GetBackupVaultNotificationsOutput, error) {
+func (m *MockBackupAPI) GetBackupVaultNotificationsWithContext(arg0 context.Context, arg1 *backup.GetBackupVaultNotificationsInput, arg2 ...request.Option) (*backup.GetBackupVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockBackupAPIMockRecorder) GetRecoveryPointRestoreMetadataRequest(arg0
 }
 
 // GetRecoveryPointRestoreMetadataWithContext mocks base method
-func (m *MockBackupAPI) GetRecoveryPointRestoreMetadataWithContext(arg0 aws.Context, arg1 *backup.GetRecoveryPointRestoreMetadataInput, arg2 ...request.Option) (*backup.GetRecoveryPointRestoreMetadataOutput, error) {
+func (m *MockBackupAPI) GetRecoveryPointRestoreMetadataWithContext(arg0 context.Context, arg1 *backup.GetRecoveryPointRestoreMetadataInput, arg2 ...request.Option) (*backup.GetRecoveryPointRestoreMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockBackupAPIMockRecorder) GetSupportedResourceTypesRequest(arg0 inter
 }
 
 // GetSupportedResourceTypesWithContext mocks base method
-func (m *MockBackupAPI) GetSupportedResourceTypesWithContext(arg0 aws.Context, arg1 *backup.GetSupportedResourceTypesInput, arg2 ...request.Option) (*backup.GetSupportedResourceTypesOutput, error) {
+func (m *MockBackupAPI) GetSupportedResourceTypesWithContext(arg0 context.Context, arg1 *backup.GetSupportedResourceTypesInput, arg2 ...request.Option) (*backup.GetSupportedResourceTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupJobsPages(arg0, arg1 interface{})
 }
 
 // ListBackupJobsPagesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupJobsPagesWithContext(arg0 aws.Context, arg1 *backup.ListBackupJobsInput, arg2 func(*backup.ListBackupJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListBackupJobsPagesWithContext(arg0 context.Context, arg1 *backup.ListBackupJobsInput, arg2 func(*backup.ListBackupJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1249,7 +1249,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupJobsRequest(arg0 interface{}) *go
 }
 
 // ListBackupJobsWithContext mocks base method
-func (m *MockBackupAPI) ListBackupJobsWithContext(arg0 aws.Context, arg1 *backup.ListBackupJobsInput, arg2 ...request.Option) (*backup.ListBackupJobsOutput, error) {
+func (m *MockBackupAPI) ListBackupJobsWithContext(arg0 context.Context, arg1 *backup.ListBackupJobsInput, arg2 ...request.Option) (*backup.ListBackupJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1298,7 +1298,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupPlanTemplatesPages(arg0, arg1 int
 }
 
 // ListBackupPlanTemplatesPagesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupPlanTemplatesPagesWithContext(arg0 aws.Context, arg1 *backup.ListBackupPlanTemplatesInput, arg2 func(*backup.ListBackupPlanTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListBackupPlanTemplatesPagesWithContext(arg0 context.Context, arg1 *backup.ListBackupPlanTemplatesInput, arg2 func(*backup.ListBackupPlanTemplatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1332,7 +1332,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupPlanTemplatesRequest(arg0 interfa
 }
 
 // ListBackupPlanTemplatesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupPlanTemplatesWithContext(arg0 aws.Context, arg1 *backup.ListBackupPlanTemplatesInput, arg2 ...request.Option) (*backup.ListBackupPlanTemplatesOutput, error) {
+func (m *MockBackupAPI) ListBackupPlanTemplatesWithContext(arg0 context.Context, arg1 *backup.ListBackupPlanTemplatesInput, arg2 ...request.Option) (*backup.ListBackupPlanTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupPlanVersionsPages(arg0, arg1 inte
 }
 
 // ListBackupPlanVersionsPagesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupPlanVersionsPagesWithContext(arg0 aws.Context, arg1 *backup.ListBackupPlanVersionsInput, arg2 func(*backup.ListBackupPlanVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListBackupPlanVersionsPagesWithContext(arg0 context.Context, arg1 *backup.ListBackupPlanVersionsInput, arg2 func(*backup.ListBackupPlanVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1415,7 +1415,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupPlanVersionsRequest(arg0 interfac
 }
 
 // ListBackupPlanVersionsWithContext mocks base method
-func (m *MockBackupAPI) ListBackupPlanVersionsWithContext(arg0 aws.Context, arg1 *backup.ListBackupPlanVersionsInput, arg2 ...request.Option) (*backup.ListBackupPlanVersionsOutput, error) {
+func (m *MockBackupAPI) ListBackupPlanVersionsWithContext(arg0 context.Context, arg1 *backup.ListBackupPlanVersionsInput, arg2 ...request.Option) (*backup.ListBackupPlanVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1464,7 +1464,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupPlansPages(arg0, arg1 interface{}
 }
 
 // ListBackupPlansPagesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupPlansPagesWithContext(arg0 aws.Context, arg1 *backup.ListBackupPlansInput, arg2 func(*backup.ListBackupPlansOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListBackupPlansPagesWithContext(arg0 context.Context, arg1 *backup.ListBackupPlansInput, arg2 func(*backup.ListBackupPlansOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1498,7 +1498,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupPlansRequest(arg0 interface{}) *g
 }
 
 // ListBackupPlansWithContext mocks base method
-func (m *MockBackupAPI) ListBackupPlansWithContext(arg0 aws.Context, arg1 *backup.ListBackupPlansInput, arg2 ...request.Option) (*backup.ListBackupPlansOutput, error) {
+func (m *MockBackupAPI) ListBackupPlansWithContext(arg0 context.Context, arg1 *backup.ListBackupPlansInput, arg2 ...request.Option) (*backup.ListBackupPlansOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1547,7 +1547,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupSelectionsPages(arg0, arg1 interf
 }
 
 // ListBackupSelectionsPagesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupSelectionsPagesWithContext(arg0 aws.Context, arg1 *backup.ListBackupSelectionsInput, arg2 func(*backup.ListBackupSelectionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListBackupSelectionsPagesWithContext(arg0 context.Context, arg1 *backup.ListBackupSelectionsInput, arg2 func(*backup.ListBackupSelectionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1581,7 +1581,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupSelectionsRequest(arg0 interface{
 }
 
 // ListBackupSelectionsWithContext mocks base method
-func (m *MockBackupAPI) ListBackupSelectionsWithContext(arg0 aws.Context, arg1 *backup.ListBackupSelectionsInput, arg2 ...request.Option) (*backup.ListBackupSelectionsOutput, error) {
+func (m *MockBackupAPI) ListBackupSelectionsWithContext(arg0 context.Context, arg1 *backup.ListBackupSelectionsInput, arg2 ...request.Option) (*backup.ListBackupSelectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1630,7 +1630,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupVaultsPages(arg0, arg1 interface{
 }
 
 // ListBackupVaultsPagesWithContext mocks base method
-func (m *MockBackupAPI) ListBackupVaultsPagesWithContext(arg0 aws.Context, arg1 *backup.ListBackupVaultsInput, arg2 func(*backup.ListBackupVaultsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListBackupVaultsPagesWithContext(arg0 context.Context, arg1 *backup.ListBackupVaultsInput, arg2 func(*backup.ListBackupVaultsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1664,7 +1664,7 @@ func (mr *MockBackupAPIMockRecorder) ListBackupVaultsRequest(arg0 interface{}) *
 }
 
 // ListBackupVaultsWithContext mocks base method
-func (m *MockBackupAPI) ListBackupVaultsWithContext(arg0 aws.Context, arg1 *backup.ListBackupVaultsInput, arg2 ...request.Option) (*backup.ListBackupVaultsOutput, error) {
+func (m *MockBackupAPI) ListBackupVaultsWithContext(arg0 context.Context, arg1 *backup.ListBackupVaultsInput, arg2 ...request.Option) (*backup.ListBackupVaultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1713,7 +1713,7 @@ func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesPages(arg0, arg1 inte
 }
 
 // ListProtectedResourcesPagesWithContext mocks base method
-func (m *MockBackupAPI) ListProtectedResourcesPagesWithContext(arg0 aws.Context, arg1 *backup.ListProtectedResourcesInput, arg2 func(*backup.ListProtectedResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListProtectedResourcesPagesWithContext(arg0 context.Context, arg1 *backup.ListProtectedResourcesInput, arg2 func(*backup.ListProtectedResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1747,7 +1747,7 @@ func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesRequest(arg0 interfac
 }
 
 // ListProtectedResourcesWithContext mocks base method
-func (m *MockBackupAPI) ListProtectedResourcesWithContext(arg0 aws.Context, arg1 *backup.ListProtectedResourcesInput, arg2 ...request.Option) (*backup.ListProtectedResourcesOutput, error) {
+func (m *MockBackupAPI) ListProtectedResourcesWithContext(arg0 context.Context, arg1 *backup.ListProtectedResourcesInput, arg2 ...request.Option) (*backup.ListProtectedResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1796,7 +1796,7 @@ func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByBackupVaultPages(arg0, 
 }
 
 // ListRecoveryPointsByBackupVaultPagesWithContext mocks base method
-func (m *MockBackupAPI) ListRecoveryPointsByBackupVaultPagesWithContext(arg0 aws.Context, arg1 *backup.ListRecoveryPointsByBackupVaultInput, arg2 func(*backup.ListRecoveryPointsByBackupVaultOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListRecoveryPointsByBackupVaultPagesWithContext(arg0 context.Context, arg1 *backup.ListRecoveryPointsByBackupVaultInput, arg2 func(*backup.ListRecoveryPointsByBackupVaultOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1830,7 +1830,7 @@ func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByBackupVaultRequest(arg0
 }
 
 // ListRecoveryPointsByBackupVaultWithContext mocks base method
-func (m *MockBackupAPI) ListRecoveryPointsByBackupVaultWithContext(arg0 aws.Context, arg1 *backup.ListRecoveryPointsByBackupVaultInput, arg2 ...request.Option) (*backup.ListRecoveryPointsByBackupVaultOutput, error) {
+func (m *MockBackupAPI) ListRecoveryPointsByBackupVaultWithContext(arg0 context.Context, arg1 *backup.ListRecoveryPointsByBackupVaultInput, arg2 ...request.Option) (*backup.ListRecoveryPointsByBackupVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1879,7 +1879,7 @@ func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByResourcePages(arg0, arg
 }
 
 // ListRecoveryPointsByResourcePagesWithContext mocks base method
-func (m *MockBackupAPI) ListRecoveryPointsByResourcePagesWithContext(arg0 aws.Context, arg1 *backup.ListRecoveryPointsByResourceInput, arg2 func(*backup.ListRecoveryPointsByResourceOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListRecoveryPointsByResourcePagesWithContext(arg0 context.Context, arg1 *backup.ListRecoveryPointsByResourceInput, arg2 func(*backup.ListRecoveryPointsByResourceOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1913,7 +1913,7 @@ func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByResourceRequest(arg0 in
 }
 
 // ListRecoveryPointsByResourceWithContext mocks base method
-func (m *MockBackupAPI) ListRecoveryPointsByResourceWithContext(arg0 aws.Context, arg1 *backup.ListRecoveryPointsByResourceInput, arg2 ...request.Option) (*backup.ListRecoveryPointsByResourceOutput, error) {
+func (m *MockBackupAPI) ListRecoveryPointsByResourceWithContext(arg0 context.Context, arg1 *backup.ListRecoveryPointsByResourceInput, arg2 ...request.Option) (*backup.ListRecoveryPointsByResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1962,7 +1962,7 @@ func (mr *MockBackupAPIMockRecorder) ListRestoreJobsPages(arg0, arg1 interface{}
 }
 
 // ListRestoreJobsPagesWithContext mocks base method
-func (m *MockBackupAPI) ListRestoreJobsPagesWithContext(arg0 aws.Context, arg1 *backup.ListRestoreJobsInput, arg2 func(*backup.ListRestoreJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListRestoreJobsPagesWithContext(arg0 context.Context, arg1 *backup.ListRestoreJobsInput, arg2 func(*backup.ListRestoreJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1996,7 +1996,7 @@ func (mr *MockBackupAPIMockRecorder) ListRestoreJobsRequest(arg0 interface{}) *g
 }
 
 // ListRestoreJobsWithContext mocks base method
-func (m *MockBackupAPI) ListRestoreJobsWithContext(arg0 aws.Context, arg1 *backup.ListRestoreJobsInput, arg2 ...request.Option) (*backup.ListRestoreJobsOutput, error) {
+func (m *MockBackupAPI) ListRestoreJobsWithContext(arg0 context.Context, arg1 *backup.ListRestoreJobsInput, arg2 ...request.Option) (*backup.ListRestoreJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2045,7 +2045,7 @@ func (mr *MockBackupAPIMockRecorder) ListTagsPages(arg0, arg1 interface{}) *gomo
 }
 
 // ListTagsPagesWithContext mocks base method
-func (m *MockBackupAPI) ListTagsPagesWithContext(arg0 aws.Context, arg1 *backup.ListTagsInput, arg2 func(*backup.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockBackupAPI) ListTagsPagesWithContext(arg0 context.Context, arg1 *backup.ListTagsInput, arg2 func(*backup.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2079,7 +2079,7 @@ func (mr *MockBackupAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.C
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockBackupAPI) ListTagsWithContext(arg0 aws.Context, arg1 *backup.ListTagsInput, arg2 ...request.Option) (*backup.ListTagsOutput, error) {
+func (m *MockBackupAPI) ListTagsWithContext(arg0 context.Context, arg1 *backup.ListTagsInput, arg2 ...request.Option) (*backup.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2129,7 +2129,7 @@ func (mr *MockBackupAPIMockRecorder) PutBackupVaultAccessPolicyRequest(arg0 inte
 }
 
 // PutBackupVaultAccessPolicyWithContext mocks base method
-func (m *MockBackupAPI) PutBackupVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *backup.PutBackupVaultAccessPolicyInput, arg2 ...request.Option) (*backup.PutBackupVaultAccessPolicyOutput, error) {
+func (m *MockBackupAPI) PutBackupVaultAccessPolicyWithContext(arg0 context.Context, arg1 *backup.PutBackupVaultAccessPolicyInput, arg2 ...request.Option) (*backup.PutBackupVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2179,7 +2179,7 @@ func (mr *MockBackupAPIMockRecorder) PutBackupVaultNotificationsRequest(arg0 int
 }
 
 // PutBackupVaultNotificationsWithContext mocks base method
-func (m *MockBackupAPI) PutBackupVaultNotificationsWithContext(arg0 aws.Context, arg1 *backup.PutBackupVaultNotificationsInput, arg2 ...request.Option) (*backup.PutBackupVaultNotificationsOutput, error) {
+func (m *MockBackupAPI) PutBackupVaultNotificationsWithContext(arg0 context.Context, arg1 *backup.PutBackupVaultNotificationsInput, arg2 ...request.Option) (*backup.PutBackupVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2229,7 +2229,7 @@ func (mr *MockBackupAPIMockRecorder) StartBackupJobRequest(arg0 interface{}) *go
 }
 
 // StartBackupJobWithContext mocks base method
-func (m *MockBackupAPI) StartBackupJobWithContext(arg0 aws.Context, arg1 *backup.StartBackupJobInput, arg2 ...request.Option) (*backup.StartBackupJobOutput, error) {
+func (m *MockBackupAPI) StartBackupJobWithContext(arg0 context.Context, arg1 *backup.StartBackupJobInput, arg2 ...request.Option) (*backup.StartBackupJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2279,7 +2279,7 @@ func (mr *MockBackupAPIMockRecorder) StartRestoreJobRequest(arg0 interface{}) *g
 }
 
 // StartRestoreJobWithContext mocks base method
-func (m *MockBackupAPI) StartRestoreJobWithContext(arg0 aws.Context, arg1 *backup.StartRestoreJobInput, arg2 ...request.Option) (*backup.StartRestoreJobOutput, error) {
+func (m *MockBackupAPI) StartRestoreJobWithContext(arg0 context.Context, arg1 *backup.StartRestoreJobInput, arg2 ...request.Option) (*backup.StartRestoreJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2329,7 +2329,7 @@ func (mr *MockBackupAPIMockRecorder) StopBackupJobRequest(arg0 interface{}) *gom
 }
 
 // StopBackupJobWithContext mocks base method
-func (m *MockBackupAPI) StopBackupJobWithContext(arg0 aws.Context, arg1 *backup.StopBackupJobInput, arg2 ...request.Option) (*backup.StopBackupJobOutput, error) {
+func (m *MockBackupAPI) StopBackupJobWithContext(arg0 context.Context, arg1 *backup.StopBackupJobInput, arg2 ...request.Option) (*backup.StopBackupJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2379,7 +2379,7 @@ func (mr *MockBackupAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomoc
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockBackupAPI) TagResourceWithContext(arg0 aws.Context, arg1 *backup.TagResourceInput, arg2 ...request.Option) (*backup.TagResourceOutput, error) {
+func (m *MockBackupAPI) TagResourceWithContext(arg0 context.Context, arg1 *backup.TagResourceInput, arg2 ...request.Option) (*backup.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2429,7 +2429,7 @@ func (mr *MockBackupAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gom
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockBackupAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *backup.UntagResourceInput, arg2 ...request.Option) (*backup.UntagResourceOutput, error) {
+func (m *MockBackupAPI) UntagResourceWithContext(arg0 context.Context, arg1 *backup.UntagResourceInput, arg2 ...request.Option) (*backup.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2479,7 +2479,7 @@ func (mr *MockBackupAPIMockRecorder) UpdateBackupPlanRequest(arg0 interface{}) *
 }
 
 // UpdateBackupPlanWithContext mocks base method
-func (m *MockBackupAPI) UpdateBackupPlanWithContext(arg0 aws.Context, arg1 *backup.UpdateBackupPlanInput, arg2 ...request.Option) (*backup.UpdateBackupPlanOutput, error) {
+func (m *MockBackupAPI) UpdateBackupPlanWithContext(arg0 context.Context, arg1 *backup.UpdateBackupPlanInput, arg2 ...request.Option) (*backup.UpdateBackupPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2529,7 +2529,7 @@ func (mr *MockBackupAPIMockRecorder) UpdateRecoveryPointLifecycleRequest(arg0 in
 }
 
 // UpdateRecoveryPointLifecycleWithContext mocks base method
-func (m *MockBackupAPI) UpdateRecoveryPointLifecycleWithContext(arg0 aws.Context, arg1 *backup.UpdateRecoveryPointLifecycleInput, arg2 ...request.Option) (*backup.UpdateRecoveryPointLifecycleOutput, error) {
+func (m *MockBackupAPI) UpdateRecoveryPointLifecycleWithContext(arg0 context.Context, arg1 *backup.UpdateRecoveryPointLifecycleInput, arg2 ...request.Option) (*backup.UpdateRecoveryPointLifecycleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package mediastoremock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediastore "github.com/aws/aws-sdk-go/service/mediastore"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaStoreAPIMockRecorder) CreateContainerRequest(arg0 interface{}
 }
 
 // CreateContainerWithContext mocks base method
-func (m *MockMediaStoreAPI) CreateContainerWithContext(arg0 aws.Context, arg1 *mediastore.CreateContainerInput, arg2 ...request.Option) (*mediastore.CreateContainerOutput, error) {
+func (m *MockMediaStoreAPI) CreateContainerWithContext(arg0 context.Context, arg1 *mediastore.CreateContainerInput, arg2 ...request.Option) (*mediastore.CreateContainerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -131,7 +131,7 @@ func (mr *MockMediaStoreAPIMockRecorder) DeleteContainerPolicyRequest(arg0 inter
 }
 
 // DeleteContainerPolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) DeleteContainerPolicyWithContext(arg0 aws.Context, arg1 *mediastore.DeleteContainerPolicyInput, arg2 ...request.Option) (*mediastore.DeleteContainerPolicyOutput, error) {
+func (m *MockMediaStoreAPI) DeleteContainerPolicyWithContext(arg0 context.Context, arg1 *mediastore.DeleteContainerPolicyInput, arg2 ...request.Option) (*mediastore.DeleteContainerPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMediaStoreAPIMockRecorder) DeleteContainerRequest(arg0 interface{}
 }
 
 // DeleteContainerWithContext mocks base method
-func (m *MockMediaStoreAPI) DeleteContainerWithContext(arg0 aws.Context, arg1 *mediastore.DeleteContainerInput, arg2 ...request.Option) (*mediastore.DeleteContainerOutput, error) {
+func (m *MockMediaStoreAPI) DeleteContainerWithContext(arg0 context.Context, arg1 *mediastore.DeleteContainerInput, arg2 ...request.Option) (*mediastore.DeleteContainerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaStoreAPIMockRecorder) DeleteCorsPolicyRequest(arg0 interface{
 }
 
 // DeleteCorsPolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) DeleteCorsPolicyWithContext(arg0 aws.Context, arg1 *mediastore.DeleteCorsPolicyInput, arg2 ...request.Option) (*mediastore.DeleteCorsPolicyOutput, error) {
+func (m *MockMediaStoreAPI) DeleteCorsPolicyWithContext(arg0 context.Context, arg1 *mediastore.DeleteCorsPolicyInput, arg2 ...request.Option) (*mediastore.DeleteCorsPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMediaStoreAPIMockRecorder) DeleteLifecyclePolicyRequest(arg0 inter
 }
 
 // DeleteLifecyclePolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) DeleteLifecyclePolicyWithContext(arg0 aws.Context, arg1 *mediastore.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.DeleteLifecyclePolicyOutput, error) {
+func (m *MockMediaStoreAPI) DeleteLifecyclePolicyWithContext(arg0 context.Context, arg1 *mediastore.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.DeleteLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMediaStoreAPIMockRecorder) DescribeContainerRequest(arg0 interface
 }
 
 // DescribeContainerWithContext mocks base method
-func (m *MockMediaStoreAPI) DescribeContainerWithContext(arg0 aws.Context, arg1 *mediastore.DescribeContainerInput, arg2 ...request.Option) (*mediastore.DescribeContainerOutput, error) {
+func (m *MockMediaStoreAPI) DescribeContainerWithContext(arg0 context.Context, arg1 *mediastore.DescribeContainerInput, arg2 ...request.Option) (*mediastore.DescribeContainerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMediaStoreAPIMockRecorder) GetContainerPolicyRequest(arg0 interfac
 }
 
 // GetContainerPolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) GetContainerPolicyWithContext(arg0 aws.Context, arg1 *mediastore.GetContainerPolicyInput, arg2 ...request.Option) (*mediastore.GetContainerPolicyOutput, error) {
+func (m *MockMediaStoreAPI) GetContainerPolicyWithContext(arg0 context.Context, arg1 *mediastore.GetContainerPolicyInput, arg2 ...request.Option) (*mediastore.GetContainerPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMediaStoreAPIMockRecorder) GetCorsPolicyRequest(arg0 interface{}) 
 }
 
 // GetCorsPolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) GetCorsPolicyWithContext(arg0 aws.Context, arg1 *mediastore.GetCorsPolicyInput, arg2 ...request.Option) (*mediastore.GetCorsPolicyOutput, error) {
+func (m *MockMediaStoreAPI) GetCorsPolicyWithContext(arg0 context.Context, arg1 *mediastore.GetCorsPolicyInput, arg2 ...request.Option) (*mediastore.GetCorsPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockMediaStoreAPIMockRecorder) GetLifecyclePolicyRequest(arg0 interfac
 }
 
 // GetLifecyclePolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) GetLifecyclePolicyWithContext(arg0 aws.Context, arg1 *mediastore.GetLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.GetLifecyclePolicyOutput, error) {
+func (m *MockMediaStoreAPI) GetLifecyclePolicyWithContext(arg0 context.Context, arg1 *mediastore.GetLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.GetLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockMediaStoreAPIMockRecorder) ListContainersRequest(arg0 interface{})
 }
 
 // ListContainersWithContext mocks base method
-func (m *MockMediaStoreAPI) ListContainersWithContext(arg0 aws.Context, arg1 *mediastore.ListContainersInput, arg2 ...request.Option) (*mediastore.ListContainersOutput, error) {
+func (m *MockMediaStoreAPI) ListContainersWithContext(arg0 context.Context, arg1 *mediastore.ListContainersInput, arg2 ...request.Option) (*mediastore.ListContainersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockMediaStoreAPIMockRecorder) PutContainerPolicyRequest(arg0 interfac
 }
 
 // PutContainerPolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) PutContainerPolicyWithContext(arg0 aws.Context, arg1 *mediastore.PutContainerPolicyInput, arg2 ...request.Option) (*mediastore.PutContainerPolicyOutput, error) {
+func (m *MockMediaStoreAPI) PutContainerPolicyWithContext(arg0 context.Context, arg1 *mediastore.PutContainerPolicyInput, arg2 ...request.Option) (*mediastore.PutContainerPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockMediaStoreAPIMockRecorder) PutCorsPolicyRequest(arg0 interface{}) 
 }
 
 // PutCorsPolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) PutCorsPolicyWithContext(arg0 aws.Context, arg1 *mediastore.PutCorsPolicyInput, arg2 ...request.Option) (*mediastore.PutCorsPolicyOutput, error) {
+func (m *MockMediaStoreAPI) PutCorsPolicyWithContext(arg0 context.Context, arg1 *mediastore.PutCorsPolicyInput, arg2 ...request.Option) (*mediastore.PutCorsPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockMediaStoreAPIMockRecorder) PutLifecyclePolicyRequest(arg0 interfac
 }
 
 // PutLifecyclePolicyWithContext mocks base method
-func (m *MockMediaStoreAPI) PutLifecyclePolicyWithContext(arg0 aws.Context, arg1 *mediastore.PutLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.PutLifecyclePolicyOutput, error) {
+func (m *MockMediaStoreAPI) PutLifecyclePolicyWithContext(arg0 context.Context, arg1 *mediastore.PutLifecyclePolicyInput, arg2 ...request.Option) (*mediastore.PutLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

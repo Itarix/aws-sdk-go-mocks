@@ -5,7 +5,7 @@
 package mediaconnectmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediaconnect "github.com/aws/aws-sdk-go/service/mediaconnect"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaConnectAPIMockRecorder) AddFlowOutputsRequest(arg0 interface{
 }
 
 // AddFlowOutputsWithContext mocks base method
-func (m *MockMediaConnectAPI) AddFlowOutputsWithContext(arg0 aws.Context, arg1 *mediaconnect.AddFlowOutputsInput, arg2 ...request.Option) (*mediaconnect.AddFlowOutputsOutput, error) {
+func (m *MockMediaConnectAPI) AddFlowOutputsWithContext(arg0 context.Context, arg1 *mediaconnect.AddFlowOutputsInput, arg2 ...request.Option) (*mediaconnect.AddFlowOutputsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMediaConnectAPIMockRecorder) CreateFlowRequest(arg0 interface{}) *
 }
 
 // CreateFlowWithContext mocks base method
-func (m *MockMediaConnectAPI) CreateFlowWithContext(arg0 aws.Context, arg1 *mediaconnect.CreateFlowInput, arg2 ...request.Option) (*mediaconnect.CreateFlowOutput, error) {
+func (m *MockMediaConnectAPI) CreateFlowWithContext(arg0 context.Context, arg1 *mediaconnect.CreateFlowInput, arg2 ...request.Option) (*mediaconnect.CreateFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMediaConnectAPIMockRecorder) DeleteFlowRequest(arg0 interface{}) *
 }
 
 // DeleteFlowWithContext mocks base method
-func (m *MockMediaConnectAPI) DeleteFlowWithContext(arg0 aws.Context, arg1 *mediaconnect.DeleteFlowInput, arg2 ...request.Option) (*mediaconnect.DeleteFlowOutput, error) {
+func (m *MockMediaConnectAPI) DeleteFlowWithContext(arg0 context.Context, arg1 *mediaconnect.DeleteFlowInput, arg2 ...request.Option) (*mediaconnect.DeleteFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaConnectAPIMockRecorder) DescribeFlowRequest(arg0 interface{})
 }
 
 // DescribeFlowWithContext mocks base method
-func (m *MockMediaConnectAPI) DescribeFlowWithContext(arg0 aws.Context, arg1 *mediaconnect.DescribeFlowInput, arg2 ...request.Option) (*mediaconnect.DescribeFlowOutput, error) {
+func (m *MockMediaConnectAPI) DescribeFlowWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeFlowInput, arg2 ...request.Option) (*mediaconnect.DescribeFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMediaConnectAPIMockRecorder) GrantFlowEntitlementsRequest(arg0 int
 }
 
 // GrantFlowEntitlementsWithContext mocks base method
-func (m *MockMediaConnectAPI) GrantFlowEntitlementsWithContext(arg0 aws.Context, arg1 *mediaconnect.GrantFlowEntitlementsInput, arg2 ...request.Option) (*mediaconnect.GrantFlowEntitlementsOutput, error) {
+func (m *MockMediaConnectAPI) GrantFlowEntitlementsWithContext(arg0 context.Context, arg1 *mediaconnect.GrantFlowEntitlementsInput, arg2 ...request.Option) (*mediaconnect.GrantFlowEntitlementsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMediaConnectAPIMockRecorder) ListEntitlementsRequest(arg0 interfac
 }
 
 // ListEntitlementsWithContext mocks base method
-func (m *MockMediaConnectAPI) ListEntitlementsWithContext(arg0 aws.Context, arg1 *mediaconnect.ListEntitlementsInput, arg2 ...request.Option) (*mediaconnect.ListEntitlementsOutput, error) {
+func (m *MockMediaConnectAPI) ListEntitlementsWithContext(arg0 context.Context, arg1 *mediaconnect.ListEntitlementsInput, arg2 ...request.Option) (*mediaconnect.ListEntitlementsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockMediaConnectAPIMockRecorder) ListFlowsPages(arg0, arg1 interface{}
 }
 
 // ListFlowsPagesWithContext mocks base method
-func (m *MockMediaConnectAPI) ListFlowsPagesWithContext(arg0 aws.Context, arg1 *mediaconnect.ListFlowsInput, arg2 func(*mediaconnect.ListFlowsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaConnectAPI) ListFlowsPagesWithContext(arg0 context.Context, arg1 *mediaconnect.ListFlowsInput, arg2 func(*mediaconnect.ListFlowsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockMediaConnectAPIMockRecorder) ListFlowsRequest(arg0 interface{}) *g
 }
 
 // ListFlowsWithContext mocks base method
-func (m *MockMediaConnectAPI) ListFlowsWithContext(arg0 aws.Context, arg1 *mediaconnect.ListFlowsInput, arg2 ...request.Option) (*mediaconnect.ListFlowsOutput, error) {
+func (m *MockMediaConnectAPI) ListFlowsWithContext(arg0 context.Context, arg1 *mediaconnect.ListFlowsInput, arg2 ...request.Option) (*mediaconnect.ListFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockMediaConnectAPIMockRecorder) RemoveFlowOutputRequest(arg0 interfac
 }
 
 // RemoveFlowOutputWithContext mocks base method
-func (m *MockMediaConnectAPI) RemoveFlowOutputWithContext(arg0 aws.Context, arg1 *mediaconnect.RemoveFlowOutputInput, arg2 ...request.Option) (*mediaconnect.RemoveFlowOutputOutput, error) {
+func (m *MockMediaConnectAPI) RemoveFlowOutputWithContext(arg0 context.Context, arg1 *mediaconnect.RemoveFlowOutputInput, arg2 ...request.Option) (*mediaconnect.RemoveFlowOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockMediaConnectAPIMockRecorder) RevokeFlowEntitlementRequest(arg0 int
 }
 
 // RevokeFlowEntitlementWithContext mocks base method
-func (m *MockMediaConnectAPI) RevokeFlowEntitlementWithContext(arg0 aws.Context, arg1 *mediaconnect.RevokeFlowEntitlementInput, arg2 ...request.Option) (*mediaconnect.RevokeFlowEntitlementOutput, error) {
+func (m *MockMediaConnectAPI) RevokeFlowEntitlementWithContext(arg0 context.Context, arg1 *mediaconnect.RevokeFlowEntitlementInput, arg2 ...request.Option) (*mediaconnect.RevokeFlowEntitlementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockMediaConnectAPIMockRecorder) StartFlowRequest(arg0 interface{}) *g
 }
 
 // StartFlowWithContext mocks base method
-func (m *MockMediaConnectAPI) StartFlowWithContext(arg0 aws.Context, arg1 *mediaconnect.StartFlowInput, arg2 ...request.Option) (*mediaconnect.StartFlowOutput, error) {
+func (m *MockMediaConnectAPI) StartFlowWithContext(arg0 context.Context, arg1 *mediaconnect.StartFlowInput, arg2 ...request.Option) (*mediaconnect.StartFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockMediaConnectAPIMockRecorder) StopFlowRequest(arg0 interface{}) *go
 }
 
 // StopFlowWithContext mocks base method
-func (m *MockMediaConnectAPI) StopFlowWithContext(arg0 aws.Context, arg1 *mediaconnect.StopFlowInput, arg2 ...request.Option) (*mediaconnect.StopFlowOutput, error) {
+func (m *MockMediaConnectAPI) StopFlowWithContext(arg0 context.Context, arg1 *mediaconnect.StopFlowInput, arg2 ...request.Option) (*mediaconnect.StopFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockMediaConnectAPIMockRecorder) UpdateFlowEntitlementRequest(arg0 int
 }
 
 // UpdateFlowEntitlementWithContext mocks base method
-func (m *MockMediaConnectAPI) UpdateFlowEntitlementWithContext(arg0 aws.Context, arg1 *mediaconnect.UpdateFlowEntitlementInput, arg2 ...request.Option) (*mediaconnect.UpdateFlowEntitlementOutput, error) {
+func (m *MockMediaConnectAPI) UpdateFlowEntitlementWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateFlowEntitlementInput, arg2 ...request.Option) (*mediaconnect.UpdateFlowEntitlementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockMediaConnectAPIMockRecorder) UpdateFlowOutputRequest(arg0 interfac
 }
 
 // UpdateFlowOutputWithContext mocks base method
-func (m *MockMediaConnectAPI) UpdateFlowOutputWithContext(arg0 aws.Context, arg1 *mediaconnect.UpdateFlowOutputInput, arg2 ...request.Option) (*mediaconnect.UpdateFlowOutputOutput, error) {
+func (m *MockMediaConnectAPI) UpdateFlowOutputWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateFlowOutputInput, arg2 ...request.Option) (*mediaconnect.UpdateFlowOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockMediaConnectAPIMockRecorder) UpdateFlowSourceRequest(arg0 interfac
 }
 
 // UpdateFlowSourceWithContext mocks base method
-func (m *MockMediaConnectAPI) UpdateFlowSourceWithContext(arg0 aws.Context, arg1 *mediaconnect.UpdateFlowSourceInput, arg2 ...request.Option) (*mediaconnect.UpdateFlowSourceOutput, error) {
+func (m *MockMediaConnectAPI) UpdateFlowSourceWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateFlowSourceInput, arg2 ...request.Option) (*mediaconnect.UpdateFlowSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

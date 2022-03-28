@@ -5,7 +5,7 @@
 package costexplorermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	costexplorer "github.com/aws/aws-sdk-go/service/costexplorer"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetCostAndUsageRequest(arg0 interface
 }
 
 // GetCostAndUsageWithContext mocks base method
-func (m *MockCostExplorerAPI) GetCostAndUsageWithContext(arg0 aws.Context, arg1 *costexplorer.GetCostAndUsageInput, arg2 ...request.Option) (*costexplorer.GetCostAndUsageOutput, error) {
+func (m *MockCostExplorerAPI) GetCostAndUsageWithContext(arg0 context.Context, arg1 *costexplorer.GetCostAndUsageInput, arg2 ...request.Option) (*costexplorer.GetCostAndUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetCostForecastRequest(arg0 interface
 }
 
 // GetCostForecastWithContext mocks base method
-func (m *MockCostExplorerAPI) GetCostForecastWithContext(arg0 aws.Context, arg1 *costexplorer.GetCostForecastInput, arg2 ...request.Option) (*costexplorer.GetCostForecastOutput, error) {
+func (m *MockCostExplorerAPI) GetCostForecastWithContext(arg0 context.Context, arg1 *costexplorer.GetCostForecastInput, arg2 ...request.Option) (*costexplorer.GetCostForecastOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetDimensionValuesRequest(arg0 interf
 }
 
 // GetDimensionValuesWithContext mocks base method
-func (m *MockCostExplorerAPI) GetDimensionValuesWithContext(arg0 aws.Context, arg1 *costexplorer.GetDimensionValuesInput, arg2 ...request.Option) (*costexplorer.GetDimensionValuesOutput, error) {
+func (m *MockCostExplorerAPI) GetDimensionValuesWithContext(arg0 context.Context, arg1 *costexplorer.GetDimensionValuesInput, arg2 ...request.Option) (*costexplorer.GetDimensionValuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetReservationCoverageRequest(arg0 in
 }
 
 // GetReservationCoverageWithContext mocks base method
-func (m *MockCostExplorerAPI) GetReservationCoverageWithContext(arg0 aws.Context, arg1 *costexplorer.GetReservationCoverageInput, arg2 ...request.Option) (*costexplorer.GetReservationCoverageOutput, error) {
+func (m *MockCostExplorerAPI) GetReservationCoverageWithContext(arg0 context.Context, arg1 *costexplorer.GetReservationCoverageInput, arg2 ...request.Option) (*costexplorer.GetReservationCoverageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetReservationPurchaseRecommendationR
 }
 
 // GetReservationPurchaseRecommendationWithContext mocks base method
-func (m *MockCostExplorerAPI) GetReservationPurchaseRecommendationWithContext(arg0 aws.Context, arg1 *costexplorer.GetReservationPurchaseRecommendationInput, arg2 ...request.Option) (*costexplorer.GetReservationPurchaseRecommendationOutput, error) {
+func (m *MockCostExplorerAPI) GetReservationPurchaseRecommendationWithContext(arg0 context.Context, arg1 *costexplorer.GetReservationPurchaseRecommendationInput, arg2 ...request.Option) (*costexplorer.GetReservationPurchaseRecommendationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetReservationUtilizationRequest(arg0
 }
 
 // GetReservationUtilizationWithContext mocks base method
-func (m *MockCostExplorerAPI) GetReservationUtilizationWithContext(arg0 aws.Context, arg1 *costexplorer.GetReservationUtilizationInput, arg2 ...request.Option) (*costexplorer.GetReservationUtilizationOutput, error) {
+func (m *MockCostExplorerAPI) GetReservationUtilizationWithContext(arg0 context.Context, arg1 *costexplorer.GetReservationUtilizationInput, arg2 ...request.Option) (*costexplorer.GetReservationUtilizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCostExplorerAPIMockRecorder) GetTagsRequest(arg0 interface{}) *gom
 }
 
 // GetTagsWithContext mocks base method
-func (m *MockCostExplorerAPI) GetTagsWithContext(arg0 aws.Context, arg1 *costexplorer.GetTagsInput, arg2 ...request.Option) (*costexplorer.GetTagsOutput, error) {
+func (m *MockCostExplorerAPI) GetTagsWithContext(arg0 context.Context, arg1 *costexplorer.GetTagsInput, arg2 ...request.Option) (*costexplorer.GetTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

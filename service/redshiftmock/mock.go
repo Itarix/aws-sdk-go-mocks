@@ -5,7 +5,7 @@
 package redshiftmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	redshift "github.com/aws/aws-sdk-go/service/redshift"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRedshiftAPIMockRecorder) AcceptReservedNodeExchangeRequest(arg0 in
 }
 
 // AcceptReservedNodeExchangeWithContext mocks base method
-func (m *MockRedshiftAPI) AcceptReservedNodeExchangeWithContext(arg0 aws.Context, arg1 *redshift.AcceptReservedNodeExchangeInput, arg2 ...request.Option) (*redshift.AcceptReservedNodeExchangeOutput, error) {
+func (m *MockRedshiftAPI) AcceptReservedNodeExchangeWithContext(arg0 context.Context, arg1 *redshift.AcceptReservedNodeExchangeInput, arg2 ...request.Option) (*redshift.AcceptReservedNodeExchangeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRedshiftAPIMockRecorder) AuthorizeClusterSecurityGroupIngressReque
 }
 
 // AuthorizeClusterSecurityGroupIngressWithContext mocks base method
-func (m *MockRedshiftAPI) AuthorizeClusterSecurityGroupIngressWithContext(arg0 aws.Context, arg1 *redshift.AuthorizeClusterSecurityGroupIngressInput, arg2 ...request.Option) (*redshift.AuthorizeClusterSecurityGroupIngressOutput, error) {
+func (m *MockRedshiftAPI) AuthorizeClusterSecurityGroupIngressWithContext(arg0 context.Context, arg1 *redshift.AuthorizeClusterSecurityGroupIngressInput, arg2 ...request.Option) (*redshift.AuthorizeClusterSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRedshiftAPIMockRecorder) AuthorizeSnapshotAccessRequest(arg0 inter
 }
 
 // AuthorizeSnapshotAccessWithContext mocks base method
-func (m *MockRedshiftAPI) AuthorizeSnapshotAccessWithContext(arg0 aws.Context, arg1 *redshift.AuthorizeSnapshotAccessInput, arg2 ...request.Option) (*redshift.AuthorizeSnapshotAccessOutput, error) {
+func (m *MockRedshiftAPI) AuthorizeSnapshotAccessWithContext(arg0 context.Context, arg1 *redshift.AuthorizeSnapshotAccessInput, arg2 ...request.Option) (*redshift.AuthorizeSnapshotAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRedshiftAPIMockRecorder) BatchDeleteClusterSnapshotsRequest(arg0 i
 }
 
 // BatchDeleteClusterSnapshotsWithContext mocks base method
-func (m *MockRedshiftAPI) BatchDeleteClusterSnapshotsWithContext(arg0 aws.Context, arg1 *redshift.BatchDeleteClusterSnapshotsInput, arg2 ...request.Option) (*redshift.BatchDeleteClusterSnapshotsOutput, error) {
+func (m *MockRedshiftAPI) BatchDeleteClusterSnapshotsWithContext(arg0 context.Context, arg1 *redshift.BatchDeleteClusterSnapshotsInput, arg2 ...request.Option) (*redshift.BatchDeleteClusterSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRedshiftAPIMockRecorder) BatchModifyClusterSnapshotsRequest(arg0 i
 }
 
 // BatchModifyClusterSnapshotsWithContext mocks base method
-func (m *MockRedshiftAPI) BatchModifyClusterSnapshotsWithContext(arg0 aws.Context, arg1 *redshift.BatchModifyClusterSnapshotsInput, arg2 ...request.Option) (*redshift.BatchModifyClusterSnapshotsOutput, error) {
+func (m *MockRedshiftAPI) BatchModifyClusterSnapshotsWithContext(arg0 context.Context, arg1 *redshift.BatchModifyClusterSnapshotsInput, arg2 ...request.Option) (*redshift.BatchModifyClusterSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRedshiftAPIMockRecorder) CancelResizeRequest(arg0 interface{}) *go
 }
 
 // CancelResizeWithContext mocks base method
-func (m *MockRedshiftAPI) CancelResizeWithContext(arg0 aws.Context, arg1 *redshift.CancelResizeInput, arg2 ...request.Option) (*redshift.CancelResizeOutput, error) {
+func (m *MockRedshiftAPI) CancelResizeWithContext(arg0 context.Context, arg1 *redshift.CancelResizeInput, arg2 ...request.Option) (*redshift.CancelResizeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRedshiftAPIMockRecorder) CopyClusterSnapshotRequest(arg0 interface
 }
 
 // CopyClusterSnapshotWithContext mocks base method
-func (m *MockRedshiftAPI) CopyClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.CopyClusterSnapshotInput, arg2 ...request.Option) (*redshift.CopyClusterSnapshotOutput, error) {
+func (m *MockRedshiftAPI) CopyClusterSnapshotWithContext(arg0 context.Context, arg1 *redshift.CopyClusterSnapshotInput, arg2 ...request.Option) (*redshift.CopyClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateClusterParameterGroupRequest(arg0 i
 }
 
 // CreateClusterParameterGroupWithContext mocks base method
-func (m *MockRedshiftAPI) CreateClusterParameterGroupWithContext(arg0 aws.Context, arg1 *redshift.CreateClusterParameterGroupInput, arg2 ...request.Option) (*redshift.CreateClusterParameterGroupOutput, error) {
+func (m *MockRedshiftAPI) CreateClusterParameterGroupWithContext(arg0 context.Context, arg1 *redshift.CreateClusterParameterGroupInput, arg2 ...request.Option) (*redshift.CreateClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -496,7 +496,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateClusterSecurityGroupRequest(arg0 in
 }
 
 // CreateClusterSecurityGroupWithContext mocks base method
-func (m *MockRedshiftAPI) CreateClusterSecurityGroupWithContext(arg0 aws.Context, arg1 *redshift.CreateClusterSecurityGroupInput, arg2 ...request.Option) (*redshift.CreateClusterSecurityGroupOutput, error) {
+func (m *MockRedshiftAPI) CreateClusterSecurityGroupWithContext(arg0 context.Context, arg1 *redshift.CreateClusterSecurityGroupInput, arg2 ...request.Option) (*redshift.CreateClusterSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -546,7 +546,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateClusterSnapshotRequest(arg0 interfa
 }
 
 // CreateClusterSnapshotWithContext mocks base method
-func (m *MockRedshiftAPI) CreateClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.CreateClusterSnapshotInput, arg2 ...request.Option) (*redshift.CreateClusterSnapshotOutput, error) {
+func (m *MockRedshiftAPI) CreateClusterSnapshotWithContext(arg0 context.Context, arg1 *redshift.CreateClusterSnapshotInput, arg2 ...request.Option) (*redshift.CreateClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -596,7 +596,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateClusterSubnetGroupRequest(arg0 inte
 }
 
 // CreateClusterSubnetGroupWithContext mocks base method
-func (m *MockRedshiftAPI) CreateClusterSubnetGroupWithContext(arg0 aws.Context, arg1 *redshift.CreateClusterSubnetGroupInput, arg2 ...request.Option) (*redshift.CreateClusterSubnetGroupOutput, error) {
+func (m *MockRedshiftAPI) CreateClusterSubnetGroupWithContext(arg0 context.Context, arg1 *redshift.CreateClusterSubnetGroupInput, arg2 ...request.Option) (*redshift.CreateClusterSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateClusterSubnetGroupWithContext(arg0,
 }
 
 // CreateClusterWithContext mocks base method
-func (m *MockRedshiftAPI) CreateClusterWithContext(arg0 aws.Context, arg1 *redshift.CreateClusterInput, arg2 ...request.Option) (*redshift.CreateClusterOutput, error) {
+func (m *MockRedshiftAPI) CreateClusterWithContext(arg0 context.Context, arg1 *redshift.CreateClusterInput, arg2 ...request.Option) (*redshift.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateEventSubscriptionRequest(arg0 inter
 }
 
 // CreateEventSubscriptionWithContext mocks base method
-func (m *MockRedshiftAPI) CreateEventSubscriptionWithContext(arg0 aws.Context, arg1 *redshift.CreateEventSubscriptionInput, arg2 ...request.Option) (*redshift.CreateEventSubscriptionOutput, error) {
+func (m *MockRedshiftAPI) CreateEventSubscriptionWithContext(arg0 context.Context, arg1 *redshift.CreateEventSubscriptionInput, arg2 ...request.Option) (*redshift.CreateEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateHsmClientCertificateRequest(arg0 in
 }
 
 // CreateHsmClientCertificateWithContext mocks base method
-func (m *MockRedshiftAPI) CreateHsmClientCertificateWithContext(arg0 aws.Context, arg1 *redshift.CreateHsmClientCertificateInput, arg2 ...request.Option) (*redshift.CreateHsmClientCertificateOutput, error) {
+func (m *MockRedshiftAPI) CreateHsmClientCertificateWithContext(arg0 context.Context, arg1 *redshift.CreateHsmClientCertificateInput, arg2 ...request.Option) (*redshift.CreateHsmClientCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateHsmConfigurationRequest(arg0 interf
 }
 
 // CreateHsmConfigurationWithContext mocks base method
-func (m *MockRedshiftAPI) CreateHsmConfigurationWithContext(arg0 aws.Context, arg1 *redshift.CreateHsmConfigurationInput, arg2 ...request.Option) (*redshift.CreateHsmConfigurationOutput, error) {
+func (m *MockRedshiftAPI) CreateHsmConfigurationWithContext(arg0 context.Context, arg1 *redshift.CreateHsmConfigurationInput, arg2 ...request.Option) (*redshift.CreateHsmConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateSnapshotCopyGrantRequest(arg0 inter
 }
 
 // CreateSnapshotCopyGrantWithContext mocks base method
-func (m *MockRedshiftAPI) CreateSnapshotCopyGrantWithContext(arg0 aws.Context, arg1 *redshift.CreateSnapshotCopyGrantInput, arg2 ...request.Option) (*redshift.CreateSnapshotCopyGrantOutput, error) {
+func (m *MockRedshiftAPI) CreateSnapshotCopyGrantWithContext(arg0 context.Context, arg1 *redshift.CreateSnapshotCopyGrantInput, arg2 ...request.Option) (*redshift.CreateSnapshotCopyGrantOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateSnapshotScheduleRequest(arg0 interf
 }
 
 // CreateSnapshotScheduleWithContext mocks base method
-func (m *MockRedshiftAPI) CreateSnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.CreateSnapshotScheduleInput, arg2 ...request.Option) (*redshift.CreateSnapshotScheduleOutput, error) {
+func (m *MockRedshiftAPI) CreateSnapshotScheduleWithContext(arg0 context.Context, arg1 *redshift.CreateSnapshotScheduleInput, arg2 ...request.Option) (*redshift.CreateSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockRedshiftAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *gomo
 }
 
 // CreateTagsWithContext mocks base method
-func (m *MockRedshiftAPI) CreateTagsWithContext(arg0 aws.Context, arg1 *redshift.CreateTagsInput, arg2 ...request.Option) (*redshift.CreateTagsOutput, error) {
+func (m *MockRedshiftAPI) CreateTagsWithContext(arg0 context.Context, arg1 *redshift.CreateTagsInput, arg2 ...request.Option) (*redshift.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -981,7 +981,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteClusterParameterGroupRequest(arg0 i
 }
 
 // DeleteClusterParameterGroupWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteClusterParameterGroupWithContext(arg0 aws.Context, arg1 *redshift.DeleteClusterParameterGroupInput, arg2 ...request.Option) (*redshift.DeleteClusterParameterGroupOutput, error) {
+func (m *MockRedshiftAPI) DeleteClusterParameterGroupWithContext(arg0 context.Context, arg1 *redshift.DeleteClusterParameterGroupInput, arg2 ...request.Option) (*redshift.DeleteClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1046,7 +1046,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteClusterSecurityGroupRequest(arg0 in
 }
 
 // DeleteClusterSecurityGroupWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteClusterSecurityGroupWithContext(arg0 aws.Context, arg1 *redshift.DeleteClusterSecurityGroupInput, arg2 ...request.Option) (*redshift.DeleteClusterSecurityGroupOutput, error) {
+func (m *MockRedshiftAPI) DeleteClusterSecurityGroupWithContext(arg0 context.Context, arg1 *redshift.DeleteClusterSecurityGroupInput, arg2 ...request.Option) (*redshift.DeleteClusterSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1096,7 +1096,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteClusterSnapshotRequest(arg0 interfa
 }
 
 // DeleteClusterSnapshotWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.DeleteClusterSnapshotInput, arg2 ...request.Option) (*redshift.DeleteClusterSnapshotOutput, error) {
+func (m *MockRedshiftAPI) DeleteClusterSnapshotWithContext(arg0 context.Context, arg1 *redshift.DeleteClusterSnapshotInput, arg2 ...request.Option) (*redshift.DeleteClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1146,7 +1146,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteClusterSubnetGroupRequest(arg0 inte
 }
 
 // DeleteClusterSubnetGroupWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteClusterSubnetGroupWithContext(arg0 aws.Context, arg1 *redshift.DeleteClusterSubnetGroupInput, arg2 ...request.Option) (*redshift.DeleteClusterSubnetGroupOutput, error) {
+func (m *MockRedshiftAPI) DeleteClusterSubnetGroupWithContext(arg0 context.Context, arg1 *redshift.DeleteClusterSubnetGroupInput, arg2 ...request.Option) (*redshift.DeleteClusterSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteClusterSubnetGroupWithContext(arg0,
 }
 
 // DeleteClusterWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteClusterWithContext(arg0 aws.Context, arg1 *redshift.DeleteClusterInput, arg2 ...request.Option) (*redshift.DeleteClusterOutput, error) {
+func (m *MockRedshiftAPI) DeleteClusterWithContext(arg0 context.Context, arg1 *redshift.DeleteClusterInput, arg2 ...request.Option) (*redshift.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteEventSubscriptionRequest(arg0 inter
 }
 
 // DeleteEventSubscriptionWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteEventSubscriptionWithContext(arg0 aws.Context, arg1 *redshift.DeleteEventSubscriptionInput, arg2 ...request.Option) (*redshift.DeleteEventSubscriptionOutput, error) {
+func (m *MockRedshiftAPI) DeleteEventSubscriptionWithContext(arg0 context.Context, arg1 *redshift.DeleteEventSubscriptionInput, arg2 ...request.Option) (*redshift.DeleteEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteHsmClientCertificateRequest(arg0 in
 }
 
 // DeleteHsmClientCertificateWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteHsmClientCertificateWithContext(arg0 aws.Context, arg1 *redshift.DeleteHsmClientCertificateInput, arg2 ...request.Option) (*redshift.DeleteHsmClientCertificateOutput, error) {
+func (m *MockRedshiftAPI) DeleteHsmClientCertificateWithContext(arg0 context.Context, arg1 *redshift.DeleteHsmClientCertificateInput, arg2 ...request.Option) (*redshift.DeleteHsmClientCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteHsmConfigurationRequest(arg0 interf
 }
 
 // DeleteHsmConfigurationWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteHsmConfigurationWithContext(arg0 aws.Context, arg1 *redshift.DeleteHsmConfigurationInput, arg2 ...request.Option) (*redshift.DeleteHsmConfigurationOutput, error) {
+func (m *MockRedshiftAPI) DeleteHsmConfigurationWithContext(arg0 context.Context, arg1 *redshift.DeleteHsmConfigurationInput, arg2 ...request.Option) (*redshift.DeleteHsmConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteSnapshotCopyGrantRequest(arg0 inter
 }
 
 // DeleteSnapshotCopyGrantWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteSnapshotCopyGrantWithContext(arg0 aws.Context, arg1 *redshift.DeleteSnapshotCopyGrantInput, arg2 ...request.Option) (*redshift.DeleteSnapshotCopyGrantOutput, error) {
+func (m *MockRedshiftAPI) DeleteSnapshotCopyGrantWithContext(arg0 context.Context, arg1 *redshift.DeleteSnapshotCopyGrantInput, arg2 ...request.Option) (*redshift.DeleteSnapshotCopyGrantOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteSnapshotScheduleRequest(arg0 interf
 }
 
 // DeleteSnapshotScheduleWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteSnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*redshift.DeleteSnapshotScheduleOutput, error) {
+func (m *MockRedshiftAPI) DeleteSnapshotScheduleWithContext(arg0 context.Context, arg1 *redshift.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*redshift.DeleteSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomo
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockRedshiftAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *redshift.DeleteTagsInput, arg2 ...request.Option) (*redshift.DeleteTagsOutput, error) {
+func (m *MockRedshiftAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *redshift.DeleteTagsInput, arg2 ...request.Option) (*redshift.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeAccountAttributesRequest(arg0 int
 }
 
 // DescribeAccountAttributesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *redshift.DescribeAccountAttributesInput, arg2 ...request.Option) (*redshift.DescribeAccountAttributesOutput, error) {
+func (m *MockRedshiftAPI) DescribeAccountAttributesWithContext(arg0 context.Context, arg1 *redshift.DescribeAccountAttributesInput, arg2 ...request.Option) (*redshift.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterDbRevisionsRequest(arg0 in
 }
 
 // DescribeClusterDbRevisionsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterDbRevisionsWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterDbRevisionsInput, arg2 ...request.Option) (*redshift.DescribeClusterDbRevisionsOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterDbRevisionsWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterDbRevisionsInput, arg2 ...request.Option) (*redshift.DescribeClusterDbRevisionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1615,7 +1615,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterParameterGroupsPages(arg0,
 }
 
 // DescribeClusterParameterGroupsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterParameterGroupsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterParameterGroupsInput, arg2 func(*redshift.DescribeClusterParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClusterParameterGroupsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterParameterGroupsInput, arg2 func(*redshift.DescribeClusterParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1649,7 +1649,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterParameterGroupsRequest(arg
 }
 
 // DescribeClusterParameterGroupsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterParameterGroupsWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterParameterGroupsInput, arg2 ...request.Option) (*redshift.DescribeClusterParameterGroupsOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterParameterGroupsWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterParameterGroupsInput, arg2 ...request.Option) (*redshift.DescribeClusterParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1698,7 +1698,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterParametersPages(arg0, arg1
 }
 
 // DescribeClusterParametersPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterParametersPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterParametersInput, arg2 func(*redshift.DescribeClusterParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClusterParametersPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterParametersInput, arg2 func(*redshift.DescribeClusterParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1732,7 +1732,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterParametersRequest(arg0 int
 }
 
 // DescribeClusterParametersWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterParametersWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterParametersInput, arg2 ...request.Option) (*redshift.DescribeClusterParametersOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterParametersWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterParametersInput, arg2 ...request.Option) (*redshift.DescribeClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterSecurityGroupsPages(arg0, 
 }
 
 // DescribeClusterSecurityGroupsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterSecurityGroupsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSecurityGroupsInput, arg2 func(*redshift.DescribeClusterSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClusterSecurityGroupsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSecurityGroupsInput, arg2 func(*redshift.DescribeClusterSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1815,7 +1815,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterSecurityGroupsRequest(arg0
 }
 
 // DescribeClusterSecurityGroupsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterSecurityGroupsWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSecurityGroupsInput, arg2 ...request.Option) (*redshift.DescribeClusterSecurityGroupsOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterSecurityGroupsWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSecurityGroupsInput, arg2 ...request.Option) (*redshift.DescribeClusterSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1864,7 +1864,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterSnapshotsPages(arg0, arg1 
 }
 
 // DescribeClusterSnapshotsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterSnapshotsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSnapshotsInput, arg2 func(*redshift.DescribeClusterSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClusterSnapshotsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSnapshotsInput, arg2 func(*redshift.DescribeClusterSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1898,7 +1898,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterSnapshotsRequest(arg0 inte
 }
 
 // DescribeClusterSnapshotsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterSnapshotsWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSnapshotsInput, arg2 ...request.Option) (*redshift.DescribeClusterSnapshotsOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterSnapshotsWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSnapshotsInput, arg2 ...request.Option) (*redshift.DescribeClusterSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1947,7 +1947,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterSubnetGroupsPages(arg0, ar
 }
 
 // DescribeClusterSubnetGroupsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterSubnetGroupsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSubnetGroupsInput, arg2 func(*redshift.DescribeClusterSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClusterSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSubnetGroupsInput, arg2 func(*redshift.DescribeClusterSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1981,7 +1981,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterSubnetGroupsRequest(arg0 i
 }
 
 // DescribeClusterSubnetGroupsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterSubnetGroupsWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSubnetGroupsInput, arg2 ...request.Option) (*redshift.DescribeClusterSubnetGroupsOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterSubnetGroupsWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSubnetGroupsInput, arg2 ...request.Option) (*redshift.DescribeClusterSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2031,7 +2031,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterTracksRequest(arg0 interfa
 }
 
 // DescribeClusterTracksWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterTracksWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterTracksInput, arg2 ...request.Option) (*redshift.DescribeClusterTracksOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterTracksWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterTracksInput, arg2 ...request.Option) (*redshift.DescribeClusterTracksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2080,7 +2080,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterVersionsPages(arg0, arg1 i
 }
 
 // DescribeClusterVersionsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterVersionsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterVersionsInput, arg2 func(*redshift.DescribeClusterVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClusterVersionsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterVersionsInput, arg2 func(*redshift.DescribeClusterVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2114,7 +2114,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterVersionsRequest(arg0 inter
 }
 
 // DescribeClusterVersionsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClusterVersionsWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterVersionsInput, arg2 ...request.Option) (*redshift.DescribeClusterVersionsOutput, error) {
+func (m *MockRedshiftAPI) DescribeClusterVersionsWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterVersionsInput, arg2 ...request.Option) (*redshift.DescribeClusterVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2163,7 +2163,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClustersPages(arg0, arg1 interfac
 }
 
 // DescribeClustersPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClustersPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeClustersInput, arg2 func(*redshift.DescribeClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeClustersPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClustersInput, arg2 func(*redshift.DescribeClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2197,7 +2197,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClustersRequest(arg0 interface{})
 }
 
 // DescribeClustersWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeClustersWithContext(arg0 aws.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.Option) (*redshift.DescribeClustersOutput, error) {
+func (m *MockRedshiftAPI) DescribeClustersWithContext(arg0 context.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.Option) (*redshift.DescribeClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2246,7 +2246,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeDefaultClusterParametersPages(arg
 }
 
 // DescribeDefaultClusterParametersPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeDefaultClusterParametersPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeDefaultClusterParametersInput, arg2 func(*redshift.DescribeDefaultClusterParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeDefaultClusterParametersPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeDefaultClusterParametersInput, arg2 func(*redshift.DescribeDefaultClusterParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2280,7 +2280,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeDefaultClusterParametersRequest(a
 }
 
 // DescribeDefaultClusterParametersWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeDefaultClusterParametersWithContext(arg0 aws.Context, arg1 *redshift.DescribeDefaultClusterParametersInput, arg2 ...request.Option) (*redshift.DescribeDefaultClusterParametersOutput, error) {
+func (m *MockRedshiftAPI) DescribeDefaultClusterParametersWithContext(arg0 context.Context, arg1 *redshift.DescribeDefaultClusterParametersInput, arg2 ...request.Option) (*redshift.DescribeDefaultClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2330,7 +2330,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeEventCategoriesRequest(arg0 inter
 }
 
 // DescribeEventCategoriesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeEventCategoriesWithContext(arg0 aws.Context, arg1 *redshift.DescribeEventCategoriesInput, arg2 ...request.Option) (*redshift.DescribeEventCategoriesOutput, error) {
+func (m *MockRedshiftAPI) DescribeEventCategoriesWithContext(arg0 context.Context, arg1 *redshift.DescribeEventCategoriesInput, arg2 ...request.Option) (*redshift.DescribeEventCategoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2379,7 +2379,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeEventSubscriptionsPages(arg0, arg
 }
 
 // DescribeEventSubscriptionsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeEventSubscriptionsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeEventSubscriptionsInput, arg2 func(*redshift.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeEventSubscriptionsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeEventSubscriptionsInput, arg2 func(*redshift.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2413,7 +2413,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeEventSubscriptionsRequest(arg0 in
 }
 
 // DescribeEventSubscriptionsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeEventSubscriptionsWithContext(arg0 aws.Context, arg1 *redshift.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*redshift.DescribeEventSubscriptionsOutput, error) {
+func (m *MockRedshiftAPI) DescribeEventSubscriptionsWithContext(arg0 context.Context, arg1 *redshift.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*redshift.DescribeEventSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2462,7 +2462,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeEventsInput, arg2 func(*redshift.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeEventsInput, arg2 func(*redshift.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2496,7 +2496,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *redshift.DescribeEventsInput, arg2 ...request.Option) (*redshift.DescribeEventsOutput, error) {
+func (m *MockRedshiftAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *redshift.DescribeEventsInput, arg2 ...request.Option) (*redshift.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2545,7 +2545,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeHsmClientCertificatesPages(arg0, 
 }
 
 // DescribeHsmClientCertificatesPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeHsmClientCertificatesPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeHsmClientCertificatesInput, arg2 func(*redshift.DescribeHsmClientCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeHsmClientCertificatesPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeHsmClientCertificatesInput, arg2 func(*redshift.DescribeHsmClientCertificatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2579,7 +2579,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeHsmClientCertificatesRequest(arg0
 }
 
 // DescribeHsmClientCertificatesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeHsmClientCertificatesWithContext(arg0 aws.Context, arg1 *redshift.DescribeHsmClientCertificatesInput, arg2 ...request.Option) (*redshift.DescribeHsmClientCertificatesOutput, error) {
+func (m *MockRedshiftAPI) DescribeHsmClientCertificatesWithContext(arg0 context.Context, arg1 *redshift.DescribeHsmClientCertificatesInput, arg2 ...request.Option) (*redshift.DescribeHsmClientCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2628,7 +2628,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeHsmConfigurationsPages(arg0, arg1
 }
 
 // DescribeHsmConfigurationsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeHsmConfigurationsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeHsmConfigurationsInput, arg2 func(*redshift.DescribeHsmConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeHsmConfigurationsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeHsmConfigurationsInput, arg2 func(*redshift.DescribeHsmConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2662,7 +2662,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeHsmConfigurationsRequest(arg0 int
 }
 
 // DescribeHsmConfigurationsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeHsmConfigurationsWithContext(arg0 aws.Context, arg1 *redshift.DescribeHsmConfigurationsInput, arg2 ...request.Option) (*redshift.DescribeHsmConfigurationsOutput, error) {
+func (m *MockRedshiftAPI) DescribeHsmConfigurationsWithContext(arg0 context.Context, arg1 *redshift.DescribeHsmConfigurationsInput, arg2 ...request.Option) (*redshift.DescribeHsmConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2712,7 +2712,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeLoggingStatusRequest(arg0 interfa
 }
 
 // DescribeLoggingStatusWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeLoggingStatusWithContext(arg0 aws.Context, arg1 *redshift.DescribeLoggingStatusInput, arg2 ...request.Option) (*redshift.LoggingStatus, error) {
+func (m *MockRedshiftAPI) DescribeLoggingStatusWithContext(arg0 context.Context, arg1 *redshift.DescribeLoggingStatusInput, arg2 ...request.Option) (*redshift.LoggingStatus, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2761,7 +2761,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeOrderableClusterOptionsPages(arg0
 }
 
 // DescribeOrderableClusterOptionsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeOrderableClusterOptionsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeOrderableClusterOptionsInput, arg2 func(*redshift.DescribeOrderableClusterOptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeOrderableClusterOptionsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeOrderableClusterOptionsInput, arg2 func(*redshift.DescribeOrderableClusterOptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2795,7 +2795,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeOrderableClusterOptionsRequest(ar
 }
 
 // DescribeOrderableClusterOptionsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeOrderableClusterOptionsWithContext(arg0 aws.Context, arg1 *redshift.DescribeOrderableClusterOptionsInput, arg2 ...request.Option) (*redshift.DescribeOrderableClusterOptionsOutput, error) {
+func (m *MockRedshiftAPI) DescribeOrderableClusterOptionsWithContext(arg0 context.Context, arg1 *redshift.DescribeOrderableClusterOptionsInput, arg2 ...request.Option) (*redshift.DescribeOrderableClusterOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2844,7 +2844,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeReservedNodeOfferingsPages(arg0, 
 }
 
 // DescribeReservedNodeOfferingsPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeReservedNodeOfferingsPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeReservedNodeOfferingsInput, arg2 func(*redshift.DescribeReservedNodeOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeReservedNodeOfferingsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeReservedNodeOfferingsInput, arg2 func(*redshift.DescribeReservedNodeOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2878,7 +2878,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeReservedNodeOfferingsRequest(arg0
 }
 
 // DescribeReservedNodeOfferingsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeReservedNodeOfferingsWithContext(arg0 aws.Context, arg1 *redshift.DescribeReservedNodeOfferingsInput, arg2 ...request.Option) (*redshift.DescribeReservedNodeOfferingsOutput, error) {
+func (m *MockRedshiftAPI) DescribeReservedNodeOfferingsWithContext(arg0 context.Context, arg1 *redshift.DescribeReservedNodeOfferingsInput, arg2 ...request.Option) (*redshift.DescribeReservedNodeOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2927,7 +2927,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeReservedNodesPages(arg0, arg1 int
 }
 
 // DescribeReservedNodesPagesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeReservedNodesPagesWithContext(arg0 aws.Context, arg1 *redshift.DescribeReservedNodesInput, arg2 func(*redshift.DescribeReservedNodesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRedshiftAPI) DescribeReservedNodesPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeReservedNodesInput, arg2 func(*redshift.DescribeReservedNodesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2961,7 +2961,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeReservedNodesRequest(arg0 interfa
 }
 
 // DescribeReservedNodesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeReservedNodesWithContext(arg0 aws.Context, arg1 *redshift.DescribeReservedNodesInput, arg2 ...request.Option) (*redshift.DescribeReservedNodesOutput, error) {
+func (m *MockRedshiftAPI) DescribeReservedNodesWithContext(arg0 context.Context, arg1 *redshift.DescribeReservedNodesInput, arg2 ...request.Option) (*redshift.DescribeReservedNodesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3011,7 +3011,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeResizeRequest(arg0 interface{}) *
 }
 
 // DescribeResizeWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeResizeWithContext(arg0 aws.Context, arg1 *redshift.DescribeResizeInput, arg2 ...request.Option) (*redshift.DescribeResizeOutput, error) {
+func (m *MockRedshiftAPI) DescribeResizeWithContext(arg0 context.Context, arg1 *redshift.DescribeResizeInput, arg2 ...request.Option) (*redshift.DescribeResizeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3061,7 +3061,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotCopyGrantsRequest(arg0 in
 }
 
 // DescribeSnapshotCopyGrantsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeSnapshotCopyGrantsWithContext(arg0 aws.Context, arg1 *redshift.DescribeSnapshotCopyGrantsInput, arg2 ...request.Option) (*redshift.DescribeSnapshotCopyGrantsOutput, error) {
+func (m *MockRedshiftAPI) DescribeSnapshotCopyGrantsWithContext(arg0 context.Context, arg1 *redshift.DescribeSnapshotCopyGrantsInput, arg2 ...request.Option) (*redshift.DescribeSnapshotCopyGrantsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3111,7 +3111,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedulesRequest(arg0 int
 }
 
 // DescribeSnapshotSchedulesWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeSnapshotSchedulesWithContext(arg0 aws.Context, arg1 *redshift.DescribeSnapshotSchedulesInput, arg2 ...request.Option) (*redshift.DescribeSnapshotSchedulesOutput, error) {
+func (m *MockRedshiftAPI) DescribeSnapshotSchedulesWithContext(arg0 context.Context, arg1 *redshift.DescribeSnapshotSchedulesInput, arg2 ...request.Option) (*redshift.DescribeSnapshotSchedulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3161,7 +3161,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeStorageRequest(arg0 interface{}) 
 }
 
 // DescribeStorageWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeStorageWithContext(arg0 aws.Context, arg1 *redshift.DescribeStorageInput, arg2 ...request.Option) (*redshift.DescribeStorageOutput, error) {
+func (m *MockRedshiftAPI) DescribeStorageWithContext(arg0 context.Context, arg1 *redshift.DescribeStorageInput, arg2 ...request.Option) (*redshift.DescribeStorageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3211,7 +3211,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeTableRestoreStatusRequest(arg0 in
 }
 
 // DescribeTableRestoreStatusWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeTableRestoreStatusWithContext(arg0 aws.Context, arg1 *redshift.DescribeTableRestoreStatusInput, arg2 ...request.Option) (*redshift.DescribeTableRestoreStatusOutput, error) {
+func (m *MockRedshiftAPI) DescribeTableRestoreStatusWithContext(arg0 context.Context, arg1 *redshift.DescribeTableRestoreStatusInput, arg2 ...request.Option) (*redshift.DescribeTableRestoreStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3261,7 +3261,7 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeTagsRequest(arg0 interface{}) *go
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockRedshiftAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *redshift.DescribeTagsInput, arg2 ...request.Option) (*redshift.DescribeTagsOutput, error) {
+func (m *MockRedshiftAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *redshift.DescribeTagsInput, arg2 ...request.Option) (*redshift.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3311,7 +3311,7 @@ func (mr *MockRedshiftAPIMockRecorder) DisableLoggingRequest(arg0 interface{}) *
 }
 
 // DisableLoggingWithContext mocks base method
-func (m *MockRedshiftAPI) DisableLoggingWithContext(arg0 aws.Context, arg1 *redshift.DisableLoggingInput, arg2 ...request.Option) (*redshift.LoggingStatus, error) {
+func (m *MockRedshiftAPI) DisableLoggingWithContext(arg0 context.Context, arg1 *redshift.DisableLoggingInput, arg2 ...request.Option) (*redshift.LoggingStatus, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3361,7 +3361,7 @@ func (mr *MockRedshiftAPIMockRecorder) DisableSnapshotCopyRequest(arg0 interface
 }
 
 // DisableSnapshotCopyWithContext mocks base method
-func (m *MockRedshiftAPI) DisableSnapshotCopyWithContext(arg0 aws.Context, arg1 *redshift.DisableSnapshotCopyInput, arg2 ...request.Option) (*redshift.DisableSnapshotCopyOutput, error) {
+func (m *MockRedshiftAPI) DisableSnapshotCopyWithContext(arg0 context.Context, arg1 *redshift.DisableSnapshotCopyInput, arg2 ...request.Option) (*redshift.DisableSnapshotCopyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3411,7 +3411,7 @@ func (mr *MockRedshiftAPIMockRecorder) EnableLoggingRequest(arg0 interface{}) *g
 }
 
 // EnableLoggingWithContext mocks base method
-func (m *MockRedshiftAPI) EnableLoggingWithContext(arg0 aws.Context, arg1 *redshift.EnableLoggingInput, arg2 ...request.Option) (*redshift.LoggingStatus, error) {
+func (m *MockRedshiftAPI) EnableLoggingWithContext(arg0 context.Context, arg1 *redshift.EnableLoggingInput, arg2 ...request.Option) (*redshift.LoggingStatus, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3461,7 +3461,7 @@ func (mr *MockRedshiftAPIMockRecorder) EnableSnapshotCopyRequest(arg0 interface{
 }
 
 // EnableSnapshotCopyWithContext mocks base method
-func (m *MockRedshiftAPI) EnableSnapshotCopyWithContext(arg0 aws.Context, arg1 *redshift.EnableSnapshotCopyInput, arg2 ...request.Option) (*redshift.EnableSnapshotCopyOutput, error) {
+func (m *MockRedshiftAPI) EnableSnapshotCopyWithContext(arg0 context.Context, arg1 *redshift.EnableSnapshotCopyInput, arg2 ...request.Option) (*redshift.EnableSnapshotCopyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3511,7 +3511,7 @@ func (mr *MockRedshiftAPIMockRecorder) GetClusterCredentialsRequest(arg0 interfa
 }
 
 // GetClusterCredentialsWithContext mocks base method
-func (m *MockRedshiftAPI) GetClusterCredentialsWithContext(arg0 aws.Context, arg1 *redshift.GetClusterCredentialsInput, arg2 ...request.Option) (*redshift.GetClusterCredentialsOutput, error) {
+func (m *MockRedshiftAPI) GetClusterCredentialsWithContext(arg0 context.Context, arg1 *redshift.GetClusterCredentialsInput, arg2 ...request.Option) (*redshift.GetClusterCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3561,7 +3561,7 @@ func (mr *MockRedshiftAPIMockRecorder) GetReservedNodeExchangeOfferingsRequest(a
 }
 
 // GetReservedNodeExchangeOfferingsWithContext mocks base method
-func (m *MockRedshiftAPI) GetReservedNodeExchangeOfferingsWithContext(arg0 aws.Context, arg1 *redshift.GetReservedNodeExchangeOfferingsInput, arg2 ...request.Option) (*redshift.GetReservedNodeExchangeOfferingsOutput, error) {
+func (m *MockRedshiftAPI) GetReservedNodeExchangeOfferingsWithContext(arg0 context.Context, arg1 *redshift.GetReservedNodeExchangeOfferingsInput, arg2 ...request.Option) (*redshift.GetReservedNodeExchangeOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3626,7 +3626,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterDbRevisionRequest(arg0 inter
 }
 
 // ModifyClusterDbRevisionWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterDbRevisionWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterDbRevisionInput, arg2 ...request.Option) (*redshift.ModifyClusterDbRevisionOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterDbRevisionWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterDbRevisionInput, arg2 ...request.Option) (*redshift.ModifyClusterDbRevisionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3676,7 +3676,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterIamRolesRequest(arg0 interfa
 }
 
 // ModifyClusterIamRolesWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterIamRolesWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterIamRolesInput, arg2 ...request.Option) (*redshift.ModifyClusterIamRolesOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterIamRolesWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterIamRolesInput, arg2 ...request.Option) (*redshift.ModifyClusterIamRolesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3726,7 +3726,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterMaintenanceRequest(arg0 inte
 }
 
 // ModifyClusterMaintenanceWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterMaintenanceWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterMaintenanceInput, arg2 ...request.Option) (*redshift.ModifyClusterMaintenanceOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterMaintenanceWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterMaintenanceInput, arg2 ...request.Option) (*redshift.ModifyClusterMaintenanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3776,7 +3776,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterParameterGroupRequest(arg0 i
 }
 
 // ModifyClusterParameterGroupWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterParameterGroupWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterParameterGroupInput, arg2 ...request.Option) (*redshift.ClusterParameterGroupNameMessage, error) {
+func (m *MockRedshiftAPI) ModifyClusterParameterGroupWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterParameterGroupInput, arg2 ...request.Option) (*redshift.ClusterParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3871,7 +3871,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotScheduleRequest(arg0
 }
 
 // ModifyClusterSnapshotScheduleWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterSnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterSnapshotScheduleInput, arg2 ...request.Option) (*redshift.ModifyClusterSnapshotScheduleOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterSnapshotScheduleWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterSnapshotScheduleInput, arg2 ...request.Option) (*redshift.ModifyClusterSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3891,7 +3891,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSnapshotScheduleWithContext(
 }
 
 // ModifyClusterSnapshotWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterSnapshotInput, arg2 ...request.Option) (*redshift.ModifyClusterSnapshotOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterSnapshotWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterSnapshotInput, arg2 ...request.Option) (*redshift.ModifyClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3941,7 +3941,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSubnetGroupRequest(arg0 inte
 }
 
 // ModifyClusterSubnetGroupWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterSubnetGroupWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterSubnetGroupInput, arg2 ...request.Option) (*redshift.ModifyClusterSubnetGroupOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterSubnetGroupWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterSubnetGroupInput, arg2 ...request.Option) (*redshift.ModifyClusterSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3961,7 +3961,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterSubnetGroupWithContext(arg0,
 }
 
 // ModifyClusterWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyClusterWithContext(arg0 aws.Context, arg1 *redshift.ModifyClusterInput, arg2 ...request.Option) (*redshift.ModifyClusterOutput, error) {
+func (m *MockRedshiftAPI) ModifyClusterWithContext(arg0 context.Context, arg1 *redshift.ModifyClusterInput, arg2 ...request.Option) (*redshift.ModifyClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4011,7 +4011,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyEventSubscriptionRequest(arg0 inter
 }
 
 // ModifyEventSubscriptionWithContext mocks base method
-func (m *MockRedshiftAPI) ModifyEventSubscriptionWithContext(arg0 aws.Context, arg1 *redshift.ModifyEventSubscriptionInput, arg2 ...request.Option) (*redshift.ModifyEventSubscriptionOutput, error) {
+func (m *MockRedshiftAPI) ModifyEventSubscriptionWithContext(arg0 context.Context, arg1 *redshift.ModifyEventSubscriptionInput, arg2 ...request.Option) (*redshift.ModifyEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4061,7 +4061,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotCopyRetentionPeriodRequest(
 }
 
 // ModifySnapshotCopyRetentionPeriodWithContext mocks base method
-func (m *MockRedshiftAPI) ModifySnapshotCopyRetentionPeriodWithContext(arg0 aws.Context, arg1 *redshift.ModifySnapshotCopyRetentionPeriodInput, arg2 ...request.Option) (*redshift.ModifySnapshotCopyRetentionPeriodOutput, error) {
+func (m *MockRedshiftAPI) ModifySnapshotCopyRetentionPeriodWithContext(arg0 context.Context, arg1 *redshift.ModifySnapshotCopyRetentionPeriodInput, arg2 ...request.Option) (*redshift.ModifySnapshotCopyRetentionPeriodOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4111,7 +4111,7 @@ func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotScheduleRequest(arg0 interf
 }
 
 // ModifySnapshotScheduleWithContext mocks base method
-func (m *MockRedshiftAPI) ModifySnapshotScheduleWithContext(arg0 aws.Context, arg1 *redshift.ModifySnapshotScheduleInput, arg2 ...request.Option) (*redshift.ModifySnapshotScheduleOutput, error) {
+func (m *MockRedshiftAPI) ModifySnapshotScheduleWithContext(arg0 context.Context, arg1 *redshift.ModifySnapshotScheduleInput, arg2 ...request.Option) (*redshift.ModifySnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4161,7 +4161,7 @@ func (mr *MockRedshiftAPIMockRecorder) PurchaseReservedNodeOfferingRequest(arg0 
 }
 
 // PurchaseReservedNodeOfferingWithContext mocks base method
-func (m *MockRedshiftAPI) PurchaseReservedNodeOfferingWithContext(arg0 aws.Context, arg1 *redshift.PurchaseReservedNodeOfferingInput, arg2 ...request.Option) (*redshift.PurchaseReservedNodeOfferingOutput, error) {
+func (m *MockRedshiftAPI) PurchaseReservedNodeOfferingWithContext(arg0 context.Context, arg1 *redshift.PurchaseReservedNodeOfferingInput, arg2 ...request.Option) (*redshift.PurchaseReservedNodeOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4211,7 +4211,7 @@ func (mr *MockRedshiftAPIMockRecorder) RebootClusterRequest(arg0 interface{}) *g
 }
 
 // RebootClusterWithContext mocks base method
-func (m *MockRedshiftAPI) RebootClusterWithContext(arg0 aws.Context, arg1 *redshift.RebootClusterInput, arg2 ...request.Option) (*redshift.RebootClusterOutput, error) {
+func (m *MockRedshiftAPI) RebootClusterWithContext(arg0 context.Context, arg1 *redshift.RebootClusterInput, arg2 ...request.Option) (*redshift.RebootClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4261,7 +4261,7 @@ func (mr *MockRedshiftAPIMockRecorder) ResetClusterParameterGroupRequest(arg0 in
 }
 
 // ResetClusterParameterGroupWithContext mocks base method
-func (m *MockRedshiftAPI) ResetClusterParameterGroupWithContext(arg0 aws.Context, arg1 *redshift.ResetClusterParameterGroupInput, arg2 ...request.Option) (*redshift.ClusterParameterGroupNameMessage, error) {
+func (m *MockRedshiftAPI) ResetClusterParameterGroupWithContext(arg0 context.Context, arg1 *redshift.ResetClusterParameterGroupInput, arg2 ...request.Option) (*redshift.ClusterParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4311,7 +4311,7 @@ func (mr *MockRedshiftAPIMockRecorder) ResizeClusterRequest(arg0 interface{}) *g
 }
 
 // ResizeClusterWithContext mocks base method
-func (m *MockRedshiftAPI) ResizeClusterWithContext(arg0 aws.Context, arg1 *redshift.ResizeClusterInput, arg2 ...request.Option) (*redshift.ResizeClusterOutput, error) {
+func (m *MockRedshiftAPI) ResizeClusterWithContext(arg0 context.Context, arg1 *redshift.ResizeClusterInput, arg2 ...request.Option) (*redshift.ResizeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4361,7 +4361,7 @@ func (mr *MockRedshiftAPIMockRecorder) RestoreFromClusterSnapshotRequest(arg0 in
 }
 
 // RestoreFromClusterSnapshotWithContext mocks base method
-func (m *MockRedshiftAPI) RestoreFromClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.RestoreFromClusterSnapshotInput, arg2 ...request.Option) (*redshift.RestoreFromClusterSnapshotOutput, error) {
+func (m *MockRedshiftAPI) RestoreFromClusterSnapshotWithContext(arg0 context.Context, arg1 *redshift.RestoreFromClusterSnapshotInput, arg2 ...request.Option) (*redshift.RestoreFromClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4411,7 +4411,7 @@ func (mr *MockRedshiftAPIMockRecorder) RestoreTableFromClusterSnapshotRequest(ar
 }
 
 // RestoreTableFromClusterSnapshotWithContext mocks base method
-func (m *MockRedshiftAPI) RestoreTableFromClusterSnapshotWithContext(arg0 aws.Context, arg1 *redshift.RestoreTableFromClusterSnapshotInput, arg2 ...request.Option) (*redshift.RestoreTableFromClusterSnapshotOutput, error) {
+func (m *MockRedshiftAPI) RestoreTableFromClusterSnapshotWithContext(arg0 context.Context, arg1 *redshift.RestoreTableFromClusterSnapshotInput, arg2 ...request.Option) (*redshift.RestoreTableFromClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4461,7 +4461,7 @@ func (mr *MockRedshiftAPIMockRecorder) RevokeClusterSecurityGroupIngressRequest(
 }
 
 // RevokeClusterSecurityGroupIngressWithContext mocks base method
-func (m *MockRedshiftAPI) RevokeClusterSecurityGroupIngressWithContext(arg0 aws.Context, arg1 *redshift.RevokeClusterSecurityGroupIngressInput, arg2 ...request.Option) (*redshift.RevokeClusterSecurityGroupIngressOutput, error) {
+func (m *MockRedshiftAPI) RevokeClusterSecurityGroupIngressWithContext(arg0 context.Context, arg1 *redshift.RevokeClusterSecurityGroupIngressInput, arg2 ...request.Option) (*redshift.RevokeClusterSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4511,7 +4511,7 @@ func (mr *MockRedshiftAPIMockRecorder) RevokeSnapshotAccessRequest(arg0 interfac
 }
 
 // RevokeSnapshotAccessWithContext mocks base method
-func (m *MockRedshiftAPI) RevokeSnapshotAccessWithContext(arg0 aws.Context, arg1 *redshift.RevokeSnapshotAccessInput, arg2 ...request.Option) (*redshift.RevokeSnapshotAccessOutput, error) {
+func (m *MockRedshiftAPI) RevokeSnapshotAccessWithContext(arg0 context.Context, arg1 *redshift.RevokeSnapshotAccessInput, arg2 ...request.Option) (*redshift.RevokeSnapshotAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4561,7 +4561,7 @@ func (mr *MockRedshiftAPIMockRecorder) RotateEncryptionKeyRequest(arg0 interface
 }
 
 // RotateEncryptionKeyWithContext mocks base method
-func (m *MockRedshiftAPI) RotateEncryptionKeyWithContext(arg0 aws.Context, arg1 *redshift.RotateEncryptionKeyInput, arg2 ...request.Option) (*redshift.RotateEncryptionKeyOutput, error) {
+func (m *MockRedshiftAPI) RotateEncryptionKeyWithContext(arg0 context.Context, arg1 *redshift.RotateEncryptionKeyInput, arg2 ...request.Option) (*redshift.RotateEncryptionKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4595,7 +4595,7 @@ func (mr *MockRedshiftAPIMockRecorder) WaitUntilClusterAvailable(arg0 interface{
 }
 
 // WaitUntilClusterAvailableWithContext mocks base method
-func (m *MockRedshiftAPI) WaitUntilClusterAvailableWithContext(arg0 aws.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.WaiterOption) error {
+func (m *MockRedshiftAPI) WaitUntilClusterAvailableWithContext(arg0 context.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4628,7 +4628,7 @@ func (mr *MockRedshiftAPIMockRecorder) WaitUntilClusterDeleted(arg0 interface{})
 }
 
 // WaitUntilClusterDeletedWithContext mocks base method
-func (m *MockRedshiftAPI) WaitUntilClusterDeletedWithContext(arg0 aws.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.WaiterOption) error {
+func (m *MockRedshiftAPI) WaitUntilClusterDeletedWithContext(arg0 context.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4661,7 +4661,7 @@ func (mr *MockRedshiftAPIMockRecorder) WaitUntilClusterRestored(arg0 interface{}
 }
 
 // WaitUntilClusterRestoredWithContext mocks base method
-func (m *MockRedshiftAPI) WaitUntilClusterRestoredWithContext(arg0 aws.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.WaiterOption) error {
+func (m *MockRedshiftAPI) WaitUntilClusterRestoredWithContext(arg0 context.Context, arg1 *redshift.DescribeClustersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4694,7 +4694,7 @@ func (mr *MockRedshiftAPIMockRecorder) WaitUntilSnapshotAvailable(arg0 interface
 }
 
 // WaitUntilSnapshotAvailableWithContext mocks base method
-func (m *MockRedshiftAPI) WaitUntilSnapshotAvailableWithContext(arg0 aws.Context, arg1 *redshift.DescribeClusterSnapshotsInput, arg2 ...request.WaiterOption) error {
+func (m *MockRedshiftAPI) WaitUntilSnapshotAvailableWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterSnapshotsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

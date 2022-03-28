@@ -5,7 +5,7 @@
 package clouddirectorymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	clouddirectory "github.com/aws/aws-sdk-go/service/clouddirectory"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) AddFacetToObjectRequest(arg0 interf
 }
 
 // AddFacetToObjectWithContext mocks base method
-func (m *MockCloudDirectoryAPI) AddFacetToObjectWithContext(arg0 aws.Context, arg1 *clouddirectory.AddFacetToObjectInput, arg2 ...request.Option) (*clouddirectory.AddFacetToObjectOutput, error) {
+func (m *MockCloudDirectoryAPI) AddFacetToObjectWithContext(arg0 context.Context, arg1 *clouddirectory.AddFacetToObjectInput, arg2 ...request.Option) (*clouddirectory.AddFacetToObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ApplySchemaRequest(arg0 interface{}
 }
 
 // ApplySchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ApplySchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.ApplySchemaInput, arg2 ...request.Option) (*clouddirectory.ApplySchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) ApplySchemaWithContext(arg0 context.Context, arg1 *clouddirectory.ApplySchemaInput, arg2 ...request.Option) (*clouddirectory.ApplySchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) AttachObjectRequest(arg0 interface{
 }
 
 // AttachObjectWithContext mocks base method
-func (m *MockCloudDirectoryAPI) AttachObjectWithContext(arg0 aws.Context, arg1 *clouddirectory.AttachObjectInput, arg2 ...request.Option) (*clouddirectory.AttachObjectOutput, error) {
+func (m *MockCloudDirectoryAPI) AttachObjectWithContext(arg0 context.Context, arg1 *clouddirectory.AttachObjectInput, arg2 ...request.Option) (*clouddirectory.AttachObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) AttachPolicyRequest(arg0 interface{
 }
 
 // AttachPolicyWithContext mocks base method
-func (m *MockCloudDirectoryAPI) AttachPolicyWithContext(arg0 aws.Context, arg1 *clouddirectory.AttachPolicyInput, arg2 ...request.Option) (*clouddirectory.AttachPolicyOutput, error) {
+func (m *MockCloudDirectoryAPI) AttachPolicyWithContext(arg0 context.Context, arg1 *clouddirectory.AttachPolicyInput, arg2 ...request.Option) (*clouddirectory.AttachPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) AttachToIndexRequest(arg0 interface
 }
 
 // AttachToIndexWithContext mocks base method
-func (m *MockCloudDirectoryAPI) AttachToIndexWithContext(arg0 aws.Context, arg1 *clouddirectory.AttachToIndexInput, arg2 ...request.Option) (*clouddirectory.AttachToIndexOutput, error) {
+func (m *MockCloudDirectoryAPI) AttachToIndexWithContext(arg0 context.Context, arg1 *clouddirectory.AttachToIndexInput, arg2 ...request.Option) (*clouddirectory.AttachToIndexOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) AttachTypedLinkRequest(arg0 interfa
 }
 
 // AttachTypedLinkWithContext mocks base method
-func (m *MockCloudDirectoryAPI) AttachTypedLinkWithContext(arg0 aws.Context, arg1 *clouddirectory.AttachTypedLinkInput, arg2 ...request.Option) (*clouddirectory.AttachTypedLinkOutput, error) {
+func (m *MockCloudDirectoryAPI) AttachTypedLinkWithContext(arg0 context.Context, arg1 *clouddirectory.AttachTypedLinkInput, arg2 ...request.Option) (*clouddirectory.AttachTypedLinkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) BatchReadRequest(arg0 interface{}) 
 }
 
 // BatchReadWithContext mocks base method
-func (m *MockCloudDirectoryAPI) BatchReadWithContext(arg0 aws.Context, arg1 *clouddirectory.BatchReadInput, arg2 ...request.Option) (*clouddirectory.BatchReadOutput, error) {
+func (m *MockCloudDirectoryAPI) BatchReadWithContext(arg0 context.Context, arg1 *clouddirectory.BatchReadInput, arg2 ...request.Option) (*clouddirectory.BatchReadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) BatchWriteRequest(arg0 interface{})
 }
 
 // BatchWriteWithContext mocks base method
-func (m *MockCloudDirectoryAPI) BatchWriteWithContext(arg0 aws.Context, arg1 *clouddirectory.BatchWriteInput, arg2 ...request.Option) (*clouddirectory.BatchWriteOutput, error) {
+func (m *MockCloudDirectoryAPI) BatchWriteWithContext(arg0 context.Context, arg1 *clouddirectory.BatchWriteInput, arg2 ...request.Option) (*clouddirectory.BatchWriteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) CreateDirectoryRequest(arg0 interfa
 }
 
 // CreateDirectoryWithContext mocks base method
-func (m *MockCloudDirectoryAPI) CreateDirectoryWithContext(arg0 aws.Context, arg1 *clouddirectory.CreateDirectoryInput, arg2 ...request.Option) (*clouddirectory.CreateDirectoryOutput, error) {
+func (m *MockCloudDirectoryAPI) CreateDirectoryWithContext(arg0 context.Context, arg1 *clouddirectory.CreateDirectoryInput, arg2 ...request.Option) (*clouddirectory.CreateDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) CreateFacetRequest(arg0 interface{}
 }
 
 // CreateFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) CreateFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.CreateFacetInput, arg2 ...request.Option) (*clouddirectory.CreateFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) CreateFacetWithContext(arg0 context.Context, arg1 *clouddirectory.CreateFacetInput, arg2 ...request.Option) (*clouddirectory.CreateFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) CreateIndexRequest(arg0 interface{}
 }
 
 // CreateIndexWithContext mocks base method
-func (m *MockCloudDirectoryAPI) CreateIndexWithContext(arg0 aws.Context, arg1 *clouddirectory.CreateIndexInput, arg2 ...request.Option) (*clouddirectory.CreateIndexOutput, error) {
+func (m *MockCloudDirectoryAPI) CreateIndexWithContext(arg0 context.Context, arg1 *clouddirectory.CreateIndexInput, arg2 ...request.Option) (*clouddirectory.CreateIndexOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) CreateObjectRequest(arg0 interface{
 }
 
 // CreateObjectWithContext mocks base method
-func (m *MockCloudDirectoryAPI) CreateObjectWithContext(arg0 aws.Context, arg1 *clouddirectory.CreateObjectInput, arg2 ...request.Option) (*clouddirectory.CreateObjectOutput, error) {
+func (m *MockCloudDirectoryAPI) CreateObjectWithContext(arg0 context.Context, arg1 *clouddirectory.CreateObjectInput, arg2 ...request.Option) (*clouddirectory.CreateObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) CreateSchemaRequest(arg0 interface{
 }
 
 // CreateSchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) CreateSchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.CreateSchemaInput, arg2 ...request.Option) (*clouddirectory.CreateSchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) CreateSchemaWithContext(arg0 context.Context, arg1 *clouddirectory.CreateSchemaInput, arg2 ...request.Option) (*clouddirectory.CreateSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) CreateTypedLinkFacetRequest(arg0 in
 }
 
 // CreateTypedLinkFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) CreateTypedLinkFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.CreateTypedLinkFacetInput, arg2 ...request.Option) (*clouddirectory.CreateTypedLinkFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) CreateTypedLinkFacetWithContext(arg0 context.Context, arg1 *clouddirectory.CreateTypedLinkFacetInput, arg2 ...request.Option) (*clouddirectory.CreateTypedLinkFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DeleteDirectoryRequest(arg0 interfa
 }
 
 // DeleteDirectoryWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DeleteDirectoryWithContext(arg0 aws.Context, arg1 *clouddirectory.DeleteDirectoryInput, arg2 ...request.Option) (*clouddirectory.DeleteDirectoryOutput, error) {
+func (m *MockCloudDirectoryAPI) DeleteDirectoryWithContext(arg0 context.Context, arg1 *clouddirectory.DeleteDirectoryInput, arg2 ...request.Option) (*clouddirectory.DeleteDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DeleteFacetRequest(arg0 interface{}
 }
 
 // DeleteFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DeleteFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.DeleteFacetInput, arg2 ...request.Option) (*clouddirectory.DeleteFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) DeleteFacetWithContext(arg0 context.Context, arg1 *clouddirectory.DeleteFacetInput, arg2 ...request.Option) (*clouddirectory.DeleteFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DeleteObjectRequest(arg0 interface{
 }
 
 // DeleteObjectWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DeleteObjectWithContext(arg0 aws.Context, arg1 *clouddirectory.DeleteObjectInput, arg2 ...request.Option) (*clouddirectory.DeleteObjectOutput, error) {
+func (m *MockCloudDirectoryAPI) DeleteObjectWithContext(arg0 context.Context, arg1 *clouddirectory.DeleteObjectInput, arg2 ...request.Option) (*clouddirectory.DeleteObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DeleteSchemaRequest(arg0 interface{
 }
 
 // DeleteSchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DeleteSchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.DeleteSchemaInput, arg2 ...request.Option) (*clouddirectory.DeleteSchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) DeleteSchemaWithContext(arg0 context.Context, arg1 *clouddirectory.DeleteSchemaInput, arg2 ...request.Option) (*clouddirectory.DeleteSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DeleteTypedLinkFacetRequest(arg0 in
 }
 
 // DeleteTypedLinkFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DeleteTypedLinkFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.DeleteTypedLinkFacetInput, arg2 ...request.Option) (*clouddirectory.DeleteTypedLinkFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) DeleteTypedLinkFacetWithContext(arg0 context.Context, arg1 *clouddirectory.DeleteTypedLinkFacetInput, arg2 ...request.Option) (*clouddirectory.DeleteTypedLinkFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DetachFromIndexRequest(arg0 interfa
 }
 
 // DetachFromIndexWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DetachFromIndexWithContext(arg0 aws.Context, arg1 *clouddirectory.DetachFromIndexInput, arg2 ...request.Option) (*clouddirectory.DetachFromIndexOutput, error) {
+func (m *MockCloudDirectoryAPI) DetachFromIndexWithContext(arg0 context.Context, arg1 *clouddirectory.DetachFromIndexInput, arg2 ...request.Option) (*clouddirectory.DetachFromIndexOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DetachObjectRequest(arg0 interface{
 }
 
 // DetachObjectWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DetachObjectWithContext(arg0 aws.Context, arg1 *clouddirectory.DetachObjectInput, arg2 ...request.Option) (*clouddirectory.DetachObjectOutput, error) {
+func (m *MockCloudDirectoryAPI) DetachObjectWithContext(arg0 context.Context, arg1 *clouddirectory.DetachObjectInput, arg2 ...request.Option) (*clouddirectory.DetachObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DetachPolicyRequest(arg0 interface{
 }
 
 // DetachPolicyWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DetachPolicyWithContext(arg0 aws.Context, arg1 *clouddirectory.DetachPolicyInput, arg2 ...request.Option) (*clouddirectory.DetachPolicyOutput, error) {
+func (m *MockCloudDirectoryAPI) DetachPolicyWithContext(arg0 context.Context, arg1 *clouddirectory.DetachPolicyInput, arg2 ...request.Option) (*clouddirectory.DetachPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DetachTypedLinkRequest(arg0 interfa
 }
 
 // DetachTypedLinkWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DetachTypedLinkWithContext(arg0 aws.Context, arg1 *clouddirectory.DetachTypedLinkInput, arg2 ...request.Option) (*clouddirectory.DetachTypedLinkOutput, error) {
+func (m *MockCloudDirectoryAPI) DetachTypedLinkWithContext(arg0 context.Context, arg1 *clouddirectory.DetachTypedLinkInput, arg2 ...request.Option) (*clouddirectory.DetachTypedLinkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) DisableDirectoryRequest(arg0 interf
 }
 
 // DisableDirectoryWithContext mocks base method
-func (m *MockCloudDirectoryAPI) DisableDirectoryWithContext(arg0 aws.Context, arg1 *clouddirectory.DisableDirectoryInput, arg2 ...request.Option) (*clouddirectory.DisableDirectoryOutput, error) {
+func (m *MockCloudDirectoryAPI) DisableDirectoryWithContext(arg0 context.Context, arg1 *clouddirectory.DisableDirectoryInput, arg2 ...request.Option) (*clouddirectory.DisableDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) EnableDirectoryRequest(arg0 interfa
 }
 
 // EnableDirectoryWithContext mocks base method
-func (m *MockCloudDirectoryAPI) EnableDirectoryWithContext(arg0 aws.Context, arg1 *clouddirectory.EnableDirectoryInput, arg2 ...request.Option) (*clouddirectory.EnableDirectoryOutput, error) {
+func (m *MockCloudDirectoryAPI) EnableDirectoryWithContext(arg0 context.Context, arg1 *clouddirectory.EnableDirectoryInput, arg2 ...request.Option) (*clouddirectory.EnableDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetAppliedSchemaVersionRequest(arg0
 }
 
 // GetAppliedSchemaVersionWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetAppliedSchemaVersionWithContext(arg0 aws.Context, arg1 *clouddirectory.GetAppliedSchemaVersionInput, arg2 ...request.Option) (*clouddirectory.GetAppliedSchemaVersionOutput, error) {
+func (m *MockCloudDirectoryAPI) GetAppliedSchemaVersionWithContext(arg0 context.Context, arg1 *clouddirectory.GetAppliedSchemaVersionInput, arg2 ...request.Option) (*clouddirectory.GetAppliedSchemaVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetDirectoryRequest(arg0 interface{
 }
 
 // GetDirectoryWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetDirectoryWithContext(arg0 aws.Context, arg1 *clouddirectory.GetDirectoryInput, arg2 ...request.Option) (*clouddirectory.GetDirectoryOutput, error) {
+func (m *MockCloudDirectoryAPI) GetDirectoryWithContext(arg0 context.Context, arg1 *clouddirectory.GetDirectoryInput, arg2 ...request.Option) (*clouddirectory.GetDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetFacetRequest(arg0 interface{}) *
 }
 
 // GetFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.GetFacetInput, arg2 ...request.Option) (*clouddirectory.GetFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) GetFacetWithContext(arg0 context.Context, arg1 *clouddirectory.GetFacetInput, arg2 ...request.Option) (*clouddirectory.GetFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetLinkAttributesRequest(arg0 inter
 }
 
 // GetLinkAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetLinkAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.GetLinkAttributesInput, arg2 ...request.Option) (*clouddirectory.GetLinkAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) GetLinkAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.GetLinkAttributesInput, arg2 ...request.Option) (*clouddirectory.GetLinkAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetObjectAttributesRequest(arg0 int
 }
 
 // GetObjectAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetObjectAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.GetObjectAttributesInput, arg2 ...request.Option) (*clouddirectory.GetObjectAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) GetObjectAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.GetObjectAttributesInput, arg2 ...request.Option) (*clouddirectory.GetObjectAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetObjectInformationRequest(arg0 in
 }
 
 // GetObjectInformationWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetObjectInformationWithContext(arg0 aws.Context, arg1 *clouddirectory.GetObjectInformationInput, arg2 ...request.Option) (*clouddirectory.GetObjectInformationOutput, error) {
+func (m *MockCloudDirectoryAPI) GetObjectInformationWithContext(arg0 context.Context, arg1 *clouddirectory.GetObjectInformationInput, arg2 ...request.Option) (*clouddirectory.GetObjectInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetSchemaAsJsonRequest(arg0 interfa
 }
 
 // GetSchemaAsJsonWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetSchemaAsJsonWithContext(arg0 aws.Context, arg1 *clouddirectory.GetSchemaAsJsonInput, arg2 ...request.Option) (*clouddirectory.GetSchemaAsJsonOutput, error) {
+func (m *MockCloudDirectoryAPI) GetSchemaAsJsonWithContext(arg0 context.Context, arg1 *clouddirectory.GetSchemaAsJsonInput, arg2 ...request.Option) (*clouddirectory.GetSchemaAsJsonOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) GetTypedLinkFacetInformationRequest
 }
 
 // GetTypedLinkFacetInformationWithContext mocks base method
-func (m *MockCloudDirectoryAPI) GetTypedLinkFacetInformationWithContext(arg0 aws.Context, arg1 *clouddirectory.GetTypedLinkFacetInformationInput, arg2 ...request.Option) (*clouddirectory.GetTypedLinkFacetInformationOutput, error) {
+func (m *MockCloudDirectoryAPI) GetTypedLinkFacetInformationWithContext(arg0 context.Context, arg1 *clouddirectory.GetTypedLinkFacetInformationInput, arg2 ...request.Option) (*clouddirectory.GetTypedLinkFacetInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1715,7 +1715,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListAppliedSchemaArnsPages(arg0, ar
 }
 
 // ListAppliedSchemaArnsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListAppliedSchemaArnsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListAppliedSchemaArnsInput, arg2 func(*clouddirectory.ListAppliedSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListAppliedSchemaArnsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListAppliedSchemaArnsInput, arg2 func(*clouddirectory.ListAppliedSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1749,7 +1749,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListAppliedSchemaArnsRequest(arg0 i
 }
 
 // ListAppliedSchemaArnsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListAppliedSchemaArnsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListAppliedSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListAppliedSchemaArnsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListAppliedSchemaArnsWithContext(arg0 context.Context, arg1 *clouddirectory.ListAppliedSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListAppliedSchemaArnsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1798,7 +1798,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListAttachedIndicesPages(arg0, arg1
 }
 
 // ListAttachedIndicesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListAttachedIndicesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListAttachedIndicesInput, arg2 func(*clouddirectory.ListAttachedIndicesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListAttachedIndicesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListAttachedIndicesInput, arg2 func(*clouddirectory.ListAttachedIndicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1832,7 +1832,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListAttachedIndicesRequest(arg0 int
 }
 
 // ListAttachedIndicesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListAttachedIndicesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListAttachedIndicesInput, arg2 ...request.Option) (*clouddirectory.ListAttachedIndicesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListAttachedIndicesWithContext(arg0 context.Context, arg1 *clouddirectory.ListAttachedIndicesInput, arg2 ...request.Option) (*clouddirectory.ListAttachedIndicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1881,7 +1881,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListDevelopmentSchemaArnsPages(arg0
 }
 
 // ListDevelopmentSchemaArnsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListDevelopmentSchemaArnsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListDevelopmentSchemaArnsInput, arg2 func(*clouddirectory.ListDevelopmentSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListDevelopmentSchemaArnsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListDevelopmentSchemaArnsInput, arg2 func(*clouddirectory.ListDevelopmentSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1915,7 +1915,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListDevelopmentSchemaArnsRequest(ar
 }
 
 // ListDevelopmentSchemaArnsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListDevelopmentSchemaArnsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListDevelopmentSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListDevelopmentSchemaArnsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListDevelopmentSchemaArnsWithContext(arg0 context.Context, arg1 *clouddirectory.ListDevelopmentSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListDevelopmentSchemaArnsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1964,7 +1964,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListDirectoriesPages(arg0, arg1 int
 }
 
 // ListDirectoriesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListDirectoriesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListDirectoriesInput, arg2 func(*clouddirectory.ListDirectoriesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListDirectoriesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListDirectoriesInput, arg2 func(*clouddirectory.ListDirectoriesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1998,7 +1998,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListDirectoriesRequest(arg0 interfa
 }
 
 // ListDirectoriesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListDirectoriesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListDirectoriesInput, arg2 ...request.Option) (*clouddirectory.ListDirectoriesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListDirectoriesWithContext(arg0 context.Context, arg1 *clouddirectory.ListDirectoriesInput, arg2 ...request.Option) (*clouddirectory.ListDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2047,7 +2047,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListFacetAttributesPages(arg0, arg1
 }
 
 // ListFacetAttributesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListFacetAttributesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListFacetAttributesInput, arg2 func(*clouddirectory.ListFacetAttributesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListFacetAttributesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListFacetAttributesInput, arg2 func(*clouddirectory.ListFacetAttributesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2081,7 +2081,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListFacetAttributesRequest(arg0 int
 }
 
 // ListFacetAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListFacetAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListFacetAttributesInput, arg2 ...request.Option) (*clouddirectory.ListFacetAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListFacetAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.ListFacetAttributesInput, arg2 ...request.Option) (*clouddirectory.ListFacetAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2130,7 +2130,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListFacetNamesPages(arg0, arg1 inte
 }
 
 // ListFacetNamesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListFacetNamesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListFacetNamesInput, arg2 func(*clouddirectory.ListFacetNamesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListFacetNamesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListFacetNamesInput, arg2 func(*clouddirectory.ListFacetNamesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2164,7 +2164,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListFacetNamesRequest(arg0 interfac
 }
 
 // ListFacetNamesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListFacetNamesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListFacetNamesInput, arg2 ...request.Option) (*clouddirectory.ListFacetNamesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListFacetNamesWithContext(arg0 context.Context, arg1 *clouddirectory.ListFacetNamesInput, arg2 ...request.Option) (*clouddirectory.ListFacetNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2214,7 +2214,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListIncomingTypedLinksRequest(arg0 
 }
 
 // ListIncomingTypedLinksWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListIncomingTypedLinksWithContext(arg0 aws.Context, arg1 *clouddirectory.ListIncomingTypedLinksInput, arg2 ...request.Option) (*clouddirectory.ListIncomingTypedLinksOutput, error) {
+func (m *MockCloudDirectoryAPI) ListIncomingTypedLinksWithContext(arg0 context.Context, arg1 *clouddirectory.ListIncomingTypedLinksInput, arg2 ...request.Option) (*clouddirectory.ListIncomingTypedLinksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2263,7 +2263,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListIndexPages(arg0, arg1 interface
 }
 
 // ListIndexPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListIndexPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListIndexInput, arg2 func(*clouddirectory.ListIndexOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListIndexPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListIndexInput, arg2 func(*clouddirectory.ListIndexOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2297,7 +2297,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListIndexRequest(arg0 interface{}) 
 }
 
 // ListIndexWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListIndexWithContext(arg0 aws.Context, arg1 *clouddirectory.ListIndexInput, arg2 ...request.Option) (*clouddirectory.ListIndexOutput, error) {
+func (m *MockCloudDirectoryAPI) ListIndexWithContext(arg0 context.Context, arg1 *clouddirectory.ListIndexInput, arg2 ...request.Option) (*clouddirectory.ListIndexOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2346,7 +2346,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListManagedSchemaArnsPages(arg0, ar
 }
 
 // ListManagedSchemaArnsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListManagedSchemaArnsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListManagedSchemaArnsInput, arg2 func(*clouddirectory.ListManagedSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListManagedSchemaArnsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListManagedSchemaArnsInput, arg2 func(*clouddirectory.ListManagedSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2380,7 +2380,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListManagedSchemaArnsRequest(arg0 i
 }
 
 // ListManagedSchemaArnsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListManagedSchemaArnsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListManagedSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListManagedSchemaArnsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListManagedSchemaArnsWithContext(arg0 context.Context, arg1 *clouddirectory.ListManagedSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListManagedSchemaArnsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2429,7 +2429,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectAttributesPages(arg0, arg
 }
 
 // ListObjectAttributesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectAttributesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectAttributesInput, arg2 func(*clouddirectory.ListObjectAttributesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListObjectAttributesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectAttributesInput, arg2 func(*clouddirectory.ListObjectAttributesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2463,7 +2463,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectAttributesRequest(arg0 in
 }
 
 // ListObjectAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectAttributesInput, arg2 ...request.Option) (*clouddirectory.ListObjectAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListObjectAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectAttributesInput, arg2 ...request.Option) (*clouddirectory.ListObjectAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2512,7 +2512,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectChildrenPages(arg0, arg1 
 }
 
 // ListObjectChildrenPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectChildrenPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectChildrenInput, arg2 func(*clouddirectory.ListObjectChildrenOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListObjectChildrenPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectChildrenInput, arg2 func(*clouddirectory.ListObjectChildrenOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2546,7 +2546,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectChildrenRequest(arg0 inte
 }
 
 // ListObjectChildrenWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectChildrenWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectChildrenInput, arg2 ...request.Option) (*clouddirectory.ListObjectChildrenOutput, error) {
+func (m *MockCloudDirectoryAPI) ListObjectChildrenWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectChildrenInput, arg2 ...request.Option) (*clouddirectory.ListObjectChildrenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2595,7 +2595,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectParentPathsPages(arg0, ar
 }
 
 // ListObjectParentPathsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectParentPathsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectParentPathsInput, arg2 func(*clouddirectory.ListObjectParentPathsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListObjectParentPathsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectParentPathsInput, arg2 func(*clouddirectory.ListObjectParentPathsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2629,7 +2629,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectParentPathsRequest(arg0 i
 }
 
 // ListObjectParentPathsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectParentPathsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectParentPathsInput, arg2 ...request.Option) (*clouddirectory.ListObjectParentPathsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListObjectParentPathsWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectParentPathsInput, arg2 ...request.Option) (*clouddirectory.ListObjectParentPathsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2678,7 +2678,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectParentsPages(arg0, arg1 i
 }
 
 // ListObjectParentsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectParentsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectParentsInput, arg2 func(*clouddirectory.ListObjectParentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListObjectParentsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectParentsInput, arg2 func(*clouddirectory.ListObjectParentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2712,7 +2712,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectParentsRequest(arg0 inter
 }
 
 // ListObjectParentsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectParentsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectParentsInput, arg2 ...request.Option) (*clouddirectory.ListObjectParentsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListObjectParentsWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectParentsInput, arg2 ...request.Option) (*clouddirectory.ListObjectParentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2761,7 +2761,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectPoliciesPages(arg0, arg1 
 }
 
 // ListObjectPoliciesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectPoliciesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectPoliciesInput, arg2 func(*clouddirectory.ListObjectPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListObjectPoliciesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectPoliciesInput, arg2 func(*clouddirectory.ListObjectPoliciesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2795,7 +2795,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListObjectPoliciesRequest(arg0 inte
 }
 
 // ListObjectPoliciesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListObjectPoliciesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListObjectPoliciesInput, arg2 ...request.Option) (*clouddirectory.ListObjectPoliciesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListObjectPoliciesWithContext(arg0 context.Context, arg1 *clouddirectory.ListObjectPoliciesInput, arg2 ...request.Option) (*clouddirectory.ListObjectPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2845,7 +2845,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListOutgoingTypedLinksRequest(arg0 
 }
 
 // ListOutgoingTypedLinksWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListOutgoingTypedLinksWithContext(arg0 aws.Context, arg1 *clouddirectory.ListOutgoingTypedLinksInput, arg2 ...request.Option) (*clouddirectory.ListOutgoingTypedLinksOutput, error) {
+func (m *MockCloudDirectoryAPI) ListOutgoingTypedLinksWithContext(arg0 context.Context, arg1 *clouddirectory.ListOutgoingTypedLinksInput, arg2 ...request.Option) (*clouddirectory.ListOutgoingTypedLinksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2894,7 +2894,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListPolicyAttachmentsPages(arg0, ar
 }
 
 // ListPolicyAttachmentsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListPolicyAttachmentsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListPolicyAttachmentsInput, arg2 func(*clouddirectory.ListPolicyAttachmentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListPolicyAttachmentsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListPolicyAttachmentsInput, arg2 func(*clouddirectory.ListPolicyAttachmentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2928,7 +2928,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListPolicyAttachmentsRequest(arg0 i
 }
 
 // ListPolicyAttachmentsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListPolicyAttachmentsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListPolicyAttachmentsInput, arg2 ...request.Option) (*clouddirectory.ListPolicyAttachmentsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListPolicyAttachmentsWithContext(arg0 context.Context, arg1 *clouddirectory.ListPolicyAttachmentsInput, arg2 ...request.Option) (*clouddirectory.ListPolicyAttachmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2977,7 +2977,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListPublishedSchemaArnsPages(arg0, 
 }
 
 // ListPublishedSchemaArnsPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListPublishedSchemaArnsPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListPublishedSchemaArnsInput, arg2 func(*clouddirectory.ListPublishedSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListPublishedSchemaArnsPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListPublishedSchemaArnsInput, arg2 func(*clouddirectory.ListPublishedSchemaArnsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3011,7 +3011,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListPublishedSchemaArnsRequest(arg0
 }
 
 // ListPublishedSchemaArnsWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListPublishedSchemaArnsWithContext(arg0 aws.Context, arg1 *clouddirectory.ListPublishedSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListPublishedSchemaArnsOutput, error) {
+func (m *MockCloudDirectoryAPI) ListPublishedSchemaArnsWithContext(arg0 context.Context, arg1 *clouddirectory.ListPublishedSchemaArnsInput, arg2 ...request.Option) (*clouddirectory.ListPublishedSchemaArnsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3060,7 +3060,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListTagsForResourcePages(arg0, arg1
 }
 
 // ListTagsForResourcePagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListTagsForResourcePagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListTagsForResourceInput, arg2 func(*clouddirectory.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListTagsForResourceInput, arg2 func(*clouddirectory.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3094,7 +3094,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListTagsForResourceRequest(arg0 int
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *clouddirectory.ListTagsForResourceInput, arg2 ...request.Option) (*clouddirectory.ListTagsForResourceOutput, error) {
+func (m *MockCloudDirectoryAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *clouddirectory.ListTagsForResourceInput, arg2 ...request.Option) (*clouddirectory.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3143,7 +3143,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListTypedLinkFacetAttributesPages(a
 }
 
 // ListTypedLinkFacetAttributesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListTypedLinkFacetAttributesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListTypedLinkFacetAttributesInput, arg2 func(*clouddirectory.ListTypedLinkFacetAttributesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListTypedLinkFacetAttributesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListTypedLinkFacetAttributesInput, arg2 func(*clouddirectory.ListTypedLinkFacetAttributesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3177,7 +3177,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListTypedLinkFacetAttributesRequest
 }
 
 // ListTypedLinkFacetAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListTypedLinkFacetAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListTypedLinkFacetAttributesInput, arg2 ...request.Option) (*clouddirectory.ListTypedLinkFacetAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListTypedLinkFacetAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.ListTypedLinkFacetAttributesInput, arg2 ...request.Option) (*clouddirectory.ListTypedLinkFacetAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3226,7 +3226,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListTypedLinkFacetNamesPages(arg0, 
 }
 
 // ListTypedLinkFacetNamesPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListTypedLinkFacetNamesPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListTypedLinkFacetNamesInput, arg2 func(*clouddirectory.ListTypedLinkFacetNamesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) ListTypedLinkFacetNamesPagesWithContext(arg0 context.Context, arg1 *clouddirectory.ListTypedLinkFacetNamesInput, arg2 func(*clouddirectory.ListTypedLinkFacetNamesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3260,7 +3260,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) ListTypedLinkFacetNamesRequest(arg0
 }
 
 // ListTypedLinkFacetNamesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) ListTypedLinkFacetNamesWithContext(arg0 aws.Context, arg1 *clouddirectory.ListTypedLinkFacetNamesInput, arg2 ...request.Option) (*clouddirectory.ListTypedLinkFacetNamesOutput, error) {
+func (m *MockCloudDirectoryAPI) ListTypedLinkFacetNamesWithContext(arg0 context.Context, arg1 *clouddirectory.ListTypedLinkFacetNamesInput, arg2 ...request.Option) (*clouddirectory.ListTypedLinkFacetNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3309,7 +3309,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) LookupPolicyPages(arg0, arg1 interf
 }
 
 // LookupPolicyPagesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) LookupPolicyPagesWithContext(arg0 aws.Context, arg1 *clouddirectory.LookupPolicyInput, arg2 func(*clouddirectory.LookupPolicyOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudDirectoryAPI) LookupPolicyPagesWithContext(arg0 context.Context, arg1 *clouddirectory.LookupPolicyInput, arg2 func(*clouddirectory.LookupPolicyOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3343,7 +3343,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) LookupPolicyRequest(arg0 interface{
 }
 
 // LookupPolicyWithContext mocks base method
-func (m *MockCloudDirectoryAPI) LookupPolicyWithContext(arg0 aws.Context, arg1 *clouddirectory.LookupPolicyInput, arg2 ...request.Option) (*clouddirectory.LookupPolicyOutput, error) {
+func (m *MockCloudDirectoryAPI) LookupPolicyWithContext(arg0 context.Context, arg1 *clouddirectory.LookupPolicyInput, arg2 ...request.Option) (*clouddirectory.LookupPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3393,7 +3393,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) PublishSchemaRequest(arg0 interface
 }
 
 // PublishSchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) PublishSchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.PublishSchemaInput, arg2 ...request.Option) (*clouddirectory.PublishSchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) PublishSchemaWithContext(arg0 context.Context, arg1 *clouddirectory.PublishSchemaInput, arg2 ...request.Option) (*clouddirectory.PublishSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3443,7 +3443,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) PutSchemaFromJsonRequest(arg0 inter
 }
 
 // PutSchemaFromJsonWithContext mocks base method
-func (m *MockCloudDirectoryAPI) PutSchemaFromJsonWithContext(arg0 aws.Context, arg1 *clouddirectory.PutSchemaFromJsonInput, arg2 ...request.Option) (*clouddirectory.PutSchemaFromJsonOutput, error) {
+func (m *MockCloudDirectoryAPI) PutSchemaFromJsonWithContext(arg0 context.Context, arg1 *clouddirectory.PutSchemaFromJsonInput, arg2 ...request.Option) (*clouddirectory.PutSchemaFromJsonOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3493,7 +3493,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) RemoveFacetFromObjectRequest(arg0 i
 }
 
 // RemoveFacetFromObjectWithContext mocks base method
-func (m *MockCloudDirectoryAPI) RemoveFacetFromObjectWithContext(arg0 aws.Context, arg1 *clouddirectory.RemoveFacetFromObjectInput, arg2 ...request.Option) (*clouddirectory.RemoveFacetFromObjectOutput, error) {
+func (m *MockCloudDirectoryAPI) RemoveFacetFromObjectWithContext(arg0 context.Context, arg1 *clouddirectory.RemoveFacetFromObjectInput, arg2 ...request.Option) (*clouddirectory.RemoveFacetFromObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3543,7 +3543,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) TagResourceRequest(arg0 interface{}
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockCloudDirectoryAPI) TagResourceWithContext(arg0 aws.Context, arg1 *clouddirectory.TagResourceInput, arg2 ...request.Option) (*clouddirectory.TagResourceOutput, error) {
+func (m *MockCloudDirectoryAPI) TagResourceWithContext(arg0 context.Context, arg1 *clouddirectory.TagResourceInput, arg2 ...request.Option) (*clouddirectory.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3593,7 +3593,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UntagResourceRequest(arg0 interface
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *clouddirectory.UntagResourceInput, arg2 ...request.Option) (*clouddirectory.UntagResourceOutput, error) {
+func (m *MockCloudDirectoryAPI) UntagResourceWithContext(arg0 context.Context, arg1 *clouddirectory.UntagResourceInput, arg2 ...request.Option) (*clouddirectory.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3643,7 +3643,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpdateFacetRequest(arg0 interface{}
 }
 
 // UpdateFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpdateFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.UpdateFacetInput, arg2 ...request.Option) (*clouddirectory.UpdateFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) UpdateFacetWithContext(arg0 context.Context, arg1 *clouddirectory.UpdateFacetInput, arg2 ...request.Option) (*clouddirectory.UpdateFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3693,7 +3693,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpdateLinkAttributesRequest(arg0 in
 }
 
 // UpdateLinkAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpdateLinkAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.UpdateLinkAttributesInput, arg2 ...request.Option) (*clouddirectory.UpdateLinkAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) UpdateLinkAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.UpdateLinkAttributesInput, arg2 ...request.Option) (*clouddirectory.UpdateLinkAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3743,7 +3743,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpdateObjectAttributesRequest(arg0 
 }
 
 // UpdateObjectAttributesWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpdateObjectAttributesWithContext(arg0 aws.Context, arg1 *clouddirectory.UpdateObjectAttributesInput, arg2 ...request.Option) (*clouddirectory.UpdateObjectAttributesOutput, error) {
+func (m *MockCloudDirectoryAPI) UpdateObjectAttributesWithContext(arg0 context.Context, arg1 *clouddirectory.UpdateObjectAttributesInput, arg2 ...request.Option) (*clouddirectory.UpdateObjectAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3793,7 +3793,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpdateSchemaRequest(arg0 interface{
 }
 
 // UpdateSchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpdateSchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.UpdateSchemaInput, arg2 ...request.Option) (*clouddirectory.UpdateSchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) UpdateSchemaWithContext(arg0 context.Context, arg1 *clouddirectory.UpdateSchemaInput, arg2 ...request.Option) (*clouddirectory.UpdateSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3843,7 +3843,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpdateTypedLinkFacetRequest(arg0 in
 }
 
 // UpdateTypedLinkFacetWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpdateTypedLinkFacetWithContext(arg0 aws.Context, arg1 *clouddirectory.UpdateTypedLinkFacetInput, arg2 ...request.Option) (*clouddirectory.UpdateTypedLinkFacetOutput, error) {
+func (m *MockCloudDirectoryAPI) UpdateTypedLinkFacetWithContext(arg0 context.Context, arg1 *clouddirectory.UpdateTypedLinkFacetInput, arg2 ...request.Option) (*clouddirectory.UpdateTypedLinkFacetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3893,7 +3893,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpgradeAppliedSchemaRequest(arg0 in
 }
 
 // UpgradeAppliedSchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpgradeAppliedSchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.UpgradeAppliedSchemaInput, arg2 ...request.Option) (*clouddirectory.UpgradeAppliedSchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) UpgradeAppliedSchemaWithContext(arg0 context.Context, arg1 *clouddirectory.UpgradeAppliedSchemaInput, arg2 ...request.Option) (*clouddirectory.UpgradeAppliedSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3943,7 +3943,7 @@ func (mr *MockCloudDirectoryAPIMockRecorder) UpgradePublishedSchemaRequest(arg0 
 }
 
 // UpgradePublishedSchemaWithContext mocks base method
-func (m *MockCloudDirectoryAPI) UpgradePublishedSchemaWithContext(arg0 aws.Context, arg1 *clouddirectory.UpgradePublishedSchemaInput, arg2 ...request.Option) (*clouddirectory.UpgradePublishedSchemaOutput, error) {
+func (m *MockCloudDirectoryAPI) UpgradePublishedSchemaWithContext(arg0 context.Context, arg1 *clouddirectory.UpgradePublishedSchemaInput, arg2 ...request.Option) (*clouddirectory.UpgradePublishedSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

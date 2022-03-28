@@ -5,7 +5,7 @@
 package daxmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	dax "github.com/aws/aws-sdk-go/service/dax"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDAXAPIMockRecorder) CreateClusterRequest(arg0 interface{}) *gomock
 }
 
 // CreateClusterWithContext mocks base method
-func (m *MockDAXAPI) CreateClusterWithContext(arg0 aws.Context, arg1 *dax.CreateClusterInput, arg2 ...request.Option) (*dax.CreateClusterOutput, error) {
+func (m *MockDAXAPI) CreateClusterWithContext(arg0 context.Context, arg1 *dax.CreateClusterInput, arg2 ...request.Option) (*dax.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDAXAPIMockRecorder) CreateParameterGroupRequest(arg0 interface{}) 
 }
 
 // CreateParameterGroupWithContext mocks base method
-func (m *MockDAXAPI) CreateParameterGroupWithContext(arg0 aws.Context, arg1 *dax.CreateParameterGroupInput, arg2 ...request.Option) (*dax.CreateParameterGroupOutput, error) {
+func (m *MockDAXAPI) CreateParameterGroupWithContext(arg0 context.Context, arg1 *dax.CreateParameterGroupInput, arg2 ...request.Option) (*dax.CreateParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDAXAPIMockRecorder) CreateSubnetGroupRequest(arg0 interface{}) *go
 }
 
 // CreateSubnetGroupWithContext mocks base method
-func (m *MockDAXAPI) CreateSubnetGroupWithContext(arg0 aws.Context, arg1 *dax.CreateSubnetGroupInput, arg2 ...request.Option) (*dax.CreateSubnetGroupOutput, error) {
+func (m *MockDAXAPI) CreateSubnetGroupWithContext(arg0 context.Context, arg1 *dax.CreateSubnetGroupInput, arg2 ...request.Option) (*dax.CreateSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDAXAPIMockRecorder) DecreaseReplicationFactorRequest(arg0 interfac
 }
 
 // DecreaseReplicationFactorWithContext mocks base method
-func (m *MockDAXAPI) DecreaseReplicationFactorWithContext(arg0 aws.Context, arg1 *dax.DecreaseReplicationFactorInput, arg2 ...request.Option) (*dax.DecreaseReplicationFactorOutput, error) {
+func (m *MockDAXAPI) DecreaseReplicationFactorWithContext(arg0 context.Context, arg1 *dax.DecreaseReplicationFactorInput, arg2 ...request.Option) (*dax.DecreaseReplicationFactorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDAXAPIMockRecorder) DeleteClusterRequest(arg0 interface{}) *gomock
 }
 
 // DeleteClusterWithContext mocks base method
-func (m *MockDAXAPI) DeleteClusterWithContext(arg0 aws.Context, arg1 *dax.DeleteClusterInput, arg2 ...request.Option) (*dax.DeleteClusterOutput, error) {
+func (m *MockDAXAPI) DeleteClusterWithContext(arg0 context.Context, arg1 *dax.DeleteClusterInput, arg2 ...request.Option) (*dax.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockDAXAPIMockRecorder) DeleteParameterGroupRequest(arg0 interface{}) 
 }
 
 // DeleteParameterGroupWithContext mocks base method
-func (m *MockDAXAPI) DeleteParameterGroupWithContext(arg0 aws.Context, arg1 *dax.DeleteParameterGroupInput, arg2 ...request.Option) (*dax.DeleteParameterGroupOutput, error) {
+func (m *MockDAXAPI) DeleteParameterGroupWithContext(arg0 context.Context, arg1 *dax.DeleteParameterGroupInput, arg2 ...request.Option) (*dax.DeleteParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDAXAPIMockRecorder) DeleteSubnetGroupRequest(arg0 interface{}) *go
 }
 
 // DeleteSubnetGroupWithContext mocks base method
-func (m *MockDAXAPI) DeleteSubnetGroupWithContext(arg0 aws.Context, arg1 *dax.DeleteSubnetGroupInput, arg2 ...request.Option) (*dax.DeleteSubnetGroupOutput, error) {
+func (m *MockDAXAPI) DeleteSubnetGroupWithContext(arg0 context.Context, arg1 *dax.DeleteSubnetGroupInput, arg2 ...request.Option) (*dax.DeleteSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDAXAPIMockRecorder) DescribeClustersRequest(arg0 interface{}) *gom
 }
 
 // DescribeClustersWithContext mocks base method
-func (m *MockDAXAPI) DescribeClustersWithContext(arg0 aws.Context, arg1 *dax.DescribeClustersInput, arg2 ...request.Option) (*dax.DescribeClustersOutput, error) {
+func (m *MockDAXAPI) DescribeClustersWithContext(arg0 context.Context, arg1 *dax.DescribeClustersInput, arg2 ...request.Option) (*dax.DescribeClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDAXAPIMockRecorder) DescribeDefaultParametersRequest(arg0 interfac
 }
 
 // DescribeDefaultParametersWithContext mocks base method
-func (m *MockDAXAPI) DescribeDefaultParametersWithContext(arg0 aws.Context, arg1 *dax.DescribeDefaultParametersInput, arg2 ...request.Option) (*dax.DescribeDefaultParametersOutput, error) {
+func (m *MockDAXAPI) DescribeDefaultParametersWithContext(arg0 context.Context, arg1 *dax.DescribeDefaultParametersInput, arg2 ...request.Option) (*dax.DescribeDefaultParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockDAXAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockDAXAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *dax.DescribeEventsInput, arg2 ...request.Option) (*dax.DescribeEventsOutput, error) {
+func (m *MockDAXAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *dax.DescribeEventsInput, arg2 ...request.Option) (*dax.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockDAXAPIMockRecorder) DescribeParameterGroupsRequest(arg0 interface{
 }
 
 // DescribeParameterGroupsWithContext mocks base method
-func (m *MockDAXAPI) DescribeParameterGroupsWithContext(arg0 aws.Context, arg1 *dax.DescribeParameterGroupsInput, arg2 ...request.Option) (*dax.DescribeParameterGroupsOutput, error) {
+func (m *MockDAXAPI) DescribeParameterGroupsWithContext(arg0 context.Context, arg1 *dax.DescribeParameterGroupsInput, arg2 ...request.Option) (*dax.DescribeParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDAXAPIMockRecorder) DescribeParametersRequest(arg0 interface{}) *g
 }
 
 // DescribeParametersWithContext mocks base method
-func (m *MockDAXAPI) DescribeParametersWithContext(arg0 aws.Context, arg1 *dax.DescribeParametersInput, arg2 ...request.Option) (*dax.DescribeParametersOutput, error) {
+func (m *MockDAXAPI) DescribeParametersWithContext(arg0 context.Context, arg1 *dax.DescribeParametersInput, arg2 ...request.Option) (*dax.DescribeParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockDAXAPIMockRecorder) DescribeSubnetGroupsRequest(arg0 interface{}) 
 }
 
 // DescribeSubnetGroupsWithContext mocks base method
-func (m *MockDAXAPI) DescribeSubnetGroupsWithContext(arg0 aws.Context, arg1 *dax.DescribeSubnetGroupsInput, arg2 ...request.Option) (*dax.DescribeSubnetGroupsOutput, error) {
+func (m *MockDAXAPI) DescribeSubnetGroupsWithContext(arg0 context.Context, arg1 *dax.DescribeSubnetGroupsInput, arg2 ...request.Option) (*dax.DescribeSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockDAXAPIMockRecorder) IncreaseReplicationFactorRequest(arg0 interfac
 }
 
 // IncreaseReplicationFactorWithContext mocks base method
-func (m *MockDAXAPI) IncreaseReplicationFactorWithContext(arg0 aws.Context, arg1 *dax.IncreaseReplicationFactorInput, arg2 ...request.Option) (*dax.IncreaseReplicationFactorOutput, error) {
+func (m *MockDAXAPI) IncreaseReplicationFactorWithContext(arg0 context.Context, arg1 *dax.IncreaseReplicationFactorInput, arg2 ...request.Option) (*dax.IncreaseReplicationFactorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockDAXAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockDAXAPI) ListTagsWithContext(arg0 aws.Context, arg1 *dax.ListTagsInput, arg2 ...request.Option) (*dax.ListTagsOutput, error) {
+func (m *MockDAXAPI) ListTagsWithContext(arg0 context.Context, arg1 *dax.ListTagsInput, arg2 ...request.Option) (*dax.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockDAXAPIMockRecorder) RebootNodeRequest(arg0 interface{}) *gomock.Ca
 }
 
 // RebootNodeWithContext mocks base method
-func (m *MockDAXAPI) RebootNodeWithContext(arg0 aws.Context, arg1 *dax.RebootNodeInput, arg2 ...request.Option) (*dax.RebootNodeOutput, error) {
+func (m *MockDAXAPI) RebootNodeWithContext(arg0 context.Context, arg1 *dax.RebootNodeInput, arg2 ...request.Option) (*dax.RebootNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockDAXAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.C
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockDAXAPI) TagResourceWithContext(arg0 aws.Context, arg1 *dax.TagResourceInput, arg2 ...request.Option) (*dax.TagResourceOutput, error) {
+func (m *MockDAXAPI) TagResourceWithContext(arg0 context.Context, arg1 *dax.TagResourceInput, arg2 ...request.Option) (*dax.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockDAXAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockDAXAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *dax.UntagResourceInput, arg2 ...request.Option) (*dax.UntagResourceOutput, error) {
+func (m *MockDAXAPI) UntagResourceWithContext(arg0 context.Context, arg1 *dax.UntagResourceInput, arg2 ...request.Option) (*dax.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockDAXAPIMockRecorder) UpdateClusterRequest(arg0 interface{}) *gomock
 }
 
 // UpdateClusterWithContext mocks base method
-func (m *MockDAXAPI) UpdateClusterWithContext(arg0 aws.Context, arg1 *dax.UpdateClusterInput, arg2 ...request.Option) (*dax.UpdateClusterOutput, error) {
+func (m *MockDAXAPI) UpdateClusterWithContext(arg0 context.Context, arg1 *dax.UpdateClusterInput, arg2 ...request.Option) (*dax.UpdateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockDAXAPIMockRecorder) UpdateParameterGroupRequest(arg0 interface{}) 
 }
 
 // UpdateParameterGroupWithContext mocks base method
-func (m *MockDAXAPI) UpdateParameterGroupWithContext(arg0 aws.Context, arg1 *dax.UpdateParameterGroupInput, arg2 ...request.Option) (*dax.UpdateParameterGroupOutput, error) {
+func (m *MockDAXAPI) UpdateParameterGroupWithContext(arg0 context.Context, arg1 *dax.UpdateParameterGroupInput, arg2 ...request.Option) (*dax.UpdateParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockDAXAPIMockRecorder) UpdateSubnetGroupRequest(arg0 interface{}) *go
 }
 
 // UpdateSubnetGroupWithContext mocks base method
-func (m *MockDAXAPI) UpdateSubnetGroupWithContext(arg0 aws.Context, arg1 *dax.UpdateSubnetGroupInput, arg2 ...request.Option) (*dax.UpdateSubnetGroupOutput, error) {
+func (m *MockDAXAPI) UpdateSubnetGroupWithContext(arg0 context.Context, arg1 *dax.UpdateSubnetGroupInput, arg2 ...request.Option) (*dax.UpdateSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

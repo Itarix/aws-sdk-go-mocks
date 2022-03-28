@@ -5,7 +5,7 @@
 package snsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sns "github.com/aws/aws-sdk-go/service/sns"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSNSAPIMockRecorder) AddPermissionRequest(arg0 interface{}) *gomock
 }
 
 // AddPermissionWithContext mocks base method
-func (m *MockSNSAPI) AddPermissionWithContext(arg0 aws.Context, arg1 *sns.AddPermissionInput, arg2 ...request.Option) (*sns.AddPermissionOutput, error) {
+func (m *MockSNSAPI) AddPermissionWithContext(arg0 context.Context, arg1 *sns.AddPermissionInput, arg2 ...request.Option) (*sns.AddPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSNSAPIMockRecorder) CheckIfPhoneNumberIsOptedOutRequest(arg0 inter
 }
 
 // CheckIfPhoneNumberIsOptedOutWithContext mocks base method
-func (m *MockSNSAPI) CheckIfPhoneNumberIsOptedOutWithContext(arg0 aws.Context, arg1 *sns.CheckIfPhoneNumberIsOptedOutInput, arg2 ...request.Option) (*sns.CheckIfPhoneNumberIsOptedOutOutput, error) {
+func (m *MockSNSAPI) CheckIfPhoneNumberIsOptedOutWithContext(arg0 context.Context, arg1 *sns.CheckIfPhoneNumberIsOptedOutInput, arg2 ...request.Option) (*sns.CheckIfPhoneNumberIsOptedOutOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSNSAPIMockRecorder) ConfirmSubscriptionRequest(arg0 interface{}) *
 }
 
 // ConfirmSubscriptionWithContext mocks base method
-func (m *MockSNSAPI) ConfirmSubscriptionWithContext(arg0 aws.Context, arg1 *sns.ConfirmSubscriptionInput, arg2 ...request.Option) (*sns.ConfirmSubscriptionOutput, error) {
+func (m *MockSNSAPI) ConfirmSubscriptionWithContext(arg0 context.Context, arg1 *sns.ConfirmSubscriptionInput, arg2 ...request.Option) (*sns.ConfirmSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSNSAPIMockRecorder) CreatePlatformApplicationRequest(arg0 interfac
 }
 
 // CreatePlatformApplicationWithContext mocks base method
-func (m *MockSNSAPI) CreatePlatformApplicationWithContext(arg0 aws.Context, arg1 *sns.CreatePlatformApplicationInput, arg2 ...request.Option) (*sns.CreatePlatformApplicationOutput, error) {
+func (m *MockSNSAPI) CreatePlatformApplicationWithContext(arg0 context.Context, arg1 *sns.CreatePlatformApplicationInput, arg2 ...request.Option) (*sns.CreatePlatformApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSNSAPIMockRecorder) CreatePlatformEndpointRequest(arg0 interface{}
 }
 
 // CreatePlatformEndpointWithContext mocks base method
-func (m *MockSNSAPI) CreatePlatformEndpointWithContext(arg0 aws.Context, arg1 *sns.CreatePlatformEndpointInput, arg2 ...request.Option) (*sns.CreatePlatformEndpointOutput, error) {
+func (m *MockSNSAPI) CreatePlatformEndpointWithContext(arg0 context.Context, arg1 *sns.CreatePlatformEndpointInput, arg2 ...request.Option) (*sns.CreatePlatformEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSNSAPIMockRecorder) CreateTopicRequest(arg0 interface{}) *gomock.C
 }
 
 // CreateTopicWithContext mocks base method
-func (m *MockSNSAPI) CreateTopicWithContext(arg0 aws.Context, arg1 *sns.CreateTopicInput, arg2 ...request.Option) (*sns.CreateTopicOutput, error) {
+func (m *MockSNSAPI) CreateTopicWithContext(arg0 context.Context, arg1 *sns.CreateTopicInput, arg2 ...request.Option) (*sns.CreateTopicOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSNSAPIMockRecorder) DeleteEndpointRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteEndpointWithContext mocks base method
-func (m *MockSNSAPI) DeleteEndpointWithContext(arg0 aws.Context, arg1 *sns.DeleteEndpointInput, arg2 ...request.Option) (*sns.DeleteEndpointOutput, error) {
+func (m *MockSNSAPI) DeleteEndpointWithContext(arg0 context.Context, arg1 *sns.DeleteEndpointInput, arg2 ...request.Option) (*sns.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSNSAPIMockRecorder) DeletePlatformApplicationRequest(arg0 interfac
 }
 
 // DeletePlatformApplicationWithContext mocks base method
-func (m *MockSNSAPI) DeletePlatformApplicationWithContext(arg0 aws.Context, arg1 *sns.DeletePlatformApplicationInput, arg2 ...request.Option) (*sns.DeletePlatformApplicationOutput, error) {
+func (m *MockSNSAPI) DeletePlatformApplicationWithContext(arg0 context.Context, arg1 *sns.DeletePlatformApplicationInput, arg2 ...request.Option) (*sns.DeletePlatformApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSNSAPIMockRecorder) DeleteTopicRequest(arg0 interface{}) *gomock.C
 }
 
 // DeleteTopicWithContext mocks base method
-func (m *MockSNSAPI) DeleteTopicWithContext(arg0 aws.Context, arg1 *sns.DeleteTopicInput, arg2 ...request.Option) (*sns.DeleteTopicOutput, error) {
+func (m *MockSNSAPI) DeleteTopicWithContext(arg0 context.Context, arg1 *sns.DeleteTopicInput, arg2 ...request.Option) (*sns.DeleteTopicOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSNSAPIMockRecorder) GetEndpointAttributesRequest(arg0 interface{})
 }
 
 // GetEndpointAttributesWithContext mocks base method
-func (m *MockSNSAPI) GetEndpointAttributesWithContext(arg0 aws.Context, arg1 *sns.GetEndpointAttributesInput, arg2 ...request.Option) (*sns.GetEndpointAttributesOutput, error) {
+func (m *MockSNSAPI) GetEndpointAttributesWithContext(arg0 context.Context, arg1 *sns.GetEndpointAttributesInput, arg2 ...request.Option) (*sns.GetEndpointAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockSNSAPIMockRecorder) GetPlatformApplicationAttributesRequest(arg0 i
 }
 
 // GetPlatformApplicationAttributesWithContext mocks base method
-func (m *MockSNSAPI) GetPlatformApplicationAttributesWithContext(arg0 aws.Context, arg1 *sns.GetPlatformApplicationAttributesInput, arg2 ...request.Option) (*sns.GetPlatformApplicationAttributesOutput, error) {
+func (m *MockSNSAPI) GetPlatformApplicationAttributesWithContext(arg0 context.Context, arg1 *sns.GetPlatformApplicationAttributesInput, arg2 ...request.Option) (*sns.GetPlatformApplicationAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockSNSAPIMockRecorder) GetSMSAttributesRequest(arg0 interface{}) *gom
 }
 
 // GetSMSAttributesWithContext mocks base method
-func (m *MockSNSAPI) GetSMSAttributesWithContext(arg0 aws.Context, arg1 *sns.GetSMSAttributesInput, arg2 ...request.Option) (*sns.GetSMSAttributesOutput, error) {
+func (m *MockSNSAPI) GetSMSAttributesWithContext(arg0 context.Context, arg1 *sns.GetSMSAttributesInput, arg2 ...request.Option) (*sns.GetSMSAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSNSAPIMockRecorder) GetSubscriptionAttributesRequest(arg0 interfac
 }
 
 // GetSubscriptionAttributesWithContext mocks base method
-func (m *MockSNSAPI) GetSubscriptionAttributesWithContext(arg0 aws.Context, arg1 *sns.GetSubscriptionAttributesInput, arg2 ...request.Option) (*sns.GetSubscriptionAttributesOutput, error) {
+func (m *MockSNSAPI) GetSubscriptionAttributesWithContext(arg0 context.Context, arg1 *sns.GetSubscriptionAttributesInput, arg2 ...request.Option) (*sns.GetSubscriptionAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockSNSAPIMockRecorder) GetTopicAttributesRequest(arg0 interface{}) *g
 }
 
 // GetTopicAttributesWithContext mocks base method
-func (m *MockSNSAPI) GetTopicAttributesWithContext(arg0 aws.Context, arg1 *sns.GetTopicAttributesInput, arg2 ...request.Option) (*sns.GetTopicAttributesOutput, error) {
+func (m *MockSNSAPI) GetTopicAttributesWithContext(arg0 context.Context, arg1 *sns.GetTopicAttributesInput, arg2 ...request.Option) (*sns.GetTopicAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -765,7 +765,7 @@ func (mr *MockSNSAPIMockRecorder) ListEndpointsByPlatformApplicationPages(arg0, 
 }
 
 // ListEndpointsByPlatformApplicationPagesWithContext mocks base method
-func (m *MockSNSAPI) ListEndpointsByPlatformApplicationPagesWithContext(arg0 aws.Context, arg1 *sns.ListEndpointsByPlatformApplicationInput, arg2 func(*sns.ListEndpointsByPlatformApplicationOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSNSAPI) ListEndpointsByPlatformApplicationPagesWithContext(arg0 context.Context, arg1 *sns.ListEndpointsByPlatformApplicationInput, arg2 func(*sns.ListEndpointsByPlatformApplicationOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -799,7 +799,7 @@ func (mr *MockSNSAPIMockRecorder) ListEndpointsByPlatformApplicationRequest(arg0
 }
 
 // ListEndpointsByPlatformApplicationWithContext mocks base method
-func (m *MockSNSAPI) ListEndpointsByPlatformApplicationWithContext(arg0 aws.Context, arg1 *sns.ListEndpointsByPlatformApplicationInput, arg2 ...request.Option) (*sns.ListEndpointsByPlatformApplicationOutput, error) {
+func (m *MockSNSAPI) ListEndpointsByPlatformApplicationWithContext(arg0 context.Context, arg1 *sns.ListEndpointsByPlatformApplicationInput, arg2 ...request.Option) (*sns.ListEndpointsByPlatformApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -849,7 +849,7 @@ func (mr *MockSNSAPIMockRecorder) ListPhoneNumbersOptedOutRequest(arg0 interface
 }
 
 // ListPhoneNumbersOptedOutWithContext mocks base method
-func (m *MockSNSAPI) ListPhoneNumbersOptedOutWithContext(arg0 aws.Context, arg1 *sns.ListPhoneNumbersOptedOutInput, arg2 ...request.Option) (*sns.ListPhoneNumbersOptedOutOutput, error) {
+func (m *MockSNSAPI) ListPhoneNumbersOptedOutWithContext(arg0 context.Context, arg1 *sns.ListPhoneNumbersOptedOutInput, arg2 ...request.Option) (*sns.ListPhoneNumbersOptedOutOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -898,7 +898,7 @@ func (mr *MockSNSAPIMockRecorder) ListPlatformApplicationsPages(arg0, arg1 inter
 }
 
 // ListPlatformApplicationsPagesWithContext mocks base method
-func (m *MockSNSAPI) ListPlatformApplicationsPagesWithContext(arg0 aws.Context, arg1 *sns.ListPlatformApplicationsInput, arg2 func(*sns.ListPlatformApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSNSAPI) ListPlatformApplicationsPagesWithContext(arg0 context.Context, arg1 *sns.ListPlatformApplicationsInput, arg2 func(*sns.ListPlatformApplicationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -932,7 +932,7 @@ func (mr *MockSNSAPIMockRecorder) ListPlatformApplicationsRequest(arg0 interface
 }
 
 // ListPlatformApplicationsWithContext mocks base method
-func (m *MockSNSAPI) ListPlatformApplicationsWithContext(arg0 aws.Context, arg1 *sns.ListPlatformApplicationsInput, arg2 ...request.Option) (*sns.ListPlatformApplicationsOutput, error) {
+func (m *MockSNSAPI) ListPlatformApplicationsWithContext(arg0 context.Context, arg1 *sns.ListPlatformApplicationsInput, arg2 ...request.Option) (*sns.ListPlatformApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -996,7 +996,7 @@ func (mr *MockSNSAPIMockRecorder) ListSubscriptionsByTopicPages(arg0, arg1 inter
 }
 
 // ListSubscriptionsByTopicPagesWithContext mocks base method
-func (m *MockSNSAPI) ListSubscriptionsByTopicPagesWithContext(arg0 aws.Context, arg1 *sns.ListSubscriptionsByTopicInput, arg2 func(*sns.ListSubscriptionsByTopicOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSNSAPI) ListSubscriptionsByTopicPagesWithContext(arg0 context.Context, arg1 *sns.ListSubscriptionsByTopicInput, arg2 func(*sns.ListSubscriptionsByTopicOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1030,7 +1030,7 @@ func (mr *MockSNSAPIMockRecorder) ListSubscriptionsByTopicRequest(arg0 interface
 }
 
 // ListSubscriptionsByTopicWithContext mocks base method
-func (m *MockSNSAPI) ListSubscriptionsByTopicWithContext(arg0 aws.Context, arg1 *sns.ListSubscriptionsByTopicInput, arg2 ...request.Option) (*sns.ListSubscriptionsByTopicOutput, error) {
+func (m *MockSNSAPI) ListSubscriptionsByTopicWithContext(arg0 context.Context, arg1 *sns.ListSubscriptionsByTopicInput, arg2 ...request.Option) (*sns.ListSubscriptionsByTopicOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1064,7 +1064,7 @@ func (mr *MockSNSAPIMockRecorder) ListSubscriptionsPages(arg0, arg1 interface{})
 }
 
 // ListSubscriptionsPagesWithContext mocks base method
-func (m *MockSNSAPI) ListSubscriptionsPagesWithContext(arg0 aws.Context, arg1 *sns.ListSubscriptionsInput, arg2 func(*sns.ListSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSNSAPI) ListSubscriptionsPagesWithContext(arg0 context.Context, arg1 *sns.ListSubscriptionsInput, arg2 func(*sns.ListSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1098,7 +1098,7 @@ func (mr *MockSNSAPIMockRecorder) ListSubscriptionsRequest(arg0 interface{}) *go
 }
 
 // ListSubscriptionsWithContext mocks base method
-func (m *MockSNSAPI) ListSubscriptionsWithContext(arg0 aws.Context, arg1 *sns.ListSubscriptionsInput, arg2 ...request.Option) (*sns.ListSubscriptionsOutput, error) {
+func (m *MockSNSAPI) ListSubscriptionsWithContext(arg0 context.Context, arg1 *sns.ListSubscriptionsInput, arg2 ...request.Option) (*sns.ListSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1147,7 +1147,7 @@ func (mr *MockSNSAPIMockRecorder) ListTopicsPages(arg0, arg1 interface{}) *gomoc
 }
 
 // ListTopicsPagesWithContext mocks base method
-func (m *MockSNSAPI) ListTopicsPagesWithContext(arg0 aws.Context, arg1 *sns.ListTopicsInput, arg2 func(*sns.ListTopicsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSNSAPI) ListTopicsPagesWithContext(arg0 context.Context, arg1 *sns.ListTopicsInput, arg2 func(*sns.ListTopicsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1181,7 +1181,7 @@ func (mr *MockSNSAPIMockRecorder) ListTopicsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListTopicsWithContext mocks base method
-func (m *MockSNSAPI) ListTopicsWithContext(arg0 aws.Context, arg1 *sns.ListTopicsInput, arg2 ...request.Option) (*sns.ListTopicsOutput, error) {
+func (m *MockSNSAPI) ListTopicsWithContext(arg0 context.Context, arg1 *sns.ListTopicsInput, arg2 ...request.Option) (*sns.ListTopicsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockSNSAPIMockRecorder) OptInPhoneNumberRequest(arg0 interface{}) *gom
 }
 
 // OptInPhoneNumberWithContext mocks base method
-func (m *MockSNSAPI) OptInPhoneNumberWithContext(arg0 aws.Context, arg1 *sns.OptInPhoneNumberInput, arg2 ...request.Option) (*sns.OptInPhoneNumberOutput, error) {
+func (m *MockSNSAPI) OptInPhoneNumberWithContext(arg0 context.Context, arg1 *sns.OptInPhoneNumberInput, arg2 ...request.Option) (*sns.OptInPhoneNumberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockSNSAPIMockRecorder) PublishRequest(arg0 interface{}) *gomock.Call 
 }
 
 // PublishWithContext mocks base method
-func (m *MockSNSAPI) PublishWithContext(arg0 aws.Context, arg1 *sns.PublishInput, arg2 ...request.Option) (*sns.PublishOutput, error) {
+func (m *MockSNSAPI) PublishWithContext(arg0 context.Context, arg1 *sns.PublishInput, arg2 ...request.Option) (*sns.PublishOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1331,7 +1331,7 @@ func (mr *MockSNSAPIMockRecorder) RemovePermissionRequest(arg0 interface{}) *gom
 }
 
 // RemovePermissionWithContext mocks base method
-func (m *MockSNSAPI) RemovePermissionWithContext(arg0 aws.Context, arg1 *sns.RemovePermissionInput, arg2 ...request.Option) (*sns.RemovePermissionOutput, error) {
+func (m *MockSNSAPI) RemovePermissionWithContext(arg0 context.Context, arg1 *sns.RemovePermissionInput, arg2 ...request.Option) (*sns.RemovePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockSNSAPIMockRecorder) SetEndpointAttributesRequest(arg0 interface{})
 }
 
 // SetEndpointAttributesWithContext mocks base method
-func (m *MockSNSAPI) SetEndpointAttributesWithContext(arg0 aws.Context, arg1 *sns.SetEndpointAttributesInput, arg2 ...request.Option) (*sns.SetEndpointAttributesOutput, error) {
+func (m *MockSNSAPI) SetEndpointAttributesWithContext(arg0 context.Context, arg1 *sns.SetEndpointAttributesInput, arg2 ...request.Option) (*sns.SetEndpointAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockSNSAPIMockRecorder) SetPlatformApplicationAttributesRequest(arg0 i
 }
 
 // SetPlatformApplicationAttributesWithContext mocks base method
-func (m *MockSNSAPI) SetPlatformApplicationAttributesWithContext(arg0 aws.Context, arg1 *sns.SetPlatformApplicationAttributesInput, arg2 ...request.Option) (*sns.SetPlatformApplicationAttributesOutput, error) {
+func (m *MockSNSAPI) SetPlatformApplicationAttributesWithContext(arg0 context.Context, arg1 *sns.SetPlatformApplicationAttributesInput, arg2 ...request.Option) (*sns.SetPlatformApplicationAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockSNSAPIMockRecorder) SetSMSAttributesRequest(arg0 interface{}) *gom
 }
 
 // SetSMSAttributesWithContext mocks base method
-func (m *MockSNSAPI) SetSMSAttributesWithContext(arg0 aws.Context, arg1 *sns.SetSMSAttributesInput, arg2 ...request.Option) (*sns.SetSMSAttributesOutput, error) {
+func (m *MockSNSAPI) SetSMSAttributesWithContext(arg0 context.Context, arg1 *sns.SetSMSAttributesInput, arg2 ...request.Option) (*sns.SetSMSAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1531,7 +1531,7 @@ func (mr *MockSNSAPIMockRecorder) SetSubscriptionAttributesRequest(arg0 interfac
 }
 
 // SetSubscriptionAttributesWithContext mocks base method
-func (m *MockSNSAPI) SetSubscriptionAttributesWithContext(arg0 aws.Context, arg1 *sns.SetSubscriptionAttributesInput, arg2 ...request.Option) (*sns.SetSubscriptionAttributesOutput, error) {
+func (m *MockSNSAPI) SetSubscriptionAttributesWithContext(arg0 context.Context, arg1 *sns.SetSubscriptionAttributesInput, arg2 ...request.Option) (*sns.SetSubscriptionAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1581,7 +1581,7 @@ func (mr *MockSNSAPIMockRecorder) SetTopicAttributesRequest(arg0 interface{}) *g
 }
 
 // SetTopicAttributesWithContext mocks base method
-func (m *MockSNSAPI) SetTopicAttributesWithContext(arg0 aws.Context, arg1 *sns.SetTopicAttributesInput, arg2 ...request.Option) (*sns.SetTopicAttributesOutput, error) {
+func (m *MockSNSAPI) SetTopicAttributesWithContext(arg0 context.Context, arg1 *sns.SetTopicAttributesInput, arg2 ...request.Option) (*sns.SetTopicAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1631,7 +1631,7 @@ func (mr *MockSNSAPIMockRecorder) SubscribeRequest(arg0 interface{}) *gomock.Cal
 }
 
 // SubscribeWithContext mocks base method
-func (m *MockSNSAPI) SubscribeWithContext(arg0 aws.Context, arg1 *sns.SubscribeInput, arg2 ...request.Option) (*sns.SubscribeOutput, error) {
+func (m *MockSNSAPI) SubscribeWithContext(arg0 context.Context, arg1 *sns.SubscribeInput, arg2 ...request.Option) (*sns.SubscribeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1681,7 +1681,7 @@ func (mr *MockSNSAPIMockRecorder) UnsubscribeRequest(arg0 interface{}) *gomock.C
 }
 
 // UnsubscribeWithContext mocks base method
-func (m *MockSNSAPI) UnsubscribeWithContext(arg0 aws.Context, arg1 *sns.UnsubscribeInput, arg2 ...request.Option) (*sns.UnsubscribeOutput, error) {
+func (m *MockSNSAPI) UnsubscribeWithContext(arg0 context.Context, arg1 *sns.UnsubscribeInput, arg2 ...request.Option) (*sns.UnsubscribeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

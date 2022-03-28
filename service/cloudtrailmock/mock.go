@@ -5,7 +5,7 @@
 package cloudtrailmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudtrail "github.com/aws/aws-sdk-go/service/cloudtrail"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudTrailAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gomoc
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockCloudTrailAPI) AddTagsWithContext(arg0 aws.Context, arg1 *cloudtrail.AddTagsInput, arg2 ...request.Option) (*cloudtrail.AddTagsOutput, error) {
+func (m *MockCloudTrailAPI) AddTagsWithContext(arg0 context.Context, arg1 *cloudtrail.AddTagsInput, arg2 ...request.Option) (*cloudtrail.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudTrailAPIMockRecorder) CreateTrailRequest(arg0 interface{}) *g
 }
 
 // CreateTrailWithContext mocks base method
-func (m *MockCloudTrailAPI) CreateTrailWithContext(arg0 aws.Context, arg1 *cloudtrail.CreateTrailInput, arg2 ...request.Option) (*cloudtrail.CreateTrailOutput, error) {
+func (m *MockCloudTrailAPI) CreateTrailWithContext(arg0 context.Context, arg1 *cloudtrail.CreateTrailInput, arg2 ...request.Option) (*cloudtrail.CreateTrailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudTrailAPIMockRecorder) DeleteTrailRequest(arg0 interface{}) *g
 }
 
 // DeleteTrailWithContext mocks base method
-func (m *MockCloudTrailAPI) DeleteTrailWithContext(arg0 aws.Context, arg1 *cloudtrail.DeleteTrailInput, arg2 ...request.Option) (*cloudtrail.DeleteTrailOutput, error) {
+func (m *MockCloudTrailAPI) DeleteTrailWithContext(arg0 context.Context, arg1 *cloudtrail.DeleteTrailInput, arg2 ...request.Option) (*cloudtrail.DeleteTrailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudTrailAPIMockRecorder) DescribeTrailsRequest(arg0 interface{})
 }
 
 // DescribeTrailsWithContext mocks base method
-func (m *MockCloudTrailAPI) DescribeTrailsWithContext(arg0 aws.Context, arg1 *cloudtrail.DescribeTrailsInput, arg2 ...request.Option) (*cloudtrail.DescribeTrailsOutput, error) {
+func (m *MockCloudTrailAPI) DescribeTrailsWithContext(arg0 context.Context, arg1 *cloudtrail.DescribeTrailsInput, arg2 ...request.Option) (*cloudtrail.DescribeTrailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudTrailAPIMockRecorder) GetEventSelectorsRequest(arg0 interface
 }
 
 // GetEventSelectorsWithContext mocks base method
-func (m *MockCloudTrailAPI) GetEventSelectorsWithContext(arg0 aws.Context, arg1 *cloudtrail.GetEventSelectorsInput, arg2 ...request.Option) (*cloudtrail.GetEventSelectorsOutput, error) {
+func (m *MockCloudTrailAPI) GetEventSelectorsWithContext(arg0 context.Context, arg1 *cloudtrail.GetEventSelectorsInput, arg2 ...request.Option) (*cloudtrail.GetEventSelectorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudTrailAPIMockRecorder) GetTrailStatusRequest(arg0 interface{})
 }
 
 // GetTrailStatusWithContext mocks base method
-func (m *MockCloudTrailAPI) GetTrailStatusWithContext(arg0 aws.Context, arg1 *cloudtrail.GetTrailStatusInput, arg2 ...request.Option) (*cloudtrail.GetTrailStatusOutput, error) {
+func (m *MockCloudTrailAPI) GetTrailStatusWithContext(arg0 context.Context, arg1 *cloudtrail.GetTrailStatusInput, arg2 ...request.Option) (*cloudtrail.GetTrailStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudTrailAPIMockRecorder) ListPublicKeysRequest(arg0 interface{})
 }
 
 // ListPublicKeysWithContext mocks base method
-func (m *MockCloudTrailAPI) ListPublicKeysWithContext(arg0 aws.Context, arg1 *cloudtrail.ListPublicKeysInput, arg2 ...request.Option) (*cloudtrail.ListPublicKeysOutput, error) {
+func (m *MockCloudTrailAPI) ListPublicKeysWithContext(arg0 context.Context, arg1 *cloudtrail.ListPublicKeysInput, arg2 ...request.Option) (*cloudtrail.ListPublicKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudTrailAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomo
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockCloudTrailAPI) ListTagsWithContext(arg0 aws.Context, arg1 *cloudtrail.ListTagsInput, arg2 ...request.Option) (*cloudtrail.ListTagsOutput, error) {
+func (m *MockCloudTrailAPI) ListTagsWithContext(arg0 context.Context, arg1 *cloudtrail.ListTagsInput, arg2 ...request.Option) (*cloudtrail.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -465,7 +465,7 @@ func (mr *MockCloudTrailAPIMockRecorder) LookupEventsPages(arg0, arg1 interface{
 }
 
 // LookupEventsPagesWithContext mocks base method
-func (m *MockCloudTrailAPI) LookupEventsPagesWithContext(arg0 aws.Context, arg1 *cloudtrail.LookupEventsInput, arg2 func(*cloudtrail.LookupEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudTrailAPI) LookupEventsPagesWithContext(arg0 context.Context, arg1 *cloudtrail.LookupEventsInput, arg2 func(*cloudtrail.LookupEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -499,7 +499,7 @@ func (mr *MockCloudTrailAPIMockRecorder) LookupEventsRequest(arg0 interface{}) *
 }
 
 // LookupEventsWithContext mocks base method
-func (m *MockCloudTrailAPI) LookupEventsWithContext(arg0 aws.Context, arg1 *cloudtrail.LookupEventsInput, arg2 ...request.Option) (*cloudtrail.LookupEventsOutput, error) {
+func (m *MockCloudTrailAPI) LookupEventsWithContext(arg0 context.Context, arg1 *cloudtrail.LookupEventsInput, arg2 ...request.Option) (*cloudtrail.LookupEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockCloudTrailAPIMockRecorder) PutEventSelectorsRequest(arg0 interface
 }
 
 // PutEventSelectorsWithContext mocks base method
-func (m *MockCloudTrailAPI) PutEventSelectorsWithContext(arg0 aws.Context, arg1 *cloudtrail.PutEventSelectorsInput, arg2 ...request.Option) (*cloudtrail.PutEventSelectorsOutput, error) {
+func (m *MockCloudTrailAPI) PutEventSelectorsWithContext(arg0 context.Context, arg1 *cloudtrail.PutEventSelectorsInput, arg2 ...request.Option) (*cloudtrail.PutEventSelectorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockCloudTrailAPIMockRecorder) RemoveTagsRequest(arg0 interface{}) *go
 }
 
 // RemoveTagsWithContext mocks base method
-func (m *MockCloudTrailAPI) RemoveTagsWithContext(arg0 aws.Context, arg1 *cloudtrail.RemoveTagsInput, arg2 ...request.Option) (*cloudtrail.RemoveTagsOutput, error) {
+func (m *MockCloudTrailAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *cloudtrail.RemoveTagsInput, arg2 ...request.Option) (*cloudtrail.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockCloudTrailAPIMockRecorder) StartLoggingRequest(arg0 interface{}) *
 }
 
 // StartLoggingWithContext mocks base method
-func (m *MockCloudTrailAPI) StartLoggingWithContext(arg0 aws.Context, arg1 *cloudtrail.StartLoggingInput, arg2 ...request.Option) (*cloudtrail.StartLoggingOutput, error) {
+func (m *MockCloudTrailAPI) StartLoggingWithContext(arg0 context.Context, arg1 *cloudtrail.StartLoggingInput, arg2 ...request.Option) (*cloudtrail.StartLoggingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockCloudTrailAPIMockRecorder) StopLoggingRequest(arg0 interface{}) *g
 }
 
 // StopLoggingWithContext mocks base method
-func (m *MockCloudTrailAPI) StopLoggingWithContext(arg0 aws.Context, arg1 *cloudtrail.StopLoggingInput, arg2 ...request.Option) (*cloudtrail.StopLoggingOutput, error) {
+func (m *MockCloudTrailAPI) StopLoggingWithContext(arg0 context.Context, arg1 *cloudtrail.StopLoggingInput, arg2 ...request.Option) (*cloudtrail.StopLoggingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockCloudTrailAPIMockRecorder) UpdateTrailRequest(arg0 interface{}) *g
 }
 
 // UpdateTrailWithContext mocks base method
-func (m *MockCloudTrailAPI) UpdateTrailWithContext(arg0 aws.Context, arg1 *cloudtrail.UpdateTrailInput, arg2 ...request.Option) (*cloudtrail.UpdateTrailOutput, error) {
+func (m *MockCloudTrailAPI) UpdateTrailWithContext(arg0 context.Context, arg1 *cloudtrail.UpdateTrailInput, arg2 ...request.Option) (*cloudtrail.UpdateTrailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

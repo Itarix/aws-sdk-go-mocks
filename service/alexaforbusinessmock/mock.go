@@ -5,7 +5,7 @@
 package alexaforbusinessmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	alexaforbusiness "github.com/aws/aws-sdk-go/service/alexaforbusiness"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ApproveSkillRequest(arg0 interfac
 }
 
 // ApproveSkillWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ApproveSkillWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ApproveSkillInput, arg2 ...request.Option) (*alexaforbusiness.ApproveSkillOutput, error) {
+func (m *MockAlexaForBusinessAPI) ApproveSkillWithContext(arg0 context.Context, arg1 *alexaforbusiness.ApproveSkillInput, arg2 ...request.Option) (*alexaforbusiness.ApproveSkillOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateContactWithAddressBookRe
 }
 
 // AssociateContactWithAddressBookWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateContactWithAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.AssociateContactWithAddressBookOutput, error) {
+func (m *MockAlexaForBusinessAPI) AssociateContactWithAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateContactWithAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.AssociateContactWithAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateDeviceWithRoomRequest(ar
 }
 
 // AssociateDeviceWithRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateDeviceWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateDeviceWithRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) AssociateDeviceWithRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateDeviceWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateDeviceWithRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillGroupWithRoomReques
 }
 
 // AssociateSkillGroupWithRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateSkillGroupWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillGroupWithRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) AssociateSkillGroupWithRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateSkillGroupWithRoomInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillGroupWithRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithSkillGroupReque
 }
 
 // AssociateSkillWithSkillGroupWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateSkillWithSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithSkillGroupOutput, error) {
+func (m *MockAlexaForBusinessAPI) AssociateSkillWithSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateSkillWithSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) AssociateSkillWithUsersRequest(ar
 }
 
 // AssociateSkillWithUsersWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.AssociateSkillWithUsersInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithUsersOutput, error) {
+func (m *MockAlexaForBusinessAPI) AssociateSkillWithUsersWithContext(arg0 context.Context, arg1 *alexaforbusiness.AssociateSkillWithUsersInput, arg2 ...request.Option) (*alexaforbusiness.AssociateSkillWithUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateAddressBookRequest(arg0 int
 }
 
 // CreateAddressBookWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.CreateAddressBookOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.CreateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateBusinessReportScheduleReque
 }
 
 // CreateBusinessReportScheduleWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateBusinessReportScheduleWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.CreateBusinessReportScheduleOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateBusinessReportScheduleWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.CreateBusinessReportScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateConferenceProviderRequest(a
 }
 
 // CreateConferenceProviderWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateConferenceProviderWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.CreateConferenceProviderOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.CreateConferenceProviderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateContactRequest(arg0 interfa
 }
 
 // CreateContactWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateContactInput, arg2 ...request.Option) (*alexaforbusiness.CreateContactOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateContactInput, arg2 ...request.Option) (*alexaforbusiness.CreateContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateProfileRequest(arg0 interfa
 }
 
 // CreateProfileWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateProfileInput, arg2 ...request.Option) (*alexaforbusiness.CreateProfileOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateProfileInput, arg2 ...request.Option) (*alexaforbusiness.CreateProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateRoomRequest(arg0 interface{
 }
 
 // CreateRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateRoomInput, arg2 ...request.Option) (*alexaforbusiness.CreateRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateRoomInput, arg2 ...request.Option) (*alexaforbusiness.CreateRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateSkillGroupRequest(arg0 inte
 }
 
 // CreateSkillGroupWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.CreateSkillGroupOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.CreateSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) CreateUserRequest(arg0 interface{
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) CreateUserWithContext(arg0 aws.Context, arg1 *alexaforbusiness.CreateUserInput, arg2 ...request.Option) (*alexaforbusiness.CreateUserOutput, error) {
+func (m *MockAlexaForBusinessAPI) CreateUserWithContext(arg0 context.Context, arg1 *alexaforbusiness.CreateUserInput, arg2 ...request.Option) (*alexaforbusiness.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteAddressBookRequest(arg0 int
 }
 
 // DeleteAddressBookWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DeleteAddressBookOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DeleteAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteBusinessReportScheduleReque
 }
 
 // DeleteBusinessReportScheduleWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteBusinessReportScheduleWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.DeleteBusinessReportScheduleOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteBusinessReportScheduleWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.DeleteBusinessReportScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteConferenceProviderRequest(a
 }
 
 // DeleteConferenceProviderWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteConferenceProviderWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.DeleteConferenceProviderOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.DeleteConferenceProviderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteContactRequest(arg0 interfa
 }
 
 // DeleteContactWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteContactInput, arg2 ...request.Option) (*alexaforbusiness.DeleteContactOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteContactInput, arg2 ...request.Option) (*alexaforbusiness.DeleteContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteDeviceRequest(arg0 interfac
 }
 
 // DeleteDeviceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteDeviceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteDeviceInput, arg2 ...request.Option) (*alexaforbusiness.DeleteDeviceOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteDeviceInput, arg2 ...request.Option) (*alexaforbusiness.DeleteDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteProfileRequest(arg0 interfa
 }
 
 // DeleteProfileWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteProfileInput, arg2 ...request.Option) (*alexaforbusiness.DeleteProfileOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteProfileInput, arg2 ...request.Option) (*alexaforbusiness.DeleteProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1096,7 +1096,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomSkillParameterRequest(a
 }
 
 // DeleteRoomSkillParameterWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomSkillParameterOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteRoomSkillParameterWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteRoomSkillParameterWithConte
 }
 
 // DeleteRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteRoomInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteRoomInput, arg2 ...request.Option) (*alexaforbusiness.DeleteRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillAuthorizationRequest(a
 }
 
 // DeleteSkillAuthorizationWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteSkillAuthorizationWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteSkillAuthorizationInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillAuthorizationOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteSkillAuthorizationWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteSkillAuthorizationInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteSkillGroupRequest(arg0 inte
 }
 
 // DeleteSkillGroupWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillGroupOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DeleteSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DeleteUserRequest(arg0 interface{
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DeleteUserInput, arg2 ...request.Option) (*alexaforbusiness.DeleteUserOutput, error) {
+func (m *MockAlexaForBusinessAPI) DeleteUserWithContext(arg0 context.Context, arg1 *alexaforbusiness.DeleteUserInput, arg2 ...request.Option) (*alexaforbusiness.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateContactFromAddressBoo
 }
 
 // DisassociateContactFromAddressBookWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateContactFromAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateContactFromAddressBookOutput, error) {
+func (m *MockAlexaForBusinessAPI) DisassociateContactFromAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateContactFromAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateContactFromAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateDeviceFromRoomRequest
 }
 
 // DisassociateDeviceFromRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateDeviceFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateDeviceFromRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) DisassociateDeviceFromRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateDeviceFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateDeviceFromRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromSkillGroupRe
 }
 
 // DisassociateSkillFromSkillGroupWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateSkillFromSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromSkillGroupOutput, error) {
+func (m *MockAlexaForBusinessAPI) DisassociateSkillFromSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateSkillFromSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillFromUsersRequest
 }
 
 // DisassociateSkillFromUsersWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateSkillFromUsersInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromUsersOutput, error) {
+func (m *MockAlexaForBusinessAPI) DisassociateSkillFromUsersWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateSkillFromUsersInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillFromUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) DisassociateSkillGroupFromRoomReq
 }
 
 // DisassociateSkillGroupFromRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.DisassociateSkillGroupFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillGroupFromRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) DisassociateSkillGroupFromRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.DisassociateSkillGroupFromRoomInput, arg2 ...request.Option) (*alexaforbusiness.DisassociateSkillGroupFromRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ForgetSmartHomeAppliancesRequest(
 }
 
 // ForgetSmartHomeAppliancesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ForgetSmartHomeAppliancesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ForgetSmartHomeAppliancesInput, arg2 ...request.Option) (*alexaforbusiness.ForgetSmartHomeAppliancesOutput, error) {
+func (m *MockAlexaForBusinessAPI) ForgetSmartHomeAppliancesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ForgetSmartHomeAppliancesInput, arg2 ...request.Option) (*alexaforbusiness.ForgetSmartHomeAppliancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetAddressBookRequest(arg0 interf
 }
 
 // GetAddressBookWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.GetAddressBookOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.GetAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferencePreferenceRequest(ar
 }
 
 // GetConferencePreferenceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetConferencePreferenceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetConferencePreferenceInput, arg2 ...request.Option) (*alexaforbusiness.GetConferencePreferenceOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetConferencePreferenceWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetConferencePreferenceInput, arg2 ...request.Option) (*alexaforbusiness.GetConferencePreferenceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetConferenceProviderRequest(arg0
 }
 
 // GetConferenceProviderWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetConferenceProviderWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.GetConferenceProviderOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.GetConferenceProviderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetContactRequest(arg0 interface{
 }
 
 // GetContactWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetContactInput, arg2 ...request.Option) (*alexaforbusiness.GetContactOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetContactInput, arg2 ...request.Option) (*alexaforbusiness.GetContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetDeviceRequest(arg0 interface{}
 }
 
 // GetDeviceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetDeviceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetDeviceInput, arg2 ...request.Option) (*alexaforbusiness.GetDeviceOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetDeviceInput, arg2 ...request.Option) (*alexaforbusiness.GetDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetProfileRequest(arg0 interface{
 }
 
 // GetProfileWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetProfileInput, arg2 ...request.Option) (*alexaforbusiness.GetProfileOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetProfileInput, arg2 ...request.Option) (*alexaforbusiness.GetProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1946,7 +1946,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomSkillParameterRequest(arg0
 }
 
 // GetRoomSkillParameterWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomSkillParameterOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetRoomSkillParameterWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetRoomSkillParameterWithContext(
 }
 
 // GetRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetRoomInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetRoomInput, arg2 ...request.Option) (*alexaforbusiness.GetRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) GetSkillGroupRequest(arg0 interfa
 }
 
 // GetSkillGroupWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) GetSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.GetSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.GetSkillGroupOutput, error) {
+func (m *MockAlexaForBusinessAPI) GetSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.GetSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.GetSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2065,7 +2065,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedulesPages(
 }
 
 // ListBusinessReportSchedulesPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListBusinessReportSchedulesInput, arg2 func(*alexaforbusiness.ListBusinessReportSchedulesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListBusinessReportSchedulesInput, arg2 func(*alexaforbusiness.ListBusinessReportSchedulesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2099,7 +2099,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListBusinessReportSchedulesReques
 }
 
 // ListBusinessReportSchedulesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListBusinessReportSchedulesInput, arg2 ...request.Option) (*alexaforbusiness.ListBusinessReportSchedulesOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListBusinessReportSchedulesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListBusinessReportSchedulesInput, arg2 ...request.Option) (*alexaforbusiness.ListBusinessReportSchedulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2148,7 +2148,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProvidersPages(arg0
 }
 
 // ListConferenceProvidersPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListConferenceProvidersPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListConferenceProvidersInput, arg2 func(*alexaforbusiness.ListConferenceProvidersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListConferenceProvidersPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListConferenceProvidersInput, arg2 func(*alexaforbusiness.ListConferenceProvidersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2182,7 +2182,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListConferenceProvidersRequest(ar
 }
 
 // ListConferenceProvidersWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListConferenceProvidersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListConferenceProvidersInput, arg2 ...request.Option) (*alexaforbusiness.ListConferenceProvidersOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListConferenceProvidersWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListConferenceProvidersInput, arg2 ...request.Option) (*alexaforbusiness.ListConferenceProvidersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2231,7 +2231,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEventsPages(arg0, arg1 
 }
 
 // ListDeviceEventsPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListDeviceEventsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 func(*alexaforbusiness.ListDeviceEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListDeviceEventsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 func(*alexaforbusiness.ListDeviceEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2265,7 +2265,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListDeviceEventsRequest(arg0 inte
 }
 
 // ListDeviceEventsWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListDeviceEventsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 ...request.Option) (*alexaforbusiness.ListDeviceEventsOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListDeviceEventsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListDeviceEventsInput, arg2 ...request.Option) (*alexaforbusiness.ListDeviceEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2314,7 +2314,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsPages(arg0, arg1 interf
 }
 
 // ListSkillsPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSkillsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 func(*alexaforbusiness.ListSkillsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListSkillsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 func(*alexaforbusiness.ListSkillsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2377,7 +2377,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategoriesPages(ar
 }
 
 // ListSkillsStoreCategoriesPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg2 func(*alexaforbusiness.ListSkillsStoreCategoriesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg2 func(*alexaforbusiness.ListSkillsStoreCategoriesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2411,7 +2411,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreCategoriesRequest(
 }
 
 // ListSkillsStoreCategoriesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsStoreCategoriesOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListSkillsStoreCategoriesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreCategoriesInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsStoreCategoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2460,7 +2460,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryPa
 }
 
 // ListSkillsStoreSkillsByCategoryPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg2 func(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg2 func(*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2494,7 +2494,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryRe
 }
 
 // ListSkillsStoreSkillsByCategoryWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListSkillsStoreSkillsByCategoryWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsStoreSkillsByCategoryInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsStoreSkillsByCategoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2514,7 +2514,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSkillsStoreSkillsByCategoryWi
 }
 
 // ListSkillsWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSkillsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListSkillsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSkillsInput, arg2 ...request.Option) (*alexaforbusiness.ListSkillsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2563,7 +2563,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliancesPages(arg0
 }
 
 // ListSmartHomeAppliancesPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSmartHomeAppliancesInput, arg2 func(*alexaforbusiness.ListSmartHomeAppliancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSmartHomeAppliancesInput, arg2 func(*alexaforbusiness.ListSmartHomeAppliancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2597,7 +2597,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListSmartHomeAppliancesRequest(ar
 }
 
 // ListSmartHomeAppliancesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListSmartHomeAppliancesInput, arg2 ...request.Option) (*alexaforbusiness.ListSmartHomeAppliancesOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListSmartHomeAppliancesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListSmartHomeAppliancesInput, arg2 ...request.Option) (*alexaforbusiness.ListSmartHomeAppliancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2646,7 +2646,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListTagsPages(arg0, arg1 interfac
 }
 
 // ListTagsPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListTagsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 func(*alexaforbusiness.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) ListTagsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 func(*alexaforbusiness.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2680,7 +2680,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ListTagsRequest(arg0 interface{})
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ListTagsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 ...request.Option) (*alexaforbusiness.ListTagsOutput, error) {
+func (m *MockAlexaForBusinessAPI) ListTagsWithContext(arg0 context.Context, arg1 *alexaforbusiness.ListTagsInput, arg2 ...request.Option) (*alexaforbusiness.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2730,7 +2730,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) PutConferencePreferenceRequest(ar
 }
 
 // PutConferencePreferenceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) PutConferencePreferenceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.PutConferencePreferenceInput, arg2 ...request.Option) (*alexaforbusiness.PutConferencePreferenceOutput, error) {
+func (m *MockAlexaForBusinessAPI) PutConferencePreferenceWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutConferencePreferenceInput, arg2 ...request.Option) (*alexaforbusiness.PutConferencePreferenceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2780,7 +2780,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) PutRoomSkillParameterRequest(arg0
 }
 
 // PutRoomSkillParameterWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterWithContext(arg0 aws.Context, arg1 *alexaforbusiness.PutRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.PutRoomSkillParameterOutput, error) {
+func (m *MockAlexaForBusinessAPI) PutRoomSkillParameterWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutRoomSkillParameterInput, arg2 ...request.Option) (*alexaforbusiness.PutRoomSkillParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2830,7 +2830,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) PutSkillAuthorizationRequest(arg0
 }
 
 // PutSkillAuthorizationWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) PutSkillAuthorizationWithContext(arg0 aws.Context, arg1 *alexaforbusiness.PutSkillAuthorizationInput, arg2 ...request.Option) (*alexaforbusiness.PutSkillAuthorizationOutput, error) {
+func (m *MockAlexaForBusinessAPI) PutSkillAuthorizationWithContext(arg0 context.Context, arg1 *alexaforbusiness.PutSkillAuthorizationInput, arg2 ...request.Option) (*alexaforbusiness.PutSkillAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2880,7 +2880,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) RegisterAVSDeviceRequest(arg0 int
 }
 
 // RegisterAVSDeviceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) RegisterAVSDeviceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.RegisterAVSDeviceInput, arg2 ...request.Option) (*alexaforbusiness.RegisterAVSDeviceOutput, error) {
+func (m *MockAlexaForBusinessAPI) RegisterAVSDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.RegisterAVSDeviceInput, arg2 ...request.Option) (*alexaforbusiness.RegisterAVSDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2930,7 +2930,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) RejectSkillRequest(arg0 interface
 }
 
 // RejectSkillWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) RejectSkillWithContext(arg0 aws.Context, arg1 *alexaforbusiness.RejectSkillInput, arg2 ...request.Option) (*alexaforbusiness.RejectSkillOutput, error) {
+func (m *MockAlexaForBusinessAPI) RejectSkillWithContext(arg0 context.Context, arg1 *alexaforbusiness.RejectSkillInput, arg2 ...request.Option) (*alexaforbusiness.RejectSkillOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2980,7 +2980,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) ResolveRoomRequest(arg0 interface
 }
 
 // ResolveRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) ResolveRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.ResolveRoomInput, arg2 ...request.Option) (*alexaforbusiness.ResolveRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) ResolveRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.ResolveRoomInput, arg2 ...request.Option) (*alexaforbusiness.ResolveRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3030,7 +3030,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) RevokeInvitationRequest(arg0 inte
 }
 
 // RevokeInvitationWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) RevokeInvitationWithContext(arg0 aws.Context, arg1 *alexaforbusiness.RevokeInvitationInput, arg2 ...request.Option) (*alexaforbusiness.RevokeInvitationOutput, error) {
+func (m *MockAlexaForBusinessAPI) RevokeInvitationWithContext(arg0 context.Context, arg1 *alexaforbusiness.RevokeInvitationInput, arg2 ...request.Option) (*alexaforbusiness.RevokeInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3079,7 +3079,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooksPages(arg0, arg
 }
 
 // SearchAddressBooksPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchAddressBooksPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 func(*alexaforbusiness.SearchAddressBooksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchAddressBooksPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 func(*alexaforbusiness.SearchAddressBooksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3113,7 +3113,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchAddressBooksRequest(arg0 in
 }
 
 // SearchAddressBooksWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchAddressBooksWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 ...request.Option) (*alexaforbusiness.SearchAddressBooksOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchAddressBooksWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchAddressBooksInput, arg2 ...request.Option) (*alexaforbusiness.SearchAddressBooksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3162,7 +3162,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContactsPages(arg0, arg1 in
 }
 
 // SearchContactsPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchContactsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 func(*alexaforbusiness.SearchContactsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchContactsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 func(*alexaforbusiness.SearchContactsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3196,7 +3196,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchContactsRequest(arg0 interf
 }
 
 // SearchContactsWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchContactsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 ...request.Option) (*alexaforbusiness.SearchContactsOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchContactsWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchContactsInput, arg2 ...request.Option) (*alexaforbusiness.SearchContactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3245,7 +3245,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevicesPages(arg0, arg1 int
 }
 
 // SearchDevicesPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchDevicesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 func(*alexaforbusiness.SearchDevicesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchDevicesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 func(*alexaforbusiness.SearchDevicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3279,7 +3279,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchDevicesRequest(arg0 interfa
 }
 
 // SearchDevicesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchDevicesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 ...request.Option) (*alexaforbusiness.SearchDevicesOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchDevicesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchDevicesInput, arg2 ...request.Option) (*alexaforbusiness.SearchDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3328,7 +3328,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfilesPages(arg0, arg1 in
 }
 
 // SearchProfilesPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchProfilesPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 func(*alexaforbusiness.SearchProfilesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchProfilesPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 func(*alexaforbusiness.SearchProfilesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3362,7 +3362,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchProfilesRequest(arg0 interf
 }
 
 // SearchProfilesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchProfilesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 ...request.Option) (*alexaforbusiness.SearchProfilesOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchProfilesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchProfilesInput, arg2 ...request.Option) (*alexaforbusiness.SearchProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3411,7 +3411,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRoomsPages(arg0, arg1 inter
 }
 
 // SearchRoomsPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchRoomsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 func(*alexaforbusiness.SearchRoomsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchRoomsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 func(*alexaforbusiness.SearchRoomsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3445,7 +3445,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchRoomsRequest(arg0 interface
 }
 
 // SearchRoomsWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchRoomsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 ...request.Option) (*alexaforbusiness.SearchRoomsOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchRoomsWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchRoomsInput, arg2 ...request.Option) (*alexaforbusiness.SearchRoomsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3494,7 +3494,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroupsPages(arg0, arg1
 }
 
 // SearchSkillGroupsPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 func(*alexaforbusiness.SearchSkillGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchSkillGroupsPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 func(*alexaforbusiness.SearchSkillGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3528,7 +3528,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchSkillGroupsRequest(arg0 int
 }
 
 // SearchSkillGroupsWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchSkillGroupsWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 ...request.Option) (*alexaforbusiness.SearchSkillGroupsOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchSkillGroupsWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchSkillGroupsInput, arg2 ...request.Option) (*alexaforbusiness.SearchSkillGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3577,7 +3577,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsersPages(arg0, arg1 inter
 }
 
 // SearchUsersPagesWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchUsersPagesWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 func(*alexaforbusiness.SearchUsersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAlexaForBusinessAPI) SearchUsersPagesWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 func(*alexaforbusiness.SearchUsersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3611,7 +3611,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SearchUsersRequest(arg0 interface
 }
 
 // SearchUsersWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SearchUsersWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 ...request.Option) (*alexaforbusiness.SearchUsersOutput, error) {
+func (m *MockAlexaForBusinessAPI) SearchUsersWithContext(arg0 context.Context, arg1 *alexaforbusiness.SearchUsersInput, arg2 ...request.Option) (*alexaforbusiness.SearchUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3661,7 +3661,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) SendInvitationRequest(arg0 interf
 }
 
 // SendInvitationWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) SendInvitationWithContext(arg0 aws.Context, arg1 *alexaforbusiness.SendInvitationInput, arg2 ...request.Option) (*alexaforbusiness.SendInvitationOutput, error) {
+func (m *MockAlexaForBusinessAPI) SendInvitationWithContext(arg0 context.Context, arg1 *alexaforbusiness.SendInvitationInput, arg2 ...request.Option) (*alexaforbusiness.SendInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3711,7 +3711,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) StartDeviceSyncRequest(arg0 inter
 }
 
 // StartDeviceSyncWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) StartDeviceSyncWithContext(arg0 aws.Context, arg1 *alexaforbusiness.StartDeviceSyncInput, arg2 ...request.Option) (*alexaforbusiness.StartDeviceSyncOutput, error) {
+func (m *MockAlexaForBusinessAPI) StartDeviceSyncWithContext(arg0 context.Context, arg1 *alexaforbusiness.StartDeviceSyncInput, arg2 ...request.Option) (*alexaforbusiness.StartDeviceSyncOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3761,7 +3761,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) StartSmartHomeApplianceDiscoveryR
 }
 
 // StartSmartHomeApplianceDiscoveryWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) StartSmartHomeApplianceDiscoveryWithContext(arg0 aws.Context, arg1 *alexaforbusiness.StartSmartHomeApplianceDiscoveryInput, arg2 ...request.Option) (*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput, error) {
+func (m *MockAlexaForBusinessAPI) StartSmartHomeApplianceDiscoveryWithContext(arg0 context.Context, arg1 *alexaforbusiness.StartSmartHomeApplianceDiscoveryInput, arg2 ...request.Option) (*alexaforbusiness.StartSmartHomeApplianceDiscoveryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3811,7 +3811,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) TagResourceRequest(arg0 interface
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) TagResourceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.TagResourceInput, arg2 ...request.Option) (*alexaforbusiness.TagResourceOutput, error) {
+func (m *MockAlexaForBusinessAPI) TagResourceWithContext(arg0 context.Context, arg1 *alexaforbusiness.TagResourceInput, arg2 ...request.Option) (*alexaforbusiness.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3861,7 +3861,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UntagResourceRequest(arg0 interfa
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UntagResourceInput, arg2 ...request.Option) (*alexaforbusiness.UntagResourceOutput, error) {
+func (m *MockAlexaForBusinessAPI) UntagResourceWithContext(arg0 context.Context, arg1 *alexaforbusiness.UntagResourceInput, arg2 ...request.Option) (*alexaforbusiness.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3911,7 +3911,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateAddressBookRequest(arg0 int
 }
 
 // UpdateAddressBookWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateAddressBookWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.UpdateAddressBookOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateAddressBookWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateAddressBookInput, arg2 ...request.Option) (*alexaforbusiness.UpdateAddressBookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3961,7 +3961,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateBusinessReportScheduleReque
 }
 
 // UpdateBusinessReportScheduleWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateBusinessReportScheduleWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.UpdateBusinessReportScheduleOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateBusinessReportScheduleWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateBusinessReportScheduleInput, arg2 ...request.Option) (*alexaforbusiness.UpdateBusinessReportScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4011,7 +4011,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateConferenceProviderRequest(a
 }
 
 // UpdateConferenceProviderWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateConferenceProviderWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.UpdateConferenceProviderOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateConferenceProviderWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateConferenceProviderInput, arg2 ...request.Option) (*alexaforbusiness.UpdateConferenceProviderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4061,7 +4061,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateContactRequest(arg0 interfa
 }
 
 // UpdateContactWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateContactWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateContactInput, arg2 ...request.Option) (*alexaforbusiness.UpdateContactOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateContactWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateContactInput, arg2 ...request.Option) (*alexaforbusiness.UpdateContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4111,7 +4111,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateDeviceRequest(arg0 interfac
 }
 
 // UpdateDeviceWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateDeviceWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateDeviceInput, arg2 ...request.Option) (*alexaforbusiness.UpdateDeviceOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateDeviceWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateDeviceInput, arg2 ...request.Option) (*alexaforbusiness.UpdateDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4161,7 +4161,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateProfileRequest(arg0 interfa
 }
 
 // UpdateProfileWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateProfileWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateProfileInput, arg2 ...request.Option) (*alexaforbusiness.UpdateProfileOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateProfileWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateProfileInput, arg2 ...request.Option) (*alexaforbusiness.UpdateProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4211,7 +4211,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateRoomRequest(arg0 interface{
 }
 
 // UpdateRoomWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateRoomWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateRoomInput, arg2 ...request.Option) (*alexaforbusiness.UpdateRoomOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateRoomWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateRoomInput, arg2 ...request.Option) (*alexaforbusiness.UpdateRoomOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4261,7 +4261,7 @@ func (mr *MockAlexaForBusinessAPIMockRecorder) UpdateSkillGroupRequest(arg0 inte
 }
 
 // UpdateSkillGroupWithContext mocks base method
-func (m *MockAlexaForBusinessAPI) UpdateSkillGroupWithContext(arg0 aws.Context, arg1 *alexaforbusiness.UpdateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.UpdateSkillGroupOutput, error) {
+func (m *MockAlexaForBusinessAPI) UpdateSkillGroupWithContext(arg0 context.Context, arg1 *alexaforbusiness.UpdateSkillGroupInput, arg2 ...request.Option) (*alexaforbusiness.UpdateSkillGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

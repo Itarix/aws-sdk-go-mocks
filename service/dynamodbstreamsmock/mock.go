@@ -5,7 +5,7 @@
 package dynamodbstreamsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	dynamodbstreams "github.com/aws/aws-sdk-go/service/dynamodbstreams"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDynamoDBStreamsAPIMockRecorder) DescribeStreamRequest(arg0 interfa
 }
 
 // DescribeStreamWithContext mocks base method
-func (m *MockDynamoDBStreamsAPI) DescribeStreamWithContext(arg0 aws.Context, arg1 *dynamodbstreams.DescribeStreamInput, arg2 ...request.Option) (*dynamodbstreams.DescribeStreamOutput, error) {
+func (m *MockDynamoDBStreamsAPI) DescribeStreamWithContext(arg0 context.Context, arg1 *dynamodbstreams.DescribeStreamInput, arg2 ...request.Option) (*dynamodbstreams.DescribeStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDynamoDBStreamsAPIMockRecorder) GetRecordsRequest(arg0 interface{}
 }
 
 // GetRecordsWithContext mocks base method
-func (m *MockDynamoDBStreamsAPI) GetRecordsWithContext(arg0 aws.Context, arg1 *dynamodbstreams.GetRecordsInput, arg2 ...request.Option) (*dynamodbstreams.GetRecordsOutput, error) {
+func (m *MockDynamoDBStreamsAPI) GetRecordsWithContext(arg0 context.Context, arg1 *dynamodbstreams.GetRecordsInput, arg2 ...request.Option) (*dynamodbstreams.GetRecordsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDynamoDBStreamsAPIMockRecorder) GetShardIteratorRequest(arg0 inter
 }
 
 // GetShardIteratorWithContext mocks base method
-func (m *MockDynamoDBStreamsAPI) GetShardIteratorWithContext(arg0 aws.Context, arg1 *dynamodbstreams.GetShardIteratorInput, arg2 ...request.Option) (*dynamodbstreams.GetShardIteratorOutput, error) {
+func (m *MockDynamoDBStreamsAPI) GetShardIteratorWithContext(arg0 context.Context, arg1 *dynamodbstreams.GetShardIteratorInput, arg2 ...request.Option) (*dynamodbstreams.GetShardIteratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDynamoDBStreamsAPIMockRecorder) ListStreamsRequest(arg0 interface{
 }
 
 // ListStreamsWithContext mocks base method
-func (m *MockDynamoDBStreamsAPI) ListStreamsWithContext(arg0 aws.Context, arg1 *dynamodbstreams.ListStreamsInput, arg2 ...request.Option) (*dynamodbstreams.ListStreamsOutput, error) {
+func (m *MockDynamoDBStreamsAPI) ListStreamsWithContext(arg0 context.Context, arg1 *dynamodbstreams.ListStreamsInput, arg2 ...request.Option) (*dynamodbstreams.ListStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

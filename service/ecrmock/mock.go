@@ -5,7 +5,7 @@
 package ecrmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	ecr "github.com/aws/aws-sdk-go/service/ecr"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockECRAPIMockRecorder) BatchCheckLayerAvailabilityRequest(arg0 interf
 }
 
 // BatchCheckLayerAvailabilityWithContext mocks base method
-func (m *MockECRAPI) BatchCheckLayerAvailabilityWithContext(arg0 aws.Context, arg1 *ecr.BatchCheckLayerAvailabilityInput, arg2 ...request.Option) (*ecr.BatchCheckLayerAvailabilityOutput, error) {
+func (m *MockECRAPI) BatchCheckLayerAvailabilityWithContext(arg0 context.Context, arg1 *ecr.BatchCheckLayerAvailabilityInput, arg2 ...request.Option) (*ecr.BatchCheckLayerAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockECRAPIMockRecorder) BatchDeleteImageRequest(arg0 interface{}) *gom
 }
 
 // BatchDeleteImageWithContext mocks base method
-func (m *MockECRAPI) BatchDeleteImageWithContext(arg0 aws.Context, arg1 *ecr.BatchDeleteImageInput, arg2 ...request.Option) (*ecr.BatchDeleteImageOutput, error) {
+func (m *MockECRAPI) BatchDeleteImageWithContext(arg0 context.Context, arg1 *ecr.BatchDeleteImageInput, arg2 ...request.Option) (*ecr.BatchDeleteImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockECRAPIMockRecorder) BatchGetImageRequest(arg0 interface{}) *gomock
 }
 
 // BatchGetImageWithContext mocks base method
-func (m *MockECRAPI) BatchGetImageWithContext(arg0 aws.Context, arg1 *ecr.BatchGetImageInput, arg2 ...request.Option) (*ecr.BatchGetImageOutput, error) {
+func (m *MockECRAPI) BatchGetImageWithContext(arg0 context.Context, arg1 *ecr.BatchGetImageInput, arg2 ...request.Option) (*ecr.BatchGetImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockECRAPIMockRecorder) CompleteLayerUploadRequest(arg0 interface{}) *
 }
 
 // CompleteLayerUploadWithContext mocks base method
-func (m *MockECRAPI) CompleteLayerUploadWithContext(arg0 aws.Context, arg1 *ecr.CompleteLayerUploadInput, arg2 ...request.Option) (*ecr.CompleteLayerUploadOutput, error) {
+func (m *MockECRAPI) CompleteLayerUploadWithContext(arg0 context.Context, arg1 *ecr.CompleteLayerUploadInput, arg2 ...request.Option) (*ecr.CompleteLayerUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockECRAPIMockRecorder) CreateRepositoryRequest(arg0 interface{}) *gom
 }
 
 // CreateRepositoryWithContext mocks base method
-func (m *MockECRAPI) CreateRepositoryWithContext(arg0 aws.Context, arg1 *ecr.CreateRepositoryInput, arg2 ...request.Option) (*ecr.CreateRepositoryOutput, error) {
+func (m *MockECRAPI) CreateRepositoryWithContext(arg0 context.Context, arg1 *ecr.CreateRepositoryInput, arg2 ...request.Option) (*ecr.CreateRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockECRAPIMockRecorder) DeleteLifecyclePolicyRequest(arg0 interface{})
 }
 
 // DeleteLifecyclePolicyWithContext mocks base method
-func (m *MockECRAPI) DeleteLifecyclePolicyWithContext(arg0 aws.Context, arg1 *ecr.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*ecr.DeleteLifecyclePolicyOutput, error) {
+func (m *MockECRAPI) DeleteLifecyclePolicyWithContext(arg0 context.Context, arg1 *ecr.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*ecr.DeleteLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockECRAPIMockRecorder) DeleteRepositoryPolicyRequest(arg0 interface{}
 }
 
 // DeleteRepositoryPolicyWithContext mocks base method
-func (m *MockECRAPI) DeleteRepositoryPolicyWithContext(arg0 aws.Context, arg1 *ecr.DeleteRepositoryPolicyInput, arg2 ...request.Option) (*ecr.DeleteRepositoryPolicyOutput, error) {
+func (m *MockECRAPI) DeleteRepositoryPolicyWithContext(arg0 context.Context, arg1 *ecr.DeleteRepositoryPolicyInput, arg2 ...request.Option) (*ecr.DeleteRepositoryPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockECRAPIMockRecorder) DeleteRepositoryRequest(arg0 interface{}) *gom
 }
 
 // DeleteRepositoryWithContext mocks base method
-func (m *MockECRAPI) DeleteRepositoryWithContext(arg0 aws.Context, arg1 *ecr.DeleteRepositoryInput, arg2 ...request.Option) (*ecr.DeleteRepositoryOutput, error) {
+func (m *MockECRAPI) DeleteRepositoryWithContext(arg0 context.Context, arg1 *ecr.DeleteRepositoryInput, arg2 ...request.Option) (*ecr.DeleteRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -465,7 +465,7 @@ func (mr *MockECRAPIMockRecorder) DescribeImagesPages(arg0, arg1 interface{}) *g
 }
 
 // DescribeImagesPagesWithContext mocks base method
-func (m *MockECRAPI) DescribeImagesPagesWithContext(arg0 aws.Context, arg1 *ecr.DescribeImagesInput, arg2 func(*ecr.DescribeImagesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockECRAPI) DescribeImagesPagesWithContext(arg0 context.Context, arg1 *ecr.DescribeImagesInput, arg2 func(*ecr.DescribeImagesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -499,7 +499,7 @@ func (mr *MockECRAPIMockRecorder) DescribeImagesRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeImagesWithContext mocks base method
-func (m *MockECRAPI) DescribeImagesWithContext(arg0 aws.Context, arg1 *ecr.DescribeImagesInput, arg2 ...request.Option) (*ecr.DescribeImagesOutput, error) {
+func (m *MockECRAPI) DescribeImagesWithContext(arg0 context.Context, arg1 *ecr.DescribeImagesInput, arg2 ...request.Option) (*ecr.DescribeImagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -548,7 +548,7 @@ func (mr *MockECRAPIMockRecorder) DescribeRepositoriesPages(arg0, arg1 interface
 }
 
 // DescribeRepositoriesPagesWithContext mocks base method
-func (m *MockECRAPI) DescribeRepositoriesPagesWithContext(arg0 aws.Context, arg1 *ecr.DescribeRepositoriesInput, arg2 func(*ecr.DescribeRepositoriesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockECRAPI) DescribeRepositoriesPagesWithContext(arg0 context.Context, arg1 *ecr.DescribeRepositoriesInput, arg2 func(*ecr.DescribeRepositoriesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -582,7 +582,7 @@ func (mr *MockECRAPIMockRecorder) DescribeRepositoriesRequest(arg0 interface{}) 
 }
 
 // DescribeRepositoriesWithContext mocks base method
-func (m *MockECRAPI) DescribeRepositoriesWithContext(arg0 aws.Context, arg1 *ecr.DescribeRepositoriesInput, arg2 ...request.Option) (*ecr.DescribeRepositoriesOutput, error) {
+func (m *MockECRAPI) DescribeRepositoriesWithContext(arg0 context.Context, arg1 *ecr.DescribeRepositoriesInput, arg2 ...request.Option) (*ecr.DescribeRepositoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockECRAPIMockRecorder) GetAuthorizationTokenRequest(arg0 interface{})
 }
 
 // GetAuthorizationTokenWithContext mocks base method
-func (m *MockECRAPI) GetAuthorizationTokenWithContext(arg0 aws.Context, arg1 *ecr.GetAuthorizationTokenInput, arg2 ...request.Option) (*ecr.GetAuthorizationTokenOutput, error) {
+func (m *MockECRAPI) GetAuthorizationTokenWithContext(arg0 context.Context, arg1 *ecr.GetAuthorizationTokenInput, arg2 ...request.Option) (*ecr.GetAuthorizationTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockECRAPIMockRecorder) GetDownloadUrlForLayerRequest(arg0 interface{}
 }
 
 // GetDownloadUrlForLayerWithContext mocks base method
-func (m *MockECRAPI) GetDownloadUrlForLayerWithContext(arg0 aws.Context, arg1 *ecr.GetDownloadUrlForLayerInput, arg2 ...request.Option) (*ecr.GetDownloadUrlForLayerOutput, error) {
+func (m *MockECRAPI) GetDownloadUrlForLayerWithContext(arg0 context.Context, arg1 *ecr.GetDownloadUrlForLayerInput, arg2 ...request.Option) (*ecr.GetDownloadUrlForLayerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -747,7 +747,7 @@ func (mr *MockECRAPIMockRecorder) GetLifecyclePolicyPreviewRequest(arg0 interfac
 }
 
 // GetLifecyclePolicyPreviewWithContext mocks base method
-func (m *MockECRAPI) GetLifecyclePolicyPreviewWithContext(arg0 aws.Context, arg1 *ecr.GetLifecyclePolicyPreviewInput, arg2 ...request.Option) (*ecr.GetLifecyclePolicyPreviewOutput, error) {
+func (m *MockECRAPI) GetLifecyclePolicyPreviewWithContext(arg0 context.Context, arg1 *ecr.GetLifecyclePolicyPreviewInput, arg2 ...request.Option) (*ecr.GetLifecyclePolicyPreviewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -782,7 +782,7 @@ func (mr *MockECRAPIMockRecorder) GetLifecyclePolicyRequest(arg0 interface{}) *g
 }
 
 // GetLifecyclePolicyWithContext mocks base method
-func (m *MockECRAPI) GetLifecyclePolicyWithContext(arg0 aws.Context, arg1 *ecr.GetLifecyclePolicyInput, arg2 ...request.Option) (*ecr.GetLifecyclePolicyOutput, error) {
+func (m *MockECRAPI) GetLifecyclePolicyWithContext(arg0 context.Context, arg1 *ecr.GetLifecyclePolicyInput, arg2 ...request.Option) (*ecr.GetLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -832,7 +832,7 @@ func (mr *MockECRAPIMockRecorder) GetRepositoryPolicyRequest(arg0 interface{}) *
 }
 
 // GetRepositoryPolicyWithContext mocks base method
-func (m *MockECRAPI) GetRepositoryPolicyWithContext(arg0 aws.Context, arg1 *ecr.GetRepositoryPolicyInput, arg2 ...request.Option) (*ecr.GetRepositoryPolicyOutput, error) {
+func (m *MockECRAPI) GetRepositoryPolicyWithContext(arg0 context.Context, arg1 *ecr.GetRepositoryPolicyInput, arg2 ...request.Option) (*ecr.GetRepositoryPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -882,7 +882,7 @@ func (mr *MockECRAPIMockRecorder) InitiateLayerUploadRequest(arg0 interface{}) *
 }
 
 // InitiateLayerUploadWithContext mocks base method
-func (m *MockECRAPI) InitiateLayerUploadWithContext(arg0 aws.Context, arg1 *ecr.InitiateLayerUploadInput, arg2 ...request.Option) (*ecr.InitiateLayerUploadOutput, error) {
+func (m *MockECRAPI) InitiateLayerUploadWithContext(arg0 context.Context, arg1 *ecr.InitiateLayerUploadInput, arg2 ...request.Option) (*ecr.InitiateLayerUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -931,7 +931,7 @@ func (mr *MockECRAPIMockRecorder) ListImagesPages(arg0, arg1 interface{}) *gomoc
 }
 
 // ListImagesPagesWithContext mocks base method
-func (m *MockECRAPI) ListImagesPagesWithContext(arg0 aws.Context, arg1 *ecr.ListImagesInput, arg2 func(*ecr.ListImagesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockECRAPI) ListImagesPagesWithContext(arg0 context.Context, arg1 *ecr.ListImagesInput, arg2 func(*ecr.ListImagesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -965,7 +965,7 @@ func (mr *MockECRAPIMockRecorder) ListImagesRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListImagesWithContext mocks base method
-func (m *MockECRAPI) ListImagesWithContext(arg0 aws.Context, arg1 *ecr.ListImagesInput, arg2 ...request.Option) (*ecr.ListImagesOutput, error) {
+func (m *MockECRAPI) ListImagesWithContext(arg0 context.Context, arg1 *ecr.ListImagesInput, arg2 ...request.Option) (*ecr.ListImagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1015,7 +1015,7 @@ func (mr *MockECRAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockECRAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *ecr.ListTagsForResourceInput, arg2 ...request.Option) (*ecr.ListTagsForResourceOutput, error) {
+func (m *MockECRAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *ecr.ListTagsForResourceInput, arg2 ...request.Option) (*ecr.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1065,7 +1065,7 @@ func (mr *MockECRAPIMockRecorder) PutImageRequest(arg0 interface{}) *gomock.Call
 }
 
 // PutImageWithContext mocks base method
-func (m *MockECRAPI) PutImageWithContext(arg0 aws.Context, arg1 *ecr.PutImageInput, arg2 ...request.Option) (*ecr.PutImageOutput, error) {
+func (m *MockECRAPI) PutImageWithContext(arg0 context.Context, arg1 *ecr.PutImageInput, arg2 ...request.Option) (*ecr.PutImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1115,7 +1115,7 @@ func (mr *MockECRAPIMockRecorder) PutLifecyclePolicyRequest(arg0 interface{}) *g
 }
 
 // PutLifecyclePolicyWithContext mocks base method
-func (m *MockECRAPI) PutLifecyclePolicyWithContext(arg0 aws.Context, arg1 *ecr.PutLifecyclePolicyInput, arg2 ...request.Option) (*ecr.PutLifecyclePolicyOutput, error) {
+func (m *MockECRAPI) PutLifecyclePolicyWithContext(arg0 context.Context, arg1 *ecr.PutLifecyclePolicyInput, arg2 ...request.Option) (*ecr.PutLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1165,7 +1165,7 @@ func (mr *MockECRAPIMockRecorder) SetRepositoryPolicyRequest(arg0 interface{}) *
 }
 
 // SetRepositoryPolicyWithContext mocks base method
-func (m *MockECRAPI) SetRepositoryPolicyWithContext(arg0 aws.Context, arg1 *ecr.SetRepositoryPolicyInput, arg2 ...request.Option) (*ecr.SetRepositoryPolicyOutput, error) {
+func (m *MockECRAPI) SetRepositoryPolicyWithContext(arg0 context.Context, arg1 *ecr.SetRepositoryPolicyInput, arg2 ...request.Option) (*ecr.SetRepositoryPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockECRAPIMockRecorder) StartLifecyclePolicyPreviewRequest(arg0 interf
 }
 
 // StartLifecyclePolicyPreviewWithContext mocks base method
-func (m *MockECRAPI) StartLifecyclePolicyPreviewWithContext(arg0 aws.Context, arg1 *ecr.StartLifecyclePolicyPreviewInput, arg2 ...request.Option) (*ecr.StartLifecyclePolicyPreviewOutput, error) {
+func (m *MockECRAPI) StartLifecyclePolicyPreviewWithContext(arg0 context.Context, arg1 *ecr.StartLifecyclePolicyPreviewInput, arg2 ...request.Option) (*ecr.StartLifecyclePolicyPreviewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1265,7 +1265,7 @@ func (mr *MockECRAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.C
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockECRAPI) TagResourceWithContext(arg0 aws.Context, arg1 *ecr.TagResourceInput, arg2 ...request.Option) (*ecr.TagResourceOutput, error) {
+func (m *MockECRAPI) TagResourceWithContext(arg0 context.Context, arg1 *ecr.TagResourceInput, arg2 ...request.Option) (*ecr.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockECRAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockECRAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *ecr.UntagResourceInput, arg2 ...request.Option) (*ecr.UntagResourceOutput, error) {
+func (m *MockECRAPI) UntagResourceWithContext(arg0 context.Context, arg1 *ecr.UntagResourceInput, arg2 ...request.Option) (*ecr.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockECRAPIMockRecorder) UploadLayerPartRequest(arg0 interface{}) *gomo
 }
 
 // UploadLayerPartWithContext mocks base method
-func (m *MockECRAPI) UploadLayerPartWithContext(arg0 aws.Context, arg1 *ecr.UploadLayerPartInput, arg2 ...request.Option) (*ecr.UploadLayerPartOutput, error) {
+func (m *MockECRAPI) UploadLayerPartWithContext(arg0 context.Context, arg1 *ecr.UploadLayerPartInput, arg2 ...request.Option) (*ecr.UploadLayerPartOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

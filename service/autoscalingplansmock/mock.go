@@ -5,7 +5,7 @@
 package autoscalingplansmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	autoscalingplans "github.com/aws/aws-sdk-go/service/autoscalingplans"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) CreateScalingPlanRequest(arg0 int
 }
 
 // CreateScalingPlanWithContext mocks base method
-func (m *MockAutoScalingPlansAPI) CreateScalingPlanWithContext(arg0 aws.Context, arg1 *autoscalingplans.CreateScalingPlanInput, arg2 ...request.Option) (*autoscalingplans.CreateScalingPlanOutput, error) {
+func (m *MockAutoScalingPlansAPI) CreateScalingPlanWithContext(arg0 context.Context, arg1 *autoscalingplans.CreateScalingPlanInput, arg2 ...request.Option) (*autoscalingplans.CreateScalingPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) DeleteScalingPlanRequest(arg0 int
 }
 
 // DeleteScalingPlanWithContext mocks base method
-func (m *MockAutoScalingPlansAPI) DeleteScalingPlanWithContext(arg0 aws.Context, arg1 *autoscalingplans.DeleteScalingPlanInput, arg2 ...request.Option) (*autoscalingplans.DeleteScalingPlanOutput, error) {
+func (m *MockAutoScalingPlansAPI) DeleteScalingPlanWithContext(arg0 context.Context, arg1 *autoscalingplans.DeleteScalingPlanInput, arg2 ...request.Option) (*autoscalingplans.DeleteScalingPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) DescribeScalingPlanResourcesReque
 }
 
 // DescribeScalingPlanResourcesWithContext mocks base method
-func (m *MockAutoScalingPlansAPI) DescribeScalingPlanResourcesWithContext(arg0 aws.Context, arg1 *autoscalingplans.DescribeScalingPlanResourcesInput, arg2 ...request.Option) (*autoscalingplans.DescribeScalingPlanResourcesOutput, error) {
+func (m *MockAutoScalingPlansAPI) DescribeScalingPlanResourcesWithContext(arg0 context.Context, arg1 *autoscalingplans.DescribeScalingPlanResourcesInput, arg2 ...request.Option) (*autoscalingplans.DescribeScalingPlanResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) DescribeScalingPlansRequest(arg0 
 }
 
 // DescribeScalingPlansWithContext mocks base method
-func (m *MockAutoScalingPlansAPI) DescribeScalingPlansWithContext(arg0 aws.Context, arg1 *autoscalingplans.DescribeScalingPlansInput, arg2 ...request.Option) (*autoscalingplans.DescribeScalingPlansOutput, error) {
+func (m *MockAutoScalingPlansAPI) DescribeScalingPlansWithContext(arg0 context.Context, arg1 *autoscalingplans.DescribeScalingPlansInput, arg2 ...request.Option) (*autoscalingplans.DescribeScalingPlansOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) GetScalingPlanResourceForecastDat
 }
 
 // GetScalingPlanResourceForecastDataWithContext mocks base method
-func (m *MockAutoScalingPlansAPI) GetScalingPlanResourceForecastDataWithContext(arg0 aws.Context, arg1 *autoscalingplans.GetScalingPlanResourceForecastDataInput, arg2 ...request.Option) (*autoscalingplans.GetScalingPlanResourceForecastDataOutput, error) {
+func (m *MockAutoScalingPlansAPI) GetScalingPlanResourceForecastDataWithContext(arg0 context.Context, arg1 *autoscalingplans.GetScalingPlanResourceForecastDataInput, arg2 ...request.Option) (*autoscalingplans.GetScalingPlanResourceForecastDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAutoScalingPlansAPIMockRecorder) UpdateScalingPlanRequest(arg0 int
 }
 
 // UpdateScalingPlanWithContext mocks base method
-func (m *MockAutoScalingPlansAPI) UpdateScalingPlanWithContext(arg0 aws.Context, arg1 *autoscalingplans.UpdateScalingPlanInput, arg2 ...request.Option) (*autoscalingplans.UpdateScalingPlanOutput, error) {
+func (m *MockAutoScalingPlansAPI) UpdateScalingPlanWithContext(arg0 context.Context, arg1 *autoscalingplans.UpdateScalingPlanInput, arg2 ...request.Option) (*autoscalingplans.UpdateScalingPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

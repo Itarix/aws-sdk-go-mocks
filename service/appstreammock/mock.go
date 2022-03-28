@@ -5,7 +5,7 @@
 package appstreammock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	appstream "github.com/aws/aws-sdk-go/service/appstream"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAppStreamAPIMockRecorder) AssociateFleetRequest(arg0 interface{}) 
 }
 
 // AssociateFleetWithContext mocks base method
-func (m *MockAppStreamAPI) AssociateFleetWithContext(arg0 aws.Context, arg1 *appstream.AssociateFleetInput, arg2 ...request.Option) (*appstream.AssociateFleetOutput, error) {
+func (m *MockAppStreamAPI) AssociateFleetWithContext(arg0 context.Context, arg1 *appstream.AssociateFleetInput, arg2 ...request.Option) (*appstream.AssociateFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAppStreamAPIMockRecorder) BatchAssociateUserStackRequest(arg0 inte
 }
 
 // BatchAssociateUserStackWithContext mocks base method
-func (m *MockAppStreamAPI) BatchAssociateUserStackWithContext(arg0 aws.Context, arg1 *appstream.BatchAssociateUserStackInput, arg2 ...request.Option) (*appstream.BatchAssociateUserStackOutput, error) {
+func (m *MockAppStreamAPI) BatchAssociateUserStackWithContext(arg0 context.Context, arg1 *appstream.BatchAssociateUserStackInput, arg2 ...request.Option) (*appstream.BatchAssociateUserStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAppStreamAPIMockRecorder) BatchDisassociateUserStackRequest(arg0 i
 }
 
 // BatchDisassociateUserStackWithContext mocks base method
-func (m *MockAppStreamAPI) BatchDisassociateUserStackWithContext(arg0 aws.Context, arg1 *appstream.BatchDisassociateUserStackInput, arg2 ...request.Option) (*appstream.BatchDisassociateUserStackOutput, error) {
+func (m *MockAppStreamAPI) BatchDisassociateUserStackWithContext(arg0 context.Context, arg1 *appstream.BatchDisassociateUserStackInput, arg2 ...request.Option) (*appstream.BatchDisassociateUserStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAppStreamAPIMockRecorder) CopyImageRequest(arg0 interface{}) *gomo
 }
 
 // CopyImageWithContext mocks base method
-func (m *MockAppStreamAPI) CopyImageWithContext(arg0 aws.Context, arg1 *appstream.CopyImageInput, arg2 ...request.Option) (*appstream.CopyImageOutput, error) {
+func (m *MockAppStreamAPI) CopyImageWithContext(arg0 context.Context, arg1 *appstream.CopyImageInput, arg2 ...request.Option) (*appstream.CopyImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateDirectoryConfigRequest(arg0 interf
 }
 
 // CreateDirectoryConfigWithContext mocks base method
-func (m *MockAppStreamAPI) CreateDirectoryConfigWithContext(arg0 aws.Context, arg1 *appstream.CreateDirectoryConfigInput, arg2 ...request.Option) (*appstream.CreateDirectoryConfigOutput, error) {
+func (m *MockAppStreamAPI) CreateDirectoryConfigWithContext(arg0 context.Context, arg1 *appstream.CreateDirectoryConfigInput, arg2 ...request.Option) (*appstream.CreateDirectoryConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateFleetRequest(arg0 interface{}) *go
 }
 
 // CreateFleetWithContext mocks base method
-func (m *MockAppStreamAPI) CreateFleetWithContext(arg0 aws.Context, arg1 *appstream.CreateFleetInput, arg2 ...request.Option) (*appstream.CreateFleetOutput, error) {
+func (m *MockAppStreamAPI) CreateFleetWithContext(arg0 context.Context, arg1 *appstream.CreateFleetInput, arg2 ...request.Option) (*appstream.CreateFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -396,7 +396,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateImageBuilderStreamingURLRequest(ar
 }
 
 // CreateImageBuilderStreamingURLWithContext mocks base method
-func (m *MockAppStreamAPI) CreateImageBuilderStreamingURLWithContext(arg0 aws.Context, arg1 *appstream.CreateImageBuilderStreamingURLInput, arg2 ...request.Option) (*appstream.CreateImageBuilderStreamingURLOutput, error) {
+func (m *MockAppStreamAPI) CreateImageBuilderStreamingURLWithContext(arg0 context.Context, arg1 *appstream.CreateImageBuilderStreamingURLInput, arg2 ...request.Option) (*appstream.CreateImageBuilderStreamingURLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateImageBuilderStreamingURLWithContex
 }
 
 // CreateImageBuilderWithContext mocks base method
-func (m *MockAppStreamAPI) CreateImageBuilderWithContext(arg0 aws.Context, arg1 *appstream.CreateImageBuilderInput, arg2 ...request.Option) (*appstream.CreateImageBuilderOutput, error) {
+func (m *MockAppStreamAPI) CreateImageBuilderWithContext(arg0 context.Context, arg1 *appstream.CreateImageBuilderInput, arg2 ...request.Option) (*appstream.CreateImageBuilderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateStackRequest(arg0 interface{}) *go
 }
 
 // CreateStackWithContext mocks base method
-func (m *MockAppStreamAPI) CreateStackWithContext(arg0 aws.Context, arg1 *appstream.CreateStackInput, arg2 ...request.Option) (*appstream.CreateStackOutput, error) {
+func (m *MockAppStreamAPI) CreateStackWithContext(arg0 context.Context, arg1 *appstream.CreateStackInput, arg2 ...request.Option) (*appstream.CreateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateStreamingURLRequest(arg0 interface
 }
 
 // CreateStreamingURLWithContext mocks base method
-func (m *MockAppStreamAPI) CreateStreamingURLWithContext(arg0 aws.Context, arg1 *appstream.CreateStreamingURLInput, arg2 ...request.Option) (*appstream.CreateStreamingURLOutput, error) {
+func (m *MockAppStreamAPI) CreateStreamingURLWithContext(arg0 context.Context, arg1 *appstream.CreateStreamingURLInput, arg2 ...request.Option) (*appstream.CreateStreamingURLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockAppStreamAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gom
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockAppStreamAPI) CreateUserWithContext(arg0 aws.Context, arg1 *appstream.CreateUserInput, arg2 ...request.Option) (*appstream.CreateUserOutput, error) {
+func (m *MockAppStreamAPI) CreateUserWithContext(arg0 context.Context, arg1 *appstream.CreateUserInput, arg2 ...request.Option) (*appstream.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteDirectoryConfigRequest(arg0 interf
 }
 
 // DeleteDirectoryConfigWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteDirectoryConfigWithContext(arg0 aws.Context, arg1 *appstream.DeleteDirectoryConfigInput, arg2 ...request.Option) (*appstream.DeleteDirectoryConfigOutput, error) {
+func (m *MockAppStreamAPI) DeleteDirectoryConfigWithContext(arg0 context.Context, arg1 *appstream.DeleteDirectoryConfigInput, arg2 ...request.Option) (*appstream.DeleteDirectoryConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteFleetRequest(arg0 interface{}) *go
 }
 
 // DeleteFleetWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteFleetWithContext(arg0 aws.Context, arg1 *appstream.DeleteFleetInput, arg2 ...request.Option) (*appstream.DeleteFleetOutput, error) {
+func (m *MockAppStreamAPI) DeleteFleetWithContext(arg0 context.Context, arg1 *appstream.DeleteFleetInput, arg2 ...request.Option) (*appstream.DeleteFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteImageBuilderRequest(arg0 interface
 }
 
 // DeleteImageBuilderWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteImageBuilderWithContext(arg0 aws.Context, arg1 *appstream.DeleteImageBuilderInput, arg2 ...request.Option) (*appstream.DeleteImageBuilderOutput, error) {
+func (m *MockAppStreamAPI) DeleteImageBuilderWithContext(arg0 context.Context, arg1 *appstream.DeleteImageBuilderInput, arg2 ...request.Option) (*appstream.DeleteImageBuilderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteImagePermissionsRequest(arg0 inter
 }
 
 // DeleteImagePermissionsWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteImagePermissionsWithContext(arg0 aws.Context, arg1 *appstream.DeleteImagePermissionsInput, arg2 ...request.Option) (*appstream.DeleteImagePermissionsOutput, error) {
+func (m *MockAppStreamAPI) DeleteImagePermissionsWithContext(arg0 context.Context, arg1 *appstream.DeleteImagePermissionsInput, arg2 ...request.Option) (*appstream.DeleteImagePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteImageRequest(arg0 interface{}) *go
 }
 
 // DeleteImageWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteImageWithContext(arg0 aws.Context, arg1 *appstream.DeleteImageInput, arg2 ...request.Option) (*appstream.DeleteImageOutput, error) {
+func (m *MockAppStreamAPI) DeleteImageWithContext(arg0 context.Context, arg1 *appstream.DeleteImageInput, arg2 ...request.Option) (*appstream.DeleteImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteStackRequest(arg0 interface{}) *go
 }
 
 // DeleteStackWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteStackWithContext(arg0 aws.Context, arg1 *appstream.DeleteStackInput, arg2 ...request.Option) (*appstream.DeleteStackOutput, error) {
+func (m *MockAppStreamAPI) DeleteStackWithContext(arg0 context.Context, arg1 *appstream.DeleteStackInput, arg2 ...request.Option) (*appstream.DeleteStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gom
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockAppStreamAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *appstream.DeleteUserInput, arg2 ...request.Option) (*appstream.DeleteUserOutput, error) {
+func (m *MockAppStreamAPI) DeleteUserWithContext(arg0 context.Context, arg1 *appstream.DeleteUserInput, arg2 ...request.Option) (*appstream.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeDirectoryConfigsRequest(arg0 int
 }
 
 // DescribeDirectoryConfigsWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeDirectoryConfigsWithContext(arg0 aws.Context, arg1 *appstream.DescribeDirectoryConfigsInput, arg2 ...request.Option) (*appstream.DescribeDirectoryConfigsOutput, error) {
+func (m *MockAppStreamAPI) DescribeDirectoryConfigsWithContext(arg0 context.Context, arg1 *appstream.DescribeDirectoryConfigsInput, arg2 ...request.Option) (*appstream.DescribeDirectoryConfigsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeFleetsRequest(arg0 interface{}) 
 }
 
 // DescribeFleetsWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeFleetsWithContext(arg0 aws.Context, arg1 *appstream.DescribeFleetsInput, arg2 ...request.Option) (*appstream.DescribeFleetsOutput, error) {
+func (m *MockAppStreamAPI) DescribeFleetsWithContext(arg0 context.Context, arg1 *appstream.DescribeFleetsInput, arg2 ...request.Option) (*appstream.DescribeFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeImageBuildersRequest(arg0 interf
 }
 
 // DescribeImageBuildersWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeImageBuildersWithContext(arg0 aws.Context, arg1 *appstream.DescribeImageBuildersInput, arg2 ...request.Option) (*appstream.DescribeImageBuildersOutput, error) {
+func (m *MockAppStreamAPI) DescribeImageBuildersWithContext(arg0 context.Context, arg1 *appstream.DescribeImageBuildersInput, arg2 ...request.Option) (*appstream.DescribeImageBuildersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1115,7 +1115,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeImagePermissionsPages(arg0, arg1
 }
 
 // DescribeImagePermissionsPagesWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeImagePermissionsPagesWithContext(arg0 aws.Context, arg1 *appstream.DescribeImagePermissionsInput, arg2 func(*appstream.DescribeImagePermissionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAppStreamAPI) DescribeImagePermissionsPagesWithContext(arg0 context.Context, arg1 *appstream.DescribeImagePermissionsInput, arg2 func(*appstream.DescribeImagePermissionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1149,7 +1149,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeImagePermissionsRequest(arg0 int
 }
 
 // DescribeImagePermissionsWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeImagePermissionsWithContext(arg0 aws.Context, arg1 *appstream.DescribeImagePermissionsInput, arg2 ...request.Option) (*appstream.DescribeImagePermissionsOutput, error) {
+func (m *MockAppStreamAPI) DescribeImagePermissionsWithContext(arg0 context.Context, arg1 *appstream.DescribeImagePermissionsInput, arg2 ...request.Option) (*appstream.DescribeImagePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1198,7 +1198,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeImagesPages(arg0, arg1 interface
 }
 
 // DescribeImagesPagesWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeImagesPagesWithContext(arg0 aws.Context, arg1 *appstream.DescribeImagesInput, arg2 func(*appstream.DescribeImagesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAppStreamAPI) DescribeImagesPagesWithContext(arg0 context.Context, arg1 *appstream.DescribeImagesInput, arg2 func(*appstream.DescribeImagesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1232,7 +1232,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeImagesRequest(arg0 interface{}) 
 }
 
 // DescribeImagesWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeImagesWithContext(arg0 aws.Context, arg1 *appstream.DescribeImagesInput, arg2 ...request.Option) (*appstream.DescribeImagesOutput, error) {
+func (m *MockAppStreamAPI) DescribeImagesWithContext(arg0 context.Context, arg1 *appstream.DescribeImagesInput, arg2 ...request.Option) (*appstream.DescribeImagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1282,7 +1282,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeSessionsRequest(arg0 interface{}
 }
 
 // DescribeSessionsWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeSessionsWithContext(arg0 aws.Context, arg1 *appstream.DescribeSessionsInput, arg2 ...request.Option) (*appstream.DescribeSessionsOutput, error) {
+func (m *MockAppStreamAPI) DescribeSessionsWithContext(arg0 context.Context, arg1 *appstream.DescribeSessionsInput, arg2 ...request.Option) (*appstream.DescribeSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1332,7 +1332,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeStacksRequest(arg0 interface{}) 
 }
 
 // DescribeStacksWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeStacksWithContext(arg0 aws.Context, arg1 *appstream.DescribeStacksInput, arg2 ...request.Option) (*appstream.DescribeStacksOutput, error) {
+func (m *MockAppStreamAPI) DescribeStacksWithContext(arg0 context.Context, arg1 *appstream.DescribeStacksInput, arg2 ...request.Option) (*appstream.DescribeStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1382,7 +1382,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeUserStackAssociationsRequest(arg
 }
 
 // DescribeUserStackAssociationsWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeUserStackAssociationsWithContext(arg0 aws.Context, arg1 *appstream.DescribeUserStackAssociationsInput, arg2 ...request.Option) (*appstream.DescribeUserStackAssociationsOutput, error) {
+func (m *MockAppStreamAPI) DescribeUserStackAssociationsWithContext(arg0 context.Context, arg1 *appstream.DescribeUserStackAssociationsInput, arg2 ...request.Option) (*appstream.DescribeUserStackAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1432,7 +1432,7 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeUsersRequest(arg0 interface{}) *
 }
 
 // DescribeUsersWithContext mocks base method
-func (m *MockAppStreamAPI) DescribeUsersWithContext(arg0 aws.Context, arg1 *appstream.DescribeUsersInput, arg2 ...request.Option) (*appstream.DescribeUsersOutput, error) {
+func (m *MockAppStreamAPI) DescribeUsersWithContext(arg0 context.Context, arg1 *appstream.DescribeUsersInput, arg2 ...request.Option) (*appstream.DescribeUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1482,7 +1482,7 @@ func (mr *MockAppStreamAPIMockRecorder) DisableUserRequest(arg0 interface{}) *go
 }
 
 // DisableUserWithContext mocks base method
-func (m *MockAppStreamAPI) DisableUserWithContext(arg0 aws.Context, arg1 *appstream.DisableUserInput, arg2 ...request.Option) (*appstream.DisableUserOutput, error) {
+func (m *MockAppStreamAPI) DisableUserWithContext(arg0 context.Context, arg1 *appstream.DisableUserInput, arg2 ...request.Option) (*appstream.DisableUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1532,7 +1532,7 @@ func (mr *MockAppStreamAPIMockRecorder) DisassociateFleetRequest(arg0 interface{
 }
 
 // DisassociateFleetWithContext mocks base method
-func (m *MockAppStreamAPI) DisassociateFleetWithContext(arg0 aws.Context, arg1 *appstream.DisassociateFleetInput, arg2 ...request.Option) (*appstream.DisassociateFleetOutput, error) {
+func (m *MockAppStreamAPI) DisassociateFleetWithContext(arg0 context.Context, arg1 *appstream.DisassociateFleetInput, arg2 ...request.Option) (*appstream.DisassociateFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1582,7 +1582,7 @@ func (mr *MockAppStreamAPIMockRecorder) EnableUserRequest(arg0 interface{}) *gom
 }
 
 // EnableUserWithContext mocks base method
-func (m *MockAppStreamAPI) EnableUserWithContext(arg0 aws.Context, arg1 *appstream.EnableUserInput, arg2 ...request.Option) (*appstream.EnableUserOutput, error) {
+func (m *MockAppStreamAPI) EnableUserWithContext(arg0 context.Context, arg1 *appstream.EnableUserInput, arg2 ...request.Option) (*appstream.EnableUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1632,7 +1632,7 @@ func (mr *MockAppStreamAPIMockRecorder) ExpireSessionRequest(arg0 interface{}) *
 }
 
 // ExpireSessionWithContext mocks base method
-func (m *MockAppStreamAPI) ExpireSessionWithContext(arg0 aws.Context, arg1 *appstream.ExpireSessionInput, arg2 ...request.Option) (*appstream.ExpireSessionOutput, error) {
+func (m *MockAppStreamAPI) ExpireSessionWithContext(arg0 context.Context, arg1 *appstream.ExpireSessionInput, arg2 ...request.Option) (*appstream.ExpireSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1682,7 +1682,7 @@ func (mr *MockAppStreamAPIMockRecorder) ListAssociatedFleetsRequest(arg0 interfa
 }
 
 // ListAssociatedFleetsWithContext mocks base method
-func (m *MockAppStreamAPI) ListAssociatedFleetsWithContext(arg0 aws.Context, arg1 *appstream.ListAssociatedFleetsInput, arg2 ...request.Option) (*appstream.ListAssociatedFleetsOutput, error) {
+func (m *MockAppStreamAPI) ListAssociatedFleetsWithContext(arg0 context.Context, arg1 *appstream.ListAssociatedFleetsInput, arg2 ...request.Option) (*appstream.ListAssociatedFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1732,7 +1732,7 @@ func (mr *MockAppStreamAPIMockRecorder) ListAssociatedStacksRequest(arg0 interfa
 }
 
 // ListAssociatedStacksWithContext mocks base method
-func (m *MockAppStreamAPI) ListAssociatedStacksWithContext(arg0 aws.Context, arg1 *appstream.ListAssociatedStacksInput, arg2 ...request.Option) (*appstream.ListAssociatedStacksOutput, error) {
+func (m *MockAppStreamAPI) ListAssociatedStacksWithContext(arg0 context.Context, arg1 *appstream.ListAssociatedStacksInput, arg2 ...request.Option) (*appstream.ListAssociatedStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1782,7 +1782,7 @@ func (mr *MockAppStreamAPIMockRecorder) ListTagsForResourceRequest(arg0 interfac
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockAppStreamAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *appstream.ListTagsForResourceInput, arg2 ...request.Option) (*appstream.ListTagsForResourceOutput, error) {
+func (m *MockAppStreamAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *appstream.ListTagsForResourceInput, arg2 ...request.Option) (*appstream.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1832,7 +1832,7 @@ func (mr *MockAppStreamAPIMockRecorder) StartFleetRequest(arg0 interface{}) *gom
 }
 
 // StartFleetWithContext mocks base method
-func (m *MockAppStreamAPI) StartFleetWithContext(arg0 aws.Context, arg1 *appstream.StartFleetInput, arg2 ...request.Option) (*appstream.StartFleetOutput, error) {
+func (m *MockAppStreamAPI) StartFleetWithContext(arg0 context.Context, arg1 *appstream.StartFleetInput, arg2 ...request.Option) (*appstream.StartFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1882,7 +1882,7 @@ func (mr *MockAppStreamAPIMockRecorder) StartImageBuilderRequest(arg0 interface{
 }
 
 // StartImageBuilderWithContext mocks base method
-func (m *MockAppStreamAPI) StartImageBuilderWithContext(arg0 aws.Context, arg1 *appstream.StartImageBuilderInput, arg2 ...request.Option) (*appstream.StartImageBuilderOutput, error) {
+func (m *MockAppStreamAPI) StartImageBuilderWithContext(arg0 context.Context, arg1 *appstream.StartImageBuilderInput, arg2 ...request.Option) (*appstream.StartImageBuilderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1932,7 +1932,7 @@ func (mr *MockAppStreamAPIMockRecorder) StopFleetRequest(arg0 interface{}) *gomo
 }
 
 // StopFleetWithContext mocks base method
-func (m *MockAppStreamAPI) StopFleetWithContext(arg0 aws.Context, arg1 *appstream.StopFleetInput, arg2 ...request.Option) (*appstream.StopFleetOutput, error) {
+func (m *MockAppStreamAPI) StopFleetWithContext(arg0 context.Context, arg1 *appstream.StopFleetInput, arg2 ...request.Option) (*appstream.StopFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1982,7 +1982,7 @@ func (mr *MockAppStreamAPIMockRecorder) StopImageBuilderRequest(arg0 interface{}
 }
 
 // StopImageBuilderWithContext mocks base method
-func (m *MockAppStreamAPI) StopImageBuilderWithContext(arg0 aws.Context, arg1 *appstream.StopImageBuilderInput, arg2 ...request.Option) (*appstream.StopImageBuilderOutput, error) {
+func (m *MockAppStreamAPI) StopImageBuilderWithContext(arg0 context.Context, arg1 *appstream.StopImageBuilderInput, arg2 ...request.Option) (*appstream.StopImageBuilderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2032,7 +2032,7 @@ func (mr *MockAppStreamAPIMockRecorder) TagResourceRequest(arg0 interface{}) *go
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockAppStreamAPI) TagResourceWithContext(arg0 aws.Context, arg1 *appstream.TagResourceInput, arg2 ...request.Option) (*appstream.TagResourceOutput, error) {
+func (m *MockAppStreamAPI) TagResourceWithContext(arg0 context.Context, arg1 *appstream.TagResourceInput, arg2 ...request.Option) (*appstream.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2082,7 +2082,7 @@ func (mr *MockAppStreamAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockAppStreamAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *appstream.UntagResourceInput, arg2 ...request.Option) (*appstream.UntagResourceOutput, error) {
+func (m *MockAppStreamAPI) UntagResourceWithContext(arg0 context.Context, arg1 *appstream.UntagResourceInput, arg2 ...request.Option) (*appstream.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2132,7 +2132,7 @@ func (mr *MockAppStreamAPIMockRecorder) UpdateDirectoryConfigRequest(arg0 interf
 }
 
 // UpdateDirectoryConfigWithContext mocks base method
-func (m *MockAppStreamAPI) UpdateDirectoryConfigWithContext(arg0 aws.Context, arg1 *appstream.UpdateDirectoryConfigInput, arg2 ...request.Option) (*appstream.UpdateDirectoryConfigOutput, error) {
+func (m *MockAppStreamAPI) UpdateDirectoryConfigWithContext(arg0 context.Context, arg1 *appstream.UpdateDirectoryConfigInput, arg2 ...request.Option) (*appstream.UpdateDirectoryConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2182,7 +2182,7 @@ func (mr *MockAppStreamAPIMockRecorder) UpdateFleetRequest(arg0 interface{}) *go
 }
 
 // UpdateFleetWithContext mocks base method
-func (m *MockAppStreamAPI) UpdateFleetWithContext(arg0 aws.Context, arg1 *appstream.UpdateFleetInput, arg2 ...request.Option) (*appstream.UpdateFleetOutput, error) {
+func (m *MockAppStreamAPI) UpdateFleetWithContext(arg0 context.Context, arg1 *appstream.UpdateFleetInput, arg2 ...request.Option) (*appstream.UpdateFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2232,7 +2232,7 @@ func (mr *MockAppStreamAPIMockRecorder) UpdateImagePermissionsRequest(arg0 inter
 }
 
 // UpdateImagePermissionsWithContext mocks base method
-func (m *MockAppStreamAPI) UpdateImagePermissionsWithContext(arg0 aws.Context, arg1 *appstream.UpdateImagePermissionsInput, arg2 ...request.Option) (*appstream.UpdateImagePermissionsOutput, error) {
+func (m *MockAppStreamAPI) UpdateImagePermissionsWithContext(arg0 context.Context, arg1 *appstream.UpdateImagePermissionsInput, arg2 ...request.Option) (*appstream.UpdateImagePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2282,7 +2282,7 @@ func (mr *MockAppStreamAPIMockRecorder) UpdateStackRequest(arg0 interface{}) *go
 }
 
 // UpdateStackWithContext mocks base method
-func (m *MockAppStreamAPI) UpdateStackWithContext(arg0 aws.Context, arg1 *appstream.UpdateStackInput, arg2 ...request.Option) (*appstream.UpdateStackOutput, error) {
+func (m *MockAppStreamAPI) UpdateStackWithContext(arg0 context.Context, arg1 *appstream.UpdateStackInput, arg2 ...request.Option) (*appstream.UpdateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2316,7 +2316,7 @@ func (mr *MockAppStreamAPIMockRecorder) WaitUntilFleetStarted(arg0 interface{}) 
 }
 
 // WaitUntilFleetStartedWithContext mocks base method
-func (m *MockAppStreamAPI) WaitUntilFleetStartedWithContext(arg0 aws.Context, arg1 *appstream.DescribeFleetsInput, arg2 ...request.WaiterOption) error {
+func (m *MockAppStreamAPI) WaitUntilFleetStartedWithContext(arg0 context.Context, arg1 *appstream.DescribeFleetsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2349,7 +2349,7 @@ func (mr *MockAppStreamAPIMockRecorder) WaitUntilFleetStopped(arg0 interface{}) 
 }
 
 // WaitUntilFleetStoppedWithContext mocks base method
-func (m *MockAppStreamAPI) WaitUntilFleetStoppedWithContext(arg0 aws.Context, arg1 *appstream.DescribeFleetsInput, arg2 ...request.WaiterOption) error {
+func (m *MockAppStreamAPI) WaitUntilFleetStoppedWithContext(arg0 context.Context, arg1 *appstream.DescribeFleetsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

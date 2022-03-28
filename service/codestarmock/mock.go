@@ -5,7 +5,7 @@
 package codestarmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	codestar "github.com/aws/aws-sdk-go/service/codestar"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCodeStarAPIMockRecorder) AssociateTeamMemberRequest(arg0 interface
 }
 
 // AssociateTeamMemberWithContext mocks base method
-func (m *MockCodeStarAPI) AssociateTeamMemberWithContext(arg0 aws.Context, arg1 *codestar.AssociateTeamMemberInput, arg2 ...request.Option) (*codestar.AssociateTeamMemberOutput, error) {
+func (m *MockCodeStarAPI) AssociateTeamMemberWithContext(arg0 context.Context, arg1 *codestar.AssociateTeamMemberInput, arg2 ...request.Option) (*codestar.AssociateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCodeStarAPIMockRecorder) CreateProjectRequest(arg0 interface{}) *g
 }
 
 // CreateProjectWithContext mocks base method
-func (m *MockCodeStarAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *codestar.CreateProjectInput, arg2 ...request.Option) (*codestar.CreateProjectOutput, error) {
+func (m *MockCodeStarAPI) CreateProjectWithContext(arg0 context.Context, arg1 *codestar.CreateProjectInput, arg2 ...request.Option) (*codestar.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCodeStarAPIMockRecorder) CreateUserProfileRequest(arg0 interface{}
 }
 
 // CreateUserProfileWithContext mocks base method
-func (m *MockCodeStarAPI) CreateUserProfileWithContext(arg0 aws.Context, arg1 *codestar.CreateUserProfileInput, arg2 ...request.Option) (*codestar.CreateUserProfileOutput, error) {
+func (m *MockCodeStarAPI) CreateUserProfileWithContext(arg0 context.Context, arg1 *codestar.CreateUserProfileInput, arg2 ...request.Option) (*codestar.CreateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCodeStarAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) *g
 }
 
 // DeleteProjectWithContext mocks base method
-func (m *MockCodeStarAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *codestar.DeleteProjectInput, arg2 ...request.Option) (*codestar.DeleteProjectOutput, error) {
+func (m *MockCodeStarAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *codestar.DeleteProjectInput, arg2 ...request.Option) (*codestar.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCodeStarAPIMockRecorder) DeleteUserProfileRequest(arg0 interface{}
 }
 
 // DeleteUserProfileWithContext mocks base method
-func (m *MockCodeStarAPI) DeleteUserProfileWithContext(arg0 aws.Context, arg1 *codestar.DeleteUserProfileInput, arg2 ...request.Option) (*codestar.DeleteUserProfileOutput, error) {
+func (m *MockCodeStarAPI) DeleteUserProfileWithContext(arg0 context.Context, arg1 *codestar.DeleteUserProfileInput, arg2 ...request.Option) (*codestar.DeleteUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCodeStarAPIMockRecorder) DescribeProjectRequest(arg0 interface{}) 
 }
 
 // DescribeProjectWithContext mocks base method
-func (m *MockCodeStarAPI) DescribeProjectWithContext(arg0 aws.Context, arg1 *codestar.DescribeProjectInput, arg2 ...request.Option) (*codestar.DescribeProjectOutput, error) {
+func (m *MockCodeStarAPI) DescribeProjectWithContext(arg0 context.Context, arg1 *codestar.DescribeProjectInput, arg2 ...request.Option) (*codestar.DescribeProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCodeStarAPIMockRecorder) DescribeUserProfileRequest(arg0 interface
 }
 
 // DescribeUserProfileWithContext mocks base method
-func (m *MockCodeStarAPI) DescribeUserProfileWithContext(arg0 aws.Context, arg1 *codestar.DescribeUserProfileInput, arg2 ...request.Option) (*codestar.DescribeUserProfileOutput, error) {
+func (m *MockCodeStarAPI) DescribeUserProfileWithContext(arg0 context.Context, arg1 *codestar.DescribeUserProfileInput, arg2 ...request.Option) (*codestar.DescribeUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCodeStarAPIMockRecorder) DisassociateTeamMemberRequest(arg0 interf
 }
 
 // DisassociateTeamMemberWithContext mocks base method
-func (m *MockCodeStarAPI) DisassociateTeamMemberWithContext(arg0 aws.Context, arg1 *codestar.DisassociateTeamMemberInput, arg2 ...request.Option) (*codestar.DisassociateTeamMemberOutput, error) {
+func (m *MockCodeStarAPI) DisassociateTeamMemberWithContext(arg0 context.Context, arg1 *codestar.DisassociateTeamMemberInput, arg2 ...request.Option) (*codestar.DisassociateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCodeStarAPIMockRecorder) ListProjectsRequest(arg0 interface{}) *go
 }
 
 // ListProjectsWithContext mocks base method
-func (m *MockCodeStarAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *codestar.ListProjectsInput, arg2 ...request.Option) (*codestar.ListProjectsOutput, error) {
+func (m *MockCodeStarAPI) ListProjectsWithContext(arg0 context.Context, arg1 *codestar.ListProjectsInput, arg2 ...request.Option) (*codestar.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCodeStarAPIMockRecorder) ListResourcesRequest(arg0 interface{}) *g
 }
 
 // ListResourcesWithContext mocks base method
-func (m *MockCodeStarAPI) ListResourcesWithContext(arg0 aws.Context, arg1 *codestar.ListResourcesInput, arg2 ...request.Option) (*codestar.ListResourcesOutput, error) {
+func (m *MockCodeStarAPI) ListResourcesWithContext(arg0 context.Context, arg1 *codestar.ListResourcesInput, arg2 ...request.Option) (*codestar.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCodeStarAPIMockRecorder) ListTagsForProjectRequest(arg0 interface{
 }
 
 // ListTagsForProjectWithContext mocks base method
-func (m *MockCodeStarAPI) ListTagsForProjectWithContext(arg0 aws.Context, arg1 *codestar.ListTagsForProjectInput, arg2 ...request.Option) (*codestar.ListTagsForProjectOutput, error) {
+func (m *MockCodeStarAPI) ListTagsForProjectWithContext(arg0 context.Context, arg1 *codestar.ListTagsForProjectInput, arg2 ...request.Option) (*codestar.ListTagsForProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCodeStarAPIMockRecorder) ListTeamMembersRequest(arg0 interface{}) 
 }
 
 // ListTeamMembersWithContext mocks base method
-func (m *MockCodeStarAPI) ListTeamMembersWithContext(arg0 aws.Context, arg1 *codestar.ListTeamMembersInput, arg2 ...request.Option) (*codestar.ListTeamMembersOutput, error) {
+func (m *MockCodeStarAPI) ListTeamMembersWithContext(arg0 context.Context, arg1 *codestar.ListTeamMembersInput, arg2 ...request.Option) (*codestar.ListTeamMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCodeStarAPIMockRecorder) ListUserProfilesRequest(arg0 interface{})
 }
 
 // ListUserProfilesWithContext mocks base method
-func (m *MockCodeStarAPI) ListUserProfilesWithContext(arg0 aws.Context, arg1 *codestar.ListUserProfilesInput, arg2 ...request.Option) (*codestar.ListUserProfilesOutput, error) {
+func (m *MockCodeStarAPI) ListUserProfilesWithContext(arg0 context.Context, arg1 *codestar.ListUserProfilesInput, arg2 ...request.Option) (*codestar.ListUserProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCodeStarAPIMockRecorder) TagProjectRequest(arg0 interface{}) *gomo
 }
 
 // TagProjectWithContext mocks base method
-func (m *MockCodeStarAPI) TagProjectWithContext(arg0 aws.Context, arg1 *codestar.TagProjectInput, arg2 ...request.Option) (*codestar.TagProjectOutput, error) {
+func (m *MockCodeStarAPI) TagProjectWithContext(arg0 context.Context, arg1 *codestar.TagProjectInput, arg2 ...request.Option) (*codestar.TagProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCodeStarAPIMockRecorder) UntagProjectRequest(arg0 interface{}) *go
 }
 
 // UntagProjectWithContext mocks base method
-func (m *MockCodeStarAPI) UntagProjectWithContext(arg0 aws.Context, arg1 *codestar.UntagProjectInput, arg2 ...request.Option) (*codestar.UntagProjectOutput, error) {
+func (m *MockCodeStarAPI) UntagProjectWithContext(arg0 context.Context, arg1 *codestar.UntagProjectInput, arg2 ...request.Option) (*codestar.UntagProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCodeStarAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) *g
 }
 
 // UpdateProjectWithContext mocks base method
-func (m *MockCodeStarAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *codestar.UpdateProjectInput, arg2 ...request.Option) (*codestar.UpdateProjectOutput, error) {
+func (m *MockCodeStarAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *codestar.UpdateProjectInput, arg2 ...request.Option) (*codestar.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCodeStarAPIMockRecorder) UpdateTeamMemberRequest(arg0 interface{})
 }
 
 // UpdateTeamMemberWithContext mocks base method
-func (m *MockCodeStarAPI) UpdateTeamMemberWithContext(arg0 aws.Context, arg1 *codestar.UpdateTeamMemberInput, arg2 ...request.Option) (*codestar.UpdateTeamMemberOutput, error) {
+func (m *MockCodeStarAPI) UpdateTeamMemberWithContext(arg0 context.Context, arg1 *codestar.UpdateTeamMemberInput, arg2 ...request.Option) (*codestar.UpdateTeamMemberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCodeStarAPIMockRecorder) UpdateUserProfileRequest(arg0 interface{}
 }
 
 // UpdateUserProfileWithContext mocks base method
-func (m *MockCodeStarAPI) UpdateUserProfileWithContext(arg0 aws.Context, arg1 *codestar.UpdateUserProfileInput, arg2 ...request.Option) (*codestar.UpdateUserProfileOutput, error) {
+func (m *MockCodeStarAPI) UpdateUserProfileWithContext(arg0 context.Context, arg1 *codestar.UpdateUserProfileInput, arg2 ...request.Option) (*codestar.UpdateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

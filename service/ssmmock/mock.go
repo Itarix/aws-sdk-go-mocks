@@ -5,7 +5,7 @@
 package ssmmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	ssm "github.com/aws/aws-sdk-go/service/ssm"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSSMAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{}) *go
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockSSMAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *ssm.AddTagsToResourceInput, arg2 ...request.Option) (*ssm.AddTagsToResourceOutput, error) {
+func (m *MockSSMAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *ssm.AddTagsToResourceInput, arg2 ...request.Option) (*ssm.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSSMAPIMockRecorder) CancelCommandRequest(arg0 interface{}) *gomock
 }
 
 // CancelCommandWithContext mocks base method
-func (m *MockSSMAPI) CancelCommandWithContext(arg0 aws.Context, arg1 *ssm.CancelCommandInput, arg2 ...request.Option) (*ssm.CancelCommandOutput, error) {
+func (m *MockSSMAPI) CancelCommandWithContext(arg0 context.Context, arg1 *ssm.CancelCommandInput, arg2 ...request.Option) (*ssm.CancelCommandOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSSMAPIMockRecorder) CancelMaintenanceWindowExecutionRequest(arg0 i
 }
 
 // CancelMaintenanceWindowExecutionWithContext mocks base method
-func (m *MockSSMAPI) CancelMaintenanceWindowExecutionWithContext(arg0 aws.Context, arg1 *ssm.CancelMaintenanceWindowExecutionInput, arg2 ...request.Option) (*ssm.CancelMaintenanceWindowExecutionOutput, error) {
+func (m *MockSSMAPI) CancelMaintenanceWindowExecutionWithContext(arg0 context.Context, arg1 *ssm.CancelMaintenanceWindowExecutionInput, arg2 ...request.Option) (*ssm.CancelMaintenanceWindowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSSMAPIMockRecorder) CreateActivationRequest(arg0 interface{}) *gom
 }
 
 // CreateActivationWithContext mocks base method
-func (m *MockSSMAPI) CreateActivationWithContext(arg0 aws.Context, arg1 *ssm.CreateActivationInput, arg2 ...request.Option) (*ssm.CreateActivationOutput, error) {
+func (m *MockSSMAPI) CreateActivationWithContext(arg0 context.Context, arg1 *ssm.CreateActivationInput, arg2 ...request.Option) (*ssm.CreateActivationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -281,7 +281,7 @@ func (mr *MockSSMAPIMockRecorder) CreateAssociationBatchRequest(arg0 interface{}
 }
 
 // CreateAssociationBatchWithContext mocks base method
-func (m *MockSSMAPI) CreateAssociationBatchWithContext(arg0 aws.Context, arg1 *ssm.CreateAssociationBatchInput, arg2 ...request.Option) (*ssm.CreateAssociationBatchOutput, error) {
+func (m *MockSSMAPI) CreateAssociationBatchWithContext(arg0 context.Context, arg1 *ssm.CreateAssociationBatchInput, arg2 ...request.Option) (*ssm.CreateAssociationBatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSSMAPIMockRecorder) CreateAssociationRequest(arg0 interface{}) *go
 }
 
 // CreateAssociationWithContext mocks base method
-func (m *MockSSMAPI) CreateAssociationWithContext(arg0 aws.Context, arg1 *ssm.CreateAssociationInput, arg2 ...request.Option) (*ssm.CreateAssociationOutput, error) {
+func (m *MockSSMAPI) CreateAssociationWithContext(arg0 context.Context, arg1 *ssm.CreateAssociationInput, arg2 ...request.Option) (*ssm.CreateAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSSMAPIMockRecorder) CreateDocumentRequest(arg0 interface{}) *gomoc
 }
 
 // CreateDocumentWithContext mocks base method
-func (m *MockSSMAPI) CreateDocumentWithContext(arg0 aws.Context, arg1 *ssm.CreateDocumentInput, arg2 ...request.Option) (*ssm.CreateDocumentOutput, error) {
+func (m *MockSSMAPI) CreateDocumentWithContext(arg0 context.Context, arg1 *ssm.CreateDocumentInput, arg2 ...request.Option) (*ssm.CreateDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSSMAPIMockRecorder) CreateMaintenanceWindowRequest(arg0 interface{
 }
 
 // CreateMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) CreateMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.CreateMaintenanceWindowInput, arg2 ...request.Option) (*ssm.CreateMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) CreateMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.CreateMaintenanceWindowInput, arg2 ...request.Option) (*ssm.CreateMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSSMAPIMockRecorder) CreatePatchBaselineRequest(arg0 interface{}) *
 }
 
 // CreatePatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) CreatePatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.CreatePatchBaselineInput, arg2 ...request.Option) (*ssm.CreatePatchBaselineOutput, error) {
+func (m *MockSSMAPI) CreatePatchBaselineWithContext(arg0 context.Context, arg1 *ssm.CreatePatchBaselineInput, arg2 ...request.Option) (*ssm.CreatePatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSSMAPIMockRecorder) CreateResourceDataSyncRequest(arg0 interface{}
 }
 
 // CreateResourceDataSyncWithContext mocks base method
-func (m *MockSSMAPI) CreateResourceDataSyncWithContext(arg0 aws.Context, arg1 *ssm.CreateResourceDataSyncInput, arg2 ...request.Option) (*ssm.CreateResourceDataSyncOutput, error) {
+func (m *MockSSMAPI) CreateResourceDataSyncWithContext(arg0 context.Context, arg1 *ssm.CreateResourceDataSyncInput, arg2 ...request.Option) (*ssm.CreateResourceDataSyncOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteActivationRequest(arg0 interface{}) *gom
 }
 
 // DeleteActivationWithContext mocks base method
-func (m *MockSSMAPI) DeleteActivationWithContext(arg0 aws.Context, arg1 *ssm.DeleteActivationInput, arg2 ...request.Option) (*ssm.DeleteActivationOutput, error) {
+func (m *MockSSMAPI) DeleteActivationWithContext(arg0 context.Context, arg1 *ssm.DeleteActivationInput, arg2 ...request.Option) (*ssm.DeleteActivationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteAssociationRequest(arg0 interface{}) *go
 }
 
 // DeleteAssociationWithContext mocks base method
-func (m *MockSSMAPI) DeleteAssociationWithContext(arg0 aws.Context, arg1 *ssm.DeleteAssociationInput, arg2 ...request.Option) (*ssm.DeleteAssociationOutput, error) {
+func (m *MockSSMAPI) DeleteAssociationWithContext(arg0 context.Context, arg1 *ssm.DeleteAssociationInput, arg2 ...request.Option) (*ssm.DeleteAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteDocumentRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteDocumentWithContext mocks base method
-func (m *MockSSMAPI) DeleteDocumentWithContext(arg0 aws.Context, arg1 *ssm.DeleteDocumentInput, arg2 ...request.Option) (*ssm.DeleteDocumentOutput, error) {
+func (m *MockSSMAPI) DeleteDocumentWithContext(arg0 context.Context, arg1 *ssm.DeleteDocumentInput, arg2 ...request.Option) (*ssm.DeleteDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteInventoryRequest(arg0 interface{}) *gomo
 }
 
 // DeleteInventoryWithContext mocks base method
-func (m *MockSSMAPI) DeleteInventoryWithContext(arg0 aws.Context, arg1 *ssm.DeleteInventoryInput, arg2 ...request.Option) (*ssm.DeleteInventoryOutput, error) {
+func (m *MockSSMAPI) DeleteInventoryWithContext(arg0 context.Context, arg1 *ssm.DeleteInventoryInput, arg2 ...request.Option) (*ssm.DeleteInventoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteMaintenanceWindowRequest(arg0 interface{
 }
 
 // DeleteMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) DeleteMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.DeleteMaintenanceWindowInput, arg2 ...request.Option) (*ssm.DeleteMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) DeleteMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.DeleteMaintenanceWindowInput, arg2 ...request.Option) (*ssm.DeleteMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteParameterRequest(arg0 interface{}) *gomo
 }
 
 // DeleteParameterWithContext mocks base method
-func (m *MockSSMAPI) DeleteParameterWithContext(arg0 aws.Context, arg1 *ssm.DeleteParameterInput, arg2 ...request.Option) (*ssm.DeleteParameterOutput, error) {
+func (m *MockSSMAPI) DeleteParameterWithContext(arg0 context.Context, arg1 *ssm.DeleteParameterInput, arg2 ...request.Option) (*ssm.DeleteParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteParametersRequest(arg0 interface{}) *gom
 }
 
 // DeleteParametersWithContext mocks base method
-func (m *MockSSMAPI) DeleteParametersWithContext(arg0 aws.Context, arg1 *ssm.DeleteParametersInput, arg2 ...request.Option) (*ssm.DeleteParametersOutput, error) {
+func (m *MockSSMAPI) DeleteParametersWithContext(arg0 context.Context, arg1 *ssm.DeleteParametersInput, arg2 ...request.Option) (*ssm.DeleteParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockSSMAPIMockRecorder) DeletePatchBaselineRequest(arg0 interface{}) *
 }
 
 // DeletePatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) DeletePatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.DeletePatchBaselineInput, arg2 ...request.Option) (*ssm.DeletePatchBaselineOutput, error) {
+func (m *MockSSMAPI) DeletePatchBaselineWithContext(arg0 context.Context, arg1 *ssm.DeletePatchBaselineInput, arg2 ...request.Option) (*ssm.DeletePatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockSSMAPIMockRecorder) DeleteResourceDataSyncRequest(arg0 interface{}
 }
 
 // DeleteResourceDataSyncWithContext mocks base method
-func (m *MockSSMAPI) DeleteResourceDataSyncWithContext(arg0 aws.Context, arg1 *ssm.DeleteResourceDataSyncInput, arg2 ...request.Option) (*ssm.DeleteResourceDataSyncOutput, error) {
+func (m *MockSSMAPI) DeleteResourceDataSyncWithContext(arg0 context.Context, arg1 *ssm.DeleteResourceDataSyncInput, arg2 ...request.Option) (*ssm.DeleteResourceDataSyncOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockSSMAPIMockRecorder) DeregisterManagedInstanceRequest(arg0 interfac
 }
 
 // DeregisterManagedInstanceWithContext mocks base method
-func (m *MockSSMAPI) DeregisterManagedInstanceWithContext(arg0 aws.Context, arg1 *ssm.DeregisterManagedInstanceInput, arg2 ...request.Option) (*ssm.DeregisterManagedInstanceOutput, error) {
+func (m *MockSSMAPI) DeregisterManagedInstanceWithContext(arg0 context.Context, arg1 *ssm.DeregisterManagedInstanceInput, arg2 ...request.Option) (*ssm.DeregisterManagedInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockSSMAPIMockRecorder) DeregisterPatchBaselineForPatchGroupRequest(ar
 }
 
 // DeregisterPatchBaselineForPatchGroupWithContext mocks base method
-func (m *MockSSMAPI) DeregisterPatchBaselineForPatchGroupWithContext(arg0 aws.Context, arg1 *ssm.DeregisterPatchBaselineForPatchGroupInput, arg2 ...request.Option) (*ssm.DeregisterPatchBaselineForPatchGroupOutput, error) {
+func (m *MockSSMAPI) DeregisterPatchBaselineForPatchGroupWithContext(arg0 context.Context, arg1 *ssm.DeregisterPatchBaselineForPatchGroupInput, arg2 ...request.Option) (*ssm.DeregisterPatchBaselineForPatchGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockSSMAPIMockRecorder) DeregisterTargetFromMaintenanceWindowRequest(a
 }
 
 // DeregisterTargetFromMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) DeregisterTargetFromMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.DeregisterTargetFromMaintenanceWindowInput, arg2 ...request.Option) (*ssm.DeregisterTargetFromMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) DeregisterTargetFromMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.DeregisterTargetFromMaintenanceWindowInput, arg2 ...request.Option) (*ssm.DeregisterTargetFromMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockSSMAPIMockRecorder) DeregisterTaskFromMaintenanceWindowRequest(arg
 }
 
 // DeregisterTaskFromMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) DeregisterTaskFromMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.DeregisterTaskFromMaintenanceWindowInput, arg2 ...request.Option) (*ssm.DeregisterTaskFromMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) DeregisterTaskFromMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.DeregisterTaskFromMaintenanceWindowInput, arg2 ...request.Option) (*ssm.DeregisterTaskFromMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeActivationsPages(arg0, arg1 interface{
 }
 
 // DescribeActivationsPagesWithContext mocks base method
-func (m *MockSSMAPI) DescribeActivationsPagesWithContext(arg0 aws.Context, arg1 *ssm.DescribeActivationsInput, arg2 func(*ssm.DescribeActivationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) DescribeActivationsPagesWithContext(arg0 context.Context, arg1 *ssm.DescribeActivationsInput, arg2 func(*ssm.DescribeActivationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1249,7 +1249,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeActivationsRequest(arg0 interface{}) *
 }
 
 // DescribeActivationsWithContext mocks base method
-func (m *MockSSMAPI) DescribeActivationsWithContext(arg0 aws.Context, arg1 *ssm.DescribeActivationsInput, arg2 ...request.Option) (*ssm.DescribeActivationsOutput, error) {
+func (m *MockSSMAPI) DescribeActivationsWithContext(arg0 context.Context, arg1 *ssm.DescribeActivationsInput, arg2 ...request.Option) (*ssm.DescribeActivationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1314,7 +1314,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeAssociationExecutionTargetsRequest(arg
 }
 
 // DescribeAssociationExecutionTargetsWithContext mocks base method
-func (m *MockSSMAPI) DescribeAssociationExecutionTargetsWithContext(arg0 aws.Context, arg1 *ssm.DescribeAssociationExecutionTargetsInput, arg2 ...request.Option) (*ssm.DescribeAssociationExecutionTargetsOutput, error) {
+func (m *MockSSMAPI) DescribeAssociationExecutionTargetsWithContext(arg0 context.Context, arg1 *ssm.DescribeAssociationExecutionTargetsInput, arg2 ...request.Option) (*ssm.DescribeAssociationExecutionTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1364,7 +1364,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeAssociationExecutionsRequest(arg0 inte
 }
 
 // DescribeAssociationExecutionsWithContext mocks base method
-func (m *MockSSMAPI) DescribeAssociationExecutionsWithContext(arg0 aws.Context, arg1 *ssm.DescribeAssociationExecutionsInput, arg2 ...request.Option) (*ssm.DescribeAssociationExecutionsOutput, error) {
+func (m *MockSSMAPI) DescribeAssociationExecutionsWithContext(arg0 context.Context, arg1 *ssm.DescribeAssociationExecutionsInput, arg2 ...request.Option) (*ssm.DescribeAssociationExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1399,7 +1399,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeAssociationRequest(arg0 interface{}) *
 }
 
 // DescribeAssociationWithContext mocks base method
-func (m *MockSSMAPI) DescribeAssociationWithContext(arg0 aws.Context, arg1 *ssm.DescribeAssociationInput, arg2 ...request.Option) (*ssm.DescribeAssociationOutput, error) {
+func (m *MockSSMAPI) DescribeAssociationWithContext(arg0 context.Context, arg1 *ssm.DescribeAssociationInput, arg2 ...request.Option) (*ssm.DescribeAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1449,7 +1449,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeAutomationExecutionsRequest(arg0 inter
 }
 
 // DescribeAutomationExecutionsWithContext mocks base method
-func (m *MockSSMAPI) DescribeAutomationExecutionsWithContext(arg0 aws.Context, arg1 *ssm.DescribeAutomationExecutionsInput, arg2 ...request.Option) (*ssm.DescribeAutomationExecutionsOutput, error) {
+func (m *MockSSMAPI) DescribeAutomationExecutionsWithContext(arg0 context.Context, arg1 *ssm.DescribeAutomationExecutionsInput, arg2 ...request.Option) (*ssm.DescribeAutomationExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1499,7 +1499,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeAutomationStepExecutionsRequest(arg0 i
 }
 
 // DescribeAutomationStepExecutionsWithContext mocks base method
-func (m *MockSSMAPI) DescribeAutomationStepExecutionsWithContext(arg0 aws.Context, arg1 *ssm.DescribeAutomationStepExecutionsInput, arg2 ...request.Option) (*ssm.DescribeAutomationStepExecutionsOutput, error) {
+func (m *MockSSMAPI) DescribeAutomationStepExecutionsWithContext(arg0 context.Context, arg1 *ssm.DescribeAutomationStepExecutionsInput, arg2 ...request.Option) (*ssm.DescribeAutomationStepExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1549,7 +1549,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeAvailablePatchesRequest(arg0 interface
 }
 
 // DescribeAvailablePatchesWithContext mocks base method
-func (m *MockSSMAPI) DescribeAvailablePatchesWithContext(arg0 aws.Context, arg1 *ssm.DescribeAvailablePatchesInput, arg2 ...request.Option) (*ssm.DescribeAvailablePatchesOutput, error) {
+func (m *MockSSMAPI) DescribeAvailablePatchesWithContext(arg0 context.Context, arg1 *ssm.DescribeAvailablePatchesInput, arg2 ...request.Option) (*ssm.DescribeAvailablePatchesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1614,7 +1614,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeDocumentPermissionRequest(arg0 interfa
 }
 
 // DescribeDocumentPermissionWithContext mocks base method
-func (m *MockSSMAPI) DescribeDocumentPermissionWithContext(arg0 aws.Context, arg1 *ssm.DescribeDocumentPermissionInput, arg2 ...request.Option) (*ssm.DescribeDocumentPermissionOutput, error) {
+func (m *MockSSMAPI) DescribeDocumentPermissionWithContext(arg0 context.Context, arg1 *ssm.DescribeDocumentPermissionInput, arg2 ...request.Option) (*ssm.DescribeDocumentPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1649,7 +1649,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeDocumentRequest(arg0 interface{}) *gom
 }
 
 // DescribeDocumentWithContext mocks base method
-func (m *MockSSMAPI) DescribeDocumentWithContext(arg0 aws.Context, arg1 *ssm.DescribeDocumentInput, arg2 ...request.Option) (*ssm.DescribeDocumentOutput, error) {
+func (m *MockSSMAPI) DescribeDocumentWithContext(arg0 context.Context, arg1 *ssm.DescribeDocumentInput, arg2 ...request.Option) (*ssm.DescribeDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1699,7 +1699,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeEffectiveInstanceAssociationsRequest(a
 }
 
 // DescribeEffectiveInstanceAssociationsWithContext mocks base method
-func (m *MockSSMAPI) DescribeEffectiveInstanceAssociationsWithContext(arg0 aws.Context, arg1 *ssm.DescribeEffectiveInstanceAssociationsInput, arg2 ...request.Option) (*ssm.DescribeEffectiveInstanceAssociationsOutput, error) {
+func (m *MockSSMAPI) DescribeEffectiveInstanceAssociationsWithContext(arg0 context.Context, arg1 *ssm.DescribeEffectiveInstanceAssociationsInput, arg2 ...request.Option) (*ssm.DescribeEffectiveInstanceAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1749,7 +1749,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeEffectivePatchesForPatchBaselineReques
 }
 
 // DescribeEffectivePatchesForPatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) DescribeEffectivePatchesForPatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.DescribeEffectivePatchesForPatchBaselineInput, arg2 ...request.Option) (*ssm.DescribeEffectivePatchesForPatchBaselineOutput, error) {
+func (m *MockSSMAPI) DescribeEffectivePatchesForPatchBaselineWithContext(arg0 context.Context, arg1 *ssm.DescribeEffectivePatchesForPatchBaselineInput, arg2 ...request.Option) (*ssm.DescribeEffectivePatchesForPatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1799,7 +1799,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInstanceAssociationsStatusRequest(arg0
 }
 
 // DescribeInstanceAssociationsStatusWithContext mocks base method
-func (m *MockSSMAPI) DescribeInstanceAssociationsStatusWithContext(arg0 aws.Context, arg1 *ssm.DescribeInstanceAssociationsStatusInput, arg2 ...request.Option) (*ssm.DescribeInstanceAssociationsStatusOutput, error) {
+func (m *MockSSMAPI) DescribeInstanceAssociationsStatusWithContext(arg0 context.Context, arg1 *ssm.DescribeInstanceAssociationsStatusInput, arg2 ...request.Option) (*ssm.DescribeInstanceAssociationsStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1848,7 +1848,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInstanceInformationPages(arg0, arg1 in
 }
 
 // DescribeInstanceInformationPagesWithContext mocks base method
-func (m *MockSSMAPI) DescribeInstanceInformationPagesWithContext(arg0 aws.Context, arg1 *ssm.DescribeInstanceInformationInput, arg2 func(*ssm.DescribeInstanceInformationOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) DescribeInstanceInformationPagesWithContext(arg0 context.Context, arg1 *ssm.DescribeInstanceInformationInput, arg2 func(*ssm.DescribeInstanceInformationOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1882,7 +1882,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInstanceInformationRequest(arg0 interf
 }
 
 // DescribeInstanceInformationWithContext mocks base method
-func (m *MockSSMAPI) DescribeInstanceInformationWithContext(arg0 aws.Context, arg1 *ssm.DescribeInstanceInformationInput, arg2 ...request.Option) (*ssm.DescribeInstanceInformationOutput, error) {
+func (m *MockSSMAPI) DescribeInstanceInformationWithContext(arg0 context.Context, arg1 *ssm.DescribeInstanceInformationInput, arg2 ...request.Option) (*ssm.DescribeInstanceInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1947,7 +1947,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInstancePatchStatesForPatchGroupReques
 }
 
 // DescribeInstancePatchStatesForPatchGroupWithContext mocks base method
-func (m *MockSSMAPI) DescribeInstancePatchStatesForPatchGroupWithContext(arg0 aws.Context, arg1 *ssm.DescribeInstancePatchStatesForPatchGroupInput, arg2 ...request.Option) (*ssm.DescribeInstancePatchStatesForPatchGroupOutput, error) {
+func (m *MockSSMAPI) DescribeInstancePatchStatesForPatchGroupWithContext(arg0 context.Context, arg1 *ssm.DescribeInstancePatchStatesForPatchGroupInput, arg2 ...request.Option) (*ssm.DescribeInstancePatchStatesForPatchGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1982,7 +1982,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInstancePatchStatesRequest(arg0 interf
 }
 
 // DescribeInstancePatchStatesWithContext mocks base method
-func (m *MockSSMAPI) DescribeInstancePatchStatesWithContext(arg0 aws.Context, arg1 *ssm.DescribeInstancePatchStatesInput, arg2 ...request.Option) (*ssm.DescribeInstancePatchStatesOutput, error) {
+func (m *MockSSMAPI) DescribeInstancePatchStatesWithContext(arg0 context.Context, arg1 *ssm.DescribeInstancePatchStatesInput, arg2 ...request.Option) (*ssm.DescribeInstancePatchStatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2032,7 +2032,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInstancePatchesRequest(arg0 interface{
 }
 
 // DescribeInstancePatchesWithContext mocks base method
-func (m *MockSSMAPI) DescribeInstancePatchesWithContext(arg0 aws.Context, arg1 *ssm.DescribeInstancePatchesInput, arg2 ...request.Option) (*ssm.DescribeInstancePatchesOutput, error) {
+func (m *MockSSMAPI) DescribeInstancePatchesWithContext(arg0 context.Context, arg1 *ssm.DescribeInstancePatchesInput, arg2 ...request.Option) (*ssm.DescribeInstancePatchesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2082,7 +2082,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeInventoryDeletionsRequest(arg0 interfa
 }
 
 // DescribeInventoryDeletionsWithContext mocks base method
-func (m *MockSSMAPI) DescribeInventoryDeletionsWithContext(arg0 aws.Context, arg1 *ssm.DescribeInventoryDeletionsInput, arg2 ...request.Option) (*ssm.DescribeInventoryDeletionsOutput, error) {
+func (m *MockSSMAPI) DescribeInventoryDeletionsWithContext(arg0 context.Context, arg1 *ssm.DescribeInventoryDeletionsInput, arg2 ...request.Option) (*ssm.DescribeInventoryDeletionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2132,7 +2132,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowExecutionTaskInvocati
 }
 
 // DescribeMaintenanceWindowExecutionTaskInvocationsWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowExecutionTaskInvocationsWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowExecutionTaskInvocationsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowExecutionTaskInvocationsOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowExecutionTaskInvocationsWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowExecutionTaskInvocationsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowExecutionTaskInvocationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2182,7 +2182,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowExecutionTasksRequest
 }
 
 // DescribeMaintenanceWindowExecutionTasksWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowExecutionTasksWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowExecutionTasksInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowExecutionTasksOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowExecutionTasksWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowExecutionTasksInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowExecutionTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2232,7 +2232,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowExecutionsRequest(arg
 }
 
 // DescribeMaintenanceWindowExecutionsWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowExecutionsWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowExecutionsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowExecutionsOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowExecutionsWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowExecutionsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2282,7 +2282,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowScheduleRequest(arg0 
 }
 
 // DescribeMaintenanceWindowScheduleWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowScheduleWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowScheduleInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowScheduleOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowScheduleWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowScheduleInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2332,7 +2332,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowTargetsRequest(arg0 i
 }
 
 // DescribeMaintenanceWindowTargetsWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowTargetsWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowTargetsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowTargetsOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowTargetsWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowTargetsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2382,7 +2382,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowTasksRequest(arg0 int
 }
 
 // DescribeMaintenanceWindowTasksWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowTasksWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowTasksInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowTasksOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowTasksWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowTasksInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2447,7 +2447,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowsForTargetRequest(arg
 }
 
 // DescribeMaintenanceWindowsForTargetWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowsForTargetWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowsForTargetInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowsForTargetOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowsForTargetWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowsForTargetInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowsForTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2482,7 +2482,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeMaintenanceWindowsRequest(arg0 interfa
 }
 
 // DescribeMaintenanceWindowsWithContext mocks base method
-func (m *MockSSMAPI) DescribeMaintenanceWindowsWithContext(arg0 aws.Context, arg1 *ssm.DescribeMaintenanceWindowsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowsOutput, error) {
+func (m *MockSSMAPI) DescribeMaintenanceWindowsWithContext(arg0 context.Context, arg1 *ssm.DescribeMaintenanceWindowsInput, arg2 ...request.Option) (*ssm.DescribeMaintenanceWindowsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2531,7 +2531,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeParametersPages(arg0, arg1 interface{}
 }
 
 // DescribeParametersPagesWithContext mocks base method
-func (m *MockSSMAPI) DescribeParametersPagesWithContext(arg0 aws.Context, arg1 *ssm.DescribeParametersInput, arg2 func(*ssm.DescribeParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) DescribeParametersPagesWithContext(arg0 context.Context, arg1 *ssm.DescribeParametersInput, arg2 func(*ssm.DescribeParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2565,7 +2565,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeParametersRequest(arg0 interface{}) *g
 }
 
 // DescribeParametersWithContext mocks base method
-func (m *MockSSMAPI) DescribeParametersWithContext(arg0 aws.Context, arg1 *ssm.DescribeParametersInput, arg2 ...request.Option) (*ssm.DescribeParametersOutput, error) {
+func (m *MockSSMAPI) DescribeParametersWithContext(arg0 context.Context, arg1 *ssm.DescribeParametersInput, arg2 ...request.Option) (*ssm.DescribeParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2615,7 +2615,7 @@ func (mr *MockSSMAPIMockRecorder) DescribePatchBaselinesRequest(arg0 interface{}
 }
 
 // DescribePatchBaselinesWithContext mocks base method
-func (m *MockSSMAPI) DescribePatchBaselinesWithContext(arg0 aws.Context, arg1 *ssm.DescribePatchBaselinesInput, arg2 ...request.Option) (*ssm.DescribePatchBaselinesOutput, error) {
+func (m *MockSSMAPI) DescribePatchBaselinesWithContext(arg0 context.Context, arg1 *ssm.DescribePatchBaselinesInput, arg2 ...request.Option) (*ssm.DescribePatchBaselinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2665,7 +2665,7 @@ func (mr *MockSSMAPIMockRecorder) DescribePatchGroupStateRequest(arg0 interface{
 }
 
 // DescribePatchGroupStateWithContext mocks base method
-func (m *MockSSMAPI) DescribePatchGroupStateWithContext(arg0 aws.Context, arg1 *ssm.DescribePatchGroupStateInput, arg2 ...request.Option) (*ssm.DescribePatchGroupStateOutput, error) {
+func (m *MockSSMAPI) DescribePatchGroupStateWithContext(arg0 context.Context, arg1 *ssm.DescribePatchGroupStateInput, arg2 ...request.Option) (*ssm.DescribePatchGroupStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2715,7 +2715,7 @@ func (mr *MockSSMAPIMockRecorder) DescribePatchGroupsRequest(arg0 interface{}) *
 }
 
 // DescribePatchGroupsWithContext mocks base method
-func (m *MockSSMAPI) DescribePatchGroupsWithContext(arg0 aws.Context, arg1 *ssm.DescribePatchGroupsInput, arg2 ...request.Option) (*ssm.DescribePatchGroupsOutput, error) {
+func (m *MockSSMAPI) DescribePatchGroupsWithContext(arg0 context.Context, arg1 *ssm.DescribePatchGroupsInput, arg2 ...request.Option) (*ssm.DescribePatchGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2765,7 +2765,7 @@ func (mr *MockSSMAPIMockRecorder) DescribeSessionsRequest(arg0 interface{}) *gom
 }
 
 // DescribeSessionsWithContext mocks base method
-func (m *MockSSMAPI) DescribeSessionsWithContext(arg0 aws.Context, arg1 *ssm.DescribeSessionsInput, arg2 ...request.Option) (*ssm.DescribeSessionsOutput, error) {
+func (m *MockSSMAPI) DescribeSessionsWithContext(arg0 context.Context, arg1 *ssm.DescribeSessionsInput, arg2 ...request.Option) (*ssm.DescribeSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2815,7 +2815,7 @@ func (mr *MockSSMAPIMockRecorder) GetAutomationExecutionRequest(arg0 interface{}
 }
 
 // GetAutomationExecutionWithContext mocks base method
-func (m *MockSSMAPI) GetAutomationExecutionWithContext(arg0 aws.Context, arg1 *ssm.GetAutomationExecutionInput, arg2 ...request.Option) (*ssm.GetAutomationExecutionOutput, error) {
+func (m *MockSSMAPI) GetAutomationExecutionWithContext(arg0 context.Context, arg1 *ssm.GetAutomationExecutionInput, arg2 ...request.Option) (*ssm.GetAutomationExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2865,7 +2865,7 @@ func (mr *MockSSMAPIMockRecorder) GetCommandInvocationRequest(arg0 interface{}) 
 }
 
 // GetCommandInvocationWithContext mocks base method
-func (m *MockSSMAPI) GetCommandInvocationWithContext(arg0 aws.Context, arg1 *ssm.GetCommandInvocationInput, arg2 ...request.Option) (*ssm.GetCommandInvocationOutput, error) {
+func (m *MockSSMAPI) GetCommandInvocationWithContext(arg0 context.Context, arg1 *ssm.GetCommandInvocationInput, arg2 ...request.Option) (*ssm.GetCommandInvocationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2915,7 +2915,7 @@ func (mr *MockSSMAPIMockRecorder) GetConnectionStatusRequest(arg0 interface{}) *
 }
 
 // GetConnectionStatusWithContext mocks base method
-func (m *MockSSMAPI) GetConnectionStatusWithContext(arg0 aws.Context, arg1 *ssm.GetConnectionStatusInput, arg2 ...request.Option) (*ssm.GetConnectionStatusOutput, error) {
+func (m *MockSSMAPI) GetConnectionStatusWithContext(arg0 context.Context, arg1 *ssm.GetConnectionStatusInput, arg2 ...request.Option) (*ssm.GetConnectionStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2965,7 +2965,7 @@ func (mr *MockSSMAPIMockRecorder) GetDefaultPatchBaselineRequest(arg0 interface{
 }
 
 // GetDefaultPatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) GetDefaultPatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.GetDefaultPatchBaselineInput, arg2 ...request.Option) (*ssm.GetDefaultPatchBaselineOutput, error) {
+func (m *MockSSMAPI) GetDefaultPatchBaselineWithContext(arg0 context.Context, arg1 *ssm.GetDefaultPatchBaselineInput, arg2 ...request.Option) (*ssm.GetDefaultPatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3015,7 +3015,7 @@ func (mr *MockSSMAPIMockRecorder) GetDeployablePatchSnapshotForInstanceRequest(a
 }
 
 // GetDeployablePatchSnapshotForInstanceWithContext mocks base method
-func (m *MockSSMAPI) GetDeployablePatchSnapshotForInstanceWithContext(arg0 aws.Context, arg1 *ssm.GetDeployablePatchSnapshotForInstanceInput, arg2 ...request.Option) (*ssm.GetDeployablePatchSnapshotForInstanceOutput, error) {
+func (m *MockSSMAPI) GetDeployablePatchSnapshotForInstanceWithContext(arg0 context.Context, arg1 *ssm.GetDeployablePatchSnapshotForInstanceInput, arg2 ...request.Option) (*ssm.GetDeployablePatchSnapshotForInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3065,7 +3065,7 @@ func (mr *MockSSMAPIMockRecorder) GetDocumentRequest(arg0 interface{}) *gomock.C
 }
 
 // GetDocumentWithContext mocks base method
-func (m *MockSSMAPI) GetDocumentWithContext(arg0 aws.Context, arg1 *ssm.GetDocumentInput, arg2 ...request.Option) (*ssm.GetDocumentOutput, error) {
+func (m *MockSSMAPI) GetDocumentWithContext(arg0 context.Context, arg1 *ssm.GetDocumentInput, arg2 ...request.Option) (*ssm.GetDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3145,7 +3145,7 @@ func (mr *MockSSMAPIMockRecorder) GetInventorySchemaRequest(arg0 interface{}) *g
 }
 
 // GetInventorySchemaWithContext mocks base method
-func (m *MockSSMAPI) GetInventorySchemaWithContext(arg0 aws.Context, arg1 *ssm.GetInventorySchemaInput, arg2 ...request.Option) (*ssm.GetInventorySchemaOutput, error) {
+func (m *MockSSMAPI) GetInventorySchemaWithContext(arg0 context.Context, arg1 *ssm.GetInventorySchemaInput, arg2 ...request.Option) (*ssm.GetInventorySchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3165,7 +3165,7 @@ func (mr *MockSSMAPIMockRecorder) GetInventorySchemaWithContext(arg0, arg1 inter
 }
 
 // GetInventoryWithContext mocks base method
-func (m *MockSSMAPI) GetInventoryWithContext(arg0 aws.Context, arg1 *ssm.GetInventoryInput, arg2 ...request.Option) (*ssm.GetInventoryOutput, error) {
+func (m *MockSSMAPI) GetInventoryWithContext(arg0 context.Context, arg1 *ssm.GetInventoryInput, arg2 ...request.Option) (*ssm.GetInventoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3275,7 +3275,7 @@ func (mr *MockSSMAPIMockRecorder) GetMaintenanceWindowExecutionTaskInvocationReq
 }
 
 // GetMaintenanceWindowExecutionTaskInvocationWithContext mocks base method
-func (m *MockSSMAPI) GetMaintenanceWindowExecutionTaskInvocationWithContext(arg0 aws.Context, arg1 *ssm.GetMaintenanceWindowExecutionTaskInvocationInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowExecutionTaskInvocationOutput, error) {
+func (m *MockSSMAPI) GetMaintenanceWindowExecutionTaskInvocationWithContext(arg0 context.Context, arg1 *ssm.GetMaintenanceWindowExecutionTaskInvocationInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowExecutionTaskInvocationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3310,7 +3310,7 @@ func (mr *MockSSMAPIMockRecorder) GetMaintenanceWindowExecutionTaskRequest(arg0 
 }
 
 // GetMaintenanceWindowExecutionTaskWithContext mocks base method
-func (m *MockSSMAPI) GetMaintenanceWindowExecutionTaskWithContext(arg0 aws.Context, arg1 *ssm.GetMaintenanceWindowExecutionTaskInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowExecutionTaskOutput, error) {
+func (m *MockSSMAPI) GetMaintenanceWindowExecutionTaskWithContext(arg0 context.Context, arg1 *ssm.GetMaintenanceWindowExecutionTaskInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowExecutionTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3330,7 +3330,7 @@ func (mr *MockSSMAPIMockRecorder) GetMaintenanceWindowExecutionTaskWithContext(a
 }
 
 // GetMaintenanceWindowExecutionWithContext mocks base method
-func (m *MockSSMAPI) GetMaintenanceWindowExecutionWithContext(arg0 aws.Context, arg1 *ssm.GetMaintenanceWindowExecutionInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowExecutionOutput, error) {
+func (m *MockSSMAPI) GetMaintenanceWindowExecutionWithContext(arg0 context.Context, arg1 *ssm.GetMaintenanceWindowExecutionInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3395,7 +3395,7 @@ func (mr *MockSSMAPIMockRecorder) GetMaintenanceWindowTaskRequest(arg0 interface
 }
 
 // GetMaintenanceWindowTaskWithContext mocks base method
-func (m *MockSSMAPI) GetMaintenanceWindowTaskWithContext(arg0 aws.Context, arg1 *ssm.GetMaintenanceWindowTaskInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowTaskOutput, error) {
+func (m *MockSSMAPI) GetMaintenanceWindowTaskWithContext(arg0 context.Context, arg1 *ssm.GetMaintenanceWindowTaskInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3415,7 +3415,7 @@ func (mr *MockSSMAPIMockRecorder) GetMaintenanceWindowTaskWithContext(arg0, arg1
 }
 
 // GetMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) GetMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.GetMaintenanceWindowInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) GetMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.GetMaintenanceWindowInput, arg2 ...request.Option) (*ssm.GetMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3479,7 +3479,7 @@ func (mr *MockSSMAPIMockRecorder) GetParameterHistoryPages(arg0, arg1 interface{
 }
 
 // GetParameterHistoryPagesWithContext mocks base method
-func (m *MockSSMAPI) GetParameterHistoryPagesWithContext(arg0 aws.Context, arg1 *ssm.GetParameterHistoryInput, arg2 func(*ssm.GetParameterHistoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) GetParameterHistoryPagesWithContext(arg0 context.Context, arg1 *ssm.GetParameterHistoryInput, arg2 func(*ssm.GetParameterHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3513,7 +3513,7 @@ func (mr *MockSSMAPIMockRecorder) GetParameterHistoryRequest(arg0 interface{}) *
 }
 
 // GetParameterHistoryWithContext mocks base method
-func (m *MockSSMAPI) GetParameterHistoryWithContext(arg0 aws.Context, arg1 *ssm.GetParameterHistoryInput, arg2 ...request.Option) (*ssm.GetParameterHistoryOutput, error) {
+func (m *MockSSMAPI) GetParameterHistoryWithContext(arg0 context.Context, arg1 *ssm.GetParameterHistoryInput, arg2 ...request.Option) (*ssm.GetParameterHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3548,7 +3548,7 @@ func (mr *MockSSMAPIMockRecorder) GetParameterRequest(arg0 interface{}) *gomock.
 }
 
 // GetParameterWithContext mocks base method
-func (m *MockSSMAPI) GetParameterWithContext(arg0 aws.Context, arg1 *ssm.GetParameterInput, arg2 ...request.Option) (*ssm.GetParameterOutput, error) {
+func (m *MockSSMAPI) GetParameterWithContext(arg0 context.Context, arg1 *ssm.GetParameterInput, arg2 ...request.Option) (*ssm.GetParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3612,7 +3612,7 @@ func (mr *MockSSMAPIMockRecorder) GetParametersByPathPages(arg0, arg1 interface{
 }
 
 // GetParametersByPathPagesWithContext mocks base method
-func (m *MockSSMAPI) GetParametersByPathPagesWithContext(arg0 aws.Context, arg1 *ssm.GetParametersByPathInput, arg2 func(*ssm.GetParametersByPathOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) GetParametersByPathPagesWithContext(arg0 context.Context, arg1 *ssm.GetParametersByPathInput, arg2 func(*ssm.GetParametersByPathOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3646,7 +3646,7 @@ func (mr *MockSSMAPIMockRecorder) GetParametersByPathRequest(arg0 interface{}) *
 }
 
 // GetParametersByPathWithContext mocks base method
-func (m *MockSSMAPI) GetParametersByPathWithContext(arg0 aws.Context, arg1 *ssm.GetParametersByPathInput, arg2 ...request.Option) (*ssm.GetParametersByPathOutput, error) {
+func (m *MockSSMAPI) GetParametersByPathWithContext(arg0 context.Context, arg1 *ssm.GetParametersByPathInput, arg2 ...request.Option) (*ssm.GetParametersByPathOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3681,7 +3681,7 @@ func (mr *MockSSMAPIMockRecorder) GetParametersRequest(arg0 interface{}) *gomock
 }
 
 // GetParametersWithContext mocks base method
-func (m *MockSSMAPI) GetParametersWithContext(arg0 aws.Context, arg1 *ssm.GetParametersInput, arg2 ...request.Option) (*ssm.GetParametersOutput, error) {
+func (m *MockSSMAPI) GetParametersWithContext(arg0 context.Context, arg1 *ssm.GetParametersInput, arg2 ...request.Option) (*ssm.GetParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3746,7 +3746,7 @@ func (mr *MockSSMAPIMockRecorder) GetPatchBaselineForPatchGroupRequest(arg0 inte
 }
 
 // GetPatchBaselineForPatchGroupWithContext mocks base method
-func (m *MockSSMAPI) GetPatchBaselineForPatchGroupWithContext(arg0 aws.Context, arg1 *ssm.GetPatchBaselineForPatchGroupInput, arg2 ...request.Option) (*ssm.GetPatchBaselineForPatchGroupOutput, error) {
+func (m *MockSSMAPI) GetPatchBaselineForPatchGroupWithContext(arg0 context.Context, arg1 *ssm.GetPatchBaselineForPatchGroupInput, arg2 ...request.Option) (*ssm.GetPatchBaselineForPatchGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3781,7 +3781,7 @@ func (mr *MockSSMAPIMockRecorder) GetPatchBaselineRequest(arg0 interface{}) *gom
 }
 
 // GetPatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) GetPatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.GetPatchBaselineInput, arg2 ...request.Option) (*ssm.GetPatchBaselineOutput, error) {
+func (m *MockSSMAPI) GetPatchBaselineWithContext(arg0 context.Context, arg1 *ssm.GetPatchBaselineInput, arg2 ...request.Option) (*ssm.GetPatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3831,7 +3831,7 @@ func (mr *MockSSMAPIMockRecorder) LabelParameterVersionRequest(arg0 interface{})
 }
 
 // LabelParameterVersionWithContext mocks base method
-func (m *MockSSMAPI) LabelParameterVersionWithContext(arg0 aws.Context, arg1 *ssm.LabelParameterVersionInput, arg2 ...request.Option) (*ssm.LabelParameterVersionOutput, error) {
+func (m *MockSSMAPI) LabelParameterVersionWithContext(arg0 context.Context, arg1 *ssm.LabelParameterVersionInput, arg2 ...request.Option) (*ssm.LabelParameterVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3881,7 +3881,7 @@ func (mr *MockSSMAPIMockRecorder) ListAssociationVersionsRequest(arg0 interface{
 }
 
 // ListAssociationVersionsWithContext mocks base method
-func (m *MockSSMAPI) ListAssociationVersionsWithContext(arg0 aws.Context, arg1 *ssm.ListAssociationVersionsInput, arg2 ...request.Option) (*ssm.ListAssociationVersionsOutput, error) {
+func (m *MockSSMAPI) ListAssociationVersionsWithContext(arg0 context.Context, arg1 *ssm.ListAssociationVersionsInput, arg2 ...request.Option) (*ssm.ListAssociationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3930,7 +3930,7 @@ func (mr *MockSSMAPIMockRecorder) ListAssociationsPages(arg0, arg1 interface{}) 
 }
 
 // ListAssociationsPagesWithContext mocks base method
-func (m *MockSSMAPI) ListAssociationsPagesWithContext(arg0 aws.Context, arg1 *ssm.ListAssociationsInput, arg2 func(*ssm.ListAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) ListAssociationsPagesWithContext(arg0 context.Context, arg1 *ssm.ListAssociationsInput, arg2 func(*ssm.ListAssociationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3964,7 +3964,7 @@ func (mr *MockSSMAPIMockRecorder) ListAssociationsRequest(arg0 interface{}) *gom
 }
 
 // ListAssociationsWithContext mocks base method
-func (m *MockSSMAPI) ListAssociationsWithContext(arg0 aws.Context, arg1 *ssm.ListAssociationsInput, arg2 ...request.Option) (*ssm.ListAssociationsOutput, error) {
+func (m *MockSSMAPI) ListAssociationsWithContext(arg0 context.Context, arg1 *ssm.ListAssociationsInput, arg2 ...request.Option) (*ssm.ListAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4013,7 +4013,7 @@ func (mr *MockSSMAPIMockRecorder) ListCommandInvocationsPages(arg0, arg1 interfa
 }
 
 // ListCommandInvocationsPagesWithContext mocks base method
-func (m *MockSSMAPI) ListCommandInvocationsPagesWithContext(arg0 aws.Context, arg1 *ssm.ListCommandInvocationsInput, arg2 func(*ssm.ListCommandInvocationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) ListCommandInvocationsPagesWithContext(arg0 context.Context, arg1 *ssm.ListCommandInvocationsInput, arg2 func(*ssm.ListCommandInvocationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4047,7 +4047,7 @@ func (mr *MockSSMAPIMockRecorder) ListCommandInvocationsRequest(arg0 interface{}
 }
 
 // ListCommandInvocationsWithContext mocks base method
-func (m *MockSSMAPI) ListCommandInvocationsWithContext(arg0 aws.Context, arg1 *ssm.ListCommandInvocationsInput, arg2 ...request.Option) (*ssm.ListCommandInvocationsOutput, error) {
+func (m *MockSSMAPI) ListCommandInvocationsWithContext(arg0 context.Context, arg1 *ssm.ListCommandInvocationsInput, arg2 ...request.Option) (*ssm.ListCommandInvocationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4096,7 +4096,7 @@ func (mr *MockSSMAPIMockRecorder) ListCommandsPages(arg0, arg1 interface{}) *gom
 }
 
 // ListCommandsPagesWithContext mocks base method
-func (m *MockSSMAPI) ListCommandsPagesWithContext(arg0 aws.Context, arg1 *ssm.ListCommandsInput, arg2 func(*ssm.ListCommandsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) ListCommandsPagesWithContext(arg0 context.Context, arg1 *ssm.ListCommandsInput, arg2 func(*ssm.ListCommandsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4130,7 +4130,7 @@ func (mr *MockSSMAPIMockRecorder) ListCommandsRequest(arg0 interface{}) *gomock.
 }
 
 // ListCommandsWithContext mocks base method
-func (m *MockSSMAPI) ListCommandsWithContext(arg0 aws.Context, arg1 *ssm.ListCommandsInput, arg2 ...request.Option) (*ssm.ListCommandsOutput, error) {
+func (m *MockSSMAPI) ListCommandsWithContext(arg0 context.Context, arg1 *ssm.ListCommandsInput, arg2 ...request.Option) (*ssm.ListCommandsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4180,7 +4180,7 @@ func (mr *MockSSMAPIMockRecorder) ListComplianceItemsRequest(arg0 interface{}) *
 }
 
 // ListComplianceItemsWithContext mocks base method
-func (m *MockSSMAPI) ListComplianceItemsWithContext(arg0 aws.Context, arg1 *ssm.ListComplianceItemsInput, arg2 ...request.Option) (*ssm.ListComplianceItemsOutput, error) {
+func (m *MockSSMAPI) ListComplianceItemsWithContext(arg0 context.Context, arg1 *ssm.ListComplianceItemsInput, arg2 ...request.Option) (*ssm.ListComplianceItemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4230,7 +4230,7 @@ func (mr *MockSSMAPIMockRecorder) ListComplianceSummariesRequest(arg0 interface{
 }
 
 // ListComplianceSummariesWithContext mocks base method
-func (m *MockSSMAPI) ListComplianceSummariesWithContext(arg0 aws.Context, arg1 *ssm.ListComplianceSummariesInput, arg2 ...request.Option) (*ssm.ListComplianceSummariesOutput, error) {
+func (m *MockSSMAPI) ListComplianceSummariesWithContext(arg0 context.Context, arg1 *ssm.ListComplianceSummariesInput, arg2 ...request.Option) (*ssm.ListComplianceSummariesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4280,7 +4280,7 @@ func (mr *MockSSMAPIMockRecorder) ListDocumentVersionsRequest(arg0 interface{}) 
 }
 
 // ListDocumentVersionsWithContext mocks base method
-func (m *MockSSMAPI) ListDocumentVersionsWithContext(arg0 aws.Context, arg1 *ssm.ListDocumentVersionsInput, arg2 ...request.Option) (*ssm.ListDocumentVersionsOutput, error) {
+func (m *MockSSMAPI) ListDocumentVersionsWithContext(arg0 context.Context, arg1 *ssm.ListDocumentVersionsInput, arg2 ...request.Option) (*ssm.ListDocumentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4329,7 +4329,7 @@ func (mr *MockSSMAPIMockRecorder) ListDocumentsPages(arg0, arg1 interface{}) *go
 }
 
 // ListDocumentsPagesWithContext mocks base method
-func (m *MockSSMAPI) ListDocumentsPagesWithContext(arg0 aws.Context, arg1 *ssm.ListDocumentsInput, arg2 func(*ssm.ListDocumentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSSMAPI) ListDocumentsPagesWithContext(arg0 context.Context, arg1 *ssm.ListDocumentsInput, arg2 func(*ssm.ListDocumentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4363,7 +4363,7 @@ func (mr *MockSSMAPIMockRecorder) ListDocumentsRequest(arg0 interface{}) *gomock
 }
 
 // ListDocumentsWithContext mocks base method
-func (m *MockSSMAPI) ListDocumentsWithContext(arg0 aws.Context, arg1 *ssm.ListDocumentsInput, arg2 ...request.Option) (*ssm.ListDocumentsOutput, error) {
+func (m *MockSSMAPI) ListDocumentsWithContext(arg0 context.Context, arg1 *ssm.ListDocumentsInput, arg2 ...request.Option) (*ssm.ListDocumentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4413,7 +4413,7 @@ func (mr *MockSSMAPIMockRecorder) ListInventoryEntriesRequest(arg0 interface{}) 
 }
 
 // ListInventoryEntriesWithContext mocks base method
-func (m *MockSSMAPI) ListInventoryEntriesWithContext(arg0 aws.Context, arg1 *ssm.ListInventoryEntriesInput, arg2 ...request.Option) (*ssm.ListInventoryEntriesOutput, error) {
+func (m *MockSSMAPI) ListInventoryEntriesWithContext(arg0 context.Context, arg1 *ssm.ListInventoryEntriesInput, arg2 ...request.Option) (*ssm.ListInventoryEntriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4463,7 +4463,7 @@ func (mr *MockSSMAPIMockRecorder) ListResourceComplianceSummariesRequest(arg0 in
 }
 
 // ListResourceComplianceSummariesWithContext mocks base method
-func (m *MockSSMAPI) ListResourceComplianceSummariesWithContext(arg0 aws.Context, arg1 *ssm.ListResourceComplianceSummariesInput, arg2 ...request.Option) (*ssm.ListResourceComplianceSummariesOutput, error) {
+func (m *MockSSMAPI) ListResourceComplianceSummariesWithContext(arg0 context.Context, arg1 *ssm.ListResourceComplianceSummariesInput, arg2 ...request.Option) (*ssm.ListResourceComplianceSummariesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4513,7 +4513,7 @@ func (mr *MockSSMAPIMockRecorder) ListResourceDataSyncRequest(arg0 interface{}) 
 }
 
 // ListResourceDataSyncWithContext mocks base method
-func (m *MockSSMAPI) ListResourceDataSyncWithContext(arg0 aws.Context, arg1 *ssm.ListResourceDataSyncInput, arg2 ...request.Option) (*ssm.ListResourceDataSyncOutput, error) {
+func (m *MockSSMAPI) ListResourceDataSyncWithContext(arg0 context.Context, arg1 *ssm.ListResourceDataSyncInput, arg2 ...request.Option) (*ssm.ListResourceDataSyncOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4563,7 +4563,7 @@ func (mr *MockSSMAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockSSMAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *ssm.ListTagsForResourceInput, arg2 ...request.Option) (*ssm.ListTagsForResourceOutput, error) {
+func (m *MockSSMAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *ssm.ListTagsForResourceInput, arg2 ...request.Option) (*ssm.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4613,7 +4613,7 @@ func (mr *MockSSMAPIMockRecorder) ModifyDocumentPermissionRequest(arg0 interface
 }
 
 // ModifyDocumentPermissionWithContext mocks base method
-func (m *MockSSMAPI) ModifyDocumentPermissionWithContext(arg0 aws.Context, arg1 *ssm.ModifyDocumentPermissionInput, arg2 ...request.Option) (*ssm.ModifyDocumentPermissionOutput, error) {
+func (m *MockSSMAPI) ModifyDocumentPermissionWithContext(arg0 context.Context, arg1 *ssm.ModifyDocumentPermissionInput, arg2 ...request.Option) (*ssm.ModifyDocumentPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4663,7 +4663,7 @@ func (mr *MockSSMAPIMockRecorder) PutComplianceItemsRequest(arg0 interface{}) *g
 }
 
 // PutComplianceItemsWithContext mocks base method
-func (m *MockSSMAPI) PutComplianceItemsWithContext(arg0 aws.Context, arg1 *ssm.PutComplianceItemsInput, arg2 ...request.Option) (*ssm.PutComplianceItemsOutput, error) {
+func (m *MockSSMAPI) PutComplianceItemsWithContext(arg0 context.Context, arg1 *ssm.PutComplianceItemsInput, arg2 ...request.Option) (*ssm.PutComplianceItemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4713,7 +4713,7 @@ func (mr *MockSSMAPIMockRecorder) PutInventoryRequest(arg0 interface{}) *gomock.
 }
 
 // PutInventoryWithContext mocks base method
-func (m *MockSSMAPI) PutInventoryWithContext(arg0 aws.Context, arg1 *ssm.PutInventoryInput, arg2 ...request.Option) (*ssm.PutInventoryOutput, error) {
+func (m *MockSSMAPI) PutInventoryWithContext(arg0 context.Context, arg1 *ssm.PutInventoryInput, arg2 ...request.Option) (*ssm.PutInventoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4763,7 +4763,7 @@ func (mr *MockSSMAPIMockRecorder) PutParameterRequest(arg0 interface{}) *gomock.
 }
 
 // PutParameterWithContext mocks base method
-func (m *MockSSMAPI) PutParameterWithContext(arg0 aws.Context, arg1 *ssm.PutParameterInput, arg2 ...request.Option) (*ssm.PutParameterOutput, error) {
+func (m *MockSSMAPI) PutParameterWithContext(arg0 context.Context, arg1 *ssm.PutParameterInput, arg2 ...request.Option) (*ssm.PutParameterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4813,7 +4813,7 @@ func (mr *MockSSMAPIMockRecorder) RegisterDefaultPatchBaselineRequest(arg0 inter
 }
 
 // RegisterDefaultPatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) RegisterDefaultPatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.RegisterDefaultPatchBaselineInput, arg2 ...request.Option) (*ssm.RegisterDefaultPatchBaselineOutput, error) {
+func (m *MockSSMAPI) RegisterDefaultPatchBaselineWithContext(arg0 context.Context, arg1 *ssm.RegisterDefaultPatchBaselineInput, arg2 ...request.Option) (*ssm.RegisterDefaultPatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4863,7 +4863,7 @@ func (mr *MockSSMAPIMockRecorder) RegisterPatchBaselineForPatchGroupRequest(arg0
 }
 
 // RegisterPatchBaselineForPatchGroupWithContext mocks base method
-func (m *MockSSMAPI) RegisterPatchBaselineForPatchGroupWithContext(arg0 aws.Context, arg1 *ssm.RegisterPatchBaselineForPatchGroupInput, arg2 ...request.Option) (*ssm.RegisterPatchBaselineForPatchGroupOutput, error) {
+func (m *MockSSMAPI) RegisterPatchBaselineForPatchGroupWithContext(arg0 context.Context, arg1 *ssm.RegisterPatchBaselineForPatchGroupInput, arg2 ...request.Option) (*ssm.RegisterPatchBaselineForPatchGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4913,7 +4913,7 @@ func (mr *MockSSMAPIMockRecorder) RegisterTargetWithMaintenanceWindowRequest(arg
 }
 
 // RegisterTargetWithMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) RegisterTargetWithMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.RegisterTargetWithMaintenanceWindowInput, arg2 ...request.Option) (*ssm.RegisterTargetWithMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) RegisterTargetWithMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.RegisterTargetWithMaintenanceWindowInput, arg2 ...request.Option) (*ssm.RegisterTargetWithMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4963,7 +4963,7 @@ func (mr *MockSSMAPIMockRecorder) RegisterTaskWithMaintenanceWindowRequest(arg0 
 }
 
 // RegisterTaskWithMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) RegisterTaskWithMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.RegisterTaskWithMaintenanceWindowInput, arg2 ...request.Option) (*ssm.RegisterTaskWithMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) RegisterTaskWithMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.RegisterTaskWithMaintenanceWindowInput, arg2 ...request.Option) (*ssm.RegisterTaskWithMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5013,7 +5013,7 @@ func (mr *MockSSMAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interface{}
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockSSMAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *ssm.RemoveTagsFromResourceInput, arg2 ...request.Option) (*ssm.RemoveTagsFromResourceOutput, error) {
+func (m *MockSSMAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *ssm.RemoveTagsFromResourceInput, arg2 ...request.Option) (*ssm.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5063,7 +5063,7 @@ func (mr *MockSSMAPIMockRecorder) ResumeSessionRequest(arg0 interface{}) *gomock
 }
 
 // ResumeSessionWithContext mocks base method
-func (m *MockSSMAPI) ResumeSessionWithContext(arg0 aws.Context, arg1 *ssm.ResumeSessionInput, arg2 ...request.Option) (*ssm.ResumeSessionOutput, error) {
+func (m *MockSSMAPI) ResumeSessionWithContext(arg0 context.Context, arg1 *ssm.ResumeSessionInput, arg2 ...request.Option) (*ssm.ResumeSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5113,7 +5113,7 @@ func (mr *MockSSMAPIMockRecorder) SendAutomationSignalRequest(arg0 interface{}) 
 }
 
 // SendAutomationSignalWithContext mocks base method
-func (m *MockSSMAPI) SendAutomationSignalWithContext(arg0 aws.Context, arg1 *ssm.SendAutomationSignalInput, arg2 ...request.Option) (*ssm.SendAutomationSignalOutput, error) {
+func (m *MockSSMAPI) SendAutomationSignalWithContext(arg0 context.Context, arg1 *ssm.SendAutomationSignalInput, arg2 ...request.Option) (*ssm.SendAutomationSignalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5163,7 +5163,7 @@ func (mr *MockSSMAPIMockRecorder) SendCommandRequest(arg0 interface{}) *gomock.C
 }
 
 // SendCommandWithContext mocks base method
-func (m *MockSSMAPI) SendCommandWithContext(arg0 aws.Context, arg1 *ssm.SendCommandInput, arg2 ...request.Option) (*ssm.SendCommandOutput, error) {
+func (m *MockSSMAPI) SendCommandWithContext(arg0 context.Context, arg1 *ssm.SendCommandInput, arg2 ...request.Option) (*ssm.SendCommandOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5213,7 +5213,7 @@ func (mr *MockSSMAPIMockRecorder) StartAssociationsOnceRequest(arg0 interface{})
 }
 
 // StartAssociationsOnceWithContext mocks base method
-func (m *MockSSMAPI) StartAssociationsOnceWithContext(arg0 aws.Context, arg1 *ssm.StartAssociationsOnceInput, arg2 ...request.Option) (*ssm.StartAssociationsOnceOutput, error) {
+func (m *MockSSMAPI) StartAssociationsOnceWithContext(arg0 context.Context, arg1 *ssm.StartAssociationsOnceInput, arg2 ...request.Option) (*ssm.StartAssociationsOnceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5263,7 +5263,7 @@ func (mr *MockSSMAPIMockRecorder) StartAutomationExecutionRequest(arg0 interface
 }
 
 // StartAutomationExecutionWithContext mocks base method
-func (m *MockSSMAPI) StartAutomationExecutionWithContext(arg0 aws.Context, arg1 *ssm.StartAutomationExecutionInput, arg2 ...request.Option) (*ssm.StartAutomationExecutionOutput, error) {
+func (m *MockSSMAPI) StartAutomationExecutionWithContext(arg0 context.Context, arg1 *ssm.StartAutomationExecutionInput, arg2 ...request.Option) (*ssm.StartAutomationExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5313,7 +5313,7 @@ func (mr *MockSSMAPIMockRecorder) StartSessionRequest(arg0 interface{}) *gomock.
 }
 
 // StartSessionWithContext mocks base method
-func (m *MockSSMAPI) StartSessionWithContext(arg0 aws.Context, arg1 *ssm.StartSessionInput, arg2 ...request.Option) (*ssm.StartSessionOutput, error) {
+func (m *MockSSMAPI) StartSessionWithContext(arg0 context.Context, arg1 *ssm.StartSessionInput, arg2 ...request.Option) (*ssm.StartSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5363,7 +5363,7 @@ func (mr *MockSSMAPIMockRecorder) StopAutomationExecutionRequest(arg0 interface{
 }
 
 // StopAutomationExecutionWithContext mocks base method
-func (m *MockSSMAPI) StopAutomationExecutionWithContext(arg0 aws.Context, arg1 *ssm.StopAutomationExecutionInput, arg2 ...request.Option) (*ssm.StopAutomationExecutionOutput, error) {
+func (m *MockSSMAPI) StopAutomationExecutionWithContext(arg0 context.Context, arg1 *ssm.StopAutomationExecutionInput, arg2 ...request.Option) (*ssm.StopAutomationExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5413,7 +5413,7 @@ func (mr *MockSSMAPIMockRecorder) TerminateSessionRequest(arg0 interface{}) *gom
 }
 
 // TerminateSessionWithContext mocks base method
-func (m *MockSSMAPI) TerminateSessionWithContext(arg0 aws.Context, arg1 *ssm.TerminateSessionInput, arg2 ...request.Option) (*ssm.TerminateSessionOutput, error) {
+func (m *MockSSMAPI) TerminateSessionWithContext(arg0 context.Context, arg1 *ssm.TerminateSessionInput, arg2 ...request.Option) (*ssm.TerminateSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5493,7 +5493,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateAssociationStatusRequest(arg0 interface{
 }
 
 // UpdateAssociationStatusWithContext mocks base method
-func (m *MockSSMAPI) UpdateAssociationStatusWithContext(arg0 aws.Context, arg1 *ssm.UpdateAssociationStatusInput, arg2 ...request.Option) (*ssm.UpdateAssociationStatusOutput, error) {
+func (m *MockSSMAPI) UpdateAssociationStatusWithContext(arg0 context.Context, arg1 *ssm.UpdateAssociationStatusInput, arg2 ...request.Option) (*ssm.UpdateAssociationStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5513,7 +5513,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateAssociationStatusWithContext(arg0, arg1 
 }
 
 // UpdateAssociationWithContext mocks base method
-func (m *MockSSMAPI) UpdateAssociationWithContext(arg0 aws.Context, arg1 *ssm.UpdateAssociationInput, arg2 ...request.Option) (*ssm.UpdateAssociationOutput, error) {
+func (m *MockSSMAPI) UpdateAssociationWithContext(arg0 context.Context, arg1 *ssm.UpdateAssociationInput, arg2 ...request.Option) (*ssm.UpdateAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5578,7 +5578,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateDocumentDefaultVersionRequest(arg0 inter
 }
 
 // UpdateDocumentDefaultVersionWithContext mocks base method
-func (m *MockSSMAPI) UpdateDocumentDefaultVersionWithContext(arg0 aws.Context, arg1 *ssm.UpdateDocumentDefaultVersionInput, arg2 ...request.Option) (*ssm.UpdateDocumentDefaultVersionOutput, error) {
+func (m *MockSSMAPI) UpdateDocumentDefaultVersionWithContext(arg0 context.Context, arg1 *ssm.UpdateDocumentDefaultVersionInput, arg2 ...request.Option) (*ssm.UpdateDocumentDefaultVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5613,7 +5613,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateDocumentRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateDocumentWithContext mocks base method
-func (m *MockSSMAPI) UpdateDocumentWithContext(arg0 aws.Context, arg1 *ssm.UpdateDocumentInput, arg2 ...request.Option) (*ssm.UpdateDocumentOutput, error) {
+func (m *MockSSMAPI) UpdateDocumentWithContext(arg0 context.Context, arg1 *ssm.UpdateDocumentInput, arg2 ...request.Option) (*ssm.UpdateDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5693,7 +5693,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateMaintenanceWindowTargetRequest(arg0 inte
 }
 
 // UpdateMaintenanceWindowTargetWithContext mocks base method
-func (m *MockSSMAPI) UpdateMaintenanceWindowTargetWithContext(arg0 aws.Context, arg1 *ssm.UpdateMaintenanceWindowTargetInput, arg2 ...request.Option) (*ssm.UpdateMaintenanceWindowTargetOutput, error) {
+func (m *MockSSMAPI) UpdateMaintenanceWindowTargetWithContext(arg0 context.Context, arg1 *ssm.UpdateMaintenanceWindowTargetInput, arg2 ...request.Option) (*ssm.UpdateMaintenanceWindowTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5743,7 +5743,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateMaintenanceWindowTaskRequest(arg0 interf
 }
 
 // UpdateMaintenanceWindowTaskWithContext mocks base method
-func (m *MockSSMAPI) UpdateMaintenanceWindowTaskWithContext(arg0 aws.Context, arg1 *ssm.UpdateMaintenanceWindowTaskInput, arg2 ...request.Option) (*ssm.UpdateMaintenanceWindowTaskOutput, error) {
+func (m *MockSSMAPI) UpdateMaintenanceWindowTaskWithContext(arg0 context.Context, arg1 *ssm.UpdateMaintenanceWindowTaskInput, arg2 ...request.Option) (*ssm.UpdateMaintenanceWindowTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5763,7 +5763,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateMaintenanceWindowTaskWithContext(arg0, a
 }
 
 // UpdateMaintenanceWindowWithContext mocks base method
-func (m *MockSSMAPI) UpdateMaintenanceWindowWithContext(arg0 aws.Context, arg1 *ssm.UpdateMaintenanceWindowInput, arg2 ...request.Option) (*ssm.UpdateMaintenanceWindowOutput, error) {
+func (m *MockSSMAPI) UpdateMaintenanceWindowWithContext(arg0 context.Context, arg1 *ssm.UpdateMaintenanceWindowInput, arg2 ...request.Option) (*ssm.UpdateMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5813,7 +5813,7 @@ func (mr *MockSSMAPIMockRecorder) UpdateManagedInstanceRoleRequest(arg0 interfac
 }
 
 // UpdateManagedInstanceRoleWithContext mocks base method
-func (m *MockSSMAPI) UpdateManagedInstanceRoleWithContext(arg0 aws.Context, arg1 *ssm.UpdateManagedInstanceRoleInput, arg2 ...request.Option) (*ssm.UpdateManagedInstanceRoleOutput, error) {
+func (m *MockSSMAPI) UpdateManagedInstanceRoleWithContext(arg0 context.Context, arg1 *ssm.UpdateManagedInstanceRoleInput, arg2 ...request.Option) (*ssm.UpdateManagedInstanceRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5863,7 +5863,7 @@ func (mr *MockSSMAPIMockRecorder) UpdatePatchBaselineRequest(arg0 interface{}) *
 }
 
 // UpdatePatchBaselineWithContext mocks base method
-func (m *MockSSMAPI) UpdatePatchBaselineWithContext(arg0 aws.Context, arg1 *ssm.UpdatePatchBaselineInput, arg2 ...request.Option) (*ssm.UpdatePatchBaselineOutput, error) {
+func (m *MockSSMAPI) UpdatePatchBaselineWithContext(arg0 context.Context, arg1 *ssm.UpdatePatchBaselineInput, arg2 ...request.Option) (*ssm.UpdatePatchBaselineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

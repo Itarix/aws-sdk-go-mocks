@@ -5,7 +5,7 @@
 package budgetsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	budgets "github.com/aws/aws-sdk-go/service/budgets"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockBudgetsAPIMockRecorder) CreateBudgetRequest(arg0 interface{}) *gom
 }
 
 // CreateBudgetWithContext mocks base method
-func (m *MockBudgetsAPI) CreateBudgetWithContext(arg0 aws.Context, arg1 *budgets.CreateBudgetInput, arg2 ...request.Option) (*budgets.CreateBudgetOutput, error) {
+func (m *MockBudgetsAPI) CreateBudgetWithContext(arg0 context.Context, arg1 *budgets.CreateBudgetInput, arg2 ...request.Option) (*budgets.CreateBudgetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockBudgetsAPIMockRecorder) CreateNotificationRequest(arg0 interface{}
 }
 
 // CreateNotificationWithContext mocks base method
-func (m *MockBudgetsAPI) CreateNotificationWithContext(arg0 aws.Context, arg1 *budgets.CreateNotificationInput, arg2 ...request.Option) (*budgets.CreateNotificationOutput, error) {
+func (m *MockBudgetsAPI) CreateNotificationWithContext(arg0 context.Context, arg1 *budgets.CreateNotificationInput, arg2 ...request.Option) (*budgets.CreateNotificationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockBudgetsAPIMockRecorder) CreateSubscriberRequest(arg0 interface{}) 
 }
 
 // CreateSubscriberWithContext mocks base method
-func (m *MockBudgetsAPI) CreateSubscriberWithContext(arg0 aws.Context, arg1 *budgets.CreateSubscriberInput, arg2 ...request.Option) (*budgets.CreateSubscriberOutput, error) {
+func (m *MockBudgetsAPI) CreateSubscriberWithContext(arg0 context.Context, arg1 *budgets.CreateSubscriberInput, arg2 ...request.Option) (*budgets.CreateSubscriberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockBudgetsAPIMockRecorder) DeleteBudgetRequest(arg0 interface{}) *gom
 }
 
 // DeleteBudgetWithContext mocks base method
-func (m *MockBudgetsAPI) DeleteBudgetWithContext(arg0 aws.Context, arg1 *budgets.DeleteBudgetInput, arg2 ...request.Option) (*budgets.DeleteBudgetOutput, error) {
+func (m *MockBudgetsAPI) DeleteBudgetWithContext(arg0 context.Context, arg1 *budgets.DeleteBudgetInput, arg2 ...request.Option) (*budgets.DeleteBudgetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockBudgetsAPIMockRecorder) DeleteNotificationRequest(arg0 interface{}
 }
 
 // DeleteNotificationWithContext mocks base method
-func (m *MockBudgetsAPI) DeleteNotificationWithContext(arg0 aws.Context, arg1 *budgets.DeleteNotificationInput, arg2 ...request.Option) (*budgets.DeleteNotificationOutput, error) {
+func (m *MockBudgetsAPI) DeleteNotificationWithContext(arg0 context.Context, arg1 *budgets.DeleteNotificationInput, arg2 ...request.Option) (*budgets.DeleteNotificationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockBudgetsAPIMockRecorder) DeleteSubscriberRequest(arg0 interface{}) 
 }
 
 // DeleteSubscriberWithContext mocks base method
-func (m *MockBudgetsAPI) DeleteSubscriberWithContext(arg0 aws.Context, arg1 *budgets.DeleteSubscriberInput, arg2 ...request.Option) (*budgets.DeleteSubscriberOutput, error) {
+func (m *MockBudgetsAPI) DeleteSubscriberWithContext(arg0 context.Context, arg1 *budgets.DeleteSubscriberInput, arg2 ...request.Option) (*budgets.DeleteSubscriberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockBudgetsAPIMockRecorder) DescribeBudgetPerformanceHistoryRequest(ar
 }
 
 // DescribeBudgetPerformanceHistoryWithContext mocks base method
-func (m *MockBudgetsAPI) DescribeBudgetPerformanceHistoryWithContext(arg0 aws.Context, arg1 *budgets.DescribeBudgetPerformanceHistoryInput, arg2 ...request.Option) (*budgets.DescribeBudgetPerformanceHistoryOutput, error) {
+func (m *MockBudgetsAPI) DescribeBudgetPerformanceHistoryWithContext(arg0 context.Context, arg1 *budgets.DescribeBudgetPerformanceHistoryInput, arg2 ...request.Option) (*budgets.DescribeBudgetPerformanceHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockBudgetsAPIMockRecorder) DescribeBudgetRequest(arg0 interface{}) *g
 }
 
 // DescribeBudgetWithContext mocks base method
-func (m *MockBudgetsAPI) DescribeBudgetWithContext(arg0 aws.Context, arg1 *budgets.DescribeBudgetInput, arg2 ...request.Option) (*budgets.DescribeBudgetOutput, error) {
+func (m *MockBudgetsAPI) DescribeBudgetWithContext(arg0 context.Context, arg1 *budgets.DescribeBudgetInput, arg2 ...request.Option) (*budgets.DescribeBudgetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockBudgetsAPIMockRecorder) DescribeBudgetsRequest(arg0 interface{}) *
 }
 
 // DescribeBudgetsWithContext mocks base method
-func (m *MockBudgetsAPI) DescribeBudgetsWithContext(arg0 aws.Context, arg1 *budgets.DescribeBudgetsInput, arg2 ...request.Option) (*budgets.DescribeBudgetsOutput, error) {
+func (m *MockBudgetsAPI) DescribeBudgetsWithContext(arg0 context.Context, arg1 *budgets.DescribeBudgetsInput, arg2 ...request.Option) (*budgets.DescribeBudgetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockBudgetsAPIMockRecorder) DescribeNotificationsForBudgetRequest(arg0
 }
 
 // DescribeNotificationsForBudgetWithContext mocks base method
-func (m *MockBudgetsAPI) DescribeNotificationsForBudgetWithContext(arg0 aws.Context, arg1 *budgets.DescribeNotificationsForBudgetInput, arg2 ...request.Option) (*budgets.DescribeNotificationsForBudgetOutput, error) {
+func (m *MockBudgetsAPI) DescribeNotificationsForBudgetWithContext(arg0 context.Context, arg1 *budgets.DescribeNotificationsForBudgetInput, arg2 ...request.Option) (*budgets.DescribeNotificationsForBudgetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockBudgetsAPIMockRecorder) DescribeSubscribersForNotificationRequest(
 }
 
 // DescribeSubscribersForNotificationWithContext mocks base method
-func (m *MockBudgetsAPI) DescribeSubscribersForNotificationWithContext(arg0 aws.Context, arg1 *budgets.DescribeSubscribersForNotificationInput, arg2 ...request.Option) (*budgets.DescribeSubscribersForNotificationOutput, error) {
+func (m *MockBudgetsAPI) DescribeSubscribersForNotificationWithContext(arg0 context.Context, arg1 *budgets.DescribeSubscribersForNotificationInput, arg2 ...request.Option) (*budgets.DescribeSubscribersForNotificationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockBudgetsAPIMockRecorder) UpdateBudgetRequest(arg0 interface{}) *gom
 }
 
 // UpdateBudgetWithContext mocks base method
-func (m *MockBudgetsAPI) UpdateBudgetWithContext(arg0 aws.Context, arg1 *budgets.UpdateBudgetInput, arg2 ...request.Option) (*budgets.UpdateBudgetOutput, error) {
+func (m *MockBudgetsAPI) UpdateBudgetWithContext(arg0 context.Context, arg1 *budgets.UpdateBudgetInput, arg2 ...request.Option) (*budgets.UpdateBudgetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockBudgetsAPIMockRecorder) UpdateNotificationRequest(arg0 interface{}
 }
 
 // UpdateNotificationWithContext mocks base method
-func (m *MockBudgetsAPI) UpdateNotificationWithContext(arg0 aws.Context, arg1 *budgets.UpdateNotificationInput, arg2 ...request.Option) (*budgets.UpdateNotificationOutput, error) {
+func (m *MockBudgetsAPI) UpdateNotificationWithContext(arg0 context.Context, arg1 *budgets.UpdateNotificationInput, arg2 ...request.Option) (*budgets.UpdateNotificationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockBudgetsAPIMockRecorder) UpdateSubscriberRequest(arg0 interface{}) 
 }
 
 // UpdateSubscriberWithContext mocks base method
-func (m *MockBudgetsAPI) UpdateSubscriberWithContext(arg0 aws.Context, arg1 *budgets.UpdateSubscriberInput, arg2 ...request.Option) (*budgets.UpdateSubscriberOutput, error) {
+func (m *MockBudgetsAPI) UpdateSubscriberWithContext(arg0 context.Context, arg1 *budgets.UpdateSubscriberInput, arg2 ...request.Option) (*budgets.UpdateSubscriberOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

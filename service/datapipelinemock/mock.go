@@ -5,7 +5,7 @@
 package datapipelinemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	datapipeline "github.com/aws/aws-sdk-go/service/datapipeline"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDataPipelineAPIMockRecorder) ActivatePipelineRequest(arg0 interfac
 }
 
 // ActivatePipelineWithContext mocks base method
-func (m *MockDataPipelineAPI) ActivatePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.ActivatePipelineInput, arg2 ...request.Option) (*datapipeline.ActivatePipelineOutput, error) {
+func (m *MockDataPipelineAPI) ActivatePipelineWithContext(arg0 context.Context, arg1 *datapipeline.ActivatePipelineInput, arg2 ...request.Option) (*datapipeline.ActivatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDataPipelineAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gom
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockDataPipelineAPI) AddTagsWithContext(arg0 aws.Context, arg1 *datapipeline.AddTagsInput, arg2 ...request.Option) (*datapipeline.AddTagsOutput, error) {
+func (m *MockDataPipelineAPI) AddTagsWithContext(arg0 context.Context, arg1 *datapipeline.AddTagsInput, arg2 ...request.Option) (*datapipeline.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDataPipelineAPIMockRecorder) CreatePipelineRequest(arg0 interface{
 }
 
 // CreatePipelineWithContext mocks base method
-func (m *MockDataPipelineAPI) CreatePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.CreatePipelineInput, arg2 ...request.Option) (*datapipeline.CreatePipelineOutput, error) {
+func (m *MockDataPipelineAPI) CreatePipelineWithContext(arg0 context.Context, arg1 *datapipeline.CreatePipelineInput, arg2 ...request.Option) (*datapipeline.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDataPipelineAPIMockRecorder) DeactivatePipelineRequest(arg0 interf
 }
 
 // DeactivatePipelineWithContext mocks base method
-func (m *MockDataPipelineAPI) DeactivatePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.DeactivatePipelineInput, arg2 ...request.Option) (*datapipeline.DeactivatePipelineOutput, error) {
+func (m *MockDataPipelineAPI) DeactivatePipelineWithContext(arg0 context.Context, arg1 *datapipeline.DeactivatePipelineInput, arg2 ...request.Option) (*datapipeline.DeactivatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDataPipelineAPIMockRecorder) DeletePipelineRequest(arg0 interface{
 }
 
 // DeletePipelineWithContext mocks base method
-func (m *MockDataPipelineAPI) DeletePipelineWithContext(arg0 aws.Context, arg1 *datapipeline.DeletePipelineInput, arg2 ...request.Option) (*datapipeline.DeletePipelineOutput, error) {
+func (m *MockDataPipelineAPI) DeletePipelineWithContext(arg0 context.Context, arg1 *datapipeline.DeletePipelineInput, arg2 ...request.Option) (*datapipeline.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -315,7 +315,7 @@ func (mr *MockDataPipelineAPIMockRecorder) DescribeObjectsPages(arg0, arg1 inter
 }
 
 // DescribeObjectsPagesWithContext mocks base method
-func (m *MockDataPipelineAPI) DescribeObjectsPagesWithContext(arg0 aws.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 func(*datapipeline.DescribeObjectsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataPipelineAPI) DescribeObjectsPagesWithContext(arg0 context.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 func(*datapipeline.DescribeObjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -349,7 +349,7 @@ func (mr *MockDataPipelineAPIMockRecorder) DescribeObjectsRequest(arg0 interface
 }
 
 // DescribeObjectsWithContext mocks base method
-func (m *MockDataPipelineAPI) DescribeObjectsWithContext(arg0 aws.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 ...request.Option) (*datapipeline.DescribeObjectsOutput, error) {
+func (m *MockDataPipelineAPI) DescribeObjectsWithContext(arg0 context.Context, arg1 *datapipeline.DescribeObjectsInput, arg2 ...request.Option) (*datapipeline.DescribeObjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -399,7 +399,7 @@ func (mr *MockDataPipelineAPIMockRecorder) DescribePipelinesRequest(arg0 interfa
 }
 
 // DescribePipelinesWithContext mocks base method
-func (m *MockDataPipelineAPI) DescribePipelinesWithContext(arg0 aws.Context, arg1 *datapipeline.DescribePipelinesInput, arg2 ...request.Option) (*datapipeline.DescribePipelinesOutput, error) {
+func (m *MockDataPipelineAPI) DescribePipelinesWithContext(arg0 context.Context, arg1 *datapipeline.DescribePipelinesInput, arg2 ...request.Option) (*datapipeline.DescribePipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockDataPipelineAPIMockRecorder) EvaluateExpressionRequest(arg0 interf
 }
 
 // EvaluateExpressionWithContext mocks base method
-func (m *MockDataPipelineAPI) EvaluateExpressionWithContext(arg0 aws.Context, arg1 *datapipeline.EvaluateExpressionInput, arg2 ...request.Option) (*datapipeline.EvaluateExpressionOutput, error) {
+func (m *MockDataPipelineAPI) EvaluateExpressionWithContext(arg0 context.Context, arg1 *datapipeline.EvaluateExpressionInput, arg2 ...request.Option) (*datapipeline.EvaluateExpressionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockDataPipelineAPIMockRecorder) GetPipelineDefinitionRequest(arg0 int
 }
 
 // GetPipelineDefinitionWithContext mocks base method
-func (m *MockDataPipelineAPI) GetPipelineDefinitionWithContext(arg0 aws.Context, arg1 *datapipeline.GetPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.GetPipelineDefinitionOutput, error) {
+func (m *MockDataPipelineAPI) GetPipelineDefinitionWithContext(arg0 context.Context, arg1 *datapipeline.GetPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.GetPipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -548,7 +548,7 @@ func (mr *MockDataPipelineAPIMockRecorder) ListPipelinesPages(arg0, arg1 interfa
 }
 
 // ListPipelinesPagesWithContext mocks base method
-func (m *MockDataPipelineAPI) ListPipelinesPagesWithContext(arg0 aws.Context, arg1 *datapipeline.ListPipelinesInput, arg2 func(*datapipeline.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataPipelineAPI) ListPipelinesPagesWithContext(arg0 context.Context, arg1 *datapipeline.ListPipelinesInput, arg2 func(*datapipeline.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -582,7 +582,7 @@ func (mr *MockDataPipelineAPIMockRecorder) ListPipelinesRequest(arg0 interface{}
 }
 
 // ListPipelinesWithContext mocks base method
-func (m *MockDataPipelineAPI) ListPipelinesWithContext(arg0 aws.Context, arg1 *datapipeline.ListPipelinesInput, arg2 ...request.Option) (*datapipeline.ListPipelinesOutput, error) {
+func (m *MockDataPipelineAPI) ListPipelinesWithContext(arg0 context.Context, arg1 *datapipeline.ListPipelinesInput, arg2 ...request.Option) (*datapipeline.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockDataPipelineAPIMockRecorder) PollForTaskRequest(arg0 interface{}) 
 }
 
 // PollForTaskWithContext mocks base method
-func (m *MockDataPipelineAPI) PollForTaskWithContext(arg0 aws.Context, arg1 *datapipeline.PollForTaskInput, arg2 ...request.Option) (*datapipeline.PollForTaskOutput, error) {
+func (m *MockDataPipelineAPI) PollForTaskWithContext(arg0 context.Context, arg1 *datapipeline.PollForTaskInput, arg2 ...request.Option) (*datapipeline.PollForTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockDataPipelineAPIMockRecorder) PutPipelineDefinitionRequest(arg0 int
 }
 
 // PutPipelineDefinitionWithContext mocks base method
-func (m *MockDataPipelineAPI) PutPipelineDefinitionWithContext(arg0 aws.Context, arg1 *datapipeline.PutPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.PutPipelineDefinitionOutput, error) {
+func (m *MockDataPipelineAPI) PutPipelineDefinitionWithContext(arg0 context.Context, arg1 *datapipeline.PutPipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.PutPipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockDataPipelineAPIMockRecorder) QueryObjectsPages(arg0, arg1 interfac
 }
 
 // QueryObjectsPagesWithContext mocks base method
-func (m *MockDataPipelineAPI) QueryObjectsPagesWithContext(arg0 aws.Context, arg1 *datapipeline.QueryObjectsInput, arg2 func(*datapipeline.QueryObjectsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDataPipelineAPI) QueryObjectsPagesWithContext(arg0 context.Context, arg1 *datapipeline.QueryObjectsInput, arg2 func(*datapipeline.QueryObjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -765,7 +765,7 @@ func (mr *MockDataPipelineAPIMockRecorder) QueryObjectsRequest(arg0 interface{})
 }
 
 // QueryObjectsWithContext mocks base method
-func (m *MockDataPipelineAPI) QueryObjectsWithContext(arg0 aws.Context, arg1 *datapipeline.QueryObjectsInput, arg2 ...request.Option) (*datapipeline.QueryObjectsOutput, error) {
+func (m *MockDataPipelineAPI) QueryObjectsWithContext(arg0 context.Context, arg1 *datapipeline.QueryObjectsInput, arg2 ...request.Option) (*datapipeline.QueryObjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -815,7 +815,7 @@ func (mr *MockDataPipelineAPIMockRecorder) RemoveTagsRequest(arg0 interface{}) *
 }
 
 // RemoveTagsWithContext mocks base method
-func (m *MockDataPipelineAPI) RemoveTagsWithContext(arg0 aws.Context, arg1 *datapipeline.RemoveTagsInput, arg2 ...request.Option) (*datapipeline.RemoveTagsOutput, error) {
+func (m *MockDataPipelineAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *datapipeline.RemoveTagsInput, arg2 ...request.Option) (*datapipeline.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -865,7 +865,7 @@ func (mr *MockDataPipelineAPIMockRecorder) ReportTaskProgressRequest(arg0 interf
 }
 
 // ReportTaskProgressWithContext mocks base method
-func (m *MockDataPipelineAPI) ReportTaskProgressWithContext(arg0 aws.Context, arg1 *datapipeline.ReportTaskProgressInput, arg2 ...request.Option) (*datapipeline.ReportTaskProgressOutput, error) {
+func (m *MockDataPipelineAPI) ReportTaskProgressWithContext(arg0 context.Context, arg1 *datapipeline.ReportTaskProgressInput, arg2 ...request.Option) (*datapipeline.ReportTaskProgressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -915,7 +915,7 @@ func (mr *MockDataPipelineAPIMockRecorder) ReportTaskRunnerHeartbeatRequest(arg0
 }
 
 // ReportTaskRunnerHeartbeatWithContext mocks base method
-func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatWithContext(arg0 aws.Context, arg1 *datapipeline.ReportTaskRunnerHeartbeatInput, arg2 ...request.Option) (*datapipeline.ReportTaskRunnerHeartbeatOutput, error) {
+func (m *MockDataPipelineAPI) ReportTaskRunnerHeartbeatWithContext(arg0 context.Context, arg1 *datapipeline.ReportTaskRunnerHeartbeatInput, arg2 ...request.Option) (*datapipeline.ReportTaskRunnerHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -965,7 +965,7 @@ func (mr *MockDataPipelineAPIMockRecorder) SetStatusRequest(arg0 interface{}) *g
 }
 
 // SetStatusWithContext mocks base method
-func (m *MockDataPipelineAPI) SetStatusWithContext(arg0 aws.Context, arg1 *datapipeline.SetStatusInput, arg2 ...request.Option) (*datapipeline.SetStatusOutput, error) {
+func (m *MockDataPipelineAPI) SetStatusWithContext(arg0 context.Context, arg1 *datapipeline.SetStatusInput, arg2 ...request.Option) (*datapipeline.SetStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1015,7 +1015,7 @@ func (mr *MockDataPipelineAPIMockRecorder) SetTaskStatusRequest(arg0 interface{}
 }
 
 // SetTaskStatusWithContext mocks base method
-func (m *MockDataPipelineAPI) SetTaskStatusWithContext(arg0 aws.Context, arg1 *datapipeline.SetTaskStatusInput, arg2 ...request.Option) (*datapipeline.SetTaskStatusOutput, error) {
+func (m *MockDataPipelineAPI) SetTaskStatusWithContext(arg0 context.Context, arg1 *datapipeline.SetTaskStatusInput, arg2 ...request.Option) (*datapipeline.SetTaskStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1065,7 +1065,7 @@ func (mr *MockDataPipelineAPIMockRecorder) ValidatePipelineDefinitionRequest(arg
 }
 
 // ValidatePipelineDefinitionWithContext mocks base method
-func (m *MockDataPipelineAPI) ValidatePipelineDefinitionWithContext(arg0 aws.Context, arg1 *datapipeline.ValidatePipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.ValidatePipelineDefinitionOutput, error) {
+func (m *MockDataPipelineAPI) ValidatePipelineDefinitionWithContext(arg0 context.Context, arg1 *datapipeline.ValidatePipelineDefinitionInput, arg2 ...request.Option) (*datapipeline.ValidatePipelineDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package healthmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	health "github.com/aws/aws-sdk-go/service/health"
 	gomock "github.com/golang/mock/gomock"
@@ -65,7 +65,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesPages(arg0, arg1 in
 }
 
 // DescribeAffectedEntitiesPagesWithContext mocks base method
-func (m *MockHealthAPI) DescribeAffectedEntitiesPagesWithContext(arg0 aws.Context, arg1 *health.DescribeAffectedEntitiesInput, arg2 func(*health.DescribeAffectedEntitiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockHealthAPI) DescribeAffectedEntitiesPagesWithContext(arg0 context.Context, arg1 *health.DescribeAffectedEntitiesInput, arg2 func(*health.DescribeAffectedEntitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -99,7 +99,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesRequest(arg0 interf
 }
 
 // DescribeAffectedEntitiesWithContext mocks base method
-func (m *MockHealthAPI) DescribeAffectedEntitiesWithContext(arg0 aws.Context, arg1 *health.DescribeAffectedEntitiesInput, arg2 ...request.Option) (*health.DescribeAffectedEntitiesOutput, error) {
+func (m *MockHealthAPI) DescribeAffectedEntitiesWithContext(arg0 context.Context, arg1 *health.DescribeAffectedEntitiesInput, arg2 ...request.Option) (*health.DescribeAffectedEntitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -149,7 +149,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEntityAggregatesRequest(arg0 interf
 }
 
 // DescribeEntityAggregatesWithContext mocks base method
-func (m *MockHealthAPI) DescribeEntityAggregatesWithContext(arg0 aws.Context, arg1 *health.DescribeEntityAggregatesInput, arg2 ...request.Option) (*health.DescribeEntityAggregatesOutput, error) {
+func (m *MockHealthAPI) DescribeEntityAggregatesWithContext(arg0 context.Context, arg1 *health.DescribeEntityAggregatesInput, arg2 ...request.Option) (*health.DescribeEntityAggregatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -198,7 +198,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventAggregatesPages(arg0, arg1 int
 }
 
 // DescribeEventAggregatesPagesWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventAggregatesPagesWithContext(arg0 aws.Context, arg1 *health.DescribeEventAggregatesInput, arg2 func(*health.DescribeEventAggregatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockHealthAPI) DescribeEventAggregatesPagesWithContext(arg0 context.Context, arg1 *health.DescribeEventAggregatesInput, arg2 func(*health.DescribeEventAggregatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -232,7 +232,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventAggregatesRequest(arg0 interfa
 }
 
 // DescribeEventAggregatesWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventAggregatesWithContext(arg0 aws.Context, arg1 *health.DescribeEventAggregatesInput, arg2 ...request.Option) (*health.DescribeEventAggregatesOutput, error) {
+func (m *MockHealthAPI) DescribeEventAggregatesWithContext(arg0 context.Context, arg1 *health.DescribeEventAggregatesInput, arg2 ...request.Option) (*health.DescribeEventAggregatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -282,7 +282,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventDetailsRequest(arg0 interface{
 }
 
 // DescribeEventDetailsWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventDetailsWithContext(arg0 aws.Context, arg1 *health.DescribeEventDetailsInput, arg2 ...request.Option) (*health.DescribeEventDetailsOutput, error) {
+func (m *MockHealthAPI) DescribeEventDetailsWithContext(arg0 context.Context, arg1 *health.DescribeEventDetailsInput, arg2 ...request.Option) (*health.DescribeEventDetailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventTypesPages(arg0, arg1 interfac
 }
 
 // DescribeEventTypesPagesWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventTypesPagesWithContext(arg0 aws.Context, arg1 *health.DescribeEventTypesInput, arg2 func(*health.DescribeEventTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockHealthAPI) DescribeEventTypesPagesWithContext(arg0 context.Context, arg1 *health.DescribeEventTypesInput, arg2 func(*health.DescribeEventTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -365,7 +365,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventTypesRequest(arg0 interface{})
 }
 
 // DescribeEventTypesWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventTypesWithContext(arg0 aws.Context, arg1 *health.DescribeEventTypesInput, arg2 ...request.Option) (*health.DescribeEventTypesOutput, error) {
+func (m *MockHealthAPI) DescribeEventTypesWithContext(arg0 context.Context, arg1 *health.DescribeEventTypesInput, arg2 ...request.Option) (*health.DescribeEventTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -414,7 +414,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{})
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *health.DescribeEventsInput, arg2 func(*health.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockHealthAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *health.DescribeEventsInput, arg2 func(*health.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -448,7 +448,7 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *go
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockHealthAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *health.DescribeEventsInput, arg2 ...request.Option) (*health.DescribeEventsOutput, error) {
+func (m *MockHealthAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *health.DescribeEventsInput, arg2 ...request.Option) (*health.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

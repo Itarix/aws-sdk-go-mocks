@@ -5,7 +5,7 @@
 package organizationsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	organizations "github.com/aws/aws-sdk-go/service/organizations"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockOrganizationsAPIMockRecorder) AcceptHandshakeRequest(arg0 interfac
 }
 
 // AcceptHandshakeWithContext mocks base method
-func (m *MockOrganizationsAPI) AcceptHandshakeWithContext(arg0 aws.Context, arg1 *organizations.AcceptHandshakeInput, arg2 ...request.Option) (*organizations.AcceptHandshakeOutput, error) {
+func (m *MockOrganizationsAPI) AcceptHandshakeWithContext(arg0 context.Context, arg1 *organizations.AcceptHandshakeInput, arg2 ...request.Option) (*organizations.AcceptHandshakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockOrganizationsAPIMockRecorder) AttachPolicyRequest(arg0 interface{}
 }
 
 // AttachPolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) AttachPolicyWithContext(arg0 aws.Context, arg1 *organizations.AttachPolicyInput, arg2 ...request.Option) (*organizations.AttachPolicyOutput, error) {
+func (m *MockOrganizationsAPI) AttachPolicyWithContext(arg0 context.Context, arg1 *organizations.AttachPolicyInput, arg2 ...request.Option) (*organizations.AttachPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockOrganizationsAPIMockRecorder) CancelHandshakeRequest(arg0 interfac
 }
 
 // CancelHandshakeWithContext mocks base method
-func (m *MockOrganizationsAPI) CancelHandshakeWithContext(arg0 aws.Context, arg1 *organizations.CancelHandshakeInput, arg2 ...request.Option) (*organizations.CancelHandshakeOutput, error) {
+func (m *MockOrganizationsAPI) CancelHandshakeWithContext(arg0 context.Context, arg1 *organizations.CancelHandshakeInput, arg2 ...request.Option) (*organizations.CancelHandshakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockOrganizationsAPIMockRecorder) CreateAccountRequest(arg0 interface{
 }
 
 // CreateAccountWithContext mocks base method
-func (m *MockOrganizationsAPI) CreateAccountWithContext(arg0 aws.Context, arg1 *organizations.CreateAccountInput, arg2 ...request.Option) (*organizations.CreateAccountOutput, error) {
+func (m *MockOrganizationsAPI) CreateAccountWithContext(arg0 context.Context, arg1 *organizations.CreateAccountInput, arg2 ...request.Option) (*organizations.CreateAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockOrganizationsAPIMockRecorder) CreateOrganizationRequest(arg0 inter
 }
 
 // CreateOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) CreateOrganizationWithContext(arg0 aws.Context, arg1 *organizations.CreateOrganizationInput, arg2 ...request.Option) (*organizations.CreateOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) CreateOrganizationWithContext(arg0 context.Context, arg1 *organizations.CreateOrganizationInput, arg2 ...request.Option) (*organizations.CreateOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockOrganizationsAPIMockRecorder) CreateOrganizationalUnitRequest(arg0
 }
 
 // CreateOrganizationalUnitWithContext mocks base method
-func (m *MockOrganizationsAPI) CreateOrganizationalUnitWithContext(arg0 aws.Context, arg1 *organizations.CreateOrganizationalUnitInput, arg2 ...request.Option) (*organizations.CreateOrganizationalUnitOutput, error) {
+func (m *MockOrganizationsAPI) CreateOrganizationalUnitWithContext(arg0 context.Context, arg1 *organizations.CreateOrganizationalUnitInput, arg2 ...request.Option) (*organizations.CreateOrganizationalUnitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockOrganizationsAPIMockRecorder) CreatePolicyRequest(arg0 interface{}
 }
 
 // CreatePolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) CreatePolicyWithContext(arg0 aws.Context, arg1 *organizations.CreatePolicyInput, arg2 ...request.Option) (*organizations.CreatePolicyOutput, error) {
+func (m *MockOrganizationsAPI) CreatePolicyWithContext(arg0 context.Context, arg1 *organizations.CreatePolicyInput, arg2 ...request.Option) (*organizations.CreatePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DeclineHandshakeRequest(arg0 interfa
 }
 
 // DeclineHandshakeWithContext mocks base method
-func (m *MockOrganizationsAPI) DeclineHandshakeWithContext(arg0 aws.Context, arg1 *organizations.DeclineHandshakeInput, arg2 ...request.Option) (*organizations.DeclineHandshakeOutput, error) {
+func (m *MockOrganizationsAPI) DeclineHandshakeWithContext(arg0 context.Context, arg1 *organizations.DeclineHandshakeInput, arg2 ...request.Option) (*organizations.DeclineHandshakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DeleteOrganizationRequest(arg0 inter
 }
 
 // DeleteOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) DeleteOrganizationWithContext(arg0 aws.Context, arg1 *organizations.DeleteOrganizationInput, arg2 ...request.Option) (*organizations.DeleteOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) DeleteOrganizationWithContext(arg0 context.Context, arg1 *organizations.DeleteOrganizationInput, arg2 ...request.Option) (*organizations.DeleteOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DeleteOrganizationalUnitRequest(arg0
 }
 
 // DeleteOrganizationalUnitWithContext mocks base method
-func (m *MockOrganizationsAPI) DeleteOrganizationalUnitWithContext(arg0 aws.Context, arg1 *organizations.DeleteOrganizationalUnitInput, arg2 ...request.Option) (*organizations.DeleteOrganizationalUnitOutput, error) {
+func (m *MockOrganizationsAPI) DeleteOrganizationalUnitWithContext(arg0 context.Context, arg1 *organizations.DeleteOrganizationalUnitInput, arg2 ...request.Option) (*organizations.DeleteOrganizationalUnitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DeletePolicyRequest(arg0 interface{}
 }
 
 // DeletePolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) DeletePolicyWithContext(arg0 aws.Context, arg1 *organizations.DeletePolicyInput, arg2 ...request.Option) (*organizations.DeletePolicyOutput, error) {
+func (m *MockOrganizationsAPI) DeletePolicyWithContext(arg0 context.Context, arg1 *organizations.DeletePolicyInput, arg2 ...request.Option) (*organizations.DeletePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribeAccountRequest(arg0 interfac
 }
 
 // DescribeAccountWithContext mocks base method
-func (m *MockOrganizationsAPI) DescribeAccountWithContext(arg0 aws.Context, arg1 *organizations.DescribeAccountInput, arg2 ...request.Option) (*organizations.DescribeAccountOutput, error) {
+func (m *MockOrganizationsAPI) DescribeAccountWithContext(arg0 context.Context, arg1 *organizations.DescribeAccountInput, arg2 ...request.Option) (*organizations.DescribeAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribeCreateAccountStatusRequest(a
 }
 
 // DescribeCreateAccountStatusWithContext mocks base method
-func (m *MockOrganizationsAPI) DescribeCreateAccountStatusWithContext(arg0 aws.Context, arg1 *organizations.DescribeCreateAccountStatusInput, arg2 ...request.Option) (*organizations.DescribeCreateAccountStatusOutput, error) {
+func (m *MockOrganizationsAPI) DescribeCreateAccountStatusWithContext(arg0 context.Context, arg1 *organizations.DescribeCreateAccountStatusInput, arg2 ...request.Option) (*organizations.DescribeCreateAccountStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribeHandshakeRequest(arg0 interf
 }
 
 // DescribeHandshakeWithContext mocks base method
-func (m *MockOrganizationsAPI) DescribeHandshakeWithContext(arg0 aws.Context, arg1 *organizations.DescribeHandshakeInput, arg2 ...request.Option) (*organizations.DescribeHandshakeOutput, error) {
+func (m *MockOrganizationsAPI) DescribeHandshakeWithContext(arg0 context.Context, arg1 *organizations.DescribeHandshakeInput, arg2 ...request.Option) (*organizations.DescribeHandshakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribeOrganizationRequest(arg0 int
 }
 
 // DescribeOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) DescribeOrganizationWithContext(arg0 aws.Context, arg1 *organizations.DescribeOrganizationInput, arg2 ...request.Option) (*organizations.DescribeOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) DescribeOrganizationWithContext(arg0 context.Context, arg1 *organizations.DescribeOrganizationInput, arg2 ...request.Option) (*organizations.DescribeOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribeOrganizationalUnitRequest(ar
 }
 
 // DescribeOrganizationalUnitWithContext mocks base method
-func (m *MockOrganizationsAPI) DescribeOrganizationalUnitWithContext(arg0 aws.Context, arg1 *organizations.DescribeOrganizationalUnitInput, arg2 ...request.Option) (*organizations.DescribeOrganizationalUnitOutput, error) {
+func (m *MockOrganizationsAPI) DescribeOrganizationalUnitWithContext(arg0 context.Context, arg1 *organizations.DescribeOrganizationalUnitInput, arg2 ...request.Option) (*organizations.DescribeOrganizationalUnitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribePolicyRequest(arg0 interface
 }
 
 // DescribePolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) DescribePolicyWithContext(arg0 aws.Context, arg1 *organizations.DescribePolicyInput, arg2 ...request.Option) (*organizations.DescribePolicyOutput, error) {
+func (m *MockOrganizationsAPI) DescribePolicyWithContext(arg0 context.Context, arg1 *organizations.DescribePolicyInput, arg2 ...request.Option) (*organizations.DescribePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DetachPolicyRequest(arg0 interface{}
 }
 
 // DetachPolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) DetachPolicyWithContext(arg0 aws.Context, arg1 *organizations.DetachPolicyInput, arg2 ...request.Option) (*organizations.DetachPolicyOutput, error) {
+func (m *MockOrganizationsAPI) DetachPolicyWithContext(arg0 context.Context, arg1 *organizations.DetachPolicyInput, arg2 ...request.Option) (*organizations.DetachPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DisableAWSServiceAccessRequest(arg0 
 }
 
 // DisableAWSServiceAccessWithContext mocks base method
-func (m *MockOrganizationsAPI) DisableAWSServiceAccessWithContext(arg0 aws.Context, arg1 *organizations.DisableAWSServiceAccessInput, arg2 ...request.Option) (*organizations.DisableAWSServiceAccessOutput, error) {
+func (m *MockOrganizationsAPI) DisableAWSServiceAccessWithContext(arg0 context.Context, arg1 *organizations.DisableAWSServiceAccessInput, arg2 ...request.Option) (*organizations.DisableAWSServiceAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockOrganizationsAPIMockRecorder) DisablePolicyTypeRequest(arg0 interf
 }
 
 // DisablePolicyTypeWithContext mocks base method
-func (m *MockOrganizationsAPI) DisablePolicyTypeWithContext(arg0 aws.Context, arg1 *organizations.DisablePolicyTypeInput, arg2 ...request.Option) (*organizations.DisablePolicyTypeOutput, error) {
+func (m *MockOrganizationsAPI) DisablePolicyTypeWithContext(arg0 context.Context, arg1 *organizations.DisablePolicyTypeInput, arg2 ...request.Option) (*organizations.DisablePolicyTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockOrganizationsAPIMockRecorder) EnableAWSServiceAccessRequest(arg0 i
 }
 
 // EnableAWSServiceAccessWithContext mocks base method
-func (m *MockOrganizationsAPI) EnableAWSServiceAccessWithContext(arg0 aws.Context, arg1 *organizations.EnableAWSServiceAccessInput, arg2 ...request.Option) (*organizations.EnableAWSServiceAccessOutput, error) {
+func (m *MockOrganizationsAPI) EnableAWSServiceAccessWithContext(arg0 context.Context, arg1 *organizations.EnableAWSServiceAccessInput, arg2 ...request.Option) (*organizations.EnableAWSServiceAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockOrganizationsAPIMockRecorder) EnableAllFeaturesRequest(arg0 interf
 }
 
 // EnableAllFeaturesWithContext mocks base method
-func (m *MockOrganizationsAPI) EnableAllFeaturesWithContext(arg0 aws.Context, arg1 *organizations.EnableAllFeaturesInput, arg2 ...request.Option) (*organizations.EnableAllFeaturesOutput, error) {
+func (m *MockOrganizationsAPI) EnableAllFeaturesWithContext(arg0 context.Context, arg1 *organizations.EnableAllFeaturesInput, arg2 ...request.Option) (*organizations.EnableAllFeaturesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockOrganizationsAPIMockRecorder) EnablePolicyTypeRequest(arg0 interfa
 }
 
 // EnablePolicyTypeWithContext mocks base method
-func (m *MockOrganizationsAPI) EnablePolicyTypeWithContext(arg0 aws.Context, arg1 *organizations.EnablePolicyTypeInput, arg2 ...request.Option) (*organizations.EnablePolicyTypeOutput, error) {
+func (m *MockOrganizationsAPI) EnablePolicyTypeWithContext(arg0 context.Context, arg1 *organizations.EnablePolicyTypeInput, arg2 ...request.Option) (*organizations.EnablePolicyTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockOrganizationsAPIMockRecorder) InviteAccountToOrganizationRequest(a
 }
 
 // InviteAccountToOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) InviteAccountToOrganizationWithContext(arg0 aws.Context, arg1 *organizations.InviteAccountToOrganizationInput, arg2 ...request.Option) (*organizations.InviteAccountToOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) InviteAccountToOrganizationWithContext(arg0 context.Context, arg1 *organizations.InviteAccountToOrganizationInput, arg2 ...request.Option) (*organizations.InviteAccountToOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockOrganizationsAPIMockRecorder) LeaveOrganizationRequest(arg0 interf
 }
 
 // LeaveOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) LeaveOrganizationWithContext(arg0 aws.Context, arg1 *organizations.LeaveOrganizationInput, arg2 ...request.Option) (*organizations.LeaveOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) LeaveOrganizationWithContext(arg0 context.Context, arg1 *organizations.LeaveOrganizationInput, arg2 ...request.Option) (*organizations.LeaveOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListAWSServiceAccessForOrganizationP
 }
 
 // ListAWSServiceAccessForOrganizationPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListAWSServiceAccessForOrganizationPagesWithContext(arg0 aws.Context, arg1 *organizations.ListAWSServiceAccessForOrganizationInput, arg2 func(*organizations.ListAWSServiceAccessForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListAWSServiceAccessForOrganizationPagesWithContext(arg0 context.Context, arg1 *organizations.ListAWSServiceAccessForOrganizationInput, arg2 func(*organizations.ListAWSServiceAccessForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1349,7 +1349,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListAWSServiceAccessForOrganizationR
 }
 
 // ListAWSServiceAccessForOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) ListAWSServiceAccessForOrganizationWithContext(arg0 aws.Context, arg1 *organizations.ListAWSServiceAccessForOrganizationInput, arg2 ...request.Option) (*organizations.ListAWSServiceAccessForOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) ListAWSServiceAccessForOrganizationWithContext(arg0 context.Context, arg1 *organizations.ListAWSServiceAccessForOrganizationInput, arg2 ...request.Option) (*organizations.ListAWSServiceAccessForOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1413,7 +1413,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListAccountsForParentPages(arg0, arg
 }
 
 // ListAccountsForParentPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListAccountsForParentPagesWithContext(arg0 aws.Context, arg1 *organizations.ListAccountsForParentInput, arg2 func(*organizations.ListAccountsForParentOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListAccountsForParentPagesWithContext(arg0 context.Context, arg1 *organizations.ListAccountsForParentInput, arg2 func(*organizations.ListAccountsForParentOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1447,7 +1447,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListAccountsForParentRequest(arg0 in
 }
 
 // ListAccountsForParentWithContext mocks base method
-func (m *MockOrganizationsAPI) ListAccountsForParentWithContext(arg0 aws.Context, arg1 *organizations.ListAccountsForParentInput, arg2 ...request.Option) (*organizations.ListAccountsForParentOutput, error) {
+func (m *MockOrganizationsAPI) ListAccountsForParentWithContext(arg0 context.Context, arg1 *organizations.ListAccountsForParentInput, arg2 ...request.Option) (*organizations.ListAccountsForParentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListAccountsPages(arg0, arg1 interfa
 }
 
 // ListAccountsPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListAccountsPagesWithContext(arg0 aws.Context, arg1 *organizations.ListAccountsInput, arg2 func(*organizations.ListAccountsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListAccountsPagesWithContext(arg0 context.Context, arg1 *organizations.ListAccountsInput, arg2 func(*organizations.ListAccountsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1515,7 +1515,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListAccountsRequest(arg0 interface{}
 }
 
 // ListAccountsWithContext mocks base method
-func (m *MockOrganizationsAPI) ListAccountsWithContext(arg0 aws.Context, arg1 *organizations.ListAccountsInput, arg2 ...request.Option) (*organizations.ListAccountsOutput, error) {
+func (m *MockOrganizationsAPI) ListAccountsWithContext(arg0 context.Context, arg1 *organizations.ListAccountsInput, arg2 ...request.Option) (*organizations.ListAccountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1564,7 +1564,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListChildrenPages(arg0, arg1 interfa
 }
 
 // ListChildrenPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListChildrenPagesWithContext(arg0 aws.Context, arg1 *organizations.ListChildrenInput, arg2 func(*organizations.ListChildrenOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListChildrenPagesWithContext(arg0 context.Context, arg1 *organizations.ListChildrenInput, arg2 func(*organizations.ListChildrenOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1598,7 +1598,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListChildrenRequest(arg0 interface{}
 }
 
 // ListChildrenWithContext mocks base method
-func (m *MockOrganizationsAPI) ListChildrenWithContext(arg0 aws.Context, arg1 *organizations.ListChildrenInput, arg2 ...request.Option) (*organizations.ListChildrenOutput, error) {
+func (m *MockOrganizationsAPI) ListChildrenWithContext(arg0 context.Context, arg1 *organizations.ListChildrenInput, arg2 ...request.Option) (*organizations.ListChildrenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1647,7 +1647,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListCreateAccountStatusPages(arg0, a
 }
 
 // ListCreateAccountStatusPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListCreateAccountStatusPagesWithContext(arg0 aws.Context, arg1 *organizations.ListCreateAccountStatusInput, arg2 func(*organizations.ListCreateAccountStatusOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListCreateAccountStatusPagesWithContext(arg0 context.Context, arg1 *organizations.ListCreateAccountStatusInput, arg2 func(*organizations.ListCreateAccountStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1681,7 +1681,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListCreateAccountStatusRequest(arg0 
 }
 
 // ListCreateAccountStatusWithContext mocks base method
-func (m *MockOrganizationsAPI) ListCreateAccountStatusWithContext(arg0 aws.Context, arg1 *organizations.ListCreateAccountStatusInput, arg2 ...request.Option) (*organizations.ListCreateAccountStatusOutput, error) {
+func (m *MockOrganizationsAPI) ListCreateAccountStatusWithContext(arg0 context.Context, arg1 *organizations.ListCreateAccountStatusInput, arg2 ...request.Option) (*organizations.ListCreateAccountStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1730,7 +1730,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListHandshakesForAccountPages(arg0, 
 }
 
 // ListHandshakesForAccountPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListHandshakesForAccountPagesWithContext(arg0 aws.Context, arg1 *organizations.ListHandshakesForAccountInput, arg2 func(*organizations.ListHandshakesForAccountOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListHandshakesForAccountPagesWithContext(arg0 context.Context, arg1 *organizations.ListHandshakesForAccountInput, arg2 func(*organizations.ListHandshakesForAccountOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1764,7 +1764,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListHandshakesForAccountRequest(arg0
 }
 
 // ListHandshakesForAccountWithContext mocks base method
-func (m *MockOrganizationsAPI) ListHandshakesForAccountWithContext(arg0 aws.Context, arg1 *organizations.ListHandshakesForAccountInput, arg2 ...request.Option) (*organizations.ListHandshakesForAccountOutput, error) {
+func (m *MockOrganizationsAPI) ListHandshakesForAccountWithContext(arg0 context.Context, arg1 *organizations.ListHandshakesForAccountInput, arg2 ...request.Option) (*organizations.ListHandshakesForAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1813,7 +1813,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListHandshakesForOrganizationPages(a
 }
 
 // ListHandshakesForOrganizationPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListHandshakesForOrganizationPagesWithContext(arg0 aws.Context, arg1 *organizations.ListHandshakesForOrganizationInput, arg2 func(*organizations.ListHandshakesForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListHandshakesForOrganizationPagesWithContext(arg0 context.Context, arg1 *organizations.ListHandshakesForOrganizationInput, arg2 func(*organizations.ListHandshakesForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1847,7 +1847,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListHandshakesForOrganizationRequest
 }
 
 // ListHandshakesForOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) ListHandshakesForOrganizationWithContext(arg0 aws.Context, arg1 *organizations.ListHandshakesForOrganizationInput, arg2 ...request.Option) (*organizations.ListHandshakesForOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) ListHandshakesForOrganizationWithContext(arg0 context.Context, arg1 *organizations.ListHandshakesForOrganizationInput, arg2 ...request.Option) (*organizations.ListHandshakesForOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1896,7 +1896,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListOrganizationalUnitsForParentPage
 }
 
 // ListOrganizationalUnitsForParentPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListOrganizationalUnitsForParentPagesWithContext(arg0 aws.Context, arg1 *organizations.ListOrganizationalUnitsForParentInput, arg2 func(*organizations.ListOrganizationalUnitsForParentOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListOrganizationalUnitsForParentPagesWithContext(arg0 context.Context, arg1 *organizations.ListOrganizationalUnitsForParentInput, arg2 func(*organizations.ListOrganizationalUnitsForParentOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1930,7 +1930,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListOrganizationalUnitsForParentRequ
 }
 
 // ListOrganizationalUnitsForParentWithContext mocks base method
-func (m *MockOrganizationsAPI) ListOrganizationalUnitsForParentWithContext(arg0 aws.Context, arg1 *organizations.ListOrganizationalUnitsForParentInput, arg2 ...request.Option) (*organizations.ListOrganizationalUnitsForParentOutput, error) {
+func (m *MockOrganizationsAPI) ListOrganizationalUnitsForParentWithContext(arg0 context.Context, arg1 *organizations.ListOrganizationalUnitsForParentInput, arg2 ...request.Option) (*organizations.ListOrganizationalUnitsForParentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1979,7 +1979,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListParentsPages(arg0, arg1 interfac
 }
 
 // ListParentsPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListParentsPagesWithContext(arg0 aws.Context, arg1 *organizations.ListParentsInput, arg2 func(*organizations.ListParentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListParentsPagesWithContext(arg0 context.Context, arg1 *organizations.ListParentsInput, arg2 func(*organizations.ListParentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2013,7 +2013,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListParentsRequest(arg0 interface{})
 }
 
 // ListParentsWithContext mocks base method
-func (m *MockOrganizationsAPI) ListParentsWithContext(arg0 aws.Context, arg1 *organizations.ListParentsInput, arg2 ...request.Option) (*organizations.ListParentsOutput, error) {
+func (m *MockOrganizationsAPI) ListParentsWithContext(arg0 context.Context, arg1 *organizations.ListParentsInput, arg2 ...request.Option) (*organizations.ListParentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2077,7 +2077,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListPoliciesForTargetPages(arg0, arg
 }
 
 // ListPoliciesForTargetPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListPoliciesForTargetPagesWithContext(arg0 aws.Context, arg1 *organizations.ListPoliciesForTargetInput, arg2 func(*organizations.ListPoliciesForTargetOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListPoliciesForTargetPagesWithContext(arg0 context.Context, arg1 *organizations.ListPoliciesForTargetInput, arg2 func(*organizations.ListPoliciesForTargetOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2111,7 +2111,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListPoliciesForTargetRequest(arg0 in
 }
 
 // ListPoliciesForTargetWithContext mocks base method
-func (m *MockOrganizationsAPI) ListPoliciesForTargetWithContext(arg0 aws.Context, arg1 *organizations.ListPoliciesForTargetInput, arg2 ...request.Option) (*organizations.ListPoliciesForTargetOutput, error) {
+func (m *MockOrganizationsAPI) ListPoliciesForTargetWithContext(arg0 context.Context, arg1 *organizations.ListPoliciesForTargetInput, arg2 ...request.Option) (*organizations.ListPoliciesForTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2145,7 +2145,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListPoliciesPages(arg0, arg1 interfa
 }
 
 // ListPoliciesPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListPoliciesPagesWithContext(arg0 aws.Context, arg1 *organizations.ListPoliciesInput, arg2 func(*organizations.ListPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListPoliciesPagesWithContext(arg0 context.Context, arg1 *organizations.ListPoliciesInput, arg2 func(*organizations.ListPoliciesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2179,7 +2179,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListPoliciesRequest(arg0 interface{}
 }
 
 // ListPoliciesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListPoliciesWithContext(arg0 aws.Context, arg1 *organizations.ListPoliciesInput, arg2 ...request.Option) (*organizations.ListPoliciesOutput, error) {
+func (m *MockOrganizationsAPI) ListPoliciesWithContext(arg0 context.Context, arg1 *organizations.ListPoliciesInput, arg2 ...request.Option) (*organizations.ListPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2228,7 +2228,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListRootsPages(arg0, arg1 interface{
 }
 
 // ListRootsPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListRootsPagesWithContext(arg0 aws.Context, arg1 *organizations.ListRootsInput, arg2 func(*organizations.ListRootsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListRootsPagesWithContext(arg0 context.Context, arg1 *organizations.ListRootsInput, arg2 func(*organizations.ListRootsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2262,7 +2262,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListRootsRequest(arg0 interface{}) *
 }
 
 // ListRootsWithContext mocks base method
-func (m *MockOrganizationsAPI) ListRootsWithContext(arg0 aws.Context, arg1 *organizations.ListRootsInput, arg2 ...request.Option) (*organizations.ListRootsOutput, error) {
+func (m *MockOrganizationsAPI) ListRootsWithContext(arg0 context.Context, arg1 *organizations.ListRootsInput, arg2 ...request.Option) (*organizations.ListRootsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2311,7 +2311,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListTargetsForPolicyPages(arg0, arg1
 }
 
 // ListTargetsForPolicyPagesWithContext mocks base method
-func (m *MockOrganizationsAPI) ListTargetsForPolicyPagesWithContext(arg0 aws.Context, arg1 *organizations.ListTargetsForPolicyInput, arg2 func(*organizations.ListTargetsForPolicyOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOrganizationsAPI) ListTargetsForPolicyPagesWithContext(arg0 context.Context, arg1 *organizations.ListTargetsForPolicyInput, arg2 func(*organizations.ListTargetsForPolicyOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2345,7 +2345,7 @@ func (mr *MockOrganizationsAPIMockRecorder) ListTargetsForPolicyRequest(arg0 int
 }
 
 // ListTargetsForPolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) ListTargetsForPolicyWithContext(arg0 aws.Context, arg1 *organizations.ListTargetsForPolicyInput, arg2 ...request.Option) (*organizations.ListTargetsForPolicyOutput, error) {
+func (m *MockOrganizationsAPI) ListTargetsForPolicyWithContext(arg0 context.Context, arg1 *organizations.ListTargetsForPolicyInput, arg2 ...request.Option) (*organizations.ListTargetsForPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2395,7 +2395,7 @@ func (mr *MockOrganizationsAPIMockRecorder) MoveAccountRequest(arg0 interface{})
 }
 
 // MoveAccountWithContext mocks base method
-func (m *MockOrganizationsAPI) MoveAccountWithContext(arg0 aws.Context, arg1 *organizations.MoveAccountInput, arg2 ...request.Option) (*organizations.MoveAccountOutput, error) {
+func (m *MockOrganizationsAPI) MoveAccountWithContext(arg0 context.Context, arg1 *organizations.MoveAccountInput, arg2 ...request.Option) (*organizations.MoveAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2445,7 +2445,7 @@ func (mr *MockOrganizationsAPIMockRecorder) RemoveAccountFromOrganizationRequest
 }
 
 // RemoveAccountFromOrganizationWithContext mocks base method
-func (m *MockOrganizationsAPI) RemoveAccountFromOrganizationWithContext(arg0 aws.Context, arg1 *organizations.RemoveAccountFromOrganizationInput, arg2 ...request.Option) (*organizations.RemoveAccountFromOrganizationOutput, error) {
+func (m *MockOrganizationsAPI) RemoveAccountFromOrganizationWithContext(arg0 context.Context, arg1 *organizations.RemoveAccountFromOrganizationInput, arg2 ...request.Option) (*organizations.RemoveAccountFromOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2495,7 +2495,7 @@ func (mr *MockOrganizationsAPIMockRecorder) UpdateOrganizationalUnitRequest(arg0
 }
 
 // UpdateOrganizationalUnitWithContext mocks base method
-func (m *MockOrganizationsAPI) UpdateOrganizationalUnitWithContext(arg0 aws.Context, arg1 *organizations.UpdateOrganizationalUnitInput, arg2 ...request.Option) (*organizations.UpdateOrganizationalUnitOutput, error) {
+func (m *MockOrganizationsAPI) UpdateOrganizationalUnitWithContext(arg0 context.Context, arg1 *organizations.UpdateOrganizationalUnitInput, arg2 ...request.Option) (*organizations.UpdateOrganizationalUnitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2545,7 +2545,7 @@ func (mr *MockOrganizationsAPIMockRecorder) UpdatePolicyRequest(arg0 interface{}
 }
 
 // UpdatePolicyWithContext mocks base method
-func (m *MockOrganizationsAPI) UpdatePolicyWithContext(arg0 aws.Context, arg1 *organizations.UpdatePolicyInput, arg2 ...request.Option) (*organizations.UpdatePolicyOutput, error) {
+func (m *MockOrganizationsAPI) UpdatePolicyWithContext(arg0 context.Context, arg1 *organizations.UpdatePolicyInput, arg2 ...request.Option) (*organizations.UpdatePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

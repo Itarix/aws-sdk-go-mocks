@@ -5,7 +5,7 @@
 package cloudfrontmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudfront "github.com/aws/aws-sdk-go/service/cloudfront"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateCloudFrontOriginAccessIdentityReq
 }
 
 // CreateCloudFrontOriginAccessIdentityWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateCloudFrontOriginAccessIdentityWithContext(arg0 aws.Context, arg1 *cloudfront.CreateCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.CreateCloudFrontOriginAccessIdentityOutput, error) {
+func (m *MockCloudFrontAPI) CreateCloudFrontOriginAccessIdentityWithContext(arg0 context.Context, arg1 *cloudfront.CreateCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.CreateCloudFrontOriginAccessIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateDistributionRequest(arg0 interfac
 }
 
 // CreateDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.CreateDistributionInput, arg2 ...request.Option) (*cloudfront.CreateDistributionOutput, error) {
+func (m *MockCloudFrontAPI) CreateDistributionWithContext(arg0 context.Context, arg1 *cloudfront.CreateDistributionInput, arg2 ...request.Option) (*cloudfront.CreateDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateDistributionWithTagsRequest(arg0 
 }
 
 // CreateDistributionWithTagsWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateDistributionWithTagsWithContext(arg0 aws.Context, arg1 *cloudfront.CreateDistributionWithTagsInput, arg2 ...request.Option) (*cloudfront.CreateDistributionWithTagsOutput, error) {
+func (m *MockCloudFrontAPI) CreateDistributionWithTagsWithContext(arg0 context.Context, arg1 *cloudfront.CreateDistributionWithTagsInput, arg2 ...request.Option) (*cloudfront.CreateDistributionWithTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateFieldLevelEncryptionConfigRequest
 }
 
 // CreateFieldLevelEncryptionConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateFieldLevelEncryptionConfigWithContext(arg0 aws.Context, arg1 *cloudfront.CreateFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.CreateFieldLevelEncryptionConfigOutput, error) {
+func (m *MockCloudFrontAPI) CreateFieldLevelEncryptionConfigWithContext(arg0 context.Context, arg1 *cloudfront.CreateFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.CreateFieldLevelEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateFieldLevelEncryptionProfileReques
 }
 
 // CreateFieldLevelEncryptionProfileWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateFieldLevelEncryptionProfileWithContext(arg0 aws.Context, arg1 *cloudfront.CreateFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.CreateFieldLevelEncryptionProfileOutput, error) {
+func (m *MockCloudFrontAPI) CreateFieldLevelEncryptionProfileWithContext(arg0 context.Context, arg1 *cloudfront.CreateFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.CreateFieldLevelEncryptionProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateInvalidationRequest(arg0 interfac
 }
 
 // CreateInvalidationWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateInvalidationWithContext(arg0 aws.Context, arg1 *cloudfront.CreateInvalidationInput, arg2 ...request.Option) (*cloudfront.CreateInvalidationOutput, error) {
+func (m *MockCloudFrontAPI) CreateInvalidationWithContext(arg0 context.Context, arg1 *cloudfront.CreateInvalidationInput, arg2 ...request.Option) (*cloudfront.CreateInvalidationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreatePublicKeyRequest(arg0 interface{}
 }
 
 // CreatePublicKeyWithContext mocks base method
-func (m *MockCloudFrontAPI) CreatePublicKeyWithContext(arg0 aws.Context, arg1 *cloudfront.CreatePublicKeyInput, arg2 ...request.Option) (*cloudfront.CreatePublicKeyOutput, error) {
+func (m *MockCloudFrontAPI) CreatePublicKeyWithContext(arg0 context.Context, arg1 *cloudfront.CreatePublicKeyInput, arg2 ...request.Option) (*cloudfront.CreatePublicKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateStreamingDistributionRequest(arg0
 }
 
 // CreateStreamingDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateStreamingDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.CreateStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.CreateStreamingDistributionOutput, error) {
+func (m *MockCloudFrontAPI) CreateStreamingDistributionWithContext(arg0 context.Context, arg1 *cloudfront.CreateStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.CreateStreamingDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateStreamingDistributionWithTagsRequ
 }
 
 // CreateStreamingDistributionWithTagsWithContext mocks base method
-func (m *MockCloudFrontAPI) CreateStreamingDistributionWithTagsWithContext(arg0 aws.Context, arg1 *cloudfront.CreateStreamingDistributionWithTagsInput, arg2 ...request.Option) (*cloudfront.CreateStreamingDistributionWithTagsOutput, error) {
+func (m *MockCloudFrontAPI) CreateStreamingDistributionWithTagsWithContext(arg0 context.Context, arg1 *cloudfront.CreateStreamingDistributionWithTagsInput, arg2 ...request.Option) (*cloudfront.CreateStreamingDistributionWithTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteCloudFrontOriginAccessIdentityReq
 }
 
 // DeleteCloudFrontOriginAccessIdentityWithContext mocks base method
-func (m *MockCloudFrontAPI) DeleteCloudFrontOriginAccessIdentityWithContext(arg0 aws.Context, arg1 *cloudfront.DeleteCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.DeleteCloudFrontOriginAccessIdentityOutput, error) {
+func (m *MockCloudFrontAPI) DeleteCloudFrontOriginAccessIdentityWithContext(arg0 context.Context, arg1 *cloudfront.DeleteCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.DeleteCloudFrontOriginAccessIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteDistributionRequest(arg0 interfac
 }
 
 // DeleteDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) DeleteDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.DeleteDistributionInput, arg2 ...request.Option) (*cloudfront.DeleteDistributionOutput, error) {
+func (m *MockCloudFrontAPI) DeleteDistributionWithContext(arg0 context.Context, arg1 *cloudfront.DeleteDistributionInput, arg2 ...request.Option) (*cloudfront.DeleteDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteFieldLevelEncryptionConfigRequest
 }
 
 // DeleteFieldLevelEncryptionConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) DeleteFieldLevelEncryptionConfigWithContext(arg0 aws.Context, arg1 *cloudfront.DeleteFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.DeleteFieldLevelEncryptionConfigOutput, error) {
+func (m *MockCloudFrontAPI) DeleteFieldLevelEncryptionConfigWithContext(arg0 context.Context, arg1 *cloudfront.DeleteFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.DeleteFieldLevelEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteFieldLevelEncryptionProfileReques
 }
 
 // DeleteFieldLevelEncryptionProfileWithContext mocks base method
-func (m *MockCloudFrontAPI) DeleteFieldLevelEncryptionProfileWithContext(arg0 aws.Context, arg1 *cloudfront.DeleteFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.DeleteFieldLevelEncryptionProfileOutput, error) {
+func (m *MockCloudFrontAPI) DeleteFieldLevelEncryptionProfileWithContext(arg0 context.Context, arg1 *cloudfront.DeleteFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.DeleteFieldLevelEncryptionProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCloudFrontAPIMockRecorder) DeletePublicKeyRequest(arg0 interface{}
 }
 
 // DeletePublicKeyWithContext mocks base method
-func (m *MockCloudFrontAPI) DeletePublicKeyWithContext(arg0 aws.Context, arg1 *cloudfront.DeletePublicKeyInput, arg2 ...request.Option) (*cloudfront.DeletePublicKeyOutput, error) {
+func (m *MockCloudFrontAPI) DeletePublicKeyWithContext(arg0 context.Context, arg1 *cloudfront.DeletePublicKeyInput, arg2 ...request.Option) (*cloudfront.DeletePublicKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteStreamingDistributionRequest(arg0
 }
 
 // DeleteStreamingDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) DeleteStreamingDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.DeleteStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.DeleteStreamingDistributionOutput, error) {
+func (m *MockCloudFrontAPI) DeleteStreamingDistributionWithContext(arg0 context.Context, arg1 *cloudfront.DeleteStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.DeleteStreamingDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetCloudFrontOriginAccessIdentityConfig
 }
 
 // GetCloudFrontOriginAccessIdentityConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) GetCloudFrontOriginAccessIdentityConfigWithContext(arg0 aws.Context, arg1 *cloudfront.GetCloudFrontOriginAccessIdentityConfigInput, arg2 ...request.Option) (*cloudfront.GetCloudFrontOriginAccessIdentityConfigOutput, error) {
+func (m *MockCloudFrontAPI) GetCloudFrontOriginAccessIdentityConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetCloudFrontOriginAccessIdentityConfigInput, arg2 ...request.Option) (*cloudfront.GetCloudFrontOriginAccessIdentityConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetCloudFrontOriginAccessIdentityReques
 }
 
 // GetCloudFrontOriginAccessIdentityWithContext mocks base method
-func (m *MockCloudFrontAPI) GetCloudFrontOriginAccessIdentityWithContext(arg0 aws.Context, arg1 *cloudfront.GetCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.GetCloudFrontOriginAccessIdentityOutput, error) {
+func (m *MockCloudFrontAPI) GetCloudFrontOriginAccessIdentityWithContext(arg0 context.Context, arg1 *cloudfront.GetCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.GetCloudFrontOriginAccessIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -931,7 +931,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetDistributionConfigRequest(arg0 inter
 }
 
 // GetDistributionConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) GetDistributionConfigWithContext(arg0 aws.Context, arg1 *cloudfront.GetDistributionConfigInput, arg2 ...request.Option) (*cloudfront.GetDistributionConfigOutput, error) {
+func (m *MockCloudFrontAPI) GetDistributionConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetDistributionConfigInput, arg2 ...request.Option) (*cloudfront.GetDistributionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetDistributionRequest(arg0 interface{}
 }
 
 // GetDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) GetDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.GetDistributionInput, arg2 ...request.Option) (*cloudfront.GetDistributionOutput, error) {
+func (m *MockCloudFrontAPI) GetDistributionWithContext(arg0 context.Context, arg1 *cloudfront.GetDistributionInput, arg2 ...request.Option) (*cloudfront.GetDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1031,7 +1031,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetFieldLevelEncryptionConfigRequest(ar
 }
 
 // GetFieldLevelEncryptionConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) GetFieldLevelEncryptionConfigWithContext(arg0 aws.Context, arg1 *cloudfront.GetFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionConfigOutput, error) {
+func (m *MockCloudFrontAPI) GetFieldLevelEncryptionConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1096,7 +1096,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetFieldLevelEncryptionProfileConfigReq
 }
 
 // GetFieldLevelEncryptionProfileConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) GetFieldLevelEncryptionProfileConfigWithContext(arg0 aws.Context, arg1 *cloudfront.GetFieldLevelEncryptionProfileConfigInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionProfileConfigOutput, error) {
+func (m *MockCloudFrontAPI) GetFieldLevelEncryptionProfileConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetFieldLevelEncryptionProfileConfigInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionProfileConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetFieldLevelEncryptionProfileRequest(a
 }
 
 // GetFieldLevelEncryptionProfileWithContext mocks base method
-func (m *MockCloudFrontAPI) GetFieldLevelEncryptionProfileWithContext(arg0 aws.Context, arg1 *cloudfront.GetFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionProfileOutput, error) {
+func (m *MockCloudFrontAPI) GetFieldLevelEncryptionProfileWithContext(arg0 context.Context, arg1 *cloudfront.GetFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetFieldLevelEncryptionRequest(arg0 int
 }
 
 // GetFieldLevelEncryptionWithContext mocks base method
-func (m *MockCloudFrontAPI) GetFieldLevelEncryptionWithContext(arg0 aws.Context, arg1 *cloudfront.GetFieldLevelEncryptionInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionOutput, error) {
+func (m *MockCloudFrontAPI) GetFieldLevelEncryptionWithContext(arg0 context.Context, arg1 *cloudfront.GetFieldLevelEncryptionInput, arg2 ...request.Option) (*cloudfront.GetFieldLevelEncryptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetInvalidationRequest(arg0 interface{}
 }
 
 // GetInvalidationWithContext mocks base method
-func (m *MockCloudFrontAPI) GetInvalidationWithContext(arg0 aws.Context, arg1 *cloudfront.GetInvalidationInput, arg2 ...request.Option) (*cloudfront.GetInvalidationOutput, error) {
+func (m *MockCloudFrontAPI) GetInvalidationWithContext(arg0 context.Context, arg1 *cloudfront.GetInvalidationInput, arg2 ...request.Option) (*cloudfront.GetInvalidationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetPublicKeyConfigRequest(arg0 interfac
 }
 
 // GetPublicKeyConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) GetPublicKeyConfigWithContext(arg0 aws.Context, arg1 *cloudfront.GetPublicKeyConfigInput, arg2 ...request.Option) (*cloudfront.GetPublicKeyConfigOutput, error) {
+func (m *MockCloudFrontAPI) GetPublicKeyConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetPublicKeyConfigInput, arg2 ...request.Option) (*cloudfront.GetPublicKeyConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetPublicKeyRequest(arg0 interface{}) *
 }
 
 // GetPublicKeyWithContext mocks base method
-func (m *MockCloudFrontAPI) GetPublicKeyWithContext(arg0 aws.Context, arg1 *cloudfront.GetPublicKeyInput, arg2 ...request.Option) (*cloudfront.GetPublicKeyOutput, error) {
+func (m *MockCloudFrontAPI) GetPublicKeyWithContext(arg0 context.Context, arg1 *cloudfront.GetPublicKeyInput, arg2 ...request.Option) (*cloudfront.GetPublicKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetStreamingDistributionConfigRequest(a
 }
 
 // GetStreamingDistributionConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) GetStreamingDistributionConfigWithContext(arg0 aws.Context, arg1 *cloudfront.GetStreamingDistributionConfigInput, arg2 ...request.Option) (*cloudfront.GetStreamingDistributionConfigOutput, error) {
+func (m *MockCloudFrontAPI) GetStreamingDistributionConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetStreamingDistributionConfigInput, arg2 ...request.Option) (*cloudfront.GetStreamingDistributionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockCloudFrontAPIMockRecorder) GetStreamingDistributionRequest(arg0 in
 }
 
 // GetStreamingDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) GetStreamingDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.GetStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.GetStreamingDistributionOutput, error) {
+func (m *MockCloudFrontAPI) GetStreamingDistributionWithContext(arg0 context.Context, arg1 *cloudfront.GetStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.GetStreamingDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1465,7 +1465,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListCloudFrontOriginAccessIdentitiesPag
 }
 
 // ListCloudFrontOriginAccessIdentitiesPagesWithContext mocks base method
-func (m *MockCloudFrontAPI) ListCloudFrontOriginAccessIdentitiesPagesWithContext(arg0 aws.Context, arg1 *cloudfront.ListCloudFrontOriginAccessIdentitiesInput, arg2 func(*cloudfront.ListCloudFrontOriginAccessIdentitiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFrontAPI) ListCloudFrontOriginAccessIdentitiesPagesWithContext(arg0 context.Context, arg1 *cloudfront.ListCloudFrontOriginAccessIdentitiesInput, arg2 func(*cloudfront.ListCloudFrontOriginAccessIdentitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1499,7 +1499,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListCloudFrontOriginAccessIdentitiesReq
 }
 
 // ListCloudFrontOriginAccessIdentitiesWithContext mocks base method
-func (m *MockCloudFrontAPI) ListCloudFrontOriginAccessIdentitiesWithContext(arg0 aws.Context, arg1 *cloudfront.ListCloudFrontOriginAccessIdentitiesInput, arg2 ...request.Option) (*cloudfront.ListCloudFrontOriginAccessIdentitiesOutput, error) {
+func (m *MockCloudFrontAPI) ListCloudFrontOriginAccessIdentitiesWithContext(arg0 context.Context, arg1 *cloudfront.ListCloudFrontOriginAccessIdentitiesInput, arg2 ...request.Option) (*cloudfront.ListCloudFrontOriginAccessIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1564,7 +1564,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByWebACLIdRequest(arg0
 }
 
 // ListDistributionsByWebACLIdWithContext mocks base method
-func (m *MockCloudFrontAPI) ListDistributionsByWebACLIdWithContext(arg0 aws.Context, arg1 *cloudfront.ListDistributionsByWebACLIdInput, arg2 ...request.Option) (*cloudfront.ListDistributionsByWebACLIdOutput, error) {
+func (m *MockCloudFrontAPI) ListDistributionsByWebACLIdWithContext(arg0 context.Context, arg1 *cloudfront.ListDistributionsByWebACLIdInput, arg2 ...request.Option) (*cloudfront.ListDistributionsByWebACLIdOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1598,7 +1598,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsPages(arg0, arg1 inter
 }
 
 // ListDistributionsPagesWithContext mocks base method
-func (m *MockCloudFrontAPI) ListDistributionsPagesWithContext(arg0 aws.Context, arg1 *cloudfront.ListDistributionsInput, arg2 func(*cloudfront.ListDistributionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFrontAPI) ListDistributionsPagesWithContext(arg0 context.Context, arg1 *cloudfront.ListDistributionsInput, arg2 func(*cloudfront.ListDistributionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1632,7 +1632,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsRequest(arg0 interface
 }
 
 // ListDistributionsWithContext mocks base method
-func (m *MockCloudFrontAPI) ListDistributionsWithContext(arg0 aws.Context, arg1 *cloudfront.ListDistributionsInput, arg2 ...request.Option) (*cloudfront.ListDistributionsOutput, error) {
+func (m *MockCloudFrontAPI) ListDistributionsWithContext(arg0 context.Context, arg1 *cloudfront.ListDistributionsInput, arg2 ...request.Option) (*cloudfront.ListDistributionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1682,7 +1682,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListFieldLevelEncryptionConfigsRequest(
 }
 
 // ListFieldLevelEncryptionConfigsWithContext mocks base method
-func (m *MockCloudFrontAPI) ListFieldLevelEncryptionConfigsWithContext(arg0 aws.Context, arg1 *cloudfront.ListFieldLevelEncryptionConfigsInput, arg2 ...request.Option) (*cloudfront.ListFieldLevelEncryptionConfigsOutput, error) {
+func (m *MockCloudFrontAPI) ListFieldLevelEncryptionConfigsWithContext(arg0 context.Context, arg1 *cloudfront.ListFieldLevelEncryptionConfigsInput, arg2 ...request.Option) (*cloudfront.ListFieldLevelEncryptionConfigsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1732,7 +1732,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListFieldLevelEncryptionProfilesRequest
 }
 
 // ListFieldLevelEncryptionProfilesWithContext mocks base method
-func (m *MockCloudFrontAPI) ListFieldLevelEncryptionProfilesWithContext(arg0 aws.Context, arg1 *cloudfront.ListFieldLevelEncryptionProfilesInput, arg2 ...request.Option) (*cloudfront.ListFieldLevelEncryptionProfilesOutput, error) {
+func (m *MockCloudFrontAPI) ListFieldLevelEncryptionProfilesWithContext(arg0 context.Context, arg1 *cloudfront.ListFieldLevelEncryptionProfilesInput, arg2 ...request.Option) (*cloudfront.ListFieldLevelEncryptionProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListInvalidationsPages(arg0, arg1 inter
 }
 
 // ListInvalidationsPagesWithContext mocks base method
-func (m *MockCloudFrontAPI) ListInvalidationsPagesWithContext(arg0 aws.Context, arg1 *cloudfront.ListInvalidationsInput, arg2 func(*cloudfront.ListInvalidationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFrontAPI) ListInvalidationsPagesWithContext(arg0 context.Context, arg1 *cloudfront.ListInvalidationsInput, arg2 func(*cloudfront.ListInvalidationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1815,7 +1815,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListInvalidationsRequest(arg0 interface
 }
 
 // ListInvalidationsWithContext mocks base method
-func (m *MockCloudFrontAPI) ListInvalidationsWithContext(arg0 aws.Context, arg1 *cloudfront.ListInvalidationsInput, arg2 ...request.Option) (*cloudfront.ListInvalidationsOutput, error) {
+func (m *MockCloudFrontAPI) ListInvalidationsWithContext(arg0 context.Context, arg1 *cloudfront.ListInvalidationsInput, arg2 ...request.Option) (*cloudfront.ListInvalidationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1865,7 +1865,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListPublicKeysRequest(arg0 interface{})
 }
 
 // ListPublicKeysWithContext mocks base method
-func (m *MockCloudFrontAPI) ListPublicKeysWithContext(arg0 aws.Context, arg1 *cloudfront.ListPublicKeysInput, arg2 ...request.Option) (*cloudfront.ListPublicKeysOutput, error) {
+func (m *MockCloudFrontAPI) ListPublicKeysWithContext(arg0 context.Context, arg1 *cloudfront.ListPublicKeysInput, arg2 ...request.Option) (*cloudfront.ListPublicKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1914,7 +1914,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListStreamingDistributionsPages(arg0, a
 }
 
 // ListStreamingDistributionsPagesWithContext mocks base method
-func (m *MockCloudFrontAPI) ListStreamingDistributionsPagesWithContext(arg0 aws.Context, arg1 *cloudfront.ListStreamingDistributionsInput, arg2 func(*cloudfront.ListStreamingDistributionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudFrontAPI) ListStreamingDistributionsPagesWithContext(arg0 context.Context, arg1 *cloudfront.ListStreamingDistributionsInput, arg2 func(*cloudfront.ListStreamingDistributionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1948,7 +1948,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListStreamingDistributionsRequest(arg0 
 }
 
 // ListStreamingDistributionsWithContext mocks base method
-func (m *MockCloudFrontAPI) ListStreamingDistributionsWithContext(arg0 aws.Context, arg1 *cloudfront.ListStreamingDistributionsInput, arg2 ...request.Option) (*cloudfront.ListStreamingDistributionsOutput, error) {
+func (m *MockCloudFrontAPI) ListStreamingDistributionsWithContext(arg0 context.Context, arg1 *cloudfront.ListStreamingDistributionsInput, arg2 ...request.Option) (*cloudfront.ListStreamingDistributionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1998,7 +1998,7 @@ func (mr *MockCloudFrontAPIMockRecorder) ListTagsForResourceRequest(arg0 interfa
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockCloudFrontAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *cloudfront.ListTagsForResourceInput, arg2 ...request.Option) (*cloudfront.ListTagsForResourceOutput, error) {
+func (m *MockCloudFrontAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *cloudfront.ListTagsForResourceInput, arg2 ...request.Option) (*cloudfront.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2048,7 +2048,7 @@ func (mr *MockCloudFrontAPIMockRecorder) TagResourceRequest(arg0 interface{}) *g
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockCloudFrontAPI) TagResourceWithContext(arg0 aws.Context, arg1 *cloudfront.TagResourceInput, arg2 ...request.Option) (*cloudfront.TagResourceOutput, error) {
+func (m *MockCloudFrontAPI) TagResourceWithContext(arg0 context.Context, arg1 *cloudfront.TagResourceInput, arg2 ...request.Option) (*cloudfront.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2098,7 +2098,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UntagResourceRequest(arg0 interface{}) 
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockCloudFrontAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *cloudfront.UntagResourceInput, arg2 ...request.Option) (*cloudfront.UntagResourceOutput, error) {
+func (m *MockCloudFrontAPI) UntagResourceWithContext(arg0 context.Context, arg1 *cloudfront.UntagResourceInput, arg2 ...request.Option) (*cloudfront.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2148,7 +2148,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateCloudFrontOriginAccessIdentityReq
 }
 
 // UpdateCloudFrontOriginAccessIdentityWithContext mocks base method
-func (m *MockCloudFrontAPI) UpdateCloudFrontOriginAccessIdentityWithContext(arg0 aws.Context, arg1 *cloudfront.UpdateCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.UpdateCloudFrontOriginAccessIdentityOutput, error) {
+func (m *MockCloudFrontAPI) UpdateCloudFrontOriginAccessIdentityWithContext(arg0 context.Context, arg1 *cloudfront.UpdateCloudFrontOriginAccessIdentityInput, arg2 ...request.Option) (*cloudfront.UpdateCloudFrontOriginAccessIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2198,7 +2198,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateDistributionRequest(arg0 interfac
 }
 
 // UpdateDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) UpdateDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.UpdateDistributionInput, arg2 ...request.Option) (*cloudfront.UpdateDistributionOutput, error) {
+func (m *MockCloudFrontAPI) UpdateDistributionWithContext(arg0 context.Context, arg1 *cloudfront.UpdateDistributionInput, arg2 ...request.Option) (*cloudfront.UpdateDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2248,7 +2248,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateFieldLevelEncryptionConfigRequest
 }
 
 // UpdateFieldLevelEncryptionConfigWithContext mocks base method
-func (m *MockCloudFrontAPI) UpdateFieldLevelEncryptionConfigWithContext(arg0 aws.Context, arg1 *cloudfront.UpdateFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.UpdateFieldLevelEncryptionConfigOutput, error) {
+func (m *MockCloudFrontAPI) UpdateFieldLevelEncryptionConfigWithContext(arg0 context.Context, arg1 *cloudfront.UpdateFieldLevelEncryptionConfigInput, arg2 ...request.Option) (*cloudfront.UpdateFieldLevelEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2298,7 +2298,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateFieldLevelEncryptionProfileReques
 }
 
 // UpdateFieldLevelEncryptionProfileWithContext mocks base method
-func (m *MockCloudFrontAPI) UpdateFieldLevelEncryptionProfileWithContext(arg0 aws.Context, arg1 *cloudfront.UpdateFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.UpdateFieldLevelEncryptionProfileOutput, error) {
+func (m *MockCloudFrontAPI) UpdateFieldLevelEncryptionProfileWithContext(arg0 context.Context, arg1 *cloudfront.UpdateFieldLevelEncryptionProfileInput, arg2 ...request.Option) (*cloudfront.UpdateFieldLevelEncryptionProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2348,7 +2348,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdatePublicKeyRequest(arg0 interface{}
 }
 
 // UpdatePublicKeyWithContext mocks base method
-func (m *MockCloudFrontAPI) UpdatePublicKeyWithContext(arg0 aws.Context, arg1 *cloudfront.UpdatePublicKeyInput, arg2 ...request.Option) (*cloudfront.UpdatePublicKeyOutput, error) {
+func (m *MockCloudFrontAPI) UpdatePublicKeyWithContext(arg0 context.Context, arg1 *cloudfront.UpdatePublicKeyInput, arg2 ...request.Option) (*cloudfront.UpdatePublicKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2398,7 +2398,7 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateStreamingDistributionRequest(arg0
 }
 
 // UpdateStreamingDistributionWithContext mocks base method
-func (m *MockCloudFrontAPI) UpdateStreamingDistributionWithContext(arg0 aws.Context, arg1 *cloudfront.UpdateStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.UpdateStreamingDistributionOutput, error) {
+func (m *MockCloudFrontAPI) UpdateStreamingDistributionWithContext(arg0 context.Context, arg1 *cloudfront.UpdateStreamingDistributionInput, arg2 ...request.Option) (*cloudfront.UpdateStreamingDistributionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2432,7 +2432,7 @@ func (mr *MockCloudFrontAPIMockRecorder) WaitUntilDistributionDeployed(arg0 inte
 }
 
 // WaitUntilDistributionDeployedWithContext mocks base method
-func (m *MockCloudFrontAPI) WaitUntilDistributionDeployedWithContext(arg0 aws.Context, arg1 *cloudfront.GetDistributionInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFrontAPI) WaitUntilDistributionDeployedWithContext(arg0 context.Context, arg1 *cloudfront.GetDistributionInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2465,7 +2465,7 @@ func (mr *MockCloudFrontAPIMockRecorder) WaitUntilInvalidationCompleted(arg0 int
 }
 
 // WaitUntilInvalidationCompletedWithContext mocks base method
-func (m *MockCloudFrontAPI) WaitUntilInvalidationCompletedWithContext(arg0 aws.Context, arg1 *cloudfront.GetInvalidationInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFrontAPI) WaitUntilInvalidationCompletedWithContext(arg0 context.Context, arg1 *cloudfront.GetInvalidationInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2498,7 +2498,7 @@ func (mr *MockCloudFrontAPIMockRecorder) WaitUntilStreamingDistributionDeployed(
 }
 
 // WaitUntilStreamingDistributionDeployedWithContext mocks base method
-func (m *MockCloudFrontAPI) WaitUntilStreamingDistributionDeployedWithContext(arg0 aws.Context, arg1 *cloudfront.GetStreamingDistributionInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudFrontAPI) WaitUntilStreamingDistributionDeployedWithContext(arg0 context.Context, arg1 *cloudfront.GetStreamingDistributionInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

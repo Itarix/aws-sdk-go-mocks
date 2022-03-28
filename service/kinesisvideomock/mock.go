@@ -5,7 +5,7 @@
 package kinesisvideomock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	kinesisvideo "github.com/aws/aws-sdk-go/service/kinesisvideo"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) CreateStreamRequest(arg0 interface{})
 }
 
 // CreateStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) CreateStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.CreateStreamInput, arg2 ...request.Option) (*kinesisvideo.CreateStreamOutput, error) {
+func (m *MockKinesisVideoAPI) CreateStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.CreateStreamInput, arg2 ...request.Option) (*kinesisvideo.CreateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) DeleteStreamRequest(arg0 interface{})
 }
 
 // DeleteStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) DeleteStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.DeleteStreamInput, arg2 ...request.Option) (*kinesisvideo.DeleteStreamOutput, error) {
+func (m *MockKinesisVideoAPI) DeleteStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.DeleteStreamInput, arg2 ...request.Option) (*kinesisvideo.DeleteStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) DescribeStreamRequest(arg0 interface{
 }
 
 // DescribeStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) DescribeStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.DescribeStreamInput, arg2 ...request.Option) (*kinesisvideo.DescribeStreamOutput, error) {
+func (m *MockKinesisVideoAPI) DescribeStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.DescribeStreamInput, arg2 ...request.Option) (*kinesisvideo.DescribeStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) GetDataEndpointRequest(arg0 interface
 }
 
 // GetDataEndpointWithContext mocks base method
-func (m *MockKinesisVideoAPI) GetDataEndpointWithContext(arg0 aws.Context, arg1 *kinesisvideo.GetDataEndpointInput, arg2 ...request.Option) (*kinesisvideo.GetDataEndpointOutput, error) {
+func (m *MockKinesisVideoAPI) GetDataEndpointWithContext(arg0 context.Context, arg1 *kinesisvideo.GetDataEndpointInput, arg2 ...request.Option) (*kinesisvideo.GetDataEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) ListStreamsRequest(arg0 interface{}) 
 }
 
 // ListStreamsWithContext mocks base method
-func (m *MockKinesisVideoAPI) ListStreamsWithContext(arg0 aws.Context, arg1 *kinesisvideo.ListStreamsInput, arg2 ...request.Option) (*kinesisvideo.ListStreamsOutput, error) {
+func (m *MockKinesisVideoAPI) ListStreamsWithContext(arg0 context.Context, arg1 *kinesisvideo.ListStreamsInput, arg2 ...request.Option) (*kinesisvideo.ListStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) ListTagsForStreamRequest(arg0 interfa
 }
 
 // ListTagsForStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) ListTagsForStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.ListTagsForStreamInput, arg2 ...request.Option) (*kinesisvideo.ListTagsForStreamOutput, error) {
+func (m *MockKinesisVideoAPI) ListTagsForStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.ListTagsForStreamInput, arg2 ...request.Option) (*kinesisvideo.ListTagsForStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) TagStreamRequest(arg0 interface{}) *g
 }
 
 // TagStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) TagStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.TagStreamInput, arg2 ...request.Option) (*kinesisvideo.TagStreamOutput, error) {
+func (m *MockKinesisVideoAPI) TagStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.TagStreamInput, arg2 ...request.Option) (*kinesisvideo.TagStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) UntagStreamRequest(arg0 interface{}) 
 }
 
 // UntagStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) UntagStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.UntagStreamInput, arg2 ...request.Option) (*kinesisvideo.UntagStreamOutput, error) {
+func (m *MockKinesisVideoAPI) UntagStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.UntagStreamInput, arg2 ...request.Option) (*kinesisvideo.UntagStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) UpdateDataRetentionRequest(arg0 inter
 }
 
 // UpdateDataRetentionWithContext mocks base method
-func (m *MockKinesisVideoAPI) UpdateDataRetentionWithContext(arg0 aws.Context, arg1 *kinesisvideo.UpdateDataRetentionInput, arg2 ...request.Option) (*kinesisvideo.UpdateDataRetentionOutput, error) {
+func (m *MockKinesisVideoAPI) UpdateDataRetentionWithContext(arg0 context.Context, arg1 *kinesisvideo.UpdateDataRetentionInput, arg2 ...request.Option) (*kinesisvideo.UpdateDataRetentionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockKinesisVideoAPIMockRecorder) UpdateStreamRequest(arg0 interface{})
 }
 
 // UpdateStreamWithContext mocks base method
-func (m *MockKinesisVideoAPI) UpdateStreamWithContext(arg0 aws.Context, arg1 *kinesisvideo.UpdateStreamInput, arg2 ...request.Option) (*kinesisvideo.UpdateStreamOutput, error) {
+func (m *MockKinesisVideoAPI) UpdateStreamWithContext(arg0 context.Context, arg1 *kinesisvideo.UpdateStreamInput, arg2 ...request.Option) (*kinesisvideo.UpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

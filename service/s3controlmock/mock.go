@@ -5,7 +5,7 @@
 package s3controlmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	s3control "github.com/aws/aws-sdk-go/service/s3control"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockS3ControlAPIMockRecorder) DeletePublicAccessBlockRequest(arg0 inte
 }
 
 // DeletePublicAccessBlockWithContext mocks base method
-func (m *MockS3ControlAPI) DeletePublicAccessBlockWithContext(arg0 aws.Context, arg1 *s3control.DeletePublicAccessBlockInput, arg2 ...request.Option) (*s3control.DeletePublicAccessBlockOutput, error) {
+func (m *MockS3ControlAPI) DeletePublicAccessBlockWithContext(arg0 context.Context, arg1 *s3control.DeletePublicAccessBlockInput, arg2 ...request.Option) (*s3control.DeletePublicAccessBlockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockS3ControlAPIMockRecorder) GetPublicAccessBlockRequest(arg0 interfa
 }
 
 // GetPublicAccessBlockWithContext mocks base method
-func (m *MockS3ControlAPI) GetPublicAccessBlockWithContext(arg0 aws.Context, arg1 *s3control.GetPublicAccessBlockInput, arg2 ...request.Option) (*s3control.GetPublicAccessBlockOutput, error) {
+func (m *MockS3ControlAPI) GetPublicAccessBlockWithContext(arg0 context.Context, arg1 *s3control.GetPublicAccessBlockInput, arg2 ...request.Option) (*s3control.GetPublicAccessBlockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockS3ControlAPIMockRecorder) PutPublicAccessBlockRequest(arg0 interfa
 }
 
 // PutPublicAccessBlockWithContext mocks base method
-func (m *MockS3ControlAPI) PutPublicAccessBlockWithContext(arg0 aws.Context, arg1 *s3control.PutPublicAccessBlockInput, arg2 ...request.Option) (*s3control.PutPublicAccessBlockOutput, error) {
+func (m *MockS3ControlAPI) PutPublicAccessBlockWithContext(arg0 context.Context, arg1 *s3control.PutPublicAccessBlockInput, arg2 ...request.Option) (*s3control.PutPublicAccessBlockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

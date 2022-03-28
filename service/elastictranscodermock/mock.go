@@ -5,7 +5,7 @@
 package elastictranscodermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elastictranscoder "github.com/aws/aws-sdk-go/service/elastictranscoder"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) CancelJobRequest(arg0 interface{
 }
 
 // CancelJobWithContext mocks base method
-func (m *MockElasticTranscoderAPI) CancelJobWithContext(arg0 aws.Context, arg1 *elastictranscoder.CancelJobInput, arg2 ...request.Option) (*elastictranscoder.CancelJobOutput, error) {
+func (m *MockElasticTranscoderAPI) CancelJobWithContext(arg0 context.Context, arg1 *elastictranscoder.CancelJobInput, arg2 ...request.Option) (*elastictranscoder.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) CreateJobRequest(arg0 interface{
 }
 
 // CreateJobWithContext mocks base method
-func (m *MockElasticTranscoderAPI) CreateJobWithContext(arg0 aws.Context, arg1 *elastictranscoder.CreateJobInput, arg2 ...request.Option) (*elastictranscoder.CreateJobResponse, error) {
+func (m *MockElasticTranscoderAPI) CreateJobWithContext(arg0 context.Context, arg1 *elastictranscoder.CreateJobInput, arg2 ...request.Option) (*elastictranscoder.CreateJobResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) CreatePipelineRequest(arg0 inter
 }
 
 // CreatePipelineWithContext mocks base method
-func (m *MockElasticTranscoderAPI) CreatePipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.CreatePipelineInput, arg2 ...request.Option) (*elastictranscoder.CreatePipelineOutput, error) {
+func (m *MockElasticTranscoderAPI) CreatePipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.CreatePipelineInput, arg2 ...request.Option) (*elastictranscoder.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) CreatePresetRequest(arg0 interfa
 }
 
 // CreatePresetWithContext mocks base method
-func (m *MockElasticTranscoderAPI) CreatePresetWithContext(arg0 aws.Context, arg1 *elastictranscoder.CreatePresetInput, arg2 ...request.Option) (*elastictranscoder.CreatePresetOutput, error) {
+func (m *MockElasticTranscoderAPI) CreatePresetWithContext(arg0 context.Context, arg1 *elastictranscoder.CreatePresetInput, arg2 ...request.Option) (*elastictranscoder.CreatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) DeletePipelineRequest(arg0 inter
 }
 
 // DeletePipelineWithContext mocks base method
-func (m *MockElasticTranscoderAPI) DeletePipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.DeletePipelineInput, arg2 ...request.Option) (*elastictranscoder.DeletePipelineOutput, error) {
+func (m *MockElasticTranscoderAPI) DeletePipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.DeletePipelineInput, arg2 ...request.Option) (*elastictranscoder.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) DeletePresetRequest(arg0 interfa
 }
 
 // DeletePresetWithContext mocks base method
-func (m *MockElasticTranscoderAPI) DeletePresetWithContext(arg0 aws.Context, arg1 *elastictranscoder.DeletePresetInput, arg2 ...request.Option) (*elastictranscoder.DeletePresetOutput, error) {
+func (m *MockElasticTranscoderAPI) DeletePresetWithContext(arg0 context.Context, arg1 *elastictranscoder.DeletePresetInput, arg2 ...request.Option) (*elastictranscoder.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipelinePages(arg0, ar
 }
 
 // ListJobsByPipelinePagesWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListJobsByPipelinePagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 func(*elastictranscoder.ListJobsByPipelineOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticTranscoderAPI) ListJobsByPipelinePagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 func(*elastictranscoder.ListJobsByPipelineOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByPipelineRequest(arg0 i
 }
 
 // ListJobsByPipelineWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListJobsByPipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByPipelineOutput, error) {
+func (m *MockElasticTranscoderAPI) ListJobsByPipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByPipelineInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatusPages(arg0, arg1
 }
 
 // ListJobsByStatusPagesWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListJobsByStatusPagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 func(*elastictranscoder.ListJobsByStatusOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticTranscoderAPI) ListJobsByStatusPagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 func(*elastictranscoder.ListJobsByStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListJobsByStatusRequest(arg0 int
 }
 
 // ListJobsByStatusWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListJobsByStatusWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByStatusOutput, error) {
+func (m *MockElasticTranscoderAPI) ListJobsByStatusWithContext(arg0 context.Context, arg1 *elastictranscoder.ListJobsByStatusInput, arg2 ...request.Option) (*elastictranscoder.ListJobsByStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelinesPages(arg0, arg1 in
 }
 
 // ListPipelinesPagesWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListPipelinesPagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 func(*elastictranscoder.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticTranscoderAPI) ListPipelinesPagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 func(*elastictranscoder.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -565,7 +565,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListPipelinesRequest(arg0 interf
 }
 
 // ListPipelinesWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListPipelinesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 ...request.Option) (*elastictranscoder.ListPipelinesOutput, error) {
+func (m *MockElasticTranscoderAPI) ListPipelinesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPipelinesInput, arg2 ...request.Option) (*elastictranscoder.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -614,7 +614,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListPresetsPages(arg0, arg1 inte
 }
 
 // ListPresetsPagesWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListPresetsPagesWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 func(*elastictranscoder.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticTranscoderAPI) ListPresetsPagesWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 func(*elastictranscoder.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -648,7 +648,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ListPresetsRequest(arg0 interfac
 }
 
 // ListPresetsWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ListPresetsWithContext(arg0 aws.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 ...request.Option) (*elastictranscoder.ListPresetsOutput, error) {
+func (m *MockElasticTranscoderAPI) ListPresetsWithContext(arg0 context.Context, arg1 *elastictranscoder.ListPresetsInput, arg2 ...request.Option) (*elastictranscoder.ListPresetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -698,7 +698,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ReadJobRequest(arg0 interface{})
 }
 
 // ReadJobWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ReadJobWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.Option) (*elastictranscoder.ReadJobOutput, error) {
+func (m *MockElasticTranscoderAPI) ReadJobWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.Option) (*elastictranscoder.ReadJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -748,7 +748,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ReadPipelineRequest(arg0 interfa
 }
 
 // ReadPipelineWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ReadPipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadPipelineInput, arg2 ...request.Option) (*elastictranscoder.ReadPipelineOutput, error) {
+func (m *MockElasticTranscoderAPI) ReadPipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadPipelineInput, arg2 ...request.Option) (*elastictranscoder.ReadPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) ReadPresetRequest(arg0 interface
 }
 
 // ReadPresetWithContext mocks base method
-func (m *MockElasticTranscoderAPI) ReadPresetWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadPresetInput, arg2 ...request.Option) (*elastictranscoder.ReadPresetOutput, error) {
+func (m *MockElasticTranscoderAPI) ReadPresetWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadPresetInput, arg2 ...request.Option) (*elastictranscoder.ReadPresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -848,7 +848,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) TestRoleRequest(arg0 interface{}
 }
 
 // TestRoleWithContext mocks base method
-func (m *MockElasticTranscoderAPI) TestRoleWithContext(arg0 aws.Context, arg1 *elastictranscoder.TestRoleInput, arg2 ...request.Option) (*elastictranscoder.TestRoleOutput, error) {
+func (m *MockElasticTranscoderAPI) TestRoleWithContext(arg0 context.Context, arg1 *elastictranscoder.TestRoleInput, arg2 ...request.Option) (*elastictranscoder.TestRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -913,7 +913,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineNotificationsReque
 }
 
 // UpdatePipelineNotificationsWithContext mocks base method
-func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsWithContext(arg0 aws.Context, arg1 *elastictranscoder.UpdatePipelineNotificationsInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineNotificationsOutput, error) {
+func (m *MockElasticTranscoderAPI) UpdatePipelineNotificationsWithContext(arg0 context.Context, arg1 *elastictranscoder.UpdatePipelineNotificationsInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -978,7 +978,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineStatusRequest(arg0
 }
 
 // UpdatePipelineStatusWithContext mocks base method
-func (m *MockElasticTranscoderAPI) UpdatePipelineStatusWithContext(arg0 aws.Context, arg1 *elastictranscoder.UpdatePipelineStatusInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineStatusOutput, error) {
+func (m *MockElasticTranscoderAPI) UpdatePipelineStatusWithContext(arg0 context.Context, arg1 *elastictranscoder.UpdatePipelineStatusInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -998,7 +998,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) UpdatePipelineStatusWithContext(
 }
 
 // UpdatePipelineWithContext mocks base method
-func (m *MockElasticTranscoderAPI) UpdatePipelineWithContext(arg0 aws.Context, arg1 *elastictranscoder.UpdatePipelineInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineOutput, error) {
+func (m *MockElasticTranscoderAPI) UpdatePipelineWithContext(arg0 context.Context, arg1 *elastictranscoder.UpdatePipelineInput, arg2 ...request.Option) (*elastictranscoder.UpdatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1032,7 +1032,7 @@ func (mr *MockElasticTranscoderAPIMockRecorder) WaitUntilJobComplete(arg0 interf
 }
 
 // WaitUntilJobCompleteWithContext mocks base method
-func (m *MockElasticTranscoderAPI) WaitUntilJobCompleteWithContext(arg0 aws.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.WaiterOption) error {
+func (m *MockElasticTranscoderAPI) WaitUntilJobCompleteWithContext(arg0 context.Context, arg1 *elastictranscoder.ReadJobInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package elasticsearchservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elasticsearchservice "github.com/aws/aws-sdk-go/service/elasticsearchservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) AddTagsRequest(arg0 interface
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) AddTagsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.AddTagsInput, arg2 ...request.Option) (*elasticsearchservice.AddTagsOutput, error) {
+func (m *MockElasticsearchServiceAPI) AddTagsWithContext(arg0 context.Context, arg1 *elasticsearchservice.AddTagsInput, arg2 ...request.Option) (*elasticsearchservice.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) CancelElasticsearchServiceSof
 }
 
 // CancelElasticsearchServiceSoftwareUpdateWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) CancelElasticsearchServiceSoftwareUpdateWithContext(arg0 aws.Context, arg1 *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateInput, arg2 ...request.Option) (*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput, error) {
+func (m *MockElasticsearchServiceAPI) CancelElasticsearchServiceSoftwareUpdateWithContext(arg0 context.Context, arg1 *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateInput, arg2 ...request.Option) (*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) CreateElasticsearchDomainRequ
 }
 
 // CreateElasticsearchDomainWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) CreateElasticsearchDomainWithContext(arg0 aws.Context, arg1 *elasticsearchservice.CreateElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.CreateElasticsearchDomainOutput, error) {
+func (m *MockElasticsearchServiceAPI) CreateElasticsearchDomainWithContext(arg0 context.Context, arg1 *elasticsearchservice.CreateElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.CreateElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DeleteElasticsearchDomainRequ
 }
 
 // DeleteElasticsearchDomainWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DeleteElasticsearchDomainWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DeleteElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.DeleteElasticsearchDomainOutput, error) {
+func (m *MockElasticsearchServiceAPI) DeleteElasticsearchDomainWithContext(arg0 context.Context, arg1 *elasticsearchservice.DeleteElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.DeleteElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DeleteElasticsearchServiceRol
 }
 
 // DeleteElasticsearchServiceRoleWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DeleteElasticsearchServiceRoleWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DeleteElasticsearchServiceRoleInput, arg2 ...request.Option) (*elasticsearchservice.DeleteElasticsearchServiceRoleOutput, error) {
+func (m *MockElasticsearchServiceAPI) DeleteElasticsearchServiceRoleWithContext(arg0 context.Context, arg1 *elasticsearchservice.DeleteElasticsearchServiceRoleInput, arg2 ...request.Option) (*elasticsearchservice.DeleteElasticsearchServiceRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeElasticsearchDomainCo
 }
 
 // DescribeElasticsearchDomainConfigWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomainConfigWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeElasticsearchDomainConfigInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchDomainConfigOutput, error) {
+func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomainConfigWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeElasticsearchDomainConfigInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchDomainConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeElasticsearchDomainRe
 }
 
 // DescribeElasticsearchDomainWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomainWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchDomainOutput, error) {
+func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomainWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeElasticsearchDomainsR
 }
 
 // DescribeElasticsearchDomainsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomainsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeElasticsearchDomainsInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchDomainsOutput, error) {
+func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomainsWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeElasticsearchDomainsInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeElasticsearchInstance
 }
 
 // DescribeElasticsearchInstanceTypeLimitsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeElasticsearchInstanceTypeLimitsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeElasticsearchInstanceTypeLimitsInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchInstanceTypeLimitsOutput, error) {
+func (m *MockElasticsearchServiceAPI) DescribeElasticsearchInstanceTypeLimitsWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeElasticsearchInstanceTypeLimitsInput, arg2 ...request.Option) (*elasticsearchservice.DescribeElasticsearchInstanceTypeLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeReservedElasticsearch
 }
 
 // DescribeReservedElasticsearchInstanceOfferingsPagesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstanceOfferingsPagesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsInput, arg2 func(*elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstanceOfferingsPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsInput, arg2 func(*elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -549,7 +549,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeReservedElasticsearch
 }
 
 // DescribeReservedElasticsearchInstanceOfferingsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstanceOfferingsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsInput, arg2 ...request.Option) (*elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsOutput, error) {
+func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstanceOfferingsWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsInput, arg2 ...request.Option) (*elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -598,7 +598,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeReservedElasticsearch
 }
 
 // DescribeReservedElasticsearchInstancesPagesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstancesPagesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstancesInput, arg2 func(*elasticsearchservice.DescribeReservedElasticsearchInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstancesPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstancesInput, arg2 func(*elasticsearchservice.DescribeReservedElasticsearchInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -632,7 +632,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeReservedElasticsearch
 }
 
 // DescribeReservedElasticsearchInstancesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstancesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstancesInput, arg2 ...request.Option) (*elasticsearchservice.DescribeReservedElasticsearchInstancesOutput, error) {
+func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstancesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeReservedElasticsearchInstancesInput, arg2 ...request.Option) (*elasticsearchservice.DescribeReservedElasticsearchInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) GetCompatibleElasticsearchVer
 }
 
 // GetCompatibleElasticsearchVersionsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) GetCompatibleElasticsearchVersionsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetCompatibleElasticsearchVersionsInput, arg2 ...request.Option) (*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput, error) {
+func (m *MockElasticsearchServiceAPI) GetCompatibleElasticsearchVersionsWithContext(arg0 context.Context, arg1 *elasticsearchservice.GetCompatibleElasticsearchVersionsInput, arg2 ...request.Option) (*elasticsearchservice.GetCompatibleElasticsearchVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistoryPages(arg0, 
 }
 
 // GetUpgradeHistoryPagesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryPagesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetUpgradeHistoryInput, arg2 func(*elasticsearchservice.GetUpgradeHistoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.GetUpgradeHistoryInput, arg2 func(*elasticsearchservice.GetUpgradeHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -765,7 +765,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeHistoryRequest(arg0
 }
 
 // GetUpgradeHistoryWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetUpgradeHistoryInput, arg2 ...request.Option) (*elasticsearchservice.GetUpgradeHistoryOutput, error) {
+func (m *MockElasticsearchServiceAPI) GetUpgradeHistoryWithContext(arg0 context.Context, arg1 *elasticsearchservice.GetUpgradeHistoryInput, arg2 ...request.Option) (*elasticsearchservice.GetUpgradeHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -815,7 +815,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) GetUpgradeStatusRequest(arg0 
 }
 
 // GetUpgradeStatusWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) GetUpgradeStatusWithContext(arg0 aws.Context, arg1 *elasticsearchservice.GetUpgradeStatusInput, arg2 ...request.Option) (*elasticsearchservice.GetUpgradeStatusOutput, error) {
+func (m *MockElasticsearchServiceAPI) GetUpgradeStatusWithContext(arg0 context.Context, arg1 *elasticsearchservice.GetUpgradeStatusInput, arg2 ...request.Option) (*elasticsearchservice.GetUpgradeStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -865,7 +865,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainNamesRequest(arg0 i
 }
 
 // ListDomainNamesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) ListDomainNamesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.ListDomainNamesInput, arg2 ...request.Option) (*elasticsearchservice.ListDomainNamesOutput, error) {
+func (m *MockElasticsearchServiceAPI) ListDomainNamesWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListDomainNamesInput, arg2 ...request.Option) (*elasticsearchservice.ListDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -914,7 +914,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListElasticsearchInstanceType
 }
 
 // ListElasticsearchInstanceTypesPagesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) ListElasticsearchInstanceTypesPagesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.ListElasticsearchInstanceTypesInput, arg2 func(*elasticsearchservice.ListElasticsearchInstanceTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticsearchServiceAPI) ListElasticsearchInstanceTypesPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListElasticsearchInstanceTypesInput, arg2 func(*elasticsearchservice.ListElasticsearchInstanceTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -948,7 +948,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListElasticsearchInstanceType
 }
 
 // ListElasticsearchInstanceTypesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) ListElasticsearchInstanceTypesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.ListElasticsearchInstanceTypesInput, arg2 ...request.Option) (*elasticsearchservice.ListElasticsearchInstanceTypesOutput, error) {
+func (m *MockElasticsearchServiceAPI) ListElasticsearchInstanceTypesWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListElasticsearchInstanceTypesInput, arg2 ...request.Option) (*elasticsearchservice.ListElasticsearchInstanceTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -997,7 +997,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListElasticsearchVersionsPage
 }
 
 // ListElasticsearchVersionsPagesWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) ListElasticsearchVersionsPagesWithContext(arg0 aws.Context, arg1 *elasticsearchservice.ListElasticsearchVersionsInput, arg2 func(*elasticsearchservice.ListElasticsearchVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticsearchServiceAPI) ListElasticsearchVersionsPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListElasticsearchVersionsInput, arg2 func(*elasticsearchservice.ListElasticsearchVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1031,7 +1031,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListElasticsearchVersionsRequ
 }
 
 // ListElasticsearchVersionsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) ListElasticsearchVersionsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.ListElasticsearchVersionsInput, arg2 ...request.Option) (*elasticsearchservice.ListElasticsearchVersionsOutput, error) {
+func (m *MockElasticsearchServiceAPI) ListElasticsearchVersionsWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListElasticsearchVersionsInput, arg2 ...request.Option) (*elasticsearchservice.ListElasticsearchVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1081,7 +1081,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListTagsRequest(arg0 interfac
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) ListTagsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.ListTagsInput, arg2 ...request.Option) (*elasticsearchservice.ListTagsOutput, error) {
+func (m *MockElasticsearchServiceAPI) ListTagsWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListTagsInput, arg2 ...request.Option) (*elasticsearchservice.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) PurchaseReservedElasticsearch
 }
 
 // PurchaseReservedElasticsearchInstanceOfferingWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) PurchaseReservedElasticsearchInstanceOfferingWithContext(arg0 aws.Context, arg1 *elasticsearchservice.PurchaseReservedElasticsearchInstanceOfferingInput, arg2 ...request.Option) (*elasticsearchservice.PurchaseReservedElasticsearchInstanceOfferingOutput, error) {
+func (m *MockElasticsearchServiceAPI) PurchaseReservedElasticsearchInstanceOfferingWithContext(arg0 context.Context, arg1 *elasticsearchservice.PurchaseReservedElasticsearchInstanceOfferingInput, arg2 ...request.Option) (*elasticsearchservice.PurchaseReservedElasticsearchInstanceOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1181,7 +1181,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) RemoveTagsRequest(arg0 interf
 }
 
 // RemoveTagsWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) RemoveTagsWithContext(arg0 aws.Context, arg1 *elasticsearchservice.RemoveTagsInput, arg2 ...request.Option) (*elasticsearchservice.RemoveTagsOutput, error) {
+func (m *MockElasticsearchServiceAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *elasticsearchservice.RemoveTagsInput, arg2 ...request.Option) (*elasticsearchservice.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) StartElasticsearchServiceSoft
 }
 
 // StartElasticsearchServiceSoftwareUpdateWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) StartElasticsearchServiceSoftwareUpdateWithContext(arg0 aws.Context, arg1 *elasticsearchservice.StartElasticsearchServiceSoftwareUpdateInput, arg2 ...request.Option) (*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput, error) {
+func (m *MockElasticsearchServiceAPI) StartElasticsearchServiceSoftwareUpdateWithContext(arg0 context.Context, arg1 *elasticsearchservice.StartElasticsearchServiceSoftwareUpdateInput, arg2 ...request.Option) (*elasticsearchservice.StartElasticsearchServiceSoftwareUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) UpdateElasticsearchDomainConf
 }
 
 // UpdateElasticsearchDomainConfigWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) UpdateElasticsearchDomainConfigWithContext(arg0 aws.Context, arg1 *elasticsearchservice.UpdateElasticsearchDomainConfigInput, arg2 ...request.Option) (*elasticsearchservice.UpdateElasticsearchDomainConfigOutput, error) {
+func (m *MockElasticsearchServiceAPI) UpdateElasticsearchDomainConfigWithContext(arg0 context.Context, arg1 *elasticsearchservice.UpdateElasticsearchDomainConfigInput, arg2 ...request.Option) (*elasticsearchservice.UpdateElasticsearchDomainConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1331,7 +1331,7 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) UpgradeElasticsearchDomainReq
 }
 
 // UpgradeElasticsearchDomainWithContext mocks base method
-func (m *MockElasticsearchServiceAPI) UpgradeElasticsearchDomainWithContext(arg0 aws.Context, arg1 *elasticsearchservice.UpgradeElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.UpgradeElasticsearchDomainOutput, error) {
+func (m *MockElasticsearchServiceAPI) UpgradeElasticsearchDomainWithContext(arg0 context.Context, arg1 *elasticsearchservice.UpgradeElasticsearchDomainInput, arg2 ...request.Option) (*elasticsearchservice.UpgradeElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

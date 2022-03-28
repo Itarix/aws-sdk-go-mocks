@@ -5,7 +5,7 @@
 package rdsdataservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	rdsdataservice "github.com/aws/aws-sdk-go/service/rdsdataservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRDSDataServiceAPIMockRecorder) ExecuteSqlRequest(arg0 interface{})
 }
 
 // ExecuteSqlWithContext mocks base method
-func (m *MockRDSDataServiceAPI) ExecuteSqlWithContext(arg0 aws.Context, arg1 *rdsdataservice.ExecuteSqlInput, arg2 ...request.Option) (*rdsdataservice.ExecuteSqlOutput, error) {
+func (m *MockRDSDataServiceAPI) ExecuteSqlWithContext(arg0 context.Context, arg1 *rdsdataservice.ExecuteSqlInput, arg2 ...request.Option) (*rdsdataservice.ExecuteSqlOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

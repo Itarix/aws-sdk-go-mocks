@@ -5,7 +5,7 @@
 package cloud9mock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloud9 "github.com/aws/aws-sdk-go/service/cloud9"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloud9APIMockRecorder) CreateEnvironmentEC2Request(arg0 interface{
 }
 
 // CreateEnvironmentEC2WithContext mocks base method
-func (m *MockCloud9API) CreateEnvironmentEC2WithContext(arg0 aws.Context, arg1 *cloud9.CreateEnvironmentEC2Input, arg2 ...request.Option) (*cloud9.CreateEnvironmentEC2Output, error) {
+func (m *MockCloud9API) CreateEnvironmentEC2WithContext(arg0 context.Context, arg1 *cloud9.CreateEnvironmentEC2Input, arg2 ...request.Option) (*cloud9.CreateEnvironmentEC2Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloud9APIMockRecorder) CreateEnvironmentMembershipRequest(arg0 int
 }
 
 // CreateEnvironmentMembershipWithContext mocks base method
-func (m *MockCloud9API) CreateEnvironmentMembershipWithContext(arg0 aws.Context, arg1 *cloud9.CreateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.CreateEnvironmentMembershipOutput, error) {
+func (m *MockCloud9API) CreateEnvironmentMembershipWithContext(arg0 context.Context, arg1 *cloud9.CreateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.CreateEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -181,7 +181,7 @@ func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentMembershipRequest(arg0 int
 }
 
 // DeleteEnvironmentMembershipWithContext mocks base method
-func (m *MockCloud9API) DeleteEnvironmentMembershipWithContext(arg0 aws.Context, arg1 *cloud9.DeleteEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentMembershipOutput, error) {
+func (m *MockCloud9API) DeleteEnvironmentMembershipWithContext(arg0 context.Context, arg1 *cloud9.DeleteEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloud9APIMockRecorder) DeleteEnvironmentRequest(arg0 interface{}) 
 }
 
 // DeleteEnvironmentWithContext mocks base method
-func (m *MockCloud9API) DeleteEnvironmentWithContext(arg0 aws.Context, arg1 *cloud9.DeleteEnvironmentInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentOutput, error) {
+func (m *MockCloud9API) DeleteEnvironmentWithContext(arg0 context.Context, arg1 *cloud9.DeleteEnvironmentInput, arg2 ...request.Option) (*cloud9.DeleteEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -265,7 +265,7 @@ func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMembershipsPages(arg0, a
 }
 
 // DescribeEnvironmentMembershipsPagesWithContext mocks base method
-func (m *MockCloud9API) DescribeEnvironmentMembershipsPagesWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 func(*cloud9.DescribeEnvironmentMembershipsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloud9API) DescribeEnvironmentMembershipsPagesWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 func(*cloud9.DescribeEnvironmentMembershipsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -299,7 +299,7 @@ func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentMembershipsRequest(arg0 
 }
 
 // DescribeEnvironmentMembershipsWithContext mocks base method
-func (m *MockCloud9API) DescribeEnvironmentMembershipsWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentMembershipsOutput, error) {
+func (m *MockCloud9API) DescribeEnvironmentMembershipsWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentMembershipsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentMembershipsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -349,7 +349,7 @@ func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentStatusRequest(arg0 inter
 }
 
 // DescribeEnvironmentStatusWithContext mocks base method
-func (m *MockCloud9API) DescribeEnvironmentStatusWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentStatusInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentStatusOutput, error) {
+func (m *MockCloud9API) DescribeEnvironmentStatusWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentStatusInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -399,7 +399,7 @@ func (mr *MockCloud9APIMockRecorder) DescribeEnvironmentsRequest(arg0 interface{
 }
 
 // DescribeEnvironmentsWithContext mocks base method
-func (m *MockCloud9API) DescribeEnvironmentsWithContext(arg0 aws.Context, arg1 *cloud9.DescribeEnvironmentsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentsOutput, error) {
+func (m *MockCloud9API) DescribeEnvironmentsWithContext(arg0 context.Context, arg1 *cloud9.DescribeEnvironmentsInput, arg2 ...request.Option) (*cloud9.DescribeEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockCloud9APIMockRecorder) ListEnvironmentsPages(arg0, arg1 interface{
 }
 
 // ListEnvironmentsPagesWithContext mocks base method
-func (m *MockCloud9API) ListEnvironmentsPagesWithContext(arg0 aws.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 func(*cloud9.ListEnvironmentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloud9API) ListEnvironmentsPagesWithContext(arg0 context.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 func(*cloud9.ListEnvironmentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockCloud9APIMockRecorder) ListEnvironmentsRequest(arg0 interface{}) *
 }
 
 // ListEnvironmentsWithContext mocks base method
-func (m *MockCloud9API) ListEnvironmentsWithContext(arg0 aws.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 ...request.Option) (*cloud9.ListEnvironmentsOutput, error) {
+func (m *MockCloud9API) ListEnvironmentsWithContext(arg0 context.Context, arg1 *cloud9.ListEnvironmentsInput, arg2 ...request.Option) (*cloud9.ListEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -547,7 +547,7 @@ func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentMembershipRequest(arg0 int
 }
 
 // UpdateEnvironmentMembershipWithContext mocks base method
-func (m *MockCloud9API) UpdateEnvironmentMembershipWithContext(arg0 aws.Context, arg1 *cloud9.UpdateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentMembershipOutput, error) {
+func (m *MockCloud9API) UpdateEnvironmentMembershipWithContext(arg0 context.Context, arg1 *cloud9.UpdateEnvironmentMembershipInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -582,7 +582,7 @@ func (mr *MockCloud9APIMockRecorder) UpdateEnvironmentRequest(arg0 interface{}) 
 }
 
 // UpdateEnvironmentWithContext mocks base method
-func (m *MockCloud9API) UpdateEnvironmentWithContext(arg0 aws.Context, arg1 *cloud9.UpdateEnvironmentInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentOutput, error) {
+func (m *MockCloud9API) UpdateEnvironmentWithContext(arg0 context.Context, arg1 *cloud9.UpdateEnvironmentInput, arg2 ...request.Option) (*cloud9.UpdateEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package batchmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	batch "github.com/aws/aws-sdk-go/service/batch"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockBatchAPIMockRecorder) CancelJobRequest(arg0 interface{}) *gomock.C
 }
 
 // CancelJobWithContext mocks base method
-func (m *MockBatchAPI) CancelJobWithContext(arg0 aws.Context, arg1 *batch.CancelJobInput, arg2 ...request.Option) (*batch.CancelJobOutput, error) {
+func (m *MockBatchAPI) CancelJobWithContext(arg0 context.Context, arg1 *batch.CancelJobInput, arg2 ...request.Option) (*batch.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockBatchAPIMockRecorder) CreateComputeEnvironmentRequest(arg0 interfa
 }
 
 // CreateComputeEnvironmentWithContext mocks base method
-func (m *MockBatchAPI) CreateComputeEnvironmentWithContext(arg0 aws.Context, arg1 *batch.CreateComputeEnvironmentInput, arg2 ...request.Option) (*batch.CreateComputeEnvironmentOutput, error) {
+func (m *MockBatchAPI) CreateComputeEnvironmentWithContext(arg0 context.Context, arg1 *batch.CreateComputeEnvironmentInput, arg2 ...request.Option) (*batch.CreateComputeEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockBatchAPIMockRecorder) CreateJobQueueRequest(arg0 interface{}) *gom
 }
 
 // CreateJobQueueWithContext mocks base method
-func (m *MockBatchAPI) CreateJobQueueWithContext(arg0 aws.Context, arg1 *batch.CreateJobQueueInput, arg2 ...request.Option) (*batch.CreateJobQueueOutput, error) {
+func (m *MockBatchAPI) CreateJobQueueWithContext(arg0 context.Context, arg1 *batch.CreateJobQueueInput, arg2 ...request.Option) (*batch.CreateJobQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockBatchAPIMockRecorder) DeleteComputeEnvironmentRequest(arg0 interfa
 }
 
 // DeleteComputeEnvironmentWithContext mocks base method
-func (m *MockBatchAPI) DeleteComputeEnvironmentWithContext(arg0 aws.Context, arg1 *batch.DeleteComputeEnvironmentInput, arg2 ...request.Option) (*batch.DeleteComputeEnvironmentOutput, error) {
+func (m *MockBatchAPI) DeleteComputeEnvironmentWithContext(arg0 context.Context, arg1 *batch.DeleteComputeEnvironmentInput, arg2 ...request.Option) (*batch.DeleteComputeEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockBatchAPIMockRecorder) DeleteJobQueueRequest(arg0 interface{}) *gom
 }
 
 // DeleteJobQueueWithContext mocks base method
-func (m *MockBatchAPI) DeleteJobQueueWithContext(arg0 aws.Context, arg1 *batch.DeleteJobQueueInput, arg2 ...request.Option) (*batch.DeleteJobQueueOutput, error) {
+func (m *MockBatchAPI) DeleteJobQueueWithContext(arg0 context.Context, arg1 *batch.DeleteJobQueueInput, arg2 ...request.Option) (*batch.DeleteJobQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockBatchAPIMockRecorder) DeregisterJobDefinitionRequest(arg0 interfac
 }
 
 // DeregisterJobDefinitionWithContext mocks base method
-func (m *MockBatchAPI) DeregisterJobDefinitionWithContext(arg0 aws.Context, arg1 *batch.DeregisterJobDefinitionInput, arg2 ...request.Option) (*batch.DeregisterJobDefinitionOutput, error) {
+func (m *MockBatchAPI) DeregisterJobDefinitionWithContext(arg0 context.Context, arg1 *batch.DeregisterJobDefinitionInput, arg2 ...request.Option) (*batch.DeregisterJobDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockBatchAPIMockRecorder) DescribeComputeEnvironmentsRequest(arg0 inte
 }
 
 // DescribeComputeEnvironmentsWithContext mocks base method
-func (m *MockBatchAPI) DescribeComputeEnvironmentsWithContext(arg0 aws.Context, arg1 *batch.DescribeComputeEnvironmentsInput, arg2 ...request.Option) (*batch.DescribeComputeEnvironmentsOutput, error) {
+func (m *MockBatchAPI) DescribeComputeEnvironmentsWithContext(arg0 context.Context, arg1 *batch.DescribeComputeEnvironmentsInput, arg2 ...request.Option) (*batch.DescribeComputeEnvironmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockBatchAPIMockRecorder) DescribeJobDefinitionsRequest(arg0 interface
 }
 
 // DescribeJobDefinitionsWithContext mocks base method
-func (m *MockBatchAPI) DescribeJobDefinitionsWithContext(arg0 aws.Context, arg1 *batch.DescribeJobDefinitionsInput, arg2 ...request.Option) (*batch.DescribeJobDefinitionsOutput, error) {
+func (m *MockBatchAPI) DescribeJobDefinitionsWithContext(arg0 context.Context, arg1 *batch.DescribeJobDefinitionsInput, arg2 ...request.Option) (*batch.DescribeJobDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockBatchAPIMockRecorder) DescribeJobQueuesRequest(arg0 interface{}) *
 }
 
 // DescribeJobQueuesWithContext mocks base method
-func (m *MockBatchAPI) DescribeJobQueuesWithContext(arg0 aws.Context, arg1 *batch.DescribeJobQueuesInput, arg2 ...request.Option) (*batch.DescribeJobQueuesOutput, error) {
+func (m *MockBatchAPI) DescribeJobQueuesWithContext(arg0 context.Context, arg1 *batch.DescribeJobQueuesInput, arg2 ...request.Option) (*batch.DescribeJobQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockBatchAPIMockRecorder) DescribeJobsRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeJobsWithContext mocks base method
-func (m *MockBatchAPI) DescribeJobsWithContext(arg0 aws.Context, arg1 *batch.DescribeJobsInput, arg2 ...request.Option) (*batch.DescribeJobsOutput, error) {
+func (m *MockBatchAPI) DescribeJobsWithContext(arg0 context.Context, arg1 *batch.DescribeJobsInput, arg2 ...request.Option) (*batch.DescribeJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockBatchAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockBatchAPI) ListJobsWithContext(arg0 aws.Context, arg1 *batch.ListJobsInput, arg2 ...request.Option) (*batch.ListJobsOutput, error) {
+func (m *MockBatchAPI) ListJobsWithContext(arg0 context.Context, arg1 *batch.ListJobsInput, arg2 ...request.Option) (*batch.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockBatchAPIMockRecorder) RegisterJobDefinitionRequest(arg0 interface{
 }
 
 // RegisterJobDefinitionWithContext mocks base method
-func (m *MockBatchAPI) RegisterJobDefinitionWithContext(arg0 aws.Context, arg1 *batch.RegisterJobDefinitionInput, arg2 ...request.Option) (*batch.RegisterJobDefinitionOutput, error) {
+func (m *MockBatchAPI) RegisterJobDefinitionWithContext(arg0 context.Context, arg1 *batch.RegisterJobDefinitionInput, arg2 ...request.Option) (*batch.RegisterJobDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockBatchAPIMockRecorder) SubmitJobRequest(arg0 interface{}) *gomock.C
 }
 
 // SubmitJobWithContext mocks base method
-func (m *MockBatchAPI) SubmitJobWithContext(arg0 aws.Context, arg1 *batch.SubmitJobInput, arg2 ...request.Option) (*batch.SubmitJobOutput, error) {
+func (m *MockBatchAPI) SubmitJobWithContext(arg0 context.Context, arg1 *batch.SubmitJobInput, arg2 ...request.Option) (*batch.SubmitJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockBatchAPIMockRecorder) TerminateJobRequest(arg0 interface{}) *gomoc
 }
 
 // TerminateJobWithContext mocks base method
-func (m *MockBatchAPI) TerminateJobWithContext(arg0 aws.Context, arg1 *batch.TerminateJobInput, arg2 ...request.Option) (*batch.TerminateJobOutput, error) {
+func (m *MockBatchAPI) TerminateJobWithContext(arg0 context.Context, arg1 *batch.TerminateJobInput, arg2 ...request.Option) (*batch.TerminateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockBatchAPIMockRecorder) UpdateComputeEnvironmentRequest(arg0 interfa
 }
 
 // UpdateComputeEnvironmentWithContext mocks base method
-func (m *MockBatchAPI) UpdateComputeEnvironmentWithContext(arg0 aws.Context, arg1 *batch.UpdateComputeEnvironmentInput, arg2 ...request.Option) (*batch.UpdateComputeEnvironmentOutput, error) {
+func (m *MockBatchAPI) UpdateComputeEnvironmentWithContext(arg0 context.Context, arg1 *batch.UpdateComputeEnvironmentInput, arg2 ...request.Option) (*batch.UpdateComputeEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockBatchAPIMockRecorder) UpdateJobQueueRequest(arg0 interface{}) *gom
 }
 
 // UpdateJobQueueWithContext mocks base method
-func (m *MockBatchAPI) UpdateJobQueueWithContext(arg0 aws.Context, arg1 *batch.UpdateJobQueueInput, arg2 ...request.Option) (*batch.UpdateJobQueueOutput, error) {
+func (m *MockBatchAPI) UpdateJobQueueWithContext(arg0 context.Context, arg1 *batch.UpdateJobQueueInput, arg2 ...request.Option) (*batch.UpdateJobQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

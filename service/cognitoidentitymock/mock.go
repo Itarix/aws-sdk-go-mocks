@@ -5,7 +5,7 @@
 package cognitoidentitymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cognitoidentity "github.com/aws/aws-sdk-go/service/cognitoidentity"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) CreateIdentityPoolRequest(arg0 int
 }
 
 // CreateIdentityPoolWithContext mocks base method
-func (m *MockCognitoIdentityAPI) CreateIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.CreateIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
+func (m *MockCognitoIdentityAPI) CreateIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.CreateIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentitiesRequest(arg0 inter
 }
 
 // DeleteIdentitiesWithContext mocks base method
-func (m *MockCognitoIdentityAPI) DeleteIdentitiesWithContext(arg0 aws.Context, arg1 *cognitoidentity.DeleteIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentitiesOutput, error) {
+func (m *MockCognitoIdentityAPI) DeleteIdentitiesWithContext(arg0 context.Context, arg1 *cognitoidentity.DeleteIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) DeleteIdentityPoolRequest(arg0 int
 }
 
 // DeleteIdentityPoolWithContext mocks base method
-func (m *MockCognitoIdentityAPI) DeleteIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.DeleteIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentityPoolOutput, error) {
+func (m *MockCognitoIdentityAPI) DeleteIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.DeleteIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.DeleteIdentityPoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityPoolRequest(arg0 i
 }
 
 // DescribeIdentityPoolWithContext mocks base method
-func (m *MockCognitoIdentityAPI) DescribeIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.DescribeIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
+func (m *MockCognitoIdentityAPI) DescribeIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.DescribeIdentityPoolInput, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) DescribeIdentityRequest(arg0 inter
 }
 
 // DescribeIdentityWithContext mocks base method
-func (m *MockCognitoIdentityAPI) DescribeIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.DescribeIdentityInput, arg2 ...request.Option) (*cognitoidentity.IdentityDescription, error) {
+func (m *MockCognitoIdentityAPI) DescribeIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.DescribeIdentityInput, arg2 ...request.Option) (*cognitoidentity.IdentityDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) GetCredentialsForIdentityRequest(a
 }
 
 // GetCredentialsForIdentityWithContext mocks base method
-func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetCredentialsForIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetCredentialsForIdentityOutput, error) {
+func (m *MockCognitoIdentityAPI) GetCredentialsForIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.GetCredentialsForIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetCredentialsForIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) GetIdRequest(arg0 interface{}) *go
 }
 
 // GetIdWithContext mocks base method
-func (m *MockCognitoIdentityAPI) GetIdWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetIdInput, arg2 ...request.Option) (*cognitoidentity.GetIdOutput, error) {
+func (m *MockCognitoIdentityAPI) GetIdWithContext(arg0 context.Context, arg1 *cognitoidentity.GetIdInput, arg2 ...request.Option) (*cognitoidentity.GetIdOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) GetIdentityPoolRolesRequest(arg0 i
 }
 
 // GetIdentityPoolRolesWithContext mocks base method
-func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.GetIdentityPoolRolesOutput, error) {
+func (m *MockCognitoIdentityAPI) GetIdentityPoolRolesWithContext(arg0 context.Context, arg1 *cognitoidentity.GetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.GetIdentityPoolRolesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenForDeveloperIdentity
 }
 
 // GetOpenIdTokenForDeveloperIdentityWithContext mocks base method
-func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetOpenIdTokenForDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenForDeveloperIdentityOutput, error) {
+func (m *MockCognitoIdentityAPI) GetOpenIdTokenForDeveloperIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.GetOpenIdTokenForDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenForDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenRequest(arg0 interfa
 }
 
 // GetOpenIdTokenWithContext mocks base method
-func (m *MockCognitoIdentityAPI) GetOpenIdTokenWithContext(arg0 aws.Context, arg1 *cognitoidentity.GetOpenIdTokenInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenOutput, error) {
+func (m *MockCognitoIdentityAPI) GetOpenIdTokenWithContext(arg0 context.Context, arg1 *cognitoidentity.GetOpenIdTokenInput, arg2 ...request.Option) (*cognitoidentity.GetOpenIdTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentitiesRequest(arg0 interfa
 }
 
 // ListIdentitiesWithContext mocks base method
-func (m *MockCognitoIdentityAPI) ListIdentitiesWithContext(arg0 aws.Context, arg1 *cognitoidentity.ListIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.ListIdentitiesOutput, error) {
+func (m *MockCognitoIdentityAPI) ListIdentitiesWithContext(arg0 context.Context, arg1 *cognitoidentity.ListIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.ListIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsRequest(arg0 inte
 }
 
 // ListIdentityPoolsWithContext mocks base method
-func (m *MockCognitoIdentityAPI) ListIdentityPoolsWithContext(arg0 aws.Context, arg1 *cognitoidentity.ListIdentityPoolsInput, arg2 ...request.Option) (*cognitoidentity.ListIdentityPoolsOutput, error) {
+func (m *MockCognitoIdentityAPI) ListIdentityPoolsWithContext(arg0 context.Context, arg1 *cognitoidentity.ListIdentityPoolsInput, arg2 ...request.Option) (*cognitoidentity.ListIdentityPoolsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) LookupDeveloperIdentityRequest(arg
 }
 
 // LookupDeveloperIdentityWithContext mocks base method
-func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.LookupDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.LookupDeveloperIdentityOutput, error) {
+func (m *MockCognitoIdentityAPI) LookupDeveloperIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.LookupDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.LookupDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) MergeDeveloperIdentitiesRequest(ar
 }
 
 // MergeDeveloperIdentitiesWithContext mocks base method
-func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesWithContext(arg0 aws.Context, arg1 *cognitoidentity.MergeDeveloperIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.MergeDeveloperIdentitiesOutput, error) {
+func (m *MockCognitoIdentityAPI) MergeDeveloperIdentitiesWithContext(arg0 context.Context, arg1 *cognitoidentity.MergeDeveloperIdentitiesInput, arg2 ...request.Option) (*cognitoidentity.MergeDeveloperIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) SetIdentityPoolRolesRequest(arg0 i
 }
 
 // SetIdentityPoolRolesWithContext mocks base method
-func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesWithContext(arg0 aws.Context, arg1 *cognitoidentity.SetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.SetIdentityPoolRolesOutput, error) {
+func (m *MockCognitoIdentityAPI) SetIdentityPoolRolesWithContext(arg0 context.Context, arg1 *cognitoidentity.SetIdentityPoolRolesInput, arg2 ...request.Option) (*cognitoidentity.SetIdentityPoolRolesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkDeveloperIdentityRequest(arg
 }
 
 // UnlinkDeveloperIdentityWithContext mocks base method
-func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.UnlinkDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkDeveloperIdentityOutput, error) {
+func (m *MockCognitoIdentityAPI) UnlinkDeveloperIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.UnlinkDeveloperIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkDeveloperIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) UnlinkIdentityRequest(arg0 interfa
 }
 
 // UnlinkIdentityWithContext mocks base method
-func (m *MockCognitoIdentityAPI) UnlinkIdentityWithContext(arg0 aws.Context, arg1 *cognitoidentity.UnlinkIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkIdentityOutput, error) {
+func (m *MockCognitoIdentityAPI) UnlinkIdentityWithContext(arg0 context.Context, arg1 *cognitoidentity.UnlinkIdentityInput, arg2 ...request.Option) (*cognitoidentity.UnlinkIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCognitoIdentityAPIMockRecorder) UpdateIdentityPoolRequest(arg0 int
 }
 
 // UpdateIdentityPoolWithContext mocks base method
-func (m *MockCognitoIdentityAPI) UpdateIdentityPoolWithContext(arg0 aws.Context, arg1 *cognitoidentity.IdentityPool, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
+func (m *MockCognitoIdentityAPI) UpdateIdentityPoolWithContext(arg0 context.Context, arg1 *cognitoidentity.IdentityPool, arg2 ...request.Option) (*cognitoidentity.IdentityPool, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

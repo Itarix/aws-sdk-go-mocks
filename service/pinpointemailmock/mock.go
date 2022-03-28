@@ -5,7 +5,7 @@
 package pinpointemailmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	pinpointemail "github.com/aws/aws-sdk-go/service/pinpointemail"
 	gomock "github.com/golang/mock/gomock"
@@ -81,7 +81,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) CreateConfigurationSetEventDestinati
 }
 
 // CreateConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockPinpointEmailAPI) CreateConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *pinpointemail.CreateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointemail.CreateConfigurationSetEventDestinationOutput, error) {
+func (m *MockPinpointEmailAPI) CreateConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *pinpointemail.CreateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointemail.CreateConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) CreateConfigurationSetRequest(arg0 i
 }
 
 // CreateConfigurationSetWithContext mocks base method
-func (m *MockPinpointEmailAPI) CreateConfigurationSetWithContext(arg0 aws.Context, arg1 *pinpointemail.CreateConfigurationSetInput, arg2 ...request.Option) (*pinpointemail.CreateConfigurationSetOutput, error) {
+func (m *MockPinpointEmailAPI) CreateConfigurationSetWithContext(arg0 context.Context, arg1 *pinpointemail.CreateConfigurationSetInput, arg2 ...request.Option) (*pinpointemail.CreateConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) CreateDedicatedIpPoolRequest(arg0 in
 }
 
 // CreateDedicatedIpPoolWithContext mocks base method
-func (m *MockPinpointEmailAPI) CreateDedicatedIpPoolWithContext(arg0 aws.Context, arg1 *pinpointemail.CreateDedicatedIpPoolInput, arg2 ...request.Option) (*pinpointemail.CreateDedicatedIpPoolOutput, error) {
+func (m *MockPinpointEmailAPI) CreateDedicatedIpPoolWithContext(arg0 context.Context, arg1 *pinpointemail.CreateDedicatedIpPoolInput, arg2 ...request.Option) (*pinpointemail.CreateDedicatedIpPoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) CreateDeliverabilityTestReportReques
 }
 
 // CreateDeliverabilityTestReportWithContext mocks base method
-func (m *MockPinpointEmailAPI) CreateDeliverabilityTestReportWithContext(arg0 aws.Context, arg1 *pinpointemail.CreateDeliverabilityTestReportInput, arg2 ...request.Option) (*pinpointemail.CreateDeliverabilityTestReportOutput, error) {
+func (m *MockPinpointEmailAPI) CreateDeliverabilityTestReportWithContext(arg0 context.Context, arg1 *pinpointemail.CreateDeliverabilityTestReportInput, arg2 ...request.Option) (*pinpointemail.CreateDeliverabilityTestReportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) CreateEmailIdentityRequest(arg0 inte
 }
 
 // CreateEmailIdentityWithContext mocks base method
-func (m *MockPinpointEmailAPI) CreateEmailIdentityWithContext(arg0 aws.Context, arg1 *pinpointemail.CreateEmailIdentityInput, arg2 ...request.Option) (*pinpointemail.CreateEmailIdentityOutput, error) {
+func (m *MockPinpointEmailAPI) CreateEmailIdentityWithContext(arg0 context.Context, arg1 *pinpointemail.CreateEmailIdentityInput, arg2 ...request.Option) (*pinpointemail.CreateEmailIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) DeleteConfigurationSetEventDestinati
 }
 
 // DeleteConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockPinpointEmailAPI) DeleteConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *pinpointemail.DeleteConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointemail.DeleteConfigurationSetEventDestinationOutput, error) {
+func (m *MockPinpointEmailAPI) DeleteConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *pinpointemail.DeleteConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointemail.DeleteConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) DeleteConfigurationSetRequest(arg0 i
 }
 
 // DeleteConfigurationSetWithContext mocks base method
-func (m *MockPinpointEmailAPI) DeleteConfigurationSetWithContext(arg0 aws.Context, arg1 *pinpointemail.DeleteConfigurationSetInput, arg2 ...request.Option) (*pinpointemail.DeleteConfigurationSetOutput, error) {
+func (m *MockPinpointEmailAPI) DeleteConfigurationSetWithContext(arg0 context.Context, arg1 *pinpointemail.DeleteConfigurationSetInput, arg2 ...request.Option) (*pinpointemail.DeleteConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) DeleteDedicatedIpPoolRequest(arg0 in
 }
 
 // DeleteDedicatedIpPoolWithContext mocks base method
-func (m *MockPinpointEmailAPI) DeleteDedicatedIpPoolWithContext(arg0 aws.Context, arg1 *pinpointemail.DeleteDedicatedIpPoolInput, arg2 ...request.Option) (*pinpointemail.DeleteDedicatedIpPoolOutput, error) {
+func (m *MockPinpointEmailAPI) DeleteDedicatedIpPoolWithContext(arg0 context.Context, arg1 *pinpointemail.DeleteDedicatedIpPoolInput, arg2 ...request.Option) (*pinpointemail.DeleteDedicatedIpPoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) DeleteEmailIdentityRequest(arg0 inte
 }
 
 // DeleteEmailIdentityWithContext mocks base method
-func (m *MockPinpointEmailAPI) DeleteEmailIdentityWithContext(arg0 aws.Context, arg1 *pinpointemail.DeleteEmailIdentityInput, arg2 ...request.Option) (*pinpointemail.DeleteEmailIdentityOutput, error) {
+func (m *MockPinpointEmailAPI) DeleteEmailIdentityWithContext(arg0 context.Context, arg1 *pinpointemail.DeleteEmailIdentityInput, arg2 ...request.Option) (*pinpointemail.DeleteEmailIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetAccountRequest(arg0 interface{}) 
 }
 
 // GetAccountWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetAccountWithContext(arg0 aws.Context, arg1 *pinpointemail.GetAccountInput, arg2 ...request.Option) (*pinpointemail.GetAccountOutput, error) {
+func (m *MockPinpointEmailAPI) GetAccountWithContext(arg0 context.Context, arg1 *pinpointemail.GetAccountInput, arg2 ...request.Option) (*pinpointemail.GetAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetBlacklistReportsRequest(arg0 inte
 }
 
 // GetBlacklistReportsWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetBlacklistReportsWithContext(arg0 aws.Context, arg1 *pinpointemail.GetBlacklistReportsInput, arg2 ...request.Option) (*pinpointemail.GetBlacklistReportsOutput, error) {
+func (m *MockPinpointEmailAPI) GetBlacklistReportsWithContext(arg0 context.Context, arg1 *pinpointemail.GetBlacklistReportsInput, arg2 ...request.Option) (*pinpointemail.GetBlacklistReportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetConfigurationSetEventDestinations
 }
 
 // GetConfigurationSetEventDestinationsWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetConfigurationSetEventDestinationsWithContext(arg0 aws.Context, arg1 *pinpointemail.GetConfigurationSetEventDestinationsInput, arg2 ...request.Option) (*pinpointemail.GetConfigurationSetEventDestinationsOutput, error) {
+func (m *MockPinpointEmailAPI) GetConfigurationSetEventDestinationsWithContext(arg0 context.Context, arg1 *pinpointemail.GetConfigurationSetEventDestinationsInput, arg2 ...request.Option) (*pinpointemail.GetConfigurationSetEventDestinationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetConfigurationSetRequest(arg0 inte
 }
 
 // GetConfigurationSetWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetConfigurationSetWithContext(arg0 aws.Context, arg1 *pinpointemail.GetConfigurationSetInput, arg2 ...request.Option) (*pinpointemail.GetConfigurationSetOutput, error) {
+func (m *MockPinpointEmailAPI) GetConfigurationSetWithContext(arg0 context.Context, arg1 *pinpointemail.GetConfigurationSetInput, arg2 ...request.Option) (*pinpointemail.GetConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDedicatedIpRequest(arg0 interface
 }
 
 // GetDedicatedIpWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetDedicatedIpWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDedicatedIpInput, arg2 ...request.Option) (*pinpointemail.GetDedicatedIpOutput, error) {
+func (m *MockPinpointEmailAPI) GetDedicatedIpWithContext(arg0 context.Context, arg1 *pinpointemail.GetDedicatedIpInput, arg2 ...request.Option) (*pinpointemail.GetDedicatedIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -765,7 +765,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDedicatedIpsPages(arg0, arg1 inte
 }
 
 // GetDedicatedIpsPagesWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetDedicatedIpsPagesWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDedicatedIpsInput, arg2 func(*pinpointemail.GetDedicatedIpsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPinpointEmailAPI) GetDedicatedIpsPagesWithContext(arg0 context.Context, arg1 *pinpointemail.GetDedicatedIpsInput, arg2 func(*pinpointemail.GetDedicatedIpsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -799,7 +799,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDedicatedIpsRequest(arg0 interfac
 }
 
 // GetDedicatedIpsWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetDedicatedIpsWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDedicatedIpsInput, arg2 ...request.Option) (*pinpointemail.GetDedicatedIpsOutput, error) {
+func (m *MockPinpointEmailAPI) GetDedicatedIpsWithContext(arg0 context.Context, arg1 *pinpointemail.GetDedicatedIpsInput, arg2 ...request.Option) (*pinpointemail.GetDedicatedIpsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -849,7 +849,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityDashboardOptionsReq
 }
 
 // GetDeliverabilityDashboardOptionsWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetDeliverabilityDashboardOptionsWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDeliverabilityDashboardOptionsInput, arg2 ...request.Option) (*pinpointemail.GetDeliverabilityDashboardOptionsOutput, error) {
+func (m *MockPinpointEmailAPI) GetDeliverabilityDashboardOptionsWithContext(arg0 context.Context, arg1 *pinpointemail.GetDeliverabilityDashboardOptionsInput, arg2 ...request.Option) (*pinpointemail.GetDeliverabilityDashboardOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -899,7 +899,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDeliverabilityTestReportRequest(a
 }
 
 // GetDeliverabilityTestReportWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetDeliverabilityTestReportWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDeliverabilityTestReportInput, arg2 ...request.Option) (*pinpointemail.GetDeliverabilityTestReportOutput, error) {
+func (m *MockPinpointEmailAPI) GetDeliverabilityTestReportWithContext(arg0 context.Context, arg1 *pinpointemail.GetDeliverabilityTestReportInput, arg2 ...request.Option) (*pinpointemail.GetDeliverabilityTestReportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -949,7 +949,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetDomainStatisticsReportRequest(arg
 }
 
 // GetDomainStatisticsReportWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetDomainStatisticsReportWithContext(arg0 aws.Context, arg1 *pinpointemail.GetDomainStatisticsReportInput, arg2 ...request.Option) (*pinpointemail.GetDomainStatisticsReportOutput, error) {
+func (m *MockPinpointEmailAPI) GetDomainStatisticsReportWithContext(arg0 context.Context, arg1 *pinpointemail.GetDomainStatisticsReportInput, arg2 ...request.Option) (*pinpointemail.GetDomainStatisticsReportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -999,7 +999,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) GetEmailIdentityRequest(arg0 interfa
 }
 
 // GetEmailIdentityWithContext mocks base method
-func (m *MockPinpointEmailAPI) GetEmailIdentityWithContext(arg0 aws.Context, arg1 *pinpointemail.GetEmailIdentityInput, arg2 ...request.Option) (*pinpointemail.GetEmailIdentityOutput, error) {
+func (m *MockPinpointEmailAPI) GetEmailIdentityWithContext(arg0 context.Context, arg1 *pinpointemail.GetEmailIdentityInput, arg2 ...request.Option) (*pinpointemail.GetEmailIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListConfigurationSetsPages(arg0, arg
 }
 
 // ListConfigurationSetsPagesWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListConfigurationSetsPagesWithContext(arg0 aws.Context, arg1 *pinpointemail.ListConfigurationSetsInput, arg2 func(*pinpointemail.ListConfigurationSetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPinpointEmailAPI) ListConfigurationSetsPagesWithContext(arg0 context.Context, arg1 *pinpointemail.ListConfigurationSetsInput, arg2 func(*pinpointemail.ListConfigurationSetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListConfigurationSetsRequest(arg0 in
 }
 
 // ListConfigurationSetsWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListConfigurationSetsWithContext(arg0 aws.Context, arg1 *pinpointemail.ListConfigurationSetsInput, arg2 ...request.Option) (*pinpointemail.ListConfigurationSetsOutput, error) {
+func (m *MockPinpointEmailAPI) ListConfigurationSetsWithContext(arg0 context.Context, arg1 *pinpointemail.ListConfigurationSetsInput, arg2 ...request.Option) (*pinpointemail.ListConfigurationSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListDedicatedIpPoolsPages(arg0, arg1
 }
 
 // ListDedicatedIpPoolsPagesWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListDedicatedIpPoolsPagesWithContext(arg0 aws.Context, arg1 *pinpointemail.ListDedicatedIpPoolsInput, arg2 func(*pinpointemail.ListDedicatedIpPoolsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPinpointEmailAPI) ListDedicatedIpPoolsPagesWithContext(arg0 context.Context, arg1 *pinpointemail.ListDedicatedIpPoolsInput, arg2 func(*pinpointemail.ListDedicatedIpPoolsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListDedicatedIpPoolsRequest(arg0 int
 }
 
 // ListDedicatedIpPoolsWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListDedicatedIpPoolsWithContext(arg0 aws.Context, arg1 *pinpointemail.ListDedicatedIpPoolsInput, arg2 ...request.Option) (*pinpointemail.ListDedicatedIpPoolsOutput, error) {
+func (m *MockPinpointEmailAPI) ListDedicatedIpPoolsWithContext(arg0 context.Context, arg1 *pinpointemail.ListDedicatedIpPoolsInput, arg2 ...request.Option) (*pinpointemail.ListDedicatedIpPoolsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReportsPages(a
 }
 
 // ListDeliverabilityTestReportsPagesWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsPagesWithContext(arg0 aws.Context, arg1 *pinpointemail.ListDeliverabilityTestReportsInput, arg2 func(*pinpointemail.ListDeliverabilityTestReportsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsPagesWithContext(arg0 context.Context, arg1 *pinpointemail.ListDeliverabilityTestReportsInput, arg2 func(*pinpointemail.ListDeliverabilityTestReportsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1248,7 +1248,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListDeliverabilityTestReportsRequest
 }
 
 // ListDeliverabilityTestReportsWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsWithContext(arg0 aws.Context, arg1 *pinpointemail.ListDeliverabilityTestReportsInput, arg2 ...request.Option) (*pinpointemail.ListDeliverabilityTestReportsOutput, error) {
+func (m *MockPinpointEmailAPI) ListDeliverabilityTestReportsWithContext(arg0 context.Context, arg1 *pinpointemail.ListDeliverabilityTestReportsInput, arg2 ...request.Option) (*pinpointemail.ListDeliverabilityTestReportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1297,7 +1297,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListEmailIdentitiesPages(arg0, arg1 
 }
 
 // ListEmailIdentitiesPagesWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListEmailIdentitiesPagesWithContext(arg0 aws.Context, arg1 *pinpointemail.ListEmailIdentitiesInput, arg2 func(*pinpointemail.ListEmailIdentitiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPinpointEmailAPI) ListEmailIdentitiesPagesWithContext(arg0 context.Context, arg1 *pinpointemail.ListEmailIdentitiesInput, arg2 func(*pinpointemail.ListEmailIdentitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1331,7 +1331,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) ListEmailIdentitiesRequest(arg0 inte
 }
 
 // ListEmailIdentitiesWithContext mocks base method
-func (m *MockPinpointEmailAPI) ListEmailIdentitiesWithContext(arg0 aws.Context, arg1 *pinpointemail.ListEmailIdentitiesInput, arg2 ...request.Option) (*pinpointemail.ListEmailIdentitiesOutput, error) {
+func (m *MockPinpointEmailAPI) ListEmailIdentitiesWithContext(arg0 context.Context, arg1 *pinpointemail.ListEmailIdentitiesInput, arg2 ...request.Option) (*pinpointemail.ListEmailIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutAccountDedicatedIpWarmupAttribute
 }
 
 // PutAccountDedicatedIpWarmupAttributesWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutAccountDedicatedIpWarmupAttributesWithContext(arg0 aws.Context, arg1 *pinpointemail.PutAccountDedicatedIpWarmupAttributesInput, arg2 ...request.Option) (*pinpointemail.PutAccountDedicatedIpWarmupAttributesOutput, error) {
+func (m *MockPinpointEmailAPI) PutAccountDedicatedIpWarmupAttributesWithContext(arg0 context.Context, arg1 *pinpointemail.PutAccountDedicatedIpWarmupAttributesInput, arg2 ...request.Option) (*pinpointemail.PutAccountDedicatedIpWarmupAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutAccountSendingAttributesRequest(a
 }
 
 // PutAccountSendingAttributesWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutAccountSendingAttributesWithContext(arg0 aws.Context, arg1 *pinpointemail.PutAccountSendingAttributesInput, arg2 ...request.Option) (*pinpointemail.PutAccountSendingAttributesOutput, error) {
+func (m *MockPinpointEmailAPI) PutAccountSendingAttributesWithContext(arg0 context.Context, arg1 *pinpointemail.PutAccountSendingAttributesInput, arg2 ...request.Option) (*pinpointemail.PutAccountSendingAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutConfigurationSetDeliveryOptionsRe
 }
 
 // PutConfigurationSetDeliveryOptionsWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutConfigurationSetDeliveryOptionsWithContext(arg0 aws.Context, arg1 *pinpointemail.PutConfigurationSetDeliveryOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetDeliveryOptionsOutput, error) {
+func (m *MockPinpointEmailAPI) PutConfigurationSetDeliveryOptionsWithContext(arg0 context.Context, arg1 *pinpointemail.PutConfigurationSetDeliveryOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetDeliveryOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1531,7 +1531,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutConfigurationSetReputationOptions
 }
 
 // PutConfigurationSetReputationOptionsWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutConfigurationSetReputationOptionsWithContext(arg0 aws.Context, arg1 *pinpointemail.PutConfigurationSetReputationOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetReputationOptionsOutput, error) {
+func (m *MockPinpointEmailAPI) PutConfigurationSetReputationOptionsWithContext(arg0 context.Context, arg1 *pinpointemail.PutConfigurationSetReputationOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetReputationOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1581,7 +1581,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutConfigurationSetSendingOptionsReq
 }
 
 // PutConfigurationSetSendingOptionsWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutConfigurationSetSendingOptionsWithContext(arg0 aws.Context, arg1 *pinpointemail.PutConfigurationSetSendingOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetSendingOptionsOutput, error) {
+func (m *MockPinpointEmailAPI) PutConfigurationSetSendingOptionsWithContext(arg0 context.Context, arg1 *pinpointemail.PutConfigurationSetSendingOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetSendingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1631,7 +1631,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutConfigurationSetTrackingOptionsRe
 }
 
 // PutConfigurationSetTrackingOptionsWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutConfigurationSetTrackingOptionsWithContext(arg0 aws.Context, arg1 *pinpointemail.PutConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetTrackingOptionsOutput, error) {
+func (m *MockPinpointEmailAPI) PutConfigurationSetTrackingOptionsWithContext(arg0 context.Context, arg1 *pinpointemail.PutConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*pinpointemail.PutConfigurationSetTrackingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1681,7 +1681,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutDedicatedIpInPoolRequest(arg0 int
 }
 
 // PutDedicatedIpInPoolWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutDedicatedIpInPoolWithContext(arg0 aws.Context, arg1 *pinpointemail.PutDedicatedIpInPoolInput, arg2 ...request.Option) (*pinpointemail.PutDedicatedIpInPoolOutput, error) {
+func (m *MockPinpointEmailAPI) PutDedicatedIpInPoolWithContext(arg0 context.Context, arg1 *pinpointemail.PutDedicatedIpInPoolInput, arg2 ...request.Option) (*pinpointemail.PutDedicatedIpInPoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1731,7 +1731,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutDedicatedIpWarmupAttributesReques
 }
 
 // PutDedicatedIpWarmupAttributesWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutDedicatedIpWarmupAttributesWithContext(arg0 aws.Context, arg1 *pinpointemail.PutDedicatedIpWarmupAttributesInput, arg2 ...request.Option) (*pinpointemail.PutDedicatedIpWarmupAttributesOutput, error) {
+func (m *MockPinpointEmailAPI) PutDedicatedIpWarmupAttributesWithContext(arg0 context.Context, arg1 *pinpointemail.PutDedicatedIpWarmupAttributesInput, arg2 ...request.Option) (*pinpointemail.PutDedicatedIpWarmupAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutDeliverabilityDashboardOptionRequ
 }
 
 // PutDeliverabilityDashboardOptionWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutDeliverabilityDashboardOptionWithContext(arg0 aws.Context, arg1 *pinpointemail.PutDeliverabilityDashboardOptionInput, arg2 ...request.Option) (*pinpointemail.PutDeliverabilityDashboardOptionOutput, error) {
+func (m *MockPinpointEmailAPI) PutDeliverabilityDashboardOptionWithContext(arg0 context.Context, arg1 *pinpointemail.PutDeliverabilityDashboardOptionInput, arg2 ...request.Option) (*pinpointemail.PutDeliverabilityDashboardOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1831,7 +1831,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutEmailIdentityDkimAttributesReques
 }
 
 // PutEmailIdentityDkimAttributesWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutEmailIdentityDkimAttributesWithContext(arg0 aws.Context, arg1 *pinpointemail.PutEmailIdentityDkimAttributesInput, arg2 ...request.Option) (*pinpointemail.PutEmailIdentityDkimAttributesOutput, error) {
+func (m *MockPinpointEmailAPI) PutEmailIdentityDkimAttributesWithContext(arg0 context.Context, arg1 *pinpointemail.PutEmailIdentityDkimAttributesInput, arg2 ...request.Option) (*pinpointemail.PutEmailIdentityDkimAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1881,7 +1881,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutEmailIdentityFeedbackAttributesRe
 }
 
 // PutEmailIdentityFeedbackAttributesWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutEmailIdentityFeedbackAttributesWithContext(arg0 aws.Context, arg1 *pinpointemail.PutEmailIdentityFeedbackAttributesInput, arg2 ...request.Option) (*pinpointemail.PutEmailIdentityFeedbackAttributesOutput, error) {
+func (m *MockPinpointEmailAPI) PutEmailIdentityFeedbackAttributesWithContext(arg0 context.Context, arg1 *pinpointemail.PutEmailIdentityFeedbackAttributesInput, arg2 ...request.Option) (*pinpointemail.PutEmailIdentityFeedbackAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1931,7 +1931,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) PutEmailIdentityMailFromAttributesRe
 }
 
 // PutEmailIdentityMailFromAttributesWithContext mocks base method
-func (m *MockPinpointEmailAPI) PutEmailIdentityMailFromAttributesWithContext(arg0 aws.Context, arg1 *pinpointemail.PutEmailIdentityMailFromAttributesInput, arg2 ...request.Option) (*pinpointemail.PutEmailIdentityMailFromAttributesOutput, error) {
+func (m *MockPinpointEmailAPI) PutEmailIdentityMailFromAttributesWithContext(arg0 context.Context, arg1 *pinpointemail.PutEmailIdentityMailFromAttributesInput, arg2 ...request.Option) (*pinpointemail.PutEmailIdentityMailFromAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1981,7 +1981,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) SendEmailRequest(arg0 interface{}) *
 }
 
 // SendEmailWithContext mocks base method
-func (m *MockPinpointEmailAPI) SendEmailWithContext(arg0 aws.Context, arg1 *pinpointemail.SendEmailInput, arg2 ...request.Option) (*pinpointemail.SendEmailOutput, error) {
+func (m *MockPinpointEmailAPI) SendEmailWithContext(arg0 context.Context, arg1 *pinpointemail.SendEmailInput, arg2 ...request.Option) (*pinpointemail.SendEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2031,7 +2031,7 @@ func (mr *MockPinpointEmailAPIMockRecorder) UpdateConfigurationSetEventDestinati
 }
 
 // UpdateConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockPinpointEmailAPI) UpdateConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *pinpointemail.UpdateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointemail.UpdateConfigurationSetEventDestinationOutput, error) {
+func (m *MockPinpointEmailAPI) UpdateConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *pinpointemail.UpdateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointemail.UpdateConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

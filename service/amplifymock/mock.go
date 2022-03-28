@@ -5,7 +5,7 @@
 package amplifymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	amplify "github.com/aws/aws-sdk-go/service/amplify"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAmplifyAPIMockRecorder) CreateAppRequest(arg0 interface{}) *gomock
 }
 
 // CreateAppWithContext mocks base method
-func (m *MockAmplifyAPI) CreateAppWithContext(arg0 aws.Context, arg1 *amplify.CreateAppInput, arg2 ...request.Option) (*amplify.CreateAppOutput, error) {
+func (m *MockAmplifyAPI) CreateAppWithContext(arg0 context.Context, arg1 *amplify.CreateAppInput, arg2 ...request.Option) (*amplify.CreateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAmplifyAPIMockRecorder) CreateBranchRequest(arg0 interface{}) *gom
 }
 
 // CreateBranchWithContext mocks base method
-func (m *MockAmplifyAPI) CreateBranchWithContext(arg0 aws.Context, arg1 *amplify.CreateBranchInput, arg2 ...request.Option) (*amplify.CreateBranchOutput, error) {
+func (m *MockAmplifyAPI) CreateBranchWithContext(arg0 context.Context, arg1 *amplify.CreateBranchInput, arg2 ...request.Option) (*amplify.CreateBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAmplifyAPIMockRecorder) CreateDomainAssociationRequest(arg0 interf
 }
 
 // CreateDomainAssociationWithContext mocks base method
-func (m *MockAmplifyAPI) CreateDomainAssociationWithContext(arg0 aws.Context, arg1 *amplify.CreateDomainAssociationInput, arg2 ...request.Option) (*amplify.CreateDomainAssociationOutput, error) {
+func (m *MockAmplifyAPI) CreateDomainAssociationWithContext(arg0 context.Context, arg1 *amplify.CreateDomainAssociationInput, arg2 ...request.Option) (*amplify.CreateDomainAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAmplifyAPIMockRecorder) DeleteAppRequest(arg0 interface{}) *gomock
 }
 
 // DeleteAppWithContext mocks base method
-func (m *MockAmplifyAPI) DeleteAppWithContext(arg0 aws.Context, arg1 *amplify.DeleteAppInput, arg2 ...request.Option) (*amplify.DeleteAppOutput, error) {
+func (m *MockAmplifyAPI) DeleteAppWithContext(arg0 context.Context, arg1 *amplify.DeleteAppInput, arg2 ...request.Option) (*amplify.DeleteAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAmplifyAPIMockRecorder) DeleteBranchRequest(arg0 interface{}) *gom
 }
 
 // DeleteBranchWithContext mocks base method
-func (m *MockAmplifyAPI) DeleteBranchWithContext(arg0 aws.Context, arg1 *amplify.DeleteBranchInput, arg2 ...request.Option) (*amplify.DeleteBranchOutput, error) {
+func (m *MockAmplifyAPI) DeleteBranchWithContext(arg0 context.Context, arg1 *amplify.DeleteBranchInput, arg2 ...request.Option) (*amplify.DeleteBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAmplifyAPIMockRecorder) DeleteDomainAssociationRequest(arg0 interf
 }
 
 // DeleteDomainAssociationWithContext mocks base method
-func (m *MockAmplifyAPI) DeleteDomainAssociationWithContext(arg0 aws.Context, arg1 *amplify.DeleteDomainAssociationInput, arg2 ...request.Option) (*amplify.DeleteDomainAssociationOutput, error) {
+func (m *MockAmplifyAPI) DeleteDomainAssociationWithContext(arg0 context.Context, arg1 *amplify.DeleteDomainAssociationInput, arg2 ...request.Option) (*amplify.DeleteDomainAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockAmplifyAPIMockRecorder) DeleteJobRequest(arg0 interface{}) *gomock
 }
 
 // DeleteJobWithContext mocks base method
-func (m *MockAmplifyAPI) DeleteJobWithContext(arg0 aws.Context, arg1 *amplify.DeleteJobInput, arg2 ...request.Option) (*amplify.DeleteJobOutput, error) {
+func (m *MockAmplifyAPI) DeleteJobWithContext(arg0 context.Context, arg1 *amplify.DeleteJobInput, arg2 ...request.Option) (*amplify.DeleteJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockAmplifyAPIMockRecorder) GetAppRequest(arg0 interface{}) *gomock.Ca
 }
 
 // GetAppWithContext mocks base method
-func (m *MockAmplifyAPI) GetAppWithContext(arg0 aws.Context, arg1 *amplify.GetAppInput, arg2 ...request.Option) (*amplify.GetAppOutput, error) {
+func (m *MockAmplifyAPI) GetAppWithContext(arg0 context.Context, arg1 *amplify.GetAppInput, arg2 ...request.Option) (*amplify.GetAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockAmplifyAPIMockRecorder) GetBranchRequest(arg0 interface{}) *gomock
 }
 
 // GetBranchWithContext mocks base method
-func (m *MockAmplifyAPI) GetBranchWithContext(arg0 aws.Context, arg1 *amplify.GetBranchInput, arg2 ...request.Option) (*amplify.GetBranchOutput, error) {
+func (m *MockAmplifyAPI) GetBranchWithContext(arg0 context.Context, arg1 *amplify.GetBranchInput, arg2 ...request.Option) (*amplify.GetBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockAmplifyAPIMockRecorder) GetDomainAssociationRequest(arg0 interface
 }
 
 // GetDomainAssociationWithContext mocks base method
-func (m *MockAmplifyAPI) GetDomainAssociationWithContext(arg0 aws.Context, arg1 *amplify.GetDomainAssociationInput, arg2 ...request.Option) (*amplify.GetDomainAssociationOutput, error) {
+func (m *MockAmplifyAPI) GetDomainAssociationWithContext(arg0 context.Context, arg1 *amplify.GetDomainAssociationInput, arg2 ...request.Option) (*amplify.GetDomainAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockAmplifyAPIMockRecorder) GetJobRequest(arg0 interface{}) *gomock.Ca
 }
 
 // GetJobWithContext mocks base method
-func (m *MockAmplifyAPI) GetJobWithContext(arg0 aws.Context, arg1 *amplify.GetJobInput, arg2 ...request.Option) (*amplify.GetJobOutput, error) {
+func (m *MockAmplifyAPI) GetJobWithContext(arg0 context.Context, arg1 *amplify.GetJobInput, arg2 ...request.Option) (*amplify.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockAmplifyAPIMockRecorder) ListAppsRequest(arg0 interface{}) *gomock.
 }
 
 // ListAppsWithContext mocks base method
-func (m *MockAmplifyAPI) ListAppsWithContext(arg0 aws.Context, arg1 *amplify.ListAppsInput, arg2 ...request.Option) (*amplify.ListAppsOutput, error) {
+func (m *MockAmplifyAPI) ListAppsWithContext(arg0 context.Context, arg1 *amplify.ListAppsInput, arg2 ...request.Option) (*amplify.ListAppsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockAmplifyAPIMockRecorder) ListBranchesRequest(arg0 interface{}) *gom
 }
 
 // ListBranchesWithContext mocks base method
-func (m *MockAmplifyAPI) ListBranchesWithContext(arg0 aws.Context, arg1 *amplify.ListBranchesInput, arg2 ...request.Option) (*amplify.ListBranchesOutput, error) {
+func (m *MockAmplifyAPI) ListBranchesWithContext(arg0 context.Context, arg1 *amplify.ListBranchesInput, arg2 ...request.Option) (*amplify.ListBranchesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockAmplifyAPIMockRecorder) ListDomainAssociationsRequest(arg0 interfa
 }
 
 // ListDomainAssociationsWithContext mocks base method
-func (m *MockAmplifyAPI) ListDomainAssociationsWithContext(arg0 aws.Context, arg1 *amplify.ListDomainAssociationsInput, arg2 ...request.Option) (*amplify.ListDomainAssociationsOutput, error) {
+func (m *MockAmplifyAPI) ListDomainAssociationsWithContext(arg0 context.Context, arg1 *amplify.ListDomainAssociationsInput, arg2 ...request.Option) (*amplify.ListDomainAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockAmplifyAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockAmplifyAPI) ListJobsWithContext(arg0 aws.Context, arg1 *amplify.ListJobsInput, arg2 ...request.Option) (*amplify.ListJobsOutput, error) {
+func (m *MockAmplifyAPI) ListJobsWithContext(arg0 context.Context, arg1 *amplify.ListJobsInput, arg2 ...request.Option) (*amplify.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockAmplifyAPIMockRecorder) StartJobRequest(arg0 interface{}) *gomock.
 }
 
 // StartJobWithContext mocks base method
-func (m *MockAmplifyAPI) StartJobWithContext(arg0 aws.Context, arg1 *amplify.StartJobInput, arg2 ...request.Option) (*amplify.StartJobOutput, error) {
+func (m *MockAmplifyAPI) StartJobWithContext(arg0 context.Context, arg1 *amplify.StartJobInput, arg2 ...request.Option) (*amplify.StartJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockAmplifyAPIMockRecorder) StopJobRequest(arg0 interface{}) *gomock.C
 }
 
 // StopJobWithContext mocks base method
-func (m *MockAmplifyAPI) StopJobWithContext(arg0 aws.Context, arg1 *amplify.StopJobInput, arg2 ...request.Option) (*amplify.StopJobOutput, error) {
+func (m *MockAmplifyAPI) StopJobWithContext(arg0 context.Context, arg1 *amplify.StopJobInput, arg2 ...request.Option) (*amplify.StopJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockAmplifyAPIMockRecorder) UpdateAppRequest(arg0 interface{}) *gomock
 }
 
 // UpdateAppWithContext mocks base method
-func (m *MockAmplifyAPI) UpdateAppWithContext(arg0 aws.Context, arg1 *amplify.UpdateAppInput, arg2 ...request.Option) (*amplify.UpdateAppOutput, error) {
+func (m *MockAmplifyAPI) UpdateAppWithContext(arg0 context.Context, arg1 *amplify.UpdateAppInput, arg2 ...request.Option) (*amplify.UpdateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockAmplifyAPIMockRecorder) UpdateBranchRequest(arg0 interface{}) *gom
 }
 
 // UpdateBranchWithContext mocks base method
-func (m *MockAmplifyAPI) UpdateBranchWithContext(arg0 aws.Context, arg1 *amplify.UpdateBranchInput, arg2 ...request.Option) (*amplify.UpdateBranchOutput, error) {
+func (m *MockAmplifyAPI) UpdateBranchWithContext(arg0 context.Context, arg1 *amplify.UpdateBranchInput, arg2 ...request.Option) (*amplify.UpdateBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockAmplifyAPIMockRecorder) UpdateDomainAssociationRequest(arg0 interf
 }
 
 // UpdateDomainAssociationWithContext mocks base method
-func (m *MockAmplifyAPI) UpdateDomainAssociationWithContext(arg0 aws.Context, arg1 *amplify.UpdateDomainAssociationInput, arg2 ...request.Option) (*amplify.UpdateDomainAssociationOutput, error) {
+func (m *MockAmplifyAPI) UpdateDomainAssociationWithContext(arg0 context.Context, arg1 *amplify.UpdateDomainAssociationInput, arg2 ...request.Option) (*amplify.UpdateDomainAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

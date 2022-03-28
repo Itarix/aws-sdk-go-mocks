@@ -5,7 +5,7 @@
 package efsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	efs "github.com/aws/aws-sdk-go/service/efs"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockEFSAPIMockRecorder) CreateFileSystemRequest(arg0 interface{}) *gom
 }
 
 // CreateFileSystemWithContext mocks base method
-func (m *MockEFSAPI) CreateFileSystemWithContext(arg0 aws.Context, arg1 *efs.CreateFileSystemInput, arg2 ...request.Option) (*efs.FileSystemDescription, error) {
+func (m *MockEFSAPI) CreateFileSystemWithContext(arg0 context.Context, arg1 *efs.CreateFileSystemInput, arg2 ...request.Option) (*efs.FileSystemDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockEFSAPIMockRecorder) CreateMountTargetRequest(arg0 interface{}) *go
 }
 
 // CreateMountTargetWithContext mocks base method
-func (m *MockEFSAPI) CreateMountTargetWithContext(arg0 aws.Context, arg1 *efs.CreateMountTargetInput, arg2 ...request.Option) (*efs.MountTargetDescription, error) {
+func (m *MockEFSAPI) CreateMountTargetWithContext(arg0 context.Context, arg1 *efs.CreateMountTargetInput, arg2 ...request.Option) (*efs.MountTargetDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockEFSAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // CreateTagsWithContext mocks base method
-func (m *MockEFSAPI) CreateTagsWithContext(arg0 aws.Context, arg1 *efs.CreateTagsInput, arg2 ...request.Option) (*efs.CreateTagsOutput, error) {
+func (m *MockEFSAPI) CreateTagsWithContext(arg0 context.Context, arg1 *efs.CreateTagsInput, arg2 ...request.Option) (*efs.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockEFSAPIMockRecorder) DeleteFileSystemRequest(arg0 interface{}) *gom
 }
 
 // DeleteFileSystemWithContext mocks base method
-func (m *MockEFSAPI) DeleteFileSystemWithContext(arg0 aws.Context, arg1 *efs.DeleteFileSystemInput, arg2 ...request.Option) (*efs.DeleteFileSystemOutput, error) {
+func (m *MockEFSAPI) DeleteFileSystemWithContext(arg0 context.Context, arg1 *efs.DeleteFileSystemInput, arg2 ...request.Option) (*efs.DeleteFileSystemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockEFSAPIMockRecorder) DeleteMountTargetRequest(arg0 interface{}) *go
 }
 
 // DeleteMountTargetWithContext mocks base method
-func (m *MockEFSAPI) DeleteMountTargetWithContext(arg0 aws.Context, arg1 *efs.DeleteMountTargetInput, arg2 ...request.Option) (*efs.DeleteMountTargetOutput, error) {
+func (m *MockEFSAPI) DeleteMountTargetWithContext(arg0 context.Context, arg1 *efs.DeleteMountTargetInput, arg2 ...request.Option) (*efs.DeleteMountTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockEFSAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockEFSAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *efs.DeleteTagsInput, arg2 ...request.Option) (*efs.DeleteTagsOutput, error) {
+func (m *MockEFSAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *efs.DeleteTagsInput, arg2 ...request.Option) (*efs.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockEFSAPIMockRecorder) DescribeFileSystemsRequest(arg0 interface{}) *
 }
 
 // DescribeFileSystemsWithContext mocks base method
-func (m *MockEFSAPI) DescribeFileSystemsWithContext(arg0 aws.Context, arg1 *efs.DescribeFileSystemsInput, arg2 ...request.Option) (*efs.DescribeFileSystemsOutput, error) {
+func (m *MockEFSAPI) DescribeFileSystemsWithContext(arg0 context.Context, arg1 *efs.DescribeFileSystemsInput, arg2 ...request.Option) (*efs.DescribeFileSystemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockEFSAPIMockRecorder) DescribeMountTargetSecurityGroupsRequest(arg0 
 }
 
 // DescribeMountTargetSecurityGroupsWithContext mocks base method
-func (m *MockEFSAPI) DescribeMountTargetSecurityGroupsWithContext(arg0 aws.Context, arg1 *efs.DescribeMountTargetSecurityGroupsInput, arg2 ...request.Option) (*efs.DescribeMountTargetSecurityGroupsOutput, error) {
+func (m *MockEFSAPI) DescribeMountTargetSecurityGroupsWithContext(arg0 context.Context, arg1 *efs.DescribeMountTargetSecurityGroupsInput, arg2 ...request.Option) (*efs.DescribeMountTargetSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockEFSAPIMockRecorder) DescribeMountTargetsRequest(arg0 interface{}) 
 }
 
 // DescribeMountTargetsWithContext mocks base method
-func (m *MockEFSAPI) DescribeMountTargetsWithContext(arg0 aws.Context, arg1 *efs.DescribeMountTargetsInput, arg2 ...request.Option) (*efs.DescribeMountTargetsOutput, error) {
+func (m *MockEFSAPI) DescribeMountTargetsWithContext(arg0 context.Context, arg1 *efs.DescribeMountTargetsInput, arg2 ...request.Option) (*efs.DescribeMountTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockEFSAPIMockRecorder) DescribeTagsRequest(arg0 interface{}) *gomock.
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockEFSAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *efs.DescribeTagsInput, arg2 ...request.Option) (*efs.DescribeTagsOutput, error) {
+func (m *MockEFSAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *efs.DescribeTagsInput, arg2 ...request.Option) (*efs.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockEFSAPIMockRecorder) ModifyMountTargetSecurityGroupsRequest(arg0 in
 }
 
 // ModifyMountTargetSecurityGroupsWithContext mocks base method
-func (m *MockEFSAPI) ModifyMountTargetSecurityGroupsWithContext(arg0 aws.Context, arg1 *efs.ModifyMountTargetSecurityGroupsInput, arg2 ...request.Option) (*efs.ModifyMountTargetSecurityGroupsOutput, error) {
+func (m *MockEFSAPI) ModifyMountTargetSecurityGroupsWithContext(arg0 context.Context, arg1 *efs.ModifyMountTargetSecurityGroupsInput, arg2 ...request.Option) (*efs.ModifyMountTargetSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockEFSAPIMockRecorder) UpdateFileSystemRequest(arg0 interface{}) *gom
 }
 
 // UpdateFileSystemWithContext mocks base method
-func (m *MockEFSAPI) UpdateFileSystemWithContext(arg0 aws.Context, arg1 *efs.UpdateFileSystemInput, arg2 ...request.Option) (*efs.UpdateFileSystemOutput, error) {
+func (m *MockEFSAPI) UpdateFileSystemWithContext(arg0 context.Context, arg1 *efs.UpdateFileSystemInput, arg2 ...request.Option) (*efs.UpdateFileSystemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package machinelearningmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	machinelearning "github.com/aws/aws-sdk-go/service/machinelearning"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMachineLearningAPIMockRecorder) AddTagsRequest(arg0 interface{}) *
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockMachineLearningAPI) AddTagsWithContext(arg0 aws.Context, arg1 *machinelearning.AddTagsInput, arg2 ...request.Option) (*machinelearning.AddTagsOutput, error) {
+func (m *MockMachineLearningAPI) AddTagsWithContext(arg0 context.Context, arg1 *machinelearning.AddTagsInput, arg2 ...request.Option) (*machinelearning.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateBatchPredictionRequest(arg0 
 }
 
 // CreateBatchPredictionWithContext mocks base method
-func (m *MockMachineLearningAPI) CreateBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.CreateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.CreateBatchPredictionOutput, error) {
+func (m *MockMachineLearningAPI) CreateBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.CreateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.CreateBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRDSRequest(arg
 }
 
 // CreateDataSourceFromRDSWithContext mocks base method
-func (m *MockMachineLearningAPI) CreateDataSourceFromRDSWithContext(arg0 aws.Context, arg1 *machinelearning.CreateDataSourceFromRDSInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRDSOutput, error) {
+func (m *MockMachineLearningAPI) CreateDataSourceFromRDSWithContext(arg0 context.Context, arg1 *machinelearning.CreateDataSourceFromRDSInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRDSOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromRedshiftReques
 }
 
 // CreateDataSourceFromRedshiftWithContext mocks base method
-func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftWithContext(arg0 aws.Context, arg1 *machinelearning.CreateDataSourceFromRedshiftInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRedshiftOutput, error) {
+func (m *MockMachineLearningAPI) CreateDataSourceFromRedshiftWithContext(arg0 context.Context, arg1 *machinelearning.CreateDataSourceFromRedshiftInput, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromRedshiftOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateDataSourceFromS3Request(arg0
 }
 
 // CreateDataSourceFromS3WithContext mocks base method
-func (m *MockMachineLearningAPI) CreateDataSourceFromS3WithContext(arg0 aws.Context, arg1 *machinelearning.CreateDataSourceFromS3Input, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromS3Output, error) {
+func (m *MockMachineLearningAPI) CreateDataSourceFromS3WithContext(arg0 context.Context, arg1 *machinelearning.CreateDataSourceFromS3Input, arg2 ...request.Option) (*machinelearning.CreateDataSourceFromS3Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateEvaluationRequest(arg0 inter
 }
 
 // CreateEvaluationWithContext mocks base method
-func (m *MockMachineLearningAPI) CreateEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.CreateEvaluationInput, arg2 ...request.Option) (*machinelearning.CreateEvaluationOutput, error) {
+func (m *MockMachineLearningAPI) CreateEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.CreateEvaluationInput, arg2 ...request.Option) (*machinelearning.CreateEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateMLModelRequest(arg0 interfac
 }
 
 // CreateMLModelWithContext mocks base method
-func (m *MockMachineLearningAPI) CreateMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.CreateMLModelInput, arg2 ...request.Option) (*machinelearning.CreateMLModelOutput, error) {
+func (m *MockMachineLearningAPI) CreateMLModelWithContext(arg0 context.Context, arg1 *machinelearning.CreateMLModelInput, arg2 ...request.Option) (*machinelearning.CreateMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMachineLearningAPIMockRecorder) CreateRealtimeEndpointRequest(arg0
 }
 
 // CreateRealtimeEndpointWithContext mocks base method
-func (m *MockMachineLearningAPI) CreateRealtimeEndpointWithContext(arg0 aws.Context, arg1 *machinelearning.CreateRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.CreateRealtimeEndpointOutput, error) {
+func (m *MockMachineLearningAPI) CreateRealtimeEndpointWithContext(arg0 context.Context, arg1 *machinelearning.CreateRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.CreateRealtimeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DeleteBatchPredictionRequest(arg0 
 }
 
 // DeleteBatchPredictionWithContext mocks base method
-func (m *MockMachineLearningAPI) DeleteBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteBatchPredictionInput, arg2 ...request.Option) (*machinelearning.DeleteBatchPredictionOutput, error) {
+func (m *MockMachineLearningAPI) DeleteBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.DeleteBatchPredictionInput, arg2 ...request.Option) (*machinelearning.DeleteBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DeleteDataSourceRequest(arg0 inter
 }
 
 // DeleteDataSourceWithContext mocks base method
-func (m *MockMachineLearningAPI) DeleteDataSourceWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteDataSourceInput, arg2 ...request.Option) (*machinelearning.DeleteDataSourceOutput, error) {
+func (m *MockMachineLearningAPI) DeleteDataSourceWithContext(arg0 context.Context, arg1 *machinelearning.DeleteDataSourceInput, arg2 ...request.Option) (*machinelearning.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DeleteEvaluationRequest(arg0 inter
 }
 
 // DeleteEvaluationWithContext mocks base method
-func (m *MockMachineLearningAPI) DeleteEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteEvaluationInput, arg2 ...request.Option) (*machinelearning.DeleteEvaluationOutput, error) {
+func (m *MockMachineLearningAPI) DeleteEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.DeleteEvaluationInput, arg2 ...request.Option) (*machinelearning.DeleteEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DeleteMLModelRequest(arg0 interfac
 }
 
 // DeleteMLModelWithContext mocks base method
-func (m *MockMachineLearningAPI) DeleteMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteMLModelInput, arg2 ...request.Option) (*machinelearning.DeleteMLModelOutput, error) {
+func (m *MockMachineLearningAPI) DeleteMLModelWithContext(arg0 context.Context, arg1 *machinelearning.DeleteMLModelInput, arg2 ...request.Option) (*machinelearning.DeleteMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DeleteRealtimeEndpointRequest(arg0
 }
 
 // DeleteRealtimeEndpointWithContext mocks base method
-func (m *MockMachineLearningAPI) DeleteRealtimeEndpointWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.DeleteRealtimeEndpointOutput, error) {
+func (m *MockMachineLearningAPI) DeleteRealtimeEndpointWithContext(arg0 context.Context, arg1 *machinelearning.DeleteRealtimeEndpointInput, arg2 ...request.Option) (*machinelearning.DeleteRealtimeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DeleteTagsRequest(arg0 interface{}
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockMachineLearningAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *machinelearning.DeleteTagsInput, arg2 ...request.Option) (*machinelearning.DeleteTagsOutput, error) {
+func (m *MockMachineLearningAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *machinelearning.DeleteTagsInput, arg2 ...request.Option) (*machinelearning.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -765,7 +765,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictionsPages(arg0
 }
 
 // DescribeBatchPredictionsPagesWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeBatchPredictionsPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 func(*machinelearning.DescribeBatchPredictionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMachineLearningAPI) DescribeBatchPredictionsPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 func(*machinelearning.DescribeBatchPredictionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -799,7 +799,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeBatchPredictionsRequest(ar
 }
 
 // DescribeBatchPredictionsWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeBatchPredictionsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.Option) (*machinelearning.DescribeBatchPredictionsOutput, error) {
+func (m *MockMachineLearningAPI) DescribeBatchPredictionsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.Option) (*machinelearning.DescribeBatchPredictionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -848,7 +848,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSourcesPages(arg0, arg
 }
 
 // DescribeDataSourcesPagesWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeDataSourcesPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 func(*machinelearning.DescribeDataSourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMachineLearningAPI) DescribeDataSourcesPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 func(*machinelearning.DescribeDataSourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -882,7 +882,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeDataSourcesRequest(arg0 in
 }
 
 // DescribeDataSourcesWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeDataSourcesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.Option) (*machinelearning.DescribeDataSourcesOutput, error) {
+func (m *MockMachineLearningAPI) DescribeDataSourcesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.Option) (*machinelearning.DescribeDataSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -931,7 +931,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluationsPages(arg0, arg
 }
 
 // DescribeEvaluationsPagesWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeEvaluationsPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 func(*machinelearning.DescribeEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMachineLearningAPI) DescribeEvaluationsPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 func(*machinelearning.DescribeEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -965,7 +965,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeEvaluationsRequest(arg0 in
 }
 
 // DescribeEvaluationsWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeEvaluationsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.Option) (*machinelearning.DescribeEvaluationsOutput, error) {
+func (m *MockMachineLearningAPI) DescribeEvaluationsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.Option) (*machinelearning.DescribeEvaluationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1014,7 +1014,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModelsPages(arg0, arg1 i
 }
 
 // DescribeMLModelsPagesWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeMLModelsPagesWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 func(*machinelearning.DescribeMLModelsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMachineLearningAPI) DescribeMLModelsPagesWithContext(arg0 context.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 func(*machinelearning.DescribeMLModelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1048,7 +1048,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeMLModelsRequest(arg0 inter
 }
 
 // DescribeMLModelsWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeMLModelsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.Option) (*machinelearning.DescribeMLModelsOutput, error) {
+func (m *MockMachineLearningAPI) DescribeMLModelsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.Option) (*machinelearning.DescribeMLModelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockMachineLearningAPIMockRecorder) DescribeTagsRequest(arg0 interface
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockMachineLearningAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeTagsInput, arg2 ...request.Option) (*machinelearning.DescribeTagsOutput, error) {
+func (m *MockMachineLearningAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *machinelearning.DescribeTagsInput, arg2 ...request.Option) (*machinelearning.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockMachineLearningAPIMockRecorder) GetBatchPredictionRequest(arg0 int
 }
 
 // GetBatchPredictionWithContext mocks base method
-func (m *MockMachineLearningAPI) GetBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.GetBatchPredictionInput, arg2 ...request.Option) (*machinelearning.GetBatchPredictionOutput, error) {
+func (m *MockMachineLearningAPI) GetBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.GetBatchPredictionInput, arg2 ...request.Option) (*machinelearning.GetBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1198,7 +1198,7 @@ func (mr *MockMachineLearningAPIMockRecorder) GetDataSourceRequest(arg0 interfac
 }
 
 // GetDataSourceWithContext mocks base method
-func (m *MockMachineLearningAPI) GetDataSourceWithContext(arg0 aws.Context, arg1 *machinelearning.GetDataSourceInput, arg2 ...request.Option) (*machinelearning.GetDataSourceOutput, error) {
+func (m *MockMachineLearningAPI) GetDataSourceWithContext(arg0 context.Context, arg1 *machinelearning.GetDataSourceInput, arg2 ...request.Option) (*machinelearning.GetDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1248,7 +1248,7 @@ func (mr *MockMachineLearningAPIMockRecorder) GetEvaluationRequest(arg0 interfac
 }
 
 // GetEvaluationWithContext mocks base method
-func (m *MockMachineLearningAPI) GetEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.GetEvaluationInput, arg2 ...request.Option) (*machinelearning.GetEvaluationOutput, error) {
+func (m *MockMachineLearningAPI) GetEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.GetEvaluationInput, arg2 ...request.Option) (*machinelearning.GetEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1298,7 +1298,7 @@ func (mr *MockMachineLearningAPIMockRecorder) GetMLModelRequest(arg0 interface{}
 }
 
 // GetMLModelWithContext mocks base method
-func (m *MockMachineLearningAPI) GetMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.GetMLModelInput, arg2 ...request.Option) (*machinelearning.GetMLModelOutput, error) {
+func (m *MockMachineLearningAPI) GetMLModelWithContext(arg0 context.Context, arg1 *machinelearning.GetMLModelInput, arg2 ...request.Option) (*machinelearning.GetMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1348,7 +1348,7 @@ func (mr *MockMachineLearningAPIMockRecorder) PredictRequest(arg0 interface{}) *
 }
 
 // PredictWithContext mocks base method
-func (m *MockMachineLearningAPI) PredictWithContext(arg0 aws.Context, arg1 *machinelearning.PredictInput, arg2 ...request.Option) (*machinelearning.PredictOutput, error) {
+func (m *MockMachineLearningAPI) PredictWithContext(arg0 context.Context, arg1 *machinelearning.PredictInput, arg2 ...request.Option) (*machinelearning.PredictOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1398,7 +1398,7 @@ func (mr *MockMachineLearningAPIMockRecorder) UpdateBatchPredictionRequest(arg0 
 }
 
 // UpdateBatchPredictionWithContext mocks base method
-func (m *MockMachineLearningAPI) UpdateBatchPredictionWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.UpdateBatchPredictionOutput, error) {
+func (m *MockMachineLearningAPI) UpdateBatchPredictionWithContext(arg0 context.Context, arg1 *machinelearning.UpdateBatchPredictionInput, arg2 ...request.Option) (*machinelearning.UpdateBatchPredictionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1448,7 +1448,7 @@ func (mr *MockMachineLearningAPIMockRecorder) UpdateDataSourceRequest(arg0 inter
 }
 
 // UpdateDataSourceWithContext mocks base method
-func (m *MockMachineLearningAPI) UpdateDataSourceWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateDataSourceInput, arg2 ...request.Option) (*machinelearning.UpdateDataSourceOutput, error) {
+func (m *MockMachineLearningAPI) UpdateDataSourceWithContext(arg0 context.Context, arg1 *machinelearning.UpdateDataSourceInput, arg2 ...request.Option) (*machinelearning.UpdateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1498,7 +1498,7 @@ func (mr *MockMachineLearningAPIMockRecorder) UpdateEvaluationRequest(arg0 inter
 }
 
 // UpdateEvaluationWithContext mocks base method
-func (m *MockMachineLearningAPI) UpdateEvaluationWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateEvaluationInput, arg2 ...request.Option) (*machinelearning.UpdateEvaluationOutput, error) {
+func (m *MockMachineLearningAPI) UpdateEvaluationWithContext(arg0 context.Context, arg1 *machinelearning.UpdateEvaluationInput, arg2 ...request.Option) (*machinelearning.UpdateEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1548,7 +1548,7 @@ func (mr *MockMachineLearningAPIMockRecorder) UpdateMLModelRequest(arg0 interfac
 }
 
 // UpdateMLModelWithContext mocks base method
-func (m *MockMachineLearningAPI) UpdateMLModelWithContext(arg0 aws.Context, arg1 *machinelearning.UpdateMLModelInput, arg2 ...request.Option) (*machinelearning.UpdateMLModelOutput, error) {
+func (m *MockMachineLearningAPI) UpdateMLModelWithContext(arg0 context.Context, arg1 *machinelearning.UpdateMLModelInput, arg2 ...request.Option) (*machinelearning.UpdateMLModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1582,7 +1582,7 @@ func (mr *MockMachineLearningAPIMockRecorder) WaitUntilBatchPredictionAvailable(
 }
 
 // WaitUntilBatchPredictionAvailableWithContext mocks base method
-func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.WaiterOption) error {
+func (m *MockMachineLearningAPI) WaitUntilBatchPredictionAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeBatchPredictionsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1615,7 +1615,7 @@ func (mr *MockMachineLearningAPIMockRecorder) WaitUntilDataSourceAvailable(arg0 
 }
 
 // WaitUntilDataSourceAvailableWithContext mocks base method
-func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.WaiterOption) error {
+func (m *MockMachineLearningAPI) WaitUntilDataSourceAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeDataSourcesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1648,7 +1648,7 @@ func (mr *MockMachineLearningAPIMockRecorder) WaitUntilEvaluationAvailable(arg0 
 }
 
 // WaitUntilEvaluationAvailableWithContext mocks base method
-func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.WaiterOption) error {
+func (m *MockMachineLearningAPI) WaitUntilEvaluationAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeEvaluationsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1681,7 +1681,7 @@ func (mr *MockMachineLearningAPIMockRecorder) WaitUntilMLModelAvailable(arg0 int
 }
 
 // WaitUntilMLModelAvailableWithContext mocks base method
-func (m *MockMachineLearningAPI) WaitUntilMLModelAvailableWithContext(arg0 aws.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.WaiterOption) error {
+func (m *MockMachineLearningAPI) WaitUntilMLModelAvailableWithContext(arg0 context.Context, arg1 *machinelearning.DescribeMLModelsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

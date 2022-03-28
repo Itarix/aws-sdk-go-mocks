@@ -5,7 +5,7 @@
 package mqmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mq "github.com/aws/aws-sdk-go/service/mq"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMQAPIMockRecorder) CreateBrokerRequest(arg0 interface{}) *gomock.C
 }
 
 // CreateBrokerWithContext mocks base method
-func (m *MockMQAPI) CreateBrokerWithContext(arg0 aws.Context, arg1 *mq.CreateBrokerRequest, arg2 ...request.Option) (*mq.CreateBrokerResponse, error) {
+func (m *MockMQAPI) CreateBrokerWithContext(arg0 context.Context, arg1 *mq.CreateBrokerRequest, arg2 ...request.Option) (*mq.CreateBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMQAPIMockRecorder) CreateConfigurationRequest(arg0 interface{}) *g
 }
 
 // CreateConfigurationWithContext mocks base method
-func (m *MockMQAPI) CreateConfigurationWithContext(arg0 aws.Context, arg1 *mq.CreateConfigurationRequest, arg2 ...request.Option) (*mq.CreateConfigurationResponse, error) {
+func (m *MockMQAPI) CreateConfigurationWithContext(arg0 context.Context, arg1 *mq.CreateConfigurationRequest, arg2 ...request.Option) (*mq.CreateConfigurationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMQAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *gomock.Cal
 }
 
 // CreateTagsWithContext mocks base method
-func (m *MockMQAPI) CreateTagsWithContext(arg0 aws.Context, arg1 *mq.CreateTagsInput, arg2 ...request.Option) (*mq.CreateTagsOutput, error) {
+func (m *MockMQAPI) CreateTagsWithContext(arg0 context.Context, arg1 *mq.CreateTagsInput, arg2 ...request.Option) (*mq.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMQAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Cal
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockMQAPI) CreateUserWithContext(arg0 aws.Context, arg1 *mq.CreateUserRequest, arg2 ...request.Option) (*mq.CreateUserOutput, error) {
+func (m *MockMQAPI) CreateUserWithContext(arg0 context.Context, arg1 *mq.CreateUserRequest, arg2 ...request.Option) (*mq.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMQAPIMockRecorder) DeleteBrokerRequest(arg0 interface{}) *gomock.C
 }
 
 // DeleteBrokerWithContext mocks base method
-func (m *MockMQAPI) DeleteBrokerWithContext(arg0 aws.Context, arg1 *mq.DeleteBrokerInput, arg2 ...request.Option) (*mq.DeleteBrokerResponse, error) {
+func (m *MockMQAPI) DeleteBrokerWithContext(arg0 context.Context, arg1 *mq.DeleteBrokerInput, arg2 ...request.Option) (*mq.DeleteBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMQAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomock.Cal
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockMQAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *mq.DeleteTagsInput, arg2 ...request.Option) (*mq.DeleteTagsOutput, error) {
+func (m *MockMQAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *mq.DeleteTagsInput, arg2 ...request.Option) (*mq.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMQAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomock.Cal
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockMQAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *mq.DeleteUserInput, arg2 ...request.Option) (*mq.DeleteUserOutput, error) {
+func (m *MockMQAPI) DeleteUserWithContext(arg0 context.Context, arg1 *mq.DeleteUserInput, arg2 ...request.Option) (*mq.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMQAPIMockRecorder) DescribeBrokerRequest(arg0 interface{}) *gomock
 }
 
 // DescribeBrokerWithContext mocks base method
-func (m *MockMQAPI) DescribeBrokerWithContext(arg0 aws.Context, arg1 *mq.DescribeBrokerInput, arg2 ...request.Option) (*mq.DescribeBrokerResponse, error) {
+func (m *MockMQAPI) DescribeBrokerWithContext(arg0 context.Context, arg1 *mq.DescribeBrokerInput, arg2 ...request.Option) (*mq.DescribeBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -496,7 +496,7 @@ func (mr *MockMQAPIMockRecorder) DescribeConfigurationRevisionRequest(arg0 inter
 }
 
 // DescribeConfigurationRevisionWithContext mocks base method
-func (m *MockMQAPI) DescribeConfigurationRevisionWithContext(arg0 aws.Context, arg1 *mq.DescribeConfigurationRevisionInput, arg2 ...request.Option) (*mq.DescribeConfigurationRevisionResponse, error) {
+func (m *MockMQAPI) DescribeConfigurationRevisionWithContext(arg0 context.Context, arg1 *mq.DescribeConfigurationRevisionInput, arg2 ...request.Option) (*mq.DescribeConfigurationRevisionResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockMQAPIMockRecorder) DescribeConfigurationRevisionWithContext(arg0, 
 }
 
 // DescribeConfigurationWithContext mocks base method
-func (m *MockMQAPI) DescribeConfigurationWithContext(arg0 aws.Context, arg1 *mq.DescribeConfigurationInput, arg2 ...request.Option) (*mq.DescribeConfigurationOutput, error) {
+func (m *MockMQAPI) DescribeConfigurationWithContext(arg0 context.Context, arg1 *mq.DescribeConfigurationInput, arg2 ...request.Option) (*mq.DescribeConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockMQAPIMockRecorder) DescribeUserRequest(arg0 interface{}) *gomock.C
 }
 
 // DescribeUserWithContext mocks base method
-func (m *MockMQAPI) DescribeUserWithContext(arg0 aws.Context, arg1 *mq.DescribeUserInput, arg2 ...request.Option) (*mq.DescribeUserResponse, error) {
+func (m *MockMQAPI) DescribeUserWithContext(arg0 context.Context, arg1 *mq.DescribeUserInput, arg2 ...request.Option) (*mq.DescribeUserResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockMQAPIMockRecorder) ListBrokersRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListBrokersWithContext mocks base method
-func (m *MockMQAPI) ListBrokersWithContext(arg0 aws.Context, arg1 *mq.ListBrokersInput, arg2 ...request.Option) (*mq.ListBrokersResponse, error) {
+func (m *MockMQAPI) ListBrokersWithContext(arg0 context.Context, arg1 *mq.ListBrokersInput, arg2 ...request.Option) (*mq.ListBrokersResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockMQAPIMockRecorder) ListConfigurationRevisionsRequest(arg0 interfac
 }
 
 // ListConfigurationRevisionsWithContext mocks base method
-func (m *MockMQAPI) ListConfigurationRevisionsWithContext(arg0 aws.Context, arg1 *mq.ListConfigurationRevisionsInput, arg2 ...request.Option) (*mq.ListConfigurationRevisionsResponse, error) {
+func (m *MockMQAPI) ListConfigurationRevisionsWithContext(arg0 context.Context, arg1 *mq.ListConfigurationRevisionsInput, arg2 ...request.Option) (*mq.ListConfigurationRevisionsResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockMQAPIMockRecorder) ListConfigurationsRequest(arg0 interface{}) *go
 }
 
 // ListConfigurationsWithContext mocks base method
-func (m *MockMQAPI) ListConfigurationsWithContext(arg0 aws.Context, arg1 *mq.ListConfigurationsInput, arg2 ...request.Option) (*mq.ListConfigurationsResponse, error) {
+func (m *MockMQAPI) ListConfigurationsWithContext(arg0 context.Context, arg1 *mq.ListConfigurationsInput, arg2 ...request.Option) (*mq.ListConfigurationsResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockMQAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call 
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockMQAPI) ListTagsWithContext(arg0 aws.Context, arg1 *mq.ListTagsInput, arg2 ...request.Option) (*mq.ListTagsOutput, error) {
+func (m *MockMQAPI) ListTagsWithContext(arg0 context.Context, arg1 *mq.ListTagsInput, arg2 ...request.Option) (*mq.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockMQAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomock.Call
 }
 
 // ListUsersWithContext mocks base method
-func (m *MockMQAPI) ListUsersWithContext(arg0 aws.Context, arg1 *mq.ListUsersInput, arg2 ...request.Option) (*mq.ListUsersResponse, error) {
+func (m *MockMQAPI) ListUsersWithContext(arg0 context.Context, arg1 *mq.ListUsersInput, arg2 ...request.Option) (*mq.ListUsersResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockMQAPIMockRecorder) RebootBrokerRequest(arg0 interface{}) *gomock.C
 }
 
 // RebootBrokerWithContext mocks base method
-func (m *MockMQAPI) RebootBrokerWithContext(arg0 aws.Context, arg1 *mq.RebootBrokerInput, arg2 ...request.Option) (*mq.RebootBrokerOutput, error) {
+func (m *MockMQAPI) RebootBrokerWithContext(arg0 context.Context, arg1 *mq.RebootBrokerInput, arg2 ...request.Option) (*mq.RebootBrokerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockMQAPIMockRecorder) UpdateBrokerRequest(arg0 interface{}) *gomock.C
 }
 
 // UpdateBrokerWithContext mocks base method
-func (m *MockMQAPI) UpdateBrokerWithContext(arg0 aws.Context, arg1 *mq.UpdateBrokerRequest, arg2 ...request.Option) (*mq.UpdateBrokerResponse, error) {
+func (m *MockMQAPI) UpdateBrokerWithContext(arg0 context.Context, arg1 *mq.UpdateBrokerRequest, arg2 ...request.Option) (*mq.UpdateBrokerResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockMQAPIMockRecorder) UpdateConfigurationRequest(arg0 interface{}) *g
 }
 
 // UpdateConfigurationWithContext mocks base method
-func (m *MockMQAPI) UpdateConfigurationWithContext(arg0 aws.Context, arg1 *mq.UpdateConfigurationRequest, arg2 ...request.Option) (*mq.UpdateConfigurationResponse, error) {
+func (m *MockMQAPI) UpdateConfigurationWithContext(arg0 context.Context, arg1 *mq.UpdateConfigurationRequest, arg2 ...request.Option) (*mq.UpdateConfigurationResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockMQAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomock.Cal
 }
 
 // UpdateUserWithContext mocks base method
-func (m *MockMQAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *mq.UpdateUserRequest, arg2 ...request.Option) (*mq.UpdateUserOutput, error) {
+func (m *MockMQAPI) UpdateUserWithContext(arg0 context.Context, arg1 *mq.UpdateUserRequest, arg2 ...request.Option) (*mq.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

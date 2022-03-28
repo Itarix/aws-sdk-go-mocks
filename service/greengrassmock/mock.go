@@ -5,7 +5,7 @@
 package greengrassmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	greengrass "github.com/aws/aws-sdk-go/service/greengrass"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockGreengrassAPIMockRecorder) AssociateRoleToGroupRequest(arg0 interf
 }
 
 // AssociateRoleToGroupWithContext mocks base method
-func (m *MockGreengrassAPI) AssociateRoleToGroupWithContext(arg0 aws.Context, arg1 *greengrass.AssociateRoleToGroupInput, arg2 ...request.Option) (*greengrass.AssociateRoleToGroupOutput, error) {
+func (m *MockGreengrassAPI) AssociateRoleToGroupWithContext(arg0 context.Context, arg1 *greengrass.AssociateRoleToGroupInput, arg2 ...request.Option) (*greengrass.AssociateRoleToGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockGreengrassAPIMockRecorder) AssociateServiceRoleToAccountRequest(ar
 }
 
 // AssociateServiceRoleToAccountWithContext mocks base method
-func (m *MockGreengrassAPI) AssociateServiceRoleToAccountWithContext(arg0 aws.Context, arg1 *greengrass.AssociateServiceRoleToAccountInput, arg2 ...request.Option) (*greengrass.AssociateServiceRoleToAccountOutput, error) {
+func (m *MockGreengrassAPI) AssociateServiceRoleToAccountWithContext(arg0 context.Context, arg1 *greengrass.AssociateServiceRoleToAccountInput, arg2 ...request.Option) (*greengrass.AssociateServiceRoleToAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -196,7 +196,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionVersionRequest
 }
 
 // CreateConnectorDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateConnectorDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateConnectorDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateConnectorDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateConnectorDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateConnectorDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateConnectorDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateConnectorDefinitionVersionWithCon
 }
 
 // CreateConnectorDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.CreateConnectorDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateConnectorDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.CreateConnectorDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -296,7 +296,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateCoreDefinitionVersionRequest(arg0
 }
 
 // CreateCoreDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateCoreDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateCoreDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateCoreDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateCoreDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateCoreDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateCoreDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateCoreDefinitionVersionWithContext(
 }
 
 // CreateCoreDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateCoreDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateCoreDefinitionInput, arg2 ...request.Option) (*greengrass.CreateCoreDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateCoreDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateCoreDefinitionInput, arg2 ...request.Option) (*greengrass.CreateCoreDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateDeploymentRequest(arg0 interface{
 }
 
 // CreateDeploymentWithContext mocks base method
-func (m *MockGreengrassAPI) CreateDeploymentWithContext(arg0 aws.Context, arg1 *greengrass.CreateDeploymentInput, arg2 ...request.Option) (*greengrass.CreateDeploymentOutput, error) {
+func (m *MockGreengrassAPI) CreateDeploymentWithContext(arg0 context.Context, arg1 *greengrass.CreateDeploymentInput, arg2 ...request.Option) (*greengrass.CreateDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -446,7 +446,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateDeviceDefinitionVersionRequest(ar
 }
 
 // CreateDeviceDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateDeviceDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateDeviceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateDeviceDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateDeviceDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateDeviceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateDeviceDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateDeviceDefinitionVersionWithContex
 }
 
 // CreateDeviceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateDeviceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.CreateDeviceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateDeviceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.CreateDeviceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -546,7 +546,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateFunctionDefinitionVersionRequest(
 }
 
 // CreateFunctionDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateFunctionDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateFunctionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateFunctionDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateFunctionDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateFunctionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateFunctionDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateFunctionDefinitionVersionWithCont
 }
 
 // CreateFunctionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateFunctionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.CreateFunctionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateFunctionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.CreateFunctionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateGroupCertificateAuthorityRequest(
 }
 
 // CreateGroupCertificateAuthorityWithContext mocks base method
-func (m *MockGreengrassAPI) CreateGroupCertificateAuthorityWithContext(arg0 aws.Context, arg1 *greengrass.CreateGroupCertificateAuthorityInput, arg2 ...request.Option) (*greengrass.CreateGroupCertificateAuthorityOutput, error) {
+func (m *MockGreengrassAPI) CreateGroupCertificateAuthorityWithContext(arg0 context.Context, arg1 *greengrass.CreateGroupCertificateAuthorityInput, arg2 ...request.Option) (*greengrass.CreateGroupCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -696,7 +696,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateGroupVersionRequest(arg0 interfac
 }
 
 // CreateGroupVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateGroupVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateGroupVersionInput, arg2 ...request.Option) (*greengrass.CreateGroupVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateGroupVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateGroupVersionInput, arg2 ...request.Option) (*greengrass.CreateGroupVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateGroupVersionWithContext(arg0, arg
 }
 
 // CreateGroupWithContext mocks base method
-func (m *MockGreengrassAPI) CreateGroupWithContext(arg0 aws.Context, arg1 *greengrass.CreateGroupInput, arg2 ...request.Option) (*greengrass.CreateGroupOutput, error) {
+func (m *MockGreengrassAPI) CreateGroupWithContext(arg0 context.Context, arg1 *greengrass.CreateGroupInput, arg2 ...request.Option) (*greengrass.CreateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -796,7 +796,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateLoggerDefinitionVersionRequest(ar
 }
 
 // CreateLoggerDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateLoggerDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateLoggerDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateLoggerDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateLoggerDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateLoggerDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateLoggerDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateLoggerDefinitionVersionWithContex
 }
 
 // CreateLoggerDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateLoggerDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.CreateLoggerDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateLoggerDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.CreateLoggerDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -896,7 +896,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateResourceDefinitionVersionRequest(
 }
 
 // CreateResourceDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateResourceDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateResourceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateResourceDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateResourceDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateResourceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateResourceDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateResourceDefinitionVersionWithCont
 }
 
 // CreateResourceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateResourceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateResourceDefinitionInput, arg2 ...request.Option) (*greengrass.CreateResourceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateResourceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateResourceDefinitionInput, arg2 ...request.Option) (*greengrass.CreateResourceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateSoftwareUpdateJobRequest(arg0 int
 }
 
 // CreateSoftwareUpdateJobWithContext mocks base method
-func (m *MockGreengrassAPI) CreateSoftwareUpdateJobWithContext(arg0 aws.Context, arg1 *greengrass.CreateSoftwareUpdateJobInput, arg2 ...request.Option) (*greengrass.CreateSoftwareUpdateJobOutput, error) {
+func (m *MockGreengrassAPI) CreateSoftwareUpdateJobWithContext(arg0 context.Context, arg1 *greengrass.CreateSoftwareUpdateJobInput, arg2 ...request.Option) (*greengrass.CreateSoftwareUpdateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1046,7 +1046,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateSubscriptionDefinitionVersionRequ
 }
 
 // CreateSubscriptionDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateSubscriptionDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.CreateSubscriptionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateSubscriptionDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) CreateSubscriptionDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.CreateSubscriptionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.CreateSubscriptionDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockGreengrassAPIMockRecorder) CreateSubscriptionDefinitionVersionWith
 }
 
 // CreateSubscriptionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) CreateSubscriptionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.CreateSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.CreateSubscriptionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) CreateSubscriptionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.CreateSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.CreateSubscriptionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteConnectorDefinitionRequest(arg0 i
 }
 
 // DeleteConnectorDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteConnectorDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteConnectorDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteConnectorDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteCoreDefinitionRequest(arg0 interf
 }
 
 // DeleteCoreDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteCoreDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteCoreDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteCoreDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteCoreDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteCoreDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteCoreDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteDeviceDefinitionRequest(arg0 inte
 }
 
 // DeleteDeviceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteDeviceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteDeviceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteDeviceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteDeviceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteFunctionDefinitionRequest(arg0 in
 }
 
 // DeleteFunctionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteFunctionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteFunctionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteFunctionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteFunctionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteGroupRequest(arg0 interface{}) *g
 }
 
 // DeleteGroupWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteGroupWithContext(arg0 aws.Context, arg1 *greengrass.DeleteGroupInput, arg2 ...request.Option) (*greengrass.DeleteGroupOutput, error) {
+func (m *MockGreengrassAPI) DeleteGroupWithContext(arg0 context.Context, arg1 *greengrass.DeleteGroupInput, arg2 ...request.Option) (*greengrass.DeleteGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteLoggerDefinitionRequest(arg0 inte
 }
 
 // DeleteLoggerDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteLoggerDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteLoggerDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteLoggerDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteLoggerDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteResourceDefinitionRequest(arg0 in
 }
 
 // DeleteResourceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteResourceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteResourceDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteResourceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteResourceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteResourceDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteResourceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockGreengrassAPIMockRecorder) DeleteSubscriptionDefinitionRequest(arg
 }
 
 // DeleteSubscriptionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) DeleteSubscriptionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.DeleteSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteSubscriptionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) DeleteSubscriptionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.DeleteSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.DeleteSubscriptionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockGreengrassAPIMockRecorder) DisassociateRoleFromGroupRequest(arg0 i
 }
 
 // DisassociateRoleFromGroupWithContext mocks base method
-func (m *MockGreengrassAPI) DisassociateRoleFromGroupWithContext(arg0 aws.Context, arg1 *greengrass.DisassociateRoleFromGroupInput, arg2 ...request.Option) (*greengrass.DisassociateRoleFromGroupOutput, error) {
+func (m *MockGreengrassAPI) DisassociateRoleFromGroupWithContext(arg0 context.Context, arg1 *greengrass.DisassociateRoleFromGroupInput, arg2 ...request.Option) (*greengrass.DisassociateRoleFromGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockGreengrassAPIMockRecorder) DisassociateServiceRoleFromAccountReque
 }
 
 // DisassociateServiceRoleFromAccountWithContext mocks base method
-func (m *MockGreengrassAPI) DisassociateServiceRoleFromAccountWithContext(arg0 aws.Context, arg1 *greengrass.DisassociateServiceRoleFromAccountInput, arg2 ...request.Option) (*greengrass.DisassociateServiceRoleFromAccountOutput, error) {
+func (m *MockGreengrassAPI) DisassociateServiceRoleFromAccountWithContext(arg0 context.Context, arg1 *greengrass.DisassociateServiceRoleFromAccountInput, arg2 ...request.Option) (*greengrass.DisassociateServiceRoleFromAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetAssociatedRoleRequest(arg0 interface
 }
 
 // GetAssociatedRoleWithContext mocks base method
-func (m *MockGreengrassAPI) GetAssociatedRoleWithContext(arg0 aws.Context, arg1 *greengrass.GetAssociatedRoleInput, arg2 ...request.Option) (*greengrass.GetAssociatedRoleOutput, error) {
+func (m *MockGreengrassAPI) GetAssociatedRoleWithContext(arg0 context.Context, arg1 *greengrass.GetAssociatedRoleInput, arg2 ...request.Option) (*greengrass.GetAssociatedRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetBulkDeploymentStatusRequest(arg0 int
 }
 
 // GetBulkDeploymentStatusWithContext mocks base method
-func (m *MockGreengrassAPI) GetBulkDeploymentStatusWithContext(arg0 aws.Context, arg1 *greengrass.GetBulkDeploymentStatusInput, arg2 ...request.Option) (*greengrass.GetBulkDeploymentStatusOutput, error) {
+func (m *MockGreengrassAPI) GetBulkDeploymentStatusWithContext(arg0 context.Context, arg1 *greengrass.GetBulkDeploymentStatusInput, arg2 ...request.Option) (*greengrass.GetBulkDeploymentStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetConnectivityInfoRequest(arg0 interfa
 }
 
 // GetConnectivityInfoWithContext mocks base method
-func (m *MockGreengrassAPI) GetConnectivityInfoWithContext(arg0 aws.Context, arg1 *greengrass.GetConnectivityInfoInput, arg2 ...request.Option) (*greengrass.GetConnectivityInfoOutput, error) {
+func (m *MockGreengrassAPI) GetConnectivityInfoWithContext(arg0 context.Context, arg1 *greengrass.GetConnectivityInfoInput, arg2 ...request.Option) (*greengrass.GetConnectivityInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1796,7 +1796,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionVersionRequest(ar
 }
 
 // GetConnectorDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetConnectorDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetConnectorDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetConnectorDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetConnectorDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetConnectorDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetConnectorDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetConnectorDefinitionVersionWithContex
 }
 
 // GetConnectorDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.GetConnectorDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetConnectorDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.GetConnectorDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1896,7 +1896,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetCoreDefinitionVersionRequest(arg0 in
 }
 
 // GetCoreDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetCoreDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetCoreDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetCoreDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetCoreDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetCoreDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetCoreDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetCoreDefinitionVersionWithContext(arg
 }
 
 // GetCoreDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetCoreDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetCoreDefinitionInput, arg2 ...request.Option) (*greengrass.GetCoreDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetCoreDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetCoreDefinitionInput, arg2 ...request.Option) (*greengrass.GetCoreDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetDeploymentStatusRequest(arg0 interfa
 }
 
 // GetDeploymentStatusWithContext mocks base method
-func (m *MockGreengrassAPI) GetDeploymentStatusWithContext(arg0 aws.Context, arg1 *greengrass.GetDeploymentStatusInput, arg2 ...request.Option) (*greengrass.GetDeploymentStatusOutput, error) {
+func (m *MockGreengrassAPI) GetDeploymentStatusWithContext(arg0 context.Context, arg1 *greengrass.GetDeploymentStatusInput, arg2 ...request.Option) (*greengrass.GetDeploymentStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetDeviceDefinitionVersionRequest(arg0 
 }
 
 // GetDeviceDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetDeviceDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetDeviceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetDeviceDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetDeviceDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetDeviceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetDeviceDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetDeviceDefinitionVersionWithContext(a
 }
 
 // GetDeviceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetDeviceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.GetDeviceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetDeviceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.GetDeviceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2146,7 +2146,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetFunctionDefinitionVersionRequest(arg
 }
 
 // GetFunctionDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetFunctionDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetFunctionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetFunctionDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetFunctionDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetFunctionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetFunctionDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetFunctionDefinitionVersionWithContext
 }
 
 // GetFunctionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetFunctionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.GetFunctionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetFunctionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.GetFunctionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2231,7 +2231,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetGroupCertificateAuthorityRequest(arg
 }
 
 // GetGroupCertificateAuthorityWithContext mocks base method
-func (m *MockGreengrassAPI) GetGroupCertificateAuthorityWithContext(arg0 aws.Context, arg1 *greengrass.GetGroupCertificateAuthorityInput, arg2 ...request.Option) (*greengrass.GetGroupCertificateAuthorityOutput, error) {
+func (m *MockGreengrassAPI) GetGroupCertificateAuthorityWithContext(arg0 context.Context, arg1 *greengrass.GetGroupCertificateAuthorityInput, arg2 ...request.Option) (*greengrass.GetGroupCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2281,7 +2281,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetGroupCertificateConfigurationRequest
 }
 
 // GetGroupCertificateConfigurationWithContext mocks base method
-func (m *MockGreengrassAPI) GetGroupCertificateConfigurationWithContext(arg0 aws.Context, arg1 *greengrass.GetGroupCertificateConfigurationInput, arg2 ...request.Option) (*greengrass.GetGroupCertificateConfigurationOutput, error) {
+func (m *MockGreengrassAPI) GetGroupCertificateConfigurationWithContext(arg0 context.Context, arg1 *greengrass.GetGroupCertificateConfigurationInput, arg2 ...request.Option) (*greengrass.GetGroupCertificateConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2346,7 +2346,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetGroupVersionRequest(arg0 interface{}
 }
 
 // GetGroupVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetGroupVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetGroupVersionInput, arg2 ...request.Option) (*greengrass.GetGroupVersionOutput, error) {
+func (m *MockGreengrassAPI) GetGroupVersionWithContext(arg0 context.Context, arg1 *greengrass.GetGroupVersionInput, arg2 ...request.Option) (*greengrass.GetGroupVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2366,7 +2366,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetGroupVersionWithContext(arg0, arg1 i
 }
 
 // GetGroupWithContext mocks base method
-func (m *MockGreengrassAPI) GetGroupWithContext(arg0 aws.Context, arg1 *greengrass.GetGroupInput, arg2 ...request.Option) (*greengrass.GetGroupOutput, error) {
+func (m *MockGreengrassAPI) GetGroupWithContext(arg0 context.Context, arg1 *greengrass.GetGroupInput, arg2 ...request.Option) (*greengrass.GetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2446,7 +2446,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetLoggerDefinitionVersionRequest(arg0 
 }
 
 // GetLoggerDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetLoggerDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetLoggerDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetLoggerDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetLoggerDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetLoggerDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetLoggerDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2466,7 +2466,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetLoggerDefinitionVersionWithContext(a
 }
 
 // GetLoggerDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetLoggerDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.GetLoggerDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetLoggerDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.GetLoggerDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2546,7 +2546,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetResourceDefinitionVersionRequest(arg
 }
 
 // GetResourceDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetResourceDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetResourceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetResourceDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetResourceDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetResourceDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetResourceDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2566,7 +2566,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetResourceDefinitionVersionWithContext
 }
 
 // GetResourceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetResourceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetResourceDefinitionInput, arg2 ...request.Option) (*greengrass.GetResourceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetResourceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetResourceDefinitionInput, arg2 ...request.Option) (*greengrass.GetResourceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2616,7 +2616,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetServiceRoleForAccountRequest(arg0 in
 }
 
 // GetServiceRoleForAccountWithContext mocks base method
-func (m *MockGreengrassAPI) GetServiceRoleForAccountWithContext(arg0 aws.Context, arg1 *greengrass.GetServiceRoleForAccountInput, arg2 ...request.Option) (*greengrass.GetServiceRoleForAccountOutput, error) {
+func (m *MockGreengrassAPI) GetServiceRoleForAccountWithContext(arg0 context.Context, arg1 *greengrass.GetServiceRoleForAccountInput, arg2 ...request.Option) (*greengrass.GetServiceRoleForAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2696,7 +2696,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetSubscriptionDefinitionVersionRequest
 }
 
 // GetSubscriptionDefinitionVersionWithContext mocks base method
-func (m *MockGreengrassAPI) GetSubscriptionDefinitionVersionWithContext(arg0 aws.Context, arg1 *greengrass.GetSubscriptionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetSubscriptionDefinitionVersionOutput, error) {
+func (m *MockGreengrassAPI) GetSubscriptionDefinitionVersionWithContext(arg0 context.Context, arg1 *greengrass.GetSubscriptionDefinitionVersionInput, arg2 ...request.Option) (*greengrass.GetSubscriptionDefinitionVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2716,7 +2716,7 @@ func (mr *MockGreengrassAPIMockRecorder) GetSubscriptionDefinitionVersionWithCon
 }
 
 // GetSubscriptionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) GetSubscriptionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.GetSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.GetSubscriptionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) GetSubscriptionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.GetSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.GetSubscriptionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2766,7 +2766,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentDetailedReportsReques
 }
 
 // ListBulkDeploymentDetailedReportsWithContext mocks base method
-func (m *MockGreengrassAPI) ListBulkDeploymentDetailedReportsWithContext(arg0 aws.Context, arg1 *greengrass.ListBulkDeploymentDetailedReportsInput, arg2 ...request.Option) (*greengrass.ListBulkDeploymentDetailedReportsOutput, error) {
+func (m *MockGreengrassAPI) ListBulkDeploymentDetailedReportsWithContext(arg0 context.Context, arg1 *greengrass.ListBulkDeploymentDetailedReportsInput, arg2 ...request.Option) (*greengrass.ListBulkDeploymentDetailedReportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2816,7 +2816,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListBulkDeploymentsRequest(arg0 interfa
 }
 
 // ListBulkDeploymentsWithContext mocks base method
-func (m *MockGreengrassAPI) ListBulkDeploymentsWithContext(arg0 aws.Context, arg1 *greengrass.ListBulkDeploymentsInput, arg2 ...request.Option) (*greengrass.ListBulkDeploymentsOutput, error) {
+func (m *MockGreengrassAPI) ListBulkDeploymentsWithContext(arg0 context.Context, arg1 *greengrass.ListBulkDeploymentsInput, arg2 ...request.Option) (*greengrass.ListBulkDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2866,7 +2866,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionVersionsRequest(
 }
 
 // ListConnectorDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListConnectorDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListConnectorDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListConnectorDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListConnectorDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListConnectorDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListConnectorDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2916,7 +2916,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListConnectorDefinitionsRequest(arg0 in
 }
 
 // ListConnectorDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListConnectorDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListConnectorDefinitionsInput, arg2 ...request.Option) (*greengrass.ListConnectorDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListConnectorDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListConnectorDefinitionsInput, arg2 ...request.Option) (*greengrass.ListConnectorDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2966,7 +2966,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListCoreDefinitionVersionsRequest(arg0 
 }
 
 // ListCoreDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListCoreDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListCoreDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListCoreDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListCoreDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListCoreDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListCoreDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3016,7 +3016,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListCoreDefinitionsRequest(arg0 interfa
 }
 
 // ListCoreDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListCoreDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListCoreDefinitionsInput, arg2 ...request.Option) (*greengrass.ListCoreDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListCoreDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListCoreDefinitionsInput, arg2 ...request.Option) (*greengrass.ListCoreDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3066,7 +3066,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListDeploymentsRequest(arg0 interface{}
 }
 
 // ListDeploymentsWithContext mocks base method
-func (m *MockGreengrassAPI) ListDeploymentsWithContext(arg0 aws.Context, arg1 *greengrass.ListDeploymentsInput, arg2 ...request.Option) (*greengrass.ListDeploymentsOutput, error) {
+func (m *MockGreengrassAPI) ListDeploymentsWithContext(arg0 context.Context, arg1 *greengrass.ListDeploymentsInput, arg2 ...request.Option) (*greengrass.ListDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3116,7 +3116,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListDeviceDefinitionVersionsRequest(arg
 }
 
 // ListDeviceDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListDeviceDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListDeviceDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListDeviceDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListDeviceDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListDeviceDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListDeviceDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3166,7 +3166,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListDeviceDefinitionsRequest(arg0 inter
 }
 
 // ListDeviceDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListDeviceDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListDeviceDefinitionsInput, arg2 ...request.Option) (*greengrass.ListDeviceDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListDeviceDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListDeviceDefinitionsInput, arg2 ...request.Option) (*greengrass.ListDeviceDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3216,7 +3216,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListFunctionDefinitionVersionsRequest(a
 }
 
 // ListFunctionDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListFunctionDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListFunctionDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListFunctionDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListFunctionDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListFunctionDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListFunctionDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3266,7 +3266,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListFunctionDefinitionsRequest(arg0 int
 }
 
 // ListFunctionDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListFunctionDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListFunctionDefinitionsInput, arg2 ...request.Option) (*greengrass.ListFunctionDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListFunctionDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListFunctionDefinitionsInput, arg2 ...request.Option) (*greengrass.ListFunctionDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3316,7 +3316,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListGroupCertificateAuthoritiesRequest(
 }
 
 // ListGroupCertificateAuthoritiesWithContext mocks base method
-func (m *MockGreengrassAPI) ListGroupCertificateAuthoritiesWithContext(arg0 aws.Context, arg1 *greengrass.ListGroupCertificateAuthoritiesInput, arg2 ...request.Option) (*greengrass.ListGroupCertificateAuthoritiesOutput, error) {
+func (m *MockGreengrassAPI) ListGroupCertificateAuthoritiesWithContext(arg0 context.Context, arg1 *greengrass.ListGroupCertificateAuthoritiesInput, arg2 ...request.Option) (*greengrass.ListGroupCertificateAuthoritiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3366,7 +3366,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListGroupVersionsRequest(arg0 interface
 }
 
 // ListGroupVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListGroupVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListGroupVersionsInput, arg2 ...request.Option) (*greengrass.ListGroupVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListGroupVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListGroupVersionsInput, arg2 ...request.Option) (*greengrass.ListGroupVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3416,7 +3416,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListGroupsRequest(arg0 interface{}) *go
 }
 
 // ListGroupsWithContext mocks base method
-func (m *MockGreengrassAPI) ListGroupsWithContext(arg0 aws.Context, arg1 *greengrass.ListGroupsInput, arg2 ...request.Option) (*greengrass.ListGroupsOutput, error) {
+func (m *MockGreengrassAPI) ListGroupsWithContext(arg0 context.Context, arg1 *greengrass.ListGroupsInput, arg2 ...request.Option) (*greengrass.ListGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3466,7 +3466,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListLoggerDefinitionVersionsRequest(arg
 }
 
 // ListLoggerDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListLoggerDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListLoggerDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListLoggerDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListLoggerDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListLoggerDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListLoggerDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3516,7 +3516,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListLoggerDefinitionsRequest(arg0 inter
 }
 
 // ListLoggerDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListLoggerDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListLoggerDefinitionsInput, arg2 ...request.Option) (*greengrass.ListLoggerDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListLoggerDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListLoggerDefinitionsInput, arg2 ...request.Option) (*greengrass.ListLoggerDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3566,7 +3566,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListResourceDefinitionVersionsRequest(a
 }
 
 // ListResourceDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListResourceDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListResourceDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListResourceDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListResourceDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListResourceDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListResourceDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3616,7 +3616,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListResourceDefinitionsRequest(arg0 int
 }
 
 // ListResourceDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListResourceDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListResourceDefinitionsInput, arg2 ...request.Option) (*greengrass.ListResourceDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListResourceDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListResourceDefinitionsInput, arg2 ...request.Option) (*greengrass.ListResourceDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3666,7 +3666,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListSubscriptionDefinitionVersionsReque
 }
 
 // ListSubscriptionDefinitionVersionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListSubscriptionDefinitionVersionsWithContext(arg0 aws.Context, arg1 *greengrass.ListSubscriptionDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListSubscriptionDefinitionVersionsOutput, error) {
+func (m *MockGreengrassAPI) ListSubscriptionDefinitionVersionsWithContext(arg0 context.Context, arg1 *greengrass.ListSubscriptionDefinitionVersionsInput, arg2 ...request.Option) (*greengrass.ListSubscriptionDefinitionVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3716,7 +3716,7 @@ func (mr *MockGreengrassAPIMockRecorder) ListSubscriptionDefinitionsRequest(arg0
 }
 
 // ListSubscriptionDefinitionsWithContext mocks base method
-func (m *MockGreengrassAPI) ListSubscriptionDefinitionsWithContext(arg0 aws.Context, arg1 *greengrass.ListSubscriptionDefinitionsInput, arg2 ...request.Option) (*greengrass.ListSubscriptionDefinitionsOutput, error) {
+func (m *MockGreengrassAPI) ListSubscriptionDefinitionsWithContext(arg0 context.Context, arg1 *greengrass.ListSubscriptionDefinitionsInput, arg2 ...request.Option) (*greengrass.ListSubscriptionDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3766,7 +3766,7 @@ func (mr *MockGreengrassAPIMockRecorder) ResetDeploymentsRequest(arg0 interface{
 }
 
 // ResetDeploymentsWithContext mocks base method
-func (m *MockGreengrassAPI) ResetDeploymentsWithContext(arg0 aws.Context, arg1 *greengrass.ResetDeploymentsInput, arg2 ...request.Option) (*greengrass.ResetDeploymentsOutput, error) {
+func (m *MockGreengrassAPI) ResetDeploymentsWithContext(arg0 context.Context, arg1 *greengrass.ResetDeploymentsInput, arg2 ...request.Option) (*greengrass.ResetDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3816,7 +3816,7 @@ func (mr *MockGreengrassAPIMockRecorder) StartBulkDeploymentRequest(arg0 interfa
 }
 
 // StartBulkDeploymentWithContext mocks base method
-func (m *MockGreengrassAPI) StartBulkDeploymentWithContext(arg0 aws.Context, arg1 *greengrass.StartBulkDeploymentInput, arg2 ...request.Option) (*greengrass.StartBulkDeploymentOutput, error) {
+func (m *MockGreengrassAPI) StartBulkDeploymentWithContext(arg0 context.Context, arg1 *greengrass.StartBulkDeploymentInput, arg2 ...request.Option) (*greengrass.StartBulkDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3866,7 +3866,7 @@ func (mr *MockGreengrassAPIMockRecorder) StopBulkDeploymentRequest(arg0 interfac
 }
 
 // StopBulkDeploymentWithContext mocks base method
-func (m *MockGreengrassAPI) StopBulkDeploymentWithContext(arg0 aws.Context, arg1 *greengrass.StopBulkDeploymentInput, arg2 ...request.Option) (*greengrass.StopBulkDeploymentOutput, error) {
+func (m *MockGreengrassAPI) StopBulkDeploymentWithContext(arg0 context.Context, arg1 *greengrass.StopBulkDeploymentInput, arg2 ...request.Option) (*greengrass.StopBulkDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3916,7 +3916,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateConnectivityInfoRequest(arg0 inte
 }
 
 // UpdateConnectivityInfoWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateConnectivityInfoWithContext(arg0 aws.Context, arg1 *greengrass.UpdateConnectivityInfoInput, arg2 ...request.Option) (*greengrass.UpdateConnectivityInfoOutput, error) {
+func (m *MockGreengrassAPI) UpdateConnectivityInfoWithContext(arg0 context.Context, arg1 *greengrass.UpdateConnectivityInfoInput, arg2 ...request.Option) (*greengrass.UpdateConnectivityInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3966,7 +3966,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateConnectorDefinitionRequest(arg0 i
 }
 
 // UpdateConnectorDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateConnectorDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateConnectorDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateConnectorDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateConnectorDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateConnectorDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4016,7 +4016,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateCoreDefinitionRequest(arg0 interf
 }
 
 // UpdateCoreDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateCoreDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateCoreDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateCoreDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateCoreDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateCoreDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateCoreDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4066,7 +4066,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateDeviceDefinitionRequest(arg0 inte
 }
 
 // UpdateDeviceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateDeviceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateDeviceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateDeviceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateDeviceDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateDeviceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4116,7 +4116,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateFunctionDefinitionRequest(arg0 in
 }
 
 // UpdateFunctionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateFunctionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateFunctionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateFunctionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateFunctionDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateFunctionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4181,7 +4181,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateGroupCertificateConfigurationRequ
 }
 
 // UpdateGroupCertificateConfigurationWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateGroupCertificateConfigurationWithContext(arg0 aws.Context, arg1 *greengrass.UpdateGroupCertificateConfigurationInput, arg2 ...request.Option) (*greengrass.UpdateGroupCertificateConfigurationOutput, error) {
+func (m *MockGreengrassAPI) UpdateGroupCertificateConfigurationWithContext(arg0 context.Context, arg1 *greengrass.UpdateGroupCertificateConfigurationInput, arg2 ...request.Option) (*greengrass.UpdateGroupCertificateConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4216,7 +4216,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateGroupRequest(arg0 interface{}) *g
 }
 
 // UpdateGroupWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateGroupWithContext(arg0 aws.Context, arg1 *greengrass.UpdateGroupInput, arg2 ...request.Option) (*greengrass.UpdateGroupOutput, error) {
+func (m *MockGreengrassAPI) UpdateGroupWithContext(arg0 context.Context, arg1 *greengrass.UpdateGroupInput, arg2 ...request.Option) (*greengrass.UpdateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4266,7 +4266,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateLoggerDefinitionRequest(arg0 inte
 }
 
 // UpdateLoggerDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateLoggerDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateLoggerDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateLoggerDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateLoggerDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateLoggerDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4316,7 +4316,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateResourceDefinitionRequest(arg0 in
 }
 
 // UpdateResourceDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateResourceDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateResourceDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateResourceDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateResourceDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateResourceDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateResourceDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4366,7 +4366,7 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateSubscriptionDefinitionRequest(arg
 }
 
 // UpdateSubscriptionDefinitionWithContext mocks base method
-func (m *MockGreengrassAPI) UpdateSubscriptionDefinitionWithContext(arg0 aws.Context, arg1 *greengrass.UpdateSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateSubscriptionDefinitionOutput, error) {
+func (m *MockGreengrassAPI) UpdateSubscriptionDefinitionWithContext(arg0 context.Context, arg1 *greengrass.UpdateSubscriptionDefinitionInput, arg2 ...request.Option) (*greengrass.UpdateSubscriptionDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

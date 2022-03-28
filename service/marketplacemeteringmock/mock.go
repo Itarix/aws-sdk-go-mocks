@@ -5,7 +5,7 @@
 package marketplacemeteringmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	marketplacemetering "github.com/aws/aws-sdk-go/service/marketplacemetering"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMarketplaceMeteringAPIMockRecorder) BatchMeterUsageRequest(arg0 in
 }
 
 // BatchMeterUsageWithContext mocks base method
-func (m *MockMarketplaceMeteringAPI) BatchMeterUsageWithContext(arg0 aws.Context, arg1 *marketplacemetering.BatchMeterUsageInput, arg2 ...request.Option) (*marketplacemetering.BatchMeterUsageOutput, error) {
+func (m *MockMarketplaceMeteringAPI) BatchMeterUsageWithContext(arg0 context.Context, arg1 *marketplacemetering.BatchMeterUsageInput, arg2 ...request.Option) (*marketplacemetering.BatchMeterUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMarketplaceMeteringAPIMockRecorder) MeterUsageRequest(arg0 interfa
 }
 
 // MeterUsageWithContext mocks base method
-func (m *MockMarketplaceMeteringAPI) MeterUsageWithContext(arg0 aws.Context, arg1 *marketplacemetering.MeterUsageInput, arg2 ...request.Option) (*marketplacemetering.MeterUsageOutput, error) {
+func (m *MockMarketplaceMeteringAPI) MeterUsageWithContext(arg0 context.Context, arg1 *marketplacemetering.MeterUsageInput, arg2 ...request.Option) (*marketplacemetering.MeterUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMarketplaceMeteringAPIMockRecorder) RegisterUsageRequest(arg0 inte
 }
 
 // RegisterUsageWithContext mocks base method
-func (m *MockMarketplaceMeteringAPI) RegisterUsageWithContext(arg0 aws.Context, arg1 *marketplacemetering.RegisterUsageInput, arg2 ...request.Option) (*marketplacemetering.RegisterUsageOutput, error) {
+func (m *MockMarketplaceMeteringAPI) RegisterUsageWithContext(arg0 context.Context, arg1 *marketplacemetering.RegisterUsageInput, arg2 ...request.Option) (*marketplacemetering.RegisterUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMarketplaceMeteringAPIMockRecorder) ResolveCustomerRequest(arg0 in
 }
 
 // ResolveCustomerWithContext mocks base method
-func (m *MockMarketplaceMeteringAPI) ResolveCustomerWithContext(arg0 aws.Context, arg1 *marketplacemetering.ResolveCustomerInput, arg2 ...request.Option) (*marketplacemetering.ResolveCustomerOutput, error) {
+func (m *MockMarketplaceMeteringAPI) ResolveCustomerWithContext(arg0 context.Context, arg1 *marketplacemetering.ResolveCustomerInput, arg2 ...request.Option) (*marketplacemetering.ResolveCustomerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

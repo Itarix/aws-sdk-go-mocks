@@ -5,7 +5,7 @@
 package translatemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	translate "github.com/aws/aws-sdk-go/service/translate"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockTranslateAPIMockRecorder) DeleteTerminologyRequest(arg0 interface{
 }
 
 // DeleteTerminologyWithContext mocks base method
-func (m *MockTranslateAPI) DeleteTerminologyWithContext(arg0 aws.Context, arg1 *translate.DeleteTerminologyInput, arg2 ...request.Option) (*translate.DeleteTerminologyOutput, error) {
+func (m *MockTranslateAPI) DeleteTerminologyWithContext(arg0 context.Context, arg1 *translate.DeleteTerminologyInput, arg2 ...request.Option) (*translate.DeleteTerminologyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockTranslateAPIMockRecorder) GetTerminologyRequest(arg0 interface{}) 
 }
 
 // GetTerminologyWithContext mocks base method
-func (m *MockTranslateAPI) GetTerminologyWithContext(arg0 aws.Context, arg1 *translate.GetTerminologyInput, arg2 ...request.Option) (*translate.GetTerminologyOutput, error) {
+func (m *MockTranslateAPI) GetTerminologyWithContext(arg0 context.Context, arg1 *translate.GetTerminologyInput, arg2 ...request.Option) (*translate.GetTerminologyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockTranslateAPIMockRecorder) ImportTerminologyRequest(arg0 interface{
 }
 
 // ImportTerminologyWithContext mocks base method
-func (m *MockTranslateAPI) ImportTerminologyWithContext(arg0 aws.Context, arg1 *translate.ImportTerminologyInput, arg2 ...request.Option) (*translate.ImportTerminologyOutput, error) {
+func (m *MockTranslateAPI) ImportTerminologyWithContext(arg0 context.Context, arg1 *translate.ImportTerminologyInput, arg2 ...request.Option) (*translate.ImportTerminologyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockTranslateAPIMockRecorder) ListTerminologiesRequest(arg0 interface{
 }
 
 // ListTerminologiesWithContext mocks base method
-func (m *MockTranslateAPI) ListTerminologiesWithContext(arg0 aws.Context, arg1 *translate.ListTerminologiesInput, arg2 ...request.Option) (*translate.ListTerminologiesOutput, error) {
+func (m *MockTranslateAPI) ListTerminologiesWithContext(arg0 context.Context, arg1 *translate.ListTerminologiesInput, arg2 ...request.Option) (*translate.ListTerminologiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockTranslateAPIMockRecorder) TextRequest(arg0 interface{}) *gomock.Ca
 }
 
 // TextWithContext mocks base method
-func (m *MockTranslateAPI) TextWithContext(arg0 aws.Context, arg1 *translate.TextInput, arg2 ...request.Option) (*translate.TextOutput, error) {
+func (m *MockTranslateAPI) TextWithContext(arg0 context.Context, arg1 *translate.TextInput, arg2 ...request.Option) (*translate.TextOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

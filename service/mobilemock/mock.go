@@ -5,7 +5,7 @@
 package mobilemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mobile "github.com/aws/aws-sdk-go/service/mobile"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMobileAPIMockRecorder) CreateProjectRequest(arg0 interface{}) *gom
 }
 
 // CreateProjectWithContext mocks base method
-func (m *MockMobileAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *mobile.CreateProjectInput, arg2 ...request.Option) (*mobile.CreateProjectOutput, error) {
+func (m *MockMobileAPI) CreateProjectWithContext(arg0 context.Context, arg1 *mobile.CreateProjectInput, arg2 ...request.Option) (*mobile.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMobileAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) *gom
 }
 
 // DeleteProjectWithContext mocks base method
-func (m *MockMobileAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *mobile.DeleteProjectInput, arg2 ...request.Option) (*mobile.DeleteProjectOutput, error) {
+func (m *MockMobileAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *mobile.DeleteProjectInput, arg2 ...request.Option) (*mobile.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMobileAPIMockRecorder) DescribeBundleRequest(arg0 interface{}) *go
 }
 
 // DescribeBundleWithContext mocks base method
-func (m *MockMobileAPI) DescribeBundleWithContext(arg0 aws.Context, arg1 *mobile.DescribeBundleInput, arg2 ...request.Option) (*mobile.DescribeBundleOutput, error) {
+func (m *MockMobileAPI) DescribeBundleWithContext(arg0 context.Context, arg1 *mobile.DescribeBundleInput, arg2 ...request.Option) (*mobile.DescribeBundleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMobileAPIMockRecorder) DescribeProjectRequest(arg0 interface{}) *g
 }
 
 // DescribeProjectWithContext mocks base method
-func (m *MockMobileAPI) DescribeProjectWithContext(arg0 aws.Context, arg1 *mobile.DescribeProjectInput, arg2 ...request.Option) (*mobile.DescribeProjectOutput, error) {
+func (m *MockMobileAPI) DescribeProjectWithContext(arg0 context.Context, arg1 *mobile.DescribeProjectInput, arg2 ...request.Option) (*mobile.DescribeProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMobileAPIMockRecorder) ExportBundleRequest(arg0 interface{}) *gomo
 }
 
 // ExportBundleWithContext mocks base method
-func (m *MockMobileAPI) ExportBundleWithContext(arg0 aws.Context, arg1 *mobile.ExportBundleInput, arg2 ...request.Option) (*mobile.ExportBundleOutput, error) {
+func (m *MockMobileAPI) ExportBundleWithContext(arg0 context.Context, arg1 *mobile.ExportBundleInput, arg2 ...request.Option) (*mobile.ExportBundleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMobileAPIMockRecorder) ExportProjectRequest(arg0 interface{}) *gom
 }
 
 // ExportProjectWithContext mocks base method
-func (m *MockMobileAPI) ExportProjectWithContext(arg0 aws.Context, arg1 *mobile.ExportProjectInput, arg2 ...request.Option) (*mobile.ExportProjectOutput, error) {
+func (m *MockMobileAPI) ExportProjectWithContext(arg0 context.Context, arg1 *mobile.ExportProjectInput, arg2 ...request.Option) (*mobile.ExportProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockMobileAPIMockRecorder) ListBundlesPages(arg0, arg1 interface{}) *g
 }
 
 // ListBundlesPagesWithContext mocks base method
-func (m *MockMobileAPI) ListBundlesPagesWithContext(arg0 aws.Context, arg1 *mobile.ListBundlesInput, arg2 func(*mobile.ListBundlesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMobileAPI) ListBundlesPagesWithContext(arg0 context.Context, arg1 *mobile.ListBundlesInput, arg2 func(*mobile.ListBundlesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockMobileAPIMockRecorder) ListBundlesRequest(arg0 interface{}) *gomoc
 }
 
 // ListBundlesWithContext mocks base method
-func (m *MockMobileAPI) ListBundlesWithContext(arg0 aws.Context, arg1 *mobile.ListBundlesInput, arg2 ...request.Option) (*mobile.ListBundlesOutput, error) {
+func (m *MockMobileAPI) ListBundlesWithContext(arg0 context.Context, arg1 *mobile.ListBundlesInput, arg2 ...request.Option) (*mobile.ListBundlesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockMobileAPIMockRecorder) ListProjectsPages(arg0, arg1 interface{}) *
 }
 
 // ListProjectsPagesWithContext mocks base method
-func (m *MockMobileAPI) ListProjectsPagesWithContext(arg0 aws.Context, arg1 *mobile.ListProjectsInput, arg2 func(*mobile.ListProjectsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMobileAPI) ListProjectsPagesWithContext(arg0 context.Context, arg1 *mobile.ListProjectsInput, arg2 func(*mobile.ListProjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockMobileAPIMockRecorder) ListProjectsRequest(arg0 interface{}) *gomo
 }
 
 // ListProjectsWithContext mocks base method
-func (m *MockMobileAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *mobile.ListProjectsInput, arg2 ...request.Option) (*mobile.ListProjectsOutput, error) {
+func (m *MockMobileAPI) ListProjectsWithContext(arg0 context.Context, arg1 *mobile.ListProjectsInput, arg2 ...request.Option) (*mobile.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockMobileAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) *gom
 }
 
 // UpdateProjectWithContext mocks base method
-func (m *MockMobileAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *mobile.UpdateProjectInput, arg2 ...request.Option) (*mobile.UpdateProjectOutput, error) {
+func (m *MockMobileAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *mobile.UpdateProjectInput, arg2 ...request.Option) (*mobile.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

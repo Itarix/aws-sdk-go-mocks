@@ -5,7 +5,7 @@
 package elasticbeanstalkmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elasticbeanstalk "github.com/aws/aws-sdk-go/service/elasticbeanstalk"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) AbortEnvironmentUpdateRequest(arg
 }
 
 // AbortEnvironmentUpdateWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.AbortEnvironmentUpdateInput, arg2 ...request.Option) (*elasticbeanstalk.AbortEnvironmentUpdateOutput, error) {
+func (m *MockElasticBeanstalkAPI) AbortEnvironmentUpdateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.AbortEnvironmentUpdateInput, arg2 ...request.Option) (*elasticbeanstalk.AbortEnvironmentUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ApplyEnvironmentManagedActionRequ
 }
 
 // ApplyEnvironmentManagedActionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ApplyEnvironmentManagedActionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplyEnvironmentManagedActionOutput, error) {
+func (m *MockElasticBeanstalkAPI) ApplyEnvironmentManagedActionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ApplyEnvironmentManagedActionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplyEnvironmentManagedActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CheckDNSAvailabilityRequest(arg0 
 }
 
 // CheckDNSAvailabilityWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CheckDNSAvailabilityInput, arg2 ...request.Option) (*elasticbeanstalk.CheckDNSAvailabilityOutput, error) {
+func (m *MockElasticBeanstalkAPI) CheckDNSAvailabilityWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CheckDNSAvailabilityInput, arg2 ...request.Option) (*elasticbeanstalk.CheckDNSAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ComposeEnvironmentsRequest(arg0 i
 }
 
 // ComposeEnvironmentsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ComposeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
+func (m *MockElasticBeanstalkAPI) ComposeEnvironmentsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ComposeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -296,7 +296,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationVersionRequest(a
 }
 
 // CreateApplicationVersionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CreateApplicationVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
+func (m *MockElasticBeanstalkAPI) CreateApplicationVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CreateApplicationVersionWithConte
 }
 
 // CreateApplicationWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CreateApplicationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
+func (m *MockElasticBeanstalkAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CreateConfigurationTemplateReques
 }
 
 // CreateConfigurationTemplateWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
+func (m *MockElasticBeanstalkAPI) CreateConfigurationTemplateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CreateEnvironmentRequest(arg0 int
 }
 
 // CreateEnvironmentWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CreateEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
+func (m *MockElasticBeanstalkAPI) CreateEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CreatePlatformVersionRequest(arg0
 }
 
 // CreatePlatformVersionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CreatePlatformVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreatePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.CreatePlatformVersionOutput, error) {
+func (m *MockElasticBeanstalkAPI) CreatePlatformVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreatePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.CreatePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) CreateStorageLocationRequest(arg0
 }
 
 // CreateStorageLocationWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) CreateStorageLocationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.CreateStorageLocationInput, arg2 ...request.Option) (*elasticbeanstalk.CreateStorageLocationOutput, error) {
+func (m *MockElasticBeanstalkAPI) CreateStorageLocationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.CreateStorageLocationInput, arg2 ...request.Option) (*elasticbeanstalk.CreateStorageLocationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -596,7 +596,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationVersionRequest(a
 }
 
 // DeleteApplicationVersionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationVersionOutput, error) {
+func (m *MockElasticBeanstalkAPI) DeleteApplicationVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteApplicationVersionWithConte
 }
 
 // DeleteApplicationWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DeleteApplicationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationOutput, error) {
+func (m *MockElasticBeanstalkAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteConfigurationTemplateReques
 }
 
 // DeleteConfigurationTemplateWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteConfigurationTemplateOutput, error) {
+func (m *MockElasticBeanstalkAPI) DeleteConfigurationTemplateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DeleteEnvironmentConfigurationReq
 }
 
 // DeleteEnvironmentConfigurationWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeleteEnvironmentConfigurationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteEnvironmentConfigurationOutput, error) {
+func (m *MockElasticBeanstalkAPI) DeleteEnvironmentConfigurationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeleteEnvironmentConfigurationInput, arg2 ...request.Option) (*elasticbeanstalk.DeleteEnvironmentConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DeletePlatformVersionRequest(arg0
 }
 
 // DeletePlatformVersionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DeletePlatformVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DeletePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeletePlatformVersionOutput, error) {
+func (m *MockElasticBeanstalkAPI) DeletePlatformVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DeletePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DeletePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeAccountAttributesRequest(
 }
 
 // DescribeAccountAttributesWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeAccountAttributesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeAccountAttributesOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeAccountAttributesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeAccountAttributesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationVersionsReques
 }
 
 // DescribeApplicationVersionsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeApplicationVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationVersionsOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeApplicationVersionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeApplicationVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeApplicationsRequest(arg0 
 }
 
 // DescribeApplicationsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeApplicationsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeApplicationsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationsOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeApplicationsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeApplicationsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationOptionsReque
 }
 
 // DescribeConfigurationOptionsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeConfigurationOptionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationOptionsOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeConfigurationOptionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeConfigurationOptionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeConfigurationSettingsRequ
 }
 
 // DescribeConfigurationSettingsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationSettingsOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeConfigurationSettingsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeConfigurationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentHealthRequest(
 }
 
 // DescribeEnvironmentHealthWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentHealthOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentHealthWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentHealthOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActionH
 }
 
 // DescribeEnvironmentManagedActionHistoryWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionHistoryWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionHistoryInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentManagedActions
 }
 
 // DescribeEnvironmentManagedActionsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionsOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentManagedActionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentManagedActionsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentManagedActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentResourcesReque
 }
 
 // DescribeEnvironmentResourcesWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentResourcesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentResourcesOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentResourcesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentResourcesInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEnvironmentResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEnvironmentsRequest(arg0 
 }
 
 // DescribeEnvironmentsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
+func (m *MockElasticBeanstalkAPI) DescribeEnvironmentsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEnvironmentsInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescriptionsMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEventsPages(arg0, arg1 in
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 func(*elasticbeanstalk.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElasticBeanstalkAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 func(*elasticbeanstalk.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1349,7 +1349,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeEventsRequest(arg0 interf
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEventsOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeEventsInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1399,7 +1399,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribeInstancesHealthRequest(ar
 }
 
 // DescribeInstancesHealthWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribeInstancesHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeInstancesHealthOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribeInstancesHealthWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribeInstancesHealthInput, arg2 ...request.Option) (*elasticbeanstalk.DescribeInstancesHealthOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1449,7 +1449,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) DescribePlatformVersionRequest(ar
 }
 
 // DescribePlatformVersionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) DescribePlatformVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.DescribePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DescribePlatformVersionOutput, error) {
+func (m *MockElasticBeanstalkAPI) DescribePlatformVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.DescribePlatformVersionInput, arg2 ...request.Option) (*elasticbeanstalk.DescribePlatformVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1499,7 +1499,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ListAvailableSolutionStacksReques
 }
 
 // ListAvailableSolutionStacksWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ListAvailableSolutionStacksInput, arg2 ...request.Option) (*elasticbeanstalk.ListAvailableSolutionStacksOutput, error) {
+func (m *MockElasticBeanstalkAPI) ListAvailableSolutionStacksWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListAvailableSolutionStacksInput, arg2 ...request.Option) (*elasticbeanstalk.ListAvailableSolutionStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1549,7 +1549,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformVersionsRequest(arg0 
 }
 
 // ListPlatformVersionsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) ListPlatformVersionsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ListPlatformVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.ListPlatformVersionsOutput, error) {
+func (m *MockElasticBeanstalkAPI) ListPlatformVersionsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformVersionsInput, arg2 ...request.Option) (*elasticbeanstalk.ListPlatformVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1599,7 +1599,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ListTagsForResourceRequest(arg0 i
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ListTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.ListTagsForResourceOutput, error) {
+func (m *MockElasticBeanstalkAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1649,7 +1649,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) RebuildEnvironmentRequest(arg0 in
 }
 
 // RebuildEnvironmentWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) RebuildEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RebuildEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.RebuildEnvironmentOutput, error) {
+func (m *MockElasticBeanstalkAPI) RebuildEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RebuildEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.RebuildEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1699,7 +1699,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) RequestEnvironmentInfoRequest(arg
 }
 
 // RequestEnvironmentInfoWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RequestEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RequestEnvironmentInfoOutput, error) {
+func (m *MockElasticBeanstalkAPI) RequestEnvironmentInfoWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RequestEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RequestEnvironmentInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1749,7 +1749,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) RestartAppServerRequest(arg0 inte
 }
 
 // RestartAppServerWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) RestartAppServerWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RestartAppServerInput, arg2 ...request.Option) (*elasticbeanstalk.RestartAppServerOutput, error) {
+func (m *MockElasticBeanstalkAPI) RestartAppServerWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RestartAppServerInput, arg2 ...request.Option) (*elasticbeanstalk.RestartAppServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1799,7 +1799,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) RetrieveEnvironmentInfoRequest(ar
 }
 
 // RetrieveEnvironmentInfoWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.RetrieveEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RetrieveEnvironmentInfoOutput, error) {
+func (m *MockElasticBeanstalkAPI) RetrieveEnvironmentInfoWithContext(arg0 context.Context, arg1 *elasticbeanstalk.RetrieveEnvironmentInfoInput, arg2 ...request.Option) (*elasticbeanstalk.RetrieveEnvironmentInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1849,7 +1849,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) SwapEnvironmentCNAMEsRequest(arg0
 }
 
 // SwapEnvironmentCNAMEsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.SwapEnvironmentCNAMEsInput, arg2 ...request.Option) (*elasticbeanstalk.SwapEnvironmentCNAMEsOutput, error) {
+func (m *MockElasticBeanstalkAPI) SwapEnvironmentCNAMEsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.SwapEnvironmentCNAMEsInput, arg2 ...request.Option) (*elasticbeanstalk.SwapEnvironmentCNAMEsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1899,7 +1899,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) TerminateEnvironmentRequest(arg0 
 }
 
 // TerminateEnvironmentWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) TerminateEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.TerminateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
+func (m *MockElasticBeanstalkAPI) TerminateEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.TerminateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1979,7 +1979,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationResourceLifecycl
 }
 
 // UpdateApplicationResourceLifecycleWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateApplicationResourceLifecycleInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateApplicationResourceLifecycleOutput, error) {
+func (m *MockElasticBeanstalkAPI) UpdateApplicationResourceLifecycleWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateApplicationResourceLifecycleInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateApplicationResourceLifecycleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2029,7 +2029,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationVersionRequest(a
 }
 
 // UpdateApplicationVersionWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
+func (m *MockElasticBeanstalkAPI) UpdateApplicationVersionWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateApplicationVersionInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationVersionDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2049,7 +2049,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateApplicationVersionWithConte
 }
 
 // UpdateApplicationWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) UpdateApplicationWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
+func (m *MockElasticBeanstalkAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateApplicationInput, arg2 ...request.Option) (*elasticbeanstalk.ApplicationDescriptionMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2099,7 +2099,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateConfigurationTemplateReques
 }
 
 // UpdateConfigurationTemplateWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
+func (m *MockElasticBeanstalkAPI) UpdateConfigurationTemplateWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateConfigurationTemplateInput, arg2 ...request.Option) (*elasticbeanstalk.ConfigurationSettingsDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2149,7 +2149,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateEnvironmentRequest(arg0 int
 }
 
 // UpdateEnvironmentWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) UpdateEnvironmentWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
+func (m *MockElasticBeanstalkAPI) UpdateEnvironmentWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateEnvironmentInput, arg2 ...request.Option) (*elasticbeanstalk.EnvironmentDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2199,7 +2199,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) UpdateTagsForResourceRequest(arg0
 }
 
 // UpdateTagsForResourceWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.UpdateTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateTagsForResourceOutput, error) {
+func (m *MockElasticBeanstalkAPI) UpdateTagsForResourceWithContext(arg0 context.Context, arg1 *elasticbeanstalk.UpdateTagsForResourceInput, arg2 ...request.Option) (*elasticbeanstalk.UpdateTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2249,7 +2249,7 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ValidateConfigurationSettingsRequ
 }
 
 // ValidateConfigurationSettingsWithContext mocks base method
-func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsWithContext(arg0 aws.Context, arg1 *elasticbeanstalk.ValidateConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.ValidateConfigurationSettingsOutput, error) {
+func (m *MockElasticBeanstalkAPI) ValidateConfigurationSettingsWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ValidateConfigurationSettingsInput, arg2 ...request.Option) (*elasticbeanstalk.ValidateConfigurationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package chimemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	chime "github.com/aws/aws-sdk-go/service/chime"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockChimeAPIMockRecorder) BatchSuspendUserRequest(arg0 interface{}) *g
 }
 
 // BatchSuspendUserWithContext mocks base method
-func (m *MockChimeAPI) BatchSuspendUserWithContext(arg0 aws.Context, arg1 *chime.BatchSuspendUserInput, arg2 ...request.Option) (*chime.BatchSuspendUserOutput, error) {
+func (m *MockChimeAPI) BatchSuspendUserWithContext(arg0 context.Context, arg1 *chime.BatchSuspendUserInput, arg2 ...request.Option) (*chime.BatchSuspendUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockChimeAPIMockRecorder) BatchUnsuspendUserRequest(arg0 interface{}) 
 }
 
 // BatchUnsuspendUserWithContext mocks base method
-func (m *MockChimeAPI) BatchUnsuspendUserWithContext(arg0 aws.Context, arg1 *chime.BatchUnsuspendUserInput, arg2 ...request.Option) (*chime.BatchUnsuspendUserOutput, error) {
+func (m *MockChimeAPI) BatchUnsuspendUserWithContext(arg0 context.Context, arg1 *chime.BatchUnsuspendUserInput, arg2 ...request.Option) (*chime.BatchUnsuspendUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockChimeAPIMockRecorder) BatchUpdateUserRequest(arg0 interface{}) *go
 }
 
 // BatchUpdateUserWithContext mocks base method
-func (m *MockChimeAPI) BatchUpdateUserWithContext(arg0 aws.Context, arg1 *chime.BatchUpdateUserInput, arg2 ...request.Option) (*chime.BatchUpdateUserOutput, error) {
+func (m *MockChimeAPI) BatchUpdateUserWithContext(arg0 context.Context, arg1 *chime.BatchUpdateUserInput, arg2 ...request.Option) (*chime.BatchUpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockChimeAPIMockRecorder) CreateAccountRequest(arg0 interface{}) *gomo
 }
 
 // CreateAccountWithContext mocks base method
-func (m *MockChimeAPI) CreateAccountWithContext(arg0 aws.Context, arg1 *chime.CreateAccountInput, arg2 ...request.Option) (*chime.CreateAccountOutput, error) {
+func (m *MockChimeAPI) CreateAccountWithContext(arg0 context.Context, arg1 *chime.CreateAccountInput, arg2 ...request.Option) (*chime.CreateAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockChimeAPIMockRecorder) DeleteAccountRequest(arg0 interface{}) *gomo
 }
 
 // DeleteAccountWithContext mocks base method
-func (m *MockChimeAPI) DeleteAccountWithContext(arg0 aws.Context, arg1 *chime.DeleteAccountInput, arg2 ...request.Option) (*chime.DeleteAccountOutput, error) {
+func (m *MockChimeAPI) DeleteAccountWithContext(arg0 context.Context, arg1 *chime.DeleteAccountInput, arg2 ...request.Option) (*chime.DeleteAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -346,7 +346,7 @@ func (mr *MockChimeAPIMockRecorder) GetAccountSettingsRequest(arg0 interface{}) 
 }
 
 // GetAccountSettingsWithContext mocks base method
-func (m *MockChimeAPI) GetAccountSettingsWithContext(arg0 aws.Context, arg1 *chime.GetAccountSettingsInput, arg2 ...request.Option) (*chime.GetAccountSettingsOutput, error) {
+func (m *MockChimeAPI) GetAccountSettingsWithContext(arg0 context.Context, arg1 *chime.GetAccountSettingsInput, arg2 ...request.Option) (*chime.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockChimeAPIMockRecorder) GetAccountSettingsWithContext(arg0, arg1 int
 }
 
 // GetAccountWithContext mocks base method
-func (m *MockChimeAPI) GetAccountWithContext(arg0 aws.Context, arg1 *chime.GetAccountInput, arg2 ...request.Option) (*chime.GetAccountOutput, error) {
+func (m *MockChimeAPI) GetAccountWithContext(arg0 context.Context, arg1 *chime.GetAccountInput, arg2 ...request.Option) (*chime.GetAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockChimeAPIMockRecorder) GetUserRequest(arg0 interface{}) *gomock.Cal
 }
 
 // GetUserWithContext mocks base method
-func (m *MockChimeAPI) GetUserWithContext(arg0 aws.Context, arg1 *chime.GetUserInput, arg2 ...request.Option) (*chime.GetUserOutput, error) {
+func (m *MockChimeAPI) GetUserWithContext(arg0 context.Context, arg1 *chime.GetUserInput, arg2 ...request.Option) (*chime.GetUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockChimeAPIMockRecorder) InviteUsersRequest(arg0 interface{}) *gomock
 }
 
 // InviteUsersWithContext mocks base method
-func (m *MockChimeAPI) InviteUsersWithContext(arg0 aws.Context, arg1 *chime.InviteUsersInput, arg2 ...request.Option) (*chime.InviteUsersOutput, error) {
+func (m *MockChimeAPI) InviteUsersWithContext(arg0 context.Context, arg1 *chime.InviteUsersInput, arg2 ...request.Option) (*chime.InviteUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockChimeAPIMockRecorder) ListAccountsPages(arg0, arg1 interface{}) *g
 }
 
 // ListAccountsPagesWithContext mocks base method
-func (m *MockChimeAPI) ListAccountsPagesWithContext(arg0 aws.Context, arg1 *chime.ListAccountsInput, arg2 func(*chime.ListAccountsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockChimeAPI) ListAccountsPagesWithContext(arg0 context.Context, arg1 *chime.ListAccountsInput, arg2 func(*chime.ListAccountsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -549,7 +549,7 @@ func (mr *MockChimeAPIMockRecorder) ListAccountsRequest(arg0 interface{}) *gomoc
 }
 
 // ListAccountsWithContext mocks base method
-func (m *MockChimeAPI) ListAccountsWithContext(arg0 aws.Context, arg1 *chime.ListAccountsInput, arg2 ...request.Option) (*chime.ListAccountsOutput, error) {
+func (m *MockChimeAPI) ListAccountsWithContext(arg0 context.Context, arg1 *chime.ListAccountsInput, arg2 ...request.Option) (*chime.ListAccountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -598,7 +598,7 @@ func (mr *MockChimeAPIMockRecorder) ListUsersPages(arg0, arg1 interface{}) *gomo
 }
 
 // ListUsersPagesWithContext mocks base method
-func (m *MockChimeAPI) ListUsersPagesWithContext(arg0 aws.Context, arg1 *chime.ListUsersInput, arg2 func(*chime.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockChimeAPI) ListUsersPagesWithContext(arg0 context.Context, arg1 *chime.ListUsersInput, arg2 func(*chime.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -632,7 +632,7 @@ func (mr *MockChimeAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomock.C
 }
 
 // ListUsersWithContext mocks base method
-func (m *MockChimeAPI) ListUsersWithContext(arg0 aws.Context, arg1 *chime.ListUsersInput, arg2 ...request.Option) (*chime.ListUsersOutput, error) {
+func (m *MockChimeAPI) ListUsersWithContext(arg0 context.Context, arg1 *chime.ListUsersInput, arg2 ...request.Option) (*chime.ListUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockChimeAPIMockRecorder) LogoutUserRequest(arg0 interface{}) *gomock.
 }
 
 // LogoutUserWithContext mocks base method
-func (m *MockChimeAPI) LogoutUserWithContext(arg0 aws.Context, arg1 *chime.LogoutUserInput, arg2 ...request.Option) (*chime.LogoutUserOutput, error) {
+func (m *MockChimeAPI) LogoutUserWithContext(arg0 context.Context, arg1 *chime.LogoutUserInput, arg2 ...request.Option) (*chime.LogoutUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -732,7 +732,7 @@ func (mr *MockChimeAPIMockRecorder) ResetPersonalPINRequest(arg0 interface{}) *g
 }
 
 // ResetPersonalPINWithContext mocks base method
-func (m *MockChimeAPI) ResetPersonalPINWithContext(arg0 aws.Context, arg1 *chime.ResetPersonalPINInput, arg2 ...request.Option) (*chime.ResetPersonalPINOutput, error) {
+func (m *MockChimeAPI) ResetPersonalPINWithContext(arg0 context.Context, arg1 *chime.ResetPersonalPINInput, arg2 ...request.Option) (*chime.ResetPersonalPINOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -812,7 +812,7 @@ func (mr *MockChimeAPIMockRecorder) UpdateAccountSettingsRequest(arg0 interface{
 }
 
 // UpdateAccountSettingsWithContext mocks base method
-func (m *MockChimeAPI) UpdateAccountSettingsWithContext(arg0 aws.Context, arg1 *chime.UpdateAccountSettingsInput, arg2 ...request.Option) (*chime.UpdateAccountSettingsOutput, error) {
+func (m *MockChimeAPI) UpdateAccountSettingsWithContext(arg0 context.Context, arg1 *chime.UpdateAccountSettingsInput, arg2 ...request.Option) (*chime.UpdateAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -832,7 +832,7 @@ func (mr *MockChimeAPIMockRecorder) UpdateAccountSettingsWithContext(arg0, arg1 
 }
 
 // UpdateAccountWithContext mocks base method
-func (m *MockChimeAPI) UpdateAccountWithContext(arg0 aws.Context, arg1 *chime.UpdateAccountInput, arg2 ...request.Option) (*chime.UpdateAccountOutput, error) {
+func (m *MockChimeAPI) UpdateAccountWithContext(arg0 context.Context, arg1 *chime.UpdateAccountInput, arg2 ...request.Option) (*chime.UpdateAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -882,7 +882,7 @@ func (mr *MockChimeAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomock.
 }
 
 // UpdateUserWithContext mocks base method
-func (m *MockChimeAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *chime.UpdateUserInput, arg2 ...request.Option) (*chime.UpdateUserOutput, error) {
+func (m *MockChimeAPI) UpdateUserWithContext(arg0 context.Context, arg1 *chime.UpdateUserInput, arg2 ...request.Option) (*chime.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

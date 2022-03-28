@@ -5,7 +5,7 @@
 package directoryservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	directoryservice "github.com/aws/aws-sdk-go/service/directoryservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) AcceptSharedDirectoryRequest(arg0
 }
 
 // AcceptSharedDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) AcceptSharedDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.AcceptSharedDirectoryInput, arg2 ...request.Option) (*directoryservice.AcceptSharedDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) AcceptSharedDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.AcceptSharedDirectoryInput, arg2 ...request.Option) (*directoryservice.AcceptSharedDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) AddIpRoutesRequest(arg0 interface
 }
 
 // AddIpRoutesWithContext mocks base method
-func (m *MockDirectoryServiceAPI) AddIpRoutesWithContext(arg0 aws.Context, arg1 *directoryservice.AddIpRoutesInput, arg2 ...request.Option) (*directoryservice.AddIpRoutesOutput, error) {
+func (m *MockDirectoryServiceAPI) AddIpRoutesWithContext(arg0 context.Context, arg1 *directoryservice.AddIpRoutesInput, arg2 ...request.Option) (*directoryservice.AddIpRoutesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) AddTagsToResourceRequest(arg0 int
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockDirectoryServiceAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *directoryservice.AddTagsToResourceInput, arg2 ...request.Option) (*directoryservice.AddTagsToResourceOutput, error) {
+func (m *MockDirectoryServiceAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *directoryservice.AddTagsToResourceInput, arg2 ...request.Option) (*directoryservice.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CancelSchemaExtensionRequest(arg0
 }
 
 // CancelSchemaExtensionWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CancelSchemaExtensionWithContext(arg0 aws.Context, arg1 *directoryservice.CancelSchemaExtensionInput, arg2 ...request.Option) (*directoryservice.CancelSchemaExtensionOutput, error) {
+func (m *MockDirectoryServiceAPI) CancelSchemaExtensionWithContext(arg0 context.Context, arg1 *directoryservice.CancelSchemaExtensionInput, arg2 ...request.Option) (*directoryservice.CancelSchemaExtensionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ConnectDirectoryRequest(arg0 inte
 }
 
 // ConnectDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ConnectDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.ConnectDirectoryInput, arg2 ...request.Option) (*directoryservice.ConnectDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) ConnectDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.ConnectDirectoryInput, arg2 ...request.Option) (*directoryservice.ConnectDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateAliasRequest(arg0 interface
 }
 
 // CreateAliasWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateAliasWithContext(arg0 aws.Context, arg1 *directoryservice.CreateAliasInput, arg2 ...request.Option) (*directoryservice.CreateAliasOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateAliasWithContext(arg0 context.Context, arg1 *directoryservice.CreateAliasInput, arg2 ...request.Option) (*directoryservice.CreateAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateComputerRequest(arg0 interf
 }
 
 // CreateComputerWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateComputerWithContext(arg0 aws.Context, arg1 *directoryservice.CreateComputerInput, arg2 ...request.Option) (*directoryservice.CreateComputerOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateComputerWithContext(arg0 context.Context, arg1 *directoryservice.CreateComputerInput, arg2 ...request.Option) (*directoryservice.CreateComputerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateConditionalForwarderRequest
 }
 
 // CreateConditionalForwarderWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateConditionalForwarderWithContext(arg0 aws.Context, arg1 *directoryservice.CreateConditionalForwarderInput, arg2 ...request.Option) (*directoryservice.CreateConditionalForwarderOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateConditionalForwarderWithContext(arg0 context.Context, arg1 *directoryservice.CreateConditionalForwarderInput, arg2 ...request.Option) (*directoryservice.CreateConditionalForwarderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateDirectoryRequest(arg0 inter
 }
 
 // CreateDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.CreateDirectoryInput, arg2 ...request.Option) (*directoryservice.CreateDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.CreateDirectoryInput, arg2 ...request.Option) (*directoryservice.CreateDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateLogSubscriptionRequest(arg0
 }
 
 // CreateLogSubscriptionWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateLogSubscriptionWithContext(arg0 aws.Context, arg1 *directoryservice.CreateLogSubscriptionInput, arg2 ...request.Option) (*directoryservice.CreateLogSubscriptionOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateLogSubscriptionWithContext(arg0 context.Context, arg1 *directoryservice.CreateLogSubscriptionInput, arg2 ...request.Option) (*directoryservice.CreateLogSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateMicrosoftADRequest(arg0 int
 }
 
 // CreateMicrosoftADWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateMicrosoftADWithContext(arg0 aws.Context, arg1 *directoryservice.CreateMicrosoftADInput, arg2 ...request.Option) (*directoryservice.CreateMicrosoftADOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateMicrosoftADWithContext(arg0 context.Context, arg1 *directoryservice.CreateMicrosoftADInput, arg2 ...request.Option) (*directoryservice.CreateMicrosoftADOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateSnapshotRequest(arg0 interf
 }
 
 // CreateSnapshotWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateSnapshotWithContext(arg0 aws.Context, arg1 *directoryservice.CreateSnapshotInput, arg2 ...request.Option) (*directoryservice.CreateSnapshotOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateSnapshotWithContext(arg0 context.Context, arg1 *directoryservice.CreateSnapshotInput, arg2 ...request.Option) (*directoryservice.CreateSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) CreateTrustRequest(arg0 interface
 }
 
 // CreateTrustWithContext mocks base method
-func (m *MockDirectoryServiceAPI) CreateTrustWithContext(arg0 aws.Context, arg1 *directoryservice.CreateTrustInput, arg2 ...request.Option) (*directoryservice.CreateTrustOutput, error) {
+func (m *MockDirectoryServiceAPI) CreateTrustWithContext(arg0 context.Context, arg1 *directoryservice.CreateTrustInput, arg2 ...request.Option) (*directoryservice.CreateTrustOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteConditionalForwarderRequest
 }
 
 // DeleteConditionalForwarderWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DeleteConditionalForwarderWithContext(arg0 aws.Context, arg1 *directoryservice.DeleteConditionalForwarderInput, arg2 ...request.Option) (*directoryservice.DeleteConditionalForwarderOutput, error) {
+func (m *MockDirectoryServiceAPI) DeleteConditionalForwarderWithContext(arg0 context.Context, arg1 *directoryservice.DeleteConditionalForwarderInput, arg2 ...request.Option) (*directoryservice.DeleteConditionalForwarderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteDirectoryRequest(arg0 inter
 }
 
 // DeleteDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DeleteDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.DeleteDirectoryInput, arg2 ...request.Option) (*directoryservice.DeleteDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) DeleteDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.DeleteDirectoryInput, arg2 ...request.Option) (*directoryservice.DeleteDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteLogSubscriptionRequest(arg0
 }
 
 // DeleteLogSubscriptionWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DeleteLogSubscriptionWithContext(arg0 aws.Context, arg1 *directoryservice.DeleteLogSubscriptionInput, arg2 ...request.Option) (*directoryservice.DeleteLogSubscriptionOutput, error) {
+func (m *MockDirectoryServiceAPI) DeleteLogSubscriptionWithContext(arg0 context.Context, arg1 *directoryservice.DeleteLogSubscriptionInput, arg2 ...request.Option) (*directoryservice.DeleteLogSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteSnapshotRequest(arg0 interf
 }
 
 // DeleteSnapshotWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DeleteSnapshotWithContext(arg0 aws.Context, arg1 *directoryservice.DeleteSnapshotInput, arg2 ...request.Option) (*directoryservice.DeleteSnapshotOutput, error) {
+func (m *MockDirectoryServiceAPI) DeleteSnapshotWithContext(arg0 context.Context, arg1 *directoryservice.DeleteSnapshotInput, arg2 ...request.Option) (*directoryservice.DeleteSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteTrustRequest(arg0 interface
 }
 
 // DeleteTrustWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DeleteTrustWithContext(arg0 aws.Context, arg1 *directoryservice.DeleteTrustInput, arg2 ...request.Option) (*directoryservice.DeleteTrustOutput, error) {
+func (m *MockDirectoryServiceAPI) DeleteTrustWithContext(arg0 context.Context, arg1 *directoryservice.DeleteTrustInput, arg2 ...request.Option) (*directoryservice.DeleteTrustOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeregisterEventTopicRequest(arg0 
 }
 
 // DeregisterEventTopicWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DeregisterEventTopicWithContext(arg0 aws.Context, arg1 *directoryservice.DeregisterEventTopicInput, arg2 ...request.Option) (*directoryservice.DeregisterEventTopicOutput, error) {
+func (m *MockDirectoryServiceAPI) DeregisterEventTopicWithContext(arg0 context.Context, arg1 *directoryservice.DeregisterEventTopicInput, arg2 ...request.Option) (*directoryservice.DeregisterEventTopicOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeConditionalForwardersRequ
 }
 
 // DescribeConditionalForwardersWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeConditionalForwardersWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeConditionalForwardersInput, arg2 ...request.Option) (*directoryservice.DescribeConditionalForwardersOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeConditionalForwardersWithContext(arg0 context.Context, arg1 *directoryservice.DescribeConditionalForwardersInput, arg2 ...request.Option) (*directoryservice.DescribeConditionalForwardersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeDirectoriesRequest(arg0 i
 }
 
 // DescribeDirectoriesWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeDirectoriesWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeDirectoriesInput, arg2 ...request.Option) (*directoryservice.DescribeDirectoriesOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeDirectoriesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeDirectoriesInput, arg2 ...request.Option) (*directoryservice.DescribeDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1115,7 +1115,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeDomainControllersPages(ar
 }
 
 // DescribeDomainControllersPagesWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeDomainControllersPagesWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeDomainControllersInput, arg2 func(*directoryservice.DescribeDomainControllersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDirectoryServiceAPI) DescribeDomainControllersPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeDomainControllersInput, arg2 func(*directoryservice.DescribeDomainControllersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1149,7 +1149,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeDomainControllersRequest(
 }
 
 // DescribeDomainControllersWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeDomainControllersWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeDomainControllersInput, arg2 ...request.Option) (*directoryservice.DescribeDomainControllersOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeDomainControllersWithContext(arg0 context.Context, arg1 *directoryservice.DescribeDomainControllersInput, arg2 ...request.Option) (*directoryservice.DescribeDomainControllersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1199,7 +1199,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeEventTopicsRequest(arg0 i
 }
 
 // DescribeEventTopicsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeEventTopicsWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeEventTopicsInput, arg2 ...request.Option) (*directoryservice.DescribeEventTopicsOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeEventTopicsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeEventTopicsInput, arg2 ...request.Option) (*directoryservice.DescribeEventTopicsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1249,7 +1249,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectoriesRequest(
 }
 
 // DescribeSharedDirectoriesWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeSharedDirectoriesInput, arg2 ...request.Option) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeSharedDirectoriesInput, arg2 ...request.Option) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1299,7 +1299,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSnapshotsRequest(arg0 int
 }
 
 // DescribeSnapshotsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeSnapshotsWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeSnapshotsInput, arg2 ...request.Option) (*directoryservice.DescribeSnapshotsOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeSnapshotsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeSnapshotsInput, arg2 ...request.Option) (*directoryservice.DescribeSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1349,7 +1349,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrustsRequest(arg0 interf
 }
 
 // DescribeTrustsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DescribeTrustsWithContext(arg0 aws.Context, arg1 *directoryservice.DescribeTrustsInput, arg2 ...request.Option) (*directoryservice.DescribeTrustsOutput, error) {
+func (m *MockDirectoryServiceAPI) DescribeTrustsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeTrustsInput, arg2 ...request.Option) (*directoryservice.DescribeTrustsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1399,7 +1399,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DisableRadiusRequest(arg0 interfa
 }
 
 // DisableRadiusWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DisableRadiusWithContext(arg0 aws.Context, arg1 *directoryservice.DisableRadiusInput, arg2 ...request.Option) (*directoryservice.DisableRadiusOutput, error) {
+func (m *MockDirectoryServiceAPI) DisableRadiusWithContext(arg0 context.Context, arg1 *directoryservice.DisableRadiusInput, arg2 ...request.Option) (*directoryservice.DisableRadiusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1449,7 +1449,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DisableSsoRequest(arg0 interface{
 }
 
 // DisableSsoWithContext mocks base method
-func (m *MockDirectoryServiceAPI) DisableSsoWithContext(arg0 aws.Context, arg1 *directoryservice.DisableSsoInput, arg2 ...request.Option) (*directoryservice.DisableSsoOutput, error) {
+func (m *MockDirectoryServiceAPI) DisableSsoWithContext(arg0 context.Context, arg1 *directoryservice.DisableSsoInput, arg2 ...request.Option) (*directoryservice.DisableSsoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1499,7 +1499,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) EnableRadiusRequest(arg0 interfac
 }
 
 // EnableRadiusWithContext mocks base method
-func (m *MockDirectoryServiceAPI) EnableRadiusWithContext(arg0 aws.Context, arg1 *directoryservice.EnableRadiusInput, arg2 ...request.Option) (*directoryservice.EnableRadiusOutput, error) {
+func (m *MockDirectoryServiceAPI) EnableRadiusWithContext(arg0 context.Context, arg1 *directoryservice.EnableRadiusInput, arg2 ...request.Option) (*directoryservice.EnableRadiusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1549,7 +1549,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) EnableSsoRequest(arg0 interface{}
 }
 
 // EnableSsoWithContext mocks base method
-func (m *MockDirectoryServiceAPI) EnableSsoWithContext(arg0 aws.Context, arg1 *directoryservice.EnableSsoInput, arg2 ...request.Option) (*directoryservice.EnableSsoOutput, error) {
+func (m *MockDirectoryServiceAPI) EnableSsoWithContext(arg0 context.Context, arg1 *directoryservice.EnableSsoInput, arg2 ...request.Option) (*directoryservice.EnableSsoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1599,7 +1599,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) GetDirectoryLimitsRequest(arg0 in
 }
 
 // GetDirectoryLimitsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) GetDirectoryLimitsWithContext(arg0 aws.Context, arg1 *directoryservice.GetDirectoryLimitsInput, arg2 ...request.Option) (*directoryservice.GetDirectoryLimitsOutput, error) {
+func (m *MockDirectoryServiceAPI) GetDirectoryLimitsWithContext(arg0 context.Context, arg1 *directoryservice.GetDirectoryLimitsInput, arg2 ...request.Option) (*directoryservice.GetDirectoryLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1649,7 +1649,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) GetSnapshotLimitsRequest(arg0 int
 }
 
 // GetSnapshotLimitsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) GetSnapshotLimitsWithContext(arg0 aws.Context, arg1 *directoryservice.GetSnapshotLimitsInput, arg2 ...request.Option) (*directoryservice.GetSnapshotLimitsOutput, error) {
+func (m *MockDirectoryServiceAPI) GetSnapshotLimitsWithContext(arg0 context.Context, arg1 *directoryservice.GetSnapshotLimitsInput, arg2 ...request.Option) (*directoryservice.GetSnapshotLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1699,7 +1699,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListIpRoutesRequest(arg0 interfac
 }
 
 // ListIpRoutesWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ListIpRoutesWithContext(arg0 aws.Context, arg1 *directoryservice.ListIpRoutesInput, arg2 ...request.Option) (*directoryservice.ListIpRoutesOutput, error) {
+func (m *MockDirectoryServiceAPI) ListIpRoutesWithContext(arg0 context.Context, arg1 *directoryservice.ListIpRoutesInput, arg2 ...request.Option) (*directoryservice.ListIpRoutesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1749,7 +1749,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptionsRequest(arg0 
 }
 
 // ListLogSubscriptionsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ListLogSubscriptionsWithContext(arg0 aws.Context, arg1 *directoryservice.ListLogSubscriptionsInput, arg2 ...request.Option) (*directoryservice.ListLogSubscriptionsOutput, error) {
+func (m *MockDirectoryServiceAPI) ListLogSubscriptionsWithContext(arg0 context.Context, arg1 *directoryservice.ListLogSubscriptionsInput, arg2 ...request.Option) (*directoryservice.ListLogSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1799,7 +1799,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListSchemaExtensionsRequest(arg0 
 }
 
 // ListSchemaExtensionsWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ListSchemaExtensionsWithContext(arg0 aws.Context, arg1 *directoryservice.ListSchemaExtensionsInput, arg2 ...request.Option) (*directoryservice.ListSchemaExtensionsOutput, error) {
+func (m *MockDirectoryServiceAPI) ListSchemaExtensionsWithContext(arg0 context.Context, arg1 *directoryservice.ListSchemaExtensionsInput, arg2 ...request.Option) (*directoryservice.ListSchemaExtensionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1849,7 +1849,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListTagsForResourceRequest(arg0 i
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *directoryservice.ListTagsForResourceInput, arg2 ...request.Option) (*directoryservice.ListTagsForResourceOutput, error) {
+func (m *MockDirectoryServiceAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *directoryservice.ListTagsForResourceInput, arg2 ...request.Option) (*directoryservice.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1899,7 +1899,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RegisterEventTopicRequest(arg0 in
 }
 
 // RegisterEventTopicWithContext mocks base method
-func (m *MockDirectoryServiceAPI) RegisterEventTopicWithContext(arg0 aws.Context, arg1 *directoryservice.RegisterEventTopicInput, arg2 ...request.Option) (*directoryservice.RegisterEventTopicOutput, error) {
+func (m *MockDirectoryServiceAPI) RegisterEventTopicWithContext(arg0 context.Context, arg1 *directoryservice.RegisterEventTopicInput, arg2 ...request.Option) (*directoryservice.RegisterEventTopicOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1949,7 +1949,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RejectSharedDirectoryRequest(arg0
 }
 
 // RejectSharedDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) RejectSharedDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.RejectSharedDirectoryInput, arg2 ...request.Option) (*directoryservice.RejectSharedDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) RejectSharedDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.RejectSharedDirectoryInput, arg2 ...request.Option) (*directoryservice.RejectSharedDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1999,7 +1999,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RemoveIpRoutesRequest(arg0 interf
 }
 
 // RemoveIpRoutesWithContext mocks base method
-func (m *MockDirectoryServiceAPI) RemoveIpRoutesWithContext(arg0 aws.Context, arg1 *directoryservice.RemoveIpRoutesInput, arg2 ...request.Option) (*directoryservice.RemoveIpRoutesOutput, error) {
+func (m *MockDirectoryServiceAPI) RemoveIpRoutesWithContext(arg0 context.Context, arg1 *directoryservice.RemoveIpRoutesInput, arg2 ...request.Option) (*directoryservice.RemoveIpRoutesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2049,7 +2049,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RemoveTagsFromResourceRequest(arg
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockDirectoryServiceAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *directoryservice.RemoveTagsFromResourceInput, arg2 ...request.Option) (*directoryservice.RemoveTagsFromResourceOutput, error) {
+func (m *MockDirectoryServiceAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *directoryservice.RemoveTagsFromResourceInput, arg2 ...request.Option) (*directoryservice.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2099,7 +2099,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ResetUserPasswordRequest(arg0 int
 }
 
 // ResetUserPasswordWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ResetUserPasswordWithContext(arg0 aws.Context, arg1 *directoryservice.ResetUserPasswordInput, arg2 ...request.Option) (*directoryservice.ResetUserPasswordOutput, error) {
+func (m *MockDirectoryServiceAPI) ResetUserPasswordWithContext(arg0 context.Context, arg1 *directoryservice.ResetUserPasswordInput, arg2 ...request.Option) (*directoryservice.ResetUserPasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2149,7 +2149,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RestoreFromSnapshotRequest(arg0 i
 }
 
 // RestoreFromSnapshotWithContext mocks base method
-func (m *MockDirectoryServiceAPI) RestoreFromSnapshotWithContext(arg0 aws.Context, arg1 *directoryservice.RestoreFromSnapshotInput, arg2 ...request.Option) (*directoryservice.RestoreFromSnapshotOutput, error) {
+func (m *MockDirectoryServiceAPI) RestoreFromSnapshotWithContext(arg0 context.Context, arg1 *directoryservice.RestoreFromSnapshotInput, arg2 ...request.Option) (*directoryservice.RestoreFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2199,7 +2199,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ShareDirectoryRequest(arg0 interf
 }
 
 // ShareDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) ShareDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.ShareDirectoryInput, arg2 ...request.Option) (*directoryservice.ShareDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) ShareDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.ShareDirectoryInput, arg2 ...request.Option) (*directoryservice.ShareDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2249,7 +2249,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) StartSchemaExtensionRequest(arg0 
 }
 
 // StartSchemaExtensionWithContext mocks base method
-func (m *MockDirectoryServiceAPI) StartSchemaExtensionWithContext(arg0 aws.Context, arg1 *directoryservice.StartSchemaExtensionInput, arg2 ...request.Option) (*directoryservice.StartSchemaExtensionOutput, error) {
+func (m *MockDirectoryServiceAPI) StartSchemaExtensionWithContext(arg0 context.Context, arg1 *directoryservice.StartSchemaExtensionInput, arg2 ...request.Option) (*directoryservice.StartSchemaExtensionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2299,7 +2299,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UnshareDirectoryRequest(arg0 inte
 }
 
 // UnshareDirectoryWithContext mocks base method
-func (m *MockDirectoryServiceAPI) UnshareDirectoryWithContext(arg0 aws.Context, arg1 *directoryservice.UnshareDirectoryInput, arg2 ...request.Option) (*directoryservice.UnshareDirectoryOutput, error) {
+func (m *MockDirectoryServiceAPI) UnshareDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.UnshareDirectoryInput, arg2 ...request.Option) (*directoryservice.UnshareDirectoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2349,7 +2349,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateConditionalForwarderRequest
 }
 
 // UpdateConditionalForwarderWithContext mocks base method
-func (m *MockDirectoryServiceAPI) UpdateConditionalForwarderWithContext(arg0 aws.Context, arg1 *directoryservice.UpdateConditionalForwarderInput, arg2 ...request.Option) (*directoryservice.UpdateConditionalForwarderOutput, error) {
+func (m *MockDirectoryServiceAPI) UpdateConditionalForwarderWithContext(arg0 context.Context, arg1 *directoryservice.UpdateConditionalForwarderInput, arg2 ...request.Option) (*directoryservice.UpdateConditionalForwarderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2399,7 +2399,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateNumberOfDomainControllersRe
 }
 
 // UpdateNumberOfDomainControllersWithContext mocks base method
-func (m *MockDirectoryServiceAPI) UpdateNumberOfDomainControllersWithContext(arg0 aws.Context, arg1 *directoryservice.UpdateNumberOfDomainControllersInput, arg2 ...request.Option) (*directoryservice.UpdateNumberOfDomainControllersOutput, error) {
+func (m *MockDirectoryServiceAPI) UpdateNumberOfDomainControllersWithContext(arg0 context.Context, arg1 *directoryservice.UpdateNumberOfDomainControllersInput, arg2 ...request.Option) (*directoryservice.UpdateNumberOfDomainControllersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2449,7 +2449,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateRadiusRequest(arg0 interfac
 }
 
 // UpdateRadiusWithContext mocks base method
-func (m *MockDirectoryServiceAPI) UpdateRadiusWithContext(arg0 aws.Context, arg1 *directoryservice.UpdateRadiusInput, arg2 ...request.Option) (*directoryservice.UpdateRadiusOutput, error) {
+func (m *MockDirectoryServiceAPI) UpdateRadiusWithContext(arg0 context.Context, arg1 *directoryservice.UpdateRadiusInput, arg2 ...request.Option) (*directoryservice.UpdateRadiusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2499,7 +2499,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateTrustRequest(arg0 interface
 }
 
 // UpdateTrustWithContext mocks base method
-func (m *MockDirectoryServiceAPI) UpdateTrustWithContext(arg0 aws.Context, arg1 *directoryservice.UpdateTrustInput, arg2 ...request.Option) (*directoryservice.UpdateTrustOutput, error) {
+func (m *MockDirectoryServiceAPI) UpdateTrustWithContext(arg0 context.Context, arg1 *directoryservice.UpdateTrustInput, arg2 ...request.Option) (*directoryservice.UpdateTrustOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2549,7 +2549,7 @@ func (mr *MockDirectoryServiceAPIMockRecorder) VerifyTrustRequest(arg0 interface
 }
 
 // VerifyTrustWithContext mocks base method
-func (m *MockDirectoryServiceAPI) VerifyTrustWithContext(arg0 aws.Context, arg1 *directoryservice.VerifyTrustInput, arg2 ...request.Option) (*directoryservice.VerifyTrustOutput, error) {
+func (m *MockDirectoryServiceAPI) VerifyTrustWithContext(arg0 context.Context, arg1 *directoryservice.VerifyTrustInput, arg2 ...request.Option) (*directoryservice.VerifyTrustOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package workmailmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	workmail "github.com/aws/aws-sdk-go/service/workmail"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockWorkMailAPIMockRecorder) AssociateDelegateToResourceRequest(arg0 i
 }
 
 // AssociateDelegateToResourceWithContext mocks base method
-func (m *MockWorkMailAPI) AssociateDelegateToResourceWithContext(arg0 aws.Context, arg1 *workmail.AssociateDelegateToResourceInput, arg2 ...request.Option) (*workmail.AssociateDelegateToResourceOutput, error) {
+func (m *MockWorkMailAPI) AssociateDelegateToResourceWithContext(arg0 context.Context, arg1 *workmail.AssociateDelegateToResourceInput, arg2 ...request.Option) (*workmail.AssociateDelegateToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockWorkMailAPIMockRecorder) AssociateMemberToGroupRequest(arg0 interf
 }
 
 // AssociateMemberToGroupWithContext mocks base method
-func (m *MockWorkMailAPI) AssociateMemberToGroupWithContext(arg0 aws.Context, arg1 *workmail.AssociateMemberToGroupInput, arg2 ...request.Option) (*workmail.AssociateMemberToGroupOutput, error) {
+func (m *MockWorkMailAPI) AssociateMemberToGroupWithContext(arg0 context.Context, arg1 *workmail.AssociateMemberToGroupInput, arg2 ...request.Option) (*workmail.AssociateMemberToGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockWorkMailAPIMockRecorder) CreateAliasRequest(arg0 interface{}) *gom
 }
 
 // CreateAliasWithContext mocks base method
-func (m *MockWorkMailAPI) CreateAliasWithContext(arg0 aws.Context, arg1 *workmail.CreateAliasInput, arg2 ...request.Option) (*workmail.CreateAliasOutput, error) {
+func (m *MockWorkMailAPI) CreateAliasWithContext(arg0 context.Context, arg1 *workmail.CreateAliasInput, arg2 ...request.Option) (*workmail.CreateAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockWorkMailAPIMockRecorder) CreateGroupRequest(arg0 interface{}) *gom
 }
 
 // CreateGroupWithContext mocks base method
-func (m *MockWorkMailAPI) CreateGroupWithContext(arg0 aws.Context, arg1 *workmail.CreateGroupInput, arg2 ...request.Option) (*workmail.CreateGroupOutput, error) {
+func (m *MockWorkMailAPI) CreateGroupWithContext(arg0 context.Context, arg1 *workmail.CreateGroupInput, arg2 ...request.Option) (*workmail.CreateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockWorkMailAPIMockRecorder) CreateResourceRequest(arg0 interface{}) *
 }
 
 // CreateResourceWithContext mocks base method
-func (m *MockWorkMailAPI) CreateResourceWithContext(arg0 aws.Context, arg1 *workmail.CreateResourceInput, arg2 ...request.Option) (*workmail.CreateResourceOutput, error) {
+func (m *MockWorkMailAPI) CreateResourceWithContext(arg0 context.Context, arg1 *workmail.CreateResourceInput, arg2 ...request.Option) (*workmail.CreateResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockWorkMailAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomo
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockWorkMailAPI) CreateUserWithContext(arg0 aws.Context, arg1 *workmail.CreateUserInput, arg2 ...request.Option) (*workmail.CreateUserOutput, error) {
+func (m *MockWorkMailAPI) CreateUserWithContext(arg0 context.Context, arg1 *workmail.CreateUserInput, arg2 ...request.Option) (*workmail.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteAliasRequest(arg0 interface{}) *gom
 }
 
 // DeleteAliasWithContext mocks base method
-func (m *MockWorkMailAPI) DeleteAliasWithContext(arg0 aws.Context, arg1 *workmail.DeleteAliasInput, arg2 ...request.Option) (*workmail.DeleteAliasOutput, error) {
+func (m *MockWorkMailAPI) DeleteAliasWithContext(arg0 context.Context, arg1 *workmail.DeleteAliasInput, arg2 ...request.Option) (*workmail.DeleteAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteGroupRequest(arg0 interface{}) *gom
 }
 
 // DeleteGroupWithContext mocks base method
-func (m *MockWorkMailAPI) DeleteGroupWithContext(arg0 aws.Context, arg1 *workmail.DeleteGroupInput, arg2 ...request.Option) (*workmail.DeleteGroupOutput, error) {
+func (m *MockWorkMailAPI) DeleteGroupWithContext(arg0 context.Context, arg1 *workmail.DeleteGroupInput, arg2 ...request.Option) (*workmail.DeleteGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteMailboxPermissionsRequest(arg0 inte
 }
 
 // DeleteMailboxPermissionsWithContext mocks base method
-func (m *MockWorkMailAPI) DeleteMailboxPermissionsWithContext(arg0 aws.Context, arg1 *workmail.DeleteMailboxPermissionsInput, arg2 ...request.Option) (*workmail.DeleteMailboxPermissionsOutput, error) {
+func (m *MockWorkMailAPI) DeleteMailboxPermissionsWithContext(arg0 context.Context, arg1 *workmail.DeleteMailboxPermissionsInput, arg2 ...request.Option) (*workmail.DeleteMailboxPermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteResourceRequest(arg0 interface{}) *
 }
 
 // DeleteResourceWithContext mocks base method
-func (m *MockWorkMailAPI) DeleteResourceWithContext(arg0 aws.Context, arg1 *workmail.DeleteResourceInput, arg2 ...request.Option) (*workmail.DeleteResourceOutput, error) {
+func (m *MockWorkMailAPI) DeleteResourceWithContext(arg0 context.Context, arg1 *workmail.DeleteResourceInput, arg2 ...request.Option) (*workmail.DeleteResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomo
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockWorkMailAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *workmail.DeleteUserInput, arg2 ...request.Option) (*workmail.DeleteUserOutput, error) {
+func (m *MockWorkMailAPI) DeleteUserWithContext(arg0 context.Context, arg1 *workmail.DeleteUserInput, arg2 ...request.Option) (*workmail.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockWorkMailAPIMockRecorder) DeregisterFromWorkMailRequest(arg0 interf
 }
 
 // DeregisterFromWorkMailWithContext mocks base method
-func (m *MockWorkMailAPI) DeregisterFromWorkMailWithContext(arg0 aws.Context, arg1 *workmail.DeregisterFromWorkMailInput, arg2 ...request.Option) (*workmail.DeregisterFromWorkMailOutput, error) {
+func (m *MockWorkMailAPI) DeregisterFromWorkMailWithContext(arg0 context.Context, arg1 *workmail.DeregisterFromWorkMailInput, arg2 ...request.Option) (*workmail.DeregisterFromWorkMailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeGroupRequest(arg0 interface{}) *g
 }
 
 // DescribeGroupWithContext mocks base method
-func (m *MockWorkMailAPI) DescribeGroupWithContext(arg0 aws.Context, arg1 *workmail.DescribeGroupInput, arg2 ...request.Option) (*workmail.DescribeGroupOutput, error) {
+func (m *MockWorkMailAPI) DescribeGroupWithContext(arg0 context.Context, arg1 *workmail.DescribeGroupInput, arg2 ...request.Option) (*workmail.DescribeGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeOrganizationRequest(arg0 interfac
 }
 
 // DescribeOrganizationWithContext mocks base method
-func (m *MockWorkMailAPI) DescribeOrganizationWithContext(arg0 aws.Context, arg1 *workmail.DescribeOrganizationInput, arg2 ...request.Option) (*workmail.DescribeOrganizationOutput, error) {
+func (m *MockWorkMailAPI) DescribeOrganizationWithContext(arg0 context.Context, arg1 *workmail.DescribeOrganizationInput, arg2 ...request.Option) (*workmail.DescribeOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeResourceRequest(arg0 interface{})
 }
 
 // DescribeResourceWithContext mocks base method
-func (m *MockWorkMailAPI) DescribeResourceWithContext(arg0 aws.Context, arg1 *workmail.DescribeResourceInput, arg2 ...request.Option) (*workmail.DescribeResourceOutput, error) {
+func (m *MockWorkMailAPI) DescribeResourceWithContext(arg0 context.Context, arg1 *workmail.DescribeResourceInput, arg2 ...request.Option) (*workmail.DescribeResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeUserRequest(arg0 interface{}) *go
 }
 
 // DescribeUserWithContext mocks base method
-func (m *MockWorkMailAPI) DescribeUserWithContext(arg0 aws.Context, arg1 *workmail.DescribeUserInput, arg2 ...request.Option) (*workmail.DescribeUserOutput, error) {
+func (m *MockWorkMailAPI) DescribeUserWithContext(arg0 context.Context, arg1 *workmail.DescribeUserInput, arg2 ...request.Option) (*workmail.DescribeUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockWorkMailAPIMockRecorder) DisassociateDelegateFromResourceRequest(a
 }
 
 // DisassociateDelegateFromResourceWithContext mocks base method
-func (m *MockWorkMailAPI) DisassociateDelegateFromResourceWithContext(arg0 aws.Context, arg1 *workmail.DisassociateDelegateFromResourceInput, arg2 ...request.Option) (*workmail.DisassociateDelegateFromResourceOutput, error) {
+func (m *MockWorkMailAPI) DisassociateDelegateFromResourceWithContext(arg0 context.Context, arg1 *workmail.DisassociateDelegateFromResourceInput, arg2 ...request.Option) (*workmail.DisassociateDelegateFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockWorkMailAPIMockRecorder) DisassociateMemberFromGroupRequest(arg0 i
 }
 
 // DisassociateMemberFromGroupWithContext mocks base method
-func (m *MockWorkMailAPI) DisassociateMemberFromGroupWithContext(arg0 aws.Context, arg1 *workmail.DisassociateMemberFromGroupInput, arg2 ...request.Option) (*workmail.DisassociateMemberFromGroupOutput, error) {
+func (m *MockWorkMailAPI) DisassociateMemberFromGroupWithContext(arg0 context.Context, arg1 *workmail.DisassociateMemberFromGroupInput, arg2 ...request.Option) (*workmail.DisassociateMemberFromGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -965,7 +965,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListAliasesPages(arg0, arg1 interface{}) 
 }
 
 // ListAliasesPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListAliasesPagesWithContext(arg0 aws.Context, arg1 *workmail.ListAliasesInput, arg2 func(*workmail.ListAliasesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListAliasesPagesWithContext(arg0 context.Context, arg1 *workmail.ListAliasesInput, arg2 func(*workmail.ListAliasesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -999,7 +999,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListAliasesRequest(arg0 interface{}) *gom
 }
 
 // ListAliasesWithContext mocks base method
-func (m *MockWorkMailAPI) ListAliasesWithContext(arg0 aws.Context, arg1 *workmail.ListAliasesInput, arg2 ...request.Option) (*workmail.ListAliasesOutput, error) {
+func (m *MockWorkMailAPI) ListAliasesWithContext(arg0 context.Context, arg1 *workmail.ListAliasesInput, arg2 ...request.Option) (*workmail.ListAliasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListGroupMembersPages(arg0, arg1 interfac
 }
 
 // ListGroupMembersPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListGroupMembersPagesWithContext(arg0 aws.Context, arg1 *workmail.ListGroupMembersInput, arg2 func(*workmail.ListGroupMembersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListGroupMembersPagesWithContext(arg0 context.Context, arg1 *workmail.ListGroupMembersInput, arg2 func(*workmail.ListGroupMembersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListGroupMembersRequest(arg0 interface{})
 }
 
 // ListGroupMembersWithContext mocks base method
-func (m *MockWorkMailAPI) ListGroupMembersWithContext(arg0 aws.Context, arg1 *workmail.ListGroupMembersInput, arg2 ...request.Option) (*workmail.ListGroupMembersOutput, error) {
+func (m *MockWorkMailAPI) ListGroupMembersWithContext(arg0 context.Context, arg1 *workmail.ListGroupMembersInput, arg2 ...request.Option) (*workmail.ListGroupMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListGroupsPages(arg0, arg1 interface{}) *
 }
 
 // ListGroupsPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListGroupsPagesWithContext(arg0 aws.Context, arg1 *workmail.ListGroupsInput, arg2 func(*workmail.ListGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListGroupsPagesWithContext(arg0 context.Context, arg1 *workmail.ListGroupsInput, arg2 func(*workmail.ListGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListGroupsRequest(arg0 interface{}) *gomo
 }
 
 // ListGroupsWithContext mocks base method
-func (m *MockWorkMailAPI) ListGroupsWithContext(arg0 aws.Context, arg1 *workmail.ListGroupsInput, arg2 ...request.Option) (*workmail.ListGroupsOutput, error) {
+func (m *MockWorkMailAPI) ListGroupsWithContext(arg0 context.Context, arg1 *workmail.ListGroupsInput, arg2 ...request.Option) (*workmail.ListGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListMailboxPermissionsPages(arg0, arg1 in
 }
 
 // ListMailboxPermissionsPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListMailboxPermissionsPagesWithContext(arg0 aws.Context, arg1 *workmail.ListMailboxPermissionsInput, arg2 func(*workmail.ListMailboxPermissionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListMailboxPermissionsPagesWithContext(arg0 context.Context, arg1 *workmail.ListMailboxPermissionsInput, arg2 func(*workmail.ListMailboxPermissionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1248,7 +1248,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListMailboxPermissionsRequest(arg0 interf
 }
 
 // ListMailboxPermissionsWithContext mocks base method
-func (m *MockWorkMailAPI) ListMailboxPermissionsWithContext(arg0 aws.Context, arg1 *workmail.ListMailboxPermissionsInput, arg2 ...request.Option) (*workmail.ListMailboxPermissionsOutput, error) {
+func (m *MockWorkMailAPI) ListMailboxPermissionsWithContext(arg0 context.Context, arg1 *workmail.ListMailboxPermissionsInput, arg2 ...request.Option) (*workmail.ListMailboxPermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1297,7 +1297,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListOrganizationsPages(arg0, arg1 interfa
 }
 
 // ListOrganizationsPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListOrganizationsPagesWithContext(arg0 aws.Context, arg1 *workmail.ListOrganizationsInput, arg2 func(*workmail.ListOrganizationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListOrganizationsPagesWithContext(arg0 context.Context, arg1 *workmail.ListOrganizationsInput, arg2 func(*workmail.ListOrganizationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1331,7 +1331,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListOrganizationsRequest(arg0 interface{}
 }
 
 // ListOrganizationsWithContext mocks base method
-func (m *MockWorkMailAPI) ListOrganizationsWithContext(arg0 aws.Context, arg1 *workmail.ListOrganizationsInput, arg2 ...request.Option) (*workmail.ListOrganizationsOutput, error) {
+func (m *MockWorkMailAPI) ListOrganizationsWithContext(arg0 context.Context, arg1 *workmail.ListOrganizationsInput, arg2 ...request.Option) (*workmail.ListOrganizationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListResourceDelegatesRequest(arg0 interfa
 }
 
 // ListResourceDelegatesWithContext mocks base method
-func (m *MockWorkMailAPI) ListResourceDelegatesWithContext(arg0 aws.Context, arg1 *workmail.ListResourceDelegatesInput, arg2 ...request.Option) (*workmail.ListResourceDelegatesOutput, error) {
+func (m *MockWorkMailAPI) ListResourceDelegatesWithContext(arg0 context.Context, arg1 *workmail.ListResourceDelegatesInput, arg2 ...request.Option) (*workmail.ListResourceDelegatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1430,7 +1430,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListResourcesPages(arg0, arg1 interface{}
 }
 
 // ListResourcesPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListResourcesPagesWithContext(arg0 aws.Context, arg1 *workmail.ListResourcesInput, arg2 func(*workmail.ListResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListResourcesPagesWithContext(arg0 context.Context, arg1 *workmail.ListResourcesInput, arg2 func(*workmail.ListResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1464,7 +1464,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListResourcesRequest(arg0 interface{}) *g
 }
 
 // ListResourcesWithContext mocks base method
-func (m *MockWorkMailAPI) ListResourcesWithContext(arg0 aws.Context, arg1 *workmail.ListResourcesInput, arg2 ...request.Option) (*workmail.ListResourcesOutput, error) {
+func (m *MockWorkMailAPI) ListResourcesWithContext(arg0 context.Context, arg1 *workmail.ListResourcesInput, arg2 ...request.Option) (*workmail.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1513,7 +1513,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListUsersPages(arg0, arg1 interface{}) *g
 }
 
 // ListUsersPagesWithContext mocks base method
-func (m *MockWorkMailAPI) ListUsersPagesWithContext(arg0 aws.Context, arg1 *workmail.ListUsersInput, arg2 func(*workmail.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkMailAPI) ListUsersPagesWithContext(arg0 context.Context, arg1 *workmail.ListUsersInput, arg2 func(*workmail.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1547,7 +1547,7 @@ func (mr *MockWorkMailAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomoc
 }
 
 // ListUsersWithContext mocks base method
-func (m *MockWorkMailAPI) ListUsersWithContext(arg0 aws.Context, arg1 *workmail.ListUsersInput, arg2 ...request.Option) (*workmail.ListUsersOutput, error) {
+func (m *MockWorkMailAPI) ListUsersWithContext(arg0 context.Context, arg1 *workmail.ListUsersInput, arg2 ...request.Option) (*workmail.ListUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1597,7 +1597,7 @@ func (mr *MockWorkMailAPIMockRecorder) PutMailboxPermissionsRequest(arg0 interfa
 }
 
 // PutMailboxPermissionsWithContext mocks base method
-func (m *MockWorkMailAPI) PutMailboxPermissionsWithContext(arg0 aws.Context, arg1 *workmail.PutMailboxPermissionsInput, arg2 ...request.Option) (*workmail.PutMailboxPermissionsOutput, error) {
+func (m *MockWorkMailAPI) PutMailboxPermissionsWithContext(arg0 context.Context, arg1 *workmail.PutMailboxPermissionsInput, arg2 ...request.Option) (*workmail.PutMailboxPermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1647,7 +1647,7 @@ func (mr *MockWorkMailAPIMockRecorder) RegisterToWorkMailRequest(arg0 interface{
 }
 
 // RegisterToWorkMailWithContext mocks base method
-func (m *MockWorkMailAPI) RegisterToWorkMailWithContext(arg0 aws.Context, arg1 *workmail.RegisterToWorkMailInput, arg2 ...request.Option) (*workmail.RegisterToWorkMailOutput, error) {
+func (m *MockWorkMailAPI) RegisterToWorkMailWithContext(arg0 context.Context, arg1 *workmail.RegisterToWorkMailInput, arg2 ...request.Option) (*workmail.RegisterToWorkMailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockWorkMailAPIMockRecorder) ResetPasswordRequest(arg0 interface{}) *g
 }
 
 // ResetPasswordWithContext mocks base method
-func (m *MockWorkMailAPI) ResetPasswordWithContext(arg0 aws.Context, arg1 *workmail.ResetPasswordInput, arg2 ...request.Option) (*workmail.ResetPasswordOutput, error) {
+func (m *MockWorkMailAPI) ResetPasswordWithContext(arg0 context.Context, arg1 *workmail.ResetPasswordInput, arg2 ...request.Option) (*workmail.ResetPasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1747,7 +1747,7 @@ func (mr *MockWorkMailAPIMockRecorder) UpdatePrimaryEmailAddressRequest(arg0 int
 }
 
 // UpdatePrimaryEmailAddressWithContext mocks base method
-func (m *MockWorkMailAPI) UpdatePrimaryEmailAddressWithContext(arg0 aws.Context, arg1 *workmail.UpdatePrimaryEmailAddressInput, arg2 ...request.Option) (*workmail.UpdatePrimaryEmailAddressOutput, error) {
+func (m *MockWorkMailAPI) UpdatePrimaryEmailAddressWithContext(arg0 context.Context, arg1 *workmail.UpdatePrimaryEmailAddressInput, arg2 ...request.Option) (*workmail.UpdatePrimaryEmailAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1797,7 +1797,7 @@ func (mr *MockWorkMailAPIMockRecorder) UpdateResourceRequest(arg0 interface{}) *
 }
 
 // UpdateResourceWithContext mocks base method
-func (m *MockWorkMailAPI) UpdateResourceWithContext(arg0 aws.Context, arg1 *workmail.UpdateResourceInput, arg2 ...request.Option) (*workmail.UpdateResourceOutput, error) {
+func (m *MockWorkMailAPI) UpdateResourceWithContext(arg0 context.Context, arg1 *workmail.UpdateResourceInput, arg2 ...request.Option) (*workmail.UpdateResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

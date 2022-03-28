@@ -5,7 +5,7 @@
 package codepipelinemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	codepipeline "github.com/aws/aws-sdk-go/service/codepipeline"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCodePipelineAPIMockRecorder) AcknowledgeJobRequest(arg0 interface{
 }
 
 // AcknowledgeJobWithContext mocks base method
-func (m *MockCodePipelineAPI) AcknowledgeJobWithContext(arg0 aws.Context, arg1 *codepipeline.AcknowledgeJobInput, arg2 ...request.Option) (*codepipeline.AcknowledgeJobOutput, error) {
+func (m *MockCodePipelineAPI) AcknowledgeJobWithContext(arg0 context.Context, arg1 *codepipeline.AcknowledgeJobInput, arg2 ...request.Option) (*codepipeline.AcknowledgeJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCodePipelineAPIMockRecorder) AcknowledgeThirdPartyJobRequest(arg0 
 }
 
 // AcknowledgeThirdPartyJobWithContext mocks base method
-func (m *MockCodePipelineAPI) AcknowledgeThirdPartyJobWithContext(arg0 aws.Context, arg1 *codepipeline.AcknowledgeThirdPartyJobInput, arg2 ...request.Option) (*codepipeline.AcknowledgeThirdPartyJobOutput, error) {
+func (m *MockCodePipelineAPI) AcknowledgeThirdPartyJobWithContext(arg0 context.Context, arg1 *codepipeline.AcknowledgeThirdPartyJobInput, arg2 ...request.Option) (*codepipeline.AcknowledgeThirdPartyJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCodePipelineAPIMockRecorder) CreateCustomActionTypeRequest(arg0 in
 }
 
 // CreateCustomActionTypeWithContext mocks base method
-func (m *MockCodePipelineAPI) CreateCustomActionTypeWithContext(arg0 aws.Context, arg1 *codepipeline.CreateCustomActionTypeInput, arg2 ...request.Option) (*codepipeline.CreateCustomActionTypeOutput, error) {
+func (m *MockCodePipelineAPI) CreateCustomActionTypeWithContext(arg0 context.Context, arg1 *codepipeline.CreateCustomActionTypeInput, arg2 ...request.Option) (*codepipeline.CreateCustomActionTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCodePipelineAPIMockRecorder) CreatePipelineRequest(arg0 interface{
 }
 
 // CreatePipelineWithContext mocks base method
-func (m *MockCodePipelineAPI) CreatePipelineWithContext(arg0 aws.Context, arg1 *codepipeline.CreatePipelineInput, arg2 ...request.Option) (*codepipeline.CreatePipelineOutput, error) {
+func (m *MockCodePipelineAPI) CreatePipelineWithContext(arg0 context.Context, arg1 *codepipeline.CreatePipelineInput, arg2 ...request.Option) (*codepipeline.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCodePipelineAPIMockRecorder) DeleteCustomActionTypeRequest(arg0 in
 }
 
 // DeleteCustomActionTypeWithContext mocks base method
-func (m *MockCodePipelineAPI) DeleteCustomActionTypeWithContext(arg0 aws.Context, arg1 *codepipeline.DeleteCustomActionTypeInput, arg2 ...request.Option) (*codepipeline.DeleteCustomActionTypeOutput, error) {
+func (m *MockCodePipelineAPI) DeleteCustomActionTypeWithContext(arg0 context.Context, arg1 *codepipeline.DeleteCustomActionTypeInput, arg2 ...request.Option) (*codepipeline.DeleteCustomActionTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCodePipelineAPIMockRecorder) DeletePipelineRequest(arg0 interface{
 }
 
 // DeletePipelineWithContext mocks base method
-func (m *MockCodePipelineAPI) DeletePipelineWithContext(arg0 aws.Context, arg1 *codepipeline.DeletePipelineInput, arg2 ...request.Option) (*codepipeline.DeletePipelineOutput, error) {
+func (m *MockCodePipelineAPI) DeletePipelineWithContext(arg0 context.Context, arg1 *codepipeline.DeletePipelineInput, arg2 ...request.Option) (*codepipeline.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCodePipelineAPIMockRecorder) DeleteWebhookRequest(arg0 interface{}
 }
 
 // DeleteWebhookWithContext mocks base method
-func (m *MockCodePipelineAPI) DeleteWebhookWithContext(arg0 aws.Context, arg1 *codepipeline.DeleteWebhookInput, arg2 ...request.Option) (*codepipeline.DeleteWebhookOutput, error) {
+func (m *MockCodePipelineAPI) DeleteWebhookWithContext(arg0 context.Context, arg1 *codepipeline.DeleteWebhookInput, arg2 ...request.Option) (*codepipeline.DeleteWebhookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCodePipelineAPIMockRecorder) DeregisterWebhookWithThirdPartyReques
 }
 
 // DeregisterWebhookWithThirdPartyWithContext mocks base method
-func (m *MockCodePipelineAPI) DeregisterWebhookWithThirdPartyWithContext(arg0 aws.Context, arg1 *codepipeline.DeregisterWebhookWithThirdPartyInput, arg2 ...request.Option) (*codepipeline.DeregisterWebhookWithThirdPartyOutput, error) {
+func (m *MockCodePipelineAPI) DeregisterWebhookWithThirdPartyWithContext(arg0 context.Context, arg1 *codepipeline.DeregisterWebhookWithThirdPartyInput, arg2 ...request.Option) (*codepipeline.DeregisterWebhookWithThirdPartyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCodePipelineAPIMockRecorder) DisableStageTransitionRequest(arg0 in
 }
 
 // DisableStageTransitionWithContext mocks base method
-func (m *MockCodePipelineAPI) DisableStageTransitionWithContext(arg0 aws.Context, arg1 *codepipeline.DisableStageTransitionInput, arg2 ...request.Option) (*codepipeline.DisableStageTransitionOutput, error) {
+func (m *MockCodePipelineAPI) DisableStageTransitionWithContext(arg0 context.Context, arg1 *codepipeline.DisableStageTransitionInput, arg2 ...request.Option) (*codepipeline.DisableStageTransitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCodePipelineAPIMockRecorder) EnableStageTransitionRequest(arg0 int
 }
 
 // EnableStageTransitionWithContext mocks base method
-func (m *MockCodePipelineAPI) EnableStageTransitionWithContext(arg0 aws.Context, arg1 *codepipeline.EnableStageTransitionInput, arg2 ...request.Option) (*codepipeline.EnableStageTransitionOutput, error) {
+func (m *MockCodePipelineAPI) EnableStageTransitionWithContext(arg0 context.Context, arg1 *codepipeline.EnableStageTransitionInput, arg2 ...request.Option) (*codepipeline.EnableStageTransitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCodePipelineAPIMockRecorder) GetJobDetailsRequest(arg0 interface{}
 }
 
 // GetJobDetailsWithContext mocks base method
-func (m *MockCodePipelineAPI) GetJobDetailsWithContext(arg0 aws.Context, arg1 *codepipeline.GetJobDetailsInput, arg2 ...request.Option) (*codepipeline.GetJobDetailsOutput, error) {
+func (m *MockCodePipelineAPI) GetJobDetailsWithContext(arg0 context.Context, arg1 *codepipeline.GetJobDetailsInput, arg2 ...request.Option) (*codepipeline.GetJobDetailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockCodePipelineAPIMockRecorder) GetPipelineExecutionRequest(arg0 inte
 }
 
 // GetPipelineExecutionWithContext mocks base method
-func (m *MockCodePipelineAPI) GetPipelineExecutionWithContext(arg0 aws.Context, arg1 *codepipeline.GetPipelineExecutionInput, arg2 ...request.Option) (*codepipeline.GetPipelineExecutionOutput, error) {
+func (m *MockCodePipelineAPI) GetPipelineExecutionWithContext(arg0 context.Context, arg1 *codepipeline.GetPipelineExecutionInput, arg2 ...request.Option) (*codepipeline.GetPipelineExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -696,7 +696,7 @@ func (mr *MockCodePipelineAPIMockRecorder) GetPipelineStateRequest(arg0 interfac
 }
 
 // GetPipelineStateWithContext mocks base method
-func (m *MockCodePipelineAPI) GetPipelineStateWithContext(arg0 aws.Context, arg1 *codepipeline.GetPipelineStateInput, arg2 ...request.Option) (*codepipeline.GetPipelineStateOutput, error) {
+func (m *MockCodePipelineAPI) GetPipelineStateWithContext(arg0 context.Context, arg1 *codepipeline.GetPipelineStateInput, arg2 ...request.Option) (*codepipeline.GetPipelineStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCodePipelineAPIMockRecorder) GetPipelineStateWithContext(arg0, arg
 }
 
 // GetPipelineWithContext mocks base method
-func (m *MockCodePipelineAPI) GetPipelineWithContext(arg0 aws.Context, arg1 *codepipeline.GetPipelineInput, arg2 ...request.Option) (*codepipeline.GetPipelineOutput, error) {
+func (m *MockCodePipelineAPI) GetPipelineWithContext(arg0 context.Context, arg1 *codepipeline.GetPipelineInput, arg2 ...request.Option) (*codepipeline.GetPipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCodePipelineAPIMockRecorder) GetThirdPartyJobDetailsRequest(arg0 i
 }
 
 // GetThirdPartyJobDetailsWithContext mocks base method
-func (m *MockCodePipelineAPI) GetThirdPartyJobDetailsWithContext(arg0 aws.Context, arg1 *codepipeline.GetThirdPartyJobDetailsInput, arg2 ...request.Option) (*codepipeline.GetThirdPartyJobDetailsOutput, error) {
+func (m *MockCodePipelineAPI) GetThirdPartyJobDetailsWithContext(arg0 context.Context, arg1 *codepipeline.GetThirdPartyJobDetailsInput, arg2 ...request.Option) (*codepipeline.GetThirdPartyJobDetailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCodePipelineAPIMockRecorder) ListActionTypesRequest(arg0 interface
 }
 
 // ListActionTypesWithContext mocks base method
-func (m *MockCodePipelineAPI) ListActionTypesWithContext(arg0 aws.Context, arg1 *codepipeline.ListActionTypesInput, arg2 ...request.Option) (*codepipeline.ListActionTypesOutput, error) {
+func (m *MockCodePipelineAPI) ListActionTypesWithContext(arg0 context.Context, arg1 *codepipeline.ListActionTypesInput, arg2 ...request.Option) (*codepipeline.ListActionTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCodePipelineAPIMockRecorder) ListPipelineExecutionsRequest(arg0 in
 }
 
 // ListPipelineExecutionsWithContext mocks base method
-func (m *MockCodePipelineAPI) ListPipelineExecutionsWithContext(arg0 aws.Context, arg1 *codepipeline.ListPipelineExecutionsInput, arg2 ...request.Option) (*codepipeline.ListPipelineExecutionsOutput, error) {
+func (m *MockCodePipelineAPI) ListPipelineExecutionsWithContext(arg0 context.Context, arg1 *codepipeline.ListPipelineExecutionsInput, arg2 ...request.Option) (*codepipeline.ListPipelineExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCodePipelineAPIMockRecorder) ListPipelinesRequest(arg0 interface{}
 }
 
 // ListPipelinesWithContext mocks base method
-func (m *MockCodePipelineAPI) ListPipelinesWithContext(arg0 aws.Context, arg1 *codepipeline.ListPipelinesInput, arg2 ...request.Option) (*codepipeline.ListPipelinesOutput, error) {
+func (m *MockCodePipelineAPI) ListPipelinesWithContext(arg0 context.Context, arg1 *codepipeline.ListPipelinesInput, arg2 ...request.Option) (*codepipeline.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockCodePipelineAPIMockRecorder) ListWebhooksRequest(arg0 interface{})
 }
 
 // ListWebhooksWithContext mocks base method
-func (m *MockCodePipelineAPI) ListWebhooksWithContext(arg0 aws.Context, arg1 *codepipeline.ListWebhooksInput, arg2 ...request.Option) (*codepipeline.ListWebhooksOutput, error) {
+func (m *MockCodePipelineAPI) ListWebhooksWithContext(arg0 context.Context, arg1 *codepipeline.ListWebhooksInput, arg2 ...request.Option) (*codepipeline.ListWebhooksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PollForJobsRequest(arg0 interface{}) 
 }
 
 // PollForJobsWithContext mocks base method
-func (m *MockCodePipelineAPI) PollForJobsWithContext(arg0 aws.Context, arg1 *codepipeline.PollForJobsInput, arg2 ...request.Option) (*codepipeline.PollForJobsOutput, error) {
+func (m *MockCodePipelineAPI) PollForJobsWithContext(arg0 context.Context, arg1 *codepipeline.PollForJobsInput, arg2 ...request.Option) (*codepipeline.PollForJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PollForThirdPartyJobsRequest(arg0 int
 }
 
 // PollForThirdPartyJobsWithContext mocks base method
-func (m *MockCodePipelineAPI) PollForThirdPartyJobsWithContext(arg0 aws.Context, arg1 *codepipeline.PollForThirdPartyJobsInput, arg2 ...request.Option) (*codepipeline.PollForThirdPartyJobsOutput, error) {
+func (m *MockCodePipelineAPI) PollForThirdPartyJobsWithContext(arg0 context.Context, arg1 *codepipeline.PollForThirdPartyJobsInput, arg2 ...request.Option) (*codepipeline.PollForThirdPartyJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutActionRevisionRequest(arg0 interfa
 }
 
 // PutActionRevisionWithContext mocks base method
-func (m *MockCodePipelineAPI) PutActionRevisionWithContext(arg0 aws.Context, arg1 *codepipeline.PutActionRevisionInput, arg2 ...request.Option) (*codepipeline.PutActionRevisionOutput, error) {
+func (m *MockCodePipelineAPI) PutActionRevisionWithContext(arg0 context.Context, arg1 *codepipeline.PutActionRevisionInput, arg2 ...request.Option) (*codepipeline.PutActionRevisionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutApprovalResultRequest(arg0 interfa
 }
 
 // PutApprovalResultWithContext mocks base method
-func (m *MockCodePipelineAPI) PutApprovalResultWithContext(arg0 aws.Context, arg1 *codepipeline.PutApprovalResultInput, arg2 ...request.Option) (*codepipeline.PutApprovalResultOutput, error) {
+func (m *MockCodePipelineAPI) PutApprovalResultWithContext(arg0 context.Context, arg1 *codepipeline.PutApprovalResultInput, arg2 ...request.Option) (*codepipeline.PutApprovalResultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutJobFailureResultRequest(arg0 inter
 }
 
 // PutJobFailureResultWithContext mocks base method
-func (m *MockCodePipelineAPI) PutJobFailureResultWithContext(arg0 aws.Context, arg1 *codepipeline.PutJobFailureResultInput, arg2 ...request.Option) (*codepipeline.PutJobFailureResultOutput, error) {
+func (m *MockCodePipelineAPI) PutJobFailureResultWithContext(arg0 context.Context, arg1 *codepipeline.PutJobFailureResultInput, arg2 ...request.Option) (*codepipeline.PutJobFailureResultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutJobSuccessResultRequest(arg0 inter
 }
 
 // PutJobSuccessResultWithContext mocks base method
-func (m *MockCodePipelineAPI) PutJobSuccessResultWithContext(arg0 aws.Context, arg1 *codepipeline.PutJobSuccessResultInput, arg2 ...request.Option) (*codepipeline.PutJobSuccessResultOutput, error) {
+func (m *MockCodePipelineAPI) PutJobSuccessResultWithContext(arg0 context.Context, arg1 *codepipeline.PutJobSuccessResultInput, arg2 ...request.Option) (*codepipeline.PutJobSuccessResultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutThirdPartyJobFailureResultRequest(
 }
 
 // PutThirdPartyJobFailureResultWithContext mocks base method
-func (m *MockCodePipelineAPI) PutThirdPartyJobFailureResultWithContext(arg0 aws.Context, arg1 *codepipeline.PutThirdPartyJobFailureResultInput, arg2 ...request.Option) (*codepipeline.PutThirdPartyJobFailureResultOutput, error) {
+func (m *MockCodePipelineAPI) PutThirdPartyJobFailureResultWithContext(arg0 context.Context, arg1 *codepipeline.PutThirdPartyJobFailureResultInput, arg2 ...request.Option) (*codepipeline.PutThirdPartyJobFailureResultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutThirdPartyJobSuccessResultRequest(
 }
 
 // PutThirdPartyJobSuccessResultWithContext mocks base method
-func (m *MockCodePipelineAPI) PutThirdPartyJobSuccessResultWithContext(arg0 aws.Context, arg1 *codepipeline.PutThirdPartyJobSuccessResultInput, arg2 ...request.Option) (*codepipeline.PutThirdPartyJobSuccessResultOutput, error) {
+func (m *MockCodePipelineAPI) PutThirdPartyJobSuccessResultWithContext(arg0 context.Context, arg1 *codepipeline.PutThirdPartyJobSuccessResultInput, arg2 ...request.Option) (*codepipeline.PutThirdPartyJobSuccessResultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockCodePipelineAPIMockRecorder) PutWebhookRequest(arg0 interface{}) *
 }
 
 // PutWebhookWithContext mocks base method
-func (m *MockCodePipelineAPI) PutWebhookWithContext(arg0 aws.Context, arg1 *codepipeline.PutWebhookInput, arg2 ...request.Option) (*codepipeline.PutWebhookOutput, error) {
+func (m *MockCodePipelineAPI) PutWebhookWithContext(arg0 context.Context, arg1 *codepipeline.PutWebhookInput, arg2 ...request.Option) (*codepipeline.PutWebhookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockCodePipelineAPIMockRecorder) RegisterWebhookWithThirdPartyRequest(
 }
 
 // RegisterWebhookWithThirdPartyWithContext mocks base method
-func (m *MockCodePipelineAPI) RegisterWebhookWithThirdPartyWithContext(arg0 aws.Context, arg1 *codepipeline.RegisterWebhookWithThirdPartyInput, arg2 ...request.Option) (*codepipeline.RegisterWebhookWithThirdPartyOutput, error) {
+func (m *MockCodePipelineAPI) RegisterWebhookWithThirdPartyWithContext(arg0 context.Context, arg1 *codepipeline.RegisterWebhookWithThirdPartyInput, arg2 ...request.Option) (*codepipeline.RegisterWebhookWithThirdPartyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockCodePipelineAPIMockRecorder) RetryStageExecutionRequest(arg0 inter
 }
 
 // RetryStageExecutionWithContext mocks base method
-func (m *MockCodePipelineAPI) RetryStageExecutionWithContext(arg0 aws.Context, arg1 *codepipeline.RetryStageExecutionInput, arg2 ...request.Option) (*codepipeline.RetryStageExecutionOutput, error) {
+func (m *MockCodePipelineAPI) RetryStageExecutionWithContext(arg0 context.Context, arg1 *codepipeline.RetryStageExecutionInput, arg2 ...request.Option) (*codepipeline.RetryStageExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockCodePipelineAPIMockRecorder) StartPipelineExecutionRequest(arg0 in
 }
 
 // StartPipelineExecutionWithContext mocks base method
-func (m *MockCodePipelineAPI) StartPipelineExecutionWithContext(arg0 aws.Context, arg1 *codepipeline.StartPipelineExecutionInput, arg2 ...request.Option) (*codepipeline.StartPipelineExecutionOutput, error) {
+func (m *MockCodePipelineAPI) StartPipelineExecutionWithContext(arg0 context.Context, arg1 *codepipeline.StartPipelineExecutionInput, arg2 ...request.Option) (*codepipeline.StartPipelineExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockCodePipelineAPIMockRecorder) UpdatePipelineRequest(arg0 interface{
 }
 
 // UpdatePipelineWithContext mocks base method
-func (m *MockCodePipelineAPI) UpdatePipelineWithContext(arg0 aws.Context, arg1 *codepipeline.UpdatePipelineInput, arg2 ...request.Option) (*codepipeline.UpdatePipelineOutput, error) {
+func (m *MockCodePipelineAPI) UpdatePipelineWithContext(arg0 context.Context, arg1 *codepipeline.UpdatePipelineInput, arg2 ...request.Option) (*codepipeline.UpdatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

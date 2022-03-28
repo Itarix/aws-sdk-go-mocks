@@ -5,7 +5,7 @@
 package workdocsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	workdocs "github.com/aws/aws-sdk-go/service/workdocs"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockWorkDocsAPIMockRecorder) AbortDocumentVersionUploadRequest(arg0 in
 }
 
 // AbortDocumentVersionUploadWithContext mocks base method
-func (m *MockWorkDocsAPI) AbortDocumentVersionUploadWithContext(arg0 aws.Context, arg1 *workdocs.AbortDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.AbortDocumentVersionUploadOutput, error) {
+func (m *MockWorkDocsAPI) AbortDocumentVersionUploadWithContext(arg0 context.Context, arg1 *workdocs.AbortDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.AbortDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockWorkDocsAPIMockRecorder) ActivateUserRequest(arg0 interface{}) *go
 }
 
 // ActivateUserWithContext mocks base method
-func (m *MockWorkDocsAPI) ActivateUserWithContext(arg0 aws.Context, arg1 *workdocs.ActivateUserInput, arg2 ...request.Option) (*workdocs.ActivateUserOutput, error) {
+func (m *MockWorkDocsAPI) ActivateUserWithContext(arg0 context.Context, arg1 *workdocs.ActivateUserInput, arg2 ...request.Option) (*workdocs.ActivateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockWorkDocsAPIMockRecorder) AddResourcePermissionsRequest(arg0 interf
 }
 
 // AddResourcePermissionsWithContext mocks base method
-func (m *MockWorkDocsAPI) AddResourcePermissionsWithContext(arg0 aws.Context, arg1 *workdocs.AddResourcePermissionsInput, arg2 ...request.Option) (*workdocs.AddResourcePermissionsOutput, error) {
+func (m *MockWorkDocsAPI) AddResourcePermissionsWithContext(arg0 context.Context, arg1 *workdocs.AddResourcePermissionsInput, arg2 ...request.Option) (*workdocs.AddResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockWorkDocsAPIMockRecorder) CreateCommentRequest(arg0 interface{}) *g
 }
 
 // CreateCommentWithContext mocks base method
-func (m *MockWorkDocsAPI) CreateCommentWithContext(arg0 aws.Context, arg1 *workdocs.CreateCommentInput, arg2 ...request.Option) (*workdocs.CreateCommentOutput, error) {
+func (m *MockWorkDocsAPI) CreateCommentWithContext(arg0 context.Context, arg1 *workdocs.CreateCommentInput, arg2 ...request.Option) (*workdocs.CreateCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockWorkDocsAPIMockRecorder) CreateCustomMetadataRequest(arg0 interfac
 }
 
 // CreateCustomMetadataWithContext mocks base method
-func (m *MockWorkDocsAPI) CreateCustomMetadataWithContext(arg0 aws.Context, arg1 *workdocs.CreateCustomMetadataInput, arg2 ...request.Option) (*workdocs.CreateCustomMetadataOutput, error) {
+func (m *MockWorkDocsAPI) CreateCustomMetadataWithContext(arg0 context.Context, arg1 *workdocs.CreateCustomMetadataInput, arg2 ...request.Option) (*workdocs.CreateCustomMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockWorkDocsAPIMockRecorder) CreateFolderRequest(arg0 interface{}) *go
 }
 
 // CreateFolderWithContext mocks base method
-func (m *MockWorkDocsAPI) CreateFolderWithContext(arg0 aws.Context, arg1 *workdocs.CreateFolderInput, arg2 ...request.Option) (*workdocs.CreateFolderOutput, error) {
+func (m *MockWorkDocsAPI) CreateFolderWithContext(arg0 context.Context, arg1 *workdocs.CreateFolderInput, arg2 ...request.Option) (*workdocs.CreateFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockWorkDocsAPIMockRecorder) CreateLabelsRequest(arg0 interface{}) *go
 }
 
 // CreateLabelsWithContext mocks base method
-func (m *MockWorkDocsAPI) CreateLabelsWithContext(arg0 aws.Context, arg1 *workdocs.CreateLabelsInput, arg2 ...request.Option) (*workdocs.CreateLabelsOutput, error) {
+func (m *MockWorkDocsAPI) CreateLabelsWithContext(arg0 context.Context, arg1 *workdocs.CreateLabelsInput, arg2 ...request.Option) (*workdocs.CreateLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockWorkDocsAPIMockRecorder) CreateNotificationSubscriptionRequest(arg
 }
 
 // CreateNotificationSubscriptionWithContext mocks base method
-func (m *MockWorkDocsAPI) CreateNotificationSubscriptionWithContext(arg0 aws.Context, arg1 *workdocs.CreateNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.CreateNotificationSubscriptionOutput, error) {
+func (m *MockWorkDocsAPI) CreateNotificationSubscriptionWithContext(arg0 context.Context, arg1 *workdocs.CreateNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.CreateNotificationSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockWorkDocsAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomo
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockWorkDocsAPI) CreateUserWithContext(arg0 aws.Context, arg1 *workdocs.CreateUserInput, arg2 ...request.Option) (*workdocs.CreateUserOutput, error) {
+func (m *MockWorkDocsAPI) CreateUserWithContext(arg0 context.Context, arg1 *workdocs.CreateUserInput, arg2 ...request.Option) (*workdocs.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeactivateUserRequest(arg0 interface{}) *
 }
 
 // DeactivateUserWithContext mocks base method
-func (m *MockWorkDocsAPI) DeactivateUserWithContext(arg0 aws.Context, arg1 *workdocs.DeactivateUserInput, arg2 ...request.Option) (*workdocs.DeactivateUserOutput, error) {
+func (m *MockWorkDocsAPI) DeactivateUserWithContext(arg0 context.Context, arg1 *workdocs.DeactivateUserInput, arg2 ...request.Option) (*workdocs.DeactivateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteCommentRequest(arg0 interface{}) *g
 }
 
 // DeleteCommentWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteCommentWithContext(arg0 aws.Context, arg1 *workdocs.DeleteCommentInput, arg2 ...request.Option) (*workdocs.DeleteCommentOutput, error) {
+func (m *MockWorkDocsAPI) DeleteCommentWithContext(arg0 context.Context, arg1 *workdocs.DeleteCommentInput, arg2 ...request.Option) (*workdocs.DeleteCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteCustomMetadataRequest(arg0 interfac
 }
 
 // DeleteCustomMetadataWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteCustomMetadataWithContext(arg0 aws.Context, arg1 *workdocs.DeleteCustomMetadataInput, arg2 ...request.Option) (*workdocs.DeleteCustomMetadataOutput, error) {
+func (m *MockWorkDocsAPI) DeleteCustomMetadataWithContext(arg0 context.Context, arg1 *workdocs.DeleteCustomMetadataInput, arg2 ...request.Option) (*workdocs.DeleteCustomMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentRequest(arg0 interface{}) *
 }
 
 // DeleteDocumentWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteDocumentWithContext(arg0 aws.Context, arg1 *workdocs.DeleteDocumentInput, arg2 ...request.Option) (*workdocs.DeleteDocumentOutput, error) {
+func (m *MockWorkDocsAPI) DeleteDocumentWithContext(arg0 context.Context, arg1 *workdocs.DeleteDocumentInput, arg2 ...request.Option) (*workdocs.DeleteDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderContentsRequest(arg0 interfac
 }
 
 // DeleteFolderContentsWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteFolderContentsWithContext(arg0 aws.Context, arg1 *workdocs.DeleteFolderContentsInput, arg2 ...request.Option) (*workdocs.DeleteFolderContentsOutput, error) {
+func (m *MockWorkDocsAPI) DeleteFolderContentsWithContext(arg0 context.Context, arg1 *workdocs.DeleteFolderContentsInput, arg2 ...request.Option) (*workdocs.DeleteFolderContentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteFolderRequest(arg0 interface{}) *go
 }
 
 // DeleteFolderWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteFolderWithContext(arg0 aws.Context, arg1 *workdocs.DeleteFolderInput, arg2 ...request.Option) (*workdocs.DeleteFolderOutput, error) {
+func (m *MockWorkDocsAPI) DeleteFolderWithContext(arg0 context.Context, arg1 *workdocs.DeleteFolderInput, arg2 ...request.Option) (*workdocs.DeleteFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteLabelsRequest(arg0 interface{}) *go
 }
 
 // DeleteLabelsWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteLabelsWithContext(arg0 aws.Context, arg1 *workdocs.DeleteLabelsInput, arg2 ...request.Option) (*workdocs.DeleteLabelsOutput, error) {
+func (m *MockWorkDocsAPI) DeleteLabelsWithContext(arg0 context.Context, arg1 *workdocs.DeleteLabelsInput, arg2 ...request.Option) (*workdocs.DeleteLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteNotificationSubscriptionRequest(arg
 }
 
 // DeleteNotificationSubscriptionWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionWithContext(arg0 aws.Context, arg1 *workdocs.DeleteNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.DeleteNotificationSubscriptionOutput, error) {
+func (m *MockWorkDocsAPI) DeleteNotificationSubscriptionWithContext(arg0 context.Context, arg1 *workdocs.DeleteNotificationSubscriptionInput, arg2 ...request.Option) (*workdocs.DeleteNotificationSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomo
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockWorkDocsAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *workdocs.DeleteUserInput, arg2 ...request.Option) (*workdocs.DeleteUserOutput, error) {
+func (m *MockWorkDocsAPI) DeleteUserWithContext(arg0 context.Context, arg1 *workdocs.DeleteUserInput, arg2 ...request.Option) (*workdocs.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeActivitiesRequest(arg0 interface{
 }
 
 // DescribeActivitiesWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeActivitiesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeActivitiesInput, arg2 ...request.Option) (*workdocs.DescribeActivitiesOutput, error) {
+func (m *MockWorkDocsAPI) DescribeActivitiesWithContext(arg0 context.Context, arg1 *workdocs.DescribeActivitiesInput, arg2 ...request.Option) (*workdocs.DescribeActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeCommentsRequest(arg0 interface{})
 }
 
 // DescribeCommentsWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeCommentsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeCommentsInput, arg2 ...request.Option) (*workdocs.DescribeCommentsOutput, error) {
+func (m *MockWorkDocsAPI) DescribeCommentsWithContext(arg0 context.Context, arg1 *workdocs.DescribeCommentsInput, arg2 ...request.Option) (*workdocs.DescribeCommentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1065,7 +1065,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersionsPages(arg0, arg1 
 }
 
 // DescribeDocumentVersionsPagesWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeDocumentVersionsPagesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 func(*workdocs.DescribeDocumentVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkDocsAPI) DescribeDocumentVersionsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 func(*workdocs.DescribeDocumentVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1099,7 +1099,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeDocumentVersionsRequest(arg0 inte
 }
 
 // DescribeDocumentVersionsWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeDocumentVersionsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 ...request.Option) (*workdocs.DescribeDocumentVersionsOutput, error) {
+func (m *MockWorkDocsAPI) DescribeDocumentVersionsWithContext(arg0 context.Context, arg1 *workdocs.DescribeDocumentVersionsInput, arg2 ...request.Option) (*workdocs.DescribeDocumentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContentsPages(arg0, arg1 in
 }
 
 // DescribeFolderContentsPagesWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeFolderContentsPagesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 func(*workdocs.DescribeFolderContentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkDocsAPI) DescribeFolderContentsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 func(*workdocs.DescribeFolderContentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1182,7 +1182,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeFolderContentsRequest(arg0 interf
 }
 
 // DescribeFolderContentsWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeFolderContentsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 ...request.Option) (*workdocs.DescribeFolderContentsOutput, error) {
+func (m *MockWorkDocsAPI) DescribeFolderContentsWithContext(arg0 context.Context, arg1 *workdocs.DescribeFolderContentsInput, arg2 ...request.Option) (*workdocs.DescribeFolderContentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1232,7 +1232,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeGroupsRequest(arg0 interface{}) *
 }
 
 // DescribeGroupsWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeGroupsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeGroupsInput, arg2 ...request.Option) (*workdocs.DescribeGroupsOutput, error) {
+func (m *MockWorkDocsAPI) DescribeGroupsWithContext(arg0 context.Context, arg1 *workdocs.DescribeGroupsInput, arg2 ...request.Option) (*workdocs.DescribeGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1282,7 +1282,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptionsRequest(
 }
 
 // DescribeNotificationSubscriptionsWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeNotificationSubscriptionsInput, arg2 ...request.Option) (*workdocs.DescribeNotificationSubscriptionsOutput, error) {
+func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsWithContext(arg0 context.Context, arg1 *workdocs.DescribeNotificationSubscriptionsInput, arg2 ...request.Option) (*workdocs.DescribeNotificationSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1332,7 +1332,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissionsRequest(arg0 i
 }
 
 // DescribeResourcePermissionsWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeResourcePermissionsWithContext(arg0 aws.Context, arg1 *workdocs.DescribeResourcePermissionsInput, arg2 ...request.Option) (*workdocs.DescribeResourcePermissionsOutput, error) {
+func (m *MockWorkDocsAPI) DescribeResourcePermissionsWithContext(arg0 context.Context, arg1 *workdocs.DescribeResourcePermissionsInput, arg2 ...request.Option) (*workdocs.DescribeResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1382,7 +1382,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFoldersRequest(arg0 interface
 }
 
 // DescribeRootFoldersWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeRootFoldersWithContext(arg0 aws.Context, arg1 *workdocs.DescribeRootFoldersInput, arg2 ...request.Option) (*workdocs.DescribeRootFoldersOutput, error) {
+func (m *MockWorkDocsAPI) DescribeRootFoldersWithContext(arg0 context.Context, arg1 *workdocs.DescribeRootFoldersInput, arg2 ...request.Option) (*workdocs.DescribeRootFoldersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeUsersPages(arg0, arg1 interface{}
 }
 
 // DescribeUsersPagesWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeUsersPagesWithContext(arg0 aws.Context, arg1 *workdocs.DescribeUsersInput, arg2 func(*workdocs.DescribeUsersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkDocsAPI) DescribeUsersPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeUsersInput, arg2 func(*workdocs.DescribeUsersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1465,7 +1465,7 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeUsersRequest(arg0 interface{}) *g
 }
 
 // DescribeUsersWithContext mocks base method
-func (m *MockWorkDocsAPI) DescribeUsersWithContext(arg0 aws.Context, arg1 *workdocs.DescribeUsersInput, arg2 ...request.Option) (*workdocs.DescribeUsersOutput, error) {
+func (m *MockWorkDocsAPI) DescribeUsersWithContext(arg0 context.Context, arg1 *workdocs.DescribeUsersInput, arg2 ...request.Option) (*workdocs.DescribeUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1515,7 +1515,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetCurrentUserRequest(arg0 interface{}) *
 }
 
 // GetCurrentUserWithContext mocks base method
-func (m *MockWorkDocsAPI) GetCurrentUserWithContext(arg0 aws.Context, arg1 *workdocs.GetCurrentUserInput, arg2 ...request.Option) (*workdocs.GetCurrentUserOutput, error) {
+func (m *MockWorkDocsAPI) GetCurrentUserWithContext(arg0 context.Context, arg1 *workdocs.GetCurrentUserInput, arg2 ...request.Option) (*workdocs.GetCurrentUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1580,7 +1580,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetDocumentPathRequest(arg0 interface{}) 
 }
 
 // GetDocumentPathWithContext mocks base method
-func (m *MockWorkDocsAPI) GetDocumentPathWithContext(arg0 aws.Context, arg1 *workdocs.GetDocumentPathInput, arg2 ...request.Option) (*workdocs.GetDocumentPathOutput, error) {
+func (m *MockWorkDocsAPI) GetDocumentPathWithContext(arg0 context.Context, arg1 *workdocs.GetDocumentPathInput, arg2 ...request.Option) (*workdocs.GetDocumentPathOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1645,7 +1645,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetDocumentVersionRequest(arg0 interface{
 }
 
 // GetDocumentVersionWithContext mocks base method
-func (m *MockWorkDocsAPI) GetDocumentVersionWithContext(arg0 aws.Context, arg1 *workdocs.GetDocumentVersionInput, arg2 ...request.Option) (*workdocs.GetDocumentVersionOutput, error) {
+func (m *MockWorkDocsAPI) GetDocumentVersionWithContext(arg0 context.Context, arg1 *workdocs.GetDocumentVersionInput, arg2 ...request.Option) (*workdocs.GetDocumentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1665,7 +1665,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetDocumentVersionWithContext(arg0, arg1 
 }
 
 // GetDocumentWithContext mocks base method
-func (m *MockWorkDocsAPI) GetDocumentWithContext(arg0 aws.Context, arg1 *workdocs.GetDocumentInput, arg2 ...request.Option) (*workdocs.GetDocumentOutput, error) {
+func (m *MockWorkDocsAPI) GetDocumentWithContext(arg0 context.Context, arg1 *workdocs.GetDocumentInput, arg2 ...request.Option) (*workdocs.GetDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1730,7 +1730,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetFolderPathRequest(arg0 interface{}) *g
 }
 
 // GetFolderPathWithContext mocks base method
-func (m *MockWorkDocsAPI) GetFolderPathWithContext(arg0 aws.Context, arg1 *workdocs.GetFolderPathInput, arg2 ...request.Option) (*workdocs.GetFolderPathOutput, error) {
+func (m *MockWorkDocsAPI) GetFolderPathWithContext(arg0 context.Context, arg1 *workdocs.GetFolderPathInput, arg2 ...request.Option) (*workdocs.GetFolderPathOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1765,7 +1765,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetFolderRequest(arg0 interface{}) *gomoc
 }
 
 // GetFolderWithContext mocks base method
-func (m *MockWorkDocsAPI) GetFolderWithContext(arg0 aws.Context, arg1 *workdocs.GetFolderInput, arg2 ...request.Option) (*workdocs.GetFolderOutput, error) {
+func (m *MockWorkDocsAPI) GetFolderWithContext(arg0 context.Context, arg1 *workdocs.GetFolderInput, arg2 ...request.Option) (*workdocs.GetFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1815,7 +1815,7 @@ func (mr *MockWorkDocsAPIMockRecorder) GetResourcesRequest(arg0 interface{}) *go
 }
 
 // GetResourcesWithContext mocks base method
-func (m *MockWorkDocsAPI) GetResourcesWithContext(arg0 aws.Context, arg1 *workdocs.GetResourcesInput, arg2 ...request.Option) (*workdocs.GetResourcesOutput, error) {
+func (m *MockWorkDocsAPI) GetResourcesWithContext(arg0 context.Context, arg1 *workdocs.GetResourcesInput, arg2 ...request.Option) (*workdocs.GetResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1865,7 +1865,7 @@ func (mr *MockWorkDocsAPIMockRecorder) InitiateDocumentVersionUploadRequest(arg0
 }
 
 // InitiateDocumentVersionUploadWithContext mocks base method
-func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadWithContext(arg0 aws.Context, arg1 *workdocs.InitiateDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.InitiateDocumentVersionUploadOutput, error) {
+func (m *MockWorkDocsAPI) InitiateDocumentVersionUploadWithContext(arg0 context.Context, arg1 *workdocs.InitiateDocumentVersionUploadInput, arg2 ...request.Option) (*workdocs.InitiateDocumentVersionUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1915,7 +1915,7 @@ func (mr *MockWorkDocsAPIMockRecorder) RemoveAllResourcePermissionsRequest(arg0 
 }
 
 // RemoveAllResourcePermissionsWithContext mocks base method
-func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsWithContext(arg0 aws.Context, arg1 *workdocs.RemoveAllResourcePermissionsInput, arg2 ...request.Option) (*workdocs.RemoveAllResourcePermissionsOutput, error) {
+func (m *MockWorkDocsAPI) RemoveAllResourcePermissionsWithContext(arg0 context.Context, arg1 *workdocs.RemoveAllResourcePermissionsInput, arg2 ...request.Option) (*workdocs.RemoveAllResourcePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1965,7 +1965,7 @@ func (mr *MockWorkDocsAPIMockRecorder) RemoveResourcePermissionRequest(arg0 inte
 }
 
 // RemoveResourcePermissionWithContext mocks base method
-func (m *MockWorkDocsAPI) RemoveResourcePermissionWithContext(arg0 aws.Context, arg1 *workdocs.RemoveResourcePermissionInput, arg2 ...request.Option) (*workdocs.RemoveResourcePermissionOutput, error) {
+func (m *MockWorkDocsAPI) RemoveResourcePermissionWithContext(arg0 context.Context, arg1 *workdocs.RemoveResourcePermissionInput, arg2 ...request.Option) (*workdocs.RemoveResourcePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2045,7 +2045,7 @@ func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentVersionRequest(arg0 interfa
 }
 
 // UpdateDocumentVersionWithContext mocks base method
-func (m *MockWorkDocsAPI) UpdateDocumentVersionWithContext(arg0 aws.Context, arg1 *workdocs.UpdateDocumentVersionInput, arg2 ...request.Option) (*workdocs.UpdateDocumentVersionOutput, error) {
+func (m *MockWorkDocsAPI) UpdateDocumentVersionWithContext(arg0 context.Context, arg1 *workdocs.UpdateDocumentVersionInput, arg2 ...request.Option) (*workdocs.UpdateDocumentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2065,7 +2065,7 @@ func (mr *MockWorkDocsAPIMockRecorder) UpdateDocumentVersionWithContext(arg0, ar
 }
 
 // UpdateDocumentWithContext mocks base method
-func (m *MockWorkDocsAPI) UpdateDocumentWithContext(arg0 aws.Context, arg1 *workdocs.UpdateDocumentInput, arg2 ...request.Option) (*workdocs.UpdateDocumentOutput, error) {
+func (m *MockWorkDocsAPI) UpdateDocumentWithContext(arg0 context.Context, arg1 *workdocs.UpdateDocumentInput, arg2 ...request.Option) (*workdocs.UpdateDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2115,7 +2115,7 @@ func (mr *MockWorkDocsAPIMockRecorder) UpdateFolderRequest(arg0 interface{}) *go
 }
 
 // UpdateFolderWithContext mocks base method
-func (m *MockWorkDocsAPI) UpdateFolderWithContext(arg0 aws.Context, arg1 *workdocs.UpdateFolderInput, arg2 ...request.Option) (*workdocs.UpdateFolderOutput, error) {
+func (m *MockWorkDocsAPI) UpdateFolderWithContext(arg0 context.Context, arg1 *workdocs.UpdateFolderInput, arg2 ...request.Option) (*workdocs.UpdateFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2165,7 +2165,7 @@ func (mr *MockWorkDocsAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomo
 }
 
 // UpdateUserWithContext mocks base method
-func (m *MockWorkDocsAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *workdocs.UpdateUserInput, arg2 ...request.Option) (*workdocs.UpdateUserOutput, error) {
+func (m *MockWorkDocsAPI) UpdateUserWithContext(arg0 context.Context, arg1 *workdocs.UpdateUserInput, arg2 ...request.Option) (*workdocs.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

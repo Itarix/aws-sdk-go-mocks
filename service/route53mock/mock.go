@@ -5,7 +5,7 @@
 package route53mock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	route53 "github.com/aws/aws-sdk-go/service/route53"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRoute53APIMockRecorder) AssociateVPCWithHostedZoneRequest(arg0 int
 }
 
 // AssociateVPCWithHostedZoneWithContext mocks base method
-func (m *MockRoute53API) AssociateVPCWithHostedZoneWithContext(arg0 aws.Context, arg1 *route53.AssociateVPCWithHostedZoneInput, arg2 ...request.Option) (*route53.AssociateVPCWithHostedZoneOutput, error) {
+func (m *MockRoute53API) AssociateVPCWithHostedZoneWithContext(arg0 context.Context, arg1 *route53.AssociateVPCWithHostedZoneInput, arg2 ...request.Option) (*route53.AssociateVPCWithHostedZoneOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRoute53APIMockRecorder) ChangeResourceRecordSetsRequest(arg0 inter
 }
 
 // ChangeResourceRecordSetsWithContext mocks base method
-func (m *MockRoute53API) ChangeResourceRecordSetsWithContext(arg0 aws.Context, arg1 *route53.ChangeResourceRecordSetsInput, arg2 ...request.Option) (*route53.ChangeResourceRecordSetsOutput, error) {
+func (m *MockRoute53API) ChangeResourceRecordSetsWithContext(arg0 context.Context, arg1 *route53.ChangeResourceRecordSetsInput, arg2 ...request.Option) (*route53.ChangeResourceRecordSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRoute53APIMockRecorder) ChangeTagsForResourceRequest(arg0 interfac
 }
 
 // ChangeTagsForResourceWithContext mocks base method
-func (m *MockRoute53API) ChangeTagsForResourceWithContext(arg0 aws.Context, arg1 *route53.ChangeTagsForResourceInput, arg2 ...request.Option) (*route53.ChangeTagsForResourceOutput, error) {
+func (m *MockRoute53API) ChangeTagsForResourceWithContext(arg0 context.Context, arg1 *route53.ChangeTagsForResourceInput, arg2 ...request.Option) (*route53.ChangeTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRoute53APIMockRecorder) CreateHealthCheckRequest(arg0 interface{})
 }
 
 // CreateHealthCheckWithContext mocks base method
-func (m *MockRoute53API) CreateHealthCheckWithContext(arg0 aws.Context, arg1 *route53.CreateHealthCheckInput, arg2 ...request.Option) (*route53.CreateHealthCheckOutput, error) {
+func (m *MockRoute53API) CreateHealthCheckWithContext(arg0 context.Context, arg1 *route53.CreateHealthCheckInput, arg2 ...request.Option) (*route53.CreateHealthCheckOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRoute53APIMockRecorder) CreateHostedZoneRequest(arg0 interface{}) 
 }
 
 // CreateHostedZoneWithContext mocks base method
-func (m *MockRoute53API) CreateHostedZoneWithContext(arg0 aws.Context, arg1 *route53.CreateHostedZoneInput, arg2 ...request.Option) (*route53.CreateHostedZoneOutput, error) {
+func (m *MockRoute53API) CreateHostedZoneWithContext(arg0 context.Context, arg1 *route53.CreateHostedZoneInput, arg2 ...request.Option) (*route53.CreateHostedZoneOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRoute53APIMockRecorder) CreateQueryLoggingConfigRequest(arg0 inter
 }
 
 // CreateQueryLoggingConfigWithContext mocks base method
-func (m *MockRoute53API) CreateQueryLoggingConfigWithContext(arg0 aws.Context, arg1 *route53.CreateQueryLoggingConfigInput, arg2 ...request.Option) (*route53.CreateQueryLoggingConfigOutput, error) {
+func (m *MockRoute53API) CreateQueryLoggingConfigWithContext(arg0 context.Context, arg1 *route53.CreateQueryLoggingConfigInput, arg2 ...request.Option) (*route53.CreateQueryLoggingConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRoute53APIMockRecorder) CreateReusableDelegationSetRequest(arg0 in
 }
 
 // CreateReusableDelegationSetWithContext mocks base method
-func (m *MockRoute53API) CreateReusableDelegationSetWithContext(arg0 aws.Context, arg1 *route53.CreateReusableDelegationSetInput, arg2 ...request.Option) (*route53.CreateReusableDelegationSetOutput, error) {
+func (m *MockRoute53API) CreateReusableDelegationSetWithContext(arg0 context.Context, arg1 *route53.CreateReusableDelegationSetInput, arg2 ...request.Option) (*route53.CreateReusableDelegationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockRoute53APIMockRecorder) CreateTrafficPolicyInstanceRequest(arg0 in
 }
 
 // CreateTrafficPolicyInstanceWithContext mocks base method
-func (m *MockRoute53API) CreateTrafficPolicyInstanceWithContext(arg0 aws.Context, arg1 *route53.CreateTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.CreateTrafficPolicyInstanceOutput, error) {
+func (m *MockRoute53API) CreateTrafficPolicyInstanceWithContext(arg0 context.Context, arg1 *route53.CreateTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.CreateTrafficPolicyInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -496,7 +496,7 @@ func (mr *MockRoute53APIMockRecorder) CreateTrafficPolicyVersionRequest(arg0 int
 }
 
 // CreateTrafficPolicyVersionWithContext mocks base method
-func (m *MockRoute53API) CreateTrafficPolicyVersionWithContext(arg0 aws.Context, arg1 *route53.CreateTrafficPolicyVersionInput, arg2 ...request.Option) (*route53.CreateTrafficPolicyVersionOutput, error) {
+func (m *MockRoute53API) CreateTrafficPolicyVersionWithContext(arg0 context.Context, arg1 *route53.CreateTrafficPolicyVersionInput, arg2 ...request.Option) (*route53.CreateTrafficPolicyVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockRoute53APIMockRecorder) CreateTrafficPolicyVersionWithContext(arg0
 }
 
 // CreateTrafficPolicyWithContext mocks base method
-func (m *MockRoute53API) CreateTrafficPolicyWithContext(arg0 aws.Context, arg1 *route53.CreateTrafficPolicyInput, arg2 ...request.Option) (*route53.CreateTrafficPolicyOutput, error) {
+func (m *MockRoute53API) CreateTrafficPolicyWithContext(arg0 context.Context, arg1 *route53.CreateTrafficPolicyInput, arg2 ...request.Option) (*route53.CreateTrafficPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockRoute53APIMockRecorder) CreateVPCAssociationAuthorizationRequest(a
 }
 
 // CreateVPCAssociationAuthorizationWithContext mocks base method
-func (m *MockRoute53API) CreateVPCAssociationAuthorizationWithContext(arg0 aws.Context, arg1 *route53.CreateVPCAssociationAuthorizationInput, arg2 ...request.Option) (*route53.CreateVPCAssociationAuthorizationOutput, error) {
+func (m *MockRoute53API) CreateVPCAssociationAuthorizationWithContext(arg0 context.Context, arg1 *route53.CreateVPCAssociationAuthorizationInput, arg2 ...request.Option) (*route53.CreateVPCAssociationAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteHealthCheckRequest(arg0 interface{})
 }
 
 // DeleteHealthCheckWithContext mocks base method
-func (m *MockRoute53API) DeleteHealthCheckWithContext(arg0 aws.Context, arg1 *route53.DeleteHealthCheckInput, arg2 ...request.Option) (*route53.DeleteHealthCheckOutput, error) {
+func (m *MockRoute53API) DeleteHealthCheckWithContext(arg0 context.Context, arg1 *route53.DeleteHealthCheckInput, arg2 ...request.Option) (*route53.DeleteHealthCheckOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteHostedZoneRequest(arg0 interface{}) 
 }
 
 // DeleteHostedZoneWithContext mocks base method
-func (m *MockRoute53API) DeleteHostedZoneWithContext(arg0 aws.Context, arg1 *route53.DeleteHostedZoneInput, arg2 ...request.Option) (*route53.DeleteHostedZoneOutput, error) {
+func (m *MockRoute53API) DeleteHostedZoneWithContext(arg0 context.Context, arg1 *route53.DeleteHostedZoneInput, arg2 ...request.Option) (*route53.DeleteHostedZoneOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteQueryLoggingConfigRequest(arg0 inter
 }
 
 // DeleteQueryLoggingConfigWithContext mocks base method
-func (m *MockRoute53API) DeleteQueryLoggingConfigWithContext(arg0 aws.Context, arg1 *route53.DeleteQueryLoggingConfigInput, arg2 ...request.Option) (*route53.DeleteQueryLoggingConfigOutput, error) {
+func (m *MockRoute53API) DeleteQueryLoggingConfigWithContext(arg0 context.Context, arg1 *route53.DeleteQueryLoggingConfigInput, arg2 ...request.Option) (*route53.DeleteQueryLoggingConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteReusableDelegationSetRequest(arg0 in
 }
 
 // DeleteReusableDelegationSetWithContext mocks base method
-func (m *MockRoute53API) DeleteReusableDelegationSetWithContext(arg0 aws.Context, arg1 *route53.DeleteReusableDelegationSetInput, arg2 ...request.Option) (*route53.DeleteReusableDelegationSetOutput, error) {
+func (m *MockRoute53API) DeleteReusableDelegationSetWithContext(arg0 context.Context, arg1 *route53.DeleteReusableDelegationSetInput, arg2 ...request.Option) (*route53.DeleteReusableDelegationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteTrafficPolicyInstanceRequest(arg0 in
 }
 
 // DeleteTrafficPolicyInstanceWithContext mocks base method
-func (m *MockRoute53API) DeleteTrafficPolicyInstanceWithContext(arg0 aws.Context, arg1 *route53.DeleteTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.DeleteTrafficPolicyInstanceOutput, error) {
+func (m *MockRoute53API) DeleteTrafficPolicyInstanceWithContext(arg0 context.Context, arg1 *route53.DeleteTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.DeleteTrafficPolicyInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteTrafficPolicyRequest(arg0 interface{
 }
 
 // DeleteTrafficPolicyWithContext mocks base method
-func (m *MockRoute53API) DeleteTrafficPolicyWithContext(arg0 aws.Context, arg1 *route53.DeleteTrafficPolicyInput, arg2 ...request.Option) (*route53.DeleteTrafficPolicyOutput, error) {
+func (m *MockRoute53API) DeleteTrafficPolicyWithContext(arg0 context.Context, arg1 *route53.DeleteTrafficPolicyInput, arg2 ...request.Option) (*route53.DeleteTrafficPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockRoute53APIMockRecorder) DeleteVPCAssociationAuthorizationRequest(a
 }
 
 // DeleteVPCAssociationAuthorizationWithContext mocks base method
-func (m *MockRoute53API) DeleteVPCAssociationAuthorizationWithContext(arg0 aws.Context, arg1 *route53.DeleteVPCAssociationAuthorizationInput, arg2 ...request.Option) (*route53.DeleteVPCAssociationAuthorizationOutput, error) {
+func (m *MockRoute53API) DeleteVPCAssociationAuthorizationWithContext(arg0 context.Context, arg1 *route53.DeleteVPCAssociationAuthorizationInput, arg2 ...request.Option) (*route53.DeleteVPCAssociationAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockRoute53APIMockRecorder) DisassociateVPCFromHostedZoneRequest(arg0 
 }
 
 // DisassociateVPCFromHostedZoneWithContext mocks base method
-func (m *MockRoute53API) DisassociateVPCFromHostedZoneWithContext(arg0 aws.Context, arg1 *route53.DisassociateVPCFromHostedZoneInput, arg2 ...request.Option) (*route53.DisassociateVPCFromHostedZoneOutput, error) {
+func (m *MockRoute53API) DisassociateVPCFromHostedZoneWithContext(arg0 context.Context, arg1 *route53.DisassociateVPCFromHostedZoneInput, arg2 ...request.Option) (*route53.DisassociateVPCFromHostedZoneOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockRoute53APIMockRecorder) GetAccountLimitRequest(arg0 interface{}) *
 }
 
 // GetAccountLimitWithContext mocks base method
-func (m *MockRoute53API) GetAccountLimitWithContext(arg0 aws.Context, arg1 *route53.GetAccountLimitInput, arg2 ...request.Option) (*route53.GetAccountLimitOutput, error) {
+func (m *MockRoute53API) GetAccountLimitWithContext(arg0 context.Context, arg1 *route53.GetAccountLimitInput, arg2 ...request.Option) (*route53.GetAccountLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockRoute53APIMockRecorder) GetChangeRequest(arg0 interface{}) *gomock
 }
 
 // GetChangeWithContext mocks base method
-func (m *MockRoute53API) GetChangeWithContext(arg0 aws.Context, arg1 *route53.GetChangeInput, arg2 ...request.Option) (*route53.GetChangeOutput, error) {
+func (m *MockRoute53API) GetChangeWithContext(arg0 context.Context, arg1 *route53.GetChangeInput, arg2 ...request.Option) (*route53.GetChangeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockRoute53APIMockRecorder) GetCheckerIpRangesRequest(arg0 interface{}
 }
 
 // GetCheckerIpRangesWithContext mocks base method
-func (m *MockRoute53API) GetCheckerIpRangesWithContext(arg0 aws.Context, arg1 *route53.GetCheckerIpRangesInput, arg2 ...request.Option) (*route53.GetCheckerIpRangesOutput, error) {
+func (m *MockRoute53API) GetCheckerIpRangesWithContext(arg0 context.Context, arg1 *route53.GetCheckerIpRangesInput, arg2 ...request.Option) (*route53.GetCheckerIpRangesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockRoute53APIMockRecorder) GetGeoLocationRequest(arg0 interface{}) *g
 }
 
 // GetGeoLocationWithContext mocks base method
-func (m *MockRoute53API) GetGeoLocationWithContext(arg0 aws.Context, arg1 *route53.GetGeoLocationInput, arg2 ...request.Option) (*route53.GetGeoLocationOutput, error) {
+func (m *MockRoute53API) GetGeoLocationWithContext(arg0 context.Context, arg1 *route53.GetGeoLocationInput, arg2 ...request.Option) (*route53.GetGeoLocationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockRoute53APIMockRecorder) GetHealthCheckCountRequest(arg0 interface{
 }
 
 // GetHealthCheckCountWithContext mocks base method
-func (m *MockRoute53API) GetHealthCheckCountWithContext(arg0 aws.Context, arg1 *route53.GetHealthCheckCountInput, arg2 ...request.Option) (*route53.GetHealthCheckCountOutput, error) {
+func (m *MockRoute53API) GetHealthCheckCountWithContext(arg0 context.Context, arg1 *route53.GetHealthCheckCountInput, arg2 ...request.Option) (*route53.GetHealthCheckCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockRoute53APIMockRecorder) GetHealthCheckLastFailureReasonRequest(arg
 }
 
 // GetHealthCheckLastFailureReasonWithContext mocks base method
-func (m *MockRoute53API) GetHealthCheckLastFailureReasonWithContext(arg0 aws.Context, arg1 *route53.GetHealthCheckLastFailureReasonInput, arg2 ...request.Option) (*route53.GetHealthCheckLastFailureReasonOutput, error) {
+func (m *MockRoute53API) GetHealthCheckLastFailureReasonWithContext(arg0 context.Context, arg1 *route53.GetHealthCheckLastFailureReasonInput, arg2 ...request.Option) (*route53.GetHealthCheckLastFailureReasonOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1346,7 +1346,7 @@ func (mr *MockRoute53APIMockRecorder) GetHealthCheckStatusRequest(arg0 interface
 }
 
 // GetHealthCheckStatusWithContext mocks base method
-func (m *MockRoute53API) GetHealthCheckStatusWithContext(arg0 aws.Context, arg1 *route53.GetHealthCheckStatusInput, arg2 ...request.Option) (*route53.GetHealthCheckStatusOutput, error) {
+func (m *MockRoute53API) GetHealthCheckStatusWithContext(arg0 context.Context, arg1 *route53.GetHealthCheckStatusInput, arg2 ...request.Option) (*route53.GetHealthCheckStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockRoute53APIMockRecorder) GetHealthCheckStatusWithContext(arg0, arg1
 }
 
 // GetHealthCheckWithContext mocks base method
-func (m *MockRoute53API) GetHealthCheckWithContext(arg0 aws.Context, arg1 *route53.GetHealthCheckInput, arg2 ...request.Option) (*route53.GetHealthCheckOutput, error) {
+func (m *MockRoute53API) GetHealthCheckWithContext(arg0 context.Context, arg1 *route53.GetHealthCheckInput, arg2 ...request.Option) (*route53.GetHealthCheckOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockRoute53APIMockRecorder) GetHostedZoneCountRequest(arg0 interface{}
 }
 
 // GetHostedZoneCountWithContext mocks base method
-func (m *MockRoute53API) GetHostedZoneCountWithContext(arg0 aws.Context, arg1 *route53.GetHostedZoneCountInput, arg2 ...request.Option) (*route53.GetHostedZoneCountOutput, error) {
+func (m *MockRoute53API) GetHostedZoneCountWithContext(arg0 context.Context, arg1 *route53.GetHostedZoneCountInput, arg2 ...request.Option) (*route53.GetHostedZoneCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockRoute53APIMockRecorder) GetHostedZoneLimitRequest(arg0 interface{}
 }
 
 // GetHostedZoneLimitWithContext mocks base method
-func (m *MockRoute53API) GetHostedZoneLimitWithContext(arg0 aws.Context, arg1 *route53.GetHostedZoneLimitInput, arg2 ...request.Option) (*route53.GetHostedZoneLimitOutput, error) {
+func (m *MockRoute53API) GetHostedZoneLimitWithContext(arg0 context.Context, arg1 *route53.GetHostedZoneLimitInput, arg2 ...request.Option) (*route53.GetHostedZoneLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockRoute53APIMockRecorder) GetHostedZoneRequest(arg0 interface{}) *go
 }
 
 // GetHostedZoneWithContext mocks base method
-func (m *MockRoute53API) GetHostedZoneWithContext(arg0 aws.Context, arg1 *route53.GetHostedZoneInput, arg2 ...request.Option) (*route53.GetHostedZoneOutput, error) {
+func (m *MockRoute53API) GetHostedZoneWithContext(arg0 context.Context, arg1 *route53.GetHostedZoneInput, arg2 ...request.Option) (*route53.GetHostedZoneOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockRoute53APIMockRecorder) GetQueryLoggingConfigRequest(arg0 interfac
 }
 
 // GetQueryLoggingConfigWithContext mocks base method
-func (m *MockRoute53API) GetQueryLoggingConfigWithContext(arg0 aws.Context, arg1 *route53.GetQueryLoggingConfigInput, arg2 ...request.Option) (*route53.GetQueryLoggingConfigOutput, error) {
+func (m *MockRoute53API) GetQueryLoggingConfigWithContext(arg0 context.Context, arg1 *route53.GetQueryLoggingConfigInput, arg2 ...request.Option) (*route53.GetQueryLoggingConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1631,7 +1631,7 @@ func (mr *MockRoute53APIMockRecorder) GetReusableDelegationSetLimitRequest(arg0 
 }
 
 // GetReusableDelegationSetLimitWithContext mocks base method
-func (m *MockRoute53API) GetReusableDelegationSetLimitWithContext(arg0 aws.Context, arg1 *route53.GetReusableDelegationSetLimitInput, arg2 ...request.Option) (*route53.GetReusableDelegationSetLimitOutput, error) {
+func (m *MockRoute53API) GetReusableDelegationSetLimitWithContext(arg0 context.Context, arg1 *route53.GetReusableDelegationSetLimitInput, arg2 ...request.Option) (*route53.GetReusableDelegationSetLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockRoute53APIMockRecorder) GetReusableDelegationSetRequest(arg0 inter
 }
 
 // GetReusableDelegationSetWithContext mocks base method
-func (m *MockRoute53API) GetReusableDelegationSetWithContext(arg0 aws.Context, arg1 *route53.GetReusableDelegationSetInput, arg2 ...request.Option) (*route53.GetReusableDelegationSetOutput, error) {
+func (m *MockRoute53API) GetReusableDelegationSetWithContext(arg0 context.Context, arg1 *route53.GetReusableDelegationSetInput, arg2 ...request.Option) (*route53.GetReusableDelegationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1746,7 +1746,7 @@ func (mr *MockRoute53APIMockRecorder) GetTrafficPolicyInstanceCountRequest(arg0 
 }
 
 // GetTrafficPolicyInstanceCountWithContext mocks base method
-func (m *MockRoute53API) GetTrafficPolicyInstanceCountWithContext(arg0 aws.Context, arg1 *route53.GetTrafficPolicyInstanceCountInput, arg2 ...request.Option) (*route53.GetTrafficPolicyInstanceCountOutput, error) {
+func (m *MockRoute53API) GetTrafficPolicyInstanceCountWithContext(arg0 context.Context, arg1 *route53.GetTrafficPolicyInstanceCountInput, arg2 ...request.Option) (*route53.GetTrafficPolicyInstanceCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockRoute53APIMockRecorder) GetTrafficPolicyInstanceRequest(arg0 inter
 }
 
 // GetTrafficPolicyInstanceWithContext mocks base method
-func (m *MockRoute53API) GetTrafficPolicyInstanceWithContext(arg0 aws.Context, arg1 *route53.GetTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.GetTrafficPolicyInstanceOutput, error) {
+func (m *MockRoute53API) GetTrafficPolicyInstanceWithContext(arg0 context.Context, arg1 *route53.GetTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.GetTrafficPolicyInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockRoute53APIMockRecorder) GetTrafficPolicyRequest(arg0 interface{}) 
 }
 
 // GetTrafficPolicyWithContext mocks base method
-func (m *MockRoute53API) GetTrafficPolicyWithContext(arg0 aws.Context, arg1 *route53.GetTrafficPolicyInput, arg2 ...request.Option) (*route53.GetTrafficPolicyOutput, error) {
+func (m *MockRoute53API) GetTrafficPolicyWithContext(arg0 context.Context, arg1 *route53.GetTrafficPolicyInput, arg2 ...request.Option) (*route53.GetTrafficPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockRoute53APIMockRecorder) ListGeoLocationsRequest(arg0 interface{}) 
 }
 
 // ListGeoLocationsWithContext mocks base method
-func (m *MockRoute53API) ListGeoLocationsWithContext(arg0 aws.Context, arg1 *route53.ListGeoLocationsInput, arg2 ...request.Option) (*route53.ListGeoLocationsOutput, error) {
+func (m *MockRoute53API) ListGeoLocationsWithContext(arg0 context.Context, arg1 *route53.ListGeoLocationsInput, arg2 ...request.Option) (*route53.ListGeoLocationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1915,7 +1915,7 @@ func (mr *MockRoute53APIMockRecorder) ListHealthChecksPages(arg0, arg1 interface
 }
 
 // ListHealthChecksPagesWithContext mocks base method
-func (m *MockRoute53API) ListHealthChecksPagesWithContext(arg0 aws.Context, arg1 *route53.ListHealthChecksInput, arg2 func(*route53.ListHealthChecksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53API) ListHealthChecksPagesWithContext(arg0 context.Context, arg1 *route53.ListHealthChecksInput, arg2 func(*route53.ListHealthChecksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1949,7 +1949,7 @@ func (mr *MockRoute53APIMockRecorder) ListHealthChecksRequest(arg0 interface{}) 
 }
 
 // ListHealthChecksWithContext mocks base method
-func (m *MockRoute53API) ListHealthChecksWithContext(arg0 aws.Context, arg1 *route53.ListHealthChecksInput, arg2 ...request.Option) (*route53.ListHealthChecksOutput, error) {
+func (m *MockRoute53API) ListHealthChecksWithContext(arg0 context.Context, arg1 *route53.ListHealthChecksInput, arg2 ...request.Option) (*route53.ListHealthChecksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2014,7 +2014,7 @@ func (mr *MockRoute53APIMockRecorder) ListHostedZonesByNameRequest(arg0 interfac
 }
 
 // ListHostedZonesByNameWithContext mocks base method
-func (m *MockRoute53API) ListHostedZonesByNameWithContext(arg0 aws.Context, arg1 *route53.ListHostedZonesByNameInput, arg2 ...request.Option) (*route53.ListHostedZonesByNameOutput, error) {
+func (m *MockRoute53API) ListHostedZonesByNameWithContext(arg0 context.Context, arg1 *route53.ListHostedZonesByNameInput, arg2 ...request.Option) (*route53.ListHostedZonesByNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2048,7 +2048,7 @@ func (mr *MockRoute53APIMockRecorder) ListHostedZonesPages(arg0, arg1 interface{
 }
 
 // ListHostedZonesPagesWithContext mocks base method
-func (m *MockRoute53API) ListHostedZonesPagesWithContext(arg0 aws.Context, arg1 *route53.ListHostedZonesInput, arg2 func(*route53.ListHostedZonesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53API) ListHostedZonesPagesWithContext(arg0 context.Context, arg1 *route53.ListHostedZonesInput, arg2 func(*route53.ListHostedZonesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2082,7 +2082,7 @@ func (mr *MockRoute53APIMockRecorder) ListHostedZonesRequest(arg0 interface{}) *
 }
 
 // ListHostedZonesWithContext mocks base method
-func (m *MockRoute53API) ListHostedZonesWithContext(arg0 aws.Context, arg1 *route53.ListHostedZonesInput, arg2 ...request.Option) (*route53.ListHostedZonesOutput, error) {
+func (m *MockRoute53API) ListHostedZonesWithContext(arg0 context.Context, arg1 *route53.ListHostedZonesInput, arg2 ...request.Option) (*route53.ListHostedZonesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2132,7 +2132,7 @@ func (mr *MockRoute53APIMockRecorder) ListQueryLoggingConfigsRequest(arg0 interf
 }
 
 // ListQueryLoggingConfigsWithContext mocks base method
-func (m *MockRoute53API) ListQueryLoggingConfigsWithContext(arg0 aws.Context, arg1 *route53.ListQueryLoggingConfigsInput, arg2 ...request.Option) (*route53.ListQueryLoggingConfigsOutput, error) {
+func (m *MockRoute53API) ListQueryLoggingConfigsWithContext(arg0 context.Context, arg1 *route53.ListQueryLoggingConfigsInput, arg2 ...request.Option) (*route53.ListQueryLoggingConfigsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2181,7 +2181,7 @@ func (mr *MockRoute53APIMockRecorder) ListResourceRecordSetsPages(arg0, arg1 int
 }
 
 // ListResourceRecordSetsPagesWithContext mocks base method
-func (m *MockRoute53API) ListResourceRecordSetsPagesWithContext(arg0 aws.Context, arg1 *route53.ListResourceRecordSetsInput, arg2 func(*route53.ListResourceRecordSetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53API) ListResourceRecordSetsPagesWithContext(arg0 context.Context, arg1 *route53.ListResourceRecordSetsInput, arg2 func(*route53.ListResourceRecordSetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2215,7 +2215,7 @@ func (mr *MockRoute53APIMockRecorder) ListResourceRecordSetsRequest(arg0 interfa
 }
 
 // ListResourceRecordSetsWithContext mocks base method
-func (m *MockRoute53API) ListResourceRecordSetsWithContext(arg0 aws.Context, arg1 *route53.ListResourceRecordSetsInput, arg2 ...request.Option) (*route53.ListResourceRecordSetsOutput, error) {
+func (m *MockRoute53API) ListResourceRecordSetsWithContext(arg0 context.Context, arg1 *route53.ListResourceRecordSetsInput, arg2 ...request.Option) (*route53.ListResourceRecordSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2265,7 +2265,7 @@ func (mr *MockRoute53APIMockRecorder) ListReusableDelegationSetsRequest(arg0 int
 }
 
 // ListReusableDelegationSetsWithContext mocks base method
-func (m *MockRoute53API) ListReusableDelegationSetsWithContext(arg0 aws.Context, arg1 *route53.ListReusableDelegationSetsInput, arg2 ...request.Option) (*route53.ListReusableDelegationSetsOutput, error) {
+func (m *MockRoute53API) ListReusableDelegationSetsWithContext(arg0 context.Context, arg1 *route53.ListReusableDelegationSetsInput, arg2 ...request.Option) (*route53.ListReusableDelegationSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2315,7 +2315,7 @@ func (mr *MockRoute53APIMockRecorder) ListTagsForResourceRequest(arg0 interface{
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockRoute53API) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *route53.ListTagsForResourceInput, arg2 ...request.Option) (*route53.ListTagsForResourceOutput, error) {
+func (m *MockRoute53API) ListTagsForResourceWithContext(arg0 context.Context, arg1 *route53.ListTagsForResourceInput, arg2 ...request.Option) (*route53.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2365,7 +2365,7 @@ func (mr *MockRoute53APIMockRecorder) ListTagsForResourcesRequest(arg0 interface
 }
 
 // ListTagsForResourcesWithContext mocks base method
-func (m *MockRoute53API) ListTagsForResourcesWithContext(arg0 aws.Context, arg1 *route53.ListTagsForResourcesInput, arg2 ...request.Option) (*route53.ListTagsForResourcesOutput, error) {
+func (m *MockRoute53API) ListTagsForResourcesWithContext(arg0 context.Context, arg1 *route53.ListTagsForResourcesInput, arg2 ...request.Option) (*route53.ListTagsForResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2415,7 +2415,7 @@ func (mr *MockRoute53APIMockRecorder) ListTrafficPoliciesRequest(arg0 interface{
 }
 
 // ListTrafficPoliciesWithContext mocks base method
-func (m *MockRoute53API) ListTrafficPoliciesWithContext(arg0 aws.Context, arg1 *route53.ListTrafficPoliciesInput, arg2 ...request.Option) (*route53.ListTrafficPoliciesOutput, error) {
+func (m *MockRoute53API) ListTrafficPoliciesWithContext(arg0 context.Context, arg1 *route53.ListTrafficPoliciesInput, arg2 ...request.Option) (*route53.ListTrafficPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2480,7 +2480,7 @@ func (mr *MockRoute53APIMockRecorder) ListTrafficPolicyInstancesByHostedZoneRequ
 }
 
 // ListTrafficPolicyInstancesByHostedZoneWithContext mocks base method
-func (m *MockRoute53API) ListTrafficPolicyInstancesByHostedZoneWithContext(arg0 aws.Context, arg1 *route53.ListTrafficPolicyInstancesByHostedZoneInput, arg2 ...request.Option) (*route53.ListTrafficPolicyInstancesByHostedZoneOutput, error) {
+func (m *MockRoute53API) ListTrafficPolicyInstancesByHostedZoneWithContext(arg0 context.Context, arg1 *route53.ListTrafficPolicyInstancesByHostedZoneInput, arg2 ...request.Option) (*route53.ListTrafficPolicyInstancesByHostedZoneOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2530,7 +2530,7 @@ func (mr *MockRoute53APIMockRecorder) ListTrafficPolicyInstancesByPolicyRequest(
 }
 
 // ListTrafficPolicyInstancesByPolicyWithContext mocks base method
-func (m *MockRoute53API) ListTrafficPolicyInstancesByPolicyWithContext(arg0 aws.Context, arg1 *route53.ListTrafficPolicyInstancesByPolicyInput, arg2 ...request.Option) (*route53.ListTrafficPolicyInstancesByPolicyOutput, error) {
+func (m *MockRoute53API) ListTrafficPolicyInstancesByPolicyWithContext(arg0 context.Context, arg1 *route53.ListTrafficPolicyInstancesByPolicyInput, arg2 ...request.Option) (*route53.ListTrafficPolicyInstancesByPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2565,7 +2565,7 @@ func (mr *MockRoute53APIMockRecorder) ListTrafficPolicyInstancesRequest(arg0 int
 }
 
 // ListTrafficPolicyInstancesWithContext mocks base method
-func (m *MockRoute53API) ListTrafficPolicyInstancesWithContext(arg0 aws.Context, arg1 *route53.ListTrafficPolicyInstancesInput, arg2 ...request.Option) (*route53.ListTrafficPolicyInstancesOutput, error) {
+func (m *MockRoute53API) ListTrafficPolicyInstancesWithContext(arg0 context.Context, arg1 *route53.ListTrafficPolicyInstancesInput, arg2 ...request.Option) (*route53.ListTrafficPolicyInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2615,7 +2615,7 @@ func (mr *MockRoute53APIMockRecorder) ListTrafficPolicyVersionsRequest(arg0 inte
 }
 
 // ListTrafficPolicyVersionsWithContext mocks base method
-func (m *MockRoute53API) ListTrafficPolicyVersionsWithContext(arg0 aws.Context, arg1 *route53.ListTrafficPolicyVersionsInput, arg2 ...request.Option) (*route53.ListTrafficPolicyVersionsOutput, error) {
+func (m *MockRoute53API) ListTrafficPolicyVersionsWithContext(arg0 context.Context, arg1 *route53.ListTrafficPolicyVersionsInput, arg2 ...request.Option) (*route53.ListTrafficPolicyVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2665,7 +2665,7 @@ func (mr *MockRoute53APIMockRecorder) ListVPCAssociationAuthorizationsRequest(ar
 }
 
 // ListVPCAssociationAuthorizationsWithContext mocks base method
-func (m *MockRoute53API) ListVPCAssociationAuthorizationsWithContext(arg0 aws.Context, arg1 *route53.ListVPCAssociationAuthorizationsInput, arg2 ...request.Option) (*route53.ListVPCAssociationAuthorizationsOutput, error) {
+func (m *MockRoute53API) ListVPCAssociationAuthorizationsWithContext(arg0 context.Context, arg1 *route53.ListVPCAssociationAuthorizationsInput, arg2 ...request.Option) (*route53.ListVPCAssociationAuthorizationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2715,7 +2715,7 @@ func (mr *MockRoute53APIMockRecorder) TestDNSAnswerRequest(arg0 interface{}) *go
 }
 
 // TestDNSAnswerWithContext mocks base method
-func (m *MockRoute53API) TestDNSAnswerWithContext(arg0 aws.Context, arg1 *route53.TestDNSAnswerInput, arg2 ...request.Option) (*route53.TestDNSAnswerOutput, error) {
+func (m *MockRoute53API) TestDNSAnswerWithContext(arg0 context.Context, arg1 *route53.TestDNSAnswerInput, arg2 ...request.Option) (*route53.TestDNSAnswerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2765,7 +2765,7 @@ func (mr *MockRoute53APIMockRecorder) UpdateHealthCheckRequest(arg0 interface{})
 }
 
 // UpdateHealthCheckWithContext mocks base method
-func (m *MockRoute53API) UpdateHealthCheckWithContext(arg0 aws.Context, arg1 *route53.UpdateHealthCheckInput, arg2 ...request.Option) (*route53.UpdateHealthCheckOutput, error) {
+func (m *MockRoute53API) UpdateHealthCheckWithContext(arg0 context.Context, arg1 *route53.UpdateHealthCheckInput, arg2 ...request.Option) (*route53.UpdateHealthCheckOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2815,7 +2815,7 @@ func (mr *MockRoute53APIMockRecorder) UpdateHostedZoneCommentRequest(arg0 interf
 }
 
 // UpdateHostedZoneCommentWithContext mocks base method
-func (m *MockRoute53API) UpdateHostedZoneCommentWithContext(arg0 aws.Context, arg1 *route53.UpdateHostedZoneCommentInput, arg2 ...request.Option) (*route53.UpdateHostedZoneCommentOutput, error) {
+func (m *MockRoute53API) UpdateHostedZoneCommentWithContext(arg0 context.Context, arg1 *route53.UpdateHostedZoneCommentInput, arg2 ...request.Option) (*route53.UpdateHostedZoneCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2865,7 +2865,7 @@ func (mr *MockRoute53APIMockRecorder) UpdateTrafficPolicyCommentRequest(arg0 int
 }
 
 // UpdateTrafficPolicyCommentWithContext mocks base method
-func (m *MockRoute53API) UpdateTrafficPolicyCommentWithContext(arg0 aws.Context, arg1 *route53.UpdateTrafficPolicyCommentInput, arg2 ...request.Option) (*route53.UpdateTrafficPolicyCommentOutput, error) {
+func (m *MockRoute53API) UpdateTrafficPolicyCommentWithContext(arg0 context.Context, arg1 *route53.UpdateTrafficPolicyCommentInput, arg2 ...request.Option) (*route53.UpdateTrafficPolicyCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2915,7 +2915,7 @@ func (mr *MockRoute53APIMockRecorder) UpdateTrafficPolicyInstanceRequest(arg0 in
 }
 
 // UpdateTrafficPolicyInstanceWithContext mocks base method
-func (m *MockRoute53API) UpdateTrafficPolicyInstanceWithContext(arg0 aws.Context, arg1 *route53.UpdateTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.UpdateTrafficPolicyInstanceOutput, error) {
+func (m *MockRoute53API) UpdateTrafficPolicyInstanceWithContext(arg0 context.Context, arg1 *route53.UpdateTrafficPolicyInstanceInput, arg2 ...request.Option) (*route53.UpdateTrafficPolicyInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2949,7 +2949,7 @@ func (mr *MockRoute53APIMockRecorder) WaitUntilResourceRecordSetsChanged(arg0 in
 }
 
 // WaitUntilResourceRecordSetsChangedWithContext mocks base method
-func (m *MockRoute53API) WaitUntilResourceRecordSetsChangedWithContext(arg0 aws.Context, arg1 *route53.GetChangeInput, arg2 ...request.WaiterOption) error {
+func (m *MockRoute53API) WaitUntilResourceRecordSetsChangedWithContext(arg0 context.Context, arg1 *route53.GetChangeInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

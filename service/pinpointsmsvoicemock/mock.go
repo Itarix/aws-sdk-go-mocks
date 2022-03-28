@@ -5,7 +5,7 @@
 package pinpointsmsvoicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	pinpointsmsvoice "github.com/aws/aws-sdk-go/service/pinpointsmsvoice"
 	gomock "github.com/golang/mock/gomock"
@@ -81,7 +81,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) CreateConfigurationSetEventDestin
 }
 
 // CreateConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) CreateConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.CreateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointsmsvoice.CreateConfigurationSetEventDestinationOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) CreateConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.CreateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointsmsvoice.CreateConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) CreateConfigurationSetRequest(arg
 }
 
 // CreateConfigurationSetWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) CreateConfigurationSetWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.CreateConfigurationSetInput, arg2 ...request.Option) (*pinpointsmsvoice.CreateConfigurationSetOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) CreateConfigurationSetWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.CreateConfigurationSetInput, arg2 ...request.Option) (*pinpointsmsvoice.CreateConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -181,7 +181,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) DeleteConfigurationSetEventDestin
 }
 
 // DeleteConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) DeleteConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.DeleteConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointsmsvoice.DeleteConfigurationSetEventDestinationOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) DeleteConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.DeleteConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointsmsvoice.DeleteConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) DeleteConfigurationSetRequest(arg
 }
 
 // DeleteConfigurationSetWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) DeleteConfigurationSetWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.DeleteConfigurationSetInput, arg2 ...request.Option) (*pinpointsmsvoice.DeleteConfigurationSetOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) DeleteConfigurationSetWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.DeleteConfigurationSetInput, arg2 ...request.Option) (*pinpointsmsvoice.DeleteConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) GetConfigurationSetEventDestinati
 }
 
 // GetConfigurationSetEventDestinationsWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) GetConfigurationSetEventDestinationsWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.GetConfigurationSetEventDestinationsInput, arg2 ...request.Option) (*pinpointsmsvoice.GetConfigurationSetEventDestinationsOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) GetConfigurationSetEventDestinationsWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.GetConfigurationSetEventDestinationsInput, arg2 ...request.Option) (*pinpointsmsvoice.GetConfigurationSetEventDestinationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) SendVoiceMessageRequest(arg0 inte
 }
 
 // SendVoiceMessageWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) SendVoiceMessageWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.SendVoiceMessageInput, arg2 ...request.Option) (*pinpointsmsvoice.SendVoiceMessageOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) SendVoiceMessageWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.SendVoiceMessageInput, arg2 ...request.Option) (*pinpointsmsvoice.SendVoiceMessageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockPinpointSMSVoiceAPIMockRecorder) UpdateConfigurationSetEventDestin
 }
 
 // UpdateConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockPinpointSMSVoiceAPI) UpdateConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *pinpointsmsvoice.UpdateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointsmsvoice.UpdateConfigurationSetEventDestinationOutput, error) {
+func (m *MockPinpointSMSVoiceAPI) UpdateConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *pinpointsmsvoice.UpdateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*pinpointsmsvoice.UpdateConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

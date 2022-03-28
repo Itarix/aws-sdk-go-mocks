@@ -5,7 +5,7 @@
 package iot1clickdevicesservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iot1clickdevicesservice "github.com/aws/aws-sdk-go/service/iot1clickdevicesservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ClaimDevicesByClaimCodeReq
 }
 
 // ClaimDevicesByClaimCodeWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.ClaimDevicesByClaimCodeInput, arg2 ...request.Option) (*iot1clickdevicesservice.ClaimDevicesByClaimCodeOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) ClaimDevicesByClaimCodeWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ClaimDevicesByClaimCodeInput, arg2 ...request.Option) (*iot1clickdevicesservice.ClaimDevicesByClaimCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) DescribeDeviceRequest(arg0
 }
 
 // DescribeDeviceWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.DescribeDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.DescribeDeviceOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) DescribeDeviceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.DescribeDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.DescribeDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) FinalizeDeviceClaimRequest
 }
 
 // FinalizeDeviceClaimWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.FinalizeDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.FinalizeDeviceClaimOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) FinalizeDeviceClaimWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.FinalizeDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.FinalizeDeviceClaimOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) GetDeviceMethodsRequest(ar
 }
 
 // GetDeviceMethodsWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.GetDeviceMethodsInput, arg2 ...request.Option) (*iot1clickdevicesservice.GetDeviceMethodsOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) GetDeviceMethodsWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.GetDeviceMethodsInput, arg2 ...request.Option) (*iot1clickdevicesservice.GetDeviceMethodsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InitiateDeviceClaimRequest
 }
 
 // InitiateDeviceClaimWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.InitiateDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.InitiateDeviceClaimOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) InitiateDeviceClaimWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.InitiateDeviceClaimInput, arg2 ...request.Option) (*iot1clickdevicesservice.InitiateDeviceClaimOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) InvokeDeviceMethodRequest(
 }
 
 // InvokeDeviceMethodWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.InvokeDeviceMethodInput, arg2 ...request.Option) (*iot1clickdevicesservice.InvokeDeviceMethodOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) InvokeDeviceMethodWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.InvokeDeviceMethodInput, arg2 ...request.Option) (*iot1clickdevicesservice.InvokeDeviceMethodOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDeviceEventsRequest(ar
 }
 
 // ListDeviceEventsWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.ListDeviceEventsInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDeviceEventsOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) ListDeviceEventsWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ListDeviceEventsInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDeviceEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) ListDevicesRequest(arg0 in
 }
 
 // ListDevicesWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.ListDevicesInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDevicesOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) ListDevicesWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.ListDevicesInput, arg2 ...request.Option) (*iot1clickdevicesservice.ListDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UnclaimDeviceRequest(arg0 
 }
 
 // UnclaimDeviceWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.UnclaimDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.UnclaimDeviceOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) UnclaimDeviceWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.UnclaimDeviceInput, arg2 ...request.Option) (*iot1clickdevicesservice.UnclaimDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockIoT1ClickDevicesServiceAPIMockRecorder) UpdateDeviceStateRequest(a
 }
 
 // UpdateDeviceStateWithContext mocks base method
-func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateWithContext(arg0 aws.Context, arg1 *iot1clickdevicesservice.UpdateDeviceStateInput, arg2 ...request.Option) (*iot1clickdevicesservice.UpdateDeviceStateOutput, error) {
+func (m *MockIoT1ClickDevicesServiceAPI) UpdateDeviceStateWithContext(arg0 context.Context, arg1 *iot1clickdevicesservice.UpdateDeviceStateInput, arg2 ...request.Option) (*iot1clickdevicesservice.UpdateDeviceStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

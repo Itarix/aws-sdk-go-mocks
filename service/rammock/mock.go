@@ -5,7 +5,7 @@
 package rammock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	ram "github.com/aws/aws-sdk-go/service/ram"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRAMAPIMockRecorder) AcceptResourceShareInvitationRequest(arg0 inte
 }
 
 // AcceptResourceShareInvitationWithContext mocks base method
-func (m *MockRAMAPI) AcceptResourceShareInvitationWithContext(arg0 aws.Context, arg1 *ram.AcceptResourceShareInvitationInput, arg2 ...request.Option) (*ram.AcceptResourceShareInvitationOutput, error) {
+func (m *MockRAMAPI) AcceptResourceShareInvitationWithContext(arg0 context.Context, arg1 *ram.AcceptResourceShareInvitationInput, arg2 ...request.Option) (*ram.AcceptResourceShareInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRAMAPIMockRecorder) AssociateResourceShareRequest(arg0 interface{}
 }
 
 // AssociateResourceShareWithContext mocks base method
-func (m *MockRAMAPI) AssociateResourceShareWithContext(arg0 aws.Context, arg1 *ram.AssociateResourceShareInput, arg2 ...request.Option) (*ram.AssociateResourceShareOutput, error) {
+func (m *MockRAMAPI) AssociateResourceShareWithContext(arg0 context.Context, arg1 *ram.AssociateResourceShareInput, arg2 ...request.Option) (*ram.AssociateResourceShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRAMAPIMockRecorder) CreateResourceShareRequest(arg0 interface{}) *
 }
 
 // CreateResourceShareWithContext mocks base method
-func (m *MockRAMAPI) CreateResourceShareWithContext(arg0 aws.Context, arg1 *ram.CreateResourceShareInput, arg2 ...request.Option) (*ram.CreateResourceShareOutput, error) {
+func (m *MockRAMAPI) CreateResourceShareWithContext(arg0 context.Context, arg1 *ram.CreateResourceShareInput, arg2 ...request.Option) (*ram.CreateResourceShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRAMAPIMockRecorder) DeleteResourceShareRequest(arg0 interface{}) *
 }
 
 // DeleteResourceShareWithContext mocks base method
-func (m *MockRAMAPI) DeleteResourceShareWithContext(arg0 aws.Context, arg1 *ram.DeleteResourceShareInput, arg2 ...request.Option) (*ram.DeleteResourceShareOutput, error) {
+func (m *MockRAMAPI) DeleteResourceShareWithContext(arg0 context.Context, arg1 *ram.DeleteResourceShareInput, arg2 ...request.Option) (*ram.DeleteResourceShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRAMAPIMockRecorder) DisassociateResourceShareRequest(arg0 interfac
 }
 
 // DisassociateResourceShareWithContext mocks base method
-func (m *MockRAMAPI) DisassociateResourceShareWithContext(arg0 aws.Context, arg1 *ram.DisassociateResourceShareInput, arg2 ...request.Option) (*ram.DisassociateResourceShareOutput, error) {
+func (m *MockRAMAPI) DisassociateResourceShareWithContext(arg0 context.Context, arg1 *ram.DisassociateResourceShareInput, arg2 ...request.Option) (*ram.DisassociateResourceShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRAMAPIMockRecorder) EnableSharingWithAwsOrganizationRequest(arg0 i
 }
 
 // EnableSharingWithAwsOrganizationWithContext mocks base method
-func (m *MockRAMAPI) EnableSharingWithAwsOrganizationWithContext(arg0 aws.Context, arg1 *ram.EnableSharingWithAwsOrganizationInput, arg2 ...request.Option) (*ram.EnableSharingWithAwsOrganizationOutput, error) {
+func (m *MockRAMAPI) EnableSharingWithAwsOrganizationWithContext(arg0 context.Context, arg1 *ram.EnableSharingWithAwsOrganizationInput, arg2 ...request.Option) (*ram.EnableSharingWithAwsOrganizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourcePoliciesPages(arg0, arg1 interface{
 }
 
 // GetResourcePoliciesPagesWithContext mocks base method
-func (m *MockRAMAPI) GetResourcePoliciesPagesWithContext(arg0 aws.Context, arg1 *ram.GetResourcePoliciesInput, arg2 func(*ram.GetResourcePoliciesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRAMAPI) GetResourcePoliciesPagesWithContext(arg0 context.Context, arg1 *ram.GetResourcePoliciesInput, arg2 func(*ram.GetResourcePoliciesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourcePoliciesRequest(arg0 interface{}) *
 }
 
 // GetResourcePoliciesWithContext mocks base method
-func (m *MockRAMAPI) GetResourcePoliciesWithContext(arg0 aws.Context, arg1 *ram.GetResourcePoliciesInput, arg2 ...request.Option) (*ram.GetResourcePoliciesOutput, error) {
+func (m *MockRAMAPI) GetResourcePoliciesWithContext(arg0 context.Context, arg1 *ram.GetResourcePoliciesInput, arg2 ...request.Option) (*ram.GetResourcePoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourceShareAssociationsPages(arg0, arg1 i
 }
 
 // GetResourceShareAssociationsPagesWithContext mocks base method
-func (m *MockRAMAPI) GetResourceShareAssociationsPagesWithContext(arg0 aws.Context, arg1 *ram.GetResourceShareAssociationsInput, arg2 func(*ram.GetResourceShareAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRAMAPI) GetResourceShareAssociationsPagesWithContext(arg0 context.Context, arg1 *ram.GetResourceShareAssociationsInput, arg2 func(*ram.GetResourceShareAssociationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourceShareAssociationsRequest(arg0 inter
 }
 
 // GetResourceShareAssociationsWithContext mocks base method
-func (m *MockRAMAPI) GetResourceShareAssociationsWithContext(arg0 aws.Context, arg1 *ram.GetResourceShareAssociationsInput, arg2 ...request.Option) (*ram.GetResourceShareAssociationsOutput, error) {
+func (m *MockRAMAPI) GetResourceShareAssociationsWithContext(arg0 context.Context, arg1 *ram.GetResourceShareAssociationsInput, arg2 ...request.Option) (*ram.GetResourceShareAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourceShareInvitationsPages(arg0, arg1 in
 }
 
 // GetResourceShareInvitationsPagesWithContext mocks base method
-func (m *MockRAMAPI) GetResourceShareInvitationsPagesWithContext(arg0 aws.Context, arg1 *ram.GetResourceShareInvitationsInput, arg2 func(*ram.GetResourceShareInvitationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRAMAPI) GetResourceShareInvitationsPagesWithContext(arg0 context.Context, arg1 *ram.GetResourceShareInvitationsInput, arg2 func(*ram.GetResourceShareInvitationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -565,7 +565,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourceShareInvitationsRequest(arg0 interf
 }
 
 // GetResourceShareInvitationsWithContext mocks base method
-func (m *MockRAMAPI) GetResourceShareInvitationsWithContext(arg0 aws.Context, arg1 *ram.GetResourceShareInvitationsInput, arg2 ...request.Option) (*ram.GetResourceShareInvitationsOutput, error) {
+func (m *MockRAMAPI) GetResourceShareInvitationsWithContext(arg0 context.Context, arg1 *ram.GetResourceShareInvitationsInput, arg2 ...request.Option) (*ram.GetResourceShareInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -614,7 +614,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourceSharesPages(arg0, arg1 interface{})
 }
 
 // GetResourceSharesPagesWithContext mocks base method
-func (m *MockRAMAPI) GetResourceSharesPagesWithContext(arg0 aws.Context, arg1 *ram.GetResourceSharesInput, arg2 func(*ram.GetResourceSharesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRAMAPI) GetResourceSharesPagesWithContext(arg0 context.Context, arg1 *ram.GetResourceSharesInput, arg2 func(*ram.GetResourceSharesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -648,7 +648,7 @@ func (mr *MockRAMAPIMockRecorder) GetResourceSharesRequest(arg0 interface{}) *go
 }
 
 // GetResourceSharesWithContext mocks base method
-func (m *MockRAMAPI) GetResourceSharesWithContext(arg0 aws.Context, arg1 *ram.GetResourceSharesInput, arg2 ...request.Option) (*ram.GetResourceSharesOutput, error) {
+func (m *MockRAMAPI) GetResourceSharesWithContext(arg0 context.Context, arg1 *ram.GetResourceSharesInput, arg2 ...request.Option) (*ram.GetResourceSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -697,7 +697,7 @@ func (mr *MockRAMAPIMockRecorder) ListPrincipalsPages(arg0, arg1 interface{}) *g
 }
 
 // ListPrincipalsPagesWithContext mocks base method
-func (m *MockRAMAPI) ListPrincipalsPagesWithContext(arg0 aws.Context, arg1 *ram.ListPrincipalsInput, arg2 func(*ram.ListPrincipalsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRAMAPI) ListPrincipalsPagesWithContext(arg0 context.Context, arg1 *ram.ListPrincipalsInput, arg2 func(*ram.ListPrincipalsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -731,7 +731,7 @@ func (mr *MockRAMAPIMockRecorder) ListPrincipalsRequest(arg0 interface{}) *gomoc
 }
 
 // ListPrincipalsWithContext mocks base method
-func (m *MockRAMAPI) ListPrincipalsWithContext(arg0 aws.Context, arg1 *ram.ListPrincipalsInput, arg2 ...request.Option) (*ram.ListPrincipalsOutput, error) {
+func (m *MockRAMAPI) ListPrincipalsWithContext(arg0 context.Context, arg1 *ram.ListPrincipalsInput, arg2 ...request.Option) (*ram.ListPrincipalsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -780,7 +780,7 @@ func (mr *MockRAMAPIMockRecorder) ListResourcesPages(arg0, arg1 interface{}) *go
 }
 
 // ListResourcesPagesWithContext mocks base method
-func (m *MockRAMAPI) ListResourcesPagesWithContext(arg0 aws.Context, arg1 *ram.ListResourcesInput, arg2 func(*ram.ListResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRAMAPI) ListResourcesPagesWithContext(arg0 context.Context, arg1 *ram.ListResourcesInput, arg2 func(*ram.ListResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -814,7 +814,7 @@ func (mr *MockRAMAPIMockRecorder) ListResourcesRequest(arg0 interface{}) *gomock
 }
 
 // ListResourcesWithContext mocks base method
-func (m *MockRAMAPI) ListResourcesWithContext(arg0 aws.Context, arg1 *ram.ListResourcesInput, arg2 ...request.Option) (*ram.ListResourcesOutput, error) {
+func (m *MockRAMAPI) ListResourcesWithContext(arg0 context.Context, arg1 *ram.ListResourcesInput, arg2 ...request.Option) (*ram.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -864,7 +864,7 @@ func (mr *MockRAMAPIMockRecorder) RejectResourceShareInvitationRequest(arg0 inte
 }
 
 // RejectResourceShareInvitationWithContext mocks base method
-func (m *MockRAMAPI) RejectResourceShareInvitationWithContext(arg0 aws.Context, arg1 *ram.RejectResourceShareInvitationInput, arg2 ...request.Option) (*ram.RejectResourceShareInvitationOutput, error) {
+func (m *MockRAMAPI) RejectResourceShareInvitationWithContext(arg0 context.Context, arg1 *ram.RejectResourceShareInvitationInput, arg2 ...request.Option) (*ram.RejectResourceShareInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -914,7 +914,7 @@ func (mr *MockRAMAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.C
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockRAMAPI) TagResourceWithContext(arg0 aws.Context, arg1 *ram.TagResourceInput, arg2 ...request.Option) (*ram.TagResourceOutput, error) {
+func (m *MockRAMAPI) TagResourceWithContext(arg0 context.Context, arg1 *ram.TagResourceInput, arg2 ...request.Option) (*ram.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -964,7 +964,7 @@ func (mr *MockRAMAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockRAMAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *ram.UntagResourceInput, arg2 ...request.Option) (*ram.UntagResourceOutput, error) {
+func (m *MockRAMAPI) UntagResourceWithContext(arg0 context.Context, arg1 *ram.UntagResourceInput, arg2 ...request.Option) (*ram.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1014,7 +1014,7 @@ func (mr *MockRAMAPIMockRecorder) UpdateResourceShareRequest(arg0 interface{}) *
 }
 
 // UpdateResourceShareWithContext mocks base method
-func (m *MockRAMAPI) UpdateResourceShareWithContext(arg0 aws.Context, arg1 *ram.UpdateResourceShareInput, arg2 ...request.Option) (*ram.UpdateResourceShareOutput, error) {
+func (m *MockRAMAPI) UpdateResourceShareWithContext(arg0 context.Context, arg1 *ram.UpdateResourceShareInput, arg2 ...request.Option) (*ram.UpdateResourceShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

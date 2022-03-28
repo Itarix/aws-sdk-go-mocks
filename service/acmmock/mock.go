@@ -5,7 +5,7 @@
 package acmmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	acm "github.com/aws/aws-sdk-go/service/acm"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockACMAPIMockRecorder) AddTagsToCertificateRequest(arg0 interface{}) 
 }
 
 // AddTagsToCertificateWithContext mocks base method
-func (m *MockACMAPI) AddTagsToCertificateWithContext(arg0 aws.Context, arg1 *acm.AddTagsToCertificateInput, arg2 ...request.Option) (*acm.AddTagsToCertificateOutput, error) {
+func (m *MockACMAPI) AddTagsToCertificateWithContext(arg0 context.Context, arg1 *acm.AddTagsToCertificateInput, arg2 ...request.Option) (*acm.AddTagsToCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockACMAPIMockRecorder) DeleteCertificateRequest(arg0 interface{}) *go
 }
 
 // DeleteCertificateWithContext mocks base method
-func (m *MockACMAPI) DeleteCertificateWithContext(arg0 aws.Context, arg1 *acm.DeleteCertificateInput, arg2 ...request.Option) (*acm.DeleteCertificateOutput, error) {
+func (m *MockACMAPI) DeleteCertificateWithContext(arg0 context.Context, arg1 *acm.DeleteCertificateInput, arg2 ...request.Option) (*acm.DeleteCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockACMAPIMockRecorder) DescribeCertificateRequest(arg0 interface{}) *
 }
 
 // DescribeCertificateWithContext mocks base method
-func (m *MockACMAPI) DescribeCertificateWithContext(arg0 aws.Context, arg1 *acm.DescribeCertificateInput, arg2 ...request.Option) (*acm.DescribeCertificateOutput, error) {
+func (m *MockACMAPI) DescribeCertificateWithContext(arg0 context.Context, arg1 *acm.DescribeCertificateInput, arg2 ...request.Option) (*acm.DescribeCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockACMAPIMockRecorder) ExportCertificateRequest(arg0 interface{}) *go
 }
 
 // ExportCertificateWithContext mocks base method
-func (m *MockACMAPI) ExportCertificateWithContext(arg0 aws.Context, arg1 *acm.ExportCertificateInput, arg2 ...request.Option) (*acm.ExportCertificateOutput, error) {
+func (m *MockACMAPI) ExportCertificateWithContext(arg0 context.Context, arg1 *acm.ExportCertificateInput, arg2 ...request.Option) (*acm.ExportCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockACMAPIMockRecorder) GetCertificateRequest(arg0 interface{}) *gomoc
 }
 
 // GetCertificateWithContext mocks base method
-func (m *MockACMAPI) GetCertificateWithContext(arg0 aws.Context, arg1 *acm.GetCertificateInput, arg2 ...request.Option) (*acm.GetCertificateOutput, error) {
+func (m *MockACMAPI) GetCertificateWithContext(arg0 context.Context, arg1 *acm.GetCertificateInput, arg2 ...request.Option) (*acm.GetCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockACMAPIMockRecorder) ImportCertificateRequest(arg0 interface{}) *go
 }
 
 // ImportCertificateWithContext mocks base method
-func (m *MockACMAPI) ImportCertificateWithContext(arg0 aws.Context, arg1 *acm.ImportCertificateInput, arg2 ...request.Option) (*acm.ImportCertificateOutput, error) {
+func (m *MockACMAPI) ImportCertificateWithContext(arg0 context.Context, arg1 *acm.ImportCertificateInput, arg2 ...request.Option) (*acm.ImportCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockACMAPIMockRecorder) ListCertificatesPages(arg0, arg1 interface{}) 
 }
 
 // ListCertificatesPagesWithContext mocks base method
-func (m *MockACMAPI) ListCertificatesPagesWithContext(arg0 aws.Context, arg1 *acm.ListCertificatesInput, arg2 func(*acm.ListCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockACMAPI) ListCertificatesPagesWithContext(arg0 context.Context, arg1 *acm.ListCertificatesInput, arg2 func(*acm.ListCertificatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockACMAPIMockRecorder) ListCertificatesRequest(arg0 interface{}) *gom
 }
 
 // ListCertificatesWithContext mocks base method
-func (m *MockACMAPI) ListCertificatesWithContext(arg0 aws.Context, arg1 *acm.ListCertificatesInput, arg2 ...request.Option) (*acm.ListCertificatesOutput, error) {
+func (m *MockACMAPI) ListCertificatesWithContext(arg0 context.Context, arg1 *acm.ListCertificatesInput, arg2 ...request.Option) (*acm.ListCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockACMAPIMockRecorder) ListTagsForCertificateRequest(arg0 interface{}
 }
 
 // ListTagsForCertificateWithContext mocks base method
-func (m *MockACMAPI) ListTagsForCertificateWithContext(arg0 aws.Context, arg1 *acm.ListTagsForCertificateInput, arg2 ...request.Option) (*acm.ListTagsForCertificateOutput, error) {
+func (m *MockACMAPI) ListTagsForCertificateWithContext(arg0 context.Context, arg1 *acm.ListTagsForCertificateInput, arg2 ...request.Option) (*acm.ListTagsForCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockACMAPIMockRecorder) RemoveTagsFromCertificateRequest(arg0 interfac
 }
 
 // RemoveTagsFromCertificateWithContext mocks base method
-func (m *MockACMAPI) RemoveTagsFromCertificateWithContext(arg0 aws.Context, arg1 *acm.RemoveTagsFromCertificateInput, arg2 ...request.Option) (*acm.RemoveTagsFromCertificateOutput, error) {
+func (m *MockACMAPI) RemoveTagsFromCertificateWithContext(arg0 context.Context, arg1 *acm.RemoveTagsFromCertificateInput, arg2 ...request.Option) (*acm.RemoveTagsFromCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockACMAPIMockRecorder) RequestCertificateRequest(arg0 interface{}) *g
 }
 
 // RequestCertificateWithContext mocks base method
-func (m *MockACMAPI) RequestCertificateWithContext(arg0 aws.Context, arg1 *acm.RequestCertificateInput, arg2 ...request.Option) (*acm.RequestCertificateOutput, error) {
+func (m *MockACMAPI) RequestCertificateWithContext(arg0 context.Context, arg1 *acm.RequestCertificateInput, arg2 ...request.Option) (*acm.RequestCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockACMAPIMockRecorder) ResendValidationEmailRequest(arg0 interface{})
 }
 
 // ResendValidationEmailWithContext mocks base method
-func (m *MockACMAPI) ResendValidationEmailWithContext(arg0 aws.Context, arg1 *acm.ResendValidationEmailInput, arg2 ...request.Option) (*acm.ResendValidationEmailOutput, error) {
+func (m *MockACMAPI) ResendValidationEmailWithContext(arg0 context.Context, arg1 *acm.ResendValidationEmailInput, arg2 ...request.Option) (*acm.ResendValidationEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockACMAPIMockRecorder) UpdateCertificateOptionsRequest(arg0 interface
 }
 
 // UpdateCertificateOptionsWithContext mocks base method
-func (m *MockACMAPI) UpdateCertificateOptionsWithContext(arg0 aws.Context, arg1 *acm.UpdateCertificateOptionsInput, arg2 ...request.Option) (*acm.UpdateCertificateOptionsOutput, error) {
+func (m *MockACMAPI) UpdateCertificateOptionsWithContext(arg0 context.Context, arg1 *acm.UpdateCertificateOptionsInput, arg2 ...request.Option) (*acm.UpdateCertificateOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -683,7 +683,7 @@ func (mr *MockACMAPIMockRecorder) WaitUntilCertificateValidated(arg0 interface{}
 }
 
 // WaitUntilCertificateValidatedWithContext mocks base method
-func (m *MockACMAPI) WaitUntilCertificateValidatedWithContext(arg0 aws.Context, arg1 *acm.DescribeCertificateInput, arg2 ...request.WaiterOption) error {
+func (m *MockACMAPI) WaitUntilCertificateValidatedWithContext(arg0 context.Context, arg1 *acm.DescribeCertificateInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

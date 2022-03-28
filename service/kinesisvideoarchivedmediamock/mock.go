@@ -5,7 +5,7 @@
 package kinesisvideoarchivedmediamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	kinesisvideoarchivedmedia "github.com/aws/aws-sdk-go/service/kinesisvideoarchivedmedia"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetHLSStreamingSessionUR
 }
 
 // GetHLSStreamingSessionURLWithContext mocks base method
-func (m *MockKinesisVideoArchivedMediaAPI) GetHLSStreamingSessionURLWithContext(arg0 aws.Context, arg1 *kinesisvideoarchivedmedia.GetHLSStreamingSessionURLInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.GetHLSStreamingSessionURLOutput, error) {
+func (m *MockKinesisVideoArchivedMediaAPI) GetHLSStreamingSessionURLWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.GetHLSStreamingSessionURLInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.GetHLSStreamingSessionURLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetMediaForFragmentListR
 }
 
 // GetMediaForFragmentListWithContext mocks base method
-func (m *MockKinesisVideoArchivedMediaAPI) GetMediaForFragmentListWithContext(arg0 aws.Context, arg1 *kinesisvideoarchivedmedia.GetMediaForFragmentListInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.GetMediaForFragmentListOutput, error) {
+func (m *MockKinesisVideoArchivedMediaAPI) GetMediaForFragmentListWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.GetMediaForFragmentListInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.GetMediaForFragmentListOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) ListFragmentsRequest(arg
 }
 
 // ListFragmentsWithContext mocks base method
-func (m *MockKinesisVideoArchivedMediaAPI) ListFragmentsWithContext(arg0 aws.Context, arg1 *kinesisvideoarchivedmedia.ListFragmentsInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.ListFragmentsOutput, error) {
+func (m *MockKinesisVideoArchivedMediaAPI) ListFragmentsWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.ListFragmentsInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.ListFragmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

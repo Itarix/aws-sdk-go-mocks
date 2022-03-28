@@ -5,7 +5,7 @@
 package robomakermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	robomaker "github.com/aws/aws-sdk-go/service/robomaker"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRoboMakerAPIMockRecorder) BatchDescribeSimulationJobRequest(arg0 i
 }
 
 // BatchDescribeSimulationJobWithContext mocks base method
-func (m *MockRoboMakerAPI) BatchDescribeSimulationJobWithContext(arg0 aws.Context, arg1 *robomaker.BatchDescribeSimulationJobInput, arg2 ...request.Option) (*robomaker.BatchDescribeSimulationJobOutput, error) {
+func (m *MockRoboMakerAPI) BatchDescribeSimulationJobWithContext(arg0 context.Context, arg1 *robomaker.BatchDescribeSimulationJobInput, arg2 ...request.Option) (*robomaker.BatchDescribeSimulationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CancelSimulationJobRequest(arg0 interfac
 }
 
 // CancelSimulationJobWithContext mocks base method
-func (m *MockRoboMakerAPI) CancelSimulationJobWithContext(arg0 aws.Context, arg1 *robomaker.CancelSimulationJobInput, arg2 ...request.Option) (*robomaker.CancelSimulationJobOutput, error) {
+func (m *MockRoboMakerAPI) CancelSimulationJobWithContext(arg0 context.Context, arg1 *robomaker.CancelSimulationJobInput, arg2 ...request.Option) (*robomaker.CancelSimulationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateDeploymentJobRequest(arg0 interfac
 }
 
 // CreateDeploymentJobWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateDeploymentJobWithContext(arg0 aws.Context, arg1 *robomaker.CreateDeploymentJobInput, arg2 ...request.Option) (*robomaker.CreateDeploymentJobOutput, error) {
+func (m *MockRoboMakerAPI) CreateDeploymentJobWithContext(arg0 context.Context, arg1 *robomaker.CreateDeploymentJobInput, arg2 ...request.Option) (*robomaker.CreateDeploymentJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateFleetRequest(arg0 interface{}) *go
 }
 
 // CreateFleetWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateFleetWithContext(arg0 aws.Context, arg1 *robomaker.CreateFleetInput, arg2 ...request.Option) (*robomaker.CreateFleetOutput, error) {
+func (m *MockRoboMakerAPI) CreateFleetWithContext(arg0 context.Context, arg1 *robomaker.CreateFleetInput, arg2 ...request.Option) (*robomaker.CreateFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -311,7 +311,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateRobotApplicationVersionRequest(arg
 }
 
 // CreateRobotApplicationVersionWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateRobotApplicationVersionWithContext(arg0 aws.Context, arg1 *robomaker.CreateRobotApplicationVersionInput, arg2 ...request.Option) (*robomaker.CreateRobotApplicationVersionOutput, error) {
+func (m *MockRoboMakerAPI) CreateRobotApplicationVersionWithContext(arg0 context.Context, arg1 *robomaker.CreateRobotApplicationVersionInput, arg2 ...request.Option) (*robomaker.CreateRobotApplicationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateRobotApplicationVersionWithContext
 }
 
 // CreateRobotApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateRobotApplicationWithContext(arg0 aws.Context, arg1 *robomaker.CreateRobotApplicationInput, arg2 ...request.Option) (*robomaker.CreateRobotApplicationOutput, error) {
+func (m *MockRoboMakerAPI) CreateRobotApplicationWithContext(arg0 context.Context, arg1 *robomaker.CreateRobotApplicationInput, arg2 ...request.Option) (*robomaker.CreateRobotApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateRobotRequest(arg0 interface{}) *go
 }
 
 // CreateRobotWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateRobotWithContext(arg0 aws.Context, arg1 *robomaker.CreateRobotInput, arg2 ...request.Option) (*robomaker.CreateRobotOutput, error) {
+func (m *MockRoboMakerAPI) CreateRobotWithContext(arg0 context.Context, arg1 *robomaker.CreateRobotInput, arg2 ...request.Option) (*robomaker.CreateRobotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -446,7 +446,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateSimulationApplicationVersionReques
 }
 
 // CreateSimulationApplicationVersionWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateSimulationApplicationVersionWithContext(arg0 aws.Context, arg1 *robomaker.CreateSimulationApplicationVersionInput, arg2 ...request.Option) (*robomaker.CreateSimulationApplicationVersionOutput, error) {
+func (m *MockRoboMakerAPI) CreateSimulationApplicationVersionWithContext(arg0 context.Context, arg1 *robomaker.CreateSimulationApplicationVersionInput, arg2 ...request.Option) (*robomaker.CreateSimulationApplicationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateSimulationApplicationVersionWithCo
 }
 
 // CreateSimulationApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateSimulationApplicationWithContext(arg0 aws.Context, arg1 *robomaker.CreateSimulationApplicationInput, arg2 ...request.Option) (*robomaker.CreateSimulationApplicationOutput, error) {
+func (m *MockRoboMakerAPI) CreateSimulationApplicationWithContext(arg0 context.Context, arg1 *robomaker.CreateSimulationApplicationInput, arg2 ...request.Option) (*robomaker.CreateSimulationApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateSimulationJobRequest(arg0 interfac
 }
 
 // CreateSimulationJobWithContext mocks base method
-func (m *MockRoboMakerAPI) CreateSimulationJobWithContext(arg0 aws.Context, arg1 *robomaker.CreateSimulationJobInput, arg2 ...request.Option) (*robomaker.CreateSimulationJobOutput, error) {
+func (m *MockRoboMakerAPI) CreateSimulationJobWithContext(arg0 context.Context, arg1 *robomaker.CreateSimulationJobInput, arg2 ...request.Option) (*robomaker.CreateSimulationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DeleteFleetRequest(arg0 interface{}) *go
 }
 
 // DeleteFleetWithContext mocks base method
-func (m *MockRoboMakerAPI) DeleteFleetWithContext(arg0 aws.Context, arg1 *robomaker.DeleteFleetInput, arg2 ...request.Option) (*robomaker.DeleteFleetOutput, error) {
+func (m *MockRoboMakerAPI) DeleteFleetWithContext(arg0 context.Context, arg1 *robomaker.DeleteFleetInput, arg2 ...request.Option) (*robomaker.DeleteFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DeleteRobotApplicationRequest(arg0 inter
 }
 
 // DeleteRobotApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) DeleteRobotApplicationWithContext(arg0 aws.Context, arg1 *robomaker.DeleteRobotApplicationInput, arg2 ...request.Option) (*robomaker.DeleteRobotApplicationOutput, error) {
+func (m *MockRoboMakerAPI) DeleteRobotApplicationWithContext(arg0 context.Context, arg1 *robomaker.DeleteRobotApplicationInput, arg2 ...request.Option) (*robomaker.DeleteRobotApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DeleteRobotRequest(arg0 interface{}) *go
 }
 
 // DeleteRobotWithContext mocks base method
-func (m *MockRoboMakerAPI) DeleteRobotWithContext(arg0 aws.Context, arg1 *robomaker.DeleteRobotInput, arg2 ...request.Option) (*robomaker.DeleteRobotOutput, error) {
+func (m *MockRoboMakerAPI) DeleteRobotWithContext(arg0 context.Context, arg1 *robomaker.DeleteRobotInput, arg2 ...request.Option) (*robomaker.DeleteRobotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DeleteSimulationApplicationRequest(arg0 
 }
 
 // DeleteSimulationApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) DeleteSimulationApplicationWithContext(arg0 aws.Context, arg1 *robomaker.DeleteSimulationApplicationInput, arg2 ...request.Option) (*robomaker.DeleteSimulationApplicationOutput, error) {
+func (m *MockRoboMakerAPI) DeleteSimulationApplicationWithContext(arg0 context.Context, arg1 *robomaker.DeleteSimulationApplicationInput, arg2 ...request.Option) (*robomaker.DeleteSimulationApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DeregisterRobotRequest(arg0 interface{})
 }
 
 // DeregisterRobotWithContext mocks base method
-func (m *MockRoboMakerAPI) DeregisterRobotWithContext(arg0 aws.Context, arg1 *robomaker.DeregisterRobotInput, arg2 ...request.Option) (*robomaker.DeregisterRobotOutput, error) {
+func (m *MockRoboMakerAPI) DeregisterRobotWithContext(arg0 context.Context, arg1 *robomaker.DeregisterRobotInput, arg2 ...request.Option) (*robomaker.DeregisterRobotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeDeploymentJobRequest(arg0 interf
 }
 
 // DescribeDeploymentJobWithContext mocks base method
-func (m *MockRoboMakerAPI) DescribeDeploymentJobWithContext(arg0 aws.Context, arg1 *robomaker.DescribeDeploymentJobInput, arg2 ...request.Option) (*robomaker.DescribeDeploymentJobOutput, error) {
+func (m *MockRoboMakerAPI) DescribeDeploymentJobWithContext(arg0 context.Context, arg1 *robomaker.DescribeDeploymentJobInput, arg2 ...request.Option) (*robomaker.DescribeDeploymentJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeFleetRequest(arg0 interface{}) *
 }
 
 // DescribeFleetWithContext mocks base method
-func (m *MockRoboMakerAPI) DescribeFleetWithContext(arg0 aws.Context, arg1 *robomaker.DescribeFleetInput, arg2 ...request.Option) (*robomaker.DescribeFleetOutput, error) {
+func (m *MockRoboMakerAPI) DescribeFleetWithContext(arg0 context.Context, arg1 *robomaker.DescribeFleetInput, arg2 ...request.Option) (*robomaker.DescribeFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -931,7 +931,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeRobotApplicationRequest(arg0 int
 }
 
 // DescribeRobotApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) DescribeRobotApplicationWithContext(arg0 aws.Context, arg1 *robomaker.DescribeRobotApplicationInput, arg2 ...request.Option) (*robomaker.DescribeRobotApplicationOutput, error) {
+func (m *MockRoboMakerAPI) DescribeRobotApplicationWithContext(arg0 context.Context, arg1 *robomaker.DescribeRobotApplicationInput, arg2 ...request.Option) (*robomaker.DescribeRobotApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeRobotRequest(arg0 interface{}) *
 }
 
 // DescribeRobotWithContext mocks base method
-func (m *MockRoboMakerAPI) DescribeRobotWithContext(arg0 aws.Context, arg1 *robomaker.DescribeRobotInput, arg2 ...request.Option) (*robomaker.DescribeRobotOutput, error) {
+func (m *MockRoboMakerAPI) DescribeRobotWithContext(arg0 context.Context, arg1 *robomaker.DescribeRobotInput, arg2 ...request.Option) (*robomaker.DescribeRobotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationApplicationRequest(arg
 }
 
 // DescribeSimulationApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) DescribeSimulationApplicationWithContext(arg0 aws.Context, arg1 *robomaker.DescribeSimulationApplicationInput, arg2 ...request.Option) (*robomaker.DescribeSimulationApplicationOutput, error) {
+func (m *MockRoboMakerAPI) DescribeSimulationApplicationWithContext(arg0 context.Context, arg1 *robomaker.DescribeSimulationApplicationInput, arg2 ...request.Option) (*robomaker.DescribeSimulationApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationJobRequest(arg0 interf
 }
 
 // DescribeSimulationJobWithContext mocks base method
-func (m *MockRoboMakerAPI) DescribeSimulationJobWithContext(arg0 aws.Context, arg1 *robomaker.DescribeSimulationJobInput, arg2 ...request.Option) (*robomaker.DescribeSimulationJobOutput, error) {
+func (m *MockRoboMakerAPI) DescribeSimulationJobWithContext(arg0 context.Context, arg1 *robomaker.DescribeSimulationJobInput, arg2 ...request.Option) (*robomaker.DescribeSimulationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockRoboMakerAPIMockRecorder) ListDeploymentJobsRequest(arg0 interface
 }
 
 // ListDeploymentJobsWithContext mocks base method
-func (m *MockRoboMakerAPI) ListDeploymentJobsWithContext(arg0 aws.Context, arg1 *robomaker.ListDeploymentJobsInput, arg2 ...request.Option) (*robomaker.ListDeploymentJobsOutput, error) {
+func (m *MockRoboMakerAPI) ListDeploymentJobsWithContext(arg0 context.Context, arg1 *robomaker.ListDeploymentJobsInput, arg2 ...request.Option) (*robomaker.ListDeploymentJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockRoboMakerAPIMockRecorder) ListFleetsRequest(arg0 interface{}) *gom
 }
 
 // ListFleetsWithContext mocks base method
-func (m *MockRoboMakerAPI) ListFleetsWithContext(arg0 aws.Context, arg1 *robomaker.ListFleetsInput, arg2 ...request.Option) (*robomaker.ListFleetsOutput, error) {
+func (m *MockRoboMakerAPI) ListFleetsWithContext(arg0 context.Context, arg1 *robomaker.ListFleetsInput, arg2 ...request.Option) (*robomaker.ListFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockRoboMakerAPIMockRecorder) ListRobotApplicationsRequest(arg0 interf
 }
 
 // ListRobotApplicationsWithContext mocks base method
-func (m *MockRoboMakerAPI) ListRobotApplicationsWithContext(arg0 aws.Context, arg1 *robomaker.ListRobotApplicationsInput, arg2 ...request.Option) (*robomaker.ListRobotApplicationsOutput, error) {
+func (m *MockRoboMakerAPI) ListRobotApplicationsWithContext(arg0 context.Context, arg1 *robomaker.ListRobotApplicationsInput, arg2 ...request.Option) (*robomaker.ListRobotApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockRoboMakerAPIMockRecorder) ListRobotsRequest(arg0 interface{}) *gom
 }
 
 // ListRobotsWithContext mocks base method
-func (m *MockRoboMakerAPI) ListRobotsWithContext(arg0 aws.Context, arg1 *robomaker.ListRobotsInput, arg2 ...request.Option) (*robomaker.ListRobotsOutput, error) {
+func (m *MockRoboMakerAPI) ListRobotsWithContext(arg0 context.Context, arg1 *robomaker.ListRobotsInput, arg2 ...request.Option) (*robomaker.ListRobotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockRoboMakerAPIMockRecorder) ListSimulationApplicationsRequest(arg0 i
 }
 
 // ListSimulationApplicationsWithContext mocks base method
-func (m *MockRoboMakerAPI) ListSimulationApplicationsWithContext(arg0 aws.Context, arg1 *robomaker.ListSimulationApplicationsInput, arg2 ...request.Option) (*robomaker.ListSimulationApplicationsOutput, error) {
+func (m *MockRoboMakerAPI) ListSimulationApplicationsWithContext(arg0 context.Context, arg1 *robomaker.ListSimulationApplicationsInput, arg2 ...request.Option) (*robomaker.ListSimulationApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockRoboMakerAPIMockRecorder) ListSimulationJobsRequest(arg0 interface
 }
 
 // ListSimulationJobsWithContext mocks base method
-func (m *MockRoboMakerAPI) ListSimulationJobsWithContext(arg0 aws.Context, arg1 *robomaker.ListSimulationJobsInput, arg2 ...request.Option) (*robomaker.ListSimulationJobsOutput, error) {
+func (m *MockRoboMakerAPI) ListSimulationJobsWithContext(arg0 context.Context, arg1 *robomaker.ListSimulationJobsInput, arg2 ...request.Option) (*robomaker.ListSimulationJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockRoboMakerAPIMockRecorder) RegisterRobotRequest(arg0 interface{}) *
 }
 
 // RegisterRobotWithContext mocks base method
-func (m *MockRoboMakerAPI) RegisterRobotWithContext(arg0 aws.Context, arg1 *robomaker.RegisterRobotInput, arg2 ...request.Option) (*robomaker.RegisterRobotOutput, error) {
+func (m *MockRoboMakerAPI) RegisterRobotWithContext(arg0 context.Context, arg1 *robomaker.RegisterRobotInput, arg2 ...request.Option) (*robomaker.RegisterRobotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockRoboMakerAPIMockRecorder) RestartSimulationJobRequest(arg0 interfa
 }
 
 // RestartSimulationJobWithContext mocks base method
-func (m *MockRoboMakerAPI) RestartSimulationJobWithContext(arg0 aws.Context, arg1 *robomaker.RestartSimulationJobInput, arg2 ...request.Option) (*robomaker.RestartSimulationJobOutput, error) {
+func (m *MockRoboMakerAPI) RestartSimulationJobWithContext(arg0 context.Context, arg1 *robomaker.RestartSimulationJobInput, arg2 ...request.Option) (*robomaker.RestartSimulationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockRoboMakerAPIMockRecorder) SyncDeploymentJobRequest(arg0 interface{
 }
 
 // SyncDeploymentJobWithContext mocks base method
-func (m *MockRoboMakerAPI) SyncDeploymentJobWithContext(arg0 aws.Context, arg1 *robomaker.SyncDeploymentJobInput, arg2 ...request.Option) (*robomaker.SyncDeploymentJobOutput, error) {
+func (m *MockRoboMakerAPI) SyncDeploymentJobWithContext(arg0 context.Context, arg1 *robomaker.SyncDeploymentJobInput, arg2 ...request.Option) (*robomaker.SyncDeploymentJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockRoboMakerAPIMockRecorder) UpdateRobotApplicationRequest(arg0 inter
 }
 
 // UpdateRobotApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) UpdateRobotApplicationWithContext(arg0 aws.Context, arg1 *robomaker.UpdateRobotApplicationInput, arg2 ...request.Option) (*robomaker.UpdateRobotApplicationOutput, error) {
+func (m *MockRoboMakerAPI) UpdateRobotApplicationWithContext(arg0 context.Context, arg1 *robomaker.UpdateRobotApplicationInput, arg2 ...request.Option) (*robomaker.UpdateRobotApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockRoboMakerAPIMockRecorder) UpdateSimulationApplicationRequest(arg0 
 }
 
 // UpdateSimulationApplicationWithContext mocks base method
-func (m *MockRoboMakerAPI) UpdateSimulationApplicationWithContext(arg0 aws.Context, arg1 *robomaker.UpdateSimulationApplicationInput, arg2 ...request.Option) (*robomaker.UpdateSimulationApplicationOutput, error) {
+func (m *MockRoboMakerAPI) UpdateSimulationApplicationWithContext(arg0 context.Context, arg1 *robomaker.UpdateSimulationApplicationInput, arg2 ...request.Option) (*robomaker.UpdateSimulationApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

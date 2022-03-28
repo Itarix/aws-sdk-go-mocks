@@ -5,7 +5,7 @@
 package appsyncmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	appsync "github.com/aws/aws-sdk-go/service/appsync"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAppSyncAPIMockRecorder) CreateApiKeyRequest(arg0 interface{}) *gom
 }
 
 // CreateApiKeyWithContext mocks base method
-func (m *MockAppSyncAPI) CreateApiKeyWithContext(arg0 aws.Context, arg1 *appsync.CreateApiKeyInput, arg2 ...request.Option) (*appsync.CreateApiKeyOutput, error) {
+func (m *MockAppSyncAPI) CreateApiKeyWithContext(arg0 context.Context, arg1 *appsync.CreateApiKeyInput, arg2 ...request.Option) (*appsync.CreateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAppSyncAPIMockRecorder) CreateDataSourceRequest(arg0 interface{}) 
 }
 
 // CreateDataSourceWithContext mocks base method
-func (m *MockAppSyncAPI) CreateDataSourceWithContext(arg0 aws.Context, arg1 *appsync.CreateDataSourceInput, arg2 ...request.Option) (*appsync.CreateDataSourceOutput, error) {
+func (m *MockAppSyncAPI) CreateDataSourceWithContext(arg0 context.Context, arg1 *appsync.CreateDataSourceInput, arg2 ...request.Option) (*appsync.CreateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAppSyncAPIMockRecorder) CreateFunctionRequest(arg0 interface{}) *g
 }
 
 // CreateFunctionWithContext mocks base method
-func (m *MockAppSyncAPI) CreateFunctionWithContext(arg0 aws.Context, arg1 *appsync.CreateFunctionInput, arg2 ...request.Option) (*appsync.CreateFunctionOutput, error) {
+func (m *MockAppSyncAPI) CreateFunctionWithContext(arg0 context.Context, arg1 *appsync.CreateFunctionInput, arg2 ...request.Option) (*appsync.CreateFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAppSyncAPIMockRecorder) CreateGraphqlApiRequest(arg0 interface{}) 
 }
 
 // CreateGraphqlApiWithContext mocks base method
-func (m *MockAppSyncAPI) CreateGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.CreateGraphqlApiInput, arg2 ...request.Option) (*appsync.CreateGraphqlApiOutput, error) {
+func (m *MockAppSyncAPI) CreateGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.CreateGraphqlApiInput, arg2 ...request.Option) (*appsync.CreateGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAppSyncAPIMockRecorder) CreateResolverRequest(arg0 interface{}) *g
 }
 
 // CreateResolverWithContext mocks base method
-func (m *MockAppSyncAPI) CreateResolverWithContext(arg0 aws.Context, arg1 *appsync.CreateResolverInput, arg2 ...request.Option) (*appsync.CreateResolverOutput, error) {
+func (m *MockAppSyncAPI) CreateResolverWithContext(arg0 context.Context, arg1 *appsync.CreateResolverInput, arg2 ...request.Option) (*appsync.CreateResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAppSyncAPIMockRecorder) CreateTypeRequest(arg0 interface{}) *gomoc
 }
 
 // CreateTypeWithContext mocks base method
-func (m *MockAppSyncAPI) CreateTypeWithContext(arg0 aws.Context, arg1 *appsync.CreateTypeInput, arg2 ...request.Option) (*appsync.CreateTypeOutput, error) {
+func (m *MockAppSyncAPI) CreateTypeWithContext(arg0 context.Context, arg1 *appsync.CreateTypeInput, arg2 ...request.Option) (*appsync.CreateTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteApiKeyRequest(arg0 interface{}) *gom
 }
 
 // DeleteApiKeyWithContext mocks base method
-func (m *MockAppSyncAPI) DeleteApiKeyWithContext(arg0 aws.Context, arg1 *appsync.DeleteApiKeyInput, arg2 ...request.Option) (*appsync.DeleteApiKeyOutput, error) {
+func (m *MockAppSyncAPI) DeleteApiKeyWithContext(arg0 context.Context, arg1 *appsync.DeleteApiKeyInput, arg2 ...request.Option) (*appsync.DeleteApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteDataSourceRequest(arg0 interface{}) 
 }
 
 // DeleteDataSourceWithContext mocks base method
-func (m *MockAppSyncAPI) DeleteDataSourceWithContext(arg0 aws.Context, arg1 *appsync.DeleteDataSourceInput, arg2 ...request.Option) (*appsync.DeleteDataSourceOutput, error) {
+func (m *MockAppSyncAPI) DeleteDataSourceWithContext(arg0 context.Context, arg1 *appsync.DeleteDataSourceInput, arg2 ...request.Option) (*appsync.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteFunctionRequest(arg0 interface{}) *g
 }
 
 // DeleteFunctionWithContext mocks base method
-func (m *MockAppSyncAPI) DeleteFunctionWithContext(arg0 aws.Context, arg1 *appsync.DeleteFunctionInput, arg2 ...request.Option) (*appsync.DeleteFunctionOutput, error) {
+func (m *MockAppSyncAPI) DeleteFunctionWithContext(arg0 context.Context, arg1 *appsync.DeleteFunctionInput, arg2 ...request.Option) (*appsync.DeleteFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteGraphqlApiRequest(arg0 interface{}) 
 }
 
 // DeleteGraphqlApiWithContext mocks base method
-func (m *MockAppSyncAPI) DeleteGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.DeleteGraphqlApiInput, arg2 ...request.Option) (*appsync.DeleteGraphqlApiOutput, error) {
+func (m *MockAppSyncAPI) DeleteGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.DeleteGraphqlApiInput, arg2 ...request.Option) (*appsync.DeleteGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteResolverRequest(arg0 interface{}) *g
 }
 
 // DeleteResolverWithContext mocks base method
-func (m *MockAppSyncAPI) DeleteResolverWithContext(arg0 aws.Context, arg1 *appsync.DeleteResolverInput, arg2 ...request.Option) (*appsync.DeleteResolverOutput, error) {
+func (m *MockAppSyncAPI) DeleteResolverWithContext(arg0 context.Context, arg1 *appsync.DeleteResolverInput, arg2 ...request.Option) (*appsync.DeleteResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteTypeRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteTypeWithContext mocks base method
-func (m *MockAppSyncAPI) DeleteTypeWithContext(arg0 aws.Context, arg1 *appsync.DeleteTypeInput, arg2 ...request.Option) (*appsync.DeleteTypeOutput, error) {
+func (m *MockAppSyncAPI) DeleteTypeWithContext(arg0 context.Context, arg1 *appsync.DeleteTypeInput, arg2 ...request.Option) (*appsync.DeleteTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetDataSourceRequest(arg0 interface{}) *go
 }
 
 // GetDataSourceWithContext mocks base method
-func (m *MockAppSyncAPI) GetDataSourceWithContext(arg0 aws.Context, arg1 *appsync.GetDataSourceInput, arg2 ...request.Option) (*appsync.GetDataSourceOutput, error) {
+func (m *MockAppSyncAPI) GetDataSourceWithContext(arg0 context.Context, arg1 *appsync.GetDataSourceInput, arg2 ...request.Option) (*appsync.GetDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetFunctionRequest(arg0 interface{}) *gomo
 }
 
 // GetFunctionWithContext mocks base method
-func (m *MockAppSyncAPI) GetFunctionWithContext(arg0 aws.Context, arg1 *appsync.GetFunctionInput, arg2 ...request.Option) (*appsync.GetFunctionOutput, error) {
+func (m *MockAppSyncAPI) GetFunctionWithContext(arg0 context.Context, arg1 *appsync.GetFunctionInput, arg2 ...request.Option) (*appsync.GetFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetGraphqlApiRequest(arg0 interface{}) *go
 }
 
 // GetGraphqlApiWithContext mocks base method
-func (m *MockAppSyncAPI) GetGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.GetGraphqlApiInput, arg2 ...request.Option) (*appsync.GetGraphqlApiOutput, error) {
+func (m *MockAppSyncAPI) GetGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.GetGraphqlApiInput, arg2 ...request.Option) (*appsync.GetGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetIntrospectionSchemaRequest(arg0 interfa
 }
 
 // GetIntrospectionSchemaWithContext mocks base method
-func (m *MockAppSyncAPI) GetIntrospectionSchemaWithContext(arg0 aws.Context, arg1 *appsync.GetIntrospectionSchemaInput, arg2 ...request.Option) (*appsync.GetIntrospectionSchemaOutput, error) {
+func (m *MockAppSyncAPI) GetIntrospectionSchemaWithContext(arg0 context.Context, arg1 *appsync.GetIntrospectionSchemaInput, arg2 ...request.Option) (*appsync.GetIntrospectionSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetResolverRequest(arg0 interface{}) *gomo
 }
 
 // GetResolverWithContext mocks base method
-func (m *MockAppSyncAPI) GetResolverWithContext(arg0 aws.Context, arg1 *appsync.GetResolverInput, arg2 ...request.Option) (*appsync.GetResolverOutput, error) {
+func (m *MockAppSyncAPI) GetResolverWithContext(arg0 context.Context, arg1 *appsync.GetResolverInput, arg2 ...request.Option) (*appsync.GetResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetSchemaCreationStatusRequest(arg0 interf
 }
 
 // GetSchemaCreationStatusWithContext mocks base method
-func (m *MockAppSyncAPI) GetSchemaCreationStatusWithContext(arg0 aws.Context, arg1 *appsync.GetSchemaCreationStatusInput, arg2 ...request.Option) (*appsync.GetSchemaCreationStatusOutput, error) {
+func (m *MockAppSyncAPI) GetSchemaCreationStatusWithContext(arg0 context.Context, arg1 *appsync.GetSchemaCreationStatusInput, arg2 ...request.Option) (*appsync.GetSchemaCreationStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockAppSyncAPIMockRecorder) GetTypeRequest(arg0 interface{}) *gomock.C
 }
 
 // GetTypeWithContext mocks base method
-func (m *MockAppSyncAPI) GetTypeWithContext(arg0 aws.Context, arg1 *appsync.GetTypeInput, arg2 ...request.Option) (*appsync.GetTypeOutput, error) {
+func (m *MockAppSyncAPI) GetTypeWithContext(arg0 context.Context, arg1 *appsync.GetTypeInput, arg2 ...request.Option) (*appsync.GetTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListApiKeysRequest(arg0 interface{}) *gomo
 }
 
 // ListApiKeysWithContext mocks base method
-func (m *MockAppSyncAPI) ListApiKeysWithContext(arg0 aws.Context, arg1 *appsync.ListApiKeysInput, arg2 ...request.Option) (*appsync.ListApiKeysOutput, error) {
+func (m *MockAppSyncAPI) ListApiKeysWithContext(arg0 context.Context, arg1 *appsync.ListApiKeysInput, arg2 ...request.Option) (*appsync.ListApiKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListDataSourcesRequest(arg0 interface{}) *
 }
 
 // ListDataSourcesWithContext mocks base method
-func (m *MockAppSyncAPI) ListDataSourcesWithContext(arg0 aws.Context, arg1 *appsync.ListDataSourcesInput, arg2 ...request.Option) (*appsync.ListDataSourcesOutput, error) {
+func (m *MockAppSyncAPI) ListDataSourcesWithContext(arg0 context.Context, arg1 *appsync.ListDataSourcesInput, arg2 ...request.Option) (*appsync.ListDataSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListFunctionsRequest(arg0 interface{}) *go
 }
 
 // ListFunctionsWithContext mocks base method
-func (m *MockAppSyncAPI) ListFunctionsWithContext(arg0 aws.Context, arg1 *appsync.ListFunctionsInput, arg2 ...request.Option) (*appsync.ListFunctionsOutput, error) {
+func (m *MockAppSyncAPI) ListFunctionsWithContext(arg0 context.Context, arg1 *appsync.ListFunctionsInput, arg2 ...request.Option) (*appsync.ListFunctionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApisRequest(arg0 interface{}) *
 }
 
 // ListGraphqlApisWithContext mocks base method
-func (m *MockAppSyncAPI) ListGraphqlApisWithContext(arg0 aws.Context, arg1 *appsync.ListGraphqlApisInput, arg2 ...request.Option) (*appsync.ListGraphqlApisOutput, error) {
+func (m *MockAppSyncAPI) ListGraphqlApisWithContext(arg0 context.Context, arg1 *appsync.ListGraphqlApisInput, arg2 ...request.Option) (*appsync.ListGraphqlApisOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunctionRequest(arg0 interf
 }
 
 // ListResolversByFunctionWithContext mocks base method
-func (m *MockAppSyncAPI) ListResolversByFunctionWithContext(arg0 aws.Context, arg1 *appsync.ListResolversByFunctionInput, arg2 ...request.Option) (*appsync.ListResolversByFunctionOutput, error) {
+func (m *MockAppSyncAPI) ListResolversByFunctionWithContext(arg0 context.Context, arg1 *appsync.ListResolversByFunctionInput, arg2 ...request.Option) (*appsync.ListResolversByFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListResolversRequest(arg0 interface{}) *go
 }
 
 // ListResolversWithContext mocks base method
-func (m *MockAppSyncAPI) ListResolversWithContext(arg0 aws.Context, arg1 *appsync.ListResolversInput, arg2 ...request.Option) (*appsync.ListResolversOutput, error) {
+func (m *MockAppSyncAPI) ListResolversWithContext(arg0 context.Context, arg1 *appsync.ListResolversInput, arg2 ...request.Option) (*appsync.ListResolversOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockAppSyncAPIMockRecorder) ListTypesRequest(arg0 interface{}) *gomock
 }
 
 // ListTypesWithContext mocks base method
-func (m *MockAppSyncAPI) ListTypesWithContext(arg0 aws.Context, arg1 *appsync.ListTypesInput, arg2 ...request.Option) (*appsync.ListTypesOutput, error) {
+func (m *MockAppSyncAPI) ListTypesWithContext(arg0 context.Context, arg1 *appsync.ListTypesInput, arg2 ...request.Option) (*appsync.ListTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockAppSyncAPIMockRecorder) StartSchemaCreationRequest(arg0 interface{
 }
 
 // StartSchemaCreationWithContext mocks base method
-func (m *MockAppSyncAPI) StartSchemaCreationWithContext(arg0 aws.Context, arg1 *appsync.StartSchemaCreationInput, arg2 ...request.Option) (*appsync.StartSchemaCreationOutput, error) {
+func (m *MockAppSyncAPI) StartSchemaCreationWithContext(arg0 context.Context, arg1 *appsync.StartSchemaCreationInput, arg2 ...request.Option) (*appsync.StartSchemaCreationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateApiKeyRequest(arg0 interface{}) *gom
 }
 
 // UpdateApiKeyWithContext mocks base method
-func (m *MockAppSyncAPI) UpdateApiKeyWithContext(arg0 aws.Context, arg1 *appsync.UpdateApiKeyInput, arg2 ...request.Option) (*appsync.UpdateApiKeyOutput, error) {
+func (m *MockAppSyncAPI) UpdateApiKeyWithContext(arg0 context.Context, arg1 *appsync.UpdateApiKeyInput, arg2 ...request.Option) (*appsync.UpdateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateDataSourceRequest(arg0 interface{}) 
 }
 
 // UpdateDataSourceWithContext mocks base method
-func (m *MockAppSyncAPI) UpdateDataSourceWithContext(arg0 aws.Context, arg1 *appsync.UpdateDataSourceInput, arg2 ...request.Option) (*appsync.UpdateDataSourceOutput, error) {
+func (m *MockAppSyncAPI) UpdateDataSourceWithContext(arg0 context.Context, arg1 *appsync.UpdateDataSourceInput, arg2 ...request.Option) (*appsync.UpdateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateFunctionRequest(arg0 interface{}) *g
 }
 
 // UpdateFunctionWithContext mocks base method
-func (m *MockAppSyncAPI) UpdateFunctionWithContext(arg0 aws.Context, arg1 *appsync.UpdateFunctionInput, arg2 ...request.Option) (*appsync.UpdateFunctionOutput, error) {
+func (m *MockAppSyncAPI) UpdateFunctionWithContext(arg0 context.Context, arg1 *appsync.UpdateFunctionInput, arg2 ...request.Option) (*appsync.UpdateFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateGraphqlApiRequest(arg0 interface{}) 
 }
 
 // UpdateGraphqlApiWithContext mocks base method
-func (m *MockAppSyncAPI) UpdateGraphqlApiWithContext(arg0 aws.Context, arg1 *appsync.UpdateGraphqlApiInput, arg2 ...request.Option) (*appsync.UpdateGraphqlApiOutput, error) {
+func (m *MockAppSyncAPI) UpdateGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.UpdateGraphqlApiInput, arg2 ...request.Option) (*appsync.UpdateGraphqlApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateResolverRequest(arg0 interface{}) *g
 }
 
 // UpdateResolverWithContext mocks base method
-func (m *MockAppSyncAPI) UpdateResolverWithContext(arg0 aws.Context, arg1 *appsync.UpdateResolverInput, arg2 ...request.Option) (*appsync.UpdateResolverOutput, error) {
+func (m *MockAppSyncAPI) UpdateResolverWithContext(arg0 context.Context, arg1 *appsync.UpdateResolverInput, arg2 ...request.Option) (*appsync.UpdateResolverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateTypeRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateTypeWithContext mocks base method
-func (m *MockAppSyncAPI) UpdateTypeWithContext(arg0 aws.Context, arg1 *appsync.UpdateTypeInput, arg2 ...request.Option) (*appsync.UpdateTypeOutput, error) {
+func (m *MockAppSyncAPI) UpdateTypeWithContext(arg0 context.Context, arg1 *appsync.UpdateTypeInput, arg2 ...request.Option) (*appsync.UpdateTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

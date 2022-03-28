@@ -5,7 +5,7 @@
 package supportmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	support "github.com/aws/aws-sdk-go/service/support"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSupportAPIMockRecorder) AddAttachmentsToSetRequest(arg0 interface{
 }
 
 // AddAttachmentsToSetWithContext mocks base method
-func (m *MockSupportAPI) AddAttachmentsToSetWithContext(arg0 aws.Context, arg1 *support.AddAttachmentsToSetInput, arg2 ...request.Option) (*support.AddAttachmentsToSetOutput, error) {
+func (m *MockSupportAPI) AddAttachmentsToSetWithContext(arg0 context.Context, arg1 *support.AddAttachmentsToSetInput, arg2 ...request.Option) (*support.AddAttachmentsToSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSupportAPIMockRecorder) AddCommunicationToCaseRequest(arg0 interfa
 }
 
 // AddCommunicationToCaseWithContext mocks base method
-func (m *MockSupportAPI) AddCommunicationToCaseWithContext(arg0 aws.Context, arg1 *support.AddCommunicationToCaseInput, arg2 ...request.Option) (*support.AddCommunicationToCaseOutput, error) {
+func (m *MockSupportAPI) AddCommunicationToCaseWithContext(arg0 context.Context, arg1 *support.AddCommunicationToCaseInput, arg2 ...request.Option) (*support.AddCommunicationToCaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSupportAPIMockRecorder) CreateCaseRequest(arg0 interface{}) *gomoc
 }
 
 // CreateCaseWithContext mocks base method
-func (m *MockSupportAPI) CreateCaseWithContext(arg0 aws.Context, arg1 *support.CreateCaseInput, arg2 ...request.Option) (*support.CreateCaseOutput, error) {
+func (m *MockSupportAPI) CreateCaseWithContext(arg0 context.Context, arg1 *support.CreateCaseInput, arg2 ...request.Option) (*support.CreateCaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeAttachmentRequest(arg0 interface{}
 }
 
 // DescribeAttachmentWithContext mocks base method
-func (m *MockSupportAPI) DescribeAttachmentWithContext(arg0 aws.Context, arg1 *support.DescribeAttachmentInput, arg2 ...request.Option) (*support.DescribeAttachmentOutput, error) {
+func (m *MockSupportAPI) DescribeAttachmentWithContext(arg0 context.Context, arg1 *support.DescribeAttachmentInput, arg2 ...request.Option) (*support.DescribeAttachmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -265,7 +265,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeCasesPages(arg0, arg1 interface{})
 }
 
 // DescribeCasesPagesWithContext mocks base method
-func (m *MockSupportAPI) DescribeCasesPagesWithContext(arg0 aws.Context, arg1 *support.DescribeCasesInput, arg2 func(*support.DescribeCasesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSupportAPI) DescribeCasesPagesWithContext(arg0 context.Context, arg1 *support.DescribeCasesInput, arg2 func(*support.DescribeCasesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -299,7 +299,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeCasesRequest(arg0 interface{}) *go
 }
 
 // DescribeCasesWithContext mocks base method
-func (m *MockSupportAPI) DescribeCasesWithContext(arg0 aws.Context, arg1 *support.DescribeCasesInput, arg2 ...request.Option) (*support.DescribeCasesOutput, error) {
+func (m *MockSupportAPI) DescribeCasesWithContext(arg0 context.Context, arg1 *support.DescribeCasesInput, arg2 ...request.Option) (*support.DescribeCasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -348,7 +348,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeCommunicationsPages(arg0, arg1 int
 }
 
 // DescribeCommunicationsPagesWithContext mocks base method
-func (m *MockSupportAPI) DescribeCommunicationsPagesWithContext(arg0 aws.Context, arg1 *support.DescribeCommunicationsInput, arg2 func(*support.DescribeCommunicationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSupportAPI) DescribeCommunicationsPagesWithContext(arg0 context.Context, arg1 *support.DescribeCommunicationsInput, arg2 func(*support.DescribeCommunicationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -382,7 +382,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeCommunicationsRequest(arg0 interfa
 }
 
 // DescribeCommunicationsWithContext mocks base method
-func (m *MockSupportAPI) DescribeCommunicationsWithContext(arg0 aws.Context, arg1 *support.DescribeCommunicationsInput, arg2 ...request.Option) (*support.DescribeCommunicationsOutput, error) {
+func (m *MockSupportAPI) DescribeCommunicationsWithContext(arg0 context.Context, arg1 *support.DescribeCommunicationsInput, arg2 ...request.Option) (*support.DescribeCommunicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -432,7 +432,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeServicesRequest(arg0 interface{}) 
 }
 
 // DescribeServicesWithContext mocks base method
-func (m *MockSupportAPI) DescribeServicesWithContext(arg0 aws.Context, arg1 *support.DescribeServicesInput, arg2 ...request.Option) (*support.DescribeServicesOutput, error) {
+func (m *MockSupportAPI) DescribeServicesWithContext(arg0 context.Context, arg1 *support.DescribeServicesInput, arg2 ...request.Option) (*support.DescribeServicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -482,7 +482,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeSeverityLevelsRequest(arg0 interfa
 }
 
 // DescribeSeverityLevelsWithContext mocks base method
-func (m *MockSupportAPI) DescribeSeverityLevelsWithContext(arg0 aws.Context, arg1 *support.DescribeSeverityLevelsInput, arg2 ...request.Option) (*support.DescribeSeverityLevelsOutput, error) {
+func (m *MockSupportAPI) DescribeSeverityLevelsWithContext(arg0 context.Context, arg1 *support.DescribeSeverityLevelsInput, arg2 ...request.Option) (*support.DescribeSeverityLevelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeTrustedAdvisorCheckRefreshStatuses
 }
 
 // DescribeTrustedAdvisorCheckRefreshStatusesWithContext mocks base method
-func (m *MockSupportAPI) DescribeTrustedAdvisorCheckRefreshStatusesWithContext(arg0 aws.Context, arg1 *support.DescribeTrustedAdvisorCheckRefreshStatusesInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorCheckRefreshStatusesOutput, error) {
+func (m *MockSupportAPI) DescribeTrustedAdvisorCheckRefreshStatusesWithContext(arg0 context.Context, arg1 *support.DescribeTrustedAdvisorCheckRefreshStatusesInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorCheckRefreshStatusesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -582,7 +582,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeTrustedAdvisorCheckResultRequest(a
 }
 
 // DescribeTrustedAdvisorCheckResultWithContext mocks base method
-func (m *MockSupportAPI) DescribeTrustedAdvisorCheckResultWithContext(arg0 aws.Context, arg1 *support.DescribeTrustedAdvisorCheckResultInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorCheckResultOutput, error) {
+func (m *MockSupportAPI) DescribeTrustedAdvisorCheckResultWithContext(arg0 context.Context, arg1 *support.DescribeTrustedAdvisorCheckResultInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorCheckResultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeTrustedAdvisorCheckSummariesReques
 }
 
 // DescribeTrustedAdvisorCheckSummariesWithContext mocks base method
-func (m *MockSupportAPI) DescribeTrustedAdvisorCheckSummariesWithContext(arg0 aws.Context, arg1 *support.DescribeTrustedAdvisorCheckSummariesInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorCheckSummariesOutput, error) {
+func (m *MockSupportAPI) DescribeTrustedAdvisorCheckSummariesWithContext(arg0 context.Context, arg1 *support.DescribeTrustedAdvisorCheckSummariesInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorCheckSummariesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockSupportAPIMockRecorder) DescribeTrustedAdvisorChecksRequest(arg0 i
 }
 
 // DescribeTrustedAdvisorChecksWithContext mocks base method
-func (m *MockSupportAPI) DescribeTrustedAdvisorChecksWithContext(arg0 aws.Context, arg1 *support.DescribeTrustedAdvisorChecksInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorChecksOutput, error) {
+func (m *MockSupportAPI) DescribeTrustedAdvisorChecksWithContext(arg0 context.Context, arg1 *support.DescribeTrustedAdvisorChecksInput, arg2 ...request.Option) (*support.DescribeTrustedAdvisorChecksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -732,7 +732,7 @@ func (mr *MockSupportAPIMockRecorder) RefreshTrustedAdvisorCheckRequest(arg0 int
 }
 
 // RefreshTrustedAdvisorCheckWithContext mocks base method
-func (m *MockSupportAPI) RefreshTrustedAdvisorCheckWithContext(arg0 aws.Context, arg1 *support.RefreshTrustedAdvisorCheckInput, arg2 ...request.Option) (*support.RefreshTrustedAdvisorCheckOutput, error) {
+func (m *MockSupportAPI) RefreshTrustedAdvisorCheckWithContext(arg0 context.Context, arg1 *support.RefreshTrustedAdvisorCheckInput, arg2 ...request.Option) (*support.RefreshTrustedAdvisorCheckOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -782,7 +782,7 @@ func (mr *MockSupportAPIMockRecorder) ResolveCaseRequest(arg0 interface{}) *gomo
 }
 
 // ResolveCaseWithContext mocks base method
-func (m *MockSupportAPI) ResolveCaseWithContext(arg0 aws.Context, arg1 *support.ResolveCaseInput, arg2 ...request.Option) (*support.ResolveCaseOutput, error) {
+func (m *MockSupportAPI) ResolveCaseWithContext(arg0 context.Context, arg1 *support.ResolveCaseInput, arg2 ...request.Option) (*support.ResolveCaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package serverlessapplicationrepositorymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	serverlessapplicationrepository "github.com/aws/aws-sdk-go/service/serverlessapplicationrepository"
 	gomock "github.com/golang/mock/gomock"
@@ -96,7 +96,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateApplicationV
 }
 
 // CreateApplicationVersionWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) CreateApplicationVersionWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.CreateApplicationVersionRequest, arg2 ...request.Option) (*serverlessapplicationrepository.CreateApplicationVersionOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) CreateApplicationVersionWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.CreateApplicationVersionRequest, arg2 ...request.Option) (*serverlessapplicationrepository.CreateApplicationVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateApplicationV
 }
 
 // CreateApplicationWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) CreateApplicationWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.CreateApplicationRequest, arg2 ...request.Option) (*serverlessapplicationrepository.CreateApplicationOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.CreateApplicationRequest, arg2 ...request.Option) (*serverlessapplicationrepository.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateCloudFormati
 }
 
 // CreateCloudFormationChangeSetWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationChangeSetWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.CreateCloudFormationChangeSetRequest, arg2 ...request.Option) (*serverlessapplicationrepository.CreateCloudFormationChangeSetOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationChangeSetWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.CreateCloudFormationChangeSetRequest, arg2 ...request.Option) (*serverlessapplicationrepository.CreateCloudFormationChangeSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) CreateCloudFormati
 }
 
 // CreateCloudFormationTemplateWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationTemplateWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.CreateCloudFormationTemplateInput, arg2 ...request.Option) (*serverlessapplicationrepository.CreateCloudFormationTemplateOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) CreateCloudFormationTemplateWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.CreateCloudFormationTemplateInput, arg2 ...request.Option) (*serverlessapplicationrepository.CreateCloudFormationTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) DeleteApplicationR
 }
 
 // DeleteApplicationWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) DeleteApplicationWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.DeleteApplicationInput, arg2 ...request.Option) (*serverlessapplicationrepository.DeleteApplicationOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.DeleteApplicationInput, arg2 ...request.Option) (*serverlessapplicationrepository.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetApplicationPoli
 }
 
 // GetApplicationPolicyWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) GetApplicationPolicyWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.GetApplicationPolicyInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetApplicationPolicyOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) GetApplicationPolicyWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.GetApplicationPolicyInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetApplicationPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetApplicationRequ
 }
 
 // GetApplicationWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) GetApplicationWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.GetApplicationInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetApplicationOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) GetApplicationWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.GetApplicationInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) GetCloudFormationT
 }
 
 // GetCloudFormationTemplateWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) GetCloudFormationTemplateWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.GetCloudFormationTemplateInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetCloudFormationTemplateOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) GetCloudFormationTemplateWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.GetCloudFormationTemplateInput, arg2 ...request.Option) (*serverlessapplicationrepository.GetCloudFormationTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -465,7 +465,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDep
 }
 
 // ListApplicationDependenciesPagesWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesPagesWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg2 func(*serverlessapplicationrepository.ListApplicationDependenciesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesPagesWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg2 func(*serverlessapplicationrepository.ListApplicationDependenciesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -499,7 +499,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationDep
 }
 
 // ListApplicationDependenciesWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationDependenciesOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationDependenciesWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.ListApplicationDependenciesInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationDependenciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -548,7 +548,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationVer
 }
 
 // ListApplicationVersionsPagesWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) ListApplicationVersionsPagesWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationVersionsInput, arg2 func(*serverlessapplicationrepository.ListApplicationVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationVersionsPagesWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.ListApplicationVersionsInput, arg2 func(*serverlessapplicationrepository.ListApplicationVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -582,7 +582,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationVer
 }
 
 // ListApplicationVersionsWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) ListApplicationVersionsWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationVersionsInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationVersionsOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationVersionsWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.ListApplicationVersionsInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationsPa
 }
 
 // ListApplicationsPagesWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) ListApplicationsPagesWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationsInput, arg2 func(*serverlessapplicationrepository.ListApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationsPagesWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.ListApplicationsInput, arg2 func(*serverlessapplicationrepository.ListApplicationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -665,7 +665,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) ListApplicationsRe
 }
 
 // ListApplicationsWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) ListApplicationsWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.ListApplicationsInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationsOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) ListApplicationsWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.ListApplicationsInput, arg2 ...request.Option) (*serverlessapplicationrepository.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) PutApplicationPoli
 }
 
 // PutApplicationPolicyWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) PutApplicationPolicyWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.PutApplicationPolicyInput, arg2 ...request.Option) (*serverlessapplicationrepository.PutApplicationPolicyOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) PutApplicationPolicyWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.PutApplicationPolicyInput, arg2 ...request.Option) (*serverlessapplicationrepository.PutApplicationPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -765,7 +765,7 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) UpdateApplicationR
 }
 
 // UpdateApplicationWithContext mocks base method
-func (m *MockServerlessApplicationRepositoryAPI) UpdateApplicationWithContext(arg0 aws.Context, arg1 *serverlessapplicationrepository.UpdateApplicationRequest, arg2 ...request.Option) (*serverlessapplicationrepository.UpdateApplicationOutput, error) {
+func (m *MockServerlessApplicationRepositoryAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.UpdateApplicationRequest, arg2 ...request.Option) (*serverlessapplicationrepository.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

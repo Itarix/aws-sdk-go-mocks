@@ -5,7 +5,7 @@
 package iotmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iot "github.com/aws/aws-sdk-go/service/iot"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockIoTAPIMockRecorder) AcceptCertificateTransferRequest(arg0 interfac
 }
 
 // AcceptCertificateTransferWithContext mocks base method
-func (m *MockIoTAPI) AcceptCertificateTransferWithContext(arg0 aws.Context, arg1 *iot.AcceptCertificateTransferInput, arg2 ...request.Option) (*iot.AcceptCertificateTransferOutput, error) {
+func (m *MockIoTAPI) AcceptCertificateTransferWithContext(arg0 context.Context, arg1 *iot.AcceptCertificateTransferInput, arg2 ...request.Option) (*iot.AcceptCertificateTransferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockIoTAPIMockRecorder) AddThingToBillingGroupRequest(arg0 interface{}
 }
 
 // AddThingToBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) AddThingToBillingGroupWithContext(arg0 aws.Context, arg1 *iot.AddThingToBillingGroupInput, arg2 ...request.Option) (*iot.AddThingToBillingGroupOutput, error) {
+func (m *MockIoTAPI) AddThingToBillingGroupWithContext(arg0 context.Context, arg1 *iot.AddThingToBillingGroupInput, arg2 ...request.Option) (*iot.AddThingToBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockIoTAPIMockRecorder) AddThingToThingGroupRequest(arg0 interface{}) 
 }
 
 // AddThingToThingGroupWithContext mocks base method
-func (m *MockIoTAPI) AddThingToThingGroupWithContext(arg0 aws.Context, arg1 *iot.AddThingToThingGroupInput, arg2 ...request.Option) (*iot.AddThingToThingGroupOutput, error) {
+func (m *MockIoTAPI) AddThingToThingGroupWithContext(arg0 context.Context, arg1 *iot.AddThingToThingGroupInput, arg2 ...request.Option) (*iot.AddThingToThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockIoTAPIMockRecorder) AssociateTargetsWithJobRequest(arg0 interface{
 }
 
 // AssociateTargetsWithJobWithContext mocks base method
-func (m *MockIoTAPI) AssociateTargetsWithJobWithContext(arg0 aws.Context, arg1 *iot.AssociateTargetsWithJobInput, arg2 ...request.Option) (*iot.AssociateTargetsWithJobOutput, error) {
+func (m *MockIoTAPI) AssociateTargetsWithJobWithContext(arg0 context.Context, arg1 *iot.AssociateTargetsWithJobInput, arg2 ...request.Option) (*iot.AssociateTargetsWithJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockIoTAPIMockRecorder) AttachPolicyRequest(arg0 interface{}) *gomock.
 }
 
 // AttachPolicyWithContext mocks base method
-func (m *MockIoTAPI) AttachPolicyWithContext(arg0 aws.Context, arg1 *iot.AttachPolicyInput, arg2 ...request.Option) (*iot.AttachPolicyOutput, error) {
+func (m *MockIoTAPI) AttachPolicyWithContext(arg0 context.Context, arg1 *iot.AttachPolicyInput, arg2 ...request.Option) (*iot.AttachPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockIoTAPIMockRecorder) AttachPrincipalPolicyRequest(arg0 interface{})
 }
 
 // AttachPrincipalPolicyWithContext mocks base method
-func (m *MockIoTAPI) AttachPrincipalPolicyWithContext(arg0 aws.Context, arg1 *iot.AttachPrincipalPolicyInput, arg2 ...request.Option) (*iot.AttachPrincipalPolicyOutput, error) {
+func (m *MockIoTAPI) AttachPrincipalPolicyWithContext(arg0 context.Context, arg1 *iot.AttachPrincipalPolicyInput, arg2 ...request.Option) (*iot.AttachPrincipalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockIoTAPIMockRecorder) AttachSecurityProfileRequest(arg0 interface{})
 }
 
 // AttachSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) AttachSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.AttachSecurityProfileInput, arg2 ...request.Option) (*iot.AttachSecurityProfileOutput, error) {
+func (m *MockIoTAPI) AttachSecurityProfileWithContext(arg0 context.Context, arg1 *iot.AttachSecurityProfileInput, arg2 ...request.Option) (*iot.AttachSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockIoTAPIMockRecorder) AttachThingPrincipalRequest(arg0 interface{}) 
 }
 
 // AttachThingPrincipalWithContext mocks base method
-func (m *MockIoTAPI) AttachThingPrincipalWithContext(arg0 aws.Context, arg1 *iot.AttachThingPrincipalInput, arg2 ...request.Option) (*iot.AttachThingPrincipalOutput, error) {
+func (m *MockIoTAPI) AttachThingPrincipalWithContext(arg0 context.Context, arg1 *iot.AttachThingPrincipalInput, arg2 ...request.Option) (*iot.AttachThingPrincipalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockIoTAPIMockRecorder) CancelAuditTaskRequest(arg0 interface{}) *gomo
 }
 
 // CancelAuditTaskWithContext mocks base method
-func (m *MockIoTAPI) CancelAuditTaskWithContext(arg0 aws.Context, arg1 *iot.CancelAuditTaskInput, arg2 ...request.Option) (*iot.CancelAuditTaskOutput, error) {
+func (m *MockIoTAPI) CancelAuditTaskWithContext(arg0 context.Context, arg1 *iot.CancelAuditTaskInput, arg2 ...request.Option) (*iot.CancelAuditTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockIoTAPIMockRecorder) CancelCertificateTransferRequest(arg0 interfac
 }
 
 // CancelCertificateTransferWithContext mocks base method
-func (m *MockIoTAPI) CancelCertificateTransferWithContext(arg0 aws.Context, arg1 *iot.CancelCertificateTransferInput, arg2 ...request.Option) (*iot.CancelCertificateTransferOutput, error) {
+func (m *MockIoTAPI) CancelCertificateTransferWithContext(arg0 context.Context, arg1 *iot.CancelCertificateTransferInput, arg2 ...request.Option) (*iot.CancelCertificateTransferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockIoTAPIMockRecorder) CancelJobExecutionRequest(arg0 interface{}) *g
 }
 
 // CancelJobExecutionWithContext mocks base method
-func (m *MockIoTAPI) CancelJobExecutionWithContext(arg0 aws.Context, arg1 *iot.CancelJobExecutionInput, arg2 ...request.Option) (*iot.CancelJobExecutionOutput, error) {
+func (m *MockIoTAPI) CancelJobExecutionWithContext(arg0 context.Context, arg1 *iot.CancelJobExecutionInput, arg2 ...request.Option) (*iot.CancelJobExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockIoTAPIMockRecorder) CancelJobRequest(arg0 interface{}) *gomock.Cal
 }
 
 // CancelJobWithContext mocks base method
-func (m *MockIoTAPI) CancelJobWithContext(arg0 aws.Context, arg1 *iot.CancelJobInput, arg2 ...request.Option) (*iot.CancelJobOutput, error) {
+func (m *MockIoTAPI) CancelJobWithContext(arg0 context.Context, arg1 *iot.CancelJobInput, arg2 ...request.Option) (*iot.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockIoTAPIMockRecorder) ClearDefaultAuthorizerRequest(arg0 interface{}
 }
 
 // ClearDefaultAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) ClearDefaultAuthorizerWithContext(arg0 aws.Context, arg1 *iot.ClearDefaultAuthorizerInput, arg2 ...request.Option) (*iot.ClearDefaultAuthorizerOutput, error) {
+func (m *MockIoTAPI) ClearDefaultAuthorizerWithContext(arg0 context.Context, arg1 *iot.ClearDefaultAuthorizerInput, arg2 ...request.Option) (*iot.ClearDefaultAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockIoTAPIMockRecorder) CreateAuthorizerRequest(arg0 interface{}) *gom
 }
 
 // CreateAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) CreateAuthorizerWithContext(arg0 aws.Context, arg1 *iot.CreateAuthorizerInput, arg2 ...request.Option) (*iot.CreateAuthorizerOutput, error) {
+func (m *MockIoTAPI) CreateAuthorizerWithContext(arg0 context.Context, arg1 *iot.CreateAuthorizerInput, arg2 ...request.Option) (*iot.CreateAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockIoTAPIMockRecorder) CreateBillingGroupRequest(arg0 interface{}) *g
 }
 
 // CreateBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) CreateBillingGroupWithContext(arg0 aws.Context, arg1 *iot.CreateBillingGroupInput, arg2 ...request.Option) (*iot.CreateBillingGroupOutput, error) {
+func (m *MockIoTAPI) CreateBillingGroupWithContext(arg0 context.Context, arg1 *iot.CreateBillingGroupInput, arg2 ...request.Option) (*iot.CreateBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockIoTAPIMockRecorder) CreateCertificateFromCsrRequest(arg0 interface
 }
 
 // CreateCertificateFromCsrWithContext mocks base method
-func (m *MockIoTAPI) CreateCertificateFromCsrWithContext(arg0 aws.Context, arg1 *iot.CreateCertificateFromCsrInput, arg2 ...request.Option) (*iot.CreateCertificateFromCsrOutput, error) {
+func (m *MockIoTAPI) CreateCertificateFromCsrWithContext(arg0 context.Context, arg1 *iot.CreateCertificateFromCsrInput, arg2 ...request.Option) (*iot.CreateCertificateFromCsrOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockIoTAPIMockRecorder) CreateDynamicThingGroupRequest(arg0 interface{
 }
 
 // CreateDynamicThingGroupWithContext mocks base method
-func (m *MockIoTAPI) CreateDynamicThingGroupWithContext(arg0 aws.Context, arg1 *iot.CreateDynamicThingGroupInput, arg2 ...request.Option) (*iot.CreateDynamicThingGroupOutput, error) {
+func (m *MockIoTAPI) CreateDynamicThingGroupWithContext(arg0 context.Context, arg1 *iot.CreateDynamicThingGroupInput, arg2 ...request.Option) (*iot.CreateDynamicThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockIoTAPIMockRecorder) CreateJobRequest(arg0 interface{}) *gomock.Cal
 }
 
 // CreateJobWithContext mocks base method
-func (m *MockIoTAPI) CreateJobWithContext(arg0 aws.Context, arg1 *iot.CreateJobInput, arg2 ...request.Option) (*iot.CreateJobOutput, error) {
+func (m *MockIoTAPI) CreateJobWithContext(arg0 context.Context, arg1 *iot.CreateJobInput, arg2 ...request.Option) (*iot.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockIoTAPIMockRecorder) CreateKeysAndCertificateRequest(arg0 interface
 }
 
 // CreateKeysAndCertificateWithContext mocks base method
-func (m *MockIoTAPI) CreateKeysAndCertificateWithContext(arg0 aws.Context, arg1 *iot.CreateKeysAndCertificateInput, arg2 ...request.Option) (*iot.CreateKeysAndCertificateOutput, error) {
+func (m *MockIoTAPI) CreateKeysAndCertificateWithContext(arg0 context.Context, arg1 *iot.CreateKeysAndCertificateInput, arg2 ...request.Option) (*iot.CreateKeysAndCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockIoTAPIMockRecorder) CreateOTAUpdateRequest(arg0 interface{}) *gomo
 }
 
 // CreateOTAUpdateWithContext mocks base method
-func (m *MockIoTAPI) CreateOTAUpdateWithContext(arg0 aws.Context, arg1 *iot.CreateOTAUpdateInput, arg2 ...request.Option) (*iot.CreateOTAUpdateOutput, error) {
+func (m *MockIoTAPI) CreateOTAUpdateWithContext(arg0 context.Context, arg1 *iot.CreateOTAUpdateInput, arg2 ...request.Option) (*iot.CreateOTAUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1096,7 +1096,7 @@ func (mr *MockIoTAPIMockRecorder) CreatePolicyVersionRequest(arg0 interface{}) *
 }
 
 // CreatePolicyVersionWithContext mocks base method
-func (m *MockIoTAPI) CreatePolicyVersionWithContext(arg0 aws.Context, arg1 *iot.CreatePolicyVersionInput, arg2 ...request.Option) (*iot.CreatePolicyVersionOutput, error) {
+func (m *MockIoTAPI) CreatePolicyVersionWithContext(arg0 context.Context, arg1 *iot.CreatePolicyVersionInput, arg2 ...request.Option) (*iot.CreatePolicyVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockIoTAPIMockRecorder) CreatePolicyVersionWithContext(arg0, arg1 inte
 }
 
 // CreatePolicyWithContext mocks base method
-func (m *MockIoTAPI) CreatePolicyWithContext(arg0 aws.Context, arg1 *iot.CreatePolicyInput, arg2 ...request.Option) (*iot.CreatePolicyOutput, error) {
+func (m *MockIoTAPI) CreatePolicyWithContext(arg0 context.Context, arg1 *iot.CreatePolicyInput, arg2 ...request.Option) (*iot.CreatePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockIoTAPIMockRecorder) CreateRoleAliasRequest(arg0 interface{}) *gomo
 }
 
 // CreateRoleAliasWithContext mocks base method
-func (m *MockIoTAPI) CreateRoleAliasWithContext(arg0 aws.Context, arg1 *iot.CreateRoleAliasInput, arg2 ...request.Option) (*iot.CreateRoleAliasOutput, error) {
+func (m *MockIoTAPI) CreateRoleAliasWithContext(arg0 context.Context, arg1 *iot.CreateRoleAliasInput, arg2 ...request.Option) (*iot.CreateRoleAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockIoTAPIMockRecorder) CreateScheduledAuditRequest(arg0 interface{}) 
 }
 
 // CreateScheduledAuditWithContext mocks base method
-func (m *MockIoTAPI) CreateScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.CreateScheduledAuditInput, arg2 ...request.Option) (*iot.CreateScheduledAuditOutput, error) {
+func (m *MockIoTAPI) CreateScheduledAuditWithContext(arg0 context.Context, arg1 *iot.CreateScheduledAuditInput, arg2 ...request.Option) (*iot.CreateScheduledAuditOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockIoTAPIMockRecorder) CreateSecurityProfileRequest(arg0 interface{})
 }
 
 // CreateSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) CreateSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.CreateSecurityProfileInput, arg2 ...request.Option) (*iot.CreateSecurityProfileOutput, error) {
+func (m *MockIoTAPI) CreateSecurityProfileWithContext(arg0 context.Context, arg1 *iot.CreateSecurityProfileInput, arg2 ...request.Option) (*iot.CreateSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockIoTAPIMockRecorder) CreateStreamRequest(arg0 interface{}) *gomock.
 }
 
 // CreateStreamWithContext mocks base method
-func (m *MockIoTAPI) CreateStreamWithContext(arg0 aws.Context, arg1 *iot.CreateStreamInput, arg2 ...request.Option) (*iot.CreateStreamOutput, error) {
+func (m *MockIoTAPI) CreateStreamWithContext(arg0 context.Context, arg1 *iot.CreateStreamInput, arg2 ...request.Option) (*iot.CreateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockIoTAPIMockRecorder) CreateThingGroupRequest(arg0 interface{}) *gom
 }
 
 // CreateThingGroupWithContext mocks base method
-func (m *MockIoTAPI) CreateThingGroupWithContext(arg0 aws.Context, arg1 *iot.CreateThingGroupInput, arg2 ...request.Option) (*iot.CreateThingGroupOutput, error) {
+func (m *MockIoTAPI) CreateThingGroupWithContext(arg0 context.Context, arg1 *iot.CreateThingGroupInput, arg2 ...request.Option) (*iot.CreateThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1446,7 +1446,7 @@ func (mr *MockIoTAPIMockRecorder) CreateThingTypeRequest(arg0 interface{}) *gomo
 }
 
 // CreateThingTypeWithContext mocks base method
-func (m *MockIoTAPI) CreateThingTypeWithContext(arg0 aws.Context, arg1 *iot.CreateThingTypeInput, arg2 ...request.Option) (*iot.CreateThingTypeOutput, error) {
+func (m *MockIoTAPI) CreateThingTypeWithContext(arg0 context.Context, arg1 *iot.CreateThingTypeInput, arg2 ...request.Option) (*iot.CreateThingTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockIoTAPIMockRecorder) CreateThingTypeWithContext(arg0, arg1 interfac
 }
 
 // CreateThingWithContext mocks base method
-func (m *MockIoTAPI) CreateThingWithContext(arg0 aws.Context, arg1 *iot.CreateThingInput, arg2 ...request.Option) (*iot.CreateThingOutput, error) {
+func (m *MockIoTAPI) CreateThingWithContext(arg0 context.Context, arg1 *iot.CreateThingInput, arg2 ...request.Option) (*iot.CreateThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockIoTAPIMockRecorder) CreateTopicRuleRequest(arg0 interface{}) *gomo
 }
 
 // CreateTopicRuleWithContext mocks base method
-func (m *MockIoTAPI) CreateTopicRuleWithContext(arg0 aws.Context, arg1 *iot.CreateTopicRuleInput, arg2 ...request.Option) (*iot.CreateTopicRuleOutput, error) {
+func (m *MockIoTAPI) CreateTopicRuleWithContext(arg0 context.Context, arg1 *iot.CreateTopicRuleInput, arg2 ...request.Option) (*iot.CreateTopicRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteAccountAuditConfigurationRequest(arg0 in
 }
 
 // DeleteAccountAuditConfigurationWithContext mocks base method
-func (m *MockIoTAPI) DeleteAccountAuditConfigurationWithContext(arg0 aws.Context, arg1 *iot.DeleteAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.DeleteAccountAuditConfigurationOutput, error) {
+func (m *MockIoTAPI) DeleteAccountAuditConfigurationWithContext(arg0 context.Context, arg1 *iot.DeleteAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.DeleteAccountAuditConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteAuthorizerRequest(arg0 interface{}) *gom
 }
 
 // DeleteAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) DeleteAuthorizerWithContext(arg0 aws.Context, arg1 *iot.DeleteAuthorizerInput, arg2 ...request.Option) (*iot.DeleteAuthorizerOutput, error) {
+func (m *MockIoTAPI) DeleteAuthorizerWithContext(arg0 context.Context, arg1 *iot.DeleteAuthorizerInput, arg2 ...request.Option) (*iot.DeleteAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteBillingGroupRequest(arg0 interface{}) *g
 }
 
 // DeleteBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) DeleteBillingGroupWithContext(arg0 aws.Context, arg1 *iot.DeleteBillingGroupInput, arg2 ...request.Option) (*iot.DeleteBillingGroupOutput, error) {
+func (m *MockIoTAPI) DeleteBillingGroupWithContext(arg0 context.Context, arg1 *iot.DeleteBillingGroupInput, arg2 ...request.Option) (*iot.DeleteBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteCACertificateRequest(arg0 interface{}) *
 }
 
 // DeleteCACertificateWithContext mocks base method
-func (m *MockIoTAPI) DeleteCACertificateWithContext(arg0 aws.Context, arg1 *iot.DeleteCACertificateInput, arg2 ...request.Option) (*iot.DeleteCACertificateOutput, error) {
+func (m *MockIoTAPI) DeleteCACertificateWithContext(arg0 context.Context, arg1 *iot.DeleteCACertificateInput, arg2 ...request.Option) (*iot.DeleteCACertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteCertificateRequest(arg0 interface{}) *go
 }
 
 // DeleteCertificateWithContext mocks base method
-func (m *MockIoTAPI) DeleteCertificateWithContext(arg0 aws.Context, arg1 *iot.DeleteCertificateInput, arg2 ...request.Option) (*iot.DeleteCertificateOutput, error) {
+func (m *MockIoTAPI) DeleteCertificateWithContext(arg0 context.Context, arg1 *iot.DeleteCertificateInput, arg2 ...request.Option) (*iot.DeleteCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteDynamicThingGroupRequest(arg0 interface{
 }
 
 // DeleteDynamicThingGroupWithContext mocks base method
-func (m *MockIoTAPI) DeleteDynamicThingGroupWithContext(arg0 aws.Context, arg1 *iot.DeleteDynamicThingGroupInput, arg2 ...request.Option) (*iot.DeleteDynamicThingGroupOutput, error) {
+func (m *MockIoTAPI) DeleteDynamicThingGroupWithContext(arg0 context.Context, arg1 *iot.DeleteDynamicThingGroupInput, arg2 ...request.Option) (*iot.DeleteDynamicThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1881,7 +1881,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteJobExecutionRequest(arg0 interface{}) *g
 }
 
 // DeleteJobExecutionWithContext mocks base method
-func (m *MockIoTAPI) DeleteJobExecutionWithContext(arg0 aws.Context, arg1 *iot.DeleteJobExecutionInput, arg2 ...request.Option) (*iot.DeleteJobExecutionOutput, error) {
+func (m *MockIoTAPI) DeleteJobExecutionWithContext(arg0 context.Context, arg1 *iot.DeleteJobExecutionInput, arg2 ...request.Option) (*iot.DeleteJobExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteJobRequest(arg0 interface{}) *gomock.Cal
 }
 
 // DeleteJobWithContext mocks base method
-func (m *MockIoTAPI) DeleteJobWithContext(arg0 aws.Context, arg1 *iot.DeleteJobInput, arg2 ...request.Option) (*iot.DeleteJobOutput, error) {
+func (m *MockIoTAPI) DeleteJobWithContext(arg0 context.Context, arg1 *iot.DeleteJobInput, arg2 ...request.Option) (*iot.DeleteJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteOTAUpdateRequest(arg0 interface{}) *gomo
 }
 
 // DeleteOTAUpdateWithContext mocks base method
-func (m *MockIoTAPI) DeleteOTAUpdateWithContext(arg0 aws.Context, arg1 *iot.DeleteOTAUpdateInput, arg2 ...request.Option) (*iot.DeleteOTAUpdateOutput, error) {
+func (m *MockIoTAPI) DeleteOTAUpdateWithContext(arg0 context.Context, arg1 *iot.DeleteOTAUpdateInput, arg2 ...request.Option) (*iot.DeleteOTAUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockIoTAPIMockRecorder) DeletePolicyVersionRequest(arg0 interface{}) *
 }
 
 // DeletePolicyVersionWithContext mocks base method
-func (m *MockIoTAPI) DeletePolicyVersionWithContext(arg0 aws.Context, arg1 *iot.DeletePolicyVersionInput, arg2 ...request.Option) (*iot.DeletePolicyVersionOutput, error) {
+func (m *MockIoTAPI) DeletePolicyVersionWithContext(arg0 context.Context, arg1 *iot.DeletePolicyVersionInput, arg2 ...request.Option) (*iot.DeletePolicyVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockIoTAPIMockRecorder) DeletePolicyVersionWithContext(arg0, arg1 inte
 }
 
 // DeletePolicyWithContext mocks base method
-func (m *MockIoTAPI) DeletePolicyWithContext(arg0 aws.Context, arg1 *iot.DeletePolicyInput, arg2 ...request.Option) (*iot.DeletePolicyOutput, error) {
+func (m *MockIoTAPI) DeletePolicyWithContext(arg0 context.Context, arg1 *iot.DeletePolicyInput, arg2 ...request.Option) (*iot.DeletePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteRegistrationCodeRequest(arg0 interface{}
 }
 
 // DeleteRegistrationCodeWithContext mocks base method
-func (m *MockIoTAPI) DeleteRegistrationCodeWithContext(arg0 aws.Context, arg1 *iot.DeleteRegistrationCodeInput, arg2 ...request.Option) (*iot.DeleteRegistrationCodeOutput, error) {
+func (m *MockIoTAPI) DeleteRegistrationCodeWithContext(arg0 context.Context, arg1 *iot.DeleteRegistrationCodeInput, arg2 ...request.Option) (*iot.DeleteRegistrationCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteRoleAliasRequest(arg0 interface{}) *gomo
 }
 
 // DeleteRoleAliasWithContext mocks base method
-func (m *MockIoTAPI) DeleteRoleAliasWithContext(arg0 aws.Context, arg1 *iot.DeleteRoleAliasInput, arg2 ...request.Option) (*iot.DeleteRoleAliasOutput, error) {
+func (m *MockIoTAPI) DeleteRoleAliasWithContext(arg0 context.Context, arg1 *iot.DeleteRoleAliasInput, arg2 ...request.Option) (*iot.DeleteRoleAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteScheduledAuditRequest(arg0 interface{}) 
 }
 
 // DeleteScheduledAuditWithContext mocks base method
-func (m *MockIoTAPI) DeleteScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.DeleteScheduledAuditInput, arg2 ...request.Option) (*iot.DeleteScheduledAuditOutput, error) {
+func (m *MockIoTAPI) DeleteScheduledAuditWithContext(arg0 context.Context, arg1 *iot.DeleteScheduledAuditInput, arg2 ...request.Option) (*iot.DeleteScheduledAuditOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteSecurityProfileRequest(arg0 interface{})
 }
 
 // DeleteSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) DeleteSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.DeleteSecurityProfileInput, arg2 ...request.Option) (*iot.DeleteSecurityProfileOutput, error) {
+func (m *MockIoTAPI) DeleteSecurityProfileWithContext(arg0 context.Context, arg1 *iot.DeleteSecurityProfileInput, arg2 ...request.Option) (*iot.DeleteSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2316,7 +2316,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteStreamRequest(arg0 interface{}) *gomock.
 }
 
 // DeleteStreamWithContext mocks base method
-func (m *MockIoTAPI) DeleteStreamWithContext(arg0 aws.Context, arg1 *iot.DeleteStreamInput, arg2 ...request.Option) (*iot.DeleteStreamOutput, error) {
+func (m *MockIoTAPI) DeleteStreamWithContext(arg0 context.Context, arg1 *iot.DeleteStreamInput, arg2 ...request.Option) (*iot.DeleteStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2381,7 +2381,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteThingGroupRequest(arg0 interface{}) *gom
 }
 
 // DeleteThingGroupWithContext mocks base method
-func (m *MockIoTAPI) DeleteThingGroupWithContext(arg0 aws.Context, arg1 *iot.DeleteThingGroupInput, arg2 ...request.Option) (*iot.DeleteThingGroupOutput, error) {
+func (m *MockIoTAPI) DeleteThingGroupWithContext(arg0 context.Context, arg1 *iot.DeleteThingGroupInput, arg2 ...request.Option) (*iot.DeleteThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2446,7 +2446,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteThingTypeRequest(arg0 interface{}) *gomo
 }
 
 // DeleteThingTypeWithContext mocks base method
-func (m *MockIoTAPI) DeleteThingTypeWithContext(arg0 aws.Context, arg1 *iot.DeleteThingTypeInput, arg2 ...request.Option) (*iot.DeleteThingTypeOutput, error) {
+func (m *MockIoTAPI) DeleteThingTypeWithContext(arg0 context.Context, arg1 *iot.DeleteThingTypeInput, arg2 ...request.Option) (*iot.DeleteThingTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2466,7 +2466,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteThingTypeWithContext(arg0, arg1 interfac
 }
 
 // DeleteThingWithContext mocks base method
-func (m *MockIoTAPI) DeleteThingWithContext(arg0 aws.Context, arg1 *iot.DeleteThingInput, arg2 ...request.Option) (*iot.DeleteThingOutput, error) {
+func (m *MockIoTAPI) DeleteThingWithContext(arg0 context.Context, arg1 *iot.DeleteThingInput, arg2 ...request.Option) (*iot.DeleteThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2516,7 +2516,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteTopicRuleRequest(arg0 interface{}) *gomo
 }
 
 // DeleteTopicRuleWithContext mocks base method
-func (m *MockIoTAPI) DeleteTopicRuleWithContext(arg0 aws.Context, arg1 *iot.DeleteTopicRuleInput, arg2 ...request.Option) (*iot.DeleteTopicRuleOutput, error) {
+func (m *MockIoTAPI) DeleteTopicRuleWithContext(arg0 context.Context, arg1 *iot.DeleteTopicRuleInput, arg2 ...request.Option) (*iot.DeleteTopicRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2566,7 +2566,7 @@ func (mr *MockIoTAPIMockRecorder) DeleteV2LoggingLevelRequest(arg0 interface{}) 
 }
 
 // DeleteV2LoggingLevelWithContext mocks base method
-func (m *MockIoTAPI) DeleteV2LoggingLevelWithContext(arg0 aws.Context, arg1 *iot.DeleteV2LoggingLevelInput, arg2 ...request.Option) (*iot.DeleteV2LoggingLevelOutput, error) {
+func (m *MockIoTAPI) DeleteV2LoggingLevelWithContext(arg0 context.Context, arg1 *iot.DeleteV2LoggingLevelInput, arg2 ...request.Option) (*iot.DeleteV2LoggingLevelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2616,7 +2616,7 @@ func (mr *MockIoTAPIMockRecorder) DeprecateThingTypeRequest(arg0 interface{}) *g
 }
 
 // DeprecateThingTypeWithContext mocks base method
-func (m *MockIoTAPI) DeprecateThingTypeWithContext(arg0 aws.Context, arg1 *iot.DeprecateThingTypeInput, arg2 ...request.Option) (*iot.DeprecateThingTypeOutput, error) {
+func (m *MockIoTAPI) DeprecateThingTypeWithContext(arg0 context.Context, arg1 *iot.DeprecateThingTypeInput, arg2 ...request.Option) (*iot.DeprecateThingTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2666,7 +2666,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeAccountAuditConfigurationRequest(arg0 
 }
 
 // DescribeAccountAuditConfigurationWithContext mocks base method
-func (m *MockIoTAPI) DescribeAccountAuditConfigurationWithContext(arg0 aws.Context, arg1 *iot.DescribeAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.DescribeAccountAuditConfigurationOutput, error) {
+func (m *MockIoTAPI) DescribeAccountAuditConfigurationWithContext(arg0 context.Context, arg1 *iot.DescribeAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.DescribeAccountAuditConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2716,7 +2716,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeAuditTaskRequest(arg0 interface{}) *go
 }
 
 // DescribeAuditTaskWithContext mocks base method
-func (m *MockIoTAPI) DescribeAuditTaskWithContext(arg0 aws.Context, arg1 *iot.DescribeAuditTaskInput, arg2 ...request.Option) (*iot.DescribeAuditTaskOutput, error) {
+func (m *MockIoTAPI) DescribeAuditTaskWithContext(arg0 context.Context, arg1 *iot.DescribeAuditTaskInput, arg2 ...request.Option) (*iot.DescribeAuditTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2766,7 +2766,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeAuthorizerRequest(arg0 interface{}) *g
 }
 
 // DescribeAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) DescribeAuthorizerWithContext(arg0 aws.Context, arg1 *iot.DescribeAuthorizerInput, arg2 ...request.Option) (*iot.DescribeAuthorizerOutput, error) {
+func (m *MockIoTAPI) DescribeAuthorizerWithContext(arg0 context.Context, arg1 *iot.DescribeAuthorizerInput, arg2 ...request.Option) (*iot.DescribeAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2816,7 +2816,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeBillingGroupRequest(arg0 interface{}) 
 }
 
 // DescribeBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) DescribeBillingGroupWithContext(arg0 aws.Context, arg1 *iot.DescribeBillingGroupInput, arg2 ...request.Option) (*iot.DescribeBillingGroupOutput, error) {
+func (m *MockIoTAPI) DescribeBillingGroupWithContext(arg0 context.Context, arg1 *iot.DescribeBillingGroupInput, arg2 ...request.Option) (*iot.DescribeBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2866,7 +2866,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeCACertificateRequest(arg0 interface{})
 }
 
 // DescribeCACertificateWithContext mocks base method
-func (m *MockIoTAPI) DescribeCACertificateWithContext(arg0 aws.Context, arg1 *iot.DescribeCACertificateInput, arg2 ...request.Option) (*iot.DescribeCACertificateOutput, error) {
+func (m *MockIoTAPI) DescribeCACertificateWithContext(arg0 context.Context, arg1 *iot.DescribeCACertificateInput, arg2 ...request.Option) (*iot.DescribeCACertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2916,7 +2916,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeCertificateRequest(arg0 interface{}) *
 }
 
 // DescribeCertificateWithContext mocks base method
-func (m *MockIoTAPI) DescribeCertificateWithContext(arg0 aws.Context, arg1 *iot.DescribeCertificateInput, arg2 ...request.Option) (*iot.DescribeCertificateOutput, error) {
+func (m *MockIoTAPI) DescribeCertificateWithContext(arg0 context.Context, arg1 *iot.DescribeCertificateInput, arg2 ...request.Option) (*iot.DescribeCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2966,7 +2966,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeDefaultAuthorizerRequest(arg0 interfac
 }
 
 // DescribeDefaultAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) DescribeDefaultAuthorizerWithContext(arg0 aws.Context, arg1 *iot.DescribeDefaultAuthorizerInput, arg2 ...request.Option) (*iot.DescribeDefaultAuthorizerOutput, error) {
+func (m *MockIoTAPI) DescribeDefaultAuthorizerWithContext(arg0 context.Context, arg1 *iot.DescribeDefaultAuthorizerInput, arg2 ...request.Option) (*iot.DescribeDefaultAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3016,7 +3016,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeEndpointRequest(arg0 interface{}) *gom
 }
 
 // DescribeEndpointWithContext mocks base method
-func (m *MockIoTAPI) DescribeEndpointWithContext(arg0 aws.Context, arg1 *iot.DescribeEndpointInput, arg2 ...request.Option) (*iot.DescribeEndpointOutput, error) {
+func (m *MockIoTAPI) DescribeEndpointWithContext(arg0 context.Context, arg1 *iot.DescribeEndpointInput, arg2 ...request.Option) (*iot.DescribeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3066,7 +3066,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeEventConfigurationsRequest(arg0 interf
 }
 
 // DescribeEventConfigurationsWithContext mocks base method
-func (m *MockIoTAPI) DescribeEventConfigurationsWithContext(arg0 aws.Context, arg1 *iot.DescribeEventConfigurationsInput, arg2 ...request.Option) (*iot.DescribeEventConfigurationsOutput, error) {
+func (m *MockIoTAPI) DescribeEventConfigurationsWithContext(arg0 context.Context, arg1 *iot.DescribeEventConfigurationsInput, arg2 ...request.Option) (*iot.DescribeEventConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3116,7 +3116,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeIndexRequest(arg0 interface{}) *gomock
 }
 
 // DescribeIndexWithContext mocks base method
-func (m *MockIoTAPI) DescribeIndexWithContext(arg0 aws.Context, arg1 *iot.DescribeIndexInput, arg2 ...request.Option) (*iot.DescribeIndexOutput, error) {
+func (m *MockIoTAPI) DescribeIndexWithContext(arg0 context.Context, arg1 *iot.DescribeIndexInput, arg2 ...request.Option) (*iot.DescribeIndexOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3181,7 +3181,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeJobExecutionRequest(arg0 interface{}) 
 }
 
 // DescribeJobExecutionWithContext mocks base method
-func (m *MockIoTAPI) DescribeJobExecutionWithContext(arg0 aws.Context, arg1 *iot.DescribeJobExecutionInput, arg2 ...request.Option) (*iot.DescribeJobExecutionOutput, error) {
+func (m *MockIoTAPI) DescribeJobExecutionWithContext(arg0 context.Context, arg1 *iot.DescribeJobExecutionInput, arg2 ...request.Option) (*iot.DescribeJobExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3216,7 +3216,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeJobRequest(arg0 interface{}) *gomock.C
 }
 
 // DescribeJobWithContext mocks base method
-func (m *MockIoTAPI) DescribeJobWithContext(arg0 aws.Context, arg1 *iot.DescribeJobInput, arg2 ...request.Option) (*iot.DescribeJobOutput, error) {
+func (m *MockIoTAPI) DescribeJobWithContext(arg0 context.Context, arg1 *iot.DescribeJobInput, arg2 ...request.Option) (*iot.DescribeJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3266,7 +3266,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeRoleAliasRequest(arg0 interface{}) *go
 }
 
 // DescribeRoleAliasWithContext mocks base method
-func (m *MockIoTAPI) DescribeRoleAliasWithContext(arg0 aws.Context, arg1 *iot.DescribeRoleAliasInput, arg2 ...request.Option) (*iot.DescribeRoleAliasOutput, error) {
+func (m *MockIoTAPI) DescribeRoleAliasWithContext(arg0 context.Context, arg1 *iot.DescribeRoleAliasInput, arg2 ...request.Option) (*iot.DescribeRoleAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3316,7 +3316,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeScheduledAuditRequest(arg0 interface{}
 }
 
 // DescribeScheduledAuditWithContext mocks base method
-func (m *MockIoTAPI) DescribeScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.DescribeScheduledAuditInput, arg2 ...request.Option) (*iot.DescribeScheduledAuditOutput, error) {
+func (m *MockIoTAPI) DescribeScheduledAuditWithContext(arg0 context.Context, arg1 *iot.DescribeScheduledAuditInput, arg2 ...request.Option) (*iot.DescribeScheduledAuditOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3366,7 +3366,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeSecurityProfileRequest(arg0 interface{
 }
 
 // DescribeSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) DescribeSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.DescribeSecurityProfileInput, arg2 ...request.Option) (*iot.DescribeSecurityProfileOutput, error) {
+func (m *MockIoTAPI) DescribeSecurityProfileWithContext(arg0 context.Context, arg1 *iot.DescribeSecurityProfileInput, arg2 ...request.Option) (*iot.DescribeSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3416,7 +3416,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeStreamRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeStreamWithContext mocks base method
-func (m *MockIoTAPI) DescribeStreamWithContext(arg0 aws.Context, arg1 *iot.DescribeStreamInput, arg2 ...request.Option) (*iot.DescribeStreamOutput, error) {
+func (m *MockIoTAPI) DescribeStreamWithContext(arg0 context.Context, arg1 *iot.DescribeStreamInput, arg2 ...request.Option) (*iot.DescribeStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3481,7 +3481,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeThingGroupRequest(arg0 interface{}) *g
 }
 
 // DescribeThingGroupWithContext mocks base method
-func (m *MockIoTAPI) DescribeThingGroupWithContext(arg0 aws.Context, arg1 *iot.DescribeThingGroupInput, arg2 ...request.Option) (*iot.DescribeThingGroupOutput, error) {
+func (m *MockIoTAPI) DescribeThingGroupWithContext(arg0 context.Context, arg1 *iot.DescribeThingGroupInput, arg2 ...request.Option) (*iot.DescribeThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3531,7 +3531,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeThingRegistrationTaskRequest(arg0 inte
 }
 
 // DescribeThingRegistrationTaskWithContext mocks base method
-func (m *MockIoTAPI) DescribeThingRegistrationTaskWithContext(arg0 aws.Context, arg1 *iot.DescribeThingRegistrationTaskInput, arg2 ...request.Option) (*iot.DescribeThingRegistrationTaskOutput, error) {
+func (m *MockIoTAPI) DescribeThingRegistrationTaskWithContext(arg0 context.Context, arg1 *iot.DescribeThingRegistrationTaskInput, arg2 ...request.Option) (*iot.DescribeThingRegistrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3596,7 +3596,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeThingTypeRequest(arg0 interface{}) *go
 }
 
 // DescribeThingTypeWithContext mocks base method
-func (m *MockIoTAPI) DescribeThingTypeWithContext(arg0 aws.Context, arg1 *iot.DescribeThingTypeInput, arg2 ...request.Option) (*iot.DescribeThingTypeOutput, error) {
+func (m *MockIoTAPI) DescribeThingTypeWithContext(arg0 context.Context, arg1 *iot.DescribeThingTypeInput, arg2 ...request.Option) (*iot.DescribeThingTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3616,7 +3616,7 @@ func (mr *MockIoTAPIMockRecorder) DescribeThingTypeWithContext(arg0, arg1 interf
 }
 
 // DescribeThingWithContext mocks base method
-func (m *MockIoTAPI) DescribeThingWithContext(arg0 aws.Context, arg1 *iot.DescribeThingInput, arg2 ...request.Option) (*iot.DescribeThingOutput, error) {
+func (m *MockIoTAPI) DescribeThingWithContext(arg0 context.Context, arg1 *iot.DescribeThingInput, arg2 ...request.Option) (*iot.DescribeThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3666,7 +3666,7 @@ func (mr *MockIoTAPIMockRecorder) DetachPolicyRequest(arg0 interface{}) *gomock.
 }
 
 // DetachPolicyWithContext mocks base method
-func (m *MockIoTAPI) DetachPolicyWithContext(arg0 aws.Context, arg1 *iot.DetachPolicyInput, arg2 ...request.Option) (*iot.DetachPolicyOutput, error) {
+func (m *MockIoTAPI) DetachPolicyWithContext(arg0 context.Context, arg1 *iot.DetachPolicyInput, arg2 ...request.Option) (*iot.DetachPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3716,7 +3716,7 @@ func (mr *MockIoTAPIMockRecorder) DetachPrincipalPolicyRequest(arg0 interface{})
 }
 
 // DetachPrincipalPolicyWithContext mocks base method
-func (m *MockIoTAPI) DetachPrincipalPolicyWithContext(arg0 aws.Context, arg1 *iot.DetachPrincipalPolicyInput, arg2 ...request.Option) (*iot.DetachPrincipalPolicyOutput, error) {
+func (m *MockIoTAPI) DetachPrincipalPolicyWithContext(arg0 context.Context, arg1 *iot.DetachPrincipalPolicyInput, arg2 ...request.Option) (*iot.DetachPrincipalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3766,7 +3766,7 @@ func (mr *MockIoTAPIMockRecorder) DetachSecurityProfileRequest(arg0 interface{})
 }
 
 // DetachSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) DetachSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.DetachSecurityProfileInput, arg2 ...request.Option) (*iot.DetachSecurityProfileOutput, error) {
+func (m *MockIoTAPI) DetachSecurityProfileWithContext(arg0 context.Context, arg1 *iot.DetachSecurityProfileInput, arg2 ...request.Option) (*iot.DetachSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3816,7 +3816,7 @@ func (mr *MockIoTAPIMockRecorder) DetachThingPrincipalRequest(arg0 interface{}) 
 }
 
 // DetachThingPrincipalWithContext mocks base method
-func (m *MockIoTAPI) DetachThingPrincipalWithContext(arg0 aws.Context, arg1 *iot.DetachThingPrincipalInput, arg2 ...request.Option) (*iot.DetachThingPrincipalOutput, error) {
+func (m *MockIoTAPI) DetachThingPrincipalWithContext(arg0 context.Context, arg1 *iot.DetachThingPrincipalInput, arg2 ...request.Option) (*iot.DetachThingPrincipalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3866,7 +3866,7 @@ func (mr *MockIoTAPIMockRecorder) DisableTopicRuleRequest(arg0 interface{}) *gom
 }
 
 // DisableTopicRuleWithContext mocks base method
-func (m *MockIoTAPI) DisableTopicRuleWithContext(arg0 aws.Context, arg1 *iot.DisableTopicRuleInput, arg2 ...request.Option) (*iot.DisableTopicRuleOutput, error) {
+func (m *MockIoTAPI) DisableTopicRuleWithContext(arg0 context.Context, arg1 *iot.DisableTopicRuleInput, arg2 ...request.Option) (*iot.DisableTopicRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3916,7 +3916,7 @@ func (mr *MockIoTAPIMockRecorder) EnableTopicRuleRequest(arg0 interface{}) *gomo
 }
 
 // EnableTopicRuleWithContext mocks base method
-func (m *MockIoTAPI) EnableTopicRuleWithContext(arg0 aws.Context, arg1 *iot.EnableTopicRuleInput, arg2 ...request.Option) (*iot.EnableTopicRuleOutput, error) {
+func (m *MockIoTAPI) EnableTopicRuleWithContext(arg0 context.Context, arg1 *iot.EnableTopicRuleInput, arg2 ...request.Option) (*iot.EnableTopicRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3966,7 +3966,7 @@ func (mr *MockIoTAPIMockRecorder) GetEffectivePoliciesRequest(arg0 interface{}) 
 }
 
 // GetEffectivePoliciesWithContext mocks base method
-func (m *MockIoTAPI) GetEffectivePoliciesWithContext(arg0 aws.Context, arg1 *iot.GetEffectivePoliciesInput, arg2 ...request.Option) (*iot.GetEffectivePoliciesOutput, error) {
+func (m *MockIoTAPI) GetEffectivePoliciesWithContext(arg0 context.Context, arg1 *iot.GetEffectivePoliciesInput, arg2 ...request.Option) (*iot.GetEffectivePoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4016,7 +4016,7 @@ func (mr *MockIoTAPIMockRecorder) GetIndexingConfigurationRequest(arg0 interface
 }
 
 // GetIndexingConfigurationWithContext mocks base method
-func (m *MockIoTAPI) GetIndexingConfigurationWithContext(arg0 aws.Context, arg1 *iot.GetIndexingConfigurationInput, arg2 ...request.Option) (*iot.GetIndexingConfigurationOutput, error) {
+func (m *MockIoTAPI) GetIndexingConfigurationWithContext(arg0 context.Context, arg1 *iot.GetIndexingConfigurationInput, arg2 ...request.Option) (*iot.GetIndexingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4066,7 +4066,7 @@ func (mr *MockIoTAPIMockRecorder) GetJobDocumentRequest(arg0 interface{}) *gomoc
 }
 
 // GetJobDocumentWithContext mocks base method
-func (m *MockIoTAPI) GetJobDocumentWithContext(arg0 aws.Context, arg1 *iot.GetJobDocumentInput, arg2 ...request.Option) (*iot.GetJobDocumentOutput, error) {
+func (m *MockIoTAPI) GetJobDocumentWithContext(arg0 context.Context, arg1 *iot.GetJobDocumentInput, arg2 ...request.Option) (*iot.GetJobDocumentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4116,7 +4116,7 @@ func (mr *MockIoTAPIMockRecorder) GetLoggingOptionsRequest(arg0 interface{}) *go
 }
 
 // GetLoggingOptionsWithContext mocks base method
-func (m *MockIoTAPI) GetLoggingOptionsWithContext(arg0 aws.Context, arg1 *iot.GetLoggingOptionsInput, arg2 ...request.Option) (*iot.GetLoggingOptionsOutput, error) {
+func (m *MockIoTAPI) GetLoggingOptionsWithContext(arg0 context.Context, arg1 *iot.GetLoggingOptionsInput, arg2 ...request.Option) (*iot.GetLoggingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4166,7 +4166,7 @@ func (mr *MockIoTAPIMockRecorder) GetOTAUpdateRequest(arg0 interface{}) *gomock.
 }
 
 // GetOTAUpdateWithContext mocks base method
-func (m *MockIoTAPI) GetOTAUpdateWithContext(arg0 aws.Context, arg1 *iot.GetOTAUpdateInput, arg2 ...request.Option) (*iot.GetOTAUpdateOutput, error) {
+func (m *MockIoTAPI) GetOTAUpdateWithContext(arg0 context.Context, arg1 *iot.GetOTAUpdateInput, arg2 ...request.Option) (*iot.GetOTAUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4246,7 +4246,7 @@ func (mr *MockIoTAPIMockRecorder) GetPolicyVersionRequest(arg0 interface{}) *gom
 }
 
 // GetPolicyVersionWithContext mocks base method
-func (m *MockIoTAPI) GetPolicyVersionWithContext(arg0 aws.Context, arg1 *iot.GetPolicyVersionInput, arg2 ...request.Option) (*iot.GetPolicyVersionOutput, error) {
+func (m *MockIoTAPI) GetPolicyVersionWithContext(arg0 context.Context, arg1 *iot.GetPolicyVersionInput, arg2 ...request.Option) (*iot.GetPolicyVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4266,7 +4266,7 @@ func (mr *MockIoTAPIMockRecorder) GetPolicyVersionWithContext(arg0, arg1 interfa
 }
 
 // GetPolicyWithContext mocks base method
-func (m *MockIoTAPI) GetPolicyWithContext(arg0 aws.Context, arg1 *iot.GetPolicyInput, arg2 ...request.Option) (*iot.GetPolicyOutput, error) {
+func (m *MockIoTAPI) GetPolicyWithContext(arg0 context.Context, arg1 *iot.GetPolicyInput, arg2 ...request.Option) (*iot.GetPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4316,7 +4316,7 @@ func (mr *MockIoTAPIMockRecorder) GetRegistrationCodeRequest(arg0 interface{}) *
 }
 
 // GetRegistrationCodeWithContext mocks base method
-func (m *MockIoTAPI) GetRegistrationCodeWithContext(arg0 aws.Context, arg1 *iot.GetRegistrationCodeInput, arg2 ...request.Option) (*iot.GetRegistrationCodeOutput, error) {
+func (m *MockIoTAPI) GetRegistrationCodeWithContext(arg0 context.Context, arg1 *iot.GetRegistrationCodeInput, arg2 ...request.Option) (*iot.GetRegistrationCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4366,7 +4366,7 @@ func (mr *MockIoTAPIMockRecorder) GetTopicRuleRequest(arg0 interface{}) *gomock.
 }
 
 // GetTopicRuleWithContext mocks base method
-func (m *MockIoTAPI) GetTopicRuleWithContext(arg0 aws.Context, arg1 *iot.GetTopicRuleInput, arg2 ...request.Option) (*iot.GetTopicRuleOutput, error) {
+func (m *MockIoTAPI) GetTopicRuleWithContext(arg0 context.Context, arg1 *iot.GetTopicRuleInput, arg2 ...request.Option) (*iot.GetTopicRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4416,7 +4416,7 @@ func (mr *MockIoTAPIMockRecorder) GetV2LoggingOptionsRequest(arg0 interface{}) *
 }
 
 // GetV2LoggingOptionsWithContext mocks base method
-func (m *MockIoTAPI) GetV2LoggingOptionsWithContext(arg0 aws.Context, arg1 *iot.GetV2LoggingOptionsInput, arg2 ...request.Option) (*iot.GetV2LoggingOptionsOutput, error) {
+func (m *MockIoTAPI) GetV2LoggingOptionsWithContext(arg0 context.Context, arg1 *iot.GetV2LoggingOptionsInput, arg2 ...request.Option) (*iot.GetV2LoggingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4466,7 +4466,7 @@ func (mr *MockIoTAPIMockRecorder) ListActiveViolationsRequest(arg0 interface{}) 
 }
 
 // ListActiveViolationsWithContext mocks base method
-func (m *MockIoTAPI) ListActiveViolationsWithContext(arg0 aws.Context, arg1 *iot.ListActiveViolationsInput, arg2 ...request.Option) (*iot.ListActiveViolationsOutput, error) {
+func (m *MockIoTAPI) ListActiveViolationsWithContext(arg0 context.Context, arg1 *iot.ListActiveViolationsInput, arg2 ...request.Option) (*iot.ListActiveViolationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4516,7 +4516,7 @@ func (mr *MockIoTAPIMockRecorder) ListAttachedPoliciesRequest(arg0 interface{}) 
 }
 
 // ListAttachedPoliciesWithContext mocks base method
-func (m *MockIoTAPI) ListAttachedPoliciesWithContext(arg0 aws.Context, arg1 *iot.ListAttachedPoliciesInput, arg2 ...request.Option) (*iot.ListAttachedPoliciesOutput, error) {
+func (m *MockIoTAPI) ListAttachedPoliciesWithContext(arg0 context.Context, arg1 *iot.ListAttachedPoliciesInput, arg2 ...request.Option) (*iot.ListAttachedPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4566,7 +4566,7 @@ func (mr *MockIoTAPIMockRecorder) ListAuditFindingsRequest(arg0 interface{}) *go
 }
 
 // ListAuditFindingsWithContext mocks base method
-func (m *MockIoTAPI) ListAuditFindingsWithContext(arg0 aws.Context, arg1 *iot.ListAuditFindingsInput, arg2 ...request.Option) (*iot.ListAuditFindingsOutput, error) {
+func (m *MockIoTAPI) ListAuditFindingsWithContext(arg0 context.Context, arg1 *iot.ListAuditFindingsInput, arg2 ...request.Option) (*iot.ListAuditFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4616,7 +4616,7 @@ func (mr *MockIoTAPIMockRecorder) ListAuditTasksRequest(arg0 interface{}) *gomoc
 }
 
 // ListAuditTasksWithContext mocks base method
-func (m *MockIoTAPI) ListAuditTasksWithContext(arg0 aws.Context, arg1 *iot.ListAuditTasksInput, arg2 ...request.Option) (*iot.ListAuditTasksOutput, error) {
+func (m *MockIoTAPI) ListAuditTasksWithContext(arg0 context.Context, arg1 *iot.ListAuditTasksInput, arg2 ...request.Option) (*iot.ListAuditTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4666,7 +4666,7 @@ func (mr *MockIoTAPIMockRecorder) ListAuthorizersRequest(arg0 interface{}) *gomo
 }
 
 // ListAuthorizersWithContext mocks base method
-func (m *MockIoTAPI) ListAuthorizersWithContext(arg0 aws.Context, arg1 *iot.ListAuthorizersInput, arg2 ...request.Option) (*iot.ListAuthorizersOutput, error) {
+func (m *MockIoTAPI) ListAuthorizersWithContext(arg0 context.Context, arg1 *iot.ListAuthorizersInput, arg2 ...request.Option) (*iot.ListAuthorizersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4716,7 +4716,7 @@ func (mr *MockIoTAPIMockRecorder) ListBillingGroupsRequest(arg0 interface{}) *go
 }
 
 // ListBillingGroupsWithContext mocks base method
-func (m *MockIoTAPI) ListBillingGroupsWithContext(arg0 aws.Context, arg1 *iot.ListBillingGroupsInput, arg2 ...request.Option) (*iot.ListBillingGroupsOutput, error) {
+func (m *MockIoTAPI) ListBillingGroupsWithContext(arg0 context.Context, arg1 *iot.ListBillingGroupsInput, arg2 ...request.Option) (*iot.ListBillingGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4766,7 +4766,7 @@ func (mr *MockIoTAPIMockRecorder) ListCACertificatesRequest(arg0 interface{}) *g
 }
 
 // ListCACertificatesWithContext mocks base method
-func (m *MockIoTAPI) ListCACertificatesWithContext(arg0 aws.Context, arg1 *iot.ListCACertificatesInput, arg2 ...request.Option) (*iot.ListCACertificatesOutput, error) {
+func (m *MockIoTAPI) ListCACertificatesWithContext(arg0 context.Context, arg1 *iot.ListCACertificatesInput, arg2 ...request.Option) (*iot.ListCACertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4831,7 +4831,7 @@ func (mr *MockIoTAPIMockRecorder) ListCertificatesByCARequest(arg0 interface{}) 
 }
 
 // ListCertificatesByCAWithContext mocks base method
-func (m *MockIoTAPI) ListCertificatesByCAWithContext(arg0 aws.Context, arg1 *iot.ListCertificatesByCAInput, arg2 ...request.Option) (*iot.ListCertificatesByCAOutput, error) {
+func (m *MockIoTAPI) ListCertificatesByCAWithContext(arg0 context.Context, arg1 *iot.ListCertificatesByCAInput, arg2 ...request.Option) (*iot.ListCertificatesByCAOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4866,7 +4866,7 @@ func (mr *MockIoTAPIMockRecorder) ListCertificatesRequest(arg0 interface{}) *gom
 }
 
 // ListCertificatesWithContext mocks base method
-func (m *MockIoTAPI) ListCertificatesWithContext(arg0 aws.Context, arg1 *iot.ListCertificatesInput, arg2 ...request.Option) (*iot.ListCertificatesOutput, error) {
+func (m *MockIoTAPI) ListCertificatesWithContext(arg0 context.Context, arg1 *iot.ListCertificatesInput, arg2 ...request.Option) (*iot.ListCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4916,7 +4916,7 @@ func (mr *MockIoTAPIMockRecorder) ListIndicesRequest(arg0 interface{}) *gomock.C
 }
 
 // ListIndicesWithContext mocks base method
-func (m *MockIoTAPI) ListIndicesWithContext(arg0 aws.Context, arg1 *iot.ListIndicesInput, arg2 ...request.Option) (*iot.ListIndicesOutput, error) {
+func (m *MockIoTAPI) ListIndicesWithContext(arg0 context.Context, arg1 *iot.ListIndicesInput, arg2 ...request.Option) (*iot.ListIndicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4966,7 +4966,7 @@ func (mr *MockIoTAPIMockRecorder) ListJobExecutionsForJobRequest(arg0 interface{
 }
 
 // ListJobExecutionsForJobWithContext mocks base method
-func (m *MockIoTAPI) ListJobExecutionsForJobWithContext(arg0 aws.Context, arg1 *iot.ListJobExecutionsForJobInput, arg2 ...request.Option) (*iot.ListJobExecutionsForJobOutput, error) {
+func (m *MockIoTAPI) ListJobExecutionsForJobWithContext(arg0 context.Context, arg1 *iot.ListJobExecutionsForJobInput, arg2 ...request.Option) (*iot.ListJobExecutionsForJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5016,7 +5016,7 @@ func (mr *MockIoTAPIMockRecorder) ListJobExecutionsForThingRequest(arg0 interfac
 }
 
 // ListJobExecutionsForThingWithContext mocks base method
-func (m *MockIoTAPI) ListJobExecutionsForThingWithContext(arg0 aws.Context, arg1 *iot.ListJobExecutionsForThingInput, arg2 ...request.Option) (*iot.ListJobExecutionsForThingOutput, error) {
+func (m *MockIoTAPI) ListJobExecutionsForThingWithContext(arg0 context.Context, arg1 *iot.ListJobExecutionsForThingInput, arg2 ...request.Option) (*iot.ListJobExecutionsForThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5066,7 +5066,7 @@ func (mr *MockIoTAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.Call
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockIoTAPI) ListJobsWithContext(arg0 aws.Context, arg1 *iot.ListJobsInput, arg2 ...request.Option) (*iot.ListJobsOutput, error) {
+func (m *MockIoTAPI) ListJobsWithContext(arg0 context.Context, arg1 *iot.ListJobsInput, arg2 ...request.Option) (*iot.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5116,7 +5116,7 @@ func (mr *MockIoTAPIMockRecorder) ListOTAUpdatesRequest(arg0 interface{}) *gomoc
 }
 
 // ListOTAUpdatesWithContext mocks base method
-func (m *MockIoTAPI) ListOTAUpdatesWithContext(arg0 aws.Context, arg1 *iot.ListOTAUpdatesInput, arg2 ...request.Option) (*iot.ListOTAUpdatesOutput, error) {
+func (m *MockIoTAPI) ListOTAUpdatesWithContext(arg0 context.Context, arg1 *iot.ListOTAUpdatesInput, arg2 ...request.Option) (*iot.ListOTAUpdatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5166,7 +5166,7 @@ func (mr *MockIoTAPIMockRecorder) ListOutgoingCertificatesRequest(arg0 interface
 }
 
 // ListOutgoingCertificatesWithContext mocks base method
-func (m *MockIoTAPI) ListOutgoingCertificatesWithContext(arg0 aws.Context, arg1 *iot.ListOutgoingCertificatesInput, arg2 ...request.Option) (*iot.ListOutgoingCertificatesOutput, error) {
+func (m *MockIoTAPI) ListOutgoingCertificatesWithContext(arg0 context.Context, arg1 *iot.ListOutgoingCertificatesInput, arg2 ...request.Option) (*iot.ListOutgoingCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5216,7 +5216,7 @@ func (mr *MockIoTAPIMockRecorder) ListPoliciesRequest(arg0 interface{}) *gomock.
 }
 
 // ListPoliciesWithContext mocks base method
-func (m *MockIoTAPI) ListPoliciesWithContext(arg0 aws.Context, arg1 *iot.ListPoliciesInput, arg2 ...request.Option) (*iot.ListPoliciesOutput, error) {
+func (m *MockIoTAPI) ListPoliciesWithContext(arg0 context.Context, arg1 *iot.ListPoliciesInput, arg2 ...request.Option) (*iot.ListPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5266,7 +5266,7 @@ func (mr *MockIoTAPIMockRecorder) ListPolicyPrincipalsRequest(arg0 interface{}) 
 }
 
 // ListPolicyPrincipalsWithContext mocks base method
-func (m *MockIoTAPI) ListPolicyPrincipalsWithContext(arg0 aws.Context, arg1 *iot.ListPolicyPrincipalsInput, arg2 ...request.Option) (*iot.ListPolicyPrincipalsOutput, error) {
+func (m *MockIoTAPI) ListPolicyPrincipalsWithContext(arg0 context.Context, arg1 *iot.ListPolicyPrincipalsInput, arg2 ...request.Option) (*iot.ListPolicyPrincipalsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5316,7 +5316,7 @@ func (mr *MockIoTAPIMockRecorder) ListPolicyVersionsRequest(arg0 interface{}) *g
 }
 
 // ListPolicyVersionsWithContext mocks base method
-func (m *MockIoTAPI) ListPolicyVersionsWithContext(arg0 aws.Context, arg1 *iot.ListPolicyVersionsInput, arg2 ...request.Option) (*iot.ListPolicyVersionsOutput, error) {
+func (m *MockIoTAPI) ListPolicyVersionsWithContext(arg0 context.Context, arg1 *iot.ListPolicyVersionsInput, arg2 ...request.Option) (*iot.ListPolicyVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5366,7 +5366,7 @@ func (mr *MockIoTAPIMockRecorder) ListPrincipalPoliciesRequest(arg0 interface{})
 }
 
 // ListPrincipalPoliciesWithContext mocks base method
-func (m *MockIoTAPI) ListPrincipalPoliciesWithContext(arg0 aws.Context, arg1 *iot.ListPrincipalPoliciesInput, arg2 ...request.Option) (*iot.ListPrincipalPoliciesOutput, error) {
+func (m *MockIoTAPI) ListPrincipalPoliciesWithContext(arg0 context.Context, arg1 *iot.ListPrincipalPoliciesInput, arg2 ...request.Option) (*iot.ListPrincipalPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5416,7 +5416,7 @@ func (mr *MockIoTAPIMockRecorder) ListPrincipalThingsRequest(arg0 interface{}) *
 }
 
 // ListPrincipalThingsWithContext mocks base method
-func (m *MockIoTAPI) ListPrincipalThingsWithContext(arg0 aws.Context, arg1 *iot.ListPrincipalThingsInput, arg2 ...request.Option) (*iot.ListPrincipalThingsOutput, error) {
+func (m *MockIoTAPI) ListPrincipalThingsWithContext(arg0 context.Context, arg1 *iot.ListPrincipalThingsInput, arg2 ...request.Option) (*iot.ListPrincipalThingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5466,7 +5466,7 @@ func (mr *MockIoTAPIMockRecorder) ListRoleAliasesRequest(arg0 interface{}) *gomo
 }
 
 // ListRoleAliasesWithContext mocks base method
-func (m *MockIoTAPI) ListRoleAliasesWithContext(arg0 aws.Context, arg1 *iot.ListRoleAliasesInput, arg2 ...request.Option) (*iot.ListRoleAliasesOutput, error) {
+func (m *MockIoTAPI) ListRoleAliasesWithContext(arg0 context.Context, arg1 *iot.ListRoleAliasesInput, arg2 ...request.Option) (*iot.ListRoleAliasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5516,7 +5516,7 @@ func (mr *MockIoTAPIMockRecorder) ListScheduledAuditsRequest(arg0 interface{}) *
 }
 
 // ListScheduledAuditsWithContext mocks base method
-func (m *MockIoTAPI) ListScheduledAuditsWithContext(arg0 aws.Context, arg1 *iot.ListScheduledAuditsInput, arg2 ...request.Option) (*iot.ListScheduledAuditsOutput, error) {
+func (m *MockIoTAPI) ListScheduledAuditsWithContext(arg0 context.Context, arg1 *iot.ListScheduledAuditsInput, arg2 ...request.Option) (*iot.ListScheduledAuditsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5581,7 +5581,7 @@ func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesForTargetRequest(arg0 inte
 }
 
 // ListSecurityProfilesForTargetWithContext mocks base method
-func (m *MockIoTAPI) ListSecurityProfilesForTargetWithContext(arg0 aws.Context, arg1 *iot.ListSecurityProfilesForTargetInput, arg2 ...request.Option) (*iot.ListSecurityProfilesForTargetOutput, error) {
+func (m *MockIoTAPI) ListSecurityProfilesForTargetWithContext(arg0 context.Context, arg1 *iot.ListSecurityProfilesForTargetInput, arg2 ...request.Option) (*iot.ListSecurityProfilesForTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5616,7 +5616,7 @@ func (mr *MockIoTAPIMockRecorder) ListSecurityProfilesRequest(arg0 interface{}) 
 }
 
 // ListSecurityProfilesWithContext mocks base method
-func (m *MockIoTAPI) ListSecurityProfilesWithContext(arg0 aws.Context, arg1 *iot.ListSecurityProfilesInput, arg2 ...request.Option) (*iot.ListSecurityProfilesOutput, error) {
+func (m *MockIoTAPI) ListSecurityProfilesWithContext(arg0 context.Context, arg1 *iot.ListSecurityProfilesInput, arg2 ...request.Option) (*iot.ListSecurityProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5666,7 +5666,7 @@ func (mr *MockIoTAPIMockRecorder) ListStreamsRequest(arg0 interface{}) *gomock.C
 }
 
 // ListStreamsWithContext mocks base method
-func (m *MockIoTAPI) ListStreamsWithContext(arg0 aws.Context, arg1 *iot.ListStreamsInput, arg2 ...request.Option) (*iot.ListStreamsOutput, error) {
+func (m *MockIoTAPI) ListStreamsWithContext(arg0 context.Context, arg1 *iot.ListStreamsInput, arg2 ...request.Option) (*iot.ListStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5716,7 +5716,7 @@ func (mr *MockIoTAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockIoTAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *iot.ListTagsForResourceInput, arg2 ...request.Option) (*iot.ListTagsForResourceOutput, error) {
+func (m *MockIoTAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *iot.ListTagsForResourceInput, arg2 ...request.Option) (*iot.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5766,7 +5766,7 @@ func (mr *MockIoTAPIMockRecorder) ListTargetsForPolicyRequest(arg0 interface{}) 
 }
 
 // ListTargetsForPolicyWithContext mocks base method
-func (m *MockIoTAPI) ListTargetsForPolicyWithContext(arg0 aws.Context, arg1 *iot.ListTargetsForPolicyInput, arg2 ...request.Option) (*iot.ListTargetsForPolicyOutput, error) {
+func (m *MockIoTAPI) ListTargetsForPolicyWithContext(arg0 context.Context, arg1 *iot.ListTargetsForPolicyInput, arg2 ...request.Option) (*iot.ListTargetsForPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5816,7 +5816,7 @@ func (mr *MockIoTAPIMockRecorder) ListTargetsForSecurityProfileRequest(arg0 inte
 }
 
 // ListTargetsForSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) ListTargetsForSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.ListTargetsForSecurityProfileInput, arg2 ...request.Option) (*iot.ListTargetsForSecurityProfileOutput, error) {
+func (m *MockIoTAPI) ListTargetsForSecurityProfileWithContext(arg0 context.Context, arg1 *iot.ListTargetsForSecurityProfileInput, arg2 ...request.Option) (*iot.ListTargetsForSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5881,7 +5881,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingGroupsForThingRequest(arg0 interface{
 }
 
 // ListThingGroupsForThingWithContext mocks base method
-func (m *MockIoTAPI) ListThingGroupsForThingWithContext(arg0 aws.Context, arg1 *iot.ListThingGroupsForThingInput, arg2 ...request.Option) (*iot.ListThingGroupsForThingOutput, error) {
+func (m *MockIoTAPI) ListThingGroupsForThingWithContext(arg0 context.Context, arg1 *iot.ListThingGroupsForThingInput, arg2 ...request.Option) (*iot.ListThingGroupsForThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5916,7 +5916,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingGroupsRequest(arg0 interface{}) *gomo
 }
 
 // ListThingGroupsWithContext mocks base method
-func (m *MockIoTAPI) ListThingGroupsWithContext(arg0 aws.Context, arg1 *iot.ListThingGroupsInput, arg2 ...request.Option) (*iot.ListThingGroupsOutput, error) {
+func (m *MockIoTAPI) ListThingGroupsWithContext(arg0 context.Context, arg1 *iot.ListThingGroupsInput, arg2 ...request.Option) (*iot.ListThingGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5966,7 +5966,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingPrincipalsRequest(arg0 interface{}) *
 }
 
 // ListThingPrincipalsWithContext mocks base method
-func (m *MockIoTAPI) ListThingPrincipalsWithContext(arg0 aws.Context, arg1 *iot.ListThingPrincipalsInput, arg2 ...request.Option) (*iot.ListThingPrincipalsOutput, error) {
+func (m *MockIoTAPI) ListThingPrincipalsWithContext(arg0 context.Context, arg1 *iot.ListThingPrincipalsInput, arg2 ...request.Option) (*iot.ListThingPrincipalsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6016,7 +6016,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingRegistrationTaskReportsRequest(arg0 i
 }
 
 // ListThingRegistrationTaskReportsWithContext mocks base method
-func (m *MockIoTAPI) ListThingRegistrationTaskReportsWithContext(arg0 aws.Context, arg1 *iot.ListThingRegistrationTaskReportsInput, arg2 ...request.Option) (*iot.ListThingRegistrationTaskReportsOutput, error) {
+func (m *MockIoTAPI) ListThingRegistrationTaskReportsWithContext(arg0 context.Context, arg1 *iot.ListThingRegistrationTaskReportsInput, arg2 ...request.Option) (*iot.ListThingRegistrationTaskReportsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6066,7 +6066,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingRegistrationTasksRequest(arg0 interfa
 }
 
 // ListThingRegistrationTasksWithContext mocks base method
-func (m *MockIoTAPI) ListThingRegistrationTasksWithContext(arg0 aws.Context, arg1 *iot.ListThingRegistrationTasksInput, arg2 ...request.Option) (*iot.ListThingRegistrationTasksOutput, error) {
+func (m *MockIoTAPI) ListThingRegistrationTasksWithContext(arg0 context.Context, arg1 *iot.ListThingRegistrationTasksInput, arg2 ...request.Option) (*iot.ListThingRegistrationTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6116,7 +6116,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingTypesRequest(arg0 interface{}) *gomoc
 }
 
 // ListThingTypesWithContext mocks base method
-func (m *MockIoTAPI) ListThingTypesWithContext(arg0 aws.Context, arg1 *iot.ListThingTypesInput, arg2 ...request.Option) (*iot.ListThingTypesOutput, error) {
+func (m *MockIoTAPI) ListThingTypesWithContext(arg0 context.Context, arg1 *iot.ListThingTypesInput, arg2 ...request.Option) (*iot.ListThingTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6181,7 +6181,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingsInBillingGroupRequest(arg0 interface
 }
 
 // ListThingsInBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) ListThingsInBillingGroupWithContext(arg0 aws.Context, arg1 *iot.ListThingsInBillingGroupInput, arg2 ...request.Option) (*iot.ListThingsInBillingGroupOutput, error) {
+func (m *MockIoTAPI) ListThingsInBillingGroupWithContext(arg0 context.Context, arg1 *iot.ListThingsInBillingGroupInput, arg2 ...request.Option) (*iot.ListThingsInBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6231,7 +6231,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingsInThingGroupRequest(arg0 interface{}
 }
 
 // ListThingsInThingGroupWithContext mocks base method
-func (m *MockIoTAPI) ListThingsInThingGroupWithContext(arg0 aws.Context, arg1 *iot.ListThingsInThingGroupInput, arg2 ...request.Option) (*iot.ListThingsInThingGroupOutput, error) {
+func (m *MockIoTAPI) ListThingsInThingGroupWithContext(arg0 context.Context, arg1 *iot.ListThingsInThingGroupInput, arg2 ...request.Option) (*iot.ListThingsInThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6266,7 +6266,7 @@ func (mr *MockIoTAPIMockRecorder) ListThingsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListThingsWithContext mocks base method
-func (m *MockIoTAPI) ListThingsWithContext(arg0 aws.Context, arg1 *iot.ListThingsInput, arg2 ...request.Option) (*iot.ListThingsOutput, error) {
+func (m *MockIoTAPI) ListThingsWithContext(arg0 context.Context, arg1 *iot.ListThingsInput, arg2 ...request.Option) (*iot.ListThingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6316,7 +6316,7 @@ func (mr *MockIoTAPIMockRecorder) ListTopicRulesRequest(arg0 interface{}) *gomoc
 }
 
 // ListTopicRulesWithContext mocks base method
-func (m *MockIoTAPI) ListTopicRulesWithContext(arg0 aws.Context, arg1 *iot.ListTopicRulesInput, arg2 ...request.Option) (*iot.ListTopicRulesOutput, error) {
+func (m *MockIoTAPI) ListTopicRulesWithContext(arg0 context.Context, arg1 *iot.ListTopicRulesInput, arg2 ...request.Option) (*iot.ListTopicRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6366,7 +6366,7 @@ func (mr *MockIoTAPIMockRecorder) ListV2LoggingLevelsRequest(arg0 interface{}) *
 }
 
 // ListV2LoggingLevelsWithContext mocks base method
-func (m *MockIoTAPI) ListV2LoggingLevelsWithContext(arg0 aws.Context, arg1 *iot.ListV2LoggingLevelsInput, arg2 ...request.Option) (*iot.ListV2LoggingLevelsOutput, error) {
+func (m *MockIoTAPI) ListV2LoggingLevelsWithContext(arg0 context.Context, arg1 *iot.ListV2LoggingLevelsInput, arg2 ...request.Option) (*iot.ListV2LoggingLevelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6416,7 +6416,7 @@ func (mr *MockIoTAPIMockRecorder) ListViolationEventsRequest(arg0 interface{}) *
 }
 
 // ListViolationEventsWithContext mocks base method
-func (m *MockIoTAPI) ListViolationEventsWithContext(arg0 aws.Context, arg1 *iot.ListViolationEventsInput, arg2 ...request.Option) (*iot.ListViolationEventsOutput, error) {
+func (m *MockIoTAPI) ListViolationEventsWithContext(arg0 context.Context, arg1 *iot.ListViolationEventsInput, arg2 ...request.Option) (*iot.ListViolationEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6466,7 +6466,7 @@ func (mr *MockIoTAPIMockRecorder) RegisterCACertificateRequest(arg0 interface{})
 }
 
 // RegisterCACertificateWithContext mocks base method
-func (m *MockIoTAPI) RegisterCACertificateWithContext(arg0 aws.Context, arg1 *iot.RegisterCACertificateInput, arg2 ...request.Option) (*iot.RegisterCACertificateOutput, error) {
+func (m *MockIoTAPI) RegisterCACertificateWithContext(arg0 context.Context, arg1 *iot.RegisterCACertificateInput, arg2 ...request.Option) (*iot.RegisterCACertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6516,7 +6516,7 @@ func (mr *MockIoTAPIMockRecorder) RegisterCertificateRequest(arg0 interface{}) *
 }
 
 // RegisterCertificateWithContext mocks base method
-func (m *MockIoTAPI) RegisterCertificateWithContext(arg0 aws.Context, arg1 *iot.RegisterCertificateInput, arg2 ...request.Option) (*iot.RegisterCertificateOutput, error) {
+func (m *MockIoTAPI) RegisterCertificateWithContext(arg0 context.Context, arg1 *iot.RegisterCertificateInput, arg2 ...request.Option) (*iot.RegisterCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6566,7 +6566,7 @@ func (mr *MockIoTAPIMockRecorder) RegisterThingRequest(arg0 interface{}) *gomock
 }
 
 // RegisterThingWithContext mocks base method
-func (m *MockIoTAPI) RegisterThingWithContext(arg0 aws.Context, arg1 *iot.RegisterThingInput, arg2 ...request.Option) (*iot.RegisterThingOutput, error) {
+func (m *MockIoTAPI) RegisterThingWithContext(arg0 context.Context, arg1 *iot.RegisterThingInput, arg2 ...request.Option) (*iot.RegisterThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6616,7 +6616,7 @@ func (mr *MockIoTAPIMockRecorder) RejectCertificateTransferRequest(arg0 interfac
 }
 
 // RejectCertificateTransferWithContext mocks base method
-func (m *MockIoTAPI) RejectCertificateTransferWithContext(arg0 aws.Context, arg1 *iot.RejectCertificateTransferInput, arg2 ...request.Option) (*iot.RejectCertificateTransferOutput, error) {
+func (m *MockIoTAPI) RejectCertificateTransferWithContext(arg0 context.Context, arg1 *iot.RejectCertificateTransferInput, arg2 ...request.Option) (*iot.RejectCertificateTransferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6666,7 +6666,7 @@ func (mr *MockIoTAPIMockRecorder) RemoveThingFromBillingGroupRequest(arg0 interf
 }
 
 // RemoveThingFromBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) RemoveThingFromBillingGroupWithContext(arg0 aws.Context, arg1 *iot.RemoveThingFromBillingGroupInput, arg2 ...request.Option) (*iot.RemoveThingFromBillingGroupOutput, error) {
+func (m *MockIoTAPI) RemoveThingFromBillingGroupWithContext(arg0 context.Context, arg1 *iot.RemoveThingFromBillingGroupInput, arg2 ...request.Option) (*iot.RemoveThingFromBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6716,7 +6716,7 @@ func (mr *MockIoTAPIMockRecorder) RemoveThingFromThingGroupRequest(arg0 interfac
 }
 
 // RemoveThingFromThingGroupWithContext mocks base method
-func (m *MockIoTAPI) RemoveThingFromThingGroupWithContext(arg0 aws.Context, arg1 *iot.RemoveThingFromThingGroupInput, arg2 ...request.Option) (*iot.RemoveThingFromThingGroupOutput, error) {
+func (m *MockIoTAPI) RemoveThingFromThingGroupWithContext(arg0 context.Context, arg1 *iot.RemoveThingFromThingGroupInput, arg2 ...request.Option) (*iot.RemoveThingFromThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6766,7 +6766,7 @@ func (mr *MockIoTAPIMockRecorder) ReplaceTopicRuleRequest(arg0 interface{}) *gom
 }
 
 // ReplaceTopicRuleWithContext mocks base method
-func (m *MockIoTAPI) ReplaceTopicRuleWithContext(arg0 aws.Context, arg1 *iot.ReplaceTopicRuleInput, arg2 ...request.Option) (*iot.ReplaceTopicRuleOutput, error) {
+func (m *MockIoTAPI) ReplaceTopicRuleWithContext(arg0 context.Context, arg1 *iot.ReplaceTopicRuleInput, arg2 ...request.Option) (*iot.ReplaceTopicRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6816,7 +6816,7 @@ func (mr *MockIoTAPIMockRecorder) SearchIndexRequest(arg0 interface{}) *gomock.C
 }
 
 // SearchIndexWithContext mocks base method
-func (m *MockIoTAPI) SearchIndexWithContext(arg0 aws.Context, arg1 *iot.SearchIndexInput, arg2 ...request.Option) (*iot.SearchIndexOutput, error) {
+func (m *MockIoTAPI) SearchIndexWithContext(arg0 context.Context, arg1 *iot.SearchIndexInput, arg2 ...request.Option) (*iot.SearchIndexOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6866,7 +6866,7 @@ func (mr *MockIoTAPIMockRecorder) SetDefaultAuthorizerRequest(arg0 interface{}) 
 }
 
 // SetDefaultAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) SetDefaultAuthorizerWithContext(arg0 aws.Context, arg1 *iot.SetDefaultAuthorizerInput, arg2 ...request.Option) (*iot.SetDefaultAuthorizerOutput, error) {
+func (m *MockIoTAPI) SetDefaultAuthorizerWithContext(arg0 context.Context, arg1 *iot.SetDefaultAuthorizerInput, arg2 ...request.Option) (*iot.SetDefaultAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6916,7 +6916,7 @@ func (mr *MockIoTAPIMockRecorder) SetDefaultPolicyVersionRequest(arg0 interface{
 }
 
 // SetDefaultPolicyVersionWithContext mocks base method
-func (m *MockIoTAPI) SetDefaultPolicyVersionWithContext(arg0 aws.Context, arg1 *iot.SetDefaultPolicyVersionInput, arg2 ...request.Option) (*iot.SetDefaultPolicyVersionOutput, error) {
+func (m *MockIoTAPI) SetDefaultPolicyVersionWithContext(arg0 context.Context, arg1 *iot.SetDefaultPolicyVersionInput, arg2 ...request.Option) (*iot.SetDefaultPolicyVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6966,7 +6966,7 @@ func (mr *MockIoTAPIMockRecorder) SetLoggingOptionsRequest(arg0 interface{}) *go
 }
 
 // SetLoggingOptionsWithContext mocks base method
-func (m *MockIoTAPI) SetLoggingOptionsWithContext(arg0 aws.Context, arg1 *iot.SetLoggingOptionsInput, arg2 ...request.Option) (*iot.SetLoggingOptionsOutput, error) {
+func (m *MockIoTAPI) SetLoggingOptionsWithContext(arg0 context.Context, arg1 *iot.SetLoggingOptionsInput, arg2 ...request.Option) (*iot.SetLoggingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7016,7 +7016,7 @@ func (mr *MockIoTAPIMockRecorder) SetV2LoggingLevelRequest(arg0 interface{}) *go
 }
 
 // SetV2LoggingLevelWithContext mocks base method
-func (m *MockIoTAPI) SetV2LoggingLevelWithContext(arg0 aws.Context, arg1 *iot.SetV2LoggingLevelInput, arg2 ...request.Option) (*iot.SetV2LoggingLevelOutput, error) {
+func (m *MockIoTAPI) SetV2LoggingLevelWithContext(arg0 context.Context, arg1 *iot.SetV2LoggingLevelInput, arg2 ...request.Option) (*iot.SetV2LoggingLevelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7066,7 +7066,7 @@ func (mr *MockIoTAPIMockRecorder) SetV2LoggingOptionsRequest(arg0 interface{}) *
 }
 
 // SetV2LoggingOptionsWithContext mocks base method
-func (m *MockIoTAPI) SetV2LoggingOptionsWithContext(arg0 aws.Context, arg1 *iot.SetV2LoggingOptionsInput, arg2 ...request.Option) (*iot.SetV2LoggingOptionsOutput, error) {
+func (m *MockIoTAPI) SetV2LoggingOptionsWithContext(arg0 context.Context, arg1 *iot.SetV2LoggingOptionsInput, arg2 ...request.Option) (*iot.SetV2LoggingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7116,7 +7116,7 @@ func (mr *MockIoTAPIMockRecorder) StartOnDemandAuditTaskRequest(arg0 interface{}
 }
 
 // StartOnDemandAuditTaskWithContext mocks base method
-func (m *MockIoTAPI) StartOnDemandAuditTaskWithContext(arg0 aws.Context, arg1 *iot.StartOnDemandAuditTaskInput, arg2 ...request.Option) (*iot.StartOnDemandAuditTaskOutput, error) {
+func (m *MockIoTAPI) StartOnDemandAuditTaskWithContext(arg0 context.Context, arg1 *iot.StartOnDemandAuditTaskInput, arg2 ...request.Option) (*iot.StartOnDemandAuditTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7166,7 +7166,7 @@ func (mr *MockIoTAPIMockRecorder) StartThingRegistrationTaskRequest(arg0 interfa
 }
 
 // StartThingRegistrationTaskWithContext mocks base method
-func (m *MockIoTAPI) StartThingRegistrationTaskWithContext(arg0 aws.Context, arg1 *iot.StartThingRegistrationTaskInput, arg2 ...request.Option) (*iot.StartThingRegistrationTaskOutput, error) {
+func (m *MockIoTAPI) StartThingRegistrationTaskWithContext(arg0 context.Context, arg1 *iot.StartThingRegistrationTaskInput, arg2 ...request.Option) (*iot.StartThingRegistrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7216,7 +7216,7 @@ func (mr *MockIoTAPIMockRecorder) StopThingRegistrationTaskRequest(arg0 interfac
 }
 
 // StopThingRegistrationTaskWithContext mocks base method
-func (m *MockIoTAPI) StopThingRegistrationTaskWithContext(arg0 aws.Context, arg1 *iot.StopThingRegistrationTaskInput, arg2 ...request.Option) (*iot.StopThingRegistrationTaskOutput, error) {
+func (m *MockIoTAPI) StopThingRegistrationTaskWithContext(arg0 context.Context, arg1 *iot.StopThingRegistrationTaskInput, arg2 ...request.Option) (*iot.StopThingRegistrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7266,7 +7266,7 @@ func (mr *MockIoTAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.C
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockIoTAPI) TagResourceWithContext(arg0 aws.Context, arg1 *iot.TagResourceInput, arg2 ...request.Option) (*iot.TagResourceOutput, error) {
+func (m *MockIoTAPI) TagResourceWithContext(arg0 context.Context, arg1 *iot.TagResourceInput, arg2 ...request.Option) (*iot.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7316,7 +7316,7 @@ func (mr *MockIoTAPIMockRecorder) TestAuthorizationRequest(arg0 interface{}) *go
 }
 
 // TestAuthorizationWithContext mocks base method
-func (m *MockIoTAPI) TestAuthorizationWithContext(arg0 aws.Context, arg1 *iot.TestAuthorizationInput, arg2 ...request.Option) (*iot.TestAuthorizationOutput, error) {
+func (m *MockIoTAPI) TestAuthorizationWithContext(arg0 context.Context, arg1 *iot.TestAuthorizationInput, arg2 ...request.Option) (*iot.TestAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7366,7 +7366,7 @@ func (mr *MockIoTAPIMockRecorder) TestInvokeAuthorizerRequest(arg0 interface{}) 
 }
 
 // TestInvokeAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) TestInvokeAuthorizerWithContext(arg0 aws.Context, arg1 *iot.TestInvokeAuthorizerInput, arg2 ...request.Option) (*iot.TestInvokeAuthorizerOutput, error) {
+func (m *MockIoTAPI) TestInvokeAuthorizerWithContext(arg0 context.Context, arg1 *iot.TestInvokeAuthorizerInput, arg2 ...request.Option) (*iot.TestInvokeAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7416,7 +7416,7 @@ func (mr *MockIoTAPIMockRecorder) TransferCertificateRequest(arg0 interface{}) *
 }
 
 // TransferCertificateWithContext mocks base method
-func (m *MockIoTAPI) TransferCertificateWithContext(arg0 aws.Context, arg1 *iot.TransferCertificateInput, arg2 ...request.Option) (*iot.TransferCertificateOutput, error) {
+func (m *MockIoTAPI) TransferCertificateWithContext(arg0 context.Context, arg1 *iot.TransferCertificateInput, arg2 ...request.Option) (*iot.TransferCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7466,7 +7466,7 @@ func (mr *MockIoTAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockIoTAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *iot.UntagResourceInput, arg2 ...request.Option) (*iot.UntagResourceOutput, error) {
+func (m *MockIoTAPI) UntagResourceWithContext(arg0 context.Context, arg1 *iot.UntagResourceInput, arg2 ...request.Option) (*iot.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7516,7 +7516,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateAccountAuditConfigurationRequest(arg0 in
 }
 
 // UpdateAccountAuditConfigurationWithContext mocks base method
-func (m *MockIoTAPI) UpdateAccountAuditConfigurationWithContext(arg0 aws.Context, arg1 *iot.UpdateAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.UpdateAccountAuditConfigurationOutput, error) {
+func (m *MockIoTAPI) UpdateAccountAuditConfigurationWithContext(arg0 context.Context, arg1 *iot.UpdateAccountAuditConfigurationInput, arg2 ...request.Option) (*iot.UpdateAccountAuditConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7566,7 +7566,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateAuthorizerRequest(arg0 interface{}) *gom
 }
 
 // UpdateAuthorizerWithContext mocks base method
-func (m *MockIoTAPI) UpdateAuthorizerWithContext(arg0 aws.Context, arg1 *iot.UpdateAuthorizerInput, arg2 ...request.Option) (*iot.UpdateAuthorizerOutput, error) {
+func (m *MockIoTAPI) UpdateAuthorizerWithContext(arg0 context.Context, arg1 *iot.UpdateAuthorizerInput, arg2 ...request.Option) (*iot.UpdateAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7616,7 +7616,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateBillingGroupRequest(arg0 interface{}) *g
 }
 
 // UpdateBillingGroupWithContext mocks base method
-func (m *MockIoTAPI) UpdateBillingGroupWithContext(arg0 aws.Context, arg1 *iot.UpdateBillingGroupInput, arg2 ...request.Option) (*iot.UpdateBillingGroupOutput, error) {
+func (m *MockIoTAPI) UpdateBillingGroupWithContext(arg0 context.Context, arg1 *iot.UpdateBillingGroupInput, arg2 ...request.Option) (*iot.UpdateBillingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7666,7 +7666,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateCACertificateRequest(arg0 interface{}) *
 }
 
 // UpdateCACertificateWithContext mocks base method
-func (m *MockIoTAPI) UpdateCACertificateWithContext(arg0 aws.Context, arg1 *iot.UpdateCACertificateInput, arg2 ...request.Option) (*iot.UpdateCACertificateOutput, error) {
+func (m *MockIoTAPI) UpdateCACertificateWithContext(arg0 context.Context, arg1 *iot.UpdateCACertificateInput, arg2 ...request.Option) (*iot.UpdateCACertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7716,7 +7716,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateCertificateRequest(arg0 interface{}) *go
 }
 
 // UpdateCertificateWithContext mocks base method
-func (m *MockIoTAPI) UpdateCertificateWithContext(arg0 aws.Context, arg1 *iot.UpdateCertificateInput, arg2 ...request.Option) (*iot.UpdateCertificateOutput, error) {
+func (m *MockIoTAPI) UpdateCertificateWithContext(arg0 context.Context, arg1 *iot.UpdateCertificateInput, arg2 ...request.Option) (*iot.UpdateCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7766,7 +7766,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateDynamicThingGroupRequest(arg0 interface{
 }
 
 // UpdateDynamicThingGroupWithContext mocks base method
-func (m *MockIoTAPI) UpdateDynamicThingGroupWithContext(arg0 aws.Context, arg1 *iot.UpdateDynamicThingGroupInput, arg2 ...request.Option) (*iot.UpdateDynamicThingGroupOutput, error) {
+func (m *MockIoTAPI) UpdateDynamicThingGroupWithContext(arg0 context.Context, arg1 *iot.UpdateDynamicThingGroupInput, arg2 ...request.Option) (*iot.UpdateDynamicThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7816,7 +7816,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateEventConfigurationsRequest(arg0 interfac
 }
 
 // UpdateEventConfigurationsWithContext mocks base method
-func (m *MockIoTAPI) UpdateEventConfigurationsWithContext(arg0 aws.Context, arg1 *iot.UpdateEventConfigurationsInput, arg2 ...request.Option) (*iot.UpdateEventConfigurationsOutput, error) {
+func (m *MockIoTAPI) UpdateEventConfigurationsWithContext(arg0 context.Context, arg1 *iot.UpdateEventConfigurationsInput, arg2 ...request.Option) (*iot.UpdateEventConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7866,7 +7866,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateIndexingConfigurationRequest(arg0 interf
 }
 
 // UpdateIndexingConfigurationWithContext mocks base method
-func (m *MockIoTAPI) UpdateIndexingConfigurationWithContext(arg0 aws.Context, arg1 *iot.UpdateIndexingConfigurationInput, arg2 ...request.Option) (*iot.UpdateIndexingConfigurationOutput, error) {
+func (m *MockIoTAPI) UpdateIndexingConfigurationWithContext(arg0 context.Context, arg1 *iot.UpdateIndexingConfigurationInput, arg2 ...request.Option) (*iot.UpdateIndexingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7916,7 +7916,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateJobRequest(arg0 interface{}) *gomock.Cal
 }
 
 // UpdateJobWithContext mocks base method
-func (m *MockIoTAPI) UpdateJobWithContext(arg0 aws.Context, arg1 *iot.UpdateJobInput, arg2 ...request.Option) (*iot.UpdateJobOutput, error) {
+func (m *MockIoTAPI) UpdateJobWithContext(arg0 context.Context, arg1 *iot.UpdateJobInput, arg2 ...request.Option) (*iot.UpdateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -7966,7 +7966,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateRoleAliasRequest(arg0 interface{}) *gomo
 }
 
 // UpdateRoleAliasWithContext mocks base method
-func (m *MockIoTAPI) UpdateRoleAliasWithContext(arg0 aws.Context, arg1 *iot.UpdateRoleAliasInput, arg2 ...request.Option) (*iot.UpdateRoleAliasOutput, error) {
+func (m *MockIoTAPI) UpdateRoleAliasWithContext(arg0 context.Context, arg1 *iot.UpdateRoleAliasInput, arg2 ...request.Option) (*iot.UpdateRoleAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8016,7 +8016,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateScheduledAuditRequest(arg0 interface{}) 
 }
 
 // UpdateScheduledAuditWithContext mocks base method
-func (m *MockIoTAPI) UpdateScheduledAuditWithContext(arg0 aws.Context, arg1 *iot.UpdateScheduledAuditInput, arg2 ...request.Option) (*iot.UpdateScheduledAuditOutput, error) {
+func (m *MockIoTAPI) UpdateScheduledAuditWithContext(arg0 context.Context, arg1 *iot.UpdateScheduledAuditInput, arg2 ...request.Option) (*iot.UpdateScheduledAuditOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8066,7 +8066,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateSecurityProfileRequest(arg0 interface{})
 }
 
 // UpdateSecurityProfileWithContext mocks base method
-func (m *MockIoTAPI) UpdateSecurityProfileWithContext(arg0 aws.Context, arg1 *iot.UpdateSecurityProfileInput, arg2 ...request.Option) (*iot.UpdateSecurityProfileOutput, error) {
+func (m *MockIoTAPI) UpdateSecurityProfileWithContext(arg0 context.Context, arg1 *iot.UpdateSecurityProfileInput, arg2 ...request.Option) (*iot.UpdateSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8116,7 +8116,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateStreamRequest(arg0 interface{}) *gomock.
 }
 
 // UpdateStreamWithContext mocks base method
-func (m *MockIoTAPI) UpdateStreamWithContext(arg0 aws.Context, arg1 *iot.UpdateStreamInput, arg2 ...request.Option) (*iot.UpdateStreamOutput, error) {
+func (m *MockIoTAPI) UpdateStreamWithContext(arg0 context.Context, arg1 *iot.UpdateStreamInput, arg2 ...request.Option) (*iot.UpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8181,7 +8181,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateThingGroupRequest(arg0 interface{}) *gom
 }
 
 // UpdateThingGroupWithContext mocks base method
-func (m *MockIoTAPI) UpdateThingGroupWithContext(arg0 aws.Context, arg1 *iot.UpdateThingGroupInput, arg2 ...request.Option) (*iot.UpdateThingGroupOutput, error) {
+func (m *MockIoTAPI) UpdateThingGroupWithContext(arg0 context.Context, arg1 *iot.UpdateThingGroupInput, arg2 ...request.Option) (*iot.UpdateThingGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8231,7 +8231,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateThingGroupsForThingRequest(arg0 interfac
 }
 
 // UpdateThingGroupsForThingWithContext mocks base method
-func (m *MockIoTAPI) UpdateThingGroupsForThingWithContext(arg0 aws.Context, arg1 *iot.UpdateThingGroupsForThingInput, arg2 ...request.Option) (*iot.UpdateThingGroupsForThingOutput, error) {
+func (m *MockIoTAPI) UpdateThingGroupsForThingWithContext(arg0 context.Context, arg1 *iot.UpdateThingGroupsForThingInput, arg2 ...request.Option) (*iot.UpdateThingGroupsForThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8266,7 +8266,7 @@ func (mr *MockIoTAPIMockRecorder) UpdateThingRequest(arg0 interface{}) *gomock.C
 }
 
 // UpdateThingWithContext mocks base method
-func (m *MockIoTAPI) UpdateThingWithContext(arg0 aws.Context, arg1 *iot.UpdateThingInput, arg2 ...request.Option) (*iot.UpdateThingOutput, error) {
+func (m *MockIoTAPI) UpdateThingWithContext(arg0 context.Context, arg1 *iot.UpdateThingInput, arg2 ...request.Option) (*iot.UpdateThingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -8316,7 +8316,7 @@ func (mr *MockIoTAPIMockRecorder) ValidateSecurityProfileBehaviorsRequest(arg0 i
 }
 
 // ValidateSecurityProfileBehaviorsWithContext mocks base method
-func (m *MockIoTAPI) ValidateSecurityProfileBehaviorsWithContext(arg0 aws.Context, arg1 *iot.ValidateSecurityProfileBehaviorsInput, arg2 ...request.Option) (*iot.ValidateSecurityProfileBehaviorsOutput, error) {
+func (m *MockIoTAPI) ValidateSecurityProfileBehaviorsWithContext(arg0 context.Context, arg1 *iot.ValidateSecurityProfileBehaviorsInput, arg2 ...request.Option) (*iot.ValidateSecurityProfileBehaviorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

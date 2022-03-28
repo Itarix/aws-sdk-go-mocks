@@ -5,7 +5,7 @@
 package devicefarmmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	devicefarm "github.com/aws/aws-sdk-go/service/devicefarm"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateDevicePoolRequest(arg0 interface{
 }
 
 // CreateDevicePoolWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.CreateDevicePoolInput, arg2 ...request.Option) (*devicefarm.CreateDevicePoolOutput, error) {
+func (m *MockDeviceFarmAPI) CreateDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.CreateDevicePoolInput, arg2 ...request.Option) (*devicefarm.CreateDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateInstanceProfileRequest(arg0 inter
 }
 
 // CreateInstanceProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.CreateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.CreateInstanceProfileOutput, error) {
+func (m *MockDeviceFarmAPI) CreateInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.CreateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.CreateInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateNetworkProfileRequest(arg0 interf
 }
 
 // CreateNetworkProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.CreateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.CreateNetworkProfileOutput, error) {
+func (m *MockDeviceFarmAPI) CreateNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.CreateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.CreateNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateProjectRequest(arg0 interface{}) 
 }
 
 // CreateProjectWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *devicefarm.CreateProjectInput, arg2 ...request.Option) (*devicefarm.CreateProjectOutput, error) {
+func (m *MockDeviceFarmAPI) CreateProjectWithContext(arg0 context.Context, arg1 *devicefarm.CreateProjectInput, arg2 ...request.Option) (*devicefarm.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateRemoteAccessSessionRequest(arg0 i
 }
 
 // CreateRemoteAccessSessionWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.CreateRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.CreateRemoteAccessSessionOutput, error) {
+func (m *MockDeviceFarmAPI) CreateRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.CreateRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.CreateRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateUploadRequest(arg0 interface{}) *
 }
 
 // CreateUploadWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateUploadWithContext(arg0 aws.Context, arg1 *devicefarm.CreateUploadInput, arg2 ...request.Option) (*devicefarm.CreateUploadOutput, error) {
+func (m *MockDeviceFarmAPI) CreateUploadWithContext(arg0 context.Context, arg1 *devicefarm.CreateUploadInput, arg2 ...request.Option) (*devicefarm.CreateUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateVPCEConfigurationRequest(arg0 int
 }
 
 // CreateVPCEConfigurationWithContext mocks base method
-func (m *MockDeviceFarmAPI) CreateVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.CreateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.CreateVPCEConfigurationOutput, error) {
+func (m *MockDeviceFarmAPI) CreateVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.CreateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.CreateVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteDevicePoolRequest(arg0 interface{
 }
 
 // DeleteDevicePoolWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteDevicePoolInput, arg2 ...request.Option) (*devicefarm.DeleteDevicePoolOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.DeleteDevicePoolInput, arg2 ...request.Option) (*devicefarm.DeleteDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteInstanceProfileRequest(arg0 inter
 }
 
 // DeleteInstanceProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteInstanceProfileInput, arg2 ...request.Option) (*devicefarm.DeleteInstanceProfileOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.DeleteInstanceProfileInput, arg2 ...request.Option) (*devicefarm.DeleteInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteNetworkProfileRequest(arg0 interf
 }
 
 // DeleteNetworkProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteNetworkProfileInput, arg2 ...request.Option) (*devicefarm.DeleteNetworkProfileOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.DeleteNetworkProfileInput, arg2 ...request.Option) (*devicefarm.DeleteNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) 
 }
 
 // DeleteProjectWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteProjectInput, arg2 ...request.Option) (*devicefarm.DeleteProjectOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *devicefarm.DeleteProjectInput, arg2 ...request.Option) (*devicefarm.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteRemoteAccessSessionRequest(arg0 i
 }
 
 // DeleteRemoteAccessSessionWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.DeleteRemoteAccessSessionOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.DeleteRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.DeleteRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteRunRequest(arg0 interface{}) *gom
 }
 
 // DeleteRunWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteRunWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteRunInput, arg2 ...request.Option) (*devicefarm.DeleteRunOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteRunWithContext(arg0 context.Context, arg1 *devicefarm.DeleteRunInput, arg2 ...request.Option) (*devicefarm.DeleteRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteUploadRequest(arg0 interface{}) *
 }
 
 // DeleteUploadWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteUploadWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteUploadInput, arg2 ...request.Option) (*devicefarm.DeleteUploadOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteUploadWithContext(arg0 context.Context, arg1 *devicefarm.DeleteUploadInput, arg2 ...request.Option) (*devicefarm.DeleteUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteVPCEConfigurationRequest(arg0 int
 }
 
 // DeleteVPCEConfigurationWithContext mocks base method
-func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.DeleteVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.DeleteVPCEConfigurationOutput, error) {
+func (m *MockDeviceFarmAPI) DeleteVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.DeleteVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.DeleteVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetAccountSettingsRequest(arg0 interfac
 }
 
 // GetAccountSettingsWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetAccountSettingsWithContext(arg0 aws.Context, arg1 *devicefarm.GetAccountSettingsInput, arg2 ...request.Option) (*devicefarm.GetAccountSettingsOutput, error) {
+func (m *MockDeviceFarmAPI) GetAccountSettingsWithContext(arg0 context.Context, arg1 *devicefarm.GetAccountSettingsInput, arg2 ...request.Option) (*devicefarm.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceInstanceRequest(arg0 interface
 }
 
 // GetDeviceInstanceWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetDeviceInstanceWithContext(arg0 aws.Context, arg1 *devicefarm.GetDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.GetDeviceInstanceOutput, error) {
+func (m *MockDeviceFarmAPI) GetDeviceInstanceWithContext(arg0 context.Context, arg1 *devicefarm.GetDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.GetDeviceInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -946,7 +946,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolCompatibilityRequest(arg0 
 }
 
 // GetDevicePoolCompatibilityWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityWithContext(arg0 aws.Context, arg1 *devicefarm.GetDevicePoolCompatibilityInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolCompatibilityOutput, error) {
+func (m *MockDeviceFarmAPI) GetDevicePoolCompatibilityWithContext(arg0 context.Context, arg1 *devicefarm.GetDevicePoolCompatibilityInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolCompatibilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -981,7 +981,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetDevicePoolRequest(arg0 interface{}) 
 }
 
 // GetDevicePoolWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.GetDevicePoolInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolOutput, error) {
+func (m *MockDeviceFarmAPI) GetDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.GetDevicePoolInput, arg2 ...request.Option) (*devicefarm.GetDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetDeviceRequest(arg0 interface{}) *gom
 }
 
 // GetDeviceWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetDeviceWithContext(arg0 aws.Context, arg1 *devicefarm.GetDeviceInput, arg2 ...request.Option) (*devicefarm.GetDeviceOutput, error) {
+func (m *MockDeviceFarmAPI) GetDeviceWithContext(arg0 context.Context, arg1 *devicefarm.GetDeviceInput, arg2 ...request.Option) (*devicefarm.GetDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetInstanceProfileRequest(arg0 interfac
 }
 
 // GetInstanceProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.GetInstanceProfileInput, arg2 ...request.Option) (*devicefarm.GetInstanceProfileOutput, error) {
+func (m *MockDeviceFarmAPI) GetInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.GetInstanceProfileInput, arg2 ...request.Option) (*devicefarm.GetInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetJobRequest(arg0 interface{}) *gomock
 }
 
 // GetJobWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetJobWithContext(arg0 aws.Context, arg1 *devicefarm.GetJobInput, arg2 ...request.Option) (*devicefarm.GetJobOutput, error) {
+func (m *MockDeviceFarmAPI) GetJobWithContext(arg0 context.Context, arg1 *devicefarm.GetJobInput, arg2 ...request.Option) (*devicefarm.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetNetworkProfileRequest(arg0 interface
 }
 
 // GetNetworkProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.GetNetworkProfileInput, arg2 ...request.Option) (*devicefarm.GetNetworkProfileOutput, error) {
+func (m *MockDeviceFarmAPI) GetNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.GetNetworkProfileInput, arg2 ...request.Option) (*devicefarm.GetNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatusPages(arg0, arg1 inter
 }
 
 // GetOfferingStatusPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetOfferingStatusPagesWithContext(arg0 aws.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 func(*devicefarm.GetOfferingStatusOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) GetOfferingStatusPagesWithContext(arg0 context.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 func(*devicefarm.GetOfferingStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1249,7 +1249,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetOfferingStatusRequest(arg0 interface
 }
 
 // GetOfferingStatusWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetOfferingStatusWithContext(arg0 aws.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 ...request.Option) (*devicefarm.GetOfferingStatusOutput, error) {
+func (m *MockDeviceFarmAPI) GetOfferingStatusWithContext(arg0 context.Context, arg1 *devicefarm.GetOfferingStatusInput, arg2 ...request.Option) (*devicefarm.GetOfferingStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1299,7 +1299,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetProjectRequest(arg0 interface{}) *go
 }
 
 // GetProjectWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetProjectWithContext(arg0 aws.Context, arg1 *devicefarm.GetProjectInput, arg2 ...request.Option) (*devicefarm.GetProjectOutput, error) {
+func (m *MockDeviceFarmAPI) GetProjectWithContext(arg0 context.Context, arg1 *devicefarm.GetProjectInput, arg2 ...request.Option) (*devicefarm.GetProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1349,7 +1349,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetRemoteAccessSessionRequest(arg0 inte
 }
 
 // GetRemoteAccessSessionWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.GetRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.GetRemoteAccessSessionOutput, error) {
+func (m *MockDeviceFarmAPI) GetRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.GetRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.GetRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1399,7 +1399,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetRunRequest(arg0 interface{}) *gomock
 }
 
 // GetRunWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetRunWithContext(arg0 aws.Context, arg1 *devicefarm.GetRunInput, arg2 ...request.Option) (*devicefarm.GetRunOutput, error) {
+func (m *MockDeviceFarmAPI) GetRunWithContext(arg0 context.Context, arg1 *devicefarm.GetRunInput, arg2 ...request.Option) (*devicefarm.GetRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1449,7 +1449,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetSuiteRequest(arg0 interface{}) *gomo
 }
 
 // GetSuiteWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetSuiteWithContext(arg0 aws.Context, arg1 *devicefarm.GetSuiteInput, arg2 ...request.Option) (*devicefarm.GetSuiteOutput, error) {
+func (m *MockDeviceFarmAPI) GetSuiteWithContext(arg0 context.Context, arg1 *devicefarm.GetSuiteInput, arg2 ...request.Option) (*devicefarm.GetSuiteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1499,7 +1499,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetTestRequest(arg0 interface{}) *gomoc
 }
 
 // GetTestWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetTestWithContext(arg0 aws.Context, arg1 *devicefarm.GetTestInput, arg2 ...request.Option) (*devicefarm.GetTestOutput, error) {
+func (m *MockDeviceFarmAPI) GetTestWithContext(arg0 context.Context, arg1 *devicefarm.GetTestInput, arg2 ...request.Option) (*devicefarm.GetTestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1549,7 +1549,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetUploadRequest(arg0 interface{}) *gom
 }
 
 // GetUploadWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetUploadWithContext(arg0 aws.Context, arg1 *devicefarm.GetUploadInput, arg2 ...request.Option) (*devicefarm.GetUploadOutput, error) {
+func (m *MockDeviceFarmAPI) GetUploadWithContext(arg0 context.Context, arg1 *devicefarm.GetUploadInput, arg2 ...request.Option) (*devicefarm.GetUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1599,7 +1599,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) GetVPCEConfigurationRequest(arg0 interf
 }
 
 // GetVPCEConfigurationWithContext mocks base method
-func (m *MockDeviceFarmAPI) GetVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.GetVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.GetVPCEConfigurationOutput, error) {
+func (m *MockDeviceFarmAPI) GetVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.GetVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.GetVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1649,7 +1649,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) InstallToRemoteAccessSessionRequest(arg
 }
 
 // InstallToRemoteAccessSessionWithContext mocks base method
-func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.InstallToRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.InstallToRemoteAccessSessionOutput, error) {
+func (m *MockDeviceFarmAPI) InstallToRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.InstallToRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.InstallToRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1698,7 +1698,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListArtifactsPages(arg0, arg1 interface
 }
 
 // ListArtifactsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListArtifactsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListArtifactsInput, arg2 func(*devicefarm.ListArtifactsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListArtifactsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListArtifactsInput, arg2 func(*devicefarm.ListArtifactsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1732,7 +1732,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListArtifactsRequest(arg0 interface{}) 
 }
 
 // ListArtifactsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListArtifactsWithContext(arg0 aws.Context, arg1 *devicefarm.ListArtifactsInput, arg2 ...request.Option) (*devicefarm.ListArtifactsOutput, error) {
+func (m *MockDeviceFarmAPI) ListArtifactsWithContext(arg0 context.Context, arg1 *devicefarm.ListArtifactsInput, arg2 ...request.Option) (*devicefarm.ListArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1782,7 +1782,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListDeviceInstancesRequest(arg0 interfa
 }
 
 // ListDeviceInstancesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListDeviceInstancesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDeviceInstancesInput, arg2 ...request.Option) (*devicefarm.ListDeviceInstancesOutput, error) {
+func (m *MockDeviceFarmAPI) ListDeviceInstancesWithContext(arg0 context.Context, arg1 *devicefarm.ListDeviceInstancesInput, arg2 ...request.Option) (*devicefarm.ListDeviceInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1831,7 +1831,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePoolsPages(arg0, arg1 interfa
 }
 
 // ListDevicePoolsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListDevicePoolsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 func(*devicefarm.ListDevicePoolsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListDevicePoolsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 func(*devicefarm.ListDevicePoolsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1865,7 +1865,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListDevicePoolsRequest(arg0 interface{}
 }
 
 // ListDevicePoolsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListDevicePoolsWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 ...request.Option) (*devicefarm.ListDevicePoolsOutput, error) {
+func (m *MockDeviceFarmAPI) ListDevicePoolsWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicePoolsInput, arg2 ...request.Option) (*devicefarm.ListDevicePoolsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1914,7 +1914,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListDevicesPages(arg0, arg1 interface{}
 }
 
 // ListDevicesPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListDevicesPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicesInput, arg2 func(*devicefarm.ListDevicesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListDevicesPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicesInput, arg2 func(*devicefarm.ListDevicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1948,7 +1948,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListDevicesRequest(arg0 interface{}) *g
 }
 
 // ListDevicesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListDevicesWithContext(arg0 aws.Context, arg1 *devicefarm.ListDevicesInput, arg2 ...request.Option) (*devicefarm.ListDevicesOutput, error) {
+func (m *MockDeviceFarmAPI) ListDevicesWithContext(arg0 context.Context, arg1 *devicefarm.ListDevicesInput, arg2 ...request.Option) (*devicefarm.ListDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1998,7 +1998,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListInstanceProfilesRequest(arg0 interf
 }
 
 // ListInstanceProfilesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListInstanceProfilesWithContext(arg0 aws.Context, arg1 *devicefarm.ListInstanceProfilesInput, arg2 ...request.Option) (*devicefarm.ListInstanceProfilesOutput, error) {
+func (m *MockDeviceFarmAPI) ListInstanceProfilesWithContext(arg0 context.Context, arg1 *devicefarm.ListInstanceProfilesInput, arg2 ...request.Option) (*devicefarm.ListInstanceProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2047,7 +2047,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *
 }
 
 // ListJobsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListJobsInput, arg2 func(*devicefarm.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListJobsInput, arg2 func(*devicefarm.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2081,7 +2081,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomo
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListJobsWithContext(arg0 aws.Context, arg1 *devicefarm.ListJobsInput, arg2 ...request.Option) (*devicefarm.ListJobsOutput, error) {
+func (m *MockDeviceFarmAPI) ListJobsWithContext(arg0 context.Context, arg1 *devicefarm.ListJobsInput, arg2 ...request.Option) (*devicefarm.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2131,7 +2131,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListNetworkProfilesRequest(arg0 interfa
 }
 
 // ListNetworkProfilesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListNetworkProfilesWithContext(arg0 aws.Context, arg1 *devicefarm.ListNetworkProfilesInput, arg2 ...request.Option) (*devicefarm.ListNetworkProfilesOutput, error) {
+func (m *MockDeviceFarmAPI) ListNetworkProfilesWithContext(arg0 context.Context, arg1 *devicefarm.ListNetworkProfilesInput, arg2 ...request.Option) (*devicefarm.ListNetworkProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2181,7 +2181,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingPromotionsRequest(arg0 inte
 }
 
 // ListOfferingPromotionsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListOfferingPromotionsWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingPromotionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingPromotionsOutput, error) {
+func (m *MockDeviceFarmAPI) ListOfferingPromotionsWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingPromotionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingPromotionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2230,7 +2230,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactionsPages(arg0, arg
 }
 
 // ListOfferingTransactionsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListOfferingTransactionsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 func(*devicefarm.ListOfferingTransactionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListOfferingTransactionsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 func(*devicefarm.ListOfferingTransactionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2264,7 +2264,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingTransactionsRequest(arg0 in
 }
 
 // ListOfferingTransactionsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListOfferingTransactionsWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingTransactionsOutput, error) {
+func (m *MockDeviceFarmAPI) ListOfferingTransactionsWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingTransactionsInput, arg2 ...request.Option) (*devicefarm.ListOfferingTransactionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2313,7 +2313,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingsPages(arg0, arg1 interface
 }
 
 // ListOfferingsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListOfferingsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingsInput, arg2 func(*devicefarm.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListOfferingsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingsInput, arg2 func(*devicefarm.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2347,7 +2347,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListOfferingsRequest(arg0 interface{}) 
 }
 
 // ListOfferingsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListOfferingsWithContext(arg0 aws.Context, arg1 *devicefarm.ListOfferingsInput, arg2 ...request.Option) (*devicefarm.ListOfferingsOutput, error) {
+func (m *MockDeviceFarmAPI) ListOfferingsWithContext(arg0 context.Context, arg1 *devicefarm.ListOfferingsInput, arg2 ...request.Option) (*devicefarm.ListOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2396,7 +2396,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListProjectsPages(arg0, arg1 interface{
 }
 
 // ListProjectsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListProjectsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListProjectsInput, arg2 func(*devicefarm.ListProjectsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListProjectsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListProjectsInput, arg2 func(*devicefarm.ListProjectsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2430,7 +2430,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListProjectsRequest(arg0 interface{}) *
 }
 
 // ListProjectsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *devicefarm.ListProjectsInput, arg2 ...request.Option) (*devicefarm.ListProjectsOutput, error) {
+func (m *MockDeviceFarmAPI) ListProjectsWithContext(arg0 context.Context, arg1 *devicefarm.ListProjectsInput, arg2 ...request.Option) (*devicefarm.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2480,7 +2480,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListRemoteAccessSessionsRequest(arg0 in
 }
 
 // ListRemoteAccessSessionsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsWithContext(arg0 aws.Context, arg1 *devicefarm.ListRemoteAccessSessionsInput, arg2 ...request.Option) (*devicefarm.ListRemoteAccessSessionsOutput, error) {
+func (m *MockDeviceFarmAPI) ListRemoteAccessSessionsWithContext(arg0 context.Context, arg1 *devicefarm.ListRemoteAccessSessionsInput, arg2 ...request.Option) (*devicefarm.ListRemoteAccessSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2529,7 +2529,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListRunsPages(arg0, arg1 interface{}) *
 }
 
 // ListRunsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListRunsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListRunsInput, arg2 func(*devicefarm.ListRunsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListRunsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListRunsInput, arg2 func(*devicefarm.ListRunsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2563,7 +2563,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListRunsRequest(arg0 interface{}) *gomo
 }
 
 // ListRunsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListRunsWithContext(arg0 aws.Context, arg1 *devicefarm.ListRunsInput, arg2 ...request.Option) (*devicefarm.ListRunsOutput, error) {
+func (m *MockDeviceFarmAPI) ListRunsWithContext(arg0 context.Context, arg1 *devicefarm.ListRunsInput, arg2 ...request.Option) (*devicefarm.ListRunsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2612,7 +2612,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListSamplesPages(arg0, arg1 interface{}
 }
 
 // ListSamplesPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListSamplesPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSamplesInput, arg2 func(*devicefarm.ListSamplesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListSamplesPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListSamplesInput, arg2 func(*devicefarm.ListSamplesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2646,7 +2646,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListSamplesRequest(arg0 interface{}) *g
 }
 
 // ListSamplesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListSamplesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSamplesInput, arg2 ...request.Option) (*devicefarm.ListSamplesOutput, error) {
+func (m *MockDeviceFarmAPI) ListSamplesWithContext(arg0 context.Context, arg1 *devicefarm.ListSamplesInput, arg2 ...request.Option) (*devicefarm.ListSamplesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2695,7 +2695,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListSuitesPages(arg0, arg1 interface{})
 }
 
 // ListSuitesPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListSuitesPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSuitesInput, arg2 func(*devicefarm.ListSuitesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListSuitesPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListSuitesInput, arg2 func(*devicefarm.ListSuitesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2729,7 +2729,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListSuitesRequest(arg0 interface{}) *go
 }
 
 // ListSuitesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListSuitesWithContext(arg0 aws.Context, arg1 *devicefarm.ListSuitesInput, arg2 ...request.Option) (*devicefarm.ListSuitesOutput, error) {
+func (m *MockDeviceFarmAPI) ListSuitesWithContext(arg0 context.Context, arg1 *devicefarm.ListSuitesInput, arg2 ...request.Option) (*devicefarm.ListSuitesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2778,7 +2778,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListTestsPages(arg0, arg1 interface{}) 
 }
 
 // ListTestsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListTestsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListTestsInput, arg2 func(*devicefarm.ListTestsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListTestsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestsInput, arg2 func(*devicefarm.ListTestsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2812,7 +2812,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListTestsRequest(arg0 interface{}) *gom
 }
 
 // ListTestsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListTestsWithContext(arg0 aws.Context, arg1 *devicefarm.ListTestsInput, arg2 ...request.Option) (*devicefarm.ListTestsOutput, error) {
+func (m *MockDeviceFarmAPI) ListTestsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestsInput, arg2 ...request.Option) (*devicefarm.ListTestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2861,7 +2861,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblemsPages(arg0, arg1 inte
 }
 
 // ListUniqueProblemsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListUniqueProblemsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 func(*devicefarm.ListUniqueProblemsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListUniqueProblemsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 func(*devicefarm.ListUniqueProblemsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2895,7 +2895,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListUniqueProblemsRequest(arg0 interfac
 }
 
 // ListUniqueProblemsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListUniqueProblemsWithContext(arg0 aws.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 ...request.Option) (*devicefarm.ListUniqueProblemsOutput, error) {
+func (m *MockDeviceFarmAPI) ListUniqueProblemsWithContext(arg0 context.Context, arg1 *devicefarm.ListUniqueProblemsInput, arg2 ...request.Option) (*devicefarm.ListUniqueProblemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2944,7 +2944,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListUploadsPages(arg0, arg1 interface{}
 }
 
 // ListUploadsPagesWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListUploadsPagesWithContext(arg0 aws.Context, arg1 *devicefarm.ListUploadsInput, arg2 func(*devicefarm.ListUploadsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDeviceFarmAPI) ListUploadsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListUploadsInput, arg2 func(*devicefarm.ListUploadsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2978,7 +2978,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListUploadsRequest(arg0 interface{}) *g
 }
 
 // ListUploadsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListUploadsWithContext(arg0 aws.Context, arg1 *devicefarm.ListUploadsInput, arg2 ...request.Option) (*devicefarm.ListUploadsOutput, error) {
+func (m *MockDeviceFarmAPI) ListUploadsWithContext(arg0 context.Context, arg1 *devicefarm.ListUploadsInput, arg2 ...request.Option) (*devicefarm.ListUploadsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3028,7 +3028,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListVPCEConfigurationsRequest(arg0 inte
 }
 
 // ListVPCEConfigurationsWithContext mocks base method
-func (m *MockDeviceFarmAPI) ListVPCEConfigurationsWithContext(arg0 aws.Context, arg1 *devicefarm.ListVPCEConfigurationsInput, arg2 ...request.Option) (*devicefarm.ListVPCEConfigurationsOutput, error) {
+func (m *MockDeviceFarmAPI) ListVPCEConfigurationsWithContext(arg0 context.Context, arg1 *devicefarm.ListVPCEConfigurationsInput, arg2 ...request.Option) (*devicefarm.ListVPCEConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3078,7 +3078,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) PurchaseOfferingRequest(arg0 interface{
 }
 
 // PurchaseOfferingWithContext mocks base method
-func (m *MockDeviceFarmAPI) PurchaseOfferingWithContext(arg0 aws.Context, arg1 *devicefarm.PurchaseOfferingInput, arg2 ...request.Option) (*devicefarm.PurchaseOfferingOutput, error) {
+func (m *MockDeviceFarmAPI) PurchaseOfferingWithContext(arg0 context.Context, arg1 *devicefarm.PurchaseOfferingInput, arg2 ...request.Option) (*devicefarm.PurchaseOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3128,7 +3128,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) RenewOfferingRequest(arg0 interface{}) 
 }
 
 // RenewOfferingWithContext mocks base method
-func (m *MockDeviceFarmAPI) RenewOfferingWithContext(arg0 aws.Context, arg1 *devicefarm.RenewOfferingInput, arg2 ...request.Option) (*devicefarm.RenewOfferingOutput, error) {
+func (m *MockDeviceFarmAPI) RenewOfferingWithContext(arg0 context.Context, arg1 *devicefarm.RenewOfferingInput, arg2 ...request.Option) (*devicefarm.RenewOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3178,7 +3178,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) ScheduleRunRequest(arg0 interface{}) *g
 }
 
 // ScheduleRunWithContext mocks base method
-func (m *MockDeviceFarmAPI) ScheduleRunWithContext(arg0 aws.Context, arg1 *devicefarm.ScheduleRunInput, arg2 ...request.Option) (*devicefarm.ScheduleRunOutput, error) {
+func (m *MockDeviceFarmAPI) ScheduleRunWithContext(arg0 context.Context, arg1 *devicefarm.ScheduleRunInput, arg2 ...request.Option) (*devicefarm.ScheduleRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3228,7 +3228,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) StopJobRequest(arg0 interface{}) *gomoc
 }
 
 // StopJobWithContext mocks base method
-func (m *MockDeviceFarmAPI) StopJobWithContext(arg0 aws.Context, arg1 *devicefarm.StopJobInput, arg2 ...request.Option) (*devicefarm.StopJobOutput, error) {
+func (m *MockDeviceFarmAPI) StopJobWithContext(arg0 context.Context, arg1 *devicefarm.StopJobInput, arg2 ...request.Option) (*devicefarm.StopJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3278,7 +3278,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) StopRemoteAccessSessionRequest(arg0 int
 }
 
 // StopRemoteAccessSessionWithContext mocks base method
-func (m *MockDeviceFarmAPI) StopRemoteAccessSessionWithContext(arg0 aws.Context, arg1 *devicefarm.StopRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.StopRemoteAccessSessionOutput, error) {
+func (m *MockDeviceFarmAPI) StopRemoteAccessSessionWithContext(arg0 context.Context, arg1 *devicefarm.StopRemoteAccessSessionInput, arg2 ...request.Option) (*devicefarm.StopRemoteAccessSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3328,7 +3328,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) StopRunRequest(arg0 interface{}) *gomoc
 }
 
 // StopRunWithContext mocks base method
-func (m *MockDeviceFarmAPI) StopRunWithContext(arg0 aws.Context, arg1 *devicefarm.StopRunInput, arg2 ...request.Option) (*devicefarm.StopRunOutput, error) {
+func (m *MockDeviceFarmAPI) StopRunWithContext(arg0 context.Context, arg1 *devicefarm.StopRunInput, arg2 ...request.Option) (*devicefarm.StopRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3378,7 +3378,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateDeviceInstanceRequest(arg0 interf
 }
 
 // UpdateDeviceInstanceWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateDeviceInstanceWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.UpdateDeviceInstanceOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateDeviceInstanceWithContext(arg0 context.Context, arg1 *devicefarm.UpdateDeviceInstanceInput, arg2 ...request.Option) (*devicefarm.UpdateDeviceInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3428,7 +3428,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateDevicePoolRequest(arg0 interface{
 }
 
 // UpdateDevicePoolWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateDevicePoolWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateDevicePoolInput, arg2 ...request.Option) (*devicefarm.UpdateDevicePoolOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateDevicePoolWithContext(arg0 context.Context, arg1 *devicefarm.UpdateDevicePoolInput, arg2 ...request.Option) (*devicefarm.UpdateDevicePoolOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3478,7 +3478,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateInstanceProfileRequest(arg0 inter
 }
 
 // UpdateInstanceProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateInstanceProfileWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.UpdateInstanceProfileOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateInstanceProfileWithContext(arg0 context.Context, arg1 *devicefarm.UpdateInstanceProfileInput, arg2 ...request.Option) (*devicefarm.UpdateInstanceProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3528,7 +3528,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateNetworkProfileRequest(arg0 interf
 }
 
 // UpdateNetworkProfileWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateNetworkProfileWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.UpdateNetworkProfileOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateNetworkProfileWithContext(arg0 context.Context, arg1 *devicefarm.UpdateNetworkProfileInput, arg2 ...request.Option) (*devicefarm.UpdateNetworkProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3578,7 +3578,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) 
 }
 
 // UpdateProjectWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateProjectInput, arg2 ...request.Option) (*devicefarm.UpdateProjectOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *devicefarm.UpdateProjectInput, arg2 ...request.Option) (*devicefarm.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3628,7 +3628,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateUploadRequest(arg0 interface{}) *
 }
 
 // UpdateUploadWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateUploadWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateUploadInput, arg2 ...request.Option) (*devicefarm.UpdateUploadOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateUploadWithContext(arg0 context.Context, arg1 *devicefarm.UpdateUploadInput, arg2 ...request.Option) (*devicefarm.UpdateUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3678,7 +3678,7 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateVPCEConfigurationRequest(arg0 int
 }
 
 // UpdateVPCEConfigurationWithContext mocks base method
-func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationWithContext(arg0 aws.Context, arg1 *devicefarm.UpdateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.UpdateVPCEConfigurationOutput, error) {
+func (m *MockDeviceFarmAPI) UpdateVPCEConfigurationWithContext(arg0 context.Context, arg1 *devicefarm.UpdateVPCEConfigurationInput, arg2 ...request.Option) (*devicefarm.UpdateVPCEConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

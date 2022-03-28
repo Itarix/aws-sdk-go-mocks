@@ -5,7 +5,7 @@
 package cloudwatchmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudwatch "github.com/aws/aws-sdk-go/service/cloudwatch"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DeleteAlarmsRequest(arg0 interface{}) *
 }
 
 // DeleteAlarmsWithContext mocks base method
-func (m *MockCloudWatchAPI) DeleteAlarmsWithContext(arg0 aws.Context, arg1 *cloudwatch.DeleteAlarmsInput, arg2 ...request.Option) (*cloudwatch.DeleteAlarmsOutput, error) {
+func (m *MockCloudWatchAPI) DeleteAlarmsWithContext(arg0 context.Context, arg1 *cloudwatch.DeleteAlarmsInput, arg2 ...request.Option) (*cloudwatch.DeleteAlarmsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DeleteDashboardsRequest(arg0 interface{
 }
 
 // DeleteDashboardsWithContext mocks base method
-func (m *MockCloudWatchAPI) DeleteDashboardsWithContext(arg0 aws.Context, arg1 *cloudwatch.DeleteDashboardsInput, arg2 ...request.Option) (*cloudwatch.DeleteDashboardsOutput, error) {
+func (m *MockCloudWatchAPI) DeleteDashboardsWithContext(arg0 context.Context, arg1 *cloudwatch.DeleteDashboardsInput, arg2 ...request.Option) (*cloudwatch.DeleteDashboardsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -165,7 +165,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAlarmHistoryPages(arg0, arg1 in
 }
 
 // DescribeAlarmHistoryPagesWithContext mocks base method
-func (m *MockCloudWatchAPI) DescribeAlarmHistoryPagesWithContext(arg0 aws.Context, arg1 *cloudwatch.DescribeAlarmHistoryInput, arg2 func(*cloudwatch.DescribeAlarmHistoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchAPI) DescribeAlarmHistoryPagesWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmHistoryInput, arg2 func(*cloudwatch.DescribeAlarmHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -199,7 +199,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAlarmHistoryRequest(arg0 interf
 }
 
 // DescribeAlarmHistoryWithContext mocks base method
-func (m *MockCloudWatchAPI) DescribeAlarmHistoryWithContext(arg0 aws.Context, arg1 *cloudwatch.DescribeAlarmHistoryInput, arg2 ...request.Option) (*cloudwatch.DescribeAlarmHistoryOutput, error) {
+func (m *MockCloudWatchAPI) DescribeAlarmHistoryWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmHistoryInput, arg2 ...request.Option) (*cloudwatch.DescribeAlarmHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -264,7 +264,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAlarmsForMetricRequest(arg0 int
 }
 
 // DescribeAlarmsForMetricWithContext mocks base method
-func (m *MockCloudWatchAPI) DescribeAlarmsForMetricWithContext(arg0 aws.Context, arg1 *cloudwatch.DescribeAlarmsForMetricInput, arg2 ...request.Option) (*cloudwatch.DescribeAlarmsForMetricOutput, error) {
+func (m *MockCloudWatchAPI) DescribeAlarmsForMetricWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmsForMetricInput, arg2 ...request.Option) (*cloudwatch.DescribeAlarmsForMetricOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -298,7 +298,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAlarmsPages(arg0, arg1 interfac
 }
 
 // DescribeAlarmsPagesWithContext mocks base method
-func (m *MockCloudWatchAPI) DescribeAlarmsPagesWithContext(arg0 aws.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 func(*cloudwatch.DescribeAlarmsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchAPI) DescribeAlarmsPagesWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 func(*cloudwatch.DescribeAlarmsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -332,7 +332,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAlarmsRequest(arg0 interface{})
 }
 
 // DescribeAlarmsWithContext mocks base method
-func (m *MockCloudWatchAPI) DescribeAlarmsWithContext(arg0 aws.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 ...request.Option) (*cloudwatch.DescribeAlarmsOutput, error) {
+func (m *MockCloudWatchAPI) DescribeAlarmsWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 ...request.Option) (*cloudwatch.DescribeAlarmsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -382,7 +382,7 @@ func (mr *MockCloudWatchAPIMockRecorder) DisableAlarmActionsRequest(arg0 interfa
 }
 
 // DisableAlarmActionsWithContext mocks base method
-func (m *MockCloudWatchAPI) DisableAlarmActionsWithContext(arg0 aws.Context, arg1 *cloudwatch.DisableAlarmActionsInput, arg2 ...request.Option) (*cloudwatch.DisableAlarmActionsOutput, error) {
+func (m *MockCloudWatchAPI) DisableAlarmActionsWithContext(arg0 context.Context, arg1 *cloudwatch.DisableAlarmActionsInput, arg2 ...request.Option) (*cloudwatch.DisableAlarmActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -432,7 +432,7 @@ func (mr *MockCloudWatchAPIMockRecorder) EnableAlarmActionsRequest(arg0 interfac
 }
 
 // EnableAlarmActionsWithContext mocks base method
-func (m *MockCloudWatchAPI) EnableAlarmActionsWithContext(arg0 aws.Context, arg1 *cloudwatch.EnableAlarmActionsInput, arg2 ...request.Option) (*cloudwatch.EnableAlarmActionsOutput, error) {
+func (m *MockCloudWatchAPI) EnableAlarmActionsWithContext(arg0 context.Context, arg1 *cloudwatch.EnableAlarmActionsInput, arg2 ...request.Option) (*cloudwatch.EnableAlarmActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -482,7 +482,7 @@ func (mr *MockCloudWatchAPIMockRecorder) GetDashboardRequest(arg0 interface{}) *
 }
 
 // GetDashboardWithContext mocks base method
-func (m *MockCloudWatchAPI) GetDashboardWithContext(arg0 aws.Context, arg1 *cloudwatch.GetDashboardInput, arg2 ...request.Option) (*cloudwatch.GetDashboardOutput, error) {
+func (m *MockCloudWatchAPI) GetDashboardWithContext(arg0 context.Context, arg1 *cloudwatch.GetDashboardInput, arg2 ...request.Option) (*cloudwatch.GetDashboardOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockCloudWatchAPIMockRecorder) GetMetricDataRequest(arg0 interface{}) 
 }
 
 // GetMetricDataWithContext mocks base method
-func (m *MockCloudWatchAPI) GetMetricDataWithContext(arg0 aws.Context, arg1 *cloudwatch.GetMetricDataInput, arg2 ...request.Option) (*cloudwatch.GetMetricDataOutput, error) {
+func (m *MockCloudWatchAPI) GetMetricDataWithContext(arg0 context.Context, arg1 *cloudwatch.GetMetricDataInput, arg2 ...request.Option) (*cloudwatch.GetMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -582,7 +582,7 @@ func (mr *MockCloudWatchAPIMockRecorder) GetMetricStatisticsRequest(arg0 interfa
 }
 
 // GetMetricStatisticsWithContext mocks base method
-func (m *MockCloudWatchAPI) GetMetricStatisticsWithContext(arg0 aws.Context, arg1 *cloudwatch.GetMetricStatisticsInput, arg2 ...request.Option) (*cloudwatch.GetMetricStatisticsOutput, error) {
+func (m *MockCloudWatchAPI) GetMetricStatisticsWithContext(arg0 context.Context, arg1 *cloudwatch.GetMetricStatisticsInput, arg2 ...request.Option) (*cloudwatch.GetMetricStatisticsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockCloudWatchAPIMockRecorder) GetMetricWidgetImageRequest(arg0 interf
 }
 
 // GetMetricWidgetImageWithContext mocks base method
-func (m *MockCloudWatchAPI) GetMetricWidgetImageWithContext(arg0 aws.Context, arg1 *cloudwatch.GetMetricWidgetImageInput, arg2 ...request.Option) (*cloudwatch.GetMetricWidgetImageOutput, error) {
+func (m *MockCloudWatchAPI) GetMetricWidgetImageWithContext(arg0 context.Context, arg1 *cloudwatch.GetMetricWidgetImageInput, arg2 ...request.Option) (*cloudwatch.GetMetricWidgetImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockCloudWatchAPIMockRecorder) ListDashboardsRequest(arg0 interface{})
 }
 
 // ListDashboardsWithContext mocks base method
-func (m *MockCloudWatchAPI) ListDashboardsWithContext(arg0 aws.Context, arg1 *cloudwatch.ListDashboardsInput, arg2 ...request.Option) (*cloudwatch.ListDashboardsOutput, error) {
+func (m *MockCloudWatchAPI) ListDashboardsWithContext(arg0 context.Context, arg1 *cloudwatch.ListDashboardsInput, arg2 ...request.Option) (*cloudwatch.ListDashboardsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockCloudWatchAPIMockRecorder) ListMetricsPages(arg0, arg1 interface{}
 }
 
 // ListMetricsPagesWithContext mocks base method
-func (m *MockCloudWatchAPI) ListMetricsPagesWithContext(arg0 aws.Context, arg1 *cloudwatch.ListMetricsInput, arg2 func(*cloudwatch.ListMetricsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchAPI) ListMetricsPagesWithContext(arg0 context.Context, arg1 *cloudwatch.ListMetricsInput, arg2 func(*cloudwatch.ListMetricsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -765,7 +765,7 @@ func (mr *MockCloudWatchAPIMockRecorder) ListMetricsRequest(arg0 interface{}) *g
 }
 
 // ListMetricsWithContext mocks base method
-func (m *MockCloudWatchAPI) ListMetricsWithContext(arg0 aws.Context, arg1 *cloudwatch.ListMetricsInput, arg2 ...request.Option) (*cloudwatch.ListMetricsOutput, error) {
+func (m *MockCloudWatchAPI) ListMetricsWithContext(arg0 context.Context, arg1 *cloudwatch.ListMetricsInput, arg2 ...request.Option) (*cloudwatch.ListMetricsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -815,7 +815,7 @@ func (mr *MockCloudWatchAPIMockRecorder) PutDashboardRequest(arg0 interface{}) *
 }
 
 // PutDashboardWithContext mocks base method
-func (m *MockCloudWatchAPI) PutDashboardWithContext(arg0 aws.Context, arg1 *cloudwatch.PutDashboardInput, arg2 ...request.Option) (*cloudwatch.PutDashboardOutput, error) {
+func (m *MockCloudWatchAPI) PutDashboardWithContext(arg0 context.Context, arg1 *cloudwatch.PutDashboardInput, arg2 ...request.Option) (*cloudwatch.PutDashboardOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -865,7 +865,7 @@ func (mr *MockCloudWatchAPIMockRecorder) PutMetricAlarmRequest(arg0 interface{})
 }
 
 // PutMetricAlarmWithContext mocks base method
-func (m *MockCloudWatchAPI) PutMetricAlarmWithContext(arg0 aws.Context, arg1 *cloudwatch.PutMetricAlarmInput, arg2 ...request.Option) (*cloudwatch.PutMetricAlarmOutput, error) {
+func (m *MockCloudWatchAPI) PutMetricAlarmWithContext(arg0 context.Context, arg1 *cloudwatch.PutMetricAlarmInput, arg2 ...request.Option) (*cloudwatch.PutMetricAlarmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -915,7 +915,7 @@ func (mr *MockCloudWatchAPIMockRecorder) PutMetricDataRequest(arg0 interface{}) 
 }
 
 // PutMetricDataWithContext mocks base method
-func (m *MockCloudWatchAPI) PutMetricDataWithContext(arg0 aws.Context, arg1 *cloudwatch.PutMetricDataInput, arg2 ...request.Option) (*cloudwatch.PutMetricDataOutput, error) {
+func (m *MockCloudWatchAPI) PutMetricDataWithContext(arg0 context.Context, arg1 *cloudwatch.PutMetricDataInput, arg2 ...request.Option) (*cloudwatch.PutMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -965,7 +965,7 @@ func (mr *MockCloudWatchAPIMockRecorder) SetAlarmStateRequest(arg0 interface{}) 
 }
 
 // SetAlarmStateWithContext mocks base method
-func (m *MockCloudWatchAPI) SetAlarmStateWithContext(arg0 aws.Context, arg1 *cloudwatch.SetAlarmStateInput, arg2 ...request.Option) (*cloudwatch.SetAlarmStateOutput, error) {
+func (m *MockCloudWatchAPI) SetAlarmStateWithContext(arg0 context.Context, arg1 *cloudwatch.SetAlarmStateInput, arg2 ...request.Option) (*cloudwatch.SetAlarmStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -999,7 +999,7 @@ func (mr *MockCloudWatchAPIMockRecorder) WaitUntilAlarmExists(arg0 interface{}) 
 }
 
 // WaitUntilAlarmExistsWithContext mocks base method
-func (m *MockCloudWatchAPI) WaitUntilAlarmExistsWithContext(arg0 aws.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 ...request.WaiterOption) error {
+func (m *MockCloudWatchAPI) WaitUntilAlarmExistsWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

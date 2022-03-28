@@ -5,7 +5,7 @@
 package pinpointmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	pinpoint "github.com/aws/aws-sdk-go/service/pinpoint"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockPinpointAPIMockRecorder) CreateAppRequest(arg0 interface{}) *gomoc
 }
 
 // CreateAppWithContext mocks base method
-func (m *MockPinpointAPI) CreateAppWithContext(arg0 aws.Context, arg1 *pinpoint.CreateAppInput, arg2 ...request.Option) (*pinpoint.CreateAppOutput, error) {
+func (m *MockPinpointAPI) CreateAppWithContext(arg0 context.Context, arg1 *pinpoint.CreateAppInput, arg2 ...request.Option) (*pinpoint.CreateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockPinpointAPIMockRecorder) CreateCampaignRequest(arg0 interface{}) *
 }
 
 // CreateCampaignWithContext mocks base method
-func (m *MockPinpointAPI) CreateCampaignWithContext(arg0 aws.Context, arg1 *pinpoint.CreateCampaignInput, arg2 ...request.Option) (*pinpoint.CreateCampaignOutput, error) {
+func (m *MockPinpointAPI) CreateCampaignWithContext(arg0 context.Context, arg1 *pinpoint.CreateCampaignInput, arg2 ...request.Option) (*pinpoint.CreateCampaignOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockPinpointAPIMockRecorder) CreateExportJobRequest(arg0 interface{}) 
 }
 
 // CreateExportJobWithContext mocks base method
-func (m *MockPinpointAPI) CreateExportJobWithContext(arg0 aws.Context, arg1 *pinpoint.CreateExportJobInput, arg2 ...request.Option) (*pinpoint.CreateExportJobOutput, error) {
+func (m *MockPinpointAPI) CreateExportJobWithContext(arg0 context.Context, arg1 *pinpoint.CreateExportJobInput, arg2 ...request.Option) (*pinpoint.CreateExportJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockPinpointAPIMockRecorder) CreateImportJobRequest(arg0 interface{}) 
 }
 
 // CreateImportJobWithContext mocks base method
-func (m *MockPinpointAPI) CreateImportJobWithContext(arg0 aws.Context, arg1 *pinpoint.CreateImportJobInput, arg2 ...request.Option) (*pinpoint.CreateImportJobOutput, error) {
+func (m *MockPinpointAPI) CreateImportJobWithContext(arg0 context.Context, arg1 *pinpoint.CreateImportJobInput, arg2 ...request.Option) (*pinpoint.CreateImportJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockPinpointAPIMockRecorder) CreateSegmentRequest(arg0 interface{}) *g
 }
 
 // CreateSegmentWithContext mocks base method
-func (m *MockPinpointAPI) CreateSegmentWithContext(arg0 aws.Context, arg1 *pinpoint.CreateSegmentInput, arg2 ...request.Option) (*pinpoint.CreateSegmentOutput, error) {
+func (m *MockPinpointAPI) CreateSegmentWithContext(arg0 context.Context, arg1 *pinpoint.CreateSegmentInput, arg2 ...request.Option) (*pinpoint.CreateSegmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteAdmChannelRequest(arg0 interface{})
 }
 
 // DeleteAdmChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteAdmChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteAdmChannelInput, arg2 ...request.Option) (*pinpoint.DeleteAdmChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteAdmChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteAdmChannelInput, arg2 ...request.Option) (*pinpoint.DeleteAdmChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteApnsChannelRequest(arg0 interface{}
 }
 
 // DeleteApnsChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteApnsChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteApnsChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteApnsChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteApnsChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteApnsSandboxChannelRequest(arg0 inte
 }
 
 // DeleteApnsSandboxChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteApnsSandboxChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteApnsSandboxChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsSandboxChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteApnsSandboxChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteApnsSandboxChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsSandboxChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteApnsVoipChannelRequest(arg0 interfa
 }
 
 // DeleteApnsVoipChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteApnsVoipChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteApnsVoipChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsVoipChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteApnsVoipChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteApnsVoipChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsVoipChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteApnsVoipSandboxChannelRequest(arg0 
 }
 
 // DeleteApnsVoipSandboxChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteApnsVoipSandboxChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteApnsVoipSandboxChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsVoipSandboxChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteApnsVoipSandboxChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteApnsVoipSandboxChannelInput, arg2 ...request.Option) (*pinpoint.DeleteApnsVoipSandboxChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteAppRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteAppWithContext mocks base method
-func (m *MockPinpointAPI) DeleteAppWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteAppInput, arg2 ...request.Option) (*pinpoint.DeleteAppOutput, error) {
+func (m *MockPinpointAPI) DeleteAppWithContext(arg0 context.Context, arg1 *pinpoint.DeleteAppInput, arg2 ...request.Option) (*pinpoint.DeleteAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteBaiduChannelRequest(arg0 interface{
 }
 
 // DeleteBaiduChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteBaiduChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteBaiduChannelInput, arg2 ...request.Option) (*pinpoint.DeleteBaiduChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteBaiduChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteBaiduChannelInput, arg2 ...request.Option) (*pinpoint.DeleteBaiduChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteCampaignRequest(arg0 interface{}) *
 }
 
 // DeleteCampaignWithContext mocks base method
-func (m *MockPinpointAPI) DeleteCampaignWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteCampaignInput, arg2 ...request.Option) (*pinpoint.DeleteCampaignOutput, error) {
+func (m *MockPinpointAPI) DeleteCampaignWithContext(arg0 context.Context, arg1 *pinpoint.DeleteCampaignInput, arg2 ...request.Option) (*pinpoint.DeleteCampaignOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteEmailChannelRequest(arg0 interface{
 }
 
 // DeleteEmailChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteEmailChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteEmailChannelInput, arg2 ...request.Option) (*pinpoint.DeleteEmailChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteEmailChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteEmailChannelInput, arg2 ...request.Option) (*pinpoint.DeleteEmailChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteEndpointRequest(arg0 interface{}) *
 }
 
 // DeleteEndpointWithContext mocks base method
-func (m *MockPinpointAPI) DeleteEndpointWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteEndpointInput, arg2 ...request.Option) (*pinpoint.DeleteEndpointOutput, error) {
+func (m *MockPinpointAPI) DeleteEndpointWithContext(arg0 context.Context, arg1 *pinpoint.DeleteEndpointInput, arg2 ...request.Option) (*pinpoint.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteEventStreamRequest(arg0 interface{}
 }
 
 // DeleteEventStreamWithContext mocks base method
-func (m *MockPinpointAPI) DeleteEventStreamWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteEventStreamInput, arg2 ...request.Option) (*pinpoint.DeleteEventStreamOutput, error) {
+func (m *MockPinpointAPI) DeleteEventStreamWithContext(arg0 context.Context, arg1 *pinpoint.DeleteEventStreamInput, arg2 ...request.Option) (*pinpoint.DeleteEventStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteGcmChannelRequest(arg0 interface{})
 }
 
 // DeleteGcmChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteGcmChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteGcmChannelInput, arg2 ...request.Option) (*pinpoint.DeleteGcmChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteGcmChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteGcmChannelInput, arg2 ...request.Option) (*pinpoint.DeleteGcmChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteSegmentRequest(arg0 interface{}) *g
 }
 
 // DeleteSegmentWithContext mocks base method
-func (m *MockPinpointAPI) DeleteSegmentWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteSegmentInput, arg2 ...request.Option) (*pinpoint.DeleteSegmentOutput, error) {
+func (m *MockPinpointAPI) DeleteSegmentWithContext(arg0 context.Context, arg1 *pinpoint.DeleteSegmentInput, arg2 ...request.Option) (*pinpoint.DeleteSegmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteSmsChannelRequest(arg0 interface{})
 }
 
 // DeleteSmsChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteSmsChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteSmsChannelInput, arg2 ...request.Option) (*pinpoint.DeleteSmsChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteSmsChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteSmsChannelInput, arg2 ...request.Option) (*pinpoint.DeleteSmsChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteUserEndpointsRequest(arg0 interface
 }
 
 // DeleteUserEndpointsWithContext mocks base method
-func (m *MockPinpointAPI) DeleteUserEndpointsWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteUserEndpointsInput, arg2 ...request.Option) (*pinpoint.DeleteUserEndpointsOutput, error) {
+func (m *MockPinpointAPI) DeleteUserEndpointsWithContext(arg0 context.Context, arg1 *pinpoint.DeleteUserEndpointsInput, arg2 ...request.Option) (*pinpoint.DeleteUserEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockPinpointAPIMockRecorder) DeleteVoiceChannelRequest(arg0 interface{
 }
 
 // DeleteVoiceChannelWithContext mocks base method
-func (m *MockPinpointAPI) DeleteVoiceChannelWithContext(arg0 aws.Context, arg1 *pinpoint.DeleteVoiceChannelInput, arg2 ...request.Option) (*pinpoint.DeleteVoiceChannelOutput, error) {
+func (m *MockPinpointAPI) DeleteVoiceChannelWithContext(arg0 context.Context, arg1 *pinpoint.DeleteVoiceChannelInput, arg2 ...request.Option) (*pinpoint.DeleteVoiceChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockPinpointAPIMockRecorder) GetAdmChannelRequest(arg0 interface{}) *g
 }
 
 // GetAdmChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetAdmChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetAdmChannelInput, arg2 ...request.Option) (*pinpoint.GetAdmChannelOutput, error) {
+func (m *MockPinpointAPI) GetAdmChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetAdmChannelInput, arg2 ...request.Option) (*pinpoint.GetAdmChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockPinpointAPIMockRecorder) GetApnsChannelRequest(arg0 interface{}) *
 }
 
 // GetApnsChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetApnsChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetApnsChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsChannelOutput, error) {
+func (m *MockPinpointAPI) GetApnsChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetApnsChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockPinpointAPIMockRecorder) GetApnsSandboxChannelRequest(arg0 interfa
 }
 
 // GetApnsSandboxChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetApnsSandboxChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetApnsSandboxChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsSandboxChannelOutput, error) {
+func (m *MockPinpointAPI) GetApnsSandboxChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetApnsSandboxChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsSandboxChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockPinpointAPIMockRecorder) GetApnsVoipChannelRequest(arg0 interface{
 }
 
 // GetApnsVoipChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetApnsVoipChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetApnsVoipChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsVoipChannelOutput, error) {
+func (m *MockPinpointAPI) GetApnsVoipChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetApnsVoipChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsVoipChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockPinpointAPIMockRecorder) GetApnsVoipSandboxChannelRequest(arg0 int
 }
 
 // GetApnsVoipSandboxChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetApnsVoipSandboxChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetApnsVoipSandboxChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsVoipSandboxChannelOutput, error) {
+func (m *MockPinpointAPI) GetApnsVoipSandboxChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetApnsVoipSandboxChannelInput, arg2 ...request.Option) (*pinpoint.GetApnsVoipSandboxChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockPinpointAPIMockRecorder) GetAppRequest(arg0 interface{}) *gomock.C
 }
 
 // GetAppWithContext mocks base method
-func (m *MockPinpointAPI) GetAppWithContext(arg0 aws.Context, arg1 *pinpoint.GetAppInput, arg2 ...request.Option) (*pinpoint.GetAppOutput, error) {
+func (m *MockPinpointAPI) GetAppWithContext(arg0 context.Context, arg1 *pinpoint.GetAppInput, arg2 ...request.Option) (*pinpoint.GetAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockPinpointAPIMockRecorder) GetApplicationSettingsRequest(arg0 interf
 }
 
 // GetApplicationSettingsWithContext mocks base method
-func (m *MockPinpointAPI) GetApplicationSettingsWithContext(arg0 aws.Context, arg1 *pinpoint.GetApplicationSettingsInput, arg2 ...request.Option) (*pinpoint.GetApplicationSettingsOutput, error) {
+func (m *MockPinpointAPI) GetApplicationSettingsWithContext(arg0 context.Context, arg1 *pinpoint.GetApplicationSettingsInput, arg2 ...request.Option) (*pinpoint.GetApplicationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockPinpointAPIMockRecorder) GetAppsRequest(arg0 interface{}) *gomock.
 }
 
 // GetAppsWithContext mocks base method
-func (m *MockPinpointAPI) GetAppsWithContext(arg0 aws.Context, arg1 *pinpoint.GetAppsInput, arg2 ...request.Option) (*pinpoint.GetAppsOutput, error) {
+func (m *MockPinpointAPI) GetAppsWithContext(arg0 context.Context, arg1 *pinpoint.GetAppsInput, arg2 ...request.Option) (*pinpoint.GetAppsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockPinpointAPIMockRecorder) GetBaiduChannelRequest(arg0 interface{}) 
 }
 
 // GetBaiduChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetBaiduChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetBaiduChannelInput, arg2 ...request.Option) (*pinpoint.GetBaiduChannelOutput, error) {
+func (m *MockPinpointAPI) GetBaiduChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetBaiduChannelInput, arg2 ...request.Option) (*pinpoint.GetBaiduChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1581,7 +1581,7 @@ func (mr *MockPinpointAPIMockRecorder) GetCampaignActivitiesRequest(arg0 interfa
 }
 
 // GetCampaignActivitiesWithContext mocks base method
-func (m *MockPinpointAPI) GetCampaignActivitiesWithContext(arg0 aws.Context, arg1 *pinpoint.GetCampaignActivitiesInput, arg2 ...request.Option) (*pinpoint.GetCampaignActivitiesOutput, error) {
+func (m *MockPinpointAPI) GetCampaignActivitiesWithContext(arg0 context.Context, arg1 *pinpoint.GetCampaignActivitiesInput, arg2 ...request.Option) (*pinpoint.GetCampaignActivitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1646,7 +1646,7 @@ func (mr *MockPinpointAPIMockRecorder) GetCampaignVersionRequest(arg0 interface{
 }
 
 // GetCampaignVersionWithContext mocks base method
-func (m *MockPinpointAPI) GetCampaignVersionWithContext(arg0 aws.Context, arg1 *pinpoint.GetCampaignVersionInput, arg2 ...request.Option) (*pinpoint.GetCampaignVersionOutput, error) {
+func (m *MockPinpointAPI) GetCampaignVersionWithContext(arg0 context.Context, arg1 *pinpoint.GetCampaignVersionInput, arg2 ...request.Option) (*pinpoint.GetCampaignVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1696,7 +1696,7 @@ func (mr *MockPinpointAPIMockRecorder) GetCampaignVersionsRequest(arg0 interface
 }
 
 // GetCampaignVersionsWithContext mocks base method
-func (m *MockPinpointAPI) GetCampaignVersionsWithContext(arg0 aws.Context, arg1 *pinpoint.GetCampaignVersionsInput, arg2 ...request.Option) (*pinpoint.GetCampaignVersionsOutput, error) {
+func (m *MockPinpointAPI) GetCampaignVersionsWithContext(arg0 context.Context, arg1 *pinpoint.GetCampaignVersionsInput, arg2 ...request.Option) (*pinpoint.GetCampaignVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockPinpointAPIMockRecorder) GetCampaignVersionsWithContext(arg0, arg1
 }
 
 // GetCampaignWithContext mocks base method
-func (m *MockPinpointAPI) GetCampaignWithContext(arg0 aws.Context, arg1 *pinpoint.GetCampaignInput, arg2 ...request.Option) (*pinpoint.GetCampaignOutput, error) {
+func (m *MockPinpointAPI) GetCampaignWithContext(arg0 context.Context, arg1 *pinpoint.GetCampaignInput, arg2 ...request.Option) (*pinpoint.GetCampaignOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockPinpointAPIMockRecorder) GetCampaignsRequest(arg0 interface{}) *go
 }
 
 // GetCampaignsWithContext mocks base method
-func (m *MockPinpointAPI) GetCampaignsWithContext(arg0 aws.Context, arg1 *pinpoint.GetCampaignsInput, arg2 ...request.Option) (*pinpoint.GetCampaignsOutput, error) {
+func (m *MockPinpointAPI) GetCampaignsWithContext(arg0 context.Context, arg1 *pinpoint.GetCampaignsInput, arg2 ...request.Option) (*pinpoint.GetCampaignsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockPinpointAPIMockRecorder) GetChannelsRequest(arg0 interface{}) *gom
 }
 
 // GetChannelsWithContext mocks base method
-func (m *MockPinpointAPI) GetChannelsWithContext(arg0 aws.Context, arg1 *pinpoint.GetChannelsInput, arg2 ...request.Option) (*pinpoint.GetChannelsOutput, error) {
+func (m *MockPinpointAPI) GetChannelsWithContext(arg0 context.Context, arg1 *pinpoint.GetChannelsInput, arg2 ...request.Option) (*pinpoint.GetChannelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockPinpointAPIMockRecorder) GetEmailChannelRequest(arg0 interface{}) 
 }
 
 // GetEmailChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetEmailChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetEmailChannelInput, arg2 ...request.Option) (*pinpoint.GetEmailChannelOutput, error) {
+func (m *MockPinpointAPI) GetEmailChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetEmailChannelInput, arg2 ...request.Option) (*pinpoint.GetEmailChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockPinpointAPIMockRecorder) GetEndpointRequest(arg0 interface{}) *gom
 }
 
 // GetEndpointWithContext mocks base method
-func (m *MockPinpointAPI) GetEndpointWithContext(arg0 aws.Context, arg1 *pinpoint.GetEndpointInput, arg2 ...request.Option) (*pinpoint.GetEndpointOutput, error) {
+func (m *MockPinpointAPI) GetEndpointWithContext(arg0 context.Context, arg1 *pinpoint.GetEndpointInput, arg2 ...request.Option) (*pinpoint.GetEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockPinpointAPIMockRecorder) GetEventStreamRequest(arg0 interface{}) *
 }
 
 // GetEventStreamWithContext mocks base method
-func (m *MockPinpointAPI) GetEventStreamWithContext(arg0 aws.Context, arg1 *pinpoint.GetEventStreamInput, arg2 ...request.Option) (*pinpoint.GetEventStreamOutput, error) {
+func (m *MockPinpointAPI) GetEventStreamWithContext(arg0 context.Context, arg1 *pinpoint.GetEventStreamInput, arg2 ...request.Option) (*pinpoint.GetEventStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockPinpointAPIMockRecorder) GetExportJobRequest(arg0 interface{}) *go
 }
 
 // GetExportJobWithContext mocks base method
-func (m *MockPinpointAPI) GetExportJobWithContext(arg0 aws.Context, arg1 *pinpoint.GetExportJobInput, arg2 ...request.Option) (*pinpoint.GetExportJobOutput, error) {
+func (m *MockPinpointAPI) GetExportJobWithContext(arg0 context.Context, arg1 *pinpoint.GetExportJobInput, arg2 ...request.Option) (*pinpoint.GetExportJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockPinpointAPIMockRecorder) GetExportJobsRequest(arg0 interface{}) *g
 }
 
 // GetExportJobsWithContext mocks base method
-func (m *MockPinpointAPI) GetExportJobsWithContext(arg0 aws.Context, arg1 *pinpoint.GetExportJobsInput, arg2 ...request.Option) (*pinpoint.GetExportJobsOutput, error) {
+func (m *MockPinpointAPI) GetExportJobsWithContext(arg0 context.Context, arg1 *pinpoint.GetExportJobsInput, arg2 ...request.Option) (*pinpoint.GetExportJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockPinpointAPIMockRecorder) GetGcmChannelRequest(arg0 interface{}) *g
 }
 
 // GetGcmChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetGcmChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetGcmChannelInput, arg2 ...request.Option) (*pinpoint.GetGcmChannelOutput, error) {
+func (m *MockPinpointAPI) GetGcmChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetGcmChannelInput, arg2 ...request.Option) (*pinpoint.GetGcmChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockPinpointAPIMockRecorder) GetImportJobRequest(arg0 interface{}) *go
 }
 
 // GetImportJobWithContext mocks base method
-func (m *MockPinpointAPI) GetImportJobWithContext(arg0 aws.Context, arg1 *pinpoint.GetImportJobInput, arg2 ...request.Option) (*pinpoint.GetImportJobOutput, error) {
+func (m *MockPinpointAPI) GetImportJobWithContext(arg0 context.Context, arg1 *pinpoint.GetImportJobInput, arg2 ...request.Option) (*pinpoint.GetImportJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockPinpointAPIMockRecorder) GetImportJobsRequest(arg0 interface{}) *g
 }
 
 // GetImportJobsWithContext mocks base method
-func (m *MockPinpointAPI) GetImportJobsWithContext(arg0 aws.Context, arg1 *pinpoint.GetImportJobsInput, arg2 ...request.Option) (*pinpoint.GetImportJobsOutput, error) {
+func (m *MockPinpointAPI) GetImportJobsWithContext(arg0 context.Context, arg1 *pinpoint.GetImportJobsInput, arg2 ...request.Option) (*pinpoint.GetImportJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2281,7 +2281,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSegmentExportJobsRequest(arg0 interfac
 }
 
 // GetSegmentExportJobsWithContext mocks base method
-func (m *MockPinpointAPI) GetSegmentExportJobsWithContext(arg0 aws.Context, arg1 *pinpoint.GetSegmentExportJobsInput, arg2 ...request.Option) (*pinpoint.GetSegmentExportJobsOutput, error) {
+func (m *MockPinpointAPI) GetSegmentExportJobsWithContext(arg0 context.Context, arg1 *pinpoint.GetSegmentExportJobsInput, arg2 ...request.Option) (*pinpoint.GetSegmentExportJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2331,7 +2331,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSegmentImportJobsRequest(arg0 interfac
 }
 
 // GetSegmentImportJobsWithContext mocks base method
-func (m *MockPinpointAPI) GetSegmentImportJobsWithContext(arg0 aws.Context, arg1 *pinpoint.GetSegmentImportJobsInput, arg2 ...request.Option) (*pinpoint.GetSegmentImportJobsOutput, error) {
+func (m *MockPinpointAPI) GetSegmentImportJobsWithContext(arg0 context.Context, arg1 *pinpoint.GetSegmentImportJobsInput, arg2 ...request.Option) (*pinpoint.GetSegmentImportJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2396,7 +2396,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSegmentVersionRequest(arg0 interface{}
 }
 
 // GetSegmentVersionWithContext mocks base method
-func (m *MockPinpointAPI) GetSegmentVersionWithContext(arg0 aws.Context, arg1 *pinpoint.GetSegmentVersionInput, arg2 ...request.Option) (*pinpoint.GetSegmentVersionOutput, error) {
+func (m *MockPinpointAPI) GetSegmentVersionWithContext(arg0 context.Context, arg1 *pinpoint.GetSegmentVersionInput, arg2 ...request.Option) (*pinpoint.GetSegmentVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2446,7 +2446,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSegmentVersionsRequest(arg0 interface{
 }
 
 // GetSegmentVersionsWithContext mocks base method
-func (m *MockPinpointAPI) GetSegmentVersionsWithContext(arg0 aws.Context, arg1 *pinpoint.GetSegmentVersionsInput, arg2 ...request.Option) (*pinpoint.GetSegmentVersionsOutput, error) {
+func (m *MockPinpointAPI) GetSegmentVersionsWithContext(arg0 context.Context, arg1 *pinpoint.GetSegmentVersionsInput, arg2 ...request.Option) (*pinpoint.GetSegmentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2466,7 +2466,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSegmentVersionsWithContext(arg0, arg1 
 }
 
 // GetSegmentWithContext mocks base method
-func (m *MockPinpointAPI) GetSegmentWithContext(arg0 aws.Context, arg1 *pinpoint.GetSegmentInput, arg2 ...request.Option) (*pinpoint.GetSegmentOutput, error) {
+func (m *MockPinpointAPI) GetSegmentWithContext(arg0 context.Context, arg1 *pinpoint.GetSegmentInput, arg2 ...request.Option) (*pinpoint.GetSegmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2516,7 +2516,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSegmentsRequest(arg0 interface{}) *gom
 }
 
 // GetSegmentsWithContext mocks base method
-func (m *MockPinpointAPI) GetSegmentsWithContext(arg0 aws.Context, arg1 *pinpoint.GetSegmentsInput, arg2 ...request.Option) (*pinpoint.GetSegmentsOutput, error) {
+func (m *MockPinpointAPI) GetSegmentsWithContext(arg0 context.Context, arg1 *pinpoint.GetSegmentsInput, arg2 ...request.Option) (*pinpoint.GetSegmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2566,7 +2566,7 @@ func (mr *MockPinpointAPIMockRecorder) GetSmsChannelRequest(arg0 interface{}) *g
 }
 
 // GetSmsChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetSmsChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetSmsChannelInput, arg2 ...request.Option) (*pinpoint.GetSmsChannelOutput, error) {
+func (m *MockPinpointAPI) GetSmsChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetSmsChannelInput, arg2 ...request.Option) (*pinpoint.GetSmsChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2616,7 +2616,7 @@ func (mr *MockPinpointAPIMockRecorder) GetUserEndpointsRequest(arg0 interface{})
 }
 
 // GetUserEndpointsWithContext mocks base method
-func (m *MockPinpointAPI) GetUserEndpointsWithContext(arg0 aws.Context, arg1 *pinpoint.GetUserEndpointsInput, arg2 ...request.Option) (*pinpoint.GetUserEndpointsOutput, error) {
+func (m *MockPinpointAPI) GetUserEndpointsWithContext(arg0 context.Context, arg1 *pinpoint.GetUserEndpointsInput, arg2 ...request.Option) (*pinpoint.GetUserEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2666,7 +2666,7 @@ func (mr *MockPinpointAPIMockRecorder) GetVoiceChannelRequest(arg0 interface{}) 
 }
 
 // GetVoiceChannelWithContext mocks base method
-func (m *MockPinpointAPI) GetVoiceChannelWithContext(arg0 aws.Context, arg1 *pinpoint.GetVoiceChannelInput, arg2 ...request.Option) (*pinpoint.GetVoiceChannelOutput, error) {
+func (m *MockPinpointAPI) GetVoiceChannelWithContext(arg0 context.Context, arg1 *pinpoint.GetVoiceChannelInput, arg2 ...request.Option) (*pinpoint.GetVoiceChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2716,7 +2716,7 @@ func (mr *MockPinpointAPIMockRecorder) PhoneNumberValidateRequest(arg0 interface
 }
 
 // PhoneNumberValidateWithContext mocks base method
-func (m *MockPinpointAPI) PhoneNumberValidateWithContext(arg0 aws.Context, arg1 *pinpoint.PhoneNumberValidateInput, arg2 ...request.Option) (*pinpoint.PhoneNumberValidateOutput, error) {
+func (m *MockPinpointAPI) PhoneNumberValidateWithContext(arg0 context.Context, arg1 *pinpoint.PhoneNumberValidateInput, arg2 ...request.Option) (*pinpoint.PhoneNumberValidateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2766,7 +2766,7 @@ func (mr *MockPinpointAPIMockRecorder) PutEventStreamRequest(arg0 interface{}) *
 }
 
 // PutEventStreamWithContext mocks base method
-func (m *MockPinpointAPI) PutEventStreamWithContext(arg0 aws.Context, arg1 *pinpoint.PutEventStreamInput, arg2 ...request.Option) (*pinpoint.PutEventStreamOutput, error) {
+func (m *MockPinpointAPI) PutEventStreamWithContext(arg0 context.Context, arg1 *pinpoint.PutEventStreamInput, arg2 ...request.Option) (*pinpoint.PutEventStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2816,7 +2816,7 @@ func (mr *MockPinpointAPIMockRecorder) PutEventsRequest(arg0 interface{}) *gomoc
 }
 
 // PutEventsWithContext mocks base method
-func (m *MockPinpointAPI) PutEventsWithContext(arg0 aws.Context, arg1 *pinpoint.PutEventsInput, arg2 ...request.Option) (*pinpoint.PutEventsOutput, error) {
+func (m *MockPinpointAPI) PutEventsWithContext(arg0 context.Context, arg1 *pinpoint.PutEventsInput, arg2 ...request.Option) (*pinpoint.PutEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2866,7 +2866,7 @@ func (mr *MockPinpointAPIMockRecorder) RemoveAttributesRequest(arg0 interface{})
 }
 
 // RemoveAttributesWithContext mocks base method
-func (m *MockPinpointAPI) RemoveAttributesWithContext(arg0 aws.Context, arg1 *pinpoint.RemoveAttributesInput, arg2 ...request.Option) (*pinpoint.RemoveAttributesOutput, error) {
+func (m *MockPinpointAPI) RemoveAttributesWithContext(arg0 context.Context, arg1 *pinpoint.RemoveAttributesInput, arg2 ...request.Option) (*pinpoint.RemoveAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2916,7 +2916,7 @@ func (mr *MockPinpointAPIMockRecorder) SendMessagesRequest(arg0 interface{}) *go
 }
 
 // SendMessagesWithContext mocks base method
-func (m *MockPinpointAPI) SendMessagesWithContext(arg0 aws.Context, arg1 *pinpoint.SendMessagesInput, arg2 ...request.Option) (*pinpoint.SendMessagesOutput, error) {
+func (m *MockPinpointAPI) SendMessagesWithContext(arg0 context.Context, arg1 *pinpoint.SendMessagesInput, arg2 ...request.Option) (*pinpoint.SendMessagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2966,7 +2966,7 @@ func (mr *MockPinpointAPIMockRecorder) SendUsersMessagesRequest(arg0 interface{}
 }
 
 // SendUsersMessagesWithContext mocks base method
-func (m *MockPinpointAPI) SendUsersMessagesWithContext(arg0 aws.Context, arg1 *pinpoint.SendUsersMessagesInput, arg2 ...request.Option) (*pinpoint.SendUsersMessagesOutput, error) {
+func (m *MockPinpointAPI) SendUsersMessagesWithContext(arg0 context.Context, arg1 *pinpoint.SendUsersMessagesInput, arg2 ...request.Option) (*pinpoint.SendUsersMessagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3016,7 +3016,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateAdmChannelRequest(arg0 interface{})
 }
 
 // UpdateAdmChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateAdmChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateAdmChannelInput, arg2 ...request.Option) (*pinpoint.UpdateAdmChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateAdmChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateAdmChannelInput, arg2 ...request.Option) (*pinpoint.UpdateAdmChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3066,7 +3066,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateApnsChannelRequest(arg0 interface{}
 }
 
 // UpdateApnsChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateApnsChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateApnsChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateApnsChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateApnsChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3116,7 +3116,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateApnsSandboxChannelRequest(arg0 inte
 }
 
 // UpdateApnsSandboxChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateApnsSandboxChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateApnsSandboxChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsSandboxChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateApnsSandboxChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateApnsSandboxChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsSandboxChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3166,7 +3166,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateApnsVoipChannelRequest(arg0 interfa
 }
 
 // UpdateApnsVoipChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateApnsVoipChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateApnsVoipChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsVoipChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateApnsVoipChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateApnsVoipChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsVoipChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3216,7 +3216,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateApnsVoipSandboxChannelRequest(arg0 
 }
 
 // UpdateApnsVoipSandboxChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateApnsVoipSandboxChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateApnsVoipSandboxChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsVoipSandboxChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateApnsVoipSandboxChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateApnsVoipSandboxChannelInput, arg2 ...request.Option) (*pinpoint.UpdateApnsVoipSandboxChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3266,7 +3266,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateApplicationSettingsRequest(arg0 int
 }
 
 // UpdateApplicationSettingsWithContext mocks base method
-func (m *MockPinpointAPI) UpdateApplicationSettingsWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateApplicationSettingsInput, arg2 ...request.Option) (*pinpoint.UpdateApplicationSettingsOutput, error) {
+func (m *MockPinpointAPI) UpdateApplicationSettingsWithContext(arg0 context.Context, arg1 *pinpoint.UpdateApplicationSettingsInput, arg2 ...request.Option) (*pinpoint.UpdateApplicationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3316,7 +3316,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateBaiduChannelRequest(arg0 interface{
 }
 
 // UpdateBaiduChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateBaiduChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateBaiduChannelInput, arg2 ...request.Option) (*pinpoint.UpdateBaiduChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateBaiduChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateBaiduChannelInput, arg2 ...request.Option) (*pinpoint.UpdateBaiduChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3366,7 +3366,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateCampaignRequest(arg0 interface{}) *
 }
 
 // UpdateCampaignWithContext mocks base method
-func (m *MockPinpointAPI) UpdateCampaignWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateCampaignInput, arg2 ...request.Option) (*pinpoint.UpdateCampaignOutput, error) {
+func (m *MockPinpointAPI) UpdateCampaignWithContext(arg0 context.Context, arg1 *pinpoint.UpdateCampaignInput, arg2 ...request.Option) (*pinpoint.UpdateCampaignOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3416,7 +3416,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateEmailChannelRequest(arg0 interface{
 }
 
 // UpdateEmailChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateEmailChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateEmailChannelInput, arg2 ...request.Option) (*pinpoint.UpdateEmailChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateEmailChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateEmailChannelInput, arg2 ...request.Option) (*pinpoint.UpdateEmailChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3466,7 +3466,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateEndpointRequest(arg0 interface{}) *
 }
 
 // UpdateEndpointWithContext mocks base method
-func (m *MockPinpointAPI) UpdateEndpointWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateEndpointInput, arg2 ...request.Option) (*pinpoint.UpdateEndpointOutput, error) {
+func (m *MockPinpointAPI) UpdateEndpointWithContext(arg0 context.Context, arg1 *pinpoint.UpdateEndpointInput, arg2 ...request.Option) (*pinpoint.UpdateEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3516,7 +3516,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateEndpointsBatchRequest(arg0 interfac
 }
 
 // UpdateEndpointsBatchWithContext mocks base method
-func (m *MockPinpointAPI) UpdateEndpointsBatchWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateEndpointsBatchInput, arg2 ...request.Option) (*pinpoint.UpdateEndpointsBatchOutput, error) {
+func (m *MockPinpointAPI) UpdateEndpointsBatchWithContext(arg0 context.Context, arg1 *pinpoint.UpdateEndpointsBatchInput, arg2 ...request.Option) (*pinpoint.UpdateEndpointsBatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3566,7 +3566,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateGcmChannelRequest(arg0 interface{})
 }
 
 // UpdateGcmChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateGcmChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateGcmChannelInput, arg2 ...request.Option) (*pinpoint.UpdateGcmChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateGcmChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateGcmChannelInput, arg2 ...request.Option) (*pinpoint.UpdateGcmChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3616,7 +3616,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateSegmentRequest(arg0 interface{}) *g
 }
 
 // UpdateSegmentWithContext mocks base method
-func (m *MockPinpointAPI) UpdateSegmentWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateSegmentInput, arg2 ...request.Option) (*pinpoint.UpdateSegmentOutput, error) {
+func (m *MockPinpointAPI) UpdateSegmentWithContext(arg0 context.Context, arg1 *pinpoint.UpdateSegmentInput, arg2 ...request.Option) (*pinpoint.UpdateSegmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3666,7 +3666,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateSmsChannelRequest(arg0 interface{})
 }
 
 // UpdateSmsChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateSmsChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateSmsChannelInput, arg2 ...request.Option) (*pinpoint.UpdateSmsChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateSmsChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateSmsChannelInput, arg2 ...request.Option) (*pinpoint.UpdateSmsChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3716,7 +3716,7 @@ func (mr *MockPinpointAPIMockRecorder) UpdateVoiceChannelRequest(arg0 interface{
 }
 
 // UpdateVoiceChannelWithContext mocks base method
-func (m *MockPinpointAPI) UpdateVoiceChannelWithContext(arg0 aws.Context, arg1 *pinpoint.UpdateVoiceChannelInput, arg2 ...request.Option) (*pinpoint.UpdateVoiceChannelOutput, error) {
+func (m *MockPinpointAPI) UpdateVoiceChannelWithContext(arg0 context.Context, arg1 *pinpoint.UpdateVoiceChannelInput, arg2 ...request.Option) (*pinpoint.UpdateVoiceChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

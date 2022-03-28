@@ -5,7 +5,7 @@
 package docdbmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	docdb "github.com/aws/aws-sdk-go/service/docdb"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDocDBAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{}) *
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockDocDBAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *docdb.AddTagsToResourceInput, arg2 ...request.Option) (*docdb.AddTagsToResourceOutput, error) {
+func (m *MockDocDBAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *docdb.AddTagsToResourceInput, arg2 ...request.Option) (*docdb.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDocDBAPIMockRecorder) ApplyPendingMaintenanceActionRequest(arg0 in
 }
 
 // ApplyPendingMaintenanceActionWithContext mocks base method
-func (m *MockDocDBAPI) ApplyPendingMaintenanceActionWithContext(arg0 aws.Context, arg1 *docdb.ApplyPendingMaintenanceActionInput, arg2 ...request.Option) (*docdb.ApplyPendingMaintenanceActionOutput, error) {
+func (m *MockDocDBAPI) ApplyPendingMaintenanceActionWithContext(arg0 context.Context, arg1 *docdb.ApplyPendingMaintenanceActionInput, arg2 ...request.Option) (*docdb.ApplyPendingMaintenanceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDocDBAPIMockRecorder) CopyDBClusterParameterGroupRequest(arg0 inte
 }
 
 // CopyDBClusterParameterGroupWithContext mocks base method
-func (m *MockDocDBAPI) CopyDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *docdb.CopyDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.CopyDBClusterParameterGroupOutput, error) {
+func (m *MockDocDBAPI) CopyDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *docdb.CopyDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.CopyDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDocDBAPIMockRecorder) CopyDBClusterSnapshotRequest(arg0 interface{
 }
 
 // CopyDBClusterSnapshotWithContext mocks base method
-func (m *MockDocDBAPI) CopyDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *docdb.CopyDBClusterSnapshotInput, arg2 ...request.Option) (*docdb.CopyDBClusterSnapshotOutput, error) {
+func (m *MockDocDBAPI) CopyDBClusterSnapshotWithContext(arg0 context.Context, arg1 *docdb.CopyDBClusterSnapshotInput, arg2 ...request.Option) (*docdb.CopyDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -281,7 +281,7 @@ func (mr *MockDocDBAPIMockRecorder) CreateDBClusterParameterGroupRequest(arg0 in
 }
 
 // CreateDBClusterParameterGroupWithContext mocks base method
-func (m *MockDocDBAPI) CreateDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *docdb.CreateDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.CreateDBClusterParameterGroupOutput, error) {
+func (m *MockDocDBAPI) CreateDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *docdb.CreateDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.CreateDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -346,7 +346,7 @@ func (mr *MockDocDBAPIMockRecorder) CreateDBClusterSnapshotRequest(arg0 interfac
 }
 
 // CreateDBClusterSnapshotWithContext mocks base method
-func (m *MockDocDBAPI) CreateDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *docdb.CreateDBClusterSnapshotInput, arg2 ...request.Option) (*docdb.CreateDBClusterSnapshotOutput, error) {
+func (m *MockDocDBAPI) CreateDBClusterSnapshotWithContext(arg0 context.Context, arg1 *docdb.CreateDBClusterSnapshotInput, arg2 ...request.Option) (*docdb.CreateDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDocDBAPIMockRecorder) CreateDBClusterSnapshotWithContext(arg0, arg
 }
 
 // CreateDBClusterWithContext mocks base method
-func (m *MockDocDBAPI) CreateDBClusterWithContext(arg0 aws.Context, arg1 *docdb.CreateDBClusterInput, arg2 ...request.Option) (*docdb.CreateDBClusterOutput, error) {
+func (m *MockDocDBAPI) CreateDBClusterWithContext(arg0 context.Context, arg1 *docdb.CreateDBClusterInput, arg2 ...request.Option) (*docdb.CreateDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDocDBAPIMockRecorder) CreateDBInstanceRequest(arg0 interface{}) *g
 }
 
 // CreateDBInstanceWithContext mocks base method
-func (m *MockDocDBAPI) CreateDBInstanceWithContext(arg0 aws.Context, arg1 *docdb.CreateDBInstanceInput, arg2 ...request.Option) (*docdb.CreateDBInstanceOutput, error) {
+func (m *MockDocDBAPI) CreateDBInstanceWithContext(arg0 context.Context, arg1 *docdb.CreateDBInstanceInput, arg2 ...request.Option) (*docdb.CreateDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDocDBAPIMockRecorder) CreateDBSubnetGroupRequest(arg0 interface{})
 }
 
 // CreateDBSubnetGroupWithContext mocks base method
-func (m *MockDocDBAPI) CreateDBSubnetGroupWithContext(arg0 aws.Context, arg1 *docdb.CreateDBSubnetGroupInput, arg2 ...request.Option) (*docdb.CreateDBSubnetGroupOutput, error) {
+func (m *MockDocDBAPI) CreateDBSubnetGroupWithContext(arg0 context.Context, arg1 *docdb.CreateDBSubnetGroupInput, arg2 ...request.Option) (*docdb.CreateDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockDocDBAPIMockRecorder) DeleteDBClusterParameterGroupRequest(arg0 in
 }
 
 // DeleteDBClusterParameterGroupWithContext mocks base method
-func (m *MockDocDBAPI) DeleteDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *docdb.DeleteDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.DeleteDBClusterParameterGroupOutput, error) {
+func (m *MockDocDBAPI) DeleteDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *docdb.DeleteDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.DeleteDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -596,7 +596,7 @@ func (mr *MockDocDBAPIMockRecorder) DeleteDBClusterSnapshotRequest(arg0 interfac
 }
 
 // DeleteDBClusterSnapshotWithContext mocks base method
-func (m *MockDocDBAPI) DeleteDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *docdb.DeleteDBClusterSnapshotInput, arg2 ...request.Option) (*docdb.DeleteDBClusterSnapshotOutput, error) {
+func (m *MockDocDBAPI) DeleteDBClusterSnapshotWithContext(arg0 context.Context, arg1 *docdb.DeleteDBClusterSnapshotInput, arg2 ...request.Option) (*docdb.DeleteDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDocDBAPIMockRecorder) DeleteDBClusterSnapshotWithContext(arg0, arg
 }
 
 // DeleteDBClusterWithContext mocks base method
-func (m *MockDocDBAPI) DeleteDBClusterWithContext(arg0 aws.Context, arg1 *docdb.DeleteDBClusterInput, arg2 ...request.Option) (*docdb.DeleteDBClusterOutput, error) {
+func (m *MockDocDBAPI) DeleteDBClusterWithContext(arg0 context.Context, arg1 *docdb.DeleteDBClusterInput, arg2 ...request.Option) (*docdb.DeleteDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockDocDBAPIMockRecorder) DeleteDBInstanceRequest(arg0 interface{}) *g
 }
 
 // DeleteDBInstanceWithContext mocks base method
-func (m *MockDocDBAPI) DeleteDBInstanceWithContext(arg0 aws.Context, arg1 *docdb.DeleteDBInstanceInput, arg2 ...request.Option) (*docdb.DeleteDBInstanceOutput, error) {
+func (m *MockDocDBAPI) DeleteDBInstanceWithContext(arg0 context.Context, arg1 *docdb.DeleteDBInstanceInput, arg2 ...request.Option) (*docdb.DeleteDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockDocDBAPIMockRecorder) DeleteDBSubnetGroupRequest(arg0 interface{})
 }
 
 // DeleteDBSubnetGroupWithContext mocks base method
-func (m *MockDocDBAPI) DeleteDBSubnetGroupWithContext(arg0 aws.Context, arg1 *docdb.DeleteDBSubnetGroupInput, arg2 ...request.Option) (*docdb.DeleteDBSubnetGroupOutput, error) {
+func (m *MockDocDBAPI) DeleteDBSubnetGroupWithContext(arg0 context.Context, arg1 *docdb.DeleteDBSubnetGroupInput, arg2 ...request.Option) (*docdb.DeleteDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParameterGroupsRequest(arg0
 }
 
 // DescribeDBClusterParameterGroupsWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBClusterParameterGroupsWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBClusterParameterGroupsInput, arg2 ...request.Option) (*docdb.DescribeDBClusterParameterGroupsOutput, error) {
+func (m *MockDocDBAPI) DescribeDBClusterParameterGroupsWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterParameterGroupsInput, arg2 ...request.Option) (*docdb.DescribeDBClusterParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParametersRequest(arg0 inte
 }
 
 // DescribeDBClusterParametersWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBClusterParametersWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBClusterParametersInput, arg2 ...request.Option) (*docdb.DescribeDBClusterParametersOutput, error) {
+func (m *MockDocDBAPI) DescribeDBClusterParametersWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterParametersInput, arg2 ...request.Option) (*docdb.DescribeDBClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterSnapshotAttributesRequest(a
 }
 
 // DescribeDBClusterSnapshotAttributesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBClusterSnapshotAttributesWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBClusterSnapshotAttributesInput, arg2 ...request.Option) (*docdb.DescribeDBClusterSnapshotAttributesOutput, error) {
+func (m *MockDocDBAPI) DescribeDBClusterSnapshotAttributesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterSnapshotAttributesInput, arg2 ...request.Option) (*docdb.DescribeDBClusterSnapshotAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterSnapshotsRequest(arg0 inter
 }
 
 // DescribeDBClusterSnapshotsWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBClusterSnapshotsWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBClusterSnapshotsInput, arg2 ...request.Option) (*docdb.DescribeDBClusterSnapshotsOutput, error) {
+func (m *MockDocDBAPI) DescribeDBClusterSnapshotsWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterSnapshotsInput, arg2 ...request.Option) (*docdb.DescribeDBClusterSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -965,7 +965,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClustersPages(arg0, arg1 interface
 }
 
 // DescribeDBClustersPagesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBClustersPagesWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBClustersInput, arg2 func(*docdb.DescribeDBClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDocDBAPI) DescribeDBClustersPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClustersInput, arg2 func(*docdb.DescribeDBClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -999,7 +999,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClustersRequest(arg0 interface{}) 
 }
 
 // DescribeDBClustersWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBClustersWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBClustersInput, arg2 ...request.Option) (*docdb.DescribeDBClustersOutput, error) {
+func (m *MockDocDBAPI) DescribeDBClustersWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClustersInput, arg2 ...request.Option) (*docdb.DescribeDBClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBEngineVersionsPages(arg0, arg1 int
 }
 
 // DescribeDBEngineVersionsPagesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBEngineVersionsPagesWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBEngineVersionsInput, arg2 func(*docdb.DescribeDBEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDocDBAPI) DescribeDBEngineVersionsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBEngineVersionsInput, arg2 func(*docdb.DescribeDBEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBEngineVersionsRequest(arg0 interfa
 }
 
 // DescribeDBEngineVersionsWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBEngineVersionsWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBEngineVersionsInput, arg2 ...request.Option) (*docdb.DescribeDBEngineVersionsOutput, error) {
+func (m *MockDocDBAPI) DescribeDBEngineVersionsWithContext(arg0 context.Context, arg1 *docdb.DescribeDBEngineVersionsInput, arg2 ...request.Option) (*docdb.DescribeDBEngineVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBInstancesPages(arg0, arg1 interfac
 }
 
 // DescribeDBInstancesPagesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBInstancesPagesWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 func(*docdb.DescribeDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDocDBAPI) DescribeDBInstancesPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 func(*docdb.DescribeDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBInstancesRequest(arg0 interface{})
 }
 
 // DescribeDBInstancesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBInstancesWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 ...request.Option) (*docdb.DescribeDBInstancesOutput, error) {
+func (m *MockDocDBAPI) DescribeDBInstancesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 ...request.Option) (*docdb.DescribeDBInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBSubnetGroupsPages(arg0, arg1 inter
 }
 
 // DescribeDBSubnetGroupsPagesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBSubnetGroupsPagesWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBSubnetGroupsInput, arg2 func(*docdb.DescribeDBSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDocDBAPI) DescribeDBSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBSubnetGroupsInput, arg2 func(*docdb.DescribeDBSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1248,7 +1248,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBSubnetGroupsRequest(arg0 interface
 }
 
 // DescribeDBSubnetGroupsWithContext mocks base method
-func (m *MockDocDBAPI) DescribeDBSubnetGroupsWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBSubnetGroupsInput, arg2 ...request.Option) (*docdb.DescribeDBSubnetGroupsOutput, error) {
+func (m *MockDocDBAPI) DescribeDBSubnetGroupsWithContext(arg0 context.Context, arg1 *docdb.DescribeDBSubnetGroupsInput, arg2 ...request.Option) (*docdb.DescribeDBSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1298,7 +1298,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeEngineDefaultClusterParametersReques
 }
 
 // DescribeEngineDefaultClusterParametersWithContext mocks base method
-func (m *MockDocDBAPI) DescribeEngineDefaultClusterParametersWithContext(arg0 aws.Context, arg1 *docdb.DescribeEngineDefaultClusterParametersInput, arg2 ...request.Option) (*docdb.DescribeEngineDefaultClusterParametersOutput, error) {
+func (m *MockDocDBAPI) DescribeEngineDefaultClusterParametersWithContext(arg0 context.Context, arg1 *docdb.DescribeEngineDefaultClusterParametersInput, arg2 ...request.Option) (*docdb.DescribeEngineDefaultClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1348,7 +1348,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeEventCategoriesRequest(arg0 interfac
 }
 
 // DescribeEventCategoriesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeEventCategoriesWithContext(arg0 aws.Context, arg1 *docdb.DescribeEventCategoriesInput, arg2 ...request.Option) (*docdb.DescribeEventCategoriesOutput, error) {
+func (m *MockDocDBAPI) DescribeEventCategoriesWithContext(arg0 context.Context, arg1 *docdb.DescribeEventCategoriesInput, arg2 ...request.Option) (*docdb.DescribeEventCategoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1397,7 +1397,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{}) 
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *docdb.DescribeEventsInput, arg2 func(*docdb.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDocDBAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeEventsInput, arg2 func(*docdb.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1431,7 +1431,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *gom
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockDocDBAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *docdb.DescribeEventsInput, arg2 ...request.Option) (*docdb.DescribeEventsOutput, error) {
+func (m *MockDocDBAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *docdb.DescribeEventsInput, arg2 ...request.Option) (*docdb.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1480,7 +1480,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeOrderableDBInstanceOptionsPages(arg0
 }
 
 // DescribeOrderableDBInstanceOptionsPagesWithContext mocks base method
-func (m *MockDocDBAPI) DescribeOrderableDBInstanceOptionsPagesWithContext(arg0 aws.Context, arg1 *docdb.DescribeOrderableDBInstanceOptionsInput, arg2 func(*docdb.DescribeOrderableDBInstanceOptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDocDBAPI) DescribeOrderableDBInstanceOptionsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeOrderableDBInstanceOptionsInput, arg2 func(*docdb.DescribeOrderableDBInstanceOptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1514,7 +1514,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribeOrderableDBInstanceOptionsRequest(ar
 }
 
 // DescribeOrderableDBInstanceOptionsWithContext mocks base method
-func (m *MockDocDBAPI) DescribeOrderableDBInstanceOptionsWithContext(arg0 aws.Context, arg1 *docdb.DescribeOrderableDBInstanceOptionsInput, arg2 ...request.Option) (*docdb.DescribeOrderableDBInstanceOptionsOutput, error) {
+func (m *MockDocDBAPI) DescribeOrderableDBInstanceOptionsWithContext(arg0 context.Context, arg1 *docdb.DescribeOrderableDBInstanceOptionsInput, arg2 ...request.Option) (*docdb.DescribeOrderableDBInstanceOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1564,7 +1564,7 @@ func (mr *MockDocDBAPIMockRecorder) DescribePendingMaintenanceActionsRequest(arg
 }
 
 // DescribePendingMaintenanceActionsWithContext mocks base method
-func (m *MockDocDBAPI) DescribePendingMaintenanceActionsWithContext(arg0 aws.Context, arg1 *docdb.DescribePendingMaintenanceActionsInput, arg2 ...request.Option) (*docdb.DescribePendingMaintenanceActionsOutput, error) {
+func (m *MockDocDBAPI) DescribePendingMaintenanceActionsWithContext(arg0 context.Context, arg1 *docdb.DescribePendingMaintenanceActionsInput, arg2 ...request.Option) (*docdb.DescribePendingMaintenanceActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1614,7 +1614,7 @@ func (mr *MockDocDBAPIMockRecorder) FailoverDBClusterRequest(arg0 interface{}) *
 }
 
 // FailoverDBClusterWithContext mocks base method
-func (m *MockDocDBAPI) FailoverDBClusterWithContext(arg0 aws.Context, arg1 *docdb.FailoverDBClusterInput, arg2 ...request.Option) (*docdb.FailoverDBClusterOutput, error) {
+func (m *MockDocDBAPI) FailoverDBClusterWithContext(arg0 context.Context, arg1 *docdb.FailoverDBClusterInput, arg2 ...request.Option) (*docdb.FailoverDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1664,7 +1664,7 @@ func (mr *MockDocDBAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{})
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockDocDBAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *docdb.ListTagsForResourceInput, arg2 ...request.Option) (*docdb.ListTagsForResourceOutput, error) {
+func (m *MockDocDBAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *docdb.ListTagsForResourceInput, arg2 ...request.Option) (*docdb.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1729,7 +1729,7 @@ func (mr *MockDocDBAPIMockRecorder) ModifyDBClusterParameterGroupRequest(arg0 in
 }
 
 // ModifyDBClusterParameterGroupWithContext mocks base method
-func (m *MockDocDBAPI) ModifyDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *docdb.ModifyDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.ModifyDBClusterParameterGroupOutput, error) {
+func (m *MockDocDBAPI) ModifyDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *docdb.ModifyDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.ModifyDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1794,7 +1794,7 @@ func (mr *MockDocDBAPIMockRecorder) ModifyDBClusterSnapshotAttributeRequest(arg0
 }
 
 // ModifyDBClusterSnapshotAttributeWithContext mocks base method
-func (m *MockDocDBAPI) ModifyDBClusterSnapshotAttributeWithContext(arg0 aws.Context, arg1 *docdb.ModifyDBClusterSnapshotAttributeInput, arg2 ...request.Option) (*docdb.ModifyDBClusterSnapshotAttributeOutput, error) {
+func (m *MockDocDBAPI) ModifyDBClusterSnapshotAttributeWithContext(arg0 context.Context, arg1 *docdb.ModifyDBClusterSnapshotAttributeInput, arg2 ...request.Option) (*docdb.ModifyDBClusterSnapshotAttributeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1814,7 +1814,7 @@ func (mr *MockDocDBAPIMockRecorder) ModifyDBClusterSnapshotAttributeWithContext(
 }
 
 // ModifyDBClusterWithContext mocks base method
-func (m *MockDocDBAPI) ModifyDBClusterWithContext(arg0 aws.Context, arg1 *docdb.ModifyDBClusterInput, arg2 ...request.Option) (*docdb.ModifyDBClusterOutput, error) {
+func (m *MockDocDBAPI) ModifyDBClusterWithContext(arg0 context.Context, arg1 *docdb.ModifyDBClusterInput, arg2 ...request.Option) (*docdb.ModifyDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1864,7 +1864,7 @@ func (mr *MockDocDBAPIMockRecorder) ModifyDBInstanceRequest(arg0 interface{}) *g
 }
 
 // ModifyDBInstanceWithContext mocks base method
-func (m *MockDocDBAPI) ModifyDBInstanceWithContext(arg0 aws.Context, arg1 *docdb.ModifyDBInstanceInput, arg2 ...request.Option) (*docdb.ModifyDBInstanceOutput, error) {
+func (m *MockDocDBAPI) ModifyDBInstanceWithContext(arg0 context.Context, arg1 *docdb.ModifyDBInstanceInput, arg2 ...request.Option) (*docdb.ModifyDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1914,7 +1914,7 @@ func (mr *MockDocDBAPIMockRecorder) ModifyDBSubnetGroupRequest(arg0 interface{})
 }
 
 // ModifyDBSubnetGroupWithContext mocks base method
-func (m *MockDocDBAPI) ModifyDBSubnetGroupWithContext(arg0 aws.Context, arg1 *docdb.ModifyDBSubnetGroupInput, arg2 ...request.Option) (*docdb.ModifyDBSubnetGroupOutput, error) {
+func (m *MockDocDBAPI) ModifyDBSubnetGroupWithContext(arg0 context.Context, arg1 *docdb.ModifyDBSubnetGroupInput, arg2 ...request.Option) (*docdb.ModifyDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1964,7 +1964,7 @@ func (mr *MockDocDBAPIMockRecorder) RebootDBInstanceRequest(arg0 interface{}) *g
 }
 
 // RebootDBInstanceWithContext mocks base method
-func (m *MockDocDBAPI) RebootDBInstanceWithContext(arg0 aws.Context, arg1 *docdb.RebootDBInstanceInput, arg2 ...request.Option) (*docdb.RebootDBInstanceOutput, error) {
+func (m *MockDocDBAPI) RebootDBInstanceWithContext(arg0 context.Context, arg1 *docdb.RebootDBInstanceInput, arg2 ...request.Option) (*docdb.RebootDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2014,7 +2014,7 @@ func (mr *MockDocDBAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interface
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockDocDBAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *docdb.RemoveTagsFromResourceInput, arg2 ...request.Option) (*docdb.RemoveTagsFromResourceOutput, error) {
+func (m *MockDocDBAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *docdb.RemoveTagsFromResourceInput, arg2 ...request.Option) (*docdb.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2064,7 +2064,7 @@ func (mr *MockDocDBAPIMockRecorder) ResetDBClusterParameterGroupRequest(arg0 int
 }
 
 // ResetDBClusterParameterGroupWithContext mocks base method
-func (m *MockDocDBAPI) ResetDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *docdb.ResetDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.ResetDBClusterParameterGroupOutput, error) {
+func (m *MockDocDBAPI) ResetDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *docdb.ResetDBClusterParameterGroupInput, arg2 ...request.Option) (*docdb.ResetDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2114,7 +2114,7 @@ func (mr *MockDocDBAPIMockRecorder) RestoreDBClusterFromSnapshotRequest(arg0 int
 }
 
 // RestoreDBClusterFromSnapshotWithContext mocks base method
-func (m *MockDocDBAPI) RestoreDBClusterFromSnapshotWithContext(arg0 aws.Context, arg1 *docdb.RestoreDBClusterFromSnapshotInput, arg2 ...request.Option) (*docdb.RestoreDBClusterFromSnapshotOutput, error) {
+func (m *MockDocDBAPI) RestoreDBClusterFromSnapshotWithContext(arg0 context.Context, arg1 *docdb.RestoreDBClusterFromSnapshotInput, arg2 ...request.Option) (*docdb.RestoreDBClusterFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2164,7 +2164,7 @@ func (mr *MockDocDBAPIMockRecorder) RestoreDBClusterToPointInTimeRequest(arg0 in
 }
 
 // RestoreDBClusterToPointInTimeWithContext mocks base method
-func (m *MockDocDBAPI) RestoreDBClusterToPointInTimeWithContext(arg0 aws.Context, arg1 *docdb.RestoreDBClusterToPointInTimeInput, arg2 ...request.Option) (*docdb.RestoreDBClusterToPointInTimeOutput, error) {
+func (m *MockDocDBAPI) RestoreDBClusterToPointInTimeWithContext(arg0 context.Context, arg1 *docdb.RestoreDBClusterToPointInTimeInput, arg2 ...request.Option) (*docdb.RestoreDBClusterToPointInTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2198,7 +2198,7 @@ func (mr *MockDocDBAPIMockRecorder) WaitUntilDBInstanceAvailable(arg0 interface{
 }
 
 // WaitUntilDBInstanceAvailableWithContext mocks base method
-func (m *MockDocDBAPI) WaitUntilDBInstanceAvailableWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockDocDBAPI) WaitUntilDBInstanceAvailableWithContext(arg0 context.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2231,7 +2231,7 @@ func (mr *MockDocDBAPIMockRecorder) WaitUntilDBInstanceDeleted(arg0 interface{})
 }
 
 // WaitUntilDBInstanceDeletedWithContext mocks base method
-func (m *MockDocDBAPI) WaitUntilDBInstanceDeletedWithContext(arg0 aws.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockDocDBAPI) WaitUntilDBInstanceDeletedWithContext(arg0 context.Context, arg1 *docdb.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

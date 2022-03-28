@@ -5,7 +5,7 @@
 package directconnectmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	directconnect "github.com/aws/aws-sdk-go/service/directconnect"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AllocateConnectionOnInterconnectRequ
 }
 
 // AllocateConnectionOnInterconnectWithContext mocks base method
-func (m *MockDirectConnectAPI) AllocateConnectionOnInterconnectWithContext(arg0 aws.Context, arg1 *directconnect.AllocateConnectionOnInterconnectInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) AllocateConnectionOnInterconnectWithContext(arg0 context.Context, arg1 *directconnect.AllocateConnectionOnInterconnectInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AllocateHostedConnectionRequest(arg0
 }
 
 // AllocateHostedConnectionWithContext mocks base method
-func (m *MockDirectConnectAPI) AllocateHostedConnectionWithContext(arg0 aws.Context, arg1 *directconnect.AllocateHostedConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) AllocateHostedConnectionWithContext(arg0 context.Context, arg1 *directconnect.AllocateHostedConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AllocatePrivateVirtualInterfaceReque
 }
 
 // AllocatePrivateVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) AllocatePrivateVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.AllocatePrivateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
+func (m *MockDirectConnectAPI) AllocatePrivateVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.AllocatePrivateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AllocatePublicVirtualInterfaceReques
 }
 
 // AllocatePublicVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) AllocatePublicVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.AllocatePublicVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
+func (m *MockDirectConnectAPI) AllocatePublicVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.AllocatePublicVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AssociateConnectionWithLagRequest(ar
 }
 
 // AssociateConnectionWithLagWithContext mocks base method
-func (m *MockDirectConnectAPI) AssociateConnectionWithLagWithContext(arg0 aws.Context, arg1 *directconnect.AssociateConnectionWithLagInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) AssociateConnectionWithLagWithContext(arg0 context.Context, arg1 *directconnect.AssociateConnectionWithLagInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AssociateHostedConnectionRequest(arg
 }
 
 // AssociateHostedConnectionWithContext mocks base method
-func (m *MockDirectConnectAPI) AssociateHostedConnectionWithContext(arg0 aws.Context, arg1 *directconnect.AssociateHostedConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) AssociateHostedConnectionWithContext(arg0 context.Context, arg1 *directconnect.AssociateHostedConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDirectConnectAPIMockRecorder) AssociateVirtualInterfaceRequest(arg
 }
 
 // AssociateVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) AssociateVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.AssociateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
+func (m *MockDirectConnectAPI) AssociateVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.AssociateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDirectConnectAPIMockRecorder) ConfirmConnectionRequest(arg0 interf
 }
 
 // ConfirmConnectionWithContext mocks base method
-func (m *MockDirectConnectAPI) ConfirmConnectionWithContext(arg0 aws.Context, arg1 *directconnect.ConfirmConnectionInput, arg2 ...request.Option) (*directconnect.ConfirmConnectionOutput, error) {
+func (m *MockDirectConnectAPI) ConfirmConnectionWithContext(arg0 context.Context, arg1 *directconnect.ConfirmConnectionInput, arg2 ...request.Option) (*directconnect.ConfirmConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDirectConnectAPIMockRecorder) ConfirmPrivateVirtualInterfaceReques
 }
 
 // ConfirmPrivateVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) ConfirmPrivateVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.ConfirmPrivateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.ConfirmPrivateVirtualInterfaceOutput, error) {
+func (m *MockDirectConnectAPI) ConfirmPrivateVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.ConfirmPrivateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.ConfirmPrivateVirtualInterfaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockDirectConnectAPIMockRecorder) ConfirmPublicVirtualInterfaceRequest
 }
 
 // ConfirmPublicVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) ConfirmPublicVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.ConfirmPublicVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.ConfirmPublicVirtualInterfaceOutput, error) {
+func (m *MockDirectConnectAPI) ConfirmPublicVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.ConfirmPublicVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.ConfirmPublicVirtualInterfaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreateBGPPeerRequest(arg0 interface{
 }
 
 // CreateBGPPeerWithContext mocks base method
-func (m *MockDirectConnectAPI) CreateBGPPeerWithContext(arg0 aws.Context, arg1 *directconnect.CreateBGPPeerInput, arg2 ...request.Option) (*directconnect.CreateBGPPeerOutput, error) {
+func (m *MockDirectConnectAPI) CreateBGPPeerWithContext(arg0 context.Context, arg1 *directconnect.CreateBGPPeerInput, arg2 ...request.Option) (*directconnect.CreateBGPPeerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreateConnectionRequest(arg0 interfa
 }
 
 // CreateConnectionWithContext mocks base method
-func (m *MockDirectConnectAPI) CreateConnectionWithContext(arg0 aws.Context, arg1 *directconnect.CreateConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) CreateConnectionWithContext(arg0 context.Context, arg1 *directconnect.CreateConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -681,7 +681,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreateDirectConnectGatewayAssociatio
 }
 
 // CreateDirectConnectGatewayAssociationWithContext mocks base method
-func (m *MockDirectConnectAPI) CreateDirectConnectGatewayAssociationWithContext(arg0 aws.Context, arg1 *directconnect.CreateDirectConnectGatewayAssociationInput, arg2 ...request.Option) (*directconnect.CreateDirectConnectGatewayAssociationOutput, error) {
+func (m *MockDirectConnectAPI) CreateDirectConnectGatewayAssociationWithContext(arg0 context.Context, arg1 *directconnect.CreateDirectConnectGatewayAssociationInput, arg2 ...request.Option) (*directconnect.CreateDirectConnectGatewayAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreateDirectConnectGatewayRequest(ar
 }
 
 // CreateDirectConnectGatewayWithContext mocks base method
-func (m *MockDirectConnectAPI) CreateDirectConnectGatewayWithContext(arg0 aws.Context, arg1 *directconnect.CreateDirectConnectGatewayInput, arg2 ...request.Option) (*directconnect.CreateDirectConnectGatewayOutput, error) {
+func (m *MockDirectConnectAPI) CreateDirectConnectGatewayWithContext(arg0 context.Context, arg1 *directconnect.CreateDirectConnectGatewayInput, arg2 ...request.Option) (*directconnect.CreateDirectConnectGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreateInterconnectRequest(arg0 inter
 }
 
 // CreateInterconnectWithContext mocks base method
-func (m *MockDirectConnectAPI) CreateInterconnectWithContext(arg0 aws.Context, arg1 *directconnect.CreateInterconnectInput, arg2 ...request.Option) (*directconnect.Interconnect, error) {
+func (m *MockDirectConnectAPI) CreateInterconnectWithContext(arg0 context.Context, arg1 *directconnect.CreateInterconnectInput, arg2 ...request.Option) (*directconnect.Interconnect, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreateLagRequest(arg0 interface{}) *
 }
 
 // CreateLagWithContext mocks base method
-func (m *MockDirectConnectAPI) CreateLagWithContext(arg0 aws.Context, arg1 *directconnect.CreateLagInput, arg2 ...request.Option) (*directconnect.Lag, error) {
+func (m *MockDirectConnectAPI) CreateLagWithContext(arg0 context.Context, arg1 *directconnect.CreateLagInput, arg2 ...request.Option) (*directconnect.Lag, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreatePrivateVirtualInterfaceRequest
 }
 
 // CreatePrivateVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) CreatePrivateVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.CreatePrivateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
+func (m *MockDirectConnectAPI) CreatePrivateVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.CreatePrivateVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockDirectConnectAPIMockRecorder) CreatePublicVirtualInterfaceRequest(
 }
 
 // CreatePublicVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) CreatePublicVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.CreatePublicVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
+func (m *MockDirectConnectAPI) CreatePublicVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.CreatePublicVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.VirtualInterface, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteBGPPeerRequest(arg0 interface{
 }
 
 // DeleteBGPPeerWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteBGPPeerWithContext(arg0 aws.Context, arg1 *directconnect.DeleteBGPPeerInput, arg2 ...request.Option) (*directconnect.DeleteBGPPeerOutput, error) {
+func (m *MockDirectConnectAPI) DeleteBGPPeerWithContext(arg0 context.Context, arg1 *directconnect.DeleteBGPPeerInput, arg2 ...request.Option) (*directconnect.DeleteBGPPeerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteConnectionRequest(arg0 interfa
 }
 
 // DeleteConnectionWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteConnectionWithContext(arg0 aws.Context, arg1 *directconnect.DeleteConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) DeleteConnectionWithContext(arg0 context.Context, arg1 *directconnect.DeleteConnectionInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1081,7 +1081,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteDirectConnectGatewayAssociatio
 }
 
 // DeleteDirectConnectGatewayAssociationWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteDirectConnectGatewayAssociationWithContext(arg0 aws.Context, arg1 *directconnect.DeleteDirectConnectGatewayAssociationInput, arg2 ...request.Option) (*directconnect.DeleteDirectConnectGatewayAssociationOutput, error) {
+func (m *MockDirectConnectAPI) DeleteDirectConnectGatewayAssociationWithContext(arg0 context.Context, arg1 *directconnect.DeleteDirectConnectGatewayAssociationInput, arg2 ...request.Option) (*directconnect.DeleteDirectConnectGatewayAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteDirectConnectGatewayRequest(ar
 }
 
 // DeleteDirectConnectGatewayWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteDirectConnectGatewayWithContext(arg0 aws.Context, arg1 *directconnect.DeleteDirectConnectGatewayInput, arg2 ...request.Option) (*directconnect.DeleteDirectConnectGatewayOutput, error) {
+func (m *MockDirectConnectAPI) DeleteDirectConnectGatewayWithContext(arg0 context.Context, arg1 *directconnect.DeleteDirectConnectGatewayInput, arg2 ...request.Option) (*directconnect.DeleteDirectConnectGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteInterconnectRequest(arg0 inter
 }
 
 // DeleteInterconnectWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteInterconnectWithContext(arg0 aws.Context, arg1 *directconnect.DeleteInterconnectInput, arg2 ...request.Option) (*directconnect.DeleteInterconnectOutput, error) {
+func (m *MockDirectConnectAPI) DeleteInterconnectWithContext(arg0 context.Context, arg1 *directconnect.DeleteInterconnectInput, arg2 ...request.Option) (*directconnect.DeleteInterconnectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteLagRequest(arg0 interface{}) *
 }
 
 // DeleteLagWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteLagWithContext(arg0 aws.Context, arg1 *directconnect.DeleteLagInput, arg2 ...request.Option) (*directconnect.Lag, error) {
+func (m *MockDirectConnectAPI) DeleteLagWithContext(arg0 context.Context, arg1 *directconnect.DeleteLagInput, arg2 ...request.Option) (*directconnect.Lag, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DeleteVirtualInterfaceRequest(arg0 i
 }
 
 // DeleteVirtualInterfaceWithContext mocks base method
-func (m *MockDirectConnectAPI) DeleteVirtualInterfaceWithContext(arg0 aws.Context, arg1 *directconnect.DeleteVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.DeleteVirtualInterfaceOutput, error) {
+func (m *MockDirectConnectAPI) DeleteVirtualInterfaceWithContext(arg0 context.Context, arg1 *directconnect.DeleteVirtualInterfaceInput, arg2 ...request.Option) (*directconnect.DeleteVirtualInterfaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeConnectionLoaRequest(arg0 in
 }
 
 // DescribeConnectionLoaWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeConnectionLoaWithContext(arg0 aws.Context, arg1 *directconnect.DescribeConnectionLoaInput, arg2 ...request.Option) (*directconnect.DescribeConnectionLoaOutput, error) {
+func (m *MockDirectConnectAPI) DescribeConnectionLoaWithContext(arg0 context.Context, arg1 *directconnect.DescribeConnectionLoaInput, arg2 ...request.Option) (*directconnect.DescribeConnectionLoaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeConnectionsOnInterconnectReq
 }
 
 // DescribeConnectionsOnInterconnectWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeConnectionsOnInterconnectWithContext(arg0 aws.Context, arg1 *directconnect.DescribeConnectionsOnInterconnectInput, arg2 ...request.Option) (*directconnect.Connections, error) {
+func (m *MockDirectConnectAPI) DescribeConnectionsOnInterconnectWithContext(arg0 context.Context, arg1 *directconnect.DescribeConnectionsOnInterconnectInput, arg2 ...request.Option) (*directconnect.Connections, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeConnectionsRequest(arg0 inte
 }
 
 // DescribeConnectionsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeConnectionsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeConnectionsInput, arg2 ...request.Option) (*directconnect.Connections, error) {
+func (m *MockDirectConnectAPI) DescribeConnectionsWithContext(arg0 context.Context, arg1 *directconnect.DescribeConnectionsInput, arg2 ...request.Option) (*directconnect.Connections, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeDirectConnectGatewayAssociat
 }
 
 // DescribeDirectConnectGatewayAssociationsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeDirectConnectGatewayAssociationsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeDirectConnectGatewayAssociationsInput, arg2 ...request.Option) (*directconnect.DescribeDirectConnectGatewayAssociationsOutput, error) {
+func (m *MockDirectConnectAPI) DescribeDirectConnectGatewayAssociationsWithContext(arg0 context.Context, arg1 *directconnect.DescribeDirectConnectGatewayAssociationsInput, arg2 ...request.Option) (*directconnect.DescribeDirectConnectGatewayAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeDirectConnectGatewayAttachme
 }
 
 // DescribeDirectConnectGatewayAttachmentsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeDirectConnectGatewayAttachmentsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeDirectConnectGatewayAttachmentsInput, arg2 ...request.Option) (*directconnect.DescribeDirectConnectGatewayAttachmentsOutput, error) {
+func (m *MockDirectConnectAPI) DescribeDirectConnectGatewayAttachmentsWithContext(arg0 context.Context, arg1 *directconnect.DescribeDirectConnectGatewayAttachmentsInput, arg2 ...request.Option) (*directconnect.DescribeDirectConnectGatewayAttachmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeDirectConnectGatewaysRequest
 }
 
 // DescribeDirectConnectGatewaysWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeDirectConnectGatewaysWithContext(arg0 aws.Context, arg1 *directconnect.DescribeDirectConnectGatewaysInput, arg2 ...request.Option) (*directconnect.DescribeDirectConnectGatewaysOutput, error) {
+func (m *MockDirectConnectAPI) DescribeDirectConnectGatewaysWithContext(arg0 context.Context, arg1 *directconnect.DescribeDirectConnectGatewaysInput, arg2 ...request.Option) (*directconnect.DescribeDirectConnectGatewaysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeHostedConnectionsRequest(arg
 }
 
 // DescribeHostedConnectionsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeHostedConnectionsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeHostedConnectionsInput, arg2 ...request.Option) (*directconnect.Connections, error) {
+func (m *MockDirectConnectAPI) DescribeHostedConnectionsWithContext(arg0 context.Context, arg1 *directconnect.DescribeHostedConnectionsInput, arg2 ...request.Option) (*directconnect.Connections, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeInterconnectLoaRequest(arg0 
 }
 
 // DescribeInterconnectLoaWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeInterconnectLoaWithContext(arg0 aws.Context, arg1 *directconnect.DescribeInterconnectLoaInput, arg2 ...request.Option) (*directconnect.DescribeInterconnectLoaOutput, error) {
+func (m *MockDirectConnectAPI) DescribeInterconnectLoaWithContext(arg0 context.Context, arg1 *directconnect.DescribeInterconnectLoaInput, arg2 ...request.Option) (*directconnect.DescribeInterconnectLoaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeInterconnectsRequest(arg0 in
 }
 
 // DescribeInterconnectsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeInterconnectsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeInterconnectsInput, arg2 ...request.Option) (*directconnect.DescribeInterconnectsOutput, error) {
+func (m *MockDirectConnectAPI) DescribeInterconnectsWithContext(arg0 context.Context, arg1 *directconnect.DescribeInterconnectsInput, arg2 ...request.Option) (*directconnect.DescribeInterconnectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeLagsRequest(arg0 interface{}
 }
 
 // DescribeLagsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeLagsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeLagsInput, arg2 ...request.Option) (*directconnect.DescribeLagsOutput, error) {
+func (m *MockDirectConnectAPI) DescribeLagsWithContext(arg0 context.Context, arg1 *directconnect.DescribeLagsInput, arg2 ...request.Option) (*directconnect.DescribeLagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeLoaRequest(arg0 interface{})
 }
 
 // DescribeLoaWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeLoaWithContext(arg0 aws.Context, arg1 *directconnect.DescribeLoaInput, arg2 ...request.Option) (*directconnect.Loa, error) {
+func (m *MockDirectConnectAPI) DescribeLoaWithContext(arg0 context.Context, arg1 *directconnect.DescribeLoaInput, arg2 ...request.Option) (*directconnect.Loa, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeLocationsRequest(arg0 interf
 }
 
 // DescribeLocationsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeLocationsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeLocationsInput, arg2 ...request.Option) (*directconnect.DescribeLocationsOutput, error) {
+func (m *MockDirectConnectAPI) DescribeLocationsWithContext(arg0 context.Context, arg1 *directconnect.DescribeLocationsInput, arg2 ...request.Option) (*directconnect.DescribeLocationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeTagsRequest(arg0 interface{}
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *directconnect.DescribeTagsInput, arg2 ...request.Option) (*directconnect.DescribeTagsOutput, error) {
+func (m *MockDirectConnectAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *directconnect.DescribeTagsInput, arg2 ...request.Option) (*directconnect.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeVirtualGatewaysRequest(arg0 
 }
 
 // DescribeVirtualGatewaysWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeVirtualGatewaysWithContext(arg0 aws.Context, arg1 *directconnect.DescribeVirtualGatewaysInput, arg2 ...request.Option) (*directconnect.DescribeVirtualGatewaysOutput, error) {
+func (m *MockDirectConnectAPI) DescribeVirtualGatewaysWithContext(arg0 context.Context, arg1 *directconnect.DescribeVirtualGatewaysInput, arg2 ...request.Option) (*directconnect.DescribeVirtualGatewaysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DescribeVirtualInterfacesRequest(arg
 }
 
 // DescribeVirtualInterfacesWithContext mocks base method
-func (m *MockDirectConnectAPI) DescribeVirtualInterfacesWithContext(arg0 aws.Context, arg1 *directconnect.DescribeVirtualInterfacesInput, arg2 ...request.Option) (*directconnect.DescribeVirtualInterfacesOutput, error) {
+func (m *MockDirectConnectAPI) DescribeVirtualInterfacesWithContext(arg0 context.Context, arg1 *directconnect.DescribeVirtualInterfacesInput, arg2 ...request.Option) (*directconnect.DescribeVirtualInterfacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockDirectConnectAPIMockRecorder) DisassociateConnectionFromLagRequest
 }
 
 // DisassociateConnectionFromLagWithContext mocks base method
-func (m *MockDirectConnectAPI) DisassociateConnectionFromLagWithContext(arg0 aws.Context, arg1 *directconnect.DisassociateConnectionFromLagInput, arg2 ...request.Option) (*directconnect.Connection, error) {
+func (m *MockDirectConnectAPI) DisassociateConnectionFromLagWithContext(arg0 context.Context, arg1 *directconnect.DisassociateConnectionFromLagInput, arg2 ...request.Option) (*directconnect.Connection, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockDirectConnectAPIMockRecorder) TagResourceRequest(arg0 interface{})
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockDirectConnectAPI) TagResourceWithContext(arg0 aws.Context, arg1 *directconnect.TagResourceInput, arg2 ...request.Option) (*directconnect.TagResourceOutput, error) {
+func (m *MockDirectConnectAPI) TagResourceWithContext(arg0 context.Context, arg1 *directconnect.TagResourceInput, arg2 ...request.Option) (*directconnect.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockDirectConnectAPIMockRecorder) UntagResourceRequest(arg0 interface{
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockDirectConnectAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *directconnect.UntagResourceInput, arg2 ...request.Option) (*directconnect.UntagResourceOutput, error) {
+func (m *MockDirectConnectAPI) UntagResourceWithContext(arg0 context.Context, arg1 *directconnect.UntagResourceInput, arg2 ...request.Option) (*directconnect.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockDirectConnectAPIMockRecorder) UpdateLagRequest(arg0 interface{}) *
 }
 
 // UpdateLagWithContext mocks base method
-func (m *MockDirectConnectAPI) UpdateLagWithContext(arg0 aws.Context, arg1 *directconnect.UpdateLagInput, arg2 ...request.Option) (*directconnect.Lag, error) {
+func (m *MockDirectConnectAPI) UpdateLagWithContext(arg0 context.Context, arg1 *directconnect.UpdateLagInput, arg2 ...request.Option) (*directconnect.Lag, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockDirectConnectAPIMockRecorder) UpdateVirtualInterfaceAttributesRequ
 }
 
 // UpdateVirtualInterfaceAttributesWithContext mocks base method
-func (m *MockDirectConnectAPI) UpdateVirtualInterfaceAttributesWithContext(arg0 aws.Context, arg1 *directconnect.UpdateVirtualInterfaceAttributesInput, arg2 ...request.Option) (*directconnect.UpdateVirtualInterfaceAttributesOutput, error) {
+func (m *MockDirectConnectAPI) UpdateVirtualInterfaceAttributesWithContext(arg0 context.Context, arg1 *directconnect.UpdateVirtualInterfaceAttributesInput, arg2 ...request.Option) (*directconnect.UpdateVirtualInterfaceAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

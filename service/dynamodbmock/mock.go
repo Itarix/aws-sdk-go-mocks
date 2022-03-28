@@ -5,7 +5,7 @@
 package dynamodbmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	dynamodb "github.com/aws/aws-sdk-go/service/dynamodb"
 	gomock "github.com/golang/mock/gomock"
@@ -65,7 +65,7 @@ func (mr *MockDynamoDBAPIMockRecorder) BatchGetItemPages(arg0, arg1 interface{})
 }
 
 // BatchGetItemPagesWithContext mocks base method
-func (m *MockDynamoDBAPI) BatchGetItemPagesWithContext(arg0 aws.Context, arg1 *dynamodb.BatchGetItemInput, arg2 func(*dynamodb.BatchGetItemOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDynamoDBAPI) BatchGetItemPagesWithContext(arg0 context.Context, arg1 *dynamodb.BatchGetItemInput, arg2 func(*dynamodb.BatchGetItemOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -99,7 +99,7 @@ func (mr *MockDynamoDBAPIMockRecorder) BatchGetItemRequest(arg0 interface{}) *go
 }
 
 // BatchGetItemWithContext mocks base method
-func (m *MockDynamoDBAPI) BatchGetItemWithContext(arg0 aws.Context, arg1 *dynamodb.BatchGetItemInput, arg2 ...request.Option) (*dynamodb.BatchGetItemOutput, error) {
+func (m *MockDynamoDBAPI) BatchGetItemWithContext(arg0 context.Context, arg1 *dynamodb.BatchGetItemInput, arg2 ...request.Option) (*dynamodb.BatchGetItemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -149,7 +149,7 @@ func (mr *MockDynamoDBAPIMockRecorder) BatchWriteItemRequest(arg0 interface{}) *
 }
 
 // BatchWriteItemWithContext mocks base method
-func (m *MockDynamoDBAPI) BatchWriteItemWithContext(arg0 aws.Context, arg1 *dynamodb.BatchWriteItemInput, arg2 ...request.Option) (*dynamodb.BatchWriteItemOutput, error) {
+func (m *MockDynamoDBAPI) BatchWriteItemWithContext(arg0 context.Context, arg1 *dynamodb.BatchWriteItemInput, arg2 ...request.Option) (*dynamodb.BatchWriteItemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -199,7 +199,7 @@ func (mr *MockDynamoDBAPIMockRecorder) CreateBackupRequest(arg0 interface{}) *go
 }
 
 // CreateBackupWithContext mocks base method
-func (m *MockDynamoDBAPI) CreateBackupWithContext(arg0 aws.Context, arg1 *dynamodb.CreateBackupInput, arg2 ...request.Option) (*dynamodb.CreateBackupOutput, error) {
+func (m *MockDynamoDBAPI) CreateBackupWithContext(arg0 context.Context, arg1 *dynamodb.CreateBackupInput, arg2 ...request.Option) (*dynamodb.CreateBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -249,7 +249,7 @@ func (mr *MockDynamoDBAPIMockRecorder) CreateGlobalTableRequest(arg0 interface{}
 }
 
 // CreateGlobalTableWithContext mocks base method
-func (m *MockDynamoDBAPI) CreateGlobalTableWithContext(arg0 aws.Context, arg1 *dynamodb.CreateGlobalTableInput, arg2 ...request.Option) (*dynamodb.CreateGlobalTableOutput, error) {
+func (m *MockDynamoDBAPI) CreateGlobalTableWithContext(arg0 context.Context, arg1 *dynamodb.CreateGlobalTableInput, arg2 ...request.Option) (*dynamodb.CreateGlobalTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -299,7 +299,7 @@ func (mr *MockDynamoDBAPIMockRecorder) CreateTableRequest(arg0 interface{}) *gom
 }
 
 // CreateTableWithContext mocks base method
-func (m *MockDynamoDBAPI) CreateTableWithContext(arg0 aws.Context, arg1 *dynamodb.CreateTableInput, arg2 ...request.Option) (*dynamodb.CreateTableOutput, error) {
+func (m *MockDynamoDBAPI) CreateTableWithContext(arg0 context.Context, arg1 *dynamodb.CreateTableInput, arg2 ...request.Option) (*dynamodb.CreateTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -349,7 +349,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DeleteBackupRequest(arg0 interface{}) *go
 }
 
 // DeleteBackupWithContext mocks base method
-func (m *MockDynamoDBAPI) DeleteBackupWithContext(arg0 aws.Context, arg1 *dynamodb.DeleteBackupInput, arg2 ...request.Option) (*dynamodb.DeleteBackupOutput, error) {
+func (m *MockDynamoDBAPI) DeleteBackupWithContext(arg0 context.Context, arg1 *dynamodb.DeleteBackupInput, arg2 ...request.Option) (*dynamodb.DeleteBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -399,7 +399,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DeleteItemRequest(arg0 interface{}) *gomo
 }
 
 // DeleteItemWithContext mocks base method
-func (m *MockDynamoDBAPI) DeleteItemWithContext(arg0 aws.Context, arg1 *dynamodb.DeleteItemInput, arg2 ...request.Option) (*dynamodb.DeleteItemOutput, error) {
+func (m *MockDynamoDBAPI) DeleteItemWithContext(arg0 context.Context, arg1 *dynamodb.DeleteItemInput, arg2 ...request.Option) (*dynamodb.DeleteItemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DeleteTableRequest(arg0 interface{}) *gom
 }
 
 // DeleteTableWithContext mocks base method
-func (m *MockDynamoDBAPI) DeleteTableWithContext(arg0 aws.Context, arg1 *dynamodb.DeleteTableInput, arg2 ...request.Option) (*dynamodb.DeleteTableOutput, error) {
+func (m *MockDynamoDBAPI) DeleteTableWithContext(arg0 context.Context, arg1 *dynamodb.DeleteTableInput, arg2 ...request.Option) (*dynamodb.DeleteTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeBackupRequest(arg0 interface{}) *
 }
 
 // DescribeBackupWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeBackupWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeBackupInput, arg2 ...request.Option) (*dynamodb.DescribeBackupOutput, error) {
+func (m *MockDynamoDBAPI) DescribeBackupWithContext(arg0 context.Context, arg1 *dynamodb.DescribeBackupInput, arg2 ...request.Option) (*dynamodb.DescribeBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeContinuousBackupsRequest(arg0 int
 }
 
 // DescribeContinuousBackupsWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeContinuousBackupsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeContinuousBackupsInput, arg2 ...request.Option) (*dynamodb.DescribeContinuousBackupsOutput, error) {
+func (m *MockDynamoDBAPI) DescribeContinuousBackupsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeContinuousBackupsInput, arg2 ...request.Option) (*dynamodb.DescribeContinuousBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeEndpointsRequest(arg0 interface{}
 }
 
 // DescribeEndpointsWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeEndpointsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeEndpointsInput, arg2 ...request.Option) (*dynamodb.DescribeEndpointsOutput, error) {
+func (m *MockDynamoDBAPI) DescribeEndpointsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeEndpointsInput, arg2 ...request.Option) (*dynamodb.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,7 +679,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeGlobalTableSettingsRequest(arg0 i
 }
 
 // DescribeGlobalTableSettingsWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeGlobalTableSettingsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeGlobalTableSettingsInput, arg2 ...request.Option) (*dynamodb.DescribeGlobalTableSettingsOutput, error) {
+func (m *MockDynamoDBAPI) DescribeGlobalTableSettingsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeGlobalTableSettingsInput, arg2 ...request.Option) (*dynamodb.DescribeGlobalTableSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeGlobalTableSettingsWithContext(ar
 }
 
 // DescribeGlobalTableWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeGlobalTableWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeGlobalTableInput, arg2 ...request.Option) (*dynamodb.DescribeGlobalTableOutput, error) {
+func (m *MockDynamoDBAPI) DescribeGlobalTableWithContext(arg0 context.Context, arg1 *dynamodb.DescribeGlobalTableInput, arg2 ...request.Option) (*dynamodb.DescribeGlobalTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeLimitsRequest(arg0 interface{}) *
 }
 
 // DescribeLimitsWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeLimitsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeLimitsInput, arg2 ...request.Option) (*dynamodb.DescribeLimitsOutput, error) {
+func (m *MockDynamoDBAPI) DescribeLimitsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeLimitsInput, arg2 ...request.Option) (*dynamodb.DescribeLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -799,7 +799,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeTableRequest(arg0 interface{}) *g
 }
 
 // DescribeTableWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeTableWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeTableInput, arg2 ...request.Option) (*dynamodb.DescribeTableOutput, error) {
+func (m *MockDynamoDBAPI) DescribeTableWithContext(arg0 context.Context, arg1 *dynamodb.DescribeTableInput, arg2 ...request.Option) (*dynamodb.DescribeTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -849,7 +849,7 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeTimeToLiveRequest(arg0 interface{
 }
 
 // DescribeTimeToLiveWithContext mocks base method
-func (m *MockDynamoDBAPI) DescribeTimeToLiveWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeTimeToLiveInput, arg2 ...request.Option) (*dynamodb.DescribeTimeToLiveOutput, error) {
+func (m *MockDynamoDBAPI) DescribeTimeToLiveWithContext(arg0 context.Context, arg1 *dynamodb.DescribeTimeToLiveInput, arg2 ...request.Option) (*dynamodb.DescribeTimeToLiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -899,7 +899,7 @@ func (mr *MockDynamoDBAPIMockRecorder) GetItemRequest(arg0 interface{}) *gomock.
 }
 
 // GetItemWithContext mocks base method
-func (m *MockDynamoDBAPI) GetItemWithContext(arg0 aws.Context, arg1 *dynamodb.GetItemInput, arg2 ...request.Option) (*dynamodb.GetItemOutput, error) {
+func (m *MockDynamoDBAPI) GetItemWithContext(arg0 context.Context, arg1 *dynamodb.GetItemInput, arg2 ...request.Option) (*dynamodb.GetItemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -949,7 +949,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ListBackupsRequest(arg0 interface{}) *gom
 }
 
 // ListBackupsWithContext mocks base method
-func (m *MockDynamoDBAPI) ListBackupsWithContext(arg0 aws.Context, arg1 *dynamodb.ListBackupsInput, arg2 ...request.Option) (*dynamodb.ListBackupsOutput, error) {
+func (m *MockDynamoDBAPI) ListBackupsWithContext(arg0 context.Context, arg1 *dynamodb.ListBackupsInput, arg2 ...request.Option) (*dynamodb.ListBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -999,7 +999,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ListGlobalTablesRequest(arg0 interface{})
 }
 
 // ListGlobalTablesWithContext mocks base method
-func (m *MockDynamoDBAPI) ListGlobalTablesWithContext(arg0 aws.Context, arg1 *dynamodb.ListGlobalTablesInput, arg2 ...request.Option) (*dynamodb.ListGlobalTablesOutput, error) {
+func (m *MockDynamoDBAPI) ListGlobalTablesWithContext(arg0 context.Context, arg1 *dynamodb.ListGlobalTablesInput, arg2 ...request.Option) (*dynamodb.ListGlobalTablesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ListTablesPages(arg0, arg1 interface{}) *
 }
 
 // ListTablesPagesWithContext mocks base method
-func (m *MockDynamoDBAPI) ListTablesPagesWithContext(arg0 aws.Context, arg1 *dynamodb.ListTablesInput, arg2 func(*dynamodb.ListTablesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDynamoDBAPI) ListTablesPagesWithContext(arg0 context.Context, arg1 *dynamodb.ListTablesInput, arg2 func(*dynamodb.ListTablesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ListTablesRequest(arg0 interface{}) *gomo
 }
 
 // ListTablesWithContext mocks base method
-func (m *MockDynamoDBAPI) ListTablesWithContext(arg0 aws.Context, arg1 *dynamodb.ListTablesInput, arg2 ...request.Option) (*dynamodb.ListTablesOutput, error) {
+func (m *MockDynamoDBAPI) ListTablesWithContext(arg0 context.Context, arg1 *dynamodb.ListTablesInput, arg2 ...request.Option) (*dynamodb.ListTablesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1132,7 +1132,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ListTagsOfResourceRequest(arg0 interface{
 }
 
 // ListTagsOfResourceWithContext mocks base method
-func (m *MockDynamoDBAPI) ListTagsOfResourceWithContext(arg0 aws.Context, arg1 *dynamodb.ListTagsOfResourceInput, arg2 ...request.Option) (*dynamodb.ListTagsOfResourceOutput, error) {
+func (m *MockDynamoDBAPI) ListTagsOfResourceWithContext(arg0 context.Context, arg1 *dynamodb.ListTagsOfResourceInput, arg2 ...request.Option) (*dynamodb.ListTagsOfResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1182,7 +1182,7 @@ func (mr *MockDynamoDBAPIMockRecorder) PutItemRequest(arg0 interface{}) *gomock.
 }
 
 // PutItemWithContext mocks base method
-func (m *MockDynamoDBAPI) PutItemWithContext(arg0 aws.Context, arg1 *dynamodb.PutItemInput, arg2 ...request.Option) (*dynamodb.PutItemOutput, error) {
+func (m *MockDynamoDBAPI) PutItemWithContext(arg0 context.Context, arg1 *dynamodb.PutItemInput, arg2 ...request.Option) (*dynamodb.PutItemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockDynamoDBAPIMockRecorder) QueryPages(arg0, arg1 interface{}) *gomoc
 }
 
 // QueryPagesWithContext mocks base method
-func (m *MockDynamoDBAPI) QueryPagesWithContext(arg0 aws.Context, arg1 *dynamodb.QueryInput, arg2 func(*dynamodb.QueryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDynamoDBAPI) QueryPagesWithContext(arg0 context.Context, arg1 *dynamodb.QueryInput, arg2 func(*dynamodb.QueryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1265,7 +1265,7 @@ func (mr *MockDynamoDBAPIMockRecorder) QueryRequest(arg0 interface{}) *gomock.Ca
 }
 
 // QueryWithContext mocks base method
-func (m *MockDynamoDBAPI) QueryWithContext(arg0 aws.Context, arg1 *dynamodb.QueryInput, arg2 ...request.Option) (*dynamodb.QueryOutput, error) {
+func (m *MockDynamoDBAPI) QueryWithContext(arg0 context.Context, arg1 *dynamodb.QueryInput, arg2 ...request.Option) (*dynamodb.QueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockDynamoDBAPIMockRecorder) RestoreTableFromBackupRequest(arg0 interf
 }
 
 // RestoreTableFromBackupWithContext mocks base method
-func (m *MockDynamoDBAPI) RestoreTableFromBackupWithContext(arg0 aws.Context, arg1 *dynamodb.RestoreTableFromBackupInput, arg2 ...request.Option) (*dynamodb.RestoreTableFromBackupOutput, error) {
+func (m *MockDynamoDBAPI) RestoreTableFromBackupWithContext(arg0 context.Context, arg1 *dynamodb.RestoreTableFromBackupInput, arg2 ...request.Option) (*dynamodb.RestoreTableFromBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockDynamoDBAPIMockRecorder) RestoreTableToPointInTimeRequest(arg0 int
 }
 
 // RestoreTableToPointInTimeWithContext mocks base method
-func (m *MockDynamoDBAPI) RestoreTableToPointInTimeWithContext(arg0 aws.Context, arg1 *dynamodb.RestoreTableToPointInTimeInput, arg2 ...request.Option) (*dynamodb.RestoreTableToPointInTimeOutput, error) {
+func (m *MockDynamoDBAPI) RestoreTableToPointInTimeWithContext(arg0 context.Context, arg1 *dynamodb.RestoreTableToPointInTimeInput, arg2 ...request.Option) (*dynamodb.RestoreTableToPointInTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1414,7 +1414,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ScanPages(arg0, arg1 interface{}) *gomock
 }
 
 // ScanPagesWithContext mocks base method
-func (m *MockDynamoDBAPI) ScanPagesWithContext(arg0 aws.Context, arg1 *dynamodb.ScanInput, arg2 func(*dynamodb.ScanOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDynamoDBAPI) ScanPagesWithContext(arg0 context.Context, arg1 *dynamodb.ScanInput, arg2 func(*dynamodb.ScanOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1448,7 +1448,7 @@ func (mr *MockDynamoDBAPIMockRecorder) ScanRequest(arg0 interface{}) *gomock.Cal
 }
 
 // ScanWithContext mocks base method
-func (m *MockDynamoDBAPI) ScanWithContext(arg0 aws.Context, arg1 *dynamodb.ScanInput, arg2 ...request.Option) (*dynamodb.ScanOutput, error) {
+func (m *MockDynamoDBAPI) ScanWithContext(arg0 context.Context, arg1 *dynamodb.ScanInput, arg2 ...request.Option) (*dynamodb.ScanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1498,7 +1498,7 @@ func (mr *MockDynamoDBAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gom
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockDynamoDBAPI) TagResourceWithContext(arg0 aws.Context, arg1 *dynamodb.TagResourceInput, arg2 ...request.Option) (*dynamodb.TagResourceOutput, error) {
+func (m *MockDynamoDBAPI) TagResourceWithContext(arg0 context.Context, arg1 *dynamodb.TagResourceInput, arg2 ...request.Option) (*dynamodb.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1548,7 +1548,7 @@ func (mr *MockDynamoDBAPIMockRecorder) TransactGetItemsRequest(arg0 interface{})
 }
 
 // TransactGetItemsWithContext mocks base method
-func (m *MockDynamoDBAPI) TransactGetItemsWithContext(arg0 aws.Context, arg1 *dynamodb.TransactGetItemsInput, arg2 ...request.Option) (*dynamodb.TransactGetItemsOutput, error) {
+func (m *MockDynamoDBAPI) TransactGetItemsWithContext(arg0 context.Context, arg1 *dynamodb.TransactGetItemsInput, arg2 ...request.Option) (*dynamodb.TransactGetItemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1598,7 +1598,7 @@ func (mr *MockDynamoDBAPIMockRecorder) TransactWriteItemsRequest(arg0 interface{
 }
 
 // TransactWriteItemsWithContext mocks base method
-func (m *MockDynamoDBAPI) TransactWriteItemsWithContext(arg0 aws.Context, arg1 *dynamodb.TransactWriteItemsInput, arg2 ...request.Option) (*dynamodb.TransactWriteItemsOutput, error) {
+func (m *MockDynamoDBAPI) TransactWriteItemsWithContext(arg0 context.Context, arg1 *dynamodb.TransactWriteItemsInput, arg2 ...request.Option) (*dynamodb.TransactWriteItemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1648,7 +1648,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *g
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockDynamoDBAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *dynamodb.UntagResourceInput, arg2 ...request.Option) (*dynamodb.UntagResourceOutput, error) {
+func (m *MockDynamoDBAPI) UntagResourceWithContext(arg0 context.Context, arg1 *dynamodb.UntagResourceInput, arg2 ...request.Option) (*dynamodb.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1698,7 +1698,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateContinuousBackupsRequest(arg0 inter
 }
 
 // UpdateContinuousBackupsWithContext mocks base method
-func (m *MockDynamoDBAPI) UpdateContinuousBackupsWithContext(arg0 aws.Context, arg1 *dynamodb.UpdateContinuousBackupsInput, arg2 ...request.Option) (*dynamodb.UpdateContinuousBackupsOutput, error) {
+func (m *MockDynamoDBAPI) UpdateContinuousBackupsWithContext(arg0 context.Context, arg1 *dynamodb.UpdateContinuousBackupsInput, arg2 ...request.Option) (*dynamodb.UpdateContinuousBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1778,7 +1778,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateGlobalTableSettingsRequest(arg0 int
 }
 
 // UpdateGlobalTableSettingsWithContext mocks base method
-func (m *MockDynamoDBAPI) UpdateGlobalTableSettingsWithContext(arg0 aws.Context, arg1 *dynamodb.UpdateGlobalTableSettingsInput, arg2 ...request.Option) (*dynamodb.UpdateGlobalTableSettingsOutput, error) {
+func (m *MockDynamoDBAPI) UpdateGlobalTableSettingsWithContext(arg0 context.Context, arg1 *dynamodb.UpdateGlobalTableSettingsInput, arg2 ...request.Option) (*dynamodb.UpdateGlobalTableSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1798,7 +1798,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateGlobalTableSettingsWithContext(arg0
 }
 
 // UpdateGlobalTableWithContext mocks base method
-func (m *MockDynamoDBAPI) UpdateGlobalTableWithContext(arg0 aws.Context, arg1 *dynamodb.UpdateGlobalTableInput, arg2 ...request.Option) (*dynamodb.UpdateGlobalTableOutput, error) {
+func (m *MockDynamoDBAPI) UpdateGlobalTableWithContext(arg0 context.Context, arg1 *dynamodb.UpdateGlobalTableInput, arg2 ...request.Option) (*dynamodb.UpdateGlobalTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1848,7 +1848,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateItemRequest(arg0 interface{}) *gomo
 }
 
 // UpdateItemWithContext mocks base method
-func (m *MockDynamoDBAPI) UpdateItemWithContext(arg0 aws.Context, arg1 *dynamodb.UpdateItemInput, arg2 ...request.Option) (*dynamodb.UpdateItemOutput, error) {
+func (m *MockDynamoDBAPI) UpdateItemWithContext(arg0 context.Context, arg1 *dynamodb.UpdateItemInput, arg2 ...request.Option) (*dynamodb.UpdateItemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1898,7 +1898,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateTableRequest(arg0 interface{}) *gom
 }
 
 // UpdateTableWithContext mocks base method
-func (m *MockDynamoDBAPI) UpdateTableWithContext(arg0 aws.Context, arg1 *dynamodb.UpdateTableInput, arg2 ...request.Option) (*dynamodb.UpdateTableOutput, error) {
+func (m *MockDynamoDBAPI) UpdateTableWithContext(arg0 context.Context, arg1 *dynamodb.UpdateTableInput, arg2 ...request.Option) (*dynamodb.UpdateTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1948,7 +1948,7 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateTimeToLiveRequest(arg0 interface{})
 }
 
 // UpdateTimeToLiveWithContext mocks base method
-func (m *MockDynamoDBAPI) UpdateTimeToLiveWithContext(arg0 aws.Context, arg1 *dynamodb.UpdateTimeToLiveInput, arg2 ...request.Option) (*dynamodb.UpdateTimeToLiveOutput, error) {
+func (m *MockDynamoDBAPI) UpdateTimeToLiveWithContext(arg0 context.Context, arg1 *dynamodb.UpdateTimeToLiveInput, arg2 ...request.Option) (*dynamodb.UpdateTimeToLiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1982,7 +1982,7 @@ func (mr *MockDynamoDBAPIMockRecorder) WaitUntilTableExists(arg0 interface{}) *g
 }
 
 // WaitUntilTableExistsWithContext mocks base method
-func (m *MockDynamoDBAPI) WaitUntilTableExistsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeTableInput, arg2 ...request.WaiterOption) error {
+func (m *MockDynamoDBAPI) WaitUntilTableExistsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeTableInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2015,7 +2015,7 @@ func (mr *MockDynamoDBAPIMockRecorder) WaitUntilTableNotExists(arg0 interface{})
 }
 
 // WaitUntilTableNotExistsWithContext mocks base method
-func (m *MockDynamoDBAPI) WaitUntilTableNotExistsWithContext(arg0 aws.Context, arg1 *dynamodb.DescribeTableInput, arg2 ...request.WaiterOption) error {
+func (m *MockDynamoDBAPI) WaitUntilTableNotExistsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeTableInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

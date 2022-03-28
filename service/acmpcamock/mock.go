@@ -5,7 +5,7 @@
 package acmpcamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	acmpca "github.com/aws/aws-sdk-go/service/acmpca"
 	gomock "github.com/golang/mock/gomock"
@@ -81,7 +81,7 @@ func (mr *MockACMPCAAPIMockRecorder) CreateCertificateAuthorityAuditReportReques
 }
 
 // CreateCertificateAuthorityAuditReportWithContext mocks base method
-func (m *MockACMPCAAPI) CreateCertificateAuthorityAuditReportWithContext(arg0 aws.Context, arg1 *acmpca.CreateCertificateAuthorityAuditReportInput, arg2 ...request.Option) (*acmpca.CreateCertificateAuthorityAuditReportOutput, error) {
+func (m *MockACMPCAAPI) CreateCertificateAuthorityAuditReportWithContext(arg0 context.Context, arg1 *acmpca.CreateCertificateAuthorityAuditReportInput, arg2 ...request.Option) (*acmpca.CreateCertificateAuthorityAuditReportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockACMPCAAPIMockRecorder) CreateCertificateAuthorityRequest(arg0 inte
 }
 
 // CreateCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) CreateCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.CreateCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.CreateCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) CreateCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.CreateCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.CreateCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockACMPCAAPIMockRecorder) DeleteCertificateAuthorityRequest(arg0 inte
 }
 
 // DeleteCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) DeleteCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.DeleteCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.DeleteCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) DeleteCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.DeleteCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.DeleteCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockACMPCAAPIMockRecorder) DescribeCertificateAuthorityAuditReportRequ
 }
 
 // DescribeCertificateAuthorityAuditReportWithContext mocks base method
-func (m *MockACMPCAAPI) DescribeCertificateAuthorityAuditReportWithContext(arg0 aws.Context, arg1 *acmpca.DescribeCertificateAuthorityAuditReportInput, arg2 ...request.Option) (*acmpca.DescribeCertificateAuthorityAuditReportOutput, error) {
+func (m *MockACMPCAAPI) DescribeCertificateAuthorityAuditReportWithContext(arg0 context.Context, arg1 *acmpca.DescribeCertificateAuthorityAuditReportInput, arg2 ...request.Option) (*acmpca.DescribeCertificateAuthorityAuditReportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockACMPCAAPIMockRecorder) DescribeCertificateAuthorityRequest(arg0 in
 }
 
 // DescribeCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) DescribeCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.DescribeCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.DescribeCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) DescribeCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.DescribeCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.DescribeCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockACMPCAAPIMockRecorder) GetCertificateAuthorityCertificateRequest(a
 }
 
 // GetCertificateAuthorityCertificateWithContext mocks base method
-func (m *MockACMPCAAPI) GetCertificateAuthorityCertificateWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateAuthorityCertificateInput, arg2 ...request.Option) (*acmpca.GetCertificateAuthorityCertificateOutput, error) {
+func (m *MockACMPCAAPI) GetCertificateAuthorityCertificateWithContext(arg0 context.Context, arg1 *acmpca.GetCertificateAuthorityCertificateInput, arg2 ...request.Option) (*acmpca.GetCertificateAuthorityCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockACMPCAAPIMockRecorder) GetCertificateAuthorityCsrRequest(arg0 inte
 }
 
 // GetCertificateAuthorityCsrWithContext mocks base method
-func (m *MockACMPCAAPI) GetCertificateAuthorityCsrWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateAuthorityCsrInput, arg2 ...request.Option) (*acmpca.GetCertificateAuthorityCsrOutput, error) {
+func (m *MockACMPCAAPI) GetCertificateAuthorityCsrWithContext(arg0 context.Context, arg1 *acmpca.GetCertificateAuthorityCsrInput, arg2 ...request.Option) (*acmpca.GetCertificateAuthorityCsrOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockACMPCAAPIMockRecorder) GetCertificateRequest(arg0 interface{}) *go
 }
 
 // GetCertificateWithContext mocks base method
-func (m *MockACMPCAAPI) GetCertificateWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateInput, arg2 ...request.Option) (*acmpca.GetCertificateOutput, error) {
+func (m *MockACMPCAAPI) GetCertificateWithContext(arg0 context.Context, arg1 *acmpca.GetCertificateInput, arg2 ...request.Option) (*acmpca.GetCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockACMPCAAPIMockRecorder) ImportCertificateAuthorityCertificateReques
 }
 
 // ImportCertificateAuthorityCertificateWithContext mocks base method
-func (m *MockACMPCAAPI) ImportCertificateAuthorityCertificateWithContext(arg0 aws.Context, arg1 *acmpca.ImportCertificateAuthorityCertificateInput, arg2 ...request.Option) (*acmpca.ImportCertificateAuthorityCertificateOutput, error) {
+func (m *MockACMPCAAPI) ImportCertificateAuthorityCertificateWithContext(arg0 context.Context, arg1 *acmpca.ImportCertificateAuthorityCertificateInput, arg2 ...request.Option) (*acmpca.ImportCertificateAuthorityCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockACMPCAAPIMockRecorder) IssueCertificateRequest(arg0 interface{}) *
 }
 
 // IssueCertificateWithContext mocks base method
-func (m *MockACMPCAAPI) IssueCertificateWithContext(arg0 aws.Context, arg1 *acmpca.IssueCertificateInput, arg2 ...request.Option) (*acmpca.IssueCertificateOutput, error) {
+func (m *MockACMPCAAPI) IssueCertificateWithContext(arg0 context.Context, arg1 *acmpca.IssueCertificateInput, arg2 ...request.Option) (*acmpca.IssueCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -565,7 +565,7 @@ func (mr *MockACMPCAAPIMockRecorder) ListCertificateAuthoritiesPages(arg0, arg1 
 }
 
 // ListCertificateAuthoritiesPagesWithContext mocks base method
-func (m *MockACMPCAAPI) ListCertificateAuthoritiesPagesWithContext(arg0 aws.Context, arg1 *acmpca.ListCertificateAuthoritiesInput, arg2 func(*acmpca.ListCertificateAuthoritiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockACMPCAAPI) ListCertificateAuthoritiesPagesWithContext(arg0 context.Context, arg1 *acmpca.ListCertificateAuthoritiesInput, arg2 func(*acmpca.ListCertificateAuthoritiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -599,7 +599,7 @@ func (mr *MockACMPCAAPIMockRecorder) ListCertificateAuthoritiesRequest(arg0 inte
 }
 
 // ListCertificateAuthoritiesWithContext mocks base method
-func (m *MockACMPCAAPI) ListCertificateAuthoritiesWithContext(arg0 aws.Context, arg1 *acmpca.ListCertificateAuthoritiesInput, arg2 ...request.Option) (*acmpca.ListCertificateAuthoritiesOutput, error) {
+func (m *MockACMPCAAPI) ListCertificateAuthoritiesWithContext(arg0 context.Context, arg1 *acmpca.ListCertificateAuthoritiesInput, arg2 ...request.Option) (*acmpca.ListCertificateAuthoritiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockACMPCAAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.C
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockACMPCAAPI) ListTagsWithContext(arg0 aws.Context, arg1 *acmpca.ListTagsInput, arg2 ...request.Option) (*acmpca.ListTagsOutput, error) {
+func (m *MockACMPCAAPI) ListTagsWithContext(arg0 context.Context, arg1 *acmpca.ListTagsInput, arg2 ...request.Option) (*acmpca.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockACMPCAAPIMockRecorder) RestoreCertificateAuthorityRequest(arg0 int
 }
 
 // RestoreCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) RestoreCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.RestoreCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.RestoreCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) RestoreCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.RestoreCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.RestoreCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockACMPCAAPIMockRecorder) RevokeCertificateRequest(arg0 interface{}) 
 }
 
 // RevokeCertificateWithContext mocks base method
-func (m *MockACMPCAAPI) RevokeCertificateWithContext(arg0 aws.Context, arg1 *acmpca.RevokeCertificateInput, arg2 ...request.Option) (*acmpca.RevokeCertificateOutput, error) {
+func (m *MockACMPCAAPI) RevokeCertificateWithContext(arg0 context.Context, arg1 *acmpca.RevokeCertificateInput, arg2 ...request.Option) (*acmpca.RevokeCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -799,7 +799,7 @@ func (mr *MockACMPCAAPIMockRecorder) TagCertificateAuthorityRequest(arg0 interfa
 }
 
 // TagCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) TagCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.TagCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.TagCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) TagCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.TagCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.TagCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -849,7 +849,7 @@ func (mr *MockACMPCAAPIMockRecorder) UntagCertificateAuthorityRequest(arg0 inter
 }
 
 // UntagCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) UntagCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.UntagCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.UntagCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) UntagCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.UntagCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.UntagCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -899,7 +899,7 @@ func (mr *MockACMPCAAPIMockRecorder) UpdateCertificateAuthorityRequest(arg0 inte
 }
 
 // UpdateCertificateAuthorityWithContext mocks base method
-func (m *MockACMPCAAPI) UpdateCertificateAuthorityWithContext(arg0 aws.Context, arg1 *acmpca.UpdateCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.UpdateCertificateAuthorityOutput, error) {
+func (m *MockACMPCAAPI) UpdateCertificateAuthorityWithContext(arg0 context.Context, arg1 *acmpca.UpdateCertificateAuthorityInput, arg2 ...request.Option) (*acmpca.UpdateCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -933,7 +933,7 @@ func (mr *MockACMPCAAPIMockRecorder) WaitUntilAuditReportCreated(arg0 interface{
 }
 
 // WaitUntilAuditReportCreatedWithContext mocks base method
-func (m *MockACMPCAAPI) WaitUntilAuditReportCreatedWithContext(arg0 aws.Context, arg1 *acmpca.DescribeCertificateAuthorityAuditReportInput, arg2 ...request.WaiterOption) error {
+func (m *MockACMPCAAPI) WaitUntilAuditReportCreatedWithContext(arg0 context.Context, arg1 *acmpca.DescribeCertificateAuthorityAuditReportInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockACMPCAAPIMockRecorder) WaitUntilCertificateAuthorityCSRCreated(arg
 }
 
 // WaitUntilCertificateAuthorityCSRCreatedWithContext mocks base method
-func (m *MockACMPCAAPI) WaitUntilCertificateAuthorityCSRCreatedWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateAuthorityCsrInput, arg2 ...request.WaiterOption) error {
+func (m *MockACMPCAAPI) WaitUntilCertificateAuthorityCSRCreatedWithContext(arg0 context.Context, arg1 *acmpca.GetCertificateAuthorityCsrInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -999,7 +999,7 @@ func (mr *MockACMPCAAPIMockRecorder) WaitUntilCertificateIssued(arg0 interface{}
 }
 
 // WaitUntilCertificateIssuedWithContext mocks base method
-func (m *MockACMPCAAPI) WaitUntilCertificateIssuedWithContext(arg0 aws.Context, arg1 *acmpca.GetCertificateInput, arg2 ...request.WaiterOption) error {
+func (m *MockACMPCAAPI) WaitUntilCertificateIssuedWithContext(arg0 context.Context, arg1 *acmpca.GetCertificateInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

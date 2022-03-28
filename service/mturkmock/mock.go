@@ -5,7 +5,7 @@
 package mturkmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mturk "github.com/aws/aws-sdk-go/service/mturk"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMTurkAPIMockRecorder) AcceptQualificationRequestRequest(arg0 inter
 }
 
 // AcceptQualificationRequestWithContext mocks base method
-func (m *MockMTurkAPI) AcceptQualificationRequestWithContext(arg0 aws.Context, arg1 *mturk.AcceptQualificationRequestInput, arg2 ...request.Option) (*mturk.AcceptQualificationRequestOutput, error) {
+func (m *MockMTurkAPI) AcceptQualificationRequestWithContext(arg0 context.Context, arg1 *mturk.AcceptQualificationRequestInput, arg2 ...request.Option) (*mturk.AcceptQualificationRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMTurkAPIMockRecorder) ApproveAssignmentRequest(arg0 interface{}) *
 }
 
 // ApproveAssignmentWithContext mocks base method
-func (m *MockMTurkAPI) ApproveAssignmentWithContext(arg0 aws.Context, arg1 *mturk.ApproveAssignmentInput, arg2 ...request.Option) (*mturk.ApproveAssignmentOutput, error) {
+func (m *MockMTurkAPI) ApproveAssignmentWithContext(arg0 context.Context, arg1 *mturk.ApproveAssignmentInput, arg2 ...request.Option) (*mturk.ApproveAssignmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMTurkAPIMockRecorder) AssociateQualificationWithWorkerRequest(arg0
 }
 
 // AssociateQualificationWithWorkerWithContext mocks base method
-func (m *MockMTurkAPI) AssociateQualificationWithWorkerWithContext(arg0 aws.Context, arg1 *mturk.AssociateQualificationWithWorkerInput, arg2 ...request.Option) (*mturk.AssociateQualificationWithWorkerOutput, error) {
+func (m *MockMTurkAPI) AssociateQualificationWithWorkerWithContext(arg0 context.Context, arg1 *mturk.AssociateQualificationWithWorkerInput, arg2 ...request.Option) (*mturk.AssociateQualificationWithWorkerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMTurkAPIMockRecorder) CreateAdditionalAssignmentsForHITRequest(arg
 }
 
 // CreateAdditionalAssignmentsForHITWithContext mocks base method
-func (m *MockMTurkAPI) CreateAdditionalAssignmentsForHITWithContext(arg0 aws.Context, arg1 *mturk.CreateAdditionalAssignmentsForHITInput, arg2 ...request.Option) (*mturk.CreateAdditionalAssignmentsForHITOutput, error) {
+func (m *MockMTurkAPI) CreateAdditionalAssignmentsForHITWithContext(arg0 context.Context, arg1 *mturk.CreateAdditionalAssignmentsForHITInput, arg2 ...request.Option) (*mturk.CreateAdditionalAssignmentsForHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -296,7 +296,7 @@ func (mr *MockMTurkAPIMockRecorder) CreateHITTypeRequest(arg0 interface{}) *gomo
 }
 
 // CreateHITTypeWithContext mocks base method
-func (m *MockMTurkAPI) CreateHITTypeWithContext(arg0 aws.Context, arg1 *mturk.CreateHITTypeInput, arg2 ...request.Option) (*mturk.CreateHITTypeOutput, error) {
+func (m *MockMTurkAPI) CreateHITTypeWithContext(arg0 context.Context, arg1 *mturk.CreateHITTypeInput, arg2 ...request.Option) (*mturk.CreateHITTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMTurkAPIMockRecorder) CreateHITTypeWithContext(arg0, arg1 interfac
 }
 
 // CreateHITWithContext mocks base method
-func (m *MockMTurkAPI) CreateHITWithContext(arg0 aws.Context, arg1 *mturk.CreateHITInput, arg2 ...request.Option) (*mturk.CreateHITOutput, error) {
+func (m *MockMTurkAPI) CreateHITWithContext(arg0 context.Context, arg1 *mturk.CreateHITInput, arg2 ...request.Option) (*mturk.CreateHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMTurkAPIMockRecorder) CreateHITWithHITTypeRequest(arg0 interface{}
 }
 
 // CreateHITWithHITTypeWithContext mocks base method
-func (m *MockMTurkAPI) CreateHITWithHITTypeWithContext(arg0 aws.Context, arg1 *mturk.CreateHITWithHITTypeInput, arg2 ...request.Option) (*mturk.CreateHITWithHITTypeOutput, error) {
+func (m *MockMTurkAPI) CreateHITWithHITTypeWithContext(arg0 context.Context, arg1 *mturk.CreateHITWithHITTypeInput, arg2 ...request.Option) (*mturk.CreateHITWithHITTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMTurkAPIMockRecorder) CreateQualificationTypeRequest(arg0 interfac
 }
 
 // CreateQualificationTypeWithContext mocks base method
-func (m *MockMTurkAPI) CreateQualificationTypeWithContext(arg0 aws.Context, arg1 *mturk.CreateQualificationTypeInput, arg2 ...request.Option) (*mturk.CreateQualificationTypeOutput, error) {
+func (m *MockMTurkAPI) CreateQualificationTypeWithContext(arg0 context.Context, arg1 *mturk.CreateQualificationTypeInput, arg2 ...request.Option) (*mturk.CreateQualificationTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockMTurkAPIMockRecorder) CreateWorkerBlockRequest(arg0 interface{}) *
 }
 
 // CreateWorkerBlockWithContext mocks base method
-func (m *MockMTurkAPI) CreateWorkerBlockWithContext(arg0 aws.Context, arg1 *mturk.CreateWorkerBlockInput, arg2 ...request.Option) (*mturk.CreateWorkerBlockOutput, error) {
+func (m *MockMTurkAPI) CreateWorkerBlockWithContext(arg0 context.Context, arg1 *mturk.CreateWorkerBlockInput, arg2 ...request.Option) (*mturk.CreateWorkerBlockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockMTurkAPIMockRecorder) DeleteHITRequest(arg0 interface{}) *gomock.C
 }
 
 // DeleteHITWithContext mocks base method
-func (m *MockMTurkAPI) DeleteHITWithContext(arg0 aws.Context, arg1 *mturk.DeleteHITInput, arg2 ...request.Option) (*mturk.DeleteHITOutput, error) {
+func (m *MockMTurkAPI) DeleteHITWithContext(arg0 context.Context, arg1 *mturk.DeleteHITInput, arg2 ...request.Option) (*mturk.DeleteHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockMTurkAPIMockRecorder) DeleteQualificationTypeRequest(arg0 interfac
 }
 
 // DeleteQualificationTypeWithContext mocks base method
-func (m *MockMTurkAPI) DeleteQualificationTypeWithContext(arg0 aws.Context, arg1 *mturk.DeleteQualificationTypeInput, arg2 ...request.Option) (*mturk.DeleteQualificationTypeOutput, error) {
+func (m *MockMTurkAPI) DeleteQualificationTypeWithContext(arg0 context.Context, arg1 *mturk.DeleteQualificationTypeInput, arg2 ...request.Option) (*mturk.DeleteQualificationTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockMTurkAPIMockRecorder) DeleteWorkerBlockRequest(arg0 interface{}) *
 }
 
 // DeleteWorkerBlockWithContext mocks base method
-func (m *MockMTurkAPI) DeleteWorkerBlockWithContext(arg0 aws.Context, arg1 *mturk.DeleteWorkerBlockInput, arg2 ...request.Option) (*mturk.DeleteWorkerBlockOutput, error) {
+func (m *MockMTurkAPI) DeleteWorkerBlockWithContext(arg0 context.Context, arg1 *mturk.DeleteWorkerBlockInput, arg2 ...request.Option) (*mturk.DeleteWorkerBlockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockMTurkAPIMockRecorder) DisassociateQualificationFromWorkerRequest(a
 }
 
 // DisassociateQualificationFromWorkerWithContext mocks base method
-func (m *MockMTurkAPI) DisassociateQualificationFromWorkerWithContext(arg0 aws.Context, arg1 *mturk.DisassociateQualificationFromWorkerInput, arg2 ...request.Option) (*mturk.DisassociateQualificationFromWorkerOutput, error) {
+func (m *MockMTurkAPI) DisassociateQualificationFromWorkerWithContext(arg0 context.Context, arg1 *mturk.DisassociateQualificationFromWorkerInput, arg2 ...request.Option) (*mturk.DisassociateQualificationFromWorkerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockMTurkAPIMockRecorder) GetAccountBalanceRequest(arg0 interface{}) *
 }
 
 // GetAccountBalanceWithContext mocks base method
-func (m *MockMTurkAPI) GetAccountBalanceWithContext(arg0 aws.Context, arg1 *mturk.GetAccountBalanceInput, arg2 ...request.Option) (*mturk.GetAccountBalanceOutput, error) {
+func (m *MockMTurkAPI) GetAccountBalanceWithContext(arg0 context.Context, arg1 *mturk.GetAccountBalanceInput, arg2 ...request.Option) (*mturk.GetAccountBalanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockMTurkAPIMockRecorder) GetAssignmentRequest(arg0 interface{}) *gomo
 }
 
 // GetAssignmentWithContext mocks base method
-func (m *MockMTurkAPI) GetAssignmentWithContext(arg0 aws.Context, arg1 *mturk.GetAssignmentInput, arg2 ...request.Option) (*mturk.GetAssignmentOutput, error) {
+func (m *MockMTurkAPI) GetAssignmentWithContext(arg0 context.Context, arg1 *mturk.GetAssignmentInput, arg2 ...request.Option) (*mturk.GetAssignmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockMTurkAPIMockRecorder) GetFileUploadURLRequest(arg0 interface{}) *g
 }
 
 // GetFileUploadURLWithContext mocks base method
-func (m *MockMTurkAPI) GetFileUploadURLWithContext(arg0 aws.Context, arg1 *mturk.GetFileUploadURLInput, arg2 ...request.Option) (*mturk.GetFileUploadURLOutput, error) {
+func (m *MockMTurkAPI) GetFileUploadURLWithContext(arg0 context.Context, arg1 *mturk.GetFileUploadURLInput, arg2 ...request.Option) (*mturk.GetFileUploadURLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockMTurkAPIMockRecorder) GetHITRequest(arg0 interface{}) *gomock.Call
 }
 
 // GetHITWithContext mocks base method
-func (m *MockMTurkAPI) GetHITWithContext(arg0 aws.Context, arg1 *mturk.GetHITInput, arg2 ...request.Option) (*mturk.GetHITOutput, error) {
+func (m *MockMTurkAPI) GetHITWithContext(arg0 context.Context, arg1 *mturk.GetHITInput, arg2 ...request.Option) (*mturk.GetHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockMTurkAPIMockRecorder) GetQualificationScoreRequest(arg0 interface{
 }
 
 // GetQualificationScoreWithContext mocks base method
-func (m *MockMTurkAPI) GetQualificationScoreWithContext(arg0 aws.Context, arg1 *mturk.GetQualificationScoreInput, arg2 ...request.Option) (*mturk.GetQualificationScoreOutput, error) {
+func (m *MockMTurkAPI) GetQualificationScoreWithContext(arg0 context.Context, arg1 *mturk.GetQualificationScoreInput, arg2 ...request.Option) (*mturk.GetQualificationScoreOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockMTurkAPIMockRecorder) GetQualificationTypeRequest(arg0 interface{}
 }
 
 // GetQualificationTypeWithContext mocks base method
-func (m *MockMTurkAPI) GetQualificationTypeWithContext(arg0 aws.Context, arg1 *mturk.GetQualificationTypeInput, arg2 ...request.Option) (*mturk.GetQualificationTypeOutput, error) {
+func (m *MockMTurkAPI) GetQualificationTypeWithContext(arg0 context.Context, arg1 *mturk.GetQualificationTypeInput, arg2 ...request.Option) (*mturk.GetQualificationTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1015,7 +1015,7 @@ func (mr *MockMTurkAPIMockRecorder) ListAssignmentsForHITPages(arg0, arg1 interf
 }
 
 // ListAssignmentsForHITPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListAssignmentsForHITPagesWithContext(arg0 aws.Context, arg1 *mturk.ListAssignmentsForHITInput, arg2 func(*mturk.ListAssignmentsForHITOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListAssignmentsForHITPagesWithContext(arg0 context.Context, arg1 *mturk.ListAssignmentsForHITInput, arg2 func(*mturk.ListAssignmentsForHITOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1049,7 +1049,7 @@ func (mr *MockMTurkAPIMockRecorder) ListAssignmentsForHITRequest(arg0 interface{
 }
 
 // ListAssignmentsForHITWithContext mocks base method
-func (m *MockMTurkAPI) ListAssignmentsForHITWithContext(arg0 aws.Context, arg1 *mturk.ListAssignmentsForHITInput, arg2 ...request.Option) (*mturk.ListAssignmentsForHITOutput, error) {
+func (m *MockMTurkAPI) ListAssignmentsForHITWithContext(arg0 context.Context, arg1 *mturk.ListAssignmentsForHITInput, arg2 ...request.Option) (*mturk.ListAssignmentsForHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockMTurkAPIMockRecorder) ListBonusPaymentsPages(arg0, arg1 interface{
 }
 
 // ListBonusPaymentsPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListBonusPaymentsPagesWithContext(arg0 aws.Context, arg1 *mturk.ListBonusPaymentsInput, arg2 func(*mturk.ListBonusPaymentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListBonusPaymentsPagesWithContext(arg0 context.Context, arg1 *mturk.ListBonusPaymentsInput, arg2 func(*mturk.ListBonusPaymentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1132,7 +1132,7 @@ func (mr *MockMTurkAPIMockRecorder) ListBonusPaymentsRequest(arg0 interface{}) *
 }
 
 // ListBonusPaymentsWithContext mocks base method
-func (m *MockMTurkAPI) ListBonusPaymentsWithContext(arg0 aws.Context, arg1 *mturk.ListBonusPaymentsInput, arg2 ...request.Option) (*mturk.ListBonusPaymentsOutput, error) {
+func (m *MockMTurkAPI) ListBonusPaymentsWithContext(arg0 context.Context, arg1 *mturk.ListBonusPaymentsInput, arg2 ...request.Option) (*mturk.ListBonusPaymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1196,7 +1196,7 @@ func (mr *MockMTurkAPIMockRecorder) ListHITsForQualificationTypePages(arg0, arg1
 }
 
 // ListHITsForQualificationTypePagesWithContext mocks base method
-func (m *MockMTurkAPI) ListHITsForQualificationTypePagesWithContext(arg0 aws.Context, arg1 *mturk.ListHITsForQualificationTypeInput, arg2 func(*mturk.ListHITsForQualificationTypeOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListHITsForQualificationTypePagesWithContext(arg0 context.Context, arg1 *mturk.ListHITsForQualificationTypeInput, arg2 func(*mturk.ListHITsForQualificationTypeOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1230,7 +1230,7 @@ func (mr *MockMTurkAPIMockRecorder) ListHITsForQualificationTypeRequest(arg0 int
 }
 
 // ListHITsForQualificationTypeWithContext mocks base method
-func (m *MockMTurkAPI) ListHITsForQualificationTypeWithContext(arg0 aws.Context, arg1 *mturk.ListHITsForQualificationTypeInput, arg2 ...request.Option) (*mturk.ListHITsForQualificationTypeOutput, error) {
+func (m *MockMTurkAPI) ListHITsForQualificationTypeWithContext(arg0 context.Context, arg1 *mturk.ListHITsForQualificationTypeInput, arg2 ...request.Option) (*mturk.ListHITsForQualificationTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1264,7 +1264,7 @@ func (mr *MockMTurkAPIMockRecorder) ListHITsPages(arg0, arg1 interface{}) *gomoc
 }
 
 // ListHITsPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListHITsPagesWithContext(arg0 aws.Context, arg1 *mturk.ListHITsInput, arg2 func(*mturk.ListHITsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListHITsPagesWithContext(arg0 context.Context, arg1 *mturk.ListHITsInput, arg2 func(*mturk.ListHITsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1298,7 +1298,7 @@ func (mr *MockMTurkAPIMockRecorder) ListHITsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // ListHITsWithContext mocks base method
-func (m *MockMTurkAPI) ListHITsWithContext(arg0 aws.Context, arg1 *mturk.ListHITsInput, arg2 ...request.Option) (*mturk.ListHITsOutput, error) {
+func (m *MockMTurkAPI) ListHITsWithContext(arg0 context.Context, arg1 *mturk.ListHITsInput, arg2 ...request.Option) (*mturk.ListHITsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1347,7 +1347,7 @@ func (mr *MockMTurkAPIMockRecorder) ListQualificationRequestsPages(arg0, arg1 in
 }
 
 // ListQualificationRequestsPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListQualificationRequestsPagesWithContext(arg0 aws.Context, arg1 *mturk.ListQualificationRequestsInput, arg2 func(*mturk.ListQualificationRequestsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListQualificationRequestsPagesWithContext(arg0 context.Context, arg1 *mturk.ListQualificationRequestsInput, arg2 func(*mturk.ListQualificationRequestsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1381,7 +1381,7 @@ func (mr *MockMTurkAPIMockRecorder) ListQualificationRequestsRequest(arg0 interf
 }
 
 // ListQualificationRequestsWithContext mocks base method
-func (m *MockMTurkAPI) ListQualificationRequestsWithContext(arg0 aws.Context, arg1 *mturk.ListQualificationRequestsInput, arg2 ...request.Option) (*mturk.ListQualificationRequestsOutput, error) {
+func (m *MockMTurkAPI) ListQualificationRequestsWithContext(arg0 context.Context, arg1 *mturk.ListQualificationRequestsInput, arg2 ...request.Option) (*mturk.ListQualificationRequestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1430,7 +1430,7 @@ func (mr *MockMTurkAPIMockRecorder) ListQualificationTypesPages(arg0, arg1 inter
 }
 
 // ListQualificationTypesPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListQualificationTypesPagesWithContext(arg0 aws.Context, arg1 *mturk.ListQualificationTypesInput, arg2 func(*mturk.ListQualificationTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListQualificationTypesPagesWithContext(arg0 context.Context, arg1 *mturk.ListQualificationTypesInput, arg2 func(*mturk.ListQualificationTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1464,7 +1464,7 @@ func (mr *MockMTurkAPIMockRecorder) ListQualificationTypesRequest(arg0 interface
 }
 
 // ListQualificationTypesWithContext mocks base method
-func (m *MockMTurkAPI) ListQualificationTypesWithContext(arg0 aws.Context, arg1 *mturk.ListQualificationTypesInput, arg2 ...request.Option) (*mturk.ListQualificationTypesOutput, error) {
+func (m *MockMTurkAPI) ListQualificationTypesWithContext(arg0 context.Context, arg1 *mturk.ListQualificationTypesInput, arg2 ...request.Option) (*mturk.ListQualificationTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1513,7 +1513,7 @@ func (mr *MockMTurkAPIMockRecorder) ListReviewPolicyResultsForHITPages(arg0, arg
 }
 
 // ListReviewPolicyResultsForHITPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListReviewPolicyResultsForHITPagesWithContext(arg0 aws.Context, arg1 *mturk.ListReviewPolicyResultsForHITInput, arg2 func(*mturk.ListReviewPolicyResultsForHITOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListReviewPolicyResultsForHITPagesWithContext(arg0 context.Context, arg1 *mturk.ListReviewPolicyResultsForHITInput, arg2 func(*mturk.ListReviewPolicyResultsForHITOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1547,7 +1547,7 @@ func (mr *MockMTurkAPIMockRecorder) ListReviewPolicyResultsForHITRequest(arg0 in
 }
 
 // ListReviewPolicyResultsForHITWithContext mocks base method
-func (m *MockMTurkAPI) ListReviewPolicyResultsForHITWithContext(arg0 aws.Context, arg1 *mturk.ListReviewPolicyResultsForHITInput, arg2 ...request.Option) (*mturk.ListReviewPolicyResultsForHITOutput, error) {
+func (m *MockMTurkAPI) ListReviewPolicyResultsForHITWithContext(arg0 context.Context, arg1 *mturk.ListReviewPolicyResultsForHITInput, arg2 ...request.Option) (*mturk.ListReviewPolicyResultsForHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1596,7 +1596,7 @@ func (mr *MockMTurkAPIMockRecorder) ListReviewableHITsPages(arg0, arg1 interface
 }
 
 // ListReviewableHITsPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListReviewableHITsPagesWithContext(arg0 aws.Context, arg1 *mturk.ListReviewableHITsInput, arg2 func(*mturk.ListReviewableHITsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListReviewableHITsPagesWithContext(arg0 context.Context, arg1 *mturk.ListReviewableHITsInput, arg2 func(*mturk.ListReviewableHITsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1630,7 +1630,7 @@ func (mr *MockMTurkAPIMockRecorder) ListReviewableHITsRequest(arg0 interface{}) 
 }
 
 // ListReviewableHITsWithContext mocks base method
-func (m *MockMTurkAPI) ListReviewableHITsWithContext(arg0 aws.Context, arg1 *mturk.ListReviewableHITsInput, arg2 ...request.Option) (*mturk.ListReviewableHITsOutput, error) {
+func (m *MockMTurkAPI) ListReviewableHITsWithContext(arg0 context.Context, arg1 *mturk.ListReviewableHITsInput, arg2 ...request.Option) (*mturk.ListReviewableHITsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1679,7 +1679,7 @@ func (mr *MockMTurkAPIMockRecorder) ListWorkerBlocksPages(arg0, arg1 interface{}
 }
 
 // ListWorkerBlocksPagesWithContext mocks base method
-func (m *MockMTurkAPI) ListWorkerBlocksPagesWithContext(arg0 aws.Context, arg1 *mturk.ListWorkerBlocksInput, arg2 func(*mturk.ListWorkerBlocksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListWorkerBlocksPagesWithContext(arg0 context.Context, arg1 *mturk.ListWorkerBlocksInput, arg2 func(*mturk.ListWorkerBlocksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1713,7 +1713,7 @@ func (mr *MockMTurkAPIMockRecorder) ListWorkerBlocksRequest(arg0 interface{}) *g
 }
 
 // ListWorkerBlocksWithContext mocks base method
-func (m *MockMTurkAPI) ListWorkerBlocksWithContext(arg0 aws.Context, arg1 *mturk.ListWorkerBlocksInput, arg2 ...request.Option) (*mturk.ListWorkerBlocksOutput, error) {
+func (m *MockMTurkAPI) ListWorkerBlocksWithContext(arg0 context.Context, arg1 *mturk.ListWorkerBlocksInput, arg2 ...request.Option) (*mturk.ListWorkerBlocksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1762,7 +1762,7 @@ func (mr *MockMTurkAPIMockRecorder) ListWorkersWithQualificationTypePages(arg0, 
 }
 
 // ListWorkersWithQualificationTypePagesWithContext mocks base method
-func (m *MockMTurkAPI) ListWorkersWithQualificationTypePagesWithContext(arg0 aws.Context, arg1 *mturk.ListWorkersWithQualificationTypeInput, arg2 func(*mturk.ListWorkersWithQualificationTypeOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMTurkAPI) ListWorkersWithQualificationTypePagesWithContext(arg0 context.Context, arg1 *mturk.ListWorkersWithQualificationTypeInput, arg2 func(*mturk.ListWorkersWithQualificationTypeOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1796,7 +1796,7 @@ func (mr *MockMTurkAPIMockRecorder) ListWorkersWithQualificationTypeRequest(arg0
 }
 
 // ListWorkersWithQualificationTypeWithContext mocks base method
-func (m *MockMTurkAPI) ListWorkersWithQualificationTypeWithContext(arg0 aws.Context, arg1 *mturk.ListWorkersWithQualificationTypeInput, arg2 ...request.Option) (*mturk.ListWorkersWithQualificationTypeOutput, error) {
+func (m *MockMTurkAPI) ListWorkersWithQualificationTypeWithContext(arg0 context.Context, arg1 *mturk.ListWorkersWithQualificationTypeInput, arg2 ...request.Option) (*mturk.ListWorkersWithQualificationTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1846,7 +1846,7 @@ func (mr *MockMTurkAPIMockRecorder) NotifyWorkersRequest(arg0 interface{}) *gomo
 }
 
 // NotifyWorkersWithContext mocks base method
-func (m *MockMTurkAPI) NotifyWorkersWithContext(arg0 aws.Context, arg1 *mturk.NotifyWorkersInput, arg2 ...request.Option) (*mturk.NotifyWorkersOutput, error) {
+func (m *MockMTurkAPI) NotifyWorkersWithContext(arg0 context.Context, arg1 *mturk.NotifyWorkersInput, arg2 ...request.Option) (*mturk.NotifyWorkersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1896,7 +1896,7 @@ func (mr *MockMTurkAPIMockRecorder) RejectAssignmentRequest(arg0 interface{}) *g
 }
 
 // RejectAssignmentWithContext mocks base method
-func (m *MockMTurkAPI) RejectAssignmentWithContext(arg0 aws.Context, arg1 *mturk.RejectAssignmentInput, arg2 ...request.Option) (*mturk.RejectAssignmentOutput, error) {
+func (m *MockMTurkAPI) RejectAssignmentWithContext(arg0 context.Context, arg1 *mturk.RejectAssignmentInput, arg2 ...request.Option) (*mturk.RejectAssignmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1946,7 +1946,7 @@ func (mr *MockMTurkAPIMockRecorder) RejectQualificationRequestRequest(arg0 inter
 }
 
 // RejectQualificationRequestWithContext mocks base method
-func (m *MockMTurkAPI) RejectQualificationRequestWithContext(arg0 aws.Context, arg1 *mturk.RejectQualificationRequestInput, arg2 ...request.Option) (*mturk.RejectQualificationRequestOutput, error) {
+func (m *MockMTurkAPI) RejectQualificationRequestWithContext(arg0 context.Context, arg1 *mturk.RejectQualificationRequestInput, arg2 ...request.Option) (*mturk.RejectQualificationRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1996,7 +1996,7 @@ func (mr *MockMTurkAPIMockRecorder) SendBonusRequest(arg0 interface{}) *gomock.C
 }
 
 // SendBonusWithContext mocks base method
-func (m *MockMTurkAPI) SendBonusWithContext(arg0 aws.Context, arg1 *mturk.SendBonusInput, arg2 ...request.Option) (*mturk.SendBonusOutput, error) {
+func (m *MockMTurkAPI) SendBonusWithContext(arg0 context.Context, arg1 *mturk.SendBonusInput, arg2 ...request.Option) (*mturk.SendBonusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockMTurkAPIMockRecorder) SendTestEventNotificationRequest(arg0 interf
 }
 
 // SendTestEventNotificationWithContext mocks base method
-func (m *MockMTurkAPI) SendTestEventNotificationWithContext(arg0 aws.Context, arg1 *mturk.SendTestEventNotificationInput, arg2 ...request.Option) (*mturk.SendTestEventNotificationOutput, error) {
+func (m *MockMTurkAPI) SendTestEventNotificationWithContext(arg0 context.Context, arg1 *mturk.SendTestEventNotificationInput, arg2 ...request.Option) (*mturk.SendTestEventNotificationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2096,7 +2096,7 @@ func (mr *MockMTurkAPIMockRecorder) UpdateExpirationForHITRequest(arg0 interface
 }
 
 // UpdateExpirationForHITWithContext mocks base method
-func (m *MockMTurkAPI) UpdateExpirationForHITWithContext(arg0 aws.Context, arg1 *mturk.UpdateExpirationForHITInput, arg2 ...request.Option) (*mturk.UpdateExpirationForHITOutput, error) {
+func (m *MockMTurkAPI) UpdateExpirationForHITWithContext(arg0 context.Context, arg1 *mturk.UpdateExpirationForHITInput, arg2 ...request.Option) (*mturk.UpdateExpirationForHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2146,7 +2146,7 @@ func (mr *MockMTurkAPIMockRecorder) UpdateHITReviewStatusRequest(arg0 interface{
 }
 
 // UpdateHITReviewStatusWithContext mocks base method
-func (m *MockMTurkAPI) UpdateHITReviewStatusWithContext(arg0 aws.Context, arg1 *mturk.UpdateHITReviewStatusInput, arg2 ...request.Option) (*mturk.UpdateHITReviewStatusOutput, error) {
+func (m *MockMTurkAPI) UpdateHITReviewStatusWithContext(arg0 context.Context, arg1 *mturk.UpdateHITReviewStatusInput, arg2 ...request.Option) (*mturk.UpdateHITReviewStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2196,7 +2196,7 @@ func (mr *MockMTurkAPIMockRecorder) UpdateHITTypeOfHITRequest(arg0 interface{}) 
 }
 
 // UpdateHITTypeOfHITWithContext mocks base method
-func (m *MockMTurkAPI) UpdateHITTypeOfHITWithContext(arg0 aws.Context, arg1 *mturk.UpdateHITTypeOfHITInput, arg2 ...request.Option) (*mturk.UpdateHITTypeOfHITOutput, error) {
+func (m *MockMTurkAPI) UpdateHITTypeOfHITWithContext(arg0 context.Context, arg1 *mturk.UpdateHITTypeOfHITInput, arg2 ...request.Option) (*mturk.UpdateHITTypeOfHITOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2246,7 +2246,7 @@ func (mr *MockMTurkAPIMockRecorder) UpdateNotificationSettingsRequest(arg0 inter
 }
 
 // UpdateNotificationSettingsWithContext mocks base method
-func (m *MockMTurkAPI) UpdateNotificationSettingsWithContext(arg0 aws.Context, arg1 *mturk.UpdateNotificationSettingsInput, arg2 ...request.Option) (*mturk.UpdateNotificationSettingsOutput, error) {
+func (m *MockMTurkAPI) UpdateNotificationSettingsWithContext(arg0 context.Context, arg1 *mturk.UpdateNotificationSettingsInput, arg2 ...request.Option) (*mturk.UpdateNotificationSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2296,7 +2296,7 @@ func (mr *MockMTurkAPIMockRecorder) UpdateQualificationTypeRequest(arg0 interfac
 }
 
 // UpdateQualificationTypeWithContext mocks base method
-func (m *MockMTurkAPI) UpdateQualificationTypeWithContext(arg0 aws.Context, arg1 *mturk.UpdateQualificationTypeInput, arg2 ...request.Option) (*mturk.UpdateQualificationTypeOutput, error) {
+func (m *MockMTurkAPI) UpdateQualificationTypeWithContext(arg0 context.Context, arg1 *mturk.UpdateQualificationTypeInput, arg2 ...request.Option) (*mturk.UpdateQualificationTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

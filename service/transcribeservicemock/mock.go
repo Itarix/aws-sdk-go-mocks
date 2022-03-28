@@ -5,7 +5,7 @@
 package transcribeservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	transcribeservice "github.com/aws/aws-sdk-go/service/transcribeservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabularyRequest(arg0 int
 }
 
 // CreateVocabularyWithContext mocks base method
-func (m *MockTranscribeServiceAPI) CreateVocabularyWithContext(arg0 aws.Context, arg1 *transcribeservice.CreateVocabularyInput, arg2 ...request.Option) (*transcribeservice.CreateVocabularyOutput, error) {
+func (m *MockTranscribeServiceAPI) CreateVocabularyWithContext(arg0 context.Context, arg1 *transcribeservice.CreateVocabularyInput, arg2 ...request.Option) (*transcribeservice.CreateVocabularyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) DeleteTranscriptionJobRequest(ar
 }
 
 // DeleteTranscriptionJobWithContext mocks base method
-func (m *MockTranscribeServiceAPI) DeleteTranscriptionJobWithContext(arg0 aws.Context, arg1 *transcribeservice.DeleteTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.DeleteTranscriptionJobOutput, error) {
+func (m *MockTranscribeServiceAPI) DeleteTranscriptionJobWithContext(arg0 context.Context, arg1 *transcribeservice.DeleteTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.DeleteTranscriptionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) DeleteVocabularyRequest(arg0 int
 }
 
 // DeleteVocabularyWithContext mocks base method
-func (m *MockTranscribeServiceAPI) DeleteVocabularyWithContext(arg0 aws.Context, arg1 *transcribeservice.DeleteVocabularyInput, arg2 ...request.Option) (*transcribeservice.DeleteVocabularyOutput, error) {
+func (m *MockTranscribeServiceAPI) DeleteVocabularyWithContext(arg0 context.Context, arg1 *transcribeservice.DeleteVocabularyInput, arg2 ...request.Option) (*transcribeservice.DeleteVocabularyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) GetTranscriptionJobRequest(arg0 
 }
 
 // GetTranscriptionJobWithContext mocks base method
-func (m *MockTranscribeServiceAPI) GetTranscriptionJobWithContext(arg0 aws.Context, arg1 *transcribeservice.GetTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.GetTranscriptionJobOutput, error) {
+func (m *MockTranscribeServiceAPI) GetTranscriptionJobWithContext(arg0 context.Context, arg1 *transcribeservice.GetTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.GetTranscriptionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) GetVocabularyRequest(arg0 interf
 }
 
 // GetVocabularyWithContext mocks base method
-func (m *MockTranscribeServiceAPI) GetVocabularyWithContext(arg0 aws.Context, arg1 *transcribeservice.GetVocabularyInput, arg2 ...request.Option) (*transcribeservice.GetVocabularyOutput, error) {
+func (m *MockTranscribeServiceAPI) GetVocabularyWithContext(arg0 context.Context, arg1 *transcribeservice.GetVocabularyInput, arg2 ...request.Option) (*transcribeservice.GetVocabularyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -315,7 +315,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) ListTranscriptionJobsPages(arg0,
 }
 
 // ListTranscriptionJobsPagesWithContext mocks base method
-func (m *MockTranscribeServiceAPI) ListTranscriptionJobsPagesWithContext(arg0 aws.Context, arg1 *transcribeservice.ListTranscriptionJobsInput, arg2 func(*transcribeservice.ListTranscriptionJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockTranscribeServiceAPI) ListTranscriptionJobsPagesWithContext(arg0 context.Context, arg1 *transcribeservice.ListTranscriptionJobsInput, arg2 func(*transcribeservice.ListTranscriptionJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -349,7 +349,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) ListTranscriptionJobsRequest(arg
 }
 
 // ListTranscriptionJobsWithContext mocks base method
-func (m *MockTranscribeServiceAPI) ListTranscriptionJobsWithContext(arg0 aws.Context, arg1 *transcribeservice.ListTranscriptionJobsInput, arg2 ...request.Option) (*transcribeservice.ListTranscriptionJobsOutput, error) {
+func (m *MockTranscribeServiceAPI) ListTranscriptionJobsWithContext(arg0 context.Context, arg1 *transcribeservice.ListTranscriptionJobsInput, arg2 ...request.Option) (*transcribeservice.ListTranscriptionJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -398,7 +398,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabulariesPages(arg0, arg1
 }
 
 // ListVocabulariesPagesWithContext mocks base method
-func (m *MockTranscribeServiceAPI) ListVocabulariesPagesWithContext(arg0 aws.Context, arg1 *transcribeservice.ListVocabulariesInput, arg2 func(*transcribeservice.ListVocabulariesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockTranscribeServiceAPI) ListVocabulariesPagesWithContext(arg0 context.Context, arg1 *transcribeservice.ListVocabulariesInput, arg2 func(*transcribeservice.ListVocabulariesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -432,7 +432,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabulariesRequest(arg0 int
 }
 
 // ListVocabulariesWithContext mocks base method
-func (m *MockTranscribeServiceAPI) ListVocabulariesWithContext(arg0 aws.Context, arg1 *transcribeservice.ListVocabulariesInput, arg2 ...request.Option) (*transcribeservice.ListVocabulariesOutput, error) {
+func (m *MockTranscribeServiceAPI) ListVocabulariesWithContext(arg0 context.Context, arg1 *transcribeservice.ListVocabulariesInput, arg2 ...request.Option) (*transcribeservice.ListVocabulariesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -482,7 +482,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) StartTranscriptionJobRequest(arg
 }
 
 // StartTranscriptionJobWithContext mocks base method
-func (m *MockTranscribeServiceAPI) StartTranscriptionJobWithContext(arg0 aws.Context, arg1 *transcribeservice.StartTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.StartTranscriptionJobOutput, error) {
+func (m *MockTranscribeServiceAPI) StartTranscriptionJobWithContext(arg0 context.Context, arg1 *transcribeservice.StartTranscriptionJobInput, arg2 ...request.Option) (*transcribeservice.StartTranscriptionJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockTranscribeServiceAPIMockRecorder) UpdateVocabularyRequest(arg0 int
 }
 
 // UpdateVocabularyWithContext mocks base method
-func (m *MockTranscribeServiceAPI) UpdateVocabularyWithContext(arg0 aws.Context, arg1 *transcribeservice.UpdateVocabularyInput, arg2 ...request.Option) (*transcribeservice.UpdateVocabularyOutput, error) {
+func (m *MockTranscribeServiceAPI) UpdateVocabularyWithContext(arg0 context.Context, arg1 *transcribeservice.UpdateVocabularyInput, arg2 ...request.Option) (*transcribeservice.UpdateVocabularyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

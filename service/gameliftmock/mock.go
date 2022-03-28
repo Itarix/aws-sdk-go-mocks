@@ -5,7 +5,7 @@
 package gameliftmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	gamelift "github.com/aws/aws-sdk-go/service/gamelift"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockGameLiftAPIMockRecorder) AcceptMatchRequest(arg0 interface{}) *gom
 }
 
 // AcceptMatchWithContext mocks base method
-func (m *MockGameLiftAPI) AcceptMatchWithContext(arg0 aws.Context, arg1 *gamelift.AcceptMatchInput, arg2 ...request.Option) (*gamelift.AcceptMatchOutput, error) {
+func (m *MockGameLiftAPI) AcceptMatchWithContext(arg0 context.Context, arg1 *gamelift.AcceptMatchInput, arg2 ...request.Option) (*gamelift.AcceptMatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateAliasRequest(arg0 interface{}) *gom
 }
 
 // CreateAliasWithContext mocks base method
-func (m *MockGameLiftAPI) CreateAliasWithContext(arg0 aws.Context, arg1 *gamelift.CreateAliasInput, arg2 ...request.Option) (*gamelift.CreateAliasOutput, error) {
+func (m *MockGameLiftAPI) CreateAliasWithContext(arg0 context.Context, arg1 *gamelift.CreateAliasInput, arg2 ...request.Option) (*gamelift.CreateAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateBuildRequest(arg0 interface{}) *gom
 }
 
 // CreateBuildWithContext mocks base method
-func (m *MockGameLiftAPI) CreateBuildWithContext(arg0 aws.Context, arg1 *gamelift.CreateBuildInput, arg2 ...request.Option) (*gamelift.CreateBuildOutput, error) {
+func (m *MockGameLiftAPI) CreateBuildWithContext(arg0 context.Context, arg1 *gamelift.CreateBuildInput, arg2 ...request.Option) (*gamelift.CreateBuildOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateFleetRequest(arg0 interface{}) *gom
 }
 
 // CreateFleetWithContext mocks base method
-func (m *MockGameLiftAPI) CreateFleetWithContext(arg0 aws.Context, arg1 *gamelift.CreateFleetInput, arg2 ...request.Option) (*gamelift.CreateFleetOutput, error) {
+func (m *MockGameLiftAPI) CreateFleetWithContext(arg0 context.Context, arg1 *gamelift.CreateFleetInput, arg2 ...request.Option) (*gamelift.CreateFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -281,7 +281,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateGameSessionQueueRequest(arg0 interf
 }
 
 // CreateGameSessionQueueWithContext mocks base method
-func (m *MockGameLiftAPI) CreateGameSessionQueueWithContext(arg0 aws.Context, arg1 *gamelift.CreateGameSessionQueueInput, arg2 ...request.Option) (*gamelift.CreateGameSessionQueueOutput, error) {
+func (m *MockGameLiftAPI) CreateGameSessionQueueWithContext(arg0 context.Context, arg1 *gamelift.CreateGameSessionQueueInput, arg2 ...request.Option) (*gamelift.CreateGameSessionQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateGameSessionRequest(arg0 interface{}
 }
 
 // CreateGameSessionWithContext mocks base method
-func (m *MockGameLiftAPI) CreateGameSessionWithContext(arg0 aws.Context, arg1 *gamelift.CreateGameSessionInput, arg2 ...request.Option) (*gamelift.CreateGameSessionOutput, error) {
+func (m *MockGameLiftAPI) CreateGameSessionWithContext(arg0 context.Context, arg1 *gamelift.CreateGameSessionInput, arg2 ...request.Option) (*gamelift.CreateGameSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateMatchmakingConfigurationRequest(arg
 }
 
 // CreateMatchmakingConfigurationWithContext mocks base method
-func (m *MockGameLiftAPI) CreateMatchmakingConfigurationWithContext(arg0 aws.Context, arg1 *gamelift.CreateMatchmakingConfigurationInput, arg2 ...request.Option) (*gamelift.CreateMatchmakingConfigurationOutput, error) {
+func (m *MockGameLiftAPI) CreateMatchmakingConfigurationWithContext(arg0 context.Context, arg1 *gamelift.CreateMatchmakingConfigurationInput, arg2 ...request.Option) (*gamelift.CreateMatchmakingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateMatchmakingRuleSetRequest(arg0 inte
 }
 
 // CreateMatchmakingRuleSetWithContext mocks base method
-func (m *MockGameLiftAPI) CreateMatchmakingRuleSetWithContext(arg0 aws.Context, arg1 *gamelift.CreateMatchmakingRuleSetInput, arg2 ...request.Option) (*gamelift.CreateMatchmakingRuleSetOutput, error) {
+func (m *MockGameLiftAPI) CreateMatchmakingRuleSetWithContext(arg0 context.Context, arg1 *gamelift.CreateMatchmakingRuleSetInput, arg2 ...request.Option) (*gamelift.CreateMatchmakingRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreatePlayerSessionRequest(arg0 interface
 }
 
 // CreatePlayerSessionWithContext mocks base method
-func (m *MockGameLiftAPI) CreatePlayerSessionWithContext(arg0 aws.Context, arg1 *gamelift.CreatePlayerSessionInput, arg2 ...request.Option) (*gamelift.CreatePlayerSessionOutput, error) {
+func (m *MockGameLiftAPI) CreatePlayerSessionWithContext(arg0 context.Context, arg1 *gamelift.CreatePlayerSessionInput, arg2 ...request.Option) (*gamelift.CreatePlayerSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreatePlayerSessionsRequest(arg0 interfac
 }
 
 // CreatePlayerSessionsWithContext mocks base method
-func (m *MockGameLiftAPI) CreatePlayerSessionsWithContext(arg0 aws.Context, arg1 *gamelift.CreatePlayerSessionsInput, arg2 ...request.Option) (*gamelift.CreatePlayerSessionsOutput, error) {
+func (m *MockGameLiftAPI) CreatePlayerSessionsWithContext(arg0 context.Context, arg1 *gamelift.CreatePlayerSessionsInput, arg2 ...request.Option) (*gamelift.CreatePlayerSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateVpcPeeringAuthorizationRequest(arg0
 }
 
 // CreateVpcPeeringAuthorizationWithContext mocks base method
-func (m *MockGameLiftAPI) CreateVpcPeeringAuthorizationWithContext(arg0 aws.Context, arg1 *gamelift.CreateVpcPeeringAuthorizationInput, arg2 ...request.Option) (*gamelift.CreateVpcPeeringAuthorizationOutput, error) {
+func (m *MockGameLiftAPI) CreateVpcPeeringAuthorizationWithContext(arg0 context.Context, arg1 *gamelift.CreateVpcPeeringAuthorizationInput, arg2 ...request.Option) (*gamelift.CreateVpcPeeringAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockGameLiftAPIMockRecorder) CreateVpcPeeringConnectionRequest(arg0 in
 }
 
 // CreateVpcPeeringConnectionWithContext mocks base method
-func (m *MockGameLiftAPI) CreateVpcPeeringConnectionWithContext(arg0 aws.Context, arg1 *gamelift.CreateVpcPeeringConnectionInput, arg2 ...request.Option) (*gamelift.CreateVpcPeeringConnectionOutput, error) {
+func (m *MockGameLiftAPI) CreateVpcPeeringConnectionWithContext(arg0 context.Context, arg1 *gamelift.CreateVpcPeeringConnectionInput, arg2 ...request.Option) (*gamelift.CreateVpcPeeringConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteAliasRequest(arg0 interface{}) *gom
 }
 
 // DeleteAliasWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteAliasWithContext(arg0 aws.Context, arg1 *gamelift.DeleteAliasInput, arg2 ...request.Option) (*gamelift.DeleteAliasOutput, error) {
+func (m *MockGameLiftAPI) DeleteAliasWithContext(arg0 context.Context, arg1 *gamelift.DeleteAliasInput, arg2 ...request.Option) (*gamelift.DeleteAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteBuildRequest(arg0 interface{}) *gom
 }
 
 // DeleteBuildWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteBuildWithContext(arg0 aws.Context, arg1 *gamelift.DeleteBuildInput, arg2 ...request.Option) (*gamelift.DeleteBuildOutput, error) {
+func (m *MockGameLiftAPI) DeleteBuildWithContext(arg0 context.Context, arg1 *gamelift.DeleteBuildInput, arg2 ...request.Option) (*gamelift.DeleteBuildOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteFleetRequest(arg0 interface{}) *gom
 }
 
 // DeleteFleetWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteFleetWithContext(arg0 aws.Context, arg1 *gamelift.DeleteFleetInput, arg2 ...request.Option) (*gamelift.DeleteFleetOutput, error) {
+func (m *MockGameLiftAPI) DeleteFleetWithContext(arg0 context.Context, arg1 *gamelift.DeleteFleetInput, arg2 ...request.Option) (*gamelift.DeleteFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteGameSessionQueueRequest(arg0 interf
 }
 
 // DeleteGameSessionQueueWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteGameSessionQueueWithContext(arg0 aws.Context, arg1 *gamelift.DeleteGameSessionQueueInput, arg2 ...request.Option) (*gamelift.DeleteGameSessionQueueOutput, error) {
+func (m *MockGameLiftAPI) DeleteGameSessionQueueWithContext(arg0 context.Context, arg1 *gamelift.DeleteGameSessionQueueInput, arg2 ...request.Option) (*gamelift.DeleteGameSessionQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteMatchmakingConfigurationRequest(arg
 }
 
 // DeleteMatchmakingConfigurationWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteMatchmakingConfigurationWithContext(arg0 aws.Context, arg1 *gamelift.DeleteMatchmakingConfigurationInput, arg2 ...request.Option) (*gamelift.DeleteMatchmakingConfigurationOutput, error) {
+func (m *MockGameLiftAPI) DeleteMatchmakingConfigurationWithContext(arg0 context.Context, arg1 *gamelift.DeleteMatchmakingConfigurationInput, arg2 ...request.Option) (*gamelift.DeleteMatchmakingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteScalingPolicyRequest(arg0 interface
 }
 
 // DeleteScalingPolicyWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteScalingPolicyWithContext(arg0 aws.Context, arg1 *gamelift.DeleteScalingPolicyInput, arg2 ...request.Option) (*gamelift.DeleteScalingPolicyOutput, error) {
+func (m *MockGameLiftAPI) DeleteScalingPolicyWithContext(arg0 context.Context, arg1 *gamelift.DeleteScalingPolicyInput, arg2 ...request.Option) (*gamelift.DeleteScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteVpcPeeringAuthorizationRequest(arg0
 }
 
 // DeleteVpcPeeringAuthorizationWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteVpcPeeringAuthorizationWithContext(arg0 aws.Context, arg1 *gamelift.DeleteVpcPeeringAuthorizationInput, arg2 ...request.Option) (*gamelift.DeleteVpcPeeringAuthorizationOutput, error) {
+func (m *MockGameLiftAPI) DeleteVpcPeeringAuthorizationWithContext(arg0 context.Context, arg1 *gamelift.DeleteVpcPeeringAuthorizationInput, arg2 ...request.Option) (*gamelift.DeleteVpcPeeringAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteVpcPeeringConnectionRequest(arg0 in
 }
 
 // DeleteVpcPeeringConnectionWithContext mocks base method
-func (m *MockGameLiftAPI) DeleteVpcPeeringConnectionWithContext(arg0 aws.Context, arg1 *gamelift.DeleteVpcPeeringConnectionInput, arg2 ...request.Option) (*gamelift.DeleteVpcPeeringConnectionOutput, error) {
+func (m *MockGameLiftAPI) DeleteVpcPeeringConnectionWithContext(arg0 context.Context, arg1 *gamelift.DeleteVpcPeeringConnectionInput, arg2 ...request.Option) (*gamelift.DeleteVpcPeeringConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeAliasRequest(arg0 interface{}) *g
 }
 
 // DescribeAliasWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeAliasWithContext(arg0 aws.Context, arg1 *gamelift.DescribeAliasInput, arg2 ...request.Option) (*gamelift.DescribeAliasOutput, error) {
+func (m *MockGameLiftAPI) DescribeAliasWithContext(arg0 context.Context, arg1 *gamelift.DescribeAliasInput, arg2 ...request.Option) (*gamelift.DescribeAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeBuildRequest(arg0 interface{}) *g
 }
 
 // DescribeBuildWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeBuildWithContext(arg0 aws.Context, arg1 *gamelift.DescribeBuildInput, arg2 ...request.Option) (*gamelift.DescribeBuildOutput, error) {
+func (m *MockGameLiftAPI) DescribeBuildWithContext(arg0 context.Context, arg1 *gamelift.DescribeBuildInput, arg2 ...request.Option) (*gamelift.DescribeBuildOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeEC2InstanceLimitsRequest(arg0 int
 }
 
 // DescribeEC2InstanceLimitsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeEC2InstanceLimitsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeEC2InstanceLimitsInput, arg2 ...request.Option) (*gamelift.DescribeEC2InstanceLimitsOutput, error) {
+func (m *MockGameLiftAPI) DescribeEC2InstanceLimitsWithContext(arg0 context.Context, arg1 *gamelift.DescribeEC2InstanceLimitsInput, arg2 ...request.Option) (*gamelift.DescribeEC2InstanceLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetAttributesRequest(arg0 inter
 }
 
 // DescribeFleetAttributesWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeFleetAttributesWithContext(arg0 aws.Context, arg1 *gamelift.DescribeFleetAttributesInput, arg2 ...request.Option) (*gamelift.DescribeFleetAttributesOutput, error) {
+func (m *MockGameLiftAPI) DescribeFleetAttributesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetAttributesInput, arg2 ...request.Option) (*gamelift.DescribeFleetAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetCapacityRequest(arg0 interfa
 }
 
 // DescribeFleetCapacityWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeFleetCapacityWithContext(arg0 aws.Context, arg1 *gamelift.DescribeFleetCapacityInput, arg2 ...request.Option) (*gamelift.DescribeFleetCapacityOutput, error) {
+func (m *MockGameLiftAPI) DescribeFleetCapacityWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetCapacityInput, arg2 ...request.Option) (*gamelift.DescribeFleetCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetEventsRequest(arg0 interface
 }
 
 // DescribeFleetEventsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeFleetEventsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeFleetEventsInput, arg2 ...request.Option) (*gamelift.DescribeFleetEventsOutput, error) {
+func (m *MockGameLiftAPI) DescribeFleetEventsWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetEventsInput, arg2 ...request.Option) (*gamelift.DescribeFleetEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetPortSettingsRequest(arg0 int
 }
 
 // DescribeFleetPortSettingsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeFleetPortSettingsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeFleetPortSettingsInput, arg2 ...request.Option) (*gamelift.DescribeFleetPortSettingsOutput, error) {
+func (m *MockGameLiftAPI) DescribeFleetPortSettingsWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetPortSettingsInput, arg2 ...request.Option) (*gamelift.DescribeFleetPortSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetUtilizationRequest(arg0 inte
 }
 
 // DescribeFleetUtilizationWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeFleetUtilizationWithContext(arg0 aws.Context, arg1 *gamelift.DescribeFleetUtilizationInput, arg2 ...request.Option) (*gamelift.DescribeFleetUtilizationOutput, error) {
+func (m *MockGameLiftAPI) DescribeFleetUtilizationWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetUtilizationInput, arg2 ...request.Option) (*gamelift.DescribeFleetUtilizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionDetailsRequest(arg0 in
 }
 
 // DescribeGameSessionDetailsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeGameSessionDetailsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeGameSessionDetailsInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionDetailsOutput, error) {
+func (m *MockGameLiftAPI) DescribeGameSessionDetailsWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionDetailsInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionDetailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionPlacementRequest(arg0 
 }
 
 // DescribeGameSessionPlacementWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeGameSessionPlacementWithContext(arg0 aws.Context, arg1 *gamelift.DescribeGameSessionPlacementInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionPlacementOutput, error) {
+func (m *MockGameLiftAPI) DescribeGameSessionPlacementWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionPlacementInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionPlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionQueuesRequest(arg0 int
 }
 
 // DescribeGameSessionQueuesWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeGameSessionQueuesWithContext(arg0 aws.Context, arg1 *gamelift.DescribeGameSessionQueuesInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionQueuesOutput, error) {
+func (m *MockGameLiftAPI) DescribeGameSessionQueuesWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionQueuesInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionsRequest(arg0 interfac
 }
 
 // DescribeGameSessionsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeGameSessionsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeGameSessionsInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionsOutput, error) {
+func (m *MockGameLiftAPI) DescribeGameSessionsWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionsInput, arg2 ...request.Option) (*gamelift.DescribeGameSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeInstancesRequest(arg0 interface{}
 }
 
 // DescribeInstancesWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeInstancesWithContext(arg0 aws.Context, arg1 *gamelift.DescribeInstancesInput, arg2 ...request.Option) (*gamelift.DescribeInstancesOutput, error) {
+func (m *MockGameLiftAPI) DescribeInstancesWithContext(arg0 context.Context, arg1 *gamelift.DescribeInstancesInput, arg2 ...request.Option) (*gamelift.DescribeInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1731,7 +1731,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingConfigurationsRequest(
 }
 
 // DescribeMatchmakingConfigurationsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeMatchmakingConfigurationsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeMatchmakingConfigurationsInput, arg2 ...request.Option) (*gamelift.DescribeMatchmakingConfigurationsOutput, error) {
+func (m *MockGameLiftAPI) DescribeMatchmakingConfigurationsWithContext(arg0 context.Context, arg1 *gamelift.DescribeMatchmakingConfigurationsInput, arg2 ...request.Option) (*gamelift.DescribeMatchmakingConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1796,7 +1796,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingRuleSetsRequest(arg0 i
 }
 
 // DescribeMatchmakingRuleSetsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeMatchmakingRuleSetsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeMatchmakingRuleSetsInput, arg2 ...request.Option) (*gamelift.DescribeMatchmakingRuleSetsOutput, error) {
+func (m *MockGameLiftAPI) DescribeMatchmakingRuleSetsWithContext(arg0 context.Context, arg1 *gamelift.DescribeMatchmakingRuleSetsInput, arg2 ...request.Option) (*gamelift.DescribeMatchmakingRuleSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingRuleSetsWithContext(ar
 }
 
 // DescribeMatchmakingWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeMatchmakingWithContext(arg0 aws.Context, arg1 *gamelift.DescribeMatchmakingInput, arg2 ...request.Option) (*gamelift.DescribeMatchmakingOutput, error) {
+func (m *MockGameLiftAPI) DescribeMatchmakingWithContext(arg0 context.Context, arg1 *gamelift.DescribeMatchmakingInput, arg2 ...request.Option) (*gamelift.DescribeMatchmakingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribePlayerSessionsRequest(arg0 interf
 }
 
 // DescribePlayerSessionsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribePlayerSessionsWithContext(arg0 aws.Context, arg1 *gamelift.DescribePlayerSessionsInput, arg2 ...request.Option) (*gamelift.DescribePlayerSessionsOutput, error) {
+func (m *MockGameLiftAPI) DescribePlayerSessionsWithContext(arg0 context.Context, arg1 *gamelift.DescribePlayerSessionsInput, arg2 ...request.Option) (*gamelift.DescribePlayerSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeRuntimeConfigurationRequest(arg0 
 }
 
 // DescribeRuntimeConfigurationWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeRuntimeConfigurationWithContext(arg0 aws.Context, arg1 *gamelift.DescribeRuntimeConfigurationInput, arg2 ...request.Option) (*gamelift.DescribeRuntimeConfigurationOutput, error) {
+func (m *MockGameLiftAPI) DescribeRuntimeConfigurationWithContext(arg0 context.Context, arg1 *gamelift.DescribeRuntimeConfigurationInput, arg2 ...request.Option) (*gamelift.DescribeRuntimeConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeScalingPoliciesRequest(arg0 inter
 }
 
 // DescribeScalingPoliciesWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeScalingPoliciesWithContext(arg0 aws.Context, arg1 *gamelift.DescribeScalingPoliciesInput, arg2 ...request.Option) (*gamelift.DescribeScalingPoliciesOutput, error) {
+func (m *MockGameLiftAPI) DescribeScalingPoliciesWithContext(arg0 context.Context, arg1 *gamelift.DescribeScalingPoliciesInput, arg2 ...request.Option) (*gamelift.DescribeScalingPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeVpcPeeringAuthorizationsRequest(a
 }
 
 // DescribeVpcPeeringAuthorizationsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeVpcPeeringAuthorizationsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeVpcPeeringAuthorizationsInput, arg2 ...request.Option) (*gamelift.DescribeVpcPeeringAuthorizationsOutput, error) {
+func (m *MockGameLiftAPI) DescribeVpcPeeringAuthorizationsWithContext(arg0 context.Context, arg1 *gamelift.DescribeVpcPeeringAuthorizationsInput, arg2 ...request.Option) (*gamelift.DescribeVpcPeeringAuthorizationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeVpcPeeringConnectionsRequest(arg0
 }
 
 // DescribeVpcPeeringConnectionsWithContext mocks base method
-func (m *MockGameLiftAPI) DescribeVpcPeeringConnectionsWithContext(arg0 aws.Context, arg1 *gamelift.DescribeVpcPeeringConnectionsInput, arg2 ...request.Option) (*gamelift.DescribeVpcPeeringConnectionsOutput, error) {
+func (m *MockGameLiftAPI) DescribeVpcPeeringConnectionsWithContext(arg0 context.Context, arg1 *gamelift.DescribeVpcPeeringConnectionsInput, arg2 ...request.Option) (*gamelift.DescribeVpcPeeringConnectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockGameLiftAPIMockRecorder) GetGameSessionLogUrlRequest(arg0 interfac
 }
 
 // GetGameSessionLogUrlWithContext mocks base method
-func (m *MockGameLiftAPI) GetGameSessionLogUrlWithContext(arg0 aws.Context, arg1 *gamelift.GetGameSessionLogUrlInput, arg2 ...request.Option) (*gamelift.GetGameSessionLogUrlOutput, error) {
+func (m *MockGameLiftAPI) GetGameSessionLogUrlWithContext(arg0 context.Context, arg1 *gamelift.GetGameSessionLogUrlInput, arg2 ...request.Option) (*gamelift.GetGameSessionLogUrlOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockGameLiftAPIMockRecorder) GetInstanceAccessRequest(arg0 interface{}
 }
 
 // GetInstanceAccessWithContext mocks base method
-func (m *MockGameLiftAPI) GetInstanceAccessWithContext(arg0 aws.Context, arg1 *gamelift.GetInstanceAccessInput, arg2 ...request.Option) (*gamelift.GetInstanceAccessOutput, error) {
+func (m *MockGameLiftAPI) GetInstanceAccessWithContext(arg0 context.Context, arg1 *gamelift.GetInstanceAccessInput, arg2 ...request.Option) (*gamelift.GetInstanceAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockGameLiftAPIMockRecorder) ListAliasesRequest(arg0 interface{}) *gom
 }
 
 // ListAliasesWithContext mocks base method
-func (m *MockGameLiftAPI) ListAliasesWithContext(arg0 aws.Context, arg1 *gamelift.ListAliasesInput, arg2 ...request.Option) (*gamelift.ListAliasesOutput, error) {
+func (m *MockGameLiftAPI) ListAliasesWithContext(arg0 context.Context, arg1 *gamelift.ListAliasesInput, arg2 ...request.Option) (*gamelift.ListAliasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockGameLiftAPIMockRecorder) ListBuildsRequest(arg0 interface{}) *gomo
 }
 
 // ListBuildsWithContext mocks base method
-func (m *MockGameLiftAPI) ListBuildsWithContext(arg0 aws.Context, arg1 *gamelift.ListBuildsInput, arg2 ...request.Option) (*gamelift.ListBuildsOutput, error) {
+func (m *MockGameLiftAPI) ListBuildsWithContext(arg0 context.Context, arg1 *gamelift.ListBuildsInput, arg2 ...request.Option) (*gamelift.ListBuildsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2316,7 +2316,7 @@ func (mr *MockGameLiftAPIMockRecorder) ListFleetsRequest(arg0 interface{}) *gomo
 }
 
 // ListFleetsWithContext mocks base method
-func (m *MockGameLiftAPI) ListFleetsWithContext(arg0 aws.Context, arg1 *gamelift.ListFleetsInput, arg2 ...request.Option) (*gamelift.ListFleetsOutput, error) {
+func (m *MockGameLiftAPI) ListFleetsWithContext(arg0 context.Context, arg1 *gamelift.ListFleetsInput, arg2 ...request.Option) (*gamelift.ListFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2366,7 +2366,7 @@ func (mr *MockGameLiftAPIMockRecorder) PutScalingPolicyRequest(arg0 interface{})
 }
 
 // PutScalingPolicyWithContext mocks base method
-func (m *MockGameLiftAPI) PutScalingPolicyWithContext(arg0 aws.Context, arg1 *gamelift.PutScalingPolicyInput, arg2 ...request.Option) (*gamelift.PutScalingPolicyOutput, error) {
+func (m *MockGameLiftAPI) PutScalingPolicyWithContext(arg0 context.Context, arg1 *gamelift.PutScalingPolicyInput, arg2 ...request.Option) (*gamelift.PutScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2416,7 +2416,7 @@ func (mr *MockGameLiftAPIMockRecorder) RequestUploadCredentialsRequest(arg0 inte
 }
 
 // RequestUploadCredentialsWithContext mocks base method
-func (m *MockGameLiftAPI) RequestUploadCredentialsWithContext(arg0 aws.Context, arg1 *gamelift.RequestUploadCredentialsInput, arg2 ...request.Option) (*gamelift.RequestUploadCredentialsOutput, error) {
+func (m *MockGameLiftAPI) RequestUploadCredentialsWithContext(arg0 context.Context, arg1 *gamelift.RequestUploadCredentialsInput, arg2 ...request.Option) (*gamelift.RequestUploadCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2466,7 +2466,7 @@ func (mr *MockGameLiftAPIMockRecorder) ResolveAliasRequest(arg0 interface{}) *go
 }
 
 // ResolveAliasWithContext mocks base method
-func (m *MockGameLiftAPI) ResolveAliasWithContext(arg0 aws.Context, arg1 *gamelift.ResolveAliasInput, arg2 ...request.Option) (*gamelift.ResolveAliasOutput, error) {
+func (m *MockGameLiftAPI) ResolveAliasWithContext(arg0 context.Context, arg1 *gamelift.ResolveAliasInput, arg2 ...request.Option) (*gamelift.ResolveAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2516,7 +2516,7 @@ func (mr *MockGameLiftAPIMockRecorder) SearchGameSessionsRequest(arg0 interface{
 }
 
 // SearchGameSessionsWithContext mocks base method
-func (m *MockGameLiftAPI) SearchGameSessionsWithContext(arg0 aws.Context, arg1 *gamelift.SearchGameSessionsInput, arg2 ...request.Option) (*gamelift.SearchGameSessionsOutput, error) {
+func (m *MockGameLiftAPI) SearchGameSessionsWithContext(arg0 context.Context, arg1 *gamelift.SearchGameSessionsInput, arg2 ...request.Option) (*gamelift.SearchGameSessionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2566,7 +2566,7 @@ func (mr *MockGameLiftAPIMockRecorder) StartFleetActionsRequest(arg0 interface{}
 }
 
 // StartFleetActionsWithContext mocks base method
-func (m *MockGameLiftAPI) StartFleetActionsWithContext(arg0 aws.Context, arg1 *gamelift.StartFleetActionsInput, arg2 ...request.Option) (*gamelift.StartFleetActionsOutput, error) {
+func (m *MockGameLiftAPI) StartFleetActionsWithContext(arg0 context.Context, arg1 *gamelift.StartFleetActionsInput, arg2 ...request.Option) (*gamelift.StartFleetActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2616,7 +2616,7 @@ func (mr *MockGameLiftAPIMockRecorder) StartGameSessionPlacementRequest(arg0 int
 }
 
 // StartGameSessionPlacementWithContext mocks base method
-func (m *MockGameLiftAPI) StartGameSessionPlacementWithContext(arg0 aws.Context, arg1 *gamelift.StartGameSessionPlacementInput, arg2 ...request.Option) (*gamelift.StartGameSessionPlacementOutput, error) {
+func (m *MockGameLiftAPI) StartGameSessionPlacementWithContext(arg0 context.Context, arg1 *gamelift.StartGameSessionPlacementInput, arg2 ...request.Option) (*gamelift.StartGameSessionPlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2666,7 +2666,7 @@ func (mr *MockGameLiftAPIMockRecorder) StartMatchBackfillRequest(arg0 interface{
 }
 
 // StartMatchBackfillWithContext mocks base method
-func (m *MockGameLiftAPI) StartMatchBackfillWithContext(arg0 aws.Context, arg1 *gamelift.StartMatchBackfillInput, arg2 ...request.Option) (*gamelift.StartMatchBackfillOutput, error) {
+func (m *MockGameLiftAPI) StartMatchBackfillWithContext(arg0 context.Context, arg1 *gamelift.StartMatchBackfillInput, arg2 ...request.Option) (*gamelift.StartMatchBackfillOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2716,7 +2716,7 @@ func (mr *MockGameLiftAPIMockRecorder) StartMatchmakingRequest(arg0 interface{})
 }
 
 // StartMatchmakingWithContext mocks base method
-func (m *MockGameLiftAPI) StartMatchmakingWithContext(arg0 aws.Context, arg1 *gamelift.StartMatchmakingInput, arg2 ...request.Option) (*gamelift.StartMatchmakingOutput, error) {
+func (m *MockGameLiftAPI) StartMatchmakingWithContext(arg0 context.Context, arg1 *gamelift.StartMatchmakingInput, arg2 ...request.Option) (*gamelift.StartMatchmakingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2766,7 +2766,7 @@ func (mr *MockGameLiftAPIMockRecorder) StopFleetActionsRequest(arg0 interface{})
 }
 
 // StopFleetActionsWithContext mocks base method
-func (m *MockGameLiftAPI) StopFleetActionsWithContext(arg0 aws.Context, arg1 *gamelift.StopFleetActionsInput, arg2 ...request.Option) (*gamelift.StopFleetActionsOutput, error) {
+func (m *MockGameLiftAPI) StopFleetActionsWithContext(arg0 context.Context, arg1 *gamelift.StopFleetActionsInput, arg2 ...request.Option) (*gamelift.StopFleetActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2816,7 +2816,7 @@ func (mr *MockGameLiftAPIMockRecorder) StopGameSessionPlacementRequest(arg0 inte
 }
 
 // StopGameSessionPlacementWithContext mocks base method
-func (m *MockGameLiftAPI) StopGameSessionPlacementWithContext(arg0 aws.Context, arg1 *gamelift.StopGameSessionPlacementInput, arg2 ...request.Option) (*gamelift.StopGameSessionPlacementOutput, error) {
+func (m *MockGameLiftAPI) StopGameSessionPlacementWithContext(arg0 context.Context, arg1 *gamelift.StopGameSessionPlacementInput, arg2 ...request.Option) (*gamelift.StopGameSessionPlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2866,7 +2866,7 @@ func (mr *MockGameLiftAPIMockRecorder) StopMatchmakingRequest(arg0 interface{}) 
 }
 
 // StopMatchmakingWithContext mocks base method
-func (m *MockGameLiftAPI) StopMatchmakingWithContext(arg0 aws.Context, arg1 *gamelift.StopMatchmakingInput, arg2 ...request.Option) (*gamelift.StopMatchmakingOutput, error) {
+func (m *MockGameLiftAPI) StopMatchmakingWithContext(arg0 context.Context, arg1 *gamelift.StopMatchmakingInput, arg2 ...request.Option) (*gamelift.StopMatchmakingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2916,7 +2916,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateAliasRequest(arg0 interface{}) *gom
 }
 
 // UpdateAliasWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateAliasWithContext(arg0 aws.Context, arg1 *gamelift.UpdateAliasInput, arg2 ...request.Option) (*gamelift.UpdateAliasOutput, error) {
+func (m *MockGameLiftAPI) UpdateAliasWithContext(arg0 context.Context, arg1 *gamelift.UpdateAliasInput, arg2 ...request.Option) (*gamelift.UpdateAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2966,7 +2966,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateBuildRequest(arg0 interface{}) *gom
 }
 
 // UpdateBuildWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateBuildWithContext(arg0 aws.Context, arg1 *gamelift.UpdateBuildInput, arg2 ...request.Option) (*gamelift.UpdateBuildOutput, error) {
+func (m *MockGameLiftAPI) UpdateBuildWithContext(arg0 context.Context, arg1 *gamelift.UpdateBuildInput, arg2 ...request.Option) (*gamelift.UpdateBuildOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3016,7 +3016,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateFleetAttributesRequest(arg0 interfa
 }
 
 // UpdateFleetAttributesWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateFleetAttributesWithContext(arg0 aws.Context, arg1 *gamelift.UpdateFleetAttributesInput, arg2 ...request.Option) (*gamelift.UpdateFleetAttributesOutput, error) {
+func (m *MockGameLiftAPI) UpdateFleetAttributesWithContext(arg0 context.Context, arg1 *gamelift.UpdateFleetAttributesInput, arg2 ...request.Option) (*gamelift.UpdateFleetAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3066,7 +3066,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateFleetCapacityRequest(arg0 interface
 }
 
 // UpdateFleetCapacityWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateFleetCapacityWithContext(arg0 aws.Context, arg1 *gamelift.UpdateFleetCapacityInput, arg2 ...request.Option) (*gamelift.UpdateFleetCapacityOutput, error) {
+func (m *MockGameLiftAPI) UpdateFleetCapacityWithContext(arg0 context.Context, arg1 *gamelift.UpdateFleetCapacityInput, arg2 ...request.Option) (*gamelift.UpdateFleetCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3116,7 +3116,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateFleetPortSettingsRequest(arg0 inter
 }
 
 // UpdateFleetPortSettingsWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateFleetPortSettingsWithContext(arg0 aws.Context, arg1 *gamelift.UpdateFleetPortSettingsInput, arg2 ...request.Option) (*gamelift.UpdateFleetPortSettingsOutput, error) {
+func (m *MockGameLiftAPI) UpdateFleetPortSettingsWithContext(arg0 context.Context, arg1 *gamelift.UpdateFleetPortSettingsInput, arg2 ...request.Option) (*gamelift.UpdateFleetPortSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3181,7 +3181,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateGameSessionQueueRequest(arg0 interf
 }
 
 // UpdateGameSessionQueueWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateGameSessionQueueWithContext(arg0 aws.Context, arg1 *gamelift.UpdateGameSessionQueueInput, arg2 ...request.Option) (*gamelift.UpdateGameSessionQueueOutput, error) {
+func (m *MockGameLiftAPI) UpdateGameSessionQueueWithContext(arg0 context.Context, arg1 *gamelift.UpdateGameSessionQueueInput, arg2 ...request.Option) (*gamelift.UpdateGameSessionQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3216,7 +3216,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateGameSessionRequest(arg0 interface{}
 }
 
 // UpdateGameSessionWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateGameSessionWithContext(arg0 aws.Context, arg1 *gamelift.UpdateGameSessionInput, arg2 ...request.Option) (*gamelift.UpdateGameSessionOutput, error) {
+func (m *MockGameLiftAPI) UpdateGameSessionWithContext(arg0 context.Context, arg1 *gamelift.UpdateGameSessionInput, arg2 ...request.Option) (*gamelift.UpdateGameSessionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3266,7 +3266,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateMatchmakingConfigurationRequest(arg
 }
 
 // UpdateMatchmakingConfigurationWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateMatchmakingConfigurationWithContext(arg0 aws.Context, arg1 *gamelift.UpdateMatchmakingConfigurationInput, arg2 ...request.Option) (*gamelift.UpdateMatchmakingConfigurationOutput, error) {
+func (m *MockGameLiftAPI) UpdateMatchmakingConfigurationWithContext(arg0 context.Context, arg1 *gamelift.UpdateMatchmakingConfigurationInput, arg2 ...request.Option) (*gamelift.UpdateMatchmakingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3316,7 +3316,7 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateRuntimeConfigurationRequest(arg0 in
 }
 
 // UpdateRuntimeConfigurationWithContext mocks base method
-func (m *MockGameLiftAPI) UpdateRuntimeConfigurationWithContext(arg0 aws.Context, arg1 *gamelift.UpdateRuntimeConfigurationInput, arg2 ...request.Option) (*gamelift.UpdateRuntimeConfigurationOutput, error) {
+func (m *MockGameLiftAPI) UpdateRuntimeConfigurationWithContext(arg0 context.Context, arg1 *gamelift.UpdateRuntimeConfigurationInput, arg2 ...request.Option) (*gamelift.UpdateRuntimeConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3366,7 +3366,7 @@ func (mr *MockGameLiftAPIMockRecorder) ValidateMatchmakingRuleSetRequest(arg0 in
 }
 
 // ValidateMatchmakingRuleSetWithContext mocks base method
-func (m *MockGameLiftAPI) ValidateMatchmakingRuleSetWithContext(arg0 aws.Context, arg1 *gamelift.ValidateMatchmakingRuleSetInput, arg2 ...request.Option) (*gamelift.ValidateMatchmakingRuleSetOutput, error) {
+func (m *MockGameLiftAPI) ValidateMatchmakingRuleSetWithContext(arg0 context.Context, arg1 *gamelift.ValidateMatchmakingRuleSetInput, arg2 ...request.Option) (*gamelift.ValidateMatchmakingRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

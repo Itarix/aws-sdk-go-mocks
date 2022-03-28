@@ -5,7 +5,7 @@
 package apigatewayv2mock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	apigatewayv2 "github.com/aws/aws-sdk-go/service/apigatewayv2"
 	gomock "github.com/golang/mock/gomock"
@@ -81,7 +81,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateApiMappingRequest(arg0 interfac
 }
 
 // CreateApiMappingWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateApiMappingWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateApiMappingInput, arg2 ...request.Option) (*apigatewayv2.CreateApiMappingOutput, error) {
+func (m *MockApiGatewayV2API) CreateApiMappingWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateApiMappingInput, arg2 ...request.Option) (*apigatewayv2.CreateApiMappingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateApiRequest(arg0 interface{}) *g
 }
 
 // CreateApiWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateApiWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateApiInput, arg2 ...request.Option) (*apigatewayv2.CreateApiOutput, error) {
+func (m *MockApiGatewayV2API) CreateApiWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateApiInput, arg2 ...request.Option) (*apigatewayv2.CreateApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateAuthorizerRequest(arg0 interfac
 }
 
 // CreateAuthorizerWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateAuthorizerWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.CreateAuthorizerOutput, error) {
+func (m *MockApiGatewayV2API) CreateAuthorizerWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.CreateAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateDeploymentRequest(arg0 interfac
 }
 
 // CreateDeploymentWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateDeploymentWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateDeploymentInput, arg2 ...request.Option) (*apigatewayv2.CreateDeploymentOutput, error) {
+func (m *MockApiGatewayV2API) CreateDeploymentWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateDeploymentInput, arg2 ...request.Option) (*apigatewayv2.CreateDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateDomainNameRequest(arg0 interfac
 }
 
 // CreateDomainNameWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateDomainNameWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateDomainNameInput, arg2 ...request.Option) (*apigatewayv2.CreateDomainNameOutput, error) {
+func (m *MockApiGatewayV2API) CreateDomainNameWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateDomainNameInput, arg2 ...request.Option) (*apigatewayv2.CreateDomainNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -346,7 +346,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateIntegrationResponseRequest(arg0
 }
 
 // CreateIntegrationResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.CreateIntegrationResponseOutput, error) {
+func (m *MockApiGatewayV2API) CreateIntegrationResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.CreateIntegrationResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateIntegrationResponseWithContext(
 }
 
 // CreateIntegrationWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateIntegrationWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateIntegrationInput, arg2 ...request.Option) (*apigatewayv2.CreateIntegrationOutput, error) {
+func (m *MockApiGatewayV2API) CreateIntegrationWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateIntegrationInput, arg2 ...request.Option) (*apigatewayv2.CreateIntegrationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateModelRequest(arg0 interface{}) 
 }
 
 // CreateModelWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateModelWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateModelInput, arg2 ...request.Option) (*apigatewayv2.CreateModelOutput, error) {
+func (m *MockApiGatewayV2API) CreateModelWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateModelInput, arg2 ...request.Option) (*apigatewayv2.CreateModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -496,7 +496,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateRouteResponseRequest(arg0 inter
 }
 
 // CreateRouteResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateRouteResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.CreateRouteResponseOutput, error) {
+func (m *MockApiGatewayV2API) CreateRouteResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.CreateRouteResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateRouteResponseWithContext(arg0, 
 }
 
 // CreateRouteWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateRouteWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateRouteInput, arg2 ...request.Option) (*apigatewayv2.CreateRouteOutput, error) {
+func (m *MockApiGatewayV2API) CreateRouteWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateRouteInput, arg2 ...request.Option) (*apigatewayv2.CreateRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateStageRequest(arg0 interface{}) 
 }
 
 // CreateStageWithContext mocks base method
-func (m *MockApiGatewayV2API) CreateStageWithContext(arg0 aws.Context, arg1 *apigatewayv2.CreateStageInput, arg2 ...request.Option) (*apigatewayv2.CreateStageOutput, error) {
+func (m *MockApiGatewayV2API) CreateStageWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateStageInput, arg2 ...request.Option) (*apigatewayv2.CreateStageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteApiMappingRequest(arg0 interfac
 }
 
 // DeleteApiMappingWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteApiMappingWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteApiMappingInput, arg2 ...request.Option) (*apigatewayv2.DeleteApiMappingOutput, error) {
+func (m *MockApiGatewayV2API) DeleteApiMappingWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteApiMappingInput, arg2 ...request.Option) (*apigatewayv2.DeleteApiMappingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteApiRequest(arg0 interface{}) *g
 }
 
 // DeleteApiWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteApiWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteApiInput, arg2 ...request.Option) (*apigatewayv2.DeleteApiOutput, error) {
+func (m *MockApiGatewayV2API) DeleteApiWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteApiInput, arg2 ...request.Option) (*apigatewayv2.DeleteApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteAuthorizerRequest(arg0 interfac
 }
 
 // DeleteAuthorizerWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteAuthorizerWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.DeleteAuthorizerOutput, error) {
+func (m *MockApiGatewayV2API) DeleteAuthorizerWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.DeleteAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteDeploymentRequest(arg0 interfac
 }
 
 // DeleteDeploymentWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteDeploymentWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteDeploymentInput, arg2 ...request.Option) (*apigatewayv2.DeleteDeploymentOutput, error) {
+func (m *MockApiGatewayV2API) DeleteDeploymentWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteDeploymentInput, arg2 ...request.Option) (*apigatewayv2.DeleteDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteDomainNameRequest(arg0 interfac
 }
 
 // DeleteDomainNameWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteDomainNameWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteDomainNameInput, arg2 ...request.Option) (*apigatewayv2.DeleteDomainNameOutput, error) {
+func (m *MockApiGatewayV2API) DeleteDomainNameWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteDomainNameInput, arg2 ...request.Option) (*apigatewayv2.DeleteDomainNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -896,7 +896,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteIntegrationResponseRequest(arg0
 }
 
 // DeleteIntegrationResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.DeleteIntegrationResponseOutput, error) {
+func (m *MockApiGatewayV2API) DeleteIntegrationResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.DeleteIntegrationResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteIntegrationResponseWithContext(
 }
 
 // DeleteIntegrationWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteIntegrationWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteIntegrationInput, arg2 ...request.Option) (*apigatewayv2.DeleteIntegrationOutput, error) {
+func (m *MockApiGatewayV2API) DeleteIntegrationWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteIntegrationInput, arg2 ...request.Option) (*apigatewayv2.DeleteIntegrationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteModelRequest(arg0 interface{}) 
 }
 
 // DeleteModelWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteModelWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteModelInput, arg2 ...request.Option) (*apigatewayv2.DeleteModelOutput, error) {
+func (m *MockApiGatewayV2API) DeleteModelWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteModelInput, arg2 ...request.Option) (*apigatewayv2.DeleteModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1046,7 +1046,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteResponseRequest(arg0 inter
 }
 
 // DeleteRouteResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteRouteResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.DeleteRouteResponseOutput, error) {
+func (m *MockApiGatewayV2API) DeleteRouteResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.DeleteRouteResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteResponseWithContext(arg0, 
 }
 
 // DeleteRouteWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteRouteWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteRouteInput, arg2 ...request.Option) (*apigatewayv2.DeleteRouteOutput, error) {
+func (m *MockApiGatewayV2API) DeleteRouteWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteRouteInput, arg2 ...request.Option) (*apigatewayv2.DeleteRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteStageRequest(arg0 interface{}) 
 }
 
 // DeleteStageWithContext mocks base method
-func (m *MockApiGatewayV2API) DeleteStageWithContext(arg0 aws.Context, arg1 *apigatewayv2.DeleteStageInput, arg2 ...request.Option) (*apigatewayv2.DeleteStageOutput, error) {
+func (m *MockApiGatewayV2API) DeleteStageWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteStageInput, arg2 ...request.Option) (*apigatewayv2.DeleteStageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1181,7 +1181,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetApiMappingRequest(arg0 interface{}
 }
 
 // GetApiMappingWithContext mocks base method
-func (m *MockApiGatewayV2API) GetApiMappingWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetApiMappingInput, arg2 ...request.Option) (*apigatewayv2.GetApiMappingOutput, error) {
+func (m *MockApiGatewayV2API) GetApiMappingWithContext(arg0 context.Context, arg1 *apigatewayv2.GetApiMappingInput, arg2 ...request.Option) (*apigatewayv2.GetApiMappingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetApiMappingsRequest(arg0 interface{
 }
 
 // GetApiMappingsWithContext mocks base method
-func (m *MockApiGatewayV2API) GetApiMappingsWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetApiMappingsInput, arg2 ...request.Option) (*apigatewayv2.GetApiMappingsOutput, error) {
+func (m *MockApiGatewayV2API) GetApiMappingsWithContext(arg0 context.Context, arg1 *apigatewayv2.GetApiMappingsInput, arg2 ...request.Option) (*apigatewayv2.GetApiMappingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetApiRequest(arg0 interface{}) *gomo
 }
 
 // GetApiWithContext mocks base method
-func (m *MockApiGatewayV2API) GetApiWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetApiInput, arg2 ...request.Option) (*apigatewayv2.GetApiOutput, error) {
+func (m *MockApiGatewayV2API) GetApiWithContext(arg0 context.Context, arg1 *apigatewayv2.GetApiInput, arg2 ...request.Option) (*apigatewayv2.GetApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetApisRequest(arg0 interface{}) *gom
 }
 
 // GetApisWithContext mocks base method
-func (m *MockApiGatewayV2API) GetApisWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetApisInput, arg2 ...request.Option) (*apigatewayv2.GetApisOutput, error) {
+func (m *MockApiGatewayV2API) GetApisWithContext(arg0 context.Context, arg1 *apigatewayv2.GetApisInput, arg2 ...request.Option) (*apigatewayv2.GetApisOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetAuthorizerRequest(arg0 interface{}
 }
 
 // GetAuthorizerWithContext mocks base method
-func (m *MockApiGatewayV2API) GetAuthorizerWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.GetAuthorizerOutput, error) {
+func (m *MockApiGatewayV2API) GetAuthorizerWithContext(arg0 context.Context, arg1 *apigatewayv2.GetAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.GetAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetAuthorizersRequest(arg0 interface{
 }
 
 // GetAuthorizersWithContext mocks base method
-func (m *MockApiGatewayV2API) GetAuthorizersWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetAuthorizersInput, arg2 ...request.Option) (*apigatewayv2.GetAuthorizersOutput, error) {
+func (m *MockApiGatewayV2API) GetAuthorizersWithContext(arg0 context.Context, arg1 *apigatewayv2.GetAuthorizersInput, arg2 ...request.Option) (*apigatewayv2.GetAuthorizersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetDeploymentRequest(arg0 interface{}
 }
 
 // GetDeploymentWithContext mocks base method
-func (m *MockApiGatewayV2API) GetDeploymentWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetDeploymentInput, arg2 ...request.Option) (*apigatewayv2.GetDeploymentOutput, error) {
+func (m *MockApiGatewayV2API) GetDeploymentWithContext(arg0 context.Context, arg1 *apigatewayv2.GetDeploymentInput, arg2 ...request.Option) (*apigatewayv2.GetDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetDeploymentsRequest(arg0 interface{
 }
 
 // GetDeploymentsWithContext mocks base method
-func (m *MockApiGatewayV2API) GetDeploymentsWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetDeploymentsInput, arg2 ...request.Option) (*apigatewayv2.GetDeploymentsOutput, error) {
+func (m *MockApiGatewayV2API) GetDeploymentsWithContext(arg0 context.Context, arg1 *apigatewayv2.GetDeploymentsInput, arg2 ...request.Option) (*apigatewayv2.GetDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetDomainNameRequest(arg0 interface{}
 }
 
 // GetDomainNameWithContext mocks base method
-func (m *MockApiGatewayV2API) GetDomainNameWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetDomainNameInput, arg2 ...request.Option) (*apigatewayv2.GetDomainNameOutput, error) {
+func (m *MockApiGatewayV2API) GetDomainNameWithContext(arg0 context.Context, arg1 *apigatewayv2.GetDomainNameInput, arg2 ...request.Option) (*apigatewayv2.GetDomainNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetDomainNamesRequest(arg0 interface{
 }
 
 // GetDomainNamesWithContext mocks base method
-func (m *MockApiGatewayV2API) GetDomainNamesWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetDomainNamesInput, arg2 ...request.Option) (*apigatewayv2.GetDomainNamesOutput, error) {
+func (m *MockApiGatewayV2API) GetDomainNamesWithContext(arg0 context.Context, arg1 *apigatewayv2.GetDomainNamesInput, arg2 ...request.Option) (*apigatewayv2.GetDomainNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1696,7 +1696,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetIntegrationResponseRequest(arg0 in
 }
 
 // GetIntegrationResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) GetIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationResponseOutput, error) {
+func (m *MockApiGatewayV2API) GetIntegrationResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.GetIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1746,7 +1746,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetIntegrationResponsesRequest(arg0 i
 }
 
 // GetIntegrationResponsesWithContext mocks base method
-func (m *MockApiGatewayV2API) GetIntegrationResponsesWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetIntegrationResponsesInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationResponsesOutput, error) {
+func (m *MockApiGatewayV2API) GetIntegrationResponsesWithContext(arg0 context.Context, arg1 *apigatewayv2.GetIntegrationResponsesInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationResponsesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetIntegrationResponsesWithContext(ar
 }
 
 // GetIntegrationWithContext mocks base method
-func (m *MockApiGatewayV2API) GetIntegrationWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetIntegrationInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationOutput, error) {
+func (m *MockApiGatewayV2API) GetIntegrationWithContext(arg0 context.Context, arg1 *apigatewayv2.GetIntegrationInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetIntegrationsRequest(arg0 interface
 }
 
 // GetIntegrationsWithContext mocks base method
-func (m *MockApiGatewayV2API) GetIntegrationsWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetIntegrationsInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationsOutput, error) {
+func (m *MockApiGatewayV2API) GetIntegrationsWithContext(arg0 context.Context, arg1 *apigatewayv2.GetIntegrationsInput, arg2 ...request.Option) (*apigatewayv2.GetIntegrationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1896,7 +1896,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetModelTemplateRequest(arg0 interfac
 }
 
 // GetModelTemplateWithContext mocks base method
-func (m *MockApiGatewayV2API) GetModelTemplateWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetModelTemplateInput, arg2 ...request.Option) (*apigatewayv2.GetModelTemplateOutput, error) {
+func (m *MockApiGatewayV2API) GetModelTemplateWithContext(arg0 context.Context, arg1 *apigatewayv2.GetModelTemplateInput, arg2 ...request.Option) (*apigatewayv2.GetModelTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetModelTemplateWithContext(arg0, arg
 }
 
 // GetModelWithContext mocks base method
-func (m *MockApiGatewayV2API) GetModelWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetModelInput, arg2 ...request.Option) (*apigatewayv2.GetModelOutput, error) {
+func (m *MockApiGatewayV2API) GetModelWithContext(arg0 context.Context, arg1 *apigatewayv2.GetModelInput, arg2 ...request.Option) (*apigatewayv2.GetModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetModelsRequest(arg0 interface{}) *g
 }
 
 // GetModelsWithContext mocks base method
-func (m *MockApiGatewayV2API) GetModelsWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetModelsInput, arg2 ...request.Option) (*apigatewayv2.GetModelsOutput, error) {
+func (m *MockApiGatewayV2API) GetModelsWithContext(arg0 context.Context, arg1 *apigatewayv2.GetModelsInput, arg2 ...request.Option) (*apigatewayv2.GetModelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetRouteResponseRequest(arg0 interfac
 }
 
 // GetRouteResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) GetRouteResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.GetRouteResponseOutput, error) {
+func (m *MockApiGatewayV2API) GetRouteResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.GetRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.GetRouteResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2096,7 +2096,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetRouteResponsesRequest(arg0 interfa
 }
 
 // GetRouteResponsesWithContext mocks base method
-func (m *MockApiGatewayV2API) GetRouteResponsesWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetRouteResponsesInput, arg2 ...request.Option) (*apigatewayv2.GetRouteResponsesOutput, error) {
+func (m *MockApiGatewayV2API) GetRouteResponsesWithContext(arg0 context.Context, arg1 *apigatewayv2.GetRouteResponsesInput, arg2 ...request.Option) (*apigatewayv2.GetRouteResponsesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetRouteResponsesWithContext(arg0, ar
 }
 
 // GetRouteWithContext mocks base method
-func (m *MockApiGatewayV2API) GetRouteWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetRouteInput, arg2 ...request.Option) (*apigatewayv2.GetRouteOutput, error) {
+func (m *MockApiGatewayV2API) GetRouteWithContext(arg0 context.Context, arg1 *apigatewayv2.GetRouteInput, arg2 ...request.Option) (*apigatewayv2.GetRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetRoutesRequest(arg0 interface{}) *g
 }
 
 // GetRoutesWithContext mocks base method
-func (m *MockApiGatewayV2API) GetRoutesWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetRoutesInput, arg2 ...request.Option) (*apigatewayv2.GetRoutesOutput, error) {
+func (m *MockApiGatewayV2API) GetRoutesWithContext(arg0 context.Context, arg1 *apigatewayv2.GetRoutesInput, arg2 ...request.Option) (*apigatewayv2.GetRoutesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetStageRequest(arg0 interface{}) *go
 }
 
 // GetStageWithContext mocks base method
-func (m *MockApiGatewayV2API) GetStageWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetStageInput, arg2 ...request.Option) (*apigatewayv2.GetStageOutput, error) {
+func (m *MockApiGatewayV2API) GetStageWithContext(arg0 context.Context, arg1 *apigatewayv2.GetStageInput, arg2 ...request.Option) (*apigatewayv2.GetStageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetStagesRequest(arg0 interface{}) *g
 }
 
 // GetStagesWithContext mocks base method
-func (m *MockApiGatewayV2API) GetStagesWithContext(arg0 aws.Context, arg1 *apigatewayv2.GetStagesInput, arg2 ...request.Option) (*apigatewayv2.GetStagesOutput, error) {
+func (m *MockApiGatewayV2API) GetStagesWithContext(arg0 context.Context, arg1 *apigatewayv2.GetStagesInput, arg2 ...request.Option) (*apigatewayv2.GetStagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2331,7 +2331,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateApiMappingRequest(arg0 interfac
 }
 
 // UpdateApiMappingWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateApiMappingWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateApiMappingInput, arg2 ...request.Option) (*apigatewayv2.UpdateApiMappingOutput, error) {
+func (m *MockApiGatewayV2API) UpdateApiMappingWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateApiMappingInput, arg2 ...request.Option) (*apigatewayv2.UpdateApiMappingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2366,7 +2366,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateApiRequest(arg0 interface{}) *g
 }
 
 // UpdateApiWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateApiWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateApiInput, arg2 ...request.Option) (*apigatewayv2.UpdateApiOutput, error) {
+func (m *MockApiGatewayV2API) UpdateApiWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateApiInput, arg2 ...request.Option) (*apigatewayv2.UpdateApiOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2416,7 +2416,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateAuthorizerRequest(arg0 interfac
 }
 
 // UpdateAuthorizerWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateAuthorizerWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.UpdateAuthorizerOutput, error) {
+func (m *MockApiGatewayV2API) UpdateAuthorizerWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateAuthorizerInput, arg2 ...request.Option) (*apigatewayv2.UpdateAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2466,7 +2466,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateDeploymentRequest(arg0 interfac
 }
 
 // UpdateDeploymentWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateDeploymentWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateDeploymentInput, arg2 ...request.Option) (*apigatewayv2.UpdateDeploymentOutput, error) {
+func (m *MockApiGatewayV2API) UpdateDeploymentWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateDeploymentInput, arg2 ...request.Option) (*apigatewayv2.UpdateDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2516,7 +2516,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateDomainNameRequest(arg0 interfac
 }
 
 // UpdateDomainNameWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateDomainNameWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateDomainNameInput, arg2 ...request.Option) (*apigatewayv2.UpdateDomainNameOutput, error) {
+func (m *MockApiGatewayV2API) UpdateDomainNameWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateDomainNameInput, arg2 ...request.Option) (*apigatewayv2.UpdateDomainNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2596,7 +2596,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateIntegrationResponseRequest(arg0
 }
 
 // UpdateIntegrationResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateIntegrationResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.UpdateIntegrationResponseOutput, error) {
+func (m *MockApiGatewayV2API) UpdateIntegrationResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateIntegrationResponseInput, arg2 ...request.Option) (*apigatewayv2.UpdateIntegrationResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2616,7 +2616,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateIntegrationResponseWithContext(
 }
 
 // UpdateIntegrationWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateIntegrationWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateIntegrationInput, arg2 ...request.Option) (*apigatewayv2.UpdateIntegrationOutput, error) {
+func (m *MockApiGatewayV2API) UpdateIntegrationWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateIntegrationInput, arg2 ...request.Option) (*apigatewayv2.UpdateIntegrationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2666,7 +2666,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateModelRequest(arg0 interface{}) 
 }
 
 // UpdateModelWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateModelWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateModelInput, arg2 ...request.Option) (*apigatewayv2.UpdateModelOutput, error) {
+func (m *MockApiGatewayV2API) UpdateModelWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateModelInput, arg2 ...request.Option) (*apigatewayv2.UpdateModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2746,7 +2746,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateRouteResponseRequest(arg0 inter
 }
 
 // UpdateRouteResponseWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateRouteResponseWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.UpdateRouteResponseOutput, error) {
+func (m *MockApiGatewayV2API) UpdateRouteResponseWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateRouteResponseInput, arg2 ...request.Option) (*apigatewayv2.UpdateRouteResponseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2766,7 +2766,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateRouteResponseWithContext(arg0, 
 }
 
 // UpdateRouteWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateRouteWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateRouteInput, arg2 ...request.Option) (*apigatewayv2.UpdateRouteOutput, error) {
+func (m *MockApiGatewayV2API) UpdateRouteWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateRouteInput, arg2 ...request.Option) (*apigatewayv2.UpdateRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2816,7 +2816,7 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateStageRequest(arg0 interface{}) 
 }
 
 // UpdateStageWithContext mocks base method
-func (m *MockApiGatewayV2API) UpdateStageWithContext(arg0 aws.Context, arg1 *apigatewayv2.UpdateStageInput, arg2 ...request.Option) (*apigatewayv2.UpdateStageOutput, error) {
+func (m *MockApiGatewayV2API) UpdateStageWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateStageInput, arg2 ...request.Option) (*apigatewayv2.UpdateStageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

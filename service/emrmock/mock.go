@@ -5,7 +5,7 @@
 package emrmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	emr "github.com/aws/aws-sdk-go/service/emr"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockEMRAPIMockRecorder) AddInstanceFleetRequest(arg0 interface{}) *gom
 }
 
 // AddInstanceFleetWithContext mocks base method
-func (m *MockEMRAPI) AddInstanceFleetWithContext(arg0 aws.Context, arg1 *emr.AddInstanceFleetInput, arg2 ...request.Option) (*emr.AddInstanceFleetOutput, error) {
+func (m *MockEMRAPI) AddInstanceFleetWithContext(arg0 context.Context, arg1 *emr.AddInstanceFleetInput, arg2 ...request.Option) (*emr.AddInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockEMRAPIMockRecorder) AddInstanceGroupsRequest(arg0 interface{}) *go
 }
 
 // AddInstanceGroupsWithContext mocks base method
-func (m *MockEMRAPI) AddInstanceGroupsWithContext(arg0 aws.Context, arg1 *emr.AddInstanceGroupsInput, arg2 ...request.Option) (*emr.AddInstanceGroupsOutput, error) {
+func (m *MockEMRAPI) AddInstanceGroupsWithContext(arg0 context.Context, arg1 *emr.AddInstanceGroupsInput, arg2 ...request.Option) (*emr.AddInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockEMRAPIMockRecorder) AddJobFlowStepsRequest(arg0 interface{}) *gomo
 }
 
 // AddJobFlowStepsWithContext mocks base method
-func (m *MockEMRAPI) AddJobFlowStepsWithContext(arg0 aws.Context, arg1 *emr.AddJobFlowStepsInput, arg2 ...request.Option) (*emr.AddJobFlowStepsOutput, error) {
+func (m *MockEMRAPI) AddJobFlowStepsWithContext(arg0 context.Context, arg1 *emr.AddJobFlowStepsInput, arg2 ...request.Option) (*emr.AddJobFlowStepsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockEMRAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gomock.Call 
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockEMRAPI) AddTagsWithContext(arg0 aws.Context, arg1 *emr.AddTagsInput, arg2 ...request.Option) (*emr.AddTagsOutput, error) {
+func (m *MockEMRAPI) AddTagsWithContext(arg0 context.Context, arg1 *emr.AddTagsInput, arg2 ...request.Option) (*emr.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockEMRAPIMockRecorder) CancelStepsRequest(arg0 interface{}) *gomock.C
 }
 
 // CancelStepsWithContext mocks base method
-func (m *MockEMRAPI) CancelStepsWithContext(arg0 aws.Context, arg1 *emr.CancelStepsInput, arg2 ...request.Option) (*emr.CancelStepsOutput, error) {
+func (m *MockEMRAPI) CancelStepsWithContext(arg0 context.Context, arg1 *emr.CancelStepsInput, arg2 ...request.Option) (*emr.CancelStepsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockEMRAPIMockRecorder) CreateSecurityConfigurationRequest(arg0 interf
 }
 
 // CreateSecurityConfigurationWithContext mocks base method
-func (m *MockEMRAPI) CreateSecurityConfigurationWithContext(arg0 aws.Context, arg1 *emr.CreateSecurityConfigurationInput, arg2 ...request.Option) (*emr.CreateSecurityConfigurationOutput, error) {
+func (m *MockEMRAPI) CreateSecurityConfigurationWithContext(arg0 context.Context, arg1 *emr.CreateSecurityConfigurationInput, arg2 ...request.Option) (*emr.CreateSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockEMRAPIMockRecorder) DeleteSecurityConfigurationRequest(arg0 interf
 }
 
 // DeleteSecurityConfigurationWithContext mocks base method
-func (m *MockEMRAPI) DeleteSecurityConfigurationWithContext(arg0 aws.Context, arg1 *emr.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*emr.DeleteSecurityConfigurationOutput, error) {
+func (m *MockEMRAPI) DeleteSecurityConfigurationWithContext(arg0 context.Context, arg1 *emr.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*emr.DeleteSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockEMRAPIMockRecorder) DescribeClusterRequest(arg0 interface{}) *gomo
 }
 
 // DescribeClusterWithContext mocks base method
-func (m *MockEMRAPI) DescribeClusterWithContext(arg0 aws.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.Option) (*emr.DescribeClusterOutput, error) {
+func (m *MockEMRAPI) DescribeClusterWithContext(arg0 context.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.Option) (*emr.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockEMRAPIMockRecorder) DescribeJobFlowsRequest(arg0 interface{}) *gom
 }
 
 // DescribeJobFlowsWithContext mocks base method
-func (m *MockEMRAPI) DescribeJobFlowsWithContext(arg0 aws.Context, arg1 *emr.DescribeJobFlowsInput, arg2 ...request.Option) (*emr.DescribeJobFlowsOutput, error) {
+func (m *MockEMRAPI) DescribeJobFlowsWithContext(arg0 context.Context, arg1 *emr.DescribeJobFlowsInput, arg2 ...request.Option) (*emr.DescribeJobFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockEMRAPIMockRecorder) DescribeSecurityConfigurationRequest(arg0 inte
 }
 
 // DescribeSecurityConfigurationWithContext mocks base method
-func (m *MockEMRAPI) DescribeSecurityConfigurationWithContext(arg0 aws.Context, arg1 *emr.DescribeSecurityConfigurationInput, arg2 ...request.Option) (*emr.DescribeSecurityConfigurationOutput, error) {
+func (m *MockEMRAPI) DescribeSecurityConfigurationWithContext(arg0 context.Context, arg1 *emr.DescribeSecurityConfigurationInput, arg2 ...request.Option) (*emr.DescribeSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockEMRAPIMockRecorder) DescribeStepRequest(arg0 interface{}) *gomock.
 }
 
 // DescribeStepWithContext mocks base method
-func (m *MockEMRAPI) DescribeStepWithContext(arg0 aws.Context, arg1 *emr.DescribeStepInput, arg2 ...request.Option) (*emr.DescribeStepOutput, error) {
+func (m *MockEMRAPI) DescribeStepWithContext(arg0 context.Context, arg1 *emr.DescribeStepInput, arg2 ...request.Option) (*emr.DescribeStepOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -615,7 +615,7 @@ func (mr *MockEMRAPIMockRecorder) ListBootstrapActionsPages(arg0, arg1 interface
 }
 
 // ListBootstrapActionsPagesWithContext mocks base method
-func (m *MockEMRAPI) ListBootstrapActionsPagesWithContext(arg0 aws.Context, arg1 *emr.ListBootstrapActionsInput, arg2 func(*emr.ListBootstrapActionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockEMRAPI) ListBootstrapActionsPagesWithContext(arg0 context.Context, arg1 *emr.ListBootstrapActionsInput, arg2 func(*emr.ListBootstrapActionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -649,7 +649,7 @@ func (mr *MockEMRAPIMockRecorder) ListBootstrapActionsRequest(arg0 interface{}) 
 }
 
 // ListBootstrapActionsWithContext mocks base method
-func (m *MockEMRAPI) ListBootstrapActionsWithContext(arg0 aws.Context, arg1 *emr.ListBootstrapActionsInput, arg2 ...request.Option) (*emr.ListBootstrapActionsOutput, error) {
+func (m *MockEMRAPI) ListBootstrapActionsWithContext(arg0 context.Context, arg1 *emr.ListBootstrapActionsInput, arg2 ...request.Option) (*emr.ListBootstrapActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -698,7 +698,7 @@ func (mr *MockEMRAPIMockRecorder) ListClustersPages(arg0, arg1 interface{}) *gom
 }
 
 // ListClustersPagesWithContext mocks base method
-func (m *MockEMRAPI) ListClustersPagesWithContext(arg0 aws.Context, arg1 *emr.ListClustersInput, arg2 func(*emr.ListClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockEMRAPI) ListClustersPagesWithContext(arg0 context.Context, arg1 *emr.ListClustersInput, arg2 func(*emr.ListClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -732,7 +732,7 @@ func (mr *MockEMRAPIMockRecorder) ListClustersRequest(arg0 interface{}) *gomock.
 }
 
 // ListClustersWithContext mocks base method
-func (m *MockEMRAPI) ListClustersWithContext(arg0 aws.Context, arg1 *emr.ListClustersInput, arg2 ...request.Option) (*emr.ListClustersOutput, error) {
+func (m *MockEMRAPI) ListClustersWithContext(arg0 context.Context, arg1 *emr.ListClustersInput, arg2 ...request.Option) (*emr.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockEMRAPIMockRecorder) ListInstanceFleetsPages(arg0, arg1 interface{}
 }
 
 // ListInstanceFleetsPagesWithContext mocks base method
-func (m *MockEMRAPI) ListInstanceFleetsPagesWithContext(arg0 aws.Context, arg1 *emr.ListInstanceFleetsInput, arg2 func(*emr.ListInstanceFleetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockEMRAPI) ListInstanceFleetsPagesWithContext(arg0 context.Context, arg1 *emr.ListInstanceFleetsInput, arg2 func(*emr.ListInstanceFleetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -815,7 +815,7 @@ func (mr *MockEMRAPIMockRecorder) ListInstanceFleetsRequest(arg0 interface{}) *g
 }
 
 // ListInstanceFleetsWithContext mocks base method
-func (m *MockEMRAPI) ListInstanceFleetsWithContext(arg0 aws.Context, arg1 *emr.ListInstanceFleetsInput, arg2 ...request.Option) (*emr.ListInstanceFleetsOutput, error) {
+func (m *MockEMRAPI) ListInstanceFleetsWithContext(arg0 context.Context, arg1 *emr.ListInstanceFleetsInput, arg2 ...request.Option) (*emr.ListInstanceFleetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -864,7 +864,7 @@ func (mr *MockEMRAPIMockRecorder) ListInstanceGroupsPages(arg0, arg1 interface{}
 }
 
 // ListInstanceGroupsPagesWithContext mocks base method
-func (m *MockEMRAPI) ListInstanceGroupsPagesWithContext(arg0 aws.Context, arg1 *emr.ListInstanceGroupsInput, arg2 func(*emr.ListInstanceGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockEMRAPI) ListInstanceGroupsPagesWithContext(arg0 context.Context, arg1 *emr.ListInstanceGroupsInput, arg2 func(*emr.ListInstanceGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -898,7 +898,7 @@ func (mr *MockEMRAPIMockRecorder) ListInstanceGroupsRequest(arg0 interface{}) *g
 }
 
 // ListInstanceGroupsWithContext mocks base method
-func (m *MockEMRAPI) ListInstanceGroupsWithContext(arg0 aws.Context, arg1 *emr.ListInstanceGroupsInput, arg2 ...request.Option) (*emr.ListInstanceGroupsOutput, error) {
+func (m *MockEMRAPI) ListInstanceGroupsWithContext(arg0 context.Context, arg1 *emr.ListInstanceGroupsInput, arg2 ...request.Option) (*emr.ListInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -947,7 +947,7 @@ func (mr *MockEMRAPIMockRecorder) ListInstancesPages(arg0, arg1 interface{}) *go
 }
 
 // ListInstancesPagesWithContext mocks base method
-func (m *MockEMRAPI) ListInstancesPagesWithContext(arg0 aws.Context, arg1 *emr.ListInstancesInput, arg2 func(*emr.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockEMRAPI) ListInstancesPagesWithContext(arg0 context.Context, arg1 *emr.ListInstancesInput, arg2 func(*emr.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -981,7 +981,7 @@ func (mr *MockEMRAPIMockRecorder) ListInstancesRequest(arg0 interface{}) *gomock
 }
 
 // ListInstancesWithContext mocks base method
-func (m *MockEMRAPI) ListInstancesWithContext(arg0 aws.Context, arg1 *emr.ListInstancesInput, arg2 ...request.Option) (*emr.ListInstancesOutput, error) {
+func (m *MockEMRAPI) ListInstancesWithContext(arg0 context.Context, arg1 *emr.ListInstancesInput, arg2 ...request.Option) (*emr.ListInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1031,7 +1031,7 @@ func (mr *MockEMRAPIMockRecorder) ListSecurityConfigurationsRequest(arg0 interfa
 }
 
 // ListSecurityConfigurationsWithContext mocks base method
-func (m *MockEMRAPI) ListSecurityConfigurationsWithContext(arg0 aws.Context, arg1 *emr.ListSecurityConfigurationsInput, arg2 ...request.Option) (*emr.ListSecurityConfigurationsOutput, error) {
+func (m *MockEMRAPI) ListSecurityConfigurationsWithContext(arg0 context.Context, arg1 *emr.ListSecurityConfigurationsInput, arg2 ...request.Option) (*emr.ListSecurityConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1080,7 +1080,7 @@ func (mr *MockEMRAPIMockRecorder) ListStepsPages(arg0, arg1 interface{}) *gomock
 }
 
 // ListStepsPagesWithContext mocks base method
-func (m *MockEMRAPI) ListStepsPagesWithContext(arg0 aws.Context, arg1 *emr.ListStepsInput, arg2 func(*emr.ListStepsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockEMRAPI) ListStepsPagesWithContext(arg0 context.Context, arg1 *emr.ListStepsInput, arg2 func(*emr.ListStepsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1114,7 +1114,7 @@ func (mr *MockEMRAPIMockRecorder) ListStepsRequest(arg0 interface{}) *gomock.Cal
 }
 
 // ListStepsWithContext mocks base method
-func (m *MockEMRAPI) ListStepsWithContext(arg0 aws.Context, arg1 *emr.ListStepsInput, arg2 ...request.Option) (*emr.ListStepsOutput, error) {
+func (m *MockEMRAPI) ListStepsWithContext(arg0 context.Context, arg1 *emr.ListStepsInput, arg2 ...request.Option) (*emr.ListStepsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1164,7 +1164,7 @@ func (mr *MockEMRAPIMockRecorder) ModifyInstanceFleetRequest(arg0 interface{}) *
 }
 
 // ModifyInstanceFleetWithContext mocks base method
-func (m *MockEMRAPI) ModifyInstanceFleetWithContext(arg0 aws.Context, arg1 *emr.ModifyInstanceFleetInput, arg2 ...request.Option) (*emr.ModifyInstanceFleetOutput, error) {
+func (m *MockEMRAPI) ModifyInstanceFleetWithContext(arg0 context.Context, arg1 *emr.ModifyInstanceFleetInput, arg2 ...request.Option) (*emr.ModifyInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockEMRAPIMockRecorder) ModifyInstanceGroupsRequest(arg0 interface{}) 
 }
 
 // ModifyInstanceGroupsWithContext mocks base method
-func (m *MockEMRAPI) ModifyInstanceGroupsWithContext(arg0 aws.Context, arg1 *emr.ModifyInstanceGroupsInput, arg2 ...request.Option) (*emr.ModifyInstanceGroupsOutput, error) {
+func (m *MockEMRAPI) ModifyInstanceGroupsWithContext(arg0 context.Context, arg1 *emr.ModifyInstanceGroupsInput, arg2 ...request.Option) (*emr.ModifyInstanceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1264,7 +1264,7 @@ func (mr *MockEMRAPIMockRecorder) PutAutoScalingPolicyRequest(arg0 interface{}) 
 }
 
 // PutAutoScalingPolicyWithContext mocks base method
-func (m *MockEMRAPI) PutAutoScalingPolicyWithContext(arg0 aws.Context, arg1 *emr.PutAutoScalingPolicyInput, arg2 ...request.Option) (*emr.PutAutoScalingPolicyOutput, error) {
+func (m *MockEMRAPI) PutAutoScalingPolicyWithContext(arg0 context.Context, arg1 *emr.PutAutoScalingPolicyInput, arg2 ...request.Option) (*emr.PutAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1314,7 +1314,7 @@ func (mr *MockEMRAPIMockRecorder) RemoveAutoScalingPolicyRequest(arg0 interface{
 }
 
 // RemoveAutoScalingPolicyWithContext mocks base method
-func (m *MockEMRAPI) RemoveAutoScalingPolicyWithContext(arg0 aws.Context, arg1 *emr.RemoveAutoScalingPolicyInput, arg2 ...request.Option) (*emr.RemoveAutoScalingPolicyOutput, error) {
+func (m *MockEMRAPI) RemoveAutoScalingPolicyWithContext(arg0 context.Context, arg1 *emr.RemoveAutoScalingPolicyInput, arg2 ...request.Option) (*emr.RemoveAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1364,7 +1364,7 @@ func (mr *MockEMRAPIMockRecorder) RemoveTagsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // RemoveTagsWithContext mocks base method
-func (m *MockEMRAPI) RemoveTagsWithContext(arg0 aws.Context, arg1 *emr.RemoveTagsInput, arg2 ...request.Option) (*emr.RemoveTagsOutput, error) {
+func (m *MockEMRAPI) RemoveTagsWithContext(arg0 context.Context, arg1 *emr.RemoveTagsInput, arg2 ...request.Option) (*emr.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1414,7 +1414,7 @@ func (mr *MockEMRAPIMockRecorder) RunJobFlowRequest(arg0 interface{}) *gomock.Ca
 }
 
 // RunJobFlowWithContext mocks base method
-func (m *MockEMRAPI) RunJobFlowWithContext(arg0 aws.Context, arg1 *emr.RunJobFlowInput, arg2 ...request.Option) (*emr.RunJobFlowOutput, error) {
+func (m *MockEMRAPI) RunJobFlowWithContext(arg0 context.Context, arg1 *emr.RunJobFlowInput, arg2 ...request.Option) (*emr.RunJobFlowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1464,7 +1464,7 @@ func (mr *MockEMRAPIMockRecorder) SetTerminationProtectionRequest(arg0 interface
 }
 
 // SetTerminationProtectionWithContext mocks base method
-func (m *MockEMRAPI) SetTerminationProtectionWithContext(arg0 aws.Context, arg1 *emr.SetTerminationProtectionInput, arg2 ...request.Option) (*emr.SetTerminationProtectionOutput, error) {
+func (m *MockEMRAPI) SetTerminationProtectionWithContext(arg0 context.Context, arg1 *emr.SetTerminationProtectionInput, arg2 ...request.Option) (*emr.SetTerminationProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1514,7 +1514,7 @@ func (mr *MockEMRAPIMockRecorder) SetVisibleToAllUsersRequest(arg0 interface{}) 
 }
 
 // SetVisibleToAllUsersWithContext mocks base method
-func (m *MockEMRAPI) SetVisibleToAllUsersWithContext(arg0 aws.Context, arg1 *emr.SetVisibleToAllUsersInput, arg2 ...request.Option) (*emr.SetVisibleToAllUsersOutput, error) {
+func (m *MockEMRAPI) SetVisibleToAllUsersWithContext(arg0 context.Context, arg1 *emr.SetVisibleToAllUsersInput, arg2 ...request.Option) (*emr.SetVisibleToAllUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1564,7 +1564,7 @@ func (mr *MockEMRAPIMockRecorder) TerminateJobFlowsRequest(arg0 interface{}) *go
 }
 
 // TerminateJobFlowsWithContext mocks base method
-func (m *MockEMRAPI) TerminateJobFlowsWithContext(arg0 aws.Context, arg1 *emr.TerminateJobFlowsInput, arg2 ...request.Option) (*emr.TerminateJobFlowsOutput, error) {
+func (m *MockEMRAPI) TerminateJobFlowsWithContext(arg0 context.Context, arg1 *emr.TerminateJobFlowsInput, arg2 ...request.Option) (*emr.TerminateJobFlowsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1598,7 +1598,7 @@ func (mr *MockEMRAPIMockRecorder) WaitUntilClusterRunning(arg0 interface{}) *gom
 }
 
 // WaitUntilClusterRunningWithContext mocks base method
-func (m *MockEMRAPI) WaitUntilClusterRunningWithContext(arg0 aws.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+func (m *MockEMRAPI) WaitUntilClusterRunningWithContext(arg0 context.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1631,7 +1631,7 @@ func (mr *MockEMRAPIMockRecorder) WaitUntilClusterTerminated(arg0 interface{}) *
 }
 
 // WaitUntilClusterTerminatedWithContext mocks base method
-func (m *MockEMRAPI) WaitUntilClusterTerminatedWithContext(arg0 aws.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+func (m *MockEMRAPI) WaitUntilClusterTerminatedWithContext(arg0 context.Context, arg1 *emr.DescribeClusterInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1664,7 +1664,7 @@ func (mr *MockEMRAPIMockRecorder) WaitUntilStepComplete(arg0 interface{}) *gomoc
 }
 
 // WaitUntilStepCompleteWithContext mocks base method
-func (m *MockEMRAPI) WaitUntilStepCompleteWithContext(arg0 aws.Context, arg1 *emr.DescribeStepInput, arg2 ...request.WaiterOption) error {
+func (m *MockEMRAPI) WaitUntilStepCompleteWithContext(arg0 context.Context, arg1 *emr.DescribeStepInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

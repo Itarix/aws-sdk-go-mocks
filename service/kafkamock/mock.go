@@ -5,7 +5,7 @@
 package kafkamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	kafka "github.com/aws/aws-sdk-go/service/kafka"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockKafkaAPIMockRecorder) CreateClusterRequest(arg0 interface{}) *gomo
 }
 
 // CreateClusterWithContext mocks base method
-func (m *MockKafkaAPI) CreateClusterWithContext(arg0 aws.Context, arg1 *kafka.CreateClusterInput, arg2 ...request.Option) (*kafka.CreateClusterOutput, error) {
+func (m *MockKafkaAPI) CreateClusterWithContext(arg0 context.Context, arg1 *kafka.CreateClusterInput, arg2 ...request.Option) (*kafka.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockKafkaAPIMockRecorder) DeleteClusterRequest(arg0 interface{}) *gomo
 }
 
 // DeleteClusterWithContext mocks base method
-func (m *MockKafkaAPI) DeleteClusterWithContext(arg0 aws.Context, arg1 *kafka.DeleteClusterInput, arg2 ...request.Option) (*kafka.DeleteClusterOutput, error) {
+func (m *MockKafkaAPI) DeleteClusterWithContext(arg0 context.Context, arg1 *kafka.DeleteClusterInput, arg2 ...request.Option) (*kafka.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockKafkaAPIMockRecorder) DescribeClusterRequest(arg0 interface{}) *go
 }
 
 // DescribeClusterWithContext mocks base method
-func (m *MockKafkaAPI) DescribeClusterWithContext(arg0 aws.Context, arg1 *kafka.DescribeClusterInput, arg2 ...request.Option) (*kafka.DescribeClusterOutput, error) {
+func (m *MockKafkaAPI) DescribeClusterWithContext(arg0 context.Context, arg1 *kafka.DescribeClusterInput, arg2 ...request.Option) (*kafka.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockKafkaAPIMockRecorder) GetBootstrapBrokersRequest(arg0 interface{})
 }
 
 // GetBootstrapBrokersWithContext mocks base method
-func (m *MockKafkaAPI) GetBootstrapBrokersWithContext(arg0 aws.Context, arg1 *kafka.GetBootstrapBrokersInput, arg2 ...request.Option) (*kafka.GetBootstrapBrokersOutput, error) {
+func (m *MockKafkaAPI) GetBootstrapBrokersWithContext(arg0 context.Context, arg1 *kafka.GetBootstrapBrokersInput, arg2 ...request.Option) (*kafka.GetBootstrapBrokersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockKafkaAPIMockRecorder) ListClustersRequest(arg0 interface{}) *gomoc
 }
 
 // ListClustersWithContext mocks base method
-func (m *MockKafkaAPI) ListClustersWithContext(arg0 aws.Context, arg1 *kafka.ListClustersInput, arg2 ...request.Option) (*kafka.ListClustersOutput, error) {
+func (m *MockKafkaAPI) ListClustersWithContext(arg0 context.Context, arg1 *kafka.ListClustersInput, arg2 ...request.Option) (*kafka.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockKafkaAPIMockRecorder) ListNodesRequest(arg0 interface{}) *gomock.C
 }
 
 // ListNodesWithContext mocks base method
-func (m *MockKafkaAPI) ListNodesWithContext(arg0 aws.Context, arg1 *kafka.ListNodesInput, arg2 ...request.Option) (*kafka.ListNodesOutput, error) {
+func (m *MockKafkaAPI) ListNodesWithContext(arg0 context.Context, arg1 *kafka.ListNodesInput, arg2 ...request.Option) (*kafka.ListNodesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

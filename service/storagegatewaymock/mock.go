@@ -5,7 +5,7 @@
 package storagegatewaymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	storagegateway "github.com/aws/aws-sdk-go/service/storagegateway"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ActivateGatewayRequest(arg0 interfa
 }
 
 // ActivateGatewayWithContext mocks base method
-func (m *MockStorageGatewayAPI) ActivateGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.ActivateGatewayInput, arg2 ...request.Option) (*storagegateway.ActivateGatewayOutput, error) {
+func (m *MockStorageGatewayAPI) ActivateGatewayWithContext(arg0 context.Context, arg1 *storagegateway.ActivateGatewayInput, arg2 ...request.Option) (*storagegateway.ActivateGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) AddCacheRequest(arg0 interface{}) *
 }
 
 // AddCacheWithContext mocks base method
-func (m *MockStorageGatewayAPI) AddCacheWithContext(arg0 aws.Context, arg1 *storagegateway.AddCacheInput, arg2 ...request.Option) (*storagegateway.AddCacheOutput, error) {
+func (m *MockStorageGatewayAPI) AddCacheWithContext(arg0 context.Context, arg1 *storagegateway.AddCacheInput, arg2 ...request.Option) (*storagegateway.AddCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) AddTagsToResourceRequest(arg0 inter
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockStorageGatewayAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *storagegateway.AddTagsToResourceInput, arg2 ...request.Option) (*storagegateway.AddTagsToResourceOutput, error) {
+func (m *MockStorageGatewayAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *storagegateway.AddTagsToResourceInput, arg2 ...request.Option) (*storagegateway.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) AddUploadBufferRequest(arg0 interfa
 }
 
 // AddUploadBufferWithContext mocks base method
-func (m *MockStorageGatewayAPI) AddUploadBufferWithContext(arg0 aws.Context, arg1 *storagegateway.AddUploadBufferInput, arg2 ...request.Option) (*storagegateway.AddUploadBufferOutput, error) {
+func (m *MockStorageGatewayAPI) AddUploadBufferWithContext(arg0 context.Context, arg1 *storagegateway.AddUploadBufferInput, arg2 ...request.Option) (*storagegateway.AddUploadBufferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) AddWorkingStorageRequest(arg0 inter
 }
 
 // AddWorkingStorageWithContext mocks base method
-func (m *MockStorageGatewayAPI) AddWorkingStorageWithContext(arg0 aws.Context, arg1 *storagegateway.AddWorkingStorageInput, arg2 ...request.Option) (*storagegateway.AddWorkingStorageOutput, error) {
+func (m *MockStorageGatewayAPI) AddWorkingStorageWithContext(arg0 context.Context, arg1 *storagegateway.AddWorkingStorageInput, arg2 ...request.Option) (*storagegateway.AddWorkingStorageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) AttachVolumeRequest(arg0 interface{
 }
 
 // AttachVolumeWithContext mocks base method
-func (m *MockStorageGatewayAPI) AttachVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.AttachVolumeInput, arg2 ...request.Option) (*storagegateway.AttachVolumeOutput, error) {
+func (m *MockStorageGatewayAPI) AttachVolumeWithContext(arg0 context.Context, arg1 *storagegateway.AttachVolumeInput, arg2 ...request.Option) (*storagegateway.AttachVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CancelArchivalRequest(arg0 interfac
 }
 
 // CancelArchivalWithContext mocks base method
-func (m *MockStorageGatewayAPI) CancelArchivalWithContext(arg0 aws.Context, arg1 *storagegateway.CancelArchivalInput, arg2 ...request.Option) (*storagegateway.CancelArchivalOutput, error) {
+func (m *MockStorageGatewayAPI) CancelArchivalWithContext(arg0 context.Context, arg1 *storagegateway.CancelArchivalInput, arg2 ...request.Option) (*storagegateway.CancelArchivalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CancelRetrievalRequest(arg0 interfa
 }
 
 // CancelRetrievalWithContext mocks base method
-func (m *MockStorageGatewayAPI) CancelRetrievalWithContext(arg0 aws.Context, arg1 *storagegateway.CancelRetrievalInput, arg2 ...request.Option) (*storagegateway.CancelRetrievalOutput, error) {
+func (m *MockStorageGatewayAPI) CancelRetrievalWithContext(arg0 context.Context, arg1 *storagegateway.CancelRetrievalInput, arg2 ...request.Option) (*storagegateway.CancelRetrievalOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateCachediSCSIVolumeRequest(arg0
 }
 
 // CreateCachediSCSIVolumeWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.CreateCachediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateCachediSCSIVolumeOutput, error) {
+func (m *MockStorageGatewayAPI) CreateCachediSCSIVolumeWithContext(arg0 context.Context, arg1 *storagegateway.CreateCachediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateCachediSCSIVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateNFSFileShareRequest(arg0 inte
 }
 
 // CreateNFSFileShareWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateNFSFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.CreateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.CreateNFSFileShareOutput, error) {
+func (m *MockStorageGatewayAPI) CreateNFSFileShareWithContext(arg0 context.Context, arg1 *storagegateway.CreateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.CreateNFSFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateSMBFileShareRequest(arg0 inte
 }
 
 // CreateSMBFileShareWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateSMBFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.CreateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.CreateSMBFileShareOutput, error) {
+func (m *MockStorageGatewayAPI) CreateSMBFileShareWithContext(arg0 context.Context, arg1 *storagegateway.CreateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.CreateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotFromVolumeRecoveryPoi
 }
 
 // CreateSnapshotFromVolumeRecoveryPointWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointWithContext(arg0 aws.Context, arg1 *storagegateway.CreateSnapshotFromVolumeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotFromVolumeRecoveryPointOutput, error) {
+func (m *MockStorageGatewayAPI) CreateSnapshotFromVolumeRecoveryPointWithContext(arg0 context.Context, arg1 *storagegateway.CreateSnapshotFromVolumeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotFromVolumeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateSnapshotRequest(arg0 interfac
 }
 
 // CreateSnapshotWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateSnapshotWithContext(arg0 aws.Context, arg1 *storagegateway.CreateSnapshotInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotOutput, error) {
+func (m *MockStorageGatewayAPI) CreateSnapshotWithContext(arg0 context.Context, arg1 *storagegateway.CreateSnapshotInput, arg2 ...request.Option) (*storagegateway.CreateSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateStorediSCSIVolumeRequest(arg0
 }
 
 // CreateStorediSCSIVolumeWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.CreateStorediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateStorediSCSIVolumeOutput, error) {
+func (m *MockStorageGatewayAPI) CreateStorediSCSIVolumeWithContext(arg0 context.Context, arg1 *storagegateway.CreateStorediSCSIVolumeInput, arg2 ...request.Option) (*storagegateway.CreateStorediSCSIVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateTapeWithBarcodeRequest(arg0 i
 }
 
 // CreateTapeWithBarcodeWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeWithContext(arg0 aws.Context, arg1 *storagegateway.CreateTapeWithBarcodeInput, arg2 ...request.Option) (*storagegateway.CreateTapeWithBarcodeOutput, error) {
+func (m *MockStorageGatewayAPI) CreateTapeWithBarcodeWithContext(arg0 context.Context, arg1 *storagegateway.CreateTapeWithBarcodeInput, arg2 ...request.Option) (*storagegateway.CreateTapeWithBarcodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateTapesRequest(arg0 interface{}
 }
 
 // CreateTapesWithContext mocks base method
-func (m *MockStorageGatewayAPI) CreateTapesWithContext(arg0 aws.Context, arg1 *storagegateway.CreateTapesInput, arg2 ...request.Option) (*storagegateway.CreateTapesOutput, error) {
+func (m *MockStorageGatewayAPI) CreateTapesWithContext(arg0 context.Context, arg1 *storagegateway.CreateTapesInput, arg2 ...request.Option) (*storagegateway.CreateTapesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteBandwidthRateLimitRequest(arg
 }
 
 // DeleteBandwidthRateLimitWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DeleteBandwidthRateLimitOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.DeleteBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DeleteBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteChapCredentialsRequest(arg0 i
 }
 
 // DeleteChapCredentialsWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteChapCredentialsWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DeleteChapCredentialsOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteChapCredentialsWithContext(arg0 context.Context, arg1 *storagegateway.DeleteChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DeleteChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteFileShareRequest(arg0 interfa
 }
 
 // DeleteFileShareWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteFileShareInput, arg2 ...request.Option) (*storagegateway.DeleteFileShareOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteFileShareWithContext(arg0 context.Context, arg1 *storagegateway.DeleteFileShareInput, arg2 ...request.Option) (*storagegateway.DeleteFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteGatewayRequest(arg0 interface
 }
 
 // DeleteGatewayWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteGatewayInput, arg2 ...request.Option) (*storagegateway.DeleteGatewayOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteGatewayWithContext(arg0 context.Context, arg1 *storagegateway.DeleteGatewayInput, arg2 ...request.Option) (*storagegateway.DeleteGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteSnapshotScheduleRequest(arg0 
 }
 
 // DeleteSnapshotScheduleWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DeleteSnapshotScheduleOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteSnapshotScheduleWithContext(arg0 context.Context, arg1 *storagegateway.DeleteSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DeleteSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeArchiveRequest(arg0 inter
 }
 
 // DeleteTapeArchiveWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteTapeArchiveWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteTapeArchiveInput, arg2 ...request.Option) (*storagegateway.DeleteTapeArchiveOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteTapeArchiveWithContext(arg0 context.Context, arg1 *storagegateway.DeleteTapeArchiveInput, arg2 ...request.Option) (*storagegateway.DeleteTapeArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeRequest(arg0 interface{})
 }
 
 // DeleteTapeWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteTapeWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteTapeInput, arg2 ...request.Option) (*storagegateway.DeleteTapeOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteTapeWithContext(arg0 context.Context, arg1 *storagegateway.DeleteTapeInput, arg2 ...request.Option) (*storagegateway.DeleteTapeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteVolumeRequest(arg0 interface{
 }
 
 // DeleteVolumeWithContext mocks base method
-func (m *MockStorageGatewayAPI) DeleteVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.DeleteVolumeInput, arg2 ...request.Option) (*storagegateway.DeleteVolumeOutput, error) {
+func (m *MockStorageGatewayAPI) DeleteVolumeWithContext(arg0 context.Context, arg1 *storagegateway.DeleteVolumeInput, arg2 ...request.Option) (*storagegateway.DeleteVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitRequest(a
 }
 
 // DescribeBandwidthRateLimitWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.DescribeBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeCacheRequest(arg0 interface
 }
 
 // DescribeCacheWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeCacheWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeCacheInput, arg2 ...request.Option) (*storagegateway.DescribeCacheOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeCacheWithContext(arg0 context.Context, arg1 *storagegateway.DescribeCacheInput, arg2 ...request.Option) (*storagegateway.DescribeCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeCachediSCSIVolumesRequest(a
 }
 
 // DescribeCachediSCSIVolumesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeCachediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeCachediSCSIVolumesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeCachediSCSIVolumesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeCachediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeCachediSCSIVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeChapCredentialsRequest(arg0
 }
 
 // DescribeChapCredentialsWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeChapCredentialsWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DescribeChapCredentialsOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeChapCredentialsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeChapCredentialsInput, arg2 ...request.Option) (*storagegateway.DescribeChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeGatewayInformationRequest(a
 }
 
 // DescribeGatewayInformationWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeGatewayInformationWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeGatewayInformationInput, arg2 ...request.Option) (*storagegateway.DescribeGatewayInformationOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeGatewayInformationWithContext(arg0 context.Context, arg1 *storagegateway.DescribeGatewayInformationInput, arg2 ...request.Option) (*storagegateway.DescribeGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeMaintenanceStartTimeRequest
 }
 
 // DescribeMaintenanceStartTimeWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.DescribeMaintenanceStartTimeOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeMaintenanceStartTimeWithContext(arg0 context.Context, arg1 *storagegateway.DescribeMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.DescribeMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeNFSFileSharesRequest(arg0 i
 }
 
 // DescribeNFSFileSharesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeNFSFileSharesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeNFSFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeNFSFileSharesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeNFSFileSharesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeNFSFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeNFSFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBFileSharesRequest(arg0 i
 }
 
 // DescribeSMBFileSharesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeSMBFileSharesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeSMBFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeSMBFileSharesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeSMBFileSharesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeSMBFileSharesInput, arg2 ...request.Option) (*storagegateway.DescribeSMBFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeSMBSettingsRequest(arg0 int
 }
 
 // DescribeSMBSettingsWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeSMBSettingsWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeSMBSettingsInput, arg2 ...request.Option) (*storagegateway.DescribeSMBSettingsOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeSMBSettingsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeSMBSettingsInput, arg2 ...request.Option) (*storagegateway.DescribeSMBSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeSnapshotScheduleRequest(arg
 }
 
 // DescribeSnapshotScheduleWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DescribeSnapshotScheduleOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeSnapshotScheduleWithContext(arg0 context.Context, arg1 *storagegateway.DescribeSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.DescribeSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeStorediSCSIVolumesRequest(a
 }
 
 // DescribeStorediSCSIVolumesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeStorediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeStorediSCSIVolumesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeStorediSCSIVolumesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeStorediSCSIVolumesInput, arg2 ...request.Option) (*storagegateway.DescribeStorediSCSIVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1815,7 +1815,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchivesPages(arg0, arg
 }
 
 // DescribeTapeArchivesPagesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeTapeArchivesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 func(*storagegateway.DescribeTapeArchivesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockStorageGatewayAPI) DescribeTapeArchivesPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 func(*storagegateway.DescribeTapeArchivesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1849,7 +1849,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeArchivesRequest(arg0 in
 }
 
 // DescribeTapeArchivesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeTapeArchivesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 ...request.Option) (*storagegateway.DescribeTapeArchivesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeTapeArchivesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeArchivesInput, arg2 ...request.Option) (*storagegateway.DescribeTapeArchivesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1898,7 +1898,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPointsPages(arg
 }
 
 // DescribeTapeRecoveryPointsPagesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 func(*storagegateway.DescribeTapeRecoveryPointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 func(*storagegateway.DescribeTapeRecoveryPointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1932,7 +1932,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapeRecoveryPointsRequest(a
 }
 
 // DescribeTapeRecoveryPointsWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.DescribeTapeRecoveryPointsOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeTapeRecoveryPointsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.DescribeTapeRecoveryPointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1981,7 +1981,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapesPages(arg0, arg1 inter
 }
 
 // DescribeTapesPagesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeTapesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapesInput, arg2 func(*storagegateway.DescribeTapesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockStorageGatewayAPI) DescribeTapesPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapesInput, arg2 func(*storagegateway.DescribeTapesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2015,7 +2015,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeTapesRequest(arg0 interface
 }
 
 // DescribeTapesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeTapesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeTapesInput, arg2 ...request.Option) (*storagegateway.DescribeTapesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeTapesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeTapesInput, arg2 ...request.Option) (*storagegateway.DescribeTapesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2065,7 +2065,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeUploadBufferRequest(arg0 in
 }
 
 // DescribeUploadBufferWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeUploadBufferWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeUploadBufferInput, arg2 ...request.Option) (*storagegateway.DescribeUploadBufferOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeUploadBufferWithContext(arg0 context.Context, arg1 *storagegateway.DescribeUploadBufferInput, arg2 ...request.Option) (*storagegateway.DescribeUploadBufferOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2114,7 +2114,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevicesPages(arg0, arg1 
 }
 
 // DescribeVTLDevicesPagesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeVTLDevicesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 func(*storagegateway.DescribeVTLDevicesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockStorageGatewayAPI) DescribeVTLDevicesPagesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 func(*storagegateway.DescribeVTLDevicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2148,7 +2148,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeVTLDevicesRequest(arg0 inte
 }
 
 // DescribeVTLDevicesWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeVTLDevicesWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 ...request.Option) (*storagegateway.DescribeVTLDevicesOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeVTLDevicesWithContext(arg0 context.Context, arg1 *storagegateway.DescribeVTLDevicesInput, arg2 ...request.Option) (*storagegateway.DescribeVTLDevicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2198,7 +2198,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeWorkingStorageRequest(arg0 
 }
 
 // DescribeWorkingStorageWithContext mocks base method
-func (m *MockStorageGatewayAPI) DescribeWorkingStorageWithContext(arg0 aws.Context, arg1 *storagegateway.DescribeWorkingStorageInput, arg2 ...request.Option) (*storagegateway.DescribeWorkingStorageOutput, error) {
+func (m *MockStorageGatewayAPI) DescribeWorkingStorageWithContext(arg0 context.Context, arg1 *storagegateway.DescribeWorkingStorageInput, arg2 ...request.Option) (*storagegateway.DescribeWorkingStorageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2248,7 +2248,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DetachVolumeRequest(arg0 interface{
 }
 
 // DetachVolumeWithContext mocks base method
-func (m *MockStorageGatewayAPI) DetachVolumeWithContext(arg0 aws.Context, arg1 *storagegateway.DetachVolumeInput, arg2 ...request.Option) (*storagegateway.DetachVolumeOutput, error) {
+func (m *MockStorageGatewayAPI) DetachVolumeWithContext(arg0 context.Context, arg1 *storagegateway.DetachVolumeInput, arg2 ...request.Option) (*storagegateway.DetachVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2298,7 +2298,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) DisableGatewayRequest(arg0 interfac
 }
 
 // DisableGatewayWithContext mocks base method
-func (m *MockStorageGatewayAPI) DisableGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.DisableGatewayInput, arg2 ...request.Option) (*storagegateway.DisableGatewayOutput, error) {
+func (m *MockStorageGatewayAPI) DisableGatewayWithContext(arg0 context.Context, arg1 *storagegateway.DisableGatewayInput, arg2 ...request.Option) (*storagegateway.DisableGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2348,7 +2348,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) JoinDomainRequest(arg0 interface{})
 }
 
 // JoinDomainWithContext mocks base method
-func (m *MockStorageGatewayAPI) JoinDomainWithContext(arg0 aws.Context, arg1 *storagegateway.JoinDomainInput, arg2 ...request.Option) (*storagegateway.JoinDomainOutput, error) {
+func (m *MockStorageGatewayAPI) JoinDomainWithContext(arg0 context.Context, arg1 *storagegateway.JoinDomainInput, arg2 ...request.Option) (*storagegateway.JoinDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2398,7 +2398,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListFileSharesRequest(arg0 interfac
 }
 
 // ListFileSharesWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListFileSharesWithContext(arg0 aws.Context, arg1 *storagegateway.ListFileSharesInput, arg2 ...request.Option) (*storagegateway.ListFileSharesOutput, error) {
+func (m *MockStorageGatewayAPI) ListFileSharesWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSharesInput, arg2 ...request.Option) (*storagegateway.ListFileSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2447,7 +2447,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListGatewaysPages(arg0, arg1 interf
 }
 
 // ListGatewaysPagesWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListGatewaysPagesWithContext(arg0 aws.Context, arg1 *storagegateway.ListGatewaysInput, arg2 func(*storagegateway.ListGatewaysOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockStorageGatewayAPI) ListGatewaysPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListGatewaysInput, arg2 func(*storagegateway.ListGatewaysOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2481,7 +2481,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListGatewaysRequest(arg0 interface{
 }
 
 // ListGatewaysWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListGatewaysWithContext(arg0 aws.Context, arg1 *storagegateway.ListGatewaysInput, arg2 ...request.Option) (*storagegateway.ListGatewaysOutput, error) {
+func (m *MockStorageGatewayAPI) ListGatewaysWithContext(arg0 context.Context, arg1 *storagegateway.ListGatewaysInput, arg2 ...request.Option) (*storagegateway.ListGatewaysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2531,7 +2531,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListLocalDisksRequest(arg0 interfac
 }
 
 // ListLocalDisksWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListLocalDisksWithContext(arg0 aws.Context, arg1 *storagegateway.ListLocalDisksInput, arg2 ...request.Option) (*storagegateway.ListLocalDisksOutput, error) {
+func (m *MockStorageGatewayAPI) ListLocalDisksWithContext(arg0 context.Context, arg1 *storagegateway.ListLocalDisksInput, arg2 ...request.Option) (*storagegateway.ListLocalDisksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2581,7 +2581,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResourceRequest(arg0 int
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *storagegateway.ListTagsForResourceInput, arg2 ...request.Option) (*storagegateway.ListTagsForResourceOutput, error) {
+func (m *MockStorageGatewayAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *storagegateway.ListTagsForResourceInput, arg2 ...request.Option) (*storagegateway.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2631,7 +2631,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListTapesRequest(arg0 interface{}) 
 }
 
 // ListTapesWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListTapesWithContext(arg0 aws.Context, arg1 *storagegateway.ListTapesInput, arg2 ...request.Option) (*storagegateway.ListTapesOutput, error) {
+func (m *MockStorageGatewayAPI) ListTapesWithContext(arg0 context.Context, arg1 *storagegateway.ListTapesInput, arg2 ...request.Option) (*storagegateway.ListTapesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2681,7 +2681,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeInitiatorsRequest(arg0 in
 }
 
 // ListVolumeInitiatorsWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListVolumeInitiatorsWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumeInitiatorsInput, arg2 ...request.Option) (*storagegateway.ListVolumeInitiatorsOutput, error) {
+func (m *MockStorageGatewayAPI) ListVolumeInitiatorsWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumeInitiatorsInput, arg2 ...request.Option) (*storagegateway.ListVolumeInitiatorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2731,7 +2731,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListVolumeRecoveryPointsRequest(arg
 }
 
 // ListVolumeRecoveryPointsWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.ListVolumeRecoveryPointsOutput, error) {
+func (m *MockStorageGatewayAPI) ListVolumeRecoveryPointsWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumeRecoveryPointsInput, arg2 ...request.Option) (*storagegateway.ListVolumeRecoveryPointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2780,7 +2780,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListVolumesPages(arg0, arg1 interfa
 }
 
 // ListVolumesPagesWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListVolumesPagesWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumesInput, arg2 func(*storagegateway.ListVolumesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockStorageGatewayAPI) ListVolumesPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumesInput, arg2 func(*storagegateway.ListVolumesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2814,7 +2814,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListVolumesRequest(arg0 interface{}
 }
 
 // ListVolumesWithContext mocks base method
-func (m *MockStorageGatewayAPI) ListVolumesWithContext(arg0 aws.Context, arg1 *storagegateway.ListVolumesInput, arg2 ...request.Option) (*storagegateway.ListVolumesOutput, error) {
+func (m *MockStorageGatewayAPI) ListVolumesWithContext(arg0 context.Context, arg1 *storagegateway.ListVolumesInput, arg2 ...request.Option) (*storagegateway.ListVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2864,7 +2864,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) NotifyWhenUploadedRequest(arg0 inte
 }
 
 // NotifyWhenUploadedWithContext mocks base method
-func (m *MockStorageGatewayAPI) NotifyWhenUploadedWithContext(arg0 aws.Context, arg1 *storagegateway.NotifyWhenUploadedInput, arg2 ...request.Option) (*storagegateway.NotifyWhenUploadedOutput, error) {
+func (m *MockStorageGatewayAPI) NotifyWhenUploadedWithContext(arg0 context.Context, arg1 *storagegateway.NotifyWhenUploadedInput, arg2 ...request.Option) (*storagegateway.NotifyWhenUploadedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2914,7 +2914,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) RefreshCacheRequest(arg0 interface{
 }
 
 // RefreshCacheWithContext mocks base method
-func (m *MockStorageGatewayAPI) RefreshCacheWithContext(arg0 aws.Context, arg1 *storagegateway.RefreshCacheInput, arg2 ...request.Option) (*storagegateway.RefreshCacheOutput, error) {
+func (m *MockStorageGatewayAPI) RefreshCacheWithContext(arg0 context.Context, arg1 *storagegateway.RefreshCacheInput, arg2 ...request.Option) (*storagegateway.RefreshCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2964,7 +2964,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockStorageGatewayAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *storagegateway.RemoveTagsFromResourceInput, arg2 ...request.Option) (*storagegateway.RemoveTagsFromResourceOutput, error) {
+func (m *MockStorageGatewayAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *storagegateway.RemoveTagsFromResourceInput, arg2 ...request.Option) (*storagegateway.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3014,7 +3014,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ResetCacheRequest(arg0 interface{})
 }
 
 // ResetCacheWithContext mocks base method
-func (m *MockStorageGatewayAPI) ResetCacheWithContext(arg0 aws.Context, arg1 *storagegateway.ResetCacheInput, arg2 ...request.Option) (*storagegateway.ResetCacheOutput, error) {
+func (m *MockStorageGatewayAPI) ResetCacheWithContext(arg0 context.Context, arg1 *storagegateway.ResetCacheInput, arg2 ...request.Option) (*storagegateway.ResetCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3064,7 +3064,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeArchiveRequest(arg0 int
 }
 
 // RetrieveTapeArchiveWithContext mocks base method
-func (m *MockStorageGatewayAPI) RetrieveTapeArchiveWithContext(arg0 aws.Context, arg1 *storagegateway.RetrieveTapeArchiveInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeArchiveOutput, error) {
+func (m *MockStorageGatewayAPI) RetrieveTapeArchiveWithContext(arg0 context.Context, arg1 *storagegateway.RetrieveTapeArchiveInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3114,7 +3114,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) RetrieveTapeRecoveryPointRequest(ar
 }
 
 // RetrieveTapeRecoveryPointWithContext mocks base method
-func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointWithContext(arg0 aws.Context, arg1 *storagegateway.RetrieveTapeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeRecoveryPointOutput, error) {
+func (m *MockStorageGatewayAPI) RetrieveTapeRecoveryPointWithContext(arg0 context.Context, arg1 *storagegateway.RetrieveTapeRecoveryPointInput, arg2 ...request.Option) (*storagegateway.RetrieveTapeRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3164,7 +3164,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) SetLocalConsolePasswordRequest(arg0
 }
 
 // SetLocalConsolePasswordWithContext mocks base method
-func (m *MockStorageGatewayAPI) SetLocalConsolePasswordWithContext(arg0 aws.Context, arg1 *storagegateway.SetLocalConsolePasswordInput, arg2 ...request.Option) (*storagegateway.SetLocalConsolePasswordOutput, error) {
+func (m *MockStorageGatewayAPI) SetLocalConsolePasswordWithContext(arg0 context.Context, arg1 *storagegateway.SetLocalConsolePasswordInput, arg2 ...request.Option) (*storagegateway.SetLocalConsolePasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3214,7 +3214,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) SetSMBGuestPasswordRequest(arg0 int
 }
 
 // SetSMBGuestPasswordWithContext mocks base method
-func (m *MockStorageGatewayAPI) SetSMBGuestPasswordWithContext(arg0 aws.Context, arg1 *storagegateway.SetSMBGuestPasswordInput, arg2 ...request.Option) (*storagegateway.SetSMBGuestPasswordOutput, error) {
+func (m *MockStorageGatewayAPI) SetSMBGuestPasswordWithContext(arg0 context.Context, arg1 *storagegateway.SetSMBGuestPasswordInput, arg2 ...request.Option) (*storagegateway.SetSMBGuestPasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3264,7 +3264,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) ShutdownGatewayRequest(arg0 interfa
 }
 
 // ShutdownGatewayWithContext mocks base method
-func (m *MockStorageGatewayAPI) ShutdownGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.ShutdownGatewayInput, arg2 ...request.Option) (*storagegateway.ShutdownGatewayOutput, error) {
+func (m *MockStorageGatewayAPI) ShutdownGatewayWithContext(arg0 context.Context, arg1 *storagegateway.ShutdownGatewayInput, arg2 ...request.Option) (*storagegateway.ShutdownGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3314,7 +3314,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) StartGatewayRequest(arg0 interface{
 }
 
 // StartGatewayWithContext mocks base method
-func (m *MockStorageGatewayAPI) StartGatewayWithContext(arg0 aws.Context, arg1 *storagegateway.StartGatewayInput, arg2 ...request.Option) (*storagegateway.StartGatewayOutput, error) {
+func (m *MockStorageGatewayAPI) StartGatewayWithContext(arg0 context.Context, arg1 *storagegateway.StartGatewayInput, arg2 ...request.Option) (*storagegateway.StartGatewayOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3364,7 +3364,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitRequest(arg
 }
 
 // UpdateBandwidthRateLimitWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.UpdateBandwidthRateLimitOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.UpdateBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.UpdateBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3414,7 +3414,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateChapCredentialsRequest(arg0 i
 }
 
 // UpdateChapCredentialsWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateChapCredentialsWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateChapCredentialsInput, arg2 ...request.Option) (*storagegateway.UpdateChapCredentialsOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateChapCredentialsWithContext(arg0 context.Context, arg1 *storagegateway.UpdateChapCredentialsInput, arg2 ...request.Option) (*storagegateway.UpdateChapCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3464,7 +3464,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewayInformationRequest(arg
 }
 
 // UpdateGatewayInformationWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateGatewayInformationWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateGatewayInformationInput, arg2 ...request.Option) (*storagegateway.UpdateGatewayInformationOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateGatewayInformationWithContext(arg0 context.Context, arg1 *storagegateway.UpdateGatewayInformationInput, arg2 ...request.Option) (*storagegateway.UpdateGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3514,7 +3514,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateGatewaySoftwareNowRequest(arg
 }
 
 // UpdateGatewaySoftwareNowWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateGatewaySoftwareNowInput, arg2 ...request.Option) (*storagegateway.UpdateGatewaySoftwareNowOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateGatewaySoftwareNowWithContext(arg0 context.Context, arg1 *storagegateway.UpdateGatewaySoftwareNowInput, arg2 ...request.Option) (*storagegateway.UpdateGatewaySoftwareNowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3564,7 +3564,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateMaintenanceStartTimeRequest(a
 }
 
 // UpdateMaintenanceStartTimeWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.UpdateMaintenanceStartTimeOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateMaintenanceStartTimeWithContext(arg0 context.Context, arg1 *storagegateway.UpdateMaintenanceStartTimeInput, arg2 ...request.Option) (*storagegateway.UpdateMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3614,7 +3614,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateNFSFileShareRequest(arg0 inte
 }
 
 // UpdateNFSFileShareWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateNFSFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateNFSFileShareOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateNFSFileShareWithContext(arg0 context.Context, arg1 *storagegateway.UpdateNFSFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateNFSFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3664,7 +3664,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareRequest(arg0 inte
 }
 
 // UpdateSMBFileShareWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateSMBFileShareWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateSMBFileShareWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3714,7 +3714,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateSnapshotScheduleRequest(arg0 
 }
 
 // UpdateSnapshotScheduleWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.UpdateSnapshotScheduleOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateSnapshotScheduleWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSnapshotScheduleInput, arg2 ...request.Option) (*storagegateway.UpdateSnapshotScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3764,7 +3764,7 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateVTLDeviceTypeRequest(arg0 int
 }
 
 // UpdateVTLDeviceTypeWithContext mocks base method
-func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeWithContext(arg0 aws.Context, arg1 *storagegateway.UpdateVTLDeviceTypeInput, arg2 ...request.Option) (*storagegateway.UpdateVTLDeviceTypeOutput, error) {
+func (m *MockStorageGatewayAPI) UpdateVTLDeviceTypeWithContext(arg0 context.Context, arg1 *storagegateway.UpdateVTLDeviceTypeInput, arg2 ...request.Option) (*storagegateway.UpdateVTLDeviceTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

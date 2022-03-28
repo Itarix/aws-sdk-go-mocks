@@ -5,7 +5,7 @@
 package cognitosyncmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cognitosync "github.com/aws/aws-sdk-go/service/cognitosync"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) BulkPublishRequest(arg0 interface{}) *
 }
 
 // BulkPublishWithContext mocks base method
-func (m *MockCognitoSyncAPI) BulkPublishWithContext(arg0 aws.Context, arg1 *cognitosync.BulkPublishInput, arg2 ...request.Option) (*cognitosync.BulkPublishOutput, error) {
+func (m *MockCognitoSyncAPI) BulkPublishWithContext(arg0 context.Context, arg1 *cognitosync.BulkPublishInput, arg2 ...request.Option) (*cognitosync.BulkPublishOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) DeleteDatasetRequest(arg0 interface{})
 }
 
 // DeleteDatasetWithContext mocks base method
-func (m *MockCognitoSyncAPI) DeleteDatasetWithContext(arg0 aws.Context, arg1 *cognitosync.DeleteDatasetInput, arg2 ...request.Option) (*cognitosync.DeleteDatasetOutput, error) {
+func (m *MockCognitoSyncAPI) DeleteDatasetWithContext(arg0 context.Context, arg1 *cognitosync.DeleteDatasetInput, arg2 ...request.Option) (*cognitosync.DeleteDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) DescribeDatasetRequest(arg0 interface{
 }
 
 // DescribeDatasetWithContext mocks base method
-func (m *MockCognitoSyncAPI) DescribeDatasetWithContext(arg0 aws.Context, arg1 *cognitosync.DescribeDatasetInput, arg2 ...request.Option) (*cognitosync.DescribeDatasetOutput, error) {
+func (m *MockCognitoSyncAPI) DescribeDatasetWithContext(arg0 context.Context, arg1 *cognitosync.DescribeDatasetInput, arg2 ...request.Option) (*cognitosync.DescribeDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) DescribeIdentityPoolUsageRequest(arg0 
 }
 
 // DescribeIdentityPoolUsageWithContext mocks base method
-func (m *MockCognitoSyncAPI) DescribeIdentityPoolUsageWithContext(arg0 aws.Context, arg1 *cognitosync.DescribeIdentityPoolUsageInput, arg2 ...request.Option) (*cognitosync.DescribeIdentityPoolUsageOutput, error) {
+func (m *MockCognitoSyncAPI) DescribeIdentityPoolUsageWithContext(arg0 context.Context, arg1 *cognitosync.DescribeIdentityPoolUsageInput, arg2 ...request.Option) (*cognitosync.DescribeIdentityPoolUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) DescribeIdentityUsageRequest(arg0 inte
 }
 
 // DescribeIdentityUsageWithContext mocks base method
-func (m *MockCognitoSyncAPI) DescribeIdentityUsageWithContext(arg0 aws.Context, arg1 *cognitosync.DescribeIdentityUsageInput, arg2 ...request.Option) (*cognitosync.DescribeIdentityUsageOutput, error) {
+func (m *MockCognitoSyncAPI) DescribeIdentityUsageWithContext(arg0 context.Context, arg1 *cognitosync.DescribeIdentityUsageInput, arg2 ...request.Option) (*cognitosync.DescribeIdentityUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) GetBulkPublishDetailsRequest(arg0 inte
 }
 
 // GetBulkPublishDetailsWithContext mocks base method
-func (m *MockCognitoSyncAPI) GetBulkPublishDetailsWithContext(arg0 aws.Context, arg1 *cognitosync.GetBulkPublishDetailsInput, arg2 ...request.Option) (*cognitosync.GetBulkPublishDetailsOutput, error) {
+func (m *MockCognitoSyncAPI) GetBulkPublishDetailsWithContext(arg0 context.Context, arg1 *cognitosync.GetBulkPublishDetailsInput, arg2 ...request.Option) (*cognitosync.GetBulkPublishDetailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) GetCognitoEventsRequest(arg0 interface
 }
 
 // GetCognitoEventsWithContext mocks base method
-func (m *MockCognitoSyncAPI) GetCognitoEventsWithContext(arg0 aws.Context, arg1 *cognitosync.GetCognitoEventsInput, arg2 ...request.Option) (*cognitosync.GetCognitoEventsOutput, error) {
+func (m *MockCognitoSyncAPI) GetCognitoEventsWithContext(arg0 context.Context, arg1 *cognitosync.GetCognitoEventsInput, arg2 ...request.Option) (*cognitosync.GetCognitoEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) GetIdentityPoolConfigurationRequest(ar
 }
 
 // GetIdentityPoolConfigurationWithContext mocks base method
-func (m *MockCognitoSyncAPI) GetIdentityPoolConfigurationWithContext(arg0 aws.Context, arg1 *cognitosync.GetIdentityPoolConfigurationInput, arg2 ...request.Option) (*cognitosync.GetIdentityPoolConfigurationOutput, error) {
+func (m *MockCognitoSyncAPI) GetIdentityPoolConfigurationWithContext(arg0 context.Context, arg1 *cognitosync.GetIdentityPoolConfigurationInput, arg2 ...request.Option) (*cognitosync.GetIdentityPoolConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) ListDatasetsRequest(arg0 interface{}) 
 }
 
 // ListDatasetsWithContext mocks base method
-func (m *MockCognitoSyncAPI) ListDatasetsWithContext(arg0 aws.Context, arg1 *cognitosync.ListDatasetsInput, arg2 ...request.Option) (*cognitosync.ListDatasetsOutput, error) {
+func (m *MockCognitoSyncAPI) ListDatasetsWithContext(arg0 context.Context, arg1 *cognitosync.ListDatasetsInput, arg2 ...request.Option) (*cognitosync.ListDatasetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) ListIdentityPoolUsageRequest(arg0 inte
 }
 
 // ListIdentityPoolUsageWithContext mocks base method
-func (m *MockCognitoSyncAPI) ListIdentityPoolUsageWithContext(arg0 aws.Context, arg1 *cognitosync.ListIdentityPoolUsageInput, arg2 ...request.Option) (*cognitosync.ListIdentityPoolUsageOutput, error) {
+func (m *MockCognitoSyncAPI) ListIdentityPoolUsageWithContext(arg0 context.Context, arg1 *cognitosync.ListIdentityPoolUsageInput, arg2 ...request.Option) (*cognitosync.ListIdentityPoolUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) ListRecordsRequest(arg0 interface{}) *
 }
 
 // ListRecordsWithContext mocks base method
-func (m *MockCognitoSyncAPI) ListRecordsWithContext(arg0 aws.Context, arg1 *cognitosync.ListRecordsInput, arg2 ...request.Option) (*cognitosync.ListRecordsOutput, error) {
+func (m *MockCognitoSyncAPI) ListRecordsWithContext(arg0 context.Context, arg1 *cognitosync.ListRecordsInput, arg2 ...request.Option) (*cognitosync.ListRecordsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) RegisterDeviceRequest(arg0 interface{}
 }
 
 // RegisterDeviceWithContext mocks base method
-func (m *MockCognitoSyncAPI) RegisterDeviceWithContext(arg0 aws.Context, arg1 *cognitosync.RegisterDeviceInput, arg2 ...request.Option) (*cognitosync.RegisterDeviceOutput, error) {
+func (m *MockCognitoSyncAPI) RegisterDeviceWithContext(arg0 context.Context, arg1 *cognitosync.RegisterDeviceInput, arg2 ...request.Option) (*cognitosync.RegisterDeviceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) SetCognitoEventsRequest(arg0 interface
 }
 
 // SetCognitoEventsWithContext mocks base method
-func (m *MockCognitoSyncAPI) SetCognitoEventsWithContext(arg0 aws.Context, arg1 *cognitosync.SetCognitoEventsInput, arg2 ...request.Option) (*cognitosync.SetCognitoEventsOutput, error) {
+func (m *MockCognitoSyncAPI) SetCognitoEventsWithContext(arg0 context.Context, arg1 *cognitosync.SetCognitoEventsInput, arg2 ...request.Option) (*cognitosync.SetCognitoEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) SetIdentityPoolConfigurationRequest(ar
 }
 
 // SetIdentityPoolConfigurationWithContext mocks base method
-func (m *MockCognitoSyncAPI) SetIdentityPoolConfigurationWithContext(arg0 aws.Context, arg1 *cognitosync.SetIdentityPoolConfigurationInput, arg2 ...request.Option) (*cognitosync.SetIdentityPoolConfigurationOutput, error) {
+func (m *MockCognitoSyncAPI) SetIdentityPoolConfigurationWithContext(arg0 context.Context, arg1 *cognitosync.SetIdentityPoolConfigurationInput, arg2 ...request.Option) (*cognitosync.SetIdentityPoolConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) SubscribeToDatasetRequest(arg0 interfa
 }
 
 // SubscribeToDatasetWithContext mocks base method
-func (m *MockCognitoSyncAPI) SubscribeToDatasetWithContext(arg0 aws.Context, arg1 *cognitosync.SubscribeToDatasetInput, arg2 ...request.Option) (*cognitosync.SubscribeToDatasetOutput, error) {
+func (m *MockCognitoSyncAPI) SubscribeToDatasetWithContext(arg0 context.Context, arg1 *cognitosync.SubscribeToDatasetInput, arg2 ...request.Option) (*cognitosync.SubscribeToDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) UnsubscribeFromDatasetRequest(arg0 int
 }
 
 // UnsubscribeFromDatasetWithContext mocks base method
-func (m *MockCognitoSyncAPI) UnsubscribeFromDatasetWithContext(arg0 aws.Context, arg1 *cognitosync.UnsubscribeFromDatasetInput, arg2 ...request.Option) (*cognitosync.UnsubscribeFromDatasetOutput, error) {
+func (m *MockCognitoSyncAPI) UnsubscribeFromDatasetWithContext(arg0 context.Context, arg1 *cognitosync.UnsubscribeFromDatasetInput, arg2 ...request.Option) (*cognitosync.UnsubscribeFromDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCognitoSyncAPIMockRecorder) UpdateRecordsRequest(arg0 interface{})
 }
 
 // UpdateRecordsWithContext mocks base method
-func (m *MockCognitoSyncAPI) UpdateRecordsWithContext(arg0 aws.Context, arg1 *cognitosync.UpdateRecordsInput, arg2 ...request.Option) (*cognitosync.UpdateRecordsOutput, error) {
+func (m *MockCognitoSyncAPI) UpdateRecordsWithContext(arg0 context.Context, arg1 *cognitosync.UpdateRecordsInput, arg2 ...request.Option) (*cognitosync.UpdateRecordsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

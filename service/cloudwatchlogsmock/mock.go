@@ -5,7 +5,7 @@
 package cloudwatchlogsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudwatchlogs "github.com/aws/aws-sdk-go/service/cloudwatchlogs"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) AssociateKmsKeyRequest(arg0 interfa
 }
 
 // AssociateKmsKeyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) AssociateKmsKeyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.AssociateKmsKeyInput, arg2 ...request.Option) (*cloudwatchlogs.AssociateKmsKeyOutput, error) {
+func (m *MockCloudWatchLogsAPI) AssociateKmsKeyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.AssociateKmsKeyInput, arg2 ...request.Option) (*cloudwatchlogs.AssociateKmsKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) CancelExportTaskRequest(arg0 interf
 }
 
 // CancelExportTaskWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) CancelExportTaskWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.CancelExportTaskInput, arg2 ...request.Option) (*cloudwatchlogs.CancelExportTaskOutput, error) {
+func (m *MockCloudWatchLogsAPI) CancelExportTaskWithContext(arg0 context.Context, arg1 *cloudwatchlogs.CancelExportTaskInput, arg2 ...request.Option) (*cloudwatchlogs.CancelExportTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) CreateExportTaskRequest(arg0 interf
 }
 
 // CreateExportTaskWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) CreateExportTaskWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.CreateExportTaskInput, arg2 ...request.Option) (*cloudwatchlogs.CreateExportTaskOutput, error) {
+func (m *MockCloudWatchLogsAPI) CreateExportTaskWithContext(arg0 context.Context, arg1 *cloudwatchlogs.CreateExportTaskInput, arg2 ...request.Option) (*cloudwatchlogs.CreateExportTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) CreateLogGroupRequest(arg0 interfac
 }
 
 // CreateLogGroupWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) CreateLogGroupWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.CreateLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.CreateLogGroupOutput, error) {
+func (m *MockCloudWatchLogsAPI) CreateLogGroupWithContext(arg0 context.Context, arg1 *cloudwatchlogs.CreateLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.CreateLogGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) CreateLogStreamRequest(arg0 interfa
 }
 
 // CreateLogStreamWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) CreateLogStreamWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.CreateLogStreamInput, arg2 ...request.Option) (*cloudwatchlogs.CreateLogStreamOutput, error) {
+func (m *MockCloudWatchLogsAPI) CreateLogStreamWithContext(arg0 context.Context, arg1 *cloudwatchlogs.CreateLogStreamInput, arg2 ...request.Option) (*cloudwatchlogs.CreateLogStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteDestinationRequest(arg0 inter
 }
 
 // DeleteDestinationWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteDestinationWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteDestinationInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteDestinationOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteDestinationWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteDestinationInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteLogGroupRequest(arg0 interfac
 }
 
 // DeleteLogGroupWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteLogGroupWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteLogGroupOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteLogGroupWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteLogGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteLogStreamRequest(arg0 interfa
 }
 
 // DeleteLogStreamWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteLogStreamWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteLogStreamInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteLogStreamOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteLogStreamWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteLogStreamInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteLogStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteMetricFilterRequest(arg0 inte
 }
 
 // DeleteMetricFilterWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteMetricFilterWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteMetricFilterInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteMetricFilterOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteMetricFilterWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteMetricFilterInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteMetricFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteResourcePolicyRequest(arg0 in
 }
 
 // DeleteResourcePolicyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteResourcePolicyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteResourcePolicyInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteResourcePolicyOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteResourcePolicyInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteRetentionPolicyRequest(arg0 i
 }
 
 // DeleteRetentionPolicyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteRetentionPolicyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteRetentionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteRetentionPolicyOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteRetentionPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteRetentionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteRetentionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteSubscriptionFilterRequest(arg
 }
 
 // DeleteSubscriptionFilterWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DeleteSubscriptionFilterWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DeleteSubscriptionFilterInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteSubscriptionFilterOutput, error) {
+func (m *MockCloudWatchLogsAPI) DeleteSubscriptionFilterWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteSubscriptionFilterInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteSubscriptionFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -665,7 +665,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeDestinationsPages(arg0, arg
 }
 
 // DescribeDestinationsPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeDestinationsPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeDestinationsInput, arg2 func(*cloudwatchlogs.DescribeDestinationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) DescribeDestinationsPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeDestinationsInput, arg2 func(*cloudwatchlogs.DescribeDestinationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -699,7 +699,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeDestinationsRequest(arg0 in
 }
 
 // DescribeDestinationsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeDestinationsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeDestinationsInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeDestinationsOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeDestinationsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeDestinationsInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeDestinationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeExportTasksRequest(arg0 int
 }
 
 // DescribeExportTasksWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeExportTasksWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeExportTasksInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeExportTasksOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeExportTasksWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeExportTasksInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeExportTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeLogGroupsPages(arg0, arg1 i
 }
 
 // DescribeLogGroupsPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeLogGroupsPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeLogGroupsInput, arg2 func(*cloudwatchlogs.DescribeLogGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) DescribeLogGroupsPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeLogGroupsInput, arg2 func(*cloudwatchlogs.DescribeLogGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -832,7 +832,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeLogGroupsRequest(arg0 inter
 }
 
 // DescribeLogGroupsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeLogGroupsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeLogGroupsInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeLogGroupsOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeLogGroupsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeLogGroupsInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeLogGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeLogStreamsPages(arg0, arg1 
 }
 
 // DescribeLogStreamsPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeLogStreamsPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeLogStreamsInput, arg2 func(*cloudwatchlogs.DescribeLogStreamsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) DescribeLogStreamsPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeLogStreamsInput, arg2 func(*cloudwatchlogs.DescribeLogStreamsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -915,7 +915,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeLogStreamsRequest(arg0 inte
 }
 
 // DescribeLogStreamsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeLogStreamsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeLogStreamsInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeLogStreamsOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeLogStreamsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeLogStreamsInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeLogStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -964,7 +964,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeMetricFiltersPages(arg0, ar
 }
 
 // DescribeMetricFiltersPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeMetricFiltersPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeMetricFiltersInput, arg2 func(*cloudwatchlogs.DescribeMetricFiltersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) DescribeMetricFiltersPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeMetricFiltersInput, arg2 func(*cloudwatchlogs.DescribeMetricFiltersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -998,7 +998,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeMetricFiltersRequest(arg0 i
 }
 
 // DescribeMetricFiltersWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeMetricFiltersWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeMetricFiltersInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeMetricFiltersOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeMetricFiltersWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeMetricFiltersInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeMetricFiltersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeQueriesRequest(arg0 interfa
 }
 
 // DescribeQueriesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeQueriesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeQueriesInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeQueriesOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeQueriesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeQueriesInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeQueriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeResourcePoliciesRequest(arg
 }
 
 // DescribeResourcePoliciesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeResourcePoliciesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeResourcePoliciesInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeResourcePoliciesOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeResourcePoliciesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeResourcePoliciesInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeResourcePoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1147,7 +1147,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeSubscriptionFiltersPages(ar
 }
 
 // DescribeSubscriptionFiltersPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeSubscriptionFiltersPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeSubscriptionFiltersInput, arg2 func(*cloudwatchlogs.DescribeSubscriptionFiltersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) DescribeSubscriptionFiltersPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeSubscriptionFiltersInput, arg2 func(*cloudwatchlogs.DescribeSubscriptionFiltersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1181,7 +1181,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeSubscriptionFiltersRequest(
 }
 
 // DescribeSubscriptionFiltersWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DescribeSubscriptionFiltersWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DescribeSubscriptionFiltersInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeSubscriptionFiltersOutput, error) {
+func (m *MockCloudWatchLogsAPI) DescribeSubscriptionFiltersWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeSubscriptionFiltersInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeSubscriptionFiltersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DisassociateKmsKeyRequest(arg0 inte
 }
 
 // DisassociateKmsKeyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) DisassociateKmsKeyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.DisassociateKmsKeyInput, arg2 ...request.Option) (*cloudwatchlogs.DisassociateKmsKeyOutput, error) {
+func (m *MockCloudWatchLogsAPI) DisassociateKmsKeyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DisassociateKmsKeyInput, arg2 ...request.Option) (*cloudwatchlogs.DisassociateKmsKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1280,7 +1280,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) FilterLogEventsPages(arg0, arg1 int
 }
 
 // FilterLogEventsPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) FilterLogEventsPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.FilterLogEventsInput, arg2 func(*cloudwatchlogs.FilterLogEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) FilterLogEventsPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.FilterLogEventsInput, arg2 func(*cloudwatchlogs.FilterLogEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1314,7 +1314,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) FilterLogEventsRequest(arg0 interfa
 }
 
 // FilterLogEventsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) FilterLogEventsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.FilterLogEventsInput, arg2 ...request.Option) (*cloudwatchlogs.FilterLogEventsOutput, error) {
+func (m *MockCloudWatchLogsAPI) FilterLogEventsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.FilterLogEventsInput, arg2 ...request.Option) (*cloudwatchlogs.FilterLogEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1363,7 +1363,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) GetLogEventsPages(arg0, arg1 interf
 }
 
 // GetLogEventsPagesWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) GetLogEventsPagesWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.GetLogEventsInput, arg2 func(*cloudwatchlogs.GetLogEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudWatchLogsAPI) GetLogEventsPagesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.GetLogEventsInput, arg2 func(*cloudwatchlogs.GetLogEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1397,7 +1397,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) GetLogEventsRequest(arg0 interface{
 }
 
 // GetLogEventsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) GetLogEventsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.GetLogEventsInput, arg2 ...request.Option) (*cloudwatchlogs.GetLogEventsOutput, error) {
+func (m *MockCloudWatchLogsAPI) GetLogEventsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.GetLogEventsInput, arg2 ...request.Option) (*cloudwatchlogs.GetLogEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1447,7 +1447,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) GetLogGroupFieldsRequest(arg0 inter
 }
 
 // GetLogGroupFieldsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) GetLogGroupFieldsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.GetLogGroupFieldsInput, arg2 ...request.Option) (*cloudwatchlogs.GetLogGroupFieldsOutput, error) {
+func (m *MockCloudWatchLogsAPI) GetLogGroupFieldsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.GetLogGroupFieldsInput, arg2 ...request.Option) (*cloudwatchlogs.GetLogGroupFieldsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1497,7 +1497,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) GetLogRecordRequest(arg0 interface{
 }
 
 // GetLogRecordWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) GetLogRecordWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.GetLogRecordInput, arg2 ...request.Option) (*cloudwatchlogs.GetLogRecordOutput, error) {
+func (m *MockCloudWatchLogsAPI) GetLogRecordWithContext(arg0 context.Context, arg1 *cloudwatchlogs.GetLogRecordInput, arg2 ...request.Option) (*cloudwatchlogs.GetLogRecordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1547,7 +1547,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) GetQueryResultsRequest(arg0 interfa
 }
 
 // GetQueryResultsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) GetQueryResultsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.GetQueryResultsInput, arg2 ...request.Option) (*cloudwatchlogs.GetQueryResultsOutput, error) {
+func (m *MockCloudWatchLogsAPI) GetQueryResultsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.GetQueryResultsInput, arg2 ...request.Option) (*cloudwatchlogs.GetQueryResultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1597,7 +1597,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) ListTagsLogGroupRequest(arg0 interf
 }
 
 // ListTagsLogGroupWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) ListTagsLogGroupWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.ListTagsLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.ListTagsLogGroupOutput, error) {
+func (m *MockCloudWatchLogsAPI) ListTagsLogGroupWithContext(arg0 context.Context, arg1 *cloudwatchlogs.ListTagsLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.ListTagsLogGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1662,7 +1662,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutDestinationPolicyRequest(arg0 in
 }
 
 // PutDestinationPolicyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutDestinationPolicyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutDestinationPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutDestinationPolicyOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutDestinationPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutDestinationPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutDestinationPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutDestinationRequest(arg0 interfac
 }
 
 // PutDestinationWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutDestinationWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutDestinationInput, arg2 ...request.Option) (*cloudwatchlogs.PutDestinationOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutDestinationWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutDestinationInput, arg2 ...request.Option) (*cloudwatchlogs.PutDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1747,7 +1747,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutLogEventsRequest(arg0 interface{
 }
 
 // PutLogEventsWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutLogEventsWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutLogEventsInput, arg2 ...request.Option) (*cloudwatchlogs.PutLogEventsOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutLogEventsWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutLogEventsInput, arg2 ...request.Option) (*cloudwatchlogs.PutLogEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1797,7 +1797,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutMetricFilterRequest(arg0 interfa
 }
 
 // PutMetricFilterWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutMetricFilterWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutMetricFilterInput, arg2 ...request.Option) (*cloudwatchlogs.PutMetricFilterOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutMetricFilterWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutMetricFilterInput, arg2 ...request.Option) (*cloudwatchlogs.PutMetricFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1847,7 +1847,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutResourcePolicyRequest(arg0 inter
 }
 
 // PutResourcePolicyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutResourcePolicyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutResourcePolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutResourcePolicyOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutResourcePolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1897,7 +1897,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutRetentionPolicyRequest(arg0 inte
 }
 
 // PutRetentionPolicyWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutRetentionPolicyWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutRetentionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutRetentionPolicyOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutRetentionPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutRetentionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutRetentionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1947,7 +1947,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) PutSubscriptionFilterRequest(arg0 i
 }
 
 // PutSubscriptionFilterWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) PutSubscriptionFilterWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.PutSubscriptionFilterInput, arg2 ...request.Option) (*cloudwatchlogs.PutSubscriptionFilterOutput, error) {
+func (m *MockCloudWatchLogsAPI) PutSubscriptionFilterWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutSubscriptionFilterInput, arg2 ...request.Option) (*cloudwatchlogs.PutSubscriptionFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1997,7 +1997,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) StartQueryRequest(arg0 interface{})
 }
 
 // StartQueryWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) StartQueryWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.StartQueryInput, arg2 ...request.Option) (*cloudwatchlogs.StartQueryOutput, error) {
+func (m *MockCloudWatchLogsAPI) StartQueryWithContext(arg0 context.Context, arg1 *cloudwatchlogs.StartQueryInput, arg2 ...request.Option) (*cloudwatchlogs.StartQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2047,7 +2047,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) StopQueryRequest(arg0 interface{}) 
 }
 
 // StopQueryWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) StopQueryWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.StopQueryInput, arg2 ...request.Option) (*cloudwatchlogs.StopQueryOutput, error) {
+func (m *MockCloudWatchLogsAPI) StopQueryWithContext(arg0 context.Context, arg1 *cloudwatchlogs.StopQueryInput, arg2 ...request.Option) (*cloudwatchlogs.StopQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2097,7 +2097,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) TagLogGroupRequest(arg0 interface{}
 }
 
 // TagLogGroupWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) TagLogGroupWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.TagLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.TagLogGroupOutput, error) {
+func (m *MockCloudWatchLogsAPI) TagLogGroupWithContext(arg0 context.Context, arg1 *cloudwatchlogs.TagLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.TagLogGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2147,7 +2147,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) TestMetricFilterRequest(arg0 interf
 }
 
 // TestMetricFilterWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) TestMetricFilterWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.TestMetricFilterInput, arg2 ...request.Option) (*cloudwatchlogs.TestMetricFilterOutput, error) {
+func (m *MockCloudWatchLogsAPI) TestMetricFilterWithContext(arg0 context.Context, arg1 *cloudwatchlogs.TestMetricFilterInput, arg2 ...request.Option) (*cloudwatchlogs.TestMetricFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2197,7 +2197,7 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) UntagLogGroupRequest(arg0 interface
 }
 
 // UntagLogGroupWithContext mocks base method
-func (m *MockCloudWatchLogsAPI) UntagLogGroupWithContext(arg0 aws.Context, arg1 *cloudwatchlogs.UntagLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.UntagLogGroupOutput, error) {
+func (m *MockCloudWatchLogsAPI) UntagLogGroupWithContext(arg0 context.Context, arg1 *cloudwatchlogs.UntagLogGroupInput, arg2 ...request.Option) (*cloudwatchlogs.UntagLogGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

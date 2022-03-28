@@ -5,7 +5,7 @@
 package eksmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	eks "github.com/aws/aws-sdk-go/service/eks"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockEKSAPIMockRecorder) CreateClusterRequest(arg0 interface{}) *gomock
 }
 
 // CreateClusterWithContext mocks base method
-func (m *MockEKSAPI) CreateClusterWithContext(arg0 aws.Context, arg1 *eks.CreateClusterInput, arg2 ...request.Option) (*eks.CreateClusterOutput, error) {
+func (m *MockEKSAPI) CreateClusterWithContext(arg0 context.Context, arg1 *eks.CreateClusterInput, arg2 ...request.Option) (*eks.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockEKSAPIMockRecorder) DeleteClusterRequest(arg0 interface{}) *gomock
 }
 
 // DeleteClusterWithContext mocks base method
-func (m *MockEKSAPI) DeleteClusterWithContext(arg0 aws.Context, arg1 *eks.DeleteClusterInput, arg2 ...request.Option) (*eks.DeleteClusterOutput, error) {
+func (m *MockEKSAPI) DeleteClusterWithContext(arg0 context.Context, arg1 *eks.DeleteClusterInput, arg2 ...request.Option) (*eks.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockEKSAPIMockRecorder) DescribeClusterRequest(arg0 interface{}) *gomo
 }
 
 // DescribeClusterWithContext mocks base method
-func (m *MockEKSAPI) DescribeClusterWithContext(arg0 aws.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.Option) (*eks.DescribeClusterOutput, error) {
+func (m *MockEKSAPI) DescribeClusterWithContext(arg0 context.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.Option) (*eks.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockEKSAPIMockRecorder) DescribeUpdateRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeUpdateWithContext mocks base method
-func (m *MockEKSAPI) DescribeUpdateWithContext(arg0 aws.Context, arg1 *eks.DescribeUpdateInput, arg2 ...request.Option) (*eks.DescribeUpdateOutput, error) {
+func (m *MockEKSAPI) DescribeUpdateWithContext(arg0 context.Context, arg1 *eks.DescribeUpdateInput, arg2 ...request.Option) (*eks.DescribeUpdateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockEKSAPIMockRecorder) ListClustersRequest(arg0 interface{}) *gomock.
 }
 
 // ListClustersWithContext mocks base method
-func (m *MockEKSAPI) ListClustersWithContext(arg0 aws.Context, arg1 *eks.ListClustersInput, arg2 ...request.Option) (*eks.ListClustersOutput, error) {
+func (m *MockEKSAPI) ListClustersWithContext(arg0 context.Context, arg1 *eks.ListClustersInput, arg2 ...request.Option) (*eks.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockEKSAPIMockRecorder) ListUpdatesRequest(arg0 interface{}) *gomock.C
 }
 
 // ListUpdatesWithContext mocks base method
-func (m *MockEKSAPI) ListUpdatesWithContext(arg0 aws.Context, arg1 *eks.ListUpdatesInput, arg2 ...request.Option) (*eks.ListUpdatesOutput, error) {
+func (m *MockEKSAPI) ListUpdatesWithContext(arg0 context.Context, arg1 *eks.ListUpdatesInput, arg2 ...request.Option) (*eks.ListUpdatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockEKSAPIMockRecorder) UpdateClusterVersionRequest(arg0 interface{}) 
 }
 
 // UpdateClusterVersionWithContext mocks base method
-func (m *MockEKSAPI) UpdateClusterVersionWithContext(arg0 aws.Context, arg1 *eks.UpdateClusterVersionInput, arg2 ...request.Option) (*eks.UpdateClusterVersionOutput, error) {
+func (m *MockEKSAPI) UpdateClusterVersionWithContext(arg0 context.Context, arg1 *eks.UpdateClusterVersionInput, arg2 ...request.Option) (*eks.UpdateClusterVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -400,7 +400,7 @@ func (mr *MockEKSAPIMockRecorder) WaitUntilClusterActive(arg0 interface{}) *gomo
 }
 
 // WaitUntilClusterActiveWithContext mocks base method
-func (m *MockEKSAPI) WaitUntilClusterActiveWithContext(arg0 aws.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+func (m *MockEKSAPI) WaitUntilClusterActiveWithContext(arg0 context.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -433,7 +433,7 @@ func (mr *MockEKSAPIMockRecorder) WaitUntilClusterDeleted(arg0 interface{}) *gom
 }
 
 // WaitUntilClusterDeletedWithContext mocks base method
-func (m *MockEKSAPI) WaitUntilClusterDeletedWithContext(arg0 aws.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.WaiterOption) error {
+func (m *MockEKSAPI) WaitUntilClusterDeletedWithContext(arg0 context.Context, arg1 *eks.DescribeClusterInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

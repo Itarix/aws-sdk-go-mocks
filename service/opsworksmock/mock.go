@@ -5,7 +5,7 @@
 package opsworksmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	opsworks "github.com/aws/aws-sdk-go/service/opsworks"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockOpsWorksAPIMockRecorder) AssignInstanceRequest(arg0 interface{}) *
 }
 
 // AssignInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) AssignInstanceWithContext(arg0 aws.Context, arg1 *opsworks.AssignInstanceInput, arg2 ...request.Option) (*opsworks.AssignInstanceOutput, error) {
+func (m *MockOpsWorksAPI) AssignInstanceWithContext(arg0 context.Context, arg1 *opsworks.AssignInstanceInput, arg2 ...request.Option) (*opsworks.AssignInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockOpsWorksAPIMockRecorder) AssignVolumeRequest(arg0 interface{}) *go
 }
 
 // AssignVolumeWithContext mocks base method
-func (m *MockOpsWorksAPI) AssignVolumeWithContext(arg0 aws.Context, arg1 *opsworks.AssignVolumeInput, arg2 ...request.Option) (*opsworks.AssignVolumeOutput, error) {
+func (m *MockOpsWorksAPI) AssignVolumeWithContext(arg0 context.Context, arg1 *opsworks.AssignVolumeInput, arg2 ...request.Option) (*opsworks.AssignVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockOpsWorksAPIMockRecorder) AssociateElasticIpRequest(arg0 interface{
 }
 
 // AssociateElasticIpWithContext mocks base method
-func (m *MockOpsWorksAPI) AssociateElasticIpWithContext(arg0 aws.Context, arg1 *opsworks.AssociateElasticIpInput, arg2 ...request.Option) (*opsworks.AssociateElasticIpOutput, error) {
+func (m *MockOpsWorksAPI) AssociateElasticIpWithContext(arg0 context.Context, arg1 *opsworks.AssociateElasticIpInput, arg2 ...request.Option) (*opsworks.AssociateElasticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockOpsWorksAPIMockRecorder) AttachElasticLoadBalancerRequest(arg0 int
 }
 
 // AttachElasticLoadBalancerWithContext mocks base method
-func (m *MockOpsWorksAPI) AttachElasticLoadBalancerWithContext(arg0 aws.Context, arg1 *opsworks.AttachElasticLoadBalancerInput, arg2 ...request.Option) (*opsworks.AttachElasticLoadBalancerOutput, error) {
+func (m *MockOpsWorksAPI) AttachElasticLoadBalancerWithContext(arg0 context.Context, arg1 *opsworks.AttachElasticLoadBalancerInput, arg2 ...request.Option) (*opsworks.AttachElasticLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CloneStackRequest(arg0 interface{}) *gomo
 }
 
 // CloneStackWithContext mocks base method
-func (m *MockOpsWorksAPI) CloneStackWithContext(arg0 aws.Context, arg1 *opsworks.CloneStackInput, arg2 ...request.Option) (*opsworks.CloneStackOutput, error) {
+func (m *MockOpsWorksAPI) CloneStackWithContext(arg0 context.Context, arg1 *opsworks.CloneStackInput, arg2 ...request.Option) (*opsworks.CloneStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CreateAppRequest(arg0 interface{}) *gomoc
 }
 
 // CreateAppWithContext mocks base method
-func (m *MockOpsWorksAPI) CreateAppWithContext(arg0 aws.Context, arg1 *opsworks.CreateAppInput, arg2 ...request.Option) (*opsworks.CreateAppOutput, error) {
+func (m *MockOpsWorksAPI) CreateAppWithContext(arg0 context.Context, arg1 *opsworks.CreateAppInput, arg2 ...request.Option) (*opsworks.CreateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CreateDeploymentRequest(arg0 interface{})
 }
 
 // CreateDeploymentWithContext mocks base method
-func (m *MockOpsWorksAPI) CreateDeploymentWithContext(arg0 aws.Context, arg1 *opsworks.CreateDeploymentInput, arg2 ...request.Option) (*opsworks.CreateDeploymentOutput, error) {
+func (m *MockOpsWorksAPI) CreateDeploymentWithContext(arg0 context.Context, arg1 *opsworks.CreateDeploymentInput, arg2 ...request.Option) (*opsworks.CreateDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CreateInstanceRequest(arg0 interface{}) *
 }
 
 // CreateInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) CreateInstanceWithContext(arg0 aws.Context, arg1 *opsworks.CreateInstanceInput, arg2 ...request.Option) (*opsworks.CreateInstanceOutput, error) {
+func (m *MockOpsWorksAPI) CreateInstanceWithContext(arg0 context.Context, arg1 *opsworks.CreateInstanceInput, arg2 ...request.Option) (*opsworks.CreateInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CreateLayerRequest(arg0 interface{}) *gom
 }
 
 // CreateLayerWithContext mocks base method
-func (m *MockOpsWorksAPI) CreateLayerWithContext(arg0 aws.Context, arg1 *opsworks.CreateLayerInput, arg2 ...request.Option) (*opsworks.CreateLayerOutput, error) {
+func (m *MockOpsWorksAPI) CreateLayerWithContext(arg0 context.Context, arg1 *opsworks.CreateLayerInput, arg2 ...request.Option) (*opsworks.CreateLayerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CreateStackRequest(arg0 interface{}) *gom
 }
 
 // CreateStackWithContext mocks base method
-func (m *MockOpsWorksAPI) CreateStackWithContext(arg0 aws.Context, arg1 *opsworks.CreateStackInput, arg2 ...request.Option) (*opsworks.CreateStackOutput, error) {
+func (m *MockOpsWorksAPI) CreateStackWithContext(arg0 context.Context, arg1 *opsworks.CreateStackInput, arg2 ...request.Option) (*opsworks.CreateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockOpsWorksAPIMockRecorder) CreateUserProfileRequest(arg0 interface{}
 }
 
 // CreateUserProfileWithContext mocks base method
-func (m *MockOpsWorksAPI) CreateUserProfileWithContext(arg0 aws.Context, arg1 *opsworks.CreateUserProfileInput, arg2 ...request.Option) (*opsworks.CreateUserProfileOutput, error) {
+func (m *MockOpsWorksAPI) CreateUserProfileWithContext(arg0 context.Context, arg1 *opsworks.CreateUserProfileInput, arg2 ...request.Option) (*opsworks.CreateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeleteAppRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteAppWithContext mocks base method
-func (m *MockOpsWorksAPI) DeleteAppWithContext(arg0 aws.Context, arg1 *opsworks.DeleteAppInput, arg2 ...request.Option) (*opsworks.DeleteAppOutput, error) {
+func (m *MockOpsWorksAPI) DeleteAppWithContext(arg0 context.Context, arg1 *opsworks.DeleteAppInput, arg2 ...request.Option) (*opsworks.DeleteAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeleteInstanceRequest(arg0 interface{}) *
 }
 
 // DeleteInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) DeleteInstanceWithContext(arg0 aws.Context, arg1 *opsworks.DeleteInstanceInput, arg2 ...request.Option) (*opsworks.DeleteInstanceOutput, error) {
+func (m *MockOpsWorksAPI) DeleteInstanceWithContext(arg0 context.Context, arg1 *opsworks.DeleteInstanceInput, arg2 ...request.Option) (*opsworks.DeleteInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeleteLayerRequest(arg0 interface{}) *gom
 }
 
 // DeleteLayerWithContext mocks base method
-func (m *MockOpsWorksAPI) DeleteLayerWithContext(arg0 aws.Context, arg1 *opsworks.DeleteLayerInput, arg2 ...request.Option) (*opsworks.DeleteLayerOutput, error) {
+func (m *MockOpsWorksAPI) DeleteLayerWithContext(arg0 context.Context, arg1 *opsworks.DeleteLayerInput, arg2 ...request.Option) (*opsworks.DeleteLayerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeleteStackRequest(arg0 interface{}) *gom
 }
 
 // DeleteStackWithContext mocks base method
-func (m *MockOpsWorksAPI) DeleteStackWithContext(arg0 aws.Context, arg1 *opsworks.DeleteStackInput, arg2 ...request.Option) (*opsworks.DeleteStackOutput, error) {
+func (m *MockOpsWorksAPI) DeleteStackWithContext(arg0 context.Context, arg1 *opsworks.DeleteStackInput, arg2 ...request.Option) (*opsworks.DeleteStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeleteUserProfileRequest(arg0 interface{}
 }
 
 // DeleteUserProfileWithContext mocks base method
-func (m *MockOpsWorksAPI) DeleteUserProfileWithContext(arg0 aws.Context, arg1 *opsworks.DeleteUserProfileInput, arg2 ...request.Option) (*opsworks.DeleteUserProfileOutput, error) {
+func (m *MockOpsWorksAPI) DeleteUserProfileWithContext(arg0 context.Context, arg1 *opsworks.DeleteUserProfileInput, arg2 ...request.Option) (*opsworks.DeleteUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeregisterEcsClusterRequest(arg0 interfac
 }
 
 // DeregisterEcsClusterWithContext mocks base method
-func (m *MockOpsWorksAPI) DeregisterEcsClusterWithContext(arg0 aws.Context, arg1 *opsworks.DeregisterEcsClusterInput, arg2 ...request.Option) (*opsworks.DeregisterEcsClusterOutput, error) {
+func (m *MockOpsWorksAPI) DeregisterEcsClusterWithContext(arg0 context.Context, arg1 *opsworks.DeregisterEcsClusterInput, arg2 ...request.Option) (*opsworks.DeregisterEcsClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeregisterElasticIpRequest(arg0 interface
 }
 
 // DeregisterElasticIpWithContext mocks base method
-func (m *MockOpsWorksAPI) DeregisterElasticIpWithContext(arg0 aws.Context, arg1 *opsworks.DeregisterElasticIpInput, arg2 ...request.Option) (*opsworks.DeregisterElasticIpOutput, error) {
+func (m *MockOpsWorksAPI) DeregisterElasticIpWithContext(arg0 context.Context, arg1 *opsworks.DeregisterElasticIpInput, arg2 ...request.Option) (*opsworks.DeregisterElasticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeregisterInstanceRequest(arg0 interface{
 }
 
 // DeregisterInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) DeregisterInstanceWithContext(arg0 aws.Context, arg1 *opsworks.DeregisterInstanceInput, arg2 ...request.Option) (*opsworks.DeregisterInstanceOutput, error) {
+func (m *MockOpsWorksAPI) DeregisterInstanceWithContext(arg0 context.Context, arg1 *opsworks.DeregisterInstanceInput, arg2 ...request.Option) (*opsworks.DeregisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeregisterRdsDbInstanceRequest(arg0 inter
 }
 
 // DeregisterRdsDbInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) DeregisterRdsDbInstanceWithContext(arg0 aws.Context, arg1 *opsworks.DeregisterRdsDbInstanceInput, arg2 ...request.Option) (*opsworks.DeregisterRdsDbInstanceOutput, error) {
+func (m *MockOpsWorksAPI) DeregisterRdsDbInstanceWithContext(arg0 context.Context, arg1 *opsworks.DeregisterRdsDbInstanceInput, arg2 ...request.Option) (*opsworks.DeregisterRdsDbInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DeregisterVolumeRequest(arg0 interface{})
 }
 
 // DeregisterVolumeWithContext mocks base method
-func (m *MockOpsWorksAPI) DeregisterVolumeWithContext(arg0 aws.Context, arg1 *opsworks.DeregisterVolumeInput, arg2 ...request.Option) (*opsworks.DeregisterVolumeOutput, error) {
+func (m *MockOpsWorksAPI) DeregisterVolumeWithContext(arg0 context.Context, arg1 *opsworks.DeregisterVolumeInput, arg2 ...request.Option) (*opsworks.DeregisterVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeAgentVersionsRequest(arg0 interfa
 }
 
 // DescribeAgentVersionsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeAgentVersionsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeAgentVersionsInput, arg2 ...request.Option) (*opsworks.DescribeAgentVersionsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeAgentVersionsWithContext(arg0 context.Context, arg1 *opsworks.DescribeAgentVersionsInput, arg2 ...request.Option) (*opsworks.DescribeAgentVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeAppsRequest(arg0 interface{}) *go
 }
 
 // DescribeAppsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeAppsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeAppsInput, arg2 ...request.Option) (*opsworks.DescribeAppsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeAppsWithContext(arg0 context.Context, arg1 *opsworks.DescribeAppsInput, arg2 ...request.Option) (*opsworks.DescribeAppsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeCommandsRequest(arg0 interface{})
 }
 
 // DescribeCommandsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeCommandsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeCommandsInput, arg2 ...request.Option) (*opsworks.DescribeCommandsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeCommandsWithContext(arg0 context.Context, arg1 *opsworks.DescribeCommandsInput, arg2 ...request.Option) (*opsworks.DescribeCommandsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeDeploymentsRequest(arg0 interface
 }
 
 // DescribeDeploymentsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeDeploymentsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeDeploymentsInput, arg2 ...request.Option) (*opsworks.DescribeDeploymentsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeDeploymentsWithContext(arg0 context.Context, arg1 *opsworks.DescribeDeploymentsInput, arg2 ...request.Option) (*opsworks.DescribeDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeEcsClustersPages(arg0, arg1 inter
 }
 
 // DescribeEcsClustersPagesWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeEcsClustersPagesWithContext(arg0 aws.Context, arg1 *opsworks.DescribeEcsClustersInput, arg2 func(*opsworks.DescribeEcsClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockOpsWorksAPI) DescribeEcsClustersPagesWithContext(arg0 context.Context, arg1 *opsworks.DescribeEcsClustersInput, arg2 func(*opsworks.DescribeEcsClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1349,7 +1349,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeEcsClustersRequest(arg0 interface
 }
 
 // DescribeEcsClustersWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeEcsClustersWithContext(arg0 aws.Context, arg1 *opsworks.DescribeEcsClustersInput, arg2 ...request.Option) (*opsworks.DescribeEcsClustersOutput, error) {
+func (m *MockOpsWorksAPI) DescribeEcsClustersWithContext(arg0 context.Context, arg1 *opsworks.DescribeEcsClustersInput, arg2 ...request.Option) (*opsworks.DescribeEcsClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1399,7 +1399,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeElasticIpsRequest(arg0 interface{
 }
 
 // DescribeElasticIpsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeElasticIpsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeElasticIpsInput, arg2 ...request.Option) (*opsworks.DescribeElasticIpsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeElasticIpsWithContext(arg0 context.Context, arg1 *opsworks.DescribeElasticIpsInput, arg2 ...request.Option) (*opsworks.DescribeElasticIpsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1449,7 +1449,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeElasticLoadBalancersRequest(arg0 
 }
 
 // DescribeElasticLoadBalancersWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeElasticLoadBalancersWithContext(arg0 aws.Context, arg1 *opsworks.DescribeElasticLoadBalancersInput, arg2 ...request.Option) (*opsworks.DescribeElasticLoadBalancersOutput, error) {
+func (m *MockOpsWorksAPI) DescribeElasticLoadBalancersWithContext(arg0 context.Context, arg1 *opsworks.DescribeElasticLoadBalancersInput, arg2 ...request.Option) (*opsworks.DescribeElasticLoadBalancersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1499,7 +1499,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeInstancesRequest(arg0 interface{}
 }
 
 // DescribeInstancesWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeInstancesWithContext(arg0 aws.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.Option) (*opsworks.DescribeInstancesOutput, error) {
+func (m *MockOpsWorksAPI) DescribeInstancesWithContext(arg0 context.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.Option) (*opsworks.DescribeInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1549,7 +1549,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeLayersRequest(arg0 interface{}) *
 }
 
 // DescribeLayersWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeLayersWithContext(arg0 aws.Context, arg1 *opsworks.DescribeLayersInput, arg2 ...request.Option) (*opsworks.DescribeLayersOutput, error) {
+func (m *MockOpsWorksAPI) DescribeLayersWithContext(arg0 context.Context, arg1 *opsworks.DescribeLayersInput, arg2 ...request.Option) (*opsworks.DescribeLayersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1599,7 +1599,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeLoadBasedAutoScalingRequest(arg0 
 }
 
 // DescribeLoadBasedAutoScalingWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeLoadBasedAutoScalingWithContext(arg0 aws.Context, arg1 *opsworks.DescribeLoadBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.DescribeLoadBasedAutoScalingOutput, error) {
+func (m *MockOpsWorksAPI) DescribeLoadBasedAutoScalingWithContext(arg0 context.Context, arg1 *opsworks.DescribeLoadBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.DescribeLoadBasedAutoScalingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1649,7 +1649,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeMyUserProfileRequest(arg0 interfa
 }
 
 // DescribeMyUserProfileWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeMyUserProfileWithContext(arg0 aws.Context, arg1 *opsworks.DescribeMyUserProfileInput, arg2 ...request.Option) (*opsworks.DescribeMyUserProfileOutput, error) {
+func (m *MockOpsWorksAPI) DescribeMyUserProfileWithContext(arg0 context.Context, arg1 *opsworks.DescribeMyUserProfileInput, arg2 ...request.Option) (*opsworks.DescribeMyUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1699,7 +1699,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeOperatingSystemsRequest(arg0 inte
 }
 
 // DescribeOperatingSystemsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeOperatingSystemsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeOperatingSystemsInput, arg2 ...request.Option) (*opsworks.DescribeOperatingSystemsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeOperatingSystemsWithContext(arg0 context.Context, arg1 *opsworks.DescribeOperatingSystemsInput, arg2 ...request.Option) (*opsworks.DescribeOperatingSystemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1749,7 +1749,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribePermissionsRequest(arg0 interface
 }
 
 // DescribePermissionsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribePermissionsWithContext(arg0 aws.Context, arg1 *opsworks.DescribePermissionsInput, arg2 ...request.Option) (*opsworks.DescribePermissionsOutput, error) {
+func (m *MockOpsWorksAPI) DescribePermissionsWithContext(arg0 context.Context, arg1 *opsworks.DescribePermissionsInput, arg2 ...request.Option) (*opsworks.DescribePermissionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1799,7 +1799,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeRaidArraysRequest(arg0 interface{
 }
 
 // DescribeRaidArraysWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeRaidArraysWithContext(arg0 aws.Context, arg1 *opsworks.DescribeRaidArraysInput, arg2 ...request.Option) (*opsworks.DescribeRaidArraysOutput, error) {
+func (m *MockOpsWorksAPI) DescribeRaidArraysWithContext(arg0 context.Context, arg1 *opsworks.DescribeRaidArraysInput, arg2 ...request.Option) (*opsworks.DescribeRaidArraysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1849,7 +1849,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeRdsDbInstancesRequest(arg0 interf
 }
 
 // DescribeRdsDbInstancesWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeRdsDbInstancesWithContext(arg0 aws.Context, arg1 *opsworks.DescribeRdsDbInstancesInput, arg2 ...request.Option) (*opsworks.DescribeRdsDbInstancesOutput, error) {
+func (m *MockOpsWorksAPI) DescribeRdsDbInstancesWithContext(arg0 context.Context, arg1 *opsworks.DescribeRdsDbInstancesInput, arg2 ...request.Option) (*opsworks.DescribeRdsDbInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1899,7 +1899,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeServiceErrorsRequest(arg0 interfa
 }
 
 // DescribeServiceErrorsWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeServiceErrorsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeServiceErrorsInput, arg2 ...request.Option) (*opsworks.DescribeServiceErrorsOutput, error) {
+func (m *MockOpsWorksAPI) DescribeServiceErrorsWithContext(arg0 context.Context, arg1 *opsworks.DescribeServiceErrorsInput, arg2 ...request.Option) (*opsworks.DescribeServiceErrorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1949,7 +1949,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeStackProvisioningParametersReques
 }
 
 // DescribeStackProvisioningParametersWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeStackProvisioningParametersWithContext(arg0 aws.Context, arg1 *opsworks.DescribeStackProvisioningParametersInput, arg2 ...request.Option) (*opsworks.DescribeStackProvisioningParametersOutput, error) {
+func (m *MockOpsWorksAPI) DescribeStackProvisioningParametersWithContext(arg0 context.Context, arg1 *opsworks.DescribeStackProvisioningParametersInput, arg2 ...request.Option) (*opsworks.DescribeStackProvisioningParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1999,7 +1999,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeStackSummaryRequest(arg0 interfac
 }
 
 // DescribeStackSummaryWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeStackSummaryWithContext(arg0 aws.Context, arg1 *opsworks.DescribeStackSummaryInput, arg2 ...request.Option) (*opsworks.DescribeStackSummaryOutput, error) {
+func (m *MockOpsWorksAPI) DescribeStackSummaryWithContext(arg0 context.Context, arg1 *opsworks.DescribeStackSummaryInput, arg2 ...request.Option) (*opsworks.DescribeStackSummaryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2049,7 +2049,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeStacksRequest(arg0 interface{}) *
 }
 
 // DescribeStacksWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeStacksWithContext(arg0 aws.Context, arg1 *opsworks.DescribeStacksInput, arg2 ...request.Option) (*opsworks.DescribeStacksOutput, error) {
+func (m *MockOpsWorksAPI) DescribeStacksWithContext(arg0 context.Context, arg1 *opsworks.DescribeStacksInput, arg2 ...request.Option) (*opsworks.DescribeStacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2099,7 +2099,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeTimeBasedAutoScalingRequest(arg0 
 }
 
 // DescribeTimeBasedAutoScalingWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeTimeBasedAutoScalingWithContext(arg0 aws.Context, arg1 *opsworks.DescribeTimeBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.DescribeTimeBasedAutoScalingOutput, error) {
+func (m *MockOpsWorksAPI) DescribeTimeBasedAutoScalingWithContext(arg0 context.Context, arg1 *opsworks.DescribeTimeBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.DescribeTimeBasedAutoScalingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2149,7 +2149,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeUserProfilesRequest(arg0 interfac
 }
 
 // DescribeUserProfilesWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeUserProfilesWithContext(arg0 aws.Context, arg1 *opsworks.DescribeUserProfilesInput, arg2 ...request.Option) (*opsworks.DescribeUserProfilesOutput, error) {
+func (m *MockOpsWorksAPI) DescribeUserProfilesWithContext(arg0 context.Context, arg1 *opsworks.DescribeUserProfilesInput, arg2 ...request.Option) (*opsworks.DescribeUserProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2199,7 +2199,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DescribeVolumesRequest(arg0 interface{}) 
 }
 
 // DescribeVolumesWithContext mocks base method
-func (m *MockOpsWorksAPI) DescribeVolumesWithContext(arg0 aws.Context, arg1 *opsworks.DescribeVolumesInput, arg2 ...request.Option) (*opsworks.DescribeVolumesOutput, error) {
+func (m *MockOpsWorksAPI) DescribeVolumesWithContext(arg0 context.Context, arg1 *opsworks.DescribeVolumesInput, arg2 ...request.Option) (*opsworks.DescribeVolumesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2249,7 +2249,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DetachElasticLoadBalancerRequest(arg0 int
 }
 
 // DetachElasticLoadBalancerWithContext mocks base method
-func (m *MockOpsWorksAPI) DetachElasticLoadBalancerWithContext(arg0 aws.Context, arg1 *opsworks.DetachElasticLoadBalancerInput, arg2 ...request.Option) (*opsworks.DetachElasticLoadBalancerOutput, error) {
+func (m *MockOpsWorksAPI) DetachElasticLoadBalancerWithContext(arg0 context.Context, arg1 *opsworks.DetachElasticLoadBalancerInput, arg2 ...request.Option) (*opsworks.DetachElasticLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2299,7 +2299,7 @@ func (mr *MockOpsWorksAPIMockRecorder) DisassociateElasticIpRequest(arg0 interfa
 }
 
 // DisassociateElasticIpWithContext mocks base method
-func (m *MockOpsWorksAPI) DisassociateElasticIpWithContext(arg0 aws.Context, arg1 *opsworks.DisassociateElasticIpInput, arg2 ...request.Option) (*opsworks.DisassociateElasticIpOutput, error) {
+func (m *MockOpsWorksAPI) DisassociateElasticIpWithContext(arg0 context.Context, arg1 *opsworks.DisassociateElasticIpInput, arg2 ...request.Option) (*opsworks.DisassociateElasticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2349,7 +2349,7 @@ func (mr *MockOpsWorksAPIMockRecorder) GetHostnameSuggestionRequest(arg0 interfa
 }
 
 // GetHostnameSuggestionWithContext mocks base method
-func (m *MockOpsWorksAPI) GetHostnameSuggestionWithContext(arg0 aws.Context, arg1 *opsworks.GetHostnameSuggestionInput, arg2 ...request.Option) (*opsworks.GetHostnameSuggestionOutput, error) {
+func (m *MockOpsWorksAPI) GetHostnameSuggestionWithContext(arg0 context.Context, arg1 *opsworks.GetHostnameSuggestionInput, arg2 ...request.Option) (*opsworks.GetHostnameSuggestionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2399,7 +2399,7 @@ func (mr *MockOpsWorksAPIMockRecorder) GrantAccessRequest(arg0 interface{}) *gom
 }
 
 // GrantAccessWithContext mocks base method
-func (m *MockOpsWorksAPI) GrantAccessWithContext(arg0 aws.Context, arg1 *opsworks.GrantAccessInput, arg2 ...request.Option) (*opsworks.GrantAccessOutput, error) {
+func (m *MockOpsWorksAPI) GrantAccessWithContext(arg0 context.Context, arg1 *opsworks.GrantAccessInput, arg2 ...request.Option) (*opsworks.GrantAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2449,7 +2449,7 @@ func (mr *MockOpsWorksAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockOpsWorksAPI) ListTagsWithContext(arg0 aws.Context, arg1 *opsworks.ListTagsInput, arg2 ...request.Option) (*opsworks.ListTagsOutput, error) {
+func (m *MockOpsWorksAPI) ListTagsWithContext(arg0 context.Context, arg1 *opsworks.ListTagsInput, arg2 ...request.Option) (*opsworks.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2499,7 +2499,7 @@ func (mr *MockOpsWorksAPIMockRecorder) RebootInstanceRequest(arg0 interface{}) *
 }
 
 // RebootInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) RebootInstanceWithContext(arg0 aws.Context, arg1 *opsworks.RebootInstanceInput, arg2 ...request.Option) (*opsworks.RebootInstanceOutput, error) {
+func (m *MockOpsWorksAPI) RebootInstanceWithContext(arg0 context.Context, arg1 *opsworks.RebootInstanceInput, arg2 ...request.Option) (*opsworks.RebootInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2549,7 +2549,7 @@ func (mr *MockOpsWorksAPIMockRecorder) RegisterEcsClusterRequest(arg0 interface{
 }
 
 // RegisterEcsClusterWithContext mocks base method
-func (m *MockOpsWorksAPI) RegisterEcsClusterWithContext(arg0 aws.Context, arg1 *opsworks.RegisterEcsClusterInput, arg2 ...request.Option) (*opsworks.RegisterEcsClusterOutput, error) {
+func (m *MockOpsWorksAPI) RegisterEcsClusterWithContext(arg0 context.Context, arg1 *opsworks.RegisterEcsClusterInput, arg2 ...request.Option) (*opsworks.RegisterEcsClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2599,7 +2599,7 @@ func (mr *MockOpsWorksAPIMockRecorder) RegisterElasticIpRequest(arg0 interface{}
 }
 
 // RegisterElasticIpWithContext mocks base method
-func (m *MockOpsWorksAPI) RegisterElasticIpWithContext(arg0 aws.Context, arg1 *opsworks.RegisterElasticIpInput, arg2 ...request.Option) (*opsworks.RegisterElasticIpOutput, error) {
+func (m *MockOpsWorksAPI) RegisterElasticIpWithContext(arg0 context.Context, arg1 *opsworks.RegisterElasticIpInput, arg2 ...request.Option) (*opsworks.RegisterElasticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2649,7 +2649,7 @@ func (mr *MockOpsWorksAPIMockRecorder) RegisterInstanceRequest(arg0 interface{})
 }
 
 // RegisterInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) RegisterInstanceWithContext(arg0 aws.Context, arg1 *opsworks.RegisterInstanceInput, arg2 ...request.Option) (*opsworks.RegisterInstanceOutput, error) {
+func (m *MockOpsWorksAPI) RegisterInstanceWithContext(arg0 context.Context, arg1 *opsworks.RegisterInstanceInput, arg2 ...request.Option) (*opsworks.RegisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2699,7 +2699,7 @@ func (mr *MockOpsWorksAPIMockRecorder) RegisterRdsDbInstanceRequest(arg0 interfa
 }
 
 // RegisterRdsDbInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) RegisterRdsDbInstanceWithContext(arg0 aws.Context, arg1 *opsworks.RegisterRdsDbInstanceInput, arg2 ...request.Option) (*opsworks.RegisterRdsDbInstanceOutput, error) {
+func (m *MockOpsWorksAPI) RegisterRdsDbInstanceWithContext(arg0 context.Context, arg1 *opsworks.RegisterRdsDbInstanceInput, arg2 ...request.Option) (*opsworks.RegisterRdsDbInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2749,7 +2749,7 @@ func (mr *MockOpsWorksAPIMockRecorder) RegisterVolumeRequest(arg0 interface{}) *
 }
 
 // RegisterVolumeWithContext mocks base method
-func (m *MockOpsWorksAPI) RegisterVolumeWithContext(arg0 aws.Context, arg1 *opsworks.RegisterVolumeInput, arg2 ...request.Option) (*opsworks.RegisterVolumeOutput, error) {
+func (m *MockOpsWorksAPI) RegisterVolumeWithContext(arg0 context.Context, arg1 *opsworks.RegisterVolumeInput, arg2 ...request.Option) (*opsworks.RegisterVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2799,7 +2799,7 @@ func (mr *MockOpsWorksAPIMockRecorder) SetLoadBasedAutoScalingRequest(arg0 inter
 }
 
 // SetLoadBasedAutoScalingWithContext mocks base method
-func (m *MockOpsWorksAPI) SetLoadBasedAutoScalingWithContext(arg0 aws.Context, arg1 *opsworks.SetLoadBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.SetLoadBasedAutoScalingOutput, error) {
+func (m *MockOpsWorksAPI) SetLoadBasedAutoScalingWithContext(arg0 context.Context, arg1 *opsworks.SetLoadBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.SetLoadBasedAutoScalingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2849,7 +2849,7 @@ func (mr *MockOpsWorksAPIMockRecorder) SetPermissionRequest(arg0 interface{}) *g
 }
 
 // SetPermissionWithContext mocks base method
-func (m *MockOpsWorksAPI) SetPermissionWithContext(arg0 aws.Context, arg1 *opsworks.SetPermissionInput, arg2 ...request.Option) (*opsworks.SetPermissionOutput, error) {
+func (m *MockOpsWorksAPI) SetPermissionWithContext(arg0 context.Context, arg1 *opsworks.SetPermissionInput, arg2 ...request.Option) (*opsworks.SetPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2899,7 +2899,7 @@ func (mr *MockOpsWorksAPIMockRecorder) SetTimeBasedAutoScalingRequest(arg0 inter
 }
 
 // SetTimeBasedAutoScalingWithContext mocks base method
-func (m *MockOpsWorksAPI) SetTimeBasedAutoScalingWithContext(arg0 aws.Context, arg1 *opsworks.SetTimeBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.SetTimeBasedAutoScalingOutput, error) {
+func (m *MockOpsWorksAPI) SetTimeBasedAutoScalingWithContext(arg0 context.Context, arg1 *opsworks.SetTimeBasedAutoScalingInput, arg2 ...request.Option) (*opsworks.SetTimeBasedAutoScalingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2949,7 +2949,7 @@ func (mr *MockOpsWorksAPIMockRecorder) StartInstanceRequest(arg0 interface{}) *g
 }
 
 // StartInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) StartInstanceWithContext(arg0 aws.Context, arg1 *opsworks.StartInstanceInput, arg2 ...request.Option) (*opsworks.StartInstanceOutput, error) {
+func (m *MockOpsWorksAPI) StartInstanceWithContext(arg0 context.Context, arg1 *opsworks.StartInstanceInput, arg2 ...request.Option) (*opsworks.StartInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2999,7 +2999,7 @@ func (mr *MockOpsWorksAPIMockRecorder) StartStackRequest(arg0 interface{}) *gomo
 }
 
 // StartStackWithContext mocks base method
-func (m *MockOpsWorksAPI) StartStackWithContext(arg0 aws.Context, arg1 *opsworks.StartStackInput, arg2 ...request.Option) (*opsworks.StartStackOutput, error) {
+func (m *MockOpsWorksAPI) StartStackWithContext(arg0 context.Context, arg1 *opsworks.StartStackInput, arg2 ...request.Option) (*opsworks.StartStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3049,7 +3049,7 @@ func (mr *MockOpsWorksAPIMockRecorder) StopInstanceRequest(arg0 interface{}) *go
 }
 
 // StopInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) StopInstanceWithContext(arg0 aws.Context, arg1 *opsworks.StopInstanceInput, arg2 ...request.Option) (*opsworks.StopInstanceOutput, error) {
+func (m *MockOpsWorksAPI) StopInstanceWithContext(arg0 context.Context, arg1 *opsworks.StopInstanceInput, arg2 ...request.Option) (*opsworks.StopInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3099,7 +3099,7 @@ func (mr *MockOpsWorksAPIMockRecorder) StopStackRequest(arg0 interface{}) *gomoc
 }
 
 // StopStackWithContext mocks base method
-func (m *MockOpsWorksAPI) StopStackWithContext(arg0 aws.Context, arg1 *opsworks.StopStackInput, arg2 ...request.Option) (*opsworks.StopStackOutput, error) {
+func (m *MockOpsWorksAPI) StopStackWithContext(arg0 context.Context, arg1 *opsworks.StopStackInput, arg2 ...request.Option) (*opsworks.StopStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3149,7 +3149,7 @@ func (mr *MockOpsWorksAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gom
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockOpsWorksAPI) TagResourceWithContext(arg0 aws.Context, arg1 *opsworks.TagResourceInput, arg2 ...request.Option) (*opsworks.TagResourceOutput, error) {
+func (m *MockOpsWorksAPI) TagResourceWithContext(arg0 context.Context, arg1 *opsworks.TagResourceInput, arg2 ...request.Option) (*opsworks.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3199,7 +3199,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UnassignInstanceRequest(arg0 interface{})
 }
 
 // UnassignInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) UnassignInstanceWithContext(arg0 aws.Context, arg1 *opsworks.UnassignInstanceInput, arg2 ...request.Option) (*opsworks.UnassignInstanceOutput, error) {
+func (m *MockOpsWorksAPI) UnassignInstanceWithContext(arg0 context.Context, arg1 *opsworks.UnassignInstanceInput, arg2 ...request.Option) (*opsworks.UnassignInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3249,7 +3249,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UnassignVolumeRequest(arg0 interface{}) *
 }
 
 // UnassignVolumeWithContext mocks base method
-func (m *MockOpsWorksAPI) UnassignVolumeWithContext(arg0 aws.Context, arg1 *opsworks.UnassignVolumeInput, arg2 ...request.Option) (*opsworks.UnassignVolumeOutput, error) {
+func (m *MockOpsWorksAPI) UnassignVolumeWithContext(arg0 context.Context, arg1 *opsworks.UnassignVolumeInput, arg2 ...request.Option) (*opsworks.UnassignVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3299,7 +3299,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *g
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockOpsWorksAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *opsworks.UntagResourceInput, arg2 ...request.Option) (*opsworks.UntagResourceOutput, error) {
+func (m *MockOpsWorksAPI) UntagResourceWithContext(arg0 context.Context, arg1 *opsworks.UntagResourceInput, arg2 ...request.Option) (*opsworks.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3349,7 +3349,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateAppRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateAppWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateAppWithContext(arg0 aws.Context, arg1 *opsworks.UpdateAppInput, arg2 ...request.Option) (*opsworks.UpdateAppOutput, error) {
+func (m *MockOpsWorksAPI) UpdateAppWithContext(arg0 context.Context, arg1 *opsworks.UpdateAppInput, arg2 ...request.Option) (*opsworks.UpdateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3399,7 +3399,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateElasticIpRequest(arg0 interface{}) 
 }
 
 // UpdateElasticIpWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateElasticIpWithContext(arg0 aws.Context, arg1 *opsworks.UpdateElasticIpInput, arg2 ...request.Option) (*opsworks.UpdateElasticIpOutput, error) {
+func (m *MockOpsWorksAPI) UpdateElasticIpWithContext(arg0 context.Context, arg1 *opsworks.UpdateElasticIpInput, arg2 ...request.Option) (*opsworks.UpdateElasticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3449,7 +3449,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateInstanceRequest(arg0 interface{}) *
 }
 
 // UpdateInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateInstanceWithContext(arg0 aws.Context, arg1 *opsworks.UpdateInstanceInput, arg2 ...request.Option) (*opsworks.UpdateInstanceOutput, error) {
+func (m *MockOpsWorksAPI) UpdateInstanceWithContext(arg0 context.Context, arg1 *opsworks.UpdateInstanceInput, arg2 ...request.Option) (*opsworks.UpdateInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3499,7 +3499,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateLayerRequest(arg0 interface{}) *gom
 }
 
 // UpdateLayerWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateLayerWithContext(arg0 aws.Context, arg1 *opsworks.UpdateLayerInput, arg2 ...request.Option) (*opsworks.UpdateLayerOutput, error) {
+func (m *MockOpsWorksAPI) UpdateLayerWithContext(arg0 context.Context, arg1 *opsworks.UpdateLayerInput, arg2 ...request.Option) (*opsworks.UpdateLayerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3549,7 +3549,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateMyUserProfileRequest(arg0 interface
 }
 
 // UpdateMyUserProfileWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateMyUserProfileWithContext(arg0 aws.Context, arg1 *opsworks.UpdateMyUserProfileInput, arg2 ...request.Option) (*opsworks.UpdateMyUserProfileOutput, error) {
+func (m *MockOpsWorksAPI) UpdateMyUserProfileWithContext(arg0 context.Context, arg1 *opsworks.UpdateMyUserProfileInput, arg2 ...request.Option) (*opsworks.UpdateMyUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3599,7 +3599,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateRdsDbInstanceRequest(arg0 interface
 }
 
 // UpdateRdsDbInstanceWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateRdsDbInstanceWithContext(arg0 aws.Context, arg1 *opsworks.UpdateRdsDbInstanceInput, arg2 ...request.Option) (*opsworks.UpdateRdsDbInstanceOutput, error) {
+func (m *MockOpsWorksAPI) UpdateRdsDbInstanceWithContext(arg0 context.Context, arg1 *opsworks.UpdateRdsDbInstanceInput, arg2 ...request.Option) (*opsworks.UpdateRdsDbInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3649,7 +3649,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateStackRequest(arg0 interface{}) *gom
 }
 
 // UpdateStackWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateStackWithContext(arg0 aws.Context, arg1 *opsworks.UpdateStackInput, arg2 ...request.Option) (*opsworks.UpdateStackOutput, error) {
+func (m *MockOpsWorksAPI) UpdateStackWithContext(arg0 context.Context, arg1 *opsworks.UpdateStackInput, arg2 ...request.Option) (*opsworks.UpdateStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3699,7 +3699,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateUserProfileRequest(arg0 interface{}
 }
 
 // UpdateUserProfileWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateUserProfileWithContext(arg0 aws.Context, arg1 *opsworks.UpdateUserProfileInput, arg2 ...request.Option) (*opsworks.UpdateUserProfileOutput, error) {
+func (m *MockOpsWorksAPI) UpdateUserProfileWithContext(arg0 context.Context, arg1 *opsworks.UpdateUserProfileInput, arg2 ...request.Option) (*opsworks.UpdateUserProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3749,7 +3749,7 @@ func (mr *MockOpsWorksAPIMockRecorder) UpdateVolumeRequest(arg0 interface{}) *go
 }
 
 // UpdateVolumeWithContext mocks base method
-func (m *MockOpsWorksAPI) UpdateVolumeWithContext(arg0 aws.Context, arg1 *opsworks.UpdateVolumeInput, arg2 ...request.Option) (*opsworks.UpdateVolumeOutput, error) {
+func (m *MockOpsWorksAPI) UpdateVolumeWithContext(arg0 context.Context, arg1 *opsworks.UpdateVolumeInput, arg2 ...request.Option) (*opsworks.UpdateVolumeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3783,7 +3783,7 @@ func (mr *MockOpsWorksAPIMockRecorder) WaitUntilAppExists(arg0 interface{}) *gom
 }
 
 // WaitUntilAppExistsWithContext mocks base method
-func (m *MockOpsWorksAPI) WaitUntilAppExistsWithContext(arg0 aws.Context, arg1 *opsworks.DescribeAppsInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksAPI) WaitUntilAppExistsWithContext(arg0 context.Context, arg1 *opsworks.DescribeAppsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3816,7 +3816,7 @@ func (mr *MockOpsWorksAPIMockRecorder) WaitUntilDeploymentSuccessful(arg0 interf
 }
 
 // WaitUntilDeploymentSuccessfulWithContext mocks base method
-func (m *MockOpsWorksAPI) WaitUntilDeploymentSuccessfulWithContext(arg0 aws.Context, arg1 *opsworks.DescribeDeploymentsInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksAPI) WaitUntilDeploymentSuccessfulWithContext(arg0 context.Context, arg1 *opsworks.DescribeDeploymentsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3849,7 +3849,7 @@ func (mr *MockOpsWorksAPIMockRecorder) WaitUntilInstanceOnline(arg0 interface{})
 }
 
 // WaitUntilInstanceOnlineWithContext mocks base method
-func (m *MockOpsWorksAPI) WaitUntilInstanceOnlineWithContext(arg0 aws.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksAPI) WaitUntilInstanceOnlineWithContext(arg0 context.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3882,7 +3882,7 @@ func (mr *MockOpsWorksAPIMockRecorder) WaitUntilInstanceRegistered(arg0 interfac
 }
 
 // WaitUntilInstanceRegisteredWithContext mocks base method
-func (m *MockOpsWorksAPI) WaitUntilInstanceRegisteredWithContext(arg0 aws.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksAPI) WaitUntilInstanceRegisteredWithContext(arg0 context.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3915,7 +3915,7 @@ func (mr *MockOpsWorksAPIMockRecorder) WaitUntilInstanceStopped(arg0 interface{}
 }
 
 // WaitUntilInstanceStoppedWithContext mocks base method
-func (m *MockOpsWorksAPI) WaitUntilInstanceStoppedWithContext(arg0 aws.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksAPI) WaitUntilInstanceStoppedWithContext(arg0 context.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3948,7 +3948,7 @@ func (mr *MockOpsWorksAPIMockRecorder) WaitUntilInstanceTerminated(arg0 interfac
 }
 
 // WaitUntilInstanceTerminatedWithContext mocks base method
-func (m *MockOpsWorksAPI) WaitUntilInstanceTerminatedWithContext(arg0 aws.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksAPI) WaitUntilInstanceTerminatedWithContext(arg0 context.Context, arg1 *opsworks.DescribeInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

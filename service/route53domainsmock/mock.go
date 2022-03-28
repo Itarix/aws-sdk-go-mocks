@@ -5,7 +5,7 @@
 package route53domainsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	route53domains "github.com/aws/aws-sdk-go/service/route53domains"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainAvailabilityRequest(arg0
 }
 
 // CheckDomainAvailabilityWithContext mocks base method
-func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityWithContext(arg0 aws.Context, arg1 *route53domains.CheckDomainAvailabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainAvailabilityOutput, error) {
+func (m *MockRoute53DomainsAPI) CheckDomainAvailabilityWithContext(arg0 context.Context, arg1 *route53domains.CheckDomainAvailabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainTransferabilityRequest(a
 }
 
 // CheckDomainTransferabilityWithContext mocks base method
-func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityWithContext(arg0 aws.Context, arg1 *route53domains.CheckDomainTransferabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainTransferabilityOutput, error) {
+func (m *MockRoute53DomainsAPI) CheckDomainTransferabilityWithContext(arg0 context.Context, arg1 *route53domains.CheckDomainTransferabilityInput, arg2 ...request.Option) (*route53domains.CheckDomainTransferabilityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) DeleteTagsForDomainRequest(arg0 int
 }
 
 // DeleteTagsForDomainWithContext mocks base method
-func (m *MockRoute53DomainsAPI) DeleteTagsForDomainWithContext(arg0 aws.Context, arg1 *route53domains.DeleteTagsForDomainInput, arg2 ...request.Option) (*route53domains.DeleteTagsForDomainOutput, error) {
+func (m *MockRoute53DomainsAPI) DeleteTagsForDomainWithContext(arg0 context.Context, arg1 *route53domains.DeleteTagsForDomainInput, arg2 ...request.Option) (*route53domains.DeleteTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainAutoRenewRequest(arg0 
 }
 
 // DisableDomainAutoRenewWithContext mocks base method
-func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewWithContext(arg0 aws.Context, arg1 *route53domains.DisableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.DisableDomainAutoRenewOutput, error) {
+func (m *MockRoute53DomainsAPI) DisableDomainAutoRenewWithContext(arg0 context.Context, arg1 *route53domains.DisableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.DisableDomainAutoRenewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainTransferLockRequest(ar
 }
 
 // DisableDomainTransferLockWithContext mocks base method
-func (m *MockRoute53DomainsAPI) DisableDomainTransferLockWithContext(arg0 aws.Context, arg1 *route53domains.DisableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.DisableDomainTransferLockOutput, error) {
+func (m *MockRoute53DomainsAPI) DisableDomainTransferLockWithContext(arg0 context.Context, arg1 *route53domains.DisableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.DisableDomainTransferLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainAutoRenewRequest(arg0 i
 }
 
 // EnableDomainAutoRenewWithContext mocks base method
-func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewWithContext(arg0 aws.Context, arg1 *route53domains.EnableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.EnableDomainAutoRenewOutput, error) {
+func (m *MockRoute53DomainsAPI) EnableDomainAutoRenewWithContext(arg0 context.Context, arg1 *route53domains.EnableDomainAutoRenewInput, arg2 ...request.Option) (*route53domains.EnableDomainAutoRenewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) EnableDomainTransferLockRequest(arg
 }
 
 // EnableDomainTransferLockWithContext mocks base method
-func (m *MockRoute53DomainsAPI) EnableDomainTransferLockWithContext(arg0 aws.Context, arg1 *route53domains.EnableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.EnableDomainTransferLockOutput, error) {
+func (m *MockRoute53DomainsAPI) EnableDomainTransferLockWithContext(arg0 context.Context, arg1 *route53domains.EnableDomainTransferLockInput, arg2 ...request.Option) (*route53domains.EnableDomainTransferLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) GetContactReachabilityStatusRequest
 }
 
 // GetContactReachabilityStatusWithContext mocks base method
-func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusWithContext(arg0 aws.Context, arg1 *route53domains.GetContactReachabilityStatusInput, arg2 ...request.Option) (*route53domains.GetContactReachabilityStatusOutput, error) {
+func (m *MockRoute53DomainsAPI) GetContactReachabilityStatusWithContext(arg0 context.Context, arg1 *route53domains.GetContactReachabilityStatusInput, arg2 ...request.Option) (*route53domains.GetContactReachabilityStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainDetailRequest(arg0 interfa
 }
 
 // GetDomainDetailWithContext mocks base method
-func (m *MockRoute53DomainsAPI) GetDomainDetailWithContext(arg0 aws.Context, arg1 *route53domains.GetDomainDetailInput, arg2 ...request.Option) (*route53domains.GetDomainDetailOutput, error) {
+func (m *MockRoute53DomainsAPI) GetDomainDetailWithContext(arg0 context.Context, arg1 *route53domains.GetDomainDetailInput, arg2 ...request.Option) (*route53domains.GetDomainDetailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) GetDomainSuggestionsRequest(arg0 in
 }
 
 // GetDomainSuggestionsWithContext mocks base method
-func (m *MockRoute53DomainsAPI) GetDomainSuggestionsWithContext(arg0 aws.Context, arg1 *route53domains.GetDomainSuggestionsInput, arg2 ...request.Option) (*route53domains.GetDomainSuggestionsOutput, error) {
+func (m *MockRoute53DomainsAPI) GetDomainSuggestionsWithContext(arg0 context.Context, arg1 *route53domains.GetDomainSuggestionsInput, arg2 ...request.Option) (*route53domains.GetDomainSuggestionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) GetOperationDetailRequest(arg0 inte
 }
 
 // GetOperationDetailWithContext mocks base method
-func (m *MockRoute53DomainsAPI) GetOperationDetailWithContext(arg0 aws.Context, arg1 *route53domains.GetOperationDetailInput, arg2 ...request.Option) (*route53domains.GetOperationDetailOutput, error) {
+func (m *MockRoute53DomainsAPI) GetOperationDetailWithContext(arg0 context.Context, arg1 *route53domains.GetOperationDetailInput, arg2 ...request.Option) (*route53domains.GetOperationDetailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -615,7 +615,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListDomainsPages(arg0, arg1 interfa
 }
 
 // ListDomainsPagesWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ListDomainsPagesWithContext(arg0 aws.Context, arg1 *route53domains.ListDomainsInput, arg2 func(*route53domains.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53DomainsAPI) ListDomainsPagesWithContext(arg0 context.Context, arg1 *route53domains.ListDomainsInput, arg2 func(*route53domains.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -649,7 +649,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListDomainsRequest(arg0 interface{}
 }
 
 // ListDomainsWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ListDomainsWithContext(arg0 aws.Context, arg1 *route53domains.ListDomainsInput, arg2 ...request.Option) (*route53domains.ListDomainsOutput, error) {
+func (m *MockRoute53DomainsAPI) ListDomainsWithContext(arg0 context.Context, arg1 *route53domains.ListDomainsInput, arg2 ...request.Option) (*route53domains.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -698,7 +698,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsPages(arg0, arg1 inte
 }
 
 // ListOperationsPagesWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ListOperationsPagesWithContext(arg0 aws.Context, arg1 *route53domains.ListOperationsInput, arg2 func(*route53domains.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53DomainsAPI) ListOperationsPagesWithContext(arg0 context.Context, arg1 *route53domains.ListOperationsInput, arg2 func(*route53domains.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -732,7 +732,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsRequest(arg0 interfac
 }
 
 // ListOperationsWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ListOperationsWithContext(arg0 aws.Context, arg1 *route53domains.ListOperationsInput, arg2 ...request.Option) (*route53domains.ListOperationsOutput, error) {
+func (m *MockRoute53DomainsAPI) ListOperationsWithContext(arg0 context.Context, arg1 *route53domains.ListOperationsInput, arg2 ...request.Option) (*route53domains.ListOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -782,7 +782,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListTagsForDomainRequest(arg0 inter
 }
 
 // ListTagsForDomainWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ListTagsForDomainWithContext(arg0 aws.Context, arg1 *route53domains.ListTagsForDomainInput, arg2 ...request.Option) (*route53domains.ListTagsForDomainOutput, error) {
+func (m *MockRoute53DomainsAPI) ListTagsForDomainWithContext(arg0 context.Context, arg1 *route53domains.ListTagsForDomainInput, arg2 ...request.Option) (*route53domains.ListTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -832,7 +832,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) RegisterDomainRequest(arg0 interfac
 }
 
 // RegisterDomainWithContext mocks base method
-func (m *MockRoute53DomainsAPI) RegisterDomainWithContext(arg0 aws.Context, arg1 *route53domains.RegisterDomainInput, arg2 ...request.Option) (*route53domains.RegisterDomainOutput, error) {
+func (m *MockRoute53DomainsAPI) RegisterDomainWithContext(arg0 context.Context, arg1 *route53domains.RegisterDomainInput, arg2 ...request.Option) (*route53domains.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -882,7 +882,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) RenewDomainRequest(arg0 interface{}
 }
 
 // RenewDomainWithContext mocks base method
-func (m *MockRoute53DomainsAPI) RenewDomainWithContext(arg0 aws.Context, arg1 *route53domains.RenewDomainInput, arg2 ...request.Option) (*route53domains.RenewDomainOutput, error) {
+func (m *MockRoute53DomainsAPI) RenewDomainWithContext(arg0 context.Context, arg1 *route53domains.RenewDomainInput, arg2 ...request.Option) (*route53domains.RenewDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -932,7 +932,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ResendContactReachabilityEmailReque
 }
 
 // ResendContactReachabilityEmailWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailWithContext(arg0 aws.Context, arg1 *route53domains.ResendContactReachabilityEmailInput, arg2 ...request.Option) (*route53domains.ResendContactReachabilityEmailOutput, error) {
+func (m *MockRoute53DomainsAPI) ResendContactReachabilityEmailWithContext(arg0 context.Context, arg1 *route53domains.ResendContactReachabilityEmailInput, arg2 ...request.Option) (*route53domains.ResendContactReachabilityEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -982,7 +982,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) RetrieveDomainAuthCodeRequest(arg0 
 }
 
 // RetrieveDomainAuthCodeWithContext mocks base method
-func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeWithContext(arg0 aws.Context, arg1 *route53domains.RetrieveDomainAuthCodeInput, arg2 ...request.Option) (*route53domains.RetrieveDomainAuthCodeOutput, error) {
+func (m *MockRoute53DomainsAPI) RetrieveDomainAuthCodeWithContext(arg0 context.Context, arg1 *route53domains.RetrieveDomainAuthCodeInput, arg2 ...request.Option) (*route53domains.RetrieveDomainAuthCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1032,7 +1032,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainRequest(arg0 interfac
 }
 
 // TransferDomainWithContext mocks base method
-func (m *MockRoute53DomainsAPI) TransferDomainWithContext(arg0 aws.Context, arg1 *route53domains.TransferDomainInput, arg2 ...request.Option) (*route53domains.TransferDomainOutput, error) {
+func (m *MockRoute53DomainsAPI) TransferDomainWithContext(arg0 context.Context, arg1 *route53domains.TransferDomainInput, arg2 ...request.Option) (*route53domains.TransferDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1097,7 +1097,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactPrivacyRequest(a
 }
 
 // UpdateDomainContactPrivacyWithContext mocks base method
-func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyWithContext(arg0 aws.Context, arg1 *route53domains.UpdateDomainContactPrivacyInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactPrivacyOutput, error) {
+func (m *MockRoute53DomainsAPI) UpdateDomainContactPrivacyWithContext(arg0 context.Context, arg1 *route53domains.UpdateDomainContactPrivacyInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactPrivacyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1132,7 +1132,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainContactRequest(arg0 int
 }
 
 // UpdateDomainContactWithContext mocks base method
-func (m *MockRoute53DomainsAPI) UpdateDomainContactWithContext(arg0 aws.Context, arg1 *route53domains.UpdateDomainContactInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactOutput, error) {
+func (m *MockRoute53DomainsAPI) UpdateDomainContactWithContext(arg0 context.Context, arg1 *route53domains.UpdateDomainContactInput, arg2 ...request.Option) (*route53domains.UpdateDomainContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1182,7 +1182,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) UpdateDomainNameserversRequest(arg0
 }
 
 // UpdateDomainNameserversWithContext mocks base method
-func (m *MockRoute53DomainsAPI) UpdateDomainNameserversWithContext(arg0 aws.Context, arg1 *route53domains.UpdateDomainNameserversInput, arg2 ...request.Option) (*route53domains.UpdateDomainNameserversOutput, error) {
+func (m *MockRoute53DomainsAPI) UpdateDomainNameserversWithContext(arg0 context.Context, arg1 *route53domains.UpdateDomainNameserversInput, arg2 ...request.Option) (*route53domains.UpdateDomainNameserversOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1232,7 +1232,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) UpdateTagsForDomainRequest(arg0 int
 }
 
 // UpdateTagsForDomainWithContext mocks base method
-func (m *MockRoute53DomainsAPI) UpdateTagsForDomainWithContext(arg0 aws.Context, arg1 *route53domains.UpdateTagsForDomainInput, arg2 ...request.Option) (*route53domains.UpdateTagsForDomainOutput, error) {
+func (m *MockRoute53DomainsAPI) UpdateTagsForDomainWithContext(arg0 context.Context, arg1 *route53domains.UpdateTagsForDomainInput, arg2 ...request.Option) (*route53domains.UpdateTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1282,7 +1282,7 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingRequest(arg0 interface{}
 }
 
 // ViewBillingWithContext mocks base method
-func (m *MockRoute53DomainsAPI) ViewBillingWithContext(arg0 aws.Context, arg1 *route53domains.ViewBillingInput, arg2 ...request.Option) (*route53domains.ViewBillingOutput, error) {
+func (m *MockRoute53DomainsAPI) ViewBillingWithContext(arg0 context.Context, arg1 *route53domains.ViewBillingInput, arg2 ...request.Option) (*route53domains.ViewBillingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

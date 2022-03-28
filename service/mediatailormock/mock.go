@@ -5,7 +5,7 @@
 package mediatailormock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediatailor "github.com/aws/aws-sdk-go/service/mediatailor"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaTailorAPIMockRecorder) DeletePlaybackConfigurationRequest(arg
 }
 
 // DeletePlaybackConfigurationWithContext mocks base method
-func (m *MockMediaTailorAPI) DeletePlaybackConfigurationWithContext(arg0 aws.Context, arg1 *mediatailor.DeletePlaybackConfigurationInput, arg2 ...request.Option) (*mediatailor.DeletePlaybackConfigurationOutput, error) {
+func (m *MockMediaTailorAPI) DeletePlaybackConfigurationWithContext(arg0 context.Context, arg1 *mediatailor.DeletePlaybackConfigurationInput, arg2 ...request.Option) (*mediatailor.DeletePlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMediaTailorAPIMockRecorder) GetPlaybackConfigurationRequest(arg0 i
 }
 
 // GetPlaybackConfigurationWithContext mocks base method
-func (m *MockMediaTailorAPI) GetPlaybackConfigurationWithContext(arg0 aws.Context, arg1 *mediatailor.GetPlaybackConfigurationInput, arg2 ...request.Option) (*mediatailor.GetPlaybackConfigurationOutput, error) {
+func (m *MockMediaTailorAPI) GetPlaybackConfigurationWithContext(arg0 context.Context, arg1 *mediatailor.GetPlaybackConfigurationInput, arg2 ...request.Option) (*mediatailor.GetPlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMediaTailorAPIMockRecorder) ListPlaybackConfigurationsRequest(arg0
 }
 
 // ListPlaybackConfigurationsWithContext mocks base method
-func (m *MockMediaTailorAPI) ListPlaybackConfigurationsWithContext(arg0 aws.Context, arg1 *mediatailor.ListPlaybackConfigurationsInput, arg2 ...request.Option) (*mediatailor.ListPlaybackConfigurationsOutput, error) {
+func (m *MockMediaTailorAPI) ListPlaybackConfigurationsWithContext(arg0 context.Context, arg1 *mediatailor.ListPlaybackConfigurationsInput, arg2 ...request.Option) (*mediatailor.ListPlaybackConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaTailorAPIMockRecorder) PutPlaybackConfigurationRequest(arg0 i
 }
 
 // PutPlaybackConfigurationWithContext mocks base method
-func (m *MockMediaTailorAPI) PutPlaybackConfigurationWithContext(arg0 aws.Context, arg1 *mediatailor.PutPlaybackConfigurationInput, arg2 ...request.Option) (*mediatailor.PutPlaybackConfigurationOutput, error) {
+func (m *MockMediaTailorAPI) PutPlaybackConfigurationWithContext(arg0 context.Context, arg1 *mediatailor.PutPlaybackConfigurationInput, arg2 ...request.Option) (*mediatailor.PutPlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

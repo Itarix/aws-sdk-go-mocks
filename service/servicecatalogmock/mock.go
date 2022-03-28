@@ -5,7 +5,7 @@
 package servicecatalogmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	servicecatalog "github.com/aws/aws-sdk-go/service/servicecatalog"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) AcceptPortfolioShareRequest(arg0 in
 }
 
 // AcceptPortfolioShareWithContext mocks base method
-func (m *MockServiceCatalogAPI) AcceptPortfolioShareWithContext(arg0 aws.Context, arg1 *servicecatalog.AcceptPortfolioShareInput, arg2 ...request.Option) (*servicecatalog.AcceptPortfolioShareOutput, error) {
+func (m *MockServiceCatalogAPI) AcceptPortfolioShareWithContext(arg0 context.Context, arg1 *servicecatalog.AcceptPortfolioShareInput, arg2 ...request.Option) (*servicecatalog.AcceptPortfolioShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) AssociatePrincipalWithPortfolioRequ
 }
 
 // AssociatePrincipalWithPortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) AssociatePrincipalWithPortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.AssociatePrincipalWithPortfolioInput, arg2 ...request.Option) (*servicecatalog.AssociatePrincipalWithPortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) AssociatePrincipalWithPortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.AssociatePrincipalWithPortfolioInput, arg2 ...request.Option) (*servicecatalog.AssociatePrincipalWithPortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) AssociateProductWithPortfolioReques
 }
 
 // AssociateProductWithPortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) AssociateProductWithPortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.AssociateProductWithPortfolioInput, arg2 ...request.Option) (*servicecatalog.AssociateProductWithPortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) AssociateProductWithPortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.AssociateProductWithPortfolioInput, arg2 ...request.Option) (*servicecatalog.AssociateProductWithPortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) AssociateServiceActionWithProvision
 }
 
 // AssociateServiceActionWithProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) AssociateServiceActionWithProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.AssociateServiceActionWithProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) AssociateServiceActionWithProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.AssociateServiceActionWithProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.AssociateServiceActionWithProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) AssociateTagOptionWithResourceReque
 }
 
 // AssociateTagOptionWithResourceWithContext mocks base method
-func (m *MockServiceCatalogAPI) AssociateTagOptionWithResourceWithContext(arg0 aws.Context, arg1 *servicecatalog.AssociateTagOptionWithResourceInput, arg2 ...request.Option) (*servicecatalog.AssociateTagOptionWithResourceOutput, error) {
+func (m *MockServiceCatalogAPI) AssociateTagOptionWithResourceWithContext(arg0 context.Context, arg1 *servicecatalog.AssociateTagOptionWithResourceInput, arg2 ...request.Option) (*servicecatalog.AssociateTagOptionWithResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) BatchAssociateServiceActionWithProv
 }
 
 // BatchAssociateServiceActionWithProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) BatchAssociateServiceActionWithProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) BatchAssociateServiceActionWithProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.BatchAssociateServiceActionWithProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) BatchDisassociateServiceActionFromP
 }
 
 // BatchDisassociateServiceActionFromProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) BatchDisassociateServiceActionFromProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) BatchDisassociateServiceActionFromProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.BatchDisassociateServiceActionFromProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CopyProductRequest(arg0 interface{}
 }
 
 // CopyProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) CopyProductWithContext(arg0 aws.Context, arg1 *servicecatalog.CopyProductInput, arg2 ...request.Option) (*servicecatalog.CopyProductOutput, error) {
+func (m *MockServiceCatalogAPI) CopyProductWithContext(arg0 context.Context, arg1 *servicecatalog.CopyProductInput, arg2 ...request.Option) (*servicecatalog.CopyProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateConstraintRequest(arg0 interf
 }
 
 // CreateConstraintWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreateConstraintWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateConstraintInput, arg2 ...request.Option) (*servicecatalog.CreateConstraintOutput, error) {
+func (m *MockServiceCatalogAPI) CreateConstraintWithContext(arg0 context.Context, arg1 *servicecatalog.CreateConstraintInput, arg2 ...request.Option) (*servicecatalog.CreateConstraintOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -546,7 +546,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreatePortfolioShareRequest(arg0 in
 }
 
 // CreatePortfolioShareWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreatePortfolioShareWithContext(arg0 aws.Context, arg1 *servicecatalog.CreatePortfolioShareInput, arg2 ...request.Option) (*servicecatalog.CreatePortfolioShareOutput, error) {
+func (m *MockServiceCatalogAPI) CreatePortfolioShareWithContext(arg0 context.Context, arg1 *servicecatalog.CreatePortfolioShareInput, arg2 ...request.Option) (*servicecatalog.CreatePortfolioShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreatePortfolioShareWithContext(arg
 }
 
 // CreatePortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreatePortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.CreatePortfolioInput, arg2 ...request.Option) (*servicecatalog.CreatePortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) CreatePortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.CreatePortfolioInput, arg2 ...request.Option) (*servicecatalog.CreatePortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateProductRequest(arg0 interface
 }
 
 // CreateProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreateProductWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateProductInput, arg2 ...request.Option) (*servicecatalog.CreateProductOutput, error) {
+func (m *MockServiceCatalogAPI) CreateProductWithContext(arg0 context.Context, arg1 *servicecatalog.CreateProductInput, arg2 ...request.Option) (*servicecatalog.CreateProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateProvisionedProductPlanRequest
 }
 
 // CreateProvisionedProductPlanWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreateProvisionedProductPlanWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.CreateProvisionedProductPlanOutput, error) {
+func (m *MockServiceCatalogAPI) CreateProvisionedProductPlanWithContext(arg0 context.Context, arg1 *servicecatalog.CreateProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.CreateProvisionedProductPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateProvisioningArtifactRequest(a
 }
 
 // CreateProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreateProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.CreateProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) CreateProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.CreateProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.CreateProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateServiceActionRequest(arg0 int
 }
 
 // CreateServiceActionWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreateServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateServiceActionInput, arg2 ...request.Option) (*servicecatalog.CreateServiceActionOutput, error) {
+func (m *MockServiceCatalogAPI) CreateServiceActionWithContext(arg0 context.Context, arg1 *servicecatalog.CreateServiceActionInput, arg2 ...request.Option) (*servicecatalog.CreateServiceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) CreateTagOptionRequest(arg0 interfa
 }
 
 // CreateTagOptionWithContext mocks base method
-func (m *MockServiceCatalogAPI) CreateTagOptionWithContext(arg0 aws.Context, arg1 *servicecatalog.CreateTagOptionInput, arg2 ...request.Option) (*servicecatalog.CreateTagOptionOutput, error) {
+func (m *MockServiceCatalogAPI) CreateTagOptionWithContext(arg0 context.Context, arg1 *servicecatalog.CreateTagOptionInput, arg2 ...request.Option) (*servicecatalog.CreateTagOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteConstraintRequest(arg0 interf
 }
 
 // DeleteConstraintWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeleteConstraintWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteConstraintInput, arg2 ...request.Option) (*servicecatalog.DeleteConstraintOutput, error) {
+func (m *MockServiceCatalogAPI) DeleteConstraintWithContext(arg0 context.Context, arg1 *servicecatalog.DeleteConstraintInput, arg2 ...request.Option) (*servicecatalog.DeleteConstraintOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -946,7 +946,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeletePortfolioShareRequest(arg0 in
 }
 
 // DeletePortfolioShareWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeletePortfolioShareWithContext(arg0 aws.Context, arg1 *servicecatalog.DeletePortfolioShareInput, arg2 ...request.Option) (*servicecatalog.DeletePortfolioShareOutput, error) {
+func (m *MockServiceCatalogAPI) DeletePortfolioShareWithContext(arg0 context.Context, arg1 *servicecatalog.DeletePortfolioShareInput, arg2 ...request.Option) (*servicecatalog.DeletePortfolioShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeletePortfolioShareWithContext(arg
 }
 
 // DeletePortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeletePortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.DeletePortfolioInput, arg2 ...request.Option) (*servicecatalog.DeletePortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) DeletePortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.DeletePortfolioInput, arg2 ...request.Option) (*servicecatalog.DeletePortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteProductRequest(arg0 interface
 }
 
 // DeleteProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeleteProductWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteProductInput, arg2 ...request.Option) (*servicecatalog.DeleteProductOutput, error) {
+func (m *MockServiceCatalogAPI) DeleteProductWithContext(arg0 context.Context, arg1 *servicecatalog.DeleteProductInput, arg2 ...request.Option) (*servicecatalog.DeleteProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteProvisionedProductPlanRequest
 }
 
 // DeleteProvisionedProductPlanWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeleteProvisionedProductPlanWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.DeleteProvisionedProductPlanOutput, error) {
+func (m *MockServiceCatalogAPI) DeleteProvisionedProductPlanWithContext(arg0 context.Context, arg1 *servicecatalog.DeleteProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.DeleteProvisionedProductPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteProvisioningArtifactRequest(a
 }
 
 // DeleteProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeleteProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DeleteProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) DeleteProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.DeleteProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DeleteProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteServiceActionRequest(arg0 int
 }
 
 // DeleteServiceActionWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeleteServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteServiceActionInput, arg2 ...request.Option) (*servicecatalog.DeleteServiceActionOutput, error) {
+func (m *MockServiceCatalogAPI) DeleteServiceActionWithContext(arg0 context.Context, arg1 *servicecatalog.DeleteServiceActionInput, arg2 ...request.Option) (*servicecatalog.DeleteServiceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DeleteTagOptionRequest(arg0 interfa
 }
 
 // DeleteTagOptionWithContext mocks base method
-func (m *MockServiceCatalogAPI) DeleteTagOptionWithContext(arg0 aws.Context, arg1 *servicecatalog.DeleteTagOptionInput, arg2 ...request.Option) (*servicecatalog.DeleteTagOptionOutput, error) {
+func (m *MockServiceCatalogAPI) DeleteTagOptionWithContext(arg0 context.Context, arg1 *servicecatalog.DeleteTagOptionInput, arg2 ...request.Option) (*servicecatalog.DeleteTagOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeConstraintRequest(arg0 inte
 }
 
 // DescribeConstraintWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeConstraintWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeConstraintInput, arg2 ...request.Option) (*servicecatalog.DescribeConstraintOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeConstraintWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeConstraintInput, arg2 ...request.Option) (*servicecatalog.DescribeConstraintOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeCopyProductStatusRequest(ar
 }
 
 // DescribeCopyProductStatusWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeCopyProductStatusWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeCopyProductStatusInput, arg2 ...request.Option) (*servicecatalog.DescribeCopyProductStatusOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeCopyProductStatusWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeCopyProductStatusInput, arg2 ...request.Option) (*servicecatalog.DescribeCopyProductStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1396,7 +1396,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShareStatusRequest
 }
 
 // DescribePortfolioShareStatusWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribePortfolioShareStatusWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribePortfolioShareStatusInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioShareStatusOutput, error) {
+func (m *MockServiceCatalogAPI) DescribePortfolioShareStatusWithContext(arg0 context.Context, arg1 *servicecatalog.DescribePortfolioShareStatusInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioShareStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShareStatusWithCon
 }
 
 // DescribePortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribePortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribePortfolioInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) DescribePortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.DescribePortfolioInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProductAsAdminRequest(arg0 
 }
 
 // DescribeProductAsAdminWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProductAsAdminWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProductAsAdminInput, arg2 ...request.Option) (*servicecatalog.DescribeProductAsAdminOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProductAsAdminWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProductAsAdminInput, arg2 ...request.Option) (*servicecatalog.DescribeProductAsAdminOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1546,7 +1546,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProductViewRequest(arg0 int
 }
 
 // DescribeProductViewWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProductViewWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProductViewInput, arg2 ...request.Option) (*servicecatalog.DescribeProductViewOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProductViewWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProductViewInput, arg2 ...request.Option) (*servicecatalog.DescribeProductViewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProductViewWithContext(arg0
 }
 
 // DescribeProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProductWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProductInput, arg2 ...request.Option) (*servicecatalog.DescribeProductOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProductWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProductInput, arg2 ...request.Option) (*servicecatalog.DescribeProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1631,7 +1631,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProvisionedProductPlanReque
 }
 
 // DescribeProvisionedProductPlanWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProvisionedProductPlanWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisionedProductPlanOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProvisionedProductPlanWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisionedProductPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProvisionedProductRequest(a
 }
 
 // DescribeProvisionedProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProvisionedProductWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisionedProductOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProvisionedProductWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisionedProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProvisioningArtifactRequest
 }
 
 // DescribeProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeProvisioningParametersReque
 }
 
 // DescribeProvisioningParametersWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeProvisioningParametersWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeProvisioningParametersInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisioningParametersOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeProvisioningParametersWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeProvisioningParametersInput, arg2 ...request.Option) (*servicecatalog.DescribeProvisioningParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeRecordRequest(arg0 interfac
 }
 
 // DescribeRecordWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeRecordWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeRecordInput, arg2 ...request.Option) (*servicecatalog.DescribeRecordOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeRecordWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeRecordInput, arg2 ...request.Option) (*servicecatalog.DescribeRecordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceActionRequest(arg0 i
 }
 
 // DescribeServiceActionWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeServiceActionInput, arg2 ...request.Option) (*servicecatalog.DescribeServiceActionOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeServiceActionWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeServiceActionInput, arg2 ...request.Option) (*servicecatalog.DescribeServiceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeTagOptionRequest(arg0 inter
 }
 
 // DescribeTagOptionWithContext mocks base method
-func (m *MockServiceCatalogAPI) DescribeTagOptionWithContext(arg0 aws.Context, arg1 *servicecatalog.DescribeTagOptionInput, arg2 ...request.Option) (*servicecatalog.DescribeTagOptionOutput, error) {
+func (m *MockServiceCatalogAPI) DescribeTagOptionWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeTagOptionInput, arg2 ...request.Option) (*servicecatalog.DescribeTagOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisableAWSOrganizationsAccessReques
 }
 
 // DisableAWSOrganizationsAccessWithContext mocks base method
-func (m *MockServiceCatalogAPI) DisableAWSOrganizationsAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.DisableAWSOrganizationsAccessInput, arg2 ...request.Option) (*servicecatalog.DisableAWSOrganizationsAccessOutput, error) {
+func (m *MockServiceCatalogAPI) DisableAWSOrganizationsAccessWithContext(arg0 context.Context, arg1 *servicecatalog.DisableAWSOrganizationsAccessInput, arg2 ...request.Option) (*servicecatalog.DisableAWSOrganizationsAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisassociatePrincipalFromPortfolioR
 }
 
 // DisassociatePrincipalFromPortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) DisassociatePrincipalFromPortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.DisassociatePrincipalFromPortfolioInput, arg2 ...request.Option) (*servicecatalog.DisassociatePrincipalFromPortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) DisassociatePrincipalFromPortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.DisassociatePrincipalFromPortfolioInput, arg2 ...request.Option) (*servicecatalog.DisassociatePrincipalFromPortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisassociateProductFromPortfolioReq
 }
 
 // DisassociateProductFromPortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) DisassociateProductFromPortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.DisassociateProductFromPortfolioInput, arg2 ...request.Option) (*servicecatalog.DisassociateProductFromPortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) DisassociateProductFromPortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.DisassociateProductFromPortfolioInput, arg2 ...request.Option) (*servicecatalog.DisassociateProductFromPortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisassociateServiceActionFromProvis
 }
 
 // DisassociateServiceActionFromProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) DisassociateServiceActionFromProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.DisassociateServiceActionFromProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) DisassociateServiceActionFromProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.DisassociateServiceActionFromProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.DisassociateServiceActionFromProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) DisassociateTagOptionFromResourceRe
 }
 
 // DisassociateTagOptionFromResourceWithContext mocks base method
-func (m *MockServiceCatalogAPI) DisassociateTagOptionFromResourceWithContext(arg0 aws.Context, arg1 *servicecatalog.DisassociateTagOptionFromResourceInput, arg2 ...request.Option) (*servicecatalog.DisassociateTagOptionFromResourceOutput, error) {
+func (m *MockServiceCatalogAPI) DisassociateTagOptionFromResourceWithContext(arg0 context.Context, arg1 *servicecatalog.DisassociateTagOptionFromResourceInput, arg2 ...request.Option) (*servicecatalog.DisassociateTagOptionFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) EnableAWSOrganizationsAccessRequest
 }
 
 // EnableAWSOrganizationsAccessWithContext mocks base method
-func (m *MockServiceCatalogAPI) EnableAWSOrganizationsAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.EnableAWSOrganizationsAccessInput, arg2 ...request.Option) (*servicecatalog.EnableAWSOrganizationsAccessOutput, error) {
+func (m *MockServiceCatalogAPI) EnableAWSOrganizationsAccessWithContext(arg0 context.Context, arg1 *servicecatalog.EnableAWSOrganizationsAccessInput, arg2 ...request.Option) (*servicecatalog.EnableAWSOrganizationsAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductPlanReques
 }
 
 // ExecuteProvisionedProductPlanWithContext mocks base method
-func (m *MockServiceCatalogAPI) ExecuteProvisionedProductPlanWithContext(arg0 aws.Context, arg1 *servicecatalog.ExecuteProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.ExecuteProvisionedProductPlanOutput, error) {
+func (m *MockServiceCatalogAPI) ExecuteProvisionedProductPlanWithContext(arg0 context.Context, arg1 *servicecatalog.ExecuteProvisionedProductPlanInput, arg2 ...request.Option) (*servicecatalog.ExecuteProvisionedProductPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2316,7 +2316,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ExecuteProvisionedProductServiceAct
 }
 
 // ExecuteProvisionedProductServiceActionWithContext mocks base method
-func (m *MockServiceCatalogAPI) ExecuteProvisionedProductServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.ExecuteProvisionedProductServiceActionInput, arg2 ...request.Option) (*servicecatalog.ExecuteProvisionedProductServiceActionOutput, error) {
+func (m *MockServiceCatalogAPI) ExecuteProvisionedProductServiceActionWithContext(arg0 context.Context, arg1 *servicecatalog.ExecuteProvisionedProductServiceActionInput, arg2 ...request.Option) (*servicecatalog.ExecuteProvisionedProductServiceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2366,7 +2366,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) GetAWSOrganizationsAccessStatusRequ
 }
 
 // GetAWSOrganizationsAccessStatusWithContext mocks base method
-func (m *MockServiceCatalogAPI) GetAWSOrganizationsAccessStatusWithContext(arg0 aws.Context, arg1 *servicecatalog.GetAWSOrganizationsAccessStatusInput, arg2 ...request.Option) (*servicecatalog.GetAWSOrganizationsAccessStatusOutput, error) {
+func (m *MockServiceCatalogAPI) GetAWSOrganizationsAccessStatusWithContext(arg0 context.Context, arg1 *servicecatalog.GetAWSOrganizationsAccessStatusInput, arg2 ...request.Option) (*servicecatalog.GetAWSOrganizationsAccessStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2415,7 +2415,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListAcceptedPortfolioSharesPages(ar
 }
 
 // ListAcceptedPortfolioSharesPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListAcceptedPortfolioSharesPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListAcceptedPortfolioSharesInput, arg2 func(*servicecatalog.ListAcceptedPortfolioSharesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListAcceptedPortfolioSharesPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListAcceptedPortfolioSharesInput, arg2 func(*servicecatalog.ListAcceptedPortfolioSharesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2449,7 +2449,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListAcceptedPortfolioSharesRequest(
 }
 
 // ListAcceptedPortfolioSharesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListAcceptedPortfolioSharesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListAcceptedPortfolioSharesInput, arg2 ...request.Option) (*servicecatalog.ListAcceptedPortfolioSharesOutput, error) {
+func (m *MockServiceCatalogAPI) ListAcceptedPortfolioSharesWithContext(arg0 context.Context, arg1 *servicecatalog.ListAcceptedPortfolioSharesInput, arg2 ...request.Option) (*servicecatalog.ListAcceptedPortfolioSharesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2498,7 +2498,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListConstraintsForPortfolioPages(ar
 }
 
 // ListConstraintsForPortfolioPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListConstraintsForPortfolioPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListConstraintsForPortfolioInput, arg2 func(*servicecatalog.ListConstraintsForPortfolioOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListConstraintsForPortfolioPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListConstraintsForPortfolioInput, arg2 func(*servicecatalog.ListConstraintsForPortfolioOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2532,7 +2532,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListConstraintsForPortfolioRequest(
 }
 
 // ListConstraintsForPortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListConstraintsForPortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.ListConstraintsForPortfolioInput, arg2 ...request.Option) (*servicecatalog.ListConstraintsForPortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) ListConstraintsForPortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.ListConstraintsForPortfolioInput, arg2 ...request.Option) (*servicecatalog.ListConstraintsForPortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2581,7 +2581,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListLaunchPathsPages(arg0, arg1 int
 }
 
 // ListLaunchPathsPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListLaunchPathsPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListLaunchPathsInput, arg2 func(*servicecatalog.ListLaunchPathsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListLaunchPathsPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListLaunchPathsInput, arg2 func(*servicecatalog.ListLaunchPathsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2615,7 +2615,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListLaunchPathsRequest(arg0 interfa
 }
 
 // ListLaunchPathsWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListLaunchPathsWithContext(arg0 aws.Context, arg1 *servicecatalog.ListLaunchPathsInput, arg2 ...request.Option) (*servicecatalog.ListLaunchPathsOutput, error) {
+func (m *MockServiceCatalogAPI) ListLaunchPathsWithContext(arg0 context.Context, arg1 *servicecatalog.ListLaunchPathsInput, arg2 ...request.Option) (*servicecatalog.ListLaunchPathsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2664,7 +2664,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccessPage
 }
 
 // ListOrganizationPortfolioAccessPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListOrganizationPortfolioAccessInput, arg2 func(*servicecatalog.ListOrganizationPortfolioAccessOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListOrganizationPortfolioAccessInput, arg2 func(*servicecatalog.ListOrganizationPortfolioAccessOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2698,7 +2698,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListOrganizationPortfolioAccessRequ
 }
 
 // ListOrganizationPortfolioAccessWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.ListOrganizationPortfolioAccessInput, arg2 ...request.Option) (*servicecatalog.ListOrganizationPortfolioAccessOutput, error) {
+func (m *MockServiceCatalogAPI) ListOrganizationPortfolioAccessWithContext(arg0 context.Context, arg1 *servicecatalog.ListOrganizationPortfolioAccessInput, arg2 ...request.Option) (*servicecatalog.ListOrganizationPortfolioAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2748,7 +2748,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPortfolioAccessRequest(arg0 int
 }
 
 // ListPortfolioAccessWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPortfolioAccessWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPortfolioAccessInput, arg2 ...request.Option) (*servicecatalog.ListPortfolioAccessOutput, error) {
+func (m *MockServiceCatalogAPI) ListPortfolioAccessWithContext(arg0 context.Context, arg1 *servicecatalog.ListPortfolioAccessInput, arg2 ...request.Option) (*servicecatalog.ListPortfolioAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2812,7 +2812,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPortfoliosForProductPages(arg0,
 }
 
 // ListPortfoliosForProductPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPortfoliosForProductPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPortfoliosForProductInput, arg2 func(*servicecatalog.ListPortfoliosForProductOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListPortfoliosForProductPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListPortfoliosForProductInput, arg2 func(*servicecatalog.ListPortfoliosForProductOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2846,7 +2846,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPortfoliosForProductRequest(arg
 }
 
 // ListPortfoliosForProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPortfoliosForProductWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPortfoliosForProductInput, arg2 ...request.Option) (*servicecatalog.ListPortfoliosForProductOutput, error) {
+func (m *MockServiceCatalogAPI) ListPortfoliosForProductWithContext(arg0 context.Context, arg1 *servicecatalog.ListPortfoliosForProductInput, arg2 ...request.Option) (*servicecatalog.ListPortfoliosForProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2880,7 +2880,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPortfoliosPages(arg0, arg1 inte
 }
 
 // ListPortfoliosPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPortfoliosPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPortfoliosInput, arg2 func(*servicecatalog.ListPortfoliosOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListPortfoliosPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListPortfoliosInput, arg2 func(*servicecatalog.ListPortfoliosOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2914,7 +2914,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPortfoliosRequest(arg0 interfac
 }
 
 // ListPortfoliosWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPortfoliosWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPortfoliosInput, arg2 ...request.Option) (*servicecatalog.ListPortfoliosOutput, error) {
+func (m *MockServiceCatalogAPI) ListPortfoliosWithContext(arg0 context.Context, arg1 *servicecatalog.ListPortfoliosInput, arg2 ...request.Option) (*servicecatalog.ListPortfoliosOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2963,7 +2963,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPrincipalsForPortfolioPages(arg
 }
 
 // ListPrincipalsForPortfolioPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPrincipalsForPortfolioPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPrincipalsForPortfolioInput, arg2 func(*servicecatalog.ListPrincipalsForPortfolioOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListPrincipalsForPortfolioPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListPrincipalsForPortfolioInput, arg2 func(*servicecatalog.ListPrincipalsForPortfolioOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2997,7 +2997,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPrincipalsForPortfolioRequest(a
 }
 
 // ListPrincipalsForPortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListPrincipalsForPortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.ListPrincipalsForPortfolioInput, arg2 ...request.Option) (*servicecatalog.ListPrincipalsForPortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) ListPrincipalsForPortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.ListPrincipalsForPortfolioInput, arg2 ...request.Option) (*servicecatalog.ListPrincipalsForPortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3047,7 +3047,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListProvisionedProductPlansRequest(
 }
 
 // ListProvisionedProductPlansWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListProvisionedProductPlansWithContext(arg0 aws.Context, arg1 *servicecatalog.ListProvisionedProductPlansInput, arg2 ...request.Option) (*servicecatalog.ListProvisionedProductPlansOutput, error) {
+func (m *MockServiceCatalogAPI) ListProvisionedProductPlansWithContext(arg0 context.Context, arg1 *servicecatalog.ListProvisionedProductPlansInput, arg2 ...request.Option) (*servicecatalog.ListProvisionedProductPlansOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3111,7 +3111,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForService
 }
 
 // ListProvisioningArtifactsForServiceActionPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg2 func(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg2 func(*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3145,7 +3145,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsForService
 }
 
 // ListProvisioningArtifactsForServiceActionWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg2 ...request.Option) (*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, error) {
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsForServiceActionWithContext(arg0 context.Context, arg1 *servicecatalog.ListProvisioningArtifactsForServiceActionInput, arg2 ...request.Option) (*servicecatalog.ListProvisioningArtifactsForServiceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3180,7 +3180,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListProvisioningArtifactsRequest(ar
 }
 
 // ListProvisioningArtifactsWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListProvisioningArtifactsWithContext(arg0 aws.Context, arg1 *servicecatalog.ListProvisioningArtifactsInput, arg2 ...request.Option) (*servicecatalog.ListProvisioningArtifactsOutput, error) {
+func (m *MockServiceCatalogAPI) ListProvisioningArtifactsWithContext(arg0 context.Context, arg1 *servicecatalog.ListProvisioningArtifactsInput, arg2 ...request.Option) (*servicecatalog.ListProvisioningArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3230,7 +3230,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListRecordHistoryRequest(arg0 inter
 }
 
 // ListRecordHistoryWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListRecordHistoryWithContext(arg0 aws.Context, arg1 *servicecatalog.ListRecordHistoryInput, arg2 ...request.Option) (*servicecatalog.ListRecordHistoryOutput, error) {
+func (m *MockServiceCatalogAPI) ListRecordHistoryWithContext(arg0 context.Context, arg1 *servicecatalog.ListRecordHistoryInput, arg2 ...request.Option) (*servicecatalog.ListRecordHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3279,7 +3279,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListResourcesForTagOptionPages(arg0
 }
 
 // ListResourcesForTagOptionPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListResourcesForTagOptionPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListResourcesForTagOptionInput, arg2 func(*servicecatalog.ListResourcesForTagOptionOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListResourcesForTagOptionPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListResourcesForTagOptionInput, arg2 func(*servicecatalog.ListResourcesForTagOptionOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3313,7 +3313,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListResourcesForTagOptionRequest(ar
 }
 
 // ListResourcesForTagOptionWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListResourcesForTagOptionWithContext(arg0 aws.Context, arg1 *servicecatalog.ListResourcesForTagOptionInput, arg2 ...request.Option) (*servicecatalog.ListResourcesForTagOptionOutput, error) {
+func (m *MockServiceCatalogAPI) ListResourcesForTagOptionWithContext(arg0 context.Context, arg1 *servicecatalog.ListResourcesForTagOptionInput, arg2 ...request.Option) (*servicecatalog.ListResourcesForTagOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3377,7 +3377,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningAr
 }
 
 // ListServiceActionsForProvisioningArtifactPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg2 func(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg2 func(*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3411,7 +3411,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsForProvisioningAr
 }
 
 // ListServiceActionsForProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) ListServiceActionsForProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.ListServiceActionsForProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.ListServiceActionsForProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3445,7 +3445,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsPages(arg0, arg1 
 }
 
 // ListServiceActionsPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListServiceActionsPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsInput, arg2 func(*servicecatalog.ListServiceActionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListServiceActionsPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListServiceActionsInput, arg2 func(*servicecatalog.ListServiceActionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3479,7 +3479,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListServiceActionsRequest(arg0 inte
 }
 
 // ListServiceActionsWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListServiceActionsWithContext(arg0 aws.Context, arg1 *servicecatalog.ListServiceActionsInput, arg2 ...request.Option) (*servicecatalog.ListServiceActionsOutput, error) {
+func (m *MockServiceCatalogAPI) ListServiceActionsWithContext(arg0 context.Context, arg1 *servicecatalog.ListServiceActionsInput, arg2 ...request.Option) (*servicecatalog.ListServiceActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3528,7 +3528,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListTagOptionsPages(arg0, arg1 inte
 }
 
 // ListTagOptionsPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListTagOptionsPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.ListTagOptionsInput, arg2 func(*servicecatalog.ListTagOptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) ListTagOptionsPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListTagOptionsInput, arg2 func(*servicecatalog.ListTagOptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3562,7 +3562,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListTagOptionsRequest(arg0 interfac
 }
 
 // ListTagOptionsWithContext mocks base method
-func (m *MockServiceCatalogAPI) ListTagOptionsWithContext(arg0 aws.Context, arg1 *servicecatalog.ListTagOptionsInput, arg2 ...request.Option) (*servicecatalog.ListTagOptionsOutput, error) {
+func (m *MockServiceCatalogAPI) ListTagOptionsWithContext(arg0 context.Context, arg1 *servicecatalog.ListTagOptionsInput, arg2 ...request.Option) (*servicecatalog.ListTagOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3612,7 +3612,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ProvisionProductRequest(arg0 interf
 }
 
 // ProvisionProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) ProvisionProductWithContext(arg0 aws.Context, arg1 *servicecatalog.ProvisionProductInput, arg2 ...request.Option) (*servicecatalog.ProvisionProductOutput, error) {
+func (m *MockServiceCatalogAPI) ProvisionProductWithContext(arg0 context.Context, arg1 *servicecatalog.ProvisionProductInput, arg2 ...request.Option) (*servicecatalog.ProvisionProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3662,7 +3662,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) RejectPortfolioShareRequest(arg0 in
 }
 
 // RejectPortfolioShareWithContext mocks base method
-func (m *MockServiceCatalogAPI) RejectPortfolioShareWithContext(arg0 aws.Context, arg1 *servicecatalog.RejectPortfolioShareInput, arg2 ...request.Option) (*servicecatalog.RejectPortfolioShareOutput, error) {
+func (m *MockServiceCatalogAPI) RejectPortfolioShareWithContext(arg0 context.Context, arg1 *servicecatalog.RejectPortfolioShareInput, arg2 ...request.Option) (*servicecatalog.RejectPortfolioShareOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3712,7 +3712,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) ScanProvisionedProductsRequest(arg0
 }
 
 // ScanProvisionedProductsWithContext mocks base method
-func (m *MockServiceCatalogAPI) ScanProvisionedProductsWithContext(arg0 aws.Context, arg1 *servicecatalog.ScanProvisionedProductsInput, arg2 ...request.Option) (*servicecatalog.ScanProvisionedProductsOutput, error) {
+func (m *MockServiceCatalogAPI) ScanProvisionedProductsWithContext(arg0 context.Context, arg1 *servicecatalog.ScanProvisionedProductsInput, arg2 ...request.Option) (*servicecatalog.ScanProvisionedProductsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3776,7 +3776,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) SearchProductsAsAdminPages(arg0, ar
 }
 
 // SearchProductsAsAdminPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) SearchProductsAsAdminPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.SearchProductsAsAdminInput, arg2 func(*servicecatalog.SearchProductsAsAdminOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) SearchProductsAsAdminPagesWithContext(arg0 context.Context, arg1 *servicecatalog.SearchProductsAsAdminInput, arg2 func(*servicecatalog.SearchProductsAsAdminOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3810,7 +3810,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) SearchProductsAsAdminRequest(arg0 i
 }
 
 // SearchProductsAsAdminWithContext mocks base method
-func (m *MockServiceCatalogAPI) SearchProductsAsAdminWithContext(arg0 aws.Context, arg1 *servicecatalog.SearchProductsAsAdminInput, arg2 ...request.Option) (*servicecatalog.SearchProductsAsAdminOutput, error) {
+func (m *MockServiceCatalogAPI) SearchProductsAsAdminWithContext(arg0 context.Context, arg1 *servicecatalog.SearchProductsAsAdminInput, arg2 ...request.Option) (*servicecatalog.SearchProductsAsAdminOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3844,7 +3844,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) SearchProductsPages(arg0, arg1 inte
 }
 
 // SearchProductsPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) SearchProductsPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.SearchProductsInput, arg2 func(*servicecatalog.SearchProductsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) SearchProductsPagesWithContext(arg0 context.Context, arg1 *servicecatalog.SearchProductsInput, arg2 func(*servicecatalog.SearchProductsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3878,7 +3878,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) SearchProductsRequest(arg0 interfac
 }
 
 // SearchProductsWithContext mocks base method
-func (m *MockServiceCatalogAPI) SearchProductsWithContext(arg0 aws.Context, arg1 *servicecatalog.SearchProductsInput, arg2 ...request.Option) (*servicecatalog.SearchProductsOutput, error) {
+func (m *MockServiceCatalogAPI) SearchProductsWithContext(arg0 context.Context, arg1 *servicecatalog.SearchProductsInput, arg2 ...request.Option) (*servicecatalog.SearchProductsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3927,7 +3927,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) SearchProvisionedProductsPages(arg0
 }
 
 // SearchProvisionedProductsPagesWithContext mocks base method
-func (m *MockServiceCatalogAPI) SearchProvisionedProductsPagesWithContext(arg0 aws.Context, arg1 *servicecatalog.SearchProvisionedProductsInput, arg2 func(*servicecatalog.SearchProvisionedProductsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceCatalogAPI) SearchProvisionedProductsPagesWithContext(arg0 context.Context, arg1 *servicecatalog.SearchProvisionedProductsInput, arg2 func(*servicecatalog.SearchProvisionedProductsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3961,7 +3961,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) SearchProvisionedProductsRequest(ar
 }
 
 // SearchProvisionedProductsWithContext mocks base method
-func (m *MockServiceCatalogAPI) SearchProvisionedProductsWithContext(arg0 aws.Context, arg1 *servicecatalog.SearchProvisionedProductsInput, arg2 ...request.Option) (*servicecatalog.SearchProvisionedProductsOutput, error) {
+func (m *MockServiceCatalogAPI) SearchProvisionedProductsWithContext(arg0 context.Context, arg1 *servicecatalog.SearchProvisionedProductsInput, arg2 ...request.Option) (*servicecatalog.SearchProvisionedProductsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4011,7 +4011,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) TerminateProvisionedProductRequest(
 }
 
 // TerminateProvisionedProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) TerminateProvisionedProductWithContext(arg0 aws.Context, arg1 *servicecatalog.TerminateProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.TerminateProvisionedProductOutput, error) {
+func (m *MockServiceCatalogAPI) TerminateProvisionedProductWithContext(arg0 context.Context, arg1 *servicecatalog.TerminateProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.TerminateProvisionedProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4061,7 +4061,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateConstraintRequest(arg0 interf
 }
 
 // UpdateConstraintWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdateConstraintWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateConstraintInput, arg2 ...request.Option) (*servicecatalog.UpdateConstraintOutput, error) {
+func (m *MockServiceCatalogAPI) UpdateConstraintWithContext(arg0 context.Context, arg1 *servicecatalog.UpdateConstraintInput, arg2 ...request.Option) (*servicecatalog.UpdateConstraintOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4111,7 +4111,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdatePortfolioRequest(arg0 interfa
 }
 
 // UpdatePortfolioWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdatePortfolioWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdatePortfolioInput, arg2 ...request.Option) (*servicecatalog.UpdatePortfolioOutput, error) {
+func (m *MockServiceCatalogAPI) UpdatePortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.UpdatePortfolioInput, arg2 ...request.Option) (*servicecatalog.UpdatePortfolioOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4161,7 +4161,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateProductRequest(arg0 interface
 }
 
 // UpdateProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdateProductWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateProductInput, arg2 ...request.Option) (*servicecatalog.UpdateProductOutput, error) {
+func (m *MockServiceCatalogAPI) UpdateProductWithContext(arg0 context.Context, arg1 *servicecatalog.UpdateProductInput, arg2 ...request.Option) (*servicecatalog.UpdateProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4211,7 +4211,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateProvisionedProductRequest(arg
 }
 
 // UpdateProvisionedProductWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdateProvisionedProductWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.UpdateProvisionedProductOutput, error) {
+func (m *MockServiceCatalogAPI) UpdateProvisionedProductWithContext(arg0 context.Context, arg1 *servicecatalog.UpdateProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.UpdateProvisionedProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4261,7 +4261,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateProvisioningArtifactRequest(a
 }
 
 // UpdateProvisioningArtifactWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdateProvisioningArtifactWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.UpdateProvisioningArtifactOutput, error) {
+func (m *MockServiceCatalogAPI) UpdateProvisioningArtifactWithContext(arg0 context.Context, arg1 *servicecatalog.UpdateProvisioningArtifactInput, arg2 ...request.Option) (*servicecatalog.UpdateProvisioningArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4311,7 +4311,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateServiceActionRequest(arg0 int
 }
 
 // UpdateServiceActionWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdateServiceActionWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateServiceActionInput, arg2 ...request.Option) (*servicecatalog.UpdateServiceActionOutput, error) {
+func (m *MockServiceCatalogAPI) UpdateServiceActionWithContext(arg0 context.Context, arg1 *servicecatalog.UpdateServiceActionInput, arg2 ...request.Option) (*servicecatalog.UpdateServiceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4361,7 +4361,7 @@ func (mr *MockServiceCatalogAPIMockRecorder) UpdateTagOptionRequest(arg0 interfa
 }
 
 // UpdateTagOptionWithContext mocks base method
-func (m *MockServiceCatalogAPI) UpdateTagOptionWithContext(arg0 aws.Context, arg1 *servicecatalog.UpdateTagOptionInput, arg2 ...request.Option) (*servicecatalog.UpdateTagOptionOutput, error) {
+func (m *MockServiceCatalogAPI) UpdateTagOptionWithContext(arg0 context.Context, arg1 *servicecatalog.UpdateTagOptionInput, arg2 ...request.Option) (*servicecatalog.UpdateTagOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

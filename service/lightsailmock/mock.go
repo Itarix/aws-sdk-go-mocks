@@ -5,7 +5,7 @@
 package lightsailmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	lightsail "github.com/aws/aws-sdk-go/service/lightsail"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockLightsailAPIMockRecorder) AllocateStaticIpRequest(arg0 interface{}
 }
 
 // AllocateStaticIpWithContext mocks base method
-func (m *MockLightsailAPI) AllocateStaticIpWithContext(arg0 aws.Context, arg1 *lightsail.AllocateStaticIpInput, arg2 ...request.Option) (*lightsail.AllocateStaticIpOutput, error) {
+func (m *MockLightsailAPI) AllocateStaticIpWithContext(arg0 context.Context, arg1 *lightsail.AllocateStaticIpInput, arg2 ...request.Option) (*lightsail.AllocateStaticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockLightsailAPIMockRecorder) AttachDiskRequest(arg0 interface{}) *gom
 }
 
 // AttachDiskWithContext mocks base method
-func (m *MockLightsailAPI) AttachDiskWithContext(arg0 aws.Context, arg1 *lightsail.AttachDiskInput, arg2 ...request.Option) (*lightsail.AttachDiskOutput, error) {
+func (m *MockLightsailAPI) AttachDiskWithContext(arg0 context.Context, arg1 *lightsail.AttachDiskInput, arg2 ...request.Option) (*lightsail.AttachDiskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockLightsailAPIMockRecorder) AttachInstancesToLoadBalancerRequest(arg
 }
 
 // AttachInstancesToLoadBalancerWithContext mocks base method
-func (m *MockLightsailAPI) AttachInstancesToLoadBalancerWithContext(arg0 aws.Context, arg1 *lightsail.AttachInstancesToLoadBalancerInput, arg2 ...request.Option) (*lightsail.AttachInstancesToLoadBalancerOutput, error) {
+func (m *MockLightsailAPI) AttachInstancesToLoadBalancerWithContext(arg0 context.Context, arg1 *lightsail.AttachInstancesToLoadBalancerInput, arg2 ...request.Option) (*lightsail.AttachInstancesToLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockLightsailAPIMockRecorder) AttachLoadBalancerTlsCertificateRequest(
 }
 
 // AttachLoadBalancerTlsCertificateWithContext mocks base method
-func (m *MockLightsailAPI) AttachLoadBalancerTlsCertificateWithContext(arg0 aws.Context, arg1 *lightsail.AttachLoadBalancerTlsCertificateInput, arg2 ...request.Option) (*lightsail.AttachLoadBalancerTlsCertificateOutput, error) {
+func (m *MockLightsailAPI) AttachLoadBalancerTlsCertificateWithContext(arg0 context.Context, arg1 *lightsail.AttachLoadBalancerTlsCertificateInput, arg2 ...request.Option) (*lightsail.AttachLoadBalancerTlsCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockLightsailAPIMockRecorder) AttachStaticIpRequest(arg0 interface{}) 
 }
 
 // AttachStaticIpWithContext mocks base method
-func (m *MockLightsailAPI) AttachStaticIpWithContext(arg0 aws.Context, arg1 *lightsail.AttachStaticIpInput, arg2 ...request.Option) (*lightsail.AttachStaticIpOutput, error) {
+func (m *MockLightsailAPI) AttachStaticIpWithContext(arg0 context.Context, arg1 *lightsail.AttachStaticIpInput, arg2 ...request.Option) (*lightsail.AttachStaticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockLightsailAPIMockRecorder) CloseInstancePublicPortsRequest(arg0 int
 }
 
 // CloseInstancePublicPortsWithContext mocks base method
-func (m *MockLightsailAPI) CloseInstancePublicPortsWithContext(arg0 aws.Context, arg1 *lightsail.CloseInstancePublicPortsInput, arg2 ...request.Option) (*lightsail.CloseInstancePublicPortsOutput, error) {
+func (m *MockLightsailAPI) CloseInstancePublicPortsWithContext(arg0 context.Context, arg1 *lightsail.CloseInstancePublicPortsInput, arg2 ...request.Option) (*lightsail.CloseInstancePublicPortsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockLightsailAPIMockRecorder) CopySnapshotRequest(arg0 interface{}) *g
 }
 
 // CopySnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CopySnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CopySnapshotInput, arg2 ...request.Option) (*lightsail.CopySnapshotOutput, error) {
+func (m *MockLightsailAPI) CopySnapshotWithContext(arg0 context.Context, arg1 *lightsail.CopySnapshotInput, arg2 ...request.Option) (*lightsail.CopySnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateCloudFormationStackRequest(arg0 in
 }
 
 // CreateCloudFormationStackWithContext mocks base method
-func (m *MockLightsailAPI) CreateCloudFormationStackWithContext(arg0 aws.Context, arg1 *lightsail.CreateCloudFormationStackInput, arg2 ...request.Option) (*lightsail.CreateCloudFormationStackOutput, error) {
+func (m *MockLightsailAPI) CreateCloudFormationStackWithContext(arg0 context.Context, arg1 *lightsail.CreateCloudFormationStackInput, arg2 ...request.Option) (*lightsail.CreateCloudFormationStackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateDiskFromSnapshotRequest(arg0 inter
 }
 
 // CreateDiskFromSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CreateDiskFromSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CreateDiskFromSnapshotInput, arg2 ...request.Option) (*lightsail.CreateDiskFromSnapshotOutput, error) {
+func (m *MockLightsailAPI) CreateDiskFromSnapshotWithContext(arg0 context.Context, arg1 *lightsail.CreateDiskFromSnapshotInput, arg2 ...request.Option) (*lightsail.CreateDiskFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -546,7 +546,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateDiskSnapshotRequest(arg0 interface
 }
 
 // CreateDiskSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CreateDiskSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CreateDiskSnapshotInput, arg2 ...request.Option) (*lightsail.CreateDiskSnapshotOutput, error) {
+func (m *MockLightsailAPI) CreateDiskSnapshotWithContext(arg0 context.Context, arg1 *lightsail.CreateDiskSnapshotInput, arg2 ...request.Option) (*lightsail.CreateDiskSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateDiskSnapshotWithContext(arg0, arg1
 }
 
 // CreateDiskWithContext mocks base method
-func (m *MockLightsailAPI) CreateDiskWithContext(arg0 aws.Context, arg1 *lightsail.CreateDiskInput, arg2 ...request.Option) (*lightsail.CreateDiskOutput, error) {
+func (m *MockLightsailAPI) CreateDiskWithContext(arg0 context.Context, arg1 *lightsail.CreateDiskInput, arg2 ...request.Option) (*lightsail.CreateDiskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateDomainEntryRequest(arg0 interface{
 }
 
 // CreateDomainEntryWithContext mocks base method
-func (m *MockLightsailAPI) CreateDomainEntryWithContext(arg0 aws.Context, arg1 *lightsail.CreateDomainEntryInput, arg2 ...request.Option) (*lightsail.CreateDomainEntryOutput, error) {
+func (m *MockLightsailAPI) CreateDomainEntryWithContext(arg0 context.Context, arg1 *lightsail.CreateDomainEntryInput, arg2 ...request.Option) (*lightsail.CreateDomainEntryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateDomainRequest(arg0 interface{}) *g
 }
 
 // CreateDomainWithContext mocks base method
-func (m *MockLightsailAPI) CreateDomainWithContext(arg0 aws.Context, arg1 *lightsail.CreateDomainInput, arg2 ...request.Option) (*lightsail.CreateDomainOutput, error) {
+func (m *MockLightsailAPI) CreateDomainWithContext(arg0 context.Context, arg1 *lightsail.CreateDomainInput, arg2 ...request.Option) (*lightsail.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateInstanceSnapshotRequest(arg0 inter
 }
 
 // CreateInstanceSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CreateInstanceSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CreateInstanceSnapshotInput, arg2 ...request.Option) (*lightsail.CreateInstanceSnapshotOutput, error) {
+func (m *MockLightsailAPI) CreateInstanceSnapshotWithContext(arg0 context.Context, arg1 *lightsail.CreateInstanceSnapshotInput, arg2 ...request.Option) (*lightsail.CreateInstanceSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateInstancesFromSnapshotRequest(arg0 
 }
 
 // CreateInstancesFromSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CreateInstancesFromSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CreateInstancesFromSnapshotInput, arg2 ...request.Option) (*lightsail.CreateInstancesFromSnapshotOutput, error) {
+func (m *MockLightsailAPI) CreateInstancesFromSnapshotWithContext(arg0 context.Context, arg1 *lightsail.CreateInstancesFromSnapshotInput, arg2 ...request.Option) (*lightsail.CreateInstancesFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateInstancesRequest(arg0 interface{})
 }
 
 // CreateInstancesWithContext mocks base method
-func (m *MockLightsailAPI) CreateInstancesWithContext(arg0 aws.Context, arg1 *lightsail.CreateInstancesInput, arg2 ...request.Option) (*lightsail.CreateInstancesOutput, error) {
+func (m *MockLightsailAPI) CreateInstancesWithContext(arg0 context.Context, arg1 *lightsail.CreateInstancesInput, arg2 ...request.Option) (*lightsail.CreateInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateKeyPairRequest(arg0 interface{}) *
 }
 
 // CreateKeyPairWithContext mocks base method
-func (m *MockLightsailAPI) CreateKeyPairWithContext(arg0 aws.Context, arg1 *lightsail.CreateKeyPairInput, arg2 ...request.Option) (*lightsail.CreateKeyPairOutput, error) {
+func (m *MockLightsailAPI) CreateKeyPairWithContext(arg0 context.Context, arg1 *lightsail.CreateKeyPairInput, arg2 ...request.Option) (*lightsail.CreateKeyPairOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -946,7 +946,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateLoadBalancerTlsCertificateRequest(
 }
 
 // CreateLoadBalancerTlsCertificateWithContext mocks base method
-func (m *MockLightsailAPI) CreateLoadBalancerTlsCertificateWithContext(arg0 aws.Context, arg1 *lightsail.CreateLoadBalancerTlsCertificateInput, arg2 ...request.Option) (*lightsail.CreateLoadBalancerTlsCertificateOutput, error) {
+func (m *MockLightsailAPI) CreateLoadBalancerTlsCertificateWithContext(arg0 context.Context, arg1 *lightsail.CreateLoadBalancerTlsCertificateInput, arg2 ...request.Option) (*lightsail.CreateLoadBalancerTlsCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateLoadBalancerTlsCertificateWithCont
 }
 
 // CreateLoadBalancerWithContext mocks base method
-func (m *MockLightsailAPI) CreateLoadBalancerWithContext(arg0 aws.Context, arg1 *lightsail.CreateLoadBalancerInput, arg2 ...request.Option) (*lightsail.CreateLoadBalancerOutput, error) {
+func (m *MockLightsailAPI) CreateLoadBalancerWithContext(arg0 context.Context, arg1 *lightsail.CreateLoadBalancerInput, arg2 ...request.Option) (*lightsail.CreateLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1031,7 +1031,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateRelationalDatabaseFromSnapshotRequ
 }
 
 // CreateRelationalDatabaseFromSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CreateRelationalDatabaseFromSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CreateRelationalDatabaseFromSnapshotInput, arg2 ...request.Option) (*lightsail.CreateRelationalDatabaseFromSnapshotOutput, error) {
+func (m *MockLightsailAPI) CreateRelationalDatabaseFromSnapshotWithContext(arg0 context.Context, arg1 *lightsail.CreateRelationalDatabaseFromSnapshotInput, arg2 ...request.Option) (*lightsail.CreateRelationalDatabaseFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1096,7 +1096,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateRelationalDatabaseSnapshotRequest(
 }
 
 // CreateRelationalDatabaseSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) CreateRelationalDatabaseSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.CreateRelationalDatabaseSnapshotInput, arg2 ...request.Option) (*lightsail.CreateRelationalDatabaseSnapshotOutput, error) {
+func (m *MockLightsailAPI) CreateRelationalDatabaseSnapshotWithContext(arg0 context.Context, arg1 *lightsail.CreateRelationalDatabaseSnapshotInput, arg2 ...request.Option) (*lightsail.CreateRelationalDatabaseSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockLightsailAPIMockRecorder) CreateRelationalDatabaseSnapshotWithCont
 }
 
 // CreateRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) CreateRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.CreateRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.CreateRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) CreateRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.CreateRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.CreateRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1196,7 +1196,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteDiskSnapshotRequest(arg0 interface
 }
 
 // DeleteDiskSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) DeleteDiskSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.DeleteDiskSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteDiskSnapshotOutput, error) {
+func (m *MockLightsailAPI) DeleteDiskSnapshotWithContext(arg0 context.Context, arg1 *lightsail.DeleteDiskSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteDiskSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteDiskSnapshotWithContext(arg0, arg1
 }
 
 // DeleteDiskWithContext mocks base method
-func (m *MockLightsailAPI) DeleteDiskWithContext(arg0 aws.Context, arg1 *lightsail.DeleteDiskInput, arg2 ...request.Option) (*lightsail.DeleteDiskOutput, error) {
+func (m *MockLightsailAPI) DeleteDiskWithContext(arg0 context.Context, arg1 *lightsail.DeleteDiskInput, arg2 ...request.Option) (*lightsail.DeleteDiskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteDomainEntryRequest(arg0 interface{
 }
 
 // DeleteDomainEntryWithContext mocks base method
-func (m *MockLightsailAPI) DeleteDomainEntryWithContext(arg0 aws.Context, arg1 *lightsail.DeleteDomainEntryInput, arg2 ...request.Option) (*lightsail.DeleteDomainEntryOutput, error) {
+func (m *MockLightsailAPI) DeleteDomainEntryWithContext(arg0 context.Context, arg1 *lightsail.DeleteDomainEntryInput, arg2 ...request.Option) (*lightsail.DeleteDomainEntryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteDomainRequest(arg0 interface{}) *g
 }
 
 // DeleteDomainWithContext mocks base method
-func (m *MockLightsailAPI) DeleteDomainWithContext(arg0 aws.Context, arg1 *lightsail.DeleteDomainInput, arg2 ...request.Option) (*lightsail.DeleteDomainOutput, error) {
+func (m *MockLightsailAPI) DeleteDomainWithContext(arg0 context.Context, arg1 *lightsail.DeleteDomainInput, arg2 ...request.Option) (*lightsail.DeleteDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1396,7 +1396,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteInstanceSnapshotRequest(arg0 inter
 }
 
 // DeleteInstanceSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) DeleteInstanceSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.DeleteInstanceSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteInstanceSnapshotOutput, error) {
+func (m *MockLightsailAPI) DeleteInstanceSnapshotWithContext(arg0 context.Context, arg1 *lightsail.DeleteInstanceSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteInstanceSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteInstanceSnapshotWithContext(arg0, 
 }
 
 // DeleteInstanceWithContext mocks base method
-func (m *MockLightsailAPI) DeleteInstanceWithContext(arg0 aws.Context, arg1 *lightsail.DeleteInstanceInput, arg2 ...request.Option) (*lightsail.DeleteInstanceOutput, error) {
+func (m *MockLightsailAPI) DeleteInstanceWithContext(arg0 context.Context, arg1 *lightsail.DeleteInstanceInput, arg2 ...request.Option) (*lightsail.DeleteInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteKeyPairRequest(arg0 interface{}) *
 }
 
 // DeleteKeyPairWithContext mocks base method
-func (m *MockLightsailAPI) DeleteKeyPairWithContext(arg0 aws.Context, arg1 *lightsail.DeleteKeyPairInput, arg2 ...request.Option) (*lightsail.DeleteKeyPairOutput, error) {
+func (m *MockLightsailAPI) DeleteKeyPairWithContext(arg0 context.Context, arg1 *lightsail.DeleteKeyPairInput, arg2 ...request.Option) (*lightsail.DeleteKeyPairOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1546,7 +1546,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteLoadBalancerTlsCertificateRequest(
 }
 
 // DeleteLoadBalancerTlsCertificateWithContext mocks base method
-func (m *MockLightsailAPI) DeleteLoadBalancerTlsCertificateWithContext(arg0 aws.Context, arg1 *lightsail.DeleteLoadBalancerTlsCertificateInput, arg2 ...request.Option) (*lightsail.DeleteLoadBalancerTlsCertificateOutput, error) {
+func (m *MockLightsailAPI) DeleteLoadBalancerTlsCertificateWithContext(arg0 context.Context, arg1 *lightsail.DeleteLoadBalancerTlsCertificateInput, arg2 ...request.Option) (*lightsail.DeleteLoadBalancerTlsCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteLoadBalancerTlsCertificateWithCont
 }
 
 // DeleteLoadBalancerWithContext mocks base method
-func (m *MockLightsailAPI) DeleteLoadBalancerWithContext(arg0 aws.Context, arg1 *lightsail.DeleteLoadBalancerInput, arg2 ...request.Option) (*lightsail.DeleteLoadBalancerOutput, error) {
+func (m *MockLightsailAPI) DeleteLoadBalancerWithContext(arg0 context.Context, arg1 *lightsail.DeleteLoadBalancerInput, arg2 ...request.Option) (*lightsail.DeleteLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1646,7 +1646,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteRelationalDatabaseSnapshotRequest(
 }
 
 // DeleteRelationalDatabaseSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) DeleteRelationalDatabaseSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.DeleteRelationalDatabaseSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteRelationalDatabaseSnapshotOutput, error) {
+func (m *MockLightsailAPI) DeleteRelationalDatabaseSnapshotWithContext(arg0 context.Context, arg1 *lightsail.DeleteRelationalDatabaseSnapshotInput, arg2 ...request.Option) (*lightsail.DeleteRelationalDatabaseSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockLightsailAPIMockRecorder) DeleteRelationalDatabaseSnapshotWithCont
 }
 
 // DeleteRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) DeleteRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.DeleteRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.DeleteRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) DeleteRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.DeleteRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.DeleteRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockLightsailAPIMockRecorder) DetachDiskRequest(arg0 interface{}) *gom
 }
 
 // DetachDiskWithContext mocks base method
-func (m *MockLightsailAPI) DetachDiskWithContext(arg0 aws.Context, arg1 *lightsail.DetachDiskInput, arg2 ...request.Option) (*lightsail.DetachDiskOutput, error) {
+func (m *MockLightsailAPI) DetachDiskWithContext(arg0 context.Context, arg1 *lightsail.DetachDiskInput, arg2 ...request.Option) (*lightsail.DetachDiskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockLightsailAPIMockRecorder) DetachInstancesFromLoadBalancerRequest(a
 }
 
 // DetachInstancesFromLoadBalancerWithContext mocks base method
-func (m *MockLightsailAPI) DetachInstancesFromLoadBalancerWithContext(arg0 aws.Context, arg1 *lightsail.DetachInstancesFromLoadBalancerInput, arg2 ...request.Option) (*lightsail.DetachInstancesFromLoadBalancerOutput, error) {
+func (m *MockLightsailAPI) DetachInstancesFromLoadBalancerWithContext(arg0 context.Context, arg1 *lightsail.DetachInstancesFromLoadBalancerInput, arg2 ...request.Option) (*lightsail.DetachInstancesFromLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockLightsailAPIMockRecorder) DetachStaticIpRequest(arg0 interface{}) 
 }
 
 // DetachStaticIpWithContext mocks base method
-func (m *MockLightsailAPI) DetachStaticIpWithContext(arg0 aws.Context, arg1 *lightsail.DetachStaticIpInput, arg2 ...request.Option) (*lightsail.DetachStaticIpOutput, error) {
+func (m *MockLightsailAPI) DetachStaticIpWithContext(arg0 context.Context, arg1 *lightsail.DetachStaticIpInput, arg2 ...request.Option) (*lightsail.DetachStaticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockLightsailAPIMockRecorder) DownloadDefaultKeyPairRequest(arg0 inter
 }
 
 // DownloadDefaultKeyPairWithContext mocks base method
-func (m *MockLightsailAPI) DownloadDefaultKeyPairWithContext(arg0 aws.Context, arg1 *lightsail.DownloadDefaultKeyPairInput, arg2 ...request.Option) (*lightsail.DownloadDefaultKeyPairOutput, error) {
+func (m *MockLightsailAPI) DownloadDefaultKeyPairWithContext(arg0 context.Context, arg1 *lightsail.DownloadDefaultKeyPairInput, arg2 ...request.Option) (*lightsail.DownloadDefaultKeyPairOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockLightsailAPIMockRecorder) ExportSnapshotRequest(arg0 interface{}) 
 }
 
 // ExportSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) ExportSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.ExportSnapshotInput, arg2 ...request.Option) (*lightsail.ExportSnapshotOutput, error) {
+func (m *MockLightsailAPI) ExportSnapshotWithContext(arg0 context.Context, arg1 *lightsail.ExportSnapshotInput, arg2 ...request.Option) (*lightsail.ExportSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockLightsailAPIMockRecorder) GetActiveNamesRequest(arg0 interface{}) 
 }
 
 // GetActiveNamesWithContext mocks base method
-func (m *MockLightsailAPI) GetActiveNamesWithContext(arg0 aws.Context, arg1 *lightsail.GetActiveNamesInput, arg2 ...request.Option) (*lightsail.GetActiveNamesOutput, error) {
+func (m *MockLightsailAPI) GetActiveNamesWithContext(arg0 context.Context, arg1 *lightsail.GetActiveNamesInput, arg2 ...request.Option) (*lightsail.GetActiveNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockLightsailAPIMockRecorder) GetBlueprintsRequest(arg0 interface{}) *
 }
 
 // GetBlueprintsWithContext mocks base method
-func (m *MockLightsailAPI) GetBlueprintsWithContext(arg0 aws.Context, arg1 *lightsail.GetBlueprintsInput, arg2 ...request.Option) (*lightsail.GetBlueprintsOutput, error) {
+func (m *MockLightsailAPI) GetBlueprintsWithContext(arg0 context.Context, arg1 *lightsail.GetBlueprintsInput, arg2 ...request.Option) (*lightsail.GetBlueprintsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockLightsailAPIMockRecorder) GetBundlesRequest(arg0 interface{}) *gom
 }
 
 // GetBundlesWithContext mocks base method
-func (m *MockLightsailAPI) GetBundlesWithContext(arg0 aws.Context, arg1 *lightsail.GetBundlesInput, arg2 ...request.Option) (*lightsail.GetBundlesOutput, error) {
+func (m *MockLightsailAPI) GetBundlesWithContext(arg0 context.Context, arg1 *lightsail.GetBundlesInput, arg2 ...request.Option) (*lightsail.GetBundlesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockLightsailAPIMockRecorder) GetCloudFormationStackRecordsRequest(arg
 }
 
 // GetCloudFormationStackRecordsWithContext mocks base method
-func (m *MockLightsailAPI) GetCloudFormationStackRecordsWithContext(arg0 aws.Context, arg1 *lightsail.GetCloudFormationStackRecordsInput, arg2 ...request.Option) (*lightsail.GetCloudFormationStackRecordsOutput, error) {
+func (m *MockLightsailAPI) GetCloudFormationStackRecordsWithContext(arg0 context.Context, arg1 *lightsail.GetCloudFormationStackRecordsInput, arg2 ...request.Option) (*lightsail.GetCloudFormationStackRecordsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2196,7 +2196,7 @@ func (mr *MockLightsailAPIMockRecorder) GetDiskSnapshotRequest(arg0 interface{})
 }
 
 // GetDiskSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) GetDiskSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.GetDiskSnapshotInput, arg2 ...request.Option) (*lightsail.GetDiskSnapshotOutput, error) {
+func (m *MockLightsailAPI) GetDiskSnapshotWithContext(arg0 context.Context, arg1 *lightsail.GetDiskSnapshotInput, arg2 ...request.Option) (*lightsail.GetDiskSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2246,7 +2246,7 @@ func (mr *MockLightsailAPIMockRecorder) GetDiskSnapshotsRequest(arg0 interface{}
 }
 
 // GetDiskSnapshotsWithContext mocks base method
-func (m *MockLightsailAPI) GetDiskSnapshotsWithContext(arg0 aws.Context, arg1 *lightsail.GetDiskSnapshotsInput, arg2 ...request.Option) (*lightsail.GetDiskSnapshotsOutput, error) {
+func (m *MockLightsailAPI) GetDiskSnapshotsWithContext(arg0 context.Context, arg1 *lightsail.GetDiskSnapshotsInput, arg2 ...request.Option) (*lightsail.GetDiskSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockLightsailAPIMockRecorder) GetDiskSnapshotsWithContext(arg0, arg1 i
 }
 
 // GetDiskWithContext mocks base method
-func (m *MockLightsailAPI) GetDiskWithContext(arg0 aws.Context, arg1 *lightsail.GetDiskInput, arg2 ...request.Option) (*lightsail.GetDiskOutput, error) {
+func (m *MockLightsailAPI) GetDiskWithContext(arg0 context.Context, arg1 *lightsail.GetDiskInput, arg2 ...request.Option) (*lightsail.GetDiskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2316,7 +2316,7 @@ func (mr *MockLightsailAPIMockRecorder) GetDisksRequest(arg0 interface{}) *gomoc
 }
 
 // GetDisksWithContext mocks base method
-func (m *MockLightsailAPI) GetDisksWithContext(arg0 aws.Context, arg1 *lightsail.GetDisksInput, arg2 ...request.Option) (*lightsail.GetDisksOutput, error) {
+func (m *MockLightsailAPI) GetDisksWithContext(arg0 context.Context, arg1 *lightsail.GetDisksInput, arg2 ...request.Option) (*lightsail.GetDisksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2366,7 +2366,7 @@ func (mr *MockLightsailAPIMockRecorder) GetDomainRequest(arg0 interface{}) *gomo
 }
 
 // GetDomainWithContext mocks base method
-func (m *MockLightsailAPI) GetDomainWithContext(arg0 aws.Context, arg1 *lightsail.GetDomainInput, arg2 ...request.Option) (*lightsail.GetDomainOutput, error) {
+func (m *MockLightsailAPI) GetDomainWithContext(arg0 context.Context, arg1 *lightsail.GetDomainInput, arg2 ...request.Option) (*lightsail.GetDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2416,7 +2416,7 @@ func (mr *MockLightsailAPIMockRecorder) GetDomainsRequest(arg0 interface{}) *gom
 }
 
 // GetDomainsWithContext mocks base method
-func (m *MockLightsailAPI) GetDomainsWithContext(arg0 aws.Context, arg1 *lightsail.GetDomainsInput, arg2 ...request.Option) (*lightsail.GetDomainsOutput, error) {
+func (m *MockLightsailAPI) GetDomainsWithContext(arg0 context.Context, arg1 *lightsail.GetDomainsInput, arg2 ...request.Option) (*lightsail.GetDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2466,7 +2466,7 @@ func (mr *MockLightsailAPIMockRecorder) GetExportSnapshotRecordsRequest(arg0 int
 }
 
 // GetExportSnapshotRecordsWithContext mocks base method
-func (m *MockLightsailAPI) GetExportSnapshotRecordsWithContext(arg0 aws.Context, arg1 *lightsail.GetExportSnapshotRecordsInput, arg2 ...request.Option) (*lightsail.GetExportSnapshotRecordsOutput, error) {
+func (m *MockLightsailAPI) GetExportSnapshotRecordsWithContext(arg0 context.Context, arg1 *lightsail.GetExportSnapshotRecordsInput, arg2 ...request.Option) (*lightsail.GetExportSnapshotRecordsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2531,7 +2531,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstanceAccessDetailsRequest(arg0 int
 }
 
 // GetInstanceAccessDetailsWithContext mocks base method
-func (m *MockLightsailAPI) GetInstanceAccessDetailsWithContext(arg0 aws.Context, arg1 *lightsail.GetInstanceAccessDetailsInput, arg2 ...request.Option) (*lightsail.GetInstanceAccessDetailsOutput, error) {
+func (m *MockLightsailAPI) GetInstanceAccessDetailsWithContext(arg0 context.Context, arg1 *lightsail.GetInstanceAccessDetailsInput, arg2 ...request.Option) (*lightsail.GetInstanceAccessDetailsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2581,7 +2581,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstanceMetricDataRequest(arg0 interf
 }
 
 // GetInstanceMetricDataWithContext mocks base method
-func (m *MockLightsailAPI) GetInstanceMetricDataWithContext(arg0 aws.Context, arg1 *lightsail.GetInstanceMetricDataInput, arg2 ...request.Option) (*lightsail.GetInstanceMetricDataOutput, error) {
+func (m *MockLightsailAPI) GetInstanceMetricDataWithContext(arg0 context.Context, arg1 *lightsail.GetInstanceMetricDataInput, arg2 ...request.Option) (*lightsail.GetInstanceMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2631,7 +2631,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstancePortStatesRequest(arg0 interf
 }
 
 // GetInstancePortStatesWithContext mocks base method
-func (m *MockLightsailAPI) GetInstancePortStatesWithContext(arg0 aws.Context, arg1 *lightsail.GetInstancePortStatesInput, arg2 ...request.Option) (*lightsail.GetInstancePortStatesOutput, error) {
+func (m *MockLightsailAPI) GetInstancePortStatesWithContext(arg0 context.Context, arg1 *lightsail.GetInstancePortStatesInput, arg2 ...request.Option) (*lightsail.GetInstancePortStatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2696,7 +2696,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstanceSnapshotRequest(arg0 interfac
 }
 
 // GetInstanceSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) GetInstanceSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.GetInstanceSnapshotInput, arg2 ...request.Option) (*lightsail.GetInstanceSnapshotOutput, error) {
+func (m *MockLightsailAPI) GetInstanceSnapshotWithContext(arg0 context.Context, arg1 *lightsail.GetInstanceSnapshotInput, arg2 ...request.Option) (*lightsail.GetInstanceSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2746,7 +2746,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstanceSnapshotsRequest(arg0 interfa
 }
 
 // GetInstanceSnapshotsWithContext mocks base method
-func (m *MockLightsailAPI) GetInstanceSnapshotsWithContext(arg0 aws.Context, arg1 *lightsail.GetInstanceSnapshotsInput, arg2 ...request.Option) (*lightsail.GetInstanceSnapshotsOutput, error) {
+func (m *MockLightsailAPI) GetInstanceSnapshotsWithContext(arg0 context.Context, arg1 *lightsail.GetInstanceSnapshotsInput, arg2 ...request.Option) (*lightsail.GetInstanceSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2796,7 +2796,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstanceStateRequest(arg0 interface{}
 }
 
 // GetInstanceStateWithContext mocks base method
-func (m *MockLightsailAPI) GetInstanceStateWithContext(arg0 aws.Context, arg1 *lightsail.GetInstanceStateInput, arg2 ...request.Option) (*lightsail.GetInstanceStateOutput, error) {
+func (m *MockLightsailAPI) GetInstanceStateWithContext(arg0 context.Context, arg1 *lightsail.GetInstanceStateInput, arg2 ...request.Option) (*lightsail.GetInstanceStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2816,7 +2816,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstanceStateWithContext(arg0, arg1 i
 }
 
 // GetInstanceWithContext mocks base method
-func (m *MockLightsailAPI) GetInstanceWithContext(arg0 aws.Context, arg1 *lightsail.GetInstanceInput, arg2 ...request.Option) (*lightsail.GetInstanceOutput, error) {
+func (m *MockLightsailAPI) GetInstanceWithContext(arg0 context.Context, arg1 *lightsail.GetInstanceInput, arg2 ...request.Option) (*lightsail.GetInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2866,7 +2866,7 @@ func (mr *MockLightsailAPIMockRecorder) GetInstancesRequest(arg0 interface{}) *g
 }
 
 // GetInstancesWithContext mocks base method
-func (m *MockLightsailAPI) GetInstancesWithContext(arg0 aws.Context, arg1 *lightsail.GetInstancesInput, arg2 ...request.Option) (*lightsail.GetInstancesOutput, error) {
+func (m *MockLightsailAPI) GetInstancesWithContext(arg0 context.Context, arg1 *lightsail.GetInstancesInput, arg2 ...request.Option) (*lightsail.GetInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2916,7 +2916,7 @@ func (mr *MockLightsailAPIMockRecorder) GetKeyPairRequest(arg0 interface{}) *gom
 }
 
 // GetKeyPairWithContext mocks base method
-func (m *MockLightsailAPI) GetKeyPairWithContext(arg0 aws.Context, arg1 *lightsail.GetKeyPairInput, arg2 ...request.Option) (*lightsail.GetKeyPairOutput, error) {
+func (m *MockLightsailAPI) GetKeyPairWithContext(arg0 context.Context, arg1 *lightsail.GetKeyPairInput, arg2 ...request.Option) (*lightsail.GetKeyPairOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2966,7 +2966,7 @@ func (mr *MockLightsailAPIMockRecorder) GetKeyPairsRequest(arg0 interface{}) *go
 }
 
 // GetKeyPairsWithContext mocks base method
-func (m *MockLightsailAPI) GetKeyPairsWithContext(arg0 aws.Context, arg1 *lightsail.GetKeyPairsInput, arg2 ...request.Option) (*lightsail.GetKeyPairsOutput, error) {
+func (m *MockLightsailAPI) GetKeyPairsWithContext(arg0 context.Context, arg1 *lightsail.GetKeyPairsInput, arg2 ...request.Option) (*lightsail.GetKeyPairsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3031,7 +3031,7 @@ func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerMetricDataRequest(arg0 in
 }
 
 // GetLoadBalancerMetricDataWithContext mocks base method
-func (m *MockLightsailAPI) GetLoadBalancerMetricDataWithContext(arg0 aws.Context, arg1 *lightsail.GetLoadBalancerMetricDataInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerMetricDataOutput, error) {
+func (m *MockLightsailAPI) GetLoadBalancerMetricDataWithContext(arg0 context.Context, arg1 *lightsail.GetLoadBalancerMetricDataInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3096,7 +3096,7 @@ func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerTlsCertificatesRequest(ar
 }
 
 // GetLoadBalancerTlsCertificatesWithContext mocks base method
-func (m *MockLightsailAPI) GetLoadBalancerTlsCertificatesWithContext(arg0 aws.Context, arg1 *lightsail.GetLoadBalancerTlsCertificatesInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerTlsCertificatesOutput, error) {
+func (m *MockLightsailAPI) GetLoadBalancerTlsCertificatesWithContext(arg0 context.Context, arg1 *lightsail.GetLoadBalancerTlsCertificatesInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerTlsCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3116,7 +3116,7 @@ func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerTlsCertificatesWithContex
 }
 
 // GetLoadBalancerWithContext mocks base method
-func (m *MockLightsailAPI) GetLoadBalancerWithContext(arg0 aws.Context, arg1 *lightsail.GetLoadBalancerInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerOutput, error) {
+func (m *MockLightsailAPI) GetLoadBalancerWithContext(arg0 context.Context, arg1 *lightsail.GetLoadBalancerInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3166,7 +3166,7 @@ func (mr *MockLightsailAPIMockRecorder) GetLoadBalancersRequest(arg0 interface{}
 }
 
 // GetLoadBalancersWithContext mocks base method
-func (m *MockLightsailAPI) GetLoadBalancersWithContext(arg0 aws.Context, arg1 *lightsail.GetLoadBalancersInput, arg2 ...request.Option) (*lightsail.GetLoadBalancersOutput, error) {
+func (m *MockLightsailAPI) GetLoadBalancersWithContext(arg0 context.Context, arg1 *lightsail.GetLoadBalancersInput, arg2 ...request.Option) (*lightsail.GetLoadBalancersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3216,7 +3216,7 @@ func (mr *MockLightsailAPIMockRecorder) GetOperationRequest(arg0 interface{}) *g
 }
 
 // GetOperationWithContext mocks base method
-func (m *MockLightsailAPI) GetOperationWithContext(arg0 aws.Context, arg1 *lightsail.GetOperationInput, arg2 ...request.Option) (*lightsail.GetOperationOutput, error) {
+func (m *MockLightsailAPI) GetOperationWithContext(arg0 context.Context, arg1 *lightsail.GetOperationInput, arg2 ...request.Option) (*lightsail.GetOperationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3281,7 +3281,7 @@ func (mr *MockLightsailAPIMockRecorder) GetOperationsForResourceRequest(arg0 int
 }
 
 // GetOperationsForResourceWithContext mocks base method
-func (m *MockLightsailAPI) GetOperationsForResourceWithContext(arg0 aws.Context, arg1 *lightsail.GetOperationsForResourceInput, arg2 ...request.Option) (*lightsail.GetOperationsForResourceOutput, error) {
+func (m *MockLightsailAPI) GetOperationsForResourceWithContext(arg0 context.Context, arg1 *lightsail.GetOperationsForResourceInput, arg2 ...request.Option) (*lightsail.GetOperationsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3316,7 +3316,7 @@ func (mr *MockLightsailAPIMockRecorder) GetOperationsRequest(arg0 interface{}) *
 }
 
 // GetOperationsWithContext mocks base method
-func (m *MockLightsailAPI) GetOperationsWithContext(arg0 aws.Context, arg1 *lightsail.GetOperationsInput, arg2 ...request.Option) (*lightsail.GetOperationsOutput, error) {
+func (m *MockLightsailAPI) GetOperationsWithContext(arg0 context.Context, arg1 *lightsail.GetOperationsInput, arg2 ...request.Option) (*lightsail.GetOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3366,7 +3366,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRegionsRequest(arg0 interface{}) *gom
 }
 
 // GetRegionsWithContext mocks base method
-func (m *MockLightsailAPI) GetRegionsWithContext(arg0 aws.Context, arg1 *lightsail.GetRegionsInput, arg2 ...request.Option) (*lightsail.GetRegionsOutput, error) {
+func (m *MockLightsailAPI) GetRegionsWithContext(arg0 context.Context, arg1 *lightsail.GetRegionsInput, arg2 ...request.Option) (*lightsail.GetRegionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3431,7 +3431,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseBlueprintsRequest(a
 }
 
 // GetRelationalDatabaseBlueprintsWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseBlueprintsWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseBlueprintsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseBlueprintsOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseBlueprintsWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseBlueprintsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseBlueprintsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3481,7 +3481,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseBundlesRequest(arg0
 }
 
 // GetRelationalDatabaseBundlesWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseBundlesWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseBundlesInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseBundlesOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseBundlesWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseBundlesInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseBundlesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3531,7 +3531,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseEventsRequest(arg0 
 }
 
 // GetRelationalDatabaseEventsWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseEventsWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseEventsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseEventsOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseEventsWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseEventsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3581,7 +3581,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseLogEventsRequest(ar
 }
 
 // GetRelationalDatabaseLogEventsWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseLogEventsWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseLogEventsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseLogEventsOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseLogEventsWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseLogEventsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseLogEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3631,7 +3631,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseLogStreamsRequest(a
 }
 
 // GetRelationalDatabaseLogStreamsWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseLogStreamsWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseLogStreamsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseLogStreamsOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseLogStreamsWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseLogStreamsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseLogStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3681,7 +3681,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseMasterUserPasswordR
 }
 
 // GetRelationalDatabaseMasterUserPasswordWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseMasterUserPasswordWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseMasterUserPasswordInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseMasterUserPasswordOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseMasterUserPasswordWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseMasterUserPasswordInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseMasterUserPasswordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3731,7 +3731,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseMetricDataRequest(a
 }
 
 // GetRelationalDatabaseMetricDataWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseMetricDataWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseMetricDataInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseMetricDataOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseMetricDataWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseMetricDataInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3781,7 +3781,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseParametersRequest(a
 }
 
 // GetRelationalDatabaseParametersWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseParametersWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseParametersInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseParametersOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseParametersWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseParametersInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3846,7 +3846,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseSnapshotRequest(arg
 }
 
 // GetRelationalDatabaseSnapshotWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseSnapshotWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseSnapshotInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseSnapshotOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseSnapshotWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseSnapshotInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3896,7 +3896,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseSnapshotsRequest(ar
 }
 
 // GetRelationalDatabaseSnapshotsWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseSnapshotsWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseSnapshotsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseSnapshotsOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseSnapshotsWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseSnapshotsInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3916,7 +3916,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabaseSnapshotsWithContex
 }
 
 // GetRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3966,7 +3966,7 @@ func (mr *MockLightsailAPIMockRecorder) GetRelationalDatabasesRequest(arg0 inter
 }
 
 // GetRelationalDatabasesWithContext mocks base method
-func (m *MockLightsailAPI) GetRelationalDatabasesWithContext(arg0 aws.Context, arg1 *lightsail.GetRelationalDatabasesInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabasesOutput, error) {
+func (m *MockLightsailAPI) GetRelationalDatabasesWithContext(arg0 context.Context, arg1 *lightsail.GetRelationalDatabasesInput, arg2 ...request.Option) (*lightsail.GetRelationalDatabasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4016,7 +4016,7 @@ func (mr *MockLightsailAPIMockRecorder) GetStaticIpRequest(arg0 interface{}) *go
 }
 
 // GetStaticIpWithContext mocks base method
-func (m *MockLightsailAPI) GetStaticIpWithContext(arg0 aws.Context, arg1 *lightsail.GetStaticIpInput, arg2 ...request.Option) (*lightsail.GetStaticIpOutput, error) {
+func (m *MockLightsailAPI) GetStaticIpWithContext(arg0 context.Context, arg1 *lightsail.GetStaticIpInput, arg2 ...request.Option) (*lightsail.GetStaticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4066,7 +4066,7 @@ func (mr *MockLightsailAPIMockRecorder) GetStaticIpsRequest(arg0 interface{}) *g
 }
 
 // GetStaticIpsWithContext mocks base method
-func (m *MockLightsailAPI) GetStaticIpsWithContext(arg0 aws.Context, arg1 *lightsail.GetStaticIpsInput, arg2 ...request.Option) (*lightsail.GetStaticIpsOutput, error) {
+func (m *MockLightsailAPI) GetStaticIpsWithContext(arg0 context.Context, arg1 *lightsail.GetStaticIpsInput, arg2 ...request.Option) (*lightsail.GetStaticIpsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4116,7 +4116,7 @@ func (mr *MockLightsailAPIMockRecorder) ImportKeyPairRequest(arg0 interface{}) *
 }
 
 // ImportKeyPairWithContext mocks base method
-func (m *MockLightsailAPI) ImportKeyPairWithContext(arg0 aws.Context, arg1 *lightsail.ImportKeyPairInput, arg2 ...request.Option) (*lightsail.ImportKeyPairOutput, error) {
+func (m *MockLightsailAPI) ImportKeyPairWithContext(arg0 context.Context, arg1 *lightsail.ImportKeyPairInput, arg2 ...request.Option) (*lightsail.ImportKeyPairOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4166,7 +4166,7 @@ func (mr *MockLightsailAPIMockRecorder) IsVpcPeeredRequest(arg0 interface{}) *go
 }
 
 // IsVpcPeeredWithContext mocks base method
-func (m *MockLightsailAPI) IsVpcPeeredWithContext(arg0 aws.Context, arg1 *lightsail.IsVpcPeeredInput, arg2 ...request.Option) (*lightsail.IsVpcPeeredOutput, error) {
+func (m *MockLightsailAPI) IsVpcPeeredWithContext(arg0 context.Context, arg1 *lightsail.IsVpcPeeredInput, arg2 ...request.Option) (*lightsail.IsVpcPeeredOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4216,7 +4216,7 @@ func (mr *MockLightsailAPIMockRecorder) OpenInstancePublicPortsRequest(arg0 inte
 }
 
 // OpenInstancePublicPortsWithContext mocks base method
-func (m *MockLightsailAPI) OpenInstancePublicPortsWithContext(arg0 aws.Context, arg1 *lightsail.OpenInstancePublicPortsInput, arg2 ...request.Option) (*lightsail.OpenInstancePublicPortsOutput, error) {
+func (m *MockLightsailAPI) OpenInstancePublicPortsWithContext(arg0 context.Context, arg1 *lightsail.OpenInstancePublicPortsInput, arg2 ...request.Option) (*lightsail.OpenInstancePublicPortsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4266,7 +4266,7 @@ func (mr *MockLightsailAPIMockRecorder) PeerVpcRequest(arg0 interface{}) *gomock
 }
 
 // PeerVpcWithContext mocks base method
-func (m *MockLightsailAPI) PeerVpcWithContext(arg0 aws.Context, arg1 *lightsail.PeerVpcInput, arg2 ...request.Option) (*lightsail.PeerVpcOutput, error) {
+func (m *MockLightsailAPI) PeerVpcWithContext(arg0 context.Context, arg1 *lightsail.PeerVpcInput, arg2 ...request.Option) (*lightsail.PeerVpcOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4316,7 +4316,7 @@ func (mr *MockLightsailAPIMockRecorder) PutInstancePublicPortsRequest(arg0 inter
 }
 
 // PutInstancePublicPortsWithContext mocks base method
-func (m *MockLightsailAPI) PutInstancePublicPortsWithContext(arg0 aws.Context, arg1 *lightsail.PutInstancePublicPortsInput, arg2 ...request.Option) (*lightsail.PutInstancePublicPortsOutput, error) {
+func (m *MockLightsailAPI) PutInstancePublicPortsWithContext(arg0 context.Context, arg1 *lightsail.PutInstancePublicPortsInput, arg2 ...request.Option) (*lightsail.PutInstancePublicPortsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4366,7 +4366,7 @@ func (mr *MockLightsailAPIMockRecorder) RebootInstanceRequest(arg0 interface{}) 
 }
 
 // RebootInstanceWithContext mocks base method
-func (m *MockLightsailAPI) RebootInstanceWithContext(arg0 aws.Context, arg1 *lightsail.RebootInstanceInput, arg2 ...request.Option) (*lightsail.RebootInstanceOutput, error) {
+func (m *MockLightsailAPI) RebootInstanceWithContext(arg0 context.Context, arg1 *lightsail.RebootInstanceInput, arg2 ...request.Option) (*lightsail.RebootInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4416,7 +4416,7 @@ func (mr *MockLightsailAPIMockRecorder) RebootRelationalDatabaseRequest(arg0 int
 }
 
 // RebootRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) RebootRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.RebootRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.RebootRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) RebootRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.RebootRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.RebootRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4466,7 +4466,7 @@ func (mr *MockLightsailAPIMockRecorder) ReleaseStaticIpRequest(arg0 interface{})
 }
 
 // ReleaseStaticIpWithContext mocks base method
-func (m *MockLightsailAPI) ReleaseStaticIpWithContext(arg0 aws.Context, arg1 *lightsail.ReleaseStaticIpInput, arg2 ...request.Option) (*lightsail.ReleaseStaticIpOutput, error) {
+func (m *MockLightsailAPI) ReleaseStaticIpWithContext(arg0 context.Context, arg1 *lightsail.ReleaseStaticIpInput, arg2 ...request.Option) (*lightsail.ReleaseStaticIpOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4516,7 +4516,7 @@ func (mr *MockLightsailAPIMockRecorder) StartInstanceRequest(arg0 interface{}) *
 }
 
 // StartInstanceWithContext mocks base method
-func (m *MockLightsailAPI) StartInstanceWithContext(arg0 aws.Context, arg1 *lightsail.StartInstanceInput, arg2 ...request.Option) (*lightsail.StartInstanceOutput, error) {
+func (m *MockLightsailAPI) StartInstanceWithContext(arg0 context.Context, arg1 *lightsail.StartInstanceInput, arg2 ...request.Option) (*lightsail.StartInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4566,7 +4566,7 @@ func (mr *MockLightsailAPIMockRecorder) StartRelationalDatabaseRequest(arg0 inte
 }
 
 // StartRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) StartRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.StartRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.StartRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) StartRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.StartRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.StartRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4616,7 +4616,7 @@ func (mr *MockLightsailAPIMockRecorder) StopInstanceRequest(arg0 interface{}) *g
 }
 
 // StopInstanceWithContext mocks base method
-func (m *MockLightsailAPI) StopInstanceWithContext(arg0 aws.Context, arg1 *lightsail.StopInstanceInput, arg2 ...request.Option) (*lightsail.StopInstanceOutput, error) {
+func (m *MockLightsailAPI) StopInstanceWithContext(arg0 context.Context, arg1 *lightsail.StopInstanceInput, arg2 ...request.Option) (*lightsail.StopInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4666,7 +4666,7 @@ func (mr *MockLightsailAPIMockRecorder) StopRelationalDatabaseRequest(arg0 inter
 }
 
 // StopRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) StopRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.StopRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.StopRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) StopRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.StopRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.StopRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4716,7 +4716,7 @@ func (mr *MockLightsailAPIMockRecorder) TagResourceRequest(arg0 interface{}) *go
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockLightsailAPI) TagResourceWithContext(arg0 aws.Context, arg1 *lightsail.TagResourceInput, arg2 ...request.Option) (*lightsail.TagResourceOutput, error) {
+func (m *MockLightsailAPI) TagResourceWithContext(arg0 context.Context, arg1 *lightsail.TagResourceInput, arg2 ...request.Option) (*lightsail.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4766,7 +4766,7 @@ func (mr *MockLightsailAPIMockRecorder) UnpeerVpcRequest(arg0 interface{}) *gomo
 }
 
 // UnpeerVpcWithContext mocks base method
-func (m *MockLightsailAPI) UnpeerVpcWithContext(arg0 aws.Context, arg1 *lightsail.UnpeerVpcInput, arg2 ...request.Option) (*lightsail.UnpeerVpcOutput, error) {
+func (m *MockLightsailAPI) UnpeerVpcWithContext(arg0 context.Context, arg1 *lightsail.UnpeerVpcInput, arg2 ...request.Option) (*lightsail.UnpeerVpcOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4816,7 +4816,7 @@ func (mr *MockLightsailAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockLightsailAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *lightsail.UntagResourceInput, arg2 ...request.Option) (*lightsail.UntagResourceOutput, error) {
+func (m *MockLightsailAPI) UntagResourceWithContext(arg0 context.Context, arg1 *lightsail.UntagResourceInput, arg2 ...request.Option) (*lightsail.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4866,7 +4866,7 @@ func (mr *MockLightsailAPIMockRecorder) UpdateDomainEntryRequest(arg0 interface{
 }
 
 // UpdateDomainEntryWithContext mocks base method
-func (m *MockLightsailAPI) UpdateDomainEntryWithContext(arg0 aws.Context, arg1 *lightsail.UpdateDomainEntryInput, arg2 ...request.Option) (*lightsail.UpdateDomainEntryOutput, error) {
+func (m *MockLightsailAPI) UpdateDomainEntryWithContext(arg0 context.Context, arg1 *lightsail.UpdateDomainEntryInput, arg2 ...request.Option) (*lightsail.UpdateDomainEntryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4916,7 +4916,7 @@ func (mr *MockLightsailAPIMockRecorder) UpdateLoadBalancerAttributeRequest(arg0 
 }
 
 // UpdateLoadBalancerAttributeWithContext mocks base method
-func (m *MockLightsailAPI) UpdateLoadBalancerAttributeWithContext(arg0 aws.Context, arg1 *lightsail.UpdateLoadBalancerAttributeInput, arg2 ...request.Option) (*lightsail.UpdateLoadBalancerAttributeOutput, error) {
+func (m *MockLightsailAPI) UpdateLoadBalancerAttributeWithContext(arg0 context.Context, arg1 *lightsail.UpdateLoadBalancerAttributeInput, arg2 ...request.Option) (*lightsail.UpdateLoadBalancerAttributeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4981,7 +4981,7 @@ func (mr *MockLightsailAPIMockRecorder) UpdateRelationalDatabaseParametersReques
 }
 
 // UpdateRelationalDatabaseParametersWithContext mocks base method
-func (m *MockLightsailAPI) UpdateRelationalDatabaseParametersWithContext(arg0 aws.Context, arg1 *lightsail.UpdateRelationalDatabaseParametersInput, arg2 ...request.Option) (*lightsail.UpdateRelationalDatabaseParametersOutput, error) {
+func (m *MockLightsailAPI) UpdateRelationalDatabaseParametersWithContext(arg0 context.Context, arg1 *lightsail.UpdateRelationalDatabaseParametersInput, arg2 ...request.Option) (*lightsail.UpdateRelationalDatabaseParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5016,7 +5016,7 @@ func (mr *MockLightsailAPIMockRecorder) UpdateRelationalDatabaseRequest(arg0 int
 }
 
 // UpdateRelationalDatabaseWithContext mocks base method
-func (m *MockLightsailAPI) UpdateRelationalDatabaseWithContext(arg0 aws.Context, arg1 *lightsail.UpdateRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.UpdateRelationalDatabaseOutput, error) {
+func (m *MockLightsailAPI) UpdateRelationalDatabaseWithContext(arg0 context.Context, arg1 *lightsail.UpdateRelationalDatabaseInput, arg2 ...request.Option) (*lightsail.UpdateRelationalDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

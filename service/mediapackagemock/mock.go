@@ -5,7 +5,7 @@
 package mediapackagemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediapackage "github.com/aws/aws-sdk-go/service/mediapackage"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaPackageAPIMockRecorder) CreateChannelRequest(arg0 interface{}
 }
 
 // CreateChannelWithContext mocks base method
-func (m *MockMediaPackageAPI) CreateChannelWithContext(arg0 aws.Context, arg1 *mediapackage.CreateChannelInput, arg2 ...request.Option) (*mediapackage.CreateChannelOutput, error) {
+func (m *MockMediaPackageAPI) CreateChannelWithContext(arg0 context.Context, arg1 *mediapackage.CreateChannelInput, arg2 ...request.Option) (*mediapackage.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMediaPackageAPIMockRecorder) CreateOriginEndpointRequest(arg0 inte
 }
 
 // CreateOriginEndpointWithContext mocks base method
-func (m *MockMediaPackageAPI) CreateOriginEndpointWithContext(arg0 aws.Context, arg1 *mediapackage.CreateOriginEndpointInput, arg2 ...request.Option) (*mediapackage.CreateOriginEndpointOutput, error) {
+func (m *MockMediaPackageAPI) CreateOriginEndpointWithContext(arg0 context.Context, arg1 *mediapackage.CreateOriginEndpointInput, arg2 ...request.Option) (*mediapackage.CreateOriginEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMediaPackageAPIMockRecorder) DeleteChannelRequest(arg0 interface{}
 }
 
 // DeleteChannelWithContext mocks base method
-func (m *MockMediaPackageAPI) DeleteChannelWithContext(arg0 aws.Context, arg1 *mediapackage.DeleteChannelInput, arg2 ...request.Option) (*mediapackage.DeleteChannelOutput, error) {
+func (m *MockMediaPackageAPI) DeleteChannelWithContext(arg0 context.Context, arg1 *mediapackage.DeleteChannelInput, arg2 ...request.Option) (*mediapackage.DeleteChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaPackageAPIMockRecorder) DeleteOriginEndpointRequest(arg0 inte
 }
 
 // DeleteOriginEndpointWithContext mocks base method
-func (m *MockMediaPackageAPI) DeleteOriginEndpointWithContext(arg0 aws.Context, arg1 *mediapackage.DeleteOriginEndpointInput, arg2 ...request.Option) (*mediapackage.DeleteOriginEndpointOutput, error) {
+func (m *MockMediaPackageAPI) DeleteOriginEndpointWithContext(arg0 context.Context, arg1 *mediapackage.DeleteOriginEndpointInput, arg2 ...request.Option) (*mediapackage.DeleteOriginEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMediaPackageAPIMockRecorder) DescribeChannelRequest(arg0 interface
 }
 
 // DescribeChannelWithContext mocks base method
-func (m *MockMediaPackageAPI) DescribeChannelWithContext(arg0 aws.Context, arg1 *mediapackage.DescribeChannelInput, arg2 ...request.Option) (*mediapackage.DescribeChannelOutput, error) {
+func (m *MockMediaPackageAPI) DescribeChannelWithContext(arg0 context.Context, arg1 *mediapackage.DescribeChannelInput, arg2 ...request.Option) (*mediapackage.DescribeChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMediaPackageAPIMockRecorder) DescribeOriginEndpointRequest(arg0 in
 }
 
 // DescribeOriginEndpointWithContext mocks base method
-func (m *MockMediaPackageAPI) DescribeOriginEndpointWithContext(arg0 aws.Context, arg1 *mediapackage.DescribeOriginEndpointInput, arg2 ...request.Option) (*mediapackage.DescribeOriginEndpointOutput, error) {
+func (m *MockMediaPackageAPI) DescribeOriginEndpointWithContext(arg0 context.Context, arg1 *mediapackage.DescribeOriginEndpointInput, arg2 ...request.Option) (*mediapackage.DescribeOriginEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockMediaPackageAPIMockRecorder) ListChannelsPages(arg0, arg1 interfac
 }
 
 // ListChannelsPagesWithContext mocks base method
-func (m *MockMediaPackageAPI) ListChannelsPagesWithContext(arg0 aws.Context, arg1 *mediapackage.ListChannelsInput, arg2 func(*mediapackage.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaPackageAPI) ListChannelsPagesWithContext(arg0 context.Context, arg1 *mediapackage.ListChannelsInput, arg2 func(*mediapackage.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockMediaPackageAPIMockRecorder) ListChannelsRequest(arg0 interface{})
 }
 
 // ListChannelsWithContext mocks base method
-func (m *MockMediaPackageAPI) ListChannelsWithContext(arg0 aws.Context, arg1 *mediapackage.ListChannelsInput, arg2 ...request.Option) (*mediapackage.ListChannelsOutput, error) {
+func (m *MockMediaPackageAPI) ListChannelsWithContext(arg0 context.Context, arg1 *mediapackage.ListChannelsInput, arg2 ...request.Option) (*mediapackage.ListChannelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockMediaPackageAPIMockRecorder) ListOriginEndpointsPages(arg0, arg1 i
 }
 
 // ListOriginEndpointsPagesWithContext mocks base method
-func (m *MockMediaPackageAPI) ListOriginEndpointsPagesWithContext(arg0 aws.Context, arg1 *mediapackage.ListOriginEndpointsInput, arg2 func(*mediapackage.ListOriginEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaPackageAPI) ListOriginEndpointsPagesWithContext(arg0 context.Context, arg1 *mediapackage.ListOriginEndpointsInput, arg2 func(*mediapackage.ListOriginEndpointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockMediaPackageAPIMockRecorder) ListOriginEndpointsRequest(arg0 inter
 }
 
 // ListOriginEndpointsWithContext mocks base method
-func (m *MockMediaPackageAPI) ListOriginEndpointsWithContext(arg0 aws.Context, arg1 *mediapackage.ListOriginEndpointsInput, arg2 ...request.Option) (*mediapackage.ListOriginEndpointsOutput, error) {
+func (m *MockMediaPackageAPI) ListOriginEndpointsWithContext(arg0 context.Context, arg1 *mediapackage.ListOriginEndpointsInput, arg2 ...request.Option) (*mediapackage.ListOriginEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockMediaPackageAPIMockRecorder) RotateChannelCredentialsRequest(arg0 
 }
 
 // RotateChannelCredentialsWithContext mocks base method
-func (m *MockMediaPackageAPI) RotateChannelCredentialsWithContext(arg0 aws.Context, arg1 *mediapackage.RotateChannelCredentialsInput, arg2 ...request.Option) (*mediapackage.RotateChannelCredentialsOutput, error) {
+func (m *MockMediaPackageAPI) RotateChannelCredentialsWithContext(arg0 context.Context, arg1 *mediapackage.RotateChannelCredentialsInput, arg2 ...request.Option) (*mediapackage.RotateChannelCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -582,7 +582,7 @@ func (mr *MockMediaPackageAPIMockRecorder) RotateIngestEndpointCredentialsReques
 }
 
 // RotateIngestEndpointCredentialsWithContext mocks base method
-func (m *MockMediaPackageAPI) RotateIngestEndpointCredentialsWithContext(arg0 aws.Context, arg1 *mediapackage.RotateIngestEndpointCredentialsInput, arg2 ...request.Option) (*mediapackage.RotateIngestEndpointCredentialsOutput, error) {
+func (m *MockMediaPackageAPI) RotateIngestEndpointCredentialsWithContext(arg0 context.Context, arg1 *mediapackage.RotateIngestEndpointCredentialsInput, arg2 ...request.Option) (*mediapackage.RotateIngestEndpointCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockMediaPackageAPIMockRecorder) UpdateChannelRequest(arg0 interface{}
 }
 
 // UpdateChannelWithContext mocks base method
-func (m *MockMediaPackageAPI) UpdateChannelWithContext(arg0 aws.Context, arg1 *mediapackage.UpdateChannelInput, arg2 ...request.Option) (*mediapackage.UpdateChannelOutput, error) {
+func (m *MockMediaPackageAPI) UpdateChannelWithContext(arg0 context.Context, arg1 *mediapackage.UpdateChannelInput, arg2 ...request.Option) (*mediapackage.UpdateChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockMediaPackageAPIMockRecorder) UpdateOriginEndpointRequest(arg0 inte
 }
 
 // UpdateOriginEndpointWithContext mocks base method
-func (m *MockMediaPackageAPI) UpdateOriginEndpointWithContext(arg0 aws.Context, arg1 *mediapackage.UpdateOriginEndpointInput, arg2 ...request.Option) (*mediapackage.UpdateOriginEndpointOutput, error) {
+func (m *MockMediaPackageAPI) UpdateOriginEndpointWithContext(arg0 context.Context, arg1 *mediapackage.UpdateOriginEndpointInput, arg2 ...request.Option) (*mediapackage.UpdateOriginEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

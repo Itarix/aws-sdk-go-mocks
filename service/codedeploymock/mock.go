@@ -5,7 +5,7 @@
 package codedeploymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	codedeploy "github.com/aws/aws-sdk-go/service/codedeploy"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCodeDeployAPIMockRecorder) AddTagsToOnPremisesInstancesRequest(arg
 }
 
 // AddTagsToOnPremisesInstancesWithContext mocks base method
-func (m *MockCodeDeployAPI) AddTagsToOnPremisesInstancesWithContext(arg0 aws.Context, arg1 *codedeploy.AddTagsToOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.AddTagsToOnPremisesInstancesOutput, error) {
+func (m *MockCodeDeployAPI) AddTagsToOnPremisesInstancesWithContext(arg0 context.Context, arg1 *codedeploy.AddTagsToOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.AddTagsToOnPremisesInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetApplicationRevisionsRequest(arg
 }
 
 // BatchGetApplicationRevisionsWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetApplicationRevisionsWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetApplicationRevisionsInput, arg2 ...request.Option) (*codedeploy.BatchGetApplicationRevisionsOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetApplicationRevisionsWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetApplicationRevisionsInput, arg2 ...request.Option) (*codedeploy.BatchGetApplicationRevisionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetApplicationsRequest(arg0 interf
 }
 
 // BatchGetApplicationsWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetApplicationsWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetApplicationsInput, arg2 ...request.Option) (*codedeploy.BatchGetApplicationsOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetApplicationsWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetApplicationsInput, arg2 ...request.Option) (*codedeploy.BatchGetApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentGroupsRequest(arg0 in
 }
 
 // BatchGetDeploymentGroupsWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetDeploymentGroupsWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetDeploymentGroupsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentGroupsOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetDeploymentGroupsWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetDeploymentGroupsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentInstancesRequest(arg0
 }
 
 // BatchGetDeploymentInstancesWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetDeploymentInstancesWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetDeploymentInstancesInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentInstancesOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetDeploymentInstancesWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetDeploymentInstancesInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentTargetsRequest(arg0 i
 }
 
 // BatchGetDeploymentTargetsWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetDeploymentTargetsWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetDeploymentTargetsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentTargetsOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetDeploymentTargetsWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetDeploymentTargetsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetDeploymentsRequest(arg0 interfa
 }
 
 // BatchGetDeploymentsWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetDeploymentsWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetDeploymentsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentsOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetDeploymentsWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetDeploymentsInput, arg2 ...request.Option) (*codedeploy.BatchGetDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCodeDeployAPIMockRecorder) BatchGetOnPremisesInstancesRequest(arg0
 }
 
 // BatchGetOnPremisesInstancesWithContext mocks base method
-func (m *MockCodeDeployAPI) BatchGetOnPremisesInstancesWithContext(arg0 aws.Context, arg1 *codedeploy.BatchGetOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.BatchGetOnPremisesInstancesOutput, error) {
+func (m *MockCodeDeployAPI) BatchGetOnPremisesInstancesWithContext(arg0 context.Context, arg1 *codedeploy.BatchGetOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.BatchGetOnPremisesInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ContinueDeploymentRequest(arg0 interfac
 }
 
 // ContinueDeploymentWithContext mocks base method
-func (m *MockCodeDeployAPI) ContinueDeploymentWithContext(arg0 aws.Context, arg1 *codedeploy.ContinueDeploymentInput, arg2 ...request.Option) (*codedeploy.ContinueDeploymentOutput, error) {
+func (m *MockCodeDeployAPI) ContinueDeploymentWithContext(arg0 context.Context, arg1 *codedeploy.ContinueDeploymentInput, arg2 ...request.Option) (*codedeploy.ContinueDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCodeDeployAPIMockRecorder) CreateApplicationRequest(arg0 interface
 }
 
 // CreateApplicationWithContext mocks base method
-func (m *MockCodeDeployAPI) CreateApplicationWithContext(arg0 aws.Context, arg1 *codedeploy.CreateApplicationInput, arg2 ...request.Option) (*codedeploy.CreateApplicationOutput, error) {
+func (m *MockCodeDeployAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *codedeploy.CreateApplicationInput, arg2 ...request.Option) (*codedeploy.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockCodeDeployAPIMockRecorder) CreateDeploymentConfigRequest(arg0 inte
 }
 
 // CreateDeploymentConfigWithContext mocks base method
-func (m *MockCodeDeployAPI) CreateDeploymentConfigWithContext(arg0 aws.Context, arg1 *codedeploy.CreateDeploymentConfigInput, arg2 ...request.Option) (*codedeploy.CreateDeploymentConfigOutput, error) {
+func (m *MockCodeDeployAPI) CreateDeploymentConfigWithContext(arg0 context.Context, arg1 *codedeploy.CreateDeploymentConfigInput, arg2 ...request.Option) (*codedeploy.CreateDeploymentConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockCodeDeployAPIMockRecorder) CreateDeploymentGroupRequest(arg0 inter
 }
 
 // CreateDeploymentGroupWithContext mocks base method
-func (m *MockCodeDeployAPI) CreateDeploymentGroupWithContext(arg0 aws.Context, arg1 *codedeploy.CreateDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.CreateDeploymentGroupOutput, error) {
+func (m *MockCodeDeployAPI) CreateDeploymentGroupWithContext(arg0 context.Context, arg1 *codedeploy.CreateDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.CreateDeploymentGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCodeDeployAPIMockRecorder) CreateDeploymentRequest(arg0 interface{
 }
 
 // CreateDeploymentWithContext mocks base method
-func (m *MockCodeDeployAPI) CreateDeploymentWithContext(arg0 aws.Context, arg1 *codedeploy.CreateDeploymentInput, arg2 ...request.Option) (*codedeploy.CreateDeploymentOutput, error) {
+func (m *MockCodeDeployAPI) CreateDeploymentWithContext(arg0 context.Context, arg1 *codedeploy.CreateDeploymentInput, arg2 ...request.Option) (*codedeploy.CreateDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCodeDeployAPIMockRecorder) DeleteApplicationRequest(arg0 interface
 }
 
 // DeleteApplicationWithContext mocks base method
-func (m *MockCodeDeployAPI) DeleteApplicationWithContext(arg0 aws.Context, arg1 *codedeploy.DeleteApplicationInput, arg2 ...request.Option) (*codedeploy.DeleteApplicationOutput, error) {
+func (m *MockCodeDeployAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *codedeploy.DeleteApplicationInput, arg2 ...request.Option) (*codedeploy.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCodeDeployAPIMockRecorder) DeleteDeploymentConfigRequest(arg0 inte
 }
 
 // DeleteDeploymentConfigWithContext mocks base method
-func (m *MockCodeDeployAPI) DeleteDeploymentConfigWithContext(arg0 aws.Context, arg1 *codedeploy.DeleteDeploymentConfigInput, arg2 ...request.Option) (*codedeploy.DeleteDeploymentConfigOutput, error) {
+func (m *MockCodeDeployAPI) DeleteDeploymentConfigWithContext(arg0 context.Context, arg1 *codedeploy.DeleteDeploymentConfigInput, arg2 ...request.Option) (*codedeploy.DeleteDeploymentConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCodeDeployAPIMockRecorder) DeleteDeploymentGroupRequest(arg0 inter
 }
 
 // DeleteDeploymentGroupWithContext mocks base method
-func (m *MockCodeDeployAPI) DeleteDeploymentGroupWithContext(arg0 aws.Context, arg1 *codedeploy.DeleteDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.DeleteDeploymentGroupOutput, error) {
+func (m *MockCodeDeployAPI) DeleteDeploymentGroupWithContext(arg0 context.Context, arg1 *codedeploy.DeleteDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.DeleteDeploymentGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCodeDeployAPIMockRecorder) DeleteGitHubAccountTokenRequest(arg0 in
 }
 
 // DeleteGitHubAccountTokenWithContext mocks base method
-func (m *MockCodeDeployAPI) DeleteGitHubAccountTokenWithContext(arg0 aws.Context, arg1 *codedeploy.DeleteGitHubAccountTokenInput, arg2 ...request.Option) (*codedeploy.DeleteGitHubAccountTokenOutput, error) {
+func (m *MockCodeDeployAPI) DeleteGitHubAccountTokenWithContext(arg0 context.Context, arg1 *codedeploy.DeleteGitHubAccountTokenInput, arg2 ...request.Option) (*codedeploy.DeleteGitHubAccountTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCodeDeployAPIMockRecorder) DeregisterOnPremisesInstanceRequest(arg
 }
 
 // DeregisterOnPremisesInstanceWithContext mocks base method
-func (m *MockCodeDeployAPI) DeregisterOnPremisesInstanceWithContext(arg0 aws.Context, arg1 *codedeploy.DeregisterOnPremisesInstanceInput, arg2 ...request.Option) (*codedeploy.DeregisterOnPremisesInstanceOutput, error) {
+func (m *MockCodeDeployAPI) DeregisterOnPremisesInstanceWithContext(arg0 context.Context, arg1 *codedeploy.DeregisterOnPremisesInstanceInput, arg2 ...request.Option) (*codedeploy.DeregisterOnPremisesInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -996,7 +996,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetApplicationRevisionRequest(arg0 inte
 }
 
 // GetApplicationRevisionWithContext mocks base method
-func (m *MockCodeDeployAPI) GetApplicationRevisionWithContext(arg0 aws.Context, arg1 *codedeploy.GetApplicationRevisionInput, arg2 ...request.Option) (*codedeploy.GetApplicationRevisionOutput, error) {
+func (m *MockCodeDeployAPI) GetApplicationRevisionWithContext(arg0 context.Context, arg1 *codedeploy.GetApplicationRevisionInput, arg2 ...request.Option) (*codedeploy.GetApplicationRevisionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetApplicationRevisionWithContext(arg0,
 }
 
 // GetApplicationWithContext mocks base method
-func (m *MockCodeDeployAPI) GetApplicationWithContext(arg0 aws.Context, arg1 *codedeploy.GetApplicationInput, arg2 ...request.Option) (*codedeploy.GetApplicationOutput, error) {
+func (m *MockCodeDeployAPI) GetApplicationWithContext(arg0 context.Context, arg1 *codedeploy.GetApplicationInput, arg2 ...request.Option) (*codedeploy.GetApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1081,7 +1081,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentConfigRequest(arg0 interfa
 }
 
 // GetDeploymentConfigWithContext mocks base method
-func (m *MockCodeDeployAPI) GetDeploymentConfigWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentConfigInput, arg2 ...request.Option) (*codedeploy.GetDeploymentConfigOutput, error) {
+func (m *MockCodeDeployAPI) GetDeploymentConfigWithContext(arg0 context.Context, arg1 *codedeploy.GetDeploymentConfigInput, arg2 ...request.Option) (*codedeploy.GetDeploymentConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentGroupRequest(arg0 interfac
 }
 
 // GetDeploymentGroupWithContext mocks base method
-func (m *MockCodeDeployAPI) GetDeploymentGroupWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.GetDeploymentGroupOutput, error) {
+func (m *MockCodeDeployAPI) GetDeploymentGroupWithContext(arg0 context.Context, arg1 *codedeploy.GetDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.GetDeploymentGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1181,7 +1181,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentInstanceRequest(arg0 inter
 }
 
 // GetDeploymentInstanceWithContext mocks base method
-func (m *MockCodeDeployAPI) GetDeploymentInstanceWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentInstanceInput, arg2 ...request.Option) (*codedeploy.GetDeploymentInstanceOutput, error) {
+func (m *MockCodeDeployAPI) GetDeploymentInstanceWithContext(arg0 context.Context, arg1 *codedeploy.GetDeploymentInstanceInput, arg2 ...request.Option) (*codedeploy.GetDeploymentInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1246,7 +1246,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentTargetRequest(arg0 interfa
 }
 
 // GetDeploymentTargetWithContext mocks base method
-func (m *MockCodeDeployAPI) GetDeploymentTargetWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentTargetInput, arg2 ...request.Option) (*codedeploy.GetDeploymentTargetOutput, error) {
+func (m *MockCodeDeployAPI) GetDeploymentTargetWithContext(arg0 context.Context, arg1 *codedeploy.GetDeploymentTargetInput, arg2 ...request.Option) (*codedeploy.GetDeploymentTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetDeploymentTargetWithContext(arg0, ar
 }
 
 // GetDeploymentWithContext mocks base method
-func (m *MockCodeDeployAPI) GetDeploymentWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentInput, arg2 ...request.Option) (*codedeploy.GetDeploymentOutput, error) {
+func (m *MockCodeDeployAPI) GetDeploymentWithContext(arg0 context.Context, arg1 *codedeploy.GetDeploymentInput, arg2 ...request.Option) (*codedeploy.GetDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockCodeDeployAPIMockRecorder) GetOnPremisesInstanceRequest(arg0 inter
 }
 
 // GetOnPremisesInstanceWithContext mocks base method
-func (m *MockCodeDeployAPI) GetOnPremisesInstanceWithContext(arg0 aws.Context, arg1 *codedeploy.GetOnPremisesInstanceInput, arg2 ...request.Option) (*codedeploy.GetOnPremisesInstanceOutput, error) {
+func (m *MockCodeDeployAPI) GetOnPremisesInstanceWithContext(arg0 context.Context, arg1 *codedeploy.GetOnPremisesInstanceInput, arg2 ...request.Option) (*codedeploy.GetOnPremisesInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListApplicationRevisionsPages(arg0, arg
 }
 
 // ListApplicationRevisionsPagesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListApplicationRevisionsPagesWithContext(arg0 aws.Context, arg1 *codedeploy.ListApplicationRevisionsInput, arg2 func(*codedeploy.ListApplicationRevisionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeDeployAPI) ListApplicationRevisionsPagesWithContext(arg0 context.Context, arg1 *codedeploy.ListApplicationRevisionsInput, arg2 func(*codedeploy.ListApplicationRevisionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1399,7 +1399,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListApplicationRevisionsRequest(arg0 in
 }
 
 // ListApplicationRevisionsWithContext mocks base method
-func (m *MockCodeDeployAPI) ListApplicationRevisionsWithContext(arg0 aws.Context, arg1 *codedeploy.ListApplicationRevisionsInput, arg2 ...request.Option) (*codedeploy.ListApplicationRevisionsOutput, error) {
+func (m *MockCodeDeployAPI) ListApplicationRevisionsWithContext(arg0 context.Context, arg1 *codedeploy.ListApplicationRevisionsInput, arg2 ...request.Option) (*codedeploy.ListApplicationRevisionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1448,7 +1448,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListApplicationsPages(arg0, arg1 interf
 }
 
 // ListApplicationsPagesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListApplicationsPagesWithContext(arg0 aws.Context, arg1 *codedeploy.ListApplicationsInput, arg2 func(*codedeploy.ListApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeDeployAPI) ListApplicationsPagesWithContext(arg0 context.Context, arg1 *codedeploy.ListApplicationsInput, arg2 func(*codedeploy.ListApplicationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1482,7 +1482,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListApplicationsRequest(arg0 interface{
 }
 
 // ListApplicationsWithContext mocks base method
-func (m *MockCodeDeployAPI) ListApplicationsWithContext(arg0 aws.Context, arg1 *codedeploy.ListApplicationsInput, arg2 ...request.Option) (*codedeploy.ListApplicationsOutput, error) {
+func (m *MockCodeDeployAPI) ListApplicationsWithContext(arg0 context.Context, arg1 *codedeploy.ListApplicationsInput, arg2 ...request.Option) (*codedeploy.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1531,7 +1531,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentConfigsPages(arg0, arg1 i
 }
 
 // ListDeploymentConfigsPagesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentConfigsPagesWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentConfigsInput, arg2 func(*codedeploy.ListDeploymentConfigsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeDeployAPI) ListDeploymentConfigsPagesWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentConfigsInput, arg2 func(*codedeploy.ListDeploymentConfigsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1565,7 +1565,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentConfigsRequest(arg0 inter
 }
 
 // ListDeploymentConfigsWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentConfigsWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentConfigsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentConfigsOutput, error) {
+func (m *MockCodeDeployAPI) ListDeploymentConfigsWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentConfigsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentConfigsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1614,7 +1614,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentGroupsPages(arg0, arg1 in
 }
 
 // ListDeploymentGroupsPagesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentGroupsPagesWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentGroupsInput, arg2 func(*codedeploy.ListDeploymentGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeDeployAPI) ListDeploymentGroupsPagesWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentGroupsInput, arg2 func(*codedeploy.ListDeploymentGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1648,7 +1648,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentGroupsRequest(arg0 interf
 }
 
 // ListDeploymentGroupsWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentGroupsWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentGroupsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentGroupsOutput, error) {
+func (m *MockCodeDeployAPI) ListDeploymentGroupsWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentGroupsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentInstancesPages(arg0, arg1
 }
 
 // ListDeploymentInstancesPagesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentInstancesPagesWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentInstancesInput, arg2 func(*codedeploy.ListDeploymentInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeDeployAPI) ListDeploymentInstancesPagesWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentInstancesInput, arg2 func(*codedeploy.ListDeploymentInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1731,7 +1731,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentInstancesRequest(arg0 int
 }
 
 // ListDeploymentInstancesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentInstancesWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentInstancesInput, arg2 ...request.Option) (*codedeploy.ListDeploymentInstancesOutput, error) {
+func (m *MockCodeDeployAPI) ListDeploymentInstancesWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentInstancesInput, arg2 ...request.Option) (*codedeploy.ListDeploymentInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentTargetsRequest(arg0 inter
 }
 
 // ListDeploymentTargetsWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentTargetsWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentTargetsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentTargetsOutput, error) {
+func (m *MockCodeDeployAPI) ListDeploymentTargetsWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentTargetsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1830,7 +1830,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentsPages(arg0, arg1 interfa
 }
 
 // ListDeploymentsPagesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentsPagesWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentsInput, arg2 func(*codedeploy.ListDeploymentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeDeployAPI) ListDeploymentsPagesWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentsInput, arg2 func(*codedeploy.ListDeploymentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1864,7 +1864,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListDeploymentsRequest(arg0 interface{}
 }
 
 // ListDeploymentsWithContext mocks base method
-func (m *MockCodeDeployAPI) ListDeploymentsWithContext(arg0 aws.Context, arg1 *codedeploy.ListDeploymentsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentsOutput, error) {
+func (m *MockCodeDeployAPI) ListDeploymentsWithContext(arg0 context.Context, arg1 *codedeploy.ListDeploymentsInput, arg2 ...request.Option) (*codedeploy.ListDeploymentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1914,7 +1914,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListGitHubAccountTokenNamesRequest(arg0
 }
 
 // ListGitHubAccountTokenNamesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListGitHubAccountTokenNamesWithContext(arg0 aws.Context, arg1 *codedeploy.ListGitHubAccountTokenNamesInput, arg2 ...request.Option) (*codedeploy.ListGitHubAccountTokenNamesOutput, error) {
+func (m *MockCodeDeployAPI) ListGitHubAccountTokenNamesWithContext(arg0 context.Context, arg1 *codedeploy.ListGitHubAccountTokenNamesInput, arg2 ...request.Option) (*codedeploy.ListGitHubAccountTokenNamesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1964,7 +1964,7 @@ func (mr *MockCodeDeployAPIMockRecorder) ListOnPremisesInstancesRequest(arg0 int
 }
 
 // ListOnPremisesInstancesWithContext mocks base method
-func (m *MockCodeDeployAPI) ListOnPremisesInstancesWithContext(arg0 aws.Context, arg1 *codedeploy.ListOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.ListOnPremisesInstancesOutput, error) {
+func (m *MockCodeDeployAPI) ListOnPremisesInstancesWithContext(arg0 context.Context, arg1 *codedeploy.ListOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.ListOnPremisesInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2014,7 +2014,7 @@ func (mr *MockCodeDeployAPIMockRecorder) PutLifecycleEventHookExecutionStatusReq
 }
 
 // PutLifecycleEventHookExecutionStatusWithContext mocks base method
-func (m *MockCodeDeployAPI) PutLifecycleEventHookExecutionStatusWithContext(arg0 aws.Context, arg1 *codedeploy.PutLifecycleEventHookExecutionStatusInput, arg2 ...request.Option) (*codedeploy.PutLifecycleEventHookExecutionStatusOutput, error) {
+func (m *MockCodeDeployAPI) PutLifecycleEventHookExecutionStatusWithContext(arg0 context.Context, arg1 *codedeploy.PutLifecycleEventHookExecutionStatusInput, arg2 ...request.Option) (*codedeploy.PutLifecycleEventHookExecutionStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2064,7 +2064,7 @@ func (mr *MockCodeDeployAPIMockRecorder) RegisterApplicationRevisionRequest(arg0
 }
 
 // RegisterApplicationRevisionWithContext mocks base method
-func (m *MockCodeDeployAPI) RegisterApplicationRevisionWithContext(arg0 aws.Context, arg1 *codedeploy.RegisterApplicationRevisionInput, arg2 ...request.Option) (*codedeploy.RegisterApplicationRevisionOutput, error) {
+func (m *MockCodeDeployAPI) RegisterApplicationRevisionWithContext(arg0 context.Context, arg1 *codedeploy.RegisterApplicationRevisionInput, arg2 ...request.Option) (*codedeploy.RegisterApplicationRevisionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2114,7 +2114,7 @@ func (mr *MockCodeDeployAPIMockRecorder) RegisterOnPremisesInstanceRequest(arg0 
 }
 
 // RegisterOnPremisesInstanceWithContext mocks base method
-func (m *MockCodeDeployAPI) RegisterOnPremisesInstanceWithContext(arg0 aws.Context, arg1 *codedeploy.RegisterOnPremisesInstanceInput, arg2 ...request.Option) (*codedeploy.RegisterOnPremisesInstanceOutput, error) {
+func (m *MockCodeDeployAPI) RegisterOnPremisesInstanceWithContext(arg0 context.Context, arg1 *codedeploy.RegisterOnPremisesInstanceInput, arg2 ...request.Option) (*codedeploy.RegisterOnPremisesInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2164,7 +2164,7 @@ func (mr *MockCodeDeployAPIMockRecorder) RemoveTagsFromOnPremisesInstancesReques
 }
 
 // RemoveTagsFromOnPremisesInstancesWithContext mocks base method
-func (m *MockCodeDeployAPI) RemoveTagsFromOnPremisesInstancesWithContext(arg0 aws.Context, arg1 *codedeploy.RemoveTagsFromOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.RemoveTagsFromOnPremisesInstancesOutput, error) {
+func (m *MockCodeDeployAPI) RemoveTagsFromOnPremisesInstancesWithContext(arg0 context.Context, arg1 *codedeploy.RemoveTagsFromOnPremisesInstancesInput, arg2 ...request.Option) (*codedeploy.RemoveTagsFromOnPremisesInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2214,7 +2214,7 @@ func (mr *MockCodeDeployAPIMockRecorder) SkipWaitTimeForInstanceTerminationReque
 }
 
 // SkipWaitTimeForInstanceTerminationWithContext mocks base method
-func (m *MockCodeDeployAPI) SkipWaitTimeForInstanceTerminationWithContext(arg0 aws.Context, arg1 *codedeploy.SkipWaitTimeForInstanceTerminationInput, arg2 ...request.Option) (*codedeploy.SkipWaitTimeForInstanceTerminationOutput, error) {
+func (m *MockCodeDeployAPI) SkipWaitTimeForInstanceTerminationWithContext(arg0 context.Context, arg1 *codedeploy.SkipWaitTimeForInstanceTerminationInput, arg2 ...request.Option) (*codedeploy.SkipWaitTimeForInstanceTerminationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2264,7 +2264,7 @@ func (mr *MockCodeDeployAPIMockRecorder) StopDeploymentRequest(arg0 interface{})
 }
 
 // StopDeploymentWithContext mocks base method
-func (m *MockCodeDeployAPI) StopDeploymentWithContext(arg0 aws.Context, arg1 *codedeploy.StopDeploymentInput, arg2 ...request.Option) (*codedeploy.StopDeploymentOutput, error) {
+func (m *MockCodeDeployAPI) StopDeploymentWithContext(arg0 context.Context, arg1 *codedeploy.StopDeploymentInput, arg2 ...request.Option) (*codedeploy.StopDeploymentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2314,7 +2314,7 @@ func (mr *MockCodeDeployAPIMockRecorder) UpdateApplicationRequest(arg0 interface
 }
 
 // UpdateApplicationWithContext mocks base method
-func (m *MockCodeDeployAPI) UpdateApplicationWithContext(arg0 aws.Context, arg1 *codedeploy.UpdateApplicationInput, arg2 ...request.Option) (*codedeploy.UpdateApplicationOutput, error) {
+func (m *MockCodeDeployAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *codedeploy.UpdateApplicationInput, arg2 ...request.Option) (*codedeploy.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2364,7 +2364,7 @@ func (mr *MockCodeDeployAPIMockRecorder) UpdateDeploymentGroupRequest(arg0 inter
 }
 
 // UpdateDeploymentGroupWithContext mocks base method
-func (m *MockCodeDeployAPI) UpdateDeploymentGroupWithContext(arg0 aws.Context, arg1 *codedeploy.UpdateDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.UpdateDeploymentGroupOutput, error) {
+func (m *MockCodeDeployAPI) UpdateDeploymentGroupWithContext(arg0 context.Context, arg1 *codedeploy.UpdateDeploymentGroupInput, arg2 ...request.Option) (*codedeploy.UpdateDeploymentGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2398,7 +2398,7 @@ func (mr *MockCodeDeployAPIMockRecorder) WaitUntilDeploymentSuccessful(arg0 inte
 }
 
 // WaitUntilDeploymentSuccessfulWithContext mocks base method
-func (m *MockCodeDeployAPI) WaitUntilDeploymentSuccessfulWithContext(arg0 aws.Context, arg1 *codedeploy.GetDeploymentInput, arg2 ...request.WaiterOption) error {
+func (m *MockCodeDeployAPI) WaitUntilDeploymentSuccessfulWithContext(arg0 context.Context, arg1 *codedeploy.GetDeploymentInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package iot1clickprojectsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iot1clickprojects "github.com/aws/aws-sdk-go/service/iot1clickprojects"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) AssociateDeviceWithPlacementRequ
 }
 
 // AssociateDeviceWithPlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) AssociateDeviceWithPlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.AssociateDeviceWithPlacementInput, arg2 ...request.Option) (*iot1clickprojects.AssociateDeviceWithPlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) AssociateDeviceWithPlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.AssociateDeviceWithPlacementInput, arg2 ...request.Option) (*iot1clickprojects.AssociateDeviceWithPlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) CreatePlacementRequest(arg0 inte
 }
 
 // CreatePlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) CreatePlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.CreatePlacementInput, arg2 ...request.Option) (*iot1clickprojects.CreatePlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) CreatePlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.CreatePlacementInput, arg2 ...request.Option) (*iot1clickprojects.CreatePlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) CreateProjectRequest(arg0 interf
 }
 
 // CreateProjectWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *iot1clickprojects.CreateProjectInput, arg2 ...request.Option) (*iot1clickprojects.CreateProjectOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) CreateProjectWithContext(arg0 context.Context, arg1 *iot1clickprojects.CreateProjectInput, arg2 ...request.Option) (*iot1clickprojects.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) DeletePlacementRequest(arg0 inte
 }
 
 // DeletePlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) DeletePlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.DeletePlacementInput, arg2 ...request.Option) (*iot1clickprojects.DeletePlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) DeletePlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.DeletePlacementInput, arg2 ...request.Option) (*iot1clickprojects.DeletePlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) DeleteProjectRequest(arg0 interf
 }
 
 // DeleteProjectWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *iot1clickprojects.DeleteProjectInput, arg2 ...request.Option) (*iot1clickprojects.DeleteProjectOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *iot1clickprojects.DeleteProjectInput, arg2 ...request.Option) (*iot1clickprojects.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) DescribePlacementRequest(arg0 in
 }
 
 // DescribePlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) DescribePlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.DescribePlacementInput, arg2 ...request.Option) (*iot1clickprojects.DescribePlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) DescribePlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.DescribePlacementInput, arg2 ...request.Option) (*iot1clickprojects.DescribePlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) DescribeProjectRequest(arg0 inte
 }
 
 // DescribeProjectWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) DescribeProjectWithContext(arg0 aws.Context, arg1 *iot1clickprojects.DescribeProjectInput, arg2 ...request.Option) (*iot1clickprojects.DescribeProjectOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) DescribeProjectWithContext(arg0 context.Context, arg1 *iot1clickprojects.DescribeProjectInput, arg2 ...request.Option) (*iot1clickprojects.DescribeProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) DisassociateDeviceFromPlacementR
 }
 
 // DisassociateDeviceFromPlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) DisassociateDeviceFromPlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.DisassociateDeviceFromPlacementInput, arg2 ...request.Option) (*iot1clickprojects.DisassociateDeviceFromPlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) DisassociateDeviceFromPlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.DisassociateDeviceFromPlacementInput, arg2 ...request.Option) (*iot1clickprojects.DisassociateDeviceFromPlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) GetDevicesInPlacementRequest(arg
 }
 
 // GetDevicesInPlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) GetDevicesInPlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.GetDevicesInPlacementInput, arg2 ...request.Option) (*iot1clickprojects.GetDevicesInPlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) GetDevicesInPlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.GetDevicesInPlacementInput, arg2 ...request.Option) (*iot1clickprojects.GetDevicesInPlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) ListPlacementsRequest(arg0 inter
 }
 
 // ListPlacementsWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) ListPlacementsWithContext(arg0 aws.Context, arg1 *iot1clickprojects.ListPlacementsInput, arg2 ...request.Option) (*iot1clickprojects.ListPlacementsOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) ListPlacementsWithContext(arg0 context.Context, arg1 *iot1clickprojects.ListPlacementsInput, arg2 ...request.Option) (*iot1clickprojects.ListPlacementsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) ListProjectsRequest(arg0 interfa
 }
 
 // ListProjectsWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *iot1clickprojects.ListProjectsInput, arg2 ...request.Option) (*iot1clickprojects.ListProjectsOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) ListProjectsWithContext(arg0 context.Context, arg1 *iot1clickprojects.ListProjectsInput, arg2 ...request.Option) (*iot1clickprojects.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) UpdatePlacementRequest(arg0 inte
 }
 
 // UpdatePlacementWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) UpdatePlacementWithContext(arg0 aws.Context, arg1 *iot1clickprojects.UpdatePlacementInput, arg2 ...request.Option) (*iot1clickprojects.UpdatePlacementOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) UpdatePlacementWithContext(arg0 context.Context, arg1 *iot1clickprojects.UpdatePlacementInput, arg2 ...request.Option) (*iot1clickprojects.UpdatePlacementOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockIoT1ClickProjectsAPIMockRecorder) UpdateProjectRequest(arg0 interf
 }
 
 // UpdateProjectWithContext mocks base method
-func (m *MockIoT1ClickProjectsAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *iot1clickprojects.UpdateProjectInput, arg2 ...request.Option) (*iot1clickprojects.UpdateProjectOutput, error) {
+func (m *MockIoT1ClickProjectsAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *iot1clickprojects.UpdateProjectInput, arg2 ...request.Option) (*iot1clickprojects.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

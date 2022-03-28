@@ -5,7 +5,7 @@
 package sagemakermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sagemaker "github.com/aws/aws-sdk-go/service/sagemaker"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSageMakerAPIMockRecorder) AddTagsRequest(arg0 interface{}) *gomock
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockSageMakerAPI) AddTagsWithContext(arg0 aws.Context, arg1 *sagemaker.AddTagsInput, arg2 ...request.Option) (*sagemaker.AddTagsOutput, error) {
+func (m *MockSageMakerAPI) AddTagsWithContext(arg0 context.Context, arg1 *sagemaker.AddTagsInput, arg2 ...request.Option) (*sagemaker.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateAlgorithmRequest(arg0 interface{})
 }
 
 // CreateAlgorithmWithContext mocks base method
-func (m *MockSageMakerAPI) CreateAlgorithmWithContext(arg0 aws.Context, arg1 *sagemaker.CreateAlgorithmInput, arg2 ...request.Option) (*sagemaker.CreateAlgorithmOutput, error) {
+func (m *MockSageMakerAPI) CreateAlgorithmWithContext(arg0 context.Context, arg1 *sagemaker.CreateAlgorithmInput, arg2 ...request.Option) (*sagemaker.CreateAlgorithmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateCodeRepositoryRequest(arg0 interfa
 }
 
 // CreateCodeRepositoryWithContext mocks base method
-func (m *MockSageMakerAPI) CreateCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.CreateCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.CreateCodeRepositoryOutput, error) {
+func (m *MockSageMakerAPI) CreateCodeRepositoryWithContext(arg0 context.Context, arg1 *sagemaker.CreateCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.CreateCodeRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateCompilationJobRequest(arg0 interfa
 }
 
 // CreateCompilationJobWithContext mocks base method
-func (m *MockSageMakerAPI) CreateCompilationJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateCompilationJobInput, arg2 ...request.Option) (*sagemaker.CreateCompilationJobOutput, error) {
+func (m *MockSageMakerAPI) CreateCompilationJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateCompilationJobInput, arg2 ...request.Option) (*sagemaker.CreateCompilationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -281,7 +281,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateEndpointConfigRequest(arg0 interfa
 }
 
 // CreateEndpointConfigWithContext mocks base method
-func (m *MockSageMakerAPI) CreateEndpointConfigWithContext(arg0 aws.Context, arg1 *sagemaker.CreateEndpointConfigInput, arg2 ...request.Option) (*sagemaker.CreateEndpointConfigOutput, error) {
+func (m *MockSageMakerAPI) CreateEndpointConfigWithContext(arg0 context.Context, arg1 *sagemaker.CreateEndpointConfigInput, arg2 ...request.Option) (*sagemaker.CreateEndpointConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateEndpointRequest(arg0 interface{}) 
 }
 
 // CreateEndpointWithContext mocks base method
-func (m *MockSageMakerAPI) CreateEndpointWithContext(arg0 aws.Context, arg1 *sagemaker.CreateEndpointInput, arg2 ...request.Option) (*sagemaker.CreateEndpointOutput, error) {
+func (m *MockSageMakerAPI) CreateEndpointWithContext(arg0 context.Context, arg1 *sagemaker.CreateEndpointInput, arg2 ...request.Option) (*sagemaker.CreateEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateHyperParameterTuningJobRequest(arg
 }
 
 // CreateHyperParameterTuningJobWithContext mocks base method
-func (m *MockSageMakerAPI) CreateHyperParameterTuningJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.CreateHyperParameterTuningJobOutput, error) {
+func (m *MockSageMakerAPI) CreateHyperParameterTuningJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.CreateHyperParameterTuningJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateLabelingJobRequest(arg0 interface{
 }
 
 // CreateLabelingJobWithContext mocks base method
-func (m *MockSageMakerAPI) CreateLabelingJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateLabelingJobInput, arg2 ...request.Option) (*sagemaker.CreateLabelingJobOutput, error) {
+func (m *MockSageMakerAPI) CreateLabelingJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateLabelingJobInput, arg2 ...request.Option) (*sagemaker.CreateLabelingJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateModelPackageRequest(arg0 interface
 }
 
 // CreateModelPackageWithContext mocks base method
-func (m *MockSageMakerAPI) CreateModelPackageWithContext(arg0 aws.Context, arg1 *sagemaker.CreateModelPackageInput, arg2 ...request.Option) (*sagemaker.CreateModelPackageOutput, error) {
+func (m *MockSageMakerAPI) CreateModelPackageWithContext(arg0 context.Context, arg1 *sagemaker.CreateModelPackageInput, arg2 ...request.Option) (*sagemaker.CreateModelPackageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateModelRequest(arg0 interface{}) *go
 }
 
 // CreateModelWithContext mocks base method
-func (m *MockSageMakerAPI) CreateModelWithContext(arg0 aws.Context, arg1 *sagemaker.CreateModelInput, arg2 ...request.Option) (*sagemaker.CreateModelOutput, error) {
+func (m *MockSageMakerAPI) CreateModelWithContext(arg0 context.Context, arg1 *sagemaker.CreateModelInput, arg2 ...request.Option) (*sagemaker.CreateModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateNotebookInstanceLifecycleConfigReq
 }
 
 // CreateNotebookInstanceLifecycleConfigWithContext mocks base method
-func (m *MockSageMakerAPI) CreateNotebookInstanceLifecycleConfigWithContext(arg0 aws.Context, arg1 *sagemaker.CreateNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.CreateNotebookInstanceLifecycleConfigOutput, error) {
+func (m *MockSageMakerAPI) CreateNotebookInstanceLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.CreateNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.CreateNotebookInstanceLifecycleConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateNotebookInstanceRequest(arg0 inter
 }
 
 // CreateNotebookInstanceWithContext mocks base method
-func (m *MockSageMakerAPI) CreateNotebookInstanceWithContext(arg0 aws.Context, arg1 *sagemaker.CreateNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.CreateNotebookInstanceOutput, error) {
+func (m *MockSageMakerAPI) CreateNotebookInstanceWithContext(arg0 context.Context, arg1 *sagemaker.CreateNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.CreateNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreatePresignedNotebookInstanceUrlReques
 }
 
 // CreatePresignedNotebookInstanceUrlWithContext mocks base method
-func (m *MockSageMakerAPI) CreatePresignedNotebookInstanceUrlWithContext(arg0 aws.Context, arg1 *sagemaker.CreatePresignedNotebookInstanceUrlInput, arg2 ...request.Option) (*sagemaker.CreatePresignedNotebookInstanceUrlOutput, error) {
+func (m *MockSageMakerAPI) CreatePresignedNotebookInstanceUrlWithContext(arg0 context.Context, arg1 *sagemaker.CreatePresignedNotebookInstanceUrlInput, arg2 ...request.Option) (*sagemaker.CreatePresignedNotebookInstanceUrlOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateTrainingJobRequest(arg0 interface{
 }
 
 // CreateTrainingJobWithContext mocks base method
-func (m *MockSageMakerAPI) CreateTrainingJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateTrainingJobInput, arg2 ...request.Option) (*sagemaker.CreateTrainingJobOutput, error) {
+func (m *MockSageMakerAPI) CreateTrainingJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateTrainingJobInput, arg2 ...request.Option) (*sagemaker.CreateTrainingJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateTransformJobRequest(arg0 interface
 }
 
 // CreateTransformJobWithContext mocks base method
-func (m *MockSageMakerAPI) CreateTransformJobWithContext(arg0 aws.Context, arg1 *sagemaker.CreateTransformJobInput, arg2 ...request.Option) (*sagemaker.CreateTransformJobOutput, error) {
+func (m *MockSageMakerAPI) CreateTransformJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateTransformJobInput, arg2 ...request.Option) (*sagemaker.CreateTransformJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockSageMakerAPIMockRecorder) CreateWorkteamRequest(arg0 interface{}) 
 }
 
 // CreateWorkteamWithContext mocks base method
-func (m *MockSageMakerAPI) CreateWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.CreateWorkteamInput, arg2 ...request.Option) (*sagemaker.CreateWorkteamOutput, error) {
+func (m *MockSageMakerAPI) CreateWorkteamWithContext(arg0 context.Context, arg1 *sagemaker.CreateWorkteamInput, arg2 ...request.Option) (*sagemaker.CreateWorkteamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteAlgorithmRequest(arg0 interface{})
 }
 
 // DeleteAlgorithmWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteAlgorithmWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteAlgorithmInput, arg2 ...request.Option) (*sagemaker.DeleteAlgorithmOutput, error) {
+func (m *MockSageMakerAPI) DeleteAlgorithmWithContext(arg0 context.Context, arg1 *sagemaker.DeleteAlgorithmInput, arg2 ...request.Option) (*sagemaker.DeleteAlgorithmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteCodeRepositoryRequest(arg0 interfa
 }
 
 // DeleteCodeRepositoryWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.DeleteCodeRepositoryOutput, error) {
+func (m *MockSageMakerAPI) DeleteCodeRepositoryWithContext(arg0 context.Context, arg1 *sagemaker.DeleteCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.DeleteCodeRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -981,7 +981,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteEndpointConfigRequest(arg0 interfa
 }
 
 // DeleteEndpointConfigWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteEndpointConfigWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteEndpointConfigInput, arg2 ...request.Option) (*sagemaker.DeleteEndpointConfigOutput, error) {
+func (m *MockSageMakerAPI) DeleteEndpointConfigWithContext(arg0 context.Context, arg1 *sagemaker.DeleteEndpointConfigInput, arg2 ...request.Option) (*sagemaker.DeleteEndpointConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteEndpointRequest(arg0 interface{}) 
 }
 
 // DeleteEndpointWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteEndpointWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteEndpointInput, arg2 ...request.Option) (*sagemaker.DeleteEndpointOutput, error) {
+func (m *MockSageMakerAPI) DeleteEndpointWithContext(arg0 context.Context, arg1 *sagemaker.DeleteEndpointInput, arg2 ...request.Option) (*sagemaker.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1081,7 +1081,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteModelPackageRequest(arg0 interface
 }
 
 // DeleteModelPackageWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteModelPackageWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteModelPackageInput, arg2 ...request.Option) (*sagemaker.DeleteModelPackageOutput, error) {
+func (m *MockSageMakerAPI) DeleteModelPackageWithContext(arg0 context.Context, arg1 *sagemaker.DeleteModelPackageInput, arg2 ...request.Option) (*sagemaker.DeleteModelPackageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteModelRequest(arg0 interface{}) *go
 }
 
 // DeleteModelWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteModelWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteModelInput, arg2 ...request.Option) (*sagemaker.DeleteModelOutput, error) {
+func (m *MockSageMakerAPI) DeleteModelWithContext(arg0 context.Context, arg1 *sagemaker.DeleteModelInput, arg2 ...request.Option) (*sagemaker.DeleteModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1181,7 +1181,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteNotebookInstanceLifecycleConfigReq
 }
 
 // DeleteNotebookInstanceLifecycleConfigWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteNotebookInstanceLifecycleConfigWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.DeleteNotebookInstanceLifecycleConfigOutput, error) {
+func (m *MockSageMakerAPI) DeleteNotebookInstanceLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.DeleteNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.DeleteNotebookInstanceLifecycleConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteNotebookInstanceRequest(arg0 inter
 }
 
 // DeleteNotebookInstanceWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteNotebookInstanceWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.DeleteNotebookInstanceOutput, error) {
+func (m *MockSageMakerAPI) DeleteNotebookInstanceWithContext(arg0 context.Context, arg1 *sagemaker.DeleteNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.DeleteNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gom
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteTagsInput, arg2 ...request.Option) (*sagemaker.DeleteTagsOutput, error) {
+func (m *MockSageMakerAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *sagemaker.DeleteTagsInput, arg2 ...request.Option) (*sagemaker.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteWorkteamRequest(arg0 interface{}) 
 }
 
 // DeleteWorkteamWithContext mocks base method
-func (m *MockSageMakerAPI) DeleteWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.DeleteWorkteamInput, arg2 ...request.Option) (*sagemaker.DeleteWorkteamOutput, error) {
+func (m *MockSageMakerAPI) DeleteWorkteamWithContext(arg0 context.Context, arg1 *sagemaker.DeleteWorkteamInput, arg2 ...request.Option) (*sagemaker.DeleteWorkteamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeAlgorithmRequest(arg0 interface{
 }
 
 // DescribeAlgorithmWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeAlgorithmWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeAlgorithmInput, arg2 ...request.Option) (*sagemaker.DescribeAlgorithmOutput, error) {
+func (m *MockSageMakerAPI) DescribeAlgorithmWithContext(arg0 context.Context, arg1 *sagemaker.DescribeAlgorithmInput, arg2 ...request.Option) (*sagemaker.DescribeAlgorithmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeCodeRepositoryRequest(arg0 inter
 }
 
 // DescribeCodeRepositoryWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.DescribeCodeRepositoryOutput, error) {
+func (m *MockSageMakerAPI) DescribeCodeRepositoryWithContext(arg0 context.Context, arg1 *sagemaker.DescribeCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.DescribeCodeRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeCompilationJobRequest(arg0 inter
 }
 
 // DescribeCompilationJobWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeCompilationJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeCompilationJobInput, arg2 ...request.Option) (*sagemaker.DescribeCompilationJobOutput, error) {
+func (m *MockSageMakerAPI) DescribeCompilationJobWithContext(arg0 context.Context, arg1 *sagemaker.DescribeCompilationJobInput, arg2 ...request.Option) (*sagemaker.DescribeCompilationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1531,7 +1531,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeEndpointConfigRequest(arg0 inter
 }
 
 // DescribeEndpointConfigWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeEndpointConfigWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeEndpointConfigInput, arg2 ...request.Option) (*sagemaker.DescribeEndpointConfigOutput, error) {
+func (m *MockSageMakerAPI) DescribeEndpointConfigWithContext(arg0 context.Context, arg1 *sagemaker.DescribeEndpointConfigInput, arg2 ...request.Option) (*sagemaker.DescribeEndpointConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeEndpointRequest(arg0 interface{}
 }
 
 // DescribeEndpointWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeEndpointWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeEndpointInput, arg2 ...request.Option) (*sagemaker.DescribeEndpointOutput, error) {
+func (m *MockSageMakerAPI) DescribeEndpointWithContext(arg0 context.Context, arg1 *sagemaker.DescribeEndpointInput, arg2 ...request.Option) (*sagemaker.DescribeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeHyperParameterTuningJobRequest(a
 }
 
 // DescribeHyperParameterTuningJobWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeHyperParameterTuningJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.DescribeHyperParameterTuningJobOutput, error) {
+func (m *MockSageMakerAPI) DescribeHyperParameterTuningJobWithContext(arg0 context.Context, arg1 *sagemaker.DescribeHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.DescribeHyperParameterTuningJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeLabelingJobRequest(arg0 interfac
 }
 
 // DescribeLabelingJobWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeLabelingJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeLabelingJobInput, arg2 ...request.Option) (*sagemaker.DescribeLabelingJobOutput, error) {
+func (m *MockSageMakerAPI) DescribeLabelingJobWithContext(arg0 context.Context, arg1 *sagemaker.DescribeLabelingJobInput, arg2 ...request.Option) (*sagemaker.DescribeLabelingJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1731,7 +1731,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeModelPackageRequest(arg0 interfa
 }
 
 // DescribeModelPackageWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeModelPackageWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeModelPackageInput, arg2 ...request.Option) (*sagemaker.DescribeModelPackageOutput, error) {
+func (m *MockSageMakerAPI) DescribeModelPackageWithContext(arg0 context.Context, arg1 *sagemaker.DescribeModelPackageInput, arg2 ...request.Option) (*sagemaker.DescribeModelPackageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeModelRequest(arg0 interface{}) *
 }
 
 // DescribeModelWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeModelWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeModelInput, arg2 ...request.Option) (*sagemaker.DescribeModelOutput, error) {
+func (m *MockSageMakerAPI) DescribeModelWithContext(arg0 context.Context, arg1 *sagemaker.DescribeModelInput, arg2 ...request.Option) (*sagemaker.DescribeModelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1831,7 +1831,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeNotebookInstanceLifecycleConfigR
 }
 
 // DescribeNotebookInstanceLifecycleConfigWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeNotebookInstanceLifecycleConfigWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.DescribeNotebookInstanceLifecycleConfigOutput, error) {
+func (m *MockSageMakerAPI) DescribeNotebookInstanceLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.DescribeNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.DescribeNotebookInstanceLifecycleConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeNotebookInstanceRequest(arg0 int
 }
 
 // DescribeNotebookInstanceWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeNotebookInstanceWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.DescribeNotebookInstanceOutput, error) {
+func (m *MockSageMakerAPI) DescribeNotebookInstanceWithContext(arg0 context.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.DescribeNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeSubscribedWorkteamRequest(arg0 i
 }
 
 // DescribeSubscribedWorkteamWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeSubscribedWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeSubscribedWorkteamInput, arg2 ...request.Option) (*sagemaker.DescribeSubscribedWorkteamOutput, error) {
+func (m *MockSageMakerAPI) DescribeSubscribedWorkteamWithContext(arg0 context.Context, arg1 *sagemaker.DescribeSubscribedWorkteamInput, arg2 ...request.Option) (*sagemaker.DescribeSubscribedWorkteamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeTrainingJobRequest(arg0 interfac
 }
 
 // DescribeTrainingJobWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeTrainingJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeTrainingJobInput, arg2 ...request.Option) (*sagemaker.DescribeTrainingJobOutput, error) {
+func (m *MockSageMakerAPI) DescribeTrainingJobWithContext(arg0 context.Context, arg1 *sagemaker.DescribeTrainingJobInput, arg2 ...request.Option) (*sagemaker.DescribeTrainingJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeTransformJobRequest(arg0 interfa
 }
 
 // DescribeTransformJobWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeTransformJobWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeTransformJobInput, arg2 ...request.Option) (*sagemaker.DescribeTransformJobOutput, error) {
+func (m *MockSageMakerAPI) DescribeTransformJobWithContext(arg0 context.Context, arg1 *sagemaker.DescribeTransformJobInput, arg2 ...request.Option) (*sagemaker.DescribeTransformJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeWorkteamRequest(arg0 interface{}
 }
 
 // DescribeWorkteamWithContext mocks base method
-func (m *MockSageMakerAPI) DescribeWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeWorkteamInput, arg2 ...request.Option) (*sagemaker.DescribeWorkteamOutput, error) {
+func (m *MockSageMakerAPI) DescribeWorkteamWithContext(arg0 context.Context, arg1 *sagemaker.DescribeWorkteamInput, arg2 ...request.Option) (*sagemaker.DescribeWorkteamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockSageMakerAPIMockRecorder) GetSearchSuggestionsRequest(arg0 interfa
 }
 
 // GetSearchSuggestionsWithContext mocks base method
-func (m *MockSageMakerAPI) GetSearchSuggestionsWithContext(arg0 aws.Context, arg1 *sagemaker.GetSearchSuggestionsInput, arg2 ...request.Option) (*sagemaker.GetSearchSuggestionsOutput, error) {
+func (m *MockSageMakerAPI) GetSearchSuggestionsWithContext(arg0 context.Context, arg1 *sagemaker.GetSearchSuggestionsInput, arg2 ...request.Option) (*sagemaker.GetSearchSuggestionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListAlgorithmsRequest(arg0 interface{}) 
 }
 
 // ListAlgorithmsWithContext mocks base method
-func (m *MockSageMakerAPI) ListAlgorithmsWithContext(arg0 aws.Context, arg1 *sagemaker.ListAlgorithmsInput, arg2 ...request.Option) (*sagemaker.ListAlgorithmsOutput, error) {
+func (m *MockSageMakerAPI) ListAlgorithmsWithContext(arg0 context.Context, arg1 *sagemaker.ListAlgorithmsInput, arg2 ...request.Option) (*sagemaker.ListAlgorithmsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListCodeRepositoriesRequest(arg0 interfa
 }
 
 // ListCodeRepositoriesWithContext mocks base method
-func (m *MockSageMakerAPI) ListCodeRepositoriesWithContext(arg0 aws.Context, arg1 *sagemaker.ListCodeRepositoriesInput, arg2 ...request.Option) (*sagemaker.ListCodeRepositoriesOutput, error) {
+func (m *MockSageMakerAPI) ListCodeRepositoriesWithContext(arg0 context.Context, arg1 *sagemaker.ListCodeRepositoriesInput, arg2 ...request.Option) (*sagemaker.ListCodeRepositoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2265,7 +2265,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobsPages(arg0, arg1 inte
 }
 
 // ListCompilationJobsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListCompilationJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListCompilationJobsInput, arg2 func(*sagemaker.ListCompilationJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListCompilationJobsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListCompilationJobsInput, arg2 func(*sagemaker.ListCompilationJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2299,7 +2299,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListCompilationJobsRequest(arg0 interfac
 }
 
 // ListCompilationJobsWithContext mocks base method
-func (m *MockSageMakerAPI) ListCompilationJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListCompilationJobsInput, arg2 ...request.Option) (*sagemaker.ListCompilationJobsOutput, error) {
+func (m *MockSageMakerAPI) ListCompilationJobsWithContext(arg0 context.Context, arg1 *sagemaker.ListCompilationJobsInput, arg2 ...request.Option) (*sagemaker.ListCompilationJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2348,7 +2348,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListEndpointConfigsPages(arg0, arg1 inte
 }
 
 // ListEndpointConfigsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListEndpointConfigsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListEndpointConfigsInput, arg2 func(*sagemaker.ListEndpointConfigsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListEndpointConfigsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListEndpointConfigsInput, arg2 func(*sagemaker.ListEndpointConfigsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2382,7 +2382,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListEndpointConfigsRequest(arg0 interfac
 }
 
 // ListEndpointConfigsWithContext mocks base method
-func (m *MockSageMakerAPI) ListEndpointConfigsWithContext(arg0 aws.Context, arg1 *sagemaker.ListEndpointConfigsInput, arg2 ...request.Option) (*sagemaker.ListEndpointConfigsOutput, error) {
+func (m *MockSageMakerAPI) ListEndpointConfigsWithContext(arg0 context.Context, arg1 *sagemaker.ListEndpointConfigsInput, arg2 ...request.Option) (*sagemaker.ListEndpointConfigsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2431,7 +2431,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListEndpointsPages(arg0, arg1 interface{
 }
 
 // ListEndpointsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListEndpointsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListEndpointsInput, arg2 func(*sagemaker.ListEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListEndpointsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListEndpointsInput, arg2 func(*sagemaker.ListEndpointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2465,7 +2465,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListEndpointsRequest(arg0 interface{}) *
 }
 
 // ListEndpointsWithContext mocks base method
-func (m *MockSageMakerAPI) ListEndpointsWithContext(arg0 aws.Context, arg1 *sagemaker.ListEndpointsInput, arg2 ...request.Option) (*sagemaker.ListEndpointsOutput, error) {
+func (m *MockSageMakerAPI) ListEndpointsWithContext(arg0 context.Context, arg1 *sagemaker.ListEndpointsInput, arg2 ...request.Option) (*sagemaker.ListEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2514,7 +2514,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListHyperParameterTuningJobsPages(arg0, 
 }
 
 // ListHyperParameterTuningJobsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListHyperParameterTuningJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListHyperParameterTuningJobsInput, arg2 func(*sagemaker.ListHyperParameterTuningJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListHyperParameterTuningJobsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListHyperParameterTuningJobsInput, arg2 func(*sagemaker.ListHyperParameterTuningJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2548,7 +2548,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListHyperParameterTuningJobsRequest(arg0
 }
 
 // ListHyperParameterTuningJobsWithContext mocks base method
-func (m *MockSageMakerAPI) ListHyperParameterTuningJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListHyperParameterTuningJobsInput, arg2 ...request.Option) (*sagemaker.ListHyperParameterTuningJobsOutput, error) {
+func (m *MockSageMakerAPI) ListHyperParameterTuningJobsWithContext(arg0 context.Context, arg1 *sagemaker.ListHyperParameterTuningJobsInput, arg2 ...request.Option) (*sagemaker.ListHyperParameterTuningJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2612,7 +2612,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteamPages(arg0, a
 }
 
 // ListLabelingJobsForWorkteamPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsForWorkteamInput, arg2 func(*sagemaker.ListLabelingJobsForWorkteamOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListLabelingJobsForWorkteamInput, arg2 func(*sagemaker.ListLabelingJobsForWorkteamOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2646,7 +2646,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsForWorkteamRequest(arg0 
 }
 
 // ListLabelingJobsForWorkteamWithContext mocks base method
-func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsForWorkteamInput, arg2 ...request.Option) (*sagemaker.ListLabelingJobsForWorkteamOutput, error) {
+func (m *MockSageMakerAPI) ListLabelingJobsForWorkteamWithContext(arg0 context.Context, arg1 *sagemaker.ListLabelingJobsForWorkteamInput, arg2 ...request.Option) (*sagemaker.ListLabelingJobsForWorkteamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2680,7 +2680,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsPages(arg0, arg1 interfa
 }
 
 // ListLabelingJobsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListLabelingJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsInput, arg2 func(*sagemaker.ListLabelingJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListLabelingJobsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListLabelingJobsInput, arg2 func(*sagemaker.ListLabelingJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2714,7 +2714,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListLabelingJobsRequest(arg0 interface{}
 }
 
 // ListLabelingJobsWithContext mocks base method
-func (m *MockSageMakerAPI) ListLabelingJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListLabelingJobsInput, arg2 ...request.Option) (*sagemaker.ListLabelingJobsOutput, error) {
+func (m *MockSageMakerAPI) ListLabelingJobsWithContext(arg0 context.Context, arg1 *sagemaker.ListLabelingJobsInput, arg2 ...request.Option) (*sagemaker.ListLabelingJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2764,7 +2764,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListModelPackagesRequest(arg0 interface{
 }
 
 // ListModelPackagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListModelPackagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListModelPackagesInput, arg2 ...request.Option) (*sagemaker.ListModelPackagesOutput, error) {
+func (m *MockSageMakerAPI) ListModelPackagesWithContext(arg0 context.Context, arg1 *sagemaker.ListModelPackagesInput, arg2 ...request.Option) (*sagemaker.ListModelPackagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2813,7 +2813,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListModelsPages(arg0, arg1 interface{}) 
 }
 
 // ListModelsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListModelsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListModelsInput, arg2 func(*sagemaker.ListModelsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListModelsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListModelsInput, arg2 func(*sagemaker.ListModelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2847,7 +2847,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListModelsRequest(arg0 interface{}) *gom
 }
 
 // ListModelsWithContext mocks base method
-func (m *MockSageMakerAPI) ListModelsWithContext(arg0 aws.Context, arg1 *sagemaker.ListModelsInput, arg2 ...request.Option) (*sagemaker.ListModelsOutput, error) {
+func (m *MockSageMakerAPI) ListModelsWithContext(arg0 context.Context, arg1 *sagemaker.ListModelsInput, arg2 ...request.Option) (*sagemaker.ListModelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2896,7 +2896,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListNotebookInstanceLifecycleConfigsPage
 }
 
 // ListNotebookInstanceLifecycleConfigsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListNotebookInstanceLifecycleConfigsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListNotebookInstanceLifecycleConfigsInput, arg2 func(*sagemaker.ListNotebookInstanceLifecycleConfigsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListNotebookInstanceLifecycleConfigsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListNotebookInstanceLifecycleConfigsInput, arg2 func(*sagemaker.ListNotebookInstanceLifecycleConfigsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2930,7 +2930,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListNotebookInstanceLifecycleConfigsRequ
 }
 
 // ListNotebookInstanceLifecycleConfigsWithContext mocks base method
-func (m *MockSageMakerAPI) ListNotebookInstanceLifecycleConfigsWithContext(arg0 aws.Context, arg1 *sagemaker.ListNotebookInstanceLifecycleConfigsInput, arg2 ...request.Option) (*sagemaker.ListNotebookInstanceLifecycleConfigsOutput, error) {
+func (m *MockSageMakerAPI) ListNotebookInstanceLifecycleConfigsWithContext(arg0 context.Context, arg1 *sagemaker.ListNotebookInstanceLifecycleConfigsInput, arg2 ...request.Option) (*sagemaker.ListNotebookInstanceLifecycleConfigsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2979,7 +2979,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListNotebookInstancesPages(arg0, arg1 in
 }
 
 // ListNotebookInstancesPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListNotebookInstancesPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListNotebookInstancesInput, arg2 func(*sagemaker.ListNotebookInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListNotebookInstancesPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListNotebookInstancesInput, arg2 func(*sagemaker.ListNotebookInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3013,7 +3013,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListNotebookInstancesRequest(arg0 interf
 }
 
 // ListNotebookInstancesWithContext mocks base method
-func (m *MockSageMakerAPI) ListNotebookInstancesWithContext(arg0 aws.Context, arg1 *sagemaker.ListNotebookInstancesInput, arg2 ...request.Option) (*sagemaker.ListNotebookInstancesOutput, error) {
+func (m *MockSageMakerAPI) ListNotebookInstancesWithContext(arg0 context.Context, arg1 *sagemaker.ListNotebookInstancesInput, arg2 ...request.Option) (*sagemaker.ListNotebookInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3062,7 +3062,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteamsPages(arg0, arg1 
 }
 
 // ListSubscribedWorkteamsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListSubscribedWorkteamsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListSubscribedWorkteamsInput, arg2 func(*sagemaker.ListSubscribedWorkteamsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListSubscribedWorkteamsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListSubscribedWorkteamsInput, arg2 func(*sagemaker.ListSubscribedWorkteamsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3096,7 +3096,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListSubscribedWorkteamsRequest(arg0 inte
 }
 
 // ListSubscribedWorkteamsWithContext mocks base method
-func (m *MockSageMakerAPI) ListSubscribedWorkteamsWithContext(arg0 aws.Context, arg1 *sagemaker.ListSubscribedWorkteamsInput, arg2 ...request.Option) (*sagemaker.ListSubscribedWorkteamsOutput, error) {
+func (m *MockSageMakerAPI) ListSubscribedWorkteamsWithContext(arg0 context.Context, arg1 *sagemaker.ListSubscribedWorkteamsInput, arg2 ...request.Option) (*sagemaker.ListSubscribedWorkteamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3145,7 +3145,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTagsPages(arg0, arg1 interface{}) *g
 }
 
 // ListTagsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListTagsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListTagsInput, arg2 func(*sagemaker.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListTagsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListTagsInput, arg2 func(*sagemaker.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3179,7 +3179,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomoc
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockSageMakerAPI) ListTagsWithContext(arg0 aws.Context, arg1 *sagemaker.ListTagsInput, arg2 ...request.Option) (*sagemaker.ListTagsOutput, error) {
+func (m *MockSageMakerAPI) ListTagsWithContext(arg0 context.Context, arg1 *sagemaker.ListTagsInput, arg2 ...request.Option) (*sagemaker.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3243,7 +3243,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTrainingJobsForHyperParameterTuningJ
 }
 
 // ListTrainingJobsForHyperParameterTuningJobPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListTrainingJobsForHyperParameterTuningJobPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListTrainingJobsForHyperParameterTuningJobInput, arg2 func(*sagemaker.ListTrainingJobsForHyperParameterTuningJobOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListTrainingJobsForHyperParameterTuningJobPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListTrainingJobsForHyperParameterTuningJobInput, arg2 func(*sagemaker.ListTrainingJobsForHyperParameterTuningJobOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3277,7 +3277,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTrainingJobsForHyperParameterTuningJ
 }
 
 // ListTrainingJobsForHyperParameterTuningJobWithContext mocks base method
-func (m *MockSageMakerAPI) ListTrainingJobsForHyperParameterTuningJobWithContext(arg0 aws.Context, arg1 *sagemaker.ListTrainingJobsForHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.ListTrainingJobsForHyperParameterTuningJobOutput, error) {
+func (m *MockSageMakerAPI) ListTrainingJobsForHyperParameterTuningJobWithContext(arg0 context.Context, arg1 *sagemaker.ListTrainingJobsForHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.ListTrainingJobsForHyperParameterTuningJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3311,7 +3311,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTrainingJobsPages(arg0, arg1 interfa
 }
 
 // ListTrainingJobsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListTrainingJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListTrainingJobsInput, arg2 func(*sagemaker.ListTrainingJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListTrainingJobsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListTrainingJobsInput, arg2 func(*sagemaker.ListTrainingJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3345,7 +3345,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTrainingJobsRequest(arg0 interface{}
 }
 
 // ListTrainingJobsWithContext mocks base method
-func (m *MockSageMakerAPI) ListTrainingJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListTrainingJobsInput, arg2 ...request.Option) (*sagemaker.ListTrainingJobsOutput, error) {
+func (m *MockSageMakerAPI) ListTrainingJobsWithContext(arg0 context.Context, arg1 *sagemaker.ListTrainingJobsInput, arg2 ...request.Option) (*sagemaker.ListTrainingJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3394,7 +3394,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTransformJobsPages(arg0, arg1 interf
 }
 
 // ListTransformJobsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListTransformJobsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListTransformJobsInput, arg2 func(*sagemaker.ListTransformJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListTransformJobsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListTransformJobsInput, arg2 func(*sagemaker.ListTransformJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3428,7 +3428,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListTransformJobsRequest(arg0 interface{
 }
 
 // ListTransformJobsWithContext mocks base method
-func (m *MockSageMakerAPI) ListTransformJobsWithContext(arg0 aws.Context, arg1 *sagemaker.ListTransformJobsInput, arg2 ...request.Option) (*sagemaker.ListTransformJobsOutput, error) {
+func (m *MockSageMakerAPI) ListTransformJobsWithContext(arg0 context.Context, arg1 *sagemaker.ListTransformJobsInput, arg2 ...request.Option) (*sagemaker.ListTransformJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3477,7 +3477,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListWorkteamsPages(arg0, arg1 interface{
 }
 
 // ListWorkteamsPagesWithContext mocks base method
-func (m *MockSageMakerAPI) ListWorkteamsPagesWithContext(arg0 aws.Context, arg1 *sagemaker.ListWorkteamsInput, arg2 func(*sagemaker.ListWorkteamsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) ListWorkteamsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListWorkteamsInput, arg2 func(*sagemaker.ListWorkteamsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3511,7 +3511,7 @@ func (mr *MockSageMakerAPIMockRecorder) ListWorkteamsRequest(arg0 interface{}) *
 }
 
 // ListWorkteamsWithContext mocks base method
-func (m *MockSageMakerAPI) ListWorkteamsWithContext(arg0 aws.Context, arg1 *sagemaker.ListWorkteamsInput, arg2 ...request.Option) (*sagemaker.ListWorkteamsOutput, error) {
+func (m *MockSageMakerAPI) ListWorkteamsWithContext(arg0 context.Context, arg1 *sagemaker.ListWorkteamsInput, arg2 ...request.Option) (*sagemaker.ListWorkteamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3561,7 +3561,7 @@ func (mr *MockSageMakerAPIMockRecorder) RenderUiTemplateRequest(arg0 interface{}
 }
 
 // RenderUiTemplateWithContext mocks base method
-func (m *MockSageMakerAPI) RenderUiTemplateWithContext(arg0 aws.Context, arg1 *sagemaker.RenderUiTemplateInput, arg2 ...request.Option) (*sagemaker.RenderUiTemplateOutput, error) {
+func (m *MockSageMakerAPI) RenderUiTemplateWithContext(arg0 context.Context, arg1 *sagemaker.RenderUiTemplateInput, arg2 ...request.Option) (*sagemaker.RenderUiTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3610,7 +3610,7 @@ func (mr *MockSageMakerAPIMockRecorder) SearchPages(arg0, arg1 interface{}) *gom
 }
 
 // SearchPagesWithContext mocks base method
-func (m *MockSageMakerAPI) SearchPagesWithContext(arg0 aws.Context, arg1 *sagemaker.SearchInput, arg2 func(*sagemaker.SearchOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSageMakerAPI) SearchPagesWithContext(arg0 context.Context, arg1 *sagemaker.SearchInput, arg2 func(*sagemaker.SearchOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3644,7 +3644,7 @@ func (mr *MockSageMakerAPIMockRecorder) SearchRequest(arg0 interface{}) *gomock.
 }
 
 // SearchWithContext mocks base method
-func (m *MockSageMakerAPI) SearchWithContext(arg0 aws.Context, arg1 *sagemaker.SearchInput, arg2 ...request.Option) (*sagemaker.SearchOutput, error) {
+func (m *MockSageMakerAPI) SearchWithContext(arg0 context.Context, arg1 *sagemaker.SearchInput, arg2 ...request.Option) (*sagemaker.SearchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3694,7 +3694,7 @@ func (mr *MockSageMakerAPIMockRecorder) StartNotebookInstanceRequest(arg0 interf
 }
 
 // StartNotebookInstanceWithContext mocks base method
-func (m *MockSageMakerAPI) StartNotebookInstanceWithContext(arg0 aws.Context, arg1 *sagemaker.StartNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.StartNotebookInstanceOutput, error) {
+func (m *MockSageMakerAPI) StartNotebookInstanceWithContext(arg0 context.Context, arg1 *sagemaker.StartNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.StartNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3744,7 +3744,7 @@ func (mr *MockSageMakerAPIMockRecorder) StopCompilationJobRequest(arg0 interface
 }
 
 // StopCompilationJobWithContext mocks base method
-func (m *MockSageMakerAPI) StopCompilationJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopCompilationJobInput, arg2 ...request.Option) (*sagemaker.StopCompilationJobOutput, error) {
+func (m *MockSageMakerAPI) StopCompilationJobWithContext(arg0 context.Context, arg1 *sagemaker.StopCompilationJobInput, arg2 ...request.Option) (*sagemaker.StopCompilationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3794,7 +3794,7 @@ func (mr *MockSageMakerAPIMockRecorder) StopHyperParameterTuningJobRequest(arg0 
 }
 
 // StopHyperParameterTuningJobWithContext mocks base method
-func (m *MockSageMakerAPI) StopHyperParameterTuningJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.StopHyperParameterTuningJobOutput, error) {
+func (m *MockSageMakerAPI) StopHyperParameterTuningJobWithContext(arg0 context.Context, arg1 *sagemaker.StopHyperParameterTuningJobInput, arg2 ...request.Option) (*sagemaker.StopHyperParameterTuningJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3844,7 +3844,7 @@ func (mr *MockSageMakerAPIMockRecorder) StopLabelingJobRequest(arg0 interface{})
 }
 
 // StopLabelingJobWithContext mocks base method
-func (m *MockSageMakerAPI) StopLabelingJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopLabelingJobInput, arg2 ...request.Option) (*sagemaker.StopLabelingJobOutput, error) {
+func (m *MockSageMakerAPI) StopLabelingJobWithContext(arg0 context.Context, arg1 *sagemaker.StopLabelingJobInput, arg2 ...request.Option) (*sagemaker.StopLabelingJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3894,7 +3894,7 @@ func (mr *MockSageMakerAPIMockRecorder) StopNotebookInstanceRequest(arg0 interfa
 }
 
 // StopNotebookInstanceWithContext mocks base method
-func (m *MockSageMakerAPI) StopNotebookInstanceWithContext(arg0 aws.Context, arg1 *sagemaker.StopNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.StopNotebookInstanceOutput, error) {
+func (m *MockSageMakerAPI) StopNotebookInstanceWithContext(arg0 context.Context, arg1 *sagemaker.StopNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.StopNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3944,7 +3944,7 @@ func (mr *MockSageMakerAPIMockRecorder) StopTrainingJobRequest(arg0 interface{})
 }
 
 // StopTrainingJobWithContext mocks base method
-func (m *MockSageMakerAPI) StopTrainingJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopTrainingJobInput, arg2 ...request.Option) (*sagemaker.StopTrainingJobOutput, error) {
+func (m *MockSageMakerAPI) StopTrainingJobWithContext(arg0 context.Context, arg1 *sagemaker.StopTrainingJobInput, arg2 ...request.Option) (*sagemaker.StopTrainingJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3994,7 +3994,7 @@ func (mr *MockSageMakerAPIMockRecorder) StopTransformJobRequest(arg0 interface{}
 }
 
 // StopTransformJobWithContext mocks base method
-func (m *MockSageMakerAPI) StopTransformJobWithContext(arg0 aws.Context, arg1 *sagemaker.StopTransformJobInput, arg2 ...request.Option) (*sagemaker.StopTransformJobOutput, error) {
+func (m *MockSageMakerAPI) StopTransformJobWithContext(arg0 context.Context, arg1 *sagemaker.StopTransformJobInput, arg2 ...request.Option) (*sagemaker.StopTransformJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4044,7 +4044,7 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateCodeRepositoryRequest(arg0 interfa
 }
 
 // UpdateCodeRepositoryWithContext mocks base method
-func (m *MockSageMakerAPI) UpdateCodeRepositoryWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.UpdateCodeRepositoryOutput, error) {
+func (m *MockSageMakerAPI) UpdateCodeRepositoryWithContext(arg0 context.Context, arg1 *sagemaker.UpdateCodeRepositoryInput, arg2 ...request.Option) (*sagemaker.UpdateCodeRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4124,7 +4124,7 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateEndpointWeightsAndCapacitiesReques
 }
 
 // UpdateEndpointWeightsAndCapacitiesWithContext mocks base method
-func (m *MockSageMakerAPI) UpdateEndpointWeightsAndCapacitiesWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateEndpointWeightsAndCapacitiesInput, arg2 ...request.Option) (*sagemaker.UpdateEndpointWeightsAndCapacitiesOutput, error) {
+func (m *MockSageMakerAPI) UpdateEndpointWeightsAndCapacitiesWithContext(arg0 context.Context, arg1 *sagemaker.UpdateEndpointWeightsAndCapacitiesInput, arg2 ...request.Option) (*sagemaker.UpdateEndpointWeightsAndCapacitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4144,7 +4144,7 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateEndpointWeightsAndCapacitiesWithCo
 }
 
 // UpdateEndpointWithContext mocks base method
-func (m *MockSageMakerAPI) UpdateEndpointWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateEndpointInput, arg2 ...request.Option) (*sagemaker.UpdateEndpointOutput, error) {
+func (m *MockSageMakerAPI) UpdateEndpointWithContext(arg0 context.Context, arg1 *sagemaker.UpdateEndpointInput, arg2 ...request.Option) (*sagemaker.UpdateEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4209,7 +4209,7 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateNotebookInstanceLifecycleConfigReq
 }
 
 // UpdateNotebookInstanceLifecycleConfigWithContext mocks base method
-func (m *MockSageMakerAPI) UpdateNotebookInstanceLifecycleConfigWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.UpdateNotebookInstanceLifecycleConfigOutput, error) {
+func (m *MockSageMakerAPI) UpdateNotebookInstanceLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.UpdateNotebookInstanceLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.UpdateNotebookInstanceLifecycleConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4244,7 +4244,7 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateNotebookInstanceRequest(arg0 inter
 }
 
 // UpdateNotebookInstanceWithContext mocks base method
-func (m *MockSageMakerAPI) UpdateNotebookInstanceWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.UpdateNotebookInstanceOutput, error) {
+func (m *MockSageMakerAPI) UpdateNotebookInstanceWithContext(arg0 context.Context, arg1 *sagemaker.UpdateNotebookInstanceInput, arg2 ...request.Option) (*sagemaker.UpdateNotebookInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4294,7 +4294,7 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateWorkteamRequest(arg0 interface{}) 
 }
 
 // UpdateWorkteamWithContext mocks base method
-func (m *MockSageMakerAPI) UpdateWorkteamWithContext(arg0 aws.Context, arg1 *sagemaker.UpdateWorkteamInput, arg2 ...request.Option) (*sagemaker.UpdateWorkteamOutput, error) {
+func (m *MockSageMakerAPI) UpdateWorkteamWithContext(arg0 context.Context, arg1 *sagemaker.UpdateWorkteamInput, arg2 ...request.Option) (*sagemaker.UpdateWorkteamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4328,7 +4328,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilEndpointDeleted(arg0 interface{
 }
 
 // WaitUntilEndpointDeletedWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilEndpointDeletedWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeEndpointInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilEndpointDeletedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeEndpointInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4361,7 +4361,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilEndpointInService(arg0 interfac
 }
 
 // WaitUntilEndpointInServiceWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilEndpointInServiceWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeEndpointInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilEndpointInServiceWithContext(arg0 context.Context, arg1 *sagemaker.DescribeEndpointInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4394,7 +4394,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilNotebookInstanceDeleted(arg0 in
 }
 
 // WaitUntilNotebookInstanceDeletedWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilNotebookInstanceDeletedWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilNotebookInstanceDeletedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4427,7 +4427,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilNotebookInstanceInService(arg0 
 }
 
 // WaitUntilNotebookInstanceInServiceWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilNotebookInstanceInServiceWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilNotebookInstanceInServiceWithContext(arg0 context.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4460,7 +4460,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilNotebookInstanceStopped(arg0 in
 }
 
 // WaitUntilNotebookInstanceStoppedWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilNotebookInstanceStoppedWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilNotebookInstanceStoppedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeNotebookInstanceInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4493,7 +4493,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilTrainingJobCompletedOrStopped(a
 }
 
 // WaitUntilTrainingJobCompletedOrStoppedWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilTrainingJobCompletedOrStoppedWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeTrainingJobInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilTrainingJobCompletedOrStoppedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeTrainingJobInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4526,7 +4526,7 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilTransformJobCompletedOrStopped(
 }
 
 // WaitUntilTransformJobCompletedOrStoppedWithContext mocks base method
-func (m *MockSageMakerAPI) WaitUntilTransformJobCompletedOrStoppedWithContext(arg0 aws.Context, arg1 *sagemaker.DescribeTransformJobInput, arg2 ...request.WaiterOption) error {
+func (m *MockSageMakerAPI) WaitUntilTransformJobCompletedOrStoppedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeTransformJobInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

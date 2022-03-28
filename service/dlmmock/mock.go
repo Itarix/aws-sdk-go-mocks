@@ -5,7 +5,7 @@
 package dlmmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	dlm "github.com/aws/aws-sdk-go/service/dlm"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDLMAPIMockRecorder) CreateLifecyclePolicyRequest(arg0 interface{})
 }
 
 // CreateLifecyclePolicyWithContext mocks base method
-func (m *MockDLMAPI) CreateLifecyclePolicyWithContext(arg0 aws.Context, arg1 *dlm.CreateLifecyclePolicyInput, arg2 ...request.Option) (*dlm.CreateLifecyclePolicyOutput, error) {
+func (m *MockDLMAPI) CreateLifecyclePolicyWithContext(arg0 context.Context, arg1 *dlm.CreateLifecyclePolicyInput, arg2 ...request.Option) (*dlm.CreateLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDLMAPIMockRecorder) DeleteLifecyclePolicyRequest(arg0 interface{})
 }
 
 // DeleteLifecyclePolicyWithContext mocks base method
-func (m *MockDLMAPI) DeleteLifecyclePolicyWithContext(arg0 aws.Context, arg1 *dlm.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*dlm.DeleteLifecyclePolicyOutput, error) {
+func (m *MockDLMAPI) DeleteLifecyclePolicyWithContext(arg0 context.Context, arg1 *dlm.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*dlm.DeleteLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDLMAPIMockRecorder) GetLifecyclePoliciesRequest(arg0 interface{}) 
 }
 
 // GetLifecyclePoliciesWithContext mocks base method
-func (m *MockDLMAPI) GetLifecyclePoliciesWithContext(arg0 aws.Context, arg1 *dlm.GetLifecyclePoliciesInput, arg2 ...request.Option) (*dlm.GetLifecyclePoliciesOutput, error) {
+func (m *MockDLMAPI) GetLifecyclePoliciesWithContext(arg0 context.Context, arg1 *dlm.GetLifecyclePoliciesInput, arg2 ...request.Option) (*dlm.GetLifecyclePoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDLMAPIMockRecorder) GetLifecyclePolicyRequest(arg0 interface{}) *g
 }
 
 // GetLifecyclePolicyWithContext mocks base method
-func (m *MockDLMAPI) GetLifecyclePolicyWithContext(arg0 aws.Context, arg1 *dlm.GetLifecyclePolicyInput, arg2 ...request.Option) (*dlm.GetLifecyclePolicyOutput, error) {
+func (m *MockDLMAPI) GetLifecyclePolicyWithContext(arg0 context.Context, arg1 *dlm.GetLifecyclePolicyInput, arg2 ...request.Option) (*dlm.GetLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDLMAPIMockRecorder) UpdateLifecyclePolicyRequest(arg0 interface{})
 }
 
 // UpdateLifecyclePolicyWithContext mocks base method
-func (m *MockDLMAPI) UpdateLifecyclePolicyWithContext(arg0 aws.Context, arg1 *dlm.UpdateLifecyclePolicyInput, arg2 ...request.Option) (*dlm.UpdateLifecyclePolicyOutput, error) {
+func (m *MockDLMAPI) UpdateLifecyclePolicyWithContext(arg0 context.Context, arg1 *dlm.UpdateLifecyclePolicyInput, arg2 ...request.Option) (*dlm.UpdateLifecyclePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

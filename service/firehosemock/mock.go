@@ -5,7 +5,7 @@
 package firehosemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	firehose "github.com/aws/aws-sdk-go/service/firehose"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockFirehoseAPIMockRecorder) CreateDeliveryStreamRequest(arg0 interfac
 }
 
 // CreateDeliveryStreamWithContext mocks base method
-func (m *MockFirehoseAPI) CreateDeliveryStreamWithContext(arg0 aws.Context, arg1 *firehose.CreateDeliveryStreamInput, arg2 ...request.Option) (*firehose.CreateDeliveryStreamOutput, error) {
+func (m *MockFirehoseAPI) CreateDeliveryStreamWithContext(arg0 context.Context, arg1 *firehose.CreateDeliveryStreamInput, arg2 ...request.Option) (*firehose.CreateDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockFirehoseAPIMockRecorder) DeleteDeliveryStreamRequest(arg0 interfac
 }
 
 // DeleteDeliveryStreamWithContext mocks base method
-func (m *MockFirehoseAPI) DeleteDeliveryStreamWithContext(arg0 aws.Context, arg1 *firehose.DeleteDeliveryStreamInput, arg2 ...request.Option) (*firehose.DeleteDeliveryStreamOutput, error) {
+func (m *MockFirehoseAPI) DeleteDeliveryStreamWithContext(arg0 context.Context, arg1 *firehose.DeleteDeliveryStreamInput, arg2 ...request.Option) (*firehose.DeleteDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockFirehoseAPIMockRecorder) DescribeDeliveryStreamRequest(arg0 interf
 }
 
 // DescribeDeliveryStreamWithContext mocks base method
-func (m *MockFirehoseAPI) DescribeDeliveryStreamWithContext(arg0 aws.Context, arg1 *firehose.DescribeDeliveryStreamInput, arg2 ...request.Option) (*firehose.DescribeDeliveryStreamOutput, error) {
+func (m *MockFirehoseAPI) DescribeDeliveryStreamWithContext(arg0 context.Context, arg1 *firehose.DescribeDeliveryStreamInput, arg2 ...request.Option) (*firehose.DescribeDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockFirehoseAPIMockRecorder) ListDeliveryStreamsRequest(arg0 interface
 }
 
 // ListDeliveryStreamsWithContext mocks base method
-func (m *MockFirehoseAPI) ListDeliveryStreamsWithContext(arg0 aws.Context, arg1 *firehose.ListDeliveryStreamsInput, arg2 ...request.Option) (*firehose.ListDeliveryStreamsOutput, error) {
+func (m *MockFirehoseAPI) ListDeliveryStreamsWithContext(arg0 context.Context, arg1 *firehose.ListDeliveryStreamsInput, arg2 ...request.Option) (*firehose.ListDeliveryStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockFirehoseAPIMockRecorder) ListTagsForDeliveryStreamRequest(arg0 int
 }
 
 // ListTagsForDeliveryStreamWithContext mocks base method
-func (m *MockFirehoseAPI) ListTagsForDeliveryStreamWithContext(arg0 aws.Context, arg1 *firehose.ListTagsForDeliveryStreamInput, arg2 ...request.Option) (*firehose.ListTagsForDeliveryStreamOutput, error) {
+func (m *MockFirehoseAPI) ListTagsForDeliveryStreamWithContext(arg0 context.Context, arg1 *firehose.ListTagsForDeliveryStreamInput, arg2 ...request.Option) (*firehose.ListTagsForDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -331,7 +331,7 @@ func (mr *MockFirehoseAPIMockRecorder) PutRecordBatchRequest(arg0 interface{}) *
 }
 
 // PutRecordBatchWithContext mocks base method
-func (m *MockFirehoseAPI) PutRecordBatchWithContext(arg0 aws.Context, arg1 *firehose.PutRecordBatchInput, arg2 ...request.Option) (*firehose.PutRecordBatchOutput, error) {
+func (m *MockFirehoseAPI) PutRecordBatchWithContext(arg0 context.Context, arg1 *firehose.PutRecordBatchInput, arg2 ...request.Option) (*firehose.PutRecordBatchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockFirehoseAPIMockRecorder) PutRecordRequest(arg0 interface{}) *gomoc
 }
 
 // PutRecordWithContext mocks base method
-func (m *MockFirehoseAPI) PutRecordWithContext(arg0 aws.Context, arg1 *firehose.PutRecordInput, arg2 ...request.Option) (*firehose.PutRecordOutput, error) {
+func (m *MockFirehoseAPI) PutRecordWithContext(arg0 context.Context, arg1 *firehose.PutRecordInput, arg2 ...request.Option) (*firehose.PutRecordOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockFirehoseAPIMockRecorder) StartDeliveryStreamEncryptionRequest(arg0
 }
 
 // StartDeliveryStreamEncryptionWithContext mocks base method
-func (m *MockFirehoseAPI) StartDeliveryStreamEncryptionWithContext(arg0 aws.Context, arg1 *firehose.StartDeliveryStreamEncryptionInput, arg2 ...request.Option) (*firehose.StartDeliveryStreamEncryptionOutput, error) {
+func (m *MockFirehoseAPI) StartDeliveryStreamEncryptionWithContext(arg0 context.Context, arg1 *firehose.StartDeliveryStreamEncryptionInput, arg2 ...request.Option) (*firehose.StartDeliveryStreamEncryptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockFirehoseAPIMockRecorder) StopDeliveryStreamEncryptionRequest(arg0 
 }
 
 // StopDeliveryStreamEncryptionWithContext mocks base method
-func (m *MockFirehoseAPI) StopDeliveryStreamEncryptionWithContext(arg0 aws.Context, arg1 *firehose.StopDeliveryStreamEncryptionInput, arg2 ...request.Option) (*firehose.StopDeliveryStreamEncryptionOutput, error) {
+func (m *MockFirehoseAPI) StopDeliveryStreamEncryptionWithContext(arg0 context.Context, arg1 *firehose.StopDeliveryStreamEncryptionInput, arg2 ...request.Option) (*firehose.StopDeliveryStreamEncryptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockFirehoseAPIMockRecorder) TagDeliveryStreamRequest(arg0 interface{}
 }
 
 // TagDeliveryStreamWithContext mocks base method
-func (m *MockFirehoseAPI) TagDeliveryStreamWithContext(arg0 aws.Context, arg1 *firehose.TagDeliveryStreamInput, arg2 ...request.Option) (*firehose.TagDeliveryStreamOutput, error) {
+func (m *MockFirehoseAPI) TagDeliveryStreamWithContext(arg0 context.Context, arg1 *firehose.TagDeliveryStreamInput, arg2 ...request.Option) (*firehose.TagDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockFirehoseAPIMockRecorder) UntagDeliveryStreamRequest(arg0 interface
 }
 
 // UntagDeliveryStreamWithContext mocks base method
-func (m *MockFirehoseAPI) UntagDeliveryStreamWithContext(arg0 aws.Context, arg1 *firehose.UntagDeliveryStreamInput, arg2 ...request.Option) (*firehose.UntagDeliveryStreamOutput, error) {
+func (m *MockFirehoseAPI) UntagDeliveryStreamWithContext(arg0 context.Context, arg1 *firehose.UntagDeliveryStreamInput, arg2 ...request.Option) (*firehose.UntagDeliveryStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockFirehoseAPIMockRecorder) UpdateDestinationRequest(arg0 interface{}
 }
 
 // UpdateDestinationWithContext mocks base method
-func (m *MockFirehoseAPI) UpdateDestinationWithContext(arg0 aws.Context, arg1 *firehose.UpdateDestinationInput, arg2 ...request.Option) (*firehose.UpdateDestinationOutput, error) {
+func (m *MockFirehoseAPI) UpdateDestinationWithContext(arg0 context.Context, arg1 *firehose.UpdateDestinationInput, arg2 ...request.Option) (*firehose.UpdateDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

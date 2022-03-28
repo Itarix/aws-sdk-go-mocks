@@ -5,7 +5,7 @@
 package medialivemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	medialive "github.com/aws/aws-sdk-go/service/medialive"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaLiveAPIMockRecorder) BatchUpdateScheduleRequest(arg0 interfac
 }
 
 // BatchUpdateScheduleWithContext mocks base method
-func (m *MockMediaLiveAPI) BatchUpdateScheduleWithContext(arg0 aws.Context, arg1 *medialive.BatchUpdateScheduleInput, arg2 ...request.Option) (*medialive.BatchUpdateScheduleOutput, error) {
+func (m *MockMediaLiveAPI) BatchUpdateScheduleWithContext(arg0 context.Context, arg1 *medialive.BatchUpdateScheduleInput, arg2 ...request.Option) (*medialive.BatchUpdateScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMediaLiveAPIMockRecorder) CreateChannelRequest(arg0 interface{}) *
 }
 
 // CreateChannelWithContext mocks base method
-func (m *MockMediaLiveAPI) CreateChannelWithContext(arg0 aws.Context, arg1 *medialive.CreateChannelInput, arg2 ...request.Option) (*medialive.CreateChannelOutput, error) {
+func (m *MockMediaLiveAPI) CreateChannelWithContext(arg0 context.Context, arg1 *medialive.CreateChannelInput, arg2 ...request.Option) (*medialive.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -196,7 +196,7 @@ func (mr *MockMediaLiveAPIMockRecorder) CreateInputSecurityGroupRequest(arg0 int
 }
 
 // CreateInputSecurityGroupWithContext mocks base method
-func (m *MockMediaLiveAPI) CreateInputSecurityGroupWithContext(arg0 aws.Context, arg1 *medialive.CreateInputSecurityGroupInput, arg2 ...request.Option) (*medialive.CreateInputSecurityGroupOutput, error) {
+func (m *MockMediaLiveAPI) CreateInputSecurityGroupWithContext(arg0 context.Context, arg1 *medialive.CreateInputSecurityGroupInput, arg2 ...request.Option) (*medialive.CreateInputSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaLiveAPIMockRecorder) CreateInputSecurityGroupWithContext(arg0
 }
 
 // CreateInputWithContext mocks base method
-func (m *MockMediaLiveAPI) CreateInputWithContext(arg0 aws.Context, arg1 *medialive.CreateInputInput, arg2 ...request.Option) (*medialive.CreateInputOutput, error) {
+func (m *MockMediaLiveAPI) CreateInputWithContext(arg0 context.Context, arg1 *medialive.CreateInputInput, arg2 ...request.Option) (*medialive.CreateInputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteChannelRequest(arg0 interface{}) *
 }
 
 // DeleteChannelWithContext mocks base method
-func (m *MockMediaLiveAPI) DeleteChannelWithContext(arg0 aws.Context, arg1 *medialive.DeleteChannelInput, arg2 ...request.Option) (*medialive.DeleteChannelOutput, error) {
+func (m *MockMediaLiveAPI) DeleteChannelWithContext(arg0 context.Context, arg1 *medialive.DeleteChannelInput, arg2 ...request.Option) (*medialive.DeleteChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -346,7 +346,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteInputSecurityGroupRequest(arg0 int
 }
 
 // DeleteInputSecurityGroupWithContext mocks base method
-func (m *MockMediaLiveAPI) DeleteInputSecurityGroupWithContext(arg0 aws.Context, arg1 *medialive.DeleteInputSecurityGroupInput, arg2 ...request.Option) (*medialive.DeleteInputSecurityGroupOutput, error) {
+func (m *MockMediaLiveAPI) DeleteInputSecurityGroupWithContext(arg0 context.Context, arg1 *medialive.DeleteInputSecurityGroupInput, arg2 ...request.Option) (*medialive.DeleteInputSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteInputSecurityGroupWithContext(arg0
 }
 
 // DeleteInputWithContext mocks base method
-func (m *MockMediaLiveAPI) DeleteInputWithContext(arg0 aws.Context, arg1 *medialive.DeleteInputInput, arg2 ...request.Option) (*medialive.DeleteInputOutput, error) {
+func (m *MockMediaLiveAPI) DeleteInputWithContext(arg0 context.Context, arg1 *medialive.DeleteInputInput, arg2 ...request.Option) (*medialive.DeleteInputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteReservationRequest(arg0 interface{
 }
 
 // DeleteReservationWithContext mocks base method
-func (m *MockMediaLiveAPI) DeleteReservationWithContext(arg0 aws.Context, arg1 *medialive.DeleteReservationInput, arg2 ...request.Option) (*medialive.DeleteReservationOutput, error) {
+func (m *MockMediaLiveAPI) DeleteReservationWithContext(arg0 context.Context, arg1 *medialive.DeleteReservationInput, arg2 ...request.Option) (*medialive.DeleteReservationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeChannelRequest(arg0 interface{})
 }
 
 // DescribeChannelWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeChannelWithContext(arg0 aws.Context, arg1 *medialive.DescribeChannelInput, arg2 ...request.Option) (*medialive.DescribeChannelOutput, error) {
+func (m *MockMediaLiveAPI) DescribeChannelWithContext(arg0 context.Context, arg1 *medialive.DescribeChannelInput, arg2 ...request.Option) (*medialive.DescribeChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -546,7 +546,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeInputSecurityGroupRequest(arg0 i
 }
 
 // DescribeInputSecurityGroupWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeInputSecurityGroupWithContext(arg0 aws.Context, arg1 *medialive.DescribeInputSecurityGroupInput, arg2 ...request.Option) (*medialive.DescribeInputSecurityGroupOutput, error) {
+func (m *MockMediaLiveAPI) DescribeInputSecurityGroupWithContext(arg0 context.Context, arg1 *medialive.DescribeInputSecurityGroupInput, arg2 ...request.Option) (*medialive.DescribeInputSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeInputSecurityGroupWithContext(ar
 }
 
 // DescribeInputWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeInputWithContext(arg0 aws.Context, arg1 *medialive.DescribeInputInput, arg2 ...request.Option) (*medialive.DescribeInputOutput, error) {
+func (m *MockMediaLiveAPI) DescribeInputWithContext(arg0 context.Context, arg1 *medialive.DescribeInputInput, arg2 ...request.Option) (*medialive.DescribeInputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeOfferingRequest(arg0 interface{}
 }
 
 // DescribeOfferingWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeOfferingWithContext(arg0 aws.Context, arg1 *medialive.DescribeOfferingInput, arg2 ...request.Option) (*medialive.DescribeOfferingOutput, error) {
+func (m *MockMediaLiveAPI) DescribeOfferingWithContext(arg0 context.Context, arg1 *medialive.DescribeOfferingInput, arg2 ...request.Option) (*medialive.DescribeOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeReservationRequest(arg0 interfac
 }
 
 // DescribeReservationWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeReservationWithContext(arg0 aws.Context, arg1 *medialive.DescribeReservationInput, arg2 ...request.Option) (*medialive.DescribeReservationOutput, error) {
+func (m *MockMediaLiveAPI) DescribeReservationWithContext(arg0 context.Context, arg1 *medialive.DescribeReservationInput, arg2 ...request.Option) (*medialive.DescribeReservationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeSchedulePages(arg0, arg1 interfa
 }
 
 // DescribeSchedulePagesWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeSchedulePagesWithContext(arg0 aws.Context, arg1 *medialive.DescribeScheduleInput, arg2 func(*medialive.DescribeScheduleOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaLiveAPI) DescribeSchedulePagesWithContext(arg0 context.Context, arg1 *medialive.DescribeScheduleInput, arg2 func(*medialive.DescribeScheduleOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeScheduleRequest(arg0 interface{}
 }
 
 // DescribeScheduleWithContext mocks base method
-func (m *MockMediaLiveAPI) DescribeScheduleWithContext(arg0 aws.Context, arg1 *medialive.DescribeScheduleInput, arg2 ...request.Option) (*medialive.DescribeScheduleOutput, error) {
+func (m *MockMediaLiveAPI) DescribeScheduleWithContext(arg0 context.Context, arg1 *medialive.DescribeScheduleInput, arg2 ...request.Option) (*medialive.DescribeScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListChannelsPages(arg0, arg1 interface{}
 }
 
 // ListChannelsPagesWithContext mocks base method
-func (m *MockMediaLiveAPI) ListChannelsPagesWithContext(arg0 aws.Context, arg1 *medialive.ListChannelsInput, arg2 func(*medialive.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaLiveAPI) ListChannelsPagesWithContext(arg0 context.Context, arg1 *medialive.ListChannelsInput, arg2 func(*medialive.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -832,7 +832,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListChannelsRequest(arg0 interface{}) *g
 }
 
 // ListChannelsWithContext mocks base method
-func (m *MockMediaLiveAPI) ListChannelsWithContext(arg0 aws.Context, arg1 *medialive.ListChannelsInput, arg2 ...request.Option) (*medialive.ListChannelsOutput, error) {
+func (m *MockMediaLiveAPI) ListChannelsWithContext(arg0 context.Context, arg1 *medialive.ListChannelsInput, arg2 ...request.Option) (*medialive.ListChannelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListInputSecurityGroupsPages(arg0, arg1 
 }
 
 // ListInputSecurityGroupsPagesWithContext mocks base method
-func (m *MockMediaLiveAPI) ListInputSecurityGroupsPagesWithContext(arg0 aws.Context, arg1 *medialive.ListInputSecurityGroupsInput, arg2 func(*medialive.ListInputSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaLiveAPI) ListInputSecurityGroupsPagesWithContext(arg0 context.Context, arg1 *medialive.ListInputSecurityGroupsInput, arg2 func(*medialive.ListInputSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -915,7 +915,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListInputSecurityGroupsRequest(arg0 inte
 }
 
 // ListInputSecurityGroupsWithContext mocks base method
-func (m *MockMediaLiveAPI) ListInputSecurityGroupsWithContext(arg0 aws.Context, arg1 *medialive.ListInputSecurityGroupsInput, arg2 ...request.Option) (*medialive.ListInputSecurityGroupsOutput, error) {
+func (m *MockMediaLiveAPI) ListInputSecurityGroupsWithContext(arg0 context.Context, arg1 *medialive.ListInputSecurityGroupsInput, arg2 ...request.Option) (*medialive.ListInputSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -964,7 +964,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListInputsPages(arg0, arg1 interface{}) 
 }
 
 // ListInputsPagesWithContext mocks base method
-func (m *MockMediaLiveAPI) ListInputsPagesWithContext(arg0 aws.Context, arg1 *medialive.ListInputsInput, arg2 func(*medialive.ListInputsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaLiveAPI) ListInputsPagesWithContext(arg0 context.Context, arg1 *medialive.ListInputsInput, arg2 func(*medialive.ListInputsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -998,7 +998,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListInputsRequest(arg0 interface{}) *gom
 }
 
 // ListInputsWithContext mocks base method
-func (m *MockMediaLiveAPI) ListInputsWithContext(arg0 aws.Context, arg1 *medialive.ListInputsInput, arg2 ...request.Option) (*medialive.ListInputsOutput, error) {
+func (m *MockMediaLiveAPI) ListInputsWithContext(arg0 context.Context, arg1 *medialive.ListInputsInput, arg2 ...request.Option) (*medialive.ListInputsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1047,7 +1047,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListOfferingsPages(arg0, arg1 interface{
 }
 
 // ListOfferingsPagesWithContext mocks base method
-func (m *MockMediaLiveAPI) ListOfferingsPagesWithContext(arg0 aws.Context, arg1 *medialive.ListOfferingsInput, arg2 func(*medialive.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaLiveAPI) ListOfferingsPagesWithContext(arg0 context.Context, arg1 *medialive.ListOfferingsInput, arg2 func(*medialive.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1081,7 +1081,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListOfferingsRequest(arg0 interface{}) *
 }
 
 // ListOfferingsWithContext mocks base method
-func (m *MockMediaLiveAPI) ListOfferingsWithContext(arg0 aws.Context, arg1 *medialive.ListOfferingsInput, arg2 ...request.Option) (*medialive.ListOfferingsOutput, error) {
+func (m *MockMediaLiveAPI) ListOfferingsWithContext(arg0 context.Context, arg1 *medialive.ListOfferingsInput, arg2 ...request.Option) (*medialive.ListOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1130,7 +1130,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListReservationsPages(arg0, arg1 interfa
 }
 
 // ListReservationsPagesWithContext mocks base method
-func (m *MockMediaLiveAPI) ListReservationsPagesWithContext(arg0 aws.Context, arg1 *medialive.ListReservationsInput, arg2 func(*medialive.ListReservationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaLiveAPI) ListReservationsPagesWithContext(arg0 context.Context, arg1 *medialive.ListReservationsInput, arg2 func(*medialive.ListReservationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1164,7 +1164,7 @@ func (mr *MockMediaLiveAPIMockRecorder) ListReservationsRequest(arg0 interface{}
 }
 
 // ListReservationsWithContext mocks base method
-func (m *MockMediaLiveAPI) ListReservationsWithContext(arg0 aws.Context, arg1 *medialive.ListReservationsInput, arg2 ...request.Option) (*medialive.ListReservationsOutput, error) {
+func (m *MockMediaLiveAPI) ListReservationsWithContext(arg0 context.Context, arg1 *medialive.ListReservationsInput, arg2 ...request.Option) (*medialive.ListReservationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockMediaLiveAPIMockRecorder) PurchaseOfferingRequest(arg0 interface{}
 }
 
 // PurchaseOfferingWithContext mocks base method
-func (m *MockMediaLiveAPI) PurchaseOfferingWithContext(arg0 aws.Context, arg1 *medialive.PurchaseOfferingInput, arg2 ...request.Option) (*medialive.PurchaseOfferingOutput, error) {
+func (m *MockMediaLiveAPI) PurchaseOfferingWithContext(arg0 context.Context, arg1 *medialive.PurchaseOfferingInput, arg2 ...request.Option) (*medialive.PurchaseOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1264,7 +1264,7 @@ func (mr *MockMediaLiveAPIMockRecorder) StartChannelRequest(arg0 interface{}) *g
 }
 
 // StartChannelWithContext mocks base method
-func (m *MockMediaLiveAPI) StartChannelWithContext(arg0 aws.Context, arg1 *medialive.StartChannelInput, arg2 ...request.Option) (*medialive.StartChannelOutput, error) {
+func (m *MockMediaLiveAPI) StartChannelWithContext(arg0 context.Context, arg1 *medialive.StartChannelInput, arg2 ...request.Option) (*medialive.StartChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1314,7 +1314,7 @@ func (mr *MockMediaLiveAPIMockRecorder) StopChannelRequest(arg0 interface{}) *go
 }
 
 // StopChannelWithContext mocks base method
-func (m *MockMediaLiveAPI) StopChannelWithContext(arg0 aws.Context, arg1 *medialive.StopChannelInput, arg2 ...request.Option) (*medialive.StopChannelOutput, error) {
+func (m *MockMediaLiveAPI) StopChannelWithContext(arg0 context.Context, arg1 *medialive.StopChannelInput, arg2 ...request.Option) (*medialive.StopChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1364,7 +1364,7 @@ func (mr *MockMediaLiveAPIMockRecorder) UpdateChannelRequest(arg0 interface{}) *
 }
 
 // UpdateChannelWithContext mocks base method
-func (m *MockMediaLiveAPI) UpdateChannelWithContext(arg0 aws.Context, arg1 *medialive.UpdateChannelInput, arg2 ...request.Option) (*medialive.UpdateChannelOutput, error) {
+func (m *MockMediaLiveAPI) UpdateChannelWithContext(arg0 context.Context, arg1 *medialive.UpdateChannelInput, arg2 ...request.Option) (*medialive.UpdateChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1444,7 +1444,7 @@ func (mr *MockMediaLiveAPIMockRecorder) UpdateInputSecurityGroupRequest(arg0 int
 }
 
 // UpdateInputSecurityGroupWithContext mocks base method
-func (m *MockMediaLiveAPI) UpdateInputSecurityGroupWithContext(arg0 aws.Context, arg1 *medialive.UpdateInputSecurityGroupInput, arg2 ...request.Option) (*medialive.UpdateInputSecurityGroupOutput, error) {
+func (m *MockMediaLiveAPI) UpdateInputSecurityGroupWithContext(arg0 context.Context, arg1 *medialive.UpdateInputSecurityGroupInput, arg2 ...request.Option) (*medialive.UpdateInputSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1464,7 +1464,7 @@ func (mr *MockMediaLiveAPIMockRecorder) UpdateInputSecurityGroupWithContext(arg0
 }
 
 // UpdateInputWithContext mocks base method
-func (m *MockMediaLiveAPI) UpdateInputWithContext(arg0 aws.Context, arg1 *medialive.UpdateInputInput, arg2 ...request.Option) (*medialive.UpdateInputOutput, error) {
+func (m *MockMediaLiveAPI) UpdateInputWithContext(arg0 context.Context, arg1 *medialive.UpdateInputInput, arg2 ...request.Option) (*medialive.UpdateInputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

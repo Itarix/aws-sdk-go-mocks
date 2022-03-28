@@ -5,7 +5,7 @@
 package globalacceleratormock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	globalaccelerator "github.com/aws/aws-sdk-go/service/globalaccelerator"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) CreateAcceleratorRequest(arg0 in
 }
 
 // CreateAcceleratorWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) CreateAcceleratorWithContext(arg0 aws.Context, arg1 *globalaccelerator.CreateAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.CreateAcceleratorOutput, error) {
+func (m *MockGlobalAcceleratorAPI) CreateAcceleratorWithContext(arg0 context.Context, arg1 *globalaccelerator.CreateAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.CreateAcceleratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) CreateEndpointGroupRequest(arg0 
 }
 
 // CreateEndpointGroupWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) CreateEndpointGroupWithContext(arg0 aws.Context, arg1 *globalaccelerator.CreateEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.CreateEndpointGroupOutput, error) {
+func (m *MockGlobalAcceleratorAPI) CreateEndpointGroupWithContext(arg0 context.Context, arg1 *globalaccelerator.CreateEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.CreateEndpointGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) CreateListenerRequest(arg0 inter
 }
 
 // CreateListenerWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) CreateListenerWithContext(arg0 aws.Context, arg1 *globalaccelerator.CreateListenerInput, arg2 ...request.Option) (*globalaccelerator.CreateListenerOutput, error) {
+func (m *MockGlobalAcceleratorAPI) CreateListenerWithContext(arg0 context.Context, arg1 *globalaccelerator.CreateListenerInput, arg2 ...request.Option) (*globalaccelerator.CreateListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DeleteAcceleratorRequest(arg0 in
 }
 
 // DeleteAcceleratorWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DeleteAcceleratorWithContext(arg0 aws.Context, arg1 *globalaccelerator.DeleteAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.DeleteAcceleratorOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DeleteAcceleratorWithContext(arg0 context.Context, arg1 *globalaccelerator.DeleteAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.DeleteAcceleratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DeleteEndpointGroupRequest(arg0 
 }
 
 // DeleteEndpointGroupWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DeleteEndpointGroupWithContext(arg0 aws.Context, arg1 *globalaccelerator.DeleteEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.DeleteEndpointGroupOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DeleteEndpointGroupWithContext(arg0 context.Context, arg1 *globalaccelerator.DeleteEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.DeleteEndpointGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DeleteListenerRequest(arg0 inter
 }
 
 // DeleteListenerWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DeleteListenerWithContext(arg0 aws.Context, arg1 *globalaccelerator.DeleteListenerInput, arg2 ...request.Option) (*globalaccelerator.DeleteListenerOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DeleteListenerWithContext(arg0 context.Context, arg1 *globalaccelerator.DeleteListenerInput, arg2 ...request.Option) (*globalaccelerator.DeleteListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -381,7 +381,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DescribeAcceleratorAttributesReq
 }
 
 // DescribeAcceleratorAttributesWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DescribeAcceleratorAttributesWithContext(arg0 aws.Context, arg1 *globalaccelerator.DescribeAcceleratorAttributesInput, arg2 ...request.Option) (*globalaccelerator.DescribeAcceleratorAttributesOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DescribeAcceleratorAttributesWithContext(arg0 context.Context, arg1 *globalaccelerator.DescribeAcceleratorAttributesInput, arg2 ...request.Option) (*globalaccelerator.DescribeAcceleratorAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DescribeAcceleratorRequest(arg0 
 }
 
 // DescribeAcceleratorWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DescribeAcceleratorWithContext(arg0 aws.Context, arg1 *globalaccelerator.DescribeAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.DescribeAcceleratorOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DescribeAcceleratorWithContext(arg0 context.Context, arg1 *globalaccelerator.DescribeAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.DescribeAcceleratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DescribeEndpointGroupRequest(arg
 }
 
 // DescribeEndpointGroupWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DescribeEndpointGroupWithContext(arg0 aws.Context, arg1 *globalaccelerator.DescribeEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.DescribeEndpointGroupOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DescribeEndpointGroupWithContext(arg0 context.Context, arg1 *globalaccelerator.DescribeEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.DescribeEndpointGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DescribeListenerRequest(arg0 int
 }
 
 // DescribeListenerWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) DescribeListenerWithContext(arg0 aws.Context, arg1 *globalaccelerator.DescribeListenerInput, arg2 ...request.Option) (*globalaccelerator.DescribeListenerOutput, error) {
+func (m *MockGlobalAcceleratorAPI) DescribeListenerWithContext(arg0 context.Context, arg1 *globalaccelerator.DescribeListenerInput, arg2 ...request.Option) (*globalaccelerator.DescribeListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) ListAcceleratorsRequest(arg0 int
 }
 
 // ListAcceleratorsWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) ListAcceleratorsWithContext(arg0 aws.Context, arg1 *globalaccelerator.ListAcceleratorsInput, arg2 ...request.Option) (*globalaccelerator.ListAcceleratorsOutput, error) {
+func (m *MockGlobalAcceleratorAPI) ListAcceleratorsWithContext(arg0 context.Context, arg1 *globalaccelerator.ListAcceleratorsInput, arg2 ...request.Option) (*globalaccelerator.ListAcceleratorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) ListEndpointGroupsRequest(arg0 i
 }
 
 // ListEndpointGroupsWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) ListEndpointGroupsWithContext(arg0 aws.Context, arg1 *globalaccelerator.ListEndpointGroupsInput, arg2 ...request.Option) (*globalaccelerator.ListEndpointGroupsOutput, error) {
+func (m *MockGlobalAcceleratorAPI) ListEndpointGroupsWithContext(arg0 context.Context, arg1 *globalaccelerator.ListEndpointGroupsInput, arg2 ...request.Option) (*globalaccelerator.ListEndpointGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) ListListenersRequest(arg0 interf
 }
 
 // ListListenersWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) ListListenersWithContext(arg0 aws.Context, arg1 *globalaccelerator.ListListenersInput, arg2 ...request.Option) (*globalaccelerator.ListListenersOutput, error) {
+func (m *MockGlobalAcceleratorAPI) ListListenersWithContext(arg0 context.Context, arg1 *globalaccelerator.ListListenersInput, arg2 ...request.Option) (*globalaccelerator.ListListenersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) UpdateAcceleratorAttributesReque
 }
 
 // UpdateAcceleratorAttributesWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) UpdateAcceleratorAttributesWithContext(arg0 aws.Context, arg1 *globalaccelerator.UpdateAcceleratorAttributesInput, arg2 ...request.Option) (*globalaccelerator.UpdateAcceleratorAttributesOutput, error) {
+func (m *MockGlobalAcceleratorAPI) UpdateAcceleratorAttributesWithContext(arg0 context.Context, arg1 *globalaccelerator.UpdateAcceleratorAttributesInput, arg2 ...request.Option) (*globalaccelerator.UpdateAcceleratorAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) UpdateAcceleratorRequest(arg0 in
 }
 
 // UpdateAcceleratorWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) UpdateAcceleratorWithContext(arg0 aws.Context, arg1 *globalaccelerator.UpdateAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.UpdateAcceleratorOutput, error) {
+func (m *MockGlobalAcceleratorAPI) UpdateAcceleratorWithContext(arg0 context.Context, arg1 *globalaccelerator.UpdateAcceleratorInput, arg2 ...request.Option) (*globalaccelerator.UpdateAcceleratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) UpdateEndpointGroupRequest(arg0 
 }
 
 // UpdateEndpointGroupWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) UpdateEndpointGroupWithContext(arg0 aws.Context, arg1 *globalaccelerator.UpdateEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.UpdateEndpointGroupOutput, error) {
+func (m *MockGlobalAcceleratorAPI) UpdateEndpointGroupWithContext(arg0 context.Context, arg1 *globalaccelerator.UpdateEndpointGroupInput, arg2 ...request.Option) (*globalaccelerator.UpdateEndpointGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) UpdateListenerRequest(arg0 inter
 }
 
 // UpdateListenerWithContext mocks base method
-func (m *MockGlobalAcceleratorAPI) UpdateListenerWithContext(arg0 aws.Context, arg1 *globalaccelerator.UpdateListenerInput, arg2 ...request.Option) (*globalaccelerator.UpdateListenerOutput, error) {
+func (m *MockGlobalAcceleratorAPI) UpdateListenerWithContext(arg0 context.Context, arg1 *globalaccelerator.UpdateListenerInput, arg2 ...request.Option) (*globalaccelerator.UpdateListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

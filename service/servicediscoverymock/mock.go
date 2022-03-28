@@ -5,7 +5,7 @@
 package servicediscoverymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	servicediscovery "github.com/aws/aws-sdk-go/service/servicediscovery"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) CreateHttpNamespaceRequest(arg0 i
 }
 
 // CreateHttpNamespaceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) CreateHttpNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreateHttpNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreateHttpNamespaceOutput, error) {
+func (m *MockServiceDiscoveryAPI) CreateHttpNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.CreateHttpNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreateHttpNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePrivateDnsNamespaceRequest(
 }
 
 // CreatePrivateDnsNamespaceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreatePrivateDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePrivateDnsNamespaceOutput, error) {
+func (m *MockServiceDiscoveryAPI) CreatePrivateDnsNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.CreatePrivateDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePrivateDnsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) CreatePublicDnsNamespaceRequest(a
 }
 
 // CreatePublicDnsNamespaceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreatePublicDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePublicDnsNamespaceOutput, error) {
+func (m *MockServiceDiscoveryAPI) CreatePublicDnsNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.CreatePublicDnsNamespaceInput, arg2 ...request.Option) (*servicediscovery.CreatePublicDnsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) CreateServiceRequest(arg0 interfa
 }
 
 // CreateServiceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) CreateServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.CreateServiceInput, arg2 ...request.Option) (*servicediscovery.CreateServiceOutput, error) {
+func (m *MockServiceDiscoveryAPI) CreateServiceWithContext(arg0 context.Context, arg1 *servicediscovery.CreateServiceInput, arg2 ...request.Option) (*servicediscovery.CreateServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteNamespaceRequest(arg0 inter
 }
 
 // DeleteNamespaceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) DeleteNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.DeleteNamespaceInput, arg2 ...request.Option) (*servicediscovery.DeleteNamespaceOutput, error) {
+func (m *MockServiceDiscoveryAPI) DeleteNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.DeleteNamespaceInput, arg2 ...request.Option) (*servicediscovery.DeleteNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) DeleteServiceRequest(arg0 interfa
 }
 
 // DeleteServiceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) DeleteServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.DeleteServiceInput, arg2 ...request.Option) (*servicediscovery.DeleteServiceOutput, error) {
+func (m *MockServiceDiscoveryAPI) DeleteServiceWithContext(arg0 context.Context, arg1 *servicediscovery.DeleteServiceInput, arg2 ...request.Option) (*servicediscovery.DeleteServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) DeregisterInstanceRequest(arg0 in
 }
 
 // DeregisterInstanceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) DeregisterInstanceWithContext(arg0 aws.Context, arg1 *servicediscovery.DeregisterInstanceInput, arg2 ...request.Option) (*servicediscovery.DeregisterInstanceOutput, error) {
+func (m *MockServiceDiscoveryAPI) DeregisterInstanceWithContext(arg0 context.Context, arg1 *servicediscovery.DeregisterInstanceInput, arg2 ...request.Option) (*servicediscovery.DeregisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesRequest(arg0 int
 }
 
 // DiscoverInstancesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) DiscoverInstancesWithContext(arg0 aws.Context, arg1 *servicediscovery.DiscoverInstancesInput, arg2 ...request.Option) (*servicediscovery.DiscoverInstancesOutput, error) {
+func (m *MockServiceDiscoveryAPI) DiscoverInstancesWithContext(arg0 context.Context, arg1 *servicediscovery.DiscoverInstancesInput, arg2 ...request.Option) (*servicediscovery.DiscoverInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstanceRequest(arg0 interface
 }
 
 // GetInstanceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) GetInstanceWithContext(arg0 aws.Context, arg1 *servicediscovery.GetInstanceInput, arg2 ...request.Option) (*servicediscovery.GetInstanceOutput, error) {
+func (m *MockServiceDiscoveryAPI) GetInstanceWithContext(arg0 context.Context, arg1 *servicediscovery.GetInstanceInput, arg2 ...request.Option) (*servicediscovery.GetInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatusPages(arg
 }
 
 // GetInstancesHealthStatusPagesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 func(*servicediscovery.GetInstancesHealthStatusOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusPagesWithContext(arg0 context.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 func(*servicediscovery.GetInstancesHealthStatusOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -549,7 +549,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) GetInstancesHealthStatusRequest(a
 }
 
 // GetInstancesHealthStatusWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusWithContext(arg0 aws.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 ...request.Option) (*servicediscovery.GetInstancesHealthStatusOutput, error) {
+func (m *MockServiceDiscoveryAPI) GetInstancesHealthStatusWithContext(arg0 context.Context, arg1 *servicediscovery.GetInstancesHealthStatusInput, arg2 ...request.Option) (*servicediscovery.GetInstancesHealthStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) GetNamespaceRequest(arg0 interfac
 }
 
 // GetNamespaceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) GetNamespaceWithContext(arg0 aws.Context, arg1 *servicediscovery.GetNamespaceInput, arg2 ...request.Option) (*servicediscovery.GetNamespaceOutput, error) {
+func (m *MockServiceDiscoveryAPI) GetNamespaceWithContext(arg0 context.Context, arg1 *servicediscovery.GetNamespaceInput, arg2 ...request.Option) (*servicediscovery.GetNamespaceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) GetOperationRequest(arg0 interfac
 }
 
 // GetOperationWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) GetOperationWithContext(arg0 aws.Context, arg1 *servicediscovery.GetOperationInput, arg2 ...request.Option) (*servicediscovery.GetOperationOutput, error) {
+func (m *MockServiceDiscoveryAPI) GetOperationWithContext(arg0 context.Context, arg1 *servicediscovery.GetOperationInput, arg2 ...request.Option) (*servicediscovery.GetOperationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) GetServiceRequest(arg0 interface{
 }
 
 // GetServiceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) GetServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.GetServiceInput, arg2 ...request.Option) (*servicediscovery.GetServiceOutput, error) {
+func (m *MockServiceDiscoveryAPI) GetServiceWithContext(arg0 context.Context, arg1 *servicediscovery.GetServiceInput, arg2 ...request.Option) (*servicediscovery.GetServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -748,7 +748,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstancesPages(arg0, arg1 int
 }
 
 // ListInstancesPagesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListInstancesPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListInstancesInput, arg2 func(*servicediscovery.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceDiscoveryAPI) ListInstancesPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListInstancesInput, arg2 func(*servicediscovery.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -782,7 +782,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListInstancesRequest(arg0 interfa
 }
 
 // ListInstancesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListInstancesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListInstancesInput, arg2 ...request.Option) (*servicediscovery.ListInstancesOutput, error) {
+func (m *MockServiceDiscoveryAPI) ListInstancesWithContext(arg0 context.Context, arg1 *servicediscovery.ListInstancesInput, arg2 ...request.Option) (*servicediscovery.ListInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespacesPages(arg0, arg1 in
 }
 
 // ListNamespacesPagesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListNamespacesPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 func(*servicediscovery.ListNamespacesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceDiscoveryAPI) ListNamespacesPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 func(*servicediscovery.ListNamespacesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -865,7 +865,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListNamespacesRequest(arg0 interf
 }
 
 // ListNamespacesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListNamespacesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 ...request.Option) (*servicediscovery.ListNamespacesOutput, error) {
+func (m *MockServiceDiscoveryAPI) ListNamespacesWithContext(arg0 context.Context, arg1 *servicediscovery.ListNamespacesInput, arg2 ...request.Option) (*servicediscovery.ListNamespacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -914,7 +914,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperationsPages(arg0, arg1 in
 }
 
 // ListOperationsPagesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListOperationsPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListOperationsInput, arg2 func(*servicediscovery.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceDiscoveryAPI) ListOperationsPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListOperationsInput, arg2 func(*servicediscovery.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -948,7 +948,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListOperationsRequest(arg0 interf
 }
 
 // ListOperationsWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListOperationsWithContext(arg0 aws.Context, arg1 *servicediscovery.ListOperationsInput, arg2 ...request.Option) (*servicediscovery.ListOperationsOutput, error) {
+func (m *MockServiceDiscoveryAPI) ListOperationsWithContext(arg0 context.Context, arg1 *servicediscovery.ListOperationsInput, arg2 ...request.Option) (*servicediscovery.ListOperationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -997,7 +997,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListServicesPages(arg0, arg1 inte
 }
 
 // ListServicesPagesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListServicesPagesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListServicesInput, arg2 func(*servicediscovery.ListServicesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockServiceDiscoveryAPI) ListServicesPagesWithContext(arg0 context.Context, arg1 *servicediscovery.ListServicesInput, arg2 func(*servicediscovery.ListServicesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1031,7 +1031,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) ListServicesRequest(arg0 interfac
 }
 
 // ListServicesWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) ListServicesWithContext(arg0 aws.Context, arg1 *servicediscovery.ListServicesInput, arg2 ...request.Option) (*servicediscovery.ListServicesOutput, error) {
+func (m *MockServiceDiscoveryAPI) ListServicesWithContext(arg0 context.Context, arg1 *servicediscovery.ListServicesInput, arg2 ...request.Option) (*servicediscovery.ListServicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1081,7 +1081,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) RegisterInstanceRequest(arg0 inte
 }
 
 // RegisterInstanceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) RegisterInstanceWithContext(arg0 aws.Context, arg1 *servicediscovery.RegisterInstanceInput, arg2 ...request.Option) (*servicediscovery.RegisterInstanceOutput, error) {
+func (m *MockServiceDiscoveryAPI) RegisterInstanceWithContext(arg0 context.Context, arg1 *servicediscovery.RegisterInstanceInput, arg2 ...request.Option) (*servicediscovery.RegisterInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateInstanceCustomHealthStatusR
 }
 
 // UpdateInstanceCustomHealthStatusWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusWithContext(arg0 aws.Context, arg1 *servicediscovery.UpdateInstanceCustomHealthStatusInput, arg2 ...request.Option) (*servicediscovery.UpdateInstanceCustomHealthStatusOutput, error) {
+func (m *MockServiceDiscoveryAPI) UpdateInstanceCustomHealthStatusWithContext(arg0 context.Context, arg1 *servicediscovery.UpdateInstanceCustomHealthStatusInput, arg2 ...request.Option) (*servicediscovery.UpdateInstanceCustomHealthStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1181,7 +1181,7 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) UpdateServiceRequest(arg0 interfa
 }
 
 // UpdateServiceWithContext mocks base method
-func (m *MockServiceDiscoveryAPI) UpdateServiceWithContext(arg0 aws.Context, arg1 *servicediscovery.UpdateServiceInput, arg2 ...request.Option) (*servicediscovery.UpdateServiceOutput, error) {
+func (m *MockServiceDiscoveryAPI) UpdateServiceWithContext(arg0 context.Context, arg1 *servicediscovery.UpdateServiceInput, arg2 ...request.Option) (*servicediscovery.UpdateServiceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

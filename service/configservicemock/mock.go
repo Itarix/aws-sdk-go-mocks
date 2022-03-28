@@ -5,7 +5,7 @@
 package configservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	configservice "github.com/aws/aws-sdk-go/service/configservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockConfigServiceAPIMockRecorder) BatchGetAggregateResourceConfigReque
 }
 
 // BatchGetAggregateResourceConfigWithContext mocks base method
-func (m *MockConfigServiceAPI) BatchGetAggregateResourceConfigWithContext(arg0 aws.Context, arg1 *configservice.BatchGetAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.BatchGetAggregateResourceConfigOutput, error) {
+func (m *MockConfigServiceAPI) BatchGetAggregateResourceConfigWithContext(arg0 context.Context, arg1 *configservice.BatchGetAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.BatchGetAggregateResourceConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockConfigServiceAPIMockRecorder) BatchGetResourceConfigRequest(arg0 i
 }
 
 // BatchGetResourceConfigWithContext mocks base method
-func (m *MockConfigServiceAPI) BatchGetResourceConfigWithContext(arg0 aws.Context, arg1 *configservice.BatchGetResourceConfigInput, arg2 ...request.Option) (*configservice.BatchGetResourceConfigOutput, error) {
+func (m *MockConfigServiceAPI) BatchGetResourceConfigWithContext(arg0 context.Context, arg1 *configservice.BatchGetResourceConfigInput, arg2 ...request.Option) (*configservice.BatchGetResourceConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteAggregationAuthorizationReques
 }
 
 // DeleteAggregationAuthorizationWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteAggregationAuthorizationWithContext(arg0 aws.Context, arg1 *configservice.DeleteAggregationAuthorizationInput, arg2 ...request.Option) (*configservice.DeleteAggregationAuthorizationOutput, error) {
+func (m *MockConfigServiceAPI) DeleteAggregationAuthorizationWithContext(arg0 context.Context, arg1 *configservice.DeleteAggregationAuthorizationInput, arg2 ...request.Option) (*configservice.DeleteAggregationAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteConfigRuleRequest(arg0 interfa
 }
 
 // DeleteConfigRuleWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteConfigRuleWithContext(arg0 aws.Context, arg1 *configservice.DeleteConfigRuleInput, arg2 ...request.Option) (*configservice.DeleteConfigRuleOutput, error) {
+func (m *MockConfigServiceAPI) DeleteConfigRuleWithContext(arg0 context.Context, arg1 *configservice.DeleteConfigRuleInput, arg2 ...request.Option) (*configservice.DeleteConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteConfigurationAggregatorRequest
 }
 
 // DeleteConfigurationAggregatorWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteConfigurationAggregatorWithContext(arg0 aws.Context, arg1 *configservice.DeleteConfigurationAggregatorInput, arg2 ...request.Option) (*configservice.DeleteConfigurationAggregatorOutput, error) {
+func (m *MockConfigServiceAPI) DeleteConfigurationAggregatorWithContext(arg0 context.Context, arg1 *configservice.DeleteConfigurationAggregatorInput, arg2 ...request.Option) (*configservice.DeleteConfigurationAggregatorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteConfigurationRecorderRequest(a
 }
 
 // DeleteConfigurationRecorderWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteConfigurationRecorderWithContext(arg0 aws.Context, arg1 *configservice.DeleteConfigurationRecorderInput, arg2 ...request.Option) (*configservice.DeleteConfigurationRecorderOutput, error) {
+func (m *MockConfigServiceAPI) DeleteConfigurationRecorderWithContext(arg0 context.Context, arg1 *configservice.DeleteConfigurationRecorderInput, arg2 ...request.Option) (*configservice.DeleteConfigurationRecorderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteDeliveryChannelRequest(arg0 in
 }
 
 // DeleteDeliveryChannelWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteDeliveryChannelWithContext(arg0 aws.Context, arg1 *configservice.DeleteDeliveryChannelInput, arg2 ...request.Option) (*configservice.DeleteDeliveryChannelOutput, error) {
+func (m *MockConfigServiceAPI) DeleteDeliveryChannelWithContext(arg0 context.Context, arg1 *configservice.DeleteDeliveryChannelInput, arg2 ...request.Option) (*configservice.DeleteDeliveryChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteEvaluationResultsRequest(arg0 
 }
 
 // DeleteEvaluationResultsWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteEvaluationResultsWithContext(arg0 aws.Context, arg1 *configservice.DeleteEvaluationResultsInput, arg2 ...request.Option) (*configservice.DeleteEvaluationResultsOutput, error) {
+func (m *MockConfigServiceAPI) DeleteEvaluationResultsWithContext(arg0 context.Context, arg1 *configservice.DeleteEvaluationResultsInput, arg2 ...request.Option) (*configservice.DeleteEvaluationResultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeletePendingAggregationRequestReque
 }
 
 // DeletePendingAggregationRequestWithContext mocks base method
-func (m *MockConfigServiceAPI) DeletePendingAggregationRequestWithContext(arg0 aws.Context, arg1 *configservice.DeletePendingAggregationRequestInput, arg2 ...request.Option) (*configservice.DeletePendingAggregationRequestOutput, error) {
+func (m *MockConfigServiceAPI) DeletePendingAggregationRequestWithContext(arg0 context.Context, arg1 *configservice.DeletePendingAggregationRequestInput, arg2 ...request.Option) (*configservice.DeletePendingAggregationRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteRetentionConfigurationRequest(
 }
 
 // DeleteRetentionConfigurationWithContext mocks base method
-func (m *MockConfigServiceAPI) DeleteRetentionConfigurationWithContext(arg0 aws.Context, arg1 *configservice.DeleteRetentionConfigurationInput, arg2 ...request.Option) (*configservice.DeleteRetentionConfigurationOutput, error) {
+func (m *MockConfigServiceAPI) DeleteRetentionConfigurationWithContext(arg0 context.Context, arg1 *configservice.DeleteRetentionConfigurationInput, arg2 ...request.Option) (*configservice.DeleteRetentionConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DeliverConfigSnapshotRequest(arg0 in
 }
 
 // DeliverConfigSnapshotWithContext mocks base method
-func (m *MockConfigServiceAPI) DeliverConfigSnapshotWithContext(arg0 aws.Context, arg1 *configservice.DeliverConfigSnapshotInput, arg2 ...request.Option) (*configservice.DeliverConfigSnapshotOutput, error) {
+func (m *MockConfigServiceAPI) DeliverConfigSnapshotWithContext(arg0 context.Context, arg1 *configservice.DeliverConfigSnapshotInput, arg2 ...request.Option) (*configservice.DeliverConfigSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeAggregateComplianceByConfigR
 }
 
 // DescribeAggregateComplianceByConfigRulesWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeAggregateComplianceByConfigRulesWithContext(arg0 aws.Context, arg1 *configservice.DescribeAggregateComplianceByConfigRulesInput, arg2 ...request.Option) (*configservice.DescribeAggregateComplianceByConfigRulesOutput, error) {
+func (m *MockConfigServiceAPI) DescribeAggregateComplianceByConfigRulesWithContext(arg0 context.Context, arg1 *configservice.DescribeAggregateComplianceByConfigRulesInput, arg2 ...request.Option) (*configservice.DescribeAggregateComplianceByConfigRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeAggregationAuthorizationsReq
 }
 
 // DescribeAggregationAuthorizationsWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeAggregationAuthorizationsWithContext(arg0 aws.Context, arg1 *configservice.DescribeAggregationAuthorizationsInput, arg2 ...request.Option) (*configservice.DescribeAggregationAuthorizationsOutput, error) {
+func (m *MockConfigServiceAPI) DescribeAggregationAuthorizationsWithContext(arg0 context.Context, arg1 *configservice.DescribeAggregationAuthorizationsInput, arg2 ...request.Option) (*configservice.DescribeAggregationAuthorizationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeComplianceByConfigRuleReques
 }
 
 // DescribeComplianceByConfigRuleWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeComplianceByConfigRuleWithContext(arg0 aws.Context, arg1 *configservice.DescribeComplianceByConfigRuleInput, arg2 ...request.Option) (*configservice.DescribeComplianceByConfigRuleOutput, error) {
+func (m *MockConfigServiceAPI) DescribeComplianceByConfigRuleWithContext(arg0 context.Context, arg1 *configservice.DescribeComplianceByConfigRuleInput, arg2 ...request.Option) (*configservice.DescribeComplianceByConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeComplianceByResourceRequest(
 }
 
 // DescribeComplianceByResourceWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeComplianceByResourceWithContext(arg0 aws.Context, arg1 *configservice.DescribeComplianceByResourceInput, arg2 ...request.Option) (*configservice.DescribeComplianceByResourceOutput, error) {
+func (m *MockConfigServiceAPI) DescribeComplianceByResourceWithContext(arg0 context.Context, arg1 *configservice.DescribeComplianceByResourceInput, arg2 ...request.Option) (*configservice.DescribeComplianceByResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeConfigRuleEvaluationStatusRe
 }
 
 // DescribeConfigRuleEvaluationStatusWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeConfigRuleEvaluationStatusWithContext(arg0 aws.Context, arg1 *configservice.DescribeConfigRuleEvaluationStatusInput, arg2 ...request.Option) (*configservice.DescribeConfigRuleEvaluationStatusOutput, error) {
+func (m *MockConfigServiceAPI) DescribeConfigRuleEvaluationStatusWithContext(arg0 context.Context, arg1 *configservice.DescribeConfigRuleEvaluationStatusInput, arg2 ...request.Option) (*configservice.DescribeConfigRuleEvaluationStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeConfigRulesRequest(arg0 inte
 }
 
 // DescribeConfigRulesWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeConfigRulesWithContext(arg0 aws.Context, arg1 *configservice.DescribeConfigRulesInput, arg2 ...request.Option) (*configservice.DescribeConfigRulesOutput, error) {
+func (m *MockConfigServiceAPI) DescribeConfigRulesWithContext(arg0 context.Context, arg1 *configservice.DescribeConfigRulesInput, arg2 ...request.Option) (*configservice.DescribeConfigRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeConfigurationAggregatorSourc
 }
 
 // DescribeConfigurationAggregatorSourcesStatusWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeConfigurationAggregatorSourcesStatusWithContext(arg0 aws.Context, arg1 *configservice.DescribeConfigurationAggregatorSourcesStatusInput, arg2 ...request.Option) (*configservice.DescribeConfigurationAggregatorSourcesStatusOutput, error) {
+func (m *MockConfigServiceAPI) DescribeConfigurationAggregatorSourcesStatusWithContext(arg0 context.Context, arg1 *configservice.DescribeConfigurationAggregatorSourcesStatusInput, arg2 ...request.Option) (*configservice.DescribeConfigurationAggregatorSourcesStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeConfigurationAggregatorsRequ
 }
 
 // DescribeConfigurationAggregatorsWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeConfigurationAggregatorsWithContext(arg0 aws.Context, arg1 *configservice.DescribeConfigurationAggregatorsInput, arg2 ...request.Option) (*configservice.DescribeConfigurationAggregatorsOutput, error) {
+func (m *MockConfigServiceAPI) DescribeConfigurationAggregatorsWithContext(arg0 context.Context, arg1 *configservice.DescribeConfigurationAggregatorsInput, arg2 ...request.Option) (*configservice.DescribeConfigurationAggregatorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeConfigurationRecorderStatusR
 }
 
 // DescribeConfigurationRecorderStatusWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeConfigurationRecorderStatusWithContext(arg0 aws.Context, arg1 *configservice.DescribeConfigurationRecorderStatusInput, arg2 ...request.Option) (*configservice.DescribeConfigurationRecorderStatusOutput, error) {
+func (m *MockConfigServiceAPI) DescribeConfigurationRecorderStatusWithContext(arg0 context.Context, arg1 *configservice.DescribeConfigurationRecorderStatusInput, arg2 ...request.Option) (*configservice.DescribeConfigurationRecorderStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeConfigurationRecordersReques
 }
 
 // DescribeConfigurationRecordersWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeConfigurationRecordersWithContext(arg0 aws.Context, arg1 *configservice.DescribeConfigurationRecordersInput, arg2 ...request.Option) (*configservice.DescribeConfigurationRecordersOutput, error) {
+func (m *MockConfigServiceAPI) DescribeConfigurationRecordersWithContext(arg0 context.Context, arg1 *configservice.DescribeConfigurationRecordersInput, arg2 ...request.Option) (*configservice.DescribeConfigurationRecordersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeDeliveryChannelStatusRequest
 }
 
 // DescribeDeliveryChannelStatusWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeDeliveryChannelStatusWithContext(arg0 aws.Context, arg1 *configservice.DescribeDeliveryChannelStatusInput, arg2 ...request.Option) (*configservice.DescribeDeliveryChannelStatusOutput, error) {
+func (m *MockConfigServiceAPI) DescribeDeliveryChannelStatusWithContext(arg0 context.Context, arg1 *configservice.DescribeDeliveryChannelStatusInput, arg2 ...request.Option) (*configservice.DescribeDeliveryChannelStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeDeliveryChannelsRequest(arg0
 }
 
 // DescribeDeliveryChannelsWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeDeliveryChannelsWithContext(arg0 aws.Context, arg1 *configservice.DescribeDeliveryChannelsInput, arg2 ...request.Option) (*configservice.DescribeDeliveryChannelsOutput, error) {
+func (m *MockConfigServiceAPI) DescribeDeliveryChannelsWithContext(arg0 context.Context, arg1 *configservice.DescribeDeliveryChannelsInput, arg2 ...request.Option) (*configservice.DescribeDeliveryChannelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribePendingAggregationRequestsRe
 }
 
 // DescribePendingAggregationRequestsWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribePendingAggregationRequestsWithContext(arg0 aws.Context, arg1 *configservice.DescribePendingAggregationRequestsInput, arg2 ...request.Option) (*configservice.DescribePendingAggregationRequestsOutput, error) {
+func (m *MockConfigServiceAPI) DescribePendingAggregationRequestsWithContext(arg0 context.Context, arg1 *configservice.DescribePendingAggregationRequestsInput, arg2 ...request.Option) (*configservice.DescribePendingAggregationRequestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockConfigServiceAPIMockRecorder) DescribeRetentionConfigurationsReque
 }
 
 // DescribeRetentionConfigurationsWithContext mocks base method
-func (m *MockConfigServiceAPI) DescribeRetentionConfigurationsWithContext(arg0 aws.Context, arg1 *configservice.DescribeRetentionConfigurationsInput, arg2 ...request.Option) (*configservice.DescribeRetentionConfigurationsOutput, error) {
+func (m *MockConfigServiceAPI) DescribeRetentionConfigurationsWithContext(arg0 context.Context, arg1 *configservice.DescribeRetentionConfigurationsInput, arg2 ...request.Option) (*configservice.DescribeRetentionConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetAggregateComplianceDetailsByConfi
 }
 
 // GetAggregateComplianceDetailsByConfigRuleWithContext mocks base method
-func (m *MockConfigServiceAPI) GetAggregateComplianceDetailsByConfigRuleWithContext(arg0 aws.Context, arg1 *configservice.GetAggregateComplianceDetailsByConfigRuleInput, arg2 ...request.Option) (*configservice.GetAggregateComplianceDetailsByConfigRuleOutput, error) {
+func (m *MockConfigServiceAPI) GetAggregateComplianceDetailsByConfigRuleWithContext(arg0 context.Context, arg1 *configservice.GetAggregateComplianceDetailsByConfigRuleInput, arg2 ...request.Option) (*configservice.GetAggregateComplianceDetailsByConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetAggregateConfigRuleComplianceSumm
 }
 
 // GetAggregateConfigRuleComplianceSummaryWithContext mocks base method
-func (m *MockConfigServiceAPI) GetAggregateConfigRuleComplianceSummaryWithContext(arg0 aws.Context, arg1 *configservice.GetAggregateConfigRuleComplianceSummaryInput, arg2 ...request.Option) (*configservice.GetAggregateConfigRuleComplianceSummaryOutput, error) {
+func (m *MockConfigServiceAPI) GetAggregateConfigRuleComplianceSummaryWithContext(arg0 context.Context, arg1 *configservice.GetAggregateConfigRuleComplianceSummaryInput, arg2 ...request.Option) (*configservice.GetAggregateConfigRuleComplianceSummaryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetAggregateDiscoveredResourceCounts
 }
 
 // GetAggregateDiscoveredResourceCountsWithContext mocks base method
-func (m *MockConfigServiceAPI) GetAggregateDiscoveredResourceCountsWithContext(arg0 aws.Context, arg1 *configservice.GetAggregateDiscoveredResourceCountsInput, arg2 ...request.Option) (*configservice.GetAggregateDiscoveredResourceCountsOutput, error) {
+func (m *MockConfigServiceAPI) GetAggregateDiscoveredResourceCountsWithContext(arg0 context.Context, arg1 *configservice.GetAggregateDiscoveredResourceCountsInput, arg2 ...request.Option) (*configservice.GetAggregateDiscoveredResourceCountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetAggregateResourceConfigRequest(ar
 }
 
 // GetAggregateResourceConfigWithContext mocks base method
-func (m *MockConfigServiceAPI) GetAggregateResourceConfigWithContext(arg0 aws.Context, arg1 *configservice.GetAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.GetAggregateResourceConfigOutput, error) {
+func (m *MockConfigServiceAPI) GetAggregateResourceConfigWithContext(arg0 context.Context, arg1 *configservice.GetAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.GetAggregateResourceConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetComplianceDetailsByConfigRuleRequ
 }
 
 // GetComplianceDetailsByConfigRuleWithContext mocks base method
-func (m *MockConfigServiceAPI) GetComplianceDetailsByConfigRuleWithContext(arg0 aws.Context, arg1 *configservice.GetComplianceDetailsByConfigRuleInput, arg2 ...request.Option) (*configservice.GetComplianceDetailsByConfigRuleOutput, error) {
+func (m *MockConfigServiceAPI) GetComplianceDetailsByConfigRuleWithContext(arg0 context.Context, arg1 *configservice.GetComplianceDetailsByConfigRuleInput, arg2 ...request.Option) (*configservice.GetComplianceDetailsByConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetComplianceDetailsByResourceReques
 }
 
 // GetComplianceDetailsByResourceWithContext mocks base method
-func (m *MockConfigServiceAPI) GetComplianceDetailsByResourceWithContext(arg0 aws.Context, arg1 *configservice.GetComplianceDetailsByResourceInput, arg2 ...request.Option) (*configservice.GetComplianceDetailsByResourceOutput, error) {
+func (m *MockConfigServiceAPI) GetComplianceDetailsByResourceWithContext(arg0 context.Context, arg1 *configservice.GetComplianceDetailsByResourceInput, arg2 ...request.Option) (*configservice.GetComplianceDetailsByResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetComplianceSummaryByConfigRuleRequ
 }
 
 // GetComplianceSummaryByConfigRuleWithContext mocks base method
-func (m *MockConfigServiceAPI) GetComplianceSummaryByConfigRuleWithContext(arg0 aws.Context, arg1 *configservice.GetComplianceSummaryByConfigRuleInput, arg2 ...request.Option) (*configservice.GetComplianceSummaryByConfigRuleOutput, error) {
+func (m *MockConfigServiceAPI) GetComplianceSummaryByConfigRuleWithContext(arg0 context.Context, arg1 *configservice.GetComplianceSummaryByConfigRuleInput, arg2 ...request.Option) (*configservice.GetComplianceSummaryByConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetComplianceSummaryByResourceTypeRe
 }
 
 // GetComplianceSummaryByResourceTypeWithContext mocks base method
-func (m *MockConfigServiceAPI) GetComplianceSummaryByResourceTypeWithContext(arg0 aws.Context, arg1 *configservice.GetComplianceSummaryByResourceTypeInput, arg2 ...request.Option) (*configservice.GetComplianceSummaryByResourceTypeOutput, error) {
+func (m *MockConfigServiceAPI) GetComplianceSummaryByResourceTypeWithContext(arg0 context.Context, arg1 *configservice.GetComplianceSummaryByResourceTypeInput, arg2 ...request.Option) (*configservice.GetComplianceSummaryByResourceTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetDiscoveredResourceCountsRequest(a
 }
 
 // GetDiscoveredResourceCountsWithContext mocks base method
-func (m *MockConfigServiceAPI) GetDiscoveredResourceCountsWithContext(arg0 aws.Context, arg1 *configservice.GetDiscoveredResourceCountsInput, arg2 ...request.Option) (*configservice.GetDiscoveredResourceCountsOutput, error) {
+func (m *MockConfigServiceAPI) GetDiscoveredResourceCountsWithContext(arg0 context.Context, arg1 *configservice.GetDiscoveredResourceCountsInput, arg2 ...request.Option) (*configservice.GetDiscoveredResourceCountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1765,7 +1765,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetResourceConfigHistoryPages(arg0, 
 }
 
 // GetResourceConfigHistoryPagesWithContext mocks base method
-func (m *MockConfigServiceAPI) GetResourceConfigHistoryPagesWithContext(arg0 aws.Context, arg1 *configservice.GetResourceConfigHistoryInput, arg2 func(*configservice.GetResourceConfigHistoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockConfigServiceAPI) GetResourceConfigHistoryPagesWithContext(arg0 context.Context, arg1 *configservice.GetResourceConfigHistoryInput, arg2 func(*configservice.GetResourceConfigHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1799,7 +1799,7 @@ func (mr *MockConfigServiceAPIMockRecorder) GetResourceConfigHistoryRequest(arg0
 }
 
 // GetResourceConfigHistoryWithContext mocks base method
-func (m *MockConfigServiceAPI) GetResourceConfigHistoryWithContext(arg0 aws.Context, arg1 *configservice.GetResourceConfigHistoryInput, arg2 ...request.Option) (*configservice.GetResourceConfigHistoryOutput, error) {
+func (m *MockConfigServiceAPI) GetResourceConfigHistoryWithContext(arg0 context.Context, arg1 *configservice.GetResourceConfigHistoryInput, arg2 ...request.Option) (*configservice.GetResourceConfigHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1849,7 +1849,7 @@ func (mr *MockConfigServiceAPIMockRecorder) ListAggregateDiscoveredResourcesRequ
 }
 
 // ListAggregateDiscoveredResourcesWithContext mocks base method
-func (m *MockConfigServiceAPI) ListAggregateDiscoveredResourcesWithContext(arg0 aws.Context, arg1 *configservice.ListAggregateDiscoveredResourcesInput, arg2 ...request.Option) (*configservice.ListAggregateDiscoveredResourcesOutput, error) {
+func (m *MockConfigServiceAPI) ListAggregateDiscoveredResourcesWithContext(arg0 context.Context, arg1 *configservice.ListAggregateDiscoveredResourcesInput, arg2 ...request.Option) (*configservice.ListAggregateDiscoveredResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1899,7 +1899,7 @@ func (mr *MockConfigServiceAPIMockRecorder) ListDiscoveredResourcesRequest(arg0 
 }
 
 // ListDiscoveredResourcesWithContext mocks base method
-func (m *MockConfigServiceAPI) ListDiscoveredResourcesWithContext(arg0 aws.Context, arg1 *configservice.ListDiscoveredResourcesInput, arg2 ...request.Option) (*configservice.ListDiscoveredResourcesOutput, error) {
+func (m *MockConfigServiceAPI) ListDiscoveredResourcesWithContext(arg0 context.Context, arg1 *configservice.ListDiscoveredResourcesInput, arg2 ...request.Option) (*configservice.ListDiscoveredResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1949,7 +1949,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutAggregationAuthorizationRequest(a
 }
 
 // PutAggregationAuthorizationWithContext mocks base method
-func (m *MockConfigServiceAPI) PutAggregationAuthorizationWithContext(arg0 aws.Context, arg1 *configservice.PutAggregationAuthorizationInput, arg2 ...request.Option) (*configservice.PutAggregationAuthorizationOutput, error) {
+func (m *MockConfigServiceAPI) PutAggregationAuthorizationWithContext(arg0 context.Context, arg1 *configservice.PutAggregationAuthorizationInput, arg2 ...request.Option) (*configservice.PutAggregationAuthorizationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1999,7 +1999,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutConfigRuleRequest(arg0 interface{
 }
 
 // PutConfigRuleWithContext mocks base method
-func (m *MockConfigServiceAPI) PutConfigRuleWithContext(arg0 aws.Context, arg1 *configservice.PutConfigRuleInput, arg2 ...request.Option) (*configservice.PutConfigRuleOutput, error) {
+func (m *MockConfigServiceAPI) PutConfigRuleWithContext(arg0 context.Context, arg1 *configservice.PutConfigRuleInput, arg2 ...request.Option) (*configservice.PutConfigRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2049,7 +2049,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutConfigurationAggregatorRequest(ar
 }
 
 // PutConfigurationAggregatorWithContext mocks base method
-func (m *MockConfigServiceAPI) PutConfigurationAggregatorWithContext(arg0 aws.Context, arg1 *configservice.PutConfigurationAggregatorInput, arg2 ...request.Option) (*configservice.PutConfigurationAggregatorOutput, error) {
+func (m *MockConfigServiceAPI) PutConfigurationAggregatorWithContext(arg0 context.Context, arg1 *configservice.PutConfigurationAggregatorInput, arg2 ...request.Option) (*configservice.PutConfigurationAggregatorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2099,7 +2099,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutConfigurationRecorderRequest(arg0
 }
 
 // PutConfigurationRecorderWithContext mocks base method
-func (m *MockConfigServiceAPI) PutConfigurationRecorderWithContext(arg0 aws.Context, arg1 *configservice.PutConfigurationRecorderInput, arg2 ...request.Option) (*configservice.PutConfigurationRecorderOutput, error) {
+func (m *MockConfigServiceAPI) PutConfigurationRecorderWithContext(arg0 context.Context, arg1 *configservice.PutConfigurationRecorderInput, arg2 ...request.Option) (*configservice.PutConfigurationRecorderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2149,7 +2149,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutDeliveryChannelRequest(arg0 inter
 }
 
 // PutDeliveryChannelWithContext mocks base method
-func (m *MockConfigServiceAPI) PutDeliveryChannelWithContext(arg0 aws.Context, arg1 *configservice.PutDeliveryChannelInput, arg2 ...request.Option) (*configservice.PutDeliveryChannelOutput, error) {
+func (m *MockConfigServiceAPI) PutDeliveryChannelWithContext(arg0 context.Context, arg1 *configservice.PutDeliveryChannelInput, arg2 ...request.Option) (*configservice.PutDeliveryChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2199,7 +2199,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutEvaluationsRequest(arg0 interface
 }
 
 // PutEvaluationsWithContext mocks base method
-func (m *MockConfigServiceAPI) PutEvaluationsWithContext(arg0 aws.Context, arg1 *configservice.PutEvaluationsInput, arg2 ...request.Option) (*configservice.PutEvaluationsOutput, error) {
+func (m *MockConfigServiceAPI) PutEvaluationsWithContext(arg0 context.Context, arg1 *configservice.PutEvaluationsInput, arg2 ...request.Option) (*configservice.PutEvaluationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2249,7 +2249,7 @@ func (mr *MockConfigServiceAPIMockRecorder) PutRetentionConfigurationRequest(arg
 }
 
 // PutRetentionConfigurationWithContext mocks base method
-func (m *MockConfigServiceAPI) PutRetentionConfigurationWithContext(arg0 aws.Context, arg1 *configservice.PutRetentionConfigurationInput, arg2 ...request.Option) (*configservice.PutRetentionConfigurationOutput, error) {
+func (m *MockConfigServiceAPI) PutRetentionConfigurationWithContext(arg0 context.Context, arg1 *configservice.PutRetentionConfigurationInput, arg2 ...request.Option) (*configservice.PutRetentionConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2299,7 +2299,7 @@ func (mr *MockConfigServiceAPIMockRecorder) StartConfigRulesEvaluationRequest(ar
 }
 
 // StartConfigRulesEvaluationWithContext mocks base method
-func (m *MockConfigServiceAPI) StartConfigRulesEvaluationWithContext(arg0 aws.Context, arg1 *configservice.StartConfigRulesEvaluationInput, arg2 ...request.Option) (*configservice.StartConfigRulesEvaluationOutput, error) {
+func (m *MockConfigServiceAPI) StartConfigRulesEvaluationWithContext(arg0 context.Context, arg1 *configservice.StartConfigRulesEvaluationInput, arg2 ...request.Option) (*configservice.StartConfigRulesEvaluationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2349,7 +2349,7 @@ func (mr *MockConfigServiceAPIMockRecorder) StartConfigurationRecorderRequest(ar
 }
 
 // StartConfigurationRecorderWithContext mocks base method
-func (m *MockConfigServiceAPI) StartConfigurationRecorderWithContext(arg0 aws.Context, arg1 *configservice.StartConfigurationRecorderInput, arg2 ...request.Option) (*configservice.StartConfigurationRecorderOutput, error) {
+func (m *MockConfigServiceAPI) StartConfigurationRecorderWithContext(arg0 context.Context, arg1 *configservice.StartConfigurationRecorderInput, arg2 ...request.Option) (*configservice.StartConfigurationRecorderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2399,7 +2399,7 @@ func (mr *MockConfigServiceAPIMockRecorder) StopConfigurationRecorderRequest(arg
 }
 
 // StopConfigurationRecorderWithContext mocks base method
-func (m *MockConfigServiceAPI) StopConfigurationRecorderWithContext(arg0 aws.Context, arg1 *configservice.StopConfigurationRecorderInput, arg2 ...request.Option) (*configservice.StopConfigurationRecorderOutput, error) {
+func (m *MockConfigServiceAPI) StopConfigurationRecorderWithContext(arg0 context.Context, arg1 *configservice.StopConfigurationRecorderInput, arg2 ...request.Option) (*configservice.StopConfigurationRecorderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

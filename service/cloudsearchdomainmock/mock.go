@@ -5,7 +5,7 @@
 package cloudsearchdomainmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudsearchdomain "github.com/aws/aws-sdk-go/service/cloudsearchdomain"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudSearchDomainAPIMockRecorder) SearchRequest(arg0 interface{}) 
 }
 
 // SearchWithContext mocks base method
-func (m *MockCloudSearchDomainAPI) SearchWithContext(arg0 aws.Context, arg1 *cloudsearchdomain.SearchInput, arg2 ...request.Option) (*cloudsearchdomain.SearchOutput, error) {
+func (m *MockCloudSearchDomainAPI) SearchWithContext(arg0 context.Context, arg1 *cloudsearchdomain.SearchInput, arg2 ...request.Option) (*cloudsearchdomain.SearchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudSearchDomainAPIMockRecorder) SuggestRequest(arg0 interface{})
 }
 
 // SuggestWithContext mocks base method
-func (m *MockCloudSearchDomainAPI) SuggestWithContext(arg0 aws.Context, arg1 *cloudsearchdomain.SuggestInput, arg2 ...request.Option) (*cloudsearchdomain.SuggestOutput, error) {
+func (m *MockCloudSearchDomainAPI) SuggestWithContext(arg0 context.Context, arg1 *cloudsearchdomain.SuggestInput, arg2 ...request.Option) (*cloudsearchdomain.SuggestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudSearchDomainAPIMockRecorder) UploadDocumentsRequest(arg0 inte
 }
 
 // UploadDocumentsWithContext mocks base method
-func (m *MockCloudSearchDomainAPI) UploadDocumentsWithContext(arg0 aws.Context, arg1 *cloudsearchdomain.UploadDocumentsInput, arg2 ...request.Option) (*cloudsearchdomain.UploadDocumentsOutput, error) {
+func (m *MockCloudSearchDomainAPI) UploadDocumentsWithContext(arg0 context.Context, arg1 *cloudsearchdomain.UploadDocumentsInput, arg2 ...request.Option) (*cloudsearchdomain.UploadDocumentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

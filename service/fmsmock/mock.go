@@ -5,7 +5,7 @@
 package fmsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	fms "github.com/aws/aws-sdk-go/service/fms"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockFMSAPIMockRecorder) AssociateAdminAccountRequest(arg0 interface{})
 }
 
 // AssociateAdminAccountWithContext mocks base method
-func (m *MockFMSAPI) AssociateAdminAccountWithContext(arg0 aws.Context, arg1 *fms.AssociateAdminAccountInput, arg2 ...request.Option) (*fms.AssociateAdminAccountOutput, error) {
+func (m *MockFMSAPI) AssociateAdminAccountWithContext(arg0 context.Context, arg1 *fms.AssociateAdminAccountInput, arg2 ...request.Option) (*fms.AssociateAdminAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockFMSAPIMockRecorder) DeleteNotificationChannelRequest(arg0 interfac
 }
 
 // DeleteNotificationChannelWithContext mocks base method
-func (m *MockFMSAPI) DeleteNotificationChannelWithContext(arg0 aws.Context, arg1 *fms.DeleteNotificationChannelInput, arg2 ...request.Option) (*fms.DeleteNotificationChannelOutput, error) {
+func (m *MockFMSAPI) DeleteNotificationChannelWithContext(arg0 context.Context, arg1 *fms.DeleteNotificationChannelInput, arg2 ...request.Option) (*fms.DeleteNotificationChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockFMSAPIMockRecorder) DeletePolicyRequest(arg0 interface{}) *gomock.
 }
 
 // DeletePolicyWithContext mocks base method
-func (m *MockFMSAPI) DeletePolicyWithContext(arg0 aws.Context, arg1 *fms.DeletePolicyInput, arg2 ...request.Option) (*fms.DeletePolicyOutput, error) {
+func (m *MockFMSAPI) DeletePolicyWithContext(arg0 context.Context, arg1 *fms.DeletePolicyInput, arg2 ...request.Option) (*fms.DeletePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockFMSAPIMockRecorder) DisassociateAdminAccountRequest(arg0 interface
 }
 
 // DisassociateAdminAccountWithContext mocks base method
-func (m *MockFMSAPI) DisassociateAdminAccountWithContext(arg0 aws.Context, arg1 *fms.DisassociateAdminAccountInput, arg2 ...request.Option) (*fms.DisassociateAdminAccountOutput, error) {
+func (m *MockFMSAPI) DisassociateAdminAccountWithContext(arg0 context.Context, arg1 *fms.DisassociateAdminAccountInput, arg2 ...request.Option) (*fms.DisassociateAdminAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockFMSAPIMockRecorder) GetAdminAccountRequest(arg0 interface{}) *gomo
 }
 
 // GetAdminAccountWithContext mocks base method
-func (m *MockFMSAPI) GetAdminAccountWithContext(arg0 aws.Context, arg1 *fms.GetAdminAccountInput, arg2 ...request.Option) (*fms.GetAdminAccountOutput, error) {
+func (m *MockFMSAPI) GetAdminAccountWithContext(arg0 context.Context, arg1 *fms.GetAdminAccountInput, arg2 ...request.Option) (*fms.GetAdminAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockFMSAPIMockRecorder) GetComplianceDetailRequest(arg0 interface{}) *
 }
 
 // GetComplianceDetailWithContext mocks base method
-func (m *MockFMSAPI) GetComplianceDetailWithContext(arg0 aws.Context, arg1 *fms.GetComplianceDetailInput, arg2 ...request.Option) (*fms.GetComplianceDetailOutput, error) {
+func (m *MockFMSAPI) GetComplianceDetailWithContext(arg0 context.Context, arg1 *fms.GetComplianceDetailInput, arg2 ...request.Option) (*fms.GetComplianceDetailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockFMSAPIMockRecorder) GetNotificationChannelRequest(arg0 interface{}
 }
 
 // GetNotificationChannelWithContext mocks base method
-func (m *MockFMSAPI) GetNotificationChannelWithContext(arg0 aws.Context, arg1 *fms.GetNotificationChannelInput, arg2 ...request.Option) (*fms.GetNotificationChannelOutput, error) {
+func (m *MockFMSAPI) GetNotificationChannelWithContext(arg0 context.Context, arg1 *fms.GetNotificationChannelInput, arg2 ...request.Option) (*fms.GetNotificationChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockFMSAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.Cal
 }
 
 // GetPolicyWithContext mocks base method
-func (m *MockFMSAPI) GetPolicyWithContext(arg0 aws.Context, arg1 *fms.GetPolicyInput, arg2 ...request.Option) (*fms.GetPolicyOutput, error) {
+func (m *MockFMSAPI) GetPolicyWithContext(arg0 context.Context, arg1 *fms.GetPolicyInput, arg2 ...request.Option) (*fms.GetPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockFMSAPIMockRecorder) ListComplianceStatusRequest(arg0 interface{}) 
 }
 
 // ListComplianceStatusWithContext mocks base method
-func (m *MockFMSAPI) ListComplianceStatusWithContext(arg0 aws.Context, arg1 *fms.ListComplianceStatusInput, arg2 ...request.Option) (*fms.ListComplianceStatusOutput, error) {
+func (m *MockFMSAPI) ListComplianceStatusWithContext(arg0 context.Context, arg1 *fms.ListComplianceStatusInput, arg2 ...request.Option) (*fms.ListComplianceStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockFMSAPIMockRecorder) ListMemberAccountsRequest(arg0 interface{}) *g
 }
 
 // ListMemberAccountsWithContext mocks base method
-func (m *MockFMSAPI) ListMemberAccountsWithContext(arg0 aws.Context, arg1 *fms.ListMemberAccountsInput, arg2 ...request.Option) (*fms.ListMemberAccountsOutput, error) {
+func (m *MockFMSAPI) ListMemberAccountsWithContext(arg0 context.Context, arg1 *fms.ListMemberAccountsInput, arg2 ...request.Option) (*fms.ListMemberAccountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockFMSAPIMockRecorder) ListPoliciesRequest(arg0 interface{}) *gomock.
 }
 
 // ListPoliciesWithContext mocks base method
-func (m *MockFMSAPI) ListPoliciesWithContext(arg0 aws.Context, arg1 *fms.ListPoliciesInput, arg2 ...request.Option) (*fms.ListPoliciesOutput, error) {
+func (m *MockFMSAPI) ListPoliciesWithContext(arg0 context.Context, arg1 *fms.ListPoliciesInput, arg2 ...request.Option) (*fms.ListPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockFMSAPIMockRecorder) PutNotificationChannelRequest(arg0 interface{}
 }
 
 // PutNotificationChannelWithContext mocks base method
-func (m *MockFMSAPI) PutNotificationChannelWithContext(arg0 aws.Context, arg1 *fms.PutNotificationChannelInput, arg2 ...request.Option) (*fms.PutNotificationChannelOutput, error) {
+func (m *MockFMSAPI) PutNotificationChannelWithContext(arg0 context.Context, arg1 *fms.PutNotificationChannelInput, arg2 ...request.Option) (*fms.PutNotificationChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockFMSAPIMockRecorder) PutPolicyRequest(arg0 interface{}) *gomock.Cal
 }
 
 // PutPolicyWithContext mocks base method
-func (m *MockFMSAPI) PutPolicyWithContext(arg0 aws.Context, arg1 *fms.PutPolicyInput, arg2 ...request.Option) (*fms.PutPolicyOutput, error) {
+func (m *MockFMSAPI) PutPolicyWithContext(arg0 context.Context, arg1 *fms.PutPolicyInput, arg2 ...request.Option) (*fms.PutPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

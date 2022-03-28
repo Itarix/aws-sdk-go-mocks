@@ -5,7 +5,7 @@
 package maciemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	macie "github.com/aws/aws-sdk-go/service/macie"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMacieAPIMockRecorder) AssociateMemberAccountRequest(arg0 interface
 }
 
 // AssociateMemberAccountWithContext mocks base method
-func (m *MockMacieAPI) AssociateMemberAccountWithContext(arg0 aws.Context, arg1 *macie.AssociateMemberAccountInput, arg2 ...request.Option) (*macie.AssociateMemberAccountOutput, error) {
+func (m *MockMacieAPI) AssociateMemberAccountWithContext(arg0 context.Context, arg1 *macie.AssociateMemberAccountInput, arg2 ...request.Option) (*macie.AssociateMemberAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMacieAPIMockRecorder) AssociateS3ResourcesRequest(arg0 interface{}
 }
 
 // AssociateS3ResourcesWithContext mocks base method
-func (m *MockMacieAPI) AssociateS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.AssociateS3ResourcesInput, arg2 ...request.Option) (*macie.AssociateS3ResourcesOutput, error) {
+func (m *MockMacieAPI) AssociateS3ResourcesWithContext(arg0 context.Context, arg1 *macie.AssociateS3ResourcesInput, arg2 ...request.Option) (*macie.AssociateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMacieAPIMockRecorder) DisassociateMemberAccountRequest(arg0 interf
 }
 
 // DisassociateMemberAccountWithContext mocks base method
-func (m *MockMacieAPI) DisassociateMemberAccountWithContext(arg0 aws.Context, arg1 *macie.DisassociateMemberAccountInput, arg2 ...request.Option) (*macie.DisassociateMemberAccountOutput, error) {
+func (m *MockMacieAPI) DisassociateMemberAccountWithContext(arg0 context.Context, arg1 *macie.DisassociateMemberAccountInput, arg2 ...request.Option) (*macie.DisassociateMemberAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMacieAPIMockRecorder) DisassociateS3ResourcesRequest(arg0 interfac
 }
 
 // DisassociateS3ResourcesWithContext mocks base method
-func (m *MockMacieAPI) DisassociateS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.DisassociateS3ResourcesInput, arg2 ...request.Option) (*macie.DisassociateS3ResourcesOutput, error) {
+func (m *MockMacieAPI) DisassociateS3ResourcesWithContext(arg0 context.Context, arg1 *macie.DisassociateS3ResourcesInput, arg2 ...request.Option) (*macie.DisassociateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -265,7 +265,7 @@ func (mr *MockMacieAPIMockRecorder) ListMemberAccountsPages(arg0, arg1 interface
 }
 
 // ListMemberAccountsPagesWithContext mocks base method
-func (m *MockMacieAPI) ListMemberAccountsPagesWithContext(arg0 aws.Context, arg1 *macie.ListMemberAccountsInput, arg2 func(*macie.ListMemberAccountsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMacieAPI) ListMemberAccountsPagesWithContext(arg0 context.Context, arg1 *macie.ListMemberAccountsInput, arg2 func(*macie.ListMemberAccountsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -299,7 +299,7 @@ func (mr *MockMacieAPIMockRecorder) ListMemberAccountsRequest(arg0 interface{}) 
 }
 
 // ListMemberAccountsWithContext mocks base method
-func (m *MockMacieAPI) ListMemberAccountsWithContext(arg0 aws.Context, arg1 *macie.ListMemberAccountsInput, arg2 ...request.Option) (*macie.ListMemberAccountsOutput, error) {
+func (m *MockMacieAPI) ListMemberAccountsWithContext(arg0 context.Context, arg1 *macie.ListMemberAccountsInput, arg2 ...request.Option) (*macie.ListMemberAccountsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -348,7 +348,7 @@ func (mr *MockMacieAPIMockRecorder) ListS3ResourcesPages(arg0, arg1 interface{})
 }
 
 // ListS3ResourcesPagesWithContext mocks base method
-func (m *MockMacieAPI) ListS3ResourcesPagesWithContext(arg0 aws.Context, arg1 *macie.ListS3ResourcesInput, arg2 func(*macie.ListS3ResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMacieAPI) ListS3ResourcesPagesWithContext(arg0 context.Context, arg1 *macie.ListS3ResourcesInput, arg2 func(*macie.ListS3ResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -382,7 +382,7 @@ func (mr *MockMacieAPIMockRecorder) ListS3ResourcesRequest(arg0 interface{}) *go
 }
 
 // ListS3ResourcesWithContext mocks base method
-func (m *MockMacieAPI) ListS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.ListS3ResourcesInput, arg2 ...request.Option) (*macie.ListS3ResourcesOutput, error) {
+func (m *MockMacieAPI) ListS3ResourcesWithContext(arg0 context.Context, arg1 *macie.ListS3ResourcesInput, arg2 ...request.Option) (*macie.ListS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -432,7 +432,7 @@ func (mr *MockMacieAPIMockRecorder) UpdateS3ResourcesRequest(arg0 interface{}) *
 }
 
 // UpdateS3ResourcesWithContext mocks base method
-func (m *MockMacieAPI) UpdateS3ResourcesWithContext(arg0 aws.Context, arg1 *macie.UpdateS3ResourcesInput, arg2 ...request.Option) (*macie.UpdateS3ResourcesOutput, error) {
+func (m *MockMacieAPI) UpdateS3ResourcesWithContext(arg0 context.Context, arg1 *macie.UpdateS3ResourcesInput, arg2 ...request.Option) (*macie.UpdateS3ResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

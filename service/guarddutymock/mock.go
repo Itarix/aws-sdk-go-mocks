@@ -5,7 +5,7 @@
 package guarddutymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	guardduty "github.com/aws/aws-sdk-go/service/guardduty"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockGuardDutyAPIMockRecorder) AcceptInvitationRequest(arg0 interface{}
 }
 
 // AcceptInvitationWithContext mocks base method
-func (m *MockGuardDutyAPI) AcceptInvitationWithContext(arg0 aws.Context, arg1 *guardduty.AcceptInvitationInput, arg2 ...request.Option) (*guardduty.AcceptInvitationOutput, error) {
+func (m *MockGuardDutyAPI) AcceptInvitationWithContext(arg0 context.Context, arg1 *guardduty.AcceptInvitationInput, arg2 ...request.Option) (*guardduty.AcceptInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ArchiveFindingsRequest(arg0 interface{})
 }
 
 // ArchiveFindingsWithContext mocks base method
-func (m *MockGuardDutyAPI) ArchiveFindingsWithContext(arg0 aws.Context, arg1 *guardduty.ArchiveFindingsInput, arg2 ...request.Option) (*guardduty.ArchiveFindingsOutput, error) {
+func (m *MockGuardDutyAPI) ArchiveFindingsWithContext(arg0 context.Context, arg1 *guardduty.ArchiveFindingsInput, arg2 ...request.Option) (*guardduty.ArchiveFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateDetectorRequest(arg0 interface{}) 
 }
 
 // CreateDetectorWithContext mocks base method
-func (m *MockGuardDutyAPI) CreateDetectorWithContext(arg0 aws.Context, arg1 *guardduty.CreateDetectorInput, arg2 ...request.Option) (*guardduty.CreateDetectorOutput, error) {
+func (m *MockGuardDutyAPI) CreateDetectorWithContext(arg0 context.Context, arg1 *guardduty.CreateDetectorInput, arg2 ...request.Option) (*guardduty.CreateDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateFilterRequest(arg0 interface{}) *g
 }
 
 // CreateFilterWithContext mocks base method
-func (m *MockGuardDutyAPI) CreateFilterWithContext(arg0 aws.Context, arg1 *guardduty.CreateFilterInput, arg2 ...request.Option) (*guardduty.CreateFilterOutput, error) {
+func (m *MockGuardDutyAPI) CreateFilterWithContext(arg0 context.Context, arg1 *guardduty.CreateFilterInput, arg2 ...request.Option) (*guardduty.CreateFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateIPSetRequest(arg0 interface{}) *go
 }
 
 // CreateIPSetWithContext mocks base method
-func (m *MockGuardDutyAPI) CreateIPSetWithContext(arg0 aws.Context, arg1 *guardduty.CreateIPSetInput, arg2 ...request.Option) (*guardduty.CreateIPSetOutput, error) {
+func (m *MockGuardDutyAPI) CreateIPSetWithContext(arg0 context.Context, arg1 *guardduty.CreateIPSetInput, arg2 ...request.Option) (*guardduty.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateMembersRequest(arg0 interface{}) *
 }
 
 // CreateMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) CreateMembersWithContext(arg0 aws.Context, arg1 *guardduty.CreateMembersInput, arg2 ...request.Option) (*guardduty.CreateMembersOutput, error) {
+func (m *MockGuardDutyAPI) CreateMembersWithContext(arg0 context.Context, arg1 *guardduty.CreateMembersInput, arg2 ...request.Option) (*guardduty.CreateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateSampleFindingsRequest(arg0 interfa
 }
 
 // CreateSampleFindingsWithContext mocks base method
-func (m *MockGuardDutyAPI) CreateSampleFindingsWithContext(arg0 aws.Context, arg1 *guardduty.CreateSampleFindingsInput, arg2 ...request.Option) (*guardduty.CreateSampleFindingsOutput, error) {
+func (m *MockGuardDutyAPI) CreateSampleFindingsWithContext(arg0 context.Context, arg1 *guardduty.CreateSampleFindingsInput, arg2 ...request.Option) (*guardduty.CreateSampleFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateThreatIntelSetRequest(arg0 interfa
 }
 
 // CreateThreatIntelSetWithContext mocks base method
-func (m *MockGuardDutyAPI) CreateThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.CreateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.CreateThreatIntelSetOutput, error) {
+func (m *MockGuardDutyAPI) CreateThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.CreateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.CreateThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeclineInvitationsRequest(arg0 interface
 }
 
 // DeclineInvitationsWithContext mocks base method
-func (m *MockGuardDutyAPI) DeclineInvitationsWithContext(arg0 aws.Context, arg1 *guardduty.DeclineInvitationsInput, arg2 ...request.Option) (*guardduty.DeclineInvitationsOutput, error) {
+func (m *MockGuardDutyAPI) DeclineInvitationsWithContext(arg0 context.Context, arg1 *guardduty.DeclineInvitationsInput, arg2 ...request.Option) (*guardduty.DeclineInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteDetectorRequest(arg0 interface{}) 
 }
 
 // DeleteDetectorWithContext mocks base method
-func (m *MockGuardDutyAPI) DeleteDetectorWithContext(arg0 aws.Context, arg1 *guardduty.DeleteDetectorInput, arg2 ...request.Option) (*guardduty.DeleteDetectorOutput, error) {
+func (m *MockGuardDutyAPI) DeleteDetectorWithContext(arg0 context.Context, arg1 *guardduty.DeleteDetectorInput, arg2 ...request.Option) (*guardduty.DeleteDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteFilterRequest(arg0 interface{}) *g
 }
 
 // DeleteFilterWithContext mocks base method
-func (m *MockGuardDutyAPI) DeleteFilterWithContext(arg0 aws.Context, arg1 *guardduty.DeleteFilterInput, arg2 ...request.Option) (*guardduty.DeleteFilterOutput, error) {
+func (m *MockGuardDutyAPI) DeleteFilterWithContext(arg0 context.Context, arg1 *guardduty.DeleteFilterInput, arg2 ...request.Option) (*guardduty.DeleteFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteIPSetRequest(arg0 interface{}) *go
 }
 
 // DeleteIPSetWithContext mocks base method
-func (m *MockGuardDutyAPI) DeleteIPSetWithContext(arg0 aws.Context, arg1 *guardduty.DeleteIPSetInput, arg2 ...request.Option) (*guardduty.DeleteIPSetOutput, error) {
+func (m *MockGuardDutyAPI) DeleteIPSetWithContext(arg0 context.Context, arg1 *guardduty.DeleteIPSetInput, arg2 ...request.Option) (*guardduty.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteInvitationsRequest(arg0 interface{
 }
 
 // DeleteInvitationsWithContext mocks base method
-func (m *MockGuardDutyAPI) DeleteInvitationsWithContext(arg0 aws.Context, arg1 *guardduty.DeleteInvitationsInput, arg2 ...request.Option) (*guardduty.DeleteInvitationsOutput, error) {
+func (m *MockGuardDutyAPI) DeleteInvitationsWithContext(arg0 context.Context, arg1 *guardduty.DeleteInvitationsInput, arg2 ...request.Option) (*guardduty.DeleteInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteMembersRequest(arg0 interface{}) *
 }
 
 // DeleteMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) DeleteMembersWithContext(arg0 aws.Context, arg1 *guardduty.DeleteMembersInput, arg2 ...request.Option) (*guardduty.DeleteMembersOutput, error) {
+func (m *MockGuardDutyAPI) DeleteMembersWithContext(arg0 context.Context, arg1 *guardduty.DeleteMembersInput, arg2 ...request.Option) (*guardduty.DeleteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSetRequest(arg0 interfa
 }
 
 // DeleteThreatIntelSetWithContext mocks base method
-func (m *MockGuardDutyAPI) DeleteThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.DeleteThreatIntelSetInput, arg2 ...request.Option) (*guardduty.DeleteThreatIntelSetOutput, error) {
+func (m *MockGuardDutyAPI) DeleteThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.DeleteThreatIntelSetInput, arg2 ...request.Option) (*guardduty.DeleteThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromMasterAccountRequest(arg
 }
 
 // DisassociateFromMasterAccountWithContext mocks base method
-func (m *MockGuardDutyAPI) DisassociateFromMasterAccountWithContext(arg0 aws.Context, arg1 *guardduty.DisassociateFromMasterAccountInput, arg2 ...request.Option) (*guardduty.DisassociateFromMasterAccountOutput, error) {
+func (m *MockGuardDutyAPI) DisassociateFromMasterAccountWithContext(arg0 context.Context, arg1 *guardduty.DisassociateFromMasterAccountInput, arg2 ...request.Option) (*guardduty.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockGuardDutyAPIMockRecorder) DisassociateMembersRequest(arg0 interfac
 }
 
 // DisassociateMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) DisassociateMembersWithContext(arg0 aws.Context, arg1 *guardduty.DisassociateMembersInput, arg2 ...request.Option) (*guardduty.DisassociateMembersOutput, error) {
+func (m *MockGuardDutyAPI) DisassociateMembersWithContext(arg0 context.Context, arg1 *guardduty.DisassociateMembersInput, arg2 ...request.Option) (*guardduty.DisassociateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetDetectorRequest(arg0 interface{}) *go
 }
 
 // GetDetectorWithContext mocks base method
-func (m *MockGuardDutyAPI) GetDetectorWithContext(arg0 aws.Context, arg1 *guardduty.GetDetectorInput, arg2 ...request.Option) (*guardduty.GetDetectorOutput, error) {
+func (m *MockGuardDutyAPI) GetDetectorWithContext(arg0 context.Context, arg1 *guardduty.GetDetectorInput, arg2 ...request.Option) (*guardduty.GetDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetFilterRequest(arg0 interface{}) *gomo
 }
 
 // GetFilterWithContext mocks base method
-func (m *MockGuardDutyAPI) GetFilterWithContext(arg0 aws.Context, arg1 *guardduty.GetFilterInput, arg2 ...request.Option) (*guardduty.GetFilterOutput, error) {
+func (m *MockGuardDutyAPI) GetFilterWithContext(arg0 context.Context, arg1 *guardduty.GetFilterInput, arg2 ...request.Option) (*guardduty.GetFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1046,7 +1046,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetFindingsStatisticsRequest(arg0 interf
 }
 
 // GetFindingsStatisticsWithContext mocks base method
-func (m *MockGuardDutyAPI) GetFindingsStatisticsWithContext(arg0 aws.Context, arg1 *guardduty.GetFindingsStatisticsInput, arg2 ...request.Option) (*guardduty.GetFindingsStatisticsOutput, error) {
+func (m *MockGuardDutyAPI) GetFindingsStatisticsWithContext(arg0 context.Context, arg1 *guardduty.GetFindingsStatisticsInput, arg2 ...request.Option) (*guardduty.GetFindingsStatisticsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetFindingsStatisticsWithContext(arg0, a
 }
 
 // GetFindingsWithContext mocks base method
-func (m *MockGuardDutyAPI) GetFindingsWithContext(arg0 aws.Context, arg1 *guardduty.GetFindingsInput, arg2 ...request.Option) (*guardduty.GetFindingsOutput, error) {
+func (m *MockGuardDutyAPI) GetFindingsWithContext(arg0 context.Context, arg1 *guardduty.GetFindingsInput, arg2 ...request.Option) (*guardduty.GetFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetIPSetRequest(arg0 interface{}) *gomoc
 }
 
 // GetIPSetWithContext mocks base method
-func (m *MockGuardDutyAPI) GetIPSetWithContext(arg0 aws.Context, arg1 *guardduty.GetIPSetInput, arg2 ...request.Option) (*guardduty.GetIPSetOutput, error) {
+func (m *MockGuardDutyAPI) GetIPSetWithContext(arg0 context.Context, arg1 *guardduty.GetIPSetInput, arg2 ...request.Option) (*guardduty.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetInvitationsCountRequest(arg0 interfac
 }
 
 // GetInvitationsCountWithContext mocks base method
-func (m *MockGuardDutyAPI) GetInvitationsCountWithContext(arg0 aws.Context, arg1 *guardduty.GetInvitationsCountInput, arg2 ...request.Option) (*guardduty.GetInvitationsCountOutput, error) {
+func (m *MockGuardDutyAPI) GetInvitationsCountWithContext(arg0 context.Context, arg1 *guardduty.GetInvitationsCountInput, arg2 ...request.Option) (*guardduty.GetInvitationsCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetMasterAccountRequest(arg0 interface{}
 }
 
 // GetMasterAccountWithContext mocks base method
-func (m *MockGuardDutyAPI) GetMasterAccountWithContext(arg0 aws.Context, arg1 *guardduty.GetMasterAccountInput, arg2 ...request.Option) (*guardduty.GetMasterAccountOutput, error) {
+func (m *MockGuardDutyAPI) GetMasterAccountWithContext(arg0 context.Context, arg1 *guardduty.GetMasterAccountInput, arg2 ...request.Option) (*guardduty.GetMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetMembersRequest(arg0 interface{}) *gom
 }
 
 // GetMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) GetMembersWithContext(arg0 aws.Context, arg1 *guardduty.GetMembersInput, arg2 ...request.Option) (*guardduty.GetMembersOutput, error) {
+func (m *MockGuardDutyAPI) GetMembersWithContext(arg0 context.Context, arg1 *guardduty.GetMembersInput, arg2 ...request.Option) (*guardduty.GetMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockGuardDutyAPIMockRecorder) GetThreatIntelSetRequest(arg0 interface{
 }
 
 // GetThreatIntelSetWithContext mocks base method
-func (m *MockGuardDutyAPI) GetThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.GetThreatIntelSetInput, arg2 ...request.Option) (*guardduty.GetThreatIntelSetOutput, error) {
+func (m *MockGuardDutyAPI) GetThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.GetThreatIntelSetInput, arg2 ...request.Option) (*guardduty.GetThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockGuardDutyAPIMockRecorder) InviteMembersRequest(arg0 interface{}) *
 }
 
 // InviteMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) InviteMembersWithContext(arg0 aws.Context, arg1 *guardduty.InviteMembersInput, arg2 ...request.Option) (*guardduty.InviteMembersOutput, error) {
+func (m *MockGuardDutyAPI) InviteMembersWithContext(arg0 context.Context, arg1 *guardduty.InviteMembersInput, arg2 ...request.Option) (*guardduty.InviteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1415,7 +1415,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListDetectorsPages(arg0, arg1 interface{
 }
 
 // ListDetectorsPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListDetectorsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListDetectorsInput, arg2 func(*guardduty.ListDetectorsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListDetectorsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListDetectorsInput, arg2 func(*guardduty.ListDetectorsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1449,7 +1449,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListDetectorsRequest(arg0 interface{}) *
 }
 
 // ListDetectorsWithContext mocks base method
-func (m *MockGuardDutyAPI) ListDetectorsWithContext(arg0 aws.Context, arg1 *guardduty.ListDetectorsInput, arg2 ...request.Option) (*guardduty.ListDetectorsOutput, error) {
+func (m *MockGuardDutyAPI) ListDetectorsWithContext(arg0 context.Context, arg1 *guardduty.ListDetectorsInput, arg2 ...request.Option) (*guardduty.ListDetectorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1498,7 +1498,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListFiltersPages(arg0, arg1 interface{})
 }
 
 // ListFiltersPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListFiltersPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListFiltersInput, arg2 func(*guardduty.ListFiltersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListFiltersPagesWithContext(arg0 context.Context, arg1 *guardduty.ListFiltersInput, arg2 func(*guardduty.ListFiltersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1532,7 +1532,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListFiltersRequest(arg0 interface{}) *go
 }
 
 // ListFiltersWithContext mocks base method
-func (m *MockGuardDutyAPI) ListFiltersWithContext(arg0 aws.Context, arg1 *guardduty.ListFiltersInput, arg2 ...request.Option) (*guardduty.ListFiltersOutput, error) {
+func (m *MockGuardDutyAPI) ListFiltersWithContext(arg0 context.Context, arg1 *guardduty.ListFiltersInput, arg2 ...request.Option) (*guardduty.ListFiltersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1581,7 +1581,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListFindingsPages(arg0, arg1 interface{}
 }
 
 // ListFindingsPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListFindingsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListFindingsInput, arg2 func(*guardduty.ListFindingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListFindingsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListFindingsInput, arg2 func(*guardduty.ListFindingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1615,7 +1615,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListFindingsRequest(arg0 interface{}) *g
 }
 
 // ListFindingsWithContext mocks base method
-func (m *MockGuardDutyAPI) ListFindingsWithContext(arg0 aws.Context, arg1 *guardduty.ListFindingsInput, arg2 ...request.Option) (*guardduty.ListFindingsOutput, error) {
+func (m *MockGuardDutyAPI) ListFindingsWithContext(arg0 context.Context, arg1 *guardduty.ListFindingsInput, arg2 ...request.Option) (*guardduty.ListFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1664,7 +1664,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListIPSetsPages(arg0, arg1 interface{}) 
 }
 
 // ListIPSetsPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListIPSetsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListIPSetsInput, arg2 func(*guardduty.ListIPSetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListIPSetsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListIPSetsInput, arg2 func(*guardduty.ListIPSetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1698,7 +1698,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListIPSetsRequest(arg0 interface{}) *gom
 }
 
 // ListIPSetsWithContext mocks base method
-func (m *MockGuardDutyAPI) ListIPSetsWithContext(arg0 aws.Context, arg1 *guardduty.ListIPSetsInput, arg2 ...request.Option) (*guardduty.ListIPSetsOutput, error) {
+func (m *MockGuardDutyAPI) ListIPSetsWithContext(arg0 context.Context, arg1 *guardduty.ListIPSetsInput, arg2 ...request.Option) (*guardduty.ListIPSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1747,7 +1747,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListInvitationsPages(arg0, arg1 interfac
 }
 
 // ListInvitationsPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListInvitationsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListInvitationsInput, arg2 func(*guardduty.ListInvitationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListInvitationsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListInvitationsInput, arg2 func(*guardduty.ListInvitationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1781,7 +1781,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListInvitationsRequest(arg0 interface{})
 }
 
 // ListInvitationsWithContext mocks base method
-func (m *MockGuardDutyAPI) ListInvitationsWithContext(arg0 aws.Context, arg1 *guardduty.ListInvitationsInput, arg2 ...request.Option) (*guardduty.ListInvitationsOutput, error) {
+func (m *MockGuardDutyAPI) ListInvitationsWithContext(arg0 context.Context, arg1 *guardduty.ListInvitationsInput, arg2 ...request.Option) (*guardduty.ListInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1830,7 +1830,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListMembersPages(arg0, arg1 interface{})
 }
 
 // ListMembersPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListMembersPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListMembersInput, arg2 func(*guardduty.ListMembersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListMembersPagesWithContext(arg0 context.Context, arg1 *guardduty.ListMembersInput, arg2 func(*guardduty.ListMembersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1864,7 +1864,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListMembersRequest(arg0 interface{}) *go
 }
 
 // ListMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) ListMembersWithContext(arg0 aws.Context, arg1 *guardduty.ListMembersInput, arg2 ...request.Option) (*guardduty.ListMembersOutput, error) {
+func (m *MockGuardDutyAPI) ListMembersWithContext(arg0 context.Context, arg1 *guardduty.ListMembersInput, arg2 ...request.Option) (*guardduty.ListMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1913,7 +1913,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsPages(arg0, arg1 inte
 }
 
 // ListThreatIntelSetsPagesWithContext mocks base method
-func (m *MockGuardDutyAPI) ListThreatIntelSetsPagesWithContext(arg0 aws.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 func(*guardduty.ListThreatIntelSetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGuardDutyAPI) ListThreatIntelSetsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 func(*guardduty.ListThreatIntelSetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1947,7 +1947,7 @@ func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsRequest(arg0 interfac
 }
 
 // ListThreatIntelSetsWithContext mocks base method
-func (m *MockGuardDutyAPI) ListThreatIntelSetsWithContext(arg0 aws.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 ...request.Option) (*guardduty.ListThreatIntelSetsOutput, error) {
+func (m *MockGuardDutyAPI) ListThreatIntelSetsWithContext(arg0 context.Context, arg1 *guardduty.ListThreatIntelSetsInput, arg2 ...request.Option) (*guardduty.ListThreatIntelSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1997,7 +1997,7 @@ func (mr *MockGuardDutyAPIMockRecorder) StartMonitoringMembersRequest(arg0 inter
 }
 
 // StartMonitoringMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) StartMonitoringMembersWithContext(arg0 aws.Context, arg1 *guardduty.StartMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StartMonitoringMembersOutput, error) {
+func (m *MockGuardDutyAPI) StartMonitoringMembersWithContext(arg0 context.Context, arg1 *guardduty.StartMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StartMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2047,7 +2047,7 @@ func (mr *MockGuardDutyAPIMockRecorder) StopMonitoringMembersRequest(arg0 interf
 }
 
 // StopMonitoringMembersWithContext mocks base method
-func (m *MockGuardDutyAPI) StopMonitoringMembersWithContext(arg0 aws.Context, arg1 *guardduty.StopMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StopMonitoringMembersOutput, error) {
+func (m *MockGuardDutyAPI) StopMonitoringMembersWithContext(arg0 context.Context, arg1 *guardduty.StopMonitoringMembersInput, arg2 ...request.Option) (*guardduty.StopMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2097,7 +2097,7 @@ func (mr *MockGuardDutyAPIMockRecorder) UnarchiveFindingsRequest(arg0 interface{
 }
 
 // UnarchiveFindingsWithContext mocks base method
-func (m *MockGuardDutyAPI) UnarchiveFindingsWithContext(arg0 aws.Context, arg1 *guardduty.UnarchiveFindingsInput, arg2 ...request.Option) (*guardduty.UnarchiveFindingsOutput, error) {
+func (m *MockGuardDutyAPI) UnarchiveFindingsWithContext(arg0 context.Context, arg1 *guardduty.UnarchiveFindingsInput, arg2 ...request.Option) (*guardduty.UnarchiveFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2147,7 +2147,7 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateDetectorRequest(arg0 interface{}) 
 }
 
 // UpdateDetectorWithContext mocks base method
-func (m *MockGuardDutyAPI) UpdateDetectorWithContext(arg0 aws.Context, arg1 *guardduty.UpdateDetectorInput, arg2 ...request.Option) (*guardduty.UpdateDetectorOutput, error) {
+func (m *MockGuardDutyAPI) UpdateDetectorWithContext(arg0 context.Context, arg1 *guardduty.UpdateDetectorInput, arg2 ...request.Option) (*guardduty.UpdateDetectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2197,7 +2197,7 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateFilterRequest(arg0 interface{}) *g
 }
 
 // UpdateFilterWithContext mocks base method
-func (m *MockGuardDutyAPI) UpdateFilterWithContext(arg0 aws.Context, arg1 *guardduty.UpdateFilterInput, arg2 ...request.Option) (*guardduty.UpdateFilterOutput, error) {
+func (m *MockGuardDutyAPI) UpdateFilterWithContext(arg0 context.Context, arg1 *guardduty.UpdateFilterInput, arg2 ...request.Option) (*guardduty.UpdateFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2247,7 +2247,7 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateFindingsFeedbackRequest(arg0 inter
 }
 
 // UpdateFindingsFeedbackWithContext mocks base method
-func (m *MockGuardDutyAPI) UpdateFindingsFeedbackWithContext(arg0 aws.Context, arg1 *guardduty.UpdateFindingsFeedbackInput, arg2 ...request.Option) (*guardduty.UpdateFindingsFeedbackOutput, error) {
+func (m *MockGuardDutyAPI) UpdateFindingsFeedbackWithContext(arg0 context.Context, arg1 *guardduty.UpdateFindingsFeedbackInput, arg2 ...request.Option) (*guardduty.UpdateFindingsFeedbackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2297,7 +2297,7 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSetRequest(arg0 interface{}) *go
 }
 
 // UpdateIPSetWithContext mocks base method
-func (m *MockGuardDutyAPI) UpdateIPSetWithContext(arg0 aws.Context, arg1 *guardduty.UpdateIPSetInput, arg2 ...request.Option) (*guardduty.UpdateIPSetOutput, error) {
+func (m *MockGuardDutyAPI) UpdateIPSetWithContext(arg0 context.Context, arg1 *guardduty.UpdateIPSetInput, arg2 ...request.Option) (*guardduty.UpdateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2347,7 +2347,7 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateThreatIntelSetRequest(arg0 interfa
 }
 
 // UpdateThreatIntelSetWithContext mocks base method
-func (m *MockGuardDutyAPI) UpdateThreatIntelSetWithContext(arg0 aws.Context, arg1 *guardduty.UpdateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.UpdateThreatIntelSetOutput, error) {
+func (m *MockGuardDutyAPI) UpdateThreatIntelSetWithContext(arg0 context.Context, arg1 *guardduty.UpdateThreatIntelSetInput, arg2 ...request.Option) (*guardduty.UpdateThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

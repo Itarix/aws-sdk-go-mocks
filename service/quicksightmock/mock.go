@@ -5,7 +5,7 @@
 package quicksightmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	quicksight "github.com/aws/aws-sdk-go/service/quicksight"
 	gomock "github.com/golang/mock/gomock"
@@ -81,7 +81,7 @@ func (mr *MockQuickSightAPIMockRecorder) CreateGroupMembershipRequest(arg0 inter
 }
 
 // CreateGroupMembershipWithContext mocks base method
-func (m *MockQuickSightAPI) CreateGroupMembershipWithContext(arg0 aws.Context, arg1 *quicksight.CreateGroupMembershipInput, arg2 ...request.Option) (*quicksight.CreateGroupMembershipOutput, error) {
+func (m *MockQuickSightAPI) CreateGroupMembershipWithContext(arg0 context.Context, arg1 *quicksight.CreateGroupMembershipInput, arg2 ...request.Option) (*quicksight.CreateGroupMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockQuickSightAPIMockRecorder) CreateGroupRequest(arg0 interface{}) *g
 }
 
 // CreateGroupWithContext mocks base method
-func (m *MockQuickSightAPI) CreateGroupWithContext(arg0 aws.Context, arg1 *quicksight.CreateGroupInput, arg2 ...request.Option) (*quicksight.CreateGroupOutput, error) {
+func (m *MockQuickSightAPI) CreateGroupWithContext(arg0 context.Context, arg1 *quicksight.CreateGroupInput, arg2 ...request.Option) (*quicksight.CreateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -181,7 +181,7 @@ func (mr *MockQuickSightAPIMockRecorder) DeleteGroupMembershipRequest(arg0 inter
 }
 
 // DeleteGroupMembershipWithContext mocks base method
-func (m *MockQuickSightAPI) DeleteGroupMembershipWithContext(arg0 aws.Context, arg1 *quicksight.DeleteGroupMembershipInput, arg2 ...request.Option) (*quicksight.DeleteGroupMembershipOutput, error) {
+func (m *MockQuickSightAPI) DeleteGroupMembershipWithContext(arg0 context.Context, arg1 *quicksight.DeleteGroupMembershipInput, arg2 ...request.Option) (*quicksight.DeleteGroupMembershipOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockQuickSightAPIMockRecorder) DeleteGroupRequest(arg0 interface{}) *g
 }
 
 // DeleteGroupWithContext mocks base method
-func (m *MockQuickSightAPI) DeleteGroupWithContext(arg0 aws.Context, arg1 *quicksight.DeleteGroupInput, arg2 ...request.Option) (*quicksight.DeleteGroupOutput, error) {
+func (m *MockQuickSightAPI) DeleteGroupWithContext(arg0 context.Context, arg1 *quicksight.DeleteGroupInput, arg2 ...request.Option) (*quicksight.DeleteGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockQuickSightAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *go
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockQuickSightAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *quicksight.DeleteUserInput, arg2 ...request.Option) (*quicksight.DeleteUserOutput, error) {
+func (m *MockQuickSightAPI) DeleteUserWithContext(arg0 context.Context, arg1 *quicksight.DeleteUserInput, arg2 ...request.Option) (*quicksight.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeGroupRequest(arg0 interface{}) 
 }
 
 // DescribeGroupWithContext mocks base method
-func (m *MockQuickSightAPI) DescribeGroupWithContext(arg0 aws.Context, arg1 *quicksight.DescribeGroupInput, arg2 ...request.Option) (*quicksight.DescribeGroupOutput, error) {
+func (m *MockQuickSightAPI) DescribeGroupWithContext(arg0 context.Context, arg1 *quicksight.DescribeGroupInput, arg2 ...request.Option) (*quicksight.DescribeGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeUserRequest(arg0 interface{}) *
 }
 
 // DescribeUserWithContext mocks base method
-func (m *MockQuickSightAPI) DescribeUserWithContext(arg0 aws.Context, arg1 *quicksight.DescribeUserInput, arg2 ...request.Option) (*quicksight.DescribeUserOutput, error) {
+func (m *MockQuickSightAPI) DescribeUserWithContext(arg0 context.Context, arg1 *quicksight.DescribeUserInput, arg2 ...request.Option) (*quicksight.DescribeUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockQuickSightAPIMockRecorder) GetDashboardEmbedUrlRequest(arg0 interf
 }
 
 // GetDashboardEmbedUrlWithContext mocks base method
-func (m *MockQuickSightAPI) GetDashboardEmbedUrlWithContext(arg0 aws.Context, arg1 *quicksight.GetDashboardEmbedUrlInput, arg2 ...request.Option) (*quicksight.GetDashboardEmbedUrlOutput, error) {
+func (m *MockQuickSightAPI) GetDashboardEmbedUrlWithContext(arg0 context.Context, arg1 *quicksight.GetDashboardEmbedUrlInput, arg2 ...request.Option) (*quicksight.GetDashboardEmbedUrlOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockQuickSightAPIMockRecorder) ListGroupMembershipsRequest(arg0 interf
 }
 
 // ListGroupMembershipsWithContext mocks base method
-func (m *MockQuickSightAPI) ListGroupMembershipsWithContext(arg0 aws.Context, arg1 *quicksight.ListGroupMembershipsInput, arg2 ...request.Option) (*quicksight.ListGroupMembershipsOutput, error) {
+func (m *MockQuickSightAPI) ListGroupMembershipsWithContext(arg0 context.Context, arg1 *quicksight.ListGroupMembershipsInput, arg2 ...request.Option) (*quicksight.ListGroupMembershipsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockQuickSightAPIMockRecorder) ListGroupsRequest(arg0 interface{}) *go
 }
 
 // ListGroupsWithContext mocks base method
-func (m *MockQuickSightAPI) ListGroupsWithContext(arg0 aws.Context, arg1 *quicksight.ListGroupsInput, arg2 ...request.Option) (*quicksight.ListGroupsOutput, error) {
+func (m *MockQuickSightAPI) ListGroupsWithContext(arg0 context.Context, arg1 *quicksight.ListGroupsInput, arg2 ...request.Option) (*quicksight.ListGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockQuickSightAPIMockRecorder) ListUserGroupsRequest(arg0 interface{})
 }
 
 // ListUserGroupsWithContext mocks base method
-func (m *MockQuickSightAPI) ListUserGroupsWithContext(arg0 aws.Context, arg1 *quicksight.ListUserGroupsInput, arg2 ...request.Option) (*quicksight.ListUserGroupsOutput, error) {
+func (m *MockQuickSightAPI) ListUserGroupsWithContext(arg0 context.Context, arg1 *quicksight.ListUserGroupsInput, arg2 ...request.Option) (*quicksight.ListUserGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockQuickSightAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gom
 }
 
 // ListUsersWithContext mocks base method
-func (m *MockQuickSightAPI) ListUsersWithContext(arg0 aws.Context, arg1 *quicksight.ListUsersInput, arg2 ...request.Option) (*quicksight.ListUsersOutput, error) {
+func (m *MockQuickSightAPI) ListUsersWithContext(arg0 context.Context, arg1 *quicksight.ListUsersInput, arg2 ...request.Option) (*quicksight.ListUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockQuickSightAPIMockRecorder) RegisterUserRequest(arg0 interface{}) *
 }
 
 // RegisterUserWithContext mocks base method
-func (m *MockQuickSightAPI) RegisterUserWithContext(arg0 aws.Context, arg1 *quicksight.RegisterUserInput, arg2 ...request.Option) (*quicksight.RegisterUserOutput, error) {
+func (m *MockQuickSightAPI) RegisterUserWithContext(arg0 context.Context, arg1 *quicksight.RegisterUserInput, arg2 ...request.Option) (*quicksight.RegisterUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockQuickSightAPIMockRecorder) UpdateGroupRequest(arg0 interface{}) *g
 }
 
 // UpdateGroupWithContext mocks base method
-func (m *MockQuickSightAPI) UpdateGroupWithContext(arg0 aws.Context, arg1 *quicksight.UpdateGroupInput, arg2 ...request.Option) (*quicksight.UpdateGroupOutput, error) {
+func (m *MockQuickSightAPI) UpdateGroupWithContext(arg0 context.Context, arg1 *quicksight.UpdateGroupInput, arg2 ...request.Option) (*quicksight.UpdateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockQuickSightAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *go
 }
 
 // UpdateUserWithContext mocks base method
-func (m *MockQuickSightAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *quicksight.UpdateUserInput, arg2 ...request.Option) (*quicksight.UpdateUserOutput, error) {
+func (m *MockQuickSightAPI) UpdateUserWithContext(arg0 context.Context, arg1 *quicksight.UpdateUserInput, arg2 ...request.Option) (*quicksight.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

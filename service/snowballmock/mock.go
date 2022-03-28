@@ -5,7 +5,7 @@
 package snowballmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	snowball "github.com/aws/aws-sdk-go/service/snowball"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSnowballAPIMockRecorder) CancelClusterRequest(arg0 interface{}) *g
 }
 
 // CancelClusterWithContext mocks base method
-func (m *MockSnowballAPI) CancelClusterWithContext(arg0 aws.Context, arg1 *snowball.CancelClusterInput, arg2 ...request.Option) (*snowball.CancelClusterOutput, error) {
+func (m *MockSnowballAPI) CancelClusterWithContext(arg0 context.Context, arg1 *snowball.CancelClusterInput, arg2 ...request.Option) (*snowball.CancelClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSnowballAPIMockRecorder) CancelJobRequest(arg0 interface{}) *gomoc
 }
 
 // CancelJobWithContext mocks base method
-func (m *MockSnowballAPI) CancelJobWithContext(arg0 aws.Context, arg1 *snowball.CancelJobInput, arg2 ...request.Option) (*snowball.CancelJobOutput, error) {
+func (m *MockSnowballAPI) CancelJobWithContext(arg0 context.Context, arg1 *snowball.CancelJobInput, arg2 ...request.Option) (*snowball.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSnowballAPIMockRecorder) CreateAddressRequest(arg0 interface{}) *g
 }
 
 // CreateAddressWithContext mocks base method
-func (m *MockSnowballAPI) CreateAddressWithContext(arg0 aws.Context, arg1 *snowball.CreateAddressInput, arg2 ...request.Option) (*snowball.CreateAddressOutput, error) {
+func (m *MockSnowballAPI) CreateAddressWithContext(arg0 context.Context, arg1 *snowball.CreateAddressInput, arg2 ...request.Option) (*snowball.CreateAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSnowballAPIMockRecorder) CreateClusterRequest(arg0 interface{}) *g
 }
 
 // CreateClusterWithContext mocks base method
-func (m *MockSnowballAPI) CreateClusterWithContext(arg0 aws.Context, arg1 *snowball.CreateClusterInput, arg2 ...request.Option) (*snowball.CreateClusterOutput, error) {
+func (m *MockSnowballAPI) CreateClusterWithContext(arg0 context.Context, arg1 *snowball.CreateClusterInput, arg2 ...request.Option) (*snowball.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSnowballAPIMockRecorder) CreateJobRequest(arg0 interface{}) *gomoc
 }
 
 // CreateJobWithContext mocks base method
-func (m *MockSnowballAPI) CreateJobWithContext(arg0 aws.Context, arg1 *snowball.CreateJobInput, arg2 ...request.Option) (*snowball.CreateJobOutput, error) {
+func (m *MockSnowballAPI) CreateJobWithContext(arg0 context.Context, arg1 *snowball.CreateJobInput, arg2 ...request.Option) (*snowball.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSnowballAPIMockRecorder) DescribeAddressRequest(arg0 interface{}) 
 }
 
 // DescribeAddressWithContext mocks base method
-func (m *MockSnowballAPI) DescribeAddressWithContext(arg0 aws.Context, arg1 *snowball.DescribeAddressInput, arg2 ...request.Option) (*snowball.DescribeAddressOutput, error) {
+func (m *MockSnowballAPI) DescribeAddressWithContext(arg0 context.Context, arg1 *snowball.DescribeAddressInput, arg2 ...request.Option) (*snowball.DescribeAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockSnowballAPIMockRecorder) DescribeAddressesPages(arg0, arg1 interfa
 }
 
 // DescribeAddressesPagesWithContext mocks base method
-func (m *MockSnowballAPI) DescribeAddressesPagesWithContext(arg0 aws.Context, arg1 *snowball.DescribeAddressesInput, arg2 func(*snowball.DescribeAddressesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSnowballAPI) DescribeAddressesPagesWithContext(arg0 context.Context, arg1 *snowball.DescribeAddressesInput, arg2 func(*snowball.DescribeAddressesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockSnowballAPIMockRecorder) DescribeAddressesRequest(arg0 interface{}
 }
 
 // DescribeAddressesWithContext mocks base method
-func (m *MockSnowballAPI) DescribeAddressesWithContext(arg0 aws.Context, arg1 *snowball.DescribeAddressesInput, arg2 ...request.Option) (*snowball.DescribeAddressesOutput, error) {
+func (m *MockSnowballAPI) DescribeAddressesWithContext(arg0 context.Context, arg1 *snowball.DescribeAddressesInput, arg2 ...request.Option) (*snowball.DescribeAddressesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockSnowballAPIMockRecorder) DescribeClusterRequest(arg0 interface{}) 
 }
 
 // DescribeClusterWithContext mocks base method
-func (m *MockSnowballAPI) DescribeClusterWithContext(arg0 aws.Context, arg1 *snowball.DescribeClusterInput, arg2 ...request.Option) (*snowball.DescribeClusterOutput, error) {
+func (m *MockSnowballAPI) DescribeClusterWithContext(arg0 context.Context, arg1 *snowball.DescribeClusterInput, arg2 ...request.Option) (*snowball.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockSnowballAPIMockRecorder) DescribeJobRequest(arg0 interface{}) *gom
 }
 
 // DescribeJobWithContext mocks base method
-func (m *MockSnowballAPI) DescribeJobWithContext(arg0 aws.Context, arg1 *snowball.DescribeJobInput, arg2 ...request.Option) (*snowball.DescribeJobOutput, error) {
+func (m *MockSnowballAPI) DescribeJobWithContext(arg0 context.Context, arg1 *snowball.DescribeJobInput, arg2 ...request.Option) (*snowball.DescribeJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockSnowballAPIMockRecorder) GetJobManifestRequest(arg0 interface{}) *
 }
 
 // GetJobManifestWithContext mocks base method
-func (m *MockSnowballAPI) GetJobManifestWithContext(arg0 aws.Context, arg1 *snowball.GetJobManifestInput, arg2 ...request.Option) (*snowball.GetJobManifestOutput, error) {
+func (m *MockSnowballAPI) GetJobManifestWithContext(arg0 context.Context, arg1 *snowball.GetJobManifestInput, arg2 ...request.Option) (*snowball.GetJobManifestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockSnowballAPIMockRecorder) GetJobUnlockCodeRequest(arg0 interface{})
 }
 
 // GetJobUnlockCodeWithContext mocks base method
-func (m *MockSnowballAPI) GetJobUnlockCodeWithContext(arg0 aws.Context, arg1 *snowball.GetJobUnlockCodeInput, arg2 ...request.Option) (*snowball.GetJobUnlockCodeOutput, error) {
+func (m *MockSnowballAPI) GetJobUnlockCodeWithContext(arg0 context.Context, arg1 *snowball.GetJobUnlockCodeInput, arg2 ...request.Option) (*snowball.GetJobUnlockCodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockSnowballAPIMockRecorder) GetSnowballUsageRequest(arg0 interface{})
 }
 
 // GetSnowballUsageWithContext mocks base method
-func (m *MockSnowballAPI) GetSnowballUsageWithContext(arg0 aws.Context, arg1 *snowball.GetSnowballUsageInput, arg2 ...request.Option) (*snowball.GetSnowballUsageOutput, error) {
+func (m *MockSnowballAPI) GetSnowballUsageWithContext(arg0 context.Context, arg1 *snowball.GetSnowballUsageInput, arg2 ...request.Option) (*snowball.GetSnowballUsageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockSnowballAPIMockRecorder) ListClusterJobsRequest(arg0 interface{}) 
 }
 
 // ListClusterJobsWithContext mocks base method
-func (m *MockSnowballAPI) ListClusterJobsWithContext(arg0 aws.Context, arg1 *snowball.ListClusterJobsInput, arg2 ...request.Option) (*snowball.ListClusterJobsOutput, error) {
+func (m *MockSnowballAPI) ListClusterJobsWithContext(arg0 context.Context, arg1 *snowball.ListClusterJobsInput, arg2 ...request.Option) (*snowball.ListClusterJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockSnowballAPIMockRecorder) ListClustersRequest(arg0 interface{}) *go
 }
 
 // ListClustersWithContext mocks base method
-func (m *MockSnowballAPI) ListClustersWithContext(arg0 aws.Context, arg1 *snowball.ListClustersInput, arg2 ...request.Option) (*snowball.ListClustersOutput, error) {
+func (m *MockSnowballAPI) ListClustersWithContext(arg0 context.Context, arg1 *snowball.ListClustersInput, arg2 ...request.Option) (*snowball.ListClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -799,7 +799,7 @@ func (mr *MockSnowballAPIMockRecorder) ListCompatibleImagesRequest(arg0 interfac
 }
 
 // ListCompatibleImagesWithContext mocks base method
-func (m *MockSnowballAPI) ListCompatibleImagesWithContext(arg0 aws.Context, arg1 *snowball.ListCompatibleImagesInput, arg2 ...request.Option) (*snowball.ListCompatibleImagesOutput, error) {
+func (m *MockSnowballAPI) ListCompatibleImagesWithContext(arg0 context.Context, arg1 *snowball.ListCompatibleImagesInput, arg2 ...request.Option) (*snowball.ListCompatibleImagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -848,7 +848,7 @@ func (mr *MockSnowballAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *go
 }
 
 // ListJobsPagesWithContext mocks base method
-func (m *MockSnowballAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *snowball.ListJobsInput, arg2 func(*snowball.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSnowballAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *snowball.ListJobsInput, arg2 func(*snowball.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -882,7 +882,7 @@ func (mr *MockSnowballAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockSnowballAPI) ListJobsWithContext(arg0 aws.Context, arg1 *snowball.ListJobsInput, arg2 ...request.Option) (*snowball.ListJobsOutput, error) {
+func (m *MockSnowballAPI) ListJobsWithContext(arg0 context.Context, arg1 *snowball.ListJobsInput, arg2 ...request.Option) (*snowball.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -932,7 +932,7 @@ func (mr *MockSnowballAPIMockRecorder) UpdateClusterRequest(arg0 interface{}) *g
 }
 
 // UpdateClusterWithContext mocks base method
-func (m *MockSnowballAPI) UpdateClusterWithContext(arg0 aws.Context, arg1 *snowball.UpdateClusterInput, arg2 ...request.Option) (*snowball.UpdateClusterOutput, error) {
+func (m *MockSnowballAPI) UpdateClusterWithContext(arg0 context.Context, arg1 *snowball.UpdateClusterInput, arg2 ...request.Option) (*snowball.UpdateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -982,7 +982,7 @@ func (mr *MockSnowballAPIMockRecorder) UpdateJobRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateJobWithContext mocks base method
-func (m *MockSnowballAPI) UpdateJobWithContext(arg0 aws.Context, arg1 *snowball.UpdateJobInput, arg2 ...request.Option) (*snowball.UpdateJobOutput, error) {
+func (m *MockSnowballAPI) UpdateJobWithContext(arg0 context.Context, arg1 *snowball.UpdateJobInput, arg2 ...request.Option) (*snowball.UpdateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

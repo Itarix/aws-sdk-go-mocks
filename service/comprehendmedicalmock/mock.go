@@ -5,7 +5,7 @@
 package comprehendmedicalmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	comprehendmedical "github.com/aws/aws-sdk-go/service/comprehendmedical"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockComprehendMedicalAPIMockRecorder) DetectEntitiesRequest(arg0 inter
 }
 
 // DetectEntitiesWithContext mocks base method
-func (m *MockComprehendMedicalAPI) DetectEntitiesWithContext(arg0 aws.Context, arg1 *comprehendmedical.DetectEntitiesInput, arg2 ...request.Option) (*comprehendmedical.DetectEntitiesOutput, error) {
+func (m *MockComprehendMedicalAPI) DetectEntitiesWithContext(arg0 context.Context, arg1 *comprehendmedical.DetectEntitiesInput, arg2 ...request.Option) (*comprehendmedical.DetectEntitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockComprehendMedicalAPIMockRecorder) DetectPHIRequest(arg0 interface{
 }
 
 // DetectPHIWithContext mocks base method
-func (m *MockComprehendMedicalAPI) DetectPHIWithContext(arg0 aws.Context, arg1 *comprehendmedical.DetectPHIInput, arg2 ...request.Option) (*comprehendmedical.DetectPHIOutput, error) {
+func (m *MockComprehendMedicalAPI) DetectPHIWithContext(arg0 context.Context, arg1 *comprehendmedical.DetectPHIInput, arg2 ...request.Option) (*comprehendmedical.DetectPHIOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

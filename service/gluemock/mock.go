@@ -5,7 +5,7 @@
 package gluemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	glue "github.com/aws/aws-sdk-go/service/glue"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockGlueAPIMockRecorder) BatchCreatePartitionRequest(arg0 interface{})
 }
 
 // BatchCreatePartitionWithContext mocks base method
-func (m *MockGlueAPI) BatchCreatePartitionWithContext(arg0 aws.Context, arg1 *glue.BatchCreatePartitionInput, arg2 ...request.Option) (*glue.BatchCreatePartitionOutput, error) {
+func (m *MockGlueAPI) BatchCreatePartitionWithContext(arg0 context.Context, arg1 *glue.BatchCreatePartitionInput, arg2 ...request.Option) (*glue.BatchCreatePartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockGlueAPIMockRecorder) BatchDeleteConnectionRequest(arg0 interface{}
 }
 
 // BatchDeleteConnectionWithContext mocks base method
-func (m *MockGlueAPI) BatchDeleteConnectionWithContext(arg0 aws.Context, arg1 *glue.BatchDeleteConnectionInput, arg2 ...request.Option) (*glue.BatchDeleteConnectionOutput, error) {
+func (m *MockGlueAPI) BatchDeleteConnectionWithContext(arg0 context.Context, arg1 *glue.BatchDeleteConnectionInput, arg2 ...request.Option) (*glue.BatchDeleteConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockGlueAPIMockRecorder) BatchDeletePartitionRequest(arg0 interface{})
 }
 
 // BatchDeletePartitionWithContext mocks base method
-func (m *MockGlueAPI) BatchDeletePartitionWithContext(arg0 aws.Context, arg1 *glue.BatchDeletePartitionInput, arg2 ...request.Option) (*glue.BatchDeletePartitionOutput, error) {
+func (m *MockGlueAPI) BatchDeletePartitionWithContext(arg0 context.Context, arg1 *glue.BatchDeletePartitionInput, arg2 ...request.Option) (*glue.BatchDeletePartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -246,7 +246,7 @@ func (mr *MockGlueAPIMockRecorder) BatchDeleteTableVersionRequest(arg0 interface
 }
 
 // BatchDeleteTableVersionWithContext mocks base method
-func (m *MockGlueAPI) BatchDeleteTableVersionWithContext(arg0 aws.Context, arg1 *glue.BatchDeleteTableVersionInput, arg2 ...request.Option) (*glue.BatchDeleteTableVersionOutput, error) {
+func (m *MockGlueAPI) BatchDeleteTableVersionWithContext(arg0 context.Context, arg1 *glue.BatchDeleteTableVersionInput, arg2 ...request.Option) (*glue.BatchDeleteTableVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockGlueAPIMockRecorder) BatchDeleteTableVersionWithContext(arg0, arg1
 }
 
 // BatchDeleteTableWithContext mocks base method
-func (m *MockGlueAPI) BatchDeleteTableWithContext(arg0 aws.Context, arg1 *glue.BatchDeleteTableInput, arg2 ...request.Option) (*glue.BatchDeleteTableOutput, error) {
+func (m *MockGlueAPI) BatchDeleteTableWithContext(arg0 context.Context, arg1 *glue.BatchDeleteTableInput, arg2 ...request.Option) (*glue.BatchDeleteTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockGlueAPIMockRecorder) BatchGetPartitionRequest(arg0 interface{}) *g
 }
 
 // BatchGetPartitionWithContext mocks base method
-func (m *MockGlueAPI) BatchGetPartitionWithContext(arg0 aws.Context, arg1 *glue.BatchGetPartitionInput, arg2 ...request.Option) (*glue.BatchGetPartitionOutput, error) {
+func (m *MockGlueAPI) BatchGetPartitionWithContext(arg0 context.Context, arg1 *glue.BatchGetPartitionInput, arg2 ...request.Option) (*glue.BatchGetPartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockGlueAPIMockRecorder) BatchStopJobRunRequest(arg0 interface{}) *gom
 }
 
 // BatchStopJobRunWithContext mocks base method
-func (m *MockGlueAPI) BatchStopJobRunWithContext(arg0 aws.Context, arg1 *glue.BatchStopJobRunInput, arg2 ...request.Option) (*glue.BatchStopJobRunOutput, error) {
+func (m *MockGlueAPI) BatchStopJobRunWithContext(arg0 context.Context, arg1 *glue.BatchStopJobRunInput, arg2 ...request.Option) (*glue.BatchStopJobRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockGlueAPIMockRecorder) CreateClassifierRequest(arg0 interface{}) *go
 }
 
 // CreateClassifierWithContext mocks base method
-func (m *MockGlueAPI) CreateClassifierWithContext(arg0 aws.Context, arg1 *glue.CreateClassifierInput, arg2 ...request.Option) (*glue.CreateClassifierOutput, error) {
+func (m *MockGlueAPI) CreateClassifierWithContext(arg0 context.Context, arg1 *glue.CreateClassifierInput, arg2 ...request.Option) (*glue.CreateClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockGlueAPIMockRecorder) CreateConnectionRequest(arg0 interface{}) *go
 }
 
 // CreateConnectionWithContext mocks base method
-func (m *MockGlueAPI) CreateConnectionWithContext(arg0 aws.Context, arg1 *glue.CreateConnectionInput, arg2 ...request.Option) (*glue.CreateConnectionOutput, error) {
+func (m *MockGlueAPI) CreateConnectionWithContext(arg0 context.Context, arg1 *glue.CreateConnectionInput, arg2 ...request.Option) (*glue.CreateConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockGlueAPIMockRecorder) CreateCrawlerRequest(arg0 interface{}) *gomoc
 }
 
 // CreateCrawlerWithContext mocks base method
-func (m *MockGlueAPI) CreateCrawlerWithContext(arg0 aws.Context, arg1 *glue.CreateCrawlerInput, arg2 ...request.Option) (*glue.CreateCrawlerOutput, error) {
+func (m *MockGlueAPI) CreateCrawlerWithContext(arg0 context.Context, arg1 *glue.CreateCrawlerInput, arg2 ...request.Option) (*glue.CreateCrawlerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockGlueAPIMockRecorder) CreateDatabaseRequest(arg0 interface{}) *gomo
 }
 
 // CreateDatabaseWithContext mocks base method
-func (m *MockGlueAPI) CreateDatabaseWithContext(arg0 aws.Context, arg1 *glue.CreateDatabaseInput, arg2 ...request.Option) (*glue.CreateDatabaseOutput, error) {
+func (m *MockGlueAPI) CreateDatabaseWithContext(arg0 context.Context, arg1 *glue.CreateDatabaseInput, arg2 ...request.Option) (*glue.CreateDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockGlueAPIMockRecorder) CreateDevEndpointRequest(arg0 interface{}) *g
 }
 
 // CreateDevEndpointWithContext mocks base method
-func (m *MockGlueAPI) CreateDevEndpointWithContext(arg0 aws.Context, arg1 *glue.CreateDevEndpointInput, arg2 ...request.Option) (*glue.CreateDevEndpointOutput, error) {
+func (m *MockGlueAPI) CreateDevEndpointWithContext(arg0 context.Context, arg1 *glue.CreateDevEndpointInput, arg2 ...request.Option) (*glue.CreateDevEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockGlueAPIMockRecorder) CreateJobRequest(arg0 interface{}) *gomock.Ca
 }
 
 // CreateJobWithContext mocks base method
-func (m *MockGlueAPI) CreateJobWithContext(arg0 aws.Context, arg1 *glue.CreateJobInput, arg2 ...request.Option) (*glue.CreateJobOutput, error) {
+func (m *MockGlueAPI) CreateJobWithContext(arg0 context.Context, arg1 *glue.CreateJobInput, arg2 ...request.Option) (*glue.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockGlueAPIMockRecorder) CreatePartitionRequest(arg0 interface{}) *gom
 }
 
 // CreatePartitionWithContext mocks base method
-func (m *MockGlueAPI) CreatePartitionWithContext(arg0 aws.Context, arg1 *glue.CreatePartitionInput, arg2 ...request.Option) (*glue.CreatePartitionOutput, error) {
+func (m *MockGlueAPI) CreatePartitionWithContext(arg0 context.Context, arg1 *glue.CreatePartitionInput, arg2 ...request.Option) (*glue.CreatePartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockGlueAPIMockRecorder) CreateScriptRequest(arg0 interface{}) *gomock
 }
 
 // CreateScriptWithContext mocks base method
-func (m *MockGlueAPI) CreateScriptWithContext(arg0 aws.Context, arg1 *glue.CreateScriptInput, arg2 ...request.Option) (*glue.CreateScriptOutput, error) {
+func (m *MockGlueAPI) CreateScriptWithContext(arg0 context.Context, arg1 *glue.CreateScriptInput, arg2 ...request.Option) (*glue.CreateScriptOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockGlueAPIMockRecorder) CreateSecurityConfigurationRequest(arg0 inter
 }
 
 // CreateSecurityConfigurationWithContext mocks base method
-func (m *MockGlueAPI) CreateSecurityConfigurationWithContext(arg0 aws.Context, arg1 *glue.CreateSecurityConfigurationInput, arg2 ...request.Option) (*glue.CreateSecurityConfigurationOutput, error) {
+func (m *MockGlueAPI) CreateSecurityConfigurationWithContext(arg0 context.Context, arg1 *glue.CreateSecurityConfigurationInput, arg2 ...request.Option) (*glue.CreateSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockGlueAPIMockRecorder) CreateTableRequest(arg0 interface{}) *gomock.
 }
 
 // CreateTableWithContext mocks base method
-func (m *MockGlueAPI) CreateTableWithContext(arg0 aws.Context, arg1 *glue.CreateTableInput, arg2 ...request.Option) (*glue.CreateTableOutput, error) {
+func (m *MockGlueAPI) CreateTableWithContext(arg0 context.Context, arg1 *glue.CreateTableInput, arg2 ...request.Option) (*glue.CreateTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockGlueAPIMockRecorder) CreateTriggerRequest(arg0 interface{}) *gomoc
 }
 
 // CreateTriggerWithContext mocks base method
-func (m *MockGlueAPI) CreateTriggerWithContext(arg0 aws.Context, arg1 *glue.CreateTriggerInput, arg2 ...request.Option) (*glue.CreateTriggerOutput, error) {
+func (m *MockGlueAPI) CreateTriggerWithContext(arg0 context.Context, arg1 *glue.CreateTriggerInput, arg2 ...request.Option) (*glue.CreateTriggerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockGlueAPIMockRecorder) CreateUserDefinedFunctionRequest(arg0 interfa
 }
 
 // CreateUserDefinedFunctionWithContext mocks base method
-func (m *MockGlueAPI) CreateUserDefinedFunctionWithContext(arg0 aws.Context, arg1 *glue.CreateUserDefinedFunctionInput, arg2 ...request.Option) (*glue.CreateUserDefinedFunctionOutput, error) {
+func (m *MockGlueAPI) CreateUserDefinedFunctionWithContext(arg0 context.Context, arg1 *glue.CreateUserDefinedFunctionInput, arg2 ...request.Option) (*glue.CreateUserDefinedFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteClassifierRequest(arg0 interface{}) *go
 }
 
 // DeleteClassifierWithContext mocks base method
-func (m *MockGlueAPI) DeleteClassifierWithContext(arg0 aws.Context, arg1 *glue.DeleteClassifierInput, arg2 ...request.Option) (*glue.DeleteClassifierOutput, error) {
+func (m *MockGlueAPI) DeleteClassifierWithContext(arg0 context.Context, arg1 *glue.DeleteClassifierInput, arg2 ...request.Option) (*glue.DeleteClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteConnectionRequest(arg0 interface{}) *go
 }
 
 // DeleteConnectionWithContext mocks base method
-func (m *MockGlueAPI) DeleteConnectionWithContext(arg0 aws.Context, arg1 *glue.DeleteConnectionInput, arg2 ...request.Option) (*glue.DeleteConnectionOutput, error) {
+func (m *MockGlueAPI) DeleteConnectionWithContext(arg0 context.Context, arg1 *glue.DeleteConnectionInput, arg2 ...request.Option) (*glue.DeleteConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteCrawlerRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteCrawlerWithContext mocks base method
-func (m *MockGlueAPI) DeleteCrawlerWithContext(arg0 aws.Context, arg1 *glue.DeleteCrawlerInput, arg2 ...request.Option) (*glue.DeleteCrawlerOutput, error) {
+func (m *MockGlueAPI) DeleteCrawlerWithContext(arg0 context.Context, arg1 *glue.DeleteCrawlerInput, arg2 ...request.Option) (*glue.DeleteCrawlerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteDatabaseRequest(arg0 interface{}) *gomo
 }
 
 // DeleteDatabaseWithContext mocks base method
-func (m *MockGlueAPI) DeleteDatabaseWithContext(arg0 aws.Context, arg1 *glue.DeleteDatabaseInput, arg2 ...request.Option) (*glue.DeleteDatabaseOutput, error) {
+func (m *MockGlueAPI) DeleteDatabaseWithContext(arg0 context.Context, arg1 *glue.DeleteDatabaseInput, arg2 ...request.Option) (*glue.DeleteDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteDevEndpointRequest(arg0 interface{}) *g
 }
 
 // DeleteDevEndpointWithContext mocks base method
-func (m *MockGlueAPI) DeleteDevEndpointWithContext(arg0 aws.Context, arg1 *glue.DeleteDevEndpointInput, arg2 ...request.Option) (*glue.DeleteDevEndpointOutput, error) {
+func (m *MockGlueAPI) DeleteDevEndpointWithContext(arg0 context.Context, arg1 *glue.DeleteDevEndpointInput, arg2 ...request.Option) (*glue.DeleteDevEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteJobRequest(arg0 interface{}) *gomock.Ca
 }
 
 // DeleteJobWithContext mocks base method
-func (m *MockGlueAPI) DeleteJobWithContext(arg0 aws.Context, arg1 *glue.DeleteJobInput, arg2 ...request.Option) (*glue.DeleteJobOutput, error) {
+func (m *MockGlueAPI) DeleteJobWithContext(arg0 context.Context, arg1 *glue.DeleteJobInput, arg2 ...request.Option) (*glue.DeleteJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockGlueAPIMockRecorder) DeletePartitionRequest(arg0 interface{}) *gom
 }
 
 // DeletePartitionWithContext mocks base method
-func (m *MockGlueAPI) DeletePartitionWithContext(arg0 aws.Context, arg1 *glue.DeletePartitionInput, arg2 ...request.Option) (*glue.DeletePartitionOutput, error) {
+func (m *MockGlueAPI) DeletePartitionWithContext(arg0 context.Context, arg1 *glue.DeletePartitionInput, arg2 ...request.Option) (*glue.DeletePartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{})
 }
 
 // DeleteResourcePolicyWithContext mocks base method
-func (m *MockGlueAPI) DeleteResourcePolicyWithContext(arg0 aws.Context, arg1 *glue.DeleteResourcePolicyInput, arg2 ...request.Option) (*glue.DeleteResourcePolicyOutput, error) {
+func (m *MockGlueAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *glue.DeleteResourcePolicyInput, arg2 ...request.Option) (*glue.DeleteResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteSecurityConfigurationRequest(arg0 inter
 }
 
 // DeleteSecurityConfigurationWithContext mocks base method
-func (m *MockGlueAPI) DeleteSecurityConfigurationWithContext(arg0 aws.Context, arg1 *glue.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*glue.DeleteSecurityConfigurationOutput, error) {
+func (m *MockGlueAPI) DeleteSecurityConfigurationWithContext(arg0 context.Context, arg1 *glue.DeleteSecurityConfigurationInput, arg2 ...request.Option) (*glue.DeleteSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1496,7 +1496,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteTableVersionRequest(arg0 interface{}) *
 }
 
 // DeleteTableVersionWithContext mocks base method
-func (m *MockGlueAPI) DeleteTableVersionWithContext(arg0 aws.Context, arg1 *glue.DeleteTableVersionInput, arg2 ...request.Option) (*glue.DeleteTableVersionOutput, error) {
+func (m *MockGlueAPI) DeleteTableVersionWithContext(arg0 context.Context, arg1 *glue.DeleteTableVersionInput, arg2 ...request.Option) (*glue.DeleteTableVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteTableVersionWithContext(arg0, arg1 inte
 }
 
 // DeleteTableWithContext mocks base method
-func (m *MockGlueAPI) DeleteTableWithContext(arg0 aws.Context, arg1 *glue.DeleteTableInput, arg2 ...request.Option) (*glue.DeleteTableOutput, error) {
+func (m *MockGlueAPI) DeleteTableWithContext(arg0 context.Context, arg1 *glue.DeleteTableInput, arg2 ...request.Option) (*glue.DeleteTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteTriggerRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteTriggerWithContext mocks base method
-func (m *MockGlueAPI) DeleteTriggerWithContext(arg0 aws.Context, arg1 *glue.DeleteTriggerInput, arg2 ...request.Option) (*glue.DeleteTriggerOutput, error) {
+func (m *MockGlueAPI) DeleteTriggerWithContext(arg0 context.Context, arg1 *glue.DeleteTriggerInput, arg2 ...request.Option) (*glue.DeleteTriggerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockGlueAPIMockRecorder) DeleteUserDefinedFunctionRequest(arg0 interfa
 }
 
 // DeleteUserDefinedFunctionWithContext mocks base method
-func (m *MockGlueAPI) DeleteUserDefinedFunctionWithContext(arg0 aws.Context, arg1 *glue.DeleteUserDefinedFunctionInput, arg2 ...request.Option) (*glue.DeleteUserDefinedFunctionOutput, error) {
+func (m *MockGlueAPI) DeleteUserDefinedFunctionWithContext(arg0 context.Context, arg1 *glue.DeleteUserDefinedFunctionInput, arg2 ...request.Option) (*glue.DeleteUserDefinedFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockGlueAPIMockRecorder) GetCatalogImportStatusRequest(arg0 interface{
 }
 
 // GetCatalogImportStatusWithContext mocks base method
-func (m *MockGlueAPI) GetCatalogImportStatusWithContext(arg0 aws.Context, arg1 *glue.GetCatalogImportStatusInput, arg2 ...request.Option) (*glue.GetCatalogImportStatusOutput, error) {
+func (m *MockGlueAPI) GetCatalogImportStatusWithContext(arg0 context.Context, arg1 *glue.GetCatalogImportStatusInput, arg2 ...request.Option) (*glue.GetCatalogImportStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockGlueAPIMockRecorder) GetClassifierRequest(arg0 interface{}) *gomoc
 }
 
 // GetClassifierWithContext mocks base method
-func (m *MockGlueAPI) GetClassifierWithContext(arg0 aws.Context, arg1 *glue.GetClassifierInput, arg2 ...request.Option) (*glue.GetClassifierOutput, error) {
+func (m *MockGlueAPI) GetClassifierWithContext(arg0 context.Context, arg1 *glue.GetClassifierInput, arg2 ...request.Option) (*glue.GetClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1765,7 +1765,7 @@ func (mr *MockGlueAPIMockRecorder) GetClassifiersPages(arg0, arg1 interface{}) *
 }
 
 // GetClassifiersPagesWithContext mocks base method
-func (m *MockGlueAPI) GetClassifiersPagesWithContext(arg0 aws.Context, arg1 *glue.GetClassifiersInput, arg2 func(*glue.GetClassifiersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetClassifiersPagesWithContext(arg0 context.Context, arg1 *glue.GetClassifiersInput, arg2 func(*glue.GetClassifiersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1799,7 +1799,7 @@ func (mr *MockGlueAPIMockRecorder) GetClassifiersRequest(arg0 interface{}) *gomo
 }
 
 // GetClassifiersWithContext mocks base method
-func (m *MockGlueAPI) GetClassifiersWithContext(arg0 aws.Context, arg1 *glue.GetClassifiersInput, arg2 ...request.Option) (*glue.GetClassifiersOutput, error) {
+func (m *MockGlueAPI) GetClassifiersWithContext(arg0 context.Context, arg1 *glue.GetClassifiersInput, arg2 ...request.Option) (*glue.GetClassifiersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1849,7 +1849,7 @@ func (mr *MockGlueAPIMockRecorder) GetConnectionRequest(arg0 interface{}) *gomoc
 }
 
 // GetConnectionWithContext mocks base method
-func (m *MockGlueAPI) GetConnectionWithContext(arg0 aws.Context, arg1 *glue.GetConnectionInput, arg2 ...request.Option) (*glue.GetConnectionOutput, error) {
+func (m *MockGlueAPI) GetConnectionWithContext(arg0 context.Context, arg1 *glue.GetConnectionInput, arg2 ...request.Option) (*glue.GetConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1898,7 +1898,7 @@ func (mr *MockGlueAPIMockRecorder) GetConnectionsPages(arg0, arg1 interface{}) *
 }
 
 // GetConnectionsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetConnectionsPagesWithContext(arg0 aws.Context, arg1 *glue.GetConnectionsInput, arg2 func(*glue.GetConnectionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetConnectionsPagesWithContext(arg0 context.Context, arg1 *glue.GetConnectionsInput, arg2 func(*glue.GetConnectionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1932,7 +1932,7 @@ func (mr *MockGlueAPIMockRecorder) GetConnectionsRequest(arg0 interface{}) *gomo
 }
 
 // GetConnectionsWithContext mocks base method
-func (m *MockGlueAPI) GetConnectionsWithContext(arg0 aws.Context, arg1 *glue.GetConnectionsInput, arg2 ...request.Option) (*glue.GetConnectionsOutput, error) {
+func (m *MockGlueAPI) GetConnectionsWithContext(arg0 context.Context, arg1 *glue.GetConnectionsInput, arg2 ...request.Option) (*glue.GetConnectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1996,7 +1996,7 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlerMetricsPages(arg0, arg1 interface{}
 }
 
 // GetCrawlerMetricsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetCrawlerMetricsPagesWithContext(arg0 aws.Context, arg1 *glue.GetCrawlerMetricsInput, arg2 func(*glue.GetCrawlerMetricsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetCrawlerMetricsPagesWithContext(arg0 context.Context, arg1 *glue.GetCrawlerMetricsInput, arg2 func(*glue.GetCrawlerMetricsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2030,7 +2030,7 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlerMetricsRequest(arg0 interface{}) *g
 }
 
 // GetCrawlerMetricsWithContext mocks base method
-func (m *MockGlueAPI) GetCrawlerMetricsWithContext(arg0 aws.Context, arg1 *glue.GetCrawlerMetricsInput, arg2 ...request.Option) (*glue.GetCrawlerMetricsOutput, error) {
+func (m *MockGlueAPI) GetCrawlerMetricsWithContext(arg0 context.Context, arg1 *glue.GetCrawlerMetricsInput, arg2 ...request.Option) (*glue.GetCrawlerMetricsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2065,7 +2065,7 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlerRequest(arg0 interface{}) *gomock.C
 }
 
 // GetCrawlerWithContext mocks base method
-func (m *MockGlueAPI) GetCrawlerWithContext(arg0 aws.Context, arg1 *glue.GetCrawlerInput, arg2 ...request.Option) (*glue.GetCrawlerOutput, error) {
+func (m *MockGlueAPI) GetCrawlerWithContext(arg0 context.Context, arg1 *glue.GetCrawlerInput, arg2 ...request.Option) (*glue.GetCrawlerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2114,7 +2114,7 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlersPages(arg0, arg1 interface{}) *gom
 }
 
 // GetCrawlersPagesWithContext mocks base method
-func (m *MockGlueAPI) GetCrawlersPagesWithContext(arg0 aws.Context, arg1 *glue.GetCrawlersInput, arg2 func(*glue.GetCrawlersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetCrawlersPagesWithContext(arg0 context.Context, arg1 *glue.GetCrawlersInput, arg2 func(*glue.GetCrawlersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2148,7 +2148,7 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlersRequest(arg0 interface{}) *gomock.
 }
 
 // GetCrawlersWithContext mocks base method
-func (m *MockGlueAPI) GetCrawlersWithContext(arg0 aws.Context, arg1 *glue.GetCrawlersInput, arg2 ...request.Option) (*glue.GetCrawlersOutput, error) {
+func (m *MockGlueAPI) GetCrawlersWithContext(arg0 context.Context, arg1 *glue.GetCrawlersInput, arg2 ...request.Option) (*glue.GetCrawlersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2198,7 +2198,7 @@ func (mr *MockGlueAPIMockRecorder) GetDataCatalogEncryptionSettingsRequest(arg0 
 }
 
 // GetDataCatalogEncryptionSettingsWithContext mocks base method
-func (m *MockGlueAPI) GetDataCatalogEncryptionSettingsWithContext(arg0 aws.Context, arg1 *glue.GetDataCatalogEncryptionSettingsInput, arg2 ...request.Option) (*glue.GetDataCatalogEncryptionSettingsOutput, error) {
+func (m *MockGlueAPI) GetDataCatalogEncryptionSettingsWithContext(arg0 context.Context, arg1 *glue.GetDataCatalogEncryptionSettingsInput, arg2 ...request.Option) (*glue.GetDataCatalogEncryptionSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2248,7 +2248,7 @@ func (mr *MockGlueAPIMockRecorder) GetDatabaseRequest(arg0 interface{}) *gomock.
 }
 
 // GetDatabaseWithContext mocks base method
-func (m *MockGlueAPI) GetDatabaseWithContext(arg0 aws.Context, arg1 *glue.GetDatabaseInput, arg2 ...request.Option) (*glue.GetDatabaseOutput, error) {
+func (m *MockGlueAPI) GetDatabaseWithContext(arg0 context.Context, arg1 *glue.GetDatabaseInput, arg2 ...request.Option) (*glue.GetDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2297,7 +2297,7 @@ func (mr *MockGlueAPIMockRecorder) GetDatabasesPages(arg0, arg1 interface{}) *go
 }
 
 // GetDatabasesPagesWithContext mocks base method
-func (m *MockGlueAPI) GetDatabasesPagesWithContext(arg0 aws.Context, arg1 *glue.GetDatabasesInput, arg2 func(*glue.GetDatabasesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetDatabasesPagesWithContext(arg0 context.Context, arg1 *glue.GetDatabasesInput, arg2 func(*glue.GetDatabasesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2331,7 +2331,7 @@ func (mr *MockGlueAPIMockRecorder) GetDatabasesRequest(arg0 interface{}) *gomock
 }
 
 // GetDatabasesWithContext mocks base method
-func (m *MockGlueAPI) GetDatabasesWithContext(arg0 aws.Context, arg1 *glue.GetDatabasesInput, arg2 ...request.Option) (*glue.GetDatabasesOutput, error) {
+func (m *MockGlueAPI) GetDatabasesWithContext(arg0 context.Context, arg1 *glue.GetDatabasesInput, arg2 ...request.Option) (*glue.GetDatabasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2381,7 +2381,7 @@ func (mr *MockGlueAPIMockRecorder) GetDataflowGraphRequest(arg0 interface{}) *go
 }
 
 // GetDataflowGraphWithContext mocks base method
-func (m *MockGlueAPI) GetDataflowGraphWithContext(arg0 aws.Context, arg1 *glue.GetDataflowGraphInput, arg2 ...request.Option) (*glue.GetDataflowGraphOutput, error) {
+func (m *MockGlueAPI) GetDataflowGraphWithContext(arg0 context.Context, arg1 *glue.GetDataflowGraphInput, arg2 ...request.Option) (*glue.GetDataflowGraphOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2431,7 +2431,7 @@ func (mr *MockGlueAPIMockRecorder) GetDevEndpointRequest(arg0 interface{}) *gomo
 }
 
 // GetDevEndpointWithContext mocks base method
-func (m *MockGlueAPI) GetDevEndpointWithContext(arg0 aws.Context, arg1 *glue.GetDevEndpointInput, arg2 ...request.Option) (*glue.GetDevEndpointOutput, error) {
+func (m *MockGlueAPI) GetDevEndpointWithContext(arg0 context.Context, arg1 *glue.GetDevEndpointInput, arg2 ...request.Option) (*glue.GetDevEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2480,7 +2480,7 @@ func (mr *MockGlueAPIMockRecorder) GetDevEndpointsPages(arg0, arg1 interface{}) 
 }
 
 // GetDevEndpointsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetDevEndpointsPagesWithContext(arg0 aws.Context, arg1 *glue.GetDevEndpointsInput, arg2 func(*glue.GetDevEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetDevEndpointsPagesWithContext(arg0 context.Context, arg1 *glue.GetDevEndpointsInput, arg2 func(*glue.GetDevEndpointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2514,7 +2514,7 @@ func (mr *MockGlueAPIMockRecorder) GetDevEndpointsRequest(arg0 interface{}) *gom
 }
 
 // GetDevEndpointsWithContext mocks base method
-func (m *MockGlueAPI) GetDevEndpointsWithContext(arg0 aws.Context, arg1 *glue.GetDevEndpointsInput, arg2 ...request.Option) (*glue.GetDevEndpointsOutput, error) {
+func (m *MockGlueAPI) GetDevEndpointsWithContext(arg0 context.Context, arg1 *glue.GetDevEndpointsInput, arg2 ...request.Option) (*glue.GetDevEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2594,7 +2594,7 @@ func (mr *MockGlueAPIMockRecorder) GetJobRunRequest(arg0 interface{}) *gomock.Ca
 }
 
 // GetJobRunWithContext mocks base method
-func (m *MockGlueAPI) GetJobRunWithContext(arg0 aws.Context, arg1 *glue.GetJobRunInput, arg2 ...request.Option) (*glue.GetJobRunOutput, error) {
+func (m *MockGlueAPI) GetJobRunWithContext(arg0 context.Context, arg1 *glue.GetJobRunInput, arg2 ...request.Option) (*glue.GetJobRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2643,7 +2643,7 @@ func (mr *MockGlueAPIMockRecorder) GetJobRunsPages(arg0, arg1 interface{}) *gomo
 }
 
 // GetJobRunsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetJobRunsPagesWithContext(arg0 aws.Context, arg1 *glue.GetJobRunsInput, arg2 func(*glue.GetJobRunsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetJobRunsPagesWithContext(arg0 context.Context, arg1 *glue.GetJobRunsInput, arg2 func(*glue.GetJobRunsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2677,7 +2677,7 @@ func (mr *MockGlueAPIMockRecorder) GetJobRunsRequest(arg0 interface{}) *gomock.C
 }
 
 // GetJobRunsWithContext mocks base method
-func (m *MockGlueAPI) GetJobRunsWithContext(arg0 aws.Context, arg1 *glue.GetJobRunsInput, arg2 ...request.Option) (*glue.GetJobRunsOutput, error) {
+func (m *MockGlueAPI) GetJobRunsWithContext(arg0 context.Context, arg1 *glue.GetJobRunsInput, arg2 ...request.Option) (*glue.GetJobRunsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2697,7 +2697,7 @@ func (mr *MockGlueAPIMockRecorder) GetJobRunsWithContext(arg0, arg1 interface{},
 }
 
 // GetJobWithContext mocks base method
-func (m *MockGlueAPI) GetJobWithContext(arg0 aws.Context, arg1 *glue.GetJobInput, arg2 ...request.Option) (*glue.GetJobOutput, error) {
+func (m *MockGlueAPI) GetJobWithContext(arg0 context.Context, arg1 *glue.GetJobInput, arg2 ...request.Option) (*glue.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2746,7 +2746,7 @@ func (mr *MockGlueAPIMockRecorder) GetJobsPages(arg0, arg1 interface{}) *gomock.
 }
 
 // GetJobsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetJobsPagesWithContext(arg0 aws.Context, arg1 *glue.GetJobsInput, arg2 func(*glue.GetJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetJobsPagesWithContext(arg0 context.Context, arg1 *glue.GetJobsInput, arg2 func(*glue.GetJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2780,7 +2780,7 @@ func (mr *MockGlueAPIMockRecorder) GetJobsRequest(arg0 interface{}) *gomock.Call
 }
 
 // GetJobsWithContext mocks base method
-func (m *MockGlueAPI) GetJobsWithContext(arg0 aws.Context, arg1 *glue.GetJobsInput, arg2 ...request.Option) (*glue.GetJobsOutput, error) {
+func (m *MockGlueAPI) GetJobsWithContext(arg0 context.Context, arg1 *glue.GetJobsInput, arg2 ...request.Option) (*glue.GetJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2830,7 +2830,7 @@ func (mr *MockGlueAPIMockRecorder) GetMappingRequest(arg0 interface{}) *gomock.C
 }
 
 // GetMappingWithContext mocks base method
-func (m *MockGlueAPI) GetMappingWithContext(arg0 aws.Context, arg1 *glue.GetMappingInput, arg2 ...request.Option) (*glue.GetMappingOutput, error) {
+func (m *MockGlueAPI) GetMappingWithContext(arg0 context.Context, arg1 *glue.GetMappingInput, arg2 ...request.Option) (*glue.GetMappingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2880,7 +2880,7 @@ func (mr *MockGlueAPIMockRecorder) GetPartitionRequest(arg0 interface{}) *gomock
 }
 
 // GetPartitionWithContext mocks base method
-func (m *MockGlueAPI) GetPartitionWithContext(arg0 aws.Context, arg1 *glue.GetPartitionInput, arg2 ...request.Option) (*glue.GetPartitionOutput, error) {
+func (m *MockGlueAPI) GetPartitionWithContext(arg0 context.Context, arg1 *glue.GetPartitionInput, arg2 ...request.Option) (*glue.GetPartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2929,7 +2929,7 @@ func (mr *MockGlueAPIMockRecorder) GetPartitionsPages(arg0, arg1 interface{}) *g
 }
 
 // GetPartitionsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetPartitionsPagesWithContext(arg0 aws.Context, arg1 *glue.GetPartitionsInput, arg2 func(*glue.GetPartitionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetPartitionsPagesWithContext(arg0 context.Context, arg1 *glue.GetPartitionsInput, arg2 func(*glue.GetPartitionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2963,7 +2963,7 @@ func (mr *MockGlueAPIMockRecorder) GetPartitionsRequest(arg0 interface{}) *gomoc
 }
 
 // GetPartitionsWithContext mocks base method
-func (m *MockGlueAPI) GetPartitionsWithContext(arg0 aws.Context, arg1 *glue.GetPartitionsInput, arg2 ...request.Option) (*glue.GetPartitionsOutput, error) {
+func (m *MockGlueAPI) GetPartitionsWithContext(arg0 context.Context, arg1 *glue.GetPartitionsInput, arg2 ...request.Option) (*glue.GetPartitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3013,7 +3013,7 @@ func (mr *MockGlueAPIMockRecorder) GetPlanRequest(arg0 interface{}) *gomock.Call
 }
 
 // GetPlanWithContext mocks base method
-func (m *MockGlueAPI) GetPlanWithContext(arg0 aws.Context, arg1 *glue.GetPlanInput, arg2 ...request.Option) (*glue.GetPlanOutput, error) {
+func (m *MockGlueAPI) GetPlanWithContext(arg0 context.Context, arg1 *glue.GetPlanInput, arg2 ...request.Option) (*glue.GetPlanOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3063,7 +3063,7 @@ func (mr *MockGlueAPIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *g
 }
 
 // GetResourcePolicyWithContext mocks base method
-func (m *MockGlueAPI) GetResourcePolicyWithContext(arg0 aws.Context, arg1 *glue.GetResourcePolicyInput, arg2 ...request.Option) (*glue.GetResourcePolicyOutput, error) {
+func (m *MockGlueAPI) GetResourcePolicyWithContext(arg0 context.Context, arg1 *glue.GetResourcePolicyInput, arg2 ...request.Option) (*glue.GetResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3113,7 +3113,7 @@ func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationRequest(arg0 interfac
 }
 
 // GetSecurityConfigurationWithContext mocks base method
-func (m *MockGlueAPI) GetSecurityConfigurationWithContext(arg0 aws.Context, arg1 *glue.GetSecurityConfigurationInput, arg2 ...request.Option) (*glue.GetSecurityConfigurationOutput, error) {
+func (m *MockGlueAPI) GetSecurityConfigurationWithContext(arg0 context.Context, arg1 *glue.GetSecurityConfigurationInput, arg2 ...request.Option) (*glue.GetSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3163,7 +3163,7 @@ func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationsRequest(arg0 interfa
 }
 
 // GetSecurityConfigurationsWithContext mocks base method
-func (m *MockGlueAPI) GetSecurityConfigurationsWithContext(arg0 aws.Context, arg1 *glue.GetSecurityConfigurationsInput, arg2 ...request.Option) (*glue.GetSecurityConfigurationsOutput, error) {
+func (m *MockGlueAPI) GetSecurityConfigurationsWithContext(arg0 context.Context, arg1 *glue.GetSecurityConfigurationsInput, arg2 ...request.Option) (*glue.GetSecurityConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3243,7 +3243,7 @@ func (mr *MockGlueAPIMockRecorder) GetTableVersionRequest(arg0 interface{}) *gom
 }
 
 // GetTableVersionWithContext mocks base method
-func (m *MockGlueAPI) GetTableVersionWithContext(arg0 aws.Context, arg1 *glue.GetTableVersionInput, arg2 ...request.Option) (*glue.GetTableVersionOutput, error) {
+func (m *MockGlueAPI) GetTableVersionWithContext(arg0 context.Context, arg1 *glue.GetTableVersionInput, arg2 ...request.Option) (*glue.GetTableVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3292,7 +3292,7 @@ func (mr *MockGlueAPIMockRecorder) GetTableVersionsPages(arg0, arg1 interface{})
 }
 
 // GetTableVersionsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetTableVersionsPagesWithContext(arg0 aws.Context, arg1 *glue.GetTableVersionsInput, arg2 func(*glue.GetTableVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetTableVersionsPagesWithContext(arg0 context.Context, arg1 *glue.GetTableVersionsInput, arg2 func(*glue.GetTableVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3326,7 +3326,7 @@ func (mr *MockGlueAPIMockRecorder) GetTableVersionsRequest(arg0 interface{}) *go
 }
 
 // GetTableVersionsWithContext mocks base method
-func (m *MockGlueAPI) GetTableVersionsWithContext(arg0 aws.Context, arg1 *glue.GetTableVersionsInput, arg2 ...request.Option) (*glue.GetTableVersionsOutput, error) {
+func (m *MockGlueAPI) GetTableVersionsWithContext(arg0 context.Context, arg1 *glue.GetTableVersionsInput, arg2 ...request.Option) (*glue.GetTableVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3346,7 +3346,7 @@ func (mr *MockGlueAPIMockRecorder) GetTableVersionsWithContext(arg0, arg1 interf
 }
 
 // GetTableWithContext mocks base method
-func (m *MockGlueAPI) GetTableWithContext(arg0 aws.Context, arg1 *glue.GetTableInput, arg2 ...request.Option) (*glue.GetTableOutput, error) {
+func (m *MockGlueAPI) GetTableWithContext(arg0 context.Context, arg1 *glue.GetTableInput, arg2 ...request.Option) (*glue.GetTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3395,7 +3395,7 @@ func (mr *MockGlueAPIMockRecorder) GetTablesPages(arg0, arg1 interface{}) *gomoc
 }
 
 // GetTablesPagesWithContext mocks base method
-func (m *MockGlueAPI) GetTablesPagesWithContext(arg0 aws.Context, arg1 *glue.GetTablesInput, arg2 func(*glue.GetTablesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetTablesPagesWithContext(arg0 context.Context, arg1 *glue.GetTablesInput, arg2 func(*glue.GetTablesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3429,7 +3429,7 @@ func (mr *MockGlueAPIMockRecorder) GetTablesRequest(arg0 interface{}) *gomock.Ca
 }
 
 // GetTablesWithContext mocks base method
-func (m *MockGlueAPI) GetTablesWithContext(arg0 aws.Context, arg1 *glue.GetTablesInput, arg2 ...request.Option) (*glue.GetTablesOutput, error) {
+func (m *MockGlueAPI) GetTablesWithContext(arg0 context.Context, arg1 *glue.GetTablesInput, arg2 ...request.Option) (*glue.GetTablesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3479,7 +3479,7 @@ func (mr *MockGlueAPIMockRecorder) GetTriggerRequest(arg0 interface{}) *gomock.C
 }
 
 // GetTriggerWithContext mocks base method
-func (m *MockGlueAPI) GetTriggerWithContext(arg0 aws.Context, arg1 *glue.GetTriggerInput, arg2 ...request.Option) (*glue.GetTriggerOutput, error) {
+func (m *MockGlueAPI) GetTriggerWithContext(arg0 context.Context, arg1 *glue.GetTriggerInput, arg2 ...request.Option) (*glue.GetTriggerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3528,7 +3528,7 @@ func (mr *MockGlueAPIMockRecorder) GetTriggersPages(arg0, arg1 interface{}) *gom
 }
 
 // GetTriggersPagesWithContext mocks base method
-func (m *MockGlueAPI) GetTriggersPagesWithContext(arg0 aws.Context, arg1 *glue.GetTriggersInput, arg2 func(*glue.GetTriggersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetTriggersPagesWithContext(arg0 context.Context, arg1 *glue.GetTriggersInput, arg2 func(*glue.GetTriggersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3562,7 +3562,7 @@ func (mr *MockGlueAPIMockRecorder) GetTriggersRequest(arg0 interface{}) *gomock.
 }
 
 // GetTriggersWithContext mocks base method
-func (m *MockGlueAPI) GetTriggersWithContext(arg0 aws.Context, arg1 *glue.GetTriggersInput, arg2 ...request.Option) (*glue.GetTriggersOutput, error) {
+func (m *MockGlueAPI) GetTriggersWithContext(arg0 context.Context, arg1 *glue.GetTriggersInput, arg2 ...request.Option) (*glue.GetTriggersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3612,7 +3612,7 @@ func (mr *MockGlueAPIMockRecorder) GetUserDefinedFunctionRequest(arg0 interface{
 }
 
 // GetUserDefinedFunctionWithContext mocks base method
-func (m *MockGlueAPI) GetUserDefinedFunctionWithContext(arg0 aws.Context, arg1 *glue.GetUserDefinedFunctionInput, arg2 ...request.Option) (*glue.GetUserDefinedFunctionOutput, error) {
+func (m *MockGlueAPI) GetUserDefinedFunctionWithContext(arg0 context.Context, arg1 *glue.GetUserDefinedFunctionInput, arg2 ...request.Option) (*glue.GetUserDefinedFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3661,7 +3661,7 @@ func (mr *MockGlueAPIMockRecorder) GetUserDefinedFunctionsPages(arg0, arg1 inter
 }
 
 // GetUserDefinedFunctionsPagesWithContext mocks base method
-func (m *MockGlueAPI) GetUserDefinedFunctionsPagesWithContext(arg0 aws.Context, arg1 *glue.GetUserDefinedFunctionsInput, arg2 func(*glue.GetUserDefinedFunctionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlueAPI) GetUserDefinedFunctionsPagesWithContext(arg0 context.Context, arg1 *glue.GetUserDefinedFunctionsInput, arg2 func(*glue.GetUserDefinedFunctionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3695,7 +3695,7 @@ func (mr *MockGlueAPIMockRecorder) GetUserDefinedFunctionsRequest(arg0 interface
 }
 
 // GetUserDefinedFunctionsWithContext mocks base method
-func (m *MockGlueAPI) GetUserDefinedFunctionsWithContext(arg0 aws.Context, arg1 *glue.GetUserDefinedFunctionsInput, arg2 ...request.Option) (*glue.GetUserDefinedFunctionsOutput, error) {
+func (m *MockGlueAPI) GetUserDefinedFunctionsWithContext(arg0 context.Context, arg1 *glue.GetUserDefinedFunctionsInput, arg2 ...request.Option) (*glue.GetUserDefinedFunctionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3745,7 +3745,7 @@ func (mr *MockGlueAPIMockRecorder) ImportCatalogToGlueRequest(arg0 interface{}) 
 }
 
 // ImportCatalogToGlueWithContext mocks base method
-func (m *MockGlueAPI) ImportCatalogToGlueWithContext(arg0 aws.Context, arg1 *glue.ImportCatalogToGlueInput, arg2 ...request.Option) (*glue.ImportCatalogToGlueOutput, error) {
+func (m *MockGlueAPI) ImportCatalogToGlueWithContext(arg0 context.Context, arg1 *glue.ImportCatalogToGlueInput, arg2 ...request.Option) (*glue.ImportCatalogToGlueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3795,7 +3795,7 @@ func (mr *MockGlueAPIMockRecorder) PutDataCatalogEncryptionSettingsRequest(arg0 
 }
 
 // PutDataCatalogEncryptionSettingsWithContext mocks base method
-func (m *MockGlueAPI) PutDataCatalogEncryptionSettingsWithContext(arg0 aws.Context, arg1 *glue.PutDataCatalogEncryptionSettingsInput, arg2 ...request.Option) (*glue.PutDataCatalogEncryptionSettingsOutput, error) {
+func (m *MockGlueAPI) PutDataCatalogEncryptionSettingsWithContext(arg0 context.Context, arg1 *glue.PutDataCatalogEncryptionSettingsInput, arg2 ...request.Option) (*glue.PutDataCatalogEncryptionSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3845,7 +3845,7 @@ func (mr *MockGlueAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *g
 }
 
 // PutResourcePolicyWithContext mocks base method
-func (m *MockGlueAPI) PutResourcePolicyWithContext(arg0 aws.Context, arg1 *glue.PutResourcePolicyInput, arg2 ...request.Option) (*glue.PutResourcePolicyOutput, error) {
+func (m *MockGlueAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *glue.PutResourcePolicyInput, arg2 ...request.Option) (*glue.PutResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3895,7 +3895,7 @@ func (mr *MockGlueAPIMockRecorder) ResetJobBookmarkRequest(arg0 interface{}) *go
 }
 
 // ResetJobBookmarkWithContext mocks base method
-func (m *MockGlueAPI) ResetJobBookmarkWithContext(arg0 aws.Context, arg1 *glue.ResetJobBookmarkInput, arg2 ...request.Option) (*glue.ResetJobBookmarkOutput, error) {
+func (m *MockGlueAPI) ResetJobBookmarkWithContext(arg0 context.Context, arg1 *glue.ResetJobBookmarkInput, arg2 ...request.Option) (*glue.ResetJobBookmarkOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3975,7 +3975,7 @@ func (mr *MockGlueAPIMockRecorder) StartCrawlerScheduleRequest(arg0 interface{})
 }
 
 // StartCrawlerScheduleWithContext mocks base method
-func (m *MockGlueAPI) StartCrawlerScheduleWithContext(arg0 aws.Context, arg1 *glue.StartCrawlerScheduleInput, arg2 ...request.Option) (*glue.StartCrawlerScheduleOutput, error) {
+func (m *MockGlueAPI) StartCrawlerScheduleWithContext(arg0 context.Context, arg1 *glue.StartCrawlerScheduleInput, arg2 ...request.Option) (*glue.StartCrawlerScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3995,7 +3995,7 @@ func (mr *MockGlueAPIMockRecorder) StartCrawlerScheduleWithContext(arg0, arg1 in
 }
 
 // StartCrawlerWithContext mocks base method
-func (m *MockGlueAPI) StartCrawlerWithContext(arg0 aws.Context, arg1 *glue.StartCrawlerInput, arg2 ...request.Option) (*glue.StartCrawlerOutput, error) {
+func (m *MockGlueAPI) StartCrawlerWithContext(arg0 context.Context, arg1 *glue.StartCrawlerInput, arg2 ...request.Option) (*glue.StartCrawlerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4045,7 +4045,7 @@ func (mr *MockGlueAPIMockRecorder) StartJobRunRequest(arg0 interface{}) *gomock.
 }
 
 // StartJobRunWithContext mocks base method
-func (m *MockGlueAPI) StartJobRunWithContext(arg0 aws.Context, arg1 *glue.StartJobRunInput, arg2 ...request.Option) (*glue.StartJobRunOutput, error) {
+func (m *MockGlueAPI) StartJobRunWithContext(arg0 context.Context, arg1 *glue.StartJobRunInput, arg2 ...request.Option) (*glue.StartJobRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4095,7 +4095,7 @@ func (mr *MockGlueAPIMockRecorder) StartTriggerRequest(arg0 interface{}) *gomock
 }
 
 // StartTriggerWithContext mocks base method
-func (m *MockGlueAPI) StartTriggerWithContext(arg0 aws.Context, arg1 *glue.StartTriggerInput, arg2 ...request.Option) (*glue.StartTriggerOutput, error) {
+func (m *MockGlueAPI) StartTriggerWithContext(arg0 context.Context, arg1 *glue.StartTriggerInput, arg2 ...request.Option) (*glue.StartTriggerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4175,7 +4175,7 @@ func (mr *MockGlueAPIMockRecorder) StopCrawlerScheduleRequest(arg0 interface{}) 
 }
 
 // StopCrawlerScheduleWithContext mocks base method
-func (m *MockGlueAPI) StopCrawlerScheduleWithContext(arg0 aws.Context, arg1 *glue.StopCrawlerScheduleInput, arg2 ...request.Option) (*glue.StopCrawlerScheduleOutput, error) {
+func (m *MockGlueAPI) StopCrawlerScheduleWithContext(arg0 context.Context, arg1 *glue.StopCrawlerScheduleInput, arg2 ...request.Option) (*glue.StopCrawlerScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4195,7 +4195,7 @@ func (mr *MockGlueAPIMockRecorder) StopCrawlerScheduleWithContext(arg0, arg1 int
 }
 
 // StopCrawlerWithContext mocks base method
-func (m *MockGlueAPI) StopCrawlerWithContext(arg0 aws.Context, arg1 *glue.StopCrawlerInput, arg2 ...request.Option) (*glue.StopCrawlerOutput, error) {
+func (m *MockGlueAPI) StopCrawlerWithContext(arg0 context.Context, arg1 *glue.StopCrawlerInput, arg2 ...request.Option) (*glue.StopCrawlerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4245,7 +4245,7 @@ func (mr *MockGlueAPIMockRecorder) StopTriggerRequest(arg0 interface{}) *gomock.
 }
 
 // StopTriggerWithContext mocks base method
-func (m *MockGlueAPI) StopTriggerWithContext(arg0 aws.Context, arg1 *glue.StopTriggerInput, arg2 ...request.Option) (*glue.StopTriggerOutput, error) {
+func (m *MockGlueAPI) StopTriggerWithContext(arg0 context.Context, arg1 *glue.StopTriggerInput, arg2 ...request.Option) (*glue.StopTriggerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4295,7 +4295,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateClassifierRequest(arg0 interface{}) *go
 }
 
 // UpdateClassifierWithContext mocks base method
-func (m *MockGlueAPI) UpdateClassifierWithContext(arg0 aws.Context, arg1 *glue.UpdateClassifierInput, arg2 ...request.Option) (*glue.UpdateClassifierOutput, error) {
+func (m *MockGlueAPI) UpdateClassifierWithContext(arg0 context.Context, arg1 *glue.UpdateClassifierInput, arg2 ...request.Option) (*glue.UpdateClassifierOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4345,7 +4345,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateConnectionRequest(arg0 interface{}) *go
 }
 
 // UpdateConnectionWithContext mocks base method
-func (m *MockGlueAPI) UpdateConnectionWithContext(arg0 aws.Context, arg1 *glue.UpdateConnectionInput, arg2 ...request.Option) (*glue.UpdateConnectionOutput, error) {
+func (m *MockGlueAPI) UpdateConnectionWithContext(arg0 context.Context, arg1 *glue.UpdateConnectionInput, arg2 ...request.Option) (*glue.UpdateConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4425,7 +4425,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateCrawlerScheduleRequest(arg0 interface{}
 }
 
 // UpdateCrawlerScheduleWithContext mocks base method
-func (m *MockGlueAPI) UpdateCrawlerScheduleWithContext(arg0 aws.Context, arg1 *glue.UpdateCrawlerScheduleInput, arg2 ...request.Option) (*glue.UpdateCrawlerScheduleOutput, error) {
+func (m *MockGlueAPI) UpdateCrawlerScheduleWithContext(arg0 context.Context, arg1 *glue.UpdateCrawlerScheduleInput, arg2 ...request.Option) (*glue.UpdateCrawlerScheduleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4445,7 +4445,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateCrawlerScheduleWithContext(arg0, arg1 i
 }
 
 // UpdateCrawlerWithContext mocks base method
-func (m *MockGlueAPI) UpdateCrawlerWithContext(arg0 aws.Context, arg1 *glue.UpdateCrawlerInput, arg2 ...request.Option) (*glue.UpdateCrawlerOutput, error) {
+func (m *MockGlueAPI) UpdateCrawlerWithContext(arg0 context.Context, arg1 *glue.UpdateCrawlerInput, arg2 ...request.Option) (*glue.UpdateCrawlerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4495,7 +4495,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateDatabaseRequest(arg0 interface{}) *gomo
 }
 
 // UpdateDatabaseWithContext mocks base method
-func (m *MockGlueAPI) UpdateDatabaseWithContext(arg0 aws.Context, arg1 *glue.UpdateDatabaseInput, arg2 ...request.Option) (*glue.UpdateDatabaseOutput, error) {
+func (m *MockGlueAPI) UpdateDatabaseWithContext(arg0 context.Context, arg1 *glue.UpdateDatabaseInput, arg2 ...request.Option) (*glue.UpdateDatabaseOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4545,7 +4545,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateDevEndpointRequest(arg0 interface{}) *g
 }
 
 // UpdateDevEndpointWithContext mocks base method
-func (m *MockGlueAPI) UpdateDevEndpointWithContext(arg0 aws.Context, arg1 *glue.UpdateDevEndpointInput, arg2 ...request.Option) (*glue.UpdateDevEndpointOutput, error) {
+func (m *MockGlueAPI) UpdateDevEndpointWithContext(arg0 context.Context, arg1 *glue.UpdateDevEndpointInput, arg2 ...request.Option) (*glue.UpdateDevEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4595,7 +4595,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateJobRequest(arg0 interface{}) *gomock.Ca
 }
 
 // UpdateJobWithContext mocks base method
-func (m *MockGlueAPI) UpdateJobWithContext(arg0 aws.Context, arg1 *glue.UpdateJobInput, arg2 ...request.Option) (*glue.UpdateJobOutput, error) {
+func (m *MockGlueAPI) UpdateJobWithContext(arg0 context.Context, arg1 *glue.UpdateJobInput, arg2 ...request.Option) (*glue.UpdateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4645,7 +4645,7 @@ func (mr *MockGlueAPIMockRecorder) UpdatePartitionRequest(arg0 interface{}) *gom
 }
 
 // UpdatePartitionWithContext mocks base method
-func (m *MockGlueAPI) UpdatePartitionWithContext(arg0 aws.Context, arg1 *glue.UpdatePartitionInput, arg2 ...request.Option) (*glue.UpdatePartitionOutput, error) {
+func (m *MockGlueAPI) UpdatePartitionWithContext(arg0 context.Context, arg1 *glue.UpdatePartitionInput, arg2 ...request.Option) (*glue.UpdatePartitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4695,7 +4695,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateTableRequest(arg0 interface{}) *gomock.
 }
 
 // UpdateTableWithContext mocks base method
-func (m *MockGlueAPI) UpdateTableWithContext(arg0 aws.Context, arg1 *glue.UpdateTableInput, arg2 ...request.Option) (*glue.UpdateTableOutput, error) {
+func (m *MockGlueAPI) UpdateTableWithContext(arg0 context.Context, arg1 *glue.UpdateTableInput, arg2 ...request.Option) (*glue.UpdateTableOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4745,7 +4745,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateTriggerRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateTriggerWithContext mocks base method
-func (m *MockGlueAPI) UpdateTriggerWithContext(arg0 aws.Context, arg1 *glue.UpdateTriggerInput, arg2 ...request.Option) (*glue.UpdateTriggerOutput, error) {
+func (m *MockGlueAPI) UpdateTriggerWithContext(arg0 context.Context, arg1 *glue.UpdateTriggerInput, arg2 ...request.Option) (*glue.UpdateTriggerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4795,7 +4795,7 @@ func (mr *MockGlueAPIMockRecorder) UpdateUserDefinedFunctionRequest(arg0 interfa
 }
 
 // UpdateUserDefinedFunctionWithContext mocks base method
-func (m *MockGlueAPI) UpdateUserDefinedFunctionWithContext(arg0 aws.Context, arg1 *glue.UpdateUserDefinedFunctionInput, arg2 ...request.Option) (*glue.UpdateUserDefinedFunctionOutput, error) {
+func (m *MockGlueAPI) UpdateUserDefinedFunctionWithContext(arg0 context.Context, arg1 *glue.UpdateUserDefinedFunctionInput, arg2 ...request.Option) (*glue.UpdateUserDefinedFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

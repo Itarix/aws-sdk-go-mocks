@@ -5,7 +5,7 @@
 package resourcegroupsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	resourcegroups "github.com/aws/aws-sdk-go/service/resourcegroups"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) CreateGroupRequest(arg0 interface{}
 }
 
 // CreateGroupWithContext mocks base method
-func (m *MockResourceGroupsAPI) CreateGroupWithContext(arg0 aws.Context, arg1 *resourcegroups.CreateGroupInput, arg2 ...request.Option) (*resourcegroups.CreateGroupOutput, error) {
+func (m *MockResourceGroupsAPI) CreateGroupWithContext(arg0 context.Context, arg1 *resourcegroups.CreateGroupInput, arg2 ...request.Option) (*resourcegroups.CreateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) DeleteGroupRequest(arg0 interface{}
 }
 
 // DeleteGroupWithContext mocks base method
-func (m *MockResourceGroupsAPI) DeleteGroupWithContext(arg0 aws.Context, arg1 *resourcegroups.DeleteGroupInput, arg2 ...request.Option) (*resourcegroups.DeleteGroupOutput, error) {
+func (m *MockResourceGroupsAPI) DeleteGroupWithContext(arg0 context.Context, arg1 *resourcegroups.DeleteGroupInput, arg2 ...request.Option) (*resourcegroups.DeleteGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -181,7 +181,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) GetGroupQueryRequest(arg0 interface
 }
 
 // GetGroupQueryWithContext mocks base method
-func (m *MockResourceGroupsAPI) GetGroupQueryWithContext(arg0 aws.Context, arg1 *resourcegroups.GetGroupQueryInput, arg2 ...request.Option) (*resourcegroups.GetGroupQueryOutput, error) {
+func (m *MockResourceGroupsAPI) GetGroupQueryWithContext(arg0 context.Context, arg1 *resourcegroups.GetGroupQueryInput, arg2 ...request.Option) (*resourcegroups.GetGroupQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) GetGroupRequest(arg0 interface{}) *
 }
 
 // GetGroupWithContext mocks base method
-func (m *MockResourceGroupsAPI) GetGroupWithContext(arg0 aws.Context, arg1 *resourcegroups.GetGroupInput, arg2 ...request.Option) (*resourcegroups.GetGroupOutput, error) {
+func (m *MockResourceGroupsAPI) GetGroupWithContext(arg0 context.Context, arg1 *resourcegroups.GetGroupInput, arg2 ...request.Option) (*resourcegroups.GetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) GetTagsRequest(arg0 interface{}) *g
 }
 
 // GetTagsWithContext mocks base method
-func (m *MockResourceGroupsAPI) GetTagsWithContext(arg0 aws.Context, arg1 *resourcegroups.GetTagsInput, arg2 ...request.Option) (*resourcegroups.GetTagsOutput, error) {
+func (m *MockResourceGroupsAPI) GetTagsWithContext(arg0 context.Context, arg1 *resourcegroups.GetTagsInput, arg2 ...request.Option) (*resourcegroups.GetTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -315,7 +315,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) ListGroupResourcesPages(arg0, arg1 
 }
 
 // ListGroupResourcesPagesWithContext mocks base method
-func (m *MockResourceGroupsAPI) ListGroupResourcesPagesWithContext(arg0 aws.Context, arg1 *resourcegroups.ListGroupResourcesInput, arg2 func(*resourcegroups.ListGroupResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockResourceGroupsAPI) ListGroupResourcesPagesWithContext(arg0 context.Context, arg1 *resourcegroups.ListGroupResourcesInput, arg2 func(*resourcegroups.ListGroupResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -349,7 +349,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) ListGroupResourcesRequest(arg0 inte
 }
 
 // ListGroupResourcesWithContext mocks base method
-func (m *MockResourceGroupsAPI) ListGroupResourcesWithContext(arg0 aws.Context, arg1 *resourcegroups.ListGroupResourcesInput, arg2 ...request.Option) (*resourcegroups.ListGroupResourcesOutput, error) {
+func (m *MockResourceGroupsAPI) ListGroupResourcesWithContext(arg0 context.Context, arg1 *resourcegroups.ListGroupResourcesInput, arg2 ...request.Option) (*resourcegroups.ListGroupResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -398,7 +398,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) ListGroupsPages(arg0, arg1 interfac
 }
 
 // ListGroupsPagesWithContext mocks base method
-func (m *MockResourceGroupsAPI) ListGroupsPagesWithContext(arg0 aws.Context, arg1 *resourcegroups.ListGroupsInput, arg2 func(*resourcegroups.ListGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockResourceGroupsAPI) ListGroupsPagesWithContext(arg0 context.Context, arg1 *resourcegroups.ListGroupsInput, arg2 func(*resourcegroups.ListGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -432,7 +432,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) ListGroupsRequest(arg0 interface{})
 }
 
 // ListGroupsWithContext mocks base method
-func (m *MockResourceGroupsAPI) ListGroupsWithContext(arg0 aws.Context, arg1 *resourcegroups.ListGroupsInput, arg2 ...request.Option) (*resourcegroups.ListGroupsOutput, error) {
+func (m *MockResourceGroupsAPI) ListGroupsWithContext(arg0 context.Context, arg1 *resourcegroups.ListGroupsInput, arg2 ...request.Option) (*resourcegroups.ListGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) SearchResourcesPages(arg0, arg1 int
 }
 
 // SearchResourcesPagesWithContext mocks base method
-func (m *MockResourceGroupsAPI) SearchResourcesPagesWithContext(arg0 aws.Context, arg1 *resourcegroups.SearchResourcesInput, arg2 func(*resourcegroups.SearchResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockResourceGroupsAPI) SearchResourcesPagesWithContext(arg0 context.Context, arg1 *resourcegroups.SearchResourcesInput, arg2 func(*resourcegroups.SearchResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -515,7 +515,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) SearchResourcesRequest(arg0 interfa
 }
 
 // SearchResourcesWithContext mocks base method
-func (m *MockResourceGroupsAPI) SearchResourcesWithContext(arg0 aws.Context, arg1 *resourcegroups.SearchResourcesInput, arg2 ...request.Option) (*resourcegroups.SearchResourcesOutput, error) {
+func (m *MockResourceGroupsAPI) SearchResourcesWithContext(arg0 context.Context, arg1 *resourcegroups.SearchResourcesInput, arg2 ...request.Option) (*resourcegroups.SearchResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -565,7 +565,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) TagRequest(arg0 interface{}) *gomoc
 }
 
 // TagWithContext mocks base method
-func (m *MockResourceGroupsAPI) TagWithContext(arg0 aws.Context, arg1 *resourcegroups.TagInput, arg2 ...request.Option) (*resourcegroups.TagOutput, error) {
+func (m *MockResourceGroupsAPI) TagWithContext(arg0 context.Context, arg1 *resourcegroups.TagInput, arg2 ...request.Option) (*resourcegroups.TagOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -615,7 +615,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) UntagRequest(arg0 interface{}) *gom
 }
 
 // UntagWithContext mocks base method
-func (m *MockResourceGroupsAPI) UntagWithContext(arg0 aws.Context, arg1 *resourcegroups.UntagInput, arg2 ...request.Option) (*resourcegroups.UntagOutput, error) {
+func (m *MockResourceGroupsAPI) UntagWithContext(arg0 context.Context, arg1 *resourcegroups.UntagInput, arg2 ...request.Option) (*resourcegroups.UntagOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -680,7 +680,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) UpdateGroupQueryRequest(arg0 interf
 }
 
 // UpdateGroupQueryWithContext mocks base method
-func (m *MockResourceGroupsAPI) UpdateGroupQueryWithContext(arg0 aws.Context, arg1 *resourcegroups.UpdateGroupQueryInput, arg2 ...request.Option) (*resourcegroups.UpdateGroupQueryOutput, error) {
+func (m *MockResourceGroupsAPI) UpdateGroupQueryWithContext(arg0 context.Context, arg1 *resourcegroups.UpdateGroupQueryInput, arg2 ...request.Option) (*resourcegroups.UpdateGroupQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockResourceGroupsAPIMockRecorder) UpdateGroupRequest(arg0 interface{}
 }
 
 // UpdateGroupWithContext mocks base method
-func (m *MockResourceGroupsAPI) UpdateGroupWithContext(arg0 aws.Context, arg1 *resourcegroups.UpdateGroupInput, arg2 ...request.Option) (*resourcegroups.UpdateGroupOutput, error) {
+func (m *MockResourceGroupsAPI) UpdateGroupWithContext(arg0 context.Context, arg1 *resourcegroups.UpdateGroupInput, arg2 ...request.Option) (*resourcegroups.UpdateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

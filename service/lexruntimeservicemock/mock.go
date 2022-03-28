@@ -5,7 +5,7 @@
 package lexruntimeservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	lexruntimeservice "github.com/aws/aws-sdk-go/service/lexruntimeservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockLexRuntimeServiceAPIMockRecorder) PostContentRequest(arg0 interfac
 }
 
 // PostContentWithContext mocks base method
-func (m *MockLexRuntimeServiceAPI) PostContentWithContext(arg0 aws.Context, arg1 *lexruntimeservice.PostContentInput, arg2 ...request.Option) (*lexruntimeservice.PostContentOutput, error) {
+func (m *MockLexRuntimeServiceAPI) PostContentWithContext(arg0 context.Context, arg1 *lexruntimeservice.PostContentInput, arg2 ...request.Option) (*lexruntimeservice.PostContentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockLexRuntimeServiceAPIMockRecorder) PostTextRequest(arg0 interface{}
 }
 
 // PostTextWithContext mocks base method
-func (m *MockLexRuntimeServiceAPI) PostTextWithContext(arg0 aws.Context, arg1 *lexruntimeservice.PostTextInput, arg2 ...request.Option) (*lexruntimeservice.PostTextOutput, error) {
+func (m *MockLexRuntimeServiceAPI) PostTextWithContext(arg0 context.Context, arg1 *lexruntimeservice.PostTextInput, arg2 ...request.Option) (*lexruntimeservice.PostTextOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

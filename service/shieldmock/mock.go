@@ -5,7 +5,7 @@
 package shieldmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	shield "github.com/aws/aws-sdk-go/service/shield"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockShieldAPIMockRecorder) AssociateDRTLogBucketRequest(arg0 interface
 }
 
 // AssociateDRTLogBucketWithContext mocks base method
-func (m *MockShieldAPI) AssociateDRTLogBucketWithContext(arg0 aws.Context, arg1 *shield.AssociateDRTLogBucketInput, arg2 ...request.Option) (*shield.AssociateDRTLogBucketOutput, error) {
+func (m *MockShieldAPI) AssociateDRTLogBucketWithContext(arg0 context.Context, arg1 *shield.AssociateDRTLogBucketInput, arg2 ...request.Option) (*shield.AssociateDRTLogBucketOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockShieldAPIMockRecorder) AssociateDRTRoleRequest(arg0 interface{}) *
 }
 
 // AssociateDRTRoleWithContext mocks base method
-func (m *MockShieldAPI) AssociateDRTRoleWithContext(arg0 aws.Context, arg1 *shield.AssociateDRTRoleInput, arg2 ...request.Option) (*shield.AssociateDRTRoleOutput, error) {
+func (m *MockShieldAPI) AssociateDRTRoleWithContext(arg0 context.Context, arg1 *shield.AssociateDRTRoleInput, arg2 ...request.Option) (*shield.AssociateDRTRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockShieldAPIMockRecorder) CreateProtectionRequest(arg0 interface{}) *
 }
 
 // CreateProtectionWithContext mocks base method
-func (m *MockShieldAPI) CreateProtectionWithContext(arg0 aws.Context, arg1 *shield.CreateProtectionInput, arg2 ...request.Option) (*shield.CreateProtectionOutput, error) {
+func (m *MockShieldAPI) CreateProtectionWithContext(arg0 context.Context, arg1 *shield.CreateProtectionInput, arg2 ...request.Option) (*shield.CreateProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockShieldAPIMockRecorder) CreateSubscriptionRequest(arg0 interface{})
 }
 
 // CreateSubscriptionWithContext mocks base method
-func (m *MockShieldAPI) CreateSubscriptionWithContext(arg0 aws.Context, arg1 *shield.CreateSubscriptionInput, arg2 ...request.Option) (*shield.CreateSubscriptionOutput, error) {
+func (m *MockShieldAPI) CreateSubscriptionWithContext(arg0 context.Context, arg1 *shield.CreateSubscriptionInput, arg2 ...request.Option) (*shield.CreateSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockShieldAPIMockRecorder) DeleteProtectionRequest(arg0 interface{}) *
 }
 
 // DeleteProtectionWithContext mocks base method
-func (m *MockShieldAPI) DeleteProtectionWithContext(arg0 aws.Context, arg1 *shield.DeleteProtectionInput, arg2 ...request.Option) (*shield.DeleteProtectionOutput, error) {
+func (m *MockShieldAPI) DeleteProtectionWithContext(arg0 context.Context, arg1 *shield.DeleteProtectionInput, arg2 ...request.Option) (*shield.DeleteProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockShieldAPIMockRecorder) DeleteSubscriptionRequest(arg0 interface{})
 }
 
 // DeleteSubscriptionWithContext mocks base method
-func (m *MockShieldAPI) DeleteSubscriptionWithContext(arg0 aws.Context, arg1 *shield.DeleteSubscriptionInput, arg2 ...request.Option) (*shield.DeleteSubscriptionOutput, error) {
+func (m *MockShieldAPI) DeleteSubscriptionWithContext(arg0 context.Context, arg1 *shield.DeleteSubscriptionInput, arg2 ...request.Option) (*shield.DeleteSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockShieldAPIMockRecorder) DescribeAttackRequest(arg0 interface{}) *go
 }
 
 // DescribeAttackWithContext mocks base method
-func (m *MockShieldAPI) DescribeAttackWithContext(arg0 aws.Context, arg1 *shield.DescribeAttackInput, arg2 ...request.Option) (*shield.DescribeAttackOutput, error) {
+func (m *MockShieldAPI) DescribeAttackWithContext(arg0 context.Context, arg1 *shield.DescribeAttackInput, arg2 ...request.Option) (*shield.DescribeAttackOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockShieldAPIMockRecorder) DescribeDRTAccessRequest(arg0 interface{}) 
 }
 
 // DescribeDRTAccessWithContext mocks base method
-func (m *MockShieldAPI) DescribeDRTAccessWithContext(arg0 aws.Context, arg1 *shield.DescribeDRTAccessInput, arg2 ...request.Option) (*shield.DescribeDRTAccessOutput, error) {
+func (m *MockShieldAPI) DescribeDRTAccessWithContext(arg0 context.Context, arg1 *shield.DescribeDRTAccessInput, arg2 ...request.Option) (*shield.DescribeDRTAccessOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockShieldAPIMockRecorder) DescribeEmergencyContactSettingsRequest(arg
 }
 
 // DescribeEmergencyContactSettingsWithContext mocks base method
-func (m *MockShieldAPI) DescribeEmergencyContactSettingsWithContext(arg0 aws.Context, arg1 *shield.DescribeEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.DescribeEmergencyContactSettingsOutput, error) {
+func (m *MockShieldAPI) DescribeEmergencyContactSettingsWithContext(arg0 context.Context, arg1 *shield.DescribeEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.DescribeEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockShieldAPIMockRecorder) DescribeProtectionRequest(arg0 interface{})
 }
 
 // DescribeProtectionWithContext mocks base method
-func (m *MockShieldAPI) DescribeProtectionWithContext(arg0 aws.Context, arg1 *shield.DescribeProtectionInput, arg2 ...request.Option) (*shield.DescribeProtectionOutput, error) {
+func (m *MockShieldAPI) DescribeProtectionWithContext(arg0 context.Context, arg1 *shield.DescribeProtectionInput, arg2 ...request.Option) (*shield.DescribeProtectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockShieldAPIMockRecorder) DescribeSubscriptionRequest(arg0 interface{
 }
 
 // DescribeSubscriptionWithContext mocks base method
-func (m *MockShieldAPI) DescribeSubscriptionWithContext(arg0 aws.Context, arg1 *shield.DescribeSubscriptionInput, arg2 ...request.Option) (*shield.DescribeSubscriptionOutput, error) {
+func (m *MockShieldAPI) DescribeSubscriptionWithContext(arg0 context.Context, arg1 *shield.DescribeSubscriptionInput, arg2 ...request.Option) (*shield.DescribeSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockShieldAPIMockRecorder) DisassociateDRTLogBucketRequest(arg0 interf
 }
 
 // DisassociateDRTLogBucketWithContext mocks base method
-func (m *MockShieldAPI) DisassociateDRTLogBucketWithContext(arg0 aws.Context, arg1 *shield.DisassociateDRTLogBucketInput, arg2 ...request.Option) (*shield.DisassociateDRTLogBucketOutput, error) {
+func (m *MockShieldAPI) DisassociateDRTLogBucketWithContext(arg0 context.Context, arg1 *shield.DisassociateDRTLogBucketInput, arg2 ...request.Option) (*shield.DisassociateDRTLogBucketOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockShieldAPIMockRecorder) DisassociateDRTRoleRequest(arg0 interface{}
 }
 
 // DisassociateDRTRoleWithContext mocks base method
-func (m *MockShieldAPI) DisassociateDRTRoleWithContext(arg0 aws.Context, arg1 *shield.DisassociateDRTRoleInput, arg2 ...request.Option) (*shield.DisassociateDRTRoleOutput, error) {
+func (m *MockShieldAPI) DisassociateDRTRoleWithContext(arg0 context.Context, arg1 *shield.DisassociateDRTRoleInput, arg2 ...request.Option) (*shield.DisassociateDRTRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockShieldAPIMockRecorder) GetSubscriptionStateRequest(arg0 interface{
 }
 
 // GetSubscriptionStateWithContext mocks base method
-func (m *MockShieldAPI) GetSubscriptionStateWithContext(arg0 aws.Context, arg1 *shield.GetSubscriptionStateInput, arg2 ...request.Option) (*shield.GetSubscriptionStateOutput, error) {
+func (m *MockShieldAPI) GetSubscriptionStateWithContext(arg0 context.Context, arg1 *shield.GetSubscriptionStateInput, arg2 ...request.Option) (*shield.GetSubscriptionStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockShieldAPIMockRecorder) ListAttacksRequest(arg0 interface{}) *gomoc
 }
 
 // ListAttacksWithContext mocks base method
-func (m *MockShieldAPI) ListAttacksWithContext(arg0 aws.Context, arg1 *shield.ListAttacksInput, arg2 ...request.Option) (*shield.ListAttacksOutput, error) {
+func (m *MockShieldAPI) ListAttacksWithContext(arg0 context.Context, arg1 *shield.ListAttacksInput, arg2 ...request.Option) (*shield.ListAttacksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockShieldAPIMockRecorder) ListProtectionsRequest(arg0 interface{}) *g
 }
 
 // ListProtectionsWithContext mocks base method
-func (m *MockShieldAPI) ListProtectionsWithContext(arg0 aws.Context, arg1 *shield.ListProtectionsInput, arg2 ...request.Option) (*shield.ListProtectionsOutput, error) {
+func (m *MockShieldAPI) ListProtectionsWithContext(arg0 context.Context, arg1 *shield.ListProtectionsInput, arg2 ...request.Option) (*shield.ListProtectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockShieldAPIMockRecorder) UpdateEmergencyContactSettingsRequest(arg0 
 }
 
 // UpdateEmergencyContactSettingsWithContext mocks base method
-func (m *MockShieldAPI) UpdateEmergencyContactSettingsWithContext(arg0 aws.Context, arg1 *shield.UpdateEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.UpdateEmergencyContactSettingsOutput, error) {
+func (m *MockShieldAPI) UpdateEmergencyContactSettingsWithContext(arg0 context.Context, arg1 *shield.UpdateEmergencyContactSettingsInput, arg2 ...request.Option) (*shield.UpdateEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockShieldAPIMockRecorder) UpdateSubscriptionRequest(arg0 interface{})
 }
 
 // UpdateSubscriptionWithContext mocks base method
-func (m *MockShieldAPI) UpdateSubscriptionWithContext(arg0 aws.Context, arg1 *shield.UpdateSubscriptionInput, arg2 ...request.Option) (*shield.UpdateSubscriptionOutput, error) {
+func (m *MockShieldAPI) UpdateSubscriptionWithContext(arg0 context.Context, arg1 *shield.UpdateSubscriptionInput, arg2 ...request.Option) (*shield.UpdateSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package migrationhubmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	migrationhub "github.com/aws/aws-sdk-go/service/migrationhub"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMigrationHubAPIMockRecorder) AssociateCreatedArtifactRequest(arg0 
 }
 
 // AssociateCreatedArtifactWithContext mocks base method
-func (m *MockMigrationHubAPI) AssociateCreatedArtifactWithContext(arg0 aws.Context, arg1 *migrationhub.AssociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.AssociateCreatedArtifactOutput, error) {
+func (m *MockMigrationHubAPI) AssociateCreatedArtifactWithContext(arg0 context.Context, arg1 *migrationhub.AssociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.AssociateCreatedArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMigrationHubAPIMockRecorder) AssociateDiscoveredResourceRequest(ar
 }
 
 // AssociateDiscoveredResourceWithContext mocks base method
-func (m *MockMigrationHubAPI) AssociateDiscoveredResourceWithContext(arg0 aws.Context, arg1 *migrationhub.AssociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.AssociateDiscoveredResourceOutput, error) {
+func (m *MockMigrationHubAPI) AssociateDiscoveredResourceWithContext(arg0 context.Context, arg1 *migrationhub.AssociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.AssociateDiscoveredResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMigrationHubAPIMockRecorder) CreateProgressUpdateStreamRequest(arg
 }
 
 // CreateProgressUpdateStreamWithContext mocks base method
-func (m *MockMigrationHubAPI) CreateProgressUpdateStreamWithContext(arg0 aws.Context, arg1 *migrationhub.CreateProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.CreateProgressUpdateStreamOutput, error) {
+func (m *MockMigrationHubAPI) CreateProgressUpdateStreamWithContext(arg0 context.Context, arg1 *migrationhub.CreateProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.CreateProgressUpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMigrationHubAPIMockRecorder) DeleteProgressUpdateStreamRequest(arg
 }
 
 // DeleteProgressUpdateStreamWithContext mocks base method
-func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamWithContext(arg0 aws.Context, arg1 *migrationhub.DeleteProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.DeleteProgressUpdateStreamOutput, error) {
+func (m *MockMigrationHubAPI) DeleteProgressUpdateStreamWithContext(arg0 context.Context, arg1 *migrationhub.DeleteProgressUpdateStreamInput, arg2 ...request.Option) (*migrationhub.DeleteProgressUpdateStreamOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMigrationHubAPIMockRecorder) DescribeApplicationStateRequest(arg0 
 }
 
 // DescribeApplicationStateWithContext mocks base method
-func (m *MockMigrationHubAPI) DescribeApplicationStateWithContext(arg0 aws.Context, arg1 *migrationhub.DescribeApplicationStateInput, arg2 ...request.Option) (*migrationhub.DescribeApplicationStateOutput, error) {
+func (m *MockMigrationHubAPI) DescribeApplicationStateWithContext(arg0 context.Context, arg1 *migrationhub.DescribeApplicationStateInput, arg2 ...request.Option) (*migrationhub.DescribeApplicationStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMigrationHubAPIMockRecorder) DescribeMigrationTaskRequest(arg0 int
 }
 
 // DescribeMigrationTaskWithContext mocks base method
-func (m *MockMigrationHubAPI) DescribeMigrationTaskWithContext(arg0 aws.Context, arg1 *migrationhub.DescribeMigrationTaskInput, arg2 ...request.Option) (*migrationhub.DescribeMigrationTaskOutput, error) {
+func (m *MockMigrationHubAPI) DescribeMigrationTaskWithContext(arg0 context.Context, arg1 *migrationhub.DescribeMigrationTaskInput, arg2 ...request.Option) (*migrationhub.DescribeMigrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMigrationHubAPIMockRecorder) DisassociateCreatedArtifactRequest(ar
 }
 
 // DisassociateCreatedArtifactWithContext mocks base method
-func (m *MockMigrationHubAPI) DisassociateCreatedArtifactWithContext(arg0 aws.Context, arg1 *migrationhub.DisassociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.DisassociateCreatedArtifactOutput, error) {
+func (m *MockMigrationHubAPI) DisassociateCreatedArtifactWithContext(arg0 context.Context, arg1 *migrationhub.DisassociateCreatedArtifactInput, arg2 ...request.Option) (*migrationhub.DisassociateCreatedArtifactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMigrationHubAPIMockRecorder) DisassociateDiscoveredResourceRequest
 }
 
 // DisassociateDiscoveredResourceWithContext mocks base method
-func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceWithContext(arg0 aws.Context, arg1 *migrationhub.DisassociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.DisassociateDiscoveredResourceOutput, error) {
+func (m *MockMigrationHubAPI) DisassociateDiscoveredResourceWithContext(arg0 context.Context, arg1 *migrationhub.DisassociateDiscoveredResourceInput, arg2 ...request.Option) (*migrationhub.DisassociateDiscoveredResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockMigrationHubAPIMockRecorder) ImportMigrationTaskRequest(arg0 inter
 }
 
 // ImportMigrationTaskWithContext mocks base method
-func (m *MockMigrationHubAPI) ImportMigrationTaskWithContext(arg0 aws.Context, arg1 *migrationhub.ImportMigrationTaskInput, arg2 ...request.Option) (*migrationhub.ImportMigrationTaskOutput, error) {
+func (m *MockMigrationHubAPI) ImportMigrationTaskWithContext(arg0 context.Context, arg1 *migrationhub.ImportMigrationTaskInput, arg2 ...request.Option) (*migrationhub.ImportMigrationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsRequest(arg0 inte
 }
 
 // ListCreatedArtifactsWithContext mocks base method
-func (m *MockMigrationHubAPI) ListCreatedArtifactsWithContext(arg0 aws.Context, arg1 *migrationhub.ListCreatedArtifactsInput, arg2 ...request.Option) (*migrationhub.ListCreatedArtifactsOutput, error) {
+func (m *MockMigrationHubAPI) ListCreatedArtifactsWithContext(arg0 context.Context, arg1 *migrationhub.ListCreatedArtifactsInput, arg2 ...request.Option) (*migrationhub.ListCreatedArtifactsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesRequest(arg0 i
 }
 
 // ListDiscoveredResourcesWithContext mocks base method
-func (m *MockMigrationHubAPI) ListDiscoveredResourcesWithContext(arg0 aws.Context, arg1 *migrationhub.ListDiscoveredResourcesInput, arg2 ...request.Option) (*migrationhub.ListDiscoveredResourcesOutput, error) {
+func (m *MockMigrationHubAPI) ListDiscoveredResourcesWithContext(arg0 context.Context, arg1 *migrationhub.ListDiscoveredResourcesInput, arg2 ...request.Option) (*migrationhub.ListDiscoveredResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksRequest(arg0 interf
 }
 
 // ListMigrationTasksWithContext mocks base method
-func (m *MockMigrationHubAPI) ListMigrationTasksWithContext(arg0 aws.Context, arg1 *migrationhub.ListMigrationTasksInput, arg2 ...request.Option) (*migrationhub.ListMigrationTasksOutput, error) {
+func (m *MockMigrationHubAPI) ListMigrationTasksWithContext(arg0 context.Context, arg1 *migrationhub.ListMigrationTasksInput, arg2 ...request.Option) (*migrationhub.ListMigrationTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsRequest(arg0
 }
 
 // ListProgressUpdateStreamsWithContext mocks base method
-func (m *MockMigrationHubAPI) ListProgressUpdateStreamsWithContext(arg0 aws.Context, arg1 *migrationhub.ListProgressUpdateStreamsInput, arg2 ...request.Option) (*migrationhub.ListProgressUpdateStreamsOutput, error) {
+func (m *MockMigrationHubAPI) ListProgressUpdateStreamsWithContext(arg0 context.Context, arg1 *migrationhub.ListProgressUpdateStreamsInput, arg2 ...request.Option) (*migrationhub.ListProgressUpdateStreamsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockMigrationHubAPIMockRecorder) NotifyApplicationStateRequest(arg0 in
 }
 
 // NotifyApplicationStateWithContext mocks base method
-func (m *MockMigrationHubAPI) NotifyApplicationStateWithContext(arg0 aws.Context, arg1 *migrationhub.NotifyApplicationStateInput, arg2 ...request.Option) (*migrationhub.NotifyApplicationStateOutput, error) {
+func (m *MockMigrationHubAPI) NotifyApplicationStateWithContext(arg0 context.Context, arg1 *migrationhub.NotifyApplicationStateInput, arg2 ...request.Option) (*migrationhub.NotifyApplicationStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockMigrationHubAPIMockRecorder) NotifyMigrationTaskStateRequest(arg0 
 }
 
 // NotifyMigrationTaskStateWithContext mocks base method
-func (m *MockMigrationHubAPI) NotifyMigrationTaskStateWithContext(arg0 aws.Context, arg1 *migrationhub.NotifyMigrationTaskStateInput, arg2 ...request.Option) (*migrationhub.NotifyMigrationTaskStateOutput, error) {
+func (m *MockMigrationHubAPI) NotifyMigrationTaskStateWithContext(arg0 context.Context, arg1 *migrationhub.NotifyMigrationTaskStateInput, arg2 ...request.Option) (*migrationhub.NotifyMigrationTaskStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockMigrationHubAPIMockRecorder) PutResourceAttributesRequest(arg0 int
 }
 
 // PutResourceAttributesWithContext mocks base method
-func (m *MockMigrationHubAPI) PutResourceAttributesWithContext(arg0 aws.Context, arg1 *migrationhub.PutResourceAttributesInput, arg2 ...request.Option) (*migrationhub.PutResourceAttributesOutput, error) {
+func (m *MockMigrationHubAPI) PutResourceAttributesWithContext(arg0 context.Context, arg1 *migrationhub.PutResourceAttributesInput, arg2 ...request.Option) (*migrationhub.PutResourceAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

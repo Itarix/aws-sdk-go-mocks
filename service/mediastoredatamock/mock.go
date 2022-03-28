@@ -5,7 +5,7 @@
 package mediastoredatamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediastoredata "github.com/aws/aws-sdk-go/service/mediastoredata"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaStoreDataAPIMockRecorder) DeleteObjectRequest(arg0 interface{
 }
 
 // DeleteObjectWithContext mocks base method
-func (m *MockMediaStoreDataAPI) DeleteObjectWithContext(arg0 aws.Context, arg1 *mediastoredata.DeleteObjectInput, arg2 ...request.Option) (*mediastoredata.DeleteObjectOutput, error) {
+func (m *MockMediaStoreDataAPI) DeleteObjectWithContext(arg0 context.Context, arg1 *mediastoredata.DeleteObjectInput, arg2 ...request.Option) (*mediastoredata.DeleteObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMediaStoreDataAPIMockRecorder) DescribeObjectRequest(arg0 interfac
 }
 
 // DescribeObjectWithContext mocks base method
-func (m *MockMediaStoreDataAPI) DescribeObjectWithContext(arg0 aws.Context, arg1 *mediastoredata.DescribeObjectInput, arg2 ...request.Option) (*mediastoredata.DescribeObjectOutput, error) {
+func (m *MockMediaStoreDataAPI) DescribeObjectWithContext(arg0 context.Context, arg1 *mediastoredata.DescribeObjectInput, arg2 ...request.Option) (*mediastoredata.DescribeObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockMediaStoreDataAPIMockRecorder) GetObjectRequest(arg0 interface{}) 
 }
 
 // GetObjectWithContext mocks base method
-func (m *MockMediaStoreDataAPI) GetObjectWithContext(arg0 aws.Context, arg1 *mediastoredata.GetObjectInput, arg2 ...request.Option) (*mediastoredata.GetObjectOutput, error) {
+func (m *MockMediaStoreDataAPI) GetObjectWithContext(arg0 context.Context, arg1 *mediastoredata.GetObjectInput, arg2 ...request.Option) (*mediastoredata.GetObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaStoreDataAPIMockRecorder) ListItemsRequest(arg0 interface{}) 
 }
 
 // ListItemsWithContext mocks base method
-func (m *MockMediaStoreDataAPI) ListItemsWithContext(arg0 aws.Context, arg1 *mediastoredata.ListItemsInput, arg2 ...request.Option) (*mediastoredata.ListItemsOutput, error) {
+func (m *MockMediaStoreDataAPI) ListItemsWithContext(arg0 context.Context, arg1 *mediastoredata.ListItemsInput, arg2 ...request.Option) (*mediastoredata.ListItemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMediaStoreDataAPIMockRecorder) PutObjectRequest(arg0 interface{}) 
 }
 
 // PutObjectWithContext mocks base method
-func (m *MockMediaStoreDataAPI) PutObjectWithContext(arg0 aws.Context, arg1 *mediastoredata.PutObjectInput, arg2 ...request.Option) (*mediastoredata.PutObjectOutput, error) {
+func (m *MockMediaStoreDataAPI) PutObjectWithContext(arg0 context.Context, arg1 *mediastoredata.PutObjectInput, arg2 ...request.Option) (*mediastoredata.PutObjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

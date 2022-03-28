@@ -5,7 +5,7 @@
 package marketplaceentitlementservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	marketplaceentitlementservice "github.com/aws/aws-sdk-go/service/marketplaceentitlementservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMarketplaceEntitlementServiceAPIMockRecorder) GetEntitlementsReque
 }
 
 // GetEntitlementsWithContext mocks base method
-func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsWithContext(arg0 aws.Context, arg1 *marketplaceentitlementservice.GetEntitlementsInput, arg2 ...request.Option) (*marketplaceentitlementservice.GetEntitlementsOutput, error) {
+func (m *MockMarketplaceEntitlementServiceAPI) GetEntitlementsWithContext(arg0 context.Context, arg1 *marketplaceentitlementservice.GetEntitlementsInput, arg2 ...request.Option) (*marketplaceentitlementservice.GetEntitlementsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

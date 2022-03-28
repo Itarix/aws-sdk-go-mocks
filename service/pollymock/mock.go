@@ -5,7 +5,7 @@
 package pollymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	polly "github.com/aws/aws-sdk-go/service/polly"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockPollyAPIMockRecorder) DeleteLexiconRequest(arg0 interface{}) *gomo
 }
 
 // DeleteLexiconWithContext mocks base method
-func (m *MockPollyAPI) DeleteLexiconWithContext(arg0 aws.Context, arg1 *polly.DeleteLexiconInput, arg2 ...request.Option) (*polly.DeleteLexiconOutput, error) {
+func (m *MockPollyAPI) DeleteLexiconWithContext(arg0 context.Context, arg1 *polly.DeleteLexiconInput, arg2 ...request.Option) (*polly.DeleteLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockPollyAPIMockRecorder) DescribeVoicesRequest(arg0 interface{}) *gom
 }
 
 // DescribeVoicesWithContext mocks base method
-func (m *MockPollyAPI) DescribeVoicesWithContext(arg0 aws.Context, arg1 *polly.DescribeVoicesInput, arg2 ...request.Option) (*polly.DescribeVoicesOutput, error) {
+func (m *MockPollyAPI) DescribeVoicesWithContext(arg0 context.Context, arg1 *polly.DescribeVoicesInput, arg2 ...request.Option) (*polly.DescribeVoicesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockPollyAPIMockRecorder) GetLexiconRequest(arg0 interface{}) *gomock.
 }
 
 // GetLexiconWithContext mocks base method
-func (m *MockPollyAPI) GetLexiconWithContext(arg0 aws.Context, arg1 *polly.GetLexiconInput, arg2 ...request.Option) (*polly.GetLexiconOutput, error) {
+func (m *MockPollyAPI) GetLexiconWithContext(arg0 context.Context, arg1 *polly.GetLexiconInput, arg2 ...request.Option) (*polly.GetLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockPollyAPIMockRecorder) GetSpeechSynthesisTaskRequest(arg0 interface
 }
 
 // GetSpeechSynthesisTaskWithContext mocks base method
-func (m *MockPollyAPI) GetSpeechSynthesisTaskWithContext(arg0 aws.Context, arg1 *polly.GetSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.GetSpeechSynthesisTaskOutput, error) {
+func (m *MockPollyAPI) GetSpeechSynthesisTaskWithContext(arg0 context.Context, arg1 *polly.GetSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.GetSpeechSynthesisTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockPollyAPIMockRecorder) ListLexiconsRequest(arg0 interface{}) *gomoc
 }
 
 // ListLexiconsWithContext mocks base method
-func (m *MockPollyAPI) ListLexiconsWithContext(arg0 aws.Context, arg1 *polly.ListLexiconsInput, arg2 ...request.Option) (*polly.ListLexiconsOutput, error) {
+func (m *MockPollyAPI) ListLexiconsWithContext(arg0 context.Context, arg1 *polly.ListLexiconsInput, arg2 ...request.Option) (*polly.ListLexiconsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -315,7 +315,7 @@ func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasksPages(arg0, arg1 int
 }
 
 // ListSpeechSynthesisTasksPagesWithContext mocks base method
-func (m *MockPollyAPI) ListSpeechSynthesisTasksPagesWithContext(arg0 aws.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 func(*polly.ListSpeechSynthesisTasksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockPollyAPI) ListSpeechSynthesisTasksPagesWithContext(arg0 context.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 func(*polly.ListSpeechSynthesisTasksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -349,7 +349,7 @@ func (mr *MockPollyAPIMockRecorder) ListSpeechSynthesisTasksRequest(arg0 interfa
 }
 
 // ListSpeechSynthesisTasksWithContext mocks base method
-func (m *MockPollyAPI) ListSpeechSynthesisTasksWithContext(arg0 aws.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 ...request.Option) (*polly.ListSpeechSynthesisTasksOutput, error) {
+func (m *MockPollyAPI) ListSpeechSynthesisTasksWithContext(arg0 context.Context, arg1 *polly.ListSpeechSynthesisTasksInput, arg2 ...request.Option) (*polly.ListSpeechSynthesisTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -399,7 +399,7 @@ func (mr *MockPollyAPIMockRecorder) PutLexiconRequest(arg0 interface{}) *gomock.
 }
 
 // PutLexiconWithContext mocks base method
-func (m *MockPollyAPI) PutLexiconWithContext(arg0 aws.Context, arg1 *polly.PutLexiconInput, arg2 ...request.Option) (*polly.PutLexiconOutput, error) {
+func (m *MockPollyAPI) PutLexiconWithContext(arg0 context.Context, arg1 *polly.PutLexiconInput, arg2 ...request.Option) (*polly.PutLexiconOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockPollyAPIMockRecorder) StartSpeechSynthesisTaskRequest(arg0 interfa
 }
 
 // StartSpeechSynthesisTaskWithContext mocks base method
-func (m *MockPollyAPI) StartSpeechSynthesisTaskWithContext(arg0 aws.Context, arg1 *polly.StartSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.StartSpeechSynthesisTaskOutput, error) {
+func (m *MockPollyAPI) StartSpeechSynthesisTaskWithContext(arg0 context.Context, arg1 *polly.StartSpeechSynthesisTaskInput, arg2 ...request.Option) (*polly.StartSpeechSynthesisTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockPollyAPIMockRecorder) SynthesizeSpeechRequest(arg0 interface{}) *g
 }
 
 // SynthesizeSpeechWithContext mocks base method
-func (m *MockPollyAPI) SynthesizeSpeechWithContext(arg0 aws.Context, arg1 *polly.SynthesizeSpeechInput, arg2 ...request.Option) (*polly.SynthesizeSpeechOutput, error) {
+func (m *MockPollyAPI) SynthesizeSpeechWithContext(arg0 context.Context, arg1 *polly.SynthesizeSpeechInput, arg2 ...request.Option) (*polly.SynthesizeSpeechOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

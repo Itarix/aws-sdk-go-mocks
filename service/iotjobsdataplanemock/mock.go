@@ -5,7 +5,7 @@
 package iotjobsdataplanemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iotjobsdataplane "github.com/aws/aws-sdk-go/service/iotjobsdataplane"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockIoTJobsDataPlaneAPIMockRecorder) DescribeJobExecutionRequest(arg0 
 }
 
 // DescribeJobExecutionWithContext mocks base method
-func (m *MockIoTJobsDataPlaneAPI) DescribeJobExecutionWithContext(arg0 aws.Context, arg1 *iotjobsdataplane.DescribeJobExecutionInput, arg2 ...request.Option) (*iotjobsdataplane.DescribeJobExecutionOutput, error) {
+func (m *MockIoTJobsDataPlaneAPI) DescribeJobExecutionWithContext(arg0 context.Context, arg1 *iotjobsdataplane.DescribeJobExecutionInput, arg2 ...request.Option) (*iotjobsdataplane.DescribeJobExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockIoTJobsDataPlaneAPIMockRecorder) GetPendingJobExecutionsRequest(ar
 }
 
 // GetPendingJobExecutionsWithContext mocks base method
-func (m *MockIoTJobsDataPlaneAPI) GetPendingJobExecutionsWithContext(arg0 aws.Context, arg1 *iotjobsdataplane.GetPendingJobExecutionsInput, arg2 ...request.Option) (*iotjobsdataplane.GetPendingJobExecutionsOutput, error) {
+func (m *MockIoTJobsDataPlaneAPI) GetPendingJobExecutionsWithContext(arg0 context.Context, arg1 *iotjobsdataplane.GetPendingJobExecutionsInput, arg2 ...request.Option) (*iotjobsdataplane.GetPendingJobExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockIoTJobsDataPlaneAPIMockRecorder) StartNextPendingJobExecutionReque
 }
 
 // StartNextPendingJobExecutionWithContext mocks base method
-func (m *MockIoTJobsDataPlaneAPI) StartNextPendingJobExecutionWithContext(arg0 aws.Context, arg1 *iotjobsdataplane.StartNextPendingJobExecutionInput, arg2 ...request.Option) (*iotjobsdataplane.StartNextPendingJobExecutionOutput, error) {
+func (m *MockIoTJobsDataPlaneAPI) StartNextPendingJobExecutionWithContext(arg0 context.Context, arg1 *iotjobsdataplane.StartNextPendingJobExecutionInput, arg2 ...request.Option) (*iotjobsdataplane.StartNextPendingJobExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockIoTJobsDataPlaneAPIMockRecorder) UpdateJobExecutionRequest(arg0 in
 }
 
 // UpdateJobExecutionWithContext mocks base method
-func (m *MockIoTJobsDataPlaneAPI) UpdateJobExecutionWithContext(arg0 aws.Context, arg1 *iotjobsdataplane.UpdateJobExecutionInput, arg2 ...request.Option) (*iotjobsdataplane.UpdateJobExecutionOutput, error) {
+func (m *MockIoTJobsDataPlaneAPI) UpdateJobExecutionWithContext(arg0 context.Context, arg1 *iotjobsdataplane.UpdateJobExecutionInput, arg2 ...request.Option) (*iotjobsdataplane.UpdateJobExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

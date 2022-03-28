@@ -5,7 +5,7 @@
 package iotdataplanemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iotdataplane "github.com/aws/aws-sdk-go/service/iotdataplane"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockIoTDataPlaneAPIMockRecorder) DeleteThingShadowRequest(arg0 interfa
 }
 
 // DeleteThingShadowWithContext mocks base method
-func (m *MockIoTDataPlaneAPI) DeleteThingShadowWithContext(arg0 aws.Context, arg1 *iotdataplane.DeleteThingShadowInput, arg2 ...request.Option) (*iotdataplane.DeleteThingShadowOutput, error) {
+func (m *MockIoTDataPlaneAPI) DeleteThingShadowWithContext(arg0 context.Context, arg1 *iotdataplane.DeleteThingShadowInput, arg2 ...request.Option) (*iotdataplane.DeleteThingShadowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockIoTDataPlaneAPIMockRecorder) GetThingShadowRequest(arg0 interface{
 }
 
 // GetThingShadowWithContext mocks base method
-func (m *MockIoTDataPlaneAPI) GetThingShadowWithContext(arg0 aws.Context, arg1 *iotdataplane.GetThingShadowInput, arg2 ...request.Option) (*iotdataplane.GetThingShadowOutput, error) {
+func (m *MockIoTDataPlaneAPI) GetThingShadowWithContext(arg0 context.Context, arg1 *iotdataplane.GetThingShadowInput, arg2 ...request.Option) (*iotdataplane.GetThingShadowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockIoTDataPlaneAPIMockRecorder) PublishRequest(arg0 interface{}) *gom
 }
 
 // PublishWithContext mocks base method
-func (m *MockIoTDataPlaneAPI) PublishWithContext(arg0 aws.Context, arg1 *iotdataplane.PublishInput, arg2 ...request.Option) (*iotdataplane.PublishOutput, error) {
+func (m *MockIoTDataPlaneAPI) PublishWithContext(arg0 context.Context, arg1 *iotdataplane.PublishInput, arg2 ...request.Option) (*iotdataplane.PublishOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockIoTDataPlaneAPIMockRecorder) UpdateThingShadowRequest(arg0 interfa
 }
 
 // UpdateThingShadowWithContext mocks base method
-func (m *MockIoTDataPlaneAPI) UpdateThingShadowWithContext(arg0 aws.Context, arg1 *iotdataplane.UpdateThingShadowInput, arg2 ...request.Option) (*iotdataplane.UpdateThingShadowOutput, error) {
+func (m *MockIoTDataPlaneAPI) UpdateThingShadowWithContext(arg0 context.Context, arg1 *iotdataplane.UpdateThingShadowInput, arg2 ...request.Option) (*iotdataplane.UpdateThingShadowOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

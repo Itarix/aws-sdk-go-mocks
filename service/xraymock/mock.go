@@ -5,7 +5,7 @@
 package xraymock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	xray "github.com/aws/aws-sdk-go/service/xray"
 	gomock "github.com/golang/mock/gomock"
@@ -65,7 +65,7 @@ func (mr *MockXRayAPIMockRecorder) BatchGetTracesPages(arg0, arg1 interface{}) *
 }
 
 // BatchGetTracesPagesWithContext mocks base method
-func (m *MockXRayAPI) BatchGetTracesPagesWithContext(arg0 aws.Context, arg1 *xray.BatchGetTracesInput, arg2 func(*xray.BatchGetTracesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockXRayAPI) BatchGetTracesPagesWithContext(arg0 context.Context, arg1 *xray.BatchGetTracesInput, arg2 func(*xray.BatchGetTracesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -99,7 +99,7 @@ func (mr *MockXRayAPIMockRecorder) BatchGetTracesRequest(arg0 interface{}) *gomo
 }
 
 // BatchGetTracesWithContext mocks base method
-func (m *MockXRayAPI) BatchGetTracesWithContext(arg0 aws.Context, arg1 *xray.BatchGetTracesInput, arg2 ...request.Option) (*xray.BatchGetTracesOutput, error) {
+func (m *MockXRayAPI) BatchGetTracesWithContext(arg0 context.Context, arg1 *xray.BatchGetTracesInput, arg2 ...request.Option) (*xray.BatchGetTracesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -149,7 +149,7 @@ func (mr *MockXRayAPIMockRecorder) CreateGroupRequest(arg0 interface{}) *gomock.
 }
 
 // CreateGroupWithContext mocks base method
-func (m *MockXRayAPI) CreateGroupWithContext(arg0 aws.Context, arg1 *xray.CreateGroupInput, arg2 ...request.Option) (*xray.CreateGroupOutput, error) {
+func (m *MockXRayAPI) CreateGroupWithContext(arg0 context.Context, arg1 *xray.CreateGroupInput, arg2 ...request.Option) (*xray.CreateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -199,7 +199,7 @@ func (mr *MockXRayAPIMockRecorder) CreateSamplingRuleRequest(arg0 interface{}) *
 }
 
 // CreateSamplingRuleWithContext mocks base method
-func (m *MockXRayAPI) CreateSamplingRuleWithContext(arg0 aws.Context, arg1 *xray.CreateSamplingRuleInput, arg2 ...request.Option) (*xray.CreateSamplingRuleOutput, error) {
+func (m *MockXRayAPI) CreateSamplingRuleWithContext(arg0 context.Context, arg1 *xray.CreateSamplingRuleInput, arg2 ...request.Option) (*xray.CreateSamplingRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -249,7 +249,7 @@ func (mr *MockXRayAPIMockRecorder) DeleteGroupRequest(arg0 interface{}) *gomock.
 }
 
 // DeleteGroupWithContext mocks base method
-func (m *MockXRayAPI) DeleteGroupWithContext(arg0 aws.Context, arg1 *xray.DeleteGroupInput, arg2 ...request.Option) (*xray.DeleteGroupOutput, error) {
+func (m *MockXRayAPI) DeleteGroupWithContext(arg0 context.Context, arg1 *xray.DeleteGroupInput, arg2 ...request.Option) (*xray.DeleteGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -299,7 +299,7 @@ func (mr *MockXRayAPIMockRecorder) DeleteSamplingRuleRequest(arg0 interface{}) *
 }
 
 // DeleteSamplingRuleWithContext mocks base method
-func (m *MockXRayAPI) DeleteSamplingRuleWithContext(arg0 aws.Context, arg1 *xray.DeleteSamplingRuleInput, arg2 ...request.Option) (*xray.DeleteSamplingRuleOutput, error) {
+func (m *MockXRayAPI) DeleteSamplingRuleWithContext(arg0 context.Context, arg1 *xray.DeleteSamplingRuleInput, arg2 ...request.Option) (*xray.DeleteSamplingRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -349,7 +349,7 @@ func (mr *MockXRayAPIMockRecorder) GetEncryptionConfigRequest(arg0 interface{}) 
 }
 
 // GetEncryptionConfigWithContext mocks base method
-func (m *MockXRayAPI) GetEncryptionConfigWithContext(arg0 aws.Context, arg1 *xray.GetEncryptionConfigInput, arg2 ...request.Option) (*xray.GetEncryptionConfigOutput, error) {
+func (m *MockXRayAPI) GetEncryptionConfigWithContext(arg0 context.Context, arg1 *xray.GetEncryptionConfigInput, arg2 ...request.Option) (*xray.GetEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -399,7 +399,7 @@ func (mr *MockXRayAPIMockRecorder) GetGroupRequest(arg0 interface{}) *gomock.Cal
 }
 
 // GetGroupWithContext mocks base method
-func (m *MockXRayAPI) GetGroupWithContext(arg0 aws.Context, arg1 *xray.GetGroupInput, arg2 ...request.Option) (*xray.GetGroupOutput, error) {
+func (m *MockXRayAPI) GetGroupWithContext(arg0 context.Context, arg1 *xray.GetGroupInput, arg2 ...request.Option) (*xray.GetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockXRayAPIMockRecorder) GetGroupsRequest(arg0 interface{}) *gomock.Ca
 }
 
 // GetGroupsWithContext mocks base method
-func (m *MockXRayAPI) GetGroupsWithContext(arg0 aws.Context, arg1 *xray.GetGroupsInput, arg2 ...request.Option) (*xray.GetGroupsOutput, error) {
+func (m *MockXRayAPI) GetGroupsWithContext(arg0 context.Context, arg1 *xray.GetGroupsInput, arg2 ...request.Option) (*xray.GetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -499,7 +499,7 @@ func (mr *MockXRayAPIMockRecorder) GetSamplingRulesRequest(arg0 interface{}) *go
 }
 
 // GetSamplingRulesWithContext mocks base method
-func (m *MockXRayAPI) GetSamplingRulesWithContext(arg0 aws.Context, arg1 *xray.GetSamplingRulesInput, arg2 ...request.Option) (*xray.GetSamplingRulesOutput, error) {
+func (m *MockXRayAPI) GetSamplingRulesWithContext(arg0 context.Context, arg1 *xray.GetSamplingRulesInput, arg2 ...request.Option) (*xray.GetSamplingRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockXRayAPIMockRecorder) GetSamplingStatisticSummariesRequest(arg0 int
 }
 
 // GetSamplingStatisticSummariesWithContext mocks base method
-func (m *MockXRayAPI) GetSamplingStatisticSummariesWithContext(arg0 aws.Context, arg1 *xray.GetSamplingStatisticSummariesInput, arg2 ...request.Option) (*xray.GetSamplingStatisticSummariesOutput, error) {
+func (m *MockXRayAPI) GetSamplingStatisticSummariesWithContext(arg0 context.Context, arg1 *xray.GetSamplingStatisticSummariesInput, arg2 ...request.Option) (*xray.GetSamplingStatisticSummariesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockXRayAPIMockRecorder) GetSamplingTargetsRequest(arg0 interface{}) *
 }
 
 // GetSamplingTargetsWithContext mocks base method
-func (m *MockXRayAPI) GetSamplingTargetsWithContext(arg0 aws.Context, arg1 *xray.GetSamplingTargetsInput, arg2 ...request.Option) (*xray.GetSamplingTargetsOutput, error) {
+func (m *MockXRayAPI) GetSamplingTargetsWithContext(arg0 context.Context, arg1 *xray.GetSamplingTargetsInput, arg2 ...request.Option) (*xray.GetSamplingTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -648,7 +648,7 @@ func (mr *MockXRayAPIMockRecorder) GetServiceGraphPages(arg0, arg1 interface{}) 
 }
 
 // GetServiceGraphPagesWithContext mocks base method
-func (m *MockXRayAPI) GetServiceGraphPagesWithContext(arg0 aws.Context, arg1 *xray.GetServiceGraphInput, arg2 func(*xray.GetServiceGraphOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockXRayAPI) GetServiceGraphPagesWithContext(arg0 context.Context, arg1 *xray.GetServiceGraphInput, arg2 func(*xray.GetServiceGraphOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -682,7 +682,7 @@ func (mr *MockXRayAPIMockRecorder) GetServiceGraphRequest(arg0 interface{}) *gom
 }
 
 // GetServiceGraphWithContext mocks base method
-func (m *MockXRayAPI) GetServiceGraphWithContext(arg0 aws.Context, arg1 *xray.GetServiceGraphInput, arg2 ...request.Option) (*xray.GetServiceGraphOutput, error) {
+func (m *MockXRayAPI) GetServiceGraphWithContext(arg0 context.Context, arg1 *xray.GetServiceGraphInput, arg2 ...request.Option) (*xray.GetServiceGraphOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockXRayAPIMockRecorder) GetTraceGraphPages(arg0, arg1 interface{}) *g
 }
 
 // GetTraceGraphPagesWithContext mocks base method
-func (m *MockXRayAPI) GetTraceGraphPagesWithContext(arg0 aws.Context, arg1 *xray.GetTraceGraphInput, arg2 func(*xray.GetTraceGraphOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockXRayAPI) GetTraceGraphPagesWithContext(arg0 context.Context, arg1 *xray.GetTraceGraphInput, arg2 func(*xray.GetTraceGraphOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -765,7 +765,7 @@ func (mr *MockXRayAPIMockRecorder) GetTraceGraphRequest(arg0 interface{}) *gomoc
 }
 
 // GetTraceGraphWithContext mocks base method
-func (m *MockXRayAPI) GetTraceGraphWithContext(arg0 aws.Context, arg1 *xray.GetTraceGraphInput, arg2 ...request.Option) (*xray.GetTraceGraphOutput, error) {
+func (m *MockXRayAPI) GetTraceGraphWithContext(arg0 context.Context, arg1 *xray.GetTraceGraphInput, arg2 ...request.Option) (*xray.GetTraceGraphOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -814,7 +814,7 @@ func (mr *MockXRayAPIMockRecorder) GetTraceSummariesPages(arg0, arg1 interface{}
 }
 
 // GetTraceSummariesPagesWithContext mocks base method
-func (m *MockXRayAPI) GetTraceSummariesPagesWithContext(arg0 aws.Context, arg1 *xray.GetTraceSummariesInput, arg2 func(*xray.GetTraceSummariesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockXRayAPI) GetTraceSummariesPagesWithContext(arg0 context.Context, arg1 *xray.GetTraceSummariesInput, arg2 func(*xray.GetTraceSummariesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -848,7 +848,7 @@ func (mr *MockXRayAPIMockRecorder) GetTraceSummariesRequest(arg0 interface{}) *g
 }
 
 // GetTraceSummariesWithContext mocks base method
-func (m *MockXRayAPI) GetTraceSummariesWithContext(arg0 aws.Context, arg1 *xray.GetTraceSummariesInput, arg2 ...request.Option) (*xray.GetTraceSummariesOutput, error) {
+func (m *MockXRayAPI) GetTraceSummariesWithContext(arg0 context.Context, arg1 *xray.GetTraceSummariesInput, arg2 ...request.Option) (*xray.GetTraceSummariesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -898,7 +898,7 @@ func (mr *MockXRayAPIMockRecorder) PutEncryptionConfigRequest(arg0 interface{}) 
 }
 
 // PutEncryptionConfigWithContext mocks base method
-func (m *MockXRayAPI) PutEncryptionConfigWithContext(arg0 aws.Context, arg1 *xray.PutEncryptionConfigInput, arg2 ...request.Option) (*xray.PutEncryptionConfigOutput, error) {
+func (m *MockXRayAPI) PutEncryptionConfigWithContext(arg0 context.Context, arg1 *xray.PutEncryptionConfigInput, arg2 ...request.Option) (*xray.PutEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -948,7 +948,7 @@ func (mr *MockXRayAPIMockRecorder) PutTelemetryRecordsRequest(arg0 interface{}) 
 }
 
 // PutTelemetryRecordsWithContext mocks base method
-func (m *MockXRayAPI) PutTelemetryRecordsWithContext(arg0 aws.Context, arg1 *xray.PutTelemetryRecordsInput, arg2 ...request.Option) (*xray.PutTelemetryRecordsOutput, error) {
+func (m *MockXRayAPI) PutTelemetryRecordsWithContext(arg0 context.Context, arg1 *xray.PutTelemetryRecordsInput, arg2 ...request.Option) (*xray.PutTelemetryRecordsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -998,7 +998,7 @@ func (mr *MockXRayAPIMockRecorder) PutTraceSegmentsRequest(arg0 interface{}) *go
 }
 
 // PutTraceSegmentsWithContext mocks base method
-func (m *MockXRayAPI) PutTraceSegmentsWithContext(arg0 aws.Context, arg1 *xray.PutTraceSegmentsInput, arg2 ...request.Option) (*xray.PutTraceSegmentsOutput, error) {
+func (m *MockXRayAPI) PutTraceSegmentsWithContext(arg0 context.Context, arg1 *xray.PutTraceSegmentsInput, arg2 ...request.Option) (*xray.PutTraceSegmentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockXRayAPIMockRecorder) UpdateGroupRequest(arg0 interface{}) *gomock.
 }
 
 // UpdateGroupWithContext mocks base method
-func (m *MockXRayAPI) UpdateGroupWithContext(arg0 aws.Context, arg1 *xray.UpdateGroupInput, arg2 ...request.Option) (*xray.UpdateGroupOutput, error) {
+func (m *MockXRayAPI) UpdateGroupWithContext(arg0 context.Context, arg1 *xray.UpdateGroupInput, arg2 ...request.Option) (*xray.UpdateGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockXRayAPIMockRecorder) UpdateSamplingRuleRequest(arg0 interface{}) *
 }
 
 // UpdateSamplingRuleWithContext mocks base method
-func (m *MockXRayAPI) UpdateSamplingRuleWithContext(arg0 aws.Context, arg1 *xray.UpdateSamplingRuleInput, arg2 ...request.Option) (*xray.UpdateSamplingRuleOutput, error) {
+func (m *MockXRayAPI) UpdateSamplingRuleWithContext(arg0 context.Context, arg1 *xray.UpdateSamplingRuleInput, arg2 ...request.Option) (*xray.UpdateSamplingRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

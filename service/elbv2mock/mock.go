@@ -5,7 +5,7 @@
 package elbv2mock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elbv2 "github.com/aws/aws-sdk-go/service/elbv2"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockELBV2APIMockRecorder) AddListenerCertificatesRequest(arg0 interfac
 }
 
 // AddListenerCertificatesWithContext mocks base method
-func (m *MockELBV2API) AddListenerCertificatesWithContext(arg0 aws.Context, arg1 *elbv2.AddListenerCertificatesInput, arg2 ...request.Option) (*elbv2.AddListenerCertificatesOutput, error) {
+func (m *MockELBV2API) AddListenerCertificatesWithContext(arg0 context.Context, arg1 *elbv2.AddListenerCertificatesInput, arg2 ...request.Option) (*elbv2.AddListenerCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockELBV2APIMockRecorder) AddTagsRequest(arg0 interface{}) *gomock.Cal
 }
 
 // AddTagsWithContext mocks base method
-func (m *MockELBV2API) AddTagsWithContext(arg0 aws.Context, arg1 *elbv2.AddTagsInput, arg2 ...request.Option) (*elbv2.AddTagsOutput, error) {
+func (m *MockELBV2API) AddTagsWithContext(arg0 context.Context, arg1 *elbv2.AddTagsInput, arg2 ...request.Option) (*elbv2.AddTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockELBV2APIMockRecorder) CreateListenerRequest(arg0 interface{}) *gom
 }
 
 // CreateListenerWithContext mocks base method
-func (m *MockELBV2API) CreateListenerWithContext(arg0 aws.Context, arg1 *elbv2.CreateListenerInput, arg2 ...request.Option) (*elbv2.CreateListenerOutput, error) {
+func (m *MockELBV2API) CreateListenerWithContext(arg0 context.Context, arg1 *elbv2.CreateListenerInput, arg2 ...request.Option) (*elbv2.CreateListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockELBV2APIMockRecorder) CreateLoadBalancerRequest(arg0 interface{}) 
 }
 
 // CreateLoadBalancerWithContext mocks base method
-func (m *MockELBV2API) CreateLoadBalancerWithContext(arg0 aws.Context, arg1 *elbv2.CreateLoadBalancerInput, arg2 ...request.Option) (*elbv2.CreateLoadBalancerOutput, error) {
+func (m *MockELBV2API) CreateLoadBalancerWithContext(arg0 context.Context, arg1 *elbv2.CreateLoadBalancerInput, arg2 ...request.Option) (*elbv2.CreateLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockELBV2APIMockRecorder) CreateRuleRequest(arg0 interface{}) *gomock.
 }
 
 // CreateRuleWithContext mocks base method
-func (m *MockELBV2API) CreateRuleWithContext(arg0 aws.Context, arg1 *elbv2.CreateRuleInput, arg2 ...request.Option) (*elbv2.CreateRuleOutput, error) {
+func (m *MockELBV2API) CreateRuleWithContext(arg0 context.Context, arg1 *elbv2.CreateRuleInput, arg2 ...request.Option) (*elbv2.CreateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockELBV2APIMockRecorder) CreateTargetGroupRequest(arg0 interface{}) *
 }
 
 // CreateTargetGroupWithContext mocks base method
-func (m *MockELBV2API) CreateTargetGroupWithContext(arg0 aws.Context, arg1 *elbv2.CreateTargetGroupInput, arg2 ...request.Option) (*elbv2.CreateTargetGroupOutput, error) {
+func (m *MockELBV2API) CreateTargetGroupWithContext(arg0 context.Context, arg1 *elbv2.CreateTargetGroupInput, arg2 ...request.Option) (*elbv2.CreateTargetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockELBV2APIMockRecorder) DeleteListenerRequest(arg0 interface{}) *gom
 }
 
 // DeleteListenerWithContext mocks base method
-func (m *MockELBV2API) DeleteListenerWithContext(arg0 aws.Context, arg1 *elbv2.DeleteListenerInput, arg2 ...request.Option) (*elbv2.DeleteListenerOutput, error) {
+func (m *MockELBV2API) DeleteListenerWithContext(arg0 context.Context, arg1 *elbv2.DeleteListenerInput, arg2 ...request.Option) (*elbv2.DeleteListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockELBV2APIMockRecorder) DeleteLoadBalancerRequest(arg0 interface{}) 
 }
 
 // DeleteLoadBalancerWithContext mocks base method
-func (m *MockELBV2API) DeleteLoadBalancerWithContext(arg0 aws.Context, arg1 *elbv2.DeleteLoadBalancerInput, arg2 ...request.Option) (*elbv2.DeleteLoadBalancerOutput, error) {
+func (m *MockELBV2API) DeleteLoadBalancerWithContext(arg0 context.Context, arg1 *elbv2.DeleteLoadBalancerInput, arg2 ...request.Option) (*elbv2.DeleteLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockELBV2APIMockRecorder) DeleteRuleRequest(arg0 interface{}) *gomock.
 }
 
 // DeleteRuleWithContext mocks base method
-func (m *MockELBV2API) DeleteRuleWithContext(arg0 aws.Context, arg1 *elbv2.DeleteRuleInput, arg2 ...request.Option) (*elbv2.DeleteRuleOutput, error) {
+func (m *MockELBV2API) DeleteRuleWithContext(arg0 context.Context, arg1 *elbv2.DeleteRuleInput, arg2 ...request.Option) (*elbv2.DeleteRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockELBV2APIMockRecorder) DeleteTargetGroupRequest(arg0 interface{}) *
 }
 
 // DeleteTargetGroupWithContext mocks base method
-func (m *MockELBV2API) DeleteTargetGroupWithContext(arg0 aws.Context, arg1 *elbv2.DeleteTargetGroupInput, arg2 ...request.Option) (*elbv2.DeleteTargetGroupOutput, error) {
+func (m *MockELBV2API) DeleteTargetGroupWithContext(arg0 context.Context, arg1 *elbv2.DeleteTargetGroupInput, arg2 ...request.Option) (*elbv2.DeleteTargetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockELBV2APIMockRecorder) DeregisterTargetsRequest(arg0 interface{}) *
 }
 
 // DeregisterTargetsWithContext mocks base method
-func (m *MockELBV2API) DeregisterTargetsWithContext(arg0 aws.Context, arg1 *elbv2.DeregisterTargetsInput, arg2 ...request.Option) (*elbv2.DeregisterTargetsOutput, error) {
+func (m *MockELBV2API) DeregisterTargetsWithContext(arg0 context.Context, arg1 *elbv2.DeregisterTargetsInput, arg2 ...request.Option) (*elbv2.DeregisterTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeAccountLimitsRequest(arg0 interface{
 }
 
 // DescribeAccountLimitsWithContext mocks base method
-func (m *MockELBV2API) DescribeAccountLimitsWithContext(arg0 aws.Context, arg1 *elbv2.DescribeAccountLimitsInput, arg2 ...request.Option) (*elbv2.DescribeAccountLimitsOutput, error) {
+func (m *MockELBV2API) DescribeAccountLimitsWithContext(arg0 context.Context, arg1 *elbv2.DescribeAccountLimitsInput, arg2 ...request.Option) (*elbv2.DescribeAccountLimitsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeListenerCertificatesRequest(arg0 int
 }
 
 // DescribeListenerCertificatesWithContext mocks base method
-func (m *MockELBV2API) DescribeListenerCertificatesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeListenerCertificatesInput, arg2 ...request.Option) (*elbv2.DescribeListenerCertificatesOutput, error) {
+func (m *MockELBV2API) DescribeListenerCertificatesWithContext(arg0 context.Context, arg1 *elbv2.DescribeListenerCertificatesInput, arg2 ...request.Option) (*elbv2.DescribeListenerCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeListenersPages(arg0, arg1 interface{
 }
 
 // DescribeListenersPagesWithContext mocks base method
-func (m *MockELBV2API) DescribeListenersPagesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeListenersInput, arg2 func(*elbv2.DescribeListenersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockELBV2API) DescribeListenersPagesWithContext(arg0 context.Context, arg1 *elbv2.DescribeListenersInput, arg2 func(*elbv2.DescribeListenersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeListenersRequest(arg0 interface{}) *
 }
 
 // DescribeListenersWithContext mocks base method
-func (m *MockELBV2API) DescribeListenersWithContext(arg0 aws.Context, arg1 *elbv2.DescribeListenersInput, arg2 ...request.Option) (*elbv2.DescribeListenersOutput, error) {
+func (m *MockELBV2API) DescribeListenersWithContext(arg0 context.Context, arg1 *elbv2.DescribeListenersInput, arg2 ...request.Option) (*elbv2.DescribeListenersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -799,7 +799,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeLoadBalancerAttributesRequest(arg0 i
 }
 
 // DescribeLoadBalancerAttributesWithContext mocks base method
-func (m *MockELBV2API) DescribeLoadBalancerAttributesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeLoadBalancerAttributesInput, arg2 ...request.Option) (*elbv2.DescribeLoadBalancerAttributesOutput, error) {
+func (m *MockELBV2API) DescribeLoadBalancerAttributesWithContext(arg0 context.Context, arg1 *elbv2.DescribeLoadBalancerAttributesInput, arg2 ...request.Option) (*elbv2.DescribeLoadBalancerAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -848,7 +848,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeLoadBalancersPages(arg0, arg1 interf
 }
 
 // DescribeLoadBalancersPagesWithContext mocks base method
-func (m *MockELBV2API) DescribeLoadBalancersPagesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 func(*elbv2.DescribeLoadBalancersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockELBV2API) DescribeLoadBalancersPagesWithContext(arg0 context.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 func(*elbv2.DescribeLoadBalancersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -882,7 +882,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeLoadBalancersRequest(arg0 interface{
 }
 
 // DescribeLoadBalancersWithContext mocks base method
-func (m *MockELBV2API) DescribeLoadBalancersWithContext(arg0 aws.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.Option) (*elbv2.DescribeLoadBalancersOutput, error) {
+func (m *MockELBV2API) DescribeLoadBalancersWithContext(arg0 context.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.Option) (*elbv2.DescribeLoadBalancersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -932,7 +932,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeRulesRequest(arg0 interface{}) *gomo
 }
 
 // DescribeRulesWithContext mocks base method
-func (m *MockELBV2API) DescribeRulesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeRulesInput, arg2 ...request.Option) (*elbv2.DescribeRulesOutput, error) {
+func (m *MockELBV2API) DescribeRulesWithContext(arg0 context.Context, arg1 *elbv2.DescribeRulesInput, arg2 ...request.Option) (*elbv2.DescribeRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -982,7 +982,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeSSLPoliciesRequest(arg0 interface{})
 }
 
 // DescribeSSLPoliciesWithContext mocks base method
-func (m *MockELBV2API) DescribeSSLPoliciesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeSSLPoliciesInput, arg2 ...request.Option) (*elbv2.DescribeSSLPoliciesOutput, error) {
+func (m *MockELBV2API) DescribeSSLPoliciesWithContext(arg0 context.Context, arg1 *elbv2.DescribeSSLPoliciesInput, arg2 ...request.Option) (*elbv2.DescribeSSLPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1032,7 +1032,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeTagsRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockELBV2API) DescribeTagsWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTagsInput, arg2 ...request.Option) (*elbv2.DescribeTagsOutput, error) {
+func (m *MockELBV2API) DescribeTagsWithContext(arg0 context.Context, arg1 *elbv2.DescribeTagsInput, arg2 ...request.Option) (*elbv2.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1082,7 +1082,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeTargetGroupAttributesRequest(arg0 in
 }
 
 // DescribeTargetGroupAttributesWithContext mocks base method
-func (m *MockELBV2API) DescribeTargetGroupAttributesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTargetGroupAttributesInput, arg2 ...request.Option) (*elbv2.DescribeTargetGroupAttributesOutput, error) {
+func (m *MockELBV2API) DescribeTargetGroupAttributesWithContext(arg0 context.Context, arg1 *elbv2.DescribeTargetGroupAttributesInput, arg2 ...request.Option) (*elbv2.DescribeTargetGroupAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeTargetGroupsPages(arg0, arg1 interfa
 }
 
 // DescribeTargetGroupsPagesWithContext mocks base method
-func (m *MockELBV2API) DescribeTargetGroupsPagesWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTargetGroupsInput, arg2 func(*elbv2.DescribeTargetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockELBV2API) DescribeTargetGroupsPagesWithContext(arg0 context.Context, arg1 *elbv2.DescribeTargetGroupsInput, arg2 func(*elbv2.DescribeTargetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeTargetGroupsRequest(arg0 interface{}
 }
 
 // DescribeTargetGroupsWithContext mocks base method
-func (m *MockELBV2API) DescribeTargetGroupsWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTargetGroupsInput, arg2 ...request.Option) (*elbv2.DescribeTargetGroupsOutput, error) {
+func (m *MockELBV2API) DescribeTargetGroupsWithContext(arg0 context.Context, arg1 *elbv2.DescribeTargetGroupsInput, arg2 ...request.Option) (*elbv2.DescribeTargetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockELBV2APIMockRecorder) DescribeTargetHealthRequest(arg0 interface{}
 }
 
 // DescribeTargetHealthWithContext mocks base method
-func (m *MockELBV2API) DescribeTargetHealthWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTargetHealthInput, arg2 ...request.Option) (*elbv2.DescribeTargetHealthOutput, error) {
+func (m *MockELBV2API) DescribeTargetHealthWithContext(arg0 context.Context, arg1 *elbv2.DescribeTargetHealthInput, arg2 ...request.Option) (*elbv2.DescribeTargetHealthOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1265,7 +1265,7 @@ func (mr *MockELBV2APIMockRecorder) ModifyListenerRequest(arg0 interface{}) *gom
 }
 
 // ModifyListenerWithContext mocks base method
-func (m *MockELBV2API) ModifyListenerWithContext(arg0 aws.Context, arg1 *elbv2.ModifyListenerInput, arg2 ...request.Option) (*elbv2.ModifyListenerOutput, error) {
+func (m *MockELBV2API) ModifyListenerWithContext(arg0 context.Context, arg1 *elbv2.ModifyListenerInput, arg2 ...request.Option) (*elbv2.ModifyListenerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockELBV2APIMockRecorder) ModifyLoadBalancerAttributesRequest(arg0 int
 }
 
 // ModifyLoadBalancerAttributesWithContext mocks base method
-func (m *MockELBV2API) ModifyLoadBalancerAttributesWithContext(arg0 aws.Context, arg1 *elbv2.ModifyLoadBalancerAttributesInput, arg2 ...request.Option) (*elbv2.ModifyLoadBalancerAttributesOutput, error) {
+func (m *MockELBV2API) ModifyLoadBalancerAttributesWithContext(arg0 context.Context, arg1 *elbv2.ModifyLoadBalancerAttributesInput, arg2 ...request.Option) (*elbv2.ModifyLoadBalancerAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockELBV2APIMockRecorder) ModifyRuleRequest(arg0 interface{}) *gomock.
 }
 
 // ModifyRuleWithContext mocks base method
-func (m *MockELBV2API) ModifyRuleWithContext(arg0 aws.Context, arg1 *elbv2.ModifyRuleInput, arg2 ...request.Option) (*elbv2.ModifyRuleOutput, error) {
+func (m *MockELBV2API) ModifyRuleWithContext(arg0 context.Context, arg1 *elbv2.ModifyRuleInput, arg2 ...request.Option) (*elbv2.ModifyRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1430,7 +1430,7 @@ func (mr *MockELBV2APIMockRecorder) ModifyTargetGroupAttributesRequest(arg0 inte
 }
 
 // ModifyTargetGroupAttributesWithContext mocks base method
-func (m *MockELBV2API) ModifyTargetGroupAttributesWithContext(arg0 aws.Context, arg1 *elbv2.ModifyTargetGroupAttributesInput, arg2 ...request.Option) (*elbv2.ModifyTargetGroupAttributesOutput, error) {
+func (m *MockELBV2API) ModifyTargetGroupAttributesWithContext(arg0 context.Context, arg1 *elbv2.ModifyTargetGroupAttributesInput, arg2 ...request.Option) (*elbv2.ModifyTargetGroupAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1465,7 +1465,7 @@ func (mr *MockELBV2APIMockRecorder) ModifyTargetGroupRequest(arg0 interface{}) *
 }
 
 // ModifyTargetGroupWithContext mocks base method
-func (m *MockELBV2API) ModifyTargetGroupWithContext(arg0 aws.Context, arg1 *elbv2.ModifyTargetGroupInput, arg2 ...request.Option) (*elbv2.ModifyTargetGroupOutput, error) {
+func (m *MockELBV2API) ModifyTargetGroupWithContext(arg0 context.Context, arg1 *elbv2.ModifyTargetGroupInput, arg2 ...request.Option) (*elbv2.ModifyTargetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1515,7 +1515,7 @@ func (mr *MockELBV2APIMockRecorder) RegisterTargetsRequest(arg0 interface{}) *go
 }
 
 // RegisterTargetsWithContext mocks base method
-func (m *MockELBV2API) RegisterTargetsWithContext(arg0 aws.Context, arg1 *elbv2.RegisterTargetsInput, arg2 ...request.Option) (*elbv2.RegisterTargetsOutput, error) {
+func (m *MockELBV2API) RegisterTargetsWithContext(arg0 context.Context, arg1 *elbv2.RegisterTargetsInput, arg2 ...request.Option) (*elbv2.RegisterTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1565,7 +1565,7 @@ func (mr *MockELBV2APIMockRecorder) RemoveListenerCertificatesRequest(arg0 inter
 }
 
 // RemoveListenerCertificatesWithContext mocks base method
-func (m *MockELBV2API) RemoveListenerCertificatesWithContext(arg0 aws.Context, arg1 *elbv2.RemoveListenerCertificatesInput, arg2 ...request.Option) (*elbv2.RemoveListenerCertificatesOutput, error) {
+func (m *MockELBV2API) RemoveListenerCertificatesWithContext(arg0 context.Context, arg1 *elbv2.RemoveListenerCertificatesInput, arg2 ...request.Option) (*elbv2.RemoveListenerCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1615,7 +1615,7 @@ func (mr *MockELBV2APIMockRecorder) RemoveTagsRequest(arg0 interface{}) *gomock.
 }
 
 // RemoveTagsWithContext mocks base method
-func (m *MockELBV2API) RemoveTagsWithContext(arg0 aws.Context, arg1 *elbv2.RemoveTagsInput, arg2 ...request.Option) (*elbv2.RemoveTagsOutput, error) {
+func (m *MockELBV2API) RemoveTagsWithContext(arg0 context.Context, arg1 *elbv2.RemoveTagsInput, arg2 ...request.Option) (*elbv2.RemoveTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1665,7 +1665,7 @@ func (mr *MockELBV2APIMockRecorder) SetIpAddressTypeRequest(arg0 interface{}) *g
 }
 
 // SetIpAddressTypeWithContext mocks base method
-func (m *MockELBV2API) SetIpAddressTypeWithContext(arg0 aws.Context, arg1 *elbv2.SetIpAddressTypeInput, arg2 ...request.Option) (*elbv2.SetIpAddressTypeOutput, error) {
+func (m *MockELBV2API) SetIpAddressTypeWithContext(arg0 context.Context, arg1 *elbv2.SetIpAddressTypeInput, arg2 ...request.Option) (*elbv2.SetIpAddressTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1715,7 +1715,7 @@ func (mr *MockELBV2APIMockRecorder) SetRulePrioritiesRequest(arg0 interface{}) *
 }
 
 // SetRulePrioritiesWithContext mocks base method
-func (m *MockELBV2API) SetRulePrioritiesWithContext(arg0 aws.Context, arg1 *elbv2.SetRulePrioritiesInput, arg2 ...request.Option) (*elbv2.SetRulePrioritiesOutput, error) {
+func (m *MockELBV2API) SetRulePrioritiesWithContext(arg0 context.Context, arg1 *elbv2.SetRulePrioritiesInput, arg2 ...request.Option) (*elbv2.SetRulePrioritiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1765,7 +1765,7 @@ func (mr *MockELBV2APIMockRecorder) SetSecurityGroupsRequest(arg0 interface{}) *
 }
 
 // SetSecurityGroupsWithContext mocks base method
-func (m *MockELBV2API) SetSecurityGroupsWithContext(arg0 aws.Context, arg1 *elbv2.SetSecurityGroupsInput, arg2 ...request.Option) (*elbv2.SetSecurityGroupsOutput, error) {
+func (m *MockELBV2API) SetSecurityGroupsWithContext(arg0 context.Context, arg1 *elbv2.SetSecurityGroupsInput, arg2 ...request.Option) (*elbv2.SetSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1815,7 +1815,7 @@ func (mr *MockELBV2APIMockRecorder) SetSubnetsRequest(arg0 interface{}) *gomock.
 }
 
 // SetSubnetsWithContext mocks base method
-func (m *MockELBV2API) SetSubnetsWithContext(arg0 aws.Context, arg1 *elbv2.SetSubnetsInput, arg2 ...request.Option) (*elbv2.SetSubnetsOutput, error) {
+func (m *MockELBV2API) SetSubnetsWithContext(arg0 context.Context, arg1 *elbv2.SetSubnetsInput, arg2 ...request.Option) (*elbv2.SetSubnetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1849,7 +1849,7 @@ func (mr *MockELBV2APIMockRecorder) WaitUntilLoadBalancerAvailable(arg0 interfac
 }
 
 // WaitUntilLoadBalancerAvailableWithContext mocks base method
-func (m *MockELBV2API) WaitUntilLoadBalancerAvailableWithContext(arg0 aws.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.WaiterOption) error {
+func (m *MockELBV2API) WaitUntilLoadBalancerAvailableWithContext(arg0 context.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1882,7 +1882,7 @@ func (mr *MockELBV2APIMockRecorder) WaitUntilLoadBalancerExists(arg0 interface{}
 }
 
 // WaitUntilLoadBalancerExistsWithContext mocks base method
-func (m *MockELBV2API) WaitUntilLoadBalancerExistsWithContext(arg0 aws.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.WaiterOption) error {
+func (m *MockELBV2API) WaitUntilLoadBalancerExistsWithContext(arg0 context.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1915,7 +1915,7 @@ func (mr *MockELBV2APIMockRecorder) WaitUntilLoadBalancersDeleted(arg0 interface
 }
 
 // WaitUntilLoadBalancersDeletedWithContext mocks base method
-func (m *MockELBV2API) WaitUntilLoadBalancersDeletedWithContext(arg0 aws.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.WaiterOption) error {
+func (m *MockELBV2API) WaitUntilLoadBalancersDeletedWithContext(arg0 context.Context, arg1 *elbv2.DescribeLoadBalancersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1948,7 +1948,7 @@ func (mr *MockELBV2APIMockRecorder) WaitUntilTargetDeregistered(arg0 interface{}
 }
 
 // WaitUntilTargetDeregisteredWithContext mocks base method
-func (m *MockELBV2API) WaitUntilTargetDeregisteredWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTargetHealthInput, arg2 ...request.WaiterOption) error {
+func (m *MockELBV2API) WaitUntilTargetDeregisteredWithContext(arg0 context.Context, arg1 *elbv2.DescribeTargetHealthInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1981,7 +1981,7 @@ func (mr *MockELBV2APIMockRecorder) WaitUntilTargetInService(arg0 interface{}) *
 }
 
 // WaitUntilTargetInServiceWithContext mocks base method
-func (m *MockELBV2API) WaitUntilTargetInServiceWithContext(arg0 aws.Context, arg1 *elbv2.DescribeTargetHealthInput, arg2 ...request.WaiterOption) error {
+func (m *MockELBV2API) WaitUntilTargetInServiceWithContext(arg0 context.Context, arg1 *elbv2.DescribeTargetHealthInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package databasemigrationservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	databasemigrationservice "github.com/aws/aws-sdk-go/service/databasemigrationservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) AddTagsToResourceRequest(
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.AddTagsToResourceInput, arg2 ...request.Option) (*databasemigrationservice.AddTagsToResourceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *databasemigrationservice.AddTagsToResourceInput, arg2 ...request.Option) (*databasemigrationservice.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateEndpointRequest(arg
 }
 
 // CreateEndpointWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) CreateEndpointWithContext(arg0 aws.Context, arg1 *databasemigrationservice.CreateEndpointInput, arg2 ...request.Option) (*databasemigrationservice.CreateEndpointOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) CreateEndpointWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateEndpointInput, arg2 ...request.Option) (*databasemigrationservice.CreateEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateEventSubscriptionRe
 }
 
 // CreateEventSubscriptionWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) CreateEventSubscriptionWithContext(arg0 aws.Context, arg1 *databasemigrationservice.CreateEventSubscriptionInput, arg2 ...request.Option) (*databasemigrationservice.CreateEventSubscriptionOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) CreateEventSubscriptionWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateEventSubscriptionInput, arg2 ...request.Option) (*databasemigrationservice.CreateEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateReplicationInstance
 }
 
 // CreateReplicationInstanceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) CreateReplicationInstanceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.CreateReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationInstanceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) CreateReplicationInstanceWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateReplicationSubnetGr
 }
 
 // CreateReplicationSubnetGroupWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) CreateReplicationSubnetGroupWithContext(arg0 aws.Context, arg1 *databasemigrationservice.CreateReplicationSubnetGroupInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationSubnetGroupOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) CreateReplicationSubnetGroupWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateReplicationSubnetGroupInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateReplicationTaskRequ
 }
 
 // CreateReplicationTaskWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) CreateReplicationTaskWithContext(arg0 aws.Context, arg1 *databasemigrationservice.CreateReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationTaskOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) CreateReplicationTaskWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteCertificateRequest(
 }
 
 // DeleteCertificateWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DeleteCertificateWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DeleteCertificateInput, arg2 ...request.Option) (*databasemigrationservice.DeleteCertificateOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DeleteCertificateWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteCertificateInput, arg2 ...request.Option) (*databasemigrationservice.DeleteCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteEndpointRequest(arg
 }
 
 // DeleteEndpointWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DeleteEndpointWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DeleteEndpointInput, arg2 ...request.Option) (*databasemigrationservice.DeleteEndpointOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DeleteEndpointWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteEndpointInput, arg2 ...request.Option) (*databasemigrationservice.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteEventSubscriptionRe
 }
 
 // DeleteEventSubscriptionWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DeleteEventSubscriptionWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DeleteEventSubscriptionInput, arg2 ...request.Option) (*databasemigrationservice.DeleteEventSubscriptionOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DeleteEventSubscriptionWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteEventSubscriptionInput, arg2 ...request.Option) (*databasemigrationservice.DeleteEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteReplicationInstance
 }
 
 // DeleteReplicationInstanceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationInstanceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DeleteReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationInstanceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationInstanceWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteReplicationSubnetGr
 }
 
 // DeleteReplicationSubnetGroupWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationSubnetGroupWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DeleteReplicationSubnetGroupInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationSubnetGroupOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationSubnetGroupWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteReplicationSubnetGroupInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteReplicationTaskRequ
 }
 
 // DeleteReplicationTaskWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationTaskWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DeleteReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationTaskOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationTaskWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeAccountAttributes
 }
 
 // DescribeAccountAttributesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeAccountAttributesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeAccountAttributesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeAccountAttributesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeAccountAttributesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeCertificatesPages
 }
 
 // DescribeCertificatesPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeCertificatesPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeCertificatesInput, arg2 func(*databasemigrationservice.DescribeCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeCertificatesPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeCertificatesInput, arg2 func(*databasemigrationservice.DescribeCertificatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeCertificatesReque
 }
 
 // DescribeCertificatesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeCertificatesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeCertificatesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeCertificatesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeCertificatesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeCertificatesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeConnectionsPages(
 }
 
 // DescribeConnectionsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeConnectionsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 func(*databasemigrationservice.DescribeConnectionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeConnectionsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 func(*databasemigrationservice.DescribeConnectionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -832,7 +832,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeConnectionsReques
 }
 
 // DescribeConnectionsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeConnectionsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeConnectionsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeConnectionsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeConnectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointTypesPage
 }
 
 // DescribeEndpointTypesPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointTypesPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEndpointTypesInput, arg2 func(*databasemigrationservice.DescribeEndpointTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointTypesPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointTypesInput, arg2 func(*databasemigrationservice.DescribeEndpointTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -915,7 +915,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointTypesRequ
 }
 
 // DescribeEndpointTypesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointTypesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEndpointTypesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEndpointTypesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointTypesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointTypesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEndpointTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -964,7 +964,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointsPages(ar
 }
 
 // DescribeEndpointsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 func(*databasemigrationservice.DescribeEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 func(*databasemigrationservice.DescribeEndpointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -998,7 +998,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointsRequest(
 }
 
 // DescribeEndpointsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEndpointsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEventCategoriesRe
 }
 
 // DescribeEventCategoriesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEventCategoriesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEventCategoriesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEventCategoriesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEventCategoriesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEventCategoriesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEventCategoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1097,7 +1097,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEventSubscription
 }
 
 // DescribeEventSubscriptionsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEventSubscriptionsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEventSubscriptionsInput, arg2 func(*databasemigrationservice.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEventSubscriptionsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEventSubscriptionsInput, arg2 func(*databasemigrationservice.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1131,7 +1131,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEventSubscription
 }
 
 // DescribeEventSubscriptionsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEventSubscriptionsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEventSubscriptionsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEventSubscriptionsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEventSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1180,7 +1180,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEventsPages(arg0,
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEventsInput, arg2 func(*databasemigrationservice.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEventsInput, arg2 func(*databasemigrationservice.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1214,7 +1214,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEventsRequest(arg
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEventsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEventsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEventsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1263,7 +1263,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeOrderableReplicat
 }
 
 // DescribeOrderableReplicationInstancesPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeOrderableReplicationInstancesPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeOrderableReplicationInstancesInput, arg2 func(*databasemigrationservice.DescribeOrderableReplicationInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeOrderableReplicationInstancesPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeOrderableReplicationInstancesInput, arg2 func(*databasemigrationservice.DescribeOrderableReplicationInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1297,7 +1297,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeOrderableReplicat
 }
 
 // DescribeOrderableReplicationInstancesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeOrderableReplicationInstancesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeOrderableReplicationInstancesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeOrderableReplicationInstancesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeOrderableReplicationInstancesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeOrderableReplicationInstancesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeOrderableReplicationInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1347,7 +1347,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeRefreshSchemasSta
 }
 
 // DescribeRefreshSchemasStatusWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeRefreshSchemasStatusWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeRefreshSchemasStatusInput, arg2 ...request.Option) (*databasemigrationservice.DescribeRefreshSchemasStatusOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeRefreshSchemasStatusWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeRefreshSchemasStatusInput, arg2 ...request.Option) (*databasemigrationservice.DescribeRefreshSchemasStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1396,7 +1396,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationInstan
 }
 
 // DescribeReplicationInstanceTaskLogsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstanceTaskLogsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstanceTaskLogsInput, arg2 func(*databasemigrationservice.DescribeReplicationInstanceTaskLogsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstanceTaskLogsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationInstanceTaskLogsInput, arg2 func(*databasemigrationservice.DescribeReplicationInstanceTaskLogsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1430,7 +1430,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationInstan
 }
 
 // DescribeReplicationInstanceTaskLogsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstanceTaskLogsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstanceTaskLogsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationInstanceTaskLogsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstanceTaskLogsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationInstanceTaskLogsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationInstanceTaskLogsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1479,7 +1479,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationInstan
 }
 
 // DescribeReplicationInstancesPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstancesPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 func(*databasemigrationservice.DescribeReplicationInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstancesPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 func(*databasemigrationservice.DescribeReplicationInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1513,7 +1513,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationInstan
 }
 
 // DescribeReplicationInstancesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstancesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationInstancesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstancesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1562,7 +1562,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationSubnet
 }
 
 // DescribeReplicationSubnetGroupsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationSubnetGroupsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationSubnetGroupsInput, arg2 func(*databasemigrationservice.DescribeReplicationSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationSubnetGroupsInput, arg2 func(*databasemigrationservice.DescribeReplicationSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1596,7 +1596,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationSubnet
 }
 
 // DescribeReplicationSubnetGroupsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationSubnetGroupsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationSubnetGroupsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationSubnetGroupsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationSubnetGroupsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationSubnetGroupsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1645,7 +1645,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTaskAs
 }
 
 // DescribeReplicationTaskAssessmentResultsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTaskAssessmentResultsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTaskAssessmentResultsInput, arg2 func(*databasemigrationservice.DescribeReplicationTaskAssessmentResultsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTaskAssessmentResultsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTaskAssessmentResultsInput, arg2 func(*databasemigrationservice.DescribeReplicationTaskAssessmentResultsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1679,7 +1679,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTaskAs
 }
 
 // DescribeReplicationTaskAssessmentResultsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTaskAssessmentResultsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTaskAssessmentResultsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationTaskAssessmentResultsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTaskAssessmentResultsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTaskAssessmentResultsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationTaskAssessmentResultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1728,7 +1728,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTasksP
 }
 
 // DescribeReplicationTasksPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTasksPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 func(*databasemigrationservice.DescribeReplicationTasksOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTasksPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 func(*databasemigrationservice.DescribeReplicationTasksOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1762,7 +1762,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTasksR
 }
 
 // DescribeReplicationTasksWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTasksWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationTasksOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTasksWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationTasksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1811,7 +1811,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeSchemasPages(arg0
 }
 
 // DescribeSchemasPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeSchemasPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeSchemasInput, arg2 func(*databasemigrationservice.DescribeSchemasOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeSchemasPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeSchemasInput, arg2 func(*databasemigrationservice.DescribeSchemasOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1845,7 +1845,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeSchemasRequest(ar
 }
 
 // DescribeSchemasWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeSchemasWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeSchemasInput, arg2 ...request.Option) (*databasemigrationservice.DescribeSchemasOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeSchemasWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeSchemasInput, arg2 ...request.Option) (*databasemigrationservice.DescribeSchemasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1894,7 +1894,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeTableStatisticsPa
 }
 
 // DescribeTableStatisticsPagesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeTableStatisticsPagesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeTableStatisticsInput, arg2 func(*databasemigrationservice.DescribeTableStatisticsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockDatabaseMigrationServiceAPI) DescribeTableStatisticsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeTableStatisticsInput, arg2 func(*databasemigrationservice.DescribeTableStatisticsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1928,7 +1928,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeTableStatisticsRe
 }
 
 // DescribeTableStatisticsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) DescribeTableStatisticsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeTableStatisticsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeTableStatisticsOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) DescribeTableStatisticsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeTableStatisticsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeTableStatisticsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1978,7 +1978,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ImportCertificateRequest(
 }
 
 // ImportCertificateWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ImportCertificateWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ImportCertificateInput, arg2 ...request.Option) (*databasemigrationservice.ImportCertificateOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ImportCertificateWithContext(arg0 context.Context, arg1 *databasemigrationservice.ImportCertificateInput, arg2 ...request.Option) (*databasemigrationservice.ImportCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2028,7 +2028,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ListTagsForResourceReques
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ListTagsForResourceInput, arg2 ...request.Option) (*databasemigrationservice.ListTagsForResourceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *databasemigrationservice.ListTagsForResourceInput, arg2 ...request.Option) (*databasemigrationservice.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2078,7 +2078,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyEndpointRequest(arg
 }
 
 // ModifyEndpointWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ModifyEndpointWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ModifyEndpointInput, arg2 ...request.Option) (*databasemigrationservice.ModifyEndpointOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ModifyEndpointWithContext(arg0 context.Context, arg1 *databasemigrationservice.ModifyEndpointInput, arg2 ...request.Option) (*databasemigrationservice.ModifyEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2128,7 +2128,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyEventSubscriptionRe
 }
 
 // ModifyEventSubscriptionWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ModifyEventSubscriptionWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ModifyEventSubscriptionInput, arg2 ...request.Option) (*databasemigrationservice.ModifyEventSubscriptionOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ModifyEventSubscriptionWithContext(arg0 context.Context, arg1 *databasemigrationservice.ModifyEventSubscriptionInput, arg2 ...request.Option) (*databasemigrationservice.ModifyEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2178,7 +2178,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationInstance
 }
 
 // ModifyReplicationInstanceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationInstanceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ModifyReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationInstanceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationInstanceWithContext(arg0 context.Context, arg1 *databasemigrationservice.ModifyReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2228,7 +2228,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationSubnetGr
 }
 
 // ModifyReplicationSubnetGroupWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationSubnetGroupWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ModifyReplicationSubnetGroupInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationSubnetGroupOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationSubnetGroupWithContext(arg0 context.Context, arg1 *databasemigrationservice.ModifyReplicationSubnetGroupInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2278,7 +2278,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationTaskRequ
 }
 
 // ModifyReplicationTaskWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationTaskWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ModifyReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationTaskOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationTaskWithContext(arg0 context.Context, arg1 *databasemigrationservice.ModifyReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2328,7 +2328,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RebootReplicationInstance
 }
 
 // RebootReplicationInstanceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) RebootReplicationInstanceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.RebootReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.RebootReplicationInstanceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) RebootReplicationInstanceWithContext(arg0 context.Context, arg1 *databasemigrationservice.RebootReplicationInstanceInput, arg2 ...request.Option) (*databasemigrationservice.RebootReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2378,7 +2378,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RefreshSchemasRequest(arg
 }
 
 // RefreshSchemasWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) RefreshSchemasWithContext(arg0 aws.Context, arg1 *databasemigrationservice.RefreshSchemasInput, arg2 ...request.Option) (*databasemigrationservice.RefreshSchemasOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) RefreshSchemasWithContext(arg0 context.Context, arg1 *databasemigrationservice.RefreshSchemasInput, arg2 ...request.Option) (*databasemigrationservice.RefreshSchemasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2428,7 +2428,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ReloadTablesRequest(arg0 
 }
 
 // ReloadTablesWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) ReloadTablesWithContext(arg0 aws.Context, arg1 *databasemigrationservice.ReloadTablesInput, arg2 ...request.Option) (*databasemigrationservice.ReloadTablesOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) ReloadTablesWithContext(arg0 context.Context, arg1 *databasemigrationservice.ReloadTablesInput, arg2 ...request.Option) (*databasemigrationservice.ReloadTablesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2478,7 +2478,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RemoveTagsFromResourceReq
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *databasemigrationservice.RemoveTagsFromResourceInput, arg2 ...request.Option) (*databasemigrationservice.RemoveTagsFromResourceOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *databasemigrationservice.RemoveTagsFromResourceInput, arg2 ...request.Option) (*databasemigrationservice.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2543,7 +2543,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartReplicationTaskAsses
 }
 
 // StartReplicationTaskAssessmentWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) StartReplicationTaskAssessmentWithContext(arg0 aws.Context, arg1 *databasemigrationservice.StartReplicationTaskAssessmentInput, arg2 ...request.Option) (*databasemigrationservice.StartReplicationTaskAssessmentOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) StartReplicationTaskAssessmentWithContext(arg0 context.Context, arg1 *databasemigrationservice.StartReplicationTaskAssessmentInput, arg2 ...request.Option) (*databasemigrationservice.StartReplicationTaskAssessmentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2578,7 +2578,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartReplicationTaskReque
 }
 
 // StartReplicationTaskWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) StartReplicationTaskWithContext(arg0 aws.Context, arg1 *databasemigrationservice.StartReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.StartReplicationTaskOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) StartReplicationTaskWithContext(arg0 context.Context, arg1 *databasemigrationservice.StartReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.StartReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2628,7 +2628,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StopReplicationTaskReques
 }
 
 // StopReplicationTaskWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) StopReplicationTaskWithContext(arg0 aws.Context, arg1 *databasemigrationservice.StopReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.StopReplicationTaskOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) StopReplicationTaskWithContext(arg0 context.Context, arg1 *databasemigrationservice.StopReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.StopReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2678,7 +2678,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) TestConnectionRequest(arg
 }
 
 // TestConnectionWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) TestConnectionWithContext(arg0 aws.Context, arg1 *databasemigrationservice.TestConnectionInput, arg2 ...request.Option) (*databasemigrationservice.TestConnectionOutput, error) {
+func (m *MockDatabaseMigrationServiceAPI) TestConnectionWithContext(arg0 context.Context, arg1 *databasemigrationservice.TestConnectionInput, arg2 ...request.Option) (*databasemigrationservice.TestConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2712,7 +2712,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilEndpointDeleted(
 }
 
 // WaitUntilEndpointDeletedWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilEndpointDeletedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilEndpointDeletedWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2745,7 +2745,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationInsta
 }
 
 // WaitUntilReplicationInstanceAvailableWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceAvailableWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceAvailableWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2778,7 +2778,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationInsta
 }
 
 // WaitUntilReplicationInstanceDeletedWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceDeletedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationInstanceDeletedWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2811,7 +2811,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskD
 }
 
 // WaitUntilReplicationTaskDeletedWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskDeletedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskDeletedWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2844,7 +2844,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskR
 }
 
 // WaitUntilReplicationTaskReadyWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskReadyWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskReadyWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2877,7 +2877,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskR
 }
 
 // WaitUntilReplicationTaskRunningWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskRunningWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskRunningWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2910,7 +2910,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilReplicationTaskS
 }
 
 // WaitUntilReplicationTaskStoppedWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskStoppedWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilReplicationTaskStoppedWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTasksInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2943,7 +2943,7 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) WaitUntilTestConnectionSu
 }
 
 // WaitUntilTestConnectionSucceedsWithContext mocks base method
-func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceedsWithContext(arg0 aws.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 ...request.WaiterOption) error {
+func (m *MockDatabaseMigrationServiceAPI) WaitUntilTestConnectionSucceedsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeConnectionsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

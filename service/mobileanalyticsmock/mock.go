@@ -5,7 +5,7 @@
 package mobileanalyticsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mobileanalytics "github.com/aws/aws-sdk-go/service/mobileanalytics"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMobileAnalyticsAPIMockRecorder) PutEventsRequest(arg0 interface{})
 }
 
 // PutEventsWithContext mocks base method
-func (m *MockMobileAnalyticsAPI) PutEventsWithContext(arg0 aws.Context, arg1 *mobileanalytics.PutEventsInput, arg2 ...request.Option) (*mobileanalytics.PutEventsOutput, error) {
+func (m *MockMobileAnalyticsAPI) PutEventsWithContext(arg0 context.Context, arg1 *mobileanalytics.PutEventsInput, arg2 ...request.Option) (*mobileanalytics.PutEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

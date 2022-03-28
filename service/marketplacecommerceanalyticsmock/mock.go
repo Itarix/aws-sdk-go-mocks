@@ -5,7 +5,7 @@
 package marketplacecommerceanalyticsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	marketplacecommerceanalytics "github.com/aws/aws-sdk-go/service/marketplacecommerceanalytics"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) GenerateDataSetReques
 }
 
 // GenerateDataSetWithContext mocks base method
-func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetWithContext(arg0 aws.Context, arg1 *marketplacecommerceanalytics.GenerateDataSetInput, arg2 ...request.Option) (*marketplacecommerceanalytics.GenerateDataSetOutput, error) {
+func (m *MockMarketplaceCommerceAnalyticsAPI) GenerateDataSetWithContext(arg0 context.Context, arg1 *marketplacecommerceanalytics.GenerateDataSetInput, arg2 ...request.Option) (*marketplacecommerceanalytics.GenerateDataSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMarketplaceCommerceAnalyticsAPIMockRecorder) StartSupportDataExpor
 }
 
 // StartSupportDataExportWithContext mocks base method
-func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportWithContext(arg0 aws.Context, arg1 *marketplacecommerceanalytics.StartSupportDataExportInput, arg2 ...request.Option) (*marketplacecommerceanalytics.StartSupportDataExportOutput, error) {
+func (m *MockMarketplaceCommerceAnalyticsAPI) StartSupportDataExportWithContext(arg0 context.Context, arg1 *marketplacecommerceanalytics.StartSupportDataExportInput, arg2 ...request.Option) (*marketplacecommerceanalytics.StartSupportDataExportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

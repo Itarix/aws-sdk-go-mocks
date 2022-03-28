@@ -5,7 +5,7 @@
 package licensemanagermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	licensemanager "github.com/aws/aws-sdk-go/service/licensemanager"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) CreateLicenseConfigurationRequest(a
 }
 
 // CreateLicenseConfigurationWithContext mocks base method
-func (m *MockLicenseManagerAPI) CreateLicenseConfigurationWithContext(arg0 aws.Context, arg1 *licensemanager.CreateLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.CreateLicenseConfigurationOutput, error) {
+func (m *MockLicenseManagerAPI) CreateLicenseConfigurationWithContext(arg0 context.Context, arg1 *licensemanager.CreateLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.CreateLicenseConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) DeleteLicenseConfigurationRequest(a
 }
 
 // DeleteLicenseConfigurationWithContext mocks base method
-func (m *MockLicenseManagerAPI) DeleteLicenseConfigurationWithContext(arg0 aws.Context, arg1 *licensemanager.DeleteLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.DeleteLicenseConfigurationOutput, error) {
+func (m *MockLicenseManagerAPI) DeleteLicenseConfigurationWithContext(arg0 context.Context, arg1 *licensemanager.DeleteLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.DeleteLicenseConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) GetLicenseConfigurationRequest(arg0
 }
 
 // GetLicenseConfigurationWithContext mocks base method
-func (m *MockLicenseManagerAPI) GetLicenseConfigurationWithContext(arg0 aws.Context, arg1 *licensemanager.GetLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.GetLicenseConfigurationOutput, error) {
+func (m *MockLicenseManagerAPI) GetLicenseConfigurationWithContext(arg0 context.Context, arg1 *licensemanager.GetLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.GetLicenseConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) GetServiceSettingsRequest(arg0 inte
 }
 
 // GetServiceSettingsWithContext mocks base method
-func (m *MockLicenseManagerAPI) GetServiceSettingsWithContext(arg0 aws.Context, arg1 *licensemanager.GetServiceSettingsInput, arg2 ...request.Option) (*licensemanager.GetServiceSettingsOutput, error) {
+func (m *MockLicenseManagerAPI) GetServiceSettingsWithContext(arg0 context.Context, arg1 *licensemanager.GetServiceSettingsInput, arg2 ...request.Option) (*licensemanager.GetServiceSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListAssociationsForLicenseConfigura
 }
 
 // ListAssociationsForLicenseConfigurationWithContext mocks base method
-func (m *MockLicenseManagerAPI) ListAssociationsForLicenseConfigurationWithContext(arg0 aws.Context, arg1 *licensemanager.ListAssociationsForLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.ListAssociationsForLicenseConfigurationOutput, error) {
+func (m *MockLicenseManagerAPI) ListAssociationsForLicenseConfigurationWithContext(arg0 context.Context, arg1 *licensemanager.ListAssociationsForLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.ListAssociationsForLicenseConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListLicenseConfigurationsRequest(ar
 }
 
 // ListLicenseConfigurationsWithContext mocks base method
-func (m *MockLicenseManagerAPI) ListLicenseConfigurationsWithContext(arg0 aws.Context, arg1 *licensemanager.ListLicenseConfigurationsInput, arg2 ...request.Option) (*licensemanager.ListLicenseConfigurationsOutput, error) {
+func (m *MockLicenseManagerAPI) ListLicenseConfigurationsWithContext(arg0 context.Context, arg1 *licensemanager.ListLicenseConfigurationsInput, arg2 ...request.Option) (*licensemanager.ListLicenseConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListLicenseSpecificationsForResourc
 }
 
 // ListLicenseSpecificationsForResourceWithContext mocks base method
-func (m *MockLicenseManagerAPI) ListLicenseSpecificationsForResourceWithContext(arg0 aws.Context, arg1 *licensemanager.ListLicenseSpecificationsForResourceInput, arg2 ...request.Option) (*licensemanager.ListLicenseSpecificationsForResourceOutput, error) {
+func (m *MockLicenseManagerAPI) ListLicenseSpecificationsForResourceWithContext(arg0 context.Context, arg1 *licensemanager.ListLicenseSpecificationsForResourceInput, arg2 ...request.Option) (*licensemanager.ListLicenseSpecificationsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListResourceInventoryRequest(arg0 i
 }
 
 // ListResourceInventoryWithContext mocks base method
-func (m *MockLicenseManagerAPI) ListResourceInventoryWithContext(arg0 aws.Context, arg1 *licensemanager.ListResourceInventoryInput, arg2 ...request.Option) (*licensemanager.ListResourceInventoryOutput, error) {
+func (m *MockLicenseManagerAPI) ListResourceInventoryWithContext(arg0 context.Context, arg1 *licensemanager.ListResourceInventoryInput, arg2 ...request.Option) (*licensemanager.ListResourceInventoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListTagsForResourceRequest(arg0 int
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockLicenseManagerAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *licensemanager.ListTagsForResourceInput, arg2 ...request.Option) (*licensemanager.ListTagsForResourceOutput, error) {
+func (m *MockLicenseManagerAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *licensemanager.ListTagsForResourceInput, arg2 ...request.Option) (*licensemanager.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListUsageForLicenseConfigurationReq
 }
 
 // ListUsageForLicenseConfigurationWithContext mocks base method
-func (m *MockLicenseManagerAPI) ListUsageForLicenseConfigurationWithContext(arg0 aws.Context, arg1 *licensemanager.ListUsageForLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.ListUsageForLicenseConfigurationOutput, error) {
+func (m *MockLicenseManagerAPI) ListUsageForLicenseConfigurationWithContext(arg0 context.Context, arg1 *licensemanager.ListUsageForLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.ListUsageForLicenseConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) TagResourceRequest(arg0 interface{}
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockLicenseManagerAPI) TagResourceWithContext(arg0 aws.Context, arg1 *licensemanager.TagResourceInput, arg2 ...request.Option) (*licensemanager.TagResourceOutput, error) {
+func (m *MockLicenseManagerAPI) TagResourceWithContext(arg0 context.Context, arg1 *licensemanager.TagResourceInput, arg2 ...request.Option) (*licensemanager.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) UntagResourceRequest(arg0 interface
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockLicenseManagerAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *licensemanager.UntagResourceInput, arg2 ...request.Option) (*licensemanager.UntagResourceOutput, error) {
+func (m *MockLicenseManagerAPI) UntagResourceWithContext(arg0 context.Context, arg1 *licensemanager.UntagResourceInput, arg2 ...request.Option) (*licensemanager.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) UpdateLicenseConfigurationRequest(a
 }
 
 // UpdateLicenseConfigurationWithContext mocks base method
-func (m *MockLicenseManagerAPI) UpdateLicenseConfigurationWithContext(arg0 aws.Context, arg1 *licensemanager.UpdateLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.UpdateLicenseConfigurationOutput, error) {
+func (m *MockLicenseManagerAPI) UpdateLicenseConfigurationWithContext(arg0 context.Context, arg1 *licensemanager.UpdateLicenseConfigurationInput, arg2 ...request.Option) (*licensemanager.UpdateLicenseConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) UpdateLicenseSpecificationsForResou
 }
 
 // UpdateLicenseSpecificationsForResourceWithContext mocks base method
-func (m *MockLicenseManagerAPI) UpdateLicenseSpecificationsForResourceWithContext(arg0 aws.Context, arg1 *licensemanager.UpdateLicenseSpecificationsForResourceInput, arg2 ...request.Option) (*licensemanager.UpdateLicenseSpecificationsForResourceOutput, error) {
+func (m *MockLicenseManagerAPI) UpdateLicenseSpecificationsForResourceWithContext(arg0 context.Context, arg1 *licensemanager.UpdateLicenseSpecificationsForResourceInput, arg2 ...request.Option) (*licensemanager.UpdateLicenseSpecificationsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockLicenseManagerAPIMockRecorder) UpdateServiceSettingsRequest(arg0 i
 }
 
 // UpdateServiceSettingsWithContext mocks base method
-func (m *MockLicenseManagerAPI) UpdateServiceSettingsWithContext(arg0 aws.Context, arg1 *licensemanager.UpdateServiceSettingsInput, arg2 ...request.Option) (*licensemanager.UpdateServiceSettingsOutput, error) {
+func (m *MockLicenseManagerAPI) UpdateServiceSettingsWithContext(arg0 context.Context, arg1 *licensemanager.UpdateServiceSettingsInput, arg2 ...request.Option) (*licensemanager.UpdateServiceSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

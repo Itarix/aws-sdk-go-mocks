@@ -5,7 +5,7 @@
 package codebuildmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	codebuild "github.com/aws/aws-sdk-go/service/codebuild"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCodeBuildAPIMockRecorder) BatchDeleteBuildsRequest(arg0 interface{
 }
 
 // BatchDeleteBuildsWithContext mocks base method
-func (m *MockCodeBuildAPI) BatchDeleteBuildsWithContext(arg0 aws.Context, arg1 *codebuild.BatchDeleteBuildsInput, arg2 ...request.Option) (*codebuild.BatchDeleteBuildsOutput, error) {
+func (m *MockCodeBuildAPI) BatchDeleteBuildsWithContext(arg0 context.Context, arg1 *codebuild.BatchDeleteBuildsInput, arg2 ...request.Option) (*codebuild.BatchDeleteBuildsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCodeBuildAPIMockRecorder) BatchGetBuildsRequest(arg0 interface{}) 
 }
 
 // BatchGetBuildsWithContext mocks base method
-func (m *MockCodeBuildAPI) BatchGetBuildsWithContext(arg0 aws.Context, arg1 *codebuild.BatchGetBuildsInput, arg2 ...request.Option) (*codebuild.BatchGetBuildsOutput, error) {
+func (m *MockCodeBuildAPI) BatchGetBuildsWithContext(arg0 context.Context, arg1 *codebuild.BatchGetBuildsInput, arg2 ...request.Option) (*codebuild.BatchGetBuildsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCodeBuildAPIMockRecorder) BatchGetProjectsRequest(arg0 interface{}
 }
 
 // BatchGetProjectsWithContext mocks base method
-func (m *MockCodeBuildAPI) BatchGetProjectsWithContext(arg0 aws.Context, arg1 *codebuild.BatchGetProjectsInput, arg2 ...request.Option) (*codebuild.BatchGetProjectsOutput, error) {
+func (m *MockCodeBuildAPI) BatchGetProjectsWithContext(arg0 context.Context, arg1 *codebuild.BatchGetProjectsInput, arg2 ...request.Option) (*codebuild.BatchGetProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCodeBuildAPIMockRecorder) CreateProjectRequest(arg0 interface{}) *
 }
 
 // CreateProjectWithContext mocks base method
-func (m *MockCodeBuildAPI) CreateProjectWithContext(arg0 aws.Context, arg1 *codebuild.CreateProjectInput, arg2 ...request.Option) (*codebuild.CreateProjectOutput, error) {
+func (m *MockCodeBuildAPI) CreateProjectWithContext(arg0 context.Context, arg1 *codebuild.CreateProjectInput, arg2 ...request.Option) (*codebuild.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCodeBuildAPIMockRecorder) CreateWebhookRequest(arg0 interface{}) *
 }
 
 // CreateWebhookWithContext mocks base method
-func (m *MockCodeBuildAPI) CreateWebhookWithContext(arg0 aws.Context, arg1 *codebuild.CreateWebhookInput, arg2 ...request.Option) (*codebuild.CreateWebhookOutput, error) {
+func (m *MockCodeBuildAPI) CreateWebhookWithContext(arg0 context.Context, arg1 *codebuild.CreateWebhookInput, arg2 ...request.Option) (*codebuild.CreateWebhookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) *
 }
 
 // DeleteProjectWithContext mocks base method
-func (m *MockCodeBuildAPI) DeleteProjectWithContext(arg0 aws.Context, arg1 *codebuild.DeleteProjectInput, arg2 ...request.Option) (*codebuild.DeleteProjectOutput, error) {
+func (m *MockCodeBuildAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *codebuild.DeleteProjectInput, arg2 ...request.Option) (*codebuild.DeleteProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteSourceCredentialsRequest(arg0 inte
 }
 
 // DeleteSourceCredentialsWithContext mocks base method
-func (m *MockCodeBuildAPI) DeleteSourceCredentialsWithContext(arg0 aws.Context, arg1 *codebuild.DeleteSourceCredentialsInput, arg2 ...request.Option) (*codebuild.DeleteSourceCredentialsOutput, error) {
+func (m *MockCodeBuildAPI) DeleteSourceCredentialsWithContext(arg0 context.Context, arg1 *codebuild.DeleteSourceCredentialsInput, arg2 ...request.Option) (*codebuild.DeleteSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteWebhookRequest(arg0 interface{}) *
 }
 
 // DeleteWebhookWithContext mocks base method
-func (m *MockCodeBuildAPI) DeleteWebhookWithContext(arg0 aws.Context, arg1 *codebuild.DeleteWebhookInput, arg2 ...request.Option) (*codebuild.DeleteWebhookOutput, error) {
+func (m *MockCodeBuildAPI) DeleteWebhookWithContext(arg0 context.Context, arg1 *codebuild.DeleteWebhookInput, arg2 ...request.Option) (*codebuild.DeleteWebhookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCodeBuildAPIMockRecorder) ImportSourceCredentialsRequest(arg0 inte
 }
 
 // ImportSourceCredentialsWithContext mocks base method
-func (m *MockCodeBuildAPI) ImportSourceCredentialsWithContext(arg0 aws.Context, arg1 *codebuild.ImportSourceCredentialsInput, arg2 ...request.Option) (*codebuild.ImportSourceCredentialsOutput, error) {
+func (m *MockCodeBuildAPI) ImportSourceCredentialsWithContext(arg0 context.Context, arg1 *codebuild.ImportSourceCredentialsInput, arg2 ...request.Option) (*codebuild.ImportSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCodeBuildAPIMockRecorder) InvalidateProjectCacheRequest(arg0 inter
 }
 
 // InvalidateProjectCacheWithContext mocks base method
-func (m *MockCodeBuildAPI) InvalidateProjectCacheWithContext(arg0 aws.Context, arg1 *codebuild.InvalidateProjectCacheInput, arg2 ...request.Option) (*codebuild.InvalidateProjectCacheOutput, error) {
+func (m *MockCodeBuildAPI) InvalidateProjectCacheWithContext(arg0 context.Context, arg1 *codebuild.InvalidateProjectCacheInput, arg2 ...request.Option) (*codebuild.InvalidateProjectCacheOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockCodeBuildAPIMockRecorder) ListBuildsForProjectRequest(arg0 interfa
 }
 
 // ListBuildsForProjectWithContext mocks base method
-func (m *MockCodeBuildAPI) ListBuildsForProjectWithContext(arg0 aws.Context, arg1 *codebuild.ListBuildsForProjectInput, arg2 ...request.Option) (*codebuild.ListBuildsForProjectOutput, error) {
+func (m *MockCodeBuildAPI) ListBuildsForProjectWithContext(arg0 context.Context, arg1 *codebuild.ListBuildsForProjectInput, arg2 ...request.Option) (*codebuild.ListBuildsForProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCodeBuildAPIMockRecorder) ListBuildsRequest(arg0 interface{}) *gom
 }
 
 // ListBuildsWithContext mocks base method
-func (m *MockCodeBuildAPI) ListBuildsWithContext(arg0 aws.Context, arg1 *codebuild.ListBuildsInput, arg2 ...request.Option) (*codebuild.ListBuildsOutput, error) {
+func (m *MockCodeBuildAPI) ListBuildsWithContext(arg0 context.Context, arg1 *codebuild.ListBuildsInput, arg2 ...request.Option) (*codebuild.ListBuildsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCodeBuildAPIMockRecorder) ListCuratedEnvironmentImagesRequest(arg0
 }
 
 // ListCuratedEnvironmentImagesWithContext mocks base method
-func (m *MockCodeBuildAPI) ListCuratedEnvironmentImagesWithContext(arg0 aws.Context, arg1 *codebuild.ListCuratedEnvironmentImagesInput, arg2 ...request.Option) (*codebuild.ListCuratedEnvironmentImagesOutput, error) {
+func (m *MockCodeBuildAPI) ListCuratedEnvironmentImagesWithContext(arg0 context.Context, arg1 *codebuild.ListCuratedEnvironmentImagesInput, arg2 ...request.Option) (*codebuild.ListCuratedEnvironmentImagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCodeBuildAPIMockRecorder) ListProjectsRequest(arg0 interface{}) *g
 }
 
 // ListProjectsWithContext mocks base method
-func (m *MockCodeBuildAPI) ListProjectsWithContext(arg0 aws.Context, arg1 *codebuild.ListProjectsInput, arg2 ...request.Option) (*codebuild.ListProjectsOutput, error) {
+func (m *MockCodeBuildAPI) ListProjectsWithContext(arg0 context.Context, arg1 *codebuild.ListProjectsInput, arg2 ...request.Option) (*codebuild.ListProjectsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCodeBuildAPIMockRecorder) ListSourceCredentialsRequest(arg0 interf
 }
 
 // ListSourceCredentialsWithContext mocks base method
-func (m *MockCodeBuildAPI) ListSourceCredentialsWithContext(arg0 aws.Context, arg1 *codebuild.ListSourceCredentialsInput, arg2 ...request.Option) (*codebuild.ListSourceCredentialsOutput, error) {
+func (m *MockCodeBuildAPI) ListSourceCredentialsWithContext(arg0 context.Context, arg1 *codebuild.ListSourceCredentialsInput, arg2 ...request.Option) (*codebuild.ListSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCodeBuildAPIMockRecorder) StartBuildRequest(arg0 interface{}) *gom
 }
 
 // StartBuildWithContext mocks base method
-func (m *MockCodeBuildAPI) StartBuildWithContext(arg0 aws.Context, arg1 *codebuild.StartBuildInput, arg2 ...request.Option) (*codebuild.StartBuildOutput, error) {
+func (m *MockCodeBuildAPI) StartBuildWithContext(arg0 context.Context, arg1 *codebuild.StartBuildInput, arg2 ...request.Option) (*codebuild.StartBuildOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCodeBuildAPIMockRecorder) StopBuildRequest(arg0 interface{}) *gomo
 }
 
 // StopBuildWithContext mocks base method
-func (m *MockCodeBuildAPI) StopBuildWithContext(arg0 aws.Context, arg1 *codebuild.StopBuildInput, arg2 ...request.Option) (*codebuild.StopBuildOutput, error) {
+func (m *MockCodeBuildAPI) StopBuildWithContext(arg0 context.Context, arg1 *codebuild.StopBuildInput, arg2 ...request.Option) (*codebuild.StopBuildOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCodeBuildAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) *
 }
 
 // UpdateProjectWithContext mocks base method
-func (m *MockCodeBuildAPI) UpdateProjectWithContext(arg0 aws.Context, arg1 *codebuild.UpdateProjectInput, arg2 ...request.Option) (*codebuild.UpdateProjectOutput, error) {
+func (m *MockCodeBuildAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *codebuild.UpdateProjectInput, arg2 ...request.Option) (*codebuild.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockCodeBuildAPIMockRecorder) UpdateWebhookRequest(arg0 interface{}) *
 }
 
 // UpdateWebhookWithContext mocks base method
-func (m *MockCodeBuildAPI) UpdateWebhookWithContext(arg0 aws.Context, arg1 *codebuild.UpdateWebhookInput, arg2 ...request.Option) (*codebuild.UpdateWebhookOutput, error) {
+func (m *MockCodeBuildAPI) UpdateWebhookWithContext(arg0 context.Context, arg1 *codebuild.UpdateWebhookInput, arg2 ...request.Option) (*codebuild.UpdateWebhookOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

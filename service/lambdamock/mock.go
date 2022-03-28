@@ -5,7 +5,7 @@
 package lambdamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	lambda "github.com/aws/aws-sdk-go/service/lambda"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockLambdaAPIMockRecorder) AddLayerVersionPermissionRequest(arg0 inter
 }
 
 // AddLayerVersionPermissionWithContext mocks base method
-func (m *MockLambdaAPI) AddLayerVersionPermissionWithContext(arg0 aws.Context, arg1 *lambda.AddLayerVersionPermissionInput, arg2 ...request.Option) (*lambda.AddLayerVersionPermissionOutput, error) {
+func (m *MockLambdaAPI) AddLayerVersionPermissionWithContext(arg0 context.Context, arg1 *lambda.AddLayerVersionPermissionInput, arg2 ...request.Option) (*lambda.AddLayerVersionPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockLambdaAPIMockRecorder) AddPermissionRequest(arg0 interface{}) *gom
 }
 
 // AddPermissionWithContext mocks base method
-func (m *MockLambdaAPI) AddPermissionWithContext(arg0 aws.Context, arg1 *lambda.AddPermissionInput, arg2 ...request.Option) (*lambda.AddPermissionOutput, error) {
+func (m *MockLambdaAPI) AddPermissionWithContext(arg0 context.Context, arg1 *lambda.AddPermissionInput, arg2 ...request.Option) (*lambda.AddPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockLambdaAPIMockRecorder) CreateAliasRequest(arg0 interface{}) *gomoc
 }
 
 // CreateAliasWithContext mocks base method
-func (m *MockLambdaAPI) CreateAliasWithContext(arg0 aws.Context, arg1 *lambda.CreateAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
+func (m *MockLambdaAPI) CreateAliasWithContext(arg0 context.Context, arg1 *lambda.CreateAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockLambdaAPIMockRecorder) CreateEventSourceMappingRequest(arg0 interf
 }
 
 // CreateEventSourceMappingWithContext mocks base method
-func (m *MockLambdaAPI) CreateEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.CreateEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+func (m *MockLambdaAPI) CreateEventSourceMappingWithContext(arg0 context.Context, arg1 *lambda.CreateEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockLambdaAPIMockRecorder) CreateFunctionRequest(arg0 interface{}) *go
 }
 
 // CreateFunctionWithContext mocks base method
-func (m *MockLambdaAPI) CreateFunctionWithContext(arg0 aws.Context, arg1 *lambda.CreateFunctionInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+func (m *MockLambdaAPI) CreateFunctionWithContext(arg0 context.Context, arg1 *lambda.CreateFunctionInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockLambdaAPIMockRecorder) DeleteAliasRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteAliasWithContext mocks base method
-func (m *MockLambdaAPI) DeleteAliasWithContext(arg0 aws.Context, arg1 *lambda.DeleteAliasInput, arg2 ...request.Option) (*lambda.DeleteAliasOutput, error) {
+func (m *MockLambdaAPI) DeleteAliasWithContext(arg0 context.Context, arg1 *lambda.DeleteAliasInput, arg2 ...request.Option) (*lambda.DeleteAliasOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockLambdaAPIMockRecorder) DeleteEventSourceMappingRequest(arg0 interf
 }
 
 // DeleteEventSourceMappingWithContext mocks base method
-func (m *MockLambdaAPI) DeleteEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.DeleteEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+func (m *MockLambdaAPI) DeleteEventSourceMappingWithContext(arg0 context.Context, arg1 *lambda.DeleteEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockLambdaAPIMockRecorder) DeleteFunctionConcurrencyRequest(arg0 inter
 }
 
 // DeleteFunctionConcurrencyWithContext mocks base method
-func (m *MockLambdaAPI) DeleteFunctionConcurrencyWithContext(arg0 aws.Context, arg1 *lambda.DeleteFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.DeleteFunctionConcurrencyOutput, error) {
+func (m *MockLambdaAPI) DeleteFunctionConcurrencyWithContext(arg0 context.Context, arg1 *lambda.DeleteFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.DeleteFunctionConcurrencyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockLambdaAPIMockRecorder) DeleteFunctionRequest(arg0 interface{}) *go
 }
 
 // DeleteFunctionWithContext mocks base method
-func (m *MockLambdaAPI) DeleteFunctionWithContext(arg0 aws.Context, arg1 *lambda.DeleteFunctionInput, arg2 ...request.Option) (*lambda.DeleteFunctionOutput, error) {
+func (m *MockLambdaAPI) DeleteFunctionWithContext(arg0 context.Context, arg1 *lambda.DeleteFunctionInput, arg2 ...request.Option) (*lambda.DeleteFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockLambdaAPIMockRecorder) DeleteLayerVersionRequest(arg0 interface{})
 }
 
 // DeleteLayerVersionWithContext mocks base method
-func (m *MockLambdaAPI) DeleteLayerVersionWithContext(arg0 aws.Context, arg1 *lambda.DeleteLayerVersionInput, arg2 ...request.Option) (*lambda.DeleteLayerVersionOutput, error) {
+func (m *MockLambdaAPI) DeleteLayerVersionWithContext(arg0 context.Context, arg1 *lambda.DeleteLayerVersionInput, arg2 ...request.Option) (*lambda.DeleteLayerVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockLambdaAPIMockRecorder) GetAccountSettingsRequest(arg0 interface{})
 }
 
 // GetAccountSettingsWithContext mocks base method
-func (m *MockLambdaAPI) GetAccountSettingsWithContext(arg0 aws.Context, arg1 *lambda.GetAccountSettingsInput, arg2 ...request.Option) (*lambda.GetAccountSettingsOutput, error) {
+func (m *MockLambdaAPI) GetAccountSettingsWithContext(arg0 context.Context, arg1 *lambda.GetAccountSettingsInput, arg2 ...request.Option) (*lambda.GetAccountSettingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockLambdaAPIMockRecorder) GetAliasRequest(arg0 interface{}) *gomock.C
 }
 
 // GetAliasWithContext mocks base method
-func (m *MockLambdaAPI) GetAliasWithContext(arg0 aws.Context, arg1 *lambda.GetAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
+func (m *MockLambdaAPI) GetAliasWithContext(arg0 context.Context, arg1 *lambda.GetAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockLambdaAPIMockRecorder) GetEventSourceMappingRequest(arg0 interface
 }
 
 // GetEventSourceMappingWithContext mocks base method
-func (m *MockLambdaAPI) GetEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.GetEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+func (m *MockLambdaAPI) GetEventSourceMappingWithContext(arg0 context.Context, arg1 *lambda.GetEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockLambdaAPIMockRecorder) GetFunctionConfigurationRequest(arg0 interf
 }
 
 // GetFunctionConfigurationWithContext mocks base method
-func (m *MockLambdaAPI) GetFunctionConfigurationWithContext(arg0 aws.Context, arg1 *lambda.GetFunctionConfigurationInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+func (m *MockLambdaAPI) GetFunctionConfigurationWithContext(arg0 context.Context, arg1 *lambda.GetFunctionConfigurationInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockLambdaAPIMockRecorder) GetFunctionRequest(arg0 interface{}) *gomoc
 }
 
 // GetFunctionWithContext mocks base method
-func (m *MockLambdaAPI) GetFunctionWithContext(arg0 aws.Context, arg1 *lambda.GetFunctionInput, arg2 ...request.Option) (*lambda.GetFunctionOutput, error) {
+func (m *MockLambdaAPI) GetFunctionWithContext(arg0 context.Context, arg1 *lambda.GetFunctionInput, arg2 ...request.Option) (*lambda.GetFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockLambdaAPIMockRecorder) GetLayerVersionPolicyRequest(arg0 interface
 }
 
 // GetLayerVersionPolicyWithContext mocks base method
-func (m *MockLambdaAPI) GetLayerVersionPolicyWithContext(arg0 aws.Context, arg1 *lambda.GetLayerVersionPolicyInput, arg2 ...request.Option) (*lambda.GetLayerVersionPolicyOutput, error) {
+func (m *MockLambdaAPI) GetLayerVersionPolicyWithContext(arg0 context.Context, arg1 *lambda.GetLayerVersionPolicyInput, arg2 ...request.Option) (*lambda.GetLayerVersionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockLambdaAPIMockRecorder) GetLayerVersionRequest(arg0 interface{}) *g
 }
 
 // GetLayerVersionWithContext mocks base method
-func (m *MockLambdaAPI) GetLayerVersionWithContext(arg0 aws.Context, arg1 *lambda.GetLayerVersionInput, arg2 ...request.Option) (*lambda.GetLayerVersionOutput, error) {
+func (m *MockLambdaAPI) GetLayerVersionWithContext(arg0 context.Context, arg1 *lambda.GetLayerVersionInput, arg2 ...request.Option) (*lambda.GetLayerVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockLambdaAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.
 }
 
 // GetPolicyWithContext mocks base method
-func (m *MockLambdaAPI) GetPolicyWithContext(arg0 aws.Context, arg1 *lambda.GetPolicyInput, arg2 ...request.Option) (*lambda.GetPolicyOutput, error) {
+func (m *MockLambdaAPI) GetPolicyWithContext(arg0 context.Context, arg1 *lambda.GetPolicyInput, arg2 ...request.Option) (*lambda.GetPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -981,7 +981,7 @@ func (mr *MockLambdaAPIMockRecorder) InvokeAsyncRequest(arg0 interface{}) *gomoc
 }
 
 // InvokeAsyncWithContext mocks base method
-func (m *MockLambdaAPI) InvokeAsyncWithContext(arg0 aws.Context, arg1 *lambda.InvokeAsyncInput, arg2 ...request.Option) (*lambda.InvokeAsyncOutput, error) {
+func (m *MockLambdaAPI) InvokeAsyncWithContext(arg0 context.Context, arg1 *lambda.InvokeAsyncInput, arg2 ...request.Option) (*lambda.InvokeAsyncOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockLambdaAPIMockRecorder) InvokeRequest(arg0 interface{}) *gomock.Cal
 }
 
 // InvokeWithContext mocks base method
-func (m *MockLambdaAPI) InvokeWithContext(arg0 aws.Context, arg1 *lambda.InvokeInput, arg2 ...request.Option) (*lambda.InvokeOutput, error) {
+func (m *MockLambdaAPI) InvokeWithContext(arg0 context.Context, arg1 *lambda.InvokeInput, arg2 ...request.Option) (*lambda.InvokeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockLambdaAPIMockRecorder) ListAliasesRequest(arg0 interface{}) *gomoc
 }
 
 // ListAliasesWithContext mocks base method
-func (m *MockLambdaAPI) ListAliasesWithContext(arg0 aws.Context, arg1 *lambda.ListAliasesInput, arg2 ...request.Option) (*lambda.ListAliasesOutput, error) {
+func (m *MockLambdaAPI) ListAliasesWithContext(arg0 context.Context, arg1 *lambda.ListAliasesInput, arg2 ...request.Option) (*lambda.ListAliasesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1115,7 +1115,7 @@ func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsPages(arg0, arg1 int
 }
 
 // ListEventSourceMappingsPagesWithContext mocks base method
-func (m *MockLambdaAPI) ListEventSourceMappingsPagesWithContext(arg0 aws.Context, arg1 *lambda.ListEventSourceMappingsInput, arg2 func(*lambda.ListEventSourceMappingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLambdaAPI) ListEventSourceMappingsPagesWithContext(arg0 context.Context, arg1 *lambda.ListEventSourceMappingsInput, arg2 func(*lambda.ListEventSourceMappingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1149,7 +1149,7 @@ func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsRequest(arg0 interfa
 }
 
 // ListEventSourceMappingsWithContext mocks base method
-func (m *MockLambdaAPI) ListEventSourceMappingsWithContext(arg0 aws.Context, arg1 *lambda.ListEventSourceMappingsInput, arg2 ...request.Option) (*lambda.ListEventSourceMappingsOutput, error) {
+func (m *MockLambdaAPI) ListEventSourceMappingsWithContext(arg0 context.Context, arg1 *lambda.ListEventSourceMappingsInput, arg2 ...request.Option) (*lambda.ListEventSourceMappingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1198,7 +1198,7 @@ func (mr *MockLambdaAPIMockRecorder) ListFunctionsPages(arg0, arg1 interface{}) 
 }
 
 // ListFunctionsPagesWithContext mocks base method
-func (m *MockLambdaAPI) ListFunctionsPagesWithContext(arg0 aws.Context, arg1 *lambda.ListFunctionsInput, arg2 func(*lambda.ListFunctionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockLambdaAPI) ListFunctionsPagesWithContext(arg0 context.Context, arg1 *lambda.ListFunctionsInput, arg2 func(*lambda.ListFunctionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1232,7 +1232,7 @@ func (mr *MockLambdaAPIMockRecorder) ListFunctionsRequest(arg0 interface{}) *gom
 }
 
 // ListFunctionsWithContext mocks base method
-func (m *MockLambdaAPI) ListFunctionsWithContext(arg0 aws.Context, arg1 *lambda.ListFunctionsInput, arg2 ...request.Option) (*lambda.ListFunctionsOutput, error) {
+func (m *MockLambdaAPI) ListFunctionsWithContext(arg0 context.Context, arg1 *lambda.ListFunctionsInput, arg2 ...request.Option) (*lambda.ListFunctionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1282,7 +1282,7 @@ func (mr *MockLambdaAPIMockRecorder) ListLayerVersionsRequest(arg0 interface{}) 
 }
 
 // ListLayerVersionsWithContext mocks base method
-func (m *MockLambdaAPI) ListLayerVersionsWithContext(arg0 aws.Context, arg1 *lambda.ListLayerVersionsInput, arg2 ...request.Option) (*lambda.ListLayerVersionsOutput, error) {
+func (m *MockLambdaAPI) ListLayerVersionsWithContext(arg0 context.Context, arg1 *lambda.ListLayerVersionsInput, arg2 ...request.Option) (*lambda.ListLayerVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1332,7 +1332,7 @@ func (mr *MockLambdaAPIMockRecorder) ListLayersRequest(arg0 interface{}) *gomock
 }
 
 // ListLayersWithContext mocks base method
-func (m *MockLambdaAPI) ListLayersWithContext(arg0 aws.Context, arg1 *lambda.ListLayersInput, arg2 ...request.Option) (*lambda.ListLayersOutput, error) {
+func (m *MockLambdaAPI) ListLayersWithContext(arg0 context.Context, arg1 *lambda.ListLayersInput, arg2 ...request.Option) (*lambda.ListLayersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1382,7 +1382,7 @@ func (mr *MockLambdaAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.C
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockLambdaAPI) ListTagsWithContext(arg0 aws.Context, arg1 *lambda.ListTagsInput, arg2 ...request.Option) (*lambda.ListTagsOutput, error) {
+func (m *MockLambdaAPI) ListTagsWithContext(arg0 context.Context, arg1 *lambda.ListTagsInput, arg2 ...request.Option) (*lambda.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1432,7 +1432,7 @@ func (mr *MockLambdaAPIMockRecorder) ListVersionsByFunctionRequest(arg0 interfac
 }
 
 // ListVersionsByFunctionWithContext mocks base method
-func (m *MockLambdaAPI) ListVersionsByFunctionWithContext(arg0 aws.Context, arg1 *lambda.ListVersionsByFunctionInput, arg2 ...request.Option) (*lambda.ListVersionsByFunctionOutput, error) {
+func (m *MockLambdaAPI) ListVersionsByFunctionWithContext(arg0 context.Context, arg1 *lambda.ListVersionsByFunctionInput, arg2 ...request.Option) (*lambda.ListVersionsByFunctionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1482,7 +1482,7 @@ func (mr *MockLambdaAPIMockRecorder) PublishLayerVersionRequest(arg0 interface{}
 }
 
 // PublishLayerVersionWithContext mocks base method
-func (m *MockLambdaAPI) PublishLayerVersionWithContext(arg0 aws.Context, arg1 *lambda.PublishLayerVersionInput, arg2 ...request.Option) (*lambda.PublishLayerVersionOutput, error) {
+func (m *MockLambdaAPI) PublishLayerVersionWithContext(arg0 context.Context, arg1 *lambda.PublishLayerVersionInput, arg2 ...request.Option) (*lambda.PublishLayerVersionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1532,7 +1532,7 @@ func (mr *MockLambdaAPIMockRecorder) PublishVersionRequest(arg0 interface{}) *go
 }
 
 // PublishVersionWithContext mocks base method
-func (m *MockLambdaAPI) PublishVersionWithContext(arg0 aws.Context, arg1 *lambda.PublishVersionInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+func (m *MockLambdaAPI) PublishVersionWithContext(arg0 context.Context, arg1 *lambda.PublishVersionInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1582,7 +1582,7 @@ func (mr *MockLambdaAPIMockRecorder) PutFunctionConcurrencyRequest(arg0 interfac
 }
 
 // PutFunctionConcurrencyWithContext mocks base method
-func (m *MockLambdaAPI) PutFunctionConcurrencyWithContext(arg0 aws.Context, arg1 *lambda.PutFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.PutFunctionConcurrencyOutput, error) {
+func (m *MockLambdaAPI) PutFunctionConcurrencyWithContext(arg0 context.Context, arg1 *lambda.PutFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.PutFunctionConcurrencyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1632,7 +1632,7 @@ func (mr *MockLambdaAPIMockRecorder) RemoveLayerVersionPermissionRequest(arg0 in
 }
 
 // RemoveLayerVersionPermissionWithContext mocks base method
-func (m *MockLambdaAPI) RemoveLayerVersionPermissionWithContext(arg0 aws.Context, arg1 *lambda.RemoveLayerVersionPermissionInput, arg2 ...request.Option) (*lambda.RemoveLayerVersionPermissionOutput, error) {
+func (m *MockLambdaAPI) RemoveLayerVersionPermissionWithContext(arg0 context.Context, arg1 *lambda.RemoveLayerVersionPermissionInput, arg2 ...request.Option) (*lambda.RemoveLayerVersionPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1682,7 +1682,7 @@ func (mr *MockLambdaAPIMockRecorder) RemovePermissionRequest(arg0 interface{}) *
 }
 
 // RemovePermissionWithContext mocks base method
-func (m *MockLambdaAPI) RemovePermissionWithContext(arg0 aws.Context, arg1 *lambda.RemovePermissionInput, arg2 ...request.Option) (*lambda.RemovePermissionOutput, error) {
+func (m *MockLambdaAPI) RemovePermissionWithContext(arg0 context.Context, arg1 *lambda.RemovePermissionInput, arg2 ...request.Option) (*lambda.RemovePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1732,7 +1732,7 @@ func (mr *MockLambdaAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomoc
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockLambdaAPI) TagResourceWithContext(arg0 aws.Context, arg1 *lambda.TagResourceInput, arg2 ...request.Option) (*lambda.TagResourceOutput, error) {
+func (m *MockLambdaAPI) TagResourceWithContext(arg0 context.Context, arg1 *lambda.TagResourceInput, arg2 ...request.Option) (*lambda.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1782,7 +1782,7 @@ func (mr *MockLambdaAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gom
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockLambdaAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *lambda.UntagResourceInput, arg2 ...request.Option) (*lambda.UntagResourceOutput, error) {
+func (m *MockLambdaAPI) UntagResourceWithContext(arg0 context.Context, arg1 *lambda.UntagResourceInput, arg2 ...request.Option) (*lambda.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1832,7 +1832,7 @@ func (mr *MockLambdaAPIMockRecorder) UpdateAliasRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateAliasWithContext mocks base method
-func (m *MockLambdaAPI) UpdateAliasWithContext(arg0 aws.Context, arg1 *lambda.UpdateAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
+func (m *MockLambdaAPI) UpdateAliasWithContext(arg0 context.Context, arg1 *lambda.UpdateAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1882,7 +1882,7 @@ func (mr *MockLambdaAPIMockRecorder) UpdateEventSourceMappingRequest(arg0 interf
 }
 
 // UpdateEventSourceMappingWithContext mocks base method
-func (m *MockLambdaAPI) UpdateEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.UpdateEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+func (m *MockLambdaAPI) UpdateEventSourceMappingWithContext(arg0 context.Context, arg1 *lambda.UpdateEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1932,7 +1932,7 @@ func (mr *MockLambdaAPIMockRecorder) UpdateFunctionCodeRequest(arg0 interface{})
 }
 
 // UpdateFunctionCodeWithContext mocks base method
-func (m *MockLambdaAPI) UpdateFunctionCodeWithContext(arg0 aws.Context, arg1 *lambda.UpdateFunctionCodeInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+func (m *MockLambdaAPI) UpdateFunctionCodeWithContext(arg0 context.Context, arg1 *lambda.UpdateFunctionCodeInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1982,7 +1982,7 @@ func (mr *MockLambdaAPIMockRecorder) UpdateFunctionConfigurationRequest(arg0 int
 }
 
 // UpdateFunctionConfigurationWithContext mocks base method
-func (m *MockLambdaAPI) UpdateFunctionConfigurationWithContext(arg0 aws.Context, arg1 *lambda.UpdateFunctionConfigurationInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+func (m *MockLambdaAPI) UpdateFunctionConfigurationWithContext(arg0 context.Context, arg1 *lambda.UpdateFunctionConfigurationInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

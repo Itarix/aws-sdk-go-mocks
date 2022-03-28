@@ -5,7 +5,7 @@
 package cloudwatcheventsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudwatchevents "github.com/aws/aws-sdk-go/service/cloudwatchevents"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteRuleRequest(arg0 interface{
 }
 
 // DeleteRuleWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) DeleteRuleWithContext(arg0 aws.Context, arg1 *cloudwatchevents.DeleteRuleInput, arg2 ...request.Option) (*cloudwatchevents.DeleteRuleOutput, error) {
+func (m *MockCloudWatchEventsAPI) DeleteRuleWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeleteRuleInput, arg2 ...request.Option) (*cloudwatchevents.DeleteRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeEventBusRequest(arg0 inte
 }
 
 // DescribeEventBusWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) DescribeEventBusWithContext(arg0 aws.Context, arg1 *cloudwatchevents.DescribeEventBusInput, arg2 ...request.Option) (*cloudwatchevents.DescribeEventBusOutput, error) {
+func (m *MockCloudWatchEventsAPI) DescribeEventBusWithContext(arg0 context.Context, arg1 *cloudwatchevents.DescribeEventBusInput, arg2 ...request.Option) (*cloudwatchevents.DescribeEventBusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeRuleRequest(arg0 interfac
 }
 
 // DescribeRuleWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) DescribeRuleWithContext(arg0 aws.Context, arg1 *cloudwatchevents.DescribeRuleInput, arg2 ...request.Option) (*cloudwatchevents.DescribeRuleOutput, error) {
+func (m *MockCloudWatchEventsAPI) DescribeRuleWithContext(arg0 context.Context, arg1 *cloudwatchevents.DescribeRuleInput, arg2 ...request.Option) (*cloudwatchevents.DescribeRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DisableRuleRequest(arg0 interface
 }
 
 // DisableRuleWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) DisableRuleWithContext(arg0 aws.Context, arg1 *cloudwatchevents.DisableRuleInput, arg2 ...request.Option) (*cloudwatchevents.DisableRuleOutput, error) {
+func (m *MockCloudWatchEventsAPI) DisableRuleWithContext(arg0 context.Context, arg1 *cloudwatchevents.DisableRuleInput, arg2 ...request.Option) (*cloudwatchevents.DisableRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) EnableRuleRequest(arg0 interface{
 }
 
 // EnableRuleWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) EnableRuleWithContext(arg0 aws.Context, arg1 *cloudwatchevents.EnableRuleInput, arg2 ...request.Option) (*cloudwatchevents.EnableRuleOutput, error) {
+func (m *MockCloudWatchEventsAPI) EnableRuleWithContext(arg0 context.Context, arg1 *cloudwatchevents.EnableRuleInput, arg2 ...request.Option) (*cloudwatchevents.EnableRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) ListRuleNamesByTargetRequest(arg0
 }
 
 // ListRuleNamesByTargetWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) ListRuleNamesByTargetWithContext(arg0 aws.Context, arg1 *cloudwatchevents.ListRuleNamesByTargetInput, arg2 ...request.Option) (*cloudwatchevents.ListRuleNamesByTargetOutput, error) {
+func (m *MockCloudWatchEventsAPI) ListRuleNamesByTargetWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListRuleNamesByTargetInput, arg2 ...request.Option) (*cloudwatchevents.ListRuleNamesByTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) ListRulesRequest(arg0 interface{}
 }
 
 // ListRulesWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) ListRulesWithContext(arg0 aws.Context, arg1 *cloudwatchevents.ListRulesInput, arg2 ...request.Option) (*cloudwatchevents.ListRulesOutput, error) {
+func (m *MockCloudWatchEventsAPI) ListRulesWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListRulesInput, arg2 ...request.Option) (*cloudwatchevents.ListRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) ListTargetsByRuleRequest(arg0 int
 }
 
 // ListTargetsByRuleWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) ListTargetsByRuleWithContext(arg0 aws.Context, arg1 *cloudwatchevents.ListTargetsByRuleInput, arg2 ...request.Option) (*cloudwatchevents.ListTargetsByRuleOutput, error) {
+func (m *MockCloudWatchEventsAPI) ListTargetsByRuleWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListTargetsByRuleInput, arg2 ...request.Option) (*cloudwatchevents.ListTargetsByRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) PutEventsRequest(arg0 interface{}
 }
 
 // PutEventsWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) PutEventsWithContext(arg0 aws.Context, arg1 *cloudwatchevents.PutEventsInput, arg2 ...request.Option) (*cloudwatchevents.PutEventsOutput, error) {
+func (m *MockCloudWatchEventsAPI) PutEventsWithContext(arg0 context.Context, arg1 *cloudwatchevents.PutEventsInput, arg2 ...request.Option) (*cloudwatchevents.PutEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) PutPermissionRequest(arg0 interfa
 }
 
 // PutPermissionWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) PutPermissionWithContext(arg0 aws.Context, arg1 *cloudwatchevents.PutPermissionInput, arg2 ...request.Option) (*cloudwatchevents.PutPermissionOutput, error) {
+func (m *MockCloudWatchEventsAPI) PutPermissionWithContext(arg0 context.Context, arg1 *cloudwatchevents.PutPermissionInput, arg2 ...request.Option) (*cloudwatchevents.PutPermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) PutRuleRequest(arg0 interface{}) 
 }
 
 // PutRuleWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) PutRuleWithContext(arg0 aws.Context, arg1 *cloudwatchevents.PutRuleInput, arg2 ...request.Option) (*cloudwatchevents.PutRuleOutput, error) {
+func (m *MockCloudWatchEventsAPI) PutRuleWithContext(arg0 context.Context, arg1 *cloudwatchevents.PutRuleInput, arg2 ...request.Option) (*cloudwatchevents.PutRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) PutTargetsRequest(arg0 interface{
 }
 
 // PutTargetsWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) PutTargetsWithContext(arg0 aws.Context, arg1 *cloudwatchevents.PutTargetsInput, arg2 ...request.Option) (*cloudwatchevents.PutTargetsOutput, error) {
+func (m *MockCloudWatchEventsAPI) PutTargetsWithContext(arg0 context.Context, arg1 *cloudwatchevents.PutTargetsInput, arg2 ...request.Option) (*cloudwatchevents.PutTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) RemovePermissionRequest(arg0 inte
 }
 
 // RemovePermissionWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) RemovePermissionWithContext(arg0 aws.Context, arg1 *cloudwatchevents.RemovePermissionInput, arg2 ...request.Option) (*cloudwatchevents.RemovePermissionOutput, error) {
+func (m *MockCloudWatchEventsAPI) RemovePermissionWithContext(arg0 context.Context, arg1 *cloudwatchevents.RemovePermissionInput, arg2 ...request.Option) (*cloudwatchevents.RemovePermissionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) RemoveTargetsRequest(arg0 interfa
 }
 
 // RemoveTargetsWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) RemoveTargetsWithContext(arg0 aws.Context, arg1 *cloudwatchevents.RemoveTargetsInput, arg2 ...request.Option) (*cloudwatchevents.RemoveTargetsOutput, error) {
+func (m *MockCloudWatchEventsAPI) RemoveTargetsWithContext(arg0 context.Context, arg1 *cloudwatchevents.RemoveTargetsInput, arg2 ...request.Option) (*cloudwatchevents.RemoveTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) TestEventPatternRequest(arg0 inte
 }
 
 // TestEventPatternWithContext mocks base method
-func (m *MockCloudWatchEventsAPI) TestEventPatternWithContext(arg0 aws.Context, arg1 *cloudwatchevents.TestEventPatternInput, arg2 ...request.Option) (*cloudwatchevents.TestEventPatternOutput, error) {
+func (m *MockCloudWatchEventsAPI) TestEventPatternWithContext(arg0 context.Context, arg1 *cloudwatchevents.TestEventPatternInput, arg2 ...request.Option) (*cloudwatchevents.TestEventPatternOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

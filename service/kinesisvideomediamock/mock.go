@@ -5,7 +5,7 @@
 package kinesisvideomediamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	kinesisvideomedia "github.com/aws/aws-sdk-go/service/kinesisvideomedia"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockKinesisVideoMediaAPIMockRecorder) GetMediaRequest(arg0 interface{}
 }
 
 // GetMediaWithContext mocks base method
-func (m *MockKinesisVideoMediaAPI) GetMediaWithContext(arg0 aws.Context, arg1 *kinesisvideomedia.GetMediaInput, arg2 ...request.Option) (*kinesisvideomedia.GetMediaOutput, error) {
+func (m *MockKinesisVideoMediaAPI) GetMediaWithContext(arg0 context.Context, arg1 *kinesisvideomedia.GetMediaInput, arg2 ...request.Option) (*kinesisvideomedia.GetMediaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

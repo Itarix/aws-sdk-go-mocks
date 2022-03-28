@@ -5,7 +5,7 @@
 package sesmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	ses "github.com/aws/aws-sdk-go/service/ses"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSESAPIMockRecorder) CloneReceiptRuleSetRequest(arg0 interface{}) *
 }
 
 // CloneReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) CloneReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.CloneReceiptRuleSetInput, arg2 ...request.Option) (*ses.CloneReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) CloneReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.CloneReceiptRuleSetInput, arg2 ...request.Option) (*ses.CloneReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -131,7 +131,7 @@ func (mr *MockSESAPIMockRecorder) CreateConfigurationSetEventDestinationRequest(
 }
 
 // CreateConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockSESAPI) CreateConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *ses.CreateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*ses.CreateConfigurationSetEventDestinationOutput, error) {
+func (m *MockSESAPI) CreateConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *ses.CreateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*ses.CreateConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -196,7 +196,7 @@ func (mr *MockSESAPIMockRecorder) CreateConfigurationSetTrackingOptionsRequest(a
 }
 
 // CreateConfigurationSetTrackingOptionsWithContext mocks base method
-func (m *MockSESAPI) CreateConfigurationSetTrackingOptionsWithContext(arg0 aws.Context, arg1 *ses.CreateConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*ses.CreateConfigurationSetTrackingOptionsOutput, error) {
+func (m *MockSESAPI) CreateConfigurationSetTrackingOptionsWithContext(arg0 context.Context, arg1 *ses.CreateConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*ses.CreateConfigurationSetTrackingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSESAPIMockRecorder) CreateConfigurationSetTrackingOptionsWithConte
 }
 
 // CreateConfigurationSetWithContext mocks base method
-func (m *MockSESAPI) CreateConfigurationSetWithContext(arg0 aws.Context, arg1 *ses.CreateConfigurationSetInput, arg2 ...request.Option) (*ses.CreateConfigurationSetOutput, error) {
+func (m *MockSESAPI) CreateConfigurationSetWithContext(arg0 context.Context, arg1 *ses.CreateConfigurationSetInput, arg2 ...request.Option) (*ses.CreateConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSESAPIMockRecorder) CreateCustomVerificationEmailTemplateRequest(a
 }
 
 // CreateCustomVerificationEmailTemplateWithContext mocks base method
-func (m *MockSESAPI) CreateCustomVerificationEmailTemplateWithContext(arg0 aws.Context, arg1 *ses.CreateCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.CreateCustomVerificationEmailTemplateOutput, error) {
+func (m *MockSESAPI) CreateCustomVerificationEmailTemplateWithContext(arg0 context.Context, arg1 *ses.CreateCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.CreateCustomVerificationEmailTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSESAPIMockRecorder) CreateReceiptFilterRequest(arg0 interface{}) *
 }
 
 // CreateReceiptFilterWithContext mocks base method
-func (m *MockSESAPI) CreateReceiptFilterWithContext(arg0 aws.Context, arg1 *ses.CreateReceiptFilterInput, arg2 ...request.Option) (*ses.CreateReceiptFilterOutput, error) {
+func (m *MockSESAPI) CreateReceiptFilterWithContext(arg0 context.Context, arg1 *ses.CreateReceiptFilterInput, arg2 ...request.Option) (*ses.CreateReceiptFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -396,7 +396,7 @@ func (mr *MockSESAPIMockRecorder) CreateReceiptRuleSetRequest(arg0 interface{}) 
 }
 
 // CreateReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) CreateReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.CreateReceiptRuleSetInput, arg2 ...request.Option) (*ses.CreateReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) CreateReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.CreateReceiptRuleSetInput, arg2 ...request.Option) (*ses.CreateReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSESAPIMockRecorder) CreateReceiptRuleSetWithContext(arg0, arg1 int
 }
 
 // CreateReceiptRuleWithContext mocks base method
-func (m *MockSESAPI) CreateReceiptRuleWithContext(arg0 aws.Context, arg1 *ses.CreateReceiptRuleInput, arg2 ...request.Option) (*ses.CreateReceiptRuleOutput, error) {
+func (m *MockSESAPI) CreateReceiptRuleWithContext(arg0 context.Context, arg1 *ses.CreateReceiptRuleInput, arg2 ...request.Option) (*ses.CreateReceiptRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSESAPIMockRecorder) CreateTemplateRequest(arg0 interface{}) *gomoc
 }
 
 // CreateTemplateWithContext mocks base method
-func (m *MockSESAPI) CreateTemplateWithContext(arg0 aws.Context, arg1 *ses.CreateTemplateInput, arg2 ...request.Option) (*ses.CreateTemplateOutput, error) {
+func (m *MockSESAPI) CreateTemplateWithContext(arg0 context.Context, arg1 *ses.CreateTemplateInput, arg2 ...request.Option) (*ses.CreateTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockSESAPIMockRecorder) DeleteConfigurationSetEventDestinationRequest(
 }
 
 // DeleteConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockSESAPI) DeleteConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *ses.DeleteConfigurationSetEventDestinationInput, arg2 ...request.Option) (*ses.DeleteConfigurationSetEventDestinationOutput, error) {
+func (m *MockSESAPI) DeleteConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *ses.DeleteConfigurationSetEventDestinationInput, arg2 ...request.Option) (*ses.DeleteConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -596,7 +596,7 @@ func (mr *MockSESAPIMockRecorder) DeleteConfigurationSetTrackingOptionsRequest(a
 }
 
 // DeleteConfigurationSetTrackingOptionsWithContext mocks base method
-func (m *MockSESAPI) DeleteConfigurationSetTrackingOptionsWithContext(arg0 aws.Context, arg1 *ses.DeleteConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*ses.DeleteConfigurationSetTrackingOptionsOutput, error) {
+func (m *MockSESAPI) DeleteConfigurationSetTrackingOptionsWithContext(arg0 context.Context, arg1 *ses.DeleteConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*ses.DeleteConfigurationSetTrackingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockSESAPIMockRecorder) DeleteConfigurationSetTrackingOptionsWithConte
 }
 
 // DeleteConfigurationSetWithContext mocks base method
-func (m *MockSESAPI) DeleteConfigurationSetWithContext(arg0 aws.Context, arg1 *ses.DeleteConfigurationSetInput, arg2 ...request.Option) (*ses.DeleteConfigurationSetOutput, error) {
+func (m *MockSESAPI) DeleteConfigurationSetWithContext(arg0 context.Context, arg1 *ses.DeleteConfigurationSetInput, arg2 ...request.Option) (*ses.DeleteConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSESAPIMockRecorder) DeleteCustomVerificationEmailTemplateRequest(a
 }
 
 // DeleteCustomVerificationEmailTemplateWithContext mocks base method
-func (m *MockSESAPI) DeleteCustomVerificationEmailTemplateWithContext(arg0 aws.Context, arg1 *ses.DeleteCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.DeleteCustomVerificationEmailTemplateOutput, error) {
+func (m *MockSESAPI) DeleteCustomVerificationEmailTemplateWithContext(arg0 context.Context, arg1 *ses.DeleteCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.DeleteCustomVerificationEmailTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -731,7 +731,7 @@ func (mr *MockSESAPIMockRecorder) DeleteIdentityPolicyRequest(arg0 interface{}) 
 }
 
 // DeleteIdentityPolicyWithContext mocks base method
-func (m *MockSESAPI) DeleteIdentityPolicyWithContext(arg0 aws.Context, arg1 *ses.DeleteIdentityPolicyInput, arg2 ...request.Option) (*ses.DeleteIdentityPolicyOutput, error) {
+func (m *MockSESAPI) DeleteIdentityPolicyWithContext(arg0 context.Context, arg1 *ses.DeleteIdentityPolicyInput, arg2 ...request.Option) (*ses.DeleteIdentityPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockSESAPIMockRecorder) DeleteIdentityRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteIdentityWithContext mocks base method
-func (m *MockSESAPI) DeleteIdentityWithContext(arg0 aws.Context, arg1 *ses.DeleteIdentityInput, arg2 ...request.Option) (*ses.DeleteIdentityOutput, error) {
+func (m *MockSESAPI) DeleteIdentityWithContext(arg0 context.Context, arg1 *ses.DeleteIdentityInput, arg2 ...request.Option) (*ses.DeleteIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockSESAPIMockRecorder) DeleteReceiptFilterRequest(arg0 interface{}) *
 }
 
 // DeleteReceiptFilterWithContext mocks base method
-func (m *MockSESAPI) DeleteReceiptFilterWithContext(arg0 aws.Context, arg1 *ses.DeleteReceiptFilterInput, arg2 ...request.Option) (*ses.DeleteReceiptFilterOutput, error) {
+func (m *MockSESAPI) DeleteReceiptFilterWithContext(arg0 context.Context, arg1 *ses.DeleteReceiptFilterInput, arg2 ...request.Option) (*ses.DeleteReceiptFilterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -896,7 +896,7 @@ func (mr *MockSESAPIMockRecorder) DeleteReceiptRuleSetRequest(arg0 interface{}) 
 }
 
 // DeleteReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) DeleteReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.DeleteReceiptRuleSetInput, arg2 ...request.Option) (*ses.DeleteReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) DeleteReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.DeleteReceiptRuleSetInput, arg2 ...request.Option) (*ses.DeleteReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockSESAPIMockRecorder) DeleteReceiptRuleSetWithContext(arg0, arg1 int
 }
 
 // DeleteReceiptRuleWithContext mocks base method
-func (m *MockSESAPI) DeleteReceiptRuleWithContext(arg0 aws.Context, arg1 *ses.DeleteReceiptRuleInput, arg2 ...request.Option) (*ses.DeleteReceiptRuleOutput, error) {
+func (m *MockSESAPI) DeleteReceiptRuleWithContext(arg0 context.Context, arg1 *ses.DeleteReceiptRuleInput, arg2 ...request.Option) (*ses.DeleteReceiptRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockSESAPIMockRecorder) DeleteTemplateRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteTemplateWithContext mocks base method
-func (m *MockSESAPI) DeleteTemplateWithContext(arg0 aws.Context, arg1 *ses.DeleteTemplateInput, arg2 ...request.Option) (*ses.DeleteTemplateOutput, error) {
+func (m *MockSESAPI) DeleteTemplateWithContext(arg0 context.Context, arg1 *ses.DeleteTemplateInput, arg2 ...request.Option) (*ses.DeleteTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockSESAPIMockRecorder) DeleteVerifiedEmailAddressRequest(arg0 interfa
 }
 
 // DeleteVerifiedEmailAddressWithContext mocks base method
-func (m *MockSESAPI) DeleteVerifiedEmailAddressWithContext(arg0 aws.Context, arg1 *ses.DeleteVerifiedEmailAddressInput, arg2 ...request.Option) (*ses.DeleteVerifiedEmailAddressOutput, error) {
+func (m *MockSESAPI) DeleteVerifiedEmailAddressWithContext(arg0 context.Context, arg1 *ses.DeleteVerifiedEmailAddressInput, arg2 ...request.Option) (*ses.DeleteVerifiedEmailAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockSESAPIMockRecorder) DescribeActiveReceiptRuleSetRequest(arg0 inter
 }
 
 // DescribeActiveReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) DescribeActiveReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.DescribeActiveReceiptRuleSetInput, arg2 ...request.Option) (*ses.DescribeActiveReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) DescribeActiveReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.DescribeActiveReceiptRuleSetInput, arg2 ...request.Option) (*ses.DescribeActiveReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockSESAPIMockRecorder) DescribeConfigurationSetRequest(arg0 interface
 }
 
 // DescribeConfigurationSetWithContext mocks base method
-func (m *MockSESAPI) DescribeConfigurationSetWithContext(arg0 aws.Context, arg1 *ses.DescribeConfigurationSetInput, arg2 ...request.Option) (*ses.DescribeConfigurationSetOutput, error) {
+func (m *MockSESAPI) DescribeConfigurationSetWithContext(arg0 context.Context, arg1 *ses.DescribeConfigurationSetInput, arg2 ...request.Option) (*ses.DescribeConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1196,7 +1196,7 @@ func (mr *MockSESAPIMockRecorder) DescribeReceiptRuleSetRequest(arg0 interface{}
 }
 
 // DescribeReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) DescribeReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.DescribeReceiptRuleSetInput, arg2 ...request.Option) (*ses.DescribeReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) DescribeReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.DescribeReceiptRuleSetInput, arg2 ...request.Option) (*ses.DescribeReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockSESAPIMockRecorder) DescribeReceiptRuleSetWithContext(arg0, arg1 i
 }
 
 // DescribeReceiptRuleWithContext mocks base method
-func (m *MockSESAPI) DescribeReceiptRuleWithContext(arg0 aws.Context, arg1 *ses.DescribeReceiptRuleInput, arg2 ...request.Option) (*ses.DescribeReceiptRuleOutput, error) {
+func (m *MockSESAPI) DescribeReceiptRuleWithContext(arg0 context.Context, arg1 *ses.DescribeReceiptRuleInput, arg2 ...request.Option) (*ses.DescribeReceiptRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockSESAPIMockRecorder) GetAccountSendingEnabledRequest(arg0 interface
 }
 
 // GetAccountSendingEnabledWithContext mocks base method
-func (m *MockSESAPI) GetAccountSendingEnabledWithContext(arg0 aws.Context, arg1 *ses.GetAccountSendingEnabledInput, arg2 ...request.Option) (*ses.GetAccountSendingEnabledOutput, error) {
+func (m *MockSESAPI) GetAccountSendingEnabledWithContext(arg0 context.Context, arg1 *ses.GetAccountSendingEnabledInput, arg2 ...request.Option) (*ses.GetAccountSendingEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockSESAPIMockRecorder) GetCustomVerificationEmailTemplateRequest(arg0
 }
 
 // GetCustomVerificationEmailTemplateWithContext mocks base method
-func (m *MockSESAPI) GetCustomVerificationEmailTemplateWithContext(arg0 aws.Context, arg1 *ses.GetCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.GetCustomVerificationEmailTemplateOutput, error) {
+func (m *MockSESAPI) GetCustomVerificationEmailTemplateWithContext(arg0 context.Context, arg1 *ses.GetCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.GetCustomVerificationEmailTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1366,7 +1366,7 @@ func (mr *MockSESAPIMockRecorder) GetIdentityDkimAttributesRequest(arg0 interfac
 }
 
 // GetIdentityDkimAttributesWithContext mocks base method
-func (m *MockSESAPI) GetIdentityDkimAttributesWithContext(arg0 aws.Context, arg1 *ses.GetIdentityDkimAttributesInput, arg2 ...request.Option) (*ses.GetIdentityDkimAttributesOutput, error) {
+func (m *MockSESAPI) GetIdentityDkimAttributesWithContext(arg0 context.Context, arg1 *ses.GetIdentityDkimAttributesInput, arg2 ...request.Option) (*ses.GetIdentityDkimAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockSESAPIMockRecorder) GetIdentityMailFromDomainAttributesRequest(arg
 }
 
 // GetIdentityMailFromDomainAttributesWithContext mocks base method
-func (m *MockSESAPI) GetIdentityMailFromDomainAttributesWithContext(arg0 aws.Context, arg1 *ses.GetIdentityMailFromDomainAttributesInput, arg2 ...request.Option) (*ses.GetIdentityMailFromDomainAttributesOutput, error) {
+func (m *MockSESAPI) GetIdentityMailFromDomainAttributesWithContext(arg0 context.Context, arg1 *ses.GetIdentityMailFromDomainAttributesInput, arg2 ...request.Option) (*ses.GetIdentityMailFromDomainAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1466,7 +1466,7 @@ func (mr *MockSESAPIMockRecorder) GetIdentityNotificationAttributesRequest(arg0 
 }
 
 // GetIdentityNotificationAttributesWithContext mocks base method
-func (m *MockSESAPI) GetIdentityNotificationAttributesWithContext(arg0 aws.Context, arg1 *ses.GetIdentityNotificationAttributesInput, arg2 ...request.Option) (*ses.GetIdentityNotificationAttributesOutput, error) {
+func (m *MockSESAPI) GetIdentityNotificationAttributesWithContext(arg0 context.Context, arg1 *ses.GetIdentityNotificationAttributesInput, arg2 ...request.Option) (*ses.GetIdentityNotificationAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockSESAPIMockRecorder) GetIdentityPoliciesRequest(arg0 interface{}) *
 }
 
 // GetIdentityPoliciesWithContext mocks base method
-func (m *MockSESAPI) GetIdentityPoliciesWithContext(arg0 aws.Context, arg1 *ses.GetIdentityPoliciesInput, arg2 ...request.Option) (*ses.GetIdentityPoliciesOutput, error) {
+func (m *MockSESAPI) GetIdentityPoliciesWithContext(arg0 context.Context, arg1 *ses.GetIdentityPoliciesInput, arg2 ...request.Option) (*ses.GetIdentityPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockSESAPIMockRecorder) GetIdentityVerificationAttributesRequest(arg0 
 }
 
 // GetIdentityVerificationAttributesWithContext mocks base method
-func (m *MockSESAPI) GetIdentityVerificationAttributesWithContext(arg0 aws.Context, arg1 *ses.GetIdentityVerificationAttributesInput, arg2 ...request.Option) (*ses.GetIdentityVerificationAttributesOutput, error) {
+func (m *MockSESAPI) GetIdentityVerificationAttributesWithContext(arg0 context.Context, arg1 *ses.GetIdentityVerificationAttributesInput, arg2 ...request.Option) (*ses.GetIdentityVerificationAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockSESAPIMockRecorder) GetSendQuotaRequest(arg0 interface{}) *gomock.
 }
 
 // GetSendQuotaWithContext mocks base method
-func (m *MockSESAPI) GetSendQuotaWithContext(arg0 aws.Context, arg1 *ses.GetSendQuotaInput, arg2 ...request.Option) (*ses.GetSendQuotaOutput, error) {
+func (m *MockSESAPI) GetSendQuotaWithContext(arg0 context.Context, arg1 *ses.GetSendQuotaInput, arg2 ...request.Option) (*ses.GetSendQuotaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockSESAPIMockRecorder) GetSendStatisticsRequest(arg0 interface{}) *go
 }
 
 // GetSendStatisticsWithContext mocks base method
-func (m *MockSESAPI) GetSendStatisticsWithContext(arg0 aws.Context, arg1 *ses.GetSendStatisticsInput, arg2 ...request.Option) (*ses.GetSendStatisticsOutput, error) {
+func (m *MockSESAPI) GetSendStatisticsWithContext(arg0 context.Context, arg1 *ses.GetSendStatisticsInput, arg2 ...request.Option) (*ses.GetSendStatisticsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockSESAPIMockRecorder) GetTemplateRequest(arg0 interface{}) *gomock.C
 }
 
 // GetTemplateWithContext mocks base method
-func (m *MockSESAPI) GetTemplateWithContext(arg0 aws.Context, arg1 *ses.GetTemplateInput, arg2 ...request.Option) (*ses.GetTemplateOutput, error) {
+func (m *MockSESAPI) GetTemplateWithContext(arg0 context.Context, arg1 *ses.GetTemplateInput, arg2 ...request.Option) (*ses.GetTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockSESAPIMockRecorder) ListConfigurationSetsRequest(arg0 interface{})
 }
 
 // ListConfigurationSetsWithContext mocks base method
-func (m *MockSESAPI) ListConfigurationSetsWithContext(arg0 aws.Context, arg1 *ses.ListConfigurationSetsInput, arg2 ...request.Option) (*ses.ListConfigurationSetsOutput, error) {
+func (m *MockSESAPI) ListConfigurationSetsWithContext(arg0 context.Context, arg1 *ses.ListConfigurationSetsInput, arg2 ...request.Option) (*ses.ListConfigurationSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1815,7 +1815,7 @@ func (mr *MockSESAPIMockRecorder) ListCustomVerificationEmailTemplatesPages(arg0
 }
 
 // ListCustomVerificationEmailTemplatesPagesWithContext mocks base method
-func (m *MockSESAPI) ListCustomVerificationEmailTemplatesPagesWithContext(arg0 aws.Context, arg1 *ses.ListCustomVerificationEmailTemplatesInput, arg2 func(*ses.ListCustomVerificationEmailTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSESAPI) ListCustomVerificationEmailTemplatesPagesWithContext(arg0 context.Context, arg1 *ses.ListCustomVerificationEmailTemplatesInput, arg2 func(*ses.ListCustomVerificationEmailTemplatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1849,7 +1849,7 @@ func (mr *MockSESAPIMockRecorder) ListCustomVerificationEmailTemplatesRequest(ar
 }
 
 // ListCustomVerificationEmailTemplatesWithContext mocks base method
-func (m *MockSESAPI) ListCustomVerificationEmailTemplatesWithContext(arg0 aws.Context, arg1 *ses.ListCustomVerificationEmailTemplatesInput, arg2 ...request.Option) (*ses.ListCustomVerificationEmailTemplatesOutput, error) {
+func (m *MockSESAPI) ListCustomVerificationEmailTemplatesWithContext(arg0 context.Context, arg1 *ses.ListCustomVerificationEmailTemplatesInput, arg2 ...request.Option) (*ses.ListCustomVerificationEmailTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1898,7 +1898,7 @@ func (mr *MockSESAPIMockRecorder) ListIdentitiesPages(arg0, arg1 interface{}) *g
 }
 
 // ListIdentitiesPagesWithContext mocks base method
-func (m *MockSESAPI) ListIdentitiesPagesWithContext(arg0 aws.Context, arg1 *ses.ListIdentitiesInput, arg2 func(*ses.ListIdentitiesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSESAPI) ListIdentitiesPagesWithContext(arg0 context.Context, arg1 *ses.ListIdentitiesInput, arg2 func(*ses.ListIdentitiesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1932,7 +1932,7 @@ func (mr *MockSESAPIMockRecorder) ListIdentitiesRequest(arg0 interface{}) *gomoc
 }
 
 // ListIdentitiesWithContext mocks base method
-func (m *MockSESAPI) ListIdentitiesWithContext(arg0 aws.Context, arg1 *ses.ListIdentitiesInput, arg2 ...request.Option) (*ses.ListIdentitiesOutput, error) {
+func (m *MockSESAPI) ListIdentitiesWithContext(arg0 context.Context, arg1 *ses.ListIdentitiesInput, arg2 ...request.Option) (*ses.ListIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1982,7 +1982,7 @@ func (mr *MockSESAPIMockRecorder) ListIdentityPoliciesRequest(arg0 interface{}) 
 }
 
 // ListIdentityPoliciesWithContext mocks base method
-func (m *MockSESAPI) ListIdentityPoliciesWithContext(arg0 aws.Context, arg1 *ses.ListIdentityPoliciesInput, arg2 ...request.Option) (*ses.ListIdentityPoliciesOutput, error) {
+func (m *MockSESAPI) ListIdentityPoliciesWithContext(arg0 context.Context, arg1 *ses.ListIdentityPoliciesInput, arg2 ...request.Option) (*ses.ListIdentityPoliciesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2032,7 +2032,7 @@ func (mr *MockSESAPIMockRecorder) ListReceiptFiltersRequest(arg0 interface{}) *g
 }
 
 // ListReceiptFiltersWithContext mocks base method
-func (m *MockSESAPI) ListReceiptFiltersWithContext(arg0 aws.Context, arg1 *ses.ListReceiptFiltersInput, arg2 ...request.Option) (*ses.ListReceiptFiltersOutput, error) {
+func (m *MockSESAPI) ListReceiptFiltersWithContext(arg0 context.Context, arg1 *ses.ListReceiptFiltersInput, arg2 ...request.Option) (*ses.ListReceiptFiltersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2082,7 +2082,7 @@ func (mr *MockSESAPIMockRecorder) ListReceiptRuleSetsRequest(arg0 interface{}) *
 }
 
 // ListReceiptRuleSetsWithContext mocks base method
-func (m *MockSESAPI) ListReceiptRuleSetsWithContext(arg0 aws.Context, arg1 *ses.ListReceiptRuleSetsInput, arg2 ...request.Option) (*ses.ListReceiptRuleSetsOutput, error) {
+func (m *MockSESAPI) ListReceiptRuleSetsWithContext(arg0 context.Context, arg1 *ses.ListReceiptRuleSetsInput, arg2 ...request.Option) (*ses.ListReceiptRuleSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2132,7 +2132,7 @@ func (mr *MockSESAPIMockRecorder) ListTemplatesRequest(arg0 interface{}) *gomock
 }
 
 // ListTemplatesWithContext mocks base method
-func (m *MockSESAPI) ListTemplatesWithContext(arg0 aws.Context, arg1 *ses.ListTemplatesInput, arg2 ...request.Option) (*ses.ListTemplatesOutput, error) {
+func (m *MockSESAPI) ListTemplatesWithContext(arg0 context.Context, arg1 *ses.ListTemplatesInput, arg2 ...request.Option) (*ses.ListTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2182,7 +2182,7 @@ func (mr *MockSESAPIMockRecorder) ListVerifiedEmailAddressesRequest(arg0 interfa
 }
 
 // ListVerifiedEmailAddressesWithContext mocks base method
-func (m *MockSESAPI) ListVerifiedEmailAddressesWithContext(arg0 aws.Context, arg1 *ses.ListVerifiedEmailAddressesInput, arg2 ...request.Option) (*ses.ListVerifiedEmailAddressesOutput, error) {
+func (m *MockSESAPI) ListVerifiedEmailAddressesWithContext(arg0 context.Context, arg1 *ses.ListVerifiedEmailAddressesInput, arg2 ...request.Option) (*ses.ListVerifiedEmailAddressesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2232,7 +2232,7 @@ func (mr *MockSESAPIMockRecorder) PutIdentityPolicyRequest(arg0 interface{}) *go
 }
 
 // PutIdentityPolicyWithContext mocks base method
-func (m *MockSESAPI) PutIdentityPolicyWithContext(arg0 aws.Context, arg1 *ses.PutIdentityPolicyInput, arg2 ...request.Option) (*ses.PutIdentityPolicyOutput, error) {
+func (m *MockSESAPI) PutIdentityPolicyWithContext(arg0 context.Context, arg1 *ses.PutIdentityPolicyInput, arg2 ...request.Option) (*ses.PutIdentityPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2282,7 +2282,7 @@ func (mr *MockSESAPIMockRecorder) ReorderReceiptRuleSetRequest(arg0 interface{})
 }
 
 // ReorderReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) ReorderReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.ReorderReceiptRuleSetInput, arg2 ...request.Option) (*ses.ReorderReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) ReorderReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.ReorderReceiptRuleSetInput, arg2 ...request.Option) (*ses.ReorderReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2332,7 +2332,7 @@ func (mr *MockSESAPIMockRecorder) SendBounceRequest(arg0 interface{}) *gomock.Ca
 }
 
 // SendBounceWithContext mocks base method
-func (m *MockSESAPI) SendBounceWithContext(arg0 aws.Context, arg1 *ses.SendBounceInput, arg2 ...request.Option) (*ses.SendBounceOutput, error) {
+func (m *MockSESAPI) SendBounceWithContext(arg0 context.Context, arg1 *ses.SendBounceInput, arg2 ...request.Option) (*ses.SendBounceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2382,7 +2382,7 @@ func (mr *MockSESAPIMockRecorder) SendBulkTemplatedEmailRequest(arg0 interface{}
 }
 
 // SendBulkTemplatedEmailWithContext mocks base method
-func (m *MockSESAPI) SendBulkTemplatedEmailWithContext(arg0 aws.Context, arg1 *ses.SendBulkTemplatedEmailInput, arg2 ...request.Option) (*ses.SendBulkTemplatedEmailOutput, error) {
+func (m *MockSESAPI) SendBulkTemplatedEmailWithContext(arg0 context.Context, arg1 *ses.SendBulkTemplatedEmailInput, arg2 ...request.Option) (*ses.SendBulkTemplatedEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2432,7 +2432,7 @@ func (mr *MockSESAPIMockRecorder) SendCustomVerificationEmailRequest(arg0 interf
 }
 
 // SendCustomVerificationEmailWithContext mocks base method
-func (m *MockSESAPI) SendCustomVerificationEmailWithContext(arg0 aws.Context, arg1 *ses.SendCustomVerificationEmailInput, arg2 ...request.Option) (*ses.SendCustomVerificationEmailOutput, error) {
+func (m *MockSESAPI) SendCustomVerificationEmailWithContext(arg0 context.Context, arg1 *ses.SendCustomVerificationEmailInput, arg2 ...request.Option) (*ses.SendCustomVerificationEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2482,7 +2482,7 @@ func (mr *MockSESAPIMockRecorder) SendEmailRequest(arg0 interface{}) *gomock.Cal
 }
 
 // SendEmailWithContext mocks base method
-func (m *MockSESAPI) SendEmailWithContext(arg0 aws.Context, arg1 *ses.SendEmailInput, arg2 ...request.Option) (*ses.SendEmailOutput, error) {
+func (m *MockSESAPI) SendEmailWithContext(arg0 context.Context, arg1 *ses.SendEmailInput, arg2 ...request.Option) (*ses.SendEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2532,7 +2532,7 @@ func (mr *MockSESAPIMockRecorder) SendRawEmailRequest(arg0 interface{}) *gomock.
 }
 
 // SendRawEmailWithContext mocks base method
-func (m *MockSESAPI) SendRawEmailWithContext(arg0 aws.Context, arg1 *ses.SendRawEmailInput, arg2 ...request.Option) (*ses.SendRawEmailOutput, error) {
+func (m *MockSESAPI) SendRawEmailWithContext(arg0 context.Context, arg1 *ses.SendRawEmailInput, arg2 ...request.Option) (*ses.SendRawEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2582,7 +2582,7 @@ func (mr *MockSESAPIMockRecorder) SendTemplatedEmailRequest(arg0 interface{}) *g
 }
 
 // SendTemplatedEmailWithContext mocks base method
-func (m *MockSESAPI) SendTemplatedEmailWithContext(arg0 aws.Context, arg1 *ses.SendTemplatedEmailInput, arg2 ...request.Option) (*ses.SendTemplatedEmailOutput, error) {
+func (m *MockSESAPI) SendTemplatedEmailWithContext(arg0 context.Context, arg1 *ses.SendTemplatedEmailInput, arg2 ...request.Option) (*ses.SendTemplatedEmailOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2632,7 +2632,7 @@ func (mr *MockSESAPIMockRecorder) SetActiveReceiptRuleSetRequest(arg0 interface{
 }
 
 // SetActiveReceiptRuleSetWithContext mocks base method
-func (m *MockSESAPI) SetActiveReceiptRuleSetWithContext(arg0 aws.Context, arg1 *ses.SetActiveReceiptRuleSetInput, arg2 ...request.Option) (*ses.SetActiveReceiptRuleSetOutput, error) {
+func (m *MockSESAPI) SetActiveReceiptRuleSetWithContext(arg0 context.Context, arg1 *ses.SetActiveReceiptRuleSetInput, arg2 ...request.Option) (*ses.SetActiveReceiptRuleSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2682,7 +2682,7 @@ func (mr *MockSESAPIMockRecorder) SetIdentityDkimEnabledRequest(arg0 interface{}
 }
 
 // SetIdentityDkimEnabledWithContext mocks base method
-func (m *MockSESAPI) SetIdentityDkimEnabledWithContext(arg0 aws.Context, arg1 *ses.SetIdentityDkimEnabledInput, arg2 ...request.Option) (*ses.SetIdentityDkimEnabledOutput, error) {
+func (m *MockSESAPI) SetIdentityDkimEnabledWithContext(arg0 context.Context, arg1 *ses.SetIdentityDkimEnabledInput, arg2 ...request.Option) (*ses.SetIdentityDkimEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2732,7 +2732,7 @@ func (mr *MockSESAPIMockRecorder) SetIdentityFeedbackForwardingEnabledRequest(ar
 }
 
 // SetIdentityFeedbackForwardingEnabledWithContext mocks base method
-func (m *MockSESAPI) SetIdentityFeedbackForwardingEnabledWithContext(arg0 aws.Context, arg1 *ses.SetIdentityFeedbackForwardingEnabledInput, arg2 ...request.Option) (*ses.SetIdentityFeedbackForwardingEnabledOutput, error) {
+func (m *MockSESAPI) SetIdentityFeedbackForwardingEnabledWithContext(arg0 context.Context, arg1 *ses.SetIdentityFeedbackForwardingEnabledInput, arg2 ...request.Option) (*ses.SetIdentityFeedbackForwardingEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2782,7 +2782,7 @@ func (mr *MockSESAPIMockRecorder) SetIdentityHeadersInNotificationsEnabledReques
 }
 
 // SetIdentityHeadersInNotificationsEnabledWithContext mocks base method
-func (m *MockSESAPI) SetIdentityHeadersInNotificationsEnabledWithContext(arg0 aws.Context, arg1 *ses.SetIdentityHeadersInNotificationsEnabledInput, arg2 ...request.Option) (*ses.SetIdentityHeadersInNotificationsEnabledOutput, error) {
+func (m *MockSESAPI) SetIdentityHeadersInNotificationsEnabledWithContext(arg0 context.Context, arg1 *ses.SetIdentityHeadersInNotificationsEnabledInput, arg2 ...request.Option) (*ses.SetIdentityHeadersInNotificationsEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2832,7 +2832,7 @@ func (mr *MockSESAPIMockRecorder) SetIdentityMailFromDomainRequest(arg0 interfac
 }
 
 // SetIdentityMailFromDomainWithContext mocks base method
-func (m *MockSESAPI) SetIdentityMailFromDomainWithContext(arg0 aws.Context, arg1 *ses.SetIdentityMailFromDomainInput, arg2 ...request.Option) (*ses.SetIdentityMailFromDomainOutput, error) {
+func (m *MockSESAPI) SetIdentityMailFromDomainWithContext(arg0 context.Context, arg1 *ses.SetIdentityMailFromDomainInput, arg2 ...request.Option) (*ses.SetIdentityMailFromDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2882,7 +2882,7 @@ func (mr *MockSESAPIMockRecorder) SetIdentityNotificationTopicRequest(arg0 inter
 }
 
 // SetIdentityNotificationTopicWithContext mocks base method
-func (m *MockSESAPI) SetIdentityNotificationTopicWithContext(arg0 aws.Context, arg1 *ses.SetIdentityNotificationTopicInput, arg2 ...request.Option) (*ses.SetIdentityNotificationTopicOutput, error) {
+func (m *MockSESAPI) SetIdentityNotificationTopicWithContext(arg0 context.Context, arg1 *ses.SetIdentityNotificationTopicInput, arg2 ...request.Option) (*ses.SetIdentityNotificationTopicOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2932,7 +2932,7 @@ func (mr *MockSESAPIMockRecorder) SetReceiptRulePositionRequest(arg0 interface{}
 }
 
 // SetReceiptRulePositionWithContext mocks base method
-func (m *MockSESAPI) SetReceiptRulePositionWithContext(arg0 aws.Context, arg1 *ses.SetReceiptRulePositionInput, arg2 ...request.Option) (*ses.SetReceiptRulePositionOutput, error) {
+func (m *MockSESAPI) SetReceiptRulePositionWithContext(arg0 context.Context, arg1 *ses.SetReceiptRulePositionInput, arg2 ...request.Option) (*ses.SetReceiptRulePositionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2982,7 +2982,7 @@ func (mr *MockSESAPIMockRecorder) TestRenderTemplateRequest(arg0 interface{}) *g
 }
 
 // TestRenderTemplateWithContext mocks base method
-func (m *MockSESAPI) TestRenderTemplateWithContext(arg0 aws.Context, arg1 *ses.TestRenderTemplateInput, arg2 ...request.Option) (*ses.TestRenderTemplateOutput, error) {
+func (m *MockSESAPI) TestRenderTemplateWithContext(arg0 context.Context, arg1 *ses.TestRenderTemplateInput, arg2 ...request.Option) (*ses.TestRenderTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3032,7 +3032,7 @@ func (mr *MockSESAPIMockRecorder) UpdateAccountSendingEnabledRequest(arg0 interf
 }
 
 // UpdateAccountSendingEnabledWithContext mocks base method
-func (m *MockSESAPI) UpdateAccountSendingEnabledWithContext(arg0 aws.Context, arg1 *ses.UpdateAccountSendingEnabledInput, arg2 ...request.Option) (*ses.UpdateAccountSendingEnabledOutput, error) {
+func (m *MockSESAPI) UpdateAccountSendingEnabledWithContext(arg0 context.Context, arg1 *ses.UpdateAccountSendingEnabledInput, arg2 ...request.Option) (*ses.UpdateAccountSendingEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3082,7 +3082,7 @@ func (mr *MockSESAPIMockRecorder) UpdateConfigurationSetEventDestinationRequest(
 }
 
 // UpdateConfigurationSetEventDestinationWithContext mocks base method
-func (m *MockSESAPI) UpdateConfigurationSetEventDestinationWithContext(arg0 aws.Context, arg1 *ses.UpdateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetEventDestinationOutput, error) {
+func (m *MockSESAPI) UpdateConfigurationSetEventDestinationWithContext(arg0 context.Context, arg1 *ses.UpdateConfigurationSetEventDestinationInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetEventDestinationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3132,7 +3132,7 @@ func (mr *MockSESAPIMockRecorder) UpdateConfigurationSetReputationMetricsEnabled
 }
 
 // UpdateConfigurationSetReputationMetricsEnabledWithContext mocks base method
-func (m *MockSESAPI) UpdateConfigurationSetReputationMetricsEnabledWithContext(arg0 aws.Context, arg1 *ses.UpdateConfigurationSetReputationMetricsEnabledInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetReputationMetricsEnabledOutput, error) {
+func (m *MockSESAPI) UpdateConfigurationSetReputationMetricsEnabledWithContext(arg0 context.Context, arg1 *ses.UpdateConfigurationSetReputationMetricsEnabledInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetReputationMetricsEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3182,7 +3182,7 @@ func (mr *MockSESAPIMockRecorder) UpdateConfigurationSetSendingEnabledRequest(ar
 }
 
 // UpdateConfigurationSetSendingEnabledWithContext mocks base method
-func (m *MockSESAPI) UpdateConfigurationSetSendingEnabledWithContext(arg0 aws.Context, arg1 *ses.UpdateConfigurationSetSendingEnabledInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetSendingEnabledOutput, error) {
+func (m *MockSESAPI) UpdateConfigurationSetSendingEnabledWithContext(arg0 context.Context, arg1 *ses.UpdateConfigurationSetSendingEnabledInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetSendingEnabledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3232,7 +3232,7 @@ func (mr *MockSESAPIMockRecorder) UpdateConfigurationSetTrackingOptionsRequest(a
 }
 
 // UpdateConfigurationSetTrackingOptionsWithContext mocks base method
-func (m *MockSESAPI) UpdateConfigurationSetTrackingOptionsWithContext(arg0 aws.Context, arg1 *ses.UpdateConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetTrackingOptionsOutput, error) {
+func (m *MockSESAPI) UpdateConfigurationSetTrackingOptionsWithContext(arg0 context.Context, arg1 *ses.UpdateConfigurationSetTrackingOptionsInput, arg2 ...request.Option) (*ses.UpdateConfigurationSetTrackingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3282,7 +3282,7 @@ func (mr *MockSESAPIMockRecorder) UpdateCustomVerificationEmailTemplateRequest(a
 }
 
 // UpdateCustomVerificationEmailTemplateWithContext mocks base method
-func (m *MockSESAPI) UpdateCustomVerificationEmailTemplateWithContext(arg0 aws.Context, arg1 *ses.UpdateCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.UpdateCustomVerificationEmailTemplateOutput, error) {
+func (m *MockSESAPI) UpdateCustomVerificationEmailTemplateWithContext(arg0 context.Context, arg1 *ses.UpdateCustomVerificationEmailTemplateInput, arg2 ...request.Option) (*ses.UpdateCustomVerificationEmailTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3332,7 +3332,7 @@ func (mr *MockSESAPIMockRecorder) UpdateReceiptRuleRequest(arg0 interface{}) *go
 }
 
 // UpdateReceiptRuleWithContext mocks base method
-func (m *MockSESAPI) UpdateReceiptRuleWithContext(arg0 aws.Context, arg1 *ses.UpdateReceiptRuleInput, arg2 ...request.Option) (*ses.UpdateReceiptRuleOutput, error) {
+func (m *MockSESAPI) UpdateReceiptRuleWithContext(arg0 context.Context, arg1 *ses.UpdateReceiptRuleInput, arg2 ...request.Option) (*ses.UpdateReceiptRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3382,7 +3382,7 @@ func (mr *MockSESAPIMockRecorder) UpdateTemplateRequest(arg0 interface{}) *gomoc
 }
 
 // UpdateTemplateWithContext mocks base method
-func (m *MockSESAPI) UpdateTemplateWithContext(arg0 aws.Context, arg1 *ses.UpdateTemplateInput, arg2 ...request.Option) (*ses.UpdateTemplateOutput, error) {
+func (m *MockSESAPI) UpdateTemplateWithContext(arg0 context.Context, arg1 *ses.UpdateTemplateInput, arg2 ...request.Option) (*ses.UpdateTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3432,7 +3432,7 @@ func (mr *MockSESAPIMockRecorder) VerifyDomainDkimRequest(arg0 interface{}) *gom
 }
 
 // VerifyDomainDkimWithContext mocks base method
-func (m *MockSESAPI) VerifyDomainDkimWithContext(arg0 aws.Context, arg1 *ses.VerifyDomainDkimInput, arg2 ...request.Option) (*ses.VerifyDomainDkimOutput, error) {
+func (m *MockSESAPI) VerifyDomainDkimWithContext(arg0 context.Context, arg1 *ses.VerifyDomainDkimInput, arg2 ...request.Option) (*ses.VerifyDomainDkimOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3482,7 +3482,7 @@ func (mr *MockSESAPIMockRecorder) VerifyDomainIdentityRequest(arg0 interface{}) 
 }
 
 // VerifyDomainIdentityWithContext mocks base method
-func (m *MockSESAPI) VerifyDomainIdentityWithContext(arg0 aws.Context, arg1 *ses.VerifyDomainIdentityInput, arg2 ...request.Option) (*ses.VerifyDomainIdentityOutput, error) {
+func (m *MockSESAPI) VerifyDomainIdentityWithContext(arg0 context.Context, arg1 *ses.VerifyDomainIdentityInput, arg2 ...request.Option) (*ses.VerifyDomainIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3532,7 +3532,7 @@ func (mr *MockSESAPIMockRecorder) VerifyEmailAddressRequest(arg0 interface{}) *g
 }
 
 // VerifyEmailAddressWithContext mocks base method
-func (m *MockSESAPI) VerifyEmailAddressWithContext(arg0 aws.Context, arg1 *ses.VerifyEmailAddressInput, arg2 ...request.Option) (*ses.VerifyEmailAddressOutput, error) {
+func (m *MockSESAPI) VerifyEmailAddressWithContext(arg0 context.Context, arg1 *ses.VerifyEmailAddressInput, arg2 ...request.Option) (*ses.VerifyEmailAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3582,7 +3582,7 @@ func (mr *MockSESAPIMockRecorder) VerifyEmailIdentityRequest(arg0 interface{}) *
 }
 
 // VerifyEmailIdentityWithContext mocks base method
-func (m *MockSESAPI) VerifyEmailIdentityWithContext(arg0 aws.Context, arg1 *ses.VerifyEmailIdentityInput, arg2 ...request.Option) (*ses.VerifyEmailIdentityOutput, error) {
+func (m *MockSESAPI) VerifyEmailIdentityWithContext(arg0 context.Context, arg1 *ses.VerifyEmailIdentityInput, arg2 ...request.Option) (*ses.VerifyEmailIdentityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3616,7 +3616,7 @@ func (mr *MockSESAPIMockRecorder) WaitUntilIdentityExists(arg0 interface{}) *gom
 }
 
 // WaitUntilIdentityExistsWithContext mocks base method
-func (m *MockSESAPI) WaitUntilIdentityExistsWithContext(arg0 aws.Context, arg1 *ses.GetIdentityVerificationAttributesInput, arg2 ...request.WaiterOption) error {
+func (m *MockSESAPI) WaitUntilIdentityExistsWithContext(arg0 context.Context, arg1 *ses.GetIdentityVerificationAttributesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

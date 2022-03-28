@@ -5,7 +5,7 @@
 package elasticachemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	elasticache "github.com/aws/aws-sdk-go/service/elasticache"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockElastiCacheAPIMockRecorder) AddTagsToResourceRequest(arg0 interfac
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockElastiCacheAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *elasticache.AddTagsToResourceInput, arg2 ...request.Option) (*elasticache.TagListMessage, error) {
+func (m *MockElastiCacheAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *elasticache.AddTagsToResourceInput, arg2 ...request.Option) (*elasticache.TagListMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockElastiCacheAPIMockRecorder) AuthorizeCacheSecurityGroupIngressRequ
 }
 
 // AuthorizeCacheSecurityGroupIngressWithContext mocks base method
-func (m *MockElastiCacheAPI) AuthorizeCacheSecurityGroupIngressWithContext(arg0 aws.Context, arg1 *elasticache.AuthorizeCacheSecurityGroupIngressInput, arg2 ...request.Option) (*elasticache.AuthorizeCacheSecurityGroupIngressOutput, error) {
+func (m *MockElastiCacheAPI) AuthorizeCacheSecurityGroupIngressWithContext(arg0 context.Context, arg1 *elasticache.AuthorizeCacheSecurityGroupIngressInput, arg2 ...request.Option) (*elasticache.AuthorizeCacheSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CopySnapshotRequest(arg0 interface{}) 
 }
 
 // CopySnapshotWithContext mocks base method
-func (m *MockElastiCacheAPI) CopySnapshotWithContext(arg0 aws.Context, arg1 *elasticache.CopySnapshotInput, arg2 ...request.Option) (*elasticache.CopySnapshotOutput, error) {
+func (m *MockElastiCacheAPI) CopySnapshotWithContext(arg0 context.Context, arg1 *elasticache.CopySnapshotInput, arg2 ...request.Option) (*elasticache.CopySnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateCacheClusterRequest(arg0 interfa
 }
 
 // CreateCacheClusterWithContext mocks base method
-func (m *MockElastiCacheAPI) CreateCacheClusterWithContext(arg0 aws.Context, arg1 *elasticache.CreateCacheClusterInput, arg2 ...request.Option) (*elasticache.CreateCacheClusterOutput, error) {
+func (m *MockElastiCacheAPI) CreateCacheClusterWithContext(arg0 context.Context, arg1 *elasticache.CreateCacheClusterInput, arg2 ...request.Option) (*elasticache.CreateCacheClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateCacheParameterGroupRequest(arg0 
 }
 
 // CreateCacheParameterGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) CreateCacheParameterGroupWithContext(arg0 aws.Context, arg1 *elasticache.CreateCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.CreateCacheParameterGroupOutput, error) {
+func (m *MockElastiCacheAPI) CreateCacheParameterGroupWithContext(arg0 context.Context, arg1 *elasticache.CreateCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.CreateCacheParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateCacheSecurityGroupRequest(arg0 i
 }
 
 // CreateCacheSecurityGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) CreateCacheSecurityGroupWithContext(arg0 aws.Context, arg1 *elasticache.CreateCacheSecurityGroupInput, arg2 ...request.Option) (*elasticache.CreateCacheSecurityGroupOutput, error) {
+func (m *MockElastiCacheAPI) CreateCacheSecurityGroupWithContext(arg0 context.Context, arg1 *elasticache.CreateCacheSecurityGroupInput, arg2 ...request.Option) (*elasticache.CreateCacheSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateCacheSubnetGroupRequest(arg0 int
 }
 
 // CreateCacheSubnetGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) CreateCacheSubnetGroupWithContext(arg0 aws.Context, arg1 *elasticache.CreateCacheSubnetGroupInput, arg2 ...request.Option) (*elasticache.CreateCacheSubnetGroupOutput, error) {
+func (m *MockElastiCacheAPI) CreateCacheSubnetGroupWithContext(arg0 context.Context, arg1 *elasticache.CreateCacheSubnetGroupInput, arg2 ...request.Option) (*elasticache.CreateCacheSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateReplicationGroupRequest(arg0 int
 }
 
 // CreateReplicationGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) CreateReplicationGroupWithContext(arg0 aws.Context, arg1 *elasticache.CreateReplicationGroupInput, arg2 ...request.Option) (*elasticache.CreateReplicationGroupOutput, error) {
+func (m *MockElastiCacheAPI) CreateReplicationGroupWithContext(arg0 context.Context, arg1 *elasticache.CreateReplicationGroupInput, arg2 ...request.Option) (*elasticache.CreateReplicationGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockElastiCacheAPIMockRecorder) CreateSnapshotRequest(arg0 interface{}
 }
 
 // CreateSnapshotWithContext mocks base method
-func (m *MockElastiCacheAPI) CreateSnapshotWithContext(arg0 aws.Context, arg1 *elasticache.CreateSnapshotInput, arg2 ...request.Option) (*elasticache.CreateSnapshotOutput, error) {
+func (m *MockElastiCacheAPI) CreateSnapshotWithContext(arg0 context.Context, arg1 *elasticache.CreateSnapshotInput, arg2 ...request.Option) (*elasticache.CreateSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DecreaseReplicaCountRequest(arg0 inter
 }
 
 // DecreaseReplicaCountWithContext mocks base method
-func (m *MockElastiCacheAPI) DecreaseReplicaCountWithContext(arg0 aws.Context, arg1 *elasticache.DecreaseReplicaCountInput, arg2 ...request.Option) (*elasticache.DecreaseReplicaCountOutput, error) {
+func (m *MockElastiCacheAPI) DecreaseReplicaCountWithContext(arg0 context.Context, arg1 *elasticache.DecreaseReplicaCountInput, arg2 ...request.Option) (*elasticache.DecreaseReplicaCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DeleteCacheClusterRequest(arg0 interfa
 }
 
 // DeleteCacheClusterWithContext mocks base method
-func (m *MockElastiCacheAPI) DeleteCacheClusterWithContext(arg0 aws.Context, arg1 *elasticache.DeleteCacheClusterInput, arg2 ...request.Option) (*elasticache.DeleteCacheClusterOutput, error) {
+func (m *MockElastiCacheAPI) DeleteCacheClusterWithContext(arg0 context.Context, arg1 *elasticache.DeleteCacheClusterInput, arg2 ...request.Option) (*elasticache.DeleteCacheClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DeleteCacheParameterGroupRequest(arg0 
 }
 
 // DeleteCacheParameterGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) DeleteCacheParameterGroupWithContext(arg0 aws.Context, arg1 *elasticache.DeleteCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.DeleteCacheParameterGroupOutput, error) {
+func (m *MockElastiCacheAPI) DeleteCacheParameterGroupWithContext(arg0 context.Context, arg1 *elasticache.DeleteCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.DeleteCacheParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DeleteCacheSecurityGroupRequest(arg0 i
 }
 
 // DeleteCacheSecurityGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) DeleteCacheSecurityGroupWithContext(arg0 aws.Context, arg1 *elasticache.DeleteCacheSecurityGroupInput, arg2 ...request.Option) (*elasticache.DeleteCacheSecurityGroupOutput, error) {
+func (m *MockElastiCacheAPI) DeleteCacheSecurityGroupWithContext(arg0 context.Context, arg1 *elasticache.DeleteCacheSecurityGroupInput, arg2 ...request.Option) (*elasticache.DeleteCacheSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DeleteCacheSubnetGroupRequest(arg0 int
 }
 
 // DeleteCacheSubnetGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) DeleteCacheSubnetGroupWithContext(arg0 aws.Context, arg1 *elasticache.DeleteCacheSubnetGroupInput, arg2 ...request.Option) (*elasticache.DeleteCacheSubnetGroupOutput, error) {
+func (m *MockElastiCacheAPI) DeleteCacheSubnetGroupWithContext(arg0 context.Context, arg1 *elasticache.DeleteCacheSubnetGroupInput, arg2 ...request.Option) (*elasticache.DeleteCacheSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DeleteReplicationGroupRequest(arg0 int
 }
 
 // DeleteReplicationGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) DeleteReplicationGroupWithContext(arg0 aws.Context, arg1 *elasticache.DeleteReplicationGroupInput, arg2 ...request.Option) (*elasticache.DeleteReplicationGroupOutput, error) {
+func (m *MockElastiCacheAPI) DeleteReplicationGroupWithContext(arg0 context.Context, arg1 *elasticache.DeleteReplicationGroupInput, arg2 ...request.Option) (*elasticache.DeleteReplicationGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DeleteSnapshotRequest(arg0 interface{}
 }
 
 // DeleteSnapshotWithContext mocks base method
-func (m *MockElastiCacheAPI) DeleteSnapshotWithContext(arg0 aws.Context, arg1 *elasticache.DeleteSnapshotInput, arg2 ...request.Option) (*elasticache.DeleteSnapshotOutput, error) {
+func (m *MockElastiCacheAPI) DeleteSnapshotWithContext(arg0 context.Context, arg1 *elasticache.DeleteSnapshotInput, arg2 ...request.Option) (*elasticache.DeleteSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -865,7 +865,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheClustersPages(arg0, arg1 
 }
 
 // DescribeCacheClustersPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheClustersPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 func(*elasticache.DescribeCacheClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeCacheClustersPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 func(*elasticache.DescribeCacheClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -899,7 +899,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheClustersRequest(arg0 inte
 }
 
 // DescribeCacheClustersWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheClustersWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 ...request.Option) (*elasticache.DescribeCacheClustersOutput, error) {
+func (m *MockElastiCacheAPI) DescribeCacheClustersWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 ...request.Option) (*elasticache.DescribeCacheClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -948,7 +948,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheEngineVersionsPages(arg0,
 }
 
 // DescribeCacheEngineVersionsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheEngineVersionsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheEngineVersionsInput, arg2 func(*elasticache.DescribeCacheEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeCacheEngineVersionsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheEngineVersionsInput, arg2 func(*elasticache.DescribeCacheEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -982,7 +982,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheEngineVersionsRequest(arg
 }
 
 // DescribeCacheEngineVersionsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheEngineVersionsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheEngineVersionsInput, arg2 ...request.Option) (*elasticache.DescribeCacheEngineVersionsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeCacheEngineVersionsWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheEngineVersionsInput, arg2 ...request.Option) (*elasticache.DescribeCacheEngineVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1031,7 +1031,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheParameterGroupsPages(arg0
 }
 
 // DescribeCacheParameterGroupsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheParameterGroupsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheParameterGroupsInput, arg2 func(*elasticache.DescribeCacheParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeCacheParameterGroupsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheParameterGroupsInput, arg2 func(*elasticache.DescribeCacheParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1065,7 +1065,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheParameterGroupsRequest(ar
 }
 
 // DescribeCacheParameterGroupsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheParameterGroupsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheParameterGroupsInput, arg2 ...request.Option) (*elasticache.DescribeCacheParameterGroupsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeCacheParameterGroupsWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheParameterGroupsInput, arg2 ...request.Option) (*elasticache.DescribeCacheParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1114,7 +1114,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheParametersPages(arg0, arg
 }
 
 // DescribeCacheParametersPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheParametersPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheParametersInput, arg2 func(*elasticache.DescribeCacheParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeCacheParametersPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheParametersInput, arg2 func(*elasticache.DescribeCacheParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1148,7 +1148,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheParametersRequest(arg0 in
 }
 
 // DescribeCacheParametersWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheParametersWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheParametersInput, arg2 ...request.Option) (*elasticache.DescribeCacheParametersOutput, error) {
+func (m *MockElastiCacheAPI) DescribeCacheParametersWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheParametersInput, arg2 ...request.Option) (*elasticache.DescribeCacheParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1197,7 +1197,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheSecurityGroupsPages(arg0,
 }
 
 // DescribeCacheSecurityGroupsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheSecurityGroupsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheSecurityGroupsInput, arg2 func(*elasticache.DescribeCacheSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeCacheSecurityGroupsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheSecurityGroupsInput, arg2 func(*elasticache.DescribeCacheSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1231,7 +1231,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheSecurityGroupsRequest(arg
 }
 
 // DescribeCacheSecurityGroupsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheSecurityGroupsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheSecurityGroupsInput, arg2 ...request.Option) (*elasticache.DescribeCacheSecurityGroupsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeCacheSecurityGroupsWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheSecurityGroupsInput, arg2 ...request.Option) (*elasticache.DescribeCacheSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1280,7 +1280,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheSubnetGroupsPages(arg0, a
 }
 
 // DescribeCacheSubnetGroupsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheSubnetGroupsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheSubnetGroupsInput, arg2 func(*elasticache.DescribeCacheSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeCacheSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheSubnetGroupsInput, arg2 func(*elasticache.DescribeCacheSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1314,7 +1314,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeCacheSubnetGroupsRequest(arg0 
 }
 
 // DescribeCacheSubnetGroupsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeCacheSubnetGroupsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheSubnetGroupsInput, arg2 ...request.Option) (*elasticache.DescribeCacheSubnetGroupsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeCacheSubnetGroupsWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheSubnetGroupsInput, arg2 ...request.Option) (*elasticache.DescribeCacheSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1363,7 +1363,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeEngineDefaultParametersPages(a
 }
 
 // DescribeEngineDefaultParametersPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeEngineDefaultParametersPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeEngineDefaultParametersInput, arg2 func(*elasticache.DescribeEngineDefaultParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeEngineDefaultParametersPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeEngineDefaultParametersInput, arg2 func(*elasticache.DescribeEngineDefaultParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1397,7 +1397,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeEngineDefaultParametersRequest
 }
 
 // DescribeEngineDefaultParametersWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeEngineDefaultParametersWithContext(arg0 aws.Context, arg1 *elasticache.DescribeEngineDefaultParametersInput, arg2 ...request.Option) (*elasticache.DescribeEngineDefaultParametersOutput, error) {
+func (m *MockElastiCacheAPI) DescribeEngineDefaultParametersWithContext(arg0 context.Context, arg1 *elasticache.DescribeEngineDefaultParametersInput, arg2 ...request.Option) (*elasticache.DescribeEngineDefaultParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1446,7 +1446,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeEventsPages(arg0, arg1 interfa
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeEventsInput, arg2 func(*elasticache.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeEventsInput, arg2 func(*elasticache.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1480,7 +1480,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeEventsRequest(arg0 interface{}
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeEventsInput, arg2 ...request.Option) (*elasticache.DescribeEventsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *elasticache.DescribeEventsInput, arg2 ...request.Option) (*elasticache.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1529,7 +1529,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeReplicationGroupsPages(arg0, a
 }
 
 // DescribeReplicationGroupsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeReplicationGroupsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 func(*elasticache.DescribeReplicationGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeReplicationGroupsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 func(*elasticache.DescribeReplicationGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1563,7 +1563,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeReplicationGroupsRequest(arg0 
 }
 
 // DescribeReplicationGroupsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeReplicationGroupsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 ...request.Option) (*elasticache.DescribeReplicationGroupsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeReplicationGroupsWithContext(arg0 context.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 ...request.Option) (*elasticache.DescribeReplicationGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1627,7 +1627,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeReservedCacheNodesOfferingsPag
 }
 
 // DescribeReservedCacheNodesOfferingsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeReservedCacheNodesOfferingsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReservedCacheNodesOfferingsInput, arg2 func(*elasticache.DescribeReservedCacheNodesOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeReservedCacheNodesOfferingsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeReservedCacheNodesOfferingsInput, arg2 func(*elasticache.DescribeReservedCacheNodesOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1661,7 +1661,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeReservedCacheNodesOfferingsReq
 }
 
 // DescribeReservedCacheNodesOfferingsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeReservedCacheNodesOfferingsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReservedCacheNodesOfferingsInput, arg2 ...request.Option) (*elasticache.DescribeReservedCacheNodesOfferingsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeReservedCacheNodesOfferingsWithContext(arg0 context.Context, arg1 *elasticache.DescribeReservedCacheNodesOfferingsInput, arg2 ...request.Option) (*elasticache.DescribeReservedCacheNodesOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1695,7 +1695,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeReservedCacheNodesPages(arg0, 
 }
 
 // DescribeReservedCacheNodesPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeReservedCacheNodesPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReservedCacheNodesInput, arg2 func(*elasticache.DescribeReservedCacheNodesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeReservedCacheNodesPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeReservedCacheNodesInput, arg2 func(*elasticache.DescribeReservedCacheNodesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1729,7 +1729,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeReservedCacheNodesRequest(arg0
 }
 
 // DescribeReservedCacheNodesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeReservedCacheNodesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReservedCacheNodesInput, arg2 ...request.Option) (*elasticache.DescribeReservedCacheNodesOutput, error) {
+func (m *MockElastiCacheAPI) DescribeReservedCacheNodesWithContext(arg0 context.Context, arg1 *elasticache.DescribeReservedCacheNodesInput, arg2 ...request.Option) (*elasticache.DescribeReservedCacheNodesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1778,7 +1778,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeSnapshotsPages(arg0, arg1 inte
 }
 
 // DescribeSnapshotsPagesWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeSnapshotsPagesWithContext(arg0 aws.Context, arg1 *elasticache.DescribeSnapshotsInput, arg2 func(*elasticache.DescribeSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockElastiCacheAPI) DescribeSnapshotsPagesWithContext(arg0 context.Context, arg1 *elasticache.DescribeSnapshotsInput, arg2 func(*elasticache.DescribeSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1812,7 +1812,7 @@ func (mr *MockElastiCacheAPIMockRecorder) DescribeSnapshotsRequest(arg0 interfac
 }
 
 // DescribeSnapshotsWithContext mocks base method
-func (m *MockElastiCacheAPI) DescribeSnapshotsWithContext(arg0 aws.Context, arg1 *elasticache.DescribeSnapshotsInput, arg2 ...request.Option) (*elasticache.DescribeSnapshotsOutput, error) {
+func (m *MockElastiCacheAPI) DescribeSnapshotsWithContext(arg0 context.Context, arg1 *elasticache.DescribeSnapshotsInput, arg2 ...request.Option) (*elasticache.DescribeSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1862,7 +1862,7 @@ func (mr *MockElastiCacheAPIMockRecorder) IncreaseReplicaCountRequest(arg0 inter
 }
 
 // IncreaseReplicaCountWithContext mocks base method
-func (m *MockElastiCacheAPI) IncreaseReplicaCountWithContext(arg0 aws.Context, arg1 *elasticache.IncreaseReplicaCountInput, arg2 ...request.Option) (*elasticache.IncreaseReplicaCountOutput, error) {
+func (m *MockElastiCacheAPI) IncreaseReplicaCountWithContext(arg0 context.Context, arg1 *elasticache.IncreaseReplicaCountInput, arg2 ...request.Option) (*elasticache.IncreaseReplicaCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1912,7 +1912,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ListAllowedNodeTypeModificationsReques
 }
 
 // ListAllowedNodeTypeModificationsWithContext mocks base method
-func (m *MockElastiCacheAPI) ListAllowedNodeTypeModificationsWithContext(arg0 aws.Context, arg1 *elasticache.ListAllowedNodeTypeModificationsInput, arg2 ...request.Option) (*elasticache.ListAllowedNodeTypeModificationsOutput, error) {
+func (m *MockElastiCacheAPI) ListAllowedNodeTypeModificationsWithContext(arg0 context.Context, arg1 *elasticache.ListAllowedNodeTypeModificationsInput, arg2 ...request.Option) (*elasticache.ListAllowedNodeTypeModificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1962,7 +1962,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ListTagsForResourceRequest(arg0 interf
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockElastiCacheAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *elasticache.ListTagsForResourceInput, arg2 ...request.Option) (*elasticache.TagListMessage, error) {
+func (m *MockElastiCacheAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *elasticache.ListTagsForResourceInput, arg2 ...request.Option) (*elasticache.TagListMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2012,7 +2012,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ModifyCacheClusterRequest(arg0 interfa
 }
 
 // ModifyCacheClusterWithContext mocks base method
-func (m *MockElastiCacheAPI) ModifyCacheClusterWithContext(arg0 aws.Context, arg1 *elasticache.ModifyCacheClusterInput, arg2 ...request.Option) (*elasticache.ModifyCacheClusterOutput, error) {
+func (m *MockElastiCacheAPI) ModifyCacheClusterWithContext(arg0 context.Context, arg1 *elasticache.ModifyCacheClusterInput, arg2 ...request.Option) (*elasticache.ModifyCacheClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2062,7 +2062,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ModifyCacheParameterGroupRequest(arg0 
 }
 
 // ModifyCacheParameterGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) ModifyCacheParameterGroupWithContext(arg0 aws.Context, arg1 *elasticache.ModifyCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.CacheParameterGroupNameMessage, error) {
+func (m *MockElastiCacheAPI) ModifyCacheParameterGroupWithContext(arg0 context.Context, arg1 *elasticache.ModifyCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.CacheParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2112,7 +2112,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ModifyCacheSubnetGroupRequest(arg0 int
 }
 
 // ModifyCacheSubnetGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) ModifyCacheSubnetGroupWithContext(arg0 aws.Context, arg1 *elasticache.ModifyCacheSubnetGroupInput, arg2 ...request.Option) (*elasticache.ModifyCacheSubnetGroupOutput, error) {
+func (m *MockElastiCacheAPI) ModifyCacheSubnetGroupWithContext(arg0 context.Context, arg1 *elasticache.ModifyCacheSubnetGroupInput, arg2 ...request.Option) (*elasticache.ModifyCacheSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2192,7 +2192,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ModifyReplicationGroupShardConfigurati
 }
 
 // ModifyReplicationGroupShardConfigurationWithContext mocks base method
-func (m *MockElastiCacheAPI) ModifyReplicationGroupShardConfigurationWithContext(arg0 aws.Context, arg1 *elasticache.ModifyReplicationGroupShardConfigurationInput, arg2 ...request.Option) (*elasticache.ModifyReplicationGroupShardConfigurationOutput, error) {
+func (m *MockElastiCacheAPI) ModifyReplicationGroupShardConfigurationWithContext(arg0 context.Context, arg1 *elasticache.ModifyReplicationGroupShardConfigurationInput, arg2 ...request.Option) (*elasticache.ModifyReplicationGroupShardConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2212,7 +2212,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ModifyReplicationGroupShardConfigurati
 }
 
 // ModifyReplicationGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) ModifyReplicationGroupWithContext(arg0 aws.Context, arg1 *elasticache.ModifyReplicationGroupInput, arg2 ...request.Option) (*elasticache.ModifyReplicationGroupOutput, error) {
+func (m *MockElastiCacheAPI) ModifyReplicationGroupWithContext(arg0 context.Context, arg1 *elasticache.ModifyReplicationGroupInput, arg2 ...request.Option) (*elasticache.ModifyReplicationGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2262,7 +2262,7 @@ func (mr *MockElastiCacheAPIMockRecorder) PurchaseReservedCacheNodesOfferingRequ
 }
 
 // PurchaseReservedCacheNodesOfferingWithContext mocks base method
-func (m *MockElastiCacheAPI) PurchaseReservedCacheNodesOfferingWithContext(arg0 aws.Context, arg1 *elasticache.PurchaseReservedCacheNodesOfferingInput, arg2 ...request.Option) (*elasticache.PurchaseReservedCacheNodesOfferingOutput, error) {
+func (m *MockElastiCacheAPI) PurchaseReservedCacheNodesOfferingWithContext(arg0 context.Context, arg1 *elasticache.PurchaseReservedCacheNodesOfferingInput, arg2 ...request.Option) (*elasticache.PurchaseReservedCacheNodesOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2312,7 +2312,7 @@ func (mr *MockElastiCacheAPIMockRecorder) RebootCacheClusterRequest(arg0 interfa
 }
 
 // RebootCacheClusterWithContext mocks base method
-func (m *MockElastiCacheAPI) RebootCacheClusterWithContext(arg0 aws.Context, arg1 *elasticache.RebootCacheClusterInput, arg2 ...request.Option) (*elasticache.RebootCacheClusterOutput, error) {
+func (m *MockElastiCacheAPI) RebootCacheClusterWithContext(arg0 context.Context, arg1 *elasticache.RebootCacheClusterInput, arg2 ...request.Option) (*elasticache.RebootCacheClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2362,7 +2362,7 @@ func (mr *MockElastiCacheAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 int
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockElastiCacheAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *elasticache.RemoveTagsFromResourceInput, arg2 ...request.Option) (*elasticache.TagListMessage, error) {
+func (m *MockElastiCacheAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *elasticache.RemoveTagsFromResourceInput, arg2 ...request.Option) (*elasticache.TagListMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2412,7 +2412,7 @@ func (mr *MockElastiCacheAPIMockRecorder) ResetCacheParameterGroupRequest(arg0 i
 }
 
 // ResetCacheParameterGroupWithContext mocks base method
-func (m *MockElastiCacheAPI) ResetCacheParameterGroupWithContext(arg0 aws.Context, arg1 *elasticache.ResetCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.CacheParameterGroupNameMessage, error) {
+func (m *MockElastiCacheAPI) ResetCacheParameterGroupWithContext(arg0 context.Context, arg1 *elasticache.ResetCacheParameterGroupInput, arg2 ...request.Option) (*elasticache.CacheParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2462,7 +2462,7 @@ func (mr *MockElastiCacheAPIMockRecorder) RevokeCacheSecurityGroupIngressRequest
 }
 
 // RevokeCacheSecurityGroupIngressWithContext mocks base method
-func (m *MockElastiCacheAPI) RevokeCacheSecurityGroupIngressWithContext(arg0 aws.Context, arg1 *elasticache.RevokeCacheSecurityGroupIngressInput, arg2 ...request.Option) (*elasticache.RevokeCacheSecurityGroupIngressOutput, error) {
+func (m *MockElastiCacheAPI) RevokeCacheSecurityGroupIngressWithContext(arg0 context.Context, arg1 *elasticache.RevokeCacheSecurityGroupIngressInput, arg2 ...request.Option) (*elasticache.RevokeCacheSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2512,7 +2512,7 @@ func (mr *MockElastiCacheAPIMockRecorder) TestFailoverRequest(arg0 interface{}) 
 }
 
 // TestFailoverWithContext mocks base method
-func (m *MockElastiCacheAPI) TestFailoverWithContext(arg0 aws.Context, arg1 *elasticache.TestFailoverInput, arg2 ...request.Option) (*elasticache.TestFailoverOutput, error) {
+func (m *MockElastiCacheAPI) TestFailoverWithContext(arg0 context.Context, arg1 *elasticache.TestFailoverInput, arg2 ...request.Option) (*elasticache.TestFailoverOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2546,7 +2546,7 @@ func (mr *MockElastiCacheAPIMockRecorder) WaitUntilCacheClusterAvailable(arg0 in
 }
 
 // WaitUntilCacheClusterAvailableWithContext mocks base method
-func (m *MockElastiCacheAPI) WaitUntilCacheClusterAvailableWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 ...request.WaiterOption) error {
+func (m *MockElastiCacheAPI) WaitUntilCacheClusterAvailableWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2579,7 +2579,7 @@ func (mr *MockElastiCacheAPIMockRecorder) WaitUntilCacheClusterDeleted(arg0 inte
 }
 
 // WaitUntilCacheClusterDeletedWithContext mocks base method
-func (m *MockElastiCacheAPI) WaitUntilCacheClusterDeletedWithContext(arg0 aws.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 ...request.WaiterOption) error {
+func (m *MockElastiCacheAPI) WaitUntilCacheClusterDeletedWithContext(arg0 context.Context, arg1 *elasticache.DescribeCacheClustersInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2612,7 +2612,7 @@ func (mr *MockElastiCacheAPIMockRecorder) WaitUntilReplicationGroupAvailable(arg
 }
 
 // WaitUntilReplicationGroupAvailableWithContext mocks base method
-func (m *MockElastiCacheAPI) WaitUntilReplicationGroupAvailableWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 ...request.WaiterOption) error {
+func (m *MockElastiCacheAPI) WaitUntilReplicationGroupAvailableWithContext(arg0 context.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2645,7 +2645,7 @@ func (mr *MockElastiCacheAPIMockRecorder) WaitUntilReplicationGroupDeleted(arg0 
 }
 
 // WaitUntilReplicationGroupDeletedWithContext mocks base method
-func (m *MockElastiCacheAPI) WaitUntilReplicationGroupDeletedWithContext(arg0 aws.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 ...request.WaiterOption) error {
+func (m *MockElastiCacheAPI) WaitUntilReplicationGroupDeletedWithContext(arg0 context.Context, arg1 *elasticache.DescribeReplicationGroupsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

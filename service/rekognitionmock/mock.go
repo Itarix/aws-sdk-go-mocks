@@ -5,7 +5,7 @@
 package rekognitionmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	rekognition "github.com/aws/aws-sdk-go/service/rekognition"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRekognitionAPIMockRecorder) CompareFacesRequest(arg0 interface{}) 
 }
 
 // CompareFacesWithContext mocks base method
-func (m *MockRekognitionAPI) CompareFacesWithContext(arg0 aws.Context, arg1 *rekognition.CompareFacesInput, arg2 ...request.Option) (*rekognition.CompareFacesOutput, error) {
+func (m *MockRekognitionAPI) CompareFacesWithContext(arg0 context.Context, arg1 *rekognition.CompareFacesInput, arg2 ...request.Option) (*rekognition.CompareFacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRekognitionAPIMockRecorder) CreateCollectionRequest(arg0 interface
 }
 
 // CreateCollectionWithContext mocks base method
-func (m *MockRekognitionAPI) CreateCollectionWithContext(arg0 aws.Context, arg1 *rekognition.CreateCollectionInput, arg2 ...request.Option) (*rekognition.CreateCollectionOutput, error) {
+func (m *MockRekognitionAPI) CreateCollectionWithContext(arg0 context.Context, arg1 *rekognition.CreateCollectionInput, arg2 ...request.Option) (*rekognition.CreateCollectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRekognitionAPIMockRecorder) CreateStreamProcessorRequest(arg0 inte
 }
 
 // CreateStreamProcessorWithContext mocks base method
-func (m *MockRekognitionAPI) CreateStreamProcessorWithContext(arg0 aws.Context, arg1 *rekognition.CreateStreamProcessorInput, arg2 ...request.Option) (*rekognition.CreateStreamProcessorOutput, error) {
+func (m *MockRekognitionAPI) CreateStreamProcessorWithContext(arg0 context.Context, arg1 *rekognition.CreateStreamProcessorInput, arg2 ...request.Option) (*rekognition.CreateStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteCollectionRequest(arg0 interface
 }
 
 // DeleteCollectionWithContext mocks base method
-func (m *MockRekognitionAPI) DeleteCollectionWithContext(arg0 aws.Context, arg1 *rekognition.DeleteCollectionInput, arg2 ...request.Option) (*rekognition.DeleteCollectionOutput, error) {
+func (m *MockRekognitionAPI) DeleteCollectionWithContext(arg0 context.Context, arg1 *rekognition.DeleteCollectionInput, arg2 ...request.Option) (*rekognition.DeleteCollectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteFacesRequest(arg0 interface{}) *
 }
 
 // DeleteFacesWithContext mocks base method
-func (m *MockRekognitionAPI) DeleteFacesWithContext(arg0 aws.Context, arg1 *rekognition.DeleteFacesInput, arg2 ...request.Option) (*rekognition.DeleteFacesOutput, error) {
+func (m *MockRekognitionAPI) DeleteFacesWithContext(arg0 context.Context, arg1 *rekognition.DeleteFacesInput, arg2 ...request.Option) (*rekognition.DeleteFacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteStreamProcessorRequest(arg0 inte
 }
 
 // DeleteStreamProcessorWithContext mocks base method
-func (m *MockRekognitionAPI) DeleteStreamProcessorWithContext(arg0 aws.Context, arg1 *rekognition.DeleteStreamProcessorInput, arg2 ...request.Option) (*rekognition.DeleteStreamProcessorOutput, error) {
+func (m *MockRekognitionAPI) DeleteStreamProcessorWithContext(arg0 context.Context, arg1 *rekognition.DeleteStreamProcessorInput, arg2 ...request.Option) (*rekognition.DeleteStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRekognitionAPIMockRecorder) DescribeCollectionRequest(arg0 interfa
 }
 
 // DescribeCollectionWithContext mocks base method
-func (m *MockRekognitionAPI) DescribeCollectionWithContext(arg0 aws.Context, arg1 *rekognition.DescribeCollectionInput, arg2 ...request.Option) (*rekognition.DescribeCollectionOutput, error) {
+func (m *MockRekognitionAPI) DescribeCollectionWithContext(arg0 context.Context, arg1 *rekognition.DescribeCollectionInput, arg2 ...request.Option) (*rekognition.DescribeCollectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockRekognitionAPIMockRecorder) DescribeStreamProcessorRequest(arg0 in
 }
 
 // DescribeStreamProcessorWithContext mocks base method
-func (m *MockRekognitionAPI) DescribeStreamProcessorWithContext(arg0 aws.Context, arg1 *rekognition.DescribeStreamProcessorInput, arg2 ...request.Option) (*rekognition.DescribeStreamProcessorOutput, error) {
+func (m *MockRekognitionAPI) DescribeStreamProcessorWithContext(arg0 context.Context, arg1 *rekognition.DescribeStreamProcessorInput, arg2 ...request.Option) (*rekognition.DescribeStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockRekognitionAPIMockRecorder) DetectFacesRequest(arg0 interface{}) *
 }
 
 // DetectFacesWithContext mocks base method
-func (m *MockRekognitionAPI) DetectFacesWithContext(arg0 aws.Context, arg1 *rekognition.DetectFacesInput, arg2 ...request.Option) (*rekognition.DetectFacesOutput, error) {
+func (m *MockRekognitionAPI) DetectFacesWithContext(arg0 context.Context, arg1 *rekognition.DetectFacesInput, arg2 ...request.Option) (*rekognition.DetectFacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockRekognitionAPIMockRecorder) DetectLabelsRequest(arg0 interface{}) 
 }
 
 // DetectLabelsWithContext mocks base method
-func (m *MockRekognitionAPI) DetectLabelsWithContext(arg0 aws.Context, arg1 *rekognition.DetectLabelsInput, arg2 ...request.Option) (*rekognition.DetectLabelsOutput, error) {
+func (m *MockRekognitionAPI) DetectLabelsWithContext(arg0 context.Context, arg1 *rekognition.DetectLabelsInput, arg2 ...request.Option) (*rekognition.DetectLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockRekognitionAPIMockRecorder) DetectModerationLabelsRequest(arg0 int
 }
 
 // DetectModerationLabelsWithContext mocks base method
-func (m *MockRekognitionAPI) DetectModerationLabelsWithContext(arg0 aws.Context, arg1 *rekognition.DetectModerationLabelsInput, arg2 ...request.Option) (*rekognition.DetectModerationLabelsOutput, error) {
+func (m *MockRekognitionAPI) DetectModerationLabelsWithContext(arg0 context.Context, arg1 *rekognition.DetectModerationLabelsInput, arg2 ...request.Option) (*rekognition.DetectModerationLabelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockRekognitionAPIMockRecorder) DetectTextRequest(arg0 interface{}) *g
 }
 
 // DetectTextWithContext mocks base method
-func (m *MockRekognitionAPI) DetectTextWithContext(arg0 aws.Context, arg1 *rekognition.DetectTextInput, arg2 ...request.Option) (*rekognition.DetectTextOutput, error) {
+func (m *MockRekognitionAPI) DetectTextWithContext(arg0 context.Context, arg1 *rekognition.DetectTextInput, arg2 ...request.Option) (*rekognition.DetectTextOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetCelebrityInfoRequest(arg0 interface
 }
 
 // GetCelebrityInfoWithContext mocks base method
-func (m *MockRekognitionAPI) GetCelebrityInfoWithContext(arg0 aws.Context, arg1 *rekognition.GetCelebrityInfoInput, arg2 ...request.Option) (*rekognition.GetCelebrityInfoOutput, error) {
+func (m *MockRekognitionAPI) GetCelebrityInfoWithContext(arg0 context.Context, arg1 *rekognition.GetCelebrityInfoInput, arg2 ...request.Option) (*rekognition.GetCelebrityInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetCelebrityRecognitionPages(arg0, arg
 }
 
 // GetCelebrityRecognitionPagesWithContext mocks base method
-func (m *MockRekognitionAPI) GetCelebrityRecognitionPagesWithContext(arg0 aws.Context, arg1 *rekognition.GetCelebrityRecognitionInput, arg2 func(*rekognition.GetCelebrityRecognitionOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) GetCelebrityRecognitionPagesWithContext(arg0 context.Context, arg1 *rekognition.GetCelebrityRecognitionInput, arg2 func(*rekognition.GetCelebrityRecognitionOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetCelebrityRecognitionRequest(arg0 in
 }
 
 // GetCelebrityRecognitionWithContext mocks base method
-func (m *MockRekognitionAPI) GetCelebrityRecognitionWithContext(arg0 aws.Context, arg1 *rekognition.GetCelebrityRecognitionInput, arg2 ...request.Option) (*rekognition.GetCelebrityRecognitionOutput, error) {
+func (m *MockRekognitionAPI) GetCelebrityRecognitionWithContext(arg0 context.Context, arg1 *rekognition.GetCelebrityRecognitionInput, arg2 ...request.Option) (*rekognition.GetCelebrityRecognitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetContentModerationPages(arg0, arg1 i
 }
 
 // GetContentModerationPagesWithContext mocks base method
-func (m *MockRekognitionAPI) GetContentModerationPagesWithContext(arg0 aws.Context, arg1 *rekognition.GetContentModerationInput, arg2 func(*rekognition.GetContentModerationOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) GetContentModerationPagesWithContext(arg0 context.Context, arg1 *rekognition.GetContentModerationInput, arg2 func(*rekognition.GetContentModerationOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -832,7 +832,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetContentModerationRequest(arg0 inter
 }
 
 // GetContentModerationWithContext mocks base method
-func (m *MockRekognitionAPI) GetContentModerationWithContext(arg0 aws.Context, arg1 *rekognition.GetContentModerationInput, arg2 ...request.Option) (*rekognition.GetContentModerationOutput, error) {
+func (m *MockRekognitionAPI) GetContentModerationWithContext(arg0 context.Context, arg1 *rekognition.GetContentModerationInput, arg2 ...request.Option) (*rekognition.GetContentModerationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetFaceDetectionPages(arg0, arg1 inter
 }
 
 // GetFaceDetectionPagesWithContext mocks base method
-func (m *MockRekognitionAPI) GetFaceDetectionPagesWithContext(arg0 aws.Context, arg1 *rekognition.GetFaceDetectionInput, arg2 func(*rekognition.GetFaceDetectionOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) GetFaceDetectionPagesWithContext(arg0 context.Context, arg1 *rekognition.GetFaceDetectionInput, arg2 func(*rekognition.GetFaceDetectionOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -915,7 +915,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetFaceDetectionRequest(arg0 interface
 }
 
 // GetFaceDetectionWithContext mocks base method
-func (m *MockRekognitionAPI) GetFaceDetectionWithContext(arg0 aws.Context, arg1 *rekognition.GetFaceDetectionInput, arg2 ...request.Option) (*rekognition.GetFaceDetectionOutput, error) {
+func (m *MockRekognitionAPI) GetFaceDetectionWithContext(arg0 context.Context, arg1 *rekognition.GetFaceDetectionInput, arg2 ...request.Option) (*rekognition.GetFaceDetectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -964,7 +964,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetFaceSearchPages(arg0, arg1 interfac
 }
 
 // GetFaceSearchPagesWithContext mocks base method
-func (m *MockRekognitionAPI) GetFaceSearchPagesWithContext(arg0 aws.Context, arg1 *rekognition.GetFaceSearchInput, arg2 func(*rekognition.GetFaceSearchOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) GetFaceSearchPagesWithContext(arg0 context.Context, arg1 *rekognition.GetFaceSearchInput, arg2 func(*rekognition.GetFaceSearchOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -998,7 +998,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetFaceSearchRequest(arg0 interface{})
 }
 
 // GetFaceSearchWithContext mocks base method
-func (m *MockRekognitionAPI) GetFaceSearchWithContext(arg0 aws.Context, arg1 *rekognition.GetFaceSearchInput, arg2 ...request.Option) (*rekognition.GetFaceSearchOutput, error) {
+func (m *MockRekognitionAPI) GetFaceSearchWithContext(arg0 context.Context, arg1 *rekognition.GetFaceSearchInput, arg2 ...request.Option) (*rekognition.GetFaceSearchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1047,7 +1047,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetLabelDetectionPages(arg0, arg1 inte
 }
 
 // GetLabelDetectionPagesWithContext mocks base method
-func (m *MockRekognitionAPI) GetLabelDetectionPagesWithContext(arg0 aws.Context, arg1 *rekognition.GetLabelDetectionInput, arg2 func(*rekognition.GetLabelDetectionOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) GetLabelDetectionPagesWithContext(arg0 context.Context, arg1 *rekognition.GetLabelDetectionInput, arg2 func(*rekognition.GetLabelDetectionOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1081,7 +1081,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetLabelDetectionRequest(arg0 interfac
 }
 
 // GetLabelDetectionWithContext mocks base method
-func (m *MockRekognitionAPI) GetLabelDetectionWithContext(arg0 aws.Context, arg1 *rekognition.GetLabelDetectionInput, arg2 ...request.Option) (*rekognition.GetLabelDetectionOutput, error) {
+func (m *MockRekognitionAPI) GetLabelDetectionWithContext(arg0 context.Context, arg1 *rekognition.GetLabelDetectionInput, arg2 ...request.Option) (*rekognition.GetLabelDetectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1130,7 +1130,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetPersonTrackingPages(arg0, arg1 inte
 }
 
 // GetPersonTrackingPagesWithContext mocks base method
-func (m *MockRekognitionAPI) GetPersonTrackingPagesWithContext(arg0 aws.Context, arg1 *rekognition.GetPersonTrackingInput, arg2 func(*rekognition.GetPersonTrackingOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) GetPersonTrackingPagesWithContext(arg0 context.Context, arg1 *rekognition.GetPersonTrackingInput, arg2 func(*rekognition.GetPersonTrackingOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1164,7 +1164,7 @@ func (mr *MockRekognitionAPIMockRecorder) GetPersonTrackingRequest(arg0 interfac
 }
 
 // GetPersonTrackingWithContext mocks base method
-func (m *MockRekognitionAPI) GetPersonTrackingWithContext(arg0 aws.Context, arg1 *rekognition.GetPersonTrackingInput, arg2 ...request.Option) (*rekognition.GetPersonTrackingOutput, error) {
+func (m *MockRekognitionAPI) GetPersonTrackingWithContext(arg0 context.Context, arg1 *rekognition.GetPersonTrackingInput, arg2 ...request.Option) (*rekognition.GetPersonTrackingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockRekognitionAPIMockRecorder) IndexFacesRequest(arg0 interface{}) *g
 }
 
 // IndexFacesWithContext mocks base method
-func (m *MockRekognitionAPI) IndexFacesWithContext(arg0 aws.Context, arg1 *rekognition.IndexFacesInput, arg2 ...request.Option) (*rekognition.IndexFacesOutput, error) {
+func (m *MockRekognitionAPI) IndexFacesWithContext(arg0 context.Context, arg1 *rekognition.IndexFacesInput, arg2 ...request.Option) (*rekognition.IndexFacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1263,7 +1263,7 @@ func (mr *MockRekognitionAPIMockRecorder) ListCollectionsPages(arg0, arg1 interf
 }
 
 // ListCollectionsPagesWithContext mocks base method
-func (m *MockRekognitionAPI) ListCollectionsPagesWithContext(arg0 aws.Context, arg1 *rekognition.ListCollectionsInput, arg2 func(*rekognition.ListCollectionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) ListCollectionsPagesWithContext(arg0 context.Context, arg1 *rekognition.ListCollectionsInput, arg2 func(*rekognition.ListCollectionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1297,7 +1297,7 @@ func (mr *MockRekognitionAPIMockRecorder) ListCollectionsRequest(arg0 interface{
 }
 
 // ListCollectionsWithContext mocks base method
-func (m *MockRekognitionAPI) ListCollectionsWithContext(arg0 aws.Context, arg1 *rekognition.ListCollectionsInput, arg2 ...request.Option) (*rekognition.ListCollectionsOutput, error) {
+func (m *MockRekognitionAPI) ListCollectionsWithContext(arg0 context.Context, arg1 *rekognition.ListCollectionsInput, arg2 ...request.Option) (*rekognition.ListCollectionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1346,7 +1346,7 @@ func (mr *MockRekognitionAPIMockRecorder) ListFacesPages(arg0, arg1 interface{})
 }
 
 // ListFacesPagesWithContext mocks base method
-func (m *MockRekognitionAPI) ListFacesPagesWithContext(arg0 aws.Context, arg1 *rekognition.ListFacesInput, arg2 func(*rekognition.ListFacesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) ListFacesPagesWithContext(arg0 context.Context, arg1 *rekognition.ListFacesInput, arg2 func(*rekognition.ListFacesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1380,7 +1380,7 @@ func (mr *MockRekognitionAPIMockRecorder) ListFacesRequest(arg0 interface{}) *go
 }
 
 // ListFacesWithContext mocks base method
-func (m *MockRekognitionAPI) ListFacesWithContext(arg0 aws.Context, arg1 *rekognition.ListFacesInput, arg2 ...request.Option) (*rekognition.ListFacesOutput, error) {
+func (m *MockRekognitionAPI) ListFacesWithContext(arg0 context.Context, arg1 *rekognition.ListFacesInput, arg2 ...request.Option) (*rekognition.ListFacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1429,7 +1429,7 @@ func (mr *MockRekognitionAPIMockRecorder) ListStreamProcessorsPages(arg0, arg1 i
 }
 
 // ListStreamProcessorsPagesWithContext mocks base method
-func (m *MockRekognitionAPI) ListStreamProcessorsPagesWithContext(arg0 aws.Context, arg1 *rekognition.ListStreamProcessorsInput, arg2 func(*rekognition.ListStreamProcessorsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRekognitionAPI) ListStreamProcessorsPagesWithContext(arg0 context.Context, arg1 *rekognition.ListStreamProcessorsInput, arg2 func(*rekognition.ListStreamProcessorsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1463,7 +1463,7 @@ func (mr *MockRekognitionAPIMockRecorder) ListStreamProcessorsRequest(arg0 inter
 }
 
 // ListStreamProcessorsWithContext mocks base method
-func (m *MockRekognitionAPI) ListStreamProcessorsWithContext(arg0 aws.Context, arg1 *rekognition.ListStreamProcessorsInput, arg2 ...request.Option) (*rekognition.ListStreamProcessorsOutput, error) {
+func (m *MockRekognitionAPI) ListStreamProcessorsWithContext(arg0 context.Context, arg1 *rekognition.ListStreamProcessorsInput, arg2 ...request.Option) (*rekognition.ListStreamProcessorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1513,7 +1513,7 @@ func (mr *MockRekognitionAPIMockRecorder) RecognizeCelebritiesRequest(arg0 inter
 }
 
 // RecognizeCelebritiesWithContext mocks base method
-func (m *MockRekognitionAPI) RecognizeCelebritiesWithContext(arg0 aws.Context, arg1 *rekognition.RecognizeCelebritiesInput, arg2 ...request.Option) (*rekognition.RecognizeCelebritiesOutput, error) {
+func (m *MockRekognitionAPI) RecognizeCelebritiesWithContext(arg0 context.Context, arg1 *rekognition.RecognizeCelebritiesInput, arg2 ...request.Option) (*rekognition.RecognizeCelebritiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1578,7 +1578,7 @@ func (mr *MockRekognitionAPIMockRecorder) SearchFacesByImageRequest(arg0 interfa
 }
 
 // SearchFacesByImageWithContext mocks base method
-func (m *MockRekognitionAPI) SearchFacesByImageWithContext(arg0 aws.Context, arg1 *rekognition.SearchFacesByImageInput, arg2 ...request.Option) (*rekognition.SearchFacesByImageOutput, error) {
+func (m *MockRekognitionAPI) SearchFacesByImageWithContext(arg0 context.Context, arg1 *rekognition.SearchFacesByImageInput, arg2 ...request.Option) (*rekognition.SearchFacesByImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1613,7 +1613,7 @@ func (mr *MockRekognitionAPIMockRecorder) SearchFacesRequest(arg0 interface{}) *
 }
 
 // SearchFacesWithContext mocks base method
-func (m *MockRekognitionAPI) SearchFacesWithContext(arg0 aws.Context, arg1 *rekognition.SearchFacesInput, arg2 ...request.Option) (*rekognition.SearchFacesOutput, error) {
+func (m *MockRekognitionAPI) SearchFacesWithContext(arg0 context.Context, arg1 *rekognition.SearchFacesInput, arg2 ...request.Option) (*rekognition.SearchFacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1663,7 +1663,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartCelebrityRecognitionRequest(arg0 
 }
 
 // StartCelebrityRecognitionWithContext mocks base method
-func (m *MockRekognitionAPI) StartCelebrityRecognitionWithContext(arg0 aws.Context, arg1 *rekognition.StartCelebrityRecognitionInput, arg2 ...request.Option) (*rekognition.StartCelebrityRecognitionOutput, error) {
+func (m *MockRekognitionAPI) StartCelebrityRecognitionWithContext(arg0 context.Context, arg1 *rekognition.StartCelebrityRecognitionInput, arg2 ...request.Option) (*rekognition.StartCelebrityRecognitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1713,7 +1713,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartContentModerationRequest(arg0 int
 }
 
 // StartContentModerationWithContext mocks base method
-func (m *MockRekognitionAPI) StartContentModerationWithContext(arg0 aws.Context, arg1 *rekognition.StartContentModerationInput, arg2 ...request.Option) (*rekognition.StartContentModerationOutput, error) {
+func (m *MockRekognitionAPI) StartContentModerationWithContext(arg0 context.Context, arg1 *rekognition.StartContentModerationInput, arg2 ...request.Option) (*rekognition.StartContentModerationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1763,7 +1763,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartFaceDetectionRequest(arg0 interfa
 }
 
 // StartFaceDetectionWithContext mocks base method
-func (m *MockRekognitionAPI) StartFaceDetectionWithContext(arg0 aws.Context, arg1 *rekognition.StartFaceDetectionInput, arg2 ...request.Option) (*rekognition.StartFaceDetectionOutput, error) {
+func (m *MockRekognitionAPI) StartFaceDetectionWithContext(arg0 context.Context, arg1 *rekognition.StartFaceDetectionInput, arg2 ...request.Option) (*rekognition.StartFaceDetectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1813,7 +1813,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartFaceSearchRequest(arg0 interface{
 }
 
 // StartFaceSearchWithContext mocks base method
-func (m *MockRekognitionAPI) StartFaceSearchWithContext(arg0 aws.Context, arg1 *rekognition.StartFaceSearchInput, arg2 ...request.Option) (*rekognition.StartFaceSearchOutput, error) {
+func (m *MockRekognitionAPI) StartFaceSearchWithContext(arg0 context.Context, arg1 *rekognition.StartFaceSearchInput, arg2 ...request.Option) (*rekognition.StartFaceSearchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1863,7 +1863,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartLabelDetectionRequest(arg0 interf
 }
 
 // StartLabelDetectionWithContext mocks base method
-func (m *MockRekognitionAPI) StartLabelDetectionWithContext(arg0 aws.Context, arg1 *rekognition.StartLabelDetectionInput, arg2 ...request.Option) (*rekognition.StartLabelDetectionOutput, error) {
+func (m *MockRekognitionAPI) StartLabelDetectionWithContext(arg0 context.Context, arg1 *rekognition.StartLabelDetectionInput, arg2 ...request.Option) (*rekognition.StartLabelDetectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1913,7 +1913,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartPersonTrackingRequest(arg0 interf
 }
 
 // StartPersonTrackingWithContext mocks base method
-func (m *MockRekognitionAPI) StartPersonTrackingWithContext(arg0 aws.Context, arg1 *rekognition.StartPersonTrackingInput, arg2 ...request.Option) (*rekognition.StartPersonTrackingOutput, error) {
+func (m *MockRekognitionAPI) StartPersonTrackingWithContext(arg0 context.Context, arg1 *rekognition.StartPersonTrackingInput, arg2 ...request.Option) (*rekognition.StartPersonTrackingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1963,7 +1963,7 @@ func (mr *MockRekognitionAPIMockRecorder) StartStreamProcessorRequest(arg0 inter
 }
 
 // StartStreamProcessorWithContext mocks base method
-func (m *MockRekognitionAPI) StartStreamProcessorWithContext(arg0 aws.Context, arg1 *rekognition.StartStreamProcessorInput, arg2 ...request.Option) (*rekognition.StartStreamProcessorOutput, error) {
+func (m *MockRekognitionAPI) StartStreamProcessorWithContext(arg0 context.Context, arg1 *rekognition.StartStreamProcessorInput, arg2 ...request.Option) (*rekognition.StartStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2013,7 +2013,7 @@ func (mr *MockRekognitionAPIMockRecorder) StopStreamProcessorRequest(arg0 interf
 }
 
 // StopStreamProcessorWithContext mocks base method
-func (m *MockRekognitionAPI) StopStreamProcessorWithContext(arg0 aws.Context, arg1 *rekognition.StopStreamProcessorInput, arg2 ...request.Option) (*rekognition.StopStreamProcessorOutput, error) {
+func (m *MockRekognitionAPI) StopStreamProcessorWithContext(arg0 context.Context, arg1 *rekognition.StopStreamProcessorInput, arg2 ...request.Option) (*rekognition.StopStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

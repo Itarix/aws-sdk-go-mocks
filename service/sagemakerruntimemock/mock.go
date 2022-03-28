@@ -5,7 +5,7 @@
 package sagemakerruntimemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sagemakerruntime "github.com/aws/aws-sdk-go/service/sagemakerruntime"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSageMakerRuntimeAPIMockRecorder) InvokeEndpointRequest(arg0 interf
 }
 
 // InvokeEndpointWithContext mocks base method
-func (m *MockSageMakerRuntimeAPI) InvokeEndpointWithContext(arg0 aws.Context, arg1 *sagemakerruntime.InvokeEndpointInput, arg2 ...request.Option) (*sagemakerruntime.InvokeEndpointOutput, error) {
+func (m *MockSageMakerRuntimeAPI) InvokeEndpointWithContext(arg0 context.Context, arg1 *sagemakerruntime.InvokeEndpointInput, arg2 ...request.Option) (*sagemakerruntime.InvokeEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

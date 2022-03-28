@@ -5,7 +5,7 @@
 package swfmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	swf "github.com/aws/aws-sdk-go/service/swf"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSWFAPIMockRecorder) CountClosedWorkflowExecutionsRequest(arg0 inte
 }
 
 // CountClosedWorkflowExecutionsWithContext mocks base method
-func (m *MockSWFAPI) CountClosedWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.CountClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
+func (m *MockSWFAPI) CountClosedWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.CountClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSWFAPIMockRecorder) CountOpenWorkflowExecutionsRequest(arg0 interf
 }
 
 // CountOpenWorkflowExecutionsWithContext mocks base method
-func (m *MockSWFAPI) CountOpenWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.CountOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
+func (m *MockSWFAPI) CountOpenWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.CountOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSWFAPIMockRecorder) CountPendingActivityTasksRequest(arg0 interfac
 }
 
 // CountPendingActivityTasksWithContext mocks base method
-func (m *MockSWFAPI) CountPendingActivityTasksWithContext(arg0 aws.Context, arg1 *swf.CountPendingActivityTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
+func (m *MockSWFAPI) CountPendingActivityTasksWithContext(arg0 context.Context, arg1 *swf.CountPendingActivityTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSWFAPIMockRecorder) CountPendingDecisionTasksRequest(arg0 interfac
 }
 
 // CountPendingDecisionTasksWithContext mocks base method
-func (m *MockSWFAPI) CountPendingDecisionTasksWithContext(arg0 aws.Context, arg1 *swf.CountPendingDecisionTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
+func (m *MockSWFAPI) CountPendingDecisionTasksWithContext(arg0 context.Context, arg1 *swf.CountPendingDecisionTasksInput, arg2 ...request.Option) (*swf.PendingTaskCount, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSWFAPIMockRecorder) DeprecateActivityTypeRequest(arg0 interface{})
 }
 
 // DeprecateActivityTypeWithContext mocks base method
-func (m *MockSWFAPI) DeprecateActivityTypeWithContext(arg0 aws.Context, arg1 *swf.DeprecateActivityTypeInput, arg2 ...request.Option) (*swf.DeprecateActivityTypeOutput, error) {
+func (m *MockSWFAPI) DeprecateActivityTypeWithContext(arg0 context.Context, arg1 *swf.DeprecateActivityTypeInput, arg2 ...request.Option) (*swf.DeprecateActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSWFAPIMockRecorder) DeprecateDomainRequest(arg0 interface{}) *gomo
 }
 
 // DeprecateDomainWithContext mocks base method
-func (m *MockSWFAPI) DeprecateDomainWithContext(arg0 aws.Context, arg1 *swf.DeprecateDomainInput, arg2 ...request.Option) (*swf.DeprecateDomainOutput, error) {
+func (m *MockSWFAPI) DeprecateDomainWithContext(arg0 context.Context, arg1 *swf.DeprecateDomainInput, arg2 ...request.Option) (*swf.DeprecateDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSWFAPIMockRecorder) DeprecateWorkflowTypeRequest(arg0 interface{})
 }
 
 // DeprecateWorkflowTypeWithContext mocks base method
-func (m *MockSWFAPI) DeprecateWorkflowTypeWithContext(arg0 aws.Context, arg1 *swf.DeprecateWorkflowTypeInput, arg2 ...request.Option) (*swf.DeprecateWorkflowTypeOutput, error) {
+func (m *MockSWFAPI) DeprecateWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.DeprecateWorkflowTypeInput, arg2 ...request.Option) (*swf.DeprecateWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSWFAPIMockRecorder) DescribeActivityTypeRequest(arg0 interface{}) 
 }
 
 // DescribeActivityTypeWithContext mocks base method
-func (m *MockSWFAPI) DescribeActivityTypeWithContext(arg0 aws.Context, arg1 *swf.DescribeActivityTypeInput, arg2 ...request.Option) (*swf.DescribeActivityTypeOutput, error) {
+func (m *MockSWFAPI) DescribeActivityTypeWithContext(arg0 context.Context, arg1 *swf.DescribeActivityTypeInput, arg2 ...request.Option) (*swf.DescribeActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSWFAPIMockRecorder) DescribeDomainRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeDomainWithContext mocks base method
-func (m *MockSWFAPI) DescribeDomainWithContext(arg0 aws.Context, arg1 *swf.DescribeDomainInput, arg2 ...request.Option) (*swf.DescribeDomainOutput, error) {
+func (m *MockSWFAPI) DescribeDomainWithContext(arg0 context.Context, arg1 *swf.DescribeDomainInput, arg2 ...request.Option) (*swf.DescribeDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSWFAPIMockRecorder) DescribeWorkflowExecutionRequest(arg0 interfac
 }
 
 // DescribeWorkflowExecutionWithContext mocks base method
-func (m *MockSWFAPI) DescribeWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.DescribeWorkflowExecutionInput, arg2 ...request.Option) (*swf.DescribeWorkflowExecutionOutput, error) {
+func (m *MockSWFAPI) DescribeWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.DescribeWorkflowExecutionInput, arg2 ...request.Option) (*swf.DescribeWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockSWFAPIMockRecorder) DescribeWorkflowTypeRequest(arg0 interface{}) 
 }
 
 // DescribeWorkflowTypeWithContext mocks base method
-func (m *MockSWFAPI) DescribeWorkflowTypeWithContext(arg0 aws.Context, arg1 *swf.DescribeWorkflowTypeInput, arg2 ...request.Option) (*swf.DescribeWorkflowTypeOutput, error) {
+func (m *MockSWFAPI) DescribeWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.DescribeWorkflowTypeInput, arg2 ...request.Option) (*swf.DescribeWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -615,7 +615,7 @@ func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistoryPages(arg0, arg1 in
 }
 
 // GetWorkflowExecutionHistoryPagesWithContext mocks base method
-func (m *MockSWFAPI) GetWorkflowExecutionHistoryPagesWithContext(arg0 aws.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 func(*swf.GetWorkflowExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) GetWorkflowExecutionHistoryPagesWithContext(arg0 context.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 func(*swf.GetWorkflowExecutionHistoryOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -649,7 +649,7 @@ func (mr *MockSWFAPIMockRecorder) GetWorkflowExecutionHistoryRequest(arg0 interf
 }
 
 // GetWorkflowExecutionHistoryWithContext mocks base method
-func (m *MockSWFAPI) GetWorkflowExecutionHistoryWithContext(arg0 aws.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 ...request.Option) (*swf.GetWorkflowExecutionHistoryOutput, error) {
+func (m *MockSWFAPI) GetWorkflowExecutionHistoryWithContext(arg0 context.Context, arg1 *swf.GetWorkflowExecutionHistoryInput, arg2 ...request.Option) (*swf.GetWorkflowExecutionHistoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -698,7 +698,7 @@ func (mr *MockSWFAPIMockRecorder) ListActivityTypesPages(arg0, arg1 interface{})
 }
 
 // ListActivityTypesPagesWithContext mocks base method
-func (m *MockSWFAPI) ListActivityTypesPagesWithContext(arg0 aws.Context, arg1 *swf.ListActivityTypesInput, arg2 func(*swf.ListActivityTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) ListActivityTypesPagesWithContext(arg0 context.Context, arg1 *swf.ListActivityTypesInput, arg2 func(*swf.ListActivityTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -732,7 +732,7 @@ func (mr *MockSWFAPIMockRecorder) ListActivityTypesRequest(arg0 interface{}) *go
 }
 
 // ListActivityTypesWithContext mocks base method
-func (m *MockSWFAPI) ListActivityTypesWithContext(arg0 aws.Context, arg1 *swf.ListActivityTypesInput, arg2 ...request.Option) (*swf.ListActivityTypesOutput, error) {
+func (m *MockSWFAPI) ListActivityTypesWithContext(arg0 context.Context, arg1 *swf.ListActivityTypesInput, arg2 ...request.Option) (*swf.ListActivityTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutionsPages(arg0, arg1 i
 }
 
 // ListClosedWorkflowExecutionsPagesWithContext mocks base method
-func (m *MockSWFAPI) ListClosedWorkflowExecutionsPagesWithContext(arg0 aws.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) ListClosedWorkflowExecutionsPagesWithContext(arg0 context.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -815,7 +815,7 @@ func (mr *MockSWFAPIMockRecorder) ListClosedWorkflowExecutionsRequest(arg0 inter
 }
 
 // ListClosedWorkflowExecutionsWithContext mocks base method
-func (m *MockSWFAPI) ListClosedWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
+func (m *MockSWFAPI) ListClosedWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.ListClosedWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -864,7 +864,7 @@ func (mr *MockSWFAPIMockRecorder) ListDomainsPages(arg0, arg1 interface{}) *gomo
 }
 
 // ListDomainsPagesWithContext mocks base method
-func (m *MockSWFAPI) ListDomainsPagesWithContext(arg0 aws.Context, arg1 *swf.ListDomainsInput, arg2 func(*swf.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) ListDomainsPagesWithContext(arg0 context.Context, arg1 *swf.ListDomainsInput, arg2 func(*swf.ListDomainsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -898,7 +898,7 @@ func (mr *MockSWFAPIMockRecorder) ListDomainsRequest(arg0 interface{}) *gomock.C
 }
 
 // ListDomainsWithContext mocks base method
-func (m *MockSWFAPI) ListDomainsWithContext(arg0 aws.Context, arg1 *swf.ListDomainsInput, arg2 ...request.Option) (*swf.ListDomainsOutput, error) {
+func (m *MockSWFAPI) ListDomainsWithContext(arg0 context.Context, arg1 *swf.ListDomainsInput, arg2 ...request.Option) (*swf.ListDomainsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -947,7 +947,7 @@ func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutionsPages(arg0, arg1 int
 }
 
 // ListOpenWorkflowExecutionsPagesWithContext mocks base method
-func (m *MockSWFAPI) ListOpenWorkflowExecutionsPagesWithContext(arg0 aws.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) ListOpenWorkflowExecutionsPagesWithContext(arg0 context.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 func(*swf.WorkflowExecutionInfos, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -981,7 +981,7 @@ func (mr *MockSWFAPIMockRecorder) ListOpenWorkflowExecutionsRequest(arg0 interfa
 }
 
 // ListOpenWorkflowExecutionsWithContext mocks base method
-func (m *MockSWFAPI) ListOpenWorkflowExecutionsWithContext(arg0 aws.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
+func (m *MockSWFAPI) ListOpenWorkflowExecutionsWithContext(arg0 context.Context, arg1 *swf.ListOpenWorkflowExecutionsInput, arg2 ...request.Option) (*swf.WorkflowExecutionInfos, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1030,7 +1030,7 @@ func (mr *MockSWFAPIMockRecorder) ListWorkflowTypesPages(arg0, arg1 interface{})
 }
 
 // ListWorkflowTypesPagesWithContext mocks base method
-func (m *MockSWFAPI) ListWorkflowTypesPagesWithContext(arg0 aws.Context, arg1 *swf.ListWorkflowTypesInput, arg2 func(*swf.ListWorkflowTypesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) ListWorkflowTypesPagesWithContext(arg0 context.Context, arg1 *swf.ListWorkflowTypesInput, arg2 func(*swf.ListWorkflowTypesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1064,7 +1064,7 @@ func (mr *MockSWFAPIMockRecorder) ListWorkflowTypesRequest(arg0 interface{}) *go
 }
 
 // ListWorkflowTypesWithContext mocks base method
-func (m *MockSWFAPI) ListWorkflowTypesWithContext(arg0 aws.Context, arg1 *swf.ListWorkflowTypesInput, arg2 ...request.Option) (*swf.ListWorkflowTypesOutput, error) {
+func (m *MockSWFAPI) ListWorkflowTypesWithContext(arg0 context.Context, arg1 *swf.ListWorkflowTypesInput, arg2 ...request.Option) (*swf.ListWorkflowTypesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1114,7 +1114,7 @@ func (mr *MockSWFAPIMockRecorder) PollForActivityTaskRequest(arg0 interface{}) *
 }
 
 // PollForActivityTaskWithContext mocks base method
-func (m *MockSWFAPI) PollForActivityTaskWithContext(arg0 aws.Context, arg1 *swf.PollForActivityTaskInput, arg2 ...request.Option) (*swf.PollForActivityTaskOutput, error) {
+func (m *MockSWFAPI) PollForActivityTaskWithContext(arg0 context.Context, arg1 *swf.PollForActivityTaskInput, arg2 ...request.Option) (*swf.PollForActivityTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1163,7 +1163,7 @@ func (mr *MockSWFAPIMockRecorder) PollForDecisionTaskPages(arg0, arg1 interface{
 }
 
 // PollForDecisionTaskPagesWithContext mocks base method
-func (m *MockSWFAPI) PollForDecisionTaskPagesWithContext(arg0 aws.Context, arg1 *swf.PollForDecisionTaskInput, arg2 func(*swf.PollForDecisionTaskOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSWFAPI) PollForDecisionTaskPagesWithContext(arg0 context.Context, arg1 *swf.PollForDecisionTaskInput, arg2 func(*swf.PollForDecisionTaskOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1197,7 +1197,7 @@ func (mr *MockSWFAPIMockRecorder) PollForDecisionTaskRequest(arg0 interface{}) *
 }
 
 // PollForDecisionTaskWithContext mocks base method
-func (m *MockSWFAPI) PollForDecisionTaskWithContext(arg0 aws.Context, arg1 *swf.PollForDecisionTaskInput, arg2 ...request.Option) (*swf.PollForDecisionTaskOutput, error) {
+func (m *MockSWFAPI) PollForDecisionTaskWithContext(arg0 context.Context, arg1 *swf.PollForDecisionTaskInput, arg2 ...request.Option) (*swf.PollForDecisionTaskOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1247,7 +1247,7 @@ func (mr *MockSWFAPIMockRecorder) RecordActivityTaskHeartbeatRequest(arg0 interf
 }
 
 // RecordActivityTaskHeartbeatWithContext mocks base method
-func (m *MockSWFAPI) RecordActivityTaskHeartbeatWithContext(arg0 aws.Context, arg1 *swf.RecordActivityTaskHeartbeatInput, arg2 ...request.Option) (*swf.RecordActivityTaskHeartbeatOutput, error) {
+func (m *MockSWFAPI) RecordActivityTaskHeartbeatWithContext(arg0 context.Context, arg1 *swf.RecordActivityTaskHeartbeatInput, arg2 ...request.Option) (*swf.RecordActivityTaskHeartbeatOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1297,7 +1297,7 @@ func (mr *MockSWFAPIMockRecorder) RegisterActivityTypeRequest(arg0 interface{}) 
 }
 
 // RegisterActivityTypeWithContext mocks base method
-func (m *MockSWFAPI) RegisterActivityTypeWithContext(arg0 aws.Context, arg1 *swf.RegisterActivityTypeInput, arg2 ...request.Option) (*swf.RegisterActivityTypeOutput, error) {
+func (m *MockSWFAPI) RegisterActivityTypeWithContext(arg0 context.Context, arg1 *swf.RegisterActivityTypeInput, arg2 ...request.Option) (*swf.RegisterActivityTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1347,7 +1347,7 @@ func (mr *MockSWFAPIMockRecorder) RegisterDomainRequest(arg0 interface{}) *gomoc
 }
 
 // RegisterDomainWithContext mocks base method
-func (m *MockSWFAPI) RegisterDomainWithContext(arg0 aws.Context, arg1 *swf.RegisterDomainInput, arg2 ...request.Option) (*swf.RegisterDomainOutput, error) {
+func (m *MockSWFAPI) RegisterDomainWithContext(arg0 context.Context, arg1 *swf.RegisterDomainInput, arg2 ...request.Option) (*swf.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1397,7 +1397,7 @@ func (mr *MockSWFAPIMockRecorder) RegisterWorkflowTypeRequest(arg0 interface{}) 
 }
 
 // RegisterWorkflowTypeWithContext mocks base method
-func (m *MockSWFAPI) RegisterWorkflowTypeWithContext(arg0 aws.Context, arg1 *swf.RegisterWorkflowTypeInput, arg2 ...request.Option) (*swf.RegisterWorkflowTypeOutput, error) {
+func (m *MockSWFAPI) RegisterWorkflowTypeWithContext(arg0 context.Context, arg1 *swf.RegisterWorkflowTypeInput, arg2 ...request.Option) (*swf.RegisterWorkflowTypeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1447,7 +1447,7 @@ func (mr *MockSWFAPIMockRecorder) RequestCancelWorkflowExecutionRequest(arg0 int
 }
 
 // RequestCancelWorkflowExecutionWithContext mocks base method
-func (m *MockSWFAPI) RequestCancelWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.RequestCancelWorkflowExecutionInput, arg2 ...request.Option) (*swf.RequestCancelWorkflowExecutionOutput, error) {
+func (m *MockSWFAPI) RequestCancelWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.RequestCancelWorkflowExecutionInput, arg2 ...request.Option) (*swf.RequestCancelWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1497,7 +1497,7 @@ func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCanceledRequest(arg0 interf
 }
 
 // RespondActivityTaskCanceledWithContext mocks base method
-func (m *MockSWFAPI) RespondActivityTaskCanceledWithContext(arg0 aws.Context, arg1 *swf.RespondActivityTaskCanceledInput, arg2 ...request.Option) (*swf.RespondActivityTaskCanceledOutput, error) {
+func (m *MockSWFAPI) RespondActivityTaskCanceledWithContext(arg0 context.Context, arg1 *swf.RespondActivityTaskCanceledInput, arg2 ...request.Option) (*swf.RespondActivityTaskCanceledOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1547,7 +1547,7 @@ func (mr *MockSWFAPIMockRecorder) RespondActivityTaskCompletedRequest(arg0 inter
 }
 
 // RespondActivityTaskCompletedWithContext mocks base method
-func (m *MockSWFAPI) RespondActivityTaskCompletedWithContext(arg0 aws.Context, arg1 *swf.RespondActivityTaskCompletedInput, arg2 ...request.Option) (*swf.RespondActivityTaskCompletedOutput, error) {
+func (m *MockSWFAPI) RespondActivityTaskCompletedWithContext(arg0 context.Context, arg1 *swf.RespondActivityTaskCompletedInput, arg2 ...request.Option) (*swf.RespondActivityTaskCompletedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1597,7 +1597,7 @@ func (mr *MockSWFAPIMockRecorder) RespondActivityTaskFailedRequest(arg0 interfac
 }
 
 // RespondActivityTaskFailedWithContext mocks base method
-func (m *MockSWFAPI) RespondActivityTaskFailedWithContext(arg0 aws.Context, arg1 *swf.RespondActivityTaskFailedInput, arg2 ...request.Option) (*swf.RespondActivityTaskFailedOutput, error) {
+func (m *MockSWFAPI) RespondActivityTaskFailedWithContext(arg0 context.Context, arg1 *swf.RespondActivityTaskFailedInput, arg2 ...request.Option) (*swf.RespondActivityTaskFailedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1647,7 +1647,7 @@ func (mr *MockSWFAPIMockRecorder) RespondDecisionTaskCompletedRequest(arg0 inter
 }
 
 // RespondDecisionTaskCompletedWithContext mocks base method
-func (m *MockSWFAPI) RespondDecisionTaskCompletedWithContext(arg0 aws.Context, arg1 *swf.RespondDecisionTaskCompletedInput, arg2 ...request.Option) (*swf.RespondDecisionTaskCompletedOutput, error) {
+func (m *MockSWFAPI) RespondDecisionTaskCompletedWithContext(arg0 context.Context, arg1 *swf.RespondDecisionTaskCompletedInput, arg2 ...request.Option) (*swf.RespondDecisionTaskCompletedOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockSWFAPIMockRecorder) SignalWorkflowExecutionRequest(arg0 interface{
 }
 
 // SignalWorkflowExecutionWithContext mocks base method
-func (m *MockSWFAPI) SignalWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.SignalWorkflowExecutionInput, arg2 ...request.Option) (*swf.SignalWorkflowExecutionOutput, error) {
+func (m *MockSWFAPI) SignalWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.SignalWorkflowExecutionInput, arg2 ...request.Option) (*swf.SignalWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1747,7 +1747,7 @@ func (mr *MockSWFAPIMockRecorder) StartWorkflowExecutionRequest(arg0 interface{}
 }
 
 // StartWorkflowExecutionWithContext mocks base method
-func (m *MockSWFAPI) StartWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.StartWorkflowExecutionInput, arg2 ...request.Option) (*swf.StartWorkflowExecutionOutput, error) {
+func (m *MockSWFAPI) StartWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.StartWorkflowExecutionInput, arg2 ...request.Option) (*swf.StartWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1797,7 +1797,7 @@ func (mr *MockSWFAPIMockRecorder) TerminateWorkflowExecutionRequest(arg0 interfa
 }
 
 // TerminateWorkflowExecutionWithContext mocks base method
-func (m *MockSWFAPI) TerminateWorkflowExecutionWithContext(arg0 aws.Context, arg1 *swf.TerminateWorkflowExecutionInput, arg2 ...request.Option) (*swf.TerminateWorkflowExecutionOutput, error) {
+func (m *MockSWFAPI) TerminateWorkflowExecutionWithContext(arg0 context.Context, arg1 *swf.TerminateWorkflowExecutionInput, arg2 ...request.Option) (*swf.TerminateWorkflowExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

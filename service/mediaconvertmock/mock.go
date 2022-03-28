@@ -5,7 +5,7 @@
 package mediaconvertmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	mediaconvert "github.com/aws/aws-sdk-go/service/mediaconvert"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockMediaConvertAPIMockRecorder) AssociateCertificateRequest(arg0 inte
 }
 
 // AssociateCertificateWithContext mocks base method
-func (m *MockMediaConvertAPI) AssociateCertificateWithContext(arg0 aws.Context, arg1 *mediaconvert.AssociateCertificateInput, arg2 ...request.Option) (*mediaconvert.AssociateCertificateOutput, error) {
+func (m *MockMediaConvertAPI) AssociateCertificateWithContext(arg0 context.Context, arg1 *mediaconvert.AssociateCertificateInput, arg2 ...request.Option) (*mediaconvert.AssociateCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockMediaConvertAPIMockRecorder) CancelJobRequest(arg0 interface{}) *g
 }
 
 // CancelJobWithContext mocks base method
-func (m *MockMediaConvertAPI) CancelJobWithContext(arg0 aws.Context, arg1 *mediaconvert.CancelJobInput, arg2 ...request.Option) (*mediaconvert.CancelJobOutput, error) {
+func (m *MockMediaConvertAPI) CancelJobWithContext(arg0 context.Context, arg1 *mediaconvert.CancelJobInput, arg2 ...request.Option) (*mediaconvert.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -196,7 +196,7 @@ func (mr *MockMediaConvertAPIMockRecorder) CreateJobTemplateRequest(arg0 interfa
 }
 
 // CreateJobTemplateWithContext mocks base method
-func (m *MockMediaConvertAPI) CreateJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.CreateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.CreateJobTemplateOutput, error) {
+func (m *MockMediaConvertAPI) CreateJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.CreateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.CreateJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockMediaConvertAPIMockRecorder) CreateJobTemplateWithContext(arg0, ar
 }
 
 // CreateJobWithContext mocks base method
-func (m *MockMediaConvertAPI) CreateJobWithContext(arg0 aws.Context, arg1 *mediaconvert.CreateJobInput, arg2 ...request.Option) (*mediaconvert.CreateJobOutput, error) {
+func (m *MockMediaConvertAPI) CreateJobWithContext(arg0 context.Context, arg1 *mediaconvert.CreateJobInput, arg2 ...request.Option) (*mediaconvert.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockMediaConvertAPIMockRecorder) CreatePresetRequest(arg0 interface{})
 }
 
 // CreatePresetWithContext mocks base method
-func (m *MockMediaConvertAPI) CreatePresetWithContext(arg0 aws.Context, arg1 *mediaconvert.CreatePresetInput, arg2 ...request.Option) (*mediaconvert.CreatePresetOutput, error) {
+func (m *MockMediaConvertAPI) CreatePresetWithContext(arg0 context.Context, arg1 *mediaconvert.CreatePresetInput, arg2 ...request.Option) (*mediaconvert.CreatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockMediaConvertAPIMockRecorder) CreateQueueRequest(arg0 interface{}) 
 }
 
 // CreateQueueWithContext mocks base method
-func (m *MockMediaConvertAPI) CreateQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.CreateQueueInput, arg2 ...request.Option) (*mediaconvert.CreateQueueOutput, error) {
+func (m *MockMediaConvertAPI) CreateQueueWithContext(arg0 context.Context, arg1 *mediaconvert.CreateQueueInput, arg2 ...request.Option) (*mediaconvert.CreateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockMediaConvertAPIMockRecorder) DeleteJobTemplateRequest(arg0 interfa
 }
 
 // DeleteJobTemplateWithContext mocks base method
-func (m *MockMediaConvertAPI) DeleteJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.DeleteJobTemplateInput, arg2 ...request.Option) (*mediaconvert.DeleteJobTemplateOutput, error) {
+func (m *MockMediaConvertAPI) DeleteJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.DeleteJobTemplateInput, arg2 ...request.Option) (*mediaconvert.DeleteJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockMediaConvertAPIMockRecorder) DeletePresetRequest(arg0 interface{})
 }
 
 // DeletePresetWithContext mocks base method
-func (m *MockMediaConvertAPI) DeletePresetWithContext(arg0 aws.Context, arg1 *mediaconvert.DeletePresetInput, arg2 ...request.Option) (*mediaconvert.DeletePresetOutput, error) {
+func (m *MockMediaConvertAPI) DeletePresetWithContext(arg0 context.Context, arg1 *mediaconvert.DeletePresetInput, arg2 ...request.Option) (*mediaconvert.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockMediaConvertAPIMockRecorder) DeleteQueueRequest(arg0 interface{}) 
 }
 
 // DeleteQueueWithContext mocks base method
-func (m *MockMediaConvertAPI) DeleteQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.DeleteQueueInput, arg2 ...request.Option) (*mediaconvert.DeleteQueueOutput, error) {
+func (m *MockMediaConvertAPI) DeleteQueueWithContext(arg0 context.Context, arg1 *mediaconvert.DeleteQueueInput, arg2 ...request.Option) (*mediaconvert.DeleteQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -515,7 +515,7 @@ func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsPages(arg0, arg1 int
 }
 
 // DescribeEndpointsPagesWithContext mocks base method
-func (m *MockMediaConvertAPI) DescribeEndpointsPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 func(*mediaconvert.DescribeEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaConvertAPI) DescribeEndpointsPagesWithContext(arg0 context.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 func(*mediaconvert.DescribeEndpointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -549,7 +549,7 @@ func (mr *MockMediaConvertAPIMockRecorder) DescribeEndpointsRequest(arg0 interfa
 }
 
 // DescribeEndpointsWithContext mocks base method
-func (m *MockMediaConvertAPI) DescribeEndpointsWithContext(arg0 aws.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 ...request.Option) (*mediaconvert.DescribeEndpointsOutput, error) {
+func (m *MockMediaConvertAPI) DescribeEndpointsWithContext(arg0 context.Context, arg1 *mediaconvert.DescribeEndpointsInput, arg2 ...request.Option) (*mediaconvert.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockMediaConvertAPIMockRecorder) DisassociateCertificateRequest(arg0 i
 }
 
 // DisassociateCertificateWithContext mocks base method
-func (m *MockMediaConvertAPI) DisassociateCertificateWithContext(arg0 aws.Context, arg1 *mediaconvert.DisassociateCertificateInput, arg2 ...request.Option) (*mediaconvert.DisassociateCertificateOutput, error) {
+func (m *MockMediaConvertAPI) DisassociateCertificateWithContext(arg0 context.Context, arg1 *mediaconvert.DisassociateCertificateInput, arg2 ...request.Option) (*mediaconvert.DisassociateCertificateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -679,7 +679,7 @@ func (mr *MockMediaConvertAPIMockRecorder) GetJobTemplateRequest(arg0 interface{
 }
 
 // GetJobTemplateWithContext mocks base method
-func (m *MockMediaConvertAPI) GetJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.GetJobTemplateInput, arg2 ...request.Option) (*mediaconvert.GetJobTemplateOutput, error) {
+func (m *MockMediaConvertAPI) GetJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.GetJobTemplateInput, arg2 ...request.Option) (*mediaconvert.GetJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -699,7 +699,7 @@ func (mr *MockMediaConvertAPIMockRecorder) GetJobTemplateWithContext(arg0, arg1 
 }
 
 // GetJobWithContext mocks base method
-func (m *MockMediaConvertAPI) GetJobWithContext(arg0 aws.Context, arg1 *mediaconvert.GetJobInput, arg2 ...request.Option) (*mediaconvert.GetJobOutput, error) {
+func (m *MockMediaConvertAPI) GetJobWithContext(arg0 context.Context, arg1 *mediaconvert.GetJobInput, arg2 ...request.Option) (*mediaconvert.GetJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -749,7 +749,7 @@ func (mr *MockMediaConvertAPIMockRecorder) GetPresetRequest(arg0 interface{}) *g
 }
 
 // GetPresetWithContext mocks base method
-func (m *MockMediaConvertAPI) GetPresetWithContext(arg0 aws.Context, arg1 *mediaconvert.GetPresetInput, arg2 ...request.Option) (*mediaconvert.GetPresetOutput, error) {
+func (m *MockMediaConvertAPI) GetPresetWithContext(arg0 context.Context, arg1 *mediaconvert.GetPresetInput, arg2 ...request.Option) (*mediaconvert.GetPresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -799,7 +799,7 @@ func (mr *MockMediaConvertAPIMockRecorder) GetQueueRequest(arg0 interface{}) *go
 }
 
 // GetQueueWithContext mocks base method
-func (m *MockMediaConvertAPI) GetQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.GetQueueInput, arg2 ...request.Option) (*mediaconvert.GetQueueOutput, error) {
+func (m *MockMediaConvertAPI) GetQueueWithContext(arg0 context.Context, arg1 *mediaconvert.GetQueueInput, arg2 ...request.Option) (*mediaconvert.GetQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -848,7 +848,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesPages(arg0, arg1 inte
 }
 
 // ListJobTemplatesPagesWithContext mocks base method
-func (m *MockMediaConvertAPI) ListJobTemplatesPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 func(*mediaconvert.ListJobTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaConvertAPI) ListJobTemplatesPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 func(*mediaconvert.ListJobTemplatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -882,7 +882,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListJobTemplatesRequest(arg0 interfac
 }
 
 // ListJobTemplatesWithContext mocks base method
-func (m *MockMediaConvertAPI) ListJobTemplatesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 ...request.Option) (*mediaconvert.ListJobTemplatesOutput, error) {
+func (m *MockMediaConvertAPI) ListJobTemplatesWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobTemplatesInput, arg2 ...request.Option) (*mediaconvert.ListJobTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -931,7 +931,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListJobsPages(arg0, arg1 interface{})
 }
 
 // ListJobsPagesWithContext mocks base method
-func (m *MockMediaConvertAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobsInput, arg2 func(*mediaconvert.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaConvertAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobsInput, arg2 func(*mediaconvert.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -965,7 +965,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListJobsRequest(arg0 interface{}) *go
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockMediaConvertAPI) ListJobsWithContext(arg0 aws.Context, arg1 *mediaconvert.ListJobsInput, arg2 ...request.Option) (*mediaconvert.ListJobsOutput, error) {
+func (m *MockMediaConvertAPI) ListJobsWithContext(arg0 context.Context, arg1 *mediaconvert.ListJobsInput, arg2 ...request.Option) (*mediaconvert.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1014,7 +1014,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListPresetsPages(arg0, arg1 interface
 }
 
 // ListPresetsPagesWithContext mocks base method
-func (m *MockMediaConvertAPI) ListPresetsPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListPresetsInput, arg2 func(*mediaconvert.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaConvertAPI) ListPresetsPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListPresetsInput, arg2 func(*mediaconvert.ListPresetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1048,7 +1048,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListPresetsRequest(arg0 interface{}) 
 }
 
 // ListPresetsWithContext mocks base method
-func (m *MockMediaConvertAPI) ListPresetsWithContext(arg0 aws.Context, arg1 *mediaconvert.ListPresetsInput, arg2 ...request.Option) (*mediaconvert.ListPresetsOutput, error) {
+func (m *MockMediaConvertAPI) ListPresetsWithContext(arg0 context.Context, arg1 *mediaconvert.ListPresetsInput, arg2 ...request.Option) (*mediaconvert.ListPresetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1097,7 +1097,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListQueuesPages(arg0, arg1 interface{
 }
 
 // ListQueuesPagesWithContext mocks base method
-func (m *MockMediaConvertAPI) ListQueuesPagesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListQueuesInput, arg2 func(*mediaconvert.ListQueuesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockMediaConvertAPI) ListQueuesPagesWithContext(arg0 context.Context, arg1 *mediaconvert.ListQueuesInput, arg2 func(*mediaconvert.ListQueuesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1131,7 +1131,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListQueuesRequest(arg0 interface{}) *
 }
 
 // ListQueuesWithContext mocks base method
-func (m *MockMediaConvertAPI) ListQueuesWithContext(arg0 aws.Context, arg1 *mediaconvert.ListQueuesInput, arg2 ...request.Option) (*mediaconvert.ListQueuesOutput, error) {
+func (m *MockMediaConvertAPI) ListQueuesWithContext(arg0 context.Context, arg1 *mediaconvert.ListQueuesInput, arg2 ...request.Option) (*mediaconvert.ListQueuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1181,7 +1181,7 @@ func (mr *MockMediaConvertAPIMockRecorder) ListTagsForResourceRequest(arg0 inter
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockMediaConvertAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *mediaconvert.ListTagsForResourceInput, arg2 ...request.Option) (*mediaconvert.ListTagsForResourceOutput, error) {
+func (m *MockMediaConvertAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *mediaconvert.ListTagsForResourceInput, arg2 ...request.Option) (*mediaconvert.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockMediaConvertAPIMockRecorder) TagResourceRequest(arg0 interface{}) 
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockMediaConvertAPI) TagResourceWithContext(arg0 aws.Context, arg1 *mediaconvert.TagResourceInput, arg2 ...request.Option) (*mediaconvert.TagResourceOutput, error) {
+func (m *MockMediaConvertAPI) TagResourceWithContext(arg0 context.Context, arg1 *mediaconvert.TagResourceInput, arg2 ...request.Option) (*mediaconvert.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockMediaConvertAPIMockRecorder) UntagResourceRequest(arg0 interface{}
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockMediaConvertAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *mediaconvert.UntagResourceInput, arg2 ...request.Option) (*mediaconvert.UntagResourceOutput, error) {
+func (m *MockMediaConvertAPI) UntagResourceWithContext(arg0 context.Context, arg1 *mediaconvert.UntagResourceInput, arg2 ...request.Option) (*mediaconvert.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1331,7 +1331,7 @@ func (mr *MockMediaConvertAPIMockRecorder) UpdateJobTemplateRequest(arg0 interfa
 }
 
 // UpdateJobTemplateWithContext mocks base method
-func (m *MockMediaConvertAPI) UpdateJobTemplateWithContext(arg0 aws.Context, arg1 *mediaconvert.UpdateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.UpdateJobTemplateOutput, error) {
+func (m *MockMediaConvertAPI) UpdateJobTemplateWithContext(arg0 context.Context, arg1 *mediaconvert.UpdateJobTemplateInput, arg2 ...request.Option) (*mediaconvert.UpdateJobTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockMediaConvertAPIMockRecorder) UpdatePresetRequest(arg0 interface{})
 }
 
 // UpdatePresetWithContext mocks base method
-func (m *MockMediaConvertAPI) UpdatePresetWithContext(arg0 aws.Context, arg1 *mediaconvert.UpdatePresetInput, arg2 ...request.Option) (*mediaconvert.UpdatePresetOutput, error) {
+func (m *MockMediaConvertAPI) UpdatePresetWithContext(arg0 context.Context, arg1 *mediaconvert.UpdatePresetInput, arg2 ...request.Option) (*mediaconvert.UpdatePresetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockMediaConvertAPIMockRecorder) UpdateQueueRequest(arg0 interface{}) 
 }
 
 // UpdateQueueWithContext mocks base method
-func (m *MockMediaConvertAPI) UpdateQueueWithContext(arg0 aws.Context, arg1 *mediaconvert.UpdateQueueInput, arg2 ...request.Option) (*mediaconvert.UpdateQueueOutput, error) {
+func (m *MockMediaConvertAPI) UpdateQueueWithContext(arg0 context.Context, arg1 *mediaconvert.UpdateQueueInput, arg2 ...request.Option) (*mediaconvert.UpdateQueueOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

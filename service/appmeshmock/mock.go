@@ -5,7 +5,7 @@
 package appmeshmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	appmesh "github.com/aws/aws-sdk-go/service/appmesh"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAppMeshAPIMockRecorder) CreateMeshRequest(arg0 interface{}) *gomoc
 }
 
 // CreateMeshWithContext mocks base method
-func (m *MockAppMeshAPI) CreateMeshWithContext(arg0 aws.Context, arg1 *appmesh.CreateMeshInput, arg2 ...request.Option) (*appmesh.CreateMeshOutput, error) {
+func (m *MockAppMeshAPI) CreateMeshWithContext(arg0 context.Context, arg1 *appmesh.CreateMeshInput, arg2 ...request.Option) (*appmesh.CreateMeshOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAppMeshAPIMockRecorder) CreateRouteRequest(arg0 interface{}) *gomo
 }
 
 // CreateRouteWithContext mocks base method
-func (m *MockAppMeshAPI) CreateRouteWithContext(arg0 aws.Context, arg1 *appmesh.CreateRouteInput, arg2 ...request.Option) (*appmesh.CreateRouteOutput, error) {
+func (m *MockAppMeshAPI) CreateRouteWithContext(arg0 context.Context, arg1 *appmesh.CreateRouteInput, arg2 ...request.Option) (*appmesh.CreateRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAppMeshAPIMockRecorder) CreateVirtualNodeRequest(arg0 interface{})
 }
 
 // CreateVirtualNodeWithContext mocks base method
-func (m *MockAppMeshAPI) CreateVirtualNodeWithContext(arg0 aws.Context, arg1 *appmesh.CreateVirtualNodeInput, arg2 ...request.Option) (*appmesh.CreateVirtualNodeOutput, error) {
+func (m *MockAppMeshAPI) CreateVirtualNodeWithContext(arg0 context.Context, arg1 *appmesh.CreateVirtualNodeInput, arg2 ...request.Option) (*appmesh.CreateVirtualNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAppMeshAPIMockRecorder) CreateVirtualRouterRequest(arg0 interface{
 }
 
 // CreateVirtualRouterWithContext mocks base method
-func (m *MockAppMeshAPI) CreateVirtualRouterWithContext(arg0 aws.Context, arg1 *appmesh.CreateVirtualRouterInput, arg2 ...request.Option) (*appmesh.CreateVirtualRouterOutput, error) {
+func (m *MockAppMeshAPI) CreateVirtualRouterWithContext(arg0 context.Context, arg1 *appmesh.CreateVirtualRouterInput, arg2 ...request.Option) (*appmesh.CreateVirtualRouterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAppMeshAPIMockRecorder) DeleteMeshRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteMeshWithContext mocks base method
-func (m *MockAppMeshAPI) DeleteMeshWithContext(arg0 aws.Context, arg1 *appmesh.DeleteMeshInput, arg2 ...request.Option) (*appmesh.DeleteMeshOutput, error) {
+func (m *MockAppMeshAPI) DeleteMeshWithContext(arg0 context.Context, arg1 *appmesh.DeleteMeshInput, arg2 ...request.Option) (*appmesh.DeleteMeshOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAppMeshAPIMockRecorder) DeleteRouteRequest(arg0 interface{}) *gomo
 }
 
 // DeleteRouteWithContext mocks base method
-func (m *MockAppMeshAPI) DeleteRouteWithContext(arg0 aws.Context, arg1 *appmesh.DeleteRouteInput, arg2 ...request.Option) (*appmesh.DeleteRouteOutput, error) {
+func (m *MockAppMeshAPI) DeleteRouteWithContext(arg0 context.Context, arg1 *appmesh.DeleteRouteInput, arg2 ...request.Option) (*appmesh.DeleteRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockAppMeshAPIMockRecorder) DeleteVirtualNodeRequest(arg0 interface{})
 }
 
 // DeleteVirtualNodeWithContext mocks base method
-func (m *MockAppMeshAPI) DeleteVirtualNodeWithContext(arg0 aws.Context, arg1 *appmesh.DeleteVirtualNodeInput, arg2 ...request.Option) (*appmesh.DeleteVirtualNodeOutput, error) {
+func (m *MockAppMeshAPI) DeleteVirtualNodeWithContext(arg0 context.Context, arg1 *appmesh.DeleteVirtualNodeInput, arg2 ...request.Option) (*appmesh.DeleteVirtualNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockAppMeshAPIMockRecorder) DeleteVirtualRouterRequest(arg0 interface{
 }
 
 // DeleteVirtualRouterWithContext mocks base method
-func (m *MockAppMeshAPI) DeleteVirtualRouterWithContext(arg0 aws.Context, arg1 *appmesh.DeleteVirtualRouterInput, arg2 ...request.Option) (*appmesh.DeleteVirtualRouterOutput, error) {
+func (m *MockAppMeshAPI) DeleteVirtualRouterWithContext(arg0 context.Context, arg1 *appmesh.DeleteVirtualRouterInput, arg2 ...request.Option) (*appmesh.DeleteVirtualRouterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockAppMeshAPIMockRecorder) DescribeMeshRequest(arg0 interface{}) *gom
 }
 
 // DescribeMeshWithContext mocks base method
-func (m *MockAppMeshAPI) DescribeMeshWithContext(arg0 aws.Context, arg1 *appmesh.DescribeMeshInput, arg2 ...request.Option) (*appmesh.DescribeMeshOutput, error) {
+func (m *MockAppMeshAPI) DescribeMeshWithContext(arg0 context.Context, arg1 *appmesh.DescribeMeshInput, arg2 ...request.Option) (*appmesh.DescribeMeshOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockAppMeshAPIMockRecorder) DescribeRouteRequest(arg0 interface{}) *go
 }
 
 // DescribeRouteWithContext mocks base method
-func (m *MockAppMeshAPI) DescribeRouteWithContext(arg0 aws.Context, arg1 *appmesh.DescribeRouteInput, arg2 ...request.Option) (*appmesh.DescribeRouteOutput, error) {
+func (m *MockAppMeshAPI) DescribeRouteWithContext(arg0 context.Context, arg1 *appmesh.DescribeRouteInput, arg2 ...request.Option) (*appmesh.DescribeRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockAppMeshAPIMockRecorder) DescribeVirtualNodeRequest(arg0 interface{
 }
 
 // DescribeVirtualNodeWithContext mocks base method
-func (m *MockAppMeshAPI) DescribeVirtualNodeWithContext(arg0 aws.Context, arg1 *appmesh.DescribeVirtualNodeInput, arg2 ...request.Option) (*appmesh.DescribeVirtualNodeOutput, error) {
+func (m *MockAppMeshAPI) DescribeVirtualNodeWithContext(arg0 context.Context, arg1 *appmesh.DescribeVirtualNodeInput, arg2 ...request.Option) (*appmesh.DescribeVirtualNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockAppMeshAPIMockRecorder) DescribeVirtualRouterRequest(arg0 interfac
 }
 
 // DescribeVirtualRouterWithContext mocks base method
-func (m *MockAppMeshAPI) DescribeVirtualRouterWithContext(arg0 aws.Context, arg1 *appmesh.DescribeVirtualRouterInput, arg2 ...request.Option) (*appmesh.DescribeVirtualRouterOutput, error) {
+func (m *MockAppMeshAPI) DescribeVirtualRouterWithContext(arg0 context.Context, arg1 *appmesh.DescribeVirtualRouterInput, arg2 ...request.Option) (*appmesh.DescribeVirtualRouterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -665,7 +665,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListMeshesPages(arg0, arg1 interface{}) *g
 }
 
 // ListMeshesPagesWithContext mocks base method
-func (m *MockAppMeshAPI) ListMeshesPagesWithContext(arg0 aws.Context, arg1 *appmesh.ListMeshesInput, arg2 func(*appmesh.ListMeshesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAppMeshAPI) ListMeshesPagesWithContext(arg0 context.Context, arg1 *appmesh.ListMeshesInput, arg2 func(*appmesh.ListMeshesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -699,7 +699,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListMeshesRequest(arg0 interface{}) *gomoc
 }
 
 // ListMeshesWithContext mocks base method
-func (m *MockAppMeshAPI) ListMeshesWithContext(arg0 aws.Context, arg1 *appmesh.ListMeshesInput, arg2 ...request.Option) (*appmesh.ListMeshesOutput, error) {
+func (m *MockAppMeshAPI) ListMeshesWithContext(arg0 context.Context, arg1 *appmesh.ListMeshesInput, arg2 ...request.Option) (*appmesh.ListMeshesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -748,7 +748,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListRoutesPages(arg0, arg1 interface{}) *g
 }
 
 // ListRoutesPagesWithContext mocks base method
-func (m *MockAppMeshAPI) ListRoutesPagesWithContext(arg0 aws.Context, arg1 *appmesh.ListRoutesInput, arg2 func(*appmesh.ListRoutesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAppMeshAPI) ListRoutesPagesWithContext(arg0 context.Context, arg1 *appmesh.ListRoutesInput, arg2 func(*appmesh.ListRoutesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -782,7 +782,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListRoutesRequest(arg0 interface{}) *gomoc
 }
 
 // ListRoutesWithContext mocks base method
-func (m *MockAppMeshAPI) ListRoutesWithContext(arg0 aws.Context, arg1 *appmesh.ListRoutesInput, arg2 ...request.Option) (*appmesh.ListRoutesOutput, error) {
+func (m *MockAppMeshAPI) ListRoutesWithContext(arg0 context.Context, arg1 *appmesh.ListRoutesInput, arg2 ...request.Option) (*appmesh.ListRoutesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListVirtualNodesPages(arg0, arg1 interface
 }
 
 // ListVirtualNodesPagesWithContext mocks base method
-func (m *MockAppMeshAPI) ListVirtualNodesPagesWithContext(arg0 aws.Context, arg1 *appmesh.ListVirtualNodesInput, arg2 func(*appmesh.ListVirtualNodesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAppMeshAPI) ListVirtualNodesPagesWithContext(arg0 context.Context, arg1 *appmesh.ListVirtualNodesInput, arg2 func(*appmesh.ListVirtualNodesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -865,7 +865,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListVirtualNodesRequest(arg0 interface{}) 
 }
 
 // ListVirtualNodesWithContext mocks base method
-func (m *MockAppMeshAPI) ListVirtualNodesWithContext(arg0 aws.Context, arg1 *appmesh.ListVirtualNodesInput, arg2 ...request.Option) (*appmesh.ListVirtualNodesOutput, error) {
+func (m *MockAppMeshAPI) ListVirtualNodesWithContext(arg0 context.Context, arg1 *appmesh.ListVirtualNodesInput, arg2 ...request.Option) (*appmesh.ListVirtualNodesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -914,7 +914,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListVirtualRoutersPages(arg0, arg1 interfa
 }
 
 // ListVirtualRoutersPagesWithContext mocks base method
-func (m *MockAppMeshAPI) ListVirtualRoutersPagesWithContext(arg0 aws.Context, arg1 *appmesh.ListVirtualRoutersInput, arg2 func(*appmesh.ListVirtualRoutersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAppMeshAPI) ListVirtualRoutersPagesWithContext(arg0 context.Context, arg1 *appmesh.ListVirtualRoutersInput, arg2 func(*appmesh.ListVirtualRoutersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -948,7 +948,7 @@ func (mr *MockAppMeshAPIMockRecorder) ListVirtualRoutersRequest(arg0 interface{}
 }
 
 // ListVirtualRoutersWithContext mocks base method
-func (m *MockAppMeshAPI) ListVirtualRoutersWithContext(arg0 aws.Context, arg1 *appmesh.ListVirtualRoutersInput, arg2 ...request.Option) (*appmesh.ListVirtualRoutersOutput, error) {
+func (m *MockAppMeshAPI) ListVirtualRoutersWithContext(arg0 context.Context, arg1 *appmesh.ListVirtualRoutersInput, arg2 ...request.Option) (*appmesh.ListVirtualRoutersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -998,7 +998,7 @@ func (mr *MockAppMeshAPIMockRecorder) UpdateRouteRequest(arg0 interface{}) *gomo
 }
 
 // UpdateRouteWithContext mocks base method
-func (m *MockAppMeshAPI) UpdateRouteWithContext(arg0 aws.Context, arg1 *appmesh.UpdateRouteInput, arg2 ...request.Option) (*appmesh.UpdateRouteOutput, error) {
+func (m *MockAppMeshAPI) UpdateRouteWithContext(arg0 context.Context, arg1 *appmesh.UpdateRouteInput, arg2 ...request.Option) (*appmesh.UpdateRouteOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockAppMeshAPIMockRecorder) UpdateVirtualNodeRequest(arg0 interface{})
 }
 
 // UpdateVirtualNodeWithContext mocks base method
-func (m *MockAppMeshAPI) UpdateVirtualNodeWithContext(arg0 aws.Context, arg1 *appmesh.UpdateVirtualNodeInput, arg2 ...request.Option) (*appmesh.UpdateVirtualNodeOutput, error) {
+func (m *MockAppMeshAPI) UpdateVirtualNodeWithContext(arg0 context.Context, arg1 *appmesh.UpdateVirtualNodeInput, arg2 ...request.Option) (*appmesh.UpdateVirtualNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockAppMeshAPIMockRecorder) UpdateVirtualRouterRequest(arg0 interface{
 }
 
 // UpdateVirtualRouterWithContext mocks base method
-func (m *MockAppMeshAPI) UpdateVirtualRouterWithContext(arg0 aws.Context, arg1 *appmesh.UpdateVirtualRouterInput, arg2 ...request.Option) (*appmesh.UpdateVirtualRouterOutput, error) {
+func (m *MockAppMeshAPI) UpdateVirtualRouterWithContext(arg0 context.Context, arg1 *appmesh.UpdateVirtualRouterInput, arg2 ...request.Option) (*appmesh.UpdateVirtualRouterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

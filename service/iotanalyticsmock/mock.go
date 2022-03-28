@@ -5,7 +5,7 @@
 package iotanalyticsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	iotanalytics "github.com/aws/aws-sdk-go/service/iotanalytics"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) BatchPutMessageRequest(arg0 interface
 }
 
 // BatchPutMessageWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) BatchPutMessageWithContext(arg0 aws.Context, arg1 *iotanalytics.BatchPutMessageInput, arg2 ...request.Option) (*iotanalytics.BatchPutMessageOutput, error) {
+func (m *MockIoTAnalyticsAPI) BatchPutMessageWithContext(arg0 context.Context, arg1 *iotanalytics.BatchPutMessageInput, arg2 ...request.Option) (*iotanalytics.BatchPutMessageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) CancelPipelineReprocessingRequest(arg
 }
 
 // CancelPipelineReprocessingWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) CancelPipelineReprocessingWithContext(arg0 aws.Context, arg1 *iotanalytics.CancelPipelineReprocessingInput, arg2 ...request.Option) (*iotanalytics.CancelPipelineReprocessingOutput, error) {
+func (m *MockIoTAnalyticsAPI) CancelPipelineReprocessingWithContext(arg0 context.Context, arg1 *iotanalytics.CancelPipelineReprocessingInput, arg2 ...request.Option) (*iotanalytics.CancelPipelineReprocessingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) CreateChannelRequest(arg0 interface{}
 }
 
 // CreateChannelWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) CreateChannelWithContext(arg0 aws.Context, arg1 *iotanalytics.CreateChannelInput, arg2 ...request.Option) (*iotanalytics.CreateChannelOutput, error) {
+func (m *MockIoTAnalyticsAPI) CreateChannelWithContext(arg0 context.Context, arg1 *iotanalytics.CreateChannelInput, arg2 ...request.Option) (*iotanalytics.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) CreateDatasetContentRequest(arg0 inte
 }
 
 // CreateDatasetContentWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) CreateDatasetContentWithContext(arg0 aws.Context, arg1 *iotanalytics.CreateDatasetContentInput, arg2 ...request.Option) (*iotanalytics.CreateDatasetContentOutput, error) {
+func (m *MockIoTAnalyticsAPI) CreateDatasetContentWithContext(arg0 context.Context, arg1 *iotanalytics.CreateDatasetContentInput, arg2 ...request.Option) (*iotanalytics.CreateDatasetContentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) CreateDatasetRequest(arg0 interface{}
 }
 
 // CreateDatasetWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) CreateDatasetWithContext(arg0 aws.Context, arg1 *iotanalytics.CreateDatasetInput, arg2 ...request.Option) (*iotanalytics.CreateDatasetOutput, error) {
+func (m *MockIoTAnalyticsAPI) CreateDatasetWithContext(arg0 context.Context, arg1 *iotanalytics.CreateDatasetInput, arg2 ...request.Option) (*iotanalytics.CreateDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) CreateDatastoreRequest(arg0 interface
 }
 
 // CreateDatastoreWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) CreateDatastoreWithContext(arg0 aws.Context, arg1 *iotanalytics.CreateDatastoreInput, arg2 ...request.Option) (*iotanalytics.CreateDatastoreOutput, error) {
+func (m *MockIoTAnalyticsAPI) CreateDatastoreWithContext(arg0 context.Context, arg1 *iotanalytics.CreateDatastoreInput, arg2 ...request.Option) (*iotanalytics.CreateDatastoreOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) CreatePipelineRequest(arg0 interface{
 }
 
 // CreatePipelineWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) CreatePipelineWithContext(arg0 aws.Context, arg1 *iotanalytics.CreatePipelineInput, arg2 ...request.Option) (*iotanalytics.CreatePipelineOutput, error) {
+func (m *MockIoTAnalyticsAPI) CreatePipelineWithContext(arg0 context.Context, arg1 *iotanalytics.CreatePipelineInput, arg2 ...request.Option) (*iotanalytics.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DeleteChannelRequest(arg0 interface{}
 }
 
 // DeleteChannelWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DeleteChannelWithContext(arg0 aws.Context, arg1 *iotanalytics.DeleteChannelInput, arg2 ...request.Option) (*iotanalytics.DeleteChannelOutput, error) {
+func (m *MockIoTAnalyticsAPI) DeleteChannelWithContext(arg0 context.Context, arg1 *iotanalytics.DeleteChannelInput, arg2 ...request.Option) (*iotanalytics.DeleteChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DeleteDatasetContentRequest(arg0 inte
 }
 
 // DeleteDatasetContentWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DeleteDatasetContentWithContext(arg0 aws.Context, arg1 *iotanalytics.DeleteDatasetContentInput, arg2 ...request.Option) (*iotanalytics.DeleteDatasetContentOutput, error) {
+func (m *MockIoTAnalyticsAPI) DeleteDatasetContentWithContext(arg0 context.Context, arg1 *iotanalytics.DeleteDatasetContentInput, arg2 ...request.Option) (*iotanalytics.DeleteDatasetContentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DeleteDatasetRequest(arg0 interface{}
 }
 
 // DeleteDatasetWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DeleteDatasetWithContext(arg0 aws.Context, arg1 *iotanalytics.DeleteDatasetInput, arg2 ...request.Option) (*iotanalytics.DeleteDatasetOutput, error) {
+func (m *MockIoTAnalyticsAPI) DeleteDatasetWithContext(arg0 context.Context, arg1 *iotanalytics.DeleteDatasetInput, arg2 ...request.Option) (*iotanalytics.DeleteDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DeleteDatastoreRequest(arg0 interface
 }
 
 // DeleteDatastoreWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DeleteDatastoreWithContext(arg0 aws.Context, arg1 *iotanalytics.DeleteDatastoreInput, arg2 ...request.Option) (*iotanalytics.DeleteDatastoreOutput, error) {
+func (m *MockIoTAnalyticsAPI) DeleteDatastoreWithContext(arg0 context.Context, arg1 *iotanalytics.DeleteDatastoreInput, arg2 ...request.Option) (*iotanalytics.DeleteDatastoreOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DeletePipelineRequest(arg0 interface{
 }
 
 // DeletePipelineWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DeletePipelineWithContext(arg0 aws.Context, arg1 *iotanalytics.DeletePipelineInput, arg2 ...request.Option) (*iotanalytics.DeletePipelineOutput, error) {
+func (m *MockIoTAnalyticsAPI) DeletePipelineWithContext(arg0 context.Context, arg1 *iotanalytics.DeletePipelineInput, arg2 ...request.Option) (*iotanalytics.DeletePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DescribeChannelRequest(arg0 interface
 }
 
 // DescribeChannelWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DescribeChannelWithContext(arg0 aws.Context, arg1 *iotanalytics.DescribeChannelInput, arg2 ...request.Option) (*iotanalytics.DescribeChannelOutput, error) {
+func (m *MockIoTAnalyticsAPI) DescribeChannelWithContext(arg0 context.Context, arg1 *iotanalytics.DescribeChannelInput, arg2 ...request.Option) (*iotanalytics.DescribeChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DescribeDatasetRequest(arg0 interface
 }
 
 // DescribeDatasetWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DescribeDatasetWithContext(arg0 aws.Context, arg1 *iotanalytics.DescribeDatasetInput, arg2 ...request.Option) (*iotanalytics.DescribeDatasetOutput, error) {
+func (m *MockIoTAnalyticsAPI) DescribeDatasetWithContext(arg0 context.Context, arg1 *iotanalytics.DescribeDatasetInput, arg2 ...request.Option) (*iotanalytics.DescribeDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DescribeDatastoreRequest(arg0 interfa
 }
 
 // DescribeDatastoreWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DescribeDatastoreWithContext(arg0 aws.Context, arg1 *iotanalytics.DescribeDatastoreInput, arg2 ...request.Option) (*iotanalytics.DescribeDatastoreOutput, error) {
+func (m *MockIoTAnalyticsAPI) DescribeDatastoreWithContext(arg0 context.Context, arg1 *iotanalytics.DescribeDatastoreInput, arg2 ...request.Option) (*iotanalytics.DescribeDatastoreOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DescribeLoggingOptionsRequest(arg0 in
 }
 
 // DescribeLoggingOptionsWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DescribeLoggingOptionsWithContext(arg0 aws.Context, arg1 *iotanalytics.DescribeLoggingOptionsInput, arg2 ...request.Option) (*iotanalytics.DescribeLoggingOptionsOutput, error) {
+func (m *MockIoTAnalyticsAPI) DescribeLoggingOptionsWithContext(arg0 context.Context, arg1 *iotanalytics.DescribeLoggingOptionsInput, arg2 ...request.Option) (*iotanalytics.DescribeLoggingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) DescribePipelineRequest(arg0 interfac
 }
 
 // DescribePipelineWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) DescribePipelineWithContext(arg0 aws.Context, arg1 *iotanalytics.DescribePipelineInput, arg2 ...request.Option) (*iotanalytics.DescribePipelineOutput, error) {
+func (m *MockIoTAnalyticsAPI) DescribePipelineWithContext(arg0 context.Context, arg1 *iotanalytics.DescribePipelineInput, arg2 ...request.Option) (*iotanalytics.DescribePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) GetDatasetContentRequest(arg0 interfa
 }
 
 // GetDatasetContentWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) GetDatasetContentWithContext(arg0 aws.Context, arg1 *iotanalytics.GetDatasetContentInput, arg2 ...request.Option) (*iotanalytics.GetDatasetContentOutput, error) {
+func (m *MockIoTAnalyticsAPI) GetDatasetContentWithContext(arg0 context.Context, arg1 *iotanalytics.GetDatasetContentInput, arg2 ...request.Option) (*iotanalytics.GetDatasetContentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -965,7 +965,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListChannelsPages(arg0, arg1 interfac
 }
 
 // ListChannelsPagesWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListChannelsPagesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListChannelsInput, arg2 func(*iotanalytics.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockIoTAnalyticsAPI) ListChannelsPagesWithContext(arg0 context.Context, arg1 *iotanalytics.ListChannelsInput, arg2 func(*iotanalytics.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -999,7 +999,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListChannelsRequest(arg0 interface{})
 }
 
 // ListChannelsWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListChannelsWithContext(arg0 aws.Context, arg1 *iotanalytics.ListChannelsInput, arg2 ...request.Option) (*iotanalytics.ListChannelsOutput, error) {
+func (m *MockIoTAnalyticsAPI) ListChannelsWithContext(arg0 context.Context, arg1 *iotanalytics.ListChannelsInput, arg2 ...request.Option) (*iotanalytics.ListChannelsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContentsPages(arg0, arg1 i
 }
 
 // ListDatasetContentsPagesWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListDatasetContentsPagesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatasetContentsInput, arg2 func(*iotanalytics.ListDatasetContentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockIoTAnalyticsAPI) ListDatasetContentsPagesWithContext(arg0 context.Context, arg1 *iotanalytics.ListDatasetContentsInput, arg2 func(*iotanalytics.ListDatasetContentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetContentsRequest(arg0 inter
 }
 
 // ListDatasetContentsWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListDatasetContentsWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatasetContentsInput, arg2 ...request.Option) (*iotanalytics.ListDatasetContentsOutput, error) {
+func (m *MockIoTAnalyticsAPI) ListDatasetContentsWithContext(arg0 context.Context, arg1 *iotanalytics.ListDatasetContentsInput, arg2 ...request.Option) (*iotanalytics.ListDatasetContentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetsPages(arg0, arg1 interfac
 }
 
 // ListDatasetsPagesWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListDatasetsPagesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatasetsInput, arg2 func(*iotanalytics.ListDatasetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockIoTAnalyticsAPI) ListDatasetsPagesWithContext(arg0 context.Context, arg1 *iotanalytics.ListDatasetsInput, arg2 func(*iotanalytics.ListDatasetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatasetsRequest(arg0 interface{})
 }
 
 // ListDatasetsWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListDatasetsWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatasetsInput, arg2 ...request.Option) (*iotanalytics.ListDatasetsOutput, error) {
+func (m *MockIoTAnalyticsAPI) ListDatasetsWithContext(arg0 context.Context, arg1 *iotanalytics.ListDatasetsInput, arg2 ...request.Option) (*iotanalytics.ListDatasetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatastoresPages(arg0, arg1 interf
 }
 
 // ListDatastoresPagesWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListDatastoresPagesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatastoresInput, arg2 func(*iotanalytics.ListDatastoresOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockIoTAnalyticsAPI) ListDatastoresPagesWithContext(arg0 context.Context, arg1 *iotanalytics.ListDatastoresInput, arg2 func(*iotanalytics.ListDatastoresOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1248,7 +1248,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListDatastoresRequest(arg0 interface{
 }
 
 // ListDatastoresWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListDatastoresWithContext(arg0 aws.Context, arg1 *iotanalytics.ListDatastoresInput, arg2 ...request.Option) (*iotanalytics.ListDatastoresOutput, error) {
+func (m *MockIoTAnalyticsAPI) ListDatastoresWithContext(arg0 context.Context, arg1 *iotanalytics.ListDatastoresInput, arg2 ...request.Option) (*iotanalytics.ListDatastoresOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1297,7 +1297,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListPipelinesPages(arg0, arg1 interfa
 }
 
 // ListPipelinesPagesWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListPipelinesPagesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListPipelinesInput, arg2 func(*iotanalytics.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockIoTAnalyticsAPI) ListPipelinesPagesWithContext(arg0 context.Context, arg1 *iotanalytics.ListPipelinesInput, arg2 func(*iotanalytics.ListPipelinesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1331,7 +1331,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListPipelinesRequest(arg0 interface{}
 }
 
 // ListPipelinesWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListPipelinesWithContext(arg0 aws.Context, arg1 *iotanalytics.ListPipelinesInput, arg2 ...request.Option) (*iotanalytics.ListPipelinesOutput, error) {
+func (m *MockIoTAnalyticsAPI) ListPipelinesWithContext(arg0 context.Context, arg1 *iotanalytics.ListPipelinesInput, arg2 ...request.Option) (*iotanalytics.ListPipelinesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1381,7 +1381,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) ListTagsForResourceRequest(arg0 inter
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *iotanalytics.ListTagsForResourceInput, arg2 ...request.Option) (*iotanalytics.ListTagsForResourceOutput, error) {
+func (m *MockIoTAnalyticsAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *iotanalytics.ListTagsForResourceInput, arg2 ...request.Option) (*iotanalytics.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1431,7 +1431,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) PutLoggingOptionsRequest(arg0 interfa
 }
 
 // PutLoggingOptionsWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) PutLoggingOptionsWithContext(arg0 aws.Context, arg1 *iotanalytics.PutLoggingOptionsInput, arg2 ...request.Option) (*iotanalytics.PutLoggingOptionsOutput, error) {
+func (m *MockIoTAnalyticsAPI) PutLoggingOptionsWithContext(arg0 context.Context, arg1 *iotanalytics.PutLoggingOptionsInput, arg2 ...request.Option) (*iotanalytics.PutLoggingOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) RunPipelineActivityRequest(arg0 inter
 }
 
 // RunPipelineActivityWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) RunPipelineActivityWithContext(arg0 aws.Context, arg1 *iotanalytics.RunPipelineActivityInput, arg2 ...request.Option) (*iotanalytics.RunPipelineActivityOutput, error) {
+func (m *MockIoTAnalyticsAPI) RunPipelineActivityWithContext(arg0 context.Context, arg1 *iotanalytics.RunPipelineActivityInput, arg2 ...request.Option) (*iotanalytics.RunPipelineActivityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1531,7 +1531,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) SampleChannelDataRequest(arg0 interfa
 }
 
 // SampleChannelDataWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) SampleChannelDataWithContext(arg0 aws.Context, arg1 *iotanalytics.SampleChannelDataInput, arg2 ...request.Option) (*iotanalytics.SampleChannelDataOutput, error) {
+func (m *MockIoTAnalyticsAPI) SampleChannelDataWithContext(arg0 context.Context, arg1 *iotanalytics.SampleChannelDataInput, arg2 ...request.Option) (*iotanalytics.SampleChannelDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1581,7 +1581,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) StartPipelineReprocessingRequest(arg0
 }
 
 // StartPipelineReprocessingWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) StartPipelineReprocessingWithContext(arg0 aws.Context, arg1 *iotanalytics.StartPipelineReprocessingInput, arg2 ...request.Option) (*iotanalytics.StartPipelineReprocessingOutput, error) {
+func (m *MockIoTAnalyticsAPI) StartPipelineReprocessingWithContext(arg0 context.Context, arg1 *iotanalytics.StartPipelineReprocessingInput, arg2 ...request.Option) (*iotanalytics.StartPipelineReprocessingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1631,7 +1631,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) TagResourceRequest(arg0 interface{}) 
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) TagResourceWithContext(arg0 aws.Context, arg1 *iotanalytics.TagResourceInput, arg2 ...request.Option) (*iotanalytics.TagResourceOutput, error) {
+func (m *MockIoTAnalyticsAPI) TagResourceWithContext(arg0 context.Context, arg1 *iotanalytics.TagResourceInput, arg2 ...request.Option) (*iotanalytics.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1681,7 +1681,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) UntagResourceRequest(arg0 interface{}
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *iotanalytics.UntagResourceInput, arg2 ...request.Option) (*iotanalytics.UntagResourceOutput, error) {
+func (m *MockIoTAnalyticsAPI) UntagResourceWithContext(arg0 context.Context, arg1 *iotanalytics.UntagResourceInput, arg2 ...request.Option) (*iotanalytics.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1731,7 +1731,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) UpdateChannelRequest(arg0 interface{}
 }
 
 // UpdateChannelWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) UpdateChannelWithContext(arg0 aws.Context, arg1 *iotanalytics.UpdateChannelInput, arg2 ...request.Option) (*iotanalytics.UpdateChannelOutput, error) {
+func (m *MockIoTAnalyticsAPI) UpdateChannelWithContext(arg0 context.Context, arg1 *iotanalytics.UpdateChannelInput, arg2 ...request.Option) (*iotanalytics.UpdateChannelOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) UpdateDatasetRequest(arg0 interface{}
 }
 
 // UpdateDatasetWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) UpdateDatasetWithContext(arg0 aws.Context, arg1 *iotanalytics.UpdateDatasetInput, arg2 ...request.Option) (*iotanalytics.UpdateDatasetOutput, error) {
+func (m *MockIoTAnalyticsAPI) UpdateDatasetWithContext(arg0 context.Context, arg1 *iotanalytics.UpdateDatasetInput, arg2 ...request.Option) (*iotanalytics.UpdateDatasetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1831,7 +1831,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) UpdateDatastoreRequest(arg0 interface
 }
 
 // UpdateDatastoreWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) UpdateDatastoreWithContext(arg0 aws.Context, arg1 *iotanalytics.UpdateDatastoreInput, arg2 ...request.Option) (*iotanalytics.UpdateDatastoreOutput, error) {
+func (m *MockIoTAnalyticsAPI) UpdateDatastoreWithContext(arg0 context.Context, arg1 *iotanalytics.UpdateDatastoreInput, arg2 ...request.Option) (*iotanalytics.UpdateDatastoreOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1881,7 +1881,7 @@ func (mr *MockIoTAnalyticsAPIMockRecorder) UpdatePipelineRequest(arg0 interface{
 }
 
 // UpdatePipelineWithContext mocks base method
-func (m *MockIoTAnalyticsAPI) UpdatePipelineWithContext(arg0 aws.Context, arg1 *iotanalytics.UpdatePipelineInput, arg2 ...request.Option) (*iotanalytics.UpdatePipelineOutput, error) {
+func (m *MockIoTAnalyticsAPI) UpdatePipelineWithContext(arg0 context.Context, arg1 *iotanalytics.UpdatePipelineInput, arg2 ...request.Option) (*iotanalytics.UpdatePipelineOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

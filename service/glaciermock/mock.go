@@ -5,7 +5,7 @@
 package glaciermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	glacier "github.com/aws/aws-sdk-go/service/glacier"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockGlacierAPIMockRecorder) AbortMultipartUploadRequest(arg0 interface
 }
 
 // AbortMultipartUploadWithContext mocks base method
-func (m *MockGlacierAPI) AbortMultipartUploadWithContext(arg0 aws.Context, arg1 *glacier.AbortMultipartUploadInput, arg2 ...request.Option) (*glacier.AbortMultipartUploadOutput, error) {
+func (m *MockGlacierAPI) AbortMultipartUploadWithContext(arg0 context.Context, arg1 *glacier.AbortMultipartUploadInput, arg2 ...request.Option) (*glacier.AbortMultipartUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockGlacierAPIMockRecorder) AbortVaultLockRequest(arg0 interface{}) *g
 }
 
 // AbortVaultLockWithContext mocks base method
-func (m *MockGlacierAPI) AbortVaultLockWithContext(arg0 aws.Context, arg1 *glacier.AbortVaultLockInput, arg2 ...request.Option) (*glacier.AbortVaultLockOutput, error) {
+func (m *MockGlacierAPI) AbortVaultLockWithContext(arg0 context.Context, arg1 *glacier.AbortVaultLockInput, arg2 ...request.Option) (*glacier.AbortVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockGlacierAPIMockRecorder) AddTagsToVaultRequest(arg0 interface{}) *g
 }
 
 // AddTagsToVaultWithContext mocks base method
-func (m *MockGlacierAPI) AddTagsToVaultWithContext(arg0 aws.Context, arg1 *glacier.AddTagsToVaultInput, arg2 ...request.Option) (*glacier.AddTagsToVaultOutput, error) {
+func (m *MockGlacierAPI) AddTagsToVaultWithContext(arg0 context.Context, arg1 *glacier.AddTagsToVaultInput, arg2 ...request.Option) (*glacier.AddTagsToVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockGlacierAPIMockRecorder) CompleteMultipartUploadRequest(arg0 interf
 }
 
 // CompleteMultipartUploadWithContext mocks base method
-func (m *MockGlacierAPI) CompleteMultipartUploadWithContext(arg0 aws.Context, arg1 *glacier.CompleteMultipartUploadInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
+func (m *MockGlacierAPI) CompleteMultipartUploadWithContext(arg0 context.Context, arg1 *glacier.CompleteMultipartUploadInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockGlacierAPIMockRecorder) CompleteVaultLockRequest(arg0 interface{})
 }
 
 // CompleteVaultLockWithContext mocks base method
-func (m *MockGlacierAPI) CompleteVaultLockWithContext(arg0 aws.Context, arg1 *glacier.CompleteVaultLockInput, arg2 ...request.Option) (*glacier.CompleteVaultLockOutput, error) {
+func (m *MockGlacierAPI) CompleteVaultLockWithContext(arg0 context.Context, arg1 *glacier.CompleteVaultLockInput, arg2 ...request.Option) (*glacier.CompleteVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockGlacierAPIMockRecorder) CreateVaultRequest(arg0 interface{}) *gomo
 }
 
 // CreateVaultWithContext mocks base method
-func (m *MockGlacierAPI) CreateVaultWithContext(arg0 aws.Context, arg1 *glacier.CreateVaultInput, arg2 ...request.Option) (*glacier.CreateVaultOutput, error) {
+func (m *MockGlacierAPI) CreateVaultWithContext(arg0 context.Context, arg1 *glacier.CreateVaultInput, arg2 ...request.Option) (*glacier.CreateVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockGlacierAPIMockRecorder) DeleteArchiveRequest(arg0 interface{}) *go
 }
 
 // DeleteArchiveWithContext mocks base method
-func (m *MockGlacierAPI) DeleteArchiveWithContext(arg0 aws.Context, arg1 *glacier.DeleteArchiveInput, arg2 ...request.Option) (*glacier.DeleteArchiveOutput, error) {
+func (m *MockGlacierAPI) DeleteArchiveWithContext(arg0 context.Context, arg1 *glacier.DeleteArchiveInput, arg2 ...request.Option) (*glacier.DeleteArchiveOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockGlacierAPIMockRecorder) DeleteVaultAccessPolicyRequest(arg0 interf
 }
 
 // DeleteVaultAccessPolicyWithContext mocks base method
-func (m *MockGlacierAPI) DeleteVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *glacier.DeleteVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.DeleteVaultAccessPolicyOutput, error) {
+func (m *MockGlacierAPI) DeleteVaultAccessPolicyWithContext(arg0 context.Context, arg1 *glacier.DeleteVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.DeleteVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockGlacierAPIMockRecorder) DeleteVaultNotificationsRequest(arg0 inter
 }
 
 // DeleteVaultNotificationsWithContext mocks base method
-func (m *MockGlacierAPI) DeleteVaultNotificationsWithContext(arg0 aws.Context, arg1 *glacier.DeleteVaultNotificationsInput, arg2 ...request.Option) (*glacier.DeleteVaultNotificationsOutput, error) {
+func (m *MockGlacierAPI) DeleteVaultNotificationsWithContext(arg0 context.Context, arg1 *glacier.DeleteVaultNotificationsInput, arg2 ...request.Option) (*glacier.DeleteVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockGlacierAPIMockRecorder) DeleteVaultRequest(arg0 interface{}) *gomo
 }
 
 // DeleteVaultWithContext mocks base method
-func (m *MockGlacierAPI) DeleteVaultWithContext(arg0 aws.Context, arg1 *glacier.DeleteVaultInput, arg2 ...request.Option) (*glacier.DeleteVaultOutput, error) {
+func (m *MockGlacierAPI) DeleteVaultWithContext(arg0 context.Context, arg1 *glacier.DeleteVaultInput, arg2 ...request.Option) (*glacier.DeleteVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockGlacierAPIMockRecorder) DescribeJobRequest(arg0 interface{}) *gomo
 }
 
 // DescribeJobWithContext mocks base method
-func (m *MockGlacierAPI) DescribeJobWithContext(arg0 aws.Context, arg1 *glacier.DescribeJobInput, arg2 ...request.Option) (*glacier.JobDescription, error) {
+func (m *MockGlacierAPI) DescribeJobWithContext(arg0 context.Context, arg1 *glacier.DescribeJobInput, arg2 ...request.Option) (*glacier.JobDescription, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockGlacierAPIMockRecorder) DescribeVaultRequest(arg0 interface{}) *go
 }
 
 // DescribeVaultWithContext mocks base method
-func (m *MockGlacierAPI) DescribeVaultWithContext(arg0 aws.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.Option) (*glacier.DescribeVaultOutput, error) {
+func (m *MockGlacierAPI) DescribeVaultWithContext(arg0 context.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.Option) (*glacier.DescribeVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockGlacierAPIMockRecorder) GetDataRetrievalPolicyRequest(arg0 interfa
 }
 
 // GetDataRetrievalPolicyWithContext mocks base method
-func (m *MockGlacierAPI) GetDataRetrievalPolicyWithContext(arg0 aws.Context, arg1 *glacier.GetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.GetDataRetrievalPolicyOutput, error) {
+func (m *MockGlacierAPI) GetDataRetrievalPolicyWithContext(arg0 context.Context, arg1 *glacier.GetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.GetDataRetrievalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockGlacierAPIMockRecorder) GetJobOutputRequest(arg0 interface{}) *gom
 }
 
 // GetJobOutputWithContext mocks base method
-func (m *MockGlacierAPI) GetJobOutputWithContext(arg0 aws.Context, arg1 *glacier.GetJobOutputInput, arg2 ...request.Option) (*glacier.GetJobOutputOutput, error) {
+func (m *MockGlacierAPI) GetJobOutputWithContext(arg0 context.Context, arg1 *glacier.GetJobOutputInput, arg2 ...request.Option) (*glacier.GetJobOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockGlacierAPIMockRecorder) GetVaultAccessPolicyRequest(arg0 interface
 }
 
 // GetVaultAccessPolicyWithContext mocks base method
-func (m *MockGlacierAPI) GetVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *glacier.GetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.GetVaultAccessPolicyOutput, error) {
+func (m *MockGlacierAPI) GetVaultAccessPolicyWithContext(arg0 context.Context, arg1 *glacier.GetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.GetVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockGlacierAPIMockRecorder) GetVaultLockRequest(arg0 interface{}) *gom
 }
 
 // GetVaultLockWithContext mocks base method
-func (m *MockGlacierAPI) GetVaultLockWithContext(arg0 aws.Context, arg1 *glacier.GetVaultLockInput, arg2 ...request.Option) (*glacier.GetVaultLockOutput, error) {
+func (m *MockGlacierAPI) GetVaultLockWithContext(arg0 context.Context, arg1 *glacier.GetVaultLockInput, arg2 ...request.Option) (*glacier.GetVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockGlacierAPIMockRecorder) GetVaultNotificationsRequest(arg0 interfac
 }
 
 // GetVaultNotificationsWithContext mocks base method
-func (m *MockGlacierAPI) GetVaultNotificationsWithContext(arg0 aws.Context, arg1 *glacier.GetVaultNotificationsInput, arg2 ...request.Option) (*glacier.GetVaultNotificationsOutput, error) {
+func (m *MockGlacierAPI) GetVaultNotificationsWithContext(arg0 context.Context, arg1 *glacier.GetVaultNotificationsInput, arg2 ...request.Option) (*glacier.GetVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockGlacierAPIMockRecorder) InitiateJobRequest(arg0 interface{}) *gomo
 }
 
 // InitiateJobWithContext mocks base method
-func (m *MockGlacierAPI) InitiateJobWithContext(arg0 aws.Context, arg1 *glacier.InitiateJobInput, arg2 ...request.Option) (*glacier.InitiateJobOutput, error) {
+func (m *MockGlacierAPI) InitiateJobWithContext(arg0 context.Context, arg1 *glacier.InitiateJobInput, arg2 ...request.Option) (*glacier.InitiateJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockGlacierAPIMockRecorder) InitiateMultipartUploadRequest(arg0 interf
 }
 
 // InitiateMultipartUploadWithContext mocks base method
-func (m *MockGlacierAPI) InitiateMultipartUploadWithContext(arg0 aws.Context, arg1 *glacier.InitiateMultipartUploadInput, arg2 ...request.Option) (*glacier.InitiateMultipartUploadOutput, error) {
+func (m *MockGlacierAPI) InitiateMultipartUploadWithContext(arg0 context.Context, arg1 *glacier.InitiateMultipartUploadInput, arg2 ...request.Option) (*glacier.InitiateMultipartUploadOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockGlacierAPIMockRecorder) InitiateVaultLockRequest(arg0 interface{})
 }
 
 // InitiateVaultLockWithContext mocks base method
-func (m *MockGlacierAPI) InitiateVaultLockWithContext(arg0 aws.Context, arg1 *glacier.InitiateVaultLockInput, arg2 ...request.Option) (*glacier.InitiateVaultLockOutput, error) {
+func (m *MockGlacierAPI) InitiateVaultLockWithContext(arg0 context.Context, arg1 *glacier.InitiateVaultLockInput, arg2 ...request.Option) (*glacier.InitiateVaultLockOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1065,7 +1065,7 @@ func (mr *MockGlacierAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gom
 }
 
 // ListJobsPagesWithContext mocks base method
-func (m *MockGlacierAPI) ListJobsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListJobsInput, arg2 func(*glacier.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlacierAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *glacier.ListJobsInput, arg2 func(*glacier.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1099,7 +1099,7 @@ func (mr *MockGlacierAPIMockRecorder) ListJobsRequest(arg0 interface{}) *gomock.
 }
 
 // ListJobsWithContext mocks base method
-func (m *MockGlacierAPI) ListJobsWithContext(arg0 aws.Context, arg1 *glacier.ListJobsInput, arg2 ...request.Option) (*glacier.ListJobsOutput, error) {
+func (m *MockGlacierAPI) ListJobsWithContext(arg0 context.Context, arg1 *glacier.ListJobsInput, arg2 ...request.Option) (*glacier.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockGlacierAPIMockRecorder) ListMultipartUploadsPages(arg0, arg1 inter
 }
 
 // ListMultipartUploadsPagesWithContext mocks base method
-func (m *MockGlacierAPI) ListMultipartUploadsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 func(*glacier.ListMultipartUploadsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlacierAPI) ListMultipartUploadsPagesWithContext(arg0 context.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 func(*glacier.ListMultipartUploadsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1182,7 +1182,7 @@ func (mr *MockGlacierAPIMockRecorder) ListMultipartUploadsRequest(arg0 interface
 }
 
 // ListMultipartUploadsWithContext mocks base method
-func (m *MockGlacierAPI) ListMultipartUploadsWithContext(arg0 aws.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 ...request.Option) (*glacier.ListMultipartUploadsOutput, error) {
+func (m *MockGlacierAPI) ListMultipartUploadsWithContext(arg0 context.Context, arg1 *glacier.ListMultipartUploadsInput, arg2 ...request.Option) (*glacier.ListMultipartUploadsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1231,7 +1231,7 @@ func (mr *MockGlacierAPIMockRecorder) ListPartsPages(arg0, arg1 interface{}) *go
 }
 
 // ListPartsPagesWithContext mocks base method
-func (m *MockGlacierAPI) ListPartsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListPartsInput, arg2 func(*glacier.ListPartsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlacierAPI) ListPartsPagesWithContext(arg0 context.Context, arg1 *glacier.ListPartsInput, arg2 func(*glacier.ListPartsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1265,7 +1265,7 @@ func (mr *MockGlacierAPIMockRecorder) ListPartsRequest(arg0 interface{}) *gomock
 }
 
 // ListPartsWithContext mocks base method
-func (m *MockGlacierAPI) ListPartsWithContext(arg0 aws.Context, arg1 *glacier.ListPartsInput, arg2 ...request.Option) (*glacier.ListPartsOutput, error) {
+func (m *MockGlacierAPI) ListPartsWithContext(arg0 context.Context, arg1 *glacier.ListPartsInput, arg2 ...request.Option) (*glacier.ListPartsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockGlacierAPIMockRecorder) ListProvisionedCapacityRequest(arg0 interf
 }
 
 // ListProvisionedCapacityWithContext mocks base method
-func (m *MockGlacierAPI) ListProvisionedCapacityWithContext(arg0 aws.Context, arg1 *glacier.ListProvisionedCapacityInput, arg2 ...request.Option) (*glacier.ListProvisionedCapacityOutput, error) {
+func (m *MockGlacierAPI) ListProvisionedCapacityWithContext(arg0 context.Context, arg1 *glacier.ListProvisionedCapacityInput, arg2 ...request.Option) (*glacier.ListProvisionedCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockGlacierAPIMockRecorder) ListTagsForVaultRequest(arg0 interface{}) 
 }
 
 // ListTagsForVaultWithContext mocks base method
-func (m *MockGlacierAPI) ListTagsForVaultWithContext(arg0 aws.Context, arg1 *glacier.ListTagsForVaultInput, arg2 ...request.Option) (*glacier.ListTagsForVaultOutput, error) {
+func (m *MockGlacierAPI) ListTagsForVaultWithContext(arg0 context.Context, arg1 *glacier.ListTagsForVaultInput, arg2 ...request.Option) (*glacier.ListTagsForVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1414,7 +1414,7 @@ func (mr *MockGlacierAPIMockRecorder) ListVaultsPages(arg0, arg1 interface{}) *g
 }
 
 // ListVaultsPagesWithContext mocks base method
-func (m *MockGlacierAPI) ListVaultsPagesWithContext(arg0 aws.Context, arg1 *glacier.ListVaultsInput, arg2 func(*glacier.ListVaultsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockGlacierAPI) ListVaultsPagesWithContext(arg0 context.Context, arg1 *glacier.ListVaultsInput, arg2 func(*glacier.ListVaultsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1448,7 +1448,7 @@ func (mr *MockGlacierAPIMockRecorder) ListVaultsRequest(arg0 interface{}) *gomoc
 }
 
 // ListVaultsWithContext mocks base method
-func (m *MockGlacierAPI) ListVaultsWithContext(arg0 aws.Context, arg1 *glacier.ListVaultsInput, arg2 ...request.Option) (*glacier.ListVaultsOutput, error) {
+func (m *MockGlacierAPI) ListVaultsWithContext(arg0 context.Context, arg1 *glacier.ListVaultsInput, arg2 ...request.Option) (*glacier.ListVaultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1498,7 +1498,7 @@ func (mr *MockGlacierAPIMockRecorder) PurchaseProvisionedCapacityRequest(arg0 in
 }
 
 // PurchaseProvisionedCapacityWithContext mocks base method
-func (m *MockGlacierAPI) PurchaseProvisionedCapacityWithContext(arg0 aws.Context, arg1 *glacier.PurchaseProvisionedCapacityInput, arg2 ...request.Option) (*glacier.PurchaseProvisionedCapacityOutput, error) {
+func (m *MockGlacierAPI) PurchaseProvisionedCapacityWithContext(arg0 context.Context, arg1 *glacier.PurchaseProvisionedCapacityInput, arg2 ...request.Option) (*glacier.PurchaseProvisionedCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1548,7 +1548,7 @@ func (mr *MockGlacierAPIMockRecorder) RemoveTagsFromVaultRequest(arg0 interface{
 }
 
 // RemoveTagsFromVaultWithContext mocks base method
-func (m *MockGlacierAPI) RemoveTagsFromVaultWithContext(arg0 aws.Context, arg1 *glacier.RemoveTagsFromVaultInput, arg2 ...request.Option) (*glacier.RemoveTagsFromVaultOutput, error) {
+func (m *MockGlacierAPI) RemoveTagsFromVaultWithContext(arg0 context.Context, arg1 *glacier.RemoveTagsFromVaultInput, arg2 ...request.Option) (*glacier.RemoveTagsFromVaultOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1598,7 +1598,7 @@ func (mr *MockGlacierAPIMockRecorder) SetDataRetrievalPolicyRequest(arg0 interfa
 }
 
 // SetDataRetrievalPolicyWithContext mocks base method
-func (m *MockGlacierAPI) SetDataRetrievalPolicyWithContext(arg0 aws.Context, arg1 *glacier.SetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.SetDataRetrievalPolicyOutput, error) {
+func (m *MockGlacierAPI) SetDataRetrievalPolicyWithContext(arg0 context.Context, arg1 *glacier.SetDataRetrievalPolicyInput, arg2 ...request.Option) (*glacier.SetDataRetrievalPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1648,7 +1648,7 @@ func (mr *MockGlacierAPIMockRecorder) SetVaultAccessPolicyRequest(arg0 interface
 }
 
 // SetVaultAccessPolicyWithContext mocks base method
-func (m *MockGlacierAPI) SetVaultAccessPolicyWithContext(arg0 aws.Context, arg1 *glacier.SetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.SetVaultAccessPolicyOutput, error) {
+func (m *MockGlacierAPI) SetVaultAccessPolicyWithContext(arg0 context.Context, arg1 *glacier.SetVaultAccessPolicyInput, arg2 ...request.Option) (*glacier.SetVaultAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1698,7 +1698,7 @@ func (mr *MockGlacierAPIMockRecorder) SetVaultNotificationsRequest(arg0 interfac
 }
 
 // SetVaultNotificationsWithContext mocks base method
-func (m *MockGlacierAPI) SetVaultNotificationsWithContext(arg0 aws.Context, arg1 *glacier.SetVaultNotificationsInput, arg2 ...request.Option) (*glacier.SetVaultNotificationsOutput, error) {
+func (m *MockGlacierAPI) SetVaultNotificationsWithContext(arg0 context.Context, arg1 *glacier.SetVaultNotificationsInput, arg2 ...request.Option) (*glacier.SetVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1748,7 +1748,7 @@ func (mr *MockGlacierAPIMockRecorder) UploadArchiveRequest(arg0 interface{}) *go
 }
 
 // UploadArchiveWithContext mocks base method
-func (m *MockGlacierAPI) UploadArchiveWithContext(arg0 aws.Context, arg1 *glacier.UploadArchiveInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
+func (m *MockGlacierAPI) UploadArchiveWithContext(arg0 context.Context, arg1 *glacier.UploadArchiveInput, arg2 ...request.Option) (*glacier.ArchiveCreationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1798,7 +1798,7 @@ func (mr *MockGlacierAPIMockRecorder) UploadMultipartPartRequest(arg0 interface{
 }
 
 // UploadMultipartPartWithContext mocks base method
-func (m *MockGlacierAPI) UploadMultipartPartWithContext(arg0 aws.Context, arg1 *glacier.UploadMultipartPartInput, arg2 ...request.Option) (*glacier.UploadMultipartPartOutput, error) {
+func (m *MockGlacierAPI) UploadMultipartPartWithContext(arg0 context.Context, arg1 *glacier.UploadMultipartPartInput, arg2 ...request.Option) (*glacier.UploadMultipartPartOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1832,7 +1832,7 @@ func (mr *MockGlacierAPIMockRecorder) WaitUntilVaultExists(arg0 interface{}) *go
 }
 
 // WaitUntilVaultExistsWithContext mocks base method
-func (m *MockGlacierAPI) WaitUntilVaultExistsWithContext(arg0 aws.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
+func (m *MockGlacierAPI) WaitUntilVaultExistsWithContext(arg0 context.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1865,7 +1865,7 @@ func (mr *MockGlacierAPIMockRecorder) WaitUntilVaultNotExists(arg0 interface{}) 
 }
 
 // WaitUntilVaultNotExistsWithContext mocks base method
-func (m *MockGlacierAPI) WaitUntilVaultNotExistsWithContext(arg0 aws.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
+func (m *MockGlacierAPI) WaitUntilVaultNotExistsWithContext(arg0 context.Context, arg1 *glacier.DescribeVaultInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

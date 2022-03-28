@@ -5,7 +5,7 @@
 package cloudhsmmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudhsm "github.com/aws/aws-sdk-go/service/cloudhsm"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudHSMAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{}
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockCloudHSMAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *cloudhsm.AddTagsToResourceInput, arg2 ...request.Option) (*cloudhsm.AddTagsToResourceOutput, error) {
+func (m *MockCloudHSMAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *cloudhsm.AddTagsToResourceInput, arg2 ...request.Option) (*cloudhsm.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudHSMAPIMockRecorder) CreateHapgRequest(arg0 interface{}) *gomo
 }
 
 // CreateHapgWithContext mocks base method
-func (m *MockCloudHSMAPI) CreateHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.CreateHapgInput, arg2 ...request.Option) (*cloudhsm.CreateHapgOutput, error) {
+func (m *MockCloudHSMAPI) CreateHapgWithContext(arg0 context.Context, arg1 *cloudhsm.CreateHapgInput, arg2 ...request.Option) (*cloudhsm.CreateHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudHSMAPIMockRecorder) CreateHsmRequest(arg0 interface{}) *gomoc
 }
 
 // CreateHsmWithContext mocks base method
-func (m *MockCloudHSMAPI) CreateHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.CreateHsmInput, arg2 ...request.Option) (*cloudhsm.CreateHsmOutput, error) {
+func (m *MockCloudHSMAPI) CreateHsmWithContext(arg0 context.Context, arg1 *cloudhsm.CreateHsmInput, arg2 ...request.Option) (*cloudhsm.CreateHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudHSMAPIMockRecorder) CreateLunaClientRequest(arg0 interface{})
 }
 
 // CreateLunaClientWithContext mocks base method
-func (m *MockCloudHSMAPI) CreateLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.CreateLunaClientInput, arg2 ...request.Option) (*cloudhsm.CreateLunaClientOutput, error) {
+func (m *MockCloudHSMAPI) CreateLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.CreateLunaClientInput, arg2 ...request.Option) (*cloudhsm.CreateLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudHSMAPIMockRecorder) DeleteHapgRequest(arg0 interface{}) *gomo
 }
 
 // DeleteHapgWithContext mocks base method
-func (m *MockCloudHSMAPI) DeleteHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.DeleteHapgInput, arg2 ...request.Option) (*cloudhsm.DeleteHapgOutput, error) {
+func (m *MockCloudHSMAPI) DeleteHapgWithContext(arg0 context.Context, arg1 *cloudhsm.DeleteHapgInput, arg2 ...request.Option) (*cloudhsm.DeleteHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudHSMAPIMockRecorder) DeleteHsmRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteHsmWithContext mocks base method
-func (m *MockCloudHSMAPI) DeleteHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.DeleteHsmInput, arg2 ...request.Option) (*cloudhsm.DeleteHsmOutput, error) {
+func (m *MockCloudHSMAPI) DeleteHsmWithContext(arg0 context.Context, arg1 *cloudhsm.DeleteHsmInput, arg2 ...request.Option) (*cloudhsm.DeleteHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCloudHSMAPIMockRecorder) DeleteLunaClientRequest(arg0 interface{})
 }
 
 // DeleteLunaClientWithContext mocks base method
-func (m *MockCloudHSMAPI) DeleteLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.DeleteLunaClientInput, arg2 ...request.Option) (*cloudhsm.DeleteLunaClientOutput, error) {
+func (m *MockCloudHSMAPI) DeleteLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.DeleteLunaClientInput, arg2 ...request.Option) (*cloudhsm.DeleteLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCloudHSMAPIMockRecorder) DescribeHapgRequest(arg0 interface{}) *go
 }
 
 // DescribeHapgWithContext mocks base method
-func (m *MockCloudHSMAPI) DescribeHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.DescribeHapgInput, arg2 ...request.Option) (*cloudhsm.DescribeHapgOutput, error) {
+func (m *MockCloudHSMAPI) DescribeHapgWithContext(arg0 context.Context, arg1 *cloudhsm.DescribeHapgInput, arg2 ...request.Option) (*cloudhsm.DescribeHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockCloudHSMAPIMockRecorder) DescribeHsmRequest(arg0 interface{}) *gom
 }
 
 // DescribeHsmWithContext mocks base method
-func (m *MockCloudHSMAPI) DescribeHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.DescribeHsmInput, arg2 ...request.Option) (*cloudhsm.DescribeHsmOutput, error) {
+func (m *MockCloudHSMAPI) DescribeHsmWithContext(arg0 context.Context, arg1 *cloudhsm.DescribeHsmInput, arg2 ...request.Option) (*cloudhsm.DescribeHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockCloudHSMAPIMockRecorder) DescribeLunaClientRequest(arg0 interface{
 }
 
 // DescribeLunaClientWithContext mocks base method
-func (m *MockCloudHSMAPI) DescribeLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.DescribeLunaClientInput, arg2 ...request.Option) (*cloudhsm.DescribeLunaClientOutput, error) {
+func (m *MockCloudHSMAPI) DescribeLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.DescribeLunaClientInput, arg2 ...request.Option) (*cloudhsm.DescribeLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockCloudHSMAPIMockRecorder) GetConfigRequest(arg0 interface{}) *gomoc
 }
 
 // GetConfigWithContext mocks base method
-func (m *MockCloudHSMAPI) GetConfigWithContext(arg0 aws.Context, arg1 *cloudhsm.GetConfigInput, arg2 ...request.Option) (*cloudhsm.GetConfigOutput, error) {
+func (m *MockCloudHSMAPI) GetConfigWithContext(arg0 context.Context, arg1 *cloudhsm.GetConfigInput, arg2 ...request.Option) (*cloudhsm.GetConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ListAvailableZonesRequest(arg0 interface{
 }
 
 // ListAvailableZonesWithContext mocks base method
-func (m *MockCloudHSMAPI) ListAvailableZonesWithContext(arg0 aws.Context, arg1 *cloudhsm.ListAvailableZonesInput, arg2 ...request.Option) (*cloudhsm.ListAvailableZonesOutput, error) {
+func (m *MockCloudHSMAPI) ListAvailableZonesWithContext(arg0 context.Context, arg1 *cloudhsm.ListAvailableZonesInput, arg2 ...request.Option) (*cloudhsm.ListAvailableZonesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ListHapgsRequest(arg0 interface{}) *gomoc
 }
 
 // ListHapgsWithContext mocks base method
-func (m *MockCloudHSMAPI) ListHapgsWithContext(arg0 aws.Context, arg1 *cloudhsm.ListHapgsInput, arg2 ...request.Option) (*cloudhsm.ListHapgsOutput, error) {
+func (m *MockCloudHSMAPI) ListHapgsWithContext(arg0 context.Context, arg1 *cloudhsm.ListHapgsInput, arg2 ...request.Option) (*cloudhsm.ListHapgsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ListHsmsRequest(arg0 interface{}) *gomock
 }
 
 // ListHsmsWithContext mocks base method
-func (m *MockCloudHSMAPI) ListHsmsWithContext(arg0 aws.Context, arg1 *cloudhsm.ListHsmsInput, arg2 ...request.Option) (*cloudhsm.ListHsmsOutput, error) {
+func (m *MockCloudHSMAPI) ListHsmsWithContext(arg0 context.Context, arg1 *cloudhsm.ListHsmsInput, arg2 ...request.Option) (*cloudhsm.ListHsmsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ListLunaClientsRequest(arg0 interface{}) 
 }
 
 // ListLunaClientsWithContext mocks base method
-func (m *MockCloudHSMAPI) ListLunaClientsWithContext(arg0 aws.Context, arg1 *cloudhsm.ListLunaClientsInput, arg2 ...request.Option) (*cloudhsm.ListLunaClientsOutput, error) {
+func (m *MockCloudHSMAPI) ListLunaClientsWithContext(arg0 context.Context, arg1 *cloudhsm.ListLunaClientsInput, arg2 ...request.Option) (*cloudhsm.ListLunaClientsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ListTagsForResourceRequest(arg0 interface
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockCloudHSMAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *cloudhsm.ListTagsForResourceInput, arg2 ...request.Option) (*cloudhsm.ListTagsForResourceOutput, error) {
+func (m *MockCloudHSMAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *cloudhsm.ListTagsForResourceInput, arg2 ...request.Option) (*cloudhsm.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ModifyHapgRequest(arg0 interface{}) *gomo
 }
 
 // ModifyHapgWithContext mocks base method
-func (m *MockCloudHSMAPI) ModifyHapgWithContext(arg0 aws.Context, arg1 *cloudhsm.ModifyHapgInput, arg2 ...request.Option) (*cloudhsm.ModifyHapgOutput, error) {
+func (m *MockCloudHSMAPI) ModifyHapgWithContext(arg0 context.Context, arg1 *cloudhsm.ModifyHapgInput, arg2 ...request.Option) (*cloudhsm.ModifyHapgOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ModifyHsmRequest(arg0 interface{}) *gomoc
 }
 
 // ModifyHsmWithContext mocks base method
-func (m *MockCloudHSMAPI) ModifyHsmWithContext(arg0 aws.Context, arg1 *cloudhsm.ModifyHsmInput, arg2 ...request.Option) (*cloudhsm.ModifyHsmOutput, error) {
+func (m *MockCloudHSMAPI) ModifyHsmWithContext(arg0 context.Context, arg1 *cloudhsm.ModifyHsmInput, arg2 ...request.Option) (*cloudhsm.ModifyHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockCloudHSMAPIMockRecorder) ModifyLunaClientRequest(arg0 interface{})
 }
 
 // ModifyLunaClientWithContext mocks base method
-func (m *MockCloudHSMAPI) ModifyLunaClientWithContext(arg0 aws.Context, arg1 *cloudhsm.ModifyLunaClientInput, arg2 ...request.Option) (*cloudhsm.ModifyLunaClientOutput, error) {
+func (m *MockCloudHSMAPI) ModifyLunaClientWithContext(arg0 context.Context, arg1 *cloudhsm.ModifyLunaClientInput, arg2 ...request.Option) (*cloudhsm.ModifyLunaClientOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockCloudHSMAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interf
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockCloudHSMAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *cloudhsm.RemoveTagsFromResourceInput, arg2 ...request.Option) (*cloudhsm.RemoveTagsFromResourceOutput, error) {
+func (m *MockCloudHSMAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *cloudhsm.RemoveTagsFromResourceInput, arg2 ...request.Option) (*cloudhsm.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

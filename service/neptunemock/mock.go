@@ -5,7 +5,7 @@
 package neptunemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	neptune "github.com/aws/aws-sdk-go/service/neptune"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockNeptuneAPIMockRecorder) AddRoleToDBClusterRequest(arg0 interface{}
 }
 
 // AddRoleToDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) AddRoleToDBClusterWithContext(arg0 aws.Context, arg1 *neptune.AddRoleToDBClusterInput, arg2 ...request.Option) (*neptune.AddRoleToDBClusterOutput, error) {
+func (m *MockNeptuneAPI) AddRoleToDBClusterWithContext(arg0 context.Context, arg1 *neptune.AddRoleToDBClusterInput, arg2 ...request.Option) (*neptune.AddRoleToDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockNeptuneAPIMockRecorder) AddSourceIdentifierToSubscriptionRequest(a
 }
 
 // AddSourceIdentifierToSubscriptionWithContext mocks base method
-func (m *MockNeptuneAPI) AddSourceIdentifierToSubscriptionWithContext(arg0 aws.Context, arg1 *neptune.AddSourceIdentifierToSubscriptionInput, arg2 ...request.Option) (*neptune.AddSourceIdentifierToSubscriptionOutput, error) {
+func (m *MockNeptuneAPI) AddSourceIdentifierToSubscriptionWithContext(arg0 context.Context, arg1 *neptune.AddSourceIdentifierToSubscriptionInput, arg2 ...request.Option) (*neptune.AddSourceIdentifierToSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockNeptuneAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{})
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockNeptuneAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *neptune.AddTagsToResourceInput, arg2 ...request.Option) (*neptune.AddTagsToResourceOutput, error) {
+func (m *MockNeptuneAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *neptune.AddTagsToResourceInput, arg2 ...request.Option) (*neptune.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockNeptuneAPIMockRecorder) ApplyPendingMaintenanceActionRequest(arg0 
 }
 
 // ApplyPendingMaintenanceActionWithContext mocks base method
-func (m *MockNeptuneAPI) ApplyPendingMaintenanceActionWithContext(arg0 aws.Context, arg1 *neptune.ApplyPendingMaintenanceActionInput, arg2 ...request.Option) (*neptune.ApplyPendingMaintenanceActionOutput, error) {
+func (m *MockNeptuneAPI) ApplyPendingMaintenanceActionWithContext(arg0 context.Context, arg1 *neptune.ApplyPendingMaintenanceActionInput, arg2 ...request.Option) (*neptune.ApplyPendingMaintenanceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockNeptuneAPIMockRecorder) CopyDBClusterParameterGroupRequest(arg0 in
 }
 
 // CopyDBClusterParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) CopyDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.CopyDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.CopyDBClusterParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) CopyDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *neptune.CopyDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.CopyDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockNeptuneAPIMockRecorder) CopyDBClusterSnapshotRequest(arg0 interfac
 }
 
 // CopyDBClusterSnapshotWithContext mocks base method
-func (m *MockNeptuneAPI) CopyDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *neptune.CopyDBClusterSnapshotInput, arg2 ...request.Option) (*neptune.CopyDBClusterSnapshotOutput, error) {
+func (m *MockNeptuneAPI) CopyDBClusterSnapshotWithContext(arg0 context.Context, arg1 *neptune.CopyDBClusterSnapshotInput, arg2 ...request.Option) (*neptune.CopyDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockNeptuneAPIMockRecorder) CopyDBParameterGroupRequest(arg0 interface
 }
 
 // CopyDBParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) CopyDBParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.CopyDBParameterGroupInput, arg2 ...request.Option) (*neptune.CopyDBParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) CopyDBParameterGroupWithContext(arg0 context.Context, arg1 *neptune.CopyDBParameterGroupInput, arg2 ...request.Option) (*neptune.CopyDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBClusterParameterGroupRequest(arg0 
 }
 
 // CreateDBClusterParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) CreateDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.CreateDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.CreateDBClusterParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) CreateDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *neptune.CreateDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.CreateDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -496,7 +496,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBClusterSnapshotRequest(arg0 interf
 }
 
 // CreateDBClusterSnapshotWithContext mocks base method
-func (m *MockNeptuneAPI) CreateDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *neptune.CreateDBClusterSnapshotInput, arg2 ...request.Option) (*neptune.CreateDBClusterSnapshotOutput, error) {
+func (m *MockNeptuneAPI) CreateDBClusterSnapshotWithContext(arg0 context.Context, arg1 *neptune.CreateDBClusterSnapshotInput, arg2 ...request.Option) (*neptune.CreateDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBClusterSnapshotWithContext(arg0, a
 }
 
 // CreateDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) CreateDBClusterWithContext(arg0 aws.Context, arg1 *neptune.CreateDBClusterInput, arg2 ...request.Option) (*neptune.CreateDBClusterOutput, error) {
+func (m *MockNeptuneAPI) CreateDBClusterWithContext(arg0 context.Context, arg1 *neptune.CreateDBClusterInput, arg2 ...request.Option) (*neptune.CreateDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBInstanceRequest(arg0 interface{}) 
 }
 
 // CreateDBInstanceWithContext mocks base method
-func (m *MockNeptuneAPI) CreateDBInstanceWithContext(arg0 aws.Context, arg1 *neptune.CreateDBInstanceInput, arg2 ...request.Option) (*neptune.CreateDBInstanceOutput, error) {
+func (m *MockNeptuneAPI) CreateDBInstanceWithContext(arg0 context.Context, arg1 *neptune.CreateDBInstanceInput, arg2 ...request.Option) (*neptune.CreateDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBParameterGroupRequest(arg0 interfa
 }
 
 // CreateDBParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) CreateDBParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.CreateDBParameterGroupInput, arg2 ...request.Option) (*neptune.CreateDBParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) CreateDBParameterGroupWithContext(arg0 context.Context, arg1 *neptune.CreateDBParameterGroupInput, arg2 ...request.Option) (*neptune.CreateDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBSubnetGroupRequest(arg0 interface{
 }
 
 // CreateDBSubnetGroupWithContext mocks base method
-func (m *MockNeptuneAPI) CreateDBSubnetGroupWithContext(arg0 aws.Context, arg1 *neptune.CreateDBSubnetGroupInput, arg2 ...request.Option) (*neptune.CreateDBSubnetGroupOutput, error) {
+func (m *MockNeptuneAPI) CreateDBSubnetGroupWithContext(arg0 context.Context, arg1 *neptune.CreateDBSubnetGroupInput, arg2 ...request.Option) (*neptune.CreateDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockNeptuneAPIMockRecorder) CreateEventSubscriptionRequest(arg0 interf
 }
 
 // CreateEventSubscriptionWithContext mocks base method
-func (m *MockNeptuneAPI) CreateEventSubscriptionWithContext(arg0 aws.Context, arg1 *neptune.CreateEventSubscriptionInput, arg2 ...request.Option) (*neptune.CreateEventSubscriptionOutput, error) {
+func (m *MockNeptuneAPI) CreateEventSubscriptionWithContext(arg0 context.Context, arg1 *neptune.CreateEventSubscriptionInput, arg2 ...request.Option) (*neptune.CreateEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBClusterParameterGroupRequest(arg0 
 }
 
 // DeleteDBClusterParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.DeleteDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.DeleteDBClusterParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) DeleteDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *neptune.DeleteDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.DeleteDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -846,7 +846,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBClusterSnapshotRequest(arg0 interf
 }
 
 // DeleteDBClusterSnapshotWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *neptune.DeleteDBClusterSnapshotInput, arg2 ...request.Option) (*neptune.DeleteDBClusterSnapshotOutput, error) {
+func (m *MockNeptuneAPI) DeleteDBClusterSnapshotWithContext(arg0 context.Context, arg1 *neptune.DeleteDBClusterSnapshotInput, arg2 ...request.Option) (*neptune.DeleteDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBClusterSnapshotWithContext(arg0, a
 }
 
 // DeleteDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteDBClusterWithContext(arg0 aws.Context, arg1 *neptune.DeleteDBClusterInput, arg2 ...request.Option) (*neptune.DeleteDBClusterOutput, error) {
+func (m *MockNeptuneAPI) DeleteDBClusterWithContext(arg0 context.Context, arg1 *neptune.DeleteDBClusterInput, arg2 ...request.Option) (*neptune.DeleteDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBInstanceRequest(arg0 interface{}) 
 }
 
 // DeleteDBInstanceWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteDBInstanceWithContext(arg0 aws.Context, arg1 *neptune.DeleteDBInstanceInput, arg2 ...request.Option) (*neptune.DeleteDBInstanceOutput, error) {
+func (m *MockNeptuneAPI) DeleteDBInstanceWithContext(arg0 context.Context, arg1 *neptune.DeleteDBInstanceInput, arg2 ...request.Option) (*neptune.DeleteDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBParameterGroupRequest(arg0 interfa
 }
 
 // DeleteDBParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteDBParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.DeleteDBParameterGroupInput, arg2 ...request.Option) (*neptune.DeleteDBParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) DeleteDBParameterGroupWithContext(arg0 context.Context, arg1 *neptune.DeleteDBParameterGroupInput, arg2 ...request.Option) (*neptune.DeleteDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBSubnetGroupRequest(arg0 interface{
 }
 
 // DeleteDBSubnetGroupWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteDBSubnetGroupWithContext(arg0 aws.Context, arg1 *neptune.DeleteDBSubnetGroupInput, arg2 ...request.Option) (*neptune.DeleteDBSubnetGroupOutput, error) {
+func (m *MockNeptuneAPI) DeleteDBSubnetGroupWithContext(arg0 context.Context, arg1 *neptune.DeleteDBSubnetGroupInput, arg2 ...request.Option) (*neptune.DeleteDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteEventSubscriptionRequest(arg0 interf
 }
 
 // DeleteEventSubscriptionWithContext mocks base method
-func (m *MockNeptuneAPI) DeleteEventSubscriptionWithContext(arg0 aws.Context, arg1 *neptune.DeleteEventSubscriptionInput, arg2 ...request.Option) (*neptune.DeleteEventSubscriptionOutput, error) {
+func (m *MockNeptuneAPI) DeleteEventSubscriptionWithContext(arg0 context.Context, arg1 *neptune.DeleteEventSubscriptionInput, arg2 ...request.Option) (*neptune.DeleteEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterParameterGroupsRequest(ar
 }
 
 // DescribeDBClusterParameterGroupsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBClusterParameterGroupsWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBClusterParameterGroupsInput, arg2 ...request.Option) (*neptune.DescribeDBClusterParameterGroupsOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBClusterParameterGroupsWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClusterParameterGroupsInput, arg2 ...request.Option) (*neptune.DescribeDBClusterParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterParametersRequest(arg0 in
 }
 
 // DescribeDBClusterParametersWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBClusterParametersWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBClusterParametersInput, arg2 ...request.Option) (*neptune.DescribeDBClusterParametersOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBClusterParametersWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClusterParametersInput, arg2 ...request.Option) (*neptune.DescribeDBClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterSnapshotAttributesRequest
 }
 
 // DescribeDBClusterSnapshotAttributesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBClusterSnapshotAttributesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBClusterSnapshotAttributesInput, arg2 ...request.Option) (*neptune.DescribeDBClusterSnapshotAttributesOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBClusterSnapshotAttributesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClusterSnapshotAttributesInput, arg2 ...request.Option) (*neptune.DescribeDBClusterSnapshotAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1266,7 +1266,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterSnapshotsRequest(arg0 int
 }
 
 // DescribeDBClusterSnapshotsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBClusterSnapshotsWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBClusterSnapshotsInput, arg2 ...request.Option) (*neptune.DescribeDBClusterSnapshotsOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBClusterSnapshotsWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClusterSnapshotsInput, arg2 ...request.Option) (*neptune.DescribeDBClusterSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1316,7 +1316,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBClustersRequest(arg0 interface{}
 }
 
 // DescribeDBClustersWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBClustersWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBClustersInput, arg2 ...request.Option) (*neptune.DescribeDBClustersOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBClustersWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClustersInput, arg2 ...request.Option) (*neptune.DescribeDBClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBEngineVersionsPages(arg0, arg1 i
 }
 
 // DescribeDBEngineVersionsPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBEngineVersionsPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBEngineVersionsInput, arg2 func(*neptune.DescribeDBEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeDBEngineVersionsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBEngineVersionsInput, arg2 func(*neptune.DescribeDBEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1399,7 +1399,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBEngineVersionsRequest(arg0 inter
 }
 
 // DescribeDBEngineVersionsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBEngineVersionsWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBEngineVersionsInput, arg2 ...request.Option) (*neptune.DescribeDBEngineVersionsOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBEngineVersionsWithContext(arg0 context.Context, arg1 *neptune.DescribeDBEngineVersionsInput, arg2 ...request.Option) (*neptune.DescribeDBEngineVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1448,7 +1448,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBInstancesPages(arg0, arg1 interf
 }
 
 // DescribeDBInstancesPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBInstancesPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 func(*neptune.DescribeDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeDBInstancesPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 func(*neptune.DescribeDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1482,7 +1482,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBInstancesRequest(arg0 interface{
 }
 
 // DescribeDBInstancesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBInstancesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 ...request.Option) (*neptune.DescribeDBInstancesOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBInstancesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 ...request.Option) (*neptune.DescribeDBInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1531,7 +1531,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBParameterGroupsPages(arg0, arg1 
 }
 
 // DescribeDBParameterGroupsPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBParameterGroupsPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBParameterGroupsInput, arg2 func(*neptune.DescribeDBParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeDBParameterGroupsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBParameterGroupsInput, arg2 func(*neptune.DescribeDBParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1565,7 +1565,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBParameterGroupsRequest(arg0 inte
 }
 
 // DescribeDBParameterGroupsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBParameterGroupsWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBParameterGroupsInput, arg2 ...request.Option) (*neptune.DescribeDBParameterGroupsOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBParameterGroupsWithContext(arg0 context.Context, arg1 *neptune.DescribeDBParameterGroupsInput, arg2 ...request.Option) (*neptune.DescribeDBParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1614,7 +1614,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBParametersPages(arg0, arg1 inter
 }
 
 // DescribeDBParametersPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBParametersPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBParametersInput, arg2 func(*neptune.DescribeDBParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeDBParametersPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBParametersInput, arg2 func(*neptune.DescribeDBParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1648,7 +1648,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBParametersRequest(arg0 interface
 }
 
 // DescribeDBParametersWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBParametersWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBParametersInput, arg2 ...request.Option) (*neptune.DescribeDBParametersOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBParametersWithContext(arg0 context.Context, arg1 *neptune.DescribeDBParametersInput, arg2 ...request.Option) (*neptune.DescribeDBParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBSubnetGroupsPages(arg0, arg1 int
 }
 
 // DescribeDBSubnetGroupsPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBSubnetGroupsPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBSubnetGroupsInput, arg2 func(*neptune.DescribeDBSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeDBSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBSubnetGroupsInput, arg2 func(*neptune.DescribeDBSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1731,7 +1731,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeDBSubnetGroupsRequest(arg0 interfa
 }
 
 // DescribeDBSubnetGroupsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeDBSubnetGroupsWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBSubnetGroupsInput, arg2 ...request.Option) (*neptune.DescribeDBSubnetGroupsOutput, error) {
+func (m *MockNeptuneAPI) DescribeDBSubnetGroupsWithContext(arg0 context.Context, arg1 *neptune.DescribeDBSubnetGroupsInput, arg2 ...request.Option) (*neptune.DescribeDBSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1781,7 +1781,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEngineDefaultClusterParametersRequ
 }
 
 // DescribeEngineDefaultClusterParametersWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEngineDefaultClusterParametersWithContext(arg0 aws.Context, arg1 *neptune.DescribeEngineDefaultClusterParametersInput, arg2 ...request.Option) (*neptune.DescribeEngineDefaultClusterParametersOutput, error) {
+func (m *MockNeptuneAPI) DescribeEngineDefaultClusterParametersWithContext(arg0 context.Context, arg1 *neptune.DescribeEngineDefaultClusterParametersInput, arg2 ...request.Option) (*neptune.DescribeEngineDefaultClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1830,7 +1830,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEngineDefaultParametersPages(arg0,
 }
 
 // DescribeEngineDefaultParametersPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEngineDefaultParametersPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeEngineDefaultParametersInput, arg2 func(*neptune.DescribeEngineDefaultParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeEngineDefaultParametersPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeEngineDefaultParametersInput, arg2 func(*neptune.DescribeEngineDefaultParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1864,7 +1864,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEngineDefaultParametersRequest(arg
 }
 
 // DescribeEngineDefaultParametersWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEngineDefaultParametersWithContext(arg0 aws.Context, arg1 *neptune.DescribeEngineDefaultParametersInput, arg2 ...request.Option) (*neptune.DescribeEngineDefaultParametersOutput, error) {
+func (m *MockNeptuneAPI) DescribeEngineDefaultParametersWithContext(arg0 context.Context, arg1 *neptune.DescribeEngineDefaultParametersInput, arg2 ...request.Option) (*neptune.DescribeEngineDefaultParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1914,7 +1914,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEventCategoriesRequest(arg0 interf
 }
 
 // DescribeEventCategoriesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEventCategoriesWithContext(arg0 aws.Context, arg1 *neptune.DescribeEventCategoriesInput, arg2 ...request.Option) (*neptune.DescribeEventCategoriesOutput, error) {
+func (m *MockNeptuneAPI) DescribeEventCategoriesWithContext(arg0 context.Context, arg1 *neptune.DescribeEventCategoriesInput, arg2 ...request.Option) (*neptune.DescribeEventCategoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1963,7 +1963,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEventSubscriptionsPages(arg0, arg1
 }
 
 // DescribeEventSubscriptionsPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEventSubscriptionsPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeEventSubscriptionsInput, arg2 func(*neptune.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeEventSubscriptionsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeEventSubscriptionsInput, arg2 func(*neptune.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1997,7 +1997,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEventSubscriptionsRequest(arg0 int
 }
 
 // DescribeEventSubscriptionsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEventSubscriptionsWithContext(arg0 aws.Context, arg1 *neptune.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*neptune.DescribeEventSubscriptionsOutput, error) {
+func (m *MockNeptuneAPI) DescribeEventSubscriptionsWithContext(arg0 context.Context, arg1 *neptune.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*neptune.DescribeEventSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{}
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeEventsInput, arg2 func(*neptune.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeEventsInput, arg2 func(*neptune.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2080,7 +2080,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *g
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *neptune.DescribeEventsInput, arg2 ...request.Option) (*neptune.DescribeEventsOutput, error) {
+func (m *MockNeptuneAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *neptune.DescribeEventsInput, arg2 ...request.Option) (*neptune.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2129,7 +2129,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeOrderableDBInstanceOptionsPages(ar
 }
 
 // DescribeOrderableDBInstanceOptionsPagesWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeOrderableDBInstanceOptionsPagesWithContext(arg0 aws.Context, arg1 *neptune.DescribeOrderableDBInstanceOptionsInput, arg2 func(*neptune.DescribeOrderableDBInstanceOptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockNeptuneAPI) DescribeOrderableDBInstanceOptionsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeOrderableDBInstanceOptionsInput, arg2 func(*neptune.DescribeOrderableDBInstanceOptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2163,7 +2163,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeOrderableDBInstanceOptionsRequest(
 }
 
 // DescribeOrderableDBInstanceOptionsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeOrderableDBInstanceOptionsWithContext(arg0 aws.Context, arg1 *neptune.DescribeOrderableDBInstanceOptionsInput, arg2 ...request.Option) (*neptune.DescribeOrderableDBInstanceOptionsOutput, error) {
+func (m *MockNeptuneAPI) DescribeOrderableDBInstanceOptionsWithContext(arg0 context.Context, arg1 *neptune.DescribeOrderableDBInstanceOptionsInput, arg2 ...request.Option) (*neptune.DescribeOrderableDBInstanceOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2213,7 +2213,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribePendingMaintenanceActionsRequest(a
 }
 
 // DescribePendingMaintenanceActionsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribePendingMaintenanceActionsWithContext(arg0 aws.Context, arg1 *neptune.DescribePendingMaintenanceActionsInput, arg2 ...request.Option) (*neptune.DescribePendingMaintenanceActionsOutput, error) {
+func (m *MockNeptuneAPI) DescribePendingMaintenanceActionsWithContext(arg0 context.Context, arg1 *neptune.DescribePendingMaintenanceActionsInput, arg2 ...request.Option) (*neptune.DescribePendingMaintenanceActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2263,7 +2263,7 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeValidDBInstanceModificationsReques
 }
 
 // DescribeValidDBInstanceModificationsWithContext mocks base method
-func (m *MockNeptuneAPI) DescribeValidDBInstanceModificationsWithContext(arg0 aws.Context, arg1 *neptune.DescribeValidDBInstanceModificationsInput, arg2 ...request.Option) (*neptune.DescribeValidDBInstanceModificationsOutput, error) {
+func (m *MockNeptuneAPI) DescribeValidDBInstanceModificationsWithContext(arg0 context.Context, arg1 *neptune.DescribeValidDBInstanceModificationsInput, arg2 ...request.Option) (*neptune.DescribeValidDBInstanceModificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2313,7 +2313,7 @@ func (mr *MockNeptuneAPIMockRecorder) FailoverDBClusterRequest(arg0 interface{})
 }
 
 // FailoverDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) FailoverDBClusterWithContext(arg0 aws.Context, arg1 *neptune.FailoverDBClusterInput, arg2 ...request.Option) (*neptune.FailoverDBClusterOutput, error) {
+func (m *MockNeptuneAPI) FailoverDBClusterWithContext(arg0 context.Context, arg1 *neptune.FailoverDBClusterInput, arg2 ...request.Option) (*neptune.FailoverDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2363,7 +2363,7 @@ func (mr *MockNeptuneAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockNeptuneAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *neptune.ListTagsForResourceInput, arg2 ...request.Option) (*neptune.ListTagsForResourceOutput, error) {
+func (m *MockNeptuneAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *neptune.ListTagsForResourceInput, arg2 ...request.Option) (*neptune.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2428,7 +2428,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyDBClusterParameterGroupRequest(arg0 
 }
 
 // ModifyDBClusterParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.ModifyDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBClusterParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) ModifyDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *neptune.ModifyDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2493,7 +2493,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyDBClusterSnapshotAttributeRequest(ar
 }
 
 // ModifyDBClusterSnapshotAttributeWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyDBClusterSnapshotAttributeWithContext(arg0 aws.Context, arg1 *neptune.ModifyDBClusterSnapshotAttributeInput, arg2 ...request.Option) (*neptune.ModifyDBClusterSnapshotAttributeOutput, error) {
+func (m *MockNeptuneAPI) ModifyDBClusterSnapshotAttributeWithContext(arg0 context.Context, arg1 *neptune.ModifyDBClusterSnapshotAttributeInput, arg2 ...request.Option) (*neptune.ModifyDBClusterSnapshotAttributeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2513,7 +2513,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyDBClusterSnapshotAttributeWithContex
 }
 
 // ModifyDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyDBClusterWithContext(arg0 aws.Context, arg1 *neptune.ModifyDBClusterInput, arg2 ...request.Option) (*neptune.ModifyDBClusterOutput, error) {
+func (m *MockNeptuneAPI) ModifyDBClusterWithContext(arg0 context.Context, arg1 *neptune.ModifyDBClusterInput, arg2 ...request.Option) (*neptune.ModifyDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2563,7 +2563,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyDBInstanceRequest(arg0 interface{}) 
 }
 
 // ModifyDBInstanceWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyDBInstanceWithContext(arg0 aws.Context, arg1 *neptune.ModifyDBInstanceInput, arg2 ...request.Option) (*neptune.ModifyDBInstanceOutput, error) {
+func (m *MockNeptuneAPI) ModifyDBInstanceWithContext(arg0 context.Context, arg1 *neptune.ModifyDBInstanceInput, arg2 ...request.Option) (*neptune.ModifyDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2613,7 +2613,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyDBParameterGroupRequest(arg0 interfa
 }
 
 // ModifyDBParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyDBParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.ModifyDBParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) ModifyDBParameterGroupWithContext(arg0 context.Context, arg1 *neptune.ModifyDBParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2663,7 +2663,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyDBSubnetGroupRequest(arg0 interface{
 }
 
 // ModifyDBSubnetGroupWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyDBSubnetGroupWithContext(arg0 aws.Context, arg1 *neptune.ModifyDBSubnetGroupInput, arg2 ...request.Option) (*neptune.ModifyDBSubnetGroupOutput, error) {
+func (m *MockNeptuneAPI) ModifyDBSubnetGroupWithContext(arg0 context.Context, arg1 *neptune.ModifyDBSubnetGroupInput, arg2 ...request.Option) (*neptune.ModifyDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2713,7 +2713,7 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyEventSubscriptionRequest(arg0 interf
 }
 
 // ModifyEventSubscriptionWithContext mocks base method
-func (m *MockNeptuneAPI) ModifyEventSubscriptionWithContext(arg0 aws.Context, arg1 *neptune.ModifyEventSubscriptionInput, arg2 ...request.Option) (*neptune.ModifyEventSubscriptionOutput, error) {
+func (m *MockNeptuneAPI) ModifyEventSubscriptionWithContext(arg0 context.Context, arg1 *neptune.ModifyEventSubscriptionInput, arg2 ...request.Option) (*neptune.ModifyEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2763,7 +2763,7 @@ func (mr *MockNeptuneAPIMockRecorder) PromoteReadReplicaDBClusterRequest(arg0 in
 }
 
 // PromoteReadReplicaDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) PromoteReadReplicaDBClusterWithContext(arg0 aws.Context, arg1 *neptune.PromoteReadReplicaDBClusterInput, arg2 ...request.Option) (*neptune.PromoteReadReplicaDBClusterOutput, error) {
+func (m *MockNeptuneAPI) PromoteReadReplicaDBClusterWithContext(arg0 context.Context, arg1 *neptune.PromoteReadReplicaDBClusterInput, arg2 ...request.Option) (*neptune.PromoteReadReplicaDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2813,7 +2813,7 @@ func (mr *MockNeptuneAPIMockRecorder) RebootDBInstanceRequest(arg0 interface{}) 
 }
 
 // RebootDBInstanceWithContext mocks base method
-func (m *MockNeptuneAPI) RebootDBInstanceWithContext(arg0 aws.Context, arg1 *neptune.RebootDBInstanceInput, arg2 ...request.Option) (*neptune.RebootDBInstanceOutput, error) {
+func (m *MockNeptuneAPI) RebootDBInstanceWithContext(arg0 context.Context, arg1 *neptune.RebootDBInstanceInput, arg2 ...request.Option) (*neptune.RebootDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2863,7 +2863,7 @@ func (mr *MockNeptuneAPIMockRecorder) RemoveRoleFromDBClusterRequest(arg0 interf
 }
 
 // RemoveRoleFromDBClusterWithContext mocks base method
-func (m *MockNeptuneAPI) RemoveRoleFromDBClusterWithContext(arg0 aws.Context, arg1 *neptune.RemoveRoleFromDBClusterInput, arg2 ...request.Option) (*neptune.RemoveRoleFromDBClusterOutput, error) {
+func (m *MockNeptuneAPI) RemoveRoleFromDBClusterWithContext(arg0 context.Context, arg1 *neptune.RemoveRoleFromDBClusterInput, arg2 ...request.Option) (*neptune.RemoveRoleFromDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2913,7 +2913,7 @@ func (mr *MockNeptuneAPIMockRecorder) RemoveSourceIdentifierFromSubscriptionRequ
 }
 
 // RemoveSourceIdentifierFromSubscriptionWithContext mocks base method
-func (m *MockNeptuneAPI) RemoveSourceIdentifierFromSubscriptionWithContext(arg0 aws.Context, arg1 *neptune.RemoveSourceIdentifierFromSubscriptionInput, arg2 ...request.Option) (*neptune.RemoveSourceIdentifierFromSubscriptionOutput, error) {
+func (m *MockNeptuneAPI) RemoveSourceIdentifierFromSubscriptionWithContext(arg0 context.Context, arg1 *neptune.RemoveSourceIdentifierFromSubscriptionInput, arg2 ...request.Option) (*neptune.RemoveSourceIdentifierFromSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2963,7 +2963,7 @@ func (mr *MockNeptuneAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interfa
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockNeptuneAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *neptune.RemoveTagsFromResourceInput, arg2 ...request.Option) (*neptune.RemoveTagsFromResourceOutput, error) {
+func (m *MockNeptuneAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *neptune.RemoveTagsFromResourceInput, arg2 ...request.Option) (*neptune.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3013,7 +3013,7 @@ func (mr *MockNeptuneAPIMockRecorder) ResetDBClusterParameterGroupRequest(arg0 i
 }
 
 // ResetDBClusterParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) ResetDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.ResetDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBClusterParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) ResetDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *neptune.ResetDBClusterParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3063,7 +3063,7 @@ func (mr *MockNeptuneAPIMockRecorder) ResetDBParameterGroupRequest(arg0 interfac
 }
 
 // ResetDBParameterGroupWithContext mocks base method
-func (m *MockNeptuneAPI) ResetDBParameterGroupWithContext(arg0 aws.Context, arg1 *neptune.ResetDBParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBParameterGroupOutput, error) {
+func (m *MockNeptuneAPI) ResetDBParameterGroupWithContext(arg0 context.Context, arg1 *neptune.ResetDBParameterGroupInput, arg2 ...request.Option) (*neptune.ResetDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3113,7 +3113,7 @@ func (mr *MockNeptuneAPIMockRecorder) RestoreDBClusterFromSnapshotRequest(arg0 i
 }
 
 // RestoreDBClusterFromSnapshotWithContext mocks base method
-func (m *MockNeptuneAPI) RestoreDBClusterFromSnapshotWithContext(arg0 aws.Context, arg1 *neptune.RestoreDBClusterFromSnapshotInput, arg2 ...request.Option) (*neptune.RestoreDBClusterFromSnapshotOutput, error) {
+func (m *MockNeptuneAPI) RestoreDBClusterFromSnapshotWithContext(arg0 context.Context, arg1 *neptune.RestoreDBClusterFromSnapshotInput, arg2 ...request.Option) (*neptune.RestoreDBClusterFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3163,7 +3163,7 @@ func (mr *MockNeptuneAPIMockRecorder) RestoreDBClusterToPointInTimeRequest(arg0 
 }
 
 // RestoreDBClusterToPointInTimeWithContext mocks base method
-func (m *MockNeptuneAPI) RestoreDBClusterToPointInTimeWithContext(arg0 aws.Context, arg1 *neptune.RestoreDBClusterToPointInTimeInput, arg2 ...request.Option) (*neptune.RestoreDBClusterToPointInTimeOutput, error) {
+func (m *MockNeptuneAPI) RestoreDBClusterToPointInTimeWithContext(arg0 context.Context, arg1 *neptune.RestoreDBClusterToPointInTimeInput, arg2 ...request.Option) (*neptune.RestoreDBClusterToPointInTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3197,7 +3197,7 @@ func (mr *MockNeptuneAPIMockRecorder) WaitUntilDBInstanceAvailable(arg0 interfac
 }
 
 // WaitUntilDBInstanceAvailableWithContext mocks base method
-func (m *MockNeptuneAPI) WaitUntilDBInstanceAvailableWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockNeptuneAPI) WaitUntilDBInstanceAvailableWithContext(arg0 context.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3230,7 +3230,7 @@ func (mr *MockNeptuneAPIMockRecorder) WaitUntilDBInstanceDeleted(arg0 interface{
 }
 
 // WaitUntilDBInstanceDeletedWithContext mocks base method
-func (m *MockNeptuneAPI) WaitUntilDBInstanceDeletedWithContext(arg0 aws.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockNeptuneAPI) WaitUntilDBInstanceDeletedWithContext(arg0 context.Context, arg1 *neptune.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

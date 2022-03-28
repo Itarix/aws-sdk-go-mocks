@@ -5,7 +5,7 @@
 package workspacesmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	workspaces "github.com/aws/aws-sdk-go/service/workspaces"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) AssociateIpGroupsRequest(arg0 interface
 }
 
 // AssociateIpGroupsWithContext mocks base method
-func (m *MockWorkSpacesAPI) AssociateIpGroupsWithContext(arg0 aws.Context, arg1 *workspaces.AssociateIpGroupsInput, arg2 ...request.Option) (*workspaces.AssociateIpGroupsOutput, error) {
+func (m *MockWorkSpacesAPI) AssociateIpGroupsWithContext(arg0 context.Context, arg1 *workspaces.AssociateIpGroupsInput, arg2 ...request.Option) (*workspaces.AssociateIpGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) AuthorizeIpRulesRequest(arg0 interface{
 }
 
 // AuthorizeIpRulesWithContext mocks base method
-func (m *MockWorkSpacesAPI) AuthorizeIpRulesWithContext(arg0 aws.Context, arg1 *workspaces.AuthorizeIpRulesInput, arg2 ...request.Option) (*workspaces.AuthorizeIpRulesOutput, error) {
+func (m *MockWorkSpacesAPI) AuthorizeIpRulesWithContext(arg0 context.Context, arg1 *workspaces.AuthorizeIpRulesInput, arg2 ...request.Option) (*workspaces.AuthorizeIpRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateIpGroupRequest(arg0 interface{}) 
 }
 
 // CreateIpGroupWithContext mocks base method
-func (m *MockWorkSpacesAPI) CreateIpGroupWithContext(arg0 aws.Context, arg1 *workspaces.CreateIpGroupInput, arg2 ...request.Option) (*workspaces.CreateIpGroupOutput, error) {
+func (m *MockWorkSpacesAPI) CreateIpGroupWithContext(arg0 context.Context, arg1 *workspaces.CreateIpGroupInput, arg2 ...request.Option) (*workspaces.CreateIpGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *go
 }
 
 // CreateTagsWithContext mocks base method
-func (m *MockWorkSpacesAPI) CreateTagsWithContext(arg0 aws.Context, arg1 *workspaces.CreateTagsInput, arg2 ...request.Option) (*workspaces.CreateTagsOutput, error) {
+func (m *MockWorkSpacesAPI) CreateTagsWithContext(arg0 context.Context, arg1 *workspaces.CreateTagsInput, arg2 ...request.Option) (*workspaces.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesRequest(arg0 interface{
 }
 
 // CreateWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) CreateWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.CreateWorkspacesInput, arg2 ...request.Option) (*workspaces.CreateWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) CreateWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.CreateWorkspacesInput, arg2 ...request.Option) (*workspaces.CreateWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DeleteIpGroupRequest(arg0 interface{}) 
 }
 
 // DeleteIpGroupWithContext mocks base method
-func (m *MockWorkSpacesAPI) DeleteIpGroupWithContext(arg0 aws.Context, arg1 *workspaces.DeleteIpGroupInput, arg2 ...request.Option) (*workspaces.DeleteIpGroupOutput, error) {
+func (m *MockWorkSpacesAPI) DeleteIpGroupWithContext(arg0 context.Context, arg1 *workspaces.DeleteIpGroupInput, arg2 ...request.Option) (*workspaces.DeleteIpGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *go
 }
 
 // DeleteTagsWithContext mocks base method
-func (m *MockWorkSpacesAPI) DeleteTagsWithContext(arg0 aws.Context, arg1 *workspaces.DeleteTagsInput, arg2 ...request.Option) (*workspaces.DeleteTagsOutput, error) {
+func (m *MockWorkSpacesAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *workspaces.DeleteTagsInput, arg2 ...request.Option) (*workspaces.DeleteTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceImageRequest(arg0 interf
 }
 
 // DeleteWorkspaceImageWithContext mocks base method
-func (m *MockWorkSpacesAPI) DeleteWorkspaceImageWithContext(arg0 aws.Context, arg1 *workspaces.DeleteWorkspaceImageInput, arg2 ...request.Option) (*workspaces.DeleteWorkspaceImageOutput, error) {
+func (m *MockWorkSpacesAPI) DeleteWorkspaceImageWithContext(arg0 context.Context, arg1 *workspaces.DeleteWorkspaceImageInput, arg2 ...request.Option) (*workspaces.DeleteWorkspaceImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountModificationsRequest(arg
 }
 
 // DescribeAccountModificationsWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeAccountModificationsWithContext(arg0 aws.Context, arg1 *workspaces.DescribeAccountModificationsInput, arg2 ...request.Option) (*workspaces.DescribeAccountModificationsOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeAccountModificationsWithContext(arg0 context.Context, arg1 *workspaces.DescribeAccountModificationsInput, arg2 ...request.Option) (*workspaces.DescribeAccountModificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountRequest(arg0 interface{}
 }
 
 // DescribeAccountWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeAccountWithContext(arg0 aws.Context, arg1 *workspaces.DescribeAccountInput, arg2 ...request.Option) (*workspaces.DescribeAccountOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeAccountWithContext(arg0 context.Context, arg1 *workspaces.DescribeAccountInput, arg2 ...request.Option) (*workspaces.DescribeAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientPropertiesRequest(arg0 in
 }
 
 // DescribeClientPropertiesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeClientPropertiesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeClientPropertiesInput, arg2 ...request.Option) (*workspaces.DescribeClientPropertiesOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeClientPropertiesWithContext(arg0 context.Context, arg1 *workspaces.DescribeClientPropertiesInput, arg2 ...request.Option) (*workspaces.DescribeClientPropertiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeIpGroupsRequest(arg0 interface{
 }
 
 // DescribeIpGroupsWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeIpGroupsWithContext(arg0 aws.Context, arg1 *workspaces.DescribeIpGroupsInput, arg2 ...request.Option) (*workspaces.DescribeIpGroupsOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeIpGroupsWithContext(arg0 context.Context, arg1 *workspaces.DescribeIpGroupsInput, arg2 ...request.Option) (*workspaces.DescribeIpGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeTagsRequest(arg0 interface{}) *
 }
 
 // DescribeTagsWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeTagsWithContext(arg0 aws.Context, arg1 *workspaces.DescribeTagsInput, arg2 ...request.Option) (*workspaces.DescribeTagsOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeTagsWithContext(arg0 context.Context, arg1 *workspaces.DescribeTagsInput, arg2 ...request.Option) (*workspaces.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceBundlesPages(arg0, arg
 }
 
 // DescribeWorkspaceBundlesPagesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspaceBundlesPagesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspaceBundlesInput, arg2 func(*workspaces.DescribeWorkspaceBundlesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkSpacesAPI) DescribeWorkspaceBundlesPagesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspaceBundlesInput, arg2 func(*workspaces.DescribeWorkspaceBundlesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceBundlesRequest(arg0 in
 }
 
 // DescribeWorkspaceBundlesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspaceBundlesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspaceBundlesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceBundlesOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeWorkspaceBundlesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspaceBundlesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceBundlesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceDirectoriesPages(arg0,
 }
 
 // DescribeWorkspaceDirectoriesPagesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspaceDirectoriesPagesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspaceDirectoriesInput, arg2 func(*workspaces.DescribeWorkspaceDirectoriesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkSpacesAPI) DescribeWorkspaceDirectoriesPagesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspaceDirectoriesInput, arg2 func(*workspaces.DescribeWorkspaceDirectoriesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -832,7 +832,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceDirectoriesRequest(arg
 }
 
 // DescribeWorkspaceDirectoriesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspaceDirectoriesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspaceDirectoriesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceDirectoriesOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeWorkspaceDirectoriesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspaceDirectoriesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -882,7 +882,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceImagesRequest(arg0 int
 }
 
 // DescribeWorkspaceImagesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspaceImagesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspaceImagesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceImagesOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeWorkspaceImagesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspaceImagesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceImagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -947,7 +947,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesConnectionStatusReque
 }
 
 // DescribeWorkspacesConnectionStatusWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspacesConnectionStatusWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspacesConnectionStatusInput, arg2 ...request.Option) (*workspaces.DescribeWorkspacesConnectionStatusOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeWorkspacesConnectionStatusWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspacesConnectionStatusInput, arg2 ...request.Option) (*workspaces.DescribeWorkspacesConnectionStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -981,7 +981,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPages(arg0, arg1 inte
 }
 
 // DescribeWorkspacesPagesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspacesPagesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspacesInput, arg2 func(*workspaces.DescribeWorkspacesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPagesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspacesInput, arg2 func(*workspaces.DescribeWorkspacesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1015,7 +1015,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesRequest(arg0 interfac
 }
 
 // DescribeWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) DescribeWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.DescribeWorkspacesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) DescribeWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspacesInput, arg2 ...request.Option) (*workspaces.DescribeWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1065,7 +1065,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) DisassociateIpGroupsRequest(arg0 interf
 }
 
 // DisassociateIpGroupsWithContext mocks base method
-func (m *MockWorkSpacesAPI) DisassociateIpGroupsWithContext(arg0 aws.Context, arg1 *workspaces.DisassociateIpGroupsInput, arg2 ...request.Option) (*workspaces.DisassociateIpGroupsOutput, error) {
+func (m *MockWorkSpacesAPI) DisassociateIpGroupsWithContext(arg0 context.Context, arg1 *workspaces.DisassociateIpGroupsInput, arg2 ...request.Option) (*workspaces.DisassociateIpGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1115,7 +1115,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) ImportWorkspaceImageRequest(arg0 interf
 }
 
 // ImportWorkspaceImageWithContext mocks base method
-func (m *MockWorkSpacesAPI) ImportWorkspaceImageWithContext(arg0 aws.Context, arg1 *workspaces.ImportWorkspaceImageInput, arg2 ...request.Option) (*workspaces.ImportWorkspaceImageOutput, error) {
+func (m *MockWorkSpacesAPI) ImportWorkspaceImageWithContext(arg0 context.Context, arg1 *workspaces.ImportWorkspaceImageInput, arg2 ...request.Option) (*workspaces.ImportWorkspaceImageOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1165,7 +1165,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) ListAvailableManagementCidrRangesReques
 }
 
 // ListAvailableManagementCidrRangesWithContext mocks base method
-func (m *MockWorkSpacesAPI) ListAvailableManagementCidrRangesWithContext(arg0 aws.Context, arg1 *workspaces.ListAvailableManagementCidrRangesInput, arg2 ...request.Option) (*workspaces.ListAvailableManagementCidrRangesOutput, error) {
+func (m *MockWorkSpacesAPI) ListAvailableManagementCidrRangesWithContext(arg0 context.Context, arg1 *workspaces.ListAvailableManagementCidrRangesInput, arg2 ...request.Option) (*workspaces.ListAvailableManagementCidrRangesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1215,7 +1215,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyAccountRequest(arg0 interface{}) 
 }
 
 // ModifyAccountWithContext mocks base method
-func (m *MockWorkSpacesAPI) ModifyAccountWithContext(arg0 aws.Context, arg1 *workspaces.ModifyAccountInput, arg2 ...request.Option) (*workspaces.ModifyAccountOutput, error) {
+func (m *MockWorkSpacesAPI) ModifyAccountWithContext(arg0 context.Context, arg1 *workspaces.ModifyAccountInput, arg2 ...request.Option) (*workspaces.ModifyAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1265,7 +1265,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyClientPropertiesRequest(arg0 inte
 }
 
 // ModifyClientPropertiesWithContext mocks base method
-func (m *MockWorkSpacesAPI) ModifyClientPropertiesWithContext(arg0 aws.Context, arg1 *workspaces.ModifyClientPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyClientPropertiesOutput, error) {
+func (m *MockWorkSpacesAPI) ModifyClientPropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifyClientPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyClientPropertiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1315,7 +1315,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspacePropertiesRequest(arg0 i
 }
 
 // ModifyWorkspacePropertiesWithContext mocks base method
-func (m *MockWorkSpacesAPI) ModifyWorkspacePropertiesWithContext(arg0 aws.Context, arg1 *workspaces.ModifyWorkspacePropertiesInput, arg2 ...request.Option) (*workspaces.ModifyWorkspacePropertiesOutput, error) {
+func (m *MockWorkSpacesAPI) ModifyWorkspacePropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifyWorkspacePropertiesInput, arg2 ...request.Option) (*workspaces.ModifyWorkspacePropertiesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1365,7 +1365,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceStateRequest(arg0 interf
 }
 
 // ModifyWorkspaceStateWithContext mocks base method
-func (m *MockWorkSpacesAPI) ModifyWorkspaceStateWithContext(arg0 aws.Context, arg1 *workspaces.ModifyWorkspaceStateInput, arg2 ...request.Option) (*workspaces.ModifyWorkspaceStateOutput, error) {
+func (m *MockWorkSpacesAPI) ModifyWorkspaceStateWithContext(arg0 context.Context, arg1 *workspaces.ModifyWorkspaceStateInput, arg2 ...request.Option) (*workspaces.ModifyWorkspaceStateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1415,7 +1415,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) RebootWorkspacesRequest(arg0 interface{
 }
 
 // RebootWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) RebootWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.RebootWorkspacesInput, arg2 ...request.Option) (*workspaces.RebootWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) RebootWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.RebootWorkspacesInput, arg2 ...request.Option) (*workspaces.RebootWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1465,7 +1465,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) RebuildWorkspacesRequest(arg0 interface
 }
 
 // RebuildWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) RebuildWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.RebuildWorkspacesInput, arg2 ...request.Option) (*workspaces.RebuildWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) RebuildWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.RebuildWorkspacesInput, arg2 ...request.Option) (*workspaces.RebuildWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1515,7 +1515,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) RevokeIpRulesRequest(arg0 interface{}) 
 }
 
 // RevokeIpRulesWithContext mocks base method
-func (m *MockWorkSpacesAPI) RevokeIpRulesWithContext(arg0 aws.Context, arg1 *workspaces.RevokeIpRulesInput, arg2 ...request.Option) (*workspaces.RevokeIpRulesOutput, error) {
+func (m *MockWorkSpacesAPI) RevokeIpRulesWithContext(arg0 context.Context, arg1 *workspaces.RevokeIpRulesInput, arg2 ...request.Option) (*workspaces.RevokeIpRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1565,7 +1565,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) StartWorkspacesRequest(arg0 interface{}
 }
 
 // StartWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) StartWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.StartWorkspacesInput, arg2 ...request.Option) (*workspaces.StartWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) StartWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.StartWorkspacesInput, arg2 ...request.Option) (*workspaces.StartWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1615,7 +1615,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) StopWorkspacesRequest(arg0 interface{})
 }
 
 // StopWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) StopWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.StopWorkspacesInput, arg2 ...request.Option) (*workspaces.StopWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) StopWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.StopWorkspacesInput, arg2 ...request.Option) (*workspaces.StopWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1665,7 +1665,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesRequest(arg0 interfa
 }
 
 // TerminateWorkspacesWithContext mocks base method
-func (m *MockWorkSpacesAPI) TerminateWorkspacesWithContext(arg0 aws.Context, arg1 *workspaces.TerminateWorkspacesInput, arg2 ...request.Option) (*workspaces.TerminateWorkspacesOutput, error) {
+func (m *MockWorkSpacesAPI) TerminateWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.TerminateWorkspacesInput, arg2 ...request.Option) (*workspaces.TerminateWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1715,7 +1715,7 @@ func (mr *MockWorkSpacesAPIMockRecorder) UpdateRulesOfIpGroupRequest(arg0 interf
 }
 
 // UpdateRulesOfIpGroupWithContext mocks base method
-func (m *MockWorkSpacesAPI) UpdateRulesOfIpGroupWithContext(arg0 aws.Context, arg1 *workspaces.UpdateRulesOfIpGroupInput, arg2 ...request.Option) (*workspaces.UpdateRulesOfIpGroupOutput, error) {
+func (m *MockWorkSpacesAPI) UpdateRulesOfIpGroupWithContext(arg0 context.Context, arg1 *workspaces.UpdateRulesOfIpGroupInput, arg2 ...request.Option) (*workspaces.UpdateRulesOfIpGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

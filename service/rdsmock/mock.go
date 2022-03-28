@@ -5,7 +5,7 @@
 package rdsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	rds "github.com/aws/aws-sdk-go/service/rds"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRDSAPIMockRecorder) AddRoleToDBClusterRequest(arg0 interface{}) *g
 }
 
 // AddRoleToDBClusterWithContext mocks base method
-func (m *MockRDSAPI) AddRoleToDBClusterWithContext(arg0 aws.Context, arg1 *rds.AddRoleToDBClusterInput, arg2 ...request.Option) (*rds.AddRoleToDBClusterOutput, error) {
+func (m *MockRDSAPI) AddRoleToDBClusterWithContext(arg0 context.Context, arg1 *rds.AddRoleToDBClusterInput, arg2 ...request.Option) (*rds.AddRoleToDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRDSAPIMockRecorder) AddSourceIdentifierToSubscriptionRequest(arg0 
 }
 
 // AddSourceIdentifierToSubscriptionWithContext mocks base method
-func (m *MockRDSAPI) AddSourceIdentifierToSubscriptionWithContext(arg0 aws.Context, arg1 *rds.AddSourceIdentifierToSubscriptionInput, arg2 ...request.Option) (*rds.AddSourceIdentifierToSubscriptionOutput, error) {
+func (m *MockRDSAPI) AddSourceIdentifierToSubscriptionWithContext(arg0 context.Context, arg1 *rds.AddSourceIdentifierToSubscriptionInput, arg2 ...request.Option) (*rds.AddSourceIdentifierToSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRDSAPIMockRecorder) AddTagsToResourceRequest(arg0 interface{}) *go
 }
 
 // AddTagsToResourceWithContext mocks base method
-func (m *MockRDSAPI) AddTagsToResourceWithContext(arg0 aws.Context, arg1 *rds.AddTagsToResourceInput, arg2 ...request.Option) (*rds.AddTagsToResourceOutput, error) {
+func (m *MockRDSAPI) AddTagsToResourceWithContext(arg0 context.Context, arg1 *rds.AddTagsToResourceInput, arg2 ...request.Option) (*rds.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRDSAPIMockRecorder) ApplyPendingMaintenanceActionRequest(arg0 inte
 }
 
 // ApplyPendingMaintenanceActionWithContext mocks base method
-func (m *MockRDSAPI) ApplyPendingMaintenanceActionWithContext(arg0 aws.Context, arg1 *rds.ApplyPendingMaintenanceActionInput, arg2 ...request.Option) (*rds.ApplyPendingMaintenanceActionOutput, error) {
+func (m *MockRDSAPI) ApplyPendingMaintenanceActionWithContext(arg0 context.Context, arg1 *rds.ApplyPendingMaintenanceActionInput, arg2 ...request.Option) (*rds.ApplyPendingMaintenanceActionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRDSAPIMockRecorder) AuthorizeDBSecurityGroupIngressRequest(arg0 in
 }
 
 // AuthorizeDBSecurityGroupIngressWithContext mocks base method
-func (m *MockRDSAPI) AuthorizeDBSecurityGroupIngressWithContext(arg0 aws.Context, arg1 *rds.AuthorizeDBSecurityGroupIngressInput, arg2 ...request.Option) (*rds.AuthorizeDBSecurityGroupIngressOutput, error) {
+func (m *MockRDSAPI) AuthorizeDBSecurityGroupIngressWithContext(arg0 context.Context, arg1 *rds.AuthorizeDBSecurityGroupIngressInput, arg2 ...request.Option) (*rds.AuthorizeDBSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRDSAPIMockRecorder) BacktrackDBClusterRequest(arg0 interface{}) *g
 }
 
 // BacktrackDBClusterWithContext mocks base method
-func (m *MockRDSAPI) BacktrackDBClusterWithContext(arg0 aws.Context, arg1 *rds.BacktrackDBClusterInput, arg2 ...request.Option) (*rds.BacktrackDBClusterOutput, error) {
+func (m *MockRDSAPI) BacktrackDBClusterWithContext(arg0 context.Context, arg1 *rds.BacktrackDBClusterInput, arg2 ...request.Option) (*rds.BacktrackDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRDSAPIMockRecorder) CopyDBClusterParameterGroupRequest(arg0 interf
 }
 
 // CopyDBClusterParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) CopyDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *rds.CopyDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.CopyDBClusterParameterGroupOutput, error) {
+func (m *MockRDSAPI) CopyDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *rds.CopyDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.CopyDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockRDSAPIMockRecorder) CopyDBClusterSnapshotRequest(arg0 interface{})
 }
 
 // CopyDBClusterSnapshotWithContext mocks base method
-func (m *MockRDSAPI) CopyDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *rds.CopyDBClusterSnapshotInput, arg2 ...request.Option) (*rds.CopyDBClusterSnapshotOutput, error) {
+func (m *MockRDSAPI) CopyDBClusterSnapshotWithContext(arg0 context.Context, arg1 *rds.CopyDBClusterSnapshotInput, arg2 ...request.Option) (*rds.CopyDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockRDSAPIMockRecorder) CopyDBParameterGroupRequest(arg0 interface{}) 
 }
 
 // CopyDBParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) CopyDBParameterGroupWithContext(arg0 aws.Context, arg1 *rds.CopyDBParameterGroupInput, arg2 ...request.Option) (*rds.CopyDBParameterGroupOutput, error) {
+func (m *MockRDSAPI) CopyDBParameterGroupWithContext(arg0 context.Context, arg1 *rds.CopyDBParameterGroupInput, arg2 ...request.Option) (*rds.CopyDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockRDSAPIMockRecorder) CopyDBSnapshotRequest(arg0 interface{}) *gomoc
 }
 
 // CopyDBSnapshotWithContext mocks base method
-func (m *MockRDSAPI) CopyDBSnapshotWithContext(arg0 aws.Context, arg1 *rds.CopyDBSnapshotInput, arg2 ...request.Option) (*rds.CopyDBSnapshotOutput, error) {
+func (m *MockRDSAPI) CopyDBSnapshotWithContext(arg0 context.Context, arg1 *rds.CopyDBSnapshotInput, arg2 ...request.Option) (*rds.CopyDBSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockRDSAPIMockRecorder) CopyOptionGroupRequest(arg0 interface{}) *gomo
 }
 
 // CopyOptionGroupWithContext mocks base method
-func (m *MockRDSAPI) CopyOptionGroupWithContext(arg0 aws.Context, arg1 *rds.CopyOptionGroupInput, arg2 ...request.Option) (*rds.CopyOptionGroupOutput, error) {
+func (m *MockRDSAPI) CopyOptionGroupWithContext(arg0 context.Context, arg1 *rds.CopyOptionGroupInput, arg2 ...request.Option) (*rds.CopyOptionGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBClusterEndpointRequest(arg0 interface{
 }
 
 // CreateDBClusterEndpointWithContext mocks base method
-func (m *MockRDSAPI) CreateDBClusterEndpointWithContext(arg0 aws.Context, arg1 *rds.CreateDBClusterEndpointInput, arg2 ...request.Option) (*rds.CreateDBClusterEndpointOutput, error) {
+func (m *MockRDSAPI) CreateDBClusterEndpointWithContext(arg0 context.Context, arg1 *rds.CreateDBClusterEndpointInput, arg2 ...request.Option) (*rds.CreateDBClusterEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -681,7 +681,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBClusterParameterGroupRequest(arg0 inte
 }
 
 // CreateDBClusterParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) CreateDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *rds.CreateDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.CreateDBClusterParameterGroupOutput, error) {
+func (m *MockRDSAPI) CreateDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *rds.CreateDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.CreateDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -746,7 +746,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBClusterSnapshotRequest(arg0 interface{
 }
 
 // CreateDBClusterSnapshotWithContext mocks base method
-func (m *MockRDSAPI) CreateDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *rds.CreateDBClusterSnapshotInput, arg2 ...request.Option) (*rds.CreateDBClusterSnapshotOutput, error) {
+func (m *MockRDSAPI) CreateDBClusterSnapshotWithContext(arg0 context.Context, arg1 *rds.CreateDBClusterSnapshotInput, arg2 ...request.Option) (*rds.CreateDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBClusterSnapshotWithContext(arg0, arg1 
 }
 
 // CreateDBClusterWithContext mocks base method
-func (m *MockRDSAPI) CreateDBClusterWithContext(arg0 aws.Context, arg1 *rds.CreateDBClusterInput, arg2 ...request.Option) (*rds.CreateDBClusterOutput, error) {
+func (m *MockRDSAPI) CreateDBClusterWithContext(arg0 context.Context, arg1 *rds.CreateDBClusterInput, arg2 ...request.Option) (*rds.CreateDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBInstanceReadReplicaRequest(arg0 interf
 }
 
 // CreateDBInstanceReadReplicaWithContext mocks base method
-func (m *MockRDSAPI) CreateDBInstanceReadReplicaWithContext(arg0 aws.Context, arg1 *rds.CreateDBInstanceReadReplicaInput, arg2 ...request.Option) (*rds.CreateDBInstanceReadReplicaOutput, error) {
+func (m *MockRDSAPI) CreateDBInstanceReadReplicaWithContext(arg0 context.Context, arg1 *rds.CreateDBInstanceReadReplicaInput, arg2 ...request.Option) (*rds.CreateDBInstanceReadReplicaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBInstanceRequest(arg0 interface{}) *gom
 }
 
 // CreateDBInstanceWithContext mocks base method
-func (m *MockRDSAPI) CreateDBInstanceWithContext(arg0 aws.Context, arg1 *rds.CreateDBInstanceInput, arg2 ...request.Option) (*rds.CreateDBInstanceOutput, error) {
+func (m *MockRDSAPI) CreateDBInstanceWithContext(arg0 context.Context, arg1 *rds.CreateDBInstanceInput, arg2 ...request.Option) (*rds.CreateDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBParameterGroupRequest(arg0 interface{}
 }
 
 // CreateDBParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) CreateDBParameterGroupWithContext(arg0 aws.Context, arg1 *rds.CreateDBParameterGroupInput, arg2 ...request.Option) (*rds.CreateDBParameterGroupOutput, error) {
+func (m *MockRDSAPI) CreateDBParameterGroupWithContext(arg0 context.Context, arg1 *rds.CreateDBParameterGroupInput, arg2 ...request.Option) (*rds.CreateDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBSecurityGroupRequest(arg0 interface{})
 }
 
 // CreateDBSecurityGroupWithContext mocks base method
-func (m *MockRDSAPI) CreateDBSecurityGroupWithContext(arg0 aws.Context, arg1 *rds.CreateDBSecurityGroupInput, arg2 ...request.Option) (*rds.CreateDBSecurityGroupOutput, error) {
+func (m *MockRDSAPI) CreateDBSecurityGroupWithContext(arg0 context.Context, arg1 *rds.CreateDBSecurityGroupInput, arg2 ...request.Option) (*rds.CreateDBSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBSnapshotRequest(arg0 interface{}) *gom
 }
 
 // CreateDBSnapshotWithContext mocks base method
-func (m *MockRDSAPI) CreateDBSnapshotWithContext(arg0 aws.Context, arg1 *rds.CreateDBSnapshotInput, arg2 ...request.Option) (*rds.CreateDBSnapshotOutput, error) {
+func (m *MockRDSAPI) CreateDBSnapshotWithContext(arg0 context.Context, arg1 *rds.CreateDBSnapshotInput, arg2 ...request.Option) (*rds.CreateDBSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockRDSAPIMockRecorder) CreateDBSubnetGroupRequest(arg0 interface{}) *
 }
 
 // CreateDBSubnetGroupWithContext mocks base method
-func (m *MockRDSAPI) CreateDBSubnetGroupWithContext(arg0 aws.Context, arg1 *rds.CreateDBSubnetGroupInput, arg2 ...request.Option) (*rds.CreateDBSubnetGroupOutput, error) {
+func (m *MockRDSAPI) CreateDBSubnetGroupWithContext(arg0 context.Context, arg1 *rds.CreateDBSubnetGroupInput, arg2 ...request.Option) (*rds.CreateDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1116,7 +1116,7 @@ func (mr *MockRDSAPIMockRecorder) CreateEventSubscriptionRequest(arg0 interface{
 }
 
 // CreateEventSubscriptionWithContext mocks base method
-func (m *MockRDSAPI) CreateEventSubscriptionWithContext(arg0 aws.Context, arg1 *rds.CreateEventSubscriptionInput, arg2 ...request.Option) (*rds.CreateEventSubscriptionOutput, error) {
+func (m *MockRDSAPI) CreateEventSubscriptionWithContext(arg0 context.Context, arg1 *rds.CreateEventSubscriptionInput, arg2 ...request.Option) (*rds.CreateEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1166,7 +1166,7 @@ func (mr *MockRDSAPIMockRecorder) CreateGlobalClusterRequest(arg0 interface{}) *
 }
 
 // CreateGlobalClusterWithContext mocks base method
-func (m *MockRDSAPI) CreateGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.CreateGlobalClusterInput, arg2 ...request.Option) (*rds.CreateGlobalClusterOutput, error) {
+func (m *MockRDSAPI) CreateGlobalClusterWithContext(arg0 context.Context, arg1 *rds.CreateGlobalClusterInput, arg2 ...request.Option) (*rds.CreateGlobalClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1216,7 +1216,7 @@ func (mr *MockRDSAPIMockRecorder) CreateOptionGroupRequest(arg0 interface{}) *go
 }
 
 // CreateOptionGroupWithContext mocks base method
-func (m *MockRDSAPI) CreateOptionGroupWithContext(arg0 aws.Context, arg1 *rds.CreateOptionGroupInput, arg2 ...request.Option) (*rds.CreateOptionGroupOutput, error) {
+func (m *MockRDSAPI) CreateOptionGroupWithContext(arg0 context.Context, arg1 *rds.CreateOptionGroupInput, arg2 ...request.Option) (*rds.CreateOptionGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1281,7 +1281,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBClusterEndpointRequest(arg0 interface{
 }
 
 // DeleteDBClusterEndpointWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBClusterEndpointWithContext(arg0 aws.Context, arg1 *rds.DeleteDBClusterEndpointInput, arg2 ...request.Option) (*rds.DeleteDBClusterEndpointOutput, error) {
+func (m *MockRDSAPI) DeleteDBClusterEndpointWithContext(arg0 context.Context, arg1 *rds.DeleteDBClusterEndpointInput, arg2 ...request.Option) (*rds.DeleteDBClusterEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1331,7 +1331,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBClusterParameterGroupRequest(arg0 inte
 }
 
 // DeleteDBClusterParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *rds.DeleteDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.DeleteDBClusterParameterGroupOutput, error) {
+func (m *MockRDSAPI) DeleteDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *rds.DeleteDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.DeleteDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1396,7 +1396,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBClusterSnapshotRequest(arg0 interface{
 }
 
 // DeleteDBClusterSnapshotWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBClusterSnapshotWithContext(arg0 aws.Context, arg1 *rds.DeleteDBClusterSnapshotInput, arg2 ...request.Option) (*rds.DeleteDBClusterSnapshotOutput, error) {
+func (m *MockRDSAPI) DeleteDBClusterSnapshotWithContext(arg0 context.Context, arg1 *rds.DeleteDBClusterSnapshotInput, arg2 ...request.Option) (*rds.DeleteDBClusterSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1416,7 +1416,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBClusterSnapshotWithContext(arg0, arg1 
 }
 
 // DeleteDBClusterWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBClusterWithContext(arg0 aws.Context, arg1 *rds.DeleteDBClusterInput, arg2 ...request.Option) (*rds.DeleteDBClusterOutput, error) {
+func (m *MockRDSAPI) DeleteDBClusterWithContext(arg0 context.Context, arg1 *rds.DeleteDBClusterInput, arg2 ...request.Option) (*rds.DeleteDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1481,7 +1481,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBInstanceAutomatedBackupRequest(arg0 in
 }
 
 // DeleteDBInstanceAutomatedBackupWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBInstanceAutomatedBackupWithContext(arg0 aws.Context, arg1 *rds.DeleteDBInstanceAutomatedBackupInput, arg2 ...request.Option) (*rds.DeleteDBInstanceAutomatedBackupOutput, error) {
+func (m *MockRDSAPI) DeleteDBInstanceAutomatedBackupWithContext(arg0 context.Context, arg1 *rds.DeleteDBInstanceAutomatedBackupInput, arg2 ...request.Option) (*rds.DeleteDBInstanceAutomatedBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1516,7 +1516,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBInstanceRequest(arg0 interface{}) *gom
 }
 
 // DeleteDBInstanceWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBInstanceWithContext(arg0 aws.Context, arg1 *rds.DeleteDBInstanceInput, arg2 ...request.Option) (*rds.DeleteDBInstanceOutput, error) {
+func (m *MockRDSAPI) DeleteDBInstanceWithContext(arg0 context.Context, arg1 *rds.DeleteDBInstanceInput, arg2 ...request.Option) (*rds.DeleteDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1566,7 +1566,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBParameterGroupRequest(arg0 interface{}
 }
 
 // DeleteDBParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBParameterGroupWithContext(arg0 aws.Context, arg1 *rds.DeleteDBParameterGroupInput, arg2 ...request.Option) (*rds.DeleteDBParameterGroupOutput, error) {
+func (m *MockRDSAPI) DeleteDBParameterGroupWithContext(arg0 context.Context, arg1 *rds.DeleteDBParameterGroupInput, arg2 ...request.Option) (*rds.DeleteDBParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1616,7 +1616,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBSecurityGroupRequest(arg0 interface{})
 }
 
 // DeleteDBSecurityGroupWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBSecurityGroupWithContext(arg0 aws.Context, arg1 *rds.DeleteDBSecurityGroupInput, arg2 ...request.Option) (*rds.DeleteDBSecurityGroupOutput, error) {
+func (m *MockRDSAPI) DeleteDBSecurityGroupWithContext(arg0 context.Context, arg1 *rds.DeleteDBSecurityGroupInput, arg2 ...request.Option) (*rds.DeleteDBSecurityGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1666,7 +1666,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBSnapshotRequest(arg0 interface{}) *gom
 }
 
 // DeleteDBSnapshotWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBSnapshotWithContext(arg0 aws.Context, arg1 *rds.DeleteDBSnapshotInput, arg2 ...request.Option) (*rds.DeleteDBSnapshotOutput, error) {
+func (m *MockRDSAPI) DeleteDBSnapshotWithContext(arg0 context.Context, arg1 *rds.DeleteDBSnapshotInput, arg2 ...request.Option) (*rds.DeleteDBSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1716,7 +1716,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteDBSubnetGroupRequest(arg0 interface{}) *
 }
 
 // DeleteDBSubnetGroupWithContext mocks base method
-func (m *MockRDSAPI) DeleteDBSubnetGroupWithContext(arg0 aws.Context, arg1 *rds.DeleteDBSubnetGroupInput, arg2 ...request.Option) (*rds.DeleteDBSubnetGroupOutput, error) {
+func (m *MockRDSAPI) DeleteDBSubnetGroupWithContext(arg0 context.Context, arg1 *rds.DeleteDBSubnetGroupInput, arg2 ...request.Option) (*rds.DeleteDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1766,7 +1766,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteEventSubscriptionRequest(arg0 interface{
 }
 
 // DeleteEventSubscriptionWithContext mocks base method
-func (m *MockRDSAPI) DeleteEventSubscriptionWithContext(arg0 aws.Context, arg1 *rds.DeleteEventSubscriptionInput, arg2 ...request.Option) (*rds.DeleteEventSubscriptionOutput, error) {
+func (m *MockRDSAPI) DeleteEventSubscriptionWithContext(arg0 context.Context, arg1 *rds.DeleteEventSubscriptionInput, arg2 ...request.Option) (*rds.DeleteEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1816,7 +1816,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteGlobalClusterRequest(arg0 interface{}) *
 }
 
 // DeleteGlobalClusterWithContext mocks base method
-func (m *MockRDSAPI) DeleteGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.DeleteGlobalClusterInput, arg2 ...request.Option) (*rds.DeleteGlobalClusterOutput, error) {
+func (m *MockRDSAPI) DeleteGlobalClusterWithContext(arg0 context.Context, arg1 *rds.DeleteGlobalClusterInput, arg2 ...request.Option) (*rds.DeleteGlobalClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1866,7 +1866,7 @@ func (mr *MockRDSAPIMockRecorder) DeleteOptionGroupRequest(arg0 interface{}) *go
 }
 
 // DeleteOptionGroupWithContext mocks base method
-func (m *MockRDSAPI) DeleteOptionGroupWithContext(arg0 aws.Context, arg1 *rds.DeleteOptionGroupInput, arg2 ...request.Option) (*rds.DeleteOptionGroupOutput, error) {
+func (m *MockRDSAPI) DeleteOptionGroupWithContext(arg0 context.Context, arg1 *rds.DeleteOptionGroupInput, arg2 ...request.Option) (*rds.DeleteOptionGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1916,7 +1916,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeAccountAttributesRequest(arg0 interfac
 }
 
 // DescribeAccountAttributesWithContext mocks base method
-func (m *MockRDSAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *rds.DescribeAccountAttributesInput, arg2 ...request.Option) (*rds.DescribeAccountAttributesOutput, error) {
+func (m *MockRDSAPI) DescribeAccountAttributesWithContext(arg0 context.Context, arg1 *rds.DescribeAccountAttributesInput, arg2 ...request.Option) (*rds.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1966,7 +1966,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeCertificatesRequest(arg0 interface{}) 
 }
 
 // DescribeCertificatesWithContext mocks base method
-func (m *MockRDSAPI) DescribeCertificatesWithContext(arg0 aws.Context, arg1 *rds.DescribeCertificatesInput, arg2 ...request.Option) (*rds.DescribeCertificatesOutput, error) {
+func (m *MockRDSAPI) DescribeCertificatesWithContext(arg0 context.Context, arg1 *rds.DescribeCertificatesInput, arg2 ...request.Option) (*rds.DescribeCertificatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2016,7 +2016,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterBacktracksRequest(arg0 interf
 }
 
 // DescribeDBClusterBacktracksWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClusterBacktracksWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterBacktracksInput, arg2 ...request.Option) (*rds.DescribeDBClusterBacktracksOutput, error) {
+func (m *MockRDSAPI) DescribeDBClusterBacktracksWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterBacktracksInput, arg2 ...request.Option) (*rds.DescribeDBClusterBacktracksOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2066,7 +2066,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterEndpointsRequest(arg0 interfa
 }
 
 // DescribeDBClusterEndpointsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClusterEndpointsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterEndpointsInput, arg2 ...request.Option) (*rds.DescribeDBClusterEndpointsOutput, error) {
+func (m *MockRDSAPI) DescribeDBClusterEndpointsWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterEndpointsInput, arg2 ...request.Option) (*rds.DescribeDBClusterEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2116,7 +2116,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterParameterGroupsRequest(arg0 i
 }
 
 // DescribeDBClusterParameterGroupsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClusterParameterGroupsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterParameterGroupsInput, arg2 ...request.Option) (*rds.DescribeDBClusterParameterGroupsOutput, error) {
+func (m *MockRDSAPI) DescribeDBClusterParameterGroupsWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterParameterGroupsInput, arg2 ...request.Option) (*rds.DescribeDBClusterParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2166,7 +2166,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterParametersRequest(arg0 interf
 }
 
 // DescribeDBClusterParametersWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClusterParametersWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterParametersInput, arg2 ...request.Option) (*rds.DescribeDBClusterParametersOutput, error) {
+func (m *MockRDSAPI) DescribeDBClusterParametersWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterParametersInput, arg2 ...request.Option) (*rds.DescribeDBClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2216,7 +2216,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterSnapshotAttributesRequest(arg
 }
 
 // DescribeDBClusterSnapshotAttributesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClusterSnapshotAttributesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterSnapshotAttributesInput, arg2 ...request.Option) (*rds.DescribeDBClusterSnapshotAttributesOutput, error) {
+func (m *MockRDSAPI) DescribeDBClusterSnapshotAttributesWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterSnapshotAttributesInput, arg2 ...request.Option) (*rds.DescribeDBClusterSnapshotAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2266,7 +2266,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClusterSnapshotsRequest(arg0 interfa
 }
 
 // DescribeDBClusterSnapshotsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClusterSnapshotsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClusterSnapshotsInput, arg2 ...request.Option) (*rds.DescribeDBClusterSnapshotsOutput, error) {
+func (m *MockRDSAPI) DescribeDBClusterSnapshotsWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterSnapshotsInput, arg2 ...request.Option) (*rds.DescribeDBClusterSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2315,7 +2315,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClustersPages(arg0, arg1 interface{}
 }
 
 // DescribeDBClustersPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClustersPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClustersInput, arg2 func(*rds.DescribeDBClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBClustersPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBClustersInput, arg2 func(*rds.DescribeDBClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2349,7 +2349,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBClustersRequest(arg0 interface{}) *g
 }
 
 // DescribeDBClustersWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBClustersWithContext(arg0 aws.Context, arg1 *rds.DescribeDBClustersInput, arg2 ...request.Option) (*rds.DescribeDBClustersOutput, error) {
+func (m *MockRDSAPI) DescribeDBClustersWithContext(arg0 context.Context, arg1 *rds.DescribeDBClustersInput, arg2 ...request.Option) (*rds.DescribeDBClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2398,7 +2398,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBEngineVersionsPages(arg0, arg1 inter
 }
 
 // DescribeDBEngineVersionsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBEngineVersionsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBEngineVersionsInput, arg2 func(*rds.DescribeDBEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBEngineVersionsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBEngineVersionsInput, arg2 func(*rds.DescribeDBEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2432,7 +2432,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBEngineVersionsRequest(arg0 interface
 }
 
 // DescribeDBEngineVersionsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBEngineVersionsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBEngineVersionsInput, arg2 ...request.Option) (*rds.DescribeDBEngineVersionsOutput, error) {
+func (m *MockRDSAPI) DescribeDBEngineVersionsWithContext(arg0 context.Context, arg1 *rds.DescribeDBEngineVersionsInput, arg2 ...request.Option) (*rds.DescribeDBEngineVersionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2481,7 +2481,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBInstanceAutomatedBackupsPages(arg0, 
 }
 
 // DescribeDBInstanceAutomatedBackupsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBInstanceAutomatedBackupsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBInstanceAutomatedBackupsInput, arg2 func(*rds.DescribeDBInstanceAutomatedBackupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBInstanceAutomatedBackupsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBInstanceAutomatedBackupsInput, arg2 func(*rds.DescribeDBInstanceAutomatedBackupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2515,7 +2515,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBInstanceAutomatedBackupsRequest(arg0
 }
 
 // DescribeDBInstanceAutomatedBackupsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBInstanceAutomatedBackupsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBInstanceAutomatedBackupsInput, arg2 ...request.Option) (*rds.DescribeDBInstanceAutomatedBackupsOutput, error) {
+func (m *MockRDSAPI) DescribeDBInstanceAutomatedBackupsWithContext(arg0 context.Context, arg1 *rds.DescribeDBInstanceAutomatedBackupsInput, arg2 ...request.Option) (*rds.DescribeDBInstanceAutomatedBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2564,7 +2564,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBInstancesPages(arg0, arg1 interface{
 }
 
 // DescribeDBInstancesPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBInstancesPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBInstancesInput, arg2 func(*rds.DescribeDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBInstancesPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBInstancesInput, arg2 func(*rds.DescribeDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2598,7 +2598,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBInstancesRequest(arg0 interface{}) *
 }
 
 // DescribeDBInstancesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBInstancesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBInstancesInput, arg2 ...request.Option) (*rds.DescribeDBInstancesOutput, error) {
+func (m *MockRDSAPI) DescribeDBInstancesWithContext(arg0 context.Context, arg1 *rds.DescribeDBInstancesInput, arg2 ...request.Option) (*rds.DescribeDBInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2647,7 +2647,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBLogFilesPages(arg0, arg1 interface{}
 }
 
 // DescribeDBLogFilesPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBLogFilesPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBLogFilesInput, arg2 func(*rds.DescribeDBLogFilesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBLogFilesPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBLogFilesInput, arg2 func(*rds.DescribeDBLogFilesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2681,7 +2681,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBLogFilesRequest(arg0 interface{}) *g
 }
 
 // DescribeDBLogFilesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBLogFilesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBLogFilesInput, arg2 ...request.Option) (*rds.DescribeDBLogFilesOutput, error) {
+func (m *MockRDSAPI) DescribeDBLogFilesWithContext(arg0 context.Context, arg1 *rds.DescribeDBLogFilesInput, arg2 ...request.Option) (*rds.DescribeDBLogFilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2730,7 +2730,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBParameterGroupsPages(arg0, arg1 inte
 }
 
 // DescribeDBParameterGroupsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBParameterGroupsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBParameterGroupsInput, arg2 func(*rds.DescribeDBParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBParameterGroupsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBParameterGroupsInput, arg2 func(*rds.DescribeDBParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2764,7 +2764,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBParameterGroupsRequest(arg0 interfac
 }
 
 // DescribeDBParameterGroupsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBParameterGroupsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBParameterGroupsInput, arg2 ...request.Option) (*rds.DescribeDBParameterGroupsOutput, error) {
+func (m *MockRDSAPI) DescribeDBParameterGroupsWithContext(arg0 context.Context, arg1 *rds.DescribeDBParameterGroupsInput, arg2 ...request.Option) (*rds.DescribeDBParameterGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2813,7 +2813,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBParametersPages(arg0, arg1 interface
 }
 
 // DescribeDBParametersPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBParametersPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBParametersInput, arg2 func(*rds.DescribeDBParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBParametersPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBParametersInput, arg2 func(*rds.DescribeDBParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2847,7 +2847,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBParametersRequest(arg0 interface{}) 
 }
 
 // DescribeDBParametersWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBParametersWithContext(arg0 aws.Context, arg1 *rds.DescribeDBParametersInput, arg2 ...request.Option) (*rds.DescribeDBParametersOutput, error) {
+func (m *MockRDSAPI) DescribeDBParametersWithContext(arg0 context.Context, arg1 *rds.DescribeDBParametersInput, arg2 ...request.Option) (*rds.DescribeDBParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2896,7 +2896,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSecurityGroupsPages(arg0, arg1 inter
 }
 
 // DescribeDBSecurityGroupsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSecurityGroupsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSecurityGroupsInput, arg2 func(*rds.DescribeDBSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBSecurityGroupsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBSecurityGroupsInput, arg2 func(*rds.DescribeDBSecurityGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -2930,7 +2930,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSecurityGroupsRequest(arg0 interface
 }
 
 // DescribeDBSecurityGroupsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSecurityGroupsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSecurityGroupsInput, arg2 ...request.Option) (*rds.DescribeDBSecurityGroupsOutput, error) {
+func (m *MockRDSAPI) DescribeDBSecurityGroupsWithContext(arg0 context.Context, arg1 *rds.DescribeDBSecurityGroupsInput, arg2 ...request.Option) (*rds.DescribeDBSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2980,7 +2980,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSnapshotAttributesRequest(arg0 inter
 }
 
 // DescribeDBSnapshotAttributesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSnapshotAttributesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSnapshotAttributesInput, arg2 ...request.Option) (*rds.DescribeDBSnapshotAttributesOutput, error) {
+func (m *MockRDSAPI) DescribeDBSnapshotAttributesWithContext(arg0 context.Context, arg1 *rds.DescribeDBSnapshotAttributesInput, arg2 ...request.Option) (*rds.DescribeDBSnapshotAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3029,7 +3029,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSnapshotsPages(arg0, arg1 interface{
 }
 
 // DescribeDBSnapshotsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSnapshotsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 func(*rds.DescribeDBSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBSnapshotsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 func(*rds.DescribeDBSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3063,7 +3063,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSnapshotsRequest(arg0 interface{}) *
 }
 
 // DescribeDBSnapshotsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSnapshotsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 ...request.Option) (*rds.DescribeDBSnapshotsOutput, error) {
+func (m *MockRDSAPI) DescribeDBSnapshotsWithContext(arg0 context.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 ...request.Option) (*rds.DescribeDBSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3112,7 +3112,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSubnetGroupsPages(arg0, arg1 interfa
 }
 
 // DescribeDBSubnetGroupsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSubnetGroupsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSubnetGroupsInput, arg2 func(*rds.DescribeDBSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeDBSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeDBSubnetGroupsInput, arg2 func(*rds.DescribeDBSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3146,7 +3146,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeDBSubnetGroupsRequest(arg0 interface{}
 }
 
 // DescribeDBSubnetGroupsWithContext mocks base method
-func (m *MockRDSAPI) DescribeDBSubnetGroupsWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSubnetGroupsInput, arg2 ...request.Option) (*rds.DescribeDBSubnetGroupsOutput, error) {
+func (m *MockRDSAPI) DescribeDBSubnetGroupsWithContext(arg0 context.Context, arg1 *rds.DescribeDBSubnetGroupsInput, arg2 ...request.Option) (*rds.DescribeDBSubnetGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3196,7 +3196,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEngineDefaultClusterParametersRequest(
 }
 
 // DescribeEngineDefaultClusterParametersWithContext mocks base method
-func (m *MockRDSAPI) DescribeEngineDefaultClusterParametersWithContext(arg0 aws.Context, arg1 *rds.DescribeEngineDefaultClusterParametersInput, arg2 ...request.Option) (*rds.DescribeEngineDefaultClusterParametersOutput, error) {
+func (m *MockRDSAPI) DescribeEngineDefaultClusterParametersWithContext(arg0 context.Context, arg1 *rds.DescribeEngineDefaultClusterParametersInput, arg2 ...request.Option) (*rds.DescribeEngineDefaultClusterParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3245,7 +3245,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEngineDefaultParametersPages(arg0, arg
 }
 
 // DescribeEngineDefaultParametersPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeEngineDefaultParametersPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeEngineDefaultParametersInput, arg2 func(*rds.DescribeEngineDefaultParametersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeEngineDefaultParametersPagesWithContext(arg0 context.Context, arg1 *rds.DescribeEngineDefaultParametersInput, arg2 func(*rds.DescribeEngineDefaultParametersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3279,7 +3279,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEngineDefaultParametersRequest(arg0 in
 }
 
 // DescribeEngineDefaultParametersWithContext mocks base method
-func (m *MockRDSAPI) DescribeEngineDefaultParametersWithContext(arg0 aws.Context, arg1 *rds.DescribeEngineDefaultParametersInput, arg2 ...request.Option) (*rds.DescribeEngineDefaultParametersOutput, error) {
+func (m *MockRDSAPI) DescribeEngineDefaultParametersWithContext(arg0 context.Context, arg1 *rds.DescribeEngineDefaultParametersInput, arg2 ...request.Option) (*rds.DescribeEngineDefaultParametersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3329,7 +3329,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEventCategoriesRequest(arg0 interface{
 }
 
 // DescribeEventCategoriesWithContext mocks base method
-func (m *MockRDSAPI) DescribeEventCategoriesWithContext(arg0 aws.Context, arg1 *rds.DescribeEventCategoriesInput, arg2 ...request.Option) (*rds.DescribeEventCategoriesOutput, error) {
+func (m *MockRDSAPI) DescribeEventCategoriesWithContext(arg0 context.Context, arg1 *rds.DescribeEventCategoriesInput, arg2 ...request.Option) (*rds.DescribeEventCategoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3378,7 +3378,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEventSubscriptionsPages(arg0, arg1 int
 }
 
 // DescribeEventSubscriptionsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeEventSubscriptionsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeEventSubscriptionsInput, arg2 func(*rds.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeEventSubscriptionsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeEventSubscriptionsInput, arg2 func(*rds.DescribeEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3412,7 +3412,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEventSubscriptionsRequest(arg0 interfa
 }
 
 // DescribeEventSubscriptionsWithContext mocks base method
-func (m *MockRDSAPI) DescribeEventSubscriptionsWithContext(arg0 aws.Context, arg1 *rds.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*rds.DescribeEventSubscriptionsOutput, error) {
+func (m *MockRDSAPI) DescribeEventSubscriptionsWithContext(arg0 context.Context, arg1 *rds.DescribeEventSubscriptionsInput, arg2 ...request.Option) (*rds.DescribeEventSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3461,7 +3461,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{}) *g
 }
 
 // DescribeEventsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeEventsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeEventsInput, arg2 func(*rds.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeEventsInput, arg2 func(*rds.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3495,7 +3495,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeEventsRequest(arg0 interface{}) *gomoc
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockRDSAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *rds.DescribeEventsInput, arg2 ...request.Option) (*rds.DescribeEventsOutput, error) {
+func (m *MockRDSAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *rds.DescribeEventsInput, arg2 ...request.Option) (*rds.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3544,7 +3544,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeGlobalClustersPages(arg0, arg1 interfa
 }
 
 // DescribeGlobalClustersPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeGlobalClustersPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeGlobalClustersInput, arg2 func(*rds.DescribeGlobalClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeGlobalClustersPagesWithContext(arg0 context.Context, arg1 *rds.DescribeGlobalClustersInput, arg2 func(*rds.DescribeGlobalClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3578,7 +3578,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeGlobalClustersRequest(arg0 interface{}
 }
 
 // DescribeGlobalClustersWithContext mocks base method
-func (m *MockRDSAPI) DescribeGlobalClustersWithContext(arg0 aws.Context, arg1 *rds.DescribeGlobalClustersInput, arg2 ...request.Option) (*rds.DescribeGlobalClustersOutput, error) {
+func (m *MockRDSAPI) DescribeGlobalClustersWithContext(arg0 context.Context, arg1 *rds.DescribeGlobalClustersInput, arg2 ...request.Option) (*rds.DescribeGlobalClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3627,7 +3627,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeOptionGroupOptionsPages(arg0, arg1 int
 }
 
 // DescribeOptionGroupOptionsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeOptionGroupOptionsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeOptionGroupOptionsInput, arg2 func(*rds.DescribeOptionGroupOptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeOptionGroupOptionsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeOptionGroupOptionsInput, arg2 func(*rds.DescribeOptionGroupOptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3661,7 +3661,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeOptionGroupOptionsRequest(arg0 interfa
 }
 
 // DescribeOptionGroupOptionsWithContext mocks base method
-func (m *MockRDSAPI) DescribeOptionGroupOptionsWithContext(arg0 aws.Context, arg1 *rds.DescribeOptionGroupOptionsInput, arg2 ...request.Option) (*rds.DescribeOptionGroupOptionsOutput, error) {
+func (m *MockRDSAPI) DescribeOptionGroupOptionsWithContext(arg0 context.Context, arg1 *rds.DescribeOptionGroupOptionsInput, arg2 ...request.Option) (*rds.DescribeOptionGroupOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3710,7 +3710,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeOptionGroupsPages(arg0, arg1 interface
 }
 
 // DescribeOptionGroupsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeOptionGroupsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeOptionGroupsInput, arg2 func(*rds.DescribeOptionGroupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeOptionGroupsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeOptionGroupsInput, arg2 func(*rds.DescribeOptionGroupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3744,7 +3744,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeOptionGroupsRequest(arg0 interface{}) 
 }
 
 // DescribeOptionGroupsWithContext mocks base method
-func (m *MockRDSAPI) DescribeOptionGroupsWithContext(arg0 aws.Context, arg1 *rds.DescribeOptionGroupsInput, arg2 ...request.Option) (*rds.DescribeOptionGroupsOutput, error) {
+func (m *MockRDSAPI) DescribeOptionGroupsWithContext(arg0 context.Context, arg1 *rds.DescribeOptionGroupsInput, arg2 ...request.Option) (*rds.DescribeOptionGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3793,7 +3793,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeOrderableDBInstanceOptionsPages(arg0, 
 }
 
 // DescribeOrderableDBInstanceOptionsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeOrderableDBInstanceOptionsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeOrderableDBInstanceOptionsInput, arg2 func(*rds.DescribeOrderableDBInstanceOptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeOrderableDBInstanceOptionsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeOrderableDBInstanceOptionsInput, arg2 func(*rds.DescribeOrderableDBInstanceOptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3827,7 +3827,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeOrderableDBInstanceOptionsRequest(arg0
 }
 
 // DescribeOrderableDBInstanceOptionsWithContext mocks base method
-func (m *MockRDSAPI) DescribeOrderableDBInstanceOptionsWithContext(arg0 aws.Context, arg1 *rds.DescribeOrderableDBInstanceOptionsInput, arg2 ...request.Option) (*rds.DescribeOrderableDBInstanceOptionsOutput, error) {
+func (m *MockRDSAPI) DescribeOrderableDBInstanceOptionsWithContext(arg0 context.Context, arg1 *rds.DescribeOrderableDBInstanceOptionsInput, arg2 ...request.Option) (*rds.DescribeOrderableDBInstanceOptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3877,7 +3877,7 @@ func (mr *MockRDSAPIMockRecorder) DescribePendingMaintenanceActionsRequest(arg0 
 }
 
 // DescribePendingMaintenanceActionsWithContext mocks base method
-func (m *MockRDSAPI) DescribePendingMaintenanceActionsWithContext(arg0 aws.Context, arg1 *rds.DescribePendingMaintenanceActionsInput, arg2 ...request.Option) (*rds.DescribePendingMaintenanceActionsOutput, error) {
+func (m *MockRDSAPI) DescribePendingMaintenanceActionsWithContext(arg0 context.Context, arg1 *rds.DescribePendingMaintenanceActionsInput, arg2 ...request.Option) (*rds.DescribePendingMaintenanceActionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3941,7 +3941,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeReservedDBInstancesOfferingsPages(arg0
 }
 
 // DescribeReservedDBInstancesOfferingsPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeReservedDBInstancesOfferingsPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeReservedDBInstancesOfferingsInput, arg2 func(*rds.DescribeReservedDBInstancesOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeReservedDBInstancesOfferingsPagesWithContext(arg0 context.Context, arg1 *rds.DescribeReservedDBInstancesOfferingsInput, arg2 func(*rds.DescribeReservedDBInstancesOfferingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -3975,7 +3975,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeReservedDBInstancesOfferingsRequest(ar
 }
 
 // DescribeReservedDBInstancesOfferingsWithContext mocks base method
-func (m *MockRDSAPI) DescribeReservedDBInstancesOfferingsWithContext(arg0 aws.Context, arg1 *rds.DescribeReservedDBInstancesOfferingsInput, arg2 ...request.Option) (*rds.DescribeReservedDBInstancesOfferingsOutput, error) {
+func (m *MockRDSAPI) DescribeReservedDBInstancesOfferingsWithContext(arg0 context.Context, arg1 *rds.DescribeReservedDBInstancesOfferingsInput, arg2 ...request.Option) (*rds.DescribeReservedDBInstancesOfferingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4009,7 +4009,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeReservedDBInstancesPages(arg0, arg1 in
 }
 
 // DescribeReservedDBInstancesPagesWithContext mocks base method
-func (m *MockRDSAPI) DescribeReservedDBInstancesPagesWithContext(arg0 aws.Context, arg1 *rds.DescribeReservedDBInstancesInput, arg2 func(*rds.DescribeReservedDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DescribeReservedDBInstancesPagesWithContext(arg0 context.Context, arg1 *rds.DescribeReservedDBInstancesInput, arg2 func(*rds.DescribeReservedDBInstancesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4043,7 +4043,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeReservedDBInstancesRequest(arg0 interf
 }
 
 // DescribeReservedDBInstancesWithContext mocks base method
-func (m *MockRDSAPI) DescribeReservedDBInstancesWithContext(arg0 aws.Context, arg1 *rds.DescribeReservedDBInstancesInput, arg2 ...request.Option) (*rds.DescribeReservedDBInstancesOutput, error) {
+func (m *MockRDSAPI) DescribeReservedDBInstancesWithContext(arg0 context.Context, arg1 *rds.DescribeReservedDBInstancesInput, arg2 ...request.Option) (*rds.DescribeReservedDBInstancesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4093,7 +4093,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeSourceRegionsRequest(arg0 interface{})
 }
 
 // DescribeSourceRegionsWithContext mocks base method
-func (m *MockRDSAPI) DescribeSourceRegionsWithContext(arg0 aws.Context, arg1 *rds.DescribeSourceRegionsInput, arg2 ...request.Option) (*rds.DescribeSourceRegionsOutput, error) {
+func (m *MockRDSAPI) DescribeSourceRegionsWithContext(arg0 context.Context, arg1 *rds.DescribeSourceRegionsInput, arg2 ...request.Option) (*rds.DescribeSourceRegionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4143,7 +4143,7 @@ func (mr *MockRDSAPIMockRecorder) DescribeValidDBInstanceModificationsRequest(ar
 }
 
 // DescribeValidDBInstanceModificationsWithContext mocks base method
-func (m *MockRDSAPI) DescribeValidDBInstanceModificationsWithContext(arg0 aws.Context, arg1 *rds.DescribeValidDBInstanceModificationsInput, arg2 ...request.Option) (*rds.DescribeValidDBInstanceModificationsOutput, error) {
+func (m *MockRDSAPI) DescribeValidDBInstanceModificationsWithContext(arg0 context.Context, arg1 *rds.DescribeValidDBInstanceModificationsInput, arg2 ...request.Option) (*rds.DescribeValidDBInstanceModificationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4192,7 +4192,7 @@ func (mr *MockRDSAPIMockRecorder) DownloadDBLogFilePortionPages(arg0, arg1 inter
 }
 
 // DownloadDBLogFilePortionPagesWithContext mocks base method
-func (m *MockRDSAPI) DownloadDBLogFilePortionPagesWithContext(arg0 aws.Context, arg1 *rds.DownloadDBLogFilePortionInput, arg2 func(*rds.DownloadDBLogFilePortionOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRDSAPI) DownloadDBLogFilePortionPagesWithContext(arg0 context.Context, arg1 *rds.DownloadDBLogFilePortionInput, arg2 func(*rds.DownloadDBLogFilePortionOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -4226,7 +4226,7 @@ func (mr *MockRDSAPIMockRecorder) DownloadDBLogFilePortionRequest(arg0 interface
 }
 
 // DownloadDBLogFilePortionWithContext mocks base method
-func (m *MockRDSAPI) DownloadDBLogFilePortionWithContext(arg0 aws.Context, arg1 *rds.DownloadDBLogFilePortionInput, arg2 ...request.Option) (*rds.DownloadDBLogFilePortionOutput, error) {
+func (m *MockRDSAPI) DownloadDBLogFilePortionWithContext(arg0 context.Context, arg1 *rds.DownloadDBLogFilePortionInput, arg2 ...request.Option) (*rds.DownloadDBLogFilePortionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4276,7 +4276,7 @@ func (mr *MockRDSAPIMockRecorder) FailoverDBClusterRequest(arg0 interface{}) *go
 }
 
 // FailoverDBClusterWithContext mocks base method
-func (m *MockRDSAPI) FailoverDBClusterWithContext(arg0 aws.Context, arg1 *rds.FailoverDBClusterInput, arg2 ...request.Option) (*rds.FailoverDBClusterOutput, error) {
+func (m *MockRDSAPI) FailoverDBClusterWithContext(arg0 context.Context, arg1 *rds.FailoverDBClusterInput, arg2 ...request.Option) (*rds.FailoverDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4326,7 +4326,7 @@ func (mr *MockRDSAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockRDSAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *rds.ListTagsForResourceInput, arg2 ...request.Option) (*rds.ListTagsForResourceOutput, error) {
+func (m *MockRDSAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *rds.ListTagsForResourceInput, arg2 ...request.Option) (*rds.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4376,7 +4376,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyCurrentDBClusterCapacityRequest(arg0 int
 }
 
 // ModifyCurrentDBClusterCapacityWithContext mocks base method
-func (m *MockRDSAPI) ModifyCurrentDBClusterCapacityWithContext(arg0 aws.Context, arg1 *rds.ModifyCurrentDBClusterCapacityInput, arg2 ...request.Option) (*rds.ModifyCurrentDBClusterCapacityOutput, error) {
+func (m *MockRDSAPI) ModifyCurrentDBClusterCapacityWithContext(arg0 context.Context, arg1 *rds.ModifyCurrentDBClusterCapacityInput, arg2 ...request.Option) (*rds.ModifyCurrentDBClusterCapacityOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4441,7 +4441,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBClusterEndpointRequest(arg0 interface{
 }
 
 // ModifyDBClusterEndpointWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBClusterEndpointWithContext(arg0 aws.Context, arg1 *rds.ModifyDBClusterEndpointInput, arg2 ...request.Option) (*rds.ModifyDBClusterEndpointOutput, error) {
+func (m *MockRDSAPI) ModifyDBClusterEndpointWithContext(arg0 context.Context, arg1 *rds.ModifyDBClusterEndpointInput, arg2 ...request.Option) (*rds.ModifyDBClusterEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4491,7 +4491,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBClusterParameterGroupRequest(arg0 inte
 }
 
 // ModifyDBClusterParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *rds.ModifyDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.DBClusterParameterGroupNameMessage, error) {
+func (m *MockRDSAPI) ModifyDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *rds.ModifyDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.DBClusterParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4556,7 +4556,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBClusterSnapshotAttributeRequest(arg0 i
 }
 
 // ModifyDBClusterSnapshotAttributeWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBClusterSnapshotAttributeWithContext(arg0 aws.Context, arg1 *rds.ModifyDBClusterSnapshotAttributeInput, arg2 ...request.Option) (*rds.ModifyDBClusterSnapshotAttributeOutput, error) {
+func (m *MockRDSAPI) ModifyDBClusterSnapshotAttributeWithContext(arg0 context.Context, arg1 *rds.ModifyDBClusterSnapshotAttributeInput, arg2 ...request.Option) (*rds.ModifyDBClusterSnapshotAttributeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4576,7 +4576,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBClusterSnapshotAttributeWithContext(ar
 }
 
 // ModifyDBClusterWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBClusterWithContext(arg0 aws.Context, arg1 *rds.ModifyDBClusterInput, arg2 ...request.Option) (*rds.ModifyDBClusterOutput, error) {
+func (m *MockRDSAPI) ModifyDBClusterWithContext(arg0 context.Context, arg1 *rds.ModifyDBClusterInput, arg2 ...request.Option) (*rds.ModifyDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4626,7 +4626,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBInstanceRequest(arg0 interface{}) *gom
 }
 
 // ModifyDBInstanceWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBInstanceWithContext(arg0 aws.Context, arg1 *rds.ModifyDBInstanceInput, arg2 ...request.Option) (*rds.ModifyDBInstanceOutput, error) {
+func (m *MockRDSAPI) ModifyDBInstanceWithContext(arg0 context.Context, arg1 *rds.ModifyDBInstanceInput, arg2 ...request.Option) (*rds.ModifyDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4676,7 +4676,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBParameterGroupRequest(arg0 interface{}
 }
 
 // ModifyDBParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBParameterGroupWithContext(arg0 aws.Context, arg1 *rds.ModifyDBParameterGroupInput, arg2 ...request.Option) (*rds.DBParameterGroupNameMessage, error) {
+func (m *MockRDSAPI) ModifyDBParameterGroupWithContext(arg0 context.Context, arg1 *rds.ModifyDBParameterGroupInput, arg2 ...request.Option) (*rds.DBParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4741,7 +4741,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBSnapshotAttributeRequest(arg0 interfac
 }
 
 // ModifyDBSnapshotAttributeWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBSnapshotAttributeWithContext(arg0 aws.Context, arg1 *rds.ModifyDBSnapshotAttributeInput, arg2 ...request.Option) (*rds.ModifyDBSnapshotAttributeOutput, error) {
+func (m *MockRDSAPI) ModifyDBSnapshotAttributeWithContext(arg0 context.Context, arg1 *rds.ModifyDBSnapshotAttributeInput, arg2 ...request.Option) (*rds.ModifyDBSnapshotAttributeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4776,7 +4776,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBSnapshotRequest(arg0 interface{}) *gom
 }
 
 // ModifyDBSnapshotWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBSnapshotWithContext(arg0 aws.Context, arg1 *rds.ModifyDBSnapshotInput, arg2 ...request.Option) (*rds.ModifyDBSnapshotOutput, error) {
+func (m *MockRDSAPI) ModifyDBSnapshotWithContext(arg0 context.Context, arg1 *rds.ModifyDBSnapshotInput, arg2 ...request.Option) (*rds.ModifyDBSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4826,7 +4826,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyDBSubnetGroupRequest(arg0 interface{}) *
 }
 
 // ModifyDBSubnetGroupWithContext mocks base method
-func (m *MockRDSAPI) ModifyDBSubnetGroupWithContext(arg0 aws.Context, arg1 *rds.ModifyDBSubnetGroupInput, arg2 ...request.Option) (*rds.ModifyDBSubnetGroupOutput, error) {
+func (m *MockRDSAPI) ModifyDBSubnetGroupWithContext(arg0 context.Context, arg1 *rds.ModifyDBSubnetGroupInput, arg2 ...request.Option) (*rds.ModifyDBSubnetGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4876,7 +4876,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyEventSubscriptionRequest(arg0 interface{
 }
 
 // ModifyEventSubscriptionWithContext mocks base method
-func (m *MockRDSAPI) ModifyEventSubscriptionWithContext(arg0 aws.Context, arg1 *rds.ModifyEventSubscriptionInput, arg2 ...request.Option) (*rds.ModifyEventSubscriptionOutput, error) {
+func (m *MockRDSAPI) ModifyEventSubscriptionWithContext(arg0 context.Context, arg1 *rds.ModifyEventSubscriptionInput, arg2 ...request.Option) (*rds.ModifyEventSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4926,7 +4926,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyGlobalClusterRequest(arg0 interface{}) *
 }
 
 // ModifyGlobalClusterWithContext mocks base method
-func (m *MockRDSAPI) ModifyGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.ModifyGlobalClusterInput, arg2 ...request.Option) (*rds.ModifyGlobalClusterOutput, error) {
+func (m *MockRDSAPI) ModifyGlobalClusterWithContext(arg0 context.Context, arg1 *rds.ModifyGlobalClusterInput, arg2 ...request.Option) (*rds.ModifyGlobalClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -4976,7 +4976,7 @@ func (mr *MockRDSAPIMockRecorder) ModifyOptionGroupRequest(arg0 interface{}) *go
 }
 
 // ModifyOptionGroupWithContext mocks base method
-func (m *MockRDSAPI) ModifyOptionGroupWithContext(arg0 aws.Context, arg1 *rds.ModifyOptionGroupInput, arg2 ...request.Option) (*rds.ModifyOptionGroupOutput, error) {
+func (m *MockRDSAPI) ModifyOptionGroupWithContext(arg0 context.Context, arg1 *rds.ModifyOptionGroupInput, arg2 ...request.Option) (*rds.ModifyOptionGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5041,7 +5041,7 @@ func (mr *MockRDSAPIMockRecorder) PromoteReadReplicaDBClusterRequest(arg0 interf
 }
 
 // PromoteReadReplicaDBClusterWithContext mocks base method
-func (m *MockRDSAPI) PromoteReadReplicaDBClusterWithContext(arg0 aws.Context, arg1 *rds.PromoteReadReplicaDBClusterInput, arg2 ...request.Option) (*rds.PromoteReadReplicaDBClusterOutput, error) {
+func (m *MockRDSAPI) PromoteReadReplicaDBClusterWithContext(arg0 context.Context, arg1 *rds.PromoteReadReplicaDBClusterInput, arg2 ...request.Option) (*rds.PromoteReadReplicaDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5076,7 +5076,7 @@ func (mr *MockRDSAPIMockRecorder) PromoteReadReplicaRequest(arg0 interface{}) *g
 }
 
 // PromoteReadReplicaWithContext mocks base method
-func (m *MockRDSAPI) PromoteReadReplicaWithContext(arg0 aws.Context, arg1 *rds.PromoteReadReplicaInput, arg2 ...request.Option) (*rds.PromoteReadReplicaOutput, error) {
+func (m *MockRDSAPI) PromoteReadReplicaWithContext(arg0 context.Context, arg1 *rds.PromoteReadReplicaInput, arg2 ...request.Option) (*rds.PromoteReadReplicaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5126,7 +5126,7 @@ func (mr *MockRDSAPIMockRecorder) PurchaseReservedDBInstancesOfferingRequest(arg
 }
 
 // PurchaseReservedDBInstancesOfferingWithContext mocks base method
-func (m *MockRDSAPI) PurchaseReservedDBInstancesOfferingWithContext(arg0 aws.Context, arg1 *rds.PurchaseReservedDBInstancesOfferingInput, arg2 ...request.Option) (*rds.PurchaseReservedDBInstancesOfferingOutput, error) {
+func (m *MockRDSAPI) PurchaseReservedDBInstancesOfferingWithContext(arg0 context.Context, arg1 *rds.PurchaseReservedDBInstancesOfferingInput, arg2 ...request.Option) (*rds.PurchaseReservedDBInstancesOfferingOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5176,7 +5176,7 @@ func (mr *MockRDSAPIMockRecorder) RebootDBInstanceRequest(arg0 interface{}) *gom
 }
 
 // RebootDBInstanceWithContext mocks base method
-func (m *MockRDSAPI) RebootDBInstanceWithContext(arg0 aws.Context, arg1 *rds.RebootDBInstanceInput, arg2 ...request.Option) (*rds.RebootDBInstanceOutput, error) {
+func (m *MockRDSAPI) RebootDBInstanceWithContext(arg0 context.Context, arg1 *rds.RebootDBInstanceInput, arg2 ...request.Option) (*rds.RebootDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5226,7 +5226,7 @@ func (mr *MockRDSAPIMockRecorder) RemoveFromGlobalClusterRequest(arg0 interface{
 }
 
 // RemoveFromGlobalClusterWithContext mocks base method
-func (m *MockRDSAPI) RemoveFromGlobalClusterWithContext(arg0 aws.Context, arg1 *rds.RemoveFromGlobalClusterInput, arg2 ...request.Option) (*rds.RemoveFromGlobalClusterOutput, error) {
+func (m *MockRDSAPI) RemoveFromGlobalClusterWithContext(arg0 context.Context, arg1 *rds.RemoveFromGlobalClusterInput, arg2 ...request.Option) (*rds.RemoveFromGlobalClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5276,7 +5276,7 @@ func (mr *MockRDSAPIMockRecorder) RemoveRoleFromDBClusterRequest(arg0 interface{
 }
 
 // RemoveRoleFromDBClusterWithContext mocks base method
-func (m *MockRDSAPI) RemoveRoleFromDBClusterWithContext(arg0 aws.Context, arg1 *rds.RemoveRoleFromDBClusterInput, arg2 ...request.Option) (*rds.RemoveRoleFromDBClusterOutput, error) {
+func (m *MockRDSAPI) RemoveRoleFromDBClusterWithContext(arg0 context.Context, arg1 *rds.RemoveRoleFromDBClusterInput, arg2 ...request.Option) (*rds.RemoveRoleFromDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5326,7 +5326,7 @@ func (mr *MockRDSAPIMockRecorder) RemoveSourceIdentifierFromSubscriptionRequest(
 }
 
 // RemoveSourceIdentifierFromSubscriptionWithContext mocks base method
-func (m *MockRDSAPI) RemoveSourceIdentifierFromSubscriptionWithContext(arg0 aws.Context, arg1 *rds.RemoveSourceIdentifierFromSubscriptionInput, arg2 ...request.Option) (*rds.RemoveSourceIdentifierFromSubscriptionOutput, error) {
+func (m *MockRDSAPI) RemoveSourceIdentifierFromSubscriptionWithContext(arg0 context.Context, arg1 *rds.RemoveSourceIdentifierFromSubscriptionInput, arg2 ...request.Option) (*rds.RemoveSourceIdentifierFromSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5376,7 +5376,7 @@ func (mr *MockRDSAPIMockRecorder) RemoveTagsFromResourceRequest(arg0 interface{}
 }
 
 // RemoveTagsFromResourceWithContext mocks base method
-func (m *MockRDSAPI) RemoveTagsFromResourceWithContext(arg0 aws.Context, arg1 *rds.RemoveTagsFromResourceInput, arg2 ...request.Option) (*rds.RemoveTagsFromResourceOutput, error) {
+func (m *MockRDSAPI) RemoveTagsFromResourceWithContext(arg0 context.Context, arg1 *rds.RemoveTagsFromResourceInput, arg2 ...request.Option) (*rds.RemoveTagsFromResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5426,7 +5426,7 @@ func (mr *MockRDSAPIMockRecorder) ResetDBClusterParameterGroupRequest(arg0 inter
 }
 
 // ResetDBClusterParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) ResetDBClusterParameterGroupWithContext(arg0 aws.Context, arg1 *rds.ResetDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.DBClusterParameterGroupNameMessage, error) {
+func (m *MockRDSAPI) ResetDBClusterParameterGroupWithContext(arg0 context.Context, arg1 *rds.ResetDBClusterParameterGroupInput, arg2 ...request.Option) (*rds.DBClusterParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5476,7 +5476,7 @@ func (mr *MockRDSAPIMockRecorder) ResetDBParameterGroupRequest(arg0 interface{})
 }
 
 // ResetDBParameterGroupWithContext mocks base method
-func (m *MockRDSAPI) ResetDBParameterGroupWithContext(arg0 aws.Context, arg1 *rds.ResetDBParameterGroupInput, arg2 ...request.Option) (*rds.DBParameterGroupNameMessage, error) {
+func (m *MockRDSAPI) ResetDBParameterGroupWithContext(arg0 context.Context, arg1 *rds.ResetDBParameterGroupInput, arg2 ...request.Option) (*rds.DBParameterGroupNameMessage, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5526,7 +5526,7 @@ func (mr *MockRDSAPIMockRecorder) RestoreDBClusterFromS3Request(arg0 interface{}
 }
 
 // RestoreDBClusterFromS3WithContext mocks base method
-func (m *MockRDSAPI) RestoreDBClusterFromS3WithContext(arg0 aws.Context, arg1 *rds.RestoreDBClusterFromS3Input, arg2 ...request.Option) (*rds.RestoreDBClusterFromS3Output, error) {
+func (m *MockRDSAPI) RestoreDBClusterFromS3WithContext(arg0 context.Context, arg1 *rds.RestoreDBClusterFromS3Input, arg2 ...request.Option) (*rds.RestoreDBClusterFromS3Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5576,7 +5576,7 @@ func (mr *MockRDSAPIMockRecorder) RestoreDBClusterFromSnapshotRequest(arg0 inter
 }
 
 // RestoreDBClusterFromSnapshotWithContext mocks base method
-func (m *MockRDSAPI) RestoreDBClusterFromSnapshotWithContext(arg0 aws.Context, arg1 *rds.RestoreDBClusterFromSnapshotInput, arg2 ...request.Option) (*rds.RestoreDBClusterFromSnapshotOutput, error) {
+func (m *MockRDSAPI) RestoreDBClusterFromSnapshotWithContext(arg0 context.Context, arg1 *rds.RestoreDBClusterFromSnapshotInput, arg2 ...request.Option) (*rds.RestoreDBClusterFromSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5626,7 +5626,7 @@ func (mr *MockRDSAPIMockRecorder) RestoreDBClusterToPointInTimeRequest(arg0 inte
 }
 
 // RestoreDBClusterToPointInTimeWithContext mocks base method
-func (m *MockRDSAPI) RestoreDBClusterToPointInTimeWithContext(arg0 aws.Context, arg1 *rds.RestoreDBClusterToPointInTimeInput, arg2 ...request.Option) (*rds.RestoreDBClusterToPointInTimeOutput, error) {
+func (m *MockRDSAPI) RestoreDBClusterToPointInTimeWithContext(arg0 context.Context, arg1 *rds.RestoreDBClusterToPointInTimeInput, arg2 ...request.Option) (*rds.RestoreDBClusterToPointInTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5676,7 +5676,7 @@ func (mr *MockRDSAPIMockRecorder) RestoreDBInstanceFromDBSnapshotRequest(arg0 in
 }
 
 // RestoreDBInstanceFromDBSnapshotWithContext mocks base method
-func (m *MockRDSAPI) RestoreDBInstanceFromDBSnapshotWithContext(arg0 aws.Context, arg1 *rds.RestoreDBInstanceFromDBSnapshotInput, arg2 ...request.Option) (*rds.RestoreDBInstanceFromDBSnapshotOutput, error) {
+func (m *MockRDSAPI) RestoreDBInstanceFromDBSnapshotWithContext(arg0 context.Context, arg1 *rds.RestoreDBInstanceFromDBSnapshotInput, arg2 ...request.Option) (*rds.RestoreDBInstanceFromDBSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5726,7 +5726,7 @@ func (mr *MockRDSAPIMockRecorder) RestoreDBInstanceFromS3Request(arg0 interface{
 }
 
 // RestoreDBInstanceFromS3WithContext mocks base method
-func (m *MockRDSAPI) RestoreDBInstanceFromS3WithContext(arg0 aws.Context, arg1 *rds.RestoreDBInstanceFromS3Input, arg2 ...request.Option) (*rds.RestoreDBInstanceFromS3Output, error) {
+func (m *MockRDSAPI) RestoreDBInstanceFromS3WithContext(arg0 context.Context, arg1 *rds.RestoreDBInstanceFromS3Input, arg2 ...request.Option) (*rds.RestoreDBInstanceFromS3Output, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5776,7 +5776,7 @@ func (mr *MockRDSAPIMockRecorder) RestoreDBInstanceToPointInTimeRequest(arg0 int
 }
 
 // RestoreDBInstanceToPointInTimeWithContext mocks base method
-func (m *MockRDSAPI) RestoreDBInstanceToPointInTimeWithContext(arg0 aws.Context, arg1 *rds.RestoreDBInstanceToPointInTimeInput, arg2 ...request.Option) (*rds.RestoreDBInstanceToPointInTimeOutput, error) {
+func (m *MockRDSAPI) RestoreDBInstanceToPointInTimeWithContext(arg0 context.Context, arg1 *rds.RestoreDBInstanceToPointInTimeInput, arg2 ...request.Option) (*rds.RestoreDBInstanceToPointInTimeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5826,7 +5826,7 @@ func (mr *MockRDSAPIMockRecorder) RevokeDBSecurityGroupIngressRequest(arg0 inter
 }
 
 // RevokeDBSecurityGroupIngressWithContext mocks base method
-func (m *MockRDSAPI) RevokeDBSecurityGroupIngressWithContext(arg0 aws.Context, arg1 *rds.RevokeDBSecurityGroupIngressInput, arg2 ...request.Option) (*rds.RevokeDBSecurityGroupIngressOutput, error) {
+func (m *MockRDSAPI) RevokeDBSecurityGroupIngressWithContext(arg0 context.Context, arg1 *rds.RevokeDBSecurityGroupIngressInput, arg2 ...request.Option) (*rds.RevokeDBSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5876,7 +5876,7 @@ func (mr *MockRDSAPIMockRecorder) StartDBClusterRequest(arg0 interface{}) *gomoc
 }
 
 // StartDBClusterWithContext mocks base method
-func (m *MockRDSAPI) StartDBClusterWithContext(arg0 aws.Context, arg1 *rds.StartDBClusterInput, arg2 ...request.Option) (*rds.StartDBClusterOutput, error) {
+func (m *MockRDSAPI) StartDBClusterWithContext(arg0 context.Context, arg1 *rds.StartDBClusterInput, arg2 ...request.Option) (*rds.StartDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5926,7 +5926,7 @@ func (mr *MockRDSAPIMockRecorder) StartDBInstanceRequest(arg0 interface{}) *gomo
 }
 
 // StartDBInstanceWithContext mocks base method
-func (m *MockRDSAPI) StartDBInstanceWithContext(arg0 aws.Context, arg1 *rds.StartDBInstanceInput, arg2 ...request.Option) (*rds.StartDBInstanceOutput, error) {
+func (m *MockRDSAPI) StartDBInstanceWithContext(arg0 context.Context, arg1 *rds.StartDBInstanceInput, arg2 ...request.Option) (*rds.StartDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -5976,7 +5976,7 @@ func (mr *MockRDSAPIMockRecorder) StopDBClusterRequest(arg0 interface{}) *gomock
 }
 
 // StopDBClusterWithContext mocks base method
-func (m *MockRDSAPI) StopDBClusterWithContext(arg0 aws.Context, arg1 *rds.StopDBClusterInput, arg2 ...request.Option) (*rds.StopDBClusterOutput, error) {
+func (m *MockRDSAPI) StopDBClusterWithContext(arg0 context.Context, arg1 *rds.StopDBClusterInput, arg2 ...request.Option) (*rds.StopDBClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6026,7 +6026,7 @@ func (mr *MockRDSAPIMockRecorder) StopDBInstanceRequest(arg0 interface{}) *gomoc
 }
 
 // StopDBInstanceWithContext mocks base method
-func (m *MockRDSAPI) StopDBInstanceWithContext(arg0 aws.Context, arg1 *rds.StopDBInstanceInput, arg2 ...request.Option) (*rds.StopDBInstanceOutput, error) {
+func (m *MockRDSAPI) StopDBInstanceWithContext(arg0 context.Context, arg1 *rds.StopDBInstanceInput, arg2 ...request.Option) (*rds.StopDBInstanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6060,7 +6060,7 @@ func (mr *MockRDSAPIMockRecorder) WaitUntilDBInstanceAvailable(arg0 interface{})
 }
 
 // WaitUntilDBInstanceAvailableWithContext mocks base method
-func (m *MockRDSAPI) WaitUntilDBInstanceAvailableWithContext(arg0 aws.Context, arg1 *rds.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockRDSAPI) WaitUntilDBInstanceAvailableWithContext(arg0 context.Context, arg1 *rds.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6093,7 +6093,7 @@ func (mr *MockRDSAPIMockRecorder) WaitUntilDBInstanceDeleted(arg0 interface{}) *
 }
 
 // WaitUntilDBInstanceDeletedWithContext mocks base method
-func (m *MockRDSAPI) WaitUntilDBInstanceDeletedWithContext(arg0 aws.Context, arg1 *rds.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
+func (m *MockRDSAPI) WaitUntilDBInstanceDeletedWithContext(arg0 context.Context, arg1 *rds.DescribeDBInstancesInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6126,7 +6126,7 @@ func (mr *MockRDSAPIMockRecorder) WaitUntilDBSnapshotAvailable(arg0 interface{})
 }
 
 // WaitUntilDBSnapshotAvailableWithContext mocks base method
-func (m *MockRDSAPI) WaitUntilDBSnapshotAvailableWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 ...request.WaiterOption) error {
+func (m *MockRDSAPI) WaitUntilDBSnapshotAvailableWithContext(arg0 context.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -6159,7 +6159,7 @@ func (mr *MockRDSAPIMockRecorder) WaitUntilDBSnapshotDeleted(arg0 interface{}) *
 }
 
 // WaitUntilDBSnapshotDeletedWithContext mocks base method
-func (m *MockRDSAPI) WaitUntilDBSnapshotDeletedWithContext(arg0 aws.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 ...request.WaiterOption) error {
+func (m *MockRDSAPI) WaitUntilDBSnapshotDeletedWithContext(arg0 context.Context, arg1 *rds.DescribeDBSnapshotsInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

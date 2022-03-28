@@ -5,7 +5,7 @@
 package opsworkscmmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	opsworkscm "github.com/aws/aws-sdk-go/service/opsworkscm"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) AssociateNodeRequest(arg0 interface{}) 
 }
 
 // AssociateNodeWithContext mocks base method
-func (m *MockOpsWorksCMAPI) AssociateNodeWithContext(arg0 aws.Context, arg1 *opsworkscm.AssociateNodeInput, arg2 ...request.Option) (*opsworkscm.AssociateNodeOutput, error) {
+func (m *MockOpsWorksCMAPI) AssociateNodeWithContext(arg0 context.Context, arg1 *opsworkscm.AssociateNodeInput, arg2 ...request.Option) (*opsworkscm.AssociateNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) CreateBackupRequest(arg0 interface{}) *
 }
 
 // CreateBackupWithContext mocks base method
-func (m *MockOpsWorksCMAPI) CreateBackupWithContext(arg0 aws.Context, arg1 *opsworkscm.CreateBackupInput, arg2 ...request.Option) (*opsworkscm.CreateBackupOutput, error) {
+func (m *MockOpsWorksCMAPI) CreateBackupWithContext(arg0 context.Context, arg1 *opsworkscm.CreateBackupInput, arg2 ...request.Option) (*opsworkscm.CreateBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) CreateServerRequest(arg0 interface{}) *
 }
 
 // CreateServerWithContext mocks base method
-func (m *MockOpsWorksCMAPI) CreateServerWithContext(arg0 aws.Context, arg1 *opsworkscm.CreateServerInput, arg2 ...request.Option) (*opsworkscm.CreateServerOutput, error) {
+func (m *MockOpsWorksCMAPI) CreateServerWithContext(arg0 context.Context, arg1 *opsworkscm.CreateServerInput, arg2 ...request.Option) (*opsworkscm.CreateServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DeleteBackupRequest(arg0 interface{}) *
 }
 
 // DeleteBackupWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DeleteBackupWithContext(arg0 aws.Context, arg1 *opsworkscm.DeleteBackupInput, arg2 ...request.Option) (*opsworkscm.DeleteBackupOutput, error) {
+func (m *MockOpsWorksCMAPI) DeleteBackupWithContext(arg0 context.Context, arg1 *opsworkscm.DeleteBackupInput, arg2 ...request.Option) (*opsworkscm.DeleteBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DeleteServerRequest(arg0 interface{}) *
 }
 
 // DeleteServerWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DeleteServerWithContext(arg0 aws.Context, arg1 *opsworkscm.DeleteServerInput, arg2 ...request.Option) (*opsworkscm.DeleteServerOutput, error) {
+func (m *MockOpsWorksCMAPI) DeleteServerWithContext(arg0 context.Context, arg1 *opsworkscm.DeleteServerInput, arg2 ...request.Option) (*opsworkscm.DeleteServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DescribeAccountAttributesRequest(arg0 i
 }
 
 // DescribeAccountAttributesWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DescribeAccountAttributesWithContext(arg0 aws.Context, arg1 *opsworkscm.DescribeAccountAttributesInput, arg2 ...request.Option) (*opsworkscm.DescribeAccountAttributesOutput, error) {
+func (m *MockOpsWorksCMAPI) DescribeAccountAttributesWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeAccountAttributesInput, arg2 ...request.Option) (*opsworkscm.DescribeAccountAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DescribeBackupsRequest(arg0 interface{}
 }
 
 // DescribeBackupsWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DescribeBackupsWithContext(arg0 aws.Context, arg1 *opsworkscm.DescribeBackupsInput, arg2 ...request.Option) (*opsworkscm.DescribeBackupsOutput, error) {
+func (m *MockOpsWorksCMAPI) DescribeBackupsWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeBackupsInput, arg2 ...request.Option) (*opsworkscm.DescribeBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DescribeEventsRequest(arg0 interface{})
 }
 
 // DescribeEventsWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DescribeEventsWithContext(arg0 aws.Context, arg1 *opsworkscm.DescribeEventsInput, arg2 ...request.Option) (*opsworkscm.DescribeEventsOutput, error) {
+func (m *MockOpsWorksCMAPI) DescribeEventsWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeEventsInput, arg2 ...request.Option) (*opsworkscm.DescribeEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DescribeNodeAssociationStatusRequest(ar
 }
 
 // DescribeNodeAssociationStatusWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DescribeNodeAssociationStatusWithContext(arg0 aws.Context, arg1 *opsworkscm.DescribeNodeAssociationStatusInput, arg2 ...request.Option) (*opsworkscm.DescribeNodeAssociationStatusOutput, error) {
+func (m *MockOpsWorksCMAPI) DescribeNodeAssociationStatusWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeNodeAssociationStatusInput, arg2 ...request.Option) (*opsworkscm.DescribeNodeAssociationStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DescribeServersRequest(arg0 interface{}
 }
 
 // DescribeServersWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DescribeServersWithContext(arg0 aws.Context, arg1 *opsworkscm.DescribeServersInput, arg2 ...request.Option) (*opsworkscm.DescribeServersOutput, error) {
+func (m *MockOpsWorksCMAPI) DescribeServersWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeServersInput, arg2 ...request.Option) (*opsworkscm.DescribeServersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DisassociateNodeRequest(arg0 interface{
 }
 
 // DisassociateNodeWithContext mocks base method
-func (m *MockOpsWorksCMAPI) DisassociateNodeWithContext(arg0 aws.Context, arg1 *opsworkscm.DisassociateNodeInput, arg2 ...request.Option) (*opsworkscm.DisassociateNodeOutput, error) {
+func (m *MockOpsWorksCMAPI) DisassociateNodeWithContext(arg0 context.Context, arg1 *opsworkscm.DisassociateNodeInput, arg2 ...request.Option) (*opsworkscm.DisassociateNodeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) ExportServerEngineAttributeRequest(arg0
 }
 
 // ExportServerEngineAttributeWithContext mocks base method
-func (m *MockOpsWorksCMAPI) ExportServerEngineAttributeWithContext(arg0 aws.Context, arg1 *opsworkscm.ExportServerEngineAttributeInput, arg2 ...request.Option) (*opsworkscm.ExportServerEngineAttributeOutput, error) {
+func (m *MockOpsWorksCMAPI) ExportServerEngineAttributeWithContext(arg0 context.Context, arg1 *opsworkscm.ExportServerEngineAttributeInput, arg2 ...request.Option) (*opsworkscm.ExportServerEngineAttributeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) RestoreServerRequest(arg0 interface{}) 
 }
 
 // RestoreServerWithContext mocks base method
-func (m *MockOpsWorksCMAPI) RestoreServerWithContext(arg0 aws.Context, arg1 *opsworkscm.RestoreServerInput, arg2 ...request.Option) (*opsworkscm.RestoreServerOutput, error) {
+func (m *MockOpsWorksCMAPI) RestoreServerWithContext(arg0 context.Context, arg1 *opsworkscm.RestoreServerInput, arg2 ...request.Option) (*opsworkscm.RestoreServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) StartMaintenanceRequest(arg0 interface{
 }
 
 // StartMaintenanceWithContext mocks base method
-func (m *MockOpsWorksCMAPI) StartMaintenanceWithContext(arg0 aws.Context, arg1 *opsworkscm.StartMaintenanceInput, arg2 ...request.Option) (*opsworkscm.StartMaintenanceOutput, error) {
+func (m *MockOpsWorksCMAPI) StartMaintenanceWithContext(arg0 context.Context, arg1 *opsworkscm.StartMaintenanceInput, arg2 ...request.Option) (*opsworkscm.StartMaintenanceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) UpdateServerEngineAttributesRequest(arg
 }
 
 // UpdateServerEngineAttributesWithContext mocks base method
-func (m *MockOpsWorksCMAPI) UpdateServerEngineAttributesWithContext(arg0 aws.Context, arg1 *opsworkscm.UpdateServerEngineAttributesInput, arg2 ...request.Option) (*opsworkscm.UpdateServerEngineAttributesOutput, error) {
+func (m *MockOpsWorksCMAPI) UpdateServerEngineAttributesWithContext(arg0 context.Context, arg1 *opsworkscm.UpdateServerEngineAttributesInput, arg2 ...request.Option) (*opsworkscm.UpdateServerEngineAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) UpdateServerRequest(arg0 interface{}) *
 }
 
 // UpdateServerWithContext mocks base method
-func (m *MockOpsWorksCMAPI) UpdateServerWithContext(arg0 aws.Context, arg1 *opsworkscm.UpdateServerInput, arg2 ...request.Option) (*opsworkscm.UpdateServerOutput, error) {
+func (m *MockOpsWorksCMAPI) UpdateServerWithContext(arg0 context.Context, arg1 *opsworkscm.UpdateServerInput, arg2 ...request.Option) (*opsworkscm.UpdateServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -850,7 +850,7 @@ func (mr *MockOpsWorksCMAPIMockRecorder) WaitUntilNodeAssociated(arg0 interface{
 }
 
 // WaitUntilNodeAssociatedWithContext mocks base method
-func (m *MockOpsWorksCMAPI) WaitUntilNodeAssociatedWithContext(arg0 aws.Context, arg1 *opsworkscm.DescribeNodeAssociationStatusInput, arg2 ...request.WaiterOption) error {
+func (m *MockOpsWorksCMAPI) WaitUntilNodeAssociatedWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeNodeAssociationStatusInput, arg2 ...request.WaiterOption) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

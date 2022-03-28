@@ -5,7 +5,7 @@
 package kinesisanalyticsv2mock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	kinesisanalyticsv2 "github.com/aws/aws-sdk-go/service/kinesisanalyticsv2"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationCloudWatchLogging
 }
 
 // AddApplicationCloudWatchLoggingOptionWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) AddApplicationCloudWatchLoggingOptionWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.AddApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationCloudWatchLoggingOptionOutput, error) {
+func (m *MockKinesisAnalyticsV2API) AddApplicationCloudWatchLoggingOptionWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.AddApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationCloudWatchLoggingOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -131,7 +131,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationInputProcessingCo
 }
 
 // AddApplicationInputProcessingConfigurationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) AddApplicationInputProcessingConfigurationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.AddApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationInputProcessingConfigurationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) AddApplicationInputProcessingConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.AddApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationInputProcessingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationInputRequest(arg0
 }
 
 // AddApplicationInputWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) AddApplicationInputWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.AddApplicationInputInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationInputOutput, error) {
+func (m *MockKinesisAnalyticsV2API) AddApplicationInputWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.AddApplicationInputInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationInputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationOutputRequest(arg
 }
 
 // AddApplicationOutputWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) AddApplicationOutputWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.AddApplicationOutputInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationOutputOutput, error) {
+func (m *MockKinesisAnalyticsV2API) AddApplicationOutputWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.AddApplicationOutputInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) AddApplicationReferenceDataSour
 }
 
 // AddApplicationReferenceDataSourceWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) AddApplicationReferenceDataSourceWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.AddApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationReferenceDataSourceOutput, error) {
+func (m *MockKinesisAnalyticsV2API) AddApplicationReferenceDataSourceWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.AddApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalyticsv2.AddApplicationReferenceDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -346,7 +346,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) CreateApplicationSnapshotReques
 }
 
 // CreateApplicationSnapshotWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) CreateApplicationSnapshotWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.CreateApplicationSnapshotInput, arg2 ...request.Option) (*kinesisanalyticsv2.CreateApplicationSnapshotOutput, error) {
+func (m *MockKinesisAnalyticsV2API) CreateApplicationSnapshotWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.CreateApplicationSnapshotInput, arg2 ...request.Option) (*kinesisanalyticsv2.CreateApplicationSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) CreateApplicationSnapshotWithCo
 }
 
 // CreateApplicationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) CreateApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.CreateApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.CreateApplicationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) CreateApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.CreateApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -431,7 +431,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationCloudWatchLogg
 }
 
 // DeleteApplicationCloudWatchLoggingOptionWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DeleteApplicationCloudWatchLoggingOptionWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DeleteApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationCloudWatchLoggingOptionOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationCloudWatchLoggingOptionWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationCloudWatchLoggingOptionInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationCloudWatchLoggingOptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -481,7 +481,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationInputProcessin
 }
 
 // DeleteApplicationInputProcessingConfigurationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DeleteApplicationInputProcessingConfigurationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DeleteApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationInputProcessingConfigurationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationInputProcessingConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationInputProcessingConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationInputProcessingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationOutputRequest(
 }
 
 // DeleteApplicationOutputWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DeleteApplicationOutputWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DeleteApplicationOutputInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationOutputOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationOutputWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationOutputInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationOutputOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationReferenceDataS
 }
 
 // DeleteApplicationReferenceDataSourceWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DeleteApplicationReferenceDataSourceWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DeleteApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationReferenceDataSourceOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationReferenceDataSourceWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationReferenceDataSourceInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationReferenceDataSourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -646,7 +646,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationSnapshotReques
 }
 
 // DeleteApplicationSnapshotWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DeleteApplicationSnapshotWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DeleteApplicationSnapshotInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationSnapshotOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationSnapshotWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationSnapshotInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DeleteApplicationSnapshotWithCo
 }
 
 // DeleteApplicationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DeleteApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DeleteApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DeleteApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DeleteApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DeleteApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -746,7 +746,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DescribeApplicationSnapshotRequ
 }
 
 // DescribeApplicationSnapshotWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DescribeApplicationSnapshotWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DescribeApplicationSnapshotInput, arg2 ...request.Option) (*kinesisanalyticsv2.DescribeApplicationSnapshotOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DescribeApplicationSnapshotWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DescribeApplicationSnapshotInput, arg2 ...request.Option) (*kinesisanalyticsv2.DescribeApplicationSnapshotOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DescribeApplicationSnapshotWith
 }
 
 // DescribeApplicationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DescribeApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DescribeApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DescribeApplicationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DescribeApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DescribeApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DescribeApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DiscoverInputSchemaRequest(arg0
 }
 
 // DiscoverInputSchemaWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) DiscoverInputSchemaWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.DiscoverInputSchemaInput, arg2 ...request.Option) (*kinesisanalyticsv2.DiscoverInputSchemaOutput, error) {
+func (m *MockKinesisAnalyticsV2API) DiscoverInputSchemaWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DiscoverInputSchemaInput, arg2 ...request.Option) (*kinesisanalyticsv2.DiscoverInputSchemaOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationSnapshotsRequest
 }
 
 // ListApplicationSnapshotsWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) ListApplicationSnapshotsWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.ListApplicationSnapshotsInput, arg2 ...request.Option) (*kinesisanalyticsv2.ListApplicationSnapshotsOutput, error) {
+func (m *MockKinesisAnalyticsV2API) ListApplicationSnapshotsWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationSnapshotsInput, arg2 ...request.Option) (*kinesisanalyticsv2.ListApplicationSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationsRequest(arg0 in
 }
 
 // ListApplicationsWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) ListApplicationsWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.ListApplicationsInput, arg2 ...request.Option) (*kinesisanalyticsv2.ListApplicationsOutput, error) {
+func (m *MockKinesisAnalyticsV2API) ListApplicationsWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationsInput, arg2 ...request.Option) (*kinesisanalyticsv2.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -966,7 +966,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) StartApplicationRequest(arg0 in
 }
 
 // StartApplicationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) StartApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.StartApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.StartApplicationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) StartApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.StartApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.StartApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1016,7 +1016,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) StopApplicationRequest(arg0 int
 }
 
 // StopApplicationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) StopApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.StopApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.StopApplicationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) StopApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.StopApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.StopApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1066,7 +1066,7 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) UpdateApplicationRequest(arg0 i
 }
 
 // UpdateApplicationWithContext mocks base method
-func (m *MockKinesisAnalyticsV2API) UpdateApplicationWithContext(arg0 aws.Context, arg1 *kinesisanalyticsv2.UpdateApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.UpdateApplicationOutput, error) {
+func (m *MockKinesisAnalyticsV2API) UpdateApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.UpdateApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

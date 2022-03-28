@@ -5,7 +5,7 @@
 package resourcegroupstaggingapimock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	resourcegroupstaggingapi "github.com/aws/aws-sdk-go/service/resourcegroupstaggingapi"
 	gomock "github.com/golang/mock/gomock"
@@ -65,7 +65,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) GetResourcesPages(arg0, a
 }
 
 // GetResourcesPagesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) GetResourcesPagesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.GetResourcesInput, arg2 func(*resourcegroupstaggingapi.GetResourcesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockResourceGroupsTaggingAPIAPI) GetResourcesPagesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.GetResourcesInput, arg2 func(*resourcegroupstaggingapi.GetResourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -99,7 +99,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) GetResourcesRequest(arg0 
 }
 
 // GetResourcesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) GetResourcesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.GetResourcesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.GetResourcesOutput, error) {
+func (m *MockResourceGroupsTaggingAPIAPI) GetResourcesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.GetResourcesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.GetResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -148,7 +148,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) GetTagKeysPages(arg0, arg
 }
 
 // GetTagKeysPagesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) GetTagKeysPagesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.GetTagKeysInput, arg2 func(*resourcegroupstaggingapi.GetTagKeysOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockResourceGroupsTaggingAPIAPI) GetTagKeysPagesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.GetTagKeysInput, arg2 func(*resourcegroupstaggingapi.GetTagKeysOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -182,7 +182,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) GetTagKeysRequest(arg0 in
 }
 
 // GetTagKeysWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) GetTagKeysWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.GetTagKeysInput, arg2 ...request.Option) (*resourcegroupstaggingapi.GetTagKeysOutput, error) {
+func (m *MockResourceGroupsTaggingAPIAPI) GetTagKeysWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.GetTagKeysInput, arg2 ...request.Option) (*resourcegroupstaggingapi.GetTagKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) GetTagValuesPages(arg0, a
 }
 
 // GetTagValuesPagesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) GetTagValuesPagesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.GetTagValuesInput, arg2 func(*resourcegroupstaggingapi.GetTagValuesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockResourceGroupsTaggingAPIAPI) GetTagValuesPagesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.GetTagValuesInput, arg2 func(*resourcegroupstaggingapi.GetTagValuesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -265,7 +265,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) GetTagValuesRequest(arg0 
 }
 
 // GetTagValuesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) GetTagValuesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.GetTagValuesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.GetTagValuesOutput, error) {
+func (m *MockResourceGroupsTaggingAPIAPI) GetTagValuesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.GetTagValuesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.GetTagValuesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -315,7 +315,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) TagResourcesRequest(arg0 
 }
 
 // TagResourcesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) TagResourcesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.TagResourcesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.TagResourcesOutput, error) {
+func (m *MockResourceGroupsTaggingAPIAPI) TagResourcesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.TagResourcesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.TagResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockResourceGroupsTaggingAPIAPIMockRecorder) UntagResourcesRequest(arg
 }
 
 // UntagResourcesWithContext mocks base method
-func (m *MockResourceGroupsTaggingAPIAPI) UntagResourcesWithContext(arg0 aws.Context, arg1 *resourcegroupstaggingapi.UntagResourcesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.UntagResourcesOutput, error) {
+func (m *MockResourceGroupsTaggingAPIAPI) UntagResourcesWithContext(arg0 context.Context, arg1 *resourcegroupstaggingapi.UntagResourcesInput, arg2 ...request.Option) (*resourcegroupstaggingapi.UntagResourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

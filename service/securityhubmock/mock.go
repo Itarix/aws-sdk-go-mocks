@@ -5,7 +5,7 @@
 package securityhubmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	securityhub "github.com/aws/aws-sdk-go/service/securityhub"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSecurityHubAPIMockRecorder) AcceptInvitationRequest(arg0 interface
 }
 
 // AcceptInvitationWithContext mocks base method
-func (m *MockSecurityHubAPI) AcceptInvitationWithContext(arg0 aws.Context, arg1 *securityhub.AcceptInvitationInput, arg2 ...request.Option) (*securityhub.AcceptInvitationOutput, error) {
+func (m *MockSecurityHubAPI) AcceptInvitationWithContext(arg0 context.Context, arg1 *securityhub.AcceptInvitationInput, arg2 ...request.Option) (*securityhub.AcceptInvitationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSecurityHubAPIMockRecorder) BatchDisableStandardsRequest(arg0 inte
 }
 
 // BatchDisableStandardsWithContext mocks base method
-func (m *MockSecurityHubAPI) BatchDisableStandardsWithContext(arg0 aws.Context, arg1 *securityhub.BatchDisableStandardsInput, arg2 ...request.Option) (*securityhub.BatchDisableStandardsOutput, error) {
+func (m *MockSecurityHubAPI) BatchDisableStandardsWithContext(arg0 context.Context, arg1 *securityhub.BatchDisableStandardsInput, arg2 ...request.Option) (*securityhub.BatchDisableStandardsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockSecurityHubAPIMockRecorder) BatchEnableStandardsRequest(arg0 inter
 }
 
 // BatchEnableStandardsWithContext mocks base method
-func (m *MockSecurityHubAPI) BatchEnableStandardsWithContext(arg0 aws.Context, arg1 *securityhub.BatchEnableStandardsInput, arg2 ...request.Option) (*securityhub.BatchEnableStandardsOutput, error) {
+func (m *MockSecurityHubAPI) BatchEnableStandardsWithContext(arg0 context.Context, arg1 *securityhub.BatchEnableStandardsInput, arg2 ...request.Option) (*securityhub.BatchEnableStandardsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockSecurityHubAPIMockRecorder) BatchImportFindingsRequest(arg0 interf
 }
 
 // BatchImportFindingsWithContext mocks base method
-func (m *MockSecurityHubAPI) BatchImportFindingsWithContext(arg0 aws.Context, arg1 *securityhub.BatchImportFindingsInput, arg2 ...request.Option) (*securityhub.BatchImportFindingsOutput, error) {
+func (m *MockSecurityHubAPI) BatchImportFindingsWithContext(arg0 context.Context, arg1 *securityhub.BatchImportFindingsInput, arg2 ...request.Option) (*securityhub.BatchImportFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSecurityHubAPIMockRecorder) CreateInsightRequest(arg0 interface{})
 }
 
 // CreateInsightWithContext mocks base method
-func (m *MockSecurityHubAPI) CreateInsightWithContext(arg0 aws.Context, arg1 *securityhub.CreateInsightInput, arg2 ...request.Option) (*securityhub.CreateInsightOutput, error) {
+func (m *MockSecurityHubAPI) CreateInsightWithContext(arg0 context.Context, arg1 *securityhub.CreateInsightInput, arg2 ...request.Option) (*securityhub.CreateInsightOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSecurityHubAPIMockRecorder) CreateMembersRequest(arg0 interface{})
 }
 
 // CreateMembersWithContext mocks base method
-func (m *MockSecurityHubAPI) CreateMembersWithContext(arg0 aws.Context, arg1 *securityhub.CreateMembersInput, arg2 ...request.Option) (*securityhub.CreateMembersOutput, error) {
+func (m *MockSecurityHubAPI) CreateMembersWithContext(arg0 context.Context, arg1 *securityhub.CreateMembersInput, arg2 ...request.Option) (*securityhub.CreateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DeclineInvitationsRequest(arg0 interfa
 }
 
 // DeclineInvitationsWithContext mocks base method
-func (m *MockSecurityHubAPI) DeclineInvitationsWithContext(arg0 aws.Context, arg1 *securityhub.DeclineInvitationsInput, arg2 ...request.Option) (*securityhub.DeclineInvitationsOutput, error) {
+func (m *MockSecurityHubAPI) DeclineInvitationsWithContext(arg0 context.Context, arg1 *securityhub.DeclineInvitationsInput, arg2 ...request.Option) (*securityhub.DeclineInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DeleteInsightRequest(arg0 interface{})
 }
 
 // DeleteInsightWithContext mocks base method
-func (m *MockSecurityHubAPI) DeleteInsightWithContext(arg0 aws.Context, arg1 *securityhub.DeleteInsightInput, arg2 ...request.Option) (*securityhub.DeleteInsightOutput, error) {
+func (m *MockSecurityHubAPI) DeleteInsightWithContext(arg0 context.Context, arg1 *securityhub.DeleteInsightInput, arg2 ...request.Option) (*securityhub.DeleteInsightOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DeleteInvitationsRequest(arg0 interfac
 }
 
 // DeleteInvitationsWithContext mocks base method
-func (m *MockSecurityHubAPI) DeleteInvitationsWithContext(arg0 aws.Context, arg1 *securityhub.DeleteInvitationsInput, arg2 ...request.Option) (*securityhub.DeleteInvitationsOutput, error) {
+func (m *MockSecurityHubAPI) DeleteInvitationsWithContext(arg0 context.Context, arg1 *securityhub.DeleteInvitationsInput, arg2 ...request.Option) (*securityhub.DeleteInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DeleteMembersRequest(arg0 interface{})
 }
 
 // DeleteMembersWithContext mocks base method
-func (m *MockSecurityHubAPI) DeleteMembersWithContext(arg0 aws.Context, arg1 *securityhub.DeleteMembersInput, arg2 ...request.Option) (*securityhub.DeleteMembersOutput, error) {
+func (m *MockSecurityHubAPI) DeleteMembersWithContext(arg0 context.Context, arg1 *securityhub.DeleteMembersInput, arg2 ...request.Option) (*securityhub.DeleteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DisableImportFindingsForProductRequest
 }
 
 // DisableImportFindingsForProductWithContext mocks base method
-func (m *MockSecurityHubAPI) DisableImportFindingsForProductWithContext(arg0 aws.Context, arg1 *securityhub.DisableImportFindingsForProductInput, arg2 ...request.Option) (*securityhub.DisableImportFindingsForProductOutput, error) {
+func (m *MockSecurityHubAPI) DisableImportFindingsForProductWithContext(arg0 context.Context, arg1 *securityhub.DisableImportFindingsForProductInput, arg2 ...request.Option) (*securityhub.DisableImportFindingsForProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DisableSecurityHubRequest(arg0 interfa
 }
 
 // DisableSecurityHubWithContext mocks base method
-func (m *MockSecurityHubAPI) DisableSecurityHubWithContext(arg0 aws.Context, arg1 *securityhub.DisableSecurityHubInput, arg2 ...request.Option) (*securityhub.DisableSecurityHubOutput, error) {
+func (m *MockSecurityHubAPI) DisableSecurityHubWithContext(arg0 context.Context, arg1 *securityhub.DisableSecurityHubInput, arg2 ...request.Option) (*securityhub.DisableSecurityHubOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DisassociateFromMasterAccountRequest(a
 }
 
 // DisassociateFromMasterAccountWithContext mocks base method
-func (m *MockSecurityHubAPI) DisassociateFromMasterAccountWithContext(arg0 aws.Context, arg1 *securityhub.DisassociateFromMasterAccountInput, arg2 ...request.Option) (*securityhub.DisassociateFromMasterAccountOutput, error) {
+func (m *MockSecurityHubAPI) DisassociateFromMasterAccountWithContext(arg0 context.Context, arg1 *securityhub.DisassociateFromMasterAccountInput, arg2 ...request.Option) (*securityhub.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockSecurityHubAPIMockRecorder) DisassociateMembersRequest(arg0 interf
 }
 
 // DisassociateMembersWithContext mocks base method
-func (m *MockSecurityHubAPI) DisassociateMembersWithContext(arg0 aws.Context, arg1 *securityhub.DisassociateMembersInput, arg2 ...request.Option) (*securityhub.DisassociateMembersOutput, error) {
+func (m *MockSecurityHubAPI) DisassociateMembersWithContext(arg0 context.Context, arg1 *securityhub.DisassociateMembersInput, arg2 ...request.Option) (*securityhub.DisassociateMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockSecurityHubAPIMockRecorder) EnableImportFindingsForProductRequest(
 }
 
 // EnableImportFindingsForProductWithContext mocks base method
-func (m *MockSecurityHubAPI) EnableImportFindingsForProductWithContext(arg0 aws.Context, arg1 *securityhub.EnableImportFindingsForProductInput, arg2 ...request.Option) (*securityhub.EnableImportFindingsForProductOutput, error) {
+func (m *MockSecurityHubAPI) EnableImportFindingsForProductWithContext(arg0 context.Context, arg1 *securityhub.EnableImportFindingsForProductInput, arg2 ...request.Option) (*securityhub.EnableImportFindingsForProductOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockSecurityHubAPIMockRecorder) EnableSecurityHubRequest(arg0 interfac
 }
 
 // EnableSecurityHubWithContext mocks base method
-func (m *MockSecurityHubAPI) EnableSecurityHubWithContext(arg0 aws.Context, arg1 *securityhub.EnableSecurityHubInput, arg2 ...request.Option) (*securityhub.EnableSecurityHubOutput, error) {
+func (m *MockSecurityHubAPI) EnableSecurityHubWithContext(arg0 context.Context, arg1 *securityhub.EnableSecurityHubInput, arg2 ...request.Option) (*securityhub.EnableSecurityHubOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetEnabledStandardsRequest(arg0 interf
 }
 
 // GetEnabledStandardsWithContext mocks base method
-func (m *MockSecurityHubAPI) GetEnabledStandardsWithContext(arg0 aws.Context, arg1 *securityhub.GetEnabledStandardsInput, arg2 ...request.Option) (*securityhub.GetEnabledStandardsOutput, error) {
+func (m *MockSecurityHubAPI) GetEnabledStandardsWithContext(arg0 context.Context, arg1 *securityhub.GetEnabledStandardsInput, arg2 ...request.Option) (*securityhub.GetEnabledStandardsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -915,7 +915,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetFindingsPages(arg0, arg1 interface{
 }
 
 // GetFindingsPagesWithContext mocks base method
-func (m *MockSecurityHubAPI) GetFindingsPagesWithContext(arg0 aws.Context, arg1 *securityhub.GetFindingsInput, arg2 func(*securityhub.GetFindingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSecurityHubAPI) GetFindingsPagesWithContext(arg0 context.Context, arg1 *securityhub.GetFindingsInput, arg2 func(*securityhub.GetFindingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -949,7 +949,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetFindingsRequest(arg0 interface{}) *
 }
 
 // GetFindingsWithContext mocks base method
-func (m *MockSecurityHubAPI) GetFindingsWithContext(arg0 aws.Context, arg1 *securityhub.GetFindingsInput, arg2 ...request.Option) (*securityhub.GetFindingsOutput, error) {
+func (m *MockSecurityHubAPI) GetFindingsWithContext(arg0 context.Context, arg1 *securityhub.GetFindingsInput, arg2 ...request.Option) (*securityhub.GetFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -999,7 +999,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetInsightResultsRequest(arg0 interfac
 }
 
 // GetInsightResultsWithContext mocks base method
-func (m *MockSecurityHubAPI) GetInsightResultsWithContext(arg0 aws.Context, arg1 *securityhub.GetInsightResultsInput, arg2 ...request.Option) (*securityhub.GetInsightResultsOutput, error) {
+func (m *MockSecurityHubAPI) GetInsightResultsWithContext(arg0 context.Context, arg1 *securityhub.GetInsightResultsInput, arg2 ...request.Option) (*securityhub.GetInsightResultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetInsightsPages(arg0, arg1 interface{
 }
 
 // GetInsightsPagesWithContext mocks base method
-func (m *MockSecurityHubAPI) GetInsightsPagesWithContext(arg0 aws.Context, arg1 *securityhub.GetInsightsInput, arg2 func(*securityhub.GetInsightsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSecurityHubAPI) GetInsightsPagesWithContext(arg0 context.Context, arg1 *securityhub.GetInsightsInput, arg2 func(*securityhub.GetInsightsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetInsightsRequest(arg0 interface{}) *
 }
 
 // GetInsightsWithContext mocks base method
-func (m *MockSecurityHubAPI) GetInsightsWithContext(arg0 aws.Context, arg1 *securityhub.GetInsightsInput, arg2 ...request.Option) (*securityhub.GetInsightsOutput, error) {
+func (m *MockSecurityHubAPI) GetInsightsWithContext(arg0 context.Context, arg1 *securityhub.GetInsightsInput, arg2 ...request.Option) (*securityhub.GetInsightsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1132,7 +1132,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetInvitationsCountRequest(arg0 interf
 }
 
 // GetInvitationsCountWithContext mocks base method
-func (m *MockSecurityHubAPI) GetInvitationsCountWithContext(arg0 aws.Context, arg1 *securityhub.GetInvitationsCountInput, arg2 ...request.Option) (*securityhub.GetInvitationsCountOutput, error) {
+func (m *MockSecurityHubAPI) GetInvitationsCountWithContext(arg0 context.Context, arg1 *securityhub.GetInvitationsCountInput, arg2 ...request.Option) (*securityhub.GetInvitationsCountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1182,7 +1182,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetMasterAccountRequest(arg0 interface
 }
 
 // GetMasterAccountWithContext mocks base method
-func (m *MockSecurityHubAPI) GetMasterAccountWithContext(arg0 aws.Context, arg1 *securityhub.GetMasterAccountInput, arg2 ...request.Option) (*securityhub.GetMasterAccountOutput, error) {
+func (m *MockSecurityHubAPI) GetMasterAccountWithContext(arg0 context.Context, arg1 *securityhub.GetMasterAccountInput, arg2 ...request.Option) (*securityhub.GetMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1232,7 +1232,7 @@ func (mr *MockSecurityHubAPIMockRecorder) GetMembersRequest(arg0 interface{}) *g
 }
 
 // GetMembersWithContext mocks base method
-func (m *MockSecurityHubAPI) GetMembersWithContext(arg0 aws.Context, arg1 *securityhub.GetMembersInput, arg2 ...request.Option) (*securityhub.GetMembersOutput, error) {
+func (m *MockSecurityHubAPI) GetMembersWithContext(arg0 context.Context, arg1 *securityhub.GetMembersInput, arg2 ...request.Option) (*securityhub.GetMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1282,7 +1282,7 @@ func (mr *MockSecurityHubAPIMockRecorder) InviteMembersRequest(arg0 interface{})
 }
 
 // InviteMembersWithContext mocks base method
-func (m *MockSecurityHubAPI) InviteMembersWithContext(arg0 aws.Context, arg1 *securityhub.InviteMembersInput, arg2 ...request.Option) (*securityhub.InviteMembersOutput, error) {
+func (m *MockSecurityHubAPI) InviteMembersWithContext(arg0 context.Context, arg1 *securityhub.InviteMembersInput, arg2 ...request.Option) (*securityhub.InviteMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1331,7 +1331,7 @@ func (mr *MockSecurityHubAPIMockRecorder) ListEnabledProductsForImportPages(arg0
 }
 
 // ListEnabledProductsForImportPagesWithContext mocks base method
-func (m *MockSecurityHubAPI) ListEnabledProductsForImportPagesWithContext(arg0 aws.Context, arg1 *securityhub.ListEnabledProductsForImportInput, arg2 func(*securityhub.ListEnabledProductsForImportOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSecurityHubAPI) ListEnabledProductsForImportPagesWithContext(arg0 context.Context, arg1 *securityhub.ListEnabledProductsForImportInput, arg2 func(*securityhub.ListEnabledProductsForImportOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1365,7 +1365,7 @@ func (mr *MockSecurityHubAPIMockRecorder) ListEnabledProductsForImportRequest(ar
 }
 
 // ListEnabledProductsForImportWithContext mocks base method
-func (m *MockSecurityHubAPI) ListEnabledProductsForImportWithContext(arg0 aws.Context, arg1 *securityhub.ListEnabledProductsForImportInput, arg2 ...request.Option) (*securityhub.ListEnabledProductsForImportOutput, error) {
+func (m *MockSecurityHubAPI) ListEnabledProductsForImportWithContext(arg0 context.Context, arg1 *securityhub.ListEnabledProductsForImportInput, arg2 ...request.Option) (*securityhub.ListEnabledProductsForImportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1415,7 +1415,7 @@ func (mr *MockSecurityHubAPIMockRecorder) ListInvitationsRequest(arg0 interface{
 }
 
 // ListInvitationsWithContext mocks base method
-func (m *MockSecurityHubAPI) ListInvitationsWithContext(arg0 aws.Context, arg1 *securityhub.ListInvitationsInput, arg2 ...request.Option) (*securityhub.ListInvitationsOutput, error) {
+func (m *MockSecurityHubAPI) ListInvitationsWithContext(arg0 context.Context, arg1 *securityhub.ListInvitationsInput, arg2 ...request.Option) (*securityhub.ListInvitationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1465,7 +1465,7 @@ func (mr *MockSecurityHubAPIMockRecorder) ListMembersRequest(arg0 interface{}) *
 }
 
 // ListMembersWithContext mocks base method
-func (m *MockSecurityHubAPI) ListMembersWithContext(arg0 aws.Context, arg1 *securityhub.ListMembersInput, arg2 ...request.Option) (*securityhub.ListMembersOutput, error) {
+func (m *MockSecurityHubAPI) ListMembersWithContext(arg0 context.Context, arg1 *securityhub.ListMembersInput, arg2 ...request.Option) (*securityhub.ListMembersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1515,7 +1515,7 @@ func (mr *MockSecurityHubAPIMockRecorder) UpdateFindingsRequest(arg0 interface{}
 }
 
 // UpdateFindingsWithContext mocks base method
-func (m *MockSecurityHubAPI) UpdateFindingsWithContext(arg0 aws.Context, arg1 *securityhub.UpdateFindingsInput, arg2 ...request.Option) (*securityhub.UpdateFindingsOutput, error) {
+func (m *MockSecurityHubAPI) UpdateFindingsWithContext(arg0 context.Context, arg1 *securityhub.UpdateFindingsInput, arg2 ...request.Option) (*securityhub.UpdateFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1565,7 +1565,7 @@ func (mr *MockSecurityHubAPIMockRecorder) UpdateInsightRequest(arg0 interface{})
 }
 
 // UpdateInsightWithContext mocks base method
-func (m *MockSecurityHubAPI) UpdateInsightWithContext(arg0 aws.Context, arg1 *securityhub.UpdateInsightInput, arg2 ...request.Option) (*securityhub.UpdateInsightOutput, error) {
+func (m *MockSecurityHubAPI) UpdateInsightWithContext(arg0 context.Context, arg1 *securityhub.UpdateInsightInput, arg2 ...request.Option) (*securityhub.UpdateInsightOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

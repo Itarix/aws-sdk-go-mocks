@@ -5,7 +5,7 @@
 package codecommitmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	codecommit "github.com/aws/aws-sdk-go/service/codecommit"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCodeCommitAPIMockRecorder) BatchGetRepositoriesRequest(arg0 interf
 }
 
 // BatchGetRepositoriesWithContext mocks base method
-func (m *MockCodeCommitAPI) BatchGetRepositoriesWithContext(arg0 aws.Context, arg1 *codecommit.BatchGetRepositoriesInput, arg2 ...request.Option) (*codecommit.BatchGetRepositoriesOutput, error) {
+func (m *MockCodeCommitAPI) BatchGetRepositoriesWithContext(arg0 context.Context, arg1 *codecommit.BatchGetRepositoriesInput, arg2 ...request.Option) (*codecommit.BatchGetRepositoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCodeCommitAPIMockRecorder) CreateBranchRequest(arg0 interface{}) *
 }
 
 // CreateBranchWithContext mocks base method
-func (m *MockCodeCommitAPI) CreateBranchWithContext(arg0 aws.Context, arg1 *codecommit.CreateBranchInput, arg2 ...request.Option) (*codecommit.CreateBranchOutput, error) {
+func (m *MockCodeCommitAPI) CreateBranchWithContext(arg0 context.Context, arg1 *codecommit.CreateBranchInput, arg2 ...request.Option) (*codecommit.CreateBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCodeCommitAPIMockRecorder) CreatePullRequestRequest(arg0 interface
 }
 
 // CreatePullRequestWithContext mocks base method
-func (m *MockCodeCommitAPI) CreatePullRequestWithContext(arg0 aws.Context, arg1 *codecommit.CreatePullRequestInput, arg2 ...request.Option) (*codecommit.CreatePullRequestOutput, error) {
+func (m *MockCodeCommitAPI) CreatePullRequestWithContext(arg0 context.Context, arg1 *codecommit.CreatePullRequestInput, arg2 ...request.Option) (*codecommit.CreatePullRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCodeCommitAPIMockRecorder) CreateRepositoryRequest(arg0 interface{
 }
 
 // CreateRepositoryWithContext mocks base method
-func (m *MockCodeCommitAPI) CreateRepositoryWithContext(arg0 aws.Context, arg1 *codecommit.CreateRepositoryInput, arg2 ...request.Option) (*codecommit.CreateRepositoryOutput, error) {
+func (m *MockCodeCommitAPI) CreateRepositoryWithContext(arg0 context.Context, arg1 *codecommit.CreateRepositoryInput, arg2 ...request.Option) (*codecommit.CreateRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCodeCommitAPIMockRecorder) DeleteBranchRequest(arg0 interface{}) *
 }
 
 // DeleteBranchWithContext mocks base method
-func (m *MockCodeCommitAPI) DeleteBranchWithContext(arg0 aws.Context, arg1 *codecommit.DeleteBranchInput, arg2 ...request.Option) (*codecommit.DeleteBranchOutput, error) {
+func (m *MockCodeCommitAPI) DeleteBranchWithContext(arg0 context.Context, arg1 *codecommit.DeleteBranchInput, arg2 ...request.Option) (*codecommit.DeleteBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCodeCommitAPIMockRecorder) DeleteCommentContentRequest(arg0 interf
 }
 
 // DeleteCommentContentWithContext mocks base method
-func (m *MockCodeCommitAPI) DeleteCommentContentWithContext(arg0 aws.Context, arg1 *codecommit.DeleteCommentContentInput, arg2 ...request.Option) (*codecommit.DeleteCommentContentOutput, error) {
+func (m *MockCodeCommitAPI) DeleteCommentContentWithContext(arg0 context.Context, arg1 *codecommit.DeleteCommentContentInput, arg2 ...request.Option) (*codecommit.DeleteCommentContentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockCodeCommitAPIMockRecorder) DeleteFileRequest(arg0 interface{}) *go
 }
 
 // DeleteFileWithContext mocks base method
-func (m *MockCodeCommitAPI) DeleteFileWithContext(arg0 aws.Context, arg1 *codecommit.DeleteFileInput, arg2 ...request.Option) (*codecommit.DeleteFileOutput, error) {
+func (m *MockCodeCommitAPI) DeleteFileWithContext(arg0 context.Context, arg1 *codecommit.DeleteFileInput, arg2 ...request.Option) (*codecommit.DeleteFileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockCodeCommitAPIMockRecorder) DeleteRepositoryRequest(arg0 interface{
 }
 
 // DeleteRepositoryWithContext mocks base method
-func (m *MockCodeCommitAPI) DeleteRepositoryWithContext(arg0 aws.Context, arg1 *codecommit.DeleteRepositoryInput, arg2 ...request.Option) (*codecommit.DeleteRepositoryOutput, error) {
+func (m *MockCodeCommitAPI) DeleteRepositoryWithContext(arg0 context.Context, arg1 *codecommit.DeleteRepositoryInput, arg2 ...request.Option) (*codecommit.DeleteRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -465,7 +465,7 @@ func (mr *MockCodeCommitAPIMockRecorder) DescribePullRequestEventsPages(arg0, ar
 }
 
 // DescribePullRequestEventsPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) DescribePullRequestEventsPagesWithContext(arg0 aws.Context, arg1 *codecommit.DescribePullRequestEventsInput, arg2 func(*codecommit.DescribePullRequestEventsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) DescribePullRequestEventsPagesWithContext(arg0 context.Context, arg1 *codecommit.DescribePullRequestEventsInput, arg2 func(*codecommit.DescribePullRequestEventsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -499,7 +499,7 @@ func (mr *MockCodeCommitAPIMockRecorder) DescribePullRequestEventsRequest(arg0 i
 }
 
 // DescribePullRequestEventsWithContext mocks base method
-func (m *MockCodeCommitAPI) DescribePullRequestEventsWithContext(arg0 aws.Context, arg1 *codecommit.DescribePullRequestEventsInput, arg2 ...request.Option) (*codecommit.DescribePullRequestEventsOutput, error) {
+func (m *MockCodeCommitAPI) DescribePullRequestEventsWithContext(arg0 context.Context, arg1 *codecommit.DescribePullRequestEventsInput, arg2 ...request.Option) (*codecommit.DescribePullRequestEventsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -549,7 +549,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetBlobRequest(arg0 interface{}) *gomoc
 }
 
 // GetBlobWithContext mocks base method
-func (m *MockCodeCommitAPI) GetBlobWithContext(arg0 aws.Context, arg1 *codecommit.GetBlobInput, arg2 ...request.Option) (*codecommit.GetBlobOutput, error) {
+func (m *MockCodeCommitAPI) GetBlobWithContext(arg0 context.Context, arg1 *codecommit.GetBlobInput, arg2 ...request.Option) (*codecommit.GetBlobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -599,7 +599,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetBranchRequest(arg0 interface{}) *gom
 }
 
 // GetBranchWithContext mocks base method
-func (m *MockCodeCommitAPI) GetBranchWithContext(arg0 aws.Context, arg1 *codecommit.GetBranchInput, arg2 ...request.Option) (*codecommit.GetBranchOutput, error) {
+func (m *MockCodeCommitAPI) GetBranchWithContext(arg0 context.Context, arg1 *codecommit.GetBranchInput, arg2 ...request.Option) (*codecommit.GetBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -649,7 +649,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetCommentRequest(arg0 interface{}) *go
 }
 
 // GetCommentWithContext mocks base method
-func (m *MockCodeCommitAPI) GetCommentWithContext(arg0 aws.Context, arg1 *codecommit.GetCommentInput, arg2 ...request.Option) (*codecommit.GetCommentOutput, error) {
+func (m *MockCodeCommitAPI) GetCommentWithContext(arg0 context.Context, arg1 *codecommit.GetCommentInput, arg2 ...request.Option) (*codecommit.GetCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -698,7 +698,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetCommentsForComparedCommitPages(arg0,
 }
 
 // GetCommentsForComparedCommitPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) GetCommentsForComparedCommitPagesWithContext(arg0 aws.Context, arg1 *codecommit.GetCommentsForComparedCommitInput, arg2 func(*codecommit.GetCommentsForComparedCommitOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) GetCommentsForComparedCommitPagesWithContext(arg0 context.Context, arg1 *codecommit.GetCommentsForComparedCommitInput, arg2 func(*codecommit.GetCommentsForComparedCommitOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -732,7 +732,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetCommentsForComparedCommitRequest(arg
 }
 
 // GetCommentsForComparedCommitWithContext mocks base method
-func (m *MockCodeCommitAPI) GetCommentsForComparedCommitWithContext(arg0 aws.Context, arg1 *codecommit.GetCommentsForComparedCommitInput, arg2 ...request.Option) (*codecommit.GetCommentsForComparedCommitOutput, error) {
+func (m *MockCodeCommitAPI) GetCommentsForComparedCommitWithContext(arg0 context.Context, arg1 *codecommit.GetCommentsForComparedCommitInput, arg2 ...request.Option) (*codecommit.GetCommentsForComparedCommitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -781,7 +781,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetCommentsForPullRequestPages(arg0, ar
 }
 
 // GetCommentsForPullRequestPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) GetCommentsForPullRequestPagesWithContext(arg0 aws.Context, arg1 *codecommit.GetCommentsForPullRequestInput, arg2 func(*codecommit.GetCommentsForPullRequestOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) GetCommentsForPullRequestPagesWithContext(arg0 context.Context, arg1 *codecommit.GetCommentsForPullRequestInput, arg2 func(*codecommit.GetCommentsForPullRequestOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -815,7 +815,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetCommentsForPullRequestRequest(arg0 i
 }
 
 // GetCommentsForPullRequestWithContext mocks base method
-func (m *MockCodeCommitAPI) GetCommentsForPullRequestWithContext(arg0 aws.Context, arg1 *codecommit.GetCommentsForPullRequestInput, arg2 ...request.Option) (*codecommit.GetCommentsForPullRequestOutput, error) {
+func (m *MockCodeCommitAPI) GetCommentsForPullRequestWithContext(arg0 context.Context, arg1 *codecommit.GetCommentsForPullRequestInput, arg2 ...request.Option) (*codecommit.GetCommentsForPullRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -865,7 +865,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetCommitRequest(arg0 interface{}) *gom
 }
 
 // GetCommitWithContext mocks base method
-func (m *MockCodeCommitAPI) GetCommitWithContext(arg0 aws.Context, arg1 *codecommit.GetCommitInput, arg2 ...request.Option) (*codecommit.GetCommitOutput, error) {
+func (m *MockCodeCommitAPI) GetCommitWithContext(arg0 context.Context, arg1 *codecommit.GetCommitInput, arg2 ...request.Option) (*codecommit.GetCommitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -914,7 +914,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetDifferencesPages(arg0, arg1 interfac
 }
 
 // GetDifferencesPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) GetDifferencesPagesWithContext(arg0 aws.Context, arg1 *codecommit.GetDifferencesInput, arg2 func(*codecommit.GetDifferencesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) GetDifferencesPagesWithContext(arg0 context.Context, arg1 *codecommit.GetDifferencesInput, arg2 func(*codecommit.GetDifferencesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -948,7 +948,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetDifferencesRequest(arg0 interface{})
 }
 
 // GetDifferencesWithContext mocks base method
-func (m *MockCodeCommitAPI) GetDifferencesWithContext(arg0 aws.Context, arg1 *codecommit.GetDifferencesInput, arg2 ...request.Option) (*codecommit.GetDifferencesOutput, error) {
+func (m *MockCodeCommitAPI) GetDifferencesWithContext(arg0 context.Context, arg1 *codecommit.GetDifferencesInput, arg2 ...request.Option) (*codecommit.GetDifferencesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -998,7 +998,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetFileRequest(arg0 interface{}) *gomoc
 }
 
 // GetFileWithContext mocks base method
-func (m *MockCodeCommitAPI) GetFileWithContext(arg0 aws.Context, arg1 *codecommit.GetFileInput, arg2 ...request.Option) (*codecommit.GetFileOutput, error) {
+func (m *MockCodeCommitAPI) GetFileWithContext(arg0 context.Context, arg1 *codecommit.GetFileInput, arg2 ...request.Option) (*codecommit.GetFileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetFolderRequest(arg0 interface{}) *gom
 }
 
 // GetFolderWithContext mocks base method
-func (m *MockCodeCommitAPI) GetFolderWithContext(arg0 aws.Context, arg1 *codecommit.GetFolderInput, arg2 ...request.Option) (*codecommit.GetFolderOutput, error) {
+func (m *MockCodeCommitAPI) GetFolderWithContext(arg0 context.Context, arg1 *codecommit.GetFolderInput, arg2 ...request.Option) (*codecommit.GetFolderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetMergeConflictsRequest(arg0 interface
 }
 
 // GetMergeConflictsWithContext mocks base method
-func (m *MockCodeCommitAPI) GetMergeConflictsWithContext(arg0 aws.Context, arg1 *codecommit.GetMergeConflictsInput, arg2 ...request.Option) (*codecommit.GetMergeConflictsOutput, error) {
+func (m *MockCodeCommitAPI) GetMergeConflictsWithContext(arg0 context.Context, arg1 *codecommit.GetMergeConflictsInput, arg2 ...request.Option) (*codecommit.GetMergeConflictsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestRequest(arg0 interface{})
 }
 
 // GetPullRequestWithContext mocks base method
-func (m *MockCodeCommitAPI) GetPullRequestWithContext(arg0 aws.Context, arg1 *codecommit.GetPullRequestInput, arg2 ...request.Option) (*codecommit.GetPullRequestOutput, error) {
+func (m *MockCodeCommitAPI) GetPullRequestWithContext(arg0 context.Context, arg1 *codecommit.GetPullRequestInput, arg2 ...request.Option) (*codecommit.GetPullRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1228,7 +1228,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetRepositoryTriggersRequest(arg0 inter
 }
 
 // GetRepositoryTriggersWithContext mocks base method
-func (m *MockCodeCommitAPI) GetRepositoryTriggersWithContext(arg0 aws.Context, arg1 *codecommit.GetRepositoryTriggersInput, arg2 ...request.Option) (*codecommit.GetRepositoryTriggersOutput, error) {
+func (m *MockCodeCommitAPI) GetRepositoryTriggersWithContext(arg0 context.Context, arg1 *codecommit.GetRepositoryTriggersInput, arg2 ...request.Option) (*codecommit.GetRepositoryTriggersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1248,7 +1248,7 @@ func (mr *MockCodeCommitAPIMockRecorder) GetRepositoryTriggersWithContext(arg0, 
 }
 
 // GetRepositoryWithContext mocks base method
-func (m *MockCodeCommitAPI) GetRepositoryWithContext(arg0 aws.Context, arg1 *codecommit.GetRepositoryInput, arg2 ...request.Option) (*codecommit.GetRepositoryOutput, error) {
+func (m *MockCodeCommitAPI) GetRepositoryWithContext(arg0 context.Context, arg1 *codecommit.GetRepositoryInput, arg2 ...request.Option) (*codecommit.GetRepositoryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1297,7 +1297,7 @@ func (mr *MockCodeCommitAPIMockRecorder) ListBranchesPages(arg0, arg1 interface{
 }
 
 // ListBranchesPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) ListBranchesPagesWithContext(arg0 aws.Context, arg1 *codecommit.ListBranchesInput, arg2 func(*codecommit.ListBranchesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) ListBranchesPagesWithContext(arg0 context.Context, arg1 *codecommit.ListBranchesInput, arg2 func(*codecommit.ListBranchesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1331,7 +1331,7 @@ func (mr *MockCodeCommitAPIMockRecorder) ListBranchesRequest(arg0 interface{}) *
 }
 
 // ListBranchesWithContext mocks base method
-func (m *MockCodeCommitAPI) ListBranchesWithContext(arg0 aws.Context, arg1 *codecommit.ListBranchesInput, arg2 ...request.Option) (*codecommit.ListBranchesOutput, error) {
+func (m *MockCodeCommitAPI) ListBranchesWithContext(arg0 context.Context, arg1 *codecommit.ListBranchesInput, arg2 ...request.Option) (*codecommit.ListBranchesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1380,7 +1380,7 @@ func (mr *MockCodeCommitAPIMockRecorder) ListPullRequestsPages(arg0, arg1 interf
 }
 
 // ListPullRequestsPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) ListPullRequestsPagesWithContext(arg0 aws.Context, arg1 *codecommit.ListPullRequestsInput, arg2 func(*codecommit.ListPullRequestsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) ListPullRequestsPagesWithContext(arg0 context.Context, arg1 *codecommit.ListPullRequestsInput, arg2 func(*codecommit.ListPullRequestsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1414,7 +1414,7 @@ func (mr *MockCodeCommitAPIMockRecorder) ListPullRequestsRequest(arg0 interface{
 }
 
 // ListPullRequestsWithContext mocks base method
-func (m *MockCodeCommitAPI) ListPullRequestsWithContext(arg0 aws.Context, arg1 *codecommit.ListPullRequestsInput, arg2 ...request.Option) (*codecommit.ListPullRequestsOutput, error) {
+func (m *MockCodeCommitAPI) ListPullRequestsWithContext(arg0 context.Context, arg1 *codecommit.ListPullRequestsInput, arg2 ...request.Option) (*codecommit.ListPullRequestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1463,7 +1463,7 @@ func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesPages(arg0, arg1 interf
 }
 
 // ListRepositoriesPagesWithContext mocks base method
-func (m *MockCodeCommitAPI) ListRepositoriesPagesWithContext(arg0 aws.Context, arg1 *codecommit.ListRepositoriesInput, arg2 func(*codecommit.ListRepositoriesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCodeCommitAPI) ListRepositoriesPagesWithContext(arg0 context.Context, arg1 *codecommit.ListRepositoriesInput, arg2 func(*codecommit.ListRepositoriesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1497,7 +1497,7 @@ func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesRequest(arg0 interface{
 }
 
 // ListRepositoriesWithContext mocks base method
-func (m *MockCodeCommitAPI) ListRepositoriesWithContext(arg0 aws.Context, arg1 *codecommit.ListRepositoriesInput, arg2 ...request.Option) (*codecommit.ListRepositoriesOutput, error) {
+func (m *MockCodeCommitAPI) ListRepositoriesWithContext(arg0 context.Context, arg1 *codecommit.ListRepositoriesInput, arg2 ...request.Option) (*codecommit.ListRepositoriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1547,7 +1547,7 @@ func (mr *MockCodeCommitAPIMockRecorder) MergePullRequestByFastForwardRequest(ar
 }
 
 // MergePullRequestByFastForwardWithContext mocks base method
-func (m *MockCodeCommitAPI) MergePullRequestByFastForwardWithContext(arg0 aws.Context, arg1 *codecommit.MergePullRequestByFastForwardInput, arg2 ...request.Option) (*codecommit.MergePullRequestByFastForwardOutput, error) {
+func (m *MockCodeCommitAPI) MergePullRequestByFastForwardWithContext(arg0 context.Context, arg1 *codecommit.MergePullRequestByFastForwardInput, arg2 ...request.Option) (*codecommit.MergePullRequestByFastForwardOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1597,7 +1597,7 @@ func (mr *MockCodeCommitAPIMockRecorder) PostCommentForComparedCommitRequest(arg
 }
 
 // PostCommentForComparedCommitWithContext mocks base method
-func (m *MockCodeCommitAPI) PostCommentForComparedCommitWithContext(arg0 aws.Context, arg1 *codecommit.PostCommentForComparedCommitInput, arg2 ...request.Option) (*codecommit.PostCommentForComparedCommitOutput, error) {
+func (m *MockCodeCommitAPI) PostCommentForComparedCommitWithContext(arg0 context.Context, arg1 *codecommit.PostCommentForComparedCommitInput, arg2 ...request.Option) (*codecommit.PostCommentForComparedCommitOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1647,7 +1647,7 @@ func (mr *MockCodeCommitAPIMockRecorder) PostCommentForPullRequestRequest(arg0 i
 }
 
 // PostCommentForPullRequestWithContext mocks base method
-func (m *MockCodeCommitAPI) PostCommentForPullRequestWithContext(arg0 aws.Context, arg1 *codecommit.PostCommentForPullRequestInput, arg2 ...request.Option) (*codecommit.PostCommentForPullRequestOutput, error) {
+func (m *MockCodeCommitAPI) PostCommentForPullRequestWithContext(arg0 context.Context, arg1 *codecommit.PostCommentForPullRequestInput, arg2 ...request.Option) (*codecommit.PostCommentForPullRequestOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1697,7 +1697,7 @@ func (mr *MockCodeCommitAPIMockRecorder) PostCommentReplyRequest(arg0 interface{
 }
 
 // PostCommentReplyWithContext mocks base method
-func (m *MockCodeCommitAPI) PostCommentReplyWithContext(arg0 aws.Context, arg1 *codecommit.PostCommentReplyInput, arg2 ...request.Option) (*codecommit.PostCommentReplyOutput, error) {
+func (m *MockCodeCommitAPI) PostCommentReplyWithContext(arg0 context.Context, arg1 *codecommit.PostCommentReplyInput, arg2 ...request.Option) (*codecommit.PostCommentReplyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1747,7 +1747,7 @@ func (mr *MockCodeCommitAPIMockRecorder) PutFileRequest(arg0 interface{}) *gomoc
 }
 
 // PutFileWithContext mocks base method
-func (m *MockCodeCommitAPI) PutFileWithContext(arg0 aws.Context, arg1 *codecommit.PutFileInput, arg2 ...request.Option) (*codecommit.PutFileOutput, error) {
+func (m *MockCodeCommitAPI) PutFileWithContext(arg0 context.Context, arg1 *codecommit.PutFileInput, arg2 ...request.Option) (*codecommit.PutFileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1797,7 +1797,7 @@ func (mr *MockCodeCommitAPIMockRecorder) PutRepositoryTriggersRequest(arg0 inter
 }
 
 // PutRepositoryTriggersWithContext mocks base method
-func (m *MockCodeCommitAPI) PutRepositoryTriggersWithContext(arg0 aws.Context, arg1 *codecommit.PutRepositoryTriggersInput, arg2 ...request.Option) (*codecommit.PutRepositoryTriggersOutput, error) {
+func (m *MockCodeCommitAPI) PutRepositoryTriggersWithContext(arg0 context.Context, arg1 *codecommit.PutRepositoryTriggersInput, arg2 ...request.Option) (*codecommit.PutRepositoryTriggersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1847,7 +1847,7 @@ func (mr *MockCodeCommitAPIMockRecorder) TestRepositoryTriggersRequest(arg0 inte
 }
 
 // TestRepositoryTriggersWithContext mocks base method
-func (m *MockCodeCommitAPI) TestRepositoryTriggersWithContext(arg0 aws.Context, arg1 *codecommit.TestRepositoryTriggersInput, arg2 ...request.Option) (*codecommit.TestRepositoryTriggersOutput, error) {
+func (m *MockCodeCommitAPI) TestRepositoryTriggersWithContext(arg0 context.Context, arg1 *codecommit.TestRepositoryTriggersInput, arg2 ...request.Option) (*codecommit.TestRepositoryTriggersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1897,7 +1897,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdateCommentRequest(arg0 interface{}) 
 }
 
 // UpdateCommentWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdateCommentWithContext(arg0 aws.Context, arg1 *codecommit.UpdateCommentInput, arg2 ...request.Option) (*codecommit.UpdateCommentOutput, error) {
+func (m *MockCodeCommitAPI) UpdateCommentWithContext(arg0 context.Context, arg1 *codecommit.UpdateCommentInput, arg2 ...request.Option) (*codecommit.UpdateCommentOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1947,7 +1947,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdateDefaultBranchRequest(arg0 interfa
 }
 
 // UpdateDefaultBranchWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdateDefaultBranchWithContext(arg0 aws.Context, arg1 *codecommit.UpdateDefaultBranchInput, arg2 ...request.Option) (*codecommit.UpdateDefaultBranchOutput, error) {
+func (m *MockCodeCommitAPI) UpdateDefaultBranchWithContext(arg0 context.Context, arg1 *codecommit.UpdateDefaultBranchInput, arg2 ...request.Option) (*codecommit.UpdateDefaultBranchOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1997,7 +1997,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestDescriptionRequest(arg
 }
 
 // UpdatePullRequestDescriptionWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdatePullRequestDescriptionWithContext(arg0 aws.Context, arg1 *codecommit.UpdatePullRequestDescriptionInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestDescriptionOutput, error) {
+func (m *MockCodeCommitAPI) UpdatePullRequestDescriptionWithContext(arg0 context.Context, arg1 *codecommit.UpdatePullRequestDescriptionInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestDescriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2047,7 +2047,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestStatusRequest(arg0 int
 }
 
 // UpdatePullRequestStatusWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdatePullRequestStatusWithContext(arg0 aws.Context, arg1 *codecommit.UpdatePullRequestStatusInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestStatusOutput, error) {
+func (m *MockCodeCommitAPI) UpdatePullRequestStatusWithContext(arg0 context.Context, arg1 *codecommit.UpdatePullRequestStatusInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2097,7 +2097,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestTitleRequest(arg0 inte
 }
 
 // UpdatePullRequestTitleWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdatePullRequestTitleWithContext(arg0 aws.Context, arg1 *codecommit.UpdatePullRequestTitleInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestTitleOutput, error) {
+func (m *MockCodeCommitAPI) UpdatePullRequestTitleWithContext(arg0 context.Context, arg1 *codecommit.UpdatePullRequestTitleInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestTitleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2147,7 +2147,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdateRepositoryDescriptionRequest(arg0
 }
 
 // UpdateRepositoryDescriptionWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdateRepositoryDescriptionWithContext(arg0 aws.Context, arg1 *codecommit.UpdateRepositoryDescriptionInput, arg2 ...request.Option) (*codecommit.UpdateRepositoryDescriptionOutput, error) {
+func (m *MockCodeCommitAPI) UpdateRepositoryDescriptionWithContext(arg0 context.Context, arg1 *codecommit.UpdateRepositoryDescriptionInput, arg2 ...request.Option) (*codecommit.UpdateRepositoryDescriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2197,7 +2197,7 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdateRepositoryNameRequest(arg0 interf
 }
 
 // UpdateRepositoryNameWithContext mocks base method
-func (m *MockCodeCommitAPI) UpdateRepositoryNameWithContext(arg0 aws.Context, arg1 *codecommit.UpdateRepositoryNameInput, arg2 ...request.Option) (*codecommit.UpdateRepositoryNameOutput, error) {
+func (m *MockCodeCommitAPI) UpdateRepositoryNameWithContext(arg0 context.Context, arg1 *codecommit.UpdateRepositoryNameInput, arg2 ...request.Option) (*codecommit.UpdateRepositoryNameOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

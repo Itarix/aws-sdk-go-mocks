@@ -5,7 +5,7 @@
 package transfermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	transfer "github.com/aws/aws-sdk-go/service/transfer"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockTransferAPIMockRecorder) CreateServerRequest(arg0 interface{}) *go
 }
 
 // CreateServerWithContext mocks base method
-func (m *MockTransferAPI) CreateServerWithContext(arg0 aws.Context, arg1 *transfer.CreateServerInput, arg2 ...request.Option) (*transfer.CreateServerOutput, error) {
+func (m *MockTransferAPI) CreateServerWithContext(arg0 context.Context, arg1 *transfer.CreateServerInput, arg2 ...request.Option) (*transfer.CreateServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockTransferAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomo
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockTransferAPI) CreateUserWithContext(arg0 aws.Context, arg1 *transfer.CreateUserInput, arg2 ...request.Option) (*transfer.CreateUserOutput, error) {
+func (m *MockTransferAPI) CreateUserWithContext(arg0 context.Context, arg1 *transfer.CreateUserInput, arg2 ...request.Option) (*transfer.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockTransferAPIMockRecorder) DeleteServerRequest(arg0 interface{}) *go
 }
 
 // DeleteServerWithContext mocks base method
-func (m *MockTransferAPI) DeleteServerWithContext(arg0 aws.Context, arg1 *transfer.DeleteServerInput, arg2 ...request.Option) (*transfer.DeleteServerOutput, error) {
+func (m *MockTransferAPI) DeleteServerWithContext(arg0 context.Context, arg1 *transfer.DeleteServerInput, arg2 ...request.Option) (*transfer.DeleteServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockTransferAPIMockRecorder) DeleteSshPublicKeyRequest(arg0 interface{
 }
 
 // DeleteSshPublicKeyWithContext mocks base method
-func (m *MockTransferAPI) DeleteSshPublicKeyWithContext(arg0 aws.Context, arg1 *transfer.DeleteSshPublicKeyInput, arg2 ...request.Option) (*transfer.DeleteSshPublicKeyOutput, error) {
+func (m *MockTransferAPI) DeleteSshPublicKeyWithContext(arg0 context.Context, arg1 *transfer.DeleteSshPublicKeyInput, arg2 ...request.Option) (*transfer.DeleteSshPublicKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockTransferAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomo
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockTransferAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *transfer.DeleteUserInput, arg2 ...request.Option) (*transfer.DeleteUserOutput, error) {
+func (m *MockTransferAPI) DeleteUserWithContext(arg0 context.Context, arg1 *transfer.DeleteUserInput, arg2 ...request.Option) (*transfer.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockTransferAPIMockRecorder) DescribeServerRequest(arg0 interface{}) *
 }
 
 // DescribeServerWithContext mocks base method
-func (m *MockTransferAPI) DescribeServerWithContext(arg0 aws.Context, arg1 *transfer.DescribeServerInput, arg2 ...request.Option) (*transfer.DescribeServerOutput, error) {
+func (m *MockTransferAPI) DescribeServerWithContext(arg0 context.Context, arg1 *transfer.DescribeServerInput, arg2 ...request.Option) (*transfer.DescribeServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockTransferAPIMockRecorder) DescribeUserRequest(arg0 interface{}) *go
 }
 
 // DescribeUserWithContext mocks base method
-func (m *MockTransferAPI) DescribeUserWithContext(arg0 aws.Context, arg1 *transfer.DescribeUserInput, arg2 ...request.Option) (*transfer.DescribeUserOutput, error) {
+func (m *MockTransferAPI) DescribeUserWithContext(arg0 context.Context, arg1 *transfer.DescribeUserInput, arg2 ...request.Option) (*transfer.DescribeUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockTransferAPIMockRecorder) ImportSshPublicKeyRequest(arg0 interface{
 }
 
 // ImportSshPublicKeyWithContext mocks base method
-func (m *MockTransferAPI) ImportSshPublicKeyWithContext(arg0 aws.Context, arg1 *transfer.ImportSshPublicKeyInput, arg2 ...request.Option) (*transfer.ImportSshPublicKeyOutput, error) {
+func (m *MockTransferAPI) ImportSshPublicKeyWithContext(arg0 context.Context, arg1 *transfer.ImportSshPublicKeyInput, arg2 ...request.Option) (*transfer.ImportSshPublicKeyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockTransferAPIMockRecorder) ListServersRequest(arg0 interface{}) *gom
 }
 
 // ListServersWithContext mocks base method
-func (m *MockTransferAPI) ListServersWithContext(arg0 aws.Context, arg1 *transfer.ListServersInput, arg2 ...request.Option) (*transfer.ListServersOutput, error) {
+func (m *MockTransferAPI) ListServersWithContext(arg0 context.Context, arg1 *transfer.ListServersInput, arg2 ...request.Option) (*transfer.ListServersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockTransferAPIMockRecorder) ListTagsForResourceRequest(arg0 interface
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockTransferAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *transfer.ListTagsForResourceInput, arg2 ...request.Option) (*transfer.ListTagsForResourceOutput, error) {
+func (m *MockTransferAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *transfer.ListTagsForResourceInput, arg2 ...request.Option) (*transfer.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockTransferAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomoc
 }
 
 // ListUsersWithContext mocks base method
-func (m *MockTransferAPI) ListUsersWithContext(arg0 aws.Context, arg1 *transfer.ListUsersInput, arg2 ...request.Option) (*transfer.ListUsersOutput, error) {
+func (m *MockTransferAPI) ListUsersWithContext(arg0 context.Context, arg1 *transfer.ListUsersInput, arg2 ...request.Option) (*transfer.ListUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockTransferAPIMockRecorder) StartServerRequest(arg0 interface{}) *gom
 }
 
 // StartServerWithContext mocks base method
-func (m *MockTransferAPI) StartServerWithContext(arg0 aws.Context, arg1 *transfer.StartServerInput, arg2 ...request.Option) (*transfer.StartServerOutput, error) {
+func (m *MockTransferAPI) StartServerWithContext(arg0 context.Context, arg1 *transfer.StartServerInput, arg2 ...request.Option) (*transfer.StartServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockTransferAPIMockRecorder) StopServerRequest(arg0 interface{}) *gomo
 }
 
 // StopServerWithContext mocks base method
-func (m *MockTransferAPI) StopServerWithContext(arg0 aws.Context, arg1 *transfer.StopServerInput, arg2 ...request.Option) (*transfer.StopServerOutput, error) {
+func (m *MockTransferAPI) StopServerWithContext(arg0 context.Context, arg1 *transfer.StopServerInput, arg2 ...request.Option) (*transfer.StopServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockTransferAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gom
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockTransferAPI) TagResourceWithContext(arg0 aws.Context, arg1 *transfer.TagResourceInput, arg2 ...request.Option) (*transfer.TagResourceOutput, error) {
+func (m *MockTransferAPI) TagResourceWithContext(arg0 context.Context, arg1 *transfer.TagResourceInput, arg2 ...request.Option) (*transfer.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockTransferAPIMockRecorder) TestIdentityProviderRequest(arg0 interfac
 }
 
 // TestIdentityProviderWithContext mocks base method
-func (m *MockTransferAPI) TestIdentityProviderWithContext(arg0 aws.Context, arg1 *transfer.TestIdentityProviderInput, arg2 ...request.Option) (*transfer.TestIdentityProviderOutput, error) {
+func (m *MockTransferAPI) TestIdentityProviderWithContext(arg0 context.Context, arg1 *transfer.TestIdentityProviderInput, arg2 ...request.Option) (*transfer.TestIdentityProviderOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockTransferAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *g
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockTransferAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *transfer.UntagResourceInput, arg2 ...request.Option) (*transfer.UntagResourceOutput, error) {
+func (m *MockTransferAPI) UntagResourceWithContext(arg0 context.Context, arg1 *transfer.UntagResourceInput, arg2 ...request.Option) (*transfer.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockTransferAPIMockRecorder) UpdateServerRequest(arg0 interface{}) *go
 }
 
 // UpdateServerWithContext mocks base method
-func (m *MockTransferAPI) UpdateServerWithContext(arg0 aws.Context, arg1 *transfer.UpdateServerInput, arg2 ...request.Option) (*transfer.UpdateServerOutput, error) {
+func (m *MockTransferAPI) UpdateServerWithContext(arg0 context.Context, arg1 *transfer.UpdateServerInput, arg2 ...request.Option) (*transfer.UpdateServerOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -916,7 +916,7 @@ func (mr *MockTransferAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomo
 }
 
 // UpdateUserWithContext mocks base method
-func (m *MockTransferAPI) UpdateUserWithContext(arg0 aws.Context, arg1 *transfer.UpdateUserInput, arg2 ...request.Option) (*transfer.UpdateUserOutput, error) {
+func (m *MockTransferAPI) UpdateUserWithContext(arg0 context.Context, arg1 *transfer.UpdateUserInput, arg2 ...request.Option) (*transfer.UpdateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

@@ -5,7 +5,7 @@
 package athenamock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	athena "github.com/aws/aws-sdk-go/service/athena"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockAthenaAPIMockRecorder) BatchGetNamedQueryRequest(arg0 interface{})
 }
 
 // BatchGetNamedQueryWithContext mocks base method
-func (m *MockAthenaAPI) BatchGetNamedQueryWithContext(arg0 aws.Context, arg1 *athena.BatchGetNamedQueryInput, arg2 ...request.Option) (*athena.BatchGetNamedQueryOutput, error) {
+func (m *MockAthenaAPI) BatchGetNamedQueryWithContext(arg0 context.Context, arg1 *athena.BatchGetNamedQueryInput, arg2 ...request.Option) (*athena.BatchGetNamedQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockAthenaAPIMockRecorder) BatchGetQueryExecutionRequest(arg0 interfac
 }
 
 // BatchGetQueryExecutionWithContext mocks base method
-func (m *MockAthenaAPI) BatchGetQueryExecutionWithContext(arg0 aws.Context, arg1 *athena.BatchGetQueryExecutionInput, arg2 ...request.Option) (*athena.BatchGetQueryExecutionOutput, error) {
+func (m *MockAthenaAPI) BatchGetQueryExecutionWithContext(arg0 context.Context, arg1 *athena.BatchGetQueryExecutionInput, arg2 ...request.Option) (*athena.BatchGetQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockAthenaAPIMockRecorder) CreateNamedQueryRequest(arg0 interface{}) *
 }
 
 // CreateNamedQueryWithContext mocks base method
-func (m *MockAthenaAPI) CreateNamedQueryWithContext(arg0 aws.Context, arg1 *athena.CreateNamedQueryInput, arg2 ...request.Option) (*athena.CreateNamedQueryOutput, error) {
+func (m *MockAthenaAPI) CreateNamedQueryWithContext(arg0 context.Context, arg1 *athena.CreateNamedQueryInput, arg2 ...request.Option) (*athena.CreateNamedQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockAthenaAPIMockRecorder) DeleteNamedQueryRequest(arg0 interface{}) *
 }
 
 // DeleteNamedQueryWithContext mocks base method
-func (m *MockAthenaAPI) DeleteNamedQueryWithContext(arg0 aws.Context, arg1 *athena.DeleteNamedQueryInput, arg2 ...request.Option) (*athena.DeleteNamedQueryOutput, error) {
+func (m *MockAthenaAPI) DeleteNamedQueryWithContext(arg0 context.Context, arg1 *athena.DeleteNamedQueryInput, arg2 ...request.Option) (*athena.DeleteNamedQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockAthenaAPIMockRecorder) GetNamedQueryRequest(arg0 interface{}) *gom
 }
 
 // GetNamedQueryWithContext mocks base method
-func (m *MockAthenaAPI) GetNamedQueryWithContext(arg0 aws.Context, arg1 *athena.GetNamedQueryInput, arg2 ...request.Option) (*athena.GetNamedQueryOutput, error) {
+func (m *MockAthenaAPI) GetNamedQueryWithContext(arg0 context.Context, arg1 *athena.GetNamedQueryInput, arg2 ...request.Option) (*athena.GetNamedQueryOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockAthenaAPIMockRecorder) GetQueryExecutionRequest(arg0 interface{}) 
 }
 
 // GetQueryExecutionWithContext mocks base method
-func (m *MockAthenaAPI) GetQueryExecutionWithContext(arg0 aws.Context, arg1 *athena.GetQueryExecutionInput, arg2 ...request.Option) (*athena.GetQueryExecutionOutput, error) {
+func (m *MockAthenaAPI) GetQueryExecutionWithContext(arg0 context.Context, arg1 *athena.GetQueryExecutionInput, arg2 ...request.Option) (*athena.GetQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockAthenaAPIMockRecorder) GetQueryResultsPages(arg0, arg1 interface{}
 }
 
 // GetQueryResultsPagesWithContext mocks base method
-func (m *MockAthenaAPI) GetQueryResultsPagesWithContext(arg0 aws.Context, arg1 *athena.GetQueryResultsInput, arg2 func(*athena.GetQueryResultsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAthenaAPI) GetQueryResultsPagesWithContext(arg0 context.Context, arg1 *athena.GetQueryResultsInput, arg2 func(*athena.GetQueryResultsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockAthenaAPIMockRecorder) GetQueryResultsRequest(arg0 interface{}) *g
 }
 
 // GetQueryResultsWithContext mocks base method
-func (m *MockAthenaAPI) GetQueryResultsWithContext(arg0 aws.Context, arg1 *athena.GetQueryResultsInput, arg2 ...request.Option) (*athena.GetQueryResultsOutput, error) {
+func (m *MockAthenaAPI) GetQueryResultsWithContext(arg0 context.Context, arg1 *athena.GetQueryResultsInput, arg2 ...request.Option) (*athena.GetQueryResultsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockAthenaAPIMockRecorder) ListNamedQueriesPages(arg0, arg1 interface{
 }
 
 // ListNamedQueriesPagesWithContext mocks base method
-func (m *MockAthenaAPI) ListNamedQueriesPagesWithContext(arg0 aws.Context, arg1 *athena.ListNamedQueriesInput, arg2 func(*athena.ListNamedQueriesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAthenaAPI) ListNamedQueriesPagesWithContext(arg0 context.Context, arg1 *athena.ListNamedQueriesInput, arg2 func(*athena.ListNamedQueriesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockAthenaAPIMockRecorder) ListNamedQueriesRequest(arg0 interface{}) *
 }
 
 // ListNamedQueriesWithContext mocks base method
-func (m *MockAthenaAPI) ListNamedQueriesWithContext(arg0 aws.Context, arg1 *athena.ListNamedQueriesInput, arg2 ...request.Option) (*athena.ListNamedQueriesOutput, error) {
+func (m *MockAthenaAPI) ListNamedQueriesWithContext(arg0 context.Context, arg1 *athena.ListNamedQueriesInput, arg2 ...request.Option) (*athena.ListNamedQueriesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockAthenaAPIMockRecorder) ListQueryExecutionsPages(arg0, arg1 interfa
 }
 
 // ListQueryExecutionsPagesWithContext mocks base method
-func (m *MockAthenaAPI) ListQueryExecutionsPagesWithContext(arg0 aws.Context, arg1 *athena.ListQueryExecutionsInput, arg2 func(*athena.ListQueryExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockAthenaAPI) ListQueryExecutionsPagesWithContext(arg0 context.Context, arg1 *athena.ListQueryExecutionsInput, arg2 func(*athena.ListQueryExecutionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -565,7 +565,7 @@ func (mr *MockAthenaAPIMockRecorder) ListQueryExecutionsRequest(arg0 interface{}
 }
 
 // ListQueryExecutionsWithContext mocks base method
-func (m *MockAthenaAPI) ListQueryExecutionsWithContext(arg0 aws.Context, arg1 *athena.ListQueryExecutionsInput, arg2 ...request.Option) (*athena.ListQueryExecutionsOutput, error) {
+func (m *MockAthenaAPI) ListQueryExecutionsWithContext(arg0 context.Context, arg1 *athena.ListQueryExecutionsInput, arg2 ...request.Option) (*athena.ListQueryExecutionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -615,7 +615,7 @@ func (mr *MockAthenaAPIMockRecorder) StartQueryExecutionRequest(arg0 interface{}
 }
 
 // StartQueryExecutionWithContext mocks base method
-func (m *MockAthenaAPI) StartQueryExecutionWithContext(arg0 aws.Context, arg1 *athena.StartQueryExecutionInput, arg2 ...request.Option) (*athena.StartQueryExecutionOutput, error) {
+func (m *MockAthenaAPI) StartQueryExecutionWithContext(arg0 context.Context, arg1 *athena.StartQueryExecutionInput, arg2 ...request.Option) (*athena.StartQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -665,7 +665,7 @@ func (mr *MockAthenaAPIMockRecorder) StopQueryExecutionRequest(arg0 interface{})
 }
 
 // StopQueryExecutionWithContext mocks base method
-func (m *MockAthenaAPI) StopQueryExecutionWithContext(arg0 aws.Context, arg1 *athena.StopQueryExecutionInput, arg2 ...request.Option) (*athena.StopQueryExecutionOutput, error) {
+func (m *MockAthenaAPI) StopQueryExecutionWithContext(arg0 context.Context, arg1 *athena.StopQueryExecutionInput, arg2 ...request.Option) (*athena.StopQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

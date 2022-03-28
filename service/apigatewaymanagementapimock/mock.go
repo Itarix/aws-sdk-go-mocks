@@ -5,7 +5,7 @@
 package apigatewaymanagementapimock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	apigatewaymanagementapi "github.com/aws/aws-sdk-go/service/apigatewaymanagementapi"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockApiGatewayManagementApiAPIMockRecorder) PostToConnectionRequest(ar
 }
 
 // PostToConnectionWithContext mocks base method
-func (m *MockApiGatewayManagementApiAPI) PostToConnectionWithContext(arg0 aws.Context, arg1 *apigatewaymanagementapi.PostToConnectionInput, arg2 ...request.Option) (*apigatewaymanagementapi.PostToConnectionOutput, error) {
+func (m *MockApiGatewayManagementApiAPI) PostToConnectionWithContext(arg0 context.Context, arg1 *apigatewaymanagementapi.PostToConnectionInput, arg2 ...request.Option) (*apigatewaymanagementapi.PostToConnectionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

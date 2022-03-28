@@ -5,7 +5,7 @@
 package costandusagereportservicemock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	costandusagereportservice "github.com/aws/aws-sdk-go/service/costandusagereportservice"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCostandUsageReportServiceAPIMockRecorder) DeleteReportDefinitionRe
 }
 
 // DeleteReportDefinitionWithContext mocks base method
-func (m *MockCostandUsageReportServiceAPI) DeleteReportDefinitionWithContext(arg0 aws.Context, arg1 *costandusagereportservice.DeleteReportDefinitionInput, arg2 ...request.Option) (*costandusagereportservice.DeleteReportDefinitionOutput, error) {
+func (m *MockCostandUsageReportServiceAPI) DeleteReportDefinitionWithContext(arg0 context.Context, arg1 *costandusagereportservice.DeleteReportDefinitionInput, arg2 ...request.Option) (*costandusagereportservice.DeleteReportDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -115,7 +115,7 @@ func (mr *MockCostandUsageReportServiceAPIMockRecorder) DescribeReportDefinition
 }
 
 // DescribeReportDefinitionsPagesWithContext mocks base method
-func (m *MockCostandUsageReportServiceAPI) DescribeReportDefinitionsPagesWithContext(arg0 aws.Context, arg1 *costandusagereportservice.DescribeReportDefinitionsInput, arg2 func(*costandusagereportservice.DescribeReportDefinitionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCostandUsageReportServiceAPI) DescribeReportDefinitionsPagesWithContext(arg0 context.Context, arg1 *costandusagereportservice.DescribeReportDefinitionsInput, arg2 func(*costandusagereportservice.DescribeReportDefinitionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -149,7 +149,7 @@ func (mr *MockCostandUsageReportServiceAPIMockRecorder) DescribeReportDefinition
 }
 
 // DescribeReportDefinitionsWithContext mocks base method
-func (m *MockCostandUsageReportServiceAPI) DescribeReportDefinitionsWithContext(arg0 aws.Context, arg1 *costandusagereportservice.DescribeReportDefinitionsInput, arg2 ...request.Option) (*costandusagereportservice.DescribeReportDefinitionsOutput, error) {
+func (m *MockCostandUsageReportServiceAPI) DescribeReportDefinitionsWithContext(arg0 context.Context, arg1 *costandusagereportservice.DescribeReportDefinitionsInput, arg2 ...request.Option) (*costandusagereportservice.DescribeReportDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -199,7 +199,7 @@ func (mr *MockCostandUsageReportServiceAPIMockRecorder) PutReportDefinitionReque
 }
 
 // PutReportDefinitionWithContext mocks base method
-func (m *MockCostandUsageReportServiceAPI) PutReportDefinitionWithContext(arg0 aws.Context, arg1 *costandusagereportservice.PutReportDefinitionInput, arg2 ...request.Option) (*costandusagereportservice.PutReportDefinitionOutput, error) {
+func (m *MockCostandUsageReportServiceAPI) PutReportDefinitionWithContext(arg0 context.Context, arg1 *costandusagereportservice.PutReportDefinitionInput, arg2 ...request.Option) (*costandusagereportservice.PutReportDefinitionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

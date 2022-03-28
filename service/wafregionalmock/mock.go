@@ -5,7 +5,7 @@
 package wafregionalmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	waf "github.com/aws/aws-sdk-go/service/waf"
 	wafregional "github.com/aws/aws-sdk-go/service/wafregional"
@@ -67,7 +67,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) AssociateWebACLRequest(arg0 interface{
 }
 
 // AssociateWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) AssociateWebACLWithContext(arg0 aws.Context, arg1 *wafregional.AssociateWebACLInput, arg2 ...request.Option) (*wafregional.AssociateWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) AssociateWebACLWithContext(arg0 context.Context, arg1 *wafregional.AssociateWebACLInput, arg2 ...request.Option) (*wafregional.AssociateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -117,7 +117,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateByteMatchSetRequest(arg0 interfa
 }
 
 // CreateByteMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateByteMatchSetInput, arg2 ...request.Option) (*waf.CreateByteMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateByteMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateByteMatchSetInput, arg2 ...request.Option) (*waf.CreateByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -167,7 +167,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateGeoMatchSetRequest(arg0 interfac
 }
 
 // CreateGeoMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateGeoMatchSetInput, arg2 ...request.Option) (*waf.CreateGeoMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateGeoMatchSetInput, arg2 ...request.Option) (*waf.CreateGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -217,7 +217,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateIPSetRequest(arg0 interface{}) *
 }
 
 // CreateIPSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateIPSetWithContext(arg0 aws.Context, arg1 *waf.CreateIPSetInput, arg2 ...request.Option) (*waf.CreateIPSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateIPSetWithContext(arg0 context.Context, arg1 *waf.CreateIPSetInput, arg2 ...request.Option) (*waf.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -267,7 +267,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateRateBasedRuleRequest(arg0 interf
 }
 
 // CreateRateBasedRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.CreateRateBasedRuleInput, arg2 ...request.Option) (*waf.CreateRateBasedRuleOutput, error) {
+func (m *MockWAFRegionalAPI) CreateRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.CreateRateBasedRuleInput, arg2 ...request.Option) (*waf.CreateRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -317,7 +317,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateRegexMatchSetRequest(arg0 interf
 }
 
 // CreateRegexMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateRegexMatchSetInput, arg2 ...request.Option) (*waf.CreateRegexMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateRegexMatchSetInput, arg2 ...request.Option) (*waf.CreateRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -367,7 +367,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateRegexPatternSetRequest(arg0 inte
 }
 
 // CreateRegexPatternSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.CreateRegexPatternSetInput, arg2 ...request.Option) (*waf.CreateRegexPatternSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.CreateRegexPatternSetInput, arg2 ...request.Option) (*waf.CreateRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -432,7 +432,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateRuleGroupRequest(arg0 interface{
 }
 
 // CreateRuleGroupWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateRuleGroupWithContext(arg0 aws.Context, arg1 *waf.CreateRuleGroupInput, arg2 ...request.Option) (*waf.CreateRuleGroupOutput, error) {
+func (m *MockWAFRegionalAPI) CreateRuleGroupWithContext(arg0 context.Context, arg1 *waf.CreateRuleGroupInput, arg2 ...request.Option) (*waf.CreateRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -467,7 +467,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateRuleRequest(arg0 interface{}) *g
 }
 
 // CreateRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateRuleWithContext(arg0 aws.Context, arg1 *waf.CreateRuleInput, arg2 ...request.Option) (*waf.CreateRuleOutput, error) {
+func (m *MockWAFRegionalAPI) CreateRuleWithContext(arg0 context.Context, arg1 *waf.CreateRuleInput, arg2 ...request.Option) (*waf.CreateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -517,7 +517,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateSizeConstraintSetRequest(arg0 in
 }
 
 // CreateSizeConstraintSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.CreateSizeConstraintSetInput, arg2 ...request.Option) (*waf.CreateSizeConstraintSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.CreateSizeConstraintSetInput, arg2 ...request.Option) (*waf.CreateSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -567,7 +567,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateSqlInjectionMatchSetRequest(arg0
 }
 
 // CreateSqlInjectionMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.CreateSqlInjectionMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.CreateSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -617,7 +617,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateWebACLRequest(arg0 interface{}) 
 }
 
 // CreateWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateWebACLWithContext(arg0 aws.Context, arg1 *waf.CreateWebACLInput, arg2 ...request.Option) (*waf.CreateWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) CreateWebACLWithContext(arg0 context.Context, arg1 *waf.CreateWebACLInput, arg2 ...request.Option) (*waf.CreateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -667,7 +667,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) CreateXssMatchSetRequest(arg0 interfac
 }
 
 // CreateXssMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) CreateXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.CreateXssMatchSetInput, arg2 ...request.Option) (*waf.CreateXssMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) CreateXssMatchSetWithContext(arg0 context.Context, arg1 *waf.CreateXssMatchSetInput, arg2 ...request.Option) (*waf.CreateXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -717,7 +717,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteByteMatchSetRequest(arg0 interfa
 }
 
 // DeleteByteMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteByteMatchSetInput, arg2 ...request.Option) (*waf.DeleteByteMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteByteMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteByteMatchSetInput, arg2 ...request.Option) (*waf.DeleteByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -767,7 +767,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteGeoMatchSetRequest(arg0 interfac
 }
 
 // DeleteGeoMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteGeoMatchSetInput, arg2 ...request.Option) (*waf.DeleteGeoMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteGeoMatchSetInput, arg2 ...request.Option) (*waf.DeleteGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -817,7 +817,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteIPSetRequest(arg0 interface{}) *
 }
 
 // DeleteIPSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteIPSetWithContext(arg0 aws.Context, arg1 *waf.DeleteIPSetInput, arg2 ...request.Option) (*waf.DeleteIPSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteIPSetWithContext(arg0 context.Context, arg1 *waf.DeleteIPSetInput, arg2 ...request.Option) (*waf.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -867,7 +867,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteLoggingConfigurationRequest(arg0
 }
 
 // DeleteLoggingConfigurationWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteLoggingConfigurationWithContext(arg0 aws.Context, arg1 *waf.DeleteLoggingConfigurationInput, arg2 ...request.Option) (*waf.DeleteLoggingConfigurationOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteLoggingConfigurationWithContext(arg0 context.Context, arg1 *waf.DeleteLoggingConfigurationInput, arg2 ...request.Option) (*waf.DeleteLoggingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -917,7 +917,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeletePermissionPolicyRequest(arg0 int
 }
 
 // DeletePermissionPolicyWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeletePermissionPolicyWithContext(arg0 aws.Context, arg1 *waf.DeletePermissionPolicyInput, arg2 ...request.Option) (*waf.DeletePermissionPolicyOutput, error) {
+func (m *MockWAFRegionalAPI) DeletePermissionPolicyWithContext(arg0 context.Context, arg1 *waf.DeletePermissionPolicyInput, arg2 ...request.Option) (*waf.DeletePermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -967,7 +967,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteRateBasedRuleRequest(arg0 interf
 }
 
 // DeleteRateBasedRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.DeleteRateBasedRuleInput, arg2 ...request.Option) (*waf.DeleteRateBasedRuleOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.DeleteRateBasedRuleInput, arg2 ...request.Option) (*waf.DeleteRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1017,7 +1017,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteRegexMatchSetRequest(arg0 interf
 }
 
 // DeleteRegexMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteRegexMatchSetInput, arg2 ...request.Option) (*waf.DeleteRegexMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteRegexMatchSetInput, arg2 ...request.Option) (*waf.DeleteRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1067,7 +1067,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteRegexPatternSetRequest(arg0 inte
 }
 
 // DeleteRegexPatternSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.DeleteRegexPatternSetInput, arg2 ...request.Option) (*waf.DeleteRegexPatternSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.DeleteRegexPatternSetInput, arg2 ...request.Option) (*waf.DeleteRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1132,7 +1132,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteRuleGroupRequest(arg0 interface{
 }
 
 // DeleteRuleGroupWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteRuleGroupWithContext(arg0 aws.Context, arg1 *waf.DeleteRuleGroupInput, arg2 ...request.Option) (*waf.DeleteRuleGroupOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteRuleGroupWithContext(arg0 context.Context, arg1 *waf.DeleteRuleGroupInput, arg2 ...request.Option) (*waf.DeleteRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1167,7 +1167,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteRuleRequest(arg0 interface{}) *g
 }
 
 // DeleteRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteRuleWithContext(arg0 aws.Context, arg1 *waf.DeleteRuleInput, arg2 ...request.Option) (*waf.DeleteRuleOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteRuleWithContext(arg0 context.Context, arg1 *waf.DeleteRuleInput, arg2 ...request.Option) (*waf.DeleteRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1217,7 +1217,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteSizeConstraintSetRequest(arg0 in
 }
 
 // DeleteSizeConstraintSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.DeleteSizeConstraintSetInput, arg2 ...request.Option) (*waf.DeleteSizeConstraintSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.DeleteSizeConstraintSetInput, arg2 ...request.Option) (*waf.DeleteSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1267,7 +1267,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteSqlInjectionMatchSetRequest(arg0
 }
 
 // DeleteSqlInjectionMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.DeleteSqlInjectionMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.DeleteSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1317,7 +1317,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteWebACLRequest(arg0 interface{}) 
 }
 
 // DeleteWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteWebACLWithContext(arg0 aws.Context, arg1 *waf.DeleteWebACLInput, arg2 ...request.Option) (*waf.DeleteWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteWebACLWithContext(arg0 context.Context, arg1 *waf.DeleteWebACLInput, arg2 ...request.Option) (*waf.DeleteWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1367,7 +1367,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DeleteXssMatchSetRequest(arg0 interfac
 }
 
 // DeleteXssMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) DeleteXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.DeleteXssMatchSetInput, arg2 ...request.Option) (*waf.DeleteXssMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) DeleteXssMatchSetWithContext(arg0 context.Context, arg1 *waf.DeleteXssMatchSetInput, arg2 ...request.Option) (*waf.DeleteXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1417,7 +1417,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) DisassociateWebACLRequest(arg0 interfa
 }
 
 // DisassociateWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) DisassociateWebACLWithContext(arg0 aws.Context, arg1 *wafregional.DisassociateWebACLInput, arg2 ...request.Option) (*wafregional.DisassociateWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) DisassociateWebACLWithContext(arg0 context.Context, arg1 *wafregional.DisassociateWebACLInput, arg2 ...request.Option) (*wafregional.DisassociateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1467,7 +1467,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetByteMatchSetRequest(arg0 interface{
 }
 
 // GetByteMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetByteMatchSetInput, arg2 ...request.Option) (*waf.GetByteMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetByteMatchSetWithContext(arg0 context.Context, arg1 *waf.GetByteMatchSetInput, arg2 ...request.Option) (*waf.GetByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1547,7 +1547,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetChangeTokenStatusRequest(arg0 inter
 }
 
 // GetChangeTokenStatusWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetChangeTokenStatusWithContext(arg0 aws.Context, arg1 *waf.GetChangeTokenStatusInput, arg2 ...request.Option) (*waf.GetChangeTokenStatusOutput, error) {
+func (m *MockWAFRegionalAPI) GetChangeTokenStatusWithContext(arg0 context.Context, arg1 *waf.GetChangeTokenStatusInput, arg2 ...request.Option) (*waf.GetChangeTokenStatusOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1567,7 +1567,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetChangeTokenStatusWithContext(arg0, 
 }
 
 // GetChangeTokenWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetChangeTokenWithContext(arg0 aws.Context, arg1 *waf.GetChangeTokenInput, arg2 ...request.Option) (*waf.GetChangeTokenOutput, error) {
+func (m *MockWAFRegionalAPI) GetChangeTokenWithContext(arg0 context.Context, arg1 *waf.GetChangeTokenInput, arg2 ...request.Option) (*waf.GetChangeTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1617,7 +1617,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetGeoMatchSetRequest(arg0 interface{}
 }
 
 // GetGeoMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetGeoMatchSetInput, arg2 ...request.Option) (*waf.GetGeoMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.GetGeoMatchSetInput, arg2 ...request.Option) (*waf.GetGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1667,7 +1667,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetIPSetRequest(arg0 interface{}) *gom
 }
 
 // GetIPSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetIPSetWithContext(arg0 aws.Context, arg1 *waf.GetIPSetInput, arg2 ...request.Option) (*waf.GetIPSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetIPSetWithContext(arg0 context.Context, arg1 *waf.GetIPSetInput, arg2 ...request.Option) (*waf.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1717,7 +1717,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetLoggingConfigurationRequest(arg0 in
 }
 
 // GetLoggingConfigurationWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetLoggingConfigurationWithContext(arg0 aws.Context, arg1 *waf.GetLoggingConfigurationInput, arg2 ...request.Option) (*waf.GetLoggingConfigurationOutput, error) {
+func (m *MockWAFRegionalAPI) GetLoggingConfigurationWithContext(arg0 context.Context, arg1 *waf.GetLoggingConfigurationInput, arg2 ...request.Option) (*waf.GetLoggingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1767,7 +1767,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetPermissionPolicyRequest(arg0 interf
 }
 
 // GetPermissionPolicyWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetPermissionPolicyWithContext(arg0 aws.Context, arg1 *waf.GetPermissionPolicyInput, arg2 ...request.Option) (*waf.GetPermissionPolicyOutput, error) {
+func (m *MockWAFRegionalAPI) GetPermissionPolicyWithContext(arg0 context.Context, arg1 *waf.GetPermissionPolicyInput, arg2 ...request.Option) (*waf.GetPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1832,7 +1832,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetRateBasedRuleManagedKeysRequest(arg
 }
 
 // GetRateBasedRuleManagedKeysWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetRateBasedRuleManagedKeysWithContext(arg0 aws.Context, arg1 *waf.GetRateBasedRuleManagedKeysInput, arg2 ...request.Option) (*waf.GetRateBasedRuleManagedKeysOutput, error) {
+func (m *MockWAFRegionalAPI) GetRateBasedRuleManagedKeysWithContext(arg0 context.Context, arg1 *waf.GetRateBasedRuleManagedKeysInput, arg2 ...request.Option) (*waf.GetRateBasedRuleManagedKeysOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1867,7 +1867,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetRateBasedRuleRequest(arg0 interface
 }
 
 // GetRateBasedRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.GetRateBasedRuleInput, arg2 ...request.Option) (*waf.GetRateBasedRuleOutput, error) {
+func (m *MockWAFRegionalAPI) GetRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.GetRateBasedRuleInput, arg2 ...request.Option) (*waf.GetRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1917,7 +1917,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetRegexMatchSetRequest(arg0 interface
 }
 
 // GetRegexMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetRegexMatchSetInput, arg2 ...request.Option) (*waf.GetRegexMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.GetRegexMatchSetInput, arg2 ...request.Option) (*waf.GetRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1967,7 +1967,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetRegexPatternSetRequest(arg0 interfa
 }
 
 // GetRegexPatternSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.GetRegexPatternSetInput, arg2 ...request.Option) (*waf.GetRegexPatternSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.GetRegexPatternSetInput, arg2 ...request.Option) (*waf.GetRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2032,7 +2032,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetRuleGroupRequest(arg0 interface{}) 
 }
 
 // GetRuleGroupWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetRuleGroupWithContext(arg0 aws.Context, arg1 *waf.GetRuleGroupInput, arg2 ...request.Option) (*waf.GetRuleGroupOutput, error) {
+func (m *MockWAFRegionalAPI) GetRuleGroupWithContext(arg0 context.Context, arg1 *waf.GetRuleGroupInput, arg2 ...request.Option) (*waf.GetRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2067,7 +2067,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetRuleRequest(arg0 interface{}) *gomo
 }
 
 // GetRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetRuleWithContext(arg0 aws.Context, arg1 *waf.GetRuleInput, arg2 ...request.Option) (*waf.GetRuleOutput, error) {
+func (m *MockWAFRegionalAPI) GetRuleWithContext(arg0 context.Context, arg1 *waf.GetRuleInput, arg2 ...request.Option) (*waf.GetRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2117,7 +2117,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetSampledRequestsRequest(arg0 interfa
 }
 
 // GetSampledRequestsWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetSampledRequestsWithContext(arg0 aws.Context, arg1 *waf.GetSampledRequestsInput, arg2 ...request.Option) (*waf.GetSampledRequestsOutput, error) {
+func (m *MockWAFRegionalAPI) GetSampledRequestsWithContext(arg0 context.Context, arg1 *waf.GetSampledRequestsInput, arg2 ...request.Option) (*waf.GetSampledRequestsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2167,7 +2167,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetSizeConstraintSetRequest(arg0 inter
 }
 
 // GetSizeConstraintSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.GetSizeConstraintSetInput, arg2 ...request.Option) (*waf.GetSizeConstraintSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.GetSizeConstraintSetInput, arg2 ...request.Option) (*waf.GetSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2217,7 +2217,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetSqlInjectionMatchSetRequest(arg0 in
 }
 
 // GetSqlInjectionMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.GetSqlInjectionMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.GetSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.GetSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2282,7 +2282,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetWebACLForResourceRequest(arg0 inter
 }
 
 // GetWebACLForResourceWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetWebACLForResourceWithContext(arg0 aws.Context, arg1 *wafregional.GetWebACLForResourceInput, arg2 ...request.Option) (*wafregional.GetWebACLForResourceOutput, error) {
+func (m *MockWAFRegionalAPI) GetWebACLForResourceWithContext(arg0 context.Context, arg1 *wafregional.GetWebACLForResourceInput, arg2 ...request.Option) (*wafregional.GetWebACLForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2317,7 +2317,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetWebACLRequest(arg0 interface{}) *go
 }
 
 // GetWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetWebACLWithContext(arg0 aws.Context, arg1 *waf.GetWebACLInput, arg2 ...request.Option) (*waf.GetWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) GetWebACLWithContext(arg0 context.Context, arg1 *waf.GetWebACLInput, arg2 ...request.Option) (*waf.GetWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2367,7 +2367,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) GetXssMatchSetRequest(arg0 interface{}
 }
 
 // GetXssMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) GetXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.GetXssMatchSetInput, arg2 ...request.Option) (*waf.GetXssMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) GetXssMatchSetWithContext(arg0 context.Context, arg1 *waf.GetXssMatchSetInput, arg2 ...request.Option) (*waf.GetXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2417,7 +2417,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListActivatedRulesInRuleGroupRequest(a
 }
 
 // ListActivatedRulesInRuleGroupWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListActivatedRulesInRuleGroupWithContext(arg0 aws.Context, arg1 *waf.ListActivatedRulesInRuleGroupInput, arg2 ...request.Option) (*waf.ListActivatedRulesInRuleGroupOutput, error) {
+func (m *MockWAFRegionalAPI) ListActivatedRulesInRuleGroupWithContext(arg0 context.Context, arg1 *waf.ListActivatedRulesInRuleGroupInput, arg2 ...request.Option) (*waf.ListActivatedRulesInRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2467,7 +2467,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListByteMatchSetsRequest(arg0 interfac
 }
 
 // ListByteMatchSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListByteMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListByteMatchSetsInput, arg2 ...request.Option) (*waf.ListByteMatchSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListByteMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListByteMatchSetsInput, arg2 ...request.Option) (*waf.ListByteMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2517,7 +2517,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListGeoMatchSetsRequest(arg0 interface
 }
 
 // ListGeoMatchSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListGeoMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListGeoMatchSetsInput, arg2 ...request.Option) (*waf.ListGeoMatchSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListGeoMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListGeoMatchSetsInput, arg2 ...request.Option) (*waf.ListGeoMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2567,7 +2567,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListIPSetsRequest(arg0 interface{}) *g
 }
 
 // ListIPSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListIPSetsWithContext(arg0 aws.Context, arg1 *waf.ListIPSetsInput, arg2 ...request.Option) (*waf.ListIPSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListIPSetsWithContext(arg0 context.Context, arg1 *waf.ListIPSetsInput, arg2 ...request.Option) (*waf.ListIPSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2617,7 +2617,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListLoggingConfigurationsRequest(arg0 
 }
 
 // ListLoggingConfigurationsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListLoggingConfigurationsWithContext(arg0 aws.Context, arg1 *waf.ListLoggingConfigurationsInput, arg2 ...request.Option) (*waf.ListLoggingConfigurationsOutput, error) {
+func (m *MockWAFRegionalAPI) ListLoggingConfigurationsWithContext(arg0 context.Context, arg1 *waf.ListLoggingConfigurationsInput, arg2 ...request.Option) (*waf.ListLoggingConfigurationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2667,7 +2667,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListRateBasedRulesRequest(arg0 interfa
 }
 
 // ListRateBasedRulesWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListRateBasedRulesWithContext(arg0 aws.Context, arg1 *waf.ListRateBasedRulesInput, arg2 ...request.Option) (*waf.ListRateBasedRulesOutput, error) {
+func (m *MockWAFRegionalAPI) ListRateBasedRulesWithContext(arg0 context.Context, arg1 *waf.ListRateBasedRulesInput, arg2 ...request.Option) (*waf.ListRateBasedRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2717,7 +2717,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListRegexMatchSetsRequest(arg0 interfa
 }
 
 // ListRegexMatchSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListRegexMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListRegexMatchSetsInput, arg2 ...request.Option) (*waf.ListRegexMatchSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListRegexMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListRegexMatchSetsInput, arg2 ...request.Option) (*waf.ListRegexMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2767,7 +2767,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListRegexPatternSetsRequest(arg0 inter
 }
 
 // ListRegexPatternSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListRegexPatternSetsWithContext(arg0 aws.Context, arg1 *waf.ListRegexPatternSetsInput, arg2 ...request.Option) (*waf.ListRegexPatternSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListRegexPatternSetsWithContext(arg0 context.Context, arg1 *waf.ListRegexPatternSetsInput, arg2 ...request.Option) (*waf.ListRegexPatternSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2817,7 +2817,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListResourcesForWebACLRequest(arg0 int
 }
 
 // ListResourcesForWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListResourcesForWebACLWithContext(arg0 aws.Context, arg1 *wafregional.ListResourcesForWebACLInput, arg2 ...request.Option) (*wafregional.ListResourcesForWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) ListResourcesForWebACLWithContext(arg0 context.Context, arg1 *wafregional.ListResourcesForWebACLInput, arg2 ...request.Option) (*wafregional.ListResourcesForWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2867,7 +2867,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListRuleGroupsRequest(arg0 interface{}
 }
 
 // ListRuleGroupsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListRuleGroupsWithContext(arg0 aws.Context, arg1 *waf.ListRuleGroupsInput, arg2 ...request.Option) (*waf.ListRuleGroupsOutput, error) {
+func (m *MockWAFRegionalAPI) ListRuleGroupsWithContext(arg0 context.Context, arg1 *waf.ListRuleGroupsInput, arg2 ...request.Option) (*waf.ListRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2917,7 +2917,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListRulesRequest(arg0 interface{}) *go
 }
 
 // ListRulesWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListRulesWithContext(arg0 aws.Context, arg1 *waf.ListRulesInput, arg2 ...request.Option) (*waf.ListRulesOutput, error) {
+func (m *MockWAFRegionalAPI) ListRulesWithContext(arg0 context.Context, arg1 *waf.ListRulesInput, arg2 ...request.Option) (*waf.ListRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2967,7 +2967,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListSizeConstraintSetsRequest(arg0 int
 }
 
 // ListSizeConstraintSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListSizeConstraintSetsWithContext(arg0 aws.Context, arg1 *waf.ListSizeConstraintSetsInput, arg2 ...request.Option) (*waf.ListSizeConstraintSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListSizeConstraintSetsWithContext(arg0 context.Context, arg1 *waf.ListSizeConstraintSetsInput, arg2 ...request.Option) (*waf.ListSizeConstraintSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3017,7 +3017,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListSqlInjectionMatchSetsRequest(arg0 
 }
 
 // ListSqlInjectionMatchSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListSqlInjectionMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListSqlInjectionMatchSetsInput, arg2 ...request.Option) (*waf.ListSqlInjectionMatchSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListSqlInjectionMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListSqlInjectionMatchSetsInput, arg2 ...request.Option) (*waf.ListSqlInjectionMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3067,7 +3067,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListSubscribedRuleGroupsRequest(arg0 i
 }
 
 // ListSubscribedRuleGroupsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListSubscribedRuleGroupsWithContext(arg0 aws.Context, arg1 *waf.ListSubscribedRuleGroupsInput, arg2 ...request.Option) (*waf.ListSubscribedRuleGroupsOutput, error) {
+func (m *MockWAFRegionalAPI) ListSubscribedRuleGroupsWithContext(arg0 context.Context, arg1 *waf.ListSubscribedRuleGroupsInput, arg2 ...request.Option) (*waf.ListSubscribedRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3117,7 +3117,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListWebACLsRequest(arg0 interface{}) *
 }
 
 // ListWebACLsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListWebACLsWithContext(arg0 aws.Context, arg1 *waf.ListWebACLsInput, arg2 ...request.Option) (*waf.ListWebACLsOutput, error) {
+func (m *MockWAFRegionalAPI) ListWebACLsWithContext(arg0 context.Context, arg1 *waf.ListWebACLsInput, arg2 ...request.Option) (*waf.ListWebACLsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3167,7 +3167,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) ListXssMatchSetsRequest(arg0 interface
 }
 
 // ListXssMatchSetsWithContext mocks base method
-func (m *MockWAFRegionalAPI) ListXssMatchSetsWithContext(arg0 aws.Context, arg1 *waf.ListXssMatchSetsInput, arg2 ...request.Option) (*waf.ListXssMatchSetsOutput, error) {
+func (m *MockWAFRegionalAPI) ListXssMatchSetsWithContext(arg0 context.Context, arg1 *waf.ListXssMatchSetsInput, arg2 ...request.Option) (*waf.ListXssMatchSetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3217,7 +3217,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) PutLoggingConfigurationRequest(arg0 in
 }
 
 // PutLoggingConfigurationWithContext mocks base method
-func (m *MockWAFRegionalAPI) PutLoggingConfigurationWithContext(arg0 aws.Context, arg1 *waf.PutLoggingConfigurationInput, arg2 ...request.Option) (*waf.PutLoggingConfigurationOutput, error) {
+func (m *MockWAFRegionalAPI) PutLoggingConfigurationWithContext(arg0 context.Context, arg1 *waf.PutLoggingConfigurationInput, arg2 ...request.Option) (*waf.PutLoggingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3267,7 +3267,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) PutPermissionPolicyRequest(arg0 interf
 }
 
 // PutPermissionPolicyWithContext mocks base method
-func (m *MockWAFRegionalAPI) PutPermissionPolicyWithContext(arg0 aws.Context, arg1 *waf.PutPermissionPolicyInput, arg2 ...request.Option) (*waf.PutPermissionPolicyOutput, error) {
+func (m *MockWAFRegionalAPI) PutPermissionPolicyWithContext(arg0 context.Context, arg1 *waf.PutPermissionPolicyInput, arg2 ...request.Option) (*waf.PutPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3317,7 +3317,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateByteMatchSetRequest(arg0 interfa
 }
 
 // UpdateByteMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateByteMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateByteMatchSetInput, arg2 ...request.Option) (*waf.UpdateByteMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateByteMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateByteMatchSetInput, arg2 ...request.Option) (*waf.UpdateByteMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3367,7 +3367,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateGeoMatchSetRequest(arg0 interfac
 }
 
 // UpdateGeoMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateGeoMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateGeoMatchSetInput, arg2 ...request.Option) (*waf.UpdateGeoMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateGeoMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateGeoMatchSetInput, arg2 ...request.Option) (*waf.UpdateGeoMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3417,7 +3417,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateIPSetRequest(arg0 interface{}) *
 }
 
 // UpdateIPSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateIPSetWithContext(arg0 aws.Context, arg1 *waf.UpdateIPSetInput, arg2 ...request.Option) (*waf.UpdateIPSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateIPSetWithContext(arg0 context.Context, arg1 *waf.UpdateIPSetInput, arg2 ...request.Option) (*waf.UpdateIPSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3467,7 +3467,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateRateBasedRuleRequest(arg0 interf
 }
 
 // UpdateRateBasedRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateRateBasedRuleWithContext(arg0 aws.Context, arg1 *waf.UpdateRateBasedRuleInput, arg2 ...request.Option) (*waf.UpdateRateBasedRuleOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateRateBasedRuleWithContext(arg0 context.Context, arg1 *waf.UpdateRateBasedRuleInput, arg2 ...request.Option) (*waf.UpdateRateBasedRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3517,7 +3517,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateRegexMatchSetRequest(arg0 interf
 }
 
 // UpdateRegexMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateRegexMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateRegexMatchSetInput, arg2 ...request.Option) (*waf.UpdateRegexMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateRegexMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateRegexMatchSetInput, arg2 ...request.Option) (*waf.UpdateRegexMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3567,7 +3567,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateRegexPatternSetRequest(arg0 inte
 }
 
 // UpdateRegexPatternSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateRegexPatternSetWithContext(arg0 aws.Context, arg1 *waf.UpdateRegexPatternSetInput, arg2 ...request.Option) (*waf.UpdateRegexPatternSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateRegexPatternSetWithContext(arg0 context.Context, arg1 *waf.UpdateRegexPatternSetInput, arg2 ...request.Option) (*waf.UpdateRegexPatternSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3632,7 +3632,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateRuleGroupRequest(arg0 interface{
 }
 
 // UpdateRuleGroupWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateRuleGroupWithContext(arg0 aws.Context, arg1 *waf.UpdateRuleGroupInput, arg2 ...request.Option) (*waf.UpdateRuleGroupOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateRuleGroupWithContext(arg0 context.Context, arg1 *waf.UpdateRuleGroupInput, arg2 ...request.Option) (*waf.UpdateRuleGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3667,7 +3667,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateRuleRequest(arg0 interface{}) *g
 }
 
 // UpdateRuleWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateRuleWithContext(arg0 aws.Context, arg1 *waf.UpdateRuleInput, arg2 ...request.Option) (*waf.UpdateRuleOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateRuleWithContext(arg0 context.Context, arg1 *waf.UpdateRuleInput, arg2 ...request.Option) (*waf.UpdateRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3717,7 +3717,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateSizeConstraintSetRequest(arg0 in
 }
 
 // UpdateSizeConstraintSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateSizeConstraintSetWithContext(arg0 aws.Context, arg1 *waf.UpdateSizeConstraintSetInput, arg2 ...request.Option) (*waf.UpdateSizeConstraintSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateSizeConstraintSetWithContext(arg0 context.Context, arg1 *waf.UpdateSizeConstraintSetInput, arg2 ...request.Option) (*waf.UpdateSizeConstraintSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3767,7 +3767,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateSqlInjectionMatchSetRequest(arg0
 }
 
 // UpdateSqlInjectionMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateSqlInjectionMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.UpdateSqlInjectionMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateSqlInjectionMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateSqlInjectionMatchSetInput, arg2 ...request.Option) (*waf.UpdateSqlInjectionMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3817,7 +3817,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateWebACLRequest(arg0 interface{}) 
 }
 
 // UpdateWebACLWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateWebACLWithContext(arg0 aws.Context, arg1 *waf.UpdateWebACLInput, arg2 ...request.Option) (*waf.UpdateWebACLOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateWebACLWithContext(arg0 context.Context, arg1 *waf.UpdateWebACLInput, arg2 ...request.Option) (*waf.UpdateWebACLOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -3867,7 +3867,7 @@ func (mr *MockWAFRegionalAPIMockRecorder) UpdateXssMatchSetRequest(arg0 interfac
 }
 
 // UpdateXssMatchSetWithContext mocks base method
-func (m *MockWAFRegionalAPI) UpdateXssMatchSetWithContext(arg0 aws.Context, arg1 *waf.UpdateXssMatchSetInput, arg2 ...request.Option) (*waf.UpdateXssMatchSetOutput, error) {
+func (m *MockWAFRegionalAPI) UpdateXssMatchSetWithContext(arg0 context.Context, arg1 *waf.UpdateXssMatchSetInput, arg2 ...request.Option) (*waf.UpdateXssMatchSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

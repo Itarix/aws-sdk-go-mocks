@@ -5,7 +5,7 @@
 package inspectormock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	inspector "github.com/aws/aws-sdk-go/service/inspector"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockInspectorAPIMockRecorder) AddAttributesToFindingsRequest(arg0 inte
 }
 
 // AddAttributesToFindingsWithContext mocks base method
-func (m *MockInspectorAPI) AddAttributesToFindingsWithContext(arg0 aws.Context, arg1 *inspector.AddAttributesToFindingsInput, arg2 ...request.Option) (*inspector.AddAttributesToFindingsOutput, error) {
+func (m *MockInspectorAPI) AddAttributesToFindingsWithContext(arg0 context.Context, arg1 *inspector.AddAttributesToFindingsInput, arg2 ...request.Option) (*inspector.AddAttributesToFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockInspectorAPIMockRecorder) CreateAssessmentTargetRequest(arg0 inter
 }
 
 // CreateAssessmentTargetWithContext mocks base method
-func (m *MockInspectorAPI) CreateAssessmentTargetWithContext(arg0 aws.Context, arg1 *inspector.CreateAssessmentTargetInput, arg2 ...request.Option) (*inspector.CreateAssessmentTargetOutput, error) {
+func (m *MockInspectorAPI) CreateAssessmentTargetWithContext(arg0 context.Context, arg1 *inspector.CreateAssessmentTargetInput, arg2 ...request.Option) (*inspector.CreateAssessmentTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockInspectorAPIMockRecorder) CreateAssessmentTemplateRequest(arg0 int
 }
 
 // CreateAssessmentTemplateWithContext mocks base method
-func (m *MockInspectorAPI) CreateAssessmentTemplateWithContext(arg0 aws.Context, arg1 *inspector.CreateAssessmentTemplateInput, arg2 ...request.Option) (*inspector.CreateAssessmentTemplateOutput, error) {
+func (m *MockInspectorAPI) CreateAssessmentTemplateWithContext(arg0 context.Context, arg1 *inspector.CreateAssessmentTemplateInput, arg2 ...request.Option) (*inspector.CreateAssessmentTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockInspectorAPIMockRecorder) CreateExclusionsPreviewRequest(arg0 inte
 }
 
 // CreateExclusionsPreviewWithContext mocks base method
-func (m *MockInspectorAPI) CreateExclusionsPreviewWithContext(arg0 aws.Context, arg1 *inspector.CreateExclusionsPreviewInput, arg2 ...request.Option) (*inspector.CreateExclusionsPreviewOutput, error) {
+func (m *MockInspectorAPI) CreateExclusionsPreviewWithContext(arg0 context.Context, arg1 *inspector.CreateExclusionsPreviewInput, arg2 ...request.Option) (*inspector.CreateExclusionsPreviewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockInspectorAPIMockRecorder) CreateResourceGroupRequest(arg0 interfac
 }
 
 // CreateResourceGroupWithContext mocks base method
-func (m *MockInspectorAPI) CreateResourceGroupWithContext(arg0 aws.Context, arg1 *inspector.CreateResourceGroupInput, arg2 ...request.Option) (*inspector.CreateResourceGroupOutput, error) {
+func (m *MockInspectorAPI) CreateResourceGroupWithContext(arg0 context.Context, arg1 *inspector.CreateResourceGroupInput, arg2 ...request.Option) (*inspector.CreateResourceGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockInspectorAPIMockRecorder) DeleteAssessmentRunRequest(arg0 interfac
 }
 
 // DeleteAssessmentRunWithContext mocks base method
-func (m *MockInspectorAPI) DeleteAssessmentRunWithContext(arg0 aws.Context, arg1 *inspector.DeleteAssessmentRunInput, arg2 ...request.Option) (*inspector.DeleteAssessmentRunOutput, error) {
+func (m *MockInspectorAPI) DeleteAssessmentRunWithContext(arg0 context.Context, arg1 *inspector.DeleteAssessmentRunInput, arg2 ...request.Option) (*inspector.DeleteAssessmentRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockInspectorAPIMockRecorder) DeleteAssessmentTargetRequest(arg0 inter
 }
 
 // DeleteAssessmentTargetWithContext mocks base method
-func (m *MockInspectorAPI) DeleteAssessmentTargetWithContext(arg0 aws.Context, arg1 *inspector.DeleteAssessmentTargetInput, arg2 ...request.Option) (*inspector.DeleteAssessmentTargetOutput, error) {
+func (m *MockInspectorAPI) DeleteAssessmentTargetWithContext(arg0 context.Context, arg1 *inspector.DeleteAssessmentTargetInput, arg2 ...request.Option) (*inspector.DeleteAssessmentTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockInspectorAPIMockRecorder) DeleteAssessmentTemplateRequest(arg0 int
 }
 
 // DeleteAssessmentTemplateWithContext mocks base method
-func (m *MockInspectorAPI) DeleteAssessmentTemplateWithContext(arg0 aws.Context, arg1 *inspector.DeleteAssessmentTemplateInput, arg2 ...request.Option) (*inspector.DeleteAssessmentTemplateOutput, error) {
+func (m *MockInspectorAPI) DeleteAssessmentTemplateWithContext(arg0 context.Context, arg1 *inspector.DeleteAssessmentTemplateInput, arg2 ...request.Option) (*inspector.DeleteAssessmentTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeAssessmentRunsRequest(arg0 inter
 }
 
 // DescribeAssessmentRunsWithContext mocks base method
-func (m *MockInspectorAPI) DescribeAssessmentRunsWithContext(arg0 aws.Context, arg1 *inspector.DescribeAssessmentRunsInput, arg2 ...request.Option) (*inspector.DescribeAssessmentRunsOutput, error) {
+func (m *MockInspectorAPI) DescribeAssessmentRunsWithContext(arg0 context.Context, arg1 *inspector.DescribeAssessmentRunsInput, arg2 ...request.Option) (*inspector.DescribeAssessmentRunsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeAssessmentTargetsRequest(arg0 in
 }
 
 // DescribeAssessmentTargetsWithContext mocks base method
-func (m *MockInspectorAPI) DescribeAssessmentTargetsWithContext(arg0 aws.Context, arg1 *inspector.DescribeAssessmentTargetsInput, arg2 ...request.Option) (*inspector.DescribeAssessmentTargetsOutput, error) {
+func (m *MockInspectorAPI) DescribeAssessmentTargetsWithContext(arg0 context.Context, arg1 *inspector.DescribeAssessmentTargetsInput, arg2 ...request.Option) (*inspector.DescribeAssessmentTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -566,7 +566,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeAssessmentTemplatesRequest(arg0 
 }
 
 // DescribeAssessmentTemplatesWithContext mocks base method
-func (m *MockInspectorAPI) DescribeAssessmentTemplatesWithContext(arg0 aws.Context, arg1 *inspector.DescribeAssessmentTemplatesInput, arg2 ...request.Option) (*inspector.DescribeAssessmentTemplatesOutput, error) {
+func (m *MockInspectorAPI) DescribeAssessmentTemplatesWithContext(arg0 context.Context, arg1 *inspector.DescribeAssessmentTemplatesInput, arg2 ...request.Option) (*inspector.DescribeAssessmentTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeCrossAccountAccessRoleRequest(ar
 }
 
 // DescribeCrossAccountAccessRoleWithContext mocks base method
-func (m *MockInspectorAPI) DescribeCrossAccountAccessRoleWithContext(arg0 aws.Context, arg1 *inspector.DescribeCrossAccountAccessRoleInput, arg2 ...request.Option) (*inspector.DescribeCrossAccountAccessRoleOutput, error) {
+func (m *MockInspectorAPI) DescribeCrossAccountAccessRoleWithContext(arg0 context.Context, arg1 *inspector.DescribeCrossAccountAccessRoleInput, arg2 ...request.Option) (*inspector.DescribeCrossAccountAccessRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeExclusionsRequest(arg0 interface
 }
 
 // DescribeExclusionsWithContext mocks base method
-func (m *MockInspectorAPI) DescribeExclusionsWithContext(arg0 aws.Context, arg1 *inspector.DescribeExclusionsInput, arg2 ...request.Option) (*inspector.DescribeExclusionsOutput, error) {
+func (m *MockInspectorAPI) DescribeExclusionsWithContext(arg0 context.Context, arg1 *inspector.DescribeExclusionsInput, arg2 ...request.Option) (*inspector.DescribeExclusionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -716,7 +716,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeFindingsRequest(arg0 interface{}
 }
 
 // DescribeFindingsWithContext mocks base method
-func (m *MockInspectorAPI) DescribeFindingsWithContext(arg0 aws.Context, arg1 *inspector.DescribeFindingsInput, arg2 ...request.Option) (*inspector.DescribeFindingsOutput, error) {
+func (m *MockInspectorAPI) DescribeFindingsWithContext(arg0 context.Context, arg1 *inspector.DescribeFindingsInput, arg2 ...request.Option) (*inspector.DescribeFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -766,7 +766,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeResourceGroupsRequest(arg0 inter
 }
 
 // DescribeResourceGroupsWithContext mocks base method
-func (m *MockInspectorAPI) DescribeResourceGroupsWithContext(arg0 aws.Context, arg1 *inspector.DescribeResourceGroupsInput, arg2 ...request.Option) (*inspector.DescribeResourceGroupsOutput, error) {
+func (m *MockInspectorAPI) DescribeResourceGroupsWithContext(arg0 context.Context, arg1 *inspector.DescribeResourceGroupsInput, arg2 ...request.Option) (*inspector.DescribeResourceGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -816,7 +816,7 @@ func (mr *MockInspectorAPIMockRecorder) DescribeRulesPackagesRequest(arg0 interf
 }
 
 // DescribeRulesPackagesWithContext mocks base method
-func (m *MockInspectorAPI) DescribeRulesPackagesWithContext(arg0 aws.Context, arg1 *inspector.DescribeRulesPackagesInput, arg2 ...request.Option) (*inspector.DescribeRulesPackagesOutput, error) {
+func (m *MockInspectorAPI) DescribeRulesPackagesWithContext(arg0 context.Context, arg1 *inspector.DescribeRulesPackagesInput, arg2 ...request.Option) (*inspector.DescribeRulesPackagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -866,7 +866,7 @@ func (mr *MockInspectorAPIMockRecorder) GetAssessmentReportRequest(arg0 interfac
 }
 
 // GetAssessmentReportWithContext mocks base method
-func (m *MockInspectorAPI) GetAssessmentReportWithContext(arg0 aws.Context, arg1 *inspector.GetAssessmentReportInput, arg2 ...request.Option) (*inspector.GetAssessmentReportOutput, error) {
+func (m *MockInspectorAPI) GetAssessmentReportWithContext(arg0 context.Context, arg1 *inspector.GetAssessmentReportInput, arg2 ...request.Option) (*inspector.GetAssessmentReportOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -915,7 +915,7 @@ func (mr *MockInspectorAPIMockRecorder) GetExclusionsPreviewPages(arg0, arg1 int
 }
 
 // GetExclusionsPreviewPagesWithContext mocks base method
-func (m *MockInspectorAPI) GetExclusionsPreviewPagesWithContext(arg0 aws.Context, arg1 *inspector.GetExclusionsPreviewInput, arg2 func(*inspector.GetExclusionsPreviewOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) GetExclusionsPreviewPagesWithContext(arg0 context.Context, arg1 *inspector.GetExclusionsPreviewInput, arg2 func(*inspector.GetExclusionsPreviewOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -949,7 +949,7 @@ func (mr *MockInspectorAPIMockRecorder) GetExclusionsPreviewRequest(arg0 interfa
 }
 
 // GetExclusionsPreviewWithContext mocks base method
-func (m *MockInspectorAPI) GetExclusionsPreviewWithContext(arg0 aws.Context, arg1 *inspector.GetExclusionsPreviewInput, arg2 ...request.Option) (*inspector.GetExclusionsPreviewOutput, error) {
+func (m *MockInspectorAPI) GetExclusionsPreviewWithContext(arg0 context.Context, arg1 *inspector.GetExclusionsPreviewInput, arg2 ...request.Option) (*inspector.GetExclusionsPreviewOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -999,7 +999,7 @@ func (mr *MockInspectorAPIMockRecorder) GetTelemetryMetadataRequest(arg0 interfa
 }
 
 // GetTelemetryMetadataWithContext mocks base method
-func (m *MockInspectorAPI) GetTelemetryMetadataWithContext(arg0 aws.Context, arg1 *inspector.GetTelemetryMetadataInput, arg2 ...request.Option) (*inspector.GetTelemetryMetadataOutput, error) {
+func (m *MockInspectorAPI) GetTelemetryMetadataWithContext(arg0 context.Context, arg1 *inspector.GetTelemetryMetadataInput, arg2 ...request.Option) (*inspector.GetTelemetryMetadataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentRunAgentsPages(arg0, arg1 
 }
 
 // ListAssessmentRunAgentsPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentRunAgentsPagesWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentRunAgentsInput, arg2 func(*inspector.ListAssessmentRunAgentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListAssessmentRunAgentsPagesWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentRunAgentsInput, arg2 func(*inspector.ListAssessmentRunAgentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1082,7 +1082,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentRunAgentsRequest(arg0 inte
 }
 
 // ListAssessmentRunAgentsWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentRunAgentsWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentRunAgentsInput, arg2 ...request.Option) (*inspector.ListAssessmentRunAgentsOutput, error) {
+func (m *MockInspectorAPI) ListAssessmentRunAgentsWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentRunAgentsInput, arg2 ...request.Option) (*inspector.ListAssessmentRunAgentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1131,7 +1131,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentRunsPages(arg0, arg1 inter
 }
 
 // ListAssessmentRunsPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentRunsPagesWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentRunsInput, arg2 func(*inspector.ListAssessmentRunsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListAssessmentRunsPagesWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentRunsInput, arg2 func(*inspector.ListAssessmentRunsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1165,7 +1165,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentRunsRequest(arg0 interface
 }
 
 // ListAssessmentRunsWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentRunsWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentRunsInput, arg2 ...request.Option) (*inspector.ListAssessmentRunsOutput, error) {
+func (m *MockInspectorAPI) ListAssessmentRunsWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentRunsInput, arg2 ...request.Option) (*inspector.ListAssessmentRunsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1214,7 +1214,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentTargetsPages(arg0, arg1 in
 }
 
 // ListAssessmentTargetsPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentTargetsPagesWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentTargetsInput, arg2 func(*inspector.ListAssessmentTargetsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListAssessmentTargetsPagesWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentTargetsInput, arg2 func(*inspector.ListAssessmentTargetsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1248,7 +1248,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentTargetsRequest(arg0 interf
 }
 
 // ListAssessmentTargetsWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentTargetsWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentTargetsInput, arg2 ...request.Option) (*inspector.ListAssessmentTargetsOutput, error) {
+func (m *MockInspectorAPI) ListAssessmentTargetsWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentTargetsInput, arg2 ...request.Option) (*inspector.ListAssessmentTargetsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1297,7 +1297,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentTemplatesPages(arg0, arg1 
 }
 
 // ListAssessmentTemplatesPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentTemplatesPagesWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentTemplatesInput, arg2 func(*inspector.ListAssessmentTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListAssessmentTemplatesPagesWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentTemplatesInput, arg2 func(*inspector.ListAssessmentTemplatesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1331,7 +1331,7 @@ func (mr *MockInspectorAPIMockRecorder) ListAssessmentTemplatesRequest(arg0 inte
 }
 
 // ListAssessmentTemplatesWithContext mocks base method
-func (m *MockInspectorAPI) ListAssessmentTemplatesWithContext(arg0 aws.Context, arg1 *inspector.ListAssessmentTemplatesInput, arg2 ...request.Option) (*inspector.ListAssessmentTemplatesOutput, error) {
+func (m *MockInspectorAPI) ListAssessmentTemplatesWithContext(arg0 context.Context, arg1 *inspector.ListAssessmentTemplatesInput, arg2 ...request.Option) (*inspector.ListAssessmentTemplatesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1380,7 +1380,7 @@ func (mr *MockInspectorAPIMockRecorder) ListEventSubscriptionsPages(arg0, arg1 i
 }
 
 // ListEventSubscriptionsPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListEventSubscriptionsPagesWithContext(arg0 aws.Context, arg1 *inspector.ListEventSubscriptionsInput, arg2 func(*inspector.ListEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListEventSubscriptionsPagesWithContext(arg0 context.Context, arg1 *inspector.ListEventSubscriptionsInput, arg2 func(*inspector.ListEventSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1414,7 +1414,7 @@ func (mr *MockInspectorAPIMockRecorder) ListEventSubscriptionsRequest(arg0 inter
 }
 
 // ListEventSubscriptionsWithContext mocks base method
-func (m *MockInspectorAPI) ListEventSubscriptionsWithContext(arg0 aws.Context, arg1 *inspector.ListEventSubscriptionsInput, arg2 ...request.Option) (*inspector.ListEventSubscriptionsOutput, error) {
+func (m *MockInspectorAPI) ListEventSubscriptionsWithContext(arg0 context.Context, arg1 *inspector.ListEventSubscriptionsInput, arg2 ...request.Option) (*inspector.ListEventSubscriptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1463,7 +1463,7 @@ func (mr *MockInspectorAPIMockRecorder) ListExclusionsPages(arg0, arg1 interface
 }
 
 // ListExclusionsPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListExclusionsPagesWithContext(arg0 aws.Context, arg1 *inspector.ListExclusionsInput, arg2 func(*inspector.ListExclusionsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListExclusionsPagesWithContext(arg0 context.Context, arg1 *inspector.ListExclusionsInput, arg2 func(*inspector.ListExclusionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1497,7 +1497,7 @@ func (mr *MockInspectorAPIMockRecorder) ListExclusionsRequest(arg0 interface{}) 
 }
 
 // ListExclusionsWithContext mocks base method
-func (m *MockInspectorAPI) ListExclusionsWithContext(arg0 aws.Context, arg1 *inspector.ListExclusionsInput, arg2 ...request.Option) (*inspector.ListExclusionsOutput, error) {
+func (m *MockInspectorAPI) ListExclusionsWithContext(arg0 context.Context, arg1 *inspector.ListExclusionsInput, arg2 ...request.Option) (*inspector.ListExclusionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1546,7 +1546,7 @@ func (mr *MockInspectorAPIMockRecorder) ListFindingsPages(arg0, arg1 interface{}
 }
 
 // ListFindingsPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListFindingsPagesWithContext(arg0 aws.Context, arg1 *inspector.ListFindingsInput, arg2 func(*inspector.ListFindingsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListFindingsPagesWithContext(arg0 context.Context, arg1 *inspector.ListFindingsInput, arg2 func(*inspector.ListFindingsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1580,7 +1580,7 @@ func (mr *MockInspectorAPIMockRecorder) ListFindingsRequest(arg0 interface{}) *g
 }
 
 // ListFindingsWithContext mocks base method
-func (m *MockInspectorAPI) ListFindingsWithContext(arg0 aws.Context, arg1 *inspector.ListFindingsInput, arg2 ...request.Option) (*inspector.ListFindingsOutput, error) {
+func (m *MockInspectorAPI) ListFindingsWithContext(arg0 context.Context, arg1 *inspector.ListFindingsInput, arg2 ...request.Option) (*inspector.ListFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1629,7 +1629,7 @@ func (mr *MockInspectorAPIMockRecorder) ListRulesPackagesPages(arg0, arg1 interf
 }
 
 // ListRulesPackagesPagesWithContext mocks base method
-func (m *MockInspectorAPI) ListRulesPackagesPagesWithContext(arg0 aws.Context, arg1 *inspector.ListRulesPackagesInput, arg2 func(*inspector.ListRulesPackagesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) ListRulesPackagesPagesWithContext(arg0 context.Context, arg1 *inspector.ListRulesPackagesInput, arg2 func(*inspector.ListRulesPackagesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1663,7 +1663,7 @@ func (mr *MockInspectorAPIMockRecorder) ListRulesPackagesRequest(arg0 interface{
 }
 
 // ListRulesPackagesWithContext mocks base method
-func (m *MockInspectorAPI) ListRulesPackagesWithContext(arg0 aws.Context, arg1 *inspector.ListRulesPackagesInput, arg2 ...request.Option) (*inspector.ListRulesPackagesOutput, error) {
+func (m *MockInspectorAPI) ListRulesPackagesWithContext(arg0 context.Context, arg1 *inspector.ListRulesPackagesInput, arg2 ...request.Option) (*inspector.ListRulesPackagesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1713,7 +1713,7 @@ func (mr *MockInspectorAPIMockRecorder) ListTagsForResourceRequest(arg0 interfac
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockInspectorAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *inspector.ListTagsForResourceInput, arg2 ...request.Option) (*inspector.ListTagsForResourceOutput, error) {
+func (m *MockInspectorAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *inspector.ListTagsForResourceInput, arg2 ...request.Option) (*inspector.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1762,7 +1762,7 @@ func (mr *MockInspectorAPIMockRecorder) PreviewAgentsPages(arg0, arg1 interface{
 }
 
 // PreviewAgentsPagesWithContext mocks base method
-func (m *MockInspectorAPI) PreviewAgentsPagesWithContext(arg0 aws.Context, arg1 *inspector.PreviewAgentsInput, arg2 func(*inspector.PreviewAgentsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockInspectorAPI) PreviewAgentsPagesWithContext(arg0 context.Context, arg1 *inspector.PreviewAgentsInput, arg2 func(*inspector.PreviewAgentsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -1796,7 +1796,7 @@ func (mr *MockInspectorAPIMockRecorder) PreviewAgentsRequest(arg0 interface{}) *
 }
 
 // PreviewAgentsWithContext mocks base method
-func (m *MockInspectorAPI) PreviewAgentsWithContext(arg0 aws.Context, arg1 *inspector.PreviewAgentsInput, arg2 ...request.Option) (*inspector.PreviewAgentsOutput, error) {
+func (m *MockInspectorAPI) PreviewAgentsWithContext(arg0 context.Context, arg1 *inspector.PreviewAgentsInput, arg2 ...request.Option) (*inspector.PreviewAgentsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1846,7 +1846,7 @@ func (mr *MockInspectorAPIMockRecorder) RegisterCrossAccountAccessRoleRequest(ar
 }
 
 // RegisterCrossAccountAccessRoleWithContext mocks base method
-func (m *MockInspectorAPI) RegisterCrossAccountAccessRoleWithContext(arg0 aws.Context, arg1 *inspector.RegisterCrossAccountAccessRoleInput, arg2 ...request.Option) (*inspector.RegisterCrossAccountAccessRoleOutput, error) {
+func (m *MockInspectorAPI) RegisterCrossAccountAccessRoleWithContext(arg0 context.Context, arg1 *inspector.RegisterCrossAccountAccessRoleInput, arg2 ...request.Option) (*inspector.RegisterCrossAccountAccessRoleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1896,7 +1896,7 @@ func (mr *MockInspectorAPIMockRecorder) RemoveAttributesFromFindingsRequest(arg0
 }
 
 // RemoveAttributesFromFindingsWithContext mocks base method
-func (m *MockInspectorAPI) RemoveAttributesFromFindingsWithContext(arg0 aws.Context, arg1 *inspector.RemoveAttributesFromFindingsInput, arg2 ...request.Option) (*inspector.RemoveAttributesFromFindingsOutput, error) {
+func (m *MockInspectorAPI) RemoveAttributesFromFindingsWithContext(arg0 context.Context, arg1 *inspector.RemoveAttributesFromFindingsInput, arg2 ...request.Option) (*inspector.RemoveAttributesFromFindingsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1946,7 +1946,7 @@ func (mr *MockInspectorAPIMockRecorder) SetTagsForResourceRequest(arg0 interface
 }
 
 // SetTagsForResourceWithContext mocks base method
-func (m *MockInspectorAPI) SetTagsForResourceWithContext(arg0 aws.Context, arg1 *inspector.SetTagsForResourceInput, arg2 ...request.Option) (*inspector.SetTagsForResourceOutput, error) {
+func (m *MockInspectorAPI) SetTagsForResourceWithContext(arg0 context.Context, arg1 *inspector.SetTagsForResourceInput, arg2 ...request.Option) (*inspector.SetTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1996,7 +1996,7 @@ func (mr *MockInspectorAPIMockRecorder) StartAssessmentRunRequest(arg0 interface
 }
 
 // StartAssessmentRunWithContext mocks base method
-func (m *MockInspectorAPI) StartAssessmentRunWithContext(arg0 aws.Context, arg1 *inspector.StartAssessmentRunInput, arg2 ...request.Option) (*inspector.StartAssessmentRunOutput, error) {
+func (m *MockInspectorAPI) StartAssessmentRunWithContext(arg0 context.Context, arg1 *inspector.StartAssessmentRunInput, arg2 ...request.Option) (*inspector.StartAssessmentRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2046,7 +2046,7 @@ func (mr *MockInspectorAPIMockRecorder) StopAssessmentRunRequest(arg0 interface{
 }
 
 // StopAssessmentRunWithContext mocks base method
-func (m *MockInspectorAPI) StopAssessmentRunWithContext(arg0 aws.Context, arg1 *inspector.StopAssessmentRunInput, arg2 ...request.Option) (*inspector.StopAssessmentRunOutput, error) {
+func (m *MockInspectorAPI) StopAssessmentRunWithContext(arg0 context.Context, arg1 *inspector.StopAssessmentRunInput, arg2 ...request.Option) (*inspector.StopAssessmentRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2096,7 +2096,7 @@ func (mr *MockInspectorAPIMockRecorder) SubscribeToEventRequest(arg0 interface{}
 }
 
 // SubscribeToEventWithContext mocks base method
-func (m *MockInspectorAPI) SubscribeToEventWithContext(arg0 aws.Context, arg1 *inspector.SubscribeToEventInput, arg2 ...request.Option) (*inspector.SubscribeToEventOutput, error) {
+func (m *MockInspectorAPI) SubscribeToEventWithContext(arg0 context.Context, arg1 *inspector.SubscribeToEventInput, arg2 ...request.Option) (*inspector.SubscribeToEventOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2146,7 +2146,7 @@ func (mr *MockInspectorAPIMockRecorder) UnsubscribeFromEventRequest(arg0 interfa
 }
 
 // UnsubscribeFromEventWithContext mocks base method
-func (m *MockInspectorAPI) UnsubscribeFromEventWithContext(arg0 aws.Context, arg1 *inspector.UnsubscribeFromEventInput, arg2 ...request.Option) (*inspector.UnsubscribeFromEventOutput, error) {
+func (m *MockInspectorAPI) UnsubscribeFromEventWithContext(arg0 context.Context, arg1 *inspector.UnsubscribeFromEventInput, arg2 ...request.Option) (*inspector.UnsubscribeFromEventOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -2196,7 +2196,7 @@ func (mr *MockInspectorAPIMockRecorder) UpdateAssessmentTargetRequest(arg0 inter
 }
 
 // UpdateAssessmentTargetWithContext mocks base method
-func (m *MockInspectorAPI) UpdateAssessmentTargetWithContext(arg0 aws.Context, arg1 *inspector.UpdateAssessmentTargetInput, arg2 ...request.Option) (*inspector.UpdateAssessmentTargetOutput, error) {
+func (m *MockInspectorAPI) UpdateAssessmentTargetWithContext(arg0 context.Context, arg1 *inspector.UpdateAssessmentTargetInput, arg2 ...request.Option) (*inspector.UpdateAssessmentTargetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

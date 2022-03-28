@@ -5,7 +5,7 @@
 package connectmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	connect "github.com/aws/aws-sdk-go/service/connect"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockConnectAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomoc
 }
 
 // CreateUserWithContext mocks base method
-func (m *MockConnectAPI) CreateUserWithContext(arg0 aws.Context, arg1 *connect.CreateUserInput, arg2 ...request.Option) (*connect.CreateUserOutput, error) {
+func (m *MockConnectAPI) CreateUserWithContext(arg0 context.Context, arg1 *connect.CreateUserInput, arg2 ...request.Option) (*connect.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockConnectAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomoc
 }
 
 // DeleteUserWithContext mocks base method
-func (m *MockConnectAPI) DeleteUserWithContext(arg0 aws.Context, arg1 *connect.DeleteUserInput, arg2 ...request.Option) (*connect.DeleteUserOutput, error) {
+func (m *MockConnectAPI) DeleteUserWithContext(arg0 context.Context, arg1 *connect.DeleteUserInput, arg2 ...request.Option) (*connect.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -181,7 +181,7 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserHierarchyGroupRequest(arg0 int
 }
 
 // DescribeUserHierarchyGroupWithContext mocks base method
-func (m *MockConnectAPI) DescribeUserHierarchyGroupWithContext(arg0 aws.Context, arg1 *connect.DescribeUserHierarchyGroupInput, arg2 ...request.Option) (*connect.DescribeUserHierarchyGroupOutput, error) {
+func (m *MockConnectAPI) DescribeUserHierarchyGroupWithContext(arg0 context.Context, arg1 *connect.DescribeUserHierarchyGroupInput, arg2 ...request.Option) (*connect.DescribeUserHierarchyGroupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserHierarchyStructureRequest(arg0
 }
 
 // DescribeUserHierarchyStructureWithContext mocks base method
-func (m *MockConnectAPI) DescribeUserHierarchyStructureWithContext(arg0 aws.Context, arg1 *connect.DescribeUserHierarchyStructureInput, arg2 ...request.Option) (*connect.DescribeUserHierarchyStructureOutput, error) {
+func (m *MockConnectAPI) DescribeUserHierarchyStructureWithContext(arg0 context.Context, arg1 *connect.DescribeUserHierarchyStructureInput, arg2 ...request.Option) (*connect.DescribeUserHierarchyStructureOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserRequest(arg0 interface{}) *gom
 }
 
 // DescribeUserWithContext mocks base method
-func (m *MockConnectAPI) DescribeUserWithContext(arg0 aws.Context, arg1 *connect.DescribeUserInput, arg2 ...request.Option) (*connect.DescribeUserOutput, error) {
+func (m *MockConnectAPI) DescribeUserWithContext(arg0 context.Context, arg1 *connect.DescribeUserInput, arg2 ...request.Option) (*connect.DescribeUserOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockConnectAPIMockRecorder) GetContactAttributesRequest(arg0 interface
 }
 
 // GetContactAttributesWithContext mocks base method
-func (m *MockConnectAPI) GetContactAttributesWithContext(arg0 aws.Context, arg1 *connect.GetContactAttributesInput, arg2 ...request.Option) (*connect.GetContactAttributesOutput, error) {
+func (m *MockConnectAPI) GetContactAttributesWithContext(arg0 context.Context, arg1 *connect.GetContactAttributesInput, arg2 ...request.Option) (*connect.GetContactAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataPages(arg0, arg1 inter
 }
 
 // GetCurrentMetricDataPagesWithContext mocks base method
-func (m *MockConnectAPI) GetCurrentMetricDataPagesWithContext(arg0 aws.Context, arg1 *connect.GetCurrentMetricDataInput, arg2 func(*connect.GetCurrentMetricDataOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockConnectAPI) GetCurrentMetricDataPagesWithContext(arg0 context.Context, arg1 *connect.GetCurrentMetricDataInput, arg2 func(*connect.GetCurrentMetricDataOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataRequest(arg0 interface
 }
 
 // GetCurrentMetricDataWithContext mocks base method
-func (m *MockConnectAPI) GetCurrentMetricDataWithContext(arg0 aws.Context, arg1 *connect.GetCurrentMetricDataInput, arg2 ...request.Option) (*connect.GetCurrentMetricDataOutput, error) {
+func (m *MockConnectAPI) GetCurrentMetricDataWithContext(arg0 context.Context, arg1 *connect.GetCurrentMetricDataInput, arg2 ...request.Option) (*connect.GetCurrentMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -449,7 +449,7 @@ func (mr *MockConnectAPIMockRecorder) GetFederationTokenRequest(arg0 interface{}
 }
 
 // GetFederationTokenWithContext mocks base method
-func (m *MockConnectAPI) GetFederationTokenWithContext(arg0 aws.Context, arg1 *connect.GetFederationTokenInput, arg2 ...request.Option) (*connect.GetFederationTokenOutput, error) {
+func (m *MockConnectAPI) GetFederationTokenWithContext(arg0 context.Context, arg1 *connect.GetFederationTokenInput, arg2 ...request.Option) (*connect.GetFederationTokenOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -498,7 +498,7 @@ func (mr *MockConnectAPIMockRecorder) GetMetricDataPages(arg0, arg1 interface{})
 }
 
 // GetMetricDataPagesWithContext mocks base method
-func (m *MockConnectAPI) GetMetricDataPagesWithContext(arg0 aws.Context, arg1 *connect.GetMetricDataInput, arg2 func(*connect.GetMetricDataOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockConnectAPI) GetMetricDataPagesWithContext(arg0 context.Context, arg1 *connect.GetMetricDataInput, arg2 func(*connect.GetMetricDataOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -532,7 +532,7 @@ func (mr *MockConnectAPIMockRecorder) GetMetricDataRequest(arg0 interface{}) *go
 }
 
 // GetMetricDataWithContext mocks base method
-func (m *MockConnectAPI) GetMetricDataWithContext(arg0 aws.Context, arg1 *connect.GetMetricDataInput, arg2 ...request.Option) (*connect.GetMetricDataOutput, error) {
+func (m *MockConnectAPI) GetMetricDataWithContext(arg0 context.Context, arg1 *connect.GetMetricDataInput, arg2 ...request.Option) (*connect.GetMetricDataOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -582,7 +582,7 @@ func (mr *MockConnectAPIMockRecorder) ListRoutingProfilesRequest(arg0 interface{
 }
 
 // ListRoutingProfilesWithContext mocks base method
-func (m *MockConnectAPI) ListRoutingProfilesWithContext(arg0 aws.Context, arg1 *connect.ListRoutingProfilesInput, arg2 ...request.Option) (*connect.ListRoutingProfilesOutput, error) {
+func (m *MockConnectAPI) ListRoutingProfilesWithContext(arg0 context.Context, arg1 *connect.ListRoutingProfilesInput, arg2 ...request.Option) (*connect.ListRoutingProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockConnectAPIMockRecorder) ListSecurityProfilesRequest(arg0 interface
 }
 
 // ListSecurityProfilesWithContext mocks base method
-func (m *MockConnectAPI) ListSecurityProfilesWithContext(arg0 aws.Context, arg1 *connect.ListSecurityProfilesInput, arg2 ...request.Option) (*connect.ListSecurityProfilesOutput, error) {
+func (m *MockConnectAPI) ListSecurityProfilesWithContext(arg0 context.Context, arg1 *connect.ListSecurityProfilesInput, arg2 ...request.Option) (*connect.ListSecurityProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -682,7 +682,7 @@ func (mr *MockConnectAPIMockRecorder) ListUserHierarchyGroupsRequest(arg0 interf
 }
 
 // ListUserHierarchyGroupsWithContext mocks base method
-func (m *MockConnectAPI) ListUserHierarchyGroupsWithContext(arg0 aws.Context, arg1 *connect.ListUserHierarchyGroupsInput, arg2 ...request.Option) (*connect.ListUserHierarchyGroupsOutput, error) {
+func (m *MockConnectAPI) ListUserHierarchyGroupsWithContext(arg0 context.Context, arg1 *connect.ListUserHierarchyGroupsInput, arg2 ...request.Option) (*connect.ListUserHierarchyGroupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -732,7 +732,7 @@ func (mr *MockConnectAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomock
 }
 
 // ListUsersWithContext mocks base method
-func (m *MockConnectAPI) ListUsersWithContext(arg0 aws.Context, arg1 *connect.ListUsersInput, arg2 ...request.Option) (*connect.ListUsersOutput, error) {
+func (m *MockConnectAPI) ListUsersWithContext(arg0 context.Context, arg1 *connect.ListUsersInput, arg2 ...request.Option) (*connect.ListUsersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -782,7 +782,7 @@ func (mr *MockConnectAPIMockRecorder) StartOutboundVoiceContactRequest(arg0 inte
 }
 
 // StartOutboundVoiceContactWithContext mocks base method
-func (m *MockConnectAPI) StartOutboundVoiceContactWithContext(arg0 aws.Context, arg1 *connect.StartOutboundVoiceContactInput, arg2 ...request.Option) (*connect.StartOutboundVoiceContactOutput, error) {
+func (m *MockConnectAPI) StartOutboundVoiceContactWithContext(arg0 context.Context, arg1 *connect.StartOutboundVoiceContactInput, arg2 ...request.Option) (*connect.StartOutboundVoiceContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -832,7 +832,7 @@ func (mr *MockConnectAPIMockRecorder) StopContactRequest(arg0 interface{}) *gomo
 }
 
 // StopContactWithContext mocks base method
-func (m *MockConnectAPI) StopContactWithContext(arg0 aws.Context, arg1 *connect.StopContactInput, arg2 ...request.Option) (*connect.StopContactOutput, error) {
+func (m *MockConnectAPI) StopContactWithContext(arg0 context.Context, arg1 *connect.StopContactInput, arg2 ...request.Option) (*connect.StopContactOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -882,7 +882,7 @@ func (mr *MockConnectAPIMockRecorder) UpdateContactAttributesRequest(arg0 interf
 }
 
 // UpdateContactAttributesWithContext mocks base method
-func (m *MockConnectAPI) UpdateContactAttributesWithContext(arg0 aws.Context, arg1 *connect.UpdateContactAttributesInput, arg2 ...request.Option) (*connect.UpdateContactAttributesOutput, error) {
+func (m *MockConnectAPI) UpdateContactAttributesWithContext(arg0 context.Context, arg1 *connect.UpdateContactAttributesInput, arg2 ...request.Option) (*connect.UpdateContactAttributesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -932,7 +932,7 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyRequest(arg0 interface{
 }
 
 // UpdateUserHierarchyWithContext mocks base method
-func (m *MockConnectAPI) UpdateUserHierarchyWithContext(arg0 aws.Context, arg1 *connect.UpdateUserHierarchyInput, arg2 ...request.Option) (*connect.UpdateUserHierarchyOutput, error) {
+func (m *MockConnectAPI) UpdateUserHierarchyWithContext(arg0 context.Context, arg1 *connect.UpdateUserHierarchyInput, arg2 ...request.Option) (*connect.UpdateUserHierarchyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -982,7 +982,7 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserIdentityInfoRequest(arg0 interfa
 }
 
 // UpdateUserIdentityInfoWithContext mocks base method
-func (m *MockConnectAPI) UpdateUserIdentityInfoWithContext(arg0 aws.Context, arg1 *connect.UpdateUserIdentityInfoInput, arg2 ...request.Option) (*connect.UpdateUserIdentityInfoOutput, error) {
+func (m *MockConnectAPI) UpdateUserIdentityInfoWithContext(arg0 context.Context, arg1 *connect.UpdateUserIdentityInfoInput, arg2 ...request.Option) (*connect.UpdateUserIdentityInfoOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1032,7 +1032,7 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserPhoneConfigRequest(arg0 interfac
 }
 
 // UpdateUserPhoneConfigWithContext mocks base method
-func (m *MockConnectAPI) UpdateUserPhoneConfigWithContext(arg0 aws.Context, arg1 *connect.UpdateUserPhoneConfigInput, arg2 ...request.Option) (*connect.UpdateUserPhoneConfigOutput, error) {
+func (m *MockConnectAPI) UpdateUserPhoneConfigWithContext(arg0 context.Context, arg1 *connect.UpdateUserPhoneConfigInput, arg2 ...request.Option) (*connect.UpdateUserPhoneConfigOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1082,7 +1082,7 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserRoutingProfileRequest(arg0 inter
 }
 
 // UpdateUserRoutingProfileWithContext mocks base method
-func (m *MockConnectAPI) UpdateUserRoutingProfileWithContext(arg0 aws.Context, arg1 *connect.UpdateUserRoutingProfileInput, arg2 ...request.Option) (*connect.UpdateUserRoutingProfileOutput, error) {
+func (m *MockConnectAPI) UpdateUserRoutingProfileWithContext(arg0 context.Context, arg1 *connect.UpdateUserRoutingProfileInput, arg2 ...request.Option) (*connect.UpdateUserRoutingProfileOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1132,7 +1132,7 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserSecurityProfilesRequest(arg0 int
 }
 
 // UpdateUserSecurityProfilesWithContext mocks base method
-func (m *MockConnectAPI) UpdateUserSecurityProfilesWithContext(arg0 aws.Context, arg1 *connect.UpdateUserSecurityProfilesInput, arg2 ...request.Option) (*connect.UpdateUserSecurityProfilesOutput, error) {
+func (m *MockConnectAPI) UpdateUserSecurityProfilesWithContext(arg0 context.Context, arg1 *connect.UpdateUserSecurityProfilesInput, arg2 ...request.Option) (*connect.UpdateUserSecurityProfilesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

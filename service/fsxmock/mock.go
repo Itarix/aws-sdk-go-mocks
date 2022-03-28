@@ -5,7 +5,7 @@
 package fsxmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	fsx "github.com/aws/aws-sdk-go/service/fsx"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockFSxAPIMockRecorder) CreateBackupRequest(arg0 interface{}) *gomock.
 }
 
 // CreateBackupWithContext mocks base method
-func (m *MockFSxAPI) CreateBackupWithContext(arg0 aws.Context, arg1 *fsx.CreateBackupInput, arg2 ...request.Option) (*fsx.CreateBackupOutput, error) {
+func (m *MockFSxAPI) CreateBackupWithContext(arg0 context.Context, arg1 *fsx.CreateBackupInput, arg2 ...request.Option) (*fsx.CreateBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -131,7 +131,7 @@ func (mr *MockFSxAPIMockRecorder) CreateFileSystemFromBackupRequest(arg0 interfa
 }
 
 // CreateFileSystemFromBackupWithContext mocks base method
-func (m *MockFSxAPI) CreateFileSystemFromBackupWithContext(arg0 aws.Context, arg1 *fsx.CreateFileSystemFromBackupInput, arg2 ...request.Option) (*fsx.CreateFileSystemFromBackupOutput, error) {
+func (m *MockFSxAPI) CreateFileSystemFromBackupWithContext(arg0 context.Context, arg1 *fsx.CreateFileSystemFromBackupInput, arg2 ...request.Option) (*fsx.CreateFileSystemFromBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockFSxAPIMockRecorder) CreateFileSystemRequest(arg0 interface{}) *gom
 }
 
 // CreateFileSystemWithContext mocks base method
-func (m *MockFSxAPI) CreateFileSystemWithContext(arg0 aws.Context, arg1 *fsx.CreateFileSystemInput, arg2 ...request.Option) (*fsx.CreateFileSystemOutput, error) {
+func (m *MockFSxAPI) CreateFileSystemWithContext(arg0 context.Context, arg1 *fsx.CreateFileSystemInput, arg2 ...request.Option) (*fsx.CreateFileSystemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockFSxAPIMockRecorder) DeleteBackupRequest(arg0 interface{}) *gomock.
 }
 
 // DeleteBackupWithContext mocks base method
-func (m *MockFSxAPI) DeleteBackupWithContext(arg0 aws.Context, arg1 *fsx.DeleteBackupInput, arg2 ...request.Option) (*fsx.DeleteBackupOutput, error) {
+func (m *MockFSxAPI) DeleteBackupWithContext(arg0 context.Context, arg1 *fsx.DeleteBackupInput, arg2 ...request.Option) (*fsx.DeleteBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockFSxAPIMockRecorder) DeleteFileSystemRequest(arg0 interface{}) *gom
 }
 
 // DeleteFileSystemWithContext mocks base method
-func (m *MockFSxAPI) DeleteFileSystemWithContext(arg0 aws.Context, arg1 *fsx.DeleteFileSystemInput, arg2 ...request.Option) (*fsx.DeleteFileSystemOutput, error) {
+func (m *MockFSxAPI) DeleteFileSystemWithContext(arg0 context.Context, arg1 *fsx.DeleteFileSystemInput, arg2 ...request.Option) (*fsx.DeleteFileSystemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -315,7 +315,7 @@ func (mr *MockFSxAPIMockRecorder) DescribeBackupsPages(arg0, arg1 interface{}) *
 }
 
 // DescribeBackupsPagesWithContext mocks base method
-func (m *MockFSxAPI) DescribeBackupsPagesWithContext(arg0 aws.Context, arg1 *fsx.DescribeBackupsInput, arg2 func(*fsx.DescribeBackupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockFSxAPI) DescribeBackupsPagesWithContext(arg0 context.Context, arg1 *fsx.DescribeBackupsInput, arg2 func(*fsx.DescribeBackupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -349,7 +349,7 @@ func (mr *MockFSxAPIMockRecorder) DescribeBackupsRequest(arg0 interface{}) *gomo
 }
 
 // DescribeBackupsWithContext mocks base method
-func (m *MockFSxAPI) DescribeBackupsWithContext(arg0 aws.Context, arg1 *fsx.DescribeBackupsInput, arg2 ...request.Option) (*fsx.DescribeBackupsOutput, error) {
+func (m *MockFSxAPI) DescribeBackupsWithContext(arg0 context.Context, arg1 *fsx.DescribeBackupsInput, arg2 ...request.Option) (*fsx.DescribeBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -398,7 +398,7 @@ func (mr *MockFSxAPIMockRecorder) DescribeFileSystemsPages(arg0, arg1 interface{
 }
 
 // DescribeFileSystemsPagesWithContext mocks base method
-func (m *MockFSxAPI) DescribeFileSystemsPagesWithContext(arg0 aws.Context, arg1 *fsx.DescribeFileSystemsInput, arg2 func(*fsx.DescribeFileSystemsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockFSxAPI) DescribeFileSystemsPagesWithContext(arg0 context.Context, arg1 *fsx.DescribeFileSystemsInput, arg2 func(*fsx.DescribeFileSystemsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -432,7 +432,7 @@ func (mr *MockFSxAPIMockRecorder) DescribeFileSystemsRequest(arg0 interface{}) *
 }
 
 // DescribeFileSystemsWithContext mocks base method
-func (m *MockFSxAPI) DescribeFileSystemsWithContext(arg0 aws.Context, arg1 *fsx.DescribeFileSystemsInput, arg2 ...request.Option) (*fsx.DescribeFileSystemsOutput, error) {
+func (m *MockFSxAPI) DescribeFileSystemsWithContext(arg0 context.Context, arg1 *fsx.DescribeFileSystemsInput, arg2 ...request.Option) (*fsx.DescribeFileSystemsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -482,7 +482,7 @@ func (mr *MockFSxAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockFSxAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *fsx.ListTagsForResourceInput, arg2 ...request.Option) (*fsx.ListTagsForResourceOutput, error) {
+func (m *MockFSxAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *fsx.ListTagsForResourceInput, arg2 ...request.Option) (*fsx.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockFSxAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.C
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockFSxAPI) TagResourceWithContext(arg0 aws.Context, arg1 *fsx.TagResourceInput, arg2 ...request.Option) (*fsx.TagResourceOutput, error) {
+func (m *MockFSxAPI) TagResourceWithContext(arg0 context.Context, arg1 *fsx.TagResourceInput, arg2 ...request.Option) (*fsx.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -582,7 +582,7 @@ func (mr *MockFSxAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockFSxAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *fsx.UntagResourceInput, arg2 ...request.Option) (*fsx.UntagResourceOutput, error) {
+func (m *MockFSxAPI) UntagResourceWithContext(arg0 context.Context, arg1 *fsx.UntagResourceInput, arg2 ...request.Option) (*fsx.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -632,7 +632,7 @@ func (mr *MockFSxAPIMockRecorder) UpdateFileSystemRequest(arg0 interface{}) *gom
 }
 
 // UpdateFileSystemWithContext mocks base method
-func (m *MockFSxAPI) UpdateFileSystemWithContext(arg0 aws.Context, arg1 *fsx.UpdateFileSystemInput, arg2 ...request.Option) (*fsx.UpdateFileSystemOutput, error) {
+func (m *MockFSxAPI) UpdateFileSystemWithContext(arg0 context.Context, arg1 *fsx.UpdateFileSystemInput, arg2 ...request.Option) (*fsx.UpdateFileSystemOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

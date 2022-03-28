@@ -5,7 +5,7 @@
 package route53resolvermock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	route53resolver "github.com/aws/aws-sdk-go/service/route53resolver"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverEndpointIpAddress
 }
 
 // AssociateResolverEndpointIpAddressWithContext mocks base method
-func (m *MockRoute53ResolverAPI) AssociateResolverEndpointIpAddressWithContext(arg0 aws.Context, arg1 *route53resolver.AssociateResolverEndpointIpAddressInput, arg2 ...request.Option) (*route53resolver.AssociateResolverEndpointIpAddressOutput, error) {
+func (m *MockRoute53ResolverAPI) AssociateResolverEndpointIpAddressWithContext(arg0 context.Context, arg1 *route53resolver.AssociateResolverEndpointIpAddressInput, arg2 ...request.Option) (*route53resolver.AssociateResolverEndpointIpAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverRuleRequest(arg0 
 }
 
 // AssociateResolverRuleWithContext mocks base method
-func (m *MockRoute53ResolverAPI) AssociateResolverRuleWithContext(arg0 aws.Context, arg1 *route53resolver.AssociateResolverRuleInput, arg2 ...request.Option) (*route53resolver.AssociateResolverRuleOutput, error) {
+func (m *MockRoute53ResolverAPI) AssociateResolverRuleWithContext(arg0 context.Context, arg1 *route53resolver.AssociateResolverRuleInput, arg2 ...request.Option) (*route53resolver.AssociateResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverEndpointRequest(arg0
 }
 
 // CreateResolverEndpointWithContext mocks base method
-func (m *MockRoute53ResolverAPI) CreateResolverEndpointWithContext(arg0 aws.Context, arg1 *route53resolver.CreateResolverEndpointInput, arg2 ...request.Option) (*route53resolver.CreateResolverEndpointOutput, error) {
+func (m *MockRoute53ResolverAPI) CreateResolverEndpointWithContext(arg0 context.Context, arg1 *route53resolver.CreateResolverEndpointInput, arg2 ...request.Option) (*route53resolver.CreateResolverEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverRuleRequest(arg0 int
 }
 
 // CreateResolverRuleWithContext mocks base method
-func (m *MockRoute53ResolverAPI) CreateResolverRuleWithContext(arg0 aws.Context, arg1 *route53resolver.CreateResolverRuleInput, arg2 ...request.Option) (*route53resolver.CreateResolverRuleOutput, error) {
+func (m *MockRoute53ResolverAPI) CreateResolverRuleWithContext(arg0 context.Context, arg1 *route53resolver.CreateResolverRuleInput, arg2 ...request.Option) (*route53resolver.CreateResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverEndpointRequest(arg0
 }
 
 // DeleteResolverEndpointWithContext mocks base method
-func (m *MockRoute53ResolverAPI) DeleteResolverEndpointWithContext(arg0 aws.Context, arg1 *route53resolver.DeleteResolverEndpointInput, arg2 ...request.Option) (*route53resolver.DeleteResolverEndpointOutput, error) {
+func (m *MockRoute53ResolverAPI) DeleteResolverEndpointWithContext(arg0 context.Context, arg1 *route53resolver.DeleteResolverEndpointInput, arg2 ...request.Option) (*route53resolver.DeleteResolverEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverRuleRequest(arg0 int
 }
 
 // DeleteResolverRuleWithContext mocks base method
-func (m *MockRoute53ResolverAPI) DeleteResolverRuleWithContext(arg0 aws.Context, arg1 *route53resolver.DeleteResolverRuleInput, arg2 ...request.Option) (*route53resolver.DeleteResolverRuleOutput, error) {
+func (m *MockRoute53ResolverAPI) DeleteResolverRuleWithContext(arg0 context.Context, arg1 *route53resolver.DeleteResolverRuleInput, arg2 ...request.Option) (*route53resolver.DeleteResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverEndpointIpAddr
 }
 
 // DisassociateResolverEndpointIpAddressWithContext mocks base method
-func (m *MockRoute53ResolverAPI) DisassociateResolverEndpointIpAddressWithContext(arg0 aws.Context, arg1 *route53resolver.DisassociateResolverEndpointIpAddressInput, arg2 ...request.Option) (*route53resolver.DisassociateResolverEndpointIpAddressOutput, error) {
+func (m *MockRoute53ResolverAPI) DisassociateResolverEndpointIpAddressWithContext(arg0 context.Context, arg1 *route53resolver.DisassociateResolverEndpointIpAddressInput, arg2 ...request.Option) (*route53resolver.DisassociateResolverEndpointIpAddressOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverRuleRequest(ar
 }
 
 // DisassociateResolverRuleWithContext mocks base method
-func (m *MockRoute53ResolverAPI) DisassociateResolverRuleWithContext(arg0 aws.Context, arg1 *route53resolver.DisassociateResolverRuleInput, arg2 ...request.Option) (*route53resolver.DisassociateResolverRuleOutput, error) {
+func (m *MockRoute53ResolverAPI) DisassociateResolverRuleWithContext(arg0 context.Context, arg1 *route53resolver.DisassociateResolverRuleInput, arg2 ...request.Option) (*route53resolver.DisassociateResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverEndpointRequest(arg0 in
 }
 
 // GetResolverEndpointWithContext mocks base method
-func (m *MockRoute53ResolverAPI) GetResolverEndpointWithContext(arg0 aws.Context, arg1 *route53resolver.GetResolverEndpointInput, arg2 ...request.Option) (*route53resolver.GetResolverEndpointOutput, error) {
+func (m *MockRoute53ResolverAPI) GetResolverEndpointWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverEndpointInput, arg2 ...request.Option) (*route53resolver.GetResolverEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -531,7 +531,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverRuleAssociationRequest(
 }
 
 // GetResolverRuleAssociationWithContext mocks base method
-func (m *MockRoute53ResolverAPI) GetResolverRuleAssociationWithContext(arg0 aws.Context, arg1 *route53resolver.GetResolverRuleAssociationInput, arg2 ...request.Option) (*route53resolver.GetResolverRuleAssociationOutput, error) {
+func (m *MockRoute53ResolverAPI) GetResolverRuleAssociationWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverRuleAssociationInput, arg2 ...request.Option) (*route53resolver.GetResolverRuleAssociationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverRulePolicyRequest(arg0 
 }
 
 // GetResolverRulePolicyWithContext mocks base method
-func (m *MockRoute53ResolverAPI) GetResolverRulePolicyWithContext(arg0 aws.Context, arg1 *route53resolver.GetResolverRulePolicyInput, arg2 ...request.Option) (*route53resolver.GetResolverRulePolicyOutput, error) {
+func (m *MockRoute53ResolverAPI) GetResolverRulePolicyWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverRulePolicyInput, arg2 ...request.Option) (*route53resolver.GetResolverRulePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -616,7 +616,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverRuleRequest(arg0 interf
 }
 
 // GetResolverRuleWithContext mocks base method
-func (m *MockRoute53ResolverAPI) GetResolverRuleWithContext(arg0 aws.Context, arg1 *route53resolver.GetResolverRuleInput, arg2 ...request.Option) (*route53resolver.GetResolverRuleOutput, error) {
+func (m *MockRoute53ResolverAPI) GetResolverRuleWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverRuleInput, arg2 ...request.Option) (*route53resolver.GetResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -665,7 +665,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverEndpointIpAddressesPag
 }
 
 // ListResolverEndpointIpAddressesPagesWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverEndpointIpAddressesPagesWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverEndpointIpAddressesInput, arg2 func(*route53resolver.ListResolverEndpointIpAddressesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53ResolverAPI) ListResolverEndpointIpAddressesPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverEndpointIpAddressesInput, arg2 func(*route53resolver.ListResolverEndpointIpAddressesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -699,7 +699,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverEndpointIpAddressesReq
 }
 
 // ListResolverEndpointIpAddressesWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverEndpointIpAddressesWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverEndpointIpAddressesInput, arg2 ...request.Option) (*route53resolver.ListResolverEndpointIpAddressesOutput, error) {
+func (m *MockRoute53ResolverAPI) ListResolverEndpointIpAddressesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverEndpointIpAddressesInput, arg2 ...request.Option) (*route53resolver.ListResolverEndpointIpAddressesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -748,7 +748,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverEndpointsPages(arg0, a
 }
 
 // ListResolverEndpointsPagesWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverEndpointsPagesWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverEndpointsInput, arg2 func(*route53resolver.ListResolverEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53ResolverAPI) ListResolverEndpointsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverEndpointsInput, arg2 func(*route53resolver.ListResolverEndpointsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -782,7 +782,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverEndpointsRequest(arg0 
 }
 
 // ListResolverEndpointsWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverEndpointsWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverEndpointsInput, arg2 ...request.Option) (*route53resolver.ListResolverEndpointsOutput, error) {
+func (m *MockRoute53ResolverAPI) ListResolverEndpointsWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverEndpointsInput, arg2 ...request.Option) (*route53resolver.ListResolverEndpointsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -831,7 +831,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverRuleAssociationsPages(
 }
 
 // ListResolverRuleAssociationsPagesWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverRuleAssociationsPagesWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverRuleAssociationsInput, arg2 func(*route53resolver.ListResolverRuleAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53ResolverAPI) ListResolverRuleAssociationsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverRuleAssociationsInput, arg2 func(*route53resolver.ListResolverRuleAssociationsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -865,7 +865,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverRuleAssociationsReques
 }
 
 // ListResolverRuleAssociationsWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverRuleAssociationsWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverRuleAssociationsInput, arg2 ...request.Option) (*route53resolver.ListResolverRuleAssociationsOutput, error) {
+func (m *MockRoute53ResolverAPI) ListResolverRuleAssociationsWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverRuleAssociationsInput, arg2 ...request.Option) (*route53resolver.ListResolverRuleAssociationsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -914,7 +914,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverRulesPages(arg0, arg1 
 }
 
 // ListResolverRulesPagesWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverRulesPagesWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverRulesInput, arg2 func(*route53resolver.ListResolverRulesOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockRoute53ResolverAPI) ListResolverRulesPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverRulesInput, arg2 func(*route53resolver.ListResolverRulesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -948,7 +948,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverRulesRequest(arg0 inte
 }
 
 // ListResolverRulesWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListResolverRulesWithContext(arg0 aws.Context, arg1 *route53resolver.ListResolverRulesInput, arg2 ...request.Option) (*route53resolver.ListResolverRulesOutput, error) {
+func (m *MockRoute53ResolverAPI) ListResolverRulesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverRulesInput, arg2 ...request.Option) (*route53resolver.ListResolverRulesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -998,7 +998,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListTagsForResourceRequest(arg0 in
 }
 
 // ListTagsForResourceWithContext mocks base method
-func (m *MockRoute53ResolverAPI) ListTagsForResourceWithContext(arg0 aws.Context, arg1 *route53resolver.ListTagsForResourceInput, arg2 ...request.Option) (*route53resolver.ListTagsForResourceOutput, error) {
+func (m *MockRoute53ResolverAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *route53resolver.ListTagsForResourceInput, arg2 ...request.Option) (*route53resolver.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) PutResolverRulePolicyRequest(arg0 
 }
 
 // PutResolverRulePolicyWithContext mocks base method
-func (m *MockRoute53ResolverAPI) PutResolverRulePolicyWithContext(arg0 aws.Context, arg1 *route53resolver.PutResolverRulePolicyInput, arg2 ...request.Option) (*route53resolver.PutResolverRulePolicyOutput, error) {
+func (m *MockRoute53ResolverAPI) PutResolverRulePolicyWithContext(arg0 context.Context, arg1 *route53resolver.PutResolverRulePolicyInput, arg2 ...request.Option) (*route53resolver.PutResolverRulePolicyOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) TagResourceRequest(arg0 interface{
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockRoute53ResolverAPI) TagResourceWithContext(arg0 aws.Context, arg1 *route53resolver.TagResourceInput, arg2 ...request.Option) (*route53resolver.TagResourceOutput, error) {
+func (m *MockRoute53ResolverAPI) TagResourceWithContext(arg0 context.Context, arg1 *route53resolver.TagResourceInput, arg2 ...request.Option) (*route53resolver.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) UntagResourceRequest(arg0 interfac
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockRoute53ResolverAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *route53resolver.UntagResourceInput, arg2 ...request.Option) (*route53resolver.UntagResourceOutput, error) {
+func (m *MockRoute53ResolverAPI) UntagResourceWithContext(arg0 context.Context, arg1 *route53resolver.UntagResourceInput, arg2 ...request.Option) (*route53resolver.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1198,7 +1198,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverEndpointRequest(arg0
 }
 
 // UpdateResolverEndpointWithContext mocks base method
-func (m *MockRoute53ResolverAPI) UpdateResolverEndpointWithContext(arg0 aws.Context, arg1 *route53resolver.UpdateResolverEndpointInput, arg2 ...request.Option) (*route53resolver.UpdateResolverEndpointOutput, error) {
+func (m *MockRoute53ResolverAPI) UpdateResolverEndpointWithContext(arg0 context.Context, arg1 *route53resolver.UpdateResolverEndpointInput, arg2 ...request.Option) (*route53resolver.UpdateResolverEndpointOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1248,7 +1248,7 @@ func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverRuleRequest(arg0 int
 }
 
 // UpdateResolverRuleWithContext mocks base method
-func (m *MockRoute53ResolverAPI) UpdateResolverRuleWithContext(arg0 aws.Context, arg1 *route53resolver.UpdateResolverRuleInput, arg2 ...request.Option) (*route53resolver.UpdateResolverRuleOutput, error) {
+func (m *MockRoute53ResolverAPI) UpdateResolverRuleWithContext(arg0 context.Context, arg1 *route53resolver.UpdateResolverRuleInput, arg2 ...request.Option) (*route53resolver.UpdateResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

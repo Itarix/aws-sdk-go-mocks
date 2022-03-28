@@ -5,7 +5,7 @@
 package smsmock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	sms "github.com/aws/aws-sdk-go/service/sms"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockSMSAPIMockRecorder) CreateAppRequest(arg0 interface{}) *gomock.Cal
 }
 
 // CreateAppWithContext mocks base method
-func (m *MockSMSAPI) CreateAppWithContext(arg0 aws.Context, arg1 *sms.CreateAppInput, arg2 ...request.Option) (*sms.CreateAppOutput, error) {
+func (m *MockSMSAPI) CreateAppWithContext(arg0 context.Context, arg1 *sms.CreateAppInput, arg2 ...request.Option) (*sms.CreateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockSMSAPIMockRecorder) CreateReplicationJobRequest(arg0 interface{}) 
 }
 
 // CreateReplicationJobWithContext mocks base method
-func (m *MockSMSAPI) CreateReplicationJobWithContext(arg0 aws.Context, arg1 *sms.CreateReplicationJobInput, arg2 ...request.Option) (*sms.CreateReplicationJobOutput, error) {
+func (m *MockSMSAPI) CreateReplicationJobWithContext(arg0 context.Context, arg1 *sms.CreateReplicationJobInput, arg2 ...request.Option) (*sms.CreateReplicationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -181,7 +181,7 @@ func (mr *MockSMSAPIMockRecorder) DeleteAppLaunchConfigurationRequest(arg0 inter
 }
 
 // DeleteAppLaunchConfigurationWithContext mocks base method
-func (m *MockSMSAPI) DeleteAppLaunchConfigurationWithContext(arg0 aws.Context, arg1 *sms.DeleteAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.DeleteAppLaunchConfigurationOutput, error) {
+func (m *MockSMSAPI) DeleteAppLaunchConfigurationWithContext(arg0 context.Context, arg1 *sms.DeleteAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.DeleteAppLaunchConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -231,7 +231,7 @@ func (mr *MockSMSAPIMockRecorder) DeleteAppReplicationConfigurationRequest(arg0 
 }
 
 // DeleteAppReplicationConfigurationWithContext mocks base method
-func (m *MockSMSAPI) DeleteAppReplicationConfigurationWithContext(arg0 aws.Context, arg1 *sms.DeleteAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.DeleteAppReplicationConfigurationOutput, error) {
+func (m *MockSMSAPI) DeleteAppReplicationConfigurationWithContext(arg0 context.Context, arg1 *sms.DeleteAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.DeleteAppReplicationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockSMSAPIMockRecorder) DeleteAppRequest(arg0 interface{}) *gomock.Cal
 }
 
 // DeleteAppWithContext mocks base method
-func (m *MockSMSAPI) DeleteAppWithContext(arg0 aws.Context, arg1 *sms.DeleteAppInput, arg2 ...request.Option) (*sms.DeleteAppOutput, error) {
+func (m *MockSMSAPI) DeleteAppWithContext(arg0 context.Context, arg1 *sms.DeleteAppInput, arg2 ...request.Option) (*sms.DeleteAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockSMSAPIMockRecorder) DeleteReplicationJobRequest(arg0 interface{}) 
 }
 
 // DeleteReplicationJobWithContext mocks base method
-func (m *MockSMSAPI) DeleteReplicationJobWithContext(arg0 aws.Context, arg1 *sms.DeleteReplicationJobInput, arg2 ...request.Option) (*sms.DeleteReplicationJobOutput, error) {
+func (m *MockSMSAPI) DeleteReplicationJobWithContext(arg0 context.Context, arg1 *sms.DeleteReplicationJobInput, arg2 ...request.Option) (*sms.DeleteReplicationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -366,7 +366,7 @@ func (mr *MockSMSAPIMockRecorder) DeleteServerCatalogRequest(arg0 interface{}) *
 }
 
 // DeleteServerCatalogWithContext mocks base method
-func (m *MockSMSAPI) DeleteServerCatalogWithContext(arg0 aws.Context, arg1 *sms.DeleteServerCatalogInput, arg2 ...request.Option) (*sms.DeleteServerCatalogOutput, error) {
+func (m *MockSMSAPI) DeleteServerCatalogWithContext(arg0 context.Context, arg1 *sms.DeleteServerCatalogInput, arg2 ...request.Option) (*sms.DeleteServerCatalogOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -416,7 +416,7 @@ func (mr *MockSMSAPIMockRecorder) DisassociateConnectorRequest(arg0 interface{})
 }
 
 // DisassociateConnectorWithContext mocks base method
-func (m *MockSMSAPI) DisassociateConnectorWithContext(arg0 aws.Context, arg1 *sms.DisassociateConnectorInput, arg2 ...request.Option) (*sms.DisassociateConnectorOutput, error) {
+func (m *MockSMSAPI) DisassociateConnectorWithContext(arg0 context.Context, arg1 *sms.DisassociateConnectorInput, arg2 ...request.Option) (*sms.DisassociateConnectorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -466,7 +466,7 @@ func (mr *MockSMSAPIMockRecorder) GenerateChangeSetRequest(arg0 interface{}) *go
 }
 
 // GenerateChangeSetWithContext mocks base method
-func (m *MockSMSAPI) GenerateChangeSetWithContext(arg0 aws.Context, arg1 *sms.GenerateChangeSetInput, arg2 ...request.Option) (*sms.GenerateChangeSetOutput, error) {
+func (m *MockSMSAPI) GenerateChangeSetWithContext(arg0 context.Context, arg1 *sms.GenerateChangeSetInput, arg2 ...request.Option) (*sms.GenerateChangeSetOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -516,7 +516,7 @@ func (mr *MockSMSAPIMockRecorder) GenerateTemplateRequest(arg0 interface{}) *gom
 }
 
 // GenerateTemplateWithContext mocks base method
-func (m *MockSMSAPI) GenerateTemplateWithContext(arg0 aws.Context, arg1 *sms.GenerateTemplateInput, arg2 ...request.Option) (*sms.GenerateTemplateOutput, error) {
+func (m *MockSMSAPI) GenerateTemplateWithContext(arg0 context.Context, arg1 *sms.GenerateTemplateInput, arg2 ...request.Option) (*sms.GenerateTemplateOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockSMSAPIMockRecorder) GetAppLaunchConfigurationRequest(arg0 interfac
 }
 
 // GetAppLaunchConfigurationWithContext mocks base method
-func (m *MockSMSAPI) GetAppLaunchConfigurationWithContext(arg0 aws.Context, arg1 *sms.GetAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.GetAppLaunchConfigurationOutput, error) {
+func (m *MockSMSAPI) GetAppLaunchConfigurationWithContext(arg0 context.Context, arg1 *sms.GetAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.GetAppLaunchConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -631,7 +631,7 @@ func (mr *MockSMSAPIMockRecorder) GetAppReplicationConfigurationRequest(arg0 int
 }
 
 // GetAppReplicationConfigurationWithContext mocks base method
-func (m *MockSMSAPI) GetAppReplicationConfigurationWithContext(arg0 aws.Context, arg1 *sms.GetAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.GetAppReplicationConfigurationOutput, error) {
+func (m *MockSMSAPI) GetAppReplicationConfigurationWithContext(arg0 context.Context, arg1 *sms.GetAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.GetAppReplicationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -666,7 +666,7 @@ func (mr *MockSMSAPIMockRecorder) GetAppRequest(arg0 interface{}) *gomock.Call {
 }
 
 // GetAppWithContext mocks base method
-func (m *MockSMSAPI) GetAppWithContext(arg0 aws.Context, arg1 *sms.GetAppInput, arg2 ...request.Option) (*sms.GetAppOutput, error) {
+func (m *MockSMSAPI) GetAppWithContext(arg0 context.Context, arg1 *sms.GetAppInput, arg2 ...request.Option) (*sms.GetAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockSMSAPIMockRecorder) GetConnectorsPages(arg0, arg1 interface{}) *go
 }
 
 // GetConnectorsPagesWithContext mocks base method
-func (m *MockSMSAPI) GetConnectorsPagesWithContext(arg0 aws.Context, arg1 *sms.GetConnectorsInput, arg2 func(*sms.GetConnectorsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSMSAPI) GetConnectorsPagesWithContext(arg0 context.Context, arg1 *sms.GetConnectorsInput, arg2 func(*sms.GetConnectorsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -749,7 +749,7 @@ func (mr *MockSMSAPIMockRecorder) GetConnectorsRequest(arg0 interface{}) *gomock
 }
 
 // GetConnectorsWithContext mocks base method
-func (m *MockSMSAPI) GetConnectorsWithContext(arg0 aws.Context, arg1 *sms.GetConnectorsInput, arg2 ...request.Option) (*sms.GetConnectorsOutput, error) {
+func (m *MockSMSAPI) GetConnectorsWithContext(arg0 context.Context, arg1 *sms.GetConnectorsInput, arg2 ...request.Option) (*sms.GetConnectorsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -798,7 +798,7 @@ func (mr *MockSMSAPIMockRecorder) GetReplicationJobsPages(arg0, arg1 interface{}
 }
 
 // GetReplicationJobsPagesWithContext mocks base method
-func (m *MockSMSAPI) GetReplicationJobsPagesWithContext(arg0 aws.Context, arg1 *sms.GetReplicationJobsInput, arg2 func(*sms.GetReplicationJobsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSMSAPI) GetReplicationJobsPagesWithContext(arg0 context.Context, arg1 *sms.GetReplicationJobsInput, arg2 func(*sms.GetReplicationJobsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -832,7 +832,7 @@ func (mr *MockSMSAPIMockRecorder) GetReplicationJobsRequest(arg0 interface{}) *g
 }
 
 // GetReplicationJobsWithContext mocks base method
-func (m *MockSMSAPI) GetReplicationJobsWithContext(arg0 aws.Context, arg1 *sms.GetReplicationJobsInput, arg2 ...request.Option) (*sms.GetReplicationJobsOutput, error) {
+func (m *MockSMSAPI) GetReplicationJobsWithContext(arg0 context.Context, arg1 *sms.GetReplicationJobsInput, arg2 ...request.Option) (*sms.GetReplicationJobsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -881,7 +881,7 @@ func (mr *MockSMSAPIMockRecorder) GetReplicationRunsPages(arg0, arg1 interface{}
 }
 
 // GetReplicationRunsPagesWithContext mocks base method
-func (m *MockSMSAPI) GetReplicationRunsPagesWithContext(arg0 aws.Context, arg1 *sms.GetReplicationRunsInput, arg2 func(*sms.GetReplicationRunsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSMSAPI) GetReplicationRunsPagesWithContext(arg0 context.Context, arg1 *sms.GetReplicationRunsInput, arg2 func(*sms.GetReplicationRunsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -915,7 +915,7 @@ func (mr *MockSMSAPIMockRecorder) GetReplicationRunsRequest(arg0 interface{}) *g
 }
 
 // GetReplicationRunsWithContext mocks base method
-func (m *MockSMSAPI) GetReplicationRunsWithContext(arg0 aws.Context, arg1 *sms.GetReplicationRunsInput, arg2 ...request.Option) (*sms.GetReplicationRunsOutput, error) {
+func (m *MockSMSAPI) GetReplicationRunsWithContext(arg0 context.Context, arg1 *sms.GetReplicationRunsInput, arg2 ...request.Option) (*sms.GetReplicationRunsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -964,7 +964,7 @@ func (mr *MockSMSAPIMockRecorder) GetServersPages(arg0, arg1 interface{}) *gomoc
 }
 
 // GetServersPagesWithContext mocks base method
-func (m *MockSMSAPI) GetServersPagesWithContext(arg0 aws.Context, arg1 *sms.GetServersInput, arg2 func(*sms.GetServersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockSMSAPI) GetServersPagesWithContext(arg0 context.Context, arg1 *sms.GetServersInput, arg2 func(*sms.GetServersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -998,7 +998,7 @@ func (mr *MockSMSAPIMockRecorder) GetServersRequest(arg0 interface{}) *gomock.Ca
 }
 
 // GetServersWithContext mocks base method
-func (m *MockSMSAPI) GetServersWithContext(arg0 aws.Context, arg1 *sms.GetServersInput, arg2 ...request.Option) (*sms.GetServersOutput, error) {
+func (m *MockSMSAPI) GetServersWithContext(arg0 context.Context, arg1 *sms.GetServersInput, arg2 ...request.Option) (*sms.GetServersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1048,7 +1048,7 @@ func (mr *MockSMSAPIMockRecorder) ImportServerCatalogRequest(arg0 interface{}) *
 }
 
 // ImportServerCatalogWithContext mocks base method
-func (m *MockSMSAPI) ImportServerCatalogWithContext(arg0 aws.Context, arg1 *sms.ImportServerCatalogInput, arg2 ...request.Option) (*sms.ImportServerCatalogOutput, error) {
+func (m *MockSMSAPI) ImportServerCatalogWithContext(arg0 context.Context, arg1 *sms.ImportServerCatalogInput, arg2 ...request.Option) (*sms.ImportServerCatalogOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1098,7 +1098,7 @@ func (mr *MockSMSAPIMockRecorder) LaunchAppRequest(arg0 interface{}) *gomock.Cal
 }
 
 // LaunchAppWithContext mocks base method
-func (m *MockSMSAPI) LaunchAppWithContext(arg0 aws.Context, arg1 *sms.LaunchAppInput, arg2 ...request.Option) (*sms.LaunchAppOutput, error) {
+func (m *MockSMSAPI) LaunchAppWithContext(arg0 context.Context, arg1 *sms.LaunchAppInput, arg2 ...request.Option) (*sms.LaunchAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1148,7 +1148,7 @@ func (mr *MockSMSAPIMockRecorder) ListAppsRequest(arg0 interface{}) *gomock.Call
 }
 
 // ListAppsWithContext mocks base method
-func (m *MockSMSAPI) ListAppsWithContext(arg0 aws.Context, arg1 *sms.ListAppsInput, arg2 ...request.Option) (*sms.ListAppsOutput, error) {
+func (m *MockSMSAPI) ListAppsWithContext(arg0 context.Context, arg1 *sms.ListAppsInput, arg2 ...request.Option) (*sms.ListAppsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1198,7 +1198,7 @@ func (mr *MockSMSAPIMockRecorder) PutAppLaunchConfigurationRequest(arg0 interfac
 }
 
 // PutAppLaunchConfigurationWithContext mocks base method
-func (m *MockSMSAPI) PutAppLaunchConfigurationWithContext(arg0 aws.Context, arg1 *sms.PutAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.PutAppLaunchConfigurationOutput, error) {
+func (m *MockSMSAPI) PutAppLaunchConfigurationWithContext(arg0 context.Context, arg1 *sms.PutAppLaunchConfigurationInput, arg2 ...request.Option) (*sms.PutAppLaunchConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1248,7 +1248,7 @@ func (mr *MockSMSAPIMockRecorder) PutAppReplicationConfigurationRequest(arg0 int
 }
 
 // PutAppReplicationConfigurationWithContext mocks base method
-func (m *MockSMSAPI) PutAppReplicationConfigurationWithContext(arg0 aws.Context, arg1 *sms.PutAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.PutAppReplicationConfigurationOutput, error) {
+func (m *MockSMSAPI) PutAppReplicationConfigurationWithContext(arg0 context.Context, arg1 *sms.PutAppReplicationConfigurationInput, arg2 ...request.Option) (*sms.PutAppReplicationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1298,7 +1298,7 @@ func (mr *MockSMSAPIMockRecorder) StartAppReplicationRequest(arg0 interface{}) *
 }
 
 // StartAppReplicationWithContext mocks base method
-func (m *MockSMSAPI) StartAppReplicationWithContext(arg0 aws.Context, arg1 *sms.StartAppReplicationInput, arg2 ...request.Option) (*sms.StartAppReplicationOutput, error) {
+func (m *MockSMSAPI) StartAppReplicationWithContext(arg0 context.Context, arg1 *sms.StartAppReplicationInput, arg2 ...request.Option) (*sms.StartAppReplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1348,7 +1348,7 @@ func (mr *MockSMSAPIMockRecorder) StartOnDemandReplicationRunRequest(arg0 interf
 }
 
 // StartOnDemandReplicationRunWithContext mocks base method
-func (m *MockSMSAPI) StartOnDemandReplicationRunWithContext(arg0 aws.Context, arg1 *sms.StartOnDemandReplicationRunInput, arg2 ...request.Option) (*sms.StartOnDemandReplicationRunOutput, error) {
+func (m *MockSMSAPI) StartOnDemandReplicationRunWithContext(arg0 context.Context, arg1 *sms.StartOnDemandReplicationRunInput, arg2 ...request.Option) (*sms.StartOnDemandReplicationRunOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1398,7 +1398,7 @@ func (mr *MockSMSAPIMockRecorder) StopAppReplicationRequest(arg0 interface{}) *g
 }
 
 // StopAppReplicationWithContext mocks base method
-func (m *MockSMSAPI) StopAppReplicationWithContext(arg0 aws.Context, arg1 *sms.StopAppReplicationInput, arg2 ...request.Option) (*sms.StopAppReplicationOutput, error) {
+func (m *MockSMSAPI) StopAppReplicationWithContext(arg0 context.Context, arg1 *sms.StopAppReplicationInput, arg2 ...request.Option) (*sms.StopAppReplicationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1448,7 +1448,7 @@ func (mr *MockSMSAPIMockRecorder) TerminateAppRequest(arg0 interface{}) *gomock.
 }
 
 // TerminateAppWithContext mocks base method
-func (m *MockSMSAPI) TerminateAppWithContext(arg0 aws.Context, arg1 *sms.TerminateAppInput, arg2 ...request.Option) (*sms.TerminateAppOutput, error) {
+func (m *MockSMSAPI) TerminateAppWithContext(arg0 context.Context, arg1 *sms.TerminateAppInput, arg2 ...request.Option) (*sms.TerminateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1498,7 +1498,7 @@ func (mr *MockSMSAPIMockRecorder) UpdateAppRequest(arg0 interface{}) *gomock.Cal
 }
 
 // UpdateAppWithContext mocks base method
-func (m *MockSMSAPI) UpdateAppWithContext(arg0 aws.Context, arg1 *sms.UpdateAppInput, arg2 ...request.Option) (*sms.UpdateAppOutput, error) {
+func (m *MockSMSAPI) UpdateAppWithContext(arg0 context.Context, arg1 *sms.UpdateAppInput, arg2 ...request.Option) (*sms.UpdateAppOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -1548,7 +1548,7 @@ func (mr *MockSMSAPIMockRecorder) UpdateReplicationJobRequest(arg0 interface{}) 
 }
 
 // UpdateReplicationJobWithContext mocks base method
-func (m *MockSMSAPI) UpdateReplicationJobWithContext(arg0 aws.Context, arg1 *sms.UpdateReplicationJobInput, arg2 ...request.Option) (*sms.UpdateReplicationJobOutput, error) {
+func (m *MockSMSAPI) UpdateReplicationJobWithContext(arg0 context.Context, arg1 *sms.UpdateReplicationJobInput, arg2 ...request.Option) (*sms.UpdateReplicationJobOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {

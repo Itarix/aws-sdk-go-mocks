@@ -5,7 +5,7 @@
 package cloudhsmv2mock
 
 import (
-	aws "github.com/aws/aws-sdk-go/aws"
+	context "context"
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudhsmv2 "github.com/aws/aws-sdk-go/service/cloudhsmv2"
 	gomock "github.com/golang/mock/gomock"
@@ -66,7 +66,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) CopyBackupToRegionRequest(arg0 interfac
 }
 
 // CopyBackupToRegionWithContext mocks base method
-func (m *MockCloudHSMV2API) CopyBackupToRegionWithContext(arg0 aws.Context, arg1 *cloudhsmv2.CopyBackupToRegionInput, arg2 ...request.Option) (*cloudhsmv2.CopyBackupToRegionOutput, error) {
+func (m *MockCloudHSMV2API) CopyBackupToRegionWithContext(arg0 context.Context, arg1 *cloudhsmv2.CopyBackupToRegionInput, arg2 ...request.Option) (*cloudhsmv2.CopyBackupToRegionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -116,7 +116,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) CreateClusterRequest(arg0 interface{}) 
 }
 
 // CreateClusterWithContext mocks base method
-func (m *MockCloudHSMV2API) CreateClusterWithContext(arg0 aws.Context, arg1 *cloudhsmv2.CreateClusterInput, arg2 ...request.Option) (*cloudhsmv2.CreateClusterOutput, error) {
+func (m *MockCloudHSMV2API) CreateClusterWithContext(arg0 context.Context, arg1 *cloudhsmv2.CreateClusterInput, arg2 ...request.Option) (*cloudhsmv2.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -166,7 +166,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) CreateHsmRequest(arg0 interface{}) *gom
 }
 
 // CreateHsmWithContext mocks base method
-func (m *MockCloudHSMV2API) CreateHsmWithContext(arg0 aws.Context, arg1 *cloudhsmv2.CreateHsmInput, arg2 ...request.Option) (*cloudhsmv2.CreateHsmOutput, error) {
+func (m *MockCloudHSMV2API) CreateHsmWithContext(arg0 context.Context, arg1 *cloudhsmv2.CreateHsmInput, arg2 ...request.Option) (*cloudhsmv2.CreateHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -216,7 +216,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DeleteBackupRequest(arg0 interface{}) *
 }
 
 // DeleteBackupWithContext mocks base method
-func (m *MockCloudHSMV2API) DeleteBackupWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DeleteBackupInput, arg2 ...request.Option) (*cloudhsmv2.DeleteBackupOutput, error) {
+func (m *MockCloudHSMV2API) DeleteBackupWithContext(arg0 context.Context, arg1 *cloudhsmv2.DeleteBackupInput, arg2 ...request.Option) (*cloudhsmv2.DeleteBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -266,7 +266,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DeleteClusterRequest(arg0 interface{}) 
 }
 
 // DeleteClusterWithContext mocks base method
-func (m *MockCloudHSMV2API) DeleteClusterWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DeleteClusterInput, arg2 ...request.Option) (*cloudhsmv2.DeleteClusterOutput, error) {
+func (m *MockCloudHSMV2API) DeleteClusterWithContext(arg0 context.Context, arg1 *cloudhsmv2.DeleteClusterInput, arg2 ...request.Option) (*cloudhsmv2.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -316,7 +316,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DeleteHsmRequest(arg0 interface{}) *gom
 }
 
 // DeleteHsmWithContext mocks base method
-func (m *MockCloudHSMV2API) DeleteHsmWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DeleteHsmInput, arg2 ...request.Option) (*cloudhsmv2.DeleteHsmOutput, error) {
+func (m *MockCloudHSMV2API) DeleteHsmWithContext(arg0 context.Context, arg1 *cloudhsmv2.DeleteHsmInput, arg2 ...request.Option) (*cloudhsmv2.DeleteHsmOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -365,7 +365,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DescribeBackupsPages(arg0, arg1 interfa
 }
 
 // DescribeBackupsPagesWithContext mocks base method
-func (m *MockCloudHSMV2API) DescribeBackupsPagesWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DescribeBackupsInput, arg2 func(*cloudhsmv2.DescribeBackupsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudHSMV2API) DescribeBackupsPagesWithContext(arg0 context.Context, arg1 *cloudhsmv2.DescribeBackupsInput, arg2 func(*cloudhsmv2.DescribeBackupsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -399,7 +399,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DescribeBackupsRequest(arg0 interface{}
 }
 
 // DescribeBackupsWithContext mocks base method
-func (m *MockCloudHSMV2API) DescribeBackupsWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DescribeBackupsInput, arg2 ...request.Option) (*cloudhsmv2.DescribeBackupsOutput, error) {
+func (m *MockCloudHSMV2API) DescribeBackupsWithContext(arg0 context.Context, arg1 *cloudhsmv2.DescribeBackupsInput, arg2 ...request.Option) (*cloudhsmv2.DescribeBackupsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -448,7 +448,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DescribeClustersPages(arg0, arg1 interf
 }
 
 // DescribeClustersPagesWithContext mocks base method
-func (m *MockCloudHSMV2API) DescribeClustersPagesWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DescribeClustersInput, arg2 func(*cloudhsmv2.DescribeClustersOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudHSMV2API) DescribeClustersPagesWithContext(arg0 context.Context, arg1 *cloudhsmv2.DescribeClustersInput, arg2 func(*cloudhsmv2.DescribeClustersOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -482,7 +482,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) DescribeClustersRequest(arg0 interface{
 }
 
 // DescribeClustersWithContext mocks base method
-func (m *MockCloudHSMV2API) DescribeClustersWithContext(arg0 aws.Context, arg1 *cloudhsmv2.DescribeClustersInput, arg2 ...request.Option) (*cloudhsmv2.DescribeClustersOutput, error) {
+func (m *MockCloudHSMV2API) DescribeClustersWithContext(arg0 context.Context, arg1 *cloudhsmv2.DescribeClustersInput, arg2 ...request.Option) (*cloudhsmv2.DescribeClustersOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -532,7 +532,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) InitializeClusterRequest(arg0 interface
 }
 
 // InitializeClusterWithContext mocks base method
-func (m *MockCloudHSMV2API) InitializeClusterWithContext(arg0 aws.Context, arg1 *cloudhsmv2.InitializeClusterInput, arg2 ...request.Option) (*cloudhsmv2.InitializeClusterOutput, error) {
+func (m *MockCloudHSMV2API) InitializeClusterWithContext(arg0 context.Context, arg1 *cloudhsmv2.InitializeClusterInput, arg2 ...request.Option) (*cloudhsmv2.InitializeClusterOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -581,7 +581,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) ListTagsPages(arg0, arg1 interface{}) *
 }
 
 // ListTagsPagesWithContext mocks base method
-func (m *MockCloudHSMV2API) ListTagsPagesWithContext(arg0 aws.Context, arg1 *cloudhsmv2.ListTagsInput, arg2 func(*cloudhsmv2.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
+func (m *MockCloudHSMV2API) ListTagsPagesWithContext(arg0 context.Context, arg1 *cloudhsmv2.ListTagsInput, arg2 func(*cloudhsmv2.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
@@ -615,7 +615,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) ListTagsRequest(arg0 interface{}) *gomo
 }
 
 // ListTagsWithContext mocks base method
-func (m *MockCloudHSMV2API) ListTagsWithContext(arg0 aws.Context, arg1 *cloudhsmv2.ListTagsInput, arg2 ...request.Option) (*cloudhsmv2.ListTagsOutput, error) {
+func (m *MockCloudHSMV2API) ListTagsWithContext(arg0 context.Context, arg1 *cloudhsmv2.ListTagsInput, arg2 ...request.Option) (*cloudhsmv2.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -665,7 +665,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) RestoreBackupRequest(arg0 interface{}) 
 }
 
 // RestoreBackupWithContext mocks base method
-func (m *MockCloudHSMV2API) RestoreBackupWithContext(arg0 aws.Context, arg1 *cloudhsmv2.RestoreBackupInput, arg2 ...request.Option) (*cloudhsmv2.RestoreBackupOutput, error) {
+func (m *MockCloudHSMV2API) RestoreBackupWithContext(arg0 context.Context, arg1 *cloudhsmv2.RestoreBackupInput, arg2 ...request.Option) (*cloudhsmv2.RestoreBackupOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -715,7 +715,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) TagResourceRequest(arg0 interface{}) *g
 }
 
 // TagResourceWithContext mocks base method
-func (m *MockCloudHSMV2API) TagResourceWithContext(arg0 aws.Context, arg1 *cloudhsmv2.TagResourceInput, arg2 ...request.Option) (*cloudhsmv2.TagResourceOutput, error) {
+func (m *MockCloudHSMV2API) TagResourceWithContext(arg0 context.Context, arg1 *cloudhsmv2.TagResourceInput, arg2 ...request.Option) (*cloudhsmv2.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
@@ -765,7 +765,7 @@ func (mr *MockCloudHSMV2APIMockRecorder) UntagResourceRequest(arg0 interface{}) 
 }
 
 // UntagResourceWithContext mocks base method
-func (m *MockCloudHSMV2API) UntagResourceWithContext(arg0 aws.Context, arg1 *cloudhsmv2.UntagResourceInput, arg2 ...request.Option) (*cloudhsmv2.UntagResourceOutput, error) {
+func (m *MockCloudHSMV2API) UntagResourceWithContext(arg0 context.Context, arg1 *cloudhsmv2.UntagResourceInput, arg2 ...request.Option) (*cloudhsmv2.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
