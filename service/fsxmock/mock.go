@@ -35,6 +35,56 @@ func (m *MockFSxAPI) EXPECT() *MockFSxAPIMockRecorder {
 	return m.recorder
 }
 
+// CancelDataRepositoryTask mocks base method
+func (m *MockFSxAPI) CancelDataRepositoryTask(arg0 *fsx.CancelDataRepositoryTaskInput) (*fsx.CancelDataRepositoryTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDataRepositoryTask", arg0)
+	ret0, _ := ret[0].(*fsx.CancelDataRepositoryTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDataRepositoryTask indicates an expected call of CancelDataRepositoryTask
+func (mr *MockFSxAPIMockRecorder) CancelDataRepositoryTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataRepositoryTask", reflect.TypeOf((*MockFSxAPI)(nil).CancelDataRepositoryTask), arg0)
+}
+
+// CancelDataRepositoryTaskRequest mocks base method
+func (m *MockFSxAPI) CancelDataRepositoryTaskRequest(arg0 *fsx.CancelDataRepositoryTaskInput) (*request.Request, *fsx.CancelDataRepositoryTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDataRepositoryTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.CancelDataRepositoryTaskOutput)
+	return ret0, ret1
+}
+
+// CancelDataRepositoryTaskRequest indicates an expected call of CancelDataRepositoryTaskRequest
+func (mr *MockFSxAPIMockRecorder) CancelDataRepositoryTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataRepositoryTaskRequest", reflect.TypeOf((*MockFSxAPI)(nil).CancelDataRepositoryTaskRequest), arg0)
+}
+
+// CancelDataRepositoryTaskWithContext mocks base method
+func (m *MockFSxAPI) CancelDataRepositoryTaskWithContext(arg0 context.Context, arg1 *fsx.CancelDataRepositoryTaskInput, arg2 ...request.Option) (*fsx.CancelDataRepositoryTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelDataRepositoryTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.CancelDataRepositoryTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDataRepositoryTaskWithContext indicates an expected call of CancelDataRepositoryTaskWithContext
+func (mr *MockFSxAPIMockRecorder) CancelDataRepositoryTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataRepositoryTaskWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CancelDataRepositoryTaskWithContext), varargs...)
+}
+
 // CreateBackup mocks base method
 func (m *MockFSxAPI) CreateBackup(arg0 *fsx.CreateBackupInput) (*fsx.CreateBackupOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,56 @@ func (mr *MockFSxAPIMockRecorder) CreateBackupWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackupWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CreateBackupWithContext), varargs...)
+}
+
+// CreateDataRepositoryTask mocks base method
+func (m *MockFSxAPI) CreateDataRepositoryTask(arg0 *fsx.CreateDataRepositoryTaskInput) (*fsx.CreateDataRepositoryTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataRepositoryTask", arg0)
+	ret0, _ := ret[0].(*fsx.CreateDataRepositoryTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataRepositoryTask indicates an expected call of CreateDataRepositoryTask
+func (mr *MockFSxAPIMockRecorder) CreateDataRepositoryTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataRepositoryTask", reflect.TypeOf((*MockFSxAPI)(nil).CreateDataRepositoryTask), arg0)
+}
+
+// CreateDataRepositoryTaskRequest mocks base method
+func (m *MockFSxAPI) CreateDataRepositoryTaskRequest(arg0 *fsx.CreateDataRepositoryTaskInput) (*request.Request, *fsx.CreateDataRepositoryTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataRepositoryTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.CreateDataRepositoryTaskOutput)
+	return ret0, ret1
+}
+
+// CreateDataRepositoryTaskRequest indicates an expected call of CreateDataRepositoryTaskRequest
+func (mr *MockFSxAPIMockRecorder) CreateDataRepositoryTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataRepositoryTaskRequest", reflect.TypeOf((*MockFSxAPI)(nil).CreateDataRepositoryTaskRequest), arg0)
+}
+
+// CreateDataRepositoryTaskWithContext mocks base method
+func (m *MockFSxAPI) CreateDataRepositoryTaskWithContext(arg0 context.Context, arg1 *fsx.CreateDataRepositoryTaskInput, arg2 ...request.Option) (*fsx.CreateDataRepositoryTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDataRepositoryTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.CreateDataRepositoryTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataRepositoryTaskWithContext indicates an expected call of CreateDataRepositoryTaskWithContext
+func (mr *MockFSxAPIMockRecorder) CreateDataRepositoryTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataRepositoryTaskWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CreateDataRepositoryTaskWithContext), varargs...)
 }
 
 // CreateFileSystem mocks base method
@@ -366,6 +466,89 @@ func (mr *MockFSxAPIMockRecorder) DescribeBackupsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBackupsWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeBackupsWithContext), varargs...)
+}
+
+// DescribeDataRepositoryTasks mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryTasks(arg0 *fsx.DescribeDataRepositoryTasksInput) (*fsx.DescribeDataRepositoryTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryTasks", arg0)
+	ret0, _ := ret[0].(*fsx.DescribeDataRepositoryTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataRepositoryTasks indicates an expected call of DescribeDataRepositoryTasks
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryTasks", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryTasks), arg0)
+}
+
+// DescribeDataRepositoryTasksPages mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryTasksPages(arg0 *fsx.DescribeDataRepositoryTasksInput, arg1 func(*fsx.DescribeDataRepositoryTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDataRepositoryTasksPages indicates an expected call of DescribeDataRepositoryTasksPages
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryTasksPages", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryTasksPages), arg0, arg1)
+}
+
+// DescribeDataRepositoryTasksPagesWithContext mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryTasksPagesWithContext(arg0 context.Context, arg1 *fsx.DescribeDataRepositoryTasksInput, arg2 func(*fsx.DescribeDataRepositoryTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDataRepositoryTasksPagesWithContext indicates an expected call of DescribeDataRepositoryTasksPagesWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryTasksPagesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryTasksPagesWithContext), varargs...)
+}
+
+// DescribeDataRepositoryTasksRequest mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryTasksRequest(arg0 *fsx.DescribeDataRepositoryTasksInput) (*request.Request, *fsx.DescribeDataRepositoryTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DescribeDataRepositoryTasksOutput)
+	return ret0, ret1
+}
+
+// DescribeDataRepositoryTasksRequest indicates an expected call of DescribeDataRepositoryTasksRequest
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryTasksRequest", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryTasksRequest), arg0)
+}
+
+// DescribeDataRepositoryTasksWithContext mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryTasksWithContext(arg0 context.Context, arg1 *fsx.DescribeDataRepositoryTasksInput, arg2 ...request.Option) (*fsx.DescribeDataRepositoryTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DescribeDataRepositoryTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataRepositoryTasksWithContext indicates an expected call of DescribeDataRepositoryTasksWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryTasksWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryTasksWithContext), varargs...)
 }
 
 // DescribeFileSystems mocks base method

@@ -35,6 +35,89 @@ func (m *MockHealthAPI) EXPECT() *MockHealthAPIMockRecorder {
 	return m.recorder
 }
 
+// DescribeAffectedAccountsForOrganization mocks base method
+func (m *MockHealthAPI) DescribeAffectedAccountsForOrganization(arg0 *health.DescribeAffectedAccountsForOrganizationInput) (*health.DescribeAffectedAccountsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAffectedAccountsForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DescribeAffectedAccountsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAffectedAccountsForOrganization indicates an expected call of DescribeAffectedAccountsForOrganization
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedAccountsForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedAccountsForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedAccountsForOrganization), arg0)
+}
+
+// DescribeAffectedAccountsForOrganizationPages mocks base method
+func (m *MockHealthAPI) DescribeAffectedAccountsForOrganizationPages(arg0 *health.DescribeAffectedAccountsForOrganizationInput, arg1 func(*health.DescribeAffectedAccountsForOrganizationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAffectedAccountsForOrganizationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAffectedAccountsForOrganizationPages indicates an expected call of DescribeAffectedAccountsForOrganizationPages
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedAccountsForOrganizationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedAccountsForOrganizationPages", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedAccountsForOrganizationPages), arg0, arg1)
+}
+
+// DescribeAffectedAccountsForOrganizationPagesWithContext mocks base method
+func (m *MockHealthAPI) DescribeAffectedAccountsForOrganizationPagesWithContext(arg0 context.Context, arg1 *health.DescribeAffectedAccountsForOrganizationInput, arg2 func(*health.DescribeAffectedAccountsForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAffectedAccountsForOrganizationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAffectedAccountsForOrganizationPagesWithContext indicates an expected call of DescribeAffectedAccountsForOrganizationPagesWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedAccountsForOrganizationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedAccountsForOrganizationPagesWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedAccountsForOrganizationPagesWithContext), varargs...)
+}
+
+// DescribeAffectedAccountsForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DescribeAffectedAccountsForOrganizationRequest(arg0 *health.DescribeAffectedAccountsForOrganizationInput) (*request.Request, *health.DescribeAffectedAccountsForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAffectedAccountsForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DescribeAffectedAccountsForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DescribeAffectedAccountsForOrganizationRequest indicates an expected call of DescribeAffectedAccountsForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedAccountsForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedAccountsForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedAccountsForOrganizationRequest), arg0)
+}
+
+// DescribeAffectedAccountsForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DescribeAffectedAccountsForOrganizationWithContext(arg0 context.Context, arg1 *health.DescribeAffectedAccountsForOrganizationInput, arg2 ...request.Option) (*health.DescribeAffectedAccountsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAffectedAccountsForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DescribeAffectedAccountsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAffectedAccountsForOrganizationWithContext indicates an expected call of DescribeAffectedAccountsForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedAccountsForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedAccountsForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedAccountsForOrganizationWithContext), varargs...)
+}
+
 // DescribeAffectedEntities mocks base method
 func (m *MockHealthAPI) DescribeAffectedEntities(arg0 *health.DescribeAffectedEntitiesInput) (*health.DescribeAffectedEntitiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -48,6 +131,89 @@ func (m *MockHealthAPI) DescribeAffectedEntities(arg0 *health.DescribeAffectedEn
 func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntities(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedEntities", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedEntities), arg0)
+}
+
+// DescribeAffectedEntitiesForOrganization mocks base method
+func (m *MockHealthAPI) DescribeAffectedEntitiesForOrganization(arg0 *health.DescribeAffectedEntitiesForOrganizationInput) (*health.DescribeAffectedEntitiesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAffectedEntitiesForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DescribeAffectedEntitiesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAffectedEntitiesForOrganization indicates an expected call of DescribeAffectedEntitiesForOrganization
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedEntitiesForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedEntitiesForOrganization), arg0)
+}
+
+// DescribeAffectedEntitiesForOrganizationPages mocks base method
+func (m *MockHealthAPI) DescribeAffectedEntitiesForOrganizationPages(arg0 *health.DescribeAffectedEntitiesForOrganizationInput, arg1 func(*health.DescribeAffectedEntitiesForOrganizationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAffectedEntitiesForOrganizationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAffectedEntitiesForOrganizationPages indicates an expected call of DescribeAffectedEntitiesForOrganizationPages
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesForOrganizationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedEntitiesForOrganizationPages", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedEntitiesForOrganizationPages), arg0, arg1)
+}
+
+// DescribeAffectedEntitiesForOrganizationPagesWithContext mocks base method
+func (m *MockHealthAPI) DescribeAffectedEntitiesForOrganizationPagesWithContext(arg0 context.Context, arg1 *health.DescribeAffectedEntitiesForOrganizationInput, arg2 func(*health.DescribeAffectedEntitiesForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAffectedEntitiesForOrganizationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAffectedEntitiesForOrganizationPagesWithContext indicates an expected call of DescribeAffectedEntitiesForOrganizationPagesWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesForOrganizationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedEntitiesForOrganizationPagesWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedEntitiesForOrganizationPagesWithContext), varargs...)
+}
+
+// DescribeAffectedEntitiesForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DescribeAffectedEntitiesForOrganizationRequest(arg0 *health.DescribeAffectedEntitiesForOrganizationInput) (*request.Request, *health.DescribeAffectedEntitiesForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAffectedEntitiesForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DescribeAffectedEntitiesForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DescribeAffectedEntitiesForOrganizationRequest indicates an expected call of DescribeAffectedEntitiesForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedEntitiesForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedEntitiesForOrganizationRequest), arg0)
+}
+
+// DescribeAffectedEntitiesForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DescribeAffectedEntitiesForOrganizationWithContext(arg0 context.Context, arg1 *health.DescribeAffectedEntitiesForOrganizationInput, arg2 ...request.Option) (*health.DescribeAffectedEntitiesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAffectedEntitiesForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DescribeAffectedEntitiesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAffectedEntitiesForOrganizationWithContext indicates an expected call of DescribeAffectedEntitiesForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeAffectedEntitiesForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAffectedEntitiesForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeAffectedEntitiesForOrganizationWithContext), varargs...)
 }
 
 // DescribeAffectedEntitiesPages mocks base method
@@ -266,6 +432,56 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventDetails(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventDetails", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventDetails), arg0)
 }
 
+// DescribeEventDetailsForOrganization mocks base method
+func (m *MockHealthAPI) DescribeEventDetailsForOrganization(arg0 *health.DescribeEventDetailsForOrganizationInput) (*health.DescribeEventDetailsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventDetailsForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DescribeEventDetailsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventDetailsForOrganization indicates an expected call of DescribeEventDetailsForOrganization
+func (mr *MockHealthAPIMockRecorder) DescribeEventDetailsForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventDetailsForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventDetailsForOrganization), arg0)
+}
+
+// DescribeEventDetailsForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DescribeEventDetailsForOrganizationRequest(arg0 *health.DescribeEventDetailsForOrganizationInput) (*request.Request, *health.DescribeEventDetailsForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventDetailsForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DescribeEventDetailsForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DescribeEventDetailsForOrganizationRequest indicates an expected call of DescribeEventDetailsForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DescribeEventDetailsForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventDetailsForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventDetailsForOrganizationRequest), arg0)
+}
+
+// DescribeEventDetailsForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DescribeEventDetailsForOrganizationWithContext(arg0 context.Context, arg1 *health.DescribeEventDetailsForOrganizationInput, arg2 ...request.Option) (*health.DescribeEventDetailsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventDetailsForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DescribeEventDetailsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventDetailsForOrganizationWithContext indicates an expected call of DescribeEventDetailsForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeEventDetailsForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventDetailsForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventDetailsForOrganizationWithContext), varargs...)
+}
+
 // DescribeEventDetailsRequest mocks base method
 func (m *MockHealthAPI) DescribeEventDetailsRequest(arg0 *health.DescribeEventDetailsInput) (*request.Request, *health.DescribeEventDetailsOutput) {
 	m.ctrl.T.Helper()
@@ -399,6 +615,89 @@ func (mr *MockHealthAPIMockRecorder) DescribeEvents(arg0 interface{}) *gomock.Ca
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvents", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEvents), arg0)
 }
 
+// DescribeEventsForOrganization mocks base method
+func (m *MockHealthAPI) DescribeEventsForOrganization(arg0 *health.DescribeEventsForOrganizationInput) (*health.DescribeEventsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventsForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DescribeEventsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventsForOrganization indicates an expected call of DescribeEventsForOrganization
+func (mr *MockHealthAPIMockRecorder) DescribeEventsForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventsForOrganization), arg0)
+}
+
+// DescribeEventsForOrganizationPages mocks base method
+func (m *MockHealthAPI) DescribeEventsForOrganizationPages(arg0 *health.DescribeEventsForOrganizationInput, arg1 func(*health.DescribeEventsForOrganizationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventsForOrganizationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEventsForOrganizationPages indicates an expected call of DescribeEventsForOrganizationPages
+func (mr *MockHealthAPIMockRecorder) DescribeEventsForOrganizationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsForOrganizationPages", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventsForOrganizationPages), arg0, arg1)
+}
+
+// DescribeEventsForOrganizationPagesWithContext mocks base method
+func (m *MockHealthAPI) DescribeEventsForOrganizationPagesWithContext(arg0 context.Context, arg1 *health.DescribeEventsForOrganizationInput, arg2 func(*health.DescribeEventsForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventsForOrganizationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEventsForOrganizationPagesWithContext indicates an expected call of DescribeEventsForOrganizationPagesWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeEventsForOrganizationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsForOrganizationPagesWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventsForOrganizationPagesWithContext), varargs...)
+}
+
+// DescribeEventsForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DescribeEventsForOrganizationRequest(arg0 *health.DescribeEventsForOrganizationInput) (*request.Request, *health.DescribeEventsForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventsForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DescribeEventsForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DescribeEventsForOrganizationRequest indicates an expected call of DescribeEventsForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DescribeEventsForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventsForOrganizationRequest), arg0)
+}
+
+// DescribeEventsForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DescribeEventsForOrganizationWithContext(arg0 context.Context, arg1 *health.DescribeEventsForOrganizationInput, arg2 ...request.Option) (*health.DescribeEventsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventsForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DescribeEventsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventsForOrganizationWithContext indicates an expected call of DescribeEventsForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeEventsForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventsForOrganizationWithContext), varargs...)
+}
+
 // DescribeEventsPages mocks base method
 func (m *MockHealthAPI) DescribeEventsPages(arg0 *health.DescribeEventsInput, arg1 func(*health.DescribeEventsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
@@ -465,4 +764,154 @@ func (mr *MockHealthAPIMockRecorder) DescribeEventsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEventsWithContext), varargs...)
+}
+
+// DescribeHealthServiceStatusForOrganization mocks base method
+func (m *MockHealthAPI) DescribeHealthServiceStatusForOrganization(arg0 *health.DescribeHealthServiceStatusForOrganizationInput) (*health.DescribeHealthServiceStatusForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHealthServiceStatusForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DescribeHealthServiceStatusForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHealthServiceStatusForOrganization indicates an expected call of DescribeHealthServiceStatusForOrganization
+func (mr *MockHealthAPIMockRecorder) DescribeHealthServiceStatusForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHealthServiceStatusForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DescribeHealthServiceStatusForOrganization), arg0)
+}
+
+// DescribeHealthServiceStatusForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DescribeHealthServiceStatusForOrganizationRequest(arg0 *health.DescribeHealthServiceStatusForOrganizationInput) (*request.Request, *health.DescribeHealthServiceStatusForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHealthServiceStatusForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DescribeHealthServiceStatusForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DescribeHealthServiceStatusForOrganizationRequest indicates an expected call of DescribeHealthServiceStatusForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DescribeHealthServiceStatusForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHealthServiceStatusForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DescribeHealthServiceStatusForOrganizationRequest), arg0)
+}
+
+// DescribeHealthServiceStatusForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DescribeHealthServiceStatusForOrganizationWithContext(arg0 context.Context, arg1 *health.DescribeHealthServiceStatusForOrganizationInput, arg2 ...request.Option) (*health.DescribeHealthServiceStatusForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeHealthServiceStatusForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DescribeHealthServiceStatusForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHealthServiceStatusForOrganizationWithContext indicates an expected call of DescribeHealthServiceStatusForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeHealthServiceStatusForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHealthServiceStatusForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeHealthServiceStatusForOrganizationWithContext), varargs...)
+}
+
+// DisableHealthServiceAccessForOrganization mocks base method
+func (m *MockHealthAPI) DisableHealthServiceAccessForOrganization(arg0 *health.DisableHealthServiceAccessForOrganizationInput) (*health.DisableHealthServiceAccessForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableHealthServiceAccessForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DisableHealthServiceAccessForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableHealthServiceAccessForOrganization indicates an expected call of DisableHealthServiceAccessForOrganization
+func (mr *MockHealthAPIMockRecorder) DisableHealthServiceAccessForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableHealthServiceAccessForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DisableHealthServiceAccessForOrganization), arg0)
+}
+
+// DisableHealthServiceAccessForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DisableHealthServiceAccessForOrganizationRequest(arg0 *health.DisableHealthServiceAccessForOrganizationInput) (*request.Request, *health.DisableHealthServiceAccessForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableHealthServiceAccessForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DisableHealthServiceAccessForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DisableHealthServiceAccessForOrganizationRequest indicates an expected call of DisableHealthServiceAccessForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DisableHealthServiceAccessForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableHealthServiceAccessForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DisableHealthServiceAccessForOrganizationRequest), arg0)
+}
+
+// DisableHealthServiceAccessForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DisableHealthServiceAccessForOrganizationWithContext(arg0 context.Context, arg1 *health.DisableHealthServiceAccessForOrganizationInput, arg2 ...request.Option) (*health.DisableHealthServiceAccessForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableHealthServiceAccessForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DisableHealthServiceAccessForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableHealthServiceAccessForOrganizationWithContext indicates an expected call of DisableHealthServiceAccessForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DisableHealthServiceAccessForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableHealthServiceAccessForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DisableHealthServiceAccessForOrganizationWithContext), varargs...)
+}
+
+// EnableHealthServiceAccessForOrganization mocks base method
+func (m *MockHealthAPI) EnableHealthServiceAccessForOrganization(arg0 *health.EnableHealthServiceAccessForOrganizationInput) (*health.EnableHealthServiceAccessForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableHealthServiceAccessForOrganization", arg0)
+	ret0, _ := ret[0].(*health.EnableHealthServiceAccessForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableHealthServiceAccessForOrganization indicates an expected call of EnableHealthServiceAccessForOrganization
+func (mr *MockHealthAPIMockRecorder) EnableHealthServiceAccessForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableHealthServiceAccessForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).EnableHealthServiceAccessForOrganization), arg0)
+}
+
+// EnableHealthServiceAccessForOrganizationRequest mocks base method
+func (m *MockHealthAPI) EnableHealthServiceAccessForOrganizationRequest(arg0 *health.EnableHealthServiceAccessForOrganizationInput) (*request.Request, *health.EnableHealthServiceAccessForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableHealthServiceAccessForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.EnableHealthServiceAccessForOrganizationOutput)
+	return ret0, ret1
+}
+
+// EnableHealthServiceAccessForOrganizationRequest indicates an expected call of EnableHealthServiceAccessForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) EnableHealthServiceAccessForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableHealthServiceAccessForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).EnableHealthServiceAccessForOrganizationRequest), arg0)
+}
+
+// EnableHealthServiceAccessForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) EnableHealthServiceAccessForOrganizationWithContext(arg0 context.Context, arg1 *health.EnableHealthServiceAccessForOrganizationInput, arg2 ...request.Option) (*health.EnableHealthServiceAccessForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableHealthServiceAccessForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.EnableHealthServiceAccessForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableHealthServiceAccessForOrganizationWithContext indicates an expected call of EnableHealthServiceAccessForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) EnableHealthServiceAccessForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableHealthServiceAccessForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).EnableHealthServiceAccessForOrganizationWithContext), varargs...)
 }
