@@ -2965,6 +2965,39 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListPortfolioAccess(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPortfolioAccess", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListPortfolioAccess), arg0)
 }
 
+// ListPortfolioAccessPages mocks base method
+func (m *MockServiceCatalogAPI) ListPortfolioAccessPages(arg0 *servicecatalog.ListPortfolioAccessInput, arg1 func(*servicecatalog.ListPortfolioAccessOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPortfolioAccessPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPortfolioAccessPages indicates an expected call of ListPortfolioAccessPages
+func (mr *MockServiceCatalogAPIMockRecorder) ListPortfolioAccessPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPortfolioAccessPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListPortfolioAccessPages), arg0, arg1)
+}
+
+// ListPortfolioAccessPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) ListPortfolioAccessPagesWithContext(arg0 context.Context, arg1 *servicecatalog.ListPortfolioAccessInput, arg2 func(*servicecatalog.ListPortfolioAccessOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPortfolioAccessPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPortfolioAccessPagesWithContext indicates an expected call of ListPortfolioAccessPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ListPortfolioAccessPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPortfolioAccessPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListPortfolioAccessPagesWithContext), varargs...)
+}
+
 // ListPortfolioAccessRequest mocks base method
 func (m *MockServiceCatalogAPI) ListPortfolioAccessRequest(arg0 *servicecatalog.ListPortfolioAccessInput) (*request.Request, *servicecatalog.ListPortfolioAccessOutput) {
 	m.ctrl.T.Helper()
