@@ -285,6 +285,106 @@ func (mr *MockComprehendMedicalAPIMockRecorder) DetectPHIWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectPHIWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).DetectPHIWithContext), varargs...)
 }
 
+// InferICD10CM mocks base method
+func (m *MockComprehendMedicalAPI) InferICD10CM(arg0 *comprehendmedical.InferICD10CMInput) (*comprehendmedical.InferICD10CMOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InferICD10CM", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.InferICD10CMOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InferICD10CM indicates an expected call of InferICD10CM
+func (mr *MockComprehendMedicalAPIMockRecorder) InferICD10CM(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferICD10CM", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferICD10CM), arg0)
+}
+
+// InferICD10CMRequest mocks base method
+func (m *MockComprehendMedicalAPI) InferICD10CMRequest(arg0 *comprehendmedical.InferICD10CMInput) (*request.Request, *comprehendmedical.InferICD10CMOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InferICD10CMRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.InferICD10CMOutput)
+	return ret0, ret1
+}
+
+// InferICD10CMRequest indicates an expected call of InferICD10CMRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) InferICD10CMRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferICD10CMRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferICD10CMRequest), arg0)
+}
+
+// InferICD10CMWithContext mocks base method
+func (m *MockComprehendMedicalAPI) InferICD10CMWithContext(arg0 context.Context, arg1 *comprehendmedical.InferICD10CMInput, arg2 ...request.Option) (*comprehendmedical.InferICD10CMOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "InferICD10CMWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.InferICD10CMOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InferICD10CMWithContext indicates an expected call of InferICD10CMWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) InferICD10CMWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferICD10CMWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferICD10CMWithContext), varargs...)
+}
+
+// InferRxNorm mocks base method
+func (m *MockComprehendMedicalAPI) InferRxNorm(arg0 *comprehendmedical.InferRxNormInput) (*comprehendmedical.InferRxNormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InferRxNorm", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.InferRxNormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InferRxNorm indicates an expected call of InferRxNorm
+func (mr *MockComprehendMedicalAPIMockRecorder) InferRxNorm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferRxNorm", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferRxNorm), arg0)
+}
+
+// InferRxNormRequest mocks base method
+func (m *MockComprehendMedicalAPI) InferRxNormRequest(arg0 *comprehendmedical.InferRxNormInput) (*request.Request, *comprehendmedical.InferRxNormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InferRxNormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.InferRxNormOutput)
+	return ret0, ret1
+}
+
+// InferRxNormRequest indicates an expected call of InferRxNormRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) InferRxNormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferRxNormRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferRxNormRequest), arg0)
+}
+
+// InferRxNormWithContext mocks base method
+func (m *MockComprehendMedicalAPI) InferRxNormWithContext(arg0 context.Context, arg1 *comprehendmedical.InferRxNormInput, arg2 ...request.Option) (*comprehendmedical.InferRxNormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "InferRxNormWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.InferRxNormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InferRxNormWithContext indicates an expected call of InferRxNormWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) InferRxNormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferRxNormWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferRxNormWithContext), varargs...)
+}
+
 // ListEntitiesDetectionV2Jobs mocks base method
 func (m *MockComprehendMedicalAPI) ListEntitiesDetectionV2Jobs(arg0 *comprehendmedical.ListEntitiesDetectionV2JobsInput) (*comprehendmedical.ListEntitiesDetectionV2JobsOutput, error) {
 	m.ctrl.T.Helper()
