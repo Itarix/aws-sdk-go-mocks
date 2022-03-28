@@ -185,6 +185,56 @@ func (mr *MockAthenaAPIMockRecorder) CreateNamedQueryWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateNamedQueryWithContext), varargs...)
 }
 
+// CreateWorkGroup mocks base method
+func (m *MockAthenaAPI) CreateWorkGroup(arg0 *athena.CreateWorkGroupInput) (*athena.CreateWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkGroup", arg0)
+	ret0, _ := ret[0].(*athena.CreateWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkGroup indicates an expected call of CreateWorkGroup
+func (mr *MockAthenaAPIMockRecorder) CreateWorkGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkGroup", reflect.TypeOf((*MockAthenaAPI)(nil).CreateWorkGroup), arg0)
+}
+
+// CreateWorkGroupRequest mocks base method
+func (m *MockAthenaAPI) CreateWorkGroupRequest(arg0 *athena.CreateWorkGroupInput) (*request.Request, *athena.CreateWorkGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.CreateWorkGroupOutput)
+	return ret0, ret1
+}
+
+// CreateWorkGroupRequest indicates an expected call of CreateWorkGroupRequest
+func (mr *MockAthenaAPIMockRecorder) CreateWorkGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkGroupRequest", reflect.TypeOf((*MockAthenaAPI)(nil).CreateWorkGroupRequest), arg0)
+}
+
+// CreateWorkGroupWithContext mocks base method
+func (m *MockAthenaAPI) CreateWorkGroupWithContext(arg0 context.Context, arg1 *athena.CreateWorkGroupInput, arg2 ...request.Option) (*athena.CreateWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.CreateWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkGroupWithContext indicates an expected call of CreateWorkGroupWithContext
+func (mr *MockAthenaAPIMockRecorder) CreateWorkGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateWorkGroupWithContext), varargs...)
+}
+
 // DeleteNamedQuery mocks base method
 func (m *MockAthenaAPI) DeleteNamedQuery(arg0 *athena.DeleteNamedQueryInput) (*athena.DeleteNamedQueryOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockAthenaAPIMockRecorder) DeleteNamedQueryWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteNamedQueryWithContext), varargs...)
+}
+
+// DeleteWorkGroup mocks base method
+func (m *MockAthenaAPI) DeleteWorkGroup(arg0 *athena.DeleteWorkGroupInput) (*athena.DeleteWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkGroup", arg0)
+	ret0, _ := ret[0].(*athena.DeleteWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkGroup indicates an expected call of DeleteWorkGroup
+func (mr *MockAthenaAPIMockRecorder) DeleteWorkGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkGroup", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteWorkGroup), arg0)
+}
+
+// DeleteWorkGroupRequest mocks base method
+func (m *MockAthenaAPI) DeleteWorkGroupRequest(arg0 *athena.DeleteWorkGroupInput) (*request.Request, *athena.DeleteWorkGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.DeleteWorkGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkGroupRequest indicates an expected call of DeleteWorkGroupRequest
+func (mr *MockAthenaAPIMockRecorder) DeleteWorkGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkGroupRequest", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteWorkGroupRequest), arg0)
+}
+
+// DeleteWorkGroupWithContext mocks base method
+func (m *MockAthenaAPI) DeleteWorkGroupWithContext(arg0 context.Context, arg1 *athena.DeleteWorkGroupInput, arg2 ...request.Option) (*athena.DeleteWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.DeleteWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkGroupWithContext indicates an expected call of DeleteWorkGroupWithContext
+func (mr *MockAthenaAPIMockRecorder) DeleteWorkGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteWorkGroupWithContext), varargs...)
 }
 
 // GetNamedQuery mocks base method
@@ -418,6 +518,56 @@ func (mr *MockAthenaAPIMockRecorder) GetQueryResultsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryResultsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetQueryResultsWithContext), varargs...)
 }
 
+// GetWorkGroup mocks base method
+func (m *MockAthenaAPI) GetWorkGroup(arg0 *athena.GetWorkGroupInput) (*athena.GetWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkGroup", arg0)
+	ret0, _ := ret[0].(*athena.GetWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkGroup indicates an expected call of GetWorkGroup
+func (mr *MockAthenaAPIMockRecorder) GetWorkGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkGroup", reflect.TypeOf((*MockAthenaAPI)(nil).GetWorkGroup), arg0)
+}
+
+// GetWorkGroupRequest mocks base method
+func (m *MockAthenaAPI) GetWorkGroupRequest(arg0 *athena.GetWorkGroupInput) (*request.Request, *athena.GetWorkGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetWorkGroupOutput)
+	return ret0, ret1
+}
+
+// GetWorkGroupRequest indicates an expected call of GetWorkGroupRequest
+func (mr *MockAthenaAPIMockRecorder) GetWorkGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkGroupRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetWorkGroupRequest), arg0)
+}
+
+// GetWorkGroupWithContext mocks base method
+func (m *MockAthenaAPI) GetWorkGroupWithContext(arg0 context.Context, arg1 *athena.GetWorkGroupInput, arg2 ...request.Option) (*athena.GetWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkGroupWithContext indicates an expected call of GetWorkGroupWithContext
+func (mr *MockAthenaAPIMockRecorder) GetWorkGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetWorkGroupWithContext), varargs...)
+}
+
 // ListNamedQueries mocks base method
 func (m *MockAthenaAPI) ListNamedQueries(arg0 *athena.ListNamedQueriesInput) (*athena.ListNamedQueriesOutput, error) {
 	m.ctrl.T.Helper()
@@ -584,6 +734,89 @@ func (mr *MockAthenaAPIMockRecorder) ListQueryExecutionsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueryExecutionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListQueryExecutionsWithContext), varargs...)
 }
 
+// ListWorkGroups mocks base method
+func (m *MockAthenaAPI) ListWorkGroups(arg0 *athena.ListWorkGroupsInput) (*athena.ListWorkGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkGroups", arg0)
+	ret0, _ := ret[0].(*athena.ListWorkGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkGroups indicates an expected call of ListWorkGroups
+func (mr *MockAthenaAPIMockRecorder) ListWorkGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroups", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroups), arg0)
+}
+
+// ListWorkGroupsPages mocks base method
+func (m *MockAthenaAPI) ListWorkGroupsPages(arg0 *athena.ListWorkGroupsInput, arg1 func(*athena.ListWorkGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkGroupsPages indicates an expected call of ListWorkGroupsPages
+func (mr *MockAthenaAPIMockRecorder) ListWorkGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroupsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroupsPages), arg0, arg1)
+}
+
+// ListWorkGroupsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListWorkGroupsPagesWithContext(arg0 context.Context, arg1 *athena.ListWorkGroupsInput, arg2 func(*athena.ListWorkGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkGroupsPagesWithContext indicates an expected call of ListWorkGroupsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListWorkGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroupsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroupsPagesWithContext), varargs...)
+}
+
+// ListWorkGroupsRequest mocks base method
+func (m *MockAthenaAPI) ListWorkGroupsRequest(arg0 *athena.ListWorkGroupsInput) (*request.Request, *athena.ListWorkGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListWorkGroupsOutput)
+	return ret0, ret1
+}
+
+// ListWorkGroupsRequest indicates an expected call of ListWorkGroupsRequest
+func (mr *MockAthenaAPIMockRecorder) ListWorkGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroupsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroupsRequest), arg0)
+}
+
+// ListWorkGroupsWithContext mocks base method
+func (m *MockAthenaAPI) ListWorkGroupsWithContext(arg0 context.Context, arg1 *athena.ListWorkGroupsInput, arg2 ...request.Option) (*athena.ListWorkGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListWorkGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkGroupsWithContext indicates an expected call of ListWorkGroupsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListWorkGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroupsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroupsWithContext), varargs...)
+}
+
 // StartQueryExecution mocks base method
 func (m *MockAthenaAPI) StartQueryExecution(arg0 *athena.StartQueryExecutionInput) (*athena.StartQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()
@@ -682,4 +915,54 @@ func (mr *MockAthenaAPIMockRecorder) StopQueryExecutionWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopQueryExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).StopQueryExecutionWithContext), varargs...)
+}
+
+// UpdateWorkGroup mocks base method
+func (m *MockAthenaAPI) UpdateWorkGroup(arg0 *athena.UpdateWorkGroupInput) (*athena.UpdateWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkGroup", arg0)
+	ret0, _ := ret[0].(*athena.UpdateWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkGroup indicates an expected call of UpdateWorkGroup
+func (mr *MockAthenaAPIMockRecorder) UpdateWorkGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkGroup", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateWorkGroup), arg0)
+}
+
+// UpdateWorkGroupRequest mocks base method
+func (m *MockAthenaAPI) UpdateWorkGroupRequest(arg0 *athena.UpdateWorkGroupInput) (*request.Request, *athena.UpdateWorkGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.UpdateWorkGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkGroupRequest indicates an expected call of UpdateWorkGroupRequest
+func (mr *MockAthenaAPIMockRecorder) UpdateWorkGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkGroupRequest", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateWorkGroupRequest), arg0)
+}
+
+// UpdateWorkGroupWithContext mocks base method
+func (m *MockAthenaAPI) UpdateWorkGroupWithContext(arg0 context.Context, arg1 *athena.UpdateWorkGroupInput, arg2 ...request.Option) (*athena.UpdateWorkGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.UpdateWorkGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkGroupWithContext indicates an expected call of UpdateWorkGroupWithContext
+func (mr *MockAthenaAPIMockRecorder) UpdateWorkGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateWorkGroupWithContext), varargs...)
 }
