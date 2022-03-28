@@ -2731,6 +2731,89 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeLoggingStatusWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLoggingStatusWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeLoggingStatusWithContext), varargs...)
 }
 
+// DescribeNodeConfigurationOptions mocks base method
+func (m *MockRedshiftAPI) DescribeNodeConfigurationOptions(arg0 *redshift.DescribeNodeConfigurationOptionsInput) (*redshift.DescribeNodeConfigurationOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNodeConfigurationOptions", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeNodeConfigurationOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeNodeConfigurationOptions indicates an expected call of DescribeNodeConfigurationOptions
+func (mr *MockRedshiftAPIMockRecorder) DescribeNodeConfigurationOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodeConfigurationOptions", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeNodeConfigurationOptions), arg0)
+}
+
+// DescribeNodeConfigurationOptionsPages mocks base method
+func (m *MockRedshiftAPI) DescribeNodeConfigurationOptionsPages(arg0 *redshift.DescribeNodeConfigurationOptionsInput, arg1 func(*redshift.DescribeNodeConfigurationOptionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNodeConfigurationOptionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeNodeConfigurationOptionsPages indicates an expected call of DescribeNodeConfigurationOptionsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeNodeConfigurationOptionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodeConfigurationOptionsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeNodeConfigurationOptionsPages), arg0, arg1)
+}
+
+// DescribeNodeConfigurationOptionsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeNodeConfigurationOptionsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeNodeConfigurationOptionsInput, arg2 func(*redshift.DescribeNodeConfigurationOptionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeNodeConfigurationOptionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeNodeConfigurationOptionsPagesWithContext indicates an expected call of DescribeNodeConfigurationOptionsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeNodeConfigurationOptionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodeConfigurationOptionsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeNodeConfigurationOptionsPagesWithContext), varargs...)
+}
+
+// DescribeNodeConfigurationOptionsRequest mocks base method
+func (m *MockRedshiftAPI) DescribeNodeConfigurationOptionsRequest(arg0 *redshift.DescribeNodeConfigurationOptionsInput) (*request.Request, *redshift.DescribeNodeConfigurationOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNodeConfigurationOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeNodeConfigurationOptionsOutput)
+	return ret0, ret1
+}
+
+// DescribeNodeConfigurationOptionsRequest indicates an expected call of DescribeNodeConfigurationOptionsRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeNodeConfigurationOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodeConfigurationOptionsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeNodeConfigurationOptionsRequest), arg0)
+}
+
+// DescribeNodeConfigurationOptionsWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeNodeConfigurationOptionsWithContext(arg0 context.Context, arg1 *redshift.DescribeNodeConfigurationOptionsInput, arg2 ...request.Option) (*redshift.DescribeNodeConfigurationOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeNodeConfigurationOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeNodeConfigurationOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeNodeConfigurationOptionsWithContext indicates an expected call of DescribeNodeConfigurationOptionsWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeNodeConfigurationOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodeConfigurationOptionsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeNodeConfigurationOptionsWithContext), varargs...)
+}
+
 // DescribeOrderableClusterOptions mocks base method
 func (m *MockRedshiftAPI) DescribeOrderableClusterOptions(arg0 *redshift.DescribeOrderableClusterOptionsInput) (*redshift.DescribeOrderableClusterOptionsOutput, error) {
 	m.ctrl.T.Helper()
