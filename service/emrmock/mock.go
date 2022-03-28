@@ -585,6 +585,56 @@ func (mr *MockEMRAPIMockRecorder) DescribeStepWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStepWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStepWithContext), varargs...)
 }
 
+// GetBlockPublicAccessConfiguration mocks base method
+func (m *MockEMRAPI) GetBlockPublicAccessConfiguration(arg0 *emr.GetBlockPublicAccessConfigurationInput) (*emr.GetBlockPublicAccessConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBlockPublicAccessConfiguration", arg0)
+	ret0, _ := ret[0].(*emr.GetBlockPublicAccessConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBlockPublicAccessConfiguration indicates an expected call of GetBlockPublicAccessConfiguration
+func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfiguration), arg0)
+}
+
+// GetBlockPublicAccessConfigurationRequest mocks base method
+func (m *MockEMRAPI) GetBlockPublicAccessConfigurationRequest(arg0 *emr.GetBlockPublicAccessConfigurationInput) (*request.Request, *emr.GetBlockPublicAccessConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBlockPublicAccessConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.GetBlockPublicAccessConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetBlockPublicAccessConfigurationRequest indicates an expected call of GetBlockPublicAccessConfigurationRequest
+func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfigurationRequest), arg0)
+}
+
+// GetBlockPublicAccessConfigurationWithContext mocks base method
+func (m *MockEMRAPI) GetBlockPublicAccessConfigurationWithContext(arg0 context.Context, arg1 *emr.GetBlockPublicAccessConfigurationInput, arg2 ...request.Option) (*emr.GetBlockPublicAccessConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBlockPublicAccessConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.GetBlockPublicAccessConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBlockPublicAccessConfigurationWithContext indicates an expected call of GetBlockPublicAccessConfigurationWithContext
+func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfigurationWithContext), varargs...)
+}
+
 // ListBootstrapActions mocks base method
 func (m *MockEMRAPI) ListBootstrapActions(arg0 *emr.ListBootstrapActionsInput) (*emr.ListBootstrapActionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1314,6 +1364,56 @@ func (mr *MockEMRAPIMockRecorder) PutAutoScalingPolicyWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoScalingPolicyWithContext), varargs...)
+}
+
+// PutBlockPublicAccessConfiguration mocks base method
+func (m *MockEMRAPI) PutBlockPublicAccessConfiguration(arg0 *emr.PutBlockPublicAccessConfigurationInput) (*emr.PutBlockPublicAccessConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBlockPublicAccessConfiguration", arg0)
+	ret0, _ := ret[0].(*emr.PutBlockPublicAccessConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBlockPublicAccessConfiguration indicates an expected call of PutBlockPublicAccessConfiguration
+func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfiguration", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfiguration), arg0)
+}
+
+// PutBlockPublicAccessConfigurationRequest mocks base method
+func (m *MockEMRAPI) PutBlockPublicAccessConfigurationRequest(arg0 *emr.PutBlockPublicAccessConfigurationInput) (*request.Request, *emr.PutBlockPublicAccessConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBlockPublicAccessConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.PutBlockPublicAccessConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutBlockPublicAccessConfigurationRequest indicates an expected call of PutBlockPublicAccessConfigurationRequest
+func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfigurationRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfigurationRequest), arg0)
+}
+
+// PutBlockPublicAccessConfigurationWithContext mocks base method
+func (m *MockEMRAPI) PutBlockPublicAccessConfigurationWithContext(arg0 context.Context, arg1 *emr.PutBlockPublicAccessConfigurationInput, arg2 ...request.Option) (*emr.PutBlockPublicAccessConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBlockPublicAccessConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.PutBlockPublicAccessConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBlockPublicAccessConfigurationWithContext indicates an expected call of PutBlockPublicAccessConfigurationWithContext
+func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfigurationWithContext), varargs...)
 }
 
 // RemoveAutoScalingPolicy mocks base method
