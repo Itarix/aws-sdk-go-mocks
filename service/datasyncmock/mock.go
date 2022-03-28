@@ -185,6 +185,56 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationEfsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationEfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationEfsWithContext), varargs...)
 }
 
+// CreateLocationFsxWindows mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxWindows(arg0 *datasync.CreateLocationFsxWindowsInput) (*datasync.CreateLocationFsxWindowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationFsxWindows", arg0)
+	ret0, _ := ret[0].(*datasync.CreateLocationFsxWindowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationFsxWindows indicates an expected call of CreateLocationFsxWindows
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxWindows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxWindows", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxWindows), arg0)
+}
+
+// CreateLocationFsxWindowsRequest mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxWindowsRequest(arg0 *datasync.CreateLocationFsxWindowsInput) (*request.Request, *datasync.CreateLocationFsxWindowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationFsxWindowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.CreateLocationFsxWindowsOutput)
+	return ret0, ret1
+}
+
+// CreateLocationFsxWindowsRequest indicates an expected call of CreateLocationFsxWindowsRequest
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxWindowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxWindowsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxWindowsRequest), arg0)
+}
+
+// CreateLocationFsxWindowsWithContext mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxWindowsWithContext(arg0 context.Context, arg1 *datasync.CreateLocationFsxWindowsInput, arg2 ...request.Option) (*datasync.CreateLocationFsxWindowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLocationFsxWindowsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.CreateLocationFsxWindowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationFsxWindowsWithContext indicates an expected call of CreateLocationFsxWindowsWithContext
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxWindowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxWindowsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxWindowsWithContext), varargs...)
+}
+
 // CreateLocationNfs mocks base method
 func (m *MockDataSyncAPI) CreateLocationNfs(arg0 *datasync.CreateLocationNfsInput) (*datasync.CreateLocationNfsOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +683,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationEfsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationEfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationEfsWithContext), varargs...)
+}
+
+// DescribeLocationFsxWindows mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxWindows(arg0 *datasync.DescribeLocationFsxWindowsInput) (*datasync.DescribeLocationFsxWindowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationFsxWindows", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeLocationFsxWindowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxWindows indicates an expected call of DescribeLocationFsxWindows
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxWindows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxWindows", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxWindows), arg0)
+}
+
+// DescribeLocationFsxWindowsRequest mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxWindowsRequest(arg0 *datasync.DescribeLocationFsxWindowsInput) (*request.Request, *datasync.DescribeLocationFsxWindowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationFsxWindowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeLocationFsxWindowsOutput)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxWindowsRequest indicates an expected call of DescribeLocationFsxWindowsRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxWindowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxWindowsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxWindowsRequest), arg0)
+}
+
+// DescribeLocationFsxWindowsWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxWindowsWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationFsxWindowsInput, arg2 ...request.Option) (*datasync.DescribeLocationFsxWindowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLocationFsxWindowsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeLocationFsxWindowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxWindowsWithContext indicates an expected call of DescribeLocationFsxWindowsWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxWindowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxWindowsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxWindowsWithContext), varargs...)
 }
 
 // DescribeLocationNfs mocks base method
