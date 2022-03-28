@@ -135,6 +135,56 @@ func (mr *MockShieldAPIMockRecorder) AssociateDRTRoleWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDRTRoleWithContext", reflect.TypeOf((*MockShieldAPI)(nil).AssociateDRTRoleWithContext), varargs...)
 }
 
+// AssociateHealthCheck mocks base method
+func (m *MockShieldAPI) AssociateHealthCheck(arg0 *shield.AssociateHealthCheckInput) (*shield.AssociateHealthCheckOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateHealthCheck", arg0)
+	ret0, _ := ret[0].(*shield.AssociateHealthCheckOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateHealthCheck indicates an expected call of AssociateHealthCheck
+func (mr *MockShieldAPIMockRecorder) AssociateHealthCheck(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateHealthCheck", reflect.TypeOf((*MockShieldAPI)(nil).AssociateHealthCheck), arg0)
+}
+
+// AssociateHealthCheckRequest mocks base method
+func (m *MockShieldAPI) AssociateHealthCheckRequest(arg0 *shield.AssociateHealthCheckInput) (*request.Request, *shield.AssociateHealthCheckOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateHealthCheckRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.AssociateHealthCheckOutput)
+	return ret0, ret1
+}
+
+// AssociateHealthCheckRequest indicates an expected call of AssociateHealthCheckRequest
+func (mr *MockShieldAPIMockRecorder) AssociateHealthCheckRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateHealthCheckRequest", reflect.TypeOf((*MockShieldAPI)(nil).AssociateHealthCheckRequest), arg0)
+}
+
+// AssociateHealthCheckWithContext mocks base method
+func (m *MockShieldAPI) AssociateHealthCheckWithContext(arg0 context.Context, arg1 *shield.AssociateHealthCheckInput, arg2 ...request.Option) (*shield.AssociateHealthCheckOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateHealthCheckWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.AssociateHealthCheckOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateHealthCheckWithContext indicates an expected call of AssociateHealthCheckWithContext
+func (mr *MockShieldAPIMockRecorder) AssociateHealthCheckWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateHealthCheckWithContext", reflect.TypeOf((*MockShieldAPI)(nil).AssociateHealthCheckWithContext), varargs...)
+}
+
 // CreateProtection mocks base method
 func (m *MockShieldAPI) CreateProtection(arg0 *shield.CreateProtectionInput) (*shield.CreateProtectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +733,56 @@ func (mr *MockShieldAPIMockRecorder) DisassociateDRTRoleWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDRTRoleWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateDRTRoleWithContext), varargs...)
+}
+
+// DisassociateHealthCheck mocks base method
+func (m *MockShieldAPI) DisassociateHealthCheck(arg0 *shield.DisassociateHealthCheckInput) (*shield.DisassociateHealthCheckOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateHealthCheck", arg0)
+	ret0, _ := ret[0].(*shield.DisassociateHealthCheckOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateHealthCheck indicates an expected call of DisassociateHealthCheck
+func (mr *MockShieldAPIMockRecorder) DisassociateHealthCheck(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateHealthCheck", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateHealthCheck), arg0)
+}
+
+// DisassociateHealthCheckRequest mocks base method
+func (m *MockShieldAPI) DisassociateHealthCheckRequest(arg0 *shield.DisassociateHealthCheckInput) (*request.Request, *shield.DisassociateHealthCheckOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateHealthCheckRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.DisassociateHealthCheckOutput)
+	return ret0, ret1
+}
+
+// DisassociateHealthCheckRequest indicates an expected call of DisassociateHealthCheckRequest
+func (mr *MockShieldAPIMockRecorder) DisassociateHealthCheckRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateHealthCheckRequest", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateHealthCheckRequest), arg0)
+}
+
+// DisassociateHealthCheckWithContext mocks base method
+func (m *MockShieldAPI) DisassociateHealthCheckWithContext(arg0 context.Context, arg1 *shield.DisassociateHealthCheckInput, arg2 ...request.Option) (*shield.DisassociateHealthCheckOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateHealthCheckWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.DisassociateHealthCheckOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateHealthCheckWithContext indicates an expected call of DisassociateHealthCheckWithContext
+func (mr *MockShieldAPIMockRecorder) DisassociateHealthCheckWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateHealthCheckWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DisassociateHealthCheckWithContext), varargs...)
 }
 
 // GetSubscriptionState mocks base method

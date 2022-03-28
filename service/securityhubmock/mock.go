@@ -851,6 +851,21 @@ func (mr *MockSecurityHubAPIMockRecorder) DescribeProductsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProductsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeProductsWithContext), varargs...)
 }
 
+// DescribeStandards mocks base method
+func (m *MockSecurityHubAPI) DescribeStandards(arg0 *securityhub.DescribeStandardsInput) (*securityhub.DescribeStandardsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStandards", arg0)
+	ret0, _ := ret[0].(*securityhub.DescribeStandardsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStandards indicates an expected call of DescribeStandards
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandards(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandards", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandards), arg0)
+}
+
 // DescribeStandardsControls mocks base method
 func (m *MockSecurityHubAPI) DescribeStandardsControls(arg0 *securityhub.DescribeStandardsControlsInput) (*securityhub.DescribeStandardsControlsOutput, error) {
 	m.ctrl.T.Helper()
@@ -864,6 +879,39 @@ func (m *MockSecurityHubAPI) DescribeStandardsControls(arg0 *securityhub.Describ
 func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControls(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControls", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControls), arg0)
+}
+
+// DescribeStandardsControlsPages mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsControlsPages(arg0 *securityhub.DescribeStandardsControlsInput, arg1 func(*securityhub.DescribeStandardsControlsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStandardsControlsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStandardsControlsPages indicates an expected call of DescribeStandardsControlsPages
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControlsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControlsPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControlsPages), arg0, arg1)
+}
+
+// DescribeStandardsControlsPagesWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsControlsPagesWithContext(arg0 context.Context, arg1 *securityhub.DescribeStandardsControlsInput, arg2 func(*securityhub.DescribeStandardsControlsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStandardsControlsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStandardsControlsPagesWithContext indicates an expected call of DescribeStandardsControlsPagesWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControlsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControlsPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControlsPagesWithContext), varargs...)
 }
 
 // DescribeStandardsControlsRequest mocks base method
@@ -899,6 +947,74 @@ func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControlsWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControlsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControlsWithContext), varargs...)
+}
+
+// DescribeStandardsPages mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsPages(arg0 *securityhub.DescribeStandardsInput, arg1 func(*securityhub.DescribeStandardsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStandardsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStandardsPages indicates an expected call of DescribeStandardsPages
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsPages), arg0, arg1)
+}
+
+// DescribeStandardsPagesWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsPagesWithContext(arg0 context.Context, arg1 *securityhub.DescribeStandardsInput, arg2 func(*securityhub.DescribeStandardsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStandardsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStandardsPagesWithContext indicates an expected call of DescribeStandardsPagesWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsPagesWithContext), varargs...)
+}
+
+// DescribeStandardsRequest mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsRequest(arg0 *securityhub.DescribeStandardsInput) (*request.Request, *securityhub.DescribeStandardsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStandardsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.DescribeStandardsOutput)
+	return ret0, ret1
+}
+
+// DescribeStandardsRequest indicates an expected call of DescribeStandardsRequest
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsRequest), arg0)
+}
+
+// DescribeStandardsWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsWithContext(arg0 context.Context, arg1 *securityhub.DescribeStandardsInput, arg2 ...request.Option) (*securityhub.DescribeStandardsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStandardsWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.DescribeStandardsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStandardsWithContext indicates an expected call of DescribeStandardsWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsWithContext), varargs...)
 }
 
 // DisableImportFindingsForProduct mocks base method
@@ -1214,6 +1330,39 @@ func (m *MockSecurityHubAPI) GetEnabledStandards(arg0 *securityhub.GetEnabledSta
 func (mr *MockSecurityHubAPIMockRecorder) GetEnabledStandards(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnabledStandards", reflect.TypeOf((*MockSecurityHubAPI)(nil).GetEnabledStandards), arg0)
+}
+
+// GetEnabledStandardsPages mocks base method
+func (m *MockSecurityHubAPI) GetEnabledStandardsPages(arg0 *securityhub.GetEnabledStandardsInput, arg1 func(*securityhub.GetEnabledStandardsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnabledStandardsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetEnabledStandardsPages indicates an expected call of GetEnabledStandardsPages
+func (mr *MockSecurityHubAPIMockRecorder) GetEnabledStandardsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnabledStandardsPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).GetEnabledStandardsPages), arg0, arg1)
+}
+
+// GetEnabledStandardsPagesWithContext mocks base method
+func (m *MockSecurityHubAPI) GetEnabledStandardsPagesWithContext(arg0 context.Context, arg1 *securityhub.GetEnabledStandardsInput, arg2 func(*securityhub.GetEnabledStandardsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEnabledStandardsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetEnabledStandardsPagesWithContext indicates an expected call of GetEnabledStandardsPagesWithContext
+func (mr *MockSecurityHubAPIMockRecorder) GetEnabledStandardsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnabledStandardsPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).GetEnabledStandardsPagesWithContext), varargs...)
 }
 
 // GetEnabledStandardsRequest mocks base method
@@ -1765,6 +1914,39 @@ func (mr *MockSecurityHubAPIMockRecorder) ListInvitations(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitations", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListInvitations), arg0)
 }
 
+// ListInvitationsPages mocks base method
+func (m *MockSecurityHubAPI) ListInvitationsPages(arg0 *securityhub.ListInvitationsInput, arg1 func(*securityhub.ListInvitationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInvitationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInvitationsPages indicates an expected call of ListInvitationsPages
+func (mr *MockSecurityHubAPIMockRecorder) ListInvitationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListInvitationsPages), arg0, arg1)
+}
+
+// ListInvitationsPagesWithContext mocks base method
+func (m *MockSecurityHubAPI) ListInvitationsPagesWithContext(arg0 context.Context, arg1 *securityhub.ListInvitationsInput, arg2 func(*securityhub.ListInvitationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInvitationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInvitationsPagesWithContext indicates an expected call of ListInvitationsPagesWithContext
+func (mr *MockSecurityHubAPIMockRecorder) ListInvitationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListInvitationsPagesWithContext), varargs...)
+}
+
 // ListInvitationsRequest mocks base method
 func (m *MockSecurityHubAPI) ListInvitationsRequest(arg0 *securityhub.ListInvitationsInput) (*request.Request, *securityhub.ListInvitationsOutput) {
 	m.ctrl.T.Helper()
@@ -1813,6 +1995,39 @@ func (m *MockSecurityHubAPI) ListMembers(arg0 *securityhub.ListMembersInput) (*s
 func (mr *MockSecurityHubAPIMockRecorder) ListMembers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembers", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListMembers), arg0)
+}
+
+// ListMembersPages mocks base method
+func (m *MockSecurityHubAPI) ListMembersPages(arg0 *securityhub.ListMembersInput, arg1 func(*securityhub.ListMembersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMembersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMembersPages indicates an expected call of ListMembersPages
+func (mr *MockSecurityHubAPIMockRecorder) ListMembersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersPages", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListMembersPages), arg0, arg1)
+}
+
+// ListMembersPagesWithContext mocks base method
+func (m *MockSecurityHubAPI) ListMembersPagesWithContext(arg0 context.Context, arg1 *securityhub.ListMembersInput, arg2 func(*securityhub.ListMembersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMembersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMembersPagesWithContext indicates an expected call of ListMembersPagesWithContext
+func (mr *MockSecurityHubAPIMockRecorder) ListMembersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersPagesWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).ListMembersPagesWithContext), varargs...)
 }
 
 // ListMembersRequest mocks base method
