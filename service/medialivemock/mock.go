@@ -235,6 +235,56 @@ func (mr *MockMediaLiveAPIMockRecorder) CreateInputWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInputWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateInputWithContext), varargs...)
 }
 
+// CreateTags mocks base method
+func (m *MockMediaLiveAPI) CreateTags(arg0 *medialive.CreateTagsInput) (*medialive.CreateTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTags", arg0)
+	ret0, _ := ret[0].(*medialive.CreateTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTags indicates an expected call of CreateTags
+func (mr *MockMediaLiveAPIMockRecorder) CreateTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTags", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateTags), arg0)
+}
+
+// CreateTagsRequest mocks base method
+func (m *MockMediaLiveAPI) CreateTagsRequest(arg0 *medialive.CreateTagsInput) (*request.Request, *medialive.CreateTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.CreateTagsOutput)
+	return ret0, ret1
+}
+
+// CreateTagsRequest indicates an expected call of CreateTagsRequest
+func (mr *MockMediaLiveAPIMockRecorder) CreateTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateTagsRequest), arg0)
+}
+
+// CreateTagsWithContext mocks base method
+func (m *MockMediaLiveAPI) CreateTagsWithContext(arg0 context.Context, arg1 *medialive.CreateTagsInput, arg2 ...request.Option) (*medialive.CreateTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.CreateTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTagsWithContext indicates an expected call of CreateTagsWithContext
+func (mr *MockMediaLiveAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateTagsWithContext), varargs...)
+}
+
 // DeleteChannel mocks base method
 func (m *MockMediaLiveAPI) DeleteChannel(arg0 *medialive.DeleteChannelInput) (*medialive.DeleteChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteReservationWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReservationWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteReservationWithContext), varargs...)
+}
+
+// DeleteTags mocks base method
+func (m *MockMediaLiveAPI) DeleteTags(arg0 *medialive.DeleteTagsInput) (*medialive.DeleteTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTags", arg0)
+	ret0, _ := ret[0].(*medialive.DeleteTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTags indicates an expected call of DeleteTags
+func (mr *MockMediaLiveAPIMockRecorder) DeleteTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTags", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteTags), arg0)
+}
+
+// DeleteTagsRequest mocks base method
+func (m *MockMediaLiveAPI) DeleteTagsRequest(arg0 *medialive.DeleteTagsInput) (*request.Request, *medialive.DeleteTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DeleteTagsOutput)
+	return ret0, ret1
+}
+
+// DeleteTagsRequest indicates an expected call of DeleteTagsRequest
+func (mr *MockMediaLiveAPIMockRecorder) DeleteTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteTagsRequest), arg0)
+}
+
+// DeleteTagsWithContext mocks base method
+func (m *MockMediaLiveAPI) DeleteTagsWithContext(arg0 context.Context, arg1 *medialive.DeleteTagsInput, arg2 ...request.Option) (*medialive.DeleteTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DeleteTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTagsWithContext indicates an expected call of DeleteTagsWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
 // DescribeChannel mocks base method
@@ -1181,6 +1281,56 @@ func (mr *MockMediaLiveAPIMockRecorder) ListReservationsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReservationsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListReservationsWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockMediaLiveAPI) ListTagsForResource(arg0 *medialive.ListTagsForResourceInput) (*medialive.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*medialive.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockMediaLiveAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockMediaLiveAPI) ListTagsForResourceRequest(arg0 *medialive.ListTagsForResourceInput) (*request.Request, *medialive.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockMediaLiveAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockMediaLiveAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *medialive.ListTagsForResourceInput, arg2 ...request.Option) (*medialive.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
 // PurchaseOffering mocks base method

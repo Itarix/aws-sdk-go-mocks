@@ -885,6 +885,56 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteMatchmakingConfigurationWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMatchmakingConfigurationWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteMatchmakingConfigurationWithContext), varargs...)
 }
 
+// DeleteMatchmakingRuleSet mocks base method
+func (m *MockGameLiftAPI) DeleteMatchmakingRuleSet(arg0 *gamelift.DeleteMatchmakingRuleSetInput) (*gamelift.DeleteMatchmakingRuleSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMatchmakingRuleSet", arg0)
+	ret0, _ := ret[0].(*gamelift.DeleteMatchmakingRuleSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMatchmakingRuleSet indicates an expected call of DeleteMatchmakingRuleSet
+func (mr *MockGameLiftAPIMockRecorder) DeleteMatchmakingRuleSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMatchmakingRuleSet", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteMatchmakingRuleSet), arg0)
+}
+
+// DeleteMatchmakingRuleSetRequest mocks base method
+func (m *MockGameLiftAPI) DeleteMatchmakingRuleSetRequest(arg0 *gamelift.DeleteMatchmakingRuleSetInput) (*request.Request, *gamelift.DeleteMatchmakingRuleSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMatchmakingRuleSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DeleteMatchmakingRuleSetOutput)
+	return ret0, ret1
+}
+
+// DeleteMatchmakingRuleSetRequest indicates an expected call of DeleteMatchmakingRuleSetRequest
+func (mr *MockGameLiftAPIMockRecorder) DeleteMatchmakingRuleSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMatchmakingRuleSetRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteMatchmakingRuleSetRequest), arg0)
+}
+
+// DeleteMatchmakingRuleSetWithContext mocks base method
+func (m *MockGameLiftAPI) DeleteMatchmakingRuleSetWithContext(arg0 context.Context, arg1 *gamelift.DeleteMatchmakingRuleSetInput, arg2 ...request.Option) (*gamelift.DeleteMatchmakingRuleSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMatchmakingRuleSetWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DeleteMatchmakingRuleSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMatchmakingRuleSetWithContext indicates an expected call of DeleteMatchmakingRuleSetWithContext
+func (mr *MockGameLiftAPIMockRecorder) DeleteMatchmakingRuleSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMatchmakingRuleSetWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteMatchmakingRuleSetWithContext), varargs...)
+}
+
 // DeleteScalingPolicy mocks base method
 func (m *MockGameLiftAPI) DeleteScalingPolicy(arg0 *gamelift.DeleteScalingPolicyInput) (*gamelift.DeleteScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
