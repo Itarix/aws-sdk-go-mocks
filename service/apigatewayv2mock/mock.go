@@ -2285,6 +2285,156 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetStagesWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStagesWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetStagesWithContext), varargs...)
 }
 
+// GetTags mocks base method
+func (m *MockApiGatewayV2API) GetTags(arg0 *apigatewayv2.GetTagsInput) (*apigatewayv2.GetTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTags", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.GetTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTags indicates an expected call of GetTags
+func (mr *MockApiGatewayV2APIMockRecorder) GetTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTags", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetTags), arg0)
+}
+
+// GetTagsRequest mocks base method
+func (m *MockApiGatewayV2API) GetTagsRequest(arg0 *apigatewayv2.GetTagsInput) (*request.Request, *apigatewayv2.GetTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.GetTagsOutput)
+	return ret0, ret1
+}
+
+// GetTagsRequest indicates an expected call of GetTagsRequest
+func (mr *MockApiGatewayV2APIMockRecorder) GetTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetTagsRequest), arg0)
+}
+
+// GetTagsWithContext mocks base method
+func (m *MockApiGatewayV2API) GetTagsWithContext(arg0 context.Context, arg1 *apigatewayv2.GetTagsInput, arg2 ...request.Option) (*apigatewayv2.GetTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.GetTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTagsWithContext indicates an expected call of GetTagsWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) GetTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetTagsWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockApiGatewayV2API) TagResource(arg0 *apigatewayv2.TagResourceInput) (*apigatewayv2.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockApiGatewayV2APIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockApiGatewayV2API)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockApiGatewayV2API) TagResourceRequest(arg0 *apigatewayv2.TagResourceInput) (*request.Request, *apigatewayv2.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockApiGatewayV2APIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockApiGatewayV2API) TagResourceWithContext(arg0 context.Context, arg1 *apigatewayv2.TagResourceInput, arg2 ...request.Option) (*apigatewayv2.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockApiGatewayV2API) UntagResource(arg0 *apigatewayv2.UntagResourceInput) (*apigatewayv2.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockApiGatewayV2APIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockApiGatewayV2API)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockApiGatewayV2API) UntagResourceRequest(arg0 *apigatewayv2.UntagResourceInput) (*request.Request, *apigatewayv2.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockApiGatewayV2APIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockApiGatewayV2API) UntagResourceWithContext(arg0 context.Context, arg1 *apigatewayv2.UntagResourceInput, arg2 ...request.Option) (*apigatewayv2.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).UntagResourceWithContext), varargs...)
+}
+
 // UpdateApi mocks base method
 func (m *MockApiGatewayV2API) UpdateApi(arg0 *apigatewayv2.UpdateApiInput) (*apigatewayv2.UpdateApiOutput, error) {
 	m.ctrl.T.Helper()
