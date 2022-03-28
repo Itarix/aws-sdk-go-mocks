@@ -851,6 +851,56 @@ func (mr *MockSecurityHubAPIMockRecorder) DescribeProductsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProductsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeProductsWithContext), varargs...)
 }
 
+// DescribeStandardsControls mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsControls(arg0 *securityhub.DescribeStandardsControlsInput) (*securityhub.DescribeStandardsControlsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStandardsControls", arg0)
+	ret0, _ := ret[0].(*securityhub.DescribeStandardsControlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStandardsControls indicates an expected call of DescribeStandardsControls
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControls(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControls", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControls), arg0)
+}
+
+// DescribeStandardsControlsRequest mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsControlsRequest(arg0 *securityhub.DescribeStandardsControlsInput) (*request.Request, *securityhub.DescribeStandardsControlsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStandardsControlsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.DescribeStandardsControlsOutput)
+	return ret0, ret1
+}
+
+// DescribeStandardsControlsRequest indicates an expected call of DescribeStandardsControlsRequest
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControlsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControlsRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControlsRequest), arg0)
+}
+
+// DescribeStandardsControlsWithContext mocks base method
+func (m *MockSecurityHubAPI) DescribeStandardsControlsWithContext(arg0 context.Context, arg1 *securityhub.DescribeStandardsControlsInput, arg2 ...request.Option) (*securityhub.DescribeStandardsControlsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStandardsControlsWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.DescribeStandardsControlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStandardsControlsWithContext indicates an expected call of DescribeStandardsControlsWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DescribeStandardsControlsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStandardsControlsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DescribeStandardsControlsWithContext), varargs...)
+}
+
 // DisableImportFindingsForProduct mocks base method
 func (m *MockSecurityHubAPI) DisableImportFindingsForProduct(arg0 *securityhub.DisableImportFindingsForProductInput) (*securityhub.DisableImportFindingsForProductOutput, error) {
 	m.ctrl.T.Helper()
@@ -2098,4 +2148,54 @@ func (mr *MockSecurityHubAPIMockRecorder) UpdateInsightWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInsightWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateInsightWithContext), varargs...)
+}
+
+// UpdateStandardsControl mocks base method
+func (m *MockSecurityHubAPI) UpdateStandardsControl(arg0 *securityhub.UpdateStandardsControlInput) (*securityhub.UpdateStandardsControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStandardsControl", arg0)
+	ret0, _ := ret[0].(*securityhub.UpdateStandardsControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStandardsControl indicates an expected call of UpdateStandardsControl
+func (mr *MockSecurityHubAPIMockRecorder) UpdateStandardsControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStandardsControl", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateStandardsControl), arg0)
+}
+
+// UpdateStandardsControlRequest mocks base method
+func (m *MockSecurityHubAPI) UpdateStandardsControlRequest(arg0 *securityhub.UpdateStandardsControlInput) (*request.Request, *securityhub.UpdateStandardsControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStandardsControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.UpdateStandardsControlOutput)
+	return ret0, ret1
+}
+
+// UpdateStandardsControlRequest indicates an expected call of UpdateStandardsControlRequest
+func (mr *MockSecurityHubAPIMockRecorder) UpdateStandardsControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStandardsControlRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateStandardsControlRequest), arg0)
+}
+
+// UpdateStandardsControlWithContext mocks base method
+func (m *MockSecurityHubAPI) UpdateStandardsControlWithContext(arg0 context.Context, arg1 *securityhub.UpdateStandardsControlInput, arg2 ...request.Option) (*securityhub.UpdateStandardsControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStandardsControlWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.UpdateStandardsControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStandardsControlWithContext indicates an expected call of UpdateStandardsControlWithContext
+func (mr *MockSecurityHubAPIMockRecorder) UpdateStandardsControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStandardsControlWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).UpdateStandardsControlWithContext), varargs...)
 }
