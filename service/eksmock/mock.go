@@ -250,6 +250,39 @@ func (mr *MockEKSAPIMockRecorder) ListClusters(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusters", reflect.TypeOf((*MockEKSAPI)(nil).ListClusters), arg0)
 }
 
+// ListClustersPages mocks base method
+func (m *MockEKSAPI) ListClustersPages(arg0 *eks.ListClustersInput, arg1 func(*eks.ListClustersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClustersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClustersPages indicates an expected call of ListClustersPages
+func (mr *MockEKSAPIMockRecorder) ListClustersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersPages", reflect.TypeOf((*MockEKSAPI)(nil).ListClustersPages), arg0, arg1)
+}
+
+// ListClustersPagesWithContext mocks base method
+func (m *MockEKSAPI) ListClustersPagesWithContext(arg0 context.Context, arg1 *eks.ListClustersInput, arg2 func(*eks.ListClustersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClustersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClustersPagesWithContext indicates an expected call of ListClustersPagesWithContext
+func (mr *MockEKSAPIMockRecorder) ListClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersPagesWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListClustersPagesWithContext), varargs...)
+}
+
 // ListClustersRequest mocks base method
 func (m *MockEKSAPI) ListClustersRequest(arg0 *eks.ListClustersInput) (*request.Request, *eks.ListClustersOutput) {
 	m.ctrl.T.Helper()
@@ -298,6 +331,39 @@ func (m *MockEKSAPI) ListUpdates(arg0 *eks.ListUpdatesInput) (*eks.ListUpdatesOu
 func (mr *MockEKSAPIMockRecorder) ListUpdates(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUpdates", reflect.TypeOf((*MockEKSAPI)(nil).ListUpdates), arg0)
+}
+
+// ListUpdatesPages mocks base method
+func (m *MockEKSAPI) ListUpdatesPages(arg0 *eks.ListUpdatesInput, arg1 func(*eks.ListUpdatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUpdatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUpdatesPages indicates an expected call of ListUpdatesPages
+func (mr *MockEKSAPIMockRecorder) ListUpdatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUpdatesPages", reflect.TypeOf((*MockEKSAPI)(nil).ListUpdatesPages), arg0, arg1)
+}
+
+// ListUpdatesPagesWithContext mocks base method
+func (m *MockEKSAPI) ListUpdatesPagesWithContext(arg0 context.Context, arg1 *eks.ListUpdatesInput, arg2 func(*eks.ListUpdatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUpdatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUpdatesPagesWithContext indicates an expected call of ListUpdatesPagesWithContext
+func (mr *MockEKSAPIMockRecorder) ListUpdatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUpdatesPagesWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListUpdatesPagesWithContext), varargs...)
 }
 
 // ListUpdatesRequest mocks base method
