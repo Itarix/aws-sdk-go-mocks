@@ -1398,6 +1398,56 @@ func (mr *MockECSAPIMockRecorder) PutAccountSetting(arg0 interface{}) *gomock.Ca
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSetting", reflect.TypeOf((*MockECSAPI)(nil).PutAccountSetting), arg0)
 }
 
+// PutAccountSettingDefault mocks base method
+func (m *MockECSAPI) PutAccountSettingDefault(arg0 *ecs.PutAccountSettingDefaultInput) (*ecs.PutAccountSettingDefaultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountSettingDefault", arg0)
+	ret0, _ := ret[0].(*ecs.PutAccountSettingDefaultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountSettingDefault indicates an expected call of PutAccountSettingDefault
+func (mr *MockECSAPIMockRecorder) PutAccountSettingDefault(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSettingDefault", reflect.TypeOf((*MockECSAPI)(nil).PutAccountSettingDefault), arg0)
+}
+
+// PutAccountSettingDefaultRequest mocks base method
+func (m *MockECSAPI) PutAccountSettingDefaultRequest(arg0 *ecs.PutAccountSettingDefaultInput) (*request.Request, *ecs.PutAccountSettingDefaultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountSettingDefaultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecs.PutAccountSettingDefaultOutput)
+	return ret0, ret1
+}
+
+// PutAccountSettingDefaultRequest indicates an expected call of PutAccountSettingDefaultRequest
+func (mr *MockECSAPIMockRecorder) PutAccountSettingDefaultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSettingDefaultRequest", reflect.TypeOf((*MockECSAPI)(nil).PutAccountSettingDefaultRequest), arg0)
+}
+
+// PutAccountSettingDefaultWithContext mocks base method
+func (m *MockECSAPI) PutAccountSettingDefaultWithContext(arg0 context.Context, arg1 *ecs.PutAccountSettingDefaultInput, arg2 ...request.Option) (*ecs.PutAccountSettingDefaultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAccountSettingDefaultWithContext", varargs...)
+	ret0, _ := ret[0].(*ecs.PutAccountSettingDefaultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountSettingDefaultWithContext indicates an expected call of PutAccountSettingDefaultWithContext
+func (mr *MockECSAPIMockRecorder) PutAccountSettingDefaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSettingDefaultWithContext", reflect.TypeOf((*MockECSAPI)(nil).PutAccountSettingDefaultWithContext), varargs...)
+}
+
 // PutAccountSettingRequest mocks base method
 func (m *MockECSAPI) PutAccountSettingRequest(arg0 *ecs.PutAccountSettingInput) (*request.Request, *ecs.PutAccountSettingOutput) {
 	m.ctrl.T.Helper()
