@@ -585,6 +585,56 @@ func (mr *MockBackupAPIMockRecorder) DescribeBackupVaultWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBackupVaultWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeBackupVaultWithContext), varargs...)
 }
 
+// DescribeCopyJob mocks base method
+func (m *MockBackupAPI) DescribeCopyJob(arg0 *backup.DescribeCopyJobInput) (*backup.DescribeCopyJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCopyJob", arg0)
+	ret0, _ := ret[0].(*backup.DescribeCopyJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCopyJob indicates an expected call of DescribeCopyJob
+func (mr *MockBackupAPIMockRecorder) DescribeCopyJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCopyJob", reflect.TypeOf((*MockBackupAPI)(nil).DescribeCopyJob), arg0)
+}
+
+// DescribeCopyJobRequest mocks base method
+func (m *MockBackupAPI) DescribeCopyJobRequest(arg0 *backup.DescribeCopyJobInput) (*request.Request, *backup.DescribeCopyJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCopyJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DescribeCopyJobOutput)
+	return ret0, ret1
+}
+
+// DescribeCopyJobRequest indicates an expected call of DescribeCopyJobRequest
+func (mr *MockBackupAPIMockRecorder) DescribeCopyJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCopyJobRequest", reflect.TypeOf((*MockBackupAPI)(nil).DescribeCopyJobRequest), arg0)
+}
+
+// DescribeCopyJobWithContext mocks base method
+func (m *MockBackupAPI) DescribeCopyJobWithContext(arg0 context.Context, arg1 *backup.DescribeCopyJobInput, arg2 ...request.Option) (*backup.DescribeCopyJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCopyJobWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DescribeCopyJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCopyJobWithContext indicates an expected call of DescribeCopyJobWithContext
+func (mr *MockBackupAPIMockRecorder) DescribeCopyJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCopyJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeCopyJobWithContext), varargs...)
+}
+
 // DescribeProtectedResource mocks base method
 func (m *MockBackupAPI) DescribeProtectedResource(arg0 *backup.DescribeProtectedResourceInput) (*backup.DescribeProtectedResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1733,89 @@ func (mr *MockBackupAPIMockRecorder) ListBackupVaultsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBackupVaultsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListBackupVaultsWithContext), varargs...)
 }
 
+// ListCopyJobs mocks base method
+func (m *MockBackupAPI) ListCopyJobs(arg0 *backup.ListCopyJobsInput) (*backup.ListCopyJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCopyJobs", arg0)
+	ret0, _ := ret[0].(*backup.ListCopyJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCopyJobs indicates an expected call of ListCopyJobs
+func (mr *MockBackupAPIMockRecorder) ListCopyJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCopyJobs", reflect.TypeOf((*MockBackupAPI)(nil).ListCopyJobs), arg0)
+}
+
+// ListCopyJobsPages mocks base method
+func (m *MockBackupAPI) ListCopyJobsPages(arg0 *backup.ListCopyJobsInput, arg1 func(*backup.ListCopyJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCopyJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCopyJobsPages indicates an expected call of ListCopyJobsPages
+func (mr *MockBackupAPIMockRecorder) ListCopyJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCopyJobsPages", reflect.TypeOf((*MockBackupAPI)(nil).ListCopyJobsPages), arg0, arg1)
+}
+
+// ListCopyJobsPagesWithContext mocks base method
+func (m *MockBackupAPI) ListCopyJobsPagesWithContext(arg0 context.Context, arg1 *backup.ListCopyJobsInput, arg2 func(*backup.ListCopyJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCopyJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCopyJobsPagesWithContext indicates an expected call of ListCopyJobsPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListCopyJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCopyJobsPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListCopyJobsPagesWithContext), varargs...)
+}
+
+// ListCopyJobsRequest mocks base method
+func (m *MockBackupAPI) ListCopyJobsRequest(arg0 *backup.ListCopyJobsInput) (*request.Request, *backup.ListCopyJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCopyJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListCopyJobsOutput)
+	return ret0, ret1
+}
+
+// ListCopyJobsRequest indicates an expected call of ListCopyJobsRequest
+func (mr *MockBackupAPIMockRecorder) ListCopyJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCopyJobsRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListCopyJobsRequest), arg0)
+}
+
+// ListCopyJobsWithContext mocks base method
+func (m *MockBackupAPI) ListCopyJobsWithContext(arg0 context.Context, arg1 *backup.ListCopyJobsInput, arg2 ...request.Option) (*backup.ListCopyJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCopyJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListCopyJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCopyJobsWithContext indicates an expected call of ListCopyJobsWithContext
+func (mr *MockBackupAPIMockRecorder) ListCopyJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCopyJobsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListCopyJobsWithContext), varargs...)
+}
+
 // ListProtectedResources mocks base method
 func (m *MockBackupAPI) ListProtectedResources(arg0 *backup.ListProtectedResourcesInput) (*backup.ListProtectedResourcesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2246,6 +2379,56 @@ func (mr *MockBackupAPIMockRecorder) StartBackupJobWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBackupJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).StartBackupJobWithContext), varargs...)
+}
+
+// StartCopyJob mocks base method
+func (m *MockBackupAPI) StartCopyJob(arg0 *backup.StartCopyJobInput) (*backup.StartCopyJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCopyJob", arg0)
+	ret0, _ := ret[0].(*backup.StartCopyJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCopyJob indicates an expected call of StartCopyJob
+func (mr *MockBackupAPIMockRecorder) StartCopyJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCopyJob", reflect.TypeOf((*MockBackupAPI)(nil).StartCopyJob), arg0)
+}
+
+// StartCopyJobRequest mocks base method
+func (m *MockBackupAPI) StartCopyJobRequest(arg0 *backup.StartCopyJobInput) (*request.Request, *backup.StartCopyJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCopyJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.StartCopyJobOutput)
+	return ret0, ret1
+}
+
+// StartCopyJobRequest indicates an expected call of StartCopyJobRequest
+func (mr *MockBackupAPIMockRecorder) StartCopyJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCopyJobRequest", reflect.TypeOf((*MockBackupAPI)(nil).StartCopyJobRequest), arg0)
+}
+
+// StartCopyJobWithContext mocks base method
+func (m *MockBackupAPI) StartCopyJobWithContext(arg0 context.Context, arg1 *backup.StartCopyJobInput, arg2 ...request.Option) (*backup.StartCopyJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartCopyJobWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.StartCopyJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCopyJobWithContext indicates an expected call of StartCopyJobWithContext
+func (mr *MockBackupAPIMockRecorder) StartCopyJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCopyJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).StartCopyJobWithContext), varargs...)
 }
 
 // StartRestoreJob mocks base method

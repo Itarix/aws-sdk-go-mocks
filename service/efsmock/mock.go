@@ -35,6 +35,56 @@ func (m *MockEFSAPI) EXPECT() *MockEFSAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateAccessPoint mocks base method
+func (m *MockEFSAPI) CreateAccessPoint(arg0 *efs.CreateAccessPointInput) (*efs.CreateAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessPoint", arg0)
+	ret0, _ := ret[0].(*efs.CreateAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessPoint indicates an expected call of CreateAccessPoint
+func (mr *MockEFSAPIMockRecorder) CreateAccessPoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPoint", reflect.TypeOf((*MockEFSAPI)(nil).CreateAccessPoint), arg0)
+}
+
+// CreateAccessPointRequest mocks base method
+func (m *MockEFSAPI) CreateAccessPointRequest(arg0 *efs.CreateAccessPointInput) (*request.Request, *efs.CreateAccessPointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessPointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.CreateAccessPointOutput)
+	return ret0, ret1
+}
+
+// CreateAccessPointRequest indicates an expected call of CreateAccessPointRequest
+func (mr *MockEFSAPIMockRecorder) CreateAccessPointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPointRequest", reflect.TypeOf((*MockEFSAPI)(nil).CreateAccessPointRequest), arg0)
+}
+
+// CreateAccessPointWithContext mocks base method
+func (m *MockEFSAPI) CreateAccessPointWithContext(arg0 context.Context, arg1 *efs.CreateAccessPointInput, arg2 ...request.Option) (*efs.CreateAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAccessPointWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.CreateAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessPointWithContext indicates an expected call of CreateAccessPointWithContext
+func (mr *MockEFSAPIMockRecorder) CreateAccessPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPointWithContext", reflect.TypeOf((*MockEFSAPI)(nil).CreateAccessPointWithContext), varargs...)
+}
+
 // CreateFileSystem mocks base method
 func (m *MockEFSAPI) CreateFileSystem(arg0 *efs.CreateFileSystemInput) (*efs.FileSystemDescription, error) {
 	m.ctrl.T.Helper()
@@ -185,6 +235,56 @@ func (mr *MockEFSAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interface{}, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).CreateTagsWithContext), varargs...)
 }
 
+// DeleteAccessPoint mocks base method
+func (m *MockEFSAPI) DeleteAccessPoint(arg0 *efs.DeleteAccessPointInput) (*efs.DeleteAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessPoint", arg0)
+	ret0, _ := ret[0].(*efs.DeleteAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessPoint indicates an expected call of DeleteAccessPoint
+func (mr *MockEFSAPIMockRecorder) DeleteAccessPoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPoint", reflect.TypeOf((*MockEFSAPI)(nil).DeleteAccessPoint), arg0)
+}
+
+// DeleteAccessPointRequest mocks base method
+func (m *MockEFSAPI) DeleteAccessPointRequest(arg0 *efs.DeleteAccessPointInput) (*request.Request, *efs.DeleteAccessPointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessPointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DeleteAccessPointOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessPointRequest indicates an expected call of DeleteAccessPointRequest
+func (mr *MockEFSAPIMockRecorder) DeleteAccessPointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointRequest", reflect.TypeOf((*MockEFSAPI)(nil).DeleteAccessPointRequest), arg0)
+}
+
+// DeleteAccessPointWithContext mocks base method
+func (m *MockEFSAPI) DeleteAccessPointWithContext(arg0 context.Context, arg1 *efs.DeleteAccessPointInput, arg2 ...request.Option) (*efs.DeleteAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessPointWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DeleteAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessPointWithContext indicates an expected call of DeleteAccessPointWithContext
+func (mr *MockEFSAPIMockRecorder) DeleteAccessPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DeleteAccessPointWithContext), varargs...)
+}
+
 // DeleteFileSystem mocks base method
 func (m *MockEFSAPI) DeleteFileSystem(arg0 *efs.DeleteFileSystemInput) (*efs.DeleteFileSystemOutput, error) {
 	m.ctrl.T.Helper()
@@ -198,6 +298,56 @@ func (m *MockEFSAPI) DeleteFileSystem(arg0 *efs.DeleteFileSystemInput) (*efs.Del
 func (mr *MockEFSAPIMockRecorder) DeleteFileSystem(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileSystem", reflect.TypeOf((*MockEFSAPI)(nil).DeleteFileSystem), arg0)
+}
+
+// DeleteFileSystemPolicy mocks base method
+func (m *MockEFSAPI) DeleteFileSystemPolicy(arg0 *efs.DeleteFileSystemPolicyInput) (*efs.DeleteFileSystemPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFileSystemPolicy", arg0)
+	ret0, _ := ret[0].(*efs.DeleteFileSystemPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFileSystemPolicy indicates an expected call of DeleteFileSystemPolicy
+func (mr *MockEFSAPIMockRecorder) DeleteFileSystemPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileSystemPolicy", reflect.TypeOf((*MockEFSAPI)(nil).DeleteFileSystemPolicy), arg0)
+}
+
+// DeleteFileSystemPolicyRequest mocks base method
+func (m *MockEFSAPI) DeleteFileSystemPolicyRequest(arg0 *efs.DeleteFileSystemPolicyInput) (*request.Request, *efs.DeleteFileSystemPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFileSystemPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DeleteFileSystemPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteFileSystemPolicyRequest indicates an expected call of DeleteFileSystemPolicyRequest
+func (mr *MockEFSAPIMockRecorder) DeleteFileSystemPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileSystemPolicyRequest", reflect.TypeOf((*MockEFSAPI)(nil).DeleteFileSystemPolicyRequest), arg0)
+}
+
+// DeleteFileSystemPolicyWithContext mocks base method
+func (m *MockEFSAPI) DeleteFileSystemPolicyWithContext(arg0 context.Context, arg1 *efs.DeleteFileSystemPolicyInput, arg2 ...request.Option) (*efs.DeleteFileSystemPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFileSystemPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DeleteFileSystemPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFileSystemPolicyWithContext indicates an expected call of DeleteFileSystemPolicyWithContext
+func (mr *MockEFSAPIMockRecorder) DeleteFileSystemPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileSystemPolicyWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DeleteFileSystemPolicyWithContext), varargs...)
 }
 
 // DeleteFileSystemRequest mocks base method
@@ -335,6 +485,139 @@ func (mr *MockEFSAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interface{}, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
+// DescribeAccessPoints mocks base method
+func (m *MockEFSAPI) DescribeAccessPoints(arg0 *efs.DescribeAccessPointsInput) (*efs.DescribeAccessPointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccessPoints", arg0)
+	ret0, _ := ret[0].(*efs.DescribeAccessPointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccessPoints indicates an expected call of DescribeAccessPoints
+func (mr *MockEFSAPIMockRecorder) DescribeAccessPoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessPoints", reflect.TypeOf((*MockEFSAPI)(nil).DescribeAccessPoints), arg0)
+}
+
+// DescribeAccessPointsPages mocks base method
+func (m *MockEFSAPI) DescribeAccessPointsPages(arg0 *efs.DescribeAccessPointsInput, arg1 func(*efs.DescribeAccessPointsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccessPointsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAccessPointsPages indicates an expected call of DescribeAccessPointsPages
+func (mr *MockEFSAPIMockRecorder) DescribeAccessPointsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessPointsPages", reflect.TypeOf((*MockEFSAPI)(nil).DescribeAccessPointsPages), arg0, arg1)
+}
+
+// DescribeAccessPointsPagesWithContext mocks base method
+func (m *MockEFSAPI) DescribeAccessPointsPagesWithContext(arg0 context.Context, arg1 *efs.DescribeAccessPointsInput, arg2 func(*efs.DescribeAccessPointsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccessPointsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAccessPointsPagesWithContext indicates an expected call of DescribeAccessPointsPagesWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeAccessPointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessPointsPagesWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeAccessPointsPagesWithContext), varargs...)
+}
+
+// DescribeAccessPointsRequest mocks base method
+func (m *MockEFSAPI) DescribeAccessPointsRequest(arg0 *efs.DescribeAccessPointsInput) (*request.Request, *efs.DescribeAccessPointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccessPointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DescribeAccessPointsOutput)
+	return ret0, ret1
+}
+
+// DescribeAccessPointsRequest indicates an expected call of DescribeAccessPointsRequest
+func (mr *MockEFSAPIMockRecorder) DescribeAccessPointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessPointsRequest", reflect.TypeOf((*MockEFSAPI)(nil).DescribeAccessPointsRequest), arg0)
+}
+
+// DescribeAccessPointsWithContext mocks base method
+func (m *MockEFSAPI) DescribeAccessPointsWithContext(arg0 context.Context, arg1 *efs.DescribeAccessPointsInput, arg2 ...request.Option) (*efs.DescribeAccessPointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccessPointsWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DescribeAccessPointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccessPointsWithContext indicates an expected call of DescribeAccessPointsWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeAccessPointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessPointsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeAccessPointsWithContext), varargs...)
+}
+
+// DescribeFileSystemPolicy mocks base method
+func (m *MockEFSAPI) DescribeFileSystemPolicy(arg0 *efs.DescribeFileSystemPolicyInput) (*efs.DescribeFileSystemPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemPolicy", arg0)
+	ret0, _ := ret[0].(*efs.DescribeFileSystemPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFileSystemPolicy indicates an expected call of DescribeFileSystemPolicy
+func (mr *MockEFSAPIMockRecorder) DescribeFileSystemPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemPolicy", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystemPolicy), arg0)
+}
+
+// DescribeFileSystemPolicyRequest mocks base method
+func (m *MockEFSAPI) DescribeFileSystemPolicyRequest(arg0 *efs.DescribeFileSystemPolicyInput) (*request.Request, *efs.DescribeFileSystemPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DescribeFileSystemPolicyOutput)
+	return ret0, ret1
+}
+
+// DescribeFileSystemPolicyRequest indicates an expected call of DescribeFileSystemPolicyRequest
+func (mr *MockEFSAPIMockRecorder) DescribeFileSystemPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemPolicyRequest", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystemPolicyRequest), arg0)
+}
+
+// DescribeFileSystemPolicyWithContext mocks base method
+func (m *MockEFSAPI) DescribeFileSystemPolicyWithContext(arg0 context.Context, arg1 *efs.DescribeFileSystemPolicyInput, arg2 ...request.Option) (*efs.DescribeFileSystemPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFileSystemPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DescribeFileSystemPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFileSystemPolicyWithContext indicates an expected call of DescribeFileSystemPolicyWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeFileSystemPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemPolicyWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystemPolicyWithContext), varargs...)
+}
+
 // DescribeFileSystems mocks base method
 func (m *MockEFSAPI) DescribeFileSystems(arg0 *efs.DescribeFileSystemsInput) (*efs.DescribeFileSystemsOutput, error) {
 	m.ctrl.T.Helper()
@@ -348,6 +631,39 @@ func (m *MockEFSAPI) DescribeFileSystems(arg0 *efs.DescribeFileSystemsInput) (*e
 func (mr *MockEFSAPIMockRecorder) DescribeFileSystems(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystems", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystems), arg0)
+}
+
+// DescribeFileSystemsPages mocks base method
+func (m *MockEFSAPI) DescribeFileSystemsPages(arg0 *efs.DescribeFileSystemsInput, arg1 func(*efs.DescribeFileSystemsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFileSystemsPages indicates an expected call of DescribeFileSystemsPages
+func (mr *MockEFSAPIMockRecorder) DescribeFileSystemsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemsPages", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystemsPages), arg0, arg1)
+}
+
+// DescribeFileSystemsPagesWithContext mocks base method
+func (m *MockEFSAPI) DescribeFileSystemsPagesWithContext(arg0 context.Context, arg1 *efs.DescribeFileSystemsInput, arg2 func(*efs.DescribeFileSystemsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFileSystemsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFileSystemsPagesWithContext indicates an expected call of DescribeFileSystemsPagesWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeFileSystemsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemsPagesWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystemsPagesWithContext), varargs...)
 }
 
 // DescribeFileSystemsRequest mocks base method
@@ -550,6 +866,39 @@ func (mr *MockEFSAPIMockRecorder) DescribeTags(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTags", reflect.TypeOf((*MockEFSAPI)(nil).DescribeTags), arg0)
 }
 
+// DescribeTagsPages mocks base method
+func (m *MockEFSAPI) DescribeTagsPages(arg0 *efs.DescribeTagsInput, arg1 func(*efs.DescribeTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTagsPages indicates an expected call of DescribeTagsPages
+func (mr *MockEFSAPIMockRecorder) DescribeTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsPages", reflect.TypeOf((*MockEFSAPI)(nil).DescribeTagsPages), arg0, arg1)
+}
+
+// DescribeTagsPagesWithContext mocks base method
+func (m *MockEFSAPI) DescribeTagsPagesWithContext(arg0 context.Context, arg1 *efs.DescribeTagsInput, arg2 func(*efs.DescribeTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTagsPagesWithContext indicates an expected call of DescribeTagsPagesWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsPagesWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeTagsPagesWithContext), varargs...)
+}
+
 // DescribeTagsRequest mocks base method
 func (m *MockEFSAPI) DescribeTagsRequest(arg0 *efs.DescribeTagsInput) (*request.Request, *efs.DescribeTagsOutput) {
 	m.ctrl.T.Helper()
@@ -583,6 +932,89 @@ func (mr *MockEFSAPIMockRecorder) DescribeTagsWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeTagsWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockEFSAPI) ListTagsForResource(arg0 *efs.ListTagsForResourceInput) (*efs.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*efs.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockEFSAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockEFSAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourcePages mocks base method
+func (m *MockEFSAPI) ListTagsForResourcePages(arg0 *efs.ListTagsForResourceInput, arg1 func(*efs.ListTagsForResourceOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
+func (mr *MockEFSAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockEFSAPI)(nil).ListTagsForResourcePages), arg0, arg1)
+}
+
+// ListTagsForResourcePagesWithContext mocks base method
+func (m *MockEFSAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *efs.ListTagsForResourceInput, arg2 func(*efs.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
+func (mr *MockEFSAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockEFSAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockEFSAPI) ListTagsForResourceRequest(arg0 *efs.ListTagsForResourceInput) (*request.Request, *efs.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockEFSAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockEFSAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockEFSAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *efs.ListTagsForResourceInput, arg2 ...request.Option) (*efs.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockEFSAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockEFSAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
 // ModifyMountTargetSecurityGroups mocks base method
@@ -635,6 +1067,56 @@ func (mr *MockEFSAPIMockRecorder) ModifyMountTargetSecurityGroupsWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyMountTargetSecurityGroupsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).ModifyMountTargetSecurityGroupsWithContext), varargs...)
 }
 
+// PutFileSystemPolicy mocks base method
+func (m *MockEFSAPI) PutFileSystemPolicy(arg0 *efs.PutFileSystemPolicyInput) (*efs.PutFileSystemPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFileSystemPolicy", arg0)
+	ret0, _ := ret[0].(*efs.PutFileSystemPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFileSystemPolicy indicates an expected call of PutFileSystemPolicy
+func (mr *MockEFSAPIMockRecorder) PutFileSystemPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFileSystemPolicy", reflect.TypeOf((*MockEFSAPI)(nil).PutFileSystemPolicy), arg0)
+}
+
+// PutFileSystemPolicyRequest mocks base method
+func (m *MockEFSAPI) PutFileSystemPolicyRequest(arg0 *efs.PutFileSystemPolicyInput) (*request.Request, *efs.PutFileSystemPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFileSystemPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.PutFileSystemPolicyOutput)
+	return ret0, ret1
+}
+
+// PutFileSystemPolicyRequest indicates an expected call of PutFileSystemPolicyRequest
+func (mr *MockEFSAPIMockRecorder) PutFileSystemPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFileSystemPolicyRequest", reflect.TypeOf((*MockEFSAPI)(nil).PutFileSystemPolicyRequest), arg0)
+}
+
+// PutFileSystemPolicyWithContext mocks base method
+func (m *MockEFSAPI) PutFileSystemPolicyWithContext(arg0 context.Context, arg1 *efs.PutFileSystemPolicyInput, arg2 ...request.Option) (*efs.PutFileSystemPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutFileSystemPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.PutFileSystemPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFileSystemPolicyWithContext indicates an expected call of PutFileSystemPolicyWithContext
+func (mr *MockEFSAPIMockRecorder) PutFileSystemPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFileSystemPolicyWithContext", reflect.TypeOf((*MockEFSAPI)(nil).PutFileSystemPolicyWithContext), varargs...)
+}
+
 // PutLifecycleConfiguration mocks base method
 func (m *MockEFSAPI) PutLifecycleConfiguration(arg0 *efs.PutLifecycleConfigurationInput) (*efs.PutLifecycleConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +1165,106 @@ func (mr *MockEFSAPIMockRecorder) PutLifecycleConfigurationWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecycleConfigurationWithContext", reflect.TypeOf((*MockEFSAPI)(nil).PutLifecycleConfigurationWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockEFSAPI) TagResource(arg0 *efs.TagResourceInput) (*efs.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*efs.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockEFSAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockEFSAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockEFSAPI) TagResourceRequest(arg0 *efs.TagResourceInput) (*request.Request, *efs.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockEFSAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockEFSAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockEFSAPI) TagResourceWithContext(arg0 context.Context, arg1 *efs.TagResourceInput, arg2 ...request.Option) (*efs.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockEFSAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockEFSAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockEFSAPI) UntagResource(arg0 *efs.UntagResourceInput) (*efs.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*efs.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockEFSAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockEFSAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockEFSAPI) UntagResourceRequest(arg0 *efs.UntagResourceInput) (*request.Request, *efs.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockEFSAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockEFSAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockEFSAPI) UntagResourceWithContext(arg0 context.Context, arg1 *efs.UntagResourceInput, arg2 ...request.Option) (*efs.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockEFSAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockEFSAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateFileSystem mocks base method
