@@ -35,6 +35,106 @@ func (m *MockApiGatewayManagementApiAPI) EXPECT() *MockApiGatewayManagementApiAP
 	return m.recorder
 }
 
+// DeleteConnection mocks base method
+func (m *MockApiGatewayManagementApiAPI) DeleteConnection(arg0 *apigatewaymanagementapi.DeleteConnectionInput) (*apigatewaymanagementapi.DeleteConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnection", arg0)
+	ret0, _ := ret[0].(*apigatewaymanagementapi.DeleteConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnection indicates an expected call of DeleteConnection
+func (mr *MockApiGatewayManagementApiAPIMockRecorder) DeleteConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnection", reflect.TypeOf((*MockApiGatewayManagementApiAPI)(nil).DeleteConnection), arg0)
+}
+
+// DeleteConnectionRequest mocks base method
+func (m *MockApiGatewayManagementApiAPI) DeleteConnectionRequest(arg0 *apigatewaymanagementapi.DeleteConnectionInput) (*request.Request, *apigatewaymanagementapi.DeleteConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewaymanagementapi.DeleteConnectionOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectionRequest indicates an expected call of DeleteConnectionRequest
+func (mr *MockApiGatewayManagementApiAPIMockRecorder) DeleteConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionRequest", reflect.TypeOf((*MockApiGatewayManagementApiAPI)(nil).DeleteConnectionRequest), arg0)
+}
+
+// DeleteConnectionWithContext mocks base method
+func (m *MockApiGatewayManagementApiAPI) DeleteConnectionWithContext(arg0 context.Context, arg1 *apigatewaymanagementapi.DeleteConnectionInput, arg2 ...request.Option) (*apigatewaymanagementapi.DeleteConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewaymanagementapi.DeleteConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectionWithContext indicates an expected call of DeleteConnectionWithContext
+func (mr *MockApiGatewayManagementApiAPIMockRecorder) DeleteConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionWithContext", reflect.TypeOf((*MockApiGatewayManagementApiAPI)(nil).DeleteConnectionWithContext), varargs...)
+}
+
+// GetConnection mocks base method
+func (m *MockApiGatewayManagementApiAPI) GetConnection(arg0 *apigatewaymanagementapi.GetConnectionInput) (*apigatewaymanagementapi.GetConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnection", arg0)
+	ret0, _ := ret[0].(*apigatewaymanagementapi.GetConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnection indicates an expected call of GetConnection
+func (mr *MockApiGatewayManagementApiAPIMockRecorder) GetConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnection", reflect.TypeOf((*MockApiGatewayManagementApiAPI)(nil).GetConnection), arg0)
+}
+
+// GetConnectionRequest mocks base method
+func (m *MockApiGatewayManagementApiAPI) GetConnectionRequest(arg0 *apigatewaymanagementapi.GetConnectionInput) (*request.Request, *apigatewaymanagementapi.GetConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewaymanagementapi.GetConnectionOutput)
+	return ret0, ret1
+}
+
+// GetConnectionRequest indicates an expected call of GetConnectionRequest
+func (mr *MockApiGatewayManagementApiAPIMockRecorder) GetConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectionRequest", reflect.TypeOf((*MockApiGatewayManagementApiAPI)(nil).GetConnectionRequest), arg0)
+}
+
+// GetConnectionWithContext mocks base method
+func (m *MockApiGatewayManagementApiAPI) GetConnectionWithContext(arg0 context.Context, arg1 *apigatewaymanagementapi.GetConnectionInput, arg2 ...request.Option) (*apigatewaymanagementapi.GetConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewaymanagementapi.GetConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectionWithContext indicates an expected call of GetConnectionWithContext
+func (mr *MockApiGatewayManagementApiAPIMockRecorder) GetConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectionWithContext", reflect.TypeOf((*MockApiGatewayManagementApiAPI)(nil).GetConnectionWithContext), varargs...)
+}
+
 // PostToConnection mocks base method
 func (m *MockApiGatewayManagementApiAPI) PostToConnection(arg0 *apigatewaymanagementapi.PostToConnectionInput) (*apigatewaymanagementapi.PostToConnectionOutput, error) {
 	m.ctrl.T.Helper()
