@@ -35,6 +35,56 @@ func (m *MockGlobalAcceleratorAPI) EXPECT() *MockGlobalAcceleratorAPIMockRecorde
 	return m.recorder
 }
 
+// AdvertiseByoipCidr mocks base method
+func (m *MockGlobalAcceleratorAPI) AdvertiseByoipCidr(arg0 *globalaccelerator.AdvertiseByoipCidrInput) (*globalaccelerator.AdvertiseByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AdvertiseByoipCidr", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.AdvertiseByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AdvertiseByoipCidr indicates an expected call of AdvertiseByoipCidr
+func (mr *MockGlobalAcceleratorAPIMockRecorder) AdvertiseByoipCidr(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AdvertiseByoipCidr", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AdvertiseByoipCidr), arg0)
+}
+
+// AdvertiseByoipCidrRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) AdvertiseByoipCidrRequest(arg0 *globalaccelerator.AdvertiseByoipCidrInput) (*request.Request, *globalaccelerator.AdvertiseByoipCidrOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AdvertiseByoipCidrRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.AdvertiseByoipCidrOutput)
+	return ret0, ret1
+}
+
+// AdvertiseByoipCidrRequest indicates an expected call of AdvertiseByoipCidrRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) AdvertiseByoipCidrRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AdvertiseByoipCidrRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AdvertiseByoipCidrRequest), arg0)
+}
+
+// AdvertiseByoipCidrWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) AdvertiseByoipCidrWithContext(arg0 context.Context, arg1 *globalaccelerator.AdvertiseByoipCidrInput, arg2 ...request.Option) (*globalaccelerator.AdvertiseByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AdvertiseByoipCidrWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.AdvertiseByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AdvertiseByoipCidrWithContext indicates an expected call of AdvertiseByoipCidrWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) AdvertiseByoipCidrWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AdvertiseByoipCidrWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AdvertiseByoipCidrWithContext), varargs...)
+}
+
 // CreateAccelerator mocks base method
 func (m *MockGlobalAcceleratorAPI) CreateAccelerator(arg0 *globalaccelerator.CreateAcceleratorInput) (*globalaccelerator.CreateAcceleratorOutput, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +385,56 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) DeleteListenerWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteListenerWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).DeleteListenerWithContext), varargs...)
 }
 
+// DeprovisionByoipCidr mocks base method
+func (m *MockGlobalAcceleratorAPI) DeprovisionByoipCidr(arg0 *globalaccelerator.DeprovisionByoipCidrInput) (*globalaccelerator.DeprovisionByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeprovisionByoipCidr", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.DeprovisionByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeprovisionByoipCidr indicates an expected call of DeprovisionByoipCidr
+func (mr *MockGlobalAcceleratorAPIMockRecorder) DeprovisionByoipCidr(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprovisionByoipCidr", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).DeprovisionByoipCidr), arg0)
+}
+
+// DeprovisionByoipCidrRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) DeprovisionByoipCidrRequest(arg0 *globalaccelerator.DeprovisionByoipCidrInput) (*request.Request, *globalaccelerator.DeprovisionByoipCidrOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeprovisionByoipCidrRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.DeprovisionByoipCidrOutput)
+	return ret0, ret1
+}
+
+// DeprovisionByoipCidrRequest indicates an expected call of DeprovisionByoipCidrRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) DeprovisionByoipCidrRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprovisionByoipCidrRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).DeprovisionByoipCidrRequest), arg0)
+}
+
+// DeprovisionByoipCidrWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) DeprovisionByoipCidrWithContext(arg0 context.Context, arg1 *globalaccelerator.DeprovisionByoipCidrInput, arg2 ...request.Option) (*globalaccelerator.DeprovisionByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeprovisionByoipCidrWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.DeprovisionByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeprovisionByoipCidrWithContext indicates an expected call of DeprovisionByoipCidrWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) DeprovisionByoipCidrWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeprovisionByoipCidrWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).DeprovisionByoipCidrWithContext), varargs...)
+}
+
 // DescribeAccelerator mocks base method
 func (m *MockGlobalAcceleratorAPI) DescribeAccelerator(arg0 *globalaccelerator.DescribeAcceleratorInput) (*globalaccelerator.DescribeAcceleratorOutput, error) {
 	m.ctrl.T.Helper()
@@ -585,6 +685,56 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) ListAcceleratorsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAcceleratorsWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListAcceleratorsWithContext), varargs...)
 }
 
+// ListByoipCidrs mocks base method
+func (m *MockGlobalAcceleratorAPI) ListByoipCidrs(arg0 *globalaccelerator.ListByoipCidrsInput) (*globalaccelerator.ListByoipCidrsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListByoipCidrs", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.ListByoipCidrsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListByoipCidrs indicates an expected call of ListByoipCidrs
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListByoipCidrs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByoipCidrs", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListByoipCidrs), arg0)
+}
+
+// ListByoipCidrsRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) ListByoipCidrsRequest(arg0 *globalaccelerator.ListByoipCidrsInput) (*request.Request, *globalaccelerator.ListByoipCidrsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListByoipCidrsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.ListByoipCidrsOutput)
+	return ret0, ret1
+}
+
+// ListByoipCidrsRequest indicates an expected call of ListByoipCidrsRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListByoipCidrsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByoipCidrsRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListByoipCidrsRequest), arg0)
+}
+
+// ListByoipCidrsWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) ListByoipCidrsWithContext(arg0 context.Context, arg1 *globalaccelerator.ListByoipCidrsInput, arg2 ...request.Option) (*globalaccelerator.ListByoipCidrsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListByoipCidrsWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.ListByoipCidrsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListByoipCidrsWithContext indicates an expected call of ListByoipCidrsWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListByoipCidrsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByoipCidrsWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListByoipCidrsWithContext), varargs...)
+}
+
 // ListEndpointGroups mocks base method
 func (m *MockGlobalAcceleratorAPI) ListEndpointGroups(arg0 *globalaccelerator.ListEndpointGroupsInput) (*globalaccelerator.ListEndpointGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +833,206 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) ListListenersWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListListenersWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListListenersWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockGlobalAcceleratorAPI) ListTagsForResource(arg0 *globalaccelerator.ListTagsForResourceInput) (*globalaccelerator.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) ListTagsForResourceRequest(arg0 *globalaccelerator.ListTagsForResourceInput) (*request.Request, *globalaccelerator.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *globalaccelerator.ListTagsForResourceInput, arg2 ...request.Option) (*globalaccelerator.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ProvisionByoipCidr mocks base method
+func (m *MockGlobalAcceleratorAPI) ProvisionByoipCidr(arg0 *globalaccelerator.ProvisionByoipCidrInput) (*globalaccelerator.ProvisionByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ProvisionByoipCidr", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.ProvisionByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ProvisionByoipCidr indicates an expected call of ProvisionByoipCidr
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ProvisionByoipCidr(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvisionByoipCidr", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ProvisionByoipCidr), arg0)
+}
+
+// ProvisionByoipCidrRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) ProvisionByoipCidrRequest(arg0 *globalaccelerator.ProvisionByoipCidrInput) (*request.Request, *globalaccelerator.ProvisionByoipCidrOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ProvisionByoipCidrRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.ProvisionByoipCidrOutput)
+	return ret0, ret1
+}
+
+// ProvisionByoipCidrRequest indicates an expected call of ProvisionByoipCidrRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ProvisionByoipCidrRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvisionByoipCidrRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ProvisionByoipCidrRequest), arg0)
+}
+
+// ProvisionByoipCidrWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) ProvisionByoipCidrWithContext(arg0 context.Context, arg1 *globalaccelerator.ProvisionByoipCidrInput, arg2 ...request.Option) (*globalaccelerator.ProvisionByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ProvisionByoipCidrWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.ProvisionByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ProvisionByoipCidrWithContext indicates an expected call of ProvisionByoipCidrWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ProvisionByoipCidrWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvisionByoipCidrWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ProvisionByoipCidrWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockGlobalAcceleratorAPI) TagResource(arg0 *globalaccelerator.TagResourceInput) (*globalaccelerator.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockGlobalAcceleratorAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) TagResourceRequest(arg0 *globalaccelerator.TagResourceInput) (*request.Request, *globalaccelerator.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) TagResourceWithContext(arg0 context.Context, arg1 *globalaccelerator.TagResourceInput, arg2 ...request.Option) (*globalaccelerator.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockGlobalAcceleratorAPI) UntagResource(arg0 *globalaccelerator.UntagResourceInput) (*globalaccelerator.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockGlobalAcceleratorAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) UntagResourceRequest(arg0 *globalaccelerator.UntagResourceInput) (*request.Request, *globalaccelerator.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) UntagResourceWithContext(arg0 context.Context, arg1 *globalaccelerator.UntagResourceInput, arg2 ...request.Option) (*globalaccelerator.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateAccelerator mocks base method
@@ -883,4 +1233,54 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) UpdateListenerWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateListenerWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).UpdateListenerWithContext), varargs...)
+}
+
+// WithdrawByoipCidr mocks base method
+func (m *MockGlobalAcceleratorAPI) WithdrawByoipCidr(arg0 *globalaccelerator.WithdrawByoipCidrInput) (*globalaccelerator.WithdrawByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WithdrawByoipCidr", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.WithdrawByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// WithdrawByoipCidr indicates an expected call of WithdrawByoipCidr
+func (mr *MockGlobalAcceleratorAPIMockRecorder) WithdrawByoipCidr(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WithdrawByoipCidr", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).WithdrawByoipCidr), arg0)
+}
+
+// WithdrawByoipCidrRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) WithdrawByoipCidrRequest(arg0 *globalaccelerator.WithdrawByoipCidrInput) (*request.Request, *globalaccelerator.WithdrawByoipCidrOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WithdrawByoipCidrRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.WithdrawByoipCidrOutput)
+	return ret0, ret1
+}
+
+// WithdrawByoipCidrRequest indicates an expected call of WithdrawByoipCidrRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) WithdrawByoipCidrRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WithdrawByoipCidrRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).WithdrawByoipCidrRequest), arg0)
+}
+
+// WithdrawByoipCidrWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) WithdrawByoipCidrWithContext(arg0 context.Context, arg1 *globalaccelerator.WithdrawByoipCidrInput, arg2 ...request.Option) (*globalaccelerator.WithdrawByoipCidrOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WithdrawByoipCidrWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.WithdrawByoipCidrOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// WithdrawByoipCidrWithContext indicates an expected call of WithdrawByoipCidrWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) WithdrawByoipCidrWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WithdrawByoipCidrWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).WithdrawByoipCidrWithContext), varargs...)
 }

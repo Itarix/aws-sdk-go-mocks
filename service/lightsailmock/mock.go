@@ -435,6 +435,56 @@ func (mr *MockLightsailAPIMockRecorder) CreateCloudFormationStackWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCloudFormationStackWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateCloudFormationStackWithContext), varargs...)
 }
 
+// CreateContactMethod mocks base method
+func (m *MockLightsailAPI) CreateContactMethod(arg0 *lightsail.CreateContactMethodInput) (*lightsail.CreateContactMethodOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactMethod", arg0)
+	ret0, _ := ret[0].(*lightsail.CreateContactMethodOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactMethod indicates an expected call of CreateContactMethod
+func (mr *MockLightsailAPIMockRecorder) CreateContactMethod(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactMethod", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContactMethod), arg0)
+}
+
+// CreateContactMethodRequest mocks base method
+func (m *MockLightsailAPI) CreateContactMethodRequest(arg0 *lightsail.CreateContactMethodInput) (*request.Request, *lightsail.CreateContactMethodOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactMethodRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CreateContactMethodOutput)
+	return ret0, ret1
+}
+
+// CreateContactMethodRequest indicates an expected call of CreateContactMethodRequest
+func (mr *MockLightsailAPIMockRecorder) CreateContactMethodRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactMethodRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContactMethodRequest), arg0)
+}
+
+// CreateContactMethodWithContext mocks base method
+func (m *MockLightsailAPI) CreateContactMethodWithContext(arg0 context.Context, arg1 *lightsail.CreateContactMethodInput, arg2 ...request.Option) (*lightsail.CreateContactMethodOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContactMethodWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CreateContactMethodOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactMethodWithContext indicates an expected call of CreateContactMethodWithContext
+func (mr *MockLightsailAPIMockRecorder) CreateContactMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactMethodWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContactMethodWithContext), varargs...)
+}
+
 // CreateDisk mocks base method
 func (m *MockLightsailAPI) CreateDisk(arg0 *lightsail.CreateDiskInput) (*lightsail.CreateDiskOutput, error) {
 	m.ctrl.T.Helper()
@@ -1135,6 +1185,56 @@ func (mr *MockLightsailAPIMockRecorder) CreateRelationalDatabaseWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRelationalDatabaseWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateRelationalDatabaseWithContext), varargs...)
 }
 
+// DeleteAlarm mocks base method
+func (m *MockLightsailAPI) DeleteAlarm(arg0 *lightsail.DeleteAlarmInput) (*lightsail.DeleteAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAlarm", arg0)
+	ret0, _ := ret[0].(*lightsail.DeleteAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAlarm indicates an expected call of DeleteAlarm
+func (mr *MockLightsailAPIMockRecorder) DeleteAlarm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlarm", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAlarm), arg0)
+}
+
+// DeleteAlarmRequest mocks base method
+func (m *MockLightsailAPI) DeleteAlarmRequest(arg0 *lightsail.DeleteAlarmInput) (*request.Request, *lightsail.DeleteAlarmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAlarmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.DeleteAlarmOutput)
+	return ret0, ret1
+}
+
+// DeleteAlarmRequest indicates an expected call of DeleteAlarmRequest
+func (mr *MockLightsailAPIMockRecorder) DeleteAlarmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlarmRequest", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAlarmRequest), arg0)
+}
+
+// DeleteAlarmWithContext mocks base method
+func (m *MockLightsailAPI) DeleteAlarmWithContext(arg0 context.Context, arg1 *lightsail.DeleteAlarmInput, arg2 ...request.Option) (*lightsail.DeleteAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAlarmWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.DeleteAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAlarmWithContext indicates an expected call of DeleteAlarmWithContext
+func (mr *MockLightsailAPIMockRecorder) DeleteAlarmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlarmWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAlarmWithContext), varargs...)
+}
+
 // DeleteAutoSnapshot mocks base method
 func (m *MockLightsailAPI) DeleteAutoSnapshot(arg0 *lightsail.DeleteAutoSnapshotInput) (*lightsail.DeleteAutoSnapshotOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1283,56 @@ func (mr *MockLightsailAPIMockRecorder) DeleteAutoSnapshotWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutoSnapshotWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteAutoSnapshotWithContext), varargs...)
+}
+
+// DeleteContactMethod mocks base method
+func (m *MockLightsailAPI) DeleteContactMethod(arg0 *lightsail.DeleteContactMethodInput) (*lightsail.DeleteContactMethodOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactMethod", arg0)
+	ret0, _ := ret[0].(*lightsail.DeleteContactMethodOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactMethod indicates an expected call of DeleteContactMethod
+func (mr *MockLightsailAPIMockRecorder) DeleteContactMethod(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactMethod", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContactMethod), arg0)
+}
+
+// DeleteContactMethodRequest mocks base method
+func (m *MockLightsailAPI) DeleteContactMethodRequest(arg0 *lightsail.DeleteContactMethodInput) (*request.Request, *lightsail.DeleteContactMethodOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactMethodRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.DeleteContactMethodOutput)
+	return ret0, ret1
+}
+
+// DeleteContactMethodRequest indicates an expected call of DeleteContactMethodRequest
+func (mr *MockLightsailAPIMockRecorder) DeleteContactMethodRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactMethodRequest", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContactMethodRequest), arg0)
+}
+
+// DeleteContactMethodWithContext mocks base method
+func (m *MockLightsailAPI) DeleteContactMethodWithContext(arg0 context.Context, arg1 *lightsail.DeleteContactMethodInput, arg2 ...request.Option) (*lightsail.DeleteContactMethodOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContactMethodWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.DeleteContactMethodOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactMethodWithContext indicates an expected call of DeleteContactMethodWithContext
+func (mr *MockLightsailAPIMockRecorder) DeleteContactMethodWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactMethodWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContactMethodWithContext), varargs...)
 }
 
 // DeleteDisk mocks base method
@@ -2185,6 +2335,56 @@ func (mr *MockLightsailAPIMockRecorder) GetActiveNamesWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActiveNamesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetActiveNamesWithContext), varargs...)
 }
 
+// GetAlarms mocks base method
+func (m *MockLightsailAPI) GetAlarms(arg0 *lightsail.GetAlarmsInput) (*lightsail.GetAlarmsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAlarms", arg0)
+	ret0, _ := ret[0].(*lightsail.GetAlarmsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAlarms indicates an expected call of GetAlarms
+func (mr *MockLightsailAPIMockRecorder) GetAlarms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAlarms", reflect.TypeOf((*MockLightsailAPI)(nil).GetAlarms), arg0)
+}
+
+// GetAlarmsRequest mocks base method
+func (m *MockLightsailAPI) GetAlarmsRequest(arg0 *lightsail.GetAlarmsInput) (*request.Request, *lightsail.GetAlarmsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAlarmsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetAlarmsOutput)
+	return ret0, ret1
+}
+
+// GetAlarmsRequest indicates an expected call of GetAlarmsRequest
+func (mr *MockLightsailAPIMockRecorder) GetAlarmsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAlarmsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetAlarmsRequest), arg0)
+}
+
+// GetAlarmsWithContext mocks base method
+func (m *MockLightsailAPI) GetAlarmsWithContext(arg0 context.Context, arg1 *lightsail.GetAlarmsInput, arg2 ...request.Option) (*lightsail.GetAlarmsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAlarmsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetAlarmsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAlarmsWithContext indicates an expected call of GetAlarmsWithContext
+func (mr *MockLightsailAPIMockRecorder) GetAlarmsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAlarmsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetAlarmsWithContext), varargs...)
+}
+
 // GetAutoSnapshots mocks base method
 func (m *MockLightsailAPI) GetAutoSnapshots(arg0 *lightsail.GetAutoSnapshotsInput) (*lightsail.GetAutoSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2383,6 +2583,56 @@ func (mr *MockLightsailAPIMockRecorder) GetCloudFormationStackRecordsWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCloudFormationStackRecordsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetCloudFormationStackRecordsWithContext), varargs...)
+}
+
+// GetContactMethods mocks base method
+func (m *MockLightsailAPI) GetContactMethods(arg0 *lightsail.GetContactMethodsInput) (*lightsail.GetContactMethodsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactMethods", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContactMethodsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactMethods indicates an expected call of GetContactMethods
+func (mr *MockLightsailAPIMockRecorder) GetContactMethods(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactMethods", reflect.TypeOf((*MockLightsailAPI)(nil).GetContactMethods), arg0)
+}
+
+// GetContactMethodsRequest mocks base method
+func (m *MockLightsailAPI) GetContactMethodsRequest(arg0 *lightsail.GetContactMethodsInput) (*request.Request, *lightsail.GetContactMethodsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactMethodsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContactMethodsOutput)
+	return ret0, ret1
+}
+
+// GetContactMethodsRequest indicates an expected call of GetContactMethodsRequest
+func (mr *MockLightsailAPIMockRecorder) GetContactMethodsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactMethodsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContactMethodsRequest), arg0)
+}
+
+// GetContactMethodsWithContext mocks base method
+func (m *MockLightsailAPI) GetContactMethodsWithContext(arg0 context.Context, arg1 *lightsail.GetContactMethodsInput, arg2 ...request.Option) (*lightsail.GetContactMethodsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContactMethodsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContactMethodsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactMethodsWithContext indicates an expected call of GetContactMethodsWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContactMethodsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactMethodsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContactMethodsWithContext), varargs...)
 }
 
 // GetDisk mocks base method
@@ -4535,6 +4785,56 @@ func (mr *MockLightsailAPIMockRecorder) PeerVpcWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PeerVpcWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).PeerVpcWithContext), varargs...)
 }
 
+// PutAlarm mocks base method
+func (m *MockLightsailAPI) PutAlarm(arg0 *lightsail.PutAlarmInput) (*lightsail.PutAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAlarm", arg0)
+	ret0, _ := ret[0].(*lightsail.PutAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAlarm indicates an expected call of PutAlarm
+func (mr *MockLightsailAPIMockRecorder) PutAlarm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAlarm", reflect.TypeOf((*MockLightsailAPI)(nil).PutAlarm), arg0)
+}
+
+// PutAlarmRequest mocks base method
+func (m *MockLightsailAPI) PutAlarmRequest(arg0 *lightsail.PutAlarmInput) (*request.Request, *lightsail.PutAlarmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAlarmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.PutAlarmOutput)
+	return ret0, ret1
+}
+
+// PutAlarmRequest indicates an expected call of PutAlarmRequest
+func (mr *MockLightsailAPIMockRecorder) PutAlarmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAlarmRequest", reflect.TypeOf((*MockLightsailAPI)(nil).PutAlarmRequest), arg0)
+}
+
+// PutAlarmWithContext mocks base method
+func (m *MockLightsailAPI) PutAlarmWithContext(arg0 context.Context, arg1 *lightsail.PutAlarmInput, arg2 ...request.Option) (*lightsail.PutAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAlarmWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.PutAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAlarmWithContext indicates an expected call of PutAlarmWithContext
+func (mr *MockLightsailAPIMockRecorder) PutAlarmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAlarmWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).PutAlarmWithContext), varargs...)
+}
+
 // PutInstancePublicPorts mocks base method
 func (m *MockLightsailAPI) PutInstancePublicPorts(arg0 *lightsail.PutInstancePublicPortsInput) (*lightsail.PutInstancePublicPortsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4733,6 +5033,56 @@ func (mr *MockLightsailAPIMockRecorder) ReleaseStaticIpWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleaseStaticIpWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).ReleaseStaticIpWithContext), varargs...)
+}
+
+// SendContactMethodVerification mocks base method
+func (m *MockLightsailAPI) SendContactMethodVerification(arg0 *lightsail.SendContactMethodVerificationInput) (*lightsail.SendContactMethodVerificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendContactMethodVerification", arg0)
+	ret0, _ := ret[0].(*lightsail.SendContactMethodVerificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendContactMethodVerification indicates an expected call of SendContactMethodVerification
+func (mr *MockLightsailAPIMockRecorder) SendContactMethodVerification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendContactMethodVerification", reflect.TypeOf((*MockLightsailAPI)(nil).SendContactMethodVerification), arg0)
+}
+
+// SendContactMethodVerificationRequest mocks base method
+func (m *MockLightsailAPI) SendContactMethodVerificationRequest(arg0 *lightsail.SendContactMethodVerificationInput) (*request.Request, *lightsail.SendContactMethodVerificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendContactMethodVerificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.SendContactMethodVerificationOutput)
+	return ret0, ret1
+}
+
+// SendContactMethodVerificationRequest indicates an expected call of SendContactMethodVerificationRequest
+func (mr *MockLightsailAPIMockRecorder) SendContactMethodVerificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendContactMethodVerificationRequest", reflect.TypeOf((*MockLightsailAPI)(nil).SendContactMethodVerificationRequest), arg0)
+}
+
+// SendContactMethodVerificationWithContext mocks base method
+func (m *MockLightsailAPI) SendContactMethodVerificationWithContext(arg0 context.Context, arg1 *lightsail.SendContactMethodVerificationInput, arg2 ...request.Option) (*lightsail.SendContactMethodVerificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendContactMethodVerificationWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.SendContactMethodVerificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendContactMethodVerificationWithContext indicates an expected call of SendContactMethodVerificationWithContext
+func (mr *MockLightsailAPIMockRecorder) SendContactMethodVerificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendContactMethodVerificationWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).SendContactMethodVerificationWithContext), varargs...)
 }
 
 // StartInstance mocks base method
@@ -4983,6 +5333,56 @@ func (mr *MockLightsailAPIMockRecorder) TagResourceWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// TestAlarm mocks base method
+func (m *MockLightsailAPI) TestAlarm(arg0 *lightsail.TestAlarmInput) (*lightsail.TestAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestAlarm", arg0)
+	ret0, _ := ret[0].(*lightsail.TestAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestAlarm indicates an expected call of TestAlarm
+func (mr *MockLightsailAPIMockRecorder) TestAlarm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestAlarm", reflect.TypeOf((*MockLightsailAPI)(nil).TestAlarm), arg0)
+}
+
+// TestAlarmRequest mocks base method
+func (m *MockLightsailAPI) TestAlarmRequest(arg0 *lightsail.TestAlarmInput) (*request.Request, *lightsail.TestAlarmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestAlarmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.TestAlarmOutput)
+	return ret0, ret1
+}
+
+// TestAlarmRequest indicates an expected call of TestAlarmRequest
+func (mr *MockLightsailAPIMockRecorder) TestAlarmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestAlarmRequest", reflect.TypeOf((*MockLightsailAPI)(nil).TestAlarmRequest), arg0)
+}
+
+// TestAlarmWithContext mocks base method
+func (m *MockLightsailAPI) TestAlarmWithContext(arg0 context.Context, arg1 *lightsail.TestAlarmInput, arg2 ...request.Option) (*lightsail.TestAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TestAlarmWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.TestAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestAlarmWithContext indicates an expected call of TestAlarmWithContext
+func (mr *MockLightsailAPIMockRecorder) TestAlarmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestAlarmWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).TestAlarmWithContext), varargs...)
 }
 
 // UnpeerVpc mocks base method
