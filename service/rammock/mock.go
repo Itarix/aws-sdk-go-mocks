@@ -667,6 +667,89 @@ func (mr *MockRAMAPIMockRecorder) GetResourceSharesWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceSharesWithContext", reflect.TypeOf((*MockRAMAPI)(nil).GetResourceSharesWithContext), varargs...)
 }
 
+// ListPendingInvitationResources mocks base method
+func (m *MockRAMAPI) ListPendingInvitationResources(arg0 *ram.ListPendingInvitationResourcesInput) (*ram.ListPendingInvitationResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPendingInvitationResources", arg0)
+	ret0, _ := ret[0].(*ram.ListPendingInvitationResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPendingInvitationResources indicates an expected call of ListPendingInvitationResources
+func (mr *MockRAMAPIMockRecorder) ListPendingInvitationResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPendingInvitationResources", reflect.TypeOf((*MockRAMAPI)(nil).ListPendingInvitationResources), arg0)
+}
+
+// ListPendingInvitationResourcesPages mocks base method
+func (m *MockRAMAPI) ListPendingInvitationResourcesPages(arg0 *ram.ListPendingInvitationResourcesInput, arg1 func(*ram.ListPendingInvitationResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPendingInvitationResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPendingInvitationResourcesPages indicates an expected call of ListPendingInvitationResourcesPages
+func (mr *MockRAMAPIMockRecorder) ListPendingInvitationResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPendingInvitationResourcesPages", reflect.TypeOf((*MockRAMAPI)(nil).ListPendingInvitationResourcesPages), arg0, arg1)
+}
+
+// ListPendingInvitationResourcesPagesWithContext mocks base method
+func (m *MockRAMAPI) ListPendingInvitationResourcesPagesWithContext(arg0 context.Context, arg1 *ram.ListPendingInvitationResourcesInput, arg2 func(*ram.ListPendingInvitationResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPendingInvitationResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPendingInvitationResourcesPagesWithContext indicates an expected call of ListPendingInvitationResourcesPagesWithContext
+func (mr *MockRAMAPIMockRecorder) ListPendingInvitationResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPendingInvitationResourcesPagesWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListPendingInvitationResourcesPagesWithContext), varargs...)
+}
+
+// ListPendingInvitationResourcesRequest mocks base method
+func (m *MockRAMAPI) ListPendingInvitationResourcesRequest(arg0 *ram.ListPendingInvitationResourcesInput) (*request.Request, *ram.ListPendingInvitationResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPendingInvitationResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.ListPendingInvitationResourcesOutput)
+	return ret0, ret1
+}
+
+// ListPendingInvitationResourcesRequest indicates an expected call of ListPendingInvitationResourcesRequest
+func (mr *MockRAMAPIMockRecorder) ListPendingInvitationResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPendingInvitationResourcesRequest", reflect.TypeOf((*MockRAMAPI)(nil).ListPendingInvitationResourcesRequest), arg0)
+}
+
+// ListPendingInvitationResourcesWithContext mocks base method
+func (m *MockRAMAPI) ListPendingInvitationResourcesWithContext(arg0 context.Context, arg1 *ram.ListPendingInvitationResourcesInput, arg2 ...request.Option) (*ram.ListPendingInvitationResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPendingInvitationResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.ListPendingInvitationResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPendingInvitationResourcesWithContext indicates an expected call of ListPendingInvitationResourcesWithContext
+func (mr *MockRAMAPIMockRecorder) ListPendingInvitationResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPendingInvitationResourcesWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListPendingInvitationResourcesWithContext), varargs...)
+}
+
 // ListPrincipals mocks base method
 func (m *MockRAMAPI) ListPrincipals(arg0 *ram.ListPrincipalsInput) (*ram.ListPrincipalsOutput, error) {
 	m.ctrl.T.Helper()
