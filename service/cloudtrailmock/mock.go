@@ -285,6 +285,36 @@ func (mr *MockCloudTrailAPIMockRecorder) GetEventSelectorsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetEventSelectorsWithContext), varargs...)
 }
 
+// GetTrail mocks base method
+func (m *MockCloudTrailAPI) GetTrail(arg0 *cloudtrail.GetTrailInput) (*cloudtrail.GetTrailOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTrail", arg0)
+	ret0, _ := ret[0].(*cloudtrail.GetTrailOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTrail indicates an expected call of GetTrail
+func (mr *MockCloudTrailAPIMockRecorder) GetTrail(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTrail", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetTrail), arg0)
+}
+
+// GetTrailRequest mocks base method
+func (m *MockCloudTrailAPI) GetTrailRequest(arg0 *cloudtrail.GetTrailInput) (*request.Request, *cloudtrail.GetTrailOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTrailRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.GetTrailOutput)
+	return ret0, ret1
+}
+
+// GetTrailRequest indicates an expected call of GetTrailRequest
+func (mr *MockCloudTrailAPIMockRecorder) GetTrailRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTrailRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetTrailRequest), arg0)
+}
+
 // GetTrailStatus mocks base method
 func (m *MockCloudTrailAPI) GetTrailStatus(arg0 *cloudtrail.GetTrailStatusInput) (*cloudtrail.GetTrailStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +365,26 @@ func (mr *MockCloudTrailAPIMockRecorder) GetTrailStatusWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTrailStatusWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetTrailStatusWithContext), varargs...)
 }
 
+// GetTrailWithContext mocks base method
+func (m *MockCloudTrailAPI) GetTrailWithContext(arg0 context.Context, arg1 *cloudtrail.GetTrailInput, arg2 ...request.Option) (*cloudtrail.GetTrailOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTrailWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.GetTrailOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTrailWithContext indicates an expected call of GetTrailWithContext
+func (mr *MockCloudTrailAPIMockRecorder) GetTrailWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTrailWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetTrailWithContext), varargs...)
+}
+
 // ListPublicKeys mocks base method
 func (m *MockCloudTrailAPI) ListPublicKeys(arg0 *cloudtrail.ListPublicKeysInput) (*cloudtrail.ListPublicKeysOutput, error) {
 	m.ctrl.T.Helper()
@@ -348,6 +398,39 @@ func (m *MockCloudTrailAPI) ListPublicKeys(arg0 *cloudtrail.ListPublicKeysInput)
 func (mr *MockCloudTrailAPIMockRecorder) ListPublicKeys(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeys", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListPublicKeys), arg0)
+}
+
+// ListPublicKeysPages mocks base method
+func (m *MockCloudTrailAPI) ListPublicKeysPages(arg0 *cloudtrail.ListPublicKeysInput, arg1 func(*cloudtrail.ListPublicKeysOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublicKeysPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPublicKeysPages indicates an expected call of ListPublicKeysPages
+func (mr *MockCloudTrailAPIMockRecorder) ListPublicKeysPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysPages", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListPublicKeysPages), arg0, arg1)
+}
+
+// ListPublicKeysPagesWithContext mocks base method
+func (m *MockCloudTrailAPI) ListPublicKeysPagesWithContext(arg0 context.Context, arg1 *cloudtrail.ListPublicKeysInput, arg2 func(*cloudtrail.ListPublicKeysOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPublicKeysPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPublicKeysPagesWithContext indicates an expected call of ListPublicKeysPagesWithContext
+func (mr *MockCloudTrailAPIMockRecorder) ListPublicKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysPagesWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListPublicKeysPagesWithContext), varargs...)
 }
 
 // ListPublicKeysRequest mocks base method
@@ -400,6 +483,39 @@ func (mr *MockCloudTrailAPIMockRecorder) ListTags(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTags", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTags), arg0)
 }
 
+// ListTagsPages mocks base method
+func (m *MockCloudTrailAPI) ListTagsPages(arg0 *cloudtrail.ListTagsInput, arg1 func(*cloudtrail.ListTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsPages indicates an expected call of ListTagsPages
+func (mr *MockCloudTrailAPIMockRecorder) ListTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsPages", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTagsPages), arg0, arg1)
+}
+
+// ListTagsPagesWithContext mocks base method
+func (m *MockCloudTrailAPI) ListTagsPagesWithContext(arg0 context.Context, arg1 *cloudtrail.ListTagsInput, arg2 func(*cloudtrail.ListTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsPagesWithContext indicates an expected call of ListTagsPagesWithContext
+func (mr *MockCloudTrailAPIMockRecorder) ListTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsPagesWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTagsPagesWithContext), varargs...)
+}
+
 // ListTagsRequest mocks base method
 func (m *MockCloudTrailAPI) ListTagsRequest(arg0 *cloudtrail.ListTagsInput) (*request.Request, *cloudtrail.ListTagsOutput) {
 	m.ctrl.T.Helper()
@@ -433,6 +549,89 @@ func (mr *MockCloudTrailAPIMockRecorder) ListTagsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTagsWithContext), varargs...)
+}
+
+// ListTrails mocks base method
+func (m *MockCloudTrailAPI) ListTrails(arg0 *cloudtrail.ListTrailsInput) (*cloudtrail.ListTrailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTrails", arg0)
+	ret0, _ := ret[0].(*cloudtrail.ListTrailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTrails indicates an expected call of ListTrails
+func (mr *MockCloudTrailAPIMockRecorder) ListTrails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrails", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTrails), arg0)
+}
+
+// ListTrailsPages mocks base method
+func (m *MockCloudTrailAPI) ListTrailsPages(arg0 *cloudtrail.ListTrailsInput, arg1 func(*cloudtrail.ListTrailsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTrailsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTrailsPages indicates an expected call of ListTrailsPages
+func (mr *MockCloudTrailAPIMockRecorder) ListTrailsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrailsPages", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTrailsPages), arg0, arg1)
+}
+
+// ListTrailsPagesWithContext mocks base method
+func (m *MockCloudTrailAPI) ListTrailsPagesWithContext(arg0 context.Context, arg1 *cloudtrail.ListTrailsInput, arg2 func(*cloudtrail.ListTrailsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTrailsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTrailsPagesWithContext indicates an expected call of ListTrailsPagesWithContext
+func (mr *MockCloudTrailAPIMockRecorder) ListTrailsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrailsPagesWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTrailsPagesWithContext), varargs...)
+}
+
+// ListTrailsRequest mocks base method
+func (m *MockCloudTrailAPI) ListTrailsRequest(arg0 *cloudtrail.ListTrailsInput) (*request.Request, *cloudtrail.ListTrailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTrailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.ListTrailsOutput)
+	return ret0, ret1
+}
+
+// ListTrailsRequest indicates an expected call of ListTrailsRequest
+func (mr *MockCloudTrailAPIMockRecorder) ListTrailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrailsRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTrailsRequest), arg0)
+}
+
+// ListTrailsWithContext mocks base method
+func (m *MockCloudTrailAPI) ListTrailsWithContext(arg0 context.Context, arg1 *cloudtrail.ListTrailsInput, arg2 ...request.Option) (*cloudtrail.ListTrailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTrailsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.ListTrailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTrailsWithContext indicates an expected call of ListTrailsWithContext
+func (mr *MockCloudTrailAPIMockRecorder) ListTrailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrailsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).ListTrailsWithContext), varargs...)
 }
 
 // LookupEvents mocks base method

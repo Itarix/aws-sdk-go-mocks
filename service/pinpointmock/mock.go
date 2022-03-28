@@ -285,6 +285,56 @@ func (mr *MockPinpointAPIMockRecorder) CreateImportJobWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImportJobWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).CreateImportJobWithContext), varargs...)
 }
 
+// CreateJourney mocks base method
+func (m *MockPinpointAPI) CreateJourney(arg0 *pinpoint.CreateJourneyInput) (*pinpoint.CreateJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateJourney", arg0)
+	ret0, _ := ret[0].(*pinpoint.CreateJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateJourney indicates an expected call of CreateJourney
+func (mr *MockPinpointAPIMockRecorder) CreateJourney(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJourney", reflect.TypeOf((*MockPinpointAPI)(nil).CreateJourney), arg0)
+}
+
+// CreateJourneyRequest mocks base method
+func (m *MockPinpointAPI) CreateJourneyRequest(arg0 *pinpoint.CreateJourneyInput) (*request.Request, *pinpoint.CreateJourneyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateJourneyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.CreateJourneyOutput)
+	return ret0, ret1
+}
+
+// CreateJourneyRequest indicates an expected call of CreateJourneyRequest
+func (mr *MockPinpointAPIMockRecorder) CreateJourneyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJourneyRequest", reflect.TypeOf((*MockPinpointAPI)(nil).CreateJourneyRequest), arg0)
+}
+
+// CreateJourneyWithContext mocks base method
+func (m *MockPinpointAPI) CreateJourneyWithContext(arg0 context.Context, arg1 *pinpoint.CreateJourneyInput, arg2 ...request.Option) (*pinpoint.CreateJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateJourneyWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.CreateJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateJourneyWithContext indicates an expected call of CreateJourneyWithContext
+func (mr *MockPinpointAPIMockRecorder) CreateJourneyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJourneyWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).CreateJourneyWithContext), varargs...)
+}
+
 // CreatePushTemplate mocks base method
 func (m *MockPinpointAPI) CreatePushTemplate(arg0 *pinpoint.CreatePushTemplateInput) (*pinpoint.CreatePushTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1133,56 @@ func (mr *MockPinpointAPIMockRecorder) DeleteGcmChannelWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGcmChannelWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteGcmChannelWithContext), varargs...)
+}
+
+// DeleteJourney mocks base method
+func (m *MockPinpointAPI) DeleteJourney(arg0 *pinpoint.DeleteJourneyInput) (*pinpoint.DeleteJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteJourney", arg0)
+	ret0, _ := ret[0].(*pinpoint.DeleteJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteJourney indicates an expected call of DeleteJourney
+func (mr *MockPinpointAPIMockRecorder) DeleteJourney(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJourney", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteJourney), arg0)
+}
+
+// DeleteJourneyRequest mocks base method
+func (m *MockPinpointAPI) DeleteJourneyRequest(arg0 *pinpoint.DeleteJourneyInput) (*request.Request, *pinpoint.DeleteJourneyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteJourneyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.DeleteJourneyOutput)
+	return ret0, ret1
+}
+
+// DeleteJourneyRequest indicates an expected call of DeleteJourneyRequest
+func (mr *MockPinpointAPIMockRecorder) DeleteJourneyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJourneyRequest", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteJourneyRequest), arg0)
+}
+
+// DeleteJourneyWithContext mocks base method
+func (m *MockPinpointAPI) DeleteJourneyWithContext(arg0 context.Context, arg1 *pinpoint.DeleteJourneyInput, arg2 ...request.Option) (*pinpoint.DeleteJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteJourneyWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.DeleteJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteJourneyWithContext indicates an expected call of DeleteJourneyWithContext
+func (mr *MockPinpointAPIMockRecorder) DeleteJourneyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJourneyWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteJourneyWithContext), varargs...)
 }
 
 // DeletePushTemplate mocks base method
@@ -2685,6 +2785,206 @@ func (mr *MockPinpointAPIMockRecorder) GetImportJobsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImportJobsWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetImportJobsWithContext), varargs...)
 }
 
+// GetJourney mocks base method
+func (m *MockPinpointAPI) GetJourney(arg0 *pinpoint.GetJourneyInput) (*pinpoint.GetJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourney", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourney indicates an expected call of GetJourney
+func (mr *MockPinpointAPIMockRecorder) GetJourney(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourney", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourney), arg0)
+}
+
+// GetJourneyDateRangeKpi mocks base method
+func (m *MockPinpointAPI) GetJourneyDateRangeKpi(arg0 *pinpoint.GetJourneyDateRangeKpiInput) (*pinpoint.GetJourneyDateRangeKpiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyDateRangeKpi", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyDateRangeKpiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyDateRangeKpi indicates an expected call of GetJourneyDateRangeKpi
+func (mr *MockPinpointAPIMockRecorder) GetJourneyDateRangeKpi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyDateRangeKpi", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyDateRangeKpi), arg0)
+}
+
+// GetJourneyDateRangeKpiRequest mocks base method
+func (m *MockPinpointAPI) GetJourneyDateRangeKpiRequest(arg0 *pinpoint.GetJourneyDateRangeKpiInput) (*request.Request, *pinpoint.GetJourneyDateRangeKpiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyDateRangeKpiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetJourneyDateRangeKpiOutput)
+	return ret0, ret1
+}
+
+// GetJourneyDateRangeKpiRequest indicates an expected call of GetJourneyDateRangeKpiRequest
+func (mr *MockPinpointAPIMockRecorder) GetJourneyDateRangeKpiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyDateRangeKpiRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyDateRangeKpiRequest), arg0)
+}
+
+// GetJourneyDateRangeKpiWithContext mocks base method
+func (m *MockPinpointAPI) GetJourneyDateRangeKpiWithContext(arg0 context.Context, arg1 *pinpoint.GetJourneyDateRangeKpiInput, arg2 ...request.Option) (*pinpoint.GetJourneyDateRangeKpiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJourneyDateRangeKpiWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyDateRangeKpiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyDateRangeKpiWithContext indicates an expected call of GetJourneyDateRangeKpiWithContext
+func (mr *MockPinpointAPIMockRecorder) GetJourneyDateRangeKpiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyDateRangeKpiWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyDateRangeKpiWithContext), varargs...)
+}
+
+// GetJourneyExecutionActivityMetrics mocks base method
+func (m *MockPinpointAPI) GetJourneyExecutionActivityMetrics(arg0 *pinpoint.GetJourneyExecutionActivityMetricsInput) (*pinpoint.GetJourneyExecutionActivityMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyExecutionActivityMetrics", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyExecutionActivityMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyExecutionActivityMetrics indicates an expected call of GetJourneyExecutionActivityMetrics
+func (mr *MockPinpointAPIMockRecorder) GetJourneyExecutionActivityMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyExecutionActivityMetrics", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyExecutionActivityMetrics), arg0)
+}
+
+// GetJourneyExecutionActivityMetricsRequest mocks base method
+func (m *MockPinpointAPI) GetJourneyExecutionActivityMetricsRequest(arg0 *pinpoint.GetJourneyExecutionActivityMetricsInput) (*request.Request, *pinpoint.GetJourneyExecutionActivityMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyExecutionActivityMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetJourneyExecutionActivityMetricsOutput)
+	return ret0, ret1
+}
+
+// GetJourneyExecutionActivityMetricsRequest indicates an expected call of GetJourneyExecutionActivityMetricsRequest
+func (mr *MockPinpointAPIMockRecorder) GetJourneyExecutionActivityMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyExecutionActivityMetricsRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyExecutionActivityMetricsRequest), arg0)
+}
+
+// GetJourneyExecutionActivityMetricsWithContext mocks base method
+func (m *MockPinpointAPI) GetJourneyExecutionActivityMetricsWithContext(arg0 context.Context, arg1 *pinpoint.GetJourneyExecutionActivityMetricsInput, arg2 ...request.Option) (*pinpoint.GetJourneyExecutionActivityMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJourneyExecutionActivityMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyExecutionActivityMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyExecutionActivityMetricsWithContext indicates an expected call of GetJourneyExecutionActivityMetricsWithContext
+func (mr *MockPinpointAPIMockRecorder) GetJourneyExecutionActivityMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyExecutionActivityMetricsWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyExecutionActivityMetricsWithContext), varargs...)
+}
+
+// GetJourneyExecutionMetrics mocks base method
+func (m *MockPinpointAPI) GetJourneyExecutionMetrics(arg0 *pinpoint.GetJourneyExecutionMetricsInput) (*pinpoint.GetJourneyExecutionMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyExecutionMetrics", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyExecutionMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyExecutionMetrics indicates an expected call of GetJourneyExecutionMetrics
+func (mr *MockPinpointAPIMockRecorder) GetJourneyExecutionMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyExecutionMetrics", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyExecutionMetrics), arg0)
+}
+
+// GetJourneyExecutionMetricsRequest mocks base method
+func (m *MockPinpointAPI) GetJourneyExecutionMetricsRequest(arg0 *pinpoint.GetJourneyExecutionMetricsInput) (*request.Request, *pinpoint.GetJourneyExecutionMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyExecutionMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetJourneyExecutionMetricsOutput)
+	return ret0, ret1
+}
+
+// GetJourneyExecutionMetricsRequest indicates an expected call of GetJourneyExecutionMetricsRequest
+func (mr *MockPinpointAPIMockRecorder) GetJourneyExecutionMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyExecutionMetricsRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyExecutionMetricsRequest), arg0)
+}
+
+// GetJourneyExecutionMetricsWithContext mocks base method
+func (m *MockPinpointAPI) GetJourneyExecutionMetricsWithContext(arg0 context.Context, arg1 *pinpoint.GetJourneyExecutionMetricsInput, arg2 ...request.Option) (*pinpoint.GetJourneyExecutionMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJourneyExecutionMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyExecutionMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyExecutionMetricsWithContext indicates an expected call of GetJourneyExecutionMetricsWithContext
+func (mr *MockPinpointAPIMockRecorder) GetJourneyExecutionMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyExecutionMetricsWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyExecutionMetricsWithContext), varargs...)
+}
+
+// GetJourneyRequest mocks base method
+func (m *MockPinpointAPI) GetJourneyRequest(arg0 *pinpoint.GetJourneyInput) (*request.Request, *pinpoint.GetJourneyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJourneyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetJourneyOutput)
+	return ret0, ret1
+}
+
+// GetJourneyRequest indicates an expected call of GetJourneyRequest
+func (mr *MockPinpointAPIMockRecorder) GetJourneyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyRequest), arg0)
+}
+
+// GetJourneyWithContext mocks base method
+func (m *MockPinpointAPI) GetJourneyWithContext(arg0 context.Context, arg1 *pinpoint.GetJourneyInput, arg2 ...request.Option) (*pinpoint.GetJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJourneyWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJourneyWithContext indicates an expected call of GetJourneyWithContext
+func (mr *MockPinpointAPIMockRecorder) GetJourneyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJourneyWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetJourneyWithContext), varargs...)
+}
+
 // GetPushTemplate mocks base method
 func (m *MockPinpointAPI) GetPushTemplate(arg0 *pinpoint.GetPushTemplateInput) (*pinpoint.GetPushTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -3233,6 +3533,56 @@ func (mr *MockPinpointAPIMockRecorder) GetVoiceChannelWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceChannelWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetVoiceChannelWithContext), varargs...)
+}
+
+// ListJourneys mocks base method
+func (m *MockPinpointAPI) ListJourneys(arg0 *pinpoint.ListJourneysInput) (*pinpoint.ListJourneysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJourneys", arg0)
+	ret0, _ := ret[0].(*pinpoint.ListJourneysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListJourneys indicates an expected call of ListJourneys
+func (mr *MockPinpointAPIMockRecorder) ListJourneys(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJourneys", reflect.TypeOf((*MockPinpointAPI)(nil).ListJourneys), arg0)
+}
+
+// ListJourneysRequest mocks base method
+func (m *MockPinpointAPI) ListJourneysRequest(arg0 *pinpoint.ListJourneysInput) (*request.Request, *pinpoint.ListJourneysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJourneysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.ListJourneysOutput)
+	return ret0, ret1
+}
+
+// ListJourneysRequest indicates an expected call of ListJourneysRequest
+func (mr *MockPinpointAPIMockRecorder) ListJourneysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJourneysRequest", reflect.TypeOf((*MockPinpointAPI)(nil).ListJourneysRequest), arg0)
+}
+
+// ListJourneysWithContext mocks base method
+func (m *MockPinpointAPI) ListJourneysWithContext(arg0 context.Context, arg1 *pinpoint.ListJourneysInput, arg2 ...request.Option) (*pinpoint.ListJourneysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJourneysWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.ListJourneysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListJourneysWithContext indicates an expected call of ListJourneysWithContext
+func (mr *MockPinpointAPIMockRecorder) ListJourneysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJourneysWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).ListJourneysWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -4383,6 +4733,106 @@ func (mr *MockPinpointAPIMockRecorder) UpdateGcmChannelWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGcmChannelWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateGcmChannelWithContext), varargs...)
+}
+
+// UpdateJourney mocks base method
+func (m *MockPinpointAPI) UpdateJourney(arg0 *pinpoint.UpdateJourneyInput) (*pinpoint.UpdateJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJourney", arg0)
+	ret0, _ := ret[0].(*pinpoint.UpdateJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJourney indicates an expected call of UpdateJourney
+func (mr *MockPinpointAPIMockRecorder) UpdateJourney(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJourney", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateJourney), arg0)
+}
+
+// UpdateJourneyRequest mocks base method
+func (m *MockPinpointAPI) UpdateJourneyRequest(arg0 *pinpoint.UpdateJourneyInput) (*request.Request, *pinpoint.UpdateJourneyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJourneyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.UpdateJourneyOutput)
+	return ret0, ret1
+}
+
+// UpdateJourneyRequest indicates an expected call of UpdateJourneyRequest
+func (mr *MockPinpointAPIMockRecorder) UpdateJourneyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJourneyRequest", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateJourneyRequest), arg0)
+}
+
+// UpdateJourneyState mocks base method
+func (m *MockPinpointAPI) UpdateJourneyState(arg0 *pinpoint.UpdateJourneyStateInput) (*pinpoint.UpdateJourneyStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJourneyState", arg0)
+	ret0, _ := ret[0].(*pinpoint.UpdateJourneyStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJourneyState indicates an expected call of UpdateJourneyState
+func (mr *MockPinpointAPIMockRecorder) UpdateJourneyState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJourneyState", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateJourneyState), arg0)
+}
+
+// UpdateJourneyStateRequest mocks base method
+func (m *MockPinpointAPI) UpdateJourneyStateRequest(arg0 *pinpoint.UpdateJourneyStateInput) (*request.Request, *pinpoint.UpdateJourneyStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJourneyStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.UpdateJourneyStateOutput)
+	return ret0, ret1
+}
+
+// UpdateJourneyStateRequest indicates an expected call of UpdateJourneyStateRequest
+func (mr *MockPinpointAPIMockRecorder) UpdateJourneyStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJourneyStateRequest", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateJourneyStateRequest), arg0)
+}
+
+// UpdateJourneyStateWithContext mocks base method
+func (m *MockPinpointAPI) UpdateJourneyStateWithContext(arg0 context.Context, arg1 *pinpoint.UpdateJourneyStateInput, arg2 ...request.Option) (*pinpoint.UpdateJourneyStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateJourneyStateWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.UpdateJourneyStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJourneyStateWithContext indicates an expected call of UpdateJourneyStateWithContext
+func (mr *MockPinpointAPIMockRecorder) UpdateJourneyStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJourneyStateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateJourneyStateWithContext), varargs...)
+}
+
+// UpdateJourneyWithContext mocks base method
+func (m *MockPinpointAPI) UpdateJourneyWithContext(arg0 context.Context, arg1 *pinpoint.UpdateJourneyInput, arg2 ...request.Option) (*pinpoint.UpdateJourneyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateJourneyWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.UpdateJourneyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJourneyWithContext indicates an expected call of UpdateJourneyWithContext
+func (mr *MockPinpointAPIMockRecorder) UpdateJourneyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJourneyWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateJourneyWithContext), varargs...)
 }
 
 // UpdatePushTemplate mocks base method
