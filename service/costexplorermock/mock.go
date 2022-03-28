@@ -384,3 +384,53 @@ func (mr *MockCostExplorerAPIMockRecorder) GetTagsWithContext(arg0, arg1 interfa
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetTagsWithContext), varargs...)
 }
+
+// GetUsageForecast mocks base method
+func (m *MockCostExplorerAPI) GetUsageForecast(arg0 *costexplorer.GetUsageForecastInput) (*costexplorer.GetUsageForecastOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUsageForecast", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetUsageForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUsageForecast indicates an expected call of GetUsageForecast
+func (mr *MockCostExplorerAPIMockRecorder) GetUsageForecast(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageForecast", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetUsageForecast), arg0)
+}
+
+// GetUsageForecastRequest mocks base method
+func (m *MockCostExplorerAPI) GetUsageForecastRequest(arg0 *costexplorer.GetUsageForecastInput) (*request.Request, *costexplorer.GetUsageForecastOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUsageForecastRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetUsageForecastOutput)
+	return ret0, ret1
+}
+
+// GetUsageForecastRequest indicates an expected call of GetUsageForecastRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetUsageForecastRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageForecastRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetUsageForecastRequest), arg0)
+}
+
+// GetUsageForecastWithContext mocks base method
+func (m *MockCostExplorerAPI) GetUsageForecastWithContext(arg0 context.Context, arg1 *costexplorer.GetUsageForecastInput, arg2 ...request.Option) (*costexplorer.GetUsageForecastOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUsageForecastWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetUsageForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUsageForecastWithContext indicates an expected call of GetUsageForecastWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetUsageForecastWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageForecastWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetUsageForecastWithContext), varargs...)
+}
