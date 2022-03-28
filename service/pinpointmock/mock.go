@@ -385,6 +385,56 @@ func (mr *MockPinpointAPIMockRecorder) CreatePushTemplateWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePushTemplateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).CreatePushTemplateWithContext), varargs...)
 }
 
+// CreateRecommenderConfiguration mocks base method
+func (m *MockPinpointAPI) CreateRecommenderConfiguration(arg0 *pinpoint.CreateRecommenderConfigurationInput) (*pinpoint.CreateRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRecommenderConfiguration", arg0)
+	ret0, _ := ret[0].(*pinpoint.CreateRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRecommenderConfiguration indicates an expected call of CreateRecommenderConfiguration
+func (mr *MockPinpointAPIMockRecorder) CreateRecommenderConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecommenderConfiguration", reflect.TypeOf((*MockPinpointAPI)(nil).CreateRecommenderConfiguration), arg0)
+}
+
+// CreateRecommenderConfigurationRequest mocks base method
+func (m *MockPinpointAPI) CreateRecommenderConfigurationRequest(arg0 *pinpoint.CreateRecommenderConfigurationInput) (*request.Request, *pinpoint.CreateRecommenderConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRecommenderConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.CreateRecommenderConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateRecommenderConfigurationRequest indicates an expected call of CreateRecommenderConfigurationRequest
+func (mr *MockPinpointAPIMockRecorder) CreateRecommenderConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecommenderConfigurationRequest", reflect.TypeOf((*MockPinpointAPI)(nil).CreateRecommenderConfigurationRequest), arg0)
+}
+
+// CreateRecommenderConfigurationWithContext mocks base method
+func (m *MockPinpointAPI) CreateRecommenderConfigurationWithContext(arg0 context.Context, arg1 *pinpoint.CreateRecommenderConfigurationInput, arg2 ...request.Option) (*pinpoint.CreateRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRecommenderConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.CreateRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRecommenderConfigurationWithContext indicates an expected call of CreateRecommenderConfigurationWithContext
+func (mr *MockPinpointAPIMockRecorder) CreateRecommenderConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecommenderConfigurationWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).CreateRecommenderConfigurationWithContext), varargs...)
+}
+
 // CreateSegment mocks base method
 func (m *MockPinpointAPI) CreateSegment(arg0 *pinpoint.CreateSegmentInput) (*pinpoint.CreateSegmentOutput, error) {
 	m.ctrl.T.Helper()
@@ -1283,6 +1333,56 @@ func (mr *MockPinpointAPIMockRecorder) DeletePushTemplateWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePushTemplateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).DeletePushTemplateWithContext), varargs...)
+}
+
+// DeleteRecommenderConfiguration mocks base method
+func (m *MockPinpointAPI) DeleteRecommenderConfiguration(arg0 *pinpoint.DeleteRecommenderConfigurationInput) (*pinpoint.DeleteRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRecommenderConfiguration", arg0)
+	ret0, _ := ret[0].(*pinpoint.DeleteRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRecommenderConfiguration indicates an expected call of DeleteRecommenderConfiguration
+func (mr *MockPinpointAPIMockRecorder) DeleteRecommenderConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecommenderConfiguration", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteRecommenderConfiguration), arg0)
+}
+
+// DeleteRecommenderConfigurationRequest mocks base method
+func (m *MockPinpointAPI) DeleteRecommenderConfigurationRequest(arg0 *pinpoint.DeleteRecommenderConfigurationInput) (*request.Request, *pinpoint.DeleteRecommenderConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRecommenderConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.DeleteRecommenderConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteRecommenderConfigurationRequest indicates an expected call of DeleteRecommenderConfigurationRequest
+func (mr *MockPinpointAPIMockRecorder) DeleteRecommenderConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecommenderConfigurationRequest", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteRecommenderConfigurationRequest), arg0)
+}
+
+// DeleteRecommenderConfigurationWithContext mocks base method
+func (m *MockPinpointAPI) DeleteRecommenderConfigurationWithContext(arg0 context.Context, arg1 *pinpoint.DeleteRecommenderConfigurationInput, arg2 ...request.Option) (*pinpoint.DeleteRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRecommenderConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.DeleteRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRecommenderConfigurationWithContext indicates an expected call of DeleteRecommenderConfigurationWithContext
+func (mr *MockPinpointAPIMockRecorder) DeleteRecommenderConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecommenderConfigurationWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).DeleteRecommenderConfigurationWithContext), varargs...)
 }
 
 // DeleteSegment mocks base method
@@ -3133,6 +3233,106 @@ func (mr *MockPinpointAPIMockRecorder) GetPushTemplateWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPushTemplateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetPushTemplateWithContext), varargs...)
+}
+
+// GetRecommenderConfiguration mocks base method
+func (m *MockPinpointAPI) GetRecommenderConfiguration(arg0 *pinpoint.GetRecommenderConfigurationInput) (*pinpoint.GetRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRecommenderConfiguration", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRecommenderConfiguration indicates an expected call of GetRecommenderConfiguration
+func (mr *MockPinpointAPIMockRecorder) GetRecommenderConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecommenderConfiguration", reflect.TypeOf((*MockPinpointAPI)(nil).GetRecommenderConfiguration), arg0)
+}
+
+// GetRecommenderConfigurationRequest mocks base method
+func (m *MockPinpointAPI) GetRecommenderConfigurationRequest(arg0 *pinpoint.GetRecommenderConfigurationInput) (*request.Request, *pinpoint.GetRecommenderConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRecommenderConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetRecommenderConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetRecommenderConfigurationRequest indicates an expected call of GetRecommenderConfigurationRequest
+func (mr *MockPinpointAPIMockRecorder) GetRecommenderConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecommenderConfigurationRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetRecommenderConfigurationRequest), arg0)
+}
+
+// GetRecommenderConfigurationWithContext mocks base method
+func (m *MockPinpointAPI) GetRecommenderConfigurationWithContext(arg0 context.Context, arg1 *pinpoint.GetRecommenderConfigurationInput, arg2 ...request.Option) (*pinpoint.GetRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRecommenderConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRecommenderConfigurationWithContext indicates an expected call of GetRecommenderConfigurationWithContext
+func (mr *MockPinpointAPIMockRecorder) GetRecommenderConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecommenderConfigurationWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetRecommenderConfigurationWithContext), varargs...)
+}
+
+// GetRecommenderConfigurations mocks base method
+func (m *MockPinpointAPI) GetRecommenderConfigurations(arg0 *pinpoint.GetRecommenderConfigurationsInput) (*pinpoint.GetRecommenderConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRecommenderConfigurations", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetRecommenderConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRecommenderConfigurations indicates an expected call of GetRecommenderConfigurations
+func (mr *MockPinpointAPIMockRecorder) GetRecommenderConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecommenderConfigurations", reflect.TypeOf((*MockPinpointAPI)(nil).GetRecommenderConfigurations), arg0)
+}
+
+// GetRecommenderConfigurationsRequest mocks base method
+func (m *MockPinpointAPI) GetRecommenderConfigurationsRequest(arg0 *pinpoint.GetRecommenderConfigurationsInput) (*request.Request, *pinpoint.GetRecommenderConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRecommenderConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetRecommenderConfigurationsOutput)
+	return ret0, ret1
+}
+
+// GetRecommenderConfigurationsRequest indicates an expected call of GetRecommenderConfigurationsRequest
+func (mr *MockPinpointAPIMockRecorder) GetRecommenderConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecommenderConfigurationsRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetRecommenderConfigurationsRequest), arg0)
+}
+
+// GetRecommenderConfigurationsWithContext mocks base method
+func (m *MockPinpointAPI) GetRecommenderConfigurationsWithContext(arg0 context.Context, arg1 *pinpoint.GetRecommenderConfigurationsInput, arg2 ...request.Option) (*pinpoint.GetRecommenderConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRecommenderConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetRecommenderConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRecommenderConfigurationsWithContext indicates an expected call of GetRecommenderConfigurationsWithContext
+func (mr *MockPinpointAPIMockRecorder) GetRecommenderConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecommenderConfigurationsWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetRecommenderConfigurationsWithContext), varargs...)
 }
 
 // GetSegment mocks base method
@@ -5083,6 +5283,56 @@ func (mr *MockPinpointAPIMockRecorder) UpdatePushTemplateWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePushTemplateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdatePushTemplateWithContext), varargs...)
+}
+
+// UpdateRecommenderConfiguration mocks base method
+func (m *MockPinpointAPI) UpdateRecommenderConfiguration(arg0 *pinpoint.UpdateRecommenderConfigurationInput) (*pinpoint.UpdateRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRecommenderConfiguration", arg0)
+	ret0, _ := ret[0].(*pinpoint.UpdateRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRecommenderConfiguration indicates an expected call of UpdateRecommenderConfiguration
+func (mr *MockPinpointAPIMockRecorder) UpdateRecommenderConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecommenderConfiguration", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateRecommenderConfiguration), arg0)
+}
+
+// UpdateRecommenderConfigurationRequest mocks base method
+func (m *MockPinpointAPI) UpdateRecommenderConfigurationRequest(arg0 *pinpoint.UpdateRecommenderConfigurationInput) (*request.Request, *pinpoint.UpdateRecommenderConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRecommenderConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.UpdateRecommenderConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateRecommenderConfigurationRequest indicates an expected call of UpdateRecommenderConfigurationRequest
+func (mr *MockPinpointAPIMockRecorder) UpdateRecommenderConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecommenderConfigurationRequest", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateRecommenderConfigurationRequest), arg0)
+}
+
+// UpdateRecommenderConfigurationWithContext mocks base method
+func (m *MockPinpointAPI) UpdateRecommenderConfigurationWithContext(arg0 context.Context, arg1 *pinpoint.UpdateRecommenderConfigurationInput, arg2 ...request.Option) (*pinpoint.UpdateRecommenderConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRecommenderConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.UpdateRecommenderConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRecommenderConfigurationWithContext indicates an expected call of UpdateRecommenderConfigurationWithContext
+func (mr *MockPinpointAPIMockRecorder) UpdateRecommenderConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecommenderConfigurationWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateRecommenderConfigurationWithContext), varargs...)
 }
 
 // UpdateSegment mocks base method
