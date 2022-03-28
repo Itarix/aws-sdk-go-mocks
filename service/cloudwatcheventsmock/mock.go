@@ -35,6 +35,306 @@ func (m *MockCloudWatchEventsAPI) EXPECT() *MockCloudWatchEventsAPIMockRecorder 
 	return m.recorder
 }
 
+// ActivateEventSource mocks base method
+func (m *MockCloudWatchEventsAPI) ActivateEventSource(arg0 *cloudwatchevents.ActivateEventSourceInput) (*cloudwatchevents.ActivateEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ActivateEventSource", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ActivateEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ActivateEventSource indicates an expected call of ActivateEventSource
+func (mr *MockCloudWatchEventsAPIMockRecorder) ActivateEventSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEventSource", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ActivateEventSource), arg0)
+}
+
+// ActivateEventSourceRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ActivateEventSourceRequest(arg0 *cloudwatchevents.ActivateEventSourceInput) (*request.Request, *cloudwatchevents.ActivateEventSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ActivateEventSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ActivateEventSourceOutput)
+	return ret0, ret1
+}
+
+// ActivateEventSourceRequest indicates an expected call of ActivateEventSourceRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ActivateEventSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEventSourceRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ActivateEventSourceRequest), arg0)
+}
+
+// ActivateEventSourceWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ActivateEventSourceWithContext(arg0 context.Context, arg1 *cloudwatchevents.ActivateEventSourceInput, arg2 ...request.Option) (*cloudwatchevents.ActivateEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ActivateEventSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ActivateEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ActivateEventSourceWithContext indicates an expected call of ActivateEventSourceWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ActivateEventSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ActivateEventSourceWithContext), varargs...)
+}
+
+// CreateEventBus mocks base method
+func (m *MockCloudWatchEventsAPI) CreateEventBus(arg0 *cloudwatchevents.CreateEventBusInput) (*cloudwatchevents.CreateEventBusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEventBus", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.CreateEventBusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEventBus indicates an expected call of CreateEventBus
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateEventBus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventBus", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateEventBus), arg0)
+}
+
+// CreateEventBusRequest mocks base method
+func (m *MockCloudWatchEventsAPI) CreateEventBusRequest(arg0 *cloudwatchevents.CreateEventBusInput) (*request.Request, *cloudwatchevents.CreateEventBusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEventBusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.CreateEventBusOutput)
+	return ret0, ret1
+}
+
+// CreateEventBusRequest indicates an expected call of CreateEventBusRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateEventBusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventBusRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateEventBusRequest), arg0)
+}
+
+// CreateEventBusWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) CreateEventBusWithContext(arg0 context.Context, arg1 *cloudwatchevents.CreateEventBusInput, arg2 ...request.Option) (*cloudwatchevents.CreateEventBusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEventBusWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.CreateEventBusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEventBusWithContext indicates an expected call of CreateEventBusWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateEventBusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventBusWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateEventBusWithContext), varargs...)
+}
+
+// CreatePartnerEventSource mocks base method
+func (m *MockCloudWatchEventsAPI) CreatePartnerEventSource(arg0 *cloudwatchevents.CreatePartnerEventSourceInput) (*cloudwatchevents.CreatePartnerEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePartnerEventSource", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.CreatePartnerEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePartnerEventSource indicates an expected call of CreatePartnerEventSource
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreatePartnerEventSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartnerEventSource", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreatePartnerEventSource), arg0)
+}
+
+// CreatePartnerEventSourceRequest mocks base method
+func (m *MockCloudWatchEventsAPI) CreatePartnerEventSourceRequest(arg0 *cloudwatchevents.CreatePartnerEventSourceInput) (*request.Request, *cloudwatchevents.CreatePartnerEventSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePartnerEventSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.CreatePartnerEventSourceOutput)
+	return ret0, ret1
+}
+
+// CreatePartnerEventSourceRequest indicates an expected call of CreatePartnerEventSourceRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreatePartnerEventSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartnerEventSourceRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreatePartnerEventSourceRequest), arg0)
+}
+
+// CreatePartnerEventSourceWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) CreatePartnerEventSourceWithContext(arg0 context.Context, arg1 *cloudwatchevents.CreatePartnerEventSourceInput, arg2 ...request.Option) (*cloudwatchevents.CreatePartnerEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePartnerEventSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.CreatePartnerEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePartnerEventSourceWithContext indicates an expected call of CreatePartnerEventSourceWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreatePartnerEventSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartnerEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreatePartnerEventSourceWithContext), varargs...)
+}
+
+// DeactivateEventSource mocks base method
+func (m *MockCloudWatchEventsAPI) DeactivateEventSource(arg0 *cloudwatchevents.DeactivateEventSourceInput) (*cloudwatchevents.DeactivateEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateEventSource", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DeactivateEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateEventSource indicates an expected call of DeactivateEventSource
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeactivateEventSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEventSource", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeactivateEventSource), arg0)
+}
+
+// DeactivateEventSourceRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DeactivateEventSourceRequest(arg0 *cloudwatchevents.DeactivateEventSourceInput) (*request.Request, *cloudwatchevents.DeactivateEventSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateEventSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DeactivateEventSourceOutput)
+	return ret0, ret1
+}
+
+// DeactivateEventSourceRequest indicates an expected call of DeactivateEventSourceRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeactivateEventSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEventSourceRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeactivateEventSourceRequest), arg0)
+}
+
+// DeactivateEventSourceWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DeactivateEventSourceWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeactivateEventSourceInput, arg2 ...request.Option) (*cloudwatchevents.DeactivateEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeactivateEventSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DeactivateEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateEventSourceWithContext indicates an expected call of DeactivateEventSourceWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeactivateEventSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeactivateEventSourceWithContext), varargs...)
+}
+
+// DeleteEventBus mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteEventBus(arg0 *cloudwatchevents.DeleteEventBusInput) (*cloudwatchevents.DeleteEventBusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEventBus", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DeleteEventBusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEventBus indicates an expected call of DeleteEventBus
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteEventBus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventBus", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteEventBus), arg0)
+}
+
+// DeleteEventBusRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteEventBusRequest(arg0 *cloudwatchevents.DeleteEventBusInput) (*request.Request, *cloudwatchevents.DeleteEventBusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEventBusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DeleteEventBusOutput)
+	return ret0, ret1
+}
+
+// DeleteEventBusRequest indicates an expected call of DeleteEventBusRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteEventBusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventBusRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteEventBusRequest), arg0)
+}
+
+// DeleteEventBusWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteEventBusWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeleteEventBusInput, arg2 ...request.Option) (*cloudwatchevents.DeleteEventBusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEventBusWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DeleteEventBusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEventBusWithContext indicates an expected call of DeleteEventBusWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteEventBusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventBusWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteEventBusWithContext), varargs...)
+}
+
+// DeletePartnerEventSource mocks base method
+func (m *MockCloudWatchEventsAPI) DeletePartnerEventSource(arg0 *cloudwatchevents.DeletePartnerEventSourceInput) (*cloudwatchevents.DeletePartnerEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePartnerEventSource", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DeletePartnerEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePartnerEventSource indicates an expected call of DeletePartnerEventSource
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeletePartnerEventSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartnerEventSource", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeletePartnerEventSource), arg0)
+}
+
+// DeletePartnerEventSourceRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DeletePartnerEventSourceRequest(arg0 *cloudwatchevents.DeletePartnerEventSourceInput) (*request.Request, *cloudwatchevents.DeletePartnerEventSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePartnerEventSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DeletePartnerEventSourceOutput)
+	return ret0, ret1
+}
+
+// DeletePartnerEventSourceRequest indicates an expected call of DeletePartnerEventSourceRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeletePartnerEventSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartnerEventSourceRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeletePartnerEventSourceRequest), arg0)
+}
+
+// DeletePartnerEventSourceWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DeletePartnerEventSourceWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeletePartnerEventSourceInput, arg2 ...request.Option) (*cloudwatchevents.DeletePartnerEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePartnerEventSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DeletePartnerEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePartnerEventSourceWithContext indicates an expected call of DeletePartnerEventSourceWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeletePartnerEventSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartnerEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeletePartnerEventSourceWithContext), varargs...)
+}
+
 // DeleteRule mocks base method
 func (m *MockCloudWatchEventsAPI) DeleteRule(arg0 *cloudwatchevents.DeleteRuleInput) (*cloudwatchevents.DeleteRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +433,106 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeEventBusWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventBusWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeEventBusWithContext), varargs...)
+}
+
+// DescribeEventSource mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeEventSource(arg0 *cloudwatchevents.DescribeEventSourceInput) (*cloudwatchevents.DescribeEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventSource", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribeEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventSource indicates an expected call of DescribeEventSource
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeEventSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventSource", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeEventSource), arg0)
+}
+
+// DescribeEventSourceRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeEventSourceRequest(arg0 *cloudwatchevents.DescribeEventSourceInput) (*request.Request, *cloudwatchevents.DescribeEventSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DescribeEventSourceOutput)
+	return ret0, ret1
+}
+
+// DescribeEventSourceRequest indicates an expected call of DescribeEventSourceRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeEventSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventSourceRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeEventSourceRequest), arg0)
+}
+
+// DescribeEventSourceWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeEventSourceWithContext(arg0 context.Context, arg1 *cloudwatchevents.DescribeEventSourceInput, arg2 ...request.Option) (*cloudwatchevents.DescribeEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribeEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventSourceWithContext indicates an expected call of DescribeEventSourceWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeEventSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeEventSourceWithContext), varargs...)
+}
+
+// DescribePartnerEventSource mocks base method
+func (m *MockCloudWatchEventsAPI) DescribePartnerEventSource(arg0 *cloudwatchevents.DescribePartnerEventSourceInput) (*cloudwatchevents.DescribePartnerEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePartnerEventSource", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribePartnerEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePartnerEventSource indicates an expected call of DescribePartnerEventSource
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribePartnerEventSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePartnerEventSource", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribePartnerEventSource), arg0)
+}
+
+// DescribePartnerEventSourceRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DescribePartnerEventSourceRequest(arg0 *cloudwatchevents.DescribePartnerEventSourceInput) (*request.Request, *cloudwatchevents.DescribePartnerEventSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePartnerEventSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DescribePartnerEventSourceOutput)
+	return ret0, ret1
+}
+
+// DescribePartnerEventSourceRequest indicates an expected call of DescribePartnerEventSourceRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribePartnerEventSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePartnerEventSourceRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribePartnerEventSourceRequest), arg0)
+}
+
+// DescribePartnerEventSourceWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DescribePartnerEventSourceWithContext(arg0 context.Context, arg1 *cloudwatchevents.DescribePartnerEventSourceInput, arg2 ...request.Option) (*cloudwatchevents.DescribePartnerEventSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePartnerEventSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribePartnerEventSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePartnerEventSourceWithContext indicates an expected call of DescribePartnerEventSourceWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribePartnerEventSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePartnerEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribePartnerEventSourceWithContext), varargs...)
 }
 
 // DescribeRule mocks base method
@@ -283,6 +683,206 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) EnableRuleWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableRuleWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).EnableRuleWithContext), varargs...)
+}
+
+// ListEventBuses mocks base method
+func (m *MockCloudWatchEventsAPI) ListEventBuses(arg0 *cloudwatchevents.ListEventBusesInput) (*cloudwatchevents.ListEventBusesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventBuses", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ListEventBusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventBuses indicates an expected call of ListEventBuses
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListEventBuses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventBuses", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListEventBuses), arg0)
+}
+
+// ListEventBusesRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ListEventBusesRequest(arg0 *cloudwatchevents.ListEventBusesInput) (*request.Request, *cloudwatchevents.ListEventBusesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventBusesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ListEventBusesOutput)
+	return ret0, ret1
+}
+
+// ListEventBusesRequest indicates an expected call of ListEventBusesRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListEventBusesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventBusesRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListEventBusesRequest), arg0)
+}
+
+// ListEventBusesWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ListEventBusesWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListEventBusesInput, arg2 ...request.Option) (*cloudwatchevents.ListEventBusesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEventBusesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ListEventBusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventBusesWithContext indicates an expected call of ListEventBusesWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListEventBusesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventBusesWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListEventBusesWithContext), varargs...)
+}
+
+// ListEventSources mocks base method
+func (m *MockCloudWatchEventsAPI) ListEventSources(arg0 *cloudwatchevents.ListEventSourcesInput) (*cloudwatchevents.ListEventSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventSources", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ListEventSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventSources indicates an expected call of ListEventSources
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListEventSources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSources", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListEventSources), arg0)
+}
+
+// ListEventSourcesRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ListEventSourcesRequest(arg0 *cloudwatchevents.ListEventSourcesInput) (*request.Request, *cloudwatchevents.ListEventSourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventSourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ListEventSourcesOutput)
+	return ret0, ret1
+}
+
+// ListEventSourcesRequest indicates an expected call of ListEventSourcesRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListEventSourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourcesRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListEventSourcesRequest), arg0)
+}
+
+// ListEventSourcesWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ListEventSourcesWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListEventSourcesInput, arg2 ...request.Option) (*cloudwatchevents.ListEventSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEventSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ListEventSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventSourcesWithContext indicates an expected call of ListEventSourcesWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListEventSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourcesWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListEventSourcesWithContext), varargs...)
+}
+
+// ListPartnerEventSourceAccounts mocks base method
+func (m *MockCloudWatchEventsAPI) ListPartnerEventSourceAccounts(arg0 *cloudwatchevents.ListPartnerEventSourceAccountsInput) (*cloudwatchevents.ListPartnerEventSourceAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPartnerEventSourceAccounts", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ListPartnerEventSourceAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPartnerEventSourceAccounts indicates an expected call of ListPartnerEventSourceAccounts
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListPartnerEventSourceAccounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSourceAccounts", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListPartnerEventSourceAccounts), arg0)
+}
+
+// ListPartnerEventSourceAccountsRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ListPartnerEventSourceAccountsRequest(arg0 *cloudwatchevents.ListPartnerEventSourceAccountsInput) (*request.Request, *cloudwatchevents.ListPartnerEventSourceAccountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPartnerEventSourceAccountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ListPartnerEventSourceAccountsOutput)
+	return ret0, ret1
+}
+
+// ListPartnerEventSourceAccountsRequest indicates an expected call of ListPartnerEventSourceAccountsRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListPartnerEventSourceAccountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSourceAccountsRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListPartnerEventSourceAccountsRequest), arg0)
+}
+
+// ListPartnerEventSourceAccountsWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ListPartnerEventSourceAccountsWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListPartnerEventSourceAccountsInput, arg2 ...request.Option) (*cloudwatchevents.ListPartnerEventSourceAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPartnerEventSourceAccountsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ListPartnerEventSourceAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPartnerEventSourceAccountsWithContext indicates an expected call of ListPartnerEventSourceAccountsWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListPartnerEventSourceAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSourceAccountsWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListPartnerEventSourceAccountsWithContext), varargs...)
+}
+
+// ListPartnerEventSources mocks base method
+func (m *MockCloudWatchEventsAPI) ListPartnerEventSources(arg0 *cloudwatchevents.ListPartnerEventSourcesInput) (*cloudwatchevents.ListPartnerEventSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPartnerEventSources", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ListPartnerEventSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPartnerEventSources indicates an expected call of ListPartnerEventSources
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListPartnerEventSources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSources", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListPartnerEventSources), arg0)
+}
+
+// ListPartnerEventSourcesRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ListPartnerEventSourcesRequest(arg0 *cloudwatchevents.ListPartnerEventSourcesInput) (*request.Request, *cloudwatchevents.ListPartnerEventSourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPartnerEventSourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ListPartnerEventSourcesOutput)
+	return ret0, ret1
+}
+
+// ListPartnerEventSourcesRequest indicates an expected call of ListPartnerEventSourcesRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListPartnerEventSourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSourcesRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListPartnerEventSourcesRequest), arg0)
+}
+
+// ListPartnerEventSourcesWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ListPartnerEventSourcesWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListPartnerEventSourcesInput, arg2 ...request.Option) (*cloudwatchevents.ListPartnerEventSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPartnerEventSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ListPartnerEventSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPartnerEventSourcesWithContext indicates an expected call of ListPartnerEventSourcesWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListPartnerEventSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSourcesWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListPartnerEventSourcesWithContext), varargs...)
 }
 
 // ListRuleNamesByTarget mocks base method
@@ -533,6 +1133,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) PutEventsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEventsWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).PutEventsWithContext), varargs...)
+}
+
+// PutPartnerEvents mocks base method
+func (m *MockCloudWatchEventsAPI) PutPartnerEvents(arg0 *cloudwatchevents.PutPartnerEventsInput) (*cloudwatchevents.PutPartnerEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPartnerEvents", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.PutPartnerEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPartnerEvents indicates an expected call of PutPartnerEvents
+func (mr *MockCloudWatchEventsAPIMockRecorder) PutPartnerEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPartnerEvents", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).PutPartnerEvents), arg0)
+}
+
+// PutPartnerEventsRequest mocks base method
+func (m *MockCloudWatchEventsAPI) PutPartnerEventsRequest(arg0 *cloudwatchevents.PutPartnerEventsInput) (*request.Request, *cloudwatchevents.PutPartnerEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPartnerEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.PutPartnerEventsOutput)
+	return ret0, ret1
+}
+
+// PutPartnerEventsRequest indicates an expected call of PutPartnerEventsRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) PutPartnerEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPartnerEventsRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).PutPartnerEventsRequest), arg0)
+}
+
+// PutPartnerEventsWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) PutPartnerEventsWithContext(arg0 context.Context, arg1 *cloudwatchevents.PutPartnerEventsInput, arg2 ...request.Option) (*cloudwatchevents.PutPartnerEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPartnerEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.PutPartnerEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPartnerEventsWithContext indicates an expected call of PutPartnerEventsWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) PutPartnerEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPartnerEventsWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).PutPartnerEventsWithContext), varargs...)
 }
 
 // PutPermission mocks base method
