@@ -150,6 +150,56 @@ func (mr *MockRoboMakerAPIMockRecorder) CancelSimulationJob(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSimulationJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelSimulationJob), arg0)
 }
 
+// CancelSimulationJobBatch mocks base method
+func (m *MockRoboMakerAPI) CancelSimulationJobBatch(arg0 *robomaker.CancelSimulationJobBatchInput) (*robomaker.CancelSimulationJobBatchOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelSimulationJobBatch", arg0)
+	ret0, _ := ret[0].(*robomaker.CancelSimulationJobBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelSimulationJobBatch indicates an expected call of CancelSimulationJobBatch
+func (mr *MockRoboMakerAPIMockRecorder) CancelSimulationJobBatch(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSimulationJobBatch", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelSimulationJobBatch), arg0)
+}
+
+// CancelSimulationJobBatchRequest mocks base method
+func (m *MockRoboMakerAPI) CancelSimulationJobBatchRequest(arg0 *robomaker.CancelSimulationJobBatchInput) (*request.Request, *robomaker.CancelSimulationJobBatchOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelSimulationJobBatchRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.CancelSimulationJobBatchOutput)
+	return ret0, ret1
+}
+
+// CancelSimulationJobBatchRequest indicates an expected call of CancelSimulationJobBatchRequest
+func (mr *MockRoboMakerAPIMockRecorder) CancelSimulationJobBatchRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSimulationJobBatchRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelSimulationJobBatchRequest), arg0)
+}
+
+// CancelSimulationJobBatchWithContext mocks base method
+func (m *MockRoboMakerAPI) CancelSimulationJobBatchWithContext(arg0 context.Context, arg1 *robomaker.CancelSimulationJobBatchInput, arg2 ...request.Option) (*robomaker.CancelSimulationJobBatchOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelSimulationJobBatchWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.CancelSimulationJobBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelSimulationJobBatchWithContext indicates an expected call of CancelSimulationJobBatchWithContext
+func (mr *MockRoboMakerAPIMockRecorder) CancelSimulationJobBatchWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSimulationJobBatchWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelSimulationJobBatchWithContext), varargs...)
+}
+
 // CancelSimulationJobRequest mocks base method
 func (m *MockRoboMakerAPI) CancelSimulationJobRequest(arg0 *robomaker.CancelSimulationJobInput) (*request.Request, *robomaker.CancelSimulationJobOutput) {
 	m.ctrl.T.Helper()
@@ -1100,6 +1150,56 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationJob(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSimulationJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeSimulationJob), arg0)
 }
 
+// DescribeSimulationJobBatch mocks base method
+func (m *MockRoboMakerAPI) DescribeSimulationJobBatch(arg0 *robomaker.DescribeSimulationJobBatchInput) (*robomaker.DescribeSimulationJobBatchOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSimulationJobBatch", arg0)
+	ret0, _ := ret[0].(*robomaker.DescribeSimulationJobBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSimulationJobBatch indicates an expected call of DescribeSimulationJobBatch
+func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationJobBatch(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSimulationJobBatch", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeSimulationJobBatch), arg0)
+}
+
+// DescribeSimulationJobBatchRequest mocks base method
+func (m *MockRoboMakerAPI) DescribeSimulationJobBatchRequest(arg0 *robomaker.DescribeSimulationJobBatchInput) (*request.Request, *robomaker.DescribeSimulationJobBatchOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSimulationJobBatchRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.DescribeSimulationJobBatchOutput)
+	return ret0, ret1
+}
+
+// DescribeSimulationJobBatchRequest indicates an expected call of DescribeSimulationJobBatchRequest
+func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationJobBatchRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSimulationJobBatchRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeSimulationJobBatchRequest), arg0)
+}
+
+// DescribeSimulationJobBatchWithContext mocks base method
+func (m *MockRoboMakerAPI) DescribeSimulationJobBatchWithContext(arg0 context.Context, arg1 *robomaker.DescribeSimulationJobBatchInput, arg2 ...request.Option) (*robomaker.DescribeSimulationJobBatchOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSimulationJobBatchWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.DescribeSimulationJobBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSimulationJobBatchWithContext indicates an expected call of DescribeSimulationJobBatchWithContext
+func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationJobBatchWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSimulationJobBatchWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeSimulationJobBatchWithContext), varargs...)
+}
+
 // DescribeSimulationJobRequest mocks base method
 func (m *MockRoboMakerAPI) DescribeSimulationJobRequest(arg0 *robomaker.DescribeSimulationJobInput) (*request.Request, *robomaker.DescribeSimulationJobOutput) {
 	m.ctrl.T.Helper()
@@ -1550,6 +1650,89 @@ func (mr *MockRoboMakerAPIMockRecorder) ListSimulationApplicationsWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSimulationApplicationsWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListSimulationApplicationsWithContext), varargs...)
 }
 
+// ListSimulationJobBatches mocks base method
+func (m *MockRoboMakerAPI) ListSimulationJobBatches(arg0 *robomaker.ListSimulationJobBatchesInput) (*robomaker.ListSimulationJobBatchesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSimulationJobBatches", arg0)
+	ret0, _ := ret[0].(*robomaker.ListSimulationJobBatchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSimulationJobBatches indicates an expected call of ListSimulationJobBatches
+func (mr *MockRoboMakerAPIMockRecorder) ListSimulationJobBatches(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSimulationJobBatches", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListSimulationJobBatches), arg0)
+}
+
+// ListSimulationJobBatchesPages mocks base method
+func (m *MockRoboMakerAPI) ListSimulationJobBatchesPages(arg0 *robomaker.ListSimulationJobBatchesInput, arg1 func(*robomaker.ListSimulationJobBatchesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSimulationJobBatchesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSimulationJobBatchesPages indicates an expected call of ListSimulationJobBatchesPages
+func (mr *MockRoboMakerAPIMockRecorder) ListSimulationJobBatchesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSimulationJobBatchesPages", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListSimulationJobBatchesPages), arg0, arg1)
+}
+
+// ListSimulationJobBatchesPagesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListSimulationJobBatchesPagesWithContext(arg0 context.Context, arg1 *robomaker.ListSimulationJobBatchesInput, arg2 func(*robomaker.ListSimulationJobBatchesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSimulationJobBatchesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSimulationJobBatchesPagesWithContext indicates an expected call of ListSimulationJobBatchesPagesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListSimulationJobBatchesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSimulationJobBatchesPagesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListSimulationJobBatchesPagesWithContext), varargs...)
+}
+
+// ListSimulationJobBatchesRequest mocks base method
+func (m *MockRoboMakerAPI) ListSimulationJobBatchesRequest(arg0 *robomaker.ListSimulationJobBatchesInput) (*request.Request, *robomaker.ListSimulationJobBatchesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSimulationJobBatchesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.ListSimulationJobBatchesOutput)
+	return ret0, ret1
+}
+
+// ListSimulationJobBatchesRequest indicates an expected call of ListSimulationJobBatchesRequest
+func (mr *MockRoboMakerAPIMockRecorder) ListSimulationJobBatchesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSimulationJobBatchesRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListSimulationJobBatchesRequest), arg0)
+}
+
+// ListSimulationJobBatchesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListSimulationJobBatchesWithContext(arg0 context.Context, arg1 *robomaker.ListSimulationJobBatchesInput, arg2 ...request.Option) (*robomaker.ListSimulationJobBatchesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSimulationJobBatchesWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.ListSimulationJobBatchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSimulationJobBatchesWithContext indicates an expected call of ListSimulationJobBatchesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListSimulationJobBatchesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSimulationJobBatchesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListSimulationJobBatchesWithContext), varargs...)
+}
+
 // ListSimulationJobs mocks base method
 func (m *MockRoboMakerAPI) ListSimulationJobs(arg0 *robomaker.ListSimulationJobsInput) (*robomaker.ListSimulationJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1781,6 +1964,56 @@ func (mr *MockRoboMakerAPIMockRecorder) RestartSimulationJobWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestartSimulationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).RestartSimulationJobWithContext), varargs...)
+}
+
+// StartSimulationJobBatch mocks base method
+func (m *MockRoboMakerAPI) StartSimulationJobBatch(arg0 *robomaker.StartSimulationJobBatchInput) (*robomaker.StartSimulationJobBatchOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSimulationJobBatch", arg0)
+	ret0, _ := ret[0].(*robomaker.StartSimulationJobBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSimulationJobBatch indicates an expected call of StartSimulationJobBatch
+func (mr *MockRoboMakerAPIMockRecorder) StartSimulationJobBatch(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSimulationJobBatch", reflect.TypeOf((*MockRoboMakerAPI)(nil).StartSimulationJobBatch), arg0)
+}
+
+// StartSimulationJobBatchRequest mocks base method
+func (m *MockRoboMakerAPI) StartSimulationJobBatchRequest(arg0 *robomaker.StartSimulationJobBatchInput) (*request.Request, *robomaker.StartSimulationJobBatchOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSimulationJobBatchRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.StartSimulationJobBatchOutput)
+	return ret0, ret1
+}
+
+// StartSimulationJobBatchRequest indicates an expected call of StartSimulationJobBatchRequest
+func (mr *MockRoboMakerAPIMockRecorder) StartSimulationJobBatchRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSimulationJobBatchRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).StartSimulationJobBatchRequest), arg0)
+}
+
+// StartSimulationJobBatchWithContext mocks base method
+func (m *MockRoboMakerAPI) StartSimulationJobBatchWithContext(arg0 context.Context, arg1 *robomaker.StartSimulationJobBatchInput, arg2 ...request.Option) (*robomaker.StartSimulationJobBatchOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSimulationJobBatchWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.StartSimulationJobBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSimulationJobBatchWithContext indicates an expected call of StartSimulationJobBatchWithContext
+func (mr *MockRoboMakerAPIMockRecorder) StartSimulationJobBatchWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSimulationJobBatchWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).StartSimulationJobBatchWithContext), varargs...)
 }
 
 // SyncDeploymentJob mocks base method
