@@ -435,6 +435,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteCertificateWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteCertificateWithContext), varargs...)
 }
 
+// DeleteConnection mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteConnection(arg0 *databasemigrationservice.DeleteConnectionInput) (*databasemigrationservice.DeleteConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnection", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnection indicates an expected call of DeleteConnection
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnection", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteConnection), arg0)
+}
+
+// DeleteConnectionRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteConnectionRequest(arg0 *databasemigrationservice.DeleteConnectionInput) (*request.Request, *databasemigrationservice.DeleteConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DeleteConnectionOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectionRequest indicates an expected call of DeleteConnectionRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteConnectionRequest), arg0)
+}
+
+// DeleteConnectionWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteConnectionWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteConnectionInput, arg2 ...request.Option) (*databasemigrationservice.DeleteConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectionWithContext indicates an expected call of DeleteConnectionWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteConnectionWithContext), varargs...)
+}
+
 // DeleteEndpoint mocks base method
 func (m *MockDatabaseMigrationServiceAPI) DeleteEndpoint(arg0 *databasemigrationservice.DeleteEndpointInput) (*databasemigrationservice.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
