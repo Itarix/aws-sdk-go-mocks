@@ -285,6 +285,56 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationS3WithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationS3WithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationS3WithContext), varargs...)
 }
 
+// CreateLocationSmb mocks base method
+func (m *MockDataSyncAPI) CreateLocationSmb(arg0 *datasync.CreateLocationSmbInput) (*datasync.CreateLocationSmbOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationSmb", arg0)
+	ret0, _ := ret[0].(*datasync.CreateLocationSmbOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationSmb indicates an expected call of CreateLocationSmb
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationSmb(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationSmb", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationSmb), arg0)
+}
+
+// CreateLocationSmbRequest mocks base method
+func (m *MockDataSyncAPI) CreateLocationSmbRequest(arg0 *datasync.CreateLocationSmbInput) (*request.Request, *datasync.CreateLocationSmbOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationSmbRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.CreateLocationSmbOutput)
+	return ret0, ret1
+}
+
+// CreateLocationSmbRequest indicates an expected call of CreateLocationSmbRequest
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationSmbRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationSmbRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationSmbRequest), arg0)
+}
+
+// CreateLocationSmbWithContext mocks base method
+func (m *MockDataSyncAPI) CreateLocationSmbWithContext(arg0 context.Context, arg1 *datasync.CreateLocationSmbInput, arg2 ...request.Option) (*datasync.CreateLocationSmbOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLocationSmbWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.CreateLocationSmbOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationSmbWithContext indicates an expected call of CreateLocationSmbWithContext
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationSmbWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationSmbWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationSmbWithContext), varargs...)
+}
+
 // CreateTask mocks base method
 func (m *MockDataSyncAPI) CreateTask(arg0 *datasync.CreateTaskInput) (*datasync.CreateTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +733,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationS3WithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationS3WithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationS3WithContext), varargs...)
+}
+
+// DescribeLocationSmb mocks base method
+func (m *MockDataSyncAPI) DescribeLocationSmb(arg0 *datasync.DescribeLocationSmbInput) (*datasync.DescribeLocationSmbOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationSmb", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeLocationSmbOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationSmb indicates an expected call of DescribeLocationSmb
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationSmb(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationSmb", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationSmb), arg0)
+}
+
+// DescribeLocationSmbRequest mocks base method
+func (m *MockDataSyncAPI) DescribeLocationSmbRequest(arg0 *datasync.DescribeLocationSmbInput) (*request.Request, *datasync.DescribeLocationSmbOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationSmbRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeLocationSmbOutput)
+	return ret0, ret1
+}
+
+// DescribeLocationSmbRequest indicates an expected call of DescribeLocationSmbRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationSmbRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationSmbRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationSmbRequest), arg0)
+}
+
+// DescribeLocationSmbWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeLocationSmbWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationSmbInput, arg2 ...request.Option) (*datasync.DescribeLocationSmbOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLocationSmbWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeLocationSmbOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationSmbWithContext indicates an expected call of DescribeLocationSmbWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationSmbWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationSmbWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationSmbWithContext), varargs...)
 }
 
 // DescribeTask mocks base method
