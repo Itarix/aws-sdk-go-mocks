@@ -668,6 +668,56 @@ func (mr *MockSnowballAPIMockRecorder) GetSnowballUsageWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnowballUsageWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).GetSnowballUsageWithContext), varargs...)
 }
 
+// GetSoftwareUpdates mocks base method
+func (m *MockSnowballAPI) GetSoftwareUpdates(arg0 *snowball.GetSoftwareUpdatesInput) (*snowball.GetSoftwareUpdatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSoftwareUpdates", arg0)
+	ret0, _ := ret[0].(*snowball.GetSoftwareUpdatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSoftwareUpdates indicates an expected call of GetSoftwareUpdates
+func (mr *MockSnowballAPIMockRecorder) GetSoftwareUpdates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSoftwareUpdates", reflect.TypeOf((*MockSnowballAPI)(nil).GetSoftwareUpdates), arg0)
+}
+
+// GetSoftwareUpdatesRequest mocks base method
+func (m *MockSnowballAPI) GetSoftwareUpdatesRequest(arg0 *snowball.GetSoftwareUpdatesInput) (*request.Request, *snowball.GetSoftwareUpdatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSoftwareUpdatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*snowball.GetSoftwareUpdatesOutput)
+	return ret0, ret1
+}
+
+// GetSoftwareUpdatesRequest indicates an expected call of GetSoftwareUpdatesRequest
+func (mr *MockSnowballAPIMockRecorder) GetSoftwareUpdatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSoftwareUpdatesRequest", reflect.TypeOf((*MockSnowballAPI)(nil).GetSoftwareUpdatesRequest), arg0)
+}
+
+// GetSoftwareUpdatesWithContext mocks base method
+func (m *MockSnowballAPI) GetSoftwareUpdatesWithContext(arg0 context.Context, arg1 *snowball.GetSoftwareUpdatesInput, arg2 ...request.Option) (*snowball.GetSoftwareUpdatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSoftwareUpdatesWithContext", varargs...)
+	ret0, _ := ret[0].(*snowball.GetSoftwareUpdatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSoftwareUpdatesWithContext indicates an expected call of GetSoftwareUpdatesWithContext
+func (mr *MockSnowballAPIMockRecorder) GetSoftwareUpdatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSoftwareUpdatesWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).GetSoftwareUpdatesWithContext), varargs...)
+}
+
 // ListClusterJobs mocks base method
 func (m *MockSnowballAPI) ListClusterJobs(arg0 *snowball.ListClusterJobsInput) (*snowball.ListClusterJobsOutput, error) {
 	m.ctrl.T.Helper()
