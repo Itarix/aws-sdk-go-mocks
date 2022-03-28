@@ -3785,6 +3785,56 @@ func (mr *MockPinpointAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListTemplateVersions mocks base method
+func (m *MockPinpointAPI) ListTemplateVersions(arg0 *pinpoint.ListTemplateVersionsInput) (*pinpoint.ListTemplateVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTemplateVersions", arg0)
+	ret0, _ := ret[0].(*pinpoint.ListTemplateVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTemplateVersions indicates an expected call of ListTemplateVersions
+func (mr *MockPinpointAPIMockRecorder) ListTemplateVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateVersions", reflect.TypeOf((*MockPinpointAPI)(nil).ListTemplateVersions), arg0)
+}
+
+// ListTemplateVersionsRequest mocks base method
+func (m *MockPinpointAPI) ListTemplateVersionsRequest(arg0 *pinpoint.ListTemplateVersionsInput) (*request.Request, *pinpoint.ListTemplateVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTemplateVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.ListTemplateVersionsOutput)
+	return ret0, ret1
+}
+
+// ListTemplateVersionsRequest indicates an expected call of ListTemplateVersionsRequest
+func (mr *MockPinpointAPIMockRecorder) ListTemplateVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateVersionsRequest", reflect.TypeOf((*MockPinpointAPI)(nil).ListTemplateVersionsRequest), arg0)
+}
+
+// ListTemplateVersionsWithContext mocks base method
+func (m *MockPinpointAPI) ListTemplateVersionsWithContext(arg0 context.Context, arg1 *pinpoint.ListTemplateVersionsInput, arg2 ...request.Option) (*pinpoint.ListTemplateVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTemplateVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.ListTemplateVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTemplateVersionsWithContext indicates an expected call of ListTemplateVersionsWithContext
+func (mr *MockPinpointAPIMockRecorder) ListTemplateVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateVersionsWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).ListTemplateVersionsWithContext), varargs...)
+}
+
 // ListTemplates mocks base method
 func (m *MockPinpointAPI) ListTemplates(arg0 *pinpoint.ListTemplatesInput) (*pinpoint.ListTemplatesOutput, error) {
 	m.ctrl.T.Helper()
@@ -5183,6 +5233,56 @@ func (mr *MockPinpointAPIMockRecorder) UpdateSmsTemplateWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSmsTemplateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateSmsTemplateWithContext), varargs...)
+}
+
+// UpdateTemplateActiveVersion mocks base method
+func (m *MockPinpointAPI) UpdateTemplateActiveVersion(arg0 *pinpoint.UpdateTemplateActiveVersionInput) (*pinpoint.UpdateTemplateActiveVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTemplateActiveVersion", arg0)
+	ret0, _ := ret[0].(*pinpoint.UpdateTemplateActiveVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTemplateActiveVersion indicates an expected call of UpdateTemplateActiveVersion
+func (mr *MockPinpointAPIMockRecorder) UpdateTemplateActiveVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTemplateActiveVersion", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateTemplateActiveVersion), arg0)
+}
+
+// UpdateTemplateActiveVersionRequest mocks base method
+func (m *MockPinpointAPI) UpdateTemplateActiveVersionRequest(arg0 *pinpoint.UpdateTemplateActiveVersionInput) (*request.Request, *pinpoint.UpdateTemplateActiveVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTemplateActiveVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.UpdateTemplateActiveVersionOutput)
+	return ret0, ret1
+}
+
+// UpdateTemplateActiveVersionRequest indicates an expected call of UpdateTemplateActiveVersionRequest
+func (mr *MockPinpointAPIMockRecorder) UpdateTemplateActiveVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTemplateActiveVersionRequest", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateTemplateActiveVersionRequest), arg0)
+}
+
+// UpdateTemplateActiveVersionWithContext mocks base method
+func (m *MockPinpointAPI) UpdateTemplateActiveVersionWithContext(arg0 context.Context, arg1 *pinpoint.UpdateTemplateActiveVersionInput, arg2 ...request.Option) (*pinpoint.UpdateTemplateActiveVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTemplateActiveVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.UpdateTemplateActiveVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTemplateActiveVersionWithContext indicates an expected call of UpdateTemplateActiveVersionWithContext
+func (mr *MockPinpointAPIMockRecorder) UpdateTemplateActiveVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTemplateActiveVersionWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateTemplateActiveVersionWithContext), varargs...)
 }
 
 // UpdateVoiceChannel mocks base method

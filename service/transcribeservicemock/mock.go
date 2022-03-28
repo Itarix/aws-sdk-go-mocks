@@ -50,6 +50,56 @@ func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabulary(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabulary", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateVocabulary), arg0)
 }
 
+// CreateVocabularyFilter mocks base method
+func (m *MockTranscribeServiceAPI) CreateVocabularyFilter(arg0 *transcribeservice.CreateVocabularyFilterInput) (*transcribeservice.CreateVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVocabularyFilter", arg0)
+	ret0, _ := ret[0].(*transcribeservice.CreateVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVocabularyFilter indicates an expected call of CreateVocabularyFilter
+func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabularyFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabularyFilter", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateVocabularyFilter), arg0)
+}
+
+// CreateVocabularyFilterRequest mocks base method
+func (m *MockTranscribeServiceAPI) CreateVocabularyFilterRequest(arg0 *transcribeservice.CreateVocabularyFilterInput) (*request.Request, *transcribeservice.CreateVocabularyFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVocabularyFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.CreateVocabularyFilterOutput)
+	return ret0, ret1
+}
+
+// CreateVocabularyFilterRequest indicates an expected call of CreateVocabularyFilterRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabularyFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabularyFilterRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateVocabularyFilterRequest), arg0)
+}
+
+// CreateVocabularyFilterWithContext mocks base method
+func (m *MockTranscribeServiceAPI) CreateVocabularyFilterWithContext(arg0 context.Context, arg1 *transcribeservice.CreateVocabularyFilterInput, arg2 ...request.Option) (*transcribeservice.CreateVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVocabularyFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.CreateVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVocabularyFilterWithContext indicates an expected call of CreateVocabularyFilterWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabularyFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabularyFilterWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateVocabularyFilterWithContext), varargs...)
+}
+
 // CreateVocabularyRequest mocks base method
 func (m *MockTranscribeServiceAPI) CreateVocabularyRequest(arg0 *transcribeservice.CreateVocabularyInput) (*request.Request, *transcribeservice.CreateVocabularyOutput) {
 	m.ctrl.T.Helper()
@@ -150,6 +200,56 @@ func (mr *MockTranscribeServiceAPIMockRecorder) DeleteVocabulary(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVocabulary", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteVocabulary), arg0)
 }
 
+// DeleteVocabularyFilter mocks base method
+func (m *MockTranscribeServiceAPI) DeleteVocabularyFilter(arg0 *transcribeservice.DeleteVocabularyFilterInput) (*transcribeservice.DeleteVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVocabularyFilter", arg0)
+	ret0, _ := ret[0].(*transcribeservice.DeleteVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVocabularyFilter indicates an expected call of DeleteVocabularyFilter
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteVocabularyFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVocabularyFilter", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteVocabularyFilter), arg0)
+}
+
+// DeleteVocabularyFilterRequest mocks base method
+func (m *MockTranscribeServiceAPI) DeleteVocabularyFilterRequest(arg0 *transcribeservice.DeleteVocabularyFilterInput) (*request.Request, *transcribeservice.DeleteVocabularyFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVocabularyFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.DeleteVocabularyFilterOutput)
+	return ret0, ret1
+}
+
+// DeleteVocabularyFilterRequest indicates an expected call of DeleteVocabularyFilterRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteVocabularyFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVocabularyFilterRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteVocabularyFilterRequest), arg0)
+}
+
+// DeleteVocabularyFilterWithContext mocks base method
+func (m *MockTranscribeServiceAPI) DeleteVocabularyFilterWithContext(arg0 context.Context, arg1 *transcribeservice.DeleteVocabularyFilterInput, arg2 ...request.Option) (*transcribeservice.DeleteVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVocabularyFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.DeleteVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVocabularyFilterWithContext indicates an expected call of DeleteVocabularyFilterWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteVocabularyFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVocabularyFilterWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteVocabularyFilterWithContext), varargs...)
+}
+
 // DeleteVocabularyRequest mocks base method
 func (m *MockTranscribeServiceAPI) DeleteVocabularyRequest(arg0 *transcribeservice.DeleteVocabularyInput) (*request.Request, *transcribeservice.DeleteVocabularyOutput) {
 	m.ctrl.T.Helper()
@@ -248,6 +348,56 @@ func (m *MockTranscribeServiceAPI) GetVocabulary(arg0 *transcribeservice.GetVoca
 func (mr *MockTranscribeServiceAPIMockRecorder) GetVocabulary(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVocabulary", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetVocabulary), arg0)
+}
+
+// GetVocabularyFilter mocks base method
+func (m *MockTranscribeServiceAPI) GetVocabularyFilter(arg0 *transcribeservice.GetVocabularyFilterInput) (*transcribeservice.GetVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVocabularyFilter", arg0)
+	ret0, _ := ret[0].(*transcribeservice.GetVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVocabularyFilter indicates an expected call of GetVocabularyFilter
+func (mr *MockTranscribeServiceAPIMockRecorder) GetVocabularyFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVocabularyFilter", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetVocabularyFilter), arg0)
+}
+
+// GetVocabularyFilterRequest mocks base method
+func (m *MockTranscribeServiceAPI) GetVocabularyFilterRequest(arg0 *transcribeservice.GetVocabularyFilterInput) (*request.Request, *transcribeservice.GetVocabularyFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVocabularyFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.GetVocabularyFilterOutput)
+	return ret0, ret1
+}
+
+// GetVocabularyFilterRequest indicates an expected call of GetVocabularyFilterRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) GetVocabularyFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVocabularyFilterRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetVocabularyFilterRequest), arg0)
+}
+
+// GetVocabularyFilterWithContext mocks base method
+func (m *MockTranscribeServiceAPI) GetVocabularyFilterWithContext(arg0 context.Context, arg1 *transcribeservice.GetVocabularyFilterInput, arg2 ...request.Option) (*transcribeservice.GetVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVocabularyFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.GetVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVocabularyFilterWithContext indicates an expected call of GetVocabularyFilterWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) GetVocabularyFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVocabularyFilterWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetVocabularyFilterWithContext), varargs...)
 }
 
 // GetVocabularyRequest mocks base method
@@ -451,6 +601,89 @@ func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabulariesWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabulariesWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabulariesWithContext), varargs...)
 }
 
+// ListVocabularyFilters mocks base method
+func (m *MockTranscribeServiceAPI) ListVocabularyFilters(arg0 *transcribeservice.ListVocabularyFiltersInput) (*transcribeservice.ListVocabularyFiltersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVocabularyFilters", arg0)
+	ret0, _ := ret[0].(*transcribeservice.ListVocabularyFiltersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVocabularyFilters indicates an expected call of ListVocabularyFilters
+func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabularyFilters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabularyFilters", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabularyFilters), arg0)
+}
+
+// ListVocabularyFiltersPages mocks base method
+func (m *MockTranscribeServiceAPI) ListVocabularyFiltersPages(arg0 *transcribeservice.ListVocabularyFiltersInput, arg1 func(*transcribeservice.ListVocabularyFiltersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVocabularyFiltersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVocabularyFiltersPages indicates an expected call of ListVocabularyFiltersPages
+func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabularyFiltersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabularyFiltersPages", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabularyFiltersPages), arg0, arg1)
+}
+
+// ListVocabularyFiltersPagesWithContext mocks base method
+func (m *MockTranscribeServiceAPI) ListVocabularyFiltersPagesWithContext(arg0 context.Context, arg1 *transcribeservice.ListVocabularyFiltersInput, arg2 func(*transcribeservice.ListVocabularyFiltersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVocabularyFiltersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVocabularyFiltersPagesWithContext indicates an expected call of ListVocabularyFiltersPagesWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabularyFiltersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabularyFiltersPagesWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabularyFiltersPagesWithContext), varargs...)
+}
+
+// ListVocabularyFiltersRequest mocks base method
+func (m *MockTranscribeServiceAPI) ListVocabularyFiltersRequest(arg0 *transcribeservice.ListVocabularyFiltersInput) (*request.Request, *transcribeservice.ListVocabularyFiltersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVocabularyFiltersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.ListVocabularyFiltersOutput)
+	return ret0, ret1
+}
+
+// ListVocabularyFiltersRequest indicates an expected call of ListVocabularyFiltersRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabularyFiltersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabularyFiltersRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabularyFiltersRequest), arg0)
+}
+
+// ListVocabularyFiltersWithContext mocks base method
+func (m *MockTranscribeServiceAPI) ListVocabularyFiltersWithContext(arg0 context.Context, arg1 *transcribeservice.ListVocabularyFiltersInput, arg2 ...request.Option) (*transcribeservice.ListVocabularyFiltersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVocabularyFiltersWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.ListVocabularyFiltersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVocabularyFiltersWithContext indicates an expected call of ListVocabularyFiltersWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabularyFiltersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabularyFiltersWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabularyFiltersWithContext), varargs...)
+}
+
 // StartTranscriptionJob mocks base method
 func (m *MockTranscribeServiceAPI) StartTranscriptionJob(arg0 *transcribeservice.StartTranscriptionJobInput) (*transcribeservice.StartTranscriptionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -514,6 +747,56 @@ func (m *MockTranscribeServiceAPI) UpdateVocabulary(arg0 *transcribeservice.Upda
 func (mr *MockTranscribeServiceAPIMockRecorder) UpdateVocabulary(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVocabulary", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateVocabulary), arg0)
+}
+
+// UpdateVocabularyFilter mocks base method
+func (m *MockTranscribeServiceAPI) UpdateVocabularyFilter(arg0 *transcribeservice.UpdateVocabularyFilterInput) (*transcribeservice.UpdateVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVocabularyFilter", arg0)
+	ret0, _ := ret[0].(*transcribeservice.UpdateVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVocabularyFilter indicates an expected call of UpdateVocabularyFilter
+func (mr *MockTranscribeServiceAPIMockRecorder) UpdateVocabularyFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVocabularyFilter", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateVocabularyFilter), arg0)
+}
+
+// UpdateVocabularyFilterRequest mocks base method
+func (m *MockTranscribeServiceAPI) UpdateVocabularyFilterRequest(arg0 *transcribeservice.UpdateVocabularyFilterInput) (*request.Request, *transcribeservice.UpdateVocabularyFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVocabularyFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.UpdateVocabularyFilterOutput)
+	return ret0, ret1
+}
+
+// UpdateVocabularyFilterRequest indicates an expected call of UpdateVocabularyFilterRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) UpdateVocabularyFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVocabularyFilterRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateVocabularyFilterRequest), arg0)
+}
+
+// UpdateVocabularyFilterWithContext mocks base method
+func (m *MockTranscribeServiceAPI) UpdateVocabularyFilterWithContext(arg0 context.Context, arg1 *transcribeservice.UpdateVocabularyFilterInput, arg2 ...request.Option) (*transcribeservice.UpdateVocabularyFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVocabularyFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.UpdateVocabularyFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVocabularyFilterWithContext indicates an expected call of UpdateVocabularyFilterWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) UpdateVocabularyFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVocabularyFilterWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateVocabularyFilterWithContext), varargs...)
 }
 
 // UpdateVocabularyRequest mocks base method

@@ -285,6 +285,106 @@ func (mr *MockDeviceFarmAPIMockRecorder) CreateRemoteAccessSessionWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRemoteAccessSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateRemoteAccessSessionWithContext), varargs...)
 }
 
+// CreateTestGridProject mocks base method
+func (m *MockDeviceFarmAPI) CreateTestGridProject(arg0 *devicefarm.CreateTestGridProjectInput) (*devicefarm.CreateTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTestGridProject", arg0)
+	ret0, _ := ret[0].(*devicefarm.CreateTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTestGridProject indicates an expected call of CreateTestGridProject
+func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridProject(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridProject), arg0)
+}
+
+// CreateTestGridProjectRequest mocks base method
+func (m *MockDeviceFarmAPI) CreateTestGridProjectRequest(arg0 *devicefarm.CreateTestGridProjectInput) (*request.Request, *devicefarm.CreateTestGridProjectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTestGridProjectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.CreateTestGridProjectOutput)
+	return ret0, ret1
+}
+
+// CreateTestGridProjectRequest indicates an expected call of CreateTestGridProjectRequest
+func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridProjectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridProjectRequest), arg0)
+}
+
+// CreateTestGridProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.CreateTestGridProjectInput, arg2 ...request.Option) (*devicefarm.CreateTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTestGridProjectWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.CreateTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTestGridProjectWithContext indicates an expected call of CreateTestGridProjectWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridProjectWithContext), varargs...)
+}
+
+// CreateTestGridUrl mocks base method
+func (m *MockDeviceFarmAPI) CreateTestGridUrl(arg0 *devicefarm.CreateTestGridUrlInput) (*devicefarm.CreateTestGridUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTestGridUrl", arg0)
+	ret0, _ := ret[0].(*devicefarm.CreateTestGridUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTestGridUrl indicates an expected call of CreateTestGridUrl
+func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridUrl", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridUrl), arg0)
+}
+
+// CreateTestGridUrlRequest mocks base method
+func (m *MockDeviceFarmAPI) CreateTestGridUrlRequest(arg0 *devicefarm.CreateTestGridUrlInput) (*request.Request, *devicefarm.CreateTestGridUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTestGridUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.CreateTestGridUrlOutput)
+	return ret0, ret1
+}
+
+// CreateTestGridUrlRequest indicates an expected call of CreateTestGridUrlRequest
+func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridUrlRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridUrlRequest), arg0)
+}
+
+// CreateTestGridUrlWithContext mocks base method
+func (m *MockDeviceFarmAPI) CreateTestGridUrlWithContext(arg0 context.Context, arg1 *devicefarm.CreateTestGridUrlInput, arg2 ...request.Option) (*devicefarm.CreateTestGridUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTestGridUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.CreateTestGridUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTestGridUrlWithContext indicates an expected call of CreateTestGridUrlWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) CreateTestGridUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTestGridUrlWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).CreateTestGridUrlWithContext), varargs...)
+}
+
 // CreateUpload mocks base method
 func (m *MockDeviceFarmAPI) CreateUpload(arg0 *devicefarm.CreateUploadInput) (*devicefarm.CreateUploadOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +783,56 @@ func (mr *MockDeviceFarmAPIMockRecorder) DeleteRunWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRunWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteRunWithContext), varargs...)
+}
+
+// DeleteTestGridProject mocks base method
+func (m *MockDeviceFarmAPI) DeleteTestGridProject(arg0 *devicefarm.DeleteTestGridProjectInput) (*devicefarm.DeleteTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTestGridProject", arg0)
+	ret0, _ := ret[0].(*devicefarm.DeleteTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTestGridProject indicates an expected call of DeleteTestGridProject
+func (mr *MockDeviceFarmAPIMockRecorder) DeleteTestGridProject(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteTestGridProject), arg0)
+}
+
+// DeleteTestGridProjectRequest mocks base method
+func (m *MockDeviceFarmAPI) DeleteTestGridProjectRequest(arg0 *devicefarm.DeleteTestGridProjectInput) (*request.Request, *devicefarm.DeleteTestGridProjectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTestGridProjectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.DeleteTestGridProjectOutput)
+	return ret0, ret1
+}
+
+// DeleteTestGridProjectRequest indicates an expected call of DeleteTestGridProjectRequest
+func (mr *MockDeviceFarmAPIMockRecorder) DeleteTestGridProjectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteTestGridProjectRequest), arg0)
+}
+
+// DeleteTestGridProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) DeleteTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.DeleteTestGridProjectInput, arg2 ...request.Option) (*devicefarm.DeleteTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTestGridProjectWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.DeleteTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTestGridProjectWithContext indicates an expected call of DeleteTestGridProjectWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) DeleteTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).DeleteTestGridProjectWithContext), varargs...)
 }
 
 // DeleteUpload mocks base method
@@ -1481,6 +1631,106 @@ func (m *MockDeviceFarmAPI) GetTest(arg0 *devicefarm.GetTestInput) (*devicefarm.
 func (mr *MockDeviceFarmAPIMockRecorder) GetTest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTest), arg0)
+}
+
+// GetTestGridProject mocks base method
+func (m *MockDeviceFarmAPI) GetTestGridProject(arg0 *devicefarm.GetTestGridProjectInput) (*devicefarm.GetTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTestGridProject", arg0)
+	ret0, _ := ret[0].(*devicefarm.GetTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTestGridProject indicates an expected call of GetTestGridProject
+func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridProject(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridProject), arg0)
+}
+
+// GetTestGridProjectRequest mocks base method
+func (m *MockDeviceFarmAPI) GetTestGridProjectRequest(arg0 *devicefarm.GetTestGridProjectInput) (*request.Request, *devicefarm.GetTestGridProjectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTestGridProjectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.GetTestGridProjectOutput)
+	return ret0, ret1
+}
+
+// GetTestGridProjectRequest indicates an expected call of GetTestGridProjectRequest
+func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridProjectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridProjectRequest), arg0)
+}
+
+// GetTestGridProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.GetTestGridProjectInput, arg2 ...request.Option) (*devicefarm.GetTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTestGridProjectWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.GetTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTestGridProjectWithContext indicates an expected call of GetTestGridProjectWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridProjectWithContext), varargs...)
+}
+
+// GetTestGridSession mocks base method
+func (m *MockDeviceFarmAPI) GetTestGridSession(arg0 *devicefarm.GetTestGridSessionInput) (*devicefarm.GetTestGridSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTestGridSession", arg0)
+	ret0, _ := ret[0].(*devicefarm.GetTestGridSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTestGridSession indicates an expected call of GetTestGridSession
+func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridSession", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridSession), arg0)
+}
+
+// GetTestGridSessionRequest mocks base method
+func (m *MockDeviceFarmAPI) GetTestGridSessionRequest(arg0 *devicefarm.GetTestGridSessionInput) (*request.Request, *devicefarm.GetTestGridSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTestGridSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.GetTestGridSessionOutput)
+	return ret0, ret1
+}
+
+// GetTestGridSessionRequest indicates an expected call of GetTestGridSessionRequest
+func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridSessionRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridSessionRequest), arg0)
+}
+
+// GetTestGridSessionWithContext mocks base method
+func (m *MockDeviceFarmAPI) GetTestGridSessionWithContext(arg0 context.Context, arg1 *devicefarm.GetTestGridSessionInput, arg2 ...request.Option) (*devicefarm.GetTestGridSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTestGridSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.GetTestGridSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTestGridSessionWithContext indicates an expected call of GetTestGridSessionWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) GetTestGridSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTestGridSessionWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).GetTestGridSessionWithContext), varargs...)
 }
 
 // GetTestRequest mocks base method
@@ -2798,6 +3048,338 @@ func (mr *MockDeviceFarmAPIMockRecorder) ListTagsForResourceWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListTestGridProjects mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridProjects(arg0 *devicefarm.ListTestGridProjectsInput) (*devicefarm.ListTestGridProjectsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridProjects", arg0)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridProjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridProjects indicates an expected call of ListTestGridProjects
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjects(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjects", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjects), arg0)
+}
+
+// ListTestGridProjectsPages mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridProjectsPages(arg0 *devicefarm.ListTestGridProjectsInput, arg1 func(*devicefarm.ListTestGridProjectsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridProjectsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridProjectsPages indicates an expected call of ListTestGridProjectsPages
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsPages), arg0, arg1)
+}
+
+// ListTestGridProjectsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridProjectsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridProjectsInput, arg2 func(*devicefarm.ListTestGridProjectsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridProjectsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridProjectsPagesWithContext indicates an expected call of ListTestGridProjectsPagesWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsPagesWithContext), varargs...)
+}
+
+// ListTestGridProjectsRequest mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridProjectsRequest(arg0 *devicefarm.ListTestGridProjectsInput) (*request.Request, *devicefarm.ListTestGridProjectsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridProjectsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.ListTestGridProjectsOutput)
+	return ret0, ret1
+}
+
+// ListTestGridProjectsRequest indicates an expected call of ListTestGridProjectsRequest
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsRequest), arg0)
+}
+
+// ListTestGridProjectsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridProjectsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridProjectsInput, arg2 ...request.Option) (*devicefarm.ListTestGridProjectsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridProjectsWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridProjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridProjectsWithContext indicates an expected call of ListTestGridProjectsWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridProjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridProjectsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridProjectsWithContext), varargs...)
+}
+
+// ListTestGridSessionActions mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionActions(arg0 *devicefarm.ListTestGridSessionActionsInput) (*devicefarm.ListTestGridSessionActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionActions", arg0)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridSessionActions indicates an expected call of ListTestGridSessionActions
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActions), arg0)
+}
+
+// ListTestGridSessionActionsPages mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionActionsPages(arg0 *devicefarm.ListTestGridSessionActionsInput, arg1 func(*devicefarm.ListTestGridSessionActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridSessionActionsPages indicates an expected call of ListTestGridSessionActionsPages
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsPages), arg0, arg1)
+}
+
+// ListTestGridSessionActionsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionActionsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionActionsInput, arg2 func(*devicefarm.ListTestGridSessionActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridSessionActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridSessionActionsPagesWithContext indicates an expected call of ListTestGridSessionActionsPagesWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsPagesWithContext), varargs...)
+}
+
+// ListTestGridSessionActionsRequest mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionActionsRequest(arg0 *devicefarm.ListTestGridSessionActionsInput) (*request.Request, *devicefarm.ListTestGridSessionActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.ListTestGridSessionActionsOutput)
+	return ret0, ret1
+}
+
+// ListTestGridSessionActionsRequest indicates an expected call of ListTestGridSessionActionsRequest
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsRequest), arg0)
+}
+
+// ListTestGridSessionActionsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionActionsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionActionsInput, arg2 ...request.Option) (*devicefarm.ListTestGridSessionActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridSessionActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridSessionActionsWithContext indicates an expected call of ListTestGridSessionActionsWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionActionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionActionsWithContext), varargs...)
+}
+
+// ListTestGridSessionArtifacts mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionArtifacts(arg0 *devicefarm.ListTestGridSessionArtifactsInput) (*devicefarm.ListTestGridSessionArtifactsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionArtifacts", arg0)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionArtifactsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridSessionArtifacts indicates an expected call of ListTestGridSessionArtifacts
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifacts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifacts", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifacts), arg0)
+}
+
+// ListTestGridSessionArtifactsPages mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsPages(arg0 *devicefarm.ListTestGridSessionArtifactsInput, arg1 func(*devicefarm.ListTestGridSessionArtifactsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridSessionArtifactsPages indicates an expected call of ListTestGridSessionArtifactsPages
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsPages), arg0, arg1)
+}
+
+// ListTestGridSessionArtifactsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionArtifactsInput, arg2 func(*devicefarm.ListTestGridSessionArtifactsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridSessionArtifactsPagesWithContext indicates an expected call of ListTestGridSessionArtifactsPagesWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsPagesWithContext), varargs...)
+}
+
+// ListTestGridSessionArtifactsRequest mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsRequest(arg0 *devicefarm.ListTestGridSessionArtifactsInput) (*request.Request, *devicefarm.ListTestGridSessionArtifactsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.ListTestGridSessionArtifactsOutput)
+	return ret0, ret1
+}
+
+// ListTestGridSessionArtifactsRequest indicates an expected call of ListTestGridSessionArtifactsRequest
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsRequest), arg0)
+}
+
+// ListTestGridSessionArtifactsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionArtifactsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionArtifactsInput, arg2 ...request.Option) (*devicefarm.ListTestGridSessionArtifactsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridSessionArtifactsWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionArtifactsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridSessionArtifactsWithContext indicates an expected call of ListTestGridSessionArtifactsWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionArtifactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionArtifactsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionArtifactsWithContext), varargs...)
+}
+
+// ListTestGridSessions mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessions(arg0 *devicefarm.ListTestGridSessionsInput) (*devicefarm.ListTestGridSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessions", arg0)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridSessions indicates an expected call of ListTestGridSessions
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessions", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessions), arg0)
+}
+
+// ListTestGridSessionsPages mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionsPages(arg0 *devicefarm.ListTestGridSessionsInput, arg1 func(*devicefarm.ListTestGridSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridSessionsPages indicates an expected call of ListTestGridSessionsPages
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsPages", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsPages), arg0, arg1)
+}
+
+// ListTestGridSessionsPagesWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionsPagesWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionsInput, arg2 func(*devicefarm.ListTestGridSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTestGridSessionsPagesWithContext indicates an expected call of ListTestGridSessionsPagesWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsPagesWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsPagesWithContext), varargs...)
+}
+
+// ListTestGridSessionsRequest mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionsRequest(arg0 *devicefarm.ListTestGridSessionsInput) (*request.Request, *devicefarm.ListTestGridSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTestGridSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.ListTestGridSessionsOutput)
+	return ret0, ret1
+}
+
+// ListTestGridSessionsRequest indicates an expected call of ListTestGridSessionsRequest
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsRequest), arg0)
+}
+
+// ListTestGridSessionsWithContext mocks base method
+func (m *MockDeviceFarmAPI) ListTestGridSessionsWithContext(arg0 context.Context, arg1 *devicefarm.ListTestGridSessionsInput, arg2 ...request.Option) (*devicefarm.ListTestGridSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTestGridSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.ListTestGridSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTestGridSessionsWithContext indicates an expected call of ListTestGridSessionsWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) ListTestGridSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestGridSessionsWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).ListTestGridSessionsWithContext), varargs...)
+}
+
 // ListTests mocks base method
 func (m *MockDeviceFarmAPI) ListTests(arg0 *devicefarm.ListTestsInput) (*devicefarm.ListTestsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3745,6 +4327,56 @@ func (mr *MockDeviceFarmAPIMockRecorder) UpdateProjectWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateProjectWithContext), varargs...)
+}
+
+// UpdateTestGridProject mocks base method
+func (m *MockDeviceFarmAPI) UpdateTestGridProject(arg0 *devicefarm.UpdateTestGridProjectInput) (*devicefarm.UpdateTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTestGridProject", arg0)
+	ret0, _ := ret[0].(*devicefarm.UpdateTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTestGridProject indicates an expected call of UpdateTestGridProject
+func (mr *MockDeviceFarmAPIMockRecorder) UpdateTestGridProject(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTestGridProject", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateTestGridProject), arg0)
+}
+
+// UpdateTestGridProjectRequest mocks base method
+func (m *MockDeviceFarmAPI) UpdateTestGridProjectRequest(arg0 *devicefarm.UpdateTestGridProjectInput) (*request.Request, *devicefarm.UpdateTestGridProjectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTestGridProjectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devicefarm.UpdateTestGridProjectOutput)
+	return ret0, ret1
+}
+
+// UpdateTestGridProjectRequest indicates an expected call of UpdateTestGridProjectRequest
+func (mr *MockDeviceFarmAPIMockRecorder) UpdateTestGridProjectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTestGridProjectRequest", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateTestGridProjectRequest), arg0)
+}
+
+// UpdateTestGridProjectWithContext mocks base method
+func (m *MockDeviceFarmAPI) UpdateTestGridProjectWithContext(arg0 context.Context, arg1 *devicefarm.UpdateTestGridProjectInput, arg2 ...request.Option) (*devicefarm.UpdateTestGridProjectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTestGridProjectWithContext", varargs...)
+	ret0, _ := ret[0].(*devicefarm.UpdateTestGridProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTestGridProjectWithContext indicates an expected call of UpdateTestGridProjectWithContext
+func (mr *MockDeviceFarmAPIMockRecorder) UpdateTestGridProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTestGridProjectWithContext", reflect.TypeOf((*MockDeviceFarmAPI)(nil).UpdateTestGridProjectWithContext), varargs...)
 }
 
 // UpdateUpload mocks base method
