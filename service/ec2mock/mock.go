@@ -19396,6 +19396,56 @@ func (mr *MockEC2APIMockRecorder) SearchTransitGatewayRoutesWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTransitGatewayRoutesWithContext", reflect.TypeOf((*MockEC2API)(nil).SearchTransitGatewayRoutesWithContext), varargs...)
 }
 
+// SendDiagnosticInterrupt mocks base method
+func (m *MockEC2API) SendDiagnosticInterrupt(arg0 *ec2.SendDiagnosticInterruptInput) (*ec2.SendDiagnosticInterruptOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendDiagnosticInterrupt", arg0)
+	ret0, _ := ret[0].(*ec2.SendDiagnosticInterruptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendDiagnosticInterrupt indicates an expected call of SendDiagnosticInterrupt
+func (mr *MockEC2APIMockRecorder) SendDiagnosticInterrupt(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDiagnosticInterrupt", reflect.TypeOf((*MockEC2API)(nil).SendDiagnosticInterrupt), arg0)
+}
+
+// SendDiagnosticInterruptRequest mocks base method
+func (m *MockEC2API) SendDiagnosticInterruptRequest(arg0 *ec2.SendDiagnosticInterruptInput) (*request.Request, *ec2.SendDiagnosticInterruptOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendDiagnosticInterruptRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.SendDiagnosticInterruptOutput)
+	return ret0, ret1
+}
+
+// SendDiagnosticInterruptRequest indicates an expected call of SendDiagnosticInterruptRequest
+func (mr *MockEC2APIMockRecorder) SendDiagnosticInterruptRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDiagnosticInterruptRequest", reflect.TypeOf((*MockEC2API)(nil).SendDiagnosticInterruptRequest), arg0)
+}
+
+// SendDiagnosticInterruptWithContext mocks base method
+func (m *MockEC2API) SendDiagnosticInterruptWithContext(arg0 context.Context, arg1 *ec2.SendDiagnosticInterruptInput, arg2 ...request.Option) (*ec2.SendDiagnosticInterruptOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendDiagnosticInterruptWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.SendDiagnosticInterruptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendDiagnosticInterruptWithContext indicates an expected call of SendDiagnosticInterruptWithContext
+func (mr *MockEC2APIMockRecorder) SendDiagnosticInterruptWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDiagnosticInterruptWithContext", reflect.TypeOf((*MockEC2API)(nil).SendDiagnosticInterruptWithContext), varargs...)
+}
+
 // StartInstances mocks base method
 func (m *MockEC2API) StartInstances(arg0 *ec2.StartInstancesInput) (*ec2.StartInstancesOutput, error) {
 	m.ctrl.T.Helper()
