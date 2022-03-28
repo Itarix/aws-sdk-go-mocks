@@ -535,6 +535,56 @@ func (mr *MockGlueAPIMockRecorder) BatchGetTriggersWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetTriggersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetTriggersWithContext), varargs...)
 }
 
+// BatchGetWorkflows mocks base method
+func (m *MockGlueAPI) BatchGetWorkflows(arg0 *glue.BatchGetWorkflowsInput) (*glue.BatchGetWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetWorkflows", arg0)
+	ret0, _ := ret[0].(*glue.BatchGetWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetWorkflows indicates an expected call of BatchGetWorkflows
+func (mr *MockGlueAPIMockRecorder) BatchGetWorkflows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetWorkflows", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetWorkflows), arg0)
+}
+
+// BatchGetWorkflowsRequest mocks base method
+func (m *MockGlueAPI) BatchGetWorkflowsRequest(arg0 *glue.BatchGetWorkflowsInput) (*request.Request, *glue.BatchGetWorkflowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetWorkflowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.BatchGetWorkflowsOutput)
+	return ret0, ret1
+}
+
+// BatchGetWorkflowsRequest indicates an expected call of BatchGetWorkflowsRequest
+func (mr *MockGlueAPIMockRecorder) BatchGetWorkflowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetWorkflowsRequest", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetWorkflowsRequest), arg0)
+}
+
+// BatchGetWorkflowsWithContext mocks base method
+func (m *MockGlueAPI) BatchGetWorkflowsWithContext(arg0 context.Context, arg1 *glue.BatchGetWorkflowsInput, arg2 ...request.Option) (*glue.BatchGetWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetWorkflowsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.BatchGetWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetWorkflowsWithContext indicates an expected call of BatchGetWorkflowsWithContext
+func (mr *MockGlueAPIMockRecorder) BatchGetWorkflowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetWorkflowsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetWorkflowsWithContext), varargs...)
+}
+
 // BatchStopJobRun mocks base method
 func (m *MockGlueAPI) BatchStopJobRun(arg0 *glue.BatchStopJobRunInput) (*glue.BatchStopJobRunOutput, error) {
 	m.ctrl.T.Helper()
@@ -1185,6 +1235,56 @@ func (mr *MockGlueAPIMockRecorder) CreateUserDefinedFunctionWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserDefinedFunctionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateUserDefinedFunctionWithContext), varargs...)
 }
 
+// CreateWorkflow mocks base method
+func (m *MockGlueAPI) CreateWorkflow(arg0 *glue.CreateWorkflowInput) (*glue.CreateWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkflow", arg0)
+	ret0, _ := ret[0].(*glue.CreateWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkflow indicates an expected call of CreateWorkflow
+func (mr *MockGlueAPIMockRecorder) CreateWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkflow", reflect.TypeOf((*MockGlueAPI)(nil).CreateWorkflow), arg0)
+}
+
+// CreateWorkflowRequest mocks base method
+func (m *MockGlueAPI) CreateWorkflowRequest(arg0 *glue.CreateWorkflowInput) (*request.Request, *glue.CreateWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateWorkflowOutput)
+	return ret0, ret1
+}
+
+// CreateWorkflowRequest indicates an expected call of CreateWorkflowRequest
+func (mr *MockGlueAPIMockRecorder) CreateWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkflowRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateWorkflowRequest), arg0)
+}
+
+// CreateWorkflowWithContext mocks base method
+func (m *MockGlueAPI) CreateWorkflowWithContext(arg0 context.Context, arg1 *glue.CreateWorkflowInput, arg2 ...request.Option) (*glue.CreateWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkflowWithContext indicates an expected call of CreateWorkflowWithContext
+func (mr *MockGlueAPIMockRecorder) CreateWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkflowWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateWorkflowWithContext), varargs...)
+}
+
 // DeleteClassifier mocks base method
 func (m *MockGlueAPI) DeleteClassifier(arg0 *glue.DeleteClassifierInput) (*glue.DeleteClassifierOutput, error) {
 	m.ctrl.T.Helper()
@@ -1833,6 +1933,56 @@ func (mr *MockGlueAPIMockRecorder) DeleteUserDefinedFunctionWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserDefinedFunctionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteUserDefinedFunctionWithContext), varargs...)
+}
+
+// DeleteWorkflow mocks base method
+func (m *MockGlueAPI) DeleteWorkflow(arg0 *glue.DeleteWorkflowInput) (*glue.DeleteWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkflow", arg0)
+	ret0, _ := ret[0].(*glue.DeleteWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkflow indicates an expected call of DeleteWorkflow
+func (mr *MockGlueAPIMockRecorder) DeleteWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkflow", reflect.TypeOf((*MockGlueAPI)(nil).DeleteWorkflow), arg0)
+}
+
+// DeleteWorkflowRequest mocks base method
+func (m *MockGlueAPI) DeleteWorkflowRequest(arg0 *glue.DeleteWorkflowInput) (*request.Request, *glue.DeleteWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteWorkflowOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkflowRequest indicates an expected call of DeleteWorkflowRequest
+func (mr *MockGlueAPIMockRecorder) DeleteWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkflowRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteWorkflowRequest), arg0)
+}
+
+// DeleteWorkflowWithContext mocks base method
+func (m *MockGlueAPI) DeleteWorkflowWithContext(arg0 context.Context, arg1 *glue.DeleteWorkflowInput, arg2 ...request.Option) (*glue.DeleteWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkflowWithContext indicates an expected call of DeleteWorkflowWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkflowWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteWorkflowWithContext), varargs...)
 }
 
 // GetCatalogImportStatus mocks base method
@@ -3997,6 +4147,239 @@ func (mr *MockGlueAPIMockRecorder) GetUserDefinedFunctionsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserDefinedFunctionsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetUserDefinedFunctionsWithContext), varargs...)
 }
 
+// GetWorkflow mocks base method
+func (m *MockGlueAPI) GetWorkflow(arg0 *glue.GetWorkflowInput) (*glue.GetWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflow", arg0)
+	ret0, _ := ret[0].(*glue.GetWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflow indicates an expected call of GetWorkflow
+func (mr *MockGlueAPIMockRecorder) GetWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflow", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflow), arg0)
+}
+
+// GetWorkflowRequest mocks base method
+func (m *MockGlueAPI) GetWorkflowRequest(arg0 *glue.GetWorkflowInput) (*request.Request, *glue.GetWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetWorkflowOutput)
+	return ret0, ret1
+}
+
+// GetWorkflowRequest indicates an expected call of GetWorkflowRequest
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRequest), arg0)
+}
+
+// GetWorkflowRun mocks base method
+func (m *MockGlueAPI) GetWorkflowRun(arg0 *glue.GetWorkflowRunInput) (*glue.GetWorkflowRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRun", arg0)
+	ret0, _ := ret[0].(*glue.GetWorkflowRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowRun indicates an expected call of GetWorkflowRun
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRun", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRun), arg0)
+}
+
+// GetWorkflowRunProperties mocks base method
+func (m *MockGlueAPI) GetWorkflowRunProperties(arg0 *glue.GetWorkflowRunPropertiesInput) (*glue.GetWorkflowRunPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRunProperties", arg0)
+	ret0, _ := ret[0].(*glue.GetWorkflowRunPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowRunProperties indicates an expected call of GetWorkflowRunProperties
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunProperties", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunProperties), arg0)
+}
+
+// GetWorkflowRunPropertiesRequest mocks base method
+func (m *MockGlueAPI) GetWorkflowRunPropertiesRequest(arg0 *glue.GetWorkflowRunPropertiesInput) (*request.Request, *glue.GetWorkflowRunPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRunPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetWorkflowRunPropertiesOutput)
+	return ret0, ret1
+}
+
+// GetWorkflowRunPropertiesRequest indicates an expected call of GetWorkflowRunPropertiesRequest
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunPropertiesRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunPropertiesRequest), arg0)
+}
+
+// GetWorkflowRunPropertiesWithContext mocks base method
+func (m *MockGlueAPI) GetWorkflowRunPropertiesWithContext(arg0 context.Context, arg1 *glue.GetWorkflowRunPropertiesInput, arg2 ...request.Option) (*glue.GetWorkflowRunPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkflowRunPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetWorkflowRunPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowRunPropertiesWithContext indicates an expected call of GetWorkflowRunPropertiesWithContext
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunPropertiesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunPropertiesWithContext), varargs...)
+}
+
+// GetWorkflowRunRequest mocks base method
+func (m *MockGlueAPI) GetWorkflowRunRequest(arg0 *glue.GetWorkflowRunInput) (*request.Request, *glue.GetWorkflowRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetWorkflowRunOutput)
+	return ret0, ret1
+}
+
+// GetWorkflowRunRequest indicates an expected call of GetWorkflowRunRequest
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunRequest), arg0)
+}
+
+// GetWorkflowRunWithContext mocks base method
+func (m *MockGlueAPI) GetWorkflowRunWithContext(arg0 context.Context, arg1 *glue.GetWorkflowRunInput, arg2 ...request.Option) (*glue.GetWorkflowRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkflowRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetWorkflowRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowRunWithContext indicates an expected call of GetWorkflowRunWithContext
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunWithContext), varargs...)
+}
+
+// GetWorkflowRuns mocks base method
+func (m *MockGlueAPI) GetWorkflowRuns(arg0 *glue.GetWorkflowRunsInput) (*glue.GetWorkflowRunsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRuns", arg0)
+	ret0, _ := ret[0].(*glue.GetWorkflowRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowRuns indicates an expected call of GetWorkflowRuns
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRuns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRuns", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRuns), arg0)
+}
+
+// GetWorkflowRunsPages mocks base method
+func (m *MockGlueAPI) GetWorkflowRunsPages(arg0 *glue.GetWorkflowRunsInput, arg1 func(*glue.GetWorkflowRunsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRunsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetWorkflowRunsPages indicates an expected call of GetWorkflowRunsPages
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunsPages", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunsPages), arg0, arg1)
+}
+
+// GetWorkflowRunsPagesWithContext mocks base method
+func (m *MockGlueAPI) GetWorkflowRunsPagesWithContext(arg0 context.Context, arg1 *glue.GetWorkflowRunsInput, arg2 func(*glue.GetWorkflowRunsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkflowRunsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetWorkflowRunsPagesWithContext indicates an expected call of GetWorkflowRunsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunsPagesWithContext), varargs...)
+}
+
+// GetWorkflowRunsRequest mocks base method
+func (m *MockGlueAPI) GetWorkflowRunsRequest(arg0 *glue.GetWorkflowRunsInput) (*request.Request, *glue.GetWorkflowRunsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkflowRunsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetWorkflowRunsOutput)
+	return ret0, ret1
+}
+
+// GetWorkflowRunsRequest indicates an expected call of GetWorkflowRunsRequest
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunsRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunsRequest), arg0)
+}
+
+// GetWorkflowRunsWithContext mocks base method
+func (m *MockGlueAPI) GetWorkflowRunsWithContext(arg0 context.Context, arg1 *glue.GetWorkflowRunsInput, arg2 ...request.Option) (*glue.GetWorkflowRunsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkflowRunsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetWorkflowRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowRunsWithContext indicates an expected call of GetWorkflowRunsWithContext
+func (mr *MockGlueAPIMockRecorder) GetWorkflowRunsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowRunsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowRunsWithContext), varargs...)
+}
+
+// GetWorkflowWithContext mocks base method
+func (m *MockGlueAPI) GetWorkflowWithContext(arg0 context.Context, arg1 *glue.GetWorkflowInput, arg2 ...request.Option) (*glue.GetWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkflowWithContext indicates an expected call of GetWorkflowWithContext
+func (mr *MockGlueAPIMockRecorder) GetWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkflowWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetWorkflowWithContext), varargs...)
+}
+
 // ImportCatalogToGlue mocks base method
 func (m *MockGlueAPI) ImportCatalogToGlue(arg0 *glue.ImportCatalogToGlueInput) (*glue.ImportCatalogToGlueOutput, error) {
 	m.ctrl.T.Helper()
@@ -4379,6 +4762,89 @@ func (mr *MockGlueAPIMockRecorder) ListTriggersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTriggersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListTriggersWithContext), varargs...)
 }
 
+// ListWorkflows mocks base method
+func (m *MockGlueAPI) ListWorkflows(arg0 *glue.ListWorkflowsInput) (*glue.ListWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkflows", arg0)
+	ret0, _ := ret[0].(*glue.ListWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkflows indicates an expected call of ListWorkflows
+func (mr *MockGlueAPIMockRecorder) ListWorkflows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflows", reflect.TypeOf((*MockGlueAPI)(nil).ListWorkflows), arg0)
+}
+
+// ListWorkflowsPages mocks base method
+func (m *MockGlueAPI) ListWorkflowsPages(arg0 *glue.ListWorkflowsInput, arg1 func(*glue.ListWorkflowsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkflowsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkflowsPages indicates an expected call of ListWorkflowsPages
+func (mr *MockGlueAPIMockRecorder) ListWorkflowsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListWorkflowsPages), arg0, arg1)
+}
+
+// ListWorkflowsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListWorkflowsPagesWithContext(arg0 context.Context, arg1 *glue.ListWorkflowsInput, arg2 func(*glue.ListWorkflowsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkflowsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkflowsPagesWithContext indicates an expected call of ListWorkflowsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListWorkflowsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListWorkflowsPagesWithContext), varargs...)
+}
+
+// ListWorkflowsRequest mocks base method
+func (m *MockGlueAPI) ListWorkflowsRequest(arg0 *glue.ListWorkflowsInput) (*request.Request, *glue.ListWorkflowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkflowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListWorkflowsOutput)
+	return ret0, ret1
+}
+
+// ListWorkflowsRequest indicates an expected call of ListWorkflowsRequest
+func (mr *MockGlueAPIMockRecorder) ListWorkflowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListWorkflowsRequest), arg0)
+}
+
+// ListWorkflowsWithContext mocks base method
+func (m *MockGlueAPI) ListWorkflowsWithContext(arg0 context.Context, arg1 *glue.ListWorkflowsInput, arg2 ...request.Option) (*glue.ListWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkflowsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkflowsWithContext indicates an expected call of ListWorkflowsWithContext
+func (mr *MockGlueAPIMockRecorder) ListWorkflowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListWorkflowsWithContext), varargs...)
+}
+
 // PutDataCatalogEncryptionSettings mocks base method
 func (m *MockGlueAPI) PutDataCatalogEncryptionSettings(arg0 *glue.PutDataCatalogEncryptionSettingsInput) (*glue.PutDataCatalogEncryptionSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4477,6 +4943,56 @@ func (mr *MockGlueAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockGlueAPI)(nil).PutResourcePolicyWithContext), varargs...)
+}
+
+// PutWorkflowRunProperties mocks base method
+func (m *MockGlueAPI) PutWorkflowRunProperties(arg0 *glue.PutWorkflowRunPropertiesInput) (*glue.PutWorkflowRunPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutWorkflowRunProperties", arg0)
+	ret0, _ := ret[0].(*glue.PutWorkflowRunPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutWorkflowRunProperties indicates an expected call of PutWorkflowRunProperties
+func (mr *MockGlueAPIMockRecorder) PutWorkflowRunProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutWorkflowRunProperties", reflect.TypeOf((*MockGlueAPI)(nil).PutWorkflowRunProperties), arg0)
+}
+
+// PutWorkflowRunPropertiesRequest mocks base method
+func (m *MockGlueAPI) PutWorkflowRunPropertiesRequest(arg0 *glue.PutWorkflowRunPropertiesInput) (*request.Request, *glue.PutWorkflowRunPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutWorkflowRunPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.PutWorkflowRunPropertiesOutput)
+	return ret0, ret1
+}
+
+// PutWorkflowRunPropertiesRequest indicates an expected call of PutWorkflowRunPropertiesRequest
+func (mr *MockGlueAPIMockRecorder) PutWorkflowRunPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutWorkflowRunPropertiesRequest", reflect.TypeOf((*MockGlueAPI)(nil).PutWorkflowRunPropertiesRequest), arg0)
+}
+
+// PutWorkflowRunPropertiesWithContext mocks base method
+func (m *MockGlueAPI) PutWorkflowRunPropertiesWithContext(arg0 context.Context, arg1 *glue.PutWorkflowRunPropertiesInput, arg2 ...request.Option) (*glue.PutWorkflowRunPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutWorkflowRunPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.PutWorkflowRunPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutWorkflowRunPropertiesWithContext indicates an expected call of PutWorkflowRunPropertiesWithContext
+func (mr *MockGlueAPIMockRecorder) PutWorkflowRunPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutWorkflowRunPropertiesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).PutWorkflowRunPropertiesWithContext), varargs...)
 }
 
 // ResetJobBookmark mocks base method
@@ -4727,6 +5243,56 @@ func (mr *MockGlueAPIMockRecorder) StartTriggerWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTriggerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartTriggerWithContext), varargs...)
+}
+
+// StartWorkflowRun mocks base method
+func (m *MockGlueAPI) StartWorkflowRun(arg0 *glue.StartWorkflowRunInput) (*glue.StartWorkflowRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartWorkflowRun", arg0)
+	ret0, _ := ret[0].(*glue.StartWorkflowRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartWorkflowRun indicates an expected call of StartWorkflowRun
+func (mr *MockGlueAPIMockRecorder) StartWorkflowRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkflowRun", reflect.TypeOf((*MockGlueAPI)(nil).StartWorkflowRun), arg0)
+}
+
+// StartWorkflowRunRequest mocks base method
+func (m *MockGlueAPI) StartWorkflowRunRequest(arg0 *glue.StartWorkflowRunInput) (*request.Request, *glue.StartWorkflowRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartWorkflowRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartWorkflowRunOutput)
+	return ret0, ret1
+}
+
+// StartWorkflowRunRequest indicates an expected call of StartWorkflowRunRequest
+func (mr *MockGlueAPIMockRecorder) StartWorkflowRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkflowRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartWorkflowRunRequest), arg0)
+}
+
+// StartWorkflowRunWithContext mocks base method
+func (m *MockGlueAPI) StartWorkflowRunWithContext(arg0 context.Context, arg1 *glue.StartWorkflowRunInput, arg2 ...request.Option) (*glue.StartWorkflowRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartWorkflowRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartWorkflowRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartWorkflowRunWithContext indicates an expected call of StartWorkflowRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartWorkflowRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkflowRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartWorkflowRunWithContext), varargs...)
 }
 
 // StopCrawler mocks base method
@@ -5527,4 +6093,54 @@ func (mr *MockGlueAPIMockRecorder) UpdateUserDefinedFunctionWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserDefinedFunctionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateUserDefinedFunctionWithContext), varargs...)
+}
+
+// UpdateWorkflow mocks base method
+func (m *MockGlueAPI) UpdateWorkflow(arg0 *glue.UpdateWorkflowInput) (*glue.UpdateWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkflow", arg0)
+	ret0, _ := ret[0].(*glue.UpdateWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkflow indicates an expected call of UpdateWorkflow
+func (mr *MockGlueAPIMockRecorder) UpdateWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkflow", reflect.TypeOf((*MockGlueAPI)(nil).UpdateWorkflow), arg0)
+}
+
+// UpdateWorkflowRequest mocks base method
+func (m *MockGlueAPI) UpdateWorkflowRequest(arg0 *glue.UpdateWorkflowInput) (*request.Request, *glue.UpdateWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateWorkflowOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkflowRequest indicates an expected call of UpdateWorkflowRequest
+func (mr *MockGlueAPIMockRecorder) UpdateWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkflowRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateWorkflowRequest), arg0)
+}
+
+// UpdateWorkflowWithContext mocks base method
+func (m *MockGlueAPI) UpdateWorkflowWithContext(arg0 context.Context, arg1 *glue.UpdateWorkflowInput, arg2 ...request.Option) (*glue.UpdateWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkflowWithContext indicates an expected call of UpdateWorkflowWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkflowWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateWorkflowWithContext), varargs...)
 }
