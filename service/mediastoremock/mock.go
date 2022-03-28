@@ -684,3 +684,103 @@ func (mr *MockMediaStoreAPIMockRecorder) PutLifecyclePolicyWithContext(arg0, arg
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutLifecyclePolicyWithContext), varargs...)
 }
+
+// StartAccessLogging mocks base method
+func (m *MockMediaStoreAPI) StartAccessLogging(arg0 *mediastore.StartAccessLoggingInput) (*mediastore.StartAccessLoggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAccessLogging", arg0)
+	ret0, _ := ret[0].(*mediastore.StartAccessLoggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAccessLogging indicates an expected call of StartAccessLogging
+func (mr *MockMediaStoreAPIMockRecorder) StartAccessLogging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAccessLogging", reflect.TypeOf((*MockMediaStoreAPI)(nil).StartAccessLogging), arg0)
+}
+
+// StartAccessLoggingRequest mocks base method
+func (m *MockMediaStoreAPI) StartAccessLoggingRequest(arg0 *mediastore.StartAccessLoggingInput) (*request.Request, *mediastore.StartAccessLoggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAccessLoggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.StartAccessLoggingOutput)
+	return ret0, ret1
+}
+
+// StartAccessLoggingRequest indicates an expected call of StartAccessLoggingRequest
+func (mr *MockMediaStoreAPIMockRecorder) StartAccessLoggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAccessLoggingRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).StartAccessLoggingRequest), arg0)
+}
+
+// StartAccessLoggingWithContext mocks base method
+func (m *MockMediaStoreAPI) StartAccessLoggingWithContext(arg0 context.Context, arg1 *mediastore.StartAccessLoggingInput, arg2 ...request.Option) (*mediastore.StartAccessLoggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartAccessLoggingWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.StartAccessLoggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAccessLoggingWithContext indicates an expected call of StartAccessLoggingWithContext
+func (mr *MockMediaStoreAPIMockRecorder) StartAccessLoggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAccessLoggingWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).StartAccessLoggingWithContext), varargs...)
+}
+
+// StopAccessLogging mocks base method
+func (m *MockMediaStoreAPI) StopAccessLogging(arg0 *mediastore.StopAccessLoggingInput) (*mediastore.StopAccessLoggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopAccessLogging", arg0)
+	ret0, _ := ret[0].(*mediastore.StopAccessLoggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopAccessLogging indicates an expected call of StopAccessLogging
+func (mr *MockMediaStoreAPIMockRecorder) StopAccessLogging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopAccessLogging", reflect.TypeOf((*MockMediaStoreAPI)(nil).StopAccessLogging), arg0)
+}
+
+// StopAccessLoggingRequest mocks base method
+func (m *MockMediaStoreAPI) StopAccessLoggingRequest(arg0 *mediastore.StopAccessLoggingInput) (*request.Request, *mediastore.StopAccessLoggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopAccessLoggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.StopAccessLoggingOutput)
+	return ret0, ret1
+}
+
+// StopAccessLoggingRequest indicates an expected call of StopAccessLoggingRequest
+func (mr *MockMediaStoreAPIMockRecorder) StopAccessLoggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopAccessLoggingRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).StopAccessLoggingRequest), arg0)
+}
+
+// StopAccessLoggingWithContext mocks base method
+func (m *MockMediaStoreAPI) StopAccessLoggingWithContext(arg0 context.Context, arg1 *mediastore.StopAccessLoggingInput, arg2 ...request.Option) (*mediastore.StopAccessLoggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopAccessLoggingWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.StopAccessLoggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopAccessLoggingWithContext indicates an expected call of StopAccessLoggingWithContext
+func (mr *MockMediaStoreAPIMockRecorder) StopAccessLoggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopAccessLoggingWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).StopAccessLoggingWithContext), varargs...)
+}
