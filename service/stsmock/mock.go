@@ -235,6 +235,56 @@ func (mr *MockSTSAPIMockRecorder) DecodeAuthorizationMessageWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DecodeAuthorizationMessageWithContext", reflect.TypeOf((*MockSTSAPI)(nil).DecodeAuthorizationMessageWithContext), varargs...)
 }
 
+// GetAccessKeyInfo mocks base method
+func (m *MockSTSAPI) GetAccessKeyInfo(arg0 *sts.GetAccessKeyInfoInput) (*sts.GetAccessKeyInfoOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessKeyInfo", arg0)
+	ret0, _ := ret[0].(*sts.GetAccessKeyInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessKeyInfo indicates an expected call of GetAccessKeyInfo
+func (mr *MockSTSAPIMockRecorder) GetAccessKeyInfo(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessKeyInfo", reflect.TypeOf((*MockSTSAPI)(nil).GetAccessKeyInfo), arg0)
+}
+
+// GetAccessKeyInfoRequest mocks base method
+func (m *MockSTSAPI) GetAccessKeyInfoRequest(arg0 *sts.GetAccessKeyInfoInput) (*request.Request, *sts.GetAccessKeyInfoOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessKeyInfoRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sts.GetAccessKeyInfoOutput)
+	return ret0, ret1
+}
+
+// GetAccessKeyInfoRequest indicates an expected call of GetAccessKeyInfoRequest
+func (mr *MockSTSAPIMockRecorder) GetAccessKeyInfoRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessKeyInfoRequest", reflect.TypeOf((*MockSTSAPI)(nil).GetAccessKeyInfoRequest), arg0)
+}
+
+// GetAccessKeyInfoWithContext mocks base method
+func (m *MockSTSAPI) GetAccessKeyInfoWithContext(arg0 context.Context, arg1 *sts.GetAccessKeyInfoInput, arg2 ...request.Option) (*sts.GetAccessKeyInfoOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessKeyInfoWithContext", varargs...)
+	ret0, _ := ret[0].(*sts.GetAccessKeyInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessKeyInfoWithContext indicates an expected call of GetAccessKeyInfoWithContext
+func (mr *MockSTSAPIMockRecorder) GetAccessKeyInfoWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessKeyInfoWithContext", reflect.TypeOf((*MockSTSAPI)(nil).GetAccessKeyInfoWithContext), varargs...)
+}
+
 // GetCallerIdentity mocks base method
 func (m *MockSTSAPI) GetCallerIdentity(arg0 *sts.GetCallerIdentityInput) (*sts.GetCallerIdentityOutput, error) {
 	m.ctrl.T.Helper()

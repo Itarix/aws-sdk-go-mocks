@@ -1385,6 +1385,56 @@ func (mr *MockPinpointAPIMockRecorder) GetAppWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetAppWithContext), varargs...)
 }
 
+// GetApplicationDateRangeKpi mocks base method
+func (m *MockPinpointAPI) GetApplicationDateRangeKpi(arg0 *pinpoint.GetApplicationDateRangeKpiInput) (*pinpoint.GetApplicationDateRangeKpiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApplicationDateRangeKpi", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetApplicationDateRangeKpiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApplicationDateRangeKpi indicates an expected call of GetApplicationDateRangeKpi
+func (mr *MockPinpointAPIMockRecorder) GetApplicationDateRangeKpi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApplicationDateRangeKpi", reflect.TypeOf((*MockPinpointAPI)(nil).GetApplicationDateRangeKpi), arg0)
+}
+
+// GetApplicationDateRangeKpiRequest mocks base method
+func (m *MockPinpointAPI) GetApplicationDateRangeKpiRequest(arg0 *pinpoint.GetApplicationDateRangeKpiInput) (*request.Request, *pinpoint.GetApplicationDateRangeKpiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApplicationDateRangeKpiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetApplicationDateRangeKpiOutput)
+	return ret0, ret1
+}
+
+// GetApplicationDateRangeKpiRequest indicates an expected call of GetApplicationDateRangeKpiRequest
+func (mr *MockPinpointAPIMockRecorder) GetApplicationDateRangeKpiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApplicationDateRangeKpiRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetApplicationDateRangeKpiRequest), arg0)
+}
+
+// GetApplicationDateRangeKpiWithContext mocks base method
+func (m *MockPinpointAPI) GetApplicationDateRangeKpiWithContext(arg0 context.Context, arg1 *pinpoint.GetApplicationDateRangeKpiInput, arg2 ...request.Option) (*pinpoint.GetApplicationDateRangeKpiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetApplicationDateRangeKpiWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetApplicationDateRangeKpiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApplicationDateRangeKpiWithContext indicates an expected call of GetApplicationDateRangeKpiWithContext
+func (mr *MockPinpointAPIMockRecorder) GetApplicationDateRangeKpiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApplicationDateRangeKpiWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetApplicationDateRangeKpiWithContext), varargs...)
+}
+
 // GetApplicationSettings mocks base method
 func (m *MockPinpointAPI) GetApplicationSettings(arg0 *pinpoint.GetApplicationSettingsInput) (*pinpoint.GetApplicationSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1598,6 +1648,56 @@ func (mr *MockPinpointAPIMockRecorder) GetCampaignActivitiesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCampaignActivitiesWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetCampaignActivitiesWithContext), varargs...)
+}
+
+// GetCampaignDateRangeKpi mocks base method
+func (m *MockPinpointAPI) GetCampaignDateRangeKpi(arg0 *pinpoint.GetCampaignDateRangeKpiInput) (*pinpoint.GetCampaignDateRangeKpiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCampaignDateRangeKpi", arg0)
+	ret0, _ := ret[0].(*pinpoint.GetCampaignDateRangeKpiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCampaignDateRangeKpi indicates an expected call of GetCampaignDateRangeKpi
+func (mr *MockPinpointAPIMockRecorder) GetCampaignDateRangeKpi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCampaignDateRangeKpi", reflect.TypeOf((*MockPinpointAPI)(nil).GetCampaignDateRangeKpi), arg0)
+}
+
+// GetCampaignDateRangeKpiRequest mocks base method
+func (m *MockPinpointAPI) GetCampaignDateRangeKpiRequest(arg0 *pinpoint.GetCampaignDateRangeKpiInput) (*request.Request, *pinpoint.GetCampaignDateRangeKpiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCampaignDateRangeKpiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.GetCampaignDateRangeKpiOutput)
+	return ret0, ret1
+}
+
+// GetCampaignDateRangeKpiRequest indicates an expected call of GetCampaignDateRangeKpiRequest
+func (mr *MockPinpointAPIMockRecorder) GetCampaignDateRangeKpiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCampaignDateRangeKpiRequest", reflect.TypeOf((*MockPinpointAPI)(nil).GetCampaignDateRangeKpiRequest), arg0)
+}
+
+// GetCampaignDateRangeKpiWithContext mocks base method
+func (m *MockPinpointAPI) GetCampaignDateRangeKpiWithContext(arg0 context.Context, arg1 *pinpoint.GetCampaignDateRangeKpiInput, arg2 ...request.Option) (*pinpoint.GetCampaignDateRangeKpiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCampaignDateRangeKpiWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.GetCampaignDateRangeKpiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCampaignDateRangeKpiWithContext indicates an expected call of GetCampaignDateRangeKpiWithContext
+func (mr *MockPinpointAPIMockRecorder) GetCampaignDateRangeKpiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCampaignDateRangeKpiWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).GetCampaignDateRangeKpiWithContext), varargs...)
 }
 
 // GetCampaignRequest mocks base method
