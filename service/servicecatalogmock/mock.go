@@ -1900,6 +1900,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceAction(arg0 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceAction", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceAction), arg0)
 }
 
+// DescribeServiceActionExecutionParameters mocks base method
+func (m *MockServiceCatalogAPI) DescribeServiceActionExecutionParameters(arg0 *servicecatalog.DescribeServiceActionExecutionParametersInput) (*servicecatalog.DescribeServiceActionExecutionParametersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeServiceActionExecutionParameters", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DescribeServiceActionExecutionParametersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeServiceActionExecutionParameters indicates an expected call of DescribeServiceActionExecutionParameters
+func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceActionExecutionParameters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceActionExecutionParameters", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceActionExecutionParameters), arg0)
+}
+
+// DescribeServiceActionExecutionParametersRequest mocks base method
+func (m *MockServiceCatalogAPI) DescribeServiceActionExecutionParametersRequest(arg0 *servicecatalog.DescribeServiceActionExecutionParametersInput) (*request.Request, *servicecatalog.DescribeServiceActionExecutionParametersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeServiceActionExecutionParametersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DescribeServiceActionExecutionParametersOutput)
+	return ret0, ret1
+}
+
+// DescribeServiceActionExecutionParametersRequest indicates an expected call of DescribeServiceActionExecutionParametersRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceActionExecutionParametersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceActionExecutionParametersRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceActionExecutionParametersRequest), arg0)
+}
+
+// DescribeServiceActionExecutionParametersWithContext mocks base method
+func (m *MockServiceCatalogAPI) DescribeServiceActionExecutionParametersWithContext(arg0 context.Context, arg1 *servicecatalog.DescribeServiceActionExecutionParametersInput, arg2 ...request.Option) (*servicecatalog.DescribeServiceActionExecutionParametersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeServiceActionExecutionParametersWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DescribeServiceActionExecutionParametersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeServiceActionExecutionParametersWithContext indicates an expected call of DescribeServiceActionExecutionParametersWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DescribeServiceActionExecutionParametersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceActionExecutionParametersWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribeServiceActionExecutionParametersWithContext), varargs...)
+}
+
 // DescribeServiceActionRequest mocks base method
 func (m *MockServiceCatalogAPI) DescribeServiceActionRequest(arg0 *servicecatalog.DescribeServiceActionInput) (*request.Request, *servicecatalog.DescribeServiceActionOutput) {
 	m.ctrl.T.Helper()
