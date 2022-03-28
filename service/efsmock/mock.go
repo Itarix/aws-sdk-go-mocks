@@ -385,6 +385,56 @@ func (mr *MockEFSAPIMockRecorder) DescribeFileSystemsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeFileSystemsWithContext), varargs...)
 }
 
+// DescribeLifecycleConfiguration mocks base method
+func (m *MockEFSAPI) DescribeLifecycleConfiguration(arg0 *efs.DescribeLifecycleConfigurationInput) (*efs.DescribeLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLifecycleConfiguration", arg0)
+	ret0, _ := ret[0].(*efs.DescribeLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLifecycleConfiguration indicates an expected call of DescribeLifecycleConfiguration
+func (mr *MockEFSAPIMockRecorder) DescribeLifecycleConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLifecycleConfiguration", reflect.TypeOf((*MockEFSAPI)(nil).DescribeLifecycleConfiguration), arg0)
+}
+
+// DescribeLifecycleConfigurationRequest mocks base method
+func (m *MockEFSAPI) DescribeLifecycleConfigurationRequest(arg0 *efs.DescribeLifecycleConfigurationInput) (*request.Request, *efs.DescribeLifecycleConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLifecycleConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DescribeLifecycleConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeLifecycleConfigurationRequest indicates an expected call of DescribeLifecycleConfigurationRequest
+func (mr *MockEFSAPIMockRecorder) DescribeLifecycleConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLifecycleConfigurationRequest", reflect.TypeOf((*MockEFSAPI)(nil).DescribeLifecycleConfigurationRequest), arg0)
+}
+
+// DescribeLifecycleConfigurationWithContext mocks base method
+func (m *MockEFSAPI) DescribeLifecycleConfigurationWithContext(arg0 context.Context, arg1 *efs.DescribeLifecycleConfigurationInput, arg2 ...request.Option) (*efs.DescribeLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLifecycleConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DescribeLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLifecycleConfigurationWithContext indicates an expected call of DescribeLifecycleConfigurationWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeLifecycleConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLifecycleConfigurationWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeLifecycleConfigurationWithContext), varargs...)
+}
+
 // DescribeMountTargetSecurityGroups mocks base method
 func (m *MockEFSAPI) DescribeMountTargetSecurityGroups(arg0 *efs.DescribeMountTargetSecurityGroupsInput) (*efs.DescribeMountTargetSecurityGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockEFSAPIMockRecorder) ModifyMountTargetSecurityGroupsWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyMountTargetSecurityGroupsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).ModifyMountTargetSecurityGroupsWithContext), varargs...)
+}
+
+// PutLifecycleConfiguration mocks base method
+func (m *MockEFSAPI) PutLifecycleConfiguration(arg0 *efs.PutLifecycleConfigurationInput) (*efs.PutLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLifecycleConfiguration", arg0)
+	ret0, _ := ret[0].(*efs.PutLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLifecycleConfiguration indicates an expected call of PutLifecycleConfiguration
+func (mr *MockEFSAPIMockRecorder) PutLifecycleConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecycleConfiguration", reflect.TypeOf((*MockEFSAPI)(nil).PutLifecycleConfiguration), arg0)
+}
+
+// PutLifecycleConfigurationRequest mocks base method
+func (m *MockEFSAPI) PutLifecycleConfigurationRequest(arg0 *efs.PutLifecycleConfigurationInput) (*request.Request, *efs.PutLifecycleConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLifecycleConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.PutLifecycleConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutLifecycleConfigurationRequest indicates an expected call of PutLifecycleConfigurationRequest
+func (mr *MockEFSAPIMockRecorder) PutLifecycleConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecycleConfigurationRequest", reflect.TypeOf((*MockEFSAPI)(nil).PutLifecycleConfigurationRequest), arg0)
+}
+
+// PutLifecycleConfigurationWithContext mocks base method
+func (m *MockEFSAPI) PutLifecycleConfigurationWithContext(arg0 context.Context, arg1 *efs.PutLifecycleConfigurationInput, arg2 ...request.Option) (*efs.PutLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutLifecycleConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.PutLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLifecycleConfigurationWithContext indicates an expected call of PutLifecycleConfigurationWithContext
+func (mr *MockEFSAPIMockRecorder) PutLifecycleConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecycleConfigurationWithContext", reflect.TypeOf((*MockEFSAPI)(nil).PutLifecycleConfigurationWithContext), varargs...)
 }
 
 // UpdateFileSystem mocks base method
