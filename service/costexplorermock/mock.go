@@ -385,6 +385,272 @@ func (mr *MockCostExplorerAPIMockRecorder) GetRightsizingRecommendationWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRightsizingRecommendationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetRightsizingRecommendationWithContext), varargs...)
 }
 
+// GetSavingsPlansCoverage mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansCoverage(arg0 *costexplorer.GetSavingsPlansCoverageInput) (*costexplorer.GetSavingsPlansCoverageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansCoverage", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansCoverageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansCoverage indicates an expected call of GetSavingsPlansCoverage
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansCoverage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansCoverage", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansCoverage), arg0)
+}
+
+// GetSavingsPlansCoveragePages mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansCoveragePages(arg0 *costexplorer.GetSavingsPlansCoverageInput, arg1 func(*costexplorer.GetSavingsPlansCoverageOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansCoveragePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetSavingsPlansCoveragePages indicates an expected call of GetSavingsPlansCoveragePages
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansCoveragePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansCoveragePages", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansCoveragePages), arg0, arg1)
+}
+
+// GetSavingsPlansCoveragePagesWithContext mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansCoveragePagesWithContext(arg0 context.Context, arg1 *costexplorer.GetSavingsPlansCoverageInput, arg2 func(*costexplorer.GetSavingsPlansCoverageOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSavingsPlansCoveragePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetSavingsPlansCoveragePagesWithContext indicates an expected call of GetSavingsPlansCoveragePagesWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansCoveragePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansCoveragePagesWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansCoveragePagesWithContext), varargs...)
+}
+
+// GetSavingsPlansCoverageRequest mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansCoverageRequest(arg0 *costexplorer.GetSavingsPlansCoverageInput) (*request.Request, *costexplorer.GetSavingsPlansCoverageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansCoverageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetSavingsPlansCoverageOutput)
+	return ret0, ret1
+}
+
+// GetSavingsPlansCoverageRequest indicates an expected call of GetSavingsPlansCoverageRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansCoverageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansCoverageRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansCoverageRequest), arg0)
+}
+
+// GetSavingsPlansCoverageWithContext mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansCoverageWithContext(arg0 context.Context, arg1 *costexplorer.GetSavingsPlansCoverageInput, arg2 ...request.Option) (*costexplorer.GetSavingsPlansCoverageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSavingsPlansCoverageWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansCoverageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansCoverageWithContext indicates an expected call of GetSavingsPlansCoverageWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansCoverageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansCoverageWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansCoverageWithContext), varargs...)
+}
+
+// GetSavingsPlansPurchaseRecommendation mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansPurchaseRecommendation(arg0 *costexplorer.GetSavingsPlansPurchaseRecommendationInput) (*costexplorer.GetSavingsPlansPurchaseRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansPurchaseRecommendation", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansPurchaseRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansPurchaseRecommendation indicates an expected call of GetSavingsPlansPurchaseRecommendation
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansPurchaseRecommendation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansPurchaseRecommendation", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansPurchaseRecommendation), arg0)
+}
+
+// GetSavingsPlansPurchaseRecommendationRequest mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansPurchaseRecommendationRequest(arg0 *costexplorer.GetSavingsPlansPurchaseRecommendationInput) (*request.Request, *costexplorer.GetSavingsPlansPurchaseRecommendationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansPurchaseRecommendationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetSavingsPlansPurchaseRecommendationOutput)
+	return ret0, ret1
+}
+
+// GetSavingsPlansPurchaseRecommendationRequest indicates an expected call of GetSavingsPlansPurchaseRecommendationRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansPurchaseRecommendationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansPurchaseRecommendationRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansPurchaseRecommendationRequest), arg0)
+}
+
+// GetSavingsPlansPurchaseRecommendationWithContext mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansPurchaseRecommendationWithContext(arg0 context.Context, arg1 *costexplorer.GetSavingsPlansPurchaseRecommendationInput, arg2 ...request.Option) (*costexplorer.GetSavingsPlansPurchaseRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSavingsPlansPurchaseRecommendationWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansPurchaseRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansPurchaseRecommendationWithContext indicates an expected call of GetSavingsPlansPurchaseRecommendationWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansPurchaseRecommendationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansPurchaseRecommendationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansPurchaseRecommendationWithContext), varargs...)
+}
+
+// GetSavingsPlansUtilization mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilization(arg0 *costexplorer.GetSavingsPlansUtilizationInput) (*costexplorer.GetSavingsPlansUtilizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilization", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansUtilizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansUtilization indicates an expected call of GetSavingsPlansUtilization
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilization", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilization), arg0)
+}
+
+// GetSavingsPlansUtilizationDetails mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationDetails(arg0 *costexplorer.GetSavingsPlansUtilizationDetailsInput) (*costexplorer.GetSavingsPlansUtilizationDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationDetails", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansUtilizationDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansUtilizationDetails indicates an expected call of GetSavingsPlansUtilizationDetails
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationDetails", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationDetails), arg0)
+}
+
+// GetSavingsPlansUtilizationDetailsPages mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationDetailsPages(arg0 *costexplorer.GetSavingsPlansUtilizationDetailsInput, arg1 func(*costexplorer.GetSavingsPlansUtilizationDetailsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationDetailsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetSavingsPlansUtilizationDetailsPages indicates an expected call of GetSavingsPlansUtilizationDetailsPages
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationDetailsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationDetailsPages", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationDetailsPages), arg0, arg1)
+}
+
+// GetSavingsPlansUtilizationDetailsPagesWithContext mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationDetailsPagesWithContext(arg0 context.Context, arg1 *costexplorer.GetSavingsPlansUtilizationDetailsInput, arg2 func(*costexplorer.GetSavingsPlansUtilizationDetailsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationDetailsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetSavingsPlansUtilizationDetailsPagesWithContext indicates an expected call of GetSavingsPlansUtilizationDetailsPagesWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationDetailsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationDetailsPagesWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationDetailsPagesWithContext), varargs...)
+}
+
+// GetSavingsPlansUtilizationDetailsRequest mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationDetailsRequest(arg0 *costexplorer.GetSavingsPlansUtilizationDetailsInput) (*request.Request, *costexplorer.GetSavingsPlansUtilizationDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetSavingsPlansUtilizationDetailsOutput)
+	return ret0, ret1
+}
+
+// GetSavingsPlansUtilizationDetailsRequest indicates an expected call of GetSavingsPlansUtilizationDetailsRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationDetailsRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationDetailsRequest), arg0)
+}
+
+// GetSavingsPlansUtilizationDetailsWithContext mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationDetailsWithContext(arg0 context.Context, arg1 *costexplorer.GetSavingsPlansUtilizationDetailsInput, arg2 ...request.Option) (*costexplorer.GetSavingsPlansUtilizationDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansUtilizationDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansUtilizationDetailsWithContext indicates an expected call of GetSavingsPlansUtilizationDetailsWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationDetailsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationDetailsWithContext), varargs...)
+}
+
+// GetSavingsPlansUtilizationRequest mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationRequest(arg0 *costexplorer.GetSavingsPlansUtilizationInput) (*request.Request, *costexplorer.GetSavingsPlansUtilizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetSavingsPlansUtilizationOutput)
+	return ret0, ret1
+}
+
+// GetSavingsPlansUtilizationRequest indicates an expected call of GetSavingsPlansUtilizationRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationRequest), arg0)
+}
+
+// GetSavingsPlansUtilizationWithContext mocks base method
+func (m *MockCostExplorerAPI) GetSavingsPlansUtilizationWithContext(arg0 context.Context, arg1 *costexplorer.GetSavingsPlansUtilizationInput, arg2 ...request.Option) (*costexplorer.GetSavingsPlansUtilizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSavingsPlansUtilizationWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetSavingsPlansUtilizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSavingsPlansUtilizationWithContext indicates an expected call of GetSavingsPlansUtilizationWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetSavingsPlansUtilizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSavingsPlansUtilizationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetSavingsPlansUtilizationWithContext), varargs...)
+}
+
 // GetTags mocks base method
 func (m *MockCostExplorerAPI) GetTags(arg0 *costexplorer.GetTagsInput) (*costexplorer.GetTagsOutput, error) {
 	m.ctrl.T.Helper()
