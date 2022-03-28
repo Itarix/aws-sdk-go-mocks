@@ -735,6 +735,56 @@ func (mr *MockIoTAPIMockRecorder) ClearDefaultAuthorizerWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClearDefaultAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ClearDefaultAuthorizerWithContext), varargs...)
 }
 
+// ConfirmTopicRuleDestination mocks base method
+func (m *MockIoTAPI) ConfirmTopicRuleDestination(arg0 *iot.ConfirmTopicRuleDestinationInput) (*iot.ConfirmTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConfirmTopicRuleDestination", arg0)
+	ret0, _ := ret[0].(*iot.ConfirmTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConfirmTopicRuleDestination indicates an expected call of ConfirmTopicRuleDestination
+func (mr *MockIoTAPIMockRecorder) ConfirmTopicRuleDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfirmTopicRuleDestination", reflect.TypeOf((*MockIoTAPI)(nil).ConfirmTopicRuleDestination), arg0)
+}
+
+// ConfirmTopicRuleDestinationRequest mocks base method
+func (m *MockIoTAPI) ConfirmTopicRuleDestinationRequest(arg0 *iot.ConfirmTopicRuleDestinationInput) (*request.Request, *iot.ConfirmTopicRuleDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConfirmTopicRuleDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ConfirmTopicRuleDestinationOutput)
+	return ret0, ret1
+}
+
+// ConfirmTopicRuleDestinationRequest indicates an expected call of ConfirmTopicRuleDestinationRequest
+func (mr *MockIoTAPIMockRecorder) ConfirmTopicRuleDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfirmTopicRuleDestinationRequest", reflect.TypeOf((*MockIoTAPI)(nil).ConfirmTopicRuleDestinationRequest), arg0)
+}
+
+// ConfirmTopicRuleDestinationWithContext mocks base method
+func (m *MockIoTAPI) ConfirmTopicRuleDestinationWithContext(arg0 context.Context, arg1 *iot.ConfirmTopicRuleDestinationInput, arg2 ...request.Option) (*iot.ConfirmTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ConfirmTopicRuleDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ConfirmTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConfirmTopicRuleDestinationWithContext indicates an expected call of ConfirmTopicRuleDestinationWithContext
+func (mr *MockIoTAPIMockRecorder) ConfirmTopicRuleDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfirmTopicRuleDestinationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ConfirmTopicRuleDestinationWithContext), varargs...)
+}
+
 // CreateAuthorizer mocks base method
 func (m *MockIoTAPI) CreateAuthorizer(arg0 *iot.CreateAuthorizerInput) (*iot.CreateAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
@@ -1598,6 +1648,56 @@ func (m *MockIoTAPI) CreateTopicRule(arg0 *iot.CreateTopicRuleInput) (*iot.Creat
 func (mr *MockIoTAPIMockRecorder) CreateTopicRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTopicRule", reflect.TypeOf((*MockIoTAPI)(nil).CreateTopicRule), arg0)
+}
+
+// CreateTopicRuleDestination mocks base method
+func (m *MockIoTAPI) CreateTopicRuleDestination(arg0 *iot.CreateTopicRuleDestinationInput) (*iot.CreateTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTopicRuleDestination", arg0)
+	ret0, _ := ret[0].(*iot.CreateTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTopicRuleDestination indicates an expected call of CreateTopicRuleDestination
+func (mr *MockIoTAPIMockRecorder) CreateTopicRuleDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTopicRuleDestination", reflect.TypeOf((*MockIoTAPI)(nil).CreateTopicRuleDestination), arg0)
+}
+
+// CreateTopicRuleDestinationRequest mocks base method
+func (m *MockIoTAPI) CreateTopicRuleDestinationRequest(arg0 *iot.CreateTopicRuleDestinationInput) (*request.Request, *iot.CreateTopicRuleDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTopicRuleDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateTopicRuleDestinationOutput)
+	return ret0, ret1
+}
+
+// CreateTopicRuleDestinationRequest indicates an expected call of CreateTopicRuleDestinationRequest
+func (mr *MockIoTAPIMockRecorder) CreateTopicRuleDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTopicRuleDestinationRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateTopicRuleDestinationRequest), arg0)
+}
+
+// CreateTopicRuleDestinationWithContext mocks base method
+func (m *MockIoTAPI) CreateTopicRuleDestinationWithContext(arg0 context.Context, arg1 *iot.CreateTopicRuleDestinationInput, arg2 ...request.Option) (*iot.CreateTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTopicRuleDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTopicRuleDestinationWithContext indicates an expected call of CreateTopicRuleDestinationWithContext
+func (mr *MockIoTAPIMockRecorder) CreateTopicRuleDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTopicRuleDestinationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateTopicRuleDestinationWithContext), varargs...)
 }
 
 // CreateTopicRuleRequest mocks base method
@@ -2648,6 +2748,56 @@ func (m *MockIoTAPI) DeleteTopicRule(arg0 *iot.DeleteTopicRuleInput) (*iot.Delet
 func (mr *MockIoTAPIMockRecorder) DeleteTopicRule(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTopicRule", reflect.TypeOf((*MockIoTAPI)(nil).DeleteTopicRule), arg0)
+}
+
+// DeleteTopicRuleDestination mocks base method
+func (m *MockIoTAPI) DeleteTopicRuleDestination(arg0 *iot.DeleteTopicRuleDestinationInput) (*iot.DeleteTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTopicRuleDestination", arg0)
+	ret0, _ := ret[0].(*iot.DeleteTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTopicRuleDestination indicates an expected call of DeleteTopicRuleDestination
+func (mr *MockIoTAPIMockRecorder) DeleteTopicRuleDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTopicRuleDestination", reflect.TypeOf((*MockIoTAPI)(nil).DeleteTopicRuleDestination), arg0)
+}
+
+// DeleteTopicRuleDestinationRequest mocks base method
+func (m *MockIoTAPI) DeleteTopicRuleDestinationRequest(arg0 *iot.DeleteTopicRuleDestinationInput) (*request.Request, *iot.DeleteTopicRuleDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTopicRuleDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteTopicRuleDestinationOutput)
+	return ret0, ret1
+}
+
+// DeleteTopicRuleDestinationRequest indicates an expected call of DeleteTopicRuleDestinationRequest
+func (mr *MockIoTAPIMockRecorder) DeleteTopicRuleDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTopicRuleDestinationRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteTopicRuleDestinationRequest), arg0)
+}
+
+// DeleteTopicRuleDestinationWithContext mocks base method
+func (m *MockIoTAPI) DeleteTopicRuleDestinationWithContext(arg0 context.Context, arg1 *iot.DeleteTopicRuleDestinationInput, arg2 ...request.Option) (*iot.DeleteTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTopicRuleDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTopicRuleDestinationWithContext indicates an expected call of DeleteTopicRuleDestinationWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteTopicRuleDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTopicRuleDestinationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteTopicRuleDestinationWithContext), varargs...)
 }
 
 // DeleteTopicRuleRequest mocks base method
@@ -4800,6 +4950,56 @@ func (mr *MockIoTAPIMockRecorder) GetTopicRule(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTopicRule", reflect.TypeOf((*MockIoTAPI)(nil).GetTopicRule), arg0)
 }
 
+// GetTopicRuleDestination mocks base method
+func (m *MockIoTAPI) GetTopicRuleDestination(arg0 *iot.GetTopicRuleDestinationInput) (*iot.GetTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTopicRuleDestination", arg0)
+	ret0, _ := ret[0].(*iot.GetTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTopicRuleDestination indicates an expected call of GetTopicRuleDestination
+func (mr *MockIoTAPIMockRecorder) GetTopicRuleDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTopicRuleDestination", reflect.TypeOf((*MockIoTAPI)(nil).GetTopicRuleDestination), arg0)
+}
+
+// GetTopicRuleDestinationRequest mocks base method
+func (m *MockIoTAPI) GetTopicRuleDestinationRequest(arg0 *iot.GetTopicRuleDestinationInput) (*request.Request, *iot.GetTopicRuleDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTopicRuleDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.GetTopicRuleDestinationOutput)
+	return ret0, ret1
+}
+
+// GetTopicRuleDestinationRequest indicates an expected call of GetTopicRuleDestinationRequest
+func (mr *MockIoTAPIMockRecorder) GetTopicRuleDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTopicRuleDestinationRequest", reflect.TypeOf((*MockIoTAPI)(nil).GetTopicRuleDestinationRequest), arg0)
+}
+
+// GetTopicRuleDestinationWithContext mocks base method
+func (m *MockIoTAPI) GetTopicRuleDestinationWithContext(arg0 context.Context, arg1 *iot.GetTopicRuleDestinationInput, arg2 ...request.Option) (*iot.GetTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTopicRuleDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.GetTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTopicRuleDestinationWithContext indicates an expected call of GetTopicRuleDestinationWithContext
+func (mr *MockIoTAPIMockRecorder) GetTopicRuleDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTopicRuleDestinationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetTopicRuleDestinationWithContext), varargs...)
+}
+
 // GetTopicRuleRequest mocks base method
 func (m *MockIoTAPI) GetTopicRuleRequest(arg0 *iot.GetTopicRuleInput) (*request.Request, *iot.GetTopicRuleOutput) {
 	m.ctrl.T.Helper()
@@ -6883,6 +7083,56 @@ func (mr *MockIoTAPIMockRecorder) ListThingsWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListThingsWithContext), varargs...)
+}
+
+// ListTopicRuleDestinations mocks base method
+func (m *MockIoTAPI) ListTopicRuleDestinations(arg0 *iot.ListTopicRuleDestinationsInput) (*iot.ListTopicRuleDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTopicRuleDestinations", arg0)
+	ret0, _ := ret[0].(*iot.ListTopicRuleDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTopicRuleDestinations indicates an expected call of ListTopicRuleDestinations
+func (mr *MockIoTAPIMockRecorder) ListTopicRuleDestinations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTopicRuleDestinations", reflect.TypeOf((*MockIoTAPI)(nil).ListTopicRuleDestinations), arg0)
+}
+
+// ListTopicRuleDestinationsRequest mocks base method
+func (m *MockIoTAPI) ListTopicRuleDestinationsRequest(arg0 *iot.ListTopicRuleDestinationsInput) (*request.Request, *iot.ListTopicRuleDestinationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTopicRuleDestinationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListTopicRuleDestinationsOutput)
+	return ret0, ret1
+}
+
+// ListTopicRuleDestinationsRequest indicates an expected call of ListTopicRuleDestinationsRequest
+func (mr *MockIoTAPIMockRecorder) ListTopicRuleDestinationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTopicRuleDestinationsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListTopicRuleDestinationsRequest), arg0)
+}
+
+// ListTopicRuleDestinationsWithContext mocks base method
+func (m *MockIoTAPI) ListTopicRuleDestinationsWithContext(arg0 context.Context, arg1 *iot.ListTopicRuleDestinationsInput, arg2 ...request.Option) (*iot.ListTopicRuleDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTopicRuleDestinationsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListTopicRuleDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTopicRuleDestinationsWithContext indicates an expected call of ListTopicRuleDestinationsWithContext
+func (mr *MockIoTAPIMockRecorder) ListTopicRuleDestinationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTopicRuleDestinationsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListTopicRuleDestinationsWithContext), varargs...)
 }
 
 // ListTopicRules mocks base method
@@ -8983,6 +9233,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateThingWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThingWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateThingWithContext), varargs...)
+}
+
+// UpdateTopicRuleDestination mocks base method
+func (m *MockIoTAPI) UpdateTopicRuleDestination(arg0 *iot.UpdateTopicRuleDestinationInput) (*iot.UpdateTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTopicRuleDestination", arg0)
+	ret0, _ := ret[0].(*iot.UpdateTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTopicRuleDestination indicates an expected call of UpdateTopicRuleDestination
+func (mr *MockIoTAPIMockRecorder) UpdateTopicRuleDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTopicRuleDestination", reflect.TypeOf((*MockIoTAPI)(nil).UpdateTopicRuleDestination), arg0)
+}
+
+// UpdateTopicRuleDestinationRequest mocks base method
+func (m *MockIoTAPI) UpdateTopicRuleDestinationRequest(arg0 *iot.UpdateTopicRuleDestinationInput) (*request.Request, *iot.UpdateTopicRuleDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTopicRuleDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateTopicRuleDestinationOutput)
+	return ret0, ret1
+}
+
+// UpdateTopicRuleDestinationRequest indicates an expected call of UpdateTopicRuleDestinationRequest
+func (mr *MockIoTAPIMockRecorder) UpdateTopicRuleDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTopicRuleDestinationRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateTopicRuleDestinationRequest), arg0)
+}
+
+// UpdateTopicRuleDestinationWithContext mocks base method
+func (m *MockIoTAPI) UpdateTopicRuleDestinationWithContext(arg0 context.Context, arg1 *iot.UpdateTopicRuleDestinationInput, arg2 ...request.Option) (*iot.UpdateTopicRuleDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTopicRuleDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateTopicRuleDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTopicRuleDestinationWithContext indicates an expected call of UpdateTopicRuleDestinationWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateTopicRuleDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTopicRuleDestinationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateTopicRuleDestinationWithContext), varargs...)
 }
 
 // ValidateSecurityProfileBehaviors mocks base method

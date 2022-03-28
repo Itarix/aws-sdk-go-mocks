@@ -16746,6 +16746,56 @@ func (mr *MockEC2APIMockRecorder) ModifyInstanceEventStartTimeWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceEventStartTimeWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceEventStartTimeWithContext), varargs...)
 }
 
+// ModifyInstanceMetadataOptions mocks base method
+func (m *MockEC2API) ModifyInstanceMetadataOptions(arg0 *ec2.ModifyInstanceMetadataOptionsInput) (*ec2.ModifyInstanceMetadataOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyInstanceMetadataOptions", arg0)
+	ret0, _ := ret[0].(*ec2.ModifyInstanceMetadataOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyInstanceMetadataOptions indicates an expected call of ModifyInstanceMetadataOptions
+func (mr *MockEC2APIMockRecorder) ModifyInstanceMetadataOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceMetadataOptions", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceMetadataOptions), arg0)
+}
+
+// ModifyInstanceMetadataOptionsRequest mocks base method
+func (m *MockEC2API) ModifyInstanceMetadataOptionsRequest(arg0 *ec2.ModifyInstanceMetadataOptionsInput) (*request.Request, *ec2.ModifyInstanceMetadataOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyInstanceMetadataOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ModifyInstanceMetadataOptionsOutput)
+	return ret0, ret1
+}
+
+// ModifyInstanceMetadataOptionsRequest indicates an expected call of ModifyInstanceMetadataOptionsRequest
+func (mr *MockEC2APIMockRecorder) ModifyInstanceMetadataOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceMetadataOptionsRequest", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceMetadataOptionsRequest), arg0)
+}
+
+// ModifyInstanceMetadataOptionsWithContext mocks base method
+func (m *MockEC2API) ModifyInstanceMetadataOptionsWithContext(arg0 context.Context, arg1 *ec2.ModifyInstanceMetadataOptionsInput, arg2 ...request.Option) (*ec2.ModifyInstanceMetadataOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyInstanceMetadataOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ModifyInstanceMetadataOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyInstanceMetadataOptionsWithContext indicates an expected call of ModifyInstanceMetadataOptionsWithContext
+func (mr *MockEC2APIMockRecorder) ModifyInstanceMetadataOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceMetadataOptionsWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceMetadataOptionsWithContext), varargs...)
+}
+
 // ModifyInstancePlacement mocks base method
 func (m *MockEC2API) ModifyInstancePlacement(arg0 *ec2.ModifyInstancePlacementInput) (*ec2.ModifyInstancePlacementOutput, error) {
 	m.ctrl.T.Helper()

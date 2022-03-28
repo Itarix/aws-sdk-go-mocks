@@ -1434,6 +1434,56 @@ func (mr *MockCloudFormationAPIMockRecorder) DetectStackResourceDriftWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectStackResourceDriftWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).DetectStackResourceDriftWithContext), varargs...)
 }
 
+// DetectStackSetDrift mocks base method
+func (m *MockCloudFormationAPI) DetectStackSetDrift(arg0 *cloudformation.DetectStackSetDriftInput) (*cloudformation.DetectStackSetDriftOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectStackSetDrift", arg0)
+	ret0, _ := ret[0].(*cloudformation.DetectStackSetDriftOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectStackSetDrift indicates an expected call of DetectStackSetDrift
+func (mr *MockCloudFormationAPIMockRecorder) DetectStackSetDrift(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectStackSetDrift", reflect.TypeOf((*MockCloudFormationAPI)(nil).DetectStackSetDrift), arg0)
+}
+
+// DetectStackSetDriftRequest mocks base method
+func (m *MockCloudFormationAPI) DetectStackSetDriftRequest(arg0 *cloudformation.DetectStackSetDriftInput) (*request.Request, *cloudformation.DetectStackSetDriftOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectStackSetDriftRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.DetectStackSetDriftOutput)
+	return ret0, ret1
+}
+
+// DetectStackSetDriftRequest indicates an expected call of DetectStackSetDriftRequest
+func (mr *MockCloudFormationAPIMockRecorder) DetectStackSetDriftRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectStackSetDriftRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).DetectStackSetDriftRequest), arg0)
+}
+
+// DetectStackSetDriftWithContext mocks base method
+func (m *MockCloudFormationAPI) DetectStackSetDriftWithContext(arg0 context.Context, arg1 *cloudformation.DetectStackSetDriftInput, arg2 ...request.Option) (*cloudformation.DetectStackSetDriftOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetectStackSetDriftWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.DetectStackSetDriftOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectStackSetDriftWithContext indicates an expected call of DetectStackSetDriftWithContext
+func (mr *MockCloudFormationAPIMockRecorder) DetectStackSetDriftWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectStackSetDriftWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).DetectStackSetDriftWithContext), varargs...)
+}
+
 // EstimateTemplateCost mocks base method
 func (m *MockCloudFormationAPI) EstimateTemplateCost(arg0 *cloudformation.EstimateTemplateCostInput) (*cloudformation.EstimateTemplateCostOutput, error) {
 	m.ctrl.T.Helper()
