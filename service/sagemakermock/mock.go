@@ -3635,6 +3635,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeUserProfileWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserProfileWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeUserProfileWithContext), varargs...)
 }
 
+// DescribeWorkforce mocks base method
+func (m *MockSageMakerAPI) DescribeWorkforce(arg0 *sagemaker.DescribeWorkforceInput) (*sagemaker.DescribeWorkforceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkforce", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeWorkforceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkforce indicates an expected call of DescribeWorkforce
+func (mr *MockSageMakerAPIMockRecorder) DescribeWorkforce(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkforce", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeWorkforce), arg0)
+}
+
+// DescribeWorkforceRequest mocks base method
+func (m *MockSageMakerAPI) DescribeWorkforceRequest(arg0 *sagemaker.DescribeWorkforceInput) (*request.Request, *sagemaker.DescribeWorkforceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkforceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeWorkforceOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkforceRequest indicates an expected call of DescribeWorkforceRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeWorkforceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkforceRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeWorkforceRequest), arg0)
+}
+
+// DescribeWorkforceWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeWorkforceWithContext(arg0 context.Context, arg1 *sagemaker.DescribeWorkforceInput, arg2 ...request.Option) (*sagemaker.DescribeWorkforceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkforceWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeWorkforceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkforceWithContext indicates an expected call of DescribeWorkforceWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeWorkforceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkforceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeWorkforceWithContext), varargs...)
+}
+
 // DescribeWorkteam mocks base method
 func (m *MockSageMakerAPI) DescribeWorkteam(arg0 *sagemaker.DescribeWorkteamInput) (*sagemaker.DescribeWorkteamOutput, error) {
 	m.ctrl.T.Helper()
@@ -7589,6 +7639,56 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateUserProfileWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserProfileWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateUserProfileWithContext), varargs...)
+}
+
+// UpdateWorkforce mocks base method
+func (m *MockSageMakerAPI) UpdateWorkforce(arg0 *sagemaker.UpdateWorkforceInput) (*sagemaker.UpdateWorkforceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkforce", arg0)
+	ret0, _ := ret[0].(*sagemaker.UpdateWorkforceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkforce indicates an expected call of UpdateWorkforce
+func (mr *MockSageMakerAPIMockRecorder) UpdateWorkforce(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkforce", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateWorkforce), arg0)
+}
+
+// UpdateWorkforceRequest mocks base method
+func (m *MockSageMakerAPI) UpdateWorkforceRequest(arg0 *sagemaker.UpdateWorkforceInput) (*request.Request, *sagemaker.UpdateWorkforceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkforceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.UpdateWorkforceOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkforceRequest indicates an expected call of UpdateWorkforceRequest
+func (mr *MockSageMakerAPIMockRecorder) UpdateWorkforceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkforceRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateWorkforceRequest), arg0)
+}
+
+// UpdateWorkforceWithContext mocks base method
+func (m *MockSageMakerAPI) UpdateWorkforceWithContext(arg0 context.Context, arg1 *sagemaker.UpdateWorkforceInput, arg2 ...request.Option) (*sagemaker.UpdateWorkforceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkforceWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.UpdateWorkforceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkforceWithContext indicates an expected call of UpdateWorkforceWithContext
+func (mr *MockSageMakerAPIMockRecorder) UpdateWorkforceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkforceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateWorkforceWithContext), varargs...)
 }
 
 // UpdateWorkteam mocks base method
