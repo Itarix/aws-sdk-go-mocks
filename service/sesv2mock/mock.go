@@ -2316,6 +2316,56 @@ func (mr *MockSESV2APIMockRecorder) PutEmailIdentityDkimAttributesWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityDkimAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityDkimAttributesWithContext), varargs...)
 }
 
+// PutEmailIdentityDkimSigningAttributes mocks base method
+func (m *MockSESV2API) PutEmailIdentityDkimSigningAttributes(arg0 *sesv2.PutEmailIdentityDkimSigningAttributesInput) (*sesv2.PutEmailIdentityDkimSigningAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEmailIdentityDkimSigningAttributes", arg0)
+	ret0, _ := ret[0].(*sesv2.PutEmailIdentityDkimSigningAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEmailIdentityDkimSigningAttributes indicates an expected call of PutEmailIdentityDkimSigningAttributes
+func (mr *MockSESV2APIMockRecorder) PutEmailIdentityDkimSigningAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityDkimSigningAttributes", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityDkimSigningAttributes), arg0)
+}
+
+// PutEmailIdentityDkimSigningAttributesRequest mocks base method
+func (m *MockSESV2API) PutEmailIdentityDkimSigningAttributesRequest(arg0 *sesv2.PutEmailIdentityDkimSigningAttributesInput) (*request.Request, *sesv2.PutEmailIdentityDkimSigningAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEmailIdentityDkimSigningAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutEmailIdentityDkimSigningAttributesOutput)
+	return ret0, ret1
+}
+
+// PutEmailIdentityDkimSigningAttributesRequest indicates an expected call of PutEmailIdentityDkimSigningAttributesRequest
+func (mr *MockSESV2APIMockRecorder) PutEmailIdentityDkimSigningAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityDkimSigningAttributesRequest", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityDkimSigningAttributesRequest), arg0)
+}
+
+// PutEmailIdentityDkimSigningAttributesWithContext mocks base method
+func (m *MockSESV2API) PutEmailIdentityDkimSigningAttributesWithContext(arg0 context.Context, arg1 *sesv2.PutEmailIdentityDkimSigningAttributesInput, arg2 ...request.Option) (*sesv2.PutEmailIdentityDkimSigningAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutEmailIdentityDkimSigningAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutEmailIdentityDkimSigningAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEmailIdentityDkimSigningAttributesWithContext indicates an expected call of PutEmailIdentityDkimSigningAttributesWithContext
+func (mr *MockSESV2APIMockRecorder) PutEmailIdentityDkimSigningAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityDkimSigningAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityDkimSigningAttributesWithContext), varargs...)
+}
+
 // PutEmailIdentityFeedbackAttributes mocks base method
 func (m *MockSESV2API) PutEmailIdentityFeedbackAttributes(arg0 *sesv2.PutEmailIdentityFeedbackAttributesInput) (*sesv2.PutEmailIdentityFeedbackAttributesOutput, error) {
 	m.ctrl.T.Helper()

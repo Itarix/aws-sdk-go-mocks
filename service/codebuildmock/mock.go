@@ -585,6 +585,56 @@ func (mr *MockCodeBuildAPIMockRecorder) DeleteReportWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteReportWithContext), varargs...)
 }
 
+// DeleteResourcePolicy mocks base method
+func (m *MockCodeBuildAPI) DeleteResourcePolicy(arg0 *codebuild.DeleteResourcePolicyInput) (*codebuild.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*codebuild.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockCodeBuildAPIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockCodeBuildAPI) DeleteResourcePolicyRequest(arg0 *codebuild.DeleteResourcePolicyInput) (*request.Request, *codebuild.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockCodeBuildAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockCodeBuildAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *codebuild.DeleteResourcePolicyInput, arg2 ...request.Option) (*codebuild.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockCodeBuildAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
 // DeleteSourceCredentials mocks base method
 func (m *MockCodeBuildAPI) DeleteSourceCredentials(arg0 *codebuild.DeleteSourceCredentialsInput) (*codebuild.DeleteSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +783,56 @@ func (mr *MockCodeBuildAPIMockRecorder) DescribeTestCasesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTestCasesWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DescribeTestCasesWithContext), varargs...)
+}
+
+// GetResourcePolicy mocks base method
+func (m *MockCodeBuildAPI) GetResourcePolicy(arg0 *codebuild.GetResourcePolicyInput) (*codebuild.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicy", arg0)
+	ret0, _ := ret[0].(*codebuild.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicy indicates an expected call of GetResourcePolicy
+func (mr *MockCodeBuildAPIMockRecorder) GetResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicy", reflect.TypeOf((*MockCodeBuildAPI)(nil).GetResourcePolicy), arg0)
+}
+
+// GetResourcePolicyRequest mocks base method
+func (m *MockCodeBuildAPI) GetResourcePolicyRequest(arg0 *codebuild.GetResourcePolicyInput) (*request.Request, *codebuild.GetResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.GetResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// GetResourcePolicyRequest indicates an expected call of GetResourcePolicyRequest
+func (mr *MockCodeBuildAPIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).GetResourcePolicyRequest), arg0)
+}
+
+// GetResourcePolicyWithContext mocks base method
+func (m *MockCodeBuildAPI) GetResourcePolicyWithContext(arg0 context.Context, arg1 *codebuild.GetResourcePolicyInput, arg2 ...request.Option) (*codebuild.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicyWithContext indicates an expected call of GetResourcePolicyWithContext
+func (mr *MockCodeBuildAPIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).GetResourcePolicyWithContext), varargs...)
 }
 
 // ImportSourceCredentials mocks base method
@@ -1185,6 +1285,106 @@ func (mr *MockCodeBuildAPIMockRecorder) ListReportsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListReportsWithContext), varargs...)
 }
 
+// ListSharedProjects mocks base method
+func (m *MockCodeBuildAPI) ListSharedProjects(arg0 *codebuild.ListSharedProjectsInput) (*codebuild.ListSharedProjectsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedProjects", arg0)
+	ret0, _ := ret[0].(*codebuild.ListSharedProjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharedProjects indicates an expected call of ListSharedProjects
+func (mr *MockCodeBuildAPIMockRecorder) ListSharedProjects(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedProjects", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSharedProjects), arg0)
+}
+
+// ListSharedProjectsRequest mocks base method
+func (m *MockCodeBuildAPI) ListSharedProjectsRequest(arg0 *codebuild.ListSharedProjectsInput) (*request.Request, *codebuild.ListSharedProjectsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedProjectsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ListSharedProjectsOutput)
+	return ret0, ret1
+}
+
+// ListSharedProjectsRequest indicates an expected call of ListSharedProjectsRequest
+func (mr *MockCodeBuildAPIMockRecorder) ListSharedProjectsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedProjectsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSharedProjectsRequest), arg0)
+}
+
+// ListSharedProjectsWithContext mocks base method
+func (m *MockCodeBuildAPI) ListSharedProjectsWithContext(arg0 context.Context, arg1 *codebuild.ListSharedProjectsInput, arg2 ...request.Option) (*codebuild.ListSharedProjectsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSharedProjectsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ListSharedProjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharedProjectsWithContext indicates an expected call of ListSharedProjectsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ListSharedProjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedProjectsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSharedProjectsWithContext), varargs...)
+}
+
+// ListSharedReportGroups mocks base method
+func (m *MockCodeBuildAPI) ListSharedReportGroups(arg0 *codebuild.ListSharedReportGroupsInput) (*codebuild.ListSharedReportGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedReportGroups", arg0)
+	ret0, _ := ret[0].(*codebuild.ListSharedReportGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharedReportGroups indicates an expected call of ListSharedReportGroups
+func (mr *MockCodeBuildAPIMockRecorder) ListSharedReportGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedReportGroups", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSharedReportGroups), arg0)
+}
+
+// ListSharedReportGroupsRequest mocks base method
+func (m *MockCodeBuildAPI) ListSharedReportGroupsRequest(arg0 *codebuild.ListSharedReportGroupsInput) (*request.Request, *codebuild.ListSharedReportGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedReportGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.ListSharedReportGroupsOutput)
+	return ret0, ret1
+}
+
+// ListSharedReportGroupsRequest indicates an expected call of ListSharedReportGroupsRequest
+func (mr *MockCodeBuildAPIMockRecorder) ListSharedReportGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedReportGroupsRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSharedReportGroupsRequest), arg0)
+}
+
+// ListSharedReportGroupsWithContext mocks base method
+func (m *MockCodeBuildAPI) ListSharedReportGroupsWithContext(arg0 context.Context, arg1 *codebuild.ListSharedReportGroupsInput, arg2 ...request.Option) (*codebuild.ListSharedReportGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSharedReportGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.ListSharedReportGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharedReportGroupsWithContext indicates an expected call of ListSharedReportGroupsWithContext
+func (mr *MockCodeBuildAPIMockRecorder) ListSharedReportGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedReportGroupsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSharedReportGroupsWithContext), varargs...)
+}
+
 // ListSourceCredentials mocks base method
 func (m *MockCodeBuildAPI) ListSourceCredentials(arg0 *codebuild.ListSourceCredentialsInput) (*codebuild.ListSourceCredentialsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +1433,56 @@ func (mr *MockCodeBuildAPIMockRecorder) ListSourceCredentialsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceCredentialsWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).ListSourceCredentialsWithContext), varargs...)
+}
+
+// PutResourcePolicy mocks base method
+func (m *MockCodeBuildAPI) PutResourcePolicy(arg0 *codebuild.PutResourcePolicyInput) (*codebuild.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*codebuild.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockCodeBuildAPIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockCodeBuildAPI)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockCodeBuildAPI) PutResourcePolicyRequest(arg0 *codebuild.PutResourcePolicyInput) (*request.Request, *codebuild.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockCodeBuildAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockCodeBuildAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *codebuild.PutResourcePolicyInput, arg2 ...request.Option) (*codebuild.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockCodeBuildAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).PutResourcePolicyWithContext), varargs...)
 }
 
 // StartBuild mocks base method
