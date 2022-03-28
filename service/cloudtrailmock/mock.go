@@ -285,6 +285,56 @@ func (mr *MockCloudTrailAPIMockRecorder) GetEventSelectorsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetEventSelectorsWithContext), varargs...)
 }
 
+// GetInsightSelectors mocks base method
+func (m *MockCloudTrailAPI) GetInsightSelectors(arg0 *cloudtrail.GetInsightSelectorsInput) (*cloudtrail.GetInsightSelectorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightSelectors", arg0)
+	ret0, _ := ret[0].(*cloudtrail.GetInsightSelectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightSelectors indicates an expected call of GetInsightSelectors
+func (mr *MockCloudTrailAPIMockRecorder) GetInsightSelectors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSelectors", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetInsightSelectors), arg0)
+}
+
+// GetInsightSelectorsRequest mocks base method
+func (m *MockCloudTrailAPI) GetInsightSelectorsRequest(arg0 *cloudtrail.GetInsightSelectorsInput) (*request.Request, *cloudtrail.GetInsightSelectorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightSelectorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.GetInsightSelectorsOutput)
+	return ret0, ret1
+}
+
+// GetInsightSelectorsRequest indicates an expected call of GetInsightSelectorsRequest
+func (mr *MockCloudTrailAPIMockRecorder) GetInsightSelectorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSelectorsRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetInsightSelectorsRequest), arg0)
+}
+
+// GetInsightSelectorsWithContext mocks base method
+func (m *MockCloudTrailAPI) GetInsightSelectorsWithContext(arg0 context.Context, arg1 *cloudtrail.GetInsightSelectorsInput, arg2 ...request.Option) (*cloudtrail.GetInsightSelectorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightSelectorsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.GetInsightSelectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightSelectorsWithContext indicates an expected call of GetInsightSelectorsWithContext
+func (mr *MockCloudTrailAPIMockRecorder) GetInsightSelectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetInsightSelectorsWithContext), varargs...)
+}
+
 // GetTrail mocks base method
 func (m *MockCloudTrailAPI) GetTrail(arg0 *cloudtrail.GetTrailInput) (*cloudtrail.GetTrailOutput, error) {
 	m.ctrl.T.Helper()
@@ -765,6 +815,56 @@ func (mr *MockCloudTrailAPIMockRecorder) PutEventSelectorsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEventSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutEventSelectorsWithContext), varargs...)
+}
+
+// PutInsightSelectors mocks base method
+func (m *MockCloudTrailAPI) PutInsightSelectors(arg0 *cloudtrail.PutInsightSelectorsInput) (*cloudtrail.PutInsightSelectorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutInsightSelectors", arg0)
+	ret0, _ := ret[0].(*cloudtrail.PutInsightSelectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutInsightSelectors indicates an expected call of PutInsightSelectors
+func (mr *MockCloudTrailAPIMockRecorder) PutInsightSelectors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInsightSelectors", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutInsightSelectors), arg0)
+}
+
+// PutInsightSelectorsRequest mocks base method
+func (m *MockCloudTrailAPI) PutInsightSelectorsRequest(arg0 *cloudtrail.PutInsightSelectorsInput) (*request.Request, *cloudtrail.PutInsightSelectorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutInsightSelectorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.PutInsightSelectorsOutput)
+	return ret0, ret1
+}
+
+// PutInsightSelectorsRequest indicates an expected call of PutInsightSelectorsRequest
+func (mr *MockCloudTrailAPIMockRecorder) PutInsightSelectorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInsightSelectorsRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutInsightSelectorsRequest), arg0)
+}
+
+// PutInsightSelectorsWithContext mocks base method
+func (m *MockCloudTrailAPI) PutInsightSelectorsWithContext(arg0 context.Context, arg1 *cloudtrail.PutInsightSelectorsInput, arg2 ...request.Option) (*cloudtrail.PutInsightSelectorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutInsightSelectorsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.PutInsightSelectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutInsightSelectorsWithContext indicates an expected call of PutInsightSelectorsWithContext
+func (mr *MockCloudTrailAPIMockRecorder) PutInsightSelectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInsightSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutInsightSelectorsWithContext), varargs...)
 }
 
 // RemoveTags mocks base method

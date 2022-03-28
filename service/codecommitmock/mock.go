@@ -35,6 +35,106 @@ func (m *MockCodeCommitAPI) EXPECT() *MockCodeCommitAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateApprovalRuleTemplateWithRepository mocks base method
+func (m *MockCodeCommitAPI) AssociateApprovalRuleTemplateWithRepository(arg0 *codecommit.AssociateApprovalRuleTemplateWithRepositoryInput) (*codecommit.AssociateApprovalRuleTemplateWithRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApprovalRuleTemplateWithRepository", arg0)
+	ret0, _ := ret[0].(*codecommit.AssociateApprovalRuleTemplateWithRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApprovalRuleTemplateWithRepository indicates an expected call of AssociateApprovalRuleTemplateWithRepository
+func (mr *MockCodeCommitAPIMockRecorder) AssociateApprovalRuleTemplateWithRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApprovalRuleTemplateWithRepository", reflect.TypeOf((*MockCodeCommitAPI)(nil).AssociateApprovalRuleTemplateWithRepository), arg0)
+}
+
+// AssociateApprovalRuleTemplateWithRepositoryRequest mocks base method
+func (m *MockCodeCommitAPI) AssociateApprovalRuleTemplateWithRepositoryRequest(arg0 *codecommit.AssociateApprovalRuleTemplateWithRepositoryInput) (*request.Request, *codecommit.AssociateApprovalRuleTemplateWithRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApprovalRuleTemplateWithRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.AssociateApprovalRuleTemplateWithRepositoryOutput)
+	return ret0, ret1
+}
+
+// AssociateApprovalRuleTemplateWithRepositoryRequest indicates an expected call of AssociateApprovalRuleTemplateWithRepositoryRequest
+func (mr *MockCodeCommitAPIMockRecorder) AssociateApprovalRuleTemplateWithRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApprovalRuleTemplateWithRepositoryRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).AssociateApprovalRuleTemplateWithRepositoryRequest), arg0)
+}
+
+// AssociateApprovalRuleTemplateWithRepositoryWithContext mocks base method
+func (m *MockCodeCommitAPI) AssociateApprovalRuleTemplateWithRepositoryWithContext(arg0 context.Context, arg1 *codecommit.AssociateApprovalRuleTemplateWithRepositoryInput, arg2 ...request.Option) (*codecommit.AssociateApprovalRuleTemplateWithRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateApprovalRuleTemplateWithRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.AssociateApprovalRuleTemplateWithRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApprovalRuleTemplateWithRepositoryWithContext indicates an expected call of AssociateApprovalRuleTemplateWithRepositoryWithContext
+func (mr *MockCodeCommitAPIMockRecorder) AssociateApprovalRuleTemplateWithRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApprovalRuleTemplateWithRepositoryWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).AssociateApprovalRuleTemplateWithRepositoryWithContext), varargs...)
+}
+
+// BatchAssociateApprovalRuleTemplateWithRepositories mocks base method
+func (m *MockCodeCommitAPI) BatchAssociateApprovalRuleTemplateWithRepositories(arg0 *codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesInput) (*codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateApprovalRuleTemplateWithRepositories", arg0)
+	ret0, _ := ret[0].(*codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateApprovalRuleTemplateWithRepositories indicates an expected call of BatchAssociateApprovalRuleTemplateWithRepositories
+func (mr *MockCodeCommitAPIMockRecorder) BatchAssociateApprovalRuleTemplateWithRepositories(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateApprovalRuleTemplateWithRepositories", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchAssociateApprovalRuleTemplateWithRepositories), arg0)
+}
+
+// BatchAssociateApprovalRuleTemplateWithRepositoriesRequest mocks base method
+func (m *MockCodeCommitAPI) BatchAssociateApprovalRuleTemplateWithRepositoriesRequest(arg0 *codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesInput) (*request.Request, *codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateApprovalRuleTemplateWithRepositoriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesOutput)
+	return ret0, ret1
+}
+
+// BatchAssociateApprovalRuleTemplateWithRepositoriesRequest indicates an expected call of BatchAssociateApprovalRuleTemplateWithRepositoriesRequest
+func (mr *MockCodeCommitAPIMockRecorder) BatchAssociateApprovalRuleTemplateWithRepositoriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateApprovalRuleTemplateWithRepositoriesRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchAssociateApprovalRuleTemplateWithRepositoriesRequest), arg0)
+}
+
+// BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext mocks base method
+func (m *MockCodeCommitAPI) BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext(arg0 context.Context, arg1 *codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesInput, arg2 ...request.Option) (*codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.BatchAssociateApprovalRuleTemplateWithRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext indicates an expected call of BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchAssociateApprovalRuleTemplateWithRepositoriesWithContext), varargs...)
+}
+
 // BatchDescribeMergeConflicts mocks base method
 func (m *MockCodeCommitAPI) BatchDescribeMergeConflicts(arg0 *codecommit.BatchDescribeMergeConflictsInput) (*codecommit.BatchDescribeMergeConflictsOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +183,56 @@ func (mr *MockCodeCommitAPIMockRecorder) BatchDescribeMergeConflictsWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDescribeMergeConflictsWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchDescribeMergeConflictsWithContext), varargs...)
+}
+
+// BatchDisassociateApprovalRuleTemplateFromRepositories mocks base method
+func (m *MockCodeCommitAPI) BatchDisassociateApprovalRuleTemplateFromRepositories(arg0 *codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesInput) (*codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateApprovalRuleTemplateFromRepositories", arg0)
+	ret0, _ := ret[0].(*codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateApprovalRuleTemplateFromRepositories indicates an expected call of BatchDisassociateApprovalRuleTemplateFromRepositories
+func (mr *MockCodeCommitAPIMockRecorder) BatchDisassociateApprovalRuleTemplateFromRepositories(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateApprovalRuleTemplateFromRepositories", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchDisassociateApprovalRuleTemplateFromRepositories), arg0)
+}
+
+// BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest mocks base method
+func (m *MockCodeCommitAPI) BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest(arg0 *codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesInput) (*request.Request, *codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput)
+	return ret0, ret1
+}
+
+// BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest indicates an expected call of BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest
+func (mr *MockCodeCommitAPIMockRecorder) BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchDisassociateApprovalRuleTemplateFromRepositoriesRequest), arg0)
+}
+
+// BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext mocks base method
+func (m *MockCodeCommitAPI) BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext(arg0 context.Context, arg1 *codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesInput, arg2 ...request.Option) (*codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext indicates an expected call of BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchDisassociateApprovalRuleTemplateFromRepositoriesWithContext), varargs...)
 }
 
 // BatchGetCommits mocks base method
@@ -183,6 +333,56 @@ func (mr *MockCodeCommitAPIMockRecorder) BatchGetRepositoriesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetRepositoriesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).BatchGetRepositoriesWithContext), varargs...)
+}
+
+// CreateApprovalRuleTemplate mocks base method
+func (m *MockCodeCommitAPI) CreateApprovalRuleTemplate(arg0 *codecommit.CreateApprovalRuleTemplateInput) (*codecommit.CreateApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApprovalRuleTemplate", arg0)
+	ret0, _ := ret[0].(*codecommit.CreateApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApprovalRuleTemplate indicates an expected call of CreateApprovalRuleTemplate
+func (mr *MockCodeCommitAPIMockRecorder) CreateApprovalRuleTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApprovalRuleTemplate", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateApprovalRuleTemplate), arg0)
+}
+
+// CreateApprovalRuleTemplateRequest mocks base method
+func (m *MockCodeCommitAPI) CreateApprovalRuleTemplateRequest(arg0 *codecommit.CreateApprovalRuleTemplateInput) (*request.Request, *codecommit.CreateApprovalRuleTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApprovalRuleTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.CreateApprovalRuleTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateApprovalRuleTemplateRequest indicates an expected call of CreateApprovalRuleTemplateRequest
+func (mr *MockCodeCommitAPIMockRecorder) CreateApprovalRuleTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApprovalRuleTemplateRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateApprovalRuleTemplateRequest), arg0)
+}
+
+// CreateApprovalRuleTemplateWithContext mocks base method
+func (m *MockCodeCommitAPI) CreateApprovalRuleTemplateWithContext(arg0 context.Context, arg1 *codecommit.CreateApprovalRuleTemplateInput, arg2 ...request.Option) (*codecommit.CreateApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateApprovalRuleTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.CreateApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApprovalRuleTemplateWithContext indicates an expected call of CreateApprovalRuleTemplateWithContext
+func (mr *MockCodeCommitAPIMockRecorder) CreateApprovalRuleTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApprovalRuleTemplateWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateApprovalRuleTemplateWithContext), varargs...)
 }
 
 // CreateBranch mocks base method
@@ -298,6 +498,56 @@ func (m *MockCodeCommitAPI) CreatePullRequest(arg0 *codecommit.CreatePullRequest
 func (mr *MockCodeCommitAPIMockRecorder) CreatePullRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePullRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreatePullRequest), arg0)
+}
+
+// CreatePullRequestApprovalRule mocks base method
+func (m *MockCodeCommitAPI) CreatePullRequestApprovalRule(arg0 *codecommit.CreatePullRequestApprovalRuleInput) (*codecommit.CreatePullRequestApprovalRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePullRequestApprovalRule", arg0)
+	ret0, _ := ret[0].(*codecommit.CreatePullRequestApprovalRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePullRequestApprovalRule indicates an expected call of CreatePullRequestApprovalRule
+func (mr *MockCodeCommitAPIMockRecorder) CreatePullRequestApprovalRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePullRequestApprovalRule", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreatePullRequestApprovalRule), arg0)
+}
+
+// CreatePullRequestApprovalRuleRequest mocks base method
+func (m *MockCodeCommitAPI) CreatePullRequestApprovalRuleRequest(arg0 *codecommit.CreatePullRequestApprovalRuleInput) (*request.Request, *codecommit.CreatePullRequestApprovalRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePullRequestApprovalRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.CreatePullRequestApprovalRuleOutput)
+	return ret0, ret1
+}
+
+// CreatePullRequestApprovalRuleRequest indicates an expected call of CreatePullRequestApprovalRuleRequest
+func (mr *MockCodeCommitAPIMockRecorder) CreatePullRequestApprovalRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePullRequestApprovalRuleRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreatePullRequestApprovalRuleRequest), arg0)
+}
+
+// CreatePullRequestApprovalRuleWithContext mocks base method
+func (m *MockCodeCommitAPI) CreatePullRequestApprovalRuleWithContext(arg0 context.Context, arg1 *codecommit.CreatePullRequestApprovalRuleInput, arg2 ...request.Option) (*codecommit.CreatePullRequestApprovalRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePullRequestApprovalRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.CreatePullRequestApprovalRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePullRequestApprovalRuleWithContext indicates an expected call of CreatePullRequestApprovalRuleWithContext
+func (mr *MockCodeCommitAPIMockRecorder) CreatePullRequestApprovalRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePullRequestApprovalRuleWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreatePullRequestApprovalRuleWithContext), varargs...)
 }
 
 // CreatePullRequestRequest mocks base method
@@ -433,6 +683,56 @@ func (mr *MockCodeCommitAPIMockRecorder) CreateUnreferencedMergeCommitWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUnreferencedMergeCommitWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateUnreferencedMergeCommitWithContext), varargs...)
+}
+
+// DeleteApprovalRuleTemplate mocks base method
+func (m *MockCodeCommitAPI) DeleteApprovalRuleTemplate(arg0 *codecommit.DeleteApprovalRuleTemplateInput) (*codecommit.DeleteApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApprovalRuleTemplate", arg0)
+	ret0, _ := ret[0].(*codecommit.DeleteApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApprovalRuleTemplate indicates an expected call of DeleteApprovalRuleTemplate
+func (mr *MockCodeCommitAPIMockRecorder) DeleteApprovalRuleTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApprovalRuleTemplate", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteApprovalRuleTemplate), arg0)
+}
+
+// DeleteApprovalRuleTemplateRequest mocks base method
+func (m *MockCodeCommitAPI) DeleteApprovalRuleTemplateRequest(arg0 *codecommit.DeleteApprovalRuleTemplateInput) (*request.Request, *codecommit.DeleteApprovalRuleTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApprovalRuleTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.DeleteApprovalRuleTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteApprovalRuleTemplateRequest indicates an expected call of DeleteApprovalRuleTemplateRequest
+func (mr *MockCodeCommitAPIMockRecorder) DeleteApprovalRuleTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApprovalRuleTemplateRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteApprovalRuleTemplateRequest), arg0)
+}
+
+// DeleteApprovalRuleTemplateWithContext mocks base method
+func (m *MockCodeCommitAPI) DeleteApprovalRuleTemplateWithContext(arg0 context.Context, arg1 *codecommit.DeleteApprovalRuleTemplateInput, arg2 ...request.Option) (*codecommit.DeleteApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteApprovalRuleTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.DeleteApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApprovalRuleTemplateWithContext indicates an expected call of DeleteApprovalRuleTemplateWithContext
+func (mr *MockCodeCommitAPIMockRecorder) DeleteApprovalRuleTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApprovalRuleTemplateWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteApprovalRuleTemplateWithContext), varargs...)
 }
 
 // DeleteBranch mocks base method
@@ -583,6 +883,56 @@ func (mr *MockCodeCommitAPIMockRecorder) DeleteFileWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeleteFileWithContext), varargs...)
+}
+
+// DeletePullRequestApprovalRule mocks base method
+func (m *MockCodeCommitAPI) DeletePullRequestApprovalRule(arg0 *codecommit.DeletePullRequestApprovalRuleInput) (*codecommit.DeletePullRequestApprovalRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePullRequestApprovalRule", arg0)
+	ret0, _ := ret[0].(*codecommit.DeletePullRequestApprovalRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePullRequestApprovalRule indicates an expected call of DeletePullRequestApprovalRule
+func (mr *MockCodeCommitAPIMockRecorder) DeletePullRequestApprovalRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePullRequestApprovalRule", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeletePullRequestApprovalRule), arg0)
+}
+
+// DeletePullRequestApprovalRuleRequest mocks base method
+func (m *MockCodeCommitAPI) DeletePullRequestApprovalRuleRequest(arg0 *codecommit.DeletePullRequestApprovalRuleInput) (*request.Request, *codecommit.DeletePullRequestApprovalRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePullRequestApprovalRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.DeletePullRequestApprovalRuleOutput)
+	return ret0, ret1
+}
+
+// DeletePullRequestApprovalRuleRequest indicates an expected call of DeletePullRequestApprovalRuleRequest
+func (mr *MockCodeCommitAPIMockRecorder) DeletePullRequestApprovalRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePullRequestApprovalRuleRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeletePullRequestApprovalRuleRequest), arg0)
+}
+
+// DeletePullRequestApprovalRuleWithContext mocks base method
+func (m *MockCodeCommitAPI) DeletePullRequestApprovalRuleWithContext(arg0 context.Context, arg1 *codecommit.DeletePullRequestApprovalRuleInput, arg2 ...request.Option) (*codecommit.DeletePullRequestApprovalRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePullRequestApprovalRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.DeletePullRequestApprovalRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePullRequestApprovalRuleWithContext indicates an expected call of DeletePullRequestApprovalRuleWithContext
+func (mr *MockCodeCommitAPIMockRecorder) DeletePullRequestApprovalRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePullRequestApprovalRuleWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DeletePullRequestApprovalRuleWithContext), varargs...)
 }
 
 // DeleteRepository mocks base method
@@ -799,6 +1149,156 @@ func (mr *MockCodeCommitAPIMockRecorder) DescribePullRequestEventsWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePullRequestEventsWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DescribePullRequestEventsWithContext), varargs...)
+}
+
+// DisassociateApprovalRuleTemplateFromRepository mocks base method
+func (m *MockCodeCommitAPI) DisassociateApprovalRuleTemplateFromRepository(arg0 *codecommit.DisassociateApprovalRuleTemplateFromRepositoryInput) (*codecommit.DisassociateApprovalRuleTemplateFromRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApprovalRuleTemplateFromRepository", arg0)
+	ret0, _ := ret[0].(*codecommit.DisassociateApprovalRuleTemplateFromRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApprovalRuleTemplateFromRepository indicates an expected call of DisassociateApprovalRuleTemplateFromRepository
+func (mr *MockCodeCommitAPIMockRecorder) DisassociateApprovalRuleTemplateFromRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApprovalRuleTemplateFromRepository", reflect.TypeOf((*MockCodeCommitAPI)(nil).DisassociateApprovalRuleTemplateFromRepository), arg0)
+}
+
+// DisassociateApprovalRuleTemplateFromRepositoryRequest mocks base method
+func (m *MockCodeCommitAPI) DisassociateApprovalRuleTemplateFromRepositoryRequest(arg0 *codecommit.DisassociateApprovalRuleTemplateFromRepositoryInput) (*request.Request, *codecommit.DisassociateApprovalRuleTemplateFromRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApprovalRuleTemplateFromRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.DisassociateApprovalRuleTemplateFromRepositoryOutput)
+	return ret0, ret1
+}
+
+// DisassociateApprovalRuleTemplateFromRepositoryRequest indicates an expected call of DisassociateApprovalRuleTemplateFromRepositoryRequest
+func (mr *MockCodeCommitAPIMockRecorder) DisassociateApprovalRuleTemplateFromRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApprovalRuleTemplateFromRepositoryRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).DisassociateApprovalRuleTemplateFromRepositoryRequest), arg0)
+}
+
+// DisassociateApprovalRuleTemplateFromRepositoryWithContext mocks base method
+func (m *MockCodeCommitAPI) DisassociateApprovalRuleTemplateFromRepositoryWithContext(arg0 context.Context, arg1 *codecommit.DisassociateApprovalRuleTemplateFromRepositoryInput, arg2 ...request.Option) (*codecommit.DisassociateApprovalRuleTemplateFromRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateApprovalRuleTemplateFromRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.DisassociateApprovalRuleTemplateFromRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApprovalRuleTemplateFromRepositoryWithContext indicates an expected call of DisassociateApprovalRuleTemplateFromRepositoryWithContext
+func (mr *MockCodeCommitAPIMockRecorder) DisassociateApprovalRuleTemplateFromRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApprovalRuleTemplateFromRepositoryWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).DisassociateApprovalRuleTemplateFromRepositoryWithContext), varargs...)
+}
+
+// EvaluatePullRequestApprovalRules mocks base method
+func (m *MockCodeCommitAPI) EvaluatePullRequestApprovalRules(arg0 *codecommit.EvaluatePullRequestApprovalRulesInput) (*codecommit.EvaluatePullRequestApprovalRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EvaluatePullRequestApprovalRules", arg0)
+	ret0, _ := ret[0].(*codecommit.EvaluatePullRequestApprovalRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EvaluatePullRequestApprovalRules indicates an expected call of EvaluatePullRequestApprovalRules
+func (mr *MockCodeCommitAPIMockRecorder) EvaluatePullRequestApprovalRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluatePullRequestApprovalRules", reflect.TypeOf((*MockCodeCommitAPI)(nil).EvaluatePullRequestApprovalRules), arg0)
+}
+
+// EvaluatePullRequestApprovalRulesRequest mocks base method
+func (m *MockCodeCommitAPI) EvaluatePullRequestApprovalRulesRequest(arg0 *codecommit.EvaluatePullRequestApprovalRulesInput) (*request.Request, *codecommit.EvaluatePullRequestApprovalRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EvaluatePullRequestApprovalRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.EvaluatePullRequestApprovalRulesOutput)
+	return ret0, ret1
+}
+
+// EvaluatePullRequestApprovalRulesRequest indicates an expected call of EvaluatePullRequestApprovalRulesRequest
+func (mr *MockCodeCommitAPIMockRecorder) EvaluatePullRequestApprovalRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluatePullRequestApprovalRulesRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).EvaluatePullRequestApprovalRulesRequest), arg0)
+}
+
+// EvaluatePullRequestApprovalRulesWithContext mocks base method
+func (m *MockCodeCommitAPI) EvaluatePullRequestApprovalRulesWithContext(arg0 context.Context, arg1 *codecommit.EvaluatePullRequestApprovalRulesInput, arg2 ...request.Option) (*codecommit.EvaluatePullRequestApprovalRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EvaluatePullRequestApprovalRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.EvaluatePullRequestApprovalRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EvaluatePullRequestApprovalRulesWithContext indicates an expected call of EvaluatePullRequestApprovalRulesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) EvaluatePullRequestApprovalRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluatePullRequestApprovalRulesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).EvaluatePullRequestApprovalRulesWithContext), varargs...)
+}
+
+// GetApprovalRuleTemplate mocks base method
+func (m *MockCodeCommitAPI) GetApprovalRuleTemplate(arg0 *codecommit.GetApprovalRuleTemplateInput) (*codecommit.GetApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApprovalRuleTemplate", arg0)
+	ret0, _ := ret[0].(*codecommit.GetApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApprovalRuleTemplate indicates an expected call of GetApprovalRuleTemplate
+func (mr *MockCodeCommitAPIMockRecorder) GetApprovalRuleTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApprovalRuleTemplate", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetApprovalRuleTemplate), arg0)
+}
+
+// GetApprovalRuleTemplateRequest mocks base method
+func (m *MockCodeCommitAPI) GetApprovalRuleTemplateRequest(arg0 *codecommit.GetApprovalRuleTemplateInput) (*request.Request, *codecommit.GetApprovalRuleTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApprovalRuleTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.GetApprovalRuleTemplateOutput)
+	return ret0, ret1
+}
+
+// GetApprovalRuleTemplateRequest indicates an expected call of GetApprovalRuleTemplateRequest
+func (mr *MockCodeCommitAPIMockRecorder) GetApprovalRuleTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApprovalRuleTemplateRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetApprovalRuleTemplateRequest), arg0)
+}
+
+// GetApprovalRuleTemplateWithContext mocks base method
+func (m *MockCodeCommitAPI) GetApprovalRuleTemplateWithContext(arg0 context.Context, arg1 *codecommit.GetApprovalRuleTemplateInput, arg2 ...request.Option) (*codecommit.GetApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetApprovalRuleTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.GetApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApprovalRuleTemplateWithContext indicates an expected call of GetApprovalRuleTemplateWithContext
+func (mr *MockCodeCommitAPIMockRecorder) GetApprovalRuleTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApprovalRuleTemplateWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetApprovalRuleTemplateWithContext), varargs...)
 }
 
 // GetBlob mocks base method
@@ -1548,6 +2048,106 @@ func (mr *MockCodeCommitAPIMockRecorder) GetPullRequest(arg0 interface{}) *gomoc
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequest), arg0)
 }
 
+// GetPullRequestApprovalStates mocks base method
+func (m *MockCodeCommitAPI) GetPullRequestApprovalStates(arg0 *codecommit.GetPullRequestApprovalStatesInput) (*codecommit.GetPullRequestApprovalStatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPullRequestApprovalStates", arg0)
+	ret0, _ := ret[0].(*codecommit.GetPullRequestApprovalStatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPullRequestApprovalStates indicates an expected call of GetPullRequestApprovalStates
+func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestApprovalStates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequestApprovalStates", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequestApprovalStates), arg0)
+}
+
+// GetPullRequestApprovalStatesRequest mocks base method
+func (m *MockCodeCommitAPI) GetPullRequestApprovalStatesRequest(arg0 *codecommit.GetPullRequestApprovalStatesInput) (*request.Request, *codecommit.GetPullRequestApprovalStatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPullRequestApprovalStatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.GetPullRequestApprovalStatesOutput)
+	return ret0, ret1
+}
+
+// GetPullRequestApprovalStatesRequest indicates an expected call of GetPullRequestApprovalStatesRequest
+func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestApprovalStatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequestApprovalStatesRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequestApprovalStatesRequest), arg0)
+}
+
+// GetPullRequestApprovalStatesWithContext mocks base method
+func (m *MockCodeCommitAPI) GetPullRequestApprovalStatesWithContext(arg0 context.Context, arg1 *codecommit.GetPullRequestApprovalStatesInput, arg2 ...request.Option) (*codecommit.GetPullRequestApprovalStatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPullRequestApprovalStatesWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.GetPullRequestApprovalStatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPullRequestApprovalStatesWithContext indicates an expected call of GetPullRequestApprovalStatesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestApprovalStatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequestApprovalStatesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequestApprovalStatesWithContext), varargs...)
+}
+
+// GetPullRequestOverrideState mocks base method
+func (m *MockCodeCommitAPI) GetPullRequestOverrideState(arg0 *codecommit.GetPullRequestOverrideStateInput) (*codecommit.GetPullRequestOverrideStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPullRequestOverrideState", arg0)
+	ret0, _ := ret[0].(*codecommit.GetPullRequestOverrideStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPullRequestOverrideState indicates an expected call of GetPullRequestOverrideState
+func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestOverrideState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequestOverrideState", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequestOverrideState), arg0)
+}
+
+// GetPullRequestOverrideStateRequest mocks base method
+func (m *MockCodeCommitAPI) GetPullRequestOverrideStateRequest(arg0 *codecommit.GetPullRequestOverrideStateInput) (*request.Request, *codecommit.GetPullRequestOverrideStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPullRequestOverrideStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.GetPullRequestOverrideStateOutput)
+	return ret0, ret1
+}
+
+// GetPullRequestOverrideStateRequest indicates an expected call of GetPullRequestOverrideStateRequest
+func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestOverrideStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequestOverrideStateRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequestOverrideStateRequest), arg0)
+}
+
+// GetPullRequestOverrideStateWithContext mocks base method
+func (m *MockCodeCommitAPI) GetPullRequestOverrideStateWithContext(arg0 context.Context, arg1 *codecommit.GetPullRequestOverrideStateInput, arg2 ...request.Option) (*codecommit.GetPullRequestOverrideStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPullRequestOverrideStateWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.GetPullRequestOverrideStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPullRequestOverrideStateWithContext indicates an expected call of GetPullRequestOverrideStateWithContext
+func (mr *MockCodeCommitAPIMockRecorder) GetPullRequestOverrideStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPullRequestOverrideStateWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetPullRequestOverrideStateWithContext), varargs...)
+}
+
 // GetPullRequestRequest mocks base method
 func (m *MockCodeCommitAPI) GetPullRequestRequest(arg0 *codecommit.GetPullRequestInput) (*request.Request, *codecommit.GetPullRequestOutput) {
 	m.ctrl.T.Helper()
@@ -1681,6 +2281,172 @@ func (mr *MockCodeCommitAPIMockRecorder) GetRepositoryWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositoryWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).GetRepositoryWithContext), varargs...)
+}
+
+// ListApprovalRuleTemplates mocks base method
+func (m *MockCodeCommitAPI) ListApprovalRuleTemplates(arg0 *codecommit.ListApprovalRuleTemplatesInput) (*codecommit.ListApprovalRuleTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApprovalRuleTemplates", arg0)
+	ret0, _ := ret[0].(*codecommit.ListApprovalRuleTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApprovalRuleTemplates indicates an expected call of ListApprovalRuleTemplates
+func (mr *MockCodeCommitAPIMockRecorder) ListApprovalRuleTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovalRuleTemplates", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListApprovalRuleTemplates), arg0)
+}
+
+// ListApprovalRuleTemplatesPages mocks base method
+func (m *MockCodeCommitAPI) ListApprovalRuleTemplatesPages(arg0 *codecommit.ListApprovalRuleTemplatesInput, arg1 func(*codecommit.ListApprovalRuleTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApprovalRuleTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApprovalRuleTemplatesPages indicates an expected call of ListApprovalRuleTemplatesPages
+func (mr *MockCodeCommitAPIMockRecorder) ListApprovalRuleTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovalRuleTemplatesPages", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListApprovalRuleTemplatesPages), arg0, arg1)
+}
+
+// ListApprovalRuleTemplatesPagesWithContext mocks base method
+func (m *MockCodeCommitAPI) ListApprovalRuleTemplatesPagesWithContext(arg0 context.Context, arg1 *codecommit.ListApprovalRuleTemplatesInput, arg2 func(*codecommit.ListApprovalRuleTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApprovalRuleTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApprovalRuleTemplatesPagesWithContext indicates an expected call of ListApprovalRuleTemplatesPagesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListApprovalRuleTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovalRuleTemplatesPagesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListApprovalRuleTemplatesPagesWithContext), varargs...)
+}
+
+// ListApprovalRuleTemplatesRequest mocks base method
+func (m *MockCodeCommitAPI) ListApprovalRuleTemplatesRequest(arg0 *codecommit.ListApprovalRuleTemplatesInput) (*request.Request, *codecommit.ListApprovalRuleTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApprovalRuleTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.ListApprovalRuleTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListApprovalRuleTemplatesRequest indicates an expected call of ListApprovalRuleTemplatesRequest
+func (mr *MockCodeCommitAPIMockRecorder) ListApprovalRuleTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovalRuleTemplatesRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListApprovalRuleTemplatesRequest), arg0)
+}
+
+// ListApprovalRuleTemplatesWithContext mocks base method
+func (m *MockCodeCommitAPI) ListApprovalRuleTemplatesWithContext(arg0 context.Context, arg1 *codecommit.ListApprovalRuleTemplatesInput, arg2 ...request.Option) (*codecommit.ListApprovalRuleTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApprovalRuleTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.ListApprovalRuleTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApprovalRuleTemplatesWithContext indicates an expected call of ListApprovalRuleTemplatesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListApprovalRuleTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovalRuleTemplatesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListApprovalRuleTemplatesWithContext), varargs...)
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepository mocks base method
+func (m *MockCodeCommitAPI) ListAssociatedApprovalRuleTemplatesForRepository(arg0 *codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryInput) (*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssociatedApprovalRuleTemplatesForRepository", arg0)
+	ret0, _ := ret[0].(*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepository indicates an expected call of ListAssociatedApprovalRuleTemplatesForRepository
+func (mr *MockCodeCommitAPIMockRecorder) ListAssociatedApprovalRuleTemplatesForRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedApprovalRuleTemplatesForRepository", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListAssociatedApprovalRuleTemplatesForRepository), arg0)
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryPages mocks base method
+func (m *MockCodeCommitAPI) ListAssociatedApprovalRuleTemplatesForRepositoryPages(arg0 *codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryInput, arg1 func(*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssociatedApprovalRuleTemplatesForRepositoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryPages indicates an expected call of ListAssociatedApprovalRuleTemplatesForRepositoryPages
+func (mr *MockCodeCommitAPIMockRecorder) ListAssociatedApprovalRuleTemplatesForRepositoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedApprovalRuleTemplatesForRepositoryPages", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListAssociatedApprovalRuleTemplatesForRepositoryPages), arg0, arg1)
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext mocks base method
+func (m *MockCodeCommitAPI) ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext(arg0 context.Context, arg1 *codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryInput, arg2 func(*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext indicates an expected call of ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListAssociatedApprovalRuleTemplatesForRepositoryPagesWithContext), varargs...)
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryRequest mocks base method
+func (m *MockCodeCommitAPI) ListAssociatedApprovalRuleTemplatesForRepositoryRequest(arg0 *codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryInput) (*request.Request, *codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssociatedApprovalRuleTemplatesForRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput)
+	return ret0, ret1
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryRequest indicates an expected call of ListAssociatedApprovalRuleTemplatesForRepositoryRequest
+func (mr *MockCodeCommitAPIMockRecorder) ListAssociatedApprovalRuleTemplatesForRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedApprovalRuleTemplatesForRepositoryRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListAssociatedApprovalRuleTemplatesForRepositoryRequest), arg0)
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryWithContext mocks base method
+func (m *MockCodeCommitAPI) ListAssociatedApprovalRuleTemplatesForRepositoryWithContext(arg0 context.Context, arg1 *codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryInput, arg2 ...request.Option) (*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssociatedApprovalRuleTemplatesForRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.ListAssociatedApprovalRuleTemplatesForRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssociatedApprovalRuleTemplatesForRepositoryWithContext indicates an expected call of ListAssociatedApprovalRuleTemplatesForRepositoryWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListAssociatedApprovalRuleTemplatesForRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedApprovalRuleTemplatesForRepositoryWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListAssociatedApprovalRuleTemplatesForRepositoryWithContext), varargs...)
 }
 
 // ListBranches mocks base method
@@ -1862,6 +2628,89 @@ func (m *MockCodeCommitAPI) ListRepositories(arg0 *codecommit.ListRepositoriesIn
 func (mr *MockCodeCommitAPIMockRecorder) ListRepositories(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositories", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListRepositories), arg0)
+}
+
+// ListRepositoriesForApprovalRuleTemplate mocks base method
+func (m *MockCodeCommitAPI) ListRepositoriesForApprovalRuleTemplate(arg0 *codecommit.ListRepositoriesForApprovalRuleTemplateInput) (*codecommit.ListRepositoriesForApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositoriesForApprovalRuleTemplate", arg0)
+	ret0, _ := ret[0].(*codecommit.ListRepositoriesForApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRepositoriesForApprovalRuleTemplate indicates an expected call of ListRepositoriesForApprovalRuleTemplate
+func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesForApprovalRuleTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesForApprovalRuleTemplate", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListRepositoriesForApprovalRuleTemplate), arg0)
+}
+
+// ListRepositoriesForApprovalRuleTemplatePages mocks base method
+func (m *MockCodeCommitAPI) ListRepositoriesForApprovalRuleTemplatePages(arg0 *codecommit.ListRepositoriesForApprovalRuleTemplateInput, arg1 func(*codecommit.ListRepositoriesForApprovalRuleTemplateOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositoriesForApprovalRuleTemplatePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRepositoriesForApprovalRuleTemplatePages indicates an expected call of ListRepositoriesForApprovalRuleTemplatePages
+func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesForApprovalRuleTemplatePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesForApprovalRuleTemplatePages", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListRepositoriesForApprovalRuleTemplatePages), arg0, arg1)
+}
+
+// ListRepositoriesForApprovalRuleTemplatePagesWithContext mocks base method
+func (m *MockCodeCommitAPI) ListRepositoriesForApprovalRuleTemplatePagesWithContext(arg0 context.Context, arg1 *codecommit.ListRepositoriesForApprovalRuleTemplateInput, arg2 func(*codecommit.ListRepositoriesForApprovalRuleTemplateOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRepositoriesForApprovalRuleTemplatePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRepositoriesForApprovalRuleTemplatePagesWithContext indicates an expected call of ListRepositoriesForApprovalRuleTemplatePagesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesForApprovalRuleTemplatePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesForApprovalRuleTemplatePagesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListRepositoriesForApprovalRuleTemplatePagesWithContext), varargs...)
+}
+
+// ListRepositoriesForApprovalRuleTemplateRequest mocks base method
+func (m *MockCodeCommitAPI) ListRepositoriesForApprovalRuleTemplateRequest(arg0 *codecommit.ListRepositoriesForApprovalRuleTemplateInput) (*request.Request, *codecommit.ListRepositoriesForApprovalRuleTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositoriesForApprovalRuleTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.ListRepositoriesForApprovalRuleTemplateOutput)
+	return ret0, ret1
+}
+
+// ListRepositoriesForApprovalRuleTemplateRequest indicates an expected call of ListRepositoriesForApprovalRuleTemplateRequest
+func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesForApprovalRuleTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesForApprovalRuleTemplateRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListRepositoriesForApprovalRuleTemplateRequest), arg0)
+}
+
+// ListRepositoriesForApprovalRuleTemplateWithContext mocks base method
+func (m *MockCodeCommitAPI) ListRepositoriesForApprovalRuleTemplateWithContext(arg0 context.Context, arg1 *codecommit.ListRepositoriesForApprovalRuleTemplateInput, arg2 ...request.Option) (*codecommit.ListRepositoriesForApprovalRuleTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRepositoriesForApprovalRuleTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.ListRepositoriesForApprovalRuleTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRepositoriesForApprovalRuleTemplateWithContext indicates an expected call of ListRepositoriesForApprovalRuleTemplateWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListRepositoriesForApprovalRuleTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesForApprovalRuleTemplateWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListRepositoriesForApprovalRuleTemplateWithContext), varargs...)
 }
 
 // ListRepositoriesPages mocks base method
@@ -2282,6 +3131,56 @@ func (mr *MockCodeCommitAPIMockRecorder) MergePullRequestByThreeWayWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergePullRequestByThreeWayWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).MergePullRequestByThreeWayWithContext), varargs...)
 }
 
+// OverridePullRequestApprovalRules mocks base method
+func (m *MockCodeCommitAPI) OverridePullRequestApprovalRules(arg0 *codecommit.OverridePullRequestApprovalRulesInput) (*codecommit.OverridePullRequestApprovalRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "OverridePullRequestApprovalRules", arg0)
+	ret0, _ := ret[0].(*codecommit.OverridePullRequestApprovalRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// OverridePullRequestApprovalRules indicates an expected call of OverridePullRequestApprovalRules
+func (mr *MockCodeCommitAPIMockRecorder) OverridePullRequestApprovalRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OverridePullRequestApprovalRules", reflect.TypeOf((*MockCodeCommitAPI)(nil).OverridePullRequestApprovalRules), arg0)
+}
+
+// OverridePullRequestApprovalRulesRequest mocks base method
+func (m *MockCodeCommitAPI) OverridePullRequestApprovalRulesRequest(arg0 *codecommit.OverridePullRequestApprovalRulesInput) (*request.Request, *codecommit.OverridePullRequestApprovalRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "OverridePullRequestApprovalRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.OverridePullRequestApprovalRulesOutput)
+	return ret0, ret1
+}
+
+// OverridePullRequestApprovalRulesRequest indicates an expected call of OverridePullRequestApprovalRulesRequest
+func (mr *MockCodeCommitAPIMockRecorder) OverridePullRequestApprovalRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OverridePullRequestApprovalRulesRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).OverridePullRequestApprovalRulesRequest), arg0)
+}
+
+// OverridePullRequestApprovalRulesWithContext mocks base method
+func (m *MockCodeCommitAPI) OverridePullRequestApprovalRulesWithContext(arg0 context.Context, arg1 *codecommit.OverridePullRequestApprovalRulesInput, arg2 ...request.Option) (*codecommit.OverridePullRequestApprovalRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "OverridePullRequestApprovalRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.OverridePullRequestApprovalRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// OverridePullRequestApprovalRulesWithContext indicates an expected call of OverridePullRequestApprovalRulesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) OverridePullRequestApprovalRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OverridePullRequestApprovalRulesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).OverridePullRequestApprovalRulesWithContext), varargs...)
+}
+
 // PostCommentForComparedCommit mocks base method
 func (m *MockCodeCommitAPI) PostCommentForComparedCommit(arg0 *codecommit.PostCommentForComparedCommitInput) (*codecommit.PostCommentForComparedCommitOutput, error) {
 	m.ctrl.T.Helper()
@@ -2682,6 +3581,156 @@ func (mr *MockCodeCommitAPIMockRecorder) UntagResourceWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateApprovalRuleTemplateContent mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateContent(arg0 *codecommit.UpdateApprovalRuleTemplateContentInput) (*codecommit.UpdateApprovalRuleTemplateContentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateContent", arg0)
+	ret0, _ := ret[0].(*codecommit.UpdateApprovalRuleTemplateContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateContent indicates an expected call of UpdateApprovalRuleTemplateContent
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateContent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateContent", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateContent), arg0)
+}
+
+// UpdateApprovalRuleTemplateContentRequest mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateContentRequest(arg0 *codecommit.UpdateApprovalRuleTemplateContentInput) (*request.Request, *codecommit.UpdateApprovalRuleTemplateContentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateContentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.UpdateApprovalRuleTemplateContentOutput)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateContentRequest indicates an expected call of UpdateApprovalRuleTemplateContentRequest
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateContentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateContentRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateContentRequest), arg0)
+}
+
+// UpdateApprovalRuleTemplateContentWithContext mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateContentWithContext(arg0 context.Context, arg1 *codecommit.UpdateApprovalRuleTemplateContentInput, arg2 ...request.Option) (*codecommit.UpdateApprovalRuleTemplateContentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateContentWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.UpdateApprovalRuleTemplateContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateContentWithContext indicates an expected call of UpdateApprovalRuleTemplateContentWithContext
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateContentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateContentWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateContentWithContext), varargs...)
+}
+
+// UpdateApprovalRuleTemplateDescription mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateDescription(arg0 *codecommit.UpdateApprovalRuleTemplateDescriptionInput) (*codecommit.UpdateApprovalRuleTemplateDescriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateDescription", arg0)
+	ret0, _ := ret[0].(*codecommit.UpdateApprovalRuleTemplateDescriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateDescription indicates an expected call of UpdateApprovalRuleTemplateDescription
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateDescription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateDescription", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateDescription), arg0)
+}
+
+// UpdateApprovalRuleTemplateDescriptionRequest mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateDescriptionRequest(arg0 *codecommit.UpdateApprovalRuleTemplateDescriptionInput) (*request.Request, *codecommit.UpdateApprovalRuleTemplateDescriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateDescriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.UpdateApprovalRuleTemplateDescriptionOutput)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateDescriptionRequest indicates an expected call of UpdateApprovalRuleTemplateDescriptionRequest
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateDescriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateDescriptionRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateDescriptionRequest), arg0)
+}
+
+// UpdateApprovalRuleTemplateDescriptionWithContext mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateDescriptionWithContext(arg0 context.Context, arg1 *codecommit.UpdateApprovalRuleTemplateDescriptionInput, arg2 ...request.Option) (*codecommit.UpdateApprovalRuleTemplateDescriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateDescriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.UpdateApprovalRuleTemplateDescriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateDescriptionWithContext indicates an expected call of UpdateApprovalRuleTemplateDescriptionWithContext
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateDescriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateDescriptionWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateDescriptionWithContext), varargs...)
+}
+
+// UpdateApprovalRuleTemplateName mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateName(arg0 *codecommit.UpdateApprovalRuleTemplateNameInput) (*codecommit.UpdateApprovalRuleTemplateNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateName", arg0)
+	ret0, _ := ret[0].(*codecommit.UpdateApprovalRuleTemplateNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateName indicates an expected call of UpdateApprovalRuleTemplateName
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateName", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateName), arg0)
+}
+
+// UpdateApprovalRuleTemplateNameRequest mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateNameRequest(arg0 *codecommit.UpdateApprovalRuleTemplateNameInput) (*request.Request, *codecommit.UpdateApprovalRuleTemplateNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.UpdateApprovalRuleTemplateNameOutput)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateNameRequest indicates an expected call of UpdateApprovalRuleTemplateNameRequest
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateNameRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateNameRequest), arg0)
+}
+
+// UpdateApprovalRuleTemplateNameWithContext mocks base method
+func (m *MockCodeCommitAPI) UpdateApprovalRuleTemplateNameWithContext(arg0 context.Context, arg1 *codecommit.UpdateApprovalRuleTemplateNameInput, arg2 ...request.Option) (*codecommit.UpdateApprovalRuleTemplateNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApprovalRuleTemplateNameWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.UpdateApprovalRuleTemplateNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApprovalRuleTemplateNameWithContext indicates an expected call of UpdateApprovalRuleTemplateNameWithContext
+func (mr *MockCodeCommitAPIMockRecorder) UpdateApprovalRuleTemplateNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApprovalRuleTemplateNameWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateApprovalRuleTemplateNameWithContext), varargs...)
+}
+
 // UpdateComment mocks base method
 func (m *MockCodeCommitAPI) UpdateComment(arg0 *codecommit.UpdateCommentInput) (*codecommit.UpdateCommentOutput, error) {
 	m.ctrl.T.Helper()
@@ -2780,6 +3829,106 @@ func (mr *MockCodeCommitAPIMockRecorder) UpdateDefaultBranchWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDefaultBranchWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdateDefaultBranchWithContext), varargs...)
+}
+
+// UpdatePullRequestApprovalRuleContent mocks base method
+func (m *MockCodeCommitAPI) UpdatePullRequestApprovalRuleContent(arg0 *codecommit.UpdatePullRequestApprovalRuleContentInput) (*codecommit.UpdatePullRequestApprovalRuleContentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePullRequestApprovalRuleContent", arg0)
+	ret0, _ := ret[0].(*codecommit.UpdatePullRequestApprovalRuleContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePullRequestApprovalRuleContent indicates an expected call of UpdatePullRequestApprovalRuleContent
+func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestApprovalRuleContent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullRequestApprovalRuleContent", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdatePullRequestApprovalRuleContent), arg0)
+}
+
+// UpdatePullRequestApprovalRuleContentRequest mocks base method
+func (m *MockCodeCommitAPI) UpdatePullRequestApprovalRuleContentRequest(arg0 *codecommit.UpdatePullRequestApprovalRuleContentInput) (*request.Request, *codecommit.UpdatePullRequestApprovalRuleContentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePullRequestApprovalRuleContentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.UpdatePullRequestApprovalRuleContentOutput)
+	return ret0, ret1
+}
+
+// UpdatePullRequestApprovalRuleContentRequest indicates an expected call of UpdatePullRequestApprovalRuleContentRequest
+func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestApprovalRuleContentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullRequestApprovalRuleContentRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdatePullRequestApprovalRuleContentRequest), arg0)
+}
+
+// UpdatePullRequestApprovalRuleContentWithContext mocks base method
+func (m *MockCodeCommitAPI) UpdatePullRequestApprovalRuleContentWithContext(arg0 context.Context, arg1 *codecommit.UpdatePullRequestApprovalRuleContentInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestApprovalRuleContentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePullRequestApprovalRuleContentWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.UpdatePullRequestApprovalRuleContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePullRequestApprovalRuleContentWithContext indicates an expected call of UpdatePullRequestApprovalRuleContentWithContext
+func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestApprovalRuleContentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullRequestApprovalRuleContentWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdatePullRequestApprovalRuleContentWithContext), varargs...)
+}
+
+// UpdatePullRequestApprovalState mocks base method
+func (m *MockCodeCommitAPI) UpdatePullRequestApprovalState(arg0 *codecommit.UpdatePullRequestApprovalStateInput) (*codecommit.UpdatePullRequestApprovalStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePullRequestApprovalState", arg0)
+	ret0, _ := ret[0].(*codecommit.UpdatePullRequestApprovalStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePullRequestApprovalState indicates an expected call of UpdatePullRequestApprovalState
+func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestApprovalState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullRequestApprovalState", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdatePullRequestApprovalState), arg0)
+}
+
+// UpdatePullRequestApprovalStateRequest mocks base method
+func (m *MockCodeCommitAPI) UpdatePullRequestApprovalStateRequest(arg0 *codecommit.UpdatePullRequestApprovalStateInput) (*request.Request, *codecommit.UpdatePullRequestApprovalStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePullRequestApprovalStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.UpdatePullRequestApprovalStateOutput)
+	return ret0, ret1
+}
+
+// UpdatePullRequestApprovalStateRequest indicates an expected call of UpdatePullRequestApprovalStateRequest
+func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestApprovalStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullRequestApprovalStateRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdatePullRequestApprovalStateRequest), arg0)
+}
+
+// UpdatePullRequestApprovalStateWithContext mocks base method
+func (m *MockCodeCommitAPI) UpdatePullRequestApprovalStateWithContext(arg0 context.Context, arg1 *codecommit.UpdatePullRequestApprovalStateInput, arg2 ...request.Option) (*codecommit.UpdatePullRequestApprovalStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePullRequestApprovalStateWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.UpdatePullRequestApprovalStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePullRequestApprovalStateWithContext indicates an expected call of UpdatePullRequestApprovalStateWithContext
+func (mr *MockCodeCommitAPIMockRecorder) UpdatePullRequestApprovalStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullRequestApprovalStateWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).UpdatePullRequestApprovalStateWithContext), varargs...)
 }
 
 // UpdatePullRequestDescription mocks base method

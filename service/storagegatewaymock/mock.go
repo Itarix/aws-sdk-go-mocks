@@ -1285,6 +1285,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteVolumeWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteVolumeWithContext), varargs...)
 }
 
+// DescribeAvailabilityMonitorTest mocks base method
+func (m *MockStorageGatewayAPI) DescribeAvailabilityMonitorTest(arg0 *storagegateway.DescribeAvailabilityMonitorTestInput) (*storagegateway.DescribeAvailabilityMonitorTestOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAvailabilityMonitorTest", arg0)
+	ret0, _ := ret[0].(*storagegateway.DescribeAvailabilityMonitorTestOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAvailabilityMonitorTest indicates an expected call of DescribeAvailabilityMonitorTest
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeAvailabilityMonitorTest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityMonitorTest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeAvailabilityMonitorTest), arg0)
+}
+
+// DescribeAvailabilityMonitorTestRequest mocks base method
+func (m *MockStorageGatewayAPI) DescribeAvailabilityMonitorTestRequest(arg0 *storagegateway.DescribeAvailabilityMonitorTestInput) (*request.Request, *storagegateway.DescribeAvailabilityMonitorTestOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAvailabilityMonitorTestRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DescribeAvailabilityMonitorTestOutput)
+	return ret0, ret1
+}
+
+// DescribeAvailabilityMonitorTestRequest indicates an expected call of DescribeAvailabilityMonitorTestRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeAvailabilityMonitorTestRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityMonitorTestRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeAvailabilityMonitorTestRequest), arg0)
+}
+
+// DescribeAvailabilityMonitorTestWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeAvailabilityMonitorTestWithContext(arg0 context.Context, arg1 *storagegateway.DescribeAvailabilityMonitorTestInput, arg2 ...request.Option) (*storagegateway.DescribeAvailabilityMonitorTestOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAvailabilityMonitorTestWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DescribeAvailabilityMonitorTestOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAvailabilityMonitorTestWithContext indicates an expected call of DescribeAvailabilityMonitorTestWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeAvailabilityMonitorTestWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAvailabilityMonitorTestWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeAvailabilityMonitorTestWithContext), varargs...)
+}
+
 // DescribeBandwidthRateLimit mocks base method
 func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimit(arg0 *storagegateway.DescribeBandwidthRateLimitInput) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
@@ -3430,6 +3480,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) ShutdownGatewayWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ShutdownGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ShutdownGatewayWithContext), varargs...)
+}
+
+// StartAvailabilityMonitorTest mocks base method
+func (m *MockStorageGatewayAPI) StartAvailabilityMonitorTest(arg0 *storagegateway.StartAvailabilityMonitorTestInput) (*storagegateway.StartAvailabilityMonitorTestOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAvailabilityMonitorTest", arg0)
+	ret0, _ := ret[0].(*storagegateway.StartAvailabilityMonitorTestOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAvailabilityMonitorTest indicates an expected call of StartAvailabilityMonitorTest
+func (mr *MockStorageGatewayAPIMockRecorder) StartAvailabilityMonitorTest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAvailabilityMonitorTest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartAvailabilityMonitorTest), arg0)
+}
+
+// StartAvailabilityMonitorTestRequest mocks base method
+func (m *MockStorageGatewayAPI) StartAvailabilityMonitorTestRequest(arg0 *storagegateway.StartAvailabilityMonitorTestInput) (*request.Request, *storagegateway.StartAvailabilityMonitorTestOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAvailabilityMonitorTestRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.StartAvailabilityMonitorTestOutput)
+	return ret0, ret1
+}
+
+// StartAvailabilityMonitorTestRequest indicates an expected call of StartAvailabilityMonitorTestRequest
+func (mr *MockStorageGatewayAPIMockRecorder) StartAvailabilityMonitorTestRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAvailabilityMonitorTestRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartAvailabilityMonitorTestRequest), arg0)
+}
+
+// StartAvailabilityMonitorTestWithContext mocks base method
+func (m *MockStorageGatewayAPI) StartAvailabilityMonitorTestWithContext(arg0 context.Context, arg1 *storagegateway.StartAvailabilityMonitorTestInput, arg2 ...request.Option) (*storagegateway.StartAvailabilityMonitorTestOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartAvailabilityMonitorTestWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.StartAvailabilityMonitorTestOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAvailabilityMonitorTestWithContext indicates an expected call of StartAvailabilityMonitorTestWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) StartAvailabilityMonitorTestWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAvailabilityMonitorTestWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartAvailabilityMonitorTestWithContext), varargs...)
 }
 
 // StartGateway mocks base method

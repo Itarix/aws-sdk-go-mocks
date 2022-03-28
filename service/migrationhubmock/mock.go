@@ -500,6 +500,39 @@ func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifacts(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifacts", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifacts), arg0)
 }
 
+// ListCreatedArtifactsPages mocks base method
+func (m *MockMigrationHubAPI) ListCreatedArtifactsPages(arg0 *migrationhub.ListCreatedArtifactsInput, arg1 func(*migrationhub.ListCreatedArtifactsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCreatedArtifactsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCreatedArtifactsPages indicates an expected call of ListCreatedArtifactsPages
+func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifactsPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifactsPages), arg0, arg1)
+}
+
+// ListCreatedArtifactsPagesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListCreatedArtifactsPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListCreatedArtifactsInput, arg2 func(*migrationhub.ListCreatedArtifactsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCreatedArtifactsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCreatedArtifactsPagesWithContext indicates an expected call of ListCreatedArtifactsPagesWithContext
+func (mr *MockMigrationHubAPIMockRecorder) ListCreatedArtifactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreatedArtifactsPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListCreatedArtifactsPagesWithContext), varargs...)
+}
+
 // ListCreatedArtifactsRequest mocks base method
 func (m *MockMigrationHubAPI) ListCreatedArtifactsRequest(arg0 *migrationhub.ListCreatedArtifactsInput) (*request.Request, *migrationhub.ListCreatedArtifactsOutput) {
 	m.ctrl.T.Helper()
@@ -548,6 +581,39 @@ func (m *MockMigrationHubAPI) ListDiscoveredResources(arg0 *migrationhub.ListDis
 func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResources", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResources), arg0)
+}
+
+// ListDiscoveredResourcesPages mocks base method
+func (m *MockMigrationHubAPI) ListDiscoveredResourcesPages(arg0 *migrationhub.ListDiscoveredResourcesInput, arg1 func(*migrationhub.ListDiscoveredResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDiscoveredResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDiscoveredResourcesPages indicates an expected call of ListDiscoveredResourcesPages
+func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResourcesPages), arg0, arg1)
+}
+
+// ListDiscoveredResourcesPagesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListDiscoveredResourcesPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListDiscoveredResourcesInput, arg2 func(*migrationhub.ListDiscoveredResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDiscoveredResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDiscoveredResourcesPagesWithContext indicates an expected call of ListDiscoveredResourcesPagesWithContext
+func (mr *MockMigrationHubAPIMockRecorder) ListDiscoveredResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListDiscoveredResourcesPagesWithContext), varargs...)
 }
 
 // ListDiscoveredResourcesRequest mocks base method
@@ -600,6 +666,39 @@ func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasks(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasks", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasks), arg0)
 }
 
+// ListMigrationTasksPages mocks base method
+func (m *MockMigrationHubAPI) ListMigrationTasksPages(arg0 *migrationhub.ListMigrationTasksInput, arg1 func(*migrationhub.ListMigrationTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMigrationTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMigrationTasksPages indicates an expected call of ListMigrationTasksPages
+func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasksPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasksPages), arg0, arg1)
+}
+
+// ListMigrationTasksPagesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListMigrationTasksPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListMigrationTasksInput, arg2 func(*migrationhub.ListMigrationTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMigrationTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMigrationTasksPagesWithContext indicates an expected call of ListMigrationTasksPagesWithContext
+func (mr *MockMigrationHubAPIMockRecorder) ListMigrationTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMigrationTasksPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListMigrationTasksPagesWithContext), varargs...)
+}
+
 // ListMigrationTasksRequest mocks base method
 func (m *MockMigrationHubAPI) ListMigrationTasksRequest(arg0 *migrationhub.ListMigrationTasksInput) (*request.Request, *migrationhub.ListMigrationTasksOutput) {
 	m.ctrl.T.Helper()
@@ -648,6 +747,39 @@ func (m *MockMigrationHubAPI) ListProgressUpdateStreams(arg0 *migrationhub.ListP
 func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreams(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreams", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreams), arg0)
+}
+
+// ListProgressUpdateStreamsPages mocks base method
+func (m *MockMigrationHubAPI) ListProgressUpdateStreamsPages(arg0 *migrationhub.ListProgressUpdateStreamsInput, arg1 func(*migrationhub.ListProgressUpdateStreamsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProgressUpdateStreamsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProgressUpdateStreamsPages indicates an expected call of ListProgressUpdateStreamsPages
+func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreamsPages", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreamsPages), arg0, arg1)
+}
+
+// ListProgressUpdateStreamsPagesWithContext mocks base method
+func (m *MockMigrationHubAPI) ListProgressUpdateStreamsPagesWithContext(arg0 context.Context, arg1 *migrationhub.ListProgressUpdateStreamsInput, arg2 func(*migrationhub.ListProgressUpdateStreamsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProgressUpdateStreamsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProgressUpdateStreamsPagesWithContext indicates an expected call of ListProgressUpdateStreamsPagesWithContext
+func (mr *MockMigrationHubAPIMockRecorder) ListProgressUpdateStreamsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgressUpdateStreamsPagesWithContext", reflect.TypeOf((*MockMigrationHubAPI)(nil).ListProgressUpdateStreamsPagesWithContext), varargs...)
 }
 
 // ListProgressUpdateStreamsRequest mocks base method

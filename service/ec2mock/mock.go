@@ -7930,6 +7930,39 @@ func (mr *MockEC2APIMockRecorder) DescribeExportImageTasks(arg0 interface{}) *go
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportImageTasks", reflect.TypeOf((*MockEC2API)(nil).DescribeExportImageTasks), arg0)
 }
 
+// DescribeExportImageTasksPages mocks base method
+func (m *MockEC2API) DescribeExportImageTasksPages(arg0 *ec2.DescribeExportImageTasksInput, arg1 func(*ec2.DescribeExportImageTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExportImageTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeExportImageTasksPages indicates an expected call of DescribeExportImageTasksPages
+func (mr *MockEC2APIMockRecorder) DescribeExportImageTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportImageTasksPages", reflect.TypeOf((*MockEC2API)(nil).DescribeExportImageTasksPages), arg0, arg1)
+}
+
+// DescribeExportImageTasksPagesWithContext mocks base method
+func (m *MockEC2API) DescribeExportImageTasksPagesWithContext(arg0 context.Context, arg1 *ec2.DescribeExportImageTasksInput, arg2 func(*ec2.DescribeExportImageTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExportImageTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeExportImageTasksPagesWithContext indicates an expected call of DescribeExportImageTasksPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeExportImageTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportImageTasksPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeExportImageTasksPagesWithContext), varargs...)
+}
+
 // DescribeExportImageTasksRequest mocks base method
 func (m *MockEC2API) DescribeExportImageTasksRequest(arg0 *ec2.DescribeExportImageTasksInput) (*request.Request, *ec2.DescribeExportImageTasksOutput) {
 	m.ctrl.T.Helper()
@@ -8013,6 +8046,89 @@ func (mr *MockEC2APIMockRecorder) DescribeExportTasksWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportTasksWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeExportTasksWithContext), varargs...)
+}
+
+// DescribeFastSnapshotRestores mocks base method
+func (m *MockEC2API) DescribeFastSnapshotRestores(arg0 *ec2.DescribeFastSnapshotRestoresInput) (*ec2.DescribeFastSnapshotRestoresOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFastSnapshotRestores", arg0)
+	ret0, _ := ret[0].(*ec2.DescribeFastSnapshotRestoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFastSnapshotRestores indicates an expected call of DescribeFastSnapshotRestores
+func (mr *MockEC2APIMockRecorder) DescribeFastSnapshotRestores(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFastSnapshotRestores", reflect.TypeOf((*MockEC2API)(nil).DescribeFastSnapshotRestores), arg0)
+}
+
+// DescribeFastSnapshotRestoresPages mocks base method
+func (m *MockEC2API) DescribeFastSnapshotRestoresPages(arg0 *ec2.DescribeFastSnapshotRestoresInput, arg1 func(*ec2.DescribeFastSnapshotRestoresOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFastSnapshotRestoresPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFastSnapshotRestoresPages indicates an expected call of DescribeFastSnapshotRestoresPages
+func (mr *MockEC2APIMockRecorder) DescribeFastSnapshotRestoresPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFastSnapshotRestoresPages", reflect.TypeOf((*MockEC2API)(nil).DescribeFastSnapshotRestoresPages), arg0, arg1)
+}
+
+// DescribeFastSnapshotRestoresPagesWithContext mocks base method
+func (m *MockEC2API) DescribeFastSnapshotRestoresPagesWithContext(arg0 context.Context, arg1 *ec2.DescribeFastSnapshotRestoresInput, arg2 func(*ec2.DescribeFastSnapshotRestoresOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFastSnapshotRestoresPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFastSnapshotRestoresPagesWithContext indicates an expected call of DescribeFastSnapshotRestoresPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeFastSnapshotRestoresPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFastSnapshotRestoresPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeFastSnapshotRestoresPagesWithContext), varargs...)
+}
+
+// DescribeFastSnapshotRestoresRequest mocks base method
+func (m *MockEC2API) DescribeFastSnapshotRestoresRequest(arg0 *ec2.DescribeFastSnapshotRestoresInput) (*request.Request, *ec2.DescribeFastSnapshotRestoresOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFastSnapshotRestoresRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DescribeFastSnapshotRestoresOutput)
+	return ret0, ret1
+}
+
+// DescribeFastSnapshotRestoresRequest indicates an expected call of DescribeFastSnapshotRestoresRequest
+func (mr *MockEC2APIMockRecorder) DescribeFastSnapshotRestoresRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFastSnapshotRestoresRequest", reflect.TypeOf((*MockEC2API)(nil).DescribeFastSnapshotRestoresRequest), arg0)
+}
+
+// DescribeFastSnapshotRestoresWithContext mocks base method
+func (m *MockEC2API) DescribeFastSnapshotRestoresWithContext(arg0 context.Context, arg1 *ec2.DescribeFastSnapshotRestoresInput, arg2 ...request.Option) (*ec2.DescribeFastSnapshotRestoresOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFastSnapshotRestoresWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DescribeFastSnapshotRestoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFastSnapshotRestoresWithContext indicates an expected call of DescribeFastSnapshotRestoresWithContext
+func (mr *MockEC2APIMockRecorder) DescribeFastSnapshotRestoresWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFastSnapshotRestoresWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeFastSnapshotRestoresWithContext), varargs...)
 }
 
 // DescribeFleetHistory mocks base method
@@ -14047,6 +14163,56 @@ func (mr *MockEC2APIMockRecorder) DisableEbsEncryptionByDefaultWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableEbsEncryptionByDefaultWithContext", reflect.TypeOf((*MockEC2API)(nil).DisableEbsEncryptionByDefaultWithContext), varargs...)
 }
 
+// DisableFastSnapshotRestores mocks base method
+func (m *MockEC2API) DisableFastSnapshotRestores(arg0 *ec2.DisableFastSnapshotRestoresInput) (*ec2.DisableFastSnapshotRestoresOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableFastSnapshotRestores", arg0)
+	ret0, _ := ret[0].(*ec2.DisableFastSnapshotRestoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableFastSnapshotRestores indicates an expected call of DisableFastSnapshotRestores
+func (mr *MockEC2APIMockRecorder) DisableFastSnapshotRestores(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableFastSnapshotRestores", reflect.TypeOf((*MockEC2API)(nil).DisableFastSnapshotRestores), arg0)
+}
+
+// DisableFastSnapshotRestoresRequest mocks base method
+func (m *MockEC2API) DisableFastSnapshotRestoresRequest(arg0 *ec2.DisableFastSnapshotRestoresInput) (*request.Request, *ec2.DisableFastSnapshotRestoresOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableFastSnapshotRestoresRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DisableFastSnapshotRestoresOutput)
+	return ret0, ret1
+}
+
+// DisableFastSnapshotRestoresRequest indicates an expected call of DisableFastSnapshotRestoresRequest
+func (mr *MockEC2APIMockRecorder) DisableFastSnapshotRestoresRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableFastSnapshotRestoresRequest", reflect.TypeOf((*MockEC2API)(nil).DisableFastSnapshotRestoresRequest), arg0)
+}
+
+// DisableFastSnapshotRestoresWithContext mocks base method
+func (m *MockEC2API) DisableFastSnapshotRestoresWithContext(arg0 context.Context, arg1 *ec2.DisableFastSnapshotRestoresInput, arg2 ...request.Option) (*ec2.DisableFastSnapshotRestoresOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableFastSnapshotRestoresWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DisableFastSnapshotRestoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableFastSnapshotRestoresWithContext indicates an expected call of DisableFastSnapshotRestoresWithContext
+func (mr *MockEC2APIMockRecorder) DisableFastSnapshotRestoresWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableFastSnapshotRestoresWithContext", reflect.TypeOf((*MockEC2API)(nil).DisableFastSnapshotRestoresWithContext), varargs...)
+}
+
 // DisableTransitGatewayRouteTablePropagation mocks base method
 func (m *MockEC2API) DisableTransitGatewayRouteTablePropagation(arg0 *ec2.DisableTransitGatewayRouteTablePropagationInput) (*ec2.DisableTransitGatewayRouteTablePropagationOutput, error) {
 	m.ctrl.T.Helper()
@@ -14645,6 +14811,56 @@ func (mr *MockEC2APIMockRecorder) EnableEbsEncryptionByDefaultWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableEbsEncryptionByDefaultWithContext", reflect.TypeOf((*MockEC2API)(nil).EnableEbsEncryptionByDefaultWithContext), varargs...)
+}
+
+// EnableFastSnapshotRestores mocks base method
+func (m *MockEC2API) EnableFastSnapshotRestores(arg0 *ec2.EnableFastSnapshotRestoresInput) (*ec2.EnableFastSnapshotRestoresOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableFastSnapshotRestores", arg0)
+	ret0, _ := ret[0].(*ec2.EnableFastSnapshotRestoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableFastSnapshotRestores indicates an expected call of EnableFastSnapshotRestores
+func (mr *MockEC2APIMockRecorder) EnableFastSnapshotRestores(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableFastSnapshotRestores", reflect.TypeOf((*MockEC2API)(nil).EnableFastSnapshotRestores), arg0)
+}
+
+// EnableFastSnapshotRestoresRequest mocks base method
+func (m *MockEC2API) EnableFastSnapshotRestoresRequest(arg0 *ec2.EnableFastSnapshotRestoresInput) (*request.Request, *ec2.EnableFastSnapshotRestoresOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableFastSnapshotRestoresRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.EnableFastSnapshotRestoresOutput)
+	return ret0, ret1
+}
+
+// EnableFastSnapshotRestoresRequest indicates an expected call of EnableFastSnapshotRestoresRequest
+func (mr *MockEC2APIMockRecorder) EnableFastSnapshotRestoresRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableFastSnapshotRestoresRequest", reflect.TypeOf((*MockEC2API)(nil).EnableFastSnapshotRestoresRequest), arg0)
+}
+
+// EnableFastSnapshotRestoresWithContext mocks base method
+func (m *MockEC2API) EnableFastSnapshotRestoresWithContext(arg0 context.Context, arg1 *ec2.EnableFastSnapshotRestoresInput, arg2 ...request.Option) (*ec2.EnableFastSnapshotRestoresOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableFastSnapshotRestoresWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.EnableFastSnapshotRestoresOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableFastSnapshotRestoresWithContext indicates an expected call of EnableFastSnapshotRestoresWithContext
+func (mr *MockEC2APIMockRecorder) EnableFastSnapshotRestoresWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableFastSnapshotRestoresWithContext", reflect.TypeOf((*MockEC2API)(nil).EnableFastSnapshotRestoresWithContext), varargs...)
 }
 
 // EnableTransitGatewayRouteTablePropagation mocks base method
@@ -20788,6 +21004,39 @@ func (mr *MockEC2APIMockRecorder) WaitUntilPasswordDataAvailableWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilPasswordDataAvailableWithContext", reflect.TypeOf((*MockEC2API)(nil).WaitUntilPasswordDataAvailableWithContext), varargs...)
+}
+
+// WaitUntilSecurityGroupExists mocks base method
+func (m *MockEC2API) WaitUntilSecurityGroupExists(arg0 *ec2.DescribeSecurityGroupsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilSecurityGroupExists", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilSecurityGroupExists indicates an expected call of WaitUntilSecurityGroupExists
+func (mr *MockEC2APIMockRecorder) WaitUntilSecurityGroupExists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilSecurityGroupExists", reflect.TypeOf((*MockEC2API)(nil).WaitUntilSecurityGroupExists), arg0)
+}
+
+// WaitUntilSecurityGroupExistsWithContext mocks base method
+func (m *MockEC2API) WaitUntilSecurityGroupExistsWithContext(arg0 context.Context, arg1 *ec2.DescribeSecurityGroupsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilSecurityGroupExistsWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilSecurityGroupExistsWithContext indicates an expected call of WaitUntilSecurityGroupExistsWithContext
+func (mr *MockEC2APIMockRecorder) WaitUntilSecurityGroupExistsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilSecurityGroupExistsWithContext", reflect.TypeOf((*MockEC2API)(nil).WaitUntilSecurityGroupExistsWithContext), varargs...)
 }
 
 // WaitUntilSnapshotCompleted mocks base method
