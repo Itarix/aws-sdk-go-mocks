@@ -1216,6 +1216,56 @@ func (mr *MockEMRAPIMockRecorder) ListStepsWithContext(arg0, arg1 interface{}, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStepsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStepsWithContext), varargs...)
 }
 
+// ModifyCluster mocks base method
+func (m *MockEMRAPI) ModifyCluster(arg0 *emr.ModifyClusterInput) (*emr.ModifyClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCluster", arg0)
+	ret0, _ := ret[0].(*emr.ModifyClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCluster indicates an expected call of ModifyCluster
+func (mr *MockEMRAPIMockRecorder) ModifyCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCluster", reflect.TypeOf((*MockEMRAPI)(nil).ModifyCluster), arg0)
+}
+
+// ModifyClusterRequest mocks base method
+func (m *MockEMRAPI) ModifyClusterRequest(arg0 *emr.ModifyClusterInput) (*request.Request, *emr.ModifyClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.ModifyClusterOutput)
+	return ret0, ret1
+}
+
+// ModifyClusterRequest indicates an expected call of ModifyClusterRequest
+func (mr *MockEMRAPIMockRecorder) ModifyClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterRequest", reflect.TypeOf((*MockEMRAPI)(nil).ModifyClusterRequest), arg0)
+}
+
+// ModifyClusterWithContext mocks base method
+func (m *MockEMRAPI) ModifyClusterWithContext(arg0 context.Context, arg1 *emr.ModifyClusterInput, arg2 ...request.Option) (*emr.ModifyClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.ModifyClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterWithContext indicates an expected call of ModifyClusterWithContext
+func (mr *MockEMRAPIMockRecorder) ModifyClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ModifyClusterWithContext), varargs...)
+}
+
 // ModifyInstanceFleet mocks base method
 func (m *MockEMRAPI) ModifyInstanceFleet(arg0 *emr.ModifyInstanceFleetInput) (*emr.ModifyInstanceFleetOutput, error) {
 	m.ctrl.T.Helper()

@@ -9444,6 +9444,106 @@ func (mr *MockEC2APIMockRecorder) DescribeInstanceStatusWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceStatusWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceStatusWithContext), varargs...)
 }
 
+// DescribeInstanceTypeOfferings mocks base method
+func (m *MockEC2API) DescribeInstanceTypeOfferings(arg0 *ec2.DescribeInstanceTypeOfferingsInput) (*ec2.DescribeInstanceTypeOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceTypeOfferings", arg0)
+	ret0, _ := ret[0].(*ec2.DescribeInstanceTypeOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceTypeOfferings indicates an expected call of DescribeInstanceTypeOfferings
+func (mr *MockEC2APIMockRecorder) DescribeInstanceTypeOfferings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceTypeOfferings", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceTypeOfferings), arg0)
+}
+
+// DescribeInstanceTypeOfferingsRequest mocks base method
+func (m *MockEC2API) DescribeInstanceTypeOfferingsRequest(arg0 *ec2.DescribeInstanceTypeOfferingsInput) (*request.Request, *ec2.DescribeInstanceTypeOfferingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceTypeOfferingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DescribeInstanceTypeOfferingsOutput)
+	return ret0, ret1
+}
+
+// DescribeInstanceTypeOfferingsRequest indicates an expected call of DescribeInstanceTypeOfferingsRequest
+func (mr *MockEC2APIMockRecorder) DescribeInstanceTypeOfferingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceTypeOfferingsRequest", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceTypeOfferingsRequest), arg0)
+}
+
+// DescribeInstanceTypeOfferingsWithContext mocks base method
+func (m *MockEC2API) DescribeInstanceTypeOfferingsWithContext(arg0 context.Context, arg1 *ec2.DescribeInstanceTypeOfferingsInput, arg2 ...request.Option) (*ec2.DescribeInstanceTypeOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstanceTypeOfferingsWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DescribeInstanceTypeOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceTypeOfferingsWithContext indicates an expected call of DescribeInstanceTypeOfferingsWithContext
+func (mr *MockEC2APIMockRecorder) DescribeInstanceTypeOfferingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceTypeOfferingsWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceTypeOfferingsWithContext), varargs...)
+}
+
+// DescribeInstanceTypes mocks base method
+func (m *MockEC2API) DescribeInstanceTypes(arg0 *ec2.DescribeInstanceTypesInput) (*ec2.DescribeInstanceTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceTypes", arg0)
+	ret0, _ := ret[0].(*ec2.DescribeInstanceTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceTypes indicates an expected call of DescribeInstanceTypes
+func (mr *MockEC2APIMockRecorder) DescribeInstanceTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceTypes", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceTypes), arg0)
+}
+
+// DescribeInstanceTypesRequest mocks base method
+func (m *MockEC2API) DescribeInstanceTypesRequest(arg0 *ec2.DescribeInstanceTypesInput) (*request.Request, *ec2.DescribeInstanceTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DescribeInstanceTypesOutput)
+	return ret0, ret1
+}
+
+// DescribeInstanceTypesRequest indicates an expected call of DescribeInstanceTypesRequest
+func (mr *MockEC2APIMockRecorder) DescribeInstanceTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceTypesRequest", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceTypesRequest), arg0)
+}
+
+// DescribeInstanceTypesWithContext mocks base method
+func (m *MockEC2API) DescribeInstanceTypesWithContext(arg0 context.Context, arg1 *ec2.DescribeInstanceTypesInput, arg2 ...request.Option) (*ec2.DescribeInstanceTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstanceTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DescribeInstanceTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceTypesWithContext indicates an expected call of DescribeInstanceTypesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeInstanceTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceTypesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeInstanceTypesWithContext), varargs...)
+}
+
 // DescribeInstances mocks base method
 func (m *MockEC2API) DescribeInstances(arg0 *ec2.DescribeInstancesInput) (*ec2.DescribeInstancesOutput, error) {
 	m.ctrl.T.Helper()
