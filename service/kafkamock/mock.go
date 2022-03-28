@@ -767,6 +767,89 @@ func (mr *MockKafkaAPIMockRecorder) ListConfigurationsWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListConfigurationsWithContext), varargs...)
 }
 
+// ListKafkaVersions mocks base method
+func (m *MockKafkaAPI) ListKafkaVersions(arg0 *kafka.ListKafkaVersionsInput) (*kafka.ListKafkaVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKafkaVersions", arg0)
+	ret0, _ := ret[0].(*kafka.ListKafkaVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListKafkaVersions indicates an expected call of ListKafkaVersions
+func (mr *MockKafkaAPIMockRecorder) ListKafkaVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKafkaVersions", reflect.TypeOf((*MockKafkaAPI)(nil).ListKafkaVersions), arg0)
+}
+
+// ListKafkaVersionsPages mocks base method
+func (m *MockKafkaAPI) ListKafkaVersionsPages(arg0 *kafka.ListKafkaVersionsInput, arg1 func(*kafka.ListKafkaVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKafkaVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListKafkaVersionsPages indicates an expected call of ListKafkaVersionsPages
+func (mr *MockKafkaAPIMockRecorder) ListKafkaVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKafkaVersionsPages", reflect.TypeOf((*MockKafkaAPI)(nil).ListKafkaVersionsPages), arg0, arg1)
+}
+
+// ListKafkaVersionsPagesWithContext mocks base method
+func (m *MockKafkaAPI) ListKafkaVersionsPagesWithContext(arg0 context.Context, arg1 *kafka.ListKafkaVersionsInput, arg2 func(*kafka.ListKafkaVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListKafkaVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListKafkaVersionsPagesWithContext indicates an expected call of ListKafkaVersionsPagesWithContext
+func (mr *MockKafkaAPIMockRecorder) ListKafkaVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKafkaVersionsPagesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListKafkaVersionsPagesWithContext), varargs...)
+}
+
+// ListKafkaVersionsRequest mocks base method
+func (m *MockKafkaAPI) ListKafkaVersionsRequest(arg0 *kafka.ListKafkaVersionsInput) (*request.Request, *kafka.ListKafkaVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKafkaVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.ListKafkaVersionsOutput)
+	return ret0, ret1
+}
+
+// ListKafkaVersionsRequest indicates an expected call of ListKafkaVersionsRequest
+func (mr *MockKafkaAPIMockRecorder) ListKafkaVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKafkaVersionsRequest", reflect.TypeOf((*MockKafkaAPI)(nil).ListKafkaVersionsRequest), arg0)
+}
+
+// ListKafkaVersionsWithContext mocks base method
+func (m *MockKafkaAPI) ListKafkaVersionsWithContext(arg0 context.Context, arg1 *kafka.ListKafkaVersionsInput, arg2 ...request.Option) (*kafka.ListKafkaVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListKafkaVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.ListKafkaVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListKafkaVersionsWithContext indicates an expected call of ListKafkaVersionsWithContext
+func (mr *MockKafkaAPIMockRecorder) ListKafkaVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKafkaVersionsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListKafkaVersionsWithContext), varargs...)
+}
+
 // ListNodes mocks base method
 func (m *MockKafkaAPI) ListNodes(arg0 *kafka.ListNodesInput) (*kafka.ListNodesOutput, error) {
 	m.ctrl.T.Helper()
