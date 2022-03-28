@@ -635,6 +635,56 @@ func (mr *MockGlueAPIMockRecorder) BatchStopJobRunWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStopJobRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchStopJobRunWithContext), varargs...)
 }
 
+// CancelMLTaskRun mocks base method
+func (m *MockGlueAPI) CancelMLTaskRun(arg0 *glue.CancelMLTaskRunInput) (*glue.CancelMLTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMLTaskRun", arg0)
+	ret0, _ := ret[0].(*glue.CancelMLTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMLTaskRun indicates an expected call of CancelMLTaskRun
+func (mr *MockGlueAPIMockRecorder) CancelMLTaskRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMLTaskRun", reflect.TypeOf((*MockGlueAPI)(nil).CancelMLTaskRun), arg0)
+}
+
+// CancelMLTaskRunRequest mocks base method
+func (m *MockGlueAPI) CancelMLTaskRunRequest(arg0 *glue.CancelMLTaskRunInput) (*request.Request, *glue.CancelMLTaskRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMLTaskRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CancelMLTaskRunOutput)
+	return ret0, ret1
+}
+
+// CancelMLTaskRunRequest indicates an expected call of CancelMLTaskRunRequest
+func (mr *MockGlueAPIMockRecorder) CancelMLTaskRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMLTaskRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).CancelMLTaskRunRequest), arg0)
+}
+
+// CancelMLTaskRunWithContext mocks base method
+func (m *MockGlueAPI) CancelMLTaskRunWithContext(arg0 context.Context, arg1 *glue.CancelMLTaskRunInput, arg2 ...request.Option) (*glue.CancelMLTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelMLTaskRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CancelMLTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMLTaskRunWithContext indicates an expected call of CancelMLTaskRunWithContext
+func (mr *MockGlueAPIMockRecorder) CancelMLTaskRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMLTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CancelMLTaskRunWithContext), varargs...)
+}
+
 // CreateClassifier mocks base method
 func (m *MockGlueAPI) CreateClassifier(arg0 *glue.CreateClassifierInput) (*glue.CreateClassifierOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +983,56 @@ func (mr *MockGlueAPIMockRecorder) CreateJobWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateJobWithContext), varargs...)
+}
+
+// CreateMLTransform mocks base method
+func (m *MockGlueAPI) CreateMLTransform(arg0 *glue.CreateMLTransformInput) (*glue.CreateMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMLTransform", arg0)
+	ret0, _ := ret[0].(*glue.CreateMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMLTransform indicates an expected call of CreateMLTransform
+func (mr *MockGlueAPIMockRecorder) CreateMLTransform(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMLTransform", reflect.TypeOf((*MockGlueAPI)(nil).CreateMLTransform), arg0)
+}
+
+// CreateMLTransformRequest mocks base method
+func (m *MockGlueAPI) CreateMLTransformRequest(arg0 *glue.CreateMLTransformInput) (*request.Request, *glue.CreateMLTransformOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMLTransformRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateMLTransformOutput)
+	return ret0, ret1
+}
+
+// CreateMLTransformRequest indicates an expected call of CreateMLTransformRequest
+func (mr *MockGlueAPIMockRecorder) CreateMLTransformRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMLTransformRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateMLTransformRequest), arg0)
+}
+
+// CreateMLTransformWithContext mocks base method
+func (m *MockGlueAPI) CreateMLTransformWithContext(arg0 context.Context, arg1 *glue.CreateMLTransformInput, arg2 ...request.Option) (*glue.CreateMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMLTransformWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMLTransformWithContext indicates an expected call of CreateMLTransformWithContext
+func (mr *MockGlueAPIMockRecorder) CreateMLTransformWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMLTransformWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateMLTransformWithContext), varargs...)
 }
 
 // CreatePartition mocks base method
@@ -1583,6 +1683,56 @@ func (mr *MockGlueAPIMockRecorder) DeleteJobWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteJobWithContext), varargs...)
+}
+
+// DeleteMLTransform mocks base method
+func (m *MockGlueAPI) DeleteMLTransform(arg0 *glue.DeleteMLTransformInput) (*glue.DeleteMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMLTransform", arg0)
+	ret0, _ := ret[0].(*glue.DeleteMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMLTransform indicates an expected call of DeleteMLTransform
+func (mr *MockGlueAPIMockRecorder) DeleteMLTransform(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMLTransform", reflect.TypeOf((*MockGlueAPI)(nil).DeleteMLTransform), arg0)
+}
+
+// DeleteMLTransformRequest mocks base method
+func (m *MockGlueAPI) DeleteMLTransformRequest(arg0 *glue.DeleteMLTransformInput) (*request.Request, *glue.DeleteMLTransformOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMLTransformRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteMLTransformOutput)
+	return ret0, ret1
+}
+
+// DeleteMLTransformRequest indicates an expected call of DeleteMLTransformRequest
+func (mr *MockGlueAPIMockRecorder) DeleteMLTransformRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMLTransformRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteMLTransformRequest), arg0)
+}
+
+// DeleteMLTransformWithContext mocks base method
+func (m *MockGlueAPI) DeleteMLTransformWithContext(arg0 context.Context, arg1 *glue.DeleteMLTransformInput, arg2 ...request.Option) (*glue.DeleteMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMLTransformWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMLTransformWithContext indicates an expected call of DeleteMLTransformWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteMLTransformWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMLTransformWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteMLTransformWithContext), varargs...)
 }
 
 // DeletePartition mocks base method
@@ -3280,6 +3430,272 @@ func (mr *MockGlueAPIMockRecorder) GetJobsWithContext(arg0, arg1 interface{}, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetJobsWithContext), varargs...)
+}
+
+// GetMLTaskRun mocks base method
+func (m *MockGlueAPI) GetMLTaskRun(arg0 *glue.GetMLTaskRunInput) (*glue.GetMLTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTaskRun", arg0)
+	ret0, _ := ret[0].(*glue.GetMLTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTaskRun indicates an expected call of GetMLTaskRun
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRun", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRun), arg0)
+}
+
+// GetMLTaskRunRequest mocks base method
+func (m *MockGlueAPI) GetMLTaskRunRequest(arg0 *glue.GetMLTaskRunInput) (*request.Request, *glue.GetMLTaskRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTaskRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetMLTaskRunOutput)
+	return ret0, ret1
+}
+
+// GetMLTaskRunRequest indicates an expected call of GetMLTaskRunRequest
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRunRequest), arg0)
+}
+
+// GetMLTaskRunWithContext mocks base method
+func (m *MockGlueAPI) GetMLTaskRunWithContext(arg0 context.Context, arg1 *glue.GetMLTaskRunInput, arg2 ...request.Option) (*glue.GetMLTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMLTaskRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetMLTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTaskRunWithContext indicates an expected call of GetMLTaskRunWithContext
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRunWithContext), varargs...)
+}
+
+// GetMLTaskRuns mocks base method
+func (m *MockGlueAPI) GetMLTaskRuns(arg0 *glue.GetMLTaskRunsInput) (*glue.GetMLTaskRunsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTaskRuns", arg0)
+	ret0, _ := ret[0].(*glue.GetMLTaskRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTaskRuns indicates an expected call of GetMLTaskRuns
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRuns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRuns", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRuns), arg0)
+}
+
+// GetMLTaskRunsPages mocks base method
+func (m *MockGlueAPI) GetMLTaskRunsPages(arg0 *glue.GetMLTaskRunsInput, arg1 func(*glue.GetMLTaskRunsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTaskRunsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMLTaskRunsPages indicates an expected call of GetMLTaskRunsPages
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRunsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRunsPages", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRunsPages), arg0, arg1)
+}
+
+// GetMLTaskRunsPagesWithContext mocks base method
+func (m *MockGlueAPI) GetMLTaskRunsPagesWithContext(arg0 context.Context, arg1 *glue.GetMLTaskRunsInput, arg2 func(*glue.GetMLTaskRunsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMLTaskRunsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMLTaskRunsPagesWithContext indicates an expected call of GetMLTaskRunsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRunsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRunsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRunsPagesWithContext), varargs...)
+}
+
+// GetMLTaskRunsRequest mocks base method
+func (m *MockGlueAPI) GetMLTaskRunsRequest(arg0 *glue.GetMLTaskRunsInput) (*request.Request, *glue.GetMLTaskRunsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTaskRunsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetMLTaskRunsOutput)
+	return ret0, ret1
+}
+
+// GetMLTaskRunsRequest indicates an expected call of GetMLTaskRunsRequest
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRunsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRunsRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRunsRequest), arg0)
+}
+
+// GetMLTaskRunsWithContext mocks base method
+func (m *MockGlueAPI) GetMLTaskRunsWithContext(arg0 context.Context, arg1 *glue.GetMLTaskRunsInput, arg2 ...request.Option) (*glue.GetMLTaskRunsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMLTaskRunsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetMLTaskRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTaskRunsWithContext indicates an expected call of GetMLTaskRunsWithContext
+func (mr *MockGlueAPIMockRecorder) GetMLTaskRunsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTaskRunsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTaskRunsWithContext), varargs...)
+}
+
+// GetMLTransform mocks base method
+func (m *MockGlueAPI) GetMLTransform(arg0 *glue.GetMLTransformInput) (*glue.GetMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTransform", arg0)
+	ret0, _ := ret[0].(*glue.GetMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTransform indicates an expected call of GetMLTransform
+func (mr *MockGlueAPIMockRecorder) GetMLTransform(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransform", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransform), arg0)
+}
+
+// GetMLTransformRequest mocks base method
+func (m *MockGlueAPI) GetMLTransformRequest(arg0 *glue.GetMLTransformInput) (*request.Request, *glue.GetMLTransformOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTransformRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetMLTransformOutput)
+	return ret0, ret1
+}
+
+// GetMLTransformRequest indicates an expected call of GetMLTransformRequest
+func (mr *MockGlueAPIMockRecorder) GetMLTransformRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransformRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransformRequest), arg0)
+}
+
+// GetMLTransformWithContext mocks base method
+func (m *MockGlueAPI) GetMLTransformWithContext(arg0 context.Context, arg1 *glue.GetMLTransformInput, arg2 ...request.Option) (*glue.GetMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMLTransformWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTransformWithContext indicates an expected call of GetMLTransformWithContext
+func (mr *MockGlueAPIMockRecorder) GetMLTransformWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransformWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransformWithContext), varargs...)
+}
+
+// GetMLTransforms mocks base method
+func (m *MockGlueAPI) GetMLTransforms(arg0 *glue.GetMLTransformsInput) (*glue.GetMLTransformsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTransforms", arg0)
+	ret0, _ := ret[0].(*glue.GetMLTransformsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTransforms indicates an expected call of GetMLTransforms
+func (mr *MockGlueAPIMockRecorder) GetMLTransforms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransforms", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransforms), arg0)
+}
+
+// GetMLTransformsPages mocks base method
+func (m *MockGlueAPI) GetMLTransformsPages(arg0 *glue.GetMLTransformsInput, arg1 func(*glue.GetMLTransformsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTransformsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMLTransformsPages indicates an expected call of GetMLTransformsPages
+func (mr *MockGlueAPIMockRecorder) GetMLTransformsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransformsPages", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransformsPages), arg0, arg1)
+}
+
+// GetMLTransformsPagesWithContext mocks base method
+func (m *MockGlueAPI) GetMLTransformsPagesWithContext(arg0 context.Context, arg1 *glue.GetMLTransformsInput, arg2 func(*glue.GetMLTransformsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMLTransformsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMLTransformsPagesWithContext indicates an expected call of GetMLTransformsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetMLTransformsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransformsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransformsPagesWithContext), varargs...)
+}
+
+// GetMLTransformsRequest mocks base method
+func (m *MockGlueAPI) GetMLTransformsRequest(arg0 *glue.GetMLTransformsInput) (*request.Request, *glue.GetMLTransformsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMLTransformsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetMLTransformsOutput)
+	return ret0, ret1
+}
+
+// GetMLTransformsRequest indicates an expected call of GetMLTransformsRequest
+func (mr *MockGlueAPIMockRecorder) GetMLTransformsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransformsRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransformsRequest), arg0)
+}
+
+// GetMLTransformsWithContext mocks base method
+func (m *MockGlueAPI) GetMLTransformsWithContext(arg0 context.Context, arg1 *glue.GetMLTransformsInput, arg2 ...request.Option) (*glue.GetMLTransformsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMLTransformsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetMLTransformsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMLTransformsWithContext indicates an expected call of GetMLTransformsWithContext
+func (mr *MockGlueAPIMockRecorder) GetMLTransformsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMLTransformsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetMLTransformsWithContext), varargs...)
 }
 
 // GetMapping mocks base method
@@ -5178,6 +5594,89 @@ func (mr *MockGlueAPIMockRecorder) ResetJobBookmarkWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetJobBookmarkWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ResetJobBookmarkWithContext), varargs...)
 }
 
+// SearchTables mocks base method
+func (m *MockGlueAPI) SearchTables(arg0 *glue.SearchTablesInput) (*glue.SearchTablesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchTables", arg0)
+	ret0, _ := ret[0].(*glue.SearchTablesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchTables indicates an expected call of SearchTables
+func (mr *MockGlueAPIMockRecorder) SearchTables(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTables", reflect.TypeOf((*MockGlueAPI)(nil).SearchTables), arg0)
+}
+
+// SearchTablesPages mocks base method
+func (m *MockGlueAPI) SearchTablesPages(arg0 *glue.SearchTablesInput, arg1 func(*glue.SearchTablesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchTablesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchTablesPages indicates an expected call of SearchTablesPages
+func (mr *MockGlueAPIMockRecorder) SearchTablesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesPages", reflect.TypeOf((*MockGlueAPI)(nil).SearchTablesPages), arg0, arg1)
+}
+
+// SearchTablesPagesWithContext mocks base method
+func (m *MockGlueAPI) SearchTablesPagesWithContext(arg0 context.Context, arg1 *glue.SearchTablesInput, arg2 func(*glue.SearchTablesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchTablesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchTablesPagesWithContext indicates an expected call of SearchTablesPagesWithContext
+func (mr *MockGlueAPIMockRecorder) SearchTablesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).SearchTablesPagesWithContext), varargs...)
+}
+
+// SearchTablesRequest mocks base method
+func (m *MockGlueAPI) SearchTablesRequest(arg0 *glue.SearchTablesInput) (*request.Request, *glue.SearchTablesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchTablesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.SearchTablesOutput)
+	return ret0, ret1
+}
+
+// SearchTablesRequest indicates an expected call of SearchTablesRequest
+func (mr *MockGlueAPIMockRecorder) SearchTablesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesRequest", reflect.TypeOf((*MockGlueAPI)(nil).SearchTablesRequest), arg0)
+}
+
+// SearchTablesWithContext mocks base method
+func (m *MockGlueAPI) SearchTablesWithContext(arg0 context.Context, arg1 *glue.SearchTablesInput, arg2 ...request.Option) (*glue.SearchTablesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchTablesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.SearchTablesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchTablesWithContext indicates an expected call of SearchTablesWithContext
+func (mr *MockGlueAPIMockRecorder) SearchTablesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).SearchTablesWithContext), varargs...)
+}
+
 // StartCrawler mocks base method
 func (m *MockGlueAPI) StartCrawler(arg0 *glue.StartCrawlerInput) (*glue.StartCrawlerOutput, error) {
 	m.ctrl.T.Helper()
@@ -5278,6 +5777,106 @@ func (mr *MockGlueAPIMockRecorder) StartCrawlerWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCrawlerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartCrawlerWithContext), varargs...)
 }
 
+// StartExportLabelsTaskRun mocks base method
+func (m *MockGlueAPI) StartExportLabelsTaskRun(arg0 *glue.StartExportLabelsTaskRunInput) (*glue.StartExportLabelsTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartExportLabelsTaskRun", arg0)
+	ret0, _ := ret[0].(*glue.StartExportLabelsTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartExportLabelsTaskRun indicates an expected call of StartExportLabelsTaskRun
+func (mr *MockGlueAPIMockRecorder) StartExportLabelsTaskRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportLabelsTaskRun", reflect.TypeOf((*MockGlueAPI)(nil).StartExportLabelsTaskRun), arg0)
+}
+
+// StartExportLabelsTaskRunRequest mocks base method
+func (m *MockGlueAPI) StartExportLabelsTaskRunRequest(arg0 *glue.StartExportLabelsTaskRunInput) (*request.Request, *glue.StartExportLabelsTaskRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartExportLabelsTaskRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartExportLabelsTaskRunOutput)
+	return ret0, ret1
+}
+
+// StartExportLabelsTaskRunRequest indicates an expected call of StartExportLabelsTaskRunRequest
+func (mr *MockGlueAPIMockRecorder) StartExportLabelsTaskRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportLabelsTaskRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartExportLabelsTaskRunRequest), arg0)
+}
+
+// StartExportLabelsTaskRunWithContext mocks base method
+func (m *MockGlueAPI) StartExportLabelsTaskRunWithContext(arg0 context.Context, arg1 *glue.StartExportLabelsTaskRunInput, arg2 ...request.Option) (*glue.StartExportLabelsTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartExportLabelsTaskRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartExportLabelsTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartExportLabelsTaskRunWithContext indicates an expected call of StartExportLabelsTaskRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartExportLabelsTaskRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportLabelsTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartExportLabelsTaskRunWithContext), varargs...)
+}
+
+// StartImportLabelsTaskRun mocks base method
+func (m *MockGlueAPI) StartImportLabelsTaskRun(arg0 *glue.StartImportLabelsTaskRunInput) (*glue.StartImportLabelsTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartImportLabelsTaskRun", arg0)
+	ret0, _ := ret[0].(*glue.StartImportLabelsTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartImportLabelsTaskRun indicates an expected call of StartImportLabelsTaskRun
+func (mr *MockGlueAPIMockRecorder) StartImportLabelsTaskRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportLabelsTaskRun", reflect.TypeOf((*MockGlueAPI)(nil).StartImportLabelsTaskRun), arg0)
+}
+
+// StartImportLabelsTaskRunRequest mocks base method
+func (m *MockGlueAPI) StartImportLabelsTaskRunRequest(arg0 *glue.StartImportLabelsTaskRunInput) (*request.Request, *glue.StartImportLabelsTaskRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartImportLabelsTaskRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartImportLabelsTaskRunOutput)
+	return ret0, ret1
+}
+
+// StartImportLabelsTaskRunRequest indicates an expected call of StartImportLabelsTaskRunRequest
+func (mr *MockGlueAPIMockRecorder) StartImportLabelsTaskRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportLabelsTaskRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartImportLabelsTaskRunRequest), arg0)
+}
+
+// StartImportLabelsTaskRunWithContext mocks base method
+func (m *MockGlueAPI) StartImportLabelsTaskRunWithContext(arg0 context.Context, arg1 *glue.StartImportLabelsTaskRunInput, arg2 ...request.Option) (*glue.StartImportLabelsTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartImportLabelsTaskRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartImportLabelsTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartImportLabelsTaskRunWithContext indicates an expected call of StartImportLabelsTaskRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartImportLabelsTaskRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportLabelsTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartImportLabelsTaskRunWithContext), varargs...)
+}
+
 // StartJobRun mocks base method
 func (m *MockGlueAPI) StartJobRun(arg0 *glue.StartJobRunInput) (*glue.StartJobRunOutput, error) {
 	m.ctrl.T.Helper()
@@ -5326,6 +5925,106 @@ func (mr *MockGlueAPIMockRecorder) StartJobRunWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartJobRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartJobRunWithContext), varargs...)
+}
+
+// StartMLEvaluationTaskRun mocks base method
+func (m *MockGlueAPI) StartMLEvaluationTaskRun(arg0 *glue.StartMLEvaluationTaskRunInput) (*glue.StartMLEvaluationTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMLEvaluationTaskRun", arg0)
+	ret0, _ := ret[0].(*glue.StartMLEvaluationTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMLEvaluationTaskRun indicates an expected call of StartMLEvaluationTaskRun
+func (mr *MockGlueAPIMockRecorder) StartMLEvaluationTaskRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMLEvaluationTaskRun", reflect.TypeOf((*MockGlueAPI)(nil).StartMLEvaluationTaskRun), arg0)
+}
+
+// StartMLEvaluationTaskRunRequest mocks base method
+func (m *MockGlueAPI) StartMLEvaluationTaskRunRequest(arg0 *glue.StartMLEvaluationTaskRunInput) (*request.Request, *glue.StartMLEvaluationTaskRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMLEvaluationTaskRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartMLEvaluationTaskRunOutput)
+	return ret0, ret1
+}
+
+// StartMLEvaluationTaskRunRequest indicates an expected call of StartMLEvaluationTaskRunRequest
+func (mr *MockGlueAPIMockRecorder) StartMLEvaluationTaskRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMLEvaluationTaskRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartMLEvaluationTaskRunRequest), arg0)
+}
+
+// StartMLEvaluationTaskRunWithContext mocks base method
+func (m *MockGlueAPI) StartMLEvaluationTaskRunWithContext(arg0 context.Context, arg1 *glue.StartMLEvaluationTaskRunInput, arg2 ...request.Option) (*glue.StartMLEvaluationTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMLEvaluationTaskRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartMLEvaluationTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMLEvaluationTaskRunWithContext indicates an expected call of StartMLEvaluationTaskRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartMLEvaluationTaskRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMLEvaluationTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartMLEvaluationTaskRunWithContext), varargs...)
+}
+
+// StartMLLabelingSetGenerationTaskRun mocks base method
+func (m *MockGlueAPI) StartMLLabelingSetGenerationTaskRun(arg0 *glue.StartMLLabelingSetGenerationTaskRunInput) (*glue.StartMLLabelingSetGenerationTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMLLabelingSetGenerationTaskRun", arg0)
+	ret0, _ := ret[0].(*glue.StartMLLabelingSetGenerationTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMLLabelingSetGenerationTaskRun indicates an expected call of StartMLLabelingSetGenerationTaskRun
+func (mr *MockGlueAPIMockRecorder) StartMLLabelingSetGenerationTaskRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMLLabelingSetGenerationTaskRun", reflect.TypeOf((*MockGlueAPI)(nil).StartMLLabelingSetGenerationTaskRun), arg0)
+}
+
+// StartMLLabelingSetGenerationTaskRunRequest mocks base method
+func (m *MockGlueAPI) StartMLLabelingSetGenerationTaskRunRequest(arg0 *glue.StartMLLabelingSetGenerationTaskRunInput) (*request.Request, *glue.StartMLLabelingSetGenerationTaskRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMLLabelingSetGenerationTaskRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartMLLabelingSetGenerationTaskRunOutput)
+	return ret0, ret1
+}
+
+// StartMLLabelingSetGenerationTaskRunRequest indicates an expected call of StartMLLabelingSetGenerationTaskRunRequest
+func (mr *MockGlueAPIMockRecorder) StartMLLabelingSetGenerationTaskRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMLLabelingSetGenerationTaskRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartMLLabelingSetGenerationTaskRunRequest), arg0)
+}
+
+// StartMLLabelingSetGenerationTaskRunWithContext mocks base method
+func (m *MockGlueAPI) StartMLLabelingSetGenerationTaskRunWithContext(arg0 context.Context, arg1 *glue.StartMLLabelingSetGenerationTaskRunInput, arg2 ...request.Option) (*glue.StartMLLabelingSetGenerationTaskRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMLLabelingSetGenerationTaskRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartMLLabelingSetGenerationTaskRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMLLabelingSetGenerationTaskRunWithContext indicates an expected call of StartMLLabelingSetGenerationTaskRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartMLLabelingSetGenerationTaskRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMLLabelingSetGenerationTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartMLLabelingSetGenerationTaskRunWithContext), varargs...)
 }
 
 // StartTrigger mocks base method
@@ -6026,6 +6725,56 @@ func (mr *MockGlueAPIMockRecorder) UpdateJobWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateJobWithContext), varargs...)
+}
+
+// UpdateMLTransform mocks base method
+func (m *MockGlueAPI) UpdateMLTransform(arg0 *glue.UpdateMLTransformInput) (*glue.UpdateMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMLTransform", arg0)
+	ret0, _ := ret[0].(*glue.UpdateMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMLTransform indicates an expected call of UpdateMLTransform
+func (mr *MockGlueAPIMockRecorder) UpdateMLTransform(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMLTransform", reflect.TypeOf((*MockGlueAPI)(nil).UpdateMLTransform), arg0)
+}
+
+// UpdateMLTransformRequest mocks base method
+func (m *MockGlueAPI) UpdateMLTransformRequest(arg0 *glue.UpdateMLTransformInput) (*request.Request, *glue.UpdateMLTransformOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMLTransformRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateMLTransformOutput)
+	return ret0, ret1
+}
+
+// UpdateMLTransformRequest indicates an expected call of UpdateMLTransformRequest
+func (mr *MockGlueAPIMockRecorder) UpdateMLTransformRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMLTransformRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateMLTransformRequest), arg0)
+}
+
+// UpdateMLTransformWithContext mocks base method
+func (m *MockGlueAPI) UpdateMLTransformWithContext(arg0 context.Context, arg1 *glue.UpdateMLTransformInput, arg2 ...request.Option) (*glue.UpdateMLTransformOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMLTransformWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateMLTransformOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMLTransformWithContext indicates an expected call of UpdateMLTransformWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateMLTransformWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMLTransformWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateMLTransformWithContext), varargs...)
 }
 
 // UpdatePartition mocks base method
