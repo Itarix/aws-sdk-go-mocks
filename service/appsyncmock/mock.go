@@ -35,6 +35,56 @@ func (m *MockAppSyncAPI) EXPECT() *MockAppSyncAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateApiCache mocks base method
+func (m *MockAppSyncAPI) CreateApiCache(arg0 *appsync.CreateApiCacheInput) (*appsync.CreateApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApiCache", arg0)
+	ret0, _ := ret[0].(*appsync.CreateApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApiCache indicates an expected call of CreateApiCache
+func (mr *MockAppSyncAPIMockRecorder) CreateApiCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiCache), arg0)
+}
+
+// CreateApiCacheRequest mocks base method
+func (m *MockAppSyncAPI) CreateApiCacheRequest(arg0 *appsync.CreateApiCacheInput) (*request.Request, *appsync.CreateApiCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApiCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.CreateApiCacheOutput)
+	return ret0, ret1
+}
+
+// CreateApiCacheRequest indicates an expected call of CreateApiCacheRequest
+func (mr *MockAppSyncAPIMockRecorder) CreateApiCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiCacheRequest), arg0)
+}
+
+// CreateApiCacheWithContext mocks base method
+func (m *MockAppSyncAPI) CreateApiCacheWithContext(arg0 context.Context, arg1 *appsync.CreateApiCacheInput, arg2 ...request.Option) (*appsync.CreateApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateApiCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.CreateApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApiCacheWithContext indicates an expected call of CreateApiCacheWithContext
+func (mr *MockAppSyncAPIMockRecorder) CreateApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateApiCacheWithContext), varargs...)
+}
+
 // CreateApiKey mocks base method
 func (m *MockAppSyncAPI) CreateApiKey(arg0 *appsync.CreateApiKeyInput) (*appsync.CreateApiKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +385,56 @@ func (mr *MockAppSyncAPIMockRecorder) CreateTypeWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTypeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateTypeWithContext), varargs...)
 }
 
+// DeleteApiCache mocks base method
+func (m *MockAppSyncAPI) DeleteApiCache(arg0 *appsync.DeleteApiCacheInput) (*appsync.DeleteApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApiCache", arg0)
+	ret0, _ := ret[0].(*appsync.DeleteApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApiCache indicates an expected call of DeleteApiCache
+func (mr *MockAppSyncAPIMockRecorder) DeleteApiCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiCache), arg0)
+}
+
+// DeleteApiCacheRequest mocks base method
+func (m *MockAppSyncAPI) DeleteApiCacheRequest(arg0 *appsync.DeleteApiCacheInput) (*request.Request, *appsync.DeleteApiCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApiCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.DeleteApiCacheOutput)
+	return ret0, ret1
+}
+
+// DeleteApiCacheRequest indicates an expected call of DeleteApiCacheRequest
+func (mr *MockAppSyncAPIMockRecorder) DeleteApiCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiCacheRequest), arg0)
+}
+
+// DeleteApiCacheWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteApiCacheWithContext(arg0 context.Context, arg1 *appsync.DeleteApiCacheInput, arg2 ...request.Option) (*appsync.DeleteApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteApiCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.DeleteApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApiCacheWithContext indicates an expected call of DeleteApiCacheWithContext
+func (mr *MockAppSyncAPIMockRecorder) DeleteApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteApiCacheWithContext), varargs...)
+}
+
 // DeleteApiKey mocks base method
 func (m *MockAppSyncAPI) DeleteApiKey(arg0 *appsync.DeleteApiKeyInput) (*appsync.DeleteApiKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +733,106 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteTypeWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTypeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteTypeWithContext), varargs...)
+}
+
+// FlushApiCache mocks base method
+func (m *MockAppSyncAPI) FlushApiCache(arg0 *appsync.FlushApiCacheInput) (*appsync.FlushApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "FlushApiCache", arg0)
+	ret0, _ := ret[0].(*appsync.FlushApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// FlushApiCache indicates an expected call of FlushApiCache
+func (mr *MockAppSyncAPIMockRecorder) FlushApiCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCache), arg0)
+}
+
+// FlushApiCacheRequest mocks base method
+func (m *MockAppSyncAPI) FlushApiCacheRequest(arg0 *appsync.FlushApiCacheInput) (*request.Request, *appsync.FlushApiCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "FlushApiCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.FlushApiCacheOutput)
+	return ret0, ret1
+}
+
+// FlushApiCacheRequest indicates an expected call of FlushApiCacheRequest
+func (mr *MockAppSyncAPIMockRecorder) FlushApiCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCacheRequest), arg0)
+}
+
+// FlushApiCacheWithContext mocks base method
+func (m *MockAppSyncAPI) FlushApiCacheWithContext(arg0 context.Context, arg1 *appsync.FlushApiCacheInput, arg2 ...request.Option) (*appsync.FlushApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "FlushApiCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.FlushApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// FlushApiCacheWithContext indicates an expected call of FlushApiCacheWithContext
+func (mr *MockAppSyncAPIMockRecorder) FlushApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCacheWithContext), varargs...)
+}
+
+// GetApiCache mocks base method
+func (m *MockAppSyncAPI) GetApiCache(arg0 *appsync.GetApiCacheInput) (*appsync.GetApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApiCache", arg0)
+	ret0, _ := ret[0].(*appsync.GetApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApiCache indicates an expected call of GetApiCache
+func (mr *MockAppSyncAPIMockRecorder) GetApiCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiCache), arg0)
+}
+
+// GetApiCacheRequest mocks base method
+func (m *MockAppSyncAPI) GetApiCacheRequest(arg0 *appsync.GetApiCacheInput) (*request.Request, *appsync.GetApiCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApiCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.GetApiCacheOutput)
+	return ret0, ret1
+}
+
+// GetApiCacheRequest indicates an expected call of GetApiCacheRequest
+func (mr *MockAppSyncAPIMockRecorder) GetApiCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiCacheRequest), arg0)
+}
+
+// GetApiCacheWithContext mocks base method
+func (m *MockAppSyncAPI) GetApiCacheWithContext(arg0 context.Context, arg1 *appsync.GetApiCacheInput, arg2 ...request.Option) (*appsync.GetApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetApiCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.GetApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApiCacheWithContext indicates an expected call of GetApiCacheWithContext
+func (mr *MockAppSyncAPIMockRecorder) GetApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiCacheWithContext), varargs...)
 }
 
 // GetDataSource mocks base method
@@ -1533,6 +1733,56 @@ func (mr *MockAppSyncAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateApiCache mocks base method
+func (m *MockAppSyncAPI) UpdateApiCache(arg0 *appsync.UpdateApiCacheInput) (*appsync.UpdateApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApiCache", arg0)
+	ret0, _ := ret[0].(*appsync.UpdateApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApiCache indicates an expected call of UpdateApiCache
+func (mr *MockAppSyncAPIMockRecorder) UpdateApiCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiCache", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiCache), arg0)
+}
+
+// UpdateApiCacheRequest mocks base method
+func (m *MockAppSyncAPI) UpdateApiCacheRequest(arg0 *appsync.UpdateApiCacheInput) (*request.Request, *appsync.UpdateApiCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApiCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.UpdateApiCacheOutput)
+	return ret0, ret1
+}
+
+// UpdateApiCacheRequest indicates an expected call of UpdateApiCacheRequest
+func (mr *MockAppSyncAPIMockRecorder) UpdateApiCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiCacheRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiCacheRequest), arg0)
+}
+
+// UpdateApiCacheWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateApiCacheWithContext(arg0 context.Context, arg1 *appsync.UpdateApiCacheInput, arg2 ...request.Option) (*appsync.UpdateApiCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApiCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.UpdateApiCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApiCacheWithContext indicates an expected call of UpdateApiCacheWithContext
+func (mr *MockAppSyncAPIMockRecorder) UpdateApiCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateApiCacheWithContext), varargs...)
 }
 
 // UpdateApiKey mocks base method

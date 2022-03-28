@@ -1265,6 +1265,56 @@ func (mr *MockConnectAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListUsersWithContext), varargs...)
 }
 
+// StartChatContact mocks base method
+func (m *MockConnectAPI) StartChatContact(arg0 *connect.StartChatContactInput) (*connect.StartChatContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartChatContact", arg0)
+	ret0, _ := ret[0].(*connect.StartChatContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartChatContact indicates an expected call of StartChatContact
+func (mr *MockConnectAPIMockRecorder) StartChatContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChatContact", reflect.TypeOf((*MockConnectAPI)(nil).StartChatContact), arg0)
+}
+
+// StartChatContactRequest mocks base method
+func (m *MockConnectAPI) StartChatContactRequest(arg0 *connect.StartChatContactInput) (*request.Request, *connect.StartChatContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartChatContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.StartChatContactOutput)
+	return ret0, ret1
+}
+
+// StartChatContactRequest indicates an expected call of StartChatContactRequest
+func (mr *MockConnectAPIMockRecorder) StartChatContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChatContactRequest", reflect.TypeOf((*MockConnectAPI)(nil).StartChatContactRequest), arg0)
+}
+
+// StartChatContactWithContext mocks base method
+func (m *MockConnectAPI) StartChatContactWithContext(arg0 context.Context, arg1 *connect.StartChatContactInput, arg2 ...request.Option) (*connect.StartChatContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartChatContactWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.StartChatContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartChatContactWithContext indicates an expected call of StartChatContactWithContext
+func (mr *MockConnectAPIMockRecorder) StartChatContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChatContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StartChatContactWithContext), varargs...)
+}
+
 // StartOutboundVoiceContact mocks base method
 func (m *MockConnectAPI) StartOutboundVoiceContact(arg0 *connect.StartOutboundVoiceContactInput) (*connect.StartOutboundVoiceContactOutput, error) {
 	m.ctrl.T.Helper()

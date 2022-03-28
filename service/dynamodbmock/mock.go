@@ -783,6 +783,56 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeTable(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTable", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeTable), arg0)
 }
 
+// DescribeTableReplicaAutoScaling mocks base method
+func (m *MockDynamoDBAPI) DescribeTableReplicaAutoScaling(arg0 *dynamodb.DescribeTableReplicaAutoScalingInput) (*dynamodb.DescribeTableReplicaAutoScalingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTableReplicaAutoScaling", arg0)
+	ret0, _ := ret[0].(*dynamodb.DescribeTableReplicaAutoScalingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTableReplicaAutoScaling indicates an expected call of DescribeTableReplicaAutoScaling
+func (mr *MockDynamoDBAPIMockRecorder) DescribeTableReplicaAutoScaling(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableReplicaAutoScaling", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeTableReplicaAutoScaling), arg0)
+}
+
+// DescribeTableReplicaAutoScalingRequest mocks base method
+func (m *MockDynamoDBAPI) DescribeTableReplicaAutoScalingRequest(arg0 *dynamodb.DescribeTableReplicaAutoScalingInput) (*request.Request, *dynamodb.DescribeTableReplicaAutoScalingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTableReplicaAutoScalingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.DescribeTableReplicaAutoScalingOutput)
+	return ret0, ret1
+}
+
+// DescribeTableReplicaAutoScalingRequest indicates an expected call of DescribeTableReplicaAutoScalingRequest
+func (mr *MockDynamoDBAPIMockRecorder) DescribeTableReplicaAutoScalingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableReplicaAutoScalingRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeTableReplicaAutoScalingRequest), arg0)
+}
+
+// DescribeTableReplicaAutoScalingWithContext mocks base method
+func (m *MockDynamoDBAPI) DescribeTableReplicaAutoScalingWithContext(arg0 context.Context, arg1 *dynamodb.DescribeTableReplicaAutoScalingInput, arg2 ...request.Option) (*dynamodb.DescribeTableReplicaAutoScalingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTableReplicaAutoScalingWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.DescribeTableReplicaAutoScalingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTableReplicaAutoScalingWithContext indicates an expected call of DescribeTableReplicaAutoScalingWithContext
+func (mr *MockDynamoDBAPIMockRecorder) DescribeTableReplicaAutoScalingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableReplicaAutoScalingWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeTableReplicaAutoScalingWithContext), varargs...)
+}
+
 // DescribeTableRequest mocks base method
 func (m *MockDynamoDBAPI) DescribeTableRequest(arg0 *dynamodb.DescribeTableInput) (*request.Request, *dynamodb.DescribeTableOutput) {
 	m.ctrl.T.Helper()
@@ -1880,6 +1930,56 @@ func (m *MockDynamoDBAPI) UpdateTable(arg0 *dynamodb.UpdateTableInput) (*dynamod
 func (mr *MockDynamoDBAPIMockRecorder) UpdateTable(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTable", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateTable), arg0)
+}
+
+// UpdateTableReplicaAutoScaling mocks base method
+func (m *MockDynamoDBAPI) UpdateTableReplicaAutoScaling(arg0 *dynamodb.UpdateTableReplicaAutoScalingInput) (*dynamodb.UpdateTableReplicaAutoScalingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTableReplicaAutoScaling", arg0)
+	ret0, _ := ret[0].(*dynamodb.UpdateTableReplicaAutoScalingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTableReplicaAutoScaling indicates an expected call of UpdateTableReplicaAutoScaling
+func (mr *MockDynamoDBAPIMockRecorder) UpdateTableReplicaAutoScaling(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableReplicaAutoScaling", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateTableReplicaAutoScaling), arg0)
+}
+
+// UpdateTableReplicaAutoScalingRequest mocks base method
+func (m *MockDynamoDBAPI) UpdateTableReplicaAutoScalingRequest(arg0 *dynamodb.UpdateTableReplicaAutoScalingInput) (*request.Request, *dynamodb.UpdateTableReplicaAutoScalingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTableReplicaAutoScalingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.UpdateTableReplicaAutoScalingOutput)
+	return ret0, ret1
+}
+
+// UpdateTableReplicaAutoScalingRequest indicates an expected call of UpdateTableReplicaAutoScalingRequest
+func (mr *MockDynamoDBAPIMockRecorder) UpdateTableReplicaAutoScalingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableReplicaAutoScalingRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateTableReplicaAutoScalingRequest), arg0)
+}
+
+// UpdateTableReplicaAutoScalingWithContext mocks base method
+func (m *MockDynamoDBAPI) UpdateTableReplicaAutoScalingWithContext(arg0 context.Context, arg1 *dynamodb.UpdateTableReplicaAutoScalingInput, arg2 ...request.Option) (*dynamodb.UpdateTableReplicaAutoScalingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTableReplicaAutoScalingWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.UpdateTableReplicaAutoScalingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTableReplicaAutoScalingWithContext indicates an expected call of UpdateTableReplicaAutoScalingWithContext
+func (mr *MockDynamoDBAPIMockRecorder) UpdateTableReplicaAutoScalingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableReplicaAutoScalingWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateTableReplicaAutoScalingWithContext), varargs...)
 }
 
 // UpdateTableRequest mocks base method

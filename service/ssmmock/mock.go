@@ -6282,6 +6282,56 @@ func (mr *MockSSMAPIMockRecorder) UpdatePatchBaselineWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePatchBaselineWithContext", reflect.TypeOf((*MockSSMAPI)(nil).UpdatePatchBaselineWithContext), varargs...)
 }
 
+// UpdateResourceDataSync mocks base method
+func (m *MockSSMAPI) UpdateResourceDataSync(arg0 *ssm.UpdateResourceDataSyncInput) (*ssm.UpdateResourceDataSyncOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResourceDataSync", arg0)
+	ret0, _ := ret[0].(*ssm.UpdateResourceDataSyncOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResourceDataSync indicates an expected call of UpdateResourceDataSync
+func (mr *MockSSMAPIMockRecorder) UpdateResourceDataSync(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceDataSync", reflect.TypeOf((*MockSSMAPI)(nil).UpdateResourceDataSync), arg0)
+}
+
+// UpdateResourceDataSyncRequest mocks base method
+func (m *MockSSMAPI) UpdateResourceDataSyncRequest(arg0 *ssm.UpdateResourceDataSyncInput) (*request.Request, *ssm.UpdateResourceDataSyncOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResourceDataSyncRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.UpdateResourceDataSyncOutput)
+	return ret0, ret1
+}
+
+// UpdateResourceDataSyncRequest indicates an expected call of UpdateResourceDataSyncRequest
+func (mr *MockSSMAPIMockRecorder) UpdateResourceDataSyncRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceDataSyncRequest", reflect.TypeOf((*MockSSMAPI)(nil).UpdateResourceDataSyncRequest), arg0)
+}
+
+// UpdateResourceDataSyncWithContext mocks base method
+func (m *MockSSMAPI) UpdateResourceDataSyncWithContext(arg0 context.Context, arg1 *ssm.UpdateResourceDataSyncInput, arg2 ...request.Option) (*ssm.UpdateResourceDataSyncOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateResourceDataSyncWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.UpdateResourceDataSyncOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResourceDataSyncWithContext indicates an expected call of UpdateResourceDataSyncWithContext
+func (mr *MockSSMAPIMockRecorder) UpdateResourceDataSyncWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceDataSyncWithContext", reflect.TypeOf((*MockSSMAPI)(nil).UpdateResourceDataSyncWithContext), varargs...)
+}
+
 // UpdateServiceSetting mocks base method
 func (m *MockSSMAPI) UpdateServiceSetting(arg0 *ssm.UpdateServiceSettingInput) (*ssm.UpdateServiceSettingOutput, error) {
 	m.ctrl.T.Helper()

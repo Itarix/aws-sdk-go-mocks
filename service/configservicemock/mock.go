@@ -735,6 +735,56 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteRemediationExceptionsWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRemediationExceptionsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteRemediationExceptionsWithContext), varargs...)
 }
 
+// DeleteResourceConfig mocks base method
+func (m *MockConfigServiceAPI) DeleteResourceConfig(arg0 *configservice.DeleteResourceConfigInput) (*configservice.DeleteResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourceConfig", arg0)
+	ret0, _ := ret[0].(*configservice.DeleteResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourceConfig indicates an expected call of DeleteResourceConfig
+func (mr *MockConfigServiceAPIMockRecorder) DeleteResourceConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceConfig", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteResourceConfig), arg0)
+}
+
+// DeleteResourceConfigRequest mocks base method
+func (m *MockConfigServiceAPI) DeleteResourceConfigRequest(arg0 *configservice.DeleteResourceConfigInput) (*request.Request, *configservice.DeleteResourceConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourceConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DeleteResourceConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteResourceConfigRequest indicates an expected call of DeleteResourceConfigRequest
+func (mr *MockConfigServiceAPIMockRecorder) DeleteResourceConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceConfigRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteResourceConfigRequest), arg0)
+}
+
+// DeleteResourceConfigWithContext mocks base method
+func (m *MockConfigServiceAPI) DeleteResourceConfigWithContext(arg0 context.Context, arg1 *configservice.DeleteResourceConfigInput, arg2 ...request.Option) (*configservice.DeleteResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourceConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DeleteResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourceConfigWithContext indicates an expected call of DeleteResourceConfigWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DeleteResourceConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceConfigWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteResourceConfigWithContext), varargs...)
+}
+
 // DeleteRetentionConfiguration mocks base method
 func (m *MockConfigServiceAPI) DeleteRetentionConfiguration(arg0 *configservice.DeleteRetentionConfigurationInput) (*configservice.DeleteRetentionConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -3532,6 +3582,56 @@ func (mr *MockConfigServiceAPIMockRecorder) PutRemediationExceptionsWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRemediationExceptionsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRemediationExceptionsWithContext), varargs...)
+}
+
+// PutResourceConfig mocks base method
+func (m *MockConfigServiceAPI) PutResourceConfig(arg0 *configservice.PutResourceConfigInput) (*configservice.PutResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourceConfig", arg0)
+	ret0, _ := ret[0].(*configservice.PutResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourceConfig indicates an expected call of PutResourceConfig
+func (mr *MockConfigServiceAPIMockRecorder) PutResourceConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceConfig", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutResourceConfig), arg0)
+}
+
+// PutResourceConfigRequest mocks base method
+func (m *MockConfigServiceAPI) PutResourceConfigRequest(arg0 *configservice.PutResourceConfigInput) (*request.Request, *configservice.PutResourceConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourceConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.PutResourceConfigOutput)
+	return ret0, ret1
+}
+
+// PutResourceConfigRequest indicates an expected call of PutResourceConfigRequest
+func (mr *MockConfigServiceAPIMockRecorder) PutResourceConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceConfigRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutResourceConfigRequest), arg0)
+}
+
+// PutResourceConfigWithContext mocks base method
+func (m *MockConfigServiceAPI) PutResourceConfigWithContext(arg0 context.Context, arg1 *configservice.PutResourceConfigInput, arg2 ...request.Option) (*configservice.PutResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourceConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.PutResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourceConfigWithContext indicates an expected call of PutResourceConfigWithContext
+func (mr *MockConfigServiceAPIMockRecorder) PutResourceConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceConfigWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutResourceConfigWithContext), varargs...)
 }
 
 // PutRetentionConfiguration mocks base method

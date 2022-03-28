@@ -85,6 +85,56 @@ func (mr *MockAmplifyAPIMockRecorder) CreateAppWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).CreateAppWithContext), varargs...)
 }
 
+// CreateBackendEnvironment mocks base method
+func (m *MockAmplifyAPI) CreateBackendEnvironment(arg0 *amplify.CreateBackendEnvironmentInput) (*amplify.CreateBackendEnvironmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBackendEnvironment", arg0)
+	ret0, _ := ret[0].(*amplify.CreateBackendEnvironmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBackendEnvironment indicates an expected call of CreateBackendEnvironment
+func (mr *MockAmplifyAPIMockRecorder) CreateBackendEnvironment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendEnvironment", reflect.TypeOf((*MockAmplifyAPI)(nil).CreateBackendEnvironment), arg0)
+}
+
+// CreateBackendEnvironmentRequest mocks base method
+func (m *MockAmplifyAPI) CreateBackendEnvironmentRequest(arg0 *amplify.CreateBackendEnvironmentInput) (*request.Request, *amplify.CreateBackendEnvironmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBackendEnvironmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.CreateBackendEnvironmentOutput)
+	return ret0, ret1
+}
+
+// CreateBackendEnvironmentRequest indicates an expected call of CreateBackendEnvironmentRequest
+func (mr *MockAmplifyAPIMockRecorder) CreateBackendEnvironmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendEnvironmentRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).CreateBackendEnvironmentRequest), arg0)
+}
+
+// CreateBackendEnvironmentWithContext mocks base method
+func (m *MockAmplifyAPI) CreateBackendEnvironmentWithContext(arg0 context.Context, arg1 *amplify.CreateBackendEnvironmentInput, arg2 ...request.Option) (*amplify.CreateBackendEnvironmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBackendEnvironmentWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.CreateBackendEnvironmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBackendEnvironmentWithContext indicates an expected call of CreateBackendEnvironmentWithContext
+func (mr *MockAmplifyAPIMockRecorder) CreateBackendEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendEnvironmentWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).CreateBackendEnvironmentWithContext), varargs...)
+}
+
 // CreateBranch mocks base method
 func (m *MockAmplifyAPI) CreateBranch(arg0 *amplify.CreateBranchInput) (*amplify.CreateBranchOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockAmplifyAPIMockRecorder) DeleteAppWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).DeleteAppWithContext), varargs...)
+}
+
+// DeleteBackendEnvironment mocks base method
+func (m *MockAmplifyAPI) DeleteBackendEnvironment(arg0 *amplify.DeleteBackendEnvironmentInput) (*amplify.DeleteBackendEnvironmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackendEnvironment", arg0)
+	ret0, _ := ret[0].(*amplify.DeleteBackendEnvironmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackendEnvironment indicates an expected call of DeleteBackendEnvironment
+func (mr *MockAmplifyAPIMockRecorder) DeleteBackendEnvironment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendEnvironment", reflect.TypeOf((*MockAmplifyAPI)(nil).DeleteBackendEnvironment), arg0)
+}
+
+// DeleteBackendEnvironmentRequest mocks base method
+func (m *MockAmplifyAPI) DeleteBackendEnvironmentRequest(arg0 *amplify.DeleteBackendEnvironmentInput) (*request.Request, *amplify.DeleteBackendEnvironmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackendEnvironmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.DeleteBackendEnvironmentOutput)
+	return ret0, ret1
+}
+
+// DeleteBackendEnvironmentRequest indicates an expected call of DeleteBackendEnvironmentRequest
+func (mr *MockAmplifyAPIMockRecorder) DeleteBackendEnvironmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendEnvironmentRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).DeleteBackendEnvironmentRequest), arg0)
+}
+
+// DeleteBackendEnvironmentWithContext mocks base method
+func (m *MockAmplifyAPI) DeleteBackendEnvironmentWithContext(arg0 context.Context, arg1 *amplify.DeleteBackendEnvironmentInput, arg2 ...request.Option) (*amplify.DeleteBackendEnvironmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBackendEnvironmentWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.DeleteBackendEnvironmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackendEnvironmentWithContext indicates an expected call of DeleteBackendEnvironmentWithContext
+func (mr *MockAmplifyAPIMockRecorder) DeleteBackendEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendEnvironmentWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).DeleteBackendEnvironmentWithContext), varargs...)
 }
 
 // DeleteBranch mocks base method
@@ -685,6 +785,56 @@ func (mr *MockAmplifyAPIMockRecorder) GetArtifactUrlWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetArtifactUrlWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).GetArtifactUrlWithContext), varargs...)
 }
 
+// GetBackendEnvironment mocks base method
+func (m *MockAmplifyAPI) GetBackendEnvironment(arg0 *amplify.GetBackendEnvironmentInput) (*amplify.GetBackendEnvironmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBackendEnvironment", arg0)
+	ret0, _ := ret[0].(*amplify.GetBackendEnvironmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBackendEnvironment indicates an expected call of GetBackendEnvironment
+func (mr *MockAmplifyAPIMockRecorder) GetBackendEnvironment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendEnvironment", reflect.TypeOf((*MockAmplifyAPI)(nil).GetBackendEnvironment), arg0)
+}
+
+// GetBackendEnvironmentRequest mocks base method
+func (m *MockAmplifyAPI) GetBackendEnvironmentRequest(arg0 *amplify.GetBackendEnvironmentInput) (*request.Request, *amplify.GetBackendEnvironmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBackendEnvironmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.GetBackendEnvironmentOutput)
+	return ret0, ret1
+}
+
+// GetBackendEnvironmentRequest indicates an expected call of GetBackendEnvironmentRequest
+func (mr *MockAmplifyAPIMockRecorder) GetBackendEnvironmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendEnvironmentRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).GetBackendEnvironmentRequest), arg0)
+}
+
+// GetBackendEnvironmentWithContext mocks base method
+func (m *MockAmplifyAPI) GetBackendEnvironmentWithContext(arg0 context.Context, arg1 *amplify.GetBackendEnvironmentInput, arg2 ...request.Option) (*amplify.GetBackendEnvironmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBackendEnvironmentWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.GetBackendEnvironmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBackendEnvironmentWithContext indicates an expected call of GetBackendEnvironmentWithContext
+func (mr *MockAmplifyAPIMockRecorder) GetBackendEnvironmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendEnvironmentWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).GetBackendEnvironmentWithContext), varargs...)
+}
+
 // GetBranch mocks base method
 func (m *MockAmplifyAPI) GetBranch(arg0 *amplify.GetBranchInput) (*amplify.GetBranchOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1133,56 @@ func (mr *MockAmplifyAPIMockRecorder) ListArtifactsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListArtifactsWithContext), varargs...)
+}
+
+// ListBackendEnvironments mocks base method
+func (m *MockAmplifyAPI) ListBackendEnvironments(arg0 *amplify.ListBackendEnvironmentsInput) (*amplify.ListBackendEnvironmentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBackendEnvironments", arg0)
+	ret0, _ := ret[0].(*amplify.ListBackendEnvironmentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBackendEnvironments indicates an expected call of ListBackendEnvironments
+func (mr *MockAmplifyAPIMockRecorder) ListBackendEnvironments(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBackendEnvironments", reflect.TypeOf((*MockAmplifyAPI)(nil).ListBackendEnvironments), arg0)
+}
+
+// ListBackendEnvironmentsRequest mocks base method
+func (m *MockAmplifyAPI) ListBackendEnvironmentsRequest(arg0 *amplify.ListBackendEnvironmentsInput) (*request.Request, *amplify.ListBackendEnvironmentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBackendEnvironmentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.ListBackendEnvironmentsOutput)
+	return ret0, ret1
+}
+
+// ListBackendEnvironmentsRequest indicates an expected call of ListBackendEnvironmentsRequest
+func (mr *MockAmplifyAPIMockRecorder) ListBackendEnvironmentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBackendEnvironmentsRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).ListBackendEnvironmentsRequest), arg0)
+}
+
+// ListBackendEnvironmentsWithContext mocks base method
+func (m *MockAmplifyAPI) ListBackendEnvironmentsWithContext(arg0 context.Context, arg1 *amplify.ListBackendEnvironmentsInput, arg2 ...request.Option) (*amplify.ListBackendEnvironmentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBackendEnvironmentsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.ListBackendEnvironmentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBackendEnvironmentsWithContext indicates an expected call of ListBackendEnvironmentsWithContext
+func (mr *MockAmplifyAPIMockRecorder) ListBackendEnvironmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBackendEnvironmentsWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListBackendEnvironmentsWithContext), varargs...)
 }
 
 // ListBranches mocks base method
