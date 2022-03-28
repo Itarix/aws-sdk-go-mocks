@@ -335,6 +335,56 @@ func (mr *MockWorkMailAPIMockRecorder) CreateUserWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateUserWithContext), varargs...)
 }
 
+// DeleteAccessControlRule mocks base method
+func (m *MockWorkMailAPI) DeleteAccessControlRule(arg0 *workmail.DeleteAccessControlRuleInput) (*workmail.DeleteAccessControlRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessControlRule", arg0)
+	ret0, _ := ret[0].(*workmail.DeleteAccessControlRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessControlRule indicates an expected call of DeleteAccessControlRule
+func (mr *MockWorkMailAPIMockRecorder) DeleteAccessControlRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessControlRule", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAccessControlRule), arg0)
+}
+
+// DeleteAccessControlRuleRequest mocks base method
+func (m *MockWorkMailAPI) DeleteAccessControlRuleRequest(arg0 *workmail.DeleteAccessControlRuleInput) (*request.Request, *workmail.DeleteAccessControlRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessControlRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DeleteAccessControlRuleOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessControlRuleRequest indicates an expected call of DeleteAccessControlRuleRequest
+func (mr *MockWorkMailAPIMockRecorder) DeleteAccessControlRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessControlRuleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAccessControlRuleRequest), arg0)
+}
+
+// DeleteAccessControlRuleWithContext mocks base method
+func (m *MockWorkMailAPI) DeleteAccessControlRuleWithContext(arg0 context.Context, arg1 *workmail.DeleteAccessControlRuleInput, arg2 ...request.Option) (*workmail.DeleteAccessControlRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessControlRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DeleteAccessControlRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessControlRuleWithContext indicates an expected call of DeleteAccessControlRuleWithContext
+func (mr *MockWorkMailAPIMockRecorder) DeleteAccessControlRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessControlRuleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAccessControlRuleWithContext), varargs...)
+}
+
 // DeleteAlias mocks base method
 func (m *MockWorkMailAPI) DeleteAlias(arg0 *workmail.DeleteAliasInput) (*workmail.DeleteAliasOutput, error) {
 	m.ctrl.T.Helper()
@@ -935,6 +985,56 @@ func (mr *MockWorkMailAPIMockRecorder) DisassociateMemberFromGroupWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMemberFromGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DisassociateMemberFromGroupWithContext), varargs...)
 }
 
+// GetAccessControlEffect mocks base method
+func (m *MockWorkMailAPI) GetAccessControlEffect(arg0 *workmail.GetAccessControlEffectInput) (*workmail.GetAccessControlEffectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessControlEffect", arg0)
+	ret0, _ := ret[0].(*workmail.GetAccessControlEffectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessControlEffect indicates an expected call of GetAccessControlEffect
+func (mr *MockWorkMailAPIMockRecorder) GetAccessControlEffect(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessControlEffect", reflect.TypeOf((*MockWorkMailAPI)(nil).GetAccessControlEffect), arg0)
+}
+
+// GetAccessControlEffectRequest mocks base method
+func (m *MockWorkMailAPI) GetAccessControlEffectRequest(arg0 *workmail.GetAccessControlEffectInput) (*request.Request, *workmail.GetAccessControlEffectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessControlEffectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.GetAccessControlEffectOutput)
+	return ret0, ret1
+}
+
+// GetAccessControlEffectRequest indicates an expected call of GetAccessControlEffectRequest
+func (mr *MockWorkMailAPIMockRecorder) GetAccessControlEffectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessControlEffectRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).GetAccessControlEffectRequest), arg0)
+}
+
+// GetAccessControlEffectWithContext mocks base method
+func (m *MockWorkMailAPI) GetAccessControlEffectWithContext(arg0 context.Context, arg1 *workmail.GetAccessControlEffectInput, arg2 ...request.Option) (*workmail.GetAccessControlEffectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessControlEffectWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.GetAccessControlEffectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessControlEffectWithContext indicates an expected call of GetAccessControlEffectWithContext
+func (mr *MockWorkMailAPIMockRecorder) GetAccessControlEffectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessControlEffectWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetAccessControlEffectWithContext), varargs...)
+}
+
 // GetMailboxDetails mocks base method
 func (m *MockWorkMailAPI) GetMailboxDetails(arg0 *workmail.GetMailboxDetailsInput) (*workmail.GetMailboxDetailsOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1083,56 @@ func (mr *MockWorkMailAPIMockRecorder) GetMailboxDetailsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMailboxDetailsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetMailboxDetailsWithContext), varargs...)
+}
+
+// ListAccessControlRules mocks base method
+func (m *MockWorkMailAPI) ListAccessControlRules(arg0 *workmail.ListAccessControlRulesInput) (*workmail.ListAccessControlRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessControlRules", arg0)
+	ret0, _ := ret[0].(*workmail.ListAccessControlRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessControlRules indicates an expected call of ListAccessControlRules
+func (mr *MockWorkMailAPIMockRecorder) ListAccessControlRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlRules", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAccessControlRules), arg0)
+}
+
+// ListAccessControlRulesRequest mocks base method
+func (m *MockWorkMailAPI) ListAccessControlRulesRequest(arg0 *workmail.ListAccessControlRulesInput) (*request.Request, *workmail.ListAccessControlRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessControlRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.ListAccessControlRulesOutput)
+	return ret0, ret1
+}
+
+// ListAccessControlRulesRequest indicates an expected call of ListAccessControlRulesRequest
+func (mr *MockWorkMailAPIMockRecorder) ListAccessControlRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlRulesRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAccessControlRulesRequest), arg0)
+}
+
+// ListAccessControlRulesWithContext mocks base method
+func (m *MockWorkMailAPI) ListAccessControlRulesWithContext(arg0 context.Context, arg1 *workmail.ListAccessControlRulesInput, arg2 ...request.Option) (*workmail.ListAccessControlRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessControlRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.ListAccessControlRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessControlRulesWithContext indicates an expected call of ListAccessControlRulesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListAccessControlRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlRulesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAccessControlRulesWithContext), varargs...)
 }
 
 // ListAliases mocks base method
@@ -1697,6 +1847,56 @@ func (mr *MockWorkMailAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListUsersWithContext), varargs...)
+}
+
+// PutAccessControlRule mocks base method
+func (m *MockWorkMailAPI) PutAccessControlRule(arg0 *workmail.PutAccessControlRuleInput) (*workmail.PutAccessControlRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccessControlRule", arg0)
+	ret0, _ := ret[0].(*workmail.PutAccessControlRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccessControlRule indicates an expected call of PutAccessControlRule
+func (mr *MockWorkMailAPIMockRecorder) PutAccessControlRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessControlRule", reflect.TypeOf((*MockWorkMailAPI)(nil).PutAccessControlRule), arg0)
+}
+
+// PutAccessControlRuleRequest mocks base method
+func (m *MockWorkMailAPI) PutAccessControlRuleRequest(arg0 *workmail.PutAccessControlRuleInput) (*request.Request, *workmail.PutAccessControlRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccessControlRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.PutAccessControlRuleOutput)
+	return ret0, ret1
+}
+
+// PutAccessControlRuleRequest indicates an expected call of PutAccessControlRuleRequest
+func (mr *MockWorkMailAPIMockRecorder) PutAccessControlRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessControlRuleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).PutAccessControlRuleRequest), arg0)
+}
+
+// PutAccessControlRuleWithContext mocks base method
+func (m *MockWorkMailAPI) PutAccessControlRuleWithContext(arg0 context.Context, arg1 *workmail.PutAccessControlRuleInput, arg2 ...request.Option) (*workmail.PutAccessControlRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAccessControlRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.PutAccessControlRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccessControlRuleWithContext indicates an expected call of PutAccessControlRuleWithContext
+func (mr *MockWorkMailAPIMockRecorder) PutAccessControlRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessControlRuleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutAccessControlRuleWithContext), varargs...)
 }
 
 // PutMailboxPermissions mocks base method

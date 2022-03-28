@@ -3182,6 +3182,106 @@ func (mr *MockNeptuneAPIMockRecorder) RestoreDBClusterToPointInTimeWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreDBClusterToPointInTimeWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).RestoreDBClusterToPointInTimeWithContext), varargs...)
 }
 
+// StartDBCluster mocks base method
+func (m *MockNeptuneAPI) StartDBCluster(arg0 *neptune.StartDBClusterInput) (*neptune.StartDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDBCluster", arg0)
+	ret0, _ := ret[0].(*neptune.StartDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDBCluster indicates an expected call of StartDBCluster
+func (mr *MockNeptuneAPIMockRecorder) StartDBCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).StartDBCluster), arg0)
+}
+
+// StartDBClusterRequest mocks base method
+func (m *MockNeptuneAPI) StartDBClusterRequest(arg0 *neptune.StartDBClusterInput) (*request.Request, *neptune.StartDBClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDBClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.StartDBClusterOutput)
+	return ret0, ret1
+}
+
+// StartDBClusterRequest indicates an expected call of StartDBClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) StartDBClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).StartDBClusterRequest), arg0)
+}
+
+// StartDBClusterWithContext mocks base method
+func (m *MockNeptuneAPI) StartDBClusterWithContext(arg0 context.Context, arg1 *neptune.StartDBClusterInput, arg2 ...request.Option) (*neptune.StartDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDBClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.StartDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDBClusterWithContext indicates an expected call of StartDBClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) StartDBClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDBClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).StartDBClusterWithContext), varargs...)
+}
+
+// StopDBCluster mocks base method
+func (m *MockNeptuneAPI) StopDBCluster(arg0 *neptune.StopDBClusterInput) (*neptune.StopDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDBCluster", arg0)
+	ret0, _ := ret[0].(*neptune.StopDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDBCluster indicates an expected call of StopDBCluster
+func (mr *MockNeptuneAPIMockRecorder) StopDBCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).StopDBCluster), arg0)
+}
+
+// StopDBClusterRequest mocks base method
+func (m *MockNeptuneAPI) StopDBClusterRequest(arg0 *neptune.StopDBClusterInput) (*request.Request, *neptune.StopDBClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDBClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.StopDBClusterOutput)
+	return ret0, ret1
+}
+
+// StopDBClusterRequest indicates an expected call of StopDBClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) StopDBClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).StopDBClusterRequest), arg0)
+}
+
+// StopDBClusterWithContext mocks base method
+func (m *MockNeptuneAPI) StopDBClusterWithContext(arg0 context.Context, arg1 *neptune.StopDBClusterInput, arg2 ...request.Option) (*neptune.StopDBClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopDBClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.StopDBClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDBClusterWithContext indicates an expected call of StopDBClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) StopDBClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).StopDBClusterWithContext), varargs...)
+}
+
 // WaitUntilDBInstanceAvailable mocks base method
 func (m *MockNeptuneAPI) WaitUntilDBInstanceAvailable(arg0 *neptune.DescribeDBInstancesInput) error {
 	m.ctrl.T.Helper()
