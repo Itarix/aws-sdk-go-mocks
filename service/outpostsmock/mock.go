@@ -85,6 +85,106 @@ func (mr *MockOutpostsAPIMockRecorder) CreateOutpostWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOutpostWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateOutpostWithContext), varargs...)
 }
 
+// DeleteOutpost mocks base method
+func (m *MockOutpostsAPI) DeleteOutpost(arg0 *outposts.DeleteOutpostInput) (*outposts.DeleteOutpostOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOutpost", arg0)
+	ret0, _ := ret[0].(*outposts.DeleteOutpostOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOutpost indicates an expected call of DeleteOutpost
+func (mr *MockOutpostsAPIMockRecorder) DeleteOutpost(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOutpost", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteOutpost), arg0)
+}
+
+// DeleteOutpostRequest mocks base method
+func (m *MockOutpostsAPI) DeleteOutpostRequest(arg0 *outposts.DeleteOutpostInput) (*request.Request, *outposts.DeleteOutpostOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOutpostRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.DeleteOutpostOutput)
+	return ret0, ret1
+}
+
+// DeleteOutpostRequest indicates an expected call of DeleteOutpostRequest
+func (mr *MockOutpostsAPIMockRecorder) DeleteOutpostRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOutpostRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteOutpostRequest), arg0)
+}
+
+// DeleteOutpostWithContext mocks base method
+func (m *MockOutpostsAPI) DeleteOutpostWithContext(arg0 context.Context, arg1 *outposts.DeleteOutpostInput, arg2 ...request.Option) (*outposts.DeleteOutpostOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteOutpostWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.DeleteOutpostOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOutpostWithContext indicates an expected call of DeleteOutpostWithContext
+func (mr *MockOutpostsAPIMockRecorder) DeleteOutpostWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOutpostWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteOutpostWithContext), varargs...)
+}
+
+// DeleteSite mocks base method
+func (m *MockOutpostsAPI) DeleteSite(arg0 *outposts.DeleteSiteInput) (*outposts.DeleteSiteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSite", arg0)
+	ret0, _ := ret[0].(*outposts.DeleteSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSite indicates an expected call of DeleteSite
+func (mr *MockOutpostsAPIMockRecorder) DeleteSite(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSite", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteSite), arg0)
+}
+
+// DeleteSiteRequest mocks base method
+func (m *MockOutpostsAPI) DeleteSiteRequest(arg0 *outposts.DeleteSiteInput) (*request.Request, *outposts.DeleteSiteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSiteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.DeleteSiteOutput)
+	return ret0, ret1
+}
+
+// DeleteSiteRequest indicates an expected call of DeleteSiteRequest
+func (mr *MockOutpostsAPIMockRecorder) DeleteSiteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSiteRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteSiteRequest), arg0)
+}
+
+// DeleteSiteWithContext mocks base method
+func (m *MockOutpostsAPI) DeleteSiteWithContext(arg0 context.Context, arg1 *outposts.DeleteSiteInput, arg2 ...request.Option) (*outposts.DeleteSiteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSiteWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.DeleteSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSiteWithContext indicates an expected call of DeleteSiteWithContext
+func (mr *MockOutpostsAPIMockRecorder) DeleteSiteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSiteWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteSiteWithContext), varargs...)
+}
+
 // GetOutpost mocks base method
 func (m *MockOutpostsAPI) GetOutpost(arg0 *outposts.GetOutpostInput) (*outposts.GetOutpostOutput, error) {
 	m.ctrl.T.Helper()
