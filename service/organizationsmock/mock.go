@@ -735,6 +735,56 @@ func (mr *MockOrganizationsAPIMockRecorder) DescribeCreateAccountStatusWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCreateAccountStatusWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).DescribeCreateAccountStatusWithContext), varargs...)
 }
 
+// DescribeEffectivePolicy mocks base method
+func (m *MockOrganizationsAPI) DescribeEffectivePolicy(arg0 *organizations.DescribeEffectivePolicyInput) (*organizations.DescribeEffectivePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEffectivePolicy", arg0)
+	ret0, _ := ret[0].(*organizations.DescribeEffectivePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEffectivePolicy indicates an expected call of DescribeEffectivePolicy
+func (mr *MockOrganizationsAPIMockRecorder) DescribeEffectivePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEffectivePolicy", reflect.TypeOf((*MockOrganizationsAPI)(nil).DescribeEffectivePolicy), arg0)
+}
+
+// DescribeEffectivePolicyRequest mocks base method
+func (m *MockOrganizationsAPI) DescribeEffectivePolicyRequest(arg0 *organizations.DescribeEffectivePolicyInput) (*request.Request, *organizations.DescribeEffectivePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEffectivePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*organizations.DescribeEffectivePolicyOutput)
+	return ret0, ret1
+}
+
+// DescribeEffectivePolicyRequest indicates an expected call of DescribeEffectivePolicyRequest
+func (mr *MockOrganizationsAPIMockRecorder) DescribeEffectivePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEffectivePolicyRequest", reflect.TypeOf((*MockOrganizationsAPI)(nil).DescribeEffectivePolicyRequest), arg0)
+}
+
+// DescribeEffectivePolicyWithContext mocks base method
+func (m *MockOrganizationsAPI) DescribeEffectivePolicyWithContext(arg0 context.Context, arg1 *organizations.DescribeEffectivePolicyInput, arg2 ...request.Option) (*organizations.DescribeEffectivePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEffectivePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*organizations.DescribeEffectivePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEffectivePolicyWithContext indicates an expected call of DescribeEffectivePolicyWithContext
+func (mr *MockOrganizationsAPIMockRecorder) DescribeEffectivePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEffectivePolicyWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).DescribeEffectivePolicyWithContext), varargs...)
+}
+
 // DescribeHandshake mocks base method
 func (m *MockOrganizationsAPI) DescribeHandshake(arg0 *organizations.DescribeHandshakeInput) (*organizations.DescribeHandshakeOutput, error) {
 	m.ctrl.T.Helper()

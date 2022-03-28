@@ -935,6 +935,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeleteTrustWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTrustWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeleteTrustWithContext), varargs...)
 }
 
+// DeregisterCertificate mocks base method
+func (m *MockDirectoryServiceAPI) DeregisterCertificate(arg0 *directoryservice.DeregisterCertificateInput) (*directoryservice.DeregisterCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterCertificate", arg0)
+	ret0, _ := ret[0].(*directoryservice.DeregisterCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterCertificate indicates an expected call of DeregisterCertificate
+func (mr *MockDirectoryServiceAPIMockRecorder) DeregisterCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterCertificate", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeregisterCertificate), arg0)
+}
+
+// DeregisterCertificateRequest mocks base method
+func (m *MockDirectoryServiceAPI) DeregisterCertificateRequest(arg0 *directoryservice.DeregisterCertificateInput) (*request.Request, *directoryservice.DeregisterCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DeregisterCertificateOutput)
+	return ret0, ret1
+}
+
+// DeregisterCertificateRequest indicates an expected call of DeregisterCertificateRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DeregisterCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterCertificateRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeregisterCertificateRequest), arg0)
+}
+
+// DeregisterCertificateWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DeregisterCertificateWithContext(arg0 context.Context, arg1 *directoryservice.DeregisterCertificateInput, arg2 ...request.Option) (*directoryservice.DeregisterCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DeregisterCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterCertificateWithContext indicates an expected call of DeregisterCertificateWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DeregisterCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterCertificateWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeregisterCertificateWithContext), varargs...)
+}
+
 // DeregisterEventTopic mocks base method
 func (m *MockDirectoryServiceAPI) DeregisterEventTopic(arg0 *directoryservice.DeregisterEventTopicInput) (*directoryservice.DeregisterEventTopicOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1033,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DeregisterEventTopicWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterEventTopicWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DeregisterEventTopicWithContext), varargs...)
+}
+
+// DescribeCertificate mocks base method
+func (m *MockDirectoryServiceAPI) DescribeCertificate(arg0 *directoryservice.DescribeCertificateInput) (*directoryservice.DescribeCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificate", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCertificate indicates an expected call of DescribeCertificate
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificate", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeCertificate), arg0)
+}
+
+// DescribeCertificateRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeCertificateRequest(arg0 *directoryservice.DescribeCertificateInput) (*request.Request, *directoryservice.DescribeCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeCertificateOutput)
+	return ret0, ret1
+}
+
+// DescribeCertificateRequest indicates an expected call of DescribeCertificateRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificateRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeCertificateRequest), arg0)
+}
+
+// DescribeCertificateWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeCertificateWithContext(arg0 context.Context, arg1 *directoryservice.DescribeCertificateInput, arg2 ...request.Option) (*directoryservice.DescribeCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCertificateWithContext indicates an expected call of DescribeCertificateWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificateWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeCertificateWithContext), varargs...)
 }
 
 // DescribeConditionalForwarders mocks base method
@@ -1218,6 +1318,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeEventTopicsWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventTopicsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeEventTopicsWithContext), varargs...)
 }
 
+// DescribeLDAPSSettings mocks base method
+func (m *MockDirectoryServiceAPI) DescribeLDAPSSettings(arg0 *directoryservice.DescribeLDAPSSettingsInput) (*directoryservice.DescribeLDAPSSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLDAPSSettings", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeLDAPSSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLDAPSSettings indicates an expected call of DescribeLDAPSSettings
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettings", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettings), arg0)
+}
+
+// DescribeLDAPSSettingsRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeLDAPSSettingsRequest(arg0 *directoryservice.DescribeLDAPSSettingsInput) (*request.Request, *directoryservice.DescribeLDAPSSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLDAPSSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeLDAPSSettingsOutput)
+	return ret0, ret1
+}
+
+// DescribeLDAPSSettingsRequest indicates an expected call of DescribeLDAPSSettingsRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettingsRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettingsRequest), arg0)
+}
+
+// DescribeLDAPSSettingsWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeLDAPSSettingsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeLDAPSSettingsInput, arg2 ...request.Option) (*directoryservice.DescribeLDAPSSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLDAPSSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeLDAPSSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLDAPSSettingsWithContext indicates an expected call of DescribeLDAPSSettingsWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettingsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettingsWithContext), varargs...)
+}
+
 // DescribeSharedDirectories mocks base method
 func (m *MockDirectoryServiceAPI) DescribeSharedDirectories(arg0 *directoryservice.DescribeSharedDirectoriesInput) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1368,6 +1518,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrustsWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTrustsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeTrustsWithContext), varargs...)
 }
 
+// DisableLDAPS mocks base method
+func (m *MockDirectoryServiceAPI) DisableLDAPS(arg0 *directoryservice.DisableLDAPSInput) (*directoryservice.DisableLDAPSOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableLDAPS", arg0)
+	ret0, _ := ret[0].(*directoryservice.DisableLDAPSOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableLDAPS indicates an expected call of DisableLDAPS
+func (mr *MockDirectoryServiceAPIMockRecorder) DisableLDAPS(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableLDAPS", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableLDAPS), arg0)
+}
+
+// DisableLDAPSRequest mocks base method
+func (m *MockDirectoryServiceAPI) DisableLDAPSRequest(arg0 *directoryservice.DisableLDAPSInput) (*request.Request, *directoryservice.DisableLDAPSOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableLDAPSRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DisableLDAPSOutput)
+	return ret0, ret1
+}
+
+// DisableLDAPSRequest indicates an expected call of DisableLDAPSRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DisableLDAPSRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableLDAPSRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableLDAPSRequest), arg0)
+}
+
+// DisableLDAPSWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DisableLDAPSWithContext(arg0 context.Context, arg1 *directoryservice.DisableLDAPSInput, arg2 ...request.Option) (*directoryservice.DisableLDAPSOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableLDAPSWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DisableLDAPSOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableLDAPSWithContext indicates an expected call of DisableLDAPSWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DisableLDAPSWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableLDAPSWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableLDAPSWithContext), varargs...)
+}
+
 // DisableRadius mocks base method
 func (m *MockDirectoryServiceAPI) DisableRadius(arg0 *directoryservice.DisableRadiusInput) (*directoryservice.DisableRadiusOutput, error) {
 	m.ctrl.T.Helper()
@@ -1466,6 +1666,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DisableSsoWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableSsoWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableSsoWithContext), varargs...)
+}
+
+// EnableLDAPS mocks base method
+func (m *MockDirectoryServiceAPI) EnableLDAPS(arg0 *directoryservice.EnableLDAPSInput) (*directoryservice.EnableLDAPSOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableLDAPS", arg0)
+	ret0, _ := ret[0].(*directoryservice.EnableLDAPSOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableLDAPS indicates an expected call of EnableLDAPS
+func (mr *MockDirectoryServiceAPIMockRecorder) EnableLDAPS(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableLDAPS", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).EnableLDAPS), arg0)
+}
+
+// EnableLDAPSRequest mocks base method
+func (m *MockDirectoryServiceAPI) EnableLDAPSRequest(arg0 *directoryservice.EnableLDAPSInput) (*request.Request, *directoryservice.EnableLDAPSOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableLDAPSRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.EnableLDAPSOutput)
+	return ret0, ret1
+}
+
+// EnableLDAPSRequest indicates an expected call of EnableLDAPSRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) EnableLDAPSRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableLDAPSRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).EnableLDAPSRequest), arg0)
+}
+
+// EnableLDAPSWithContext mocks base method
+func (m *MockDirectoryServiceAPI) EnableLDAPSWithContext(arg0 context.Context, arg1 *directoryservice.EnableLDAPSInput, arg2 ...request.Option) (*directoryservice.EnableLDAPSOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableLDAPSWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.EnableLDAPSOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableLDAPSWithContext indicates an expected call of EnableLDAPSWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) EnableLDAPSWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableLDAPSWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).EnableLDAPSWithContext), varargs...)
 }
 
 // EnableRadius mocks base method
@@ -1668,6 +1918,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) GetSnapshotLimitsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnapshotLimitsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).GetSnapshotLimitsWithContext), varargs...)
 }
 
+// ListCertificates mocks base method
+func (m *MockDirectoryServiceAPI) ListCertificates(arg0 *directoryservice.ListCertificatesInput) (*directoryservice.ListCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificates", arg0)
+	ret0, _ := ret[0].(*directoryservice.ListCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCertificates indicates an expected call of ListCertificates
+func (mr *MockDirectoryServiceAPIMockRecorder) ListCertificates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificates", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListCertificates), arg0)
+}
+
+// ListCertificatesRequest mocks base method
+func (m *MockDirectoryServiceAPI) ListCertificatesRequest(arg0 *directoryservice.ListCertificatesInput) (*request.Request, *directoryservice.ListCertificatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.ListCertificatesOutput)
+	return ret0, ret1
+}
+
+// ListCertificatesRequest indicates an expected call of ListCertificatesRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) ListCertificatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListCertificatesRequest), arg0)
+}
+
+// ListCertificatesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListCertificatesWithContext(arg0 context.Context, arg1 *directoryservice.ListCertificatesInput, arg2 ...request.Option) (*directoryservice.ListCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCertificatesWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.ListCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCertificatesWithContext indicates an expected call of ListCertificatesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListCertificatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListCertificatesWithContext), varargs...)
+}
+
 // ListIpRoutes mocks base method
 func (m *MockDirectoryServiceAPI) ListIpRoutes(arg0 *directoryservice.ListIpRoutesInput) (*directoryservice.ListIpRoutesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1866,6 +2166,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListTagsForResourceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// RegisterCertificate mocks base method
+func (m *MockDirectoryServiceAPI) RegisterCertificate(arg0 *directoryservice.RegisterCertificateInput) (*directoryservice.RegisterCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterCertificate", arg0)
+	ret0, _ := ret[0].(*directoryservice.RegisterCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterCertificate indicates an expected call of RegisterCertificate
+func (mr *MockDirectoryServiceAPIMockRecorder) RegisterCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterCertificate", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RegisterCertificate), arg0)
+}
+
+// RegisterCertificateRequest mocks base method
+func (m *MockDirectoryServiceAPI) RegisterCertificateRequest(arg0 *directoryservice.RegisterCertificateInput) (*request.Request, *directoryservice.RegisterCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.RegisterCertificateOutput)
+	return ret0, ret1
+}
+
+// RegisterCertificateRequest indicates an expected call of RegisterCertificateRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) RegisterCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterCertificateRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RegisterCertificateRequest), arg0)
+}
+
+// RegisterCertificateWithContext mocks base method
+func (m *MockDirectoryServiceAPI) RegisterCertificateWithContext(arg0 context.Context, arg1 *directoryservice.RegisterCertificateInput, arg2 ...request.Option) (*directoryservice.RegisterCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.RegisterCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterCertificateWithContext indicates an expected call of RegisterCertificateWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) RegisterCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterCertificateWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RegisterCertificateWithContext), varargs...)
 }
 
 // RegisterEventTopic mocks base method

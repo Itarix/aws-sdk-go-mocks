@@ -568,6 +568,56 @@ func (mr *MockDynamoDBAPIMockRecorder) DescribeContinuousBackupsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContinuousBackupsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeContinuousBackupsWithContext), varargs...)
 }
 
+// DescribeContributorInsights mocks base method
+func (m *MockDynamoDBAPI) DescribeContributorInsights(arg0 *dynamodb.DescribeContributorInsightsInput) (*dynamodb.DescribeContributorInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContributorInsights", arg0)
+	ret0, _ := ret[0].(*dynamodb.DescribeContributorInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContributorInsights indicates an expected call of DescribeContributorInsights
+func (mr *MockDynamoDBAPIMockRecorder) DescribeContributorInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContributorInsights", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeContributorInsights), arg0)
+}
+
+// DescribeContributorInsightsRequest mocks base method
+func (m *MockDynamoDBAPI) DescribeContributorInsightsRequest(arg0 *dynamodb.DescribeContributorInsightsInput) (*request.Request, *dynamodb.DescribeContributorInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContributorInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.DescribeContributorInsightsOutput)
+	return ret0, ret1
+}
+
+// DescribeContributorInsightsRequest indicates an expected call of DescribeContributorInsightsRequest
+func (mr *MockDynamoDBAPIMockRecorder) DescribeContributorInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContributorInsightsRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeContributorInsightsRequest), arg0)
+}
+
+// DescribeContributorInsightsWithContext mocks base method
+func (m *MockDynamoDBAPI) DescribeContributorInsightsWithContext(arg0 context.Context, arg1 *dynamodb.DescribeContributorInsightsInput, arg2 ...request.Option) (*dynamodb.DescribeContributorInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeContributorInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.DescribeContributorInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContributorInsightsWithContext indicates an expected call of DescribeContributorInsightsWithContext
+func (mr *MockDynamoDBAPIMockRecorder) DescribeContributorInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContributorInsightsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).DescribeContributorInsightsWithContext), varargs...)
+}
+
 // DescribeEndpoints mocks base method
 func (m *MockDynamoDBAPI) DescribeEndpoints(arg0 *dynamodb.DescribeEndpointsInput) (*dynamodb.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1016,6 +1066,89 @@ func (mr *MockDynamoDBAPIMockRecorder) ListBackupsWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBackupsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).ListBackupsWithContext), varargs...)
+}
+
+// ListContributorInsights mocks base method
+func (m *MockDynamoDBAPI) ListContributorInsights(arg0 *dynamodb.ListContributorInsightsInput) (*dynamodb.ListContributorInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContributorInsights", arg0)
+	ret0, _ := ret[0].(*dynamodb.ListContributorInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContributorInsights indicates an expected call of ListContributorInsights
+func (mr *MockDynamoDBAPIMockRecorder) ListContributorInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContributorInsights", reflect.TypeOf((*MockDynamoDBAPI)(nil).ListContributorInsights), arg0)
+}
+
+// ListContributorInsightsPages mocks base method
+func (m *MockDynamoDBAPI) ListContributorInsightsPages(arg0 *dynamodb.ListContributorInsightsInput, arg1 func(*dynamodb.ListContributorInsightsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContributorInsightsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContributorInsightsPages indicates an expected call of ListContributorInsightsPages
+func (mr *MockDynamoDBAPIMockRecorder) ListContributorInsightsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContributorInsightsPages", reflect.TypeOf((*MockDynamoDBAPI)(nil).ListContributorInsightsPages), arg0, arg1)
+}
+
+// ListContributorInsightsPagesWithContext mocks base method
+func (m *MockDynamoDBAPI) ListContributorInsightsPagesWithContext(arg0 context.Context, arg1 *dynamodb.ListContributorInsightsInput, arg2 func(*dynamodb.ListContributorInsightsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContributorInsightsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContributorInsightsPagesWithContext indicates an expected call of ListContributorInsightsPagesWithContext
+func (mr *MockDynamoDBAPIMockRecorder) ListContributorInsightsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContributorInsightsPagesWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).ListContributorInsightsPagesWithContext), varargs...)
+}
+
+// ListContributorInsightsRequest mocks base method
+func (m *MockDynamoDBAPI) ListContributorInsightsRequest(arg0 *dynamodb.ListContributorInsightsInput) (*request.Request, *dynamodb.ListContributorInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContributorInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.ListContributorInsightsOutput)
+	return ret0, ret1
+}
+
+// ListContributorInsightsRequest indicates an expected call of ListContributorInsightsRequest
+func (mr *MockDynamoDBAPIMockRecorder) ListContributorInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContributorInsightsRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).ListContributorInsightsRequest), arg0)
+}
+
+// ListContributorInsightsWithContext mocks base method
+func (m *MockDynamoDBAPI) ListContributorInsightsWithContext(arg0 context.Context, arg1 *dynamodb.ListContributorInsightsInput, arg2 ...request.Option) (*dynamodb.ListContributorInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContributorInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.ListContributorInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContributorInsightsWithContext indicates an expected call of ListContributorInsightsWithContext
+func (mr *MockDynamoDBAPIMockRecorder) ListContributorInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContributorInsightsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).ListContributorInsightsWithContext), varargs...)
 }
 
 // ListGlobalTables mocks base method
@@ -1765,6 +1898,56 @@ func (mr *MockDynamoDBAPIMockRecorder) UpdateContinuousBackupsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContinuousBackupsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateContinuousBackupsWithContext), varargs...)
+}
+
+// UpdateContributorInsights mocks base method
+func (m *MockDynamoDBAPI) UpdateContributorInsights(arg0 *dynamodb.UpdateContributorInsightsInput) (*dynamodb.UpdateContributorInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContributorInsights", arg0)
+	ret0, _ := ret[0].(*dynamodb.UpdateContributorInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContributorInsights indicates an expected call of UpdateContributorInsights
+func (mr *MockDynamoDBAPIMockRecorder) UpdateContributorInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContributorInsights", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateContributorInsights), arg0)
+}
+
+// UpdateContributorInsightsRequest mocks base method
+func (m *MockDynamoDBAPI) UpdateContributorInsightsRequest(arg0 *dynamodb.UpdateContributorInsightsInput) (*request.Request, *dynamodb.UpdateContributorInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContributorInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dynamodb.UpdateContributorInsightsOutput)
+	return ret0, ret1
+}
+
+// UpdateContributorInsightsRequest indicates an expected call of UpdateContributorInsightsRequest
+func (mr *MockDynamoDBAPIMockRecorder) UpdateContributorInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContributorInsightsRequest", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateContributorInsightsRequest), arg0)
+}
+
+// UpdateContributorInsightsWithContext mocks base method
+func (m *MockDynamoDBAPI) UpdateContributorInsightsWithContext(arg0 context.Context, arg1 *dynamodb.UpdateContributorInsightsInput, arg2 ...request.Option) (*dynamodb.UpdateContributorInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContributorInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*dynamodb.UpdateContributorInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContributorInsightsWithContext indicates an expected call of UpdateContributorInsightsWithContext
+func (mr *MockDynamoDBAPIMockRecorder) UpdateContributorInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContributorInsightsWithContext", reflect.TypeOf((*MockDynamoDBAPI)(nil).UpdateContributorInsightsWithContext), varargs...)
 }
 
 // UpdateGlobalTable mocks base method
