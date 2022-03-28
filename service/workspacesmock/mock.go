@@ -135,6 +135,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) AuthorizeIpRulesWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeIpRulesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).AuthorizeIpRulesWithContext), varargs...)
 }
 
+// CopyWorkspaceImage mocks base method
+func (m *MockWorkSpacesAPI) CopyWorkspaceImage(arg0 *workspaces.CopyWorkspaceImageInput) (*workspaces.CopyWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopyWorkspaceImage", arg0)
+	ret0, _ := ret[0].(*workspaces.CopyWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopyWorkspaceImage indicates an expected call of CopyWorkspaceImage
+func (mr *MockWorkSpacesAPIMockRecorder) CopyWorkspaceImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyWorkspaceImage", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CopyWorkspaceImage), arg0)
+}
+
+// CopyWorkspaceImageRequest mocks base method
+func (m *MockWorkSpacesAPI) CopyWorkspaceImageRequest(arg0 *workspaces.CopyWorkspaceImageInput) (*request.Request, *workspaces.CopyWorkspaceImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopyWorkspaceImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CopyWorkspaceImageOutput)
+	return ret0, ret1
+}
+
+// CopyWorkspaceImageRequest indicates an expected call of CopyWorkspaceImageRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CopyWorkspaceImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyWorkspaceImageRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CopyWorkspaceImageRequest), arg0)
+}
+
+// CopyWorkspaceImageWithContext mocks base method
+func (m *MockWorkSpacesAPI) CopyWorkspaceImageWithContext(arg0 context.Context, arg1 *workspaces.CopyWorkspaceImageInput, arg2 ...request.Option) (*workspaces.CopyWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CopyWorkspaceImageWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CopyWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopyWorkspaceImageWithContext indicates an expected call of CopyWorkspaceImageWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CopyWorkspaceImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CopyWorkspaceImageWithContext), varargs...)
+}
+
 // CreateIpGroup mocks base method
 func (m *MockWorkSpacesAPI) CreateIpGroup(arg0 *workspaces.CreateIpGroupInput) (*workspaces.CreateIpGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -901,6 +951,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceImagesWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceImagesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceImagesWithContext), varargs...)
 }
 
+// DescribeWorkspaceSnapshots mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspaceSnapshots(arg0 *workspaces.DescribeWorkspaceSnapshotsInput) (*workspaces.DescribeWorkspaceSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspaceSnapshots", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspaceSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceSnapshots indicates an expected call of DescribeWorkspaceSnapshots
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceSnapshots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceSnapshots", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceSnapshots), arg0)
+}
+
+// DescribeWorkspaceSnapshotsRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspaceSnapshotsRequest(arg0 *workspaces.DescribeWorkspaceSnapshotsInput) (*request.Request, *workspaces.DescribeWorkspaceSnapshotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspaceSnapshotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeWorkspaceSnapshotsOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceSnapshotsRequest indicates an expected call of DescribeWorkspaceSnapshotsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceSnapshotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceSnapshotsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceSnapshotsRequest), arg0)
+}
+
+// DescribeWorkspaceSnapshotsWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspaceSnapshotsWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspaceSnapshotsInput, arg2 ...request.Option) (*workspaces.DescribeWorkspaceSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkspaceSnapshotsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspaceSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceSnapshotsWithContext indicates an expected call of DescribeWorkspaceSnapshotsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspaceSnapshotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceSnapshotsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspaceSnapshotsWithContext), varargs...)
+}
+
 // DescribeWorkspaces mocks base method
 func (m *MockWorkSpacesAPI) DescribeWorkspaces(arg0 *workspaces.DescribeWorkspacesInput) (*workspaces.DescribeWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1482,6 +1582,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) RebuildWorkspacesWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebuildWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RebuildWorkspacesWithContext), varargs...)
+}
+
+// RestoreWorkspace mocks base method
+func (m *MockWorkSpacesAPI) RestoreWorkspace(arg0 *workspaces.RestoreWorkspaceInput) (*workspaces.RestoreWorkspaceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreWorkspace", arg0)
+	ret0, _ := ret[0].(*workspaces.RestoreWorkspaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreWorkspace indicates an expected call of RestoreWorkspace
+func (mr *MockWorkSpacesAPIMockRecorder) RestoreWorkspace(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreWorkspace", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RestoreWorkspace), arg0)
+}
+
+// RestoreWorkspaceRequest mocks base method
+func (m *MockWorkSpacesAPI) RestoreWorkspaceRequest(arg0 *workspaces.RestoreWorkspaceInput) (*request.Request, *workspaces.RestoreWorkspaceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreWorkspaceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.RestoreWorkspaceOutput)
+	return ret0, ret1
+}
+
+// RestoreWorkspaceRequest indicates an expected call of RestoreWorkspaceRequest
+func (mr *MockWorkSpacesAPIMockRecorder) RestoreWorkspaceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreWorkspaceRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RestoreWorkspaceRequest), arg0)
+}
+
+// RestoreWorkspaceWithContext mocks base method
+func (m *MockWorkSpacesAPI) RestoreWorkspaceWithContext(arg0 context.Context, arg1 *workspaces.RestoreWorkspaceInput, arg2 ...request.Option) (*workspaces.RestoreWorkspaceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreWorkspaceWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.RestoreWorkspaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreWorkspaceWithContext indicates an expected call of RestoreWorkspaceWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) RestoreWorkspaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreWorkspaceWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RestoreWorkspaceWithContext), varargs...)
 }
 
 // RevokeIpRules mocks base method
