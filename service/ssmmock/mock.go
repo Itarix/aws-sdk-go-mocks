@@ -3800,6 +3800,56 @@ func (mr *MockSSMAPIMockRecorder) GetPatchBaselineWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPatchBaselineWithContext", reflect.TypeOf((*MockSSMAPI)(nil).GetPatchBaselineWithContext), varargs...)
 }
 
+// GetServiceSetting mocks base method
+func (m *MockSSMAPI) GetServiceSetting(arg0 *ssm.GetServiceSettingInput) (*ssm.GetServiceSettingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceSetting", arg0)
+	ret0, _ := ret[0].(*ssm.GetServiceSettingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceSetting indicates an expected call of GetServiceSetting
+func (mr *MockSSMAPIMockRecorder) GetServiceSetting(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceSetting", reflect.TypeOf((*MockSSMAPI)(nil).GetServiceSetting), arg0)
+}
+
+// GetServiceSettingRequest mocks base method
+func (m *MockSSMAPI) GetServiceSettingRequest(arg0 *ssm.GetServiceSettingInput) (*request.Request, *ssm.GetServiceSettingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceSettingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.GetServiceSettingOutput)
+	return ret0, ret1
+}
+
+// GetServiceSettingRequest indicates an expected call of GetServiceSettingRequest
+func (mr *MockSSMAPIMockRecorder) GetServiceSettingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceSettingRequest", reflect.TypeOf((*MockSSMAPI)(nil).GetServiceSettingRequest), arg0)
+}
+
+// GetServiceSettingWithContext mocks base method
+func (m *MockSSMAPI) GetServiceSettingWithContext(arg0 context.Context, arg1 *ssm.GetServiceSettingInput, arg2 ...request.Option) (*ssm.GetServiceSettingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetServiceSettingWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.GetServiceSettingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceSettingWithContext indicates an expected call of GetServiceSettingWithContext
+func (mr *MockSSMAPIMockRecorder) GetServiceSettingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceSettingWithContext", reflect.TypeOf((*MockSSMAPI)(nil).GetServiceSettingWithContext), varargs...)
+}
+
 // LabelParameterVersion mocks base method
 func (m *MockSSMAPI) LabelParameterVersion(arg0 *ssm.LabelParameterVersionInput) (*ssm.LabelParameterVersionOutput, error) {
 	m.ctrl.T.Helper()
@@ -5032,6 +5082,56 @@ func (mr *MockSSMAPIMockRecorder) RemoveTagsFromResourceWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResourceWithContext", reflect.TypeOf((*MockSSMAPI)(nil).RemoveTagsFromResourceWithContext), varargs...)
 }
 
+// ResetServiceSetting mocks base method
+func (m *MockSSMAPI) ResetServiceSetting(arg0 *ssm.ResetServiceSettingInput) (*ssm.ResetServiceSettingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetServiceSetting", arg0)
+	ret0, _ := ret[0].(*ssm.ResetServiceSettingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetServiceSetting indicates an expected call of ResetServiceSetting
+func (mr *MockSSMAPIMockRecorder) ResetServiceSetting(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetServiceSetting", reflect.TypeOf((*MockSSMAPI)(nil).ResetServiceSetting), arg0)
+}
+
+// ResetServiceSettingRequest mocks base method
+func (m *MockSSMAPI) ResetServiceSettingRequest(arg0 *ssm.ResetServiceSettingInput) (*request.Request, *ssm.ResetServiceSettingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetServiceSettingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.ResetServiceSettingOutput)
+	return ret0, ret1
+}
+
+// ResetServiceSettingRequest indicates an expected call of ResetServiceSettingRequest
+func (mr *MockSSMAPIMockRecorder) ResetServiceSettingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetServiceSettingRequest", reflect.TypeOf((*MockSSMAPI)(nil).ResetServiceSettingRequest), arg0)
+}
+
+// ResetServiceSettingWithContext mocks base method
+func (m *MockSSMAPI) ResetServiceSettingWithContext(arg0 context.Context, arg1 *ssm.ResetServiceSettingInput, arg2 ...request.Option) (*ssm.ResetServiceSettingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResetServiceSettingWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.ResetServiceSettingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetServiceSettingWithContext indicates an expected call of ResetServiceSettingWithContext
+func (mr *MockSSMAPIMockRecorder) ResetServiceSettingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetServiceSettingWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ResetServiceSettingWithContext), varargs...)
+}
+
 // ResumeSession mocks base method
 func (m *MockSSMAPI) ResumeSession(arg0 *ssm.ResumeSessionInput) (*ssm.ResumeSessionOutput, error) {
 	m.ctrl.T.Helper()
@@ -5880,4 +5980,54 @@ func (mr *MockSSMAPIMockRecorder) UpdatePatchBaselineWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePatchBaselineWithContext", reflect.TypeOf((*MockSSMAPI)(nil).UpdatePatchBaselineWithContext), varargs...)
+}
+
+// UpdateServiceSetting mocks base method
+func (m *MockSSMAPI) UpdateServiceSetting(arg0 *ssm.UpdateServiceSettingInput) (*ssm.UpdateServiceSettingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateServiceSetting", arg0)
+	ret0, _ := ret[0].(*ssm.UpdateServiceSettingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateServiceSetting indicates an expected call of UpdateServiceSetting
+func (mr *MockSSMAPIMockRecorder) UpdateServiceSetting(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceSetting", reflect.TypeOf((*MockSSMAPI)(nil).UpdateServiceSetting), arg0)
+}
+
+// UpdateServiceSettingRequest mocks base method
+func (m *MockSSMAPI) UpdateServiceSettingRequest(arg0 *ssm.UpdateServiceSettingInput) (*request.Request, *ssm.UpdateServiceSettingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateServiceSettingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.UpdateServiceSettingOutput)
+	return ret0, ret1
+}
+
+// UpdateServiceSettingRequest indicates an expected call of UpdateServiceSettingRequest
+func (mr *MockSSMAPIMockRecorder) UpdateServiceSettingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceSettingRequest", reflect.TypeOf((*MockSSMAPI)(nil).UpdateServiceSettingRequest), arg0)
+}
+
+// UpdateServiceSettingWithContext mocks base method
+func (m *MockSSMAPI) UpdateServiceSettingWithContext(arg0 context.Context, arg1 *ssm.UpdateServiceSettingInput, arg2 ...request.Option) (*ssm.UpdateServiceSettingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateServiceSettingWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.UpdateServiceSettingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateServiceSettingWithContext indicates an expected call of UpdateServiceSettingWithContext
+func (mr *MockSSMAPIMockRecorder) UpdateServiceSettingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceSettingWithContext", reflect.TypeOf((*MockSSMAPI)(nil).UpdateServiceSettingWithContext), varargs...)
 }
