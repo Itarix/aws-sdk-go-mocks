@@ -185,6 +185,56 @@ func (mr *MockChimeAPIMockRecorder) AssociatePhoneNumbersWithVoiceConnectorWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePhoneNumbersWithVoiceConnectorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).AssociatePhoneNumbersWithVoiceConnectorWithContext), varargs...)
 }
 
+// BatchCreateRoomMembership mocks base method
+func (m *MockChimeAPI) BatchCreateRoomMembership(arg0 *chime.BatchCreateRoomMembershipInput) (*chime.BatchCreateRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateRoomMembership", arg0)
+	ret0, _ := ret[0].(*chime.BatchCreateRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateRoomMembership indicates an expected call of BatchCreateRoomMembership
+func (mr *MockChimeAPIMockRecorder) BatchCreateRoomMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateRoomMembership", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateRoomMembership), arg0)
+}
+
+// BatchCreateRoomMembershipRequest mocks base method
+func (m *MockChimeAPI) BatchCreateRoomMembershipRequest(arg0 *chime.BatchCreateRoomMembershipInput) (*request.Request, *chime.BatchCreateRoomMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateRoomMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.BatchCreateRoomMembershipOutput)
+	return ret0, ret1
+}
+
+// BatchCreateRoomMembershipRequest indicates an expected call of BatchCreateRoomMembershipRequest
+func (mr *MockChimeAPIMockRecorder) BatchCreateRoomMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateRoomMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateRoomMembershipRequest), arg0)
+}
+
+// BatchCreateRoomMembershipWithContext mocks base method
+func (m *MockChimeAPI) BatchCreateRoomMembershipWithContext(arg0 context.Context, arg1 *chime.BatchCreateRoomMembershipInput, arg2 ...request.Option) (*chime.BatchCreateRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchCreateRoomMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.BatchCreateRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateRoomMembershipWithContext indicates an expected call of BatchCreateRoomMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) BatchCreateRoomMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateRoomMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateRoomMembershipWithContext), varargs...)
+}
+
 // BatchDeletePhoneNumber mocks base method
 func (m *MockChimeAPI) BatchDeletePhoneNumber(arg0 *chime.BatchDeletePhoneNumberInput) (*chime.BatchDeletePhoneNumberOutput, error) {
 	m.ctrl.T.Helper()
@@ -585,6 +635,106 @@ func (mr *MockChimeAPIMockRecorder) CreatePhoneNumberOrderWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePhoneNumberOrderWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreatePhoneNumberOrderWithContext), varargs...)
 }
 
+// CreateRoom mocks base method
+func (m *MockChimeAPI) CreateRoom(arg0 *chime.CreateRoomInput) (*chime.CreateRoomOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRoom", arg0)
+	ret0, _ := ret[0].(*chime.CreateRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRoom indicates an expected call of CreateRoom
+func (mr *MockChimeAPIMockRecorder) CreateRoom(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoom", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoom), arg0)
+}
+
+// CreateRoomMembership mocks base method
+func (m *MockChimeAPI) CreateRoomMembership(arg0 *chime.CreateRoomMembershipInput) (*chime.CreateRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRoomMembership", arg0)
+	ret0, _ := ret[0].(*chime.CreateRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRoomMembership indicates an expected call of CreateRoomMembership
+func (mr *MockChimeAPIMockRecorder) CreateRoomMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomMembership", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomMembership), arg0)
+}
+
+// CreateRoomMembershipRequest mocks base method
+func (m *MockChimeAPI) CreateRoomMembershipRequest(arg0 *chime.CreateRoomMembershipInput) (*request.Request, *chime.CreateRoomMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRoomMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateRoomMembershipOutput)
+	return ret0, ret1
+}
+
+// CreateRoomMembershipRequest indicates an expected call of CreateRoomMembershipRequest
+func (mr *MockChimeAPIMockRecorder) CreateRoomMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomMembershipRequest), arg0)
+}
+
+// CreateRoomMembershipWithContext mocks base method
+func (m *MockChimeAPI) CreateRoomMembershipWithContext(arg0 context.Context, arg1 *chime.CreateRoomMembershipInput, arg2 ...request.Option) (*chime.CreateRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRoomMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRoomMembershipWithContext indicates an expected call of CreateRoomMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) CreateRoomMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomMembershipWithContext), varargs...)
+}
+
+// CreateRoomRequest mocks base method
+func (m *MockChimeAPI) CreateRoomRequest(arg0 *chime.CreateRoomInput) (*request.Request, *chime.CreateRoomOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRoomRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateRoomOutput)
+	return ret0, ret1
+}
+
+// CreateRoomRequest indicates an expected call of CreateRoomRequest
+func (mr *MockChimeAPIMockRecorder) CreateRoomRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomRequest), arg0)
+}
+
+// CreateRoomWithContext mocks base method
+func (m *MockChimeAPI) CreateRoomWithContext(arg0 context.Context, arg1 *chime.CreateRoomInput, arg2 ...request.Option) (*chime.CreateRoomOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRoomWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRoomWithContext indicates an expected call of CreateRoomWithContext
+func (mr *MockChimeAPIMockRecorder) CreateRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomWithContext), varargs...)
+}
+
 // CreateVoiceConnector mocks base method
 func (m *MockChimeAPI) CreateVoiceConnector(arg0 *chime.CreateVoiceConnectorInput) (*chime.CreateVoiceConnectorOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +983,106 @@ func (mr *MockChimeAPIMockRecorder) DeletePhoneNumberWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePhoneNumberWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeletePhoneNumberWithContext), varargs...)
+}
+
+// DeleteRoom mocks base method
+func (m *MockChimeAPI) DeleteRoom(arg0 *chime.DeleteRoomInput) (*chime.DeleteRoomOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRoom", arg0)
+	ret0, _ := ret[0].(*chime.DeleteRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRoom indicates an expected call of DeleteRoom
+func (mr *MockChimeAPIMockRecorder) DeleteRoom(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoom", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoom), arg0)
+}
+
+// DeleteRoomMembership mocks base method
+func (m *MockChimeAPI) DeleteRoomMembership(arg0 *chime.DeleteRoomMembershipInput) (*chime.DeleteRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRoomMembership", arg0)
+	ret0, _ := ret[0].(*chime.DeleteRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRoomMembership indicates an expected call of DeleteRoomMembership
+func (mr *MockChimeAPIMockRecorder) DeleteRoomMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomMembership", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoomMembership), arg0)
+}
+
+// DeleteRoomMembershipRequest mocks base method
+func (m *MockChimeAPI) DeleteRoomMembershipRequest(arg0 *chime.DeleteRoomMembershipInput) (*request.Request, *chime.DeleteRoomMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRoomMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteRoomMembershipOutput)
+	return ret0, ret1
+}
+
+// DeleteRoomMembershipRequest indicates an expected call of DeleteRoomMembershipRequest
+func (mr *MockChimeAPIMockRecorder) DeleteRoomMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoomMembershipRequest), arg0)
+}
+
+// DeleteRoomMembershipWithContext mocks base method
+func (m *MockChimeAPI) DeleteRoomMembershipWithContext(arg0 context.Context, arg1 *chime.DeleteRoomMembershipInput, arg2 ...request.Option) (*chime.DeleteRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRoomMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRoomMembershipWithContext indicates an expected call of DeleteRoomMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteRoomMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoomMembershipWithContext), varargs...)
+}
+
+// DeleteRoomRequest mocks base method
+func (m *MockChimeAPI) DeleteRoomRequest(arg0 *chime.DeleteRoomInput) (*request.Request, *chime.DeleteRoomOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRoomRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteRoomOutput)
+	return ret0, ret1
+}
+
+// DeleteRoomRequest indicates an expected call of DeleteRoomRequest
+func (mr *MockChimeAPIMockRecorder) DeleteRoomRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoomRequest), arg0)
+}
+
+// DeleteRoomWithContext mocks base method
+func (m *MockChimeAPI) DeleteRoomWithContext(arg0 context.Context, arg1 *chime.DeleteRoomInput, arg2 ...request.Option) (*chime.DeleteRoomOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRoomWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRoomWithContext indicates an expected call of DeleteRoomWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoomWithContext), varargs...)
 }
 
 // DeleteVoiceConnector mocks base method
@@ -1685,6 +1935,56 @@ func (mr *MockChimeAPIMockRecorder) GetPhoneNumberWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPhoneNumberWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetPhoneNumberWithContext), varargs...)
 }
 
+// GetRoom mocks base method
+func (m *MockChimeAPI) GetRoom(arg0 *chime.GetRoomInput) (*chime.GetRoomOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRoom", arg0)
+	ret0, _ := ret[0].(*chime.GetRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRoom indicates an expected call of GetRoom
+func (mr *MockChimeAPIMockRecorder) GetRoom(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoom", reflect.TypeOf((*MockChimeAPI)(nil).GetRoom), arg0)
+}
+
+// GetRoomRequest mocks base method
+func (m *MockChimeAPI) GetRoomRequest(arg0 *chime.GetRoomInput) (*request.Request, *chime.GetRoomOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRoomRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetRoomOutput)
+	return ret0, ret1
+}
+
+// GetRoomRequest indicates an expected call of GetRoomRequest
+func (mr *MockChimeAPIMockRecorder) GetRoomRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetRoomRequest), arg0)
+}
+
+// GetRoomWithContext mocks base method
+func (m *MockChimeAPI) GetRoomWithContext(arg0 context.Context, arg1 *chime.GetRoomInput, arg2 ...request.Option) (*chime.GetRoomOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRoomWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRoomWithContext indicates an expected call of GetRoomWithContext
+func (mr *MockChimeAPIMockRecorder) GetRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetRoomWithContext), varargs...)
+}
+
 // GetUser mocks base method
 func (m *MockChimeAPI) GetUser(arg0 *chime.GetUserInput) (*chime.GetUserOutput, error) {
 	m.ctrl.T.Helper()
@@ -2515,6 +2815,172 @@ func (mr *MockChimeAPIMockRecorder) ListPhoneNumbersWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListPhoneNumbersWithContext), varargs...)
+}
+
+// ListRoomMemberships mocks base method
+func (m *MockChimeAPI) ListRoomMemberships(arg0 *chime.ListRoomMembershipsInput) (*chime.ListRoomMembershipsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoomMemberships", arg0)
+	ret0, _ := ret[0].(*chime.ListRoomMembershipsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoomMemberships indicates an expected call of ListRoomMemberships
+func (mr *MockChimeAPIMockRecorder) ListRoomMemberships(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomMemberships", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomMemberships), arg0)
+}
+
+// ListRoomMembershipsPages mocks base method
+func (m *MockChimeAPI) ListRoomMembershipsPages(arg0 *chime.ListRoomMembershipsInput, arg1 func(*chime.ListRoomMembershipsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoomMembershipsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoomMembershipsPages indicates an expected call of ListRoomMembershipsPages
+func (mr *MockChimeAPIMockRecorder) ListRoomMembershipsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomMembershipsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomMembershipsPages), arg0, arg1)
+}
+
+// ListRoomMembershipsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListRoomMembershipsPagesWithContext(arg0 context.Context, arg1 *chime.ListRoomMembershipsInput, arg2 func(*chime.ListRoomMembershipsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoomMembershipsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoomMembershipsPagesWithContext indicates an expected call of ListRoomMembershipsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListRoomMembershipsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomMembershipsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomMembershipsPagesWithContext), varargs...)
+}
+
+// ListRoomMembershipsRequest mocks base method
+func (m *MockChimeAPI) ListRoomMembershipsRequest(arg0 *chime.ListRoomMembershipsInput) (*request.Request, *chime.ListRoomMembershipsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoomMembershipsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListRoomMembershipsOutput)
+	return ret0, ret1
+}
+
+// ListRoomMembershipsRequest indicates an expected call of ListRoomMembershipsRequest
+func (mr *MockChimeAPIMockRecorder) ListRoomMembershipsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomMembershipsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomMembershipsRequest), arg0)
+}
+
+// ListRoomMembershipsWithContext mocks base method
+func (m *MockChimeAPI) ListRoomMembershipsWithContext(arg0 context.Context, arg1 *chime.ListRoomMembershipsInput, arg2 ...request.Option) (*chime.ListRoomMembershipsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoomMembershipsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListRoomMembershipsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoomMembershipsWithContext indicates an expected call of ListRoomMembershipsWithContext
+func (mr *MockChimeAPIMockRecorder) ListRoomMembershipsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomMembershipsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomMembershipsWithContext), varargs...)
+}
+
+// ListRooms mocks base method
+func (m *MockChimeAPI) ListRooms(arg0 *chime.ListRoomsInput) (*chime.ListRoomsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRooms", arg0)
+	ret0, _ := ret[0].(*chime.ListRoomsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRooms indicates an expected call of ListRooms
+func (mr *MockChimeAPIMockRecorder) ListRooms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRooms", reflect.TypeOf((*MockChimeAPI)(nil).ListRooms), arg0)
+}
+
+// ListRoomsPages mocks base method
+func (m *MockChimeAPI) ListRoomsPages(arg0 *chime.ListRoomsInput, arg1 func(*chime.ListRoomsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoomsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoomsPages indicates an expected call of ListRoomsPages
+func (mr *MockChimeAPIMockRecorder) ListRoomsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomsPages), arg0, arg1)
+}
+
+// ListRoomsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListRoomsPagesWithContext(arg0 context.Context, arg1 *chime.ListRoomsInput, arg2 func(*chime.ListRoomsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoomsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoomsPagesWithContext indicates an expected call of ListRoomsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListRoomsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomsPagesWithContext), varargs...)
+}
+
+// ListRoomsRequest mocks base method
+func (m *MockChimeAPI) ListRoomsRequest(arg0 *chime.ListRoomsInput) (*request.Request, *chime.ListRoomsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoomsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListRoomsOutput)
+	return ret0, ret1
+}
+
+// ListRoomsRequest indicates an expected call of ListRoomsRequest
+func (mr *MockChimeAPIMockRecorder) ListRoomsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomsRequest), arg0)
+}
+
+// ListRoomsWithContext mocks base method
+func (m *MockChimeAPI) ListRoomsWithContext(arg0 context.Context, arg1 *chime.ListRoomsInput, arg2 ...request.Option) (*chime.ListRoomsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoomsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListRoomsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoomsWithContext indicates an expected call of ListRoomsWithContext
+func (mr *MockChimeAPIMockRecorder) ListRoomsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomsWithContext), varargs...)
 }
 
 // ListUsers mocks base method
@@ -3664,6 +4130,106 @@ func (mr *MockChimeAPIMockRecorder) UpdatePhoneNumberWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdatePhoneNumberWithContext), varargs...)
+}
+
+// UpdateRoom mocks base method
+func (m *MockChimeAPI) UpdateRoom(arg0 *chime.UpdateRoomInput) (*chime.UpdateRoomOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoom", arg0)
+	ret0, _ := ret[0].(*chime.UpdateRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoom indicates an expected call of UpdateRoom
+func (mr *MockChimeAPIMockRecorder) UpdateRoom(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoom", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoom), arg0)
+}
+
+// UpdateRoomMembership mocks base method
+func (m *MockChimeAPI) UpdateRoomMembership(arg0 *chime.UpdateRoomMembershipInput) (*chime.UpdateRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoomMembership", arg0)
+	ret0, _ := ret[0].(*chime.UpdateRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoomMembership indicates an expected call of UpdateRoomMembership
+func (mr *MockChimeAPIMockRecorder) UpdateRoomMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomMembership", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoomMembership), arg0)
+}
+
+// UpdateRoomMembershipRequest mocks base method
+func (m *MockChimeAPI) UpdateRoomMembershipRequest(arg0 *chime.UpdateRoomMembershipInput) (*request.Request, *chime.UpdateRoomMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoomMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateRoomMembershipOutput)
+	return ret0, ret1
+}
+
+// UpdateRoomMembershipRequest indicates an expected call of UpdateRoomMembershipRequest
+func (mr *MockChimeAPIMockRecorder) UpdateRoomMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoomMembershipRequest), arg0)
+}
+
+// UpdateRoomMembershipWithContext mocks base method
+func (m *MockChimeAPI) UpdateRoomMembershipWithContext(arg0 context.Context, arg1 *chime.UpdateRoomMembershipInput, arg2 ...request.Option) (*chime.UpdateRoomMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoomMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateRoomMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoomMembershipWithContext indicates an expected call of UpdateRoomMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateRoomMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoomMembershipWithContext), varargs...)
+}
+
+// UpdateRoomRequest mocks base method
+func (m *MockChimeAPI) UpdateRoomRequest(arg0 *chime.UpdateRoomInput) (*request.Request, *chime.UpdateRoomOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoomRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateRoomOutput)
+	return ret0, ret1
+}
+
+// UpdateRoomRequest indicates an expected call of UpdateRoomRequest
+func (mr *MockChimeAPIMockRecorder) UpdateRoomRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoomRequest), arg0)
+}
+
+// UpdateRoomWithContext mocks base method
+func (m *MockChimeAPI) UpdateRoomWithContext(arg0 context.Context, arg1 *chime.UpdateRoomInput, arg2 ...request.Option) (*chime.UpdateRoomOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoomWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateRoomOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoomWithContext indicates an expected call of UpdateRoomWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateRoomWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoomWithContext), varargs...)
 }
 
 // UpdateUser mocks base method

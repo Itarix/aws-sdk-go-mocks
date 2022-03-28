@@ -85,6 +85,56 @@ func (mr *MockEKSAPIMockRecorder) CreateClusterWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).CreateClusterWithContext), varargs...)
 }
 
+// CreateNodegroup mocks base method
+func (m *MockEKSAPI) CreateNodegroup(arg0 *eks.CreateNodegroupInput) (*eks.CreateNodegroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateNodegroup", arg0)
+	ret0, _ := ret[0].(*eks.CreateNodegroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateNodegroup indicates an expected call of CreateNodegroup
+func (mr *MockEKSAPIMockRecorder) CreateNodegroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNodegroup", reflect.TypeOf((*MockEKSAPI)(nil).CreateNodegroup), arg0)
+}
+
+// CreateNodegroupRequest mocks base method
+func (m *MockEKSAPI) CreateNodegroupRequest(arg0 *eks.CreateNodegroupInput) (*request.Request, *eks.CreateNodegroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateNodegroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.CreateNodegroupOutput)
+	return ret0, ret1
+}
+
+// CreateNodegroupRequest indicates an expected call of CreateNodegroupRequest
+func (mr *MockEKSAPIMockRecorder) CreateNodegroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNodegroupRequest", reflect.TypeOf((*MockEKSAPI)(nil).CreateNodegroupRequest), arg0)
+}
+
+// CreateNodegroupWithContext mocks base method
+func (m *MockEKSAPI) CreateNodegroupWithContext(arg0 context.Context, arg1 *eks.CreateNodegroupInput, arg2 ...request.Option) (*eks.CreateNodegroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateNodegroupWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.CreateNodegroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateNodegroupWithContext indicates an expected call of CreateNodegroupWithContext
+func (mr *MockEKSAPIMockRecorder) CreateNodegroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNodegroupWithContext", reflect.TypeOf((*MockEKSAPI)(nil).CreateNodegroupWithContext), varargs...)
+}
+
 // DeleteCluster mocks base method
 func (m *MockEKSAPI) DeleteCluster(arg0 *eks.DeleteClusterInput) (*eks.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -135,6 +185,56 @@ func (mr *MockEKSAPIMockRecorder) DeleteClusterWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DeleteClusterWithContext), varargs...)
 }
 
+// DeleteNodegroup mocks base method
+func (m *MockEKSAPI) DeleteNodegroup(arg0 *eks.DeleteNodegroupInput) (*eks.DeleteNodegroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteNodegroup", arg0)
+	ret0, _ := ret[0].(*eks.DeleteNodegroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteNodegroup indicates an expected call of DeleteNodegroup
+func (mr *MockEKSAPIMockRecorder) DeleteNodegroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNodegroup", reflect.TypeOf((*MockEKSAPI)(nil).DeleteNodegroup), arg0)
+}
+
+// DeleteNodegroupRequest mocks base method
+func (m *MockEKSAPI) DeleteNodegroupRequest(arg0 *eks.DeleteNodegroupInput) (*request.Request, *eks.DeleteNodegroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteNodegroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.DeleteNodegroupOutput)
+	return ret0, ret1
+}
+
+// DeleteNodegroupRequest indicates an expected call of DeleteNodegroupRequest
+func (mr *MockEKSAPIMockRecorder) DeleteNodegroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNodegroupRequest", reflect.TypeOf((*MockEKSAPI)(nil).DeleteNodegroupRequest), arg0)
+}
+
+// DeleteNodegroupWithContext mocks base method
+func (m *MockEKSAPI) DeleteNodegroupWithContext(arg0 context.Context, arg1 *eks.DeleteNodegroupInput, arg2 ...request.Option) (*eks.DeleteNodegroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteNodegroupWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.DeleteNodegroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteNodegroupWithContext indicates an expected call of DeleteNodegroupWithContext
+func (mr *MockEKSAPIMockRecorder) DeleteNodegroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNodegroupWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DeleteNodegroupWithContext), varargs...)
+}
+
 // DescribeCluster mocks base method
 func (m *MockEKSAPI) DescribeCluster(arg0 *eks.DescribeClusterInput) (*eks.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +283,56 @@ func (mr *MockEKSAPIMockRecorder) DescribeClusterWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DescribeClusterWithContext), varargs...)
+}
+
+// DescribeNodegroup mocks base method
+func (m *MockEKSAPI) DescribeNodegroup(arg0 *eks.DescribeNodegroupInput) (*eks.DescribeNodegroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNodegroup", arg0)
+	ret0, _ := ret[0].(*eks.DescribeNodegroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeNodegroup indicates an expected call of DescribeNodegroup
+func (mr *MockEKSAPIMockRecorder) DescribeNodegroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodegroup", reflect.TypeOf((*MockEKSAPI)(nil).DescribeNodegroup), arg0)
+}
+
+// DescribeNodegroupRequest mocks base method
+func (m *MockEKSAPI) DescribeNodegroupRequest(arg0 *eks.DescribeNodegroupInput) (*request.Request, *eks.DescribeNodegroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNodegroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.DescribeNodegroupOutput)
+	return ret0, ret1
+}
+
+// DescribeNodegroupRequest indicates an expected call of DescribeNodegroupRequest
+func (mr *MockEKSAPIMockRecorder) DescribeNodegroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodegroupRequest", reflect.TypeOf((*MockEKSAPI)(nil).DescribeNodegroupRequest), arg0)
+}
+
+// DescribeNodegroupWithContext mocks base method
+func (m *MockEKSAPI) DescribeNodegroupWithContext(arg0 context.Context, arg1 *eks.DescribeNodegroupInput, arg2 ...request.Option) (*eks.DescribeNodegroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeNodegroupWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.DescribeNodegroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeNodegroupWithContext indicates an expected call of DescribeNodegroupWithContext
+func (mr *MockEKSAPIMockRecorder) DescribeNodegroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNodegroupWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DescribeNodegroupWithContext), varargs...)
 }
 
 // DescribeUpdate mocks base method
@@ -316,6 +466,89 @@ func (mr *MockEKSAPIMockRecorder) ListClustersWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListClustersWithContext), varargs...)
+}
+
+// ListNodegroups mocks base method
+func (m *MockEKSAPI) ListNodegroups(arg0 *eks.ListNodegroupsInput) (*eks.ListNodegroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNodegroups", arg0)
+	ret0, _ := ret[0].(*eks.ListNodegroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNodegroups indicates an expected call of ListNodegroups
+func (mr *MockEKSAPIMockRecorder) ListNodegroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodegroups", reflect.TypeOf((*MockEKSAPI)(nil).ListNodegroups), arg0)
+}
+
+// ListNodegroupsPages mocks base method
+func (m *MockEKSAPI) ListNodegroupsPages(arg0 *eks.ListNodegroupsInput, arg1 func(*eks.ListNodegroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNodegroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListNodegroupsPages indicates an expected call of ListNodegroupsPages
+func (mr *MockEKSAPIMockRecorder) ListNodegroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodegroupsPages", reflect.TypeOf((*MockEKSAPI)(nil).ListNodegroupsPages), arg0, arg1)
+}
+
+// ListNodegroupsPagesWithContext mocks base method
+func (m *MockEKSAPI) ListNodegroupsPagesWithContext(arg0 context.Context, arg1 *eks.ListNodegroupsInput, arg2 func(*eks.ListNodegroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListNodegroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListNodegroupsPagesWithContext indicates an expected call of ListNodegroupsPagesWithContext
+func (mr *MockEKSAPIMockRecorder) ListNodegroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodegroupsPagesWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListNodegroupsPagesWithContext), varargs...)
+}
+
+// ListNodegroupsRequest mocks base method
+func (m *MockEKSAPI) ListNodegroupsRequest(arg0 *eks.ListNodegroupsInput) (*request.Request, *eks.ListNodegroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNodegroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.ListNodegroupsOutput)
+	return ret0, ret1
+}
+
+// ListNodegroupsRequest indicates an expected call of ListNodegroupsRequest
+func (mr *MockEKSAPIMockRecorder) ListNodegroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodegroupsRequest", reflect.TypeOf((*MockEKSAPI)(nil).ListNodegroupsRequest), arg0)
+}
+
+// ListNodegroupsWithContext mocks base method
+func (m *MockEKSAPI) ListNodegroupsWithContext(arg0 context.Context, arg1 *eks.ListNodegroupsInput, arg2 ...request.Option) (*eks.ListNodegroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListNodegroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.ListNodegroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNodegroupsWithContext indicates an expected call of ListNodegroupsWithContext
+func (mr *MockEKSAPIMockRecorder) ListNodegroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodegroupsWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListNodegroupsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -651,6 +884,106 @@ func (mr *MockEKSAPIMockRecorder) UpdateClusterVersionWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterVersionWithContext", reflect.TypeOf((*MockEKSAPI)(nil).UpdateClusterVersionWithContext), varargs...)
 }
 
+// UpdateNodegroupConfig mocks base method
+func (m *MockEKSAPI) UpdateNodegroupConfig(arg0 *eks.UpdateNodegroupConfigInput) (*eks.UpdateNodegroupConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNodegroupConfig", arg0)
+	ret0, _ := ret[0].(*eks.UpdateNodegroupConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNodegroupConfig indicates an expected call of UpdateNodegroupConfig
+func (mr *MockEKSAPIMockRecorder) UpdateNodegroupConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodegroupConfig", reflect.TypeOf((*MockEKSAPI)(nil).UpdateNodegroupConfig), arg0)
+}
+
+// UpdateNodegroupConfigRequest mocks base method
+func (m *MockEKSAPI) UpdateNodegroupConfigRequest(arg0 *eks.UpdateNodegroupConfigInput) (*request.Request, *eks.UpdateNodegroupConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNodegroupConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.UpdateNodegroupConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateNodegroupConfigRequest indicates an expected call of UpdateNodegroupConfigRequest
+func (mr *MockEKSAPIMockRecorder) UpdateNodegroupConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodegroupConfigRequest", reflect.TypeOf((*MockEKSAPI)(nil).UpdateNodegroupConfigRequest), arg0)
+}
+
+// UpdateNodegroupConfigWithContext mocks base method
+func (m *MockEKSAPI) UpdateNodegroupConfigWithContext(arg0 context.Context, arg1 *eks.UpdateNodegroupConfigInput, arg2 ...request.Option) (*eks.UpdateNodegroupConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNodegroupConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.UpdateNodegroupConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNodegroupConfigWithContext indicates an expected call of UpdateNodegroupConfigWithContext
+func (mr *MockEKSAPIMockRecorder) UpdateNodegroupConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodegroupConfigWithContext", reflect.TypeOf((*MockEKSAPI)(nil).UpdateNodegroupConfigWithContext), varargs...)
+}
+
+// UpdateNodegroupVersion mocks base method
+func (m *MockEKSAPI) UpdateNodegroupVersion(arg0 *eks.UpdateNodegroupVersionInput) (*eks.UpdateNodegroupVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNodegroupVersion", arg0)
+	ret0, _ := ret[0].(*eks.UpdateNodegroupVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNodegroupVersion indicates an expected call of UpdateNodegroupVersion
+func (mr *MockEKSAPIMockRecorder) UpdateNodegroupVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodegroupVersion", reflect.TypeOf((*MockEKSAPI)(nil).UpdateNodegroupVersion), arg0)
+}
+
+// UpdateNodegroupVersionRequest mocks base method
+func (m *MockEKSAPI) UpdateNodegroupVersionRequest(arg0 *eks.UpdateNodegroupVersionInput) (*request.Request, *eks.UpdateNodegroupVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNodegroupVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.UpdateNodegroupVersionOutput)
+	return ret0, ret1
+}
+
+// UpdateNodegroupVersionRequest indicates an expected call of UpdateNodegroupVersionRequest
+func (mr *MockEKSAPIMockRecorder) UpdateNodegroupVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodegroupVersionRequest", reflect.TypeOf((*MockEKSAPI)(nil).UpdateNodegroupVersionRequest), arg0)
+}
+
+// UpdateNodegroupVersionWithContext mocks base method
+func (m *MockEKSAPI) UpdateNodegroupVersionWithContext(arg0 context.Context, arg1 *eks.UpdateNodegroupVersionInput, arg2 ...request.Option) (*eks.UpdateNodegroupVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNodegroupVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.UpdateNodegroupVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNodegroupVersionWithContext indicates an expected call of UpdateNodegroupVersionWithContext
+func (mr *MockEKSAPIMockRecorder) UpdateNodegroupVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodegroupVersionWithContext", reflect.TypeOf((*MockEKSAPI)(nil).UpdateNodegroupVersionWithContext), varargs...)
+}
+
 // WaitUntilClusterActive mocks base method
 func (m *MockEKSAPI) WaitUntilClusterActive(arg0 *eks.DescribeClusterInput) error {
 	m.ctrl.T.Helper()
@@ -715,4 +1048,70 @@ func (mr *MockEKSAPIMockRecorder) WaitUntilClusterDeletedWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilClusterDeletedWithContext", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilClusterDeletedWithContext), varargs...)
+}
+
+// WaitUntilNodegroupActive mocks base method
+func (m *MockEKSAPI) WaitUntilNodegroupActive(arg0 *eks.DescribeNodegroupInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilNodegroupActive", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilNodegroupActive indicates an expected call of WaitUntilNodegroupActive
+func (mr *MockEKSAPIMockRecorder) WaitUntilNodegroupActive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilNodegroupActive", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilNodegroupActive), arg0)
+}
+
+// WaitUntilNodegroupActiveWithContext mocks base method
+func (m *MockEKSAPI) WaitUntilNodegroupActiveWithContext(arg0 context.Context, arg1 *eks.DescribeNodegroupInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilNodegroupActiveWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilNodegroupActiveWithContext indicates an expected call of WaitUntilNodegroupActiveWithContext
+func (mr *MockEKSAPIMockRecorder) WaitUntilNodegroupActiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilNodegroupActiveWithContext", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilNodegroupActiveWithContext), varargs...)
+}
+
+// WaitUntilNodegroupDeleted mocks base method
+func (m *MockEKSAPI) WaitUntilNodegroupDeleted(arg0 *eks.DescribeNodegroupInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilNodegroupDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilNodegroupDeleted indicates an expected call of WaitUntilNodegroupDeleted
+func (mr *MockEKSAPIMockRecorder) WaitUntilNodegroupDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilNodegroupDeleted", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilNodegroupDeleted), arg0)
+}
+
+// WaitUntilNodegroupDeletedWithContext mocks base method
+func (m *MockEKSAPI) WaitUntilNodegroupDeletedWithContext(arg0 context.Context, arg1 *eks.DescribeNodegroupInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilNodegroupDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilNodegroupDeletedWithContext indicates an expected call of WaitUntilNodegroupDeletedWithContext
+func (mr *MockEKSAPIMockRecorder) WaitUntilNodegroupDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilNodegroupDeletedWithContext", reflect.TypeOf((*MockEKSAPI)(nil).WaitUntilNodegroupDeletedWithContext), varargs...)
 }

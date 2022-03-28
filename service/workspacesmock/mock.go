@@ -485,6 +485,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceImageWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceImageWithContext), varargs...)
 }
 
+// DeregisterWorkspaceDirectory mocks base method
+func (m *MockWorkSpacesAPI) DeregisterWorkspaceDirectory(arg0 *workspaces.DeregisterWorkspaceDirectoryInput) (*workspaces.DeregisterWorkspaceDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterWorkspaceDirectory", arg0)
+	ret0, _ := ret[0].(*workspaces.DeregisterWorkspaceDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterWorkspaceDirectory indicates an expected call of DeregisterWorkspaceDirectory
+func (mr *MockWorkSpacesAPIMockRecorder) DeregisterWorkspaceDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterWorkspaceDirectory", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeregisterWorkspaceDirectory), arg0)
+}
+
+// DeregisterWorkspaceDirectoryRequest mocks base method
+func (m *MockWorkSpacesAPI) DeregisterWorkspaceDirectoryRequest(arg0 *workspaces.DeregisterWorkspaceDirectoryInput) (*request.Request, *workspaces.DeregisterWorkspaceDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterWorkspaceDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DeregisterWorkspaceDirectoryOutput)
+	return ret0, ret1
+}
+
+// DeregisterWorkspaceDirectoryRequest indicates an expected call of DeregisterWorkspaceDirectoryRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DeregisterWorkspaceDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterWorkspaceDirectoryRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeregisterWorkspaceDirectoryRequest), arg0)
+}
+
+// DeregisterWorkspaceDirectoryWithContext mocks base method
+func (m *MockWorkSpacesAPI) DeregisterWorkspaceDirectoryWithContext(arg0 context.Context, arg1 *workspaces.DeregisterWorkspaceDirectoryInput, arg2 ...request.Option) (*workspaces.DeregisterWorkspaceDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterWorkspaceDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DeregisterWorkspaceDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterWorkspaceDirectoryWithContext indicates an expected call of DeregisterWorkspaceDirectoryWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DeregisterWorkspaceDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterWorkspaceDirectoryWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeregisterWorkspaceDirectoryWithContext), varargs...)
+}
+
 // DescribeAccount mocks base method
 func (m *MockWorkSpacesAPI) DescribeAccount(arg0 *workspaces.DescribeAccountInput) (*workspaces.DescribeAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1384,6 +1434,156 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyClientPropertiesWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClientPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyClientPropertiesWithContext), varargs...)
 }
 
+// ModifySelfservicePermissions mocks base method
+func (m *MockWorkSpacesAPI) ModifySelfservicePermissions(arg0 *workspaces.ModifySelfservicePermissionsInput) (*workspaces.ModifySelfservicePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySelfservicePermissions", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifySelfservicePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySelfservicePermissions indicates an expected call of ModifySelfservicePermissions
+func (mr *MockWorkSpacesAPIMockRecorder) ModifySelfservicePermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySelfservicePermissions", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySelfservicePermissions), arg0)
+}
+
+// ModifySelfservicePermissionsRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifySelfservicePermissionsRequest(arg0 *workspaces.ModifySelfservicePermissionsInput) (*request.Request, *workspaces.ModifySelfservicePermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySelfservicePermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifySelfservicePermissionsOutput)
+	return ret0, ret1
+}
+
+// ModifySelfservicePermissionsRequest indicates an expected call of ModifySelfservicePermissionsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifySelfservicePermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySelfservicePermissionsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySelfservicePermissionsRequest), arg0)
+}
+
+// ModifySelfservicePermissionsWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifySelfservicePermissionsWithContext(arg0 context.Context, arg1 *workspaces.ModifySelfservicePermissionsInput, arg2 ...request.Option) (*workspaces.ModifySelfservicePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifySelfservicePermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifySelfservicePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySelfservicePermissionsWithContext indicates an expected call of ModifySelfservicePermissionsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifySelfservicePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySelfservicePermissionsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySelfservicePermissionsWithContext), varargs...)
+}
+
+// ModifyWorkspaceAccessProperties mocks base method
+func (m *MockWorkSpacesAPI) ModifyWorkspaceAccessProperties(arg0 *workspaces.ModifyWorkspaceAccessPropertiesInput) (*workspaces.ModifyWorkspaceAccessPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyWorkspaceAccessProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifyWorkspaceAccessPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyWorkspaceAccessProperties indicates an expected call of ModifyWorkspaceAccessProperties
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceAccessProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyWorkspaceAccessProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyWorkspaceAccessProperties), arg0)
+}
+
+// ModifyWorkspaceAccessPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifyWorkspaceAccessPropertiesRequest(arg0 *workspaces.ModifyWorkspaceAccessPropertiesInput) (*request.Request, *workspaces.ModifyWorkspaceAccessPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyWorkspaceAccessPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifyWorkspaceAccessPropertiesOutput)
+	return ret0, ret1
+}
+
+// ModifyWorkspaceAccessPropertiesRequest indicates an expected call of ModifyWorkspaceAccessPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceAccessPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyWorkspaceAccessPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyWorkspaceAccessPropertiesRequest), arg0)
+}
+
+// ModifyWorkspaceAccessPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifyWorkspaceAccessPropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifyWorkspaceAccessPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyWorkspaceAccessPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyWorkspaceAccessPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifyWorkspaceAccessPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyWorkspaceAccessPropertiesWithContext indicates an expected call of ModifyWorkspaceAccessPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceAccessPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyWorkspaceAccessPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyWorkspaceAccessPropertiesWithContext), varargs...)
+}
+
+// ModifyWorkspaceCreationProperties mocks base method
+func (m *MockWorkSpacesAPI) ModifyWorkspaceCreationProperties(arg0 *workspaces.ModifyWorkspaceCreationPropertiesInput) (*workspaces.ModifyWorkspaceCreationPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyWorkspaceCreationProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifyWorkspaceCreationPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyWorkspaceCreationProperties indicates an expected call of ModifyWorkspaceCreationProperties
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceCreationProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyWorkspaceCreationProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyWorkspaceCreationProperties), arg0)
+}
+
+// ModifyWorkspaceCreationPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifyWorkspaceCreationPropertiesRequest(arg0 *workspaces.ModifyWorkspaceCreationPropertiesInput) (*request.Request, *workspaces.ModifyWorkspaceCreationPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyWorkspaceCreationPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifyWorkspaceCreationPropertiesOutput)
+	return ret0, ret1
+}
+
+// ModifyWorkspaceCreationPropertiesRequest indicates an expected call of ModifyWorkspaceCreationPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceCreationPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyWorkspaceCreationPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyWorkspaceCreationPropertiesRequest), arg0)
+}
+
+// ModifyWorkspaceCreationPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifyWorkspaceCreationPropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifyWorkspaceCreationPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyWorkspaceCreationPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyWorkspaceCreationPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifyWorkspaceCreationPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyWorkspaceCreationPropertiesWithContext indicates an expected call of ModifyWorkspaceCreationPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyWorkspaceCreationPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyWorkspaceCreationPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyWorkspaceCreationPropertiesWithContext), varargs...)
+}
+
 // ModifyWorkspaceProperties mocks base method
 func (m *MockWorkSpacesAPI) ModifyWorkspaceProperties(arg0 *workspaces.ModifyWorkspacePropertiesInput) (*workspaces.ModifyWorkspacePropertiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1582,6 +1782,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) RebuildWorkspacesWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebuildWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RebuildWorkspacesWithContext), varargs...)
+}
+
+// RegisterWorkspaceDirectory mocks base method
+func (m *MockWorkSpacesAPI) RegisterWorkspaceDirectory(arg0 *workspaces.RegisterWorkspaceDirectoryInput) (*workspaces.RegisterWorkspaceDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterWorkspaceDirectory", arg0)
+	ret0, _ := ret[0].(*workspaces.RegisterWorkspaceDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterWorkspaceDirectory indicates an expected call of RegisterWorkspaceDirectory
+func (mr *MockWorkSpacesAPIMockRecorder) RegisterWorkspaceDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterWorkspaceDirectory", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RegisterWorkspaceDirectory), arg0)
+}
+
+// RegisterWorkspaceDirectoryRequest mocks base method
+func (m *MockWorkSpacesAPI) RegisterWorkspaceDirectoryRequest(arg0 *workspaces.RegisterWorkspaceDirectoryInput) (*request.Request, *workspaces.RegisterWorkspaceDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterWorkspaceDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.RegisterWorkspaceDirectoryOutput)
+	return ret0, ret1
+}
+
+// RegisterWorkspaceDirectoryRequest indicates an expected call of RegisterWorkspaceDirectoryRequest
+func (mr *MockWorkSpacesAPIMockRecorder) RegisterWorkspaceDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterWorkspaceDirectoryRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RegisterWorkspaceDirectoryRequest), arg0)
+}
+
+// RegisterWorkspaceDirectoryWithContext mocks base method
+func (m *MockWorkSpacesAPI) RegisterWorkspaceDirectoryWithContext(arg0 context.Context, arg1 *workspaces.RegisterWorkspaceDirectoryInput, arg2 ...request.Option) (*workspaces.RegisterWorkspaceDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterWorkspaceDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.RegisterWorkspaceDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterWorkspaceDirectoryWithContext indicates an expected call of RegisterWorkspaceDirectoryWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) RegisterWorkspaceDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterWorkspaceDirectoryWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).RegisterWorkspaceDirectoryWithContext), varargs...)
 }
 
 // RestoreWorkspace mocks base method

@@ -335,6 +335,56 @@ func (mr *MockGuardDutyAPIMockRecorder) CreateMembersWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreateMembersWithContext), varargs...)
 }
 
+// CreatePublishingDestination mocks base method
+func (m *MockGuardDutyAPI) CreatePublishingDestination(arg0 *guardduty.CreatePublishingDestinationInput) (*guardduty.CreatePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePublishingDestination", arg0)
+	ret0, _ := ret[0].(*guardduty.CreatePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePublishingDestination indicates an expected call of CreatePublishingDestination
+func (mr *MockGuardDutyAPIMockRecorder) CreatePublishingDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreatePublishingDestination), arg0)
+}
+
+// CreatePublishingDestinationRequest mocks base method
+func (m *MockGuardDutyAPI) CreatePublishingDestinationRequest(arg0 *guardduty.CreatePublishingDestinationInput) (*request.Request, *guardduty.CreatePublishingDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePublishingDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.CreatePublishingDestinationOutput)
+	return ret0, ret1
+}
+
+// CreatePublishingDestinationRequest indicates an expected call of CreatePublishingDestinationRequest
+func (mr *MockGuardDutyAPIMockRecorder) CreatePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreatePublishingDestinationRequest), arg0)
+}
+
+// CreatePublishingDestinationWithContext mocks base method
+func (m *MockGuardDutyAPI) CreatePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.CreatePublishingDestinationInput, arg2 ...request.Option) (*guardduty.CreatePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePublishingDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.CreatePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePublishingDestinationWithContext indicates an expected call of CreatePublishingDestinationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) CreatePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).CreatePublishingDestinationWithContext), varargs...)
+}
+
 // CreateSampleFindings mocks base method
 func (m *MockGuardDutyAPI) CreateSampleFindings(arg0 *guardduty.CreateSampleFindingsInput) (*guardduty.CreateSampleFindingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -735,6 +785,56 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteMembersWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteMembersWithContext), varargs...)
 }
 
+// DeletePublishingDestination mocks base method
+func (m *MockGuardDutyAPI) DeletePublishingDestination(arg0 *guardduty.DeletePublishingDestinationInput) (*guardduty.DeletePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePublishingDestination", arg0)
+	ret0, _ := ret[0].(*guardduty.DeletePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePublishingDestination indicates an expected call of DeletePublishingDestination
+func (mr *MockGuardDutyAPIMockRecorder) DeletePublishingDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeletePublishingDestination), arg0)
+}
+
+// DeletePublishingDestinationRequest mocks base method
+func (m *MockGuardDutyAPI) DeletePublishingDestinationRequest(arg0 *guardduty.DeletePublishingDestinationInput) (*request.Request, *guardduty.DeletePublishingDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePublishingDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.DeletePublishingDestinationOutput)
+	return ret0, ret1
+}
+
+// DeletePublishingDestinationRequest indicates an expected call of DeletePublishingDestinationRequest
+func (mr *MockGuardDutyAPIMockRecorder) DeletePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeletePublishingDestinationRequest), arg0)
+}
+
+// DeletePublishingDestinationWithContext mocks base method
+func (m *MockGuardDutyAPI) DeletePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.DeletePublishingDestinationInput, arg2 ...request.Option) (*guardduty.DeletePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePublishingDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.DeletePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePublishingDestinationWithContext indicates an expected call of DeletePublishingDestinationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DeletePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeletePublishingDestinationWithContext), varargs...)
+}
+
 // DeleteThreatIntelSet mocks base method
 func (m *MockGuardDutyAPI) DeleteThreatIntelSet(arg0 *guardduty.DeleteThreatIntelSetInput) (*guardduty.DeleteThreatIntelSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +883,56 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSetWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThreatIntelSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteThreatIntelSetWithContext), varargs...)
+}
+
+// DescribePublishingDestination mocks base method
+func (m *MockGuardDutyAPI) DescribePublishingDestination(arg0 *guardduty.DescribePublishingDestinationInput) (*guardduty.DescribePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePublishingDestination", arg0)
+	ret0, _ := ret[0].(*guardduty.DescribePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePublishingDestination indicates an expected call of DescribePublishingDestination
+func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestination), arg0)
+}
+
+// DescribePublishingDestinationRequest mocks base method
+func (m *MockGuardDutyAPI) DescribePublishingDestinationRequest(arg0 *guardduty.DescribePublishingDestinationInput) (*request.Request, *guardduty.DescribePublishingDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePublishingDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.DescribePublishingDestinationOutput)
+	return ret0, ret1
+}
+
+// DescribePublishingDestinationRequest indicates an expected call of DescribePublishingDestinationRequest
+func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestinationRequest), arg0)
+}
+
+// DescribePublishingDestinationWithContext mocks base method
+func (m *MockGuardDutyAPI) DescribePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.DescribePublishingDestinationInput, arg2 ...request.Option) (*guardduty.DescribePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePublishingDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.DescribePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePublishingDestinationWithContext indicates an expected call of DescribePublishingDestinationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestinationWithContext), varargs...)
 }
 
 // DisassociateFromMasterAccount mocks base method
@@ -1883,6 +2033,89 @@ func (mr *MockGuardDutyAPIMockRecorder) ListMembersWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembersWithContext), varargs...)
 }
 
+// ListPublishingDestinations mocks base method
+func (m *MockGuardDutyAPI) ListPublishingDestinations(arg0 *guardduty.ListPublishingDestinationsInput) (*guardduty.ListPublishingDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublishingDestinations", arg0)
+	ret0, _ := ret[0].(*guardduty.ListPublishingDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPublishingDestinations indicates an expected call of ListPublishingDestinations
+func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinations", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinations), arg0)
+}
+
+// ListPublishingDestinationsPages mocks base method
+func (m *MockGuardDutyAPI) ListPublishingDestinationsPages(arg0 *guardduty.ListPublishingDestinationsInput, arg1 func(*guardduty.ListPublishingDestinationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublishingDestinationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPublishingDestinationsPages indicates an expected call of ListPublishingDestinationsPages
+func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsPages), arg0, arg1)
+}
+
+// ListPublishingDestinationsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListPublishingDestinationsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListPublishingDestinationsInput, arg2 func(*guardduty.ListPublishingDestinationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPublishingDestinationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPublishingDestinationsPagesWithContext indicates an expected call of ListPublishingDestinationsPagesWithContext
+func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsPagesWithContext), varargs...)
+}
+
+// ListPublishingDestinationsRequest mocks base method
+func (m *MockGuardDutyAPI) ListPublishingDestinationsRequest(arg0 *guardduty.ListPublishingDestinationsInput) (*request.Request, *guardduty.ListPublishingDestinationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublishingDestinationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.ListPublishingDestinationsOutput)
+	return ret0, ret1
+}
+
+// ListPublishingDestinationsRequest indicates an expected call of ListPublishingDestinationsRequest
+func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsRequest), arg0)
+}
+
+// ListPublishingDestinationsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListPublishingDestinationsWithContext(arg0 context.Context, arg1 *guardduty.ListPublishingDestinationsInput, arg2 ...request.Option) (*guardduty.ListPublishingDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPublishingDestinationsWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.ListPublishingDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPublishingDestinationsWithContext indicates an expected call of ListPublishingDestinationsWithContext
+func (mr *MockGuardDutyAPIMockRecorder) ListPublishingDestinationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublishingDestinationsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListPublishingDestinationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockGuardDutyAPI) ListTagsForResource(arg0 *guardduty.ListTagsForResourceInput) (*guardduty.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -2464,6 +2697,56 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSetWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateIPSetWithContext), varargs...)
+}
+
+// UpdatePublishingDestination mocks base method
+func (m *MockGuardDutyAPI) UpdatePublishingDestination(arg0 *guardduty.UpdatePublishingDestinationInput) (*guardduty.UpdatePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePublishingDestination", arg0)
+	ret0, _ := ret[0].(*guardduty.UpdatePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePublishingDestination indicates an expected call of UpdatePublishingDestination
+func (mr *MockGuardDutyAPIMockRecorder) UpdatePublishingDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublishingDestination", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdatePublishingDestination), arg0)
+}
+
+// UpdatePublishingDestinationRequest mocks base method
+func (m *MockGuardDutyAPI) UpdatePublishingDestinationRequest(arg0 *guardduty.UpdatePublishingDestinationInput) (*request.Request, *guardduty.UpdatePublishingDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePublishingDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.UpdatePublishingDestinationOutput)
+	return ret0, ret1
+}
+
+// UpdatePublishingDestinationRequest indicates an expected call of UpdatePublishingDestinationRequest
+func (mr *MockGuardDutyAPIMockRecorder) UpdatePublishingDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublishingDestinationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdatePublishingDestinationRequest), arg0)
+}
+
+// UpdatePublishingDestinationWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdatePublishingDestinationWithContext(arg0 context.Context, arg1 *guardduty.UpdatePublishingDestinationInput, arg2 ...request.Option) (*guardduty.UpdatePublishingDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePublishingDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.UpdatePublishingDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePublishingDestinationWithContext indicates an expected call of UpdatePublishingDestinationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) UpdatePublishingDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdatePublishingDestinationWithContext), varargs...)
 }
 
 // UpdateThreatIntelSet mocks base method
