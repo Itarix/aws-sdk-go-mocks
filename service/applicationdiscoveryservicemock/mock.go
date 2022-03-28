@@ -85,6 +85,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) AssociateConfiguration
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConfigurationItemsToApplicationWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).AssociateConfigurationItemsToApplicationWithContext), varargs...)
 }
 
+// BatchDeleteImportData mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteImportData(arg0 *applicationdiscoveryservice.BatchDeleteImportDataInput) (*applicationdiscoveryservice.BatchDeleteImportDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteImportData", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.BatchDeleteImportDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteImportData indicates an expected call of BatchDeleteImportData
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteImportData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteImportData", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).BatchDeleteImportData), arg0)
+}
+
+// BatchDeleteImportDataRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteImportDataRequest(arg0 *applicationdiscoveryservice.BatchDeleteImportDataInput) (*request.Request, *applicationdiscoveryservice.BatchDeleteImportDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteImportDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.BatchDeleteImportDataOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteImportDataRequest indicates an expected call of BatchDeleteImportDataRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteImportDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteImportDataRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).BatchDeleteImportDataRequest), arg0)
+}
+
+// BatchDeleteImportDataWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteImportDataWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.BatchDeleteImportDataInput, arg2 ...request.Option) (*applicationdiscoveryservice.BatchDeleteImportDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteImportDataWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.BatchDeleteImportDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteImportDataWithContext indicates an expected call of BatchDeleteImportDataWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteImportDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteImportDataWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).BatchDeleteImportDataWithContext), varargs...)
+}
+
 // CreateApplication mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) CreateApplication(arg0 *applicationdiscoveryservice.CreateApplicationInput) (*applicationdiscoveryservice.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
@@ -568,6 +618,89 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportTasksWit
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportTasksWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportTasksWithContext), varargs...)
 }
 
+// DescribeImportTasks mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasks(arg0 *applicationdiscoveryservice.DescribeImportTasksInput) (*applicationdiscoveryservice.DescribeImportTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeImportTasks", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.DescribeImportTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeImportTasks indicates an expected call of DescribeImportTasks
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImportTasks", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeImportTasks), arg0)
+}
+
+// DescribeImportTasksPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksPages(arg0 *applicationdiscoveryservice.DescribeImportTasksInput, arg1 func(*applicationdiscoveryservice.DescribeImportTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeImportTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeImportTasksPages indicates an expected call of DescribeImportTasksPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImportTasksPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeImportTasksPages), arg0, arg1)
+}
+
+// DescribeImportTasksPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksPagesWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeImportTasksInput, arg2 func(*applicationdiscoveryservice.DescribeImportTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeImportTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeImportTasksPagesWithContext indicates an expected call of DescribeImportTasksPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImportTasksPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeImportTasksPagesWithContext), varargs...)
+}
+
+// DescribeImportTasksRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksRequest(arg0 *applicationdiscoveryservice.DescribeImportTasksInput) (*request.Request, *applicationdiscoveryservice.DescribeImportTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeImportTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.DescribeImportTasksOutput)
+	return ret0, ret1
+}
+
+// DescribeImportTasksRequest indicates an expected call of DescribeImportTasksRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImportTasksRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeImportTasksRequest), arg0)
+}
+
+// DescribeImportTasksWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeImportTasksWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.DescribeImportTasksInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeImportTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeImportTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.DescribeImportTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeImportTasksWithContext indicates an expected call of DescribeImportTasksWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeImportTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImportTasksWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeImportTasksWithContext), varargs...)
+}
+
 // DescribeTags mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) DescribeTags(arg0 *applicationdiscoveryservice.DescribeTagsInput) (*applicationdiscoveryservice.DescribeTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1016,6 +1149,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartExportTaskWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportTaskWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartExportTaskWithContext), varargs...)
+}
+
+// StartImportTask mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartImportTask(arg0 *applicationdiscoveryservice.StartImportTaskInput) (*applicationdiscoveryservice.StartImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartImportTask", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StartImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartImportTask indicates an expected call of StartImportTask
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportTask", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartImportTask), arg0)
+}
+
+// StartImportTaskRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartImportTaskRequest(arg0 *applicationdiscoveryservice.StartImportTaskInput) (*request.Request, *applicationdiscoveryservice.StartImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.StartImportTaskOutput)
+	return ret0, ret1
+}
+
+// StartImportTaskRequest indicates an expected call of StartImportTaskRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportTaskRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartImportTaskRequest), arg0)
+}
+
+// StartImportTaskWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartImportTaskWithContext(arg0 aws.Context, arg1 *applicationdiscoveryservice.StartImportTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StartImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartImportTaskWithContext indicates an expected call of StartImportTaskWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportTaskWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartImportTaskWithContext), varargs...)
 }
 
 // StopContinuousExport mocks base method
