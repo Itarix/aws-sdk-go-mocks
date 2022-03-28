@@ -5145,6 +5145,89 @@ func (mr *MockGlueAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{}, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListJobsWithContext), varargs...)
 }
 
+// ListMLTransforms mocks base method
+func (m *MockGlueAPI) ListMLTransforms(arg0 *glue.ListMLTransformsInput) (*glue.ListMLTransformsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMLTransforms", arg0)
+	ret0, _ := ret[0].(*glue.ListMLTransformsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMLTransforms indicates an expected call of ListMLTransforms
+func (mr *MockGlueAPIMockRecorder) ListMLTransforms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMLTransforms", reflect.TypeOf((*MockGlueAPI)(nil).ListMLTransforms), arg0)
+}
+
+// ListMLTransformsPages mocks base method
+func (m *MockGlueAPI) ListMLTransformsPages(arg0 *glue.ListMLTransformsInput, arg1 func(*glue.ListMLTransformsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMLTransformsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMLTransformsPages indicates an expected call of ListMLTransformsPages
+func (mr *MockGlueAPIMockRecorder) ListMLTransformsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMLTransformsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListMLTransformsPages), arg0, arg1)
+}
+
+// ListMLTransformsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListMLTransformsPagesWithContext(arg0 context.Context, arg1 *glue.ListMLTransformsInput, arg2 func(*glue.ListMLTransformsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMLTransformsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMLTransformsPagesWithContext indicates an expected call of ListMLTransformsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListMLTransformsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMLTransformsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListMLTransformsPagesWithContext), varargs...)
+}
+
+// ListMLTransformsRequest mocks base method
+func (m *MockGlueAPI) ListMLTransformsRequest(arg0 *glue.ListMLTransformsInput) (*request.Request, *glue.ListMLTransformsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMLTransformsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListMLTransformsOutput)
+	return ret0, ret1
+}
+
+// ListMLTransformsRequest indicates an expected call of ListMLTransformsRequest
+func (mr *MockGlueAPIMockRecorder) ListMLTransformsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMLTransformsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListMLTransformsRequest), arg0)
+}
+
+// ListMLTransformsWithContext mocks base method
+func (m *MockGlueAPI) ListMLTransformsWithContext(arg0 context.Context, arg1 *glue.ListMLTransformsInput, arg2 ...request.Option) (*glue.ListMLTransformsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMLTransformsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListMLTransformsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMLTransformsWithContext indicates an expected call of ListMLTransformsWithContext
+func (mr *MockGlueAPIMockRecorder) ListMLTransformsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMLTransformsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListMLTransformsWithContext), varargs...)
+}
+
 // ListTriggers mocks base method
 func (m *MockGlueAPI) ListTriggers(arg0 *glue.ListTriggersInput) (*glue.ListTriggersOutput, error) {
 	m.ctrl.T.Helper()

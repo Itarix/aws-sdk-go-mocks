@@ -2799,6 +2799,89 @@ func (mr *MockQuickSightAPIMockRecorder) RegisterUserWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterUserWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).RegisterUserWithContext), varargs...)
 }
 
+// SearchDashboards mocks base method
+func (m *MockQuickSightAPI) SearchDashboards(arg0 *quicksight.SearchDashboardsInput) (*quicksight.SearchDashboardsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDashboards", arg0)
+	ret0, _ := ret[0].(*quicksight.SearchDashboardsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchDashboards indicates an expected call of SearchDashboards
+func (mr *MockQuickSightAPIMockRecorder) SearchDashboards(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDashboards", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDashboards), arg0)
+}
+
+// SearchDashboardsPages mocks base method
+func (m *MockQuickSightAPI) SearchDashboardsPages(arg0 *quicksight.SearchDashboardsInput, arg1 func(*quicksight.SearchDashboardsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDashboardsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDashboardsPages indicates an expected call of SearchDashboardsPages
+func (mr *MockQuickSightAPIMockRecorder) SearchDashboardsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDashboardsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDashboardsPages), arg0, arg1)
+}
+
+// SearchDashboardsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchDashboardsPagesWithContext(arg0 context.Context, arg1 *quicksight.SearchDashboardsInput, arg2 func(*quicksight.SearchDashboardsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDashboardsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDashboardsPagesWithContext indicates an expected call of SearchDashboardsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchDashboardsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDashboardsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDashboardsPagesWithContext), varargs...)
+}
+
+// SearchDashboardsRequest mocks base method
+func (m *MockQuickSightAPI) SearchDashboardsRequest(arg0 *quicksight.SearchDashboardsInput) (*request.Request, *quicksight.SearchDashboardsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDashboardsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.SearchDashboardsOutput)
+	return ret0, ret1
+}
+
+// SearchDashboardsRequest indicates an expected call of SearchDashboardsRequest
+func (mr *MockQuickSightAPIMockRecorder) SearchDashboardsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDashboardsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDashboardsRequest), arg0)
+}
+
+// SearchDashboardsWithContext mocks base method
+func (m *MockQuickSightAPI) SearchDashboardsWithContext(arg0 context.Context, arg1 *quicksight.SearchDashboardsInput, arg2 ...request.Option) (*quicksight.SearchDashboardsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDashboardsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.SearchDashboardsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchDashboardsWithContext indicates an expected call of SearchDashboardsWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchDashboardsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDashboardsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDashboardsWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockQuickSightAPI) TagResource(arg0 *quicksight.TagResourceInput) (*quicksight.TagResourceOutput, error) {
 	m.ctrl.T.Helper()

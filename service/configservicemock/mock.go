@@ -3684,6 +3684,89 @@ func (mr *MockConfigServiceAPIMockRecorder) PutRetentionConfigurationWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRetentionConfigurationWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRetentionConfigurationWithContext), varargs...)
 }
 
+// SelectAggregateResourceConfig mocks base method
+func (m *MockConfigServiceAPI) SelectAggregateResourceConfig(arg0 *configservice.SelectAggregateResourceConfigInput) (*configservice.SelectAggregateResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SelectAggregateResourceConfig", arg0)
+	ret0, _ := ret[0].(*configservice.SelectAggregateResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SelectAggregateResourceConfig indicates an expected call of SelectAggregateResourceConfig
+func (mr *MockConfigServiceAPIMockRecorder) SelectAggregateResourceConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SelectAggregateResourceConfig", reflect.TypeOf((*MockConfigServiceAPI)(nil).SelectAggregateResourceConfig), arg0)
+}
+
+// SelectAggregateResourceConfigPages mocks base method
+func (m *MockConfigServiceAPI) SelectAggregateResourceConfigPages(arg0 *configservice.SelectAggregateResourceConfigInput, arg1 func(*configservice.SelectAggregateResourceConfigOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SelectAggregateResourceConfigPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SelectAggregateResourceConfigPages indicates an expected call of SelectAggregateResourceConfigPages
+func (mr *MockConfigServiceAPIMockRecorder) SelectAggregateResourceConfigPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SelectAggregateResourceConfigPages", reflect.TypeOf((*MockConfigServiceAPI)(nil).SelectAggregateResourceConfigPages), arg0, arg1)
+}
+
+// SelectAggregateResourceConfigPagesWithContext mocks base method
+func (m *MockConfigServiceAPI) SelectAggregateResourceConfigPagesWithContext(arg0 context.Context, arg1 *configservice.SelectAggregateResourceConfigInput, arg2 func(*configservice.SelectAggregateResourceConfigOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SelectAggregateResourceConfigPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SelectAggregateResourceConfigPagesWithContext indicates an expected call of SelectAggregateResourceConfigPagesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) SelectAggregateResourceConfigPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SelectAggregateResourceConfigPagesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).SelectAggregateResourceConfigPagesWithContext), varargs...)
+}
+
+// SelectAggregateResourceConfigRequest mocks base method
+func (m *MockConfigServiceAPI) SelectAggregateResourceConfigRequest(arg0 *configservice.SelectAggregateResourceConfigInput) (*request.Request, *configservice.SelectAggregateResourceConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SelectAggregateResourceConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.SelectAggregateResourceConfigOutput)
+	return ret0, ret1
+}
+
+// SelectAggregateResourceConfigRequest indicates an expected call of SelectAggregateResourceConfigRequest
+func (mr *MockConfigServiceAPIMockRecorder) SelectAggregateResourceConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SelectAggregateResourceConfigRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).SelectAggregateResourceConfigRequest), arg0)
+}
+
+// SelectAggregateResourceConfigWithContext mocks base method
+func (m *MockConfigServiceAPI) SelectAggregateResourceConfigWithContext(arg0 context.Context, arg1 *configservice.SelectAggregateResourceConfigInput, arg2 ...request.Option) (*configservice.SelectAggregateResourceConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SelectAggregateResourceConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.SelectAggregateResourceConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SelectAggregateResourceConfigWithContext indicates an expected call of SelectAggregateResourceConfigWithContext
+func (mr *MockConfigServiceAPIMockRecorder) SelectAggregateResourceConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SelectAggregateResourceConfigWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).SelectAggregateResourceConfigWithContext), varargs...)
+}
+
 // SelectResourceConfig mocks base method
 func (m *MockConfigServiceAPI) SelectResourceConfig(arg0 *configservice.SelectResourceConfigInput) (*configservice.SelectResourceConfigOutput, error) {
 	m.ctrl.T.Helper()
