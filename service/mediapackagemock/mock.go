@@ -85,6 +85,56 @@ func (mr *MockMediaPackageAPIMockRecorder) CreateChannelWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).CreateChannelWithContext), varargs...)
 }
 
+// CreateHarvestJob mocks base method
+func (m *MockMediaPackageAPI) CreateHarvestJob(arg0 *mediapackage.CreateHarvestJobInput) (*mediapackage.CreateHarvestJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateHarvestJob", arg0)
+	ret0, _ := ret[0].(*mediapackage.CreateHarvestJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateHarvestJob indicates an expected call of CreateHarvestJob
+func (mr *MockMediaPackageAPIMockRecorder) CreateHarvestJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHarvestJob", reflect.TypeOf((*MockMediaPackageAPI)(nil).CreateHarvestJob), arg0)
+}
+
+// CreateHarvestJobRequest mocks base method
+func (m *MockMediaPackageAPI) CreateHarvestJobRequest(arg0 *mediapackage.CreateHarvestJobInput) (*request.Request, *mediapackage.CreateHarvestJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateHarvestJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediapackage.CreateHarvestJobOutput)
+	return ret0, ret1
+}
+
+// CreateHarvestJobRequest indicates an expected call of CreateHarvestJobRequest
+func (mr *MockMediaPackageAPIMockRecorder) CreateHarvestJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHarvestJobRequest", reflect.TypeOf((*MockMediaPackageAPI)(nil).CreateHarvestJobRequest), arg0)
+}
+
+// CreateHarvestJobWithContext mocks base method
+func (m *MockMediaPackageAPI) CreateHarvestJobWithContext(arg0 context.Context, arg1 *mediapackage.CreateHarvestJobInput, arg2 ...request.Option) (*mediapackage.CreateHarvestJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateHarvestJobWithContext", varargs...)
+	ret0, _ := ret[0].(*mediapackage.CreateHarvestJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateHarvestJobWithContext indicates an expected call of CreateHarvestJobWithContext
+func (mr *MockMediaPackageAPIMockRecorder) CreateHarvestJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHarvestJobWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).CreateHarvestJobWithContext), varargs...)
+}
+
 // CreateOriginEndpoint mocks base method
 func (m *MockMediaPackageAPI) CreateOriginEndpoint(arg0 *mediapackage.CreateOriginEndpointInput) (*mediapackage.CreateOriginEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -285,6 +335,56 @@ func (mr *MockMediaPackageAPIMockRecorder) DescribeChannelWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).DescribeChannelWithContext), varargs...)
 }
 
+// DescribeHarvestJob mocks base method
+func (m *MockMediaPackageAPI) DescribeHarvestJob(arg0 *mediapackage.DescribeHarvestJobInput) (*mediapackage.DescribeHarvestJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHarvestJob", arg0)
+	ret0, _ := ret[0].(*mediapackage.DescribeHarvestJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHarvestJob indicates an expected call of DescribeHarvestJob
+func (mr *MockMediaPackageAPIMockRecorder) DescribeHarvestJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHarvestJob", reflect.TypeOf((*MockMediaPackageAPI)(nil).DescribeHarvestJob), arg0)
+}
+
+// DescribeHarvestJobRequest mocks base method
+func (m *MockMediaPackageAPI) DescribeHarvestJobRequest(arg0 *mediapackage.DescribeHarvestJobInput) (*request.Request, *mediapackage.DescribeHarvestJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHarvestJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediapackage.DescribeHarvestJobOutput)
+	return ret0, ret1
+}
+
+// DescribeHarvestJobRequest indicates an expected call of DescribeHarvestJobRequest
+func (mr *MockMediaPackageAPIMockRecorder) DescribeHarvestJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHarvestJobRequest", reflect.TypeOf((*MockMediaPackageAPI)(nil).DescribeHarvestJobRequest), arg0)
+}
+
+// DescribeHarvestJobWithContext mocks base method
+func (m *MockMediaPackageAPI) DescribeHarvestJobWithContext(arg0 context.Context, arg1 *mediapackage.DescribeHarvestJobInput, arg2 ...request.Option) (*mediapackage.DescribeHarvestJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeHarvestJobWithContext", varargs...)
+	ret0, _ := ret[0].(*mediapackage.DescribeHarvestJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHarvestJobWithContext indicates an expected call of DescribeHarvestJobWithContext
+func (mr *MockMediaPackageAPIMockRecorder) DescribeHarvestJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHarvestJobWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).DescribeHarvestJobWithContext), varargs...)
+}
+
 // DescribeOriginEndpoint mocks base method
 func (m *MockMediaPackageAPI) DescribeOriginEndpoint(arg0 *mediapackage.DescribeOriginEndpointInput) (*mediapackage.DescribeOriginEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -416,6 +516,89 @@ func (mr *MockMediaPackageAPIMockRecorder) ListChannelsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).ListChannelsWithContext), varargs...)
+}
+
+// ListHarvestJobs mocks base method
+func (m *MockMediaPackageAPI) ListHarvestJobs(arg0 *mediapackage.ListHarvestJobsInput) (*mediapackage.ListHarvestJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListHarvestJobs", arg0)
+	ret0, _ := ret[0].(*mediapackage.ListHarvestJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListHarvestJobs indicates an expected call of ListHarvestJobs
+func (mr *MockMediaPackageAPIMockRecorder) ListHarvestJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHarvestJobs", reflect.TypeOf((*MockMediaPackageAPI)(nil).ListHarvestJobs), arg0)
+}
+
+// ListHarvestJobsPages mocks base method
+func (m *MockMediaPackageAPI) ListHarvestJobsPages(arg0 *mediapackage.ListHarvestJobsInput, arg1 func(*mediapackage.ListHarvestJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListHarvestJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListHarvestJobsPages indicates an expected call of ListHarvestJobsPages
+func (mr *MockMediaPackageAPIMockRecorder) ListHarvestJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHarvestJobsPages", reflect.TypeOf((*MockMediaPackageAPI)(nil).ListHarvestJobsPages), arg0, arg1)
+}
+
+// ListHarvestJobsPagesWithContext mocks base method
+func (m *MockMediaPackageAPI) ListHarvestJobsPagesWithContext(arg0 context.Context, arg1 *mediapackage.ListHarvestJobsInput, arg2 func(*mediapackage.ListHarvestJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListHarvestJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListHarvestJobsPagesWithContext indicates an expected call of ListHarvestJobsPagesWithContext
+func (mr *MockMediaPackageAPIMockRecorder) ListHarvestJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHarvestJobsPagesWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).ListHarvestJobsPagesWithContext), varargs...)
+}
+
+// ListHarvestJobsRequest mocks base method
+func (m *MockMediaPackageAPI) ListHarvestJobsRequest(arg0 *mediapackage.ListHarvestJobsInput) (*request.Request, *mediapackage.ListHarvestJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListHarvestJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediapackage.ListHarvestJobsOutput)
+	return ret0, ret1
+}
+
+// ListHarvestJobsRequest indicates an expected call of ListHarvestJobsRequest
+func (mr *MockMediaPackageAPIMockRecorder) ListHarvestJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHarvestJobsRequest", reflect.TypeOf((*MockMediaPackageAPI)(nil).ListHarvestJobsRequest), arg0)
+}
+
+// ListHarvestJobsWithContext mocks base method
+func (m *MockMediaPackageAPI) ListHarvestJobsWithContext(arg0 context.Context, arg1 *mediapackage.ListHarvestJobsInput, arg2 ...request.Option) (*mediapackage.ListHarvestJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListHarvestJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediapackage.ListHarvestJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListHarvestJobsWithContext indicates an expected call of ListHarvestJobsWithContext
+func (mr *MockMediaPackageAPIMockRecorder) ListHarvestJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHarvestJobsWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).ListHarvestJobsWithContext), varargs...)
 }
 
 // ListOriginEndpoints mocks base method

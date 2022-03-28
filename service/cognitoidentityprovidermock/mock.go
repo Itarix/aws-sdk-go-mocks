@@ -4114,6 +4114,39 @@ func (mr *MockCognitoIdentityProviderAPIMockRecorder) ListUsersInGroupWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersInGroupWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).ListUsersInGroupWithContext), varargs...)
 }
 
+// ListUsersPages mocks base method
+func (m *MockCognitoIdentityProviderAPI) ListUsersPages(arg0 *cognitoidentityprovider.ListUsersInput, arg1 func(*cognitoidentityprovider.ListUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUsersPages indicates an expected call of ListUsersPages
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) ListUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersPages", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).ListUsersPages), arg0, arg1)
+}
+
+// ListUsersPagesWithContext mocks base method
+func (m *MockCognitoIdentityProviderAPI) ListUsersPagesWithContext(arg0 context.Context, arg1 *cognitoidentityprovider.ListUsersInput, arg2 func(*cognitoidentityprovider.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUsersPagesWithContext indicates an expected call of ListUsersPagesWithContext
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) ListUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersPagesWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).ListUsersPagesWithContext), varargs...)
+}
+
 // ListUsersRequest mocks base method
 func (m *MockCognitoIdentityProviderAPI) ListUsersRequest(arg0 *cognitoidentityprovider.ListUsersInput) (*request.Request, *cognitoidentityprovider.ListUsersOutput) {
 	m.ctrl.T.Helper()
