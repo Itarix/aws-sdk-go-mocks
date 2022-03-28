@@ -35,6 +35,56 @@ func (m *MockPersonalizeAPI) EXPECT() *MockPersonalizeAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateBatchInferenceJob mocks base method
+func (m *MockPersonalizeAPI) CreateBatchInferenceJob(arg0 *personalize.CreateBatchInferenceJobInput) (*personalize.CreateBatchInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBatchInferenceJob", arg0)
+	ret0, _ := ret[0].(*personalize.CreateBatchInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBatchInferenceJob indicates an expected call of CreateBatchInferenceJob
+func (mr *MockPersonalizeAPIMockRecorder) CreateBatchInferenceJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchInferenceJob", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchInferenceJob), arg0)
+}
+
+// CreateBatchInferenceJobRequest mocks base method
+func (m *MockPersonalizeAPI) CreateBatchInferenceJobRequest(arg0 *personalize.CreateBatchInferenceJobInput) (*request.Request, *personalize.CreateBatchInferenceJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBatchInferenceJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.CreateBatchInferenceJobOutput)
+	return ret0, ret1
+}
+
+// CreateBatchInferenceJobRequest indicates an expected call of CreateBatchInferenceJobRequest
+func (mr *MockPersonalizeAPIMockRecorder) CreateBatchInferenceJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchInferenceJobRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchInferenceJobRequest), arg0)
+}
+
+// CreateBatchInferenceJobWithContext mocks base method
+func (m *MockPersonalizeAPI) CreateBatchInferenceJobWithContext(arg0 context.Context, arg1 *personalize.CreateBatchInferenceJobInput, arg2 ...request.Option) (*personalize.CreateBatchInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBatchInferenceJobWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.CreateBatchInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBatchInferenceJobWithContext indicates an expected call of CreateBatchInferenceJobWithContext
+func (mr *MockPersonalizeAPIMockRecorder) CreateBatchInferenceJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchInferenceJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchInferenceJobWithContext), varargs...)
+}
+
 // CreateCampaign mocks base method
 func (m *MockPersonalizeAPI) CreateCampaign(arg0 *personalize.CreateCampaignInput) (*personalize.CreateCampaignOutput, error) {
 	m.ctrl.T.Helper()
@@ -785,6 +835,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DescribeAlgorithmWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAlgorithmWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeAlgorithmWithContext), varargs...)
 }
 
+// DescribeBatchInferenceJob mocks base method
+func (m *MockPersonalizeAPI) DescribeBatchInferenceJob(arg0 *personalize.DescribeBatchInferenceJobInput) (*personalize.DescribeBatchInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchInferenceJob", arg0)
+	ret0, _ := ret[0].(*personalize.DescribeBatchInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchInferenceJob indicates an expected call of DescribeBatchInferenceJob
+func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchInferenceJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchInferenceJob", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchInferenceJob), arg0)
+}
+
+// DescribeBatchInferenceJobRequest mocks base method
+func (m *MockPersonalizeAPI) DescribeBatchInferenceJobRequest(arg0 *personalize.DescribeBatchInferenceJobInput) (*request.Request, *personalize.DescribeBatchInferenceJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchInferenceJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DescribeBatchInferenceJobOutput)
+	return ret0, ret1
+}
+
+// DescribeBatchInferenceJobRequest indicates an expected call of DescribeBatchInferenceJobRequest
+func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchInferenceJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchInferenceJobRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchInferenceJobRequest), arg0)
+}
+
+// DescribeBatchInferenceJobWithContext mocks base method
+func (m *MockPersonalizeAPI) DescribeBatchInferenceJobWithContext(arg0 context.Context, arg1 *personalize.DescribeBatchInferenceJobInput, arg2 ...request.Option) (*personalize.DescribeBatchInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBatchInferenceJobWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DescribeBatchInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchInferenceJobWithContext indicates an expected call of DescribeBatchInferenceJobWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchInferenceJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchInferenceJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchInferenceJobWithContext), varargs...)
+}
+
 // DescribeCampaign mocks base method
 func (m *MockPersonalizeAPI) DescribeCampaign(arg0 *personalize.DescribeCampaignInput) (*personalize.DescribeCampaignOutput, error) {
 	m.ctrl.T.Helper()
@@ -1333,6 +1433,89 @@ func (mr *MockPersonalizeAPIMockRecorder) GetSolutionMetricsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSolutionMetricsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).GetSolutionMetricsWithContext), varargs...)
+}
+
+// ListBatchInferenceJobs mocks base method
+func (m *MockPersonalizeAPI) ListBatchInferenceJobs(arg0 *personalize.ListBatchInferenceJobsInput) (*personalize.ListBatchInferenceJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchInferenceJobs", arg0)
+	ret0, _ := ret[0].(*personalize.ListBatchInferenceJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBatchInferenceJobs indicates an expected call of ListBatchInferenceJobs
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchInferenceJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchInferenceJobs", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchInferenceJobs), arg0)
+}
+
+// ListBatchInferenceJobsPages mocks base method
+func (m *MockPersonalizeAPI) ListBatchInferenceJobsPages(arg0 *personalize.ListBatchInferenceJobsInput, arg1 func(*personalize.ListBatchInferenceJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchInferenceJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBatchInferenceJobsPages indicates an expected call of ListBatchInferenceJobsPages
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchInferenceJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchInferenceJobsPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchInferenceJobsPages), arg0, arg1)
+}
+
+// ListBatchInferenceJobsPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListBatchInferenceJobsPagesWithContext(arg0 context.Context, arg1 *personalize.ListBatchInferenceJobsInput, arg2 func(*personalize.ListBatchInferenceJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBatchInferenceJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBatchInferenceJobsPagesWithContext indicates an expected call of ListBatchInferenceJobsPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchInferenceJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchInferenceJobsPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchInferenceJobsPagesWithContext), varargs...)
+}
+
+// ListBatchInferenceJobsRequest mocks base method
+func (m *MockPersonalizeAPI) ListBatchInferenceJobsRequest(arg0 *personalize.ListBatchInferenceJobsInput) (*request.Request, *personalize.ListBatchInferenceJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchInferenceJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.ListBatchInferenceJobsOutput)
+	return ret0, ret1
+}
+
+// ListBatchInferenceJobsRequest indicates an expected call of ListBatchInferenceJobsRequest
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchInferenceJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchInferenceJobsRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchInferenceJobsRequest), arg0)
+}
+
+// ListBatchInferenceJobsWithContext mocks base method
+func (m *MockPersonalizeAPI) ListBatchInferenceJobsWithContext(arg0 context.Context, arg1 *personalize.ListBatchInferenceJobsInput, arg2 ...request.Option) (*personalize.ListBatchInferenceJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBatchInferenceJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.ListBatchInferenceJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBatchInferenceJobsWithContext indicates an expected call of ListBatchInferenceJobsWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchInferenceJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchInferenceJobsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchInferenceJobsWithContext), varargs...)
 }
 
 // ListCampaigns mocks base method
