@@ -1499,6 +1499,89 @@ func (mr *MockRekognitionAPIMockRecorder) GetPersonTrackingWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPersonTrackingWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetPersonTrackingWithContext), varargs...)
 }
 
+// GetTextDetection mocks base method
+func (m *MockRekognitionAPI) GetTextDetection(arg0 *rekognition.GetTextDetectionInput) (*rekognition.GetTextDetectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTextDetection", arg0)
+	ret0, _ := ret[0].(*rekognition.GetTextDetectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTextDetection indicates an expected call of GetTextDetection
+func (mr *MockRekognitionAPIMockRecorder) GetTextDetection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTextDetection", reflect.TypeOf((*MockRekognitionAPI)(nil).GetTextDetection), arg0)
+}
+
+// GetTextDetectionPages mocks base method
+func (m *MockRekognitionAPI) GetTextDetectionPages(arg0 *rekognition.GetTextDetectionInput, arg1 func(*rekognition.GetTextDetectionOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTextDetectionPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetTextDetectionPages indicates an expected call of GetTextDetectionPages
+func (mr *MockRekognitionAPIMockRecorder) GetTextDetectionPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTextDetectionPages", reflect.TypeOf((*MockRekognitionAPI)(nil).GetTextDetectionPages), arg0, arg1)
+}
+
+// GetTextDetectionPagesWithContext mocks base method
+func (m *MockRekognitionAPI) GetTextDetectionPagesWithContext(arg0 context.Context, arg1 *rekognition.GetTextDetectionInput, arg2 func(*rekognition.GetTextDetectionOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTextDetectionPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetTextDetectionPagesWithContext indicates an expected call of GetTextDetectionPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) GetTextDetectionPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTextDetectionPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetTextDetectionPagesWithContext), varargs...)
+}
+
+// GetTextDetectionRequest mocks base method
+func (m *MockRekognitionAPI) GetTextDetectionRequest(arg0 *rekognition.GetTextDetectionInput) (*request.Request, *rekognition.GetTextDetectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTextDetectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.GetTextDetectionOutput)
+	return ret0, ret1
+}
+
+// GetTextDetectionRequest indicates an expected call of GetTextDetectionRequest
+func (mr *MockRekognitionAPIMockRecorder) GetTextDetectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTextDetectionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).GetTextDetectionRequest), arg0)
+}
+
+// GetTextDetectionWithContext mocks base method
+func (m *MockRekognitionAPI) GetTextDetectionWithContext(arg0 context.Context, arg1 *rekognition.GetTextDetectionInput, arg2 ...request.Option) (*rekognition.GetTextDetectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTextDetectionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.GetTextDetectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTextDetectionWithContext indicates an expected call of GetTextDetectionWithContext
+func (mr *MockRekognitionAPIMockRecorder) GetTextDetectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTextDetectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetTextDetectionWithContext), varargs...)
+}
+
 // IndexFaces mocks base method
 func (m *MockRekognitionAPI) IndexFaces(arg0 *rekognition.IndexFacesInput) (*rekognition.IndexFacesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2346,6 +2429,56 @@ func (mr *MockRekognitionAPIMockRecorder) StartStreamProcessorWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartStreamProcessorWithContext), varargs...)
+}
+
+// StartTextDetection mocks base method
+func (m *MockRekognitionAPI) StartTextDetection(arg0 *rekognition.StartTextDetectionInput) (*rekognition.StartTextDetectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTextDetection", arg0)
+	ret0, _ := ret[0].(*rekognition.StartTextDetectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTextDetection indicates an expected call of StartTextDetection
+func (mr *MockRekognitionAPIMockRecorder) StartTextDetection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTextDetection", reflect.TypeOf((*MockRekognitionAPI)(nil).StartTextDetection), arg0)
+}
+
+// StartTextDetectionRequest mocks base method
+func (m *MockRekognitionAPI) StartTextDetectionRequest(arg0 *rekognition.StartTextDetectionInput) (*request.Request, *rekognition.StartTextDetectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTextDetectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.StartTextDetectionOutput)
+	return ret0, ret1
+}
+
+// StartTextDetectionRequest indicates an expected call of StartTextDetectionRequest
+func (mr *MockRekognitionAPIMockRecorder) StartTextDetectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTextDetectionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).StartTextDetectionRequest), arg0)
+}
+
+// StartTextDetectionWithContext mocks base method
+func (m *MockRekognitionAPI) StartTextDetectionWithContext(arg0 context.Context, arg1 *rekognition.StartTextDetectionInput, arg2 ...request.Option) (*rekognition.StartTextDetectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartTextDetectionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.StartTextDetectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTextDetectionWithContext indicates an expected call of StartTextDetectionWithContext
+func (mr *MockRekognitionAPIMockRecorder) StartTextDetectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTextDetectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartTextDetectionWithContext), varargs...)
 }
 
 // StopProjectVersion mocks base method
