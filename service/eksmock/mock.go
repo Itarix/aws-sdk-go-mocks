@@ -85,6 +85,56 @@ func (mr *MockEKSAPIMockRecorder) CreateClusterWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).CreateClusterWithContext), varargs...)
 }
 
+// CreateFargateProfile mocks base method
+func (m *MockEKSAPI) CreateFargateProfile(arg0 *eks.CreateFargateProfileInput) (*eks.CreateFargateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFargateProfile", arg0)
+	ret0, _ := ret[0].(*eks.CreateFargateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFargateProfile indicates an expected call of CreateFargateProfile
+func (mr *MockEKSAPIMockRecorder) CreateFargateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFargateProfile", reflect.TypeOf((*MockEKSAPI)(nil).CreateFargateProfile), arg0)
+}
+
+// CreateFargateProfileRequest mocks base method
+func (m *MockEKSAPI) CreateFargateProfileRequest(arg0 *eks.CreateFargateProfileInput) (*request.Request, *eks.CreateFargateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFargateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.CreateFargateProfileOutput)
+	return ret0, ret1
+}
+
+// CreateFargateProfileRequest indicates an expected call of CreateFargateProfileRequest
+func (mr *MockEKSAPIMockRecorder) CreateFargateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFargateProfileRequest", reflect.TypeOf((*MockEKSAPI)(nil).CreateFargateProfileRequest), arg0)
+}
+
+// CreateFargateProfileWithContext mocks base method
+func (m *MockEKSAPI) CreateFargateProfileWithContext(arg0 context.Context, arg1 *eks.CreateFargateProfileInput, arg2 ...request.Option) (*eks.CreateFargateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFargateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.CreateFargateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFargateProfileWithContext indicates an expected call of CreateFargateProfileWithContext
+func (mr *MockEKSAPIMockRecorder) CreateFargateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFargateProfileWithContext", reflect.TypeOf((*MockEKSAPI)(nil).CreateFargateProfileWithContext), varargs...)
+}
+
 // CreateNodegroup mocks base method
 func (m *MockEKSAPI) CreateNodegroup(arg0 *eks.CreateNodegroupInput) (*eks.CreateNodegroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -185,6 +235,56 @@ func (mr *MockEKSAPIMockRecorder) DeleteClusterWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DeleteClusterWithContext), varargs...)
 }
 
+// DeleteFargateProfile mocks base method
+func (m *MockEKSAPI) DeleteFargateProfile(arg0 *eks.DeleteFargateProfileInput) (*eks.DeleteFargateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFargateProfile", arg0)
+	ret0, _ := ret[0].(*eks.DeleteFargateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFargateProfile indicates an expected call of DeleteFargateProfile
+func (mr *MockEKSAPIMockRecorder) DeleteFargateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFargateProfile", reflect.TypeOf((*MockEKSAPI)(nil).DeleteFargateProfile), arg0)
+}
+
+// DeleteFargateProfileRequest mocks base method
+func (m *MockEKSAPI) DeleteFargateProfileRequest(arg0 *eks.DeleteFargateProfileInput) (*request.Request, *eks.DeleteFargateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFargateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.DeleteFargateProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteFargateProfileRequest indicates an expected call of DeleteFargateProfileRequest
+func (mr *MockEKSAPIMockRecorder) DeleteFargateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFargateProfileRequest", reflect.TypeOf((*MockEKSAPI)(nil).DeleteFargateProfileRequest), arg0)
+}
+
+// DeleteFargateProfileWithContext mocks base method
+func (m *MockEKSAPI) DeleteFargateProfileWithContext(arg0 context.Context, arg1 *eks.DeleteFargateProfileInput, arg2 ...request.Option) (*eks.DeleteFargateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFargateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.DeleteFargateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFargateProfileWithContext indicates an expected call of DeleteFargateProfileWithContext
+func (mr *MockEKSAPIMockRecorder) DeleteFargateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFargateProfileWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DeleteFargateProfileWithContext), varargs...)
+}
+
 // DeleteNodegroup mocks base method
 func (m *MockEKSAPI) DeleteNodegroup(arg0 *eks.DeleteNodegroupInput) (*eks.DeleteNodegroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +383,56 @@ func (mr *MockEKSAPIMockRecorder) DescribeClusterWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DescribeClusterWithContext), varargs...)
+}
+
+// DescribeFargateProfile mocks base method
+func (m *MockEKSAPI) DescribeFargateProfile(arg0 *eks.DescribeFargateProfileInput) (*eks.DescribeFargateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFargateProfile", arg0)
+	ret0, _ := ret[0].(*eks.DescribeFargateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFargateProfile indicates an expected call of DescribeFargateProfile
+func (mr *MockEKSAPIMockRecorder) DescribeFargateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFargateProfile", reflect.TypeOf((*MockEKSAPI)(nil).DescribeFargateProfile), arg0)
+}
+
+// DescribeFargateProfileRequest mocks base method
+func (m *MockEKSAPI) DescribeFargateProfileRequest(arg0 *eks.DescribeFargateProfileInput) (*request.Request, *eks.DescribeFargateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFargateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.DescribeFargateProfileOutput)
+	return ret0, ret1
+}
+
+// DescribeFargateProfileRequest indicates an expected call of DescribeFargateProfileRequest
+func (mr *MockEKSAPIMockRecorder) DescribeFargateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFargateProfileRequest", reflect.TypeOf((*MockEKSAPI)(nil).DescribeFargateProfileRequest), arg0)
+}
+
+// DescribeFargateProfileWithContext mocks base method
+func (m *MockEKSAPI) DescribeFargateProfileWithContext(arg0 context.Context, arg1 *eks.DescribeFargateProfileInput, arg2 ...request.Option) (*eks.DescribeFargateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFargateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.DescribeFargateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFargateProfileWithContext indicates an expected call of DescribeFargateProfileWithContext
+func (mr *MockEKSAPIMockRecorder) DescribeFargateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFargateProfileWithContext", reflect.TypeOf((*MockEKSAPI)(nil).DescribeFargateProfileWithContext), varargs...)
 }
 
 // DescribeNodegroup mocks base method
@@ -466,6 +616,89 @@ func (mr *MockEKSAPIMockRecorder) ListClustersWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListClustersWithContext), varargs...)
+}
+
+// ListFargateProfiles mocks base method
+func (m *MockEKSAPI) ListFargateProfiles(arg0 *eks.ListFargateProfilesInput) (*eks.ListFargateProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFargateProfiles", arg0)
+	ret0, _ := ret[0].(*eks.ListFargateProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFargateProfiles indicates an expected call of ListFargateProfiles
+func (mr *MockEKSAPIMockRecorder) ListFargateProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFargateProfiles", reflect.TypeOf((*MockEKSAPI)(nil).ListFargateProfiles), arg0)
+}
+
+// ListFargateProfilesPages mocks base method
+func (m *MockEKSAPI) ListFargateProfilesPages(arg0 *eks.ListFargateProfilesInput, arg1 func(*eks.ListFargateProfilesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFargateProfilesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFargateProfilesPages indicates an expected call of ListFargateProfilesPages
+func (mr *MockEKSAPIMockRecorder) ListFargateProfilesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFargateProfilesPages", reflect.TypeOf((*MockEKSAPI)(nil).ListFargateProfilesPages), arg0, arg1)
+}
+
+// ListFargateProfilesPagesWithContext mocks base method
+func (m *MockEKSAPI) ListFargateProfilesPagesWithContext(arg0 context.Context, arg1 *eks.ListFargateProfilesInput, arg2 func(*eks.ListFargateProfilesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFargateProfilesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFargateProfilesPagesWithContext indicates an expected call of ListFargateProfilesPagesWithContext
+func (mr *MockEKSAPIMockRecorder) ListFargateProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFargateProfilesPagesWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListFargateProfilesPagesWithContext), varargs...)
+}
+
+// ListFargateProfilesRequest mocks base method
+func (m *MockEKSAPI) ListFargateProfilesRequest(arg0 *eks.ListFargateProfilesInput) (*request.Request, *eks.ListFargateProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFargateProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.ListFargateProfilesOutput)
+	return ret0, ret1
+}
+
+// ListFargateProfilesRequest indicates an expected call of ListFargateProfilesRequest
+func (mr *MockEKSAPIMockRecorder) ListFargateProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFargateProfilesRequest", reflect.TypeOf((*MockEKSAPI)(nil).ListFargateProfilesRequest), arg0)
+}
+
+// ListFargateProfilesWithContext mocks base method
+func (m *MockEKSAPI) ListFargateProfilesWithContext(arg0 context.Context, arg1 *eks.ListFargateProfilesInput, arg2 ...request.Option) (*eks.ListFargateProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFargateProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.ListFargateProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFargateProfilesWithContext indicates an expected call of ListFargateProfilesWithContext
+func (mr *MockEKSAPIMockRecorder) ListFargateProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFargateProfilesWithContext", reflect.TypeOf((*MockEKSAPI)(nil).ListFargateProfilesWithContext), varargs...)
 }
 
 // ListNodegroups mocks base method

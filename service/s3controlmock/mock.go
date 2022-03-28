@@ -35,6 +35,56 @@ func (m *MockS3ControlAPI) EXPECT() *MockS3ControlAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateAccessPoint mocks base method
+func (m *MockS3ControlAPI) CreateAccessPoint(arg0 *s3control.CreateAccessPointInput) (*s3control.CreateAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessPoint", arg0)
+	ret0, _ := ret[0].(*s3control.CreateAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessPoint indicates an expected call of CreateAccessPoint
+func (mr *MockS3ControlAPIMockRecorder) CreateAccessPoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPoint", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateAccessPoint), arg0)
+}
+
+// CreateAccessPointRequest mocks base method
+func (m *MockS3ControlAPI) CreateAccessPointRequest(arg0 *s3control.CreateAccessPointInput) (*request.Request, *s3control.CreateAccessPointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessPointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.CreateAccessPointOutput)
+	return ret0, ret1
+}
+
+// CreateAccessPointRequest indicates an expected call of CreateAccessPointRequest
+func (mr *MockS3ControlAPIMockRecorder) CreateAccessPointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPointRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateAccessPointRequest), arg0)
+}
+
+// CreateAccessPointWithContext mocks base method
+func (m *MockS3ControlAPI) CreateAccessPointWithContext(arg0 context.Context, arg1 *s3control.CreateAccessPointInput, arg2 ...request.Option) (*s3control.CreateAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAccessPointWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.CreateAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessPointWithContext indicates an expected call of CreateAccessPointWithContext
+func (mr *MockS3ControlAPIMockRecorder) CreateAccessPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateAccessPointWithContext), varargs...)
+}
+
 // CreateJob mocks base method
 func (m *MockS3ControlAPI) CreateJob(arg0 *s3control.CreateJobInput) (*s3control.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,106 @@ func (mr *MockS3ControlAPIMockRecorder) CreateJobWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateJobWithContext), varargs...)
+}
+
+// DeleteAccessPoint mocks base method
+func (m *MockS3ControlAPI) DeleteAccessPoint(arg0 *s3control.DeleteAccessPointInput) (*s3control.DeleteAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessPoint", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessPoint indicates an expected call of DeleteAccessPoint
+func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPoint", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPoint), arg0)
+}
+
+// DeleteAccessPointPolicy mocks base method
+func (m *MockS3ControlAPI) DeleteAccessPointPolicy(arg0 *s3control.DeleteAccessPointPolicyInput) (*s3control.DeleteAccessPointPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessPointPolicy", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteAccessPointPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessPointPolicy indicates an expected call of DeleteAccessPointPolicy
+func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointPolicy", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointPolicy), arg0)
+}
+
+// DeleteAccessPointPolicyRequest mocks base method
+func (m *MockS3ControlAPI) DeleteAccessPointPolicyRequest(arg0 *s3control.DeleteAccessPointPolicyInput) (*request.Request, *s3control.DeleteAccessPointPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessPointPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteAccessPointPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessPointPolicyRequest indicates an expected call of DeleteAccessPointPolicyRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointPolicyRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointPolicyRequest), arg0)
+}
+
+// DeleteAccessPointPolicyWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteAccessPointPolicyWithContext(arg0 context.Context, arg1 *s3control.DeleteAccessPointPolicyInput, arg2 ...request.Option) (*s3control.DeleteAccessPointPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessPointPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteAccessPointPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessPointPolicyWithContext indicates an expected call of DeleteAccessPointPolicyWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointPolicyWithContext), varargs...)
+}
+
+// DeleteAccessPointRequest mocks base method
+func (m *MockS3ControlAPI) DeleteAccessPointRequest(arg0 *s3control.DeleteAccessPointInput) (*request.Request, *s3control.DeleteAccessPointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessPointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteAccessPointOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessPointRequest indicates an expected call of DeleteAccessPointRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointRequest), arg0)
+}
+
+// DeleteAccessPointWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteAccessPointWithContext(arg0 context.Context, arg1 *s3control.DeleteAccessPointInput, arg2 ...request.Option) (*s3control.DeleteAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessPointWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessPointWithContext indicates an expected call of DeleteAccessPointWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointWithContext), varargs...)
 }
 
 // DeletePublicAccessBlock mocks base method
@@ -185,6 +335,156 @@ func (mr *MockS3ControlAPIMockRecorder) DescribeJobWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DescribeJobWithContext), varargs...)
 }
 
+// GetAccessPoint mocks base method
+func (m *MockS3ControlAPI) GetAccessPoint(arg0 *s3control.GetAccessPointInput) (*s3control.GetAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPoint", arg0)
+	ret0, _ := ret[0].(*s3control.GetAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPoint indicates an expected call of GetAccessPoint
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPoint", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPoint), arg0)
+}
+
+// GetAccessPointPolicy mocks base method
+func (m *MockS3ControlAPI) GetAccessPointPolicy(arg0 *s3control.GetAccessPointPolicyInput) (*s3control.GetAccessPointPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPointPolicy", arg0)
+	ret0, _ := ret[0].(*s3control.GetAccessPointPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPointPolicy indicates an expected call of GetAccessPointPolicy
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointPolicy", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointPolicy), arg0)
+}
+
+// GetAccessPointPolicyRequest mocks base method
+func (m *MockS3ControlAPI) GetAccessPointPolicyRequest(arg0 *s3control.GetAccessPointPolicyInput) (*request.Request, *s3control.GetAccessPointPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPointPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetAccessPointPolicyOutput)
+	return ret0, ret1
+}
+
+// GetAccessPointPolicyRequest indicates an expected call of GetAccessPointPolicyRequest
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointPolicyRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointPolicyRequest), arg0)
+}
+
+// GetAccessPointPolicyStatus mocks base method
+func (m *MockS3ControlAPI) GetAccessPointPolicyStatus(arg0 *s3control.GetAccessPointPolicyStatusInput) (*s3control.GetAccessPointPolicyStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPointPolicyStatus", arg0)
+	ret0, _ := ret[0].(*s3control.GetAccessPointPolicyStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPointPolicyStatus indicates an expected call of GetAccessPointPolicyStatus
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointPolicyStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointPolicyStatus", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointPolicyStatus), arg0)
+}
+
+// GetAccessPointPolicyStatusRequest mocks base method
+func (m *MockS3ControlAPI) GetAccessPointPolicyStatusRequest(arg0 *s3control.GetAccessPointPolicyStatusInput) (*request.Request, *s3control.GetAccessPointPolicyStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPointPolicyStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetAccessPointPolicyStatusOutput)
+	return ret0, ret1
+}
+
+// GetAccessPointPolicyStatusRequest indicates an expected call of GetAccessPointPolicyStatusRequest
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointPolicyStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointPolicyStatusRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointPolicyStatusRequest), arg0)
+}
+
+// GetAccessPointPolicyStatusWithContext mocks base method
+func (m *MockS3ControlAPI) GetAccessPointPolicyStatusWithContext(arg0 context.Context, arg1 *s3control.GetAccessPointPolicyStatusInput, arg2 ...request.Option) (*s3control.GetAccessPointPolicyStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessPointPolicyStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetAccessPointPolicyStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPointPolicyStatusWithContext indicates an expected call of GetAccessPointPolicyStatusWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointPolicyStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointPolicyStatusWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointPolicyStatusWithContext), varargs...)
+}
+
+// GetAccessPointPolicyWithContext mocks base method
+func (m *MockS3ControlAPI) GetAccessPointPolicyWithContext(arg0 context.Context, arg1 *s3control.GetAccessPointPolicyInput, arg2 ...request.Option) (*s3control.GetAccessPointPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessPointPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetAccessPointPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPointPolicyWithContext indicates an expected call of GetAccessPointPolicyWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointPolicyWithContext), varargs...)
+}
+
+// GetAccessPointRequest mocks base method
+func (m *MockS3ControlAPI) GetAccessPointRequest(arg0 *s3control.GetAccessPointInput) (*request.Request, *s3control.GetAccessPointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetAccessPointOutput)
+	return ret0, ret1
+}
+
+// GetAccessPointRequest indicates an expected call of GetAccessPointRequest
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointRequest), arg0)
+}
+
+// GetAccessPointWithContext mocks base method
+func (m *MockS3ControlAPI) GetAccessPointWithContext(arg0 context.Context, arg1 *s3control.GetAccessPointInput, arg2 ...request.Option) (*s3control.GetAccessPointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessPointWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetAccessPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPointWithContext indicates an expected call of GetAccessPointWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetAccessPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointWithContext), varargs...)
+}
+
 // GetPublicAccessBlock mocks base method
 func (m *MockS3ControlAPI) GetPublicAccessBlock(arg0 *s3control.GetPublicAccessBlockInput) (*s3control.GetPublicAccessBlockOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +533,89 @@ func (mr *MockS3ControlAPIMockRecorder) GetPublicAccessBlockWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicAccessBlockWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetPublicAccessBlockWithContext), varargs...)
+}
+
+// ListAccessPoints mocks base method
+func (m *MockS3ControlAPI) ListAccessPoints(arg0 *s3control.ListAccessPointsInput) (*s3control.ListAccessPointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPoints", arg0)
+	ret0, _ := ret[0].(*s3control.ListAccessPointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessPoints indicates an expected call of ListAccessPoints
+func (mr *MockS3ControlAPIMockRecorder) ListAccessPoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPoints", reflect.TypeOf((*MockS3ControlAPI)(nil).ListAccessPoints), arg0)
+}
+
+// ListAccessPointsPages mocks base method
+func (m *MockS3ControlAPI) ListAccessPointsPages(arg0 *s3control.ListAccessPointsInput, arg1 func(*s3control.ListAccessPointsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPointsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessPointsPages indicates an expected call of ListAccessPointsPages
+func (mr *MockS3ControlAPIMockRecorder) ListAccessPointsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPointsPages", reflect.TypeOf((*MockS3ControlAPI)(nil).ListAccessPointsPages), arg0, arg1)
+}
+
+// ListAccessPointsPagesWithContext mocks base method
+func (m *MockS3ControlAPI) ListAccessPointsPagesWithContext(arg0 context.Context, arg1 *s3control.ListAccessPointsInput, arg2 func(*s3control.ListAccessPointsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessPointsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessPointsPagesWithContext indicates an expected call of ListAccessPointsPagesWithContext
+func (mr *MockS3ControlAPIMockRecorder) ListAccessPointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPointsPagesWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListAccessPointsPagesWithContext), varargs...)
+}
+
+// ListAccessPointsRequest mocks base method
+func (m *MockS3ControlAPI) ListAccessPointsRequest(arg0 *s3control.ListAccessPointsInput) (*request.Request, *s3control.ListAccessPointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.ListAccessPointsOutput)
+	return ret0, ret1
+}
+
+// ListAccessPointsRequest indicates an expected call of ListAccessPointsRequest
+func (mr *MockS3ControlAPIMockRecorder) ListAccessPointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPointsRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).ListAccessPointsRequest), arg0)
+}
+
+// ListAccessPointsWithContext mocks base method
+func (m *MockS3ControlAPI) ListAccessPointsWithContext(arg0 context.Context, arg1 *s3control.ListAccessPointsInput, arg2 ...request.Option) (*s3control.ListAccessPointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessPointsWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.ListAccessPointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessPointsWithContext indicates an expected call of ListAccessPointsWithContext
+func (mr *MockS3ControlAPIMockRecorder) ListAccessPointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPointsWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListAccessPointsWithContext), varargs...)
 }
 
 // ListJobs mocks base method
@@ -316,6 +699,56 @@ func (mr *MockS3ControlAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListJobsWithContext), varargs...)
+}
+
+// PutAccessPointPolicy mocks base method
+func (m *MockS3ControlAPI) PutAccessPointPolicy(arg0 *s3control.PutAccessPointPolicyInput) (*s3control.PutAccessPointPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccessPointPolicy", arg0)
+	ret0, _ := ret[0].(*s3control.PutAccessPointPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccessPointPolicy indicates an expected call of PutAccessPointPolicy
+func (mr *MockS3ControlAPIMockRecorder) PutAccessPointPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessPointPolicy", reflect.TypeOf((*MockS3ControlAPI)(nil).PutAccessPointPolicy), arg0)
+}
+
+// PutAccessPointPolicyRequest mocks base method
+func (m *MockS3ControlAPI) PutAccessPointPolicyRequest(arg0 *s3control.PutAccessPointPolicyInput) (*request.Request, *s3control.PutAccessPointPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccessPointPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutAccessPointPolicyOutput)
+	return ret0, ret1
+}
+
+// PutAccessPointPolicyRequest indicates an expected call of PutAccessPointPolicyRequest
+func (mr *MockS3ControlAPIMockRecorder) PutAccessPointPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessPointPolicyRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutAccessPointPolicyRequest), arg0)
+}
+
+// PutAccessPointPolicyWithContext mocks base method
+func (m *MockS3ControlAPI) PutAccessPointPolicyWithContext(arg0 context.Context, arg1 *s3control.PutAccessPointPolicyInput, arg2 ...request.Option) (*s3control.PutAccessPointPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAccessPointPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutAccessPointPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccessPointPolicyWithContext indicates an expected call of PutAccessPointPolicyWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutAccessPointPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessPointPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutAccessPointPolicyWithContext), varargs...)
 }
 
 // PutPublicAccessBlock mocks base method
