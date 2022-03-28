@@ -535,6 +535,56 @@ func (mr *MockAmplifyAPIMockRecorder) DeleteWebhookWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebhookWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).DeleteWebhookWithContext), varargs...)
 }
 
+// GenerateAccessLogs mocks base method
+func (m *MockAmplifyAPI) GenerateAccessLogs(arg0 *amplify.GenerateAccessLogsInput) (*amplify.GenerateAccessLogsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateAccessLogs", arg0)
+	ret0, _ := ret[0].(*amplify.GenerateAccessLogsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateAccessLogs indicates an expected call of GenerateAccessLogs
+func (mr *MockAmplifyAPIMockRecorder) GenerateAccessLogs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateAccessLogs", reflect.TypeOf((*MockAmplifyAPI)(nil).GenerateAccessLogs), arg0)
+}
+
+// GenerateAccessLogsRequest mocks base method
+func (m *MockAmplifyAPI) GenerateAccessLogsRequest(arg0 *amplify.GenerateAccessLogsInput) (*request.Request, *amplify.GenerateAccessLogsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateAccessLogsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.GenerateAccessLogsOutput)
+	return ret0, ret1
+}
+
+// GenerateAccessLogsRequest indicates an expected call of GenerateAccessLogsRequest
+func (mr *MockAmplifyAPIMockRecorder) GenerateAccessLogsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateAccessLogsRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).GenerateAccessLogsRequest), arg0)
+}
+
+// GenerateAccessLogsWithContext mocks base method
+func (m *MockAmplifyAPI) GenerateAccessLogsWithContext(arg0 context.Context, arg1 *amplify.GenerateAccessLogsInput, arg2 ...request.Option) (*amplify.GenerateAccessLogsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GenerateAccessLogsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.GenerateAccessLogsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateAccessLogsWithContext indicates an expected call of GenerateAccessLogsWithContext
+func (mr *MockAmplifyAPIMockRecorder) GenerateAccessLogsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateAccessLogsWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).GenerateAccessLogsWithContext), varargs...)
+}
+
 // GetApp mocks base method
 func (m *MockAmplifyAPI) GetApp(arg0 *amplify.GetAppInput) (*amplify.GetAppOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockAmplifyAPIMockRecorder) GetAppWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).GetAppWithContext), varargs...)
+}
+
+// GetArtifactUrl mocks base method
+func (m *MockAmplifyAPI) GetArtifactUrl(arg0 *amplify.GetArtifactUrlInput) (*amplify.GetArtifactUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetArtifactUrl", arg0)
+	ret0, _ := ret[0].(*amplify.GetArtifactUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetArtifactUrl indicates an expected call of GetArtifactUrl
+func (mr *MockAmplifyAPIMockRecorder) GetArtifactUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetArtifactUrl", reflect.TypeOf((*MockAmplifyAPI)(nil).GetArtifactUrl), arg0)
+}
+
+// GetArtifactUrlRequest mocks base method
+func (m *MockAmplifyAPI) GetArtifactUrlRequest(arg0 *amplify.GetArtifactUrlInput) (*request.Request, *amplify.GetArtifactUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetArtifactUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.GetArtifactUrlOutput)
+	return ret0, ret1
+}
+
+// GetArtifactUrlRequest indicates an expected call of GetArtifactUrlRequest
+func (mr *MockAmplifyAPIMockRecorder) GetArtifactUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetArtifactUrlRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).GetArtifactUrlRequest), arg0)
+}
+
+// GetArtifactUrlWithContext mocks base method
+func (m *MockAmplifyAPI) GetArtifactUrlWithContext(arg0 context.Context, arg1 *amplify.GetArtifactUrlInput, arg2 ...request.Option) (*amplify.GetArtifactUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetArtifactUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.GetArtifactUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetArtifactUrlWithContext indicates an expected call of GetArtifactUrlWithContext
+func (mr *MockAmplifyAPIMockRecorder) GetArtifactUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetArtifactUrlWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).GetArtifactUrlWithContext), varargs...)
 }
 
 // GetBranch mocks base method
@@ -833,6 +933,56 @@ func (mr *MockAmplifyAPIMockRecorder) ListAppsWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppsWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListAppsWithContext), varargs...)
+}
+
+// ListArtifacts mocks base method
+func (m *MockAmplifyAPI) ListArtifacts(arg0 *amplify.ListArtifactsInput) (*amplify.ListArtifactsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListArtifacts", arg0)
+	ret0, _ := ret[0].(*amplify.ListArtifactsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListArtifacts indicates an expected call of ListArtifacts
+func (mr *MockAmplifyAPIMockRecorder) ListArtifacts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifacts", reflect.TypeOf((*MockAmplifyAPI)(nil).ListArtifacts), arg0)
+}
+
+// ListArtifactsRequest mocks base method
+func (m *MockAmplifyAPI) ListArtifactsRequest(arg0 *amplify.ListArtifactsInput) (*request.Request, *amplify.ListArtifactsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListArtifactsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplify.ListArtifactsOutput)
+	return ret0, ret1
+}
+
+// ListArtifactsRequest indicates an expected call of ListArtifactsRequest
+func (mr *MockAmplifyAPIMockRecorder) ListArtifactsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsRequest", reflect.TypeOf((*MockAmplifyAPI)(nil).ListArtifactsRequest), arg0)
+}
+
+// ListArtifactsWithContext mocks base method
+func (m *MockAmplifyAPI) ListArtifactsWithContext(arg0 context.Context, arg1 *amplify.ListArtifactsInput, arg2 ...request.Option) (*amplify.ListArtifactsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListArtifactsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplify.ListArtifactsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListArtifactsWithContext indicates an expected call of ListArtifactsWithContext
+func (mr *MockAmplifyAPIMockRecorder) ListArtifactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArtifactsWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListArtifactsWithContext), varargs...)
 }
 
 // ListBranches mocks base method
