@@ -6245,6 +6245,72 @@ func (mr *MockRDSAPIMockRecorder) StopDBInstanceWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDBInstanceWithContext", reflect.TypeOf((*MockRDSAPI)(nil).StopDBInstanceWithContext), varargs...)
 }
 
+// WaitUntilDBClusterSnapshotAvailable mocks base method
+func (m *MockRDSAPI) WaitUntilDBClusterSnapshotAvailable(arg0 *rds.DescribeDBClusterSnapshotsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilDBClusterSnapshotAvailable", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilDBClusterSnapshotAvailable indicates an expected call of WaitUntilDBClusterSnapshotAvailable
+func (mr *MockRDSAPIMockRecorder) WaitUntilDBClusterSnapshotAvailable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilDBClusterSnapshotAvailable", reflect.TypeOf((*MockRDSAPI)(nil).WaitUntilDBClusterSnapshotAvailable), arg0)
+}
+
+// WaitUntilDBClusterSnapshotAvailableWithContext mocks base method
+func (m *MockRDSAPI) WaitUntilDBClusterSnapshotAvailableWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterSnapshotsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilDBClusterSnapshotAvailableWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilDBClusterSnapshotAvailableWithContext indicates an expected call of WaitUntilDBClusterSnapshotAvailableWithContext
+func (mr *MockRDSAPIMockRecorder) WaitUntilDBClusterSnapshotAvailableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilDBClusterSnapshotAvailableWithContext", reflect.TypeOf((*MockRDSAPI)(nil).WaitUntilDBClusterSnapshotAvailableWithContext), varargs...)
+}
+
+// WaitUntilDBClusterSnapshotDeleted mocks base method
+func (m *MockRDSAPI) WaitUntilDBClusterSnapshotDeleted(arg0 *rds.DescribeDBClusterSnapshotsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilDBClusterSnapshotDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilDBClusterSnapshotDeleted indicates an expected call of WaitUntilDBClusterSnapshotDeleted
+func (mr *MockRDSAPIMockRecorder) WaitUntilDBClusterSnapshotDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilDBClusterSnapshotDeleted", reflect.TypeOf((*MockRDSAPI)(nil).WaitUntilDBClusterSnapshotDeleted), arg0)
+}
+
+// WaitUntilDBClusterSnapshotDeletedWithContext mocks base method
+func (m *MockRDSAPI) WaitUntilDBClusterSnapshotDeletedWithContext(arg0 context.Context, arg1 *rds.DescribeDBClusterSnapshotsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilDBClusterSnapshotDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilDBClusterSnapshotDeletedWithContext indicates an expected call of WaitUntilDBClusterSnapshotDeletedWithContext
+func (mr *MockRDSAPIMockRecorder) WaitUntilDBClusterSnapshotDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilDBClusterSnapshotDeletedWithContext", reflect.TypeOf((*MockRDSAPI)(nil).WaitUntilDBClusterSnapshotDeletedWithContext), varargs...)
+}
+
 // WaitUntilDBInstanceAvailable mocks base method
 func (m *MockRDSAPI) WaitUntilDBInstanceAvailable(arg0 *rds.DescribeDBInstancesInput) error {
 	m.ctrl.T.Helper()
