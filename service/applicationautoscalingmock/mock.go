@@ -449,6 +449,39 @@ func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScheduledActions(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActions", reflect.TypeOf((*MockApplicationAutoScalingAPI)(nil).DescribeScheduledActions), arg0)
 }
 
+// DescribeScheduledActionsPages mocks base method
+func (m *MockApplicationAutoScalingAPI) DescribeScheduledActionsPages(arg0 *applicationautoscaling.DescribeScheduledActionsInput, arg1 func(*applicationautoscaling.DescribeScheduledActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeScheduledActionsPages indicates an expected call of DescribeScheduledActionsPages
+func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScheduledActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActionsPages", reflect.TypeOf((*MockApplicationAutoScalingAPI)(nil).DescribeScheduledActionsPages), arg0, arg1)
+}
+
+// DescribeScheduledActionsPagesWithContext mocks base method
+func (m *MockApplicationAutoScalingAPI) DescribeScheduledActionsPagesWithContext(arg0 context.Context, arg1 *applicationautoscaling.DescribeScheduledActionsInput, arg2 func(*applicationautoscaling.DescribeScheduledActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScheduledActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeScheduledActionsPagesWithContext indicates an expected call of DescribeScheduledActionsPagesWithContext
+func (mr *MockApplicationAutoScalingAPIMockRecorder) DescribeScheduledActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledActionsPagesWithContext", reflect.TypeOf((*MockApplicationAutoScalingAPI)(nil).DescribeScheduledActionsPagesWithContext), varargs...)
+}
+
 // DescribeScheduledActionsRequest mocks base method
 func (m *MockApplicationAutoScalingAPI) DescribeScheduledActionsRequest(arg0 *applicationautoscaling.DescribeScheduledActionsInput) (*request.Request, *applicationautoscaling.DescribeScheduledActionsOutput) {
 	m.ctrl.T.Helper()
