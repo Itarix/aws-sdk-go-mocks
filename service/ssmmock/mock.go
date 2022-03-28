@@ -2984,6 +2984,56 @@ func (mr *MockSSMAPIMockRecorder) GetAutomationExecutionWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutomationExecutionWithContext", reflect.TypeOf((*MockSSMAPI)(nil).GetAutomationExecutionWithContext), varargs...)
 }
 
+// GetCalendarState mocks base method
+func (m *MockSSMAPI) GetCalendarState(arg0 *ssm.GetCalendarStateInput) (*ssm.GetCalendarStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalendarState", arg0)
+	ret0, _ := ret[0].(*ssm.GetCalendarStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalendarState indicates an expected call of GetCalendarState
+func (mr *MockSSMAPIMockRecorder) GetCalendarState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalendarState", reflect.TypeOf((*MockSSMAPI)(nil).GetCalendarState), arg0)
+}
+
+// GetCalendarStateRequest mocks base method
+func (m *MockSSMAPI) GetCalendarStateRequest(arg0 *ssm.GetCalendarStateInput) (*request.Request, *ssm.GetCalendarStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalendarStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.GetCalendarStateOutput)
+	return ret0, ret1
+}
+
+// GetCalendarStateRequest indicates an expected call of GetCalendarStateRequest
+func (mr *MockSSMAPIMockRecorder) GetCalendarStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalendarStateRequest", reflect.TypeOf((*MockSSMAPI)(nil).GetCalendarStateRequest), arg0)
+}
+
+// GetCalendarStateWithContext mocks base method
+func (m *MockSSMAPI) GetCalendarStateWithContext(arg0 context.Context, arg1 *ssm.GetCalendarStateInput, arg2 ...request.Option) (*ssm.GetCalendarStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCalendarStateWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.GetCalendarStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalendarStateWithContext indicates an expected call of GetCalendarStateWithContext
+func (mr *MockSSMAPIMockRecorder) GetCalendarStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalendarStateWithContext", reflect.TypeOf((*MockSSMAPI)(nil).GetCalendarStateWithContext), varargs...)
+}
+
 // GetCommandInvocation mocks base method
 func (m *MockSSMAPI) GetCommandInvocation(arg0 *ssm.GetCommandInvocationInput) (*ssm.GetCommandInvocationOutput, error) {
 	m.ctrl.T.Helper()

@@ -1149,3 +1149,53 @@ func (mr *MockKafkaAPIMockRecorder) UpdateClusterConfigurationWithContext(arg0, 
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateClusterConfigurationWithContext), varargs...)
 }
+
+// UpdateMonitoring mocks base method
+func (m *MockKafkaAPI) UpdateMonitoring(arg0 *kafka.UpdateMonitoringInput) (*kafka.UpdateMonitoringOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMonitoring", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateMonitoringOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMonitoring indicates an expected call of UpdateMonitoring
+func (mr *MockKafkaAPIMockRecorder) UpdateMonitoring(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMonitoring", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateMonitoring), arg0)
+}
+
+// UpdateMonitoringRequest mocks base method
+func (m *MockKafkaAPI) UpdateMonitoringRequest(arg0 *kafka.UpdateMonitoringInput) (*request.Request, *kafka.UpdateMonitoringOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMonitoringRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateMonitoringOutput)
+	return ret0, ret1
+}
+
+// UpdateMonitoringRequest indicates an expected call of UpdateMonitoringRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateMonitoringRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMonitoringRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateMonitoringRequest), arg0)
+}
+
+// UpdateMonitoringWithContext mocks base method
+func (m *MockKafkaAPI) UpdateMonitoringWithContext(arg0 context.Context, arg1 *kafka.UpdateMonitoringInput, arg2 ...request.Option) (*kafka.UpdateMonitoringOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMonitoringWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateMonitoringOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMonitoringWithContext indicates an expected call of UpdateMonitoringWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateMonitoringWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMonitoringWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateMonitoringWithContext), varargs...)
+}
