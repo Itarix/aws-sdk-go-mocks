@@ -1333,6 +1333,56 @@ func (mr *MockCloudWatchAPIMockRecorder) PutAnomalyDetectorWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAnomalyDetectorWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutAnomalyDetectorWithContext), varargs...)
 }
 
+// PutCompositeAlarm mocks base method
+func (m *MockCloudWatchAPI) PutCompositeAlarm(arg0 *cloudwatch.PutCompositeAlarmInput) (*cloudwatch.PutCompositeAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutCompositeAlarm", arg0)
+	ret0, _ := ret[0].(*cloudwatch.PutCompositeAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutCompositeAlarm indicates an expected call of PutCompositeAlarm
+func (mr *MockCloudWatchAPIMockRecorder) PutCompositeAlarm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCompositeAlarm", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutCompositeAlarm), arg0)
+}
+
+// PutCompositeAlarmRequest mocks base method
+func (m *MockCloudWatchAPI) PutCompositeAlarmRequest(arg0 *cloudwatch.PutCompositeAlarmInput) (*request.Request, *cloudwatch.PutCompositeAlarmOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutCompositeAlarmRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatch.PutCompositeAlarmOutput)
+	return ret0, ret1
+}
+
+// PutCompositeAlarmRequest indicates an expected call of PutCompositeAlarmRequest
+func (mr *MockCloudWatchAPIMockRecorder) PutCompositeAlarmRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCompositeAlarmRequest", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutCompositeAlarmRequest), arg0)
+}
+
+// PutCompositeAlarmWithContext mocks base method
+func (m *MockCloudWatchAPI) PutCompositeAlarmWithContext(arg0 context.Context, arg1 *cloudwatch.PutCompositeAlarmInput, arg2 ...request.Option) (*cloudwatch.PutCompositeAlarmOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutCompositeAlarmWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatch.PutCompositeAlarmOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutCompositeAlarmWithContext indicates an expected call of PutCompositeAlarmWithContext
+func (mr *MockCloudWatchAPIMockRecorder) PutCompositeAlarmWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCompositeAlarmWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutCompositeAlarmWithContext), varargs...)
+}
+
 // PutDashboard mocks base method
 func (m *MockCloudWatchAPI) PutDashboard(arg0 *cloudwatch.PutDashboardInput) (*cloudwatch.PutDashboardOutput, error) {
 	m.ctrl.T.Helper()
@@ -1714,4 +1764,37 @@ func (mr *MockCloudWatchAPIMockRecorder) WaitUntilAlarmExistsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAlarmExistsWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).WaitUntilAlarmExistsWithContext), varargs...)
+}
+
+// WaitUntilCompositeAlarmExists mocks base method
+func (m *MockCloudWatchAPI) WaitUntilCompositeAlarmExists(arg0 *cloudwatch.DescribeAlarmsInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilCompositeAlarmExists", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilCompositeAlarmExists indicates an expected call of WaitUntilCompositeAlarmExists
+func (mr *MockCloudWatchAPIMockRecorder) WaitUntilCompositeAlarmExists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilCompositeAlarmExists", reflect.TypeOf((*MockCloudWatchAPI)(nil).WaitUntilCompositeAlarmExists), arg0)
+}
+
+// WaitUntilCompositeAlarmExistsWithContext mocks base method
+func (m *MockCloudWatchAPI) WaitUntilCompositeAlarmExistsWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAlarmsInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilCompositeAlarmExistsWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilCompositeAlarmExistsWithContext indicates an expected call of WaitUntilCompositeAlarmExistsWithContext
+func (mr *MockCloudWatchAPIMockRecorder) WaitUntilCompositeAlarmExistsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilCompositeAlarmExistsWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).WaitUntilCompositeAlarmExistsWithContext), varargs...)
 }
