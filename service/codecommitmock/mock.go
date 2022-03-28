@@ -135,6 +135,56 @@ func (mr *MockCodeCommitAPIMockRecorder) CreateBranchWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBranchWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateBranchWithContext), varargs...)
 }
 
+// CreateCommit mocks base method
+func (m *MockCodeCommitAPI) CreateCommit(arg0 *codecommit.CreateCommitInput) (*codecommit.CreateCommitOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCommit", arg0)
+	ret0, _ := ret[0].(*codecommit.CreateCommitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCommit indicates an expected call of CreateCommit
+func (mr *MockCodeCommitAPIMockRecorder) CreateCommit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCommit", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateCommit), arg0)
+}
+
+// CreateCommitRequest mocks base method
+func (m *MockCodeCommitAPI) CreateCommitRequest(arg0 *codecommit.CreateCommitInput) (*request.Request, *codecommit.CreateCommitOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCommitRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.CreateCommitOutput)
+	return ret0, ret1
+}
+
+// CreateCommitRequest indicates an expected call of CreateCommitRequest
+func (mr *MockCodeCommitAPIMockRecorder) CreateCommitRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCommitRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateCommitRequest), arg0)
+}
+
+// CreateCommitWithContext mocks base method
+func (m *MockCodeCommitAPI) CreateCommitWithContext(arg0 context.Context, arg1 *codecommit.CreateCommitInput, arg2 ...request.Option) (*codecommit.CreateCommitOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCommitWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.CreateCommitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCommitWithContext indicates an expected call of CreateCommitWithContext
+func (mr *MockCodeCommitAPIMockRecorder) CreateCommitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCommitWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).CreateCommitWithContext), varargs...)
+}
+
 // CreatePullRequest mocks base method
 func (m *MockCodeCommitAPI) CreatePullRequest(arg0 *codecommit.CreatePullRequestInput) (*codecommit.CreatePullRequestOutput, error) {
 	m.ctrl.T.Helper()
