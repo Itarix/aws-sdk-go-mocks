@@ -13897,6 +13897,56 @@ func (mr *MockEC2APIMockRecorder) ModifyInstanceCreditSpecificationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceCreditSpecificationWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceCreditSpecificationWithContext), varargs...)
 }
 
+// ModifyInstanceEventStartTime mocks base method
+func (m *MockEC2API) ModifyInstanceEventStartTime(arg0 *ec2.ModifyInstanceEventStartTimeInput) (*ec2.ModifyInstanceEventStartTimeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyInstanceEventStartTime", arg0)
+	ret0, _ := ret[0].(*ec2.ModifyInstanceEventStartTimeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyInstanceEventStartTime indicates an expected call of ModifyInstanceEventStartTime
+func (mr *MockEC2APIMockRecorder) ModifyInstanceEventStartTime(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceEventStartTime", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceEventStartTime), arg0)
+}
+
+// ModifyInstanceEventStartTimeRequest mocks base method
+func (m *MockEC2API) ModifyInstanceEventStartTimeRequest(arg0 *ec2.ModifyInstanceEventStartTimeInput) (*request.Request, *ec2.ModifyInstanceEventStartTimeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyInstanceEventStartTimeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ModifyInstanceEventStartTimeOutput)
+	return ret0, ret1
+}
+
+// ModifyInstanceEventStartTimeRequest indicates an expected call of ModifyInstanceEventStartTimeRequest
+func (mr *MockEC2APIMockRecorder) ModifyInstanceEventStartTimeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceEventStartTimeRequest", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceEventStartTimeRequest), arg0)
+}
+
+// ModifyInstanceEventStartTimeWithContext mocks base method
+func (m *MockEC2API) ModifyInstanceEventStartTimeWithContext(arg0 context.Context, arg1 *ec2.ModifyInstanceEventStartTimeInput, arg2 ...request.Option) (*ec2.ModifyInstanceEventStartTimeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyInstanceEventStartTimeWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ModifyInstanceEventStartTimeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyInstanceEventStartTimeWithContext indicates an expected call of ModifyInstanceEventStartTimeWithContext
+func (mr *MockEC2APIMockRecorder) ModifyInstanceEventStartTimeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyInstanceEventStartTimeWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyInstanceEventStartTimeWithContext), varargs...)
+}
+
 // ModifyInstancePlacement mocks base method
 func (m *MockEC2API) ModifyInstancePlacement(arg0 *ec2.ModifyInstancePlacementInput) (*ec2.ModifyInstancePlacementOutput, error) {
 	m.ctrl.T.Helper()
