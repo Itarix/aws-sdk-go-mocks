@@ -835,6 +835,56 @@ func (mr *MockConfigServiceAPIMockRecorder) DeleteRetentionConfigurationWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRetentionConfigurationWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteRetentionConfigurationWithContext), varargs...)
 }
 
+// DeleteStoredQuery mocks base method
+func (m *MockConfigServiceAPI) DeleteStoredQuery(arg0 *configservice.DeleteStoredQueryInput) (*configservice.DeleteStoredQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStoredQuery", arg0)
+	ret0, _ := ret[0].(*configservice.DeleteStoredQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStoredQuery indicates an expected call of DeleteStoredQuery
+func (mr *MockConfigServiceAPIMockRecorder) DeleteStoredQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStoredQuery", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteStoredQuery), arg0)
+}
+
+// DeleteStoredQueryRequest mocks base method
+func (m *MockConfigServiceAPI) DeleteStoredQueryRequest(arg0 *configservice.DeleteStoredQueryInput) (*request.Request, *configservice.DeleteStoredQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStoredQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.DeleteStoredQueryOutput)
+	return ret0, ret1
+}
+
+// DeleteStoredQueryRequest indicates an expected call of DeleteStoredQueryRequest
+func (mr *MockConfigServiceAPIMockRecorder) DeleteStoredQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStoredQueryRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteStoredQueryRequest), arg0)
+}
+
+// DeleteStoredQueryWithContext mocks base method
+func (m *MockConfigServiceAPI) DeleteStoredQueryWithContext(arg0 context.Context, arg1 *configservice.DeleteStoredQueryInput, arg2 ...request.Option) (*configservice.DeleteStoredQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStoredQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.DeleteStoredQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStoredQueryWithContext indicates an expected call of DeleteStoredQueryWithContext
+func (mr *MockConfigServiceAPIMockRecorder) DeleteStoredQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStoredQueryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).DeleteStoredQueryWithContext), varargs...)
+}
+
 // DeliverConfigSnapshot mocks base method
 func (m *MockConfigServiceAPI) DeliverConfigSnapshot(arg0 *configservice.DeliverConfigSnapshotInput) (*configservice.DeliverConfigSnapshotOutput, error) {
 	m.ctrl.T.Helper()
@@ -2884,6 +2934,56 @@ func (mr *MockConfigServiceAPIMockRecorder) GetResourceConfigHistoryWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceConfigHistoryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetResourceConfigHistoryWithContext), varargs...)
 }
 
+// GetStoredQuery mocks base method
+func (m *MockConfigServiceAPI) GetStoredQuery(arg0 *configservice.GetStoredQueryInput) (*configservice.GetStoredQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStoredQuery", arg0)
+	ret0, _ := ret[0].(*configservice.GetStoredQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStoredQuery indicates an expected call of GetStoredQuery
+func (mr *MockConfigServiceAPIMockRecorder) GetStoredQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStoredQuery", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetStoredQuery), arg0)
+}
+
+// GetStoredQueryRequest mocks base method
+func (m *MockConfigServiceAPI) GetStoredQueryRequest(arg0 *configservice.GetStoredQueryInput) (*request.Request, *configservice.GetStoredQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStoredQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetStoredQueryOutput)
+	return ret0, ret1
+}
+
+// GetStoredQueryRequest indicates an expected call of GetStoredQueryRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetStoredQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStoredQueryRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetStoredQueryRequest), arg0)
+}
+
+// GetStoredQueryWithContext mocks base method
+func (m *MockConfigServiceAPI) GetStoredQueryWithContext(arg0 context.Context, arg1 *configservice.GetStoredQueryInput, arg2 ...request.Option) (*configservice.GetStoredQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStoredQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetStoredQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStoredQueryWithContext indicates an expected call of GetStoredQueryWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetStoredQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStoredQueryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetStoredQueryWithContext), varargs...)
+}
+
 // ListAggregateDiscoveredResources mocks base method
 func (m *MockConfigServiceAPI) ListAggregateDiscoveredResources(arg0 *configservice.ListAggregateDiscoveredResourcesInput) (*configservice.ListAggregateDiscoveredResourcesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2982,6 +3082,89 @@ func (mr *MockConfigServiceAPIMockRecorder) ListDiscoveredResourcesWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListDiscoveredResourcesWithContext), varargs...)
+}
+
+// ListStoredQueries mocks base method
+func (m *MockConfigServiceAPI) ListStoredQueries(arg0 *configservice.ListStoredQueriesInput) (*configservice.ListStoredQueriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStoredQueries", arg0)
+	ret0, _ := ret[0].(*configservice.ListStoredQueriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStoredQueries indicates an expected call of ListStoredQueries
+func (mr *MockConfigServiceAPIMockRecorder) ListStoredQueries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStoredQueries", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListStoredQueries), arg0)
+}
+
+// ListStoredQueriesPages mocks base method
+func (m *MockConfigServiceAPI) ListStoredQueriesPages(arg0 *configservice.ListStoredQueriesInput, arg1 func(*configservice.ListStoredQueriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStoredQueriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStoredQueriesPages indicates an expected call of ListStoredQueriesPages
+func (mr *MockConfigServiceAPIMockRecorder) ListStoredQueriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStoredQueriesPages", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListStoredQueriesPages), arg0, arg1)
+}
+
+// ListStoredQueriesPagesWithContext mocks base method
+func (m *MockConfigServiceAPI) ListStoredQueriesPagesWithContext(arg0 context.Context, arg1 *configservice.ListStoredQueriesInput, arg2 func(*configservice.ListStoredQueriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStoredQueriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStoredQueriesPagesWithContext indicates an expected call of ListStoredQueriesPagesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) ListStoredQueriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStoredQueriesPagesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListStoredQueriesPagesWithContext), varargs...)
+}
+
+// ListStoredQueriesRequest mocks base method
+func (m *MockConfigServiceAPI) ListStoredQueriesRequest(arg0 *configservice.ListStoredQueriesInput) (*request.Request, *configservice.ListStoredQueriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStoredQueriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.ListStoredQueriesOutput)
+	return ret0, ret1
+}
+
+// ListStoredQueriesRequest indicates an expected call of ListStoredQueriesRequest
+func (mr *MockConfigServiceAPIMockRecorder) ListStoredQueriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStoredQueriesRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListStoredQueriesRequest), arg0)
+}
+
+// ListStoredQueriesWithContext mocks base method
+func (m *MockConfigServiceAPI) ListStoredQueriesWithContext(arg0 context.Context, arg1 *configservice.ListStoredQueriesInput, arg2 ...request.Option) (*configservice.ListStoredQueriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStoredQueriesWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.ListStoredQueriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStoredQueriesWithContext indicates an expected call of ListStoredQueriesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) ListStoredQueriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStoredQueriesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListStoredQueriesWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -3732,6 +3915,56 @@ func (mr *MockConfigServiceAPIMockRecorder) PutRetentionConfigurationWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRetentionConfigurationWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutRetentionConfigurationWithContext), varargs...)
+}
+
+// PutStoredQuery mocks base method
+func (m *MockConfigServiceAPI) PutStoredQuery(arg0 *configservice.PutStoredQueryInput) (*configservice.PutStoredQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutStoredQuery", arg0)
+	ret0, _ := ret[0].(*configservice.PutStoredQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutStoredQuery indicates an expected call of PutStoredQuery
+func (mr *MockConfigServiceAPIMockRecorder) PutStoredQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStoredQuery", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutStoredQuery), arg0)
+}
+
+// PutStoredQueryRequest mocks base method
+func (m *MockConfigServiceAPI) PutStoredQueryRequest(arg0 *configservice.PutStoredQueryInput) (*request.Request, *configservice.PutStoredQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutStoredQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.PutStoredQueryOutput)
+	return ret0, ret1
+}
+
+// PutStoredQueryRequest indicates an expected call of PutStoredQueryRequest
+func (mr *MockConfigServiceAPIMockRecorder) PutStoredQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStoredQueryRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutStoredQueryRequest), arg0)
+}
+
+// PutStoredQueryWithContext mocks base method
+func (m *MockConfigServiceAPI) PutStoredQueryWithContext(arg0 context.Context, arg1 *configservice.PutStoredQueryInput, arg2 ...request.Option) (*configservice.PutStoredQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutStoredQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.PutStoredQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutStoredQueryWithContext indicates an expected call of PutStoredQueryWithContext
+func (mr *MockConfigServiceAPIMockRecorder) PutStoredQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStoredQueryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutStoredQueryWithContext), varargs...)
 }
 
 // SelectAggregateResourceConfig mocks base method

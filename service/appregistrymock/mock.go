@@ -917,6 +917,56 @@ func (mr *MockAppRegistryAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// SyncResource mocks base method
+func (m *MockAppRegistryAPI) SyncResource(arg0 *appregistry.SyncResourceInput) (*appregistry.SyncResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SyncResource", arg0)
+	ret0, _ := ret[0].(*appregistry.SyncResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SyncResource indicates an expected call of SyncResource
+func (mr *MockAppRegistryAPIMockRecorder) SyncResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SyncResource", reflect.TypeOf((*MockAppRegistryAPI)(nil).SyncResource), arg0)
+}
+
+// SyncResourceRequest mocks base method
+func (m *MockAppRegistryAPI) SyncResourceRequest(arg0 *appregistry.SyncResourceInput) (*request.Request, *appregistry.SyncResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SyncResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appregistry.SyncResourceOutput)
+	return ret0, ret1
+}
+
+// SyncResourceRequest indicates an expected call of SyncResourceRequest
+func (mr *MockAppRegistryAPIMockRecorder) SyncResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SyncResourceRequest", reflect.TypeOf((*MockAppRegistryAPI)(nil).SyncResourceRequest), arg0)
+}
+
+// SyncResourceWithContext mocks base method
+func (m *MockAppRegistryAPI) SyncResourceWithContext(arg0 context.Context, arg1 *appregistry.SyncResourceInput, arg2 ...request.Option) (*appregistry.SyncResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SyncResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*appregistry.SyncResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SyncResourceWithContext indicates an expected call of SyncResourceWithContext
+func (mr *MockAppRegistryAPIMockRecorder) SyncResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SyncResourceWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).SyncResourceWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockAppRegistryAPI) TagResource(arg0 *appregistry.TagResourceInput) (*appregistry.TagResourceOutput, error) {
 	m.ctrl.T.Helper()

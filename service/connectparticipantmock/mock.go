@@ -35,6 +35,56 @@ func (m *MockConnectParticipantAPI) EXPECT() *MockConnectParticipantAPIMockRecor
 	return m.recorder
 }
 
+// CompleteAttachmentUpload mocks base method
+func (m *MockConnectParticipantAPI) CompleteAttachmentUpload(arg0 *connectparticipant.CompleteAttachmentUploadInput) (*connectparticipant.CompleteAttachmentUploadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CompleteAttachmentUpload", arg0)
+	ret0, _ := ret[0].(*connectparticipant.CompleteAttachmentUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CompleteAttachmentUpload indicates an expected call of CompleteAttachmentUpload
+func (mr *MockConnectParticipantAPIMockRecorder) CompleteAttachmentUpload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteAttachmentUpload", reflect.TypeOf((*MockConnectParticipantAPI)(nil).CompleteAttachmentUpload), arg0)
+}
+
+// CompleteAttachmentUploadRequest mocks base method
+func (m *MockConnectParticipantAPI) CompleteAttachmentUploadRequest(arg0 *connectparticipant.CompleteAttachmentUploadInput) (*request.Request, *connectparticipant.CompleteAttachmentUploadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CompleteAttachmentUploadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connectparticipant.CompleteAttachmentUploadOutput)
+	return ret0, ret1
+}
+
+// CompleteAttachmentUploadRequest indicates an expected call of CompleteAttachmentUploadRequest
+func (mr *MockConnectParticipantAPIMockRecorder) CompleteAttachmentUploadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteAttachmentUploadRequest", reflect.TypeOf((*MockConnectParticipantAPI)(nil).CompleteAttachmentUploadRequest), arg0)
+}
+
+// CompleteAttachmentUploadWithContext mocks base method
+func (m *MockConnectParticipantAPI) CompleteAttachmentUploadWithContext(arg0 context.Context, arg1 *connectparticipant.CompleteAttachmentUploadInput, arg2 ...request.Option) (*connectparticipant.CompleteAttachmentUploadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CompleteAttachmentUploadWithContext", varargs...)
+	ret0, _ := ret[0].(*connectparticipant.CompleteAttachmentUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CompleteAttachmentUploadWithContext indicates an expected call of CompleteAttachmentUploadWithContext
+func (mr *MockConnectParticipantAPIMockRecorder) CompleteAttachmentUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteAttachmentUploadWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).CompleteAttachmentUploadWithContext), varargs...)
+}
+
 // CreateParticipantConnection mocks base method
 func (m *MockConnectParticipantAPI) CreateParticipantConnection(arg0 *connectparticipant.CreateParticipantConnectionInput) (*connectparticipant.CreateParticipantConnectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +183,56 @@ func (mr *MockConnectParticipantAPIMockRecorder) DisconnectParticipantWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectParticipantWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).DisconnectParticipantWithContext), varargs...)
+}
+
+// GetAttachment mocks base method
+func (m *MockConnectParticipantAPI) GetAttachment(arg0 *connectparticipant.GetAttachmentInput) (*connectparticipant.GetAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAttachment", arg0)
+	ret0, _ := ret[0].(*connectparticipant.GetAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAttachment indicates an expected call of GetAttachment
+func (mr *MockConnectParticipantAPIMockRecorder) GetAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttachment", reflect.TypeOf((*MockConnectParticipantAPI)(nil).GetAttachment), arg0)
+}
+
+// GetAttachmentRequest mocks base method
+func (m *MockConnectParticipantAPI) GetAttachmentRequest(arg0 *connectparticipant.GetAttachmentInput) (*request.Request, *connectparticipant.GetAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connectparticipant.GetAttachmentOutput)
+	return ret0, ret1
+}
+
+// GetAttachmentRequest indicates an expected call of GetAttachmentRequest
+func (mr *MockConnectParticipantAPIMockRecorder) GetAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttachmentRequest", reflect.TypeOf((*MockConnectParticipantAPI)(nil).GetAttachmentRequest), arg0)
+}
+
+// GetAttachmentWithContext mocks base method
+func (m *MockConnectParticipantAPI) GetAttachmentWithContext(arg0 context.Context, arg1 *connectparticipant.GetAttachmentInput, arg2 ...request.Option) (*connectparticipant.GetAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*connectparticipant.GetAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAttachmentWithContext indicates an expected call of GetAttachmentWithContext
+func (mr *MockConnectParticipantAPIMockRecorder) GetAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttachmentWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).GetAttachmentWithContext), varargs...)
 }
 
 // GetTranscript mocks base method
@@ -316,4 +416,54 @@ func (mr *MockConnectParticipantAPIMockRecorder) SendMessageWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendMessageWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).SendMessageWithContext), varargs...)
+}
+
+// StartAttachmentUpload mocks base method
+func (m *MockConnectParticipantAPI) StartAttachmentUpload(arg0 *connectparticipant.StartAttachmentUploadInput) (*connectparticipant.StartAttachmentUploadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAttachmentUpload", arg0)
+	ret0, _ := ret[0].(*connectparticipant.StartAttachmentUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAttachmentUpload indicates an expected call of StartAttachmentUpload
+func (mr *MockConnectParticipantAPIMockRecorder) StartAttachmentUpload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAttachmentUpload", reflect.TypeOf((*MockConnectParticipantAPI)(nil).StartAttachmentUpload), arg0)
+}
+
+// StartAttachmentUploadRequest mocks base method
+func (m *MockConnectParticipantAPI) StartAttachmentUploadRequest(arg0 *connectparticipant.StartAttachmentUploadInput) (*request.Request, *connectparticipant.StartAttachmentUploadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAttachmentUploadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connectparticipant.StartAttachmentUploadOutput)
+	return ret0, ret1
+}
+
+// StartAttachmentUploadRequest indicates an expected call of StartAttachmentUploadRequest
+func (mr *MockConnectParticipantAPIMockRecorder) StartAttachmentUploadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAttachmentUploadRequest", reflect.TypeOf((*MockConnectParticipantAPI)(nil).StartAttachmentUploadRequest), arg0)
+}
+
+// StartAttachmentUploadWithContext mocks base method
+func (m *MockConnectParticipantAPI) StartAttachmentUploadWithContext(arg0 context.Context, arg1 *connectparticipant.StartAttachmentUploadInput, arg2 ...request.Option) (*connectparticipant.StartAttachmentUploadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartAttachmentUploadWithContext", varargs...)
+	ret0, _ := ret[0].(*connectparticipant.StartAttachmentUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAttachmentUploadWithContext indicates an expected call of StartAttachmentUploadWithContext
+func (mr *MockConnectParticipantAPIMockRecorder) StartAttachmentUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAttachmentUploadWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).StartAttachmentUploadWithContext), varargs...)
 }
