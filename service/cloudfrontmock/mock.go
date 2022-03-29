@@ -385,6 +385,56 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateInvalidationWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInvalidationWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateInvalidationWithContext), varargs...)
 }
 
+// CreateKeyGroup mocks base method
+func (m *MockCloudFrontAPI) CreateKeyGroup(arg0 *cloudfront.CreateKeyGroupInput) (*cloudfront.CreateKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateKeyGroup", arg0)
+	ret0, _ := ret[0].(*cloudfront.CreateKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateKeyGroup indicates an expected call of CreateKeyGroup
+func (mr *MockCloudFrontAPIMockRecorder) CreateKeyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKeyGroup", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateKeyGroup), arg0)
+}
+
+// CreateKeyGroupRequest mocks base method
+func (m *MockCloudFrontAPI) CreateKeyGroupRequest(arg0 *cloudfront.CreateKeyGroupInput) (*request.Request, *cloudfront.CreateKeyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateKeyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.CreateKeyGroupOutput)
+	return ret0, ret1
+}
+
+// CreateKeyGroupRequest indicates an expected call of CreateKeyGroupRequest
+func (mr *MockCloudFrontAPIMockRecorder) CreateKeyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKeyGroupRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateKeyGroupRequest), arg0)
+}
+
+// CreateKeyGroupWithContext mocks base method
+func (m *MockCloudFrontAPI) CreateKeyGroupWithContext(arg0 context.Context, arg1 *cloudfront.CreateKeyGroupInput, arg2 ...request.Option) (*cloudfront.CreateKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateKeyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.CreateKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateKeyGroupWithContext indicates an expected call of CreateKeyGroupWithContext
+func (mr *MockCloudFrontAPIMockRecorder) CreateKeyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKeyGroupWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateKeyGroupWithContext), varargs...)
+}
+
 // CreateMonitoringSubscription mocks base method
 func (m *MockCloudFrontAPI) CreateMonitoringSubscription(arg0 *cloudfront.CreateMonitoringSubscriptionInput) (*cloudfront.CreateMonitoringSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +983,56 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteFieldLevelEncryptionProfileWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFieldLevelEncryptionProfileWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteFieldLevelEncryptionProfileWithContext), varargs...)
+}
+
+// DeleteKeyGroup mocks base method
+func (m *MockCloudFrontAPI) DeleteKeyGroup(arg0 *cloudfront.DeleteKeyGroupInput) (*cloudfront.DeleteKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteKeyGroup", arg0)
+	ret0, _ := ret[0].(*cloudfront.DeleteKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteKeyGroup indicates an expected call of DeleteKeyGroup
+func (mr *MockCloudFrontAPIMockRecorder) DeleteKeyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKeyGroup", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteKeyGroup), arg0)
+}
+
+// DeleteKeyGroupRequest mocks base method
+func (m *MockCloudFrontAPI) DeleteKeyGroupRequest(arg0 *cloudfront.DeleteKeyGroupInput) (*request.Request, *cloudfront.DeleteKeyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteKeyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.DeleteKeyGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteKeyGroupRequest indicates an expected call of DeleteKeyGroupRequest
+func (mr *MockCloudFrontAPIMockRecorder) DeleteKeyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKeyGroupRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteKeyGroupRequest), arg0)
+}
+
+// DeleteKeyGroupWithContext mocks base method
+func (m *MockCloudFrontAPI) DeleteKeyGroupWithContext(arg0 context.Context, arg1 *cloudfront.DeleteKeyGroupInput, arg2 ...request.Option) (*cloudfront.DeleteKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteKeyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.DeleteKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteKeyGroupWithContext indicates an expected call of DeleteKeyGroupWithContext
+func (mr *MockCloudFrontAPIMockRecorder) DeleteKeyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKeyGroupWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteKeyGroupWithContext), varargs...)
 }
 
 // DeleteMonitoringSubscription mocks base method
@@ -1735,6 +1835,106 @@ func (mr *MockCloudFrontAPIMockRecorder) GetInvalidationWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvalidationWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetInvalidationWithContext), varargs...)
 }
 
+// GetKeyGroup mocks base method
+func (m *MockCloudFrontAPI) GetKeyGroup(arg0 *cloudfront.GetKeyGroupInput) (*cloudfront.GetKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetKeyGroup", arg0)
+	ret0, _ := ret[0].(*cloudfront.GetKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetKeyGroup indicates an expected call of GetKeyGroup
+func (mr *MockCloudFrontAPIMockRecorder) GetKeyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKeyGroup", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetKeyGroup), arg0)
+}
+
+// GetKeyGroupConfig mocks base method
+func (m *MockCloudFrontAPI) GetKeyGroupConfig(arg0 *cloudfront.GetKeyGroupConfigInput) (*cloudfront.GetKeyGroupConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetKeyGroupConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.GetKeyGroupConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetKeyGroupConfig indicates an expected call of GetKeyGroupConfig
+func (mr *MockCloudFrontAPIMockRecorder) GetKeyGroupConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKeyGroupConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetKeyGroupConfig), arg0)
+}
+
+// GetKeyGroupConfigRequest mocks base method
+func (m *MockCloudFrontAPI) GetKeyGroupConfigRequest(arg0 *cloudfront.GetKeyGroupConfigInput) (*request.Request, *cloudfront.GetKeyGroupConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetKeyGroupConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.GetKeyGroupConfigOutput)
+	return ret0, ret1
+}
+
+// GetKeyGroupConfigRequest indicates an expected call of GetKeyGroupConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) GetKeyGroupConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKeyGroupConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetKeyGroupConfigRequest), arg0)
+}
+
+// GetKeyGroupConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) GetKeyGroupConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetKeyGroupConfigInput, arg2 ...request.Option) (*cloudfront.GetKeyGroupConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetKeyGroupConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.GetKeyGroupConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetKeyGroupConfigWithContext indicates an expected call of GetKeyGroupConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) GetKeyGroupConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKeyGroupConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetKeyGroupConfigWithContext), varargs...)
+}
+
+// GetKeyGroupRequest mocks base method
+func (m *MockCloudFrontAPI) GetKeyGroupRequest(arg0 *cloudfront.GetKeyGroupInput) (*request.Request, *cloudfront.GetKeyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetKeyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.GetKeyGroupOutput)
+	return ret0, ret1
+}
+
+// GetKeyGroupRequest indicates an expected call of GetKeyGroupRequest
+func (mr *MockCloudFrontAPIMockRecorder) GetKeyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKeyGroupRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetKeyGroupRequest), arg0)
+}
+
+// GetKeyGroupWithContext mocks base method
+func (m *MockCloudFrontAPI) GetKeyGroupWithContext(arg0 context.Context, arg1 *cloudfront.GetKeyGroupInput, arg2 ...request.Option) (*cloudfront.GetKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetKeyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.GetKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetKeyGroupWithContext indicates an expected call of GetKeyGroupWithContext
+func (mr *MockCloudFrontAPIMockRecorder) GetKeyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKeyGroupWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetKeyGroupWithContext), varargs...)
+}
+
 // GetMonitoringSubscription mocks base method
 func (m *MockCloudFrontAPI) GetMonitoringSubscription(arg0 *cloudfront.GetMonitoringSubscriptionInput) (*cloudfront.GetMonitoringSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
@@ -2333,6 +2533,56 @@ func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByCachePolicyIdWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByCachePolicyIdWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByCachePolicyIdWithContext), varargs...)
 }
 
+// ListDistributionsByKeyGroup mocks base method
+func (m *MockCloudFrontAPI) ListDistributionsByKeyGroup(arg0 *cloudfront.ListDistributionsByKeyGroupInput) (*cloudfront.ListDistributionsByKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDistributionsByKeyGroup", arg0)
+	ret0, _ := ret[0].(*cloudfront.ListDistributionsByKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDistributionsByKeyGroup indicates an expected call of ListDistributionsByKeyGroup
+func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByKeyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByKeyGroup", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByKeyGroup), arg0)
+}
+
+// ListDistributionsByKeyGroupRequest mocks base method
+func (m *MockCloudFrontAPI) ListDistributionsByKeyGroupRequest(arg0 *cloudfront.ListDistributionsByKeyGroupInput) (*request.Request, *cloudfront.ListDistributionsByKeyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDistributionsByKeyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.ListDistributionsByKeyGroupOutput)
+	return ret0, ret1
+}
+
+// ListDistributionsByKeyGroupRequest indicates an expected call of ListDistributionsByKeyGroupRequest
+func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByKeyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByKeyGroupRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByKeyGroupRequest), arg0)
+}
+
+// ListDistributionsByKeyGroupWithContext mocks base method
+func (m *MockCloudFrontAPI) ListDistributionsByKeyGroupWithContext(arg0 context.Context, arg1 *cloudfront.ListDistributionsByKeyGroupInput, arg2 ...request.Option) (*cloudfront.ListDistributionsByKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDistributionsByKeyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.ListDistributionsByKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDistributionsByKeyGroupWithContext indicates an expected call of ListDistributionsByKeyGroupWithContext
+func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByKeyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByKeyGroupWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByKeyGroupWithContext), varargs...)
+}
+
 // ListDistributionsByOriginRequestPolicyId mocks base method
 func (m *MockCloudFrontAPI) ListDistributionsByOriginRequestPolicyId(arg0 *cloudfront.ListDistributionsByOriginRequestPolicyIdInput) (*cloudfront.ListDistributionsByOriginRequestPolicyIdOutput, error) {
 	m.ctrl.T.Helper()
@@ -2732,6 +2982,56 @@ func (mr *MockCloudFrontAPIMockRecorder) ListInvalidationsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvalidationsWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListInvalidationsWithContext), varargs...)
+}
+
+// ListKeyGroups mocks base method
+func (m *MockCloudFrontAPI) ListKeyGroups(arg0 *cloudfront.ListKeyGroupsInput) (*cloudfront.ListKeyGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKeyGroups", arg0)
+	ret0, _ := ret[0].(*cloudfront.ListKeyGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListKeyGroups indicates an expected call of ListKeyGroups
+func (mr *MockCloudFrontAPIMockRecorder) ListKeyGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeyGroups", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListKeyGroups), arg0)
+}
+
+// ListKeyGroupsRequest mocks base method
+func (m *MockCloudFrontAPI) ListKeyGroupsRequest(arg0 *cloudfront.ListKeyGroupsInput) (*request.Request, *cloudfront.ListKeyGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKeyGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.ListKeyGroupsOutput)
+	return ret0, ret1
+}
+
+// ListKeyGroupsRequest indicates an expected call of ListKeyGroupsRequest
+func (mr *MockCloudFrontAPIMockRecorder) ListKeyGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeyGroupsRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListKeyGroupsRequest), arg0)
+}
+
+// ListKeyGroupsWithContext mocks base method
+func (m *MockCloudFrontAPI) ListKeyGroupsWithContext(arg0 context.Context, arg1 *cloudfront.ListKeyGroupsInput, arg2 ...request.Option) (*cloudfront.ListKeyGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListKeyGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.ListKeyGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListKeyGroupsWithContext indicates an expected call of ListKeyGroupsWithContext
+func (mr *MockCloudFrontAPIMockRecorder) ListKeyGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeyGroupsWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListKeyGroupsWithContext), varargs...)
 }
 
 // ListOriginRequestPolicies mocks base method
@@ -3365,6 +3665,56 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateFieldLevelEncryptionProfileWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFieldLevelEncryptionProfileWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateFieldLevelEncryptionProfileWithContext), varargs...)
+}
+
+// UpdateKeyGroup mocks base method
+func (m *MockCloudFrontAPI) UpdateKeyGroup(arg0 *cloudfront.UpdateKeyGroupInput) (*cloudfront.UpdateKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateKeyGroup", arg0)
+	ret0, _ := ret[0].(*cloudfront.UpdateKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateKeyGroup indicates an expected call of UpdateKeyGroup
+func (mr *MockCloudFrontAPIMockRecorder) UpdateKeyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKeyGroup", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateKeyGroup), arg0)
+}
+
+// UpdateKeyGroupRequest mocks base method
+func (m *MockCloudFrontAPI) UpdateKeyGroupRequest(arg0 *cloudfront.UpdateKeyGroupInput) (*request.Request, *cloudfront.UpdateKeyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateKeyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.UpdateKeyGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateKeyGroupRequest indicates an expected call of UpdateKeyGroupRequest
+func (mr *MockCloudFrontAPIMockRecorder) UpdateKeyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKeyGroupRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateKeyGroupRequest), arg0)
+}
+
+// UpdateKeyGroupWithContext mocks base method
+func (m *MockCloudFrontAPI) UpdateKeyGroupWithContext(arg0 context.Context, arg1 *cloudfront.UpdateKeyGroupInput, arg2 ...request.Option) (*cloudfront.UpdateKeyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateKeyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.UpdateKeyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateKeyGroupWithContext indicates an expected call of UpdateKeyGroupWithContext
+func (mr *MockCloudFrontAPIMockRecorder) UpdateKeyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKeyGroupWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateKeyGroupWithContext), varargs...)
 }
 
 // UpdateOriginRequestPolicy mocks base method
