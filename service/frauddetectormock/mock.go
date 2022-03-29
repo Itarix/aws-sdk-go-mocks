@@ -485,6 +485,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) DeleteDetectorWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDetectorWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteDetectorWithContext), varargs...)
 }
 
+// DeleteEntityType mocks base method
+func (m *MockFraudDetectorAPI) DeleteEntityType(arg0 *frauddetector.DeleteEntityTypeInput) (*frauddetector.DeleteEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEntityType", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEntityType indicates an expected call of DeleteEntityType
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteEntityType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityType", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEntityType), arg0)
+}
+
+// DeleteEntityTypeRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteEntityTypeRequest(arg0 *frauddetector.DeleteEntityTypeInput) (*request.Request, *frauddetector.DeleteEntityTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEntityTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteEntityTypeOutput)
+	return ret0, ret1
+}
+
+// DeleteEntityTypeRequest indicates an expected call of DeleteEntityTypeRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteEntityTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityTypeRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEntityTypeRequest), arg0)
+}
+
+// DeleteEntityTypeWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteEntityTypeWithContext(arg0 context.Context, arg1 *frauddetector.DeleteEntityTypeInput, arg2 ...request.Option) (*frauddetector.DeleteEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEntityTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEntityTypeWithContext indicates an expected call of DeleteEntityTypeWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteEntityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityTypeWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEntityTypeWithContext), varargs...)
+}
+
 // DeleteEvent mocks base method
 func (m *MockFraudDetectorAPI) DeleteEvent(arg0 *frauddetector.DeleteEventInput) (*frauddetector.DeleteEventOutput, error) {
 	m.ctrl.T.Helper()
@@ -515,6 +565,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) DeleteEventRequest(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEventRequest), arg0)
 }
 
+// DeleteEventType mocks base method
+func (m *MockFraudDetectorAPI) DeleteEventType(arg0 *frauddetector.DeleteEventTypeInput) (*frauddetector.DeleteEventTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEventType", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteEventTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEventType indicates an expected call of DeleteEventType
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteEventType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventType", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEventType), arg0)
+}
+
+// DeleteEventTypeRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteEventTypeRequest(arg0 *frauddetector.DeleteEventTypeInput) (*request.Request, *frauddetector.DeleteEventTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEventTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteEventTypeOutput)
+	return ret0, ret1
+}
+
+// DeleteEventTypeRequest indicates an expected call of DeleteEventTypeRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteEventTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventTypeRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEventTypeRequest), arg0)
+}
+
+// DeleteEventTypeWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteEventTypeWithContext(arg0 context.Context, arg1 *frauddetector.DeleteEventTypeInput, arg2 ...request.Option) (*frauddetector.DeleteEventTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEventTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteEventTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEventTypeWithContext indicates an expected call of DeleteEventTypeWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteEventTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventTypeWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEventTypeWithContext), varargs...)
+}
+
 // DeleteEventWithContext mocks base method
 func (m *MockFraudDetectorAPI) DeleteEventWithContext(arg0 context.Context, arg1 *frauddetector.DeleteEventInput, arg2 ...request.Option) (*frauddetector.DeleteEventOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +633,256 @@ func (mr *MockFraudDetectorAPIMockRecorder) DeleteEventWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteEventWithContext), varargs...)
+}
+
+// DeleteExternalModel mocks base method
+func (m *MockFraudDetectorAPI) DeleteExternalModel(arg0 *frauddetector.DeleteExternalModelInput) (*frauddetector.DeleteExternalModelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExternalModel", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteExternalModelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExternalModel indicates an expected call of DeleteExternalModel
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteExternalModel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExternalModel", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteExternalModel), arg0)
+}
+
+// DeleteExternalModelRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteExternalModelRequest(arg0 *frauddetector.DeleteExternalModelInput) (*request.Request, *frauddetector.DeleteExternalModelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExternalModelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteExternalModelOutput)
+	return ret0, ret1
+}
+
+// DeleteExternalModelRequest indicates an expected call of DeleteExternalModelRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteExternalModelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExternalModelRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteExternalModelRequest), arg0)
+}
+
+// DeleteExternalModelWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteExternalModelWithContext(arg0 context.Context, arg1 *frauddetector.DeleteExternalModelInput, arg2 ...request.Option) (*frauddetector.DeleteExternalModelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteExternalModelWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteExternalModelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExternalModelWithContext indicates an expected call of DeleteExternalModelWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteExternalModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExternalModelWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteExternalModelWithContext), varargs...)
+}
+
+// DeleteLabel mocks base method
+func (m *MockFraudDetectorAPI) DeleteLabel(arg0 *frauddetector.DeleteLabelInput) (*frauddetector.DeleteLabelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLabel", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLabel indicates an expected call of DeleteLabel
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteLabel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabel", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteLabel), arg0)
+}
+
+// DeleteLabelRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteLabelRequest(arg0 *frauddetector.DeleteLabelInput) (*request.Request, *frauddetector.DeleteLabelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLabelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteLabelOutput)
+	return ret0, ret1
+}
+
+// DeleteLabelRequest indicates an expected call of DeleteLabelRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteLabelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteLabelRequest), arg0)
+}
+
+// DeleteLabelWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteLabelWithContext(arg0 context.Context, arg1 *frauddetector.DeleteLabelInput, arg2 ...request.Option) (*frauddetector.DeleteLabelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLabelWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLabelWithContext indicates an expected call of DeleteLabelWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteLabelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteLabelWithContext), varargs...)
+}
+
+// DeleteModel mocks base method
+func (m *MockFraudDetectorAPI) DeleteModel(arg0 *frauddetector.DeleteModelInput) (*frauddetector.DeleteModelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteModel", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteModelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteModel indicates an expected call of DeleteModel
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteModel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModel", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteModel), arg0)
+}
+
+// DeleteModelRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteModelRequest(arg0 *frauddetector.DeleteModelInput) (*request.Request, *frauddetector.DeleteModelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteModelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteModelOutput)
+	return ret0, ret1
+}
+
+// DeleteModelRequest indicates an expected call of DeleteModelRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteModelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteModelRequest), arg0)
+}
+
+// DeleteModelVersion mocks base method
+func (m *MockFraudDetectorAPI) DeleteModelVersion(arg0 *frauddetector.DeleteModelVersionInput) (*frauddetector.DeleteModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteModelVersion", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteModelVersion indicates an expected call of DeleteModelVersion
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteModelVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelVersion", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteModelVersion), arg0)
+}
+
+// DeleteModelVersionRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteModelVersionRequest(arg0 *frauddetector.DeleteModelVersionInput) (*request.Request, *frauddetector.DeleteModelVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteModelVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteModelVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteModelVersionRequest indicates an expected call of DeleteModelVersionRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteModelVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelVersionRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteModelVersionRequest), arg0)
+}
+
+// DeleteModelVersionWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteModelVersionWithContext(arg0 context.Context, arg1 *frauddetector.DeleteModelVersionInput, arg2 ...request.Option) (*frauddetector.DeleteModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteModelVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteModelVersionWithContext indicates an expected call of DeleteModelVersionWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteModelVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelVersionWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteModelVersionWithContext), varargs...)
+}
+
+// DeleteModelWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteModelWithContext(arg0 context.Context, arg1 *frauddetector.DeleteModelInput, arg2 ...request.Option) (*frauddetector.DeleteModelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteModelWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteModelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteModelWithContext indicates an expected call of DeleteModelWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteModelWithContext), varargs...)
+}
+
+// DeleteOutcome mocks base method
+func (m *MockFraudDetectorAPI) DeleteOutcome(arg0 *frauddetector.DeleteOutcomeInput) (*frauddetector.DeleteOutcomeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOutcome", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteOutcomeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOutcome indicates an expected call of DeleteOutcome
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteOutcome(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOutcome", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteOutcome), arg0)
+}
+
+// DeleteOutcomeRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteOutcomeRequest(arg0 *frauddetector.DeleteOutcomeInput) (*request.Request, *frauddetector.DeleteOutcomeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOutcomeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteOutcomeOutput)
+	return ret0, ret1
+}
+
+// DeleteOutcomeRequest indicates an expected call of DeleteOutcomeRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteOutcomeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOutcomeRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteOutcomeRequest), arg0)
+}
+
+// DeleteOutcomeWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteOutcomeWithContext(arg0 context.Context, arg1 *frauddetector.DeleteOutcomeInput, arg2 ...request.Option) (*frauddetector.DeleteOutcomeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteOutcomeWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteOutcomeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOutcomeWithContext indicates an expected call of DeleteOutcomeWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteOutcomeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOutcomeWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteOutcomeWithContext), varargs...)
 }
 
 // DeleteRule mocks base method
@@ -583,6 +933,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) DeleteRuleWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteRuleWithContext), varargs...)
+}
+
+// DeleteVariable mocks base method
+func (m *MockFraudDetectorAPI) DeleteVariable(arg0 *frauddetector.DeleteVariableInput) (*frauddetector.DeleteVariableOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVariable", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteVariableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVariable indicates an expected call of DeleteVariable
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteVariable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVariable", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteVariable), arg0)
+}
+
+// DeleteVariableRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteVariableRequest(arg0 *frauddetector.DeleteVariableInput) (*request.Request, *frauddetector.DeleteVariableOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVariableRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteVariableOutput)
+	return ret0, ret1
+}
+
+// DeleteVariableRequest indicates an expected call of DeleteVariableRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteVariableRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVariableRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteVariableRequest), arg0)
+}
+
+// DeleteVariableWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteVariableWithContext(arg0 context.Context, arg1 *frauddetector.DeleteVariableInput, arg2 ...request.Option) (*frauddetector.DeleteVariableOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVariableWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteVariableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVariableWithContext indicates an expected call of DeleteVariableWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteVariableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVariableWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteVariableWithContext), varargs...)
 }
 
 // DescribeDetector mocks base method

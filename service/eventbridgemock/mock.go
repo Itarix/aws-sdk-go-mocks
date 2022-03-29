@@ -85,6 +85,106 @@ func (mr *MockEventBridgeAPIMockRecorder) ActivateEventSourceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEventSourceWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).ActivateEventSourceWithContext), varargs...)
 }
 
+// CancelReplay mocks base method
+func (m *MockEventBridgeAPI) CancelReplay(arg0 *eventbridge.CancelReplayInput) (*eventbridge.CancelReplayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelReplay", arg0)
+	ret0, _ := ret[0].(*eventbridge.CancelReplayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelReplay indicates an expected call of CancelReplay
+func (mr *MockEventBridgeAPIMockRecorder) CancelReplay(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelReplay", reflect.TypeOf((*MockEventBridgeAPI)(nil).CancelReplay), arg0)
+}
+
+// CancelReplayRequest mocks base method
+func (m *MockEventBridgeAPI) CancelReplayRequest(arg0 *eventbridge.CancelReplayInput) (*request.Request, *eventbridge.CancelReplayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelReplayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.CancelReplayOutput)
+	return ret0, ret1
+}
+
+// CancelReplayRequest indicates an expected call of CancelReplayRequest
+func (mr *MockEventBridgeAPIMockRecorder) CancelReplayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelReplayRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).CancelReplayRequest), arg0)
+}
+
+// CancelReplayWithContext mocks base method
+func (m *MockEventBridgeAPI) CancelReplayWithContext(arg0 context.Context, arg1 *eventbridge.CancelReplayInput, arg2 ...request.Option) (*eventbridge.CancelReplayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelReplayWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.CancelReplayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelReplayWithContext indicates an expected call of CancelReplayWithContext
+func (mr *MockEventBridgeAPIMockRecorder) CancelReplayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelReplayWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).CancelReplayWithContext), varargs...)
+}
+
+// CreateArchive mocks base method
+func (m *MockEventBridgeAPI) CreateArchive(arg0 *eventbridge.CreateArchiveInput) (*eventbridge.CreateArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateArchive", arg0)
+	ret0, _ := ret[0].(*eventbridge.CreateArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateArchive indicates an expected call of CreateArchive
+func (mr *MockEventBridgeAPIMockRecorder) CreateArchive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateArchive", reflect.TypeOf((*MockEventBridgeAPI)(nil).CreateArchive), arg0)
+}
+
+// CreateArchiveRequest mocks base method
+func (m *MockEventBridgeAPI) CreateArchiveRequest(arg0 *eventbridge.CreateArchiveInput) (*request.Request, *eventbridge.CreateArchiveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateArchiveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.CreateArchiveOutput)
+	return ret0, ret1
+}
+
+// CreateArchiveRequest indicates an expected call of CreateArchiveRequest
+func (mr *MockEventBridgeAPIMockRecorder) CreateArchiveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateArchiveRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).CreateArchiveRequest), arg0)
+}
+
+// CreateArchiveWithContext mocks base method
+func (m *MockEventBridgeAPI) CreateArchiveWithContext(arg0 context.Context, arg1 *eventbridge.CreateArchiveInput, arg2 ...request.Option) (*eventbridge.CreateArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateArchiveWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.CreateArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateArchiveWithContext indicates an expected call of CreateArchiveWithContext
+func (mr *MockEventBridgeAPIMockRecorder) CreateArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateArchiveWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).CreateArchiveWithContext), varargs...)
+}
+
 // CreateEventBus mocks base method
 func (m *MockEventBridgeAPI) CreateEventBus(arg0 *eventbridge.CreateEventBusInput) (*eventbridge.CreateEventBusOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +333,56 @@ func (mr *MockEventBridgeAPIMockRecorder) DeactivateEventSourceWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEventSourceWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).DeactivateEventSourceWithContext), varargs...)
+}
+
+// DeleteArchive mocks base method
+func (m *MockEventBridgeAPI) DeleteArchive(arg0 *eventbridge.DeleteArchiveInput) (*eventbridge.DeleteArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteArchive", arg0)
+	ret0, _ := ret[0].(*eventbridge.DeleteArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteArchive indicates an expected call of DeleteArchive
+func (mr *MockEventBridgeAPIMockRecorder) DeleteArchive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchive", reflect.TypeOf((*MockEventBridgeAPI)(nil).DeleteArchive), arg0)
+}
+
+// DeleteArchiveRequest mocks base method
+func (m *MockEventBridgeAPI) DeleteArchiveRequest(arg0 *eventbridge.DeleteArchiveInput) (*request.Request, *eventbridge.DeleteArchiveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteArchiveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.DeleteArchiveOutput)
+	return ret0, ret1
+}
+
+// DeleteArchiveRequest indicates an expected call of DeleteArchiveRequest
+func (mr *MockEventBridgeAPIMockRecorder) DeleteArchiveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchiveRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).DeleteArchiveRequest), arg0)
+}
+
+// DeleteArchiveWithContext mocks base method
+func (m *MockEventBridgeAPI) DeleteArchiveWithContext(arg0 context.Context, arg1 *eventbridge.DeleteArchiveInput, arg2 ...request.Option) (*eventbridge.DeleteArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteArchiveWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.DeleteArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteArchiveWithContext indicates an expected call of DeleteArchiveWithContext
+func (mr *MockEventBridgeAPIMockRecorder) DeleteArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchiveWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).DeleteArchiveWithContext), varargs...)
 }
 
 // DeleteEventBus mocks base method
@@ -385,6 +535,56 @@ func (mr *MockEventBridgeAPIMockRecorder) DeleteRuleWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).DeleteRuleWithContext), varargs...)
 }
 
+// DescribeArchive mocks base method
+func (m *MockEventBridgeAPI) DescribeArchive(arg0 *eventbridge.DescribeArchiveInput) (*eventbridge.DescribeArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeArchive", arg0)
+	ret0, _ := ret[0].(*eventbridge.DescribeArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeArchive indicates an expected call of DescribeArchive
+func (mr *MockEventBridgeAPIMockRecorder) DescribeArchive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeArchive", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribeArchive), arg0)
+}
+
+// DescribeArchiveRequest mocks base method
+func (m *MockEventBridgeAPI) DescribeArchiveRequest(arg0 *eventbridge.DescribeArchiveInput) (*request.Request, *eventbridge.DescribeArchiveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeArchiveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.DescribeArchiveOutput)
+	return ret0, ret1
+}
+
+// DescribeArchiveRequest indicates an expected call of DescribeArchiveRequest
+func (mr *MockEventBridgeAPIMockRecorder) DescribeArchiveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeArchiveRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribeArchiveRequest), arg0)
+}
+
+// DescribeArchiveWithContext mocks base method
+func (m *MockEventBridgeAPI) DescribeArchiveWithContext(arg0 context.Context, arg1 *eventbridge.DescribeArchiveInput, arg2 ...request.Option) (*eventbridge.DescribeArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeArchiveWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.DescribeArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeArchiveWithContext indicates an expected call of DescribeArchiveWithContext
+func (mr *MockEventBridgeAPIMockRecorder) DescribeArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeArchiveWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribeArchiveWithContext), varargs...)
+}
+
 // DescribeEventBus mocks base method
 func (m *MockEventBridgeAPI) DescribeEventBus(arg0 *eventbridge.DescribeEventBusInput) (*eventbridge.DescribeEventBusOutput, error) {
 	m.ctrl.T.Helper()
@@ -535,6 +735,56 @@ func (mr *MockEventBridgeAPIMockRecorder) DescribePartnerEventSourceWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePartnerEventSourceWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribePartnerEventSourceWithContext), varargs...)
 }
 
+// DescribeReplay mocks base method
+func (m *MockEventBridgeAPI) DescribeReplay(arg0 *eventbridge.DescribeReplayInput) (*eventbridge.DescribeReplayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplay", arg0)
+	ret0, _ := ret[0].(*eventbridge.DescribeReplayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplay indicates an expected call of DescribeReplay
+func (mr *MockEventBridgeAPIMockRecorder) DescribeReplay(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplay", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribeReplay), arg0)
+}
+
+// DescribeReplayRequest mocks base method
+func (m *MockEventBridgeAPI) DescribeReplayRequest(arg0 *eventbridge.DescribeReplayInput) (*request.Request, *eventbridge.DescribeReplayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.DescribeReplayOutput)
+	return ret0, ret1
+}
+
+// DescribeReplayRequest indicates an expected call of DescribeReplayRequest
+func (mr *MockEventBridgeAPIMockRecorder) DescribeReplayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplayRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribeReplayRequest), arg0)
+}
+
+// DescribeReplayWithContext mocks base method
+func (m *MockEventBridgeAPI) DescribeReplayWithContext(arg0 context.Context, arg1 *eventbridge.DescribeReplayInput, arg2 ...request.Option) (*eventbridge.DescribeReplayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplayWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.DescribeReplayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplayWithContext indicates an expected call of DescribeReplayWithContext
+func (mr *MockEventBridgeAPIMockRecorder) DescribeReplayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplayWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).DescribeReplayWithContext), varargs...)
+}
+
 // DescribeRule mocks base method
 func (m *MockEventBridgeAPI) DescribeRule(arg0 *eventbridge.DescribeRuleInput) (*eventbridge.DescribeRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +933,56 @@ func (mr *MockEventBridgeAPIMockRecorder) EnableRuleWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableRuleWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).EnableRuleWithContext), varargs...)
+}
+
+// ListArchives mocks base method
+func (m *MockEventBridgeAPI) ListArchives(arg0 *eventbridge.ListArchivesInput) (*eventbridge.ListArchivesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListArchives", arg0)
+	ret0, _ := ret[0].(*eventbridge.ListArchivesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListArchives indicates an expected call of ListArchives
+func (mr *MockEventBridgeAPIMockRecorder) ListArchives(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArchives", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListArchives), arg0)
+}
+
+// ListArchivesRequest mocks base method
+func (m *MockEventBridgeAPI) ListArchivesRequest(arg0 *eventbridge.ListArchivesInput) (*request.Request, *eventbridge.ListArchivesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListArchivesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.ListArchivesOutput)
+	return ret0, ret1
+}
+
+// ListArchivesRequest indicates an expected call of ListArchivesRequest
+func (mr *MockEventBridgeAPIMockRecorder) ListArchivesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArchivesRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListArchivesRequest), arg0)
+}
+
+// ListArchivesWithContext mocks base method
+func (m *MockEventBridgeAPI) ListArchivesWithContext(arg0 context.Context, arg1 *eventbridge.ListArchivesInput, arg2 ...request.Option) (*eventbridge.ListArchivesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListArchivesWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.ListArchivesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListArchivesWithContext indicates an expected call of ListArchivesWithContext
+func (mr *MockEventBridgeAPIMockRecorder) ListArchivesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArchivesWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListArchivesWithContext), varargs...)
 }
 
 // ListEventBuses mocks base method
@@ -883,6 +1183,56 @@ func (mr *MockEventBridgeAPIMockRecorder) ListPartnerEventSourcesWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerEventSourcesWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListPartnerEventSourcesWithContext), varargs...)
+}
+
+// ListReplays mocks base method
+func (m *MockEventBridgeAPI) ListReplays(arg0 *eventbridge.ListReplaysInput) (*eventbridge.ListReplaysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReplays", arg0)
+	ret0, _ := ret[0].(*eventbridge.ListReplaysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReplays indicates an expected call of ListReplays
+func (mr *MockEventBridgeAPIMockRecorder) ListReplays(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplays", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListReplays), arg0)
+}
+
+// ListReplaysRequest mocks base method
+func (m *MockEventBridgeAPI) ListReplaysRequest(arg0 *eventbridge.ListReplaysInput) (*request.Request, *eventbridge.ListReplaysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReplaysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.ListReplaysOutput)
+	return ret0, ret1
+}
+
+// ListReplaysRequest indicates an expected call of ListReplaysRequest
+func (mr *MockEventBridgeAPIMockRecorder) ListReplaysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplaysRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListReplaysRequest), arg0)
+}
+
+// ListReplaysWithContext mocks base method
+func (m *MockEventBridgeAPI) ListReplaysWithContext(arg0 context.Context, arg1 *eventbridge.ListReplaysInput, arg2 ...request.Option) (*eventbridge.ListReplaysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReplaysWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.ListReplaysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReplaysWithContext indicates an expected call of ListReplaysWithContext
+func (mr *MockEventBridgeAPIMockRecorder) ListReplaysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplaysWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).ListReplaysWithContext), varargs...)
 }
 
 // ListRuleNamesByTarget mocks base method
@@ -1435,6 +1785,56 @@ func (mr *MockEventBridgeAPIMockRecorder) RemoveTargetsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTargetsWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).RemoveTargetsWithContext), varargs...)
 }
 
+// StartReplay mocks base method
+func (m *MockEventBridgeAPI) StartReplay(arg0 *eventbridge.StartReplayInput) (*eventbridge.StartReplayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReplay", arg0)
+	ret0, _ := ret[0].(*eventbridge.StartReplayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReplay indicates an expected call of StartReplay
+func (mr *MockEventBridgeAPIMockRecorder) StartReplay(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplay", reflect.TypeOf((*MockEventBridgeAPI)(nil).StartReplay), arg0)
+}
+
+// StartReplayRequest mocks base method
+func (m *MockEventBridgeAPI) StartReplayRequest(arg0 *eventbridge.StartReplayInput) (*request.Request, *eventbridge.StartReplayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReplayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.StartReplayOutput)
+	return ret0, ret1
+}
+
+// StartReplayRequest indicates an expected call of StartReplayRequest
+func (mr *MockEventBridgeAPIMockRecorder) StartReplayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplayRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).StartReplayRequest), arg0)
+}
+
+// StartReplayWithContext mocks base method
+func (m *MockEventBridgeAPI) StartReplayWithContext(arg0 context.Context, arg1 *eventbridge.StartReplayInput, arg2 ...request.Option) (*eventbridge.StartReplayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartReplayWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.StartReplayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReplayWithContext indicates an expected call of StartReplayWithContext
+func (mr *MockEventBridgeAPIMockRecorder) StartReplayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplayWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).StartReplayWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockEventBridgeAPI) TagResource(arg0 *eventbridge.TagResourceInput) (*eventbridge.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1583,4 +1983,54 @@ func (mr *MockEventBridgeAPIMockRecorder) UntagResourceWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateArchive mocks base method
+func (m *MockEventBridgeAPI) UpdateArchive(arg0 *eventbridge.UpdateArchiveInput) (*eventbridge.UpdateArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateArchive", arg0)
+	ret0, _ := ret[0].(*eventbridge.UpdateArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateArchive indicates an expected call of UpdateArchive
+func (mr *MockEventBridgeAPIMockRecorder) UpdateArchive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateArchive", reflect.TypeOf((*MockEventBridgeAPI)(nil).UpdateArchive), arg0)
+}
+
+// UpdateArchiveRequest mocks base method
+func (m *MockEventBridgeAPI) UpdateArchiveRequest(arg0 *eventbridge.UpdateArchiveInput) (*request.Request, *eventbridge.UpdateArchiveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateArchiveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eventbridge.UpdateArchiveOutput)
+	return ret0, ret1
+}
+
+// UpdateArchiveRequest indicates an expected call of UpdateArchiveRequest
+func (mr *MockEventBridgeAPIMockRecorder) UpdateArchiveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateArchiveRequest", reflect.TypeOf((*MockEventBridgeAPI)(nil).UpdateArchiveRequest), arg0)
+}
+
+// UpdateArchiveWithContext mocks base method
+func (m *MockEventBridgeAPI) UpdateArchiveWithContext(arg0 context.Context, arg1 *eventbridge.UpdateArchiveInput, arg2 ...request.Option) (*eventbridge.UpdateArchiveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateArchiveWithContext", varargs...)
+	ret0, _ := ret[0].(*eventbridge.UpdateArchiveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateArchiveWithContext indicates an expected call of UpdateArchiveWithContext
+func (mr *MockEventBridgeAPIMockRecorder) UpdateArchiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateArchiveWithContext", reflect.TypeOf((*MockEventBridgeAPI)(nil).UpdateArchiveWithContext), varargs...)
 }
