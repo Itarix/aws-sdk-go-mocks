@@ -135,6 +135,56 @@ func (mr *MockMediaConnectAPIMockRecorder) AddFlowSourcesWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddFlowSourcesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddFlowSourcesWithContext), varargs...)
 }
 
+// AddFlowVpcInterfaces mocks base method
+func (m *MockMediaConnectAPI) AddFlowVpcInterfaces(arg0 *mediaconnect.AddFlowVpcInterfacesInput) (*mediaconnect.AddFlowVpcInterfacesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddFlowVpcInterfaces", arg0)
+	ret0, _ := ret[0].(*mediaconnect.AddFlowVpcInterfacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddFlowVpcInterfaces indicates an expected call of AddFlowVpcInterfaces
+func (mr *MockMediaConnectAPIMockRecorder) AddFlowVpcInterfaces(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddFlowVpcInterfaces", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddFlowVpcInterfaces), arg0)
+}
+
+// AddFlowVpcInterfacesRequest mocks base method
+func (m *MockMediaConnectAPI) AddFlowVpcInterfacesRequest(arg0 *mediaconnect.AddFlowVpcInterfacesInput) (*request.Request, *mediaconnect.AddFlowVpcInterfacesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddFlowVpcInterfacesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.AddFlowVpcInterfacesOutput)
+	return ret0, ret1
+}
+
+// AddFlowVpcInterfacesRequest indicates an expected call of AddFlowVpcInterfacesRequest
+func (mr *MockMediaConnectAPIMockRecorder) AddFlowVpcInterfacesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddFlowVpcInterfacesRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddFlowVpcInterfacesRequest), arg0)
+}
+
+// AddFlowVpcInterfacesWithContext mocks base method
+func (m *MockMediaConnectAPI) AddFlowVpcInterfacesWithContext(arg0 context.Context, arg1 *mediaconnect.AddFlowVpcInterfacesInput, arg2 ...request.Option) (*mediaconnect.AddFlowVpcInterfacesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddFlowVpcInterfacesWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.AddFlowVpcInterfacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddFlowVpcInterfacesWithContext indicates an expected call of AddFlowVpcInterfacesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) AddFlowVpcInterfacesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddFlowVpcInterfacesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddFlowVpcInterfacesWithContext), varargs...)
+}
+
 // CreateFlow mocks base method
 func (m *MockMediaConnectAPI) CreateFlow(arg0 *mediaconnect.CreateFlowInput) (*mediaconnect.CreateFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -649,6 +699,56 @@ func (mr *MockMediaConnectAPIMockRecorder) RemoveFlowSourceWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFlowSourceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveFlowSourceWithContext), varargs...)
+}
+
+// RemoveFlowVpcInterface mocks base method
+func (m *MockMediaConnectAPI) RemoveFlowVpcInterface(arg0 *mediaconnect.RemoveFlowVpcInterfaceInput) (*mediaconnect.RemoveFlowVpcInterfaceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveFlowVpcInterface", arg0)
+	ret0, _ := ret[0].(*mediaconnect.RemoveFlowVpcInterfaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveFlowVpcInterface indicates an expected call of RemoveFlowVpcInterface
+func (mr *MockMediaConnectAPIMockRecorder) RemoveFlowVpcInterface(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFlowVpcInterface", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveFlowVpcInterface), arg0)
+}
+
+// RemoveFlowVpcInterfaceRequest mocks base method
+func (m *MockMediaConnectAPI) RemoveFlowVpcInterfaceRequest(arg0 *mediaconnect.RemoveFlowVpcInterfaceInput) (*request.Request, *mediaconnect.RemoveFlowVpcInterfaceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveFlowVpcInterfaceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.RemoveFlowVpcInterfaceOutput)
+	return ret0, ret1
+}
+
+// RemoveFlowVpcInterfaceRequest indicates an expected call of RemoveFlowVpcInterfaceRequest
+func (mr *MockMediaConnectAPIMockRecorder) RemoveFlowVpcInterfaceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFlowVpcInterfaceRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveFlowVpcInterfaceRequest), arg0)
+}
+
+// RemoveFlowVpcInterfaceWithContext mocks base method
+func (m *MockMediaConnectAPI) RemoveFlowVpcInterfaceWithContext(arg0 context.Context, arg1 *mediaconnect.RemoveFlowVpcInterfaceInput, arg2 ...request.Option) (*mediaconnect.RemoveFlowVpcInterfaceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveFlowVpcInterfaceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.RemoveFlowVpcInterfaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveFlowVpcInterfaceWithContext indicates an expected call of RemoveFlowVpcInterfaceWithContext
+func (mr *MockMediaConnectAPIMockRecorder) RemoveFlowVpcInterfaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFlowVpcInterfaceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveFlowVpcInterfaceWithContext), varargs...)
 }
 
 // RevokeFlowEntitlement mocks base method

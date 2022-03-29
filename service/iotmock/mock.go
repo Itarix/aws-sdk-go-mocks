@@ -935,6 +935,56 @@ func (mr *MockIoTAPIMockRecorder) CreateCertificateFromCsrWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCertificateFromCsrWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateCertificateFromCsrWithContext), varargs...)
 }
 
+// CreateDimension mocks base method
+func (m *MockIoTAPI) CreateDimension(arg0 *iot.CreateDimensionInput) (*iot.CreateDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDimension", arg0)
+	ret0, _ := ret[0].(*iot.CreateDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDimension indicates an expected call of CreateDimension
+func (mr *MockIoTAPIMockRecorder) CreateDimension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDimension", reflect.TypeOf((*MockIoTAPI)(nil).CreateDimension), arg0)
+}
+
+// CreateDimensionRequest mocks base method
+func (m *MockIoTAPI) CreateDimensionRequest(arg0 *iot.CreateDimensionInput) (*request.Request, *iot.CreateDimensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDimensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateDimensionOutput)
+	return ret0, ret1
+}
+
+// CreateDimensionRequest indicates an expected call of CreateDimensionRequest
+func (mr *MockIoTAPIMockRecorder) CreateDimensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDimensionRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateDimensionRequest), arg0)
+}
+
+// CreateDimensionWithContext mocks base method
+func (m *MockIoTAPI) CreateDimensionWithContext(arg0 context.Context, arg1 *iot.CreateDimensionInput, arg2 ...request.Option) (*iot.CreateDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDimensionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDimensionWithContext indicates an expected call of CreateDimensionWithContext
+func (mr *MockIoTAPIMockRecorder) CreateDimensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDimensionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateDimensionWithContext), varargs...)
+}
+
 // CreateDomainConfiguration mocks base method
 func (m *MockIoTAPI) CreateDomainConfiguration(arg0 *iot.CreateDomainConfigurationInput) (*iot.CreateDomainConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2183,6 +2233,56 @@ func (mr *MockIoTAPIMockRecorder) DeleteCertificateWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCertificateWithContext), varargs...)
+}
+
+// DeleteDimension mocks base method
+func (m *MockIoTAPI) DeleteDimension(arg0 *iot.DeleteDimensionInput) (*iot.DeleteDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDimension", arg0)
+	ret0, _ := ret[0].(*iot.DeleteDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDimension indicates an expected call of DeleteDimension
+func (mr *MockIoTAPIMockRecorder) DeleteDimension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDimension", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDimension), arg0)
+}
+
+// DeleteDimensionRequest mocks base method
+func (m *MockIoTAPI) DeleteDimensionRequest(arg0 *iot.DeleteDimensionInput) (*request.Request, *iot.DeleteDimensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDimensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteDimensionOutput)
+	return ret0, ret1
+}
+
+// DeleteDimensionRequest indicates an expected call of DeleteDimensionRequest
+func (mr *MockIoTAPIMockRecorder) DeleteDimensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDimensionRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDimensionRequest), arg0)
+}
+
+// DeleteDimensionWithContext mocks base method
+func (m *MockIoTAPI) DeleteDimensionWithContext(arg0 context.Context, arg1 *iot.DeleteDimensionInput, arg2 ...request.Option) (*iot.DeleteDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDimensionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDimensionWithContext indicates an expected call of DeleteDimensionWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteDimensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDimensionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteDimensionWithContext), varargs...)
 }
 
 // DeleteDomainConfiguration mocks base method
@@ -3733,6 +3833,56 @@ func (mr *MockIoTAPIMockRecorder) DescribeDefaultAuthorizerWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDefaultAuthorizerWithContext), varargs...)
+}
+
+// DescribeDimension mocks base method
+func (m *MockIoTAPI) DescribeDimension(arg0 *iot.DescribeDimensionInput) (*iot.DescribeDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDimension", arg0)
+	ret0, _ := ret[0].(*iot.DescribeDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDimension indicates an expected call of DescribeDimension
+func (mr *MockIoTAPIMockRecorder) DescribeDimension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDimension", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDimension), arg0)
+}
+
+// DescribeDimensionRequest mocks base method
+func (m *MockIoTAPI) DescribeDimensionRequest(arg0 *iot.DescribeDimensionInput) (*request.Request, *iot.DescribeDimensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDimensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeDimensionOutput)
+	return ret0, ret1
+}
+
+// DescribeDimensionRequest indicates an expected call of DescribeDimensionRequest
+func (mr *MockIoTAPIMockRecorder) DescribeDimensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDimensionRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDimensionRequest), arg0)
+}
+
+// DescribeDimensionWithContext mocks base method
+func (m *MockIoTAPI) DescribeDimensionWithContext(arg0 context.Context, arg1 *iot.DescribeDimensionInput, arg2 ...request.Option) (*iot.DescribeDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDimensionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDimensionWithContext indicates an expected call of DescribeDimensionWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeDimensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDimensionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDimensionWithContext), varargs...)
 }
 
 // DescribeDomainConfiguration mocks base method
@@ -6133,6 +6283,56 @@ func (mr *MockIoTAPIMockRecorder) ListCertificatesWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListCertificatesWithContext), varargs...)
+}
+
+// ListDimensions mocks base method
+func (m *MockIoTAPI) ListDimensions(arg0 *iot.ListDimensionsInput) (*iot.ListDimensionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDimensions", arg0)
+	ret0, _ := ret[0].(*iot.ListDimensionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDimensions indicates an expected call of ListDimensions
+func (mr *MockIoTAPIMockRecorder) ListDimensions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDimensions", reflect.TypeOf((*MockIoTAPI)(nil).ListDimensions), arg0)
+}
+
+// ListDimensionsRequest mocks base method
+func (m *MockIoTAPI) ListDimensionsRequest(arg0 *iot.ListDimensionsInput) (*request.Request, *iot.ListDimensionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDimensionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListDimensionsOutput)
+	return ret0, ret1
+}
+
+// ListDimensionsRequest indicates an expected call of ListDimensionsRequest
+func (mr *MockIoTAPIMockRecorder) ListDimensionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDimensionsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListDimensionsRequest), arg0)
+}
+
+// ListDimensionsWithContext mocks base method
+func (m *MockIoTAPI) ListDimensionsWithContext(arg0 context.Context, arg1 *iot.ListDimensionsInput, arg2 ...request.Option) (*iot.ListDimensionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDimensionsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListDimensionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDimensionsWithContext indicates an expected call of ListDimensionsWithContext
+func (mr *MockIoTAPIMockRecorder) ListDimensionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDimensionsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListDimensionsWithContext), varargs...)
 }
 
 // ListDomainConfigurations mocks base method
@@ -9283,6 +9483,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateCertificateWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCertificateWithContext), varargs...)
+}
+
+// UpdateDimension mocks base method
+func (m *MockIoTAPI) UpdateDimension(arg0 *iot.UpdateDimensionInput) (*iot.UpdateDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDimension", arg0)
+	ret0, _ := ret[0].(*iot.UpdateDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDimension indicates an expected call of UpdateDimension
+func (mr *MockIoTAPIMockRecorder) UpdateDimension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDimension", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDimension), arg0)
+}
+
+// UpdateDimensionRequest mocks base method
+func (m *MockIoTAPI) UpdateDimensionRequest(arg0 *iot.UpdateDimensionInput) (*request.Request, *iot.UpdateDimensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDimensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateDimensionOutput)
+	return ret0, ret1
+}
+
+// UpdateDimensionRequest indicates an expected call of UpdateDimensionRequest
+func (mr *MockIoTAPIMockRecorder) UpdateDimensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDimensionRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDimensionRequest), arg0)
+}
+
+// UpdateDimensionWithContext mocks base method
+func (m *MockIoTAPI) UpdateDimensionWithContext(arg0 context.Context, arg1 *iot.UpdateDimensionInput, arg2 ...request.Option) (*iot.UpdateDimensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDimensionWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateDimensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDimensionWithContext indicates an expected call of UpdateDimensionWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateDimensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDimensionWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateDimensionWithContext), varargs...)
 }
 
 // UpdateDomainConfiguration mocks base method
