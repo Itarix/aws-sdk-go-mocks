@@ -985,6 +985,56 @@ func (mr *MockRedshiftAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateTagsWithContext), varargs...)
 }
 
+// CreateUsageLimit mocks base method
+func (m *MockRedshiftAPI) CreateUsageLimit(arg0 *redshift.CreateUsageLimitInput) (*redshift.CreateUsageLimitOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUsageLimit", arg0)
+	ret0, _ := ret[0].(*redshift.CreateUsageLimitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUsageLimit indicates an expected call of CreateUsageLimit
+func (mr *MockRedshiftAPIMockRecorder) CreateUsageLimit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsageLimit", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateUsageLimit), arg0)
+}
+
+// CreateUsageLimitRequest mocks base method
+func (m *MockRedshiftAPI) CreateUsageLimitRequest(arg0 *redshift.CreateUsageLimitInput) (*request.Request, *redshift.CreateUsageLimitOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUsageLimitRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.CreateUsageLimitOutput)
+	return ret0, ret1
+}
+
+// CreateUsageLimitRequest indicates an expected call of CreateUsageLimitRequest
+func (mr *MockRedshiftAPIMockRecorder) CreateUsageLimitRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsageLimitRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateUsageLimitRequest), arg0)
+}
+
+// CreateUsageLimitWithContext mocks base method
+func (m *MockRedshiftAPI) CreateUsageLimitWithContext(arg0 context.Context, arg1 *redshift.CreateUsageLimitInput, arg2 ...request.Option) (*redshift.CreateUsageLimitOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUsageLimitWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.CreateUsageLimitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUsageLimitWithContext indicates an expected call of CreateUsageLimitWithContext
+func (mr *MockRedshiftAPIMockRecorder) CreateUsageLimitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsageLimitWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateUsageLimitWithContext), varargs...)
+}
+
 // DeleteCluster mocks base method
 func (m *MockRedshiftAPI) DeleteCluster(arg0 *redshift.DeleteClusterInput) (*redshift.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1583,6 +1633,56 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteTagsWithContext), varargs...)
+}
+
+// DeleteUsageLimit mocks base method
+func (m *MockRedshiftAPI) DeleteUsageLimit(arg0 *redshift.DeleteUsageLimitInput) (*redshift.DeleteUsageLimitOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUsageLimit", arg0)
+	ret0, _ := ret[0].(*redshift.DeleteUsageLimitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUsageLimit indicates an expected call of DeleteUsageLimit
+func (mr *MockRedshiftAPIMockRecorder) DeleteUsageLimit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsageLimit", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteUsageLimit), arg0)
+}
+
+// DeleteUsageLimitRequest mocks base method
+func (m *MockRedshiftAPI) DeleteUsageLimitRequest(arg0 *redshift.DeleteUsageLimitInput) (*request.Request, *redshift.DeleteUsageLimitOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUsageLimitRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DeleteUsageLimitOutput)
+	return ret0, ret1
+}
+
+// DeleteUsageLimitRequest indicates an expected call of DeleteUsageLimitRequest
+func (mr *MockRedshiftAPIMockRecorder) DeleteUsageLimitRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsageLimitRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteUsageLimitRequest), arg0)
+}
+
+// DeleteUsageLimitWithContext mocks base method
+func (m *MockRedshiftAPI) DeleteUsageLimitWithContext(arg0 context.Context, arg1 *redshift.DeleteUsageLimitInput, arg2 ...request.Option) (*redshift.DeleteUsageLimitOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteUsageLimitWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DeleteUsageLimitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUsageLimitWithContext indicates an expected call of DeleteUsageLimitWithContext
+func (mr *MockRedshiftAPIMockRecorder) DeleteUsageLimitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUsageLimitWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteUsageLimitWithContext), varargs...)
 }
 
 // DescribeAccountAttributes mocks base method
@@ -3546,6 +3646,89 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeTagsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTagsWithContext), varargs...)
 }
 
+// DescribeUsageLimits mocks base method
+func (m *MockRedshiftAPI) DescribeUsageLimits(arg0 *redshift.DescribeUsageLimitsInput) (*redshift.DescribeUsageLimitsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUsageLimits", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeUsageLimitsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUsageLimits indicates an expected call of DescribeUsageLimits
+func (mr *MockRedshiftAPIMockRecorder) DescribeUsageLimits(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsageLimits", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeUsageLimits), arg0)
+}
+
+// DescribeUsageLimitsPages mocks base method
+func (m *MockRedshiftAPI) DescribeUsageLimitsPages(arg0 *redshift.DescribeUsageLimitsInput, arg1 func(*redshift.DescribeUsageLimitsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUsageLimitsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeUsageLimitsPages indicates an expected call of DescribeUsageLimitsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeUsageLimitsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsageLimitsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeUsageLimitsPages), arg0, arg1)
+}
+
+// DescribeUsageLimitsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeUsageLimitsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeUsageLimitsInput, arg2 func(*redshift.DescribeUsageLimitsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUsageLimitsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeUsageLimitsPagesWithContext indicates an expected call of DescribeUsageLimitsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeUsageLimitsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsageLimitsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeUsageLimitsPagesWithContext), varargs...)
+}
+
+// DescribeUsageLimitsRequest mocks base method
+func (m *MockRedshiftAPI) DescribeUsageLimitsRequest(arg0 *redshift.DescribeUsageLimitsInput) (*request.Request, *redshift.DescribeUsageLimitsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUsageLimitsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeUsageLimitsOutput)
+	return ret0, ret1
+}
+
+// DescribeUsageLimitsRequest indicates an expected call of DescribeUsageLimitsRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeUsageLimitsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsageLimitsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeUsageLimitsRequest), arg0)
+}
+
+// DescribeUsageLimitsWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeUsageLimitsWithContext(arg0 context.Context, arg1 *redshift.DescribeUsageLimitsInput, arg2 ...request.Option) (*redshift.DescribeUsageLimitsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUsageLimitsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeUsageLimitsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUsageLimitsWithContext indicates an expected call of DescribeUsageLimitsWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeUsageLimitsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsageLimitsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeUsageLimitsWithContext), varargs...)
+}
+
 // DisableLogging mocks base method
 func (m *MockRedshiftAPI) DisableLogging(arg0 *redshift.DisableLoggingInput) (*redshift.LoggingStatus, error) {
 	m.ctrl.T.Helper()
@@ -4444,6 +4627,56 @@ func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotScheduleWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotScheduleWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifySnapshotScheduleWithContext), varargs...)
+}
+
+// ModifyUsageLimit mocks base method
+func (m *MockRedshiftAPI) ModifyUsageLimit(arg0 *redshift.ModifyUsageLimitInput) (*redshift.ModifyUsageLimitOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyUsageLimit", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyUsageLimitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyUsageLimit indicates an expected call of ModifyUsageLimit
+func (mr *MockRedshiftAPIMockRecorder) ModifyUsageLimit(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyUsageLimit", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyUsageLimit), arg0)
+}
+
+// ModifyUsageLimitRequest mocks base method
+func (m *MockRedshiftAPI) ModifyUsageLimitRequest(arg0 *redshift.ModifyUsageLimitInput) (*request.Request, *redshift.ModifyUsageLimitOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyUsageLimitRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyUsageLimitOutput)
+	return ret0, ret1
+}
+
+// ModifyUsageLimitRequest indicates an expected call of ModifyUsageLimitRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyUsageLimitRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyUsageLimitRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyUsageLimitRequest), arg0)
+}
+
+// ModifyUsageLimitWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyUsageLimitWithContext(arg0 context.Context, arg1 *redshift.ModifyUsageLimitInput, arg2 ...request.Option) (*redshift.ModifyUsageLimitOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyUsageLimitWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyUsageLimitOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyUsageLimitWithContext indicates an expected call of ModifyUsageLimitWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyUsageLimitWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyUsageLimitWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyUsageLimitWithContext), varargs...)
 }
 
 // PauseCluster mocks base method
