@@ -235,6 +235,56 @@ func (mr *MockSecurityHubAPIMockRecorder) BatchImportFindingsWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchImportFindingsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).BatchImportFindingsWithContext), varargs...)
 }
 
+// BatchUpdateFindings mocks base method
+func (m *MockSecurityHubAPI) BatchUpdateFindings(arg0 *securityhub.BatchUpdateFindingsInput) (*securityhub.BatchUpdateFindingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateFindings", arg0)
+	ret0, _ := ret[0].(*securityhub.BatchUpdateFindingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateFindings indicates an expected call of BatchUpdateFindings
+func (mr *MockSecurityHubAPIMockRecorder) BatchUpdateFindings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateFindings", reflect.TypeOf((*MockSecurityHubAPI)(nil).BatchUpdateFindings), arg0)
+}
+
+// BatchUpdateFindingsRequest mocks base method
+func (m *MockSecurityHubAPI) BatchUpdateFindingsRequest(arg0 *securityhub.BatchUpdateFindingsInput) (*request.Request, *securityhub.BatchUpdateFindingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateFindingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.BatchUpdateFindingsOutput)
+	return ret0, ret1
+}
+
+// BatchUpdateFindingsRequest indicates an expected call of BatchUpdateFindingsRequest
+func (mr *MockSecurityHubAPIMockRecorder) BatchUpdateFindingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateFindingsRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).BatchUpdateFindingsRequest), arg0)
+}
+
+// BatchUpdateFindingsWithContext mocks base method
+func (m *MockSecurityHubAPI) BatchUpdateFindingsWithContext(arg0 context.Context, arg1 *securityhub.BatchUpdateFindingsInput, arg2 ...request.Option) (*securityhub.BatchUpdateFindingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdateFindingsWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.BatchUpdateFindingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateFindingsWithContext indicates an expected call of BatchUpdateFindingsWithContext
+func (mr *MockSecurityHubAPIMockRecorder) BatchUpdateFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateFindingsWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).BatchUpdateFindingsWithContext), varargs...)
+}
+
 // CreateActionTarget mocks base method
 func (m *MockSecurityHubAPI) CreateActionTarget(arg0 *securityhub.CreateActionTargetInput) (*securityhub.CreateActionTargetOutput, error) {
 	m.ctrl.T.Helper()
