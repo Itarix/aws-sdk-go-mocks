@@ -1550,6 +1550,39 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetAttributes(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAttributes", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetAttributes), arg0)
 }
 
+// DescribeFleetAttributesPages mocks base method
+func (m *MockGameLiftAPI) DescribeFleetAttributesPages(arg0 *gamelift.DescribeFleetAttributesInput, arg1 func(*gamelift.DescribeFleetAttributesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAttributesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAttributesPages indicates an expected call of DescribeFleetAttributesPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetAttributesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAttributesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetAttributesPages), arg0, arg1)
+}
+
+// DescribeFleetAttributesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetAttributesPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetAttributesInput, arg2 func(*gamelift.DescribeFleetAttributesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAttributesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAttributesPagesWithContext indicates an expected call of DescribeFleetAttributesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetAttributesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAttributesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetAttributesPagesWithContext), varargs...)
+}
+
 // DescribeFleetAttributesRequest mocks base method
 func (m *MockGameLiftAPI) DescribeFleetAttributesRequest(arg0 *gamelift.DescribeFleetAttributesInput) (*request.Request, *gamelift.DescribeFleetAttributesOutput) {
 	m.ctrl.T.Helper()
@@ -1600,6 +1633,39 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetCapacity(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetCapacity", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetCapacity), arg0)
 }
 
+// DescribeFleetCapacityPages mocks base method
+func (m *MockGameLiftAPI) DescribeFleetCapacityPages(arg0 *gamelift.DescribeFleetCapacityInput, arg1 func(*gamelift.DescribeFleetCapacityOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetCapacityPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetCapacityPages indicates an expected call of DescribeFleetCapacityPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetCapacityPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetCapacityPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetCapacityPages), arg0, arg1)
+}
+
+// DescribeFleetCapacityPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetCapacityPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetCapacityInput, arg2 func(*gamelift.DescribeFleetCapacityOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetCapacityPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetCapacityPagesWithContext indicates an expected call of DescribeFleetCapacityPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetCapacityPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetCapacityPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetCapacityPagesWithContext), varargs...)
+}
+
 // DescribeFleetCapacityRequest mocks base method
 func (m *MockGameLiftAPI) DescribeFleetCapacityRequest(arg0 *gamelift.DescribeFleetCapacityInput) (*request.Request, *gamelift.DescribeFleetCapacityOutput) {
 	m.ctrl.T.Helper()
@@ -1648,6 +1714,39 @@ func (m *MockGameLiftAPI) DescribeFleetEvents(arg0 *gamelift.DescribeFleetEvents
 func (mr *MockGameLiftAPIMockRecorder) DescribeFleetEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetEvents", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetEvents), arg0)
+}
+
+// DescribeFleetEventsPages mocks base method
+func (m *MockGameLiftAPI) DescribeFleetEventsPages(arg0 *gamelift.DescribeFleetEventsInput, arg1 func(*gamelift.DescribeFleetEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetEventsPages indicates an expected call of DescribeFleetEventsPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetEventsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetEventsPages), arg0, arg1)
+}
+
+// DescribeFleetEventsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetEventsPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetEventsInput, arg2 func(*gamelift.DescribeFleetEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetEventsPagesWithContext indicates an expected call of DescribeFleetEventsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetEventsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetEventsPagesWithContext), varargs...)
 }
 
 // DescribeFleetEventsRequest mocks base method
@@ -1750,6 +1849,39 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetUtilization(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetUtilization", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetUtilization), arg0)
 }
 
+// DescribeFleetUtilizationPages mocks base method
+func (m *MockGameLiftAPI) DescribeFleetUtilizationPages(arg0 *gamelift.DescribeFleetUtilizationInput, arg1 func(*gamelift.DescribeFleetUtilizationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetUtilizationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetUtilizationPages indicates an expected call of DescribeFleetUtilizationPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetUtilizationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetUtilizationPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetUtilizationPages), arg0, arg1)
+}
+
+// DescribeFleetUtilizationPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetUtilizationPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetUtilizationInput, arg2 func(*gamelift.DescribeFleetUtilizationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetUtilizationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetUtilizationPagesWithContext indicates an expected call of DescribeFleetUtilizationPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetUtilizationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetUtilizationPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetUtilizationPagesWithContext), varargs...)
+}
+
 // DescribeFleetUtilizationRequest mocks base method
 func (m *MockGameLiftAPI) DescribeFleetUtilizationRequest(arg0 *gamelift.DescribeFleetUtilizationInput) (*request.Request, *gamelift.DescribeFleetUtilizationOutput) {
 	m.ctrl.T.Helper()
@@ -1850,6 +1982,89 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerGroupWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerGroupWithContext), varargs...)
 }
 
+// DescribeGameServerInstances mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerInstances(arg0 *gamelift.DescribeGameServerInstancesInput) (*gamelift.DescribeGameServerInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServerInstances", arg0)
+	ret0, _ := ret[0].(*gamelift.DescribeGameServerInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGameServerInstances indicates an expected call of DescribeGameServerInstances
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerInstances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerInstances", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerInstances), arg0)
+}
+
+// DescribeGameServerInstancesPages mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerInstancesPages(arg0 *gamelift.DescribeGameServerInstancesInput, arg1 func(*gamelift.DescribeGameServerInstancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServerInstancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameServerInstancesPages indicates an expected call of DescribeGameServerInstancesPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerInstancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerInstancesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerInstancesPages), arg0, arg1)
+}
+
+// DescribeGameServerInstancesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerInstancesPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameServerInstancesInput, arg2 func(*gamelift.DescribeGameServerInstancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameServerInstancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameServerInstancesPagesWithContext indicates an expected call of DescribeGameServerInstancesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerInstancesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerInstancesPagesWithContext), varargs...)
+}
+
+// DescribeGameServerInstancesRequest mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerInstancesRequest(arg0 *gamelift.DescribeGameServerInstancesInput) (*request.Request, *gamelift.DescribeGameServerInstancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServerInstancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DescribeGameServerInstancesOutput)
+	return ret0, ret1
+}
+
+// DescribeGameServerInstancesRequest indicates an expected call of DescribeGameServerInstancesRequest
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerInstancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerInstancesRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerInstancesRequest), arg0)
+}
+
+// DescribeGameServerInstancesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerInstancesWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameServerInstancesInput, arg2 ...request.Option) (*gamelift.DescribeGameServerInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameServerInstancesWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DescribeGameServerInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGameServerInstancesWithContext indicates an expected call of DescribeGameServerInstancesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerInstancesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerInstancesWithContext), varargs...)
+}
+
 // DescribeGameServerRequest mocks base method
 func (m *MockGameLiftAPI) DescribeGameServerRequest(arg0 *gamelift.DescribeGameServerInput) (*request.Request, *gamelift.DescribeGameServerOutput) {
 	m.ctrl.T.Helper()
@@ -1898,6 +2113,39 @@ func (m *MockGameLiftAPI) DescribeGameSessionDetails(arg0 *gamelift.DescribeGame
 func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionDetails(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionDetails", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionDetails), arg0)
+}
+
+// DescribeGameSessionDetailsPages mocks base method
+func (m *MockGameLiftAPI) DescribeGameSessionDetailsPages(arg0 *gamelift.DescribeGameSessionDetailsInput, arg1 func(*gamelift.DescribeGameSessionDetailsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameSessionDetailsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameSessionDetailsPages indicates an expected call of DescribeGameSessionDetailsPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionDetailsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionDetailsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionDetailsPages), arg0, arg1)
+}
+
+// DescribeGameSessionDetailsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameSessionDetailsPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionDetailsInput, arg2 func(*gamelift.DescribeGameSessionDetailsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameSessionDetailsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameSessionDetailsPagesWithContext indicates an expected call of DescribeGameSessionDetailsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionDetailsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionDetailsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionDetailsPagesWithContext), varargs...)
 }
 
 // DescribeGameSessionDetailsRequest mocks base method
@@ -2000,6 +2248,39 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionQueues(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionQueues", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionQueues), arg0)
 }
 
+// DescribeGameSessionQueuesPages mocks base method
+func (m *MockGameLiftAPI) DescribeGameSessionQueuesPages(arg0 *gamelift.DescribeGameSessionQueuesInput, arg1 func(*gamelift.DescribeGameSessionQueuesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameSessionQueuesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameSessionQueuesPages indicates an expected call of DescribeGameSessionQueuesPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionQueuesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionQueuesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionQueuesPages), arg0, arg1)
+}
+
+// DescribeGameSessionQueuesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameSessionQueuesPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionQueuesInput, arg2 func(*gamelift.DescribeGameSessionQueuesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameSessionQueuesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameSessionQueuesPagesWithContext indicates an expected call of DescribeGameSessionQueuesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionQueuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionQueuesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionQueuesPagesWithContext), varargs...)
+}
+
 // DescribeGameSessionQueuesRequest mocks base method
 func (m *MockGameLiftAPI) DescribeGameSessionQueuesRequest(arg0 *gamelift.DescribeGameSessionQueuesInput) (*request.Request, *gamelift.DescribeGameSessionQueuesOutput) {
 	m.ctrl.T.Helper()
@@ -2050,6 +2331,39 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessions(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessions", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessions), arg0)
 }
 
+// DescribeGameSessionsPages mocks base method
+func (m *MockGameLiftAPI) DescribeGameSessionsPages(arg0 *gamelift.DescribeGameSessionsInput, arg1 func(*gamelift.DescribeGameSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameSessionsPages indicates an expected call of DescribeGameSessionsPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionsPages), arg0, arg1)
+}
+
+// DescribeGameSessionsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameSessionsPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameSessionsInput, arg2 func(*gamelift.DescribeGameSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGameSessionsPagesWithContext indicates an expected call of DescribeGameSessionsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameSessionsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameSessionsPagesWithContext), varargs...)
+}
+
 // DescribeGameSessionsRequest mocks base method
 func (m *MockGameLiftAPI) DescribeGameSessionsRequest(arg0 *gamelift.DescribeGameSessionsInput) (*request.Request, *gamelift.DescribeGameSessionsOutput) {
 	m.ctrl.T.Helper()
@@ -2098,6 +2412,39 @@ func (m *MockGameLiftAPI) DescribeInstances(arg0 *gamelift.DescribeInstancesInpu
 func (mr *MockGameLiftAPIMockRecorder) DescribeInstances(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstances", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeInstances), arg0)
+}
+
+// DescribeInstancesPages mocks base method
+func (m *MockGameLiftAPI) DescribeInstancesPages(arg0 *gamelift.DescribeInstancesInput, arg1 func(*gamelift.DescribeInstancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeInstancesPages indicates an expected call of DescribeInstancesPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeInstancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstancesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeInstancesPages), arg0, arg1)
+}
+
+// DescribeInstancesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeInstancesPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeInstancesInput, arg2 func(*gamelift.DescribeInstancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeInstancesPagesWithContext indicates an expected call of DescribeInstancesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstancesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeInstancesPagesWithContext), varargs...)
 }
 
 // DescribeInstancesRequest mocks base method
@@ -2165,6 +2512,39 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingConfigurations(arg0 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMatchmakingConfigurations", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeMatchmakingConfigurations), arg0)
 }
 
+// DescribeMatchmakingConfigurationsPages mocks base method
+func (m *MockGameLiftAPI) DescribeMatchmakingConfigurationsPages(arg0 *gamelift.DescribeMatchmakingConfigurationsInput, arg1 func(*gamelift.DescribeMatchmakingConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMatchmakingConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMatchmakingConfigurationsPages indicates an expected call of DescribeMatchmakingConfigurationsPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMatchmakingConfigurationsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeMatchmakingConfigurationsPages), arg0, arg1)
+}
+
+// DescribeMatchmakingConfigurationsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeMatchmakingConfigurationsPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeMatchmakingConfigurationsInput, arg2 func(*gamelift.DescribeMatchmakingConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMatchmakingConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMatchmakingConfigurationsPagesWithContext indicates an expected call of DescribeMatchmakingConfigurationsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMatchmakingConfigurationsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeMatchmakingConfigurationsPagesWithContext), varargs...)
+}
+
 // DescribeMatchmakingConfigurationsRequest mocks base method
 func (m *MockGameLiftAPI) DescribeMatchmakingConfigurationsRequest(arg0 *gamelift.DescribeMatchmakingConfigurationsInput) (*request.Request, *gamelift.DescribeMatchmakingConfigurationsOutput) {
 	m.ctrl.T.Helper()
@@ -2228,6 +2608,39 @@ func (m *MockGameLiftAPI) DescribeMatchmakingRuleSets(arg0 *gamelift.DescribeMat
 func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingRuleSets(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMatchmakingRuleSets", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeMatchmakingRuleSets), arg0)
+}
+
+// DescribeMatchmakingRuleSetsPages mocks base method
+func (m *MockGameLiftAPI) DescribeMatchmakingRuleSetsPages(arg0 *gamelift.DescribeMatchmakingRuleSetsInput, arg1 func(*gamelift.DescribeMatchmakingRuleSetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMatchmakingRuleSetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMatchmakingRuleSetsPages indicates an expected call of DescribeMatchmakingRuleSetsPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingRuleSetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMatchmakingRuleSetsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeMatchmakingRuleSetsPages), arg0, arg1)
+}
+
+// DescribeMatchmakingRuleSetsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeMatchmakingRuleSetsPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeMatchmakingRuleSetsInput, arg2 func(*gamelift.DescribeMatchmakingRuleSetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMatchmakingRuleSetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMatchmakingRuleSetsPagesWithContext indicates an expected call of DescribeMatchmakingRuleSetsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeMatchmakingRuleSetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMatchmakingRuleSetsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeMatchmakingRuleSetsPagesWithContext), varargs...)
 }
 
 // DescribeMatchmakingRuleSetsRequest mocks base method
@@ -2298,6 +2711,39 @@ func (m *MockGameLiftAPI) DescribePlayerSessions(arg0 *gamelift.DescribePlayerSe
 func (mr *MockGameLiftAPIMockRecorder) DescribePlayerSessions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePlayerSessions", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribePlayerSessions), arg0)
+}
+
+// DescribePlayerSessionsPages mocks base method
+func (m *MockGameLiftAPI) DescribePlayerSessionsPages(arg0 *gamelift.DescribePlayerSessionsInput, arg1 func(*gamelift.DescribePlayerSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePlayerSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePlayerSessionsPages indicates an expected call of DescribePlayerSessionsPages
+func (mr *MockGameLiftAPIMockRecorder) DescribePlayerSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePlayerSessionsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribePlayerSessionsPages), arg0, arg1)
+}
+
+// DescribePlayerSessionsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribePlayerSessionsPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribePlayerSessionsInput, arg2 func(*gamelift.DescribePlayerSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePlayerSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePlayerSessionsPagesWithContext indicates an expected call of DescribePlayerSessionsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribePlayerSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePlayerSessionsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribePlayerSessionsPagesWithContext), varargs...)
 }
 
 // DescribePlayerSessionsRequest mocks base method
@@ -2398,6 +2844,39 @@ func (m *MockGameLiftAPI) DescribeScalingPolicies(arg0 *gamelift.DescribeScaling
 func (mr *MockGameLiftAPIMockRecorder) DescribeScalingPolicies(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingPolicies", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeScalingPolicies), arg0)
+}
+
+// DescribeScalingPoliciesPages mocks base method
+func (m *MockGameLiftAPI) DescribeScalingPoliciesPages(arg0 *gamelift.DescribeScalingPoliciesInput, arg1 func(*gamelift.DescribeScalingPoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScalingPoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeScalingPoliciesPages indicates an expected call of DescribeScalingPoliciesPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeScalingPoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingPoliciesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeScalingPoliciesPages), arg0, arg1)
+}
+
+// DescribeScalingPoliciesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeScalingPoliciesPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeScalingPoliciesInput, arg2 func(*gamelift.DescribeScalingPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScalingPoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeScalingPoliciesPagesWithContext indicates an expected call of DescribeScalingPoliciesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeScalingPoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScalingPoliciesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeScalingPoliciesPagesWithContext), varargs...)
 }
 
 // DescribeScalingPoliciesRequest mocks base method
@@ -2700,6 +3179,39 @@ func (mr *MockGameLiftAPIMockRecorder) ListAliases(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliases", reflect.TypeOf((*MockGameLiftAPI)(nil).ListAliases), arg0)
 }
 
+// ListAliasesPages mocks base method
+func (m *MockGameLiftAPI) ListAliasesPages(arg0 *gamelift.ListAliasesInput, arg1 func(*gamelift.ListAliasesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAliasesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAliasesPages indicates an expected call of ListAliasesPages
+func (mr *MockGameLiftAPIMockRecorder) ListAliasesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliasesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).ListAliasesPages), arg0, arg1)
+}
+
+// ListAliasesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) ListAliasesPagesWithContext(arg0 context.Context, arg1 *gamelift.ListAliasesInput, arg2 func(*gamelift.ListAliasesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAliasesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAliasesPagesWithContext indicates an expected call of ListAliasesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListAliasesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliasesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListAliasesPagesWithContext), varargs...)
+}
+
 // ListAliasesRequest mocks base method
 func (m *MockGameLiftAPI) ListAliasesRequest(arg0 *gamelift.ListAliasesInput) (*request.Request, *gamelift.ListAliasesOutput) {
 	m.ctrl.T.Helper()
@@ -2748,6 +3260,39 @@ func (m *MockGameLiftAPI) ListBuilds(arg0 *gamelift.ListBuildsInput) (*gamelift.
 func (mr *MockGameLiftAPIMockRecorder) ListBuilds(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBuilds", reflect.TypeOf((*MockGameLiftAPI)(nil).ListBuilds), arg0)
+}
+
+// ListBuildsPages mocks base method
+func (m *MockGameLiftAPI) ListBuildsPages(arg0 *gamelift.ListBuildsInput, arg1 func(*gamelift.ListBuildsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBuildsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBuildsPages indicates an expected call of ListBuildsPages
+func (mr *MockGameLiftAPIMockRecorder) ListBuildsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBuildsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).ListBuildsPages), arg0, arg1)
+}
+
+// ListBuildsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) ListBuildsPagesWithContext(arg0 context.Context, arg1 *gamelift.ListBuildsInput, arg2 func(*gamelift.ListBuildsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBuildsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBuildsPagesWithContext indicates an expected call of ListBuildsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListBuildsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBuildsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListBuildsPagesWithContext), varargs...)
 }
 
 // ListBuildsRequest mocks base method
@@ -2800,6 +3345,39 @@ func (mr *MockGameLiftAPIMockRecorder) ListFleets(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFleets", reflect.TypeOf((*MockGameLiftAPI)(nil).ListFleets), arg0)
 }
 
+// ListFleetsPages mocks base method
+func (m *MockGameLiftAPI) ListFleetsPages(arg0 *gamelift.ListFleetsInput, arg1 func(*gamelift.ListFleetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFleetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFleetsPages indicates an expected call of ListFleetsPages
+func (mr *MockGameLiftAPIMockRecorder) ListFleetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFleetsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).ListFleetsPages), arg0, arg1)
+}
+
+// ListFleetsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) ListFleetsPagesWithContext(arg0 context.Context, arg1 *gamelift.ListFleetsInput, arg2 func(*gamelift.ListFleetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFleetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFleetsPagesWithContext indicates an expected call of ListFleetsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListFleetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFleetsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListFleetsPagesWithContext), varargs...)
+}
+
 // ListFleetsRequest mocks base method
 func (m *MockGameLiftAPI) ListFleetsRequest(arg0 *gamelift.ListFleetsInput) (*request.Request, *gamelift.ListFleetsOutput) {
 	m.ctrl.T.Helper()
@@ -2848,6 +3426,39 @@ func (m *MockGameLiftAPI) ListGameServerGroups(arg0 *gamelift.ListGameServerGrou
 func (mr *MockGameLiftAPIMockRecorder) ListGameServerGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServerGroups", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServerGroups), arg0)
+}
+
+// ListGameServerGroupsPages mocks base method
+func (m *MockGameLiftAPI) ListGameServerGroupsPages(arg0 *gamelift.ListGameServerGroupsInput, arg1 func(*gamelift.ListGameServerGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGameServerGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGameServerGroupsPages indicates an expected call of ListGameServerGroupsPages
+func (mr *MockGameLiftAPIMockRecorder) ListGameServerGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServerGroupsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServerGroupsPages), arg0, arg1)
+}
+
+// ListGameServerGroupsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) ListGameServerGroupsPagesWithContext(arg0 context.Context, arg1 *gamelift.ListGameServerGroupsInput, arg2 func(*gamelift.ListGameServerGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGameServerGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGameServerGroupsPagesWithContext indicates an expected call of ListGameServerGroupsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListGameServerGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServerGroupsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServerGroupsPagesWithContext), varargs...)
 }
 
 // ListGameServerGroupsRequest mocks base method
@@ -2900,6 +3511,39 @@ func (mr *MockGameLiftAPIMockRecorder) ListGameServers(arg0 interface{}) *gomock
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServers", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServers), arg0)
 }
 
+// ListGameServersPages mocks base method
+func (m *MockGameLiftAPI) ListGameServersPages(arg0 *gamelift.ListGameServersInput, arg1 func(*gamelift.ListGameServersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGameServersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGameServersPages indicates an expected call of ListGameServersPages
+func (mr *MockGameLiftAPIMockRecorder) ListGameServersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServersPages", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServersPages), arg0, arg1)
+}
+
+// ListGameServersPagesWithContext mocks base method
+func (m *MockGameLiftAPI) ListGameServersPagesWithContext(arg0 context.Context, arg1 *gamelift.ListGameServersInput, arg2 func(*gamelift.ListGameServersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGameServersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGameServersPagesWithContext indicates an expected call of ListGameServersPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListGameServersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServersPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServersPagesWithContext), varargs...)
+}
+
 // ListGameServersRequest mocks base method
 func (m *MockGameLiftAPI) ListGameServersRequest(arg0 *gamelift.ListGameServersInput) (*request.Request, *gamelift.ListGameServersOutput) {
 	m.ctrl.T.Helper()
@@ -2948,6 +3592,39 @@ func (m *MockGameLiftAPI) ListScripts(arg0 *gamelift.ListScriptsInput) (*gamelif
 func (mr *MockGameLiftAPIMockRecorder) ListScripts(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScripts", reflect.TypeOf((*MockGameLiftAPI)(nil).ListScripts), arg0)
+}
+
+// ListScriptsPages mocks base method
+func (m *MockGameLiftAPI) ListScriptsPages(arg0 *gamelift.ListScriptsInput, arg1 func(*gamelift.ListScriptsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScriptsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScriptsPages indicates an expected call of ListScriptsPages
+func (mr *MockGameLiftAPIMockRecorder) ListScriptsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScriptsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).ListScriptsPages), arg0, arg1)
+}
+
+// ListScriptsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) ListScriptsPagesWithContext(arg0 context.Context, arg1 *gamelift.ListScriptsInput, arg2 func(*gamelift.ListScriptsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScriptsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScriptsPagesWithContext indicates an expected call of ListScriptsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListScriptsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScriptsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListScriptsPagesWithContext), varargs...)
 }
 
 // ListScriptsRequest mocks base method
@@ -3298,6 +3975,39 @@ func (m *MockGameLiftAPI) SearchGameSessions(arg0 *gamelift.SearchGameSessionsIn
 func (mr *MockGameLiftAPIMockRecorder) SearchGameSessions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGameSessions", reflect.TypeOf((*MockGameLiftAPI)(nil).SearchGameSessions), arg0)
+}
+
+// SearchGameSessionsPages mocks base method
+func (m *MockGameLiftAPI) SearchGameSessionsPages(arg0 *gamelift.SearchGameSessionsInput, arg1 func(*gamelift.SearchGameSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchGameSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchGameSessionsPages indicates an expected call of SearchGameSessionsPages
+func (mr *MockGameLiftAPIMockRecorder) SearchGameSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGameSessionsPages", reflect.TypeOf((*MockGameLiftAPI)(nil).SearchGameSessionsPages), arg0, arg1)
+}
+
+// SearchGameSessionsPagesWithContext mocks base method
+func (m *MockGameLiftAPI) SearchGameSessionsPagesWithContext(arg0 context.Context, arg1 *gamelift.SearchGameSessionsInput, arg2 func(*gamelift.SearchGameSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchGameSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchGameSessionsPagesWithContext indicates an expected call of SearchGameSessionsPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) SearchGameSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGameSessionsPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).SearchGameSessionsPagesWithContext), varargs...)
 }
 
 // SearchGameSessionsRequest mocks base method
