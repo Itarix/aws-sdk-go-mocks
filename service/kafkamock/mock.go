@@ -185,6 +185,56 @@ func (mr *MockKafkaAPIMockRecorder) DeleteClusterWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteClusterWithContext), varargs...)
 }
 
+// DeleteConfiguration mocks base method
+func (m *MockKafkaAPI) DeleteConfiguration(arg0 *kafka.DeleteConfigurationInput) (*kafka.DeleteConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConfiguration", arg0)
+	ret0, _ := ret[0].(*kafka.DeleteConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConfiguration indicates an expected call of DeleteConfiguration
+func (mr *MockKafkaAPIMockRecorder) DeleteConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfiguration", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteConfiguration), arg0)
+}
+
+// DeleteConfigurationRequest mocks base method
+func (m *MockKafkaAPI) DeleteConfigurationRequest(arg0 *kafka.DeleteConfigurationInput) (*request.Request, *kafka.DeleteConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DeleteConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteConfigurationRequest indicates an expected call of DeleteConfigurationRequest
+func (mr *MockKafkaAPIMockRecorder) DeleteConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteConfigurationRequest), arg0)
+}
+
+// DeleteConfigurationWithContext mocks base method
+func (m *MockKafkaAPI) DeleteConfigurationWithContext(arg0 context.Context, arg1 *kafka.DeleteConfigurationInput, arg2 ...request.Option) (*kafka.DeleteConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DeleteConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConfigurationWithContext indicates an expected call of DeleteConfigurationWithContext
+func (mr *MockKafkaAPIMockRecorder) DeleteConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteConfigurationWithContext), varargs...)
+}
+
 // DescribeCluster mocks base method
 func (m *MockKafkaAPI) DescribeCluster(arg0 *kafka.DescribeClusterInput) (*kafka.DescribeClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1381,6 +1431,56 @@ func (mr *MockKafkaAPIMockRecorder) UpdateClusterKafkaVersionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateClusterKafkaVersionWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateClusterKafkaVersionWithContext), varargs...)
+}
+
+// UpdateConfiguration mocks base method
+func (m *MockKafkaAPI) UpdateConfiguration(arg0 *kafka.UpdateConfigurationInput) (*kafka.UpdateConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConfiguration", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConfiguration indicates an expected call of UpdateConfiguration
+func (mr *MockKafkaAPIMockRecorder) UpdateConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguration", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConfiguration), arg0)
+}
+
+// UpdateConfigurationRequest mocks base method
+func (m *MockKafkaAPI) UpdateConfigurationRequest(arg0 *kafka.UpdateConfigurationInput) (*request.Request, *kafka.UpdateConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateConfigurationRequest indicates an expected call of UpdateConfigurationRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConfigurationRequest), arg0)
+}
+
+// UpdateConfigurationWithContext mocks base method
+func (m *MockKafkaAPI) UpdateConfigurationWithContext(arg0 context.Context, arg1 *kafka.UpdateConfigurationInput, arg2 ...request.Option) (*kafka.UpdateConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConfigurationWithContext indicates an expected call of UpdateConfigurationWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConfigurationWithContext), varargs...)
 }
 
 // UpdateMonitoring mocks base method
