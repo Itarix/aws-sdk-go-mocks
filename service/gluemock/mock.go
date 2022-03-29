@@ -635,6 +635,56 @@ func (mr *MockGlueAPIMockRecorder) BatchStopJobRunWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStopJobRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchStopJobRunWithContext), varargs...)
 }
 
+// BatchUpdatePartition mocks base method
+func (m *MockGlueAPI) BatchUpdatePartition(arg0 *glue.BatchUpdatePartitionInput) (*glue.BatchUpdatePartitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdatePartition", arg0)
+	ret0, _ := ret[0].(*glue.BatchUpdatePartitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdatePartition indicates an expected call of BatchUpdatePartition
+func (mr *MockGlueAPIMockRecorder) BatchUpdatePartition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdatePartition", reflect.TypeOf((*MockGlueAPI)(nil).BatchUpdatePartition), arg0)
+}
+
+// BatchUpdatePartitionRequest mocks base method
+func (m *MockGlueAPI) BatchUpdatePartitionRequest(arg0 *glue.BatchUpdatePartitionInput) (*request.Request, *glue.BatchUpdatePartitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdatePartitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.BatchUpdatePartitionOutput)
+	return ret0, ret1
+}
+
+// BatchUpdatePartitionRequest indicates an expected call of BatchUpdatePartitionRequest
+func (mr *MockGlueAPIMockRecorder) BatchUpdatePartitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdatePartitionRequest", reflect.TypeOf((*MockGlueAPI)(nil).BatchUpdatePartitionRequest), arg0)
+}
+
+// BatchUpdatePartitionWithContext mocks base method
+func (m *MockGlueAPI) BatchUpdatePartitionWithContext(arg0 context.Context, arg1 *glue.BatchUpdatePartitionInput, arg2 ...request.Option) (*glue.BatchUpdatePartitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdatePartitionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.BatchUpdatePartitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdatePartitionWithContext indicates an expected call of BatchUpdatePartitionWithContext
+func (mr *MockGlueAPIMockRecorder) BatchUpdatePartitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdatePartitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchUpdatePartitionWithContext), varargs...)
+}
+
 // CancelMLTaskRun mocks base method
 func (m *MockGlueAPI) CancelMLTaskRun(arg0 *glue.CancelMLTaskRunInput) (*glue.CancelMLTaskRunOutput, error) {
 	m.ctrl.T.Helper()
